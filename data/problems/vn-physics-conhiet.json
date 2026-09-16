@@ -1,0 +1,2259 @@
+{
+ "meta": {
+  "file": "vn-physics-conhiet.json",
+  "subject": "physics",
+  "title": "Bài tập Vật lí THPT Việt Nam: Cơ học, các định luật bảo toàn, chất khí và nhiệt động lực học",
+  "levels": [
+   "thpt"
+  ],
+  "count": 38
+ },
+ "problems": [
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0001",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động thẳng biến đổi đều",
+   "type": "dien-so",
+   "statement_vi": "Một xe máy đang chạy với vận tốc 5 m/s thì tăng tốc, chuyển động thẳng nhanh dần đều với gia tốc 2 m/s². Tính vận tốc của xe sau 4 s.",
+   "statement_en": "A motorbike moving at 5 m/s speeds up uniformly at 2 m/s². Find its velocity after 4 s.",
+   "answer": "13 m/s",
+   "solution_steps": [
+    {
+     "explain": "Áp dụng công thức vận tốc của chuyển động thẳng biến đổi đều: vận tốc cuối bằng vận tốc đầu cộng gia tốc nhân thời gian.",
+     "latex": "v = v_0 + a t = 5 + 2 \\cdot 4 = 13\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.van-toc-chuyen-dong-bien-doi-deu"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng công thức vận tốc",
+    "thay số đúng đơn vị"
+   ],
+   "tags": [
+    "dong-hoc",
+    "bien-doi-deu"
+   ],
+   "answer_numeric": 13.0,
+   "answer_unit": "m/s",
+   "tolerance": 0.1,
+   "hints": [
+    "Dùng v = v0 + a·t.",
+    "Vận tốc đầu 5 m/s, gia tốc dương vì nhanh dần."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0002",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Rơi tự do",
+   "type": "trac-nghiem",
+   "statement_vi": "Một vật rơi tự do không vận tốc đầu từ độ cao đủ lớn, thời gian rơi là 3 s. Lấy g = 10 m/s². Quãng đường vật rơi được trong giây cuối cùng là:",
+   "statement_en": "An object falls freely from rest for 3 s (g = 10 m/s²). The distance fallen during the last second is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Quãng đường rơi sau t giây: s = ½gt². Tính quãng đường sau 3 s và sau 2 s.",
+     "latex": "s_3 = \\tfrac{1}{2} \\cdot 10 \\cdot 3^2 = 45\\ \\text{m};\\quad s_2 = \\tfrac{1}{2}\\cdot 10\\cdot 2^2 = 20\\ \\text{m}"
+    },
+    {
+     "explain": "Quãng đường trong giây cuối (giây thứ 3) bằng hiệu quãng đường của 3 s và 2 s.",
+     "latex": "\\Delta s = s_3 - s_2 = 45 - 20 = 25\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.roi-tu-do-quang-duong",
+    "physics.thpt.dong-hoc.roi-tu-do-quang-duong-giay-thu-n"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính quãng đường rơi",
+    "hiệu quãng đường giây cuối"
+   ],
+   "tags": [
+    "dong-hoc",
+    "roi-tu-do"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "25 m",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "45 m",
+     "why_wrong": "Đây là tổng quãng đường rơi trong cả 3 s, không phải riêng giây cuối."
+    },
+    {
+     "key": "C",
+     "text": "5 m",
+     "why_wrong": "Đây là quãng đường trong giây ĐẦU tiên (½g·1²), không phải giây cuối."
+    },
+    {
+     "key": "D",
+     "text": "15 m",
+     "why_wrong": "Đây là quãng đường trong giây thứ hai (20 − 5), nhầm thứ tự giây."
+    }
+   ],
+   "hints": [
+    "Quãng đường giây cuối = s(3s) − s(2s).",
+    "Rơi tự do có v0 = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0003",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động ném ngang",
+   "type": "trac-nghiem",
+   "statement_vi": "Từ đỉnh tháp cao 20 m, một vật được ném ngang với tốc độ 15 m/s. Lấy g = 10 m/s². Tầm xa của vật (khoảng cách từ chân tháp đến điểm rơi) là:",
+   "statement_en": "From a 20 m tower, an object is thrown horizontally at 15 m/s (g = 10 m/s²). Its horizontal range is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Thời gian rơi chỉ phụ thuộc độ cao, tính như rơi tự do.",
+     "latex": "t = \\sqrt{\\dfrac{2h}{g}} = \\sqrt{\\dfrac{2\\cdot 20}{10}} = 2\\ \\text{s}"
+    },
+    {
+     "explain": "Theo phương ngang vật chuyển động thẳng đều nên tầm xa bằng tốc độ ném nhân thời gian rơi.",
+     "latex": "L = v_0 t = 15 \\cdot 2 = 30\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.nem-ngang-thoi-gian-roi",
+    "physics.thpt.dong-hoc.nem-ngang-tam-xa"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tách chuyển động ném ngang",
+    "tính thời gian rơi và tầm xa"
+   ],
+   "tags": [
+    "dong-hoc",
+    "nem-ngang"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "30 m",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "21,2 m",
+     "why_wrong": "Dùng nhầm t = √(h/g) ≈ 1,41 s, quên hệ số 2 trong công thức thời gian rơi."
+    },
+    {
+     "key": "C",
+     "text": "15 m",
+     "why_wrong": "Lấy nhầm thời gian rơi bằng 1 s."
+    },
+    {
+     "key": "D",
+     "text": "42,4 m",
+     "why_wrong": "Nhân tốc độ ném với vận tốc chạm đất thay vì với thời gian rơi."
+    }
+   ],
+   "hints": [
+    "Thời gian rơi giống hệt rơi tự do từ cùng độ cao.",
+    "Tầm xa L = v0·t."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0004",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động ném xiên",
+   "type": "tu-luan",
+   "statement_vi": "Một quả bóng được ném xiên từ mặt đất với tốc độ đầu 20 m/s, góc ném 30° so với phương ngang. Lấy g = 10 m/s². Tính thời gian bay, tầm cao và tầm xa của quả bóng.",
+   "statement_en": "A ball is launched from the ground at 20 m/s, 30° above horizontal (g = 10 m/s²). Find its flight time, maximum height and range.",
+   "answer": "t = 2 s; H = 5 m; L ≈ 34,6 m",
+   "solution_steps": [
+    {
+     "explain": "Tách vận tốc đầu thành hai thành phần: ngang và thẳng đứng.",
+     "latex": "v_{0x} = v_0\\cos 30^\\circ = 20\\cdot 0{,}866 \\approx 17{,}3\\ \\text{m/s};\\quad v_{0y} = v_0\\sin 30^\\circ = 20\\cdot 0{,}5 = 10\\ \\text{m/s}"
+    },
+    {
+     "explain": "Thời gian bay: vật lên rồi xuống về cùng độ cao, t = 2v0y/g.",
+     "latex": "t = \\dfrac{2 v_0 \\sin 30^\\circ}{g} = \\dfrac{2\\cdot 10}{10} = 2\\ \\text{s}"
+    },
+    {
+     "explain": "Tầm cao đạt khi thành phần vận tốc đứng bằng 0.",
+     "latex": "H = \\dfrac{v_0^2 \\sin^2 30^\\circ}{2g} = \\dfrac{400\\cdot 0{,}25}{20} = 5\\ \\text{m}"
+    },
+    {
+     "explain": "Tầm xa dùng công thức với sin của góc gấp đôi.",
+     "latex": "L = \\dfrac{v_0^2 \\sin 60^\\circ}{g} = \\dfrac{400\\cdot 0{,}866}{10} \\approx 34{,}6\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.nem-xien-thoi-gian-bay",
+    "physics.thpt.dong-hoc.nem-xien-tam-cao",
+    "physics.thpt.dong-hoc.nem-xien-tam-xa"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "phân tích vận tốc theo hai phương",
+    "áp dụng công thức ném xiên"
+   ],
+   "tags": [
+    "dong-hoc",
+    "nem-xien"
+   ],
+   "hints": [
+    "Tách v0 thành v0cosα và v0sinα.",
+    "Tầm xa cực đại khi góc ném 45°."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0005",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tính tương đối và cộng vận tốc",
+   "type": "trac-nghiem",
+   "statement_vi": "Một canô hướng mũi vuông góc với bờ, tốc độ so với nước là 5 m/s. Dòng nước chảy dọc bờ với tốc độ 3 m/s. Tốc độ của canô so với bờ là:",
+   "statement_en": "A boat heads perpendicular to the bank at 5 m/s relative to water; the current flows along the bank at 3 m/s. The boat's speed relative to the bank is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Vận tốc canô so với bờ bằng tổng vectơ vận tốc so với nước và vận tốc nước so với bờ; hai vectơ này vuông góc.",
+     "latex": "v_{13} = \\sqrt{v_{12}^2 + v_{23}^2} = \\sqrt{5^2 + 3^2}"
+    },
+    {
+     "explain": "Tính căn bậc hai.",
+     "latex": "v_{13} = \\sqrt{34} \\approx 5{,}83\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.cong-thuc-cong-van-toc",
+    "physics.thpt.dong-hoc.cong-van-toc-hop-goc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "cộng vận tốc vuông góc",
+    "dùng định lí Pythagore"
+   ],
+   "tags": [
+    "dong-hoc",
+    "cong-van-toc"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "≈ 5,83 m/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "8 m/s",
+     "why_wrong": "Cộng số học 5 + 3; sai vì hai vận tốc vuông góc phải cộng theo vectơ."
+    },
+    {
+     "key": "C",
+     "text": "4 m/s",
+     "why_wrong": "Lấy √(5² − 3²); nhầm dấu, hai vận tốc vuông góc phải CỘNG bình phương."
+    },
+    {
+     "key": "D",
+     "text": "5 m/s",
+     "why_wrong": "Bỏ qua dòng nước, chỉ lấy tốc độ canô so với nước."
+    }
+   ],
+   "hints": [
+    "Vẽ tam giác vectơ vuông.",
+    "v so với bờ = √(v_thuyền² + v_nước²)."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0006",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động tròn đều",
+   "type": "dien-so",
+   "statement_vi": "Một điểm trên vành bánh xe cách trục 0,3 m, bánh xe quay đều với tốc độ góc 10 rad/s. Tính gia tốc hướng tâm của điểm đó.",
+   "statement_en": "A point 0.3 m from the axis on a wheel rotating uniformly at 10 rad/s. Find its centripetal acceleration.",
+   "answer": "30 m/s²",
+   "solution_steps": [
+    {
+     "explain": "Gia tốc hướng tâm theo tốc độ góc: a = ω²r.",
+     "latex": "a_{ht} = \\omega^2 r = 10^2 \\cdot 0{,}3 = 30\\ \\text{m/s}^2"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.gia-toc-huong-tam",
+    "physics.thpt.dong-hoc.lien-he-toc-do-dai-toc-do-goc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng công thức gia tốc hướng tâm"
+   ],
+   "tags": [
+    "dong-hoc",
+    "chuyen-dong-tron"
+   ],
+   "answer_numeric": 30.0,
+   "answer_unit": "m/s²",
+   "tolerance": 0.5,
+   "hints": [
+    "a_ht = ω²r.",
+    "Đơn vị ω là rad/s."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0007",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Định luật II Newton",
+   "type": "trac-nghiem",
+   "statement_vi": "Một vật khối lượng 4 kg chịu tác dụng của hai lực cùng phương, ngược chiều có độ lớn 30 N và 10 N. Gia tốc của vật là:",
+   "statement_en": "A 4 kg body is acted on by two collinear, opposite forces of 30 N and 10 N. Its acceleration is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hợp lực bằng hiệu hai lực ngược chiều.",
+     "latex": "F_{hl} = 30 - 10 = 20\\ \\text{N}"
+    },
+    {
+     "explain": "Áp dụng định luật II Newton để tìm gia tốc.",
+     "latex": "a = \\dfrac{F_{hl}}{m} = \\dfrac{20}{4} = 5\\ \\text{m/s}^2"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.dinh-luat-ii-newton",
+    "physics.thpt.dong-luc-hoc.tong-hop-hai-luc-dong-quy"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 2,
+   "skills": [
+    "tổng hợp lực cùng phương",
+    "áp dụng định luật II Newton"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "dinh-luat-newton"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "5 m/s²",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "10 m/s²",
+     "why_wrong": "Cộng hai lực (30 + 10) thay vì trừ; hai lực ngược chiều phải lấy hiệu."
+    },
+    {
+     "key": "C",
+     "text": "2,5 m/s²",
+     "why_wrong": "Chỉ chia lực 10 N cho khối lượng, bỏ qua lực 30 N."
+    },
+    {
+     "key": "D",
+     "text": "7,5 m/s²",
+     "why_wrong": "Chỉ chia lực 30 N cho khối lượng, bỏ qua lực 10 N."
+    }
+   ],
+   "hints": [
+    "Tìm hợp lực trước.",
+    "Hai lực ngược chiều thì trừ độ lớn."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0008",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực hấp dẫn và gia tốc trọng trường",
+   "type": "trac-nghiem",
+   "statement_vi": "Gia tốc trọng trường ở mặt đất là g0 = 10 m/s². Ở độ cao bằng bán kính Trái Đất (h = R), gia tốc trọng trường bằng:",
+   "statement_en": "Surface gravity is g0 = 10 m/s². At altitude equal to Earth's radius (h = R), gravity is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Gia tốc trọng trường tỉ lệ nghịch với bình phương khoảng cách tới tâm.",
+     "latex": "\\dfrac{g_h}{g_0} = \\left(\\dfrac{R}{R+h}\\right)^2 = \\left(\\dfrac{R}{2R}\\right)^2 = \\dfrac{1}{4}"
+    },
+    {
+     "explain": "Suy ra gia tốc ở độ cao h.",
+     "latex": "g_h = \\dfrac{g_0}{4} = \\dfrac{10}{4} = 2{,}5\\ \\text{m/s}^2"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.gia-toc-trong-truong-do-cao-h",
+    "physics.thpt.dong-luc-hoc.gia-toc-trong-truong-mat-dat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tỉ lệ nghịch bình phương khoảng cách"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "hap-dan"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "2,5 m/s²",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "5 m/s²",
+     "why_wrong": "Cho rằng g tỉ lệ nghịch với khoảng cách (bậc nhất) thay vì bình phương."
+    },
+    {
+     "key": "C",
+     "text": "10 m/s²",
+     "why_wrong": "Cho rằng g không đổi theo độ cao."
+    },
+    {
+     "key": "D",
+     "text": "1,25 m/s²",
+     "why_wrong": "Chia cho 8 do nhầm lũy thừa bậc ba (như thể tích)."
+    }
+   ],
+   "hints": [
+    "Khoảng cách tới tâm là R + h = 2R.",
+    "g ∝ 1/r²."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0009",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực đàn hồi và ghép lò xo",
+   "type": "trac-nghiem",
+   "statement_vi": "Hai lò xo giống nhau, mỗi lò xo có độ cứng 100 N/m, được ghép nối tiếp rồi treo thẳng đứng một vật 0,5 kg. Lấy g = 10 m/s². Độ dãn của hệ lò xo ở vị trí cân bằng là:",
+   "statement_en": "Two identical springs (k = 100 N/m each) in series support a 0.5 kg mass (g = 10 m/s²). The extension at equilibrium is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Ghép nối tiếp: nghịch đảo độ cứng hệ bằng tổng nghịch đảo, hệ mềm đi.",
+     "latex": "\\dfrac{1}{k} = \\dfrac{1}{100} + \\dfrac{1}{100} \\Rightarrow k = 50\\ \\text{N/m}"
+    },
+    {
+     "explain": "Ở cân bằng lực đàn hồi cân bằng trọng lực, suy ra độ dãn.",
+     "latex": "\\Delta l = \\dfrac{mg}{k} = \\dfrac{0{,}5\\cdot 10}{50} = 0{,}1\\ \\text{m} = 10\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.ghep-lo-xo",
+    "physics.thpt.dong-luc-hoc.lo-xo-treo-thang-dung"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "ghép lò xo nối tiếp",
+    "độ dãn ở cân bằng"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "luc-dan-hoi"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "10 cm",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "2,5 cm",
+     "why_wrong": "Dùng công thức ghép song song (k = 200 N/m); nối tiếp phải cộng nghịch đảo."
+    },
+    {
+     "key": "C",
+     "text": "5 cm",
+     "why_wrong": "Dùng độ cứng một lò xo (100 N/m), quên ghép nối tiếp làm hệ mềm hơn."
+    },
+    {
+     "key": "D",
+     "text": "20 cm",
+     "why_wrong": "Cộng nhầm độ cứng thành 25 N/m."
+    }
+   ],
+   "hints": [
+    "Nối tiếp: 1/k = 1/k1 + 1/k2.",
+    "Δl = mg/k."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0010",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực ma sát",
+   "type": "tu-luan",
+   "statement_vi": "Một ô tô đang chạy với vận tốc 15 m/s trên đường ngang thì hãm phanh, các bánh xe trượt trên mặt đường với hệ số ma sát trượt 0,5. Lấy g = 10 m/s². Tính gia tốc, quãng đường và thời gian xe đi thêm đến khi dừng.",
+   "statement_en": "A car at 15 m/s brakes and skids on a horizontal road with kinetic friction coefficient 0.5 (g = 10 m/s²). Find the deceleration, stopping distance and time.",
+   "answer": "a = 5 m/s²; s = 22,5 m; t = 3 s",
+   "solution_steps": [
+    {
+     "explain": "Lực ma sát trượt là lực hãm duy nhất trên mặt ngang; gia tốc bằng μg, không phụ thuộc khối lượng.",
+     "latex": "a = \\mu g = 0{,}5 \\cdot 10 = 5\\ \\text{m/s}^2"
+    },
+    {
+     "explain": "Dùng hệ thức độc lập thời gian để tìm quãng đường hãm (v = 0 khi dừng).",
+     "latex": "s = \\dfrac{v_0^2}{2a} = \\dfrac{15^2}{2\\cdot 5} = 22{,}5\\ \\text{m}"
+    },
+    {
+     "explain": "Thời gian dừng từ công thức vận tốc.",
+     "latex": "t = \\dfrac{v_0}{a} = \\dfrac{15}{5} = 3\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.luc-ma-sat-truot",
+    "physics.thpt.dong-hoc.he-thuc-doc-lap-thoi-gian"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "gia tốc do ma sát",
+    "quãng đường và thời gian hãm"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "ma-sat"
+   ],
+   "hints": [
+    "Trên mặt ngang N = mg nên a = μg.",
+    "Dùng v² = v0² − 2as với v = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0011",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động trên mặt phẳng nghiêng",
+   "type": "trac-nghiem",
+   "statement_vi": "Một vật trượt không vận tốc đầu xuống mặt phẳng nghiêng góc 37° (sin37° = 0,6; cos37° = 0,8), hệ số ma sát trượt 0,25. Lấy g = 10 m/s². Gia tốc của vật là:",
+   "statement_en": "An object slides from rest down a 37° incline (sin = 0.6, cos = 0.8), kinetic friction 0.25 (g = 10 m/s²). Its acceleration is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Trên mặt nghiêng, gia tốc bằng g nhân hiệu của sin góc và tích hệ số ma sát với cos góc.",
+     "latex": "a = g(\\sin\\theta - \\mu\\cos\\theta) = 10(0{,}6 - 0{,}25\\cdot 0{,}8)"
+    },
+    {
+     "explain": "Tính trong ngoặc rồi nhân với g.",
+     "latex": "a = 10(0{,}6 - 0{,}2) = 10 \\cdot 0{,}4 = 4\\ \\text{m/s}^2"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.mat-phang-nghieng-co-ma-sat",
+    "physics.thpt.dong-luc-hoc.phan-luc-mat-phang-nghieng"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "phân tích lực trên mặt nghiêng",
+    "gia tốc có ma sát"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "mat-phang-nghieng"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "4 m/s²",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "6 m/s²",
+     "why_wrong": "Lấy a = g·sinθ, bỏ qua lực ma sát cản chuyển động."
+    },
+    {
+     "key": "C",
+     "text": "2 m/s²",
+     "why_wrong": "Nhầm áp lực N = mg nên tính lực ma sát quá lớn."
+    },
+    {
+     "key": "D",
+     "text": "8 m/s²",
+     "why_wrong": "Cộng thay vì trừ thành phần ma sát."
+    }
+   ],
+   "hints": [
+    "a = g(sinθ − μcosθ).",
+    "N = mg·cosθ trên mặt nghiêng."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0012",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực hướng tâm",
+   "type": "trac-nghiem",
+   "statement_vi": "Một vật được quay tròn trong mặt phẳng thẳng đứng bằng một sợi dây, bán kính vòng tròn 1,6 m. Lấy g = 10 m/s². Tốc độ tối thiểu tại điểm cao nhất để dây không bị chùng là:",
+   "statement_en": "An object is whirled in a vertical circle of radius 1.6 m (g = 10 m/s²). The minimum speed at the top so the string stays taut is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Ở điểm cao nhất, khi dây bắt đầu chùng thì lực căng bằng 0, chỉ còn trọng lực đóng vai trò lực hướng tâm.",
+     "latex": "mg = \\dfrac{m v_{min}^2}{r} \\Rightarrow v_{min} = \\sqrt{g r}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "v_{min} = \\sqrt{10 \\cdot 1{,}6} = \\sqrt{16} = 4\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.vong-xiec-diem-cao-nhat",
+    "physics.thpt.dong-luc-hoc.luc-huong-tam"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "điều kiện qua điểm cao nhất",
+    "lực hướng tâm tối thiểu"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "luc-huong-tam"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "4 m/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "16 m/s",
+     "why_wrong": "Quên lấy căn bậc hai của g·r."
+    },
+    {
+     "key": "C",
+     "text": "≈ 5,66 m/s",
+     "why_wrong": "Dùng √(2gr); nhầm với công thức tốc độ rơi từ độ cao r."
+    },
+    {
+     "key": "D",
+     "text": "≈ 2,83 m/s",
+     "why_wrong": "Dùng √(gr/2); nhầm hệ số."
+    }
+   ],
+   "hints": [
+    "Tại đỉnh, tối thiểu khi lực căng = 0.",
+    "Khi đó mg = mv²/r."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0013",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ vật nối dây qua ròng rọc",
+   "type": "dien-so",
+   "statement_vi": "Máy Atwood gồm hai vật m1 = 5 kg và m2 = 3 kg nối bằng dây nhẹ, không dãn qua ròng rọc lí tưởng. Lấy g = 10 m/s². Tính lực căng dây.",
+   "statement_en": "An Atwood machine has m1 = 5 kg and m2 = 3 kg over an ideal pulley (g = 10 m/s²). Find the string tension.",
+   "answer": "37,5 N",
+   "solution_steps": [
+    {
+     "explain": "Gia tốc của hệ bằng hợp lực phát động chia tổng khối lượng.",
+     "latex": "a = \\dfrac{(m_1 - m_2)g}{m_1 + m_2} = \\dfrac{(5-3)\\cdot 10}{8} = 2{,}5\\ \\text{m/s}^2"
+    },
+    {
+     "explain": "Xét vật m2 đi lên: lực căng trừ trọng lực bằng m2·a, suy ra lực căng.",
+     "latex": "T = m_2(g + a) = 3(10 + 2{,}5) = 37{,}5\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.he-vat-qua-rong-roc",
+    "physics.thpt.dong-luc-hoc.luc-cang-day"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "viết định luật II cho từng vật",
+    "tính lực căng dây"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "rong-roc"
+   ],
+   "answer_numeric": 37.5,
+   "answer_unit": "N",
+   "tolerance": 0.1,
+   "hints": [
+    "Tính gia tốc chung trước.",
+    "T = m2(g + a) với vật đi lên."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0014",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mômen lực và quy tắc mômen",
+   "type": "trac-nghiem",
+   "statement_vi": "Một thanh cứng nhẹ dài 1 m đặt trên một điểm tựa cách đầu A 0,4 m. Tại đầu A treo vật trọng lượng 60 N. Để thanh cân bằng nằm ngang, phải treo tại đầu B (đầu còn lại) một vật có trọng lượng:",
+   "statement_en": "A light rigid rod (1 m) rests on a pivot 0.4 m from end A. A 60 N weight hangs at A. For horizontal balance, the weight to hang at end B is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Cánh tay đòn của vật ở A là 0,4 m; của vật ở B là 1 − 0,4 = 0,6 m.",
+     "latex": "d_A = 0{,}4\\ \\text{m};\\quad d_B = 0{,}6\\ \\text{m}"
+    },
+    {
+     "explain": "Quy tắc mômen: mômen hai bên điểm tựa bằng nhau.",
+     "latex": "60 \\cdot 0{,}4 = W \\cdot 0{,}6 \\Rightarrow W = \\dfrac{24}{0{,}6} = 40\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.can-bang-vat-ran.quy-tac-momen-luc",
+    "physics.thpt.can-bang-vat-ran.momen-luc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "xác định cánh tay đòn",
+    "áp dụng quy tắc mômen"
+   ],
+   "tags": [
+    "can-bang-vat-ran",
+    "momen-luc"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "40 N",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "90 N",
+     "why_wrong": "Đảo ngược tỉ số cánh tay đòn (60·0,6/0,4)."
+    },
+    {
+     "key": "C",
+     "text": "60 N",
+     "why_wrong": "Cho rằng hai vật phải bằng nhau, bỏ qua cánh tay đòn khác nhau."
+    },
+    {
+     "key": "D",
+     "text": "24 N",
+     "why_wrong": "Lấy tích mômen 60·0,4 làm trọng lượng, quên chia cho cánh tay đòn của B."
+    }
+   ],
+   "hints": [
+    "Cánh tay đòn tính từ điểm tựa.",
+    "M_A = M_B."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0015",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động lực học vật rắn quay",
+   "type": "tu-luan",
+   "statement_vi": "Một đĩa tròn đặc đồng chất khối lượng 4 kg, bán kính 0,2 m quay quanh trục cố định qua tâm. Tác dụng một lực tiếp tuyến 5 N vào mép đĩa từ trạng thái nghỉ. Tính gia tốc góc, tốc độ góc sau 4 s và động năng quay lúc đó.",
+   "statement_en": "A uniform solid disk (4 kg, 0.2 m) rotates about its central axis. A 5 N tangential force is applied at the rim from rest. Find angular acceleration, angular speed after 4 s, and rotational kinetic energy then.",
+   "answer": "γ = 12,5 rad/s²; ω = 50 rad/s; W = 100 J",
+   "solution_steps": [
+    {
+     "explain": "Mômen quán tính của đĩa đặc quanh trục qua tâm.",
+     "latex": "I = \\tfrac{1}{2} m R^2 = \\tfrac{1}{2}\\cdot 4\\cdot 0{,}2^2 = 0{,}08\\ \\text{kg·m}^2"
+    },
+    {
+     "explain": "Mômen lực bằng lực nhân bán kính; gia tốc góc từ phương trình động lực học quay.",
+     "latex": "M = F R = 5\\cdot 0{,}2 = 1\\ \\text{N·m};\\quad \\gamma = \\dfrac{M}{I} = \\dfrac{1}{0{,}08} = 12{,}5\\ \\text{rad/s}^2"
+    },
+    {
+     "explain": "Tốc độ góc sau 4 s (quay nhanh dần đều từ nghỉ).",
+     "latex": "\\omega = \\gamma t = 12{,}5\\cdot 4 = 50\\ \\text{rad/s}"
+    },
+    {
+     "explain": "Động năng quay.",
+     "latex": "W = \\tfrac{1}{2} I \\omega^2 = \\tfrac{1}{2}\\cdot 0{,}08\\cdot 50^2 = 100\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chuyen-dong-quay.momen-quan-tinh-cac-vat-dong-chat",
+    "physics.thpt.chuyen-dong-quay.phuong-trinh-dong-luc-hoc-vat-ran-quay",
+    "physics.thpt.chuyen-dong-quay.dong-nang-quay"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "tính mômen quán tính",
+    "phương trình động lực học quay",
+    "động năng quay"
+   ],
+   "tags": [
+    "chuyen-dong-quay",
+    "momen-quan-tinh"
+   ],
+   "hints": [
+    "I = ½mR² cho đĩa đặc.",
+    "M = I·γ, rồi ω = γt."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0016",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Bảo toàn mômen động lượng",
+   "type": "trac-nghiem",
+   "statement_vi": "Một người ngồi trên ghế quay, hai tay dang rộng, hệ có mômen quán tính 6 kg·m² và đang quay với tốc độ góc 2 rad/s. Người đó thu tay lại làm mômen quán tính giảm còn 2 kg·m². Bỏ qua ma sát ở trục. Tốc độ góc mới là:",
+   "statement_en": "A person on a rotating stool (I = 6 kg·m², ω = 2 rad/s) pulls their arms in, reducing I to 2 kg·m². Ignoring axle friction, the new angular speed is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Không có mômen ngoại lực nên mômen động lượng bảo toàn.",
+     "latex": "I_1 \\omega_1 = I_2 \\omega_2"
+    },
+    {
+     "explain": "Giải tìm tốc độ góc mới.",
+     "latex": "\\omega_2 = \\dfrac{I_1 \\omega_1}{I_2} = \\dfrac{6\\cdot 2}{2} = 6\\ \\text{rad/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chuyen-dong-quay.bao-toan-momen-dong-luong",
+    "physics.thpt.chuyen-dong-quay.momen-dong-luong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 3,
+   "skills": [
+    "bảo toàn mômen động lượng"
+   ],
+   "tags": [
+    "chuyen-dong-quay",
+    "mo-men-dong-luong"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "6 rad/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "≈ 0,67 rad/s",
+     "why_wrong": "Đảo ngược tỉ số (I2ω1/I1); mômen quán tính giảm thì tốc độ phải tăng."
+    },
+    {
+     "key": "C",
+     "text": "2 rad/s",
+     "why_wrong": "Cho rằng tốc độ góc không đổi, bỏ qua thay đổi mômen quán tính."
+    },
+    {
+     "key": "D",
+     "text": "3 rad/s",
+     "why_wrong": "Chỉ nhân đôi tốc độ, không dùng đúng tỉ số 6/2."
+    }
+   ],
+   "hints": [
+    "Iω được bảo toàn.",
+    "I giảm 3 lần thì ω tăng 3 lần."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0017",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công suất",
+   "type": "trac-nghiem",
+   "statement_vi": "Một thang máy khối lượng 500 kg đi lên đều với tốc độ 2 m/s. Lấy g = 10 m/s². Công suất tối thiểu của động cơ để kéo thang máy là:",
+   "statement_en": "A 500 kg lift rises at a constant 2 m/s (g = 10 m/s²). The minimum motor power is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Đi lên đều nên lực kéo cân bằng trọng lực.",
+     "latex": "F = mg = 500\\cdot 10 = 5000\\ \\text{N}"
+    },
+    {
+     "explain": "Công suất bằng lực nhân vận tốc.",
+     "latex": "P = F v = 5000\\cdot 2 = 10000\\ \\text{W} = 10\\ \\text{kW}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cong-nang-luong.cong-suat-tuc-thoi",
+    "physics.thpt.cong-nang-luong.cong-co-hoc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "công suất P = Fv"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "cong-suat"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "10 kW",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "5 kW",
+     "why_wrong": "Quên nhân với vận tốc (chỉ lấy nửa), hoặc chia nhầm cho 2."
+    },
+    {
+     "key": "C",
+     "text": "1 kW",
+     "why_wrong": "Nhầm đơn vị, chia thêm cho 10."
+    },
+    {
+     "key": "D",
+     "text": "20 kW",
+     "why_wrong": "Nhân đôi lực kéo không có cơ sở."
+    }
+   ],
+   "hints": [
+    "Lên đều: F = mg.",
+    "P = F·v."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0018",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Định lí biến thiên động năng",
+   "type": "dien-so",
+   "statement_vi": "Một vật khối lượng 1 kg đang đứng yên trên mặt phẳng ngang nhẵn, chịu tác dụng của lực không đổi 8 N theo phương ngang trong quãng đường 4 m. Tính tốc độ của vật ở cuối quãng đường.",
+   "statement_en": "A 1 kg object at rest on a frictionless horizontal plane is pushed by a constant 8 N force over 4 m. Find its final speed.",
+   "answer": "8 m/s",
+   "solution_steps": [
+    {
+     "explain": "Công của lực bằng độ biến thiên động năng (vật bắt đầu từ nghỉ).",
+     "latex": "A = F s = 8\\cdot 4 = 32\\ \\text{J} = \\tfrac{1}{2} m v^2"
+    },
+    {
+     "explain": "Giải tìm tốc độ.",
+     "latex": "v = \\sqrt{\\dfrac{2A}{m}} = \\sqrt{\\dfrac{2\\cdot 32}{1}} = \\sqrt{64} = 8\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cong-nang-luong.dinh-li-bien-thien-dong-nang",
+    "physics.thpt.cong-nang-luong.cong-co-hoc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "định lí biến thiên động năng",
+    "liên hệ công và tốc độ"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "dong-nang"
+   ],
+   "answer_numeric": 8.0,
+   "answer_unit": "m/s",
+   "tolerance": 0.05,
+   "hints": [
+    "Công của hợp lực = ΔWđ.",
+    "Vật xuất phát từ nghỉ nên Wđ0 = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0019",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Bảo toàn cơ năng có ma sát",
+   "type": "tu-luan",
+   "statement_vi": "Một vật nhỏ trượt không vận tốc đầu từ đỉnh một mặt cong nhẵn cao 1,25 m rồi xuống mặt phẳng ngang. Lấy g = 10 m/s². a) Tính tốc độ của vật ở chân mặt cong. b) Trên mặt ngang có hệ số ma sát 0,25, tính quãng đường vật đi thêm đến khi dừng.",
+   "statement_en": "An object slides from rest down a smooth curve of height 1.25 m onto a horizontal surface (g = 10 m/s²). a) Find its speed at the bottom. b) On the horizontal surface with friction 0.25, find how far it travels before stopping.",
+   "answer": "a) v = 5 m/s; b) s = 5 m",
+   "solution_steps": [
+    {
+     "explain": "Mặt cong nhẵn nên cơ năng bảo toàn: thế năng chuyển hết thành động năng.",
+     "latex": "\\tfrac{1}{2} m v^2 = mgh \\Rightarrow v = \\sqrt{2gh} = \\sqrt{2\\cdot 10\\cdot 1{,}25} = 5\\ \\text{m/s}"
+    },
+    {
+     "explain": "Trên mặt ngang, động năng bị công của lực ma sát tiêu hao cho đến khi dừng.",
+     "latex": "\\tfrac{1}{2} m v^2 = \\mu m g s \\Rightarrow s = \\dfrac{v^2}{2\\mu g}"
+    },
+    {
+     "explain": "Thay số, khối lượng tự triệt tiêu.",
+     "latex": "s = \\dfrac{5^2}{2\\cdot 0{,}25\\cdot 10} = \\dfrac{25}{5} = 5\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cong-nang-luong.bao-toan-co-nang-trong-truong",
+    "physics.thpt.cong-nang-luong.bien-thien-co-nang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "bảo toàn cơ năng",
+    "độ giảm cơ năng bằng công ma sát"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "bao-toan-co-nang"
+   ],
+   "hints": [
+    "Phần cong nhẵn: v = √(2gh).",
+    "Phần ngang: ½mv² = μmg·s."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0020",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ năng và ma sát trên mặt nghiêng",
+   "type": "trac-nghiem",
+   "statement_vi": "Một vật trượt không vận tốc đầu từ đỉnh mặt phẳng nghiêng dài 5 m, góc nghiêng 37° (sin37° = 0,6; cos37° = 0,8), hệ số ma sát trượt 0,25. Lấy g = 10 m/s². Tốc độ của vật ở chân mặt nghiêng là:",
+   "statement_en": "An object slides from rest down a 5 m incline at 37° (sin = 0.6, cos = 0.8), friction 0.25 (g = 10 m/s²). Its speed at the bottom is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Độ cao rơi và công của lực ma sát dọc mặt nghiêng.",
+     "latex": "h = s\\sin\\theta = 5\\cdot 0{,}6 = 3\\ \\text{m};\\quad A_{ms} = \\mu m g\\cos\\theta\\cdot s"
+    },
+    {
+     "explain": "Độ giảm cơ năng bằng công ma sát, suy ra động năng ở chân dốc.",
+     "latex": "\\tfrac{1}{2} m v^2 = mgh - \\mu m g\\cos\\theta\\cdot s"
+    },
+    {
+     "explain": "Khối lượng triệt tiêu, thay số.",
+     "latex": "v = \\sqrt{2(gh - \\mu g\\cos\\theta\\cdot s)} = \\sqrt{2(30 - 10)} = \\sqrt{40} \\approx 6{,}32\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cong-nang-luong.bien-thien-co-nang",
+    "physics.thpt.cong-nang-luong.bao-toan-co-nang-trong-truong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "độ giảm cơ năng bằng công ma sát"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "ma-sat"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "≈ 6,32 m/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "≈ 7,75 m/s",
+     "why_wrong": "Bỏ qua ma sát, chỉ dùng v = √(2gh) = √60."
+    },
+    {
+     "key": "C",
+     "text": "≈ 5,48 m/s",
+     "why_wrong": "Chỉ tính phần công ma sát, quên thế năng, lấy √30."
+    },
+    {
+     "key": "D",
+     "text": "8 m/s",
+     "why_wrong": "Cộng nhầm năng lượng ma sát thay vì trừ."
+    }
+   ],
+   "hints": [
+    "Wđ = mgh − A_ms.",
+    "A_ms = μmg·cosθ·s."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0021",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Va chạm mềm",
+   "type": "trac-nghiem",
+   "statement_vi": "Xe A khối lượng 2 kg chuyển động với vận tốc 3 m/s đến va chạm và dính vào xe B khối lượng 1 kg đang đứng yên trên mặt nhẵn. Vận tốc chung của hai xe ngay sau va chạm là:",
+   "statement_en": "Cart A (2 kg, 3 m/s) collides and sticks to cart B (1 kg, at rest) on a frictionless surface. Their common speed after collision is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Va chạm mềm, bảo toàn động lượng; xe B ban đầu đứng yên.",
+     "latex": "m_A v_A = (m_A + m_B) v"
+    },
+    {
+     "explain": "Giải tìm vận tốc chung.",
+     "latex": "v = \\dfrac{m_A v_A}{m_A + m_B} = \\dfrac{2\\cdot 3}{3} = 2\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luong.va-cham-mem",
+    "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "bảo toàn động lượng va chạm mềm"
+   ],
+   "tags": [
+    "dong-luong",
+    "va-cham"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "2 m/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "6 m/s",
+     "why_wrong": "Lấy động lượng 2·3 = 6 làm vận tốc, quên chia cho tổng khối lượng."
+    },
+    {
+     "key": "C",
+     "text": "3 m/s",
+     "why_wrong": "Cho rằng vận tốc không đổi sau va chạm, bỏ qua khối lượng xe B."
+    },
+    {
+     "key": "D",
+     "text": "1 m/s",
+     "why_wrong": "Chia động lượng cho nhầm tổng khối lượng bằng 6."
+    }
+   ],
+   "hints": [
+    "Va chạm mềm: hai vật dính nhau.",
+    "v = m_A·v_A/(m_A+m_B)."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0022",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Va chạm đàn hồi trực diện",
+   "type": "tu-luan",
+   "statement_vi": "Vật thứ nhất khối lượng 2 kg chuyển động với vận tốc 4 m/s đến va chạm đàn hồi trực diện với vật thứ hai khối lượng 6 kg đang đứng yên. Tính vận tốc của mỗi vật ngay sau va chạm và kiểm tra bảo toàn động lượng.",
+   "statement_en": "A 2 kg object at 4 m/s undergoes a head-on elastic collision with a 6 kg object at rest. Find each velocity after the collision and verify momentum conservation.",
+   "answer": "v1' = −2 m/s (bật ngược lại); v2' = 2 m/s",
+   "solution_steps": [
+    {
+     "explain": "Va chạm đàn hồi trực diện, vật hai đứng yên: dùng công thức vận tốc sau va chạm của vật một.",
+     "latex": "v_1' = \\dfrac{(m_1 - m_2) v_1}{m_1 + m_2} = \\dfrac{(2-6)\\cdot 4}{8} = -2\\ \\text{m/s}"
+    },
+    {
+     "explain": "Vận tốc vật hai sau va chạm.",
+     "latex": "v_2' = \\dfrac{2 m_1 v_1}{m_1 + m_2} = \\dfrac{2\\cdot 2\\cdot 4}{8} = 2\\ \\text{m/s}"
+    },
+    {
+     "explain": "Kiểm tra bảo toàn động lượng: trước 8 kg·m/s, sau cũng 8 kg·m/s.",
+     "latex": "p_{sau} = 2\\cdot(-2) + 6\\cdot 2 = -4 + 12 = 8\\ \\text{kg·m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luong.va-cham-dan-hoi-truc-dien",
+    "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "công thức va chạm đàn hồi",
+    "kiểm tra bảo toàn động lượng"
+   ],
+   "tags": [
+    "dong-luong",
+    "va-cham-dan-hoi"
+   ],
+   "hints": [
+    "v1' âm nghĩa là vật một bật ngược lại.",
+    "Kiểm tra lại bằng bảo toàn động lượng và động năng."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0023",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Bảo toàn động lượng khi nổ",
+   "type": "trac-nghiem",
+   "statement_vi": "Một viên đạn khối lượng 2 kg đang bay ngang với vận tốc 200 m/s thì nổ thành hai mảnh khối lượng bằng nhau, mỗi mảnh 1 kg. Mảnh thứ nhất bay thẳng đứng lên trên với vận tốc 300 m/s. Vận tốc của mảnh thứ hai có độ lớn:",
+   "statement_en": "A 2 kg shell flying horizontally at 200 m/s explodes into two equal 1 kg fragments. One flies vertically up at 300 m/s. The speed of the other fragment is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Động lượng hệ trước khi nổ (theo phương ngang) được bảo toàn.",
+     "latex": "p = M v = 2\\cdot 200 = 400\\ \\text{kg·m/s}"
+    },
+    {
+     "explain": "Theo phương ngang, chỉ mảnh hai có động lượng ngang.",
+     "latex": "1\\cdot v_{2x} = 400 \\Rightarrow v_{2x} = 400\\ \\text{m/s}"
+    },
+    {
+     "explain": "Theo phương đứng, tổng động lượng ban đầu bằng 0.",
+     "latex": "1\\cdot v_{2y} + 1\\cdot 300 = 0 \\Rightarrow v_{2y} = -300\\ \\text{m/s}"
+    },
+    {
+     "explain": "Độ lớn vận tốc mảnh hai bằng tổng hợp hai thành phần vuông góc.",
+     "latex": "v_2 = \\sqrt{v_{2x}^2 + v_{2y}^2} = \\sqrt{400^2 + 300^2} = 500\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong",
+    "physics.thpt.dong-luong.chuyen-dong-bang-phan-luc"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 6,
+   "skills": [
+    "bảo toàn động lượng hai chiều",
+    "tổng hợp vectơ"
+   ],
+   "tags": [
+    "dong-luong",
+    "bao-toan-dong-luong"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "500 m/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "400 m/s",
+     "why_wrong": "Chỉ lấy thành phần ngang, bỏ qua thành phần thẳng đứng của động lượng."
+    },
+    {
+     "key": "C",
+     "text": "700 m/s",
+     "why_wrong": "Cộng số học 400 + 300; hai thành phần vuông góc phải dùng Pythagore."
+    },
+    {
+     "key": "D",
+     "text": "100 m/s",
+     "why_wrong": "Trừ 400 − 300; sai vì hai thành phần vuông góc nhau."
+    }
+   ],
+   "hints": [
+    "Bảo toàn động lượng theo cả phương ngang và phương đứng.",
+    "Tổng hợp hai thành phần vuông góc bằng Pythagore."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0024",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nội năng và nguyên lí I",
+   "type": "trac-nghiem",
+   "statement_vi": "Truyền cho một khối khí nhiệt lượng 500 J. Khối khí dãn nở đẳng áp và sinh công 200 J. Độ biến thiên nội năng của khí là:",
+   "statement_en": "500 J of heat is supplied to a gas, which expands at constant pressure doing 200 J of work. The change in internal energy is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Định luật I nhiệt động lực học với quy ước: khí nhận nhiệt Q dương, khí sinh công thì A âm.",
+     "latex": "\\Delta U = Q + A = 500 + (-200)"
+    },
+    {
+     "explain": "Tính kết quả.",
+     "latex": "\\Delta U = 300\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-i-nhiet-dong-luc-hoc",
+    "physics.thpt.nhiet-dong-luc-hoc.cong-cua-khi-dang-ap"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định luật I",
+    "quy ước dấu công và nhiệt"
+   ],
+   "tags": [
+    "nhiet-dong-luc-hoc",
+    "noi-nang"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "300 J",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "700 J",
+     "why_wrong": "Cộng công vào nhiệt (500 + 200); khí SINH công nên công mang dấu âm."
+    },
+    {
+     "key": "C",
+     "text": "−300 J",
+     "why_wrong": "Đảo dấu, lấy A − Q thay vì Q + A."
+    },
+    {
+     "key": "D",
+     "text": "200 J",
+     "why_wrong": "Nhầm độ biến thiên nội năng bằng công khí sinh ra."
+    }
+   ],
+   "hints": [
+    "ΔU = Q + A.",
+    "Khí dãn nở sinh công nên A < 0."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0025",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Các quá trình của khí lí tưởng",
+   "type": "dung-sai",
+   "statement_vi": "Xét một lượng khí lí tưởng xác định. Hãy cho biết mỗi phát biểu sau đúng hay sai: (a) Trong quá trình đẳng tích, nhiệt lượng truyền cho khí bằng độ biến thiên nội năng. (b) Trong quá trình đẳng nhiệt, nội năng của khí không đổi. (c) Khi khí dãn nở thì khí luôn nhận công dương. (d) Trong quá trình đẳng áp được đun nóng, khí sinh công đẩy pittông.",
+   "statement_en": "For a fixed ideal gas, state whether each is true or false: (a) In an isochoric process Q equals ΔU. (b) In an isothermal process internal energy is constant. (c) When a gas expands it always receives positive work. (d) In an isobaric heating the gas does work on the piston.",
+   "answer": "(a) Đúng; (b) Đúng; (c) Sai; (d) Đúng",
+   "solution_steps": [
+    {
+     "explain": "(a) Đẳng tích: thể tích không đổi nên khí không sinh công (A = 0), do đó Q = ΔU. Đúng.",
+     "latex": "V = \\text{const} \\Rightarrow A = 0 \\Rightarrow \\Delta U = Q"
+    },
+    {
+     "explain": "(b) Đẳng nhiệt của khí lí tưởng: nội năng chỉ phụ thuộc nhiệt độ, T không đổi nên ΔU = 0. Đúng.",
+     "latex": "T = \\text{const} \\Rightarrow \\Delta U = 0"
+    },
+    {
+     "explain": "(c) Khi khí dãn nở, khí SINH công nên theo quy ước công khí nhận mang dấu âm, không phải dương. Sai.",
+     "latex": "\\Delta V > 0 \\Rightarrow A = -p\\,\\Delta V < 0"
+    },
+    {
+     "explain": "(d) Đẳng áp đun nóng: khí nở ra, đẩy pittông đi nên khí sinh công. Đúng.",
+     "latex": "A_{khi\\ sinh} = p\\,\\Delta V > 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.nhiet-dong-luc-hoc.qua-trinh-dang-tich",
+    "physics.thpt.nhiet-dong-luc-hoc.qua-trinh-dang-nhiet",
+    "physics.thpt.nhiet-dong-luc-hoc.qua-trinh-dang-ap"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "phân biệt các quá trình",
+    "quy ước dấu công"
+   ],
+   "tags": [
+    "nhiet-dong-luc-hoc",
+    "nguyen-li-i"
+   ],
+   "hints": [
+    "Đẳng tích: A = 0.",
+    "Khí dãn nở thì sinh công (A < 0 theo quy ước ΔU = Q + A)."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0026",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình cân bằng nhiệt",
+   "type": "dien-so",
+   "statement_vi": "Đổ 500 g nước ở 20°C vào 300 g nước ở 80°C trong một bình cách nhiệt (bỏ qua nhiệt dung của bình). Tính nhiệt độ cân bằng của hỗn hợp.",
+   "statement_en": "500 g of water at 20°C is mixed with 300 g at 80°C in an insulated container (ignore the container). Find the equilibrium temperature.",
+   "answer": "42,5°C",
+   "solution_steps": [
+    {
+     "explain": "Cùng là nước nên nhiệt dung riêng c giống nhau và triệt tiêu; nhiệt tỏa của nước nóng bằng nhiệt thu của nước lạnh.",
+     "latex": "m_1 c(t - 20) = m_2 c(80 - t)"
+    },
+    {
+     "explain": "Thay khối lượng, giải phương trình một ẩn.",
+     "latex": "0{,}5(t - 20) = 0{,}3(80 - t) \\Rightarrow 0{,}8 t = 34 \\Rightarrow t = 42{,}5\\ ^\\circ\\text{C}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.nhiet-dong-luc-hoc.phuong-trinh-can-bang-nhiet",
+    "physics.thpt.nhiet-dong-luc-hoc.nhiet-luong-thu-toa"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phương trình cân bằng nhiệt"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "can-bang-nhiet"
+   ],
+   "answer_numeric": 42.5,
+   "answer_unit": "°C",
+   "tolerance": 0.2,
+   "hints": [
+    "Q_tỏa = Q_thu.",
+    "Cùng chất nên c triệt tiêu."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0027",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt lượng và sự chuyển thể",
+   "type": "tu-luan",
+   "statement_vi": "Tính nhiệt lượng cần cung cấp để biến hoàn toàn 0,5 kg nước đá ở −10°C thành hơi nước ở 100°C. Cho nhiệt dung riêng của nước đá 2100 J/(kg·K), của nước 4200 J/(kg·K), nhiệt nóng chảy của đá 3,4·10⁵ J/kg, nhiệt hóa hơi của nước 2,3·10⁶ J/kg.",
+   "statement_en": "Find the heat needed to convert 0.5 kg of ice at −10°C entirely into steam at 100°C. c_ice = 2100, c_water = 4200 J/(kg·K), latent heat of fusion 3.4×10⁵, of vaporization 2.3×10⁶ J/kg.",
+   "answer": "≈ 1,54·10⁶ J (1540,5 kJ)",
+   "solution_steps": [
+    {
+     "explain": "Giai đoạn 1: hâm nước đá từ −10°C lên 0°C.",
+     "latex": "Q_1 = m c_{da}\\,\\Delta t = 0{,}5\\cdot 2100\\cdot 10 = 10500\\ \\text{J}"
+    },
+    {
+     "explain": "Giai đoạn 2: làm nóng chảy hoàn toàn nước đá ở 0°C.",
+     "latex": "Q_2 = \\lambda m = 0{,}5\\cdot 3{,}4\\cdot 10^5 = 170000\\ \\text{J}"
+    },
+    {
+     "explain": "Giai đoạn 3: đun nước từ 0°C lên 100°C.",
+     "latex": "Q_3 = m c_{nuoc}\\cdot 100 = 0{,}5\\cdot 4200\\cdot 100 = 210000\\ \\text{J}"
+    },
+    {
+     "explain": "Giai đoạn 4: hóa hơi hoàn toàn nước ở 100°C.",
+     "latex": "Q_4 = L m = 0{,}5\\cdot 2{,}3\\cdot 10^6 = 1150000\\ \\text{J}"
+    },
+    {
+     "explain": "Tổng nhiệt lượng bằng tổng bốn giai đoạn.",
+     "latex": "Q = Q_1 + Q_2 + Q_3 + Q_4 = 1540500\\ \\text{J} \\approx 1{,}54\\cdot 10^6\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.nhiet-luong-tong-quat-co-chuyen-the",
+    "physics.thpt.chat-ran-chat-long.nhiet-nong-chay",
+    "physics.thpt.chat-ran-chat-long.nhiet-hoa-hoi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 8,
+   "skills": [
+    "tách các giai đoạn thu nhiệt",
+    "cộng nhiệt lượng chuyển thể"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "chuyen-the"
+   ],
+   "hints": [
+    "Chia thành 4 giai đoạn: hâm đá, nóng chảy, đun nước, hóa hơi.",
+    "Giai đoạn chuyển thể không đổi nhiệt độ."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0028",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hiệu suất động cơ nhiệt",
+   "type": "trac-nghiem",
+   "statement_vi": "Một động cơ nhiệt lí tưởng hoạt động giữa nguồn nóng 500 K và nguồn lạnh 300 K. Hiệu suất cực đại (Carnot) của động cơ này là:",
+   "statement_en": "An ideal heat engine works between 500 K and 300 K. Its maximum (Carnot) efficiency is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hiệu suất Carnot phụ thuộc nhiệt độ tuyệt đối hai nguồn.",
+     "latex": "H_{max} = 1 - \\dfrac{T_2}{T_1} = 1 - \\dfrac{300}{500}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "H_{max} = 1 - 0{,}6 = 0{,}4 = 40\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.nhiet-dong-luc-hoc.hieu-suat-chu-trinh-carnot",
+    "physics.thpt.nhiet-dong-luc-hoc.hieu-suat-dong-co-nhiet"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 3,
+   "skills": [
+    "hiệu suất Carnot",
+    "dùng nhiệt độ Kelvin"
+   ],
+   "tags": [
+    "nhiet-dong-luc-hoc",
+    "carnot"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "40%",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "60%",
+     "why_wrong": "Lấy T2/T1 = 300/500 làm hiệu suất, quên trừ khỏi 1."
+    },
+    {
+     "key": "C",
+     "text": "20%",
+     "why_wrong": "Nhầm hiệu hai nhiệt độ chia cho 1000."
+    },
+    {
+     "key": "D",
+     "text": "≈ 33%",
+     "why_wrong": "Dùng nhiệt độ Celsius (227°C và 27°C) sai công thức."
+    }
+   ],
+   "hints": [
+    "H_max = 1 − T2/T1 với T tính bằng Kelvin.",
+    "Nguồn lạnh là T2."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0029",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Định luật Boyle",
+   "type": "trac-nghiem",
+   "statement_vi": "Một lượng khí ở áp suất 1 atm có thể tích 6 lít. Nén đẳng nhiệt lượng khí này đến thể tích 2 lít thì áp suất của khí là:",
+   "statement_en": "A gas at 1 atm occupies 6 L. Compressed isothermally to 2 L, its pressure becomes:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Quá trình đẳng nhiệt tuân theo định luật Boyle: tích áp suất và thể tích không đổi.",
+     "latex": "p_1 V_1 = p_2 V_2"
+    },
+    {
+     "explain": "Giải tìm áp suất mới.",
+     "latex": "p_2 = \\dfrac{p_1 V_1}{V_2} = \\dfrac{1\\cdot 6}{2} = 3\\ \\text{atm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.dinh-luat-boyle"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng định luật Boyle"
+   ],
+   "tags": [
+    "chat-khi",
+    "dang-nhiet"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "3 atm",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "12 atm",
+     "why_wrong": "Nhân p1 với V1 rồi nhân tiếp V2, dùng sai công thức."
+    },
+    {
+     "key": "C",
+     "text": "≈ 0,33 atm",
+     "why_wrong": "Đảo ngược tỉ số thể tích; nén thì áp suất phải tăng."
+    },
+    {
+     "key": "D",
+     "text": "1,5 atm",
+     "why_wrong": "Chỉ chia đôi áp suất, không dùng đúng tỉ số 6/2."
+    }
+   ],
+   "hints": [
+    "Đẳng nhiệt: p1V1 = p2V2.",
+    "Nén nhỏ lại thì áp suất tăng."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0030",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Định luật Gay-Lussac",
+   "type": "trac-nghiem",
+   "statement_vi": "Một bình kín chứa khí ở áp suất 2 atm và nhiệt độ 300 K. Đun nóng đẳng tích đến nhiệt độ 450 K thì áp suất của khí là:",
+   "statement_en": "A sealed container holds gas at 2 atm and 300 K. Heated isochorically to 450 K, its pressure becomes:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Quá trình đẳng tích tuân theo định luật Gay-Lussac: áp suất tỉ lệ thuận nhiệt độ tuyệt đối.",
+     "latex": "\\dfrac{p_1}{T_1} = \\dfrac{p_2}{T_2}"
+    },
+    {
+     "explain": "Giải tìm áp suất mới với nhiệt độ đã tính bằng Kelvin.",
+     "latex": "p_2 = p_1\\dfrac{T_2}{T_1} = 2\\cdot\\dfrac{450}{300} = 3\\ \\text{atm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.dinh-luat-gay-lussac"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng định luật Gay-Lussac",
+    "dùng nhiệt độ Kelvin"
+   ],
+   "tags": [
+    "chat-khi",
+    "dang-tich"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "3 atm",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "≈ 1,33 atm",
+     "why_wrong": "Đảo ngược tỉ số nhiệt độ; đun nóng thì áp suất phải tăng."
+    },
+    {
+     "key": "C",
+     "text": "4 atm",
+     "why_wrong": "Nhân đôi áp suất theo cảm tính, không dùng đúng tỉ số 450/300."
+    },
+    {
+     "key": "D",
+     "text": "≈ 2,5 atm",
+     "why_wrong": "Cộng thêm chênh lệch nhiệt độ chia 100 thay vì lập tỉ số."
+    }
+   ],
+   "hints": [
+    "Đẳng tích: p/T = const.",
+    "Nhiệt độ phải là Kelvin."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0031",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình trạng thái khí lí tưởng",
+   "type": "dien-so",
+   "statement_vi": "Một lượng khí xác định ở trạng thái 1 có áp suất 2 atm, thể tích 4 lít, nhiệt độ 300 K. Nén và đun để chuyển sang trạng thái 2 có áp suất 3 atm, nhiệt độ 450 K. Tính thể tích khí ở trạng thái 2.",
+   "statement_en": "A fixed gas at state 1 (2 atm, 4 L, 300 K) is changed to state 2 (3 atm, 450 K). Find its volume at state 2.",
+   "answer": "4 lít",
+   "solution_steps": [
+    {
+     "explain": "Lượng khí không đổi nên dùng phương trình trạng thái.",
+     "latex": "\\dfrac{p_1 V_1}{T_1} = \\dfrac{p_2 V_2}{T_2}"
+    },
+    {
+     "explain": "Giải tìm thể tích trạng thái 2.",
+     "latex": "V_2 = \\dfrac{p_1 V_1 T_2}{p_2 T_1} = \\dfrac{2\\cdot 4\\cdot 450}{3\\cdot 300} = \\dfrac{3600}{900} = 4\\ \\text{lít}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.phuong-trinh-trang-thai"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng phương trình trạng thái"
+   ],
+   "tags": [
+    "chat-khi",
+    "phuong-trinh-trang-thai"
+   ],
+   "answer_numeric": 4.0,
+   "answer_unit": "lít",
+   "tolerance": 0.05,
+   "hints": [
+    "p1V1/T1 = p2V2/T2.",
+    "Nhiệt độ dùng Kelvin; áp suất và thể tích có thể giữ nguyên đơn vị vì lập tỉ số."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0032",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình Clapeyron-Mendeleev",
+   "type": "trac-nghiem",
+   "statement_vi": "Một bình kín thể tích 5 lít chứa khí oxygen (O₂, M = 32 g/mol) ở nhiệt độ 300 K và áp suất 2·10⁵ Pa. Cho R = 8,31 J/(mol·K). Khối lượng khí oxygen trong bình xấp xỉ:",
+   "statement_en": "A 5 L container holds oxygen (M = 32 g/mol) at 300 K and 2×10⁵ Pa (R = 8.31 J/(mol·K)). The mass of oxygen is about:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Đổi thể tích sang m³ rồi tính số mol từ phương trình Clapeyron-Mendeleev.",
+     "latex": "n = \\dfrac{pV}{RT} = \\dfrac{2\\cdot 10^5\\cdot 0{,}005}{8{,}31\\cdot 300} \\approx 0{,}401\\ \\text{mol}"
+    },
+    {
+     "explain": "Khối lượng bằng số mol nhân khối lượng mol.",
+     "latex": "m = nM = 0{,}401\\cdot 32 \\approx 12{,}8\\ \\text{g}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.phuong-trinh-clapeyron-mendeleev"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đổi đơn vị SI",
+    "tính số mol và khối lượng khí"
+   ],
+   "tags": [
+    "chat-khi",
+    "clapeyron-mendeleev"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "≈ 12,8 g",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "≈ 0,40 g",
+     "why_wrong": "Nhầm số mol (0,40) là khối lượng, quên nhân khối lượng mol."
+    },
+    {
+     "key": "C",
+     "text": "≈ 6,4 g",
+     "why_wrong": "Dùng khối lượng mol bằng 16 (nguyên tử O) thay vì phân tử O₂ = 32."
+    },
+    {
+     "key": "D",
+     "text": "≈ 25,6 g",
+     "why_wrong": "Quên đổi lít sang m³ khiến số mol sai, hoặc nhân đôi nhầm."
+    }
+   ],
+   "hints": [
+    "Đổi 5 lít = 0,005 m³ vì R theo hệ SI.",
+    "m = n·M với M = 32 g/mol."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0033",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thuyết động học phân tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính tốc độ căn quân phương của phân tử khí oxygen (M = 32 g/mol = 0,032 kg/mol) ở nhiệt độ 300 K. Cho R = 8,31 J/(mol·K).",
+   "statement_en": "Find the root-mean-square speed of oxygen molecules (M = 0.032 kg/mol) at 300 K (R = 8.31 J/(mol·K)).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ căn quân phương theo nhiệt độ và khối lượng mol.",
+     "latex": "v = \\sqrt{\\dfrac{3RT}{M}} = \\sqrt{\\dfrac{3\\cdot 8{,}31\\cdot 300}{0{,}032}}"
+    },
+    {
+     "explain": "Tính giá trị dưới căn rồi lấy căn.",
+     "latex": "v = \\sqrt{233719} \\approx 483\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.toc-do-can-quan-phuong",
+    "physics.thpt.chat-khi.dong-nang-tinh-tien-trung-binh"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tốc độ căn quân phương",
+    "dùng khối lượng mol theo kg"
+   ],
+   "tags": [
+    "chat-khi",
+    "thuyet-dong-hoc"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "≈ 483 m/s",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "≈ 279 m/s",
+     "why_wrong": "Quên hệ số 3, dùng √(RT/M)."
+    },
+    {
+     "key": "C",
+     "text": "≈ 683 m/s",
+     "why_wrong": "Dùng khối lượng mol 0,016 (nguyên tử O) thay vì phân tử O₂."
+    },
+    {
+     "key": "D",
+     "text": "≈ 42 m/s",
+     "why_wrong": "Để khối lượng mol theo gam (32) thay vì kg, làm kết quả sai."
+    }
+   ],
+   "hints": [
+    "v_rms = √(3RT/M).",
+    "M phải tính bằng kg/mol."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0034",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sự nở dài vì nhiệt",
+   "type": "trac-nghiem",
+   "statement_vi": "Một thanh sắt dài 10 m ở 20°C. Hệ số nở dài của sắt là 1,2·10⁻⁵ K⁻¹. Khi nhiệt độ tăng lên 70°C, thanh dài thêm:",
+   "statement_en": "A 10 m iron rod at 20°C (linear expansion coefficient 1.2×10⁻⁵ K⁻¹) is heated to 70°C. Its increase in length is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Độ nở dài tỉ lệ với chiều dài ban đầu, hệ số nở dài và độ tăng nhiệt độ.",
+     "latex": "\\Delta l = \\alpha l_0 \\Delta t = 1{,}2\\cdot 10^{-5}\\cdot 10\\cdot 50"
+    },
+    {
+     "explain": "Tính kết quả (độ tăng nhiệt độ 70 − 20 = 50).",
+     "latex": "\\Delta l = 6\\cdot 10^{-3}\\ \\text{m} = 6\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.su-no-dai"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức nở dài"
+   ],
+   "tags": [
+    "chat-ran",
+    "no-vi-nhiet"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "6 mm",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "3 mm",
+     "why_wrong": "Dùng độ tăng nhiệt độ 25 thay vì 50."
+    },
+    {
+     "key": "C",
+     "text": "12 mm",
+     "why_wrong": "Dùng hệ số nở khối (3α) thay vì nở dài."
+    },
+    {
+     "key": "D",
+     "text": "0,6 mm",
+     "why_wrong": "Sai một bậc mười khi tính lũy thừa."
+    }
+   ],
+   "hints": [
+    "Δl = α·l0·Δt.",
+    "Δt = 70 − 20 = 50 K."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0035",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hiện tượng mao dẫn",
+   "type": "trac-nghiem",
+   "statement_vi": "Nhúng một ống mao dẫn thủy tinh đường kính trong 0,5 mm vào nước. Cho hệ số căng bề mặt của nước 0,073 N/m, khối lượng riêng nước 1000 kg/m³, g = 10 m/s². Độ dâng của nước trong ống xấp xỉ:",
+   "statement_en": "A glass capillary of inner diameter 0.5 mm is placed in water (σ = 0.073 N/m, ρ = 1000 kg/m³, g = 10 m/s²). The water rise is about:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Độ dâng mao dẫn với nước dính ướt hoàn toàn.",
+     "latex": "h = \\dfrac{4\\sigma}{\\rho g d} = \\dfrac{4\\cdot 0{,}073}{1000\\cdot 10\\cdot 0{,}0005}"
+    },
+    {
+     "explain": "Tính kết quả.",
+     "latex": "h = \\dfrac{0{,}292}{5} = 0{,}0584\\ \\text{m} \\approx 5{,}84\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.hien-tuong-mao-dan",
+    "physics.thpt.chat-ran-chat-long.luc-cang-be-mat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "công thức mao dẫn",
+    "đổi đơn vị đường kính"
+   ],
+   "tags": [
+    "chat-long",
+    "mao-dan"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "≈ 5,84 cm",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "≈ 2,92 cm",
+     "why_wrong": "Dùng 2σ thay vì 4σ (nhầm với công thức tính theo bán kính)."
+    },
+    {
+     "key": "C",
+     "text": "≈ 11,7 cm",
+     "why_wrong": "Nhân đôi kết quả do nhầm đường kính với bán kính."
+    },
+    {
+     "key": "D",
+     "text": "≈ 1,46 cm",
+     "why_wrong": "Chia thêm cho 4 do nhầm hệ số."
+    }
+   ],
+   "hints": [
+    "h = 4σ/(ρgd) với d là đường kính.",
+    "Đổi 0,5 mm = 0,0005 m."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0036",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực căng bề mặt",
+   "type": "trac-nghiem",
+   "statement_vi": "Một khung dây thép hình chữ nhật có cạnh dưới di động dài 10 cm, được nhúng vào dung dịch xà phòng tạo một màng xà phòng (màng có hai mặt thoáng). Cho hệ số căng bề mặt của dung dịch 0,04 N/m. Lực căng bề mặt tác dụng lên cạnh dưới của khung là:",
+   "statement_en": "A rectangular wire frame with a movable lower side 10 cm long forms a soap film (two surfaces), σ = 0.04 N/m. The surface-tension force on the lower side is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Màng xà phòng có hai mặt thoáng nên đường giới hạn tính hai lần chiều dài cạnh.",
+     "latex": "f = \\sigma \\cdot 2 l = 0{,}04 \\cdot 2 \\cdot 0{,}1"
+    },
+    {
+     "explain": "Tính kết quả.",
+     "latex": "f = 0{,}008\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.luc-cang-be-mat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "lực căng bề mặt",
+    "màng có hai mặt"
+   ],
+   "tags": [
+    "chat-long",
+    "cang-be-mat"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "0,008 N",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "0,004 N",
+     "why_wrong": "Quên rằng màng xà phòng có HAI mặt thoáng, chỉ tính một lần chiều dài."
+    },
+    {
+     "key": "C",
+     "text": "0,4 N",
+     "why_wrong": "Không đổi 10 cm sang 0,1 m."
+    },
+    {
+     "key": "D",
+     "text": "0,08 N",
+     "why_wrong": "Sai một bậc mười khi đổi đơn vị chiều dài."
+    }
+   ],
+   "hints": [
+    "f = σ·l cho mỗi mặt thoáng.",
+    "Màng xà phòng có 2 mặt nên nhân đôi."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0037",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Độ ẩm không khí",
+   "type": "dien-so",
+   "statement_vi": "Không khí trong một căn phòng thể tích 100 m³ ở 30°C có độ ẩm tỉ đối 60%. Biết độ ẩm cực đại ở 30°C là 30 g/m³. Tính khối lượng hơi nước chứa trong phòng.",
+   "statement_en": "Air in a 100 m³ room at 30°C has relative humidity 60%. Maximum humidity at 30°C is 30 g/m³. Find the mass of water vapor in the room.",
+   "answer": "1800 g (1,8 kg)",
+   "solution_steps": [
+    {
+     "explain": "Độ ẩm tuyệt đối bằng độ ẩm tỉ đối nhân độ ẩm cực đại.",
+     "latex": "a = f\\cdot A = 0{,}60\\cdot 30 = 18\\ \\text{g/m}^3"
+    },
+    {
+     "explain": "Khối lượng hơi nước bằng độ ẩm tuyệt đối nhân thể tích phòng.",
+     "latex": "m = a V = 18\\cdot 100 = 1800\\ \\text{g}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.do-am-ti-doi",
+    "physics.thpt.chat-ran-chat-long.do-am-tuyet-doi"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "độ ẩm tuyệt đối từ độ ẩm tỉ đối"
+   ],
+   "tags": [
+    "chat-long",
+    "do-am"
+   ],
+   "answer_numeric": 1800.0,
+   "answer_unit": "g",
+   "tolerance": 5.0,
+   "hints": [
+    "a = f·A.",
+    "m = a·V với V là thể tích phòng."
+   ]
+  },
+  {
+   "id": "prob.physics.vn-thpt-physics-conhiet.0038",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhận dạng quá trình biến đổi khí",
+   "type": "ghep-doi",
+   "statement_vi": "Ghép mỗi quá trình biến đổi của một lượng khí lí tưởng (cột trái) với đặc điểm đúng của nó (cột phải). Cột trái: (1) Đẳng nhiệt; (2) Đẳng tích; (3) Đẳng áp; (4) Đoạn nhiệt. Cột phải: (a) Áp suất tỉ lệ thuận nhiệt độ tuyệt đối; (b) Không trao đổi nhiệt với bên ngoài; (c) Tích áp suất và thể tích không đổi; (d) Thể tích tỉ lệ thuận nhiệt độ tuyệt đối.",
+   "statement_en": "Match each ideal-gas process (left) with its correct property (right). Left: (1) isothermal; (2) isochoric; (3) isobaric; (4) adiabatic. Right: (a) pressure ∝ absolute temperature; (b) no heat exchange; (c) pV constant; (d) volume ∝ absolute temperature.",
+   "answer": "1-c; 2-a; 3-d; 4-b",
+   "solution_steps": [
+    {
+     "explain": "Đẳng nhiệt: T không đổi nên theo Boyle tích pV không đổi → (1)-(c).",
+     "latex": "pV = \\text{const}"
+    },
+    {
+     "explain": "Đẳng tích: V không đổi nên theo Gay-Lussac áp suất tỉ lệ nhiệt độ tuyệt đối → (2)-(a).",
+     "latex": "\\dfrac{p}{T} = \\text{const}"
+    },
+    {
+     "explain": "Đẳng áp: p không đổi nên theo Charles thể tích tỉ lệ nhiệt độ tuyệt đối → (3)-(d).",
+     "latex": "\\dfrac{V}{T} = \\text{const}"
+    },
+    {
+     "explain": "Đoạn nhiệt: theo định nghĩa hệ không trao đổi nhiệt với môi trường → (4)-(b).",
+     "latex": "Q = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.dinh-luat-boyle",
+    "physics.thpt.chat-khi.dinh-luat-gay-lussac",
+    "physics.thpt.chat-khi.dinh-luat-charles"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận dạng đặc điểm các quá trình khí"
+   ],
+   "tags": [
+    "chat-khi",
+    "qua-trinh-bien-doi"
+   ],
+   "hints": [
+    "Nhớ đại lượng nào giữ không đổi trong mỗi quá trình.",
+    "Đoạn nhiệt: Q = 0."
+   ]
+  }
+ ]
+}

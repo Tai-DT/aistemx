@@ -1,0 +1,1494 @@
+{
+  "meta": {
+    "file": "stem-technology-engineering.json",
+    "subject": "math",
+    "title": "Tuyển tập Bài toán Công nghệ, Kỹ thuật Điện & Khoa học Máy tính STEM",
+    "levels": [
+      "thpt",
+      "dai-hoc"
+    ],
+    "count": 30
+  },
+  "problems": [
+    {
+      "id": "prob.math.boolean-logic.0001",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 1",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 3 biến nhị phân f: {0, 1}^3 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 3 binary variables f: {0, 1}^3 -> {0, 1} are there?",
+      "answer": "256",
+      "answer_numeric": 256,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 3 biến có đúng 2^3 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{3} = 8"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^3) = 2^{8}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{3}} = 2^{8} = 256"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0002",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 2",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 4 biến nhị phân f: {0, 1}^4 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 4 binary variables f: {0, 1}^4 -> {0, 1} are there?",
+      "answer": "65536",
+      "answer_numeric": 65536,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 4 biến có đúng 2^4 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{4} = 16"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^4) = 2^{16}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{4}} = 2^{16} = 65536"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0003",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 3",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 5 biến nhị phân f: {0, 1}^5 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 5 binary variables f: {0, 1}^5 -> {0, 1} are there?",
+      "answer": "4294967296",
+      "answer_numeric": 4294967296,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 5 biến có đúng 2^5 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{5} = 32"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^5) = 2^{32}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{5}} = 2^{32} = 4294967296"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0004",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 4",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 2 biến nhị phân f: {0, 1}^2 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 2 binary variables f: {0, 1}^2 -> {0, 1} are there?",
+      "answer": "16",
+      "answer_numeric": 16,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 2 biến có đúng 2^2 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{2} = 4"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^2) = 2^{4}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{2}} = 2^{4} = 16"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0005",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 5",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 3 biến nhị phân f: {0, 1}^3 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 3 binary variables f: {0, 1}^3 -> {0, 1} are there?",
+      "answer": "256",
+      "answer_numeric": 256,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 3 biến có đúng 2^3 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{3} = 8"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^3) = 2^{8}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{3}} = 2^{8} = 256"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0006",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 6",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 4 biến nhị phân f: {0, 1}^4 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 4 binary variables f: {0, 1}^4 -> {0, 1} are there?",
+      "answer": "65536",
+      "answer_numeric": 65536,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 4 biến có đúng 2^4 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{4} = 16"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^4) = 2^{16}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{4}} = 2^{16} = 65536"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0007",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 7",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 5 biến nhị phân f: {0, 1}^5 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 5 binary variables f: {0, 1}^5 -> {0, 1} are there?",
+      "answer": "4294967296",
+      "answer_numeric": 4294967296,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 5 biến có đúng 2^5 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{5} = 32"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^5) = 2^{32}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{5}} = 2^{32} = 4294967296"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0008",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 8",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 2 biến nhị phân f: {0, 1}^2 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 2 binary variables f: {0, 1}^2 -> {0, 1} are there?",
+      "answer": "16",
+      "answer_numeric": 16,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 2 biến có đúng 2^2 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{2} = 4"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^2) = 2^{4}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{2}} = 2^{4} = 16"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0009",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 9",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 3 biến nhị phân f: {0, 1}^3 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 3 binary variables f: {0, 1}^3 -> {0, 1} are there?",
+      "answer": "256",
+      "answer_numeric": 256,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 3 biến có đúng 2^3 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{3} = 8"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^3) = 2^{8}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{3}} = 2^{8} = 256"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.math.boolean-logic.0010",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công nghệ & Mạch số: Đại số Boole và Hàm logic - Bài 10",
+      "type": "dien-so",
+      "statement_vi": "Trong thiết kế mạch số và đại số Boole, có tất cả bao nhiêu hàm Boole phân biệt của 4 biến nhị phân f: {0, 1}^4 -> {0, 1}?",
+      "statement_en": "In digital circuit design and Boolean algebra, how many distinct Boolean functions of 4 binary variables f: {0, 1}^4 -> {0, 1} are there?",
+      "answer": "65536",
+      "answer_numeric": 65536,
+      "answer_unit": "hàm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bảng chân trị của một hàm Boole 4 biến có đúng 2^4 hàng (tổ hợp đầu vào).",
+          "latex": "N_{\\text{hàng}} = 2^{4} = 16"
+        },
+        {
+          "explain": "Mỗi hàng của bảng chân trị có thể nhận 1 trong 2 giá trị đầu ra (0 hoặc 1). Do đó tổng số hàm Boole phân biệt là 2^(2^4) = 2^{16}.",
+          "latex": "|\\mathcal{F}| = 2^{2^{4}} = 2^{16} = 65536"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đại số Boole",
+        "thiết kế mạch số",
+        "bảng chân trị logic"
+      ],
+      "hints": [
+        "Tính số hàng của bảng chân trị.",
+        "Mỗi hàng có 2 cách chọn giá trị đầu ra."
+      ],
+      "tags": [
+        "boolean-algebra",
+        "digital-logic",
+        "technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0001",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 1",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 14.0 V và điện trở trong r = 1.5 Ω được mắc với một mạch ngoài có điện trở R = 5.5 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 14.0 V and internal resistance r = 1.5 Ω is connected to an external resistor R = 5.5 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "2.0",
+      "answer_numeric": 2.0,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 14.0 V, R = 5.5 Ω, r = 1.5 Ω: I = 14.0 / (5.5 + 1.5) = 2.0 A.",
+          "latex": "I = \\frac{14.0}{5.5 + 1.5} = 2.0 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0002",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 2",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 16.0 V và điện trở trong r = 2.0 Ω được mắc với một mạch ngoài có điện trở R = 7.0 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 16.0 V and internal resistance r = 2.0 Ω is connected to an external resistor R = 7.0 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.78",
+      "answer_numeric": 1.78,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 16.0 V, R = 7.0 Ω, r = 2.0 Ω: I = 16.0 / (7.0 + 2.0) = 1.78 A.",
+          "latex": "I = \\frac{16.0}{7.0 + 2.0} = 1.78 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0003",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 3",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 18.0 V và điện trở trong r = 1.0 Ω được mắc với một mạch ngoài có điện trở R = 8.5 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 18.0 V and internal resistance r = 1.0 Ω is connected to an external resistor R = 8.5 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.89",
+      "answer_numeric": 1.89,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 18.0 V, R = 8.5 Ω, r = 1.0 Ω: I = 18.0 / (8.5 + 1.0) = 1.89 A.",
+          "latex": "I = \\frac{18.0}{8.5 + 1.0} = 1.89 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0004",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 4",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 20.0 V và điện trở trong r = 1.5 Ω được mắc với một mạch ngoài có điện trở R = 10.0 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 20.0 V and internal resistance r = 1.5 Ω is connected to an external resistor R = 10.0 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.74",
+      "answer_numeric": 1.74,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 20.0 V, R = 10.0 Ω, r = 1.5 Ω: I = 20.0 / (10.0 + 1.5) = 1.74 A.",
+          "latex": "I = \\frac{20.0}{10.0 + 1.5} = 1.74 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0005",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 5",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 22.0 V và điện trở trong r = 2.0 Ω được mắc với một mạch ngoài có điện trở R = 11.5 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 22.0 V and internal resistance r = 2.0 Ω is connected to an external resistor R = 11.5 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.63",
+      "answer_numeric": 1.63,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 22.0 V, R = 11.5 Ω, r = 2.0 Ω: I = 22.0 / (11.5 + 2.0) = 1.63 A.",
+          "latex": "I = \\frac{22.0}{11.5 + 2.0} = 1.63 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0006",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 6",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 24.0 V và điện trở trong r = 1.0 Ω được mắc với một mạch ngoài có điện trở R = 13.0 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 24.0 V and internal resistance r = 1.0 Ω is connected to an external resistor R = 13.0 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.71",
+      "answer_numeric": 1.71,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 24.0 V, R = 13.0 Ω, r = 1.0 Ω: I = 24.0 / (13.0 + 1.0) = 1.71 A.",
+          "latex": "I = \\frac{24.0}{13.0 + 1.0} = 1.71 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0007",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 7",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 26.0 V và điện trở trong r = 1.5 Ω được mắc với một mạch ngoài có điện trở R = 14.5 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 26.0 V and internal resistance r = 1.5 Ω is connected to an external resistor R = 14.5 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.62",
+      "answer_numeric": 1.62,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 26.0 V, R = 14.5 Ω, r = 1.5 Ω: I = 26.0 / (14.5 + 1.5) = 1.62 A.",
+          "latex": "I = \\frac{26.0}{14.5 + 1.5} = 1.62 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0008",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 8",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 28.0 V và điện trở trong r = 2.0 Ω được mắc với một mạch ngoài có điện trở R = 16.0 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 28.0 V and internal resistance r = 2.0 Ω is connected to an external resistor R = 16.0 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.56",
+      "answer_numeric": 1.56,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 28.0 V, R = 16.0 Ω, r = 2.0 Ω: I = 28.0 / (16.0 + 2.0) = 1.56 A.",
+          "latex": "I = \\frac{28.0}{16.0 + 2.0} = 1.56 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0009",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 9",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 30.0 V và điện trở trong r = 1.0 Ω được mắc với một mạch ngoài có điện trở R = 17.5 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 30.0 V and internal resistance r = 1.0 Ω is connected to an external resistor R = 17.5 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.62",
+      "answer_numeric": 1.62,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 30.0 V, R = 17.5 Ω, r = 1.0 Ω: I = 30.0 / (17.5 + 1.0) = 1.62 A.",
+          "latex": "I = \\frac{30.0}{17.5 + 1.0} = 1.62 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.physics.ee-circuits.0010",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kỹ thuật Điện: Định luật Ohm cho toàn mạch - Bài 10",
+      "type": "dien-so",
+      "statement_vi": "Một nguồn điện có suất điện động E = 32.0 V và điện trở trong r = 1.5 Ω được mắc với một mạch ngoài có điện trở R = 19.0 Ω thành mạch kín. Tính cường độ dòng điện chạy trong mạch theo đơn vị Ampe (làm tròn 2 chữ số thập phân).",
+      "statement_en": "A power source with EMF E = 32.0 V and internal resistance r = 1.5 Ω is connected to an external resistor R = 19.0 Ω in a closed loop. Find the electric current in the circuit in Amperes (rounded to 2 decimal places).",
+      "answer": "1.56",
+      "answer_numeric": 1.56,
+      "answer_unit": "A",
+      "tolerance": 0.05,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch: I = E / (R + r).",
+          "latex": "I = \\frac{\\mathcal{E}}{R + r}"
+        },
+        {
+          "explain": "Thay số với E = 32.0 V, R = 19.0 Ω, r = 1.5 Ω: I = 32.0 / (19.0 + 1.5) = 1.56 A.",
+          "latex": "I = \\frac{32.0}{19.0 + 1.5} = 1.56 \\text{ A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định luật Ohm toàn mạch",
+        "kỹ thuật mạch điện DC",
+        "tính toán dòng điện"
+      ],
+      "hints": [
+        "Dùng công thức I = E / (R_ngoài + r_trong).",
+        "Cộng điện trở trong với điện trở ngoài."
+      ],
+      "tags": [
+        "electrical-engineering",
+        "circuits",
+        "ohm-law",
+        "physics"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0001",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 1",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 7 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 7 vertices have?",
+      "answer": "6",
+      "answer_numeric": 6,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 7: |E| = 7 - 1 = 6 cạnh.",
+          "latex": "|E| = 7 - 1 = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0002",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 2",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 9 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 9 vertices have?",
+      "answer": "8",
+      "answer_numeric": 8,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 9: |E| = 9 - 1 = 8 cạnh.",
+          "latex": "|E| = 9 - 1 = 8"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0003",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 3",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 11 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 11 vertices have?",
+      "answer": "10",
+      "answer_numeric": 10,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 11: |E| = 11 - 1 = 10 cạnh.",
+          "latex": "|E| = 11 - 1 = 10"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0004",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 4",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 13 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 13 vertices have?",
+      "answer": "12",
+      "answer_numeric": 12,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 13: |E| = 13 - 1 = 12 cạnh.",
+          "latex": "|E| = 13 - 1 = 12"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0005",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 5",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 15 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 15 vertices have?",
+      "answer": "14",
+      "answer_numeric": 14,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 15: |E| = 15 - 1 = 14 cạnh.",
+          "latex": "|E| = 15 - 1 = 14"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0006",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 6",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 17 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 17 vertices have?",
+      "answer": "16",
+      "answer_numeric": 16,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 17: |E| = 17 - 1 = 16 cạnh.",
+          "latex": "|E| = 17 - 1 = 16"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0007",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 7",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 19 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 19 vertices have?",
+      "answer": "18",
+      "answer_numeric": 18,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 19: |E| = 19 - 1 = 18 cạnh.",
+          "latex": "|E| = 19 - 1 = 18"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0008",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 8",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 21 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 21 vertices have?",
+      "answer": "20",
+      "answer_numeric": 20,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 21: |E| = 21 - 1 = 20 cạnh.",
+          "latex": "|E| = 21 - 1 = 20"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0009",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 9",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 23 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 23 vertices have?",
+      "answer": "22",
+      "answer_numeric": 22,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 23: |E| = 23 - 1 = 22 cạnh.",
+          "latex": "|E| = 23 - 1 = 22"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "prob.math.algorithms.0010",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khoa học Máy tính: Cấu trúc Cây và Thuật toán Đồ thị - Bài 10",
+      "type": "dien-so",
+      "statement_vi": "Trong khoa học máy tính, một cây khung nhỏ nhất (Minimum Spanning Tree) của một đồ thị liên thông gồm 25 đỉnh có đúng bao nhiêu cạnh?",
+      "statement_en": "In computer science, how many edges does a Minimum Spanning Tree of a connected graph with 25 vertices have?",
+      "answer": "24",
+      "answer_numeric": 24,
+      "answer_unit": "cạnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa cấu trúc dữ liệu Cây (Tree), một cây gồm n đỉnh liên thông và không có chu trình luôn luôn có đúng (n - 1) cạnh.",
+          "latex": "|E| = |V| - 1"
+        },
+        {
+          "explain": "Thay |V| = 25: |E| = 25 - 1 = 24 cạnh.",
+          "latex": "|E| = 25 - 1 = 24"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "thuật toán cây khung MST",
+        "cấu trúc dữ liệu cây",
+        "lý thuyết đồ thị máy tính"
+      ],
+      "hints": [
+        "Một cây liên thông n đỉnh có bao nhiêu cạnh?",
+        "Số cạnh của cây luôn bằng n - 1."
+      ],
+      "tags": [
+        "computer-science",
+        "spanning-tree",
+        "algorithms",
+        "data-structures"
+      ]
+    }
+  ]
+}

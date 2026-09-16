@@ -1,0 +1,4205 @@
+{
+  "meta": {
+    "file": "math-undergrad-analysis.json",
+    "subject": "math",
+    "title": "Bài tập Giải tích đại học quốc tế",
+    "levels": [
+      "dai-hoc"
+    ],
+    "count": 69
+  },
+  "problems": [
+    {
+      "id": "prob.math.undergrad-analysis.0001",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giới hạn epsilon-delta",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho f(x) = 5x - 3 và lim(x -> 2) f(x) = 7. Với epsilon = 0,01, giá trị delta LỚN NHẤT thoả mãn định nghĩa epsilon-delta của giới hạn là bao nhiêu?",
+      "statement_en": "Let f(x) = 5x - 3 with limit 7 as x approaches 2. For epsilon = 0.01, what is the LARGEST delta satisfying the epsilon-delta definition of the limit?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0{,}002",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "0{,}01",
+          "why_wrong": "Lấy thẳng delta bằng epsilon, quên rằng hệ số góc 5 khuếch đại sai số của x lên 5 lần."
+        },
+        {
+          "key": "C",
+          "text": "0{,}05",
+          "why_wrong": "Nhân epsilon với 5 thay vì chia cho 5, tức làm ngược chiều bất phương trình."
+        },
+        {
+          "key": "D",
+          "text": "0{,}005",
+          "why_wrong": "Dùng hệ số 2 thay vì hệ số góc thật là 5."
+        }
+      ],
+      "answer": "A",
+      "answer_numeric": 0.002,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Viết tường minh sai số của giá trị hàm quanh giới hạn. Bước này biến điều kiện trên f thành điều kiện trên x, vì định nghĩa epsilon-delta đòi hỏi khống chế |f(x) - L| bằng |x - a|.",
+          "latex": "|f(x) - 7| = |5x - 3 - 7| = |5x - 10| = 5|x - 2|"
+        },
+        {
+          "explain": "Áp đặt yêu cầu |f(x) - 7| < \\varepsilon rồi giải ra |x - 2|. Vì hệ số 5 là hằng số dương nên bất phương trình chia được trực tiếp, cho ta delta tốt nhất chứ không chỉ một delta bất kì.",
+          "latex": "5|x - 2| < 0{,}01 \\iff |x - 2| < \\frac{0{,}01}{5} = 0{,}002"
+        },
+        {
+          "explain": "Kết luận: mọi delta nhỏ hơn hoặc bằng 0,002 đều dùng được, nên giá trị lớn nhất là 0,002.",
+          "latex": "\\delta_{\\max} = 0{,}002"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.dinh-nghia-epsilon-delta-gioi-han-ham"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "định nghĩa epsilon-delta",
+        "ước lượng sai số hàm bậc nhất"
+      ],
+      "hints": [
+        "Rút |f(x) - 7| về dạng hằng số nhân |x - 2|.",
+        "Hệ số góc đóng vai trò tỉ lệ giữa epsilon và delta."
+      ],
+      "tags": [
+        "real-analysis",
+        "epsilon-delta",
+        "gioi-han"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0002",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giới hạn epsilon-delta",
+      "type": "dien-so",
+      "statement_vi": "Cho f(x) = x^2 và lim(x -> 3) f(x) = 9. Với epsilon = 0,05, hãy dùng ràng buộc phụ |x - 3| < 1 để chặn nhân tử |x + 3|, rồi cho biết giá trị delta thu được theo công thức delta = min(1; epsilon/M), trong đó M là chặn trên của |x + 3|. Nhập delta (làm tròn 5 chữ số thập phân).",
+      "statement_en": "Let f(x) = x^2 with limit 9 as x approaches 3. For epsilon = 0.05, use the auxiliary restriction |x - 3| < 1 to bound |x + 3|, then report delta = min(1, epsilon/M) where M bounds |x + 3|. Give delta to five decimals.",
+      "answer": "delta = 1/140 ≈ 0,00714",
+      "answer_numeric": 0.0071429,
+      "answer_unit": "",
+      "tolerance": 1e-05,
+      "solution_steps": [
+        {
+          "explain": "Phân tích hiệu thành tích để tách được nhân tử |x - 3|. Đây là bước bắt buộc vì hàm bậc hai không cho ngay quan hệ tuyến tính giữa epsilon và delta.",
+          "latex": "|x^{2} - 9| = |x - 3|\\,|x + 3|"
+        },
+        {
+          "explain": "Chặn nhân tử phụ |x + 3| bằng ràng buộc |x - 3| < 1. Ràng buộc này hợp lệ vì ta được phép thu nhỏ delta tuỳ ý, và nó biến |x + 3| thành một hằng số M.",
+          "latex": "|x - 3| < 1 \\Rightarrow 2 < x < 4 \\Rightarrow 5 < x + 3 < 7 \\Rightarrow M = 7"
+        },
+        {
+          "explain": "Ghép hai điều kiện: sai số bị chặn bởi 7 lần |x - 3|, nên chỉ cần 7|x - 3| < 0,05.",
+          "latex": "|x^{2} - 9| < 7|x - 3| < 7\\delta \\le 0{,}05"
+        },
+        {
+          "explain": "Lấy delta là giá trị nhỏ hơn giữa 1 (giữ ràng buộc phụ) và 0,05/7 (bảo đảm sai số).",
+          "latex": "\\delta = \\min\\left(1, \\frac{0{,}05}{7}\\right) = \\frac{1}{140} \\approx 0{,}00714"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.dinh-nghia-epsilon-delta-gioi-han-ham"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "định nghĩa epsilon-delta",
+        "kĩ thuật ràng buộc phụ",
+        "chặn nhân tử"
+      ],
+      "hints": [
+        "Viết x^2 - 9 = (x - 3)(x + 3).",
+        "Muốn chặn |x + 3| phải giả sử trước x nằm gần 3."
+      ],
+      "tags": [
+        "real-analysis",
+        "epsilon-delta",
+        "gioi-han"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0003",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giới hạn dãy số theo epsilon-N",
+      "type": "dien-so",
+      "statement_vi": "Cho dãy a_n = (3n + 1)/(n + 2) hội tụ về 3. Tìm số nguyên dương N NHỎ NHẤT sao cho |a_n - 3| < 10^(-3) với mọi n >= N.",
+      "statement_en": "The sequence a_n = (3n + 1)/(n + 2) converges to 3. Find the SMALLEST positive integer N such that |a_n - 3| < 10^(-3) for every n >= N.",
+      "answer": "N = 4999",
+      "answer_numeric": 4999.0,
+      "answer_unit": "",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Tính tường minh sai số |a_n - 3| bằng cách quy đồng. Bước này cần thiết để biến bất đẳng thức có tham số n thành bất phương trình giải được.",
+          "latex": "a_n - 3 = \\frac{3n + 1 - 3(n + 2)}{n + 2} = \\frac{-5}{n + 2} \\Rightarrow |a_n - 3| = \\frac{5}{n + 2}"
+        },
+        {
+          "explain": "Giải bất phương trình sai số. Vì n + 2 > 0 nên nhân chéo giữ nguyên chiều.",
+          "latex": "\\frac{5}{n + 2} < 10^{-3} \\iff n + 2 > 5000 \\iff n > 4998"
+        },
+        {
+          "explain": "Số nguyên nhỏ nhất thoả mãn n > 4998 là 4999; kiểm lại n = 4998 cho sai số đúng bằng 10^(-3) nên bị loại.",
+          "latex": "N = 4999,\\quad |a_{4999} - 3| = \\frac{5}{5001} < 10^{-3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.dinh-nghia-epsilon-n-gioi-han-day"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "định nghĩa epsilon-N",
+        "giải bất phương trình chứa chỉ số"
+      ],
+      "hints": [
+        "Quy đồng a_n - 3 trước khi lấy trị tuyệt đối.",
+        "Chú ý bất đẳng thức là ngặt nên n = 4998 không dùng được."
+      ],
+      "tags": [
+        "real-analysis",
+        "epsilon-n",
+        "day-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0004",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Dãy Cauchy",
+      "type": "trac-nghiem",
+      "statement_vi": "Dãy nào sau đây KHÔNG phải là dãy Cauchy trong R?",
+      "statement_en": "Which of the following sequences is NOT a Cauchy sequence in R?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "s_n = \\sum_{k=1}^{n} \\frac{1}{k}",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "s_n = \\sum_{k=1}^{n} \\frac{1}{k^{2}}",
+          "why_wrong": "Chuỗi p với p = 2 hội tụ nên dãy tổng riêng hội tụ, do đó là Cauchy."
+        },
+        {
+          "key": "C",
+          "text": "a_n = \\frac{(-1)^{n}}{n}",
+          "why_wrong": "Nhầm dấu đan xen với sự dao động không tắt; thực ra |a_n| <= 1/n nên dãy hội tụ về 0."
+        },
+        {
+          "key": "D",
+          "text": "a_n = \\frac{\\sin n}{n}",
+          "why_wrong": "Nhầm vì sin n không có giới hạn, nhưng chia cho n làm biên độ tắt dần nên dãy hội tụ về 0."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Nhắc lại: trong R, dãy Cauchy tương đương với dãy hội tụ (tính đầy đủ). Vậy chỉ cần tìm dãy phân kì.",
+          "latex": "(a_n)\\ \\text{Cauchy} \\iff (a_n)\\ \\text{hội tụ trong } \\mathbb{R}"
+        },
+        {
+          "explain": "Với tổng riêng của chuỗi điều hoà, chặn dưới hiệu hai chỉ số cách nhau gấp đôi. Đây là phản ví dụ kinh điển: hiệu không bao giờ nhỏ hơn 1/2 dù n lớn tuỳ ý.",
+          "latex": "|s_{2n} - s_n| = \\sum_{k = n + 1}^{2n} \\frac{1}{k} \\ge n \\cdot \\frac{1}{2n} = \\frac{1}{2}"
+        },
+        {
+          "explain": "Vì tồn tại epsilon = 1/2 không thể khống chế được, dãy tổng riêng của chuỗi điều hoà không là Cauchy; ba dãy còn lại đều hội tụ nên đều là Cauchy.",
+          "latex": "\\varepsilon_0 = \\tfrac{1}{2}:\\ \\forall N\\ \\exists m > n \\ge N,\\ |s_m - s_n| \\ge \\varepsilon_0"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.day-cauchy",
+        "math.dai-hoc.giai-tich-thuc.tinh-day-du-cua-r",
+        "math.dai-hoc.chuoi-so.chuoi-dieu-hoa"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhận diện dãy Cauchy",
+        "phủ định định nghĩa Cauchy",
+        "chuỗi điều hoà"
+      ],
+      "hints": [
+        "Trong R, Cauchy tương đương hội tụ.",
+        "Thử so sánh s_{2n} với s_n."
+      ],
+      "tags": [
+        "real-analysis",
+        "day-cauchy",
+        "chuoi-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0005",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Dãy Cauchy",
+      "type": "dien-so",
+      "statement_vi": "Cho s_n = tổng từ k = 1 đến n của 1/k^2. Với m > n ta có chặn |s_m - s_n| < 1/n. Dựa trên chặn này, hãy tìm số nguyên dương N NHỎ NHẤT bảo đảm |s_m - s_n| < 10^(-3) với mọi m > n >= N.",
+      "statement_en": "Let s_n be the partial sum of 1/k^2 up to k = n. For m > n one has |s_m - s_n| < 1/n. Using this bound, find the SMALLEST positive integer N guaranteeing |s_m - s_n| < 10^(-3) for all m > n >= N.",
+      "answer": "N = 1001",
+      "answer_numeric": 1001.0,
+      "answer_unit": "",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Chứng minh chặn đuôi bằng so sánh với chuỗi lồng nhau. Dùng 1/k^2 < 1/(k(k-1)) để tổng khử liên tiếp, nhờ đó có chặn tường minh theo n.",
+          "latex": "\\sum_{k = n+1}^{m} \\frac{1}{k^{2}} < \\sum_{k = n+1}^{m} \\frac{1}{k(k-1)} = \\frac{1}{n} - \\frac{1}{m} < \\frac{1}{n}"
+        },
+        {
+          "explain": "Áp đặt yêu cầu epsilon lên chặn vừa tìm. Nếu chặn nhỏ hơn 10^(-3) thì hiệu thật cũng vậy.",
+          "latex": "\\frac{1}{n} < 10^{-3} \\iff n > 1000"
+        },
+        {
+          "explain": "Số nguyên nhỏ nhất thoả mãn là 1001; với n = 1000 chặn chỉ cho đúng 10^(-3), không bảo đảm bất đẳng thức ngặt.",
+          "latex": "N = 1001"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.day-cauchy",
+        "math.dai-hoc.chuoi-so.tieu-chuan-cauchy-tong-quat",
+        "math.dai-hoc.chuoi-so.chuoi-p"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "tiêu chuẩn Cauchy cho chuỗi",
+        "chặn đuôi chuỗi",
+        "so sánh với chuỗi lồng nhau"
+      ],
+      "hints": [
+        "1/k^2 < 1/(k(k-1)) khi k >= 2.",
+        "Tổng 1/(k(k-1)) khử liên tiếp thành 1/n - 1/m."
+      ],
+      "tags": [
+        "real-analysis",
+        "day-cauchy",
+        "chuoi-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0006",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chuỗi luỹ thừa và bán kính hội tụ",
+      "type": "dien-so",
+      "statement_vi": "Tìm bán kính hội tụ R của chuỗi luỹ thừa tổng từ n = 1 đến vô cùng của (n! / n^n) * x^n. Nhập R (làm tròn 4 chữ số thập phân).",
+      "statement_en": "Find the radius of convergence R of the power series with terms (n!/n^n) x^n. Give R to four decimals.",
+      "answer": "R = e ≈ 2,7183",
+      "answer_numeric": 2.7183,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Dùng tiêu chuẩn D'Alembert cho hệ số vì n! và n^n đều là tích, tỉ số của chúng rút gọn đẹp hơn nhiều so với căn bậc n.",
+          "latex": "a_n = \\frac{n!}{n^{n}},\\qquad R = \\lim_{n \\to \\infty} \\left|\\frac{a_n}{a_{n+1}}\\right|"
+        },
+        {
+          "explain": "Lập tỉ số và rút gọn giai thừa: (n+1)! = (n+1)n! nên nhân tử (n+1) triệt tiêu.",
+          "latex": "\\frac{a_n}{a_{n+1}} = \\frac{n!}{n^{n}} \\cdot \\frac{(n+1)^{n+1}}{(n+1)!} = \\frac{(n+1)^{n}}{n^{n}} = \\left(1 + \\frac{1}{n}\\right)^{n}"
+        },
+        {
+          "explain": "Nhận ra giới hạn cơ bản thứ hai định nghĩa số e; đó là lí do bán kính hội tụ đúng bằng e.",
+          "latex": "R = \\lim_{n \\to \\infty}\\left(1 + \\frac{1}{n}\\right)^{n} = e \\approx 2{,}7183"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-luy-thua.ban-kinh-dalembert",
+        "math.dai-hoc.chuoi-luy-thua.ban-kinh-cauchy-hadamard",
+        "math.dai-hoc.gioi-han.gioi-han-co-ban-so-e"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "bán kính hội tụ",
+        "tiêu chuẩn D'Alembert",
+        "giới hạn cơ bản số e"
+      ],
+      "hints": [
+        "Rút gọn a_n / a_(n+1) trước khi lấy giới hạn.",
+        "Biểu thức (1 + 1/n)^n dẫn tới số e."
+      ],
+      "tags": [
+        "real-analysis",
+        "chuoi-luy-thua",
+        "ban-kinh-hoi-tu"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0007",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chuỗi số và tiêu chuẩn tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Chuỗi tổng từ n = 2 đến vô cùng của 1 / (n * (ln n)^p) hội tụ khi và chỉ khi nào?",
+      "statement_en": "The series of 1/(n (ln n)^p) from n = 2 to infinity converges if and only if which condition holds?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "p > 1",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "p \\ge 1",
+          "why_wrong": "Với p = 1 tích phân trở thành ln(ln x) và phân kì, nên p = 1 phải bị loại."
+        },
+        {
+          "key": "C",
+          "text": "p > 0",
+          "why_wrong": "Nhầm với điều kiện để số hạng tổng quát dần về 0; điều kiện cần này không đủ để chuỗi hội tụ."
+        },
+        {
+          "key": "D",
+          "text": "p < 1",
+          "why_wrong": "Đảo ngược kết luận của chuỗi p: chính p nhỏ mới làm đuôi chuỗi dày và gây phân kì."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hàm f(x) = 1/(x (ln x)^p) dương, liên tục và giảm trên [2; vô cùng) khi x đủ lớn, nên áp dụng được tiêu chuẩn tích phân Cauchy - Maclaurin: chuỗi và tích phân cùng bản chất.",
+          "latex": "\\sum_{n \\ge 2} f(n)\\ \\text{và}\\ \\int_{2}^{\\infty} f(x)\\,dx\\ \\text{cùng hội tụ hoặc cùng phân kì}"
+        },
+        {
+          "explain": "Đổi biến u = ln x để đưa tích phân về dạng chuỗi p quen thuộc; đây là mấu chốt vì du = dx/x đúng bằng phần còn lại của biểu thức.",
+          "latex": "\\int_{2}^{\\infty} \\frac{dx}{x(\\ln x)^{p}} = \\int_{\\ln 2}^{\\infty} \\frac{du}{u^{p}}"
+        },
+        {
+          "explain": "Tích phân suy rộng của u^(-p) trên miền vô hạn hội tụ đúng khi p > 1, nên chuỗi cũng vậy.",
+          "latex": "\\int_{\\ln 2}^{\\infty} u^{-p}\\,du < \\infty \\iff p > 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.tieu-chuan-tich-phan",
+        "math.dai-hoc.chuoi-so.chuoi-p"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tiêu chuẩn tích phân",
+        "đổi biến trong tích phân suy rộng",
+        "chuỗi p"
+      ],
+      "hints": [
+        "Đặt u = ln x.",
+        "So sánh với chuỗi p sau khi đổi biến."
+      ],
+      "tags": [
+        "real-analysis",
+        "chuoi-so",
+        "tieu-chuan-tich-phan"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0008",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hội tụ đều của dãy hàm",
+      "type": "dien-so",
+      "statement_vi": "Cho dãy hàm f_n(x) = n*x / (1 + n^2 * x^2) trên đoạn [0; 1]. Dãy hội tụ điểm về hàm f(x) = 0. Tính chuẩn sup của sai số, tức sup của |f_n(x) - f(x)| trên [0; 1].",
+      "statement_en": "For f_n(x) = n x/(1 + n^2 x^2) on [0, 1], the pointwise limit is f(x) = 0. Compute the sup-norm of the error, sup |f_n(x) - f(x)| on [0, 1].",
+      "answer": "sup = 1/2 (không hội tụ đều)",
+      "answer_numeric": 0.5,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Xác nhận giới hạn điểm: với x cố định khác 0, mẫu bậc hai theo n lấn át tử bậc nhất nên tỉ số dần về 0; tại x = 0 giá trị luôn bằng 0.",
+          "latex": "\\lim_{n \\to \\infty} \\frac{nx}{1 + n^{2}x^{2}} = 0 \\quad \\forall x \\in [0, 1]"
+        },
+        {
+          "explain": "Tìm cực đại của f_n trên [0; 1] bằng đạo hàm, vì chuẩn sup chính là giá trị lớn nhất của |f_n| khi f = 0.",
+          "latex": "f_n'(x) = \\frac{n(1 + n^{2}x^{2}) - nx \\cdot 2n^{2}x}{(1 + n^{2}x^{2})^{2}} = \\frac{n(1 - n^{2}x^{2})}{(1 + n^{2}x^{2})^{2}}"
+        },
+        {
+          "explain": "Đạo hàm triệt tiêu tại x = 1/n, điểm này nằm trong [0; 1] với mọi n >= 1, và là điểm cực đại vì đạo hàm đổi dấu từ dương sang âm.",
+          "latex": "x_n = \\frac{1}{n} \\Rightarrow f_n(x_n) = \\frac{n \\cdot \\tfrac{1}{n}}{1 + 1} = \\frac{1}{2}"
+        },
+        {
+          "explain": "Chuẩn sup bằng 1/2 với mọi n, không dần về 0, nên dãy hàm KHÔNG hội tụ đều dù hội tụ điểm.",
+          "latex": "\\|f_n - f\\|_{\\infty} = \\frac{1}{2} \\not\\to 0"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.hoi-tu-deu-day-ham",
+        "math.dai-hoc.giai-tich-thuc.tieu-chuan-cauchy-hoi-tu-deu"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "hội tụ đều",
+        "chuẩn sup",
+        "khảo sát cực trị của dãy hàm"
+      ],
+      "hints": [
+        "Cực đại di chuyển theo n, hãy tìm nó bằng đạo hàm.",
+        "Nếu chuẩn sup không dần về 0 thì không có hội tụ đều."
+      ],
+      "tags": [
+        "real-analysis",
+        "hoi-tu-deu",
+        "day-ham"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0009",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hội tụ đều của chuỗi hàm",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét chuỗi hàm tổng từ n = 1 đến vô cùng của sin(n*x) / n^2 trên toàn trục thực R. Khẳng định nào đúng?",
+      "statement_en": "Consider the series of sin(nx)/n^2 over all of R. Which statement is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "\\text{Hội tụ tuyệt đối và đều trên } \\mathbb{R}\\ \\text{theo tiêu chuẩn Weierstrass}",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "\\text{Chỉ hội tụ điểm, không hội tụ đều}",
+          "why_wrong": "Bỏ sót việc chặn |sin(nx)| <= 1 cho ta chặn số độc lập với x, đủ để có hội tụ đều."
+        },
+        {
+          "key": "C",
+          "text": "\\text{Hội tụ đều trên } [0, 2\\pi]\\ \\text{nhưng không trên } \\mathbb{R}",
+          "why_wrong": "Chặn M_n = 1/n^2 không phụ thuộc x nên miền hội tụ đều là toàn bộ R, không cần thu hẹp."
+        },
+        {
+          "key": "D",
+          "text": "\\text{Phân kì vì } \\sin(nx)\\ \\text{không dần về } 0",
+          "why_wrong": "Nhầm điều kiện cần: số hạng tổng quát là sin(nx)/n^2 chứ không phải sin(nx), và nó dần về 0."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tìm chặn số M_n không phụ thuộc x cho từng số hạng; đây là điều kiện then chốt của tiêu chuẩn Weierstrass.",
+          "latex": "\\left|\\frac{\\sin(nx)}{n^{2}}\\right| \\le \\frac{1}{n^{2}} = M_n \\quad \\forall x \\in \\mathbb{R}"
+        },
+        {
+          "explain": "Kiểm tra chuỗi các chặn hội tụ: đây là chuỗi p với p = 2 > 1.",
+          "latex": "\\sum_{n=1}^{\\infty} \\frac{1}{n^{2}} = \\frac{\\pi^{2}}{6} < \\infty"
+        },
+        {
+          "explain": "Theo tiêu chuẩn Weierstrass, chuỗi hội tụ tuyệt đối và ĐỀU trên R; hệ quả là tổng của chuỗi là hàm liên tục trên R.",
+          "latex": "\\sum_{n=1}^{\\infty} \\frac{\\sin(nx)}{n^{2}}\\ \\text{hội tụ đều trên } \\mathbb{R}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-ham.tieu-chuan-weierstrass",
+        "math.dai-hoc.chuoi-ham.hoi-tu-deu",
+        "math.dai-hoc.chuoi-so.chuoi-p"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tiêu chuẩn Weierstrass",
+        "hội tụ đều của chuỗi hàm"
+      ],
+      "hints": [
+        "Tìm chặn trên không phụ thuộc x.",
+        "Chuỗi 1/n^2 hội tụ hay phân kì?"
+      ],
+      "tags": [
+        "real-analysis",
+        "hoi-tu-deu",
+        "chuoi-ham"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0010",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đạo hàm riêng",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho f(x, y) = x^3*y^2 - 2*x*y^3 + 5. Tính đạo hàm riêng theo x tại điểm (1; 2).",
+      "statement_en": "Let f(x, y) = x^3 y^2 - 2 x y^3 + 5. Compute the partial derivative with respect to x at (1, 2).",
+      "choices": [
+        {
+          "key": "A",
+          "text": "-4",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "12",
+          "why_wrong": "Chỉ lấy đạo hàm số hạng đầu, bỏ quên -2xy^3 vì tưởng nó không chứa x."
+        },
+        {
+          "key": "C",
+          "text": "-20",
+          "why_wrong": "Tính nhầm sang đạo hàm riêng theo y: 2x^3y - 6xy^2 tại (1;2) cho -20."
+        },
+        {
+          "key": "D",
+          "text": "4",
+          "why_wrong": "Đúng độ lớn nhưng sai dấu do trừ ngược 16 - 12 thay vì 12 - 16."
+        }
+      ],
+      "answer": "A",
+      "answer_numeric": -4.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Khi lấy đạo hàm riêng theo x, biến y được coi là hằng số; đó là toàn bộ nội dung của định nghĩa đạo hàm riêng.",
+          "latex": "\\frac{\\partial f}{\\partial x} = 3x^{2}y^{2} - 2y^{3}"
+        },
+        {
+          "explain": "Số hạng hằng 5 có đạo hàm bằng 0, còn số hạng -2xy^3 cho -2y^3 vì x có bậc một.",
+          "latex": "\\frac{\\partial f}{\\partial x}(1, 2) = 3 \\cdot 1 \\cdot 4 - 2 \\cdot 8 = 12 - 16"
+        },
+        {
+          "explain": "Kết luận giá trị đạo hàm riêng tại điểm đã cho; dấu âm nói rằng f giảm khi x tăng nhẹ quanh (1;2).",
+          "latex": "\\frac{\\partial f}{\\partial x}(1, 2) = -4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-rieng"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "đạo hàm riêng",
+        "coi biến còn lại là hằng số"
+      ],
+      "hints": [
+        "Xem y như một hằng số.",
+        "Đừng bỏ sót số hạng -2xy^3."
+      ],
+      "tags": [
+        "multivariable",
+        "dao-ham-rieng"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0011",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đạo hàm riêng hỗn hợp",
+      "type": "dien-so",
+      "statement_vi": "Cho f(x, y) = x^2 * e^(x*y). Tính đạo hàm riêng hỗn hợp cấp hai theo x rồi theo y tại điểm (1; 0).",
+      "statement_en": "Let f(x, y) = x^2 e^(xy). Compute the mixed second partial derivative (first in x, then in y) at (1, 0).",
+      "answer": "3",
+      "answer_numeric": 3.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Lấy đạo hàm theo x trước, dùng quy tắc tích vì f là tích của x^2 và e^(xy); khi đó y đóng vai trò hằng số nên đạo hàm của e^(xy) theo x là y*e^(xy).",
+          "latex": "f_x = 2x e^{xy} + x^{2} \\cdot y e^{xy} = e^{xy}\\left(2x + x^{2}y\\right)"
+        },
+        {
+          "explain": "Lấy tiếp đạo hàm theo y của biểu thức trên; lúc này x là hằng số nên đạo hàm của e^(xy) theo y là x*e^(xy).",
+          "latex": "f_{xy} = x e^{xy}\\left(2x + x^{2}y\\right) + e^{xy} \\cdot x^{2} = e^{xy}\\left(2x^{2} + x^{3}y + x^{2}\\right)"
+        },
+        {
+          "explain": "Thay x = 1, y = 0; khi đó e^0 = 1 và mọi số hạng chứa y triệt tiêu.",
+          "latex": "f_{xy}(1, 0) = 1 \\cdot (2 + 0 + 1) = 3"
+        },
+        {
+          "explain": "Vì f có các đạo hàm riêng cấp hai liên tục, định lí Schwarz bảo đảm f_yx cũng bằng 3, dùng để tự kiểm tra.",
+          "latex": "f_{xy} = f_{yx} = 3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.dinh-li-schwarz",
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-rieng"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đạo hàm riêng cấp hai",
+        "định lí Schwarz",
+        "quy tắc tích và hàm hợp"
+      ],
+      "hints": [
+        "Đạo hàm e^(xy) theo x cho y*e^(xy), theo y cho x*e^(xy).",
+        "Có thể đổi thứ tự lấy đạo hàm để kiểm tra lại."
+      ],
+      "tags": [
+        "multivariable",
+        "dao-ham-rieng",
+        "schwarz"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0012",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giới hạn hàm hai biến",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét giới hạn của f(x, y) = x*y / (x^2 + y^2) khi (x; y) tiến tới (0; 0). Kết luận nào đúng?",
+      "statement_en": "Consider the limit of f(x, y) = xy/(x^2 + y^2) as (x, y) approaches (0, 0). Which conclusion is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "\\text{Giới hạn không tồn tại}",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "0",
+          "why_wrong": "Chỉ thử theo hai trục toạ độ (giới hạn lặp) rồi kết luận vội; giới hạn lặp bằng nhau không kéo theo giới hạn bội tồn tại."
+        },
+        {
+          "key": "C",
+          "text": "\\frac{1}{2}",
+          "why_wrong": "Chỉ thử theo đường y = x rồi lấy luôn giá trị đó làm giới hạn."
+        },
+        {
+          "key": "D",
+          "text": "1",
+          "why_wrong": "Nhầm với giới hạn của x*y/(x*y) hoặc rút gọn sai mẫu số."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Thử theo họ đường thẳng y = m*x đi qua gốc, vì giới hạn bội phải bằng nhau theo MỌI đường tiến tới điểm.",
+          "latex": "f(x, mx) = \\frac{x \\cdot mx}{x^{2} + m^{2}x^{2}} = \\frac{m}{1 + m^{2}}"
+        },
+        {
+          "explain": "Giá trị nhận được phụ thuộc hệ số góc m: theo trục hoành (m = 0) được 0, theo đường phân giác (m = 1) được 1/2.",
+          "latex": "m = 0 \\Rightarrow 0; \\qquad m = 1 \\Rightarrow \\frac{1}{2}"
+        },
+        {
+          "explain": "Hai đường khác nhau cho hai giá trị khác nhau nên giới hạn bội không tồn tại, dù hai giới hạn lặp đều bằng 0.",
+          "latex": "\\lim_{(x,y) \\to (0,0)} \\frac{xy}{x^{2} + y^{2}}\\ \\text{không tồn tại}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.gioi-han-boi",
+        "math.dai-hoc.ham-nhieu-bien.lien-tuc-hai-bien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "giới hạn bội",
+        "phản ví dụ theo đường tiến",
+        "phân biệt giới hạn lặp và giới hạn bội"
+      ],
+      "hints": [
+        "Hãy tiến về gốc theo đường y = mx.",
+        "Nếu giá trị phụ thuộc m thì kết luận được gì?"
+      ],
+      "tags": [
+        "multivariable",
+        "gioi-han-boi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0013",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Vi phân toàn phần và tính gần đúng",
+      "type": "dien-so",
+      "statement_vi": "Dùng vi phân toàn phần tại điểm (3; 4), hãy tính gần đúng giá trị của căn bậc hai của (3,02^2 + 3,97^2). Nhập kết quả xấp xỉ (3 chữ số thập phân).",
+      "statement_en": "Use the total differential at (3, 4) to approximate the square root of (3.02^2 + 3.97^2). Give the approximation to three decimals.",
+      "answer": "≈ 4,988",
+      "answer_numeric": 4.988,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Chọn hàm và điểm gốc sao cho giá trị tại đó tính được chính xác; đây là ý tưởng của phép xấp xỉ tuyến tính.",
+          "latex": "f(x, y) = \\sqrt{x^{2} + y^{2}},\\quad f(3, 4) = 5,\\quad dx = 0{,}02,\\ dy = -0{,}03"
+        },
+        {
+          "explain": "Tính các đạo hàm riêng tại điểm gốc; chúng là hệ số của phần tuyến tính trong khai triển.",
+          "latex": "f_x = \\frac{x}{\\sqrt{x^{2}+y^{2}}} = \\frac{3}{5},\\qquad f_y = \\frac{y}{\\sqrt{x^{2}+y^{2}}} = \\frac{4}{5}"
+        },
+        {
+          "explain": "Lập vi phân toàn phần: nó chính là số gia xấp xỉ của hàm khi hai biến thay đổi nhỏ.",
+          "latex": "df = \\frac{3}{5}(0{,}02) + \\frac{4}{5}(-0{,}03) = 0{,}012 - 0{,}024 = -0{,}012"
+        },
+        {
+          "explain": "Cộng số gia vào giá trị gốc; sai số so với giá trị đúng 4,988116 chỉ cỡ 10^(-4), xác nhận phép xấp xỉ hợp lí.",
+          "latex": "f(3{,}02;\\ 3{,}97) \\approx 5 - 0{,}012 = 4{,}988"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.vi-phan-toan-phan",
+        "math.dai-hoc.ham-nhieu-bien.xap-xi-toan-phan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "vi phân toàn phần",
+        "xấp xỉ tuyến tính",
+        "chọn điểm gốc thuận lợi"
+      ],
+      "hints": [
+        "Chọn điểm gốc (3;4) vì tại đó căn bằng đúng 5.",
+        "dy âm vì 3,97 nhỏ hơn 4."
+      ],
+      "tags": [
+        "multivariable",
+        "vi-phan-toan-phan",
+        "xap-xi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0014",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đạo hàm theo hướng",
+      "type": "dien-so",
+      "statement_vi": "Cho f(x, y, z) = x^2*y + y^2*z + z^2*x. Tính đạo hàm theo hướng của f tại điểm P(1; 2; -1) theo hướng vectơ v = (2; -1; 2). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Let f(x, y, z) = x^2 y + y^2 z + z^2 x. Compute the directional derivative of f at P(1, 2, -1) in the direction v = (2, -1, 2). Give four decimals.",
+      "answer": "17/3 ≈ 5,6667",
+      "answer_numeric": 5.6667,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Tính gradient vì đạo hàm theo hướng là tích vô hướng của gradient với vectơ đơn vị chỉ hướng.",
+          "latex": "\\nabla f = \\left(2xy + z^{2},\\ x^{2} + 2yz,\\ y^{2} + 2zx\\right)"
+        },
+        {
+          "explain": "Thay toạ độ điểm P vào từng thành phần, vì gradient là một trường vectơ nên phải lấy tại đúng điểm được hỏi.",
+          "latex": "\\nabla f(P) = (4 + 1,\\ 1 - 4,\\ 4 - 2) = (5,\\ -3,\\ 2)"
+        },
+        {
+          "explain": "Chuẩn hoá vectơ hướng: bắt buộc phải chia cho độ dài, nếu không kết quả sẽ bị nhân thêm hệ số |v|.",
+          "latex": "|v| = \\sqrt{4 + 1 + 4} = 3,\\qquad u = \\frac{1}{3}(2, -1, 2)"
+        },
+        {
+          "explain": "Lấy tích vô hướng của gradient với vectơ đơn vị: đó chính là công thức đạo hàm theo hướng.",
+          "latex": "D_u f(P) = \\frac{1}{3}\\left(5 \\cdot 2 + (-3)(-1) + 2 \\cdot 2\\right) = \\frac{17}{3} \\approx 5{,}6667"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-theo-huong",
+        "math.dai-hoc.ham-nhieu-bien.gradient"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "gradient",
+        "đạo hàm theo hướng",
+        "chuẩn hoá vectơ hướng"
+      ],
+      "hints": [
+        "Đừng quên chia v cho độ dài của nó.",
+        "|v| = 3 nên phép chia rất gọn."
+      ],
+      "tags": [
+        "multivariable",
+        "gradient",
+        "dao-ham-theo-huong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0015",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Gradient và hướng tăng nhanh nhất",
+      "type": "dien-so",
+      "statement_vi": "Cho f(x, y, z) = ln(x^2 + y^2 + z^2). Tại điểm (1; 1; 1), tốc độ tăng lớn nhất của f bằng bao nhiêu? Nhập giá trị (4 chữ số thập phân).",
+      "statement_en": "Let f(x, y, z) = ln(x^2 + y^2 + z^2). At the point (1, 1, 1), what is the maximum rate of increase of f? Give four decimals.",
+      "answer": "2/√3 ≈ 1,1547",
+      "answer_numeric": 1.1547,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Tính gradient bằng quy tắc hàm hợp: đạo hàm của ln u là u'/u.",
+          "latex": "\\nabla f = \\frac{2(x,\\ y,\\ z)}{x^{2} + y^{2} + z^{2}}"
+        },
+        {
+          "explain": "Thay điểm (1;1;1) vào công thức gradient; mẫu số bằng 3 nên gradient cùng phương với vectơ (1;1;1).",
+          "latex": "\\nabla f(1,1,1) = \\frac{2}{3}(1, 1, 1)"
+        },
+        {
+          "explain": "Tốc độ tăng lớn nhất bằng ĐỘ DÀI gradient, đạt được theo chính hướng gradient, vì tích vô hướng lớn nhất khi hai vectơ cùng phương cùng chiều.",
+          "latex": "\\max_{|u| = 1} D_u f = \\|\\nabla f\\| = \\frac{2}{3}\\sqrt{3} = \\frac{2}{\\sqrt{3}} \\approx 1{,}1547"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.gradient",
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-theo-huong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "gradient",
+        "hướng tăng nhanh nhất",
+        "ý nghĩa hình học của độ dài gradient"
+      ],
+      "hints": [
+        "Tốc độ tăng lớn nhất chính là độ dài gradient.",
+        "Đạo hàm của ln u bằng u' chia u."
+      ],
+      "tags": [
+        "multivariable",
+        "gradient",
+        "toc-do-tang"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0016",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Cực trị có điều kiện - nhân tử Lagrange",
+      "type": "dien-so",
+      "statement_vi": "Tìm giá trị LỚN NHẤT của f(x, y, z) = x + 2y + 3z trên mặt cầu x^2 + y^2 + z^2 = 14.",
+      "statement_en": "Find the MAXIMUM of f(x, y, z) = x + 2y + 3z on the sphere x^2 + y^2 + z^2 = 14.",
+      "answer": "14",
+      "answer_numeric": 14.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Lập hàm Lagrange vì đây là bài toán cực trị có một ràng buộc đẳng thức.",
+          "latex": "L = x + 2y + 3z - \\lambda\\left(x^{2} + y^{2} + z^{2} - 14\\right)"
+        },
+        {
+          "explain": "Cho các đạo hàm riêng bằng 0: điều kiện cần nói rằng gradient hàm mục tiêu song song với gradient ràng buộc.",
+          "latex": "1 = 2\\lambda x,\\quad 2 = 2\\lambda y,\\quad 3 = 2\\lambda z \\Rightarrow (x, y, z) = \\frac{1}{2\\lambda}(1, 2, 3)"
+        },
+        {
+          "explain": "Thay vào ràng buộc để tìm lambda; hai nghiệm đối nhau ứng với điểm cực đại và cực tiểu.",
+          "latex": "\\frac{1}{4\\lambda^{2}}(1 + 4 + 9) = 14 \\Rightarrow \\lambda^{2} = \\frac{1}{4} \\Rightarrow \\lambda = \\pm \\frac{1}{2}"
+        },
+        {
+          "explain": "Với lambda = 1/2 ta được điểm (1; 2; 3) cho giá trị lớn nhất; kết quả trùng với đánh giá Cauchy - Schwarz nên chắc chắn đúng.",
+          "latex": "f_{\\max} = 1 + 4 + 9 = 14 = \\sqrt{14}\\,\\sqrt{14}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.nhan-tu-lagrange",
+        "math.dai-hoc.ham-nhieu-bien.dieu-kien-du-lagrange"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "nhân tử Lagrange",
+        "cực trị có điều kiện",
+        "kiểm chứng bằng Cauchy - Schwarz"
+      ],
+      "hints": [
+        "Gradient hàm mục tiêu là hằng số (1;2;3).",
+        "Có thể kiểm tra bằng bất đẳng thức Cauchy - Schwarz."
+      ],
+      "tags": [
+        "multivariable",
+        "lagrange",
+        "cuc-tri-co-dieu-kien"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0017",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Cực trị có điều kiện - nhân tử Lagrange",
+      "type": "dien-so",
+      "statement_vi": "Tìm giá trị NHỎ NHẤT của f(x, y, z) = x^2 + y^2 + z^2 với ràng buộc x + 2y + 3z = 6. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Find the MINIMUM of f(x, y, z) = x^2 + y^2 + z^2 subject to x + 2y + 3z = 6. Give four decimals.",
+      "answer": "18/7 ≈ 2,5714",
+      "answer_numeric": 2.5714,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Lập điều kiện cần Lagrange: gradient của f phải cùng phương với vectơ pháp tuyến của mặt phẳng.",
+          "latex": "(2x,\\ 2y,\\ 2z) = \\lambda(1,\\ 2,\\ 3) \\Rightarrow (x, y, z) = \\frac{\\lambda}{2}(1, 2, 3)"
+        },
+        {
+          "explain": "Thế biểu thức của (x;y;z) theo lambda vào ràng buộc để xác định lambda, vì điểm dừng bắt buộc phải nằm trên mặt phẳng.",
+          "latex": "\\frac{\\lambda}{2}(1 + 4 + 9) = 6 \\Rightarrow 7\\lambda = 6 \\Rightarrow \\lambda = \\frac{6}{7}"
+        },
+        {
+          "explain": "Tính giá trị hàm mục tiêu tại điểm dừng; đó là bình phương khoảng cách từ gốc toạ độ tới mặt phẳng.",
+          "latex": "x^{2}+y^{2}+z^{2} = \\frac{\\lambda^{2}}{4} \\cdot 14 = \\frac{36}{49} \\cdot \\frac{14}{4} = \\frac{18}{7}"
+        },
+        {
+          "explain": "Kiểm tra bằng công thức khoảng cách điểm - mặt phẳng, cho cùng kết quả nên nghiệm là cực tiểu toàn cục.",
+          "latex": "d^{2} = \\left(\\frac{|6|}{\\sqrt{1 + 4 + 9}}\\right)^{2} = \\frac{36}{14} = \\frac{18}{7} \\approx 2{,}5714"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.nhan-tu-lagrange"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "nhân tử Lagrange",
+        "khoảng cách từ điểm tới mặt phẳng",
+        "kiểm chứng bằng công thức hình học"
+      ],
+      "hints": [
+        "Bài này tương đương tìm khoảng cách từ gốc tới mặt phẳng.",
+        "Gradient của x^2+y^2+z^2 là 2(x;y;z)."
+      ],
+      "tags": [
+        "multivariable",
+        "lagrange",
+        "cuc-tri-co-dieu-kien"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0018",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Cực trị có điều kiện - nhân tử Lagrange",
+      "type": "dien-so",
+      "statement_vi": "Với x > 0, y > 0 và x + y = 5, tìm giá trị LỚN NHẤT của biểu thức P = x^2 * y^3.",
+      "statement_en": "For x > 0, y > 0 with x + y = 5, find the MAXIMUM of P = x^2 y^3.",
+      "answer": "108",
+      "answer_numeric": 108.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Lập hệ Lagrange cho hàm mục tiêu và ràng buộc tuyến tính; ràng buộc có gradient (1;1) nên hai đạo hàm riêng của P phải bằng nhau tại điểm tối ưu.",
+          "latex": "2xy^{3} = \\lambda,\\qquad 3x^{2}y^{2} = \\lambda"
+        },
+        {
+          "explain": "Cho hai biểu thức bằng nhau rồi rút gọn; được phép chia cho x*y^2 vì x, y đều dương.",
+          "latex": "2xy^{3} = 3x^{2}y^{2} \\iff 2y = 3x"
+        },
+        {
+          "explain": "Kết hợp với ràng buộc để giải ra toạ độ điểm dừng.",
+          "latex": "y = \\frac{3x}{2},\\quad x + \\frac{3x}{2} = 5 \\Rightarrow x = 2,\\ y = 3"
+        },
+        {
+          "explain": "Tính giá trị; vì P dần về 0 ở hai đầu biên (x -> 0 hoặc y -> 0) nên điểm dừng duy nhất này là cực đại.",
+          "latex": "P_{\\max} = 2^{2} \\cdot 3^{3} = 4 \\cdot 27 = 108"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.nhan-tu-lagrange",
+        "math.dai-hoc.ham-nhieu-bien.dieu-kien-du-lagrange"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "nhân tử Lagrange",
+        "khử nhân tử chung",
+        "lập luận biên để khẳng định cực đại"
+      ],
+      "hints": [
+        "Khử lambda bằng cách cho hai đạo hàm riêng bằng nhau.",
+        "Tỉ lệ x : y sẽ bằng đúng tỉ lệ số mũ 2 : 3."
+      ],
+      "tags": [
+        "multivariable",
+        "lagrange",
+        "cuc-tri-co-dieu-kien"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0019",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân bội - đổi thứ tự lấy tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân lặp: tích phân theo y từ 0 đến 1 của (tích phân theo x từ y đến 1 của e^(x^2) dx). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Evaluate the iterated integral: integral over y from 0 to 1 of (integral over x from y to 1 of e^(x^2) dx). Give four decimals.",
+      "answer": "(e - 1)/2 ≈ 0,8591",
+      "answer_numeric": 0.8591,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Nhận ra e^(x^2) không có nguyên hàm sơ cấp theo x, nên bắt buộc phải đổi thứ tự lấy tích phân để x trở thành biến ngoài.",
+          "latex": "D = \\{(x, y) : 0 \\le y \\le 1,\\ y \\le x \\le 1\\}"
+        },
+        {
+          "explain": "Mô tả lại miền D theo x trước: với mỗi x trong [0;1], y chạy từ 0 tới x (vì điều kiện y <= x).",
+          "latex": "D = \\{(x, y) : 0 \\le x \\le 1,\\ 0 \\le y \\le x\\}"
+        },
+        {
+          "explain": "Tích phân theo y trước cho ngay thừa số x, biến biểu thức thành dạng dùng được phép thế u = x^2.",
+          "latex": "\\int_{0}^{1}\\!\\!\\int_{0}^{x} e^{x^{2}}\\,dy\\,dx = \\int_{0}^{1} x e^{x^{2}}\\,dx"
+        },
+        {
+          "explain": "Đặt u = x^2 để đưa về nguyên hàm cơ bản của hàm mũ; phép thế dùng được chính nhờ thừa số x sinh ra ở bước trước.",
+          "latex": "\\int_{0}^{1} x e^{x^{2}}\\,dx = \\frac{1}{2}\\left[e^{x^{2}}\\right]_{0}^{1} = \\frac{e - 1}{2} \\approx 0{,}8591"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.tich-phan-lap-loai-mot"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "đổi thứ tự lấy tích phân",
+        "mô tả miền phẳng",
+        "đổi biến trong tích phân đơn"
+      ],
+      "hints": [
+        "Vẽ miền tam giác giới hạn bởi y = 0, x = 1, y = x.",
+        "Sau khi đổi thứ tự, tích phân trong cho ra thừa số x."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-boi",
+        "doi-thu-tu"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0020",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân bội - đổi biến Jacobi",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân kép của (x + y) trên miền D giới hạn bởi bốn đường x + y = 1, x + y = 2, x - y = 0 và x - y = 1, bằng phép đổi biến u = x + y, v = x - y.",
+      "statement_en": "Evaluate the double integral of (x + y) over the region D bounded by x + y = 1, x + y = 2, x - y = 0 and x - y = 1, using u = x + y, v = x - y.",
+      "answer": "3/4 = 0,75",
+      "answer_numeric": 0.75,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Chọn phép đổi biến biến miền hình bình hành thành hình chữ nhật; đó là mục đích chính của đổi biến trong tích phân kép.",
+          "latex": "u = x + y,\\quad v = x - y \\Rightarrow 1 \\le u \\le 2,\\quad 0 \\le v \\le 1"
+        },
+        {
+          "explain": "Tính định thức Jacobi của phép biến đổi ngược. Tính trực tiếp đạo hàm của (u; v) theo (x; y) rồi nghịch đảo là cách nhanh nhất.",
+          "latex": "\\frac{\\partial(u, v)}{\\partial(x, y)} = \\begin{vmatrix} 1 & 1 \\\\ 1 & -1 \\end{vmatrix} = -2 \\Rightarrow \\left|\\frac{\\partial(x, y)}{\\partial(u, v)}\\right| = \\frac{1}{2}"
+        },
+        {
+          "explain": "Thay hàm dưới dấu tích phân: x + y chính là u, nên tích phân tách thành tích hai tích phân đơn.",
+          "latex": "\\iint_{D}(x + y)\\,dA = \\int_{1}^{2}\\!\\!\\int_{0}^{1} u \\cdot \\frac{1}{2}\\,dv\\,du"
+        },
+        {
+          "explain": "Tính lần lượt: tích phân theo v cho hệ số 1, tích phân theo u cho (4-1)/2.",
+          "latex": "= \\frac{1}{2}\\int_{1}^{2} u\\,du = \\frac{1}{2} \\cdot \\frac{3}{2} = \\frac{3}{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.doi-bien-jacobi"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "đổi biến Jacobi",
+        "biến hình bình hành thành hình chữ nhật",
+        "định thức Jacobi"
+      ],
+      "hints": [
+        "Miền D là hình bình hành, hãy đưa về hình chữ nhật trong mặt phẳng uv.",
+        "Jacobi của phép biến đổi ngược bằng nghịch đảo Jacobi thuận."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-boi",
+        "jacobi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0021",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân bội - toạ độ cực",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân kép của căn bậc hai của (x^2 + y^2) trên nửa hình tròn D: x^2 + y^2 <= 4, y >= 0. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Evaluate the double integral of sqrt(x^2 + y^2) over the half-disk D: x^2 + y^2 <= 4, y >= 0. Give four decimals.",
+      "answer": "8*pi/3 ≈ 8,3776",
+      "answer_numeric": 8.3776,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Miền tròn và hàm chỉ phụ thuộc khoảng cách tới gốc, nên toạ độ cực là lựa chọn tự nhiên: cả miền lẫn hàm đều trở nên rất đơn giản.",
+          "latex": "x = r\\cos\\theta,\\quad y = r\\sin\\theta,\\quad dA = r\\,dr\\,d\\theta"
+        },
+        {
+          "explain": "Mô tả miền: bán kính chạy từ 0 tới 2, góc chạy từ 0 tới pi vì chỉ lấy nửa trên.",
+          "latex": "D: 0 \\le r \\le 2,\\quad 0 \\le \\theta \\le \\pi"
+        },
+        {
+          "explain": "Hàm dưới dấu tích phân bằng r, nhân thêm yếu tố diện tích r nên được r^2. Đây chính là chỗ dễ quên nhất: thừa số r của Jacobi.",
+          "latex": "\\iint_{D} \\sqrt{x^{2}+y^{2}}\\,dA = \\int_{0}^{\\pi}\\!\\!\\int_{0}^{2} r \\cdot r\\,dr\\,d\\theta"
+        },
+        {
+          "explain": "Hàm dưới dấu tích phân tách thành một phần theo r và một phần theo theta, nên tích phân kép tách thành tích hai tích phân đơn.",
+          "latex": "= \\pi \\cdot \\frac{2^{3}}{3} = \\frac{8\\pi}{3} \\approx 8{,}3776"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.doi-bien-toa-do-cuc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "toạ độ cực",
+        "Jacobi của toạ độ cực",
+        "mô tả miền tròn"
+      ],
+      "hints": [
+        "dA = r dr dtheta, đừng quên thừa số r.",
+        "Nửa trên ứng với góc từ 0 tới pi."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-boi",
+        "toa-do-cuc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0022",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân bội - toạ độ cực suy rộng",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân kép của (x^2/9 + y^2/4) trên miền elip E: x^2/9 + y^2/4 <= 1, bằng phép đổi biến x = 3r*cos(t), y = 2r*sin(t). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Evaluate the double integral of (x^2/9 + y^2/4) over the ellipse E: x^2/9 + y^2/4 <= 1 using x = 3r cos t, y = 2r sin t. Give four decimals.",
+      "answer": "3*pi ≈ 9,4248",
+      "answer_numeric": 9.4248,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Dùng toạ độ cực suy rộng để biến elip thành hình tròn đơn vị trong mặt phẳng (r; t); nhờ đó cận tích phân trở thành hằng số.",
+          "latex": "x = 3r\\cos t,\\quad y = 2r\\sin t \\Rightarrow \\frac{x^{2}}{9} + \\frac{y^{2}}{4} = r^{2}"
+        },
+        {
+          "explain": "Tính Jacobi của phép biến đổi: hai hệ số co giãn 3 và 2 nhân với thừa số r của toạ độ cực.",
+          "latex": "\\frac{\\partial(x, y)}{\\partial(r, t)} = \\begin{vmatrix} 3\\cos t & -3r\\sin t \\\\ 2\\sin t & 2r\\cos t \\end{vmatrix} = 6r"
+        },
+        {
+          "explain": "Viết lại tích phân với miền mới là hình tròn đơn vị.",
+          "latex": "\\iint_{E}\\left(\\frac{x^{2}}{9}+\\frac{y^{2}}{4}\\right)dA = \\int_{0}^{2\\pi}\\!\\!\\int_{0}^{1} r^{2} \\cdot 6r\\,dr\\,dt"
+        },
+        {
+          "explain": "Tính: tích phân theo r cho 6/4, nhân với 2pi.",
+          "latex": "= 6 \\cdot 2\\pi \\cdot \\frac{1}{4} = 3\\pi \\approx 9{,}4248"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.toa-do-cuc-suy-rong",
+        "math.dai-hoc.tich-phan-boi.doi-bien-jacobi"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "toạ độ cực suy rộng",
+        "Jacobi cho miền elip",
+        "chuẩn hoá miền lấy tích phân"
+      ],
+      "hints": [
+        "Sau khi đổi biến, biểu thức dưới dấu tích phân chỉ còn r^2.",
+        "Jacobi bằng tích hai bán trục nhân r."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-boi",
+        "jacobi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0023",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân bội - toạ độ trụ",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân ba của z trên miền V nằm giữa mặt paraboloid z = x^2 + y^2 và mặt phẳng z = 4. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Evaluate the triple integral of z over the region V between the paraboloid z = x^2 + y^2 and the plane z = 4. Give four decimals.",
+      "answer": "64*pi/3 ≈ 67,0206",
+      "answer_numeric": 67.0206,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Miền có trục đối xứng Oz và biên là paraboloid tròn xoay, nên toạ độ trụ làm cận tích phân tách rời hoàn toàn.",
+          "latex": "x = r\\cos\\theta,\\ y = r\\sin\\theta,\\ z = z,\\quad dV = r\\,dz\\,dr\\,d\\theta"
+        },
+        {
+          "explain": "Tìm hình chiếu của V lên mặt phẳng Oxy bằng cách cho hai mặt cắt nhau; giao tuyến quyết định cận của r.",
+          "latex": "r^{2} = 4 \\Rightarrow r \\le 2,\\qquad r^{2} \\le z \\le 4,\\qquad 0 \\le \\theta \\le 2\\pi"
+        },
+        {
+          "explain": "Tích phân theo z trước vì cận của z là hàm của r; nguyên hàm của z là z^2/2.",
+          "latex": "\\int_{r^{2}}^{4} z\\,dz = \\frac{16 - r^{4}}{2}"
+        },
+        {
+          "explain": "Tích phân phần còn lại theo r rồi nhân 2pi cho biến góc.",
+          "latex": "2\\pi \\int_{0}^{2} \\frac{16 - r^{4}}{2}\\,r\\,dr = \\pi\\left[8r^{2} - \\frac{r^{6}}{6}\\right]_{0}^{2} = \\pi\\left(32 - \\frac{32}{3}\\right) = \\frac{64\\pi}{3} \\approx 67{,}0206"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.toa-do-tru",
+        "math.dai-hoc.tich-phan-boi.tich-phan-ba-lap"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "toạ độ trụ",
+        "xác định cận theo giao tuyến hai mặt",
+        "tích phân lặp ba lớp"
+      ],
+      "hints": [
+        "Giao của paraboloid với z = 4 là đường tròn bán kính 2.",
+        "dV = r dz dr dtheta."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-boi",
+        "toa-do-tru"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0024",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân bội - toạ độ cầu",
+      "type": "dien-so",
+      "statement_vi": "Tính thể tích của khối V nằm trong mặt cầu bán kính 3 tâm gốc toạ độ và bên trong nón có phương trình góc phi = pi/3 (phần chứa trục Oz dương). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Find the volume of the region V inside the sphere of radius 3 centred at the origin and inside the cone phi = pi/3 (the part containing the positive z-axis). Give four decimals.",
+      "answer": "9*pi ≈ 28,2743",
+      "answer_numeric": 28.2743,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Miền được mô tả bằng bất đẳng thức đơn giản trong toạ độ cầu, đó là lí do chọn hệ toạ độ này: cả mặt cầu lẫn mặt nón đều thành cận hằng số.",
+          "latex": "0 \\le \\rho \\le 3,\\quad 0 \\le \\varphi \\le \\frac{\\pi}{3},\\quad 0 \\le \\theta \\le 2\\pi"
+        },
+        {
+          "explain": "Nhớ yếu tố thể tích trong toạ độ cầu; thừa số rho^2 sin(phi) là định thức Jacobi và không được bỏ sót.",
+          "latex": "dV = \\rho^{2}\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta"
+        },
+        {
+          "explain": "Tích phân tách hoàn toàn thành tích ba tích phân một biến.",
+          "latex": "V = \\int_{0}^{2\\pi} d\\theta \\int_{0}^{\\pi/3} \\sin\\varphi\\,d\\varphi \\int_{0}^{3} \\rho^{2}\\,d\\rho"
+        },
+        {
+          "explain": "Tính từng nhân tử: 2pi, (1 - cos(pi/3)) = 1/2, và 27/3 = 9.",
+          "latex": "V = 2\\pi \\cdot \\frac{1}{2} \\cdot 9 = 9\\pi \\approx 28{,}2743"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.toa-do-cau",
+        "math.dai-hoc.tich-phan-boi.the-tich-tich-phan-ba"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "toạ độ cầu",
+        "yếu tố thể tích rho^2 sin phi",
+        "mô tả khối nón cầu"
+      ],
+      "hints": [
+        "Trong toạ độ cầu, mặt nón ứng với phi bằng hằng số.",
+        "Nguyên hàm của sin phi là -cos phi."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-boi",
+        "toa-do-cau"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0025",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân đường loại một",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân đường loại một của hàm x*y theo cung C là một phần tư đường tròn đơn vị x^2 + y^2 = 1 nằm trong góc phần tư thứ nhất.",
+      "statement_en": "Compute the line integral of xy with respect to arc length over C, the quarter of the unit circle in the first quadrant.",
+      "answer": "1/2 = 0,5",
+      "answer_numeric": 0.5,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Tham số hoá cung tròn bằng góc, vì khi đó vi phân cung có dạng rất gọn.",
+          "latex": "x = \\cos t,\\quad y = \\sin t,\\quad t \\in \\left[0, \\frac{\\pi}{2}\\right]"
+        },
+        {
+          "explain": "Tính vi phân cung: với đường tròn bán kính 1 thì ds = dt, đây là lí do tham số hoá bằng góc tiện lợi nhất.",
+          "latex": "ds = \\sqrt{(-\\sin t)^{2} + (\\cos t)^{2}}\\,dt = dt"
+        },
+        {
+          "explain": "Thay vào tích phân và dùng công thức nhân đôi để lấy nguyên hàm.",
+          "latex": "\\int_{C} xy\\,ds = \\int_{0}^{\\pi/2} \\cos t \\sin t\\,dt = \\frac{1}{2}\\int_{0}^{\\pi/2} \\sin 2t\\,dt"
+        },
+        {
+          "explain": "Tính nguyên hàm của sin(2t) rồi thay cận để có giá trị của tích phân đường loại một.",
+          "latex": "= \\frac{1}{2}\\left[-\\frac{\\cos 2t}{2}\\right]_{0}^{\\pi/2} = \\frac{1}{2} \\cdot 1 = \\frac{1}{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.loai-mot-tham-so"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "tích phân đường loại một",
+        "tham số hoá cung tròn",
+        "vi phân cung"
+      ],
+      "hints": [
+        "Với đường tròn đơn vị, ds bằng dt.",
+        "cos t sin t = (1/2) sin 2t."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-duong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0026",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân đường không phụ thuộc đường đi",
+      "type": "dien-so",
+      "statement_vi": "Cho trường vectơ F = (2xy + y^3; x^2 + 3xy^2). Chứng tỏ F là trường thế rồi tính công của F khi chất điểm đi từ O(0; 0) tới A(1; 2) theo một đường cong trơn bất kì.",
+      "statement_en": "Given F = (2xy + y^3, x^2 + 3xy^2), show F is conservative and compute the work done moving from O(0, 0) to A(1, 2) along any smooth path.",
+      "answer": "10",
+      "answer_numeric": 10.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra điều kiện trường thế trên miền đơn liên R^2: đạo hàm chéo của hai thành phần phải bằng nhau.",
+          "latex": "P = 2xy + y^{3},\\ Q = x^{2} + 3xy^{2};\\quad \\frac{\\partial P}{\\partial y} = 2x + 3y^{2} = \\frac{\\partial Q}{\\partial x}"
+        },
+        {
+          "explain": "Vì R^2 đơn liên và điều kiện trên thoả mãn, tồn tại hàm thế vị; tìm nó bằng cách lấy nguyên hàm của P theo x.",
+          "latex": "u(x, y) = \\int (2xy + y^{3})\\,dx = x^{2}y + xy^{3} + \\varphi(y)"
+        },
+        {
+          "explain": "Đạo hàm u theo y rồi so với Q để xác định phần phụ thuộc y; ở đây phần đó là hằng số.",
+          "latex": "u_y = x^{2} + 3xy^{2} + \\varphi'(y) = Q \\Rightarrow \\varphi'(y) = 0"
+        },
+        {
+          "explain": "Áp dụng công thức Newton - Leibniz cho tích phân đường: công chỉ phụ thuộc hai đầu mút.",
+          "latex": "W = u(1, 2) - u(0, 0) = (1 \\cdot 2 + 1 \\cdot 8) - 0 = 10"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.dieu-kien-khong-phu-thuoc",
+        "math.dai-hoc.tich-phan-duong.ham-the-vi",
+        "math.dai-hoc.giai-tich-vecto.truong-the"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "nhận biết trường thế",
+        "tìm hàm thế vị",
+        "công thức Newton - Leibniz cho tích phân đường"
+      ],
+      "hints": [
+        "So sánh dP/dy với dQ/dx trước.",
+        "Nếu tồn tại hàm thế vị thì công bằng hiệu giá trị tại hai đầu mút."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-duong",
+        "truong-the"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0027",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công thức Green",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức Green tính tích phân đường theo chu tuyến kín C là đường tròn x^2 + y^2 = 4 lấy theo chiều dương, của biểu thức (x^2 - y)dx + (x + y^2)dy. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Use Green's theorem to evaluate the line integral over the positively oriented circle x^2 + y^2 = 4 of (x^2 - y)dx + (x + y^2)dy. Give four decimals.",
+      "answer": "8*pi ≈ 25,1327",
+      "answer_numeric": 25.1327,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Công thức Green biến tích phân đường theo chu tuyến kín thành tích phân kép trên miền được bao; điều kiện áp dụng (P, Q khả vi liên tục, C trơn kín, chiều dương) đều thoả mãn.",
+          "latex": "\\oint_{C} P\\,dx + Q\\,dy = \\iint_{D}\\left(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\right)dA"
+        },
+        {
+          "explain": "Tính hai đạo hàm riêng cần thiết; các số hạng x^2 và y^2 biến mất vì chúng không chứa biến cần lấy đạo hàm.",
+          "latex": "\\frac{\\partial Q}{\\partial x} = 1,\\qquad \\frac{\\partial P}{\\partial y} = -1"
+        },
+        {
+          "explain": "Hiệu hai đạo hàm là hằng số 2, nên tích phân kép rút về hai lần diện tích hình tròn.",
+          "latex": "\\oint_{C} = \\iint_{D} 2\\,dA = 2\\,S(D)"
+        },
+        {
+          "explain": "Thay diện tích hình tròn bán kính 2 (bằng 4pi) vào để có kết quả cuối cùng.",
+          "latex": "= 2 \\cdot 4\\pi = 8\\pi \\approx 25{,}1327"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.cong-thuc-green",
+        "math.dai-hoc.tich-phan-duong.loai-hai-tham-so"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "công thức Green",
+        "chuyển tích phân đường sang tích phân kép",
+        "nhận ra tích phân diện tích"
+      ],
+      "hints": [
+        "Hiệu dQ/dx - dP/dy là hằng số.",
+        "Khi hàm dưới dấu tích phân kép là hằng số, kết quả tỉ lệ với diện tích."
+      ],
+      "tags": [
+        "multivariable",
+        "green",
+        "tich-phan-duong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0028",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tính diện tích bằng công thức Green",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức tính diện tích qua tích phân đường, hãy tính diện tích hình giới hạn bởi đường astroid có phương trình tham số x = cos^3(t), y = sin^3(t), với t chạy từ 0 tới 2*pi. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Using the line-integral area formula, compute the area enclosed by the astroid x = cos^3 t, y = sin^3 t, 0 <= t <= 2*pi. Give four decimals.",
+      "answer": "3*pi/8 ≈ 1,1781",
+      "answer_numeric": 1.1781,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Dùng hệ quả của công thức Green cho diện tích: dạng đối xứng này thuận tiện nhất khi đường cong cho ở dạng tham số.",
+          "latex": "S = \\frac{1}{2}\\oint_{C}\\left(x\\,dy - y\\,dx\\right)"
+        },
+        {
+          "explain": "Tính hai vi phân theo tham số t bằng quy tắc dây chuyền.",
+          "latex": "dx = -3\\cos^{2} t \\sin t\\,dt,\\qquad dy = 3\\sin^{2} t \\cos t\\,dt"
+        },
+        {
+          "explain": "Thay vào và rút gọn: hai số hạng gộp lại thành bình phương của tích cos t sin t.",
+          "latex": "x\\,dy - y\\,dx = 3\\cos^{2}t\\sin^{2}t\\left(\\cos^{2}t + \\sin^{2}t\\right)dt = 3\\cos^{2}t\\sin^{2}t\\,dt"
+        },
+        {
+          "explain": "Dùng công thức hạ bậc hai lần để lấy nguyên hàm trên một chu kì.",
+          "latex": "S = \\frac{3}{2}\\int_{0}^{2\\pi} \\frac{\\sin^{2} 2t}{4}\\,dt = \\frac{3}{8} \\cdot \\pi = \\frac{3\\pi}{8} \\approx 1{,}1781"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.dien-tich-qua-green",
+        "math.dai-hoc.tich-phan-boi.dien-tich-mien-phang"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 9,
+      "skills": [
+        "công thức diện tích Green",
+        "đường cong tham số",
+        "hạ bậc lượng giác"
+      ],
+      "hints": [
+        "Dùng S = (1/2) tích phân vòng của (x dy - y dx).",
+        "Rút gọn nhờ đồng nhất thức cos^2 + sin^2 = 1."
+      ],
+      "tags": [
+        "multivariable",
+        "green",
+        "dien-tich"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0029",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tích phân mặt loại một",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân mặt loại một của hàm z trên nửa mặt cầu S: x^2 + y^2 + z^2 = 1 với z >= 0. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Compute the surface integral of z over the upper unit hemisphere S: x^2 + y^2 + z^2 = 1, z >= 0. Give four decimals.",
+      "answer": "pi ≈ 3,1416",
+      "answer_numeric": 3.1416,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Tham số hoá mặt cầu bằng hai góc cầu, vì khi đó yếu tố diện tích mặt có dạng chuẩn và cận là hằng số.",
+          "latex": "x = \\sin\\varphi\\cos\\theta,\\ y = \\sin\\varphi\\sin\\theta,\\ z = \\cos\\varphi"
+        },
+        {
+          "explain": "Với mặt cầu bán kính a, yếu tố diện tích là a^2 sin(phi) d(phi) d(theta); ở đây a = 1.",
+          "latex": "dS = \\sin\\varphi\\,d\\varphi\\,d\\theta,\\qquad 0 \\le \\varphi \\le \\frac{\\pi}{2},\\ 0 \\le \\theta \\le 2\\pi"
+        },
+        {
+          "explain": "Thay z = cos(phi) rồi tách tích phân thành tích hai tích phân một biến.",
+          "latex": "\\iint_{S} z\\,dS = \\int_{0}^{2\\pi}\\!\\!\\int_{0}^{\\pi/2} \\cos\\varphi \\sin\\varphi\\,d\\varphi\\,d\\theta"
+        },
+        {
+          "explain": "Tích phân theo phi cho 1/2 (đặt u = sin phi), nhân với 2pi.",
+          "latex": "= 2\\pi \\cdot \\frac{1}{2} = \\pi \\approx 3{,}1416"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-mat.loai-mot",
+        "math.dai-hoc.tich-phan-boi.dien-tich-mat-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "tích phân mặt loại một",
+        "tham số hoá mặt cầu",
+        "yếu tố diện tích mặt"
+      ],
+      "hints": [
+        "dS của mặt cầu đơn vị bằng sin(phi) dphi dtheta.",
+        "Đặt u = sin phi để lấy nguyên hàm."
+      ],
+      "tags": [
+        "multivariable",
+        "tich-phan-mat"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0030",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Divergence (Gauss - Ostrogradsky)",
+      "type": "dien-so",
+      "statement_vi": "Tính thông lượng của trường vectơ F = (x^3; y^3; z^3) qua mặt cầu đơn vị x^2 + y^2 + z^2 = 1 hướng ra ngoài. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Compute the outward flux of F = (x^3, y^3, z^3) through the unit sphere x^2 + y^2 + z^2 = 1. Give four decimals.",
+      "answer": "12*pi/5 ≈ 7,5398",
+      "answer_numeric": 7.5398,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Mặt kín và trường trơn trên toàn khối, nên dùng định lí Divergence sẽ tránh được việc tính trực tiếp tích phân mặt loại hai.",
+          "latex": "\\oiint_{S} \\vec{F}\\cdot\\vec{n}\\,dS = \\iiint_{V} \\operatorname{div}\\vec{F}\\,dV"
+        },
+        {
+          "explain": "Tính divergence: tổng ba đạo hàm riêng theo đúng biến tương ứng.",
+          "latex": "\\operatorname{div}\\vec{F} = 3x^{2} + 3y^{2} + 3z^{2} = 3\\rho^{2}"
+        },
+        {
+          "explain": "Divergence chỉ phụ thuộc khoảng cách tới gốc nên chuyển sang toạ độ cầu là hợp lí nhất.",
+          "latex": "\\iiint_{V} 3\\rho^{2}\\,dV = 3\\int_{0}^{2\\pi}\\!\\!\\int_{0}^{\\pi}\\!\\!\\int_{0}^{1} \\rho^{2} \\cdot \\rho^{2}\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta"
+        },
+        {
+          "explain": "Tính ba tích phân một biến: phần góc theo theta cho 2pi, phần theo phi cho 2, phần theo rho cho 1/5.",
+          "latex": "= 3 \\cdot 2\\pi \\cdot 2 \\cdot \\frac{1}{5} = \\frac{12\\pi}{5} \\approx 7{,}5398"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-mat.cong-thuc-gauss",
+        "math.dai-hoc.tich-phan-mat.thong-luong",
+        "math.dai-hoc.giai-tich-vecto.divergence"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "định lí Divergence",
+        "tính divergence",
+        "tích phân ba trong toạ độ cầu"
+      ],
+      "hints": [
+        "div F chỉ phụ thuộc rho^2.",
+        "Tích phân của sin phi trên [0; pi] bằng 2."
+      ],
+      "tags": [
+        "multivariable",
+        "divergence",
+        "tich-phan-mat"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0031",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Stokes",
+      "type": "dien-so",
+      "statement_vi": "Cho trường F = (y; z; x). Gọi C là biên của tam giác có ba đỉnh (1; 0; 0), (0; 1; 0), (0; 0; 1), định hướng ngược chiều kim đồng hồ khi nhìn từ phía trục Oz dương. Dùng định lí Stokes tính lưu số của F dọc C.",
+      "statement_en": "Let F = (y, z, x) and let C be the boundary of the triangle with vertices (1,0,0), (0,1,0), (0,0,1), oriented counterclockwise when viewed from the positive z direction. Use Stokes' theorem to find the circulation of F along C.",
+      "answer": "-3/2 = -1,5",
+      "answer_numeric": -1.5,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Định lí Stokes đổi lưu số theo chu tuyến thành thông lượng của rota qua mặt căng trên chu tuyến đó; chọn mặt phẳng chứa tam giác là đơn giản nhất.",
+          "latex": "\\oint_{C} \\vec{F}\\cdot d\\vec{r} = \\iint_{S} \\operatorname{rot}\\vec{F}\\cdot\\vec{n}\\,dS"
+        },
+        {
+          "explain": "Tính rota bằng định thức hình thức; với F = (y; z; x) mỗi thành phần cho -1.",
+          "latex": "\\operatorname{rot}\\vec{F} = \\left(\\frac{\\partial x}{\\partial y} - \\frac{\\partial z}{\\partial z},\\ \\frac{\\partial y}{\\partial z} - \\frac{\\partial x}{\\partial x},\\ \\frac{\\partial z}{\\partial x} - \\frac{\\partial y}{\\partial y}\\right) = (-1, -1, -1)"
+        },
+        {
+          "explain": "Tam giác nằm trên mặt phẳng x + y + z = 1 nên pháp tuyến đơn vị cùng chiều dương là (1;1;1)/căn 3.",
+          "latex": "\\vec{n} = \\frac{1}{\\sqrt{3}}(1, 1, 1),\\qquad \\operatorname{rot}\\vec{F}\\cdot\\vec{n} = \\frac{-3}{\\sqrt{3}} = -\\sqrt{3}"
+        },
+        {
+          "explain": "Diện tích tam giác đều cạnh căn 2 bằng căn 3 chia 2; nhân với giá trị hằng số của tích vô hướng.",
+          "latex": "S = \\frac{\\sqrt{3}}{2} \\Rightarrow \\oint_{C} \\vec{F}\\cdot d\\vec{r} = -\\sqrt{3} \\cdot \\frac{\\sqrt{3}}{2} = -\\frac{3}{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-mat.cong-thuc-stokes",
+        "math.dai-hoc.giai-tich-vecto.rotation",
+        "math.dai-hoc.giai-tich-vecto.luu-so"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "định lí Stokes",
+        "tính rota",
+        "xác định pháp tuyến và diện tích mặt phẳng"
+      ],
+      "hints": [
+        "Tam giác nằm trên mặt phẳng x + y + z = 1.",
+        "Tích vô hướng rot F với pháp tuyến là hằng số nên chỉ cần nhân với diện tích."
+      ],
+      "tags": [
+        "multivariable",
+        "stokes",
+        "giai-tich-vecto"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0032",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Điều kiện Cauchy - Riemann",
+      "type": "dien-so",
+      "statement_vi": "Cho f(z) = x^2 + a*y^2 + i*b*x*y, với z = x + i*y và a, b là hằng số thực. Tìm a và b để f giải tích trên toàn mặt phẳng phức, rồi nhập giá trị của a + b.",
+      "statement_en": "Let f(z) = x^2 + a y^2 + i b x y with z = x + iy and real constants a, b. Find a and b making f entire, then report a + b.",
+      "answer": "a = -1, b = 2 nên a + b = 1",
+      "answer_numeric": 1.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Tách phần thực và phần ảo, vì hệ Cauchy - Riemann phát biểu qua các đạo hàm riêng của u và v.",
+          "latex": "u(x, y) = x^{2} + ay^{2},\\qquad v(x, y) = bxy"
+        },
+        {
+          "explain": "Viết phương trình Cauchy - Riemann thứ nhất: u_x = v_y.",
+          "latex": "u_x = 2x,\\quad v_y = bx \\Rightarrow 2x = bx\\ \\forall x \\Rightarrow b = 2"
+        },
+        {
+          "explain": "Viết phương trình Cauchy - Riemann thứ hai để xác định nốt hằng số a; cần cả hai phương trình vì mỗi phương trình chỉ ràng buộc được một hằng số.",
+          "latex": "u_y = 2ay,\\quad -v_x = -by = -2y \\Rightarrow 2a = -2 \\Rightarrow a = -1"
+        },
+        {
+          "explain": "Kiểm chứng: với a = -1, b = 2 thì f = x^2 - y^2 + 2ixy = z^2, đúng là hàm nguyên. Vậy a + b = 1.",
+          "latex": "f(z) = z^{2},\\qquad a + b = -1 + 2 = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.phuong-trinh-cauchy-riemann",
+        "math.dai-hoc.giai-tich-phuc.dao-ham-phuc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "hệ Cauchy - Riemann",
+        "nhận diện hàm giải tích",
+        "tách phần thực phần ảo"
+      ],
+      "hints": [
+        "Viết u và v rồi so sánh bốn đạo hàm riêng.",
+        "Kết quả cuối cùng nên là một hàm quen thuộc của z."
+      ],
+      "tags": [
+        "complex-analysis",
+        "cauchy-riemann"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0033",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hàm điều hoà liên hợp",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho u(x, y) = x^2 - y^2 + 2x là phần thực của một hàm giải tích. Hàm điều hoà liên hợp v(x, y) (sai khác hằng số) là hàm nào?",
+      "statement_en": "Let u(x, y) = x^2 - y^2 + 2x be the real part of an analytic function. Which is its harmonic conjugate v(x, y) (up to a constant)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2xy - 2y",
+          "why_wrong": "Sai dấu ở số hạng tuyến tính do dùng v_x = u_y thay vì v_x = -u_y."
+        },
+        {
+          "key": "B",
+          "text": "2xy + 2y",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "x^{2} + y^{2} + 2y",
+          "why_wrong": "Máy móc đổi dấu số hạng y^2 và thay x bởi y ở số hạng bậc nhất của u. Hàm này thậm chí không điều hoà (Laplace bằng 2 + 2 = 4 khác 0) nên không thể là phần ảo của một hàm giải tích."
+        },
+        {
+          "key": "D",
+          "text": "2xy + 2x",
+          "why_wrong": "Lấy nguyên hàm theo nhầm biến: v_y = 2x + 2 phải cho số hạng 2y chứ không phải 2x."
+        }
+      ],
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra u điều hoà trước, vì chỉ hàm điều hoà mới có liên hợp điều hoà.",
+          "latex": "u_{xx} + u_{yy} = 2 + (-2) = 0"
+        },
+        {
+          "explain": "Dùng phương trình Cauchy - Riemann thứ nhất để tìm v theo y: v_y = u_x.",
+          "latex": "v_y = u_x = 2x + 2 \\Rightarrow v = 2xy + 2y + \\varphi(x)"
+        },
+        {
+          "explain": "Dùng phương trình thứ hai để xác định phần còn lại: v_x = -u_y.",
+          "latex": "v_x = 2y + \\varphi'(x) = -u_y = 2y \\Rightarrow \\varphi'(x) = 0"
+        },
+        {
+          "explain": "Vậy v = 2xy + 2y + C; hàm giải tích tương ứng là f(z) = z^2 + 2z.",
+          "latex": "f(z) = u + iv = z^{2} + 2z + iC"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.ham-dieu-hoa-lien-hop",
+        "math.dai-hoc.giai-tich-phuc.phuong-trinh-cauchy-riemann"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "hàm điều hoà",
+        "hàm điều hoà liên hợp",
+        "khôi phục hàm giải tích"
+      ],
+      "hints": [
+        "Dùng v_y = u_x rồi v_x = -u_y.",
+        "Kết quả phải cho f(z) là một đa thức theo z."
+      ],
+      "tags": [
+        "complex-analysis",
+        "cauchy-riemann",
+        "ham-dieu-hoa"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0034",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công thức tích phân Cauchy",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân vòng theo đường tròn |z| = 2 (chiều dương) của hàm z / ((z - 1)(z - 3)) dz. Kết quả có dạng k*pi*i. Nhập giá trị k.",
+      "statement_en": "Evaluate the contour integral over |z| = 2 (positive orientation) of z/((z-1)(z-3)) dz. The result has the form k*pi*i. Report k.",
+      "answer": "k = -1 (tích phân bằng -pi*i)",
+      "answer_numeric": -1.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Xác định các điểm kì dị và xem điểm nào nằm trong chu tuyến; đây là bước quyết định vì công thức Cauchy chỉ áp dụng cho cực điểm bên trong.",
+          "latex": "z = 1\\ (|1| < 2,\\ \\text{bên trong}),\\qquad z = 3\\ (|3| > 2,\\ \\text{bên ngoài})"
+        },
+        {
+          "explain": "Tách hàm thành dạng chuẩn của công thức tích phân Cauchy: một hàm giải tích trong đĩa chia cho (z - z0).",
+          "latex": "\\frac{z}{(z-1)(z-3)} = \\frac{g(z)}{z - 1},\\qquad g(z) = \\frac{z}{z - 3}"
+        },
+        {
+          "explain": "Hàm g giải tích trong và trên |z| = 2 vì điểm kì dị duy nhất của nó là z = 3 nằm ngoài; áp dụng công thức Cauchy.",
+          "latex": "\\oint_{|z|=2} \\frac{g(z)}{z-1}\\,dz = 2\\pi i\\,g(1)"
+        },
+        {
+          "explain": "Thay giá trị g(1) vào công thức Cauchy để có kết quả tích phân và hệ số k cần tìm.",
+          "latex": "g(1) = \\frac{1}{1-3} = -\\frac{1}{2} \\Rightarrow \\oint = 2\\pi i \\cdot \\left(-\\frac{1}{2}\\right) = -\\pi i \\Rightarrow k = -1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.cong-thuc-tich-phan-cauchy",
+        "math.dai-hoc.giai-tich-phuc.dinh-li-cauchy-goursat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "công thức tích phân Cauchy",
+        "xác định cực điểm trong chu tuyến",
+        "tách hàm về dạng chuẩn"
+      ],
+      "hints": [
+        "Chỉ có một điểm kì dị nằm trong |z| = 2.",
+        "Đưa về dạng g(z)/(z - 1) với g giải tích."
+      ],
+      "tags": [
+        "complex-analysis",
+        "tich-phan-cauchy"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0035",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công thức tích phân Cauchy cho đạo hàm",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân vòng theo đường tròn |z| = 1 (chiều dương) của e^(2z) / z^4 dz. Kết quả có dạng k*pi*i. Nhập k (4 chữ số thập phân).",
+      "statement_en": "Evaluate the contour integral over |z| = 1 (positive orientation) of e^(2z)/z^4 dz. The result has the form k*pi*i. Report k to four decimals.",
+      "answer": "k = 8/3 ≈ 2,6667",
+      "answer_numeric": 2.6667,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Nhận dạng: mẫu số là luỹ thừa bậc 4 của (z - 0) nên phải dùng công thức Cauchy cho ĐẠO HÀM chứ không phải công thức Cauchy cơ bản.",
+          "latex": "\\oint_{C} \\frac{g(z)}{(z - z_0)^{n+1}}\\,dz = \\frac{2\\pi i}{n!}\\,g^{(n)}(z_0)"
+        },
+        {
+          "explain": "Đối chiếu: g(z) = e^(2z) là hàm nguyên, z0 = 0, và n + 1 = 4 nên n = 3.",
+          "latex": "g(z) = e^{2z},\\quad z_0 = 0,\\quad n = 3"
+        },
+        {
+          "explain": "Tính đạo hàm cấp ba: mỗi lần lấy đạo hàm sinh thêm thừa số 2.",
+          "latex": "g'''(z) = 8e^{2z} \\Rightarrow g'''(0) = 8"
+        },
+        {
+          "explain": "Thay đạo hàm cấp ba vừa tính cùng với n! = 3! = 6 vào công thức Cauchy cho đạo hàm.",
+          "latex": "\\oint = \\frac{2\\pi i}{6} \\cdot 8 = \\frac{8\\pi i}{3} \\Rightarrow k = \\frac{8}{3} \\approx 2{,}6667"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.cong-thuc-cauchy-cho-dao-ham"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "công thức Cauchy cho đạo hàm",
+        "xác định bậc cực điểm",
+        "đạo hàm cấp cao của hàm mũ"
+      ],
+      "hints": [
+        "Bậc của mẫu là n + 1, hãy tìm n.",
+        "Nhớ chia cho n! trong công thức."
+      ],
+      "tags": [
+        "complex-analysis",
+        "tich-phan-cauchy"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0036",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chuỗi Laurent",
+      "type": "dien-so",
+      "statement_vi": "Khai triển f(z) = 1 / ((z - 1)(z - 2)) thành chuỗi Laurent trong vành khuyên 1 < |z| < 2. Tìm hệ số của z^2 trong khai triển đó.",
+      "statement_en": "Expand f(z) = 1/((z-1)(z-2)) into a Laurent series in the annulus 1 < |z| < 2. Find the coefficient of z^2.",
+      "answer": "-1/8 = -0,125",
+      "answer_numeric": -0.125,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Tách phân thức đơn giản để mỗi số hạng chỉ chứa một điểm kì dị; đây là bước bắt buộc vì mỗi cực điểm cần một cách khai triển khác nhau trong cùng vành khuyên.",
+          "latex": "\\frac{1}{(z-1)(z-2)} = \\frac{1}{z-2} - \\frac{1}{z-1}"
+        },
+        {
+          "explain": "Với |z| < 2 thì |z/2| < 1 nên khai triển 1/(z-2) theo LUỸ THỪA DƯƠNG của z bằng chuỗi hình học.",
+          "latex": "\\frac{1}{z-2} = \\frac{-1}{2}\\cdot\\frac{1}{1 - z/2} = -\\sum_{n \\ge 0} \\frac{z^{n}}{2^{n+1}}"
+        },
+        {
+          "explain": "Với |z| > 1 thì |1/z| < 1 nên phải khai triển 1/(z-1) theo LUỸ THỪA ÂM của z, nếu không chuỗi sẽ phân kì trong vành khuyên này.",
+          "latex": "\\frac{1}{z-1} = \\frac{1}{z}\\cdot\\frac{1}{1 - 1/z} = \\sum_{n \\ge 1} z^{-n}"
+        },
+        {
+          "explain": "Ghép hai chuỗi; hệ số của z^2 chỉ đến từ chuỗi luỹ thừa dương, ứng với n = 2.",
+          "latex": "c_{2} = -\\frac{1}{2^{3}} = -\\frac{1}{8} = -0{,}125"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.chuoi-laurent",
+        "math.dai-hoc.giai-tich-phuc.he-so-laurent"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 9,
+      "skills": [
+        "chuỗi Laurent",
+        "chọn cách khai triển theo vành khuyên",
+        "phân tích phân thức đơn giản"
+      ],
+      "hints": [
+        "Tách thành hiệu hai phân thức bậc nhất.",
+        "Trong vành khuyên, một phân thức khai triển theo z, phân thức kia theo 1/z."
+      ],
+      "tags": [
+        "complex-analysis",
+        "chuoi-laurent"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0037",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Thặng dư tại cực điểm đơn",
+      "type": "dien-so",
+      "statement_vi": "Tính thặng dư của hàm f(z) = z / ((z - 1)(z + 2)) tại điểm z = 1. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Compute the residue of f(z) = z/((z - 1)(z + 2)) at z = 1. Give four decimals.",
+      "answer": "1/3 ≈ 0,3333",
+      "answer_numeric": 0.3333,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Xác định loại điểm kì dị: mẫu số triệt tiêu cấp một tại z = 1 còn tử số khác 0, nên đó là cực điểm ĐƠN.",
+          "latex": "z = 1\\ \\text{là cực điểm đơn vì}\\ (z-1)^{1}\\ \\text{là nhân tử duy nhất}"
+        },
+        {
+          "explain": "Với cực điểm đơn, thặng dư bằng giới hạn của tích (z - z0) với hàm; phép nhân này khử đúng nhân tử gây kì dị.",
+          "latex": "\\operatorname{Res}_{z=1} f = \\lim_{z \\to 1} (z-1)\\,\\frac{z}{(z-1)(z+2)} = \\lim_{z \\to 1} \\frac{z}{z+2}"
+        },
+        {
+          "explain": "Thay z = 1 vào biểu thức đã rút gọn; giới hạn hữu hạn khác 0 xác nhận đúng là cực điểm đơn.",
+          "latex": "\\operatorname{Res}_{z=1} f = \\frac{1}{3} \\approx 0{,}3333"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.thang-du-cuc-don",
+        "math.dai-hoc.giai-tich-phuc.dinh-nghia-thang-du"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "thặng dư tại cực điểm đơn",
+        "phân loại điểm kì dị"
+      ],
+      "hints": [
+        "Nhân với (z - 1) rồi cho z tiến tới 1.",
+        "Đừng lấy thặng dư tại z = -2."
+      ],
+      "tags": [
+        "complex-analysis",
+        "thang-du"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0038",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Thặng dư tại cực điểm bậc cao",
+      "type": "dien-so",
+      "statement_vi": "Tính thặng dư của hàm f(z) = e^z / (z - 1)^3 tại điểm z = 1. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Compute the residue of f(z) = e^z/(z - 1)^3 at z = 1. Give four decimals.",
+      "answer": "e/2 ≈ 1,3591",
+      "answer_numeric": 1.3591,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Xác định bậc cực điểm: mẫu có nhân tử (z - 1) mũ 3 và tử khác 0 tại z = 1, nên đây là cực điểm bậc m = 3.",
+          "latex": "m = 3"
+        },
+        {
+          "explain": "Áp dụng công thức thặng dư cho cực điểm bậc m: nhân với (z - z0)^m để khử kì dị, rồi lấy đạo hàm cấp (m - 1) và chia cho (m - 1)!.",
+          "latex": "\\operatorname{Res}_{z=z_0} f = \\frac{1}{(m-1)!}\\lim_{z \\to z_0} \\frac{d^{m-1}}{dz^{m-1}}\\left[(z - z_0)^{m} f(z)\\right]"
+        },
+        {
+          "explain": "Ở đây tích (z - 1)^3 * f(z) rút gọn thành e^z, một hàm rất dễ lấy đạo hàm.",
+          "latex": "(z-1)^{3} f(z) = e^{z},\\qquad \\frac{d^{2}}{dz^{2}} e^{z} = e^{z}"
+        },
+        {
+          "explain": "Thay z = 1 vào đạo hàm cấp hai rồi chia cho (m - 1)! = 2! = 2 để có thặng dư.",
+          "latex": "\\operatorname{Res}_{z=1} f = \\frac{e}{2} \\approx 1{,}3591"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.thang-du-cuc-bac-m",
+        "math.dai-hoc.giai-tich-phuc.phan-loai-diem-ki-di"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "thặng dư tại cực điểm bậc m",
+        "đạo hàm cấp cao",
+        "xác định bậc cực điểm"
+      ],
+      "hints": [
+        "Bậc cực điểm là 3 nên phải lấy đạo hàm cấp 2.",
+        "Đừng quên chia cho (m - 1)! = 2."
+      ],
+      "tags": [
+        "complex-analysis",
+        "thang-du"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0039",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tính tích phân thực bằng thặng dư",
+      "type": "dien-so",
+      "statement_vi": "Dùng định lí thặng dư, tính tích phân của 1/(2 + cos(t)) với t chạy từ 0 tới 2*pi. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Use the residue theorem to evaluate the integral of 1/(2 + cos t) for t from 0 to 2*pi. Give four decimals.",
+      "answer": "2*pi/căn(3) ≈ 3,6276",
+      "answer_numeric": 3.6276,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Đưa tích phân lượng giác trên một chu kì về tích phân vòng trên đường tròn đơn vị: đây là kĩ thuật chuẩn để dùng được thặng dư.",
+          "latex": "z = e^{it},\\quad \\cos t = \\frac{z + z^{-1}}{2},\\quad dt = \\frac{dz}{iz}"
+        },
+        {
+          "explain": "Thay vào và quy đồng; nhân tử z ở mẫu triệt tiêu bớt làm biểu thức trở thành phân thức hữu tỉ.",
+          "latex": "I = \\oint_{|z|=1} \\frac{1}{2 + \\frac{z + z^{-1}}{2}}\\cdot\\frac{dz}{iz} = \\frac{2}{i}\\oint_{|z|=1} \\frac{dz}{z^{2} + 4z + 1}"
+        },
+        {
+          "explain": "Tìm nghiệm mẫu số và chọn nghiệm nằm trong đường tròn đơn vị; chỉ cực điểm bên trong mới đóng góp thặng dư.",
+          "latex": "z_{1,2} = -2 \\pm \\sqrt{3};\\quad |z_1| = |{-2}+\\sqrt{3}| \\approx 0{,}268 < 1,\\ |z_2| > 1"
+        },
+        {
+          "explain": "Tính thặng dư tại cực điểm đơn z1 rồi áp dụng định lí thặng dư.",
+          "latex": "\\operatorname{Res}_{z_1} = \\frac{1}{z_1 - z_2} = \\frac{1}{2\\sqrt{3}},\\qquad I = \\frac{2}{i}\\cdot 2\\pi i \\cdot \\frac{1}{2\\sqrt{3}} = \\frac{2\\pi}{\\sqrt{3}} \\approx 3{,}6276"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.tich-phan-luong-giac-vong-don-vi",
+        "math.dai-hoc.giai-tich-phuc.dinh-li-thang-du",
+        "math.dai-hoc.giai-tich-phuc.thang-du-cuc-don"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 12,
+      "skills": [
+        "định lí thặng dư",
+        "đổi tích phân lượng giác sang tích phân vòng",
+        "chọn cực điểm trong chu tuyến"
+      ],
+      "hints": [
+        "Đặt z = e^(it) và biểu diễn cos t qua z.",
+        "Chỉ một trong hai nghiệm của z^2 + 4z + 1 nằm trong đĩa đơn vị."
+      ],
+      "tags": [
+        "complex-analysis",
+        "thang-du",
+        "tich-phan-thuc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0040",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phương trình vi phân tuyến tính cấp một",
+      "type": "dien-so",
+      "statement_vi": "Giải bài toán Cauchy y' + 2y = e^(-x) với y(0) = 3, rồi tính y(1). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Solve the initial value problem y' + 2y = e^(-x), y(0) = 3, then compute y(1). Give four decimals.",
+      "answer": "y(1) = e^(-1) + 2e^(-2) ≈ 0,6386",
+      "answer_numeric": 0.6386,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Nhận dạng phương trình tuyến tính cấp một và lập thừa số tích phân, vì nhân với nó sẽ biến vế trái thành đạo hàm của một tích.",
+          "latex": "\\mu(x) = e^{\\int 2\\,dx} = e^{2x}"
+        },
+        {
+          "explain": "Nhân hai vế với thừa số tích phân; vế trái gộp lại thành đạo hàm của y*mu.",
+          "latex": "\\left(y e^{2x}\\right)' = e^{2x}e^{-x} = e^{x}"
+        },
+        {
+          "explain": "Lấy nguyên hàm hai vế rồi chia cho thừa số tích phân để rút y; hằng số C sinh ra ở đây sẽ do điều kiện đầu quyết định.",
+          "latex": "y e^{2x} = e^{x} + C \\Rightarrow y = e^{-x} + Ce^{-2x}"
+        },
+        {
+          "explain": "Dùng điều kiện đầu y(0) = 3 để xác định C, biến nghiệm tổng quát thành nghiệm duy nhất của bài toán Cauchy.",
+          "latex": "y(0) = 1 + C = 3 \\Rightarrow C = 2 \\Rightarrow y = e^{-x} + 2e^{-2x}"
+        },
+        {
+          "explain": "Thay x = 1 vào nghiệm riêng vừa tìm được để trả lời đúng câu hỏi của đề.",
+          "latex": "y(1) = e^{-1} + 2e^{-2} \\approx 0{,}3679 + 0{,}2707 = 0{,}6386"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-1.tuyen-tinh-cap-mot",
+        "math.dai-hoc.ptvp-cap-1.thua-so-tich-phan-tuyen-tinh",
+        "math.dai-hoc.ptvp-cap-1.bai-toan-cauchy"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "thừa số tích phân",
+        "phương trình tuyến tính cấp một",
+        "bài toán Cauchy"
+      ],
+      "hints": [
+        "Thừa số tích phân là e mũ tích phân của hệ số của y.",
+        "Sau khi nhân, vế trái là đạo hàm của một tích."
+      ],
+      "tags": [
+        "ode",
+        "ptvp-cap-1",
+        "bai-toan-cauchy"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0041",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phương trình Bernoulli",
+      "type": "dien-so",
+      "statement_vi": "Giải bài toán Cauchy y' = y - y^2 với y(0) = 1/2, rồi tính y(1). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Solve the initial value problem y' = y - y^2, y(0) = 1/2, then compute y(1). Give four decimals.",
+      "answer": "y(1) = 1/(1 + e^(-1)) ≈ 0,7311",
+      "answer_numeric": 0.7311,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Viết lại về dạng chuẩn của phương trình Bernoulli với số mũ n = 2; nhận dạng đúng dạng là bước quyết định cách giải.",
+          "latex": "y' - y = -y^{2},\\qquad n = 2"
+        },
+        {
+          "explain": "Chia hai vế cho y^n = y^2 để chuẩn bị cho phép thế; phép chia hợp lệ vì y(0) khác 0 nên nghiệm không đồng nhất bằng 0.",
+          "latex": "\\frac{y'}{y^{2}} - \\frac{1}{y} = -1"
+        },
+        {
+          "explain": "Đặt u = y^(1-n) = 1/y; khi đó u' = -y'/y^2, biến phương trình phi tuyến thành tuyến tính.",
+          "latex": "u = \\frac{1}{y} \\Rightarrow u' = -\\frac{y'}{y^{2}} \\Rightarrow -u' - u = -1 \\iff u' + u = 1"
+        },
+        {
+          "explain": "Giải phương trình tuyến tính bằng thừa số tích phân e^x rồi trở về biến y.",
+          "latex": "u = 1 + Ce^{-x};\\quad u(0) = 2 \\Rightarrow C = 1 \\Rightarrow y = \\frac{1}{1 + e^{-x}}"
+        },
+        {
+          "explain": "Thay x = 1 vào nghiệm (đây chính là hàm logistic).",
+          "latex": "y(1) = \\frac{1}{1 + e^{-1}} \\approx 0{,}7311"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-1.bernoulli",
+        "math.dai-hoc.ptvp-cap-1.tuyen-tinh-cap-mot"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 9,
+      "skills": [
+        "phương trình Bernoulli",
+        "phép thế u = y^(1-n)",
+        "thừa số tích phân"
+      ],
+      "hints": [
+        "Đây là phương trình Bernoulli với n = 2.",
+        "Phép thế u = 1/y đưa về phương trình tuyến tính."
+      ],
+      "tags": [
+        "ode",
+        "ptvp-cap-1",
+        "bernoulli"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0042",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phương trình vi phân toàn phần",
+      "type": "dien-so",
+      "statement_vi": "Giải phương trình (2xy + 3)dx + (x^2 - 1)dy = 0 với điều kiện y(1) = 2, rồi tính y(2).",
+      "statement_en": "Solve (2xy + 3)dx + (x^2 - 1)dy = 0 with y(1) = 2, then compute y(2).",
+      "answer": "y(2) = -1",
+      "answer_numeric": -1.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra điều kiện phương trình vi phân toàn phần: đạo hàm chéo phải trùng nhau, nếu không sẽ phải tìm thừa số tích phân.",
+          "latex": "M = 2xy + 3,\\ N = x^{2} - 1;\\quad \\frac{\\partial M}{\\partial y} = 2x = \\frac{\\partial N}{\\partial x}"
+        },
+        {
+          "explain": "Tìm hàm thế F bằng cách lấy nguyên hàm M theo x, hằng số tích phân là một hàm của y.",
+          "latex": "F(x, y) = \\int (2xy + 3)\\,dx = x^{2}y + 3x + \\varphi(y)"
+        },
+        {
+          "explain": "Đạo hàm F theo y và đối chiếu với N để xác định phi(y).",
+          "latex": "F_y = x^{2} + \\varphi'(y) = x^{2} - 1 \\Rightarrow \\varphi(y) = -y"
+        },
+        {
+          "explain": "Nghiệm tổng quát là F = C; dùng điều kiện đầu để tìm C.",
+          "latex": "x^{2}y + 3x - y = C;\\quad y(1) = 2 \\Rightarrow 2 + 3 - 2 = 3 \\Rightarrow C = 3"
+        },
+        {
+          "explain": "Thay x = 2 rồi giải phương trình bậc nhất theo y.",
+          "latex": "4y + 6 - y = 3 \\Rightarrow 3y = -3 \\Rightarrow y(2) = -1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-1.phuong-trinh-vi-phan-toan-phan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "phương trình vi phân toàn phần",
+        "kiểm tra đạo hàm chéo",
+        "khôi phục hàm thế"
+      ],
+      "hints": [
+        "Kiểm tra dM/dy = dN/dx trước khi giải.",
+        "Nguyên hàm theo x còn thiếu một hàm chỉ phụ thuộc y."
+      ],
+      "tags": [
+        "ode",
+        "ptvp-cap-1",
+        "vi-phan-toan-phan"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0043",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phương trình vi phân tuyến tính cấp hai hệ số hằng",
+      "type": "dien-so",
+      "statement_vi": "Giải bài toán y'' - 4y' + 13y = 0 với y(0) = 1, y'(0) = 2, rồi tính y(1). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Solve y'' - 4y' + 13y = 0 with y(0) = 1, y'(0) = 2, then compute y(1). Give four decimals.",
+      "answer": "y(1) = e^2 * cos(3) ≈ -7,3151",
+      "answer_numeric": -7.3151,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Lập phương trình đặc trưng vì phương trình thuần nhất hệ số hằng luôn có nghiệm dạng hàm mũ.",
+          "latex": "r^{2} - 4r + 13 = 0"
+        },
+        {
+          "explain": "Giải phương trình bậc hai; biệt thức âm nên nghiệm là cặp phức liên hợp, dẫn tới nghiệm dao động tắt dần hoặc tăng dần.",
+          "latex": "\\Delta = 16 - 52 = -36 \\Rightarrow r = 2 \\pm 3i"
+        },
+        {
+          "explain": "Viết nghiệm tổng quát dạng thực: phần thực của nghiệm cho hệ số mũ, phần ảo cho tần số.",
+          "latex": "y = e^{2x}\\left(A\\cos 3x + B\\sin 3x\\right)"
+        },
+        {
+          "explain": "Áp điều kiện đầu: y(0) cho A ngay, còn y'(0) cần đạo hàm tích.",
+          "latex": "A = 1;\\quad y'(0) = 2A + 3B = 2 \\Rightarrow B = 0"
+        },
+        {
+          "explain": "Nghiệm riêng và giá trị tại x = 1 (chú ý cos 3 tính theo radian và âm).",
+          "latex": "y = e^{2x}\\cos 3x,\\qquad y(1) = e^{2}\\cos 3 \\approx -7{,}3151"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-2.phuong-trinh-dac-trung",
+        "math.dai-hoc.ptvp-cap-2.nghiem-phuc",
+        "math.dai-hoc.ptvp-cap-2.cau-truc-nghiem-thuan-nhat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "phương trình đặc trưng",
+        "nghiệm phức liên hợp",
+        "áp điều kiện đầu"
+      ],
+      "hints": [
+        "Biệt thức âm nên nghiệm đặc trưng là số phức.",
+        "Nhớ đạo hàm tích khi áp điều kiện y'(0)."
+      ],
+      "tags": [
+        "ode",
+        "ptvp-cap-2"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0044",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Cộng hưởng và phương pháp hệ số bất định",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho phương trình y'' + 4y = cos(2x). Dạng nghiệm riêng đúng để dùng phương pháp hệ số bất định là dạng nào?",
+      "statement_en": "For y'' + 4y = cos(2x), which is the correct trial form of a particular solution for the method of undetermined coefficients?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "y_p = A\\cos 2x + B\\sin 2x",
+          "why_wrong": "Dạng này chính là nghiệm thuần nhất nên thay vào cho vế trái bằng 0, không bao giờ khớp được cos(2x)."
+        },
+        {
+          "key": "B",
+          "text": "y_p = x\\left(A\\cos 2x + B\\sin 2x\\right)",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "y_p = Ax\\cos 2x",
+          "why_wrong": "Thiếu số hạng sin nên hệ phương trình hệ số bất định vô nghiệm; phải giữ đủ cả cos và sin."
+        },
+        {
+          "key": "D",
+          "text": "y_p = Ae^{2x}",
+          "why_wrong": "Nhầm nghiệm đặc trưng phức 2i thành số thực 2; vế phải là hàm lượng giác chứ không phải hàm mũ."
+        }
+      ],
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Giải phương trình thuần nhất trước, vì phải biết nghiệm thuần nhất mới phát hiện được cộng hưởng.",
+          "latex": "r^{2} + 4 = 0 \\Rightarrow r = \\pm 2i \\Rightarrow y_h = C_1\\cos 2x + C_2\\sin 2x"
+        },
+        {
+          "explain": "So sánh vế phải với nghiệm thuần nhất: cos(2x) ĐÃ nằm trong nghiệm thuần nhất nên dạng thử thông thường sẽ cho vế trái bằng 0, không thể khớp vế phải.",
+          "latex": "\\text{tần số cưỡng bức } \\omega = 2 = \\text{tần số riêng} \\Rightarrow \\text{cộng hưởng}"
+        },
+        {
+          "explain": "Quy tắc nhân x: khi trùng nghiệm thuần nhất, nhân dạng thử với x mũ đúng bằng bội của nghiệm đặc trưng (ở đây bội 1).",
+          "latex": "y_p = x\\left(A\\cos 2x + B\\sin 2x\\right)"
+        },
+        {
+          "explain": "Thay vào phương trình để tìm hệ số, xác nhận dạng thử là đúng.",
+          "latex": "y_p'' + 4y_p = -4A\\sin 2x + 4B\\cos 2x = \\cos 2x \\Rightarrow A = 0,\\ B = \\frac{1}{4}"
+        },
+        {
+          "explain": "Nghiệm riêng có biên độ tăng tuyến tính theo x, đúng bản chất của hiện tượng cộng hưởng.",
+          "latex": "y_p = \\frac{x}{4}\\sin 2x"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-2.he-so-bat-dinh-luong-giac",
+        "math.dai-hoc.ptvp-cap-2.cong-huong",
+        "math.dai-hoc.ptvp-cap-2.cau-truc-nghiem-khong-thuan-nhat"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "hệ số bất định",
+        "phát hiện cộng hưởng",
+        "quy tắc nhân x khi trùng nghiệm thuần nhất"
+      ],
+      "hints": [
+        "Giải phần thuần nhất trước.",
+        "Nếu vế phải trùng nghiệm thuần nhất thì phải nhân thêm x."
+      ],
+      "tags": [
+        "ode",
+        "ptvp-cap-2",
+        "cong-huong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0045",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Biến đổi Laplace",
+      "type": "trac-nghiem",
+      "statement_vi": "Tìm ảnh Laplace của hàm gốc f(t) = t^2 * e^(-3t).",
+      "statement_en": "Find the Laplace transform of f(t) = t^2 e^(-3t).",
+      "choices": [
+        {
+          "key": "A",
+          "text": "\\frac{2}{(s+3)^{3}}",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "\\frac{2}{s^{3}}",
+          "why_wrong": "Quên áp dụng định lí dịch chuyển ứng với thừa số e^(-3t)."
+        },
+        {
+          "key": "C",
+          "text": "\\frac{1}{(s+3)^{3}}",
+          "why_wrong": "Quên hệ số 2! = 2 trong công thức ảnh của t^n."
+        },
+        {
+          "key": "D",
+          "text": "\\frac{2}{(s-3)^{3}}",
+          "why_wrong": "Dịch chuyển sai chiều: e^(-3t) làm s tăng thêm 3 chứ không giảm."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Bắt đầu từ ảnh của luỹ thừa, đây là công thức nền để dùng định lí dịch chuyển.",
+          "latex": "\\mathcal{L}\\{t^{n}\\} = \\frac{n!}{s^{n+1}} \\Rightarrow \\mathcal{L}\\{t^{2}\\} = \\frac{2}{s^{3}}"
+        },
+        {
+          "explain": "Áp dụng định lí dịch chuyển ảnh: nhân hàm gốc với e^(at) tương ứng với thay s bởi s - a trong ảnh; ở đây a = -3.",
+          "latex": "\\mathcal{L}\\{e^{at}f(t)\\} = F(s - a)"
+        },
+        {
+          "explain": "Thay s bởi s + 3 theo định lí dịch chuyển; miền hội tụ của ảnh cũng dịch sang trái tương ứng.",
+          "latex": "\\mathcal{L}\\{t^{2}e^{-3t}\\} = \\frac{2}{(s + 3)^{3}},\\qquad s > -3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.anh-cua-luy-thua",
+        "math.dai-hoc.bien-doi-laplace.dinh-li-dich-chuyen"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "ảnh của luỹ thừa",
+        "định lí dịch chuyển ảnh"
+      ],
+      "hints": [
+        "Bắt đầu từ ảnh của t^2.",
+        "Nhân e^(at) ở gốc tương ứng phép tịnh tiến biến s."
+      ],
+      "tags": [
+        "laplace",
+        "bien-doi-laplace"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0046",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải phương trình vi phân bằng biến đổi Laplace",
+      "type": "dien-so",
+      "statement_vi": "Dùng biến đổi Laplace giải bài toán y' + 2y = 6 với y(0) = 0, rồi tính y(1). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Use the Laplace transform to solve y' + 2y = 6 with y(0) = 0, then compute y(1). Give four decimals.",
+      "answer": "y(1) = 3(1 - e^(-2)) ≈ 2,5940",
+      "answer_numeric": 2.594,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Lấy ảnh Laplace hai vế; công thức ảnh của đạo hàm biến phương trình vi phân thành phương trình đại số, đó là toàn bộ sức mạnh của phương pháp.",
+          "latex": "\\mathcal{L}\\{y'\\} = sY(s) - y(0) = sY(s)"
+        },
+        {
+          "explain": "Ảnh của hằng số 6 là 6/s; ghép lại thành phương trình đại số theo Y(s).",
+          "latex": "sY + 2Y = \\frac{6}{s} \\Rightarrow Y(s) = \\frac{6}{s(s + 2)}"
+        },
+        {
+          "explain": "Phân tích thành phân thức đơn giản để tra bảng ảnh ngược.",
+          "latex": "\\frac{6}{s(s+2)} = \\frac{3}{s} - \\frac{3}{s + 2}"
+        },
+        {
+          "explain": "Lấy ảnh ngược từng số hạng: 1/s cho hằng số 1, 1/(s+2) cho e^(-2t).",
+          "latex": "y(t) = 3 - 3e^{-2t} = 3\\left(1 - e^{-2t}\\right)"
+        },
+        {
+          "explain": "Thay t = 1 vào nghiệm; giá trị tiến dần tới trạng thái dừng y = 3 khi t lớn, phù hợp với trực giác vật lí.",
+          "latex": "y(1) = 3\\left(1 - e^{-2}\\right) \\approx 2{,}5940"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.giai-ptvp",
+        "math.dai-hoc.bien-doi-laplace.anh-cua-dao-ham",
+        "math.dai-hoc.bien-doi-laplace.anh-ham-mu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "ảnh của đạo hàm",
+        "phân tích phân thức đơn giản",
+        "ảnh ngược Laplace"
+      ],
+      "hints": [
+        "Ảnh của y' là sY - y(0).",
+        "Tách 6/(s(s+2)) thành hai phân thức."
+      ],
+      "tags": [
+        "laplace",
+        "ode",
+        "bai-toan-cauchy"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0047",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí trễ trong biến đổi Laplace",
+      "type": "dien-so",
+      "statement_vi": "Tìm hàm gốc f(t) có ảnh Laplace F(s) = e^(-2s) / s^2, rồi tính f(5).",
+      "statement_en": "Find the original function f(t) whose Laplace transform is F(s) = e^(-2s)/s^2, then compute f(5).",
+      "answer": "f(5) = 3",
+      "answer_numeric": 3.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Tách phần không có hàm mũ để tra bảng: 1/s^2 là ảnh của hàm t.",
+          "latex": "\\mathcal{L}^{-1}\\left\\{\\frac{1}{s^{2}}\\right\\} = t"
+        },
+        {
+          "explain": "Nhân tử e^(-2s) là dấu hiệu của định lí trễ: nó tương ứng với việc dịch hàm gốc sang phải 2 đơn vị và tắt hoàn toàn trước thời điểm đó.",
+          "latex": "\\mathcal{L}^{-1}\\left\\{e^{-as}F(s)\\right\\} = u(t - a)\\,f(t - a)"
+        },
+        {
+          "explain": "Áp dụng định lí trễ với a = 2 và hàm gốc f(t) = t; hàm bậc thang bảo đảm nghiệm bằng 0 trước thời điểm t = 2.",
+          "latex": "f(t) = u(t - 2)(t - 2)"
+        },
+        {
+          "explain": "Tại t = 5 ta có t > 2 nên hàm bậc thang bằng 1, chỉ còn lại phần tuyến tính đã bị dịch chuyển.",
+          "latex": "f(5) = 1 \\cdot (5 - 2) = 3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.dinh-li-tre",
+        "math.dai-hoc.bien-doi-laplace.anh-cua-luy-thua",
+        "math.dai-hoc.bien-doi-laplace.anh-cua-hang-so"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "định lí trễ",
+        "hàm bậc thang đơn vị",
+        "ảnh ngược Laplace"
+      ],
+      "hints": [
+        "e^(-as) trong ảnh tương ứng với dịch chuyển gốc.",
+        "Nhớ nhân thêm hàm bậc thang u(t - 2)."
+      ],
+      "tags": [
+        "laplace",
+        "ham-bac-thang"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0048",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chuỗi Fourier",
+      "type": "dien-so",
+      "statement_vi": "Khai triển hàm f(x) = x trên khoảng (-pi; pi) thành chuỗi Fourier (thác triển tuần hoàn chu kì 2*pi). Tính hệ số b_3. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Expand f(x) = x on (-pi, pi) into a Fourier series (2*pi-periodic extension). Compute the coefficient b_3. Give four decimals.",
+      "answer": "b_3 = 2/3 ≈ 0,6667",
+      "answer_numeric": 0.6667,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Nhận xét f là hàm LẺ trên khoảng đối xứng, nên mọi hệ số cosin bằng 0 và chỉ còn chuỗi sin; nhận xét này tiết kiệm một nửa khối lượng tính toán.",
+          "latex": "a_0 = a_n = 0,\\qquad b_n = \\frac{2}{\\pi}\\int_{0}^{\\pi} x\\sin(nx)\\,dx"
+        },
+        {
+          "explain": "Tính tích phân từng phần với u = x, dv = sin(nx)dx; số hạng biên cho đóng góp chính vì cos(n*pi) = (-1)^n.",
+          "latex": "\\int_{0}^{\\pi} x\\sin(nx)\\,dx = \\left[-\\frac{x\\cos nx}{n}\\right]_{0}^{\\pi} + \\frac{1}{n}\\int_{0}^{\\pi}\\cos nx\\,dx = -\\frac{\\pi(-1)^{n}}{n}"
+        },
+        {
+          "explain": "Nhân hệ số 2/pi để có công thức tổng quát cho b_n.",
+          "latex": "b_n = \\frac{2}{\\pi}\\cdot\\left(-\\frac{\\pi(-1)^{n}}{n}\\right) = \\frac{2(-1)^{n+1}}{n}"
+        },
+        {
+          "explain": "Thay n = 3 vào công thức tổng quát; số mũ (-1)^4 bằng 1 nên hệ số mang dấu dương.",
+          "latex": "b_3 = \\frac{2(-1)^{4}}{3} = \\frac{2}{3} \\approx 0{,}6667"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-fourier.he-so-tren-doan-pi",
+        "math.dai-hoc.chuoi-fourier.chuoi-ham-le"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "hệ số Fourier",
+        "khai thác tính chẵn lẻ",
+        "tích phân từng phần"
+      ],
+      "hints": [
+        "Hàm lẻ chỉ có chuỗi sin.",
+        "Tích phân từng phần với u = x."
+      ],
+      "tags": [
+        "fourier",
+        "chuoi-fourier"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0049",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chuỗi Fourier và tổng chuỗi số",
+      "type": "dien-so",
+      "statement_vi": "Khai triển f(x) = |x| trên đoạn [-pi; pi] thành chuỗi Fourier rồi thay x = 0 để tính tổng của chuỗi 1 + 1/3^2 + 1/5^2 + ... (tổng nghịch đảo bình phương các số lẻ). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Expand f(x) = |x| on [-pi, pi] into a Fourier series, then set x = 0 to evaluate the sum of reciprocals of squares of odd numbers. Give four decimals.",
+      "answer": "pi^2/8 ≈ 1,2337",
+      "answer_numeric": 1.2337,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Hàm |x| CHẴN trên đoạn đối xứng nên mọi hệ số sin bằng 0; chỉ cần tính a_0 và a_n.",
+          "latex": "a_0 = \\frac{2}{\\pi}\\int_{0}^{\\pi} x\\,dx = \\pi"
+        },
+        {
+          "explain": "Tính a_n bằng tích phân từng phần; số hạng biên triệt tiêu và phần còn lại cho (-1)^n - 1, nên chỉ n LẺ mới đóng góp.",
+          "latex": "a_n = \\frac{2}{\\pi}\\int_{0}^{\\pi} x\\cos(nx)\\,dx = \\frac{2\\left((-1)^{n} - 1\\right)}{\\pi n^{2}}"
+        },
+        {
+          "explain": "Viết chuỗi Fourier; với n lẻ hệ số bằng -4/(pi n^2).",
+          "latex": "|x| = \\frac{\\pi}{2} - \\frac{4}{\\pi}\\sum_{k \\ge 1} \\frac{\\cos\\left((2k-1)x\\right)}{(2k-1)^{2}}"
+        },
+        {
+          "explain": "Thay x = 0: hàm liên tục tại 0 nên chuỗi hội tụ đúng về giá trị hàm, cho phép rút ra tổng chuỗi số.",
+          "latex": "0 = \\frac{\\pi}{2} - \\frac{4}{\\pi}\\sum_{k \\ge 1}\\frac{1}{(2k-1)^{2}}"
+        },
+        {
+          "explain": "Giải phương trình vừa lập để rút ra tổng của chuỗi nghịch đảo bình phương các số lẻ.",
+          "latex": "\\sum_{k \\ge 1}\\frac{1}{(2k-1)^{2}} = \\frac{\\pi^{2}}{8} \\approx 1{,}2337"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-fourier.chuoi-ham-chan",
+        "math.dai-hoc.chuoi-fourier.he-so-tren-doan-pi",
+        "math.dai-hoc.chuoi-fourier.dinh-li-dirichlet"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "chuỗi Fourier hàm chẵn",
+        "dùng chuỗi Fourier tính tổng chuỗi số",
+        "định lí Dirichlet"
+      ],
+      "hints": [
+        "|x| là hàm chẵn nên chỉ có chuỗi cosin.",
+        "Thay x = 0, nơi hàm liên tục."
+      ],
+      "tags": [
+        "fourier",
+        "chuoi-fourier",
+        "tong-chuoi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0050",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Dirichlet về hội tụ của chuỗi Fourier",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho hàm tuần hoàn chu kì 2*pi xác định bởi f(x) = -1 khi -pi < x < 0 và f(x) = 1 khi 0 < x < pi. Chuỗi Fourier của f hội tụ về giá trị nào tại x = 0?",
+      "statement_en": "Let f be 2*pi-periodic with f(x) = -1 on (-pi, 0) and f(x) = 1 on (0, pi). To what value does its Fourier series converge at x = 0?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1",
+          "why_wrong": "Lấy giá trị bên phải; chuỗi Fourier không ưu tiên một phía nào tại điểm gián đoạn."
+        },
+        {
+          "key": "B",
+          "text": "-1",
+          "why_wrong": "Lấy giá trị bên trái, mắc cùng sai lầm nhưng ngược phía."
+        },
+        {
+          "key": "C",
+          "text": "0",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "\\frac{1}{2}",
+          "why_wrong": "Nhớ nhầm công thức thành nửa của giới hạn phải thay vì trung bình cộng hai phía."
+        }
+      ],
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra giả thiết Dirichlet: f đơn điệu từng khúc và bị chặn, chỉ có hữu hạn điểm gián đoạn loại một trên mỗi chu kì, nên định lí áp dụng được.",
+          "latex": "f\\ \\text{trơn từng khúc, gián đoạn loại một tại } x = 0"
+        },
+        {
+          "explain": "Định lí Dirichlet khẳng định tại điểm gián đoạn, chuỗi hội tụ về TRUNG BÌNH CỘNG của hai giới hạn một phía chứ không về giá trị hàm.",
+          "latex": "S(x_0) = \\frac{f(x_0^{-}) + f(x_0^{+})}{2}"
+        },
+        {
+          "explain": "Tính hai giới hạn một phía tại điểm gián đoạn, vì đó là hai đại lượng duy nhất mà công thức Dirichlet cần.",
+          "latex": "f(0^{-}) = -1,\\qquad f(0^{+}) = 1"
+        },
+        {
+          "explain": "Lấy trung bình cộng hai giới hạn một phía để có giá trị mà chuỗi Fourier hội tụ tới.",
+          "latex": "S(0) = \\frac{-1 + 1}{2} = 0"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-fourier.dinh-li-dirichlet",
+        "math.dai-hoc.chuoi-fourier.chuoi-ham-le"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định lí Dirichlet",
+        "giới hạn một phía",
+        "hội tụ tại điểm gián đoạn"
+      ],
+      "hints": [
+        "Tại điểm gián đoạn, chuỗi hội tụ về trung bình cộng hai giới hạn một phía.",
+        "Hàm này là hàm lẻ."
+      ],
+      "tags": [
+        "fourier",
+        "dirichlet"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0051",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phương trình truyền nhiệt - tách biến",
+      "type": "dien-so",
+      "statement_vi": "Giải bài toán truyền nhiệt u_t = u_xx trên 0 < x < pi với điều kiện biên u(0, t) = u(pi, t) = 0 và điều kiện đầu u(x, 0) = 3*sin(2x). Tính u(pi/4; 0,25). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Solve the heat equation u_t = u_xx on 0 < x < pi with u(0, t) = u(pi, t) = 0 and u(x, 0) = 3 sin(2x). Compute u(pi/4, 0.25). Give four decimals.",
+      "answer": "3*e^(-1) ≈ 1,1036",
+      "answer_numeric": 1.1036,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Tách biến u = X(x)T(t); điều kiện biên thuần nhất Dirichlet cho bài toán trị riêng với nghiệm sin(nx), n nguyên dương.",
+          "latex": "X_n(x) = \\sin(nx),\\qquad \\lambda_n = n^{2},\\qquad n = 1, 2, \\ldots"
+        },
+        {
+          "explain": "Phần thời gian thoả T' = -n^2 T (với hệ số khuếch tán a = 1), nghiệm là hàm mũ tắt dần; mode càng cao tắt càng nhanh.",
+          "latex": "T_n(t) = e^{-n^{2}t}"
+        },
+        {
+          "explain": "Nghiệm tổng quát là chồng chất các mode; điều kiện đầu chỉ chứa đúng một mode sin(2x) nên chuỗi rút về một số hạng, không cần tính tích phân hệ số.",
+          "latex": "u(x, t) = \\sum_{n \\ge 1} b_n e^{-n^{2}t}\\sin(nx),\\qquad b_2 = 3,\\ b_n = 0\\ (n \\ne 2)"
+        },
+        {
+          "explain": "Viết nghiệm tường minh của bài toán, gồm đúng một mode duy nhất tắt dần theo thời gian.",
+          "latex": "u(x, t) = 3e^{-4t}\\sin(2x)"
+        },
+        {
+          "explain": "Thay x = pi/4 (khi đó sin(pi/2) = 1) và t = 0,25 (khi đó e^(-1)).",
+          "latex": "u\\left(\\frac{\\pi}{4}, 0{,}25\\right) = 3e^{-1} \\approx 1{,}1036"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.pde.truyen-nhiet-tach-bien-dirichlet",
+        "math.dai-hoc.pde.phuong-trinh-truyen-nhiet",
+        "math.dai-hoc.pde.he-so-fourier-bai-toan-nhiet"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 9,
+      "skills": [
+        "tách biến cho phương trình truyền nhiệt",
+        "bài toán trị riêng",
+        "khớp điều kiện đầu"
+      ],
+      "hints": [
+        "Điều kiện đầu đã là một mode riêng nên chuỗi chỉ có một số hạng.",
+        "Hệ số tắt dần là e^(-n^2 t) với n = 2."
+      ],
+      "tags": [
+        "pde",
+        "truyen-nhiet",
+        "tach-bien"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0052",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phương trình sóng - công thức d'Alembert",
+      "type": "dien-so",
+      "statement_vi": "Giải bài toán u_tt = u_xx trên toàn trục thực với u(x, 0) = 0 và u_t(x, 0) = cos(x). Tính u(0; pi/2).",
+      "statement_en": "Solve u_tt = u_xx on the whole line with u(x, 0) = 0 and u_t(x, 0) = cos(x). Compute u(0, pi/2).",
+      "answer": "1",
+      "answer_numeric": 1.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng công thức d'Alembert với vận tốc sóng c = 1; phần dịch chuyển ban đầu bằng 0 nên chỉ còn số hạng tích phân của vận tốc ban đầu.",
+          "latex": "u(x, t) = \\frac{\\varphi(x - ct) + \\varphi(x + ct)}{2} + \\frac{1}{2c}\\int_{x - ct}^{x + ct}\\psi(s)\\,ds"
+        },
+        {
+          "explain": "Thay dữ kiện của bài: dịch chuyển ban đầu bằng 0, vận tốc ban đầu là cos(s) và vận tốc sóng c = 1.",
+          "latex": "u(x, t) = \\frac{1}{2}\\int_{x - t}^{x + t}\\cos s\\,ds = \\frac{\\sin(x+t) - \\sin(x-t)}{2}"
+        },
+        {
+          "explain": "Dùng công thức biến đổi tổng thành tích để có dạng gọn, thể hiện rõ nghiệm là sóng dừng.",
+          "latex": "u(x, t) = \\cos x \\sin t"
+        },
+        {
+          "explain": "Thay x = 0 và t = pi/2 vào nghiệm tường minh vừa rút gọn được.",
+          "latex": "u\\left(0, \\frac{\\pi}{2}\\right) = \\cos 0 \\cdot \\sin\\frac{\\pi}{2} = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.pde.cong-thuc-dalembert",
+        "math.dai-hoc.pde.phuong-trinh-song-1d"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "công thức d'Alembert",
+        "miền phụ thuộc",
+        "biến đổi tổng thành tích"
+      ],
+      "hints": [
+        "Dịch chuyển ban đầu bằng 0 nên chỉ còn tích phân vận tốc.",
+        "sin(x+t) - sin(x-t) = 2 cos x sin t."
+      ],
+      "tags": [
+        "pde",
+        "phuong-trinh-song",
+        "dalembert"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0053",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - phương pháp Newton",
+      "type": "dien-so",
+      "statement_vi": "Dùng phương pháp Newton-Raphson giải f(x) = x^3 - 2x - 5 = 0 với xấp xỉ đầu x_0 = 2. Tính x_2 (sau hai bước lặp). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Use Newton-Raphson on f(x) = x^3 - 2x - 5 = 0 with x_0 = 2. Compute x_2 (after two iterations). Give four decimals.",
+      "answer": "x_2 ≈ 2,0946",
+      "answer_numeric": 2.0946,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Viết công thức lặp Newton: nó là hoành độ giao điểm của tiếp tuyến với trục hoành, nên hội tụ rất nhanh khi đạo hàm không triệt tiêu.",
+          "latex": "x_{k+1} = x_k - \\frac{f(x_k)}{f'(x_k)},\\qquad f'(x) = 3x^{2} - 2"
+        },
+        {
+          "explain": "Bước lặp thứ nhất: tính giá trị hàm và đạo hàm tại xấp xỉ đầu rồi thay vào công thức lặp.",
+          "latex": "f(2) = 8 - 4 - 5 = -1,\\quad f'(2) = 10 \\Rightarrow x_1 = 2 - \\frac{-1}{10} = 2{,}1"
+        },
+        {
+          "explain": "Bước lặp thứ hai: tính lại f và f' tại xấp xỉ mới x1 = 2,1 để chuẩn bị cho công thức lặp.",
+          "latex": "f(2{,}1) = 9{,}261 - 4{,}2 - 5 = 0{,}061,\\quad f'(2{,}1) = 13{,}23 - 2 = 11{,}23"
+        },
+        {
+          "explain": "Áp dụng công thức lặp lần thứ hai; sai số giảm rất nhanh, minh hoạ tốc độ hội tụ bậc hai.",
+          "latex": "x_2 = 2{,}1 - \\frac{0{,}061}{11{,}23} \\approx 2{,}09457"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.phuong-phap-newton-raphson",
+        "math.dai-hoc.giai-tich-so.toc-do-hoi-tu-newton"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "phương pháp Newton-Raphson",
+        "lặp số",
+        "tốc độ hội tụ bậc hai"
+      ],
+      "hints": [
+        "Tính f và f' tại từng bước rồi thay vào công thức lặp.",
+        "x_1 = 2,1 là kết quả trung gian."
+      ],
+      "tags": [
+        "numerical",
+        "newton-raphson"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0054",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - phương pháp chia đôi",
+      "type": "dien-so",
+      "statement_vi": "Dùng phương pháp chia đôi trên đoạn [1; 2] để tìm nghiệm của một phương trình. Cần tối thiểu bao nhiêu bước lặp để bảo đảm sai số tuyệt đối nhỏ hơn 10^(-4)?",
+      "statement_en": "Using bisection on the interval [1, 2], how many iterations are needed at minimum to guarantee absolute error below 10^(-4)?",
+      "answer": "14 bước",
+      "answer_numeric": 14.0,
+      "answer_unit": "",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Sau mỗi bước, độ dài đoạn chứa nghiệm giảm một nửa, nên sai số của điểm giữa bị chặn bởi nửa độ dài đoạn hiện tại.",
+          "latex": "|x_n - x^{*}| \\le \\frac{b - a}{2^{n}} = \\frac{1}{2^{n}}"
+        },
+        {
+          "explain": "Áp đặt yêu cầu sai số rồi lấy logarit cơ số 2; đây là cách chuẩn để đổi bất phương trình mũ thành bất phương trình tuyến tính theo n.",
+          "latex": "\\frac{1}{2^{n}} < 10^{-4} \\iff 2^{n} > 10^{4} \\iff n > \\log_2 10^{4} \\approx 13{,}29"
+        },
+        {
+          "explain": "n phải là số nguyên nên lấy phần nguyên trên; kiểm lại 2^13 = 8192 < 10000 nên 13 bước chưa đủ.",
+          "latex": "n = 14,\\qquad 2^{14} = 16384 > 10^{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.sai-so-va-so-buoc-chia-doi",
+        "math.dai-hoc.giai-tich-so.phuong-phap-chia-doi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "phương pháp chia đôi",
+        "ước lượng số bước lặp",
+        "logarit cơ số 2"
+      ],
+      "hints": [
+        "Sai số sau n bước bị chặn bởi (b - a)/2^n.",
+        "log2(10000) nằm giữa 13 và 14."
+      ],
+      "tags": [
+        "numerical",
+        "chia-doi",
+        "sai-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0055",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - nội suy đa thức",
+      "type": "dien-so",
+      "statement_vi": "Cho ba mốc nội suy (0; 1), (1; 3), (2; 2). Lập đa thức nội suy bậc hai đi qua ba điểm đó và tính giá trị của nó tại x = 1,5. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Given the nodes (0, 1), (1, 3), (2, 2), build the quadratic interpolating polynomial and evaluate it at x = 1.5. Give four decimals.",
+      "answer": "P(1,5) = 2,875",
+      "answer_numeric": 2.875,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Dùng bảng tỉ sai phân của Newton vì nó cho ngay các hệ số của đa thức mà không phải giải hệ phương trình.",
+          "latex": "f[x_0] = 1,\\quad f[x_0, x_1] = \\frac{3 - 1}{1 - 0} = 2,\\quad f[x_1, x_2] = \\frac{2 - 3}{2 - 1} = -1"
+        },
+        {
+          "explain": "Tính tỉ sai phân cấp hai, đó là hệ số của số hạng bậc hai.",
+          "latex": "f[x_0, x_1, x_2] = \\frac{-1 - 2}{2 - 0} = -\\frac{3}{2}"
+        },
+        {
+          "explain": "Viết đa thức Newton tiến theo các tỉ sai phân vừa tính.",
+          "latex": "P(x) = 1 + 2x - \\frac{3}{2}x(x - 1)"
+        },
+        {
+          "explain": "Thay x = 1,5 và tính; có thể kiểm tra lại bằng cách thay ba mốc để thấy P khớp đúng dữ liệu.",
+          "latex": "P(1{,}5) = 1 + 3 - \\frac{3}{2}(1{,}5)(0{,}5) = 4 - 1{,}125 = 2{,}875"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.noi-suy-newton-ti-sai-phan",
+        "math.dai-hoc.giai-tich-so.da-thuc-noi-suy-lagrange",
+        "math.dai-hoc.giai-tich-so.ti-sai-phan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "nội suy Newton",
+        "tỉ sai phân",
+        "kiểm tra đa thức qua các mốc"
+      ],
+      "hints": [
+        "Lập bảng tỉ sai phân trước.",
+        "Đa thức Newton có dạng c0 + c1*x + c2*x(x-1)."
+      ],
+      "tags": [
+        "numerical",
+        "noi-suy"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0056",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - công thức Simpson ghép",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức Simpson 1/3 ghép với n = 4 đoạn con, hãy tính gần đúng tích phân của e^(-x^2) trên đoạn [0; 1]. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Use the composite Simpson 1/3 rule with n = 4 subintervals to approximate the integral of e^(-x^2) over [0, 1]. Give four decimals.",
+      "answer": "≈ 0,7469",
+      "answer_numeric": 0.7469,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Xác định bước chia và các mốc; Simpson ghép đòi hỏi n CHẴN vì mỗi parabol phủ hai đoạn con.",
+          "latex": "h = \\frac{1 - 0}{4} = 0{,}25;\\quad x_i = 0;\\ 0{,}25;\\ 0{,}5;\\ 0{,}75;\\ 1"
+        },
+        {
+          "explain": "Tính giá trị hàm tại năm mốc; đây là toàn bộ dữ liệu mà công thức cầu phương cần đến.",
+          "latex": "f_0 = 1,\\ f_1 = e^{-0{,}0625} \\approx 0{,}939413,\\ f_2 = e^{-0{,}25} \\approx 0{,}778801,\\ f_3 = e^{-0{,}5625} \\approx 0{,}569783,\\ f_4 = e^{-1} \\approx 0{,}367879"
+        },
+        {
+          "explain": "Áp dụng công thức Simpson ghép: mốc lẻ có trọng số 4, mốc chẵn bên trong có trọng số 2, hai đầu mút trọng số 1.",
+          "latex": "I \\approx \\frac{h}{3}\\left(f_0 + 4f_1 + 2f_2 + 4f_3 + f_4\\right)"
+        },
+        {
+          "explain": "Thay số; kết quả rất sát giá trị đúng 0,746824 vì sai số Simpson tỉ lệ h^4.",
+          "latex": "I \\approx \\frac{0{,}25}{3}\\left(1 + 3{,}757652 + 1{,}557602 + 2{,}279131 + 0{,}367879\\right) \\approx 0{,}746855"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.cong-thuc-simpson-ghep",
+        "math.dai-hoc.giai-tich-so.cong-thuc-simpson-don"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "công thức Simpson ghép",
+        "chọn trọng số đúng cho từng mốc",
+        "đánh giá độ chính xác"
+      ],
+      "hints": [
+        "Trọng số theo thứ tự 1, 4, 2, 4, 1.",
+        "Nhân toàn bộ với h/3."
+      ],
+      "tags": [
+        "numerical",
+        "tich-phan-so",
+        "simpson"
+      ],
+      "sources": [
+        "https://math.tulane.edu/~spunshonsmith/amsc460spring18/files/numint460part1.pdf"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0057",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - Runge-Kutta bậc bốn",
+      "type": "dien-so",
+      "statement_vi": "Cho bài toán Cauchy y' = y - t^2 + 1 với y(0) = 0,5. Dùng phương pháp Runge-Kutta bậc bốn cổ điển với bước h = 0,2, hãy tính y_1 (xấp xỉ của y tại t = 0,2). Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "For y' = y - t^2 + 1 with y(0) = 0.5, use the classical fourth-order Runge-Kutta method with h = 0.2 to compute y_1 (approximation of y at t = 0.2). Give four decimals.",
+      "answer": "y_1 ≈ 0,8293",
+      "answer_numeric": 0.8293,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Viết bốn hệ số dốc của Runge-Kutta bậc bốn: chúng lấy mẫu độ dốc ở đầu, hai lần ở giữa và ở cuối bước, nhờ đó phương pháp có bậc chính xác 4.",
+          "latex": "k_1 = f(t_0, y_0),\\quad k_2 = f\\left(t_0 + \\tfrac{h}{2}, y_0 + \\tfrac{h}{2}k_1\\right),\\quad k_3 = f\\left(t_0 + \\tfrac{h}{2}, y_0 + \\tfrac{h}{2}k_2\\right),\\quad k_4 = f(t_0 + h, y_0 + hk_3)"
+        },
+        {
+          "explain": "Tính hai hệ số dốc đầu tiên với f(t, y) = y - t^2 + 1; chú ý k2 lấy độ dốc tại điểm giữa bước.",
+          "latex": "k_1 = 0{,}5 - 0 + 1 = 1{,}5;\\qquad k_2 = (0{,}5 + 0{,}15) - 0{,}01 + 1 = 1{,}64"
+        },
+        {
+          "explain": "Tính hai hệ số dốc còn lại: k3 cũng ở điểm giữa nhưng dựa trên k2, còn k4 lấy ở cuối bước.",
+          "latex": "k_3 = (0{,}5 + 0{,}164) - 0{,}01 + 1 = 1{,}654;\\qquad k_4 = (0{,}5 + 0{,}3308) - 0{,}04 + 1 = 1{,}7908"
+        },
+        {
+          "explain": "Ghép theo trọng số 1, 2, 2, 1 chia 6; trọng số kép cho hai điểm giữa là điều kiện để đạt bậc bốn.",
+          "latex": "y_1 = y_0 + \\frac{h}{6}\\left(k_1 + 2k_2 + 2k_3 + k_4\\right)"
+        },
+        {
+          "explain": "Thay số; giá trị chính xác là 0,829299 nên sai số chỉ cỡ 5.10^(-6), đúng như kì vọng của phương pháp bậc bốn.",
+          "latex": "y_1 = 0{,}5 + \\frac{0{,}2}{6}\\left(1{,}5 + 3{,}28 + 3{,}308 + 1{,}7908\\right) \\approx 0{,}82929"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.runge-kutta-bac-bon",
+        "math.dai-hoc.giai-tich-so.sai-so-cuc-bo-va-toan-cuc"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "Runge-Kutta bậc bốn",
+        "tính hệ số dốc trung gian",
+        "bậc chính xác của phương pháp một bước"
+      ],
+      "hints": [
+        "Tính lần lượt k1, k2, k3, k4 rồi mới ghép.",
+        "Trọng số là 1, 2, 2, 1 chia cho 6."
+      ],
+      "tags": [
+        "numerical",
+        "runge-kutta",
+        "ptvp-so"
+      ],
+      "sources": [
+        "https://mole-docs.readthedocs.io/en/main/examples/Time-Integrators/RK4.html"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0058",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - chặn sai số công thức hình thang ghép",
+      "type": "dien-so",
+      "statement_vi": "Xấp xỉ tích phân của e^x trên đoạn [0; 1] bằng công thức hình thang ghép với n = 10 đoạn con. Hãy tính CHẶN TRÊN của sai số theo công thức |E| <= (b - a)*h^2*M2/12, trong đó M2 là chặn trên của |f''| trên đoạn. Nhập kết quả (5 chữ số thập phân).",
+      "statement_en": "Approximate the integral of e^x over [0, 1] by the composite trapezoidal rule with n = 10 subintervals. Compute the error bound |E| <= (b - a)h^2 M2 / 12, where M2 bounds |f''| on the interval. Give the answer to 5 decimal places.",
+      "answer": "|E| <= e/1200 ≈ 0,00227",
+      "answer_numeric": 0.00227,
+      "answer_unit": "",
+      "tolerance": 1e-05,
+      "solution_steps": [
+        {
+          "explain": "Chặn sai số của hình thang chỉ phụ thuộc đạo hàm cấp hai, nên trước hết phải tìm M2. Với f(x) = e^x thì f'' = e^x, hàm này tăng nên giá trị lớn nhất trên [0; 1] đạt ở đầu mút phải x = 1.",
+          "latex": "f''(x) = e^{x} \\Rightarrow M_{2} = \\max_{[0,1]} \\left| f''(x) \\right| = e"
+        },
+        {
+          "explain": "Tính bước chia h từ số đoạn con. Đây là đại lượng vào công thức dưới dạng h^2 nên sai một chút ở h sẽ khuếch đại bình phương.",
+          "latex": "h = \\frac{b-a}{n} = \\frac{1-0}{10} = 0{,}1"
+        },
+        {
+          "explain": "Thay vào công thức chặn sai số của hình thang ghép. Lưu ý chặn này là chặn TRÊN cho sai số thực, không phải sai số thực; sai số thực thường nhỏ hơn.",
+          "latex": "|E| \\le \\frac{(b-a)h^{2}}{12}M_{2} = \\frac{1 \\cdot (0{,}1)^{2}}{12}\\, e = \\frac{e}{1200}"
+        },
+        {
+          "explain": "Tính giá trị số và làm tròn. Kết quả cho biết phương pháp bảo đảm được khoảng hai chữ số thập phân đúng.",
+          "latex": "\\frac{e}{1200} \\approx 0{,}0022652 \\approx 0{,}00227"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.cong-thuc-hinh-thang-ghep",
+        "math.dai-hoc.giai-tich-so.cong-thuc-hinh-thang-don"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "chặn sai số cầu phương",
+        "ước lượng đạo hàm cấp hai trên đoạn",
+        "quan hệ giữa bước chia và sai số"
+      ],
+      "hints": [
+        "Sai số hình thang bậc hai theo h, nên cần đạo hàm cấp mấy?",
+        "e^x tăng trên [0;1] nên cực đại của |f''| nằm ở đâu?"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "sai-so",
+        "cau-phuong"
+      ],
+      "sources": [
+        "https://www.ece.uwaterloo.ca/~dwharder/NumericalAnalysis/13Integration/comptrap/complete.html",
+        "https://math.tulane.edu/~spunshonsmith/amsc460spring18/files/numint460part1.pdf"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0059",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - chọn số đoạn chia theo yêu cầu sai số",
+      "type": "dien-so",
+      "statement_vi": "Cần tính gần đúng tích phân của e^x trên đoạn [0; 1] bằng công thức Simpson 1/3 ghép với chặn sai số |E| <= (b - a)*h^4*M4/180. Hãy tìm số đoạn con n NHỎ NHẤT (n phải là số chẵn) sao cho chặn sai số này không vượt quá 10^(-6).",
+      "statement_en": "Approximate the integral of e^x over [0, 1] by the composite Simpson 1/3 rule with error bound |E| <= (b - a)h^4 M4 / 180. Find the smallest even number of subintervals n so that this bound is at most 10^(-6).",
+      "answer": "n = 12",
+      "answer_numeric": 12.0,
+      "answer_unit": "",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Simpson là công thức bậc bốn nên chặn sai số dùng đạo hàm cấp bốn. Với f(x) = e^x mọi đạo hàm đều là e^x, vậy M4 vẫn bằng e.",
+          "latex": "f^{(4)}(x) = e^{x} \\Rightarrow M_{4} = \\max_{[0,1]} \\left| f^{(4)}(x) \\right| = e"
+        },
+        {
+          "explain": "Viết bất phương trình cho chặn sai số rồi cô lập h^4. Ta giải theo h trước, sau đó mới chuyển sang n, vì h xuất hiện với luỹ thừa 4.",
+          "latex": "\\frac{(b-a)h^{4}}{180}M_{4} = \\frac{e\\,h^{4}}{180} \\le 10^{-6} \\Rightarrow h^{4} \\le \\frac{180 \\cdot 10^{-6}}{e}"
+        },
+        {
+          "explain": "Lấy căn bậc bốn để có chặn trên cho bước chia.",
+          "latex": "h \\le \\left( \\frac{1{,}8 \\times 10^{-4}}{e} \\right)^{1/4} \\approx 0{,}09021"
+        },
+        {
+          "explain": "Đổi sang n bằng quan hệ h = (b - a)/n = 1/n. Vì h phải NHỎ hơn ngưỡng nên n phải LỚN hơn nghịch đảo của ngưỡng.",
+          "latex": "n = \\frac{1}{h} \\ge \\frac{1}{0{,}09021} \\approx 11{,}086"
+        },
+        {
+          "explain": "Simpson 1/3 ghép đòi hỏi n chẵn vì mỗi parabol phủ hai đoạn con. Số nguyên chẵn nhỏ nhất vượt 11,086 là 12. Kiểm tra lại: với n = 12 chặn sai số bằng 7,28 x 10^(-7), thoả yêu cầu.",
+          "latex": "n = 12,\\quad \\frac{e}{180 \\cdot 12^{4}} \\approx 7{,}28 \\times 10^{-7} \\le 10^{-6}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.cong-thuc-simpson-ghep",
+        "math.dai-hoc.giai-tich-so.cong-thuc-simpson-don"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "thiết kế lưới theo yêu cầu sai số",
+        "giải bất phương trình luỹ thừa bậc bốn",
+        "ràng buộc n chẵn của Simpson"
+      ],
+      "hints": [
+        "Simpson có sai số bậc mấy theo h?",
+        "Sau khi tìm được h, đừng quên Simpson 1/3 ghép chỉ chạy với n chẵn."
+      ],
+      "tags": [
+        "giai-tich-so",
+        "sai-so",
+        "simpson"
+      ],
+      "sources": [
+        "https://math.tulane.edu/~spunshonsmith/amsc460spring18/files/numint460part1.pdf"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0060",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - lan truyền sai số tương đối",
+      "type": "dien-so",
+      "statement_vi": "Đo bán kính đáy và chiều cao của một hình trụ được r = 5,00 cm với sai số tuyệt đối 0,05 cm và h = 10,00 cm với sai số tuyệt đối 0,10 cm. Thể tích tính theo V = pi*r^2*h. Hãy ước lượng sai số TƯƠNG ĐỐI lớn nhất của V, tính theo phần trăm.",
+      "statement_en": "A cylinder has measured radius r = 5.00 cm with absolute error 0.05 cm and height h = 10.00 cm with absolute error 0.10 cm. Its volume is V = pi r^2 h. Estimate the maximum relative error of V, in percent.",
+      "answer": "3%",
+      "answer_numeric": 3.0,
+      "answer_unit": "%",
+      "tolerance": 0.01,
+      "solution_steps": [
+        {
+          "explain": "Với biểu thức chỉ gồm tích và luỹ thừa, sai số TƯƠNG ĐỐI cộng lại, còn số mũ trở thành hệ số nhân. Đây là lí do phải làm việc với sai số tương đối chứ không phải sai số tuyệt đối.",
+          "latex": "\\frac{\\Delta V}{V} \\le 2\\,\\frac{\\Delta r}{r} + \\frac{\\Delta h}{h}"
+        },
+        {
+          "explain": "Tính từng sai số tương đối thành phần. Hằng số pi là số chính xác nên không đóng góp sai số.",
+          "latex": "\\frac{\\Delta r}{r} = \\frac{0{,}05}{5{,}00} = 0{,}01,\\qquad \\frac{\\Delta h}{h} = \\frac{0{,}10}{10{,}00} = 0{,}01"
+        },
+        {
+          "explain": "Cộng lại với hệ số 2 cho bán kính, vì r vào công thức ở luỹ thừa bậc hai nên sai số của nó được khuếch đại gấp đôi.",
+          "latex": "\\frac{\\Delta V}{V} \\le 2(0{,}01) + 0{,}01 = 0{,}03 = 3\\%"
+        },
+        {
+          "explain": "Nhận xét: muốn giảm sai số của V thì phải đo bán kính chính xác hơn chứ không phải chiều cao, vì bán kính có trọng số gấp đôi.",
+          "latex": "V = \\pi r^{2} h \\Rightarrow \\text{trọng số } (r, h) = (2, 1)"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.lan-truyen-sai-so-tich-thuong",
+        "math.dai-hoc.giai-tich-so.lan-truyen-sai-so-ham-nhieu-bien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "lan truyền sai số qua tích và luỹ thừa",
+        "phân biệt sai số tuyệt đối và tương đối",
+        "đánh giá độ nhạy của tham số"
+      ],
+      "hints": [
+        "Lấy logarit hai vế của V = pi r^2 h rồi vi phân xem điều gì xảy ra.",
+        "Số mũ 2 của r đi đâu trong công thức sai số tương đối?"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "sai-so",
+        "do-luong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0061",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số - cầu phương Gauss-Legendre hai điểm",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức cầu phương Gauss-Legendre HAI điểm (các nút t = ±1/căn(3) trên đoạn chuẩn [-1; 1], trọng số đều bằng 1) để tính gần đúng tích phân của e^(-x) trên đoạn [0; 2]. Nhập giá trị xấp xỉ (4 chữ số thập phân).",
+      "statement_en": "Use the two-point Gauss-Legendre quadrature rule (nodes t = ±1/sqrt(3) on the reference interval [-1, 1], both weights equal to 1) to approximate the integral of e^(-x) over [0, 2]. Give the answer to 4 decimal places.",
+      "answer": "≈ 0,8618",
+      "answer_numeric": 0.8618,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Nút và trọng số Gauss chỉ được lập bảng cho đoạn chuẩn [-1; 1], nên bước đầu tiên bắt buộc là phép đổi biến affine đưa [0; 2] về [-1; 1].",
+          "latex": "x = \\frac{b-a}{2}t + \\frac{a+b}{2} = t + 1,\\qquad dx = \\frac{b-a}{2}\\,dt = dt"
+        },
+        {
+          "explain": "Viết lại tích phân theo biến t. Ở đây hệ số Jacobi (b - a)/2 bằng 1 nên không xuất hiện thừa số phụ, nhưng nói chung phải nhân vào.",
+          "latex": "\\int_{0}^{2} e^{-x}\\,dx = \\int_{-1}^{1} e^{-(t+1)}\\,dt"
+        },
+        {
+          "explain": "Áp dụng công thức hai nút: cộng giá trị hàm tại hai nút với trọng số 1. Công thức này chính xác với mọi đa thức bậc không quá 3, nên độ chính xác cao hơn hẳn hình thang cùng số điểm.",
+          "latex": "\\int_{-1}^{1} g(t)\\,dt \\approx g\\!\\left(-\\tfrac{1}{\\sqrt{3}}\\right) + g\\!\\left(\\tfrac{1}{\\sqrt{3}}\\right)"
+        },
+        {
+          "explain": "Thay số vào hai nút rồi cộng lại. Nút t = -1/căn(3) ứng với x = 1 - 1/căn(3) ≈ 0,4226 và nút t = +1/căn(3) ứng với x = 1 + 1/căn(3) ≈ 1,5774; giá trị hàm tại hai nút lần lượt là e^(-0,4226) ≈ 0,6553 và e^(-1,5774) ≈ 0,2065.",
+          "latex": "e^{-\\left(1-\\frac{1}{\\sqrt{3}}\\right)} + e^{-\\left(1+\\frac{1}{\\sqrt{3}}\\right)} \\approx 0{,}6553 + 0{,}2065 = 0{,}8618"
+        },
+        {
+          "explain": "So sánh với giá trị đúng 1 - e^(-2) ≈ 0,8647 cho thấy sai số chỉ khoảng 0,0028 dù chỉ dùng hai điểm hàm.",
+          "latex": "\\int_{0}^{2} e^{-x}dx = 1 - e^{-2} \\approx 0{,}8647,\\quad |E| \\approx 2{,}8\\times 10^{-3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.cau-phuong-gauss-hai-diem",
+        "math.dai-hoc.giai-tich-so.doi-bien-cau-phuong-gauss"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "đổi biến về đoạn chuẩn",
+        "áp dụng cầu phương Gauss",
+        "so sánh độ chính xác các công thức cầu phương"
+      ],
+      "hints": [
+        "Bảng nút Gauss chỉ dùng được trên [-1;1]; phải đổi biến trước.",
+        "Đừng quên nhân hệ số (b-a)/2 khi đổi biến (ở bài này nó bằng 1)."
+      ],
+      "tags": [
+        "giai-tich-so",
+        "cau-phuong-gauss",
+        "tich-phan-so"
+      ],
+      "sources": [
+        "https://personal.math.vt.edu/embree/math5466/lecture25.pdf"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0062",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chuỗi đan dấu và hội tụ có điều kiện",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét chuỗi tổng từ n = 1 đến vô cùng của (-1)^(n+1) / căn(n). Khẳng định nào sau đây đúng?",
+      "statement_en": "Consider the series sum from n = 1 to infinity of (-1)^(n+1) / sqrt(n). Which statement is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "\\text{Hội tụ tuyệt đối}",
+          "why_wrong": "Chuỗi trị tuyệt đối là chuỗi p với p = 1/2 < 1 nên phân kì; không thể có hội tụ tuyệt đối."
+        },
+        {
+          "key": "B",
+          "text": "\\text{Hội tụ nhưng không hội tụ tuyệt đối (bán hội tụ)}",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "\\text{Phân kì vì số hạng tổng quát không dần về } 0",
+          "why_wrong": "Số hạng tổng quát 1/căn(n) vẫn dần về 0; nhầm điều kiện cần với điều kiện đủ và đọc sai giới hạn."
+        },
+        {
+          "key": "D",
+          "text": "\\text{Phân kì vì chuỗi } \\sum 1/\\sqrt{n} \\text{ phân kì}",
+          "why_wrong": "Suy diễn sai chiều: chuỗi trị tuyệt đối phân kì KHÔNG kéo theo chuỗi gốc phân kì, dấu đan xen có thể cứu sự hội tụ."
+        }
+      ],
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Trước hết kiểm tra hội tụ tuyệt đối bằng cách bỏ dấu. Ta được chuỗi p với p = 1/2, mà chuỗi p chỉ hội tụ khi p > 1, nên chuỗi trị tuyệt đối phân kì.",
+          "latex": "\\sum_{n=1}^{\\infty} \\left| \\frac{(-1)^{n+1}}{\\sqrt{n}} \\right| = \\sum_{n=1}^{\\infty} \\frac{1}{n^{1/2}},\\quad p = \\tfrac{1}{2} \\le 1 \\Rightarrow \\text{phân kì}"
+        },
+        {
+          "explain": "Tiếp theo kiểm tra chính chuỗi đan dấu bằng tiêu chuẩn Leibniz: cần dãy trị tuyệt đối giảm và dần về 0. Cả hai điều kiện đều thoả.",
+          "latex": "a_{n} = \\frac{1}{\\sqrt{n}}: \\quad a_{n+1} < a_{n} \\ \\forall n,\\qquad \\lim_{n\\to\\infty} a_{n} = 0"
+        },
+        {
+          "explain": "Leibniz cho kết luận chuỗi hội tụ. Kết hợp với bước một: hội tụ nhưng không hội tụ tuyệt đối, đúng định nghĩa bán hội tụ.",
+          "latex": "\\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{\\sqrt{n}} \\ \\text{hội tụ}\\ \\Rightarrow\\ \\text{bán hội tụ}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.chuoi-dan-dau-leibniz",
+        "math.dai-hoc.chuoi-so.chuoi-p",
+        "math.dai-hoc.chuoi-so.ban-hoi-tu",
+        "math.dai-hoc.chuoi-so.hoi-tu-tuyet-doi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tiêu chuẩn Leibniz",
+        "phân biệt hội tụ tuyệt đối và bán hội tụ",
+        "nhận dạng chuỗi p"
+      ],
+      "hints": [
+        "Bỏ dấu đi thì được chuỗi gì?",
+        "Dãy 1/căn(n) có giảm và có dần về 0 không?"
+      ],
+      "tags": [
+        "chuoi-so",
+        "chuoi-dan-dau",
+        "ban-hoi-tu"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0063",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hội tụ đều và các phép chuyển giới hạn",
+      "type": "dung-sai",
+      "statement_vi": "Xét tính đúng sai của bốn khẳng định về dãy hàm (f_n) trên đoạn [a; b]: (1) Nếu (f_n) hội tụ đều về f và mọi f_n liên tục thì f liên tục. (2) Nếu (f_n) hội tụ điểm về f và mọi f_n liên tục thì f liên tục. (3) Nếu (f_n) hội tụ đều về f và mọi f_n khả tích Riemann thì tích phân của f_n hội tụ về tích phân của f. (4) Nếu (f_n) hội tụ đều về f và mọi f_n khả vi thì (f_n') hội tụ đều về f'.",
+      "statement_en": "Decide true or false for four statements about a sequence of functions (f_n) on [a, b]: (1) If (f_n) converges uniformly to f and every f_n is continuous, then f is continuous. (2) If (f_n) converges pointwise to f and every f_n is continuous, then f is continuous. (3) If (f_n) converges uniformly to f and every f_n is Riemann integrable, then the integrals of f_n converge to the integral of f. (4) If (f_n) converges uniformly to f and every f_n is differentiable, then (f_n') converges uniformly to f'.",
+      "answer": "(1) Đúng, (2) Sai, (3) Đúng, (4) Sai",
+      "solution_steps": [
+        {
+          "explain": "Khẳng định (1) đúng: đây là định lí chuyển giới hạn kinh điển. Hội tụ đều cho phép chọn một chỉ số N dùng chung cho MỌI điểm x, nhờ đó chia epsilon làm ba phần và chuyển tính liên tục từ f_N sang f.",
+          "latex": "|f(x)-f(x_{0})| \\le |f(x)-f_{N}(x)| + |f_{N}(x)-f_{N}(x_{0})| + |f_{N}(x_{0})-f(x_{0})| < \\varepsilon"
+        },
+        {
+          "explain": "Khẳng định (2) sai: hội tụ điểm cho phép N phụ thuộc x nên không kiểm soát được điểm chuyển tiếp. Phản ví dụ chuẩn là f_n(x) = x^n trên [0; 1], mỗi f_n liên tục nhưng hàm giới hạn nhảy tại x = 1.",
+          "latex": "f_{n}(x) = x^{n} \\ \\text{trên} \\ [0,1] \\Rightarrow f(x) = \\begin{cases} 0, & 0 \\le x < 1 \\\\ 1, & x = 1 \\end{cases}"
+        },
+        {
+          "explain": "Khẳng định (3) đúng: chặn sai số của tích phân bằng chuẩn sup nhân độ dài đoạn. Vì chuẩn sup dần về 0 và đoạn hữu hạn nên hiệu hai tích phân dần về 0.",
+          "latex": "\\left| \\int_{a}^{b} f_{n} - \\int_{a}^{b} f \\right| \\le (b-a)\\,\\sup_{[a,b]} |f_{n}-f| \\longrightarrow 0"
+        },
+        {
+          "explain": "Khẳng định (4) sai: hội tụ đều kiểm soát GIÁ TRỊ hàm chứ không kiểm soát ĐỘ DỐC. Phản ví dụ f_n(x) = sin(nx)/căn(n) hội tụ đều về 0 nhưng đạo hàm căn(n)*cos(nx) có biên độ tiến ra vô cùng.",
+          "latex": "f_{n}(x) = \\frac{\\sin(nx)}{\\sqrt{n}} \\to 0 \\ \\text{đều trên } \\mathbb{R},\\quad f_{n}'(x) = \\sqrt{n}\\cos(nx) \\ \\text{không hội tụ}"
+        },
+        {
+          "explain": "Kết luận chung: hội tụ đều đủ mạnh để chuyển qua dấu giới hạn và dấu tích phân, nhưng KHÔNG đủ để chuyển qua dấu đạo hàm; muốn chuyển đạo hàm phải giả thiết chính (f_n') hội tụ đều.",
+          "latex": "\\text{(1) Đ},\\ \\text{(2) S},\\ \\text{(3) Đ},\\ \\text{(4) S}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-thuc.hoi-tu-deu-day-ham",
+        "math.dai-hoc.chuoi-ham.hoi-tu-deu",
+        "math.dai-hoc.giai-tich-thuc.tieu-chuan-cauchy-hoi-tu-deu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "phân biệt hội tụ điểm và hội tụ đều",
+        "xây dựng phản ví dụ",
+        "điều kiện chuyển giới hạn qua tích phân và đạo hàm"
+      ],
+      "hints": [
+        "Hãy thử f_n(x) = x^n trên [0;1] cho khẳng định về hội tụ điểm.",
+        "Hội tụ đều chặn được giá trị hàm; nó có chặn được đạo hàm không?"
+      ],
+      "tags": [
+        "giai-tich-thuc",
+        "hoi-tu-deu",
+        "day-ham"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0064",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đẳng thức Parseval và tổng chuỗi số",
+      "type": "dien-so",
+      "statement_vi": "Cho f(x) = x trên khoảng (-pi; pi), thác triển tuần hoàn chu kì 2*pi. Dùng đẳng thức Parseval cho chuỗi Fourier của f để tính tổng của chuỗi 1/1^2 + 1/2^2 + 1/3^2 + ... Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Let f(x) = x on (-pi, pi), extended 2pi-periodically. Use Parseval's identity for the Fourier series of f to evaluate the sum 1/1^2 + 1/2^2 + 1/3^2 + ... Give the answer to 4 decimal places.",
+      "answer": "pi^2/6 ≈ 1,6449",
+      "answer_numeric": 1.6449,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Hàm f(x) = x là hàm LẺ nên toàn bộ hệ số cosin triệt tiêu, chỉ còn chuỗi sin. Nhận xét này cắt một nửa khối lượng tính toán.",
+          "latex": "a_{0} = a_{n} = 0,\\qquad b_{n} = \\frac{2}{\\pi}\\int_{0}^{\\pi} x \\sin(nx)\\,dx"
+        },
+        {
+          "explain": "Tính b_n bằng tích phân từng phần: đạo hàm x cho hằng số, còn sin(nx) nguyên hàm được. Số hạng biên cho dấu đan xen.",
+          "latex": "b_{n} = \\frac{2(-1)^{n+1}}{n}"
+        },
+        {
+          "explain": "Viết đẳng thức Parseval cho chu kì 2*pi. Vế trái là năng lượng của hàm, vế phải là tổng bình phương các hệ số; đây là cầu nối biến bài toán tích phân thành bài toán tổng chuỗi.",
+          "latex": "\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} f^{2}(x)\\,dx = \\frac{a_{0}^{2}}{2} + \\sum_{n=1}^{\\infty}\\left(a_{n}^{2}+b_{n}^{2}\\right)"
+        },
+        {
+          "explain": "Tính vế trái với f(x) = x.",
+          "latex": "\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} x^{2}\\,dx = \\frac{1}{\\pi}\\cdot \\frac{2\\pi^{3}}{3} = \\frac{2\\pi^{2}}{3}"
+        },
+        {
+          "explain": "Tính vế phải rồi cân bằng hai vế. Bình phương làm mất dấu đan xen, để lại đúng chuỗi cần tìm nhân hệ số 4.",
+          "latex": "\\sum_{n=1}^{\\infty} b_{n}^{2} = \\sum_{n=1}^{\\infty} \\frac{4}{n^{2}} = \\frac{2\\pi^{2}}{3} \\Rightarrow \\sum_{n=1}^{\\infty}\\frac{1}{n^{2}} = \\frac{\\pi^{2}}{6}"
+        },
+        {
+          "explain": "Tính giá trị số. Đây chính là bài toán Basel nổi tiếng.",
+          "latex": "\\frac{\\pi^{2}}{6} \\approx 1{,}6449"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-fourier.dang-thuc-parseval",
+        "math.dai-hoc.chuoi-fourier.chuoi-ham-le",
+        "math.dai-hoc.chuoi-fourier.he-so-tren-doan-pi",
+        "math.dai-hoc.chuoi-so.tong-basel"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "khai thác tính chẵn lẻ để rút gọn hệ số Fourier",
+        "tích phân từng phần",
+        "dùng Parseval tính tổng chuỗi số"
+      ],
+      "hints": [
+        "f(x) = x là hàm lẻ, vậy hệ số nào bằng 0?",
+        "Parseval nối năng lượng của hàm với tổng bình phương hệ số."
+      ],
+      "tags": [
+        "chuoi-fourier",
+        "parseval",
+        "tong-chuoi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0065",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Ghép hàm gốc với ảnh Laplace",
+      "type": "ghep-doi",
+      "statement_vi": "Ghép mỗi hàm gốc f(t) ở cột trái với ảnh Laplace F(s) tương ứng ở cột phải.\n(1) f(t) = e^(2t)\n(2) f(t) = t*e^(2t)\n(3) f(t) = sin(2t)\n(4) f(t) = e^(2t)*sin(2t)\n(5) f(t) = u(t - 2), hàm bậc thang trễ 2 đơn vị\n\n(A) F(s) = 2/(s^2 + 4)\n(B) F(s) = 1/(s - 2)\n(C) F(s) = e^(-2s)/s\n(D) F(s) = 2/((s - 2)^2 + 4)\n(E) F(s) = 1/(s - 2)^2",
+      "statement_en": "Match each original function f(t) on the left with its Laplace transform F(s) on the right.\n(1) e^(2t)  (2) t e^(2t)  (3) sin(2t)  (4) e^(2t) sin(2t)  (5) u(t-2), unit step delayed by 2\n(A) 2/(s^2+4)  (B) 1/(s-2)  (C) e^(-2s)/s  (D) 2/((s-2)^2+4)  (E) 1/(s-2)^2",
+      "answer": "1-B, 2-E, 3-A, 4-D, 5-C",
+      "solution_steps": [
+        {
+          "explain": "Chiến lược: chỉ cần ba công thức gốc (hàm mũ, luỹ thừa, sin) cộng hai định lí dịch chuyển. Phân biệt rõ hai định lí: dịch chuyển ẢNH đổi s thành s - a, còn dịch chuyển GỐC sinh ra thừa số e^(-as).",
+          "latex": "\\mathcal{L}\\{e^{at}f(t)\\} = F(s-a),\\qquad \\mathcal{L}\\{f(t-a)u(t-a)\\} = e^{-as}F(s)"
+        },
+        {
+          "explain": "Cặp (1)-(B): ảnh của hàm mũ là công thức cơ bản nhất, mẫu số tuyến tính với cực điểm đúng bằng số mũ a = 2.",
+          "latex": "\\mathcal{L}\\{e^{2t}\\} = \\frac{1}{s-2}"
+        },
+        {
+          "explain": "Cặp (2)-(E): xuất phát từ ảnh của t là 1/s^2, rồi áp định lí dịch chuyển ảnh cho thừa số e^(2t), tức thay s bởi s - 2.",
+          "latex": "\\mathcal{L}\\{t\\} = \\frac{1}{s^{2}} \\Rightarrow \\mathcal{L}\\{t e^{2t}\\} = \\frac{1}{(s-2)^{2}}"
+        },
+        {
+          "explain": "Cặp (3)-(A): ảnh của sin(kt) có tử số bằng chính k, đây là chỗ hay nhầm với cosin (tử số là s).",
+          "latex": "\\mathcal{L}\\{\\sin 2t\\} = \\frac{2}{s^{2}+4}"
+        },
+        {
+          "explain": "Cặp (4)-(D): lại dùng dịch chuyển ảnh, thay s bởi s - 2 trong kết quả vừa có. Chú ý chỉ đổi s trong mẫu, tử số 2 giữ nguyên.",
+          "latex": "\\mathcal{L}\\{e^{2t}\\sin 2t\\} = \\frac{2}{(s-2)^{2}+4}"
+        },
+        {
+          "explain": "Cặp (5)-(C): hàm bậc thang trễ thuộc loại dịch chuyển GỐC nên sinh thừa số mũ e^(-2s) nhân với ảnh của bậc thang đơn vị là 1/s. Đây là phương án duy nhất chứa e^(-2s), dấu hiệu nhận biết nhanh.",
+          "latex": "\\mathcal{L}\\{u(t-2)\\} = \\frac{e^{-2s}}{s}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.anh-ham-mu",
+        "math.dai-hoc.bien-doi-laplace.anh-cua-luy-thua",
+        "math.dai-hoc.bien-doi-laplace.anh-sin-cos",
+        "math.dai-hoc.bien-doi-laplace.dinh-li-dich-chuyen",
+        "math.dai-hoc.bien-doi-laplace.dinh-li-tre",
+        "math.dai-hoc.bien-doi-laplace.anh-cua-hang-so"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "bảng biến đổi Laplace cơ bản",
+        "phân biệt dịch chuyển ảnh và dịch chuyển gốc",
+        "nhận dạng cấu trúc mẫu số"
+      ],
+      "hints": [
+        "Thừa số e^(-as) trong ảnh luôn ứng với sự trễ ở hàm gốc.",
+        "e^(at) nhân vào hàm gốc thì làm gì với biến s?"
+      ],
+      "tags": [
+        "bien-doi-laplace",
+        "bang-anh-goc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0066",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Cộng hưởng trong phương trình vi phân cấp hai",
+      "type": "tu-luan",
+      "statement_vi": "Giải đầy đủ bài toán Cauchy y'' + 4y = cos(2x) với y(0) = 0 và y'(0) = 0. Hãy chỉ rõ vì sao phải nhân thêm x vào dạng nghiệm riêng, rồi mô tả dáng điệu của nghiệm khi x tăng.",
+      "statement_en": "Solve completely the initial value problem y'' + 4y = cos(2x) with y(0) = 0 and y'(0) = 0. Explain why the trial particular solution must be multiplied by x, and describe the behaviour of the solution as x grows.",
+      "answer": "y(x) = (x/4)*sin(2x); biên độ dao động tăng tuyến tính theo x nên nghiệm không bị chặn - đây là hiện tượng cộng hưởng",
+      "solution_steps": [
+        {
+          "explain": "Giải phương trình thuần nhất trước để biết cấu trúc nghiệm cơ sở. Phương trình đặc trưng có nghiệm thuần ảo nên nghiệm thuần nhất là dao động điều hoà tần số 2.",
+          "latex": "k^{2}+4=0 \\Rightarrow k = \\pm 2i \\Rightarrow y_{h} = C_{1}\\cos 2x + C_{2}\\sin 2x"
+        },
+        {
+          "explain": "Đây là chỗ mấu chốt: vế phải cos(2x) có tần số ĐÚNG BẰNG tần số riêng của hệ, tức số 2i đã là nghiệm đặc trưng bội một. Nếu thử y_p = A cos2x + B sin2x thì nó là nghiệm thuần nhất, thay vào chỉ cho vế trái bằng 0, không bao giờ khớp cos(2x). Vì vậy phải nâng bậc bằng cách nhân thêm x.",
+          "latex": "2i \\ \\text{là nghiệm đặc trưng} \\Rightarrow y_{p} = x\\left(A\\cos 2x + B\\sin 2x\\right)"
+        },
+        {
+          "explain": "Tính hai đạo hàm của dạng thử. Khi đạo hàm hai lần, các số hạng chứa x tự triệt tiêu với 4y_p, chỉ còn lại phần sinh ra từ thừa số x.",
+          "latex": "y_{p}'' = \\left(-4Ax\\cos 2x - 4Bx\\sin 2x\\right) + \\left(-4A\\sin 2x + 4B\\cos 2x\\right)"
+        },
+        {
+          "explain": "Thay vào phương trình và đồng nhất hệ số. Phần chứa x biến mất đúng như dự đoán, để lại một hệ hai ẩn rất gọn.",
+          "latex": "y_{p}''+4y_{p} = -4A\\sin 2x + 4B\\cos 2x = \\cos 2x \\Rightarrow A = 0,\\ B = \\tfrac{1}{4}"
+        },
+        {
+          "explain": "Ghép nghiệm tổng quát rồi áp điều kiện đầu. Thay x = 0 vào y cho ngay C_1.",
+          "latex": "y = C_{1}\\cos 2x + C_{2}\\sin 2x + \\frac{x}{4}\\sin 2x,\\qquad y(0)=C_{1}=0"
+        },
+        {
+          "explain": "Đạo hàm rồi thay x = 0. Số hạng riêng có đạo hàm tại 0 bằng 0 vì nó chứa thừa số x nhân sin, nên chỉ còn C_2.",
+          "latex": "y'(0) = 2C_{2} + \\left[\\frac{1}{4}\\sin 2x + \\frac{x}{2}\\cos 2x\\right]_{x=0} = 2C_{2} = 0 \\Rightarrow C_{2}=0"
+        },
+        {
+          "explain": "Kết luận và mô tả dáng điệu: hệ số x đứng trước sin làm biên độ dao động lớn dần vô hạn theo thời gian. Đó chính là cộng hưởng - ngoại lực bơm năng lượng đúng nhịp dao động riêng nên biên độ không bị chặn.",
+          "latex": "y(x) = \\frac{x}{4}\\sin 2x,\\qquad \\limsup_{x\\to\\infty} |y(x)| = +\\infty"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-2.cong-huong",
+        "math.dai-hoc.ptvp-cap-2.he-so-bat-dinh-luong-giac",
+        "math.dai-hoc.ptvp-cap-2.phuong-trinh-dac-trung",
+        "math.dai-hoc.ptvp-cap-2.nghiem-phuc",
+        "math.dai-hoc.ptvp-cap-2.cau-truc-nghiem-khong-thuan-nhat"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "skills": [
+        "nhận diện cộng hưởng",
+        "phương pháp hệ số bất định có nâng bậc",
+        "áp điều kiện đầu",
+        "diễn giải ý nghĩa vật lí của nghiệm"
+      ],
+      "hints": [
+        "So sánh tần số của vế phải với nghiệm phương trình đặc trưng.",
+        "Nếu dạng thử trùng nghiệm thuần nhất thì thay vào sẽ ra 0, phải làm gì?"
+      ],
+      "tags": [
+        "ptvp-cap-2",
+        "cong-huong",
+        "he-so-bat-dinh"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0067",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad",
+        "olympiad"
+      ],
+      "topic": "Tích phân suy rộng trên toàn trục bằng thặng dư",
+      "type": "dien-so",
+      "statement_vi": "Dùng định lí thặng dư với cung tròn ở nửa mặt phẳng trên, hãy tính tích phân của 1/(x^2 + 1)^2 với x chạy từ âm vô cùng tới dương vô cùng. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Using the residue theorem with a large semicircle in the upper half plane, evaluate the integral of 1/(x^2 + 1)^2 for x from minus infinity to plus infinity. Give the answer to 4 decimal places.",
+      "answer": "pi/2 ≈ 1,5708",
+      "answer_numeric": 1.5708,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra điều kiện áp dụng trước: bậc mẫu (4) lớn hơn bậc tử (0) ít nhất 2 đơn vị, nên tích phân trên cung tròn lớn dần về 0 và phương pháp nửa mặt phẳng dùng được.",
+          "latex": "\\deg Q - \\deg P = 4 - 0 = 4 \\ge 2 \\Rightarrow \\lim_{R\\to\\infty}\\int_{C_{R}} f(z)\\,dz = 0"
+        },
+        {
+          "explain": "Tìm các cực điểm và chọn cái nằm ở nửa mặt phẳng TRÊN, vì chu tuyến chỉ bao phần đó. Mẫu số viết lại theo z cho thấy cực điểm là bội hai.",
+          "latex": "f(z) = \\frac{1}{(z^{2}+1)^{2}} = \\frac{1}{(z-i)^{2}(z+i)^{2}},\\quad z = i \\ \\text{là cực điểm bậc 2}"
+        },
+        {
+          "explain": "Vì là cực điểm bậc hai nên phải dùng công thức thặng dư có đạo hàm bậc một, không được dùng công thức cực đơn.",
+          "latex": "\\operatorname{Res}_{z=i} f = \\lim_{z\\to i} \\frac{d}{dz}\\left[ (z-i)^{2} f(z) \\right] = \\lim_{z\\to i} \\frac{d}{dz} \\frac{1}{(z+i)^{2}}"
+        },
+        {
+          "explain": "Tính đạo hàm rồi thay z = i. Chú ý (2i)^3 = -8i.",
+          "latex": "\\frac{d}{dz}(z+i)^{-2} = \\frac{-2}{(z+i)^{3}} \\Rightarrow \\operatorname{Res}_{z=i} f = \\frac{-2}{(2i)^{3}} = \\frac{-2}{-8i} = \\frac{1}{4i}"
+        },
+        {
+          "explain": "Nhân với 2*pi*i theo định lí thặng dư. Kết quả là số thực dương, phù hợp vì hàm dưới dấu tích phân dương.",
+          "latex": "\\int_{-\\infty}^{\\infty} \\frac{dx}{(x^{2}+1)^{2}} = 2\\pi i \\cdot \\frac{1}{4i} = \\frac{\\pi}{2} \\approx 1{,}5708"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.tich-phan-huu-ti-nua-mat-phang",
+        "math.dai-hoc.giai-tich-phuc.thang-du-cuc-bac-m",
+        "math.dai-hoc.giai-tich-phuc.dinh-li-thang-du"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 12,
+      "skills": [
+        "kiểm tra điều kiện bậc để bỏ cung tròn lớn",
+        "thặng dư tại cực điểm bậc cao",
+        "chuyển tích phân thực sang tích phân phức"
+      ],
+      "hints": [
+        "Hiệu bậc mẫu và bậc tử phải ít nhất bằng 2 thì cung tròn lớn mới đóng góp 0.",
+        "z = i là cực điểm bậc mấy? Công thức thặng dư tương ứng cần đạo hàm cấp mấy?"
+      ],
+      "tags": [
+        "giai-tich-phuc",
+        "thang-du",
+        "tich-phan-suy-rong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0068",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Cực trị tự do của hàm hai biến",
+      "type": "dien-so",
+      "statement_vi": "Cho f(x, y) = x^3 + y^3 - 3xy. Tìm tất cả các điểm dừng, dùng biệt thức AC - B^2 để phân loại, rồi nhập GIÁ TRỊ CỰC TIỂU địa phương của hàm.",
+      "statement_en": "Let f(x, y) = x^3 + y^3 - 3xy. Find all critical points, classify them with the discriminant AC - B^2, and give the local minimum value of the function.",
+      "answer": "Cực tiểu địa phương tại (1; 1) với f(1; 1) = -1",
+      "answer_numeric": -1.0,
+      "answer_unit": "",
+      "tolerance": 1e-06,
+      "solution_steps": [
+        {
+          "explain": "Điều kiện cần của cực trị là gradient triệt tiêu, nên lập hệ hai phương trình đạo hàm riêng bằng 0.",
+          "latex": "f_{x} = 3x^{2}-3y = 0,\\qquad f_{y} = 3y^{2}-3x = 0"
+        },
+        {
+          "explain": "Rút y = x^2 từ phương trình đầu rồi thế vào phương trình sau. Việc thế biến biến hệ phi tuyến thành một phương trình một ẩn.",
+          "latex": "y = x^{2} \\Rightarrow (x^{2})^{2} = x \\Rightarrow x^{4}-x = x(x^{3}-1) = 0 \\Rightarrow x = 0 \\ \\text{hoặc}\\ x = 1"
+        },
+        {
+          "explain": "Ứng với hai giá trị x ta được hai điểm dừng.",
+          "latex": "M_{1}(0;0),\\qquad M_{2}(1;1)"
+        },
+        {
+          "explain": "Lập các đạo hàm riêng cấp hai để dùng điều kiện đủ. Ký hiệu A = f_xx, B = f_xy, C = f_yy.",
+          "latex": "A = f_{xx} = 6x,\\quad B = f_{xy} = -3,\\quad C = f_{yy} = 6y"
+        },
+        {
+          "explain": "Tại (0; 0) biệt thức âm nên đây là điểm yên ngựa, không phải cực trị. Đây chính là bẫy thường gặp: điểm dừng không đồng nghĩa với cực trị.",
+          "latex": "\\Delta(0;0) = AC - B^{2} = 0 \\cdot 0 - 9 = -9 < 0 \\Rightarrow \\text{điểm yên ngựa}"
+        },
+        {
+          "explain": "Tại (1; 1) biệt thức dương và A dương nên là cực tiểu địa phương. Dấu của A quyết định cực tiểu hay cực đại khi biệt thức dương.",
+          "latex": "\\Delta(1;1) = 6\\cdot 6 - 9 = 27 > 0,\\quad A = 6 > 0 \\Rightarrow \\text{cực tiểu}"
+        },
+        {
+          "explain": "Thay toạ độ điểm cực tiểu vào hàm để lấy giá trị cực tiểu.",
+          "latex": "f(1;1) = 1 + 1 - 3 = -1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.dieu-kien-can-cuc-tri",
+        "math.dai-hoc.ham-nhieu-bien.dieu-kien-du-cuc-tri",
+        "math.dai-hoc.ham-nhieu-bien.ma-tran-hesse"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "giải hệ điểm dừng",
+        "dùng biệt thức Hesse phân loại điểm dừng",
+        "phân biệt điểm yên ngựa và cực trị"
+      ],
+      "hints": [
+        "Rút y theo x từ phương trình f_x = 0 rồi thế vào f_y = 0.",
+        "Biệt thức âm nói lên điều gì về hình dạng mặt cong tại điểm đó?"
+      ],
+      "tags": [
+        "ham-nhieu-bien",
+        "cuc-tri-tu-do",
+        "hesse"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-analysis.0069",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Quy tắc dây chuyền cho hàm nhiều biến",
+      "type": "dien-so",
+      "statement_vi": "Cho z = ln(x^2 + y^2), trong đó x = t + 1 và y = t^2. Tính đạo hàm toàn phần dz/dt tại t = 1. Nhập kết quả (4 chữ số thập phân).",
+      "statement_en": "Let z = ln(x^2 + y^2) where x = t + 1 and y = t^2. Compute the total derivative dz/dt at t = 1. Give the answer to 4 decimal places.",
+      "answer": "dz/dt tại t = 1 bằng 8/5 = 1,6",
+      "answer_numeric": 1.6,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Vì z phụ thuộc t qua hai đường trung gian x và y, phải dùng quy tắc dây chuyền cộng hai đóng góp chứ không đạo hàm trực tiếp.",
+          "latex": "\\frac{dz}{dt} = \\frac{\\partial z}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial z}{\\partial y}\\frac{dy}{dt}"
+        },
+        {
+          "explain": "Tính hai đạo hàm riêng của z. Với hàm logarit của một tổng bình phương, mẫu số chung là chính đối số của logarit.",
+          "latex": "\\frac{\\partial z}{\\partial x} = \\frac{2x}{x^{2}+y^{2}},\\qquad \\frac{\\partial z}{\\partial y} = \\frac{2y}{x^{2}+y^{2}}"
+        },
+        {
+          "explain": "Tính hai đạo hàm của đường trung gian theo t.",
+          "latex": "\\frac{dx}{dt} = 1,\\qquad \\frac{dy}{dt} = 2t"
+        },
+        {
+          "explain": "Tính giá trị của x, y tại t = 1 để biết điểm cần thay vào, rồi tính mẫu số chung.",
+          "latex": "t=1 \\Rightarrow x = 2,\\ y = 1,\\ x^{2}+y^{2} = 5"
+        },
+        {
+          "explain": "Thay tất cả vào công thức dây chuyền và cộng hai đóng góp.",
+          "latex": "\\frac{dz}{dt}\\bigg|_{t=1} = \\frac{2\\cdot 2}{5}\\cdot 1 + \\frac{2\\cdot 1}{5}\\cdot 2 = \\frac{4}{5} + \\frac{4}{5} = \\frac{8}{5} = 1{,}6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-toan-phan-theo-t",
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-ham-hop"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "quy tắc dây chuyền nhiều biến",
+        "đạo hàm toàn phần theo tham số",
+        "thay số đúng điểm"
+      ],
+      "hints": [
+        "z phụ thuộc t qua mấy đường trung gian? Mỗi đường cho một số hạng.",
+        "Tính x và y tại t = 1 trước rồi mới thay vào các đạo hàm riêng."
+      ],
+      "tags": [
+        "ham-nhieu-bien",
+        "quy-tac-day-chuyen",
+        "dao-ham-toan-phan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2975 @@
+{
+ "meta": {
+  "file": "ext3-physics-daihoc.json",
+  "subject": "physics",
+  "title": "Bài tập bổ sung Vật lí đại học (đợt 3) - phủ các công thức chưa có bài tập: cơ học chất điểm và vật rắn, dao động - sóng, chất lưu, tương đối hẹp, nhiệt học - thống kê, điện - từ - mạch điện, quang sóng và quang hình, lượng tử - bức xạ - hạt nhân - chất rắn, cơ học giải tích, điện động lực học, lượng tử nâng cao, vật lí hạt cơ bản và các hệ giáo trình quốc tế / Nga",
+  "levels": [
+   "dai-hoc"
+  ],
+  "count": 68
+ },
+ "problems": [
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0001",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Chất điểm chuyển động trong mặt phẳng với bán kính vectơ r(t) = (2t^3 − 3t) i + t^2 j (đơn vị m, t tính bằng s). Tính độ lớn vận tốc tức thời tại thời điểm t = 2 s (đơn vị m/s).",
+   "statement_en": "A particle moves in a plane with position vector r(t) = (2t^3 − 3t) i + t^2 j (m, t in s). Find the magnitude of the instantaneous velocity at t = 2 s (in m/s).",
+   "answer": "21,38 m/s",
+   "solution_steps": [
+    {
+     "explain": "Vận tốc tức thời là đạo hàm bậc nhất của bán kính vectơ theo thời gian.",
+     "latex": "\\vec{v} = \\frac{d\\vec{r}}{dt} = (6t^{2} - 3)\\,\\vec{i} + 2t\\,\\vec{j}"
+    },
+    {
+     "explain": "Thay t = 2 s: thành phần theo x là 6·4 − 3 = 21, theo y là 2·2 = 4.",
+     "latex": "\\vec{v}(2) = 21\\,\\vec{i} + 4\\,\\vec{j}\\ (\\text{m/s})"
+    },
+    {
+     "explain": "Độ lớn vận tốc bằng căn của tổng bình phương các thành phần.",
+     "latex": "v = \\sqrt{21^{2} + 4^{2}} = \\sqrt{457} \\approx 21{,}38\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.van-toc-dang-vecto"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "lấy đạo hàm vectơ vị trí để tìm vận tốc",
+    "tính độ lớn vectơ vận tốc"
+   ],
+   "tags": [
+    "co-hoc",
+    "van-toc",
+    "vecto"
+   ],
+   "answer_numeric": 21.38,
+   "answer_unit": "m/s",
+   "tolerance": 0.05,
+   "hints": [
+    "Đạo hàm từng thành phần của r(t).",
+    "v = sqrt(vx^2 + vy^2)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0002",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Vận tốc của một chất điểm biến thiên theo v(t) = 4t i + 3t^2 j (m/s). Tính độ lớn gia tốc tức thời tại t = 3 s (m/s^2).",
+   "statement_en": "A particle has velocity v(t) = 4t i + 3t^2 j (m/s). Find the magnitude of its instantaneous acceleration at t = 3 s (m/s^2).",
+   "answer": "18,44 m/s^2",
+   "solution_steps": [
+    {
+     "explain": "Gia tốc tức thời là đạo hàm của vận tốc theo thời gian.",
+     "latex": "\\vec{a} = \\frac{d\\vec{v}}{dt} = 4\\,\\vec{i} + 6t\\,\\vec{j}"
+    },
+    {
+     "explain": "Tại t = 3 s: thành phần y là 6·3 = 18, thành phần x không đổi bằng 4.",
+     "latex": "\\vec{a}(3) = 4\\,\\vec{i} + 18\\,\\vec{j}\\ (\\text{m/s}^{2})"
+    },
+    {
+     "explain": "Lấy độ lớn của vectơ gia tốc.",
+     "latex": "a = \\sqrt{4^{2} + 18^{2}} = \\sqrt{340} \\approx 18{,}44\\ \\text{m/s}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.gia-toc-dang-vecto"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "đạo hàm vận tốc để tìm gia tốc",
+    "tính độ lớn vectơ gia tốc"
+   ],
+   "tags": [
+    "co-hoc",
+    "gia-toc",
+    "vecto"
+   ],
+   "answer_numeric": 18.44,
+   "answer_unit": "m/s^2",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0003",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Một đĩa tròn bán kính R = 0,5 m quay quanh trục cố định qua tâm. Tại thời điểm khảo sát tốc độ góc ω = 10 rad/s và gia tốc góc β = 4 rad/s^2. Tính độ lớn gia tốc toàn phần của một điểm trên vành đĩa (m/s^2).",
+   "statement_en": "A disk of radius R = 0.5 m rotates about a fixed central axis. At the instant considered ω = 10 rad/s and angular acceleration β = 4 rad/s^2. Find the magnitude of the total acceleration of a rim point (m/s^2).",
+   "answer": "50,04 m/s^2",
+   "solution_steps": [
+    {
+     "explain": "Dùng liên hệ vectơ: gia tốc tiếp tuyến a_t = β × r và gia tốc pháp tuyến a_n = ω × v với v = ω × r.",
+     "latex": "a_{t} = \\beta R = 4 \\cdot 0{,}5 = 2\\ \\text{m/s}^{2}, \\quad a_{n} = \\omega^{2} R = 10^{2} \\cdot 0{,}5 = 50\\ \\text{m/s}^{2}"
+    },
+    {
+     "explain": "Hai thành phần vuông góc nhau nên gia tốc toàn phần là căn bậc hai của tổng bình phương.",
+     "latex": "a = \\sqrt{a_{t}^{2} + a_{n}^{2}} = \\sqrt{2^{2} + 50^{2}} \\approx 50{,}04\\ \\text{m/s}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.van-toc-goc-va-gia-toc-goc-vecto"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "phân tích gia tốc thành tiếp tuyến và pháp tuyến",
+    "áp dụng liên hệ vectơ v = ω × r"
+   ],
+   "tags": [
+    "co-hoc",
+    "chuyen-dong-quay",
+    "gia-toc"
+   ],
+   "answer_numeric": 50.04,
+   "answer_unit": "m/s^2",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0004",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Động lượng của một vật biến thiên theo p(t) = 3t^2 i + 4t j (kg·m/s). Tính độ lớn hợp lực tác dụng lên vật tại t = 2 s (N).",
+   "statement_en": "A body has momentum p(t) = 3t^2 i + 4t j (kg·m/s). Find the magnitude of the net force on it at t = 2 s (N).",
+   "answer": "12,65 N",
+   "solution_steps": [
+    {
+     "explain": "Định luật II Newton dạng vectơ tổng quát: hợp lực bằng đạo hàm động lượng theo thời gian.",
+     "latex": "\\sum \\vec{F} = \\frac{d\\vec{p}}{dt} = 6t\\,\\vec{i} + 4\\,\\vec{j}"
+    },
+    {
+     "explain": "Tại t = 2 s: thành phần x là 6·2 = 12, thành phần y bằng 4.",
+     "latex": "\\sum \\vec{F}(2) = 12\\,\\vec{i} + 4\\,\\vec{j}\\ (\\text{N})"
+    },
+    {
+     "explain": "Lấy độ lớn.",
+     "latex": "F = \\sqrt{12^{2} + 4^{2}} = \\sqrt{160} \\approx 12{,}65\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.dinh-luat-ii-newton-dang-vecto"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng dạng F = dp/dt của định luật II Newton"
+   ],
+   "tags": [
+    "co-hoc",
+    "luc",
+    "dong-luong"
+   ],
+   "answer_numeric": 12.65,
+   "answer_unit": "N",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0005",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Một hệ vật có tổng khối lượng M = 5 kg chịu tổng ngoại lực F = 12 i + 16 j (N). Tính độ lớn gia tốc của khối tâm hệ (m/s^2).",
+   "statement_en": "A system of total mass M = 5 kg is subject to a net external force F = 12 i + 16 j (N). Find the magnitude of the acceleration of its center of mass (m/s^2).",
+   "answer": "4,0 m/s^2",
+   "solution_steps": [
+    {
+     "explain": "Định lí chuyển động khối tâm: tổng ngoại lực bằng tổng khối lượng nhân gia tốc khối tâm.",
+     "latex": "M\\vec{a}_{C} = \\sum \\vec{F}_{ngoai}"
+    },
+    {
+     "explain": "Độ lớn ngoại lực rồi chia cho khối lượng.",
+     "latex": "a_{C} = \\frac{\\sqrt{12^{2} + 16^{2}}}{5} = \\frac{20}{5} = 4{,}0\\ \\text{m/s}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.dinh-li-chuyen-dong-khoi-tam"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định lí chuyển động khối tâm"
+   ],
+   "tags": [
+    "co-hoc",
+    "khoi-tam",
+    "gia-toc"
+   ],
+   "answer_numeric": 4.0,
+   "answer_unit": "m/s^2",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0006",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Mômen động lượng của một chất điểm đối với trục cố định biến thiên theo L(t) = 2t^2 (kg·m^2/s). Tính mômen ngoại lực tác dụng lên chất điểm tại t = 3 s (N·m).",
+   "statement_en": "The angular momentum of a particle about a fixed axis varies as L(t) = 2t^2 (kg·m^2/s). Find the external torque acting on it at t = 3 s (N·m).",
+   "answer": "12 N·m",
+   "solution_steps": [
+    {
+     "explain": "Định lí mômen động lượng: mômen ngoại lực bằng đạo hàm mômen động lượng theo thời gian.",
+     "latex": "\\frac{dL}{dt} = \\sum M_{ngoai} = 4t"
+    },
+    {
+     "explain": "Thay t = 3 s.",
+     "latex": "M = 4 \\cdot 3 = 12\\ \\text{N·m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.dinh-li-momen-dong-luong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng định lí mômen động lượng dL/dt = M"
+   ],
+   "tags": [
+    "co-hoc",
+    "momen-dong-luong"
+   ],
+   "answer_numeric": 12.0,
+   "answer_unit": "N·m",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0007",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Một tên lửa phóng trong không gian tự do với tốc độ khí phụt tương đối u = 2500 m/s. Khối lượng ban đầu 3000 kg, khối lượng còn lại sau khi đốt nhiên liệu là 1000 kg. Tính độ tăng tốc độ của tên lửa (m/s).",
+   "statement_en": "A rocket in free space has effective exhaust speed u = 2500 m/s. Initial mass 3000 kg, final mass 1000 kg. Find the gain in speed (m/s).",
+   "answer": "2746,5 m/s",
+   "solution_steps": [
+    {
+     "explain": "Bỏ qua ngoại lực, công thức Tsiolkovsky cho độ tăng tốc độ.",
+     "latex": "v = u\\ln\\frac{m_{0}}{m}"
+    },
+    {
+     "explain": "Thay số với m0/m = 3.",
+     "latex": "v = 2500\\ln 3 = 2500 \\cdot 1{,}0986 \\approx 2746{,}5\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.phuong-trinh-meshchersky-tsiolkovsky"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng công thức Tsiolkovsky cho chuyển động phản lực"
+   ],
+   "tags": [
+    "co-hoc",
+    "phan-luc",
+    "ten-lua"
+   ],
+   "answer_numeric": 2746.5,
+   "answer_unit": "m/s",
+   "tolerance": 1.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0008",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất điểm",
+   "type": "dien-so",
+   "statement_vi": "Thế năng của một chất điểm trong mặt phẳng có dạng U(x, y) = 3x^2 y + 2y (J), với x, y tính bằng m. Tính độ lớn lực thế tác dụng lên chất điểm tại điểm (x, y) = (1, 2) (N).",
+   "statement_en": "A particle has potential energy U(x, y) = 3x^2 y + 2y (J), x, y in m. Find the magnitude of the conservative force at (x, y) = (1, 2) (N).",
+   "answer": "13 N",
+   "solution_steps": [
+    {
+     "explain": "Lực thế bằng trừ gradient của thế năng.",
+     "latex": "\\vec{F} = -\\nabla U = -\\frac{\\partial U}{\\partial x}\\vec{i} - \\frac{\\partial U}{\\partial y}\\vec{j}"
+    },
+    {
+     "explain": "Tính các đạo hàm riêng: ∂U/∂x = 6xy, ∂U/∂y = 3x^2 + 2.",
+     "latex": "F_{x} = -6xy = -12, \\quad F_{y} = -(3x^{2} + 2) = -5"
+    },
+    {
+     "explain": "Lấy độ lớn tại (1, 2).",
+     "latex": "F = \\sqrt{12^{2} + 5^{2}} = \\sqrt{169} = 13\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-chat-diem.luc-the-va-gradient-the-nang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính gradient của trường thế năng",
+    "suy ra lực thế từ thế năng"
+   ],
+   "tags": [
+    "co-hoc",
+    "the-nang",
+    "gradient"
+   ],
+   "answer_numeric": 13.0,
+   "answer_unit": "N",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0009",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật rắn",
+   "type": "dien-so",
+   "statement_vi": "Một dầm đồng chất dài 4 m, trọng lượng 200 N, được đỡ tại hai đầu A và B. Một vật nặng 300 N đặt cách A 1 m. Tính phản lực tại gối B (N).",
+   "statement_en": "A uniform beam of length 4 m and weight 200 N rests on two supports A and B at its ends. A 300 N load sits 1 m from A. Find the reaction at support B (N).",
+   "answer": "175 N",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện cân bằng vật rắn: tổng lực bằng 0 và tổng mômen bằng 0. Lấy mômen quanh A.",
+     "latex": "\\sum M_{A} = 0: \\quad N_{B}\\cdot 4 = 200 \\cdot 2 + 300 \\cdot 1"
+    },
+    {
+     "explain": "Giải tìm phản lực tại B.",
+     "latex": "N_{B} = \\frac{400 + 300}{4} = 175\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-ran.dieu-kien-can-bang-vat-ran"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "viết điều kiện cân bằng mômen của vật rắn",
+    "chọn trục lấy mômen hợp lí"
+   ],
+   "tags": [
+    "vat-ran",
+    "can-bang",
+    "momen"
+   ],
+   "answer_numeric": 175.0,
+   "answer_unit": "N",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0010",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động và sóng",
+   "type": "trac-nghiem",
+   "statement_vi": "Tổng hợp hai dao động điều hòa vuông góc, cùng tần số, có cùng biên độ A và độ lệch pha Δφ = 90°. Quỹ đạo của chất điểm là hình gì?",
+   "statement_en": "Two perpendicular harmonic oscillations of equal frequency, equal amplitude A, with phase difference Δφ = 90° are combined. What is the resulting trajectory?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Phương trình quỹ đạo tổng hợp hai dao động vuông góc.",
+     "latex": "\\frac{x^{2}}{A^{2}} + \\frac{y^{2}}{A^{2}} - \\frac{2xy}{A^{2}}\\cos\\Delta\\varphi = \\sin^{2}\\Delta\\varphi"
+    },
+    {
+     "explain": "Với Δφ = 90°: cos Δφ = 0, sin^2 Δφ = 1, biên độ bằng nhau nên phương trình trở thành đường tròn bán kính A.",
+     "latex": "\\frac{x^{2}}{A^{2}} + \\frac{y^{2}}{A^{2}} = 1 \\;\\Rightarrow\\; x^{2} + y^{2} = A^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.tong-hop-dao-dong-vuong-goc-lissajous"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận dạng hình Lissajous theo độ lệch pha và biên độ"
+   ],
+   "tags": [
+    "dao-dong",
+    "lissajous",
+    "tong-hop"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Đường tròn bán kính A",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Đoạn thẳng qua gốc tọa độ",
+     "why_wrong": "Đoạn thẳng chỉ xuất hiện khi Δφ = 0 hoặc 180°, khi đó hai dao động cùng hoặc ngược pha."
+    },
+    {
+     "key": "C",
+     "text": "Elip có trục nghiêng so với các trục tọa độ",
+     "why_wrong": "Trục elip chỉ nghiêng khi Δφ khác 0, 90°, 180°; với Δφ = 90° trục elip trùng hệ tọa độ, lại thêm biên độ bằng nhau nên là đường tròn."
+    },
+    {
+     "key": "D",
+     "text": "Hình số 8",
+     "why_wrong": "Hình số 8 ứng với tỉ số tần số 2:1, không phải hai dao động cùng tần số."
+    }
+   ]
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0011",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động và sóng",
+   "type": "dien-so",
+   "statement_vi": "Một sóng phẳng có phương trình u = 4cos(200πt − 2πx) mm, trong đó x tính bằng m, t bằng s. Tính tốc độ truyền sóng (m/s).",
+   "statement_en": "A plane wave is u = 4cos(200πt − 2πx) mm, x in m, t in s. Find the wave speed (m/s).",
+   "answer": "100 m/s",
+   "solution_steps": [
+    {
+     "explain": "So sánh với dạng chuẩn u = Acos(ωt − kx + φ0) để nhận diện ω và k.",
+     "latex": "\\omega = 200\\pi\\ \\text{rad/s}, \\quad k = 2\\pi\\ \\text{rad/m}"
+    },
+    {
+     "explain": "Tốc độ truyền sóng bằng tỉ số ω trên k.",
+     "latex": "v = \\frac{\\omega}{k} = \\frac{200\\pi}{2\\pi} = 100\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.phuong-trinh-song-phang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đọc ω, k từ phương trình sóng",
+    "tính tốc độ truyền sóng v = ω/k"
+   ],
+   "tags": [
+    "song",
+    "song-phang",
+    "van-toc"
+   ],
+   "answer_numeric": 100.0,
+   "answer_unit": "m/s",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0012",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động và sóng",
+   "type": "dien-so",
+   "statement_vi": "Sóng dọc truyền trong thanh thép có suất Young E = 2,0×10^11 Pa và khối lượng riêng ρ = 7800 kg/m^3. Tính tốc độ truyền sóng dọc trong thanh (m/s).",
+   "statement_en": "A longitudinal wave travels in a steel rod with Young's modulus E = 2.0×10^11 Pa and density ρ = 7800 kg/m^3. Find the longitudinal wave speed (m/s).",
+   "answer": "5064 m/s",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ sóng dọc trong môi trường rắn phụ thuộc suất Young và khối lượng riêng.",
+     "latex": "v_{ran} = \\sqrt{\\frac{E}{\\rho}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "v = \\sqrt{\\frac{2{,}0 \\times 10^{11}}{7800}} \\approx 5064\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.van-toc-song-trong-moi-truong-dan-hoi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức tốc độ sóng dọc trong chất rắn"
+   ],
+   "tags": [
+    "song",
+    "dan-hoi",
+    "van-toc"
+   ],
+   "answer_numeric": 5064.0,
+   "answer_unit": "m/s",
+   "tolerance": 5.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0013",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động và sóng",
+   "type": "dien-so",
+   "statement_vi": "Một nguồn điểm phát sóng cầu trong môi trường không hấp thụ. Tại khoảng cách 2 m biên độ dao động là 6 mm. Tính biên độ tại khoảng cách 6 m từ nguồn (mm).",
+   "statement_en": "A point source emits a spherical wave in a non-absorbing medium. At 2 m the amplitude is 6 mm. Find the amplitude at 6 m from the source (mm).",
+   "answer": "2 mm",
+   "solution_steps": [
+    {
+     "explain": "Với sóng cầu, biên độ giảm tỉ lệ nghịch với khoảng cách: a = a0/r nên tích (a·r) không đổi.",
+     "latex": "u(r,t) = \\frac{a_{0}}{r}\\cos(\\omega t - kr + \\varphi_{0}) \\;\\Rightarrow\\; a_{1}r_{1} = a_{2}r_{2}"
+    },
+    {
+     "explain": "Suy ra biên độ tại 6 m.",
+     "latex": "a_{2} = a_{1}\\frac{r_{1}}{r_{2}} = 6 \\cdot \\frac{2}{6} = 2\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.song-cau"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng quy luật giảm biên độ 1/r của sóng cầu"
+   ],
+   "tags": [
+    "song",
+    "song-cau",
+    "bien-do"
+   ],
+   "answer_numeric": 2.0,
+   "answer_unit": "mm",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0014",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học chất lưu",
+   "type": "dien-so",
+   "statement_vi": "Một ô tô có hệ số cản C_D = 0,30, diện tích mặt cản S = 2,0 m^2 chạy với tốc độ 30 m/s trong không khí có ρ = 1,2 kg/m^3. Tính lực cản khí động học (N).",
+   "statement_en": "A car with drag coefficient C_D = 0.30 and frontal area S = 2.0 m^2 moves at 30 m/s in air of density ρ = 1.2 kg/m^3. Find the aerodynamic drag force (N).",
+   "answer": "324 N",
+   "solution_steps": [
+    {
+     "explain": "Lực cản khí động học tỉ lệ với bình phương tốc độ.",
+     "latex": "F_{D} = \\frac{1}{2}C_{D}\\rho v^{2}S"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "F_{D} = \\frac{1}{2}\\cdot 0{,}30 \\cdot 1{,}2 \\cdot 30^{2} \\cdot 2{,}0 = 324\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-luu.luc-can-va-luc-nang-khi-dong-hoc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức lực cản khí động học"
+   ],
+   "tags": [
+    "chat-luu",
+    "luc-can",
+    "khi-dong-hoc"
+   ],
+   "answer_numeric": 324.0,
+   "answer_unit": "N",
+   "tolerance": 1.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0015",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thuyết tương đối hẹp",
+   "type": "dien-so",
+   "statement_vi": "Trong hệ quy chiếu S, hai biến cố cách nhau về thời gian Δt = 5×10^−8 s (nên cΔt = 15 m) và cách nhau về không gian Δx = 9 m (Δy = Δz = 0). Tính khoảng bất biến s trong không - thời gian (m).",
+   "statement_en": "In frame S, two events are separated by Δt = 5×10^−8 s (so cΔt = 15 m) and Δx = 9 m (Δy = Δz = 0). Find the invariant spacetime interval s (m).",
+   "answer": "12 m",
+   "solution_steps": [
+    {
+     "explain": "Khoảng bất biến trong không - thời gian (dấu timelike).",
+     "latex": "s^{2} = c^{2}\\Delta t^{2} - \\Delta x^{2} - \\Delta y^{2} - \\Delta z^{2}"
+    },
+    {
+     "explain": "Thay cΔt = 15 m, Δx = 9 m.",
+     "latex": "s = \\sqrt{15^{2} - 9^{2}} = \\sqrt{144} = 12\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.tuong-doi.khoang-bat-bien-khong-thoi-gian"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính khoảng bất biến không - thời gian giữa hai biến cố"
+   ],
+   "tags": [
+    "tuong-doi",
+    "bat-bien",
+    "khong-thoi-gian"
+   ],
+   "answer_numeric": 12.0,
+   "answer_unit": "m",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0016",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thuyết tương đối hẹp",
+   "type": "dien-so",
+   "statement_vi": "Một hạt có năng lượng E = 10 GeV và động lượng p_x = 6 GeV/c trong hệ S. Hệ S' chuyển động dọc trục x với vận tốc v = 0,6c (γ = 1,25). Tính năng lượng E' của hạt trong hệ S' (GeV). Dùng đơn vị tự nhiên c = 1.",
+   "statement_en": "A particle has energy E = 10 GeV and momentum p_x = 6 GeV/c in frame S. Frame S' moves along x with v = 0.6c (γ = 1.25). Find the particle's energy E' in S' (GeV), with natural units c = 1.",
+   "answer": "8,0 GeV",
+   "solution_steps": [
+    {
+     "explain": "Phép biến đổi Lorentz của năng lượng (c = 1).",
+     "latex": "E' = \\gamma\\left(E - v\\,p_{x}\\right)"
+    },
+    {
+     "explain": "Thay γ = 1,25, v = 0,6, E = 10, p_x = 6.",
+     "latex": "E' = 1{,}25\\left(10 - 0{,}6 \\cdot 6\\right) = 1{,}25 \\cdot 6{,}4 = 8{,}0\\ \\text{GeV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.tuong-doi.bien-doi-nang-luong-dong-luong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng phép biến đổi Lorentz cho bốn vectơ năng - động lượng"
+   ],
+   "tags": [
+    "tuong-doi",
+    "lorentz",
+    "nang-luong"
+   ],
+   "answer_numeric": 8.0,
+   "answer_unit": "GeV",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0017",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Tính áp suất của 1 mol khí CO2 chiếm thể tích V = 1,0×10^−3 m^3 ở T = 300 K theo phương trình Van der Waals, với a = 0,364 Pa·m^6/mol^2 và b = 4,27×10^−5 m^3/mol. Cho R = 8,314 J/(mol·K). Đáp số theo Pa.",
+   "statement_en": "Find the pressure of 1 mol CO2 occupying V = 1.0×10^−3 m^3 at T = 300 K from the Van der Waals equation, with a = 0.364 Pa·m^6/mol^2 and b = 4.27×10^−5 m^3/mol. R = 8.314 J/(mol·K). Answer in Pa.",
+   "answer": "2,24×10^6 Pa",
+   "solution_steps": [
+    {
+     "explain": "Giải áp suất từ phương trình Van der Waals cho khí thực.",
+     "latex": "p = \\frac{nRT}{V - nb} - \\frac{an^{2}}{V^{2}}"
+    },
+    {
+     "explain": "Thay số: số hạng thứ nhất và thứ hai.",
+     "latex": "p = \\frac{8{,}314 \\cdot 300}{1{,}0\\times10^{-3} - 4{,}27\\times10^{-5}} - \\frac{0{,}364}{(10^{-3})^{2}}"
+    },
+    {
+     "explain": "Tính ra kết quả.",
+     "latex": "p \\approx 2{,}606\\times10^{6} - 3{,}64\\times10^{5} \\approx 2{,}24\\times10^{6}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.phuong-trinh-van-der-waals"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "áp dụng phương trình Van der Waals để tính áp suất khí thực"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "khi-thuc",
+    "van-der-waals"
+   ],
+   "answer_numeric": 2241000.0,
+   "answer_unit": "Pa",
+   "tolerance": 10000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0018",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Một chất khí thực hiện quá trình đa biến pV^n = const với n = 1,3, từ trạng thái (p1 = 2×10^5 Pa, V1 = 1,0×10^−3 m^3) đến (p2 = 1×10^5 Pa, V2 = 1,5×10^−3 m^3). Tính công khí sinh ra (J).",
+   "statement_en": "A gas undergoes a polytropic process pV^n = const with n = 1.3, from (p1 = 2×10^5 Pa, V1 = 1.0×10^−3 m^3) to (p2 = 1×10^5 Pa, V2 = 1.5×10^−3 m^3). Find the work done by the gas (J).",
+   "answer": "166,7 J",
+   "solution_steps": [
+    {
+     "explain": "Công sinh ra trong quá trình đa biến.",
+     "latex": "A' = \\frac{p_{1}V_{1} - p_{2}V_{2}}{n - 1}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "A' = \\frac{2\\times10^{5}\\cdot 10^{-3} - 1\\times10^{5}\\cdot 1{,}5\\times10^{-3}}{1{,}3 - 1} = \\frac{200 - 150}{0{,}3} \\approx 166{,}7\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.qua-trinh-da-bien"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính công của quá trình đa biến (polytropic)"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "da-bien",
+    "cong"
+   ],
+   "answer_numeric": 166.7,
+   "answer_unit": "J",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0019",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Một nhiệt lượng Q = 1000 J truyền tự phát từ nguồn nóng T1 = 400 K sang nguồn lạnh T2 = 300 K (coi hai nguồn có nhiệt độ không đổi). Tính độ biến thiên entropy của hệ cô lập (J/K).",
+   "statement_en": "Heat Q = 1000 J flows spontaneously from a hot reservoir T1 = 400 K to a cold one T2 = 300 K (both at constant temperature). Find the entropy change of the isolated system (J/K).",
+   "answer": "0,833 J/K",
+   "solution_steps": [
+    {
+     "explain": "Theo nguyên lí tăng entropy, quá trình bất thuận nghịch làm entropy hệ cô lập tăng. Nguồn nóng mất Q, nguồn lạnh nhận Q.",
+     "latex": "\\Delta S = \\frac{-Q}{T_{1}} + \\frac{Q}{T_{2}} = Q\\left(\\frac{1}{T_{2}} - \\frac{1}{T_{1}}\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Delta S = 1000\\left(\\frac{1}{300} - \\frac{1}{400}\\right) \\approx 0{,}833\\ \\text{J/K} > 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.nguyen-li-tang-entropy"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính biến thiên entropy của quá trình truyền nhiệt bất thuận nghịch"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "entropy",
+    "bat-thuan-nghich"
+   ],
+   "answer_numeric": 0.8333,
+   "answer_unit": "J/K",
+   "tolerance": 0.005
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0020",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Một hệ thực hiện một quá trình thuận nghịch vi phân với dS = 2 J/K ở nhiệt độ T = 350 K, đồng thời giãn nở dV = 5×10^−4 m^3 dưới áp suất p = 1×10^5 Pa. Tính độ biến thiên nội năng dU (J).",
+   "statement_en": "A system undergoes a reversible differential process with dS = 2 J/K at T = 350 K, expanding by dV = 5×10^−4 m^3 at pressure p = 1×10^5 Pa. Find the internal energy change dU (J).",
+   "answer": "650 J",
+   "solution_steps": [
+    {
+     "explain": "Hệ thức cơ bản của nhiệt động lực học nối nội năng với entropy và thể tích.",
+     "latex": "dU = T\\,dS - p\\,dV"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "dU = 350 \\cdot 2 - 1\\times10^{5}\\cdot 5\\times10^{-4} = 700 - 50 = 650\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.he-thuc-co-ban-nhiet-dong-luc-hoc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng hệ thức cơ bản dU = TdS − pdV"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "noi-nang",
+    "entropy"
+   ],
+   "answer_numeric": 650.0,
+   "answer_unit": "J",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0021",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Ở nhiệt độ T = 300 K, một hệ có enthalpy H = 500 J và entropy S = 1,2 J/K. Tính thế Gibbs G = H − TS của hệ (J).",
+   "statement_en": "At T = 300 K a system has enthalpy H = 500 J and entropy S = 1.2 J/K. Find its Gibbs free energy G = H − TS (J).",
+   "answer": "140 J",
+   "solution_steps": [
+    {
+     "explain": "Định nghĩa thế Gibbs.",
+     "latex": "G = H - TS"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "G = 500 - 300 \\cdot 1{,}2 = 500 - 360 = 140\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.enthalpy-va-the-helmholtz-gibbs"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính thế Gibbs từ enthalpy và entropy"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "gibbs",
+    "the-nhiet-dong"
+   ],
+   "answer_numeric": 140.0,
+   "answer_unit": "J",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0022",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Dùng hệ thức Maxwell (∂S/∂V)_T = (∂p/∂T)_V cho 2 mol khí lí tưởng chiếm thể tích V = 0,02 m^3. Tính giá trị của (∂S/∂V)_T (đơn vị J/(K·m^3)). Cho R = 8,314 J/(mol·K).",
+   "statement_en": "Using the Maxwell relation (∂S/∂V)_T = (∂p/∂T)_V for 2 mol of ideal gas occupying V = 0.02 m^3, find (∂S/∂V)_T (in J/(K·m^3)). R = 8.314 J/(mol·K).",
+   "answer": "831,4 J/(K·m^3)",
+   "solution_steps": [
+    {
+     "explain": "Hệ thức Maxwell rút từ thế Helmholtz F liên hệ đạo hàm entropy và áp suất.",
+     "latex": "\\left(\\frac{\\partial S}{\\partial V}\\right)_{T} = \\left(\\frac{\\partial p}{\\partial T}\\right)_{V}"
+    },
+    {
+     "explain": "Với khí lí tưởng p = nRT/V nên (∂p/∂T)_V = nR/V.",
+     "latex": "\\left(\\frac{\\partial S}{\\partial V}\\right)_{T} = \\frac{nR}{V} = \\frac{2 \\cdot 8{,}314}{0{,}02} \\approx 831{,}4"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.he-thuc-maxwell-nhiet-dong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "vận dụng hệ thức Maxwell",
+    "tính đạo hàm của áp suất khí lí tưởng theo nhiệt độ"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "maxwell",
+    "khi-li-tuong"
+   ],
+   "answer_numeric": 831.4,
+   "answer_unit": "J/(K·m^3)",
+   "tolerance": 1.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0023",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Nước có nhiệt hóa hơi mol L_m = 40700 J/mol. Ở T1 = 373 K áp suất hơi bão hòa p1 = 1,013×10^5 Pa. Ước lượng áp suất hơi bão hòa ở T2 = 353 K theo phương trình Clausius - Clapeyron (Pa). Cho R = 8,314 J/(mol·K).",
+   "statement_en": "Water has molar latent heat L_m = 40700 J/mol. At T1 = 373 K the saturated vapor pressure is p1 = 1.013×10^5 Pa. Estimate the vapor pressure at T2 = 353 K using the Clausius - Clapeyron equation (Pa). R = 8.314 J/(mol·K).",
+   "answer": "4,82×10^4 Pa",
+   "solution_steps": [
+    {
+     "explain": "Dạng tích phân của phương trình Clapeyron - Clausius.",
+     "latex": "\\ln\\frac{p_{2}}{p_{1}} = -\\frac{L_{m}}{R}\\left(\\frac{1}{T_{2}} - \\frac{1}{T_{1}}\\right)"
+    },
+    {
+     "explain": "Thay số vào số mũ.",
+     "latex": "\\ln\\frac{p_{2}}{p_{1}} = -\\frac{40700}{8{,}314}\\left(\\frac{1}{353} - \\frac{1}{373}\\right) \\approx -0{,}744"
+    },
+    {
+     "explain": "Suy ra p2.",
+     "latex": "p_{2} = 1{,}013\\times10^{5}\\,e^{-0{,}744} \\approx 4{,}82\\times10^{4}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.nhiet-hoc.phuong-trinh-clapeyron-clausius"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "áp dụng phương trình Clausius - Clapeyron cho áp suất hơi bão hòa"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "chuyen-pha",
+    "clausius-clapeyron"
+   ],
+   "answer_numeric": 48200.0,
+   "answer_unit": "Pa",
+   "tolerance": 300.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0024",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Khí trong bình có mật độ phân tử n0 = 2,5×10^25 m^−3 và tốc độ trung bình v̄ = 450 m/s. Trên thành bình có lỗ nhỏ diện tích S = 1,0×10^−6 m^2. Tính số phân tử thoát ra mỗi giây qua lỗ (s^−1).",
+   "statement_en": "A gas has number density n0 = 2.5×10^25 m^−3 and mean speed v̄ = 450 m/s. A small hole of area S = 1.0×10^−6 m^2 is in the wall. Find the number of molecules escaping per second (s^−1).",
+   "answer": "2,81×10^21 s^−1",
+   "solution_steps": [
+    {
+     "explain": "Số phân tử va chạm (và thoát) qua diện tích S mỗi giây theo lí thuyết thoát khí.",
+     "latex": "\\frac{dN}{dt} = \\frac{1}{4}n_{0}\\overline{v}\\,S"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\frac{dN}{dt} = \\frac{1}{4}\\cdot 2{,}5\\times10^{25}\\cdot 450 \\cdot 10^{-6} \\approx 2{,}81\\times10^{21}\\ \\text{s}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-thong-ke.so-va-cham-len-thanh-binh"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính tốc độ thoát khí qua lỗ nhỏ"
+   ],
+   "tags": [
+    "thong-ke",
+    "thoat-khi",
+    "va-cham"
+   ],
+   "answer_numeric": 2.8125e+21,
+   "answer_unit": "s^-1",
+   "tolerance": 1e+19
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0025",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Hai lớp khí trượt tương đối với gradient vận tốc du/dx = 200 s^−1 qua diện tiếp xúc S = 0,5 m^2. Hệ số nhớt của khí η = 1,8×10^−5 Pa·s. Tính độ lớn lực nội ma sát (N).",
+   "statement_en": "Two gas layers slide with velocity gradient du/dx = 200 s^−1 across a contact area S = 0.5 m^2. The gas viscosity is η = 1.8×10^−5 Pa·s. Find the magnitude of the internal-friction force (N).",
+   "answer": "1,8×10^−3 N",
+   "solution_steps": [
+    {
+     "explain": "Định luật Newton về độ nhớt (nội ma sát).",
+     "latex": "F = \\eta\\,\\frac{du}{dx}\\,S"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "F = 1{,}8\\times10^{-5}\\cdot 200 \\cdot 0{,}5 = 1{,}8\\times10^{-3}\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-thong-ke.hien-tuong-noi-ma-sat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng định luật Newton về độ nhớt để tính lực nội ma sát"
+   ],
+   "tags": [
+    "thong-ke",
+    "do-nhot",
+    "noi-ma-sat"
+   ],
+   "answer_numeric": 0.0018,
+   "answer_unit": "N",
+   "tolerance": 1e-05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0026",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện trường",
+   "type": "dien-so",
+   "statement_vi": "Một lưỡng cực điện có mômen p_e = 6,0×10^−30 C·m. Tính cường độ điện trường trên trục lưỡng cực tại khoảng cách r = 1,0×10^−9 m (V/m). Cho 1/(4πε0) = 8,99×10^9 N·m^2/C^2.",
+   "statement_en": "An electric dipole has moment p_e = 6.0×10^−30 C·m. Find the electric field on the dipole axis at r = 1.0×10^−9 m (V/m). 1/(4πε0) = 8.99×10^9 N·m^2/C^2.",
+   "answer": "1,08×10^8 V/m",
+   "solution_steps": [
+    {
+     "explain": "Cường độ điện trường trên trục lưỡng cực.",
+     "latex": "E_{truc} = \\frac{2p_{e}}{4\\pi\\varepsilon_{0}r^{3}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "E_{truc} = 8{,}99\\times10^{9}\\cdot\\frac{2 \\cdot 6{,}0\\times10^{-30}}{(1{,}0\\times10^{-9})^{3}} \\approx 1{,}08\\times10^{8}\\ \\text{V/m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-truong.dien-truong-cua-luong-cuc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính điện trường của lưỡng cực trên trục"
+   ],
+   "tags": [
+    "dien-truong",
+    "luong-cuc",
+    "dien-truong-truc"
+   ],
+   "answer_numeric": 107800000.0,
+   "answer_unit": "V/m",
+   "tolerance": 1000000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0027",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện trường",
+   "type": "dien-so",
+   "statement_vi": "Hai điện tích điểm q1 = q2 = 2,0×10^−6 C đặt cách nhau d = 0,10 m trong chân không. Tính năng lượng tương tác của hệ (J). Cho 1/(4πε0) = 8,99×10^9 N·m^2/C^2.",
+   "statement_en": "Two point charges q1 = q2 = 2.0×10^−6 C are separated by d = 0.10 m in vacuum. Find the interaction energy of the system (J). 1/(4πε0) = 8.99×10^9 N·m^2/C^2.",
+   "answer": "0,36 J",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng tương tác của hệ điện tích: W = (1/2)Σ q_i V_i. Với hai điện tích, mỗi điện tích nằm trong điện thế do điện tích kia gây ra.",
+     "latex": "W = \\frac{1}{2}\\left(q_{1}\\frac{kq_{2}}{d} + q_{2}\\frac{kq_{1}}{d}\\right) = \\frac{kq_{1}q_{2}}{d}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "W = \\frac{8{,}99\\times10^{9}\\cdot (2{,}0\\times10^{-6})^{2}}{0{,}10} \\approx 0{,}36\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-truong.nang-luong-tuong-tac-he-dien-tich"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính năng lượng tương tác của hệ hai điện tích"
+   ],
+   "tags": [
+    "dien-truong",
+    "nang-luong",
+    "tuong-tac"
+   ],
+   "answer_numeric": 0.3595,
+   "answer_unit": "J",
+   "tolerance": 0.005
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0028",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Từ trường",
+   "type": "dien-so",
+   "statement_vi": "Một khung phẳng diện tích S = 0,02 m^2 đặt trong từ trường đều B = 0,5 T. Pháp tuyến của khung hợp với B một góc 60°. Tính từ thông qua khung (Wb).",
+   "statement_en": "A flat loop of area S = 0.02 m^2 is placed in a uniform field B = 0.5 T. The loop normal makes 60° with B. Find the magnetic flux through the loop (Wb).",
+   "answer": "5×10^−3 Wb",
+   "solution_steps": [
+    {
+     "explain": "Từ thông qua mặt phẳng trong từ trường đều.",
+     "latex": "\\Phi = BS\\cos\\alpha"
+    },
+    {
+     "explain": "Thay số với α = 60°, cos 60° = 0,5.",
+     "latex": "\\Phi = 0{,}5 \\cdot 0{,}02 \\cdot 0{,}5 = 5\\times10^{-3}\\ \\text{Wb}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.tu-truong.dinh-li-gauss-tu-truong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính từ thông qua một mặt phẳng"
+   ],
+   "tags": [
+    "tu-truong",
+    "tu-thong",
+    "gauss"
+   ],
+   "answer_numeric": 0.005,
+   "answer_unit": "Wb",
+   "tolerance": 0.0001
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0029",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Từ trường",
+   "type": "dien-so",
+   "statement_vi": "Một lõi sắt từ có độ cảm từ χ_m = 499 đặt trong từ trường có cường độ H = 1000 A/m. Tính cảm ứng từ B trong lõi (T). Cho μ0 = 4π×10^−7 T·m/A.",
+   "statement_en": "An iron core with magnetic susceptibility χ_m = 499 is placed in a field of strength H = 1000 A/m. Find the magnetic flux density B in the core (T). μ0 = 4π×10^−7 T·m/A.",
+   "answer": "0,628 T",
+   "solution_steps": [
+    {
+     "explain": "Độ từ thẩm tương đối liên hệ với độ cảm từ, và B = μ0 μ H.",
+     "latex": "\\mu = 1 + \\chi_{m} = 500, \\quad \\vec{B} = \\mu_{0}\\mu\\vec{H}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "B = 4\\pi\\times10^{-7}\\cdot 500 \\cdot 1000 \\approx 0{,}628\\ \\text{T}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.tu-truong.vecto-tu-hoa-va-cuong-do-tu-truong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính cảm ứng từ trong môi trường từ theo H và độ từ thẩm"
+   ],
+   "tags": [
+    "tu-truong",
+    "tu-hoa",
+    "do-tu-tham"
+   ],
+   "answer_numeric": 0.6283,
+   "answer_unit": "T",
+   "tolerance": 0.005
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0030",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Từ trường",
+   "type": "dien-so",
+   "statement_vi": "Một muối thuận từ tuân theo định luật Curie χ_m = C/T. Ở T = 300 K đo được χ_m = 8,0×10^−4. Tính độ cảm từ của muối này ở T = 150 K.",
+   "statement_en": "A paramagnetic salt obeys the Curie law χ_m = C/T. At T = 300 K, χ_m = 8.0×10^−4. Find its susceptibility at T = 150 K.",
+   "answer": "1,6×10^−3",
+   "solution_steps": [
+    {
+     "explain": "Định luật Curie: hằng số Curie C = χ_m·T không đổi.",
+     "latex": "\\chi_{m} = \\frac{C}{T} \\;\\Rightarrow\\; C = \\chi_{m}T = 8{,}0\\times10^{-4}\\cdot 300 = 0{,}24\\ \\text{K}"
+    },
+    {
+     "explain": "Áp dụng ở nhiệt độ mới.",
+     "latex": "\\chi_{m}(150) = \\frac{0{,}24}{150} = 1{,}6\\times10^{-3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.tu-truong.cac-loai-vat-lieu-tu-va-dinh-luat-curie"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "vận dụng định luật Curie cho vật liệu thuận từ"
+   ],
+   "tags": [
+    "tu-truong",
+    "thuan-tu",
+    "curie"
+   ],
+   "answer_numeric": 0.0016,
+   "answer_unit": "",
+   "tolerance": 1e-05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0031",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện từ trường",
+   "type": "dien-so",
+   "statement_vi": "Một cuộn cảm có độ tự cảm L = 0,20 H. Cường độ dòng điện qua cuộn biến thiên đều với tốc độ dI/dt = 50 A/s. Tính độ lớn suất điện động tự cảm (V).",
+   "statement_en": "An inductor has inductance L = 0.20 H. The current through it changes uniformly at dI/dt = 50 A/s. Find the magnitude of the self-induced emf (V).",
+   "answer": "10 V",
+   "solution_steps": [
+    {
+     "explain": "Suất điện động tự cảm tỉ lệ với tốc độ biến thiên dòng điện.",
+     "latex": "\\left|\\mathcal{E}_{tc}\\right| = L\\left|\\frac{dI}{dt}\\right|"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\left|\\mathcal{E}_{tc}\\right| = 0{,}20 \\cdot 50 = 10\\ \\text{V}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-tu-truong.hien-tuong-tu-cam-va-ho-cam"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính suất điện động tự cảm"
+   ],
+   "tags": [
+    "dien-tu",
+    "tu-cam",
+    "suat-dien-dong"
+   ],
+   "answer_numeric": 10.0,
+   "answer_unit": "V",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0032",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mạch điện",
+   "type": "dien-so",
+   "statement_vi": "Mạch RLC nối tiếp có R = 20 Ω, L = 0,10 H, C = 1,0×10^−5 F, dao động tự do tắt dần. Tính tần số góc của dao động tắt dần ω = sqrt(ω0^2 − β^2) (rad/s).",
+   "statement_en": "A series RLC circuit with R = 20 Ω, L = 0.10 H, C = 1.0×10^−5 F undergoes free damped oscillation. Find the damped angular frequency ω = sqrt(ω0^2 − β^2) (rad/s).",
+   "answer": "995 rad/s",
+   "solution_steps": [
+    {
+     "explain": "Hệ số tắt dần và tần số riêng của mạch RLC.",
+     "latex": "\\beta = \\frac{R}{2L} = \\frac{20}{0{,}2} = 100\\ \\text{s}^{-1}, \\quad \\omega_{0} = \\frac{1}{\\sqrt{LC}} = 1000\\ \\text{rad/s}"
+    },
+    {
+     "explain": "Tần số góc dao động tắt dần.",
+     "latex": "\\omega = \\sqrt{\\omega_{0}^{2} - \\beta^{2}} = \\sqrt{1000^{2} - 100^{2}} \\approx 995\\ \\text{rad/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.mach-dien.phuong-trinh-vi-phan-mach-rlc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính hệ số tắt dần và tần số dao động tắt dần của mạch RLC"
+   ],
+   "tags": [
+    "mach-dien",
+    "rlc",
+    "dao-dong-tat-dan"
+   ],
+   "answer_numeric": 994.99,
+   "answer_unit": "rad/s",
+   "tolerance": 1.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0033",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mạch điện",
+   "type": "dien-so",
+   "statement_vi": "Trong một dây dẫn có mật độ dòng điện j = 5,0×10^6 A/m^2 và điện trở suất ρ = 1,7×10^−8 Ω·m. Tính công suất tỏa nhiệt trên một đơn vị thể tích (W/m^3).",
+   "statement_en": "In a conductor the current density is j = 5.0×10^6 A/m^2 and resistivity ρ = 1.7×10^−8 Ω·m. Find the heat power dissipated per unit volume (W/m^3).",
+   "answer": "4,25×10^5 W/m^3",
+   "solution_steps": [
+    {
+     "explain": "Định luật Joule - Lenz dạng vi phân: mật độ công suất tỏa nhiệt.",
+     "latex": "w = \\rho j^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "w = 1{,}7\\times10^{-8}\\cdot (5{,}0\\times10^{6})^{2} = 4{,}25\\times10^{5}\\ \\text{W/m}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.mach-dien.dinh-luat-ohm-dang-vi-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng định luật Joule - Lenz dạng vi phân"
+   ],
+   "tags": [
+    "mach-dien",
+    "joule-lenz",
+    "mat-do-cong-suat"
+   ],
+   "answer_numeric": 425000.0,
+   "answer_unit": "W/m^3",
+   "tolerance": 1000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0034",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "dien-so",
+   "statement_vi": "Thấu kính đặt trên bản thủy tinh phẳng tạo vân tròn Newton với ánh sáng λ = 600 nm. Bán kính cong mặt cầu R = 2,0 m. Tính bán kính vân tối thứ k = 5 quan sát trong ánh sáng phản xạ (mm).",
+   "statement_en": "A lens on a flat glass plate produces Newton's rings with light of λ = 600 nm. The spherical surface has radius R = 2.0 m. Find the radius of the 5th dark ring (k = 5) in reflected light (mm).",
+   "answer": "2,45 mm",
+   "solution_steps": [
+    {
+     "explain": "Bán kính vân tối thứ k trong vân tròn Newton (ánh sáng phản xạ).",
+     "latex": "r_{k}^{toi} = \\sqrt{k\\lambda R}"
+    },
+    {
+     "explain": "Thay số với k = 5, λ = 600 nm, R = 2,0 m.",
+     "latex": "r_{5} = \\sqrt{5 \\cdot 600\\times10^{-9}\\cdot 2{,}0} \\approx 2{,}45\\times10^{-3}\\ \\text{m} = 2{,}45\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.nem-khong-khi-va-van-tron-newton"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính bán kính vân tròn Newton"
+   ],
+   "tags": [
+    "quang-song",
+    "van-newton",
+    "giao-thoa"
+   ],
+   "answer_numeric": 2.449,
+   "answer_unit": "mm",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0035",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "dien-so",
+   "statement_vi": "Trong giao thoa kế Michelson dùng ánh sáng λ = 500 nm, khi dịch chuyển gương một đoạn Δd người ta đếm được N = 1000 vân dịch qua. Tính Δd (mm).",
+   "statement_en": "In a Michelson interferometer with light λ = 500 nm, moving a mirror by Δd shifts N = 1000 fringes. Find Δd (mm).",
+   "answer": "0,25 mm",
+   "solution_steps": [
+    {
+     "explain": "Mỗi vân dịch ứng với đường đi thay đổi λ/2, nên độ dịch gương liên hệ số vân.",
+     "latex": "\\Delta d = N\\frac{\\lambda}{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Delta d = 1000 \\cdot \\frac{500\\times10^{-9}}{2} = 2{,}5\\times10^{-4}\\ \\text{m} = 0{,}25\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.giao-thoa-ke-michelson"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ số vân dịch với độ dịch gương trong giao thoa kế Michelson"
+   ],
+   "tags": [
+    "quang-song",
+    "michelson",
+    "giao-thoa"
+   ],
+   "answer_numeric": 0.25,
+   "answer_unit": "mm",
+   "tolerance": 0.005
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0036",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "dien-so",
+   "statement_vi": "Thạch anh có hiệu chiết suất |n_e − n_o| = 0,009. Tính bề dày tối thiểu của bản một phần tư sóng (bản λ/4) cho ánh sáng natri λ = 589 nm (μm).",
+   "statement_en": "Quartz has birefringence |n_e − n_o| = 0.009. Find the minimum thickness of a quarter-wave plate for sodium light λ = 589 nm (μm).",
+   "answer": "16,4 μm",
+   "solution_steps": [
+    {
+     "explain": "Bề dày bản một phần tư sóng.",
+     "latex": "d_{\\lambda/4} = \\frac{\\lambda}{4\\,|n_{e} - n_{o}|}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "d = \\frac{589\\times10^{-9}}{4 \\cdot 0{,}009} \\approx 1{,}64\\times10^{-5}\\ \\text{m} = 16{,}4\\ \\mu\\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.luong-chiet-va-ban-song"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính bề dày bản một phần tư sóng từ lưỡng chiết"
+   ],
+   "tags": [
+    "quang-song",
+    "luong-chiet",
+    "ban-song"
+   ],
+   "answer_numeric": 16.36,
+   "answer_unit": "um",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0037",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "dien-so",
+   "statement_vi": "Ánh sáng truyền qua môi trường hấp thụ có hệ số hấp thụ α = 0,50 cm^−1. Tính tỉ số cường độ I/I0 sau khi đi qua bề dày x = 4,0 cm.",
+   "statement_en": "Light passes through an absorbing medium with absorption coefficient α = 0.50 cm^−1. Find the intensity ratio I/I0 after traversing a thickness x = 4.0 cm.",
+   "answer": "0,135",
+   "solution_steps": [
+    {
+     "explain": "Định luật hấp thụ Bouguer - Lambert.",
+     "latex": "I = I_{0}e^{-\\alpha x} \\;\\Rightarrow\\; \\frac{I}{I_{0}} = e^{-\\alpha x}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\frac{I}{I_{0}} = e^{-0{,}50 \\cdot 4{,}0} = e^{-2} \\approx 0{,}135"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.dinh-luat-hap-thu-bouguer-lambert"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định luật hấp thụ ánh sáng Bouguer - Lambert"
+   ],
+   "tags": [
+    "quang-song",
+    "hap-thu",
+    "bouguer-lambert"
+   ],
+   "answer_numeric": 0.1353,
+   "answer_unit": "",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0038",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang hình học",
+   "type": "dien-so",
+   "statement_vi": "Một chùm sáng song song từ không khí (n1 = 1,0) tới một mặt cầu lồi bán kính R = 0,30 m của khối thủy tinh (n2 = 1,5). Xác định vị trí ảnh (khoảng cách d' tính từ đỉnh mặt cầu, trong thủy tinh) (m).",
+   "statement_en": "A parallel beam from air (n1 = 1.0) strikes a convex spherical surface of radius R = 0.30 m of a glass block (n2 = 1.5). Find the image distance d' from the vertex, inside the glass (m).",
+   "answer": "0,90 m",
+   "solution_steps": [
+    {
+     "explain": "Công thức khúc xạ qua một mặt cầu. Chùm song song ứng với vật ở vô cực (1/d = 0).",
+     "latex": "\\frac{n_{2}}{d'} - \\frac{n_{1}}{d} = \\frac{n_{2} - n_{1}}{R} \\;\\xrightarrow{d \\to \\infty}\\; \\frac{n_{2}}{d'} = \\frac{n_{2} - n_{1}}{R}"
+    },
+    {
+     "explain": "Suy ra d'.",
+     "latex": "d' = \\frac{n_{2}R}{n_{2} - n_{1}} = \\frac{1{,}5 \\cdot 0{,}30}{0{,}5} = 0{,}90\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-hinh.cong-thuc-luong-mat-cau-khuc-xa"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng công thức lưỡng chất cầu với vật ở vô cực"
+   ],
+   "tags": [
+    "quang-hinh",
+    "mat-cau",
+    "khuc-xa"
+   ],
+   "answer_numeric": 0.9,
+   "answer_unit": "m",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0039",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang hình học",
+   "type": "dien-so",
+   "statement_vi": "Một kính thiên văn ngắm chừng ở vô cực có tiêu cự vật kính f1 = 100 cm và tiêu cự thị kính f2 = 2,5 cm. Tính độ bội giác của kính.",
+   "statement_en": "A telescope in normal (relaxed) adjustment has objective focal length f1 = 100 cm and eyepiece focal length f2 = 2.5 cm. Find its angular magnification.",
+   "answer": "40",
+   "solution_steps": [
+    {
+     "explain": "Độ bội giác của kính thiên văn ngắm chừng ở vô cực.",
+     "latex": "G_{tv}^{\\infty} = \\frac{f_{1}}{f_{2}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "G = \\frac{100}{2{,}5} = 40"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-hinh.do-boi-giac-kinh-hien-vi-va-kinh-thien-van"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính độ bội giác kính thiên văn"
+   ],
+   "tags": [
+    "quang-hinh",
+    "kinh-thien-van",
+    "boi-giac"
+   ],
+   "answer_numeric": 40.0,
+   "answer_unit": "",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0040",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí lượng tử của bức xạ",
+   "type": "dien-so",
+   "statement_vi": "Theo công thức Rayleigh - Jeans, tính mật độ năng lượng phổ theo tần số r_{ν,T} của bức xạ vật đen ở tần số ν = 1,0×10^12 Hz và nhiệt độ T = 300 K. Cho k = 1,38×10^−23 J/K, c = 3,0×10^8 m/s. Đáp số theo J·s/m^3.",
+   "statement_en": "Using the Rayleigh - Jeans formula, find the spectral energy density (per frequency) r_{ν,T} of blackbody radiation at ν = 1.0×10^12 Hz and T = 300 K. k = 1.38×10^−23 J/K, c = 3.0×10^8 m/s. Answer in J·s/m^3.",
+   "answer": "2,89×10^−13",
+   "solution_steps": [
+    {
+     "explain": "Công thức Rayleigh - Jeans cho năng suất phát xạ / mật độ phổ theo tần số.",
+     "latex": "r_{\\nu,T} = \\frac{2\\pi\\nu^{2}}{c^{2}}kT"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "r_{\\nu,T} = \\frac{2\\pi (10^{12})^{2}}{(3{,}0\\times10^{8})^{2}}\\cdot 1{,}38\\times10^{-23}\\cdot 300 \\approx 2{,}89\\times10^{-13}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.buc-xa.cong-thuc-rayleigh-jeans"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng công thức Rayleigh - Jeans cho mật độ phổ bức xạ"
+   ],
+   "tags": [
+    "buc-xa",
+    "rayleigh-jeans",
+    "vat-den"
+   ],
+   "answer_numeric": 2.89e-13,
+   "answer_unit": "J·s/m^3",
+   "tolerance": 5e-15
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0041",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Theo nguyên lí loại trừ Pauli, tính số electron tối đa có thể chiếm lớp electron ứng với số lượng tử chính n = 4.",
+   "statement_en": "By the Pauli exclusion principle, find the maximum number of electrons in the shell with principal quantum number n = 4.",
+   "answer": "32",
+   "solution_steps": [
+    {
+     "explain": "Số electron tối đa của lớp n là tổng theo các phân lớp, cho kết quả gọn 2n^2.",
+     "latex": "Z(n) = \\sum_{\\ell=0}^{n-1}2(2\\ell+1) = 2n^{2}"
+    },
+    {
+     "explain": "Thay n = 4.",
+     "latex": "Z(4) = 2 \\cdot 4^{2} = 32"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu.nguyen-li-pauli-va-cau-hinh-electron"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng nguyên lí Pauli để đếm số electron tối đa của một lớp"
+   ],
+   "tags": [
+    "luong-tu",
+    "pauli",
+    "cau-hinh-electron"
+   ],
+   "answer_numeric": 32.0,
+   "answer_unit": "",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0042",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Trong thí nghiệm Stern - Gerlach, nguyên tử có mômen từ cỡ magneton Bohr μ_B = 9,27×10^−24 J/T đi qua vùng có gradient từ trường ∂B_z/∂z = 100 T/m. Tính độ lớn lực tác dụng lên nguyên tử (N).",
+   "statement_en": "In a Stern - Gerlach experiment, an atom with magnetic moment of order the Bohr magneton μ_B = 9.27×10^−24 J/T passes through a field gradient ∂B_z/∂z = 100 T/m. Find the magnitude of the force on the atom (N).",
+   "answer": "9,27×10^−22 N",
+   "solution_steps": [
+    {
+     "explain": "Lực dọc trục lên mômen từ trong từ trường không đều.",
+     "latex": "\\left|F_{z}\\right| = \\mu_{B}\\left|\\frac{\\partial B_{z}}{\\partial z}\\right|"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\left|F_{z}\\right| = 9{,}27\\times10^{-24}\\cdot 100 = 9{,}27\\times10^{-22}\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu.thi-nghiem-stern-gerlach"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính lực từ lên mômen từ trong thí nghiệm Stern - Gerlach"
+   ],
+   "tags": [
+    "luong-tu",
+    "stern-gerlach",
+    "spin"
+   ],
+   "answer_numeric": 9.27e-22,
+   "answer_unit": "N",
+   "tolerance": 1e-24
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0043",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí hạt nhân",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức bán thực nghiệm Weizsäcker với a_V = 15,75; a_S = 17,80; a_C = 0,711; a_A = 23,70 MeV và số hạng ghép cặp δ = +a_P/√A với a_P = 11,18 MeV, tính năng lượng liên kết của hạt nhân sắt Fe-56 (Z = 26, A = 56) (MeV).",
+   "statement_en": "Using the Weizsäcker semi-empirical formula with a_V = 15.75, a_S = 17.80, a_C = 0.711, a_A = 23.70 MeV and pairing term δ = +a_P/√A with a_P = 11.18 MeV, find the binding energy of iron Fe-56 (Z = 26, A = 56) (MeV).",
+   "answer": "495 MeV",
+   "solution_steps": [
+    {
+     "explain": "Công thức mẫu giọt chất lỏng của Weizsäcker.",
+     "latex": "W_{lk} = a_{V}A - a_{S}A^{2/3} - a_{C}\\frac{Z(Z-1)}{A^{1/3}} - a_{A}\\frac{(A-2Z)^{2}}{A} + \\delta"
+    },
+    {
+     "explain": "Với Fe-56 chẵn - chẵn nên δ = +11,18/√56 ≈ +1,49 MeV; A − 2Z = 4.",
+     "latex": "W_{lk} = 15{,}75\\cdot 56 - 17{,}80\\cdot 56^{2/3} - 0{,}711\\frac{26\\cdot 25}{56^{1/3}} - 23{,}70\\frac{4^{2}}{56} + 1{,}49"
+    },
+    {
+     "explain": "Cộng lại.",
+     "latex": "W_{lk} \\approx 882 - 269{,}5 - 123{,}6 + (-6{,}77) + 1{,}49 \\approx 495\\ \\text{MeV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.hat-nhan.cong-thuc-ban-thuc-nghiem-weizsacker"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 9,
+   "skills": [
+    "áp dụng công thức bán thực nghiệm Weizsäcker",
+    "xác định dấu số hạng ghép cặp"
+   ],
+   "tags": [
+    "hat-nhan",
+    "weizsacker",
+    "nang-luong-lien-ket"
+   ],
+   "answer_numeric": 495.4,
+   "answer_unit": "MeV",
+   "tolerance": 2.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0044",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí hạt nhân",
+   "type": "dien-so",
+   "statement_vi": "Trong chuỗi phóng xạ, Ra-226 (chu kì bán rã T1 = 1600 năm) cân bằng thế kỉ với con cháu Rn-222 (T2 = 3,8 ngày). Tính tỉ số số hạt nhân N(Ra)/N(Rn) ở trạng thái cân bằng.",
+   "statement_en": "In a decay chain, Ra-226 (half-life T1 = 1600 yr) is in secular equilibrium with its daughter Rn-222 (T2 = 3.8 days). Find the ratio of nuclei N(Ra)/N(Rn) at equilibrium.",
+   "answer": "1,54×10^5",
+   "solution_steps": [
+    {
+     "explain": "Cân bằng thế kỉ: hoạt độ hai đồng vị bằng nhau, nên tỉ số số hạt bằng tỉ số chu kì bán rã.",
+     "latex": "\\lambda_{1}N_{1} = \\lambda_{2}N_{2} \\;\\Rightarrow\\; \\frac{N_{1}}{N_{2}} = \\frac{T_{1}}{T_{2}}"
+    },
+    {
+     "explain": "Đổi 1600 năm ra ngày rồi chia.",
+     "latex": "\\frac{N_{1}}{N_{2}} = \\frac{1600 \\cdot 365{,}25}{3{,}8} \\approx 1{,}54\\times10^{5}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.hat-nhan.chuoi-phong-xa-can-bang-the-ki"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng điều kiện cân bằng thế kỉ trong chuỗi phóng xạ"
+   ],
+   "tags": [
+    "hat-nhan",
+    "phong-xa",
+    "can-bang-the-ki"
+   ],
+   "answer_numeric": 153800.0,
+   "answer_unit": "",
+   "tolerance": 2000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0045",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí hạt nhân",
+   "type": "trac-nghiem",
+   "statement_vi": "Hạt nhân U-238 (Z = 92) phóng xạ α. Hạt nhân con tạo thành là hạt nhân nào?",
+   "statement_en": "The nucleus U-238 (Z = 92) undergoes α decay. What is the daughter nucleus?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Trong phân rã α, số khối giảm 4 và số proton giảm 2 theo định luật bảo toàn.",
+     "latex": "^{238}_{92}\\mathrm{U} \\rightarrow\\, ^{234}_{90}\\mathrm{Y} + ^{4}_{2}\\mathrm{He}"
+    },
+    {
+     "explain": "Z = 90 là nguyên tố Thori (Th).",
+     "latex": "^{234}_{90}\\mathrm{Th}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.hat-nhan.cac-dinh-luat-bao-toan-phan-ra"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định luật bảo toàn số khối và điện tích cho phân rã α"
+   ],
+   "tags": [
+    "hat-nhan",
+    "phong-xa",
+    "phan-ra-alpha"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Th-234 (Z = 90, A = 234)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Pa-234 (Z = 91, A = 234)",
+     "why_wrong": "Đây là sản phẩm phân rã β− tiếp theo của Th-234, khi đó Z tăng thêm 1 chứ không phải phân rã α."
+    },
+    {
+     "key": "C",
+     "text": "U-234 (Z = 92, A = 234)",
+     "why_wrong": "Chỉ giảm 4 số khối mà giữ nguyên Z là sai, vì hạt α mang đi 2 proton."
+    },
+    {
+     "key": "D",
+     "text": "Ra-226 (Z = 88, A = 226)",
+     "why_wrong": "Ra-226 chỉ xuất hiện sau nhiều bước phân rã trong chuỗi urani, không phải sản phẩm của một phân rã α đơn lẻ."
+    }
+   ]
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0046",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí hạt nhân",
+   "type": "dien-so",
+   "statement_vi": "Hạt Δ++ có cấu trúc quark là uuu. Biết điện tích quark up q_u = +2/3 e. Tính điện tích của hạt Δ++ theo đơn vị điện tích nguyên tố e.",
+   "statement_en": "The Δ++ baryon has quark content uuu. Given the up-quark charge q_u = +2/3 e, find the charge of Δ++ in units of the elementary charge e.",
+   "answer": "+2 e",
+   "solution_steps": [
+    {
+     "explain": "Điện tích của baryon bằng tổng điện tích các quark thành phần.",
+     "latex": "q_{u} = +\\frac{2}{3}e, \\quad Q_{\\Delta^{++}} = 3q_{u}"
+    },
+    {
+     "explain": "Cộng lại.",
+     "latex": "Q_{\\Delta^{++}} = 3 \\cdot \\frac{2}{3}e = +2e"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.hat-nhan.hat-co-ban-va-cau-truc-quark"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính điện tích hạt từ cấu trúc quark"
+   ],
+   "tags": [
+    "hat-nhan",
+    "quark",
+    "dien-tich"
+   ],
+   "answer_numeric": 2.0,
+   "answer_unit": "e",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0047",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí chất rắn",
+   "type": "dien-so",
+   "statement_vi": "Chì là chất siêu dẫn với nhiệt độ tới hạn T_c = 7,2 K và từ trường tới hạn ở 0 K là B_c(0) = 0,080 T. Tính từ trường tới hạn ở T = 3,6 K (T).",
+   "statement_en": "Lead is a superconductor with critical temperature T_c = 7.2 K and zero-temperature critical field B_c(0) = 0.080 T. Find the critical field at T = 3.6 K (T).",
+   "answer": "0,060 T",
+   "solution_steps": [
+    {
+     "explain": "Sự phụ thuộc nhiệt độ của từ trường tới hạn.",
+     "latex": "B_{c}(T) = B_{c}(0)\\left[1 - \\left(\\frac{T}{T_{c}}\\right)^{2}\\right]"
+    },
+    {
+     "explain": "Với T/T_c = 0,5.",
+     "latex": "B_{c} = 0{,}080\\left[1 - 0{,}5^{2}\\right] = 0{,}080 \\cdot 0{,}75 = 0{,}060\\ \\text{T}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-ran.hien-tuong-sieu-dan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính từ trường tới hạn của chất siêu dẫn theo nhiệt độ"
+   ],
+   "tags": [
+    "chat-ran",
+    "sieu-dan",
+    "tu-truong-toi-han"
+   ],
+   "answer_numeric": 0.06,
+   "answer_unit": "T",
+   "tolerance": 0.0005
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0048",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "dien-so",
+   "statement_vi": "Một con quay đối xứng tự do có mômen quán tính I3 = 2,0 kg·m^2 (trục đối xứng) và I1 = I2 = 1,5 kg·m^2. Thành phần vận tốc góc dọc trục đối xứng ω3 = 100 rad/s. Tính tốc độ tiến động tự do Ω_b (rad/s).",
+   "statement_en": "A free symmetric top has moments of inertia I3 = 2.0 kg·m^2 (symmetry axis) and I1 = I2 = 1.5 kg·m^2. The spin along the symmetry axis is ω3 = 100 rad/s. Find its free precession rate Ω_b (rad/s).",
+   "answer": "33,33 rad/s",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ tiến động tự do của con quay đối xứng (không mômen ngoại lực).",
+     "latex": "\\Omega_{b} = \\frac{I_{3} - I_{1}}{I_{1}}\\,\\omega_{3}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Omega_{b} = \\frac{2{,}0 - 1{,}5}{1{,}5}\\cdot 100 \\approx 33{,}33\\ \\text{rad/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.con-quay-doi-xung-tu-do"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính tốc độ tiến động tự do của con quay đối xứng"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "con-quay",
+    "tien-dong"
+   ],
+   "answer_numeric": 33.33,
+   "answer_unit": "rad/s",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0049",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Một sóng điện từ phẳng trong chân không có biên độ điện trường E = 100 V/m. Tính mật độ năng lượng trung bình tức thời của trường tại điểm có điện trường cực đại (J/m^3). Cho ε0 = 8,854×10^−12 F/m. (Gợi ý: với sóng điện từ, mật độ năng lượng điện bằng mật độ năng lượng từ.)",
+   "statement_en": "A plane electromagnetic wave in vacuum has electric field amplitude E = 100 V/m. Find the instantaneous energy density at the point of maximum field (J/m^3). ε0 = 8.854×10^−12 F/m. (Hint: in an EM wave the electric and magnetic energy densities are equal.)",
+   "answer": "8,85×10^−8 J/m^3",
+   "solution_steps": [
+    {
+     "explain": "Mật độ năng lượng trường điện từ theo định lí Poynting; với sóng điện từ B = E/c nên hai phần bằng nhau.",
+     "latex": "u = \\frac{1}{2}\\left(\\varepsilon_{0}E^{2} + \\frac{B^{2}}{\\mu_{0}}\\right) = \\varepsilon_{0}E^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "u = 8{,}854\\times10^{-12}\\cdot 100^{2} \\approx 8{,}85\\times10^{-8}\\ \\text{J/m}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.dinh-li-poynting"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính mật độ năng lượng trường điện từ của sóng phẳng"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "poynting",
+    "mat-do-nang-luong"
+   ],
+   "answer_numeric": 8.854e-08,
+   "answer_unit": "J/m^3",
+   "tolerance": 1e-10
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0050",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Một môi trường có chiết suất phức ñ = n + iκ với κ = 0,010. Ánh sáng chân không λ0 = 500 nm truyền trong môi trường. Tính hệ số hấp thụ α (m^−1).",
+   "statement_en": "A medium has complex refractive index ñ = n + iκ with κ = 0.010. Light of vacuum wavelength λ0 = 500 nm propagates in it. Find the absorption coefficient α (m^−1).",
+   "answer": "2,51×10^5 m^−1",
+   "solution_steps": [
+    {
+     "explain": "Hệ số hấp thụ cường độ liên hệ phần ảo κ của chiết suất phức.",
+     "latex": "\\alpha = \\frac{4\\pi\\kappa}{\\lambda_{0}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\alpha = \\frac{4\\pi \\cdot 0{,}010}{500\\times10^{-9}} \\approx 2{,}51\\times10^{5}\\ \\text{m}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.chiet-suat-phuc-va-hap-thu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ hệ số hấp thụ với phần ảo của chiết suất phức"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "chiet-suat-phuc",
+    "hap-thu"
+   ],
+   "answer_numeric": 251300.0,
+   "answer_unit": "m^-1",
+   "tolerance": 1000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0051",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Áp dụng điều kiện lượng tử hóa WKB (Bohr - Sommerfeld hiệu chỉnh) cho dao động tử điều hòa một chiều thu được E_n = (n + 1/2)ħω. Tính năng lượng mức n = 1 với ω = 1,0×10^15 rad/s (J). Cho ħ = 1,055×10^−34 J·s.",
+   "statement_en": "Applying the WKB (corrected Bohr - Sommerfeld) quantization to the 1D harmonic oscillator gives E_n = (n + 1/2)ħω. Find the energy of level n = 1 with ω = 1.0×10^15 rad/s (J). ħ = 1.055×10^−34 J·s.",
+   "answer": "1,58×10^−19 J",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện WKB với thế điều hòa cho phổ đúng bằng phổ chính xác.",
+     "latex": "\\int_{x_{1}}^{x_{2}} p(x)\\,dx = \\left(n + \\frac{1}{2}\\right)\\pi\\hbar \\;\\Rightarrow\\; E_{n} = \\left(n + \\frac{1}{2}\\right)\\hbar\\omega"
+    },
+    {
+     "explain": "Thay n = 1.",
+     "latex": "E_{1} = \\frac{3}{2}\\hbar\\omega = 1{,}5 \\cdot 1{,}055\\times10^{-34}\\cdot 10^{15} \\approx 1{,}58\\times10^{-19}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.dieu-kien-luong-tu-hoa-wkb"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng điều kiện lượng tử hóa WKB cho dao động tử điều hòa"
+   ],
+   "tags": [
+    "luong-tu",
+    "wkb",
+    "dao-dong-tu"
+   ],
+   "answer_numeric": 1.582e-19,
+   "answer_unit": "J",
+   "tolerance": 5e-22
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0052",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một electron ở trạng thái p (ℓ = 1, s = 1/2) với số lượng tử toàn phần j = 3/2. Tính trị riêng của toán tử L·S theo đơn vị ħ^2.",
+   "statement_en": "An electron is in a p state (ℓ = 1, s = 1/2) with total angular momentum quantum number j = 3/2. Find the eigenvalue of the operator L·S in units of ħ^2.",
+   "answer": "0,5 ħ^2",
+   "solution_steps": [
+    {
+     "explain": "Trị riêng của L·S biểu diễn qua các số lượng tử j, ℓ, s.",
+     "latex": "\\hat{\\vec{L}}\\cdot\\hat{\\vec{S}} = \\frac{\\hbar^{2}}{2}\\left[j(j+1) - \\ell(\\ell+1) - s(s+1)\\right]"
+    },
+    {
+     "explain": "Thay j = 3/2, ℓ = 1, s = 1/2.",
+     "latex": "\\hat{\\vec{L}}\\cdot\\hat{\\vec{S}} = \\frac{\\hbar^{2}}{2}\\left[\\frac{15}{4} - 2 - \\frac{3}{4}\\right] = \\frac{\\hbar^{2}}{2}\\cdot 1 = 0{,}5\\,\\hbar^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.tuong-tac-spin-quy-dao"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính trị riêng L·S trong tương tác spin - quỹ đạo"
+   ],
+   "tags": [
+    "luong-tu",
+    "spin-quy-dao",
+    "momen-dong-luong"
+   ],
+   "answer_numeric": 0.5,
+   "answer_unit": "ħ^2",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0053",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong bất đẳng thức Bell dạng CHSH, giá trị cực đại của |S| mà cơ học lượng tử cho phép (giới hạn Tsirelson) là bao nhiêu?",
+   "statement_en": "In the CHSH form of Bell's inequality, what is the maximum value of |S| allowed by quantum mechanics (the Tsirelson bound)?",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Lí thuyết cục bộ cổ điển bị chặn bởi |S| ≤ 2; cơ học lượng tử vượt qua nhưng cũng có giới hạn riêng (Tsirelson).",
+     "latex": "\\left|S\\right|_{co\\,dien} \\le 2, \\qquad \\left|S\\right|_{\\max}^{QM} = 2\\sqrt{2}"
+    },
+    {
+     "explain": "Giá trị số của giới hạn Tsirelson.",
+     "latex": "2\\sqrt{2} \\approx 2{,}83"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.bat-dang-thuc-bell-chsh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phân biệt giới hạn cổ điển và giới hạn lượng tử của bất đẳng thức CHSH"
+   ],
+   "tags": [
+    "luong-tu",
+    "bell-chsh",
+    "roi-luong-tu"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "2",
+     "why_wrong": "Đây là giới hạn cổ điển (lí thuyết biến ẩn cục bộ), không phải giá trị cực đại của cơ học lượng tử."
+    },
+    {
+     "key": "B",
+     "text": "2√2 ≈ 2,83",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "4",
+     "why_wrong": "4 là giá trị đại số cực đại khi mỗi hệ số tương quan bằng ±1, không đạt được trong cơ học lượng tử."
+    },
+    {
+     "key": "D",
+     "text": "√2 ≈ 1,41",
+     "why_wrong": "Kết quả này do quên nhân hệ số 2 trong biểu thức S."
+    }
+   ]
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0054",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một electron (điện tích độ lớn e = 1,602×10^−19 C) đi vòng quanh một ống từ chứa từ thông Φ = 1,0×10^−15 Wb. Tính độ dịch pha Aharonov - Bohm Δφ (rad). Cho ħ = 1,055×10^−34 J·s.",
+   "statement_en": "An electron (charge magnitude e = 1.602×10^−19 C) encircles a solenoid enclosing magnetic flux Φ = 1.0×10^−15 Wb. Find the Aharonov - Bohm phase shift Δφ (rad). ħ = 1.055×10^−34 J·s.",
+   "answer": "1,52 rad",
+   "solution_steps": [
+    {
+     "explain": "Pha Aharonov - Bohm khi hạt tích điện bao quanh từ thông.",
+     "latex": "\\Delta\\varphi = \\frac{q}{\\hbar}\\oint\\vec{A}\\cdot d\\vec{\\ell} = \\frac{q\\Phi}{\\hbar}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Delta\\varphi = \\frac{1{,}602\\times10^{-19}\\cdot 1{,}0\\times10^{-15}}{1{,}055\\times10^{-34}} \\approx 1{,}52\\ \\text{rad}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.pha-aharonov-bohm"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính pha Aharonov - Bohm của hạt tích điện quanh từ thông"
+   ],
+   "tags": [
+    "luong-tu",
+    "aharonov-bohm",
+    "pha"
+   ],
+   "answer_numeric": 1.519,
+   "answer_unit": "rad",
+   "tolerance": 0.02
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0055",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một hệ có 4 vi trạng thái khả dĩ với xác suất bằng nhau. Tính entropy thống kê (Gibbs - Shannon) của hệ (J/K). Cho k_B = 1,38×10^−23 J/K.",
+   "statement_en": "A system has 4 equally likely microstates. Find its statistical (Gibbs - Shannon) entropy (J/K). k_B = 1.38×10^−23 J/K.",
+   "answer": "1,91×10^−23 J/K",
+   "solution_steps": [
+    {
+     "explain": "Entropy Gibbs (dạng Shannon) với các xác suất P_i.",
+     "latex": "S = -k_{B}\\sum_{i} P_{i}\\ln P_{i}"
+    },
+    {
+     "explain": "Bốn trạng thái đều nhau P_i = 1/4, tổng cho S = k_B ln 4.",
+     "latex": "S = -k_{B}\\cdot 4 \\cdot \\frac{1}{4}\\ln\\frac{1}{4} = k_{B}\\ln 4 \\approx 1{,}38\\times10^{-23}\\cdot 1{,}386 \\approx 1{,}91\\times10^{-23}\\ \\text{J/K}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.entropy-gibbs-shannon"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính entropy Gibbs - Shannon cho phân bố xác suất đều"
+   ],
+   "tags": [
+    "thong-ke",
+    "entropy",
+    "gibbs-shannon"
+   ],
+   "answer_numeric": 1.914e-23,
+   "answer_unit": "J/K",
+   "tolerance": 5e-26
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0056",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí chất rắn",
+   "type": "dien-so",
+   "statement_vi": "Trong một vòng siêu dẫn, từ thông bị lượng tử hóa theo Φ = nΦ0 với Φ0 = 2,068×10^−15 Wb. Tính từ thông ứng với n = 5 (Wb).",
+   "statement_en": "In a superconducting ring the magnetic flux is quantized as Φ = nΦ0 with Φ0 = 2.068×10^−15 Wb. Find the flux for n = 5 (Wb).",
+   "answer": "1,034×10^−14 Wb",
+   "solution_steps": [
+    {
+     "explain": "Từ thông trong vòng siêu dẫn là bội nguyên của lượng tử từ thông.",
+     "latex": "\\Phi = n\\Phi_{0}, \\quad \\Phi_{0} = \\frac{h}{2e}"
+    },
+    {
+     "explain": "Thay n = 5.",
+     "latex": "\\Phi = 5 \\cdot 2{,}068\\times10^{-15} \\approx 1{,}034\\times10^{-14}\\ \\text{Wb}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-ran-nang-cao.luong-tu-tu-thong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng lượng tử hóa từ thông trong vòng siêu dẫn"
+   ],
+   "tags": [
+    "chat-ran",
+    "sieu-dan",
+    "luong-tu-tu-thong"
+   ],
+   "answer_numeric": 1.034e-14,
+   "answer_unit": "Wb",
+   "tolerance": 1e-17
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0057",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí chất rắn",
+   "type": "dien-so",
+   "statement_vi": "Niobi siêu dẫn có nhiệt độ tới hạn T_c = 9,2 K. Theo lí thuyết BCS ghép yếu 2Δ(0) = 3,53 k_B T_c, tính khe năng lượng 2Δ(0) theo meV. Cho k_B = 1,38×10^−23 J/K, e = 1,602×10^−19 C.",
+   "statement_en": "Superconducting niobium has T_c = 9.2 K. From weak-coupling BCS, 2Δ(0) = 3.53 k_B T_c; find the energy gap 2Δ(0) in meV. k_B = 1.38×10^−23 J/K, e = 1.602×10^−19 C.",
+   "answer": "2,80 meV",
+   "solution_steps": [
+    {
+     "explain": "Tỉ số phổ quát của lí thuyết BCS ghép yếu.",
+     "latex": "2\\Delta(0) = 3{,}53\\,k_{B}T_{c}"
+    },
+    {
+     "explain": "Tính ra jun rồi đổi sang meV.",
+     "latex": "2\\Delta(0) = 3{,}53 \\cdot 1{,}38\\times10^{-23}\\cdot 9{,}2 \\approx 4{,}48\\times10^{-22}\\ \\text{J} \\approx 2{,}80\\ \\text{meV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-ran-nang-cao.khe-nang-luong-bcs"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính khe năng lượng BCS từ nhiệt độ tới hạn"
+   ],
+   "tags": [
+    "chat-ran",
+    "bcs",
+    "khe-nang-luong"
+   ],
+   "answer_numeric": 2.8,
+   "answer_unit": "meV",
+   "tolerance": 0.03
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0058",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Một proton (khối lượng nghỉ tương ứng mc^2 = 0,938 GeV) có động lượng p = 1,0 GeV/c. Dùng hệ thức năng - động lượng tương đối tính (đi kèm phương trình Klein - Gordon) E^2 = p^2c^2 + m^2c^4, tính năng lượng toàn phần E (GeV).",
+   "statement_en": "A proton (rest energy mc^2 = 0.938 GeV) has momentum p = 1.0 GeV/c. Using the relativistic energy-momentum relation E^2 = p^2c^2 + m^2c^4 (associated with the Klein - Gordon equation), find the total energy E (GeV).",
+   "answer": "1,37 GeV",
+   "solution_steps": [
+    {
+     "explain": "Hệ thức năng - động lượng tương đối tính là điều kiện tán sắc của phương trình Klein - Gordon.",
+     "latex": "E^{2} = p^{2}c^{2} + m^{2}c^{4}"
+    },
+    {
+     "explain": "Thay số (đơn vị GeV).",
+     "latex": "E = \\sqrt{1{,}0^{2} + 0{,}938^{2}} \\approx 1{,}37\\ \\text{GeV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.phuong-trinh-klein-gordon"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng hệ thức năng - động lượng tương đối tính"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "klein-gordon",
+    "tuong-doi-tinh"
+   ],
+   "answer_numeric": 1.371,
+   "answer_unit": "GeV",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0059",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một hệ chất điểm có tổng khối lượng M = 4,0 kg. Nội năng cơ học (năng lượng riêng trong hệ khối tâm) là Ẽ = 50 J, khối tâm chuyển động với vận tốc v_C = 3,0 m/s. Tính cơ năng toàn phần E của hệ (J).",
+   "statement_en": "A system of particles has total mass M = 4.0 kg. Its mechanical internal energy (in the CoM frame) is Ẽ = 50 J and the center of mass moves at v_C = 3.0 m/s. Find the total mechanical energy E (J).",
+   "answer": "68 J",
+   "solution_steps": [
+    {
+     "explain": "Cơ năng toàn phần bằng nội năng cơ học cộng động năng chuyển động của khối tâm.",
+     "latex": "E = \\widetilde{E} + \\frac{1}{2}Mv_{C}^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "E = 50 + \\frac{1}{2}\\cdot 4{,}0 \\cdot 3{,}0^{2} = 50 + 18 = 68\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-co-hoc.noi-nang-co-hoc-he"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tách cơ năng thành nội năng và động năng khối tâm"
+   ],
+   "tags": [
+    "co-hoc",
+    "noi-nang",
+    "khoi-tam"
+   ],
+   "answer_numeric": 68.0,
+   "answer_unit": "J",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0060",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Vật rắn và lí thuyết đàn hồi (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một vật rắn quay quanh một trục chính có mômen quán tính I = 0,50 kg·m^2 với tốc độ góc ω = 20 rad/s. Dùng biểu thức động năng quay T = (1/2)ω·L, tính động năng quay (J).",
+   "statement_en": "A rigid body rotates about a principal axis with moment of inertia I = 0.50 kg·m^2 at angular speed ω = 20 rad/s. Using T = (1/2)ω·L, find the rotational kinetic energy (J).",
+   "answer": "100 J",
+   "solution_steps": [
+    {
+     "explain": "Với trục chính, L = Iω nên động năng quay quy về dạng quen thuộc.",
+     "latex": "T = \\frac{1}{2}\\vec{\\omega}\\cdot\\vec{L} = \\frac{1}{2}I\\omega^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "T = \\frac{1}{2}\\cdot 0{,}50 \\cdot 20^{2} = 100\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.dong-nang-quay-qua-tenxo"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính động năng quay qua tenxơ quán tính trên trục chính"
+   ],
+   "tags": [
+    "vat-ran",
+    "dong-nang-quay",
+    "tenxo-quan-tinh"
+   ],
+   "answer_numeric": 100.0,
+   "answer_unit": "J",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0061",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Vật rắn và lí thuyết đàn hồi (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một vật rắn có các mômen quán tính chính I1 = 3,0; I2 = 2,0; I3 = 1,0 kg·m^2 quay với vận tốc góc tức thời ω = (2, 4, 6) rad/s và ω̇ = 0 (quay ổn định). Dùng phương trình Euler, tính mômen ngoại lực thành phần M1 cần thiết (N·m).",
+   "statement_en": "A rigid body has principal moments I1 = 3.0, I2 = 2.0, I3 = 1.0 kg·m^2 and instantaneous angular velocity ω = (2, 4, 6) rad/s with ω̇ = 0 (steady rotation). Using Euler's equations, find the required external torque component M1 (N·m).",
+   "answer": "−24 N·m",
+   "solution_steps": [
+    {
+     "explain": "Phương trình Euler cho thành phần thứ nhất, với ω̇1 = 0.",
+     "latex": "I_{1}\\dot{\\omega}_{1} + (I_{3} - I_{2})\\omega_{2}\\omega_{3} = M_{1}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "M_{1} = (1{,}0 - 2{,}0)\\cdot 4 \\cdot 6 = -24\\ \\text{N·m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.phuong-trinh-euler"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng phương trình Euler cho chuyển động quay của vật rắn"
+   ],
+   "tags": [
+    "vat-ran",
+    "phuong-trinh-euler",
+    "chuyen-dong-quay"
+   ],
+   "answer_numeric": -24.0,
+   "answer_unit": "N·m",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0062",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Vật rắn và lí thuyết đàn hồi (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một thanh có tiết diện ngang S = 2,0×10^−4 m^2 chịu lực kéo dọc trục F_n = 1,0×10^4 N. Tính ứng suất pháp tuyến trong thanh (Pa).",
+   "statement_en": "A rod of cross-sectional area S = 2.0×10^−4 m^2 is under an axial tensile force F_n = 1.0×10^4 N. Find the normal stress in the rod (Pa).",
+   "answer": "5,0×10^7 Pa",
+   "solution_steps": [
+    {
+     "explain": "Ứng suất pháp tuyến bằng lực pháp tuyến chia diện tích tiết diện.",
+     "latex": "\\sigma = \\frac{F_{n}}{S}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\sigma = \\frac{1{,}0\\times10^{4}}{2{,}0\\times10^{-4}} = 5{,}0\\times10^{7}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.ung-suat-phap-va-tiep"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính ứng suất pháp tuyến"
+   ],
+   "tags": [
+    "vat-ran",
+    "ung-suat",
+    "dan-hoi"
+   ],
+   "answer_numeric": 50000000.0,
+   "answer_unit": "Pa",
+   "tolerance": 100000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0063",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Vật rắn và lí thuyết đàn hồi (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một khối vật liệu chịu trạng thái ứng suất ba trục σ_x = 100 MPa, σ_y = σ_z = 50 MPa. Vật liệu có suất Young E = 200 GPa và hệ số Poisson μ = 0,30. Tính biến dạng dài tỉ đối ε_x.",
+   "statement_en": "A material is under triaxial stress σ_x = 100 MPa, σ_y = σ_z = 50 MPa, with Young's modulus E = 200 GPa and Poisson ratio μ = 0.30. Find the axial strain ε_x.",
+   "answer": "3,5×10^−4",
+   "solution_steps": [
+    {
+     "explain": "Định luật Hooke tổng quát cho trạng thái ứng suất ba chiều.",
+     "latex": "\\varepsilon_{x} = \\frac{1}{E}\\left[\\sigma_{x} - \\mu(\\sigma_{y} + \\sigma_{z})\\right]"
+    },
+    {
+     "explain": "Thay số (đổi MPa và GPa nhất quán).",
+     "latex": "\\varepsilon_{x} = \\frac{100 - 0{,}30(50 + 50)}{200\\times10^{3}\\ \\text{MPa}} = \\frac{70}{2\\times10^{5}} = 3{,}5\\times10^{-4}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.dinh-luat-hooke-tong-quat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng định luật Hooke tổng quát cho trạng thái ứng suất ba trục"
+   ],
+   "tags": [
+    "vat-ran",
+    "hooke",
+    "bien-dang"
+   ],
+   "answer_numeric": 0.00035,
+   "answer_unit": "",
+   "tolerance": 1e-06
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0064",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Vật rắn và lí thuyết đàn hồi (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một thanh trụ tròn dài l = 1,0 m, bán kính r = 0,020 m, môđun trượt G = 8,0×10^10 Pa, bị xoắn bởi mômen M = 200 N·m. Tính năng lượng đàn hồi tích trữ (J).",
+   "statement_en": "A circular rod of length l = 1.0 m, radius r = 0.020 m, shear modulus G = 8.0×10^10 Pa is twisted by a torque M = 200 N·m. Find the stored elastic energy (J).",
+   "answer": "0,995 J",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng đàn hồi trong thanh bị xoắn biểu diễn qua mômen xoắn.",
+     "latex": "W = \\frac{M^{2}l}{\\pi G r^{4}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "W = \\frac{200^{2}\\cdot 1{,}0}{\\pi \\cdot 8{,}0\\times10^{10}\\cdot (0{,}020)^{4}} \\approx 0{,}995\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.nang-luong-xoan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính năng lượng đàn hồi tích trữ khi xoắn thanh trụ"
+   ],
+   "tags": [
+    "vat-ran",
+    "xoan",
+    "nang-luong-dan-hoi"
+   ],
+   "answer_numeric": 0.9947,
+   "answer_unit": "J",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0065",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Trên bề mặt một vật dẫn lí tưởng có từ trường tiếp tuyến B = 2,0 T. Tính áp suất từ tác dụng lên bề mặt (Pa). Cho μ0 = 4π×10^−7 T·m/A.",
+   "statement_en": "At the surface of an ideal conductor the tangential magnetic field is B = 2.0 T. Find the magnetic pressure on the surface (Pa). μ0 = 4π×10^−7 T·m/A.",
+   "answer": "1,59×10^6 Pa",
+   "solution_steps": [
+    {
+     "explain": "Áp suất từ bằng mật độ năng lượng từ.",
+     "latex": "p_{B} = \\frac{B^{2}}{2\\mu_{0}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "p_{B} = \\frac{2{,}0^{2}}{2 \\cdot 4\\pi\\times10^{-7}} \\approx 1{,}59\\times10^{6}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.ap-suat-tu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính áp suất từ trên bề mặt vật dẫn lí tưởng"
+   ],
+   "tags": [
+    "dien-tu",
+    "ap-suat-tu",
+    "mat-do-nang-luong"
+   ],
+   "answer_numeric": 1591500.0,
+   "answer_unit": "Pa",
+   "tolerance": 10000.0
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0066",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Hai mạch có hỗ cảm: L1 = 2,0 H, L2 = 3,0 H, hỗ cảm M = 1,0 H, dòng điện I1 = 2,0 A, I2 = 1,0 A (từ thông hỗ cảm cùng chiều, lấy dấu +). Tính năng lượng từ trường của hệ (J).",
+   "statement_en": "Two mutually coupled circuits: L1 = 2.0 H, L2 = 3.0 H, mutual inductance M = 1.0 H, currents I1 = 2.0 A, I2 = 1.0 A (aiding fluxes, + sign). Find the magnetic energy of the system (J).",
+   "answer": "7,5 J",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng từ trường của hai mạch có hỗ cảm.",
+     "latex": "W = \\frac{1}{2}L_{1}I_{1}^{2} + \\frac{1}{2}L_{2}I_{2}^{2} + M I_{1}I_{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "W = \\frac{1}{2}\\cdot 2{,}0 \\cdot 2{,}0^{2} + \\frac{1}{2}\\cdot 3{,}0 \\cdot 1{,}0^{2} + 1{,}0 \\cdot 2{,}0 \\cdot 1{,}0 = 4 + 1{,}5 + 2 = 7{,}5\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.nang-luong-hai-mach-ho-cam"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính năng lượng từ trường của hai mạch có hỗ cảm"
+   ],
+   "tags": [
+    "dien-tu",
+    "ho-cam",
+    "nang-luong-tu"
+   ],
+   "answer_numeric": 7.5,
+   "answer_unit": "J",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0067",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt học và vật lí phân tử (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một máy li tâm quay với ω = 1000 rad/s chứa khí có phân tử khối lượng m0 = 1,0×10^−25 kg ở T = 300 K. Tính tỉ số mật độ phân tử n(ρ)/n0 ở khoảng cách ρ = 0,10 m so với trục. Cho k = 1,38×10^−23 J/K.",
+   "statement_en": "A centrifuge rotating at ω = 1000 rad/s holds a gas of molecular mass m0 = 1.0×10^−25 kg at T = 300 K. Find the density ratio n(ρ)/n0 at distance ρ = 0.10 m from the axis. k = 1.38×10^−23 J/K.",
+   "answer": "1,128",
+   "solution_steps": [
+    {
+     "explain": "Phân bố Boltzmann trong trường quán tính li tâm (thế năng hiệu dụng âm nên mật độ tăng theo ρ).",
+     "latex": "n(\\rho) = n_{0}\\exp\\left(\\frac{m_{0}\\omega^{2}\\rho^{2}}{2kT}\\right)"
+    },
+    {
+     "explain": "Tính số mũ rồi lấy hàm mũ.",
+     "latex": "\\frac{m_{0}\\omega^{2}\\rho^{2}}{2kT} = \\frac{10^{-25}\\cdot 10^{6}\\cdot 0{,}01}{2 \\cdot 1{,}38\\times10^{-23}\\cdot 300} \\approx 0{,}121 \\;\\Rightarrow\\; \\frac{n}{n_{0}} = e^{0{,}121} \\approx 1{,}128"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.phan-bo-boltzmann-truong-li-tam"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng phân bố Boltzmann trong trường li tâm"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "boltzmann",
+    "li-tam"
+   ],
+   "answer_numeric": 1.128,
+   "answer_unit": "",
+   "tolerance": 0.005
+  },
+  {
+   "id": "prob.physics.ext3-physics-daihoc.0068",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Bề mặt một vật dẫn tích điện có mật độ điện mặt σ = 1,0×10^−6 C/m^2. Tính áp suất tĩnh điện (lực căng) tác dụng lên bề mặt (Pa). Cho ε0 = 8,854×10^−12 F/m.",
+   "statement_en": "The surface of a charged conductor has surface charge density σ = 1.0×10^−6 C/m^2. Find the electrostatic pressure (tension) on the surface (Pa). ε0 = 8.854×10^−12 F/m.",
+   "answer": "0,0565 Pa",
+   "solution_steps": [
+    {
+     "explain": "Áp suất tĩnh điện trên mặt vật dẫn bằng mật độ năng lượng điện trường tại đó.",
+     "latex": "p = \\frac{\\sigma^{2}}{2\\varepsilon_{0}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "p = \\frac{(1{,}0\\times10^{-6})^{2}}{2 \\cdot 8{,}854\\times10^{-12}} \\approx 0{,}0565\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.ap-suat-tinh-dien-mat-vat-dan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính áp suất tĩnh điện trên mặt vật dẫn"
+   ],
+   "tags": [
+    "dien-tu",
+    "ap-suat-tinh-dien",
+    "vat-dan"
+   ],
+   "answer_numeric": 0.05647,
+   "answer_unit": "Pa",
+   "tolerance": 0.0005
+  }
+ ]
+}

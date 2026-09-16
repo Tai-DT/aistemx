@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>AISTEM X — HỆ THỐNG SƠ ĐỒ LUỒNG & KIẾN TRÚC KỸ THUẬT</title>
+  <!-- Google Fonts: Inter & Merriweather & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Mermaid.js -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'neutral',
+      flowchart: { curve: 'basis' },
+      themeVariables: {
+        fontFamily: 'Inter, sans-serif',
+        primaryColor: '#eff6ff',
+        primaryBorderColor: '#3b82f6',
+        lineColor: '#1d4ed8',
+        secondaryColor: '#f8fafc',
+        tertiaryColor: '#ffffff'
+      }
+    });
+  </script>
+
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 18mm 20mm 18mm;
+      @bottom-right {
+        content: counter(page);
+        font-family: 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #64748b;
+      }
+      @bottom-left {
+        content: "AISTEM X (aistemx.com) — Hồ Sơ KHKT";
+        font-family: 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #94a3b8;
+      }
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11pt;
+      line-height: 1.65;
+      color: #0f172a;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cover-page {
+      page-break-after: always;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 3px double #1d4ed8;
+      padding: 35px 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 70%, #eff6ff 100%);
+      border-radius: 8px;
+    }
+
+    .cover-header {
+      font-size: 11pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #334155;
+      line-height: 1.8;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 18px;
+    }
+
+    .cover-body {
+      margin: auto 0;
+      padding: 20px 0;
+    }
+
+    .cover-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      border: 1px solid #bfdbfe;
+    }
+
+    .cover-title {
+      font-size: 26pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      line-height: 1.3;
+      margin: 0 0 15px 0;
+    }
+
+    .cover-subtitle {
+      font-size: 14pt;
+      font-weight: 500;
+      color: #475569;
+      line-height: 1.5;
+      max-width: 85%;
+      margin: 0 auto;
+    }
+
+    .cover-meta {
+      border-top: 1.5px solid #cbd5e1;
+      padding-top: 20px;
+      font-size: 11pt;
+      color: #334155;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      row-gap: 8px;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .cover-meta-label {
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #0f172a;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-top: 24pt;
+      margin-bottom: 8pt;
+      page-break-after: avoid;
+    }
+
+    h1 {
+      font-size: 20pt;
+      color: #1e3a8a;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 15pt;
+      color: #1d4ed8;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+    }
+
+    h3 {
+      font-size: 12.5pt;
+      color: #0369a1;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10pt;
+      text-align: justify;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16pt 0;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+
+    table th, table td {
+      border: 1px solid #cbd5e1;
+      padding: 8pt 10pt;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f1f5f9;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    blockquote {
+      margin: 12pt 0;
+      padding: 10pt 16pt;
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      color: #1e3a8a;
+      font-style: normal;
+      border-radius: 0 8px 8px 0;
+      page-break-inside: avoid;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9pt;
+      background-color: #f1f5f9;
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #0f766e;
+    }
+
+    pre {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12pt;
+      overflow-x: auto;
+      font-size: 8.5pt;
+      page-break-inside: avoid;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      color: #1e293b;
+    }
+
+    .mermaid {
+      margin: 18pt auto;
+      text-align: center;
+      background: #ffffff;
+      padding: 15pt;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      page-break-inside: avoid;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #e2e8f0;
+      margin: 20pt 0;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+  
+    <div class="cover-page">
+      <div class="cover-header">
+        BỘ GIÁO DỤC VÀ ĐÀO TẠO — HỘI ĐỒNG KHOA HỌC & CÔNG NGHỆ<br>
+        CUỘC THI KHOA HỌC KỸ THUẬT & KHỞI NGHIỆP ĐỔI MỚI SÁNG TẠO
+      </div>
+      <div class="cover-body">
+        <div class="cover-badge">HỒ SƠ THIẾT KẾ KỸ THUẬT & FLOWCHARTS</div>
+        <h1 class="cover-title">AISTEM X — HỆ THỐNG SƠ ĐỒ LUỒNG & KIẾN TRÚC KỸ THUẬT</h1>
+        <p class="cover-subtitle">Bộ 6 Sơ Đồ Kiến Trúc Mạng Biên, Dữ Liệu Đồ Thị & Trình Khử Ảo Giác CAS</p>
+      </div>
+      <div class="cover-meta">
+        <span class="cover-meta-label">Lĩnh vực dự thi:</span>
+        <span>Hệ thống phần mềm & Trí tuệ Nhân tạo (Systems Software & AI)</span>
+        <span class="cover-meta-label">Dự án / Tên miền:</span>
+        <span><strong>AISTEM X</strong> — <a href="https://aistemx.com" style="color:#1d4ed8; text-decoration:none;">https://aistemx.com</a></span>
+        <span class="cover-meta-label">Độ sẵn sàng:</span>
+        <span>Sản phẩm thương mại hoàn thiện 100% (Production Ready)</span>
+        <span class="cover-meta-label">Quy mô tri thức:</span>
+        <span>10,682 bản ghi — 5,272 công thức — 4,351 bài toán CAS</span>
+        <span class="cover-meta-label">Năm thực hiện:</span>
+        <span>2026</span>
+      </div>
+    </div>
+    
+  <main>
+    <h1>🔄 BỘ SƠ ĐỒ LUỒNG HỆ THỐNG &amp; KIẾN TRÚC KỸ THUẬT AISTEM X</h1>
+<p><strong>Dự Án</strong>: AISTEM X — Nền tảng Siêu Tri Thức Khoa Học Liên Môn &amp; Gia Sư AI STEM Chuẩn Quốc Tế<br />
+<strong>Tên Miền</strong>: <a href="https://aistemx.com">aistemx.com</a><br />
+<strong>Phiên Bản Dự Thi</strong>: 1.0.0 (Production Ready)</p>
+<hr />
+<h2>📑 MỤC LỤC SƠ ĐỒ</h2>
+<ol>
+<li><a href="#1-s%C6%A1-%C4%91%E1%BB%93-ki%E1%BA%BFn-tr%C3%BAc-h%E1%BB%87-th%E1%BB%91ng-t%E1%BB%95ng-th%E1%BB%83">Sơ Đồ Kiến Trúc Hệ Thống Tổng Thể (Overall System Architecture)</a></li>
+<li><a href="#2-s%C6%A1-%C4%91%E1%BB%93-lu%E1%BB%93ng-d%E1%BB%AF-li%E1%BB%87u--%C4%91%E1%BB%93-th%E1%BB%8B-tri-th%E1%BB%A9c-4-kho">Sơ Đồ Luồng Dữ Liệu &amp; Đồ Thị Tri Thức 4 Kho (Knowledge Graph Data Flow)</a></li>
+<li><a href="#3-lu%E1%BB%93ng-gia-s%C6%B0-ai-socratic--ki%E1%BB%83m-ch%E1%BB%A9ng-cas-ch%E1%BB%91ng-%E1%BA%A3o-gi%C3%A1c">Luồng Gia Sư AI Socratic &amp; Kiểm Chứng CAS Chống Ảo Giác (Anti-Hallucination Sequence)</a></li>
+<li><a href="#4-lu%E1%BB%93ng-nh%E1%BA%ADn-di%E1%BB%87n-%C4%91%E1%BB%81-b%C3%A0i-%C4%91a-ph%C6%B0%C6%A1ng-th%E1%BB%A9c">Luồng Nhận Diện Đề Bài Đa Phương Thức (Multimodal Vision Solve Flow)</a></li>
+<li><a href="#5-lu%E1%BB%93ng-thu%E1%BA%ADt-to%C3%A1n-ghi-nh%E1%BB%9B-ng%E1%BA%AFt-qu%C3%A3ng-fsrs">Luồng Thuật Toán Ghi Nhớ Ngắt Quãng FSRS (Spaced Repetition Flow)</a></li>
+<li><a href="#6-lu%E1%BB%93ng-tri%E1%BB%83n-khai-h%E1%BA%A1-t%E1%BA%A7ng-m%E1%BA%A1ng-bi%C3%AAn--zero-trust">Luồng Triển Khai Hạ Tầng Mạng Biên &amp; Zero-Trust (Cloudflare Edge &amp; Local Engine)</a></li>
+</ol>
+<hr />
+<h2>1. SƠ ĐỒ KIẾN TRÚC HỆ THỐNG TỔNG THỂ</h2>
+<pre class="mermaid">
+flowchart TB
+    subgraph ClientLayer ["1. CLIENT LAYER (Giao Diện & Tương Tác Học Viên)"]
+        UI_Web["AISTEM X Web App (React 19 + Vite 8 + TypeScript)"]
+        UI_Formula["Formula Explorer (5,272 Công Thức)"]
+        UI_Practice["CAS Practice Lab (4,351 Bài Toán)"]
+        UI_Socratic["Gia Sư AI Socratic Modal (3 Chế Độ)"]
+        UI_Flashcard["FSRS Spaced Repetition Flashcards"]
+        UI_Render["KaTeX + Three.js 3D + Deterministic SVG"]
+    end
+
+    subgraph EdgeLayer ["2. GLOBAL EDGE & ZERO-TRUST GATEWAY"]
+        CF_DNS["Cloudflare DNS (aistemx.com)"]
+        CF_Edge["Cloudflare Edge Cache & DDoS Shield"]
+        CF_Tunnel["Cloudflare Zero-Trust Tunnel (QUIC Protocol)"]
+        CF_AI["Cloudflare Workers AI (Llama 3.3 70B & Llama 3.2 11B Vision)"]
+    end
+
+    subgraph CoreEngine ["3. CORE BACKEND ENGINE (FastAPI / Python 3.13)"]
+        API_Gateway["FastAPI Gateway (/api/*, Async & SSE Streaming)"]
+        CAS_Engine["SymPy CAS Verification Engine (Giải tích, Đại số, Chống ảo giác)"]
+        RAG_Module["Hybrid RAG Pipeline (Full-text Search + Semantic Graph Matching)"]
+        Socratic_Router["Socratic Prompt Orchestrator (Foundation / Advanced / Scholarship)"]
+        FSRS_Engine["FSRS v4.5 Scheduler (Bộ nhớ ngắt quãng tối ưu)"]
+    end
+
+    subgraph StorageLayer ["4. MULTI-MODEL STORAGE & KNOWLEDGE VAULT"]
+        PG_DB["PostgreSQL 16 (10,682 Records, tsvector search, 23,482 Edges)"]
+        SQLite_Local["SQLite Embedded Engine (aistem.db - Siêu tốc độ cục bộ)"]
+        JSON_Corpus["Structured JSON/JSONL Corpus (Schemas & Usage Graph)"]
+        Vector_Assets["887 SVG Vectors + 14 Three.js 3D Scenes"]
+    end
+
+    UI_Web --> CF_DNS
+    CF_DNS --> CF_Edge
+    CF_Edge --> CF_Tunnel
+    CF_Tunnel --> API_Gateway
+
+    API_Gateway --> CAS_Engine
+    API_Gateway --> RAG_Module
+    API_Gateway --> Socratic_Router
+    API_Gateway --> FSRS_Engine
+
+    Socratic_Router --> CF_AI
+    RAG_Module --> PG_DB
+    API_Gateway --> SQLite_Local
+    CAS_Engine --> SQLite_Local
+    UI_Render --> Vector_Assets
+
+</pre>
+<hr />
+<h2>2. SƠ ĐỒ LUỒNG DỮ LIỆU &amp; ĐỒ THỊ TRI THỨC 4 KHO</h2>
+<p>Hệ thống kết nối 4 kho dữ liệu học thuật qua các trường định danh khóa chéo, hình thành một mạng lưới tri thức liên môn (Interdisciplinary Graph):</p>
+<pre class="mermaid">
+graph LR
+    subgraph FormulasVault ["Kho Công Thức (5,272 Items)"]
+        F1["id: math.thpt.giai-tich.dao-ham-tich"]
+        F2["id: phys.thpt.co-hoc.con-lac-lo-xo"]
+        F3["id: chem.thpt.dong-hoa-hoc.arrhenius"]
+    end
+
+    subgraph LessonsVault ["Kho Bài Giảng (1,018 Items)"]
+        L1["Bài học Đạo hàm & Ý nghĩa hình học"]
+        L2["Bài học Dao động điều hòa"]
+        L3["Bài học Động hóa học & Năng lượng hoạt hóa"]
+    end
+
+    subgraph ProblemsVault ["Kho Bài Tập CAS (4,351 Items)"]
+        P1["Bài toán tiếp tuyến cực trị"]
+        P2["Bài toán chu kỳ & con lắc lò xo"]
+        P3["Bài toán tính tốc độ phản ứng"]
+    end
+
+    subgraph ExamsVault ["Kho Đề Thi Quốc Tế (41 Exams)"]
+        E1["AP Calculus BC"]
+        E2["IB Physics Higher Level"]
+        E3["USNCO National Chemistry"]
+        E4["Olympic Vật lý / Toán Quốc Gia"]
+    end
+
+    subgraph IllustrationsVault ["Kho Trực Quan Hóa (901 Items)"]
+        I1["887 Bản vẽ Vector SVG Toán/Lý/Hóa"]
+        I2["14 Mô hình Không gian 3D Three.js"]
+    end
+
+    L1 -- "formulas[]" --> F1
+    P1 -- "formulas_used[]" --> F1
+    E1 -- "formulas_must_memorize[]" --> F1
+
+    L2 -- "formulas[]" --> F2
+    P2 -- "formulas_used[]" --> F2
+    E2 -- "formulas_must_memorize[]" --> F2
+
+    L3 -- "formulas[]" --> F3
+    P3 -- "formulas_used[]" --> F3
+    E3 -- "formulas_must_memorize[]" --> F3
+
+    F1 -- "illustrations" --> I1
+    F2 -- "scenes3d" --> I2
+
+</pre>
+<hr />
+<h2>3. LUỒNG GIA SƯ AI SOCRATIC &amp; KIỂM CHỨNG CAS CHỐNG ẢO GIÁC</h2>
+<p>Quy trình giải quyết triệt để vấn đề &quot;ảo giác số liệu&quot; (hallucination) thường gặp của LLM trong toán học và khoa học tự nhiên:</p>
+<pre class="mermaid">
+sequenceDiagram
+    autonumber
+    actor Student as Học Sinh (Học Viên)
+    participant Client as Web Frontend (AISTEM X)
+    participant API as FastAPI Backend Gateway
+    participant RAG as RAG & Knowledge Graph
+    participant CAS as SymPy CAS Engine
+    participant LLM as Cloudflare Workers AI (Llama 3.3)
+
+    Student->>Client: Nhập câu hỏi toán/lý/hóa hoặc bước giải
+    Client->>API: POST /api/ai/chat (Message, Mode, Context)
+    
+    rect rgb(240, 248, 255)
+        Note over API, RAG: Bước 1: RAG Đồ Thị Tri Thức
+        API->>RAG: Truy xuất công thức & định lý chuẩn liên quan
+        RAG-->>API: Danh sách công thức tham chiếu chuẩn xác (Grounding)
+    end
+
+    rect rgb(255, 245, 238)
+        Note over API, CAS: Bước 2: Kiểm Chứng Ký Hiệu Bằng CAS (Không Ảo Giác)
+        API->>CAS: Phân tích biểu thức toán (Đạo hàm, Tích phân, Rút gọn)
+        CAS-->>API: Kết quả toán học biểu tượng chuẩn xác 100%
+    end
+
+    rect rgb(245, 255, 245)
+        Note over API, LLM: Bước 3: Sư Phạm Socratic Theo Chế Độ
+        API->>LLM: Gửi Prompt: [Ngữ cảnh CAS + Định lý chuẩn + Câu hỏi + Mode]
+        LLM-->>API: Phản hồi Socratic gợi mở tư duy (Không giải hộ)
+    end
+
+    API-->>Client: Trả về câu trả lời Socratic + KaTeX chuẩn + CAS Proof
+    Client-->>Student: Hiển thị hướng dẫn từng bước trực quan
+
+</pre>
+<hr />
+<h2>4. LUỒNG NHẬN DIỆN ĐỀ BÀI ĐA PHƯƠNG THỨC (MULTIMODAL VISION SOLVE)</h2>
+<p>Cho phép học sinh chụp ảnh đề thi viết tay, biểu đồ hình học hoặc phương trình hóa học phức tạp từ điện thoại/máy tính:</p>
+<pre class="mermaid">
+flowchart TD
+    A["Học sinh chụp ảnh đề thi / bài giải viết tay"] --> B["AISTEM X App nén & mã hóa Base64 ảnh"]
+    B --> C["POST /api/ai/vision-solve"]
+    C --> D["Cloudflare Workers AI: Llama 3.2 11B Vision Instruct"]
+    
+    subgraph VisionPipeline ["Quy trình Xử lý Thị Giác"]
+        D --> E["1. Trích xuất đề bài thành văn bản tiếng Việt"]
+        D --> F["2. Chuyển đổi công thức toán/hóa thành chuẩn KaTeX ($...$)"]
+        D --> G["3. Phân tách: Đại lượng đã cho vs Đại lượng cần tìm"]
+    end
+
+    E & F & G --> H["RAG Engine: Đối soát 5,272 công thức trong Knowledge Base"]
+    H --> I["SymPy CAS: Xác thực điều kiện nghiệm số"]
+    I --> J["Tạo Lộ trình Gợi ý Tư Duy Socratic cho Học sinh"]
+    J --> K["Hiển thị màn hình giải đáp với công thức KaTeX sắc nét"]
+
+</pre>
+<hr />
+<h2>5. LUỒNG THUẬT TOÁN GHI NHỚ NGẮT QUÃNG FSRS</h2>
+<p>AISTEM X ứng dụng chuẩn thuật toán <strong>FSRS (Free Spaced Repetition Scheduler)</strong> vượt trội hơn so với SM-2 của Anki, tính toán độ suy giảm trí nhớ dựa trên 3 thông số: Độ khó ($D$), Độ ổn định ($S$), Khả năng nhớ lại ($R$):</p>
+<pre class="mermaid">
+stateDiagram-v2
+    [*] --> NewCard: Học sinh lưu công thức/khái niệm mới
+    
+    NewCard --> Learning: Bắt đầu ôn tập lần đầu
+    Learning --> Review: Đánh giá kết quả (Again / Hard / Good / Easy)
+    
+    state Review {
+        [*] --> CalculateFSRS
+        CalculateFSRS: Tính Stability S và Difficulty D mới
+        CalculateFSRS --> NextInterval: Tinh chỉnh khoảng cách lặp lại I = S * 9 * (1/R - 1)
+        NextInterval --> Scheduled: Lên lịch ôn tập tối ưu
+    }
+
+    Review --> RetrievabilityCheck: Theo dõi đường cong quên Ebbinghaus
+    RetrievabilityCheck --> Review: Đến ngày ôn tập định kỳ
+    Review --> Mastered: Stability > 180 ngày (Nắm vững vĩnh viễn)
+    Mastered --> [*]
+
+</pre>
+<hr />
+<h2>6. LUỒNG TRIỂN KHAI HẠ TẦNG MẠNG BIÊN &amp; ZERO-TRUST</h2>
+<p>Mô hình triển khai hybrid kết hợp Edge Network toàn cầu với Local Dedicated Server:</p>
+<pre class="mermaid">
+graph TD
+    subgraph GlobalUsers ["Người Dùng Khắp Thế Giới (Web / Mobile / Tablet)"]
+        UserVN["Học sinh Việt Nam"]
+        UserUS["Học sinh Quốc tế / Du học sinh"]
+    end
+
+    subgraph CloudflareGlobalEdge ["Cloudflare Global Anycast Edge (330+ Cities)"]
+        EdgeNodes["Edge Proxy & SSL Termination (aistemx.com)"]
+        EdgeWAF["WAF & Anti-DDoS Shield"]
+        EdgeDNS["DNSSEC Managed Resolver"]
+    end
+
+    subgraph TunnelBroker ["Cloudflare Zero-Trust Network Fabric"]
+        CFTunnel["Cloudflare Tunnel (Dual QUIC/HTTP3 Virtual Wire)"]
+    end
+
+    subgraph LocalOnPremEngine ["AISTEM X Core Server Host"]
+        ReverseProxy["Local Service Routing"]
+        ViteNode["Frontend Service: Port 5173 (React Single Page App)"]
+        FastAPIPython["Backend API Service: Port 8000 (10,682 Records API)"]
+        DockerPG["PostgreSQL Database: Port 5434 (Relational & TSVector)"]
+    end
+
+    UserVN --> EdgeNodes
+    UserUS --> EdgeNodes
+    EdgeNodes --> EdgeWAF
+    EdgeWAF --> EdgeDNS
+    EdgeDNS --> CFTunnel
+    CFTunnel --> ReverseProxy
+    ReverseProxy -->|Static HTML/CSS/JS| ViteNode
+    ReverseProxy -->|API Requests /api/*| FastAPIPython
+    FastAPIPython --> DockerPG
+
+</pre>
+<hr />
+<p><em>Tài liệu được thiết kế chuyên biệt cho hồ sơ kỹ thuật tham dự các cuộc thi Khoa học Kỹ thuật, Sáng tạo Khởi nghiệp &amp; Chuyển đổi số.</em></p>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
+      });
+      mermaid.run({
+        querySelector: '.mermaid'
+      });
+    });
+  </script>
+</body>
+</html>

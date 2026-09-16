@@ -1,0 +1,116 @@
+{
+ "version": "aistem-scene-1",
+ "id": "math.thpt.oxyz-toa-do.tich-co-huong",
+ "title_vi": "Tích có hướng a × b",
+ "formula_id": "math.thpt.oxyz-toa-do.tich-co-huong",
+ "caption_vi": "a×b vuông góc với mặt phẳng (a,b); độ dài bằng diện tích hình bình hành.",
+ "camera": {
+  "position": [
+   6.0,
+   6.0,
+   7.0
+  ],
+  "target": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "fov": 45,
+  "up": [
+   0,
+   1,
+   0
+  ]
+ },
+ "background": "auto",
+ "helpers": {
+  "axes": {
+   "size": 4.0,
+   "labels": [
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  "grid": {
+   "size": 8.0,
+   "divisions": 8
+  }
+ },
+ "objects": [
+  {
+   "type": "vector",
+   "from": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "to": [
+    3.0,
+    1.0,
+    0.0
+   ],
+   "color": "#2563eb",
+   "label": "a"
+  },
+  {
+   "type": "vector",
+   "from": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "to": [
+    1.0,
+    3.0,
+    0.0
+   ],
+   "color": "#16a34a",
+   "label": "b"
+  },
+  {
+   "type": "mesh",
+   "positions": [
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    3.0,
+    0.0,
+    3.0,
+    1.0,
+    0.0,
+    4.0,
+    4.0,
+    0.0
+   ],
+   "indices": [
+    0,
+    2,
+    1,
+    1,
+    2,
+    3
+   ],
+   "color": "#d97706",
+   "opacity": 0.25,
+   "wireframe": false,
+   "side": "double"
+  },
+  {
+   "type": "vector",
+   "from": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "to": [
+    0.0,
+    0.0,
+    4.0
+   ],
+   "color": "#dc2626",
+   "label": "a×b"
+  }
+ ]
+}

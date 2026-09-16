@@ -1,0 +1,1757 @@
+{
+  "meta": {
+    "file": "vn-physics-conhiet.json",
+    "subject": "physics",
+    "title": "Vật lí THPT Việt Nam: Cơ học, các định luật bảo toàn, chất khí và nhiệt động lực học",
+    "levels": [
+      "thpt"
+    ],
+    "count": 27
+  },
+  "lessons": [
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.do-dich-chuyen-van-toc-thang-deu",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Động học",
+      "order": 1,
+      "title_vi": "Độ dịch chuyển, quãng đường, tốc độ và vận tốc",
+      "title_en": "Displacement, distance, speed and velocity",
+      "objectives": [
+        "Phân biệt được quãng đường (đại lượng vô hướng) với độ dịch chuyển (đại lượng vectơ)",
+        "Tính được tốc độ trung bình và vận tốc trung bình của một chuyển động",
+        "Viết được phương trình chuyển động thẳng đều và đọc được đồ thị độ dịch chuyển - thời gian"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Độ dịch chuyển",
+          "term_en": "Displacement",
+          "definition": "Đại lượng vectơ nối vị trí đầu với vị trí cuối, có độ lớn bằng khoảng cách theo đường thẳng và có hướng; trên trục Ox: $d = x - x_0$."
+        },
+        {
+          "term_vi": "Vận tốc trung bình",
+          "term_en": "Average velocity",
+          "definition": "Thương của độ dịch chuyển và thời gian thực hiện độ dịch chuyển đó: $v_{tb} = \\dfrac{d}{t}$, là đại lượng vectơ."
+        },
+        {
+          "term_vi": "Chuyển động thẳng đều",
+          "term_en": "Uniform straight-line motion",
+          "definition": "Chuyển động trên đường thẳng với vận tốc không đổi cả về hướng lẫn độ lớn; quỹ đạo là đường thẳng, tốc độ không đổi."
+        }
+      ],
+      "content": "## Vì sao phải tách quãng đường khỏi độ dịch chuyển?\n\nMột người đi 3 m sang phải rồi 3 m sang trái quay về chỗ cũ: **quãng đường** đi được là $s = 6$ m nhưng **độ dịch chuyển** bằng $0$ vì vị trí đầu trùng vị trí cuối. Quãng đường luôn dương và cộng dồn; độ dịch chuyển là vectơ, có thể âm, dương hay bằng không tùy chiều dương đã chọn.\n\n## Tốc độ và vận tốc\n\nTốc độ trung bình đo *độ nhanh*: $v = \\dfrac{s}{t}$, luôn dương. Vận tốc trung bình đo *độ nhanh kèm hướng dịch chuyển*: $v_{tb} = \\dfrac{d}{t}$. Vì thế người chạy một vòng sân trở về đích có tốc độ trung bình khác không nhưng vận tốc trung bình bằng không.\n\n## Chuyển động thẳng đều\n\nKhi vận tốc không đổi, tọa độ biến thiên theo hàm bậc nhất của thời gian:\n\n$$x = x_0 + v\\,t$$\n\nĐồ thị $x$-$t$ là một đường thẳng, **độ dốc của nó chính bằng vận tốc** $v$. Đồ thị càng dốc thì vật đi càng nhanh; độ dốc âm nghĩa là vật chuyển động theo chiều âm. Trên đồ thị $v$-$t$, đường nằm ngang và **diện tích hình chữ nhật dưới đường đó bằng độ dịch chuyển**.\n\n## Khi nào dùng?\n\nDùng mô hình thẳng đều cho các đoạn đường mà tốc độ gần như không đổi (xe chạy ổn định trên cao tốc, băng chuyền). Khi cần cộng nhiều đoạn có tốc độ khác nhau, hãy tính tốc độ trung bình bằng *tổng quãng đường chia tổng thời gian*, tuyệt đối không lấy trung bình cộng các tốc độ.",
+      "formulas": [
+        "physics.thpt.dong-hoc.do-dich-chuyen",
+        "physics.thpt.dong-hoc.toc-do-trung-binh",
+        "physics.thpt.dong-hoc.van-toc-trung-binh",
+        "physics.thpt.dong-hoc.phuong-trinh-chuyen-dong-thang-deu",
+        "physics.thpt.dong-hoc.quang-duong-chuyen-dong-thang-deu",
+        "physics.thpt.dong-hoc.do-doc-do-thi-do-dich-chuyen-thoi-gian"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một ô tô đi nửa quãng đường đầu với tốc độ 40 km/h, nửa quãng đường sau với tốc độ 60 km/h. Tính tốc độ trung bình trên cả quãng đường.",
+          "solution": "Gọi cả quãng đường là $2s$. Thời gian nửa đầu $t_1 = \\dfrac{s}{40}$, nửa sau $t_2 = \\dfrac{s}{60}$. Vì tốc độ trung bình được định nghĩa là tổng quãng đường chia tổng thời gian, KHÔNG phải trung bình cộng, nên:\n\n$$v = \\dfrac{2s}{t_1 + t_2} = \\dfrac{2s}{\\frac{s}{40} + \\frac{s}{60}} = \\dfrac{2}{\\frac{1}{40}+\\frac{1}{60}} = 48 \\text{ km/h}.$$\n\nKết quả 48 km/h nhỏ hơn 50 km/h (trung bình cộng) vì xe dành nhiều thời gian hơn cho đoạn chậm.",
+          "answer": "$v = 48$ km/h"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy trung bình cộng hai tốc độ $(40+60)/2 = 50$ km/h. Sai vì trung bình phải lấy tổng quãng đường chia tổng thời gian; hai đoạn tốn thời gian khác nhau nên không thể lấy trung bình cộng đơn giản.",
+        "Đồng nhất quãng đường với độ dịch chuyển. Với vật đổi chiều hoặc đi vòng, quãng đường luôn lớn hơn độ lớn độ dịch chuyển, nên tốc độ trung bình lớn hơn độ lớn vận tốc trung bình."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "dong-hoc",
+        "van-toc",
+        "thang-deu"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-thang-bien-doi-deu",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Động học",
+      "order": 2,
+      "title_vi": "Chuyển động thẳng biến đổi đều",
+      "title_en": "Uniformly accelerated straight-line motion",
+      "objectives": [
+        "Định nghĩa được gia tốc và nêu ý nghĩa dấu của gia tốc so với dấu vận tốc",
+        "Vận dụng được bốn công thức của chuyển động thẳng biến đổi đều để giải bài toán",
+        "Sử dụng được hệ thức độc lập thời gian khi bài toán không cho thời gian"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.do-dich-chuyen-van-toc-thang-deu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Gia tốc",
+          "term_en": "Acceleration",
+          "definition": "Đại lượng vectơ đo tốc độ thay đổi của vận tốc: $\\vec{a} = \\dfrac{\\Delta \\vec{v}}{\\Delta t}$; đơn vị m/s$^2$."
+        },
+        {
+          "term_vi": "Chuyển động nhanh dần / chậm dần đều",
+          "term_en": "Uniformly speeding up / slowing down",
+          "definition": "Nhanh dần đều khi $\\vec{a}$ cùng chiều $\\vec{v}$ (tích $a\\cdot v > 0$); chậm dần đều khi $\\vec{a}$ ngược chiều $\\vec{v}$ ($a\\cdot v < 0$)."
+        },
+        {
+          "term_vi": "Hệ thức độc lập thời gian",
+          "term_en": "Time-independent relation",
+          "definition": "Liên hệ vận tốc, gia tốc và độ dịch chuyển không chứa $t$: $v^2 - v_0^2 = 2a\\,d$."
+        }
+      ],
+      "content": "## Từ vận tốc đổi đều đến gia tốc\n\nKhi vận tốc thay đổi *đều đặn* theo thời gian, tỉ số $\\dfrac{\\Delta v}{\\Delta t}$ là hằng số và được gọi là **gia tốc** $a$. Gia tốc dương hay âm không quyết định vật nhanh hay chậm dần; điều quyết định là **dấu của tích $a\\cdot v$**: cùng dấu thì nhanh dần, trái dấu thì chậm dần.\n\n## Bốn công thức lõi\n\nChọn mốc thời gian lúc $t=0$ với vận tốc đầu $v_0$:\n\n$$v = v_0 + a t, \\qquad d = v_0 t + \\tfrac{1}{2} a t^2,$$\n$$v^2 - v_0^2 = 2 a d, \\qquad x = x_0 + v_0 t + \\tfrac{1}{2} a t^2.$$\n\nHệ thức thứ ba đặc biệt hữu ích vì **không chứa thời gian**: khi đề cho vận tốc đầu, vận tốc cuối và quãng đường mà không cho $t$, đây là công thức cần chọn ngay.\n\n## Đồ thị kể chuyện chuyển động\n\nTrên đồ thị $v$-$t$, chuyển động biến đổi đều cho một đường thẳng xiên: **độ dốc bằng gia tốc**, còn **diện tích phần giới hạn giữa đồ thị và trục thời gian bằng độ dịch chuyển**. Phần diện tích nằm dưới trục hoành mang dấu âm — đó là lúc vật đi theo chiều âm.\n\n## Mẹo chọn công thức\n\nLiệt kê các đại lượng đã biết và đại lượng cần tìm, rồi chọn công thức chứa đúng bốn đại lượng đó. Quy tắc quãng đường trong giây thứ $n$ là $\\Delta s_n = v_0 + a\\left(n - \\tfrac12\\right)$ giúp giải nhanh nhiều câu trắc nghiệm.",
+      "formulas": [
+        "physics.thpt.dong-hoc.gia-toc-trung-binh",
+        "physics.thpt.dong-hoc.van-toc-chuyen-dong-bien-doi-deu",
+        "physics.thpt.dong-hoc.quang-duong-chuyen-dong-bien-doi-deu",
+        "physics.thpt.dong-hoc.he-thuc-doc-lap-thoi-gian",
+        "physics.thpt.dong-hoc.phuong-trinh-toa-do-chuyen-dong-bien-doi-deu",
+        "physics.thpt.dong-hoc.quang-duong-trong-giay-thu-n"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một xe đang chạy với vận tốc 20 m/s thì hãm phanh, chuyển động chậm dần đều với gia tốc có độ lớn 4 m/s$^2$. Tính quãng đường xe đi được đến khi dừng.",
+          "solution": "Chọn chiều dương là chiều chuyển động nên $v_0 = 20$ m/s, $a = -4$ m/s$^2$ (ngược chiều vận tốc vì hãm phanh). Khi dừng $v = 0$. Vì đề không hỏi thời gian, ta dùng hệ thức độc lập thời gian để đi thẳng tới đáp số:\n\n$$v^2 - v_0^2 = 2 a d \\Rightarrow 0 - 20^2 = 2(-4) d \\Rightarrow d = \\dfrac{400}{8} = 50 \\text{ m}.$$\n\nGia tốc mang dấu âm nên $d$ ra dương, đúng với thực tế xe tiến về phía trước rồi mới dừng.",
+          "answer": "$d = 50$ m"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng gia tốc âm luôn là chuyển động chậm dần. Sai; phải xét dấu tích $a\\cdot v$: nếu vận tốc cũng âm thì vật vẫn nhanh dần.",
+        "Quên đổi dấu gia tốc khi hãm phanh, dẫn tới nghiệm quãng đường âm hoặc vô lí. Phải gán $a$ ngược dấu $v_0$ khi vật chậm dần."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-hoc",
+        "gia-toc",
+        "bien-doi-deu"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.su-roi-tu-do",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Động học",
+      "order": 3,
+      "title_vi": "Sự rơi tự do",
+      "title_en": "Free fall",
+      "objectives": [
+        "Nêu được đặc điểm của sự rơi tự do và điều kiện để một vật rơi tự do",
+        "Vận dụng được các công thức rơi tự do để tính thời gian rơi, vận tốc và quãng đường",
+        "Giải thích được vì sao trong chân không mọi vật rơi như nhau bất kể khối lượng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-thang-bien-doi-deu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Rơi tự do",
+          "term_en": "Free fall",
+          "definition": "Chuyển động của vật chỉ dưới tác dụng của trọng lực, bỏ qua lực cản không khí; là chuyển động nhanh dần đều theo phương thẳng đứng, vận tốc đầu bằng 0 nếu thả nhẹ."
+        },
+        {
+          "term_vi": "Gia tốc rơi tự do",
+          "term_en": "Acceleration of free fall",
+          "definition": "Gia tốc chung cho mọi vật rơi tự do tại một nơi, kí hiệu $g$, hướng thẳng đứng xuống dưới; ở Việt Nam lấy gần đúng $g \\approx 9{,}8$ m/s$^2$ hoặc $10$ m/s$^2$."
+        }
+      ],
+      "content": "## Vì sao lông chim và viên bi rơi khác nhau?\n\nTrong không khí, lông chim rơi chậm hơn viên bi vì lực cản. Nhưng trong ống đã hút chân không, cả hai **rơi như nhau** và chạm đáy cùng lúc. Điều đó cho thấy: khi chỉ còn trọng lực, mọi vật rơi với cùng một gia tốc $g$, độc lập với khối lượng. Đó là bản chất của rơi tự do.\n\n## Các công thức\n\nRơi tự do là chuyển động nhanh dần đều với $v_0 = 0$, $a = g$, chiều dương hướng xuống:\n\n$$v = g t, \\qquad h = \\tfrac{1}{2} g t^2, \\qquad v^2 = 2 g h.$$\n\nTừ $h = \\tfrac12 g t^2$ suy ra thời gian rơi từ độ cao $h$: $t = \\sqrt{\\dfrac{2h}{g}}$. Vận tốc ngay trước khi chạm đất: $v = \\sqrt{2gh}$.\n\n## Một dấu hiệu nhận biết rơi tự do\n\nVì $h \\propto t^2$, quãng đường rơi trong các giây liên tiếp tỉ lệ với dãy số lẻ $1 : 3 : 5 : 7\\ldots$. Quãng đường rơi trong giây thứ $n$ là $\\Delta h_n = g\\left(n - \\tfrac12\\right)$. Đây là mẹo kiểm tra nhanh và cũng là cách nhận ra một chuyển động có phải nhanh dần đều hay không.\n\n## Khi nào áp dụng được?\n\nMô hình rơi tự do chỉ đúng khi lực cản không khí không đáng kể — vật nặng, nhỏ, rơi từ độ cao vừa phải. Với vật nhẹ, xốp hoặc rơi rất lâu, phải kể đến lực cản và vật sẽ đạt tốc độ giới hạn.",
+      "formulas": [
+        "physics.thpt.dong-hoc.roi-tu-do-van-toc",
+        "physics.thpt.dong-hoc.roi-tu-do-quang-duong",
+        "physics.thpt.dong-hoc.roi-tu-do-thoi-gian-roi",
+        "physics.thpt.dong-hoc.roi-tu-do-he-thuc-doc-lap",
+        "physics.thpt.dong-hoc.roi-tu-do-quang-duong-giay-thu-n"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Thả một vật rơi tự do từ độ cao 45 m, lấy $g = 10$ m/s$^2$. Tính thời gian rơi và quãng đường vật đi được trong giây cuối cùng.",
+          "solution": "Thời gian rơi hết độ cao: từ $h = \\tfrac12 g t^2$ ta có $t = \\sqrt{\\dfrac{2\\cdot 45}{10}} = 3$ s.\n\nQuãng đường trong giây cuối bằng quãng đường trong 3 s trừ quãng đường trong 2 s, vì giây cuối là khoảng thời gian từ $t=2$ s đến $t=3$ s:\n\n$$\\Delta h = \\tfrac12 g (3^2) - \\tfrac12 g (2^2) = 45 - 20 = 25 \\text{ m}.$$\n\nCó thể kiểm tra bằng công thức giây thứ $n$: $\\Delta h_3 = g(3 - 0{,}5) = 25$ m. Hai cách cho cùng kết quả.",
+          "answer": "$t = 3$ s; quãng đường giây cuối $= 25$ m"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng vật nặng rơi nhanh hơn vật nhẹ. Sai trong rơi tự do: khi bỏ qua lực cản, mọi vật có cùng gia tốc $g$ nên rơi như nhau.",
+        "Tính quãng đường giây cuối bằng $\\tfrac12 g \\cdot 1^2 = 5$ m. Sai vì đó là quãng đường của giây ĐẦU; giây cuối phải lấy hiệu quãng đường giữa hai mốc thời gian liên tiếp."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "dong-hoc",
+        "roi-tu-do",
+        "gia-toc-trong-truong"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-nem",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Động học",
+      "order": 4,
+      "title_vi": "Chuyển động ném ngang và ném xiên",
+      "title_en": "Projectile motion: horizontal and oblique launch",
+      "objectives": [
+        "Phân tích được chuyển động ném thành hai thành phần độc lập theo phương ngang và phương thẳng đứng",
+        "Tính được thời gian bay, tầm xa, tầm cao của vật ném ngang và ném xiên",
+        "Chứng minh được góc ném 45 độ cho tầm xa lớn nhất khi hai điểm ném và rơi cùng độ cao"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.su-roi-tu-do"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nguyên lí độc lập của chuyển động",
+          "term_en": "Independence of motions",
+          "definition": "Chuyển động theo phương ngang (thẳng đều) và theo phương thẳng đứng (rơi tự do hoặc ném) diễn ra độc lập, chỉ liên kết qua biến thời gian chung $t$."
+        },
+        {
+          "term_vi": "Tầm xa",
+          "term_en": "Range",
+          "definition": "Khoảng cách ngang từ điểm ném đến điểm chạm đất; với ném xiên cùng độ cao: $L = \\dfrac{v_0^2 \\sin 2\\alpha}{g}$."
+        },
+        {
+          "term_vi": "Tầm cao",
+          "term_en": "Maximum height",
+          "definition": "Độ cao lớn nhất vật đạt được so với điểm ném: $H = \\dfrac{v_0^2 \\sin^2 \\alpha}{2g}$, đạt khi thành phần vận tốc thẳng đứng bằng 0."
+        }
+      ],
+      "content": "## Bí quyết: tách một bài khó thành hai bài dễ\n\nMột vật ném đi trong trọng trường có quỹ đạo cong, nhưng ta không cần giải cả đường cong đó. Chìa khóa là **phân tích thành hai chuyển động độc lập**: theo phương ngang không có lực nên vật chuyển động thẳng đều $v_x = v_0\\cos\\alpha$; theo phương thẳng đứng chỉ chịu trọng lực nên là chuyển động biến đổi đều với gia tốc $g$. Hai chuyển động dùng chung một đồng hồ $t$.\n\n## Ném ngang\n\nNém ngang là trường hợp $\\alpha = 0$: $x = v_0 t$, $y = \\tfrac12 g t^2$. Thời gian rơi **chỉ phụ thuộc độ cao**, giống hệt rơi tự do: $t = \\sqrt{2h/g}$. Vì thế một viên bi ném ngang và một viên bi thả rơi từ cùng độ cao sẽ chạm đất *cùng lúc*. Tầm xa $L = v_0\\sqrt{2h/g}$.\n\n## Ném xiên\n\nVới góc ném $\\alpha$ và cùng độ cao điểm ném - điểm rơi:\n\n$$t_{bay} = \\dfrac{2v_0\\sin\\alpha}{g}, \\quad H = \\dfrac{v_0^2\\sin^2\\alpha}{2g}, \\quad L = \\dfrac{v_0^2\\sin 2\\alpha}{g}.$$\n\nVì $\\sin 2\\alpha$ đạt cực đại tại $2\\alpha = 90^\\circ$, **góc ném 45 độ cho tầm xa lớn nhất**. Hai góc phụ nhau (ví dụ 30 độ và 60 độ) cho cùng tầm xa vì $\\sin 2\\alpha$ bằng nhau.\n\n## Lưu ý\n\nMô hình bỏ qua sức cản không khí. Tại điểm cao nhất, vận tốc theo phương đứng bằng 0 nhưng vận tốc ngang vẫn còn, nên vật *không* dừng lại.",
+      "formulas": [
+        "physics.thpt.dong-hoc.nem-ngang-phuong-trinh-chuyen-dong",
+        "physics.thpt.dong-hoc.nem-ngang-thoi-gian-roi",
+        "physics.thpt.dong-hoc.nem-ngang-tam-xa",
+        "physics.thpt.dong-hoc.nem-ngang-van-toc-cham-dat",
+        "physics.thpt.dong-hoc.nem-xien-tam-xa",
+        "physics.thpt.dong-hoc.nem-xien-tam-cao",
+        "physics.thpt.dong-hoc.nem-xien-thoi-gian-bay",
+        "physics.thpt.dong-hoc.nem-xien-goc-nem-toi-uu",
+        "physics.thpt.dong-hoc.nem-ngang-goc-hop-phuong-ngang",
+        "physics.thpt.dong-hoc.nem-xien-phuong-trinh-quy-dao"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Từ đỉnh tháp cao 20 m, ném ngang một hòn đá với tốc độ 15 m/s. Lấy $g = 10$ m/s$^2$. Tính thời gian rơi và tầm xa.",
+          "solution": "Theo phương thẳng đứng, hòn đá rơi tự do nên thời gian chạm đất chỉ phụ thuộc độ cao, không phụ thuộc tốc độ ném:\n\n$$t = \\sqrt{\\dfrac{2h}{g}} = \\sqrt{\\dfrac{2\\cdot 20}{10}} = 2 \\text{ s}.$$\n\nTheo phương ngang vật chuyển động thẳng đều nên tầm xa:\n\n$$L = v_0 t = 15 \\cdot 2 = 30 \\text{ m}.$$\n\nĐiểm mấu chốt: dù ném nhanh hay chậm, thời gian rơi vẫn là 2 s vì thành phần thẳng đứng độc lập với thành phần ngang.",
+          "answer": "$t = 2$ s; $L = 30$ m"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng ném ngang càng nhanh thì thời gian rơi càng lâu. Sai; thời gian rơi chỉ phụ thuộc độ cao vì chuyển động thẳng đứng độc lập với chuyển động ngang.",
+        "Nghĩ tại điểm cao nhất của ném xiên vật đứng yên. Sai; chỉ thành phần vận tốc thẳng đứng bằng 0, thành phần ngang $v_0\\cos\\alpha$ vẫn được bảo toàn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dong-hoc",
+        "nem-ngang",
+        "nem-xien"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.tinh-tuong-doi-cong-van-toc",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Động học",
+      "order": 5,
+      "title_vi": "Tính tương đối của chuyển động và công thức cộng vận tốc",
+      "title_en": "Relativity of motion and velocity addition",
+      "objectives": [
+        "Phân biệt được hệ quy chiếu đứng yên và hệ quy chiếu chuyển động",
+        "Vận dụng được công thức cộng vận tốc cho các trường hợp cùng phương và vuông góc",
+        "Giải được bài toán thuyền qua sông và bài toán vận tốc tương đối giữa hai xe"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.do-dich-chuyen-van-toc-thang-deu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hệ quy chiếu",
+          "term_en": "Frame of reference",
+          "definition": "Hệ gồm vật mốc, hệ trục tọa độ gắn với vật mốc và đồng hồ đo thời gian; mọi mô tả chuyển động đều phải gắn với một hệ quy chiếu."
+        },
+        {
+          "term_vi": "Công thức cộng vận tốc",
+          "term_en": "Velocity addition formula",
+          "definition": "Vận tốc tuyệt đối bằng tổng vectơ của vận tốc tương đối và vận tốc kéo theo: $\\vec{v}_{13} = \\vec{v}_{12} + \\vec{v}_{23}$."
+        }
+      ],
+      "content": "## Chuyển động là tương đối\n\nNgười ngồi trên tàu thấy hành khách bên cạnh đứng yên, nhưng người đứng ở sân ga lại thấy hành khách đó chuyển động. Không ai sai cả: **vận tốc phụ thuộc hệ quy chiếu**. Muốn nói vận tốc của một vật, bắt buộc phải nói rõ *đối với hệ nào*.\n\n## Quy ước chỉ số và công thức cộng vận tốc\n\nDùng ba chỉ số: 1 là vật khảo sát, 2 là hệ chuyển động (ví dụ dòng nước, con tàu), 3 là hệ đứng yên (bờ, mặt đất). Khi đó:\n\n$$\\vec{v}_{13} = \\vec{v}_{12} + \\vec{v}_{23},$$\n\ntrong đó $\\vec{v}_{13}$ là vận tốc tuyệt đối (so với đất), $\\vec{v}_{12}$ là vận tốc tương đối, $\\vec{v}_{23}$ là vận tốc kéo theo. Đây là **phép cộng vectơ**, không phải cộng số học.\n\n## Hai trường hợp hay gặp\n\nNếu hai vận tốc **cùng phương**: cùng chiều thì cộng độ lớn, ngược chiều thì trừ. Nếu hai vận tốc **vuông góc** (thuyền hướng mũi vuông góc dòng nước): dùng định lí Pythagore $v_{13} = \\sqrt{v_{12}^2 + v_{23}^2}$.\n\n## Ứng dụng điển hình\n\nBài toán thuyền qua sông, máy bay gặp gió, hai xe gặp nhau hay đuổi nhau đều quy về cộng vận tốc. Chọn đúng ba chỉ số và vẽ đúng tam giác vectơ là giải xong.",
+      "formulas": [
+        "physics.thpt.dong-hoc.cong-thuc-cong-van-toc",
+        "physics.thpt.dong-hoc.cong-van-toc-cung-phuong",
+        "physics.thpt.dong-hoc.cong-van-toc-hop-goc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một chiếc thuyền hướng mũi vuông góc với bờ, tốc độ so với nước 3 m/s. Nước chảy dọc bờ với tốc độ 4 m/s. Tính tốc độ của thuyền so với bờ.",
+          "solution": "Gọi 1 là thuyền, 2 là nước, 3 là bờ. Vận tốc thuyền so với nước $v_{12}=3$ m/s vuông góc bờ; vận tốc nước so với bờ $v_{23}=4$ m/s dọc bờ. Vì hai vectơ vuông góc nhau, độ lớn vận tốc tổng hợp tính bằng Pythagore:\n\n$$v_{13} = \\sqrt{v_{12}^2 + v_{23}^2} = \\sqrt{3^2 + 4^2} = 5 \\text{ m/s}.$$\n\nThuyền bị nước cuốn xiên nên tốc độ so với bờ (5 m/s) lớn hơn tốc độ riêng của thuyền (3 m/s).",
+          "answer": "$v_{13} = 5$ m/s"
+        }
+      ],
+      "common_mistakes": [
+        "Cộng số học hai vận tốc vuông góc thành $3 + 4 = 7$ m/s. Sai vì cộng vận tốc là phép cộng vectơ; hai vectơ vuông góc phải dùng Pythagore.",
+        "Nhầm vai trò ba chỉ số, lấy vận tốc nước so với thuyền thay cho thuyền so với nước, dẫn đến sai hướng và sai kết quả. Cần đặt chỉ số nhất quán $\\vec{v}_{13}=\\vec{v}_{12}+\\vec{v}_{23}$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-hoc",
+        "tinh-tuong-doi",
+        "cong-van-toc"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-tron-deu",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Động học",
+      "order": 6,
+      "title_vi": "Chuyển động tròn đều",
+      "title_en": "Uniform circular motion",
+      "objectives": [
+        "Định nghĩa được tốc độ góc, chu kì, tần số và nêu mối liên hệ giữa chúng",
+        "Thiết lập được liên hệ giữa tốc độ dài và tốc độ góc",
+        "Giải thích được vì sao chuyển động tròn đều luôn có gia tốc dù tốc độ không đổi"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-thang-bien-doi-deu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tốc độ góc",
+          "term_en": "Angular velocity",
+          "definition": "Góc quét được trong một đơn vị thời gian: $\\omega = \\dfrac{\\Delta \\varphi}{\\Delta t}$; đơn vị rad/s. Liên hệ tốc độ dài: $v = \\omega r$."
+        },
+        {
+          "term_vi": "Chu kì và tần số",
+          "term_en": "Period and frequency",
+          "definition": "Chu kì $T$ là thời gian đi hết một vòng; tần số $f$ là số vòng trong một giây; $T = \\dfrac{2\\pi}{\\omega}$ và $f = \\dfrac{1}{T}$."
+        },
+        {
+          "term_vi": "Gia tốc hướng tâm",
+          "term_en": "Centripetal acceleration",
+          "definition": "Gia tốc luôn hướng vào tâm, đặc trưng cho sự đổi hướng của vận tốc: $a_{ht} = \\dfrac{v^2}{r} = \\omega^2 r$."
+        }
+      ],
+      "content": "## Tốc độ không đổi nhưng vận tốc thì đổi\n\nMột điểm trên vành bánh xe quay đều đi được những cung bằng nhau trong những khoảng thời gian bằng nhau: **tốc độ dài không đổi**. Nhưng *hướng* của vận tốc luôn thay đổi (luôn tiếp tuyến quỹ đạo), nên vận tốc — vốn là vectơ — vẫn biến thiên. Vì có sự biến thiên vận tốc nên **luôn có gia tốc**.\n\n## Các đại lượng đặc trưng\n\nGóc quét trên đơn vị thời gian là tốc độ góc $\\omega$. Đi hết một vòng ($2\\pi$ rad) mất chu kì $T$, nên:\n\n$$\\omega = \\dfrac{2\\pi}{T} = 2\\pi f, \\qquad v = \\omega r.$$\n\nCông thức $v = \\omega r$ giải thích vì sao điểm ở mép ngoài đĩa quay nhanh hơn điểm gần trục: cùng $\\omega$ nhưng $r$ lớn hơn.\n\n## Gia tốc hướng tâm\n\nGia tốc trong chuyển động tròn đều **hướng vào tâm** và có độ lớn:\n\n$$a_{ht} = \\dfrac{v^2}{r} = \\omega^2 r.$$\n\nNó không làm thay đổi tốc độ (không có thành phần tiếp tuyến) mà chỉ *bẻ cong* quỹ đạo, giữ vật đi vòng.\n\n## Khi nào cần?\n\nMọi bài toán vệ tinh, xe vào cua, đồng hồ, đĩa quay đều bắt đầu từ các đại lượng này. Ở bài sau, ta gắn gia tốc hướng tâm với lực để hiểu lực hướng tâm.",
+      "formulas": [
+        "physics.thpt.dong-hoc.toc-do-goc",
+        "physics.thpt.dong-hoc.lien-he-toc-do-dai-toc-do-goc",
+        "physics.thpt.dong-hoc.chu-ki-chuyen-dong-tron-deu",
+        "physics.thpt.dong-hoc.tan-so-chuyen-dong-tron-deu",
+        "physics.thpt.dong-hoc.gia-toc-huong-tam"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một đĩa quay đều 300 vòng/phút, một điểm cách trục 20 cm. Tính tốc độ góc, tốc độ dài và gia tốc hướng tâm của điểm đó.",
+          "solution": "Đổi tần số: $f = \\dfrac{300}{60} = 5$ vòng/s. Tốc độ góc:\n\n$$\\omega = 2\\pi f = 2\\pi \\cdot 5 = 10\\pi \\approx 31{,}4 \\text{ rad/s}.$$\n\nTốc độ dài với $r = 0{,}2$ m: $v = \\omega r = 31{,}4 \\cdot 0{,}2 \\approx 6{,}28$ m/s. Gia tốc hướng tâm:\n\n$$a_{ht} = \\omega^2 r = (31{,}4)^2 \\cdot 0{,}2 \\approx 197 \\text{ m/s}^2.$$\n\nGiá trị lớn cho thấy vật quay nhanh chịu gia tốc rất mạnh dù tốc độ dài không đổi.",
+          "answer": "$\\omega \\approx 31{,}4$ rad/s; $v \\approx 6{,}28$ m/s; $a_{ht}\\approx 197$ m/s$^2$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng chuyển động tròn đều không có gia tốc vì tốc độ không đổi. Sai; vận tốc đổi hướng liên tục nên luôn có gia tốc hướng tâm.",
+        "Quên đổi vòng/phút sang rad/s trước khi tính, hoặc nhầm $\\omega$ với $f$. Phải nhân với $2\\pi$ vì mỗi vòng ứng với $2\\pi$ rad."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-hoc",
+        "chuyen-dong-tron",
+        "gia-toc-huong-tam"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 1,
+      "title_vi": "Ba định luật Newton",
+      "title_en": "Newton's three laws of motion",
+      "objectives": [
+        "Phát biểu được ba định luật Newton và nêu ý nghĩa của mỗi định luật",
+        "Vận dụng được định luật II Newton để tính gia tốc, lực hoặc khối lượng",
+        "Phân biệt được cặp lực - phản lực với cặp lực cân bằng"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Quán tính",
+          "term_en": "Inertia",
+          "definition": "Xu hướng của vật giữ nguyên trạng thái đứng yên hoặc chuyển động thẳng đều khi không có lực tác dụng hoặc hợp lực bằng 0; khối lượng là số đo mức quán tính."
+        },
+        {
+          "term_vi": "Định luật II Newton",
+          "term_en": "Newton's second law",
+          "definition": "Gia tốc của vật tỉ lệ thuận với hợp lực và tỉ lệ nghịch với khối lượng, cùng hướng hợp lực: $\\vec{a} = \\dfrac{\\vec{F}}{m}$."
+        },
+        {
+          "term_vi": "Lực và phản lực",
+          "term_en": "Action and reaction",
+          "definition": "Hai lực trực đối trong định luật III: cùng độ lớn, ngược chiều, đặt vào HAI vật khác nhau nên không triệt tiêu nhau."
+        }
+      ],
+      "content": "## Định luật I: quán tính\n\nNếu hợp lực tác dụng lên vật bằng 0, vật đang đứng yên sẽ đứng yên mãi, vật đang chuyển động sẽ chuyển động thẳng đều. Vật *không tự nhiên* dừng lại — nó dừng vì có ma sát. Đây là bước ngoặt so với quan niệm cổ đại rằng phải có lực mới duy trì chuyển động.\n\n## Định luật II: liên hệ lực và gia tốc\n\nHợp lực gây ra gia tốc, không phải vận tốc:\n\n$$\\vec{F}_{hl} = m\\vec{a}.$$\n\nGia tốc luôn cùng hướng hợp lực. Đây là công cụ trung tâm của động lực học: muốn tìm gia tốc, hãy tổng hợp mọi lực rồi chia cho khối lượng. Khối lượng đóng vai trò *mức cản trở* thay đổi vận tốc.\n\n## Định luật III: tương tác luôn có hai chiều\n\nKhi vật A đẩy vật B thì B đẩy lại A một lực bằng độ lớn, ngược chiều:\n\n$$\\vec{F}_{AB} = -\\vec{F}_{BA}.$$\n\nĐiểm cốt lõi: hai lực này **đặt vào hai vật khác nhau** nên không bao giờ cân bằng lẫn nhau. Đừng nhầm với hai lực cân bằng cùng đặt lên một vật.\n\n## Cách giải một bài động lực học\n\nBốn bước: (1) chọn vật khảo sát; (2) vẽ mọi lực tác dụng lên nó; (3) chọn hệ trục và chiếu định luật II lên các trục; (4) giải hệ phương trình. Sơ đồ lực vẽ đúng là nửa lời giải.",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.dinh-luat-i-newton",
+        "physics.thpt.dong-luc-hoc.dinh-luat-ii-newton",
+        "physics.thpt.dong-luc-hoc.dinh-luat-iii-newton",
+        "physics.thpt.dong-luc-hoc.tong-hop-hai-luc-dong-quy"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một vật khối lượng 2 kg chịu hợp lực không đổi và thu gia tốc 3 m/s$^2$. Nếu giữ nguyên lực đó nhưng tác dụng lên vật 6 kg thì gia tốc bằng bao nhiêu?",
+          "solution": "Từ định luật II, hợp lực $F = m_1 a_1 = 2 \\cdot 3 = 6$ N. Vì lực giữ nguyên, gia tốc tỉ lệ nghịch với khối lượng:\n\n$$a_2 = \\dfrac{F}{m_2} = \\dfrac{6}{6} = 1 \\text{ m/s}^2.$$\n\nKhối lượng tăng gấp 3 nên gia tốc giảm 3 lần — đúng bản chất khối lượng là mức quán tính.",
+          "answer": "$a_2 = 1$ m/s$^2$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng lực và phản lực triệt tiêu nhau nên vật không chuyển động. Sai; chúng đặt vào hai vật khác nhau nên không cân bằng trên cùng một vật.",
+        "Nghĩ có lực thì có vận tốc. Sai; lực gây ra gia tốc chứ không phải vận tốc, vật có thể đang chuyển động nhanh mà hợp lực vẫn bằng 0."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-luc-hoc",
+        "dinh-luat-newton",
+        "quan-tinh"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.luc-hap-dan-trong-luc",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 2,
+      "title_vi": "Lực hấp dẫn và trọng lực",
+      "title_en": "Gravitation and weight",
+      "objectives": [
+        "Phát biểu và vận dụng được định luật vạn vật hấp dẫn của Newton",
+        "Thiết lập được biểu thức gia tốc trọng trường tại mặt đất và ở độ cao h",
+        "Phân biệt được trọng lực với trọng lượng và giải thích hiện tượng tăng - giảm trọng lượng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Định luật vạn vật hấp dẫn",
+          "term_en": "Law of universal gravitation",
+          "definition": "Hai chất điểm hút nhau bằng lực tỉ lệ thuận tích hai khối lượng, tỉ lệ nghịch bình phương khoảng cách: $F = G\\dfrac{m_1 m_2}{r^2}$, với $G = 6{,}67\\cdot 10^{-11}$ N·m$^2$/kg$^2$."
+        },
+        {
+          "term_vi": "Trọng lực",
+          "term_en": "Gravity",
+          "definition": "Lực hấp dẫn của Trái Đất tác dụng lên vật, gần đúng $\\vec{P} = m\\vec{g}$, hướng về tâm Trái Đất."
+        },
+        {
+          "term_vi": "Gia tốc trọng trường",
+          "term_en": "Gravitational field strength",
+          "definition": "Gia tốc mà mọi vật thu được do trọng lực: tại mặt đất $g = \\dfrac{GM}{R^2}$; ở độ cao $h$: $g_h = \\dfrac{GM}{(R+h)^2}$."
+        }
+      ],
+      "content": "## Một lực điều khiển cả vũ trụ\n\nNewton nhận ra rằng lực làm quả táo rơi và lực giữ Mặt Trăng quay quanh Trái Đất là *cùng một lực*. Mọi vật có khối lượng đều hút nhau:\n\n$$F = G\\dfrac{m_1 m_2}{r^2}.$$\n\nLực này rất yếu giữa các vật thường (nên ta không cảm nhận) nhưng khổng lồ khi một trong hai vật là hành tinh.\n\n## Trọng lực và gia tốc trọng trường\n\nÁp định luật hấp dẫn cho vật khối lượng $m$ ở gần mặt đất, coi Trái Đất là quả cầu khối lượng $M$, bán kính $R$:\n\n$$P = G\\dfrac{Mm}{R^2} = mg \\Rightarrow g = \\dfrac{GM}{R^2}.$$\n\nVì $g$ không phụ thuộc $m$, mọi vật rơi tự do như nhau — đúng như đã học. Lên cao $h$ thì khoảng cách tăng, $g$ giảm: $g_h = \\dfrac{GM}{(R+h)^2}$.\n\n## Trọng lực khác trọng lượng\n\nTrọng lực là lực hút của Trái Đất, gần như không đổi. Trọng lượng là *độ lớn lực mà vật ép lên giá đỡ hay lực căng dây treo* — nó thay đổi khi hệ có gia tốc. Trong thang máy đi lên nhanh dần, ta thấy nặng hơn; khi rơi tự do, trọng lượng biểu kiến bằng 0 (trạng thái không trọng lượng). Chính hiệu ứng này giúp giải thích cảm giác của phi hành gia trên trạm quỹ đạo.",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.dinh-luat-van-vat-hap-dan",
+        "physics.thpt.dong-luc-hoc.trong-luc",
+        "physics.thpt.dong-luc-hoc.gia-toc-trong-truong-mat-dat",
+        "physics.thpt.dong-luc-hoc.gia-toc-trong-truong-do-cao-h",
+        "physics.thpt.dong-luc-hoc.van-toc-vu-tru-cap-i"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Biết gia tốc trọng trường ở mặt đất $g_0 = 9{,}8$ m/s$^2$ và bán kính Trái Đất $R = 6400$ km. Tính gia tốc trọng trường ở độ cao $h = 3200$ km.",
+          "solution": "Vì $g = \\dfrac{GM}{r^2}$ tỉ lệ nghịch bình phương khoảng cách tới tâm, ta lập tỉ số giữa hai độ cao mà không cần biết $G$ hay $M$:\n\n$$\\dfrac{g_h}{g_0} = \\left(\\dfrac{R}{R+h}\\right)^2 = \\left(\\dfrac{6400}{9600}\\right)^2 = \\left(\\dfrac{2}{3}\\right)^2 = \\dfrac{4}{9}.$$\n\nSuy ra $g_h = \\dfrac{4}{9}\\cdot 9{,}8 \\approx 4{,}36$ m/s$^2$. Ở độ cao bằng nửa bán kính, $g$ chỉ còn hơn 44% giá trị mặt đất.",
+          "answer": "$g_h \\approx 4{,}36$ m/s$^2$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng lên cao thì $g$ tỉ lệ nghịch với khoảng cách. Sai; $g$ tỉ lệ nghịch với BÌNH PHƯƠNG khoảng cách tới tâm Trái Đất.",
+        "Lấy khoảng cách bằng $h$ thay vì $R + h$. Sai; công thức tính từ tâm Trái Đất nên phải cộng bán kính $R$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-luc-hoc",
+        "hap-dan",
+        "trong-luc"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.luc-dan-hoi-dinh-luat-hooke",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 3,
+      "title_vi": "Lực đàn hồi và định luật Hooke",
+      "title_en": "Elastic force and Hooke's law",
+      "objectives": [
+        "Nêu được đặc điểm và điều kiện xuất hiện của lực đàn hồi",
+        "Vận dụng được định luật Hooke để tính lực đàn hồi và độ cứng lò xo",
+        "Tính được độ cứng của hệ lò xo ghép nối tiếp và ghép song song"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Lực đàn hồi",
+          "term_en": "Elastic (restoring) force",
+          "definition": "Lực xuất hiện khi vật bị biến dạng, có xu hướng đưa vật về hình dạng ban đầu, ngược chiều biến dạng."
+        },
+        {
+          "term_vi": "Định luật Hooke",
+          "term_en": "Hooke's law",
+          "definition": "Trong giới hạn đàn hồi, độ lớn lực đàn hồi của lò xo tỉ lệ với độ biến dạng: $F_{dh} = k|\\Delta l|$, với $k$ là độ cứng (N/m)."
+        },
+        {
+          "term_vi": "Độ cứng",
+          "term_en": "Spring constant",
+          "definition": "Đại lượng đặc trưng cho mức khó biến dạng của lò xo; lò xo càng cứng $k$ càng lớn, cùng một lực thì dãn ít hơn."
+        }
+      ],
+      "content": "## Vì sao lò xo kéo lại?\n\nKhi kéo hoặc nén một lò xo, các nguyên tử bị dịch khỏi vị trí cân bằng và sinh ra **lực đàn hồi** chống lại biến dạng, luôn hướng về trạng thái tự nhiên. Lực này chỉ tồn tại khi còn biến dạng và biến mất khi lò xo trở lại chiều dài ban đầu.\n\n## Định luật Hooke\n\nRobert Hooke phát hiện: trong giới hạn đàn hồi, lực đàn hồi tỉ lệ thuận với độ biến dạng:\n\n$$F_{dh} = k|\\Delta l| = k|l - l_0|.$$\n\nĐồ thị $F$ theo $\\Delta l$ là đường thẳng qua gốc, độ dốc chính là độ cứng $k$. Vượt quá giới hạn đàn hồi, lò xo biến dạng dẻo và định luật không còn đúng.\n\n## Lò xo treo thẳng đứng\n\nTreo vật $m$ vào lò xo, ở vị trí cân bằng lực đàn hồi cân bằng trọng lực:\n\n$$k\\,\\Delta l = mg \\Rightarrow \\Delta l = \\dfrac{mg}{k}.$$\n\nĐo độ dãn ở cân bằng là cách xác định $k$ trong thí nghiệm.\n\n## Ghép lò xo\n\nGhép **nối tiếp** thì lò xo mềm đi: $\\dfrac{1}{k} = \\dfrac{1}{k_1} + \\dfrac{1}{k_2}$. Ghép **song song** thì cứng lên: $k = k_1 + k_2$. Nhớ mẹo: nối tiếp giống điện trở song song, song song giống điện trở nối tiếp — vì độ cứng đo *độ khó dãn*.",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.dinh-luat-hooke",
+        "physics.thpt.dong-luc-hoc.lo-xo-treo-thang-dung",
+        "physics.thpt.dong-luc-hoc.ghep-lo-xo",
+        "physics.thpt.dong-luc-hoc.luc-quan-tinh"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Treo vật 0,5 kg vào lò xo thì lò xo dãn 2,5 cm. Lấy $g = 10$ m/s$^2$. Tính độ cứng lò xo. Nếu cắt lò xo này thành hai nửa bằng nhau và ghép song song, độ cứng hệ mới bằng bao nhiêu?",
+          "solution": "Ở cân bằng, lực đàn hồi cân bằng trọng lực nên $k\\,\\Delta l = mg$:\n\n$$k = \\dfrac{mg}{\\Delta l} = \\dfrac{0{,}5\\cdot 10}{0{,}025} = 200 \\text{ N/m}.$$\n\nCắt đôi lò xo, mỗi nửa có độ cứng gấp đôi (lò xo ngắn hơn thì cứng hơn) nên mỗi nửa $k' = 400$ N/m. Ghép song song hai nửa cộng độ cứng:\n\n$$k_{ss} = 400 + 400 = 800 \\text{ N/m}.$$",
+          "answer": "$k = 200$ N/m; hệ song song $k_{ss} = 800$ N/m"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm công thức ghép: cộng thẳng độ cứng khi nối tiếp. Sai; nối tiếp phải cộng nghịch đảo vì tổng độ dãn tăng, hệ mềm đi.",
+        "Quên rằng cắt ngắn lò xo làm độ cứng tăng. Độ cứng tỉ lệ nghịch với chiều dài tự nhiên nên cắt đôi thì mỗi nửa cứng gấp đôi."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "dong-luc-hoc",
+        "luc-dan-hoi",
+        "hooke"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.luc-ma-sat",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 4,
+      "title_vi": "Lực ma sát",
+      "title_en": "Friction forces",
+      "objectives": [
+        "Phân biệt được ma sát nghỉ, ma sát trượt và ma sát lăn",
+        "Vận dụng được công thức lực ma sát trượt để giải bài toán chuyển động",
+        "Giải thích được vai trò hai mặt của ma sát trong đời sống và kĩ thuật"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Ma sát nghỉ",
+          "term_en": "Static friction",
+          "definition": "Lực giữ vật đứng yên khi có ngoại lực kéo, tự điều chỉnh đúng bằng thành phần ngoại lực song song mặt tiếp xúc, đạt cực đại $F_{msn}^{max} = \\mu_n N$ trước khi vật trượt."
+        },
+        {
+          "term_vi": "Ma sát trượt",
+          "term_en": "Kinetic friction",
+          "definition": "Lực cản khi vật trượt trên mặt khác, ngược chiều chuyển động, độ lớn $F_{mst} = \\mu_t N$, gần như không phụ thuộc tốc độ và diện tích tiếp xúc."
+        }
+      ],
+      "content": "## Ba loại ma sát\n\nMa sát xuất hiện ở mặt tiếp xúc giữa hai vật. **Ma sát nghỉ** giữ cho vật chưa trượt: nó tự tăng theo ngoại lực đến một giá trị cực đại rồi vật bắt đầu trượt. **Ma sát trượt** cản lại chuyển động trượt. **Ma sát lăn** rất nhỏ, xuất hiện khi vật lăn — đó là lí do người ta dùng bánh xe, ổ bi.\n\n## Công thức ma sát trượt\n\nĐộ lớn lực ma sát trượt tỉ lệ với áp lực (phản lực pháp tuyến) $N$:\n\n$$F_{mst} = \\mu_t N,$$\n\ntrong đó $\\mu_t$ là hệ số ma sát trượt, không thứ nguyên, phụ thuộc bản chất và độ nhám hai mặt. Đáng chú ý: lực ma sát trượt **gần như không phụ thuộc diện tích tiếp xúc và tốc độ**.\n\n## Chú ý về áp lực N\n\nSai lầm phổ biến là lấy $N = mg$ trong mọi trường hợp. Thực ra $N$ là phản lực pháp tuyến, phải tìm từ phương trình theo phương vuông góc mặt. Trên mặt phẳng ngang có lực kéo xiên góc $\\alpha$ lên trên thì $N = mg - F\\sin\\alpha$; trên mặt nghiêng thì $N = mg\\cos\\theta$.\n\n## Hai mặt của ma sát\n\nMa sát vừa có hại (làm nóng, mòn máy, tiêu hao năng lượng) vừa có lợi (giúp đi lại, phanh xe, cầm nắm). Kĩ thuật tìm cách giảm ma sát chỗ cần (bôi trơn, ổ bi) và tăng ma sát chỗ khác (rãnh lốp, phanh).",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.luc-ma-sat-truot",
+        "physics.thpt.dong-luc-hoc.luc-ma-sat-nghi",
+        "physics.thpt.dong-luc-hoc.luc-ma-sat-lan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Đẩy một thùng 20 kg trượt đều trên sàn ngang bằng lực nằm ngang 60 N. Lấy $g = 10$ m/s$^2$. Tính hệ số ma sát trượt.",
+          "solution": "Vật trượt ĐỀU nên hợp lực bằng 0, lực đẩy cân bằng lực ma sát: $F_{mst} = 60$ N. Trên mặt ngang không có lực xiên nên áp lực bằng trọng lực:\n\n$$N = mg = 20\\cdot 10 = 200 \\text{ N}.$$\n\nTừ $F_{mst} = \\mu_t N$ suy ra:\n\n$$\\mu_t = \\dfrac{F_{mst}}{N} = \\dfrac{60}{200} = 0{,}3.$$",
+          "answer": "$\\mu_t = 0{,}3$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy $N = mg$ ngay cả khi có lực kéo xiên hoặc trên mặt nghiêng. Sai; phải tìm $N$ từ phương trình chiếu theo phương pháp tuyến.",
+        "Cho rằng lực ma sát trượt tăng theo tốc độ hoặc theo diện tích tiếp xúc. Thực nghiệm cho thấy nó gần như chỉ phụ thuộc áp lực và hệ số ma sát."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-luc-hoc",
+        "ma-sat",
+        "he-so-ma-sat"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-tren-mat-phang-nghieng",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 5,
+      "title_vi": "Chuyển động trên mặt phẳng nghiêng",
+      "title_en": "Motion on an inclined plane",
+      "objectives": [
+        "Phân tích được trọng lực thành hai thành phần trên mặt phẳng nghiêng",
+        "Tính được gia tốc của vật trượt trên mặt nghiêng có và không có ma sát",
+        "Xác định được điều kiện để vật nằm yên hoặc bắt đầu trượt trên mặt nghiêng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.luc-ma-sat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Thành phần trọng lực trên mặt nghiêng",
+          "term_en": "Weight components on incline",
+          "definition": "Trọng lực $\\vec{P}$ được phân tích thành thành phần song song mặt nghiêng $P_x = mg\\sin\\theta$ (gây trượt) và thành phần vuông góc $P_y = mg\\cos\\theta$ (ép lên mặt)."
+        },
+        {
+          "term_vi": "Phản lực pháp tuyến trên mặt nghiêng",
+          "term_en": "Normal force on incline",
+          "definition": "Lực mặt nghiêng đẩy vuông góc vào vật, cân bằng thành phần vuông góc của trọng lực khi vật không rời mặt: $N = mg\\cos\\theta$."
+        }
+      ],
+      "content": "## Chọn hệ trục thông minh\n\nTrên mặt phẳng nghiêng, thay vì dùng trục ngang - đứng, ta chọn **một trục dọc theo mặt nghiêng, một trục vuông góc mặt nghiêng**. Khi đó chỉ trọng lực bị phân tích, còn phản lực và ma sát đã nằm sẵn trên trục. Trọng lực tách thành:\n\n$$P_x = mg\\sin\\theta \\ (\\text{kéo vật xuống dốc}), \\qquad P_y = mg\\cos\\theta \\ (\\text{ép vào mặt}).$$\n\n## Mặt nghiêng nhẵn\n\nKhông ma sát, chỉ $P_x$ gây gia tốc dọc mặt:\n\n$$a = g\\sin\\theta.$$\n\nGia tốc **không phụ thuộc khối lượng** — mọi vật trượt như nhau, giống rơi tự do bị 'pha loãng' theo $\\sin\\theta$.\n\n## Mặt nghiêng có ma sát\n\nKhi vật trượt xuống, ma sát hướng lên dốc, độ lớn $\\mu N = \\mu mg\\cos\\theta$:\n\n$$a = g(\\sin\\theta - \\mu\\cos\\theta).$$\n\n## Điều kiện nằm yên\n\nVật đứng yên khi thành phần kéo xuống chưa vượt ma sát nghỉ cực đại: $mg\\sin\\theta \\le \\mu_n mg\\cos\\theta$, tức $\\tan\\theta \\le \\mu_n$. Góc mà vật bắt đầu trượt thỏa $\\tan\\theta = \\mu_n$ — đây là cách đo hệ số ma sát nghỉ chỉ bằng một tấm ván nghiêng.",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.mat-phang-nghieng-khong-ma-sat",
+        "physics.thpt.dong-luc-hoc.mat-phang-nghieng-co-ma-sat",
+        "physics.thpt.dong-luc-hoc.phan-luc-mat-phang-nghieng",
+        "physics.thpt.dong-luc-hoc.dieu-kien-nam-yen-mat-phang-nghieng"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một vật trượt không vận tốc đầu từ đỉnh mặt phẳng nghiêng góc 30 độ, hệ số ma sát trượt 0,2. Lấy $g = 10$ m/s$^2$. Tính gia tốc của vật.",
+          "solution": "Chọn trục dọc mặt nghiêng, chiều dương hướng xuống. Vật trượt xuống nên ma sát hướng lên. Gia tốc:\n\n$$a = g(\\sin\\theta - \\mu\\cos\\theta) = 10(\\sin 30^\\circ - 0{,}2\\cos 30^\\circ).$$\n\nThay $\\sin 30^\\circ = 0{,}5$, $\\cos 30^\\circ \\approx 0{,}866$:\n\n$$a = 10(0{,}5 - 0{,}2\\cdot 0{,}866) = 10(0{,}5 - 0{,}173) \\approx 3{,}27 \\text{ m/s}^2.$$\n\nGia tốc dương xác nhận vật trượt xuống (vì $\\tan 30^\\circ \\approx 0{,}577 > \\mu = 0{,}2$).",
+          "answer": "$a \\approx 3{,}27$ m/s$^2$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy $N = mg$ trên mặt nghiêng. Sai; áp lực chỉ bằng thành phần vuông góc $N = mg\\cos\\theta$, nhỏ hơn trọng lực.",
+        "Quên rằng chiều lực ma sát phụ thuộc chiều chuyển động; khi vật đi lên thì ma sát hướng xuống, dấu trong công thức gia tốc đổi."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dong-luc-hoc",
+        "mat-phang-nghieng",
+        "phan-tich-luc"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.luc-huong-tam",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 6,
+      "title_vi": "Lực hướng tâm",
+      "title_en": "Centripetal force",
+      "objectives": [
+        "Nêu được bản chất của lực hướng tâm và chỉ ra lực đóng vai trò hướng tâm trong mỗi tình huống",
+        "Vận dụng được công thức lực hướng tâm để giải bài toán xe qua cầu, vòng xiếc",
+        "Xác định được tốc độ giới hạn để vật không văng ra hoặc không rời quỹ đạo tròn"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-tron-deu",
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Lực hướng tâm",
+          "term_en": "Centripetal force",
+          "definition": "Hợp lực hướng vào tâm quỹ đạo, gây gia tốc hướng tâm để giữ vật chuyển động tròn: $F_{ht} = m\\dfrac{v^2}{r} = m\\omega^2 r$. Nó không phải một loại lực mới mà là vai trò của hợp lực."
+        },
+        {
+          "term_vi": "Điều kiện qua điểm cao nhất",
+          "term_en": "Condition at top of loop",
+          "definition": "Tại đỉnh vòng tròn thẳng đứng, để vật không rời quỹ đạo thì trọng lực phải đủ vai trò hướng tâm: $v_{min} = \\sqrt{gr}$."
+        }
+      ],
+      "content": "## Lực hướng tâm không phải lực mới\n\nMọi vật chuyển động tròn đều có gia tốc hướng tâm, nên theo định luật II Newton phải có một **hợp lực hướng vào tâm**. Nhưng đó không phải một loại lực riêng: trong từng tình huống, chính lực căng dây, lực hấp dẫn, lực ma sát hay phản lực *đóng vai trò* lực hướng tâm. Câu hỏi luôn phải trả lời là: 'Lực nào ở đây hướng vào tâm?'\n\n$$F_{ht} = m\\dfrac{v^2}{r} = m\\omega^2 r.$$\n\n## Xe qua cầu\n\nQua cầu vồng lên, phản lực và trọng lực cho hợp lực hướng xuống (vào tâm): $mg - N = \\dfrac{mv^2}{r}$, nên $N < mg$ — xe *nhẹ* hơn. Qua cầu võng xuống thì ngược lại, $N > mg$ — xe *nặng* hơn, dễ hỏng cầu hơn.\n\n## Vòng xiếc thẳng đứng\n\nTại đỉnh vòng, cả trọng lực và phản lực đều hướng xuống tâm: $mg + N = \\dfrac{mv^2}{r}$. Vật chỉ giữ được quỹ đạo khi $N \\ge 0$, tức\n\n$$v_{dinh} \\ge \\sqrt{gr}.$$\n\nDưới tốc độ này vật rời quỹ đạo và rơi. Đây là lí do xe đạp lộn vòng phải đủ nhanh.\n\n## Lưu ý về lực li tâm\n\n'Lực li tâm' chỉ là cảm giác quán tính trong hệ quy chiếu quay, không phải lực thực trong hệ đứng yên; đừng thêm nó vào sơ đồ lực khi phân tích ở mặt đất.",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.luc-huong-tam",
+        "physics.thpt.dong-luc-hoc.xe-qua-cau-vong",
+        "physics.thpt.dong-luc-hoc.vong-xiec-diem-cao-nhat",
+        "physics.thpt.dong-luc-hoc.con-lac-con"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một ô tô 1000 kg qua đỉnh cầu vồng bán kính 50 m với tốc độ 10 m/s. Lấy $g = 10$ m/s$^2$. Tính áp lực của xe lên mặt cầu tại đỉnh.",
+          "solution": "Tại đỉnh cầu vồng, tâm quỹ đạo ở dưới nên hợp lực hướng xuống. Theo định luật II với chiều dương hướng vào tâm (xuống):\n\n$$mg - N = \\dfrac{mv^2}{r}.$$\n\nSuy ra phản lực mặt cầu tác dụng lên xe:\n\n$$N = m\\left(g - \\dfrac{v^2}{r}\\right) = 1000\\left(10 - \\dfrac{10^2}{50}\\right) = 1000(10 - 2) = 8000 \\text{ N}.$$\n\nTheo định luật III, áp lực xe ép lên cầu cũng bằng 8000 N, nhỏ hơn trọng lượng 10000 N — xe nhẹ bớt khi qua đỉnh cầu.",
+          "answer": "$N = 8000$ N"
+        }
+      ],
+      "common_mistakes": [
+        "Coi lực hướng tâm là một lực độc lập cần vẽ thêm vào sơ đồ. Sai; nó là hợp lực của các lực thực đã có, không được cộng thêm.",
+        "Ở đỉnh cầu vồng lấy $N = mg$. Sai; phải trừ đi phần dành cho gia tốc hướng tâm nên $N = mg - \\dfrac{mv^2}{r} < mg$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dong-luc-hoc",
+        "luc-huong-tam",
+        "chuyen-dong-tron"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.he-vat-noi-day-rong-roc",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Động lực học",
+      "order": 7,
+      "title_vi": "Hệ vật nối dây và ròng rọc",
+      "title_en": "Connected bodies and pulley systems",
+      "objectives": [
+        "Áp dụng được định luật II Newton cho từng vật trong hệ nối dây",
+        "Tính được gia tốc chung và lực căng dây của hệ vật qua ròng rọc",
+        "Giải được bài toán máy Atwood và hệ vật trên bàn nối với vật treo"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton",
+        "lesson.physics.vn-thpt-physics-conhiet.luc-ma-sat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hệ vật nối dây",
+          "term_en": "Connected system",
+          "definition": "Nhiều vật nối bằng dây không dãn nên có cùng độ lớn gia tốc; dây lí tưởng (không khối lượng) truyền nguyên vẹn lực căng."
+        },
+        {
+          "term_vi": "Lực căng dây",
+          "term_en": "Tension",
+          "definition": "Lực do dây tác dụng lên vật, luôn hướng dọc dây về phía dây kéo; với dây và ròng rọc lí tưởng, lực căng như nhau ở hai đầu dây."
+        }
+      ],
+      "content": "## Nguyên tắc: mỗi vật một phương trình\n\nVới hệ nhiều vật nối dây, ta **tách từng vật** và viết định luật II Newton riêng cho mỗi vật. Dây không dãn buộc mọi vật có **cùng độ lớn gia tốc** $a$; dây và ròng rọc lí tưởng cho **lực căng bằng nhau** ở hai đầu. Giải hệ phương trình này ra $a$ và $T$.\n\n## Máy Atwood\n\nHai vật $m_1 > m_2$ treo hai đầu dây qua ròng rọc. Chọn chiều dương theo chiều chuyển động (vật nặng đi xuống):\n\n$$m_1 g - T = m_1 a, \\qquad T - m_2 g = m_2 a.$$\n\nCộng hai phương trình khử $T$:\n\n$$a = \\dfrac{(m_1 - m_2)g}{m_1 + m_2}, \\qquad T = \\dfrac{2 m_1 m_2 g}{m_1 + m_2}.$$\n\nMẹo nhanh: gia tốc bằng *hợp lực phát động chia tổng khối lượng*.\n\n## Vật trên bàn nối vật treo\n\nVật $m_1$ trên bàn ngang (có thể có ma sát) nối qua ròng rọc mép bàn với vật treo $m_2$. Lực phát động là $m_2 g$, lực cản là ma sát $\\mu m_1 g$:\n\n$$a = \\dfrac{m_2 g - \\mu m_1 g}{m_1 + m_2}.$$\n\n## Kinh nghiệm\n\nLuôn chọn *một* chiều dương thống nhất cho cả hệ theo chiều chuyển động dự đoán, rồi giữ nhất quán khi chiếu lực. Nếu ra $a < 0$ thì chiều chuyển động ngược với dự đoán.",
+      "formulas": [
+        "physics.thpt.dong-luc-hoc.he-hai-vat-noi-day-tren-mat-ngang",
+        "physics.thpt.dong-luc-hoc.he-vat-qua-rong-roc",
+        "physics.thpt.dong-luc-hoc.he-vat-ban-va-vat-treo",
+        "physics.thpt.dong-luc-hoc.luc-cang-day"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Máy Atwood có $m_1 = 3$ kg và $m_2 = 2$ kg, ròng rọc và dây lí tưởng, $g = 10$ m/s$^2$. Tính gia tốc của hệ và lực căng dây.",
+          "solution": "Vật nặng $m_1$ đi xuống. Gia tốc bằng hợp lực phát động $(m_1 - m_2)g$ chia tổng khối lượng:\n\n$$a = \\dfrac{(m_1 - m_2)g}{m_1 + m_2} = \\dfrac{(3-2)\\cdot 10}{3+2} = 2 \\text{ m/s}^2.$$\n\nLực căng tìm từ phương trình vật $m_2$: $T - m_2 g = m_2 a \\Rightarrow T = m_2(g + a) = 2(10 + 2) = 24$ N.\n\nKiểm tra bằng $m_1$: $m_1(g - a) = 3(10 - 2) = 24$ N — khớp.",
+          "answer": "$a = 2$ m/s$^2$; $T = 24$ N"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng lực căng dây bằng trọng lượng vật treo. Sai; khi hệ có gia tốc, lực căng khác $mg$; chỉ bằng $mg$ khi hệ đứng yên hoặc chuyển động đều.",
+        "Dùng chiều dương khác nhau cho hai vật rồi cộng nhầm dấu. Phải chọn một chiều dương thống nhất theo chiều chuyển động cho toàn hệ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dong-luc-hoc",
+        "he-vat",
+        "rong-roc"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.momen-luc-can-bang-vat-ran",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương III: Cân bằng và chuyển động quay của vật rắn",
+      "order": 1,
+      "title_vi": "Mômen lực, quy tắc mômen và cân bằng vật rắn",
+      "title_en": "Torque, the moment rule and rigid-body equilibrium",
+      "objectives": [
+        "Định nghĩa được mômen lực và nêu tác dụng làm quay của lực",
+        "Phát biểu và vận dụng được quy tắc mômen lực cho vật có trục quay cố định",
+        "Nêu được đặc điểm của ngẫu lực và điều kiện cân bằng tổng quát của vật rắn"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Mômen lực",
+          "term_en": "Torque (moment of force)",
+          "definition": "Đại lượng đặc trưng cho tác dụng làm quay của lực quanh một trục: $M = F\\,d$, trong đó $d$ là cánh tay đòn — khoảng cách từ trục quay đến giá của lực."
+        },
+        {
+          "term_vi": "Quy tắc mômen lực",
+          "term_en": "Moment (torque) rule",
+          "definition": "Vật có trục quay cố định cân bằng khi tổng mômen làm quay theo chiều kim đồng hồ bằng tổng mômen theo chiều ngược lại: $\\sum M_{thuan} = \\sum M_{nghich}$."
+        },
+        {
+          "term_vi": "Ngẫu lực",
+          "term_en": "Couple",
+          "definition": "Hệ hai lực song song, ngược chiều, cùng độ lớn nhưng khác giá; chỉ gây quay, mômen $M = F\\,d$ với $d$ là khoảng cách hai giá, không phụ thuộc vị trí trục."
+        }
+      ],
+      "content": "## Không chỉ độ lớn lực, mà cả điểm đặt\n\nMở cửa: đẩy ở mép xa bản lề thì dễ, đẩy sát bản lề thì khó dù cùng lực. Vậy tác dụng làm quay phụ thuộc cả **cánh tay đòn** $d$ — khoảng cách từ trục quay đến giá của lực:\n\n$$M = F\\,d.$$\n\nĐơn vị N·m. Lực có giá đi qua trục ($d=0$) không gây quay.\n\n## Quy tắc mômen\n\nVật có trục quay cố định đứng cân bằng khi tổng mômen làm quay hai chiều bằng nhau:\n\n$$\\sum M_{thuan} = \\sum M_{nghich}.$$\n\nĐây là nguyên lí của đòn bẩy, cân đòn, cần cẩu. Muốn nâng vật nặng bằng lực nhỏ, hãy bố trí cánh tay đòn của lực nhỏ dài hơn.\n\n## Ngẫu lực\n\nHai lực song song, ngược chiều, cùng độ lớn nhưng khác giá tạo thành **ngẫu lực**. Ngẫu lực không làm vật tịnh tiến mà chỉ làm quay, với mômen $M = F\\,d$ ($d$ là khoảng cách giữa hai giá). Đặc biệt mômen ngẫu lực *không phụ thuộc vị trí trục quay*. Vặn vô lăng, mở nắp chai là các ngẫu lực.\n\n## Cân bằng tổng quát\n\nVật rắn cân bằng khi thỏa đồng thời hai điều kiện: hợp lực bằng 0 (không tịnh tiến) và tổng mômen quanh một trục bất kì bằng 0 (không quay). Đây là công cụ để giải bài thanh, dầm, giá đỡ.",
+      "formulas": [
+        "physics.thpt.can-bang-vat-ran.momen-luc",
+        "physics.thpt.can-bang-vat-ran.quy-tac-momen-luc",
+        "physics.thpt.can-bang-vat-ran.ngau-luc",
+        "physics.thpt.can-bang-vat-ran.dieu-kien-can-bang-tong-quat",
+        "physics.thpt.can-bang-vat-ran.hop-luc-song-song-cung-chieu",
+        "physics.thpt.can-bang-vat-ran.dieu-kien-can-bang-chat-diem"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một thanh nhẹ AB dài 1,2 m, trục quay tại A. Treo vật 30 N tại điểm cách A 0,4 m. Cần đặt lực nâng thẳng đứng bao nhiêu tại đầu B để thanh cân bằng nằm ngang?",
+          "solution": "Thanh nhẹ nên bỏ qua trọng lượng thanh. Trục quay tại A. Trọng lực 30 N gây mômen quay một chiều với cánh tay đòn 0,4 m; lực nâng $F$ tại B gây mômen ngược chiều với cánh tay đòn 1,2 m. Quy tắc mômen:\n\n$$F\\cdot 1{,}2 = 30\\cdot 0{,}4 \\Rightarrow F = \\dfrac{12}{1{,}2} = 10 \\text{ N}.$$\n\nCánh tay đòn của $F$ dài gấp 3 lần nên chỉ cần lực bằng 1/3 trọng lực — đúng tinh thần đòn bẩy.",
+          "answer": "$F = 10$ N"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy khoảng cách từ trục đến điểm đặt lực làm cánh tay đòn ngay cả khi lực xiên. Cánh tay đòn là khoảng cách vuông góc từ trục đến GIÁ của lực, phải nhân thêm $\\sin$ góc nếu lực xiên.",
+        "Quên trọng lượng thanh khi thanh không nhẹ. Với thanh đồng chất, trọng lực đặt tại trung điểm và phải tính mômen của nó."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "can-bang-vat-ran",
+        "momen-luc",
+        "don-bay"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.dong-luc-hoc-vat-ran-quay",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương III: Cân bằng và chuyển động quay của vật rắn",
+      "order": 2,
+      "title_vi": "Động lực học vật rắn quay: mômen quán tính, mômen động lượng và động năng quay",
+      "title_en": "Rotational dynamics: moment of inertia, angular momentum and rotational energy",
+      "objectives": [
+        "Nêu được ý nghĩa của mômen quán tính như số đo mức quán tính quay",
+        "Vận dụng được phương trình động lực học vật rắn quay quanh trục cố định",
+        "Áp dụng được định luật bảo toàn mômen động lượng và tính động năng quay"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.chuyen-dong-tron-deu",
+        "lesson.physics.vn-thpt-physics-conhiet.momen-luc-can-bang-vat-ran"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Mômen quán tính",
+          "term_en": "Moment of inertia",
+          "definition": "Đại lượng đo mức quán tính đối với chuyển động quay quanh một trục, phụ thuộc khối lượng và cách phân bố khối lượng: chất điểm $I = mr^2$; hệ $I = \\sum m_i r_i^2$."
+        },
+        {
+          "term_vi": "Mômen động lượng",
+          "term_en": "Angular momentum",
+          "definition": "Đại lượng $L = I\\omega$, bảo toàn khi tổng mômen ngoại lực bằng 0."
+        },
+        {
+          "term_vi": "Động năng quay",
+          "term_en": "Rotational kinetic energy",
+          "definition": "Năng lượng do chuyển động quay: $W_{d} = \\dfrac{1}{2} I\\omega^2$, tương tự $\\dfrac12 mv^2$ nhưng thay $m$ bằng $I$, $v$ bằng $\\omega$."
+        }
+      ],
+      "content": "## Đại lượng tương ứng của khối lượng trong chuyển động quay\n\nTrong chuyển động thẳng, khối lượng đo mức quán tính. Trong chuyển động quay, vai trò đó thuộc về **mômen quán tính** $I$. Điều mới là $I$ phụ thuộc *cách phân bố khối lượng*: khối lượng càng xa trục thì $I$ càng lớn. Với chất điểm $I = mr^2$; với vật đồng chất có công thức riêng (đĩa đặc $\\tfrac12 mR^2$, vành tròn $mR^2$, cầu đặc $\\tfrac25 mR^2$).\n\n## Phương trình động lực học quay\n\nĐịnh luật II Newton cho chuyển động quay thay lực bằng mômen lực, gia tốc bằng gia tốc góc:\n\n$$M = I\\gamma,$$\n\ntrong đó $\\gamma$ là gia tốc góc. Mômen lực càng lớn, $I$ càng nhỏ thì quay càng nhanh dần.\n\n## Mômen động lượng và bảo toàn\n\nĐại lượng $L = I\\omega$ gọi là mômen động lượng. Khi tổng mômen ngoại lực bằng 0:\n\n$$L = I\\omega = \\text{hằng số}.$$\n\nĐây là lí do vận động viên trượt băng thu tay lại (giảm $I$) thì quay nhanh hơn (tăng $\\omega$), vì tích $I\\omega$ không đổi.\n\n## Động năng quay\n\nVật quay tích trữ năng lượng: $W_d = \\tfrac12 I\\omega^2$. Vật vừa lăn vừa tịnh tiến (không trượt) có động năng toàn phần bằng tổng động năng tịnh tiến và động năng quay — điều này giải thích vì sao vật đặc lăn nhanh hơn vật rỗng khi cùng lăn xuống dốc.",
+      "formulas": [
+        "physics.thpt.chuyen-dong-quay.momen-quan-tinh-chat-diem",
+        "physics.thpt.chuyen-dong-quay.momen-quan-tinh-cac-vat-dong-chat",
+        "physics.thpt.chuyen-dong-quay.phuong-trinh-dong-luc-hoc-vat-ran-quay",
+        "physics.thpt.chuyen-dong-quay.momen-dong-luong",
+        "physics.thpt.chuyen-dong-quay.bao-toan-momen-dong-luong",
+        "physics.thpt.chuyen-dong-quay.dong-nang-quay"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một đĩa tròn đặc đồng chất khối lượng 2 kg, bán kính 0,5 m, quay quanh trục qua tâm dưới tác dụng của mômen lực 1,5 N·m. Tính gia tốc góc của đĩa.",
+          "solution": "Mômen quán tính của đĩa đặc quay quanh trục qua tâm:\n\n$$I = \\tfrac12 m R^2 = \\tfrac12 \\cdot 2 \\cdot 0{,}5^2 = 0{,}25 \\text{ kg·m}^2.$$\n\nÁp dụng phương trình động lực học quay $M = I\\gamma$:\n\n$$\\gamma = \\dfrac{M}{I} = \\dfrac{1{,}5}{0{,}25} = 6 \\text{ rad/s}^2.$$\n\nGiống hệt $a = F/m$ nhưng cho chuyển động quay.",
+          "answer": "$\\gamma = 6$ rad/s$^2$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng mômen quán tính chỉ phụ thuộc khối lượng. Sai; nó còn phụ thuộc mạnh vào cách phân bố khối lượng so với trục, nên cùng khối lượng nhưng hình dạng khác cho $I$ khác.",
+        "Dùng $M = I\\omega$ thay cho $M = I\\gamma$. Sai; mômen lực liên hệ với gia tốc GÓC $\\gamma$, còn $I\\omega$ là mômen động lượng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "chuyen-dong-quay",
+        "momen-quan-tinh",
+        "mo-men-dong-luong"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.cong-cong-suat-hieu-suat",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Năng lượng, công và công suất",
+      "order": 1,
+      "title_vi": "Công, công suất và hiệu suất",
+      "title_en": "Work, power and efficiency",
+      "objectives": [
+        "Tính được công của một lực không đổi theo góc giữa lực và độ dịch chuyển",
+        "Phân biệt được công phát động với công cản và tính công suất trung bình, tức thời",
+        "Tính được hiệu suất của một máy hoặc quá trình"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.ba-dinh-luat-newton"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công cơ học",
+          "term_en": "Work",
+          "definition": "Số đo phần năng lượng lực trao đổi khi điểm đặt dịch chuyển: $A = F\\,s\\cos\\alpha$, với $\\alpha$ là góc giữa lực và độ dịch chuyển; đơn vị jun (J)."
+        },
+        {
+          "term_vi": "Công suất",
+          "term_en": "Power",
+          "definition": "Tốc độ thực hiện công: $P = \\dfrac{A}{t}$ (trung bình) hay $P = Fv\\cos\\alpha$ (tức thời); đơn vị oát (W)."
+        },
+        {
+          "term_vi": "Hiệu suất",
+          "term_en": "Efficiency",
+          "definition": "Tỉ số giữa công (năng lượng) có ích và công (năng lượng) toàn phần cung cấp: $H = \\dfrac{A_{ci}}{A_{tp}}\\cdot 100\\%$, luôn nhỏ hơn 100%."
+        }
+      ],
+      "content": "## Khi nào lực sinh công?\n\nMột người bê vật đứng yên thấy 'mệt' nhưng theo vật lí *không sinh công cơ học* vì vật không dịch chuyển. Công chỉ xuất hiện khi điểm đặt lực dịch chuyển, và phụ thuộc góc giữa lực với độ dịch chuyển:\n\n$$A = F\\,s\\cos\\alpha.$$\n\nKhi $\\alpha < 90^\\circ$: công dương (phát động). Khi $\\alpha = 90^\\circ$: công bằng 0 (lực hướng tâm, trọng lực với vật đi ngang không sinh công). Khi $\\alpha > 90^\\circ$: công âm (công cản, như ma sát).\n\n## Công suất — nhanh hay chậm\n\nHai cần cẩu cùng nâng một vật lên cùng độ cao sinh công như nhau, nhưng cái làm nhanh hơn có công suất lớn hơn:\n\n$$P = \\dfrac{A}{t} = F v\\cos\\alpha.$$\n\nCông thức $P = Fv$ rất tiện: xe chạy đều trên đường, lực kéo bằng lực cản, biết công suất động cơ thì suy ra tốc độ tối đa.\n\n## Hiệu suất\n\nKhông máy nào biến đổi năng lượng mà không hao phí (ma sát, tỏa nhiệt). Hiệu suất đo phần năng lượng thực sự có ích:\n\n$$H = \\dfrac{A_{ci}}{A_{tp}}\\cdot 100\\% = \\dfrac{P_{ci}}{P_{tp}}\\cdot 100\\%.$$\n\nHiệu suất luôn nhỏ hơn 100%; phần còn lại chuyển thành nhiệt và các dạng hao phí.",
+      "formulas": [
+        "physics.thpt.cong-nang-luong.cong-co-hoc",
+        "physics.thpt.cong-nang-luong.cong-suat-trung-binh",
+        "physics.thpt.cong-nang-luong.cong-suat-tuc-thoi",
+        "physics.thpt.cong-nang-luong.hieu-suat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một máy bơm đưa 3 m$^3$ nước lên độ cao 10 m trong 60 s. Biết công suất tiêu thụ điện của máy là 6 kW, khối lượng riêng nước 1000 kg/m$^3$, $g = 10$ m/s$^2$. Tính hiệu suất của máy bơm.",
+          "solution": "Khối lượng nước: $m = \\rho V = 1000\\cdot 3 = 3000$ kg. Công có ích để nâng nước (bằng độ tăng thế năng):\n\n$$A_{ci} = mgh = 3000\\cdot 10\\cdot 10 = 3{,}0\\cdot 10^5 \\text{ J}.$$\n\nCông toàn phần máy tiêu thụ: $A_{tp} = P\\,t = 6000\\cdot 60 = 3{,}6\\cdot 10^5$ J. Hiệu suất:\n\n$$H = \\dfrac{A_{ci}}{A_{tp}}\\cdot 100\\% = \\dfrac{3{,}0\\cdot 10^5}{3{,}6\\cdot 10^5}\\cdot 100\\% \\approx 83{,}3\\%.$$",
+          "answer": "$H \\approx 83{,}3\\%$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng cứ có lực và vật di chuyển là có công. Sai; lực vuông góc với độ dịch chuyển (như lực hướng tâm) không sinh công vì $\\cos 90^\\circ = 0$.",
+        "Nhầm công với công suất. Công là năng lượng (J), công suất là năng lượng trên thời gian (W); hai cần cẩu sinh công như nhau vẫn có thể khác công suất."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "cong-nang-luong",
+        "cong-suat",
+        "hieu-suat"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.dong-nang-dinh-li-bien-thien-dong-nang",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Năng lượng, công và công suất",
+      "order": 2,
+      "title_vi": "Động năng và định lí biến thiên động năng",
+      "title_en": "Kinetic energy and the work-energy theorem",
+      "objectives": [
+        "Định nghĩa được động năng và nêu tính chất vô hướng, không âm của nó",
+        "Vận dụng được định lí biến thiên động năng để giải bài toán không cần gia tốc",
+        "Liên hệ được động năng với động lượng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.cong-cong-suat-hieu-suat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Động năng",
+          "term_en": "Kinetic energy",
+          "definition": "Năng lượng vật có do chuyển động: $W_d = \\dfrac{1}{2} m v^2$, là đại lượng vô hướng, luôn không âm, phụ thuộc hệ quy chiếu qua $v$."
+        },
+        {
+          "term_vi": "Định lí biến thiên động năng",
+          "term_en": "Work-energy theorem",
+          "definition": "Độ biến thiên động năng của vật bằng công của hợp lực tác dụng lên vật: $W_{d2} - W_{d1} = A_{hl}$."
+        }
+      ],
+      "content": "## Năng lượng của chuyển động\n\nMột vật khối lượng $m$ chuyển động với tốc độ $v$ mang **động năng**:\n\n$$W_d = \\tfrac12 m v^2.$$\n\nĐộng năng là đại lượng vô hướng, luôn dương hoặc bằng 0, và tỉ lệ với *bình phương* tốc độ — nên tốc độ tăng gấp đôi thì động năng tăng gấp bốn. Đây là lí do va chạm ở tốc độ cao nguy hiểm hơn nhiều.\n\n## Định lí biến thiên động năng — 'phím tắt' của động lực học\n\nThay vì đi qua gia tốc và thời gian, ta liên hệ trực tiếp công của hợp lực với thay đổi động năng:\n\n$$A_{hl} = W_{d2} - W_{d1} = \\tfrac12 m v_2^2 - \\tfrac12 m v_1^2.$$\n\nCông phát động làm động năng tăng, công cản (ma sát) làm động năng giảm. Định lí này *cực mạnh* khi bài toán không cho thời gian, không cần gia tốc: chỉ cần liệt kê công của mọi lực.\n\n## Liên hệ với động lượng\n\nĐộng năng và động lượng liên hệ qua:\n\n$$W_d = \\dfrac{p^2}{2m}.$$\n\nCông thức này hay dùng trong va chạm và bài toán hạt.\n\n## Khi nào chọn định lí này?\n\nKhi biết lực và quãng đường, cần tìm tốc độ (hoặc ngược lại), mà không quan tâm thời gian. Ví dụ: quãng đường hãm phanh, tốc độ vật sau khi trượt một đoạn có ma sát.",
+      "formulas": [
+        "physics.thpt.cong-nang-luong.dong-nang",
+        "physics.thpt.cong-nang-luong.dinh-li-bien-thien-dong-nang",
+        "physics.thpt.cong-nang-luong.lien-he-dong-nang-dong-luong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một ô tô 1200 kg đang chạy 20 m/s thì hãm phanh, lực hãm không đổi 4800 N. Dùng định lí biến thiên động năng tính quãng đường xe đi đến khi dừng.",
+          "solution": "Khi dừng $v_2 = 0$. Hợp lực là lực hãm, sinh công cản (âm) trên quãng đường $s$: $A_{hl} = -F\\cdot s$. Áp dụng định lí biến thiên động năng:\n\n$$-F s = 0 - \\tfrac12 m v_1^2 \\Rightarrow s = \\dfrac{m v_1^2}{2F} = \\dfrac{1200\\cdot 20^2}{2\\cdot 4800}.$$\n\nTính: $s = \\dfrac{480000}{9600} = 50$ m. Cách này ngắn hơn hẳn so với tìm gia tốc rồi dùng công thức động học.",
+          "answer": "$s = 50$ m"
+        }
+      ],
+      "common_mistakes": [
+        "Quên rằng công của lực cản mang dấu âm nên ra quãng đường âm. Lực hãm ngược chiều chuyển động nên $\\cos 180^\\circ = -1$, công âm.",
+        "Cho rằng động năng tỉ lệ thuận với tốc độ. Sai; nó tỉ lệ với bình phương tốc độ, nên tăng tốc độ gấp đôi thì động năng gấp bốn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "cong-nang-luong",
+        "dong-nang",
+        "dinh-li-dong-nang"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.the-nang-bao-toan-co-nang",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Năng lượng, công và công suất",
+      "order": 3,
+      "title_vi": "Thế năng và định luật bảo toàn cơ năng",
+      "title_en": "Potential energy and conservation of mechanical energy",
+      "objectives": [
+        "Tính được thế năng trọng trường và thế năng đàn hồi, nêu ý nghĩa mốc thế năng",
+        "Phát biểu và vận dụng được định luật bảo toàn cơ năng cho vật chỉ chịu lực thế",
+        "Giải thích được sự giảm cơ năng khi có lực ma sát và tính độ biến thiên cơ năng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.dong-nang-dinh-li-bien-thien-dong-nang",
+        "lesson.physics.vn-thpt-physics-conhiet.luc-dan-hoi-dinh-luat-hooke"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Thế năng trọng trường",
+          "term_en": "Gravitational potential energy",
+          "definition": "Năng lượng do vị trí của vật trong trọng trường: $W_t = mgz$, phụ thuộc mốc chọn tính độ cao $z$."
+        },
+        {
+          "term_vi": "Cơ năng",
+          "term_en": "Mechanical energy",
+          "definition": "Tổng động năng và thế năng của vật: $W = W_d + W_t$."
+        },
+        {
+          "term_vi": "Bảo toàn cơ năng",
+          "term_en": "Conservation of mechanical energy",
+          "definition": "Nếu vật chỉ chịu lực thế (trọng lực, lực đàn hồi), cơ năng được bảo toàn: $W_d + W_t = \\text{hằng số}$."
+        }
+      ],
+      "content": "## Năng lượng của vị trí\n\nMột vật ở trên cao có khả năng sinh công khi rơi — đó là **thế năng trọng trường** $W_t = mgz$. Giá trị của nó phụ thuộc **mốc thế năng** ta chọn (thường là mặt đất); nhưng *độ biến thiên* thế năng thì không phụ thuộc mốc, và đó mới là đại lượng có ý nghĩa vật lí. Lò xo biến dạng tích trữ thế năng đàn hồi $W_t = \\tfrac12 k(\\Delta l)^2$.\n\n## Bảo toàn cơ năng\n\nKhi vật chỉ chịu **lực thế** (trọng lực, lực đàn hồi), tổng động năng và thế năng không đổi:\n\n$$W = W_d + W_t = \\tfrac12 m v^2 + mgz = \\text{hằng số}.$$\n\nĐộng năng và thế năng chuyển hóa qua lại: vật rơi thì thế năng giảm, động năng tăng; con lắc lên cao thì ngược lại. Định luật này cho phép tính tốc độ tại mọi vị trí *mà không cần biết quỹ đạo hay lực chi tiết* — chỉ cần độ cao.\n\n## Khi có ma sát\n\nMa sát là lực không thế; nó 'ăn' bớt cơ năng, chuyển thành nhiệt. Khi đó độ giảm cơ năng bằng công của lực ma sát:\n\n$$W_2 - W_1 = A_{ms} = -F_{ms}\\,s.$$\n\nĐây là dạng tổng quát hơn của bảo toàn năng lượng: cơ năng không mất đi mà chuyển sang dạng khác.\n\n## Mẹo giải\n\nChọn hai vị trí, viết cơ năng tại mỗi vị trí, cho bằng nhau (nếu không ma sát) hoặc lấy hiệu bằng công ma sát. Thường không cần biết gia tốc.",
+      "formulas": [
+        "physics.thpt.cong-nang-luong.the-nang-trong-truong",
+        "physics.thpt.cong-nang-luong.the-nang-dan-hoi",
+        "physics.thpt.cong-nang-luong.co-nang",
+        "physics.thpt.cong-nang-luong.bao-toan-co-nang-trong-truong",
+        "physics.thpt.cong-nang-luong.bien-thien-co-nang"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Thả một vật từ độ cao 5 m so với mặt đất, bỏ qua sức cản. Lấy $g = 10$ m/s$^2$. Tính tốc độ vật khi chạm đất và tốc độ khi vật ở độ cao 1,25 m.",
+          "solution": "Chỉ có trọng lực nên cơ năng bảo toàn. Chọn mốc thế năng ở mặt đất. Lúc thả $v=0$ nên cơ năng ban đầu $W = mgh_0 = mg\\cdot 5$.\n\nTại mặt đất toàn bộ thành động năng: $\\tfrac12 m v^2 = mg\\cdot 5 \\Rightarrow v = \\sqrt{2g\\cdot 5} = \\sqrt{100} = 10$ m/s.\n\nTại độ cao 1,25 m: $\\tfrac12 m v_1^2 + mg\\cdot 1{,}25 = mg\\cdot 5$, suy ra $v_1 = \\sqrt{2g(5 - 1{,}25)} = \\sqrt{2\\cdot 10\\cdot 3{,}75} = \\sqrt{75} \\approx 8{,}66$ m/s. Khối lượng $m$ tự triệt tiêu.",
+          "answer": "$v = 10$ m/s khi chạm đất; $v_1 \\approx 8{,}66$ m/s tại 1,25 m"
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng bảo toàn cơ năng khi vẫn có ma sát. Sai; ma sát là lực không thế, làm cơ năng giảm, phải dùng độ biến thiên cơ năng bằng công ma sát.",
+        "Cho rằng phải biết khối lượng mới tính được tốc độ. Trong bài chỉ có trọng lực, $m$ triệt tiêu nên tốc độ không phụ thuộc khối lượng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "cong-nang-luong",
+        "the-nang",
+        "bao-toan-co-nang"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.dong-luong-bao-toan-va-cham",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Động lượng",
+      "order": 1,
+      "title_vi": "Động lượng, định luật bảo toàn động lượng và va chạm",
+      "title_en": "Momentum, its conservation and collisions",
+      "objectives": [
+        "Định nghĩa được động lượng và phát biểu định lí biến thiên động lượng",
+        "Phát biểu và vận dụng được định luật bảo toàn động lượng cho hệ kín",
+        "Phân biệt và giải được va chạm mềm với va chạm đàn hồi trực diện"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.dong-nang-dinh-li-bien-thien-dong-nang"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Động lượng",
+          "term_en": "Momentum",
+          "definition": "Đại lượng vectơ $\\vec{p} = m\\vec{v}$, cùng hướng vận tốc, đặc trưng cho khả năng truyền chuyển động; đơn vị kg·m/s."
+        },
+        {
+          "term_vi": "Bảo toàn động lượng",
+          "term_en": "Conservation of momentum",
+          "definition": "Tổng động lượng của một hệ kín (không chịu ngoại lực hoặc ngoại lực triệt tiêu) được bảo toàn: $\\sum \\vec{p}_{truoc} = \\sum \\vec{p}_{sau}$."
+        },
+        {
+          "term_vi": "Va chạm mềm",
+          "term_en": "Perfectly inelastic collision",
+          "definition": "Va chạm sau đó hai vật dính vào nhau chuyển động cùng vận tốc; động lượng bảo toàn nhưng động năng giảm (một phần thành nhiệt, biến dạng)."
+        }
+      ],
+      "content": "## Vì sao cần một đại lượng ngoài động năng?\n\nĐộng năng vô hướng, không giữ được thông tin về hướng và thường không bảo toàn trong va chạm. Ta cần một đại lượng *vectơ* và *bảo toàn* mạnh hơn: **động lượng** $\\vec{p} = m\\vec{v}$.\n\n## Định lí biến thiên động lượng\n\nXung lượng của lực (tích lực với thời gian tác dụng) bằng độ biến thiên động lượng:\n\n$$\\vec{F}\\,\\Delta t = \\Delta \\vec{p} = m\\vec{v}_2 - m\\vec{v}_1.$$\n\nĐây là lí do túi khí, đệm rơi kéo dài thời gian va chạm để giảm lực.\n\n## Định luật bảo toàn động lượng\n\nVới hệ kín, tổng động lượng trước bằng tổng động lượng sau:\n\n$$m_1\\vec{v}_1 + m_2\\vec{v}_2 = m_1\\vec{v}_1' + m_2\\vec{v}_2'.$$\n\nĐây là **phương trình vectơ** — với va chạm thẳng, chiếu lên trục và cẩn thận dấu. Áp dụng cho va chạm, đạn nổ, súng giật, tên lửa phản lực.\n\n## Hai loại va chạm\n\n**Va chạm mềm**: hai vật dính nhau, $v = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$; động lượng bảo toàn nhưng động năng giảm. **Va chạm đàn hồi trực diện**: bảo toàn cả động lượng lẫn động năng, cho công thức\n\n$$v_1' = \\dfrac{(m_1-m_2)v_1 + 2m_2 v_2}{m_1+m_2}.$$\n\nDấu hiệu nhận biết nhanh: hai vật cùng khối lượng va chạm đàn hồi thì *trao đổi vận tốc* cho nhau.",
+      "formulas": [
+        "physics.thpt.dong-luong.dong-luong",
+        "physics.thpt.dong-luong.dinh-li-bien-thien-dong-luong",
+        "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong",
+        "physics.thpt.dong-luong.va-cham-mem",
+        "physics.thpt.dong-luong.va-cham-dan-hoi-truc-dien",
+        "physics.thpt.dong-luong.nhiet-toa-ra-va-cham-mem",
+        "physics.thpt.dong-luong.chuyen-dong-bang-phan-luc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một viên đạn 20 g bay ngang với tốc độ 400 m/s cắm vào khối gỗ 1,98 kg đang đứng yên trên mặt nhẵn. Tính tốc độ của khối gỗ và đạn ngay sau va chạm và phần trăm động năng đã mất.",
+          "solution": "Đạn cắm vào gỗ là va chạm mềm. Bảo toàn động lượng (gỗ ban đầu đứng yên):\n\n$$m_1 v_1 = (m_1 + m_2) v \\Rightarrow v = \\dfrac{0{,}02\\cdot 400}{0{,}02 + 1{,}98} = \\dfrac{8}{2} = 4 \\text{ m/s}.$$\n\nĐộng năng trước: $W_1 = \\tfrac12\\cdot 0{,}02\\cdot 400^2 = 1600$ J. Động năng sau: $W_2 = \\tfrac12\\cdot 2\\cdot 4^2 = 16$ J. Phần trăm mất:\n\n$$\\dfrac{W_1 - W_2}{W_1} = \\dfrac{1600 - 16}{1600} = 99\\%.$$\n\nGần như toàn bộ động năng chuyển thành nhiệt và biến dạng — đặc trưng của va chạm mềm.",
+          "answer": "$v = 4$ m/s; mất 99% động năng"
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng bảo toàn động năng cho va chạm mềm. Sai; va chạm mềm chỉ bảo toàn động lượng, động năng luôn giảm vì có biến dạng và tỏa nhiệt.",
+        "Cộng động lượng như đại lượng vô hướng khi hai vật chuyển động ngược chiều. Động lượng là vectơ; phải gán dấu theo chiều dương đã chọn trước khi cộng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dong-luong",
+        "bao-toan-dong-luong",
+        "va-cham"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.noi-nang-dinh-luat-i-nhiet-dong-luc-hoc",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Vật lí nhiệt và nhiệt động lực học",
+      "order": 1,
+      "title_vi": "Nội năng và định luật I nhiệt động lực học",
+      "title_en": "Internal energy and the first law of thermodynamics",
+      "objectives": [
+        "Nêu được khái niệm nội năng và hai cách làm biến đổi nội năng",
+        "Phát biểu và vận dụng được định luật I nhiệt động lực học với quy ước dấu",
+        "Áp dụng được định luật I cho các quá trình đẳng tích, đẳng áp, đẳng nhiệt"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Nội năng",
+          "term_en": "Internal energy",
+          "definition": "Tổng động năng chuyển động nhiệt hỗn loạn của các phân tử và thế năng tương tác giữa chúng; với khí lí tưởng chỉ còn động năng phân tử, phụ thuộc nhiệt độ."
+        },
+        {
+          "term_vi": "Định luật I nhiệt động lực học",
+          "term_en": "First law of thermodynamics",
+          "definition": "Độ biến thiên nội năng bằng tổng nhiệt lượng và công mà hệ nhận: $\\Delta U = Q + A$, là dạng của định luật bảo toàn năng lượng."
+        },
+        {
+          "term_vi": "Quy ước dấu",
+          "term_en": "Sign convention",
+          "definition": "$Q > 0$ khi hệ nhận nhiệt, $Q < 0$ khi hệ tỏa nhiệt; $A > 0$ khi hệ nhận công (bị nén), $A < 0$ khi hệ sinh công (dãn nở)."
+        }
+      ],
+      "content": "## Nội năng là gì?\n\nMỗi phân tử luôn chuyển động hỗn loạn và tương tác với nhau. Tổng động năng chuyển động nhiệt và thế năng tương tác của tất cả phân tử gọi là **nội năng** $U$. Với khí lí tưởng, bỏ qua tương tác nên nội năng chỉ là tổng động năng phân tử, và **chỉ phụ thuộc nhiệt độ**: nhiệt độ tăng thì nội năng tăng.\n\n## Hai cách đổi nội năng\n\nCó thể thay đổi nội năng bằng **thực hiện công** (cọ xát, nén khí) hoặc **truyền nhiệt** (đun nóng, tiếp xúc vật nóng). Hai cách khác nhau về bản chất nhưng cùng dẫn tới một kết quả — nội năng thay đổi.\n\n## Định luật I nhiệt động lực học\n\nĐây là định luật bảo toàn năng lượng cho hệ nhiệt:\n\n$$\\Delta U = Q + A,$$\n\nvới quy ước: hệ **nhận nhiệt** thì $Q>0$, **tỏa nhiệt** thì $Q<0$; hệ **nhận công** (bị nén) thì $A>0$, **sinh công** (dãn) thì $A<0$. Nắm chắc dấu là chìa khóa của mọi bài nhiệt động lực học.\n\n## Áp dụng cho các quá trình\n\n- **Đẳng tích** ($V$ không đổi): khí không sinh công, $A=0$ nên $\\Delta U = Q$ — mọi nhiệt lượng thành nội năng.\n- **Đẳng nhiệt** ($T$ không đổi): với khí lí tưởng $\\Delta U = 0$ nên $Q = -A$ — nhiệt nhận vào bằng công khí sinh ra.\n- **Đẳng áp** ($p$ không đổi): khí sinh công $A = -p\\Delta V$, đồng thời nội năng đổi; nhiệt lượng chia cho cả hai phần.",
+      "formulas": [
+        "physics.thpt.nhiet-dong-luc-hoc.noi-nang-khi-li-tuong",
+        "physics.thpt.nhiet-dong-luc-hoc.do-bien-thien-noi-nang",
+        "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-i-nhiet-dong-luc-hoc",
+        "physics.thpt.nhiet-dong-luc-hoc.cong-cua-khi-dang-ap",
+        "physics.thpt.nhiet-dong-luc-hoc.qua-trinh-dang-tich",
+        "physics.thpt.nhiet-dong-luc-hoc.qua-trinh-dang-nhiet"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Người ta truyền cho một khối khí nhiệt lượng 200 J. Khối khí dãn nở và sinh công 120 J. Tính độ biến thiên nội năng của khí.",
+          "solution": "Khí NHẬN nhiệt nên $Q = +200$ J. Khí SINH công (dãn nở) nên theo quy ước $A = -120$ J. Áp dụng định luật I nhiệt động lực học:\n\n$$\\Delta U = Q + A = 200 + (-120) = 80 \\text{ J}.$$\n\nNội năng tăng 80 J: nhiệt nhận vào một phần biến thành công, phần còn lại làm tăng nội năng (và nhiệt độ) của khí.",
+          "answer": "$\\Delta U = 80$ J"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm dấu công: lấy $A = +120$ J khi khí sinh công. Theo quy ước $\\Delta U = Q + A$, khí sinh công thì $A$ mang dấu âm.",
+        "Cho rằng đun nóng khí thì toàn bộ nhiệt thành nội năng. Chỉ đúng khi đẳng tích; nếu khí dãn nở, một phần nhiệt chuyển thành công."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "nhiet-dong-luc-hoc",
+        "noi-nang",
+        "nguyen-li-i"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.nhiet-luong-can-bang-nhiet-chuyen-the",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Vật lí nhiệt và nhiệt động lực học",
+      "order": 2,
+      "title_vi": "Nhiệt lượng, phương trình cân bằng nhiệt và sự chuyển thể",
+      "title_en": "Heat, thermal equilibrium and phase changes",
+      "objectives": [
+        "Tính được nhiệt lượng thu vào hay tỏa ra khi vật thay đổi nhiệt độ",
+        "Vận dụng được phương trình cân bằng nhiệt để tìm nhiệt độ cân bằng",
+        "Tính được nhiệt lượng trong quá trình nóng chảy và hóa hơi"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.noi-nang-dinh-luat-i-nhiet-dong-luc-hoc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nhiệt dung riêng",
+          "term_en": "Specific heat capacity",
+          "definition": "Nhiệt lượng cần cung cấp để 1 kg chất tăng thêm 1 K: xuất hiện trong $Q = mc\\Delta t$; đơn vị J/(kg·K)."
+        },
+        {
+          "term_vi": "Phương trình cân bằng nhiệt",
+          "term_en": "Heat balance equation",
+          "definition": "Trong hệ cô lập, nhiệt lượng do vật nóng tỏa ra bằng nhiệt lượng vật lạnh thu vào: $Q_{toa} = Q_{thu}$."
+        },
+        {
+          "term_vi": "Nhiệt nóng chảy và nhiệt hóa hơi",
+          "term_en": "Latent heat of fusion and vaporization",
+          "definition": "Nhiệt lượng cần để làm nóng chảy/hóa hơi hoàn toàn một khối lượng chất ở nhiệt độ chuyển thể, không làm đổi nhiệt độ: $Q = \\lambda m$ (nóng chảy), $Q = L m$ (hóa hơi)."
+        }
+      ],
+      "content": "## Nhiệt lượng làm đổi nhiệt độ\n\nĐể một vật khối lượng $m$ tăng nhiệt độ thêm $\\Delta t$, cần cung cấp nhiệt lượng:\n\n$$Q = mc\\Delta t,$$\n\nvới $c$ là nhiệt dung riêng — đặc trưng cho từng chất. Nước có $c$ rất lớn ($4200$ J/(kg·K)) nên khó nóng, khó nguội, giúp điều hòa khí hậu.\n\n## Phương trình cân bằng nhiệt\n\nKhi các vật trao đổi nhiệt trong bình cách nhiệt, chúng tiến tới cùng một nhiệt độ. Bảo toàn năng lượng cho:\n\n$$Q_{toa} = Q_{thu}.$$\n\nVật nóng tỏa nhiệt (giảm nhiệt độ), vật lạnh thu nhiệt (tăng nhiệt độ), gặp nhau ở nhiệt độ cân bằng $t$. Đây là nguyên lí của nhiệt lượng kế.\n\n## Chuyển thể — nhiệt 'ẩn'\n\nKhi chất **nóng chảy** hay **hóa hơi**, nhiệt độ *không đổi* dù vẫn nhận nhiệt; nhiệt lượng dùng để phá vỡ liên kết phân tử:\n\n$$Q = \\lambda m \\ (\\text{nóng chảy}), \\qquad Q = L m \\ (\\text{hóa hơi}).$$\n\nVới nước: nhiệt nóng chảy $\\lambda = 3{,}4\\cdot 10^5$ J/kg, nhiệt hóa hơi $L = 2{,}3\\cdot 10^6$ J/kg. Hóa hơi tốn nhiều năng lượng hơn hẳn — vì thế mồ hôi bay hơi làm mát cơ thể rất hiệu quả.\n\n## Bài toán tổng hợp\n\nLàm tan một tảng nước đá rồi đun sôi cần cộng nhiều giai đoạn: hâm nóng đá, nóng chảy, hâm nóng nước, hóa hơi — mỗi giai đoạn một công thức riêng.",
+      "formulas": [
+        "physics.thpt.nhiet-dong-luc-hoc.nhiet-luong-thu-toa",
+        "physics.thpt.nhiet-dong-luc-hoc.phuong-trinh-can-bang-nhiet",
+        "physics.thpt.chat-ran-chat-long.nhiet-nong-chay",
+        "physics.thpt.chat-ran-chat-long.nhiet-hoa-hoi",
+        "physics.thpt.chat-ran-chat-long.nhiet-luong-tong-quat-co-chuyen-the"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Thả 100 g nước đá ở 0°C vào 300 g nước ở 50°C trong bình cách nhiệt. Cho nhiệt nóng chảy của đá $\\lambda = 3{,}4\\cdot 10^5$ J/kg, nhiệt dung riêng nước $c = 4200$ J/(kg·K). Tính nhiệt độ cân bằng.",
+          "solution": "Giả sử đá tan hết và hệ cân bằng ở nhiệt độ $t$. Nhiệt đá thu vào gồm nhiệt nóng chảy rồi hâm nước đá tan từ 0°C lên $t$:\n\n$$Q_{thu} = \\lambda m_d + m_d c\\,t = 0{,}1\\cdot 3{,}4\\cdot10^5 + 0{,}1\\cdot 4200\\cdot t = 34000 + 420 t.$$\n\nNước nóng tỏa nhiệt khi hạ từ 50°C xuống $t$: $Q_{toa} = m_n c(50 - t) = 0{,}3\\cdot 4200(50 - t) = 1260(50 - t)$.\n\nCân bằng nhiệt $Q_{toa} = Q_{thu}$: $63000 - 1260 t = 34000 + 420 t \\Rightarrow 29000 = 1680 t \\Rightarrow t \\approx 17{,}3°C$. Vì $t>0$, giả thiết đá tan hết là đúng.",
+          "answer": "$t \\approx 17{,}3°C$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên nhiệt nóng chảy, chỉ tính nhiệt hâm nóng nước đá. Sai; đá phải nhận nhiệt nóng chảy $\\lambda m$ để tan trước khi nhiệt độ tăng.",
+        "Cho rằng trong quá trình nóng chảy nhiệt độ vẫn tăng. Sai; khi chất đang chuyển thể, nhiệt độ giữ nguyên tại điểm chuyển thể."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nhiet-hoc",
+        "can-bang-nhiet",
+        "chuyen-the"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.hieu-suat-dong-co-nhiet",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Vật lí nhiệt và nhiệt động lực học",
+      "order": 3,
+      "title_vi": "Hiệu suất của động cơ nhiệt",
+      "title_en": "Efficiency of heat engines",
+      "objectives": [
+        "Nêu được nguyên tắc hoạt động và sơ đồ năng lượng của động cơ nhiệt",
+        "Tính được hiệu suất của động cơ nhiệt theo nhiệt lượng nhận và tỏa",
+        "Vận dụng được giới hạn hiệu suất Carnot và nêu ý nghĩa nguyên lí II"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.noi-nang-dinh-luat-i-nhiet-dong-luc-hoc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Động cơ nhiệt",
+          "term_en": "Heat engine",
+          "definition": "Thiết bị biến nhiệt thành công: nhận nhiệt $Q_1$ từ nguồn nóng, sinh công $A$, tỏa nhiệt thừa $Q_2$ ra nguồn lạnh."
+        },
+        {
+          "term_vi": "Hiệu suất động cơ nhiệt",
+          "term_en": "Thermal efficiency",
+          "definition": "Tỉ số công có ích và nhiệt nhận từ nguồn nóng: $H = \\dfrac{A}{Q_1} = \\dfrac{Q_1 - Q_2}{Q_1}$."
+        },
+        {
+          "term_vi": "Hiệu suất Carnot",
+          "term_en": "Carnot efficiency",
+          "definition": "Hiệu suất cực đại về lí thuyết của mọi động cơ hoạt động giữa hai nguồn nhiệt: $H_{max} = 1 - \\dfrac{T_2}{T_1}$ với $T$ tính bằng Kelvin."
+        }
+      ],
+      "content": "## Biến nhiệt thành công — nhưng không trọn vẹn\n\nĐộng cơ nhiệt (máy hơi nước, động cơ ô tô) nhận nhiệt $Q_1$ từ **nguồn nóng**, biến một phần thành công $A$, và buộc phải **thải nhiệt thừa** $Q_2$ ra nguồn lạnh. Định luật bảo toàn năng lượng cho:\n\n$$A = Q_1 - Q_2.$$\n\n## Hiệu suất\n\nHiệu suất đo phần nhiệt biến thành công có ích:\n\n$$H = \\dfrac{A}{Q_1} = \\dfrac{Q_1 - Q_2}{Q_1} = 1 - \\dfrac{Q_2}{Q_1}.$$\n\nVì luôn có nhiệt thải ($Q_2 > 0$), hiệu suất luôn nhỏ hơn 100% — đây không phải do máy chưa hoàn thiện mà là *giới hạn nguyên lí*.\n\n## Giới hạn Carnot và nguyên lí II\n\n**Nguyên lí II nhiệt động lực học** khẳng định: không thể chế tạo động cơ biến hoàn toàn nhiệt thành công. Sadi Carnot chứng minh hiệu suất cực đại chỉ phụ thuộc nhiệt độ hai nguồn:\n\n$$H_{max} = 1 - \\dfrac{T_2}{T_1},$$\n\nvới $T_1, T_2$ tính bằng Kelvin. Muốn hiệu suất cao, cần nguồn nóng thật nóng và nguồn lạnh thật lạnh. Mọi động cơ thực có hiệu suất *nhỏ hơn* $H_{max}$.\n\n## Ý nghĩa thực tiễn\n\nĐộng cơ ô tô thực đạt khoảng 25–40%. Phần lớn nhiên liệu thành nhiệt thải — đó là lí do cần bộ tản nhiệt và ống xả. Hiểu giới hạn này giúp đánh giá đúng các tuyên bố về 'động cơ hiệu suất 100%'.",
+      "formulas": [
+        "physics.thpt.nhiet-dong-luc-hoc.hieu-suat-dong-co-nhiet",
+        "physics.thpt.nhiet-dong-luc-hoc.hieu-suat-chu-trinh-carnot",
+        "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-ii-nhiet-dong-luc-hoc",
+        "physics.thpt.chat-ran-chat-long.nhiet-luong-toa-ra-cua-nhien-lieu",
+        "physics.thpt.chat-ran-chat-long.ap-suat-laplace"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một động cơ nhiệt nhận từ nguồn nóng 1000 J mỗi chu trình và thải ra nguồn lạnh 700 J. Tính công sinh ra và hiệu suất. Nếu hai nguồn có nhiệt độ 400 K và 300 K, hiệu suất này bằng bao nhiêu phần trăm hiệu suất Carnot cực đại?",
+          "solution": "Công mỗi chu trình: $A = Q_1 - Q_2 = 1000 - 700 = 300$ J. Hiệu suất thực:\n\n$$H = \\dfrac{A}{Q_1} = \\dfrac{300}{1000} = 30\\%.$$\n\nHiệu suất Carnot cực đại giữa 400 K và 300 K:\n\n$$H_{max} = 1 - \\dfrac{T_2}{T_1} = 1 - \\dfrac{300}{400} = 25\\%.$$\n\nKết quả $H = 30\\% > H_{max} = 25\\%$ là VÔ LÍ, vi phạm nguyên lí II — chứng tỏ dữ kiện bài toán không thể đồng thời đúng. Đây là cách dùng giới hạn Carnot để kiểm tra tính hợp lí.",
+          "answer": "$A = 300$ J, $H = 30\\%$ nhưng vượt $H_{max} = 25\\%$ nên dữ kiện mâu thuẫn"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng có thể chế tạo động cơ hiệu suất 100%. Nguyên lí II bác bỏ điều này; luôn phải thải nhiệt $Q_2 > 0$ ra nguồn lạnh.",
+        "Dùng nhiệt độ Celsius trong công thức Carnot. Sai; $H_{max} = 1 - T_2/T_1$ đòi hỏi nhiệt độ tuyệt đối (Kelvin)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "nhiet-dong-luc-hoc",
+        "dong-co-nhiet",
+        "carnot"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.thuyet-dong-hoc-phan-tu-khi-li-tuong",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Khí lí tưởng",
+      "order": 1,
+      "title_vi": "Thuyết động học phân tử và mô hình khí lí tưởng",
+      "title_en": "Kinetic molecular theory and the ideal gas model",
+      "objectives": [
+        "Nêu được các nội dung cơ bản của thuyết động học phân tử chất khí",
+        "Giải thích được áp suất chất khí bằng va chạm phân tử lên thành bình",
+        "Liên hệ được nhiệt độ tuyệt đối với động năng tịnh tiến trung bình của phân tử"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Khí lí tưởng",
+          "term_en": "Ideal gas",
+          "definition": "Mô hình chất khí trong đó các phân tử được coi là chất điểm, chỉ tương tác khi va chạm (đàn hồi), bỏ qua thế năng tương tác; đúng với khí thực ở áp suất thấp, nhiệt độ không quá thấp."
+        },
+        {
+          "term_vi": "Áp suất chất khí",
+          "term_en": "Gas pressure",
+          "definition": "Kết quả của vô số va chạm của phân tử lên thành bình; theo thuyết động học $p = \\dfrac{1}{3} n m_0 \\overline{v^2}$ với $n$ là mật độ phân tử."
+        },
+        {
+          "term_vi": "Động năng tịnh tiến trung bình",
+          "term_en": "Mean translational kinetic energy",
+          "definition": "Động năng chuyển động tịnh tiến trung bình của một phân tử: $\\overline{W_d} = \\dfrac{3}{2} k T$, tỉ lệ thuận với nhiệt độ tuyệt đối; $k$ là hằng số Boltzmann."
+        }
+      ],
+      "content": "## Chất khí nhìn từ phân tử\n\nThuyết động học phân tử coi chất khí gồm vô số phân tử: kích thước rất nhỏ so với khoảng cách giữa chúng, luôn **chuyển động hỗn loạn không ngừng** theo mọi hướng, và **va chạm đàn hồi** với nhau và với thành bình. Giữa các va chạm, phân tử chuyển động thẳng đều vì bỏ qua tương tác — đó là mô hình **khí lí tưởng**.\n\n## Áp suất sinh ra thế nào?\n\nMỗi phân tử đập vào thành bình truyền cho thành một xung lượng. Vô số va chạm mỗi giây tạo nên một lực trung bình đều đặn — chính là **áp suất**. Thuyết động học cho:\n\n$$p = \\tfrac{1}{3} n m_0 \\overline{v^2},$$\n\nvới $n$ là số phân tử trên đơn vị thể tích, $m_0$ khối lượng một phân tử, $\\overline{v^2}$ tốc độ bình phương trung bình. Khí càng đặc, phân tử càng nhanh thì áp suất càng lớn.\n\n## Nhiệt độ chính là 'độ nhanh' của phân tử\n\nSo sánh với phương trình khí lí tưởng dẫn tới kết quả sâu sắc: động năng tịnh tiến trung bình của phân tử tỉ lệ thuận với **nhiệt độ tuyệt đối**:\n\n$$\\overline{W_d} = \\tfrac{3}{2} k T.$$\n\nVậy nhiệt độ là *thước đo động năng chuyển động nhiệt*. Ở 0 K lí thuyết, chuyển động nhiệt dừng lại. Tốc độ căn quân phương $v = \\sqrt{\\overline{v^2}} = \\sqrt{\\dfrac{3kT}{m_0}}$ cho thấy phân tử nhẹ chuyển động nhanh hơn ở cùng nhiệt độ.",
+      "formulas": [
+        "physics.thpt.chat-khi.so-mol-va-so-phan-tu",
+        "physics.thpt.chat-khi.mat-do-phan-tu",
+        "physics.thpt.chat-khi.ap-suat-theo-thuyet-dong-hoc",
+        "physics.thpt.chat-khi.dong-nang-tinh-tien-trung-binh",
+        "physics.thpt.chat-khi.toc-do-can-quan-phuong",
+        "physics.thpt.chat-khi.nhiet-do-tuyet-doi",
+        "physics.thpt.chat-khi.dinh-luat-dalton"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính động năng tịnh tiến trung bình của một phân tử khí ở 27°C. Cho hằng số Boltzmann $k = 1{,}38\\cdot 10^{-23}$ J/K.",
+          "solution": "Trước hết đổi nhiệt độ sang thang Kelvin: $T = 27 + 273 = 300$ K. Động năng tịnh tiến trung bình của một phân tử:\n\n$$\\overline{W_d} = \\tfrac{3}{2} k T = \\tfrac{3}{2}\\cdot 1{,}38\\cdot 10^{-23}\\cdot 300.$$\n\nTính: $\\overline{W_d} = 1{,}5\\cdot 1{,}38\\cdot 300\\cdot 10^{-23} = 621\\cdot 10^{-23} = 6{,}21\\cdot 10^{-21}$ J.\n\nGiá trị này không phụ thuộc loại khí — mọi khí ở cùng nhiệt độ có cùng động năng tịnh tiến trung bình.",
+          "answer": "$\\overline{W_d} \\approx 6{,}21\\cdot 10^{-21}$ J"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng nhiệt độ Celsius trong $\\overline{W_d} = \\tfrac32 kT$. Sai; công thức đòi hỏi nhiệt độ tuyệt đối, phải đổi sang Kelvin.",
+        "Cho rằng khí nặng có động năng phân tử trung bình lớn hơn ở cùng nhiệt độ. Sai; động năng trung bình chỉ phụ thuộc nhiệt độ, khí nặng chỉ chuyển động chậm hơn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "chat-khi",
+        "thuyet-dong-hoc",
+        "khi-li-tuong"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.cac-dinh-luat-chat-khi",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Khí lí tưởng",
+      "order": 2,
+      "title_vi": "Các định luật chất khí: Boyle, Charles và Gay-Lussac",
+      "title_en": "Gas laws: Boyle, Charles and Gay-Lussac",
+      "objectives": [
+        "Phát biểu và vận dụng được định luật Boyle cho quá trình đẳng nhiệt",
+        "Phát biểu và vận dụng được định luật Charles và Gay-Lussac cho quá trình đẳng áp, đẳng tích",
+        "Nhận dạng và vẽ được các đường đẳng nhiệt, đẳng áp, đẳng tích"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.thuyet-dong-hoc-phan-tu-khi-li-tuong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Định luật Boyle",
+          "term_en": "Boyle's law",
+          "definition": "Ở nhiệt độ không đổi, áp suất tỉ lệ nghịch với thể tích của một lượng khí xác định: $pV = \\text{hằng số}$, hay $p_1 V_1 = p_2 V_2$."
+        },
+        {
+          "term_vi": "Định luật Charles",
+          "term_en": "Charles's law",
+          "definition": "Ở áp suất không đổi, thể tích tỉ lệ thuận với nhiệt độ tuyệt đối: $\\dfrac{V}{T} = \\text{hằng số}$."
+        },
+        {
+          "term_vi": "Định luật Gay-Lussac",
+          "term_en": "Gay-Lussac's law",
+          "definition": "Ở thể tích không đổi, áp suất tỉ lệ thuận với nhiệt độ tuyệt đối: $\\dfrac{p}{T} = \\text{hằng số}$."
+        }
+      ],
+      "content": "## Ba quá trình, ba định luật\n\nGiữ cố định một trong ba đại lượng $p, V, T$, ta thu được ba định luật thực nghiệm về chất khí.\n\n## Đẳng nhiệt — định luật Boyle\n\nGiữ $T$ không đổi, nén khí thì áp suất tăng: áp suất tỉ lệ nghịch thể tích:\n\n$$p_1 V_1 = p_2 V_2.$$\n\nTrên hệ trục $(p, V)$, đường đẳng nhiệt là một nhánh hypebol. Đây là nguyên lí của bơm, xi lanh.\n\n## Đẳng áp — định luật Charles\n\nGiữ $p$ không đổi, đun nóng thì khí nở: thể tích tỉ lệ thuận nhiệt độ *tuyệt đối*:\n\n$$\\dfrac{V_1}{T_1} = \\dfrac{V_2}{T_2}.$$\n\n## Đẳng tích — định luật Gay-Lussac\n\nGiữ $V$ không đổi, đun nóng thì áp suất tăng:\n\n$$\\dfrac{p_1}{T_1} = \\dfrac{p_2}{T_2}.$$\n\nĐó là lí do bình gas, lốp xe để ngoài nắng dễ nổ.\n\n## Điều tối quan trọng: dùng Kelvin\n\nMọi tỉ lệ với nhiệt độ chỉ đúng khi $T$ tính bằng **Kelvin** ($T = t + 273$). Dùng độ Celsius sẽ sai hoàn toàn vì thang Celsius có gốc tùy tiện. Nhớ quy tắc: chuyển nhanh trắc nghiệm bằng cách lập tỉ số hai trạng thái, đại lượng nào không đổi thì để nguyên.",
+      "formulas": [
+        "physics.thpt.chat-khi.dinh-luat-boyle",
+        "physics.thpt.chat-khi.dinh-luat-charles",
+        "physics.thpt.chat-khi.dinh-luat-gay-lussac"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một lượng khí ở áp suất 2 atm, thể tích 3 lít. Nén đẳng nhiệt đến thể tích 1 lít thì áp suất bằng bao nhiêu? Sau đó giữ thể tích 1 lít, đun nóng để áp suất tăng gấp đôi thì nhiệt độ tuyệt đối thay đổi thế nào?",
+          "solution": "Giai đoạn 1 đẳng nhiệt, dùng định luật Boyle:\n\n$$p_2 = \\dfrac{p_1 V_1}{V_2} = \\dfrac{2\\cdot 3}{1} = 6 \\text{ atm}.$$\n\nGiai đoạn 2 đẳng tích, dùng định luật Gay-Lussac $\\dfrac{p}{T}$ không đổi. Áp suất tăng gấp đôi ($6 \\to 12$ atm) nên nhiệt độ tuyệt đối cũng tăng gấp đôi:\n\n$$\\dfrac{p_3}{T_3} = \\dfrac{p_2}{T_2} \\Rightarrow T_3 = 2 T_2.$$\n\nNhiệt độ tuyệt đối phải tăng gấp đôi.",
+          "answer": "$p_2 = 6$ atm; nhiệt độ tuyệt đối tăng gấp đôi"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng nhiệt độ Celsius trong định luật Charles và Gay-Lussac. Sai; các định luật này chỉ đúng với nhiệt độ tuyệt đối (Kelvin).",
+        "Cho rằng nén khí đẳng nhiệt làm nhiệt độ tăng. Trong quá trình đẳng nhiệt, theo định nghĩa nhiệt độ không đổi; nhiệt sinh ra được truyền ra ngoài."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "chat-khi",
+        "dinh-luat-boyle",
+        "dang-nhiet"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.phuong-trinh-trang-thai-clapeyron-mendeleev",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Khí lí tưởng",
+      "order": 3,
+      "title_vi": "Phương trình trạng thái và phương trình Clapeyron-Mendeleev",
+      "title_en": "The gas state equation and the ideal gas law",
+      "objectives": [
+        "Thiết lập được phương trình trạng thái của khí lí tưởng từ ba định luật chất khí",
+        "Vận dụng được phương trình Clapeyron-Mendeleev để tính các đại lượng của khối khí",
+        "Tính được khối lượng, số mol và khối lượng riêng của chất khí"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.cac-dinh-luat-chat-khi"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình trạng thái",
+          "term_en": "Combined gas law",
+          "definition": "Liên hệ ba đại lượng của một lượng khí xác định ở hai trạng thái: $\\dfrac{p_1 V_1}{T_1} = \\dfrac{p_2 V_2}{T_2}$."
+        },
+        {
+          "term_vi": "Phương trình Clapeyron-Mendeleev",
+          "term_en": "Ideal gas law",
+          "definition": "Phương trình khí lí tưởng: $pV = nRT = \\dfrac{m}{M} RT$, với $R = 8{,}31$ J/(mol·K) là hằng số khí lí tưởng."
+        },
+        {
+          "term_vi": "Khối lượng riêng của khí",
+          "term_en": "Gas density",
+          "definition": "Khối lượng trên đơn vị thể tích của khí: $\\rho = \\dfrac{pM}{RT}$, tăng theo áp suất và giảm khi nhiệt độ tăng."
+        }
+      ],
+      "content": "## Gộp ba định luật thành một\n\nKết hợp Boyle, Charles và Gay-Lussac cho **phương trình trạng thái** của một lượng khí xác định:\n\n$$\\dfrac{pV}{T} = \\text{hằng số} \\quad\\Rightarrow\\quad \\dfrac{p_1 V_1}{T_1} = \\dfrac{p_2 V_2}{T_2}.$$\n\nDùng công thức này khi khối khí *không đổi* nhưng cả ba đại lượng cùng thay đổi giữa hai trạng thái.\n\n## Phương trình Clapeyron-Mendeleev\n\nKhi cần liên hệ với *lượng chất*, ta dùng dạng đầy đủ:\n\n$$pV = nRT = \\dfrac{m}{M} RT,$$\n\nvới $n$ là số mol, $R = 8{,}31$ J/(mol·K), $M$ là khối lượng mol. Phương trình này cho phép tính khối lượng khí, số mol, hoặc khối lượng riêng $\\rho = \\dfrac{m}{V} = \\dfrac{pM}{RT}$ chỉ từ trạng thái hiện tại — không cần trạng thái thứ hai.\n\n## Chọn công thức nào?\n\n- Bài cho *hai trạng thái* của cùng một khối khí (nén, đun, dãn): dùng phương trình trạng thái, lập tỉ số.\n- Bài hỏi *khối lượng, số mol, khối lượng riêng* hay có đổi lượng khí: dùng Clapeyron-Mendeleev.\n\n## Lưu ý đơn vị\n\nTrong $pV = nRT$ với $R = 8{,}31$, phải dùng $p$ theo Pa, $V$ theo m$^3$, $T$ theo K. Nếu dùng atm và lít thì đổi $R$ tương ứng. Sai đơn vị là lỗi phổ biến nhất ở dạng bài này.",
+      "formulas": [
+        "physics.thpt.chat-khi.phuong-trinh-trang-thai",
+        "physics.thpt.chat-khi.phuong-trinh-clapeyron-mendeleev",
+        "physics.thpt.chat-khi.the-tich-mol-dieu-kien-tieu-chuan",
+        "physics.thpt.chat-khi.khoi-luong-rieng-chat-khi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một bình kín 20 lít chứa khí ở áp suất $10^5$ Pa và nhiệt độ 300 K. Tính số mol khí. Cho $R = 8{,}31$ J/(mol·K).",
+          "solution": "Đổi thể tích sang m$^3$: $V = 20$ lít $= 0{,}02$ m$^3$. Áp dụng phương trình Clapeyron-Mendeleev $pV = nRT$:\n\n$$n = \\dfrac{pV}{RT} = \\dfrac{10^5\\cdot 0{,}02}{8{,}31\\cdot 300} = \\dfrac{2000}{2493} \\approx 0{,}80 \\text{ mol}.$$\n\nĐiểm mấu chốt là đổi lít sang m$^3$ vì $R = 8{,}31$ dùng hệ SI. Nếu để nguyên 20 lít, kết quả sẽ sai 1000 lần.",
+          "answer": "$n \\approx 0{,}80$ mol"
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng phương trình trạng thái $\\dfrac{p_1V_1}{T_1}=\\dfrac{p_2V_2}{T_2}$ khi lượng khí thay đổi (nạp thêm hoặc rò rỉ). Công thức này chỉ đúng khi khối lượng khí không đổi.",
+        "Quên đổi lít sang m$^3$ hoặc Celsius sang Kelvin khi dùng $R = 8{,}31$. Sai đơn vị làm kết quả lệch hàng nghìn lần hoặc sai dấu."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "chat-khi",
+        "phuong-trinh-trang-thai",
+        "clapeyron-mendeleev"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.bien-dang-vat-ran-su-no-vi-nhiet",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VIII: Chất rắn và chất lỏng",
+      "order": 1,
+      "title_vi": "Biến dạng của vật rắn và sự nở vì nhiệt",
+      "title_en": "Deformation of solids and thermal expansion",
+      "objectives": [
+        "Nêu được biến dạng đàn hồi của vật rắn và vận dụng định luật Hooke cho biến dạng kéo, nén",
+        "Tính được ứng suất và độ biến dạng tỉ đối của thanh rắn",
+        "Vận dụng được công thức nở dài và nở khối của vật rắn"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Ứng suất",
+          "term_en": "Stress",
+          "definition": "Lực kéo hoặc nén trên một đơn vị diện tích tiết diện: $\\sigma = \\dfrac{F}{S}$; đơn vị Pa (N/m$^2$)."
+        },
+        {
+          "term_vi": "Định luật Hooke cho biến dạng",
+          "term_en": "Hooke's law for deformation",
+          "definition": "Trong giới hạn đàn hồi, độ biến dạng tỉ đối tỉ lệ với ứng suất: $\\dfrac{\\Delta l}{l_0} = \\dfrac{\\sigma}{E}$, $E$ là suất Young."
+        },
+        {
+          "term_vi": "Sự nở dài",
+          "term_en": "Linear thermal expansion",
+          "definition": "Độ tăng chiều dài khi nhiệt độ tăng: $\\Delta l = \\alpha l_0 \\Delta t$, với $\\alpha$ là hệ số nở dài đặc trưng cho vật liệu."
+        }
+      ],
+      "content": "## Vật rắn cũng 'đàn hồi'\n\nDưới lực kéo hoặc nén vừa phải, vật rắn biến dạng rồi trở lại hình dạng cũ khi bỏ lực — đó là **biến dạng đàn hồi**. Đại lượng đo mức tác dụng lực trên tiết diện là **ứng suất** $\\sigma = \\dfrac{F}{S}$. Định luật Hooke cho biến dạng phát biểu: độ biến dạng tỉ đối tỉ lệ với ứng suất:\n\n$$\\dfrac{\\Delta l}{l_0} = \\dfrac{\\sigma}{E} = \\dfrac{F}{ES},$$\n\ntrong đó $E$ (suất Young) đặc trưng cho vật liệu — thép có $E$ rất lớn nên khó biến dạng. Vượt quá giới hạn bền, vật đứt gãy.\n\n## Sự nở vì nhiệt\n\nĐun nóng, các nguyên tử dao động mạnh hơn và khoảng cách trung bình tăng, làm vật **nở ra**. Nở dài:\n\n$$\\Delta l = \\alpha l_0 \\Delta t,$$\n\nvới $\\alpha$ là hệ số nở dài (đơn vị K$^{-1}$). Nở khối có hệ số $\\beta \\approx 3\\alpha$: $\\Delta V = \\beta V_0 \\Delta t$.\n\n## Vì sao phải quan tâm?\n\nĐường ray, cầu thép phải chừa khe hở giãn nở; nếu không, ngày nóng thanh ray sẽ cong vênh. Bê tông cốt thép bền vì thép và bê tông có hệ số nở gần bằng nhau. Nhiệt kế, rơ-le lưỡng kim đều dựa trên nở vì nhiệt.\n\n## Kết nối\n\nKhi một thanh bị *giữ chặt hai đầu* rồi đun nóng, nó không nở được nên sinh ứng suất nhiệt rất lớn — kết hợp cả hai công thức trên để tính lực nén.",
+      "formulas": [
+        "physics.thpt.chat-ran-chat-long.dinh-luat-hooke-bien-dang",
+        "physics.thpt.chat-ran-chat-long.ung-suat",
+        "physics.thpt.chat-ran-chat-long.do-bien-dang-ti-doi",
+        "physics.thpt.chat-ran-chat-long.su-no-dai",
+        "physics.thpt.chat-ran-chat-long.su-no-khoi",
+        "physics.thpt.chat-ran-chat-long.su-no-dien-tich",
+        "physics.thpt.chat-ran-chat-long.luc-dan-hoi-thanh-ran",
+        "physics.thpt.chat-ran-chat-long.gioi-han-ben"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một thanh nhôm dài 2 m ở 20°C. Hệ số nở dài của nhôm $\\alpha = 2{,}4\\cdot 10^{-5}$ K$^{-1}$. Tính độ nở dài của thanh khi nung tới 120°C.",
+          "solution": "Độ tăng nhiệt độ $\\Delta t = 120 - 20 = 100$ K (độ chênh nhiệt độ trong thang Celsius bằng trong thang Kelvin). Độ nở dài:\n\n$$\\Delta l = \\alpha l_0 \\Delta t = 2{,}4\\cdot 10^{-5}\\cdot 2\\cdot 100 = 4{,}8\\cdot 10^{-3} \\text{ m} = 4{,}8 \\text{ mm}.$$\n\nDù chỉ vài milimét, với cầu dài hàng trăm mét thì độ nở tích lũy rất đáng kể, nên phải thiết kế khe co giãn.",
+          "answer": "$\\Delta l = 4{,}8$ mm"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm hệ số nở khối bằng hệ số nở dài. Với vật đẳng hướng, hệ số nở khối $\\beta \\approx 3\\alpha$, không bằng $\\alpha$.",
+        "Cho rằng thanh bị giữ chặt hai đầu vẫn nở dài bình thường. Sai; khi bị cản, thanh không giãn được mà sinh ứng suất nhiệt lớn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "chat-ran",
+        "bien-dang",
+        "no-vi-nhiet"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-conhiet.chat-long-cang-be-mat-do-am",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VIII: Chất rắn và chất lỏng",
+      "order": 2,
+      "title_vi": "Chất lỏng: lực căng bề mặt, mao dẫn và độ ẩm không khí",
+      "title_en": "Liquids: surface tension, capillarity and air humidity",
+      "objectives": [
+        "Nêu được nguyên nhân và biểu thức của lực căng bề mặt chất lỏng",
+        "Giải thích được hiện tượng mao dẫn và tính độ dâng của chất lỏng trong ống",
+        "Phân biệt được độ ẩm tuyệt đối, độ ẩm cực đại và độ ẩm tỉ đối của không khí"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-conhiet.nhiet-luong-can-bang-nhiet-chuyen-the"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Lực căng bề mặt",
+          "term_en": "Surface tension",
+          "definition": "Lực kéo dọc bề mặt chất lỏng, làm diện tích mặt thoáng co lại nhỏ nhất; tác dụng lên một đoạn đường giới hạn dài $l$ có độ lớn $f = \\sigma l$, với $\\sigma$ là hệ số căng bề mặt (N/m)."
+        },
+        {
+          "term_vi": "Hiện tượng mao dẫn",
+          "term_en": "Capillary action",
+          "definition": "Hiện tượng chất lỏng dâng lên (dính ướt) hoặc hạ xuống (không dính ướt) trong ống nhỏ; độ dâng $h = \\dfrac{4\\sigma}{\\rho g d}$."
+        },
+        {
+          "term_vi": "Độ ẩm tỉ đối",
+          "term_en": "Relative humidity",
+          "definition": "Tỉ số giữa độ ẩm tuyệt đối và độ ẩm cực đại ở cùng nhiệt độ, tính phần trăm: $f = \\dfrac{a}{A}\\cdot 100\\%$; cho biết không khí gần bão hòa hơi nước đến mức nào."
+        }
+      ],
+      "content": "## Vì sao giọt nước co tròn?\n\nCác phân tử ở mặt thoáng bị phân tử bên trong hút vào, tạo nên **lực căng bề mặt** khiến mặt thoáng có xu hướng co nhỏ nhất — đó là lí do giọt nước, bong bóng xà phòng có dạng cầu. Lực căng tác dụng lên đường giới hạn dài $l$:\n\n$$f = \\sigma l,$$\n\nvới $\\sigma$ là hệ số căng bề mặt. Nhờ nó, côn trùng đi được trên mặt nước, kim khâu nổi được.\n\n## Mao dẫn\n\nTrong ống rất nhỏ, chất lỏng dính ướt (như nước trong ống thủy tinh) **dâng lên**, chất không dính ướt (như thủy ngân) **hạ xuống**:\n\n$$h = \\dfrac{4\\sigma}{\\rho g d}.$$\n\nỐng càng nhỏ, nước dâng càng cao. Mao dẫn giúp nước thấm lên thân cây, dầu thấm lên bấc đèn, nước ngấm qua giấy.\n\n## Độ ẩm không khí\n\nKhông khí chứa hơi nước. **Độ ẩm tuyệt đối** $a$ là khối lượng hơi nước trong 1 m$^3$ không khí. **Độ ẩm cực đại** $A$ là giá trị $a$ khi hơi nước bão hòa ở nhiệt độ đó. **Độ ẩm tỉ đối**:\n\n$$f = \\dfrac{a}{A}\\cdot 100\\%.$$\n\nĐộ ẩm tỉ đối càng cao, mồ hôi càng khó bay hơi nên ta thấy oi bức. Khi không khí lạnh đi tới điểm sương, hơi nước ngưng tụ thành sương, mây, mưa.",
+      "formulas": [
+        "physics.thpt.chat-ran-chat-long.luc-cang-be-mat",
+        "physics.thpt.chat-ran-chat-long.hien-tuong-mao-dan",
+        "physics.thpt.chat-ran-chat-long.do-am-ti-doi",
+        "physics.thpt.chat-ran-chat-long.do-am-cuc-dai",
+        "physics.thpt.chat-ran-chat-long.do-am-tuyet-doi",
+        "physics.thpt.chat-ran-chat-long.luc-nhac-vong-khoi-chat-long"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Không khí ở 30°C có độ ẩm cực đại $A = 30{,}3$ g/m$^3$. Nếu độ ẩm tỉ đối là 60%, tính độ ẩm tuyệt đối và khối lượng hơi nước trong một phòng thể tích 50 m$^3$.",
+          "solution": "Độ ẩm tuyệt đối suy từ định nghĩa độ ẩm tỉ đối $f = \\dfrac{a}{A}$:\n\n$$a = f\\cdot A = 0{,}60\\cdot 30{,}3 \\approx 18{,}2 \\text{ g/m}^3.$$\n\nKhối lượng hơi nước trong phòng bằng độ ẩm tuyệt đối nhân thể tích:\n\n$$m = a\\cdot V = 18{,}2\\cdot 50 = 910 \\text{ g} \\approx 0{,}91 \\text{ kg}.$$\n\nCần dùng độ ẩm tuyệt đối (khối lượng thực) chứ không phải độ ẩm cực đại để tính lượng nước thật trong phòng.",
+          "answer": "$a \\approx 18{,}2$ g/m$^3$; $m \\approx 910$ g"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm độ ẩm cực đại với độ ẩm tuyệt đối. Độ ẩm cực đại là giá trị bão hòa; độ ẩm tuyệt đối mới là lượng hơi nước thực có, thường nhỏ hơn.",
+        "Cho rằng lực căng bề mặt phụ thuộc diện tích mặt thoáng. Sai; nó tỉ lệ với độ dài đường giới hạn $l$ chứ không phải diện tích."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "chat-long",
+        "cang-be-mat",
+        "do-am"
+      ]
+    }
+  ]
+}

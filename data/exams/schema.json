@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aistem.local/schema/exam-profile.json",
+  "title": "AISTEM Exam Profile",
+  "description": "Hồ sơ kỳ thi chuẩn hoá: cấu trúc đề, trọng số chủ đề, dạng câu hỏi, công thức được cấp sẵn và công thức phải thuộc, chiến thuật làm bài.",
+  "type": "object",
+  "required": ["meta", "exams"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["file", "title", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string" },
+        "title": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "exams": { "type": "array", "items": { "$ref": "#/definitions/exam" } }
+  },
+  "definitions": {
+    "exam": {
+      "type": "object",
+      "required": [
+        "id", "name", "provider", "subject", "curriculum", "level",
+        "overview", "sections", "topic_weights", "question_types",
+        "formula_sheet_provided", "formulas_must_memorize",
+        "scoring", "strategies", "common_traps", "tags"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^exam\\.[a-z0-9-]+$",
+          "description": "exam.<slug>, ví dụ exam.ap-calculus-bc"
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "provider": { "type": "string", "description": "College Board, IBO, Cambridge Assessment, ETS..." },
+        "subject": { "enum": ["math", "physics", "chemistry", "biology"] },
+        "curriculum": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": ["vn-gdpt-2018", "ap", "ib", "a-level", "intl-undergrad", "olympiad", "ru-east-eu"]
+          }
+        },
+        "level": { "enum": ["thpt", "dai-hoc"] },
+        "overview": { "type": "string", "minLength": 100, "description": "Kỳ thi này là gì, dành cho ai, dùng để làm gì" },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "question_count", "duration_minutes", "weight_percent"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "question_count": { "type": "string", "description": "Có thể là số hoặc khoảng, ví dụ \"45\" hay \"4-6\"" },
+              "duration_minutes": { "type": "integer", "minimum": 1 },
+              "weight_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+              "calculator": { "enum": ["cho-phep", "khong-cho-phep", "mot-phan"] },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "topic_weights": {
+          "type": "object",
+          "description": "Tên chủ đề -> phần trăm trọng số trong đề",
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 100 }
+        },
+        "question_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "description"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "example_prompt": { "type": "string", "description": "Ví dụ dạng đề tự soạn, KHÔNG sao chép đề thật" },
+              "approach": { "type": "string", "description": "Quy trình xử lý dạng này" }
+            }
+          }
+        },
+        "formula_sheet_provided": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Công thức được in sẵn trong đề, thí sinh không cần thuộc"
+        },
+        "formulas_must_memorize": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "id công thức trong data/formulas mà thí sinh BẮT BUỘC phải thuộc. Bộ kiểm định đối chiếu id có thật."
+        },
+        "scoring": {
+          "type": "object",
+          "required": ["description"],
+          "additionalProperties": false,
+          "properties": {
+            "description": { "type": "string" },
+            "scale": { "type": "string", "description": "Thang điểm, ví dụ \"1-7\" (IB) hay \"1-5\" (AP)" },
+            "raw_to_scaled": { "type": "string", "description": "Cách quy đổi điểm thô sang điểm thang" },
+            "penalty_for_wrong": { "type": "boolean", "description": "Có trừ điểm câu sai hay không" }
+          }
+        },
+        "strategies": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Chiến thuật làm bài đặc thù cho kỳ thi này (phân bổ thời gian, thứ tự làm, cách trình bày để được điểm thành phần)"
+        },
+        "common_traps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Bẫy đặc trưng của kỳ thi và cách tránh"
+        },
+        "tags": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

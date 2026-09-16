@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "file": "olympiad-advanced-napkin.json",
+    "subject": "math",
+    "title": "Tuyển tập Bài toán Olympic Toán học Chuyên sâu (Evan Chen Napkin & IMO/AIME)",
+    "levels": [
+      "thpt",
+      "dai-hoc"
+    ],
+    "count": 5
+  },
+  "problems": [
+    {
+      "id": "prob.math.napkin.0001",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [10, 11, 12, 13],
+      "curriculum": ["olympiad"],
+      "topic": "Số học Olympic: Định lý Nhỏ Fermat và Cấp của Phần tử",
+      "type": "dien-so",
+      "tags": ["so-hoc", "olympiad", "fermat", "cap-phan-tu"],
+      "statement_vi": "Tìm số nguyên dương n nhỏ nhất sao cho 2^n - 1 chia hết cho 47.",
+      "statement_en": "Find the smallest positive integer n such that 2^n - 1 is divisible by 47.",
+      "answer": "23",
+      "answer_numeric": 23,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định lý Fermat nhỏ, vì 47 là số nguyên tố và gcd(2, 47) = 1 nên 2^{46} ≡ 1 (mod 47).",
+          "latex": "2^{46} \\equiv 1 \\pmod{47}"
+        },
+        {
+          "explain": "Cấp của 2 modulo 47, kí hiệu ord_{47}(2), phải là ước của 46. Các ước dương của 46 là 1, 2, 23, 46.",
+          "latex": "d \\mid 46 \\implies d \\in \\{1, 2, 23, 46\\}"
+        },
+        {
+          "explain": "Ta tính lũy thừa theo mod 47: 2^5 = 32 = -15, 2^{10} = 225 = 37 = -10, 2^{20} = 100 = 6. Suy ra 2^{23} = 2^{20} * 8 = 48 ≡ 1 (mod 47).",
+          "latex": "2^{23} \\equiv 1 \\pmod{47}"
+        },
+        {
+          "explain": "Vì d = 23 nhỏ hơn 46 và không có ước nhỏ hơn thỏa mãn, nên n = 23 là số nhỏ nhất.",
+          "latex": "n_{\\min} = 23"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": ["số học mod", "định lý Fermat", "cấp phần tử"],
+      "hints": [
+        "Cấp của 2 mod 47 phải là một ước của phi(47) = 46.",
+        "Kiểm tra các ước 1, 2, 23, 46 bằng cách tính lũy thừa nhanh."
+      ]
+    },
+    {
+      "id": "prob.math.napkin.0002",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [10, 11, 12, 13],
+      "curriculum": ["olympiad"],
+      "topic": "Đại số Olympic: Bất đẳng thức Cauchy-Schwarz & Kỹ thuật Engel",
+      "type": "dien-so",
+      "tags": ["bat-dang-thuc", "cauchy-schwarz", "engel", "olympiad"],
+      "statement_vi": "Cho các số thực dương a, b, c thỏa mãn a + b + c = 3. Tìm giá trị nhỏ nhất của biểu thức P = a^2/(b+1) + b^2/(c+1) + c^2/(a+1).",
+      "statement_en": "Given positive real numbers a, b, c such that a + b + c = 3. Find the minimum value of P = a^2/(b+1) + b^2/(c+1) + c^2/(a+1).",
+      "answer": "1.5",
+      "answer_numeric": 1.5,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng bất đẳng thức Cauchy-Schwarz dạng Engel (BĐT Sơ-vác):",
+          "latex": "P \\ge \\frac{(a + b + c)^2}{(b + 1) + (c + 1) + (a + 1)}"
+        },
+        {
+          "explain": "Thay a + b + c = 3 vào tử và mẫu số:",
+          "latex": "P \\ge \\frac{3^2}{3 + 3} = \\frac{9}{6} = 1.5"
+        },
+        {
+          "explain": "Dấu đẳng thức xảy ra khi a = b = c = 1.",
+          "latex": "a = b = c = 1 \\implies P_{\\min} = 1.5"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": ["bất đẳng thức Cauchy-Schwarz", "dạng Engel"],
+      "hints": [
+        "Sử dụng bất đẳng thức Cauchy-Schwarz dạng phân thức: sum a^2/x >= (sum a)^2 / sum x.",
+        "Để ý mẫu số có tổng bằng a+b+c+3 = 6."
+      ]
+    },
+    {
+      "id": "prob.math.napkin.0003",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [11, 12, 13],
+      "curriculum": ["olympiad"],
+      "topic": "Tổ hợp Olympic: Nguyên lý Ngăn kéo Dirichlet & Lý thuyết Đồ thị",
+      "type": "dien-so",
+      "tags": ["to-hop", "ramsey", "do-thi", "olympiad"],
+      "statement_vi": "Cho một đồ thị đầy đủ gồm 6 đỉnh. Mỗi cạnh được tô bằng một trong hai màu đỏ hoặc xanh. Tìm số lượng tối thiểu các tam giác đơn sắc (3 cạnh cùng màu).",
+      "statement_en": "In a complete graph with 6 vertices, each edge is colored either red or blue. Find the minimum number of monochromatic triangles.",
+      "answer": "2",
+      "answer_numeric": 2,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Theo định lý Ramsey R(3,3) = 6, mọi đồ thị K6 luôn chứa ít nhất 1 tam giác đơn sắc.",
+          "latex": "R(3,3) = 6"
+        },
+        {
+          "explain": "Xét các góc (cặp cạnh kề cùng màu). Mỗi tam giác không đơn sắc chứa đúng 2 góc khác màu, còn tam giác đơn sắc chứa 0 góc khác màu.",
+          "latex": "N_{\\text{non-mono}} = \\frac{1}{2} \\sum_{v} d_{\\text{red}}(v) d_{\\text{blue}}(v)"
+        },
+        {
+          "explain": "Tổng số tam giác trong K6 là C(6,3) = 20. Giá trị lớn nhất của số tam giác không đơn sắc là 18. Do đó số tam giác đơn sắc tối thiểu là 20 - 18 = 2.",
+          "latex": "N_{\\text{mono}} = 20 - \\frac{1}{2}\\sum_{v} d_{\\text{red}}(v)(5 - d_{\\text{red}}(v)) \\ge 20 - 18 = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "skills": ["định lý Ramsey", "đếm bằng hai cách", "lý thuyết đồ thị"],
+      "hints": [
+        "Đếm số tam giác không đơn sắc thông qua số góc khác màu tại mỗi đỉnh.",
+        "Tổng số tam giác trong K6 là 20."
+      ]
+    },
+    {
+      "id": "prob.math.napkin.0004",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [10, 11, 12, 13],
+      "curriculum": ["olympiad"],
+      "topic": "Hình học Olympic: Định lý Menelaus và Ceva",
+      "type": "dien-so",
+      "tags": ["hinh-hoc", "ceva", "menelaus", "olympiad"],
+      "statement_vi": "Cho tam giác ABC có D, E, F lần lượt nằm trên các cạnh BC, CA, AB sao cho AD, BE, CF đồng quy tại G. Biết BD/DC = 2 và CE/EA = 3. Tính tỉ số AF/FB.",
+      "statement_en": "In triangle ABC, points D, E, F lie on BC, CA, AB such that AD, BE, CF are concurrent. If BD/DC = 2 and CE/EA = 3, calculate AF/FB.",
+      "answer": "0.1667",
+      "answer_numeric": 0.16667,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định lý Ceva cho ba đường đồng quy AD, BE, CF trong tam giác ABC:",
+          "latex": "\\frac{AF}{FB} \\cdot \\frac{BD}{DC} \\cdot \\frac{CE}{EA} = 1"
+        },
+        {
+          "explain": "Thay các tỉ số đã biết BD/DC = 2 và CE/EA = 3 vào phương trình:",
+          "latex": "\\frac{AF}{FB} \\cdot 2 \\cdot 3 = 1 \\implies \\frac{AF}{FB} \\cdot 6 = 1"
+        },
+        {
+          "explain": "Suy ra tỉ số AF/FB = 1/6 ≈ 0.1667.",
+          "latex": "\\frac{AF}{FB} = \\frac{1}{6} \\approx 0.1667"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": ["định lý Ceva", "tỉ số đồng quy"],
+      "hints": [
+        "Tích của ba tỉ lệ đoạn thẳng trên ba cạnh bằng 1 theo định lý Ceva.",
+        "AF/FB = 1 / ( (BD/DC) * (CE/EA) )."
+      ]
+    },
+    {
+      "id": "prob.math.napkin.0005",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [11, 12, 13],
+      "curriculum": ["olympiad"],
+      "topic": "Số học Olympic: Phương trình Diophantine & Căn nguyên thủy",
+      "type": "dien-so",
+      "tags": ["so-hoc", "phuong-trinh-nghiem-nguyen", "simon", "olympiad"],
+      "statement_vi": "Tìm số nghiệm nguyên dương (x, y) của phương trình 1/x + 1/y = 1/17.",
+      "statement_en": "Find the number of positive integer solutions (x, y) to 1/x + 1/y = 1/17.",
+      "answer": "3",
+      "answer_numeric": 3,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Biến đổi phương trình tương đương dạng tích Simon (SFFT):",
+          "latex": "17(x + y) = xy \\iff xy - 17x - 17y = 0 \\iff (x - 17)(y - 17) = 17^2 = 289"
+        },
+        {
+          "explain": "Vì 17 là số nguyên tố nên 17^2 có đúng 3 ước nguyên dương: 1, 17, 289.",
+          "latex": "(x - 17, y - 17) \\in \\{(1, 289), (17, 17), (289, 1)\\}"
+        },
+        {
+          "explain": "Mỗi ước tương ứng với một nghiệm nguyên dương (x, y). Vậy có đúng 3 nghiệm.",
+          "latex": "(x, y) \\in \\{(18, 306), (34, 34), (306, 18)\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": ["phương trình nghiệm nguyên", "phân tích nhân tử Simon"],
+      "hints": [
+        "Đưa về dạng tích: (x - p)(y - p) = p^2.",
+        "Đếm số ước dương của p^2 khi p là số nguyên tố."
+      ]
+    }
+  ]
+}

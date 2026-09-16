@@ -1,0 +1,650 @@
+{
+  "meta": {
+    "file": "exams-olympiad.json",
+    "title": "Hồ sơ kỳ thi Olympiad quốc tế - IMO, IPhO, IChO, IBO, APhO",
+    "count": 5
+  },
+  "exams": [
+    {
+      "id": "exam.imo",
+      "name": "IMO (International Mathematical Olympiad)",
+      "provider": "International Mathematical Olympiad (Ban tổ chức IMO và IMO Foundation)",
+      "subject": "math",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "Olympic Toán học Quốc tế (IMO) là kỳ thi toán lâu đời và danh giá nhất cho học sinh phổ thông, tổ chức thường niên từ 1959, mỗi nước cử tối đa 6 thí sinh chưa vào đại học và dưới 20 tuổi. Đề gồm 6 bài, thi trong HAI NGÀY liên tiếp, mỗi ngày 3 bài trong 4 giờ 30 phút. Mỗi bài chấm trên thang 7 điểm, tổng tối đa 42 điểm. Bốn phân môn được ra đề là Đại số, Tổ hợp, Hình học và Số học; KHÔNG có giải tích, xác suất thống kê hay đại số tuyến tính bậc đại học. Huy chương trao cho khoảng một nửa số thí sinh theo tỉ lệ vàng : bạc : đồng xấp xỉ 1 : 2 : 3. IMO không quy đổi tín chỉ đại học nhưng là bệ phóng tuyển thẳng và học bổng tại hầu hết đại học hàng đầu thế giới; huy chương vàng IMO là một trong những thành tích được các khoa Toán săn đón nhất.",
+      "sections": [
+        {
+          "name": "Ngày thi thứ nhất (Bài 1, 2, 3)",
+          "question_count": "3",
+          "duration_minutes": 270,
+          "weight_percent": 50,
+          "calculator": "khong-cho-phep",
+          "note": "Bài 1 thường dễ, Bài 3 khó nhất. Không dùng máy tính, thước tính, bảng số hay tài liệu; chỉ compa và thước kẻ. Mỗi bài 7 điểm, cả ngày tối đa 21 điểm."
+        },
+        {
+          "name": "Ngày thi thứ hai (Bài 4, 5, 6)",
+          "question_count": "3",
+          "duration_minutes": 270,
+          "weight_percent": 50,
+          "calculator": "khong-cho-phep",
+          "note": "Bài 4 thường dễ, Bài 6 khó nhất. Bốn phân môn (Đại số, Tổ hợp, Hình học, Số học) phân bố qua cả 6 bài, thứ tự cụ thể thay đổi theo năm. Mỗi bài 7 điểm."
+        }
+      ],
+      "topic_weights": {
+        "Đại số (bất đẳng thức, phương trình hàm, đa thức, dãy số)": 25,
+        "Tổ hợp (đếm, đồ thị, trò chơi, cấu hình rời rạc)": 25,
+        "Hình học phẳng (Euclid tổng hợp, không tọa độ hoá bắt buộc)": 25,
+        "Số học (đồng dư, chia hết, phương trình Diophantine)": 25
+      },
+      "question_types": [
+        {
+          "name": "Bài hình học phẳng chứng minh",
+          "description": "Một bài hình Euclid thuần túy (thường Bài 2 hoặc Bài 3/6), yêu cầu chứng minh thẳng hàng, đồng quy, tiếp xúc hoặc một hệ thức. Cho phép nhiều hướng: tổng hợp, lượng giác, tọa độ, số phức, phép nghịch đảo hay tọa độ trọng tâm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho tam giác nhọn ABC nội tiếp đường tròn (O), đường cao AD và BE cắt nhau tại trực tâm H. Gọi M là trung điểm BC. Chứng minh rằng đường thẳng qua H vuông góc với HM đi qua điểm đối xứng của A qua O.",
+          "approach": "Vẽ hình lớn, chính xác bằng compa để phát hiện tính chất; đặt tên đầy đủ mọi điểm phụ. Chọn công cụ theo cấu hình: nhiều đường tròn thì nghĩ tới phương tích và trục đẳng phương; có phép quay/vị tự thì nghĩ tới đồng dạng xoắn; hệ thức độ dài thì Ptolemy/Stewart. Luôn kiểm tra lại với một vị trí đặc biệt để tránh sai cấu hình."
+        },
+        {
+          "name": "Bài đại số: bất đẳng thức hoặc phương trình hàm",
+          "description": "Chứng minh một bất đẳng thức đối xứng/thuần nhất, hoặc tìm mọi hàm thỏa một phương trình hàm. Đòi hỏi làm chủ AM-GM, Cauchy-Schwarz, các phép thế giá trị đặc biệt và lập luận đơn ánh/toàn ánh.",
+          "example_prompt": "Đề mô phỏng tự soạn: Tìm tất cả hàm f từ tập số thực dương vào chính nó thỏa mãn f(x + f(y)) = f(x) + y với mọi x, y dương.",
+          "approach": "Với phương trình hàm: thử f(0), f(1), tìm điểm bất động, chứng minh đơn ánh rồi toàn ánh, đoán nghiệm f(x)=x và chứng minh chặt cả hai chiều. Với bất đẳng thức: chuẩn hoá điều kiện, xét dấu bằng, thử SOS hoặc dồn biến; nêu rõ điều kiện dấu bằng vì nhiều lời giải mất điểm do bỏ sót."
+        },
+        {
+          "name": "Bài số học",
+          "description": "Bài về chia hết, đồng dư, số nguyên tố, phương trình nghiệm nguyên hoặc cấp của phần tử. Kỹ thuật lõi: bổ đề LTE, định lí Wilson/Fermat, thặng dư bậc hai, và kỹ thuật nhảy Vieta cho phương trình đối xứng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Tìm mọi cặp số nguyên dương (a, b) sao cho (a^2 + b^2) chia hết cho (ab - 1).",
+          "approach": "Đặt hằng số k = (a^2+b^2)/(ab-1), cố định k rồi dùng nhảy Vieta để hạ nghiệm về trường hợp nhỏ nhất. Xét modulo hợp lí (thường mod 4, mod p) để loại giá trị. Với số mũ trong biểu thức chia hết, áp dụng bổ đề LTE để so số mũ của từng số nguyên tố."
+        },
+        {
+          "name": "Bài tổ hợp",
+          "description": "Bài đếm, cực trị rời rạc, trò chơi/chiến thuật, hoặc bất biến. Thường là Bài 3 hoặc Bài 6 khó nhất, ít công thức, nặng ý tưởng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Trên bảng ghi các số 1, 2, ..., n. Mỗi bước được xóa hai số a, b rồi ghi |a - b|. Hỏi với những giá trị n nào có thể đưa bảng về đúng một số 0.",
+          "approach": "Tìm một BẤT BIẾN hoặc ĐƠN BIẾN (ở đây là tính chẵn lẻ của tổng). Với bài trò chơi, mô tả rõ chiến thuật thắng và chứng minh nó luôn duy trì được thế; với bài cực trị, chứng minh cả cận trên (không thể hơn) lẫn cấu hình đạt được (dựng ví dụ)."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bất kỳ bảng công thức, bảng số hay hằng số nào; mọi định lí và bổ đề phải thuộc và tự chứng minh khi cần.",
+        "Chỉ được mang dụng cụ vẽ hình (compa, thước thẳng, thước đo góc); nghiêm cấm máy tính bỏ túi, tài liệu và thiết bị điện tử."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.imo-dai-so.am-gm-co-trong-so",
+        "math.thpt.imo-dai-so.chuoi-qm-am-gm-hm",
+        "math.thpt.imo-dai-so.trung-binh-luy-thua",
+        "math.thpt.imo-dai-so.bdt-jensen-ham-loi",
+        "math.thpt.imo-dai-so.bdt-sap-xep-lai",
+        "math.thpt.imo-dai-so.bdt-schur",
+        "math.thpt.imo-dai-so.vieta-tong-quat",
+        "math.thpt.imo-dai-so.vieta-jumping",
+        "math.thpt.imo-dai-so.pt-ham-cauchy",
+        "math.thpt.imo-so-hoc.dinh-li-wilson",
+        "math.thpt.imo-so-hoc.cong-thuc-legendre",
+        "math.thpt.imo-so-hoc.bo-de-lte-p-le-hieu",
+        "math.thpt.imo-so-hoc.luat-thuan-nghich-bac-hai",
+        "math.thpt.imo-so-hoc.dinh-li-hai-binh-phuong",
+        "math.thpt.imo-so-hoc.dinh-li-lucas",
+        "math.thpt.imo-to-hop.nguyen-li-cuc-han",
+        "math.thpt.imo-to-hop.nguyen-li-bat-bien",
+        "math.thpt.imo-to-hop.hang-dang-thuc-hockey-stick",
+        "math.thpt.imo-to-hop.hang-dang-thuc-vandermonde",
+        "math.thpt.imo-to-hop.dinh-li-dilworth",
+        "math.thpt.imo-hinh-hoc.dinh-li-ptolemy",
+        "math.thpt.imo-hinh-hoc.dinh-li-ceva",
+        "math.thpt.imo-hinh-hoc.dinh-li-menelaus",
+        "math.thpt.imo-hinh-hoc.phuong-tich-dinh-huong",
+        "math.thpt.imo-hinh-hoc.duong-thang-euler",
+        "math.thpt.imo-hinh-hoc.duong-tron-chin-diem",
+        "math.thpt.imo-hinh-hoc.dinh-li-stewart",
+        "math.thpt.imo-hinh-hoc.phep-dong-dang-xoan"
+      ],
+      "scoring": {
+        "description": "Mỗi bài chấm trên thang 7 điểm nguyên, tổng tối đa 42. Chấm theo lối cộng điểm cho tiến trình đúng: một bước đột phá then chốt (ý tưởng chính) mới được điểm, còn lời giải sai hướng dù dài vẫn 0. Điểm 7 chỉ dành cho lời giải hoàn chỉnh và chặt chẽ; 1 điểm thường cho một quan sát/bổ đề có giá trị. Mỗi nước có hướng dẫn viên (leader) đối thoại với ban điều phối (coordinator) để thống nhất điểm từng bài; chấm ẩn danh theo mã số, thang điểm chi tiết được ban ra đề soạn trước.",
+        "scale": "0-42 (mỗi bài 0-7)",
+        "raw_to_scaled": "Không quy đổi ra thang khác. Ngưỡng huy chương đặt lại mỗi năm để: khoảng 1/12 số thí sinh đạt Vàng, 1/6 tiếp theo đạt Bạc, 1/4 tiếp theo đạt Đồng, sao cho tổng số huy chương không vượt quá một nửa số dự thi và tỉ lệ Vàng : Bạc : Đồng xấp xỉ 1 : 2 : 3. Bằng khen (Honourable Mention) trao cho thí sinh không có huy chương nhưng đạt trọn 7 điểm ở ít nhất một bài. Ngưỡng vàng nhiều năm rơi vào khoảng 28-32/42, thay đổi theo độ khó đề.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Phân bổ thời gian theo độ khó: trong 270 phút mỗi ngày, giành trọn điểm bài dễ (Bài 1/4) trước, vì mất điểm bài dễ là tổn thất nặng nhất trên bảng xếp hạng.",
+        "Viết lời giải đầy đủ và tự chứa: nêu rõ mọi bổ đề dùng tới; định lí không nằm trong chương trình phổ thông (Ptolemy suy rộng, LTE, ...) nên phát biểu và chứng minh ngắn để giám khảo chắc chắn cho điểm.",
+        "Ăn điểm thành phần khi bí: ghi lại các bổ đề đã chứng minh, các trường hợp đã xử lý; nhiều điểm 1-3 đến từ những bước trung gian đúng dù chưa khép kín lời giải.",
+        "Với hình học, vẽ ít nhất một hình thật lớn và chính xác để dò tính chất; nếu bí lời giải tổng hợp, chuyển sang tọa độ, số phức hoặc tọa độ trọng tâm - IMO chấp nhận mọi phương pháp đúng.",
+        "Kiểm tra biên và dấu bằng: bất đẳng thức phải chỉ ra khi nào đạt dấu bằng; phương trình hàm phải chứng minh nghiệm tìm được là DUY NHẤT (thử lại và loại nghiệm ngoại lai).",
+        "Nếu chỉ giải được một phần bài khó, hãy trình bày sạch sẽ phần chắc chắn đúng thay vì viết dàn trải mọi ý nửa vời khó chấm.",
+        "Rèn phản xạ nhận dạng: bài số học có biểu thức mũ nghĩ tới LTE; phương trình đối xứng nghiệm nguyên nghĩ tới nhảy Vieta; tổ hợp có thao tác lặp nghĩ tới bất biến/đơn biến."
+      ],
+      "common_traps": [
+        "Sai cấu hình hình học: chứng minh chỉ đúng cho một vị trí của hình mà bỏ qua trường hợp điểm nằm ngoài/đổi phía; nên dùng góc định hướng hoặc độ dài có dấu để lời giải phổ quát.",
+        "Dùng định lí mạnh ngoài chương trình mà không chứng minh, khiến giám khảo không thể xác nhận và có thể bị trừ điểm.",
+        "Bất đẳng thức: quên xét điều kiện dấu bằng, hoặc áp dụng AM-GM/Cauchy khi các số chưa chắc dương.",
+        "Phương trình hàm: đoán ra nghiệm nhưng không chứng minh không còn nghiệm nào khác (thiếu bước đơn ánh/toàn ánh hoặc chưa loại nghiệm bệnh lí).",
+        "Bài đếm/tổ hợp cực trị: chỉ chứng minh được một chiều (hoặc cận trên, hoặc ví dụ) mà tưởng đã xong; cần cả chặn và cấu hình đạt được.",
+        "Nhầm 'kiểm tra vài trường hợp nhỏ' là 'chứng minh'; quy nạp phải nêu rõ bước cơ sở và bước chuyển.",
+        "Quản lý thời gian kém: sa lầy vào Bài 3/6 khó mà bỏ dở điểm chắc ăn ở bài dễ cùng ngày."
+      ],
+      "tags": [
+        "olympiad",
+        "toan",
+        "imo",
+        "olympic-quoc-te"
+      ],
+      "sources": [
+        "imo-official.org - About IMO và Regulations: đề 6 bài, thi 2 ngày, mỗi ngày 3 bài trong 4 giờ 30 phút, mỗi bài 7 điểm, tối đa 42 điểm",
+        "imo-official.org / Wikipedia - International Mathematical Olympiad: ngưỡng huy chương ~1/12 Vàng, 1/6 Bạc, 1/4 Đồng (tỉ lệ 1:2:3, tối đa một nửa số thí sinh có huy chương); Bằng khen cho ai đạt 7 điểm trọn một bài mà không có huy chương",
+        "AoPS Wiki - International Mathematical Olympiad: bốn phân môn Đại số, Tổ hợp, Hình học, Số học; không có giải tích"
+      ]
+    },
+    {
+      "id": "exam.ipho",
+      "name": "IPhO (International Physics Olympiad)",
+      "provider": "International Physics Olympiad",
+      "subject": "physics",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "Olympic Vật lí Quốc tế (IPhO) là kỳ thi vật lí phổ thông đỉnh cao, tổ chức thường niên từ 1967, mỗi nước cử tối đa 5 thí sinh chưa vào đại học. Kỳ thi gồm HAI VÒNG diễn ra vào hai ngày khác nhau, cách nhau ít nhất một ngày nghỉ: vòng LÝ THUYẾT (3 bài, 5 giờ, tối đa 30 điểm) và vòng THỰC NGHIỆM (1-2 bài, 5 giờ, tối đa 20 điểm), tổng 50 điểm. Phạm vi kiến thức được quy định chặt trong 'IPhO Syllabus' (bản hiện hành tu chỉnh năm 2022): chỉ ra đề những chủ đề nằm trong syllabus, ngoài ra nếu dùng khái niệm ngoài chương trình thì phải cung cấp đủ dữ kiện trong đề. Huy chương đặt theo phân vị: Vàng ~8%, Vàng+Bạc ~25%, Vàng+Bạc+Đồng ~50%, có thêm Bằng khen. IPhO không quy đổi tín chỉ, nhưng huy chương là tấm vé tuyển thẳng và học bổng tại các đại học kỹ thuật hàng đầu.",
+      "sections": [
+        {
+          "name": "Vòng Lý thuyết",
+          "question_count": "3",
+          "duration_minutes": 300,
+          "weight_percent": 60,
+          "calculator": "cho-phep",
+          "note": "Ba bài lý thuyết, tổng đúng 30 điểm; các bài thường bao trùm ít nhất 4 lĩnh vực vật lí. Được dùng máy tính bỏ túi không lập trình được (không đồ thị, không CAS). Hằng số cần thiết in trong đề."
+        },
+        {
+          "name": "Vòng Thực nghiệm",
+          "question_count": "1-2",
+          "duration_minutes": 300,
+          "weight_percent": 40,
+          "calculator": "cho-phep",
+          "note": "Một hoặc hai bài thực nghiệm, tổng đúng 20 điểm; đo đạc trên thiết bị thật, xử lý số liệu, ước lượng sai số và vẽ đồ thị. Chấm nặng vào phương pháp đo và phân tích sai số."
+        }
+      ],
+      "topic_weights": {
+        "Cơ học (chất điểm, vật rắn, dao động, hấp dẫn)": 25,
+        "Nhiệt học và vật lí phân tử (nhiệt động lực học, khí lí tưởng)": 15,
+        "Điện từ học (tĩnh điện, từ trường, cảm ứng, mạch)": 25,
+        "Dao động và sóng": 12,
+        "Quang học (hình học và sóng)": 8,
+        "Vật lí hiện đại (lượng tử, tương đối hẹp, hạt nhân)": 15
+      },
+      "question_types": [
+        {
+          "name": "Bài lý thuyết cơ học/hệ nhiều bước",
+          "description": "Một bài dài chia thành nhiều ý (a, b, c...) tăng dần độ khó, thường mô hình hoá một hệ vật lí (con lắc phức tạp, vệ tinh, chất lỏng quay...). Yêu cầu lập phương trình chuyển động, bảo toàn, và khai triển gần đúng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hạt cườm khối lượng m trượt không ma sát trên vòng dây tròn bán kính R đang quay đều quanh trục thẳng đứng với tốc độ góc Ω. Hãy tìm các vị trí cân bằng của hạt theo Ω, xác định vị trí nào bền, và tính tần số dao động nhỏ quanh vị trí cân bằng bền.",
+          "approach": "Chọn hệ quy chiếu và tọa độ suy rộng hợp lí; viết cơ năng hoặc phương trình Newton trong hệ quay (kể lực quán tính li tâm). Tìm cân bằng bằng đạo hàm thế năng hiệu dụng; xét dấu đạo hàm cấp hai để biết bền; dao động nhỏ thì khai triển quanh điểm cân bằng để lấy tần số góc riêng. Giữ ký hiệu chữ tới bước cuối rồi mới thay số."
+        },
+        {
+          "name": "Bài lý thuyết điện từ",
+          "description": "Bài về tĩnh điện (Gauss, ảnh điện), từ trường (Ampère, Biot-Savart), hoặc cảm ứng (Faraday, dòng Foucault). Thường lồng ghép năng lượng trường và lực.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một thanh dẫn khối lượng m, chiều dài L trượt không ma sát trên hai ray song song nằm ngang, đặt trong từ trường đều B thẳng đứng. Hai ray nối qua điện trở R. Cho thanh vận tốc đầu v0. Tìm quãng đường tổng cộng thanh đi được cho tới khi dừng và tổng nhiệt tỏa trên R.",
+          "approach": "Viết suất điện động cảm ứng theo vận tốc, lập phương trình động lực học có lực hãm từ; nhận ra động năng ban đầu chuyển hết thành nhiệt Joule để tính tổng nhiệt mà không cần giải chi tiết. Với bài đối xứng, dùng định lí Gauss/Ampère để rút gọn tích phân."
+        },
+        {
+          "name": "Bài thực nghiệm đo và phân tích sai số",
+          "description": "Đo một đại lượng vật lí bằng thiết bị được cấp, thiết kế phép đo, lập bảng số liệu, tuyến tính hoá quan hệ để vẽ đồ thị, tìm hệ số góc và ước lượng sai số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Dùng một con lắc lò xo và thước, hãy xác định độ cứng k của lò xo và khối lượng hiệu dụng của lò xo bằng cách đo chu kì dao động với nhiều gia trọng khác nhau; trình bày cách tuyến tính hoá và ước lượng sai số của k.",
+          "approach": "Tuyến tính hoá T^2 = 4π²(m + m0)/k để đồ thị T^2 theo m là đường thẳng; hệ số góc cho k, giao trục cho khối lượng hiệu dụng. Đo lặp lại, ghi độ chia nhỏ nhất làm sai số dụng cụ, dùng phương pháp bình phương tối thiểu hoặc độ dốc lớn nhất/nhỏ nhất để ước lượng sai số hệ số góc. Luôn kèm đơn vị và số chữ số ý nghĩa hợp lí."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG có bảng công thức tổng hợp kiểu data booklet; thí sinh phải thuộc mọi công thức trong phạm vi syllabus.",
+        "Các HẰNG SỐ vật lí và dữ kiện riêng cần cho từng bài được in ngay trong đề (ví dụ hằng số hấp dẫn, hằng số Planck, khối lượng hạt...).",
+        "Được dùng máy tính bỏ túi không lập trình (không đồ thị, không hệ đại số máy tính); thước kẻ, bút chì cho vẽ đồ thị thực nghiệm."
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.dong-luc-hoc.dinh-luat-ii-newton",
+        "physics.thpt.dong-luc-hoc.dinh-luat-van-vat-hap-dan",
+        "physics.thpt.cong-nang-luong.dinh-li-bien-thien-dong-nang",
+        "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong",
+        "physics.thpt.dong-luong.va-cham-dan-hoi-truc-dien",
+        "physics.thpt.chuyen-dong-quay.phuong-trinh-dong-luc-hoc-vat-ran-quay",
+        "physics.thpt.chuyen-dong-quay.bao-toan-momen-dong-luong",
+        "physics.thpt.chuyen-dong-quay.dinh-li-truc-song-song",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.dong-luc-hoc.van-toc-vu-tru-cap-ii",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-chu-ki",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-don-chu-ki",
+        "physics.thpt.chat-khi.phuong-trinh-clapeyron-mendeleev",
+        "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-i-nhiet-dong-luc-hoc",
+        "physics.thpt.nhiet-dong-luc-hoc.hieu-suat-chu-trinh-carnot",
+        "physics.thpt.nhiet-dong-luc-hoc.entropy",
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.tinh-dien-gauss.dinh-luat-gauss-tich-phan",
+        "physics.thpt.tu-truong.luc-lorentz",
+        "physics.dai-hoc.tu-truong.dinh-luat-ampere-luu-so",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.song-anh-sang.khoang-van",
+        "physics.thpt.song-anh-sang.dinh-luat-khuc-xa",
+        "physics.thpt.tuong-doi-hep.he-so-lorentz",
+        "physics.thpt.tuong-doi-hep.he-thuc-nang-luong-dong-luong",
+        "physics.thpt.luong-tu-anh-sang.nang-luong-photon",
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien",
+        "physics.thpt.luong-tu-anh-sang.muc-nang-luong-hidro"
+      ],
+      "scoring": {
+        "description": "Tổng 50 điểm: Lý thuyết 30 (thường 3 bài mỗi bài 10), Thực nghiệm 20. Mỗi bài có barem chi tiết chia điểm tới từng ý nhỏ theo hướng dẫn chấm do ban ra đề soạn; chấm theo điểm thành phần nên làm được ý nào ăn điểm ý đó. Kết quả số đúng nhưng thiếu lập luận/đơn vị vẫn bị trừ; ngược lại phương pháp đúng mà sai số học nhỏ chỉ mất phần nhỏ. Ở vòng thực nghiệm, điểm dồn nhiều vào thiết kế phép đo, xử lý số liệu và ĐÁNH GIÁ SAI SỐ, không chỉ con số cuối.",
+        "scale": "0-50 (Lý thuyết 30 + Thực nghiệm 20)",
+        "raw_to_scaled": "Không quy đổi thang khác. Ngưỡng huy chương đặt theo phân vị (làm tròn lên): Vàng cho ~8% thí sinh điểm cao nhất, Vàng hoặc Bạc cho ~25%, Vàng/Bạc/Đồng cho ~50%; huy chương hoặc Bằng khen cho ~67%. Ngoài ra có giải đặc biệt cho điểm tuyệt đối cao nhất, điểm lý thuyết và điểm thực nghiệm cao nhất.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Đọc lướt cả ba bài lý thuyết trong 10 phút đầu, bắt đầu từ bài/ý bạn tự tin nhất; các ý đầu (a, b) thường dễ và gánh nhiều điểm nhất trên toàn thí sinh.",
+        "Giữ nguyên ký hiệu chữ tới bước cuối rồi mới thay số; điều này giúp giám khảo theo dõi lập luận và giúp bạn kiểm tra thứ nguyên.",
+        "Luôn kiểm tra thứ nguyên và giới hạn đặc biệt (khi khối lượng ->0, khi góc nhỏ, khi vận tốc nhỏ so với c) để bắt lỗi sớm.",
+        "Ở vòng thực nghiệm: dành 20-30 phút đầu khảo sát thiết bị và dải đo, thiết kế bảng số liệu; tuyến tính hoá quan hệ để rút tham số từ hệ số góc thay vì tính điểm rời rạc.",
+        "Ghi mọi số liệu thô (kể cả lần đo hỏng) và ước lượng sai số cho từng đại lượng; vẽ đồ thị đủ lớn, có thanh sai số, dùng bình phương tối thiểu hoặc độ dốc biên để tính sai số hệ số góc.",
+        "Trình bày sạch: đóng khung kết quả, kèm đơn vị và số chữ số ý nghĩa hợp lí; nếu không giải trọn một ý, viết rõ giả thiết/kết quả trung gian để lấy điểm thành phần và dùng cho ý sau (được phép dùng kết quả câu trước dù chưa chứng minh).",
+        "Phân bổ 300 phút mỗi vòng theo trọng số điểm, đặt mốc cứng để không sa lầy một ý khó mà bỏ trống các ý dễ ở bài khác."
+      ],
+      "common_traps": [
+        "Nhầm hệ quy chiếu: quên lực quán tính (li tâm, Coriolis) khi làm trong hệ quay, hoặc dùng công thức hệ khối tâm sai chỗ.",
+        "Ở va chạm/quá trình phức tạp, áp dụng bảo toàn cơ năng cho va chạm mềm (không đàn hồi) - chỉ động lượng mới bảo toàn.",
+        "Khai triển gần đúng sai bậc: giữ thiếu số hạng khi biên độ/nhiễu loạn nhỏ khiến tần số dao động nhỏ ra sai.",
+        "Thực nghiệm: báo cáo kết quả không kèm sai số, làm tròn quá sớm, hoặc lấy quá nhiều chữ số ý nghĩa so với độ chính xác dụng cụ.",
+        "Quên đơn vị hoặc trộn hệ đơn vị (dùng cm lẫn m), khiến hệ số góc và kết quả sai bậc 10.",
+        "Bỏ qua điều kiện áp dụng định lí Gauss/Ampère (chỉ dùng được khi có đối xứng phù hợp).",
+        "Dùng khái niệm ngoài syllabus khi đề đã cho sẵn cách tiếp cận đơn giản hơn, làm mất thời gian và dễ sai."
+      ],
+      "tags": [
+        "olympiad",
+        "vat-li",
+        "ipho",
+        "olympic-quoc-te"
+      ],
+      "sources": [
+        "ipho-new.org - Statutes of the IPhO (tu chỉnh 2022-2023): Lý thuyết 3 bài 5 giờ tổng 30 điểm, Thực nghiệm 1-2 bài 5 giờ tổng 20 điểm",
+        "ipho-new.org - Statutes: ngưỡng huy chương Vàng 8%, Vàng+Bạc 25%, Vàng+Bạc+Đồng 50%, huy chương hoặc Bằng khen 67% (làm tròn lên)",
+        "ipho-new.org - IPhO Syllabus (bản hiện hành): quy định phạm vi chủ đề được phép ra đề; chủ đề ngoài syllabus phải được cung cấp đủ dữ kiện trong đề"
+      ]
+    },
+    {
+      "id": "exam.icho",
+      "name": "IChO (International Chemistry Olympiad)",
+      "provider": "International Chemistry Olympiad",
+      "subject": "chemistry",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "Olympic Hoá học Quốc tế (IChO) là kỳ thi hoá học phổ thông danh giá nhất, tổ chức thường niên từ 1968, mỗi nước cử tối đa 4 thí sinh chưa vào đại học và dưới 20 tuổi. Kỳ thi gồm HAI VÒNG vào hai ngày khác nhau: vòng THỰC HÀNH (thí nghiệm 5 giờ) và vòng LÝ THUYẾT (viết 5 giờ). Điểm được chuẩn hoá về tối đa 100, trong đó lý thuyết chiếm 60% và thực hành 40%. Phạm vi kiến thức quy định trong syllabus IChO chia ba nhóm: Nhóm 1 (kiến thức nền, mặc nhiên biết), Nhóm 2 (kiến thức trung cấp, thuộc chương trình phổ thông nâng cao) và Nhóm 3 (kiến thức nâng cao chỉ được ra đề nếu đã xuất hiện trong bộ 'Bài chuẩn bị' - Preparatory Problems - công bố trước kỳ thi). Huy chương: Vàng ~top 12%, Bạc ~22% tiếp theo, Đồng ~32% tiếp theo (tỉ lệ ~1:2:3, khoảng 2/3 thí sinh có huy chương). IChO không quy đổi tín chỉ nhưng là thành tích tuyển thẳng và học bổng hàng đầu.",
+      "sections": [
+        {
+          "name": "Vòng Lý thuyết",
+          "question_count": "8-9 bài lớn",
+          "duration_minutes": 300,
+          "weight_percent": 60,
+          "calculator": "cho-phep",
+          "note": "Khoảng 8-9 bài lớn nhiều ý, bao trùm hoá lí, vô cơ, hữu cơ, phân tích và hoá sinh. Được dùng máy tính không lập trình. Đề cấp bảng tuần hoàn và các hằng số."
+        },
+        {
+          "name": "Vòng Thực hành",
+          "question_count": "2-3 bài thí nghiệm",
+          "duration_minutes": 300,
+          "weight_percent": 40,
+          "calculator": "cho-phep",
+          "note": "Thường 2-3 bài: chuẩn độ/phân tích định lượng, tổng hợp hữu cơ, và phân tích định tính hoặc đo lí hoá. Chấm cả kết quả số lẫn kỹ năng thao tác và an toàn phòng thí nghiệm."
+        }
+      ],
+      "topic_weights": {
+        "Hoá lí (nhiệt động, động học, cân bằng, điện hoá, lượng tử)": 32,
+        "Hoá hữu cơ (cơ chế, lập thể, tổng hợp)": 26,
+        "Hoá vô cơ (chu kỳ, phức chất, tinh thể)": 22,
+        "Hoá phân tích (chuẩn độ, cân bằng dung dịch, phổ)": 12,
+        "Hoá sinh và hoá polymer": 8
+      },
+      "question_types": [
+        {
+          "name": "Bài hoá lí định lượng (nhiệt động - động học - cân bằng)",
+          "description": "Bài nhiều ý về nhiệt động (ΔH, ΔS, ΔG, hằng số cân bằng), động học (bậc phản ứng, Arrhenius, cơ chế) hoặc điện hoá (Nernst, pin). Đòi hỏi lập biểu thức và tính toán chặt chẽ theo đơn vị.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho phản ứng pha khí A ⇌ 2B có ΔH° = +58 kJ/mol và ΔS° = +176 J/(mol·K). Tính hằng số cân bằng Kp ở 298 K và ở 500 K, và cho biết chiều dịch chuyển cân bằng khi tăng nhiệt độ; giải thích theo nguyên lí Le Chatelier.",
+          "approach": "Tính ΔG° = ΔH° − TΔS° rồi Kp = exp(−ΔG°/RT); hoặc dùng phương trình Van't Hoff để so K ở hai nhiệt độ. Chú ý đơn vị (J vs kJ) và trạng thái chuẩn. Kết luận định tính bằng dấu ΔH° (thu nhiệt thì tăng T làm K tăng), nhất quán với tính toán."
+        },
+        {
+          "name": "Bài hoá hữu cơ: cơ chế, lập thể và tổng hợp",
+          "description": "Suy luận sản phẩm qua nhiều bước, xác định cấu hình lập thể (R/S, E/Z), vẽ cơ chế mũi tên electron, hoặc thiết kế/nhận biết chuỗi tổng hợp. Thường kèm dữ kiện phổ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hợp chất C5H10O quang hoạt, không phản ứng với thuốc thử Tollens nhưng cho phản ứng iodoform dương tính. Xác định công thức cấu tạo phù hợp, chỉ rõ tâm bất đối và gọi tên cấu hình R/S.",
+          "approach": "Suy từ độ bất bão hoà (ở đây 1, ứng với 1 nhóm C=O). Tollens âm loại aldehyde, iodoform dương gợi ý nhóm metyl ketone CH3-CO-. Ghép lại thành pentan-2-on... nhưng cần quang hoạt nên phải có tâm bất đối: dựng 3-metylbutan-2-on không có tâm bất đối, vậy xét cấu trúc có C bất đối kề nhóm CH3CO. Vẽ đủ đồng phân, đối chiếu mọi dữ kiện, rồi gán R/S theo quy tắc ưu tiên."
+        },
+        {
+          "name": "Bài thực hành chuẩn độ / phân tích định lượng",
+          "description": "Pha chế, chuẩn độ (acid-base, oxi hoá khử, tạo phức, kết tủa) hoặc phân tích định lượng, ghi thể tích, lập tính toán nồng độ và đánh giá sai số. Điểm phụ thuộc độ đúng so với giá trị chuẩn và kỹ năng thao tác.",
+          "example_prompt": "Đề mô phỏng tự soạn: Chuẩn độ 25,00 mL dung dịch acid oxalic chưa biết nồng độ bằng NaOH 0,1000 M, dùng phenolphtalein. Từ ba lần chuẩn độ ghi được thể tích trung bình 21,45 mL, hãy tính nồng độ acid oxalic và bàn về nguồn sai số chính.",
+          "approach": "Viết phương trình chuẩn độ (acid oxalic hai nấc phản ứng 1:2 với NaOH), từ số mol NaOH suy số mol và nồng độ acid. Lấy trung bình các lần đo đồng nhất, loại giá trị lệch xa; bàn sai số do đọc buret, điểm cuối chỉ thị, và bọt khí. Trình bày đủ chữ số ý nghĩa theo độ chia buret."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Đề cấp BẢNG TUẦN HOÀN các nguyên tố và bảng các HẰNG SỐ cơ bản (R, F, NA, h, c, hằng số Faraday...).",
+        "Một số dữ kiện nhiệt động (ΔHf°, S°, thế điện cực chuẩn E°, hằng số cân bằng Ka/Ksp...) được cho ngay trong từng bài khi cần.",
+        "KHÔNG có bảng tổng hợp mọi công thức; các phương trình hoá lí (Nernst, Arrhenius, Van't Hoff...) phải thuộc. Được dùng máy tính không lập trình."
+      ],
+      "formulas_must_memorize": [
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.dinh-luat-hess",
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.nhiet-tao-thanh-chuan",
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.nang-luong-gibbs",
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.delta-g0-va-hang-so-can-bang",
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.gibbs-helmholtz",
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.dang-ap-vant-hoff-tich-phan",
+        "chemistry.dai-hoc.nhiet-dong-hoa-hoc.entropy-boltzmann",
+        "chemistry.dai-hoc.dong-hoa-hoc.phuong-trinh-toc-do",
+        "chemistry.dai-hoc.dong-hoa-hoc.dong-hoc-bac-1",
+        "chemistry.dai-hoc.dong-hoa-hoc.ban-huy-bac-1",
+        "chemistry.dai-hoc.dong-hoa-hoc.arrhenius-dang-mu",
+        "chemistry.dai-hoc.dong-hoa-hoc.nguyen-li-nong-do-on-dinh",
+        "chemistry.dai-hoc.dong-hoa-hoc.michaelis-menten",
+        "chemistry.thpt.can-bang.hang-so-can-bang-kc",
+        "chemistry.thpt.can-bang.quan-he-kp-kc",
+        "chemistry.thpt.can-bang.nguyen-li-le-chatelier",
+        "chemistry.dai-hoc.can-bang-hoa-hoc.to-hop-hang-so-can-bang",
+        "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+        "chemistry.thpt.dien-li.ph-cua-acid-yeu",
+        "chemistry.thpt.dien-li.ph-dung-dich-dem",
+        "chemistry.thpt.dien-li.do-tan-tu-tich-so-tan",
+        "chemistry.thpt.dien-li.quan-he-ka-kb-kw",
+        "chemistry.dai-hoc.dien-hoa-hoc.phuong-trinh-nernst-25do",
+        "chemistry.dai-hoc.dien-hoa-hoc.delta-g-va-suc-dien-dong",
+        "chemistry.dai-hoc.dien-hoa-hoc.dinh-luat-faraday",
+        "chemistry.dai-hoc.hoa-luong-tu.hat-trong-hop-1d-muc-nang-luong",
+        "chemistry.dai-hoc.hoa-luong-tu.quy-tac-huckel-4n2",
+        "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong"
+      ],
+      "scoring": {
+        "description": "Điểm mỗi vòng chấm theo barem chi tiết tới từng ý; sau đó chuẩn hoá để lý thuyết đóng góp 60% và thực hành 40% vào tổng 100 điểm. Bài lý thuyết chấm điểm thành phần nên tính đúng từng bước vẫn ăn điểm dù kết quả cuối lệch; bài thực hành chấm cả độ chính xác của kết quả định lượng (so với giá trị chuẩn theo thang bậc), kỹ năng thao tác và tuân thủ an toàn. Số đúng nhưng thiếu đơn vị hoặc sai chữ số ý nghĩa có thể bị trừ.",
+        "scale": "0-100 (Lý thuyết 60% + Thực hành 40%)",
+        "raw_to_scaled": "Không quy đổi thang khác. Ngưỡng huy chương đặt theo phân vị điểm tổng: Vàng ~top 12%, Bạc ~22% tiếp theo (tới ~top 34%), Đồng ~32% tiếp theo (tới ~top 66%), tỉ lệ Vàng:Bạc:Đồng xấp xỉ 1:2:3; có thêm Bằng khen (Honourable Mention). Ngưỡng cụ thể do hội đồng giám khảo quốc tế bỏ phiếu mỗi năm dựa trên phổ điểm.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Tận dụng bộ 'Bài chuẩn bị' (Preparatory Problems) công bố trước kỳ: chủ đề Nhóm 3 chỉ được ra đề nếu đã có trong đó, nên luyện kỹ chính là cách khoanh vùng đề thật.",
+        "Lý thuyết: quét toàn đề, làm trước các ý tính toán ngắn ăn điểm nhanh; các bài dài nhiều ý thì làm tuần tự vì ý sau thường dùng kết quả ý trước.",
+        "Luôn viết biểu thức chữ trước khi thay số, kèm đơn vị ở mọi bước; kiểm tra thứ nguyên và bậc độ lớn của kết quả.",
+        "Hoá hữu cơ: vẽ rõ cơ chế mũi tên electron và cấu hình lập thể; khi suy cấu trúc từ phổ, đối chiếu ĐỒNG THỜI mọi dữ kiện (độ bất bão hoà, IR, NMR) chứ không kết luận vội từ một tín hiệu.",
+        "Thực hành: 10-15 phút đầu đọc kỹ quy trình và bố trí dụng cụ; chuẩn độ lặp tối thiểu ba lần đồng nhất, ghi ngay số liệu thô, giữ mẫu tổng hợp sạch để tối ưu khối lượng và độ tinh khiết.",
+        "Tuân thủ an toàn tuyệt đối (kính, găng, tủ hút) - vi phạm an toàn có thể bị trừ điểm hoặc dừng bài.",
+        "Quản lý thời gian 300 phút mỗi vòng theo trọng số điểm; đóng khung đáp số cuối để giám khảo dễ chấm."
+      ],
+      "common_traps": [
+        "Lẫn đơn vị năng lượng (J và kJ) hoặc quên đổi nhiệt độ ra Kelvin trong công thức nhiệt động/Van't Hoff.",
+        "Áp dụng gần đúng tính pH khi điều kiện gần đúng không thoả (acid không quá yếu hoặc nồng độ quá loãng), dẫn tới sai đáng kể.",
+        "Nhầm dấu trong phương trình Nernst hoặc nhầm số electron trao đổi n; nhầm anode/cathode khi tính sức điện động pin.",
+        "Hoá hữu cơ: bỏ sót đồng phân lập thể, gán nhầm R/S do xếp sai thứ tự ưu tiên, hoặc quên tính quang hoạt khi có tâm bất đối.",
+        "Cân bằng phương trình oxi hoá khử phức tạp sai hệ số, kéo theo toàn bộ tính toán định lượng sai.",
+        "Thực hành: đọc buret sai vạch, chuẩn độ quá điểm cuối, hoặc báo cáo kết quả không kèm sai số/đơn vị.",
+        "Dùng dữ kiện nhiệt động ở điều kiện chuẩn cho quá trình không chuẩn mà không hiệu chỉnh."
+      ],
+      "tags": [
+        "olympiad",
+        "hoa-hoc",
+        "icho",
+        "olympic-quoc-te"
+      ],
+      "sources": [
+        "icho.sk / Wikipedia - International Chemistry Olympiad: thực hành 5 giờ và lý thuyết 5 giờ vào các ngày riêng; điểm chuẩn hoá tối đa 100 với lý thuyết 60% và thực hành 40%",
+        "Wikipedia / tài liệu IChO - ngưỡng huy chương: Vàng ~top 12%, Bạc ~22% tiếp theo, Đồng ~32% tiếp theo (tỉ lệ ~1:2:3)",
+        "icho.sk - Syllabus: chia ba nhóm mức độ; chủ đề Nhóm 3 chỉ được ra đề nếu xuất hiện trong Preparatory Problems công bố trước kỳ thi"
+      ]
+    },
+    {
+      "id": "exam.ibo",
+      "name": "IBO (International Biology Olympiad)",
+      "provider": "International Biology Olympiad",
+      "subject": "biology",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "Olympic Sinh học Quốc tế (IBO) là kỳ thi sinh học phổ thông đỉnh cao, tổ chức thường niên từ 1990, mỗi nước cử 4 thí sinh chưa vào đại học. Kỳ thi gồm HAI VÒNG vào các ngày khác nhau: vòng LÝ THUYẾT (thường hai bài thi lý thuyết) và vòng THỰC HÀNH (thường 3-4 bài lab), mỗi vòng đóng góp khoảng 50% tổng điểm. Đề lý thuyết gồm hàng trăm câu, chủ yếu dạng nhiều mệnh đề đúng/sai (multiple true-false) và trắc nghiệm, nặng về đọc - phân tích dữ liệu, đồ thị, sơ đồ. Trọng số các mảng kiến thức được IBO quy định: Sinh học tế bào ~20%, Giải phẫu-sinh lí động vật ~25%, Giải phẫu-sinh lí thực vật ~15%, Di truyền và tiến hoá ~20%, Sinh thái ~10%, Tập tính ~5%, Phân loại học ~5%. Huy chương: Vàng ~top 10%, Bạc ~20% tiếp theo, Đồng ~30% tiếp theo (khoảng 60% thí sinh có huy chương). IBO không quy đổi tín chỉ nhưng là thành tích tuyển thẳng và học bổng danh giá.",
+      "sections": [
+        {
+          "name": "Vòng Lý thuyết - Bài thi 1",
+          "question_count": "khoảng 50 câu (nhiều mệnh đề đúng/sai và trắc nghiệm)",
+          "duration_minutes": 180,
+          "weight_percent": 25,
+          "calculator": "cho-phep",
+          "note": "Một trong hai bài thi lý thuyết; nặng đọc hiểu dữ liệu, đồ thị, sơ đồ thí nghiệm. Chủ yếu dạng multiple true-false chấm theo từng mệnh đề."
+        },
+        {
+          "name": "Vòng Lý thuyết - Bài thi 2",
+          "question_count": "khoảng 50 câu (nhiều mệnh đề đúng/sai và trắc nghiệm)",
+          "duration_minutes": 180,
+          "weight_percent": 25,
+          "calculator": "cho-phep",
+          "note": "Bài lý thuyết còn lại, bao trùm phần các mảng chưa ra ở bài 1 để phủ toàn bộ 7 nhóm chủ đề của syllabus."
+        },
+        {
+          "name": "Vòng Thực hành (3-4 bài lab)",
+          "question_count": "3-4 bài thực hành",
+          "duration_minutes": 360,
+          "weight_percent": 50,
+          "calculator": "cho-phep",
+          "note": "Các phòng lab riêng biệt: sinh học phân tử/hoá sinh, giải phẫu-sinh lí động vật, thực vật/tế bào và tin sinh học. Mỗi lab tính giờ độc lập; chấm kỹ năng thao tác, quan sát, đo đạc và phân tích số liệu."
+        }
+      ],
+      "topic_weights": {
+        "Sinh học tế bào (cấu trúc, hoá sinh, enzyme, màng)": 20,
+        "Giải phẫu và sinh lí động vật (gồm người)": 25,
+        "Giải phẫu và sinh lí thực vật": 15,
+        "Di truyền học và tiến hoá": 20,
+        "Sinh thái học": 10,
+        "Tập tính học (ethology)": 5,
+        "Hệ thống học và phân loại (biosystematics)": 5
+      },
+      "question_types": [
+        {
+          "name": "Câu nhiều mệnh đề đúng/sai gắn dữ liệu",
+          "description": "Một đoạn dẫn (kết quả thí nghiệm, đồ thị, bảng, sơ đồ) kèm 4-6 mệnh đề, mỗi mệnh đề phải phán đúng/sai độc lập. Kiểm tra suy luận từ dữ liệu chứ không chỉ nhớ kiến thức.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho đồ thị tốc độ quang hợp của một loài thực vật C3 theo cường độ ánh sáng ở hai nồng độ CO2 khác nhau. Hãy phán đúng/sai cho các mệnh đề: (1) ở cường độ ánh sáng thấp, tốc độ bị giới hạn bởi ánh sáng; (2) tăng CO2 làm dịch điểm bù ánh sáng sang phải; (3) ở vùng bão hoà ánh sáng, CO2 trở thành yếu tố giới hạn.",
+          "approach": "Xử lý từng mệnh đề riêng lẻ; xác định biến độc lập/phụ thuộc và yếu tố giới hạn theo vùng của đồ thị. Với mệnh đề gài, tìm đúng khái niệm (điểm bù, điểm bão hoà) và không suy diễn quá dữ liệu cho. Đánh dấu chắc chắn trước, đoán có cân nhắc ở mệnh đề còn phân vân."
+        },
+        {
+          "name": "Bài di truyền - quần thể định lượng",
+          "description": "Tính tần số alen/kiểu gen (Hardy-Weinberg), lập bản đồ gen từ tần số hoán vị, hoặc phân tích phả hệ và chọn lọc. Cần thao tác số liệu chính xác.",
+          "example_prompt": "Đề mô phỏng tự soạn: Trong một quần thể cân bằng Hardy-Weinberg, bệnh lặn trên nhiễm sắc thể thường biểu hiện ở 1 trên 10 000 người. Tính tần số alen bệnh, tần số người mang gen dị hợp, và xác suất hai người mang gen bất kỳ sinh con mắc bệnh.",
+          "approach": "Từ tần số kiểu hình lặn q^2 = 1/10000 suy q = 0,01, p = 0,99; tần số dị hợp 2pq ≈ 0,0198. Xác suất con mắc bệnh của hai dị hợp là 1/4. Nêu rõ giả thiết Hardy-Weinberg và kiểm tra điều kiện áp dụng trước khi tính."
+        },
+        {
+          "name": "Bài thực hành lab (sinh học phân tử / sinh lí / tế bào)",
+          "description": "Thao tác thật: pipet, điện di, chuẩn độ enzyme, giải phẫu, làm và quan sát tiêu bản hiển vi, hoặc phân tích tin sinh học. Chấm cả sản phẩm, số liệu đo và cách trình bày.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho dịch chiết enzyme và cơ chất ở các nồng độ khác nhau, đo tốc độ đầu của phản ứng. Hãy lập bảng, vẽ đồ thị Lineweaver-Burk và xác định Km cùng Vmax; nhận xét về loại ức chế nếu thêm chất X.",
+          "approach": "Đo tốc độ đầu lặp lại, tuyến tính hoá bằng 1/v theo 1/[S] để đồ thị Lineweaver-Burk là đường thẳng; giao trục cho −1/Km và 1/Vmax. So sánh đồ thị khi có/không chất X: cùng Vmax đổi Km là ức chế cạnh tranh, đổi Vmax là không cạnh tranh. Ghi sai số và đơn vị đầy đủ."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bảng công thức; các công thức định lượng (Hardy-Weinberg, Michaelis-Menten, chỉ số đa dạng, thống kê...) phải thuộc.",
+        "Một số hằng số, bảng tra hoặc dữ kiện chuyên biệt (mã di truyền, thang đo...) được in kèm ngay trong bài khi cần.",
+        "Được dùng máy tính không lập trình để xử lý số liệu ở cả vòng lý thuyết và thực hành."
+      ],
+      "formulas_must_memorize": [
+        "biology.thpt.di-truyen-quan-the.dinh-luat-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-kieu-hinh-lan",
+        "biology.thpt.di-truyen-quan-the.hardy-weinberg-nhieu-alen",
+        "biology.dai-hoc.di-truyen-quan-the.kiem-dinh-hardy-weinberg",
+        "biology.dai-hoc.di-truyen-quan-the.he-so-noi-phoi",
+        "biology.dai-hoc.di-truyen-quan-the.do-thich-nghi-tuong-doi",
+        "biology.thpt.quy-luat-di-truyen.tan-so-hoan-vi-gen",
+        "biology.thpt.quy-luat-di-truyen.khoang-cach-ban-do-di-truyen",
+        "biology.thpt.quy-luat-di-truyen.so-loai-giao-tu-n-cap-di-hop",
+        "biology.dai-hoc.dong-hoc-enzyme.phuong-trinh-michaelis-menten",
+        "biology.dai-hoc.dong-hoc-enzyme.y-nghia-km",
+        "biology.dai-hoc.dong-hoc-enzyme.lineweaver-burk",
+        "biology.dai-hoc.dong-hoc-enzyme.hieu-qua-xuc-tac",
+        "biology.thpt.sinh-thai.tang-truong-theo-tiem-nang-sinh-hoc",
+        "biology.thpt.sinh-thai.tang-truong-thuc-te-logistic",
+        "biology.thpt.sinh-thai.do-da-dang-shannon",
+        "biology.thpt.sinh-thai.chi-so-simpson",
+        "biology.thpt.sinh-thai.phuong-phap-bat-tha",
+        "biology.thpt.sinh-thai.hieu-suat-sinh-thai",
+        "biology.dai-hoc.sinh-thai-hoc.lotka-volterra-vat-an-thit",
+        "biology.dai-hoc.thong-ke-sinh-hoc.chi-binh-phuong-doc-lap",
+        "biology.dai-hoc.thong-ke-sinh-hoc.t-test-hai-mau-doc-lap",
+        "biology.dai-hoc.thong-ke-sinh-hoc.trung-binh-va-do-lech-chuan",
+        "biology.thpt.ibo-sinh-li.dinh-luat-kleiber"
+      ],
+      "scoring": {
+        "description": "Vòng lý thuyết và vòng thực hành mỗi vòng đóng góp khoảng 50% tổng điểm sau khi chuẩn hoá. Câu nhiều mệnh đề đúng/sai chấm theo từng mệnh đề: mỗi câu quy về một điểm phần, trả lời đúng nhiều mệnh đề hơn được điểm cao hơn theo thang bậc; không có điểm âm tổng thể trên toàn bài. Bài thực hành chấm cả sản phẩm/kết quả đo, độ chính xác so với đáp án chuẩn, kỹ năng thao tác và cách trình bày số liệu. Điểm mỗi thí sinh được chuẩn hoá theo phổ điểm chung trước khi xếp huy chương.",
+        "scale": "0-100 (Lý thuyết ~50% + Thực hành ~50%)",
+        "raw_to_scaled": "Không quy đổi thang khác. Ngưỡng huy chương đặt theo phân vị điểm tổng: Vàng ~top 10%, Bạc ~20% tiếp theo (tới ~top 30%), Đồng ~30% tiếp theo (tới ~top 60%); khoảng 60% thí sinh nhận huy chương. Ngưỡng cụ thể do ban giám khảo quyết định theo phổ điểm mỗi năm.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Luyện đọc - phân tích dữ liệu là ưu tiên số một: phần lớn điểm IBO đến từ suy luận trên đồ thị, bảng, sơ đồ thí nghiệm chứ không phải học thuộc.",
+        "Với câu nhiều mệnh đề đúng/sai, xử lý từng mệnh đề độc lập; chốt các mệnh đề chắc chắn trước rồi mới cân nhắc mệnh đề gài.",
+        "Quản lý thời gian chặt: hàng trăm câu trong thời lượng hữu hạn, không sa lầy một câu; đánh dấu câu khó để quay lại.",
+        "Thực hành: đọc kỹ toàn quy trình trước khi bắt tay; với thao tác định lượng (pipet, điện di, chuẩn độ enzyme) hãy chuẩn hoá thao tác để số liệu ổn định, ghi ngay số liệu thô.",
+        "Thành thạo công cụ định lượng lõi: Hardy-Weinberg, lập bản đồ gen, động học enzyme (Michaelis-Menten, Lineweaver-Burk), chỉ số đa dạng và kiểm định thống kê (chi bình phương, t-test).",
+        "Rèn kỹ năng hiển vi và giải phẫu: nhận diện mô/cơ quan nhanh, vẽ và chú thích chính xác theo yêu cầu.",
+        "Ôn theo trọng số syllabus: dồn công cho Sinh lí động vật (~25%), Tế bào và Di truyền-tiến hoá (mỗi mảng ~20%) vì chiếm phần lớn điểm lý thuyết."
+      ],
+      "common_traps": [
+        "Suy diễn vượt quá dữ liệu cho: kết luận nhân quả từ đồ thị chỉ thể hiện tương quan, hoặc ngoại suy ngoài vùng số liệu.",
+        "Nhầm điều kiện áp dụng Hardy-Weinberg (quần thể lớn, giao phối ngẫu nhiên, không chọn lọc/đột biến/di nhập) khi tính tần số alen.",
+        "Đọc nhầm loại ức chế enzyme trên đồ thị Lineweaver-Burk (nhầm cạnh tranh với không cạnh tranh do không để ý điểm cắt trục thay đổi).",
+        "Trong câu nhiều mệnh đề, để một mệnh đề khó làm mất bình tĩnh và trả lời sai cả cụm; cần tách bạch từng mệnh đề.",
+        "Thực hành: thao tác pipet/điện di cẩu thả gây số liệu nhiễu, hoặc quên ghi đơn vị và sai số khi báo cáo.",
+        "Nhầm lẫn khái niệm sinh thái định lượng (tăng trưởng mũ vs logistic, sức chứa K, chỉ số Shannon vs Simpson).",
+        "Bỏ qua trọng số chủ đề khi ôn, học lệch một mảng mà yếu Sinh lí động vật - phần chiếm tỉ trọng lớn nhất."
+      ],
+      "tags": [
+        "olympiad",
+        "sinh-hoc",
+        "ibo",
+        "olympic-quoc-te"
+      ],
+      "sources": [
+        "ibo-info.org / tài liệu IBO - cấu trúc: vòng lý thuyết (hai bài thi lý thuyết) và vòng thực hành (3-4 bài lab), mỗi vòng ~50% tổng điểm; nghỉ giữa hai vòng",
+        "IBO Syllabus - trọng số chủ đề lý thuyết: Sinh học tế bào 20%, Giải phẫu-sinh lí động vật 25%, Giải phẫu-sinh lí thực vật 15%, Di truyền và tiến hoá 20%, Sinh thái 10%, Tập tính 5%, Hệ thống học 5%",
+        "Tài liệu IBO - ngưỡng huy chương: Vàng ~top 10%, Bạc ~20% tiếp theo, Đồng ~30% tiếp theo (khoảng 60% thí sinh có huy chương)"
+      ]
+    },
+    {
+      "id": "exam.apho",
+      "name": "APhO (Asian Physics Olympiad)",
+      "provider": "Asian Physics Olympiad",
+      "subject": "physics",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "Olympic Vật lí châu Á (APhO) là kỳ thi vật lí khu vực châu Á - Thái Bình Dương, tổ chức thường niên từ 2000, mỗi nước cử tối đa 8 thí sinh chưa vào đại học. APhO theo đúng khuôn khổ IPhO: gồm HAI VÒNG vào hai ngày khác nhau (cách nhau ít nhất một ngày nghỉ) - vòng LÝ THUYẾT (3 bài, 5 giờ, tối đa 30 điểm) và vòng THỰC NGHIỆM (1-2 bài, 5 giờ, tối đa 20 điểm), tổng 50 điểm. Phạm vi kiến thức DÙNG CHUNG syllabus với IPhO; đề lý thuyết phải liên quan ít nhất bốn lĩnh vực vật lí phổ thông và nổi tiếng dài, khó hơn IPhO, thường được xem như bước tập dượt trước IPhO (APhO diễn ra trước IPhO khoảng hai tháng). Huy chương theo phân vị: Vàng ~12%, Vàng+Bạc ~29%, Vàng+Bạc+Đồng ~51%, huy chương hoặc Bằng khen ~75%. APhO không quy đổi tín chỉ nhưng là căn cứ quan trọng để chọn và rèn đội tuyển quốc gia.",
+      "sections": [
+        {
+          "name": "Vòng Lý thuyết",
+          "question_count": "3",
+          "duration_minutes": 300,
+          "weight_percent": 60,
+          "calculator": "cho-phep",
+          "note": "Ba bài lý thuyết, tổng đúng 30 điểm; bao trùm ít nhất bốn lĩnh vực vật lí. Đề thường rất dài, nhiều ý nối tiếp. Được dùng máy tính không lập trình; hằng số in trong đề."
+        },
+        {
+          "name": "Vòng Thực nghiệm",
+          "question_count": "1-2",
+          "duration_minutes": 300,
+          "weight_percent": 40,
+          "calculator": "cho-phep",
+          "note": "Một hoặc hai bài thực nghiệm, tổng đúng 20 điểm; đo đạc, xử lý số liệu và phân tích sai số trên thiết bị thật. Cách nhau ít nhất một ngày với vòng lý thuyết."
+        }
+      ],
+      "topic_weights": {
+        "Cơ học (chất điểm, vật rắn, dao động, hấp dẫn, chất lưu)": 27,
+        "Nhiệt học và vật lí phân tử": 14,
+        "Điện từ học (tĩnh điện, từ trường, cảm ứng, mạch)": 25,
+        "Dao động và sóng": 12,
+        "Quang học (hình học và sóng)": 8,
+        "Vật lí hiện đại (lượng tử, tương đối hẹp, hạt nhân)": 14
+      },
+      "question_types": [
+        {
+          "name": "Bài lý thuyết cơ học dài nhiều ý",
+          "description": "Bài mô hình hoá một hệ cơ học phức tạp, chia thành chuỗi ý (a, b, c...) tăng dần, thường kết hợp động lực học, bảo toàn và dao động nhỏ. APhO nổi tiếng vì độ dài và số ý lớn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một đĩa tròn đặc bán kính R, khối lượng M lăn không trượt trong lòng một mặt trụ cong bán kính 3R. Tìm chu kì dao động nhỏ của tâm đĩa quanh vị trí thấp nhất.",
+          "approach": "Dùng bảo toàn năng lượng có kể động năng quay (mômen quán tính đĩa và điều kiện lăn không trượt), hoặc phương trình động lực học vật rắn quanh điểm tiếp xúc. Khai triển thế năng quanh điểm cân bằng để lấy hệ số hồi phục và suy tần số dao động nhỏ. Kiểm tra bằng giới hạn quen thuộc."
+        },
+        {
+          "name": "Bài lý thuyết điện từ - dao động - sóng",
+          "description": "Bài về mạch dao động, cảm ứng điện từ, hoặc sóng điện từ; đòi hỏi lập phương trình vi phân đơn giản, phân tích cộng hưởng và năng lượng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một khung dây dẫn hình vuông cạnh a, điện trở R rơi thẳng đứng dưới trọng lực và đi qua biên của một vùng từ trường đều B nằm ngang vuông góc mặt khung. Tìm vận tốc giới hạn của khung khi cạnh dưới đã vào trong vùng từ trường còn cạnh trên chưa vào.",
+          "approach": "Chỉ cạnh cắt đường sức mới sinh suất điện động; viết cân bằng giữa trọng lực và lực từ cản để tìm vận tốc giới hạn v = mgR/(B²a²). Chú ý xác định đúng cạnh nào đang cắt từ thông tùy giai đoạn khung đi qua biên."
+        },
+        {
+          "name": "Bài thực nghiệm đo và tuyến tính hoá",
+          "description": "Thiết kế phép đo trên thiết bị cấp, lập bảng số liệu, tuyến tính hoá quan hệ để lấy tham số từ hệ số góc, ước lượng sai số và vẽ đồ thị đúng chuẩn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Dùng nguồn, điện trở đã biết, vôn kế và một điốt, hãy xác định các tham số của đặc tuyến điốt bằng cách đo dòng theo điện áp; trình bày cách tuyến tính hoá để rút hệ số lí tưởng và ước lượng sai số.",
+          "approach": "Lấy logarit quan hệ dòng-áp của điốt để tuyến tính hoá (ln I theo U là đường thẳng ở vùng thuận), hệ số góc cho tham số cần tìm. Đo nhiều điểm, ghi sai số dụng cụ, dùng độ dốc biên hoặc bình phương tối thiểu để ước lượng sai số hệ số góc; kèm đơn vị và số chữ số ý nghĩa hợp lí."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG có bảng công thức tổng hợp; phải thuộc mọi công thức trong phạm vi syllabus (dùng chung với IPhO).",
+        "Các HẰNG SỐ và dữ kiện riêng của từng bài được in trong đề.",
+        "Được dùng máy tính bỏ túi không lập trình (không đồ thị, không CAS); dụng cụ vẽ đồ thị cho vòng thực nghiệm."
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.dong-luc-hoc.dinh-luat-ii-newton",
+        "physics.thpt.cong-nang-luong.bao-toan-co-nang-trong-truong",
+        "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong",
+        "physics.thpt.dong-luong.va-cham-dan-hoi-truc-dien",
+        "physics.thpt.chuyen-dong-quay.phuong-trinh-dong-luc-hoc-vat-ran-quay",
+        "physics.thpt.chuyen-dong-quay.bao-toan-momen-dong-luong",
+        "physics.thpt.chuyen-dong-quay.momen-quan-tinh-cac-vat-dong-chat",
+        "physics.thpt.dong-luc-hoc.luc-huong-tam",
+        "physics.thpt.dong-luc-hoc.dinh-luat-van-vat-hap-dan",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-chu-ki",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-don-chu-ki",
+        "physics.thpt.dao-dong-dieu-hoa.dao-dong-cuong-buc-cong-huong",
+        "physics.thpt.chat-khi.phuong-trinh-clapeyron-mendeleev",
+        "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-i-nhiet-dong-luc-hoc",
+        "physics.thpt.nhiet-dong-luc-hoc.phuong-trinh-poisson",
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.tinh-dien-gauss.dinh-luat-gauss-tich-phan",
+        "physics.thpt.tu-truong.luc-lorentz",
+        "physics.thpt.tu-truong.cam-ung-tu-ong-day",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.cam-ung-dien-tu.suat-dien-dong-tu-cam",
+        "physics.thpt.song-anh-sang.dinh-luat-khuc-xa",
+        "physics.thpt.song-anh-sang.nhieu-xa-cach-tu",
+        "physics.thpt.tuong-doi-hep.he-so-lorentz",
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien"
+      ],
+      "scoring": {
+        "description": "Tổng 50 điểm: Lý thuyết 30 (3 bài), Thực nghiệm 20. Mỗi bài có barem chi tiết tới từng ý theo hướng dẫn chấm của ban ra đề; chấm điểm thành phần nên làm được ý nào ăn điểm ý đó, và được phép dùng kết quả câu trước cho câu sau dù chưa chứng minh xong. Vòng thực nghiệm dồn điểm vào thiết kế phép đo, xử lý số liệu và đánh giá sai số. Có leader từng nước điều phối thống nhất điểm với ban giám khảo.",
+        "scale": "0-50 (Lý thuyết 30 + Thực nghiệm 20)",
+        "raw_to_scaled": "Không quy đổi thang khác. Ngưỡng huy chương đặt theo phân vị (làm tròn lên): Vàng cho ~12% thí sinh điểm cao nhất, Vàng hoặc Bạc cho ~29%, Vàng/Bạc/Đồng cho ~51%; huy chương hoặc Bằng khen cho ~75%. Có thêm các giải đặc biệt cho điểm cao nhất tuyệt đối, lý thuyết và thực nghiệm.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "APhO nổi tiếng dài: đọc nhanh toàn đề, ưu tiên các ý đầu (a, b) dễ và nhiều điểm; đừng dồn hết thời gian vào một ý cuối khó.",
+        "Giữ ký hiệu chữ tới bước cuối, kiểm tra thứ nguyên và các giới hạn đặc biệt để bắt lỗi; nhiều ý APhO nối tiếp nên một sai số đầu kéo theo cả chuỗi.",
+        "Tận dụng quy tắc được dùng kết quả câu trước: nếu bí một ý, giả sử kết quả hợp lí rồi làm tiếp ý sau để không mất điểm dây chuyền.",
+        "Vòng thực nghiệm: khảo sát thiết bị và dải đo trước, tuyến tính hoá quan hệ để rút tham số từ hệ số góc; ghi số liệu thô và sai số ngay khi đo.",
+        "Vẽ đồ thị đủ lớn, có thanh sai số, dùng bình phương tối thiểu hoặc độ dốc biên để tính sai số; luôn kèm đơn vị và số chữ số ý nghĩa hợp lí.",
+        "Vì APhO khó hơn IPhO, hãy luyện các bài cơ học vật rắn và điện từ mức nâng cao, đồng thời thành thạo khai triển gần đúng (dao động nhỏ, nhiễu loạn).",
+        "Đóng khung kết quả cuối và trình bày sạch để giám khảo dễ chấm; phân bổ 300 phút mỗi vòng theo trọng số điểm với mốc thời gian cứng."
+      ],
+      "common_traps": [
+        "Sa lầy vào một ý khó của bài dài mà bỏ trống nhiều ý dễ ở các bài khác - lỗi quản lý thời gian phổ biến nhất ở APhO.",
+        "Quên lực quán tính trong hệ quy chiếu phi quán tính, hoặc bỏ sót động năng quay khi vật vừa tịnh tiến vừa quay (điều kiện lăn không trượt).",
+        "Xác định sai cạnh khung dây đang cắt từ thông ở bài cảm ứng khi hệ đi qua biên vùng từ trường.",
+        "Khai triển gần đúng giữ thiếu bậc khiến tần số dao động nhỏ hoặc hiệu chỉnh nhiễu loạn sai.",
+        "Thực nghiệm: báo cáo kết quả không kèm sai số, làm tròn quá sớm, hoặc trộn lẫn đơn vị.",
+        "Áp dụng bảo toàn cơ năng cho quá trình có ma sát/va chạm mềm (chỉ động lượng bảo toàn).",
+        "Bỏ qua điều kiện đối xứng khi dùng định lí Gauss/Ampère, dẫn tới tích phân sai."
+      ],
+      "tags": [
+        "olympiad",
+        "vat-li",
+        "apho",
+        "olympic-chau-a"
+      ],
+      "sources": [
+        "apho2026.kr - Statutes of the APhO: Lý thuyết 3 bài 5 giờ tổng 30 điểm, Thực nghiệm 1-2 bài 5 giờ tổng 20 điểm; hai vòng vào ngày riêng, nghỉ giữa",
+        "apho2026.kr - Statutes: ngưỡng huy chương Vàng 12%, Vàng+Bạc 29%, Vàng+Bạc+Đồng 51%, huy chương hoặc Bằng khen 75% (làm tròn lên)",
+        "en.wikipedia.org / apho2019.asi.edu.au - Asian Physics Olympiad: dùng chung syllabus với IPhO; đề liên quan ít nhất bốn lĩnh vực; APhO diễn ra trước IPhO khoảng hai tháng, mỗi đoàn tối đa 8 thí sinh"
+      ]
+    }
+  ]
+}

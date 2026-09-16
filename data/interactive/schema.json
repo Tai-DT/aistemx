@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AISTEM Interactive Formula Config",
+  "description": "Cấu hình tham số hoá tương tác và máy tính thời gian thực cho công thức AISTEM.",
+  "type": "object",
+  "required": [
+    "formula_id",
+    "name_vi",
+    "subject",
+    "interactive_type",
+    "is_computable",
+    "output",
+    "inputs"
+  ],
+  "properties": {
+    "formula_id": {
+      "type": "string"
+    },
+    "name_vi": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "interactive_type": {
+      "type": "string"
+    },
+    "is_computable": {
+      "type": "boolean"
+    },
+    "output": {
+      "type": "object"
+    },
+    "expression_js": {
+      "type": "string"
+    },
+    "expression_py": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array"
+    }
+  }
+}

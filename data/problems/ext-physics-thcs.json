@@ -1,0 +1,3639 @@
+{
+ "meta": {
+  "file": "ext-physics-thcs.json",
+  "subject": "physics",
+  "title": "Bài tập bổ sung Vật lí THCS (phủ các công thức chưa có bài tập): đo lường và khối lượng riêng, chuyển động, lực, áp suất, lực đẩy Ác-si-mét, công - công suất, máy cơ đơn giản, cơ năng, năng lượng, nhiệt học, điện học, truyền tải điện năng, điện từ, quang học và âm học",
+  "levels": [
+   "thcs"
+  ],
+  "count": 78
+ },
+ "problems": [
+  {
+   "id": "prob.physics.ext-physics-thcs.0001",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "type": "dien-so",
+   "statement_vi": "Một khối nhôm có khối lượng 1350 g, khối lượng riêng của nhôm là 2700 kg/m³. Tính thể tích của khối nhôm (đơn vị cm³).",
+   "statement_en": "An aluminium block has a mass of 1350 g; the density of aluminium is 2700 kg/m³. Find the volume of the block (in cm³).",
+   "answer": "V = 500 cm³",
+   "answer_numeric": 500,
+   "answer_unit": "cm^3",
+   "tolerance": 1,
+   "solution_steps": [
+    {
+     "explain": "Đổi khối lượng sang kg để đồng bộ đơn vị với khối lượng riêng (kg/m³).",
+     "latex": "m = 1350\\ \\text{g} = 1{,}35\\ \\text{kg}"
+    },
+    {
+     "explain": "Thể tích bằng khối lượng chia cho khối lượng riêng.",
+     "latex": "V = \\dfrac{m}{D} = \\dfrac{1{,}35}{2700} = 0{,}0005\\ \\text{m}^{3}"
+    },
+    {
+     "explain": "Đổi ra cm³: nhân với 1 000 000 vì 1 m³ = 10^6 cm³.",
+     "latex": "V = 0{,}0005 \\times 10^{6} = 500\\ \\text{cm}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.do-luong-khoi-luong-rieng.the-tich-theo-khoi-luong-rieng"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính thể tích từ khối lượng riêng",
+    "đổi đơn vị thể tích"
+   ],
+   "tags": [
+    "khoi-luong-rieng",
+    "the-tich"
+   ],
+   "hints": [
+    "Đổi 1350 g thành kg trước.",
+    "1 m³ = 1 000 000 cm³."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0002",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "type": "tu-luan",
+   "statement_vi": "Một vật có khối lượng 2 kg và thể tích 0,0008 m³. Lấy g = 9,8 m/s². Tính trọng lượng và trọng lượng riêng của vật.",
+   "statement_en": "An object has mass 2 kg and volume 0.0008 m³. Take g = 9.8 m/s². Find its weight and its weight density.",
+   "answer": "P = 19,6 N; d = 24 500 N/m³",
+   "solution_steps": [
+    {
+     "explain": "Trọng lượng bằng khối lượng nhân gia tốc rơi tự do.",
+     "latex": "P = mg = 2 \\times 9{,}8 = 19{,}6\\ \\text{N}"
+    },
+    {
+     "explain": "Trọng lượng riêng bằng trọng lượng chia cho thể tích.",
+     "latex": "d = \\dfrac{P}{V} = \\dfrac{19{,}6}{0{,}0008} = 24500\\ \\text{N/m}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-gia-toc",
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-rieng"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính trọng lượng theo g",
+    "tính trọng lượng riêng"
+   ],
+   "tags": [
+    "trong-luong",
+    "trong-luong-rieng"
+   ],
+   "hints": [
+    "Dùng P = mg với g = 9,8.",
+    "Trọng lượng riêng d = P/V."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0003",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "type": "tu-luan",
+   "statement_vi": "Một bình chia độ đang chứa 150 cm³ nước. Thả chìm một hòn đá khối lượng 175,5 g vào bình thì mực nước dâng lên mức 215 cm³. Tính thể tích và khối lượng riêng của hòn đá (theo g/cm³).",
+   "statement_en": "A measuring cylinder holds 150 cm³ of water. A stone of mass 175.5 g is fully submerged and the water level rises to 215 cm³. Find the stone's volume and density (in g/cm³).",
+   "answer": "V = 65 cm³; D = 2,7 g/cm³",
+   "solution_steps": [
+    {
+     "explain": "Thể tích vật rắn bằng phần thể tích nước bị dâng lên.",
+     "latex": "V_{\\text{vat}} = V_{2} - V_{1} = 215 - 150 = 65\\ \\text{cm}^{3}"
+    },
+    {
+     "explain": "Khối lượng riêng bằng khối lượng chia cho thể tích vừa tìm.",
+     "latex": "D = \\dfrac{m}{V} = \\dfrac{175{,}5}{65} = 2{,}7\\ \\text{g/cm}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.do-luong-khoi-luong-rieng.the-tich-vat-ran-binh-chia-do",
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 5,
+   "skills": [
+    "đo thể tích vật rắn bằng bình chia độ",
+    "tính khối lượng riêng"
+   ],
+   "tags": [
+    "binh-chia-do",
+    "khoi-luong-rieng"
+   ],
+   "hints": [
+    "Thể tích đá = mức nước sau − mức nước trước.",
+    "D = m/V."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0004",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "type": "tu-luan",
+   "statement_vi": "Trộn 2 lít nước (khối lượng riêng 1000 kg/m³) với 3 lít dầu (khối lượng riêng 800 kg/m³). Coi thể tích hỗn hợp bằng tổng thể tích. Tính khối lượng riêng của hỗn hợp.",
+   "statement_en": "Mix 2 L of water (density 1000 kg/m³) with 3 L of oil (density 800 kg/m³). Assume the mixture volume equals the sum of the volumes. Find the density of the mixture.",
+   "answer": "D = 880 kg/m³",
+   "solution_steps": [
+    {
+     "explain": "Khối lượng riêng hỗn hợp bằng tổng khối lượng chia tổng thể tích; thay m = D·V cho từng chất.",
+     "latex": "D = \\dfrac{D_{1}V_{1} + D_{2}V_{2}}{V_{1} + V_{2}}"
+    },
+    {
+     "explain": "Thay số (dùng lít, đơn vị tự triệt tiêu):",
+     "latex": "D = \\dfrac{1000 \\times 2 + 800 \\times 3}{2 + 3} = \\dfrac{4400}{5} = 880\\ \\text{kg/m}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng-hon-hop"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "khối lượng riêng hỗn hợp",
+    "trung bình có trọng số theo thể tích"
+   ],
+   "tags": [
+    "khoi-luong-rieng",
+    "hon-hop"
+   ],
+   "hints": [
+    "Tính khối lượng mỗi chất bằng D·V.",
+    "Chia tổng khối lượng cho tổng thể tích."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0005",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động",
+   "type": "dien-so",
+   "statement_vi": "Một ô tô chuyển động thẳng đều với tốc độ 15 m/s trong thời gian 20 phút. Tính quãng đường ô tô đi được (theo km).",
+   "statement_en": "A car moves in a straight line at a constant speed of 15 m/s for 20 minutes. Find the distance travelled (in km).",
+   "answer": "s = 18 km",
+   "answer_numeric": 18,
+   "answer_unit": "km",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Đổi thời gian sang giây để khớp đơn vị của tốc độ (m/s).",
+     "latex": "t = 20\\ \\text{phut} = 20 \\times 60 = 1200\\ \\text{s}"
+    },
+    {
+     "explain": "Quãng đường bằng tốc độ nhân thời gian.",
+     "latex": "s = v \\cdot t = 15 \\times 1200 = 18000\\ \\text{m} = 18\\ \\text{km}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.chuyen-dong.quang-duong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính quãng đường",
+    "đổi đơn vị thời gian"
+   ],
+   "tags": [
+    "chuyen-dong",
+    "quang-duong"
+   ],
+   "hints": [
+    "Đổi 20 phút ra giây.",
+    "s = v·t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0006",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động",
+   "type": "tu-luan",
+   "statement_vi": "Một người đi bộ đều trên quãng đường 6 km với tốc độ 4 km/h. Tính thời gian đi hết quãng đường đó (theo giờ và theo phút).",
+   "statement_en": "A person walks steadily along a 6 km path at 4 km/h. Find the time taken (in hours and in minutes).",
+   "answer": "t = 1,5 h = 90 phút",
+   "solution_steps": [
+    {
+     "explain": "Thời gian bằng quãng đường chia cho tốc độ.",
+     "latex": "t = \\dfrac{s}{v} = \\dfrac{6}{4} = 1{,}5\\ \\text{h}"
+    },
+    {
+     "explain": "Đổi ra phút: 1 h = 60 phút.",
+     "latex": "t = 1{,}5 \\times 60 = 90\\ \\text{phut}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.chuyen-dong.thoi-gian"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính thời gian chuyển động",
+    "đổi giờ sang phút"
+   ],
+   "tags": [
+    "chuyen-dong",
+    "thoi-gian"
+   ],
+   "hints": [
+    "t = s/v.",
+    "Nhân số giờ với 60 để ra phút."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0007",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động",
+   "type": "tu-luan",
+   "statement_vi": "Một ô tô và một xe máy xuất phát cùng lúc, cùng chiều trên một đường thẳng, cách nhau 30 km. Ô tô đi sau với tốc độ 60 km/h, xe máy đi trước với tốc độ 40 km/h. Sau bao lâu ô tô đuổi kịp xe máy? Khi đó ô tô đã đi được quãng đường bao nhiêu?",
+   "statement_en": "A car and a motorbike start at the same time, moving in the same direction on a straight road, 30 km apart. The car (behind) travels at 60 km/h, the motorbike (ahead) at 40 km/h. After how long does the car catch up? How far has the car travelled by then?",
+   "answer": "t = 1,5 h; ô tô đi được 90 km",
+   "solution_steps": [
+    {
+     "explain": "Hai xe cùng chiều nên khoảng cách thu hẹp theo hiệu vận tốc; thời gian đuổi kịp bằng khoảng cách chia hiệu vận tốc.",
+     "latex": "t = \\dfrac{s}{v_{1} - v_{2}} = \\dfrac{30}{60 - 40} = 1{,}5\\ \\text{h}"
+    },
+    {
+     "explain": "Quãng đường ô tô đi bằng tốc độ ô tô nhân thời gian.",
+     "latex": "s_{oto} = v_{1} \\cdot t = 60 \\times 1{,}5 = 90\\ \\text{km}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.chuyen-dong.hai-vat-duoi-kip-cung-chieu",
+    "physics.thcs.chuyen-dong.quang-duong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "bài toán hai vật cùng chiều",
+    "dùng hiệu vận tốc"
+   ],
+   "tags": [
+    "chuyen-dong",
+    "duoi-kip"
+   ],
+   "hints": [
+    "Cùng chiều thì dùng hiệu vận tốc v1 − v2.",
+    "Quãng đường ô tô = 60·t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0008",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực",
+   "type": "trac-nghiem",
+   "statement_vi": "Một quyển sách khối lượng 0,5 kg nằm yên trên mặt bàn nằm ngang (lấy g = 10 m/s²). Mặt bàn tác dụng lên sách một lực nâng (phản lực) có độ lớn bằng:",
+   "statement_en": "A book of mass 0.5 kg rests on a horizontal table (take g = 10 m/s²). The upward (normal) force the table exerts on the book has magnitude:",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "0 N",
+     "why_wrong": "Sách nằm yên nhưng vẫn chịu trọng lực, nên bàn phải đẩy lên một lực khác 0 để cân bằng."
+    },
+    {
+     "key": "B",
+     "text": "5 N",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "0,5 N",
+     "why_wrong": "Đây là số đo khối lượng (0,5 kg) chứ chưa nhân với g để ra lực (đơn vị N)."
+    },
+    {
+     "key": "D",
+     "text": "10 N",
+     "why_wrong": "Đây là giá trị của g, chưa nhân với khối lượng 0,5 kg."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Sách nằm yên nên hai lực tác dụng lên nó (trọng lực và phản lực bàn) là hai lực cân bằng, độ lớn bằng nhau.",
+     "latex": "N = P"
+    },
+    {
+     "explain": "Trọng lực tính theo P = 10m (với g = 10).",
+     "latex": "P = 10m = 10 \\times 0{,}5 = 5\\ \\text{N} \\Rightarrow N = 5\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc.hai-luc-can-bang",
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-khoi-luong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "hai lực cân bằng",
+    "trọng lực và phản lực"
+   ],
+   "tags": [
+    "luc",
+    "can-bang"
+   ],
+   "hints": [
+    "Vật nằm yên: lực nâng bằng trọng lực.",
+    "P = 10·m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0009",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực",
+   "type": "tu-luan",
+   "statement_vi": "Hai lực cùng tác dụng lên một vật, có độ lớn F₁ = 30 N và F₂ = 20 N và cùng phương. Tính độ lớn hợp lực khi hai lực (a) cùng chiều; (b) ngược chiều.",
+   "statement_en": "Two forces of magnitudes F₁ = 30 N and F₂ = 20 N act on a body along the same line. Find the magnitude of the resultant when they are (a) in the same direction; (b) in opposite directions.",
+   "answer": "a) 50 N; b) 10 N",
+   "solution_steps": [
+    {
+     "explain": "Cùng phương, cùng chiều: hợp lực bằng tổng hai độ lớn.",
+     "latex": "F = F_{1} + F_{2} = 30 + 20 = 50\\ \\text{N}"
+    },
+    {
+     "explain": "Cùng phương, ngược chiều: hợp lực bằng trị tuyệt đối của hiệu, hướng theo lực lớn hơn.",
+     "latex": "F = \\left| F_{1} - F_{2} \\right| = \\left| 30 - 20 \\right| = 10\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc.hop-luc-cung-chieu",
+    "physics.thcs.luc.hop-luc-nguoc-chieu"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "hợp lực cùng chiều",
+    "hợp lực ngược chiều"
+   ],
+   "tags": [
+    "luc",
+    "hop-luc"
+   ],
+   "hints": [
+    "Cùng chiều thì cộng.",
+    "Ngược chiều thì lấy hiệu độ lớn."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0010",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực",
+   "type": "dien-so",
+   "statement_vi": "Tác dụng một lực 50 N vào tay quay của một trục quay, phương của lực vuông góc với cánh tay đòn dài 0,4 m. Tính moment của lực đối với trục quay.",
+   "statement_en": "A force of 50 N is applied to a crank; the force is perpendicular to the 0.4 m moment arm about the axis. Find the moment of the force about the axis.",
+   "answer": "M = 20 N·m",
+   "answer_numeric": 20,
+   "answer_unit": "N*m",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Moment lực bằng độ lớn lực nhân với cánh tay đòn (khoảng cách từ trục quay đến giá của lực).",
+     "latex": "M = F \\cdot d = 50 \\times 0{,}4 = 20\\ \\text{N}\\cdot\\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc.moment-luc"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính moment lực"
+   ],
+   "tags": [
+    "luc",
+    "moment"
+   ],
+   "hints": [
+    "M = F·d.",
+    "d là cánh tay đòn vuông góc."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0011",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực",
+   "type": "tu-luan",
+   "statement_vi": "Một thùng hàng đặt trên sàn nằm ngang. Người ta kéo thùng theo phương ngang bằng một lực 8 N nhưng thùng vẫn đứng yên. Hãy cho biết độ lớn của lực ma sát nghỉ tác dụng lên thùng và giải thích.",
+   "statement_en": "A crate sits on a horizontal floor. It is pulled horizontally with an 8 N force but stays still. State the magnitude of the static friction on the crate and explain.",
+   "answer": "F_msn = 8 N",
+   "solution_steps": [
+    {
+     "explain": "Thùng đứng yên nên hợp lực tác dụng lên nó bằng 0 (điều kiện cân bằng).",
+     "latex": "\\vec{F_{hl}} = \\sum \\vec{F_{i}} = \\vec{0}"
+    },
+    {
+     "explain": "Theo phương ngang chỉ có lực kéo và lực ma sát nghỉ; để cân bằng, ma sát nghỉ phải bằng đúng lực kéo.",
+     "latex": "F_{msn} = F_{k} = 8\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc.dieu-kien-can-bang-vat",
+    "physics.thcs.luc.luc-ma-sat-nghi"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "điều kiện cân bằng của vật",
+    "lực ma sát nghỉ"
+   ],
+   "tags": [
+    "luc",
+    "ma-sat-nghi"
+   ],
+   "hints": [
+    "Vật đứng yên: hợp lực bằng 0.",
+    "Ma sát nghỉ cân bằng đúng lực kéo."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0012",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "dien-so",
+   "statement_vi": "Một vật gây ra áp suất 20 000 Pa lên mặt sàn qua diện tích tiếp xúc 0,5 m². Tính áp lực (lực ép) mà vật tác dụng lên sàn.",
+   "statement_en": "An object exerts a pressure of 20 000 Pa on the floor over a contact area of 0.5 m². Find the pressing force it exerts on the floor.",
+   "answer": "F = 10 000 N",
+   "answer_numeric": 10000,
+   "answer_unit": "N",
+   "tolerance": 1,
+   "solution_steps": [
+    {
+     "explain": "Áp lực bằng áp suất nhân với diện tích bị ép.",
+     "latex": "F = p \\cdot S = 20000 \\times 0{,}5 = 10000\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.ap-luc"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính áp lực từ áp suất"
+   ],
+   "tags": [
+    "ap-suat",
+    "ap-luc"
+   ],
+   "hints": [
+    "F = p·S."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0013",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "dien-so",
+   "statement_vi": "Một lực ép 600 N gây ra áp suất 15 000 Pa lên một mặt. Tính diện tích của mặt bị ép (theo cm²).",
+   "statement_en": "A pressing force of 600 N produces a pressure of 15 000 Pa on a surface. Find the area of the pressed surface (in cm²).",
+   "answer": "S = 0,04 m² = 400 cm²",
+   "answer_numeric": 400,
+   "answer_unit": "cm^2",
+   "tolerance": 1,
+   "solution_steps": [
+    {
+     "explain": "Diện tích bị ép bằng áp lực chia cho áp suất.",
+     "latex": "S = \\dfrac{F}{p} = \\dfrac{600}{15000} = 0{,}04\\ \\text{m}^{2}"
+    },
+    {
+     "explain": "Đổi ra cm²: 1 m² = 10 000 cm².",
+     "latex": "S = 0{,}04 \\times 10000 = 400\\ \\text{cm}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.dien-tich-bi-ep"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính diện tích bị ép",
+    "đổi đơn vị diện tích"
+   ],
+   "tags": [
+    "ap-suat",
+    "dien-tich"
+   ],
+   "hints": [
+    "S = F/p.",
+    "1 m² = 10 000 cm²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0014",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "tu-luan",
+   "statement_vi": "Tính áp suất do nước gây ra tại điểm cách mặt thoáng 2,5 m. Biết khối lượng riêng của nước là 1000 kg/m³, lấy g = 10 m/s².",
+   "statement_en": "Find the pressure exerted by water at a point 2.5 m below the surface. Water density is 1000 kg/m³, take g = 10 m/s².",
+   "answer": "p = 25 000 Pa",
+   "answer_numeric": 25000,
+   "answer_unit": "Pa",
+   "tolerance": 1,
+   "solution_steps": [
+    {
+     "explain": "Áp suất chất lỏng theo khối lượng riêng bằng ρ·g·h với h là độ sâu.",
+     "latex": "p = \\rho g h = 1000 \\times 10 \\times 2{,}5 = 25000\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.ap-suat-chat-long-theo-khoi-luong-rieng"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp suất chất lỏng theo khối lượng riêng"
+   ],
+   "tags": [
+    "ap-suat",
+    "chat-long"
+   ],
+   "hints": [
+    "p = ρgh.",
+    "h là độ sâu tính từ mặt thoáng."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0015",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "tu-luan",
+   "statement_vi": "Một bình chứa nước có trọng lượng riêng 10 000 N/m³, áp suất khí quyển trên mặt thoáng là 100 000 Pa. (a) Tính áp suất toàn phần tại điểm A ở độ sâu 3 m. (b) Tính độ chênh lệch áp suất giữa điểm A (sâu 3 m) và điểm B (sâu 1 m).",
+   "statement_en": "A container holds water of weight density 10 000 N/m³; atmospheric pressure at the surface is 100 000 Pa. (a) Find the total pressure at point A at depth 3 m. (b) Find the pressure difference between A (depth 3 m) and B (depth 1 m).",
+   "answer": "a) p_A = 130 000 Pa; b) Δp = 20 000 Pa",
+   "solution_steps": [
+    {
+     "explain": "Áp suất toàn phần tại một điểm bằng áp suất khí quyển cộng áp suất cột chất lỏng phía trên.",
+     "latex": "p = p_{0} + d \\cdot h = 100000 + 10000 \\times 3 = 130000\\ \\text{Pa}"
+    },
+    {
+     "explain": "Độ chênh áp suất giữa hai điểm chỉ phụ thuộc hiệu độ sâu.",
+     "latex": "\\Delta p = d\\left( h_{2} - h_{1} \\right) = 10000 \\times \\left( 3 - 1 \\right) = 20000\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.ap-suat-tai-day-binh",
+    "physics.thcs.ap-suat.chenh-lech-ap-suat-hai-diem"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp suất toàn phần",
+    "chênh lệch áp suất theo độ sâu"
+   ],
+   "tags": [
+    "ap-suat",
+    "chat-long"
+   ],
+   "hints": [
+    "Áp suất toàn phần = khí quyển + d·h.",
+    "Δp = d·(h2 − h1)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0016",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "tu-luan",
+   "statement_vi": "Một bình thông nhau chứa nước (trọng lượng riêng 10 000 N/m³). Đổ thêm dầu (trọng lượng riêng 8000 N/m³) vào một nhánh tạo cột dầu cao 20 cm. Tính chiều cao cột nước ở nhánh kia được đẩy lên so với mặt phân cách, và độ chênh mực chất lỏng giữa hai nhánh.",
+   "statement_en": "A connected-vessel system contains water (weight density 10 000 N/m³). Oil (weight density 8000 N/m³) is poured into one branch forming a 20 cm oil column. Find the height of the water column in the other branch above the interface, and the difference in liquid levels between the two branches.",
+   "answer": "h_nước = 16 cm; chênh lệch mực = 4 cm",
+   "solution_steps": [
+    {
+     "explain": "Tại mặt phân cách, áp suất do hai cột chất lỏng cân bằng: d dầu · h dầu = d nước · h nước.",
+     "latex": "d_{1} h_{1} = d_{2} h_{2}"
+    },
+    {
+     "explain": "Rút chiều cao cột nước.",
+     "latex": "h_{2} = \\dfrac{d_{1} h_{1}}{d_{2}} = \\dfrac{8000 \\times 20}{10000} = 16\\ \\text{cm}"
+    },
+    {
+     "explain": "Cột dầu cao 20 cm còn cột nước 16 cm nên mặt dầu cao hơn mặt nước.",
+     "latex": "\\Delta h = 20 - 16 = 4\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.binh-thong-nhau-hai-chat-long"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "bình thông nhau hai chất lỏng",
+    "cân bằng áp suất tại mặt phân cách"
+   ],
+   "tags": [
+    "ap-suat",
+    "binh-thong-nhau"
+   ],
+   "hints": [
+    "Cân bằng: d1·h1 = d2·h2.",
+    "Độ chênh mực = h dầu − h nước."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0017",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "dien-so",
+   "statement_vi": "Máy nén thủy lực có tiết diện pit-tông lớn gấp 50 lần tiết diện pit-tông nhỏ. Khi pit-tông nhỏ đi xuống 20 cm thì pit-tông lớn nâng lên bao nhiêu?",
+   "statement_en": "A hydraulic press has a large piston 50 times the area of the small piston. When the small piston moves down 20 cm, how far does the large piston rise?",
+   "answer": "s₂ = 0,4 cm",
+   "answer_numeric": 0.4,
+   "answer_unit": "cm",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Thể tích chất lỏng bị đẩy ở hai pit-tông bằng nhau nên quãng đường tỉ lệ nghịch với tiết diện.",
+     "latex": "S_{1} s_{1} = S_{2} s_{2} \\Rightarrow \\dfrac{s_{1}}{s_{2}} = \\dfrac{S_{2}}{S_{1}}"
+    },
+    {
+     "explain": "Pit-tông lớn có tiết diện gấp 50 lần nên đi được quãng đường nhỏ hơn 50 lần.",
+     "latex": "s_{2} = \\dfrac{s_{1}}{50} = \\dfrac{20}{50} = 0{,}4\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.may-nen-thuy-luc-duong-di"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "quãng đường pit-tông trong máy thủy lực",
+    "tỉ lệ nghịch tiết diện - quãng đường"
+   ],
+   "tags": [
+    "ap-suat",
+    "thuy-luc"
+   ],
+   "hints": [
+    "Thể tích đẩy bằng nhau: S1·s1 = S2·s2.",
+    "Pit-tông lớn đi ít hơn."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0018",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "dien-so",
+   "statement_vi": "Áp suất khí quyển được đo bằng cột thủy ngân cao 76 cm. Trọng lượng riêng của thủy ngân là 136 000 N/m³. Tính áp suất khí quyển theo đơn vị Pa.",
+   "statement_en": "Atmospheric pressure is measured by a mercury column 76 cm high. The weight density of mercury is 136 000 N/m³. Find the atmospheric pressure in Pa.",
+   "answer": "p₀ = 103 360 Pa",
+   "answer_numeric": 103360,
+   "answer_unit": "Pa",
+   "tolerance": 10,
+   "solution_steps": [
+    {
+     "explain": "Đổi chiều cao cột thủy ngân sang mét.",
+     "latex": "h_{Hg} = 76\\ \\text{cm} = 0{,}76\\ \\text{m}"
+    },
+    {
+     "explain": "Áp suất khí quyển bằng trọng lượng riêng thủy ngân nhân chiều cao cột.",
+     "latex": "p_{0} = d_{Hg} \\cdot h_{Hg} = 136000 \\times 0{,}76 = 103360\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.ap-suat-khi-quyen"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp suất khí quyển từ cột thủy ngân",
+    "đổi đơn vị chiều cao"
+   ],
+   "tags": [
+    "ap-suat",
+    "khi-quyen"
+   ],
+   "hints": [
+    "Đổi 76 cm ra m.",
+    "p0 = d_Hg·h_Hg."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0019",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "tu-luan",
+   "statement_vi": "Ở mặt đất áp suất khí quyển tương ứng cột thủy ngân cao 760 mmHg. Dùng công thức gần đúng, ước lượng áp suất khí quyển (theo mmHg) tại đỉnh một tòa nhà cao 300 m.",
+   "statement_en": "At ground level the atmospheric pressure corresponds to a 760 mmHg mercury column. Using the approximate rule, estimate the atmospheric pressure (in mmHg) at the top of a 300 m tall building.",
+   "answer": "Giảm khoảng 25 mmHg; còn khoảng 735 mmHg",
+   "solution_steps": [
+    {
+     "explain": "Lên cao 12 m thì cột thủy ngân giảm khoảng 1 mmHg; công thức gần đúng cho độ giảm.",
+     "latex": "\\Delta h_{Hg} \\approx \\dfrac{H}{12} = \\dfrac{300}{12} = 25\\ \\text{mmHg}"
+    },
+    {
+     "explain": "Áp suất tại đỉnh bằng áp suất mặt đất trừ đi độ giảm.",
+     "latex": "760 - 25 = 735\\ \\text{mmHg}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.ap-suat-khi-quyen-theo-do-cao"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "giảm áp suất khí quyển theo độ cao"
+   ],
+   "tags": [
+    "ap-suat",
+    "do-cao"
+   ],
+   "hints": [
+    "Δh ≈ H/12 (mmHg).",
+    "Lấy 760 trừ độ giảm."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0020",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Áp suất",
+   "type": "trac-nghiem",
+   "statement_vi": "Một bình thông nhau gồm hai nhánh có tiết diện khác nhau, chứa cùng một chất lỏng đứng yên. So sánh mực chất lỏng ở hai nhánh:",
+   "statement_en": "A connected-vessel system has two branches of different cross-sections holding the same stationary liquid. Compare the liquid levels in the two branches:",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Nhánh có tiết diện lớn hơn có mực chất lỏng cao hơn",
+     "why_wrong": "Mực chất lỏng không phụ thuộc tiết diện; nhầm sang thể tích chứa nhiều hơn."
+    },
+    {
+     "key": "B",
+     "text": "Nhánh có tiết diện nhỏ hơn có mực chất lỏng cao hơn",
+     "why_wrong": "Ống nhỏ chứa ít chất lỏng hơn nhưng mực vẫn ngang bằng, không cao hơn."
+    },
+    {
+     "key": "C",
+     "text": "Mực chất lỏng ở hai nhánh luôn ngang bằng nhau",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Không xác định được nếu không biết tiết diện",
+     "why_wrong": "Với cùng một chất lỏng đứng yên, kết quả luôn xác định: hai mực ngang nhau, không cần biết tiết diện."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Chất lỏng đứng yên nên áp suất tại hai điểm cùng độ cao ở đáy hai nhánh phải bằng nhau.",
+     "latex": "p_{A} = p_{B}"
+    },
+    {
+     "explain": "Cùng một chất lỏng (cùng trọng lượng riêng) nên áp suất bằng nhau kéo theo chiều cao cột bằng nhau.",
+     "latex": "h_{A} = h_{B}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.ap-suat.binh-thong-nhau-cung-chat-long"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "bình thông nhau cùng chất lỏng",
+    "mực chất lỏng độc lập tiết diện"
+   ],
+   "tags": [
+    "ap-suat",
+    "binh-thong-nhau"
+   ],
+   "hints": [
+    "Áp suất đáy hai nhánh bằng nhau.",
+    "Cùng chất lỏng nên chiều cao bằng nhau."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0021",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "type": "tu-luan",
+   "statement_vi": "Một vật có thể tích 0,002 m³ được nhúng chìm hoàn toàn trong nước có khối lượng riêng 1000 kg/m³. Lấy g = 10 m/s². Tính lực đẩy Ác-si-mét tác dụng lên vật.",
+   "statement_en": "An object of volume 0.002 m³ is fully submerged in water of density 1000 kg/m³. Take g = 10 m/s². Find the buoyant force on the object.",
+   "answer": "F_A = 20 N",
+   "answer_numeric": 20,
+   "answer_unit": "N",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Lực đẩy Ác-si-mét theo khối lượng riêng bằng ρ·g·V, với V là thể tích phần chất lỏng bị chiếm chỗ.",
+     "latex": "F_{A} = \\rho g V = 1000 \\times 10 \\times 0{,}002 = 20\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc-day-ac-si-met.luc-day-theo-khoi-luong-rieng"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "lực đẩy Ác-si-mét theo khối lượng riêng"
+   ],
+   "tags": [
+    "ac-si-met",
+    "luc-day"
+   ],
+   "hints": [
+    "F_A = ρ·g·V.",
+    "Vật chìm hoàn toàn nên V là thể tích vật."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0022",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "type": "tu-luan",
+   "statement_vi": "Treo một vật vào lực kế, trong không khí lực kế chỉ 7,8 N; khi nhúng chìm vật trong nước lực kế chỉ 6,8 N. Biết trọng lượng riêng của nước là 10 000 N/m³. Xác định trọng lượng riêng của vật.",
+   "statement_en": "An object hung on a spring scale reads 7.8 N in air; when fully submerged in water it reads 6.8 N. Water weight density is 10 000 N/m³. Determine the weight density of the object.",
+   "answer": "d_vật = 78 000 N/m³",
+   "solution_steps": [
+    {
+     "explain": "Số chỉ giảm đi chính là lực đẩy Ác-si-mét: F_A = P − P' = 7,8 − 6,8 = 1 N.",
+     "latex": "F_{A} = P - P' = 7{,}8 - 6{,}8 = 1\\ \\text{N}"
+    },
+    {
+     "explain": "Trọng lượng riêng của vật xác định qua công thức lực kế.",
+     "latex": "d_{v} = \\dfrac{P}{P - P'} \\cdot d_{l} = \\dfrac{7{,}8}{1} \\times 10000 = 78000\\ \\text{N/m}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc-day-ac-si-met.xac-dinh-khoi-luong-rieng-vat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "xác định trọng lượng riêng bằng lực kế",
+    "lực đẩy Ác-si-mét từ số chỉ lực kế"
+   ],
+   "tags": [
+    "ac-si-met",
+    "trong-luong-rieng"
+   ],
+   "hints": [
+    "Số chỉ giảm = lực đẩy Ác-si-mét.",
+    "d_v = P/(P−P')·d_nước."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0023",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "type": "tu-luan",
+   "statement_vi": "Một khối gỗ có thể tích 1000 cm³ và khối lượng riêng 600 kg/m³ nổi cân bằng trên mặt nước (khối lượng riêng 1000 kg/m³). Tính thể tích phần gỗ chìm trong nước.",
+   "statement_en": "A wooden block of volume 1000 cm³ and density 600 kg/m³ floats in equilibrium on water (density 1000 kg/m³). Find the volume of the submerged part.",
+   "answer": "V_chìm = 600 cm³",
+   "solution_steps": [
+    {
+     "explain": "Vật nổi cân bằng: lực đẩy Ác-si-mét bằng trọng lượng, dẫn tới d_lỏng·V_chìm = d_vật·V.",
+     "latex": "d_{l} V_{c} = d_{v} V"
+    },
+    {
+     "explain": "Suy ra tỉ số phần chìm bằng tỉ số khối lượng riêng.",
+     "latex": "\\dfrac{V_{c}}{V} = \\dfrac{D_{v}}{D_{l}} = \\dfrac{600}{1000} = 0{,}6"
+    },
+    {
+     "explain": "Tính thể tích phần chìm.",
+     "latex": "V_{c} = 0{,}6 \\times 1000 = 600\\ \\text{cm}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc-day-ac-si-met.vat-noi-can-bang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "điều kiện vật nổi cân bằng",
+    "tỉ lệ phần chìm theo khối lượng riêng"
+   ],
+   "tags": [
+    "ac-si-met",
+    "vat-noi"
+   ],
+   "hints": [
+    "Nổi cân bằng: d_lỏng·V_chìm = d_vật·V.",
+    "V_chìm/V = D_vật/D_nước."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0024",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "type": "trac-nghiem",
+   "statement_vi": "Thả một vật đặc, đồng chất có khối lượng riêng 1200 kg/m³ vào nước có khối lượng riêng 1000 kg/m³. Hiện tượng xảy ra là:",
+   "statement_en": "A solid, homogeneous object of density 1200 kg/m³ is placed in water of density 1000 kg/m³. What happens?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Vật chìm xuống đáy vì khối lượng riêng của vật lớn hơn của nước",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Vật nổi lên mặt nước",
+     "why_wrong": "Vật chỉ nổi khi khối lượng riêng nhỏ hơn nước; ở đây vật nặng riêng hơn nên không nổi."
+    },
+    {
+     "key": "C",
+     "text": "Vật lơ lửng trong nước",
+     "why_wrong": "Lơ lửng chỉ xảy ra khi hai khối lượng riêng bằng nhau, còn ở đây chúng khác nhau."
+    },
+    {
+     "key": "D",
+     "text": "Vật đứng yên ngay tại mặt nước",
+     "why_wrong": "Vật nặng riêng hơn nước nên hợp lực hướng xuống, không thể đứng yên ở mặt nước."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "So sánh khối lượng riêng: vật (1200) lớn hơn nước (1000) nên trọng lượng thắng lực đẩy.",
+     "latex": "F_{A} < P \\Leftrightarrow d_{v} > d_{l}"
+    },
+    {
+     "explain": "Nếu bằng nhau thì vật lơ lửng; ở đây khác nhau nên không lơ lửng.",
+     "latex": "F_{A} = P \\Leftrightarrow d_{v} = d_{l}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-chim",
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-lo-lung"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "điều kiện vật chìm",
+    "điều kiện vật lơ lửng"
+   ],
+   "tags": [
+    "ac-si-met",
+    "chim-noi"
+   ],
+   "hints": [
+    "So sánh khối lượng riêng vật với nước.",
+    "Lớn hơn thì chìm."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0025",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công và công suất",
+   "type": "dien-so",
+   "statement_vi": "Một vật trượt trên sàn được kéo đi 25 m, lực ma sát cản trở chuyển động có độ lớn 40 N. Tính công của lực ma sát.",
+   "statement_en": "An object slides 25 m along the floor while a friction force of 40 N opposes the motion. Find the work done by friction.",
+   "answer": "A_ms = 1000 J",
+   "answer_numeric": 1000,
+   "answer_unit": "J",
+   "tolerance": 1,
+   "solution_steps": [
+    {
+     "explain": "Công của lực ma sát bằng độ lớn lực ma sát nhân quãng đường (công cản, làm hao phí năng lượng).",
+     "latex": "A_{ms} = F_{ms} \\cdot s = 40 \\times 25 = 1000\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.cong-cong-suat.cong-luc-ma-sat"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính công của lực ma sát"
+   ],
+   "tags": [
+    "cong",
+    "ma-sat"
+   ],
+   "hints": [
+    "A_ms = F_ms·s."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0026",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công và công suất",
+   "type": "tu-luan",
+   "statement_vi": "Một máy hoạt động với công suất 500 W trong 60 giây. Trong quá trình đó, công có ích thu được là 24 000 J. Tính công toàn phần máy sinh ra và công hao phí.",
+   "statement_en": "A machine operates at 500 W for 60 s. During this time the useful work is 24 000 J. Find the total work produced and the wasted work.",
+   "answer": "A_tp = 30 000 J; A_hp = 6000 J",
+   "solution_steps": [
+    {
+     "explain": "Công toàn phần bằng công suất nhân thời gian.",
+     "latex": "A_{tp} = \\mathcal{P} \\cdot t = 500 \\times 60 = 30000\\ \\text{J}"
+    },
+    {
+     "explain": "Công hao phí bằng công toàn phần trừ công có ích.",
+     "latex": "A_{hp} = A_{tp} - A_{i} = 30000 - 24000 = 6000\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.cong-cong-suat.cong-theo-cong-suat",
+    "physics.thcs.cong-cong-suat.cong-hao-phi"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "công theo công suất và thời gian",
+    "tính công hao phí"
+   ],
+   "tags": [
+    "cong",
+    "cong-suat"
+   ],
+   "hints": [
+    "A = P·t.",
+    "A_hp = A_tp − A_i."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0027",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công và công suất",
+   "type": "dien-so",
+   "statement_vi": "Một đầu tàu kéo các toa với lực kéo 8000 N và chuyển động đều với tốc độ 15 m/s. Tính công suất của đầu tàu (theo kW).",
+   "statement_en": "A locomotive pulls carriages with a tractive force of 8000 N, moving steadily at 15 m/s. Find the power of the locomotive (in kW).",
+   "answer": "P = 120 kW",
+   "answer_numeric": 120,
+   "answer_unit": "kW",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Với chuyển động đều, công suất bằng lực nhân vận tốc.",
+     "latex": "\\mathcal{P} = F \\cdot v = 8000 \\times 15 = 120000\\ \\text{W} = 120\\ \\text{kW}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.cong-cong-suat.cong-suat-theo-luc-van-toc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "công suất theo lực và vận tốc"
+   ],
+   "tags": [
+    "cong-suat",
+    "van-toc"
+   ],
+   "hints": [
+    "P = F·v.",
+    "1 kW = 1000 W."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0028",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Máy cơ đơn giản",
+   "type": "tu-luan",
+   "statement_vi": "Dùng một đòn bẩy để nâng vật có trọng lượng 600 N. Điểm đặt của vật cách trục quay 0,5 m, điểm đặt lực của người cách trục quay 1,5 m. Tính lực tối thiểu người cần tác dụng để đòn bẩy cân bằng.",
+   "statement_en": "A lever is used to lift a 600 N load. The load is 0.5 m from the pivot and the person's force is applied 1.5 m from the pivot. Find the minimum force needed to balance the lever.",
+   "answer": "F = 200 N",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện cân bằng của đòn bẩy: tích lực với cánh tay đòn ở hai bên bằng nhau.",
+     "latex": "F_{1} l_{1} = F_{2} l_{2}"
+    },
+    {
+     "explain": "Coi vật là F₁ = 600 N với l₁ = 0,5 m, lực người là F₂ với l₂ = 1,5 m; rút F₂.",
+     "latex": "F_{2} = \\dfrac{F_{1} l_{1}}{l_{2}} = \\dfrac{600 \\times 0{,}5}{1{,}5} = 200\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.may-co-don-gian.don-bay-can-bang"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "điều kiện cân bằng đòn bẩy",
+    "lợi về lực nhờ cánh tay đòn dài"
+   ],
+   "tags": [
+    "may-co",
+    "don-bay"
+   ],
+   "hints": [
+    "F1·l1 = F2·l2.",
+    "Cánh tay đòn dài hơn thì lực nhỏ hơn."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0029",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Máy cơ đơn giản",
+   "type": "tu-luan",
+   "statement_vi": "Cần nâng một vật có trọng lượng 800 N lên cao 2 m. (a) Nếu dùng một ròng rọc động thì phải kéo dây bằng lực bao nhiêu và kéo một đoạn dây dài bao nhiêu? (b) Nếu dùng một palăng gồm 2 ròng rọc động thì lực kéo là bao nhiêu?",
+   "statement_en": "A load of weight 800 N must be raised 2 m. (a) Using one movable pulley, what pulling force and what length of rope are needed? (b) Using a block-and-tackle with 2 movable pulleys, what is the pulling force?",
+   "answer": "a) F = 400 N, kéo dây 4 m; b) F = 200 N",
+   "solution_steps": [
+    {
+     "explain": "Một ròng rọc động cho lợi 2 lần về lực nhưng thiệt 2 lần về đường đi.",
+     "latex": "F = \\dfrac{P}{2} = \\dfrac{800}{2} = 400\\ \\text{N}, \\quad s = 2h = 2 \\times 2 = 4\\ \\text{m}"
+    },
+    {
+     "explain": "Palăng có n = 2 ròng rọc động cho lợi 2n = 4 lần về lực.",
+     "latex": "F = \\dfrac{P}{2n} = \\dfrac{800}{2 \\times 2} = 200\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.may-co-don-gian.rong-roc-dong",
+    "physics.thcs.may-co-don-gian.palang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "ròng rọc động",
+    "hệ palăng"
+   ],
+   "tags": [
+    "may-co",
+    "rong-roc"
+   ],
+   "hints": [
+    "Ròng rọc động: F = P/2, s = 2h.",
+    "Palăng n ròng rọc động: F = P/(2n)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0030",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Máy cơ đơn giản",
+   "type": "trac-nghiem",
+   "statement_vi": "Khi dùng một ròng rọc cố định để kéo một vật lên cao, ta được lợi gì?",
+   "statement_en": "When using a single fixed pulley to raise a load, what advantage do we gain?",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Lợi hai lần về lực",
+     "why_wrong": "Lợi hai lần về lực là đặc điểm của ròng rọc động, không phải ròng rọc cố định."
+    },
+    {
+     "key": "B",
+     "text": "Lợi hai lần về quãng đường",
+     "why_wrong": "Ròng rọc cố định không cho lợi về quãng đường; quãng đường kéo dây bằng độ cao nâng vật."
+    },
+    {
+     "key": "C",
+     "text": "Chỉ đổi hướng của lực kéo, không lợi về lực",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Lợi cả về lực lẫn quãng đường",
+     "why_wrong": "Không máy cơ đơn giản nào lợi cả hai; ròng rọc cố định thậm chí không lợi về lực."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Ròng rọc cố định chỉ làm đổi hướng lực; độ lớn lực kéo bằng trọng lượng vật và quãng đường kéo dây bằng độ cao.",
+     "latex": "F = P, \\quad s = h"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.may-co-don-gian.rong-roc-co-dinh"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "đặc điểm ròng rọc cố định"
+   ],
+   "tags": [
+    "may-co",
+    "rong-roc"
+   ],
+   "hints": [
+    "Ròng rọc cố định chỉ đổi hướng lực.",
+    "F = P, s = h."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0031",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ năng",
+   "type": "dien-so",
+   "statement_vi": "Một vật khối lượng 2 kg chuyển động với tốc độ 6 m/s. Tính động năng của vật.",
+   "statement_en": "A 2 kg object moves at 6 m/s. Find its kinetic energy.",
+   "answer": "W_đ = 36 J",
+   "answer_numeric": 36,
+   "answer_unit": "J",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Động năng bằng một nửa khối lượng nhân bình phương vận tốc.",
+     "latex": "W_{d} = \\dfrac{1}{2} m v^{2} = \\dfrac{1}{2} \\times 2 \\times 6^{2} = 36\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.co-nang.dong-nang"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính động năng"
+   ],
+   "tags": [
+    "co-nang",
+    "dong-nang"
+   ],
+   "hints": [
+    "W_đ = ½mv².",
+    "Nhớ bình phương vận tốc."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0032",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ năng",
+   "type": "tu-luan",
+   "statement_vi": "Một quả bóng khối lượng 0,5 kg đang ở độ cao 4 m so với mặt đất và chuyển động với tốc độ 3 m/s. Lấy g = 10 m/s², chọn mốc thế năng ở mặt đất. Tính động năng, thế năng và cơ năng của quả bóng.",
+   "statement_en": "A 0.5 kg ball is 4 m above the ground moving at 3 m/s. Take g = 10 m/s² and the ground as the reference level. Find its kinetic energy, potential energy and mechanical energy.",
+   "answer": "W_đ = 2,25 J; W_t = 20 J; W = 22,25 J",
+   "solution_steps": [
+    {
+     "explain": "Động năng theo khối lượng và tốc độ.",
+     "latex": "W_{d} = \\dfrac{1}{2} m v^{2} = \\dfrac{1}{2} \\times 0{,}5 \\times 3^{2} = 2{,}25\\ \\text{J}"
+    },
+    {
+     "explain": "Thế năng trọng trường theo độ cao.",
+     "latex": "W_{t} = mgh = 0{,}5 \\times 10 \\times 4 = 20\\ \\text{J}"
+    },
+    {
+     "explain": "Cơ năng bằng tổng động năng và thế năng.",
+     "latex": "W = W_{d} + W_{t} = 2{,}25 + 20 = 22{,}25\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.co-nang.dong-nang",
+    "physics.thcs.co-nang.the-nang-trong-truong",
+    "physics.thcs.co-nang.co-nang-tong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 5,
+   "skills": [
+    "động năng",
+    "thế năng trọng trường",
+    "cơ năng tổng"
+   ],
+   "tags": [
+    "co-nang",
+    "dong-the-nang"
+   ],
+   "hints": [
+    "Tính riêng động năng và thế năng.",
+    "Cơ năng = W_đ + W_t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0033",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ năng",
+   "type": "tu-luan",
+   "statement_vi": "Thả một vật rơi tự do không vận tốc đầu từ độ cao 5 m so với mặt đất. Bỏ qua sức cản, lấy g = 10 m/s². Áp dụng bảo toàn cơ năng, tính tốc độ của vật ngay khi chạm đất.",
+   "statement_en": "An object is released from rest and falls freely from 5 m above the ground. Neglect air resistance, take g = 10 m/s². Using conservation of mechanical energy, find its speed just before hitting the ground.",
+   "answer": "v = 10 m/s",
+   "solution_steps": [
+    {
+     "explain": "Bảo toàn cơ năng giữa vị trí thả (h₁ = 5 m, v₁ = 0) và mặt đất (h₂ = 0, v₂).",
+     "latex": "\\dfrac{1}{2}mv_{1}^{2} + mgh_{1} = \\dfrac{1}{2}mv_{2}^{2} + mgh_{2}"
+    },
+    {
+     "explain": "Thay v₁ = 0, h₂ = 0, chia hai vế cho m rồi rút v₂.",
+     "latex": "gh_{1} = \\dfrac{1}{2}v_{2}^{2} \\Rightarrow v_{2} = \\sqrt{2gh_{1}} = \\sqrt{2 \\times 10 \\times 5} = 10\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.co-nang.bao-toan-co-nang-hai-vi-tri"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "bảo toàn cơ năng giữa hai vị trí",
+    "chuyển hóa thế năng thành động năng"
+   ],
+   "tags": [
+    "co-nang",
+    "bao-toan"
+   ],
+   "hints": [
+    "Cơ năng lúc thả = cơ năng lúc chạm đất.",
+    "v = √(2gh)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0034",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Năng lượng",
+   "type": "tu-luan",
+   "statement_vi": "Một bóng đèn sợi đốt tiêu thụ năng lượng điện 100 J thì phát ra ánh sáng có năng lượng 15 J. Theo định luật bảo toàn và chuyển hóa năng lượng, phần năng lượng còn lại chuyển thành gì và bằng bao nhiêu?",
+   "statement_en": "An incandescent bulb consumes 100 J of electrical energy and emits 15 J of light energy. By the law of conservation and transformation of energy, what does the rest become and how much is it?",
+   "answer": "Chuyển thành nhiệt (hao phí) 85 J",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng không tự sinh ra hay mất đi; năng lượng cung cấp bằng phần có ích cộng phần hao phí.",
+     "latex": "W_{\\text{co ich}} + W_{\\text{hao phi}} = W_{\\text{cung cap}}"
+    },
+    {
+     "explain": "Phần hao phí (tỏa nhiệt) bằng năng lượng cung cấp trừ phần ánh sáng.",
+     "latex": "W_{\\text{hao phi}} = 100 - 15 = 85\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nang-luong.dinh-luat-bao-toan-nang-luong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "định luật bảo toàn năng lượng",
+    "phân biệt năng lượng có ích và hao phí"
+   ],
+   "tags": [
+    "nang-luong",
+    "bao-toan"
+   ],
+   "hints": [
+    "Tổng năng lượng ra = năng lượng vào.",
+    "Phần còn lại tỏa nhiệt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0035",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "tu-luan",
+   "statement_vi": "Để đun 2 kg một chất lỏng từ 25°C lên 75°C cần cung cấp nhiệt lượng 420 000 J. Tính độ tăng nhiệt độ và nhiệt dung riêng của chất lỏng đó.",
+   "statement_en": "Heating 2 kg of a liquid from 25°C to 75°C requires 420 000 J of heat. Find the temperature rise and the specific heat capacity of the liquid.",
+   "answer": "Δt = 50°C; c = 4200 J/(kg·K)",
+   "solution_steps": [
+    {
+     "explain": "Độ tăng nhiệt độ bằng nhiệt độ sau trừ nhiệt độ đầu.",
+     "latex": "\\Delta t = t_{2} - t_{1} = 75 - 25 = 50\\ ^{\\circ}\\text{C}"
+    },
+    {
+     "explain": "Nhiệt dung riêng bằng nhiệt lượng chia cho tích khối lượng và độ tăng nhiệt độ.",
+     "latex": "c = \\dfrac{Q}{m \\Delta t} = \\dfrac{420000}{2 \\times 50} = 4200\\ \\text{J/(kg}\\cdot\\text{K)}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.do-tang-nhiet-do",
+    "physics.thcs.nhiet-hoc.nhiet-dung-rieng"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "độ tăng nhiệt độ",
+    "nhiệt dung riêng"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "nhiet-dung-rieng"
+   ],
+   "hints": [
+    "Δt = t2 − t1.",
+    "c = Q/(m·Δt)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0036",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Tính nhiệt lượng cần cung cấp để làm hóa hơi hoàn toàn 0,5 kg nước đang ở nhiệt độ sôi. Biết nhiệt hóa hơi của nước là 2,3·10⁶ J/kg.",
+   "statement_en": "Find the heat needed to completely vaporise 0.5 kg of water at its boiling point. The latent heat of vaporisation of water is 2.3·10⁶ J/kg.",
+   "answer": "Q = 1 150 000 J",
+   "answer_numeric": 1150000,
+   "answer_unit": "J",
+   "tolerance": 1000,
+   "solution_steps": [
+    {
+     "explain": "Nhiệt lượng hóa hơi bằng nhiệt hóa hơi riêng nhân khối lượng.",
+     "latex": "Q = L m = 2{,}3 \\times 10^{6} \\times 0{,}5 = 1{,}15 \\times 10^{6}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.nhiet-hoa-hoi"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhiệt lượng hóa hơi"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "hoa-hoi"
+   ],
+   "hints": [
+    "Q = L·m.",
+    "L là nhiệt hóa hơi riêng."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0037",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "tu-luan",
+   "statement_vi": "Một bếp đun cung cấp tổng nhiệt lượng 1 050 000 J, trong đó nhiệt lượng có ích truyền cho nước là 840 000 J. Tính hiệu suất của bếp đun.",
+   "statement_en": "A stove supplies a total of 1 050 000 J of heat, of which 840 000 J usefully heats the water. Find the stove's efficiency.",
+   "answer": "H = 80%",
+   "answer_numeric": 80,
+   "answer_unit": "%",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Hiệu suất bếp đun bằng nhiệt lượng có ích chia nhiệt lượng toàn phần, nhân 100%.",
+     "latex": "H = \\dfrac{Q_{i}}{Q_{tp}} \\cdot 100\\% = \\dfrac{840000}{1050000} \\cdot 100\\% = 80\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.hieu-suat-bep-dun"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "hiệu suất của bếp đun"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "hieu-suat"
+   ],
+   "hints": [
+    "H = Q_i/Q_tp·100%."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0038",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Một động cơ nhiệt nhận vào 20 000 J nhiệt lượng từ nhiên liệu và sinh ra công có ích 5000 J. Tính hiệu suất của động cơ.",
+   "statement_en": "A heat engine receives 20 000 J of heat from fuel and produces 5000 J of useful work. Find the engine's efficiency.",
+   "answer": "H = 25%",
+   "answer_numeric": 25,
+   "answer_unit": "%",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Hiệu suất động cơ nhiệt bằng công có ích chia nhiệt lượng cung cấp, nhân 100%.",
+     "latex": "H = \\dfrac{A}{Q} \\cdot 100\\% = \\dfrac{5000}{20000} \\cdot 100\\% = 25\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.hieu-suat-dong-co-nhiet"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "hiệu suất động cơ nhiệt"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "dong-co-nhiet"
+   ],
+   "hints": [
+    "H = A/Q·100%."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0039",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Một thanh ray thép dài 10 m ở 20°C. Khi nhiệt độ tăng thêm 50°C, thanh dài thêm bao nhiêu? Biết hệ số nở dài của thép là 1,2·10⁻⁵ K⁻¹. Trả lời theo mm.",
+   "statement_en": "A steel rail is 10 m long at 20°C. How much longer does it become when the temperature rises by 50°C? The linear expansion coefficient of steel is 1.2·10⁻⁵ K⁻¹. Answer in mm.",
+   "answer": "Δl = 6 mm",
+   "answer_numeric": 6,
+   "answer_unit": "mm",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Độ nở dài bằng hệ số nở dài nhân chiều dài ban đầu nhân độ tăng nhiệt độ.",
+     "latex": "\\Delta l = \\alpha l_{0} \\Delta t = 1{,}2 \\times 10^{-5} \\times 10 \\times 50 = 6 \\times 10^{-3}\\ \\text{m}"
+    },
+    {
+     "explain": "Đổi ra mm: 1 m = 1000 mm.",
+     "latex": "\\Delta l = 6 \\times 10^{-3}\\ \\text{m} = 6\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.no-vi-nhiet-chieu-dai"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "sự nở dài vì nhiệt",
+    "đổi đơn vị chiều dài"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "no-vi-nhiet"
+   ],
+   "hints": [
+    "Δl = α·l0·Δt.",
+    "1 m = 1000 mm."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0040",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "dien-so",
+   "statement_vi": "Một khối chất lỏng thể tích 2000 cm³ được đun nóng thêm 50°C. Biết hệ số nở khối của chất lỏng là 1,0·10⁻⁴ K⁻¹. Tính độ tăng thể tích của khối chất lỏng.",
+   "statement_en": "A liquid of volume 2000 cm³ is heated by 50°C. Its volume expansion coefficient is 1.0·10⁻⁴ K⁻¹. Find the increase in volume.",
+   "answer": "ΔV = 10 cm³",
+   "answer_numeric": 10,
+   "answer_unit": "cm^3",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Độ nở khối bằng hệ số nở khối nhân thể tích ban đầu nhân độ tăng nhiệt độ.",
+     "latex": "\\Delta V = \\beta V_{0} \\Delta t = 1{,}0 \\times 10^{-4} \\times 2000 \\times 50 = 10\\ \\text{cm}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.no-vi-nhiet-the-tich"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "sự nở khối vì nhiệt"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "no-vi-nhiet"
+   ],
+   "hints": [
+    "ΔV = β·V0·Δt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0041",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt học",
+   "type": "tu-luan",
+   "statement_vi": "Nhiệt độ của một cốc nước là 30°C. Hãy đổi nhiệt độ này sang thang Fahrenheit và thang Kelvin.",
+   "statement_en": "The temperature of a cup of water is 30°C. Convert this temperature to the Fahrenheit and Kelvin scales.",
+   "answer": "30°C = 86°F = 303,15 K",
+   "solution_steps": [
+    {
+     "explain": "Đổi sang Fahrenheit theo công thức nhân 1,8 rồi cộng 32.",
+     "latex": "t_{(^{\\circ}F)} = 1{,}8 \\, t_{(^{\\circ}C)} + 32 = 1{,}8 \\times 30 + 32 = 86\\ ^{\\circ}\\text{F}"
+    },
+    {
+     "explain": "Đổi sang Kelvin bằng cách cộng 273,15.",
+     "latex": "T = t + 273{,}15 = 30 + 273{,}15 = 303{,}15\\ \\text{K}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.nhiet-hoc.doi-nhiet-do-c-sang-f",
+    "physics.thcs.nhiet-hoc.doi-nhiet-do-c-sang-k"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "đổi thang nhiệt độ Celsius - Fahrenheit",
+    "đổi Celsius - Kelvin"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "thang-nhiet-do"
+   ],
+   "hints": [
+    "°F = 1,8·°C + 32.",
+    "K = °C + 273,15."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0042",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "dien-so",
+   "statement_vi": "Trong 120 giây có một điện lượng 60 C dịch chuyển qua tiết diện thẳng của dây dẫn. Tính cường độ dòng điện chạy trong dây.",
+   "statement_en": "In 120 s, a charge of 60 C passes through the cross-section of a wire. Find the current in the wire.",
+   "answer": "I = 0,5 A",
+   "answer_numeric": 0.5,
+   "answer_unit": "A",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Cường độ dòng điện bằng điện lượng chia cho thời gian.",
+     "latex": "I = \\dfrac{q}{t} = \\dfrac{60}{120} = 0{,}5\\ \\text{A}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.cuong-do-dong-dien"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "cường độ dòng điện theo điện lượng"
+   ],
+   "tags": [
+    "dien-hoc",
+    "cuong-do"
+   ],
+   "hints": [
+    "I = q/t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0043",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "tu-luan",
+   "statement_vi": "Hai điện trở R₁ = 10 Ω và R₂ = 20 Ω mắc nối tiếp, dòng điện chạy trong mạch có cường độ 1 A. Tính cường độ dòng điện qua mỗi điện trở và hiệu điện thế giữa hai đầu mỗi điện trở. Kiểm tra tỉ số U₁/U₂.",
+   "statement_en": "Two resistors R₁ = 10 Ω and R₂ = 20 Ω are connected in series with a 1 A current. Find the current through each resistor and the voltage across each. Verify the ratio U₁/U₂.",
+   "answer": "I₁ = I₂ = 1 A; U₁ = 10 V; U₂ = 20 V; U₁/U₂ = 1/2 = R₁/R₂",
+   "solution_steps": [
+    {
+     "explain": "Trong mạch nối tiếp, cường độ dòng điện qua mọi phần tử bằng nhau.",
+     "latex": "I = I_{1} = I_{2} = 1\\ \\text{A}"
+    },
+    {
+     "explain": "Hiệu điện thế mỗi điện trở tính theo định luật Ôm U = I·R.",
+     "latex": "U_{1} = I R_{1} = 1 \\times 10 = 10\\ \\text{V}; \\quad U_{2} = I R_{2} = 1 \\times 20 = 20\\ \\text{V}"
+    },
+    {
+     "explain": "Tỉ số hiệu điện thế bằng tỉ số điện trở trong mạch nối tiếp.",
+     "latex": "\\dfrac{U_{1}}{U_{2}} = \\dfrac{R_{1}}{R_{2}} = \\dfrac{10}{20} = \\dfrac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.noi-tiep-cuong-do",
+    "physics.thcs.dien-hoc.hieu-dien-the-om",
+    "physics.thcs.dien-hoc.noi-tiep-ti-le"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "dòng điện trong mạch nối tiếp",
+    "định luật Ôm",
+    "tỉ lệ hiệu điện thế nối tiếp"
+   ],
+   "tags": [
+    "dien-hoc",
+    "noi-tiep"
+   ],
+   "hints": [
+    "Nối tiếp: I như nhau ở mọi điện trở.",
+    "U = I·R; U1/U2 = R1/R2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0044",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "dien-so",
+   "statement_vi": "Đặt hiệu điện thế 12 V vào hai đầu một đoạn mạch thì dòng điện qua mạch có cường độ 0,4 A. Tính điện trở của đoạn mạch.",
+   "statement_en": "A voltage of 12 V across a circuit segment produces a current of 0.4 A. Find the resistance of the segment.",
+   "answer": "R = 30 Ω",
+   "answer_numeric": 30,
+   "answer_unit": "ohm",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Điện trở đoạn mạch bằng hiệu điện thế chia cho cường độ dòng điện.",
+     "latex": "R = \\dfrac{U}{I} = \\dfrac{12}{0{,}4} = 30\\ \\Omega"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.dien-tro-doan-mach"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "điện trở đoạn mạch theo U và I"
+   ],
+   "tags": [
+    "dien-hoc",
+    "dien-tro"
+   ],
+   "hints": [
+    "R = U/I."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0045",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "tu-luan",
+   "statement_vi": "Hai điện trở R₁ = 6 Ω và R₂ = 12 Ω mắc song song vào hiệu điện thế 12 V. Tính điện trở tương đương, cường độ dòng điện qua mỗi điện trở và kiểm tra tỉ số I₁/I₂.",
+   "statement_en": "Two resistors R₁ = 6 Ω and R₂ = 12 Ω are connected in parallel across 12 V. Find the equivalent resistance, the current through each resistor, and verify the ratio I₁/I₂.",
+   "answer": "R_tđ = 4 Ω; I₁ = 2 A; I₂ = 1 A; I₁/I₂ = 2 = R₂/R₁",
+   "solution_steps": [
+    {
+     "explain": "Điện trở tương đương của mạch song song tính theo nghịch đảo.",
+     "latex": "\\dfrac{1}{R_{td}} = \\dfrac{1}{R_{1}} + \\dfrac{1}{R_{2}} = \\dfrac{1}{6} + \\dfrac{1}{12} = \\dfrac{3}{12} \\Rightarrow R_{td} = 4\\ \\Omega"
+    },
+    {
+     "explain": "Mạch song song có hiệu điện thế trên mỗi nhánh bằng nhau và bằng 12 V; tính dòng qua mỗi nhánh.",
+     "latex": "U = U_{1} = U_{2} = 12\\ \\text{V}; \\quad I_{1} = \\dfrac{12}{6} = 2\\ \\text{A}, \\ I_{2} = \\dfrac{12}{12} = 1\\ \\text{A}"
+    },
+    {
+     "explain": "Tỉ số cường độ dòng điện tỉ lệ nghịch với điện trở.",
+     "latex": "\\dfrac{I_{1}}{I_{2}} = \\dfrac{R_{2}}{R_{1}} = \\dfrac{12}{6} = 2"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.song-song-dien-tro",
+    "physics.thcs.dien-hoc.song-song-hieu-dien-the",
+    "physics.thcs.dien-hoc.song-song-ti-le"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "điện trở tương đương song song",
+    "hiệu điện thế song song",
+    "tỉ lệ dòng điện song song"
+   ],
+   "tags": [
+    "dien-hoc",
+    "song-song"
+   ],
+   "hints": [
+    "1/R_tđ = 1/R1 + 1/R2.",
+    "Song song: U bằng nhau; I1/I2 = R2/R1."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0046",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "dien-so",
+   "statement_vi": "Có 4 điện trở giống nhau, mỗi cái 20 Ω, mắc song song với nhau. Tính điện trở tương đương của cả cụm.",
+   "statement_en": "Four identical 20 Ω resistors are connected in parallel. Find the equivalent resistance of the group.",
+   "answer": "R_tđ = 5 Ω",
+   "answer_numeric": 5,
+   "answer_unit": "ohm",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "n điện trở giống nhau mắc song song có điện trở tương đương bằng giá trị một điện trở chia cho n.",
+     "latex": "R_{td} = \\dfrac{r}{n} = \\dfrac{20}{4} = 5\\ \\Omega"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.song-song-n-dien-tro-giong-nhau"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "n điện trở giống nhau song song"
+   ],
+   "tags": [
+    "dien-hoc",
+    "song-song"
+   ],
+   "hints": [
+    "R_tđ = r/n."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0047",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "tu-luan",
+   "statement_vi": "Một bóng đèn có điện trở 484 Ω được mắc vào hiệu điện thế 220 V. Tính công suất điện của đèn theo hai cách (dùng U và R, rồi dùng I và R) để kiểm tra.",
+   "statement_en": "A bulb of resistance 484 Ω is connected to 220 V. Find the electrical power of the bulb in two ways (using U and R, then using I and R) to check.",
+   "answer": "P = 100 W",
+   "solution_steps": [
+    {
+     "explain": "Cách 1: công suất theo hiệu điện thế và điện trở.",
+     "latex": "\\mathcal{P} = \\dfrac{U^{2}}{R} = \\dfrac{220^{2}}{484} = 100\\ \\text{W}"
+    },
+    {
+     "explain": "Tính cường độ dòng điện qua đèn từ công suất và hiệu điện thế.",
+     "latex": "I = \\dfrac{\\mathcal{P}}{U} = \\dfrac{100}{220} \\approx 0{,}455\\ \\text{A}"
+    },
+    {
+     "explain": "Cách 2: kiểm tra bằng công suất theo dòng điện và điện trở.",
+     "latex": "\\mathcal{P} = I^{2} R = 0{,}455^{2} \\times 484 \\approx 100\\ \\text{W}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.cong-suat-theo-u-va-r",
+    "physics.thcs.dien-hoc.cong-suat-dien",
+    "physics.thcs.dien-hoc.cong-suat-theo-i-va-r"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "công suất điện theo U và R",
+    "công suất điện theo I và R"
+   ],
+   "tags": [
+    "dien-hoc",
+    "cong-suat"
+   ],
+   "hints": [
+    "P = U²/R.",
+    "Kiểm tra lại bằng P = I²R."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0048",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "tu-luan",
+   "statement_vi": "Trên một bóng đèn có ghi 220V - 40W. Tính cường độ dòng điện định mức chạy qua đèn và điện trở của đèn khi hoạt động bình thường.",
+   "statement_en": "A bulb is rated 220V - 40W. Find the rated current through it and its resistance when operating normally.",
+   "answer": "I_đm ≈ 0,18 A; R = 1210 Ω",
+   "solution_steps": [
+    {
+     "explain": "Cường độ dòng điện định mức bằng công suất định mức chia hiệu điện thế định mức.",
+     "latex": "I_{dm} = \\dfrac{\\mathcal{P}_{dm}}{U_{dm}} = \\dfrac{40}{220} \\approx 0{,}18\\ \\text{A}"
+    },
+    {
+     "explain": "Điện trở của đèn tính theo hiệu điện thế định mức và công suất định mức.",
+     "latex": "R = \\dfrac{U_{dm}^{2}}{\\mathcal{P}_{dm}} = \\dfrac{220^{2}}{40} = 1210\\ \\Omega"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.cuong-do-dinh-muc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "cường độ định mức",
+    "điện trở dụng cụ điện"
+   ],
+   "tags": [
+    "dien-hoc",
+    "dinh-muc"
+   ],
+   "hints": [
+    "I_đm = P_đm/U_đm.",
+    "R = U_đm²/P_đm."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0049",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "dien-so",
+   "statement_vi": "Cho dòng điện 2 A chạy qua một điện trở 10 Ω trong 300 giây. Tính nhiệt lượng tỏa ra trên điện trở theo đơn vị calo (dùng công thức Jun - Len-xơ dạng calo).",
+   "statement_en": "A 2 A current flows through a 10 Ω resistor for 300 s. Find the heat released in the resistor in calories (use the calorie form of the Joule–Lenz law).",
+   "answer": "Q = 2880 cal",
+   "answer_numeric": 2880,
+   "answer_unit": "cal",
+   "tolerance": 5,
+   "solution_steps": [
+    {
+     "explain": "Nhiệt lượng tỏa ra theo đơn vị calo dùng hệ số 0,24 nhân bình phương dòng điện, điện trở và thời gian.",
+     "latex": "Q = 0{,}24 \\, I^{2} R t = 0{,}24 \\times 2^{2} \\times 10 \\times 300 = 2880\\ \\text{cal}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.jun-len-xo-calo"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "định luật Jun - Len-xơ theo calo"
+   ],
+   "tags": [
+    "dien-hoc",
+    "jun-len-xo"
+   ],
+   "hints": [
+    "Q = 0,24·I²·R·t (cal).",
+    "Nhớ bình phương cường độ dòng điện."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0050",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "dien-so",
+   "statement_vi": "Một bàn là tiêu thụ điện năng toàn phần 500 000 J, trong đó nhiệt lượng có ích để làm nóng mặt bàn là là 450 000 J. Tính hiệu suất sử dụng điện năng của bàn là.",
+   "statement_en": "An iron consumes 500 000 J of electrical energy in total, of which 450 000 J usefully heats the soleplate. Find the efficiency of electrical energy use.",
+   "answer": "H = 90%",
+   "answer_numeric": 90,
+   "answer_unit": "%",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Hiệu suất sử dụng điện năng bằng điện năng có ích chia điện năng toàn phần, nhân 100%.",
+     "latex": "H = \\dfrac{A_{i}}{A_{tp}} \\cdot 100\\% = \\dfrac{450000}{500000} \\cdot 100\\% = 90\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.hieu-suat-dien"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "hiệu suất sử dụng điện năng"
+   ],
+   "tags": [
+    "dien-hoc",
+    "hieu-suat"
+   ],
+   "hints": [
+    "H = A_i/A_tp·100%."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0051",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện học",
+   "type": "tu-luan",
+   "statement_vi": "Một biến trở con chạy làm bằng dây điện trở hình trụ tròn đường kính 0,5 mm, khi mắc hết chiều dài 10 m vào mạch. Biết điện trở suất của dây là 1,1·10⁻⁶ Ω·m. Tính tiết diện dây và điện trở lớn nhất của biến trở.",
+   "statement_en": "A slide rheostat is made from a cylindrical resistance wire of diameter 0.5 mm, with a full length of 10 m in the circuit. The resistivity is 1.1·10⁻⁶ Ω·m. Find the wire's cross-sectional area and the maximum resistance of the rheostat.",
+   "answer": "S ≈ 1,96·10⁻⁷ m²; R ≈ 56 Ω",
+   "solution_steps": [
+    {
+     "explain": "Đổi đường kính sang mét rồi tính tiết diện dây tròn theo đường kính.",
+     "latex": "S = \\dfrac{\\pi d^{2}}{4} = \\dfrac{\\pi \\times \\left( 0{,}5 \\times 10^{-3} \\right)^{2}}{4} \\approx 1{,}96 \\times 10^{-7}\\ \\text{m}^{2}"
+    },
+    {
+     "explain": "Điện trở lớn nhất ứng với toàn bộ chiều dài dây tham gia mạch.",
+     "latex": "R = \\rho \\dfrac{l}{S} = \\dfrac{1{,}1 \\times 10^{-6} \\times 10}{1{,}96 \\times 10^{-7}} \\approx 56\\ \\Omega"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-hoc.tiet-dien-day-tron",
+    "physics.thcs.dien-hoc.bien-tro"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "tiết diện dây tròn theo đường kính",
+    "điện trở của biến trở"
+   ],
+   "tags": [
+    "dien-hoc",
+    "bien-tro"
+   ],
+   "hints": [
+    "S = πd²/4 (đổi d ra m).",
+    "R lớn nhất ứng với toàn bộ chiều dài dây."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0052",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Truyền tải điện năng",
+   "type": "tu-luan",
+   "statement_vi": "Một đường dây tải điện dùng dây đồng (điện trở suất 1,7·10⁻⁸ Ω·m), khoảng cách từ nơi phát đến nơi tiêu thụ là 2000 m, tiết diện mỗi dây 2·10⁻⁵ m². Đường dây gồm hai dây đi và về. (a) Tính điện trở của đường dây. (b) Nếu dòng điện trên dây là 10 A, tính độ giảm thế trên đường dây.",
+   "statement_en": "A power line uses copper wire (resistivity 1.7·10⁻⁸ Ω·m); the distance from source to load is 2000 m, each wire has cross-section 2·10⁻⁵ m². The line has two wires (out and back). (a) Find the line resistance. (b) If the line current is 10 A, find the voltage drop along the line.",
+   "answer": "R = 3,4 Ω; ΔU = 34 V",
+   "solution_steps": [
+    {
+     "explain": "Đường dây hai dây nên tổng chiều dài là 2 lần khoảng cách; điện trở đường dây tính theo công thức có hệ số 2.",
+     "latex": "R = \\rho \\dfrac{2\\ell}{S} = \\dfrac{1{,}7 \\times 10^{-8} \\times 2 \\times 2000}{2 \\times 10^{-5}} = 3{,}4\\ \\Omega"
+    },
+    {
+     "explain": "Độ giảm thế trên đường dây bằng dòng điện nhân điện trở đường dây.",
+     "latex": "\\Delta U = I R = 10 \\times 3{,}4 = 34\\ \\text{V}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.truyen-tai-dien-nang.dien-tro-duong-day",
+    "physics.thcs.truyen-tai-dien-nang.do-giam-the"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "điện trở đường dây hai dây",
+    "độ giảm thế trên đường dây"
+   ],
+   "tags": [
+    "truyen-tai",
+    "duong-day"
+   ],
+   "hints": [
+    "Hai dây nên dùng 2ℓ.",
+    "ΔU = I·R."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0053",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Truyền tải điện năng",
+   "type": "tu-luan",
+   "statement_vi": "Truyền một công suất điện 100 kW đi xa với hiệu điện thế nơi truyền đi 10 kV, điện trở tổng của đường dây là 10 Ω. (a) Tính công suất hao phí trên đường dây. (b) Tính hiệu suất truyền tải.",
+   "statement_en": "Transmit 100 kW of electrical power over a distance at a line voltage of 10 kV, with total line resistance 10 Ω. (a) Find the power lost on the line. (b) Find the transmission efficiency.",
+   "answer": "P_hp = 1000 W; H = 99%",
+   "solution_steps": [
+    {
+     "explain": "Công suất hao phí trên đường dây tỉ lệ với bình phương công suất truyền và điện trở, tỉ lệ nghịch bình phương hiệu điện thế.",
+     "latex": "\\mathcal{P}_{hp} = \\dfrac{\\mathcal{P}^{2} R}{U^{2}} = \\dfrac{\\left( 10^{5} \\right)^{2} \\times 10}{\\left( 10^{4} \\right)^{2}} = 1000\\ \\text{W}"
+    },
+    {
+     "explain": "Hiệu suất truyền tải bằng phần công suất còn lại chia công suất truyền đi.",
+     "latex": "H = \\dfrac{\\mathcal{P} - \\mathcal{P}_{hp}}{\\mathcal{P}} \\cdot 100\\% = \\dfrac{100000 - 1000}{100000} \\cdot 100\\% = 99\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.truyen-tai-dien-nang.cong-suat-hao-phi",
+    "physics.thcs.truyen-tai-dien-nang.hieu-suat-truyen-tai"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "công suất hao phí truyền tải",
+    "hiệu suất truyền tải điện năng"
+   ],
+   "tags": [
+    "truyen-tai",
+    "hao-phi"
+   ],
+   "hints": [
+    "P_hp = P²·R/U².",
+    "H = (P − P_hp)/P·100%."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0054",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Truyền tải điện năng",
+   "type": "tu-luan",
+   "statement_vi": "Một máy biến áp lí tưởng hạ hiệu điện thế từ 220 V xuống 22 V. Dòng điện ở cuộn thứ cấp là 5 A. Tính dòng điện ở cuộn sơ cấp bằng hai cách: dùng bảo toàn công suất, rồi kiểm tra bằng tỉ số dòng điện.",
+   "statement_en": "An ideal transformer steps voltage down from 220 V to 22 V. The secondary current is 5 A. Find the primary current in two ways: using power conservation, then checking with the current ratio.",
+   "answer": "I₁ = 0,5 A",
+   "solution_steps": [
+    {
+     "explain": "Máy biến áp lí tưởng bảo toàn công suất: U₁I₁ = U₂I₂; rút dòng sơ cấp.",
+     "latex": "I_{1} = \\dfrac{U_{2} I_{2}}{U_{1}} = \\dfrac{22 \\times 5}{220} = 0{,}5\\ \\text{A}"
+    },
+    {
+     "explain": "Kiểm tra bằng tỉ số dòng điện: dòng tỉ lệ nghịch với hiệu điện thế.",
+     "latex": "\\dfrac{I_{1}}{I_{2}} = \\dfrac{U_{2}}{U_{1}} = \\dfrac{22}{220} = 0{,}1 \\Rightarrow I_{1} = 0{,}1 \\times 5 = 0{,}5\\ \\text{A}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-cong-suat",
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dong-dien"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "bảo toàn công suất máy biến áp",
+    "tỉ số dòng điện máy biến áp"
+   ],
+   "tags": [
+    "truyen-tai",
+    "may-bien-ap"
+   ],
+   "hints": [
+    "U1·I1 = U2·I2.",
+    "I1/I2 = U2/U1."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0055",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện từ",
+   "type": "dien-so",
+   "statement_vi": "Dòng điện xoay chiều ở Việt Nam có tần số 50 Hz. Tính chu kì của dòng điện này.",
+   "statement_en": "The alternating current in Vietnam has a frequency of 50 Hz. Find its period.",
+   "answer": "T = 0,02 s",
+   "answer_numeric": 0.02,
+   "answer_unit": "s",
+   "tolerance": 0.001,
+   "solution_steps": [
+    {
+     "explain": "Chu kì là nghịch đảo của tần số.",
+     "latex": "T = \\dfrac{1}{f} = \\dfrac{1}{50} = 0{,}02\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-tu.dong-dien-xoay-chieu"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "chu kì và tần số dòng điện xoay chiều"
+   ],
+   "tags": [
+    "dien-tu",
+    "xoay-chieu"
+   ],
+   "hints": [
+    "T = 1/f."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0056",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện từ",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong trường hợp nào sau đây xuất hiện dòng điện cảm ứng trong một cuộn dây dẫn kín?",
+   "statement_en": "In which case does an induced current appear in a closed conducting coil?",
+   "answer": "D",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Đặt cuộn dây gần một nam châm đứng yên",
+     "why_wrong": "Nam châm đứng yên thì số đường sức từ qua cuộn không đổi nên không có dòng cảm ứng."
+    },
+    {
+     "key": "B",
+     "text": "Cho dòng điện không đổi chạy qua một cuộn dây khác đặt cố định bên cạnh",
+     "why_wrong": "Dòng không đổi tạo từ trường không đổi, số đường sức từ qua cuộn kín không biến thiên."
+    },
+    {
+     "key": "C",
+     "text": "Nối hai đầu cuộn dây vào một điện trở",
+     "why_wrong": "Việc nối điện trở không làm biến thiên từ thông qua cuộn nên không sinh dòng cảm ứng."
+    },
+    {
+     "key": "D",
+     "text": "Đưa một nam châm lại gần rồi ra xa cuộn dây",
+     "why_wrong": ""
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Dòng điện cảm ứng chỉ xuất hiện khi số đường sức từ (từ thông) xuyên qua tiết diện cuộn dây kín biến thiên.",
+     "latex": "\\Delta \\Phi \\neq 0 \\Rightarrow \\text{co dong dien cam ung}"
+    },
+    {
+     "explain": "Đưa nam châm lại gần rồi ra xa làm số đường sức từ qua cuộn thay đổi liên tục nên sinh dòng cảm ứng.",
+     "latex": ""
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-tu.dieu-kien-dong-dien-cam-ung"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "điều kiện xuất hiện dòng điện cảm ứng"
+   ],
+   "tags": [
+    "dien-tu",
+    "cam-ung"
+   ],
+   "hints": [
+    "Cần từ thông qua cuộn biến thiên.",
+    "Nam châm phải chuyển động tương đối với cuộn."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0057",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện từ",
+   "type": "trac-nghiem",
+   "statement_vi": "Một đoạn dây dẫn thẳng mang dòng điện đặt trong từ trường. Để xác định chiều của lực từ tác dụng lên dây, ta dùng quy tắc nào?",
+   "statement_en": "A straight current-carrying wire is placed in a magnetic field. Which rule is used to find the direction of the magnetic force on it?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Quy tắc nắm tay phải",
+     "why_wrong": "Quy tắc nắm tay phải dùng để xác định chiều đường sức từ của ống dây có dòng điện, không phải chiều lực từ lên dây."
+    },
+    {
+     "key": "B",
+     "text": "Quy tắc bàn tay trái",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "Quy tắc hình bình hành",
+     "why_wrong": "Quy tắc hình bình hành dùng để tổng hợp lực nói chung, không xác định chiều lực từ."
+    },
+    {
+     "key": "D",
+     "text": "Định luật Ôm",
+     "why_wrong": "Định luật Ôm liên hệ U, I, R chứ không liên quan đến chiều lực từ."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Quy tắc bàn tay trái: để đường sức từ hướng vào lòng bàn tay, chiều dòng điện theo bốn ngón tay, thì ngón cái choãi 90° chỉ chiều lực từ.",
+     "latex": "\\vec{B} \\ \\text{vao long ban tay}, \\ \\vec{I} \\ \\text{theo 4 ngon} \\Rightarrow \\vec{F} \\ \\text{theo ngon cai}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-tu.quy-tac-ban-tay-trai"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "quy tắc bàn tay trái",
+    "chiều lực từ"
+   ],
+   "tags": [
+    "dien-tu",
+    "luc-tu"
+   ],
+   "hints": [
+    "Lực từ lên dây: quy tắc bàn tay trái.",
+    "Nắm tay phải dùng cho chiều đường sức từ ống dây."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0058",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện từ",
+   "type": "tu-luan",
+   "statement_vi": "Một động cơ điện một chiều tiêu thụ điện năng 1000 J, trong đó công cơ học có ích là 850 J, phần còn lại tỏa nhiệt. Tính nhiệt lượng hao phí và hiệu suất của động cơ.",
+   "statement_en": "A DC motor consumes 1000 J of electrical energy, of which 850 J is useful mechanical work and the rest is dissipated as heat. Find the wasted heat and the motor's efficiency.",
+   "answer": "Q_hao phí = 150 J; H = 85%",
+   "solution_steps": [
+    {
+     "explain": "Điện năng chuyển thành công cơ học có ích và nhiệt hao phí; suy ra nhiệt hao phí.",
+     "latex": "Q_{\\text{hao phi}} = A_{\\text{dien}} - A_{\\text{co ich}} = 1000 - 850 = 150\\ \\text{J}"
+    },
+    {
+     "explain": "Hiệu suất bằng công cơ học có ích chia điện năng tiêu thụ.",
+     "latex": "H = \\dfrac{A_{\\text{co ich}}}{A_{\\text{dien}}} \\cdot 100\\% = \\dfrac{850}{1000} \\cdot 100\\% = 85\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.dien-tu.dong-co-dien-mot-chieu"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "chuyển hóa năng lượng trong động cơ điện",
+    "hiệu suất động cơ điện"
+   ],
+   "tags": [
+    "dien-tu",
+    "dong-co"
+   ],
+   "hints": [
+    "Nhiệt hao phí = điện năng − công có ích.",
+    "H = công có ích/điện năng."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0059",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "dien-so",
+   "statement_vi": "Một tia sáng chiếu tới gương phẳng, góc tới bằng 30°. Tính góc hợp bởi tia tới và tia phản xạ.",
+   "statement_en": "A light ray strikes a plane mirror with an angle of incidence of 30°. Find the angle between the incident ray and the reflected ray.",
+   "answer": "60°",
+   "answer_numeric": 60,
+   "answer_unit": "degree",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Theo định luật phản xạ, góc phản xạ bằng góc tới; góc giữa tia tới và tia phản xạ bằng tổng hai góc, tức 2 lần góc tới.",
+     "latex": "\\widehat{(SI, IR)} = i + i' = 2i = 2 \\times 30^{\\circ} = 60^{\\circ}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.goc-giua-tia-toi-va-tia-phan-xa"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "góc giữa tia tới và tia phản xạ"
+   ],
+   "tags": [
+    "quang-hoc",
+    "phan-xa"
+   ],
+   "hints": [
+    "Góc phản xạ bằng góc tới.",
+    "Góc giữa hai tia = 2i."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0060",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "trac-nghiem",
+   "statement_vi": "Một người đứng cách gương phẳng 2 m. Khoảng cách từ người đó đến ảnh của mình trong gương là:",
+   "statement_en": "A person stands 2 m from a plane mirror. The distance from the person to their image in the mirror is:",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "1 m",
+     "why_wrong": "Nhầm lấy nửa khoảng cách; thực ra ảnh cách gương đúng bằng vật cách gương."
+    },
+    {
+     "key": "B",
+     "text": "2 m",
+     "why_wrong": "Đây là khoảng cách từ người đến gương, chưa cộng khoảng cách từ gương đến ảnh."
+    },
+    {
+     "key": "C",
+     "text": "4 m",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "8 m",
+     "why_wrong": "Nhân đôi nhầm lần nữa; ảnh cách gương 2 m nên tổng chỉ là 4 m."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Ảnh qua gương phẳng là ảnh ảo, đối xứng với vật qua gương nên ảnh cách gương đúng bằng vật cách gương.",
+     "latex": "d' = d = 2\\ \\text{m}"
+    },
+    {
+     "explain": "Khoảng cách người - ảnh bằng tổng khoảng cách người - gương và gương - ảnh.",
+     "latex": "L = d + d' = 2 + 2 = 4\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.anh-qua-guong-phang"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính chất ảnh qua gương phẳng",
+    "khoảng cách vật - ảnh qua gương"
+   ],
+   "tags": [
+    "quang-hoc",
+    "guong-phang"
+   ],
+   "hints": [
+    "Ảnh cách gương bằng vật cách gương.",
+    "Cộng hai khoảng cách."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0061",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "dien-so",
+   "statement_vi": "Một người cao 1,7 m muốn nhìn thấy toàn bộ ảnh của mình trong một gương phẳng treo thẳng đứng. Tính chiều cao tối thiểu của gương.",
+   "statement_en": "A person 1.7 m tall wants to see their whole image in a vertical plane mirror. Find the minimum height of the mirror.",
+   "answer": "h_gương = 0,85 m",
+   "answer_numeric": 0.85,
+   "answer_unit": "m",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Do tính chất ảnh đối xứng, gương chỉ cần cao bằng một nửa chiều cao người là đủ nhìn thấy toàn thân.",
+     "latex": "h_{g} = \\dfrac{h}{2} = \\dfrac{1{,}7}{2} = 0{,}85\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.chieu-cao-guong-toi-thieu"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "chiều cao tối thiểu của gương phẳng"
+   ],
+   "tags": [
+    "quang-hoc",
+    "guong-phang"
+   ],
+   "hints": [
+    "Gương tối thiểu = nửa chiều cao người."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0062",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "tu-luan",
+   "statement_vi": "Một tia sáng truyền từ không khí (chiết suất 1) vào nước (chiết suất 1,33) với góc tới 30°. Tính góc khúc xạ (làm tròn đến độ).",
+   "statement_en": "A light ray travels from air (index 1) into water (index 1.33) at an angle of incidence of 30°. Find the angle of refraction (rounded to the nearest degree).",
+   "answer": "r ≈ 22°",
+   "solution_steps": [
+    {
+     "explain": "Áp dụng định luật khúc xạ (Snell): tích chiết suất với sin góc ở hai môi trường bằng nhau.",
+     "latex": "n_{1} \\sin i = n_{2} \\sin r"
+    },
+    {
+     "explain": "Rút sin góc khúc xạ rồi suy ra góc.",
+     "latex": "\\sin r = \\dfrac{n_{1} \\sin i}{n_{2}} = \\dfrac{1 \\times \\sin 30^{\\circ}}{1{,}33} = \\dfrac{0{,}5}{1{,}33} \\approx 0{,}376 \\Rightarrow r \\approx 22^{\\circ}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.dinh-luat-khuc-xa-snell"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "định luật khúc xạ Snell",
+    "tính góc khúc xạ"
+   ],
+   "tags": [
+    "quang-hoc",
+    "khuc-xa"
+   ],
+   "hints": [
+    "n1·sin i = n2·sin r.",
+    "Vào môi trường chiết quang hơn thì góc khúc xạ nhỏ hơn góc tới."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0063",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "dien-so",
+   "statement_vi": "Ánh sáng truyền trong một loại thủy tinh với tốc độ 2·10⁸ m/s. Biết tốc độ ánh sáng trong chân không là 3·10⁸ m/s. Tính chiết suất của loại thủy tinh này.",
+   "statement_en": "Light travels in a type of glass at 2·10⁸ m/s. The speed of light in vacuum is 3·10⁸ m/s. Find the refractive index of this glass.",
+   "answer": "n = 1,5",
+   "answer_numeric": 1.5,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Chiết suất của môi trường bằng tốc độ ánh sáng trong chân không chia cho tốc độ ánh sáng trong môi trường đó.",
+     "latex": "n = \\dfrac{c}{v} = \\dfrac{3 \\times 10^{8}}{2 \\times 10^{8}} = 1{,}5"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.chiet-suat"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "chiết suất theo tốc độ ánh sáng"
+   ],
+   "tags": [
+    "quang-hoc",
+    "chiet-suat"
+   ],
+   "hints": [
+    "n = c/v."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0064",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "tu-luan",
+   "statement_vi": "Đặt một vật cao 5 cm vuông góc trục chính, cách một thấu kính hội tụ có tiêu cự 20 cm một khoảng 30 cm. Tính khoảng cách từ ảnh đến thấu kính và chiều cao của ảnh.",
+   "statement_en": "A 5 cm tall object is placed perpendicular to the principal axis, 30 cm from a converging lens of focal length 20 cm. Find the image distance and the image height.",
+   "answer": "d' = 60 cm; h' = 10 cm",
+   "solution_steps": [
+    {
+     "explain": "Vị trí ảnh tính theo công thức thấu kính đã biến đổi.",
+     "latex": "d' = \\dfrac{d f}{d - f} = \\dfrac{30 \\times 20}{30 - 20} = \\dfrac{600}{10} = 60\\ \\text{cm}"
+    },
+    {
+     "explain": "Chiều cao ảnh bằng tỉ số khoảng cách ảnh trên vật nhân chiều cao vật.",
+     "latex": "h' = \\dfrac{d'}{d} h = \\dfrac{60}{30} \\times 5 = 10\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.vi-tri-anh-qua-thau-kinh",
+    "physics.thcs.quang-hoc.chieu-cao-anh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "vị trí ảnh qua thấu kính",
+    "chiều cao ảnh qua thấu kính"
+   ],
+   "tags": [
+    "quang-hoc",
+    "thau-kinh"
+   ],
+   "hints": [
+    "d' = df/(d − f).",
+    "h' = (d'/d)·h."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0065",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "tu-luan",
+   "statement_vi": "Một vật đặt cách thấu kính hội tụ có tiêu cự 15 cm một khoảng 30 cm. Tính vị trí ảnh và khoảng cách giữa vật và ảnh.",
+   "statement_en": "An object is placed 30 cm from a converging lens of focal length 15 cm. Find the image position and the distance between the object and the image.",
+   "answer": "d' = 30 cm; L = 60 cm",
+   "solution_steps": [
+    {
+     "explain": "Tính vị trí ảnh theo công thức thấu kính.",
+     "latex": "d' = \\dfrac{d f}{d - f} = \\dfrac{30 \\times 15}{30 - 15} = \\dfrac{450}{15} = 30\\ \\text{cm}"
+    },
+    {
+     "explain": "Ảnh thật nằm khác phía với vật; khoảng cách vật - ảnh bằng tổng d và d'.",
+     "latex": "L = \\left| d + d' \\right| = 30 + 30 = 60\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.vi-tri-anh-qua-thau-kinh",
+    "physics.thcs.quang-hoc.khoang-cach-vat-anh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "vị trí ảnh qua thấu kính",
+    "khoảng cách vật - ảnh"
+   ],
+   "tags": [
+    "quang-hoc",
+    "thau-kinh"
+   ],
+   "hints": [
+    "d' = df/(d − f).",
+    "Ảnh thật: L = d + d'."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0066",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "dien-so",
+   "statement_vi": "Mắt của một người có điểm cực viễn cách mắt 50 cm (mắt cận thị). Tính độ tụ của kính cận cần đeo để nhìn rõ vật ở rất xa (kính đeo sát mắt).",
+   "statement_en": "A person's far point is 50 cm from the eye (short-sighted). Find the optical power of the corrective lens needed to see very distant objects (lens worn close to the eye).",
+   "answer": "D = -2 điốp",
+   "answer_numeric": -2,
+   "answer_unit": "dp",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Kính cận là thấu kính phân kì có tiêu cự bằng khoảng cực viễn (đổi ra mét), lấy dấu âm.",
+     "latex": "f = -OC_{v} = -50\\ \\text{cm} = -0{,}5\\ \\text{m}"
+    },
+    {
+     "explain": "Độ tụ bằng nghịch đảo tiêu cự (đơn vị mét), mang dấu âm với kính phân kì.",
+     "latex": "D = -\\dfrac{1}{OC_{v}} = -\\dfrac{1}{0{,}5} = -2\\ \\text{diop}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.kinh-can-thi"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "kính chữa tật cận thị",
+    "độ tụ kính phân kì"
+   ],
+   "tags": [
+    "quang-hoc",
+    "kinh-can"
+   ],
+   "hints": [
+    "Tiêu cự kính cận = −OC_v (đổi ra m).",
+    "D = 1/f mang dấu âm."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0067",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "tu-luan",
+   "statement_vi": "Một người mắt lão có điểm cực cận cách mắt 50 cm. Người đó muốn đọc sách đặt cách mắt 25 cm. Tính tiêu cự và độ tụ của kính cần đeo (kính đeo sát mắt).",
+   "statement_en": "A far-sighted (presbyopic) person has a near point 50 cm from the eye and wants to read a book at 25 cm. Find the focal length and power of the required lens (worn close to the eye).",
+   "answer": "f = 50 cm; D = 2 điốp",
+   "solution_steps": [
+    {
+     "explain": "Kính lão tạo ảnh ảo của vật (đặt ở 25 cm) tại điểm cực cận (50 cm); dùng công thức kính lão.",
+     "latex": "\\dfrac{1}{f} = \\dfrac{1}{d} - \\dfrac{1}{OC_{c}} = \\dfrac{1}{25} - \\dfrac{1}{50} = \\dfrac{1}{50}"
+    },
+    {
+     "explain": "Suy ra tiêu cự và độ tụ (đổi tiêu cự ra mét).",
+     "latex": "f = 50\\ \\text{cm} = 0{,}5\\ \\text{m} \\Rightarrow D = \\dfrac{1}{0{,}5} = 2\\ \\text{diop}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.kinh-lao-vien-thi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "kính chữa mắt lão",
+    "độ tụ kính hội tụ"
+   ],
+   "tags": [
+    "quang-hoc",
+    "kinh-lao"
+   ],
+   "hints": [
+    "1/f = 1/d − 1/OC_c.",
+    "D = 1/f với f tính bằng mét."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0068",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "dien-so",
+   "statement_vi": "Một kính lúp có tiêu cự 5 cm. Tính số bội giác của kính lúp khi ngắm chừng ở vô cực (lấy khoảng cực cận 25 cm).",
+   "statement_en": "A magnifying glass has a focal length of 5 cm. Find its angular magnification when the image is at infinity (take the near point as 25 cm).",
+   "answer": "G = 5",
+   "answer_numeric": 5,
+   "answer_unit": "",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Số bội giác của kính lúp khi ngắm chừng ở vô cực bằng 25 chia tiêu cự (tính bằng cm).",
+     "latex": "G = \\dfrac{25}{f} = \\dfrac{25}{5} = 5"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.kinh-lup-so-boi-giac"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "số bội giác của kính lúp"
+   ],
+   "tags": [
+    "quang-hoc",
+    "kinh-lup"
+   ],
+   "hints": [
+    "G = 25/f (f tính bằng cm)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0069",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "trac-nghiem",
+   "statement_vi": "Đặt một vật sáng cách thấu kính hội tụ một khoảng lớn hơn hai lần tiêu cự (d > 2f). Ảnh của vật qua thấu kính có tính chất:",
+   "statement_en": "An object is placed farther than twice the focal length (d > 2f) from a converging lens. The image has the property:",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Ảnh thật, ngược chiều, nhỏ hơn vật",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Ảnh thật, ngược chiều, lớn hơn vật",
+     "why_wrong": "Ảnh lớn hơn vật chỉ xảy ra khi f < d < 2f, không phải khi d > 2f."
+    },
+    {
+     "key": "C",
+     "text": "Ảnh ảo, cùng chiều, lớn hơn vật",
+     "why_wrong": "Ảnh ảo cùng chiều lớn hơn vật chỉ khi vật trong khoảng tiêu cự (d < f)."
+    },
+    {
+     "key": "D",
+     "text": "Ảnh ảo, cùng chiều, nhỏ hơn vật",
+     "why_wrong": "Thấu kính hội tụ không cho ảnh ảo nhỏ hơn vật; đó là đặc điểm của thấu kính phân kì."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Với thấu kính hội tụ, khi vật đặt xa hơn 2f thì ảnh là ảnh thật, ngược chiều và nhỏ hơn vật.",
+     "latex": "d > 2f: \\ \\text{anh that, nguoc chieu, nho hon vat}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.thau-kinh-hoi-tu-tao-anh"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính chất ảnh qua thấu kính hội tụ"
+   ],
+   "tags": [
+    "quang-hoc",
+    "thau-kinh"
+   ],
+   "hints": [
+    "Vật ngoài 2f cho ảnh thật nhỏ hơn.",
+    "Ảnh lớn hơn vật cần f < d < 2f."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0070",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Âm học",
+   "type": "tu-luan",
+   "statement_vi": "Một vật thực hiện được 600 dao động trong 5 giây. Tính tần số dao động và chu kì dao động của vật.",
+   "statement_en": "An object completes 600 oscillations in 5 s. Find its frequency and its period.",
+   "answer": "f = 120 Hz; T ≈ 0,0083 s",
+   "solution_steps": [
+    {
+     "explain": "Tần số bằng số dao động chia thời gian.",
+     "latex": "f = \\dfrac{N}{t} = \\dfrac{600}{5} = 120\\ \\text{Hz}"
+    },
+    {
+     "explain": "Chu kì bằng thời gian chia số dao động (hoặc nghịch đảo tần số).",
+     "latex": "T = \\dfrac{t}{N} = \\dfrac{5}{600} \\approx 0{,}0083\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.am-hoc.chu-ki-dao-dong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tần số dao động",
+    "chu kì dao động"
+   ],
+   "tags": [
+    "am-hoc",
+    "dao-dong"
+   ],
+   "hints": [
+    "f = N/t.",
+    "T = t/N = 1/f."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0071",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Âm học",
+   "type": "dien-so",
+   "statement_vi": "Âm truyền trong không khí với tốc độ 340 m/s. Tính quãng đường âm truyền được trong 2 giây.",
+   "statement_en": "Sound travels in air at 340 m/s. Find the distance the sound travels in 2 s.",
+   "answer": "s = 680 m",
+   "answer_numeric": 680,
+   "answer_unit": "m",
+   "tolerance": 1,
+   "solution_steps": [
+    {
+     "explain": "Quãng đường truyền âm bằng tốc độ truyền âm nhân thời gian.",
+     "latex": "s = v \\cdot t = 340 \\times 2 = 680\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.am-hoc.quang-duong-truyen-am"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "quãng đường truyền âm"
+   ],
+   "tags": [
+    "am-hoc",
+    "truyen-am"
+   ],
+   "hints": [
+    "s = v·t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0072",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Âm học",
+   "type": "tu-luan",
+   "statement_vi": "Một người đứng trước một vách đá, hét lên và sau 0,5 giây thì nghe được tiếng vang. Biết tốc độ truyền âm trong không khí là 340 m/s. (a) Tính khoảng cách từ người đó đến vách đá. (b) Người đó có nghe rõ tiếng vang tách biệt với âm phát ra không?",
+   "statement_en": "A person stands before a cliff, shouts, and hears the echo after 0.5 s. The speed of sound in air is 340 m/s. (a) Find the distance from the person to the cliff. (b) Is the echo heard as separate from the original sound?",
+   "answer": "a) s = 85 m; b) Có, vì thời gian 0,5 s ≥ 1/15 s",
+   "solution_steps": [
+    {
+     "explain": "Âm đi đến vách rồi phản xạ về nên quãng đường bằng 2 lần khoảng cách; khoảng cách bằng tốc độ nhân thời gian chia 2.",
+     "latex": "s = \\dfrac{v t}{2} = \\dfrac{340 \\times 0{,}5}{2} = 85\\ \\text{m}"
+    },
+    {
+     "explain": "Nghe rõ tiếng vang khi thời gian trễ ít nhất 1/15 s; ở đây 0,5 s lớn hơn nên nghe rõ tiếng vang.",
+     "latex": "t = 0{,}5\\ \\text{s} \\ge \\dfrac{1}{15}\\ \\text{s} \\Rightarrow \\text{nghe ro tieng vang}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.am-hoc.tieng-vang",
+    "physics.thcs.am-hoc.dieu-kien-nghe-tieng-vang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "khoảng cách tới vật phản xạ âm",
+    "điều kiện nghe được tiếng vang"
+   ],
+   "tags": [
+    "am-hoc",
+    "tieng-vang"
+   ],
+   "hints": [
+    "Âm đi và về nên s = v·t/2.",
+    "Nghe rõ tiếng vang khi t ≥ 1/15 s."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0073",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "dien-so",
+   "statement_vi": "Một máy ảnh có vật kính là thấu kính hội tụ tiêu cự 4 cm. Chụp một vật đặt cách vật kính 20 cm. Tính khoảng cách từ phim đến vật kính để ảnh hiện rõ.",
+   "statement_en": "A camera's lens is a converging lens of focal length 4 cm. It photographs an object 20 cm from the lens. Find the distance from the film to the lens for a sharp image.",
+   "answer": "d' = 5 cm",
+   "answer_numeric": 5,
+   "answer_unit": "cm",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Sự tạo ảnh trên phim tuân theo công thức thấu kính; rút nghịch đảo khoảng cách ảnh.",
+     "latex": "\\dfrac{1}{f} = \\dfrac{1}{d} + \\dfrac{1}{d'} \\Rightarrow \\dfrac{1}{d'} = \\dfrac{1}{f} - \\dfrac{1}{d} = \\dfrac{1}{4} - \\dfrac{1}{20} = \\dfrac{1}{5}"
+    },
+    {
+     "explain": "Suy ra khoảng cách từ phim đến vật kính.",
+     "latex": "d' = 5\\ \\text{cm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.may-anh"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "sự tạo ảnh trên phim của máy ảnh",
+    "công thức thấu kính"
+   ],
+   "tags": [
+    "quang-hoc",
+    "may-anh"
+   ],
+   "hints": [
+    "1/f = 1/d + 1/d'.",
+    "Rút 1/d' = 1/f − 1/d."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0074",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Âm học",
+   "type": "trac-nghiem",
+   "statement_vi": "Khi tần số dao động của một nguồn âm tăng lên (biên độ không đổi) thì âm phát ra thay đổi như thế nào?",
+   "statement_en": "When the vibration frequency of a sound source increases (amplitude unchanged), how does the emitted sound change?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Âm phát ra càng to",
+     "why_wrong": "Độ to của âm phụ thuộc biên độ dao động, không phụ thuộc tần số."
+    },
+    {
+     "key": "B",
+     "text": "Âm phát ra càng cao (càng bổng)",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "Âm phát ra càng trầm (càng thấp)",
+     "why_wrong": "Âm trầm ứng với tần số nhỏ; tần số tăng thì âm bổng lên chứ không trầm đi."
+    },
+    {
+     "key": "D",
+     "text": "Âm truyền đi càng nhanh",
+     "why_wrong": "Tốc độ truyền âm chỉ phụ thuộc môi trường, không phụ thuộc tần số của âm."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Độ cao của âm gắn với tần số: tần số càng lớn thì âm càng cao (bổng); độ to mới gắn với biên độ.",
+     "latex": "f \\uparrow \\Rightarrow \\text{am cang cao}; \\quad A \\uparrow \\Rightarrow \\text{am cang to}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.am-hoc.do-cao-cua-am"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "độ cao của âm theo tần số",
+    "phân biệt độ cao và độ to"
+   ],
+   "tags": [
+    "am-hoc",
+    "do-cao-am"
+   ],
+   "hints": [
+    "Độ cao gắn với tần số.",
+    "Độ to gắn với biên độ."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0075",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "trac-nghiem",
+   "statement_vi": "Vì sao khi đặt một vật cản sáng trước một nguồn sáng nhỏ trong không khí, ta quan sát được vùng bóng tối rõ nét phía sau vật?",
+   "statement_en": "Why do we observe a sharp shadow behind an opaque object placed before a small light source in air?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Vì trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường thẳng nên bị vật chắn lại",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Vì ánh sáng truyền theo đường cong vòng qua vật cản",
+     "why_wrong": "Nếu ánh sáng đi vòng qua vật thì sẽ không tạo ra vùng tối rõ nét phía sau."
+    },
+    {
+     "key": "C",
+     "text": "Vì vật cản hút hết ánh sáng chiếu tới nó",
+     "why_wrong": "Vật không hút ánh sáng; vùng tối hình thành do các tia sáng thẳng bị vật chặn lại."
+    },
+    {
+     "key": "D",
+     "text": "Vì mắt người không nhìn rõ vật cản",
+     "why_wrong": "Bóng tối là vùng không nhận được ánh sáng, không liên quan đến việc mắt có nhìn rõ vật cản hay không."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường thẳng; các tia bị vật cản chặn tạo nên vùng bóng tối phía sau.",
+     "latex": "\\text{trong suot, dong tinh} \\Rightarrow \\text{anh sang truyen thang}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.dinh-luat-truyen-thang-anh-sang"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "định luật truyền thẳng của ánh sáng",
+    "giải thích bóng tối"
+   ],
+   "tags": [
+    "quang-hoc",
+    "truyen-thang"
+   ],
+   "hints": [
+    "Ánh sáng truyền theo đường thẳng.",
+    "Vùng tối do tia sáng bị vật chặn."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0076",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "trac-nghiem",
+   "statement_vi": "Chiếu một tia sáng từ không khí vào nước với góc tới i khác 0. So sánh góc khúc xạ r với góc tới i:",
+   "statement_en": "A light ray goes from air into water with an angle of incidence i (i ≠ 0). Compare the angle of refraction r with i:",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "r < i",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "r > i",
+     "why_wrong": "r > i xảy ra khi ánh sáng đi từ nước ra không khí (vào môi trường kém chiết quang hơn), ngược với đề bài."
+    },
+    {
+     "key": "C",
+     "text": "r = i",
+     "why_wrong": "Hai góc chỉ bằng nhau khi hai môi trường có cùng chiết suất, còn nước chiết quang hơn không khí."
+    },
+    {
+     "key": "D",
+     "text": "r = 0",
+     "why_wrong": "Tia khúc xạ chỉ đi thẳng (r = 0) khi tia tới vuông góc mặt phân cách (i = 0), trái với giả thiết i ≠ 0."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Khi ánh sáng đi từ không khí sang nước (môi trường chiết quang hơn), tia khúc xạ bị lệch lại gần pháp tuyến nên góc khúc xạ nhỏ hơn góc tới.",
+     "latex": "\\text{khong khi} \\to \\text{nuoc}: \\ r < i"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.khuc-xa-anh-sang"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "hiện tượng khúc xạ ánh sáng",
+    "so sánh góc khúc xạ và góc tới"
+   ],
+   "tags": [
+    "quang-hoc",
+    "khuc-xa"
+   ],
+   "hints": [
+    "Vào môi trường chiết quang hơn thì tia lệch gần pháp tuyến.",
+    "Khi đó r < i."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0077",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "trac-nghiem",
+   "statement_vi": "Sự điều tiết của mắt là hiện tượng gì?",
+   "statement_en": "What is the accommodation (adjustment) of the eye?",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Sự thay đổi khoảng cách từ thể thủy tinh đến màng lưới",
+     "why_wrong": "Khoảng cách này (OV) gần như không đổi; mắt điều tiết bằng cách thay đổi tiêu cự của thể thủy tinh."
+    },
+    {
+     "key": "B",
+     "text": "Sự thay đổi kích thước con ngươi theo độ sáng",
+     "why_wrong": "Đó là phản ứng của con ngươi với độ sáng, không phải điều tiết để nhìn rõ vật ở các khoảng cách khác nhau."
+    },
+    {
+     "key": "C",
+     "text": "Sự thay đổi tiêu cự (độ cong) của thể thủy tinh để ảnh luôn hiện rõ trên màng lưới",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Sự dịch chuyển của màng lưới lại gần hoặc ra xa thể thủy tinh",
+     "why_wrong": "Màng lưới cố định; ảnh vẫn hiện đúng trên màng lưới nhờ mắt thay đổi tiêu cự thể thủy tinh."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Khoảng cách từ thể thủy tinh đến màng lưới không đổi (d' = OV = const); để ảnh của vật ở các khoảng cách khác nhau luôn hiện rõ trên màng lưới, mắt phải thay đổi tiêu cự của thể thủy tinh.",
+     "latex": "OC_{c} \\le d \\le OC_{v}, \\quad d' = OV = \\text{const}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.mat-va-su-dieu-tiet"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "sự điều tiết của mắt",
+    "giới hạn nhìn rõ"
+   ],
+   "tags": [
+    "quang-hoc",
+    "mat"
+   ],
+   "hints": [
+    "Khoảng cách mắt - màng lưới không đổi.",
+    "Mắt đổi tiêu cự thể thủy tinh để điều tiết."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thcs.0078",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học",
+   "type": "trac-nghiem",
+   "statement_vi": "Đặt một vật sáng trước một thấu kính phân kì (với mọi khoảng cách d > 0). Ảnh của vật qua thấu kính có tính chất:",
+   "statement_en": "An object is placed before a diverging lens (for any distance d > 0). The image formed has the property:",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Ảnh thật, ngược chiều, lớn hơn vật",
+     "why_wrong": "Thấu kính phân kì không tạo ảnh thật với vật thật; đây là ảnh của thấu kính hội tụ khi f < d < 2f."
+    },
+    {
+     "key": "B",
+     "text": "Ảnh ảo, cùng chiều, nhỏ hơn vật",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "Ảnh ảo, cùng chiều, lớn hơn vật",
+     "why_wrong": "Ảnh ảo lớn hơn vật là đặc điểm của thấu kính hội tụ khi vật nằm trong khoảng tiêu cự."
+    },
+    {
+     "key": "D",
+     "text": "Ảnh thật, ngược chiều, nhỏ hơn vật",
+     "why_wrong": "Đây là ảnh của thấu kính hội tụ khi vật đặt ngoài khoảng 2f, không phải thấu kính phân kì."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Thấu kính phân kì luôn cho ảnh ảo, cùng chiều, nhỏ hơn vật và nằm trong khoảng tiêu cự, với mọi vị trí đặt vật.",
+     "latex": "\\forall d > 0: \\ \\text{anh ao, cung chieu, nho hon vat}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thcs.quang-hoc.thau-kinh-phan-ki-tao-anh"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính chất ảnh qua thấu kính phân kì"
+   ],
+   "tags": [
+    "quang-hoc",
+    "thau-kinh"
+   ],
+   "hints": [
+    "Thấu kính phân kì: luôn ảnh ảo, cùng chiều, nhỏ hơn vật."
+   ]
+  }
+ ]
+}

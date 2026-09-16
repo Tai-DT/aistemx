@@ -1,0 +1,1789 @@
+{
+  "meta": {
+    "file": "vn-biology.json",
+    "subject": "biology",
+    "title": "Sinh học THPT Việt Nam (GDPT 2018): Tế bào, Di truyền, Tiến hoá và Sinh thái",
+    "levels": [
+      "thpt"
+    ],
+    "count": 23
+  },
+  "lessons": [
+    {
+      "id": "lesson.biology.vn-thpt-biology.the-nuoc-trao-doi-nuoc-o-te-bao",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        10,
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Sinh học tế bào - Vận chuyển các chất qua màng",
+      "order": 1,
+      "title_vi": "Thế nước và sự trao đổi nước ở tế bào thực vật",
+      "title_en": "Water potential and water exchange in plant cells",
+      "objectives": [
+        "Giải thích được bản chất của thế nước và vì sao nước luôn di chuyển từ nơi thế nước cao đến nơi thế nước thấp",
+        "Tính được thế nước của tế bào từ thế thẩm thấu và thế áp suất",
+        "Dự đoán được chiều di chuyển của nước khi đặt tế bào vào môi trường ưu trương, nhược trương hoặc đẳng trương"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Thế nước",
+          "term_en": "Water potential",
+          "definition": "Đại lượng đo thế năng tự do của nước trong hệ, kí hiệu $\\Psi$ (đơn vị bar hoặc MPa). Nước nguyên chất ở áp suất khí quyển có $\\Psi = 0$; mọi chất tan làm giảm thế nước nên $\\Psi$ của dung dịch luôn âm. Nước di chuyển từ nơi có $\\Psi$ cao (ít âm) sang nơi có $\\Psi$ thấp (âm hơn)."
+        },
+        {
+          "term_vi": "Thế thẩm thấu",
+          "term_en": "Solute (osmotic) potential",
+          "definition": "Thành phần thế nước do chất tan gây ra, $\\Psi_s = -iCRT$, luôn mang dấu âm; càng nhiều chất tan thì $\\Psi_s$ càng âm và tế bào càng có xu hướng hút nước."
+        },
+        {
+          "term_vi": "Thế áp suất",
+          "term_en": "Pressure potential",
+          "definition": "Thành phần thế nước do áp suất trương của thành tế bào tạo ra, $\\Psi_p$; ở tế bào trương nước $\\Psi_p > 0$, góp phần làm tăng thế nước và chống lại sự hút nước thêm."
+        }
+      ],
+      "content": "## Vì sao cần một đại lượng gọi là \"thế nước\"?\n\nKhi ngâm một lát khoai tây vào nước cất, nó cứng lên; ngâm vào dung dịch muối đậm, nó mềm đi. Để nói chính xác nước sẽ đi theo hướng nào, ta cần một thước đo chung cho \"khả năng dịch chuyển\" của nước: đó là **thế nước** $\\Psi$.\n\n## Xây dựng công thức\n\nThế nước của một tế bào là tổng của hai thành phần:\n$$\\Psi = \\Psi_s + \\Psi_p$$\ntrong đó $\\Psi_s$ (thế thẩm thấu, luôn âm) phản ánh lượng chất tan, còn $\\Psi_p$ (thế áp suất, thường dương) phản ánh sức căng của thành tế bào. Thế thẩm thấu của một dung dịch tính theo áp suất thẩm thấu Van't Hoff:\n$$\\Psi_s = -\\pi = -iCRT$$\nvới $i$ là hệ số Van't Hoff, $C$ nồng độ mol, $R = 0{,}082$ L·atm/(mol·K), $T$ nhiệt độ tuyệt đối.\n\n## Khi nào dùng?\n\n- So sánh $\\Psi$ tế bào với $\\Psi$ môi trường để suy ra chiều di chuyển của nước: nước đi về phía $\\Psi$ thấp hơn.\n- Trong môi trường **nhược trương** ($\\Psi_{mt} > \\Psi_{tb}$) tế bào hút nước, trương lên; **ưu trương** thì mất nước, co nguyên sinh; **đẳng trương** thì cân bằng.\n\nSức hút nước của tế bào $S = \\pi - T$ chính là cách viết cũ của $-\\Psi$: khi thành tế bào chưa căng ($T=0$) thì sức hút nước bằng đúng áp suất thẩm thấu.",
+      "formulas": [
+        "biology.thpt.te-bao.the-nuoc",
+        "biology.thpt.te-bao.the-tham-thau-cua-dung-dich",
+        "biology.thpt.te-bao.suc-hut-nuoc-cua-te-bao",
+        "biology.thpt.te-bao.dieu-kien-te-bao-hut-nuoc",
+        "biology.thpt.te-bao.ap-suat-tham-thau",
+        "biology.thpt.te-bao.he-so-van-t-hoff",
+        "biology.thpt.te-bao.dieu-kien-moi-truong-tham-thau"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một tế bào thực vật có $\\Psi_s = -0{,}9$ MPa và $\\Psi_p = 0{,}3$ MPa được đặt vào dung dịch có $\\Psi = -0{,}4$ MPa. Nước sẽ đi vào hay đi ra khỏi tế bào?",
+          "solution": "Trước hết tính thế nước của tế bào, vì chỉ có $\\Psi$ tổng mới quyết định chiều di chuyển của nước chứ không phải riêng $\\Psi_s$. Ta có $\\Psi_{tb} = \\Psi_s + \\Psi_p = -0{,}9 + 0{,}3 = -0{,}6$ MPa. So sánh: $\\Psi_{tb} = -0{,}6$ MPa thấp hơn $\\Psi_{mt} = -0{,}4$ MPa. Nước luôn đi từ nơi thế nước cao sang nơi thế nước thấp, tức từ môi trường vào tế bào.",
+          "answer": "Nước đi từ môi trường vào tế bào (vì $\\Psi_{tb} = -0{,}6 < \\Psi_{mt} = -0{,}4$ MPa)."
+        }
+      ],
+      "common_mistakes": [
+        "Nghĩ rằng dung dịch đặc hơn thì thế nước cao hơn — sai, vì thêm chất tan làm $\\Psi_s$ âm hơn nên thế nước giảm; dung dịch càng đặc thì $\\Psi$ càng thấp và càng hút nước.",
+        "Chỉ so sánh nồng độ chất tan mà bỏ qua thế áp suất — sai, vì ở tế bào trương nước thành tế bào tạo $\\Psi_p > 0$ có thể đẩy thế nước tế bào lên cao hơn cả môi trường, khiến nước ngừng vào dù trong tế bào vẫn đặc hơn.",
+        "Quên đổi nhiệt độ ra Kelvin khi dùng $\\pi = iCRT$ — sai, vì công thức Van't Hoff đòi hỏi nhiệt độ tuyệt đối $T = t + 273$, dùng độ C sẽ cho áp suất thẩm thấu sai lệch lớn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "te-bao",
+        "the-nuoc",
+        "tham-thau",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 10 - Kết nối tri thức",
+        "SGK Sinh học 11 - Chân trời sáng tạo",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.quang-hop-o-thuc-vat",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Chuyển hoá vật chất và năng lượng ở thực vật",
+      "order": 1,
+      "title_vi": "Quang hợp ở thực vật: cường độ, năng suất và các điểm ánh sáng",
+      "title_en": "Photosynthesis in plants: rate, productivity and light points",
+      "objectives": [
+        "Phân biệt được cường độ quang hợp biểu kiến và cường độ quang hợp thực",
+        "Xác định được điểm bù ánh sáng và điểm bão hoà ánh sáng dựa trên đồ thị quang hợp",
+        "Tính được năng suất sinh học, năng suất kinh tế và hệ số kinh tế của cây trồng"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Cường độ quang hợp",
+          "term_en": "Photosynthetic rate",
+          "definition": "Lượng $CO_2$ được hấp thụ (hoặc $O_2$ giải phóng) trên một đơn vị diện tích lá trong một đơn vị thời gian. Cường độ quang hợp thực $= $ quang hợp biểu kiến $+$ hô hấp, vì phép đo trao đổi khí chỉ ghi được phần chênh lệch giữa quang hợp và hô hấp."
+        },
+        {
+          "term_vi": "Điểm bù ánh sáng",
+          "term_en": "Light compensation point",
+          "definition": "Cường độ ánh sáng mà tại đó cường độ quang hợp bằng đúng cường độ hô hấp, nên trao đổi $CO_2$ biểu kiến bằng 0; dưới điểm này cây tiêu hao chất hữu cơ ròng."
+        },
+        {
+          "term_vi": "Điểm bão hoà ánh sáng",
+          "term_en": "Light saturation point",
+          "definition": "Cường độ ánh sáng mà từ đó tăng ánh sáng thêm không làm tăng cường độ quang hợp nữa vì các yếu tố khác ($CO_2$, enzyme) trở thành yếu tố giới hạn."
+        }
+      ],
+      "content": "## Đo quang hợp thực chất là đo gì?\n\nKhi cắm một cành rong vào ống nghiệm rồi đếm bọt khí, ta không đo trực tiếp toàn bộ quang hợp: cây vẫn hô hấp và tiêu thụ một phần $O_2$. Do đó số ta quan sát là **quang hợp biểu kiến**, còn tổng lượng chất hữu cơ thực sự tổng hợp là **quang hợp thực**:\n$$I_{thực} = I_{biểu\\ kiến} + I_{hô\\ hấp}$$\n\n## Các điểm ánh sáng đặc trưng\n\nVẽ đồ thị cường độ quang hợp theo cường độ ánh sáng, ta thấy hai mốc quan trọng. Tại **điểm bù ánh sáng**, quang hợp vừa đủ bù hô hấp nên trao đổi khí biểu kiến bằng 0. Khi tăng sáng, quang hợp tăng rồi chững lại ở **điểm bão hoà ánh sáng** — lúc này $CO_2$ hoặc enzyme mới là yếu tố giới hạn.\n\n## Năng suất cây trồng\n\nTừ chất khô cây tích luỹ, ta định nghĩa:\n$$N_{sinh\\ học} = \\dfrac{\\text{khối lượng chất khô}}{\\text{diện tích} \\times \\text{thời gian}}$$\nNăng suất kinh tế chỉ tính phần chất khô ở cơ quan thu hoạch (hạt, củ). Hệ số kinh tế $K = \\dfrac{N_{kinh\\ tế}}{N_{sinh\\ học}}$ cho biết cây phân bổ bao nhiêu phần trăm sản phẩm quang hợp vào bộ phận ta cần. Chọn giống có $K$ cao là một mục tiêu của chọn giống cây trồng.",
+      "formulas": [
+        "biology.thpt.chuyen-hoa-thuc-vat.cuong-do-quang-hop",
+        "biology.thpt.chuyen-hoa-thuc-vat.cuong-do-quang-hop-thuc-va-bieu-kien",
+        "biology.thpt.chuyen-hoa-thuc-vat.diem-bu-anh-sang",
+        "biology.thpt.chuyen-hoa-thuc-vat.diem-bao-hoa-anh-sang",
+        "biology.thpt.chuyen-hoa-thuc-vat.nang-suat-sinh-hoc",
+        "biology.thpt.chuyen-hoa-thuc-vat.nang-suat-kinh-te",
+        "biology.thpt.chuyen-hoa-thuc-vat.he-so-kinh-te",
+        "biology.thpt.chuyen-hoa-thuc-vat.hieu-suat-quang-hop"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Đo trên một lá cây thấy cường độ quang hợp biểu kiến là 12 mg $CO_2$/dm²/giờ, còn cường độ hô hấp là 4 mg $CO_2$/dm²/giờ. Tính cường độ quang hợp thực.",
+          "solution": "Phép đo biểu kiến chỉ ghi phần $CO_2$ ròng cây hấp thụ, tức lượng quang hợp đã trừ đi phần hô hấp giải phóng. Muốn có quang hợp thực phải cộng trả lại phần hô hấp: $I_{thực} = I_{biểu\\ kiến} + I_{hô\\ hấp} = 12 + 4 = 16$ mg $CO_2$/dm²/giờ. Ý nghĩa: bộ máy quang hợp thực sự cố định 16 mg $CO_2$, nhưng do hô hấp trả lại 4 mg nên ta chỉ 'nhìn thấy' 12 mg.",
+          "answer": "16 mg $CO_2$/dm²/giờ."
+        }
+      ],
+      "common_mistakes": [
+        "Đồng nhất quang hợp biểu kiến với quang hợp thực — sai, vì phép đo trao đổi khí luôn bị hô hấp làm giảm bớt, nên quang hợp thực bao giờ cũng lớn hơn biểu kiến một lượng đúng bằng cường độ hô hấp.",
+        "Cho rằng cứ tăng ánh sáng thì quang hợp tăng mãi — sai, vì sau điểm bão hoà ánh sáng, $CO_2$ hoặc enzyme trở thành yếu tố giới hạn nên đồ thị nằm ngang.",
+        "Nhầm năng suất kinh tế với năng suất sinh học — sai, vì năng suất sinh học là toàn bộ chất khô tích luỹ, còn năng suất kinh tế chỉ là phần ở cơ quan thu hoạch, luôn nhỏ hơn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "thuc-vat",
+        "quang-hop",
+        "nang-suat",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 11 - Kết nối tri thức",
+        "SGK Sinh học 11 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.ho-hap-o-thuc-vat-he-so-ho-hap",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Chuyển hoá vật chất và năng lượng ở thực vật",
+      "order": 2,
+      "title_vi": "Hô hấp ở thực vật và hệ số hô hấp (RQ)",
+      "title_en": "Respiration in plants and the respiratory quotient (RQ)",
+      "objectives": [
+        "Tính được hệ số hô hấp RQ từ tỉ lệ $CO_2$ thải ra và $O_2$ hấp thụ",
+        "Suy luận được loại nguyên liệu hô hấp (carbohydrate, lipid, acid hữu cơ) dựa vào giá trị RQ",
+        "Giải thích được ý nghĩa của số ATP thu được khi phân giải hoàn toàn một phân tử glucose"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Hệ số hô hấp RQ",
+          "term_en": "Respiratory quotient",
+          "definition": "Tỉ số giữa số mol (hoặc thể tích) $CO_2$ giải phóng và số mol $O_2$ tiêu thụ trong hô hấp: $RQ = \\dfrac{V_{CO_2}}{V_{O_2}}$. Giá trị RQ phản ánh mức độ oxy hoá của cơ chất."
+        },
+        {
+          "term_vi": "Nguyên liệu hô hấp",
+          "term_en": "Respiratory substrate",
+          "definition": "Chất hữu cơ bị oxy hoá để giải phóng năng lượng. Carbohydrate có $RQ = 1$; lipid giàu hydro và nghèo oxy nên cần nhiều $O_2$, $RQ \\approx 0{,}7$; acid hữu cơ nhiều oxy nên $RQ > 1$."
+        },
+        {
+          "term_vi": "Hô hấp hiếu khí",
+          "term_en": "Aerobic respiration",
+          "definition": "Chuỗi phân giải glucose có oxy gồm đường phân, chu trình Krebs và chuỗi truyền electron, tạo tối đa khoảng 30-38 ATP mỗi phân tử glucose tuỳ cách tính hiệu suất truyền proton."
+        }
+      ],
+      "content": "## Vì sao đo hai loại khí lại biết được cây 'ăn' gì?\n\nHô hấp là quá trình oxy hoá chất hữu cơ: cây lấy $O_2$ và thải $CO_2$. Nhưng tỉ lệ hai khí này không cố định — nó phụ thuộc mức độ giàu oxy của nguyên liệu bị đốt. Chính vì thế **hệ số hô hấp** trở thành một dấu vân tay hoá học:\n$$RQ = \\frac{\\text{số mol } CO_2 \\text{ thải ra}}{\\text{số mol } O_2 \\text{ hấp thụ}}$$\n\n## Đọc giá trị RQ\n\n- Glucose: $C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O$ nên $RQ = 6/6 = 1$.\n- Lipid (ví dụ acid béo) nghèo oxy trong phân tử, cần nhiều $O_2$ để oxy hoá nên $RQ \\approx 0{,}7$.\n- Acid hữu cơ (như acid malic) đã giàu oxy sẵn nên thải nhiều $CO_2$ mà tốn ít $O_2$, $RQ > 1$.\n\nBiết RQ, ta suy ngược ra loại cơ chất mà mô đang hô hấp — hạt nảy mầm giàu dầu thường có RQ thấp, còn hạt giàu tinh bột có RQ gần 1.\n\n## Về mặt năng lượng\n\nPhân giải hoàn toàn 1 phân tử glucose theo con đường hiếu khí giải phóng khoảng 30-38 ATP. Con số này giải thích vì sao hô hấp hiếu khí hiệu quả hơn lên men rất nhiều: lên men chỉ thu 2 ATP mỗi glucose.",
+      "formulas": [
+        "biology.thpt.chuyen-hoa-thuc-vat.he-so-ho-hap",
+        "biology.thpt.chuyen-hoa-thuc-vat.so-atp-tu-mot-phan-tu-glucose"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Khi cho hạt hướng dương (giàu dầu) nảy mầm hô hấp, người ta đo được cây hấp thụ 1000 ml $O_2$ và thải ra 700 ml $CO_2$ trong cùng thời gian. Tính RQ và cho biết nguyên liệu hô hấp chủ yếu là gì.",
+          "solution": "RQ được định nghĩa bằng tỉ số thể tích khí ở cùng điều kiện, nên có thể dùng trực tiếp thể tích thay cho số mol. $RQ = V_{CO_2}/V_{O_2} = 700/1000 = 0{,}7$. Giá trị $0{,}7$ đặc trưng cho lipid: phân tử lipid nghèo oxy nên phải tốn nhiều $O_2$ để oxy hoá, làm mẫu số lớn và RQ nhỏ. Điều này phù hợp với hạt hướng dương giàu dầu.",
+          "answer": "$RQ = 0{,}7$; nguyên liệu hô hấp chủ yếu là lipid (chất béo)."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng RQ luôn bằng 1 — sai, vì RQ chỉ bằng 1 khi cơ chất là carbohydrate; với lipid RQ khoảng 0,7 và với acid hữu cơ RQ lớn hơn 1 do sự khác nhau về hàm lượng oxy trong phân tử.",
+        "Đảo ngược công thức thành $O_2/CO_2$ — sai, vì theo định nghĩa RQ là $CO_2$ thải chia cho $O_2$ hấp thụ; đảo tử số và mẫu số sẽ cho kết luận sai về loại nguyên liệu.",
+        "Nghĩ lên men cũng cho nhiều ATP như hô hấp hiếu khí — sai, vì lên men chỉ tạo 2 ATP mỗi glucose do không có chuỗi truyền electron, kém xa con số 30-38 ATP của hô hấp hiếu khí."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "thuc-vat",
+        "ho-hap",
+        "he-so-ho-hap",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 11 - Chân trời sáng tạo",
+        "SGK Sinh học 11 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.sinh-truong-cua-quan-the-vi-sinh-vat",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Sinh học vi sinh vật",
+      "order": 1,
+      "title_vi": "Sinh trưởng của quần thể vi sinh vật",
+      "title_en": "Growth of microbial populations",
+      "objectives": [
+        "Tính được số tế bào của quần thể vi khuẩn sau n lần phân chia",
+        "Xác định được số lần phân chia và thời gian thế hệ từ số tế bào ban đầu và số tế bào cuối",
+        "Mô tả được bốn pha của đường cong sinh trưởng trong nuôi cấy không liên tục"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Thời gian thế hệ",
+          "term_en": "Generation time",
+          "definition": "Khoảng thời gian $g$ để một tế bào phân chia thành hai, hay để số lượng quần thể tăng gấp đôi trong pha luỹ thừa: $g = t/n$ với $n$ là số lần phân chia trong thời gian $t$."
+        },
+        {
+          "term_vi": "Sinh trưởng luỹ thừa",
+          "term_en": "Exponential growth",
+          "definition": "Kiểu sinh trưởng trong đó số tế bào tăng theo cấp số nhân: $N_t = N_0 \\cdot 2^{n}$; đặc trưng cho pha luỹ thừa (pha log) khi nguồn dinh dưỡng còn dồi dào."
+        },
+        {
+          "term_vi": "Nuôi cấy không liên tục",
+          "term_en": "Batch culture",
+          "definition": "Hệ nuôi cấy không bổ sung dinh dưỡng và không loại bỏ sản phẩm; quần thể trải qua bốn pha: tiềm phát, luỹ thừa, cân bằng và suy vong."
+        }
+      ],
+      "content": "## Từ một tế bào đến hàng tỉ\n\nVi khuẩn sinh sản bằng phân đôi: mỗi lần một tế bào thành hai. Nếu ban đầu có $N_0$ tế bào và trải qua $n$ lần phân chia thì số tế bào là\n$$N_t = N_0 \\cdot 2^{n}$$\nĐây là biểu thức luỹ thừa cơ số 2, giải thích vì sao vi khuẩn có thể sinh khối bùng nổ trong thời gian ngắn.\n\n## Thời gian thế hệ\n\nNếu trong thời gian $t$ có $n$ lần phân chia thì **thời gian thế hệ** là\n$$g = \\frac{t}{n}$$\nMuốn tìm $n$ khi biết $N_0$ và $N_t$, ta lấy logarit: $n = \\log_2(N_t/N_0)$. Thời gian thế hệ càng ngắn thì vi sinh vật sinh trưởng càng nhanh — E. coli có $g \\approx 20$ phút trong điều kiện tối ưu.\n\n## Đường cong sinh trưởng\n\nTrong **nuôi cấy không liên tục**, quần thể đi qua bốn pha: pha tiềm phát (làm quen, tổng hợp enzyme), pha luỹ thừa (phân chia mạnh nhất, tuân theo $N_t = N_0 2^n$), pha cân bằng (số sinh ra bằng số chết đi do cạn dinh dưỡng và tích luỹ chất độc) và pha suy vong (số chết vượt số sinh). Hiểu bốn pha này giúp chọn đúng thời điểm thu sinh khối hoặc sản phẩm trao đổi chất.",
+      "formulas": [
+        "biology.thpt.vi-sinh-vat.so-lan-phan-chia",
+        "biology.thpt.vi-sinh-vat.so-te-bao-sau-n-lan-phan-chia",
+        "biology.thpt.vi-sinh-vat.thoi-gian-the-he",
+        "biology.thpt.vi-sinh-vat.so-te-bao-theo-thoi-gian-the-he",
+        "biology.thpt.vi-sinh-vat.toc-do-sinh-truong-rieng",
+        "biology.thpt.vi-sinh-vat.duong-cong-sinh-truong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cấy 10 tế bào vi khuẩn E. coli vào môi trường tối ưu, sau 2 giờ thu được 2560 tế bào. Biết quần thể sinh trưởng ở pha luỹ thừa. Tính số lần phân chia và thời gian thế hệ.",
+          "solution": "Ở pha luỹ thừa số tế bào tuân theo $N_t = N_0 \\cdot 2^n$, nên trước tiên tìm $n$ bằng cách chia rồi lấy logarit cơ số 2. Ta có $N_t/N_0 = 2560/10 = 256 = 2^8$, vậy $n = 8$ lần phân chia. Thời gian thế hệ là thời gian trung bình cho một lần phân đôi: $g = t/n = 120\\ \\text{phút}/8 = 15$ phút. Kết quả 15 phút hợp lí vì E. coli trong điều kiện lí tưởng có thời gian thế hệ khoảng 15-20 phút.",
+          "answer": "Số lần phân chia $n = 8$; thời gian thế hệ $g = 15$ phút."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng công thức $N_t = N_0 \\cdot n$ thay vì $N_0 \\cdot 2^n$ — sai, vì mỗi lần phân chia làm số tế bào nhân đôi chứ không cộng thêm, nên phải dùng luỹ thừa cơ số 2.",
+        "Cho rằng vi khuẩn sinh trưởng luỹ thừa mãi mãi — sai, vì trong nuôi cấy không liên tục dinh dưỡng cạn dần và chất độc tích luỹ, đưa quần thể sang pha cân bằng rồi suy vong.",
+        "Nhầm thời gian thế hệ với tổng thời gian nuôi cấy — sai, vì thời gian thế hệ chỉ là thời gian cho một lần nhân đôi, bằng tổng thời gian chia cho số lần phân chia."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "vi-sinh-vat",
+        "sinh-truong",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 10 - Kết nối tri thức",
+        "SGK Sinh học 10 - Chân trời sáng tạo",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.cau-truc-adn-va-cong-thuc-dem-nucleotit",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Cơ sở phân tử của hiện tượng di truyền",
+      "order": 1,
+      "title_vi": "Cấu trúc ADN và các công thức đếm nucleotit",
+      "title_en": "DNA structure and nucleotide-counting formulas",
+      "objectives": [
+        "Vận dụng nguyên tắc bổ sung để thiết lập quan hệ giữa các loại nucleotit trong gen",
+        "Tính được tổng số nucleotit, chiều dài, khối lượng, số chu kì xoắn và số liên kết hiđro của gen",
+        "Suy ra được số nucleotit từng loại khi biết phần trăm hoặc số liên kết hiđro"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Nguyên tắc bổ sung",
+          "term_en": "Complementary base pairing",
+          "definition": "Trong ADN mạch kép, A liên kết với T bằng 2 liên kết hiđro, G liên kết với X bằng 3 liên kết hiđro; do đó $A = T$, $G = X$ và $A + G = T + X = N/2$."
+        },
+        {
+          "term_vi": "Tổng số nucleotit của gen",
+          "term_en": "Total nucleotides",
+          "definition": "$N = 2(A + G)$ với $A, G$ là số nucleotit mỗi loại tính theo cả phân tử; đây là đại lượng gốc để suy ra chiều dài, khối lượng và số liên kết."
+        },
+        {
+          "term_vi": "Số liên kết hiđro",
+          "term_en": "Number of hydrogen bonds",
+          "definition": "$H = 2A + 3G$: mỗi cặp A-T góp 2 liên kết, mỗi cặp G-X góp 3 liên kết; công thức này gắn kết đặc điểm bền vững của gen với thành phần base."
+        }
+      ],
+      "content": "## Một chuỗi số học ẩn trong phân tử di truyền\n\nADN không chỉ mang thông tin sinh học mà còn tuân theo những ràng buộc số học chặt chẽ nhờ **nguyên tắc bổ sung**. Vì A luôn bắt cặp với T, G luôn bắt cặp với X, ta có ngay $A = T$ và $G = X$. Từ đó mọi công thức đếm được suy ra.\n\n## Bộ công thức lõi\n\nGọi $N$ là tổng số nucleotit của gen (mạch kép):\n$$N = 2A + 2G = 2(A + G)$$\nMỗi nucleotit dài $3{,}4\\ \\text{Å}$ và một mạch có $N/2$ nucleotit nên **chiều dài gen**:\n$$L = \\frac{N}{2} \\times 3{,}4\\ (\\text{Å})$$\n**Khối lượng** gen $M = N \\times 300$ đvC; **số chu kì xoắn** $C = N/20$ (mỗi vòng xoắn 20 nucleotit); **số liên kết hiđro** $H = 2A + 3G$.\n\n## Chiến lược giải nhanh\n\nĐề thi thường cho hai trong các dữ kiện $\\{N, L, M, C, H, \\%A\\}$ rồi bắt tìm số nucleotit từng loại. Mẹo: luôn quy về $N$ trước, dùng $A + G = N/2$ làm phương trình thứ nhất, rồi ghép với dữ kiện thứ hai (thường là $H = 2A + 3G$ hoặc $\\%A$) để giải hệ hai ẩn $A, G$. Nhờ $A = T, G = X$, biết $A$ và $G$ là biết cả bốn loại.",
+      "formulas": [
+        "biology.thpt.adn-arn-protein.tong-so-nucleotit-cua-gen",
+        "biology.thpt.adn-arn-protein.so-nucleotit-mot-mach",
+        "biology.thpt.adn-arn-protein.chieu-dai-gen",
+        "biology.thpt.adn-arn-protein.khoi-luong-gen",
+        "biology.thpt.adn-arn-protein.so-chu-ki-xoan",
+        "biology.thpt.adn-arn-protein.so-lien-ket-hidro",
+        "biology.thpt.adn-arn-protein.ti-le-phan-tram-nucleotit",
+        "biology.thpt.adn-arn-protein.so-nucleotit-moi-loai-cua-gen",
+        "biology.thpt.adn-arn-protein.nguyen-tac-bo-sung-giua-hai-mach",
+        "biology.thpt.adn-arn-protein.so-lien-ket-hoa-tri-trong-gen",
+        "biology.thpt.adn-arn-protein.so-lien-ket-hoa-tri-giua-cac-nucleotit",
+        "biology.thpt.adn-arn-protein.ti-le-phan-tram-nucleotit-tren-mach"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một gen có chiều dài $4080\\ \\text{Å}$ và có $A = 20\\%$ tổng số nucleotit. Tính số nucleotit mỗi loại và số liên kết hiđro của gen.",
+          "solution": "Bắt đầu từ chiều dài để tìm $N$, vì mọi công thức khác đều xuất phát từ tổng số nucleotit. Một mạch dài $L$ chứa $L/3{,}4$ nucleotit, cả gen có gấp đôi: $N = 2 \\times 4080/3{,}4 = 2400$ nucleotit. Vì $\\%A = 20\\%$ nên $A = T = 0{,}2 \\times 2400 = 480$. Do $A + G = N/2 = 1200$, suy ra $G = X = 1200 - 480 = 720$. Cuối cùng dùng $H = 2A + 3G = 2 \\times 480 + 3 \\times 720 = 960 + 2160 = 3120$ liên kết hiđro.",
+          "answer": "$A = T = 480$; $G = X = 720$; $H = 3120$ liên kết hiđro."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm chiều dài một mạch với chiều dài tính trên cả $N$ — sai, vì $N/2$ mới là số nucleotit trên một mạch, nên $L = (N/2)\\times 3{,}4$; quên chia đôi sẽ làm $N$ gấp đôi.",
+        "Cho rằng $\\%A = \\%G$ luôn bằng nhau — sai, vì nguyên tắc bổ sung chỉ bảo đảm $\\%A = \\%T$ và $\\%G = \\%X$; tỉ lệ giữa nhóm A-T và nhóm G-X thay đổi tuỳ gen.",
+        "Tính số liên kết hiđro bằng $H = A + G$ — sai, vì mỗi cặp A-T có 2 liên kết và mỗi cặp G-X có 3 liên kết, nên đúng phải là $H = 2A + 3G$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "adn",
+        "nucleotit",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ],
+      "video_lectures": [
+        {
+          "title": "Cơ chế nhân đôi ADN (DNA Replication 3D Animation)",
+          "url": "https://www.youtube.com/watch?v=TNKWgcFPHqw",
+          "provider": "HHMI BioInteractive",
+          "duration": "04:25",
+          "language": "en/vi",
+          "timestamps": [
+            {
+              "time": "00:40",
+              "label": "Helicase tháo xoắn"
+            },
+            {
+              "time": "01:20",
+              "label": "DNA Polymerase tổng hợp mạch dẫn đầu (Leading strand)"
+            },
+            {
+              "time": "02:35",
+              "label": "Đoạn Okazaki trên mạch đi sau (Lagging strand)"
+            }
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "title": "Xoắn kép ADN tương tác 3D",
+          "type": "threejs",
+          "url": "https://www.rcsb.org/3d-view/1BNA",
+          "description": "Tọa độ nguyên tử B-DNA từ Protein Data Bank (RCSB PDB 1BNA)"
+        }
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.nhan-doi-adn",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Cơ sở phân tử của hiện tượng di truyền",
+      "order": 2,
+      "title_vi": "Nhân đôi ADN: nguyên liệu, đoạn mồi và đoạn Okazaki",
+      "title_en": "DNA replication: substrates, primers and Okazaki fragments",
+      "objectives": [
+        "Tính được số phân tử ADN con và số nucleotit môi trường cung cấp sau k lần nhân đôi",
+        "Vận dụng nguyên tắc bán bảo tồn để tính số ADN con chứa hoàn toàn nguyên liệu mới",
+        "Tính được số đoạn mồi và số đoạn Okazaki trong quá trình nhân đôi"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.cau-truc-adn-va-cong-thuc-dem-nucleotit"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nguyên tắc bán bảo tồn",
+          "term_en": "Semiconservative replication",
+          "definition": "Mỗi ADN con giữ lại một mạch của ADN mẹ và tổng hợp một mạch mới; do đó sau k lần nhân đôi từ 1 ADN mẹ, số ADN con là $2^k$ nhưng chỉ $2^k - 2$ phân tử chứa hoàn toàn nguyên liệu mới."
+        },
+        {
+          "term_vi": "Đoạn Okazaki",
+          "term_en": "Okazaki fragment",
+          "definition": "Đoạn ADN ngắn được tổng hợp gián đoạn trên mạch khuôn $3'\\to 5'$ (mạch chậm); mỗi đoạn Okazaki cần một đoạn mồi, còn mạch nhanh chỉ cần một đoạn mồi khởi đầu."
+        },
+        {
+          "term_vi": "Nucleotit môi trường cung cấp",
+          "term_en": "Nucleotides supplied",
+          "definition": "Số nucleotit tự do môi trường cung cấp cho k lần nhân đôi từ một gen: $N_{cc} = N(2^k - 1)$, vì tạo ra $2^k$ phân tử nhưng mạch mẹ ban đầu đã có sẵn."
+        }
+      ],
+      "content": "## Nhân đôi diễn ra theo kiểu nào?\n\nADN tự sao theo **nguyên tắc bán bảo tồn**: hai mạch mẹ tách ra, mỗi mạch làm khuôn tổng hợp một mạch mới bổ sung. Kết quả là mỗi ADN con có một mạch cũ và một mạch mới — chi tiết này chi phối toàn bộ các công thức đếm.\n\n## Số phân tử và nguyên liệu\n\nSau $k$ lần nhân đôi từ 1 phân tử, ta được $2^k$ ADN con. Nhưng vì mỗi phân tử luôn mang một mạch của tổ tiên, chỉ có $2^k - 2$ phân tử được cấu tạo **hoàn toàn** từ nguyên liệu mới. Số nucleotit môi trường cung cấp:\n$$N_{cc} = N\\,(2^k - 1)$$\nvà số nucleotit từng loại: $A_{cc} = T_{cc} = A(2^k - 1)$, $G_{cc} = X_{cc} = G(2^k - 1)$. Số liên kết hiđro bị phá vỡ qua $k$ lần: $H(2^k - 1)$.\n\n## Đoạn mồi và Okazaki\n\nVì ADN polymerase chỉ kéo dài theo chiều $5'\\to 3'$, mạch chậm phải tổng hợp gián đoạn thành nhiều **đoạn Okazaki**, mỗi đoạn cần một đoạn mồi; mạch nhanh chỉ cần một mồi. Nếu một đơn vị tái bản có $x$ đoạn Okazaki thì cần $x + 1$ đoạn mồi. Nắm mối quan hệ mồi - Okazaki giúp giải nhanh các câu hỏi vận dụng cao về cơ chế tái bản.",
+      "formulas": [
+        "biology.thpt.nhan-doi-adn.so-phan-tu-adn-con",
+        "biology.thpt.nhan-doi-adn.so-nucleotit-moi-truong-cung-cap",
+        "biology.thpt.nhan-doi-adn.so-nucleotit-tung-loai-moi-truong",
+        "biology.thpt.nhan-doi-adn.so-lien-ket-hidro-bi-pha-vo",
+        "biology.thpt.nhan-doi-adn.so-doan-moi-va-okazaki",
+        "biology.thpt.nhan-doi-adn.so-adn-con-hoan-toan-moi",
+        "biology.thpt.nhan-doi-adn.so-doan-moi-qua-k-lan-nhan-doi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một gen có $N = 3000$ nucleotit, trong đó $A = 600$. Gen nhân đôi 3 lần. Tính số phân tử ADN con, số nucleotit loại G môi trường cung cấp và số ADN con chứa hoàn toàn nguyên liệu mới.",
+          "solution": "Trước hết dùng nguyên tắc bán bảo tồn để đếm số phân tử: sau 3 lần nhân đôi có $2^3 = 8$ ADN con. Tính G của gen: $G = N/2 - A = 1500 - 600 = 900$. Số G môi trường cung cấp bằng lượng G phải tổng hợp mới, tức $G_{cc} = G(2^k - 1) = 900 \\times (2^3 - 1) = 900 \\times 7 = 6300$. Vì hai mạch mẹ ban đầu luôn tồn tại trong hai phân tử con, số ADN con chứa hoàn toàn nguyên liệu mới là $2^k - 2 = 8 - 2 = 6$.",
+          "answer": "8 phân tử ADN con; $G_{cc} = 6300$ nucleotit; 6 phân tử chứa hoàn toàn nguyên liệu mới."
+        }
+      ],
+      "common_mistakes": [
+        "Tính số ADN con hoàn toàn mới bằng $2^k$ — sai, vì hai mạch của ADN mẹ luôn được giữ lại trong hai phân tử con nên chỉ có $2^k - 2$ phân tử hoàn toàn mới.",
+        "Dùng $N_{cc} = N \\cdot 2^k$ — sai, vì tổng nucleotit trong $2^k$ phân tử là $N\\cdot 2^k$ nhưng mạch mẹ ban đầu đã có sẵn $N$, nên môi trường chỉ cung cấp $N(2^k - 1)$.",
+        "Cho rằng mỗi mạch mới chỉ cần một đoạn mồi — sai, vì mạch chậm được tổng hợp gián đoạn nên mỗi đoạn Okazaki cần một mồi riêng, tổng số mồi lớn hơn nhiều so với 2."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "adn",
+        "nhan-doi",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ],
+      "video_lectures": [
+        {
+          "title": "Cơ chế nhân đôi ADN (DNA Replication 3D Animation)",
+          "url": "https://www.youtube.com/watch?v=TNKWgcFPHqw",
+          "provider": "HHMI BioInteractive",
+          "duration": "04:25",
+          "language": "en/vi",
+          "timestamps": [
+            {
+              "time": "00:40",
+              "label": "Helicase tháo xoắn"
+            },
+            {
+              "time": "01:20",
+              "label": "DNA Polymerase tổng hợp mạch dẫn đầu (Leading strand)"
+            },
+            {
+              "time": "02:35",
+              "label": "Đoạn Okazaki trên mạch đi sau (Lagging strand)"
+            }
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "title": "Xoắn kép ADN tương tác 3D",
+          "type": "threejs",
+          "url": "https://www.rcsb.org/3d-view/1BNA",
+          "description": "Tọa độ nguyên tử B-DNA từ Protein Data Bank (RCSB PDB 1BNA)"
+        }
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.phien-ma-va-dich-ma",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Cơ sở phân tử của hiện tượng di truyền",
+      "order": 3,
+      "title_vi": "Phiên mã và dịch mã: số axit amin và số liên kết peptit",
+      "title_en": "Transcription and translation: amino acids and peptide bonds",
+      "objectives": [
+        "Tính được số ribonucleotit môi trường cung cấp cho phiên mã",
+        "Xác định được số bộ ba, số axit amin môi trường cung cấp và số axit amin của chuỗi polipeptit hoàn chỉnh",
+        "Tính được số liên kết peptit và số phân tử nước giải phóng khi tổng hợp chuỗi polipeptit"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.cau-truc-adn-va-cong-thuc-dem-nucleotit"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bộ ba mã sao (codon)",
+          "term_en": "Codon",
+          "definition": "Mỗi bộ ba ribonucleotit trên mARN mã hoá một axit amin; mARN có chiều dài $r_N$ ribonucleotit thì có $r_N/3$ bộ ba, trong đó có 1 bộ ba mở đầu và 1 bộ ba kết thúc."
+        },
+        {
+          "term_vi": "Số axit amin của chuỗi hoàn chỉnh",
+          "term_en": "Amino acids in mature polypeptide",
+          "definition": "Số axit amin môi trường cung cấp $= r_N/3 - 1$ (trừ bộ ba kết thúc không mã hoá axit amin); chuỗi hoàn chỉnh $= r_N/3 - 2$ vì axit amin mở đầu (Met/formyl-Met) bị cắt bỏ."
+        },
+        {
+          "term_vi": "Liên kết peptit",
+          "term_en": "Peptide bond",
+          "definition": "Liên kết cộng hoá trị nối hai axit amin, hình thành kèm giải phóng một phân tử nước; chuỗi có $m$ axit amin thì có $m - 1$ liên kết peptit và giải phóng $m - 1$ phân tử nước."
+        }
+      ],
+      "content": "## Từ gen đến protein: hai bước, nhiều con số\n\nThông tin trong gen được biểu hiện qua **phiên mã** (ADN $\\to$ mARN) rồi **dịch mã** (mARN $\\to$ chuỗi polipeptit). Mỗi bước có bộ công thức đếm riêng, nhưng tất cả đều bắt nguồn từ số nucleotit của gen.\n\n## Phiên mã\n\nmARN được tổng hợp bổ sung từ mạch gốc của gen, nên số ribonucleotit của mARN bằng số nucleotit một mạch: $r_N = N/2$. Số ribonucleotit môi trường cung cấp khi gen phiên mã $k$ lần là $k \\cdot r_N$.\n\n## Dịch mã\n\nSố bộ ba trên mARN là $r_N/3$. Ribôxôm đọc từ bộ ba mở đầu đến bộ ba kết thúc:\n- Số axit amin **môi trường cung cấp** $= \\dfrac{r_N}{3} - 1$ (bỏ bộ ba kết thúc).\n- Số axit amin của chuỗi **hoàn chỉnh** $= \\dfrac{r_N}{3} - 2$ (bỏ thêm axit amin mở đầu bị cắt).\n\nKhi nối $m$ axit amin thành chuỗi, mỗi liên kết peptit hình thành kèm một phân tử nước bị loại: có $m - 1$ liên kết peptit và $m - 1$ phân tử nước giải phóng. Nếu có $x$ ribôxôm trượt qua và $t$ phân tử mARN thì tổng số chuỗi polipeptit tạo ra là $x \\cdot t$.",
+      "formulas": [
+        "biology.thpt.phien-ma-dich-ma.so-bo-ba-tren-marn",
+        "biology.thpt.phien-ma-dich-ma.so-axit-amin-moi-truong-cung-cap",
+        "biology.thpt.phien-ma-dich-ma.so-axit-amin-chuoi-hoan-chinh",
+        "biology.thpt.phien-ma-dich-ma.so-lien-ket-peptit",
+        "biology.thpt.phien-ma-dich-ma.so-phan-tu-nuoc-giai-phong",
+        "biology.thpt.phien-ma-dich-ma.so-ribonucleotit-moi-truong-phien-ma",
+        "biology.thpt.phien-ma-dich-ma.so-luot-tarn",
+        "biology.thpt.phien-ma-dich-ma.chieu-dai-chuoi-polipeptit",
+        "biology.thpt.phien-ma-dich-ma.so-axit-amin-cho-nhieu-chuoi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một gen có $N = 3000$ nucleotit điều khiển tổng hợp một chuỗi polipeptit. Tính số bộ ba trên mARN, số axit amin của chuỗi hoàn chỉnh, số liên kết peptit và số phân tử nước giải phóng khi tạo chuỗi hoàn chỉnh.",
+          "solution": "Số ribonucleotit của mARN bằng số nucleotit một mạch gốc: $r_N = N/2 = 1500$. Số bộ ba $= r_N/3 = 1500/3 = 500$ bộ ba. Chuỗi hoàn chỉnh bỏ bộ ba kết thúc và axit amin mở đầu nên có $500 - 2 = 498$ axit amin. Vì nối $m$ axit amin cần $m-1$ liên kết peptit và giải phóng $m-1$ phân tử nước, ta có $498 - 1 = 497$ liên kết peptit và 497 phân tử nước. Các con số 'trừ 2 rồi trừ 1' phản ánh đúng việc loại bộ ba kết thúc, axit amin mở đầu và bản chất phản ứng trùng ngưng.",
+          "answer": "500 bộ ba; 498 axit amin; 497 liên kết peptit; 497 phân tử nước."
+        }
+      ],
+      "common_mistakes": [
+        "Quên trừ bộ ba kết thúc khi tính số axit amin — sai, vì bộ ba kết thúc (UAA, UAG, UGA) không mã hoá axit amin nào, nên số axit amin cung cấp là $r_N/3 - 1$.",
+        "Cho rằng chuỗi hoàn chỉnh vẫn giữ axit amin mở đầu — sai, vì ở tế bào axit amin mở đầu (Met hoặc formyl-Met) thường bị enzyme cắt bỏ, nên chuỗi hoàn chỉnh có $r_N/3 - 2$ axit amin.",
+        "Tính số liên kết peptit bằng đúng số axit amin — sai, vì nối $m$ axit amin chỉ tạo $m - 1$ liên kết peptit, tương tự số phân tử nước giải phóng cũng là $m - 1$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "phien-ma",
+        "dich-ma",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.dot-bien-gen",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Biến dị",
+      "order": 1,
+      "title_vi": "Đột biến gen",
+      "title_en": "Gene mutation",
+      "objectives": [
+        "Phân biệt được ba dạng đột biến điểm: mất, thêm và thay thế một cặp nucleotit",
+        "Tính được sự thay đổi số nucleotit, chiều dài và số liên kết hiđro của gen sau đột biến",
+        "Tính được tần số đột biến gen trong quần thể"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.cau-truc-adn-va-cong-thuc-dem-nucleotit"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Đột biến gen",
+          "term_en": "Gene mutation",
+          "definition": "Biến đổi trong cấu trúc của gen liên quan đến một hoặc một số cặp nucleotit; các dạng thường gặp là mất, thêm và thay thế một cặp nucleotit."
+        },
+        {
+          "term_vi": "Đột biến thay thế",
+          "term_en": "Substitution",
+          "definition": "Thay một cặp nucleotit này bằng một cặp khác; không đổi tổng số nucleotit và chiều dài gen, nhưng có thể đổi số liên kết hiđro (thay A-T bằng G-X làm tăng 1 liên kết, ngược lại giảm 1)."
+        },
+        {
+          "term_vi": "Đột biến dịch khung",
+          "term_en": "Frameshift mutation",
+          "definition": "Mất hoặc thêm một cặp nucleotit (không phải bội của 3) làm lệch khung đọc mã từ điểm đột biến trở đi, thay đổi hàng loạt axit amin phía sau nên hậu quả thường nghiêm trọng."
+        }
+      ],
+      "content": "## Một cặp nucleotit đổi chỗ, hệ quả tới đâu?\n\nĐột biến gen là những thay đổi rất nhỏ ở mức phân tử, nhưng có thể làm hỏng cả một protein. Có ba dạng đột biến điểm cơ bản, mỗi dạng để lại 'dấu vết số học' riêng trên gen.\n\n## Ba dạng và hệ quả định lượng\n\n- **Mất một cặp nucleotit**: $N$ giảm 2, chiều dài giảm $3{,}4\\ \\text{Å}$; nếu mất cặp A-T thì $H$ giảm 2, mất cặp G-X thì $H$ giảm 3. Khung đọc bị lệch.\n- **Thêm một cặp nucleotit**: $N$ tăng 2, chiều dài tăng $3{,}4\\ \\text{Å}$; $H$ tăng 2 hoặc 3 tuỳ loại cặp. Khung đọc bị lệch.\n- **Thay thế một cặp nucleotit**: $N$ và chiều dài **không đổi**; chỉ $H$ có thể đổi $\\pm 1$ (thay A-T bằng G-X: $H$ tăng 1; ngược lại giảm 1).\n\n## Mất/thêm nguy hiểm hơn thay thế\n\nMất hoặc thêm một cặp gây **dịch khung**: mọi bộ ba từ điểm đột biến trở đi đều bị đọc sai, làm thay đổi hàng loạt axit amin. Thay thế thường chỉ ảnh hưởng một bộ ba (đột biến sai nghĩa, vô nghĩa hoặc đồng nghĩa). **Tần số đột biến gen** trong quần thể được tính bằng tỉ lệ giao tử mang alen đột biến mới trên tổng số giao tử.",
+      "formulas": [
+        "biology.thpt.dot-bien.dot-bien-mat-mot-cap-nucleotit",
+        "biology.thpt.dot-bien.dot-bien-them-mot-cap-nucleotit",
+        "biology.thpt.dot-bien.dot-bien-thay-the-cap-nucleotit",
+        "biology.thpt.dot-bien.tan-so-dot-bien-gen"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Gen ban đầu có $A = 400$, $G = 600$ (nên $H = 2\\cdot400 + 3\\cdot600 = 2600$). Sau đột biến, gen có số liên kết hiđro là 2601 nhưng chiều dài không đổi. Xác định dạng đột biến.",
+          "solution": "Chiều dài không đổi nghĩa là tổng số nucleotit $N$ không đổi, loại trừ ngay đột biến mất hoặc thêm cặp nucleotit; chỉ còn dạng thay thế. Số liên kết hiđro tăng đúng 1 ($2601 - 2600 = 1$). Vì thay một cặp A-T (2 liên kết) bằng một cặp G-X (3 liên kết) làm $H$ tăng 1, còn thay ngược lại làm $H$ giảm 1, kết luận: đột biến thay thế một cặp A-T bằng một cặp G-X.",
+          "answer": "Đột biến thay thế một cặp A-T bằng một cặp G-X."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng đột biến thay thế làm đổi chiều dài gen — sai, vì thay một cặp bằng một cặp khác giữ nguyên tổng số nucleotit, nên chiều dài và khối lượng gen không đổi, chỉ số liên kết hiđro có thể thay đổi.",
+        "Nghĩ mất hay thêm 3 cặp nucleotit vẫn gây dịch khung — sai, vì mất/thêm một số cặp là bội của 3 chỉ làm mất/thêm nguyên các bộ ba, không làm lệch khung đọc phía sau.",
+        "Tính $H$ giảm 2 khi mất một cặp G-X — sai, vì cặp G-X có 3 liên kết hiđro nên mất nó làm $H$ giảm 3, chỉ mất cặp A-T mới làm giảm 2."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "dot-bien-gen",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Cánh diều",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.dot-bien-nhiem-sac-the",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Biến dị",
+      "order": 2,
+      "title_vi": "Đột biến nhiễm sắc thể: lệch bội và đa bội",
+      "title_en": "Chromosomal mutations: aneuploidy and polyploidy",
+      "objectives": [
+        "Xác định được bộ nhiễm sắc thể của các thể lệch bội và số loại thể lệch bội có thể tạo ra",
+        "Tính được tỉ lệ giao tử của thể tam bội và thể tứ bội",
+        "Xác định được số kiểu gen tối đa và tỉ lệ kiểu hình đời con trong các phép lai đa bội"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.dot-bien-gen"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Thể lệch bội",
+          "term_en": "Aneuploidy",
+          "definition": "Đột biến làm thay đổi số lượng nhiễm sắc thể ở một hoặc vài cặp: thể một $(2n-1)$, thể ba $(2n+1)$, thể không $(2n-2)$...; sinh ra do một cặp NST không phân li trong giảm phân."
+        },
+        {
+          "term_vi": "Thể đa bội",
+          "term_en": "Polyploidy",
+          "definition": "Đột biến làm tăng số lượng nhiễm sắc thể theo bội số nguyên lần của bộ đơn bội $n$ ($3n, 4n, ...$); thể đa bội thường có cơ quan sinh dưỡng to, phổ biến ở thực vật."
+        },
+        {
+          "term_vi": "Giao tử của thể đa bội",
+          "term_en": "Gametes of polyploids",
+          "definition": "Thể tứ bội AAaa giảm phân cho giao tử lưỡng bội theo tỉ lệ $1\\,AA : 4\\,Aa : 1\\,aa$; thể tam bội AAa cho các loại giao tử đơn bội và lưỡng bội với tỉ lệ đặc trưng."
+        }
+      ],
+      "content": "## Khi cả nhiễm sắc thể thay đổi số lượng\n\nKhác với đột biến gen chỉ đụng đến vài nucleotit, đột biến nhiễm sắc thể làm thay đổi **cấu trúc** hoặc **số lượng** NST, kéo theo nhiều gen cùng lúc. Ta tập trung vào hai nhóm định lượng quan trọng: lệch bội và đa bội.\n\n## Lệch bội\n\nMột cặp NST không phân li tạo giao tử thừa hoặc thiếu, khi thụ tinh cho thể ba $(2n+1)$, thể một $(2n-1)$... Với loài có $n$ cặp NST, số loại thể ba (hoặc thể một) khác nhau bằng đúng số cặp NST, tức $n$ loại.\n\n## Đa bội và giao tử\n\nThể đa bội mang bộ NST tăng theo bội của $n$. Điểm mấu chốt của bài tập là tỉ lệ giao tử. Thể **tứ bội AAaa** giảm phân bình thường cho giao tử lưỡng bội tỉ lệ:\n$$1\\,AA : 4\\,Aa : 1\\,aa$$\nDùng sơ đồ tổ hợp chập 2 của 4 alen $\\{A,A,a,a\\}$ để hiểu tỉ lệ này. Thể **tam bội AAa** cho giao tử theo tỉ lệ $1\\,AA : 2\\,Aa : 2\\,A : 1\\,a$ (gồm cả giao tử lưỡng bội và đơn bội). Từ tỉ lệ giao tử, ta suy ra tỉ lệ kiểu gen và kiểu hình đời con — ví dụ phép lai $AAaa \\times AAaa$ cho tỉ lệ kiểu hình trội : lặn là $35 : 1$.",
+      "formulas": [
+        "biology.thpt.dot-bien.cac-dang-the-lech-boi",
+        "biology.thpt.dot-bien.so-loai-the-lech-boi",
+        "biology.thpt.dot-bien.giao-tu-the-tu-boi-aaaa",
+        "biology.thpt.dot-bien.giao-tu-the-tam-boi",
+        "biology.thpt.dot-bien.ti-le-kieu-hinh-lai-tu-boi",
+        "biology.thpt.dot-bien.so-kieu-gen-the-ba",
+        "biology.thpt.dot-bien.so-kieu-gen-the-tu-boi",
+        "biology.thpt.dot-bien.dot-bien-cau-truc-nst",
+        "biology.thpt.dot-bien.giao-tu-the-tu-boi-khac"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho phép lai giữa hai cây tứ bội $AAaa \\times AAaa$ (A đỏ trội hoàn toàn so với a trắng). Tính tỉ lệ cây hoa trắng (aaaa) ở đời con.",
+          "solution": "Cây hoa trắng có kiểu gen $aaaa$, chỉ tạo ra khi cả hai giao tử đều là $aa$. Trước hết tìm tỉ lệ giao tử $aa$ của thể tứ bội AAaa: giảm phân cho $1AA : 4Aa : 1aa$ trên tổng 6 phần, nên tỉ lệ giao tử $aa = 1/6$. Cây trắng cần giao tử $aa$ từ cả bố và mẹ nên tỉ lệ $= \\dfrac{1}{6} \\times \\dfrac{1}{6} = \\dfrac{1}{36}$. Suy ra tỉ lệ trội : lặn $= 35 : 1$, khớp với kết quả kinh điển của phép lai tứ bội.",
+          "answer": "Tỉ lệ cây hoa trắng $= 1/36$ (trội : lặn $= 35 : 1$)."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng thể tứ bội AAaa cho giao tử tỉ lệ $1:2:1$ như thể lưỡng bội Aa — sai, vì phải tổ hợp chập 2 của bốn alen nên tỉ lệ đúng là $1AA : 4Aa : 1aa$.",
+        "Nhầm thể ba $(2n+1)$ với thể tam bội $(3n)$ — sai, vì thể ba chỉ thừa một NST ở một cặp, còn thể tam bội thừa nguyên một bộ $n$ ở tất cả các cặp.",
+        "Tính số loại thể ba bằng $2^n$ — sai, vì mỗi thể ba chỉ khác nhau ở việc cặp NST nào bị thừa, nên số loại đúng bằng số cặp NST là $n$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "dot-bien-nst",
+        "da-boi",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.nguyen-phan",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Phân bào - Nguyên phân và Giảm phân",
+      "order": 1,
+      "title_vi": "Nguyên phân: số tế bào con và nhiễm sắc thể môi trường cung cấp",
+      "title_en": "Mitosis: daughter cells and chromosomes supplied by the environment",
+      "objectives": [
+        "Tính được số tế bào con tạo ra sau k lần nguyên phân từ a tế bào ban đầu",
+        "Tính được số nhiễm sắc thể môi trường cung cấp cho quá trình nguyên phân",
+        "Xác định được số NST và cromatit qua các kì của nguyên phân"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Nguyên phân",
+          "term_en": "Mitosis",
+          "definition": "Hình thức phân bào tạo hai tế bào con có bộ NST giống hệt tế bào mẹ ($2n$); một tế bào qua $k$ lần nguyên phân tạo $2^k$ tế bào con."
+        },
+        {
+          "term_vi": "NST môi trường cung cấp",
+          "term_en": "Chromosomes supplied",
+          "definition": "Số NST đơn môi trường cung cấp cho $a$ tế bào $(2n)$ nguyên phân $k$ lần: $2n \\cdot a \\cdot (2^k - 1)$, vì tạo $a\\cdot 2^k$ tế bào nhưng $a$ tế bào mẹ đã có sẵn NST."
+        },
+        {
+          "term_vi": "Cromatit",
+          "term_en": "Chromatid",
+          "definition": "Mỗi NST kép gồm hai cromatit chị em dính nhau ở tâm động; ở kì giữa nguyên phân có $2n$ NST kép tức $4n$ cromatit, sang kì sau tách thành $4n$ NST đơn."
+        }
+      ],
+      "content": "## Đếm tế bào và vật chất di truyền\n\nNguyên phân giữ nguyên bộ NST: từ một tế bào $2n$ tạo ra hai tế bào con cũng $2n$. Nhờ tính chất nhân đôi này, mọi bài toán đếm đều quy về luỹ thừa của 2.\n\n## Số tế bào con và số lần nguyên phân\n\nTừ $a$ tế bào ban đầu, sau $k$ lần nguyên phân số tế bào con là\n$$S = a \\cdot 2^{k}$$\n\n## Nhiễm sắc thể môi trường cung cấp\n\nMỗi lần phân bào đòi hỏi nhân đôi ADN, tức tổng hợp NST mới. Tổng số NST đơn môi trường cung cấp cho $a$ tế bào $2n$ qua $k$ lần:\n$$\\text{NST}_{cc} = 2n \\cdot a \\cdot (2^{k} - 1)$$\nDấu $(2^k - 1)$ xuất hiện vì tế bào mẹ ban đầu đã mang sẵn bộ NST, môi trường chỉ cấp phần tăng thêm.\n\n## NST qua các kì\n\nTheo dõi một tế bào: kì trung gian nhân đôi thành $2n$ NST kép ($4n$ cromatit); kì giữa các NST kép xếp một hàng ở mặt phẳng xích đạo; kì sau tách tâm động cho $4n$ NST đơn đi về hai cực; kì cuối mỗi tế bào con nhận $2n$ NST đơn. Nắm rõ số NST và cromatit từng kì là chìa khoá cho các câu hỏi lí thuyết định lượng.",
+      "formulas": [
+        "biology.thpt.phan-bao.so-te-bao-con-sau-nguyen-phan",
+        "biology.thpt.phan-bao.so-nst-moi-truong-cung-cap-nguyen-phan",
+        "biology.thpt.phan-bao.so-nst-qua-cac-ki-nguyen-phan",
+        "biology.thpt.phan-bao.so-thoi-phan-bao",
+        "biology.thpt.phan-bao.so-nst-hoan-toan-moi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Có 5 tế bào sinh dưỡng của một loài $2n = 8$ cùng nguyên phân liên tiếp 4 lần. Tính số tế bào con và số NST đơn môi trường cung cấp cho toàn bộ quá trình.",
+          "solution": "Số tế bào con dùng công thức luỹ thừa: $S = a\\cdot 2^k = 5 \\times 2^4 = 5 \\times 16 = 80$ tế bào con. Với NST môi trường cung cấp, mỗi tế bào mẹ đã có sẵn $2n$ NST nên chỉ phần tăng thêm mới do môi trường cấp: $\\text{NST}_{cc} = 2n\\cdot a\\cdot(2^k - 1) = 8 \\times 5 \\times (16 - 1) = 8 \\times 5 \\times 15 = 600$. Con số $2^k - 1$ nhắc ta rằng bộ NST ban đầu không phải do môi trường tạo ra.",
+          "answer": "80 tế bào con; 600 NST đơn môi trường cung cấp."
+        }
+      ],
+      "common_mistakes": [
+        "Tính NST môi trường cung cấp bằng $2n\\cdot a\\cdot 2^k$ — sai, vì bộ NST của các tế bào mẹ ban đầu đã tồn tại, môi trường chỉ cung cấp phần tăng thêm nên phải dùng $(2^k - 1)$.",
+        "Cho rằng kì giữa nguyên phân có $4n$ NST — sai, vì kì giữa có $2n$ NST kép (mỗi NST gồm 2 cromatit), tổng cộng $4n$ cromatit chứ không phải $4n$ NST.",
+        "Nhân số tế bào con bằng $a + 2^k$ — sai, vì mỗi tế bào ban đầu độc lập tạo $2^k$ tế bào con, nên tổng là tích $a\\cdot 2^k$ chứ không phải tổng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "te-bao",
+        "nguyen-phan",
+        "phan-bao",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 10 - Kết nối tri thức",
+        "SGK Sinh học 10 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.giam-phan-va-thu-tinh",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Phân bào - Nguyên phân và Giảm phân",
+      "order": 2,
+      "title_vi": "Giảm phân và thụ tinh: số loại giao tử, trao đổi chéo, hiệu suất thụ tinh",
+      "title_en": "Meiosis and fertilization: gamete types, crossing over, fertilization efficiency",
+      "objectives": [
+        "Tính được số loại giao tử tối đa của cơ thể có n cặp NST, kể cả khi có trao đổi chéo",
+        "Tính được số giao tử tạo ra từ tế bào sinh tinh và tế bào sinh trứng",
+        "Tính được hiệu suất thụ tinh của giao tử"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.nguyen-phan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Giảm phân",
+          "term_en": "Meiosis",
+          "definition": "Hai lần phân bào liên tiếp từ một tế bào $2n$ tạo bốn tế bào con $n$; sự phân li độc lập của các cặp NST tạo nên biến dị tổ hợp."
+        },
+        {
+          "term_vi": "Số loại giao tử",
+          "term_en": "Number of gamete types",
+          "definition": "Cơ thể có $n$ cặp NST tương đồng (mỗi cặp chứa cặp gen dị hợp khác nhau) tạo tối đa $2^n$ loại giao tử; nếu có $k$ cặp xảy ra trao đổi chéo tại một điểm thì số loại giao tử tăng lên $2^{n+k}$."
+        },
+        {
+          "term_vi": "Hiệu suất thụ tinh",
+          "term_en": "Fertilization efficiency",
+          "definition": "Tỉ lệ phần trăm số giao tử được thụ tinh trên tổng số giao tử tạo ra: $H = \\dfrac{\\text{số hợp tử}}{\\text{số giao tử}}\\times 100\\%$; ở trứng thường cao, ở tinh trùng thường rất thấp."
+        }
+      ],
+      "content": "## Vì sao đời con đa dạng đến vậy?\n\nGiảm phân là nguồn gốc chính của biến dị tổ hợp. Mỗi cặp NST tương đồng phân li độc lập, nên số tổ hợp giao tử tăng theo luỹ thừa của 2.\n\n## Số loại giao tử\n\nCơ thể dị hợp $n$ cặp gen nằm trên $n$ cặp NST khác nhau tạo tối đa\n$$2^{n}\\ \\text{loại giao tử}$$\nNếu có **trao đổi chéo** đơn tại $k$ cặp NST, mỗi cặp đó cho thêm loại giao tử hoán vị, nâng số loại lên $2^{n+k}$. Số cách sắp xếp NST ở kì giữa giảm phân I cũng là $2^{n-1}$ cách khác nhau cho mỗi tế bào.\n\n## Số giao tử và hiệu suất thụ tinh\n\nMột tế bào sinh tinh giảm phân cho **4 tinh trùng**; một tế bào sinh trứng chỉ cho **1 trứng** (và 3 thể cực tiêu biến). **Hiệu suất thụ tinh**:\n$$H = \\frac{\\text{số hợp tử}}{\\text{số giao tử}}\\times 100\\%$$\nVì mỗi hợp tử cần 1 trứng và 1 tinh trùng, số hợp tử bằng số trứng (hoặc tinh trùng) được thụ tinh. Hiệu suất thụ tinh của trứng thường cao (gần 100%), còn của tinh trùng rất thấp do số lượng tinh trùng khổng lồ.",
+      "formulas": [
+        "biology.thpt.phan-bao.so-loai-giao-tu-toi-da",
+        "biology.thpt.phan-bao.so-loai-giao-tu-co-trao-doi-cheo",
+        "biology.thpt.phan-bao.so-cach-sap-xep-nst-ki-giua-i",
+        "biology.thpt.phan-bao.so-giao-tu-tu-te-bao-sinh-duc",
+        "biology.thpt.phan-bao.hieu-suat-thu-tinh",
+        "biology.thpt.phan-bao.so-loai-hop-tu",
+        "biology.thpt.phan-bao.so-nst-cung-cap-cho-tao-giao-tu",
+        "biology.thpt.phan-bao.so-nst-qua-cac-ki-giam-phan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Ở một loài động vật, có 100 tế bào sinh tinh giảm phân bình thường. Biết hiệu suất thụ tinh của tinh trùng là 2%. Tính số tinh trùng tạo ra và số hợp tử được hình thành.",
+          "solution": "Mỗi tế bào sinh tinh giảm phân cho 4 tinh trùng, nên số tinh trùng $= 100 \\times 4 = 400$. Hiệu suất thụ tinh cho biết tỉ lệ tinh trùng thực sự kết hợp với trứng: số hợp tử $= 400 \\times 2\\% = 400 \\times 0{,}02 = 8$. Vì mỗi hợp tử chỉ cần một tinh trùng, số hợp tử bằng số tinh trùng được thụ tinh, tức 8 hợp tử.",
+          "answer": "400 tinh trùng; 8 hợp tử."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng tế bào sinh trứng cũng tạo 4 trứng như tế bào sinh tinh — sai, vì trong sinh trứng chỉ 1 trong 4 tế bào con phát triển thành trứng, 3 tế bào còn lại là thể cực tiêu biến.",
+        "Tính số loại giao tử bằng $n^2$ hoặc $2n$ — sai, vì mỗi cặp NST dị hợp cho 2 khả năng và các cặp phân li độc lập nên số loại giao tử là $2^n$.",
+        "Nhầm hiệu suất thụ tinh với tỉ lệ sống sót của hợp tử — sai, vì hiệu suất thụ tinh chỉ xét bước giao tử kết hợp thành hợp tử, chưa nói gì đến việc hợp tử phát triển tiếp."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "te-bao",
+        "giam-phan",
+        "thu-tinh",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 10 - Chân trời sáng tạo",
+        "SGK Sinh học 10 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.quy-luat-phan-li-va-phan-li-doc-lap",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Quy luật di truyền",
+      "order": 1,
+      "title_vi": "Quy luật phân li, phân li độc lập và công thức tổng quát n cặp gen",
+      "title_en": "Segregation, independent assortment and the general n-gene formulas",
+      "objectives": [
+        "Vận dụng quy luật phân li và phân li độc lập của Mendel để dự đoán tỉ lệ đời con",
+        "Áp dụng công thức tổng quát tính số loại giao tử, kiểu gen, kiểu hình khi lai n cặp gen dị hợp",
+        "Sử dụng nhị thức Newton để tính xác suất xuất hiện một tổ hợp kiểu hình cụ thể"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Quy luật phân li độc lập",
+          "term_en": "Law of independent assortment",
+          "definition": "Các cặp alen quy định các cặp tính trạng khác nhau nằm trên các cặp NST tương đồng khác nhau phân li độc lập trong giảm phân, tạo tổ hợp giao tử tự do."
+        },
+        {
+          "term_vi": "Công thức tổng quát n cặp gen",
+          "term_en": "General n-gene formulas",
+          "definition": "Với cơ thể dị hợp $n$ cặp gen (mỗi cặp phân li độc lập, trội hoàn toàn): số loại giao tử $= 2^n$; số kiểu tổ hợp $= 4^n$; số loại kiểu gen $= 3^n$; số loại kiểu hình $= 2^n$; tỉ lệ kiểu hình $= (3:1)^n$."
+        },
+        {
+          "term_vi": "Xác suất theo nhị thức Newton",
+          "term_en": "Binomial probability",
+          "definition": "Xác suất để trong $n$ phép thử độc lập có đúng $k$ lần xuất hiện biến cố xác suất $p$: $C_n^k\\,p^{k}(1-p)^{n-k}$; dùng cho bài toán tính xác suất số con mang kiểu hình nhất định."
+        }
+      ],
+      "content": "## Từ hạt đậu của Mendel đến công thức tổng quát\n\nMendel phát hiện mỗi cặp alen phân li về giao tử một cách độc lập. Khi lai nhiều cặp tính trạng, các cặp tổ hợp tự do — đó là **phân li độc lập**. Sức mạnh của quy luật này nằm ở chỗ ta có thể tổng quát hoá thành công thức cho $n$ cặp gen.\n\n## Bộ công thức vàng cho phép lai n cặp dị hợp\n\nXét cơ thể dị hợp $n$ cặp gen $(AaBb\\ldots)$, các gen phân li độc lập, trội hoàn toàn. Khi tự thụ $F_1 \\times F_1$:\n\n| Đại lượng | Công thức |\n|---|---|\n| Số loại giao tử mỗi bên | $2^n$ |\n| Số kiểu tổ hợp giao tử | $4^n$ |\n| Số loại kiểu gen | $3^n$ |\n| Số loại kiểu hình | $2^n$ |\n| Tỉ lệ phân li kiểu hình | $(3:1)^n$ |\n\nTỉ lệ kiểu hình mang toàn tính trạng lặn là $(1/4)^n$.\n\n## Khi cần một tổ hợp cụ thể\n\nMuốn tính xác suất, chẳng hạn, một cặp bố mẹ $AaBb \\times AaBb$ sinh 3 con trong đó có đúng 2 con trội cả hai tính trạng, ta tách bài toán: xác suất mỗi con trội hai tính trạng là $9/16$, rồi áp **nhị thức Newton** $C_3^2 (9/16)^2(7/16)^1$. Cách tách 'tính xác suất một cá thể rồi nhân với tổ hợp' là công cụ mạnh cho mọi bài xác suất di truyền.",
+      "formulas": [
+        "biology.thpt.quy-luat-di-truyen.so-loai-giao-tu-n-cap-di-hop",
+        "biology.thpt.quy-luat-di-truyen.so-kieu-to-hop-giao-tu",
+        "biology.thpt.quy-luat-di-truyen.so-loai-kieu-gen-doi-con",
+        "biology.thpt.quy-luat-di-truyen.so-loai-kieu-hinh-doi-con",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-gen-tong-quat",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-tong-quat",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-lan-hoan-toan",
+        "biology.thpt.quy-luat-di-truyen.xac-suat-nhi-thuc-newton"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Phép lai $AaBbCc \\times AaBbCc$, các gen phân li độc lập, trội hoàn toàn. Tính số loại kiểu gen, số loại kiểu hình và tỉ lệ cá thể mang cả ba tính trạng lặn ở đời con.",
+          "solution": "Với $n = 3$ cặp gen dị hợp phân li độc lập, áp trực tiếp công thức tổng quát vì mỗi cặp gen di truyền độc lập nên nhân xác suất riêng của từng cặp. Số loại kiểu gen $= 3^n = 3^3 = 27$. Số loại kiểu hình $= 2^n = 2^3 = 8$. Cá thể mang cả ba tính trạng lặn có kiểu gen $aabbcc$; xác suất mỗi cặp cho con lặn là $1/4$, ba cặp độc lập nên nhân lại: $(1/4)^3 = 1/64$.",
+          "answer": "27 kiểu gen; 8 kiểu hình; tỉ lệ đồng hợp lặn cả ba tính trạng $= 1/64$."
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng công thức $(3:1)^n$ khi các gen không phân li độc lập — sai, vì công thức tổng quát chỉ đúng khi mỗi cặp gen nằm trên một cặp NST khác nhau; nếu liên kết gen thì tỉ lệ khác hẳn.",
+        "Tính số kiểu gen bằng $2^n$ thay vì $3^n$ — sai, vì mỗi cặp gen dị hợp cho 3 loại kiểu gen (AA, Aa, aa) chứ không phải 2; $2^n$ là số loại kiểu hình.",
+        "Cộng xác suất các cặp gen thay vì nhân — sai, vì các sự kiện di truyền độc lập nên xác suất đồng thời phải nhân, không phải cộng."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "phan-li-doc-lap",
+        "mendel",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.tuong-tac-gen",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Quy luật di truyền",
+      "order": 2,
+      "title_vi": "Tương tác gen",
+      "title_en": "Gene interaction",
+      "objectives": [
+        "Phân biệt được tương tác bổ sung, tương tác át chế và tương tác cộng gộp",
+        "Nhận ra các tỉ lệ biến dạng của tỉ lệ 9:3:3:1 (9:7, 9:6:1, 12:3:1, 13:3, 9:3:4, 15:1)",
+        "Xác định được kiểu gen bố mẹ từ tỉ lệ kiểu hình đời con trong tương tác gen"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.quy-luat-phan-li-va-phan-li-doc-lap"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tương tác bổ sung",
+          "term_en": "Complementary interaction",
+          "definition": "Hai hoặc nhiều gen không alen cùng quy định một tính trạng; sản phẩm của chúng phối hợp tạo kiểu hình mới. Các tỉ lệ đặc trưng: 9:3:3:1, 9:6:1, 9:7."
+        },
+        {
+          "term_vi": "Tương tác át chế",
+          "term_en": "Epistasis",
+          "definition": "Một gen (gen át) che khuất biểu hiện của gen khác không alen. Át chế trội cho tỉ lệ 12:3:1 hoặc 13:3; át chế lặn cho tỉ lệ 9:3:4."
+        },
+        {
+          "term_vi": "Tương tác cộng gộp",
+          "term_en": "Additive interaction",
+          "definition": "Nhiều gen cùng tác động theo kiểu cộng dồn lên một tính trạng số lượng; mỗi alen trội đóng góp một phần như nhau. Với hai gen cho tỉ lệ 15:1, kiểu hình biến thiên liên tục."
+        }
+      ],
+      "content": "## Khi nhiều gen cùng quyết định một tính trạng\n\nMendel giả định mỗi gen quy định một tính trạng riêng. Nhưng nhiều tính trạng thực tế do **nhiều gen không alen** cùng chi phối. Dấu hiệu nhận biết: phép lai hai cặp gen dị hợp cho tỉ lệ kiểu hình là **biến dạng** của $9:3:3:1$ (tổng vẫn bằng 16).\n\n## Bảng nhận diện nhanh\n\n| Kiểu tương tác | Tỉ lệ $F_2$ |\n|---|---|\n| Bổ sung (4 kiểu hình) | $9:3:3:1$ |\n| Bổ sung (2 kiểu hình) | $9:7$ |\n| Bổ sung (3 kiểu hình) | $9:6:1$ |\n| Át chế trội | $12:3:1$ hoặc $13:3$ |\n| Át chế lặn | $9:3:4$ |\n| Cộng gộp | $15:1$ |\n\nMẹo: cộng các nhóm của $9:3:3:1$ để suy ra tỉ lệ mới. Ví dụ $9:7$ là gộp $(3+3+1)$ thành nhóm lặn; $12:3:1$ là gộp $(9+3)$ do gen trội át.\n\n## Từ tỉ lệ suy ngược kiểu gen\n\nGặp tỉ lệ lạ như $9:6:1$ hay $13:3$, trước hết quy về tổng 16 để khẳng định có hai cặp gen phân li độc lập, rồi nhóm các tổ hợp $A\\_B\\_ : A\\_bb : aaB\\_ : aabb$ theo kiểu hình. **Tương tác cộng gộp** giải thích các tính trạng số lượng (chiều cao, màu da): càng nhiều alen trội, kiểu hình càng đậm, tạo dãy biến dị liên tục.",
+      "formulas": [
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-3-3-1",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-6-1",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-7",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-at-che-12-3-1",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-at-che-13-3",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-at-che-9-3-4",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-cong-gop-15-1",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-cong-gop-tong-quat",
+        "biology.thpt.quy-luat-di-truyen.gen-da-hieu"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Lai hai cây hoa trắng thuần chủng thu được $F_1$ toàn hoa đỏ. Cho $F_1$ tự thụ, $F_2$ có 9 đỏ : 7 trắng. Giải thích và xác định kiểu gen của $F_1$.",
+          "solution": "Tỉ lệ $9:7$ có tổng $16$ nên chắc chắn có hai cặp gen phân li độc lập cùng chi phối màu hoa, và $F_1$ dị hợp hai cặp $AaBb$. Vì hoa đỏ chỉ xuất hiện ở nhóm $9$ ($A\\_B\\_$), suy ra chỉ khi có mặt đồng thời cả gen trội A và B thì mới tạo sắc tố đỏ; thiếu một trong hai (nhóm $3 + 3 + 1 = 7$) đều cho hoa trắng. Đây là tương tác bổ sung kiểu $9:7$: hai enzyme do A và B mã hoá phải phối hợp mới hoàn thành con đường tổng hợp sắc tố. Kiểu gen $F_1$ là $AaBb$.",
+          "answer": "Tương tác bổ sung $9:7$; $F_1$ có kiểu gen $AaBb$ (đỏ khi có cả A và B)."
+        }
+      ],
+      "common_mistakes": [
+        "Kết luận có nhiều cặp gen dựa vào tỉ lệ mà quên kiểm tra tổng bằng 16 — sai, vì các biến dạng của tương tác hai cặp gen luôn có tổng các phần bằng 16; nếu tổng khác thì phải xét số cặp gen khác.",
+        "Nhầm tương tác át chế trội (12:3:1) với át chế lặn (9:3:4) — sai, vì át chế trội do alen trội che khuất nên nhóm trội gộp lại lớn (12), còn át chế lặn do kiểu gen đồng hợp lặn ở một gen gây ra kiểu hình thứ ba.",
+        "Cho rằng tương tác gen vi phạm quy luật phân li độc lập — sai, vì các gen vẫn phân li độc lập bình thường; chỉ có cách chúng biểu hiện thành kiểu hình là phối hợp với nhau."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "tuong-tac-gen",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Cánh diều",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.lien-ket-gen-va-hoan-vi-gen",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Quy luật di truyền",
+      "order": 3,
+      "title_vi": "Liên kết gen và hoán vị gen: tần số hoán vị và bản đồ gen",
+      "title_en": "Gene linkage and recombination: recombination frequency and gene mapping",
+      "objectives": [
+        "Phân biệt được liên kết gen hoàn toàn và hoán vị gen dựa trên tỉ lệ giao tử",
+        "Tính được tần số hoán vị gen từ tỉ lệ giao tử hoán vị hoặc tỉ lệ kiểu hình đời con",
+        "Lập được bản đồ di truyền từ tần số hoán vị giữa các cặp gen"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.quy-luat-phan-li-va-phan-li-doc-lap"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Liên kết gen",
+          "term_en": "Gene linkage",
+          "definition": "Các gen cùng nằm trên một NST có xu hướng di truyền cùng nhau; liên kết hoàn toàn chỉ cho hai loại giao tử với tỉ lệ bằng nhau, không tạo biến dị tổ hợp."
+        },
+        {
+          "term_vi": "Hoán vị gen",
+          "term_en": "Crossing over / recombination",
+          "definition": "Sự trao đổi đoạn giữa hai cromatit của cặp NST tương đồng ở giảm phân, tạo giao tử hoán vị. Tần số hoán vị $f = \\dfrac{\\text{số giao tử hoán vị}}{\\text{tổng số giao tử}}\\times 100\\%$, luôn $\\le 50\\%$."
+        },
+        {
+          "term_vi": "Bản đồ di truyền",
+          "term_en": "Genetic map",
+          "definition": "Sơ đồ vị trí tương đối của các gen trên NST; khoảng cách giữa hai gen tính bằng đơn vị centimorgan (cM), $1\\ \\text{cM} = 1\\%$ tần số hoán vị."
+        }
+      ],
+      "content": "## Khi các gen 'đi cùng nhau'\n\nNếu hai gen nằm trên cùng một NST, chúng có xu hướng di truyền cùng nhau — **liên kết gen**. Liên kết hoàn toàn chỉ cho 2 loại giao tử (giao tử liên kết), làm giảm biến dị tổ hợp so với phân li độc lập.\n\n## Hoán vị gen và tần số\n\nỞ giảm phân, trao đổi chéo giữa hai cromatit tạo **giao tử hoán vị**. Gọi $f$ là **tần số hoán vị**:\n$$f = \\frac{\\text{số cá thể (giao tử) hoán vị}}{\\text{tổng số}}\\times 100\\%$$\nHai loại giao tử hoán vị có tỉ lệ bằng nhau, mỗi loại $= f/2$; hai loại giao tử liên kết mỗi loại $= (1 - f)/2$. Vì trao đổi chéo chỉ xảy ra giữa hai trong bốn cromatit, $f$ **không bao giờ vượt 50%**; $f = 50\\%$ tương đương phân li độc lập.\n\n## Lập bản đồ gen\n\nTần số hoán vị tỉ lệ thuận với khoảng cách giữa hai gen: hai gen càng xa nhau càng dễ bị trao đổi chéo tách rời. Do đó $1\\%$ hoán vị $= 1$ centimorgan (cM). Với ba gen A, B, C, ta đo $f$ từng cặp rồi cộng dồn để sắp thứ tự: nếu $f_{AB} = 20\\%$, $f_{BC} = 10\\%$, $f_{AC} = 30\\%$ thì B nằm giữa và bản đồ là A—20—B—10—C. Đây là nguyên lí lập bản đồ di truyền cổ điển.",
+      "formulas": [
+        "biology.thpt.quy-luat-di-truyen.lien-ket-gen-hoan-toan",
+        "biology.thpt.quy-luat-di-truyen.tan-so-hoan-vi-gen",
+        "biology.thpt.quy-luat-di-truyen.ti-le-giao-tu-hoan-vi",
+        "biology.thpt.quy-luat-di-truyen.khoang-cach-ban-do-di-truyen",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-lan-trong-hoan-vi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một cơ thể dị hợp hai cặp gen $\\dfrac{AB}{ab}$ giảm phân có hoán vị gen với tần số $f = 20\\%$. Tính tỉ lệ mỗi loại giao tử.",
+          "solution": "Kiểu gen $\\dfrac{AB}{ab}$ ở thế dị hợp đều (cis) nên giao tử liên kết là $AB$ và $ab$, giao tử hoán vị là $Ab$ và $aB$. Tần số hoán vị $f = 20\\%$ được chia đều cho hai loại giao tử hoán vị: mỗi loại $= f/2 = 10\\%$. Phần còn lại $1 - f = 80\\%$ thuộc về hai giao tử liên kết, mỗi loại $= (1-f)/2 = 40\\%$. Cách chia đôi này phản ánh việc trao đổi chéo tạo đồng thời hai loại giao tử hoán vị với số lượng bằng nhau.",
+          "answer": "$AB = ab = 40\\%$; $Ab = aB = 10\\%$."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng tần số hoán vị có thể lớn hơn 50% — sai, vì trao đổi chéo chỉ xảy ra giữa hai trong bốn cromatit nên tối đa một nửa số giao tử là hoán vị; $f \\le 50\\%$.",
+        "Chia tần số hoán vị cho hai loại giao tử liên kết thay vì hoán vị — sai, vì $f$ là tổng tỉ lệ giao tử hoán vị, nên mỗi giao tử hoán vị $= f/2$, còn giao tử liên kết chiếm phần lớn $(1-f)/2$.",
+        "Xác định sai giao tử liên kết khi cơ thể ở thế dị hợp chéo (trans) $\\dfrac{Ab}{aB}$ — sai, vì lúc đó giao tử liên kết là $Ab, aB$ còn giao tử hoán vị mới là $AB, ab$, ngược với thế dị hợp đều."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "hoan-vi-gen",
+        "ban-do-gen",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.di-truyen-lien-ket-gioi-tinh",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Quy luật di truyền",
+      "order": 4,
+      "title_vi": "Di truyền liên kết giới tính và di truyền ngoài nhân",
+      "title_en": "Sex-linked inheritance and extranuclear inheritance",
+      "objectives": [
+        "Giải thích được đặc điểm di truyền của gen nằm trên vùng không tương đồng của NST X",
+        "Phân biệt được di truyền liên kết với X, liên kết với Y và di truyền ngoài nhân",
+        "Vận dụng nhị thức Newton để tính xác suất về giới tính của con"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.quy-luat-phan-li-va-phan-li-doc-lap"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Di truyền liên kết với X",
+          "term_en": "X-linked inheritance",
+          "definition": "Gen nằm trên vùng không tương đồng của NST X; di truyền chéo (bố truyền cho con gái, mẹ truyền cho con trai). Tính trạng lặn liên kết X biểu hiện nhiều ở nam vì nam chỉ có một X ($X^a Y$)."
+        },
+        {
+          "term_vi": "Di truyền liên kết với Y",
+          "term_en": "Y-linked inheritance",
+          "definition": "Gen nằm trên vùng không tương đồng của NST Y chỉ truyền cho con trai theo dòng bố (di truyền thẳng), không bao giờ biểu hiện ở nữ."
+        },
+        {
+          "term_vi": "Di truyền ngoài nhân",
+          "term_en": "Extranuclear inheritance",
+          "definition": "Gen nằm trong ti thể hoặc lục lạp; con luôn nhận tế bào chất từ mẹ nên tính trạng di truyền theo dòng mẹ, kết quả phép lai thuận và nghịch khác nhau."
+        }
+      ],
+      "content": "## Vì sao bệnh mù màu gặp ở nam nhiều hơn nữ?\n\nMột số gen nằm trên NST giới tính, khiến quy luật di truyền phụ thuộc giới. Với gen lặn trên **vùng không tương đồng của X**, nam chỉ có một X nên chỉ cần một alen lặn $X^a Y$ đã biểu hiện bệnh; nữ cần cả hai $X^a X^a$ mới mắc. Đó là lí do bệnh mù màu, máu khó đông phổ biến ở nam.\n\n## Ba kiểu di truyền đặc biệt\n\n- **Liên kết X**: di truyền **chéo** — mẹ truyền cho con trai, bố truyền cho con gái. Con trai nhận X từ mẹ nên kiểu hình con trai phản ánh kiểu gen mẹ.\n- **Liên kết Y**: di truyền **thẳng** — chỉ bố truyền cho tất cả con trai, con gái không bao giờ mang.\n- **Di truyền ngoài nhân**: gen ở ti thể/lục lạp, con nhận tế bào chất từ mẹ nên di truyền **theo dòng mẹ**; phép lai thuận nghịch cho kết quả khác nhau, đời con luôn giống mẹ.\n\n## Xác suất về giới tính\n\nVì mỗi lần sinh xác suất con trai và con gái đều $1/2$ và độc lập nhau, ta dùng **nhị thức Newton** để tính, ví dụ, xác suất một gia đình 4 con có đúng 2 trai: $C_4^2 (1/2)^2 (1/2)^2 = 6/16 = 3/8$. Kết hợp quy luật liên kết giới tính với xác suất giới tính là dạng câu hỏi vận dụng cao thường gặp.",
+      "formulas": [
+        "biology.thpt.quy-luat-di-truyen.di-truyen-lien-ket-gioi-tinh-tren-x",
+        "biology.thpt.quy-luat-di-truyen.di-truyen-gen-tren-y",
+        "biology.thpt.quy-luat-di-truyen.di-truyen-ngoai-nhan",
+        "biology.thpt.di-truyen-nguoi.xac-suat-sinh-con-theo-gioi-tinh",
+        "biology.thpt.di-truyen-nguoi.xac-suat-sinh-con-benh-tu-bo-me-di-hop",
+        "biology.thpt.di-truyen-nguoi.chi-so-iq"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Mẹ bình thường mang gen dị hợp về bệnh mù màu $X^A X^a$ lấy bố không bị bệnh $X^A Y$ (A: bình thường trội, a: mù màu). Tính tỉ lệ con trai bị mù màu trong tổng số con.",
+          "solution": "Bố cho hai loại giao tử $X^A$ và $Y$ với tỉ lệ bằng nhau; mẹ cho $X^A$ và $X^a$ bằng nhau. Con trai luôn nhận $Y$ từ bố và một X từ mẹ, nên trong số con trai có $1/2$ nhận $X^a$ (mù màu) và $1/2$ nhận $X^A$ (bình thường). Nhưng con trai chỉ chiếm $1/2$ tổng số con, nên tỉ lệ con trai mù màu trên tổng số con $= \\dfrac{1}{2}\\times\\dfrac{1}{2} = \\dfrac{1}{4}$. Cần nhân thêm hệ số $1/2$ về giới tính chính là điểm dễ quên.",
+          "answer": "Con trai mù màu chiếm $1/4$ tổng số con (và chiếm $1/2$ trong số con trai)."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng gen lặn liên kết X biểu hiện như nhau ở hai giới — sai, vì nam chỉ có một X nên chỉ cần một alen lặn đã biểu hiện, còn nữ phải đồng hợp lặn, khiến tần số bệnh ở nam cao hơn.",
+        "Nhầm di truyền ngoài nhân với di truyền liên kết X — sai, vì di truyền ngoài nhân do gen ti thể/lục lạp, con luôn giống mẹ bất kể giới tính; còn liên kết X vẫn tuân theo phân li của NST giới tính.",
+        "Quên nhân hệ số $1/2$ giới tính khi tính tỉ lệ 'con trai bị bệnh trên tổng số con' — sai, vì tỉ lệ trong nhóm con trai khác với tỉ lệ trên toàn bộ con, phải nhân thêm xác suất là con trai."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "lien-ket-gioi-tinh",
+        "di-truyen-ngoai-nhan",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.so-kieu-gen-toi-da-trong-quan-the",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Quy luật di truyền",
+      "order": 5,
+      "title_vi": "Số kiểu gen tối đa trong quần thể",
+      "title_en": "Maximum number of genotypes in a population",
+      "objectives": [
+        "Tính được số kiểu gen tối đa của một gen có r alen trên NST thường",
+        "Tính được số kiểu gen tối đa khi nhiều gen cùng nằm trên một cặp NST hoặc trên NST giới tính",
+        "Kết hợp các trường hợp để tính số kiểu gen và số kiểu giao phối tối đa của quần thể"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.quy-luat-phan-li-va-phan-li-doc-lap"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Số kiểu gen của gen trên NST thường",
+          "term_en": "Genotypes for an autosomal gene",
+          "definition": "Một gen có $r$ alen trên NST thường cho số kiểu gen tối đa $= \\dfrac{r(r+1)}{2}$, gồm $r$ kiểu đồng hợp và $C_r^2$ kiểu dị hợp."
+        },
+        {
+          "term_vi": "Nhiều gen trên một cặp NST",
+          "term_en": "Multiple genes on one chromosome pair",
+          "definition": "Coi mỗi tổ hợp alen trên một NST là một 'alen kép': nếu tính được $m$ loại NST khác nhau thì số kiểu gen $= \\dfrac{m(m+1)}{2}$."
+        },
+        {
+          "term_vi": "Gen trên NST giới tính",
+          "term_en": "Genes on sex chromosomes",
+          "definition": "Gen trên vùng không tương đồng của X có $\\dfrac{r(r+1)}{2}$ kiểu gen ở giới XX cộng $r$ kiểu ở giới XY; cần cộng cả hai giới để có tổng số kiểu gen."
+        }
+      ],
+      "content": "## Bài toán tổ hợp ẩn trong di truyền\n\nSố kiểu gen tối đa của quần thể là một bài toán đếm tổ hợp thuần tuý, nhưng phải xử lí đúng vị trí của gen: trên NST thường, cùng một NST, hay trên NST giới tính.\n\n## Công thức nền tảng\n\nMột gen có $r$ alen trên NST thường: mỗi kiểu gen là một cặp không thứ tự chọn từ $r$ alen (cho phép lặp), nên số kiểu gen $= \\dfrac{r(r+1)}{2}$. Trong đó $r$ kiểu đồng hợp và $\\dfrac{r(r-1)}{2}$ kiểu dị hợp.\n\n## Các trường hợp mở rộng\n\n- **Nhiều gen trên nhiều cặp NST khác nhau**: tính số kiểu gen mỗi gen rồi **nhân** lại.\n- **Nhiều gen trên cùng một cặp NST**: mỗi NST mang một tổ hợp alen, coi tổ hợp đó như một 'alen lớn'. Nếu có $m$ loại NST thì số kiểu gen $= \\dfrac{m(m+1)}{2}$.\n- **Gen trên vùng không tương đồng của X**: giới XX có $\\dfrac{r(r+1)}{2}$ kiểu, giới XY có $r$ kiểu; cộng lại.\n\nCuối cùng, **số kiểu giao phối tối đa** trong quần thể là số cách ghép hai kiểu gen (có phân biệt đực - cái nếu cần). Chiến lược chung: xác định vị trí gen $\\to$ đếm từng phần $\\to$ nhân các phần độc lập, cộng các giới. Nhầm giữa 'nhân' và 'cộng' là lỗi phổ biến nhất.",
+      "formulas": [
+        "biology.thpt.so-kieu-gen.gen-tren-nst-thuong",
+        "biology.thpt.so-kieu-gen.hai-gen-tren-mot-cap-nst",
+        "biology.thpt.so-kieu-gen.nhieu-gen-tren-nhieu-cap-nst",
+        "biology.thpt.so-kieu-gen.gen-tren-vung-khong-tuong-dong-x",
+        "biology.thpt.so-kieu-gen.gen-tren-vung-khong-tuong-dong-y",
+        "biology.thpt.so-kieu-gen.gen-tren-vung-tuong-dong-x-va-y",
+        "biology.thpt.so-kieu-gen.ket-hop-nst-thuong-va-gioi-tinh",
+        "biology.thpt.so-kieu-gen.so-kieu-giao-phoi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Gen I có 3 alen và gen II có 4 alen, nằm trên hai cặp NST thường khác nhau. Tính số kiểu gen tối đa trong quần thể.",
+          "solution": "Vì hai gen nằm trên hai cặp NST khác nhau nên chúng độc lập; ta tính số kiểu gen từng gen rồi nhân. Gen I có $r = 3$: số kiểu gen $= \\dfrac{3\\times 4}{2} = 6$. Gen II có $r = 4$: số kiểu gen $= \\dfrac{4\\times 5}{2} = 10$. Do độc lập, tổng số kiểu gen $= 6 \\times 10 = 60$. Nếu hai gen cùng nằm trên một cặp NST thì cách tính hoàn toàn khác (phải coi tổ hợp alen như một alen lớn), nên xác định vị trí gen là bước quyết định.",
+          "answer": "60 kiểu gen tối đa."
+        }
+      ],
+      "common_mistakes": [
+        "Nhân số alen thay vì dùng công thức tổ hợp — sai, vì số kiểu gen của một gen $r$ alen là $\\dfrac{r(r+1)}{2}$ (kể cả đồng hợp và dị hợp), không phải $r$ hay $r^2$.",
+        "Cộng số kiểu gen của các gen trên các cặp NST khác nhau — sai, vì các gen độc lập nên số kiểu gen tổ hợp phải nhân với nhau, không phải cộng.",
+        "Áp dụng công thức gen trên NST thường cho gen trên X — sai, vì ở NST giới tính phải tính riêng giới XX (dạng $\\dfrac{r(r+1)}{2}$) và giới XY (dạng $r$) rồi cộng lại."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen",
+        "so-kieu-gen",
+        "to-hop",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.cau-truc-di-truyen-quan-the-tu-thu-phan",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Di truyền học quần thể",
+      "order": 1,
+      "title_vi": "Cấu trúc di truyền của quần thể tự thụ phấn và giao phối gần",
+      "title_en": "Genetic structure of self-pollinating and inbreeding populations",
+      "objectives": [
+        "Tính được tần số alen từ tần số kiểu gen và từ số lượng cá thể",
+        "Tính được tỉ lệ kiểu gen dị hợp và đồng hợp sau n thế hệ tự thụ phấn",
+        "Giải thích được vì sao tự thụ phấn và giao phối gần làm nghèo vốn gen của quần thể"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Tần số alen",
+          "term_en": "Allele frequency",
+          "definition": "Tỉ lệ số alen một loại trên tổng số alen của gen đó trong quần thể; với gen hai alen A, a: $p = f(AA) + \\dfrac{1}{2}f(Aa)$ và $q = f(aa) + \\dfrac{1}{2}f(Aa)$."
+        },
+        {
+          "term_vi": "Tự thụ phấn",
+          "term_en": "Self-pollination",
+          "definition": "Hình thức sinh sản trong đó giao tử đực và cái từ cùng một cá thể kết hợp; qua mỗi thế hệ tỉ lệ dị hợp giảm một nửa, tỉ lệ đồng hợp tăng lên."
+        },
+        {
+          "term_vi": "Tỉ lệ kiểu gen sau n thế hệ tự thụ",
+          "term_en": "Genotype ratios after n generations",
+          "definition": "Bắt đầu từ 100% Aa: sau $n$ thế hệ tự thụ, tỉ lệ dị hợp $Aa = \\left(\\dfrac{1}{2}\\right)^{n}$, mỗi loại đồng hợp $AA = aa = \\dfrac{1 - (1/2)^{n}}{2}$."
+        }
+      ],
+      "content": "## Vì sao tự thụ phấn làm 'thuần' giống?\n\nQuần thể tự thụ phấn hoặc giao phối gần có một đặc điểm rõ rệt: tỉ lệ dị hợp giảm dần, tỉ lệ đồng hợp tăng dần, dù **tần số alen không đổi**. Đây là cơ sở của việc tạo dòng thuần trong chọn giống.\n\n## Tần số alen: điểm khởi đầu\n\nVới gen hai alen, từ tần số kiểu gen $f(AA), f(Aa), f(aa)$:\n$$p = f(AA) + \\tfrac{1}{2}f(Aa), \\qquad q = f(aa) + \\tfrac{1}{2}f(Aa)$$\nMỗi cá thể dị hợp đóng góp một nửa alen A, một nửa alen a — đó là lí do hệ số $1/2$.\n\n## Quy luật giảm dị hợp\n\nBắt đầu từ quần thể toàn $Aa$, sau $n$ thế hệ tự thụ:\n$$Aa = \\left(\\frac{1}{2}\\right)^{n}, \\quad AA = aa = \\frac{1 - (1/2)^{n}}{2}$$\nMỗi thế hệ, một nửa số dị hợp 'tách' thành đồng hợp. Vì tần số alen giữ nguyên, tự thụ chỉ **phân bố lại** kiểu gen chứ không tạo hay mất alen.\n\n## Hệ quả sinh học\n\nGiao phối gần làm tăng tỉ lệ đồng hợp lặn, bộc lộ các alen lặn có hại vốn ẩn ở thể dị hợp — đó là hiện tượng thoái hoá giống. Nhưng nó cũng là công cụ để tạo dòng thuần đồng nhất về di truyền phục vụ lai giống.",
+      "formulas": [
+        "biology.thpt.di-truyen-quan-the.cau-truc-di-truyen-quan-the",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-tan-so-kieu-gen",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-so-luong-ca-the",
+        "biology.thpt.di-truyen-quan-the.tu-thu-phan-ti-le-di-hop",
+        "biology.thpt.di-truyen-quan-the.tu-thu-phan-ti-le-dong-hop",
+        "biology.thpt.di-truyen-quan-the.he-so-noi-phoi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một quần thể thực vật ban đầu có 100% cá thể kiểu gen $Aa$. Cho tự thụ phấn liên tiếp 3 thế hệ. Tính tỉ lệ kiểu gen $Aa$, $AA$, $aa$ ở thế hệ thứ 3.",
+          "solution": "Vì tự thụ phấn làm mỗi thế hệ tỉ lệ dị hợp giảm một nửa, sau $n = 3$ thế hệ: $Aa = (1/2)^3 = 1/8$. Phần đồng hợp còn lại là $1 - 1/8 = 7/8$, chia đều cho hai loại đồng hợp vì xuất phát cân đối: $AA = aa = \\dfrac{7/8}{2} = 7/16$. Kiểm chứng: $1/8 + 7/16 + 7/16 = 2/16 + 7/16 + 7/16 = 16/16 = 1$. Tần số alen vẫn là $p = q = 0{,}5$ như ban đầu, đúng với tính chất tự thụ chỉ phân bố lại kiểu gen.",
+          "answer": "$Aa = 1/8$; $AA = aa = 7/16$."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng tự thụ phấn làm thay đổi tần số alen — sai, vì tự thụ chỉ chuyển dị hợp thành đồng hợp, tổng số mỗi loại alen trong quần thể không đổi.",
+        "Chia phần đồng hợp không đều khi quần thể ban đầu không cân đối — sai, vì $AA$ và $aa$ chỉ bằng nhau khi tỉ lệ hai đồng hợp ban đầu bằng nhau; nếu khác, phải cộng riêng phần đồng hợp phát sinh vào phần có sẵn.",
+        "Tính tần số alen mà quên hệ số $1/2$ cho thể dị hợp — sai, vì mỗi cá thể $Aa$ chỉ đóng góp một nửa số alen là A, nên $p = f(AA) + \\tfrac{1}{2}f(Aa)$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen-quan-the",
+        "tu-thu-phan",
+        "tan-so-alen",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Cánh diều",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.dinh-luat-hardy-weinberg",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Di truyền học quần thể",
+      "order": 2,
+      "title_vi": "Định luật Hardy - Weinberg và điều kiện nghiệm đúng",
+      "title_en": "The Hardy-Weinberg law and its conditions",
+      "objectives": [
+        "Phát biểu được định luật Hardy - Weinberg và nêu năm điều kiện nghiệm đúng",
+        "Tính được tần số alen và tần số kiểu gen của quần thể cân bằng từ tỉ lệ kiểu hình lặn",
+        "Kiểm tra được một quần thể có đang ở trạng thái cân bằng di truyền hay không"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.cau-truc-di-truyen-quan-the-tu-thu-phan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Định luật Hardy - Weinberg",
+          "term_en": "Hardy-Weinberg principle",
+          "definition": "Trong quần thể ngẫu phối cân bằng, tần số kiểu gen ổn định qua các thế hệ theo công thức $p^2\\,AA + 2pq\\,Aa + q^2\\,aa = 1$, với $p + q = 1$."
+        },
+        {
+          "term_vi": "Điều kiện nghiệm đúng",
+          "term_en": "Hardy-Weinberg conditions",
+          "definition": "Năm điều kiện: quần thể kích thước lớn, ngẫu phối, không đột biến, không di - nhập gen, không chọn lọc tự nhiên (không có yếu tố làm thay đổi tần số alen)."
+        },
+        {
+          "term_vi": "Kiểm tra cân bằng",
+          "term_en": "Testing for equilibrium",
+          "definition": "Quần thể cân bằng khi $f(Aa)^2 = 4\\cdot f(AA)\\cdot f(aa)$, tức tần số kiểu gen quan sát khớp với $p^2 : 2pq : q^2$ tính từ tần số alen."
+        }
+      ],
+      "content": "## Một điểm tựa để phát hiện tiến hoá\n\nĐịnh luật Hardy - Weinberg mô tả trạng thái quần thể **không tiến hoá**: nếu không có nhân tố nào tác động, tần số alen và kiểu gen giữ nguyên qua các thế hệ. Chính vì thế, khi quần thể **lệch** khỏi Hardy - Weinberg, ta biết có nhân tố tiến hoá đang hoạt động.\n\n## Công thức và cách dùng\n\nVới gen hai alen tần số $p(A)$ và $q(a)$, $p + q = 1$, quần thể cân bằng có:\n$$p^{2}\\,AA + 2pq\\,Aa + q^{2}\\,aa = 1$$\nDạng bài phổ biến nhất: biết tỉ lệ kiểu hình lặn $q^2$, lấy căn để có $q = \\sqrt{q^2}$, rồi $p = 1 - q$; từ đó suy ra mọi tần số kiểu gen. Ví dụ bệnh lặn chiếm $q^2 = 0{,}04$ thì $q = 0{,}2$, $p = 0{,}8$, tần số người lành mang gen $2pq = 0{,}32$.\n\n## Năm điều kiện nghiệm đúng\n\nQuần thể phải: (1) kích thước lớn, (2) ngẫu phối, (3) không đột biến, (4) không di - nhập gen, (5) không chọn lọc. Vi phạm bất kì điều kiện nào đều có thể làm tần số alen thay đổi.\n\n## Kiểm tra cân bằng\n\nMột quần thể đang cân bằng nếu tần số kiểu gen thoả $(2pq)^2 = 4p^2 q^2$, tức $f(Aa)^2 = 4\\,f(AA)\\,f(aa)$. Đây là công cụ nhanh để xác nhận trạng thái cân bằng mà không cần theo dõi nhiều thế hệ.",
+      "formulas": [
+        "biology.thpt.di-truyen-quan-the.dinh-luat-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.kiem-tra-can-bang-di-truyen",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-kieu-hinh-lan",
+        "biology.thpt.di-truyen-quan-the.hardy-weinberg-nhieu-alen",
+        "biology.thpt.di-truyen-quan-the.gen-tren-nst-gioi-tinh-x",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-gen-tren-x"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Ở một quần thể người cân bằng di truyền, cứ 10 000 người có 1 người mắc bệnh bạch tạng (bệnh do gen lặn a trên NST thường). Tính tần số alen a và tỉ lệ người mang gen bệnh nhưng không biểu hiện (dị hợp).",
+          "solution": "Bệnh lặn nên người bệnh có kiểu gen $aa$, tần số $q^2 = 1/10000 = 0{,}0001$. Vì quần thể cân bằng, ta được phép lấy căn để tìm tần số alen: $q = \\sqrt{0{,}0001} = 0{,}01$, do đó $p = 1 - q = 0{,}99$. Người mang gen bệnh không biểu hiện là dị hợp $Aa$ với tần số $2pq = 2\\times 0{,}99\\times 0{,}01 = 0{,}0198 \\approx 1{,}98\\%$. Con số này lớn hơn nhiều so với tỉ lệ người bệnh, cho thấy phần lớn alen lặn 'ẩn' trong thể dị hợp.",
+          "answer": "$q = 0{,}01$; tỉ lệ dị hợp $2pq \\approx 0{,}0198$ (khoảng 1,98%)."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy tần số alen lặn bằng tỉ lệ người bệnh $q^2$ thay vì $\\sqrt{q^2}$ — sai, vì người bệnh là thể đồng hợp lặn ứng với $q^2$, muốn có tần số alen phải khai căn.",
+        "Áp dụng Hardy - Weinberg cho quần thể tự thụ phấn hoặc giao phối gần — sai, vì định luật chỉ đúng với quần thể ngẫu phối; tự phối làm tăng đồng hợp nên tần số kiểu gen lệch khỏi $p^2 : 2pq : q^2$.",
+        "Quên rằng người dị hợp cũng mang alen bệnh — sai, vì tần số alen lặn gồm cả phần trong thể dị hợp: $q = q^2 + \\tfrac{1}{2}(2pq)$, nên đa số alen lặn nằm ở người lành mang gen."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "di-truyen-quan-the",
+        "hardy-weinberg",
+        "can-bang",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.cac-nhan-to-tien-hoa-lam-thay-doi-tan-so-alen",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Tiến hoá",
+      "order": 1,
+      "title_vi": "Các nhân tố tiến hoá làm thay đổi tần số alen",
+      "title_en": "Evolutionary factors changing allele frequencies",
+      "objectives": [
+        "Tính được sự thay đổi tần số alen do chọn lọc tự nhiên qua các thế hệ",
+        "Tính được thay đổi tần số alen do đột biến và do di - nhập gen",
+        "Giải thích được tác động của các yếu tố ngẫu nhiên đến vốn gen của quần thể nhỏ"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.dinh-luat-hardy-weinberg"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Chọn lọc tự nhiên",
+          "term_en": "Natural selection",
+          "definition": "Nhân tố làm thay đổi tần số alen theo hướng xác định thông qua độ thích nghi khác nhau; hệ số chọn lọc $s = 1 - w$ đo mức bất lợi của kiểu gen ($w$ là độ thích nghi tương đối)."
+        },
+        {
+          "term_vi": "Di - nhập gen",
+          "term_en": "Gene flow / migration",
+          "definition": "Sự trao đổi cá thể (hoặc giao tử) giữa các quần thể làm thay đổi tần số alen: $\\Delta q = m(q_m - q)$ với $m$ là tỉ lệ nhập cư, $q_m$ tần số alen của nhóm nhập cư."
+        },
+        {
+          "term_vi": "Yếu tố ngẫu nhiên (phiêu bạt di truyền)",
+          "term_en": "Genetic drift",
+          "definition": "Sự biến động tần số alen ngẫu nhiên do lấy mẫu giao tử ở quần thể kích thước nhỏ; có thể làm mất hoặc cố định alen bất kể lợi hại, tác động mạnh khi kích thước quần thể hiệu dụng nhỏ."
+        }
+      ],
+      "content": "## Điều gì phá vỡ trạng thái Hardy - Weinberg?\n\nHardy - Weinberg mô tả quần thể đứng yên. Tiến hoá xảy ra khi một trong các **nhân tố tiến hoá** làm tần số alen thay đổi. Ta định lượng ba nhân tố quan trọng nhất.\n\n## Chọn lọc tự nhiên\n\nMỗi kiểu gen có **độ thích nghi tương đối** $w$; **hệ số chọn lọc** $s = 1 - w$. Với alen lặn a bị chọn lọc hoàn toàn ($s = 1$, thể $aa$ không sinh sản), tần số alen lặn sau $n$ thế hệ:\n$$q_n = \\frac{q_0}{1 + n\\,q_0}$$\nCông thức này cho thấy chọn lọc chống alen lặn ngày càng chậm khi $q$ nhỏ, vì alen lặn ẩn trong thể dị hợp.\n\n## Đột biến và di - nhập gen\n\nĐột biến làm thay đổi tần số alen rất chậm theo tốc độ đột biến. **Di - nhập gen** thay đổi nhanh hơn: sau một thế hệ nhập cư tỉ lệ $m$ từ nhóm có tần số $q_m$,\n$$q' = (1 - m)q + m\\,q_m$$\n\n## Yếu tố ngẫu nhiên\n\nỞ quần thể nhỏ, **phiêu bạt di truyền** làm tần số alen dao động ngẫu nhiên, có thể cố định hoặc loại bỏ alen bất kể giá trị thích nghi. Kích thước quần thể hiệu dụng càng nhỏ, phiêu bạt càng mạnh — đó là lí do các quần thể nhỏ dễ mất đa dạng di truyền.",
+      "formulas": [
+        "biology.thpt.tien-hoa.tan-so-alen-sau-mot-the-he-chon-loc",
+        "biology.thpt.tien-hoa.chon-loc-chong-alen-lan-hoan-toan",
+        "biology.thpt.tien-hoa.thay-doi-tan-so-alen-do-dot-bien",
+        "biology.thpt.tien-hoa.di-nhap-gen",
+        "biology.thpt.tien-hoa.do-thich-nghi-va-he-so-chon-loc",
+        "biology.thpt.tien-hoa.yeu-to-ngau-nhien",
+        "biology.thpt.tien-hoa.gia-tri-thich-nghi-trung-binh",
+        "biology.thpt.tien-hoa.kich-thuoc-quan-the-hieu-dung"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một quần thể có tần số alen lặn a là $q_0 = 0{,}5$. Alen a gây chết hoàn toàn ở thể đồng hợp lặn trước tuổi sinh sản ($s = 1$). Tính tần số alen a sau 3 thế hệ chọn lọc.",
+          "solution": "Chọn lọc loại bỏ hoàn toàn thể $aa$, nên áp dụng công thức chọn lọc chống alen lặn hoàn toàn $q_n = \\dfrac{q_0}{1 + n q_0}$; công thức này xây dựng từ việc mỗi thế hệ chỉ thể $aa$ bị loại, còn alen a trong thể dị hợp vẫn tồn tại. Thay số với $n = 3$, $q_0 = 0{,}5$: $q_3 = \\dfrac{0{,}5}{1 + 3\\times 0{,}5} = \\dfrac{0{,}5}{2{,}5} = 0{,}2$. Alen lặn giảm từ 0,5 xuống 0,2 nhưng không bị loại hẳn, minh hoạ vì sao khó loại bỏ alen lặn có hại khỏi quần thể.",
+          "answer": "$q_3 = 0{,}2$."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng chọn lọc loại hết alen lặn ngay sau một thế hệ — sai, vì alen lặn còn ẩn trong thể dị hợp $Aa$ không bị chọn lọc, nên chỉ giảm dần chứ không mất ngay.",
+        "Nhầm di - nhập gen với đột biến về tốc độ thay đổi — sai, vì đột biến làm thay đổi tần số alen cực chậm (theo tốc độ đột biến rất nhỏ), còn di - nhập gen có thể đổi tần số nhanh trong một thế hệ.",
+        "Cho rằng phiêu bạt di truyền luôn giữ lại alen có lợi — sai, vì yếu tố ngẫu nhiên tác động không định hướng, ở quần thể nhỏ có thể cố định cả alen có hại và loại bỏ alen có lợi."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "sinh-hoc",
+        "tien-hoa",
+        "tan-so-alen",
+        "chon-loc",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.sinh-thai-quan-the-va-tang-truong",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Sinh thái học",
+      "order": 1,
+      "title_vi": "Sinh thái quần thể: kích thước và tăng trưởng",
+      "title_en": "Population ecology: size and growth",
+      "objectives": [
+        "Tính được kích thước quần thể tại một thời điểm từ các yếu tố sinh, tử, xuất, nhập cư",
+        "Phân biệt được tăng trưởng theo tiềm năng sinh học (chữ J) và tăng trưởng thực tế (chữ S)",
+        "Ước lượng được kích thước quần thể bằng phương pháp bắt - đánh dấu - thả - bắt lại"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Kích thước quần thể",
+          "term_en": "Population size",
+          "definition": "Tổng số cá thể của quần thể; biến động theo bốn yếu tố: $N_t = N_0 + B - D + I - E$ (sinh, tử, nhập cư, xuất cư)."
+        },
+        {
+          "term_vi": "Tăng trưởng theo tiềm năng sinh học",
+          "term_en": "Exponential (J-shaped) growth",
+          "definition": "Kiểu tăng trưởng khi nguồn sống vô hạn: tốc độ tăng riêng $r$ đạt cực đại, đường biểu diễn hình chữ J, $N_t = N_0 e^{rt}$."
+        },
+        {
+          "term_vi": "Tăng trưởng thực tế (logistic)",
+          "term_en": "Logistic (S-shaped) growth",
+          "definition": "Kiểu tăng trưởng trong điều kiện môi trường giới hạn bởi sức chứa $K$; đường cong hình chữ S, tốc độ tăng chậm dần khi $N$ tiến tới $K$: $\\dfrac{dN}{dt} = rN\\dfrac{K - N}{K}$."
+        }
+      ],
+      "content": "## Quần thể lớn lên như thế nào?\n\nKích thước quần thể không cố định mà thay đổi theo bốn dòng: sinh, tử, nhập cư, xuất cư:\n$$N_t = N_0 + B - D + I - E$$\nHiểu bốn yếu tố này giúp lí giải mọi biến động số lượng.\n\n## Hai kiểu tăng trưởng\n\n- **Theo tiềm năng sinh học** (chữ J): khi nguồn sống dồi dào, quần thể tăng theo hàm mũ $N_t = N_0 e^{rt}$ với $r$ là tốc độ tăng riêng tức thời. Đường cong dựng đứng, không giới hạn — chỉ đúng trong thời gian ngắn.\n- **Thực tế** (chữ S, logistic): môi trường có **sức chứa** $K$; khi $N$ tăng, cạnh tranh làm tốc độ tăng chậm lại: $\\dfrac{dN}{dt} = rN\\dfrac{K - N}{K}$. Khi $N \\to K$, tăng trưởng dừng.\n\n## Ước lượng kích thước quần thể\n\nVới động vật di chuyển, ta dùng phương pháp **bắt - đánh dấu - thả - bắt lại** (Lincoln - Petersen): bắt $M$ cá thể đánh dấu rồi thả; lần sau bắt $C$ cá thể thấy $R$ con có dấu. Vì tỉ lệ đánh dấu trong mẫu phản ánh tỉ lệ trong quần thể:\n$$N \\approx \\frac{M \\times C}{R}$$\nĐây là công cụ cơ bản của sinh thái học thực địa. **Thời gian quần thể tăng gấp đôi** trong pha mũ là $t_2 = \\dfrac{\\ln 2}{r}$.",
+      "formulas": [
+        "biology.thpt.sinh-thai.kich-thuoc-quan-the",
+        "biology.thpt.sinh-thai.mat-do-ca-the",
+        "biology.thpt.sinh-thai.muc-tang-truong-quan-the",
+        "biology.thpt.sinh-thai.tang-truong-theo-tiem-nang-sinh-hoc",
+        "biology.thpt.sinh-thai.tang-truong-mu-theo-thoi-gian",
+        "biology.thpt.sinh-thai.tang-truong-thuc-te-logistic",
+        "biology.thpt.sinh-thai.phuong-phap-bat-tha",
+        "biology.thpt.sinh-thai.thoi-gian-nhan-doi-quan-the",
+        "biology.thpt.sinh-thai.ti-le-gioi-tinh",
+        "biology.thpt.sinh-thai.thap-tuoi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Để ước lượng số cá trong một hồ, người ta bắt 200 con, đánh dấu rồi thả lại. Lần sau bắt 250 con thì thấy 50 con có dấu. Ước lượng số cá trong hồ.",
+          "solution": "Phương pháp bắt - thả giả định tỉ lệ cá đánh dấu trong lần bắt thứ hai bằng tỉ lệ cá đánh dấu trong toàn hồ, vì cá đánh dấu đã trộn đều. Ta có $\\dfrac{R}{C} = \\dfrac{M}{N}$, suy ra $N = \\dfrac{M\\times C}{R} = \\dfrac{200\\times 250}{50} = 1000$ con. Điều kiện để ước lượng đúng là quần thể không thay đổi đáng kể giữa hai lần bắt và cá đánh dấu phân bố đều.",
+          "answer": "Khoảng 1000 con cá."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng tăng trưởng theo tiềm năng sinh học kéo dài mãi — sai, vì môi trường luôn có sức chứa $K$ giới hạn, nên trong thực tế đường cong chuyển sang dạng chữ S khi nguồn sống cạn dần.",
+        "Bỏ qua nhập cư và xuất cư khi tính biến động số lượng — sai, vì kích thước quần thể phụ thuộc cả bốn yếu tố sinh, tử, nhập, xuất; chỉ tính sinh và tử sẽ sai với quần thể mở.",
+        "Đảo công thức bắt - thả thành $N = R\\times C / M$ — sai, vì số cá đánh dấu ban đầu $M$ phải ở tử số; đặt sai vị trí sẽ cho kết quả vô lí nhỏ hơn cả mẫu."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "sinh-thai",
+        "quan-the",
+        "tang-truong",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "SGK Sinh học 12 - Cánh diều",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.dong-nang-luong-va-hieu-suat-sinh-thai",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Sinh thái học",
+      "order": 2,
+      "title_vi": "Dòng năng lượng, chuỗi thức ăn và hiệu suất sinh thái",
+      "title_en": "Energy flow, food chains and ecological efficiency",
+      "objectives": [
+        "Xác định được bậc dinh dưỡng của các sinh vật trong chuỗi và lưới thức ăn",
+        "Tính được hiệu suất sinh thái giữa hai bậc dinh dưỡng",
+        "Tính được năng lượng còn lại sau n bậc dinh dưỡng từ hiệu suất chuyển hoá"
+      ],
+      "prerequisites": [
+        "lesson.biology.vn-thpt-biology.sinh-thai-quan-the-va-tang-truong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bậc dinh dưỡng",
+          "term_en": "Trophic level",
+          "definition": "Vị trí của một nhóm sinh vật trong chuỗi thức ăn: sinh vật sản xuất (bậc 1), sinh vật tiêu thụ bậc 1 (động vật ăn thực vật)..., mỗi bậc nhận năng lượng từ bậc trước."
+        },
+        {
+          "term_vi": "Hiệu suất sinh thái",
+          "term_en": "Ecological efficiency",
+          "definition": "Tỉ lệ phần trăm năng lượng chuyển từ bậc dinh dưỡng thấp lên bậc kế tiếp: $eff = \\dfrac{\\text{năng lượng bậc sau}}{\\text{năng lượng bậc trước}}\\times 100\\%$, thường chỉ khoảng 10%."
+        },
+        {
+          "term_vi": "Tháp năng lượng",
+          "term_en": "Energy pyramid",
+          "definition": "Biểu đồ thể hiện năng lượng tích luỹ ở mỗi bậc dinh dưỡng; luôn có đáy lớn đỉnh nhỏ vì phần lớn năng lượng bị mất qua hô hấp và bài tiết ở mỗi bậc."
+        }
+      ],
+      "content": "## Vì sao chuỗi thức ăn không dài vô hạn?\n\nNăng lượng đi qua hệ sinh thái theo **dòng một chiều**: từ ánh sáng $\\to$ sinh vật sản xuất $\\to$ các bậc tiêu thụ. Nhưng mỗi lần chuyển bậc, phần lớn năng lượng bị mất qua hô hấp, bài tiết và nhiệt. Đó là lí do chuỗi thức ăn hiếm khi quá 4-5 bậc.\n\n## Hiệu suất sinh thái\n\nGiữa hai bậc dinh dưỡng liên tiếp:\n$$eff = \\frac{\\text{năng lượng ở bậc sau}}{\\text{năng lượng ở bậc trước}}\\times 100\\%$$\nQuy tắc gần đúng 10% (Lindeman) nói rằng chỉ khoảng 10% năng lượng được truyền lên bậc kế tiếp.\n\n## Năng lượng còn lại sau nhiều bậc\n\nNếu năng lượng bậc 1 là $E_0$ và hiệu suất mỗi bậc là $h$ (dạng thập phân), thì sau $n$ bậc:\n$$E_n = E_0 \\cdot h^{n}$$\nVì $h$ nhỏ (khoảng 0,1), năng lượng suy giảm rất nhanh theo bậc — giải thích vì sao sinh khối động vật ăn thịt đầu bảng luôn ít.\n\n## Chuỗi và lưới thức ăn\n\nMột **chuỗi thức ăn** là dãy tuyến tính các bậc dinh dưỡng; nhiều chuỗi đan xen tạo thành **lưới thức ăn**. Xác định đúng bậc dinh dưỡng của mỗi loài (một loài có thể ở nhiều bậc trong lưới) là bước đầu để tính toán dòng năng lượng.",
+      "formulas": [
+        "biology.thpt.sinh-thai.chuoi-va-luoi-thuc-an",
+        "biology.thpt.sinh-thai.hieu-suat-sinh-thai",
+        "biology.thpt.sinh-thai.nang-luong-con-lai-qua-cac-bac",
+        "biology.thpt.sinh-thai.san-luong-so-cap-tinh",
+        "biology.thpt.sinh-thai.san-luong-thu-cap"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Sinh vật sản xuất của một hệ sinh thái tích luỹ $10^6$ kcal. Hiệu suất sinh thái giữa các bậc đều là 10%. Tính năng lượng còn lại ở bậc tiêu thụ bậc 3 (sinh vật bậc dinh dưỡng cấp 4).",
+          "solution": "Sinh vật sản xuất là bậc dinh dưỡng cấp 1 ($E_0 = 10^6$ kcal). Tiêu thụ bậc 3 là bậc dinh dưỡng cấp 4, tức đã qua 3 lần chuyển bậc từ sinh vật sản xuất. Vì mỗi lần chuyển chỉ giữ lại $h = 0{,}1$ năng lượng, áp dụng $E_n = E_0 h^n$ với $n = 3$: $E_3 = 10^6 \\times (0{,}1)^3 = 10^6 \\times 10^{-3} = 10^3 = 1000$ kcal. Sự sụt giảm từ một triệu xuống một nghìn kcal cho thấy vì sao các bậc dinh dưỡng cao có sinh khối rất nhỏ.",
+          "answer": "$1000$ kcal (tức $10^3$ kcal)."
+        }
+      ],
+      "common_mistakes": [
+        "Đếm sai số lần chuyển bậc giữa sinh vật sản xuất và bậc cần tính — sai, vì tiêu thụ bậc 3 là bậc dinh dưỡng cấp 4, đã qua 3 lần chuyển, nên số mũ là 3 chứ không phải 4.",
+        "Cộng hiệu suất qua các bậc thay vì nhân — sai, vì năng lượng ở mỗi bậc bằng năng lượng bậc trước nhân hiệu suất, nên qua $n$ bậc phải nhân luỹ thừa $h^n$, không phải cộng.",
+        "Cho rằng năng lượng được tái sử dụng như vật chất — sai, vì dòng năng lượng đi một chiều và mất dần qua hô hấp, khác với chu trình vật chất được tuần hoàn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "sinh-hoc",
+        "sinh-thai",
+        "dong-nang-luong",
+        "hieu-suat-sinh-thai",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 12 - Chân trời sáng tạo",
+        "SGK Sinh học 12 - Kết nối tri thức",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.sinh-li-nguoi-tuan-hoan-ho-hap-bai-tiet",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Sinh lí người và động vật",
+      "order": 1,
+      "title_vi": "Sinh lí người: tuần hoàn, hô hấp và bài tiết",
+      "title_en": "Human physiology: circulation, respiration and excretion",
+      "objectives": [
+        "Tính được lưu lượng tim, huyết áp trung bình và vận tốc máu trong hệ mạch",
+        "Tính được độ lọc cầu thận và áp suất lọc hữu hiệu ở cầu thận",
+        "Tính được chỉ số khối cơ thể BMI và đánh giá tình trạng cơ thể"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Lưu lượng tim",
+          "term_en": "Cardiac output",
+          "definition": "Thể tích máu tim bơm đi trong một phút: $Q = \\text{nhịp tim} \\times \\text{thể tích tâm thu}$; là chỉ số phản ánh khả năng cung cấp máu của tim cho cơ thể."
+        },
+        {
+          "term_vi": "Độ lọc cầu thận (GFR)",
+          "term_en": "Glomerular filtration rate",
+          "definition": "Thể tích dịch được lọc qua cầu thận trong một đơn vị thời gian; động lực lọc là áp suất lọc hữu hiệu $P_{lọc} = P_{máu} - (P_{keo} + P_{nang})$."
+        },
+        {
+          "term_vi": "Chỉ số khối cơ thể BMI",
+          "term_en": "Body mass index",
+          "definition": "Chỉ số đánh giá cân nặng theo chiều cao: $BMI = \\dfrac{m}{h^2}$ (m tính bằng kg, h bằng mét); dùng để phân loại gầy, bình thường, thừa cân, béo phì."
+        }
+      ],
+      "content": "## Cơ thể là một hệ định lượng\n\nSinh lí người không chỉ là mô tả: nhiều chức năng có thể đo và tính bằng công thức. Ba hệ tiêu biểu là tuần hoàn, bài tiết và các chỉ số cơ thể.\n\n## Tuần hoàn\n\n**Lưu lượng tim** (cardiac output) là thể tích máu tim bơm mỗi phút:\n$$Q = f_{tim} \\times V_{tâm\\ thu}$$\nví dụ nhịp 75 lần/phút, mỗi lần bơm 70 ml thì $Q = 75\\times 70 = 5250$ ml/phút $\\approx 5{,}25$ L/phút. **Huyết áp trung bình** xấp xỉ $P_{tb} = P_{tâm\\ trương} + \\dfrac{1}{3}(P_{tâm\\ thu} - P_{tâm\\ trương})$. **Vận tốc máu** tỉ lệ nghịch với tổng tiết diện mạch, nên chậm nhất ở mao mạch — thuận lợi cho trao đổi chất.\n\n## Bài tiết\n\nỞ cầu thận, **áp suất lọc hữu hiệu** là hiệu giữa áp suất máu đẩy và tổng của áp suất keo huyết tương cùng áp suất trong nang Bowman; chính nó quyết định **độ lọc cầu thận** (GFR). GFR giảm khi huyết áp tụt là cơ chế bảo vệ nhưng cũng là dấu hiệu suy thận.\n\n## Chỉ số cơ thể\n\n**BMI** $= \\dfrac{m}{h^2}$ dùng phân loại thể trạng: dưới 18,5 là gầy, 18,5-22,9 bình thường (chuẩn châu Á), từ 23 trở lên là thừa cân. Các con số này giúp chuyển kiến thức sinh lí thành công cụ theo dõi sức khoẻ thực tế.",
+      "formulas": [
+        "biology.thcs.sinh-li-nguoi.luu-luong-tim",
+        "biology.thpt.sinh-li-nguoi.van-toc-mau",
+        "biology.thpt.sinh-li-nguoi.huyet-ap-trung-binh",
+        "biology.thpt.sinh-li-nguoi.ap-suat-loc-cau-than",
+        "biology.thpt.sinh-li-nguoi.do-loc-cau-than",
+        "biology.thpt.sinh-li-nguoi.thong-khi-phe-nang",
+        "biology.thpt.sinh-li-nguoi.hieu-suat-trao-doi-khi",
+        "biology.thcs.sinh-li-nguoi.chi-so-bmi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một người có nhịp tim 72 lần/phút, mỗi lần tâm thất bơm được 70 ml máu. Tính lưu lượng tim (theo lít/phút). Nếu người này nặng 63 kg, cao 1,75 m thì BMI bằng bao nhiêu?",
+          "solution": "Lưu lượng tim là tích của nhịp tim và thể tích tâm thu, vì mỗi phút tim co đúng số nhịp đó và mỗi nhịp đẩy đi một thể tích tâm thu: $Q = 72 \\times 70 = 5040$ ml/phút $= 5{,}04$ L/phút, nằm trong khoảng bình thường 5 L/phút. BMI tính bằng khối lượng chia bình phương chiều cao: $BMI = \\dfrac{63}{1{,}75^2} = \\dfrac{63}{3{,}0625} \\approx 20{,}6$ kg/m², thuộc mức bình thường.",
+          "answer": "Lưu lượng tim $\\approx 5{,}04$ L/phút; $BMI \\approx 20{,}6$ kg/m² (bình thường)."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng vận tốc máu nhanh nhất ở mao mạch vì mạch nhỏ — sai, vì vận tốc tỉ lệ nghịch với tổng tiết diện; mao mạch tuy nhỏ nhưng tổng tiết diện rất lớn nên máu chảy chậm nhất, thuận lợi trao đổi chất.",
+        "Tính BMI với chiều cao bằng centimet — sai, vì công thức $BMI = m/h^2$ yêu cầu chiều cao tính bằng mét; dùng cm sẽ cho giá trị nhỏ hơn hàng chục nghìn lần.",
+        "Nhầm áp suất lọc hữu hiệu bằng chính huyết áp — sai, vì áp suất lọc là huyết áp trong cầu thận trừ đi áp suất keo huyết tương và áp suất trong nang Bowman, nên nhỏ hơn huyết áp nhiều."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "sinh-hoc",
+        "sinh-li-nguoi",
+        "tuan-hoan",
+        "bai-tiet",
+        "vn-gdpt-2018"
+      ],
+      "sources": [
+        "SGK Sinh học 11 - Kết nối tri thức",
+        "SGK Sinh học 11 - Chân trời sáng tạo",
+        "CT GDPT 2018 môn Sinh học"
+      ]
+    },
+    {
+      "id": "lesson.biology.vn-thpt-biology.ung-dung-di-truyen-uu-the-lai-chon-giong",
+      "subject": "biology",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 3: Di truyền học và Ứng dụng",
+      "order": 5,
+      "title_vi": "Ứng dụng di truyền học: Ưu thế lai, Hệ số di truyền và Chọn giống",
+      "title_en": "Applied genetics: Heterosis, heritability, and selective breeding",
+      "objectives": [
+        "Giải thích cơ sở di truyền của hiện tượng ưu thế lai và phương pháp tạo dòng thuần",
+        "Tính tỉ lệ giảm dị hợp tử qua các thế hệ tự thụ phấn hoặc giao phối cận huyết",
+        "Vận dụng hệ số di truyền nghĩa rộng, nghĩa hẹp để dự đoán hiệu quả chọn lọc"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Ưu thế lai",
+          "term_en": "Heterosis / Hybrid vigor",
+          "definition": "Hiện tượng con lai F1 có sức sống, năng suất vượt trội so với bố mẹ thuần chủng do hiệu ứng siêu trội hoặc tương tác gen."
+        },
+        {
+          "term_vi": "Hệ số di truyền nghĩa hẹp",
+          "term_en": "Narrow-sense heritability (h^2)",
+          "definition": "Tỉ số giữa phương sai di truyền cộng gộp V_A và phương sai kiểu hình tổng thể V_P: h^2 = V_A / V_P."
+        }
+      ],
+      "content": "## Sự biến đổi cấu trúc di truyền qua tự thụ phấn\n\nKhi tự thụ phấn hoặc nội phối qua $n$ thế hệ, tỉ lệ dị hợp tử giảm đi một nửa sau mỗi thế hệ:\n\n$$H_n = H_0 \\left(\\frac{1}{2}\\right)^n$$\n\nĐiều này dẫn tới thoái hoá giống do các alen lặn có hại chuyển về trạng thái đồng hợp tử. Tuy nhiên tự thụ bắt buộc được dùng để tạo dòng thuần chủng phục vụ phép lai kinh tế tạo ưu thế lai.\n\n## Hệ số di truyền và Hiệu quả chọn lọc\n\nPhương sai kiểu hình tổng quát: $V_P = V_G + V_E = V_A + V_D + V_I + V_E$.\n\n- Hệ số di truyền nghĩa rộng: $H^2 = \\frac{V_G}{V_P}$\n- Hệ số di truyền nghĩa hẹp: $h^2 = \\frac{V_A}{V_P}$\n\nPhương trình phản ứng chọn lọc (định luật chọn giống): $R = h^2 \\cdot S$, trong đó $S$ là độ lệch chọn lọc và $R$ là đáp ứng chọn lọc.",
+      "formulas": [
+        "biology.thpt.ung-dung-di-truyen.uu-the-lai",
+        "biology.thpt.ung-dung-di-truyen.ti-le-di-hop-giam-qua-tu-thu",
+        "biology.thpt.ung-dung-di-truyen.he-so-di-truyen-nghia-rong",
+        "biology.thpt.ung-dung-di-truyen.he-so-di-truyen-nghia-hep",
+        "biology.thpt.ung-dung-di-truyen.hieu-qua-chon-loc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một quần thể ngô ban đầu có 100% cá thể mang kiểu gen dị hợp $Aa$. Sau 3 thế hệ tự thụ phấn liên tiếp, tính tỉ lệ kiểu gen đồng hợp tử trong quần thể.",
+          "solution": "Tỉ lệ dị hợp ban đầu $H_0 = 1$. Sau $n = 3$ thế hệ tự thụ: $H_3 = H_0 \\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8} = 12.5\\%$. Tổng tỉ lệ đồng hợp tử ($AA + aa$) là: $1 - H_3 = 1 - 0.125 = 0.875 = 87.5\\%$.",
+          "answer": "Tỉ lệ kiểu gen đồng hợp tử là $87.5\\%$ (chia đều $AA = aa = 43.75\\%$)."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm lẫn giữa hệ số di truyền nghĩa rộng H^2 (toàn bộ phương sai gen) và nghĩa hẹp h^2 (chỉ tính phương sai cộng gộp)",
+        "Dùng con lai F1 có ưu thế lai cao để làm giống cho thế hệ sau (sẽ bị phân tính làm giảm năng suất)"
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "uu-the-lai",
+        "tu-thu-phan",
+        "he-so-di-truyen",
+        "chon-giong"
+      ]
+    }
+  ]
+}

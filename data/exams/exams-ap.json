@@ -1,0 +1,1444 @@
+{
+  "meta": {
+    "file": "exams-ap.json",
+    "title": "Hồ sơ kỳ thi Advanced Placement (College Board) - Toán, Lí, Hoá, Sinh",
+    "count": 9
+  },
+  "exams": [
+    {
+      "id": "exam.ap-calculus-ab",
+      "name": "AP Calculus AB",
+      "provider": "College Board",
+      "subject": "math",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Calculus AB do College Board tổ chức vào tháng 5 hằng năm, tương đương học phần Calculus I bậc đại học Mỹ (khoảng một học kỳ). Đối tượng là học sinh lớp 11-12 đã hoàn thành đại số nâng cao và tiền giải tích. Nội dung gồm 8 unit: giới hạn - liên tục, đạo hàm và ứng dụng, tích phân, phương trình vi phân tách biến. Bài thi dài 3 giờ 10 phút, thang điểm 1-5; đa số đại học Mỹ cấp 3-5 tín chỉ Calculus I cho điểm 4-5, nhiều trường công lập nhận cả điểm 3. Từ kỳ thi tháng 5/2025 đề đã là hybrid digital: trắc nghiệm làm trên app Bluebook, tự luận vẫn viết tay vào tập giấy. Riêng số câu và thời gian phần trắc nghiệm đổi từ kỳ thi tháng 5/2027. Đây là môn KHÔNG cấp bảng công thức.",
+      "sections": [
+        {
+          "name": "Section I Part A - Trắc nghiệm KHÔNG dùng máy tính",
+          "question_count": "29",
+          "duration_minutes": 62,
+          "weight_percent": 35.0,
+          "calculator": "khong-cho-phep",
+          "note": "Từ kỳ thi tháng 5/2027: 29 câu / 62 phút. Khung cũ (đến kỳ 5/2026): 30 câu / 60 phút. Làm trên app Bluebook."
+        },
+        {
+          "name": "Section I Part B - Trắc nghiệm BẮT BUỘC dùng máy tính đồ thị",
+          "question_count": "13",
+          "duration_minutes": 38,
+          "weight_percent": 15.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ 5/2027: 13 câu / 38 phút. Khung cũ (đến 5/2026): 15 câu / 45 phút. Bluebook có sẵn máy tính Desmos; vẫn được mang tối đa 2 máy cầm tay hợp lệ."
+        },
+        {
+          "name": "Section II Part A - Tự luận BẮT BUỘC dùng máy tính đồ thị",
+          "question_count": "2",
+          "duration_minutes": 30,
+          "weight_percent": 16.7,
+          "calculator": "cho-phep",
+          "note": "Đề hiện trên Bluebook, thí sinh VIẾT TAY bài làm vào tập giấy (hybrid digital)."
+        },
+        {
+          "name": "Section II Part B - Tự luận KHÔNG dùng máy tính",
+          "question_count": "4",
+          "duration_minutes": 60,
+          "weight_percent": 33.3,
+          "calculator": "khong-cho-phep",
+          "note": "Được phép quay lại làm tiếp Part A nhưng KHÔNG được dùng máy tính nữa."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Limits and Continuity": 11.0,
+        "Unit 2: Differentiation - Definition and Fundamental Properties": 11.0,
+        "Unit 3: Differentiation - Composite, Implicit, and Inverse Functions": 11.0,
+        "Unit 4: Contextual Applications of Differentiation": 12.0,
+        "Unit 5: Analytical Applications of Differentiation": 16.0,
+        "Unit 6: Integration and Accumulation of Change": 18.5,
+        "Unit 7: Differential Equations": 8.5,
+        "Unit 8: Applications of Integration": 12.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm không máy tính (Section I Part A)",
+          "description": "29 câu, mỗi câu 4 phương án, kiểm tra kỹ năng đạo hàm - nguyên hàm - giới hạn thủ công, đọc đồ thị, và các định lí (IVT, MVT, EVT, FTC). Nhiều câu cho bảng giá trị hoặc đồ thị của f' rồi hỏi về f.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho đồ thị của f' trên đoạn [0; 6] gồm hai đoạn thẳng và một nửa đường tròn. Biết f(0) = 3. Giá trị f(6) bằng bao nhiêu? (Bốn phương án số.)",
+          "approach": "Với câu đồ thị f' hỏi về f: nhớ f(b) = f(a) + tích phân của f' từ a tới b, tính tích phân bằng DIỆN TÍCH hình học có dấu. Với câu 'hàm nào có đạo hàm bằng...': thử đạo hàm ngược từng phương án thay vì tích phân xuôi, nhanh hơn nhiều."
+        },
+        {
+          "name": "Trắc nghiệm có máy tính đồ thị (Section I Part B)",
+          "description": "13 câu bắt buộc dùng máy tính đồ thị. Kiểm tra bốn kỹ năng máy tính mà CED quy định: vẽ đồ thị trong cửa sổ tuỳ ý, tìm nghiệm phương trình, tính đạo hàm số tại một điểm, tính tích phân xác định bằng số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Vận tốc của một hạt là v(t) = 3sin(t^2) - t + 1 mét trên giây, với 0 <= t <= 3. Quãng đường hạt đi được trong khoảng thời gian đó gần nhất với giá trị nào?",
+          "approach": "Phân biệt độ dịch chuyển (tích phân của v) với quãng đường (tích phân của |v|) - đây là bẫy kinh điển. Nhập trực tiếp giá trị tuyệt đối vào máy, không tách khoảng thủ công nếu đang làm trắc nghiệm."
+        },
+        {
+          "name": "Free Response dạng bảng số liệu và tốc độ biến thiên",
+          "description": "Cho bảng giá trị của một hàm tại các mốc thời gian không đều, hỏi xấp xỉ đạo hàm bằng tỉ sai phân, xấp xỉ tích phân bằng tổng hình thang hoặc tổng Riemann, giải thích ý nghĩa thực tế kèm ĐƠN VỊ, và vận dụng định lí giá trị trung bình.",
+          "example_prompt": "Đề mô phỏng tự soạn: Bảng cho nhiệt độ H(t) của một cốc cà phê (độ C) tại t = 0; 4; 9; 15; 20 phút. (a) Xấp xỉ H'(10) và nêu đơn vị. (b) Dùng tổng hình thang với bốn khoảng con để xấp xỉ giá trị trung bình của H trên [0; 20]. (c) Giải thích ý nghĩa của biểu thức đó trong bối cảnh bài toán.",
+          "approach": "Câu 'giải thích ý nghĩa' luôn cần ba thành phần: đại lượng gì, trên khoảng nào, đơn vị gì. Xấp xỉ đạo hàm phải dùng hai mốc SÁT hai bên điểm cần tính. Viết rõ tổng hình thang dạng cộng từng số hạng trước khi ra kết quả để giữ điểm setup nếu bấm máy sai."
+        },
+        {
+          "name": "Free Response dạng phân tích hàm bằng đạo hàm",
+          "description": "Cho f' dưới dạng biểu thức hoặc đồ thị, yêu cầu tìm khoảng đơn điệu, cực trị, điểm uốn, tính lồi lõm, và biện luận có/không có cực trị tuyệt đối, kèm lập luận đầy đủ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho f'(x) = (x - 1)(x + 2)^2 trên toàn trục số và f(0) = 5. (a) Tìm các khoảng f đồng biến. (b) Tại x = -2, hàm f có cực trị không? Giải thích. (c) Tìm hoành độ các điểm uốn của đồ thị f và giải thích.",
+          "approach": "Bắt buộc trình bày bảng xét dấu hoặc câu nêu rõ 'f' đổi dấu từ âm sang dương tại x = ...'. Chỉ nói 'f'(x) = 0 nên có cực trị' là mất điểm biện luận. Với điểm uốn phải xét dấu f'' đổi dấu chứ không chỉ f'' = 0."
+        },
+        {
+          "name": "Free Response dạng diện tích - thể tích",
+          "description": "Cho hai đường cong giới hạn một miền, hỏi diện tích, thể tích khối tròn xoay quanh một trục (kể cả trục không phải Ox/Oy) và thể tích vật thể có thiết diện vuông góc là hình vuông, tam giác hoặc nửa hình tròn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Miền R giới hạn bởi y = căn bậc hai của x và y = x/2. (a) Tính diện tích R. (b) Tính thể tích khối tròn xoay khi quay R quanh đường thẳng y = 3. (c) Vật thể có đáy là R, mọi thiết diện vuông góc với trục hoành là hình vuông; tính thể tích vật thể.",
+          "approach": "Luôn viết biểu thức tích phân ĐẦY ĐỦ (cận, hàm dưới dấu tích phân, biến vi phân) trước khi bấm máy - riêng biểu thức đúng đã ăn phần lớn điểm. Quay quanh y = 3 phải dùng bán kính (3 - hàm), sai lầm phổ biến là quên trừ."
+        },
+        {
+          "name": "Free Response dạng phương trình vi phân và trường hướng",
+          "description": "Vẽ trường hướng tại các điểm cho sẵn, tìm nghiệm riêng bằng phương pháp tách biến, viết phương trình tiếp tuyến để xấp xỉ giá trị hàm, và biện luận xấp xỉ đó là thiếu hay thừa.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho dy/dx = x(y - 2) với điều kiện y(0) = 5. (a) Vẽ các đoạn trường hướng tại chín điểm đã đánh dấu. (b) Viết phương trình tiếp tuyến của đồ thị nghiệm tại x = 0 và dùng nó xấp xỉ y(0,2). (c) Tìm nghiệm riêng y = f(x).",
+          "approach": "Tách biến phải viết hằng số C và thay điều kiện đầu NGAY sau khi lấy nguyên hàm, trước khi biến đổi mũ - đó là nơi rubric đặt điểm. Nêu rõ miền xác định của nghiệm riêng nếu đề hỏi."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bất kỳ bảng công thức nào - toàn bộ công thức đạo hàm, nguyên hàm, giới hạn đặc biệt và hình học phải thuộc",
+        "Chỉ được hỗ trợ bằng máy tính đồ thị ở Section I Part B và Section II Part A (kể cả Desmos tích hợp trong Bluebook)"
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.dao-ham.dinh-nghia-dao-ham",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.dao-ham.dao-ham-cua-tich",
+        "math.thpt.dao-ham.dao-ham-cua-thuong",
+        "math.thpt.dao-ham.dao-ham-luy-thua",
+        "math.thpt.dao-ham.dao-ham-sin",
+        "math.thpt.dao-ham.dao-ham-cos",
+        "math.thpt.dao-ham.dao-ham-tan",
+        "math.thpt.dao-ham.dao-ham-e-mu-x",
+        "math.thpt.dao-ham.dao-ham-ln-x",
+        "math.thpt.dao-ham.dao-ham-arctan",
+        "math.thpt.dao-ham.phuong-trinh-tiep-tuyen",
+        "math.thpt.dao-ham-quoc-te.dao-ham-ham-an",
+        "math.thpt.dao-ham-quoc-te.toc-do-lien-he",
+        "math.thpt.ham-nguoc-quoc-te.dao-ham-ham-nguoc-ap",
+        "math.thpt.gioi-han.dinh-nghia-ham-lien-tuc",
+        "math.thpt.gioi-han.dinh-li-gia-tri-trung-gian",
+        "math.thpt.gioi-han-quoc-te.lhopital-khong-tren-khong",
+        "math.thpt.ung-dung-dao-ham.gtln-gtnn-tren-doan",
+        "math.thpt.ung-dung-dao-ham.diem-uon",
+        "math.thpt.dinh-li-co-ban.ftc-phan-mot",
+        "math.thpt.dinh-li-co-ban.ftc-phan-hai",
+        "math.thpt.dinh-li-co-ban.dinh-li-gia-tri-trung-binh-tich-phan",
+        "math.thpt.dinh-li-co-ban.dinh-li-thay-doi-thuan",
+        "math.thpt.nguyen-ham-tich-phan.phuong-phap-doi-bien-nguyen-ham",
+        "math.thpt.nguyen-ham-tich-phan.the-tich-vat-the-thiet-dien",
+        "math.thpt.nguyen-ham-tich-phan.the-tich-tron-xoay-hai-duong",
+        "math.thpt.tong-riemann.tong-riemann-trai",
+        "math.thpt.tong-riemann.tong-hinh-thang-deu",
+        "math.thpt.ptvp-quoc-te.ptvp-tang-truong-mu"
+      ],
+      "scoring": {
+        "description": "Điểm thô = 1,2 x (số câu trắc nghiệm đúng) cộng với tổng điểm 6 câu tự luận (mỗi câu 9 điểm, tổng 54), cho ra thang hợp thành khoảng 108 điểm; hai phần cân bằng 50% - 50%. Câu tự luận chấm theo rubric điểm thành phần: mỗi ý đúng ăn điểm độc lập, nên bài dở dang vẫn có điểm.",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hợp thành được quy về thang 1-5 bằng quy trình chuẩn hoá (standard setting) nên ngưỡng thay đổi theo từng năm; thực tế nhiều năm ngưỡng điểm 5 rơi vào khoảng 68-70% điểm hợp thành, điểm 3 vào khoảng 42-45%. Đa số đại học Mỹ cấp tín chỉ từ điểm 3 trở lên, các trường top thường đòi 4 hoặc 5.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I Part A: 62 phút / 29 câu, khoảng 2 phút 8 giây mỗi câu. Đi hết một lượt bỏ qua câu bí, quay lại vòng hai; công cụ đánh dấu (bookmark) của Bluebook giúp việc này.",
+        "Section I Part B: 38 phút / 13 câu nhưng nhiều câu chỉ cần bấm máy trong 30 giây. Đừng dùng máy tính cho câu vốn giải nhanh bằng tay.",
+        "Section II: canh 15 phút mỗi câu (6 câu / 90 phút). Đặt mốc cứng - hết 15 phút thì chuyển câu, quay lại sau nếu còn giờ.",
+        "Ăn điểm thành phần: viết BIỂU THỨC tích phân hoặc đạo hàm đầy đủ trước, ra kết quả sau. Nếu chỉ ghi mỗi đáp số mà không có setup thì phần lớn rubric cho 0.",
+        "Trong Part A của Section II, câu nào cần máy tính thì làm ngay; nếu còn dư giờ ĐỪNG chuyển sang Part B sớm, vì sang Part B là mất quyền dùng máy tính vĩnh viễn.",
+        "Với câu bấm máy, giữ tối thiểu ba chữ số thập phân ở bước trung gian và làm tròn một lần ở kết quả cuối; rubric chấp nhận sai số nhỏ nhưng không chấp nhận làm tròn sớm.",
+        "Câu 'giải thích ý nghĩa trong bối cảnh' luôn phải có ĐƠN VỊ và mốc thời gian/khoảng cụ thể - đây là ô rubric dễ ăn điểm nhất nhưng bị mất nhiều nhất.",
+        "Ghi số thứ tự phần (a), (b), (c) rõ ràng và làm đúng ô giấy tương ứng; bài viết tay chấm bằng ảnh quét nên chữ mờ hoặc tràn lề có thể không được chấm."
+      ],
+      "common_traps": [
+        "Nhầm khung đề: từ kỳ 5/2027 Section I là 29 + 13 câu (100 phút), không còn là 30 + 15 câu (105 phút) như tài liệu luyện thi cũ.",
+        "Dùng máy tính ở Part A của Section I hoặc Part B của Section II - vi phạm quy chế, cả phần thi bị huỷ.",
+        "Lẫn lộn độ dịch chuyển với quãng đường; quên lấy trị tuyệt đối của vận tốc.",
+        "Kết luận cực trị chỉ vì f'(x) = 0 mà không xét dấu đổi; kết luận điểm uốn chỉ vì f''(x) = 0.",
+        "Quên hằng số C khi tách biến, hoặc thay điều kiện đầu sau khi đã mũ hoá hai vế.",
+        "Quay quanh đường y = k mà vẫn lấy bán kính là chính hàm số thay vì hiệu |k - f(x)|.",
+        "Viết đáp số không đơn vị ở các câu bối cảnh (nhiệt độ, lưu lượng, dân số) - rubric trừ điểm ô diễn giải.",
+        "Làm tròn quá sớm ở bài bấm máy khiến chữ số thập phân thứ ba lệch khỏi biên độ chấp nhận."
+      ],
+      "tags": [
+        "ap",
+        "toan",
+        "giai-tich",
+        "calculus-ab",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Central, AP Calculus AB Exam (apcentral.collegeboard.org/courses/ap-calculus-ab/exam): Section I Part A 29 câu/62 phút, Part B 13 câu/38 phút; Section II Part A 2 câu/30 phút, Part B 4 câu/60 phút; hybrid digital",
+        "College Board - AP Central, AP Calculus AB and BC Course at a Glance: trọng số từng unit (U1 10-12%, U2 10-12%, U3 9-13%, U4 10-15%, U5 15-18%, U6 17-20%, U7 6-12%, U8 10-15%)",
+        "College Board - AP Central, thông báo cập nhật số câu và thời gian phần trắc nghiệm AP Calculus AB và BC, hiệu lực từ kỳ thi tháng 5/2027",
+        "College Board - AP Central, How AP Exams Are Administered by Course (danh sách môn fully digital / hybrid digital)",
+        "College Board - AP Students, AP Exams Calculator Policy (máy tính đồ thị bắt buộc ở Section I Part B và Section II Part A; mang tối đa 2 máy cầm tay; Bluebook có Desmos tích hợp ở phần được dùng máy tính)"
+      ]
+    },
+    {
+      "id": "exam.ap-calculus-bc",
+      "name": "AP Calculus BC",
+      "provider": "College Board",
+      "subject": "math",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Calculus BC tương đương hai học phần Calculus I và Calculus II bậc đại học Mỹ. Nội dung phủ toàn bộ 8 unit của AP Calculus AB cộng thêm Unit 9 (tham số, toạ độ cực, hàm vectơ) và Unit 10 (dãy và chuỗi vô hạn), cùng các kỹ thuật tích phân nâng cao, tích phân suy rộng và phương trình logistic. Bài thi dài 3 giờ 10 phút, thang 1-5. Thí sinh nhận thêm điểm phụ 'AB subscore' 1-5 tính trên các câu thuộc phạm vi AB, giúp xin tín chỉ Calculus I ngay cả khi điểm BC chưa đủ cao. Từ kỳ thi tháng 5/2025 đề đã là hybrid digital: trắc nghiệm trên Bluebook, tự luận viết tay; số câu và thời gian phần trắc nghiệm đổi từ kỳ thi tháng 5/2027. Không cấp bảng công thức.",
+      "sections": [
+        {
+          "name": "Section I Part A - Trắc nghiệm KHÔNG dùng máy tính",
+          "question_count": "29",
+          "duration_minutes": 62,
+          "weight_percent": 35.0,
+          "calculator": "khong-cho-phep",
+          "note": "Từ kỳ thi tháng 5/2027: 29 câu / 62 phút. Khung cũ (đến kỳ 5/2026): 30 câu / 60 phút. Làm trên app Bluebook."
+        },
+        {
+          "name": "Section I Part B - Trắc nghiệm BẮT BUỘC dùng máy tính đồ thị",
+          "question_count": "13",
+          "duration_minutes": 38,
+          "weight_percent": 15.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ 5/2027: 13 câu / 38 phút. Khung cũ (đến 5/2026): 15 câu / 45 phút. Bluebook có sẵn máy tính Desmos; vẫn được mang tối đa 2 máy cầm tay hợp lệ."
+        },
+        {
+          "name": "Section II Part A - Tự luận BẮT BUỘC dùng máy tính đồ thị",
+          "question_count": "2",
+          "duration_minutes": 30,
+          "weight_percent": 16.7,
+          "calculator": "cho-phep",
+          "note": "Đề hiện trên Bluebook, thí sinh VIẾT TAY bài làm vào tập giấy (hybrid digital)."
+        },
+        {
+          "name": "Section II Part B - Tự luận KHÔNG dùng máy tính",
+          "question_count": "4",
+          "duration_minutes": 60,
+          "weight_percent": 33.3,
+          "calculator": "khong-cho-phep",
+          "note": "Được phép quay lại làm tiếp Part A nhưng KHÔNG được dùng máy tính nữa."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Limits and Continuity": 7.0,
+        "Unit 2: Differentiation - Definition and Fundamental Properties": 7.0,
+        "Unit 3: Differentiation - Composite, Implicit, and Inverse Functions": 7.0,
+        "Unit 4: Contextual Applications of Differentiation": 7.0,
+        "Unit 5: Analytical Applications of Differentiation": 11.0,
+        "Unit 6: Integration and Accumulation of Change": 18.0,
+        "Unit 7: Differential Equations": 7.0,
+        "Unit 8: Applications of Integration": 7.0,
+        "Unit 9: Parametric Equations, Polar Coordinates, and Vector-Valued Functions": 12.0,
+        "Unit 10: Infinite Sequences and Series": 17.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm chuỗi và tiêu chuẩn hội tụ",
+          "description": "Chiếm tỉ trọng lớn nhất trong phần riêng của BC. Hỏi chuỗi hội tụ tuyệt đối, hội tụ có điều kiện hay phân kì; xác định khoảng và bán kính hội tụ; nhận diện chuỗi Maclaurin của một hàm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Chuỗi có số hạng tổng quát ((-1)^n) nhân (n) chia (n^2 + 4) hội tụ theo kiểu nào? (Bốn phương án: phân kì / hội tụ có điều kiện / hội tụ tuyệt đối / không kết luận được.)",
+          "approach": "Quy trình cố định: (1) kiểm tra số hạng tổng quát có tiến về 0 không - nếu không thì phân kì ngay; (2) nếu đan dấu, thử tiêu chuẩn Leibniz; (3) lấy trị tuyệt đối rồi so sánh giới hạn với chuỗi p để kết luận tuyệt đối hay có điều kiện."
+        },
+        {
+          "name": "Free Response dạng chuỗi Taylor và chặn sai số",
+          "description": "Câu tự luận đặc trưng nhất của BC. Yêu cầu viết đa thức Taylor bậc n tại một điểm, dùng nó xấp xỉ giá trị hàm, rồi chặn sai số bằng phần dư Lagrange hoặc bằng ước lượng chuỗi đan dấu; có thể hỏi thêm bán kính hội tụ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho f(x) = ln(1 + 2x). (a) Viết bốn số hạng khác 0 đầu tiên của chuỗi Maclaurin của f. (b) Dùng đa thức Maclaurin bậc 3 để xấp xỉ f(0,1). (c) Chứng minh sai số của xấp xỉ ở câu (b) nhỏ hơn 0,0001. (d) Tìm bán kính hội tụ của chuỗi ở câu (a).",
+          "approach": "Ưu tiên lập chuỗi bằng phép THẾ BIẾN vào bốn chuỗi Maclaurin bắt buộc thuộc thay vì đạo hàm liên tiếp. Với chuỗi đan dấu, chặn sai số bằng số hạng bị bỏ đi đầu tiên - phải viết rõ số hạng đó và so sánh với ngưỡng đề cho, không được chỉ khẳng định."
+        },
+        {
+          "name": "Free Response dạng tham số và chuyển động trong mặt phẳng",
+          "description": "Cho vectơ vận tốc của một hạt, hỏi vị trí, tốc độ, gia tốc tại thời điểm cho trước, quãng đường đi được (độ dài cung), và thời điểm hạt đổi chiều hoặc dừng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hạt chuyển động trong mặt phẳng với vận tốc v(t) = (sin(t^2); e^(-t) - 1), 0 <= t <= 2, và vị trí ban đầu (1; 3). (a) Tính tốc độ tại t = 1. (b) Tìm toạ độ hạt tại t = 2. (c) Tính tổng quãng đường hạt đi được trên [0; 2].",
+          "approach": "Tốc độ là độ lớn vectơ vận tốc, quãng đường là tích phân của tốc độ - hai khái niệm khác nhau, đừng lẫn. Viết biểu thức tích phân đầy đủ trước khi bấm máy để giữ điểm setup."
+        },
+        {
+          "name": "Free Response dạng toạ độ cực",
+          "description": "Tính diện tích miền giới hạn bởi một hoặc hai đường cong cực, tìm giao điểm, hoặc tính hệ số góc tiếp tuyến của đường cong cực.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho hai đường cong cực r = 2 + cos(theta) và r = 3. (a) Tìm các giá trị theta tại đó hai đường cắt nhau trên đoạn [0; 2pi]. (b) Tính diện tích miền nằm bên trong đường r = 3 và bên ngoài đường r = 2 + cos(theta).",
+          "approach": "Nhớ hệ số một phần hai trong công thức diện tích cực và nhớ bình phương bán kính. Với miền giữa hai đường, lấy hiệu BÌNH PHƯƠNG hai bán kính trong cùng một tích phân, không lấy hiệu hai tích phân rồi bình phương."
+        },
+        {
+          "name": "Free Response dạng logistic và phương pháp Euler",
+          "description": "Phương trình vi phân logistic: xác định sức chứa, thời điểm quần thể tăng nhanh nhất, giới hạn khi thời gian ra vô cùng; hoặc dùng phương pháp Euler với hai bước để xấp xỉ nghiệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một quần thể thoả dP/dt = 0,08P(1 - P/500) với P(0) = 60. (a) Nêu sức chứa của môi trường. (b) Tại giá trị P nào quần thể tăng nhanh nhất? (c) Dùng phương pháp Euler hai bước, bước dài 1, để xấp xỉ P(2).",
+          "approach": "Với logistic, hai kết quả phải thuộc nằm lòng: giới hạn bằng sức chứa K, tốc độ cực đại tại P = K/2. Phương pháp Euler trình bày thành bảng ba cột (t, P, dP/dt) để giám khảo theo dõi từng bước và cho điểm từng bước."
+        },
+        {
+          "name": "Free Response dạng kỹ thuật tích phân nâng cao",
+          "description": "Tích phân từng phần, phân tích phân thức đơn giản (mẫu là tích hai nhân tử bậc nhất phân biệt) và tích phân suy rộng có cận vô hạn - ba kỹ thuật chỉ BC mới thi.",
+          "example_prompt": "Đề mô phỏng tự soạn: (a) Tính tích phân của x nhân e^(-x) từ 0 tới vô cùng, hoặc chứng minh nó phân kì. (b) Tính tích phân của 1 chia (x^2 - 4) trên đoạn [3; 5] bằng phân tích phân thức.",
+          "approach": "Tích phân suy rộng BẮT BUỘC viết dưới dạng giới hạn (thay cận vô hạn bằng b rồi cho b tiến ra vô cùng) - bỏ bước này là mất điểm dù đáp số đúng. Phân tích phân thức nên dùng quy tắc che để tìm hệ số cho nhanh."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bảng công thức - ngoài toàn bộ nội dung AB, thí sinh còn phải thuộc bốn chuỗi Maclaurin cơ bản, các tiêu chuẩn hội tụ, công thức độ dài cung và diện tích trong toạ độ cực",
+        "Máy tính đồ thị chỉ được dùng ở Section I Part B và Section II Part A (kể cả Desmos trong Bluebook)"
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.dao-ham-quoc-te.dao-ham-ham-an",
+        "math.thpt.dinh-li-co-ban.ftc-phan-mot",
+        "math.thpt.dinh-li-co-ban.ftc-phan-hai",
+        "math.thpt.gioi-han-quoc-te.lhopital-khong-tren-khong",
+        "math.thpt.nguyen-ham-tich-phan.tich-phan-tung-phan",
+        "math.thpt.ky-thuat-tich-phan-bc.quy-tac-liate",
+        "math.thpt.ky-thuat-tich-phan-bc.tich-phan-phan-thuc-hai-nghiem",
+        "math.thpt.tich-phan-suy-rong-bc.can-vo-han",
+        "math.thpt.tich-phan-suy-rong-bc.tich-phan-chuan-p",
+        "math.thpt.ung-dung-tich-phan-bc.do-dai-cung-descartes",
+        "math.thpt.ung-dung-tich-phan-bc.do-dai-cung-cuc",
+        "math.thpt.tham-so-cuc.dao-ham-theo-tham-so",
+        "math.thpt.tham-so-cuc.dao-ham-cap-hai-tham-so",
+        "math.thpt.tham-so-cuc.dien-tich-mien-cuc",
+        "math.thpt.tham-so-cuc.toc-do-duong-cong-tham-so",
+        "math.thpt.chuyen-dong-phang.vecto-van-toc",
+        "math.thpt.chuyen-dong-phang.quang-duong-di-duoc-phang",
+        "math.thpt.chuoi-bc.chuoi-hinh-hoc-hoi-tu",
+        "math.thpt.chuoi-bc.chuoi-p",
+        "math.thpt.chuoi-bc.tieu-chuan-ti-so",
+        "math.thpt.chuoi-bc.tieu-chuan-dan-dau-leibniz",
+        "math.thpt.chuoi-bc.chan-sai-so-chuoi-dan-dau",
+        "math.thpt.chuoi-bc.ban-kinh-hoi-tu",
+        "math.thpt.chuoi-bc.bon-chuoi-maclaurin-bat-buoc",
+        "math.thpt.chuoi-taylor-quoc-te.da-thuc-taylor-bac-n",
+        "math.thpt.chuoi-taylor-quoc-te.chan-sai-so-lagrange",
+        "math.thpt.ptvp-quoc-te.phuong-phap-euler",
+        "math.thpt.ptvp-quoc-te.ptvp-logistic",
+        "math.thpt.ptvp-quoc-te.ptvp-tang-truong-mu"
+      ],
+      "scoring": {
+        "description": "Cấu trúc điểm giống AP Calculus AB: 1,2 nhân số câu trắc nghiệm đúng cộng tổng điểm 6 câu tự luận (mỗi câu 9 điểm). Ngoài điểm BC, thí sinh còn nhận AB subscore 1-5 tính riêng trên các câu thuộc phạm vi AB, in trên bảng điểm và được nhiều đại học dùng để cấp tín chỉ Calculus I.",
+        "scale": "1-5",
+        "raw_to_scaled": "Quy đổi bằng standard setting, ngưỡng thay đổi theo năm. BC có tỉ lệ điểm 5 cao nhất trong các môn AP Toán (nhiều năm quanh 40-45% thí sinh) do nhóm dự thi chọn lọc, nhưng ngưỡng điểm thô cho điểm 5 vẫn quanh 65-70% điểm hợp thành.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Phân bổ như AB: Part A 62 phút/29 câu, Part B 38 phút/13 câu, tự luận 15 phút/câu.",
+        "Chuỗi và chặn sai số gần như CHẮC CHẮN xuất hiện ở Section II - luyện riêng dạng này cho tới mức làm trong 12 phút.",
+        "Học thuộc bốn chuỗi Maclaurin cơ bản rồi lập mọi chuỗi khác bằng phép thế biến, nhân, chia hoặc đạo hàm/tích phân từng số hạng; đạo hàm liên tiếp chỉ dùng khi bí.",
+        "Ăn điểm thành phần ở câu chuỗi: viết đủ bốn số hạng khác 0 kèm số hạng tổng quát; rubric thường tách riêng điểm cho số hạng tổng quát.",
+        "Tích phân suy rộng phải viết bước chuyển sang giới hạn; phương pháp Euler phải kẻ bảng từng bước - đó là các ô rubric cho điểm quy trình.",
+        "Vì AB subscore được tính riêng, nếu thời gian eo hẹp hãy ưu tiên làm chắc các câu thuộc phạm vi AB trước khi đánh cược vào câu chuỗi khó.",
+        "Ghi rõ tên tiêu chuẩn hội tụ đang dùng (tỉ số, so sánh giới hạn, tích phân, Leibniz) và kiểm tra đủ điều kiện của tiêu chuẩn đó - rubric có ô riêng cho việc nêu điều kiện."
+      ],
+      "common_traps": [
+        "Nhầm khung đề: từ kỳ 5/2027 Section I là 29 + 13 câu / 100 phút, không phải 30 + 15 câu / 105 phút.",
+        "Dùng tiêu chuẩn tỉ số cho chuỗi p hoặc chuỗi có số hạng dạng phân thức - giới hạn ra đúng bằng 1 nên không kết luận được, phải chuyển sang so sánh giới hạn.",
+        "Kết luận hội tụ tuyệt đối trong khi chỉ mới kiểm tra chuỗi đan dấu bằng Leibniz.",
+        "Quên kiểm tra hai đầu mút khi tìm khoảng hội tụ - bán kính đúng nhưng khoảng sai.",
+        "Lẫn tốc độ với quãng đường trong chuyển động tham số; quên căn bậc hai khi tính độ lớn vectơ.",
+        "Quên hệ số một phần hai hoặc quên bình phương bán kính trong công thức diện tích cực.",
+        "Tính tích phân suy rộng trực tiếp bằng cách thay 'vô cùng' vào nguyên hàm mà không qua bước giới hạn.",
+        "Dùng phần dư Lagrange nhưng không chỉ ra chặn trên của đạo hàm cấp n + 1 trên khoảng đang xét."
+      ],
+      "tags": [
+        "ap",
+        "toan",
+        "giai-tich",
+        "calculus-bc",
+        "chuoi",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Central, AP Calculus BC Exam (apcentral.collegeboard.org/courses/ap-calculus-bc/exam): Section I 29 + 13 câu / 100 phút; Section II 2 + 4 câu / 90 phút; hybrid digital",
+        "College Board - AP Central, AP Calculus AB and BC Course at a Glance: trọng số BC (U1-U3 4-7%, U4 6-9%, U5 8-11%, U6 17-20%, U7 6-9%, U8 6-9%, U9 11-12%, U10 17-18%)",
+        "College Board - AP Central, cập nhật số câu và thời gian phần trắc nghiệm, hiệu lực từ kỳ thi tháng 5/2027",
+        "College Board - AP Students, AP Score Reporting (AB subscore của AP Calculus BC)",
+        "College Board - AP Students, AP Exams Calculator Policy"
+      ]
+    },
+    {
+      "id": "exam.ap-statistics",
+      "name": "AP Statistics",
+      "provider": "College Board",
+      "subject": "math",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Statistics tương đương học phần thống kê nhập môn một học kỳ ở đại học Mỹ. ĐÂY LÀ MÔN VỪA ĐỔI KHUNG: khung mới có hiệu lực từ năm học 2026-27 và thi lần đầu vào tháng 5/2027, gộp 9 unit cũ thành 5 unit, bỏ kiểm định chi bình phương về tính phù hợp và bỏ toàn bộ phần suy luận về hệ số góc hồi quy (Unit 9 cũ). Đề cũng chuyển từ hybrid digital sang HOÀN TOÀN THI SỐ trên Bluebook: trắc nghiệm tăng từ 40 lên 42 câu và giảm từ 5 xuống 4 phương án mỗi câu; tự luận giảm từ 6 câu (trong đó có Investigative Task) xuống còn 4 câu, mỗi câu 10 điểm và trọng số bằng nhau. Bài thi dài 3 giờ, thang 1-5.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "42",
+          "duration_minutes": 90,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Khung từ 5/2027: 42 câu, mỗi câu 4 phương án, gồm câu rời và các cụm câu dùng chung một dữ kiện (CED chỉ ghi 'discrete and set-based questions', không cố định số cụm). Khung cũ đến 5/2026: 40 câu, 5 phương án. Bắt buộc dùng máy tính đồ thị có chức năng thống kê; được mang tối đa 2 máy cầm tay hợp lệ, ngoài ra Bluebook có sẵn máy tính Desmos tích hợp (chỉ bản trong Bluebook mới được dùng, không dùng bản web hay app)."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "4",
+          "duration_minutes": 90,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Khung từ 5/2027: 4 câu, mỗi câu 10 điểm, mỗi câu chiếm 12,5% tổng điểm. Câu 1 tập trung Practice 1 và 2; câu 2 tập trung Practice 3 và 4; câu 3 là suy luận (kiểm định hoặc khoảng tin cậy); câu 4 tổng hợp Practice 2, 3, 4. Khung cũ: 5 câu ngắn cộng 1 Investigative Task. Từ 2027 bài làm gõ trực tiếp vào Bluebook, không còn viết tay."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Exploring One-Variable Data and Collecting Data": 26.0,
+        "Unit 2: Probability, Random Variables, and Probability Distributions": 20.0,
+        "Unit 3: Inference for Categorical Data - Proportions": 20.0,
+        "Unit 4: Inference for Quantitative Data - Means": 17.0,
+        "Unit 5: Regression Analysis": 17.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm 4 phương án",
+          "description": "42 câu về đọc biểu đồ, chọn thủ tục suy luận phù hợp, diễn giải p-value và khoảng tin cậy, nhận diện sai lầm loại I/II, đánh giá thiết kế nghiên cứu. Khung mới giảm còn 4 phương án nên xác suất đoán mò tăng lên 25%.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một khoảng tin cậy 95% cho tỉ lệ người ủng hộ là (0,42; 0,50). Phát biểu nào sau đây diễn giải ĐÚNG khoảng này? (Bốn phương án, trong đó có hai phương án nhầm sang '95% dữ liệu' và 'xác suất tham số nằm trong khoảng').",
+          "approach": "Với câu diễn giải, loại ngay phương án nói về XÁC SUẤT của tham số hoặc về phần trăm DỮ LIỆU; diễn giải đúng luôn nói về độ tin cậy của PHƯƠNG PHÁP qua nhiều lần lấy mẫu. Không bao giờ bỏ trống vì không trừ điểm câu sai."
+        },
+        {
+          "name": "Free Response câu 1 - Đặt câu hỏi thống kê và thu thập dữ liệu",
+          "description": "Tập trung Practice 1 (Formulate Questions) và Practice 2 (Collect Data): xác định câu hỏi điều tra hợp lệ, phân biệt nghiên cứu quan sát với thí nghiệm, chỉ ra nguyên tắc đối chứng - lặp lại - ngẫu nhiên hoá, và xác định phạm vi suy diễn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một trường muốn biết chương trình học nhóm buổi sáng có cải thiện điểm kiểm tra hay không. (a) Nêu một câu hỏi điều tra thống kê phù hợp. (b) Mô tả một thiết kế thí nghiệm hoàn toàn ngẫu nhiên cho 60 học sinh tình nguyện. (c) Nếu kết quả có ý nghĩa, kết luận nhân quả có được suy rộng cho toàn trường không? Giải thích.",
+          "approach": "Mô tả thí nghiệm phải nêu ĐỦ: cách gán ngẫu nhiên cụ thể (bốc thăm, bảng số ngẫu nhiên), số đơn vị mỗi nhóm, nghiệm thức của từng nhóm, biến phản hồi đo thế nào, và cách so sánh. Phạm vi suy diễn tách hai chiều: gán ngẫu nhiên cho phép kết luận NHÂN QUẢ, chọn mẫu ngẫu nhiên cho phép SUY RỘNG ra tổng thể."
+        },
+        {
+          "name": "Free Response câu 2 - Phân tích dữ liệu và diễn giải",
+          "description": "Tập trung Practice 3 (Analyze Data) và Practice 4 (Interpret Results): mô tả phân bố, so sánh hai phân bố, tính và diễn giải thống kê tóm tắt, đọc đồ thị hộp - biểu đồ điểm - biểu đồ tần số tích luỹ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hai đồ thị hộp thể hiện thời gian hoàn thành nhiệm vụ của hai nhóm. (a) So sánh hai phân bố. (b) Nhóm A có một giá trị 48 phút; dùng quy tắc 1,5 IQR để xác định nó có phải giá trị ngoại lai không. (c) Nếu chuyển tất cả số liệu nhóm A từ phút sang giây thì trung vị và độ lệch chuẩn thay đổi thế nào?",
+          "approach": "Câu 'so sánh' bắt buộc nêu đủ bốn yếu tố SOCS: shape (dạng), outliers (ngoại lai), center (trung tâm), spread (độ phân tán), và phải dùng từ so sánh trực tiếp ('nhóm A có trung vị CAO HƠN nhóm B'), không được mô tả song song hai nhóm rời rạc. Luôn kèm bối cảnh và đơn vị."
+        },
+        {
+          "name": "Free Response câu 3 - Suy luận thống kê đầy đủ",
+          "description": "Một kiểm định giả thuyết hoặc một khoảng tin cậy trọn vẹn: tỉ lệ một mẫu, hiệu hai tỉ lệ, trung bình một mẫu, hiệu hai trung bình, mẫu cặp, hoặc chi bình phương về tính đồng nhất/độc lập. Chấm theo bốn bước chuẩn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Khảo sát ngẫu nhiên 180 học sinh khối 11 thấy 99 em đi xe buýt; khảo sát ngẫu nhiên 200 học sinh khối 12 thấy 92 em đi xe buýt. Ở mức ý nghĩa 0,05, có bằng chứng cho thấy tỉ lệ đi xe buýt của hai khối khác nhau không? Thực hiện đầy đủ một kiểm định.",
+          "approach": "Bốn bước bắt buộc, viết thành bốn đoạn tách bạch: (1) Nêu tham số bằng lời và viết H0, Ha; (2) Gọi ĐÚNG TÊN thủ tục và kiểm tra đủ điều kiện với số liệu cụ thể (ngẫu nhiên, độc lập theo quy tắc 10%, chuẩn theo số đếm lớn); (3) Tính thống kê kiểm định và p-value, ghi cả công thức lẫn kết quả; (4) Kết luận liên hệ p-value với alpha VÀ diễn đạt lại trong bối cảnh đề. Thiếu bất kỳ bước nào là mất một phần điểm."
+        },
+        {
+          "name": "Free Response câu 4 - Tổng hợp nhiều mảng kiến thức",
+          "description": "Câu thay thế vai trò của Investigative Task cũ. Kết hợp Practice 2, 3, 4: thường cho một bối cảnh mới lạ, buộc thí sinh vận dụng kiến thức nền để phân tích tình huống chưa từng học nguyên dạng, kết hợp mô phỏng ngẫu nhiên, hồi quy và suy luận.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho bảng số liệu chiều cao cây (cm) theo số ngày tưới và đầu ra hồi quy in sẵn. (a) Viết phương trình đường hồi quy bình phương tối thiểu và diễn giải hệ số góc. (b) Tính và diễn giải phần dư cho cây có 12 ngày tưới. (c) Một mô phỏng ngẫu nhiên 200 lần cho phân bố hệ số góc khi gán nhãn ngẫu nhiên; dùng biểu đồ mô phỏng để đánh giá mối liên hệ quan sát được có thể do ngẫu nhiên hay không.",
+          "approach": "Với câu lạ, luôn quay về ba câu hỏi gốc: dữ liệu đến từ đâu, đại lượng nào biến thiên, và mức biến thiên đó có lớn bất thường không. Ước lượng p-value từ mô phỏng bằng cách ĐẾM tỉ lệ kết quả mô phỏng cực đoan bằng hoặc hơn giá trị quan sát. Diễn giải hệ số góc luôn có dạng 'khi x tăng 1 đơn vị thì y DỰ ĐOÁN thay đổi trung bình b đơn vị'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng công thức 3 phần được cấp cho cả hai phần thi, có bản in phát tại phòng thi và bản trong Bluebook",
+        "Phần I - Descriptive Statistics: trung bình mẫu, độ lệch chuẩn mẫu, đường hồi quy bình phương tối thiểu, hệ số tương quan, hệ số góc và hệ số chặn",
+        "Phần II - Probability and Distributions: quy tắc cộng và nhân xác suất, xác suất có điều kiện, kỳ vọng và độ lệch chuẩn của biến rời rạc, phân phối nhị thức và hình học",
+        "Phần III - Sampling Distributions and Inferential Statistics: dạng tổng quát của thống kê kiểm định chuẩn hoá, dạng tổng quát của khoảng tin cậy, thống kê chi bình phương, bảng kỳ vọng - độ lệch chuẩn - sai số chuẩn cho tỉ lệ và trung bình",
+        "Table A: bảng xác suất phân phối chuẩn tắc",
+        "Table B: bảng giá trị tới hạn của phân phối t",
+        "Table C: bảng giá trị tới hạn của phân phối chi bình phương",
+        "Máy tính đồ thị có chức năng thống kê được kỳ vọng dùng ở cả hai phần; Bluebook cũng có sẵn Desmos"
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.mo-ta-du-lieu.diem-z-tham-so",
+        "math.thpt.mo-ta-du-lieu.hang-rao-1-5-iqr",
+        "math.thpt.mo-ta-du-lieu.quy-tac-68-95-997",
+        "math.thpt.thiet-ke.nguyen-tac-doi-chung-lap-ngau-nhien-hoa",
+        "math.thpt.thiet-ke.pham-vi-suy-dien",
+        "math.thpt.thiet-ke.mau-ngau-nhien-don-gian",
+        "math.thpt.thiet-ke.uoc-luong-p-value-bang-mo-phong",
+        "math.thpt.to-hop-xac-suat.quy-tac-cong-xac-suat",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.xac-suat.ky-vong-bien-roi-rac",
+        "math.thpt.xac-suat.do-lech-chuan-bien-roi-rac",
+        "math.thpt.xac-suat.bien-doi-tuyen-tinh-bien-ngau-nhien",
+        "math.thpt.phan-phoi.dieu-kien-boi-canh-nhi-thuc",
+        "math.thpt.phan-phoi.trung-binh-do-lech-chuan-nhi-thuc",
+        "math.thpt.phan-phoi-mau.dinh-li-gioi-han-trung-tam-ap",
+        "math.thpt.phan-phoi-mau.sai-so-chuan-ti-le-mau",
+        "math.thpt.phan-phoi-mau.sai-so-chuan-trung-binh-mau",
+        "math.thpt.phan-phoi-mau.dieu-kien-10-phan-tram",
+        "math.thpt.phan-phoi-mau.dieu-kien-dem-lon-ti-le",
+        "math.thpt.phan-phoi-mau.dieu-kien-chuan-mau-lon-trung-binh",
+        "math.thpt.uoc-luong-khoang.dang-tong-quat",
+        "math.thpt.uoc-luong-khoang.bien-sai-so",
+        "math.thpt.uoc-luong-khoang.dien-giai-do-tin-cay",
+        "math.thpt.kiem-dinh.gia-thuyet-khong-va-doi",
+        "math.thpt.kiem-dinh.quy-tac-quyet-dinh-p-value",
+        "math.thpt.kiem-dinh.sai-lam-loai-i",
+        "math.thpt.kiem-dinh.sai-lam-loai-ii",
+        "math.thpt.kiem-dinh.luc-kiem-dinh",
+        "math.thpt.chi-binh-phuong.tan-so-ky-vong-bang-hai-chieu",
+        "math.thpt.hoi-quy.he-so-xac-dinh-r2"
+      ],
+      "scoring": {
+        "description": "Section I chấm máy 42 câu (50%). Section II gồm 4 câu, mỗi câu 10 điểm và mỗi câu chiếm 12,5% tổng điểm; chấm theo thang analytic (từng ý ăn điểm riêng) thay vì thang holistic 0-4 như khung cũ. Điều này khiến bài viết đủ ý nhưng chưa hoàn hảo vẫn ăn được nhiều điểm hơn trước.",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hai phần cân bằng 50-50 rồi quy về thang 1-5 bằng standard setting. Với khung cũ, ngưỡng điểm 3 thường quanh 45-50% điểm hợp thành và điểm 5 quanh 70%; ngưỡng của khung mới sẽ được thiết lập lại sau kỳ thi đầu tiên tháng 5/2027 nên các mốc cũ chỉ mang tính tham khảo.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 90 phút cho 42 câu, khoảng 2 phút 8 giây mỗi câu. Câu diễn giải khái niệm thường giải trong 30 giây - vét sạch nhóm này trước rồi mới quay lại nhóm tính toán.",
+        "Section II: 4 câu / 90 phút nên chia đều mỗi câu 22 phút, nhưng nên dành 25 phút cho câu 4 tổng hợp và bù bằng câu 2.",
+        "Trình bày kiểm định theo đúng bốn bước và tách thành bốn đoạn có tiêu đề - rubric analytic của khung mới chấm theo từng bước nên bố cục rõ giúp không bị bỏ sót điểm.",
+        "Luôn ĐỊNH NGHĨA tham số bằng lời trước khi viết H0 và Ha (ví dụ 'p là tỉ lệ học sinh khối 11 đi xe buýt'), không chỉ viết ký hiệu.",
+        "Kiểm tra điều kiện phải THAY SỐ CỤ THỂ, không được viết chung chung: ghi rõ np và n(1-p) bằng bao nhiêu, cỡ mẫu bằng bao nhiêu phần trăm tổng thể.",
+        "Từ kỳ 5/2027 bài tự luận gõ trên máy: luyện gõ ký hiệu thống kê bằng chữ (p-hat, x-bar, sigma) sao cho rõ nghĩa, và dùng xuống dòng để tách ý thay vì viết một khối dài.",
+        "Được mang máy tính đồ thị riêng dù thi số; nếu dùng chức năng có sẵn của máy, vẫn phải ghi tên thủ tục và các giá trị đầu vào để giám khảo biết bạn làm gì.",
+        "Kết luận luôn phải diễn đạt lại trong BỐI CẢNH bài toán, không dừng ở 'bác bỏ H0'."
+      ],
+      "common_traps": [
+        "Dùng tài liệu ôn theo khung cũ 9 unit: kiểm định chi bình phương về tính phù hợp và toàn bộ suy luận về hệ số góc hồi quy đã bị loại khỏi khung 2026-27.",
+        "Vẫn luyện Investigative Task theo định dạng cũ - từ kỳ 5/2027 không còn câu này, thay bằng câu 4 tổng hợp 10 điểm.",
+        "Diễn giải khoảng tin cậy sai: nói 'xác suất tham số nằm trong khoảng là 95%' hoặc '95% dữ liệu nằm trong khoảng'.",
+        "Diễn giải p-value là xác suất H0 đúng, thay vì xác suất quan sát được kết quả cực đoan như vậy KHI H0 đúng.",
+        "Suy ra quan hệ nhân quả từ nghiên cứu quan sát, hoặc suy rộng ra tổng thể khi mẫu là tình nguyện viên.",
+        "Bỏ bước kiểm tra điều kiện, hoặc kiểm tra nhưng không thay số cụ thể.",
+        "So sánh hai phân bố bằng cách mô tả rời rạc từng nhóm mà không dùng từ so sánh trực tiếp.",
+        "Nhầm độ lệch chuẩn tổng thể với sai số chuẩn của thống kê mẫu khi chuẩn hoá.",
+        "Bỏ trống câu trắc nghiệm vì sợ sai - kỳ thi không trừ điểm câu sai, và khung mới chỉ còn 4 phương án nên đoán có lợi hơn."
+      ],
+      "tags": [
+        "ap",
+        "toan",
+        "thong-ke",
+        "statistics",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Central, AP Statistics Exam: Section I 42 câu/90 phút (50%), Section II 4 câu/90 phút (50%), mỗi câu tự luận 12,5% tổng điểm",
+        "College Board - AP Statistics Course and Exam Description (khung sửa đổi): 5 unit với trọng số U1 20-30%, U2 15-25%, U3 15-25%, U4 10-20%, U5 10-20%; bốn statistical practice; phụ lục công thức và bảng A/B/C",
+        "College Board - AP Central, AP Statistics Revisions và trang 'When will the AP Statistics revisions launch?': khung mới áp dụng năm học 2026-27, thi lần đầu tháng 5/2027; bỏ chi bình phương phù hợp và Unit 9 suy luận hệ số góc",
+        "College Board - AP Central, How AP Exams Are Administered by Course: 'New for 2027 - AP Statistics chuyển từ hybrid digital sang fully digital'",
+        "College Board - AP Central, AP Statistics Exam: tài liệu tham chiếu vừa được in gửi về trường vừa có trong Bluebook"
+      ]
+    },
+    {
+      "id": "exam.ap-physics-1-algebra-based",
+      "name": "AP Physics 1: Algebra-Based",
+      "provider": "College Board",
+      "subject": "physics",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Physics 1 tương đương học phần vật lí đại cương I không dùng giải tích ở đại học Mỹ, dành cho học sinh đã hoặc đang học đại số II và lượng giác cơ bản. Môn này ĐÃ ĐỔI KHUNG: từ năm học 2024-25 chương trình được thiết kế lại, bổ sung trở lại phần Fluids (Unit 8) thành 8 unit, và phần tự luận đổi hẳn sang bốn dạng cố định MR - TBR - LAB - QQT thay cho các dạng cũ trong đó có 'paragraph-length argument'. Từ kỳ thi tháng 5/2027, số câu trắc nghiệm tăng lên 42 và thời gian đổi thành 85 phút cho Section I, 95 phút cho Section II. Bài thi dài 3 giờ, thang 1-5, thi hybrid digital.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "42",
+          "duration_minutes": 85,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ thi tháng 5/2027: 42 câu / 85 phút. Khung 2024-25 và 2025-26: 40 câu / 80 phút. Gồm câu rời và cụm câu dùng chung dữ kiện. Làm trên Bluebook, có bảng công thức và Desmos."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "4",
+          "duration_minutes": 95,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ 5/2027: 95 phút (khung 2024-25 và 2025-26 là 100 phút). Bốn câu theo đúng thứ tự MR (10 điểm) - TBR (12 điểm) - LAB (10 điểm) - QQT (8 điểm), tổng 40 điểm. Đề hiện trên Bluebook nhưng bài làm VIẾT TAY vào tập giấy."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Kinematics": 12.0,
+        "Unit 2: Force and Translational Dynamics": 20.0,
+        "Unit 3: Work, Energy, and Power": 20.0,
+        "Unit 4: Linear Momentum": 12.0,
+        "Unit 5: Torque and Rotational Dynamics": 12.0,
+        "Unit 6: Energy and Momentum of Rotating Systems": 6.5,
+        "Unit 7: Oscillations": 6.5,
+        "Unit 8: Fluids": 11.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm câu rời và cụm câu theo dữ kiện",
+          "description": "42 câu gồm câu độc lập và cụm câu dùng chung một đoạn mô tả, đồ thị hoặc bảng số liệu. Nặng về suy luận định tính, so sánh tỉ lệ và đọc đồ thị hơn là tính toán số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hai vật A và B có cùng khối lượng, được kéo trên mặt sàn nằm ngang bởi hai lực cùng độ lớn nhưng lực tác dụng lên A hợp với phương ngang một góc 30 độ. So sánh độ lớn lực ma sát tác dụng lên hai vật. (Bốn phương án so sánh.)",
+          "approach": "Ưu tiên lập luận tỉ lệ thay vì tính số: xác định đại lượng nào thay đổi, đại lượng nào giữ nguyên. Với câu góc nghiêng, nhớ thành phần thẳng đứng của lực làm ĐỔI phản lực pháp tuyến, kéo theo đổi ma sát."
+        },
+        {
+          "name": "Mathematical Routines (MR) - 10 điểm, gợi ý 20-25 phút",
+          "description": "Dùng toán để phân tích một tình huống vật lí: dẫn biểu thức bằng ký hiệu rồi tính giá trị số. Yêu cầu tạo và dùng biểu diễn hỗ trợ (giản đồ lực, phác đồ thị). Riêng Physics 1 và 2 còn buộc nêu một tuyên bố/dự đoán và biện luận bằng chuỗi lập luận vật lí liên kết nhiều khái niệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một khối gỗ khối lượng m trượt xuống mặt phẳng nghiêng góc theta có ma sát hệ số mu. (a) Vẽ giản đồ lực. (b) Dẫn biểu thức gia tốc theo m, theta, mu, g. (c) Tính giá trị khi m = 2,0 kg; theta = 30 độ; mu = 0,25. (d) Học sinh A nói nếu tăng gấp đôi m thì gia tốc tăng gấp đôi. Bạn có đồng ý không? Dùng kết quả câu (b) để biện luận.",
+          "approach": "Vẽ giản đồ trước khi viết phương trình. Dẫn bằng ký hiệu tới cùng rồi mới thay số một lần. Ghi rõ trục toạ độ và quy ước dấu. Phần biện luận phải chỉ đích danh biểu thức vừa dẫn và giải thích đại lượng nào bị/không bị triệt tiêu, không được trả lời chung chung."
+        },
+        {
+          "name": "Translation Between Representations (TBR) - 12 điểm, gợi ý 25-30 phút",
+          "description": "Câu nặng điểm nhất. Chuyển qua lại giữa bốn dạng biểu diễn: hình vẽ/giản đồ, phương trình, đồ thị và lời văn. Thí sinh phải vẽ biểu diễn trực quan, dẫn phương trình, vẽ đồ thị liên hệ hai đại lượng, rồi làm MỘT trong ba việc: giải thích vì sao các câu trước nhất quán (hoặc không), dự đoán cho tình huống khác, hoặc dự đoán biểu diễn thay đổi thế nào khi đổi tham số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một quả cầu được ném thẳng đứng lên với tốc độ đầu v0. (a) Vẽ giản đồ lực ở ba thời điểm: đang lên, tại đỉnh, đang xuống. (b) Dẫn biểu thức độ cao cực đại theo v0 và g. (c) Phác đồ thị vận tốc theo thời gian, ghi rõ giá trị chặn trục. (d) Giải thích độ dốc đồ thị câu (c) có nhất quán với giản đồ lực câu (a) hay không.",
+          "approach": "Đồ thị phải có nhãn trục, đơn vị và điểm chặn - thiếu nhãn là mất điểm dù dạng đường đúng. Khi được hỏi 'nhất quán hay không', phải chỉ ra đại lượng chung nối hai biểu diễn (ví dụ độ dốc v-t chính là gia tốc do hợp lực trong giản đồ gây ra) chứ không chỉ khẳng định là nhất quán."
+        },
+        {
+          "name": "Experimental Design and Analysis (LAB) - 10 điểm, gợi ý 25-30 phút",
+          "description": "Hai nửa rõ rệt. Nửa Thiết kế: mô tả một quy trình thí nghiệm khả thi trong phòng lab phổ thông, thay đổi MỘT biến và đo MỘT đặc trưng, kèm cách phân tích dữ liệu. Nửa Phân tích: được cho bộ số liệu của một câu hỏi tương tự nhưng không trùng, phải tuyến tính hoá, vẽ đồ thị và khai thác độ dốc hoặc giao điểm để rút ra đại lượng vật lí.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho lò xo chưa biết độ cứng, bộ quả nặng, thước, đồng hồ bấm giây. (a) Mô tả quy trình đo để xác định độ cứng k, nêu rõ đại lượng đo và dụng cụ đo. (b) Nêu cách phân tích số liệu để rút ra k. (c) Cho bảng số liệu chu kì T ứng với các khối lượng m; hãy chọn hai đại lượng cần vẽ để đồ thị là đường thẳng, vẽ đồ thị và dùng độ dốc tính k.",
+          "approach": "Quy trình phải nêu đủ: đo cái gì, bằng dụng cụ nào, lặp lại ra sao, giữ cố định cái gì. Ở phần tuyến tính hoá: viết phương trình lí thuyết, đưa về dạng y = mx + b rồi mới nói vẽ gì theo gì. Kẻ đường thẳng khớp bằng thước, lấy hai điểm TRÊN đường (không phải hai điểm dữ liệu) để tính độ dốc, kèm đơn vị."
+        },
+        {
+          "name": "Qualitative/Quantitative Translation (QQT) - 8 điểm, gợi ý 15-20 phút",
+          "description": "Câu kế thừa vai trò của 'paragraph-length argument' trong khung cũ (đến kỳ 5/2024). Nối bản chất hiện tượng, định luật chi phối và biểu thức toán học: nêu và biện luận một tuyên bố định tính, dẫn một phương trình liên quan, rồi giải thích sự nhất quán hoặc dự đoán khi đổi điều kiện. Từ khung 2024-25 KHÔNG còn yêu cầu viết đúng một đoạn văn liền mạch, nhưng chuỗi lập luận vẫn phải mạch lạc và có liên kết nhân quả.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hai vật cùng khối lượng trượt không ma sát từ cùng độ cao, một theo mặt phẳng nghiêng thẳng, một theo máng cong. (a) So sánh tốc độ hai vật ở chân dốc và giải thích bằng nguyên lí vật lí. (b) Dẫn biểu thức tốc độ ở chân dốc. (c) Kết quả câu (b) có ủng hộ khẳng định ở câu (a) không? Giải thích.",
+          "approach": "Cấu trúc bốn nhịp: nêu tuyên bố - gọi tên nguyên lí (bảo toàn năng lượng, định luật II Newton...) - áp dụng vào tình huống cụ thể - kết luận. Không nhắc lại đề. Khi biểu thức không chứa một biến nào đó thì phải nói thẳng 'kết quả độc lập với biến đó, phù hợp với nhận định ở câu (a)'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng Table of Information: Equations được cấp cho cả hai phần thi, có trong Bluebook và bản in phát tại phòng thi",
+        "Hằng số và hệ số quy đổi: g, hằng số hấp dẫn G, 1 atm, và các hằng số riêng của từng môn",
+        "Bảng tiền tố SI (tera đến pico) và bảng ký hiệu đơn vị",
+        "Mục Geometry and Trigonometry: diện tích, thể tích các hình cơ bản, hệ thức lượng tam giác vuông",
+        "Mục Mechanics and Fluids: động học, định luật Newton, ma sát, công - năng lượng - công suất, động lượng và xung lượng, chuyển động quay và mômen quán tính, dao động điều hoà, hấp dẫn, áp suất - lực đẩy Archimedes - phương trình liên tục - phương trình Bernoulli",
+        "Được phép dùng máy tính bốn phép tính, máy tính khoa học hoặc máy tính đồ thị ở CẢ hai phần; Bluebook có sẵn Desmos"
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.intl-dong-hoc.bo-phuong-trinh-kinematics-ap",
+        "physics.thpt.intl-dong-hoc.nem-xien-tach-thanh-phan",
+        "physics.thpt.intl-dong-hoc.gia-toc-huong-tam-dang-chu-ki",
+        "physics.thpt.intl-dong-hoc.do-doc-do-thi-van-toc-thoi-gian",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-theo-thanh-phan",
+        "physics.thpt.intl-dong-luc-hoc.ma-sat-nghi-bat-dang-thuc",
+        "physics.thpt.intl-dong-luc-hoc.ma-sat-truot-mu-k-mu-d",
+        "physics.thpt.intl-dong-luc-hoc.luc-huong-tam-dang-chu-ki",
+        "physics.thpt.intl-cong-nang-luong.dinh-li-cong-dong-nang-quy-uoc-ap",
+        "physics.thpt.intl-cong-nang-luong.cong-bang-dien-tich-do-thi-luc-do-doi",
+        "physics.thpt.intl-cong-nang-luong.cong-suat-dang-dao-ham",
+        "physics.thpt.intl-dong-luong.xung-luong-dien-tich-do-thi",
+        "physics.thpt.intl-dong-luong.bao-toan-dong-luong-hai-chieu",
+        "physics.thpt.intl-chuyen-dong-quay.phuong-trinh-quay-alpha",
+        "physics.thpt.intl-chuyen-dong-quay.bang-momen-quan-tinh-vat-chuan",
+        "physics.thpt.intl-chuyen-dong-quay.dinh-li-truc-song-song-ap",
+        "physics.thpt.intl-chuyen-dong-quay.bao-toan-momen-dong-luong-quoc-te",
+        "physics.thpt.intl-chuyen-dong-quay.dong-nang-vat-lan-he-so-beta",
+        "physics.thpt.intl-chuyen-dong-quay.can-bang-vat-ran-quoc-te",
+        "physics.thpt.intl-chuyen-dong-quay.suvat-goc-ib",
+        "physics.thpt.intl-dao-dong.dinh-nghia-shm-ib",
+        "physics.thpt.intl-dao-dong.chu-ki-con-lac-ib",
+        "physics.thpt.intl-dao-dong.nang-luong-shm-theo-omega",
+        "physics.thpt.intl-chat-luu.khoi-luong-rieng-va-ap-suat",
+        "physics.thpt.intl-chat-luu.luc-day-archimedes-ib",
+        "physics.thpt.intl-chat-luu.phuong-trinh-lien-tuc-thpt",
+        "physics.thpt.intl-chat-luu.phuong-trinh-bernoulli-thpt",
+        "physics.thpt.intl-hap-dan.cuong-do-truong-hap-dan"
+      ],
+      "scoring": {
+        "description": "Section I chấm máy 42 câu, Section II chấm tay theo rubric 40 điểm (MR 10, TBR 12, LAB 10, QQT 8). Hai phần cân bằng 50% - 50% khi ghép thành điểm hợp thành. Rubric tự luận cho điểm theo từng ý; kết quả sai ở ý trước vẫn được chấm tiếp theo ý sau nếu lập luận nhất quán (điểm carry-through).",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hợp thành quy về 1-5 bằng standard setting, ngưỡng đổi theo năm. Với AP Physics 1 và 2, ngưỡng điểm 5 nhiều năm nằm quanh 70% điểm hợp thành, điểm 3 quanh 40-45%; hai môn Physics C có ngưỡng thấp hơn tương đối do đề khó và nhóm thí sinh chọn lọc hơn.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 85 phút cho 42 câu, trung bình 2 phút/câu. Quét một lượt đánh dấu câu dài (cụm câu có đồ thị, bảng số liệu) để làm sau, ưu tiên vét câu khái niệm ngắn trước.",
+        "Section II: bám sát thời gian gợi ý trong CED (MR 20-25, TBR 25-30, LAB 25-30, QQT 15-20 phút). TBR nặng 12 điểm nên tuyệt đối không bỏ dở vì hết giờ ở câu trước.",
+        "Chiến thuật ăn điểm thành phần: mỗi ý viết thành một khối riêng có nhãn (a), (b), (c) rõ ràng; đừng gộp lời giải thành một khối văn dài vì giám khảo chấm theo từng ô rubric.",
+        "Luôn dẫn bằng ký hiệu trước, thay số sau cùng. Nếu bí phần tính số, vẫn viết biểu thức ký hiệu để lấy điểm dẫn công thức.",
+        "Ghi đơn vị cho mọi kết quả số và giữ số chữ số có nghĩa hợp lí; câu 'Calculate' theo task verb đòi cả biểu thức, số đã thế và đơn vị.",
+        "Khi bị sai ở ý (b), cứ dùng kết quả sai đó làm tiếp ý (c) một cách nhất quán để hưởng điểm carry-through; ghi rõ 'dùng kết quả từ phần (b)'.",
+        "Bảng công thức được cấp nhưng phải thuộc BỐI CẢNH dùng: nhớ rõ mỗi công thức áp dụng cho hệ nào, điều kiện nào, thay vì tra mù.",
+        "Vì bài tự luận viết tay còn phần đề nằm trên màn hình, hãy chép lại dữ kiện then chốt ra giấy nháp ngay từ đầu để khỏi phải chuyển qua lại giữa màn hình và giấy.",
+        "Unit 2 và Unit 3 cộng lại chiếm khoảng 40% phần trắc nghiệm - đây là trọng tâm ôn tập số một.",
+        "Unit 8 Fluids là phần mới quay lại từ khung 2024-25, chiếm 10-15%; nhiều tài liệu cũ không có phần này nên phải bổ sung riêng."
+      ],
+      "common_traps": [
+        "Nhầm rằng vì có bảng công thức nên không cần thuộc gì - thực tế phần lớn điểm nằm ở việc CHỌN ĐÚNG công thức và giải thích, không phải ở việc chép công thức.",
+        "Vẽ giản đồ lực có mũi tên nhưng không ghi nhãn lực, hoặc vẽ thêm lực không tồn tại (lực hướng tâm, lực quán tính trong hệ quy chiếu quán tính) - mất trọn điểm ô rubric đó.",
+        "Đồ thị thiếu nhãn trục, thiếu đơn vị hoặc thiếu thang chia đều: dạng đường đúng vẫn không được điểm.",
+        "Tính độ dốc bằng cách lấy hai điểm dữ liệu thô thay vì hai điểm nằm trên đường khớp đã kẻ.",
+        "Ở câu 'justify', chỉ nhắc lại kết quả tính mà không gọi tên nguyên lí vật lí và không nối nhân quả.",
+        "Đưa ra hai lời giải mâu thuẫn nhau và để giám khảo tự chọn: rubric sẽ chấm theo phương án SAI. Gạch bỏ dứt khoát phần bỏ đi.",
+        "Nhầm khung đề: dùng tài liệu luyện thi trước 2024 vẫn còn dạng 'paragraph-length argument' và cấu trúc 5 câu tự luận đã bị bỏ.",
+        "Dùng bảo toàn cơ năng cho hệ có ma sát mà không cộng phần năng lượng chuyển thành nhiệt.",
+        "Nhầm rằng vật lăn không trượt thì có ma sát nên mất cơ năng - thực tế ma sát nghỉ khi lăn không trượt không sinh công.",
+        "Ở bài chất lưu, dùng áp suất dư thay cho áp suất tuyệt đối (hoặc ngược lại) trong phương trình Bernoulli."
+      ],
+      "tags": [
+        "ap",
+        "vat-li",
+        "physics-1",
+        "co-hoc",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Physics 1: Algebra-Based Course and Exam Description, Exam Overview: 42 câu/85 phút và 4 câu tự luận/95 phút, mỗi phần 50%; máy tính bốn phép tính, khoa học hoặc đồ thị được dùng ở CẢ HAI phần",
+        "College Board - CED, Free-Response Questions: MR 10 điểm (20-25 phút), TBR 12 điểm (25-30 phút), LAB 10 điểm (25-30 phút), QQT 8 điểm (15-20 phút)",
+        "College Board - AP Physics 1 Course at a Glance: U1 10-15%, U2 18-23%, U3 18-23%, U4 10-15%, U5 10-15%, U6 5-8%, U7 5-8%, U8 10-15%",
+        "College Board - AP Central, AP Physics 1 Exam: hybrid digital; số câu và thời gian đổi từ kỳ thi tháng 5/2027 (khung 2024-25 và 2025-26 là 40 câu/80 phút và 4 câu/100 phút)",
+        "College Board - AP Students, AP Exams Calculator Policy"
+      ]
+    },
+    {
+      "id": "exam.ap-physics-2-algebra-based",
+      "name": "AP Physics 2: Algebra-Based",
+      "provider": "College Board",
+      "subject": "physics",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Physics 2 tương đương học phần vật lí đại cương II không dùng giải tích, học tiếp sau AP Physics 1. Nội dung gồm 7 unit đánh số từ 9 đến 15: nhiệt động lực học, điện trường - điện thế, mạch điện, từ trường và cảm ứng điện từ, quang hình, sóng - âm - quang sóng, và vật lí hiện đại. Môn này cũng theo khung thiết kế lại từ năm học 2024-25 với bốn dạng tự luận cố định MR - TBR - LAB - QQT. Từ kỳ thi tháng 5/2027, Section I là 42 câu/85 phút và Section II là 4 câu/95 phút. Bài thi dài 3 giờ, thang 1-5, thi hybrid digital trên Bluebook.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "42",
+          "duration_minutes": 85,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ thi tháng 5/2027: 42 câu / 85 phút. Khung 2024-25 và 2025-26: 40 câu / 80 phút. Gồm câu rời và cụm câu dùng chung dữ kiện. Làm trên Bluebook, có bảng công thức và Desmos."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "4",
+          "duration_minutes": 95,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ 5/2027: 95 phút (khung 2024-25 và 2025-26 là 100 phút). Bốn câu theo đúng thứ tự MR (10 điểm) - TBR (12 điểm) - LAB (10 điểm) - QQT (8 điểm), tổng 40 điểm. Đề hiện trên Bluebook nhưng bài làm VIẾT TAY vào tập giấy."
+        }
+      ],
+      "topic_weights": {
+        "Unit 9: Thermodynamics": 16.0,
+        "Unit 10: Electric Force, Field, and Potential": 16.0,
+        "Unit 11: Electric Circuits": 16.0,
+        "Unit 12: Magnetism and Electromagnetism": 13.0,
+        "Unit 13: Geometric Optics": 13.0,
+        "Unit 14: Waves, Sound, and Physical Optics": 13.0,
+        "Unit 15: Modern Physics": 13.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm câu rời và cụm câu theo dữ kiện",
+          "description": "42 câu trải đều bảy unit. Nhiều câu dựa trên giản đồ P-V, sơ đồ mạch, đường đi tia sáng, hoặc giản đồ mức năng lượng, yêu cầu suy luận định tính về chiều biến thiên.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một khối khí lí tưởng đơn nguyên tử đi từ trạng thái A sang B theo quá trình đẳng áp rồi từ B sang C theo quá trình đẳng tích, được biểu diễn trên giản đồ P-V. Trong hai quá trình đó, quá trình nào khí nhận nhiệt và quá trình nào nội năng giảm? (Bốn phương án kết hợp.)",
+          "approach": "Với giản đồ P-V, nhớ ba mốc: công bằng diện tích dưới đường quá trình (dấu theo chiều), nội năng khí lí tưởng chỉ phụ thuộc nhiệt độ, và nhiệt suy ra từ nguyên lí I. Cẩn thận quy ước dấu của AP: công là công thực hiện LÊN khí."
+        },
+        {
+          "name": "Mathematical Routines (MR) - 10 điểm, gợi ý 20-25 phút",
+          "description": "Dùng toán để phân tích một tình huống vật lí: dẫn biểu thức bằng ký hiệu rồi tính giá trị số. Yêu cầu tạo và dùng biểu diễn hỗ trợ (giản đồ lực, phác đồ thị). Riêng Physics 1 và 2 còn buộc nêu một tuyên bố/dự đoán và biện luận bằng chuỗi lập luận vật lí liên kết nhiều khái niệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một nguồn có suất điện động E và điện trở trong r nối với hai điện trở R1 song song R2. (a) Vẽ sơ đồ mạch, đánh dấu chiều dòng điện. (b) Dẫn biểu thức cường độ dòng qua nguồn theo E, r, R1, R2. (c) Tính giá trị khi E = 12 V; r = 1,0 ohm; R1 = 6,0 ohm; R2 = 3,0 ohm. (d) Một bạn nói nếu tháo bỏ R2 thì công suất toả trên R1 sẽ tăng. Dùng biểu thức câu (b) để biện luận.",
+          "approach": "Vẽ giản đồ trước khi viết phương trình. Dẫn bằng ký hiệu tới cùng rồi mới thay số một lần. Ghi rõ trục toạ độ và quy ước dấu. Phần biện luận phải chỉ đích danh biểu thức vừa dẫn và giải thích đại lượng nào bị/không bị triệt tiêu, không được trả lời chung chung."
+        },
+        {
+          "name": "Translation Between Representations (TBR) - 12 điểm, gợi ý 25-30 phút",
+          "description": "Câu nặng điểm nhất. Chuyển qua lại giữa bốn dạng biểu diễn: hình vẽ/giản đồ, phương trình, đồ thị và lời văn. Thí sinh phải vẽ biểu diễn trực quan, dẫn phương trình, vẽ đồ thị liên hệ hai đại lượng, rồi làm MỘT trong ba việc: giải thích vì sao các câu trước nhất quán (hoặc không), dự đoán cho tình huống khác, hoặc dự đoán biểu diễn thay đổi thế nào khi đổi tham số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hai bản kim loại phẳng song song cách nhau d được nối vào hiệu điện thế U. (a) Vẽ đường sức điện và các mặt đẳng thế giữa hai bản. (b) Dẫn biểu thức độ lớn điện trường giữa hai bản theo U và d. (c) Phác đồ thị điện thế theo khoảng cách tính từ bản dương, ghi rõ giá trị hai đầu. (d) Giải thích độ dốc của đồ thị câu (c) có nhất quán với kết quả câu (b) hay không.",
+          "approach": "Đồ thị phải có nhãn trục, đơn vị và điểm chặn - thiếu nhãn là mất điểm dù dạng đường đúng. Khi được hỏi 'nhất quán hay không', phải chỉ ra đại lượng chung nối hai biểu diễn (ví dụ độ dốc v-t chính là gia tốc do hợp lực trong giản đồ gây ra) chứ không chỉ khẳng định là nhất quán."
+        },
+        {
+          "name": "Experimental Design and Analysis (LAB) - 10 điểm, gợi ý 25-30 phút",
+          "description": "Hai nửa rõ rệt. Nửa Thiết kế: mô tả một quy trình thí nghiệm khả thi trong phòng lab phổ thông, thay đổi MỘT biến và đo MỘT đặc trưng, kèm cách phân tích dữ liệu. Nửa Phân tích: được cho bộ số liệu của một câu hỏi tương tự nhưng không trùng, phải tuyến tính hoá, vẽ đồ thị và khai thác độ dốc hoặc giao điểm để rút ra đại lượng vật lí.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho một thấu kính hội tụ chưa biết tiêu cự, nguồn sáng dạng chữ, màn hứng ảnh và thước mét. (a) Mô tả quy trình đo để xác định tiêu cự, nêu rõ đại lượng đo và dụng cụ đo. (b) Nêu cách phân tích số liệu để rút ra tiêu cự. (c) Cho bảng khoảng cách vật và khoảng cách ảnh ở sáu lần đo; hãy chọn hai đại lượng cần vẽ để đồ thị là đường thẳng và nêu cách lấy tiêu cự từ đồ thị đó.",
+          "approach": "Quy trình phải nêu đủ: đo cái gì, bằng dụng cụ nào, lặp lại ra sao, giữ cố định cái gì. Ở phần tuyến tính hoá: viết phương trình lí thuyết, đưa về dạng y = mx + b rồi mới nói vẽ gì theo gì. Kẻ đường thẳng khớp bằng thước, lấy hai điểm TRÊN đường (không phải hai điểm dữ liệu) để tính độ dốc, kèm đơn vị."
+        },
+        {
+          "name": "Qualitative/Quantitative Translation (QQT) - 8 điểm, gợi ý 15-20 phút",
+          "description": "Câu kế thừa vai trò của 'paragraph-length argument' trong khung cũ (đến kỳ 5/2024). Nối bản chất hiện tượng, định luật chi phối và biểu thức toán học: nêu và biện luận một tuyên bố định tính, dẫn một phương trình liên quan, rồi giải thích sự nhất quán hoặc dự đoán khi đổi điều kiện. Từ khung 2024-25 KHÔNG còn yêu cầu viết đúng một đoạn văn liền mạch, nhưng chuỗi lập luận vẫn phải mạch lạc và có liên kết nhân quả.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cùng một lượng khí lí tưởng đơn nguyên tử đi từ trạng thái A tới cùng trạng thái B theo hai đường khác nhau trên giản đồ P-V: một đường đẳng nhiệt và một đường gồm đẳng áp rồi đẳng tích. (a) So sánh độ biến thiên nội năng và nhiệt lượng khí nhận theo hai đường, giải thích bằng nguyên lí thứ nhất. (b) Dẫn biểu thức công khí thực hiện theo đường đẳng áp. (c) Kết quả câu (b) có ủng hộ khẳng định ở câu (a) không? Giải thích.",
+          "approach": "Cấu trúc bốn nhịp: nêu tuyên bố - gọi tên nguyên lí (bảo toàn năng lượng, định luật II Newton...) - áp dụng vào tình huống cụ thể - kết luận. Không nhắc lại đề. Khi biểu thức không chứa một biến nào đó thì phải nói thẳng 'kết quả độc lập với biến đó, phù hợp với nhận định ở câu (a)'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng Table of Information: Equations được cấp cho cả hai phần thi, có trong Bluebook và bản in phát tại phòng thi",
+        "Hằng số và hệ số quy đổi: g, hằng số hấp dẫn G, 1 atm, và các hằng số riêng của từng môn",
+        "Bảng tiền tố SI (tera đến pico) và bảng ký hiệu đơn vị",
+        "Mục Geometry and Trigonometry: diện tích, thể tích các hình cơ bản, hệ thức lượng tam giác vuông",
+        "Mục Thermodynamics: phương trình khí lí tưởng, nội năng, nguyên lí I, hiệu suất động cơ nhiệt",
+        "Mục Electricity and Magnetism: định luật Coulomb, điện trường, điện thế, điện dung, định luật Ohm, công suất, ghép điện trở và tụ, lực từ, từ thông và định luật Faraday",
+        "Mục Optics and Waves: chiết suất, định luật khúc xạ, công thức thấu kính - gương, độ phóng đại, giao thoa và nhiễu xạ",
+        "Mục Modern Physics: năng lượng photon, hiệu ứng quang điện, bước sóng de Broglie, hệ thức khối lượng - năng lượng",
+        "Được phép dùng máy tính bốn phép tính, máy tính khoa học hoặc máy tính đồ thị ở CẢ hai phần; Bluebook có sẵn Desmos"
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.intl-nhiet-hoc.phuong-trinh-khi-li-tuong-kb",
+        "physics.thpt.intl-nhiet-hoc.noi-nang-khi-don-nguyen-tu-ib",
+        "physics.thpt.intl-nhiet-hoc.nguyen-li-i-quy-uoc-ap",
+        "physics.thpt.intl-nhiet-hoc.dien-tich-gian-do-pv",
+        "physics.thpt.intl-nhiet-hoc.bang-cac-qua-trinh-quy-uoc-ap",
+        "physics.thpt.intl-nhiet-hoc.toc-do-can-quan-phuong",
+        "physics.thpt.intl-nhiet-hoc.hieu-suat-dong-co-nhiet-ib",
+        "physics.thpt.tinh-dien-gauss.dien-truong-hai-ban-song-song",
+        "physics.thpt.tinh-dien-gauss.the-nang-tuong-tac-hai-dien-tich",
+        "physics.thpt.tinh-dien-gauss.dien-truong-la-gradient-am-dien-the",
+        "physics.thpt.tinh-dien-gauss.mat-dang-the-va-cong",
+        "physics.thpt.tu-dien.dien-dung-tu-phang",
+        "physics.thpt.tu-dien.nang-luong-tu-dien",
+        "physics.thpt.tu-dien.ghep-tu-noi-tiep",
+        "physics.thpt.tu-dien.ghep-tu-song-song",
+        "physics.thpt.mach-dien-quoc-te.dinh-luat-vong-kirchhoff",
+        "physics.thpt.mach-dien-quoc-te.mach-chia-the",
+        "physics.thpt.mach-dien-quoc-te.ampe-ke-von-ke-li-tuong",
+        "physics.thpt.tu-truong-quoc-te.luc-lorentz-tong-quat",
+        "physics.thpt.tu-truong-quoc-te.tu-truong-day-thang-theo-mu-khong",
+        "physics.thpt.tu-truong-quoc-te.bo-chon-loc-van-toc",
+        "physics.thpt.cam-ung-dien-tu.tu-thong",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-lenz",
+        "physics.thpt.quang-hinh-quoc-te.thau-kinh-quy-uoc-real-is-positive",
+        "physics.thpt.quang-hinh-quoc-te.guong-cau-quy-uoc-quoc-te",
+        "physics.thpt.song-quoc-te.nhieu-xa-mot-khe-cuc-tieu",
+        "physics.thpt.song-quoc-te.mang-mong-mot-lan-dao-pha",
+        "physics.thpt.vat-li-hien-dai-qt.buoc-song-de-broglie",
+        "physics.thpt.vat-li-hien-dai-qt.nang-luong-photon-theo-ev-nm"
+      ],
+      "scoring": {
+        "description": "Section I chấm máy 42 câu, Section II chấm tay theo rubric 40 điểm (MR 10, TBR 12, LAB 10, QQT 8). Hai phần cân bằng 50% - 50% khi ghép thành điểm hợp thành. Rubric tự luận cho điểm theo từng ý; kết quả sai ở ý trước vẫn được chấm tiếp theo ý sau nếu lập luận nhất quán (điểm carry-through).",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hợp thành quy về 1-5 bằng standard setting, ngưỡng đổi theo năm. Với AP Physics 1 và 2, ngưỡng điểm 5 nhiều năm nằm quanh 70% điểm hợp thành, điểm 3 quanh 40-45%; hai môn Physics C có ngưỡng thấp hơn tương đối do đề khó và nhóm thí sinh chọn lọc hơn.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 85 phút cho 42 câu, trung bình 2 phút/câu. Quét một lượt đánh dấu câu dài (cụm câu có đồ thị, bảng số liệu) để làm sau, ưu tiên vét câu khái niệm ngắn trước.",
+        "Section II: bám sát thời gian gợi ý trong CED (MR 20-25, TBR 25-30, LAB 25-30, QQT 15-20 phút). TBR nặng 12 điểm nên tuyệt đối không bỏ dở vì hết giờ ở câu trước.",
+        "Chiến thuật ăn điểm thành phần: mỗi ý viết thành một khối riêng có nhãn (a), (b), (c) rõ ràng; đừng gộp lời giải thành một khối văn dài vì giám khảo chấm theo từng ô rubric.",
+        "Luôn dẫn bằng ký hiệu trước, thay số sau cùng. Nếu bí phần tính số, vẫn viết biểu thức ký hiệu để lấy điểm dẫn công thức.",
+        "Ghi đơn vị cho mọi kết quả số và giữ số chữ số có nghĩa hợp lí; câu 'Calculate' theo task verb đòi cả biểu thức, số đã thế và đơn vị.",
+        "Khi bị sai ở ý (b), cứ dùng kết quả sai đó làm tiếp ý (c) một cách nhất quán để hưởng điểm carry-through; ghi rõ 'dùng kết quả từ phần (b)'.",
+        "Bảng công thức được cấp nhưng phải thuộc BỐI CẢNH dùng: nhớ rõ mỗi công thức áp dụng cho hệ nào, điều kiện nào, thay vì tra mù.",
+        "Vì bài tự luận viết tay còn phần đề nằm trên màn hình, hãy chép lại dữ kiện then chốt ra giấy nháp ngay từ đầu để khỏi phải chuyển qua lại giữa màn hình và giấy.",
+        "Bảy unit có trọng số khá đều (12-18%) nên không thể bỏ hẳn unit nào; chiến lược tốt là ôn đều và đào sâu ba unit đầu (nhiệt, điện trường, mạch điện) vốn chiếm khoảng 48%.",
+        "Câu LAB của Physics 2 rất hay rơi vào mạch điện hoặc quang hình - luyện riêng kỹ năng thiết kế mạch đo điện trở trong và đo tiêu cự thấu kính."
+      ],
+      "common_traps": [
+        "Nhầm rằng vì có bảng công thức nên không cần thuộc gì - thực tế phần lớn điểm nằm ở việc CHỌN ĐÚNG công thức và giải thích, không phải ở việc chép công thức.",
+        "Vẽ giản đồ lực hoặc sơ đồ mạch thiếu nhãn (không ghi tên lực, không ghi chiều dòng, không ghi cực nguồn) - rubric có ô riêng cho việc ghi nhãn, hình đúng mà thiếu nhãn vẫn mất điểm.",
+        "Đồ thị thiếu nhãn trục, thiếu đơn vị hoặc thiếu thang chia đều: dạng đường đúng vẫn không được điểm.",
+        "Tính độ dốc bằng cách lấy hai điểm dữ liệu thô thay vì hai điểm nằm trên đường khớp đã kẻ.",
+        "Ở câu 'justify', chỉ nhắc lại kết quả tính mà không gọi tên nguyên lí vật lí và không nối nhân quả.",
+        "Đưa ra hai lời giải mâu thuẫn nhau và để giám khảo tự chọn: rubric sẽ chấm theo phương án SAI. Gạch bỏ dứt khoát phần bỏ đi.",
+        "Nhầm khung đề: tài liệu trước 2024-25 vẫn theo cấu trúc cũ 50 câu trắc nghiệm (có câu chọn nhiều đáp án) và 4 câu tự luận trong đó có dạng 'paragraph-length argument' - cả hai đều đã bị bỏ.",
+        "Dùng sai quy ước dấu của nguyên lí I: AP quy ước W là công thực hiện LÊN khí, ngược với nhiều sách dùng công do khí sinh ra.",
+        "Nhầm điện thế với thế năng, hoặc nhầm hiệu điện thế với điện trường ở bài hai bản song song.",
+        "Quên đảo pha khi phản xạ trên môi trường chiết quang hơn trong bài giao thoa màng mỏng.",
+        "Áp dụng công thức thấu kính mà không thống nhất quy ước dấu cho vật ảo, ảnh ảo và thấu kính phân kì."
+      ],
+      "tags": [
+        "ap",
+        "vat-li",
+        "physics-2",
+        "dien-tu",
+        "quang-hoc",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Physics 2: Algebra-Based Course and Exam Description, Exam Overview: 42 câu/85 phút và 4 câu tự luận/95 phút; MR 10, TBR 12, LAB 10, QQT 8 điểm",
+        "College Board - AP Physics 2 Course at a Glance: U9 15-18%, U10 15-18%, U11 15-18%, U12 12-15%, U13 12-15%, U14 12-15%, U15 12-15%",
+        "College Board - AP Central, AP Physics 2 Exam: hybrid digital; số câu và thời gian đổi từ kỳ thi tháng 5/2027 (trước đó 40 câu/80 phút và 4 câu/100 phút)",
+        "College Board - AP Students, AP Exams Calculator Policy (máy tính được dùng ở cả hai phần)"
+      ]
+    },
+    {
+      "id": "exam.ap-physics-c-mechanics",
+      "name": "AP Physics C: Mechanics",
+      "provider": "College Board",
+      "subject": "physics",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Physics C: Mechanics là môn cơ học DÙNG GIẢI TÍCH, tương đương học phần vật lí đại cương I dành cho sinh viên ngành kỹ thuật và khoa học tự nhiên ở đại học Mỹ. Thí sinh cần học song song hoặc đã học giải tích (đạo hàm, tích phân, phương trình vi phân đơn giản). Môn này đổi khung mạnh từ năm học 2024-25: chương trình tổ chức lại thành 7 unit và ĐỘ DÀI ĐỀ TĂNG GẤP ĐÔI - từ 35 câu trắc nghiệm/45 phút cộng 3 câu tự luận/45 phút (tổng 1 giờ 30) lên định dạng chung với các môn AP Physics khác. Từ kỳ thi tháng 5/2027: 42 câu/85 phút và 4 câu tự luận/95 phút, tổng 3 giờ. Thang 1-5, thi hybrid digital.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "42",
+          "duration_minutes": 85,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ thi tháng 5/2027: 42 câu / 85 phút. Khung 2024-25 và 2025-26: 40 câu / 80 phút. Gồm câu rời và cụm câu dùng chung dữ kiện. Làm trên Bluebook, có bảng công thức và Desmos."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "4",
+          "duration_minutes": 95,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ 5/2027: 95 phút (khung 2024-25 và 2025-26 là 100 phút). Bốn câu theo đúng thứ tự MR (10 điểm) - TBR (12 điểm) - LAB (10 điểm) - QQT (8 điểm), tổng 40 điểm. Đề hiện trên Bluebook nhưng bài làm VIẾT TAY vào tập giấy."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Kinematics": 12.0,
+        "Unit 2: Force and Translational Dynamics": 22.0,
+        "Unit 3: Work, Energy, and Power": 19.0,
+        "Unit 4: Linear Momentum": 14.0,
+        "Unit 5: Torque and Rotational Dynamics": 11.0,
+        "Unit 6: Energy and Momentum of Rotating Systems": 11.0,
+        "Unit 7: Oscillations": 11.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm dùng giải tích",
+          "description": "42 câu, khác Physics 1 ở chỗ nhiều câu yêu cầu đạo hàm hoặc tích phân trực tiếp: suy vận tốc từ hàm vị trí, tính công của lực biến thiên, tìm mômen quán tính bằng tích phân, hoặc nhận diện nghiệm của phương trình vi phân chuyển động có lực cản.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một vật chịu lực thế có thế năng U(x) = a x^4 - b x^2 với a, b dương. Vị trí cân bằng bền của vật nằm ở đâu? (Bốn phương án biểu thức theo a và b.)",
+          "approach": "Nhớ lực thế bằng trừ đạo hàm thế năng theo toạ độ; cân bằng khi đạo hàm bằng 0, BỀN khi đạo hàm cấp hai của U dương (U cực tiểu). Loại nhanh phương án không có thứ nguyên đúng."
+        },
+        {
+          "name": "Mathematical Routines (MR) - 10 điểm, gợi ý 20-25 phút",
+          "description": "Dùng toán để phân tích một tình huống vật lí: dẫn biểu thức bằng ký hiệu rồi tính giá trị số. Yêu cầu tạo và dùng biểu diễn hỗ trợ (giản đồ lực, phác đồ thị). Riêng Physics 1 và 2 còn buộc nêu một tuyên bố/dự đoán và biện luận bằng chuỗi lập luận vật lí liên kết nhiều khái niệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một vật khối lượng m rơi từ nghỉ trong môi trường có lực cản độ lớn bv (b hằng số). (a) Vẽ giản đồ lực ở một thời điểm bất kỳ. (b) Lập phương trình vi phân cho vận tốc và giải để được v(t). (c) Dẫn biểu thức tốc độ giới hạn và tính giá trị khi m = 0,50 kg; b = 0,25 kg/s. (d) Chứng tỏ biểu thức v(t) ở câu (b) cho đúng tốc độ giới hạn khi t tiến ra vô cùng.",
+          "approach": "Vẽ giản đồ trước khi viết phương trình. Dẫn bằng ký hiệu tới cùng rồi mới thay số một lần. Ghi rõ trục toạ độ và quy ước dấu. Phần biện luận phải chỉ đích danh biểu thức vừa dẫn và giải thích đại lượng nào bị/không bị triệt tiêu, không được trả lời chung chung."
+        },
+        {
+          "name": "Translation Between Representations (TBR) - 12 điểm, gợi ý 25-30 phút",
+          "description": "Câu nặng điểm nhất. Chuyển qua lại giữa bốn dạng biểu diễn: hình vẽ/giản đồ, phương trình, đồ thị và lời văn. Thí sinh phải vẽ biểu diễn trực quan, dẫn phương trình, vẽ đồ thị liên hệ hai đại lượng, rồi làm MỘT trong ba việc: giải thích vì sao các câu trước nhất quán (hoặc không), dự đoán cho tình huống khác, hoặc dự đoán biểu diễn thay đổi thế nào khi đổi tham số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hai vật nối qua ròng rọc có mômen quán tính I và bán kính R (dây không trượt). (a) Vẽ giản đồ lực cho từng vật và cho ròng rọc. (b) Dẫn biểu thức gia tốc hệ theo m1, m2, I, R, g. (c) Phác đồ thị gia tốc hệ theo I, ghi rõ giá trị chặn trục và tiệm cận. (d) Giải thích dạng đồ thị câu (c) có nhất quán với biểu thức câu (b) hay không.",
+          "approach": "Đồ thị phải có nhãn trục, đơn vị và điểm chặn - thiếu nhãn là mất điểm dù dạng đường đúng. Khi được hỏi 'nhất quán hay không', phải chỉ ra đại lượng chung nối hai biểu diễn (ví dụ độ dốc v-t chính là gia tốc do hợp lực trong giản đồ gây ra) chứ không chỉ khẳng định là nhất quán."
+        },
+        {
+          "name": "Experimental Design and Analysis (LAB) - 10 điểm, gợi ý 25-30 phút",
+          "description": "Hai nửa rõ rệt. Nửa Thiết kế: mô tả một quy trình thí nghiệm khả thi trong phòng lab phổ thông, thay đổi MỘT biến và đo MỘT đặc trưng, kèm cách phân tích dữ liệu. Nửa Phân tích: được cho bộ số liệu của một câu hỏi tương tự nhưng không trùng, phải tuyến tính hoá, vẽ đồ thị và khai thác độ dốc hoặc giao điểm để rút ra đại lượng vật lí.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho một đĩa đồng chất quay quanh trục cố định, bộ quả nặng, dây, thước và cảm biến đo góc quay theo thời gian. (a) Mô tả quy trình đo để xác định mômen quán tính của đĩa. (b) Nêu cách phân tích số liệu để rút ra mômen quán tính. (c) Cho bảng gia tốc góc ứng với các mômen lực khác nhau; hãy chọn hai đại lượng cần vẽ để đồ thị là đường thẳng và nêu ý nghĩa của độ dốc.",
+          "approach": "Quy trình phải nêu đủ: đo cái gì, bằng dụng cụ nào, lặp lại ra sao, giữ cố định cái gì. Ở phần tuyến tính hoá: viết phương trình lí thuyết, đưa về dạng y = mx + b rồi mới nói vẽ gì theo gì. Kẻ đường thẳng khớp bằng thước, lấy hai điểm TRÊN đường (không phải hai điểm dữ liệu) để tính độ dốc, kèm đơn vị."
+        },
+        {
+          "name": "Qualitative/Quantitative Translation (QQT) - 8 điểm, gợi ý 15-20 phút",
+          "description": "Câu kế thừa vai trò của 'paragraph-length argument' trong khung cũ (đến kỳ 5/2024). Nối bản chất hiện tượng, định luật chi phối và biểu thức toán học: nêu và biện luận một tuyên bố định tính, dẫn một phương trình liên quan, rồi giải thích sự nhất quán hoặc dự đoán khi đổi điều kiện. Từ khung 2024-25 KHÔNG còn yêu cầu viết đúng một đoạn văn liền mạch, nhưng chuỗi lập luận vẫn phải mạch lạc và có liên kết nhân quả.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hình trụ đặc và một vành tròn cùng khối lượng, cùng bán kính, cùng lăn không trượt từ nghỉ xuống một mặt phẳng nghiêng. (a) Vật nào tới chân dốc trước? Giải thích bằng nguyên lí vật lí, không dùng công thức. (b) Dẫn biểu thức tốc độ khối tâm ở chân dốc theo hệ số beta của mômen quán tính. (c) Kết quả câu (b) có ủng hộ khẳng định ở câu (a) không? Giải thích.",
+          "approach": "Cấu trúc bốn nhịp: nêu tuyên bố - gọi tên nguyên lí (bảo toàn năng lượng, định luật II Newton...) - áp dụng vào tình huống cụ thể - kết luận. Không nhắc lại đề. Khi biểu thức không chứa một biến nào đó thì phải nói thẳng 'kết quả độc lập với biến đó, phù hợp với nhận định ở câu (a)'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng Table of Information: Equations được cấp cho cả hai phần thi, có trong Bluebook và bản in phát tại phòng thi",
+        "Hằng số và hệ số quy đổi: g, hằng số hấp dẫn G, 1 atm, và các hằng số riêng của từng môn",
+        "Bảng tiền tố SI (tera đến pico) và bảng ký hiệu đơn vị",
+        "Mục Geometry and Trigonometry: diện tích, thể tích các hình cơ bản, hệ thức lượng tam giác vuông",
+        "Mục Mechanics của Physics C viết dưới dạng GIẢI TÍCH: vận tốc và gia tốc là đạo hàm, xung lượng và công là tích phân, mômen quán tính dạng tích phân, định lí trục song song",
+        "Các công thức hấp dẫn: lực hấp dẫn, thế năng hấp dẫn dạng trừ GMm trên r, cơ năng quỹ đạo",
+        "Các công thức dao động điều hoà: phương trình vi phân, chu kì con lắc lò xo và con lắc đơn",
+        "Bảng mômen quán tính của các vật rắn chuẩn (thanh, đĩa, trụ, cầu)",
+        "Được phép dùng máy tính bốn phép tính, máy tính khoa học hoặc máy tính đồ thị ở CẢ hai phần; Bluebook có sẵn Desmos"
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.intl-dong-hoc.bo-phuong-trinh-kinematics-ap",
+        "physics.thpt.intl-dong-hoc.phuong-trinh-vecto-vi-tri",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-dang-dao-ham-dong-luong",
+        "physics.thpt.intl-dong-luc-hoc.luc-can-ti-le-van-toc",
+        "physics.thpt.intl-dong-luc-hoc.toc-do-gioi-han-luc-can-tuyen-tinh",
+        "physics.thpt.intl-dong-luc-hoc.luc-can-ti-le-binh-phuong-van-toc",
+        "physics.thpt.intl-dong-luc-hoc.may-atwood-rong-roc-co-quan-tinh",
+        "physics.thpt.intl-cong-nang-luong.cong-cua-luc-bien-thien-tich-phan",
+        "physics.thpt.intl-cong-nang-luong.luc-the-bang-gradient-the-nang",
+        "physics.thpt.intl-cong-nang-luong.cong-suat-dang-dao-ham",
+        "physics.thpt.intl-dong-luong.xung-luong-dang-tich-phan",
+        "physics.thpt.intl-dong-luong.khoi-tam-dang-tich-phan",
+        "physics.thpt.intl-dong-luong.dinh-luat-newton-cho-khoi-tam",
+        "physics.thpt.intl-dong-luong.he-khoi-luong-bien-thien-ten-lua",
+        "physics.thpt.intl-chuyen-dong-quay.momen-quan-tinh-tich-phan",
+        "physics.thpt.intl-chuyen-dong-quay.dinh-li-truc-song-song-ap",
+        "physics.thpt.intl-chuyen-dong-quay.momen-luc-tich-co-huong",
+        "physics.thpt.intl-chuyen-dong-quay.momen-dong-luong-vat-vua-quay-vua-tinh-tien",
+        "physics.thpt.intl-chuyen-dong-quay.bao-toan-momen-dong-luong-quoc-te",
+        "physics.thpt.intl-chuyen-dong-quay.dieu-kien-ma-sat-lan-khong-truot",
+        "physics.thpt.intl-chuyen-dong-quay.con-lac-vat-li",
+        "physics.thpt.intl-dao-dong.dinh-nghia-shm-ib",
+        "physics.thpt.intl-dao-dong.chu-ki-con-lac-ib",
+        "physics.thpt.intl-dao-dong.van-toc-theo-li-do-ib",
+        "physics.thpt.intl-hap-dan.the-nang-hap-dan-hai-vat-ib",
+        "physics.thpt.intl-hap-dan.co-nang-ve-tinh",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.intl-hap-dan.toc-do-thoat-ib",
+        "physics.thpt.intl-hap-dan.truong-hap-dan-ben-trong-qua-cau"
+      ],
+      "scoring": {
+        "description": "Section I chấm máy 42 câu, Section II chấm tay theo rubric 40 điểm (MR 10, TBR 12, LAB 10, QQT 8). Hai phần cân bằng 50% - 50% khi ghép thành điểm hợp thành. Rubric tự luận cho điểm theo từng ý; kết quả sai ở ý trước vẫn được chấm tiếp theo ý sau nếu lập luận nhất quán (điểm carry-through).",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hợp thành quy về 1-5 bằng standard setting, ngưỡng đổi theo năm. Với AP Physics 1 và 2, ngưỡng điểm 5 nhiều năm nằm quanh 70% điểm hợp thành, điểm 3 quanh 40-45%; hai môn Physics C có ngưỡng thấp hơn tương đối do đề khó và nhóm thí sinh chọn lọc hơn.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 85 phút cho 42 câu, trung bình 2 phút/câu. Quét một lượt đánh dấu câu dài (cụm câu có đồ thị, bảng số liệu) để làm sau, ưu tiên vét câu khái niệm ngắn trước.",
+        "Section II: bám sát thời gian gợi ý trong CED (MR 20-25, TBR 25-30, LAB 25-30, QQT 15-20 phút). TBR nặng 12 điểm nên tuyệt đối không bỏ dở vì hết giờ ở câu trước.",
+        "Chiến thuật ăn điểm thành phần: mỗi ý viết thành một khối riêng có nhãn (a), (b), (c) rõ ràng; đừng gộp lời giải thành một khối văn dài vì giám khảo chấm theo từng ô rubric.",
+        "Luôn dẫn bằng ký hiệu trước, thay số sau cùng. Nếu bí phần tính số, vẫn viết biểu thức ký hiệu để lấy điểm dẫn công thức.",
+        "Ghi đơn vị cho mọi kết quả số và giữ số chữ số có nghĩa hợp lí; câu 'Calculate' theo task verb đòi cả biểu thức, số đã thế và đơn vị.",
+        "Khi bị sai ở ý (b), cứ dùng kết quả sai đó làm tiếp ý (c) một cách nhất quán để hưởng điểm carry-through; ghi rõ 'dùng kết quả từ phần (b)'.",
+        "Bảng công thức được cấp nhưng phải thuộc BỐI CẢNH dùng: nhớ rõ mỗi công thức áp dụng cho hệ nào, điều kiện nào, thay vì tra mù.",
+        "Vì bài tự luận viết tay còn phần đề nằm trên màn hình, hãy chép lại dữ kiện then chốt ra giấy nháp ngay từ đầu để khỏi phải chuyển qua lại giữa màn hình và giấy.",
+        "Unit 2 và Unit 3 chiếm khoảng 40% trắc nghiệm - đầu tư trọng điểm, đặc biệt các bài có lực cản phụ thuộc vận tốc.",
+        "Luyện thành phản xạ ba thao tác giải tích: lấy đạo hàm hàm vị trí, lấy tích phân lực theo quãng đường (công) và theo thời gian (xung lượng), và lập tích phân mômen quán tính với dm = lambda dx hoặc dm = sigma dA.",
+        "Với bài lực cản, luôn viết phương trình vi phân trước rồi mới tách biến; rubric cho điểm riêng cho việc lập đúng phương trình vi phân dù không giải được.",
+        "Đề mới dài gấp đôi đề trước 2024-25 nên sức bền làm bài quan trọng hơn hẳn; luyện đề nguyên 3 giờ ít nhất ba lần trước kỳ thi."
+      ],
+      "common_traps": [
+        "Nhầm rằng vì có bảng công thức nên không cần thuộc gì - thực tế phần lớn điểm nằm ở việc CHỌN ĐÚNG công thức và giải thích, không phải ở việc chép công thức.",
+        "Vẽ giản đồ lực có mũi tên nhưng không ghi nhãn lực, hoặc vẽ thêm lực không tồn tại (lực hướng tâm, lực quán tính trong hệ quy chiếu quán tính) - mất trọn điểm ô rubric đó.",
+        "Đồ thị thiếu nhãn trục, thiếu đơn vị hoặc thiếu thang chia đều: dạng đường đúng vẫn không được điểm.",
+        "Tính độ dốc bằng cách lấy hai điểm dữ liệu thô thay vì hai điểm nằm trên đường khớp đã kẻ.",
+        "Ở câu 'justify', chỉ nhắc lại kết quả tính mà không gọi tên nguyên lí vật lí và không nối nhân quả.",
+        "Đưa ra hai lời giải mâu thuẫn nhau và để giám khảo tự chọn: rubric sẽ chấm theo phương án SAI. Gạch bỏ dứt khoát phần bỏ đi.",
+        "Nhầm khung đề: tài liệu trước 2024-25 vẫn theo cấu trúc cũ 35 câu trắc nghiệm/45 phút cộng 3 câu tự luận/45 phút (tổng 1 giờ 30). Physics C chưa bao giờ có dạng 'paragraph-length argument' của Physics 1 và 2; khung mới dùng bốn dạng MR - TBR - LAB - QQT.",
+        "Dùng công thức chuyển động biến đổi đều cho bài có gia tốc phụ thuộc thời gian hoặc vận tốc - phải tích phân.",
+        "Quên định lí trục song song khi trục quay không đi qua khối tâm.",
+        "Ở bài lăn không trượt, dùng độc lập cả bảo toàn năng lượng lẫn phương trình động lực học rồi cộng dồn kết quả, dẫn tới tính trùng.",
+        "Nhầm dấu khi dùng thế năng hấp dẫn dạng trừ GMm trên r, đặc biệt khi tính tốc độ thoát hoặc cơ năng quỹ đạo.",
+        "Bỏ qua mômen quán tính của ròng rọc trong bài máy Atwood mà khung mới đưa vào nhiều."
+      ],
+      "tags": [
+        "ap",
+        "vat-li",
+        "physics-c",
+        "co-hoc",
+        "giai-tich",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Physics C: Mechanics Course and Exam Description, Exam Overview: 42 câu/85 phút và 4 câu tự luận/95 phút; bốn dạng MR 10, TBR 12, LAB 10, QQT 8 điểm",
+        "College Board - AP Physics C: Mechanics Course at a Glance: U1 10-15%, U2 20-25%, U3 15-25%, U4 10-20%, U5 10-15%, U6 10-15%, U7 10-15%",
+        "College Board - AP Central, AP Physics C: Mechanics Exam: hybrid digital; số câu và thời gian đổi từ kỳ thi tháng 5/2027 (khung 2024-25 là 40 câu/80 phút và 4 câu/100 phút; khung trước 2024-25 là 35 câu/45 phút và 3 câu/45 phút)",
+        "College Board - AP Students, AP Exams Calculator Policy"
+      ]
+    },
+    {
+      "id": "exam.ap-physics-c-electricity-and-magnetism",
+      "name": "AP Physics C: Electricity and Magnetism",
+      "provider": "College Board",
+      "subject": "physics",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Physics C: Electricity and Magnetism là môn điện từ DÙNG GIẢI TÍCH, tương đương học phần vật lí đại cương II cho sinh viên kỹ thuật ở đại học Mỹ và là môn AP Vật lí khó nhất. Nội dung gồm 6 unit đánh số 8 đến 13: tĩnh điện và định luật Gauss, điện thế, vật dẫn và tụ điện, mạch điện (kể cả mạch RC), từ trường và điện từ, cảm ứng điện từ (kể cả mạch RL). Môn này đổi khung từ năm học 2024-25, đề dài gấp đôi so với trước (trước đó là 35 câu/45 phút cộng 3 câu tự luận/45 phút). Từ kỳ thi tháng 5/2027: 42 câu/85 phút và 4 câu tự luận/95 phút, tổng 3 giờ. Thang 1-5, thi hybrid digital.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "42",
+          "duration_minutes": 85,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ thi tháng 5/2027: 42 câu / 85 phút. Khung 2024-25 và 2025-26: 40 câu / 80 phút. Gồm câu rời và cụm câu dùng chung dữ kiện. Làm trên Bluebook, có bảng công thức và Desmos."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "4",
+          "duration_minutes": 95,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Từ kỳ 5/2027: 95 phút (khung 2024-25 và 2025-26 là 100 phút). Bốn câu theo đúng thứ tự MR (10 điểm) - TBR (12 điểm) - LAB (10 điểm) - QQT (8 điểm), tổng 40 điểm. Đề hiện trên Bluebook nhưng bài làm VIẾT TAY vào tập giấy."
+        }
+      ],
+      "topic_weights": {
+        "Unit 8: Electric Charges, Fields, and Gauss's Law": 20.0,
+        "Unit 9: Electric Potential": 15.0,
+        "Unit 10: Conductors and Capacitors": 13.0,
+        "Unit 11: Electric Circuits": 21.0,
+        "Unit 12: Magnetic Fields and Electromagnetism": 15.5,
+        "Unit 13: Electromagnetic Induction": 15.5
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm điện từ dùng giải tích",
+          "description": "42 câu thiên về nhận diện đối xứng để chọn mặt Gauss hoặc đường Ampère, đọc đồ thị nạp/phóng tụ và dòng qua cuộn cảm theo thời gian, xác định chiều dòng cảm ứng, và suy luận về trường trong lòng vật dẫn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một quả cầu đặc bán kính R tích điện đều theo thể tích với tổng điện tích Q. Tỉ số giữa độ lớn điện trường tại r = R/2 và tại r = 2R bằng bao nhiêu? (Bốn phương án số.)",
+          "approach": "Bên trong khối tích điện đều, điện trường tỉ lệ THUẬN với r; bên ngoài tỉ lệ nghịch với r bình phương. Lập tỉ số bằng hai công thức khác nhau chứ không dùng chung một công thức - đây là bẫy hay gặp nhất."
+        },
+        {
+          "name": "Mathematical Routines (MR) - 10 điểm, gợi ý 20-25 phút",
+          "description": "Dùng toán để phân tích một tình huống vật lí: dẫn biểu thức bằng ký hiệu rồi tính giá trị số. Yêu cầu tạo và dùng biểu diễn hỗ trợ (giản đồ lực, phác đồ thị). Riêng Physics 1 và 2 còn buộc nêu một tuyên bố/dự đoán và biện luận bằng chuỗi lập luận vật lí liên kết nhiều khái niệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một quả cầu cách điện bán kính R tích điện đều theo thể tích với tổng điện tích Q. (a) Vẽ mặt Gauss phù hợp cho điểm bên trong và cho điểm bên ngoài quả cầu. (b) Dùng định luật Gauss dẫn biểu thức điện trường tại r < R và tại r > R. (c) Tính độ lớn điện trường tại r = R/2 khi Q = 4,0 microcoulomb và R = 0,10 m. (d) Chứng tỏ hai biểu thức ở câu (b) cho cùng giá trị tại r = R.",
+          "approach": "Vẽ giản đồ trước khi viết phương trình. Dẫn bằng ký hiệu tới cùng rồi mới thay số một lần. Ghi rõ trục toạ độ và quy ước dấu. Phần biện luận phải chỉ đích danh biểu thức vừa dẫn và giải thích đại lượng nào bị/không bị triệt tiêu, không được trả lời chung chung."
+        },
+        {
+          "name": "Translation Between Representations (TBR) - 12 điểm, gợi ý 25-30 phút",
+          "description": "Câu nặng điểm nhất. Chuyển qua lại giữa bốn dạng biểu diễn: hình vẽ/giản đồ, phương trình, đồ thị và lời văn. Thí sinh phải vẽ biểu diễn trực quan, dẫn phương trình, vẽ đồ thị liên hệ hai đại lượng, rồi làm MỘT trong ba việc: giải thích vì sao các câu trước nhất quán (hoặc không), dự đoán cho tình huống khác, hoặc dự đoán biểu diễn thay đổi thế nào khi đổi tham số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Mạch gồm nguồn không đổi E, điện trở R và tụ điện C ban đầu chưa tích điện, đóng khoá ở t = 0. (a) Vẽ sơ đồ mạch và ghi chiều dòng điện. (b) Lập phương trình vòng rồi dẫn biểu thức dòng điện theo thời gian. (c) Phác trên cùng một hệ trục đồ thị điện tích trên tụ và dòng điện theo thời gian, ghi rõ giá trị ban đầu và tiệm cận. (d) Giải thích vì sao độ dốc đồ thị điện tích tại t = 0 phải bằng giá trị dòng điện ban đầu.",
+          "approach": "Đồ thị phải có nhãn trục, đơn vị và điểm chặn - thiếu nhãn là mất điểm dù dạng đường đúng. Khi được hỏi 'nhất quán hay không', phải chỉ ra đại lượng chung nối hai biểu diễn (ví dụ độ dốc v-t chính là gia tốc do hợp lực trong giản đồ gây ra) chứ không chỉ khẳng định là nhất quán."
+        },
+        {
+          "name": "Experimental Design and Analysis (LAB) - 10 điểm, gợi ý 25-30 phút",
+          "description": "Hai nửa rõ rệt. Nửa Thiết kế: mô tả một quy trình thí nghiệm khả thi trong phòng lab phổ thông, thay đổi MỘT biến và đo MỘT đặc trưng, kèm cách phân tích dữ liệu. Nửa Phân tích: được cho bộ số liệu của một câu hỏi tương tự nhưng không trùng, phải tuyến tính hoá, vẽ đồ thị và khai thác độ dốc hoặc giao điểm để rút ra đại lượng vật lí.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho một tụ điện chưa biết điện dung, các điện trở đã biết, nguồn một chiều, khoá và cảm biến đo hiệu điện thế theo thời gian. (a) Mô tả quy trình đo để xác định điện dung của tụ. (b) Nêu cách phân tích số liệu để rút ra điện dung. (c) Cho bảng hiệu điện thế trên tụ theo thời gian khi phóng điện; hãy chọn hai đại lượng cần vẽ để đồ thị là đường thẳng và nêu cách lấy điện dung từ độ dốc.",
+          "approach": "Quy trình phải nêu đủ: đo cái gì, bằng dụng cụ nào, lặp lại ra sao, giữ cố định cái gì. Ở phần tuyến tính hoá: viết phương trình lí thuyết, đưa về dạng y = mx + b rồi mới nói vẽ gì theo gì. Kẻ đường thẳng khớp bằng thước, lấy hai điểm TRÊN đường (không phải hai điểm dữ liệu) để tính độ dốc, kèm đơn vị."
+        },
+        {
+          "name": "Qualitative/Quantitative Translation (QQT) - 8 điểm, gợi ý 15-20 phút",
+          "description": "Câu kế thừa vai trò của 'paragraph-length argument' trong khung cũ (đến kỳ 5/2024). Nối bản chất hiện tượng, định luật chi phối và biểu thức toán học: nêu và biện luận một tuyên bố định tính, dẫn một phương trình liên quan, rồi giải thích sự nhất quán hoặc dự đoán khi đổi điều kiện. Từ khung 2024-25 KHÔNG còn yêu cầu viết đúng một đoạn văn liền mạch, nhưng chuỗi lập luận vẫn phải mạch lạc và có liên kết nhân quả.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một vòng dây dẫn kín rơi thẳng đứng qua vùng có từ trường đều nằm ngang, hướng vuông góc mặt phẳng vòng. (a) Mô tả chiều dòng cảm ứng khi vòng dây đi vào vùng từ trường và khi đi ra, giải thích bằng định luật Lenz. (b) Dẫn biểu thức suất điện động cảm ứng khi vòng dây đang đi vào với tốc độ v. (c) Kết quả câu (b) có ủng hộ nhận định ở câu (a) về chiều dòng và về lực cản chuyển động không? Giải thích.",
+          "approach": "Cấu trúc bốn nhịp: nêu tuyên bố - gọi tên nguyên lí (bảo toàn năng lượng, định luật II Newton...) - áp dụng vào tình huống cụ thể - kết luận. Không nhắc lại đề. Khi biểu thức không chứa một biến nào đó thì phải nói thẳng 'kết quả độc lập với biến đó, phù hợp với nhận định ở câu (a)'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng Table of Information: Equations được cấp cho cả hai phần thi, có trong Bluebook và bản in phát tại phòng thi",
+        "Hằng số và hệ số quy đổi: g, hằng số hấp dẫn G, 1 atm, và các hằng số riêng của từng môn",
+        "Bảng tiền tố SI (tera đến pico) và bảng ký hiệu đơn vị",
+        "Mục Geometry and Trigonometry: diện tích, thể tích các hình cơ bản, hệ thức lượng tam giác vuông",
+        "Mục Electricity and Magnetism viết dạng GIẢI TÍCH: định luật Gauss dạng tích phân mặt, điện thế dạng tích phân đường của điện trường, điện trường là gradient âm của điện thế",
+        "Định luật Biot - Savart và định luật Ampère dạng tích phân, từ thông và định luật Faraday dạng đạo hàm",
+        "Công thức tụ điện, mật độ năng lượng điện trường và từ trường, độ tự cảm, hằng số thời gian RC và RL",
+        "Hằng số điện, hằng số từ, điện tích electron, khối lượng electron và proton",
+        "Được phép dùng máy tính bốn phép tính, máy tính khoa học hoặc máy tính đồ thị ở CẢ hai phần; Bluebook có sẵn Desmos"
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.tinh-dien-gauss.dinh-luat-gauss-tich-phan",
+        "physics.thpt.tinh-dien-gauss.dien-truong-day-dai-vo-han",
+        "physics.thpt.tinh-dien-gauss.dien-truong-mat-phang-vo-han",
+        "physics.thpt.tinh-dien-gauss.dien-truong-vo-cau-dan",
+        "physics.thpt.tinh-dien-gauss.dien-truong-trong-qua-cau-dac",
+        "physics.thpt.tinh-dien-gauss.dien-the-tu-tich-phan-duong",
+        "physics.thpt.tinh-dien-gauss.dien-truong-la-gradient-am-dien-the",
+        "physics.thpt.tinh-dien-gauss.the-nang-tuong-tac-hai-dien-tich",
+        "physics.thpt.tinh-dien-gauss.dien-truong-sat-mat-vat-dan",
+        "physics.thpt.tu-dien.dien-dung-tu-phang",
+        "physics.thpt.tu-dien.nang-luong-tu-dien",
+        "physics.thpt.tu-dien.mat-do-nang-luong-dien-truong",
+        "physics.thpt.tu-dien-mach-rc.tu-dien-co-dien-moi-kappa",
+        "physics.thpt.tu-dien-mach-rc.phuong-trinh-vi-phan-mach-rc",
+        "physics.thpt.tu-dien-mach-rc.nap-tu-dien-tich",
+        "physics.thpt.tu-dien-mach-rc.phong-tu-qua-dien-tro",
+        "physics.thpt.tu-dien-mach-rc.hang-so-thoi-gian-rc",
+        "physics.thpt.tu-dien-mach-rc.tu-dien-trong-mach-mot-chieu-on-dinh",
+        "physics.thpt.mach-dien-quoc-te.dinh-luat-vong-kirchhoff",
+        "physics.thpt.mach-dien-quoc-te.dien-tro-suat-va-do-dan-dien",
+        "physics.thpt.tu-truong-quoc-te.dinh-luat-biot-savart",
+        "physics.thpt.tu-truong-quoc-te.dinh-luat-ampere",
+        "physics.thpt.tu-truong-quoc-te.tu-truong-tren-truc-vong-day",
+        "physics.thpt.tu-truong-quoc-te.tu-truong-ong-day-tu-dinh-luat-ampere",
+        "physics.thpt.tu-truong-quoc-te.luc-lorentz-tong-quat",
+        "physics.thpt.tu-truong-quoc-te.luc-tu-tren-day-dang-vecto",
+        "physics.thpt.cam-ung-rl.faraday-dang-giai-tich",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-lenz",
+        "physics.thpt.cam-ung-dien-tu.sdd-thanh-dan-chuyen-dong",
+        "physics.thpt.cam-ung-rl.mach-rl-dong-dien-tang"
+      ],
+      "scoring": {
+        "description": "Section I chấm máy 42 câu, Section II chấm tay theo rubric 40 điểm (MR 10, TBR 12, LAB 10, QQT 8). Hai phần cân bằng 50% - 50% khi ghép thành điểm hợp thành. Rubric tự luận cho điểm theo từng ý; kết quả sai ở ý trước vẫn được chấm tiếp theo ý sau nếu lập luận nhất quán (điểm carry-through).",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hợp thành quy về 1-5 bằng standard setting, ngưỡng đổi theo năm. Với AP Physics 1 và 2, ngưỡng điểm 5 nhiều năm nằm quanh 70% điểm hợp thành, điểm 3 quanh 40-45%; hai môn Physics C có ngưỡng thấp hơn tương đối do đề khó và nhóm thí sinh chọn lọc hơn.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 85 phút cho 42 câu, trung bình 2 phút/câu. Quét một lượt đánh dấu câu dài (cụm câu có đồ thị, bảng số liệu) để làm sau, ưu tiên vét câu khái niệm ngắn trước.",
+        "Section II: bám sát thời gian gợi ý trong CED (MR 20-25, TBR 25-30, LAB 25-30, QQT 15-20 phút). TBR nặng 12 điểm nên tuyệt đối không bỏ dở vì hết giờ ở câu trước.",
+        "Chiến thuật ăn điểm thành phần: mỗi ý viết thành một khối riêng có nhãn (a), (b), (c) rõ ràng; đừng gộp lời giải thành một khối văn dài vì giám khảo chấm theo từng ô rubric.",
+        "Luôn dẫn bằng ký hiệu trước, thay số sau cùng. Nếu bí phần tính số, vẫn viết biểu thức ký hiệu để lấy điểm dẫn công thức.",
+        "Ghi đơn vị cho mọi kết quả số và giữ số chữ số có nghĩa hợp lí; câu 'Calculate' theo task verb đòi cả biểu thức, số đã thế và đơn vị.",
+        "Khi bị sai ở ý (b), cứ dùng kết quả sai đó làm tiếp ý (c) một cách nhất quán để hưởng điểm carry-through; ghi rõ 'dùng kết quả từ phần (b)'.",
+        "Bảng công thức được cấp nhưng phải thuộc BỐI CẢNH dùng: nhớ rõ mỗi công thức áp dụng cho hệ nào, điều kiện nào, thay vì tra mù.",
+        "Vì bài tự luận viết tay còn phần đề nằm trên màn hình, hãy chép lại dữ kiện then chốt ra giấy nháp ngay từ đầu để khỏi phải chuyển qua lại giữa màn hình và giấy.",
+        "Unit 8 và Unit 11 cộng lại chiếm khoảng 40% trắc nghiệm - ưu tiên tuyệt đối cho định luật Gauss và mạch điện.",
+        "Xây phản xạ ba bước với mọi bài Gauss: nhận dạng đối xứng (cầu, trụ, phẳng) - chọn mặt Gauss - viết thông lượng bằng E nhân diện tích rồi cân bằng với điện tích bên trong chia hằng số điện.",
+        "Với mạch RC và RL, thuộc hai mốc tức thời: tại t = 0 tụ như dây nối (dòng cực đại) còn cuộn cảm như mạch hở (dòng bằng 0); tại t rất lớn thì ngược lại. Nhiều ý rubric chỉ hỏi hai mốc này.",
+        "Khi đề yêu cầu 'derive', bắt buộc xuất phát từ một định luật nền (Gauss, Ampère, Faraday, Kirchhoff) và ghi rõ tên định luật đó - rubric có ô riêng cho bước xuất phát.",
+        "Vẽ mũi tên chiều dòng cảm ứng kèm câu giải thích ngắn bằng định luật Lenz; vẽ mà không giải thích thường chỉ được nửa số điểm của ô đó."
+      ],
+      "common_traps": [
+        "Nhầm rằng vì có bảng công thức nên không cần thuộc gì - thực tế phần lớn điểm nằm ở việc CHỌN ĐÚNG công thức và giải thích, không phải ở việc chép công thức.",
+        "Vẽ vectơ điện trường hoặc lực từ mà không ghi nhãn và không chỉ rõ chiều; hoặc vẽ đường sức cắt nhau, đường sức xuất phát từ điện tích âm - rubric chấm hình vẽ theo từng ô nên hình sai mất trọn ô đó.",
+        "Đồ thị thiếu nhãn trục, thiếu đơn vị hoặc thiếu thang chia đều: dạng đường đúng vẫn không được điểm.",
+        "Tính độ dốc bằng cách lấy hai điểm dữ liệu thô thay vì hai điểm nằm trên đường khớp đã kẻ.",
+        "Ở câu 'justify', chỉ nhắc lại kết quả tính mà không gọi tên nguyên lí vật lí và không nối nhân quả.",
+        "Đưa ra hai lời giải mâu thuẫn nhau và để giám khảo tự chọn: rubric sẽ chấm theo phương án SAI. Gạch bỏ dứt khoát phần bỏ đi.",
+        "Nhầm khung đề: tài liệu trước 2024-25 vẫn theo cấu trúc cũ 35 câu trắc nghiệm/45 phút cộng 3 câu tự luận/45 phút. Khung mới dài gấp đôi và dùng bốn dạng MR - TBR - LAB - QQT, trong đó câu LAB thiết kế thí nghiệm là dạng hoàn toàn mới với môn này.",
+        "Áp dụng định luật Gauss cho hình dạng không đối xứng, hoặc coi điện trường là hằng số trên mặt Gauss khi nó không phải vậy.",
+        "Dùng công thức điện trường ngoài quả cầu cho điểm nằm bên trong quả cầu đặc tích điện đều.",
+        "Nhầm dấu trong định luật Faraday hoặc bỏ qua dấu trừ rồi kết luận sai chiều dòng cảm ứng.",
+        "Quên rằng bên trong vật dẫn cân bằng tĩnh điện thì điện trường bằng 0 và toàn khối là một khối đẳng thế.",
+        "Trong mạch RC, dùng hằng số thời gian với điện trở nhìn từ tụ sai (phải là điện trở tương đương Thevenin nhìn từ hai bản tụ).",
+        "Ở bài đưa điện môi vào tụ, không phân biệt trường hợp tụ CÔ LẬP (điện tích không đổi) với trường hợp tụ NỐI NGUỒN (hiệu điện thế không đổi)."
+      ],
+      "tags": [
+        "ap",
+        "vat-li",
+        "physics-c",
+        "dien-tu",
+        "giai-tich",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Physics C: Electricity and Magnetism Course and Exam Description, Exam Overview: 42 câu/85 phút và 4 câu tự luận/95 phút; MR 10, TBR 12, LAB 10, QQT 8 điểm",
+        "College Board - AP Physics C: E&M Course at a Glance: U8 15-25%, U9 10-20%, U10 10-15%, U11 15-25%, U12 10-20%, U13 10-20%",
+        "College Board - AP Central, AP Physics C: Electricity and Magnetism Exam: hybrid digital; số câu và thời gian đổi từ kỳ thi tháng 5/2027 (khung trước 2024-25 là 35 câu/45 phút và 3 câu/45 phút)",
+        "College Board - AP Students, AP Exams Calculator Policy"
+      ]
+    },
+    {
+      "id": "exam.ap-chemistry",
+      "name": "AP Chemistry",
+      "provider": "College Board",
+      "subject": "chemistry",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Chemistry tương đương hai học phần hoá đại cương năm nhất ở đại học Mỹ, kèm phần thực hành. Nội dung gồm 9 unit từ cấu tạo nguyên tử, liên kết, tính chất chất và hỗn hợp, phản ứng hoá học, động hoá học, nhiệt hoá học, cân bằng, acid - base, tới nhiệt động lực học và điện hoá. Bài thi dài 3 giờ 15 phút, thang 1-5; điểm 4-5 thường được cấp 6-8 tín chỉ hoá đại cương. Khung chương trình ổn định (bảng công thức bản hiệu lực từ năm 2025), nhưng CHẾ ĐỘ THI đã đổi: từ 2025 đề là hybrid digital - trắc nghiệm làm trên Bluebook còn bài tự luận vẫn viết tay vào tập giấy.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "60",
+          "duration_minutes": 90,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Gồm câu rời và cụm câu dùng chung dữ kiện (bảng số liệu, đồ thị, mô hình hạt). Được dùng máy tính khoa học hoặc đồ thị ở CẢ HAI phần - quy định này áp dụng từ kỳ thi năm 2023 trở đi (trước 2023 Section I cấm máy tính). Bảng tuần hoàn và bảng công thức vừa được in gửi về trường vừa có sẵn trong Bluebook; Bluebook còn có máy tính Desmos tích hợp."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "7",
+          "duration_minutes": 105,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "3 câu dài 10 điểm và 4 câu ngắn 4 điểm, tổng 46 điểm. Đề hiển thị trên Bluebook, thí sinh VIẾT TAY bài làm vào tập giấy được gửi đi chấm."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Atomic Structure and Properties": 9.0,
+        "Unit 2: Compound Structure and Properties": 9.0,
+        "Unit 3: Properties of Substances and Mixtures": 22.0,
+        "Unit 4: Chemical Reactions": 9.0,
+        "Unit 5: Kinetics": 9.0,
+        "Unit 6: Thermochemistry": 9.0,
+        "Unit 7: Principles of Equilibrium": 9.0,
+        "Unit 8: Acids and Bases": 15.0,
+        "Unit 9: Thermodynamics and Electrochemistry": 9.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm cụm câu theo dữ kiện thí nghiệm",
+          "description": "Cho bảng số liệu chuẩn độ, phổ quang electron (PES), phổ khối, đường cong động học hoặc mô hình hạt, rồi hỏi 3-5 câu liên tiếp. Chiếm phần lớn Section I và là nơi phân loại thí sinh.",
+          "example_prompt": "Đề mô phỏng tự soạn: Phổ PES của một nguyên tố có bốn đỉnh với năng lượng liên kết lần lượt rất lớn, trung bình, trung bình thấp và thấp, với chiều cao đỉnh theo tỉ lệ 2 : 2 : 6 : 1. Nguyên tố đó nằm ở nhóm nào của bảng tuần hoàn? (Bốn phương án.)",
+          "approach": "Đọc PES theo hai trục: hoành độ là năng lượng liên kết (càng lớn càng gần hạt nhân), tung độ tỉ lệ SỐ ELECTRON trong phân lớp đó. Cộng chiều cao các đỉnh ra tổng số electron rồi suy cấu hình. Với mọi câu xu hướng tuần hoàn, luôn quy về điện tích hạt nhân hiệu dụng và khoảng cách tới hạt nhân."
+        },
+        {
+          "name": "Câu tự luận dài dạng cân bằng và acid - base (10 điểm)",
+          "description": "Bài toán nhiều ý: lập bảng ICE, tính hằng số cân bằng, tính pH, phân tích đường cong chuẩn độ, chọn hệ đệm, giải thích chiều dịch chuyển cân bằng theo nguyên lí Le Chatelier.",
+          "example_prompt": "Đề mô phỏng tự soạn: Chuẩn độ 25,0 mL dung dịch acid yếu HA 0,100 M bằng NaOH 0,100 M. (a) Viết phương trình ion thu gọn. (b) Tính thể tích NaOH tại điểm tương đương. (c) Biết pH tại điểm nửa tương đương bằng 4,76; xác định Ka của HA và giải thích cách suy ra. (d) Tính pH sau khi thêm 30,0 mL NaOH. (e) Nếu thay HA bằng acid mạnh cùng nồng độ thì đường cong chuẩn độ khác đi ở những điểm nào?",
+          "approach": "Ba mốc phải nhớ: trước điểm tương đương là hệ đệm (dùng Henderson - Hasselbalch), tại nửa điểm tương đương pH bằng pKa, sau điểm tương đương thì OH dư quyết định pH. Luôn viết bảng ICE theo SỐ MOL khi có pha trộn thể tích, rồi mới đổi sang nồng độ với thể tích tổng."
+        },
+        {
+          "name": "Câu tự luận dài dạng động hoá học và cơ chế (10 điểm)",
+          "description": "Cho số liệu tốc độ đầu hoặc đồ thị nồng độ theo thời gian; hỏi bậc riêng phần, hằng số tốc độ kèm đơn vị, thời gian bán huỷ, năng lượng hoạt hoá qua đồ thị Arrhenius, và đánh giá cơ chế đề xuất.",
+          "example_prompt": "Đề mô phỏng tự soạn: Phản ứng X + 2Y tạo Z có số liệu tốc độ đầu trong ba thí nghiệm. (a) Xác định bậc riêng phần theo X và theo Y, giải thích cách suy ra. (b) Viết biểu thức tốc độ và tính k kèm đơn vị. (c) Một cơ chế hai bước được đề xuất; cơ chế này có phù hợp với biểu thức tốc độ thực nghiệm không? Giải thích. (d) Chỉ ra chất trung gian và chất xúc tác trong cơ chế.",
+          "approach": "Xác định bậc bằng cách so sánh CẶP thí nghiệm chỉ đổi một nồng độ. Đánh giá cơ chế theo hai tiêu chí: tổng các bước phải ra phương trình chung, và biểu thức tốc độ của bước chậm (sau khi khử chất trung gian) phải trùng biểu thức thực nghiệm. Đơn vị của k phụ thuộc bậc tổng."
+        },
+        {
+          "name": "Câu tự luận dài dạng nhiệt động và điện hoá (10 điểm)",
+          "description": "Kết hợp enthalpy, entropy, năng lượng Gibbs và pin điện hoá: tính biến thiên các hàm nhiệt động, biện luận tính tự diễn biến theo nhiệt độ, vẽ sơ đồ pin, tính sức điện động và liên hệ với hằng số cân bằng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho một pin gồm điện cực kẽm nhúng trong dung dịch muối kẽm và điện cực đồng nhúng trong dung dịch muối đồng, nối bằng cầu muối. (a) Viết hai nửa phản ứng và phản ứng tổng. (b) Vẽ sơ đồ pin, chỉ rõ anode, cathode và chiều dòng electron. (c) Biết sức điện động chuẩn, tính năng lượng Gibbs chuẩn của phản ứng. (d) Nếu tăng nồng độ ion đồng thì sức điện động thay đổi thế nào? Giải thích bằng nguyên lí Le Chatelier.",
+          "approach": "Thuộc lòng quy ước: oxi hoá ở anode, khử ở cathode, electron chạy từ anode sang cathode qua dây dẫn. Khi đề hỏi biện luận theo nhiệt độ, lập bảng dấu enthalpy - entropy và xét dấu Gibbs, đừng chỉ tính một giá trị số."
+        },
+        {
+          "name": "Câu tự luận ngắn 4 điểm",
+          "description": "Bốn câu ngắn kiểm tra một kỹ năng đơn lẻ: giải thích xu hướng tuần hoàn, vẽ công thức Lewis và suy hình học phân tử, giải thích chênh lệch nhiệt độ sôi theo lực liên phân tử, hoặc phân tích một thao tác thí nghiệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Giải thích vì sao nhiệt độ sôi của propan-1-ol cao hơn hẳn nhiệt độ sôi của butan dù hai chất có phân tử khối gần nhau. Nêu rõ loại lực liên phân tử liên quan.",
+          "approach": "Câu ngắn chấm rất chặt về mức độ CỤ THỂ: phải gọi đúng tên lực (liên kết hydrogen, lực lưỡng cực - lưỡng cực, lực London), chỉ rõ nguyên tử/nhóm nào tạo ra lực đó, rồi mới nối sang hệ quả về năng lượng cần cung cấp. Trả lời 'vì có liên kết mạnh hơn' được 0 điểm."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng tuần hoàn các nguyên tố (AP Chemistry Periodic Table) có ở cả hai phần thi",
+        "Bảng AP Chemistry Equations and Constants (bản hiệu lực từ năm 2025), chia 5 mục",
+        "Mục ATOMIC STRUCTURE: năng lượng photon, bước sóng, tần số, hằng số Planck",
+        "Mục GASES, LIQUIDS, AND SOLUTIONS: phương trình khí lí tưởng, áp suất riêng phần, động năng trung bình, tốc độ căn quân phương, nồng độ mol, định luật Beer - Lambert",
+        "Mục KINETICS: ba phương trình động học tích phân bậc 0, 1, 2 và phương trình Arrhenius dạng logarit",
+        "Mục EQUILIBRIUM: biểu thức Ka, Kb, Kw, Kp, Kc, Ksp, pH, pOH, phương trình Henderson - Hasselbalch",
+        "Mục THERMODYNAMICS/ELECTROCHEMISTRY: nhiệt lượng q = mc(delta T), biến thiên enthalpy - entropy - Gibbs chuẩn, liên hệ Gibbs với sức điện động và với hằng số cân bằng, định luật Faraday về điện phân",
+        "KHÔNG cấp bảng thế điện cực chuẩn - nếu đề cần thì in ngay trong câu hỏi",
+        "KHÔNG cấp bảng độ âm điện, bảng Ka/Kb, bảng nhiệt tạo thành - các giá trị này luôn cho trong đề"
+      ],
+      "formulas_must_memorize": [
+        "chemistry.thpt.cau-tao-quoc-te.dien-tich-hat-nhan-hieu-dung",
+        "chemistry.thpt.cau-tao-quoc-te.pho-quang-electron-pes",
+        "chemistry.thpt.cau-tao-quoc-te.nang-luong-ion-hoa-lien-tiep",
+        "chemistry.thpt.cau-tao-quoc-te.ky-hieu-axe-vsepr",
+        "chemistry.thpt.cau-tao-quoc-te.luc-lien-phan-tu",
+        "chemistry.thpt.cau-tao-quoc-te.cong-huong-bac-lien-ket-trung-binh",
+        "chemistry.thpt.cau-tao-quoc-te.luc-coulomb-tuong-tac-tinh-dien",
+        "chemistry.thpt.cau-tao-quoc-te.phan-cuc-phan-tu-tong-vecto",
+        "chemistry.thpt.khi-li-tuong.dinh-luat-graham",
+        "chemistry.thpt.dinh-luong-quoc-te.he-thuc-chuan-do",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-khong",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-mot",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-hai",
+        "chemistry.thpt.dong-hoc-tich-phan.do-thi-tuyen-tinh-xac-dinh-bac",
+        "chemistry.thpt.dong-hoc-tich-phan.buoc-quyet-dinh-toc-do",
+        "chemistry.thpt.dong-hoc-tich-phan.arrhenius-dang-logarit",
+        "chemistry.thpt.dong-hoc-tich-phan.don-vi-hang-so-toc-do",
+        "chemistry.thpt.dong-hoc-tich-phan.chat-trung-gian-va-xuc-tac",
+        "chemistry.thpt.can-bang-quoc-te.bang-ice",
+        "chemistry.thpt.can-bang-quoc-te.xap-xi-bo-qua-x",
+        "chemistry.thpt.can-bang-quoc-te.hieu-ung-ion-chung",
+        "chemistry.thpt.can-bang-quoc-te.anh-huong-nhiet-do-len-k",
+        "chemistry.thpt.axit-bazo-quoc-te.ph-nua-diem-tuong-duong",
+        "chemistry.thpt.axit-bazo-quoc-te.bon-moc-ph-chuan-do-axit-yeu",
+        "chemistry.thpt.axit-bazo-quoc-te.phan-tram-dien-li",
+        "chemistry.thpt.axit-bazo-quoc-te.khoang-dem-hieu-qua",
+        "chemistry.thpt.nhiet-dong-thpt.bang-dau-tu-dien-bien",
+        "chemistry.thpt.nhiet-dong-thpt.gibbs-va-hang-so-can-bang",
+        "chemistry.thpt.dien-hoa-quoc-te.so-do-pin-iupac",
+        "chemistry.thpt.dien-hoa-quoc-te.dien-cuc-hidro-chuan"
+      ],
+      "scoring": {
+        "description": "Section I 60 câu chấm máy (50%). Section II 46 điểm: 3 câu dài 10 điểm và 4 câu ngắn 4 điểm (50%). Rubric chấm theo từng ý, mỗi ý thường 1 điểm; các ý 'giải thích' đòi lập luận cụ thể mới được điểm. Có điểm carry-through: kết quả sai ở ý trước dùng nhất quán cho ý sau vẫn được chấm.",
+        "scale": "1-5",
+        "raw_to_scaled": "Điểm hợp thành từ hai phần cân bằng 50-50 rồi quy về 1-5 bằng standard setting. Nhiều năm gần đây ngưỡng điểm 5 rơi vào khoảng 68-72% điểm hợp thành, điểm 3 khoảng 43-48%. Đây là môn có ngưỡng điểm 5 khá thấp so với cảm nhận về độ khó đề.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 90 phút / 60 câu, đúng 1,5 phút mỗi câu. Không câu nào đáng quá 3 phút - đánh dấu và bỏ qua ngay khi bí.",
+        "Section II: 105 phút / 7 câu. Phân bổ khuyến nghị: 20 phút mỗi câu dài (60 phút), 9-10 phút mỗi câu ngắn (khoảng 38 phút), chừa 5-7 phút rà lại đơn vị và chữ số có nghĩa.",
+        "Làm bốn câu ngắn TRƯỚC nếu bạn hay bị cháy giờ: 16 điểm dễ ăn hơn và tốn ít thời gian hơn tính trên mỗi điểm.",
+        "Ăn điểm thành phần: mỗi ý đánh số rõ (a), (b)... và viết công thức chữ trước, thay số sau, kết quả kèm đơn vị. Rubric thường có ô riêng cho 'thiết lập đúng' và ô riêng cho 'ra kết quả đúng'.",
+        "Với mọi câu 'justify' hoặc 'explain': trả lời theo mẫu ba nhịp - hiện tượng ở mức hạt hoặc mức năng lượng, nguyên lí chi phối, kết luận về đại lượng đề hỏi. Trả lời một câu chung chung gần như luôn 0 điểm.",
+        "Bám đúng số chữ số có nghĩa của dữ kiện; AP Chemistry trừ điểm chữ số có nghĩa ở một số ý tính toán.",
+        "Đề nằm trên màn hình còn bài làm trên giấy: chép ngay các số liệu và hằng số của câu ra giấy trước khi giải, tránh phải nhìn qua lại làm mất nhịp.",
+        "Tra bảng công thức trong Bluebook mất thời gian hơn tra bản in - hãy dùng bản in được phát tại phòng thi cho các biểu thức hay dùng."
+      ],
+      "common_traps": [
+        "Trả lời câu giải thích ở mức mô tả ('vì liên kết mạnh hơn', 'vì phản ứng nhanh hơn') mà không nêu cơ chế ở mức hạt và không gọi tên loại lực hoặc nguyên lí.",
+        "Nhầm cường độ lực liên phân tử với độ bền liên kết cộng hoá trị khi giải thích nhiệt độ sôi và nhiệt độ nóng chảy.",
+        "Dùng phép xấp xỉ bỏ qua x trong bảng ICE mà không kiểm tra quy tắc 5%, dẫn tới sai đáng kể khi Ka lớn hoặc nồng độ nhỏ.",
+        "Suy bậc phản ứng từ hệ số tỉ lượng trong phương trình hoá học thay vì từ số liệu thực nghiệm.",
+        "Quên đơn vị của hằng số tốc độ, hoặc để đơn vị không khớp với bậc tổng của phản ứng.",
+        "Lẫn anode với cathode: trong pin Galvani anode mang dấu âm, trong bình điện phân anode mang dấu dương.",
+        "Kết luận phản ứng tự diễn biến chỉ dựa vào dấu của enthalpy mà bỏ qua số hạng nhiệt độ nhân entropy.",
+        "Vẽ công thức Lewis thiếu cặp electron chưa liên kết rồi suy sai hình học phân tử và tính phân cực.",
+        "Quên đổi thể tích tổng sau khi trộn dung dịch khi tính nồng độ trong bài chuẩn độ."
+      ],
+      "tags": [
+        "ap",
+        "hoa-hoc",
+        "chemistry",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Central, AP Chemistry Exam: Section I 60 câu/90 phút (50%), Section II 7 câu/105 phút (50%) gồm 3 câu 10 điểm và 4 câu 4 điểm; hybrid digital",
+        "College Board - AP Chemistry Course at a Glance: U1 7-9%, U2 7-9%, U3 18-22%, U4 7-9%, U5 7-9%, U6 7-9%, U7 7-9%, U8 11-15%, U9 7-9%",
+        "College Board - AP Central, AP Chemistry Exam: tài liệu tham chiếu (bảng tuần hoàn, bảng công thức và hằng số) vừa in gửi về trường vừa có trong Bluebook",
+        "College Board - AP Students, AP Exams Calculator Policy: máy tính khoa học hoặc đồ thị được dùng ở CẢ Section I và Section II"
+      ]
+    },
+    {
+      "id": "exam.ap-biology",
+      "name": "AP Biology",
+      "provider": "College Board",
+      "subject": "biology",
+      "curriculum": [
+        "ap"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Advanced Placement Biology tương đương học phần sinh học đại cương năm nhất cho sinh viên ngành sinh học ở đại học Mỹ, kèm phần thực hành. Nội dung gồm 8 unit xoay quanh bốn ý tưởng lớn: Tiến hoá, Năng lượng, Lưu trữ và truyền thông tin, Tương tác giữa các hệ thống. Điểm đặc trưng của môn này là phần tự luận nặng về THIẾT KẾ VÀ DIỄN GIẢI THÍ NGHIỆM: hai câu dài 9 điểm đều xoay quanh việc phân tích kết quả thực nghiệm, một trong hai câu bắt buộc vẽ đồ thị. Bài thi dài 3 giờ, thang 1-5. Từ 2025 đề là hybrid digital: trắc nghiệm trên Bluebook, tự luận viết tay vào tập giấy.",
+      "sections": [
+        {
+          "name": "Section I - Trắc nghiệm",
+          "question_count": "60",
+          "duration_minutes": 90,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Gồm câu rời và các cụm 4-5 câu dùng chung một dữ kiện (mô tả thí nghiệm, đồ thị, bảng số liệu, sơ đồ phả hệ). Được dùng máy tính bốn phép tính, khoa học hoặc đồ thị ở cả hai phần; mang tối đa 2 máy cầm tay, Bluebook cũng có máy tính tích hợp. Bảng AP Biology Equations and Formulas vừa có bản in vừa có trong Bluebook."
+        },
+        {
+          "name": "Section II - Tự luận",
+          "question_count": "6",
+          "duration_minutes": 90,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "2 câu dài 9 điểm (câu 1: diễn giải và đánh giá kết quả thí nghiệm; câu 2: diễn giải và đánh giá kết quả thí nghiệm CÓ VẼ ĐỒ THỊ) và 4 câu ngắn 4 điểm (câu 3: điều tra khoa học; câu 4: phân tích khái niệm; câu 5: phân tích mô hình hoặc biểu diễn trực quan; câu 6: phân tích dữ liệu). Tổng 34 điểm. Đề hiển thị trên Bluebook, bài làm viết tay."
+        }
+      ],
+      "topic_weights": {
+        "Unit 1: Chemistry of Life": 9.5,
+        "Unit 2: Cells": 11.5,
+        "Unit 3: Cellular Energetics": 14.0,
+        "Unit 4: Cell Communication and Cell Cycle": 12.5,
+        "Unit 5: Heredity": 9.5,
+        "Unit 6: Gene Expression and Regulation": 14.0,
+        "Unit 7: Natural Selection": 16.5,
+        "Unit 8: Ecology": 12.5
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm cụm câu theo dữ kiện thí nghiệm",
+          "description": "Nhóm 4-5 câu dựa trên cùng một mô tả thí nghiệm, đồ thị có thanh sai số, bảng số liệu hoặc sơ đồ phả hệ. Kiểm tra kỹ năng đọc dữ liệu và suy luận hơn là ghi nhớ thuật ngữ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Đồ thị cột thể hiện tốc độ hô hấp của hạt đậu nảy mầm ở bốn mức nhiệt độ, mỗi cột kèm thanh sai số bằng hai lần sai số chuẩn. Kết luận nào sau đây được số liệu ủng hộ? (Bốn phương án, hai trong số đó vượt quá điều dữ liệu cho phép kết luận.)",
+          "approach": "Quy tắc đọc thanh sai số: nếu hai thanh CHỒNG LẤN thì không kết luận được có khác biệt có ý nghĩa; nếu KHÔNG chồng lấn thì có bằng chứng khác biệt. Loại ngay các phương án khẳng định nhân quả khi thí nghiệm chỉ mang tính tương quan."
+        },
+        {
+          "name": "Free Response câu 1 - Diễn giải và đánh giá kết quả thí nghiệm (9 điểm)",
+          "description": "Cho một tình huống thí nghiệm và bộ dữ liệu; yêu cầu mô tả quy trình, nêu giả thuyết, giải thích cơ chế sinh học, dự đoán kết quả khi đổi điều kiện và biện luận bằng dữ liệu.",
+          "example_prompt": "Đề mô phỏng tự soạn: Các nhà nghiên cứu nuôi tế bào nấm men trong môi trường có và không có chất ức chế chuỗi truyền electron, đo lượng ATP tạo ra. (a) Nêu giả thuyết cho thí nghiệm. (b) Xác định biến độc lập, biến phụ thuộc và một biến cần giữ cố định. (c) Giải thích cơ chế khiến chất ức chế làm giảm ATP. (d) Dự đoán lượng ATP nếu bổ sung glucose dư trong điều kiện kị khí và giải thích.",
+          "approach": "Bám bộ động từ nhiệm vụ của AP Bio. 'Describe' chỉ cần nêu đặc điểm; 'Explain' bắt buộc nêu CƠ CHẾ (vì sao dẫn tới, qua bước nào); 'Justify' bắt buộc dẫn bằng chứng cụ thể từ dữ liệu. Mỗi ý viết 2-4 câu, không viết đoạn dài lan man - rubric chỉ tìm các yếu tố cụ thể."
+        },
+        {
+          "name": "Free Response câu 2 - Diễn giải kết quả thí nghiệm CÓ VẼ ĐỒ THỊ (9 điểm)",
+          "description": "Giống câu 1 nhưng bắt buộc thí sinh tự vẽ đồ thị từ bảng số liệu cho sẵn: chọn loại đồ thị, chọn trục, chia thang, ghi nhãn và đơn vị, vẽ thanh sai số nếu đề cho, rồi phân tích.",
+          "example_prompt": "Đề mô phỏng tự soạn: Bảng cho tốc độ thoát hơi nước của cây (mL/giờ) ở năm mức độ ẩm không khí, kèm sai số chuẩn của mỗi giá trị. (a) Vẽ đồ thị thích hợp biểu diễn số liệu, có thanh sai số. (b) Mô tả xu hướng. (c) Giải thích cơ chế sinh lí đứng sau xu hướng đó. (d) Dựa vào thanh sai số, hãy cho biết chênh lệch giữa mức độ ẩm 40% và 60% có ý nghĩa hay không.",
+          "approach": "Checklist vẽ đồ thị của AP Bio: biến độc lập trên trục hoành, biến phụ thuộc trên trục tung; nhãn trục kèm ĐƠN VỊ; thang chia đều và tận dụng hết khổ giấy; chọn cột cho biến rời rạc và đường cho biến liên tục; vẽ thanh sai số nếu có; đặt tiêu đề. Mất một mục trong checklist là mất một điểm rubric."
+        },
+        {
+          "name": "Free Response câu 3 - Điều tra khoa học (4 điểm)",
+          "description": "Câu ngắn kiểm tra riêng kỹ năng thiết kế: xác định biến, nêu nhóm đối chứng, đề xuất phép đo, hoặc chỉ ra khiếm khuyết trong một thiết kế cho sẵn và cách khắc phục.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một học sinh muốn kiểm tra ảnh hưởng của nồng độ muối tới sự nảy mầm của hạt. (a) Mô tả nhóm đối chứng phù hợp. (b) Nêu một biến cần giữ cố định và giải thích vì sao. (c) Đề xuất cách đo biến phụ thuộc một cách định lượng.",
+          "approach": "Nhóm đối chứng phải giống hệt nhóm thí nghiệm ở mọi thứ TRỪ biến độc lập - viết rõ điều này. Biến phụ thuộc phải đo được bằng con số (phần trăm hạt nảy mầm, chiều dài rễ tính bằng mm), không mô tả định tính."
+        },
+        {
+          "name": "Free Response câu 4 và 5 - Phân tích khái niệm và phân tích mô hình (4 điểm mỗi câu)",
+          "description": "Câu 4 yêu cầu giải thích một quá trình sinh học và dự đoán hệ quả khi có nhiễu loạn. Câu 5 cho một mô hình hoặc sơ đồ (con đường truyền tín hiệu, sơ đồ operon, chu trình vật chất) và yêu cầu diễn giải, dự đoán khi một thành phần bị thay đổi.",
+          "example_prompt": "Đề mô phỏng tự soạn: Sơ đồ mô tả một operon cảm ứng ở vi khuẩn. (a) Mô tả điều gì xảy ra với biểu hiện gene khi có mặt chất cảm ứng. (b) Dự đoán biểu hiện gene nếu gene mã hoá protein ức chế bị đột biến mất chức năng, và giải thích.",
+          "approach": "Câu 'predict' luôn phải có hai phần: dự đoán CỤ THỂ (tăng, giảm, không đổi) và lí do theo cơ chế. Trả lời có dự đoán mà thiếu lí do chỉ được nửa điểm. Khi đọc sơ đồ, xác định trước đâu là đầu vào, đâu là đầu ra, đâu là bước bị tác động."
+        },
+        {
+          "name": "Free Response câu 6 - Phân tích dữ liệu (4 điểm)",
+          "description": "Cho bảng hoặc đồ thị, yêu cầu tính toán (chi bình phương, Hardy - Weinberg, sai số chuẩn, tốc độ biến thiên, chỉ số đa dạng), rồi diễn giải kết quả tính được.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một phép lai cho đời con gồm 152 cá thể thân xám và 38 cá thể thân đen, trong khi tỉ lệ dự đoán là 3 : 1. (a) Tính số cá thể kỳ vọng mỗi loại. (b) Tính giá trị chi bình phương. (c) Với 1 bậc tự do và giá trị tới hạn 3,84, hãy kết luận và giải thích.",
+          "approach": "Trình bày ba dòng: công thức chữ, số đã thế, kết quả kèm đơn vị (nếu có). Kết luận chi bình phương phải nêu rõ so sánh với giá trị tới hạn VÀ diễn đạt lại theo bối cảnh sinh học ('không đủ bằng chứng bác bỏ giả thuyết rằng tỉ lệ phân li tuân theo 3 : 1')."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng AP Biology Equations and Formulas được cấp cho cả hai phần thi, có bản in và bản trong Bluebook",
+        "Mục Statistical Analysis and Probability: trung bình, độ lệch chuẩn mẫu, sai số chuẩn của trung bình, thống kê chi bình phương, bảng giá trị tới hạn chi bình phương, quy tắc cộng và nhân xác suất, định nghĩa mốt - trung vị - khoảng biến thiên",
+        "Mục Rate and Growth: tốc độ biến thiên, tăng trưởng quần thể theo sinh - tử, tăng trưởng mũ với r_max, tăng trưởng logistic với sức chứa K",
+        "Mục Water Potential: thế nước bằng thế áp suất cộng thế chất tan, công thức thế chất tan dạng trừ iCRT",
+        "Hai phương trình Hardy - Weinberg và chỉ số đa dạng Simpson",
+        "Bảng diện tích bề mặt và thể tích các khối cơ bản, bảng tiền tố đơn vị SI, biểu thức năng lượng tự do Gibbs và quy tắc dấu, công thức pH",
+        "Được dùng máy tính bốn phép tính, khoa học hoặc đồ thị ở cả hai phần"
+      ],
+      "formulas_must_memorize": [
+        "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-kieu-hinh-lan",
+        "biology.thpt.di-truyen-intl.tan-so-nguoi-mang-gen-2pq",
+        "biology.thpt.di-truyen-intl.kiem-dinh-chi-binh-phuong-ti-le-mendel",
+        "biology.thpt.di-truyen-intl.so-ca-the-ki-vong-theo-ti-le",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-tong-quat",
+        "biology.thpt.quy-luat-di-truyen.so-loai-giao-tu-n-cap-di-hop",
+        "biology.thpt.quy-luat-di-truyen.di-truyen-lien-ket-gioi-tinh-tren-x",
+        "biology.thpt.quy-luat-di-truyen.khoang-cach-ban-do-di-truyen",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-3-3-1",
+        "biology.thpt.quy-luat-di-truyen.xac-suat-nhi-thuc-newton",
+        "biology.thpt.phan-bao.so-loai-giao-tu-toi-da",
+        "biology.thpt.phan-bao.so-cach-sap-xep-nst-ki-giua-i",
+        "biology.thpt.te-bao.dieu-kien-moi-truong-tham-thau",
+        "biology.thpt.te-bao.ti-le-dien-tich-tren-the-tich",
+        "biology.thpt.van-chuyen-chuyen-hoa.km-tai-nua-vmax",
+        "biology.thpt.van-chuyen-chuyen-hoa.phan-biet-uc-che-canh-tranh",
+        "biology.thpt.van-chuyen-chuyen-hoa.he-so-nhiet-q10-quoc-te",
+        "biology.thpt.van-chuyen-chuyen-hoa.duong-cong-anh-sang-yeu-to-gioi-han",
+        "biology.thpt.van-chuyen-chuyen-hoa.hieu-suat-chuyen-hoa-nang-luong-ho-hap",
+        "biology.thpt.van-chuyen-chuyen-hoa.pha-loang-dung-dich-civi",
+        "biology.thpt.dinh-luong-te-bao.chi-so-phan-bao",
+        "biology.thpt.thong-ke-sinh-hoc-intl.thanh-sai-so-va-cach-doc",
+        "biology.thpt.thong-ke-sinh-hoc-intl.khoang-tin-cay-95-hai-sai-so-chuan",
+        "biology.thpt.thong-ke-sinh-hoc-intl.gia-thuyet-khong-va-doi",
+        "biology.thpt.thong-ke-sinh-hoc-intl.muc-y-nghia-p-0-05",
+        "biology.thpt.sinh-thai-intl.hieu-suat-tieu-thu-dong-hoa-san-xuat",
+        "biology.thpt.sinh-thai-intl.duong-cong-sinh-ton",
+        "biology.thpt.sinh-thai.phuong-phap-bat-tha",
+        "biology.thpt.tien-hoa.do-thich-nghi-va-he-so-chon-loc"
+      ],
+      "scoring": {
+        "description": "Section I 60 câu chấm máy (50%). Section II 34 điểm: hai câu dài 9 điểm và bốn câu ngắn 4 điểm (50%). Rubric analytic, mỗi ý gần như 1 điểm, cho điểm khi câu trả lời chứa đủ yếu tố mà rubric yêu cầu; không trừ điểm khi viết thêm ý sai TRỪ KHI ý sai mâu thuẫn trực tiếp với ý đúng.",
+        "scale": "1-5",
+        "raw_to_scaled": "Hai phần cân bằng 50-50, quy về 1-5 bằng standard setting. Nhiều năm ngưỡng điểm 5 nằm quanh 72-75% điểm hợp thành và điểm 3 quanh 47-50%, cao hơn AP Chemistry và AP Physics do đề ít câu tính toán nặng.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Section I: 90 phút / 60 câu, đúng 1,5 phút mỗi câu. Với cụm câu chung dữ kiện, đọc kỹ dữ kiện MỘT LẦN rồi trả lời cả cụm, đừng đọc lại cho từng câu.",
+        "Section II: 90 phút / 6 câu. Phân bổ khuyến nghị: 22 phút mỗi câu dài (44 phút), 10 phút mỗi câu ngắn (40 phút), chừa 6 phút rà lại đồ thị và nhãn.",
+        "Nếu bạn yếu vẽ đồ thị, làm bốn câu ngắn trước để chốt 16 điểm chắc chắn, rồi mới dành thời gian còn lại cho hai câu dài.",
+        "Ăn điểm thành phần: viết mỗi ý thành một đoạn ngắn có nhãn, dùng đúng động từ nhiệm vụ đề yêu cầu. Rubric của AP Bio chấm theo 'yếu tố có mặt hay không', nên viết thẳng vào trọng tâm quan trọng hơn viết dài.",
+        "Với câu vẽ đồ thị, làm theo đúng checklist trục - nhãn - đơn vị - thang - thanh sai số - tiêu đề; đây là các ô rubric độc lập, mất mục nào mất điểm mục đó.",
+        "Không bao giờ viết hai câu trả lời mâu thuẫn cho cùng một ý: rubric AP Bio chấm theo phương án sai nếu có mâu thuẫn trực tiếp.",
+        "Với mọi câu 'giải thích', luôn nối tới cấp độ phân tử hoặc tế bào (protein nào, quá trình nào) thay vì dừng ở mô tả hiện tượng.",
+        "Bảng công thức đã có sẵn Hardy - Weinberg, chi bình phương, thế nước và tăng trưởng quần thể; điều phải thuộc là ĐIỀU KIỆN áp dụng và cách diễn giải kết quả, không phải bản thân công thức."
+      ],
+      "common_traps": [
+        "Trả lời câu 'Explain' bằng cách mô tả lại hiện tượng mà không nêu cơ chế; hoặc trả lời câu 'Justify' mà không trích dẫn số liệu cụ thể từ đề.",
+        "Đồ thị vẽ đúng dạng nhưng thiếu nhãn trục, thiếu đơn vị, thang chia không đều hoặc đặt biến độc lập lên trục tung.",
+        "Dùng thanh sai số chồng lấn để kết luận có khác biệt có ý nghĩa, hoặc ngược lại bỏ qua thanh sai số hoàn toàn.",
+        "Áp dụng Hardy - Weinberg cho quần thể vi phạm điều kiện (có chọn lọc, di nhập gen, quần thể nhỏ) mà không nhắc tới các điều kiện đó.",
+        "Nhầm tần số alen với tần số kiểu gen khi tính p và q.",
+        "Kết luận nhân quả từ thí nghiệm chỉ cho thấy tương quan, hoặc suy rộng vượt quá phạm vi mẫu.",
+        "Viết lan man cả trang cho câu 4 điểm rồi cháy giờ ở câu sau: rubric chỉ nhặt vài yếu tố, viết thêm không cộng điểm.",
+        "Nhầm rằng vì có bảng công thức nên không cần nhớ điều kiện áp dụng - phần lớn điểm bị mất nằm ở khâu biện luận điều kiện và diễn giải, không ở khâu thay số."
+      ],
+      "tags": [
+        "ap",
+        "sinh-hoc",
+        "biology",
+        "thuc-nghiem",
+        "college-board"
+      ],
+      "sources": [
+        "College Board - AP Central, AP Biology Exam: Section I 60 câu/90 phút (50%), Section II 6 câu/90 phút (50%) gồm 2 câu 9 điểm và 4 câu 4 điểm; hybrid digital",
+        "College Board - AP Biology Course at a Glance: U1 8-11%, U2 10-13%, U3 12-16%, U4 10-15%, U5 8-11%, U6 12-16%, U7 13-20%, U8 10-15%",
+        "College Board - AP Central, AP Biology Exam: tên sáu dạng câu tự luận (2 câu diễn giải và đánh giá kết quả thí nghiệm, trong đó một câu có vẽ đồ thị; 4 câu ngắn: điều tra khoa học, phân tích khái niệm, phân tích mô hình/biểu diễn, phân tích dữ liệu)",
+        "College Board - AP Students, AP Exams Calculator Policy: máy tính bốn phép tính, khoa học hoặc đồ thị được dùng ở cả hai phần"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3731 @@
+{
+ "meta": {
+  "file": "ru-east-eu.json",
+  "subject": "physics",
+  "title": "Bài tập hệ giáo trình Nga và Đông Âu - Irodov (vật lí) và Demidovich (giải tích toán học)",
+  "levels": [
+   "thpt",
+   "dai-hoc"
+  ],
+  "count": 52
+ },
+ "problems": [
+  {
+   "id": "prob.physics.ru-east-eu.0001",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Động học - bán kính cong của quỹ đạo",
+   "type": "dien-so",
+   "statement_vi": "Một vật được ném từ mặt đất với tốc độ đầu v0 = 25 m/s, hợp với phương ngang góc alpha = 30 độ. Bỏ qua sức cản không khí. Hãy lập biểu thức chữ cho bán kính cong của quỹ đạo tại đỉnh và tại điểm ném, sau đó điền giá trị bán kính cong TẠI ĐỈNH. Lấy g = 9,8 m/s^2.",
+   "statement_en": "A body is thrown from the ground with initial speed v0 = 25 m/s at 30 degrees to the horizon; air drag is neglected. Derive literal expressions for the radius of curvature of the trajectory at the top and at the launch point, then enter the radius of curvature AT THE TOP. Take g = 9.8 m/s^2.",
+   "answer": "R_dinh = v0^2 cos^2(alpha)/g ≈ 47,8 m; R_nem = v0^2/(g cos alpha) ≈ 73,6 m",
+   "answer_numeric": 47.83,
+   "answer_unit": "m",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Bán kính cong chỉ được xác định bởi THÀNH PHẦN PHÁP TUYẾN của gia tốc, vì chính thành phần này làm quay vectơ vận tốc. Thành phần tiếp tuyến chỉ đổi độ lớn vận tốc nên không tham gia.",
+     "latex": "a_{n} = \\dfrac{v^{2}}{R} \\;\\Longrightarrow\\; R = \\dfrac{v^{2}}{a_{n}}"
+    },
+    {
+     "explain": "Tại đỉnh quỹ đạo vận tốc nằm ngang, còn gia tốc trọng trường thẳng đứng, nên g vuông góc hoàn toàn với v: toàn bộ g là gia tốc pháp tuyến. Tốc độ tại đỉnh chỉ còn thành phần ngang.",
+     "latex": "v_{\\text{dinh}} = v_{0}\\cos\\alpha,\\quad a_{n} = g \\;\\Longrightarrow\\; R_{\\text{dinh}} = \\dfrac{v_{0}^{2}\\cos^{2}\\alpha}{g}"
+    },
+    {
+     "explain": "Tại điểm ném, vectơ vận tốc nghiêng góc alpha so với phương ngang, nên pháp tuyến của quỹ đạo nghiêng góc alpha so với phương thẳng đứng. Hình chiếu của g lên pháp tuyến bằng g cos(alpha).",
+     "latex": "a_{n} = g\\cos\\alpha \\;\\Longrightarrow\\; R_{0} = \\dfrac{v_{0}^{2}}{g\\cos\\alpha}"
+    },
+    {
+     "explain": "Thay số. Chú ý bán kính cong tại đỉnh NHỎ hơn tại điểm ném: ở đỉnh tốc độ nhỏ nhất còn gia tốc pháp tuyến lớn nhất, nên quỹ đạo cong gắt nhất.",
+     "latex": "R_{\\text{dinh}} = \\dfrac{25^{2}\\cdot 0.75}{9.8} \\approx 47.8\\ \\text{m};\\qquad R_{0} = \\dfrac{25^{2}}{9.8\\cdot 0.866} \\approx 73.6\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.ban-kinh-cong-quy-dao",
+    "physics.thpt.dong-hoc.gia-toc-tiep-tuyen-va-phap-tuyen"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 6,
+   "skills": [
+    "tách gia tốc thành tiếp tuyến và pháp tuyến",
+    "tính bán kính cong từ gia tốc pháp tuyến",
+    "hình chiếu vectơ gia tốc"
+   ],
+   "hints": [
+    "Gia tốc nào làm quỹ đạo cong?",
+    "Ở đỉnh, góc giữa g và v bằng bao nhiêu?"
+   ],
+   "tags": [
+    "irodov",
+    "dong-hoc",
+    "ban-kinh-cong",
+    "nem-xien"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0002",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Động học - bán kính cong tại đỉnh parabol",
+   "type": "dien-so",
+   "statement_vi": "Một chất điểm chuyển động trong mặt phẳng Oxy theo quỹ đạo y = a x^2 với a = 0,20 m^(-1), giữ tốc độ không đổi v = 3,0 m/s. Tính gia tốc của chất điểm khi nó đi qua gốc toạ độ.",
+   "statement_en": "A particle moves in the xy-plane along the trajectory y = a x^2 with a = 0.20 m^-1, keeping its speed constant at v = 3.0 m/s. Find the magnitude of its acceleration as it passes through the origin.",
+   "answer": "R = 1/(2a) = 2,5 m; vì tốc độ không đổi nên a = a_n = v^2/R = 2 a v^2 = 3,6 m/s^2",
+   "answer_numeric": 3.6,
+   "answer_unit": "m/s^2",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Tốc độ không đổi nên gia tốc tiếp tuyến bằng không: toàn bộ gia tốc là pháp tuyến. Bài toán quy về việc tìm bán kính cong của parabol tại gốc.",
+     "latex": "a_{t} = \\dfrac{dv}{dt} = 0 \\;\\Longrightarrow\\; \\vec{a} = \\vec{a}_{n},\\quad a = \\dfrac{v^{2}}{R}"
+    },
+    {
+     "explain": "Dùng công thức bán kính cong của đồ thị hàm số. Tại gốc toạ độ y' = 0 nên biểu thức rút gọn mạnh.",
+     "latex": "R = \\dfrac{\\left(1 + y'^{2}\\right)^{3/2}}{\\left|y''\\right|},\\qquad y' = 2ax,\\ y'' = 2a"
+    },
+    {
+     "explain": "Thay x = 0: y'(0) = 0 và y''(0) = 2a, nên bán kính cong tại đỉnh parabol bằng nghịch đảo của hai lần hệ số a.",
+     "latex": "R\\left(0\\right) = \\dfrac{1}{2a} = \\dfrac{1}{2\\cdot 0.20} = 2.5\\ \\text{m}"
+    },
+    {
+     "explain": "Thay vào biểu thức gia tốc pháp tuyến. Kết quả chữ a = 2 a_{hs} v^2 cho thấy quỹ đạo càng cong (a lớn) thì gia tốc càng lớn dù tốc độ không đổi.",
+     "latex": "a = \\dfrac{v^{2}}{R} = 2a_{hs}v^{2} = 2\\cdot 0.20\\cdot 3.0^{2} = 3.6\\ \\text{m/s}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.ban-kinh-cong-quy-dao",
+    "physics.dai-hoc.co-hoc-chat-diem.gia-toc-tiep-tuyen-phap-tuyen"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 5,
+   "skills": [
+    "bán kính cong của đồ thị hàm số",
+    "nhận ra gia tốc tiếp tuyến bằng không khi tốc độ không đổi"
+   ],
+   "hints": [
+    "Tốc độ không đổi thì a_t bằng bao nhiêu?",
+    "Bán kính cong của y = ax^2 tại đỉnh?"
+   ],
+   "tags": [
+    "irodov",
+    "dong-hoc",
+    "ban-kinh-cong",
+    "parabol"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0003",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Động học trong toạ độ cực - đường xoắn Archimedes",
+   "type": "tu-luan",
+   "statement_vi": "Một chất điểm chuyển động trong mặt phẳng theo đường xoắn Archimedes r = a*phi, với góc cực tăng đều: phi = omega*t (omega = const). Hãy tìm biểu thức chữ của tốc độ, độ lớn gia tốc và BÁN KÍNH CONG của quỹ đạo theo phi. Áp dụng số: a = 0,50 m/rad, omega = 2,0 rad/s, phi = 2,0 rad.",
+   "statement_en": "A particle moves in a plane along the Archimedean spiral r = a*phi with the polar angle growing uniformly, phi = omega*t (omega constant). Find literal expressions for the speed, the magnitude of the acceleration and the RADIUS OF CURVATURE as functions of phi. Evaluate for a = 0.50 m/rad, omega = 2.0 rad/s, phi = 2.0 rad.",
+   "answer": "v = a*omega*sqrt(1+phi^2) ≈ 2,24 m/s; a_tp = a*omega^2*sqrt(phi^2+4) ≈ 5,66 m/s^2; R = a(1+phi^2)^(3/2)/(phi^2+2) ≈ 0,93 m",
+   "answer_numeric": 0.9317,
+   "answer_unit": "m",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Viết vận tốc trong hệ toạ độ cực. Vì r phụ thuộc thời gian qua phi, thành phần hướng tâm sinh ra từ đạo hàm của r, thành phần ngang sinh ra từ chuyển động quay.",
+     "latex": "v_{r} = \\dot{r} = a\\dot{\\varphi} = a\\omega,\\qquad v_{\\varphi} = r\\dot{\\varphi} = a\\varphi\\omega"
+    },
+    {
+     "explain": "Tốc độ là module của hai thành phần trực giao đó.",
+     "latex": "v = \\sqrt{v_{r}^{2} + v_{\\varphi}^{2}} = a\\omega\\sqrt{1 + \\varphi^{2}}"
+    },
+    {
+     "explain": "Gia tốc trong toạ độ cực có hai số hạng đặc trưng: số hạng li tâm -r*phi_cham^2 trong thành phần hướng tâm và số hạng Coriolis 2*r_cham*phi_cham trong thành phần ngang. Ở đây phi_hai_cham = 0 và r_hai_cham = 0 vì omega không đổi.",
+     "latex": "a_{r} = \\ddot{r} - r\\dot{\\varphi}^{2} = -a\\varphi\\omega^{2},\\qquad a_{\\varphi} = r\\ddot{\\varphi} + 2\\dot{r}\\dot{\\varphi} = 2a\\omega^{2}"
+    },
+    {
+     "explain": "Lấy module của gia tốc.",
+     "latex": "a_{tp} = a\\omega^{2}\\sqrt{\\varphi^{2} + 4}"
+    },
+    {
+     "explain": "Muốn có bán kính cong phải tách gia tốc pháp tuyến. Gia tốc tiếp tuyến là đạo hàm của tốc độ theo thời gian, tính bằng quy tắc dây chuyền qua phi.",
+     "latex": "a_{t} = \\dfrac{dv}{dt} = a\\omega\\cdot\\dfrac{\\varphi\\dot{\\varphi}}{\\sqrt{1+\\varphi^{2}}} = \\dfrac{a\\omega^{2}\\varphi}{\\sqrt{1+\\varphi^{2}}}"
+    },
+    {
+     "explain": "Suy ra gia tốc pháp tuyến bằng định lí Pythagore rồi dùng R = v^2/a_n. Rút gọn cho biểu thức chữ gọn của bán kính cong đường xoắn Archimedes.",
+     "latex": "a_{n} = \\sqrt{a_{tp}^{2} - a_{t}^{2}} = \\dfrac{a\\omega^{2}\\left(\\varphi^{2}+2\\right)}{\\sqrt{1+\\varphi^{2}}},\\qquad R = \\dfrac{v^{2}}{a_{n}} = \\dfrac{a\\left(1+\\varphi^{2}\\right)^{3/2}}{\\varphi^{2}+2}"
+    },
+    {
+     "explain": "Thay số với phi = 2 rad.",
+     "latex": "v \\approx 2.24\\ \\text{m/s},\\quad a_{tp} \\approx 5.66\\ \\text{m/s}^{2},\\quad R = \\dfrac{0.50\\cdot 5^{3/2}}{6} \\approx 0.93\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.van-toc-gia-toc-toa-do-cuc",
+    "physics.thpt.ru-co-hoc.ban-kinh-cong-quy-dao"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 15,
+   "skills": [
+    "động học trong toạ độ cực",
+    "tách gia tốc tiếp tuyến và pháp tuyến",
+    "biến đổi giải tích nhiều bước ra biểu thức chữ"
+   ],
+   "hints": [
+    "Viết v_r và v_phi trước.",
+    "Nhớ số hạng Coriolis 2*r_cham*phi_cham trong a_phi.",
+    "a_n tìm từ a_tp và a_t bằng Pythagore."
+   ],
+   "tags": [
+    "irodov",
+    "toa-do-cuc",
+    "ban-kinh-cong",
+    "duong-xoan"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0004",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Hệ quy chiếu khối tâm và định lí Koenig",
+   "type": "dien-so",
+   "statement_vi": "Hai chất điểm m1 = 1,0 kg và m2 = 2,0 kg chuyển động với vận tốc v1 = 3,0 m/s và v2 = 4,0 m/s theo hai phương VUÔNG GÓC nhau. Dùng định lí Koenig, hãy tách động năng toàn phần thành động năng chuyển động khối tâm và động năng riêng (động năng trong hệ C), rồi điền giá trị ĐỘNG NĂNG RIÊNG.",
+   "statement_en": "Two particles m1 = 1.0 kg and m2 = 2.0 kg move with speeds v1 = 3.0 m/s and v2 = 4.0 m/s along mutually PERPENDICULAR directions. Using Koenig's theorem, split the total kinetic energy into the kinetic energy of the centre-of-mass motion and the internal (C-frame) kinetic energy, then enter the INTERNAL kinetic energy.",
+   "answer": "T_rieng = (1/2)*mu*v_rel^2 = 25/3 ≈ 8,33 J; T_toan phan = 20,5 J; T_khoi tam = 73/6 ≈ 12,17 J",
+   "answer_numeric": 8.3333,
+   "answer_unit": "J",
+   "tolerance": 0.02,
+   "solution_steps": [
+    {
+     "explain": "Định lí Koenig phát biểu rằng động năng toàn phần bằng động năng của một chất điểm khối lượng tổng cộng đặt tại khối tâm, cộng với động năng của các hạt ĐO TRONG hệ khối tâm. Số hạng thứ hai gọi là động năng riêng và bất biến với người quan sát.",
+     "latex": "T = \\dfrac{p^{2}}{2M} + \\widetilde{T},\\qquad M = m_{1} + m_{2}"
+    },
+    {
+     "explain": "Với hệ HAI hạt, động năng riêng có dạng đặc biệt gọn: nó bằng động năng của một hạt ảo có khối lượng rút gọn mu chuyển động với vận tốc tương đối. Đây là điểm mấu chốt giúp bỏ qua hoàn toàn việc tính vận tốc khối tâm.",
+     "latex": "\\widetilde{T} = \\dfrac{1}{2}\\mu v_{rel}^{2},\\qquad \\mu = \\dfrac{m_{1}m_{2}}{m_{1}+m_{2}}"
+    },
+    {
+     "explain": "Tính khối lượng rút gọn và vận tốc tương đối. Vì hai vận tốc vuông góc, module hiệu của chúng tính theo Pythagore.",
+     "latex": "\\mu = \\dfrac{1\\cdot 2}{3} = \\dfrac{2}{3}\\ \\text{kg},\\qquad v_{rel} = \\sqrt{3^{2}+4^{2}} = 5\\ \\text{m/s}"
+    },
+    {
+     "explain": "Thay vào để có động năng riêng.",
+     "latex": "\\widetilde{T} = \\dfrac{1}{2}\\cdot\\dfrac{2}{3}\\cdot 25 = \\dfrac{25}{3} \\approx 8.33\\ \\text{J}"
+    },
+    {
+     "explain": "Kiểm tra chéo: tính động năng toàn phần trực tiếp rồi trừ đi động năng khối tâm, hai cách phải cho cùng kết quả. Đây là bước kiểm tra bắt buộc trong lời giải kiểu Nga.",
+     "latex": "T = \\dfrac{1}{2}\\cdot 1\\cdot 9 + \\dfrac{1}{2}\\cdot 2\\cdot 16 = 20.5\\ \\text{J},\\qquad \\dfrac{p^{2}}{2M} = \\dfrac{3^{2}+8^{2}}{2\\cdot 3} = \\dfrac{73}{6} \\approx 12.17\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.dinh-li-koenig-dong-nang",
+    "physics.thpt.ru-co-hoc.dong-nang-he-hai-hat-he-c",
+    "physics.thpt.ru-co-hoc.he-quy-chieu-khoi-tam"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 7,
+   "skills": [
+    "định lí Koenig",
+    "khối lượng rút gọn",
+    "phân tích động năng theo hệ khối tâm"
+   ],
+   "hints": [
+    "Với hai hạt, động năng riêng chỉ phụ thuộc vận tốc TƯƠNG ĐỐI.",
+    "mu = m1*m2/(m1+m2)."
+   ],
+   "tags": [
+    "irodov",
+    "he-khoi-tam",
+    "koenig",
+    "dong-nang"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0005",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Va chạm đàn hồi trực diện - hệ số truyền năng lượng",
+   "type": "dien-so",
+   "statement_vi": "Trong lò phản ứng dùng chất làm chậm graphite, neutron (khối lượng 1 u) va chạm đàn hồi TRỰC DIỆN với hạt nhân carbon-12 (khối lượng 12 u) đang đứng yên. Hãy lập biểu thức chữ cho hệ số truyền năng lượng, rồi tính số va chạm trực diện tối thiểu để động năng của neutron giảm đi 1000 lần.",
+   "statement_en": "In a graphite-moderated reactor a neutron (mass 1 u) undergoes HEAD-ON elastic collisions with stationary carbon-12 nuclei (mass 12 u). Derive a literal expression for the energy-transfer coefficient and find the minimum number of head-on collisions needed to reduce the neutron kinetic energy by a factor of 1000.",
+   "answer": "eta = 4*m1*m2/(m1+m2)^2 = 48/169 ≈ 0,284; sau mỗi va chạm còn lại (11/13)^2 ≈ 0,716; n = ln(1000)/ln(13^2/11^2) ≈ 20,7 nên cần n = 21 va chạm",
+   "answer_numeric": 21,
+   "answer_unit": "",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Trong va chạm đàn hồi trực diện, phần động năng mà hạt tới nhường cho bia đứng yên chỉ phụ thuộc TỈ SỐ khối lượng, không phụ thuộc tốc độ. Đây là hệ quả trực tiếp của việc trong hệ C va chạm đàn hồi chỉ đảo chiều động lượng.",
+     "latex": "\\eta = \\dfrac{\\Delta T}{T} = \\dfrac{4m_{1}m_{2}}{\\left(m_{1}+m_{2}\\right)^{2}}"
+    },
+    {
+     "explain": "Thay tỉ số khối lượng 1 : 12.",
+     "latex": "\\eta = \\dfrac{4\\cdot 1\\cdot 12}{13^{2}} = \\dfrac{48}{169} \\approx 0.284"
+    },
+    {
+     "explain": "Phần năng lượng CÒN LẠI sau mỗi va chạm là 1 - eta. Rút gọn được bình phương của tỉ số hiệu trên tổng khối lượng - dạng chữ quen thuộc của bài toán làm chậm neutron.",
+     "latex": "1 - \\eta = \\left(\\dfrac{m_{2}-m_{1}}{m_{1}+m_{2}}\\right)^{2} = \\left(\\dfrac{11}{13}\\right)^{2} \\approx 0.716"
+    },
+    {
+     "explain": "Sau n va chạm, năng lượng nhân với (1-eta)^n. Lấy lôga hai vế của điều kiện giảm 1000 lần để tìm n.",
+     "latex": "\\left(1-\\eta\\right)^{n} \\le \\dfrac{1}{1000} \\;\\Longrightarrow\\; n \\ge \\dfrac{\\ln 1000}{2\\ln\\left(13/11\\right)} \\approx 20.7"
+    },
+    {
+     "explain": "n phải là số nguyên nên lấy trần. Kiểm tra: sau 20 va chạm còn 1,25 phần nghìn (chưa đạt), sau 21 va chạm còn 0,90 phần nghìn (đạt).",
+     "latex": "n_{\\min} = 21"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.he-so-truyen-nang-luong-va-cham",
+    "physics.thpt.ru-co-hoc.va-cham-dan-hoi-he-c"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 9,
+   "skills": [
+    "hệ số truyền năng lượng trong va chạm đàn hồi",
+    "giải bất phương trình mũ bằng lôga",
+    "làm tròn lên khi biến là số nguyên"
+   ],
+   "hints": [
+    "Phần năng lượng còn lại sau mỗi va chạm là hằng số.",
+    "Lấy ln hai vế."
+   ],
+   "tags": [
+    "irodov",
+    "va-cham-dan-hoi",
+    "truyen-nang-luong",
+    "lam-cham-neutron"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0006",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Va chạm đàn hồi - góc lệch cực đại của hạt nặng",
+   "type": "trac-nghiem",
+   "statement_vi": "Một hạt alpha (khối lượng 4 u) va chạm đàn hồi với một proton (khối lượng 1 u) đang đứng yên. Góc lệch CỰC ĐẠI của hạt alpha so với phương chuyển động ban đầu gần nhất với giá trị nào?",
+   "statement_en": "An alpha particle (mass 4 u) collides elastically with a proton (mass 1 u) at rest. The MAXIMUM deflection angle of the alpha particle from its original direction is closest to which value?",
+   "choices": [
+    {
+     "key": "A",
+     "text": "14,5 do",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "30 do",
+     "why_wrong": "Lấy tỉ số khối lượng là 1/2 (nhầm 4 u với 2 u của deuteron) rồi suy ra sin(theta) = 1/2."
+    },
+    {
+     "key": "C",
+     "text": "90 do",
+     "why_wrong": "Áp dụng kết quả của va chạm giữa HAI HẠT BẰNG NHAU (khi đó hai hạt bay ra vuông góc nhau) cho trường hợp khối lượng khác nhau."
+    },
+    {
+     "key": "D",
+     "text": "75,5 do",
+     "why_wrong": "Dùng cos(theta_max) = m2/m1 thay vì sin(theta_max) = m2/m1, tức lẫn lộn cạnh đối với cạnh kề trong tam giác vectơ động lượng."
+    },
+    {
+     "key": "E",
+     "text": "180 do",
+     "why_wrong": "Cho rằng hạt tới luôn có thể bật ngược lại; điều đó chỉ đúng khi hạt tới NHẸ hơn bia."
+    }
+   ],
+   "answer": "A",
+   "answer_numeric": 14.478,
+   "answer_unit": "do",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Chuyển sang hệ khối tâm. Trong hệ C, va chạm đàn hồi chỉ làm QUAY vectơ động lượng của mỗi hạt mà giữ nguyên độ lớn, nên đầu mút vectơ động lượng của hạt alpha chạy trên một mặt cầu bán kính p1_ngã.",
+     "latex": "\\tilde{p}_{1}' = \\tilde{p}_{1} = \\mu v_{1},\\qquad \\mu = \\dfrac{m_{1}m_{2}}{m_{1}+m_{2}}"
+    },
+    {
+     "explain": "Trở về hệ phòng thí nghiệm bằng cách cộng thêm vectơ m1*V_C, với V_C là vận tốc khối tâm. Vectơ động lượng trong hệ L là tổng của một vectơ CỐ ĐỊNH m1*V_C và một vectơ có độ dài cố định nhưng hướng tuỳ ý.",
+     "latex": "m_{1}\\vec{V}_{C} = \\dfrac{m_{1}^{2}}{m_{1}+m_{2}}\\vec{v}_{1},\\qquad \\tilde{p}_{1} = \\dfrac{m_{1}m_{2}}{m_{1}+m_{2}}v_{1}"
+    },
+    {
+     "explain": "Vì hạt tới NẶNG hơn bia, ta có m1*V_C > p1_ngã, nên gốc của hình tròn nằm NGOÀI đường tròn: góc lệch bị chặn. Góc cực đại ứng với tiếp tuyến kẻ từ gốc, khi đó sin của góc bằng tỉ số bán kính trên khoảng cách.",
+     "latex": "\\sin\\theta_{\\max} = \\dfrac{\\tilde{p}_{1}}{m_{1}V_{C}} = \\dfrac{m_{2}}{m_{1}}"
+    },
+    {
+     "explain": "Thay tỉ số khối lượng 1/4.",
+     "latex": "\\sin\\theta_{\\max} = \\dfrac{1}{4} \\;\\Longrightarrow\\; \\theta_{\\max} = \\arcsin 0.25 \\approx 14.5^{\\circ}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.goc-lech-cuc-dai-va-cham",
+    "physics.thpt.ru-co-hoc.va-cham-dan-hoi-he-c",
+    "physics.thpt.ru-co-hoc.dong-luong-hai-hat-he-c"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 5,
+   "skills": [
+    "giản đồ vectơ động lượng trong hệ khối tâm",
+    "điều kiện tồn tại góc lệch cực đại"
+   ],
+   "hints": [
+    "Vẽ giản đồ vectơ trong hệ C rồi chuyển về hệ L.",
+    "Hạt tới nặng hơn bia thì góc lệch bị chặn."
+   ],
+   "tags": [
+    "irodov",
+    "va-cham-dan-hoi",
+    "he-khoi-tam",
+    "goc-lech"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0007",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Thế năng hiệu dụng và bài toán xuyên tâm",
+   "type": "tu-luan",
+   "statement_vi": "Một hạt khối lượng m = 0,50 kg chuyển động trong trường xuyên tâm hút U(r) = -alpha/r với alpha = 8,0 J*m. Mômen động lượng của hạt đối với tâm trường là L = 2,0 kg*m^2/s. Hãy: (a) lập thế năng hiệu dụng; (b) tìm biểu thức chữ của bán kính quỹ đạo TRÒN và cơ năng tương ứng; (c) tính số; (d) chứng tỏ quỹ đạo tròn đó bền.",
+   "statement_en": "A particle of mass m = 0.50 kg moves in the attractive central field U(r) = -alpha/r with alpha = 8.0 J*m. Its angular momentum about the centre is L = 2.0 kg*m^2/s. (a) Write the effective potential; (b) derive literal expressions for the radius of the CIRCULAR orbit and the corresponding total energy; (c) evaluate them; (d) show that this circular orbit is stable.",
+   "answer": "U_hd(r) = L^2/(2mr^2) - alpha/r; r0 = L^2/(m*alpha) = 1,0 m; E0 = -m*alpha^2/(2L^2) = -4,0 J; quỹ đạo bền vì U_hd đạt CỰC TIỂU tại r0",
+   "answer_numeric": -4.0,
+   "answer_unit": "J",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Bảo toàn mômen động lượng cho phép khử biến góc: động năng theo phương ngang biến thành một số hạng thế năng giả, gọi là hàng rào li tâm. Bài toán hai chiều rút về chuyển động một chiều theo r.",
+     "latex": "E = \\dfrac{1}{2}m\\dot{r}^{2} + U_{hd}\\left(r\\right),\\qquad U_{hd}\\left(r\\right) = \\dfrac{L^{2}}{2mr^{2}} - \\dfrac{\\alpha}{r}"
+    },
+    {
+     "explain": "Quỹ đạo tròn nghĩa là r không đổi, tức r_cham = 0 tại MỌI thời điểm. Muốn vậy hạt phải nằm tại điểm dừng của thế hiệu dụng, vì lực hiệu dụng là đạo hàm của U_hd đổi dấu.",
+     "latex": "\\dfrac{dU_{hd}}{dr} = -\\dfrac{L^{2}}{mr^{3}} + \\dfrac{\\alpha}{r^{2}} = 0"
+    },
+    {
+     "explain": "Giải phương trình trên cho r. Nhân hai vế với r^3 rồi rút gọn.",
+     "latex": "r_{0} = \\dfrac{L^{2}}{m\\alpha}"
+    },
+    {
+     "explain": "Cơ năng của quỹ đạo tròn chính là giá trị của thế hiệu dụng tại r0 (vì động năng xuyên tâm bằng không). Thay r0 vào và rút gọn: số hạng li tâm bằng đúng nửa độ lớn số hạng hút, đúng với định lí virial cho trường Newton - Coulomb.",
+     "latex": "E_{0} = U_{hd}\\left(r_{0}\\right) = \\dfrac{m\\alpha^{2}}{2L^{2}} - \\dfrac{m\\alpha^{2}}{L^{2}} = -\\dfrac{m\\alpha^{2}}{2L^{2}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "r_{0} = \\dfrac{2.0^{2}}{0.50\\cdot 8.0} = 1.0\\ \\text{m},\\qquad E_{0} = -\\dfrac{0.50\\cdot 8.0^{2}}{2\\cdot 2.0^{2}} = -4.0\\ \\text{J}"
+    },
+    {
+     "explain": "Tính đạo hàm cấp hai để xét tính bền. Đạo hàm cấp hai dương nghĩa là U_hd có CỰC TIỂU, nên nhiễu loạn nhỏ theo r chỉ gây dao động quanh r0 chứ không làm hạt trôi đi: quỹ đạo bền.",
+     "latex": "\\dfrac{d^{2}U_{hd}}{dr^{2}} = \\dfrac{3L^{2}}{mr^{4}} - \\dfrac{2\\alpha}{r^{3}},\\qquad \\left.\\dfrac{d^{2}U_{hd}}{dr^{2}}\\right|_{r_{0}} = \\dfrac{m^{3}\\alpha^{4}}{L^{6}} > 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-co-hoc.the-hieu-dung",
+    "physics.dai-hoc.ru-co-hoc.phuong-trinh-nang-luong-xuyen-tam",
+    "physics.dai-hoc.ru-co-hoc.dinh-li-virial-kepler"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 12,
+   "skills": [
+    "xây dựng thế năng hiệu dụng",
+    "điều kiện quỹ đạo tròn qua cực trị của U hiệu dụng",
+    "xét tính bền bằng đạo hàm cấp hai"
+   ],
+   "hints": [
+    "Khử biến góc bằng bảo toàn mômen động lượng.",
+    "Quỹ đạo tròn ứng với điểm dừng của U hiệu dụng."
+   ],
+   "tags": [
+    "irodov",
+    "truong-xuyen-tam",
+    "the-hieu-dung",
+    "quy-dao-tron"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0008",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Bài toán Kepler - quỹ đạo elip quanh Trái Đất",
+   "type": "dien-so",
+   "statement_vi": "Một vệ tinh chuyển động trên quỹ đạo elip quanh Trái Đất với khoảng cách cận điểm r_p = 1,2 R và viễn điểm r_a = 2,0 R, trong đó R = 6,37*10^6 m là bán kính Trái Đất. Cho GM = 3,986*10^14 m^3/s^2. Hãy tìm biểu thức chữ của chu kì và tốc độ tại cận điểm, rồi điền CHU KÌ quỹ đạo (tính bằng giây).",
+   "statement_en": "A satellite moves on an elliptical orbit about the Earth with perigee r_p = 1.2 R and apogee r_a = 2.0 R, where R = 6.37e6 m is the Earth radius; GM = 3.986e14 m^3/s^2. Derive literal expressions for the orbital period and the perigee speed, then enter the PERIOD in seconds.",
+   "answer": "a = (r_p+r_a)/2 = 1,6R = 1,019*10^7 m; T = 2*pi*sqrt(a^3/GM) ≈ 1,02*10^4 s ≈ 171 phút; v_p = sqrt(GM(2/r_p - 1/a)) ≈ 8,07 km/s; v_a ≈ 4,84 km/s",
+   "answer_numeric": 10240.0,
+   "answer_unit": "s",
+   "tolerance": 60.0,
+   "solution_steps": [
+    {
+     "explain": "Với quỹ đạo elip, cận điểm và viễn điểm nằm ở hai đầu trục lớn, nên bán trục lớn là trung bình cộng của hai bán kính đó. Đây là bước rút gọn quan trọng vì mọi công thức Kepler đều viết theo a.",
+     "latex": "a = \\dfrac{r_{p} + r_{a}}{2} = \\dfrac{1.2R + 2.0R}{2} = 1.6R"
+    },
+    {
+     "explain": "Định luật III Kepler viết cho trường hấp dẫn của một tâm: chu kì chỉ phụ thuộc bán trục lớn, hoàn toàn không phụ thuộc độ dẹt của elip.",
+     "latex": "T = 2\\pi\\sqrt{\\dfrac{a^{3}}{GM}}"
+    },
+    {
+     "explain": "Thay a = 1,6R = 1,019*10^7 m.",
+     "latex": "T = 2\\pi\\sqrt{\\dfrac{\\left(1.019\\times 10^{7}\\right)^{3}}{3.986\\times 10^{14}}} \\approx 1.024\\times 10^{4}\\ \\text{s} \\approx 171\\ \\text{phut}"
+    },
+    {
+     "explain": "Tốc độ tại một điểm bất kì suy từ bảo toàn cơ năng E = -GMm/(2a) kết hợp E = mv^2/2 - GMm/r. Đây chính là phương trình vis-viva.",
+     "latex": "v^{2} = GM\\left(\\dfrac{2}{r} - \\dfrac{1}{a}\\right)"
+    },
+    {
+     "explain": "Thay r = r_p rồi r = r_a. Kiểm tra chéo bằng bảo toàn mômen động lượng: tích r*v phải bằng nhau ở hai điểm (vì tại đó vận tốc vuông góc với bán kính vectơ).",
+     "latex": "v_{p} \\approx 8.07\\ \\text{km/s},\\quad v_{a} \\approx 4.84\\ \\text{km/s},\\qquad r_{p}v_{p} = r_{a}v_{a} = 6.17\\times 10^{10}\\ \\text{m}^{2}/\\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-co-hoc.ban-truc-lon-va-chu-ki-kepler",
+    "physics.dai-hoc.ru-co-hoc.quy-dao-conic-kepler",
+    "physics.dai-hoc.ru-co-hoc.phan-loai-quy-dao-theo-nang-luong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 10,
+   "skills": [
+    "định luật Kepler thứ ba",
+    "phương trình vis-viva",
+    "kiểm tra bằng bảo toàn mômen động lượng"
+   ],
+   "hints": [
+    "Bán trục lớn là trung bình cộng của r_p và r_a.",
+    "Chu kì chỉ phụ thuộc a."
+   ],
+   "tags": [
+    "irodov",
+    "kepler",
+    "quy-dao-elip",
+    "ve-tinh"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Standard_gravitational_parameter"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0009",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tán xạ Rutherford - tham số va chạm",
+   "type": "dien-so",
+   "statement_vi": "Một hạt alpha (Z1 = 2) có động năng T = 5,0 MeV bay tới hạt nhân vàng (Z2 = 79) và bị tán xạ với góc theta = 60 do. Bỏ qua chuyển động giật lùi của hạt nhân. Dùng hằng số tiện dụng k*e^2 = 1,44 MeV*fm, hãy lập biểu thức chữ rồi tính THAM SỐ VA CHẠM b (đơn vị fm).",
+   "statement_en": "An alpha particle (Z1 = 2) with kinetic energy T = 5.0 MeV is scattered by a gold nucleus (Z2 = 79) through theta = 60 degrees; the nuclear recoil is neglected. Using k*e^2 = 1.44 MeV*fm, derive a literal expression and compute the IMPACT PARAMETER b in fm.",
+   "answer": "b = (k*Z1*Z2*e^2/(2T))*cot(theta/2) = (227,5/10)*cot(30 do) ≈ 39,4 fm ≈ 3,94*10^(-14) m",
+   "answer_numeric": 39.41,
+   "answer_unit": "fm",
+   "tolerance": 0.3,
+   "solution_steps": [
+    {
+     "explain": "Công thức Rutherford liên hệ tham số va chạm với góc tán xạ trong trường Coulomb đẩy. Nó suy ra được từ tích phân quỹ đạo hyperbol, và điểm cốt lõi là b tỉ lệ nghịch với động năng.",
+     "latex": "b = \\dfrac{q_{1}q_{2}}{2T}\\cot\\dfrac{\\theta}{2} = \\dfrac{k Z_{1}Z_{2}e^{2}}{2T}\\cot\\dfrac{\\theta}{2}"
+    },
+    {
+     "explain": "Tính tử số bằng hằng số tiện dụng, tránh phải đổi sang hệ SI. Đây là mẹo chuẩn trong vật lí hạt nhân: k*e^2 = 1,44 MeV*fm.",
+     "latex": "kZ_{1}Z_{2}e^{2} = 1.44\\cdot 2\\cdot 79 = 227.5\\ \\text{MeV}\\cdot\\text{fm}"
+    },
+    {
+     "explain": "Thay động năng và góc tán xạ. Với theta = 60 do thì theta/2 = 30 do và cot(30 do) = căn 3.",
+     "latex": "b = \\dfrac{227.5}{2\\cdot 5.0}\\cdot\\sqrt{3} = 22.75\\cdot 1.732"
+    },
+    {
+     "explain": "Ra kết quả. Đổi sang mét để thấy thang bậc: cỡ vài chục femtomet, tức lớn hơn bán kính hạt nhân vàng (khoảng 7 fm) - hạt alpha chưa chạm hạt nhân, tán xạ hoàn toàn do lực Coulomb.",
+     "latex": "b \\approx 39.4\\ \\text{fm} = 3.94\\times 10^{-14}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-co-hoc.tham-so-va-cham-rutherford",
+    "physics.dai-hoc.ru-co-hoc.the-hieu-dung"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 8,
+   "skills": [
+    "công thức tán xạ Rutherford",
+    "dùng hằng số tiện dụng k e^2 = 1,44 MeV*fm",
+    "ước lượng thang bậc kết quả"
+   ],
+   "hints": [
+    "b tỉ lệ với cot(theta/2).",
+    "Đừng đổi ra SI: dùng ngay MeV và fm."
+   ],
+   "tags": [
+    "irodov",
+    "tan-xa-rutherford",
+    "tham-so-va-cham",
+    "truong-xuyen-tam"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0010",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Dao động tắt dần - giảm lượng lôga và hệ số phẩm chất",
+   "type": "dien-so",
+   "statement_vi": "Một hệ dao động tắt dần yếu có giảm lượng lôga lambda = 0,020. Hãy tìm: (a) số dao động N thực hiện được cho tới khi biên độ giảm 3 lần; (b) hệ số phẩm chất Q của hệ. Điền giá trị Q.",
+   "statement_en": "A weakly damped oscillator has logarithmic decrement lambda = 0.020. Find (a) the number N of oscillations until the amplitude falls by a factor of 3, and (b) the quality factor Q. Enter Q.",
+   "answer": "N = ln3/lambda ≈ 54,9 (tức khoảng 55 dao động); Q = pi/lambda ≈ 157",
+   "answer_numeric": 157.08,
+   "answer_unit": "",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "Giảm lượng lôga được định nghĩa là lôga của tỉ số hai biên độ cách nhau một chu kì. Do biên độ giảm theo hàm mũ, sau N chu kì tỉ số biên độ là e mũ (N*lambda).",
+     "latex": "\\lambda = \\ln\\dfrac{A\\left(t\\right)}{A\\left(t+T\\right)} = \\beta T \\;\\Longrightarrow\\; \\dfrac{A\\left(0\\right)}{A\\left(NT\\right)} = e^{N\\lambda}"
+    },
+    {
+     "explain": "Đặt tỉ số bằng 3 rồi lấy lôga. Chú ý N không nhất thiết nguyên vì đây là đại lượng đặc trưng, không phải phép đếm rời rạc.",
+     "latex": "e^{N\\lambda} = 3 \\;\\Longrightarrow\\; N = \\dfrac{\\ln 3}{\\lambda} = \\dfrac{1.0986}{0.020} \\approx 54.9"
+    },
+    {
+     "explain": "Hệ số phẩm chất theo định nghĩa của Irodov bằng pi chia giảm lượng lôga; nó cũng bằng 2*pi lần tỉ số giữa năng lượng dự trữ và năng lượng mất trong một chu kì.",
+     "latex": "Q = \\dfrac{\\pi}{\\lambda} = 2\\pi\\dfrac{W}{\\left|\\Delta W\\right|_{1\\,\\text{chu ki}}}"
+    },
+    {
+     "explain": "Thay số. Giá trị Q khoảng 157 nghĩa là hệ tắt rất chậm: mỗi chu kì chỉ mất khoảng 4 phần trăm năng lượng.",
+     "latex": "Q = \\dfrac{\\pi}{0.020} \\approx 157,\\qquad \\dfrac{W\\left(t+T\\right)}{W\\left(t\\right)} = e^{-2\\lambda} \\approx 0.961"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.giam-luong-loga",
+    "physics.thpt.ru-co-hoc.so-dao-dong-bien-do-giam-e-lan",
+    "physics.dai-hoc.dao-dong-song.he-so-pham-chat-dao-dong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 6,
+   "skills": [
+    "giảm lượng lôga",
+    "hệ số phẩm chất",
+    "biên độ giảm theo hàm mũ"
+   ],
+   "hints": [
+    "Sau N chu kì tỉ số biên độ là e mũ N*lambda.",
+    "Q = pi/lambda."
+   ],
+   "tags": [
+    "irodov",
+    "dao-dong-tat-dan",
+    "giam-luong-loga",
+    "he-so-pham-chat"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Logarithmic_decrement"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0011",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Dao động tắt dần - hệ số tắt dần và độ lệch tần số",
+   "type": "tu-luan",
+   "statement_vi": "Một con lắc dao động tắt dần trong môi trường nhớt với chu kì T = 0,50 s. Sau n = 20 dao động toàn phần, biên độ giảm đi 4 lần. Hãy: (a) tính hệ số tắt dần beta, giảm lượng lôga lambda và hệ số phẩm chất Q; (b) chứng minh biểu thức chữ cho độ lệch TƯƠNG ĐỐI giữa tần số riêng omega_0 và tần số tắt dần omega, rồi đánh giá số.",
+   "statement_en": "A pendulum performs damped oscillations in a viscous medium with period T = 0.50 s; after n = 20 complete oscillations its amplitude falls by a factor of 4. (a) Find the damping coefficient beta, the logarithmic decrement lambda and the quality factor Q. (b) Derive a literal expression for the RELATIVE difference between the natural frequency omega_0 and the damped frequency omega, and estimate it numerically.",
+   "answer": "beta = ln4/(nT) ≈ 0,139 s^(-1); lambda = beta*T ≈ 0,0693; Q = pi/lambda ≈ 45,3; (omega_0-omega)/omega_0 ≈ beta^2/(2*omega_0^2) ≈ 6,1*10^(-5)",
+   "answer_numeric": 0.13863,
+   "answer_unit": "1/s",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Biên độ tắt theo hàm mũ với số mũ beta*t. Sau 20 chu kì tức sau thời gian n*T, biên độ giảm 4 lần, cho ta ngay một phương trình cho beta.",
+     "latex": "A\\left(t\\right) = A_{0}e^{-\\beta t},\\qquad e^{\\beta nT} = 4 \\;\\Longrightarrow\\; \\beta = \\dfrac{\\ln 4}{nT}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\beta = \\dfrac{1.3863}{20\\cdot 0.50} = 0.1386\\ \\text{s}^{-1}"
+    },
+    {
+     "explain": "Giảm lượng lôga và hệ số phẩm chất suy trực tiếp từ beta và T.",
+     "latex": "\\lambda = \\beta T = 0.0693,\\qquad Q = \\dfrac{\\pi}{\\lambda} \\approx 45.3"
+    },
+    {
+     "explain": "Tần số tắt dần luôn NHỎ hơn tần số riêng. Muốn có độ lệch tương đối, viết omega_0 theo omega và beta rồi khai triển căn bậc hai theo tham số nhỏ beta/omega_0 - đây là bước biến đổi giải tích đặc trưng của lối làm Nga.",
+     "latex": "\\omega = \\sqrt{\\omega_{0}^{2} - \\beta^{2}} = \\omega_{0}\\sqrt{1 - \\dfrac{\\beta^{2}}{\\omega_{0}^{2}}} \\approx \\omega_{0}\\left(1 - \\dfrac{\\beta^{2}}{2\\omega_{0}^{2}}\\right)"
+    },
+    {
+     "explain": "Suy ra độ lệch tương đối là một đại lượng BẬC HAI theo beta, nên rất nhỏ. Đây là lí do vì sao trong thực nghiệm ta đo được biên độ tắt rõ rệt nhưng chu kì gần như không đổi.",
+     "latex": "\\dfrac{\\omega_{0}-\\omega}{\\omega_{0}} \\approx \\dfrac{\\beta^{2}}{2\\omega_{0}^{2}} = \\dfrac{\\lambda^{2}}{8\\pi^{2}}"
+    },
+    {
+     "explain": "Đánh giá số với omega xấp xỉ 2*pi/T = 12,57 rad/s.",
+     "latex": "\\dfrac{\\omega_{0}-\\omega}{\\omega_{0}} \\approx \\dfrac{0.0693^{2}}{8\\pi^{2}} \\approx 6.1\\times 10^{-5}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.bien-do-va-tan-so-dao-dong-tat-dan",
+    "physics.dai-hoc.dao-dong-song.giam-luong-loga",
+    "physics.dai-hoc.ru-co-hoc.he-so-pham-chat-va-thoi-gian-hoi-phuc",
+    "physics.thpt.ru-co-hoc.nang-luong-dao-dong-tat-dan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 14,
+   "skills": [
+    "xác định hệ số tắt dần từ dữ liệu biên độ",
+    "khai triển nhị thức cho tham số nhỏ",
+    "đánh giá bậc của hiệu ứng"
+   ],
+   "hints": [
+    "Viết biên độ theo hàm mũ rồi lấy ln.",
+    "Khai triển căn bậc hai theo (beta/omega_0)^2."
+   ],
+   "tags": [
+    "irodov",
+    "dao-dong-tat-dan",
+    "he-so-tat-dan",
+    "khai-trien-gan-dung"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Logarithmic_decrement"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0012",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Dao động cưỡng bức - tần số cộng hưởng biên độ",
+   "type": "dien-so",
+   "statement_vi": "Một hệ dao động cưỡng bức bởi ngoại lực điều hoà biên độ không đổi. Người ta đo được biên độ dao động ổn định BẰNG NHAU tại hai tần số góc omega_1 = 60 s^(-1) và omega_2 = 180 s^(-1). Hãy tìm biểu thức chữ rồi tính tần số góc CỘNG HƯỞNG biên độ của hệ.",
+   "statement_en": "A system is driven by a harmonic force of constant amplitude. The steady-state amplitude is found to be EQUAL at the two angular frequencies omega_1 = 60 s^-1 and omega_2 = 180 s^-1. Derive a literal expression and compute the amplitude-resonance angular frequency.",
+   "answer": "omega_ch = sqrt((omega_1^2 + omega_2^2)/2) = sqrt(18000) ≈ 134 s^(-1)",
+   "answer_numeric": 134.16,
+   "answer_unit": "1/s",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Biên độ dao động cưỡng bức ổn định là hàm của tần số ngoại lực; hai tần số cho cùng biên độ khi và chỉ khi MẪU SỐ của biểu thức biên độ bằng nhau.",
+     "latex": "A\\left(\\omega\\right) = \\dfrac{F_{0}/m}{\\sqrt{\\left(\\omega_{0}^{2}-\\omega^{2}\\right)^{2} + 4\\beta^{2}\\omega^{2}}}"
+    },
+    {
+     "explain": "Đặt hai mẫu số bằng nhau và chuyển vế. Hiệu hai bình phương ở vế trái phân tích thành tích, hiệu ở vế phải cũng vậy, nên nhân tử chung (omega_2^2 - omega_1^2) khác 0 được rút gọn.",
+     "latex": "\\left(\\omega_{0}^{2}-\\omega_{1}^{2}\\right)^{2} + 4\\beta^{2}\\omega_{1}^{2} = \\left(\\omega_{0}^{2}-\\omega_{2}^{2}\\right)^{2} + 4\\beta^{2}\\omega_{2}^{2}"
+    },
+    {
+     "explain": "Khai triển và rút gọn dẫn tới một hệ thức chỉ chứa tổ hợp omega_0^2 - 2*beta^2, mà đó CHÍNH LÀ bình phương tần số cộng hưởng biên độ. Đây là mấu chốt: ta không cần biết riêng omega_0 hay beta.",
+     "latex": "2\\omega_{0}^{2} - \\left(\\omega_{1}^{2}+\\omega_{2}^{2}\\right) = 4\\beta^{2} \\;\\Longrightarrow\\; \\omega_{0}^{2} - 2\\beta^{2} = \\dfrac{\\omega_{1}^{2}+\\omega_{2}^{2}}{2}"
+    },
+    {
+     "explain": "Nhắc lại rằng cộng hưởng biên độ (li độ) không nằm đúng tại omega_0 mà lệch xuống một chút do tắt dần.",
+     "latex": "\\omega_{ch} = \\sqrt{\\omega_{0}^{2} - 2\\beta^{2}} = \\sqrt{\\dfrac{\\omega_{1}^{2}+\\omega_{2}^{2}}{2}}"
+    },
+    {
+     "explain": "Thay số: đây là căn bậc hai của trung bình cộng các BÌNH PHƯƠNG (căn quân phương), không phải trung bình cộng của omega_1 và omega_2 (bằng 120).",
+     "latex": "\\omega_{ch} = \\sqrt{\\dfrac{3600 + 32400}{2}} = \\sqrt{18000} \\approx 134\\ \\text{s}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.bien-do-dao-dong-cuong-buc",
+    "physics.thpt.ru-co-hoc.tan-so-cong-huong-bien-do"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 10,
+   "skills": [
+    "biên độ dao động cưỡng bức",
+    "khử tham số bằng cách đặt hai biểu thức bằng nhau",
+    "phân biệt trung bình cộng và căn quân phương"
+   ],
+   "hints": [
+    "Hai biên độ bằng nhau thì hai mẫu số bằng nhau.",
+    "Kết quả chỉ phụ thuộc tổ hợp omega_0^2 - 2*beta^2."
+   ],
+   "tags": [
+    "irodov",
+    "dao-dong-cuong-buc",
+    "cong-huong",
+    "tan-so-cong-huong"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0013",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Dao động cưỡng bức - cộng hưởng vận tốc và công suất hấp thụ",
+   "type": "tu-luan",
+   "statement_vi": "Một dao động tử khối lượng m = 0,20 kg, hệ số tắt dần beta = 2,0 s^(-1), chịu ngoại lực điều hoà biên độ F_0 = 0,50 N. Hãy: (a) lập biểu thức chữ của công suất hấp thụ TRUNG BÌNH theo tần số ngoại lực; (b) chứng minh công suất này cực đại đúng tại omega = omega_0 (cộng hưởng vận tốc) và tính giá trị cực đại; (c) cho biết độ trễ pha của li độ so với ngoại lực tại cộng hưởng vận tốc.",
+   "statement_en": "An oscillator of mass m = 0.20 kg with damping coefficient beta = 2.0 s^-1 is driven by a harmonic force of amplitude F_0 = 0.50 N. (a) Derive a literal expression for the MEAN absorbed power versus driving frequency; (b) show that it peaks exactly at omega = omega_0 (velocity resonance) and compute the peak value; (c) state the phase lag of the displacement behind the force at velocity resonance.",
+   "answer": "P_tb(omega) = (F_0^2 * beta * omega^2)/(m[(omega_0^2-omega^2)^2 + 4 beta^2 omega^2]); cực đại tại omega = omega_0 với P_max = F_0^2/(4 m beta) = 0,156 W; độ trễ pha bằng pi/2",
+   "answer_numeric": 0.15625,
+   "answer_unit": "W",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Ở chế độ dừng, chỉ có LỰC CẢN tiêu thụ năng lượng trung bình (lực đàn hồi và quán tính chỉ trao đổi qua lại). Do đó công suất hấp thụ trung bình bằng công suất tiêu tán trên lực cản, tính qua bình phương trung bình của vận tốc.",
+     "latex": "\\left\\langle P\\right\\rangle = \\left\\langle bv^{2}\\right\\rangle = \\dfrac{1}{2}b\\,v_{m}^{2},\\qquad b = 2m\\beta"
+    },
+    {
+     "explain": "Biên độ vận tốc bằng omega nhân biên độ li độ. Thay biên độ li độ của dao động cưỡng bức vào.",
+     "latex": "v_{m} = \\omega A\\left(\\omega\\right) = \\dfrac{\\omega F_{0}/m}{\\sqrt{\\left(\\omega_{0}^{2}-\\omega^{2}\\right)^{2} + 4\\beta^{2}\\omega^{2}}}"
+    },
+    {
+     "explain": "Gộp lại để có biểu thức chữ của công suất trung bình.",
+     "latex": "\\left\\langle P\\right\\rangle = \\dfrac{F_{0}^{2}\\beta\\,\\omega^{2}}{m\\left[\\left(\\omega_{0}^{2}-\\omega^{2}\\right)^{2} + 4\\beta^{2}\\omega^{2}\\right]}"
+    },
+    {
+     "explain": "Chia cả tử và mẫu cho omega^2 để mẫu số trở thành một tổng có dạng bình phương cộng hằng số. Đây là biến đổi then chốt: mẫu số chỉ phụ thuộc omega qua tổ hợp (omega_0^2/omega - omega).",
+     "latex": "\\left\\langle P\\right\\rangle = \\dfrac{F_{0}^{2}\\beta}{m\\left[\\left(\\dfrac{\\omega_{0}^{2}}{\\omega} - \\omega\\right)^{2} + 4\\beta^{2}\\right]}"
+    },
+    {
+     "explain": "Mẫu số nhỏ nhất khi số hạng bình phương triệt tiêu, tức omega = omega_0. Khác với cộng hưởng BIÊN ĐỘ (lệch xuống dưới omega_0), cộng hưởng vận tốc nằm ĐÚNG tại omega_0 với mọi giá trị của beta.",
+     "latex": "\\omega = \\omega_{0} \\;\\Longrightarrow\\; \\left\\langle P\\right\\rangle_{\\max} = \\dfrac{F_{0}^{2}\\beta}{4m\\beta^{2}} = \\dfrac{F_{0}^{2}}{4m\\beta}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\left\\langle P\\right\\rangle_{\\max} = \\dfrac{0.50^{2}}{4\\cdot 0.20\\cdot 2.0} = 0.156\\ \\text{W}"
+    },
+    {
+     "explain": "Độ trễ pha suy từ công thức tang. Tại omega = omega_0 mẫu số triệt tiêu nên tang tiến ra vô cùng: pha trễ đúng bằng pi/2, nghĩa là VẬN TỐC cùng pha với ngoại lực - đúng điều kiện để công suất truyền là lớn nhất.",
+     "latex": "\\tan\\varphi = \\dfrac{2\\beta\\omega}{\\omega_{0}^{2}-\\omega^{2}} \\xrightarrow{\\ \\omega\\to\\omega_{0}\\ } \\infty \\;\\Longrightarrow\\; \\varphi = \\dfrac{\\pi}{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.cong-huong-van-toc",
+    "physics.thpt.ru-co-hoc.pha-dao-dong-cuong-buc",
+    "physics.thpt.ru-co-hoc.bien-do-dao-dong-cuong-buc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 13,
+   "skills": [
+    "công suất hấp thụ trung bình",
+    "phân biệt cộng hưởng biên độ và cộng hưởng vận tốc",
+    "tối ưu hoá bằng biến đổi mẫu số"
+   ],
+   "hints": [
+    "Chỉ lực cản tiêu thụ năng lượng trung bình.",
+    "Chia tử và mẫu cho omega^2 trước khi tìm cực trị."
+   ],
+   "tags": [
+    "irodov",
+    "dao-dong-cuong-buc",
+    "cong-huong-van-toc",
+    "cong-suat-hap-thu"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0014",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tenxơ quán tính - mômen quán tính đối với trục bất kì",
+   "type": "dien-so",
+   "statement_vi": "Một tấm phẳng mỏng đồng chất hình chữ nhật có khối lượng m = 2,0 kg, các cạnh a = 0,30 m và b = 0,40 m. Hãy lập biểu thức chữ rồi tính mômen quán tính của tấm đối với trục nằm TRONG mặt phẳng tấm, đi qua tâm và trùng với ĐƯỜNG CHÉO của hình chữ nhật.",
+   "statement_en": "A uniform thin rectangular plate of mass m = 2.0 kg has sides a = 0.30 m and b = 0.40 m. Derive a literal expression and compute its moment of inertia about the axis lying IN the plane of the plate, passing through the centre along the DIAGONAL.",
+   "answer": "I = m a^2 b^2 / (6 (a^2 + b^2)) = 0,0192 kg*m^2",
+   "answer_numeric": 0.0192,
+   "answer_unit": "kg*m^2",
+   "tolerance": 0.0002,
+   "solution_steps": [
+    {
+     "explain": "Chọn hệ trục chính tại tâm tấm: Ox dọc cạnh a, Oy dọc cạnh b, Oz vuông góc tấm. Vì tấm có ba mặt phẳng đối xứng nên đây đúng là hệ trục quán tính chính, tenxơ quán tính có dạng chéo và mọi tích quán tính bằng không.",
+     "latex": "I_{x} = \\dfrac{mb^{2}}{12},\\qquad I_{y} = \\dfrac{ma^{2}}{12},\\qquad I_{z} = \\dfrac{m\\left(a^{2}+b^{2}\\right)}{12}"
+    },
+    {
+     "explain": "Mômen quán tính đối với một trục bất kì qua gốc tính bằng cách chiếu tenxơ lên vectơ đơn vị của trục. Trong hệ trục chính công thức rút gọn thành tổ hợp các bình phương cosin chỉ phương.",
+     "latex": "I_{n} = I_{x}n_{x}^{2} + I_{y}n_{y}^{2} + I_{z}n_{z}^{2}"
+    },
+    {
+     "explain": "Viết vectơ đơn vị dọc đường chéo. Đường chéo nằm trong mặt phẳng tấm nên thành phần theo Oz bằng không, số hạng I_z bị loại.",
+     "latex": "\\vec{n} = \\dfrac{\\left(a,\\,b,\\,0\\right)}{\\sqrt{a^{2}+b^{2}}} \\;\\Longrightarrow\\; n_{x}^{2} = \\dfrac{a^{2}}{a^{2}+b^{2}},\\quad n_{y}^{2} = \\dfrac{b^{2}}{a^{2}+b^{2}},\\quad n_{z} = 0"
+    },
+    {
+     "explain": "Thay vào và rút gọn: hai số hạng có cùng tử số m a^2 b^2 nên cộng lại rất gọn.",
+     "latex": "I_{n} = \\dfrac{1}{a^{2}+b^{2}}\\left(\\dfrac{mb^{2}}{12}a^{2} + \\dfrac{ma^{2}}{12}b^{2}\\right) = \\dfrac{ma^{2}b^{2}}{6\\left(a^{2}+b^{2}\\right)}"
+    },
+    {
+     "explain": "Thay số. Kiểm tra hợp lí: kết quả 0,0192 nằm giữa I_y = 0,015 và I_x = 0,0267 đúng như phải thế, vì trục đường chéo nằm giữa hai trục chính đó.",
+     "latex": "I_{n} = \\dfrac{2.0\\cdot 0.09\\cdot 0.16}{6\\cdot 0.25} = 0.0192\\ \\text{kg}\\cdot\\text{m}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.momen-quan-tinh-truc-bat-ki",
+    "physics.dai-hoc.ru-vat-ran.tenxo-quan-tinh",
+    "physics.dai-hoc.ru-vat-ran.truc-quan-tinh-chinh"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 12,
+   "skills": [
+    "nhận diện hệ trục quán tính chính",
+    "chiếu tenxơ quán tính lên trục bất kì",
+    "kiểm tra tính hợp lí của kết quả bằng chặn trên chặn dưới"
+   ],
+   "hints": [
+    "Tâm tấm là hệ trục chính, tenxơ chéo.",
+    "Cosin chỉ phương của đường chéo là a và b chia độ dài đường chéo."
+   ],
+   "tags": [
+    "irodov",
+    "vat-ran",
+    "tenxo-quan-tinh",
+    "momen-quan-tinh"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0015",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Con quay - mômen hồi chuyển tác dụng lên ổ trục",
+   "type": "dien-so",
+   "statement_vi": "Một bánh đà có mômen quán tính I = 0,20 kg*m^2 quay quanh trục nằm ngang với tần số n = 60 vòng/s. Trục dài l = 0,60 m và được đỡ bởi hai ổ trục ở hai đầu; toàn bộ hệ bị cưỡng bức quay quanh trục thẳng đứng với tần số n' = 2,0 vòng/s. Bỏ qua trọng lượng. Hãy tính LỰC hồi chuyển tác dụng lên mỗi ổ trục.",
+   "statement_en": "A flywheel of moment of inertia I = 0.20 kg*m^2 spins about a horizontal shaft at n = 60 rev/s. The shaft is l = 0.60 m long and rests on two bearings at its ends; the whole system is forced to rotate about a vertical axis at n' = 2.0 rev/s. Neglect weight. Find the gyroscopic FORCE on each bearing.",
+   "answer": "M = I*omega*omega' = I*(2 pi n)(2 pi n') = 4 pi^2 I n n' ≈ 947 N*m; F = M/l ≈ 1,58*10^3 N",
+   "answer_numeric": 1579.0,
+   "answer_unit": "N",
+   "tolerance": 10.0,
+   "solution_steps": [
+    {
+     "explain": "Khi trục con quay bị cưỡng bức tiến động, mômen động lượng riêng L quay theo. Tốc độ biến thiên của L đòi hỏi một mômen lực ngoài, mà theo định luật III Newton con quay tác dụng ngược lại lên ổ trục một mômen gọi là mômen hồi chuyển.",
+     "latex": "\\vec{M} = \\dfrac{d\\vec{L}}{dt} = \\vec{\\omega}' \\times \\vec{L}"
+    },
+    {
+     "explain": "Ở đây trục quay riêng nằm ngang còn trục tiến động thẳng đứng nên hai vectơ VUÔNG GÓC, tích có hướng lấy độ lớn là tích các module.",
+     "latex": "M = I\\,\\omega\\,\\omega' = I\\left(2\\pi n\\right)\\left(2\\pi n'\\right) = 4\\pi^{2}I\\,n\\,n'"
+    },
+    {
+     "explain": "Thay số cho mômen.",
+     "latex": "M = 4\\pi^{2}\\cdot 0.20\\cdot 60\\cdot 2.0 \\approx 947\\ \\text{N}\\cdot\\text{m}"
+    },
+    {
+     "explain": "Cặp lực trên hai ổ trục có cánh tay đòn bằng chiều dài trục, nên độ lớn mỗi lực bằng mômen chia chiều dài. Hai lực này ngược chiều nhau và vuông góc với cả hai trục quay.",
+     "latex": "F = \\dfrac{M}{l} = \\dfrac{4\\pi^{2}I n n'}{l} = \\dfrac{947}{0.60} \\approx 1.58\\times 10^{3}\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.momen-con-quay-gyroscopic",
+    "physics.dai-hoc.ru-vat-ran.tien-dong-tu-do-con-quay-doi-xung",
+    "physics.dai-hoc.ru-vat-ran.momen-dong-luong-qua-tenxo"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 8,
+   "skills": [
+    "mômen hồi chuyển",
+    "tích có hướng của hai vectơ vận tốc góc",
+    "chuyển mômen thành cặp lực trên ổ trục"
+   ],
+   "hints": [
+    "Đổi vòng/s sang rad/s trước.",
+    "Cặp lực có cánh tay đòn bằng chiều dài trục."
+   ],
+   "tags": [
+    "irodov",
+    "con-quay",
+    "momen-hoi-chuyen",
+    "vat-ran"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0016",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Phân bố Maxwell - ba tốc độ đặc trưng",
+   "type": "dien-so",
+   "statement_vi": "Khí oxygen (M = 32 g/mol) ở nhiệt độ T = 300 K. Hãy viết biểu thức chữ của ba tốc độ đặc trưng (khả dĩ nhất, trung bình số học, quân phương), chỉ ra TỈ SỐ giữa chúng, rồi điền giá trị TỐC ĐỘ TRUNG BÌNH SỐ HỌC. Lấy R = 8,314 J/(mol*K).",
+   "statement_en": "Oxygen gas (M = 32 g/mol) is at T = 300 K. Write literal expressions for the three characteristic speeds (most probable, mean, root-mean-square), state their RATIO, and enter the MEAN (arithmetic average) speed. Take R = 8.314 J/(mol*K).",
+   "answer": "v_kd = sqrt(2RT/M) ≈ 395 m/s; <v> = sqrt(8RT/(pi M)) ≈ 446 m/s; v_qp = sqrt(3RT/M) ≈ 484 m/s; tỉ số v_kd : <v> : v_qp = 1 : 1,128 : 1,225 = sqrt(2) : sqrt(8/pi) : sqrt(3)",
+   "answer_numeric": 445.5,
+   "answer_unit": "m/s",
+   "tolerance": 2.0,
+   "solution_steps": [
+    {
+     "explain": "Ba tốc độ đặc trưng đến từ ba phép toán KHÁC NHAU trên cùng một hàm phân bố theo module vận tốc: cực đại của hàm, kì vọng của v, và căn của kì vọng v bình phương. Vì vậy chúng nhất thiết khác nhau.",
+     "latex": "F\\left(v\\right) = 4\\pi\\left(\\dfrac{m}{2\\pi kT}\\right)^{3/2}v^{2}e^{-mv^{2}/2kT}"
+    },
+    {
+     "explain": "Viết ba kết quả chuẩn theo khối lượng mol. Chú ý tất cả đều có dạng căn của (RT/M) nhân một hệ số thuần số.",
+     "latex": "v_{kd} = \\sqrt{\\dfrac{2RT}{M}},\\qquad \\left\\langle v\\right\\rangle = \\sqrt{\\dfrac{8RT}{\\pi M}},\\qquad v_{qp} = \\sqrt{\\dfrac{3RT}{M}}"
+    },
+    {
+     "explain": "Chia cả ba cho v_kd để có tỉ số thuần số, độc lập với chất khí và nhiệt độ. Đây là kết quả cần thuộc.",
+     "latex": "v_{kd} : \\left\\langle v\\right\\rangle : v_{qp} = \\sqrt{2} : \\sqrt{\\dfrac{8}{\\pi}} : \\sqrt{3} = 1 : 1.128 : 1.225"
+    },
+    {
+     "explain": "Thay số cho oxygen ở 300 K.",
+     "latex": "\\left\\langle v\\right\\rangle = \\sqrt{\\dfrac{8\\cdot 8.314\\cdot 300}{\\pi\\cdot 0.032}} \\approx 446\\ \\text{m/s}"
+    },
+    {
+     "explain": "Kiểm tra hai giá trị còn lại để chắc chắn thứ tự đúng: khả dĩ nhất luôn NHỎ NHẤT, quân phương luôn LỚN NHẤT (do đuôi phải của phân bố kéo dài).",
+     "latex": "v_{kd} \\approx 395\\ \\text{m/s} < \\left\\langle v\\right\\rangle \\approx 446\\ \\text{m/s} < v_{qp} \\approx 484\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.phan-bo-maxwell-theo-modun",
+    "physics.dai-hoc.ru-nhiet.ti-so-cac-toc-do-dac-trung"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 6,
+   "skills": [
+    "ba tốc độ đặc trưng của phân bố Maxwell",
+    "đổi khối lượng phân tử sang khối lượng mol",
+    "nhớ thứ tự ba tốc độ"
+   ],
+   "hints": [
+    "Cả ba đều có dạng hệ số nhân căn(RT/M).",
+    "Thứ tự: khả dĩ nhất < trung bình < quân phương."
+   ],
+   "tags": [
+    "irodov",
+    "phan-bo-maxwell",
+    "toc-do-dac-trung",
+    "vat-li-phan-tu"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0017",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Phân bố Maxwell theo động năng - nghịch lí giá trị khả dĩ nhất",
+   "type": "tu-luan",
+   "statement_vi": "Từ phân bố Maxwell theo module vận tốc, hãy chuyển sang phân bố theo ĐỘNG NĂNG của phân tử. Tìm động năng khả dĩ nhất eps_kd, so sánh với đại lượng (1/2)m v_kd^2 tính từ tốc độ khả dĩ nhất, và giải thích vì sao hai kết quả KHÁC nhau. Áp dụng số ở T = 300 K (k = 1,381*10^(-23) J/K).",
+   "statement_en": "Starting from the Maxwell distribution over speed moduli, transform to the distribution over molecular KINETIC ENERGY. Find the most probable energy eps_mp, compare it with (1/2)m v_mp^2 obtained from the most probable speed, and explain why the two DIFFER. Evaluate at T = 300 K (k = 1.381e-23 J/K).",
+   "answer": "f(eps) = (2/sqrt(pi)) (kT)^(-3/2) sqrt(eps) e^(-eps/kT); eps_kd = kT/2 ≈ 2,07*10^(-21) J ≈ 0,0129 eV, trong khi (1/2)m v_kd^2 = kT ≈ 0,0259 eV; hai kết quả khác nhau vì phép đổi biến kéo theo Jacobian dv/d(eps) không phải hằng số",
+   "answer_numeric": 2.071e-21,
+   "answer_unit": "J",
+   "tolerance": 2e-23,
+   "solution_steps": [
+    {
+     "explain": "Nguyên tắc đổi biến của hàm mật độ xác suất: xác suất trong các khoảng TƯƠNG ỨNG phải bằng nhau, nên mật độ mới bằng mật độ cũ nhân trị tuyệt đối của đạo hàm biến cũ theo biến mới.",
+     "latex": "f\\left(\\varepsilon\\right)d\\varepsilon = F\\left(v\\right)dv \\;\\Longrightarrow\\; f\\left(\\varepsilon\\right) = F\\left(v\\right)\\left|\\dfrac{dv}{d\\varepsilon}\\right|"
+    },
+    {
+     "explain": "Tính các đại lượng cần thiết từ liên hệ eps = m v^2 / 2.",
+     "latex": "v = \\sqrt{\\dfrac{2\\varepsilon}{m}},\\qquad \\dfrac{dv}{d\\varepsilon} = \\dfrac{1}{\\sqrt{2m\\varepsilon}}"
+    },
+    {
+     "explain": "Thay vào phân bố Maxwell theo module và rút gọn. Kết quả: các hằng số chứa m triệt tiêu hết, phân bố theo năng lượng KHÔNG phụ thuộc khối lượng phân tử - một kết quả đẹp và quan trọng.",
+     "latex": "f\\left(\\varepsilon\\right) = \\dfrac{2}{\\sqrt{\\pi}}\\left(kT\\right)^{-3/2}\\sqrt{\\varepsilon}\\;e^{-\\varepsilon/kT}"
+    },
+    {
+     "explain": "Tìm cực đại bằng cách cho đạo hàm bằng không. Tiện nhất là đạo hàm hàm lôga để tách tích thành tổng.",
+     "latex": "\\dfrac{d}{d\\varepsilon}\\ln f = \\dfrac{1}{2\\varepsilon} - \\dfrac{1}{kT} = 0 \\;\\Longrightarrow\\; \\varepsilon_{kd} = \\dfrac{kT}{2}"
+    },
+    {
+     "explain": "Đối chiếu với tốc độ khả dĩ nhất: từ v_kd = căn(2kT/m) suy ra động năng ứng với nó bằng kT, tức GẤP ĐÔI eps_kd.",
+     "latex": "\\dfrac{1}{2}mv_{kd}^{2} = \\dfrac{1}{2}m\\cdot\\dfrac{2kT}{m} = kT \\ne \\varepsilon_{kd} = \\dfrac{kT}{2}"
+    },
+    {
+     "explain": "Giải thích nghịch lí: điểm cực đại của một MẬT ĐỘ xác suất không bất biến khi đổi biến phi tuyến, vì thừa số Jacobian 1/căn(2 m eps) tự nó cũng phụ thuộc biến và làm dịch chuyển đỉnh. Chỉ những đại lượng dạng KÌ VỌNG mới chuyển đổi trực tiếp; thật vậy giá trị trung bình vẫn nhất quán, bằng 3kT/2 theo cả hai cách tính.",
+     "latex": "\\left\\langle \\varepsilon\\right\\rangle = \\dfrac{3}{2}kT \\quad \\text{(bat bien qua phep doi bien)}"
+    },
+    {
+     "explain": "Thay số ở T = 300 K.",
+     "latex": "\\varepsilon_{kd} = \\dfrac{1.381\\times 10^{-23}\\cdot 300}{2} \\approx 2.07\\times 10^{-21}\\ \\text{J} \\approx 0.0129\\ \\text{eV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.phan-bo-maxwell-theo-nang-luong",
+    "physics.dai-hoc.ru-nhiet.nang-luong-kha-di-nhat",
+    "physics.dai-hoc.ru-nhiet.phan-bo-maxwell-theo-modun"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 15,
+   "skills": [
+    "đổi biến của hàm mật độ xác suất",
+    "đạo hàm lôga để tìm cực trị",
+    "hiểu vai trò của Jacobian trong thống kê"
+   ],
+   "hints": [
+    "Bảo toàn xác suất chứ không bảo toàn mật độ.",
+    "Lấy ln trước khi đạo hàm."
+   ],
+   "tags": [
+    "irodov",
+    "phan-bo-maxwell",
+    "doi-bien-xac-suat",
+    "dong-nang-phan-tu"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0018",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Phân bố Maxwell - mômen bậc bốn của tốc độ",
+   "type": "tu-luan",
+   "statement_vi": "Dùng phân bố Maxwell theo module vận tốc, hãy tính giá trị trung bình của LŨY THỪA BẬC BỐN của tốc độ phân tử, biểu diễn kết quả theo kT/m. Từ đó tính đại lượng căn bậc bốn của <v^4> cho oxygen (M = 32 g/mol) ở T = 300 K và so sánh với tốc độ quân phương. Cho k = 1,381*10^(-23) J/K và N_A = 6,022*10^23 mol^(-1).",
+   "statement_en": "Using the Maxwell distribution of molecular speeds, evaluate the mean of the FOURTH power of the speed in terms of kT/m. Then compute the fourth root of <v^4> for oxygen (M = 32 g/mol) at T = 300 K and compare it with the root-mean-square speed. Take k = 1.381e-23 J/K and N_A = 6.022e23 per mole.",
+   "answer": "<v^4> = 15 (kT/m)^2; căn bậc bốn của <v^4> ≈ 549 m/s, lớn hơn v_qp ≈ 484 m/s vì mômen bậc càng cao càng ưu tiên đuôi phải của phân bố",
+   "answer_numeric": 549.4,
+   "answer_unit": "m/s",
+   "tolerance": 3.0,
+   "solution_steps": [
+    {
+     "explain": "Viết định nghĩa giá trị trung bình theo hàm phân bố. Vì F(v) đã chuẩn hoá, chỉ cần lấy tích phân của v^4 nhân F(v).",
+     "latex": "\\left\\langle v^{4}\\right\\rangle = \\int_{0}^{\\infty} v^{4}F\\left(v\\right)dv = 4\\pi\\left(\\dfrac{\\alpha}{\\pi}\\right)^{3/2}\\int_{0}^{\\infty} v^{6}e^{-\\alpha v^{2}}dv,\\qquad \\alpha = \\dfrac{m}{2kT}"
+    },
+    {
+     "explain": "Dùng công thức tích phân Gauss có lũy thừa chẵn - chính là kết quả thu được bằng cách vi phân liên tiếp tích phân Euler - Poisson theo tham số alpha. Với số mũ 6 ta có n = 3, giai thừa kép của 5 bằng 15.",
+     "latex": "\\int_{0}^{\\infty}v^{2n}e^{-\\alpha v^{2}}dv = \\dfrac{\\left(2n-1\\right)!!}{2^{\\,n+1}\\alpha^{\\,n}}\\sqrt{\\dfrac{\\pi}{\\alpha}} \\;\\Longrightarrow\\; \\int_{0}^{\\infty}v^{6}e^{-\\alpha v^{2}}dv = \\dfrac{15}{16\\alpha^{3}}\\sqrt{\\dfrac{\\pi}{\\alpha}}"
+    },
+    {
+     "explain": "Thay vào và rút gọn. Chú ý cách các lũy thừa của pi và alpha triệt tiêu - đây là bước biến đổi giải tích chính của bài.",
+     "latex": "\\left\\langle v^{4}\\right\\rangle = 4\\pi\\cdot\\dfrac{\\alpha^{3/2}}{\\pi^{3/2}}\\cdot\\dfrac{15}{16\\alpha^{3}}\\cdot\\dfrac{\\pi^{1/2}}{\\alpha^{1/2}} = \\dfrac{15}{4\\alpha^{2}}"
+    },
+    {
+     "explain": "Thay alpha = m/(2kT) để ra biểu thức cuối.",
+     "latex": "\\left\\langle v^{4}\\right\\rangle = \\dfrac{15}{4}\\cdot\\dfrac{4k^{2}T^{2}}{m^{2}} = 15\\left(\\dfrac{kT}{m}\\right)^{2}"
+    },
+    {
+     "explain": "Áp dụng số cho oxygen: m = M/N_A = 5,314*10^(-26) kg, do đó kT/m = 7,795*10^4 m^2/s^2.",
+     "latex": "\\left\\langle v^{4}\\right\\rangle = 15\\left(7.795\\times 10^{4}\\right)^{2} \\approx 9.11\\times 10^{10}\\ \\text{m}^{4}/\\text{s}^{4} \\;\\Longrightarrow\\; \\left\\langle v^{4}\\right\\rangle^{1/4} \\approx 549\\ \\text{m/s}"
+    },
+    {
+     "explain": "So sánh với tốc độ quân phương. Tổng quát, căn bậc n của mômen bậc n tăng theo n, vì mômen bậc càng cao thì trọng số của các phân tử nhanh (đuôi phải) càng lớn. Kiểm tra chữ: tỉ số bằng căn bậc bốn của 15/9, tức khoảng 1,136.",
+     "latex": "\\dfrac{\\left\\langle v^{4}\\right\\rangle^{1/4}}{v_{qp}} = \\left(\\dfrac{15}{9}\\right)^{1/4} \\approx 1.14"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.phan-bo-maxwell-theo-modun",
+    "physics.dai-hoc.ru-nhiet.phan-bo-maxwell-rut-gon",
+    "math.dai-hoc.ru-giai-tich.tich-phan-gauss-tong-quat"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 18,
+   "skills": [
+    "tính mômen của phân bố Maxwell",
+    "tích phân Gauss với lũy thừa chẵn",
+    "rút gọn lũy thừa của tham số"
+   ],
+   "hints": [
+    "Đặt alpha = m/(2kT) rồi đưa về tích phân chuẩn.",
+    "Giai thừa kép (2n-1)!! với n = 3 bằng 15."
+   ],
+   "tags": [
+    "irodov",
+    "phan-bo-maxwell",
+    "tich-phan-gauss",
+    "momen-thong-ke"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0019",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Quãng đường tự do trung bình và tần số va chạm",
+   "type": "dien-so",
+   "statement_vi": "Khí nitrogen (M = 28 g/mol, đường kính hiệu dụng d = 0,37 nm) ở T = 300 K và p = 1,0 atm = 1,013*10^5 Pa. Hãy lập biểu thức chữ của quãng đường tự do trung bình theo p và T, rồi tính giá trị của nó (đơn vị mét). Cho k = 1,381*10^(-23) J/K.",
+   "statement_en": "Nitrogen gas (M = 28 g/mol, effective diameter d = 0.37 nm) at T = 300 K and p = 1.0 atm = 1.013e5 Pa. Derive a literal expression for the mean free path in terms of p and T and compute it in metres. Take k = 1.381e-23 J/K.",
+   "answer": "lambda = kT/(sqrt(2) pi d^2 p) ≈ 6,7*10^(-8) m; kèm theo <v> ≈ 476 m/s và tần số va chạm z = <v>/lambda ≈ 7,1*10^9 s^(-1)",
+   "answer_numeric": 6.72e-08,
+   "answer_unit": "m",
+   "tolerance": 2e-09,
+   "solution_steps": [
+    {
+     "explain": "Định nghĩa tiết diện hiệu dụng cho mô hình quả cầu cứng: hai phân tử va chạm khi tâm của chúng đi qua cách nhau dưới d, nên tiết diện là hình tròn bán kính d.",
+     "latex": "\\sigma = \\pi d^{2}"
+    },
+    {
+     "explain": "Quãng đường tự do trung bình bằng nghịch đảo của tích tiết diện với mật độ hạt; hệ số căn 2 xuất hiện vì phải dùng tốc độ TƯƠNG ĐỐI trung bình giữa hai phân tử, lớn hơn tốc độ trung bình căn 2 lần.",
+     "latex": "\\lambda = \\dfrac{1}{\\sqrt{2}\\,\\sigma n},\\qquad \\left\\langle v_{rel}\\right\\rangle = \\sqrt{2}\\left\\langle v\\right\\rangle"
+    },
+    {
+     "explain": "Thay mật độ hạt từ phương trình trạng thái khí lí tưởng n = p/(kT) để có biểu thức chữ theo các đại lượng đo được.",
+     "latex": "\\lambda = \\dfrac{kT}{\\sqrt{2}\\,\\pi d^{2}p}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\lambda = \\dfrac{1.381\\times 10^{-23}\\cdot 300}{1.414\\cdot \\pi\\cdot\\left(0.37\\times 10^{-9}\\right)^{2}\\cdot 1.013\\times 10^{5}} \\approx 6.7\\times 10^{-8}\\ \\text{m}"
+    },
+    {
+     "explain": "Tính thêm tần số va chạm của MỘT phân tử để thấy thang bậc: mỗi phân tử va chạm khoảng bảy tỉ lần mỗi giây, giải thích vì sao khí đạt cân bằng gần như tức thời.",
+     "latex": "\\left\\langle v\\right\\rangle = \\sqrt{\\dfrac{8RT}{\\pi M}} \\approx 476\\ \\text{m/s},\\qquad z = \\dfrac{\\left\\langle v\\right\\rangle}{\\lambda} \\approx 7.1\\times 10^{9}\\ \\text{s}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.tiet-dien-hieu-dung",
+    "physics.dai-hoc.ru-nhiet.van-toc-tuong-doi-trung-binh",
+    "physics.dai-hoc.ru-nhiet.tan-so-va-cham-mot-phan-tu",
+    "physics.dai-hoc.vat-li-thong-ke.quang-duong-tu-do-trung-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 8,
+   "skills": [
+    "tiết diện hiệu dụng",
+    "nguồn gốc hệ số căn 2 trong quãng đường tự do",
+    "dùng phương trình trạng thái để đổi biến"
+   ],
+   "hints": [
+    "n = p/(kT).",
+    "Hệ số căn 2 đến từ tốc độ tương đối."
+   ],
+   "tags": [
+    "irodov",
+    "quang-duong-tu-do",
+    "tiet-dien-hieu-dung",
+    "vat-li-phan-tu"
+   ],
+   "sources": [
+    "https://lecdem.physics.umd.edu/i/i6/i6-02.html"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0020",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Hệ số vận chuyển - độ nhớt không phụ thuộc áp suất",
+   "type": "tu-luan",
+   "statement_vi": "Hãy chứng minh rằng ở nhiệt độ không đổi, độ nhớt của một chất khí loãng KHÔNG phụ thuộc áp suất, và chỉ ra sự phụ thuộc của nó vào nhiệt độ. Sau đó ước lượng áp suất mà dưới đó kết luận trên không còn đúng đối với nitrogen ở 300 K chứa trong bình kích thước L = 0,10 m (d = 0,37 nm; k = 1,381*10^(-23) J/K).",
+   "statement_en": "Show that at fixed temperature the viscosity of a dilute gas is INDEPENDENT of pressure, and give its temperature dependence. Then estimate the pressure below which this conclusion fails for nitrogen at 300 K in a vessel of size L = 0.10 m (d = 0.37 nm; k = 1.381e-23 J/K).",
+   "answer": "eta = (1/3) rho <v> lambda; vì rho tỉ lệ p còn lambda tỉ lệ 1/p nên tích không phụ thuộc p; eta tỉ lệ với căn T. Kết luận sai khi lambda vượt kích thước bình: p < kT/(sqrt(2) pi d^2 L) ≈ 0,068 Pa (khoảng 5*10^(-4) Torr)",
+   "answer_numeric": 0.068,
+   "answer_unit": "Pa",
+   "tolerance": 0.003,
+   "solution_steps": [
+    {
+     "explain": "Xuất phát từ biểu thức của lí thuyết động học sơ cấp cho hệ số nhớt: nó là tích của ba đại lượng, trong đó chỉ mật độ khối và quãng đường tự do phụ thuộc áp suất.",
+     "latex": "\\eta = \\dfrac{1}{3}\\rho\\left\\langle v\\right\\rangle\\lambda"
+    },
+    {
+     "explain": "Viết rõ sự phụ thuộc áp suất của từng thừa số ở nhiệt độ cố định. Mật độ khối tỉ lệ THUẬN với p, còn quãng đường tự do tỉ lệ NGHỊCH với p.",
+     "latex": "\\rho = \\dfrac{pM}{RT} \\propto p,\\qquad \\lambda = \\dfrac{kT}{\\sqrt{2}\\pi d^{2}p} \\propto \\dfrac{1}{p}"
+    },
+    {
+     "explain": "Nhân lại: hai sự phụ thuộc triệt tiêu chính xác. Ý nghĩa vật lí sâu sắc: khi giảm áp suất, số phân tử chở động lượng ít đi nhưng mỗi phân tử lại chở đi XA hơn đúng bấy nhiêu lần.",
+     "latex": "\\rho\\lambda = \\dfrac{pM}{RT}\\cdot\\dfrac{kT}{\\sqrt{2}\\pi d^{2}p} = \\dfrac{M k}{\\sqrt{2}\\pi d^{2}R} = \\text{const}"
+    },
+    {
+     "explain": "Suy ra biểu thức chữ cuối cùng. Chỉ còn tốc độ trung bình phụ thuộc nhiệt độ nên độ nhớt tỉ lệ với căn bậc hai của T - trái ngược hoàn toàn với chất lỏng (độ nhớt giảm khi nóng lên).",
+     "latex": "\\eta = \\dfrac{1}{3}\\cdot\\dfrac{Mk}{\\sqrt{2}\\pi d^{2}R}\\left\\langle v\\right\\rangle \\propto \\sqrt{T}"
+    },
+    {
+     "explain": "Lập luận giới hạn: mô hình trên giả thiết phân tử va chạm với NHAU nhiều hơn với thành bình, tức lambda nhỏ hơn nhiều kích thước bình. Khi lambda đạt cỡ L, khí chuyển sang chế độ phân tử tự do (Knudsen) và độ nhớt bắt đầu giảm theo p.",
+     "latex": "\\lambda \\approx L \\;\\Longrightarrow\\; p_{gh} = \\dfrac{kT}{\\sqrt{2}\\,\\pi d^{2}L}"
+    },
+    {
+     "explain": "Thay số. Kết quả cỡ vài phần trăm pascal, tức chân không khá cao - đúng nguyên lí bình Dewar giữ nhiệt.",
+     "latex": "p_{gh} = \\dfrac{1.381\\times 10^{-23}\\cdot 300}{1.414\\cdot\\pi\\cdot\\left(0.37\\times 10^{-9}\\right)^{2}\\cdot 0.10} \\approx 0.068\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.do-nhot-khong-phu-thuoc-ap-suat",
+    "physics.dai-hoc.ru-nhiet.lien-he-cac-he-so-van-chuyen",
+    "physics.dai-hoc.ru-nhiet.tiet-dien-hieu-dung"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 14,
+   "skills": [
+    "phân tích sự phụ thuộc tham số của hệ số vận chuyển",
+    "xác định miền áp dụng của mô hình",
+    "ước lượng bậc độ lớn"
+   ],
+   "hints": [
+    "Viết riêng sự phụ thuộc p của rho và của lambda.",
+    "Mô hình sai khi lambda đạt cỡ kích thước bình."
+   ],
+   "tags": [
+    "irodov",
+    "he-so-van-chuyen",
+    "do-nhot",
+    "chan-khong"
+   ],
+   "sources": [
+    "https://lecdem.physics.umd.edu/i/i6/i6-02.html"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0021",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Khí Van der Waals - các hằng số tới hạn",
+   "type": "dien-so",
+   "statement_vi": "Khí carbon dioxide có các hằng số Van der Waals a = 0,364 Pa*m^6/mol^2 và b = 4,267*10^(-5) m^3/mol. Hãy dẫn ra biểu thức chữ của ba hằng số tới hạn từ điều kiện điểm uốn của đường đẳng nhiệt tới hạn, tính chúng, và kiểm tra hệ số tới hạn K = R*T_c/(p_c*V_c). Lấy R = 8,314 J/(mol*K). Điền giá trị NHIỆT ĐỘ TỚI HẠN.",
+   "statement_en": "Carbon dioxide has van der Waals constants a = 0.364 Pa*m^6/mol^2 and b = 4.267e-5 m^3/mol. Derive literal expressions for the three critical constants from the inflection condition on the critical isotherm, evaluate them, and check the critical coefficient K = R*T_c/(p_c*V_c). Take R = 8.314 J/(mol*K). Enter the CRITICAL TEMPERATURE.",
+   "answer": "V_c = 3b = 1,28*10^(-4) m^3/mol; T_c = 8a/(27Rb) ≈ 304 K (31 do C); p_c = a/(27b^2) ≈ 7,40 MPa ≈ 73 atm; K = 8/3 ≈ 2,67",
+   "answer_numeric": 304.0,
+   "answer_unit": "K",
+   "tolerance": 2.0,
+   "solution_steps": [
+    {
+     "explain": "Điểm tới hạn là điểm UỐN NGANG của đường đẳng nhiệt trên giản đồ p - V: tại đó cả đạo hàm bậc nhất lẫn bậc hai của p theo V đều triệt tiêu. Đây là hai phương trình cho hai ẩn V_c, T_c.",
+     "latex": "\\left(\\dfrac{\\partial p}{\\partial V}\\right)_{T_{c}} = 0,\\qquad \\left(\\dfrac{\\partial^{2} p}{\\partial V^{2}}\\right)_{T_{c}} = 0"
+    },
+    {
+     "explain": "Viết phương trình Van der Waals cho một mol rồi lấy hai đạo hàm.",
+     "latex": "p = \\dfrac{RT}{V-b} - \\dfrac{a}{V^{2}} \\;\\Longrightarrow\\; -\\dfrac{RT}{\\left(V-b\\right)^{2}} + \\dfrac{2a}{V^{3}} = 0,\\qquad \\dfrac{2RT}{\\left(V-b\\right)^{3}} - \\dfrac{6a}{V^{4}} = 0"
+    },
+    {
+     "explain": "Chia phương trình thứ hai cho phương trình thứ nhất để khử hoàn toàn RT và a. Đây là bước rút gọn quyết định, cho ngay thể tích tới hạn.",
+     "latex": "\\dfrac{2}{V-b} = \\dfrac{3}{V} \\;\\Longrightarrow\\; V_{c} = 3b"
+    },
+    {
+     "explain": "Thế V_c vào một trong hai phương trình đạo hàm để có nhiệt độ tới hạn, rồi thế cả hai vào phương trình trạng thái để có áp suất tới hạn.",
+     "latex": "T_{c} = \\dfrac{8a}{27Rb},\\qquad p_{c} = \\dfrac{a}{27b^{2}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "V_{c} = 1.28\\times 10^{-4}\\ \\text{m}^{3}/\\text{mol},\\quad T_{c} = \\dfrac{8\\cdot 0.364}{27\\cdot 8.314\\cdot 4.267\\times 10^{-5}} \\approx 304\\ \\text{K},\\quad p_{c} = \\dfrac{0.364}{27\\cdot\\left(4.267\\times 10^{-5}\\right)^{2}} \\approx 7.40\\ \\text{MPa}"
+    },
+    {
+     "explain": "Kiểm tra hệ số tới hạn: mọi khí Van der Waals đều cho cùng một số 8/3, không phụ thuộc a và b. Thực nghiệm cho khoảng 3,5 - 4 nên đây là thước đo mức thô sơ của mô hình.",
+     "latex": "K = \\dfrac{RT_{c}}{p_{c}V_{c}} = \\dfrac{R}{3b}\\cdot\\dfrac{8a}{27Rb}\\cdot\\dfrac{27b^{2}}{a} = \\dfrac{8}{3} \\approx 2.67"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.hang-so-toi-han-van-der-waals",
+    "physics.dai-hoc.ru-nhiet.he-so-toi-han",
+    "physics.dai-hoc.ru-nhiet.phuong-trinh-van-der-waals-rut-gon"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 12,
+   "skills": [
+    "điều kiện điểm uốn ngang",
+    "khử tham số bằng cách chia hai phương trình",
+    "kiểm tra bằng đại lượng không thứ nguyên"
+   ],
+   "hints": [
+    "Điểm tới hạn: đạo hàm bậc nhất VÀ bậc hai của p theo V đều bằng 0.",
+    "Chia hai phương trình cho nhau để khử RT và a."
+   ],
+   "tags": [
+    "irodov",
+    "van-der-waals",
+    "diem-toi-han",
+    "khi-thuc"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Van_der_Waals_constants_(data_page)"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0022",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Khí Van der Waals - dãn vào chân không",
+   "type": "dien-so",
+   "statement_vi": "Một mol khí carbon dioxide (a = 0,364 Pa*m^6/mol^2, C_V = 5R/2) dãn ĐOẠN NHIỆT vào chân không từ thể tích V1 = 1,0 L đến V2 = 10,0 L trong bình cách nhiệt cứng. Hãy lập biểu thức chữ cho độ biến thiên nhiệt độ và tính giá trị của nó. Lấy R = 8,314 J/(mol*K).",
+   "statement_en": "One mole of carbon dioxide (a = 0.364 Pa*m^6/mol^2, C_V = 5R/2) expands ADIABATICALLY into vacuum from V1 = 1.0 L to V2 = 10.0 L inside a rigid insulated vessel. Derive a literal expression for the temperature change and compute it. Take R = 8.314 J/(mol*K).",
+   "answer": "Delta T = -(a/C_V)(1/V1 - 1/V2) ≈ -15,8 K (khí lạnh đi)",
+   "answer_numeric": -15.76,
+   "answer_unit": "K",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Bình cứng và cách nhiệt nên khí không nhận nhiệt và không sinh công với bên ngoài: NỘI NĂNG được bảo toàn. Đây là điểm khác biệt then chốt so với dãn đoạn nhiệt thuận nghịch.",
+     "latex": "Q = 0,\\quad A = 0 \\;\\Longrightarrow\\; \\Delta U = 0"
+    },
+    {
+     "explain": "Viết nội năng của một mol khí Van der Waals: ngoài phần động năng nhiệt còn có phần thế năng tương tác âm, tỉ lệ nghịch với thể tích.",
+     "latex": "U = C_{V}T - \\dfrac{a}{V}"
+    },
+    {
+     "explain": "Đặt nội năng ở hai trạng thái bằng nhau rồi tách các số hạng theo T về một vế.",
+     "latex": "C_{V}T_{1} - \\dfrac{a}{V_{1}} = C_{V}T_{2} - \\dfrac{a}{V_{2}}"
+    },
+    {
+     "explain": "Giải ra độ biến thiên nhiệt độ. Dấu âm vì V2 lớn hơn V1: khí phải tiêu tốn động năng nhiệt để thắng lực hút giữa các phân tử khi chúng đi ra xa nhau.",
+     "latex": "\\Delta T = T_{2} - T_{1} = -\\dfrac{a}{C_{V}}\\left(\\dfrac{1}{V_{1}} - \\dfrac{1}{V_{2}}\\right)"
+    },
+    {
+     "explain": "Thay số với C_V = 5R/2 = 20,79 J/(mol*K) và thể tích tính bằng mét khối.",
+     "latex": "\\Delta T = -\\dfrac{0.364}{20.79}\\left(\\dfrac{1}{1.0\\times 10^{-3}} - \\dfrac{1}{10.0\\times 10^{-3}}\\right) = -0.01751\\cdot 900 \\approx -15.8\\ \\text{K}"
+    },
+    {
+     "explain": "Nhận xét: với khí lí tưởng (a = 0) độ biến thiên bằng không - đó chính là thí nghiệm Joule kinh điển. Hiệu ứng lạnh đi ở đây hoàn toàn do lực hút phân tử.",
+     "latex": "a \\to 0 \\;\\Longrightarrow\\; \\Delta T \\to 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.dan-vao-chan-khong-van-der-waals",
+    "physics.dai-hoc.ru-nhiet.noi-nang-khi-van-der-waals",
+    "physics.dai-hoc.ru-nhiet.ap-suat-noi-van-der-waals"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 9,
+   "skills": [
+    "bảo toàn nội năng trong dãn vào chân không",
+    "nội năng của khí Van der Waals",
+    "phân biệt dãn tự do và dãn đoạn nhiệt thuận nghịch"
+   ],
+   "hints": [
+    "Bình cứng cách nhiệt: nội năng không đổi.",
+    "Nội năng khí Van der Waals có thêm số hạng -a/V."
+   ],
+   "tags": [
+    "irodov",
+    "van-der-waals",
+    "dan-vao-chan-khong",
+    "noi-nang"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Van_der_Waals_constants_(data_page)"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0023",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Hiệu ứng Joule - Thomson và nhiệt độ nghịch đảo",
+   "type": "dien-so",
+   "statement_vi": "Với khí carbon dioxide (a = 0,364 Pa*m^6/mol^2, b = 4,267*10^(-5) m^3/mol, C_p = 7R/2), hãy: (a) viết hệ số Joule - Thomson theo a, b, T; (b) lập biểu thức chữ và tính NHIỆT ĐỘ NGHỊCH ĐẢO; (c) cho biết ở 300 K khí nóng lên hay lạnh đi khi tiết lưu. Lấy R = 8,314 J/(mol*K).",
+   "statement_en": "For carbon dioxide (a = 0.364 Pa*m^6/mol^2, b = 4.267e-5 m^3/mol, C_p = 7R/2): (a) write the Joule-Thomson coefficient in terms of a, b, T; (b) derive and compute the INVERSION TEMPERATURE; (c) state whether the gas warms or cools on throttling at 300 K. Take R = 8.314 J/(mol*K).",
+   "answer": "mu = (2a/(RT) - b)/C_p; T_ngh = 2a/(Rb) ≈ 2,05*10^3 K; ở 300 K thì T < T_ngh nên mu > 0, khí LẠNH ĐI khi tiết lưu (mu ≈ 8,6*10^(-6) K/Pa ≈ 0,87 K/atm)",
+   "answer_numeric": 2052.0,
+   "answer_unit": "K",
+   "tolerance": 15.0,
+   "solution_steps": [
+    {
+     "explain": "Quá trình tiết lưu là ĐẲNG ENTHALPY. Hệ số Joule - Thomson đo độ dốc của đường đẳng enthalpy trên giản đồ T - p; với khí Van der Waals ở gần đúng bậc nhất theo a và b nó có dạng hiệu của hai số hạng cạnh tranh.",
+     "latex": "\\mu = \\left(\\dfrac{\\partial T}{\\partial p}\\right)_{H} = \\dfrac{1}{C_{p}}\\left(\\dfrac{2a}{RT} - b\\right)"
+    },
+    {
+     "explain": "Hai số hạng có ý nghĩa vật lí đối lập: số hạng 2a/(RT) đến từ lực HÚT (làm khí lạnh đi khi dãn), số hạng b đến từ thể tích riêng của phân tử, tức lực ĐẨY (làm khí nóng lên). Nhiệt độ nghịch đảo là nơi chúng cân bằng.",
+     "latex": "\\mu = 0 \\;\\Longleftrightarrow\\; \\dfrac{2a}{RT_{ngh}} = b"
+    },
+    {
+     "explain": "Giải ra nhiệt độ nghịch đảo.",
+     "latex": "T_{ngh} = \\dfrac{2a}{Rb}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "T_{ngh} = \\dfrac{2\\cdot 0.364}{8.314\\cdot 4.267\\times 10^{-5}} \\approx 2.05\\times 10^{3}\\ \\text{K}"
+    },
+    {
+     "explain": "So sánh với nhiệt độ tới hạn đã biết T_c = 8a/(27Rb): tỉ số luôn bằng 27/4 = 6,75 với mọi khí Van der Waals - một hệ quả đẹp của định luật trạng thái tương ứng.",
+     "latex": "\\dfrac{T_{ngh}}{T_{c}} = \\dfrac{2a}{Rb}\\cdot\\dfrac{27Rb}{8a} = \\dfrac{27}{4} = 6.75"
+    },
+    {
+     "explain": "Kết luận cho 300 K: vì 300 K nhỏ hơn nhiều T_ngh nên hệ số dương, khí lạnh đi khi tiết lưu. Đây chính là cơ sở của máy hoá lỏng Linde.",
+     "latex": "\\mu\\left(300\\ \\text{K}\\right) = \\dfrac{1}{3.5\\cdot 8.314}\\left(\\dfrac{2\\cdot 0.364}{8.314\\cdot 300} - 4.267\\times 10^{-5}\\right) \\approx 8.6\\times 10^{-6}\\ \\text{K/Pa} > 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.he-so-joule-thomson",
+    "physics.dai-hoc.ru-nhiet.nhiet-do-nghich-dao",
+    "physics.dai-hoc.ru-nhiet.hang-so-toi-han-van-der-waals"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 11,
+   "skills": [
+    "hiệu ứng Joule - Thomson",
+    "phân tích cạnh tranh giữa lực hút và thể tích riêng",
+    "liên hệ nhiệt độ nghịch đảo với nhiệt độ tới hạn"
+   ],
+   "hints": [
+    "Tiết lưu là quá trình đẳng enthalpy.",
+    "Đặt tử số của mu bằng 0."
+   ],
+   "tags": [
+    "irodov",
+    "joule-thomson",
+    "van-der-waals",
+    "nhiet-do-nghich-dao"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Van_der_Waals_constants_(data_page)"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0024",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Sức căng bề mặt - áp suất Laplace trong bọt xà phòng",
+   "type": "dien-so",
+   "statement_vi": "Một bọt xà phòng bán kính R = 2,0 cm được thổi từ dung dịch có sức căng bề mặt sigma = 0,040 N/m. Hãy: (a) tính độ chênh áp suất giữa trong và ngoài bọt; (b) lập biểu thức chữ và tính CÔNG tối thiểu đã thực hiện để tạo ra bọt (bỏ qua thay đổi thể tích không khí). Điền độ chênh áp suất.",
+   "statement_en": "A soap bubble of radius R = 2.0 cm is blown from a solution with surface tension sigma = 0.040 N/m. (a) Find the pressure difference between inside and outside; (b) derive and compute the minimum WORK done to create the bubble (neglecting compression of the air). Enter the pressure difference.",
+   "answer": "Delta p = 4 sigma/R = 8,0 Pa; A = sigma * Delta S = 2 sigma * 4 pi R^2 ≈ 4,0*10^(-4) J",
+   "answer_numeric": 8.0,
+   "answer_unit": "Pa",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Điểm mấu chốt của bọt xà phòng: màng có HAI mặt phân cách với không khí (mặt trong và mặt ngoài), mỗi mặt đóng góp một áp suất Laplace 2 sigma/R.",
+     "latex": "\\Delta p = 2\\cdot\\dfrac{2\\sigma}{R} = \\dfrac{4\\sigma}{R}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Delta p = \\dfrac{4\\cdot 0.040}{0.020} = 8.0\\ \\text{Pa}"
+    },
+    {
+     "explain": "Công tạo bọt bằng năng lượng mặt ngoài mới sinh ra. Vẫn vì màng có hai mặt nên diện tích mới gấp đôi diện tích mặt cầu.",
+     "latex": "A = \\sigma\\,\\Delta S = \\sigma\\cdot 2\\cdot 4\\pi R^{2} = 8\\pi\\sigma R^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "A = 8\\pi\\cdot 0.040\\cdot\\left(0.020\\right)^{2} \\approx 4.0\\times 10^{-4}\\ \\text{J}"
+    },
+    {
+     "explain": "Nhận xét kiểu Irodov: nếu nối một bọt nhỏ với một bọt lớn thì bọt NHỎ có áp suất trong lớn hơn (Delta p tỉ lệ nghịch với R) nên nó xẹp và bơm khí vào bọt lớn - trái với trực giác thông thường.",
+     "latex": "\\Delta p \\propto \\dfrac{1}{R}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-nhiet.ap-suat-phu-bot-xa-phong",
+    "physics.thpt.ru-nhiet.nang-luong-mat-ngoai",
+    "physics.dai-hoc.chat-luu.ap-suat-laplace-mao-dan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp suất Laplace",
+    "đếm đúng số mặt phân cách của màng xà phòng",
+    "năng lượng mặt ngoài"
+   ],
+   "hints": [
+    "Màng xà phòng có mấy mặt?",
+    "Công bằng sigma nhân độ tăng diện tích."
+   ],
+   "tags": [
+    "irodov",
+    "suc-cang-be-mat",
+    "ap-suat-laplace",
+    "bot-xa-phong"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0025",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Mao dẫn - ống tròn so với hai bản song song",
+   "type": "trac-nghiem",
+   "statement_vi": "Nhúng thẳng đứng vào nước (sigma = 0,073 N/m, rho = 1000 kg/m^3, góc mép theta = 0) hai dụng cụ: một ống mao dẫn ĐƯỜNG KÍNH d = 0,20 mm và hai bản phẳng song song CÁCH NHAU đúng d = 0,20 mm. Lấy g = 9,8 m/s^2. Nhận định nào đúng về độ dâng giữa hai bản?",
+   "statement_en": "A capillary tube of DIAMETER d = 0.20 mm and a pair of parallel plates SEPARATED by the same d = 0.20 mm are dipped vertically into water (sigma = 0.073 N/m, rho = 1000 kg/m^3, contact angle zero); g = 9.8 m/s^2. Which statement about the rise between the plates is correct?",
+   "choices": [
+    {
+     "key": "A",
+     "text": "h_ban ≈ 7,5 cm, bằng MỘT NỬA độ dâng trong ống tròn",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "h_ban ≈ 15 cm, BẰNG độ dâng trong ống tròn",
+     "why_wrong": "Dùng chung một công thức 4 sigma/(rho g d) cho cả hai hình học, không thấy rằng mặt khum giữa hai bản là mặt TRỤ, chỉ cong theo một phương nên chỉ có một bán kính cong hữu hạn."
+    },
+    {
+     "key": "C",
+     "text": "h_ban ≈ 30 cm, GẤP ĐÔI độ dâng trong ống tròn",
+     "why_wrong": "Nhân hệ số 2 thay vì chia; tương ứng với việc cộng hai lần đóng góp của hai bản mà quên rằng mỗi bản chỉ tạo nửa chu vi."
+    },
+    {
+     "key": "D",
+     "text": "h_ban ≈ 3,7 cm, bằng MỘT PHẦN TƯ độ dâng trong ống tròn",
+     "why_wrong": "Chia đôi HAI lần so với ống tròn: một lần đúng (hai bản chỉ cho một bán kính cong hữu hạn), một lần thừa do nhầm khe hở d với bán kính khe d/2 khi thay vào công thức."
+    },
+    {
+     "key": "E",
+     "text": "Nước KHÔNG dâng giữa hai bản vì không có ống kín",
+     "why_wrong": "Hiểu sai bản chất mao dẫn: hiện tượng do lực căng bề mặt trên đường tiếp xúc gây ra, không đòi hỏi hình học kín."
+    }
+   ],
+   "answer": "A",
+   "answer_numeric": 0.0745,
+   "answer_unit": "m",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Áp suất Laplace dưới mặt khum là sigma nhân tổng nghịch đảo hai bán kính cong chính. Với ống TRÒN mặt khum là chỏm cầu nên cả hai bán kính đều bằng d/2; với hai BẢN song song mặt khum là mặt trụ nên một bán kính bằng d/2 còn bán kính kia vô cùng lớn.",
+     "latex": "\\Delta p = \\sigma\\left(\\dfrac{1}{R_{1}} + \\dfrac{1}{R_{2}}\\right)"
+    },
+    {
+     "explain": "Suy ra áp suất phụ giữa hai bản chỉ bằng MỘT NỬA áp suất phụ trong ống tròn cùng khe hở.",
+     "latex": "\\Delta p_{ong} = \\dfrac{4\\sigma}{d},\\qquad \\Delta p_{ban} = \\dfrac{2\\sigma}{d}"
+    },
+    {
+     "explain": "Cân bằng áp suất phụ với cột chất lỏng rho g h cho công thức độ dâng trong hai trường hợp.",
+     "latex": "h_{ong} = \\dfrac{4\\sigma\\cos\\theta}{\\rho g d},\\qquad h_{ban} = \\dfrac{2\\sigma\\cos\\theta}{\\rho g d}"
+    },
+    {
+     "explain": "Thay số với theta = 0.",
+     "latex": "h_{ban} = \\dfrac{2\\cdot 0.073}{1000\\cdot 9.8\\cdot 2.0\\times 10^{-4}} \\approx 0.0745\\ \\text{m} = 7.5\\ \\text{cm}"
+    },
+    {
+     "explain": "Đối chiếu: ống tròn cho 14,9 cm, đúng gấp đôi. Đây là bài so sánh kinh điển trong sách Nga nhằm buộc người học nhớ rằng số hạng Laplace đếm theo BÁN KÍNH CONG chứ không theo kích thước hình học.",
+     "latex": "\\dfrac{h_{ban}}{h_{ong}} = \\dfrac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-nhiet.mao-dan-giua-hai-ban-song-song",
+    "physics.dai-hoc.chat-luu.ap-suat-laplace-mao-dan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 7,
+   "skills": [
+    "phương trình Young - Laplace với hai bán kính cong",
+    "phân biệt mặt khum cầu và mặt khum trụ",
+    "cân bằng áp suất mao dẫn"
+   ],
+   "hints": [
+    "Mặt khum giữa hai bản cong theo mấy phương?",
+    "Một bán kính cong bằng vô cùng thì số hạng tương ứng bằng 0."
+   ],
+   "tags": [
+    "irodov",
+    "mao-dan",
+    "ap-suat-laplace",
+    "suc-cang-be-mat"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0026",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Phương pháp ảnh điện - điện tích trước mặt phẳng dẫn nối đất",
+   "type": "tu-luan",
+   "statement_vi": "Một điện tích điểm q = 2,0 nC đặt cách mặt phẳng dẫn rộng vô hạn nối đất một khoảng l = 5,0 cm. Hãy: (a) giải thích cơ sở của phương pháp ảnh điện trong bài toán này; (b) lập biểu thức chữ và tính lực hút tác dụng lên q; (c) lập biểu thức chữ và tính CÔNG cần thực hiện để đưa q ra rất xa mặt phẳng; (d) chỉ rõ vì sao công đó KHÔNG bằng tích lực nhân quãng đường và cũng không bằng năng lượng tương tác của hai điện tích điểm cách nhau 2l. Lấy k = 9,0*10^9 N*m^2/C^2.",
+   "statement_en": "A point charge q = 2.0 nC is placed a distance l = 5.0 cm from an infinite grounded conducting plane. (a) Justify the image method here; (b) derive and compute the attractive force on q; (c) derive and compute the WORK needed to remove q to infinity; (d) explain why this work is neither force times distance nor the interaction energy of two point charges separated by 2l. Take k = 9.0e9 N*m^2/C^2.",
+   "answer": "F = k q^2/(4 l^2) ≈ 3,6*10^(-6) N (hút); W_tương tác = -k q^2/(4 l) ≈ -1,8*10^(-7) J; công đưa ra vô cùng A = +k q^2/(4 l) ≈ 1,8*10^(-7) J",
+   "answer_numeric": 1.798e-07,
+   "answer_unit": "J",
+   "tolerance": 5e-09,
+   "solution_steps": [
+    {
+     "explain": "Cơ sở của phương pháp: mặt phẳng nối đất là mặt ĐẲNG THẾ với điện thế bằng không. Bài toán thay thế gồm q và điện tích ảnh -q đối xứng qua mặt phẳng cũng tạo ra mặt phẳng trung trực có điện thế không. Theo định lí duy nhất nghiệm của bài toán Dirichlet, trường trong nửa không gian chứa q là DUY NHẤT nên hai bài toán cho cùng một trường ở đó.",
+     "latex": "q' = -q \\ \\text{dat cach mat phang mot khoang } l \\ \\text{ve phia kia}"
+    },
+    {
+     "explain": "Lực tác dụng lên q chính là lực Coulomb giữa q và ảnh của nó, khoảng cách giữa chúng là 2l.",
+     "latex": "F = \\dfrac{kq^{2}}{\\left(2l\\right)^{2}} = \\dfrac{kq^{2}}{4l^{2}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "F = \\dfrac{9.0\\times 10^{9}\\cdot\\left(2.0\\times 10^{-9}\\right)^{2}}{4\\cdot\\left(0.050\\right)^{2}} \\approx 3.6\\times 10^{-6}\\ \\text{N}"
+    },
+    {
+     "explain": "Tính công bằng cách LẤY TÍCH PHÂN lực theo quãng đường, vì lực phụ thuộc khoảng cách. Khi kéo q ra xa, ảnh cũng lùi ra nên khoảng cách giữa chúng luôn là hai lần khoảng cách tới mặt phẳng.",
+     "latex": "A = \\int_{l}^{\\infty}\\dfrac{kq^{2}}{4x^{2}}dx = \\dfrac{kq^{2}}{4}\\left[-\\dfrac{1}{x}\\right]_{l}^{\\infty} = \\dfrac{kq^{2}}{4l}"
+    },
+    {
+     "explain": "Thay số. Đại lượng đối dấu chính là năng lượng tương tác của điện tích với mặt phẳng.",
+     "latex": "A = \\dfrac{9.0\\times 10^{9}\\cdot 4.0\\times 10^{-18}}{4\\cdot 0.050} \\approx 1.8\\times 10^{-7}\\ \\text{J},\\qquad W = -A \\approx -1.8\\times 10^{-7}\\ \\text{J}"
+    },
+    {
+     "explain": "Trả lời câu hỏi bẫy. Thứ nhất, không dùng được tích lực nhân quãng đường vì lực thay đổi theo khoảng cách. Thứ hai, năng lượng ở đây bằng MỘT NỬA năng lượng của cặp điện tích thật q và -q cách nhau 2l, vì trường chỉ tồn tại trong NỬA không gian - nửa còn lại bị vật dẫn chắn, nên năng lượng trường tích trữ chỉ bằng một nửa.",
+     "latex": "W_{\\text{cap that}} = -\\dfrac{kq^{2}}{2l},\\qquad W_{\\text{anh dien}} = -\\dfrac{kq^{2}}{4l} = \\dfrac{1}{2}W_{\\text{cap that}}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-dien-tu.dien-tich-anh-mat-phang",
+    "physics.thpt.ru-dien-tu.luc-hut-dien-tich-mat-phang",
+    "physics.thpt.ru-dien-tu.nang-luong-tuong-tac-dien-tich-mat-phang",
+    "physics.dai-hoc.ru-dien-tu.mat-do-dien-mat-cam-ung"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 13,
+   "skills": [
+    "phương pháp ảnh điện",
+    "định lí duy nhất nghiệm",
+    "tích phân lực biến thiên để tính công",
+    "nhận ra hệ số 1/2 của năng lượng ảnh điện"
+   ],
+   "hints": [
+    "Mặt phẳng nối đất là mặt đẳng thế không.",
+    "Lực phụ thuộc khoảng cách nên phải tích phân.",
+    "Trường chỉ tồn tại trong nửa không gian."
+   ],
+   "tags": [
+    "irodov",
+    "anh-dien",
+    "tinh-dien",
+    "vat-dan"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0027",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Phương pháp ảnh điện - quả cầu dẫn nối đất",
+   "type": "dien-so",
+   "statement_vi": "Một điện tích điểm q = 3,0 nC đặt cách TÂM một quả cầu dẫn nối đất bán kính R = 5,0 cm một khoảng l = 10 cm. Hãy xác định điện tích ảnh và vị trí của nó, rồi lập biểu thức chữ và tính LỰC hút giữa quả cầu và điện tích. Lấy k = 9,0*10^9 N*m^2/C^2.",
+   "statement_en": "A point charge q = 3.0 nC is placed a distance l = 10 cm from the CENTRE of a grounded conducting sphere of radius R = 5.0 cm. Find the image charge and its position, then derive and compute the attractive FORCE between the sphere and the charge. Take k = 9.0e9 N*m^2/C^2.",
+   "answer": "q' = -qR/l = -1,5 nC đặt cách tâm R^2/l = 2,5 cm (trên đoạn nối tâm với q); F = k q^2 R l/(l^2 - R^2)^2 ≈ 7,2*10^(-6) N, hút",
+   "answer_numeric": 7.2e-06,
+   "answer_unit": "N",
+   "tolerance": 1e-07,
+   "solution_steps": [
+    {
+     "explain": "Yêu cầu vật lí: mặt cầu phải là mặt đẳng thế với điện thế bằng không. Đặt điện tích ảnh q' trên đoạn nối tâm với q, cách tâm một khoảng b, rồi áp điều kiện điện thế bằng không tại hai điểm gần nhất và xa nhất của mặt cầu để tìm q' và b.",
+     "latex": "\\dfrac{kq}{l-R} + \\dfrac{kq'}{R-b} = 0,\\qquad \\dfrac{kq}{l+R} + \\dfrac{kq'}{R+b} = 0"
+    },
+    {
+     "explain": "Giải hệ hai phương trình. Kết quả kinh điển của Kelvin: điện tích ảnh nhỏ hơn q theo tỉ số R/l và nằm ở vị trí nghịch đảo qua mặt cầu.",
+     "latex": "q' = -q\\dfrac{R}{l},\\qquad b = \\dfrac{R^{2}}{l}"
+    },
+    {
+     "explain": "Thay số cho điện tích ảnh và vị trí. Lưu ý điện tích ảnh này KHÔNG bằng toàn bộ điện tích cảm ứng thật trên quả cầu - nó chỉ là công cụ toán học, nhưng tổng điện tích cảm ứng thật đúng bằng q' vì quả cầu nối đất.",
+     "latex": "q' = -3.0\\cdot\\dfrac{5.0}{10} = -1.5\\ \\text{nC},\\qquad b = \\dfrac{5.0^{2}}{10} = 2.5\\ \\text{cm}"
+    },
+    {
+     "explain": "Lực tác dụng lên q là lực Coulomb giữa q và q'; khoảng cách giữa chúng bằng l - b.",
+     "latex": "l - b = l - \\dfrac{R^{2}}{l} = \\dfrac{l^{2}-R^{2}}{l},\\qquad F = \\dfrac{k\\left|q q'\\right|}{\\left(l-b\\right)^{2}} = \\dfrac{kq^{2}Rl}{\\left(l^{2}-R^{2}\\right)^{2}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "F = \\dfrac{9.0\\times 10^{9}\\cdot\\left(3.0\\times 10^{-9}\\right)^{2}\\cdot 0.050\\cdot 0.10}{\\left(0.010 - 0.0025\\right)^{2}} \\approx 7.2\\times 10^{-6}\\ \\text{N}"
+    },
+    {
+     "explain": "Kiểm tra giới hạn: khi R tiến tới l (điện tích sát mặt cầu) thì mẫu số tiến tới 0 và lực tăng vô hạn - đúng như trường hợp mặt phẳng. Khi l lớn hơn nhiều R, khai triển cho F xấp xỉ k q^2 R/l^3, tức lực hút kiểu lưỡng cực cảm ứng.",
+     "latex": "l \\gg R \\;\\Longrightarrow\\; F \\approx \\dfrac{kq^{2}R}{l^{3}}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.dien-tich-anh-qua-cau",
+    "physics.dai-hoc.ru-dien-tu.mat-do-dien-mat-cam-ung",
+    "physics.thpt.ru-dien-tu.dien-tich-anh-mat-phang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 11,
+   "skills": [
+    "ảnh điện với mặt cầu",
+    "điều kiện mặt đẳng thế",
+    "kiểm tra kết quả bằng các giới hạn tiệm cận"
+   ],
+   "hints": [
+    "Áp điều kiện điện thế bằng 0 tại điểm gần nhất và xa nhất của mặt cầu.",
+    "Khoảng cách hiệu dụng là l - R^2/l."
+   ],
+   "tags": [
+    "irodov",
+    "anh-dien",
+    "qua-cau-dan",
+    "tinh-dien"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0028",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Quá trình quá độ RC - hiệu suất nạp tụ điện",
+   "type": "dien-so",
+   "statement_vi": "Một tụ điện C = 2,0 microF ban đầu không tích điện, được nạp qua một điện trở R từ nguồn có suất điện động không đổi E = 12 V. Hãy chứng minh bằng biểu thức chữ rằng nhiệt toả ra trên điện trở KHÔNG phụ thuộc R, rồi tính lượng nhiệt đó và hiệu suất nạp.",
+   "statement_en": "A capacitor C = 2.0 microF, initially uncharged, is charged through a resistor R from a source of constant emf E = 12 V. Show by a literal derivation that the heat dissipated in the resistor is INDEPENDENT of R, then compute that heat and the charging efficiency.",
+   "answer": "Q_nhiệt = (1/2) C E^2 = 1,44*10^(-4) J, không phụ thuộc R; hiệu suất eta = W_tụ/A_nguồn = 50 phần trăm, cũng không phụ thuộc R",
+   "answer_numeric": 0.000144,
+   "answer_unit": "J",
+   "tolerance": 2e-06,
+   "solution_steps": [
+    {
+     "explain": "Viết nghiệm của quá trình quá độ để thấy R chỉ điều khiển TỐC ĐỘ nạp chứ không điều khiển trạng thái cuối. Điện tích cuối chỉ phụ thuộc C và suất điện động.",
+     "latex": "q\\left(t\\right) = C\\mathcal{E}\\left(1 - e^{-t/RC}\\right),\\qquad q_{\\infty} = C\\mathcal{E}"
+    },
+    {
+     "explain": "Áp dụng bảo toàn năng lượng cho toàn bộ quá trình (từ t = 0 tới vô cùng) thay vì tích phân trực tiếp công suất toả nhiệt - đây là mẹo rút gọn quan trọng.",
+     "latex": "A_{nguon} = W_{tu} + Q_{nhiet}"
+    },
+    {
+     "explain": "Công của nguồn bằng suất điện động nhân TOÀN BỘ điện tích đã chuyển qua nguồn; năng lượng tích trữ trong tụ chỉ bằng một nửa tích đó.",
+     "latex": "A_{nguon} = \\mathcal{E}q_{\\infty} = C\\mathcal{E}^{2},\\qquad W_{tu} = \\dfrac{q_{\\infty}^{2}}{2C} = \\dfrac{1}{2}C\\mathcal{E}^{2}"
+    },
+    {
+     "explain": "Trừ hai vế: R đã biến mất hoàn toàn. Điện trở nhỏ thì dòng lớn nhưng thời gian ngắn, điện trở lớn thì ngược lại; tích của chúng không đổi.",
+     "latex": "Q_{nhiet} = C\\mathcal{E}^{2} - \\dfrac{1}{2}C\\mathcal{E}^{2} = \\dfrac{1}{2}C\\mathcal{E}^{2}"
+    },
+    {
+     "explain": "Thay số và tính hiệu suất.",
+     "latex": "Q_{nhiet} = \\dfrac{1}{2}\\cdot 2.0\\times 10^{-6}\\cdot 12^{2} = 1.44\\times 10^{-4}\\ \\text{J},\\qquad \\eta = \\dfrac{W_{tu}}{A_{nguon}} = \\dfrac{1}{2} = 50\\%"
+    },
+    {
+     "explain": "Kiểm tra bằng tích phân trực tiếp để chắc chắn: dòng nạp giảm theo hàm mũ, bình phương dòng có hằng số thời gian RC/2.",
+     "latex": "Q_{nhiet} = \\int_{0}^{\\infty}i^{2}R\\,dt = \\int_{0}^{\\infty}\\dfrac{\\mathcal{E}^{2}}{R}e^{-2t/RC}dt = \\dfrac{\\mathcal{E}^{2}}{R}\\cdot\\dfrac{RC}{2} = \\dfrac{1}{2}C\\mathcal{E}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-dien-tu.nap-tu-dien-qua-dien-tro",
+    "physics.thpt.ru-dien-tu.nhiet-toa-ra-khi-nap-tu"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 8,
+   "skills": [
+    "quá trình quá độ RC",
+    "bảo toàn năng lượng thay cho tích phân",
+    "nhận ra đại lượng không phụ thuộc tham số"
+   ],
+   "hints": [
+    "Điện tích cuối không phụ thuộc R.",
+    "Dùng bảo toàn năng lượng cho cả quá trình."
+   ],
+   "tags": [
+    "irodov",
+    "mach-rc",
+    "qua-do",
+    "hieu-suat-nap"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0029",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Quá trình quá độ RL - ngắt nguồn và năng lượng từ trường",
+   "type": "dien-so",
+   "statement_vi": "Một cuộn cảm L = 0,20 H có điện trở thuần R = 5,0 Ohm được nối vào nguồn suất điện động không đổi E = 10 V cho tới khi dòng điện ổn định. Sau đó nguồn bị ngắt và cuộn cảm được nối tắt qua chính điện trở đó. Hãy lập biểu thức chữ rồi tính: (a) hằng số thời gian; (b) TỔNG NHIỆT toả ra sau khi ngắt nguồn; (c) thời gian để dòng giảm còn một nửa; (d) tổng điện lượng chạy qua mạch sau khi ngắt. Điền tổng nhiệt toả ra.",
+   "statement_en": "A coil L = 0.20 H of resistance R = 5.0 ohm is connected to a constant emf E = 10 V until the current is steady; then the source is removed and the coil is short-circuited through the same resistance. Derive literal expressions and compute (a) the time constant; (b) the TOTAL HEAT released after disconnection; (c) the time for the current to halve; (d) the total charge that flows. Enter the total heat.",
+   "answer": "tau = L/R = 0,040 s; Q = (1/2) L I_0^2 với I_0 = E/R = 2,0 A nên Q = 0,40 J; t_1/2 = tau ln2 ≈ 0,028 s; q = I_0 tau = 0,080 C",
+   "answer_numeric": 0.4,
+   "answer_unit": "J",
+   "tolerance": 0.005,
+   "solution_steps": [
+    {
+     "explain": "Trạng thái ổn định trước khi ngắt: cuộn cảm không còn cản trở dòng một chiều nên dòng chỉ do định luật Ohm quyết định.",
+     "latex": "I_{0} = \\dfrac{\\mathcal{E}}{R} = \\dfrac{10}{5.0} = 2.0\\ \\text{A}"
+    },
+    {
+     "explain": "Sau khi ngắt, phương trình mạch chỉ còn suất điện động tự cảm cân bằng với sụt áp trên điện trở, cho nghiệm tắt theo hàm mũ với hằng số thời gian L/R.",
+     "latex": "L\\dfrac{di}{dt} + Ri = 0 \\;\\Longrightarrow\\; i\\left(t\\right) = I_{0}e^{-t/\\tau},\\qquad \\tau = \\dfrac{L}{R} = 0.040\\ \\text{s}"
+    },
+    {
+     "explain": "Tổng nhiệt toả ra: thay vì tích phân i^2 R theo thời gian, dùng bảo toàn năng lượng - sau khi ngắt không còn nguồn nào cấp năng lượng nên toàn bộ năng lượng TỪ TRƯỜNG tích trữ chuyển hết thành nhiệt. Kết quả không phụ thuộc R.",
+     "latex": "Q = W_{tu} = \\dfrac{1}{2}LI_{0}^{2} = \\dfrac{1}{2}\\cdot 0.20\\cdot 2.0^{2} = 0.40\\ \\text{J}"
+    },
+    {
+     "explain": "Kiểm tra bằng tích phân trực tiếp: bình phương dòng có hằng số thời gian tau/2.",
+     "latex": "\\int_{0}^{\\infty}i^{2}R\\,dt = I_{0}^{2}R\\cdot\\dfrac{\\tau}{2} = \\dfrac{I_{0}^{2}L}{2} \\ \\checkmark"
+    },
+    {
+     "explain": "Thời gian để dòng giảm một nửa: lấy lôga phương trình hàm mũ. Chú ý đại lượng này không phụ thuộc giá trị ban đầu của dòng.",
+     "latex": "e^{-t/\\tau} = \\dfrac{1}{2} \\;\\Longrightarrow\\; t_{1/2} = \\tau\\ln 2 = 0.040\\cdot 0.693 \\approx 0.028\\ \\text{s}"
+    },
+    {
+     "explain": "Điện lượng tổng cộng là tích phân của dòng theo thời gian; tích phân hàm mũ cho ngay tích của giá trị đầu với hằng số thời gian.",
+     "latex": "q = \\int_{0}^{\\infty}I_{0}e^{-t/\\tau}dt = I_{0}\\tau = \\dfrac{L I_{0}}{R} = 2.0\\cdot 0.040 = 0.080\\ \\text{C}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cam-ung-rl.mach-rl-dong-dien-giam",
+    "physics.thpt.cam-ung-rl.hang-so-thoi-gian-rl",
+    "physics.thpt.cam-ung-dien-tu.nang-luong-tu-truong-ong-day"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 9,
+   "skills": [
+    "quá trình quá độ trong mạch RL",
+    "dùng bảo toàn năng lượng thay cho tích phân công suất",
+    "tính điện lượng bằng tích phân dòng điện"
+   ],
+   "hints": [
+    "Sau khi ngắt nguồn, năng lượng duy nhất còn lại là năng lượng từ trường.",
+    "Hằng số thời gian của mạch RL là L/R.",
+    "Bình phương dòng tắt với hằng số thời gian tau/2."
+   ],
+   "tags": [
+    "irodov",
+    "mach-rl",
+    "qua-do",
+    "nang-luong-tu-truong"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0030",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Mạch RLC tự do - giảm lượng lôga và điện trở tới hạn",
+   "type": "dien-so",
+   "statement_vi": "Mạch dao động nối tiếp có L = 0,10 H, C = 1,0 microF, R = 20 Ohm. Hãy tính: (a) hệ số tắt dần và tần số góc dao động; (b) giảm lượng lôga; (c) hệ số phẩm chất Q; (d) điện trở tới hạn R_th. Điền giá trị Q.",
+   "statement_en": "A series oscillatory circuit has L = 0.10 H, C = 1.0 microF, R = 20 ohm. Find (a) the damping coefficient and the angular frequency; (b) the logarithmic decrement; (c) the quality factor Q; (d) the critical resistance. Enter Q.",
+   "answer": "beta = R/(2L) = 100 s^(-1); omega_0 = 1/sqrt(LC) ≈ 3162 s^(-1); omega ≈ 3161 s^(-1); lambda = beta*T ≈ 0,199; Q = (1/R)sqrt(L/C - R^2/4) ≈ 15,8; R_th = 2 sqrt(L/C) ≈ 632 Ohm",
+   "answer_numeric": 15.8,
+   "answer_unit": "",
+   "tolerance": 0.15,
+   "solution_steps": [
+    {
+     "explain": "Mạch RLC tự do tuân theo cùng một phương trình vi phân với dao động cơ tắt dần: điện tích đóng vai trò li độ, L đóng vai trò khối lượng, R đóng vai trò hệ số cản, 1/C đóng vai trò độ cứng.",
+     "latex": "q\\left(t\\right) = q_{0}e^{-\\beta t}\\cos\\left(\\omega t + \\alpha\\right),\\qquad \\beta = \\dfrac{R}{2L},\\qquad \\omega = \\sqrt{\\dfrac{1}{LC} - \\dfrac{R^{2}}{4L^{2}}}"
+    },
+    {
+     "explain": "Thay số cho hệ số tắt dần và hai tần số. Chú ý điện trở làm CHU KÌ DÀI ra (omega nhỏ hơn omega_0).",
+     "latex": "\\beta = \\dfrac{20}{0.20} = 100\\ \\text{s}^{-1},\\quad \\omega_{0} = \\dfrac{1}{\\sqrt{0.10\\cdot 10^{-6}}} \\approx 3162\\ \\text{s}^{-1},\\quad \\omega = \\sqrt{10^{7}-10^{4}} \\approx 3161\\ \\text{s}^{-1}"
+    },
+    {
+     "explain": "Giảm lượng lôga bằng hệ số tắt dần nhân chu kì; viết trực tiếp theo R, L, C sẽ tránh được sai số làm tròn.",
+     "latex": "\\lambda = \\beta T = \\dfrac{2\\pi R}{\\sqrt{4L/C - R^{2}}} = \\dfrac{2\\pi\\cdot 20}{\\sqrt{4\\times 10^{5} - 400}} \\approx 0.199"
+    },
+    {
+     "explain": "Hệ số phẩm chất theo định nghĩa Irodov là pi chia giảm lượng lôga; rút gọn cho dạng chữ tiện dùng.",
+     "latex": "Q = \\dfrac{\\pi}{\\lambda} = \\dfrac{1}{R}\\sqrt{\\dfrac{L}{C} - \\dfrac{R^{2}}{4}} = \\dfrac{1}{20}\\sqrt{10^{5} - 100} \\approx 15.8"
+    },
+    {
+     "explain": "Điện trở tới hạn là giá trị làm biểu thức dưới căn của omega triệt tiêu: mạch chuyển từ chế độ dao động sang chế độ phi tuần hoàn (tắt dần tới hạn).",
+     "latex": "\\omega = 0 \\;\\Longleftrightarrow\\; R_{th} = 2\\sqrt{\\dfrac{L}{C}} = 2\\sqrt{10^{5}} \\approx 632\\ \\Omega"
+    },
+    {
+     "explain": "Kiểm tra tính nhất quán: R = 20 Ohm nhỏ hơn nhiều R_th nên mạch tắt dần yếu, và khi đó Q xấp xỉ căn(L/C)/R = 15,8 - đúng bằng kết quả chính xác tới ba chữ số.",
+     "latex": "\\dfrac{R}{R_{th}} \\approx 0.032 \\ll 1,\\qquad Q \\approx \\dfrac{1}{R}\\sqrt{\\dfrac{L}{C}} = 15.8"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.dao-dong-dien-tat-dan",
+    "physics.dai-hoc.ru-dien-tu.giam-luong-loga-mach-rlc",
+    "physics.dai-hoc.ru-dien-tu.dien-tro-toi-han-mach-rlc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 10,
+   "skills": [
+    "tương tự cơ - điện của dao động tắt dần",
+    "giảm lượng lôga và hệ số phẩm chất của mạch",
+    "điều kiện tắt dần tới hạn"
+   ],
+   "hints": [
+    "beta = R/(2L).",
+    "R tới hạn làm biểu thức dưới căn của omega bằng 0."
+   ],
+   "tags": [
+    "irodov",
+    "mach-rlc",
+    "dao-dong-tat-dan",
+    "he-so-pham-chat"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Logarithmic_decrement"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0031",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Mạch RLC cưỡng bức - ba tần số cộng hưởng",
+   "type": "trac-nghiem",
+   "statement_vi": "Mạch RLC nối tiếp (L = 0,10 H, C = 1,0 microF, R = 20 Ohm) được nuôi bằng nguồn hình sin biên độ không đổi, tần số thay đổi được. Gọi omega_q, omega_I, omega_L lần lượt là tần số góc tại đó biên độ ĐIỆN TÍCH trên tụ, biên độ DÒNG ĐIỆN, biên độ ĐIỆN ÁP trên cuộn cảm đạt cực đại. Sắp xếp nào đúng?",
+   "statement_en": "A series RLC circuit (L = 0.10 H, C = 1.0 microF, R = 20 ohm) is driven by a sinusoidal source of fixed amplitude and variable frequency. Let omega_q, omega_I, omega_L be the angular frequencies maximising the amplitude of the capacitor CHARGE, the CURRENT, and the INDUCTOR VOLTAGE respectively. Which ordering is correct?",
+   "choices": [
+    {
+     "key": "A",
+     "text": "omega_q < omega_I = omega_0 < omega_L, với omega_q ≈ 3159 s^(-1), omega_0 ≈ 3162 s^(-1), omega_L ≈ 3165 s^(-1)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Cả ba đều bằng omega_0 = 1/sqrt(LC) ≈ 3162 s^(-1)",
+     "why_wrong": "Chỉ đúng khi bỏ qua hoàn toàn điện trở. Với R khác 0, cực đại của biên độ điện tích và của điện áp trên cuộn cảm bị lệch khỏi omega_0 vì mẫu số của biên độ chứa thêm số hạng 4 beta^2 omega^2."
+    },
+    {
+     "key": "C",
+     "text": "omega_L < omega_I = omega_0 < omega_q",
+     "why_wrong": "Đảo ngược thứ tự. Nhớ sai chiều lệch: cộng hưởng theo ĐIỆN TÍCH (tương tự li độ) luôn lệch XUỐNG, cộng hưởng theo điện áp cuộn cảm luôn lệch LÊN."
+    },
+    {
+     "key": "D",
+     "text": "omega_q < omega_L < omega_I",
+     "why_wrong": "Đặt cộng hưởng dòng điện lên cao nhất. Thực ra cộng hưởng DÒNG ĐIỆN nằm đúng tại omega_0 với MỌI giá trị của R, và luôn nằm giữa hai tần số kia."
+    },
+    {
+     "key": "E",
+     "text": "omega_q = omega_L, cả hai nhỏ hơn omega_I",
+     "why_wrong": "Hai tần số này đối xứng nhau qua omega_0 theo nghĩa nhân (omega_q * omega_L = omega_0^2) chứ không bằng nhau."
+    }
+   ],
+   "answer": "A",
+   "answer_numeric": 3159.1,
+   "answer_unit": "1/s",
+   "tolerance": 2.0,
+   "solution_steps": [
+    {
+     "explain": "Song ánh cơ - điện: điện tích q ứng với li độ, dòng điện i = dq/dt ứng với vận tốc. Do đó cộng hưởng điện tích tương ứng với cộng hưởng biên độ (lệch xuống), cộng hưởng dòng điện tương ứng với cộng hưởng vận tốc (đúng tại omega_0).",
+     "latex": "q_{m}\\left(\\omega\\right) = \\dfrac{\\mathcal{E}_{m}/L}{\\sqrt{\\left(\\omega_{0}^{2}-\\omega^{2}\\right)^{2} + 4\\beta^{2}\\omega^{2}}},\\qquad I_{m}\\left(\\omega\\right) = \\omega\\,q_{m}\\left(\\omega\\right)"
+    },
+    {
+     "explain": "Tìm cực đại của biên độ điện tích: cho đạo hàm của biểu thức dưới căn bằng không.",
+     "latex": "\\dfrac{d}{d\\omega}\\left[\\left(\\omega_{0}^{2}-\\omega^{2}\\right)^{2} + 4\\beta^{2}\\omega^{2}\\right] = 0 \\;\\Longrightarrow\\; \\omega_{q} = \\sqrt{\\omega_{0}^{2} - 2\\beta^{2}}"
+    },
+    {
+     "explain": "Với biên độ dòng điện, chia tử và mẫu cho omega làm xuất hiện tổ hợp (omega_0^2/omega - omega); nó triệt tiêu đúng tại omega_0, không phụ thuộc beta.",
+     "latex": "I_{m}\\left(\\omega\\right) = \\dfrac{\\mathcal{E}_{m}/L}{\\sqrt{\\left(\\dfrac{\\omega_{0}^{2}}{\\omega}-\\omega\\right)^{2} + 4\\beta^{2}}} \\;\\Longrightarrow\\; \\omega_{I} = \\omega_{0}"
+    },
+    {
+     "explain": "Điện áp trên cuộn cảm tỉ lệ omega^2 nhân biên độ điện tích, nên cực đại của nó bị đẩy LÊN trên omega_0 đúng bằng nghịch đảo của phép lệch xuống.",
+     "latex": "\\omega_{L} = \\dfrac{\\omega_{0}^{2}}{\\sqrt{\\omega_{0}^{2}-2\\beta^{2}}} \\;\\Longrightarrow\\; \\omega_{q}\\,\\omega_{L} = \\omega_{0}^{2}"
+    },
+    {
+     "explain": "Thay số với beta = R/(2L) = 100 s^(-1) và omega_0 = 3162 s^(-1).",
+     "latex": "\\omega_{q} = \\sqrt{10^{7} - 2\\times 10^{4}} \\approx 3159\\ \\text{s}^{-1},\\qquad \\omega_{L} = \\dfrac{10^{7}}{3159} \\approx 3165\\ \\text{s}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.cong-huong-dien-tich-va-dong-mach-rlc",
+    "physics.thpt.ru-co-hoc.tan-so-cong-huong-bien-do",
+    "physics.thpt.ru-co-hoc.cong-huong-van-toc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 12,
+   "skills": [
+    "phân biệt ba tần số cộng hưởng của mạch RLC",
+    "song ánh cơ - điện",
+    "tìm cực trị của biểu thức có tham số"
+   ],
+   "hints": [
+    "Điện tích ứng với li độ, dòng điện ứng với vận tốc.",
+    "Cộng hưởng dòng điện không phụ thuộc R."
+   ],
+   "tags": [
+    "irodov",
+    "mach-rlc",
+    "cong-huong",
+    "dao-dong-cuong-buc"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0032",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Chuyển động hạt trong trường điện và từ chéo nhau - vận tốc trôi",
+   "type": "dien-so",
+   "statement_vi": "Trong một vùng không gian có điện trường đều E = 2,0 kV/m và từ trường đều B = 0,050 T VUÔNG GÓC với nhau. Hãy lập biểu thức chữ của vận tốc trôi của một hạt mang điện trong vùng đó, giải thích vì sao nó không phụ thuộc điện tích và khối lượng, rồi tính độ lớn vận tốc trôi.",
+   "statement_en": "A region contains mutually PERPENDICULAR uniform fields E = 2.0 kV/m and B = 0.050 T. Derive a literal expression for the drift velocity of a charged particle in this region, explain why it depends on neither charge nor mass, and compute its magnitude.",
+   "answer": "v_troi = (E x B)/B^2, độ lớn v = E/B = 4,0*10^4 m/s; không phụ thuộc q và m",
+   "answer_numeric": 40000.0,
+   "answer_unit": "m/s",
+   "tolerance": 200.0,
+   "solution_steps": [
+    {
+     "explain": "Tìm hệ quy chiếu trong đó lực toàn phần triệt tiêu. Đặt v = v_troi + u và yêu cầu phần lực không phụ thuộc u phải bằng không - đây là mẹo tách chuyển động thành trôi cộng quay.",
+     "latex": "\\vec{F} = q\\left(\\vec{E} + \\vec{v}\\times\\vec{B}\\right),\\qquad \\vec{E} + \\vec{v}_{troi}\\times\\vec{B} = \\vec{0}"
+    },
+    {
+     "explain": "Nhân có hướng hai vế với B rồi dùng công thức khai triển tích kép, chú ý v_troi vuông góc với B nên số hạng chứa tích vô hướng biến mất.",
+     "latex": "\\vec{E}\\times\\vec{B} = -\\left(\\vec{v}_{troi}\\times\\vec{B}\\right)\\times\\vec{B} = B^{2}\\vec{v}_{troi}"
+    },
+    {
+     "explain": "Suy ra vận tốc trôi. Điện tích q đã bị ước bỏ ngay từ phương trình đầu, còn khối lượng chưa từng xuất hiện: cả electron lẫn ion dương đều trôi cùng hướng, cùng tốc độ. Đây là cơ sở của bộ chọn lọc vận tốc (bộ lọc Wien).",
+     "latex": "\\vec{v}_{troi} = \\dfrac{\\vec{E}\\times\\vec{B}}{B^{2}},\\qquad v_{troi} = \\dfrac{E}{B}\\ \\ \\left(\\vec{E}\\perp\\vec{B}\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "v_{troi} = \\dfrac{2.0\\times 10^{3}}{0.050} = 4.0\\times 10^{4}\\ \\text{m/s}"
+    },
+    {
+     "explain": "Kiểm tra thứ nguyên và ý nghĩa: E/B có đơn vị (V/m)/T = m/s, và tỉ số này phải nhỏ hơn nhiều tốc độ ánh sáng thì mô tả phi tương đối tính mới hợp lệ; ở đây v/c khoảng 1,3*10^(-4).",
+     "latex": "\\dfrac{v_{troi}}{c} = \\dfrac{4.0\\times 10^{4}}{3.0\\times 10^{8}} \\approx 1.3\\times 10^{-4} \\ll 1"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-dien-tu.van-toc-troi-truong-cheo",
+    "physics.dai-hoc.tu-truong.luc-lorentz-tong-quat"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 7,
+   "skills": [
+    "tách chuyển động thành trôi và quay",
+    "khai triển tích có hướng kép",
+    "kiểm tra thứ nguyên"
+   ],
+   "hints": [
+    "Tìm hệ quy chiếu mà lực toàn phần bằng 0.",
+    "Nhân có hướng phương trình với vectơ B."
+   ],
+   "tags": [
+    "irodov",
+    "truong-cheo-nhau",
+    "van-toc-troi",
+    "luc-lorentz"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0033",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Quỹ đạo cycloid trong trường điện - từ chéo nhau",
+   "type": "tu-luan",
+   "statement_vi": "Một electron xuất phát TỪ TRẠNG THÁI NGHỈ tại gốc toạ độ trong vùng có điện trường đều E = 1,0 kV/m hướng theo trục Oy và từ trường đều B = 10 mT hướng theo trục Oz. Hãy: (a) chứng tỏ quỹ đạo là một cycloid; (b) lập biểu thức chữ của độ dịch chuyển CỰC ĐẠI theo phương của E, của bước cycloid dọc phương trôi và của tốc độ cực đại; (c) tính ba đại lượng đó. Lấy m = 9,11*10^(-31) kg, e = 1,60*10^(-19) C.",
+   "statement_en": "An electron starts FROM REST at the origin in a region with uniform E = 1.0 kV/m along Oy and uniform B = 10 mT along Oz. (a) Show the trajectory is a cycloid; (b) derive literal expressions for the MAXIMUM displacement along E, the cycloid step along the drift direction and the maximum speed; (c) evaluate them. Take m = 9.11e-31 kg, e = 1.60e-19 C.",
+   "answer": "y_max = 2mE/(eB^2) ≈ 1,14*10^(-4) m; bước Delta x = 2 pi m E/(e B^2) = pi*y_max ≈ 3,57*10^(-4) m; v_max = 2E/B = 2,0*10^5 m/s",
+   "answer_numeric": 0.0001137,
+   "answer_unit": "m",
+   "tolerance": 3e-06,
+   "solution_steps": [
+    {
+     "explain": "Tách vận tốc thành thành phần trôi đều cộng thành phần quay. Trong hệ quy chiếu chuyển động cùng vận tốc trôi, điện trường bị triệt tiêu (ở gần đúng phi tương đối tính) nên chỉ còn từ trường: hạt chuyển động TRÒN ĐỀU.",
+     "latex": "\\vec{v} = \\vec{v}_{troi} + \\vec{u},\\qquad \\vec{v}_{troi} = \\dfrac{\\vec{E}\\times\\vec{B}}{B^{2}},\\qquad v_{troi} = \\dfrac{E}{B}"
+    },
+    {
+     "explain": "Điều kiện ban đầu là hạt đứng yên, nên trong hệ trôi hạt có tốc độ đúng bằng v_troi. Kết luận: bán kính đường tròn trong hệ trôi bằng v_troi chia tần số cyclotron. Chồng chập chuyển động tròn đều lên chuyển động thẳng đều với CÙNG tốc độ cho đúng định nghĩa cycloid (đường lăn của một điểm trên vành bánh xe).",
+     "latex": "\\omega_{c} = \\dfrac{eB}{m},\\qquad r = \\dfrac{v_{troi}}{\\omega_{c}} = \\dfrac{mE}{eB^{2}}"
+    },
+    {
+     "explain": "Độ dịch chuyển cực đại theo phương của E chính là ĐƯỜNG KÍNH của đường tròn lăn, vì điểm trên vành bánh xe cao nhất khi ở đỉnh.",
+     "latex": "y_{\\max} = 2r = \\dfrac{2mE}{eB^{2}}"
+    },
+    {
+     "explain": "Bước cycloid là quãng đường trôi trong một chu kì cyclotron, tức chu vi đường tròn lăn.",
+     "latex": "\\Delta x = v_{troi}T_{c} = \\dfrac{E}{B}\\cdot\\dfrac{2\\pi m}{eB} = \\dfrac{2\\pi mE}{eB^{2}} = \\pi\\,y_{\\max}"
+    },
+    {
+     "explain": "Tốc độ cực đại đạt tại đỉnh cycloid, khi vận tốc quay cùng chiều vận tốc trôi nên hai đóng góp cộng nhau.",
+     "latex": "v_{\\max} = v_{troi} + u = 2v_{troi} = \\dfrac{2E}{B}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "y_{\\max} = \\dfrac{2\\cdot 9.11\\times 10^{-31}\\cdot 10^{3}}{1.60\\times 10^{-19}\\cdot 10^{-4}} \\approx 1.14\\times 10^{-4}\\ \\text{m},\\quad \\Delta x \\approx 3.57\\times 10^{-4}\\ \\text{m},\\quad v_{\\max} = 2.0\\times 10^{5}\\ \\text{m/s}"
+    },
+    {
+     "explain": "Nhận xét kiểu Irodov: hạt xuất phát từ nghỉ TUẦN HOÀN chạm lại trục Ox (tức y trở về 0) và tại các điểm đó vận tốc lại bằng không - điện trường đã trả lại toàn bộ công đã sinh. Từ trường không sinh công nên năng lượng chỉ do E quyết định: e*E*y = m v^2/2, kiểm tra được ngay với y = y_max và v = v_max.",
+     "latex": "eEy_{\\max} = \\dfrac{2mE^{2}}{B^{2}} = \\dfrac{1}{2}m\\left(\\dfrac{2E}{B}\\right)^{2} = \\dfrac{1}{2}mv_{\\max}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.quy-dao-cycloid-truong-cheo",
+    "physics.thpt.ru-dien-tu.van-toc-troi-truong-cheo",
+    "physics.dai-hoc.tu-truong.luc-lorentz-tong-quat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 16,
+   "skills": [
+    "tách chuyển động thành trôi và quay tròn",
+    "xây dựng quỹ đạo cycloid",
+    "kiểm tra bằng định lí động năng"
+   ],
+   "hints": [
+    "Chuyển sang hệ quy chiếu trôi để triệt tiêu E.",
+    "Hạt xuất phát từ nghỉ nên tốc độ quay bằng đúng tốc độ trôi.",
+    "Từ trường không sinh công."
+   ],
+   "tags": [
+    "irodov",
+    "truong-cheo-nhau",
+    "cycloid",
+    "chuyen-dong-hat-mang-dien"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0034",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Giới hạn - vô cùng bé tương đương bậc cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn L = lim (x -> 0) của (arcsin x - x)/(x - arctan x).",
+   "statement_en": "Evaluate L = lim as x -> 0 of (arcsin x - x)/(x - arctan x).",
+   "choices": [
+    {
+     "key": "A",
+     "text": "1/2",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "0",
+     "why_wrong": "Thay tương đương bậc NHẤT arcsin x ~ x và arctan x ~ x vào từng số hạng của HIỆU. Cấm kị kinh điển: chỉ được thay tương đương cho THỪA SỐ của tích hoặc thương, không được thay trong tổng - hiệu."
+    },
+    {
+     "key": "C",
+     "text": "2",
+     "why_wrong": "Đảo ngược tỉ số: lấy (1/3) chia (1/6) thay vì (1/6) chia (1/3)."
+    },
+    {
+     "key": "D",
+     "text": "1",
+     "why_wrong": "Nhớ nhầm hệ số, cho rằng cả hai hiệu đều tương đương x^3/3 (thực ra arcsin x - x ~ x^3/6, khác hệ số với x - arctan x ~ x^3/3)."
+    },
+    {
+     "key": "E",
+     "text": "-1/2",
+     "why_wrong": "Nhầm dấu của một trong hai khai triển: arcsin x = x + x^3/6 + ... (dấu CỘNG) còn arctan x = x - x^3/3 + ... (dấu TRỪ)."
+    }
+   ],
+   "answer": "A",
+   "answer_numeric": 0.5,
+   "answer_unit": "",
+   "tolerance": 0.001,
+   "solution_steps": [
+    {
+     "explain": "Nhận diện bẫy trước tiên: cả tử và mẫu đều là HIỆU của hai vô cùng bé TƯƠNG ĐƯƠNG, nên không được phép thay thế tương đương bậc nhất. Phải dùng khai triển Maclaurin tới bậc ba.",
+     "latex": "\\arcsin x = x + \\dfrac{x^{3}}{6} + o\\left(x^{3}\\right),\\qquad \\arctan x = x - \\dfrac{x^{3}}{3} + o\\left(x^{3}\\right)"
+    },
+    {
+     "explain": "Trừ đi để lấy vô cùng bé bậc ba của tử và mẫu. Bảng vô cùng bé bậc cao cho ngay hai kết quả này.",
+     "latex": "\\arcsin x - x \\sim \\dfrac{x^{3}}{6},\\qquad x - \\arctan x \\sim \\dfrac{x^{3}}{3}\\qquad \\left(x\\to 0\\right)"
+    },
+    {
+     "explain": "Bây giờ tử và mẫu đã là các vô cùng bé đơn lẻ (không còn hiệu) nên được phép thay tương đương và rút gọn x^3.",
+     "latex": "L = \\lim_{x\\to 0}\\dfrac{x^{3}/6}{x^{3}/3} = \\dfrac{3}{6} = \\dfrac{1}{2}"
+    },
+    {
+     "explain": "Kiểm tra bằng số để chắc chắn: thay x = 0,01 vào biểu thức gốc cho giá trị rất gần 0,5.",
+     "latex": "\\left.\\dfrac{\\arcsin x - x}{x - \\arctan x}\\right|_{x=0.01} \\approx 0.50005"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.vo-cung-be-bac-cao",
+    "math.dai-hoc.gioi-han.vo-cung-be-tuong-duong",
+    "math.dai-hoc.taylor.khai-trien-arcsin",
+    "math.dai-hoc.taylor.khai-trien-arctan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "bảng vô cùng bé bậc ba",
+    "điều kiện được phép thay tương đương",
+    "khai triển Maclaurin của hàm lượng giác ngược"
+   ],
+   "hints": [
+    "Không được thay tương đương trong một HIỆU.",
+    "Khai triển tới bậc x^3."
+   ],
+   "tags": [
+    "demidovich",
+    "gioi-han",
+    "vo-cung-be",
+    "khai-trien-maclaurin"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0035",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Giới hạn - dạng vô định 1 mũ vô cùng",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn L = lim (x -> 0) của [ (1+x)^(1/x) / e ]^(1/x). Trình bày kết quả dưới dạng biểu thức chữ rồi điền giá trị thập phân.",
+   "statement_en": "Evaluate L = lim as x -> 0 of [ (1+x)^(1/x) / e ]^(1/x). Give the closed-form answer, then enter its decimal value.",
+   "answer": "L = e^(-1/2) ≈ 0,6065",
+   "answer_numeric": 0.60653,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Cơ số dần tới 1 và số mũ dần ra vô cùng, nên đây là dạng vô định 1 mũ vô cùng. Quy tắc chuẩn: lấy lôga để đưa về dạng tích rồi về dạng 0 nhân vô cùng.",
+     "latex": "\\ln L = \\lim_{x\\to 0}\\dfrac{1}{x}\\left[\\dfrac{\\ln\\left(1+x\\right)}{x} - 1\\right]"
+    },
+    {
+     "explain": "Điểm mấu chốt: biểu thức trong ngoặc vuông là một vô cùng bé, nên phải khai triển ln(1+x) tới bậc HAI mới đủ. Nếu chỉ giữ tới bậc nhất sẽ ra 0 và mất mất kết quả.",
+     "latex": "\\ln\\left(1+x\\right) = x - \\dfrac{x^{2}}{2} + \\dfrac{x^{3}}{3} + o\\left(x^{3}\\right)"
+    },
+    {
+     "explain": "Chia cho x rồi trừ 1: số hạng bậc nhất triệt tiêu chính xác, còn lại vô cùng bé bậc nhất.",
+     "latex": "\\dfrac{\\ln\\left(1+x\\right)}{x} - 1 = -\\dfrac{x}{2} + \\dfrac{x^{2}}{3} + o\\left(x^{2}\\right)"
+    },
+    {
+     "explain": "Nhân với 1/x rồi lấy giới hạn: số hạng bậc hai biến mất, chỉ còn hằng số -1/2.",
+     "latex": "\\ln L = \\lim_{x\\to 0}\\left(-\\dfrac{1}{2} + \\dfrac{x}{3} + o\\left(x\\right)\\right) = -\\dfrac{1}{2}"
+    },
+    {
+     "explain": "Lấy hàm mũ hai vế để trả về L.",
+     "latex": "L = e^{-1/2} = \\dfrac{1}{\\sqrt{e}} \\approx 0.6065"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.khu-dang-mot-mu-vo-cung",
+    "math.dai-hoc.taylor.khai-trien-ln-mot-cong-x",
+    "math.dai-hoc.gioi-han.vo-cung-be-tuong-duong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 8,
+   "skills": [
+    "khử dạng vô định 1 mũ vô cùng",
+    "chọn đủ bậc khai triển Maclaurin",
+    "đạo hàm lôga của giới hạn"
+   ],
+   "hints": [
+    "Lấy ln trước.",
+    "Khai triển ln(1+x) tới bậc x^2, bậc nhất là không đủ."
+   ],
+   "tags": [
+    "demidovich",
+    "gioi-han",
+    "dang-vo-dinh",
+    "khai-trien-maclaurin"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0036",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Giới hạn của dãy tổng - định lí Stolz và tổng tích phân",
+   "type": "tu-luan",
+   "statement_vi": "Tính giới hạn L = lim (n -> vô cùng) của (căn 1 + căn 2 + ... + căn n)/n^(3/2) bằng HAI cách độc lập: (a) dùng định lí Stolz - Cesaro; (b) đưa về tổng tích phân của một hàm trên đoạn [0; 1]. So sánh hai lời giải.",
+   "statement_en": "Evaluate L = lim as n -> infinity of (sqrt(1) + sqrt(2) + ... + sqrt(n))/n^(3/2) in TWO independent ways: (a) by the Stolz-Cesaro theorem; (b) by recognising a Riemann sum on [0, 1]. Compare the two approaches.",
+   "answer": "L = 2/3",
+   "answer_numeric": 0.66667,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Cách (a). Đặt tử số là a_n và mẫu số là b_n. Kiểm tra điều kiện của định lí Stolz: b_n phải đơn điệu tăng và tiến ra vô cùng - điều đó hiển nhiên với n^(3/2).",
+     "latex": "a_{n} = \\sum_{k=1}^{n}\\sqrt{k},\\qquad b_{n} = n^{3/2} \\nearrow +\\infty"
+    },
+    {
+     "explain": "Định lí Stolz cho phép thay tỉ số bởi tỉ số các SỐ GIA. Số gia của tử số chỉ còn một số hạng, rất gọn.",
+     "latex": "L = \\lim_{n\\to\\infty}\\dfrac{a_{n+1}-a_{n}}{b_{n+1}-b_{n}} = \\lim_{n\\to\\infty}\\dfrac{\\sqrt{n+1}}{\\left(n+1\\right)^{3/2} - n^{3/2}}"
+    },
+    {
+     "explain": "Đặt nhân tử chung n^(3/2) ở mẫu rồi khai triển (1 + 1/n)^(3/2) theo nhị thức Newton suy rộng. Số hạng bậc 0 triệt tiêu, còn lại bậc 1/n.",
+     "latex": "\\left(n+1\\right)^{3/2} - n^{3/2} = n^{3/2}\\left[\\left(1+\\dfrac{1}{n}\\right)^{3/2} - 1\\right] = n^{3/2}\\left[\\dfrac{3}{2n} + O\\left(\\dfrac{1}{n^{2}}\\right)\\right] = \\dfrac{3}{2}\\sqrt{n}\\left(1 + O\\left(\\dfrac{1}{n}\\right)\\right)"
+    },
+    {
+     "explain": "Thay vào và rút gọn căn n. Tỉ số dần tới 2/3.",
+     "latex": "L = \\lim_{n\\to\\infty}\\dfrac{\\sqrt{n}\\sqrt{1 + 1/n}}{\\dfrac{3}{2}\\sqrt{n}\\left(1 + O\\left(1/n\\right)\\right)} = \\dfrac{2}{3}"
+    },
+    {
+     "explain": "Cách (b). Rút n^(1/2) ra khỏi mỗi căn để tổng có dạng trung bình cộng của các giá trị hàm tại các điểm chia đều - đó chính là tổng Riemann.",
+     "latex": "\\dfrac{1}{n^{3/2}}\\sum_{k=1}^{n}\\sqrt{k} = \\dfrac{1}{n}\\sum_{k=1}^{n}\\sqrt{\\dfrac{k}{n}}"
+    },
+    {
+     "explain": "Hàm căn x liên tục trên [0; 1] nên khả tích Riemann; tổng Riemann với phép chia đều hội tụ tới tích phân xác định.",
+     "latex": "L = \\int_{0}^{1}\\sqrt{x}\\,dx = \\left[\\dfrac{2}{3}x^{3/2}\\right]_{0}^{1} = \\dfrac{2}{3}"
+    },
+    {
+     "explain": "So sánh: cách Stolz thuần đại số, dùng được cả khi số hạng không có dạng f(k/n); cách tổng tích phân ngắn hơn nhưng đòi hỏi tổng phải viết được đúng dạng trung bình cộng. Hai kết quả trùng nhau, khẳng định độ tin cậy.",
+     "latex": "L = \\dfrac{2}{3} \\approx 0.6667"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.dinh-li-stolz",
+    "math.dai-hoc.ru-giai-tich.gioi-han-tong-qua-tich-phan",
+    "math.dai-hoc.taylor.khai-trien-nhi-thuc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 12,
+   "skills": [
+    "định lí Stolz - Cesaro",
+    "nhận diện tổng Riemann",
+    "khai triển nhị thức suy rộng cho tham số nhỏ"
+   ],
+   "hints": [
+    "Stolz: thay tỉ số bằng tỉ số các số gia.",
+    "Rút n^(1/2) ra để lộ dạng f(k/n)."
+   ],
+   "tags": [
+    "demidovich",
+    "gioi-han-day",
+    "dinh-li-stolz",
+    "tong-riemann"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0037",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Đạo hàm cấp cao - công thức Leibniz",
+   "type": "dien-so",
+   "statement_vi": "Cho y = x^2 * e^(2x). Dùng công thức Leibniz, hãy tìm biểu thức chữ của đạo hàm cấp n (với n >= 2), rồi điền giá trị của đạo hàm cấp 5 tại x = 0.",
+   "statement_en": "Let y = x^2 * e^(2x). Using the Leibniz rule, find a closed-form expression for the n-th derivative (n >= 2), then enter the value of the fifth derivative at x = 0.",
+   "answer": "y^(n) = 2^(n-2) e^(2x) [4x^2 + 4nx + n(n-1)]; y^(5)(0) = 2^3 * 20 = 160",
+   "answer_numeric": 160.0,
+   "answer_unit": "",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Chọn cách phân vai đúng cho công thức Leibniz: đặt thừa số ĐA THỨC là hàm bị đạo hàm nhiều lần, vì nó chỉ có ba đạo hàm khác không, cắt tổng còn ba số hạng. Nếu đặt ngược lại thì tổng có n+1 số hạng và không rút gọn được.",
+     "latex": "\\left(uv\\right)^{\\left(n\\right)} = \\sum_{k=0}^{n}\\binom{n}{k}u^{\\left(k\\right)}v^{\\left(n-k\\right)},\\qquad u = x^{2},\\ v = e^{2x}"
+    },
+    {
+     "explain": "Liệt kê các đạo hàm cần dùng. Với hàm mũ, mỗi lần đạo hàm nhân thêm hệ số 2.",
+     "latex": "u = x^{2},\\ u' = 2x,\\ u'' = 2,\\ u^{\\left(k\\ge 3\\right)} = 0;\\qquad v^{\\left(m\\right)} = 2^{m}e^{2x}"
+    },
+    {
+     "explain": "Ghép ba số hạng còn lại của tổng Leibniz với các hệ số nhị thức tương ứng.",
+     "latex": "y^{\\left(n\\right)} = \\binom{n}{0}x^{2}\\cdot 2^{n}e^{2x} + \\binom{n}{1}2x\\cdot 2^{n-1}e^{2x} + \\binom{n}{2}\\cdot 2\\cdot 2^{n-2}e^{2x}"
+    },
+    {
+     "explain": "Đặt nhân tử chung 2^(n-2) e^(2x) và rút gọn các hệ số nhị thức.",
+     "latex": "y^{\\left(n\\right)} = 2^{n-2}e^{2x}\\left[4x^{2} + 4nx + n\\left(n-1\\right)\\right]"
+    },
+    {
+     "explain": "Kiểm tra công thức với n = 2 bằng cách đạo hàm trực tiếp hai lần - bước xác minh bắt buộc.",
+     "latex": "y'' = e^{2x}\\left(4x^{2}+8x+2\\right) = 2^{0}e^{2x}\\left[4x^{2} + 8x + 2\\right] \\ \\checkmark"
+    },
+    {
+     "explain": "Thay n = 5 và x = 0: hai số hạng chứa x biến mất.",
+     "latex": "y^{\\left(5\\right)}\\left(0\\right) = 2^{3}\\cdot\\left[0 + 0 + 5\\cdot 4\\right] = 8\\cdot 20 = 160"
+    },
+    {
+     "explain": "Kiểm tra chéo bằng chuỗi lũy thừa: hệ số của x^5 trong khai triển của x^2 e^(2x) nhân 5! phải cho cùng kết quả.",
+     "latex": "x^{2}e^{2x} = \\sum_{k\\ge 0}\\dfrac{2^{k}}{k!}x^{k+2} \\;\\Longrightarrow\\; \\left[x^{5}\\right] = \\dfrac{2^{3}}{3!} = \\dfrac{4}{3},\\qquad y^{\\left(5\\right)}\\left(0\\right) = 5!\\cdot\\dfrac{4}{3} = 160 \\ \\checkmark"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.dao-ham.cong-thuc-leibniz",
+    "math.dai-hoc.dao-ham.dao-ham-cap-n-e-mu",
+    "math.dai-hoc.taylor.khai-trien-e-mu-x"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 9,
+   "skills": [
+    "công thức Leibniz cho đạo hàm cấp n",
+    "chọn đúng thừa số đa thức",
+    "kiểm tra bằng hệ số chuỗi Maclaurin"
+   ],
+   "hints": [
+    "Đặt đa thức làm hàm được đạo hàm nhiều lần.",
+    "Đa thức bậc 2 chỉ có 3 đạo hàm khác không."
+   ],
+   "tags": [
+    "demidovich",
+    "dao-ham-cap-cao",
+    "cong-thuc-leibniz"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0038",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Đạo hàm cấp cao qua hệ thức truy hồi - hàm arctan",
+   "type": "tu-luan",
+   "statement_vi": "Cho y = arctan x. Xuất phát từ hệ thức (1 + x^2) y' = 1, hãy dùng công thức Leibniz để lập hệ thức truy hồi cho các đạo hàm cấp cao tại x = 0, rồi suy ra công thức chữ cho y^(n)(0) với mọi n. Áp dụng: tính y^(9)(0).",
+   "statement_en": "Let y = arctan x. Starting from (1 + x^2) y' = 1, use the Leibniz rule to derive a recurrence for the higher derivatives at x = 0, then obtain a closed form for y^(n)(0) for all n. Apply it to compute y^(9)(0).",
+   "answer": "Hệ thức: y^(n+1)(0) = -n(n-1) y^(n-1)(0). Suy ra y^(2m)(0) = 0 và y^(2m+1)(0) = (-1)^m (2m)!. Do đó y^(9)(0) = (-1)^4 * 8! = 40320",
+   "answer_numeric": 40320.0,
+   "answer_unit": "",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Lí do phải dùng hệ thức truy hồi: đạo hàm trực tiếp arctan nhiều lần cho biểu thức ngày càng cồng kềnh. Mẹo của Demidovich là nhân với mẫu số để có một ĐẲNG THỨC ĐA THỨC, rồi đạo hàm đẳng thức đó n lần.",
+     "latex": "y' = \\dfrac{1}{1+x^{2}} \\;\\Longrightarrow\\; \\left(1+x^{2}\\right)y' = 1"
+    },
+    {
+     "explain": "Áp dụng công thức Leibniz cho tích của (1+x^2) với y'. Vì (1+x^2) là đa thức bậc hai, tổng chỉ còn BA số hạng - đây chính là chỗ công thức Leibniz phát huy tác dụng.",
+     "latex": "\\left[\\left(1+x^{2}\\right)y'\\right]^{\\left(n\\right)} = \\left(1+x^{2}\\right)y^{\\left(n+1\\right)} + n\\cdot 2x\\cdot y^{\\left(n\\right)} + \\binom{n}{2}\\cdot 2\\cdot y^{\\left(n-1\\right)} = 0"
+    },
+    {
+     "explain": "Vế phải bằng 0 với mọi n >= 1 vì đạo hàm của hằng số 1. Rút gọn hệ số nhị thức.",
+     "latex": "\\left(1+x^{2}\\right)y^{\\left(n+1\\right)} + 2nx\\,y^{\\left(n\\right)} + n\\left(n-1\\right)y^{\\left(n-1\\right)} = 0"
+    },
+    {
+     "explain": "Thay x = 0: số hạng giữa biến mất hoàn toàn và hệ số của y^(n+1) bằng 1, cho hệ thức truy hồi cực gọn nối các đạo hàm cách nhau HAI cấp.",
+     "latex": "y^{\\left(n+1\\right)}\\left(0\\right) = -n\\left(n-1\\right)y^{\\left(n-1\\right)}\\left(0\\right)"
+    },
+    {
+     "explain": "Lấy hai giá trị khởi đầu. Vì y'' (0) = 0 và truy hồi nhảy hai cấp, mọi đạo hàm cấp CHẴN đều bằng 0 - phù hợp với việc arctan là hàm lẻ.",
+     "latex": "y\\left(0\\right) = 0,\\quad y'\\left(0\\right) = 1,\\quad y''\\left(0\\right) = 0 \\;\\Longrightarrow\\; y^{\\left(2m\\right)}\\left(0\\right) = 0"
+    },
+    {
+     "explain": "Với cấp lẻ, lặp truy hồi: mỗi bước nhân thêm hệ số âm là tích của hai số nguyên liên tiếp. Nhân dồn lại cho giai thừa.",
+     "latex": "y^{\\left(2m+1\\right)}\\left(0\\right) = \\left(-1\\right)^{m}\\left(2m\\right)!"
+    },
+    {
+     "explain": "Kiểm tra bằng khai triển Maclaurin đã biết của arctan: hệ số của x^(2m+1) là (-1)^m/(2m+1), nhân với (2m+1)! đúng cho (-1)^m (2m)!.",
+     "latex": "\\arctan x = \\sum_{m\\ge 0}\\dfrac{\\left(-1\\right)^{m}}{2m+1}x^{2m+1} \\;\\Longrightarrow\\; y^{\\left(2m+1\\right)}\\left(0\\right) = \\left(2m+1\\right)!\\cdot\\dfrac{\\left(-1\\right)^{m}}{2m+1} = \\left(-1\\right)^{m}\\left(2m\\right)! \\ \\checkmark"
+    },
+    {
+     "explain": "Áp dụng với n = 9, tức 2m + 1 = 9 nên m = 4.",
+     "latex": "y^{\\left(9\\right)}\\left(0\\right) = \\left(-1\\right)^{4}\\cdot 8! = 40320"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.dao-ham.cong-thuc-leibniz",
+    "math.dai-hoc.taylor.khai-trien-arctan",
+    "math.dai-hoc.dao-ham.dao-ham-cap-n-phan-thuc"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 18,
+   "skills": [
+    "lập hệ thức truy hồi cho đạo hàm cấp cao",
+    "áp dụng Leibniz cho tích với đa thức bậc thấp",
+    "đối chiếu với khai triển Maclaurin"
+   ],
+   "hints": [
+    "Nhân với mẫu số để khử phân thức.",
+    "Đạo hàm đẳng thức n lần bằng công thức Leibniz.",
+    "Thay x = 0 để số hạng giữa triệt tiêu."
+   ],
+   "tags": [
+    "demidovich",
+    "dao-ham-cap-cao",
+    "cong-thuc-leibniz",
+    "he-thuc-truy-hoi"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0039",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Công thức Taylor với phần dư Lagrange - đánh giá sai số",
+   "type": "dien-so",
+   "statement_vi": "Xấp xỉ e^x bởi đa thức Maclaurin bậc n trên đoạn [0; 0,5]. Dùng phần dư Lagrange, hãy lập biểu thức chữ chặn trên của sai số, rồi tìm bậc n NHỎ NHẤT bảo đảm sai số nhỏ hơn 10^(-6) trên toàn đoạn.",
+   "statement_en": "Approximate e^x by its Maclaurin polynomial of degree n on [0, 0.5]. Using the Lagrange remainder, derive a literal error bound and find the SMALLEST degree n guaranteeing an error below 10^-6 on the whole interval.",
+   "answer": "|R_n(x)| <= e^(0,5) * 0,5^(n+1)/(n+1)!; n = 6 cho 2,6*10^(-6) (chưa đạt), n = 7 cho 1,6*10^(-7) (đạt). Vậy n_min = 7",
+   "answer_numeric": 7.0,
+   "answer_unit": "",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Viết phần dư Lagrange cho hàm mũ. Mọi đạo hàm của e^x đều bằng chính nó, nên f^(n+1)(c) = e^c với c nằm giữa 0 và x.",
+     "latex": "R_{n}\\left(x\\right) = \\dfrac{f^{\\left(n+1\\right)}\\left(c\\right)}{\\left(n+1\\right)!}x^{\\,n+1} = \\dfrac{e^{c}}{\\left(n+1\\right)!}x^{\\,n+1},\\qquad 0 < c < x"
+    },
+    {
+     "explain": "Chặn trên: trên đoạn [0; 0,5] thì e^c lớn nhất khi c = 0,5 và |x| lớn nhất bằng 0,5. Thay cả hai giá trị cực đại để có chặn ĐỀU trên toàn đoạn.",
+     "latex": "\\left|R_{n}\\left(x\\right)\\right| \\le \\dfrac{e^{0.5}\\left(0.5\\right)^{n+1}}{\\left(n+1\\right)!}"
+    },
+    {
+     "explain": "Thử các giá trị n liên tiếp. Do có cả lũy thừa lẫn giai thừa ở mẫu, chặn giảm rất nhanh nên chỉ cần vài bước.",
+     "latex": "n = 5:\\ 3.6\\times 10^{-5};\\qquad n = 6:\\ 2.6\\times 10^{-6};\\qquad n = 7:\\ 1.6\\times 10^{-7}"
+    },
+    {
+     "explain": "Kết luận: n = 6 chưa đạt, n = 7 đạt. Vậy bậc nhỏ nhất là 7.",
+     "latex": "n_{\\min} = 7"
+    },
+    {
+     "explain": "Đối chiếu độ chặt của đánh giá: với n = 4 chặn cho 4,3*10^(-4) trong khi sai số THỰC tại x = 0,5 chỉ là 2,8*10^(-4). Chặn Lagrange luôn hơi rộng nhưng đúng bậc.",
+     "latex": "e^{0.5} - \\sum_{k=0}^{4}\\dfrac{0.5^{k}}{k!} = 1.6487213 - 1.6484375 \\approx 2.8\\times 10^{-4} < 4.3\\times 10^{-4} \\ \\checkmark"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.taylor.cong-thuc-taylor-lagrange",
+    "math.dai-hoc.taylor.khai-trien-e-mu-x",
+    "math.dai-hoc.taylor.cong-thuc-maclaurin"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 7,
+   "skills": [
+    "phần dư Lagrange",
+    "chặn đều trên một đoạn",
+    "dò tìm bậc khai triển đủ chính xác"
+   ],
+   "hints": [
+    "Đạo hàm mọi cấp của e^x vẫn là e^x.",
+    "Lấy cả e^c và |x| ở giá trị lớn nhất."
+   ],
+   "tags": [
+    "demidovich",
+    "cong-thuc-taylor",
+    "phan-du-lagrange",
+    "danh-gia-sai-so"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0040",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Công thức Taylor - phần dư Cauchy và miền hội tụ",
+   "type": "tu-luan",
+   "statement_vi": "Xét khai triển Maclaurin của f(x) = ln(1+x). Hãy: (a) chỉ ra vì sao phần dư LAGRANGE KHÔNG cho phép kết luận chuỗi hội tụ tới hàm trên toàn khoảng (-1; 0); (b) dùng phần dư CAUCHY chứng minh rằng phần dư dần tới 0 với mọi x thuộc (-1; 0]; (c) nêu vai trò của kết quả này.",
+   "statement_en": "Consider the Maclaurin expansion of f(x) = ln(1+x). (a) Explain why the LAGRANGE remainder fails to prove convergence to the function on all of (-1, 0); (b) use the CAUCHY remainder to show the remainder tends to 0 for every x in (-1, 0]; (c) comment on the significance.",
+   "answer": "Phần dư Lagrange cho |R_n| = |x|^(n+1)/[(n+1)(1+c)^(n+1)] với c giữa x và 0; khi x gần -1 thì |x/(1+c)| có thể lớn hơn 1 nên không kết luận được. Phần dư Cauchy cho |R_n| <= |x|^(n+1)/(1+x) -> 0",
+   "solution_steps": [
+    {
+     "explain": "Tính đạo hàm cấp n+1 của hàm - đây là dữ liệu chung cho cả hai dạng phần dư.",
+     "latex": "f^{\\left(n+1\\right)}\\left(t\\right) = \\dfrac{\\left(-1\\right)^{n}n!}{\\left(1+t\\right)^{n+1}}"
+    },
+    {
+     "explain": "Phần (a). Viết phần dư Lagrange và chặn nó. Điểm trung gian c nằm giữa 0 và x; khi x âm thì 1 + c có thể nhỏ tuỳ ý.",
+     "latex": "R_{n}\\left(x\\right) = \\dfrac{f^{\\left(n+1\\right)}\\left(c\\right)}{\\left(n+1\\right)!}x^{\\,n+1} = \\dfrac{\\left(-1\\right)^{n}}{n+1}\\left(\\dfrac{x}{1+c}\\right)^{n+1}"
+    },
+    {
+     "explain": "Chỉ rõ chỗ hỏng: ta chỉ biết c nằm giữa x và 0 chứ không kiểm soát được nó. Với x gần -1, tỉ số |x/(1+c)| có thể LỚN HƠN 1, khi đó lũy thừa bậc n+1 tăng nhanh hơn tốc độ giảm của 1/(n+1), nên không kết luận được phần dư dần tới 0.",
+     "latex": "x \\to -1^{+},\\ c \\to x \\;\\Longrightarrow\\; \\left|\\dfrac{x}{1+c}\\right| > 1 \\ \\text{co the xay ra}"
+    },
+    {
+     "explain": "Phần (b). Phần dư Cauchy giữ lại thừa số (x - xi) mũ n chứ không gộp thành (x - x_0) mũ (n+1) - đây chính là điểm khác biệt cứu vãn tình thế.",
+     "latex": "R_{n}\\left(x\\right) = \\dfrac{f^{\\left(n+1\\right)}\\left(\\xi\\right)}{n!}\\left(x-\\xi\\right)^{n}x,\\qquad \\xi = \\theta x,\\ 0 < \\theta < 1"
+    },
+    {
+     "explain": "Thay đạo hàm vào và nhóm lại thành một lũy thừa bậc n của một tỉ số cùng một thừa số riêng.",
+     "latex": "R_{n}\\left(x\\right) = \\left(-1\\right)^{n}\\dfrac{x^{\\,n+1}}{1+\\theta x}\\left(\\dfrac{1-\\theta}{1+\\theta x}\\right)^{n}"
+    },
+    {
+     "explain": "Chặn tỉ số trong ngoặc. Với -1 < x <= 0 và 0 < theta < 1 ta có 1 - theta <= 1 + theta*x (bất đẳng thức này tương đương với x >= -1, luôn đúng), nên tỉ số nằm trong đoạn [0; 1] và lũy thừa bậc n của nó không vượt quá 1.",
+     "latex": "0 \\le \\dfrac{1-\\theta}{1+\\theta x} \\le 1 \\;\\Longrightarrow\\; \\left(\\dfrac{1-\\theta}{1+\\theta x}\\right)^{n} \\le 1"
+    },
+    {
+     "explain": "Chặn thừa số còn lại: vì theta*x >= x nên 1 + theta*x >= 1 + x > 0. Ghép hai chặn cho kết quả cuối.",
+     "latex": "\\left|R_{n}\\left(x\\right)\\right| \\le \\dfrac{\\left|x\\right|^{\\,n+1}}{1+x} \\xrightarrow{\\ n\\to\\infty\\ } 0 \\quad \\text{vi } \\left|x\\right| < 1"
+    },
+    {
+     "explain": "Phần (c). Kết luận: chuỗi Maclaurin của ln(1+x) hội tụ tới đúng hàm trên toàn khoảng (-1; 1]. Ý nghĩa phương pháp luận: một chuỗi Taylor có thể hội tụ tới hàm dù phần dư Lagrange không chứng minh được điều đó - phần dư Cauchy (và phần dư tích phân) là công cụ bắt buộc cho các bài toán biên như khai triển nhị thức Newton với số mũ bất kì.",
+     "latex": "\\ln\\left(1+x\\right) = \\sum_{k=1}^{\\infty}\\dfrac{\\left(-1\\right)^{k-1}}{k}x^{k},\\qquad -1 < x \\le 1"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.taylor-phan-du-cauchy",
+    "math.dai-hoc.ru-giai-tich.taylor-phan-du-tich-phan",
+    "math.dai-hoc.taylor.cong-thuc-taylor-lagrange",
+    "math.dai-hoc.taylor.khai-trien-ln-mot-cong-x"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 20,
+   "skills": [
+    "so sánh các dạng phần dư của công thức Taylor",
+    "chứng minh phần dư dần tới 0",
+    "xử lí bất đẳng thức có tham số theta"
+   ],
+   "hints": [
+    "Viết cả hai dạng phần dư rồi so sánh cấu trúc.",
+    "Chứng minh (1-theta)/(1+theta x) <= 1 khi x > -1."
+   ],
+   "tags": [
+    "demidovich",
+    "cong-thuc-taylor",
+    "phan-du-cauchy",
+    "hoi-tu-chuoi-luy-thua"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0041",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Hội tụ của tích phân suy rộng - hai đầu bất thường",
+   "type": "trac-nghiem",
+   "statement_vi": "Tìm tất cả các giá trị của tham số thực alpha để tích phân từ 0 đến vô cùng của x^alpha/(1 + x^4) dx HỘI TỤ.",
+   "statement_en": "Find all real alpha for which the integral from 0 to infinity of x^alpha/(1 + x^4) dx CONVERGES.",
+   "choices": [
+    {
+     "key": "A",
+     "text": "-1 < alpha < 3",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "alpha < 3",
+     "why_wrong": "Chỉ xét đầu vô cùng mà bỏ quên đầu x = 0. Khi alpha <= -1 hàm dưới dấu tích phân không bị chặn tại 0 và tích phân loại hai phân kì."
+    },
+    {
+     "key": "C",
+     "text": "alpha > -1",
+     "why_wrong": "Chỉ xét đầu x = 0 mà bỏ quên đuôi vô cùng. Khi alpha >= 3 thì hàm chỉ giảm như x^(alpha-4) với số mũ >= -1, không đủ nhanh."
+    },
+    {
+     "key": "D",
+     "text": "-1 <= alpha <= 3",
+     "why_wrong": "Lấy nhầm dấu bằng ở hai biên. Cả hai trường hợp biên đều PHÂN KÌ: alpha = -1 cho tích phân của dx/x gần 0, alpha = 3 cho tích phân của dx/x ở vô cùng - đều là trường hợp lôga phân kì."
+    },
+    {
+     "key": "E",
+     "text": "-3 < alpha < 1",
+     "why_wrong": "Lẫn lộn số mũ 4 của mẫu với vai trò của alpha: dùng alpha + 4 thay vì alpha - 4 khi xét ở vô cùng."
+    }
+   ],
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Nguyên tắc bắt buộc: tích phân có HAI điểm bất thường (x = 0 nếu alpha âm, và x tiến ra vô cùng) nên phải tách làm hai và đòi hỏi CẢ HAI cùng hội tụ.",
+     "latex": "\\int_{0}^{+\\infty} = \\int_{0}^{1} + \\int_{1}^{+\\infty}"
+    },
+    {
+     "explain": "Xét lân cận 0. Ở đó mẫu số dần tới 1 nên hàm tương đương với chính x mũ alpha; đây là tích phân suy rộng LOẠI HAI với số mũ -alpha.",
+     "latex": "\\dfrac{x^{\\alpha}}{1+x^{4}} \\sim x^{\\alpha}\\ \\ \\left(x\\to 0^{+}\\right),\\qquad \\int_{0}^{1}\\dfrac{dx}{x^{-\\alpha}} \\ \\text{hoi tu} \\iff -\\alpha < 1 \\iff \\alpha > -1"
+    },
+    {
+     "explain": "Xét lân cận vô cùng. Ở đó mẫu số tương đương x^4 nên hàm tương đương x^(alpha-4); đây là tích phân LOẠI MỘT với số mũ 4 - alpha.",
+     "latex": "\\dfrac{x^{\\alpha}}{1+x^{4}} \\sim x^{\\alpha-4}\\ \\ \\left(x\\to+\\infty\\right),\\qquad \\int_{1}^{+\\infty}\\dfrac{dx}{x^{4-\\alpha}} \\ \\text{hoi tu} \\iff 4-\\alpha > 1 \\iff \\alpha < 3"
+    },
+    {
+     "explain": "Nhấn mạnh chỗ hay nhầm: hai bất đẳng thức NGƯỢC chiều nhau. Ở điểm bất thường hữu hạn cần số mũ NHỎ hơn 1, ở vô cùng cần số mũ LỚN hơn 1.",
+     "latex": "\\text{loai hai: } p < 1;\\qquad \\text{loai mot: } p > 1"
+    },
+    {
+     "explain": "Giao hai điều kiện.",
+     "latex": "-1 < \\alpha < 3"
+    },
+    {
+     "explain": "Kiểm tra hai biên: cả hai đều cho tích phân kiểu dx/x, tức lôga phân kì, nên phải dùng bất đẳng thức NGHIÊM NGẶT.",
+     "latex": "\\alpha = -1:\\ \\int_{0}^{1}\\dfrac{dx}{x} = +\\infty;\\qquad \\alpha = 3:\\ \\int_{1}^{+\\infty}\\dfrac{dx}{x} = +\\infty"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.hoi-tu-tich-phan-loai-mot",
+    "math.dai-hoc.ru-giai-tich.hoi-tu-tich-phan-loai-hai",
+    "math.dai-hoc.tich-phan-suy-rong.so-sanh-gioi-han"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 7,
+   "skills": [
+    "tách tích phân theo các điểm bất thường",
+    "thang so sánh cho hai loại tích phân suy rộng",
+    "nhớ đúng chiều bất đẳng thức của số mũ"
+   ],
+   "hints": [
+    "Tách tại x = 1.",
+    "Ở gần 0 cần p < 1, ở vô cùng cần p > 1."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-suy-rong",
+    "hoi-tu",
+    "thang-so-sanh"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0042",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tích phân suy rộng đưa về hàm Beta - công thức phản xạ",
+   "type": "tu-luan",
+   "statement_vi": "Cho tích phân I(p) = tích phân từ 0 đến vô cùng của dx/(x^p (1+x)). Hãy: (a) xác định tất cả p thực để I(p) hội tụ; (b) đưa I(p) về hàm Beta bằng phép đổi biến thích hợp và tính I(p) ở dạng biểu thức chữ; (c) tính I(1/3).",
+   "statement_en": "Let I(p) = integral from 0 to infinity of dx/(x^p (1+x)). (a) Find all real p for which I(p) converges; (b) reduce I(p) to a Beta function by a suitable substitution and obtain a closed form; (c) compute I(1/3).",
+   "answer": "Hội tụ khi và chỉ khi 0 < p < 1; I(p) = B(1-p, p) = Gamma(1-p)Gamma(p) = pi/sin(p*pi); I(1/3) = pi/sin(pi/3) = 2 pi/căn 3 ≈ 3,628",
+   "answer_numeric": 3.6276,
+   "answer_unit": "",
+   "tolerance": 0.005,
+   "solution_steps": [
+    {
+     "explain": "Phần (a). Tách tích phân tại x = 1 rồi so sánh ở từng đầu. Ở gần 0 mẫu số (1+x) dần tới 1 nên hàm tương đương x mũ -p.",
+     "latex": "\\dfrac{1}{x^{p}\\left(1+x\\right)} \\sim \\dfrac{1}{x^{p}}\\ \\left(x\\to 0^{+}\\right) \\;\\Longrightarrow\\; \\text{hoi tu} \\iff p < 1"
+    },
+    {
+     "explain": "Ở vô cùng, mẫu số tương đương x^(p+1) nên đây là tích phân loại một với số mũ p+1.",
+     "latex": "\\dfrac{1}{x^{p}\\left(1+x\\right)} \\sim \\dfrac{1}{x^{\\,p+1}}\\ \\left(x\\to+\\infty\\right) \\;\\Longrightarrow\\; \\text{hoi tu} \\iff p+1 > 1 \\iff p > 0"
+    },
+    {
+     "explain": "Giao hai điều kiện. Chú ý điều kiện này trùng đúng với miền xác định của công thức phản xạ Euler - một dấu hiệu cho thấy hướng giải tiếp theo.",
+     "latex": "0 < p < 1"
+    },
+    {
+     "explain": "Phần (b). Chọn phép đổi biến đưa nửa trục [0; vô cùng) về đoạn [0; 1] - đây là phép thế chuẩn để nhận ra hàm Beta.",
+     "latex": "x = \\dfrac{t}{1-t},\\qquad t\\in\\left(0;1\\right),\\qquad dx = \\dfrac{dt}{\\left(1-t\\right)^{2}},\\qquad 1+x = \\dfrac{1}{1-t}"
+    },
+    {
+     "explain": "Thay vào và rút gọn cẩn thận các lũy thừa của (1-t): thừa số (1-t)^p từ x mũ -p, thừa số (1-t) từ mẫu (1+x), và (1-t)^(-2) từ dx.",
+     "latex": "I\\left(p\\right) = \\int_{0}^{1}\\left(\\dfrac{1-t}{t}\\right)^{p}\\left(1-t\\right)\\dfrac{dt}{\\left(1-t\\right)^{2}} = \\int_{0}^{1}t^{-p}\\left(1-t\\right)^{p-1}dt"
+    },
+    {
+     "explain": "Nhận ra ngay định nghĩa hàm Beta với hai tham số 1-p và p, cả hai đều dương đúng nhờ điều kiện hội tụ đã tìm ở phần (a).",
+     "latex": "I\\left(p\\right) = B\\left(1-p,\\,p\\right) = \\dfrac{\\Gamma\\left(1-p\\right)\\Gamma\\left(p\\right)}{\\Gamma\\left(1\\right)} = \\Gamma\\left(p\\right)\\Gamma\\left(1-p\\right)"
+    },
+    {
+     "explain": "Áp dụng công thức phản xạ Euler để có kết quả cuối ở dạng sơ cấp.",
+     "latex": "I\\left(p\\right) = \\dfrac{\\pi}{\\sin\\left(p\\pi\\right)},\\qquad 0 < p < 1"
+    },
+    {
+     "explain": "Phần (c). Thay p = 1/3 và kiểm tra tính đối xứng: I(p) = I(1-p), phù hợp với việc phép thế x -> 1/x biến tích phân thành chính nó với p đổi thành 1-p.",
+     "latex": "I\\left(\\dfrac{1}{3}\\right) = \\dfrac{\\pi}{\\sin\\left(\\pi/3\\right)} = \\dfrac{2\\pi}{\\sqrt{3}} \\approx 3.628"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan-suy-rong.ham-beta",
+    "math.dai-hoc.tich-phan-suy-rong.lien-he-beta-gamma",
+    "math.dai-hoc.tich-phan-suy-rong.cong-thuc-phan-xa",
+    "math.dai-hoc.ru-giai-tich.hoi-tu-tich-phan-loai-mot",
+    "math.dai-hoc.ru-giai-tich.hoi-tu-tich-phan-loai-hai"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 15,
+   "skills": [
+    "xét hội tụ ở hai đầu",
+    "phép thế đưa nửa trục về đoạn [0;1]",
+    "nhận diện hàm Beta",
+    "công thức phản xạ Euler"
+   ],
+   "hints": [
+    "Tách tại x = 1 và so sánh riêng từng đầu.",
+    "Đặt x = t/(1-t).",
+    "Kết quả có dạng Gamma(p)Gamma(1-p)."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-suy-rong",
+    "ham-beta",
+    "cong-thuc-phan-xa"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0043",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tích phân phụ thuộc tham số - vi phân dưới dấu tích phân",
+   "type": "dien-so",
+   "statement_vi": "Xét I(a) = tích phân từ 0 đến vô cùng của e^(-x) sin(ax)/x dx với a thực. Hãy dùng phương pháp vi phân dưới dấu tích phân để tìm biểu thức chữ của I(a), chỉ ra hệ quả khi bỏ thừa số tắt dần, rồi điền giá trị I(2).",
+   "statement_en": "Consider I(a) = integral from 0 to infinity of e^(-x) sin(ax)/x dx for real a. Use differentiation under the integral sign to find a closed form for I(a), state the consequence when the damping factor is removed, and enter the value of I(2).",
+   "answer": "I(a) = arctan(a); I(2) = arctan 2 ≈ 1,1071; tổng quát tích phân của e^(-bx) sin(ax)/x bằng arctan(a/b), cho b -> 0+ ta thu lại tích phân Dirichlet bằng pi/2",
+   "answer_numeric": 1.10715,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Lí do dùng tham số: nguyên hàm của e^(-x) sin(ax)/x không biểu diễn được bằng hàm sơ cấp, nhưng ĐẠO HÀM theo tham số a lại khử được mẫu số x - đó là toàn bộ ý tưởng.",
+     "latex": "\\dfrac{\\partial}{\\partial a}\\left(\\dfrac{e^{-x}\\sin\\left(ax\\right)}{x}\\right) = e^{-x}\\cos\\left(ax\\right)"
+    },
+    {
+     "explain": "Biện minh cho việc đổi thứ tự đạo hàm và tích phân: hàm dưới dấu đạo hàm bị chặn trội bởi e^(-x) khả tích trên nửa trục, độc lập với a, nên tích phân hội tụ ĐỀU theo a; định lí Leibniz áp dụng được.",
+     "latex": "\\left|e^{-x}\\cos\\left(ax\\right)\\right| \\le e^{-x},\\qquad \\int_{0}^{\\infty}e^{-x}dx = 1 < \\infty"
+    },
+    {
+     "explain": "Tính tích phân đã đơn giản hoá. Đây là tích phân Laplace cơ bản, lấy được bằng hai lần tích phân từng phần hoặc bằng phần thực của tích phân hàm mũ phức.",
+     "latex": "I'\\left(a\\right) = \\int_{0}^{\\infty}e^{-x}\\cos\\left(ax\\right)dx = \\dfrac{1}{1+a^{2}}"
+    },
+    {
+     "explain": "Lấy nguyên hàm theo a và xác định hằng số bằng điều kiện hiển nhiên I(0) = 0.",
+     "latex": "I\\left(a\\right) = \\arctan a + C,\\qquad I\\left(0\\right) = 0 \\;\\Longrightarrow\\; C = 0"
+    },
+    {
+     "explain": "Kết quả cuối và giá trị cần điền.",
+     "latex": "I\\left(a\\right) = \\arctan a,\\qquad I\\left(2\\right) = \\arctan 2 \\approx 1.1071"
+    },
+    {
+     "explain": "Mở rộng: thêm tham số tắt dần b cho dạng tổng quát. Cho b tiến tới 0 từ bên phải ta thu lại tích phân Dirichlet - chính là kĩ thuật chuẩn của Fikhtengolts để tính tích phân bán hội tụ này.",
+     "latex": "\\int_{0}^{\\infty}e^{-bx}\\dfrac{\\sin\\left(ax\\right)}{x}dx = \\arctan\\dfrac{a}{b} \\xrightarrow{\\ b\\to 0^{+}\\ } \\dfrac{\\pi}{2}\\operatorname{sgn}a"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.tich-phan-dirichlet",
+    "math.dai-hoc.ru-giai-tich.leibniz-can-bien-thien",
+    "math.dai-hoc.tich-phan-suy-rong.tich-phan-dirichlet"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 12,
+   "skills": [
+    "vi phân dưới dấu tích phân",
+    "kiểm tra hội tụ đều bằng hàm trội",
+    "xác định hằng số tích phân bằng giá trị đặc biệt"
+   ],
+   "hints": [
+    "Đạo hàm theo a để khử mẫu số x.",
+    "Kiểm tra hội tụ đều bằng chặn trội e^(-x).",
+    "Dùng I(0) = 0."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-tham-so",
+    "vi-phan-duoi-dau-tich-phan",
+    "tich-phan-dirichlet"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0044",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tích phân Euler - Poisson với lũy thừa chẵn",
+   "type": "dien-so",
+   "statement_vi": "Tính J = tích phân từ 0 đến vô cùng của x^6 * e^(-2x^2) dx. Hãy dẫn ra công thức tổng quát bằng cách vi phân tích phân Euler - Poisson theo tham số, rồi điền giá trị số của J.",
+   "statement_en": "Compute J = integral from 0 to infinity of x^6 * e^(-2x^2) dx. Derive the general formula by differentiating the Euler-Poisson integral with respect to its parameter, then enter the numerical value of J.",
+   "answer": "J = 15/(16 * alpha^3) * căn(pi/alpha) với alpha = 2, tức J = 15 căn(pi/2)/128 ≈ 0,14687",
+   "answer_numeric": 0.146873,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Xuất phát từ tích phân Euler - Poisson có tham số. Nó là trường hợp gốc, mọi mômen chẵn đều suy ra từ đây.",
+     "latex": "I_{0}\\left(\\alpha\\right) = \\int_{0}^{\\infty}e^{-\\alpha x^{2}}dx = \\dfrac{1}{2}\\sqrt{\\dfrac{\\pi}{\\alpha}},\\qquad \\alpha > 0"
+    },
+    {
+     "explain": "Đạo hàm theo tham số alpha kéo xuống một thừa số -x^2 dưới dấu tích phân. Vì vậy đạo hàm cấp n cho đúng mômen bậc 2n với dấu (-1)^n - đây là kĩ thuật vi phân dưới dấu tích phân đặc trưng của trường phái Nga.",
+     "latex": "\\dfrac{d^{n}}{d\\alpha^{n}}\\int_{0}^{\\infty}e^{-\\alpha x^{2}}dx = \\left(-1\\right)^{n}\\int_{0}^{\\infty}x^{2n}e^{-\\alpha x^{2}}dx"
+    },
+    {
+     "explain": "Đạo hàm vế phải: mỗi lần đạo hàm của alpha mũ -1/2 hạ số mũ đi 1 và nhân thêm hệ số bán nguyên âm. Sau n lần thu được tích các số lẻ, tức giai thừa kép.",
+     "latex": "\\dfrac{d^{n}}{d\\alpha^{n}}\\left(\\dfrac{\\sqrt{\\pi}}{2}\\alpha^{-1/2}\\right) = \\dfrac{\\sqrt{\\pi}}{2}\\left(-\\dfrac{1}{2}\\right)\\left(-\\dfrac{3}{2}\\right)\\cdots\\left(-\\dfrac{2n-1}{2}\\right)\\alpha^{-\\left(2n+1\\right)/2}"
+    },
+    {
+     "explain": "Gộp lại: các dấu âm triệt tiêu với (-1)^n, cho công thức tổng quát.",
+     "latex": "\\int_{0}^{\\infty}x^{2n}e^{-\\alpha x^{2}}dx = \\dfrac{\\left(2n-1\\right)!!}{2^{\\,n+1}\\alpha^{\\,n}}\\sqrt{\\dfrac{\\pi}{\\alpha}}"
+    },
+    {
+     "explain": "Áp dụng với n = 3 (vì số mũ là 6) và alpha = 2. Giai thừa kép của 5 bằng 5*3*1 = 15.",
+     "latex": "J = \\dfrac{5!!}{2^{4}\\cdot 2^{3}}\\sqrt{\\dfrac{\\pi}{2}} = \\dfrac{15}{128}\\sqrt{\\dfrac{\\pi}{2}}"
+    },
+    {
+     "explain": "Tính số.",
+     "latex": "J = \\dfrac{15}{128}\\cdot 1.25331 \\approx 0.14687"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.tich-phan-gauss-tong-quat",
+    "math.dai-hoc.tich-phan-suy-rong.tich-phan-gauss",
+    "math.dai-hoc.ru-giai-tich.leibniz-can-bien-thien"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 8,
+   "skills": [
+    "vi phân tích phân theo tham số",
+    "giai thừa kép",
+    "đưa mômen chẵn về tích phân Gauss gốc"
+   ],
+   "hints": [
+    "Đạo hàm theo alpha kéo xuống -x^2.",
+    "5!! = 15."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-gauss",
+    "tich-phan-tham-so",
+    "giai-thua-kep"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0045",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tích phân Fresnel - hội tụ khi hàm không dần tới 0",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét tích phân Fresnel F = tích phân từ 0 đến vô cùng của sin(x^2) dx. Khẳng định nào sau đây ĐÚNG?",
+   "statement_en": "Consider the Fresnel integral F = integral from 0 to infinity of sin(x^2) dx. Which statement is CORRECT?",
+   "choices": [
+    {
+     "key": "A",
+     "text": "F hội tụ (có điều kiện) và F = (1/2)*căn(pi/2) ≈ 0,627",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "F phân kì vì sin(x^2) không dần tới 0 khi x tiến ra vô cùng",
+     "why_wrong": "Áp dụng nhầm ĐIỀU KIỆN CẦN của chuỗi số sang tích phân suy rộng. Với tích phân, hàm dưới dấu tích phân KHÔNG buộc phải dần tới 0: ở đây dao động ngày càng nhanh nên các miền dương và âm bù trừ nhau, đúng theo tiêu chuẩn Dirichlet."
+    },
+    {
+     "key": "C",
+     "text": "F hội tụ TUYỆT ĐỐI và F = (1/2)*căn(pi/2)",
+     "why_wrong": "Giá trị đúng nhưng loại hội tụ sai. Sau phép thế u = x^2, tích phân của |sin u|/(2 căn u) phân kì vì trung bình của |sin u| bằng 2/pi khác 0, cho chuỗi so sánh kiểu 1/căn u."
+    },
+    {
+     "key": "D",
+     "text": "F hội tụ và F = căn(pi/2) ≈ 1,253",
+     "why_wrong": "Quên thừa số 1/2 sinh ra từ phép đổi biến u = x^2, khi đó dx = du/(2 căn u)."
+    },
+    {
+     "key": "E",
+     "text": "F hội tụ và F = căn(pi)/2 ≈ 0,886",
+     "why_wrong": "Nhầm sang tích phân Euler - Poisson của e^(-x^2), vốn bằng căn(pi)/2; hai bài toán khác hẳn nhau."
+    }
+   ],
+   "answer": "A",
+   "answer_numeric": 0.62666,
+   "answer_unit": "",
+   "tolerance": 0.001,
+   "solution_steps": [
+    {
+     "explain": "Đổi biến u = x^2 để làm lộ cấu trúc thật của tích phân: một hàm dao động đều nhân với một hàm đơn điệu giảm về 0.",
+     "latex": "u = x^{2},\\ du = 2x\\,dx \\;\\Longrightarrow\\; F = \\int_{0}^{\\infty}\\dfrac{\\sin u}{2\\sqrt{u}}\\,du"
+    },
+    {
+     "explain": "Áp dụng tiêu chuẩn Dirichlet cho tích phân suy rộng: nguyên hàm của sin u bị CHẶN (biên độ 2) còn 1/(2 căn u) đơn điệu giảm về 0. Vậy tích phân hội tụ - dù bản thân sin(x^2) không có giới hạn khi x ra vô cùng.",
+     "latex": "\\left|\\int_{0}^{A}\\sin u\\,du\\right| \\le 2,\\qquad \\dfrac{1}{2\\sqrt{u}} \\searrow 0"
+    },
+    {
+     "explain": "Kiểm tra rằng hội tụ chỉ là CÓ ĐIỀU KIỆN: lấy trị tuyệt đối rồi so sánh với trung bình của |sin u| trên mỗi chu kì.",
+     "latex": "\\int_{0}^{\\infty}\\dfrac{\\left|\\sin u\\right|}{2\\sqrt{u}}du \\ \\text{phan ki} \\quad \\text{vi} \\quad \\dfrac{1}{\\pi}\\int_{k\\pi}^{\\left(k+1\\right)\\pi}\\dfrac{\\left|\\sin u\\right|}{2\\sqrt{u}}du \\gtrsim \\dfrac{1}{\\pi\\sqrt{k\\pi}}"
+    },
+    {
+     "explain": "Giá trị của tích phân là hằng số Fresnel kinh điển, bằng đúng giá trị của tích phân cosin tương ứng.",
+     "latex": "\\int_{0}^{\\infty}\\sin\\left(x^{2}\\right)dx = \\int_{0}^{\\infty}\\cos\\left(x^{2}\\right)dx = \\dfrac{1}{2}\\sqrt{\\dfrac{\\pi}{2}} \\approx 0.6267"
+    },
+    {
+     "explain": "Ghi nhớ ý nghĩa: đây là phản ví dụ chuẩn cho thấy sự khác biệt bản chất giữa CHUỖI (điều kiện cần: số hạng dần tới 0) và TÍCH PHÂN suy rộng (không có điều kiện cần như vậy).",
+     "latex": "\\lim_{x\\to\\infty}\\sin\\left(x^{2}\\right) \\ \\text{khong ton tai, nhung tich phan van hoi tu}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.tich-phan-fresnel",
+    "math.dai-hoc.tich-phan-suy-rong.tieu-chuan-dirichlet",
+    "math.dai-hoc.tich-phan-suy-rong.hoi-tu-tuyet-doi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 8,
+   "skills": [
+    "tiêu chuẩn Dirichlet cho tích phân",
+    "phân biệt hội tụ và hội tụ tuyệt đối",
+    "phản biện điều kiện cần sai của chuỗi"
+   ],
+   "hints": [
+    "Đổi biến u = x^2.",
+    "Tiêu chuẩn Dirichlet: nguyên hàm bị chặn nhân hàm đơn điệu về 0."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-fresnel",
+    "hoi-tu-co-dieu-kien",
+    "tieu-chuan-dirichlet"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fresnel_integral"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0046",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tích phân phụ thuộc tham số - khử lôga ở mẫu",
+   "type": "tu-luan",
+   "statement_vi": "Xét J(a) = tích phân từ 0 đến 1 của (x^a - 1)/ln(x) dx với a >= 0. Hãy: (a) chứng tỏ đây là tích phân THƯỜNG (hai điểm đầu mút chỉ là bất thường bỏ được); (b) dùng vi phân theo tham số để tìm biểu thức chữ của J(a); (c) tính J(3); (d) suy ra giá trị của tích phân từ 0 đến 1 của (x^5 - x^2)/ln(x) dx.",
+   "statement_en": "Consider J(a) = integral from 0 to 1 of (x^a - 1)/ln(x) dx for a >= 0. (a) Show the integral is PROPER (both endpoints are removable singularities); (b) use differentiation with respect to the parameter to find a closed form; (c) compute J(3); (d) deduce the value of the integral from 0 to 1 of (x^5 - x^2)/ln(x) dx.",
+   "answer": "J(a) = ln(a+1); J(3) = ln 4 ≈ 1,3863; tích phân của (x^5 - x^2)/ln x bằng J(5) - J(2) = ln 6 - ln 3 = ln 2 ≈ 0,6931",
+   "answer_numeric": 1.38629,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Phần (a). Khảo sát hai đầu mút. Tại x tiến tới 0 từ bên phải, tử số dần tới -1 còn mẫu số dần tới trừ vô cùng nên tỉ số dần tới 0.",
+     "latex": "\\lim_{x\\to 0^{+}}\\dfrac{x^{a}-1}{\\ln x} = \\dfrac{-1}{-\\infty} = 0"
+    },
+    {
+     "explain": "Tại x tiến tới 1, cả tử và mẫu cùng dần tới 0; dùng quy tắc L'Hospital hoặc thay tương đương ln x ~ x - 1 và x^a - 1 ~ a(x-1).",
+     "latex": "\\lim_{x\\to 1^{-}}\\dfrac{x^{a}-1}{\\ln x} = \\lim_{x\\to 1^{-}}\\dfrac{a\\left(x-1\\right)}{x-1} = a"
+    },
+    {
+     "explain": "Vậy hàm dưới dấu tích phân thác triển liên tục lên đoạn đóng [0; 1], nên tích phân là tích phân Riemann thường - việc đổi thứ tự đạo hàm và tích phân sẽ hợp lệ trên mọi đoạn tham số bị chặn.",
+     "latex": "f\\left(x,a\\right) = \\dfrac{x^{a}-1}{\\ln x} \\in C\\left(\\left[0;1\\right]\\right)"
+    },
+    {
+     "explain": "Phần (b). Đạo hàm theo a: đây là bước then chốt, thừa số ln x sinh ra khi đạo hàm x^a triệt tiêu đúng mẫu số.",
+     "latex": "\\dfrac{\\partial}{\\partial a}\\dfrac{x^{a}-1}{\\ln x} = \\dfrac{x^{a}\\ln x}{\\ln x} = x^{a}"
+    },
+    {
+     "explain": "Tích phân vế phải - bây giờ là tích phân sơ cấp.",
+     "latex": "J'\\left(a\\right) = \\int_{0}^{1}x^{a}dx = \\dfrac{1}{a+1}"
+    },
+    {
+     "explain": "Lấy nguyên hàm theo a và dùng điều kiện J(0) = 0 (khi a = 0 tử số đồng nhất bằng 0).",
+     "latex": "J\\left(a\\right) = \\ln\\left(a+1\\right) + C,\\qquad J\\left(0\\right) = 0 \\;\\Longrightarrow\\; C = 0"
+    },
+    {
+     "explain": "Phần (c). Thay a = 3.",
+     "latex": "J\\left(3\\right) = \\ln 4 \\approx 1.3863"
+    },
+    {
+     "explain": "Phần (d). Tách tử số thành hiệu hai biểu thức dạng x^a - 1 rồi dùng tính cộng tính của tích phân - mẹo chuẩn để không phải làm lại từ đầu.",
+     "latex": "\\int_{0}^{1}\\dfrac{x^{5}-x^{2}}{\\ln x}dx = J\\left(5\\right) - J\\left(2\\right) = \\ln 6 - \\ln 3 = \\ln 2 \\approx 0.6931"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.leibniz-can-bien-thien",
+    "math.dai-hoc.ru-giai-tich.tich-phan-frullani",
+    "math.dai-hoc.gioi-han.vo-cung-be-tuong-duong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 14,
+   "skills": [
+    "nhận diện bất thường bỏ được",
+    "vi phân dưới dấu tích phân",
+    "tách tích phân thành hiệu hai họ tham số"
+   ],
+   "hints": [
+    "Kiểm tra giới hạn ở hai đầu mút trước.",
+    "Đạo hàm theo a làm ln x ở mẫu bị triệt tiêu.",
+    "Viết x^5 - x^2 = (x^5 - 1) - (x^2 - 1)."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-tham-so",
+    "vi-phan-duoi-dau-tich-phan",
+    "bat-thuong-bo-duoc"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0047",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Hàm Beta dạng lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Tính K = tích phân từ 0 đến pi/2 của căn(tan x) dx. Hãy đưa về hàm Beta dạng lượng giác, dùng công thức phản xạ Euler để rút gọn, rồi điền giá trị số.",
+   "statement_en": "Compute K = integral from 0 to pi/2 of sqrt(tan x) dx. Reduce it to the trigonometric form of the Beta function, simplify with Euler's reflection formula, and enter the numerical value.",
+   "answer": "K = (1/2) B(3/4, 1/4) = (1/2) Gamma(3/4) Gamma(1/4) = (1/2) * pi/sin(pi/4) = pi/căn 2 ≈ 2,2214",
+   "answer_numeric": 2.22144,
+   "answer_unit": "",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Viết căn(tan x) dưới dạng tích của lũy thừa sin và cos để khớp đúng khuôn của hàm Beta dạng lượng giác.",
+     "latex": "\\sqrt{\\tan x} = \\sin^{1/2}x\\,\\cos^{-1/2}x"
+    },
+    {
+     "explain": "So khớp số mũ với khuôn 2p-1 và 2q-1 để tìm hai tham số. Chú ý số mũ ÂM của cos là hoàn toàn hợp lệ miễn q vẫn dương.",
+     "latex": "2p - 1 = \\dfrac{1}{2} \\Rightarrow p = \\dfrac{3}{4};\\qquad 2q - 1 = -\\dfrac{1}{2} \\Rightarrow q = \\dfrac{1}{4}"
+    },
+    {
+     "explain": "Kiểm tra điều kiện hội tụ: cả p và q đều dương nên tích phân hội tụ, dù hàm dưới dấu tích phân không bị chặn khi x tiến tới pi/2.",
+     "latex": "p = \\dfrac{3}{4} > 0,\\qquad q = \\dfrac{1}{4} > 0 \\ \\checkmark"
+    },
+    {
+     "explain": "Áp dụng công thức hàm Beta dạng lượng giác.",
+     "latex": "K = \\dfrac{1}{2}B\\left(\\dfrac{3}{4},\\dfrac{1}{4}\\right) = \\dfrac{\\Gamma\\left(3/4\\right)\\Gamma\\left(1/4\\right)}{2\\,\\Gamma\\left(1\\right)}"
+    },
+    {
+     "explain": "Hai đối số của Gamma cộng lại đúng bằng 1 nên dùng được công thức phản xạ Euler - đây là chỗ bài toán rút gọn về hàm sơ cấp.",
+     "latex": "\\Gamma\\left(\\dfrac{1}{4}\\right)\\Gamma\\left(\\dfrac{3}{4}\\right) = \\dfrac{\\pi}{\\sin\\left(\\pi/4\\right)} = \\pi\\sqrt{2}"
+    },
+    {
+     "explain": "Ghép lại và tính số.",
+     "latex": "K = \\dfrac{\\pi\\sqrt{2}}{2} = \\dfrac{\\pi}{\\sqrt{2}} \\approx 2.2214"
+    },
+    {
+     "explain": "Kiểm tra chéo bằng phép thế t = căn(tan x): tích phân trở thành một phân thức hữu tỉ có nguyên hàm sơ cấp, cho đúng cùng kết quả.",
+     "latex": "K = 2\\int_{0}^{\\infty}\\dfrac{t^{2}}{1+t^{4}}dt = \\dfrac{\\pi}{\\sqrt{2}} \\ \\checkmark"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.beta-dang-luong-giac",
+    "math.dai-hoc.tich-phan-suy-rong.cong-thuc-phan-xa",
+    "math.dai-hoc.tich-phan-suy-rong.lien-he-beta-gamma"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 10,
+   "skills": [
+    "hàm Beta dạng lượng giác",
+    "so khớp số mũ với khuôn 2p-1 và 2q-1",
+    "công thức phản xạ Euler"
+   ],
+   "hints": [
+    "Viết căn(tan x) thành sin mũ 1/2 nhân cos mũ -1/2.",
+    "Hai tham số cộng lại bằng 1 thì dùng công thức phản xạ."
+   ],
+   "tags": [
+    "demidovich",
+    "ham-beta",
+    "ham-gamma",
+    "tich-phan-luong-giac"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0048",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Hàm Gamma - đưa tích phân về tích phân Euler loại hai",
+   "type": "dien-so",
+   "statement_vi": "Tính M = tích phân từ 0 đến vô cùng của x^2 * e^(-x^4) dx. Hãy đưa về hàm Gamma, đồng thời chỉ ra tích của M với tích phân từ 0 đến vô cùng của e^(-x^4) dx bằng bao nhiêu (dùng công thức phản xạ). Cho Gamma(3/4) ≈ 1,22542. Điền giá trị M.",
+   "statement_en": "Compute M = integral from 0 to infinity of x^2 * e^(-x^4) dx. Reduce it to the Gamma function and, using the reflection formula, state the product of M with the integral of e^(-x^4) from 0 to infinity. Given Gamma(3/4) = 1.22542, enter M.",
+   "answer": "M = (1/4) Gamma(3/4) ≈ 0,30635; tích phân của e^(-x^4) bằng (1/4)Gamma(1/4) ≈ 0,90640; tích của hai đại lượng bằng (1/16)Gamma(1/4)Gamma(3/4) = pi căn 2/16 ≈ 0,27768",
+   "answer_numeric": 0.30635,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Muốn nhận ra hàm Gamma thì số mũ của e phải là -t bậc nhất. Đặt t = x^4 để tuyến tính hoá số mũ.",
+     "latex": "t = x^{4},\\qquad x = t^{1/4},\\qquad dx = \\dfrac{1}{4}t^{-3/4}dt"
+    },
+    {
+     "explain": "Thay vào và gộp các lũy thừa của t. Đây là bước dễ sai nhất, phải cộng số mũ cẩn thận: x^2 cho t^(1/2), còn dx đóng góp t^(-3/4).",
+     "latex": "M = \\int_{0}^{\\infty}t^{1/2}e^{-t}\\cdot\\dfrac{1}{4}t^{-3/4}dt = \\dfrac{1}{4}\\int_{0}^{\\infty}t^{-1/4}e^{-t}dt"
+    },
+    {
+     "explain": "So khớp với định nghĩa hàm Gamma: số mũ của t là s - 1 nên s - 1 = -1/4, tức s = 3/4. Tham số dương nên tích phân hội tụ.",
+     "latex": "\\Gamma\\left(s\\right) = \\int_{0}^{\\infty}t^{\\,s-1}e^{-t}dt \\;\\Longrightarrow\\; M = \\dfrac{1}{4}\\Gamma\\left(\\dfrac{3}{4}\\right)"
+    },
+    {
+     "explain": "Thay giá trị đã cho.",
+     "latex": "M = \\dfrac{1.22542}{4} \\approx 0.30635"
+    },
+    {
+     "explain": "Làm tương tự cho tích phân không có thừa số x^2: khi đó chỉ còn t^(-3/4) nên s = 1/4.",
+     "latex": "\\int_{0}^{\\infty}e^{-x^{4}}dx = \\dfrac{1}{4}\\Gamma\\left(\\dfrac{1}{4}\\right) \\approx 0.90640"
+    },
+    {
+     "explain": "Nhân hai kết quả: hai đối số của Gamma cộng lại bằng 1 nên áp dụng được công thức phản xạ Euler, cho một biểu thức sơ cấp đẹp.",
+     "latex": "M\\cdot\\int_{0}^{\\infty}e^{-x^{4}}dx = \\dfrac{1}{16}\\Gamma\\left(\\dfrac{1}{4}\\right)\\Gamma\\left(\\dfrac{3}{4}\\right) = \\dfrac{1}{16}\\cdot\\dfrac{\\pi}{\\sin\\left(\\pi/4\\right)} = \\dfrac{\\pi\\sqrt{2}}{16} \\approx 0.27768"
+    },
+    {
+     "explain": "Tổng quát hoá để nhớ: mọi tích phân dạng x mũ m nhân e mũ (-x mũ n) đều quy về Gamma theo cùng một công thức.",
+     "latex": "\\int_{0}^{\\infty}x^{m}e^{-x^{n}}dx = \\dfrac{1}{n}\\Gamma\\left(\\dfrac{m+1}{n}\\right),\\qquad m > -1,\\ n > 0"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan-suy-rong.ham-gamma",
+    "math.dai-hoc.tich-phan-suy-rong.cong-thuc-phan-xa",
+    "math.dai-hoc.tich-phan-suy-rong.gamma-truy-hoi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 10,
+   "skills": [
+    "tuyến tính hoá số mũ bằng phép thế",
+    "so khớp với định nghĩa hàm Gamma",
+    "công thức phản xạ Euler"
+   ],
+   "hints": [
+    "Đặt t = x^4.",
+    "Cộng số mũ của t cẩn thận: từ x^2 và từ dx.",
+    "Kết quả tổng quát: (1/n)Gamma((m+1)/n)."
+   ],
+   "tags": [
+    "demidovich",
+    "ham-gamma",
+    "tich-phan-euler",
+    "doi-bien"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0049",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Chuỗi Fourier và đẳng thức Parseval",
+   "type": "tu-luan",
+   "statement_vi": "Cho hàm f(x) = x trên khoảng (-pi; pi), thác triển tuần hoàn chu kì 2pi. Hãy: (a) tìm chuỗi Fourier của f; (b) dùng định lí Dirichlet tại x = pi/2 để suy ra tổng của chuỗi Leibniz; (c) dùng đẳng thức Parseval để tính tổng của chuỗi nghịch đảo bình phương.",
+   "statement_en": "Let f(x) = x on (-pi, pi), extended 2pi-periodically. (a) Find its Fourier series; (b) use Dirichlet's theorem at x = pi/2 to obtain the sum of the Leibniz series; (c) use Parseval's identity to compute the sum of the reciprocal squares.",
+   "answer": "f(x) ~ tổng theo n của 2(-1)^(n+1) sin(nx)/n; tại x = pi/2 cho 1 - 1/3 + 1/5 - ... = pi/4; Parseval cho tổng 1/n^2 = pi^2/6",
+   "answer_numeric": 1.644934,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Phần (a). Nhận xét tính chẵn lẻ trước để tiết kiệm công sức: f là hàm LẺ nên tất cả hệ số cosin (kể cả a_0) đều bằng 0, chỉ còn chuỗi sin.",
+     "latex": "f\\left(-x\\right) = -f\\left(x\\right) \\;\\Longrightarrow\\; a_{n} = 0 \\ \\ \\forall n \\ge 0"
+    },
+    {
+     "explain": "Tính hệ số sin bằng tích phân từng phần trên nửa chu kì (dùng tính lẻ để nhân đôi).",
+     "latex": "b_{n} = \\dfrac{2}{\\pi}\\int_{0}^{\\pi}x\\sin\\left(nx\\right)dx = \\dfrac{2}{\\pi}\\left(\\left[-\\dfrac{x\\cos nx}{n}\\right]_{0}^{\\pi} + \\dfrac{1}{n}\\int_{0}^{\\pi}\\cos\\left(nx\\right)dx\\right)"
+    },
+    {
+     "explain": "Số hạng tích phân còn lại bằng 0 vì nguyên hàm của cos(nx) triệt tiêu tại hai đầu mút; chỉ còn số hạng biên với cos(n*pi) = (-1)^n.",
+     "latex": "b_{n} = \\dfrac{2}{\\pi}\\cdot\\left(-\\dfrac{\\pi\\left(-1\\right)^{n}}{n}\\right) = \\dfrac{2\\left(-1\\right)^{n+1}}{n}"
+    },
+    {
+     "explain": "Viết chuỗi Fourier. Lưu ý tại x = pi (điểm gián đoạn nhảy) chuỗi hội tụ về 0 - trung bình cộng của hai giới hạn một phía, đúng như định lí Dirichlet.",
+     "latex": "x \\sim \\sum_{n=1}^{\\infty}\\dfrac{2\\left(-1\\right)^{n+1}}{n}\\sin\\left(nx\\right),\\qquad -\\pi < x < \\pi"
+    },
+    {
+     "explain": "Phần (b). Tại x = pi/2 hàm liên tục nên chuỗi hội tụ về đúng giá trị pi/2. Các số hạng có n chẵn triệt tiêu vì sin(n*pi/2) = 0.",
+     "latex": "\\dfrac{\\pi}{2} = \\sum_{n=1}^{\\infty}\\dfrac{2\\left(-1\\right)^{n+1}}{n}\\sin\\dfrac{n\\pi}{2} = 2\\left(1 - \\dfrac{1}{3} + \\dfrac{1}{5} - \\cdots\\right)"
+    },
+    {
+     "explain": "Chia hai vế cho 2 để có chuỗi Leibniz.",
+     "latex": "1 - \\dfrac{1}{3} + \\dfrac{1}{5} - \\dfrac{1}{7} + \\cdots = \\dfrac{\\pi}{4}"
+    },
+    {
+     "explain": "Phần (c). Viết đẳng thức Parseval cho nửa chu kì l = pi và tính vế trái trực tiếp.",
+     "latex": "\\dfrac{1}{\\pi}\\int_{-\\pi}^{\\pi}x^{2}dx = \\dfrac{a_{0}^{2}}{2} + \\sum_{n=1}^{\\infty}\\left(a_{n}^{2}+b_{n}^{2}\\right),\\qquad \\dfrac{1}{\\pi}\\cdot\\dfrac{2\\pi^{3}}{3} = \\dfrac{2\\pi^{2}}{3}"
+    },
+    {
+     "explain": "Vế phải chỉ còn tổng bình phương các hệ số sin. Rút gọn hằng số 4 rồi giải ra tổng cần tìm.",
+     "latex": "\\dfrac{2\\pi^{2}}{3} = \\sum_{n=1}^{\\infty}\\dfrac{4}{n^{2}} \\;\\Longrightarrow\\; \\sum_{n=1}^{\\infty}\\dfrac{1}{n^{2}} = \\dfrac{\\pi^{2}}{6} \\approx 1.6449"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.chuoi-fourier.he-so-tren-doan-pi",
+    "math.dai-hoc.chuoi-fourier.chuoi-ham-le",
+    "math.dai-hoc.chuoi-fourier.dang-thuc-parseval",
+    "math.dai-hoc.chuoi-fourier.dinh-li-dirichlet",
+    "math.dai-hoc.ru-giai-tich.tinh-tong-chuoi-bang-parseval"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 15,
+   "skills": [
+    "khai triển Fourier của hàm lẻ",
+    "định lí Dirichlet tại điểm liên tục và điểm nhảy",
+    "đẳng thức Parseval để tính tổng chuỗi số"
+   ],
+   "hints": [
+    "Hàm lẻ thì chỉ còn chuỗi sin.",
+    "Thay x = pi/2 để các số hạng chẵn triệt tiêu.",
+    "Parseval: tích phân bình phương hàm bằng tổng bình phương hệ số."
+   ],
+   "tags": [
+    "demidovich",
+    "chuoi-fourier",
+    "dang-thuc-parseval",
+    "tong-chuoi-so"
+   ]
+  },
+  {
+   "id": "prob.physics.ru-east-eu.0050",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tenxơ quán tính đẳng hướng - khối lập phương",
+   "type": "trac-nghiem",
+   "statement_vi": "Một khối lập phương đặc, đồng chất, khối lượng m = 3,0 kg, cạnh a = 0,20 m. Xét trục quay đi qua TÂM khối và trùng với ĐƯỜNG CHÉO KHÔNG GIAN của khối lập phương. Mômen quán tính đối với trục đó bằng bao nhiêu?",
+   "statement_en": "A solid homogeneous cube of mass m = 3.0 kg and edge a = 0.20 m rotates about an axis through its CENTRE along the SPACE DIAGONAL of the cube. What is the moment of inertia about that axis?",
+   "choices": [
+    {
+     "key": "A",
+     "text": "0,020 kg*m^2, bằng đúng giá trị đối với trục qua tâm vuông góc một mặt bên",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "0,010 kg*m^2",
+     "why_wrong": "Áp dụng công thức đường chéo của TẤM phẳng chữ nhật I = m a^2 b^2 / (6(a^2+b^2)) với a = b, tức coi khối lập phương như một tấm mỏng và bỏ mất chiều thứ ba."
+    },
+    {
+     "key": "C",
+     "text": "0,0067 kg*m^2",
+     "why_wrong": "Khi chiếu tenxơ lên trục chỉ giữ MỘT số hạng I_x n_x^2 với n_x^2 = 1/3 mà quên cộng hai số hạng I_y n_y^2 và I_z n_z^2."
+    },
+    {
+     "key": "D",
+     "text": "0,030 kg*m^2",
+     "why_wrong": "Dùng công thức I = m(a^2+b^2)/12 nhưng thay tổng bình phương hai cạnh bằng bình phương ĐƯỜNG CHÉO KHÔNG GIAN (3a^2); đường chéo là phương của trục, không phải kích thước cần đưa vào công thức."
+    },
+    {
+     "key": "E",
+     "text": "0,080 kg*m^2",
+     "why_wrong": "Tính đối với trục trùng một CẠNH của khối (dùng định lí trục song song với d^2 = a^2/2) chứ không phải trục đi qua tâm như đề yêu cầu."
+    }
+   ],
+   "answer": "A",
+   "answer_numeric": 0.02,
+   "answer_unit": "kg*m^2",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Chọn hệ trục qua tâm, song song với ba cạnh. Khối lập phương có ba mặt phẳng đối xứng nên mọi tích quán tính triệt tiêu: đây đúng là hệ trục quán tính chính và tenxơ có dạng chéo.",
+     "latex": "I_{x} = I_{y} = I_{z} = \\dfrac{m\\left(a^{2}+a^{2}\\right)}{12} = \\dfrac{ma^{2}}{6},\\qquad I_{ij} = 0 \\ \\left(i \\ne j\\right)"
+    },
+    {
+     "explain": "Mômen quán tính đối với trục có vectơ đơn vị n đi qua gốc bằng phép chiếu tenxơ. Trong hệ trục chính công thức rút gọn thành tổ hợp ba bình phương cosin chỉ phương.",
+     "latex": "I_{n} = I_{x}n_{x}^{2} + I_{y}n_{y}^{2} + I_{z}n_{z}^{2}"
+    },
+    {
+     "explain": "Điểm mấu chốt: ba giá trị riêng BẰNG NHAU nên tenxơ quán tính tỉ lệ với ma trận đơn vị, tức ĐẲNG HƯỚNG. Khi đó tổng ba bình phương cosin chỉ phương bằng 1 và mọi phụ thuộc vào hướng biến mất.",
+     "latex": "I_{n} = \\dfrac{ma^{2}}{6}\\left(n_{x}^{2}+n_{y}^{2}+n_{z}^{2}\\right) = \\dfrac{ma^{2}}{6} \\quad \\forall \\vec{n}"
+    },
+    {
+     "explain": "Áp dụng cho đường chéo không gian, với vectơ đơn vị có ba thành phần bằng nhau. Kết quả không khác gì trục vuông góc mặt bên - đó là nội dung đáng nhớ nhất của bài.",
+     "latex": "\\vec{n} = \\dfrac{\\left(1,1,1\\right)}{\\sqrt{3}} \\;\\Longrightarrow\\; I_{n} = \\dfrac{ma^{2}}{6} = \\dfrac{3.0\\cdot 0.20^{2}}{6} = 0.020\\ \\text{kg}\\cdot\\text{m}^{2}"
+    },
+    {
+     "explain": "Kiểm tra chéo để thấy điều kiện QUA TÂM là bắt buộc: với trục trùng một cạnh, định lí trục song song cộng thêm m nhân bình phương khoảng cách từ tâm tới cạnh, cho giá trị lớn gấp bốn lần.",
+     "latex": "d^{2} = \\left(\\dfrac{a}{\\sqrt{2}}\\right)^{2} = \\dfrac{a^{2}}{2},\\qquad I_{canh} = \\dfrac{ma^{2}}{6} + \\dfrac{ma^{2}}{2} = \\dfrac{2ma^{2}}{3} = 0.080\\ \\text{kg}\\cdot\\text{m}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.momen-quan-tinh-truc-bat-ki",
+    "physics.dai-hoc.ru-vat-ran.tenxo-quan-tinh",
+    "physics.dai-hoc.ru-vat-ran.truc-quan-tinh-chinh",
+    "physics.dai-hoc.vat-ran.dinh-li-steiner-huygens"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 10,
+   "skills": [
+    "chéo hoá tenxơ quán tính bằng đối xứng",
+    "chiếu tenxơ lên trục bất kì",
+    "nhận ra tenxơ đẳng hướng",
+    "định lí trục song song"
+   ],
+   "hints": [
+    "Ba trục qua tâm song song các cạnh có cùng mômen quán tính; điều đó nói gì về tenxơ?",
+    "Tổng ba bình phương cosin chỉ phương của một vectơ đơn vị luôn bằng 1.",
+    "Trục có đi qua tâm không? Nếu không thì phải dùng định lí trục song song."
+   ],
+   "tags": [
+    "irodov",
+    "vat-ran",
+    "tenxo-quan-tinh",
+    "momen-quan-tinh"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0051",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Chuỗi Fourier của hàm chẵn - tổng nghịch đảo lũy thừa bốn",
+   "type": "tu-luan",
+   "statement_vi": "Cho f(x) = x^2 trên đoạn [-pi; pi], thác triển tuần hoàn chu kì 2pi. Hãy: (a) tìm chuỗi Fourier của f; (b) dùng giá trị của chuỗi tại x = pi để tính tổng của chuỗi nghịch đảo bình phương; (c) dùng đẳng thức Parseval để tính tổng của chuỗi nghịch đảo lũy thừa BỐN; (d) giải thích vì sao chuỗi này hội tụ ĐỀU trên toàn trục, trong khi chuỗi Fourier của g(x) = x thì không. Điền giá trị của tổng ở câu (c).",
+   "statement_en": "Let f(x) = x^2 on [-pi; pi], extended periodically with period 2pi. (a) Find its Fourier series; (b) evaluate the series at x = pi to sum the reciprocals of the squares; (c) use Parseval's identity to sum the reciprocals of the FOURTH powers; (d) explain why this series converges UNIFORMLY on the whole line while the Fourier series of g(x) = x does not. Enter the sum from part (c).",
+   "answer": "f(x) = pi^2/3 + tổng theo n của 4(-1)^n cos(nx)/n^2; tại x = pi cho tổng 1/n^2 = pi^2/6; Parseval cho tổng 1/n^4 = pi^4/90 ≈ 1,0823",
+   "answer_numeric": 1.082323,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Phần (a). Xét tính chẵn lẻ trước để cắt một nửa khối lượng tính toán: f chẵn nên tích f(x)sin(nx) là hàm lẻ, tích phân trên đoạn đối xứng bằng 0. Chỉ còn chuỗi cosin.",
+     "latex": "f\\left(-x\\right) = f\\left(x\\right) \\;\\Longrightarrow\\; b_{n} = \\dfrac{1}{\\pi}\\int_{-\\pi}^{\\pi}x^{2}\\sin\\left(nx\\right)dx = 0"
+    },
+    {
+     "explain": "Tính số hạng tự do. Nhớ rằng số hạng đứng đầu chuỗi là a_0/2 chứ không phải a_0 - đây là chỗ sai dấu tích rất phổ biến.",
+     "latex": "a_{0} = \\dfrac{1}{\\pi}\\int_{-\\pi}^{\\pi}x^{2}dx = \\dfrac{2\\pi^{2}}{3} \\;\\Longrightarrow\\; \\dfrac{a_{0}}{2} = \\dfrac{\\pi^{2}}{3}"
+    },
+    {
+     "explain": "Tính hệ số cosin bằng tích phân từng phần HAI lần: lần đầu hạ x^2 xuống x, lần sau hạ x xuống hằng số. Số hạng biên đầu tiên triệt tiêu vì sin(n*pi) = 0, chỉ còn đóng góp của cos(n*pi) = (-1)^n.",
+     "latex": "a_{n} = \\dfrac{2}{\\pi}\\int_{0}^{\\pi}x^{2}\\cos\\left(nx\\right)dx = \\dfrac{2}{\\pi}\\cdot\\dfrac{2\\pi\\left(-1\\right)^{n}}{n^{2}} = \\dfrac{4\\left(-1\\right)^{n}}{n^{2}}"
+    },
+    {
+     "explain": "Ghép lại thành chuỗi Fourier. Hệ số giảm như 1/n^2, nhanh hơn hẳn so với 1/n của hàm g(x) = x - dấu hiệu báo trước kết quả ở phần (d).",
+     "latex": "x^{2} = \\dfrac{\\pi^{2}}{3} + \\sum_{n=1}^{\\infty}\\dfrac{4\\left(-1\\right)^{n}}{n^{2}}\\cos\\left(nx\\right),\\qquad -\\pi \\le x \\le \\pi"
+    },
+    {
+     "explain": "Phần (b). Thay x = pi. Đây là điểm LIÊN TỤC của thác triển tuần hoàn vì f(-pi) = f(pi) = pi^2, nên theo định lí Dirichlet chuỗi hội tụ đúng về pi^2. Hai dấu (-1)^n nhân nhau cho 1, mọi số hạng cùng dấu.",
+     "latex": "\\pi^{2} = \\dfrac{\\pi^{2}}{3} + \\sum_{n=1}^{\\infty}\\dfrac{4\\left(-1\\right)^{n}\\left(-1\\right)^{n}}{n^{2}} = \\dfrac{\\pi^{2}}{3} + 4\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{2}}"
+    },
+    {
+     "explain": "Giải ra tổng Euler quen thuộc.",
+     "latex": "\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{2}} = \\dfrac{1}{4}\\left(\\pi^{2} - \\dfrac{\\pi^{2}}{3}\\right) = \\dfrac{\\pi^{2}}{6}"
+    },
+    {
+     "explain": "Phần (c). Viết đẳng thức Parseval với nửa chu kì l = pi và tính trực tiếp vế trái bằng tích phân của x^4.",
+     "latex": "\\dfrac{1}{\\pi}\\int_{-\\pi}^{\\pi}x^{4}dx = \\dfrac{2\\pi^{4}}{5} = \\dfrac{a_{0}^{2}}{2} + \\sum_{n=1}^{\\infty}a_{n}^{2} = \\dfrac{2\\pi^{4}}{9} + \\sum_{n=1}^{\\infty}\\dfrac{16}{n^{4}}"
+    },
+    {
+     "explain": "Chuyển vế và chia cho 16. Quy đồng 2/5 - 2/9 = 8/45 rồi rút gọn.",
+     "latex": "\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{4}} = \\dfrac{1}{16}\\left(\\dfrac{2\\pi^{4}}{5} - \\dfrac{2\\pi^{4}}{9}\\right) = \\dfrac{1}{16}\\cdot\\dfrac{8\\pi^{4}}{45} = \\dfrac{\\pi^{4}}{90} \\approx 1.0823"
+    },
+    {
+     "explain": "Phần (d). Thác triển tuần hoàn của x^2 LIÊN TỤC trên toàn trục (hai đầu khớp nhau), còn thác triển của x có bước nhảy độ cao 2pi tại các điểm lẻ pi. Do đó chuỗi thứ nhất có hệ số khả tổng tuyệt đối nên hội tụ đều theo tiêu chuẩn Weierstrass, còn chuỗi thứ hai chỉ hội tụ điểm và xuất hiện hiện tượng Gibbs quanh điểm nhảy.",
+     "latex": "\\sum_{n=1}^{\\infty}\\left|a_{n}\\right| = \\sum_{n=1}^{\\infty}\\dfrac{4}{n^{2}} < \\infty \\ \\text{(hoi tu deu)};\\qquad \\sum_{n=1}^{\\infty}\\dfrac{2}{n} = \\infty \\ \\text{(khong)}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.chuoi-fourier.he-so-tren-doan-pi",
+    "math.dai-hoc.chuoi-fourier.chuoi-ham-chan",
+    "math.dai-hoc.chuoi-fourier.dang-thuc-parseval",
+    "math.dai-hoc.chuoi-fourier.dinh-li-dirichlet",
+    "math.dai-hoc.ru-giai-tich.hien-tuong-gibbs"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 16,
+   "skills": [
+    "khai triển Fourier của hàm chẵn",
+    "tích phân từng phần hai lần",
+    "đẳng thức Parseval để tính tổng chuỗi",
+    "phân biệt hội tụ đều và hội tụ điểm"
+   ],
+   "hints": [
+    "Hàm chẵn thì chỉ còn chuỗi cosin, mọi b_n bằng 0.",
+    "Tại x = pi thác triển tuần hoàn có liên tục không? Kiểm tra f(-pi) và f(pi).",
+    "Parseval: trung bình bình phương của hàm bằng tổng bình phương các hệ số."
+   ],
+   "tags": [
+    "demidovich",
+    "chuoi-fourier",
+    "dang-thuc-parseval",
+    "tong-chuoi-so"
+   ]
+  },
+  {
+   "id": "prob.math.ru-east-eu.0052",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu"
+   ],
+   "topic": "Tích phân Dirichlet - bình phương của sin x trên x",
+   "type": "dien-so",
+   "statement_vi": "Xét I = tích phân từ 0 đến vô cùng của (sin x / x)^2 dx. Hãy: (a) chứng tỏ tích phân này hội tụ TUYỆT ĐỐI, khác với tích phân Dirichlet của sin x / x; (b) dùng tích phân từng phần để đưa I về tích phân Dirichlet; (c) tính I; (d) bằng cùng kĩ thuật, tính tích phân từ 0 đến vô cùng của sin^4(x)/x^2 dx. Điền giá trị của I.",
+   "statement_en": "Consider I = the integral from 0 to infinity of (sin x / x)^2 dx. (a) Show that it converges ABSOLUTELY, unlike the Dirichlet integral of sin x / x; (b) integrate by parts to reduce I to the Dirichlet integral; (c) evaluate I; (d) by the same technique evaluate the integral from 0 to infinity of sin^4(x)/x^2 dx. Enter the value of I.",
+   "answer": "I = pi/2 ≈ 1,5708 (hội tụ tuyệt đối); tích phân của sin^4(x)/x^2 bằng pi/4 ≈ 0,7854",
+   "answer_numeric": 1.570796,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Phần (a). Xét hai đầu riêng biệt. Tại x tiến tới 0 hàm dưới dấu tích phân dần tới 1 nên đây chỉ là bất thường BỎ ĐƯỢC, không gây phân kì.",
+     "latex": "\\lim_{x\\to 0^{+}}\\left(\\dfrac{\\sin x}{x}\\right)^{2} = 1"
+    },
+    {
+     "explain": "Tại vô cùng, chặn tử số bởi 1 cho ngay một hàm trội khả tích. Vì hàm dưới dấu tích phân không âm, hội tụ đồng nghĩa với hội tụ tuyệt đối - trái hẳn với tích phân của sin x / x vốn chỉ hội tụ có điều kiện nhờ dao động bù trừ.",
+     "latex": "0 \\le \\dfrac{\\sin^{2}x}{x^{2}} \\le \\dfrac{1}{x^{2}},\\qquad \\int_{1}^{\\infty}\\dfrac{dx}{x^{2}} = 1 < \\infty"
+    },
+    {
+     "explain": "Phần (b). Chọn cách tích phân từng phần làm GIẢM bậc của x ở mẫu: lấy dv = dx/x^2 để v = -1/x, còn u = sin^2 x. Đạo hàm của sin^2 x cho sin 2x, đúng thứ ta cần.",
+     "latex": "I = \\int_{0}^{\\infty}\\sin^{2}x\\cdot\\dfrac{dx}{x^{2}} = \\left[-\\dfrac{\\sin^{2}x}{x}\\right]_{0}^{\\infty} + \\int_{0}^{\\infty}\\dfrac{2\\sin x\\cos x}{x}dx"
+    },
+    {
+     "explain": "Số hạng biên triệt tiêu ở CẢ HAI đầu: tại 0 vì sin^2 x tương đương x^2 nên tỉ số tương đương x, tại vô cùng vì tử bị chặn còn mẫu tăng vô hạn. Bước kiểm tra này là bắt buộc, không được bỏ qua.",
+     "latex": "\\dfrac{\\sin^{2}x}{x} \\xrightarrow{\\ x\\to 0\\ } 0,\\qquad \\left|\\dfrac{\\sin^{2}x}{x}\\right| \\le \\dfrac{1}{x} \\xrightarrow{\\ x\\to\\infty\\ } 0"
+    },
+    {
+     "explain": "Còn lại đúng tích phân Dirichlet với tần số 2. Đổi biến t = 2x cho thấy giá trị KHÔNG phụ thuộc hệ số tần số, vì dt/t bất biến với phép co giãn.",
+     "latex": "I = \\int_{0}^{\\infty}\\dfrac{\\sin 2x}{x}dx = \\int_{0}^{\\infty}\\dfrac{\\sin t}{t}dt = \\dfrac{\\pi}{2} \\approx 1.5708"
+    },
+    {
+     "explain": "Phần (d). Hạ bậc sin^4 bằng công thức góc bội, rồi nhóm lại thành các hiệu dạng 1 - cos(ax) để mỗi số hạng riêng lẻ đều hữu hạn khi x tiến tới 0 (từng số hạng cos(ax)/x^2 riêng lẻ thì phân kì).",
+     "latex": "\\sin^{4}x = \\dfrac{3 - 4\\cos 2x + \\cos 4x}{8} = \\dfrac{4\\left(1-\\cos 2x\\right) - \\left(1-\\cos 4x\\right)}{8}"
+    },
+    {
+     "explain": "Dùng kết quả phụ suy ra đúng bằng phép tích phân từng phần vừa làm ở trên, áp dụng cho hàm 1 - cos(ax).",
+     "latex": "\\int_{0}^{\\infty}\\dfrac{1-\\cos\\left(ax\\right)}{x^{2}}dx = \\int_{0}^{\\infty}\\dfrac{a\\sin\\left(ax\\right)}{x}dx = \\dfrac{\\pi a}{2},\\qquad a > 0"
+    },
+    {
+     "explain": "Thay a = 2 và a = 4 rồi cộng lại theo hệ số đã tách.",
+     "latex": "\\int_{0}^{\\infty}\\dfrac{\\sin^{4}x}{x^{2}}dx = \\dfrac{1}{8}\\left(4\\cdot\\pi - 2\\pi\\right) = \\dfrac{\\pi}{4} \\approx 0.7854"
+    },
+    {
+     "explain": "Kiểm tra tính hợp lí: vì sin^4 x nhỏ hơn hoặc bằng sin^2 x với mọi x nên tích phân thứ hai phải nhỏ hơn I, và quả thật pi/4 nhỏ hơn pi/2.",
+     "latex": "\\sin^{4}x \\le \\sin^{2}x \\;\\Longrightarrow\\; \\dfrac{\\pi}{4} < \\dfrac{\\pi}{2} \\ \\checkmark"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ru-giai-tich.tich-phan-dirichlet",
+    "math.dai-hoc.tich-phan-suy-rong.tich-phan-dirichlet",
+    "math.dai-hoc.tich-phan-suy-rong.hoi-tu-tuyet-doi",
+    "math.dai-hoc.tich-phan-suy-rong.so-sanh-gioi-han"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 14,
+   "skills": [
+    "phân biệt hội tụ tuyệt đối và có điều kiện",
+    "tích phân từng phần cho tích phân suy rộng",
+    "kiểm tra số hạng biên ở hai đầu",
+    "hạ bậc lượng giác trước khi tích phân"
+   ],
+   "hints": [
+    "Ở vô cùng hãy chặn sin^2 x bởi 1.",
+    "Lấy dv = dx/x^2 để hạ bậc mẫu số.",
+    "sin^4 x hạ bậc thành tổ hợp của cos 2x và cos 4x."
+   ],
+   "tags": [
+    "demidovich",
+    "tich-phan-dirichlet",
+    "hoi-tu-tuyet-doi",
+    "tich-phan-tung-phan"
+   ]
+  }
+ ]
+}

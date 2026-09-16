@@ -1,0 +1,2441 @@
+{
+  "meta": {
+    "file": "vn-physics-diendtu.json",
+    "subject": "physics",
+    "title": "Bài tập Vật lí THPT: Điện - Từ, Dao động, Sóng, Điện xoay chiều, Quang và Vật lí hiện đại (GDPT 2018)",
+    "levels": [
+      "thpt"
+    ],
+    "count": 50
+  },
+  "problems": [
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0001",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định luật Coulomb",
+      "type": "dien-so",
+      "statement_vi": "Hai điện tích điểm $q_1 = 4\\cdot10^{-6}$ C và $q_2 = 6\\cdot10^{-6}$ C đặt cách nhau 10 cm trong chân không. Lấy $k = 9\\cdot10^9$ N·m²/C². Tính độ lớn lực tương tác giữa chúng.",
+      "statement_en": "Two point charges 4e-6 C and 6e-6 C are 10 cm apart in vacuum. Find the interaction force.",
+      "answer": "21,6 N",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Coulomb trong chân không, đổi khoảng cách 10 cm = 0,1 m trước khi thay số.",
+          "latex": "F = k\\dfrac{|q_1 q_2|}{r^2}"
+        },
+        {
+          "explain": "Thay số và tính; vì hai điện tích cùng dấu nên đây là lực đẩy.",
+          "latex": "F = 9\\cdot10^{9}\\cdot\\dfrac{4\\cdot10^{-6}\\cdot 6\\cdot10^{-6}}{0{,}1^{2}} = 21{,}6\\ \\text{N}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.dien-tich-dien-truong.hang-so-coulomb"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "coulomb",
+        "luc-dien"
+      ],
+      "answer_numeric": 21.6,
+      "answer_unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0002",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chồng chất lực điện",
+      "type": "dien-so",
+      "statement_vi": "Ba điện tích điểm trên trục Ox trong chân không: $q_1 = +4\\ \\mu$C tại $x=0$; $q_2 = -2\\ \\mu$C tại $x=10$ cm; $q_3 = +3\\ \\mu$C tại $x=30$ cm. Lấy $k = 9\\cdot10^9$ N·m²/C². Tính độ lớn hợp lực điện tác dụng lên $q_2$.",
+      "statement_en": "Three collinear point charges; find the net force on q2.",
+      "answer": "5,85 N (hướng về phía q1, chiều âm Ox)",
+      "solution_steps": [
+        {
+          "explain": "Hợp lực lên q2 là tổng vectơ lực do q1 và q3; vì ba điện tích thẳng hàng nên rút về cộng đại số theo Ox.",
+          "latex": "\\vec{F}_2 = \\vec{F}_{12} + \\vec{F}_{32}"
+        },
+        {
+          "explain": "q1 dương hút q2 âm nên kéo q2 về phía Ox âm; khoảng cách r12 = 0,1 m.",
+          "latex": "F_{12} = 9\\cdot10^{9}\\cdot\\dfrac{4\\cdot10^{-6}\\cdot 2\\cdot10^{-6}}{0{,}1^{2}} = 7{,}2\\ \\text{N}"
+        },
+        {
+          "explain": "q3 dương hút q2 âm nên kéo q2 về phía Ox dương; khoảng cách r32 = 0,2 m.",
+          "latex": "F_{32} = 9\\cdot10^{9}\\cdot\\dfrac{3\\cdot10^{-6}\\cdot 2\\cdot10^{-6}}{0{,}2^{2}} = 1{,}35\\ \\text{N}"
+        },
+        {
+          "explain": "Hai lực ngược chiều nên hợp lực bằng hiệu độ lớn, hướng theo lực lớn hơn (về phía q1).",
+          "latex": "F = F_{12} - F_{32} = 7{,}2 - 1{,}35 = 5{,}85\\ \\text{N}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.dien-tich-dien-truong.nguyen-li-chong-chat-luc-dien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "chong-chat-luc",
+        "cong-vecto",
+        "xac-dinh-chieu"
+      ],
+      "tags": [
+        "coulomb",
+        "chong-chat"
+      ],
+      "answer_numeric": 5.85,
+      "answer_unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Xét riêng lực do q1 và lực do q3 tác dụng lên q2.",
+        "Hai lực này cùng phương Ox nhưng ngược chiều nhau."
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0003",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Điện trường của điện tích điểm",
+      "type": "trac-nghiem",
+      "statement_vi": "Một điện tích điểm $Q = 5\\cdot10^{-8}$ C đặt trong chân không. Lấy $k = 9\\cdot10^9$ N·m²/C². Cường độ điện trường tại điểm cách Q một đoạn 15 cm là",
+      "statement_en": "Field strength 15 cm from a 5e-8 C charge.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Cường độ điện trường của điện tích điểm giảm theo bình phương khoảng cách, đổi 15 cm = 0,15 m.",
+          "latex": "E = k\\dfrac{|Q|}{r^2} = 9\\cdot10^{9}\\cdot\\dfrac{5\\cdot10^{-8}}{0{,}15^{2}} = 2\\cdot10^{4}\\ \\text{V/m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-tich-dien-truong.dien-truong-dien-tich-diem"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "dien-truong",
+        "cuong-do-dien-truong"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$2\\cdot10^{4}$ V/m"
+        },
+        {
+          "key": "B",
+          "text": "$3\\cdot10^{3}$ V/m",
+          "why_wrong": "Quên bình phương khoảng cách: tính $kQ/r$ thay vì $kQ/r^2$."
+        },
+        {
+          "key": "C",
+          "text": "$5\\cdot10^{3}$ V/m",
+          "why_wrong": "Nhầm khoảng cách gấp đôi, dùng r = 0,3 m thay vì 0,15 m."
+        },
+        {
+          "key": "D",
+          "text": "$4{,}5\\cdot10^{4}$ V/m",
+          "why_wrong": "Dùng r = 0,1 m thay vì 0,15 m."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0004",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chồng chất điện trường",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai điện tích điểm giống nhau $q = +6$ nC đặt tại $A(0;0)$ và $B(0{,}8;0)$ (m). Lấy $k = 9\\cdot10^9$ N·m²/C². Độ lớn cường độ điện trường tổng hợp tại $P(0{,}4;0{,}3)$ m là",
+      "statement_en": "Resultant field at P from two equal charges at A and B.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "P nằm trên trung trực AB nên cách đều hai điện tích; tính khoảng cách bằng Pythagore.",
+          "latex": "r = \\sqrt{0{,}4^2 + 0{,}3^2} = 0{,}5\\ \\text{m}"
+        },
+        {
+          "explain": "Độ lớn mỗi vectơ điện trường thành phần.",
+          "latex": "E_1 = k\\dfrac{q}{r^2} = 9\\cdot10^{9}\\cdot\\dfrac{6\\cdot10^{-9}}{0{,}5^2} = 216\\ \\text{V/m}"
+        },
+        {
+          "explain": "Thành phần theo Ox của hai vectơ triệt tiêu nhau, chỉ thành phần Oy cộng lại; nhân với cosin góc hợp bởi PA và Oy là 0,3/0,5.",
+          "latex": "E = 2E_1\\cdot\\dfrac{0{,}3}{0{,}5} = 2\\cdot216\\cdot0{,}6 = 259{,}2\\ \\text{V/m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-tich-dien-truong.dien-truong-dien-tich-diem",
+        "physics.thpt.dien-tich-dien-truong.nguyen-li-chong-chat-dien-truong",
+        "physics.thpt.dien-tich-dien-truong.tong-hop-hai-vecto-dien-truong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "chong-chat-dien-truong",
+        "chieu-vecto"
+      ],
+      "tags": [
+        "dien-truong",
+        "chong-chat"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$259{,}2$ V/m"
+        },
+        {
+          "key": "B",
+          "text": "$432$ V/m",
+          "why_wrong": "Cộng thẳng độ lớn hai vectơ (2E1), quên rằng chỉ thành phần Oy mới cộng được."
+        },
+        {
+          "key": "C",
+          "text": "$216$ V/m",
+          "why_wrong": "Chỉ tính điện trường của một điện tích rồi dừng."
+        },
+        {
+          "key": "D",
+          "text": "$345{,}6$ V/m",
+          "why_wrong": "Chiếu nhầm dùng 0,4/0,5 thay cho 0,3/0,5."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0005",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Công của lực điện",
+      "type": "dien-so",
+      "statement_vi": "Một điện tích $q = 2\\cdot10^{-6}$ C dịch chuyển giữa hai điểm M, N trong điện trường, biết hiệu điện thế $U_{MN} = 200$ V. Tính công của lực điện.",
+      "statement_en": "Work done moving a charge through 200 V.",
+      "answer": "4·10⁻⁴ J",
+      "solution_steps": [
+        {
+          "explain": "Công của lực điện khi dịch điện tích qua hiệu điện thế U được tính trực tiếp.",
+          "latex": "A_{MN} = qU_{MN} = 2\\cdot10^{-6}\\cdot 200 = 4\\cdot10^{-4}\\ \\text{J}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-tich-dien-truong.hieu-dien-the",
+        "physics.thpt.dien-tich-dien-truong.cong-cua-luc-dien"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "cong-luc-dien",
+        "hieu-dien-the"
+      ],
+      "answer_numeric": 0.0004,
+      "answer_unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0006",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ghép tụ điện",
+      "type": "dien-so",
+      "statement_vi": "Hai tụ $C_1 = 4\\ \\mu$F và $C_2 = 6\\ \\mu$F ghép nối tiếp rồi mắc vào hiệu điện thế 60 V. Tính điện dung bộ tụ và năng lượng bộ tụ tích trữ.",
+      "statement_en": "Series capacitors 4 uF and 6 uF at 60 V: equivalent capacitance and energy.",
+      "answer": "C_b = 2,4 μF; W = 4,32 mJ",
+      "solution_steps": [
+        {
+          "explain": "Ghép nối tiếp: điện dung tương đương nhỏ hơn tụ nhỏ nhất.",
+          "latex": "C_b = \\dfrac{C_1 C_2}{C_1 + C_2} = \\dfrac{4\\cdot 6}{4+6} = 2{,}4\\ \\mu\\text{F}"
+        },
+        {
+          "explain": "Năng lượng bộ tụ tính theo điện dung tương đương và hiệu điện thế toàn bộ.",
+          "latex": "W = \\dfrac{1}{2}C_b U^2 = \\dfrac{1}{2}\\cdot 2{,}4\\cdot10^{-6}\\cdot 60^2 = 4{,}32\\cdot10^{-3}\\ \\text{J}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.tu-dien.ghep-tu-noi-tiep",
+        "physics.thpt.tu-dien.nang-luong-tu-dien",
+        "physics.thpt.tu-dien.dien-dung-dinh-nghia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "ghep-tu",
+        "nang-luong"
+      ],
+      "tags": [
+        "tu-dien",
+        "ghep-tu",
+        "nang-luong-dien"
+      ],
+      "answer_numeric": 0.00432,
+      "answer_unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0007",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ghép tụ nối tiếp",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tụ $C_1 = 3\\ \\mu$F và $C_2 = 6\\ \\mu$F ghép nối tiếp, mắc vào hiệu điện thế 90 V. Hiệu điện thế giữa hai bản tụ $C_1$ là",
+      "statement_en": "Series caps 3 uF and 6 uF at 90 V: voltage across C1.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Ghép nối tiếp nên điện tích hai tụ bằng nhau; tính điện dung tương đương và điện tích chung.",
+          "latex": "C_b = \\dfrac{3\\cdot 6}{9} = 2\\ \\mu\\text{F};\\quad Q = C_b U = 2\\cdot10^{-6}\\cdot 90 = 1{,}8\\cdot10^{-4}\\ \\text{C}"
+        },
+        {
+          "explain": "Hiệu điện thế trên C1 bằng điện tích chia điện dung của chính nó.",
+          "latex": "U_1 = \\dfrac{Q}{C_1} = \\dfrac{1{,}8\\cdot10^{-4}}{3\\cdot10^{-6}} = 60\\ \\text{V}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.tu-dien.ghep-tu-noi-tiep",
+        "physics.thpt.tu-dien.dien-dung-dinh-nghia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "ghep-tu",
+        "phan-bo-hieu-dien-the"
+      ],
+      "tags": [
+        "tu-dien",
+        "ghep-tu"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "60 V"
+        },
+        {
+          "key": "B",
+          "text": "30 V",
+          "why_wrong": "Nhầm U1 với U2; tụ điện dung nhỏ hơn phải chịu hiệu điện thế lớn hơn."
+        },
+        {
+          "key": "C",
+          "text": "45 V",
+          "why_wrong": "Chia đều hiệu điện thế cho hai tụ, quên rằng chúng chia theo tỉ lệ nghịch điện dung."
+        },
+        {
+          "key": "D",
+          "text": "90 V",
+          "why_wrong": "Cho rằng cả hiệu điện thế đặt lên một tụ."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0008",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định luật Ohm toàn mạch",
+      "type": "dien-so",
+      "statement_vi": "Nguồn điện có suất điện động $\\xi = 9$ V, điện trở trong $r = 1\\ \\Omega$, mắc với điện trở ngoài $R = 8\\ \\Omega$. Tính cường độ dòng điện trong mạch và hiệu điện thế hai cực nguồn.",
+      "statement_en": "EMF 9 V, internal 1 ohm, external 8 ohm: current and terminal voltage.",
+      "answer": "I = 1 A; U = 8 V",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng định luật Ohm cho toàn mạch, cộng điện trở trong vào mẫu.",
+          "latex": "I = \\dfrac{\\xi}{R + r} = \\dfrac{9}{8 + 1} = 1\\ \\text{A}"
+        },
+        {
+          "explain": "Hiệu điện thế hai cực nguồn bằng suất điện động trừ độ giảm thế trong nguồn.",
+          "latex": "U = \\xi - Ir = 9 - 1\\cdot 1 = 8\\ \\text{V}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "dinh-luat-om",
+        "dien-tro-trong"
+      ],
+      "tags": [
+        "dong-dien",
+        "dinh-luat-om"
+      ],
+      "answer_numeric": 1.0,
+      "answer_unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0009",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ghép nguồn nối tiếp",
+      "type": "trac-nghiem",
+      "statement_vi": "Bốn nguồn giống nhau, mỗi nguồn $\\xi_0 = 1{,}5$ V, $r_0 = 0{,}5\\ \\Omega$, ghép nối tiếp thành bộ rồi mắc với điện trở ngoài $R = 4\\ \\Omega$. Cường độ dòng điện trong mạch là",
+      "statement_en": "Four series cells (1.5 V, 0.5 ohm) with external 4 ohm: current.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Ghép nối tiếp: suất điện động và điện trở trong đều cộng.",
+          "latex": "\\xi_b = 4\\cdot 1{,}5 = 6\\ \\text{V};\\quad r_b = 4\\cdot 0{,}5 = 2\\ \\Omega"
+        },
+        {
+          "explain": "Áp dụng định luật Ohm toàn mạch với bộ nguồn tương đương.",
+          "latex": "I = \\dfrac{\\xi_b}{R + r_b} = \\dfrac{6}{4 + 2} = 1\\ \\text{A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.ghep-nguon-noi-tiep",
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "ghep-nguon",
+        "dinh-luat-om"
+      ],
+      "tags": [
+        "dong-dien",
+        "ghep-nguon"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 A"
+        },
+        {
+          "key": "B",
+          "text": "1,5 A",
+          "why_wrong": "Quên cộng điện trở trong của bốn nguồn (r_b = 2 Ω)."
+        },
+        {
+          "key": "C",
+          "text": "0,375 A",
+          "why_wrong": "Chỉ dùng suất điện động một nguồn 1,5 V thay vì 6 V."
+        },
+        {
+          "key": "D",
+          "text": "3 A",
+          "why_wrong": "Bỏ quên điện trở ngoài R, chỉ chia cho điện trở trong bộ nguồn (6/2 = 3)."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0010",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Công suất mạch ngoài cực đại",
+      "type": "dien-so",
+      "statement_vi": "Nguồn điện có $\\xi = 12$ V, $r = 2\\ \\Omega$. Điều chỉnh điện trở ngoài R để công suất tiêu thụ mạch ngoài đạt cực đại. Tính giá trị R đó và công suất cực đại.",
+      "statement_en": "Maximum power transfer for EMF 12 V, r = 2 ohm.",
+      "answer": "R = 2 Ω; P_max = 18 W",
+      "solution_steps": [
+        {
+          "explain": "Công suất mạch ngoài cực đại khi điện trở ngoài bằng điện trở trong (định lí truyền công suất cực đại).",
+          "latex": "R = r = 2\\ \\Omega"
+        },
+        {
+          "explain": "Khi đó công suất cực đại tính theo suất điện động và điện trở trong.",
+          "latex": "P_{max} = \\dfrac{\\xi^2}{4r} = \\dfrac{12^2}{4\\cdot 2} = 18\\ \\text{W}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.cong-suat-mach-ngoai-cuc-dai"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "cuc-tri",
+        "cong-suat"
+      ],
+      "tags": [
+        "cong-suat",
+        "cuc-tri"
+      ],
+      "answer_numeric": 18.0,
+      "answer_unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Công suất mạch ngoài P = I²R với I = ξ/(R+r).",
+        "Khảo sát P theo R hoặc dùng bất đẳng thức Cô-si, cực đại khi R = r."
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0011",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định luật Jun - Len-xơ",
+      "type": "dien-so",
+      "statement_vi": "Một bếp điện có điện trở $R = 44\\ \\Omega$ mắc vào hiệu điện thế 220 V. Tính nhiệt lượng bếp toả ra trong 10 phút.",
+      "statement_en": "Heater 44 ohm at 220 V: heat in 10 minutes.",
+      "answer": "660 000 J = 660 kJ",
+      "solution_steps": [
+        {
+          "explain": "Công suất toả nhiệt của vật dẫn thuần trở.",
+          "latex": "P = \\dfrac{U^2}{R} = \\dfrac{220^2}{44} = 1100\\ \\text{W}"
+        },
+        {
+          "explain": "Nhiệt lượng bằng công suất nhân thời gian, đổi 10 phút = 600 s.",
+          "latex": "Q = P t = 1100\\cdot 600 = 6{,}6\\cdot10^{5}\\ \\text{J}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-jun-len-xo",
+        "physics.thpt.dong-dien-khong-doi.cong-suat-dien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "jun-lenxo",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "jun-lenxo",
+        "cong-suat"
+      ],
+      "answer_numeric": 660000.0,
+      "answer_unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0012",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Điện phân Faraday",
+      "type": "dien-so",
+      "statement_vi": "Bình điện phân dung dịch $CuSO_4$ với anôt bằng đồng, dòng điện 5 A chạy trong 32 phút 10 giây. Cho Cu có $A = 64$, $n = 2$, $F = 96500$ C/mol. Tính khối lượng đồng bám vào catôt.",
+      "statement_en": "Copper electrolysis, 5 A for 32 min 10 s.",
+      "answer": "3,2 g",
+      "solution_steps": [
+        {
+          "explain": "Đổi thời gian ra giây và tính điện lượng chuyển qua bình.",
+          "latex": "t = 32\\cdot 60 + 10 = 1930\\ \\text{s};\\quad q = It = 5\\cdot 1930 = 9650\\ \\text{C}"
+        },
+        {
+          "explain": "Áp dụng định luật Faraday về điện phân.",
+          "latex": "m = \\dfrac{1}{F}\\cdot\\dfrac{A}{n}\\, It = \\dfrac{1}{96500}\\cdot\\dfrac{64}{2}\\cdot 9650 = 3{,}2\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-faraday-dien-phan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "dien-phan",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "dien-phan",
+        "faraday"
+      ],
+      "answer_numeric": 3.2,
+      "answer_unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0013",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Lực từ tác dụng lên dây dẫn",
+      "type": "dien-so",
+      "statement_vi": "Một đoạn dây dẫn dài 25 cm mang dòng điện 4 A, đặt vuông góc với từ trường đều có cảm ứng từ $B = 0{,}5$ T. Tính lực từ tác dụng lên đoạn dây.",
+      "statement_en": "Force on a 25 cm wire carrying 4 A perpendicular to B = 0.5 T.",
+      "answer": "0,5 N",
+      "solution_steps": [
+        {
+          "explain": "Dây vuông góc với B nên sin của góc bằng 1; đổi 25 cm = 0,25 m.",
+          "latex": "F = BIl\\sin\\alpha = 0{,}5\\cdot 4\\cdot 0{,}25\\cdot 1 = 0{,}5\\ \\text{N}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.tu-truong.luc-tu-tac-dung-len-day-dan"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "tu-truong",
+        "luc-tu"
+      ],
+      "answer_numeric": 0.5,
+      "answer_unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0014",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Lực Lorentz và quỹ đạo tròn",
+      "type": "dien-so",
+      "statement_vi": "Một prôton có khối lượng $m = 1{,}67\\cdot10^{-27}$ kg, điện tích $q = 1{,}6\\cdot10^{-19}$ C, bay vào từ trường đều $B = 0{,}5$ T theo phương vuông góc với $\\vec{B}$ với vận tốc $v = 2\\cdot10^{6}$ m/s. Tính bán kính quỹ đạo tròn.",
+      "statement_en": "Proton radius in B = 0.5 T, v = 2e6 m/s perpendicular.",
+      "answer": "≈ 4,18·10⁻² m",
+      "solution_steps": [
+        {
+          "explain": "Vì vận tốc vuông góc với B, lực Lorentz đóng vai trò lực hướng tâm, prôton chuyển động tròn đều.",
+          "latex": "|q|vB = \\dfrac{mv^2}{R}"
+        },
+        {
+          "explain": "Suy ra bán kính quỹ đạo.",
+          "latex": "R = \\dfrac{mv}{|q|B} = \\dfrac{1{,}67\\cdot10^{-27}\\cdot 2\\cdot10^{6}}{1{,}6\\cdot10^{-19}\\cdot 0{,}5} \\approx 4{,}18\\cdot10^{-2}\\ \\text{m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.tu-truong.ban-kinh-quy-dao-tron-trong-tu-truong",
+        "physics.thpt.tu-truong.luc-lorentz"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "luc-lorentz",
+        "quy-dao-tron"
+      ],
+      "tags": [
+        "luc-lorentz",
+        "quy-dao-tron"
+      ],
+      "answer_numeric": 0.04175,
+      "answer_unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0015",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chu kì chuyển động tròn trong từ trường",
+      "type": "trac-nghiem",
+      "statement_vi": "Một electron ($m = 9{,}1\\cdot10^{-31}$ kg, $|q| = 1{,}6\\cdot10^{-19}$ C) chuyển động tròn trong từ trường đều $B = 10^{-3}$ T. Chu kì chuyển động của electron xấp xỉ",
+      "statement_en": "Cyclotron period of an electron in B = 1e-3 T.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Chu kì chuyển động tròn trong từ trường không phụ thuộc vận tốc, chỉ phụ thuộc m, q và B.",
+          "latex": "T = \\dfrac{2\\pi m}{|q|B} = \\dfrac{2\\pi\\cdot 9{,}1\\cdot10^{-31}}{1{,}6\\cdot10^{-19}\\cdot 10^{-3}} \\approx 3{,}57\\cdot10^{-8}\\ \\text{s}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.tu-truong.chu-ki-chuyen-dong-tron-trong-tu-truong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "chu-ki-cyclotron"
+      ],
+      "tags": [
+        "cyclotron",
+        "chu-ki"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$3{,}57\\cdot10^{-8}$ s"
+        },
+        {
+          "key": "B",
+          "text": "$1{,}79\\cdot10^{-8}$ s",
+          "why_wrong": "Quên hệ số 2 (dùng πm thay 2πm)."
+        },
+        {
+          "key": "C",
+          "text": "$3{,}57\\cdot10^{-5}$ s",
+          "why_wrong": "Sai lũy thừa của B, dùng $10^{-6}$ thay $10^{-3}$."
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc vận tốc electron",
+          "why_wrong": "Chu kì cyclotron độc lập với vận tốc và bán kính."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0016",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Suất điện động cảm ứng",
+      "type": "dien-so",
+      "statement_vi": "Khung dây phẳng 500 vòng, diện tích mỗi vòng 40 cm², đặt vuông góc với từ trường đều. Trong 0,2 s cảm ứng từ giảm đều từ 0,5 T về 0. Tính suất điện động cảm ứng trong khung.",
+      "statement_en": "Induced EMF: 500 turns, 40 cm2, B from 0.5 T to 0 in 0.2 s.",
+      "answer": "5 V",
+      "solution_steps": [
+        {
+          "explain": "Khung vuông góc B nên từ thông một vòng là BS; độ biến thiên từ thông toàn khung nhân số vòng.",
+          "latex": "|e_c| = N\\dfrac{|\\Delta B|\\, S}{\\Delta t}"
+        },
+        {
+          "explain": "Thay số với S = 40 cm² = 40·10⁻⁴ m².",
+          "latex": "|e_c| = 500\\cdot\\dfrac{0{,}5\\cdot 40\\cdot10^{-4}}{0{,}2} = 5\\ \\text{V}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.cam-ung-dien-tu.tu-thong",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "faraday",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "cam-ung-dien-tu",
+        "faraday"
+      ],
+      "answer_numeric": 5.0,
+      "answer_unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0017",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Suất điện động thanh dẫn chuyển động",
+      "type": "trac-nghiem",
+      "statement_vi": "Một thanh dẫn dài 50 cm chuyển động với vận tốc 6 m/s theo phương vuông góc với thanh và vuông góc với từ trường đều $B = 0{,}4$ T. Suất điện động cảm ứng trong thanh là",
+      "statement_en": "EMF in a 50 cm rod moving at 6 m/s in B = 0.4 T.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Suất điện động cảm ứng trong thanh dẫn chuyển động vuông góc từ trường.",
+          "latex": "e = Blv = 0{,}4\\cdot 0{,}5\\cdot 6 = 1{,}2\\ \\text{V}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.cam-ung-dien-tu.sdd-thanh-dan-chuyen-dong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "cam-ung-dien-tu",
+        "thanh-dan"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1,2 V"
+        },
+        {
+          "key": "B",
+          "text": "0,12 V",
+          "why_wrong": "Quên đổi 50 cm = 0,5 m, dùng 0,05 m."
+        },
+        {
+          "key": "C",
+          "text": "2,4 V",
+          "why_wrong": "Nhân đôi nhầm hoặc dùng l = 1 m."
+        },
+        {
+          "key": "D",
+          "text": "0,2 V",
+          "why_wrong": "Chỉ nhân B với chiều dài l (0,4×0,5), quên vận tốc v."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0018",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tự cảm và năng lượng từ trường",
+      "type": "dien-so",
+      "statement_vi": "Ống dây có độ tự cảm $L = 0{,}4$ H. Trong 0,2 s dòng điện qua ống tăng đều từ 0 lên 4 A. Tính suất điện động tự cảm và năng lượng từ trường khi dòng đạt 4 A.",
+      "statement_en": "Self-induction: L = 0.4 H, current 0 to 4 A in 0.2 s.",
+      "answer": "e_tc = 8 V; W = 3,2 J",
+      "solution_steps": [
+        {
+          "explain": "Suất điện động tự cảm phụ thuộc tốc độ biến thiên dòng điện.",
+          "latex": "|e_{tc}| = L\\dfrac{|\\Delta i|}{\\Delta t} = 0{,}4\\cdot\\dfrac{4 - 0}{0{,}2} = 8\\ \\text{V}"
+        },
+        {
+          "explain": "Năng lượng từ trường tích trữ trong ống dây khi dòng đạt 4 A.",
+          "latex": "W = \\dfrac{1}{2}L i^2 = \\dfrac{1}{2}\\cdot 0{,}4\\cdot 4^2 = 3{,}2\\ \\text{J}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.cam-ung-dien-tu.suat-dien-dong-tu-cam",
+        "physics.thpt.cam-ung-dien-tu.nang-luong-tu-truong-ong-day"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tu-cam",
+        "nang-luong-tu-truong"
+      ],
+      "tags": [
+        "tu-cam",
+        "nang-luong-tu-truong"
+      ],
+      "answer_numeric": 3.2,
+      "answer_unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0019",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ thức độc lập trong dao động điều hoà",
+      "type": "dien-so",
+      "statement_vi": "Một vật dao động điều hoà với biên độ $A = 8$ cm, tần số góc $\\omega = 5$ rad/s. Khi vật có li độ $x = 4$ cm thì tốc độ của vật bằng bao nhiêu?",
+      "statement_en": "SHM speed at x = 4 cm given A = 8 cm, omega = 5 rad/s.",
+      "answer": "≈ 34,6 cm/s",
+      "solution_steps": [
+        {
+          "explain": "Dùng hệ thức độc lập với thời gian giữa li độ và vận tốc (không cần biết t).",
+          "latex": "v = \\omega\\sqrt{A^2 - x^2}"
+        },
+        {
+          "explain": "Thay số, li độ và biên độ cùng đơn vị cm nên tốc độ ra cm/s.",
+          "latex": "v = 5\\sqrt{8^2 - 4^2} = 5\\sqrt{48} = 20\\sqrt{3} \\approx 34{,}6\\ \\text{cm/s}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.he-thuc-doc-lap-x-v"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "he-thuc-doc-lap"
+      ],
+      "tags": [
+        "dao-dong-dieu-hoa",
+        "van-toc"
+      ],
+      "answer_numeric": 34.64,
+      "answer_unit": "cm/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0020",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tốc độ cực đại trong dao động điều hoà",
+      "type": "trac-nghiem",
+      "statement_vi": "Một vật dao động điều hoà với biên độ $A = 10$ cm và tần số góc $\\omega = 4\\pi$ rad/s. Tốc độ cực đại của vật là",
+      "statement_en": "Maximum speed in SHM: A = 10 cm, omega = 4pi rad/s.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tốc độ cực đại đạt tại vị trí cân bằng, bằng tích tần số góc và biên độ.",
+          "latex": "v_{max} = \\omega A = 4\\pi\\cdot 10 = 40\\pi \\approx 125{,}7\\ \\text{cm/s}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.gia-tri-cuc-dai-v-a"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "dao-dong-dieu-hoa",
+        "van-toc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$40\\pi \\approx 125{,}7$ cm/s"
+        },
+        {
+          "key": "B",
+          "text": "$160\\pi^2$ cm/s²",
+          "why_wrong": "Đây là gia tốc cực đại $a_{max}=\\omega^2 A$, không phải tốc độ."
+        },
+        {
+          "key": "C",
+          "text": "$4\\pi$ cm/s",
+          "why_wrong": "Quên nhân biên độ A."
+        },
+        {
+          "key": "D",
+          "text": "10 cm/s",
+          "why_wrong": "Nhầm tốc độ cực đại bằng biên độ."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0021",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chu kì con lắc lò xo",
+      "type": "dien-so",
+      "statement_vi": "Con lắc lò xo gồm vật nặng $m = 400$ g và lò xo có độ cứng $k = 40$ N/m. Tính chu kì dao động của con lắc.",
+      "statement_en": "Spring pendulum period: m = 400 g, k = 40 N/m.",
+      "answer": "≈ 0,628 s",
+      "solution_steps": [
+        {
+          "explain": "Đổi khối lượng ra kilôgam rồi áp dụng công thức chu kì con lắc lò xo.",
+          "latex": "T = 2\\pi\\sqrt{\\dfrac{m}{k}} = 2\\pi\\sqrt{\\dfrac{0{,}4}{40}} = 2\\pi\\cdot 0{,}1 = 0{,}2\\pi \\approx 0{,}628\\ \\text{s}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-chu-ki"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "con-lac-lo-xo",
+        "chu-ki"
+      ],
+      "answer_numeric": 0.6283,
+      "answer_unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0022",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Lực đàn hồi con lắc lò xo thẳng đứng",
+      "type": "trac-nghiem",
+      "statement_vi": "Con lắc lò xo thẳng đứng gồm vật $m = 400$ g, lò xo $k = 100$ N/m, dao động với biên độ $A = 2$ cm. Lấy $g = 10$ m/s². Lực đàn hồi cực đại và cực tiểu của lò xo lần lượt là",
+      "statement_en": "Max and min elastic force of a vertical spring pendulum.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tính độ giãn lò xo tại vị trí cân bằng.",
+          "latex": "\\Delta l_0 = \\dfrac{mg}{k} = \\dfrac{0{,}4\\cdot 10}{100} = 0{,}04\\ \\text{m} = 4\\ \\text{cm}"
+        },
+        {
+          "explain": "Vì $\\Delta l_0 > A$, lò xo luôn giãn; lực đàn hồi cực đại khi giãn nhiều nhất ($\\Delta l_0 + A$).",
+          "latex": "F_{max} = k(\\Delta l_0 + A) = 100\\cdot(0{,}04 + 0{,}02) = 6\\ \\text{N}"
+        },
+        {
+          "explain": "Lực đàn hồi cực tiểu khi giãn ít nhất ($\\Delta l_0 - A$), vẫn dương nên lò xo không bị nén.",
+          "latex": "F_{min} = k(\\Delta l_0 - A) = 100\\cdot(0{,}04 - 0{,}02) = 2\\ \\text{N}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.luc-dan-hoi-con-lac-lo-xo",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-thang-dung"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "luc-dan-hoi",
+        "phan-tich-vi-tri"
+      ],
+      "tags": [
+        "con-lac-lo-xo",
+        "luc-dan-hoi"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "6 N và 2 N"
+        },
+        {
+          "key": "B",
+          "text": "6 N và 0 N",
+          "why_wrong": "Cho rằng lực đàn hồi cực tiểu luôn bằng 0; chỉ đúng khi A ≥ Δl₀."
+        },
+        {
+          "key": "C",
+          "text": "2 N và 6 N",
+          "why_wrong": "Đảo ngược cực đại và cực tiểu."
+        },
+        {
+          "key": "D",
+          "text": "4 N và 2 N",
+          "why_wrong": "Dùng lực kéo về (kA) làm lực đàn hồi, quên độ giãn cân bằng."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0023",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chu kì con lắc đơn",
+      "type": "dien-so",
+      "statement_vi": "Con lắc đơn có chiều dài $l = 1{,}6$ m dao động nhỏ tại nơi có $g = 10$ m/s². Tính chu kì dao động.",
+      "statement_en": "Simple pendulum period: l = 1.6 m, g = 10 m/s2.",
+      "answer": "≈ 2,51 s",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng công thức chu kì con lắc đơn dao động nhỏ.",
+          "latex": "T = 2\\pi\\sqrt{\\dfrac{l}{g}} = 2\\pi\\sqrt{\\dfrac{1{,}6}{10}} = 2\\pi\\cdot 0{,}4 = 0{,}8\\pi \\approx 2{,}51\\ \\text{s}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-don-chu-ki"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "con-lac-don",
+        "chu-ki"
+      ],
+      "answer_numeric": 2.513,
+      "answer_unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0024",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Vận tốc và lực căng con lắc đơn",
+      "type": "trac-nghiem",
+      "statement_vi": "Con lắc đơn có $l = 1$ m, vật nặng $m = 0{,}2$ kg, kéo lệch góc $\\alpha_0 = 60^\\circ$ rồi thả nhẹ. Lấy $g = 10$ m/s². Lực căng dây khi con lắc qua vị trí cân bằng là",
+      "statement_en": "Tension at lowest point, l = 1 m, m = 0.2 kg, amplitude 60 deg.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Dùng bảo toàn cơ năng: vận tốc tại vị trí cân bằng phụ thuộc độ cao đã hạ.",
+          "latex": "v^2 = 2gl(1 - \\cos\\alpha_0) = 2\\cdot 10\\cdot 1\\cdot(1 - 0{,}5) = 10\\ \\text{m}^2/\\text{s}^2"
+        },
+        {
+          "explain": "Tại vị trí cân bằng, lực căng dây cân bằng trọng lực và tạo lực hướng tâm.",
+          "latex": "\\tau = mg(3 - 2\\cos\\alpha_0) = 0{,}2\\cdot 10\\cdot(3 - 2\\cdot 0{,}5) = 4\\ \\text{N}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.van-toc-con-lac-don",
+        "physics.thpt.dao-dong-dieu-hoa.luc-cang-day-con-lac-don"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "bao-toan-nang-luong",
+        "luc-cang"
+      ],
+      "tags": [
+        "con-lac-don",
+        "luc-cang-day"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "4 N"
+        },
+        {
+          "key": "B",
+          "text": "2 N",
+          "why_wrong": "Chỉ lấy trọng lực mg = 2 N, quên lực hướng tâm cần thiết."
+        },
+        {
+          "key": "C",
+          "text": "6 N",
+          "why_wrong": "Dùng công thức 3mg, đúng khi α₀ = 90°, không phải 60°."
+        },
+        {
+          "key": "D",
+          "text": "3 N",
+          "why_wrong": "Lấy trung bình sai hoặc dùng công thức không đúng."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0025",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Vị trí năng lượng trong dao động điều hoà",
+      "type": "dien-so",
+      "statement_vi": "Một vật dao động điều hoà với biên độ $A = 6$ cm. Xác định li độ tại đó động năng bằng ba lần thế năng.",
+      "statement_en": "Position where kinetic energy is three times potential energy, A = 6 cm.",
+      "answer": "x = ±3 cm",
+      "solution_steps": [
+        {
+          "explain": "Dùng cơ năng bảo toàn $W = W_d + W_t$ với điều kiện $W_d = 3W_t$, suy ra công thức vị trí.",
+          "latex": "W_d = 3W_t \\Rightarrow x = \\pm\\dfrac{A}{\\sqrt{n+1}}\\ \\text{với}\\ n=3"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "x = \\pm\\dfrac{6}{\\sqrt{3+1}} = \\pm\\dfrac{6}{2} = \\pm 3\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.vi-tri-dong-nang-bang-n-lan-the-nang",
+        "physics.thpt.dao-dong-dieu-hoa.co-nang-dao-dong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "nang-luong-dao-dong"
+      ],
+      "tags": [
+        "nang-luong-dao-dong",
+        "dong-nang",
+        "the-nang"
+      ],
+      "answer_numeric": 3.0,
+      "answer_unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0026",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dao động tắt dần",
+      "type": "dien-so",
+      "statement_vi": "Con lắc lò xo $k = 100$ N/m, vật $m = 100$ g dao động tắt dần trên mặt phẳng ngang có hệ số ma sát $\\mu = 0{,}05$, biên độ ban đầu $A = 10$ cm. Lấy $g = 10$ m/s². Tính tổng quãng đường vật đi được đến khi dừng hẳn.",
+      "statement_en": "Total distance of a damped spring oscillator until it stops.",
+      "answer": "10 m",
+      "solution_steps": [
+        {
+          "explain": "Toàn bộ cơ năng ban đầu chuyển thành công của lực ma sát trên tổng quãng đường S.",
+          "latex": "\\dfrac{1}{2}kA^2 = \\mu m g\\, S"
+        },
+        {
+          "explain": "Suy ra S; đổi A = 0,1 m.",
+          "latex": "S = \\dfrac{kA^2}{2\\mu m g} = \\dfrac{100\\cdot 0{,}1^2}{2\\cdot 0{,}05\\cdot 0{,}1\\cdot 10} = 10\\ \\text{m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.quang-duong-tong-cong-tat-dan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "bao-toan-nang-luong",
+        "tat-dan"
+      ],
+      "tags": [
+        "tat-dan",
+        "nang-luong"
+      ],
+      "answer_numeric": 10.0,
+      "answer_unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0027",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tổng hợp hai dao động điều hoà",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai dao động điều hoà cùng phương cùng tần số: $x_1 = 6\\cos(\\omega t)$ cm và $x_2 = 8\\cos(\\omega t + \\dfrac{\\pi}{2})$ cm. Biên độ dao động tổng hợp là",
+      "statement_en": "Resultant amplitude of two perpendicular-phase SHMs, 6 cm and 8 cm.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hai dao động vuông pha ($\\Delta\\varphi = \\pi/2$), $\\cos\\Delta\\varphi = 0$.",
+          "latex": "A = \\sqrt{A_1^2 + A_2^2} = \\sqrt{6^2 + 8^2} = 10\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-dieu-hoa.tong-hop-hai-dao-dong-bien-do"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tong-hop-dao-dong"
+      ],
+      "tags": [
+        "tong-hop-dao-dong",
+        "bien-do"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 cm"
+        },
+        {
+          "key": "B",
+          "text": "14 cm",
+          "why_wrong": "Cộng thẳng hai biên độ, chỉ đúng khi hai dao động cùng pha."
+        },
+        {
+          "key": "C",
+          "text": "2 cm",
+          "why_wrong": "Trừ hai biên độ, chỉ đúng khi hai dao động ngược pha."
+        },
+        {
+          "key": "D",
+          "text": "7 cm",
+          "why_wrong": "Lấy trung bình cộng hai biên độ."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0028",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bước sóng và độ lệch pha",
+      "type": "dien-so",
+      "statement_vi": "Một sóng cơ có tần số 25 Hz truyền với tốc độ 10 m/s. Tính độ lệch pha giữa hai điểm trên phương truyền cách nhau 50 cm.",
+      "statement_en": "Phase difference between two points 50 cm apart, f = 25 Hz, v = 10 m/s.",
+      "answer": "2,5π rad",
+      "solution_steps": [
+        {
+          "explain": "Tính bước sóng từ tốc độ và tần số.",
+          "latex": "\\lambda = \\dfrac{v}{f} = \\dfrac{10}{25} = 0{,}4\\ \\text{m}"
+        },
+        {
+          "explain": "Độ lệch pha giữa hai điểm cách nhau d = 0,5 m.",
+          "latex": "\\Delta\\varphi = \\dfrac{2\\pi d}{\\lambda} = \\dfrac{2\\pi\\cdot 0{,}5}{0{,}4} = 2{,}5\\pi\\ \\text{rad}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.song-co.buoc-song",
+        "physics.thpt.song-co.do-lech-pha-hai-diem"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "buoc-song",
+        "do-lech-pha"
+      ],
+      "tags": [
+        "song-co",
+        "do-lech-pha"
+      ],
+      "answer_numeric": 7.854,
+      "answer_unit": "rad",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0029",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Số cực đại giao thoa",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai nguồn kết hợp cùng pha cách nhau $S_1S_2 = 18$ cm, bước sóng $\\lambda = 4$ cm. Số điểm dao động cực đại trên đoạn thẳng nối hai nguồn là",
+      "statement_en": "Number of interference maxima between two in-phase sources 18 cm apart, wavelength 4 cm.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Số cực đại là số giá trị nguyên k thoả điều kiện trên đoạn nối hai nguồn cùng pha.",
+          "latex": "-\\dfrac{L}{\\lambda} < k < \\dfrac{L}{\\lambda} \\Rightarrow -4{,}5 < k < 4{,}5"
+        },
+        {
+          "explain": "k nguyên từ −4 đến 4.",
+          "latex": "k \\in \\{-4,-3,\\dots,3,4\\} \\Rightarrow 9\\ \\text{điểm}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.song-co.so-cuc-dai-tren-doan-noi-hai-nguon"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "dem-diem",
+        "giao-thoa"
+      ],
+      "tags": [
+        "giao-thoa",
+        "cuc-dai"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "9"
+        },
+        {
+          "key": "B",
+          "text": "11",
+          "why_wrong": "Đếm nhầm cả hai nguồn là cực đại, cộng thêm 2 vào kết quả đúng (9+2)."
+        },
+        {
+          "key": "C",
+          "text": "7",
+          "why_wrong": "Bỏ sót hai giá trị k = ±4."
+        },
+        {
+          "key": "D",
+          "text": "8",
+          "why_wrong": "Quên giá trị k = 0 hoặc đếm nhầm số nguyên trong khoảng."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0030",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sóng dừng trên dây",
+      "type": "dien-so",
+      "statement_vi": "Trên một sợi dây đàn hồi hai đầu cố định dài 75 cm có sóng dừng với 5 bụng sóng. Tính bước sóng.",
+      "statement_en": "Standing wave on a 75 cm string fixed at both ends with 5 antinodes.",
+      "answer": "30 cm",
+      "solution_steps": [
+        {
+          "explain": "Dây hai đầu cố định, số bụng bằng số bó sóng k = 5, mỗi bó dài nửa bước sóng.",
+          "latex": "l = k\\dfrac{\\lambda}{2}"
+        },
+        {
+          "explain": "Suy ra bước sóng.",
+          "latex": "\\lambda = \\dfrac{2l}{k} = \\dfrac{2\\cdot 75}{5} = 30\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.song-co.song-dung-hai-dau-co-dinh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "song-dung"
+      ],
+      "tags": [
+        "song-dung",
+        "nut-bung"
+      ],
+      "answer_numeric": 30.0,
+      "answer_unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0031",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Mức cường độ âm",
+      "type": "dien-so",
+      "statement_vi": "Tại điểm cách một nguồn âm điểm 1 m, mức cường độ âm đo được là 80 dB. Coi môi trường không hấp thụ âm. Tính mức cường độ âm tại điểm cách nguồn 5 m.",
+      "statement_en": "Sound intensity level 5 m from source given 80 dB at 1 m.",
+      "answer": "≈ 66 dB",
+      "solution_steps": [
+        {
+          "explain": "Cường độ âm giảm theo bình phương khoảng cách, nên hiệu mức cường độ âm phụ thuộc tỉ số khoảng cách.",
+          "latex": "L_1 - L_2 = 20\\lg\\dfrac{r_2}{r_1} = 20\\lg 5 \\approx 13{,}98\\ \\text{dB}"
+        },
+        {
+          "explain": "Suy ra mức cường độ âm tại điểm xa.",
+          "latex": "L_2 = 80 - 13{,}98 \\approx 66\\ \\text{dB}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.song-co.hieu-muc-cuong-do-am",
+        "physics.thpt.song-co.muc-cuong-do-am"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "muc-cuong-do-am",
+        "logarit"
+      ],
+      "tags": [
+        "song-am",
+        "muc-cuong-do-am"
+      ],
+      "answer_numeric": 66.0,
+      "answer_unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0032",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Mạch chỉ chứa cuộn cảm",
+      "type": "dien-so",
+      "statement_vi": "Cuộn cảm thuần có độ tự cảm $L = \\dfrac{0{,}2}{\\pi}$ H mắc vào điện áp xoay chiều $u = 200\\cos(100\\pi t)$ V. Tính cảm kháng và cường độ dòng điện hiệu dụng qua cuộn cảm.",
+      "statement_en": "Pure inductor L = 0.2/pi H at u = 200cos(100pi t): reactance and RMS current.",
+      "answer": "Z_L = 20 Ω; I ≈ 7,07 A",
+      "solution_steps": [
+        {
+          "explain": "Cảm kháng bằng tích tần số góc và độ tự cảm.",
+          "latex": "Z_L = \\omega L = 100\\pi\\cdot\\dfrac{0{,}2}{\\pi} = 20\\ \\Omega"
+        },
+        {
+          "explain": "Điện áp hiệu dụng bằng cực đại chia căn 2, rồi áp dụng định luật Ohm.",
+          "latex": "U = \\dfrac{200}{\\sqrt 2} = 100\\sqrt 2\\ \\text{V};\\quad I = \\dfrac{U}{Z_L} = \\dfrac{100\\sqrt 2}{20} = 5\\sqrt 2 \\approx 7{,}07\\ \\text{A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.cam-khang",
+        "physics.thpt.dien-xoay-chieu.dinh-luat-om-xoay-chieu",
+        "physics.thpt.dien-xoay-chieu.gia-tri-hieu-dung"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "cam-khang",
+        "gia-tri-hieu-dung"
+      ],
+      "tags": [
+        "dien-xoay-chieu",
+        "cam-khang"
+      ],
+      "answer_numeric": 7.071,
+      "answer_unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0033",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tổng trở mạch RLC",
+      "type": "dien-so",
+      "statement_vi": "Mạch RLC nối tiếp có $R = 30\\ \\Omega$, $Z_L = 70\\ \\Omega$, $Z_C = 30\\ \\Omega$, điện áp hiệu dụng hai đầu mạch $U = 100$ V. Tính tổng trở và cường độ dòng điện hiệu dụng.",
+      "statement_en": "Series RLC: R = 30, ZL = 70, ZC = 30, U = 100 V.",
+      "answer": "Z = 50 Ω; I = 2 A",
+      "solution_steps": [
+        {
+          "explain": "Tổng trở của mạch RLC nối tiếp.",
+          "latex": "Z = \\sqrt{R^2 + (Z_L - Z_C)^2} = \\sqrt{30^2 + (70 - 30)^2} = \\sqrt{900 + 1600} = 50\\ \\Omega"
+        },
+        {
+          "explain": "Định luật Ohm cho dòng xoay chiều với giá trị hiệu dụng.",
+          "latex": "I = \\dfrac{U}{Z} = \\dfrac{100}{50} = 2\\ \\text{A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.tong-tro-rlc",
+        "physics.thpt.dien-xoay-chieu.dinh-luat-om-xoay-chieu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tong-tro",
+        "dinh-luat-om"
+      ],
+      "tags": [
+        "mach-rlc",
+        "tong-tro"
+      ],
+      "answer_numeric": 2.0,
+      "answer_unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0034",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Độ lệch pha mạch RLC",
+      "type": "trac-nghiem",
+      "statement_vi": "Mạch RLC nối tiếp có $R = 50\\ \\Omega$, $Z_L = 100\\ \\Omega$, $Z_C = 50\\ \\Omega$. Độ lệch pha giữa điện áp hai đầu mạch và cường độ dòng điện là",
+      "statement_en": "Phase difference in a series RLC with R = 50, ZL = 100, ZC = 50.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tính tang của độ lệch pha giữa u và i.",
+          "latex": "\\tan\\varphi = \\dfrac{Z_L - Z_C}{R} = \\dfrac{100 - 50}{50} = 1"
+        },
+        {
+          "explain": "Vì $Z_L > Z_C$ nên mạch có tính cảm kháng, u sớm pha hơn i.",
+          "latex": "\\varphi = \\dfrac{\\pi}{4}\\ (u\\ \\text{sớm pha hơn}\\ i)"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.do-lech-pha-rlc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "do-lech-pha"
+      ],
+      "tags": [
+        "mach-rlc",
+        "do-lech-pha"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$\\dfrac{\\pi}{4}$, u sớm pha hơn i"
+        },
+        {
+          "key": "B",
+          "text": "$\\dfrac{\\pi}{4}$, u trễ pha hơn i",
+          "why_wrong": "Nhầm dấu: Z_L > Z_C nên mạch có tính cảm, u sớm pha."
+        },
+        {
+          "key": "C",
+          "text": "$\\dfrac{\\pi}{3}$",
+          "why_wrong": "Tính sai tang, tan(π/3) = √3 ≠ 1."
+        },
+        {
+          "key": "D",
+          "text": "0 (cùng pha)",
+          "why_wrong": "Cho rằng mạch cộng hưởng; ở đây Z_L ≠ Z_C."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0035",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Công suất và cộng hưởng điện",
+      "type": "dien-so",
+      "statement_vi": "Mạch RLC nối tiếp có $R = 50\\ \\Omega$, điện áp hiệu dụng hai đầu mạch $U = 100$ V, đang xảy ra cộng hưởng điện. Tính công suất tiêu thụ của mạch.",
+      "statement_en": "Power at resonance, R = 50, U = 100 V.",
+      "answer": "200 W",
+      "solution_steps": [
+        {
+          "explain": "Khi cộng hưởng $Z_L = Z_C$ nên tổng trở bằng R, hệ số công suất bằng 1.",
+          "latex": "Z = R = 50\\ \\Omega;\\quad I = \\dfrac{U}{R} = \\dfrac{100}{50} = 2\\ \\text{A}"
+        },
+        {
+          "explain": "Công suất tiêu thụ chỉ trên điện trở R.",
+          "latex": "P = I^2 R = 2^2\\cdot 50 = 200\\ \\text{W}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.cong-huong-dien",
+        "physics.thpt.dien-xoay-chieu.cong-suat-dien-xoay-chieu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "cong-huong",
+        "cong-suat"
+      ],
+      "tags": [
+        "cong-huong",
+        "cong-suat"
+      ],
+      "answer_numeric": 200.0,
+      "answer_unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0036",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "R thay đổi để công suất cực đại",
+      "type": "trac-nghiem",
+      "statement_vi": "Mạch RLC nối tiếp có $Z_L = 100\\ \\Omega$, $Z_C = 60\\ \\Omega$, điện áp hiệu dụng $U = 120$ V, R thay đổi được. Công suất tiêu thụ cực đại của mạch là",
+      "statement_en": "Maximum power in an RLC circuit with variable R, ZL = 100, ZC = 60, U = 120 V.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Công suất mạch cực đại khi $R = |Z_L - Z_C|$.",
+          "latex": "R = |Z_L - Z_C| = |100 - 60| = 40\\ \\Omega"
+        },
+        {
+          "explain": "Công suất cực đại tính theo công thức đặc trưng.",
+          "latex": "P_{max} = \\dfrac{U^2}{2R} = \\dfrac{120^2}{2\\cdot 40} = 180\\ \\text{W}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.r-thay-doi-cong-suat-cuc-dai"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "cuc-tri",
+        "cong-suat"
+      ],
+      "tags": [
+        "cong-suat",
+        "cuc-tri"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "180 W"
+        },
+        {
+          "key": "B",
+          "text": "360 W",
+          "why_wrong": "Dùng P = U²/R, quên hệ số 1/2 trong công thức P_max = U²/(2R)."
+        },
+        {
+          "key": "C",
+          "text": "90 W",
+          "why_wrong": "Nhầm sang công thức U²/(4R) của công suất cực đại truyền cho tải khớp nguồn."
+        },
+        {
+          "key": "D",
+          "text": "144 W",
+          "why_wrong": "Chọn R = 20 Ω hoặc 80 Ω (không phải giá trị tối ưu R = 40 Ω), nên công suất chưa đạt cực đại."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0037",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Máy biến áp",
+      "type": "dien-so",
+      "statement_vi": "Máy biến áp lí tưởng có cuộn sơ cấp 2000 vòng, cuộn thứ cấp 100 vòng, điện áp hiệu dụng đặt vào sơ cấp là 220 V. Tính điện áp hiệu dụng ở hai đầu cuộn thứ cấp.",
+      "statement_en": "Ideal transformer: N1 = 2000, N2 = 100, U1 = 220 V.",
+      "answer": "11 V",
+      "solution_steps": [
+        {
+          "explain": "Với máy biến áp lí tưởng, tỉ số điện áp bằng tỉ số số vòng dây.",
+          "latex": "\\dfrac{U_1}{U_2} = \\dfrac{N_1}{N_2} \\Rightarrow U_2 = U_1\\dfrac{N_2}{N_1} = 220\\cdot\\dfrac{100}{2000} = 11\\ \\text{V}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.may-bien-ap"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "ap-dung-cong-thuc"
+      ],
+      "tags": [
+        "may-bien-ap"
+      ],
+      "answer_numeric": 11.0,
+      "answer_unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0038",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Truyền tải điện năng",
+      "type": "trac-nghiem",
+      "statement_vi": "Cần truyền công suất $P = 100$ kW từ nhà máy đi bằng đường dây có điện trở tổng $R = 5\\ \\Omega$, điện áp nơi truyền đi $U = 10$ kV, hệ số công suất bằng 1. Hiệu suất truyền tải điện năng là",
+      "statement_en": "Transmission efficiency: P = 100 kW, R = 5 ohm, U = 10 kV, cos = 1.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Công suất hao phí trên đường dây tỉ lệ nghịch với bình phương điện áp.",
+          "latex": "\\Delta P = \\dfrac{P^2 R}{U^2} = \\dfrac{(10^5)^2\\cdot 5}{(10^4)^2} = 500\\ \\text{W}"
+        },
+        {
+          "explain": "Hiệu suất truyền tải.",
+          "latex": "H = 1 - \\dfrac{\\Delta P}{P} = 1 - \\dfrac{500}{100000} = 0{,}995 = 99{,}5\\%"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dien-xoay-chieu.cong-suat-hao-phi-truyen-tai",
+        "physics.thpt.dien-xoay-chieu.hieu-suat-truyen-tai"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "truyen-tai",
+        "hieu-suat"
+      ],
+      "tags": [
+        "truyen-tai",
+        "hao-phi"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "99,5%"
+        },
+        {
+          "key": "B",
+          "text": "99%",
+          "why_wrong": "Tính ΔP = 1000 W do quên bình phương P hoặc U."
+        },
+        {
+          "key": "C",
+          "text": "95%",
+          "why_wrong": "Sai bậc mười khi tính ΔP = 5000 W."
+        },
+        {
+          "key": "D",
+          "text": "0,5%",
+          "why_wrong": "Nhầm hiệu suất với tỉ lệ hao phí ΔP/P."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0039",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chu kì và bước sóng mạch LC",
+      "type": "dien-so",
+      "statement_vi": "Mạch dao động LC có $L = 5$ mH và $C = 2$ nF. Lấy $c = 3\\cdot10^8$ m/s. Tính bước sóng điện từ mà mạch có thể phát ra.",
+      "statement_en": "Wavelength of an LC oscillator with L = 5 mH, C = 2 nF.",
+      "answer": "≈ 5960 m",
+      "solution_steps": [
+        {
+          "explain": "Chu kì dao động riêng theo công thức Thomson.",
+          "latex": "T = 2\\pi\\sqrt{LC} = 2\\pi\\sqrt{5\\cdot10^{-3}\\cdot 2\\cdot10^{-9}} \\approx 1{,}987\\cdot10^{-5}\\ \\text{s}"
+        },
+        {
+          "explain": "Bước sóng điện từ bằng tốc độ ánh sáng nhân chu kì.",
+          "latex": "\\lambda = cT = 3\\cdot10^{8}\\cdot 1{,}987\\cdot10^{-5} \\approx 5{,}96\\cdot10^{3}\\ \\text{m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-song-dien-tu.chu-ki-thomson",
+        "physics.thpt.dao-dong-song-dien-tu.buoc-song-dien-tu"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "thomson",
+        "buoc-song-dien-tu"
+      ],
+      "tags": [
+        "mach-lc",
+        "song-dien-tu"
+      ],
+      "answer_numeric": 5960.0,
+      "answer_unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0040",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cường độ dòng cực đại trong mạch LC",
+      "type": "trac-nghiem",
+      "statement_vi": "Mạch dao động LC lí tưởng có $L = 5$ mH, $C = 2\\ \\mu$F, hiệu điện thế cực đại giữa hai bản tụ là $U_0 = 6$ V. Cường độ dòng điện cực đại trong mạch là",
+      "statement_en": "Peak current in an LC circuit, L = 5 mH, C = 2 uF, U0 = 6 V.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tần số góc riêng của mạch.",
+          "latex": "\\omega = \\dfrac{1}{\\sqrt{LC}} = \\dfrac{1}{\\sqrt{5\\cdot10^{-3}\\cdot 2\\cdot10^{-6}}} = 10^{4}\\ \\text{rad/s}"
+        },
+        {
+          "explain": "Điện tích cực đại rồi dùng liên hệ giữa I0, Q0.",
+          "latex": "Q_0 = CU_0 = 2\\cdot10^{-6}\\cdot 6 = 1{,}2\\cdot10^{-5}\\ \\text{C};\\quad I_0 = \\omega Q_0 = 10^{4}\\cdot 1{,}2\\cdot10^{-5} = 0{,}12\\ \\text{A}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.dao-dong-song-dien-tu.lien-he-i0-q0-u0",
+        "physics.thpt.dao-dong-song-dien-tu.chu-ki-thomson"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "mach-lc",
+        "lien-he-i0-q0"
+      ],
+      "tags": [
+        "mach-lc",
+        "dong-dien"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "0,12 A"
+        },
+        {
+          "key": "B",
+          "text": "12 A",
+          "why_wrong": "Sai lũy thừa khi tính ω hoặc Q0."
+        },
+        {
+          "key": "C",
+          "text": "0,06 A",
+          "why_wrong": "Dùng U0/2 hoặc quên nhân đủ."
+        },
+        {
+          "key": "D",
+          "text": "1,2 A",
+          "why_wrong": "Sai một bậc mười trong tích ωQ0."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0041",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giao thoa Y-âng",
+      "type": "dien-so",
+      "statement_vi": "Trong thí nghiệm Y-âng, hai khe cách nhau $a = 0{,}5$ mm, màn cách hai khe $D = 1{,}5$ m, ánh sáng đơn sắc bước sóng $\\lambda = 0{,}5\\ \\mu$m. Tính khoảng vân và vị trí vân sáng bậc 4.",
+      "statement_en": "Young's experiment: a = 0.5 mm, D = 1.5 m, lambda = 0.5 um.",
+      "answer": "i = 1,5 mm; x₄ = 6 mm",
+      "solution_steps": [
+        {
+          "explain": "Khoảng vân bằng bước sóng nhân khoảng cách màn chia khoảng cách hai khe.",
+          "latex": "i = \\dfrac{\\lambda D}{a} = \\dfrac{0{,}5\\cdot10^{-6}\\cdot 1{,}5}{0{,}5\\cdot10^{-3}} = 1{,}5\\cdot10^{-3}\\ \\text{m} = 1{,}5\\ \\text{mm}"
+        },
+        {
+          "explain": "Vân sáng bậc 4 cách vân trung tâm 4 khoảng vân.",
+          "latex": "x_4 = 4i = 4\\cdot 1{,}5 = 6\\ \\text{mm}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.song-anh-sang.khoang-van",
+        "physics.thpt.song-anh-sang.vi-tri-van-sang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "khoang-van",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "giao-thoa",
+        "khoang-van"
+      ],
+      "answer_numeric": 1.5,
+      "answer_unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0042",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác định bước sóng từ khoảng vân",
+      "type": "trac-nghiem",
+      "statement_vi": "Trong thí nghiệm Y-âng, hai khe cách nhau $a = 1$ mm, màn cách hai khe $D = 2$ m, đo được khoảng vân $i = 1{,}2$ mm. Bước sóng ánh sáng dùng trong thí nghiệm là",
+      "statement_en": "Wavelength from fringe spacing i = 1.2 mm, a = 1 mm, D = 2 m.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Từ công thức khoảng vân suy ra bước sóng.",
+          "latex": "\\lambda = \\dfrac{i a}{D} = \\dfrac{1{,}2\\cdot10^{-3}\\cdot 1\\cdot10^{-3}}{2} = 0{,}6\\cdot10^{-6}\\ \\text{m} = 0{,}6\\ \\mu\\text{m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.song-anh-sang.khoang-van"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "khoang-van",
+        "doi-don-vi"
+      ],
+      "tags": [
+        "giao-thoa",
+        "buoc-song"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "0,6 μm"
+        },
+        {
+          "key": "B",
+          "text": "1,2 μm",
+          "why_wrong": "Quên chia cho khoảng cách màn D (tính $\\lambda = a\\,i$)."
+        },
+        {
+          "key": "C",
+          "text": "0,3 μm",
+          "why_wrong": "Nhân đôi D ở mẫu số (dùng 2D thay vì D)."
+        },
+        {
+          "key": "D",
+          "text": "0,4 μm",
+          "why_wrong": "Dùng D = 3 m thay vì D = 2 m."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0043",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hiện tượng quang điện",
+      "type": "dien-so",
+      "statement_vi": "Chiếu ánh sáng bước sóng $\\lambda = 0{,}4\\ \\mu$m vào kim loại có công thoát $A = 2$ eV. Cho $h = 6{,}625\\cdot10^{-34}$ J·s, $c = 3\\cdot10^8$ m/s, $1$ eV $= 1{,}6\\cdot10^{-19}$ J. Tính hiệu điện thế hãm để triệt tiêu dòng quang điện.",
+      "statement_en": "Stopping voltage: lambda = 0.4 um, work function 2 eV.",
+      "answer": "≈ 1,11 V",
+      "solution_steps": [
+        {
+          "explain": "Năng lượng photon.",
+          "latex": "\\varepsilon = \\dfrac{hc}{\\lambda} = \\dfrac{6{,}625\\cdot10^{-34}\\cdot 3\\cdot10^{8}}{0{,}4\\cdot10^{-6}} \\approx 4{,}97\\cdot10^{-19}\\ \\text{J}"
+        },
+        {
+          "explain": "Phương trình Einstein cho động năng ban đầu cực đại; công thoát A = 2 eV = 3,2·10⁻¹⁹ J.",
+          "latex": "W_{d} = \\varepsilon - A = 4{,}97\\cdot10^{-19} - 3{,}2\\cdot10^{-19} = 1{,}77\\cdot10^{-19}\\ \\text{J}"
+        },
+        {
+          "explain": "Hiệu điện thế hãm liên hệ với động năng ban đầu cực đại.",
+          "latex": "U_h = \\dfrac{W_{d}}{e} = \\dfrac{1{,}77\\cdot10^{-19}}{1{,}6\\cdot10^{-19}} \\approx 1{,}11\\ \\text{V}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien",
+        "physics.thpt.luong-tu-anh-sang.nang-luong-photon",
+        "physics.thpt.luong-tu-anh-sang.hieu-dien-the-ham"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "quang-dien",
+        "phuong-trinh-einstein"
+      ],
+      "tags": [
+        "quang-dien",
+        "photon"
+      ],
+      "answer_numeric": 1.11,
+      "answer_unit": "V",
+      "tolerance": 0.03
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0044",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giới hạn quang điện",
+      "type": "trac-nghiem",
+      "statement_vi": "Kim loại có công thoát $A = 3{,}5$ eV. Cho $h = 6{,}625\\cdot10^{-34}$ J·s, $c = 3\\cdot10^8$ m/s, $1$ eV $= 1{,}6\\cdot10^{-19}$ J. Giới hạn quang điện của kim loại này xấp xỉ",
+      "statement_en": "Threshold wavelength for a metal with work function 3.5 eV.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Giới hạn quang điện là bước sóng lớn nhất còn gây quang điện.",
+          "latex": "\\lambda_0 = \\dfrac{hc}{A} = \\dfrac{6{,}625\\cdot10^{-34}\\cdot 3\\cdot10^{8}}{3{,}5\\cdot 1{,}6\\cdot10^{-19}} \\approx 0{,}355\\ \\mu\\text{m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.luong-tu-anh-sang.gioi-han-quang-dien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "gioi-han-quang-dien"
+      ],
+      "tags": [
+        "quang-dien",
+        "gioi-han"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "0,355 μm"
+        },
+        {
+          "key": "B",
+          "text": "0,178 μm",
+          "why_wrong": "Nhân đôi công thoát (dùng A = 7 eV thay vì 3,5 eV)."
+        },
+        {
+          "key": "C",
+          "text": "0,25 μm",
+          "why_wrong": "Sai khi tính, dùng A = 5 eV."
+        },
+        {
+          "key": "D",
+          "text": "0,71 μm",
+          "why_wrong": "Nhân đôi bước sóng do quên hệ số."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0045",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Quang phổ hiđrô",
+      "type": "dien-so",
+      "statement_vi": "Nguyên tử hiđrô chuyển từ mức $n = 4$ về mức $n = 2$. Cho $E_n = -\\dfrac{13{,}6}{n^2}$ eV, $h = 6{,}625\\cdot10^{-34}$ J·s, $c = 3\\cdot10^8$ m/s, $1$ eV $= 1{,}6\\cdot10^{-19}$ J. Tính bước sóng photon phát ra.",
+      "statement_en": "Wavelength emitted in H transition n = 4 to n = 2.",
+      "answer": "≈ 0,487 μm",
+      "solution_steps": [
+        {
+          "explain": "Năng lượng photon bằng hiệu hai mức năng lượng.",
+          "latex": "\\Delta E = E_4 - E_2 = 13{,}6\\left(\\dfrac{1}{4} - \\dfrac{1}{16}\\right) = 2{,}55\\ \\text{eV} = 4{,}08\\cdot10^{-19}\\ \\text{J}"
+        },
+        {
+          "explain": "Bước sóng photon.",
+          "latex": "\\lambda = \\dfrac{hc}{\\Delta E} = \\dfrac{6{,}625\\cdot10^{-34}\\cdot 3\\cdot10^{8}}{4{,}08\\cdot10^{-19}} \\approx 4{,}87\\cdot10^{-7}\\ \\text{m}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.luong-tu-anh-sang.muc-nang-luong-hidro",
+        "physics.thpt.luong-tu-anh-sang.buoc-song-vach-phat-xa-hidro",
+        "physics.thpt.luong-tu-anh-sang.nang-luong-photon"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "muc-nang-luong",
+        "quang-pho"
+      ],
+      "tags": [
+        "bohr",
+        "quang-pho",
+        "hidro"
+      ],
+      "answer_numeric": 0.487,
+      "answer_unit": "um",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0046",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Năng lượng liên kết",
+      "type": "dien-so",
+      "statement_vi": "Hạt nhân $^{4}_{2}He$ có khối lượng $m = 4{,}00150$ u. Cho $m_p = 1{,}00728$ u, $m_n = 1{,}00866$ u, $1$ u $= 931{,}5$ MeV/c². Tính năng lượng liên kết của hạt nhân heli.",
+      "statement_en": "Binding energy of helium-4.",
+      "answer": "≈ 28,3 MeV",
+      "solution_steps": [
+        {
+          "explain": "Độ hụt khối bằng tổng khối lượng các nuclôn trừ khối lượng hạt nhân (Z = 2, N = 2).",
+          "latex": "\\Delta m = 2m_p + 2m_n - m = 2\\cdot 1{,}00728 + 2\\cdot 1{,}00866 - 4{,}00150 = 0{,}03038\\ \\text{u}"
+        },
+        {
+          "explain": "Năng lượng liên kết bằng độ hụt khối nhân 931,5 MeV/c².",
+          "latex": "W_{lk} = \\Delta m\\cdot 931{,}5 = 0{,}03038\\cdot 931{,}5 \\approx 28{,}3\\ \\text{MeV}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.hat-nhan.do-hut-khoi",
+        "physics.thpt.hat-nhan.nang-luong-lien-ket"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "do-hut-khoi",
+        "nang-luong-lien-ket"
+      ],
+      "tags": [
+        "hat-nhan",
+        "nang-luong-lien-ket"
+      ],
+      "answer_numeric": 28.3,
+      "answer_unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0047",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định luật phóng xạ",
+      "type": "dien-so",
+      "statement_vi": "Một chất phóng xạ có chu kì bán rã $T = 15$ ngày, ban đầu có khối lượng $m_0 = 64$ g. Tính khối lượng chất phóng xạ còn lại sau 45 ngày.",
+      "statement_en": "Remaining mass after 45 days, half-life 15 days, initial 64 g.",
+      "answer": "8 g",
+      "solution_steps": [
+        {
+          "explain": "Số chu kì bán rã đã trôi qua.",
+          "latex": "\\dfrac{t}{T} = \\dfrac{45}{15} = 3"
+        },
+        {
+          "explain": "Khối lượng còn lại giảm theo hàm mũ.",
+          "latex": "m = m_0\\, 2^{-t/T} = 64\\cdot 2^{-3} = 64\\cdot\\dfrac{1}{8} = 8\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-khoi-luong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "phong-xa",
+        "ham-mu"
+      ],
+      "tags": [
+        "phong-xa",
+        "phan-ra"
+      ],
+      "answer_numeric": 8.0,
+      "answer_unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0048",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác định tuổi cổ vật",
+      "type": "trac-nghiem",
+      "statement_vi": "Một mẫu gỗ cổ có tỉ lệ $^{14}C$ còn lại bằng 12,5% so với mẫu gỗ tươi cùng loại. Biết chu kì bán rã của $^{14}C$ là $T = 5730$ năm. Tuổi của mẫu gỗ là",
+      "statement_en": "Age of wood with 12.5% C-14 remaining, half-life 5730 years.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tỉ lệ còn lại 12,5% = 1/8 = (1/2)³ nên đã trải qua 3 chu kì bán rã.",
+          "latex": "\\dfrac{N}{N_0} = 2^{-t/T} = \\dfrac{1}{8} \\Rightarrow \\dfrac{t}{T} = 3"
+        },
+        {
+          "explain": "Suy ra tuổi mẫu gỗ.",
+          "latex": "t = 3T = 3\\cdot 5730 = 17190\\ \\text{năm}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.hat-nhan.xac-dinh-tuoi-co-vat",
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-so-hat"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "phong-xa",
+        "tuoi-co-vat"
+      ],
+      "tags": [
+        "phong-xa",
+        "tuoi-co-vat"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "17190 năm"
+        },
+        {
+          "key": "B",
+          "text": "11460 năm",
+          "why_wrong": "Chỉ tính 2 chu kì (25% còn lại), nhưng đề cho 12,5%."
+        },
+        {
+          "key": "C",
+          "text": "22920 năm",
+          "why_wrong": "Tính 4 chu kì (6,25% còn lại)."
+        },
+        {
+          "key": "D",
+          "text": "5730 năm",
+          "why_wrong": "Chỉ lấy một chu kì (50% còn lại)."
+        }
+      ]
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0049",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Năng lượng phản ứng hạt nhân",
+      "type": "dien-so",
+      "statement_vi": "Cho phản ứng $^{1}_{1}p + {}^{7}_{3}Li \\rightarrow 2\\,{}^{4}_{2}He$. Biết $m_p = 1{,}0073$ u, $m_{Li} = 7{,}0144$ u, $m_{He} = 4{,}0015$ u, $1$ u $= 931{,}5$ MeV/c². Tính năng lượng toả ra của phản ứng.",
+      "statement_en": "Energy released in p + Li7 -> 2 He4.",
+      "answer": "≈ 17,4 MeV",
+      "solution_steps": [
+        {
+          "explain": "Năng lượng phản ứng bằng độ giảm khối lượng nhân c²; kiểm tra bảo toàn số khối (1+7 = 8 = 2·4) và điện tích (1+3 = 4 = 2·2).",
+          "latex": "\\Delta m = (m_p + m_{Li}) - 2m_{He} = (1{,}0073 + 7{,}0144) - 2\\cdot 4{,}0015 = 0{,}0187\\ \\text{u}"
+        },
+        {
+          "explain": "Vì khối lượng trước lớn hơn sau nên phản ứng toả năng lượng.",
+          "latex": "Q = \\Delta m\\cdot 931{,}5 = 0{,}0187\\cdot 931{,}5 \\approx 17{,}4\\ \\text{MeV}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.hat-nhan.nang-luong-phan-ung-hat-nhan",
+        "physics.thpt.hat-nhan.bao-toan-phan-ung-hat-nhan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "nang-luong-phan-ung",
+        "bao-toan"
+      ],
+      "tags": [
+        "hat-nhan",
+        "phan-ung"
+      ],
+      "answer_numeric": 17.4,
+      "answer_unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.physics.vn-thpt-physics-diendtu.0050",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thuyết tương đối hẹp",
+      "type": "dien-so",
+      "statement_vi": "Một êlectron chuyển động với vận tốc $v = 0{,}8c$. Biết năng lượng nghỉ của êlectron là $E_0 = 0{,}511$ MeV. Tính động năng tương đối tính của êlectron.",
+      "statement_en": "Relativistic kinetic energy of an electron at v = 0.8c.",
+      "answer": "≈ 0,341 MeV",
+      "solution_steps": [
+        {
+          "explain": "Tính hệ số Lorentz.",
+          "latex": "\\gamma = \\dfrac{1}{\\sqrt{1 - v^2/c^2}} = \\dfrac{1}{\\sqrt{1 - 0{,}64}} = \\dfrac{1}{0{,}6} \\approx 1{,}667"
+        },
+        {
+          "explain": "Động năng tương đối tính bằng (γ − 1) nhân năng lượng nghỉ.",
+          "latex": "W_d = (\\gamma - 1)E_0 = (1{,}667 - 1)\\cdot 0{,}511 \\approx 0{,}341\\ \\text{MeV}"
+        }
+      ],
+      "formulas_used": [
+        "physics.thpt.tuong-doi-hep.he-so-lorentz",
+        "physics.thpt.tuong-doi-hep.dong-nang-tuong-doi-tinh",
+        "physics.thpt.tuong-doi-hep.nang-luong-nghi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tuong-doi",
+        "dong-nang"
+      ],
+      "tags": [
+        "tuong-doi",
+        "lorentz"
+      ],
+      "answer_numeric": 0.341,
+      "answer_unit": "MeV",
+      "tolerance": 0.03
+    }
+  ]
+}

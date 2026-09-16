@@ -1,0 +1,5747 @@
+{
+ "meta": {
+  "file": "01-thcs.json",
+  "subject": "physics",
+  "title": "Vật lí trung học cơ sở (lớp 6-9)",
+  "levels": [
+   "thcs"
+  ],
+  "count": 154
+ },
+ "formulas": [
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.the-tich-vat-ran-binh-chia-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Đo thể tích",
+   "name_vi": "Đo thể tích vật rắn không thấm nước bằng bình chia độ",
+   "name_en": "Volume by water displacement",
+   "latex": "V_{\\text{vat}} = V_{2} - V_{1}",
+   "vars": {
+    "V_{\\text{vat}}": "thể tích vật rắn không thấm nước",
+    "V_{1}": "thể tích nước ban đầu trong bình chia độ",
+    "V_{2}": "thể tích nước sau khi thả chìm hoàn toàn vật"
+   },
+   "units": {
+    "V_{\\text{vat}}": "m^3",
+    "V_{1}": "m^3",
+    "V_{2}": "m^3"
+   },
+   "conditions": "Vật rắn không thấm nước và chìm hoàn toàn trong chất lỏng",
+   "note": "Thường đo bằng mL (cm^3): 1 L = 1 dm^3 = 1000 cm^3; 1 m^3 = 1000 L",
+   "tags": [
+    "do-luong",
+    "the-tich",
+    "thuc-hanh"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.hai-luc-can-bang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Cân bằng lực",
+   "name_vi": "Hai lực cân bằng",
+   "name_en": "Balanced forces",
+   "latex": "\\vec{F_{1}} + \\vec{F_{2}} = \\vec{0} \\Leftrightarrow F_{1} = F_{2}",
+   "vars": {
+    "\\vec{F_{1}}": "lực thứ nhất tác dụng lên vật",
+    "\\vec{F_{2}}": "lực thứ hai tác dụng lên vật",
+    "F_{1}": "độ lớn lực thứ nhất",
+    "F_{2}": "độ lớn lực thứ hai"
+   },
+   "units": {
+    "\\vec{F_{1}}": "N",
+    "\\vec{F_{2}}": "N",
+    "F_{1}": "N",
+    "F_{2}": "N"
+   },
+   "conditions": "Hai lực cùng đặt vào một vật, cùng phương, ngược chiều (khi đó tổng vectơ bằng 0 tương đương với hai độ lớn bằng nhau)",
+   "note": "Vật chịu hai lực cân bằng thì đứng yên mãi hoặc chuyển động thẳng đều",
+   "tags": [
+    "luc",
+    "can-bang-luc"
+   ],
+   "related": [
+    "physics.thcs.luc.dieu-kien-can-bang-vat",
+    "physics.thcs.luc.quan-tinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.chieu-dai-lo-xo",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Lực đàn hồi",
+   "name_vi": "Chiều dài lò xo khi bị biến dạng",
+   "name_en": "Spring length under deformation",
+   "latex": "l = l_{0} + \\Delta l",
+   "vars": {
+    "l": "chiều dài lò xo khi biến dạng",
+    "l_{0}": "chiều dài tự nhiên của lò xo",
+    "\\Delta l": "độ dãn của lò xo (âm nếu bị nén)"
+   },
+   "units": {
+    "l": "m",
+    "l_{0}": "m",
+    "\\Delta l": "m"
+   },
+   "conditions": "Trong giới hạn đàn hồi",
+   "note": "Khi treo vật: Δl = l - l0; đồ thị Δl theo F là đường thẳng qua gốc tọa độ",
+   "tags": [
+    "luc",
+    "luc-dan-hoi",
+    "lo-xo"
+   ],
+   "related": [
+    "physics.thcs.luc.luc-dan-hoi-lo-xo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.luc-dan-hoi-lo-xo",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Lực đàn hồi",
+   "name_vi": "Lực đàn hồi của lò xo (định luật Hooke)",
+   "name_en": "Elastic force of a spring (Hooke's law)",
+   "latex": "F_{dh} = k \\cdot \\left| \\Delta l \\right|",
+   "vars": {
+    "F_{dh}": "độ lớn lực đàn hồi của lò xo",
+    "k": "độ cứng (hệ số đàn hồi) của lò xo",
+    "\\Delta l": "độ biến dạng (dãn hoặc nén) của lò xo"
+   },
+   "units": {
+    "F_{dh}": "N",
+    "k": "N/m",
+    "\\Delta l": "m"
+   },
+   "conditions": "Lò xo biến dạng trong giới hạn đàn hồi",
+   "note": "Độ dãn của lò xo tỉ lệ thuận với lực tác dụng; treo vật cân bằng thì k·Δl = P = 10m",
+   "tags": [
+    "luc",
+    "luc-dan-hoi",
+    "lo-xo"
+   ],
+   "related": [
+    "physics.thcs.luc.do-cung-lo-xo",
+    "physics.thcs.luc.chieu-dai-lo-xo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.mat-phang-nghieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Mặt phẳng nghiêng",
+   "name_vi": "Mặt phẳng nghiêng lí tưởng",
+   "name_en": "Ideal inclined plane",
+   "latex": "F \\cdot l = P \\cdot h \\Rightarrow F = \\dfrac{P h}{l}",
+   "vars": {
+    "F": "lực kéo vật dọc theo mặt phẳng nghiêng",
+    "l": "chiều dài mặt phẳng nghiêng",
+    "P": "trọng lượng của vật",
+    "h": "độ cao của mặt phẳng nghiêng"
+   },
+   "units": {
+    "F": "N",
+    "l": "m",
+    "P": "N",
+    "h": "m"
+   },
+   "conditions": "Bỏ qua ma sát; kéo vật đều dọc theo mặt phẳng nghiêng",
+   "note": "Mặt phẳng nghiêng càng dài (càng thoải) thì lực kéo càng nhỏ",
+   "tags": [
+    "may-co-don-gian",
+    "mat-phang-nghieng",
+    "dinh-luat-ve-cong"
+   ],
+   "related": [
+    "physics.thcs.may-co-don-gian.mat-phang-nghieng-hieu-suat",
+    "physics.thcs.may-co-don-gian.dinh-luat-ve-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.rong-roc-co-dinh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Ròng rọc",
+   "name_vi": "Ròng rọc cố định",
+   "name_en": "Fixed pulley",
+   "latex": "F = P, \\quad s = h",
+   "vars": {
+    "F": "lực kéo dây",
+    "P": "trọng lượng của vật được nâng",
+    "s": "quãng đường kéo dây",
+    "h": "độ cao nâng vật"
+   },
+   "units": {
+    "F": "N",
+    "P": "N",
+    "s": "m",
+    "h": "m"
+   },
+   "conditions": "Ròng rọc lí tưởng, bỏ qua ma sát và khối lượng ròng rọc, dây không dãn",
+   "note": "Ròng rọc cố định chỉ đổi hướng của lực kéo, không lợi về lực",
+   "tags": [
+    "may-co-don-gian",
+    "rong-roc"
+   ],
+   "related": [
+    "physics.thcs.may-co-don-gian.rong-roc-dong",
+    "physics.thcs.may-co-don-gian.dinh-luat-ve-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.rong-roc-dong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Ròng rọc",
+   "name_vi": "Ròng rọc động",
+   "name_en": "Movable pulley",
+   "latex": "F = \\dfrac{P}{2}, \\quad s = 2h",
+   "vars": {
+    "F": "lực kéo dây",
+    "P": "trọng lượng của vật được nâng",
+    "s": "quãng đường kéo dây",
+    "h": "độ cao nâng vật"
+   },
+   "units": {
+    "F": "N",
+    "P": "N",
+    "s": "m",
+    "h": "m"
+   },
+   "conditions": "Một ròng rọc động lí tưởng, bỏ qua ma sát và khối lượng ròng rọc",
+   "note": "Lợi 2 lần về lực nhưng thiệt 2 lần về đường đi, công không đổi: F·s = P·h",
+   "tags": [
+    "may-co-don-gian",
+    "rong-roc",
+    "dinh-luat-ve-cong"
+   ],
+   "related": [
+    "physics.thcs.may-co-don-gian.rong-roc-co-dinh",
+    "physics.thcs.may-co-don-gian.palang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.don-bay-can-bang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Đòn bẩy",
+   "name_vi": "Điều kiện cân bằng của đòn bẩy",
+   "name_en": "Lever equilibrium condition",
+   "latex": "F_{1} l_{1} = F_{2} l_{2} \\Leftrightarrow \\dfrac{F_{1}}{F_{2}} = \\dfrac{l_{2}}{l_{1}}",
+   "vars": {
+    "F_{1}": "lực tác dụng ở cánh tay đòn thứ nhất",
+    "l_{1}": "cánh tay đòn của lực F1 (khoảng cách từ điểm tựa tới giá của lực)",
+    "F_{2}": "lực tác dụng ở cánh tay đòn thứ hai",
+    "l_{2}": "cánh tay đòn của lực F2"
+   },
+   "units": {
+    "F_{1}": "N",
+    "l_{1}": "m",
+    "F_{2}": "N",
+    "l_{2}": "m"
+   },
+   "conditions": "Đòn bẩy cân bằng quanh điểm tựa O; bỏ qua khối lượng đòn bẩy",
+   "note": "Cánh tay đòn dài hơn thì lực nhỏ hơn; đây là dạng cân bằng moment M1 = M2",
+   "tags": [
+    "may-co-don-gian",
+    "don-bay",
+    "moment-luc"
+   ],
+   "related": [
+    "physics.thcs.luc.moment-luc",
+    "physics.thcs.may-co-don-gian.dinh-luat-ve-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.doi-nhiet-do-c-sang-f",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Nhiệt độ và thang đo",
+   "name_vi": "Đổi nhiệt độ từ thang Celsius sang thang Fahrenheit",
+   "name_en": "Celsius to Fahrenheit conversion",
+   "latex": "t_{(^{\\circ}F)} = 1{,}8 \\, t_{(^{\\circ}C)} + 32",
+   "vars": {
+    "t_{(^{\\circ}F)}": "nhiệt độ đo theo thang Fahrenheit",
+    "t_{(^{\\circ}C)}": "nhiệt độ đo theo thang Celsius"
+   },
+   "units": {
+    "t_{(^{\\circ}F)}": "degF",
+    "t_{(^{\\circ}C)}": "degC"
+   },
+   "conditions": "",
+   "note": "0 °C = 32 °F; 100 °C = 212 °F; mỗi 1 °C ứng với 1,8 °F",
+   "tags": [
+    "nhiet-hoc",
+    "nhiet-do",
+    "doi-don-vi"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.doi-nhiet-do-c-sang-k"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.no-vi-nhiet-chieu-dai",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Sự nở vì nhiệt",
+   "name_vi": "Sự nở dài vì nhiệt của vật rắn",
+   "name_en": "Linear thermal expansion",
+   "latex": "\\Delta l = \\alpha l_{0} \\Delta t",
+   "vars": {
+    "\\Delta l": "độ tăng chiều dài của vật rắn",
+    "\\alpha": "hệ số nở dài của chất làm vật",
+    "l_{0}": "chiều dài ban đầu của vật",
+    "\\Delta t": "độ tăng nhiệt độ"
+   },
+   "units": {
+    "\\Delta l": "m",
+    "\\alpha": "1/K",
+    "l_{0}": "m",
+    "\\Delta t": "K"
+   },
+   "conditions": "Độ tăng nhiệt độ không quá lớn; vật rắn tự do nở",
+   "note": "Ở THCS chủ yếu học định tính: chất rắn nở ra khi nóng lên, co lại khi lạnh đi; các chất khác nhau nở vì nhiệt khác nhau. Công thức là kiến thức mở rộng",
+   "tags": [
+    "nhiet-hoc",
+    "no-vi-nhiet",
+    "mo-rong"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.no-vi-nhiet-the-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.no-vi-nhiet-the-tich",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Sự nở vì nhiệt",
+   "name_vi": "Sự nở khối vì nhiệt",
+   "name_en": "Volumetric thermal expansion",
+   "latex": "\\Delta V = \\beta V_{0} \\Delta t",
+   "vars": {
+    "\\Delta V": "độ tăng thể tích của vật",
+    "\\beta": "hệ số nở khối của chất",
+    "V_{0}": "thể tích ban đầu của vật",
+    "\\Delta t": "độ tăng nhiệt độ"
+   },
+   "units": {
+    "\\Delta V": "m^3",
+    "\\beta": "1/K",
+    "V_{0}": "m^3",
+    "\\Delta t": "K"
+   },
+   "conditions": "Độ tăng nhiệt độ không quá lớn",
+   "note": "Với chất rắn β ≈ 3α. Thứ tự nở vì nhiệt: chất khí > chất lỏng > chất rắn. Nước có tính chất đặc biệt trong khoảng 0-4 °C",
+   "tags": [
+    "nhiet-hoc",
+    "no-vi-nhiet",
+    "mo-rong"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.no-vi-nhiet-chieu-dai"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Khối lượng riêng",
+   "name_vi": "Khối lượng riêng của một chất",
+   "name_en": "Density",
+   "latex": "D = \\dfrac{m}{V}",
+   "vars": {
+    "D": "khối lượng riêng của chất",
+    "m": "khối lượng của vật",
+    "V": "thể tích của vật"
+   },
+   "units": {
+    "D": "kg/m^3",
+    "m": "kg",
+    "V": "m^3"
+   },
+   "conditions": "Vật đồng chất, đặc (không rỗng); V > 0",
+   "note": "Nước: D = 1000 kg/m^3 = 1 g/cm^3. Đổi: 1 g/cm^3 = 1000 kg/m^3",
+   "tags": [
+    "do-luong",
+    "khoi-luong-rieng",
+    "chat-luu"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-theo-khoi-luong-rieng",
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-theo-khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Khối lượng riêng",
+   "name_vi": "Khối lượng tính theo khối lượng riêng",
+   "name_en": "Mass from density",
+   "latex": "m = D \\cdot V",
+   "vars": {
+    "m": "khối lượng của vật",
+    "D": "khối lượng riêng của chất",
+    "V": "thể tích của vật"
+   },
+   "units": {
+    "m": "kg",
+    "D": "kg/m^3",
+    "V": "m^3"
+   },
+   "conditions": "Vật đồng chất, đặc",
+   "note": "Suy trực tiếp từ D = m/V",
+   "tags": [
+    "do-luong",
+    "khoi-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.the-tich-theo-khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Khối lượng riêng",
+   "name_vi": "Thể tích tính theo khối lượng riêng",
+   "name_en": "Volume from density",
+   "latex": "V = \\dfrac{m}{D}",
+   "vars": {
+    "V": "thể tích của vật",
+    "m": "khối lượng của vật",
+    "D": "khối lượng riêng của chất"
+   },
+   "units": {
+    "V": "m^3",
+    "m": "kg",
+    "D": "kg/m^3"
+   },
+   "conditions": "Vật đồng chất, đặc; D > 0",
+   "note": "Dùng để kiểm tra vật rỗng: nếu V đo được lớn hơn m/D thì vật bị rỗng",
+   "tags": [
+    "do-luong",
+    "khoi-luong-rieng",
+    "the-tich"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-khoi-luong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Trọng lượng",
+   "name_vi": "Trọng lượng tính theo khối lượng",
+   "name_en": "Weight from mass",
+   "latex": "P = 10m",
+   "vars": {
+    "P": "trọng lượng của vật",
+    "m": "khối lượng của vật"
+   },
+   "units": {
+    "P": "N",
+    "m": "kg"
+   },
+   "conditions": "Gần đúng ở THCS với g ≈ 10 m/s^2, gần mặt đất",
+   "note": "Vật 1 kg có trọng lượng khoảng 10 N (chính xác 9,8 N)",
+   "tags": [
+    "luc",
+    "trong-luong",
+    "khoi-luong"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-gia-toc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.lien-he-trong-luong-rieng-va-khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Trọng lượng riêng",
+   "name_vi": "Liên hệ giữa trọng lượng riêng và khối lượng riêng",
+   "name_en": "Relation between specific weight and density",
+   "latex": "d = 10D \\quad (d = Dg)",
+   "vars": {
+    "d": "trọng lượng riêng của chất",
+    "D": "khối lượng riêng của chất",
+    "g": "gia tốc rơi tự do (cường độ trường hấp dẫn)"
+   },
+   "units": {
+    "d": "N/m^3",
+    "D": "kg/m^3",
+    "g": "m/s^2"
+   },
+   "conditions": "Lấy g ≈ 10 m/s^2 ở mức THCS; chính xác hơn g = 9,8 m/s^2",
+   "note": "Nếu dùng g = 9,8 m/s^2 thì d = 9,8D",
+   "tags": [
+    "do-luong",
+    "trong-luong-rieng",
+    "khoi-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-rieng",
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Trọng lượng riêng",
+   "name_vi": "Trọng lượng riêng của một chất",
+   "name_en": "Specific weight",
+   "latex": "d = \\dfrac{P}{V}",
+   "vars": {
+    "d": "trọng lượng riêng của chất",
+    "P": "trọng lượng của vật",
+    "V": "thể tích của vật"
+   },
+   "units": {
+    "d": "N/m^3",
+    "P": "N",
+    "V": "m^3"
+   },
+   "conditions": "Vật đồng chất, đặc; V > 0",
+   "note": "Nước: d = 10000 N/m^3. Thủy ngân: d = 136000 N/m^3",
+   "tags": [
+    "do-luong",
+    "trong-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.lien-he-trong-luong-rieng-va-khoi-luong-rieng",
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.doi-don-vi-khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Đổi đơn vị",
+   "name_vi": "Đổi đơn vị khối lượng riêng",
+   "name_en": "Density unit conversion",
+   "latex": "1\\ \\text{g/cm}^{3} = 1000\\ \\text{kg/m}^{3}",
+   "vars": {},
+   "units": {},
+   "conditions": "",
+   "note": "Vì 1 g = 10^{-3} kg và 1 cm^3 = 10^{-6} m^3 nên tỉ số bằng 1000",
+   "tags": [
+    "do-luong",
+    "doi-don-vi",
+    "khoi-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-gia-toc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    6,
+    8,
+    9
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Trọng lượng",
+   "name_vi": "Trọng lực (trọng lượng) theo gia tốc rơi tự do",
+   "name_en": "Weight formula P = mg",
+   "latex": "P = mg",
+   "vars": {
+    "P": "trọng lượng (độ lớn trọng lực) tác dụng lên vật",
+    "m": "khối lượng của vật",
+    "g": "gia tốc rơi tự do tại nơi đặt vật"
+   },
+   "units": {
+    "P": "N",
+    "m": "kg",
+    "g": "m/s^2"
+   },
+   "conditions": "Vật ở gần mặt đất, đứng yên hoặc chuyển động cùng hệ quy chiếu mặt đất",
+   "note": "Ở Việt Nam g ≈ 9,8 m/s^2; nhiều bài tập THCS lấy g = 10 m/s^2",
+   "tags": [
+    "luc",
+    "trong-luong",
+    "hang-so"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.trong-luong-theo-khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.anh-qua-guong-phang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Quang học",
+   "subtopic": "Gương phẳng",
+   "name_vi": "Tính chất ảnh của vật tạo bởi gương phẳng",
+   "name_en": "Image formed by a plane mirror",
+   "latex": "d' = d, \\quad h' = h",
+   "vars": {
+    "d": "khoảng cách từ vật đến gương",
+    "d'": "khoảng cách từ ảnh đến gương",
+    "h": "chiều cao (kích thước) của vật",
+    "h'": "chiều cao (kích thước) của ảnh"
+   },
+   "units": {
+    "d": "m",
+    "d'": "m",
+    "h": "m",
+    "h'": "m"
+   },
+   "conditions": "Gương phẳng, vật đặt trước gương",
+   "note": "Ảnh là ảnh ảo, không hứng được trên màn, lớn bằng vật và đối xứng với vật qua mặt gương. Khoảng cách vật - ảnh bằng 2d",
+   "tags": [
+    "quang-hoc",
+    "guong-phang",
+    "anh-ao"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.chieu-cao-guong-toi-thieu",
+    "physics.thcs.quang-hoc.dinh-luat-phan-xa-anh-sang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.chieu-cao-guong-toi-thieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Quang học",
+   "subtopic": "Gương phẳng",
+   "name_vi": "Chiều cao tối thiểu của gương phẳng để nhìn thấy toàn thân",
+   "name_en": "Minimum mirror height to see full body",
+   "latex": "h_{g} = \\dfrac{h}{2}",
+   "vars": {
+    "h_{g}": "chiều cao tối thiểu của gương phẳng đặt thẳng đứng",
+    "h": "chiều cao của người (từ chân đến đỉnh đầu)"
+   },
+   "units": {
+    "h_{g}": "m",
+    "h": "m"
+   },
+   "conditions": "Gương đặt thẳng đứng, mép trên của gương ngang mức trung điểm của đoạn nối mắt và đỉnh đầu",
+   "note": "Kết quả không phụ thuộc khoảng cách từ người đến gương",
+   "tags": [
+    "quang-hoc",
+    "guong-phang",
+    "nang-cao"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.anh-qua-guong-phang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.dinh-luat-phan-xa-anh-sang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Quang học",
+   "subtopic": "Phản xạ ánh sáng",
+   "name_vi": "Định luật phản xạ ánh sáng",
+   "name_en": "Law of reflection",
+   "latex": "i' = i",
+   "vars": {
+    "i": "góc tới - góc giữa tia tới và pháp tuyến tại điểm tới",
+    "i'": "góc phản xạ - góc giữa tia phản xạ và pháp tuyến tại điểm tới"
+   },
+   "units": {},
+   "conditions": "Tia phản xạ nằm trong mặt phẳng chứa tia tới và pháp tuyến tại điểm tới, ở phía bên kia pháp tuyến",
+   "note": "Góc đo bằng độ. Nếu tia tới vuông góc mặt gương (i = 0) thì tia phản xạ trùng phương tia tới",
+   "tags": [
+    "quang-hoc",
+    "phan-xa",
+    "guong-phang"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.goc-giua-tia-toi-va-tia-phan-xa",
+    "physics.thcs.quang-hoc.anh-qua-guong-phang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.goc-giua-tia-toi-va-tia-phan-xa",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Quang học",
+   "subtopic": "Phản xạ ánh sáng",
+   "name_vi": "Góc hợp bởi tia tới và tia phản xạ",
+   "name_en": "Angle between incident and reflected rays",
+   "latex": "\\widehat{(SI, IR)} = i + i' = 2i",
+   "vars": {
+    "\\widehat{(SI, IR)}": "góc hợp bởi tia tới SI và tia phản xạ IR",
+    "i": "góc tới",
+    "i'": "góc phản xạ"
+   },
+   "units": {},
+   "conditions": "Áp dụng định luật phản xạ ánh sáng i' = i",
+   "note": "Góc hợp bởi tia tới và mặt gương bằng 90° - i",
+   "tags": [
+    "quang-hoc",
+    "phan-xa",
+    "hinh-hoc"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.dinh-luat-phan-xa-anh-sang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.dinh-luat-truyen-thang-anh-sang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Quang học",
+   "subtopic": "Sự truyền ánh sáng",
+   "name_vi": "Định luật truyền thẳng của ánh sáng",
+   "name_en": "Law of rectilinear propagation of light",
+   "latex": "\\text{Môi trường trong suốt và đồng tính} \\Rightarrow \\text{ánh sáng truyền theo đường thẳng}",
+   "vars": {},
+   "units": {},
+   "conditions": "Môi trường trong suốt, đồng tính (chiết suất như nhau tại mọi điểm)",
+   "note": "Hệ quả: tạo bóng tối, bóng nửa tối, nhật thực và nguyệt thực",
+   "tags": [
+    "quang-hoc",
+    "truyen-thang",
+    "dinh-luat"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.dinh-luat-phan-xa-anh-sang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.chu-ki-dao-dong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Nguồn âm",
+   "name_vi": "Chu kì dao động",
+   "name_en": "Period of vibration",
+   "latex": "T = \\dfrac{1}{f} = \\dfrac{t}{N}",
+   "vars": {
+    "T": "chu kì dao động - thời gian thực hiện một dao động toàn phần",
+    "f": "tần số dao động",
+    "t": "thời gian thực hiện N dao động",
+    "N": "số dao động thực hiện được"
+   },
+   "units": {
+    "T": "s",
+    "f": "Hz",
+    "t": "s"
+   },
+   "conditions": "Dao động tuần hoàn; f > 0",
+   "note": "Chu kì và tần số là hai đại lượng nghịch đảo nhau: f = 1/T",
+   "tags": [
+    "am-hoc",
+    "chu-ki",
+    "tan-so"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.tan-so-dao-dong",
+    "physics.thcs.dien-tu.dong-dien-xoay-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.tan-so-dao-dong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Nguồn âm",
+   "name_vi": "Tần số dao động",
+   "name_en": "Frequency of vibration",
+   "latex": "f = \\dfrac{N}{t}",
+   "vars": {
+    "f": "tần số dao động của nguồn âm",
+    "N": "số dao động thực hiện được",
+    "t": "thời gian thực hiện N dao động"
+   },
+   "units": {
+    "f": "Hz",
+    "t": "s"
+   },
+   "conditions": "Dao động đều đặn; t > 0. N là số dao động (không có đơn vị)",
+   "note": "1 Hz = 1 dao động/giây. Tai người nghe được âm có tần số từ 20 Hz đến 20000 Hz; dưới 20 Hz là hạ âm, trên 20000 Hz là siêu âm",
+   "tags": [
+    "am-hoc",
+    "tan-so",
+    "dao-dong"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.chu-ki-dao-dong",
+    "physics.thcs.am-hoc.do-cao-cua-am"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.dieu-kien-nghe-tieng-vang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Phản xạ âm",
+   "name_vi": "Điều kiện để nghe được tiếng vang",
+   "name_en": "Condition to hear an echo",
+   "latex": "t \\ge \\dfrac{1}{15}\\,\\text{s} \\Rightarrow s \\ge \\dfrac{340 \\cdot \\frac{1}{15}}{2} \\approx 11{,}3\\ \\text{m}",
+   "vars": {
+    "t": "thời gian giữa âm phát ra và âm phản xạ đến tai",
+    "s": "khoảng cách tối thiểu từ người nói đến vật phản xạ âm"
+   },
+   "units": {
+    "t": "s",
+    "s": "m"
+   },
+   "conditions": "Âm truyền trong không khí với v ≈ 340 m/s; tai người phân biệt được hai âm cách nhau ít nhất 1/15 giây",
+   "note": "Vì vậy phải đứng cách vật phản xạ (vách núi, tường) ít nhất khoảng 11,3 m mới nghe được tiếng vang",
+   "tags": [
+    "am-hoc",
+    "tieng-vang",
+    "phan-xa-am"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.tieng-vang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.tieng-vang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Phản xạ âm",
+   "name_vi": "Khoảng cách tới vật phản xạ khi nghe được tiếng vang",
+   "name_en": "Distance from echo time",
+   "latex": "s = \\dfrac{v t}{2}",
+   "vars": {
+    "s": "khoảng cách từ nguồn âm đến vật phản xạ",
+    "v": "tốc độ truyền âm trong môi trường",
+    "t": "thời gian từ lúc phát âm đến lúc nghe được tiếng vang"
+   },
+   "units": {
+    "s": "m",
+    "v": "m/s",
+    "t": "s"
+   },
+   "conditions": "Nguồn âm và người nghe ở gần cùng một vị trí; âm truyền đi và phản xạ trở lại",
+   "note": "Chia 2 vì âm đi cả lượt đi và lượt về",
+   "tags": [
+    "am-hoc",
+    "tieng-vang",
+    "phan-xa-am"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.dieu-kien-nghe-tieng-vang",
+    "physics.thcs.am-hoc.do-sau-day-bien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.quang-duong-truyen-am",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Sự truyền âm",
+   "name_vi": "Quãng đường truyền âm",
+   "name_en": "Distance travelled by sound",
+   "latex": "s = v \\cdot t",
+   "vars": {
+    "s": "quãng đường âm truyền được",
+    "v": "tốc độ truyền âm trong môi trường",
+    "t": "thời gian truyền âm"
+   },
+   "units": {
+    "s": "m",
+    "v": "m/s",
+    "t": "s"
+   },
+   "conditions": "Môi trường truyền âm đồng tính (âm không truyền được trong chân không)",
+   "note": "Tốc độ truyền âm: không khí ≈ 340 m/s, nước ≈ 1500 m/s, thép ≈ 6100 m/s. Chất rắn > chất lỏng > chất khí",
+   "tags": [
+    "am-hoc",
+    "truyen-am",
+    "toc-do"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.tieng-vang",
+    "physics.thcs.am-hoc.do-sau-day-bien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.do-cao-cua-am",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Đặc trưng của âm",
+   "name_vi": "Độ cao và độ to của âm",
+   "name_en": "Pitch and loudness of sound",
+   "latex": "f \\uparrow \\Rightarrow \\text{âm càng cao (càng bổng)}; \\quad A \\uparrow \\Rightarrow \\text{âm càng to}",
+   "vars": {
+    "f": "tần số dao động của nguồn âm",
+    "A": "biên độ dao động của nguồn âm"
+   },
+   "units": {
+    "f": "Hz",
+    "A": "m"
+   },
+   "conditions": "Xét cùng một loại nguồn âm và cùng khoảng cách tới tai người nghe",
+   "note": "Độ to của âm đo bằng đơn vị đêxiben (dB); ngưỡng đau khoảng 130 dB, tiếng ồn trên 70 dB kéo dài gây hại thính giác",
+   "tags": [
+    "am-hoc",
+    "do-cao",
+    "do-to",
+    "dinh-tinh"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.tan-so-dao-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.am-hoc.do-sau-day-bien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7
+   ],
+   "topic": "Âm học",
+   "subtopic": "Ứng dụng phản xạ âm",
+   "name_vi": "Đo độ sâu đáy biển bằng siêu âm (sonar)",
+   "name_en": "Sonar depth measurement",
+   "latex": "h = \\dfrac{v t}{2}",
+   "vars": {
+    "h": "độ sâu của đáy biển tại vị trí đo",
+    "v": "tốc độ truyền âm trong nước biển",
+    "t": "thời gian từ lúc phát siêu âm đến lúc thu được âm phản xạ"
+   },
+   "units": {
+    "h": "m",
+    "v": "m/s",
+    "t": "s"
+   },
+   "conditions": "Máy phát và máy thu đặt cùng vị trí trên tàu; đáy biển phản xạ tốt sóng âm",
+   "note": "Tốc độ truyền âm trong nước biển khoảng 1500 m/s. Nguyên tắc này cũng dùng để dò đàn cá, phát hiện vật thể dưới nước",
+   "tags": [
+    "am-hoc",
+    "sieu-am",
+    "ung-dung"
+   ],
+   "related": [
+    "physics.thcs.am-hoc.tieng-vang",
+    "physics.thcs.am-hoc.quang-duong-truyen-am"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.toc-do-trung-binh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7,
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Chuyển động không đều",
+   "name_vi": "Tốc độ trung bình của chuyển động không đều",
+   "name_en": "Average speed",
+   "latex": "v_{tb} = \\dfrac{s}{t} = \\dfrac{s_{1} + s_{2} + \\cdots + s_{n}}{t_{1} + t_{2} + \\cdots + t_{n}}",
+   "vars": {
+    "v_{tb}": "tốc độ trung bình trên cả hành trình",
+    "s": "tổng quãng đường đi được",
+    "t": "tổng thời gian đi hết quãng đường",
+    "s_{1}": "quãng đường giai đoạn 1",
+    "s_{2}": "quãng đường giai đoạn 2",
+    "s_{n}": "quãng đường giai đoạn thứ n",
+    "t_{1}": "thời gian giai đoạn 1",
+    "t_{2}": "thời gian giai đoạn 2",
+    "t_{n}": "thời gian giai đoạn thứ n"
+   },
+   "units": {
+    "v_{tb}": "m/s",
+    "s": "m",
+    "t": "s",
+    "s_{1}": "m",
+    "s_{2}": "m",
+    "s_{n}": "m",
+    "t_{1}": "s",
+    "t_{2}": "s",
+    "t_{n}": "s"
+   },
+   "conditions": "Tính trên toàn bộ hành trình; tổng thời gian t > 0",
+   "note": "Sai lầm thường gặp: lấy trung bình cộng các tốc độ. Chỉ đúng khi các giai đoạn có thời gian bằng nhau",
+   "tags": [
+    "chuyen-dong",
+    "toc-do-trung-binh"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.toc-do",
+    "physics.thcs.chuyen-dong.toc-do-trung-binh-hai-giai-doan",
+    "math.tieu-hoc.chuyen-dong-deu.van-toc-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.quang-duong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7,
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Tốc độ",
+   "name_vi": "Quãng đường của chuyển động thẳng đều",
+   "name_en": "Distance travelled",
+   "latex": "s = v \\cdot t",
+   "vars": {
+    "s": "quãng đường đi được",
+    "v": "tốc độ của vật",
+    "t": "thời gian chuyển động"
+   },
+   "units": {
+    "s": "m",
+    "v": "m/s",
+    "t": "s"
+   },
+   "conditions": "Chuyển động thẳng đều (v không đổi)",
+   "note": "Phải đồng bộ đơn vị: v (m/s) với t (s), hoặc v (km/h) với t (h)",
+   "tags": [
+    "chuyen-dong",
+    "quang-duong"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.thoi-gian",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7,
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Tốc độ",
+   "name_vi": "Thời gian chuyển động",
+   "name_en": "Time of travel",
+   "latex": "t = \\dfrac{s}{v}",
+   "vars": {
+    "t": "thời gian chuyển động",
+    "s": "quãng đường đi được",
+    "v": "tốc độ của vật"
+   },
+   "units": {
+    "t": "s",
+    "s": "m",
+    "v": "m/s"
+   },
+   "conditions": "Chuyển động thẳng đều; v > 0",
+   "note": "1 h = 60 min = 3600 s",
+   "tags": [
+    "chuyen-dong",
+    "thoi-gian"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.toc-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7,
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Tốc độ",
+   "name_vi": "Tốc độ của chuyển động",
+   "name_en": "Speed",
+   "latex": "v = \\dfrac{s}{t}",
+   "vars": {
+    "v": "tốc độ (vận tốc) của vật",
+    "s": "quãng đường vật đi được",
+    "t": "thời gian đi hết quãng đường đó"
+   },
+   "units": {
+    "v": "m/s",
+    "s": "m",
+    "t": "s"
+   },
+   "conditions": "Chuyển động thẳng đều; với chuyển động không đều đây là tốc độ trung bình",
+   "note": "Đơn vị thường dùng: m/s và km/h",
+   "tags": [
+    "chuyen-dong",
+    "toc-do"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.quang-duong",
+    "physics.thcs.chuyen-dong.toc-do-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.doi-don-vi-toc-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    7,
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Đổi đơn vị",
+   "name_vi": "Đổi đơn vị tốc độ km/h và m/s",
+   "name_en": "Speed unit conversion",
+   "latex": "1\\ \\text{km/h} = \\dfrac{1000}{3600}\\ \\text{m/s} = \\dfrac{1}{3{,}6}\\ \\text{m/s}",
+   "vars": {},
+   "units": {},
+   "conditions": "",
+   "note": "Nhớ: chia 3,6 để đổi km/h sang m/s; nhân 3,6 để đổi m/s sang km/h. Ví dụ 36 km/h = 10 m/s",
+   "tags": [
+    "chuyen-dong",
+    "doi-don-vi",
+    "toc-do"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.hai-vat-duoi-kip-cung-chieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Bài toán chuyển động",
+   "name_vi": "Hai vật chuyển động cùng chiều đuổi kịp nhau",
+   "name_en": "Catching-up problem",
+   "latex": "t = \\dfrac{s}{v_{1} - v_{2}} \\quad (v_{1} > v_{2})",
+   "vars": {
+    "t": "thời gian để vật nhanh đuổi kịp vật chậm",
+    "s": "khoảng cách ban đầu giữa hai vật",
+    "v_{1}": "tốc độ vật đi nhanh (đuổi theo)",
+    "v_{2}": "tốc độ vật đi chậm (bị đuổi)"
+   },
+   "units": {
+    "t": "s",
+    "s": "m",
+    "v_{1}": "m/s",
+    "v_{2}": "m/s"
+   },
+   "conditions": "Chuyển động thẳng đều cùng chiều, cùng thời điểm xuất phát; v1 > v2",
+   "note": "v1 - v2 là tốc độ tương đối của vật 1 so với vật 2",
+   "tags": [
+    "chuyen-dong",
+    "bai-toan-gap-nhau",
+    "toc-do-tuong-doi"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.hai-vat-gap-nhau-nguoc-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.hai-vat-gap-nhau-nguoc-chieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Bài toán chuyển động",
+   "name_vi": "Hai vật chuyển động ngược chiều gặp nhau",
+   "name_en": "Two objects moving toward each other",
+   "latex": "t = \\dfrac{s}{v_{1} + v_{2}}",
+   "vars": {
+    "t": "thời gian từ lúc xuất phát đến lúc gặp nhau",
+    "s": "khoảng cách ban đầu giữa hai vật",
+    "v_{1}": "tốc độ vật thứ nhất",
+    "v_{2}": "tốc độ vật thứ hai"
+   },
+   "units": {
+    "t": "s",
+    "s": "m",
+    "v_{1}": "m/s",
+    "v_{2}": "m/s"
+   },
+   "conditions": "Hai vật chuyển động thẳng đều, ngược chiều, khởi hành cùng lúc trên cùng đường thẳng",
+   "note": "Quãng đường mỗi vật đi được: s1 = v1·t, s2 = v2·t và s1 + s2 = s",
+   "tags": [
+    "chuyen-dong",
+    "bai-toan-gap-nhau"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.hai-vat-duoi-kip-cung-chieu",
+    "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-nguoc-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.chuyen-dong.toc-do-trung-binh-hai-giai-doan",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Chuyển động",
+   "subtopic": "Chuyển động không đều",
+   "name_vi": "Tốc độ trung bình khi đi hai nửa quãng đường bằng nhau",
+   "name_en": "Average speed over two equal distances",
+   "latex": "v_{tb} = \\dfrac{2v_{1}v_{2}}{v_{1} + v_{2}}",
+   "vars": {
+    "v_{tb}": "tốc độ trung bình cả quãng đường",
+    "v_{1}": "tốc độ trên nửa quãng đường đầu",
+    "v_{2}": "tốc độ trên nửa quãng đường sau"
+   },
+   "units": {
+    "v_{tb}": "m/s",
+    "v_{1}": "m/s",
+    "v_{2}": "m/s"
+   },
+   "conditions": "Hai quãng đường bằng nhau (mỗi đoạn s/2); v1, v2 > 0",
+   "note": "Nếu hai giai đoạn có THỜI GIAN bằng nhau thì v_tb = (v1 + v2)/2",
+   "tags": [
+    "chuyen-dong",
+    "toc-do-trung-binh",
+    "nang-cao"
+   ],
+   "related": [
+    "physics.thcs.chuyen-dong.toc-do-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.dieu-kien-can-bang-vat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Cân bằng lực",
+   "name_vi": "Điều kiện cân bằng của vật",
+   "name_en": "Equilibrium condition",
+   "latex": "\\vec{F_{hl}} = \\sum \\vec{F_{i}} = \\vec{0}",
+   "vars": {
+    "\\vec{F_{hl}}": "hợp lực của tất cả các lực tác dụng lên vật",
+    "\\vec{F_{i}}": "lực thứ i tác dụng lên vật"
+   },
+   "units": {
+    "\\vec{F_{hl}}": "N",
+    "\\vec{F_{i}}": "N"
+   },
+   "conditions": "Vật được coi là chất điểm (bỏ qua chuyển động quay)",
+   "note": "Hợp lực bằng 0 thì vật đứng yên hoặc chuyển động thẳng đều (quán tính)",
+   "tags": [
+    "luc",
+    "can-bang-luc",
+    "hop-luc"
+   ],
+   "related": [
+    "physics.thcs.luc.hai-luc-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.luc-ma-sat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Lực ma sát",
+   "name_vi": "Lực ma sát trượt",
+   "name_en": "Kinetic friction force",
+   "latex": "F_{ms} = \\mu N",
+   "vars": {
+    "F_{ms}": "độ lớn lực ma sát trượt",
+    "\\mu": "hệ số ma sát trượt giữa hai bề mặt",
+    "N": "độ lớn áp lực (phản lực pháp tuyến) ép lên mặt tiếp xúc"
+   },
+   "units": {
+    "F_{ms}": "N",
+    "N": "N"
+   },
+   "conditions": "Vật trượt trên bề mặt; trên mặt phẳng ngang N = P = mg",
+   "note": "Ở THCS chủ yếu học định tính (ma sát trượt, lăn, nghỉ); công thức có hệ số ma sát là kiến thức mở rộng. μ không có đơn vị",
+   "tags": [
+    "luc",
+    "luc-ma-sat",
+    "mo-rong"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-luc-ma-sat",
+    "physics.thcs.luc.luc-ma-sat-nghi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.luc-ma-sat-nghi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Lực ma sát",
+   "name_vi": "Lực ma sát nghỉ khi vật đứng yên",
+   "name_en": "Static friction force",
+   "latex": "F_{msn} = F_{k} \\quad (\\text{khi vật vẫn đứng yên})",
+   "vars": {
+    "F_{msn}": "độ lớn lực ma sát nghỉ",
+    "F_{k}": "độ lớn lực kéo (thành phần song song mặt tiếp xúc) tác dụng lên vật"
+   },
+   "units": {
+    "F_{msn}": "N",
+    "F_{k}": "N"
+   },
+   "conditions": "Vật chịu lực kéo nhưng vẫn đứng yên; lực ma sát nghỉ có giá trị lớn nhất hữu hạn",
+   "note": "Lực ma sát nghỉ luôn cân bằng với lực kéo cho tới khi vật bắt đầu trượt",
+   "tags": [
+    "luc",
+    "luc-ma-sat",
+    "can-bang-luc"
+   ],
+   "related": [
+    "physics.thcs.luc.luc-ma-sat",
+    "physics.thcs.luc.hai-luc-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.do-cung-lo-xo",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Lực đàn hồi",
+   "name_vi": "Độ cứng của lò xo",
+   "name_en": "Spring constant",
+   "latex": "k = \\dfrac{F_{dh}}{\\left| \\Delta l \\right|}",
+   "vars": {
+    "k": "độ cứng của lò xo",
+    "F_{dh}": "độ lớn lực đàn hồi",
+    "\\Delta l": "độ biến dạng của lò xo"
+   },
+   "units": {
+    "k": "N/m",
+    "F_{dh}": "N",
+    "\\Delta l": "m"
+   },
+   "conditions": "Trong giới hạn đàn hồi; Δl ≠ 0",
+   "note": "k phụ thuộc bản chất, chiều dài và tiết diện của lò xo",
+   "tags": [
+    "luc",
+    "luc-dan-hoi",
+    "lo-xo"
+   ],
+   "related": [
+    "physics.thcs.luc.luc-dan-hoi-lo-xo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.moment-luc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Moment lực",
+   "name_vi": "Moment lực đối với trục quay",
+   "name_en": "Moment of a force",
+   "latex": "M = F \\cdot d",
+   "vars": {
+    "M": "moment (tác dụng làm quay) của lực đối với trục quay",
+    "F": "độ lớn của lực",
+    "d": "cánh tay đòn - khoảng cách từ trục quay đến giá của lực"
+   },
+   "units": {
+    "M": "N.m",
+    "F": "N",
+    "d": "m"
+   },
+   "conditions": "Giá của lực không đi qua trục quay; d đo vuông góc từ trục quay tới giá của lực",
+   "note": "Vật cân bằng khi tổng moment làm quay theo chiều kim đồng hồ bằng tổng moment ngược chiều kim đồng hồ",
+   "tags": [
+    "luc",
+    "moment-luc",
+    "vat-ran"
+   ],
+   "related": [
+    "physics.thcs.may-co-don-gian.don-bay-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.quan-tinh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Quán tính",
+   "name_vi": "Quán tính của vật",
+   "name_en": "Inertia",
+   "latex": "\\vec{F_{hl}} = \\vec{0} \\Rightarrow \\vec{v} = \\text{const}",
+   "vars": {
+    "\\vec{F_{hl}}": "hợp lực tác dụng lên vật",
+    "\\vec{v}": "vận tốc của vật (không đổi cả hướng và độ lớn)"
+   },
+   "units": {
+    "\\vec{F_{hl}}": "N",
+    "\\vec{v}": "m/s"
+   },
+   "conditions": "Vật không chịu lực hoặc chịu các lực cân bằng",
+   "note": "Khối lượng càng lớn thì quán tính càng lớn, vật càng khó thay đổi vận tốc",
+   "tags": [
+    "luc",
+    "quan-tinh",
+    "dinh-tinh"
+   ],
+   "related": [
+    "physics.thcs.luc.hai-luc-can-bang",
+    "physics.thcs.luc.dieu-kien-can-bang-vat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.hop-luc-cung-chieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Tổng hợp lực",
+   "name_vi": "Hợp lực của hai lực cùng phương, cùng chiều",
+   "name_en": "Resultant of two parallel forces in the same direction",
+   "latex": "F = F_{1} + F_{2}",
+   "vars": {
+    "F": "độ lớn hợp lực",
+    "F_{1}": "độ lớn lực thành phần thứ nhất",
+    "F_{2}": "độ lớn lực thành phần thứ hai"
+   },
+   "units": {
+    "F": "N",
+    "F_{1}": "N",
+    "F_{2}": "N"
+   },
+   "conditions": "Hai lực cùng phương, cùng chiều, cùng đặt lên một vật",
+   "note": "Hợp lực có chiều cùng chiều với hai lực thành phần",
+   "tags": [
+    "luc",
+    "hop-luc"
+   ],
+   "related": [
+    "physics.thcs.luc.hop-luc-nguoc-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc.hop-luc-nguoc-chieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực",
+   "subtopic": "Tổng hợp lực",
+   "name_vi": "Hợp lực của hai lực cùng phương, ngược chiều",
+   "name_en": "Resultant of two opposite forces",
+   "latex": "F = \\left| F_{1} - F_{2} \\right|",
+   "vars": {
+    "F": "độ lớn hợp lực",
+    "F_{1}": "độ lớn lực thành phần thứ nhất",
+    "F_{2}": "độ lớn lực thành phần thứ hai"
+   },
+   "units": {
+    "F": "N",
+    "F_{1}": "N",
+    "F_{2}": "N"
+   },
+   "conditions": "Hai lực cùng phương, ngược chiều, cùng đặt lên một vật",
+   "note": "Hợp lực có chiều của lực lớn hơn; nếu F1 = F2 thì hai lực cân bằng",
+   "tags": [
+    "luc",
+    "hop-luc"
+   ],
+   "related": [
+    "physics.thcs.luc.hop-luc-cung-chieu",
+    "physics.thcs.luc.hai-luc-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.dieu-kien-lo-lung",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Sự nổi",
+   "name_vi": "Điều kiện để vật lơ lửng trong chất lỏng",
+   "name_en": "Neutral buoyancy condition",
+   "latex": "F_{A} = P \\Leftrightarrow d_{v} = d_{l}",
+   "vars": {
+    "F_{A}": "lực đẩy Ác-si-mét",
+    "P": "trọng lượng của vật",
+    "d_{v}": "trọng lượng riêng của vật",
+    "d_{l}": "trọng lượng riêng của chất lỏng"
+   },
+   "units": {
+    "F_{A}": "N",
+    "P": "N",
+    "d_{v}": "N/m^3",
+    "d_{l}": "N/m^3"
+   },
+   "conditions": "Vật chìm hoàn toàn và đứng yên ở mọi vị trí trong lòng chất lỏng",
+   "note": "Ứng dụng: cá điều chỉnh bong bóng hơi, tàu ngầm điều chỉnh lượng nước dằn",
+   "tags": [
+    "ac-si-met",
+    "su-noi",
+    "lo-lung"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-noi",
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-chim"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-chim",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Sự nổi",
+   "name_vi": "Điều kiện để vật chìm xuống",
+   "name_en": "Sinking condition",
+   "latex": "F_{A} < P \\Leftrightarrow d_{v} > d_{l}",
+   "vars": {
+    "F_{A}": "lực đẩy Ác-si-mét khi vật chìm hoàn toàn",
+    "P": "trọng lượng của vật",
+    "d_{v}": "trọng lượng riêng của vật",
+    "d_{l}": "trọng lượng riêng của chất lỏng"
+   },
+   "units": {
+    "F_{A}": "N",
+    "P": "N",
+    "d_{v}": "N/m^3",
+    "d_{l}": "N/m^3"
+   },
+   "conditions": "Vật đặc, đồng chất, nhúng hoàn toàn trong chất lỏng",
+   "note": "Khi nằm ở đáy bình, vật còn chịu thêm phản lực của đáy: N = P - F_A",
+   "tags": [
+    "ac-si-met",
+    "su-noi"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-noi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-noi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Sự nổi",
+   "name_vi": "Điều kiện để vật nổi lên",
+   "name_en": "Floating condition",
+   "latex": "F_{A} > P \\Leftrightarrow d_{v} < d_{l}",
+   "vars": {
+    "F_{A}": "lực đẩy Ác-si-mét khi vật chìm hoàn toàn",
+    "P": "trọng lượng của vật",
+    "d_{v}": "trọng lượng riêng của vật",
+    "d_{l}": "trọng lượng riêng của chất lỏng"
+   },
+   "units": {
+    "F_{A}": "N",
+    "P": "N",
+    "d_{v}": "N/m^3",
+    "d_{l}": "N/m^3"
+   },
+   "conditions": "Vật đặc, đồng chất, nhúng hoàn toàn trong chất lỏng",
+   "note": "Vật nổi lên đến khi cân bằng, khi đó F_A = P với V là phần chìm",
+   "tags": [
+    "ac-si-met",
+    "su-noi"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-vat-chim",
+    "physics.thcs.luc-day-ac-si-met.dieu-kien-lo-lung",
+    "physics.thcs.luc-day-ac-si-met.vat-noi-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.the-tich-phan-chim",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Sự nổi",
+   "name_vi": "Tỉ lệ thể tích phần chìm của vật nổi",
+   "name_en": "Submerged volume fraction",
+   "latex": "\\dfrac{V_{c}}{V} = \\dfrac{d_{v}}{d_{l}} = \\dfrac{D_{v}}{D_{l}}",
+   "vars": {
+    "V_{c}": "thể tích phần chìm của vật",
+    "V": "thể tích toàn phần của vật",
+    "d_{v}": "trọng lượng riêng của vật",
+    "d_{l}": "trọng lượng riêng của chất lỏng",
+    "D_{v}": "khối lượng riêng của vật",
+    "D_{l}": "khối lượng riêng của chất lỏng"
+   },
+   "units": {
+    "V_{c}": "m^3",
+    "V": "m^3",
+    "d_{v}": "N/m^3",
+    "d_{l}": "N/m^3",
+    "D_{v}": "kg/m^3",
+    "D_{l}": "kg/m^3"
+   },
+   "conditions": "Vật nổi cân bằng, d_v < d_l",
+   "note": "Nước đá (D ≈ 900 kg/m^3) nổi trên nước (D = 1000 kg/m^3) với khoảng 9/10 thể tích chìm; trên nước biển (D ≈ 1030 kg/m^3) phần chìm chỉ khoảng 0,87 thể tích",
+   "tags": [
+    "ac-si-met",
+    "su-noi",
+    "the-tich"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.vat-noi-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.vat-noi-can-bang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Sự nổi",
+   "name_vi": "Vật nổi cân bằng trên mặt chất lỏng",
+   "name_en": "Equilibrium of a floating body",
+   "latex": "F_{A} = P \\Leftrightarrow d_{l} V_{c} = d_{v} V",
+   "vars": {
+    "F_{A}": "lực đẩy Ác-si-mét",
+    "P": "trọng lượng của vật",
+    "d_{l}": "trọng lượng riêng của chất lỏng",
+    "V_{c}": "thể tích phần vật chìm trong chất lỏng",
+    "d_{v}": "trọng lượng riêng của vật",
+    "V": "thể tích toàn phần của vật"
+   },
+   "units": {
+    "F_{A}": "N",
+    "P": "N",
+    "d_{l}": "N/m^3",
+    "V_{c}": "m^3",
+    "d_{v}": "N/m^3",
+    "V": "m^3"
+   },
+   "conditions": "Vật nổi đứng yên trên mặt thoáng chất lỏng",
+   "note": "Khi vật nổi, F_A luôn bằng trọng lượng vật, không phụ thuộc độ sâu",
+   "tags": [
+    "ac-si-met",
+    "su-noi",
+    "can-bang-luc"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.the-tich-phan-chim"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.luc-day-ac-si-met",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Độ lớn lực đẩy",
+   "name_vi": "Lực đẩy Ác-si-mét",
+   "name_en": "Archimedes' buoyant force",
+   "latex": "F_{A} = d \\cdot V",
+   "vars": {
+    "F_{A}": "độ lớn lực đẩy Ác-si-mét",
+    "d": "trọng lượng riêng của chất lỏng (hoặc chất khí)",
+    "V": "thể tích phần chất lỏng bị vật chiếm chỗ"
+   },
+   "units": {
+    "F_{A}": "N",
+    "d": "N/m^3",
+    "V": "m^3"
+   },
+   "conditions": "Vật nhúng trong chất lỏng (hoặc chất khí) đứng yên; V là thể tích phần vật CHÌM",
+   "note": "Lực đẩy hướng thẳng đứng từ dưới lên, bằng trọng lượng phần chất lỏng bị chiếm chỗ",
+   "tags": [
+    "ac-si-met",
+    "chat-long",
+    "luc-day"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.luc-day-theo-khoi-luong-rieng",
+    "physics.thcs.luc-day-ac-si-met.trong-luong-bieu-kien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.luc-day-theo-khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Độ lớn lực đẩy",
+   "name_vi": "Lực đẩy Ác-si-mét theo khối lượng riêng",
+   "name_en": "Buoyant force with density",
+   "latex": "F_{A} = \\rho g V",
+   "vars": {
+    "F_{A}": "độ lớn lực đẩy Ác-si-mét",
+    "\\rho": "khối lượng riêng của chất lỏng",
+    "g": "gia tốc rơi tự do",
+    "V": "thể tích phần vật chìm trong chất lỏng"
+   },
+   "units": {
+    "F_{A}": "N",
+    "\\rho": "kg/m^3",
+    "g": "m/s^2",
+    "V": "m^3"
+   },
+   "conditions": "Chất lỏng đứng yên, đồng chất",
+   "note": "Tương đương F_A = dV vì d = ρg",
+   "tags": [
+    "ac-si-met",
+    "khoi-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.luc-day-ac-si-met"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.trong-luong-bieu-kien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Ứng dụng",
+   "name_vi": "Số chỉ lực kế khi nhúng vật trong chất lỏng",
+   "name_en": "Apparent weight in a liquid",
+   "latex": "P' = P - F_{A}",
+   "vars": {
+    "P'": "số chỉ lực kế (trọng lượng biểu kiến) khi vật nhúng trong chất lỏng",
+    "P": "trọng lượng của vật khi ở ngoài không khí",
+    "F_{A}": "lực đẩy Ác-si-mét tác dụng lên vật"
+   },
+   "units": {
+    "P'": "N",
+    "P": "N",
+    "F_{A}": "N"
+   },
+   "conditions": "Vật treo trên lực kế và đứng yên trong chất lỏng",
+   "note": "Từ đó xác định được F_A = P - P', dùng để đo thể tích hoặc khối lượng riêng của vật",
+   "tags": [
+    "ac-si-met",
+    "thuc-hanh",
+    "luc-ke"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.luc-day-ac-si-met",
+    "physics.thcs.luc-day-ac-si-met.xac-dinh-khoi-luong-rieng-vat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.luc-day-ac-si-met.xac-dinh-khoi-luong-rieng-vat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Lực đẩy Ác-si-mét",
+   "subtopic": "Ứng dụng",
+   "name_vi": "Xác định trọng lượng riêng của vật bằng lực kế",
+   "name_en": "Determining density by buoyancy",
+   "latex": "d_{v} = \\dfrac{P}{P - P'} \\cdot d_{l}",
+   "vars": {
+    "d_{v}": "trọng lượng riêng của vật",
+    "P": "số chỉ lực kế khi vật ở ngoài không khí",
+    "P'": "số chỉ lực kế khi vật chìm hoàn toàn trong chất lỏng",
+    "d_{l}": "trọng lượng riêng của chất lỏng"
+   },
+   "units": {
+    "d_{v}": "N/m^3",
+    "P": "N",
+    "P'": "N",
+    "d_{l}": "N/m^3"
+   },
+   "conditions": "Vật đặc, chìm hoàn toàn, không thấm chất lỏng; P > P'",
+   "note": "Suy ra từ F_A = P - P' = d_l·V và P = d_v·V",
+   "tags": [
+    "ac-si-met",
+    "thuc-hanh",
+    "trong-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.luc-day-ac-si-met.trong-luong-bieu-kien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.mat-phang-nghieng-hieu-suat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Mặt phẳng nghiêng",
+   "name_vi": "Hiệu suất của mặt phẳng nghiêng có ma sát",
+   "name_en": "Efficiency of an inclined plane",
+   "latex": "H = \\dfrac{P h}{F l} \\cdot 100\\%",
+   "vars": {
+    "H": "hiệu suất của mặt phẳng nghiêng",
+    "P": "trọng lượng của vật",
+    "h": "độ cao nâng vật",
+    "F": "lực kéo thực tế dọc mặt phẳng nghiêng",
+    "l": "chiều dài mặt phẳng nghiêng"
+   },
+   "units": {
+    "P": "N",
+    "h": "m",
+    "F": "N",
+    "l": "m"
+   },
+   "conditions": "Có ma sát nên F·l > P·h, do đó H < 100%",
+   "note": "Công hao phí do ma sát: A_hp = F·l - P·h = F_ms·l",
+   "tags": [
+    "may-co-don-gian",
+    "mat-phang-nghieng",
+    "hieu-suat"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.hieu-suat-may-co",
+    "physics.thcs.may-co-don-gian.mat-phang-nghieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.palang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Ròng rọc",
+   "name_vi": "Hệ palăng gồm n ròng rọc động",
+   "name_en": "Pulley system (block and tackle)",
+   "latex": "F = \\dfrac{P}{2n}, \\quad s = 2nh",
+   "vars": {
+    "F": "lực kéo dây",
+    "P": "trọng lượng của vật được nâng",
+    "n": "số ròng rọc động trong hệ palăng",
+    "s": "quãng đường kéo dây",
+    "h": "độ cao nâng vật"
+   },
+   "units": {
+    "F": "N",
+    "P": "N",
+    "s": "m",
+    "h": "m"
+   },
+   "conditions": "Hệ palăng lí tưởng, bỏ qua ma sát và trọng lượng ròng rọc, n là số nguyên dương",
+   "note": "n không có đơn vị. Dùng n ròng rọc động thì được lợi 2n lần về lực, thiệt 2n lần về đường đi",
+   "tags": [
+    "may-co-don-gian",
+    "rong-roc",
+    "palang"
+   ],
+   "related": [
+    "physics.thcs.may-co-don-gian.rong-roc-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.do-tang-nhiet-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Nhiệt lượng",
+   "name_vi": "Độ tăng nhiệt độ",
+   "name_en": "Temperature change",
+   "latex": "\\Delta t = t_{2} - t_{1}",
+   "vars": {
+    "\\Delta t": "độ tăng nhiệt độ (âm nếu vật nguội đi)",
+    "t_{2}": "nhiệt độ sau (nhiệt độ cuối)",
+    "t_{1}": "nhiệt độ đầu"
+   },
+   "units": {
+    "\\Delta t": "K",
+    "t_{2}": "K",
+    "t_{1}": "K"
+   },
+   "conditions": "Hai nhiệt độ đo cùng thang đo",
+   "note": "Với vật tỏa nhiệt thường viết Δt = t1 - t2 để nhiệt lượng tỏa ra mang giá trị dương",
+   "tags": [
+    "nhiet-hoc",
+    "nhiet-do"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nhiet-luong-thu-vao"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.doi-nhiet-do-c-sang-k",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Nhiệt độ và thang đo",
+   "name_vi": "Đổi nhiệt độ từ thang Celsius sang thang Kelvin",
+   "name_en": "Celsius to Kelvin conversion",
+   "latex": "T = t + 273{,}15",
+   "vars": {
+    "T": "nhiệt độ tuyệt đối theo thang Kelvin",
+    "t": "nhiệt độ theo thang Celsius"
+   },
+   "units": {
+    "T": "K",
+    "t": "degC"
+   },
+   "conditions": "T ≥ 0 K (độ không tuyệt đối là -273,15 °C)",
+   "note": "Bài tập thường làm tròn 273. Độ chia của hai thang bằng nhau nên ΔT = Δt",
+   "tags": [
+    "nhiet-hoc",
+    "nhiet-do",
+    "doi-don-vi"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.doi-nhiet-do-c-sang-f"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.binh-thong-nhau-cung-chat-long",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Bình thông nhau",
+   "name_vi": "Bình thông nhau chứa cùng một chất lỏng",
+   "name_en": "Communicating vessels with one liquid",
+   "latex": "p_{A} = p_{B} \\Rightarrow h_{A} = h_{B}",
+   "vars": {
+    "p_{A}": "áp suất tại đáy nhánh A",
+    "p_{B}": "áp suất tại đáy nhánh B",
+    "h_{A}": "độ cao mực chất lỏng ở nhánh A",
+    "h_{B}": "độ cao mực chất lỏng ở nhánh B"
+   },
+   "units": {
+    "p_{A}": "Pa",
+    "p_{B}": "Pa",
+    "h_{A}": "m",
+    "h_{B}": "m"
+   },
+   "conditions": "Bình thông nhau hở, đứng yên, chứa cùng một chất lỏng đồng chất",
+   "note": "Ứng dụng: ống thủy đo mực nước, ống nước cân bằng, âu thuyền",
+   "tags": [
+    "ap-suat",
+    "binh-thong-nhau"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.binh-thong-nhau-hai-chat-long"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.binh-thong-nhau-hai-chat-long",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Bình thông nhau",
+   "name_vi": "Bình thông nhau chứa hai chất lỏng không trộn lẫn",
+   "name_en": "Communicating vessels with two liquids",
+   "latex": "d_{1} h_{1} = d_{2} h_{2}",
+   "vars": {
+    "d_{1}": "trọng lượng riêng chất lỏng thứ nhất",
+    "h_{1}": "chiều cao cột chất lỏng thứ nhất tính từ mặt phân cách",
+    "d_{2}": "trọng lượng riêng chất lỏng thứ hai",
+    "h_{2}": "chiều cao cột chất lỏng thứ hai tính từ mặt phân cách"
+   },
+   "units": {
+    "d_{1}": "N/m^3",
+    "h_{1}": "m",
+    "d_{2}": "N/m^3",
+    "h_{2}": "m"
+   },
+   "conditions": "Hai chất lỏng không hòa tan, đứng yên; các chiều cao tính từ mặt phân cách chung",
+   "note": "Chất lỏng nhẹ hơn có cột cao hơn: h tỉ lệ nghịch với d",
+   "tags": [
+    "ap-suat",
+    "binh-thong-nhau",
+    "chat-long"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.binh-thong-nhau-cung-chat-long"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.may-nen-thuy-luc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Máy nén thủy lực",
+   "name_vi": "Máy nén thủy lực (định luật Pascal)",
+   "name_en": "Hydraulic press",
+   "latex": "\\dfrac{F_{2}}{F_{1}} = \\dfrac{S_{2}}{S_{1}}",
+   "vars": {
+    "F_{1}": "lực tác dụng lên pit-tông nhỏ",
+    "S_{1}": "diện tích pit-tông nhỏ",
+    "F_{2}": "lực nâng ở pit-tông lớn",
+    "S_{2}": "diện tích pit-tông lớn"
+   },
+   "units": {
+    "F_{1}": "N",
+    "S_{1}": "m^2",
+    "F_{2}": "N",
+    "S_{2}": "m^2"
+   },
+   "conditions": "Chất lỏng không nén được, bỏ qua ma sát và trọng lượng chất lỏng; hai pit-tông cùng mức",
+   "note": "Do áp suất được truyền nguyên vẹn: F1/S1 = F2/S2. Lợi bao nhiêu lần về lực thì thiệt bấy nhiêu lần về đường đi",
+   "tags": [
+    "ap-suat",
+    "may-thuy-luc",
+    "pascal"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.may-nen-thuy-luc-duong-di"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.may-nen-thuy-luc-duong-di",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Máy nén thủy lực",
+   "name_vi": "Quãng đường dịch chuyển của hai pit-tông trong máy thủy lực",
+   "name_en": "Piston displacement in a hydraulic press",
+   "latex": "S_{1} s_{1} = S_{2} s_{2} \\Rightarrow \\dfrac{s_{1}}{s_{2}} = \\dfrac{S_{2}}{S_{1}}",
+   "vars": {
+    "S_{1}": "diện tích pit-tông nhỏ",
+    "s_{1}": "quãng đường dịch chuyển của pit-tông nhỏ",
+    "S_{2}": "diện tích pit-tông lớn",
+    "s_{2}": "quãng đường dịch chuyển của pit-tông lớn"
+   },
+   "units": {
+    "S_{1}": "m^2",
+    "s_{1}": "m",
+    "S_{2}": "m^2",
+    "s_{2}": "m"
+   },
+   "conditions": "Thể tích chất lỏng chuyển từ nhánh nhỏ sang nhánh lớn không đổi (chất lỏng không nén được)",
+   "note": "Kết hợp với F1/S1 = F2/S2 cho F1·s1 = F2·s2, đúng định luật về công",
+   "tags": [
+    "ap-suat",
+    "may-thuy-luc",
+    "dinh-luat-ve-cong"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.may-nen-thuy-luc",
+    "physics.thcs.may-co-don-gian.dinh-luat-ve-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-suat-chat-long",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất lỏng",
+   "name_vi": "Áp suất của cột chất lỏng",
+   "name_en": "Hydrostatic pressure",
+   "latex": "p = d \\cdot h",
+   "vars": {
+    "p": "áp suất do cột chất lỏng gây ra tại điểm đang xét",
+    "d": "trọng lượng riêng của chất lỏng",
+    "h": "độ sâu của điểm xét tính từ mặt thoáng chất lỏng"
+   },
+   "units": {
+    "p": "Pa",
+    "d": "N/m^3",
+    "h": "m"
+   },
+   "conditions": "Chất lỏng đứng yên, đồng chất; h tính từ mặt thoáng xuống điểm xét",
+   "note": "Áp suất chất lỏng không phụ thuộc hình dạng bình, chỉ phụ thuộc d và h. Nước: d = 10000 N/m^3",
+   "tags": [
+    "ap-suat",
+    "chat-long",
+    "thuy-tinh-hoc"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-chat-long-theo-khoi-luong-rieng",
+    "physics.thcs.ap-suat.ap-suat-tai-day-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-suat-chat-long-theo-khoi-luong-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất lỏng",
+   "name_vi": "Áp suất chất lỏng theo khối lượng riêng",
+   "name_en": "Hydrostatic pressure with density",
+   "latex": "p = \\rho g h",
+   "vars": {
+    "p": "áp suất do cột chất lỏng gây ra",
+    "\\rho": "khối lượng riêng của chất lỏng",
+    "g": "gia tốc rơi tự do",
+    "h": "độ sâu tính từ mặt thoáng"
+   },
+   "units": {
+    "p": "Pa",
+    "\\rho": "kg/m^3",
+    "g": "m/s^2",
+    "h": "m"
+   },
+   "conditions": "Chất lỏng đứng yên, đồng chất, không nén được",
+   "note": "Vì d = ρg nên p = dh = ρgh. Lấy g ≈ 9,8 m/s^2 (bài tập THCS thường lấy 10 m/s^2)",
+   "tags": [
+    "ap-suat",
+    "chat-long",
+    "khoi-luong-rieng"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-chat-long"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-suat-tai-day-binh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất lỏng",
+   "name_vi": "Áp suất toàn phần tại một điểm trong lòng chất lỏng",
+   "name_en": "Absolute pressure in a liquid",
+   "latex": "p = p_{0} + d \\cdot h",
+   "vars": {
+    "p": "áp suất toàn phần (tuyệt đối) tại điểm xét",
+    "p_{0}": "áp suất khí quyển tác dụng lên mặt thoáng",
+    "d": "trọng lượng riêng của chất lỏng",
+    "h": "độ sâu của điểm xét"
+   },
+   "units": {
+    "p": "Pa",
+    "p_{0}": "Pa",
+    "d": "N/m^3",
+    "h": "m"
+   },
+   "conditions": "Bình hở, chất lỏng đứng yên; mặt thoáng tiếp xúc khí quyển",
+   "note": "p0 ≈ 101300 Pa ở điều kiện chuẩn (tương đương cột thủy ngân cao 76 cm)",
+   "tags": [
+    "ap-suat",
+    "chat-long",
+    "khi-quyen"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-chat-long",
+    "physics.thcs.ap-suat.ap-suat-khi-quyen"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.chenh-lech-ap-suat-hai-diem",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất lỏng",
+   "name_vi": "Độ chênh lệch áp suất giữa hai điểm trong chất lỏng",
+   "name_en": "Pressure difference between two points",
+   "latex": "\\Delta p = d \\left( h_{2} - h_{1} \\right)",
+   "vars": {
+    "\\Delta p": "độ chênh lệch áp suất giữa hai điểm",
+    "d": "trọng lượng riêng của chất lỏng",
+    "h_{2}": "độ sâu của điểm thấp hơn",
+    "h_{1}": "độ sâu của điểm cao hơn"
+   },
+   "units": {
+    "\\Delta p": "Pa",
+    "d": "N/m^3",
+    "h_{2}": "m",
+    "h_{1}": "m"
+   },
+   "conditions": "Hai điểm trong cùng một khối chất lỏng đứng yên, đồng chất",
+   "note": "Hai điểm cùng độ sâu trong cùng chất lỏng thì có áp suất bằng nhau",
+   "tags": [
+    "ap-suat",
+    "chat-long"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-chat-long",
+    "physics.thcs.ap-suat.binh-thong-nhau-cung-chat-long"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-luc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất rắn",
+   "name_vi": "Áp lực tính theo áp suất",
+   "name_en": "Force from pressure",
+   "latex": "F = p \\cdot S",
+   "vars": {
+    "F": "áp lực tác dụng vuông góc lên mặt bị ép",
+    "p": "áp suất",
+    "S": "diện tích mặt bị ép"
+   },
+   "units": {
+    "F": "N",
+    "p": "Pa",
+    "S": "m^2"
+   },
+   "conditions": "Áp suất phân bố đều trên diện tích S",
+   "note": "Áp dụng cho cả chất rắn, chất lỏng và chất khí",
+   "tags": [
+    "ap-suat",
+    "ap-luc"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-chat-ran"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-suat-chat-ran",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất rắn",
+   "name_vi": "Áp suất do vật rắn gây ra trên mặt bị ép",
+   "name_en": "Pressure of a solid",
+   "latex": "p = \\dfrac{F}{S}",
+   "vars": {
+    "p": "áp suất tác dụng lên mặt bị ép",
+    "F": "áp lực (lực ép vuông góc với mặt bị ép)",
+    "S": "diện tích mặt bị ép"
+   },
+   "units": {
+    "p": "Pa",
+    "F": "N",
+    "S": "m^2"
+   },
+   "conditions": "Lực ép vuông góc và phân bố đều trên diện tích S; S > 0",
+   "note": "1 Pa = 1 N/m^2; 1 bar = 10^5 Pa. Vật đặt trên mặt ngang thì F = P = 10m",
+   "tags": [
+    "ap-suat",
+    "chat-ran"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-luc",
+    "physics.thcs.ap-suat.dien-tich-bi-ep"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.dien-tich-bi-ep",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất chất rắn",
+   "name_vi": "Diện tích mặt bị ép",
+   "name_en": "Contact area from pressure",
+   "latex": "S = \\dfrac{F}{p}",
+   "vars": {
+    "S": "diện tích mặt bị ép",
+    "F": "áp lực",
+    "p": "áp suất"
+   },
+   "units": {
+    "S": "m^2",
+    "F": "N",
+    "p": "Pa"
+   },
+   "conditions": "p > 0; áp lực vuông góc mặt bị ép",
+   "note": "Muốn giảm áp suất thì tăng diện tích bị ép (ván trượt tuyết, bánh xích xe tăng)",
+   "tags": [
+    "ap-suat",
+    "ung-dung"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-chat-ran"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-suat-khi-quyen",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất khí quyển",
+   "name_vi": "Áp suất khí quyển đo bằng cột thủy ngân",
+   "name_en": "Atmospheric pressure (barometric)",
+   "latex": "p_{0} = d_{Hg} \\cdot h_{Hg}",
+   "vars": {
+    "p_{0}": "áp suất khí quyển",
+    "d_{Hg}": "trọng lượng riêng của thủy ngân",
+    "h_{Hg}": "chiều cao cột thủy ngân trong ống Tô-ri-xe-li"
+   },
+   "units": {
+    "p_{0}": "Pa",
+    "d_{Hg}": "N/m^3",
+    "h_{Hg}": "m"
+   },
+   "conditions": "Thí nghiệm Tô-ri-xe-li, phía trên cột thủy ngân là chân không",
+   "note": "Ở điều kiện chuẩn: h = 76 cmHg, d_Hg = 136000 N/m^3 nên p0 ≈ 103360 Pa; giá trị quy ước 1 atm = 101325 Pa",
+   "tags": [
+    "ap-suat",
+    "khi-quyen",
+    "torixeli"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-tai-day-binh",
+    "physics.thcs.ap-suat.ap-suat-khi-quyen-theo-do-cao"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.ap-suat.ap-suat-khi-quyen-theo-do-cao",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Áp suất",
+   "subtopic": "Áp suất khí quyển",
+   "name_vi": "Sự giảm áp suất khí quyển theo độ cao (gần đúng)",
+   "name_en": "Decrease of atmospheric pressure with altitude",
+   "latex": "\\Delta h_{Hg} \\approx \\dfrac{H}{12} \\ (\\text{mmHg, với } H \\text{ tính bằng m})",
+   "vars": {
+    "\\Delta h_{Hg}": "độ giảm chiều cao cột thủy ngân so với mực nước biển",
+    "H": "độ cao của vị trí so với mực nước biển"
+   },
+   "units": {
+    "\\Delta h_{Hg}": "mmHg",
+    "H": "m"
+   },
+   "conditions": "Chỉ gần đúng ở gần mặt đất (vài km đầu của khí quyển); H tính bằng mét thì Δh tính ra mmHg",
+   "note": "Quy tắc thực nghiệm trong SGK: lên cao khoảng 12 m thì áp suất khí quyển giảm khoảng 1 mmHg. Quy đổi: 1 mmHg = 133,3 Pa",
+   "tags": [
+    "ap-suat",
+    "khi-quyen",
+    "gan-dung"
+   ],
+   "related": [
+    "physics.thcs.ap-suat.ap-suat-khi-quyen"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng-hon-hop",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8
+   ],
+   "topic": "Đo lường và khối lượng riêng",
+   "subtopic": "Khối lượng riêng",
+   "name_vi": "Khối lượng riêng của hỗn hợp hai chất",
+   "name_en": "Density of a mixture",
+   "latex": "D = \\dfrac{m_{1} + m_{2}}{V_{1} + V_{2}} = \\dfrac{D_{1}V_{1} + D_{2}V_{2}}{V_{1} + V_{2}}",
+   "vars": {
+    "D": "khối lượng riêng của hỗn hợp",
+    "m_{1}": "khối lượng chất thứ nhất",
+    "m_{2}": "khối lượng chất thứ hai",
+    "V_{1}": "thể tích chất thứ nhất",
+    "V_{2}": "thể tích chất thứ hai",
+    "D_{1}": "khối lượng riêng chất thứ nhất",
+    "D_{2}": "khối lượng riêng chất thứ hai"
+   },
+   "units": {
+    "D": "kg/m^3",
+    "m_{1}": "kg",
+    "m_{2}": "kg",
+    "V_{1}": "m^3",
+    "V_{2}": "m^3",
+    "D_{1}": "kg/m^3",
+    "D_{2}": "kg/m^3"
+   },
+   "conditions": "Thể tích hỗn hợp bằng tổng thể tích thành phần (không co thể tích khi trộn)",
+   "note": "Bài toán nâng cao THCS; nếu trộn theo khối lượng thì D = (m1+m2)/(m1/D1 + m2/D2)",
+   "tags": [
+    "khoi-luong-rieng",
+    "nang-cao",
+    "hon-hop"
+   ],
+   "related": [
+    "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-co-hoc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Công cơ học",
+   "name_vi": "Công cơ học của lực",
+   "name_en": "Mechanical work",
+   "latex": "A = F \\cdot s",
+   "vars": {
+    "A": "công cơ học của lực",
+    "F": "độ lớn lực tác dụng lên vật",
+    "s": "quãng đường vật dịch chuyển theo phương của lực"
+   },
+   "units": {
+    "A": "J",
+    "F": "N",
+    "s": "m"
+   },
+   "conditions": "Lực có phương trùng với phương chuyển dời; nếu lực vuông góc với chuyển dời thì A = 0",
+   "note": "1 J = 1 N.m; 1 kJ = 1000 J. Chỉ có công khi có lực tác dụng VÀ vật chuyển dời",
+   "tags": [
+    "cong",
+    "co-hoc"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-nang-vat-len-cao",
+    "physics.thcs.cong-cong-suat.cong-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-nang-vat-len-cao",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Công cơ học",
+   "name_vi": "Công nâng vật lên độ cao h",
+   "name_en": "Work done lifting a body",
+   "latex": "A = P \\cdot h = 10mh",
+   "vars": {
+    "A": "công tối thiểu để nâng vật lên",
+    "P": "trọng lượng của vật",
+    "h": "độ cao nâng vật",
+    "m": "khối lượng của vật"
+   },
+   "units": {
+    "A": "J",
+    "P": "N",
+    "h": "m",
+    "m": "kg"
+   },
+   "conditions": "Nâng vật đều theo phương thẳng đứng, bỏ qua ma sát và lực cản",
+   "note": "Đây cũng là công có ích khi dùng máy cơ đơn giản để nâng vật",
+   "tags": [
+    "cong",
+    "trong-luc",
+    "may-co-don-gian"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-co-hoc",
+    "physics.thcs.co-nang.the-nang-trong-truong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-luc-ma-sat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Công hao phí",
+   "name_vi": "Công của lực ma sát",
+   "name_en": "Work done against friction",
+   "latex": "A_{ms} = F_{ms} \\cdot s",
+   "vars": {
+    "A_{ms}": "công của lực ma sát (công hao phí)",
+    "F_{ms}": "độ lớn lực ma sát",
+    "s": "quãng đường vật trượt"
+   },
+   "units": {
+    "A_{ms}": "J",
+    "F_{ms}": "N",
+    "s": "m"
+   },
+   "conditions": "Lực ma sát không đổi trên toàn quãng đường trượt",
+   "note": "Công của lực ma sát luôn là công cản, chuyển cơ năng thành nhiệt năng",
+   "tags": [
+    "cong",
+    "luc-ma-sat",
+    "hao-phi"
+   ],
+   "related": [
+    "physics.thcs.luc.luc-ma-sat",
+    "physics.thcs.cong-cong-suat.cong-hao-phi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-suat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Công suất",
+   "name_vi": "Công suất",
+   "name_en": "Power",
+   "latex": "\\mathcal{P} = \\dfrac{A}{t}",
+   "vars": {
+    "\\mathcal{P}": "công suất (công thực hiện trong một đơn vị thời gian)",
+    "A": "công thực hiện được",
+    "t": "thời gian thực hiện công"
+   },
+   "units": {
+    "\\mathcal{P}": "W",
+    "A": "J",
+    "t": "s"
+   },
+   "conditions": "t > 0; công A thực hiện đều trong khoảng thời gian t",
+   "note": "1 W = 1 J/s; 1 kW = 1000 W; 1 mã lực (CV) ≈ 736 W",
+   "tags": [
+    "cong-suat",
+    "cong"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-suat-theo-luc-van-toc",
+    "physics.thcs.cong-cong-suat.cong-theo-cong-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-suat-theo-luc-van-toc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Công suất",
+   "name_vi": "Công suất theo lực và vận tốc",
+   "name_en": "Power as force times velocity",
+   "latex": "\\mathcal{P} = F \\cdot v",
+   "vars": {
+    "\\mathcal{P}": "công suất của lực",
+    "F": "độ lớn lực tác dụng theo phương chuyển động",
+    "v": "tốc độ chuyển động của vật"
+   },
+   "units": {
+    "\\mathcal{P}": "W",
+    "F": "N",
+    "v": "m/s"
+   },
+   "conditions": "Lực cùng phương cùng chiều chuyển động; vật chuyển động đều",
+   "note": "Suy ra từ P = A/t = F·s/t = F·v. Với công suất động cơ không đổi, v càng lớn thì lực kéo càng nhỏ",
+   "tags": [
+    "cong-suat",
+    "luc",
+    "toc-do"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-theo-cong-suat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Công suất",
+   "name_vi": "Công tính theo công suất và thời gian",
+   "name_en": "Work from power and time",
+   "latex": "A = \\mathcal{P} \\cdot t",
+   "vars": {
+    "A": "công thực hiện được",
+    "\\mathcal{P}": "công suất",
+    "t": "thời gian hoạt động"
+   },
+   "units": {
+    "A": "J",
+    "\\mathcal{P}": "W",
+    "t": "s"
+   },
+   "conditions": "Công suất không đổi trong thời gian t",
+   "note": "Nếu tính bằng kW và h thì A có đơn vị kWh: 1 kWh = 3600000 J",
+   "tags": [
+    "cong",
+    "cong-suat"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.cong-hao-phi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Hiệu suất",
+   "name_vi": "Công hao phí",
+   "name_en": "Wasted work",
+   "latex": "A_{hp} = A_{tp} - A_{i}",
+   "vars": {
+    "A_{hp}": "công hao phí (thắng ma sát, nâng bộ phận của máy)",
+    "A_{tp}": "công toàn phần",
+    "A_{i}": "công có ích"
+   },
+   "units": {
+    "A_{hp}": "J",
+    "A_{tp}": "J",
+    "A_{i}": "J"
+   },
+   "conditions": "Máy cơ thực tế có ma sát",
+   "note": "Công hao phí chuyển hóa chủ yếu thành nhiệt năng",
+   "tags": [
+    "cong",
+    "hao-phi",
+    "hieu-suat"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.hieu-suat-may-co"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.cong-cong-suat.hieu-suat-may-co",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Công và công suất",
+   "subtopic": "Hiệu suất",
+   "name_vi": "Hiệu suất của máy cơ đơn giản",
+   "name_en": "Efficiency of a simple machine",
+   "latex": "H = \\dfrac{A_{i}}{A_{tp}} \\cdot 100\\%",
+   "vars": {
+    "H": "hiệu suất của máy",
+    "A_{i}": "công có ích",
+    "A_{tp}": "công toàn phần (công thực hiện của lực kéo)"
+   },
+   "units": {
+    "A_{i}": "J",
+    "A_{tp}": "J"
+   },
+   "conditions": "A_tp > 0; luôn có H < 100% do có ma sát và trọng lượng của máy",
+   "note": "H không có đơn vị (tính bằng %). A_tp = A_i + A_hp",
+   "tags": [
+    "hieu-suat",
+    "may-co-don-gian",
+    "cong"
+   ],
+   "related": [
+    "physics.thcs.cong-cong-suat.cong-hao-phi",
+    "physics.thcs.may-co-don-gian.mat-phang-nghieng-hieu-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.co-nang.co-nang-tong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Cơ năng",
+   "subtopic": "Cơ năng",
+   "name_vi": "Cơ năng của vật",
+   "name_en": "Mechanical energy",
+   "latex": "W = W_{d} + W_{t}",
+   "vars": {
+    "W": "cơ năng của vật",
+    "W_{d}": "động năng của vật",
+    "W_{t}": "thế năng của vật"
+   },
+   "units": {
+    "W": "J",
+    "W_{d}": "J",
+    "W_{t}": "J"
+   },
+   "conditions": "Xét cùng một mốc thế năng và cùng hệ quy chiếu",
+   "note": "Vật vừa chuyển động vừa ở độ cao thì có cả động năng và thế năng",
+   "tags": [
+    "co-nang",
+    "nang-luong"
+   ],
+   "related": [
+    "physics.thcs.co-nang.bao-toan-co-nang",
+    "physics.thcs.co-nang.dong-nang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.co-nang.the-nang-trong-truong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Cơ năng",
+   "subtopic": "Thế năng",
+   "name_vi": "Thế năng trọng trường (thế năng hấp dẫn)",
+   "name_en": "Gravitational potential energy",
+   "latex": "W_{t} = P h = mgh",
+   "vars": {
+    "W_{t}": "thế năng trọng trường của vật",
+    "P": "trọng lượng của vật",
+    "h": "độ cao của vật so với mốc thế năng",
+    "m": "khối lượng của vật",
+    "g": "gia tốc rơi tự do"
+   },
+   "units": {
+    "W_{t}": "J",
+    "P": "N",
+    "h": "m",
+    "m": "kg",
+    "g": "m/s^2"
+   },
+   "conditions": "Phải chọn mốc tính thế năng (thường là mặt đất); h là độ cao so với mốc đó",
+   "note": "Thế năng phụ thuộc mốc thế năng đã chọn. Ngoài ra còn thế năng đàn hồi của vật bị biến dạng",
+   "tags": [
+    "co-nang",
+    "the-nang",
+    "nang-luong"
+   ],
+   "related": [
+    "physics.thcs.co-nang.dong-nang",
+    "physics.thcs.cong-cong-suat.cong-nang-vat-len-cao"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.co-nang.dong-nang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Cơ năng",
+   "subtopic": "Động năng",
+   "name_vi": "Động năng của vật",
+   "name_en": "Kinetic energy",
+   "latex": "W_{d} = \\dfrac{1}{2} m v^{2}",
+   "vars": {
+    "W_{d}": "động năng của vật",
+    "m": "khối lượng của vật",
+    "v": "tốc độ của vật"
+   },
+   "units": {
+    "W_{d}": "J",
+    "m": "kg",
+    "v": "m/s"
+   },
+   "conditions": "Vật chuyển động với tốc độ v so với mặt đất",
+   "note": "Động năng tỉ lệ với bình phương tốc độ: v tăng 2 lần thì động năng tăng 4 lần",
+   "tags": [
+    "co-nang",
+    "dong-nang",
+    "nang-luong"
+   ],
+   "related": [
+    "physics.thcs.co-nang.the-nang-trong-truong",
+    "physics.thcs.co-nang.co-nang-tong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.may-co-don-gian.dinh-luat-ve-cong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Máy cơ đơn giản",
+   "subtopic": "Định luật về công",
+   "name_vi": "Định luật về công",
+   "name_en": "Law of work (golden rule of mechanics)",
+   "latex": "A_{1} = A_{2} \\Leftrightarrow F_{1} s_{1} = F_{2} s_{2}",
+   "vars": {
+    "A_{1}": "công thực hiện khi không dùng máy cơ đơn giản",
+    "A_{2}": "công thực hiện khi dùng máy cơ đơn giản",
+    "F_{1}": "lực khi không dùng máy",
+    "s_{1}": "quãng đường dịch chuyển khi không dùng máy",
+    "F_{2}": "lực khi dùng máy",
+    "s_{2}": "quãng đường dịch chuyển điểm đặt lực khi dùng máy"
+   },
+   "units": {
+    "A_{1}": "J",
+    "A_{2}": "J",
+    "F_{1}": "N",
+    "s_{1}": "m",
+    "F_{2}": "N",
+    "s_{2}": "m"
+   },
+   "conditions": "Máy cơ đơn giản lí tưởng, bỏ qua ma sát và khối lượng của máy",
+   "note": "Không một máy cơ đơn giản nào cho ta lợi về công: lợi bao nhiêu lần về lực thì thiệt bấy nhiêu lần về đường đi",
+   "tags": [
+    "may-co-don-gian",
+    "cong",
+    "dinh-luat"
+   ],
+   "related": [
+    "physics.thcs.may-co-don-gian.rong-roc-dong",
+    "physics.thcs.may-co-don-gian.mat-phang-nghieng"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.nhiet-hoa-hoi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Chuyển thể",
+   "name_vi": "Nhiệt lượng hóa hơi (ngưng tụ)",
+   "name_en": "Latent heat of vaporisation",
+   "latex": "Q = L m",
+   "vars": {
+    "Q": "nhiệt lượng cần cung cấp để hóa hơi hoàn toàn khối chất lỏng",
+    "L": "nhiệt hóa hơi riêng của chất lỏng",
+    "m": "khối lượng chất lỏng hóa hơi"
+   },
+   "units": {
+    "Q": "J",
+    "L": "J/kg",
+    "m": "kg"
+   },
+   "conditions": "Chất lỏng đã ở nhiệt độ sôi; trong quá trình sôi nhiệt độ không đổi",
+   "note": "Nước: L = 2,26.10^6 J/kg ở 100 °C và 1 atm",
+   "tags": [
+    "nhiet-hoc",
+    "chuyen-the",
+    "hoa-hoi"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nhiet-nong-chay"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.nhiet-nong-chay",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Chuyển thể",
+   "name_vi": "Nhiệt lượng nóng chảy (đông đặc)",
+   "name_en": "Latent heat of fusion",
+   "latex": "Q = \\lambda m",
+   "vars": {
+    "Q": "nhiệt lượng cần cung cấp để làm nóng chảy hoàn toàn vật",
+    "\\lambda": "nhiệt nóng chảy riêng của chất",
+    "m": "khối lượng của phần chất bị nóng chảy"
+   },
+   "units": {
+    "Q": "J",
+    "\\lambda": "J/kg",
+    "m": "kg"
+   },
+   "conditions": "Vật đã ở đúng nhiệt độ nóng chảy; trong quá trình nóng chảy nhiệt độ không đổi",
+   "note": "Nước đá: λ = 3,34.10^5 J/kg ở 0 °C. Khi đông đặc, vật tỏa ra đúng nhiệt lượng đó",
+   "tags": [
+    "nhiet-hoc",
+    "chuyen-the",
+    "nong-chay"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nhiet-hoa-hoi",
+    "physics.thcs.nhiet-hoc.nhiet-luong-thu-vao"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.nhiet-do-can-bang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Cân bằng nhiệt",
+   "name_vi": "Nhiệt độ cân bằng khi trộn hai chất",
+   "name_en": "Final equilibrium temperature",
+   "latex": "t = \\dfrac{m_{1}c_{1}t_{1} + m_{2}c_{2}t_{2}}{m_{1}c_{1} + m_{2}c_{2}}",
+   "vars": {
+    "t": "nhiệt độ chung khi cân bằng nhiệt",
+    "m_{1}": "khối lượng vật (chất) thứ nhất",
+    "c_{1}": "nhiệt dung riêng chất thứ nhất",
+    "t_{1}": "nhiệt độ ban đầu của vật thứ nhất",
+    "m_{2}": "khối lượng vật (chất) thứ hai",
+    "c_{2}": "nhiệt dung riêng chất thứ hai",
+    "t_{2}": "nhiệt độ ban đầu của vật thứ hai"
+   },
+   "units": {
+    "t": "K",
+    "m_{1}": "kg",
+    "c_{1}": "J/(kg.K)",
+    "t_{1}": "K",
+    "m_{2}": "kg",
+    "c_{2}": "J/(kg.K)",
+    "t_{2}": "K"
+   },
+   "conditions": "Hệ cô lập nhiệt, không có chuyển thể, không trao đổi nhiệt với bình và môi trường",
+   "note": "Nhiệt độ cân bằng luôn nằm giữa t1 và t2; là trung bình có trọng số theo m·c",
+   "tags": [
+    "nhiet-hoc",
+    "can-bang-nhiet"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.phuong-trinh-can-bang-nhiet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.phuong-trinh-can-bang-nhiet",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Cân bằng nhiệt",
+   "name_vi": "Phương trình cân bằng nhiệt",
+   "name_en": "Heat balance equation",
+   "latex": "Q_{\\text{toa}} = Q_{\\text{thu}}",
+   "vars": {
+    "Q_{\\text{toa}}": "tổng nhiệt lượng do các vật nóng tỏa ra",
+    "Q_{\\text{thu}}": "tổng nhiệt lượng do các vật lạnh thu vào"
+   },
+   "units": {
+    "Q_{\\text{toa}}": "J",
+    "Q_{\\text{thu}}": "J"
+   },
+   "conditions": "Hệ cô lập về nhiệt, bỏ qua sự trao đổi nhiệt với môi trường và bình chứa",
+   "note": "Nhiệt truyền từ vật nóng hơn sang vật lạnh hơn tới khi nhiệt độ hai vật bằng nhau",
+   "tags": [
+    "nhiet-hoc",
+    "can-bang-nhiet",
+    "bao-toan-nang-luong"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nhiet-do-can-bang",
+    "physics.thcs.nhiet-hoc.nhiet-luong-thu-vao"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.hieu-suat-bep-dun",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Hiệu suất",
+   "name_vi": "Hiệu suất của bếp đun",
+   "name_en": "Efficiency of a stove",
+   "latex": "H = \\dfrac{Q_{i}}{Q_{tp}} \\cdot 100\\%",
+   "vars": {
+    "H": "hiệu suất của bếp",
+    "Q_{i}": "nhiệt lượng có ích (nhiệt lượng nước hoặc vật cần đun thu vào)",
+    "Q_{tp}": "nhiệt lượng toàn phần do nhiên liệu (hoặc điện) cung cấp"
+   },
+   "units": {
+    "Q_{i}": "J",
+    "Q_{tp}": "J"
+   },
+   "conditions": "Q_tp > 0",
+   "note": "Q_i = mcΔt của nước; Q_tp = q·m_nhiên liệu (bếp than, ga) hoặc = UIt (bếp điện)",
+   "tags": [
+    "nhiet-hoc",
+    "hieu-suat",
+    "ung-dung"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nang-suat-toa-nhiet",
+    "physics.thcs.dien-hoc.hieu-suat-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.nang-suat-toa-nhiet",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Nhiên liệu",
+   "name_vi": "Nhiệt lượng tỏa ra khi đốt cháy nhiên liệu",
+   "name_en": "Heat released by burning fuel",
+   "latex": "Q = q m",
+   "vars": {
+    "Q": "nhiệt lượng tỏa ra khi đốt cháy hoàn toàn nhiên liệu",
+    "q": "năng suất tỏa nhiệt của nhiên liệu",
+    "m": "khối lượng nhiên liệu bị đốt cháy hoàn toàn"
+   },
+   "units": {
+    "Q": "J",
+    "q": "J/kg",
+    "m": "kg"
+   },
+   "conditions": "Nhiên liệu bị đốt cháy hoàn toàn",
+   "note": "Củi khô q ≈ 10^7 J/kg; than đá ≈ 2,7.10^7 J/kg; dầu hỏa ≈ 4,4.10^7 J/kg; xăng ≈ 4,6.10^7 J/kg",
+   "tags": [
+    "nhiet-hoc",
+    "nhien-lieu",
+    "nang-suat-toa-nhiet"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.hieu-suat-bep-dun",
+    "physics.thcs.nhiet-hoc.hieu-suat-dong-co-nhiet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.nhiet-dung-rieng",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Nhiệt lượng",
+   "name_vi": "Nhiệt dung riêng của chất",
+   "name_en": "Specific heat capacity",
+   "latex": "c = \\dfrac{Q}{m \\Delta t}",
+   "vars": {
+    "c": "nhiệt dung riêng của chất",
+    "Q": "nhiệt lượng truyền cho vật",
+    "m": "khối lượng của vật",
+    "\\Delta t": "độ tăng nhiệt độ"
+   },
+   "units": {
+    "c": "J/(kg.K)",
+    "Q": "J",
+    "m": "kg",
+    "\\Delta t": "K"
+   },
+   "conditions": "m > 0, Δt ≠ 0; vật không chuyển thể",
+   "note": "Nhiệt dung riêng cho biết nhiệt lượng cần cung cấp để 1 kg chất tăng thêm 1 K (1 °C)",
+   "tags": [
+    "nhiet-hoc",
+    "nhiet-dung-rieng"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nhiet-luong-thu-vao"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.nhiet-luong-thu-vao",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Nhiệt lượng",
+   "name_vi": "Nhiệt lượng vật thu vào (hoặc tỏa ra) khi thay đổi nhiệt độ",
+   "name_en": "Heat transferred with temperature change",
+   "latex": "Q = mc\\Delta t",
+   "vars": {
+    "Q": "nhiệt lượng vật thu vào hoặc tỏa ra",
+    "m": "khối lượng của vật",
+    "c": "nhiệt dung riêng của chất làm vật",
+    "\\Delta t": "độ tăng (hoặc giảm) nhiệt độ của vật"
+   },
+   "units": {
+    "Q": "J",
+    "m": "kg",
+    "c": "J/(kg.K)",
+    "\\Delta t": "K"
+   },
+   "conditions": "Vật không đổi trạng thái (không nóng chảy, không hóa hơi) trong quá trình truyền nhiệt",
+   "note": "Nước: c = 4200 J/(kg.K); nhôm 880; đồng 380; sắt/thép 460. Độ chênh nhiệt độ tính bằng K hay °C đều cho cùng giá trị",
+   "tags": [
+    "nhiet-hoc",
+    "nhiet-luong",
+    "nhiet-dung-rieng"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nhiet-dung-rieng",
+    "physics.thcs.nhiet-hoc.phuong-trinh-can-bang-nhiet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nhiet-hoc.hieu-suat-dong-co-nhiet",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Nhiệt học",
+   "subtopic": "Động cơ nhiệt",
+   "name_vi": "Hiệu suất của động cơ nhiệt",
+   "name_en": "Efficiency of a heat engine",
+   "latex": "H = \\dfrac{A}{Q} \\cdot 100\\%",
+   "vars": {
+    "H": "hiệu suất của động cơ nhiệt",
+    "A": "công có ích mà động cơ thực hiện được",
+    "Q": "nhiệt lượng do nhiên liệu bị đốt cháy tỏa ra"
+   },
+   "units": {
+    "A": "J",
+    "Q": "J"
+   },
+   "conditions": "Q > 0; luôn có H < 100% vì một phần nhiệt lượng bị tỏa ra môi trường",
+   "note": "Động cơ xăng H ≈ 25-30%, động cơ diesel H ≈ 35-45%",
+   "tags": [
+    "nhiet-hoc",
+    "dong-co-nhiet",
+    "hieu-suat"
+   ],
+   "related": [
+    "physics.thcs.nhiet-hoc.nang-suat-toa-nhiet",
+    "physics.thcs.nhiet-hoc.hieu-suat-bep-dun"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.cuong-do-dong-dien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Dòng điện",
+   "name_vi": "Cường độ dòng điện",
+   "name_en": "Electric current",
+   "latex": "I = \\dfrac{q}{t}",
+   "vars": {
+    "I": "cường độ dòng điện qua tiết diện thẳng của dây dẫn",
+    "q": "điện lượng (điện tích) chuyển qua tiết diện đó",
+    "t": "thời gian dòng điện chạy qua"
+   },
+   "units": {
+    "I": "A",
+    "q": "C",
+    "t": "s"
+   },
+   "conditions": "Dòng điện không đổi; t > 0",
+   "note": "1 A = 1 C/s; 1 mA = 0,001 A. Đo bằng ampe kế mắc nối tiếp",
+   "tags": [
+    "dien-hoc",
+    "dong-dien",
+    "cuong-do-dong-dien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dien-luong",
+    "physics.thcs.dien-hoc.dinh-luat-om"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.dien-luong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Dòng điện",
+   "name_vi": "Điện lượng chuyển qua tiết diện dây dẫn",
+   "name_en": "Electric charge transferred",
+   "latex": "q = I \\cdot t",
+   "vars": {
+    "q": "điện lượng chuyển qua tiết diện thẳng dây dẫn",
+    "I": "cường độ dòng điện",
+    "t": "thời gian dòng điện chạy qua"
+   },
+   "units": {
+    "q": "C",
+    "I": "A",
+    "t": "s"
+   },
+   "conditions": "Dòng điện không đổi trong khoảng thời gian t",
+   "note": "Số electron chuyển qua: n = q/e với e = 1,6.10^-19 C",
+   "tags": [
+    "dien-hoc",
+    "dien-tich",
+    "dong-dien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cuong-do-dong-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.co-nang.bao-toan-co-nang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Cơ năng",
+   "subtopic": "Bảo toàn cơ năng",
+   "name_vi": "Định luật bảo toàn cơ năng",
+   "name_en": "Conservation of mechanical energy",
+   "latex": "W = W_{d} + W_{t} = \\text{const}",
+   "vars": {
+    "W": "cơ năng của vật",
+    "W_{d}": "động năng của vật",
+    "W_{t}": "thế năng trọng trường của vật"
+   },
+   "units": {
+    "W": "J",
+    "W_{d}": "J",
+    "W_{t}": "J"
+   },
+   "conditions": "Vật chỉ chịu tác dụng của trọng lực (hoặc lực đàn hồi), bỏ qua ma sát và lực cản",
+   "note": "Động năng và thế năng có thể chuyển hóa qua lại nhưng tổng cơ năng không đổi",
+   "tags": [
+    "co-nang",
+    "bao-toan",
+    "nang-luong"
+   ],
+   "related": [
+    "physics.thcs.co-nang.bao-toan-co-nang-hai-vi-tri",
+    "physics.thcs.co-nang.co-nang-tong",
+    "physics.thcs.nang-luong.dinh-luat-bao-toan-nang-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.co-nang.bao-toan-co-nang-hai-vi-tri",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Cơ năng",
+   "subtopic": "Bảo toàn cơ năng",
+   "name_vi": "Bảo toàn cơ năng giữa hai vị trí",
+   "name_en": "Energy conservation between two positions",
+   "latex": "\\dfrac{1}{2}mv_{1}^{2} + mgh_{1} = \\dfrac{1}{2}mv_{2}^{2} + mgh_{2}",
+   "vars": {
+    "m": "khối lượng của vật",
+    "v_{1}": "tốc độ của vật tại vị trí 1",
+    "h_{1}": "độ cao của vật tại vị trí 1 so với mốc thế năng",
+    "v_{2}": "tốc độ của vật tại vị trí 2",
+    "h_{2}": "độ cao của vật tại vị trí 2 so với mốc thế năng",
+    "g": "gia tốc rơi tự do"
+   },
+   "units": {
+    "m": "kg",
+    "v_{1}": "m/s",
+    "h_{1}": "m",
+    "v_{2}": "m/s",
+    "h_{2}": "m",
+    "g": "m/s^2"
+   },
+   "conditions": "Bỏ qua ma sát và sức cản không khí; cùng mốc thế năng cho hai vị trí",
+   "note": "Nếu có ma sát: W1 - W2 = A_ms (phần cơ năng hao hụt chuyển thành nhiệt)",
+   "tags": [
+    "co-nang",
+    "bao-toan",
+    "nang-luong"
+   ],
+   "related": [
+    "physics.thcs.co-nang.bao-toan-co-nang",
+    "physics.thcs.co-nang.van-toc-roi-tu-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.co-nang.van-toc-roi-tu-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Cơ năng",
+   "subtopic": "Bảo toàn cơ năng",
+   "name_vi": "Tốc độ của vật rơi từ độ cao h (suy từ bảo toàn cơ năng)",
+   "name_en": "Speed of a falling body from height h",
+   "latex": "v = \\sqrt{2gh}",
+   "vars": {
+    "v": "tốc độ của vật khi chạm mốc thế năng",
+    "g": "gia tốc rơi tự do",
+    "h": "độ cao ban đầu của vật, thả không vận tốc đầu"
+   },
+   "units": {
+    "v": "m/s",
+    "g": "m/s^2",
+    "h": "m"
+   },
+   "conditions": "Vật được thả rơi không vận tốc đầu, bỏ qua sức cản không khí",
+   "note": "Suy từ mgh = mv^2/2; kết quả không phụ thuộc khối lượng vật",
+   "tags": [
+    "co-nang",
+    "bao-toan",
+    "roi-tu-do"
+   ],
+   "related": [
+    "physics.thcs.co-nang.bao-toan-co-nang-hai-vi-tri"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.nang-luong.dinh-luat-bao-toan-nang-luong",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Năng lượng",
+   "subtopic": "Bảo toàn và chuyển hóa năng lượng",
+   "name_vi": "Định luật bảo toàn và chuyển hóa năng lượng",
+   "name_en": "Law of conservation of energy",
+   "latex": "W_{\\text{truoc}} = W_{\\text{sau}} \\quad \\Leftrightarrow \\quad W_{\\text{co ich}} + W_{\\text{hao phi}} = W_{\\text{cung cap}}",
+   "vars": {
+    "W_{\\text{truoc}}": "tổng năng lượng của hệ trước khi xảy ra quá trình",
+    "W_{\\text{sau}}": "tổng năng lượng của hệ sau khi xảy ra quá trình",
+    "W_{\\text{cung cap}}": "năng lượng toàn phần cung cấp cho thiết bị",
+    "W_{\\text{co ich}}": "phần năng lượng có ích thu được",
+    "W_{\\text{hao phi}}": "phần năng lượng hao phí (thường tỏa ra dưới dạng nhiệt)"
+   },
+   "units": {
+    "W_{\\text{truoc}}": "J",
+    "W_{\\text{sau}}": "J",
+    "W_{\\text{cung cap}}": "J",
+    "W_{\\text{co ich}}": "J",
+    "W_{\\text{hao phi}}": "J"
+   },
+   "conditions": "Xét cho hệ kín (cô lập); phải kể đủ mọi dạng năng lượng, kể cả phần chuyển thành nhiệt do ma sát và tỏa ra môi trường",
+   "note": "Năng lượng không tự sinh ra cũng không tự mất đi, nó chỉ chuyển hóa từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác. Hiệu suất H = W_có ích / W_cung cấp luôn nhỏ hơn 100%",
+   "tags": [
+    "nang-luong",
+    "bao-toan",
+    "dinh-luat",
+    "hieu-suat"
+   ],
+   "related": [
+    "physics.thcs.co-nang.bao-toan-co-nang",
+    "physics.thcs.nhiet-hoc.phuong-trinh-can-bang-nhiet",
+    "physics.thcs.cong-cong-suat.hieu-suat-may-co"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.chiet-suat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Khúc xạ ánh sáng",
+   "name_vi": "Chiết suất của môi trường trong suốt",
+   "name_en": "Refractive index of a medium",
+   "latex": "n = \\dfrac{c}{v}",
+   "vars": {
+    "n": "chiết suất (tuyệt đối) của môi trường trong suốt",
+    "c": "tốc độ ánh sáng trong chân không (lấy gần đúng cho không khí)",
+    "v": "tốc độ truyền ánh sáng trong môi trường đang xét"
+   },
+   "units": {
+    "c": "m/s",
+    "v": "m/s"
+   },
+   "conditions": "Môi trường trong suốt, đồng tính; v > 0 và v < c nên luôn có n > 1",
+   "note": "c = 3.10^8 m/s (chính xác 299792458 m/s). Nước n ≈ 1,33; thủy tinh n ≈ 1,5; kim cương n ≈ 2,42. Chiết suất không có đơn vị; môi trường có n lớn hơn thì chiết quang hơn",
+   "tags": [
+    "quang-hoc",
+    "khuc-xa",
+    "chiet-suat"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.dinh-luat-khuc-xa-snell",
+    "physics.thcs.quang-hoc.khuc-xa-anh-sang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.dinh-luat-khuc-xa-snell",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Khúc xạ ánh sáng",
+   "name_vi": "Định luật khúc xạ ánh sáng (dạng định lượng)",
+   "name_en": "Snell's law",
+   "latex": "n_{1} \\sin i = n_{2} \\sin r",
+   "vars": {
+    "n_{1}": "chiết suất của môi trường chứa tia tới",
+    "i": "góc tới",
+    "n_{2}": "chiết suất của môi trường chứa tia khúc xạ",
+    "r": "góc khúc xạ"
+   },
+   "units": {},
+   "conditions": "Hai môi trường trong suốt, đồng tính; tia tới, tia khúc xạ và pháp tuyến cùng nằm trong một mặt phẳng",
+   "note": "Chiết suất là đại lượng không đơn vị: không khí n ≈ 1,00; nước n ≈ 1,33; thủy tinh n ≈ 1,5. Dạng thường dùng ở lớp 9: sin i / sin r = n_{21} = n_2/n_1. Khi i = 0 thì r = 0, tia sáng truyền thẳng",
+   "tags": [
+    "quang-hoc",
+    "khuc-xa",
+    "mo-rong"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.khuc-xa-anh-sang",
+    "physics.thcs.quang-hoc.chiet-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.khuc-xa-anh-sang",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Khúc xạ ánh sáng",
+   "name_vi": "Hiện tượng khúc xạ ánh sáng (mức mô tả)",
+   "name_en": "Refraction of light (descriptive)",
+   "latex": "\\text{không khí} \\to \\text{nước}: r < i; \\quad \\text{nước} \\to \\text{không khí}: r > i",
+   "vars": {
+    "i": "góc tới tại mặt phân cách hai môi trường",
+    "r": "góc khúc xạ"
+   },
+   "units": {},
+   "conditions": "Tia sáng truyền xiên góc qua mặt phân cách giữa hai môi trường trong suốt khác nhau",
+   "note": "Khi tia sáng đi từ môi trường kém chiết quang sang chiết quang hơn thì tia khúc xạ gãy lại gần pháp tuyến. Nếu i = 0 thì tia sáng truyền thẳng, không bị gãy khúc",
+   "tags": [
+    "quang-hoc",
+    "khuc-xa",
+    "dinh-tinh"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.dinh-luat-khuc-xa-snell",
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh",
+    "physics.thcs.quang-hoc.chiet-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.kinh-lup-so-boi-giac",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Kính lúp",
+   "name_vi": "Số bội giác của kính lúp",
+   "name_en": "Magnifying power of a magnifier",
+   "latex": "G = \\dfrac{25}{f} = \\dfrac{OC_{c}}{f} \\quad (f \\ \\text{tính bằng cm})",
+   "vars": {
+    "G": "số bội giác của kính lúp khi ngắm chừng ở vô cực",
+    "f": "tiêu cự của kính lúp, tính bằng xentimét",
+    "OC_{c}": "khoảng nhìn rõ ngắn nhất của mắt, lấy 25 cm với mắt bình thường"
+   },
+   "units": {
+    "f": "cm",
+    "OC_{c}": "cm"
+   },
+   "conditions": "Kính lúp là thấu kính hội tụ có tiêu cự ngắn (f ≤ 25 cm); vật đặt trong khoảng tiêu cự",
+   "note": "G không có đơn vị; số bội giác thường ghi trên vành kính (2x, 3x, 5x...). Tiêu cự càng nhỏ thì số bội giác càng lớn. Kính lúp cho ảnh ảo, cùng chiều và lớn hơn vật",
+   "tags": [
+    "quang-hoc",
+    "kinh-lup",
+    "so-boi-giac"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.thau-kinh-hoi-tu-tao-anh",
+    "physics.thcs.quang-hoc.mat-va-su-dieu-tiet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.mat-va-su-dieu-tiet",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Mắt",
+   "name_vi": "Sự điều tiết của mắt và giới hạn nhìn rõ",
+   "name_en": "Accommodation and range of clear vision",
+   "latex": "OC_{c} \\le d \\le OC_{v}, \\quad d' = OV = \\text{const}",
+   "vars": {
+    "OC_{c}": "khoảng cực cận - khoảng cách từ mắt đến điểm cực cận",
+    "d": "khoảng cách từ vật đến mắt",
+    "OC_{v}": "khoảng cực viễn - khoảng cách từ mắt đến điểm cực viễn",
+    "d'": "khoảng cách từ thể thủy tinh đến màng lưới (không đổi)",
+    "OV": "khoảng cách từ thể thủy tinh đến màng lưới"
+   },
+   "units": {
+    "OC_{c}": "m",
+    "d": "m",
+    "OC_{v}": "m",
+    "d'": "m",
+    "OV": "m"
+   },
+   "conditions": "Mắt nhìn rõ vật khi vật nằm trong giới hạn nhìn rõ, từ điểm cực cận tới điểm cực viễn",
+   "note": "Mắt bình thường: OC_c ≈ 25 cm (khoảng nhìn rõ ngắn nhất), OC_v ở vô cực. Vì d' không đổi nên mắt phải điều tiết bằng cách thay đổi tiêu cự thể thủy tinh",
+   "tags": [
+    "quang-hoc",
+    "mat",
+    "dieu-tiet"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.kinh-can-thi",
+    "physics.thcs.quang-hoc.kinh-lao-vien-thi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.chieu-cao-anh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính",
+   "name_vi": "Chiều cao của ảnh qua thấu kính",
+   "name_en": "Image height",
+   "latex": "h' = \\left| k \\right| h = \\dfrac{d'}{d} h",
+   "vars": {
+    "h'": "chiều cao của ảnh",
+    "k": "số phóng đại ảnh",
+    "h": "chiều cao của vật",
+    "d'": "khoảng cách từ ảnh đến thấu kính",
+    "d": "khoảng cách từ vật đến thấu kính"
+   },
+   "units": {
+    "h'": "m",
+    "h": "m",
+    "d'": "m",
+    "d": "m"
+   },
+   "conditions": "Dùng độ lớn (giá trị dương) của d và d'",
+   "note": "Suy ra từ hai tam giác đồng dạng trong hình vẽ tạo ảnh",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh",
+    "so-phong-dai"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.so-phong-dai-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.cong-thuc-thau-kinh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính",
+   "name_vi": "Công thức thấu kính",
+   "name_en": "Thin lens equation",
+   "latex": "\\dfrac{1}{f} = \\dfrac{1}{d} + \\dfrac{1}{d'}",
+   "vars": {
+    "f": "tiêu cự của thấu kính (f > 0 với thấu kính hội tụ, f < 0 với thấu kính phân kì)",
+    "d": "khoảng cách từ vật đến thấu kính (d > 0 với vật thật)",
+    "d'": "khoảng cách từ ảnh đến thấu kính (d' > 0 ảnh thật, d' < 0 ảnh ảo)"
+   },
+   "units": {
+    "f": "m",
+    "d": "m",
+    "d'": "m"
+   },
+   "conditions": "Thấu kính mỏng, tia sáng gần trục chính; tuân theo quy ước dấu ở trên",
+   "note": "Nếu bỏ quy ước dấu thì với ảnh ảo dùng 1/f = 1/d - 1/d'. Vật ở vô cực thì ảnh nằm tại tiêu điểm (d' = f)",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh",
+    "tao-anh"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.vi-tri-anh-qua-thau-kinh",
+    "physics.thcs.quang-hoc.so-phong-dai-thau-kinh",
+    "physics.thcs.quang-hoc.do-tu-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.do-tu-thau-kinh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính",
+   "name_vi": "Độ tụ của thấu kính",
+   "name_en": "Optical power of a lens",
+   "latex": "D = \\dfrac{1}{f}",
+   "vars": {
+    "D": "độ tụ của thấu kính",
+    "f": "tiêu cự của thấu kính, tính bằng mét"
+   },
+   "units": {
+    "D": "1/m",
+    "f": "m"
+   },
+   "conditions": "f tính bằng mét; thấu kính hội tụ D > 0, thấu kính phân kì D < 0",
+   "note": "Đơn vị của độ tụ là điôp (dp), 1 dp = 1 m^-1. Kính cận -2 dp có tiêu cự f = -0,5 m",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh",
+    "do-tu"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh",
+    "physics.thcs.quang-hoc.kinh-can-thi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.khoang-cach-vat-anh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính",
+   "name_vi": "Khoảng cách giữa vật và ảnh qua thấu kính",
+   "name_en": "Object-image distance",
+   "latex": "L = \\left| d + d' \\right|",
+   "vars": {
+    "L": "khoảng cách giữa vật và ảnh dọc theo trục chính",
+    "d": "khoảng cách từ vật đến thấu kính",
+    "d'": "khoảng cách từ ảnh đến thấu kính (theo quy ước dấu)"
+   },
+   "units": {
+    "L": "m",
+    "d": "m",
+    "d'": "m"
+   },
+   "conditions": "Vật và ảnh cùng nằm trên trục chính; d' mang dấu theo quy ước (âm khi ảnh ảo)",
+   "note": "Ảnh thật thì vật và ảnh ở hai phía thấu kính (L = d + d'); ảnh ảo thì cùng phía (L = |d - |d'||)",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh",
+    "hinh-hoc"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.so-phong-dai-thau-kinh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính",
+   "name_vi": "Số phóng đại ảnh của thấu kính",
+   "name_en": "Magnification of a lens",
+   "latex": "k = -\\dfrac{d'}{d} = \\dfrac{h'}{h}",
+   "vars": {
+    "k": "số phóng đại ảnh (k > 0: ảnh cùng chiều vật; k < 0: ảnh ngược chiều vật)",
+    "d'": "khoảng cách từ ảnh đến thấu kính",
+    "d": "khoảng cách từ vật đến thấu kính",
+    "h'": "chiều cao của ảnh",
+    "h": "chiều cao của vật"
+   },
+   "units": {
+    "d'": "m",
+    "d": "m",
+    "h'": "m",
+    "h": "m"
+   },
+   "conditions": "Thấu kính mỏng, theo quy ước dấu; d ≠ 0",
+   "note": "k không có đơn vị. |k| > 1: ảnh lớn hơn vật; |k| < 1: ảnh nhỏ hơn vật. Ở THCS thường dùng dạng không dấu h'/h = d'/d",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh",
+    "so-phong-dai"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.chieu-cao-anh",
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.vi-tri-anh-qua-thau-kinh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính",
+   "name_vi": "Vị trí ảnh tạo bởi thấu kính",
+   "name_en": "Image distance of a thin lens",
+   "latex": "d' = \\dfrac{d f}{d - f}",
+   "vars": {
+    "d'": "khoảng cách từ ảnh đến thấu kính",
+    "d": "khoảng cách từ vật đến thấu kính",
+    "f": "tiêu cự của thấu kính"
+   },
+   "units": {
+    "d'": "m",
+    "d": "m",
+    "f": "m"
+   },
+   "conditions": "Thấu kính mỏng, d ≠ f; theo quy ước dấu của công thức thấu kính",
+   "note": "d' > 0: ảnh thật, ngược chiều vật; d' < 0: ảnh ảo, cùng chiều vật",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh",
+    "tao-anh"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.thau-kinh-hoi-tu-tao-anh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính hội tụ",
+   "name_vi": "Tính chất ảnh tạo bởi thấu kính hội tụ",
+   "name_en": "Image properties of a converging lens",
+   "latex": "\\begin{cases} d > 2f: & \\text{ảnh thật, ngược chiều, nhỏ hơn vật} \\\\ d = 2f: & \\text{ảnh thật, ngược chiều, bằng vật} \\\\ f < d < 2f: & \\text{ảnh thật, ngược chiều, lớn hơn vật} \\\\ d < f: & \\text{ảnh ảo, cùng chiều, lớn hơn vật} \\end{cases}",
+   "vars": {
+    "d": "khoảng cách từ vật đến thấu kính hội tụ",
+    "f": "tiêu cự của thấu kính hội tụ"
+   },
+   "units": {
+    "d": "m",
+    "f": "m"
+   },
+   "conditions": "Thấu kính hội tụ (f > 0), vật thật đặt vuông góc trục chính",
+   "note": "Khi d = f thì chùm tia ló song song, không tạo được ảnh (ảnh ở vô cực)",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh-hoi-tu",
+    "tao-anh"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh",
+    "physics.thcs.quang-hoc.thau-kinh-phan-ki-tao-anh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.thau-kinh-phan-ki-tao-anh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Thấu kính phân kì",
+   "name_vi": "Tính chất ảnh tạo bởi thấu kính phân kì",
+   "name_en": "Image properties of a diverging lens",
+   "latex": "\\forall d > 0: \\ \\text{ảnh ảo, cùng chiều, nhỏ hơn vật và nằm trong khoảng tiêu cự}",
+   "vars": {
+    "d": "khoảng cách từ vật đến thấu kính phân kì"
+   },
+   "units": {
+    "d": "m"
+   },
+   "conditions": "Thấu kính phân kì (f < 0), vật thật",
+   "note": "Ảnh ảo của thấu kính phân kì luôn nằm giữa quang tâm và tiêu điểm, cùng phía với vật",
+   "tags": [
+    "quang-hoc",
+    "thau-kinh-phan-ki",
+    "tao-anh"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.thau-kinh-hoi-tu-tao-anh",
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.kinh-can-thi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Tật của mắt",
+   "name_vi": "Kính chữa tật cận thị",
+   "name_en": "Correcting lens for myopia",
+   "latex": "f = -OC_{v}, \\quad D = -\\dfrac{1}{OC_{v}}",
+   "vars": {
+    "f": "tiêu cự của kính cận (thấu kính phân kì)",
+    "OC_{v}": "khoảng cực viễn của mắt cận",
+    "D": "độ tụ của kính cận"
+   },
+   "units": {
+    "f": "m",
+    "OC_{v}": "m",
+    "D": "1/m"
+   },
+   "conditions": "Kính đeo sát mắt; kính tạo ảnh ảo của vật ở vô cực đúng tại điểm cực viễn",
+   "note": "Mắt cận nhìn rõ vật ở gần nhưng không nhìn rõ vật ở xa; phải đeo thấu kính phân kì (độ tụ âm)",
+   "tags": [
+    "quang-hoc",
+    "mat",
+    "can-thi",
+    "thau-kinh-phan-ki"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.do-tu-thau-kinh",
+    "physics.thcs.quang-hoc.kinh-lao-vien-thi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.kinh-lao-vien-thi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Tật của mắt",
+   "name_vi": "Kính chữa tật mắt lão (viễn thị)",
+   "name_en": "Correcting lens for presbyopia / hyperopia",
+   "latex": "\\dfrac{1}{f} = \\dfrac{1}{d} - \\dfrac{1}{OC_{c}}",
+   "vars": {
+    "f": "tiêu cự của kính lão (thấu kính hội tụ)",
+    "d": "khoảng cách từ vật cần nhìn tới mắt (thường d = 25 cm)",
+    "OC_{c}": "khoảng cực cận của mắt lão"
+   },
+   "units": {
+    "f": "m",
+    "d": "m",
+    "OC_{c}": "m"
+   },
+   "conditions": "Kính đeo sát mắt; kính tạo ảnh ảo của vật tại đúng điểm cực cận của mắt (d' = -OC_c)",
+   "note": "Mắt lão nhìn rõ vật ở xa nhưng không nhìn rõ vật ở gần; phải đeo thấu kính hội tụ (độ tụ dương)",
+   "tags": [
+    "quang-hoc",
+    "mat",
+    "vien-thi",
+    "thau-kinh-hoi-tu"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.kinh-can-thi",
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.quang-hoc.may-anh",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Quang học",
+   "subtopic": "Ứng dụng của thấu kính",
+   "name_vi": "Sự tạo ảnh trên phim của máy ảnh",
+   "name_en": "Image formation in a camera",
+   "latex": "\\dfrac{1}{f} = \\dfrac{1}{d} + \\dfrac{1}{d'}, \\quad \\dfrac{h'}{h} = \\dfrac{d'}{d}",
+   "vars": {
+    "f": "tiêu cự của vật kính máy ảnh",
+    "d": "khoảng cách từ vật đến vật kính",
+    "d'": "khoảng cách từ phim (cảm biến) đến vật kính",
+    "h": "chiều cao của vật",
+    "h'": "chiều cao của ảnh trên phim"
+   },
+   "units": {
+    "f": "m",
+    "d": "m",
+    "d'": "m",
+    "h": "m",
+    "h'": "m"
+   },
+   "conditions": "Vật kính là thấu kính hội tụ; vật ở xa hơn tiêu cự (d > f) để thu được ảnh thật trên phim",
+   "note": "Ảnh trên phim là ảnh thật, ngược chiều và nhỏ hơn vật",
+   "tags": [
+    "quang-hoc",
+    "may-anh",
+    "thau-kinh-hoi-tu"
+   ],
+   "related": [
+    "physics.thcs.quang-hoc.cong-thuc-thau-kinh",
+    "physics.thcs.quang-hoc.mat-va-su-dieu-tiet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.cong-suat-hao-phi",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Hao phí trên đường dây",
+   "name_vi": "Công suất hao phí do tỏa nhiệt trên đường dây tải điện",
+   "name_en": "Power loss in transmission lines",
+   "latex": "\\mathcal{P}_{hp} = \\dfrac{\\mathcal{P}^{2} R}{U^{2}}",
+   "vars": {
+    "\\mathcal{P}_{hp}": "công suất hao phí do tỏa nhiệt trên đường dây",
+    "\\mathcal{P}": "công suất điện cần truyền tải",
+    "R": "điện trở tổng cộng của đường dây tải điện",
+    "U": "hiệu điện thế đặt vào hai đầu đường dây truyền tải"
+   },
+   "units": {
+    "\\mathcal{P}_{hp}": "W",
+    "\\mathcal{P}": "W",
+    "R": "ohm",
+    "U": "V"
+   },
+   "conditions": "Coi hệ số công suất bằng 1; U là hiệu điện thế nơi truyền đi",
+   "note": "Suy từ P_hp = I^2R và I = P/U. Tăng U lên n lần thì hao phí giảm n^2 lần - lí do phải dùng máy tăng áp khi truyền tải xa",
+   "tags": [
+    "truyen-tai-dien",
+    "hao-phi",
+    "cong-suat"
+   ],
+   "related": [
+    "physics.thcs.truyen-tai-dien-nang.dien-tro-duong-day",
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dien-ap"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.dien-tro-duong-day",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Hao phí trên đường dây",
+   "name_vi": "Điện trở của đường dây tải điện hai dây",
+   "name_en": "Resistance of a two-wire transmission line",
+   "latex": "R = \\rho \\dfrac{2\\ell}{S}",
+   "vars": {
+    "R": "điện trở tổng cộng của đường dây tải điện (cả đi và về)",
+    "\\rho": "điện trở suất của kim loại làm dây",
+    "\\ell": "khoảng cách truyền tải (chiều dài một dây)",
+    "S": "tiết diện dây dẫn"
+   },
+   "units": {
+    "R": "ohm",
+    "\\rho": "ohm.m",
+    "\\ell": "m",
+    "S": "m^2"
+   },
+   "conditions": "Đường dây gồm hai dây dẫn cùng loại, cùng tiết diện, mỗi dây dài ℓ",
+   "note": "Vì mạch kín nên chiều dài dây thực tế là 2ℓ",
+   "tags": [
+    "truyen-tai-dien",
+    "dien-tro",
+    "duong-day"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dien-tro-day-dan",
+    "physics.thcs.truyen-tai-dien-nang.cong-suat-hao-phi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.do-giam-the",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Hao phí trên đường dây",
+   "name_vi": "Độ giảm thế trên đường dây tải điện",
+   "name_en": "Voltage drop along the line",
+   "latex": "\\Delta U = I R = U_{1} - U_{2}",
+   "vars": {
+    "\\Delta U": "độ giảm hiệu điện thế trên đường dây",
+    "I": "cường độ dòng điện trên đường dây",
+    "R": "điện trở của đường dây",
+    "U_{1}": "hiệu điện thế ở đầu đường dây (nơi truyền đi)",
+    "U_{2}": "hiệu điện thế ở cuối đường dây (nơi tiêu thụ)"
+   },
+   "units": {
+    "\\Delta U": "V",
+    "I": "A",
+    "R": "ohm",
+    "U_{1}": "V",
+    "U_{2}": "V"
+   },
+   "conditions": "Đường dây coi như điện trở thuần",
+   "note": "Công suất hao phí cũng có thể tính bằng P_hp = ΔU·I",
+   "tags": [
+    "truyen-tai-dien",
+    "hao-phi",
+    "hieu-dien-the"
+   ],
+   "related": [
+    "physics.thcs.truyen-tai-dien-nang.cong-suat-hao-phi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.hieu-suat-truyen-tai",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Hiệu suất truyền tải",
+   "name_vi": "Hiệu suất truyền tải điện năng",
+   "name_en": "Transmission efficiency",
+   "latex": "H = \\dfrac{\\mathcal{P} - \\mathcal{P}_{hp}}{\\mathcal{P}} \\cdot 100\\%",
+   "vars": {
+    "H": "hiệu suất truyền tải điện năng",
+    "\\mathcal{P}": "công suất truyền đi từ nơi phát",
+    "\\mathcal{P}_{hp}": "công suất hao phí trên đường dây"
+   },
+   "units": {
+    "\\mathcal{P}": "W",
+    "\\mathcal{P}_{hp}": "W"
+   },
+   "conditions": "P > 0; chỉ tính hao phí do tỏa nhiệt trên đường dây",
+   "note": "Công suất nơi tiêu thụ nhận được: P_tt = P - P_hp",
+   "tags": [
+    "truyen-tai-dien",
+    "hieu-suat"
+   ],
+   "related": [
+    "physics.thcs.truyen-tai-dien-nang.cong-suat-hao-phi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.may-bien-ap-cong-suat",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Máy biến áp",
+   "name_vi": "Bảo toàn công suất trong máy biến áp lí tưởng",
+   "name_en": "Power conservation in an ideal transformer",
+   "latex": "U_{1} I_{1} = U_{2} I_{2}",
+   "vars": {
+    "U_{1}": "hiệu điện thế cuộn sơ cấp",
+    "I_{1}": "cường độ dòng điện cuộn sơ cấp",
+    "U_{2}": "hiệu điện thế cuộn thứ cấp",
+    "I_{2}": "cường độ dòng điện cuộn thứ cấp"
+   },
+   "units": {
+    "U_{1}": "V",
+    "I_{1}": "A",
+    "U_{2}": "V",
+    "I_{2}": "A"
+   },
+   "conditions": "Máy biến áp lí tưởng, hiệu suất 100%, hệ số công suất bằng 1",
+   "note": "Máy biến áp không tạo ra năng lượng, chỉ biến đổi hiệu điện thế và cường độ dòng điện",
+   "tags": [
+    "may-bien-ap",
+    "bao-toan-nang-luong"
+   ],
+   "related": [
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dong-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dien-ap",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Máy biến áp",
+   "name_vi": "Công thức máy biến áp (tỉ số hiệu điện thế)",
+   "name_en": "Transformer voltage ratio",
+   "latex": "\\dfrac{U_{1}}{U_{2}} = \\dfrac{N_{1}}{N_{2}}",
+   "vars": {
+    "U_{1}": "hiệu điện thế đặt vào hai đầu cuộn sơ cấp",
+    "U_{2}": "hiệu điện thế lấy ra ở hai đầu cuộn thứ cấp",
+    "N_{1}": "số vòng dây cuộn sơ cấp",
+    "N_{2}": "số vòng dây cuộn thứ cấp"
+   },
+   "units": {
+    "U_{1}": "V",
+    "U_{2}": "V"
+   },
+   "conditions": "Máy biến áp lí tưởng, dùng với dòng điện xoay chiều; N1, N2 là số vòng (không có đơn vị)",
+   "note": "N1 > N2: máy hạ áp; N1 < N2: máy tăng áp. Máy biến áp không hoạt động với dòng điện một chiều không đổi",
+   "tags": [
+    "may-bien-ap",
+    "truyen-tai-dien",
+    "dien-xoay-chieu"
+   ],
+   "related": [
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dong-dien",
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-cong-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dong-dien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Truyền tải điện năng",
+   "subtopic": "Máy biến áp",
+   "name_vi": "Tỉ số cường độ dòng điện trong máy biến áp",
+   "name_en": "Transformer current ratio",
+   "latex": "\\dfrac{I_{1}}{I_{2}} = \\dfrac{N_{2}}{N_{1}} = \\dfrac{U_{2}}{U_{1}}",
+   "vars": {
+    "I_{1}": "cường độ dòng điện trong cuộn sơ cấp",
+    "I_{2}": "cường độ dòng điện trong cuộn thứ cấp",
+    "N_{1}": "số vòng dây cuộn sơ cấp",
+    "N_{2}": "số vòng dây cuộn thứ cấp",
+    "U_{1}": "hiệu điện thế cuộn sơ cấp",
+    "U_{2}": "hiệu điện thế cuộn thứ cấp"
+   },
+   "units": {
+    "I_{1}": "A",
+    "I_{2}": "A",
+    "U_{1}": "V",
+    "U_{2}": "V"
+   },
+   "conditions": "Máy biến áp lí tưởng (hiệu suất 100%), bỏ qua hao phí trong lõi và cuộn dây",
+   "note": "Tăng hiệu điện thế bao nhiêu lần thì cường độ dòng điện giảm bấy nhiêu lần",
+   "tags": [
+    "may-bien-ap",
+    "dien-xoay-chieu"
+   ],
+   "related": [
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dien-ap"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.bien-tro",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Biến trở",
+   "name_vi": "Biến trở con chạy",
+   "name_en": "Rheostat",
+   "latex": "R = \\rho \\dfrac{l}{S} \\ \\text{với } l \\text{ thay đổi được}",
+   "vars": {
+    "R": "điện trở của phần dây tham gia mạch điện",
+    "\\rho": "điện trở suất của vật liệu làm biến trở",
+    "l": "chiều dài phần dây có dòng điện chạy qua (thay đổi nhờ con chạy)",
+    "S": "tiết diện dây quấn biến trở"
+   },
+   "units": {
+    "R": "ohm",
+    "\\rho": "ohm.m",
+    "l": "m",
+    "S": "m^2"
+   },
+   "conditions": "0 ≤ R ≤ R_max ghi trên biến trở",
+   "note": "Biến trở dùng để điều chỉnh cường độ dòng điện trong mạch; ghi ví dụ 20Ω - 2A nghĩa là điện trở lớn nhất 20 Ω, cường độ tối đa 2 A",
+   "tags": [
+    "dien-hoc",
+    "bien-tro",
+    "dien-tro"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dien-tro-day-dan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.cong-cua-dong-dien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Công và công suất điện",
+   "name_vi": "Công của dòng điện (điện năng tiêu thụ)",
+   "name_en": "Electrical work / energy consumed",
+   "latex": "A = U I t = \\mathcal{P} t",
+   "vars": {
+    "A": "công của dòng điện (điện năng tiêu thụ) của đoạn mạch",
+    "U": "hiệu điện thế hai đầu đoạn mạch",
+    "I": "cường độ dòng điện qua đoạn mạch",
+    "t": "thời gian dòng điện chạy qua",
+    "\\mathcal{P}": "công suất điện của đoạn mạch"
+   },
+   "units": {
+    "A": "J",
+    "U": "V",
+    "I": "A",
+    "t": "s",
+    "\\mathcal{P}": "W"
+   },
+   "conditions": "Dòng điện không đổi trong thời gian t",
+   "note": "Điện năng tiêu thụ đo bằng công tơ điện, đơn vị kWh: 1 kWh = 3,6.10^6 J",
+   "tags": [
+    "dien-hoc",
+    "dien-nang",
+    "cong"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-suat-dien",
+    "physics.thcs.dien-hoc.so-dem-cong-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.cong-suat-dien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Công và công suất điện",
+   "name_vi": "Công suất điện của đoạn mạch",
+   "name_en": "Electric power",
+   "latex": "\\mathcal{P} = U I",
+   "vars": {
+    "\\mathcal{P}": "công suất điện tiêu thụ của đoạn mạch",
+    "U": "hiệu điện thế hai đầu đoạn mạch",
+    "I": "cường độ dòng điện qua đoạn mạch"
+   },
+   "units": {
+    "\\mathcal{P}": "W",
+    "U": "V",
+    "I": "A"
+   },
+   "conditions": "Áp dụng cho mọi đoạn mạch tiêu thụ điện",
+   "note": "Số oát ghi trên dụng cụ điện là công suất định mức khi dùng đúng hiệu điện thế định mức",
+   "tags": [
+    "dien-hoc",
+    "cong-suat-dien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-suat-theo-i-va-r",
+    "physics.thcs.dien-hoc.cong-suat-theo-u-va-r"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.cong-suat-theo-i-va-r",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Công và công suất điện",
+   "name_vi": "Công suất điện theo cường độ dòng điện và điện trở",
+   "name_en": "Power as I squared R",
+   "latex": "\\mathcal{P} = I^{2} R",
+   "vars": {
+    "\\mathcal{P}": "công suất tiêu thụ trên điện trở",
+    "I": "cường độ dòng điện qua điện trở",
+    "R": "điện trở của đoạn mạch"
+   },
+   "units": {
+    "\\mathcal{P}": "W",
+    "I": "A",
+    "R": "ohm"
+   },
+   "conditions": "Đoạn mạch chỉ có điện trở thuần (toàn bộ điện năng chuyển thành nhiệt)",
+   "note": "Dùng cho đoạn mạch nối tiếp: cùng I nên điện trở lớn hơn tỏa nhiệt nhiều hơn",
+   "tags": [
+    "dien-hoc",
+    "cong-suat-dien",
+    "toa-nhiet"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-suat-dien",
+    "physics.thcs.dien-hoc.dinh-luat-jun-len-xo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.cong-suat-theo-u-va-r",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Công và công suất điện",
+   "name_vi": "Công suất điện theo hiệu điện thế và điện trở",
+   "name_en": "Power as U squared over R",
+   "latex": "\\mathcal{P} = \\dfrac{U^{2}}{R}",
+   "vars": {
+    "\\mathcal{P}": "công suất tiêu thụ trên điện trở",
+    "U": "hiệu điện thế hai đầu điện trở",
+    "R": "điện trở"
+   },
+   "units": {
+    "\\mathcal{P}": "W",
+    "U": "V",
+    "R": "ohm"
+   },
+   "conditions": "Đoạn mạch chỉ có điện trở thuần; R > 0",
+   "note": "Dùng cho đoạn mạch song song: cùng U nên điện trở nhỏ hơn tiêu thụ công suất lớn hơn",
+   "tags": [
+    "dien-hoc",
+    "cong-suat-dien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-suat-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.cuong-do-dinh-muc",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Công và công suất điện",
+   "name_vi": "Cường độ dòng điện định mức và điện trở của dụng cụ điện",
+   "name_en": "Rated current and resistance of an appliance",
+   "latex": "I_{dm} = \\dfrac{\\mathcal{P}_{dm}}{U_{dm}}, \\quad R = \\dfrac{U_{dm}^{2}}{\\mathcal{P}_{dm}}",
+   "vars": {
+    "I_{dm}": "cường độ dòng điện định mức của dụng cụ",
+    "\\mathcal{P}_{dm}": "công suất định mức ghi trên dụng cụ",
+    "U_{dm}": "hiệu điện thế định mức ghi trên dụng cụ",
+    "R": "điện trở của dụng cụ khi hoạt động bình thường"
+   },
+   "units": {
+    "I_{dm}": "A",
+    "\\mathcal{P}_{dm}": "W",
+    "U_{dm}": "V",
+    "R": "ohm"
+   },
+   "conditions": "Dụng cụ hoạt động bình thường ở đúng hiệu điện thế định mức",
+   "note": "Ví dụ bóng đèn 220V - 100W có I_đm ≈ 0,45 A và R ≈ 484 Ω",
+   "tags": [
+    "dien-hoc",
+    "cong-suat-dien",
+    "dinh-muc"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-suat-dien",
+    "physics.thcs.dien-hoc.cong-suat-theo-u-va-r"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.hieu-suat-dien",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Sử dụng điện năng",
+   "name_vi": "Hiệu suất sử dụng điện năng",
+   "name_en": "Efficiency of an electrical device",
+   "latex": "H = \\dfrac{A_{i}}{A_{tp}} \\cdot 100\\%",
+   "vars": {
+    "H": "hiệu suất của thiết bị điện",
+    "A_{i}": "phần điện năng chuyển hóa thành dạng năng lượng có ích",
+    "A_{tp}": "điện năng toàn phần tiêu thụ (A = UIt)"
+   },
+   "units": {
+    "A_{i}": "J",
+    "A_{tp}": "J"
+   },
+   "conditions": "A_tp > 0",
+   "note": "Với ấm điện đun nước: A_i = mcΔt, A_tp = UIt. Đèn LED có hiệu suất phát sáng cao hơn đèn sợi đốt nhiều lần",
+   "tags": [
+    "dien-hoc",
+    "hieu-suat",
+    "dien-nang"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-cua-dong-dien",
+    "physics.thcs.nhiet-hoc.hieu-suat-bep-dun"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.so-dem-cong-to",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Sử dụng điện năng",
+   "name_vi": "Số đếm của công tơ điện (điện năng tính bằng kWh)",
+   "name_en": "Electricity meter reading (kWh)",
+   "latex": "A_{(kWh)} = \\mathcal{P}_{(kW)} \\cdot t_{(h)}, \\quad 1\\ \\text{kWh} = 3{,}6 \\cdot 10^{6}\\ \\text{J}",
+   "vars": {
+    "A_{(kWh)}": "điện năng tiêu thụ tính bằng kilôoát giờ",
+    "\\mathcal{P}_{(kW)}": "công suất của dụng cụ điện tính bằng kilôoát",
+    "t_{(h)}": "thời gian sử dụng tính bằng giờ"
+   },
+   "units": {
+    "A_{(kWh)}": "kWh",
+    "\\mathcal{P}_{(kW)}": "kW",
+    "t_{(h)}": "h"
+   },
+   "conditions": "Công suất không đổi trong suốt thời gian sử dụng",
+   "note": "Mỗi số đếm của công tơ ứng với 1 kWh điện năng tiêu thụ. Tiền điện = số kWh × đơn giá",
+   "tags": [
+    "dien-hoc",
+    "dien-nang",
+    "thuc-tien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.cong-cua-dong-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.dien-tro-day-dan",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Điện trở",
+   "name_vi": "Điện trở của dây dẫn theo chiều dài, tiết diện và vật liệu",
+   "name_en": "Resistance of a wire",
+   "latex": "R = \\rho \\dfrac{l}{S}",
+   "vars": {
+    "R": "điện trở của dây dẫn",
+    "\\rho": "điện trở suất của vật liệu làm dây",
+    "l": "chiều dài dây dẫn",
+    "S": "tiết diện ngang của dây dẫn"
+   },
+   "units": {
+    "R": "ohm",
+    "\\rho": "ohm.m",
+    "l": "m",
+    "S": "m^2"
+   },
+   "conditions": "Dây dẫn đồng chất, tiết diện đều, nhiệt độ không đổi",
+   "note": "Điện trở suất ở 20 °C: bạc 1,6.10^-8; đồng 1,7.10^-8; nhôm 2,8.10^-8; nikêlin 0,40.10^-6; constantan 0,50.10^-6 (ohm.m)",
+   "tags": [
+    "dien-hoc",
+    "dien-tro",
+    "dien-tro-suat"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.tiet-dien-day-tron",
+    "physics.thcs.dien-hoc.bien-tro"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.dien-tro-doan-mach",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Điện trở",
+   "name_vi": "Điện trở của đoạn mạch",
+   "name_en": "Resistance definition",
+   "latex": "R = \\dfrac{U}{I}",
+   "vars": {
+    "R": "điện trở của đoạn mạch (dây dẫn)",
+    "U": "hiệu điện thế giữa hai đầu đoạn mạch",
+    "I": "cường độ dòng điện qua đoạn mạch"
+   },
+   "units": {
+    "R": "ohm",
+    "U": "V",
+    "I": "A"
+   },
+   "conditions": "I > 0; nhiệt độ dây dẫn không đổi",
+   "note": "1 ohm = 1 V/A; 1 kΩ = 1000 Ω; 1 MΩ = 10^6 Ω. R là đặc trưng của dây dẫn, không phụ thuộc U và I",
+   "tags": [
+    "dien-hoc",
+    "dien-tro",
+    "dinh-luat-om"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dinh-luat-om",
+    "physics.thcs.dien-hoc.dien-tro-day-dan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.tiet-dien-day-tron",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Điện trở",
+   "name_vi": "Tiết diện của dây dẫn hình trụ tròn",
+   "name_en": "Cross-sectional area of a round wire",
+   "latex": "S = \\pi r^{2} = \\dfrac{\\pi d^{2}}{4}",
+   "vars": {
+    "S": "tiết diện ngang của dây dẫn",
+    "r": "bán kính tiết diện dây",
+    "d": "đường kính tiết diện dây"
+   },
+   "units": {
+    "S": "m^2",
+    "r": "m",
+    "d": "m"
+   },
+   "conditions": "Dây dẫn hình trụ tròn, tiết diện đều",
+   "note": "Dùng kèm R = ρl/S; lưu ý đổi mm^2 = 10^-6 m^2",
+   "tags": [
+    "dien-hoc",
+    "dien-tro",
+    "hinh-hoc"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dien-tro-day-dan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.noi-tiep-cuong-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch nối tiếp",
+   "name_vi": "Cường độ dòng điện trong đoạn mạch nối tiếp",
+   "name_en": "Current in a series circuit",
+   "latex": "I = I_{1} = I_{2} = \\cdots = I_{n}",
+   "vars": {
+    "I": "cường độ dòng điện trong mạch chính",
+    "I_{1}": "cường độ dòng điện qua điện trở thứ nhất",
+    "I_{2}": "cường độ dòng điện qua điện trở thứ hai",
+    "I_{n}": "cường độ dòng điện qua điện trở thứ n"
+   },
+   "units": {
+    "I": "A",
+    "I_{1}": "A",
+    "I_{2}": "A",
+    "I_{n}": "A"
+   },
+   "conditions": "Các thiết bị mắc nối tiếp",
+   "note": "Dòng điện có cùng cường độ tại mọi điểm của mạch nối tiếp",
+   "tags": [
+    "dien-hoc",
+    "mach-noi-tiep",
+    "cuong-do-dong-dien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.noi-tiep-dien-tro"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.noi-tiep-dien-tro",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch nối tiếp",
+   "name_vi": "Điện trở tương đương của đoạn mạch nối tiếp",
+   "name_en": "Equivalent resistance in series",
+   "latex": "R_{td} = R_{1} + R_{2} + \\cdots + R_{n}",
+   "vars": {
+    "R_{td}": "điện trở tương đương của đoạn mạch",
+    "R_{1}": "điện trở thứ nhất",
+    "R_{2}": "điện trở thứ hai",
+    "R_{n}": "điện trở thứ n"
+   },
+   "units": {
+    "R_{td}": "ohm",
+    "R_{1}": "ohm",
+    "R_{2}": "ohm",
+    "R_{n}": "ohm"
+   },
+   "conditions": "Các điện trở mắc nối tiếp (nối liên tiếp, chỉ có một đường đi cho dòng điện)",
+   "note": "Điện trở tương đương luôn lớn hơn mỗi điện trở thành phần. n điện trở r giống nhau: R = n·r",
+   "tags": [
+    "dien-hoc",
+    "mach-noi-tiep",
+    "dien-tro"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.noi-tiep-cuong-do",
+    "physics.thcs.dien-hoc.noi-tiep-hieu-dien-the"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.noi-tiep-hieu-dien-the",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch nối tiếp",
+   "name_vi": "Hiệu điện thế trong đoạn mạch nối tiếp",
+   "name_en": "Voltage in a series circuit",
+   "latex": "U = U_{1} + U_{2} + \\cdots + U_{n}",
+   "vars": {
+    "U": "hiệu điện thế hai đầu đoạn mạch",
+    "U_{1}": "hiệu điện thế hai đầu điện trở thứ nhất",
+    "U_{2}": "hiệu điện thế hai đầu điện trở thứ hai",
+    "U_{n}": "hiệu điện thế hai đầu điện trở thứ n"
+   },
+   "units": {
+    "U": "V",
+    "U_{1}": "V",
+    "U_{2}": "V",
+    "U_{n}": "V"
+   },
+   "conditions": "Các điện trở mắc nối tiếp",
+   "note": "Hiệu điện thế được chia cho các điện trở theo tỉ lệ điện trở",
+   "tags": [
+    "dien-hoc",
+    "mach-noi-tiep",
+    "hieu-dien-the"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.noi-tiep-ti-le"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.noi-tiep-ti-le",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch nối tiếp",
+   "name_vi": "Tỉ lệ hiệu điện thế trong đoạn mạch nối tiếp",
+   "name_en": "Voltage divider ratio",
+   "latex": "\\dfrac{U_{1}}{U_{2}} = \\dfrac{R_{1}}{R_{2}}",
+   "vars": {
+    "U_{1}": "hiệu điện thế hai đầu R1",
+    "U_{2}": "hiệu điện thế hai đầu R2",
+    "R_{1}": "điện trở thứ nhất",
+    "R_{2}": "điện trở thứ hai"
+   },
+   "units": {
+    "U_{1}": "V",
+    "U_{2}": "V",
+    "R_{1}": "ohm",
+    "R_{2}": "ohm"
+   },
+   "conditions": "R1 nối tiếp R2 nên có cùng cường độ dòng điện",
+   "note": "Điện trở lớn hơn thì chịu hiệu điện thế lớn hơn: U1 = U·R1/(R1+R2)",
+   "tags": [
+    "dien-hoc",
+    "mach-noi-tiep",
+    "chia-the"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.noi-tiep-hieu-dien-the",
+    "physics.thcs.dien-hoc.song-song-ti-le"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.song-song-cuong-do",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch song song",
+   "name_vi": "Cường độ dòng điện trong đoạn mạch song song",
+   "name_en": "Current in a parallel circuit",
+   "latex": "I = I_{1} + I_{2} + \\cdots + I_{n}",
+   "vars": {
+    "I": "cường độ dòng điện trong mạch chính",
+    "I_{1}": "cường độ dòng điện qua nhánh thứ nhất",
+    "I_{2}": "cường độ dòng điện qua nhánh thứ hai",
+    "I_{n}": "cường độ dòng điện qua nhánh thứ n"
+   },
+   "units": {
+    "I": "A",
+    "I_{1}": "A",
+    "I_{2}": "A",
+    "I_{n}": "A"
+   },
+   "conditions": "Các nhánh mắc song song với nhau",
+   "note": "Dòng điện mạch chính bằng tổng dòng điện các mạch rẽ (nút mạch)",
+   "tags": [
+    "dien-hoc",
+    "mach-song-song",
+    "cuong-do-dong-dien"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.song-song-ti-le"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.song-song-dien-tro",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch song song",
+   "name_vi": "Điện trở tương đương của đoạn mạch song song",
+   "name_en": "Equivalent resistance in parallel",
+   "latex": "\\dfrac{1}{R_{td}} = \\dfrac{1}{R_{1}} + \\dfrac{1}{R_{2}} + \\cdots + \\dfrac{1}{R_{n}}",
+   "vars": {
+    "R_{td}": "điện trở tương đương của đoạn mạch song song",
+    "R_{1}": "điện trở thứ nhất",
+    "R_{2}": "điện trở thứ hai",
+    "R_{n}": "điện trở thứ n"
+   },
+   "units": {
+    "R_{td}": "ohm",
+    "R_{1}": "ohm",
+    "R_{2}": "ohm",
+    "R_{n}": "ohm"
+   },
+   "conditions": "Các điện trở mắc song song (chung hai điểm đầu - cuối)",
+   "note": "Điện trở tương đương luôn nhỏ hơn điện trở nhỏ nhất trong mạch",
+   "tags": [
+    "dien-hoc",
+    "mach-song-song",
+    "dien-tro"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.song-song-hai-dien-tro",
+    "physics.thcs.dien-hoc.song-song-n-dien-tro-giong-nhau"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.song-song-hai-dien-tro",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch song song",
+   "name_vi": "Điện trở tương đương của hai điện trở mắc song song",
+   "name_en": "Equivalent resistance of two parallel resistors",
+   "latex": "R_{td} = \\dfrac{R_{1} R_{2}}{R_{1} + R_{2}}",
+   "vars": {
+    "R_{td}": "điện trở tương đương",
+    "R_{1}": "điện trở thứ nhất",
+    "R_{2}": "điện trở thứ hai"
+   },
+   "units": {
+    "R_{td}": "ohm",
+    "R_{1}": "ohm",
+    "R_{2}": "ohm"
+   },
+   "conditions": "Chỉ dùng cho ĐÚNG hai điện trở mắc song song",
+   "note": "Mẹo nhớ: tích chia tổng. Không áp dụng trực tiếp cho ba điện trở trở lên",
+   "tags": [
+    "dien-hoc",
+    "mach-song-song",
+    "dien-tro"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.song-song-dien-tro"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.song-song-hieu-dien-the",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch song song",
+   "name_vi": "Hiệu điện thế trong đoạn mạch song song",
+   "name_en": "Voltage in a parallel circuit",
+   "latex": "U = U_{1} = U_{2} = \\cdots = U_{n}",
+   "vars": {
+    "U": "hiệu điện thế hai đầu đoạn mạch song song",
+    "U_{1}": "hiệu điện thế hai đầu nhánh thứ nhất",
+    "U_{2}": "hiệu điện thế hai đầu nhánh thứ hai",
+    "U_{n}": "hiệu điện thế hai đầu nhánh thứ n"
+   },
+   "units": {
+    "U": "V",
+    "U_{1}": "V",
+    "U_{2}": "V",
+    "U_{n}": "V"
+   },
+   "conditions": "Các nhánh mắc song song, chung hai điểm nút",
+   "note": "Vì vậy các thiết bị điện trong nhà mắc song song để đều hoạt động ở 220 V",
+   "tags": [
+    "dien-hoc",
+    "mach-song-song",
+    "hieu-dien-the"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.song-song-cuong-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.song-song-n-dien-tro-giong-nhau",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch song song",
+   "name_vi": "n điện trở giống nhau mắc song song",
+   "name_en": "n identical resistors in parallel",
+   "latex": "R_{td} = \\dfrac{r}{n}",
+   "vars": {
+    "R_{td}": "điện trở tương đương",
+    "r": "giá trị của mỗi điện trở thành phần",
+    "n": "số điện trở giống nhau mắc song song"
+   },
+   "units": {
+    "R_{td}": "ohm",
+    "r": "ohm"
+   },
+   "conditions": "n điện trở hoàn toàn giống nhau, mắc song song; n nguyên dương",
+   "note": "n không có đơn vị. Trường hợp nối tiếp thì R = n·r",
+   "tags": [
+    "dien-hoc",
+    "mach-song-song",
+    "dien-tro"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.song-song-dien-tro",
+    "physics.thcs.dien-hoc.noi-tiep-dien-tro"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.song-song-ti-le",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Đoạn mạch song song",
+   "name_vi": "Tỉ lệ cường độ dòng điện trong đoạn mạch song song",
+   "name_en": "Current divider ratio",
+   "latex": "\\dfrac{I_{1}}{I_{2}} = \\dfrac{R_{2}}{R_{1}}",
+   "vars": {
+    "I_{1}": "cường độ dòng điện qua R1",
+    "I_{2}": "cường độ dòng điện qua R2",
+    "R_{1}": "điện trở nhánh thứ nhất",
+    "R_{2}": "điện trở nhánh thứ hai"
+   },
+   "units": {
+    "I_{1}": "A",
+    "I_{2}": "A",
+    "R_{1}": "ohm",
+    "R_{2}": "ohm"
+   },
+   "conditions": "R1 song song R2 nên có cùng hiệu điện thế",
+   "note": "Nhánh có điện trở nhỏ hơn thì dòng điện lớn hơn: I1 = I·R2/(R1+R2)",
+   "tags": [
+    "dien-hoc",
+    "mach-song-song",
+    "chia-dong"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.song-song-cuong-do",
+    "physics.thcs.dien-hoc.noi-tiep-ti-le"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.dinh-luat-jun-len-xo",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Định luật Jun - Len-xơ",
+   "name_vi": "Định luật Jun - Len-xơ",
+   "name_en": "Joule-Lenz law",
+   "latex": "Q = I^{2} R t",
+   "vars": {
+    "Q": "nhiệt lượng tỏa ra ở dây dẫn",
+    "I": "cường độ dòng điện qua dây dẫn",
+    "R": "điện trở của dây dẫn",
+    "t": "thời gian dòng điện chạy qua"
+   },
+   "units": {
+    "Q": "J",
+    "I": "A",
+    "R": "ohm",
+    "t": "s"
+   },
+   "conditions": "Đoạn mạch chỉ có điện trở thuần, toàn bộ điện năng biến thành nhiệt năng",
+   "note": "Nhiệt lượng tỏa ra tỉ lệ thuận với bình phương cường độ dòng điện, với điện trở và với thời gian",
+   "tags": [
+    "dien-hoc",
+    "jun-len-xo",
+    "toa-nhiet"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.jun-len-xo-calo",
+    "physics.thcs.dien-hoc.cong-suat-theo-i-va-r"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.jun-len-xo-calo",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Định luật Jun - Len-xơ",
+   "name_vi": "Định luật Jun - Len-xơ tính theo đơn vị calo",
+   "name_en": "Joule-Lenz law in calories",
+   "latex": "Q = 0{,}24 \\, I^{2} R t \\ (\\text{cal})",
+   "vars": {
+    "Q": "nhiệt lượng tỏa ra tính bằng calo",
+    "I": "cường độ dòng điện",
+    "R": "điện trở của dây dẫn",
+    "t": "thời gian dòng điện chạy qua"
+   },
+   "units": {
+    "Q": "cal",
+    "I": "A",
+    "R": "ohm",
+    "t": "s"
+   },
+   "conditions": "Đoạn mạch chỉ có điện trở thuần; Q tính bằng cal (không phải đơn vị SI)",
+   "note": "1 J ≈ 0,24 cal và 1 cal ≈ 4,18 J",
+   "tags": [
+    "dien-hoc",
+    "jun-len-xo",
+    "doi-don-vi"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dinh-luat-jun-len-xo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.dinh-luat-om",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Định luật Ôm",
+   "name_vi": "Định luật Ôm cho đoạn mạch",
+   "name_en": "Ohm's law",
+   "latex": "I = \\dfrac{U}{R}",
+   "vars": {
+    "I": "cường độ dòng điện chạy qua đoạn mạch",
+    "U": "hiệu điện thế giữa hai đầu đoạn mạch",
+    "R": "điện trở của đoạn mạch"
+   },
+   "units": {
+    "I": "A",
+    "U": "V",
+    "R": "ohm"
+   },
+   "conditions": "Đoạn mạch chỉ chứa điện trở thuần, nhiệt độ không đổi; R > 0",
+   "note": "Cường độ dòng điện tỉ lệ thuận với hiệu điện thế và tỉ lệ nghịch với điện trở",
+   "tags": [
+    "dien-hoc",
+    "dinh-luat-om",
+    "dien-tro"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.hieu-dien-the-om",
+    "physics.thcs.dien-hoc.dien-tro-doan-mach"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-hoc.hieu-dien-the-om",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện học",
+   "subtopic": "Định luật Ôm",
+   "name_vi": "Hiệu điện thế giữa hai đầu điện trở",
+   "name_en": "Voltage across a resistor",
+   "latex": "U = I \\cdot R",
+   "vars": {
+    "U": "hiệu điện thế giữa hai đầu điện trở",
+    "I": "cường độ dòng điện qua điện trở",
+    "R": "điện trở"
+   },
+   "units": {
+    "U": "V",
+    "I": "A",
+    "R": "ohm"
+   },
+   "conditions": "Điện trở thuần, nhiệt độ không đổi",
+   "note": "Đo U bằng vôn kế mắc song song với đoạn mạch cần đo",
+   "tags": [
+    "dien-hoc",
+    "dinh-luat-om",
+    "hieu-dien-the"
+   ],
+   "related": [
+    "physics.thcs.dien-hoc.dinh-luat-om"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-tu.dieu-kien-dong-dien-cam-ung",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện từ",
+   "subtopic": "Cảm ứng điện từ",
+   "name_vi": "Điều kiện xuất hiện dòng điện cảm ứng",
+   "name_en": "Condition for induced current",
+   "latex": "\\Delta \\Phi \\neq 0 \\ \\text{qua tiết diện cuộn dây kín} \\Rightarrow \\text{xuất hiện dòng điện cảm ứng}",
+   "vars": {
+    "\\Delta \\Phi": "sự biến thiên của số đường sức từ (từ thông) xuyên qua tiết diện S của cuộn dây kín"
+   },
+   "units": {},
+   "conditions": "Cuộn dây dẫn phải KÍN; số đường sức từ xuyên qua tiết diện của cuộn dây phải biến thiên",
+   "note": "Ở THCS phát biểu: dòng điện cảm ứng xuất hiện khi số đường sức từ xuyên qua tiết diện S của cuộn dây dẫn kín biến thiên (tăng hoặc giảm)",
+   "tags": [
+    "dien-tu",
+    "cam-ung-dien-tu",
+    "dieu-kien"
+   ],
+   "related": [
+    "physics.thcs.dien-tu.dong-dien-xoay-chieu",
+    "physics.thcs.truyen-tai-dien-nang.may-bien-ap-dien-ap"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-tu.dong-dien-xoay-chieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện từ",
+   "subtopic": "Dòng điện xoay chiều",
+   "name_vi": "Chu kì và tần số của dòng điện xoay chiều",
+   "name_en": "Period and frequency of AC",
+   "latex": "T = \\dfrac{1}{f}",
+   "vars": {
+    "T": "chu kì của dòng điện xoay chiều",
+    "f": "tần số của dòng điện xoay chiều"
+   },
+   "units": {
+    "T": "s",
+    "f": "Hz"
+   },
+   "conditions": "Dòng điện xoay chiều biến thiên tuần hoàn",
+   "note": "Lưới điện Việt Nam: f = 50 Hz nên T = 0,02 s; dòng điện đổi chiều 100 lần trong 1 giây",
+   "tags": [
+    "dien-tu",
+    "dien-xoay-chieu",
+    "tan-so"
+   ],
+   "related": [
+    "physics.thcs.dien-tu.dieu-kien-dong-dien-cam-ung",
+    "physics.thcs.am-hoc.chu-ki-dao-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-tu.quy-tac-ban-tay-trai",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện từ",
+   "subtopic": "Lực điện từ",
+   "name_vi": "Quy tắc bàn tay trái",
+   "name_en": "Left-hand rule (Fleming)",
+   "latex": "\\vec{B} \\ \\text{vào lòng bàn tay}, \\ \\vec{I} \\ \\text{theo chiều 4 ngón tay} \\Rightarrow \\vec{F} \\ \\text{theo ngón cái choãi } 90^{\\circ}",
+   "vars": {
+    "\\vec{B}": "vectơ cảm ứng từ (chiều đường sức từ)",
+    "\\vec{I}": "chiều dòng điện trong dây dẫn",
+    "\\vec{F}": "chiều lực điện từ tác dụng lên dây dẫn"
+   },
+   "units": {},
+   "conditions": "Dây dẫn có dòng điện đặt trong từ trường và không song song với đường sức từ",
+   "note": "Đặt bàn tay trái sao cho các đường sức từ hướng vào lòng bàn tay, chiều từ cổ tay đến ngón tay giữa là chiều dòng điện thì ngón tay cái choãi ra 90 độ chỉ chiều của lực điện từ",
+   "tags": [
+    "dien-tu",
+    "luc-dien-tu",
+    "quy-tac"
+   ],
+   "related": [
+    "physics.thcs.dien-tu.quy-tac-nam-tay-phai",
+    "physics.thcs.dien-tu.dong-co-dien-mot-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-tu.quy-tac-nam-tay-phai",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện từ",
+   "subtopic": "Từ trường của dòng điện",
+   "name_vi": "Quy tắc nắm tay phải",
+   "name_en": "Right-hand grip rule",
+   "latex": "\\text{Chiều dòng điện} \\ (4 \\ \\text{ngón tay}) \\Rightarrow \\text{chiều đường sức từ trong lòng ống dây} \\ (\\text{ngón cái choãi ra})",
+   "vars": {},
+   "units": {},
+   "conditions": "Áp dụng cho ống dây (solenoid) có dòng điện chạy qua",
+   "note": "Nắm bàn tay phải sao cho bốn ngón tay hướng theo chiều dòng điện chạy qua các vòng dây thì ngón tay cái choãi ra chỉ chiều đường sức từ trong lòng ống dây (đầu đó là cực Bắc). Với dây dẫn THẲNG thì ngược lại: ngón cái chỉ chiều dòng điện, bốn ngón khum lại chỉ chiều đường sức từ bao quanh dây",
+   "tags": [
+    "dien-tu",
+    "tu-truong",
+    "quy-tac"
+   ],
+   "related": [
+    "physics.thcs.dien-tu.quy-tac-ban-tay-trai",
+    "physics.thcs.dien-tu.dieu-kien-dong-dien-cam-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "physics.thcs.dien-tu.dong-co-dien-mot-chieu",
+   "subject": "physics",
+   "level": "thcs",
+   "grades": [
+    9
+   ],
+   "topic": "Điện từ",
+   "subtopic": "Ứng dụng",
+   "name_vi": "Sự chuyển hóa năng lượng trong động cơ điện",
+   "name_en": "Energy conversion in an electric motor",
+   "latex": "A_{\\text{dien}} = A_{\\text{co ich}} + Q_{\\text{hao phi}}, \\quad H = \\dfrac{A_{\\text{co ich}}}{A_{\\text{dien}}} \\cdot 100\\%",
+   "vars": {
+    "A_{\\text{dien}}": "điện năng tiêu thụ của động cơ (A = UIt)",
+    "A_{\\text{co ich}}": "công cơ học có ích do động cơ sinh ra",
+    "Q_{\\text{hao phi}}": "nhiệt lượng hao phí do tỏa nhiệt và ma sát",
+    "H": "hiệu suất của động cơ điện"
+   },
+   "units": {
+    "A_{\\text{dien}}": "J",
+    "A_{\\text{co ich}}": "J",
+    "Q_{\\text{hao phi}}": "J"
+   },
+   "conditions": "Áp dụng định luật bảo toàn và chuyển hóa năng lượng",
+   "note": "Động cơ điện biến điện năng thành cơ năng; hiệu suất thường trên 80%, cao hơn động cơ nhiệt",
+   "tags": [
+    "dien-tu",
+    "dong-co-dien",
+    "hieu-suat",
+    "bao-toan-nang-luong"
+   ],
+   "related": [
+    "physics.thcs.dien-tu.quy-tac-ban-tay-trai",
+    "physics.thcs.dien-hoc.hieu-suat-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  }
+ ]
+}

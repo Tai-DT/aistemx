@@ -1,0 +1,3079 @@
+{
+ "meta": {
+  "file": "ext2-biology-thpt.json",
+  "subject": "biology",
+  "title": "Bài tập bổ sung Sinh học THPT (đợt 2): công thức chưa có bài luyện (GDPT 2018, AP, IB, A-Level)",
+  "levels": [
+   "thpt"
+  ],
+  "count": 64
+ },
+ "problems": [
+  {
+   "id": "prob.biology.ext2-biology-thpt.0001",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tế bào",
+   "type": "trac-nghiem",
+   "statement_vi": "Dịch bào của một tế bào thực vật có nồng độ chất tan (không thấm qua màng) là $C_{trong}=0{,}5\\ \\text{mol/L}$. Người ta ngâm tế bào vào dung dịch có $C_{ngoai}=0{,}8\\ \\text{mol/L}$. Môi trường ngoài thuộc loại nào và tế bào biến đổi ra sao?",
+   "statement_en": "A plant cell has internal solute concentration C_in = 0.5 mol/L and is placed in a solution with C_out = 0.8 mol/L. Classify the medium and predict the cell's change.",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Đẳng trương; nước ra vào cân bằng, tế bào không đổi.",
+     "why_wrong": "Đẳng trương chỉ khi $C_{ngoai}=C_{trong}$; ở đây 0,8 khác 0,5 nên không đẳng trương."
+    },
+    {
+     "key": "B",
+     "text": "Nhược trương; tế bào hút nước và trương lên.",
+     "why_wrong": "Nhược trương ứng với $C_{ngoai}<C_{trong}$; ở đây môi trường ngoài đặc hơn nên ngược lại."
+    },
+    {
+     "key": "C",
+     "text": "Ưu trương; tế bào mất nước, chất nguyên sinh co lại.",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Ưu trương; tế bào hút nước và có thể vỡ.",
+     "why_wrong": "Ưu trương làm tế bào MẤT nước chứ không hút nước; ngoài ra tế bào thực vật có thành nên không vỡ."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "So sánh nồng độ chất tan trong và ngoài tế bào để xác định loại môi trường theo quy ước thẩm thấu.",
+     "latex": "C_{ngoai} = 0{,}8 > C_{trong} = 0{,}5"
+    },
+    {
+     "explain": "Môi trường ngoài đậm đặc hơn nên là ưu trương; nước đi từ nơi loãng ra nơi đặc, tế bào mất nước và co nguyên sinh.",
+     "latex": "C_{ngoai} > C_{trong} \\Rightarrow \\text{ưu trương, tế bào mất nước}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.te-bao.dieu-kien-moi-truong-tham-thau"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "so-sanh-nong-do",
+    "tham-thau"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "te-bao",
+    "tham-thau"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0002",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sinh trưởng của vi sinh vật",
+   "type": "dien-so",
+   "statement_vi": "Nuôi cấy không liên tục một chủng vi khuẩn, số tế bào ban đầu $N_0 = 2\\times10^{4}$. Trong pha lũy thừa quần thể có thời gian thế hệ $g = 30$ phút. Tính số tế bào sau $t = 3$ giờ nuôi cấy (giả sử suốt thời gian này quần thể ở pha lũy thừa).",
+   "statement_en": "A bacterial culture starts with N0 = 2x10^4 cells. During exponential phase the generation time is g = 30 min. Find the number of cells after t = 3 hours.",
+   "answer": "1 280 000 tế bào",
+   "solution_steps": [
+    {
+     "explain": "Trong pha lũy thừa số tế bào tăng gấp đôi sau mỗi thế hệ; số thế hệ bằng tổng thời gian chia cho thời gian một thế hệ.",
+     "latex": "n = \\dfrac{t}{g} = \\dfrac{180}{30} = 6"
+    },
+    {
+     "explain": "Áp dụng dạng rời rạc của tăng trưởng lũy thừa (nhân đôi sau mỗi thế hệ).",
+     "latex": "N = N_{0}\\cdot 2^{n} = 2\\times10^{4}\\cdot 2^{6} = 1\\,280\\,000"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.vi-sinh-vat.duong-cong-sinh-truong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tang-truong-luy-thua",
+    "thoi-gian-the-he"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "vi-sinh-vat",
+    "sinh-truong"
+   ],
+   "answer_numeric": 1280000,
+   "answer_unit": "te-bao",
+   "tolerance": 1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0003",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cấu trúc ADN - ARN - protein",
+   "type": "dien-so",
+   "statement_vi": "Một gen (ADN mạch kép, thẳng) có tổng số nucleotit $N = 3000$. Tính số liên kết hóa trị nối GIỮA các nucleotit của cả hai mạch.",
+   "statement_en": "A linear double-stranded gene has N = 3000 nucleotides. Find the number of phosphodiester bonds linking nucleotides across both strands.",
+   "answer": "2998 liên kết",
+   "solution_steps": [
+    {
+     "explain": "Mỗi mạch có N/2 nucleotit nên có N/2 - 1 liên kết nối; hai mạch cho tổng bằng N - 2.",
+     "latex": "HT_{giua} = N - 2"
+    },
+    {
+     "explain": "Thay N = 3000 để có kết quả.",
+     "latex": "HT_{giua} = 3000 - 2 = 2998"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.adn-arn-protein.so-lien-ket-hoa-tri-giua-cac-nucleotit"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "dem-lien-ket-hoa-tri"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "adn",
+    "di-truyen-phan-tu"
+   ],
+   "answer_numeric": 2998,
+   "answer_unit": "lien-ket",
+   "tolerance": 1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0004",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cấu trúc ADN - ARN - protein",
+   "type": "dien-so",
+   "statement_vi": "Mạch 1 của một gen có $A_1 = 350$, $T_1 = 250$, $G_1 = 300$, $X_1 = 100$. Dựa vào nguyên tắc bổ sung giữa hai mạch, tính số nucleotit loại A của cả gen.",
+   "statement_en": "Strand 1 of a gene has A1 = 350, T1 = 250, G1 = 300, X1 = 100. Using base pairing between strands, find the total number of adenine (A) nucleotides in the gene.",
+   "answer": "600",
+   "solution_steps": [
+    {
+     "explain": "Theo nguyên tắc bổ sung, A trên mạch 2 bằng T trên mạch 1.",
+     "latex": "A_{2} = T_{1} = 250"
+    },
+    {
+     "explain": "Số A của cả gen bằng A của hai mạch cộng lại.",
+     "latex": "A = A_{1} + A_{2} = 350 + 250 = 600"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.adn-arn-protein.nguyen-tac-bo-sung-giua-hai-mach"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "nguyen-tac-bo-sung"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "adn",
+    "bo-sung"
+   ],
+   "answer_numeric": 600,
+   "answer_unit": "nucleotit",
+   "tolerance": 1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0005",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cấu trúc ADN - ARN - protein",
+   "type": "dien-so",
+   "statement_vi": "Trên mạch 1 của một gen, tỉ lệ $\\%A_1 = 10\\%$; trên mạch 2, $\\%A_2 = 30\\%$ (mỗi tỉ lệ tính theo số nucleotit của chính mạch đó). Tính $\\%X$ của cả gen (tính theo tổng số nucleotit của gen).",
+   "statement_en": "In a gene, %A1 = 10% (of strand 1) and %A2 = 30% (of strand 2). Find %X of the whole gene (as a percentage of the gene's total nucleotides).",
+   "answer": "30%",
+   "solution_steps": [
+    {
+     "explain": "Phần trăm mỗi loại của gen bằng trung bình cộng phần trăm loại đó trên hai mạch.",
+     "latex": "\\%A = \\%T = \\dfrac{\\%A_{1} + \\%A_{2}}{2} = \\dfrac{10 + 30}{2} = 20\\%"
+    },
+    {
+     "explain": "Vì $\\%A + \\%G = 50\\%$ và $\\%G = \\%X$, ta suy ra phần trăm X của gen.",
+     "latex": "\\%X = \\%G = 50\\% - \\%A = 50\\% - 20\\% = 30\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.adn-arn-protein.ti-le-phan-tram-nucleotit-tren-mach"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "ti-le-phan-tram-nucleotit"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "adn",
+    "phan-tram"
+   ],
+   "answer_numeric": 30,
+   "answer_unit": "phan-tram",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0006",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhân đôi ADN",
+   "type": "tu-luan",
+   "statement_vi": "Một gen có $N = 2400$ nucleotit và $H = 3120$ liên kết hiđro, nhân đôi liên tiếp $k = 3$ lần. Tính tổng số liên kết hiđro được hình thành và tổng số liên kết hóa trị (nối giữa các nucleotit) được hình thành trong cả quá trình.",
+   "statement_en": "A gene with N = 2400 nucleotides and H = 3120 hydrogen bonds replicates k = 3 times. Find the total hydrogen bonds and the total phosphodiester bonds formed during the whole process.",
+   "answer": "Số liên kết hiđro hình thành = 43680; số liên kết hóa trị hình thành = 16786",
+   "solution_steps": [
+    {
+     "explain": "Qua k lần nhân đôi, từ 1 phân tử tạo ra 2^k phân tử; số liên kết hiđro được hình thành gấp đôi số liên kết bị phá vỡ.",
+     "latex": "H_{hinh\\,thanh} = 2H\\,(2^{k} - 1) = 2\\cdot 3120\\cdot(2^{3} - 1)"
+    },
+    {
+     "explain": "Tính giá trị số của số liên kết hiđro hình thành.",
+     "latex": "H_{hinh\\,thanh} = 6240\\cdot 7 = 43680"
+    },
+    {
+     "explain": "Số liên kết hóa trị mới hình thành trên các mạch được tổng hợp thêm.",
+     "latex": "HT_{hinh\\,thanh} = (N - 2)\\,(2^{k} - 1) = 2398\\cdot 7 = 16786"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.nhan-doi-adn.so-lien-ket-hidro-hinh-thanh",
+    "biology.thpt.nhan-doi-adn.so-lien-ket-hoa-tri-hinh-thanh"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "nhan-doi-adn",
+    "luy-thua-hai"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "nhan-doi-adn",
+    "lien-ket"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0007",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phiên mã và dịch mã",
+   "type": "dien-so",
+   "statement_vi": "Một phân tử mARN dài $L_{mARN} = 4080\\ \\text{Å}$. Một riboxom trượt trên mARN với vận tốc $v = 102\\ \\text{Å/s}$. Tính thời gian riboxom trượt hết phân tử mARN.",
+   "statement_en": "An mRNA molecule is 4080 Å long. A ribosome moves along it at v = 102 Å/s. Find the time for one ribosome to traverse the entire mRNA.",
+   "answer": "40 giây",
+   "solution_steps": [
+    {
+     "explain": "Thời gian trượt hết mARN bằng chiều dài chia cho vận tốc trượt không đổi của riboxom.",
+     "latex": "t = \\dfrac{L_{mARN}}{v} = \\dfrac{4080}{102}"
+    },
+    {
+     "explain": "Thực hiện phép chia để có thời gian.",
+     "latex": "t = 40\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.phien-ma-dich-ma.thoi-gian-riboxom-truot-marn"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "quang-duong-van-toc"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "dich-ma",
+    "riboxom"
+   ],
+   "answer_numeric": 40,
+   "answer_unit": "s",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0008",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phiên mã và dịch mã",
+   "type": "dien-so",
+   "statement_vi": "Trên một phân tử mARN, các riboxom trượt cùng vận tốc $v = 102\\ \\text{Å/s}$ và cách đều nhau về thời gian: cứ sau $\\Delta t = 2\\ \\text{s}$ lại có một riboxom bắt đầu dịch mã. Tính khoảng cách $d$ giữa hai riboxom kế tiếp trên mARN.",
+   "statement_en": "On an mRNA, ribosomes move at v = 102 Å/s and start translating every Δt = 2 s. Find the distance d between two consecutive ribosomes.",
+   "answer": "204 Å",
+   "solution_steps": [
+    {
+     "explain": "Khoảng cách giữa hai riboxom kế tiếp bằng quãng đường một riboxom đi được trong khoảng thời gian giữa hai lần khởi đầu.",
+     "latex": "d = v\\cdot \\Delta t = 102\\cdot 2"
+    },
+    {
+     "explain": "Tính giá trị số của khoảng cách.",
+     "latex": "d = 204\\ \\text{Å}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.phien-ma-dich-ma.khoang-cach-giua-cac-riboxom"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "quang-duong-van-toc"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "dich-ma",
+    "poliriboxom"
+   ],
+   "answer_numeric": 204,
+   "answer_unit": "angstrom",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0009",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đột biến",
+   "type": "trac-nghiem",
+   "statement_vi": "Một gen bị đột biến điểm dạng mất một cặp G-X. So với gen ban đầu, thay đổi số nucleotit $\\Delta N$ và thay đổi số liên kết hiđro $\\Delta H$ của gen đột biến là:",
+   "statement_en": "A gene undergoes a point mutation that deletes one G-X base pair. Compared to the original gene, what are the changes ΔN in nucleotide number and ΔH in hydrogen bonds?",
+   "answer": "D",
+   "choices": [
+    {
+     "key": "A",
+     "text": "$\\Delta N = -1;\\ \\Delta H = -3$.",
+     "why_wrong": "Mất một CẶP nucleotit làm giảm 2 nucleotit chứ không phải 1."
+    },
+    {
+     "key": "B",
+     "text": "$\\Delta N = -2;\\ \\Delta H = -2$.",
+     "why_wrong": "Đó là trường hợp mất cặp A-T (2 liên kết hiđro); cặp G-X có 3 liên kết hiđro."
+    },
+    {
+     "key": "C",
+     "text": "$\\Delta N = -2;\\ \\Delta H = +3$.",
+     "why_wrong": "Mất đi thì số liên kết hiđro phải giảm (dấu âm), không thể tăng."
+    },
+    {
+     "key": "D",
+     "text": "$\\Delta N = -2;\\ \\Delta H = -3$.",
+     "why_wrong": ""
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Mất một cặp nucleotit là mất 2 nucleotit (một trên mỗi mạch).",
+     "latex": "\\Delta N = -2"
+    },
+    {
+     "explain": "Cặp G-X có 3 liên kết hiđro nên mất cặp này làm giảm 3 liên kết hiđro.",
+     "latex": "\\Delta H = -3"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dot-bien.dot-bien-mat-mot-cap-nucleotit"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "dot-bien-diem",
+    "dem-lien-ket-hidro"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "dot-bien",
+    "gen"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0010",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đột biến",
+   "type": "dien-so",
+   "statement_vi": "Một loài có bộ nhiễm sắc thể lưỡng bội $2n = 24$. Tính số nhiễm sắc thể trong tế bào của thể ba kép của loài này.",
+   "statement_en": "A species has diploid number 2n = 24. Find the chromosome number in a cell of a double-trisomy (thể ba kép) individual.",
+   "answer": "26",
+   "solution_steps": [
+    {
+     "explain": "Thể ba kép là dạng có thêm một nhiễm sắc thể ở HAI cặp khác nhau, tức 2n + 1 + 1.",
+     "latex": "\\text{Thể ba kép} = 2n + 1 + 1"
+    },
+    {
+     "explain": "Thay 2n = 24 để có số nhiễm sắc thể.",
+     "latex": "= 24 + 1 + 1 = 26"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dot-bien.cac-dang-the-lech-boi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 2,
+   "skills": [
+    "the-lech-boi"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "dot-bien",
+    "nst"
+   ],
+   "answer_numeric": 26,
+   "answer_unit": "nst",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0011",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đột biến",
+   "type": "trac-nghiem",
+   "statement_vi": "Cây tứ bội có kiểu gen $AAAa$ giảm phân bình thường tạo giao tử lưỡng bội (2n). Tỉ lệ các loại giao tử là:",
+   "statement_en": "A tetraploid plant with genotype AAAa undergoes normal meiosis producing diploid (2n) gametes. What is the gamete ratio?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "$1\\,AA : 2\\,Aa : 1\\,aa$.",
+     "why_wrong": "Đó là giao tử của kiểu gen $AAaa$; $AAAa$ có ba alen A nên không tạo giao tử $aa$."
+    },
+    {
+     "key": "B",
+     "text": "$\\dfrac{1}{2}\\,AA : \\dfrac{1}{2}\\,Aa$.",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "$100\\%\\,AA$.",
+     "why_wrong": "Chỉ kiểu gen $AAAA$ mới cho toàn giao tử $AA$; $AAAa$ còn tạo được giao tử $Aa$."
+    },
+    {
+     "key": "D",
+     "text": "$\\dfrac{1}{2}\\,Aa : \\dfrac{1}{2}\\,aa$.",
+     "why_wrong": "Đó là giao tử của kiểu gen $Aaaa$; $AAAa$ có nhiều alen A nên không cho giao tử $aa$."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Bốn alen (A,A,A,a) tổ hợp thành từng cặp; số cách chọn 2 trong 4 là C(4,2)=6 tổ hợp đồng khả năng.",
+     "latex": "C_{4}^{2} = 6"
+    },
+    {
+     "explain": "Số giao tử AA bằng C(3,2)=3, số giao tử Aa bằng C(3,1)C(1,1)=3; rút gọn cho tỉ lệ 1:1.",
+     "latex": "\\dfrac{3}{6}AA : \\dfrac{3}{6}Aa = \\dfrac{1}{2}AA : \\dfrac{1}{2}Aa"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dot-bien.giao-tu-the-tu-boi-khac"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "giao-tu-tu-boi",
+    "to-hop"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "dot-bien",
+    "tu-boi"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0012",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đột biến",
+   "type": "trac-nghiem",
+   "statement_vi": "Dạng đột biến cấu trúc nhiễm sắc thể nào KHÔNG làm thay đổi số lượng gen trên nhiễm sắc thể mà chỉ làm thay đổi trật tự sắp xếp các gen?",
+   "statement_en": "Which chromosomal structural mutation does NOT change the number of genes on the chromosome but only alters the order of genes?",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Mất đoạn.",
+     "why_wrong": "Mất đoạn làm giảm số gen trên nhiễm sắc thể ($\\Delta g < 0$)."
+    },
+    {
+     "key": "B",
+     "text": "Lặp đoạn.",
+     "why_wrong": "Lặp đoạn làm tăng số gen trên nhiễm sắc thể ($\\Delta g > 0$)."
+    },
+    {
+     "key": "C",
+     "text": "Đảo đoạn.",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Chuyển đoạn không tương hỗ.",
+     "why_wrong": "Chuyển đoạn làm gen chuyển sang nhiễm sắc thể khác nên số gen trên từng nhiễm sắc thể thay đổi."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Đảo đoạn chỉ quay ngược một đoạn nhiễm sắc thể, số gen không đổi, chỉ đổi trật tự.",
+     "latex": "\\text{Đảo đoạn: } \\Delta g = 0"
+    },
+    {
+     "explain": "Các dạng còn lại đều làm thay đổi số lượng gen trên nhiễm sắc thể mang đột biến.",
+     "latex": "\\text{Mất}: \\Delta g < 0;\\ \\text{Lặp}: \\Delta g > 0"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dot-bien.dot-bien-cau-truc-nst"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "dot-bien-cau-truc"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "dot-bien",
+    "nst"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0013",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên phân - Giảm phân",
+   "type": "dien-so",
+   "statement_vi": "Một tế bào của loài có bộ nhiễm sắc thể $2n = 8$ đang ở kì giữa của nguyên phân. Tính số cromatit có trong tế bào lúc này.",
+   "statement_en": "A cell of a species with 2n = 8 is at metaphase of mitosis. Find the number of chromatids in the cell at this stage.",
+   "answer": "16",
+   "solution_steps": [
+    {
+     "explain": "Ở kì giữa nguyên phân, nhiễm sắc thể tồn tại ở dạng 2n nhiễm sắc thể kép, mỗi kép gồm 2 cromatit.",
+     "latex": "\\text{số cromatit} = 4n = 2\\cdot 2n"
+    },
+    {
+     "explain": "Thay 2n = 8 để có kết quả.",
+     "latex": "= 2\\cdot 8 = 16"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.phan-bao.so-nst-qua-cac-ki-nguyen-phan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "nguyen-phan",
+    "dem-cromatit"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "nguyen-phan",
+    "nst"
+   ],
+   "answer_numeric": 16,
+   "answer_unit": "cromatit",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0014",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên phân - Giảm phân",
+   "type": "dien-so",
+   "statement_vi": "Một tế bào sinh dục chín của loài có $2n = 8$ tiến hành giảm phân. Tính số nhiễm sắc thể kép có trong mỗi tế bào ở kì cuối giảm phân I.",
+   "statement_en": "A mature germ cell with 2n = 8 undergoes meiosis. Find the number of double (replicated) chromosomes in each cell at the end of meiosis I (telophase I).",
+   "answer": "4",
+   "solution_steps": [
+    {
+     "explain": "Giảm phân I là phân bào giảm nhiễm: từ 2n nhiễm sắc thể kép, mỗi tế bào con nhận n nhiễm sắc thể kép.",
+     "latex": "\\text{Kì cuối I: } n \\text{ NST kép mỗi tế bào}"
+    },
+    {
+     "explain": "Với 2n = 8 thì n = 4 nhiễm sắc thể kép.",
+     "latex": "n = \\dfrac{2n}{2} = \\dfrac{8}{2} = 4"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.phan-bao.so-nst-qua-cac-ki-giam-phan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "giam-phan",
+    "dem-nst"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "giam-phan",
+    "nst"
+   ],
+   "answer_numeric": 4,
+   "answer_unit": "nst-kep",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0015",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quy luật di truyền",
+   "type": "dien-so",
+   "statement_vi": "Lai hai cây $AaBb \\times AaBb$, hai cặp gen phân li độc lập cùng quy định hình dạng quả theo kiểu tương tác bổ sung cho tỉ lệ $9:6:1$. Ở đời con thu được $320$ cây. Tính số cây thuộc nhóm kiểu hình trung gian (chiếm 6 phần).",
+   "statement_en": "Cross AaBb x AaBb where two independently assorting gene pairs jointly control fruit shape as complementary interaction giving 9:6:1. Among 320 offspring, find the number in the intermediate phenotype group (the '6' part).",
+   "answer": "120",
+   "solution_steps": [
+    {
+     "explain": "Phép lai cho 16 tổ hợp; nhóm trung gian gồm $3A\\text{-}bb$ và $3aaB\\text{-}$ chiếm 6 phần trong 16.",
+     "latex": "AaBb\\times AaBb \\rightarrow 9 : 6 : 1"
+    },
+    {
+     "explain": "Số cây nhóm trung gian bằng tổng số cây nhân với tỉ lệ 6/16.",
+     "latex": "320\\times \\dfrac{6}{16} = 120"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-6-1"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tuong-tac-gen",
+    "ti-le-kieu-hinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "tuong-tac-gen",
+    "9-6-1"
+   ],
+   "answer_numeric": 120,
+   "answer_unit": "cay",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0016",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quy luật di truyền",
+   "type": "trac-nghiem",
+   "statement_vi": "Ở một loài, hình dạng mào gà do hai cặp gen không alen phân li độc lập cùng quy định. Lai $AaBb \\times AaBb$ thu được tỉ lệ kiểu hình $9:3:3:1$ nhưng đây chỉ là MỘT tính trạng (bốn kiểu mào khác nhau). Kết luận nào đúng?",
+   "statement_en": "Comb shape in a species is controlled by two independently assorting non-allelic gene pairs. Cross AaBb x AaBb gives a 9:3:3:1 ratio, but this is ONE trait with four comb types. Which conclusion is correct?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Đây là tương tác bổ sung, mỗi tổ hợp gen cho một kiểu hình riêng của cùng một tính trạng.",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Đây là phân li độc lập của Menđen về hai tính trạng khác nhau.",
+     "why_wrong": "Menđen xét hai tính trạng riêng biệt; ở đây chỉ có MỘT tính trạng do hai gen chi phối."
+    },
+    {
+     "key": "C",
+     "text": "Có hiện tượng liên kết gen hoàn toàn.",
+     "why_wrong": "Liên kết gen hoàn toàn không cho tỉ lệ 9:3:3:1 mà cho tỉ lệ giống lai một cặp gen."
+    },
+    {
+     "key": "D",
+     "text": "Có hoán vị gen với tần số 50%.",
+     "why_wrong": "Tỉ lệ 9:3:3:1 phản ánh phân li độc lập của hai gen chứ không phải hoán vị."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Bốn kiểu hình của CÙNG một tính trạng ứng với bốn nhóm tổ hợp gen; đó là dấu hiệu tương tác gen bổ sung kiểu 9:3:3:1.",
+     "latex": "AaBb\\times AaBb \\rightarrow 9A\\text{-}B\\text{-} : 3A\\text{-}bb : 3aaB\\text{-} : 1aabb"
+    },
+    {
+     "explain": "Khác phân li độc lập của Menđen ở chỗ ở đây chỉ có một tính trạng (hình dạng mào) do hai gen quy định.",
+     "latex": "\\text{1 tính trạng} \\leftarrow \\text{2 cặp gen}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-3-3-1"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tuong-tac-gen",
+    "nhan-dang-quy-luat"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "tuong-tac-gen",
+    "9-3-3-1"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0017",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quy luật di truyền",
+   "type": "dien-so",
+   "statement_vi": "Lai $AaBb \\times AaBb$, gen A át chế trội sự biểu hiện của gen B, cho tỉ lệ kiểu hình $13:3$. Đời con có $320$ cá thể. Tính số cá thể thuộc nhóm kiểu hình chiếm 3 phần (kiểu gen $aaB\\text{-}$).",
+   "statement_en": "Cross AaBb x AaBb with dominant epistasis (A masks B) giving 13:3. Among 320 offspring, find the number in the group making up the '3' part (aaB- genotype).",
+   "answer": "60",
+   "solution_steps": [
+    {
+     "explain": "Át chế trội cho hai nhóm kiểu hình theo tỉ lệ 13:3 trong 16 tổ hợp; nhóm 3 phần là $aaB\\text{-}$.",
+     "latex": "13\\,(9A\\text{-}B\\text{-} + 3A\\text{-}bb + 1aabb) : 3\\,aaB\\text{-}"
+    },
+    {
+     "explain": "Số cá thể nhóm 3 phần bằng tổng nhân với 3/16.",
+     "latex": "320\\times \\dfrac{3}{16} = 60"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.quy-luat-di-truyen.tuong-tac-at-che-13-3"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "at-che-troi",
+    "ti-le-kieu-hinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "tuong-tac-gen",
+    "13-3"
+   ],
+   "answer_numeric": 60,
+   "answer_unit": "ca-the",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0018",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quy luật di truyền",
+   "type": "dien-so",
+   "statement_vi": "Lai $AaBb \\times AaBb$, kiểu gen $aa$ át chế biểu hiện của gen B, cho tỉ lệ kiểu hình $9:3:4$. Đời con có $320$ cá thể. Tính số cá thể thuộc nhóm kiểu hình chiếm 4 phần.",
+   "statement_en": "Cross AaBb x AaBb with recessive epistasis (aa masks B) giving 9:3:4. Among 320 offspring, find the number in the group making up the '4' part.",
+   "answer": "80",
+   "solution_steps": [
+    {
+     "explain": "Át chế lặn cho ba nhóm kiểu hình 9:3:4; nhóm 4 phần gồm $3aaB\\text{-} + 1aabb$.",
+     "latex": "9A\\text{-}B\\text{-} : 3A\\text{-}bb : 4\\,(3aaB\\text{-} + 1aabb)"
+    },
+    {
+     "explain": "Số cá thể nhóm 4 phần bằng tổng nhân với 4/16.",
+     "latex": "320\\times \\dfrac{4}{16} = 80"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.quy-luat-di-truyen.tuong-tac-at-che-9-3-4"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "at-che-lan",
+    "ti-le-kieu-hinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "tuong-tac-gen",
+    "9-3-4"
+   ],
+   "answer_numeric": 80,
+   "answer_unit": "ca-the",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0019",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quy luật di truyền",
+   "type": "trac-nghiem",
+   "statement_vi": "Đột biến gen $HBB$ ở người gây bệnh thiếu máu hồng cầu hình liềm, đồng thời kéo theo hàng loạt rối loạn khác (tổn thương tim, não, cơ, khớp...). Hiện tượng một gen ảnh hưởng đến nhiều tính trạng như vậy gọi là:",
+   "statement_en": "A mutation in the human HBB gene causes sickle-cell anemia and simultaneously a series of other disorders. The phenomenon of one gene affecting many traits is called:",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tương tác bổ sung.",
+     "why_wrong": "Tương tác bổ sung là NHIỀU gen cùng quy định một tính trạng, ngược với gen đa hiệu."
+    },
+    {
+     "key": "B",
+     "text": "Gen đa hiệu.",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "Gen đa alen.",
+     "why_wrong": "Đa alen là một gen có nhiều trạng thái alen khác nhau, không nói về số tính trạng bị chi phối."
+    },
+    {
+     "key": "D",
+     "text": "Thường biến.",
+     "why_wrong": "Thường biến là biến đổi kiểu hình do môi trường, không liên quan đến một gen chi phối nhiều tính trạng."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Một gen chi phối nhiều tính trạng ($m > 1$) là định nghĩa của gen đa hiệu.",
+     "latex": "1\\ \\text{gen} \\rightarrow m\\ \\text{tính trạng}\\;(m > 1)"
+    },
+    {
+     "explain": "Đây là cơ sở của hiện tượng nhiều biểu hiện bệnh cùng bắt nguồn từ một đột biến duy nhất.",
+     "latex": "HBB \\rightarrow \\text{nhiều rối loạn}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.quy-luat-di-truyen.gen-da-hieu"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "gen-da-hieu"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "di-truyen",
+    "gen-da-hieu"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0020",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Số kiểu gen tối đa",
+   "type": "tu-luan",
+   "statement_vi": "Xét một gen có $r = 4$ alen. Tính số kiểu gen tối đa trong quần thể ở hai trường hợp: (a) gen nằm trên vùng tương đồng của X và Y; (b) gen chỉ nằm trên vùng không tương đồng của Y.",
+   "statement_en": "Consider a gene with r = 4 alleles. Find the maximum number of genotypes in the population when: (a) the gene lies in the homologous region of X and Y; (b) the gene lies only in the non-homologous region of Y.",
+   "answer": "(a) 26 kiểu gen; (b) 4 kiểu gen",
+   "solution_steps": [
+    {
+     "explain": "Trên vùng tương đồng của X và Y: giới XX cho $r(r+1)/2$ kiểu gen, giới XY cho $r^2$ kiểu gen (vị trí trên X và Y phân biệt được).",
+     "latex": "S_{KG} = \\dfrac{r(r+1)}{2} + r^{2} = \\dfrac{4\\cdot 5}{2} + 4^{2}"
+    },
+    {
+     "explain": "Tính tổng cho trường hợp (a).",
+     "latex": "S_{KG} = 10 + 16 = 26"
+    },
+    {
+     "explain": "Gen chỉ trên vùng không tương đồng của Y: chỉ có ở giới XY, luôn đơn bội nên số kiểu gen bằng số alen.",
+     "latex": "S_{KG} = r = 4"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.so-kieu-gen.gen-tren-vung-tuong-dong-x-va-y",
+    "biology.thpt.so-kieu-gen.gen-tren-vung-khong-tuong-dong-y"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "dem-kieu-gen",
+    "gen-lien-ket-gioi-tinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "so-kieu-gen",
+    "nst-gioi-tinh"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0021",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Di truyền quần thể",
+   "type": "dung-sai",
+   "statement_vi": "Xét các phát biểu về điều kiện nghiệm đúng của định luật Hardy - Weinberg. Cho biết mỗi phát biểu ĐÚNG hay SAI: (1) Quần thể phải có kích thước rất lớn. (2) Các cá thể giao phối ngẫu nhiên. (3) Có chọn lọc tự nhiên mạnh giúp duy trì cân bằng. (4) Không có đột biến và không có di - nhập gen.",
+   "statement_en": "Statements about the conditions for Hardy-Weinberg equilibrium. State TRUE/FALSE: (1) The population must be very large. (2) Individuals mate randomly. (3) Strong natural selection maintains equilibrium. (4) No mutation and no gene migration.",
+   "answer": "(1) Đúng; (2) Đúng; (3) Sai; (4) Đúng",
+   "solution_steps": [
+    {
+     "explain": "Định luật đòi hỏi kích thước quần thể rất lớn để tần số alen ổn định (không bị biến động di truyền).",
+     "latex": "N \\to \\infty"
+    },
+    {
+     "explain": "Đòi hỏi giao phối ngẫu nhiên và không có các nhân tố làm lệch tần số alen.",
+     "latex": "u = 0,\\; s = 0,\\; m = 0"
+    },
+    {
+     "explain": "Phát biểu (3) sai: chọn lọc tự nhiên ($s \\neq 0$) làm thay đổi tần số alen, PHÁ VỠ cân bằng chứ không duy trì.",
+     "latex": "s \\neq 0 \\Rightarrow \\text{mất cân bằng}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hardy-weinberg",
+    "dieu-kien-nghiem-dung"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "di-truyen-quan-the",
+    "hardy-weinberg"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0022",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Di truyền quần thể",
+   "type": "trac-nghiem",
+   "statement_vi": "Một quần thể có cấu trúc di truyền $0{,}49\\,AA : 0{,}42\\,Aa : 0{,}09\\,aa$. Quần thể này có đang cân bằng di truyền theo Hardy - Weinberg không?",
+   "statement_en": "A population has genetic structure 0.49 AA : 0.42 Aa : 0.09 aa. Is this population in Hardy-Weinberg equilibrium?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Có, vì $4dr = h^{2}$.",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Không, vì tổng tần số ba kiểu gen khác 1.",
+     "why_wrong": "Tổng $0{,}49+0{,}42+0{,}09 = 1$ nên điều kiện này không bị vi phạm."
+    },
+    {
+     "key": "C",
+     "text": "Không, vì $4dr \\neq h^{2}$.",
+     "why_wrong": "Tính ra $4dr = 0{,}1764 = h^{2}$ nên hai vế bằng nhau, quần thể cân bằng."
+    },
+    {
+     "key": "D",
+     "text": "Không xác định được vì thiếu tần số alen.",
+     "why_wrong": "Chỉ cần tần số ba kiểu gen là đủ để kiểm tra bằng điều kiện $4dr = h^{2}$."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Điều kiện nhận biết cân bằng: tích tần số hai kiểu đồng hợp bằng bình phương nửa tần số dị hợp, tương đương $4dr = h^2$.",
+     "latex": "4dr = h^{2}"
+    },
+    {
+     "explain": "Thay $d = 0{,}49$, $r = 0{,}09$, $h = 0{,}42$ và so sánh hai vế.",
+     "latex": "4\\cdot 0{,}49\\cdot 0{,}09 = 0{,}1764 = 0{,}42^{2}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.di-truyen-quan-the.kiem-tra-can-bang-di-truyen"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "kiem-tra-can-bang",
+    "hardy-weinberg"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "di-truyen-quan-the",
+    "can-bang"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0023",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ứng dụng di truyền học",
+   "type": "dien-so",
+   "statement_vi": "Ở một giống lợn, tính trạng tỉ lệ nạc có phương sai kiểu hình $V_P = 160$ và phương sai do tác động cộng gộp của các alen $V_A = 40$. Tính hệ số di truyền theo nghĩa hẹp $h^2$.",
+   "statement_en": "In a pig breed, the lean-meat trait has phenotypic variance V_P = 160 and additive genetic variance V_A = 40. Find the narrow-sense heritability h^2.",
+   "answer": "0,25",
+   "solution_steps": [
+    {
+     "explain": "Hệ số di truyền theo nghĩa hẹp là tỉ số giữa phương sai cộng gộp và phương sai kiểu hình.",
+     "latex": "h^{2} = \\dfrac{V_{A}}{V_{P}} = \\dfrac{40}{160}"
+    },
+    {
+     "explain": "Rút gọn phân số để có kết quả; $h^2$ nhỏ cho biết chọn lọc hàng loạt sẽ đáp ứng chậm.",
+     "latex": "h^{2} = 0{,}25"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.ung-dung-di-truyen.he-so-di-truyen-nghia-hep"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "he-so-di-truyen",
+    "phuong-sai"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "chon-giong",
+    "he-so-di-truyen"
+   ],
+   "answer_numeric": 0.25,
+   "answer_unit": "",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0024",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sinh thái học",
+   "type": "dien-so",
+   "statement_vi": "Một quần thể vi khuẩn tăng trưởng theo tiềm năng sinh học (điều kiện lí tưởng) có tốc độ tăng trưởng riêng tức thời $r = 0{,}2\\ \\text{cá thể/(cá thể}\\cdot\\text{giờ)}$. Khi kích thước quần thể $N = 500$ cá thể, tính tốc độ tăng trưởng tức thời $dN/dt$ của quần thể (cá thể/giờ).",
+   "statement_en": "A bacterial population grows under biotic potential (ideal conditions) with intrinsic per-capita rate r = 0.2 per hour. When N = 500, find the instantaneous growth rate dN/dt (individuals per hour).",
+   "answer": "100 cá thể/giờ",
+   "solution_steps": [
+    {
+     "explain": "Tăng trưởng theo tiềm năng sinh học cho đường cong chữ J với tốc độ tỉ lệ thuận với kích thước quần thể.",
+     "latex": "\\dfrac{dN}{dt} = r\\,N = 0{,}2\\cdot 500"
+    },
+    {
+     "explain": "Nhân để có tốc độ tăng trưởng tức thời.",
+     "latex": "\\dfrac{dN}{dt} = 100\\ \\text{cá thể/giờ}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai.tang-truong-theo-tiem-nang-sinh-hoc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tang-truong-mu",
+    "duong-cong-j"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "tang-truong"
+   ],
+   "answer_numeric": 100,
+   "answer_unit": "ca-the-tren-gio",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0025",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sinh thái học",
+   "type": "dien-so",
+   "statement_vi": "Một quần thể có $120$ cá thể đực và $180$ cá thể cái trưởng thành. Tính phần trăm cá thể đực trong quần thể.",
+   "statement_en": "A population has 120 mature males and 180 mature females. Find the percentage of males in the population.",
+   "answer": "40%",
+   "solution_steps": [
+    {
+     "explain": "Phần trăm đực bằng số đực chia cho tổng số cá thể rồi nhân 100%.",
+     "latex": "\\%_{duc} = \\dfrac{N_{duc}}{N_{duc} + N_{cai}}\\times 100\\% = \\dfrac{120}{120 + 180}\\times 100\\%"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "\\%_{duc} = \\dfrac{120}{300}\\times 100\\% = 40\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai.ti-le-gioi-tinh"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "ti-le-gioi-tinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "gioi-tinh"
+   ],
+   "answer_numeric": 40,
+   "answer_unit": "phan-tram",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0026",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sinh thái học",
+   "type": "dien-so",
+   "statement_vi": "Một quần thể có tổng số $2000$ cá thể, trong đó nhóm tuổi trước sinh sản có $900$ cá thể. Tính tỉ lệ phần trăm của nhóm tuổi trước sinh sản.",
+   "statement_en": "A population of 2000 individuals has 900 in the pre-reproductive age group. Find the percentage of the pre-reproductive group.",
+   "answer": "45%",
+   "solution_steps": [
+    {
+     "explain": "Tỉ lệ một nhóm tuổi bằng số cá thể nhóm đó chia cho tổng số cá thể rồi nhân 100%.",
+     "latex": "\\%_{i} = \\dfrac{N_{i}}{N}\\times 100\\% = \\dfrac{900}{2000}\\times 100\\%"
+    },
+    {
+     "explain": "Tính giá trị; nhóm trước sinh sản chiếm ưu thế cho thấy quần thể đang phát triển.",
+     "latex": "\\%_{i} = 45\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai.thap-tuoi"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "thap-tuoi",
+    "cau-truc-tuoi"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "thap-tuoi"
+   ],
+   "answer_numeric": 45,
+   "answer_unit": "phan-tram",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0027",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sinh thái học",
+   "type": "dien-so",
+   "statement_vi": "Khảo sát một quần xã tại $P = 40$ điểm ngẫu nhiên có diện tích như nhau, thấy loài X xuất hiện ở $p = 15$ điểm. Tính độ thường gặp $C$ của loài X (theo phần trăm).",
+   "statement_en": "A community is surveyed at P = 40 equal-area random points; species X appears at p = 15 points. Find the frequency of occurrence C of species X (as a percentage).",
+   "answer": "37,5%",
+   "solution_steps": [
+    {
+     "explain": "Độ thường gặp bằng số điểm có gặp loài chia cho tổng số điểm khảo sát, nhân 100%.",
+     "latex": "C = \\dfrac{p}{P}\\times 100\\% = \\dfrac{15}{40}\\times 100\\%"
+    },
+    {
+     "explain": "Tính giá trị; vì $25\\% \\le C \\le 50\\%$ nên X là loài ít gặp.",
+     "latex": "C = 37{,}5\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai.do-thuong-gap"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "do-thuong-gap"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "quan-xa"
+   ],
+   "answer_numeric": 37.5,
+   "answer_unit": "phan-tram",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0028",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Số kiểu gen tối đa",
+   "type": "dien-so",
+   "statement_vi": "Trong một quần thể, gen thứ nhất có $3$ alen nằm trên nhiễm sắc thể thường; gen thứ hai có $2$ alen nằm trên vùng không tương đồng của X (không có alen trên Y). Tính tổng số kiểu gen tối đa của quần thể khi xét đồng thời hai gen.",
+   "statement_en": "In a population, gene 1 has 3 alleles on an autosome; gene 2 has 2 alleles on the non-homologous region of X (no allele on Y). Find the maximum number of genotypes when considering both genes together.",
+   "answer": "30",
+   "solution_steps": [
+    {
+     "explain": "Gen trên NST thường có $r(r+1)/2$ kiểu gen với $r=3$.",
+     "latex": "S_{thuong} = \\dfrac{3(3+1)}{2} = 6"
+    },
+    {
+     "explain": "Gen trên vùng không tương đồng của X: giới XX có $r(r+1)/2 = 3$, giới XY có $r = 2$, cộng lại được $S_{gioi\\,tinh}$.",
+     "latex": "S_{gioi\\,tinh} = 3 + 2 = 5"
+    },
+    {
+     "explain": "Các gen ở những cặp nhiễm sắc thể khác nhau nên áp dụng quy tắc nhân.",
+     "latex": "S_{KG} = S_{thuong}\\times S_{gioi\\,tinh} = 6\\times 5 = 30"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.so-kieu-gen.ket-hop-nst-thuong-va-gioi-tinh"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "dem-kieu-gen",
+    "quy-tac-nhan"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "so-kieu-gen",
+    "quan-the"
+   ],
+   "answer_numeric": 30,
+   "answer_unit": "kieu-gen",
+   "tolerance": 0
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0029",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "ib"
+   ],
+   "topic": "Bảng công thức tham chiếu AP Biology",
+   "type": "tu-luan",
+   "statement_vi": "Đo chiều cao (cm) của $5$ cây mẫu, thu được: $12,\\ 15,\\ 14,\\ 18,\\ 11$. Theo bảng công thức tham chiếu AP Biology, hãy tính trung bình mẫu $\\bar{x}$ và khoảng biến thiên $R$ của mẫu.",
+   "statement_en": "Heights (cm) of 5 sample plants are: 12, 15, 14, 18, 11. Using the AP Biology reference formulas, compute the sample mean and the range R.",
+   "answer": "Trung bình mẫu = 14 cm; khoảng biến thiên R = 7 cm",
+   "solution_steps": [
+    {
+     "explain": "Trung bình mẫu bằng tổng các giá trị chia cho cỡ mẫu.",
+     "latex": "\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_{i} = \\frac{12 + 15 + 14 + 18 + 11}{5} = \\frac{70}{5} = 14"
+    },
+    {
+     "explain": "Khoảng biến thiên bằng giá trị lớn nhất trừ giá trị nhỏ nhất.",
+     "latex": "R = x_{max} - x_{min} = 18 - 11 = 7"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.bang-cong-thuc-ap.trung-binh-mau",
+    "biology.thpt.bang-cong-thuc-ap.mot-trung-vi-khoang-bien-thien"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "trung-binh-mau",
+    "khoang-bien-thien"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "ap-biology"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0030",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "ib",
+    "a-level"
+   ],
+   "topic": "Bảng công thức tham chiếu AP Biology",
+   "type": "dien-so",
+   "statement_vi": "Trong một phép lai, xác suất con có kiểu hình mắt đỏ là $\\dfrac{1}{4}$, xác suất con có kiểu hình mắt hồng là $\\dfrac{1}{2}$; hai kiểu hình này xung khắc. Theo quy tắc cộng xác suất, tính xác suất con có mắt đỏ HOẶC mắt hồng.",
+   "statement_en": "In a cross, P(red eyes) = 1/4 and P(pink eyes) = 1/2; these are mutually exclusive. Using the addition rule, find P(red OR pink).",
+   "answer": "3/4 = 0,75",
+   "solution_steps": [
+    {
+     "explain": "Hai biến cố xung khắc không thể cùng xảy ra nên xác suất của 'A hoặc B' bằng tổng hai xác suất.",
+     "latex": "P(A \\text{ or } B) = P(A) + P(B) = \\frac{1}{4} + \\frac{1}{2}"
+    },
+    {
+     "explain": "Quy đồng và cộng.",
+     "latex": "= \\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4} = 0{,}75"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.bang-cong-thuc-ap.quy-tac-cong-xac-suat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "quy-tac-cong-xac-suat"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "xac-suat",
+    "di-truyen"
+   ],
+   "answer_numeric": 0.75,
+   "answer_unit": "",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0031",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "a-level"
+   ],
+   "topic": "Bảng công thức tham chiếu AP Biology",
+   "type": "dien-so",
+   "statement_vi": "Trong thí nghiệm khuếch tán, dùng khối thạch agar hình hộp chữ nhật kích thước $l = 6\\ \\text{cm}$, $w = 3\\ \\text{cm}$, $h = 2\\ \\text{cm}$. Tính tỉ lệ diện tích bề mặt trên thể tích $SA/V$ của khối (đơn vị $\\text{cm}^{-1}$).",
+   "statement_en": "In a diffusion experiment, an agar block is a rectangular box with l = 6 cm, w = 3 cm, h = 2 cm. Find its surface-area-to-volume ratio SA/V (in cm^-1).",
+   "answer": "2 cm^-1",
+   "solution_steps": [
+    {
+     "explain": "Diện tích toàn phần khối hộp là tổng ba cặp mặt; thể tích là tích ba kích thước.",
+     "latex": "SA = 2lh + 2lw + 2wh = 2(12) + 2(18) + 2(6) = 72"
+    },
+    {
+     "explain": "Lập tỉ số diện tích trên thể tích.",
+     "latex": "\\frac{SA}{V} = \\frac{72}{6\\cdot 3\\cdot 2} = \\frac{72}{36} = 2"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.bang-cong-thuc-ap.ti-le-s-tren-v-khoi-hop"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "ti-le-s-tren-v",
+    "hinh-hop"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "khuech-tan",
+    "dien-tich-the-tich"
+   ],
+   "answer_numeric": 2.0,
+   "answer_unit": "cm^-1",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0032",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "curriculum": [
+    "ap",
+    "ib",
+    "a-level"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "dien-so",
+   "statement_vi": "Một cấu trúc tế bào có chiều dài đo được $0{,}05\\ \\text{mm}$. Dùng bảng tiền tố SI, hãy đổi chiều dài này sang micromet ($\\mu m$).",
+   "statement_en": "A cell structure measures 0.05 mm long. Using SI prefixes, convert this length to micrometres (um).",
+   "answer": "50 μm",
+   "solution_steps": [
+    {
+     "explain": "Theo bảng tiền tố SI, $1\\ mm = 10^{3}\\ \\mu m$ (milli là $10^{-3}$, micro là $10^{-6}$).",
+     "latex": "1\\ mm = 10^{3}\\ \\mu m"
+    },
+    {
+     "explain": "Nhân số đo với hệ số quy đổi.",
+     "latex": "0{,}05\\ mm = 0{,}05\\times 10^{3}\\ \\mu m = 50\\ \\mu m"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.bang-cong-thuc-ap.tien-to-don-vi-si",
+    "biology.thpt.dinh-luong-te-bao.doi-don-vi-do-dai-hien-vi"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "doi-don-vi",
+    "tien-to-si"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "hien-vi",
+    "don-vi"
+   ],
+   "answer_numeric": 50,
+   "answer_unit": "um",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0033",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "ib"
+   ],
+   "topic": "Bảng công thức tham chiếu AP Biology",
+   "type": "trac-nghiem",
+   "statement_vi": "Một phản ứng trong tế bào có biến thiên năng lượng tự do $\\Delta G < 0$. Theo cách phân loại của AP/IB Biology, phản ứng này thuộc loại nào?",
+   "statement_en": "A cellular reaction has free-energy change ΔG < 0. According to AP/IB Biology classification, what type of reaction is this?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Phản ứng toả năng lượng (exergonic), tự diễn biến.",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Phản ứng thu năng lượng (endergonic), cần ghép với thuỷ phân ATP.",
+     "why_wrong": "Endergonic ứng với $\\Delta G > 0$, không phải $\\Delta G < 0$."
+    },
+    {
+     "key": "C",
+     "text": "Phản ứng ở trạng thái cân bằng.",
+     "why_wrong": "Cân bằng ứng với $\\Delta G = 0$, không phải $\\Delta G < 0$."
+    },
+    {
+     "key": "D",
+     "text": "Phản ứng không thể xảy ra trong tế bào.",
+     "why_wrong": "$\\Delta G < 0$ cho biết phản ứng tự diễn biến, hoàn toàn có thể xảy ra."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Quy ước quốc tế: dấu âm của biến thiên năng lượng tự do ứng với phản ứng toả năng lượng và tự diễn biến.",
+     "latex": "\\Delta G < 0 \\;\\Rightarrow\\; \\text{exergonic}"
+    },
+    {
+     "explain": "So sánh: $\\Delta G > 0$ là endergonic, $\\Delta G = 0$ là cân bằng.",
+     "latex": "\\Delta G > 0:\\ \\text{endergonic};\\quad \\Delta G = 0:\\ \\text{equilibrium}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.bang-cong-thuc-ap.dau-cua-delta-g"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 2,
+   "skills": [
+    "nang-luong-tu-do",
+    "phan-loai-phan-ung"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "chuyen-hoa",
+    "nang-luong"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0034",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "curriculum": [
+    "ib",
+    "a-level",
+    "ap"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "dien-so",
+   "statement_vi": "Trên một ảnh hiển vi có thanh tỉ lệ dài $40\\ \\text{mm}$ (đo bằng thước) ghi giá trị đại diện $20\\ \\mu m$. Tính độ phóng đại $M$ của ảnh.",
+   "statement_en": "A micrograph shows a scale bar measured 40 mm long (by ruler) labelled as representing 20 um. Find the magnification M of the image.",
+   "answer": "×2000",
+   "solution_steps": [
+    {
+     "explain": "Độ phóng đại bằng chiều dài đo được của thanh tỉ lệ chia cho giá trị thật nó đại diện, sau khi đưa về cùng đơn vị: $40\\ mm = 40000\\ \\mu m$.",
+     "latex": "M = \\frac{L_{bar}}{L_{stated}} = \\frac{40000\\ \\mu m}{20\\ \\mu m}"
+    },
+    {
+     "explain": "Thực hiện phép chia.",
+     "latex": "M = 2000"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dinh-luong-te-bao.do-phong-dai-tu-thanh-ti-le"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "do-phong-dai",
+    "doi-don-vi"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "hien-vi",
+    "phong-dai"
+   ],
+   "answer_numeric": 2000,
+   "answer_unit": "lan",
+   "tolerance": 1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0035",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "curriculum": [
+    "ib",
+    "a-level"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "dien-so",
+   "statement_vi": "Một học sinh vẽ một tế bào có chiều dài trên hình vẽ là $60\\ \\text{mm}$, trong khi chiều dài thật của tế bào đó là $20\\ \\mu m$. Tính độ phóng đại của hình vẽ $M_{drawing}$.",
+   "statement_en": "A student draws a cell that is 60 mm long in the drawing, while the actual cell is 20 um long. Find the drawing magnification.",
+   "answer": "×3000",
+   "solution_steps": [
+    {
+     "explain": "Độ phóng đại của hình vẽ bằng chiều dài trên hình chia cho chiều dài thật của cùng cấu trúc; đổi $60\\ mm = 60000\\ \\mu m$.",
+     "latex": "M_{drawing} = \\frac{L_{drawing}}{L_{actual}} = \\frac{60000\\ \\mu m}{20\\ \\mu m}"
+    },
+    {
+     "explain": "Thực hiện phép chia; ghi kèm hình dưới dạng ×3000.",
+     "latex": "M_{drawing} = 3000"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dinh-luong-te-bao.do-phong-dai-hinh-ve"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "do-phong-dai-hinh-ve",
+    "doi-don-vi"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "hien-vi",
+    "hinh-ve"
+   ],
+   "answer_numeric": 3000,
+   "answer_unit": "lan",
+   "tolerance": 1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0036",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "dien-so",
+   "statement_vi": "Chuẩn hoá thước đo thị kính bằng thước đo vật kính chuẩn (mỗi vạch vật kính bằng $10\\ \\mu m$): thấy $6$ vạch của thước đo vật kính trùng khớp với $50$ vạch của thước đo thị kính. Tính giá trị thật của một vạch thước đo thị kính (1 epu, đơn vị $\\mu m$).",
+   "statement_en": "Calibrating an eyepiece graticule with a stage micrometer (each stage division = 10 um): 6 stage divisions align with 50 eyepiece divisions. Find the value of one eyepiece unit (1 epu, in um).",
+   "answer": "1,2 μm",
+   "solution_steps": [
+    {
+     "explain": "Giá trị một vạch thị kính bằng số vạch vật kính trùng khớp nhân với 10 μm, chia cho số vạch thị kính tương ứng.",
+     "latex": "1\\ \\text{epu} = \\frac{n_{stage}\\times 10}{n_{eyepiece}}\\ \\mu m = \\frac{6\\times 10}{50}\\ \\mu m"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "1\\ \\text{epu} = 1{,}2\\ \\mu m"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dinh-luong-te-bao.chuan-hoa-thi-truong-do"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "chuan-hoa-thi-kinh",
+    "do-kich-thuoc-te-bao"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "hien-vi",
+    "chuan-hoa"
+   ],
+   "answer_numeric": 1.2,
+   "answer_unit": "um",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0037",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "curriculum": [
+    "ap",
+    "ib"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "dien-so",
+   "statement_vi": "Ở vật kính cho độ phóng đại tổng $\\times 100$, đường kính thị trường đo được $D_{FOV(1)} = 2{,}0\\ \\text{mm}$. Chuyển sang vật kính cho độ phóng đại tổng $\\times 400$; trên thị trường mới có $k = 10$ tế bào xếp liền nhau vừa phủ hết đường kính. Ước lượng đường kính một tế bào (đơn vị $\\mu m$).",
+   "statement_en": "At total magnification x100 the field-of-view diameter is 2.0 mm. Switching to x400, exactly k = 10 cells span the new field diameter. Estimate the diameter of one cell (in um).",
+   "answer": "50 μm",
+   "solution_steps": [
+    {
+     "explain": "Đường kính thị trường tỉ lệ nghịch với độ phóng đại; suy ra đường kính ở ×400.",
+     "latex": "D_{FOV(2)} = D_{FOV(1)}\\times \\frac{M_{1}}{M_{2}} = 2{,}0\\times \\frac{100}{400} = 0{,}5\\ \\text{mm}"
+    },
+    {
+     "explain": "Chia đường kính thị trường cho số tế bào phủ kín; đổi $0{,}5\\ mm = 500\\ \\mu m$.",
+     "latex": "d_{cell} = \\frac{500\\ \\mu m}{10} = 50\\ \\mu m"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dinh-luong-te-bao.duong-kinh-thi-truong-va-kich-thuoc-te-bao"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "duong-kinh-thi-truong",
+    "uoc-luong-kich-thuoc"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "hien-vi",
+    "thi-truong"
+   ],
+   "answer_numeric": 50,
+   "answer_unit": "um",
+   "tolerance": 0.5
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0038",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "trac-nghiem",
+   "statement_vi": "Cần quan sát chi tiết cấu trúc bên trong ti thể ở kích thước cỡ $0{,}5\\ \\text{nm}$ (độ phân giải rất nhỏ). Loại kính hiển vi nào phù hợp nhất?",
+   "statement_en": "To resolve internal mitochondrial detail at about 0.5 nm (very small resolution), which microscope is most suitable?",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Kính hiển vi quang học (light microscope), độ phân giải $\\approx 200\\ nm$.",
+     "why_wrong": "Độ phân giải 200 nm quá lớn, không thể phân biệt chi tiết cỡ 0,5 nm."
+    },
+    {
+     "key": "B",
+     "text": "Kính hiển vi điện tử quét (SEM), độ phân giải $\\approx 3-10\\ nm$.",
+     "why_wrong": "SEM cho ảnh bề mặt với độ phân giải 3-10 nm, chưa đủ nhỏ và không xem được nội cấu trúc."
+    },
+    {
+     "key": "C",
+     "text": "Kính hiển vi điện tử truyền qua (TEM), độ phân giải $\\approx 0{,}5\\ nm$.",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Kính lúp cầm tay.",
+     "why_wrong": "Kính lúp chỉ phóng đại vài chục lần, hoàn toàn không đủ để thấy cấu trúc dưới hiển vi."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Độ phân giải càng NHỎ thì càng phân biệt được chi tiết nhỏ; TEM có độ phân giải khoảng 0,5 nm, tốt nhất trong ba loại.",
+     "latex": "\\text{TEM}: \\approx 0{,}5\\ nm < \\text{SEM} \\approx 3\\text{-}10\\ nm < \\text{light} \\approx 200\\ nm"
+    },
+    {
+     "explain": "TEM cho ảnh xuyên qua lát cắt mỏng nên quan sát được cấu trúc bên trong ti thể.",
+     "latex": "\\text{TEM} \\Rightarrow \\text{nội cấu trúc}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dinh-luong-te-bao.gioi-han-phan-giai-cac-loai-kinh"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "do-phan-giai",
+    "chon-loai-kinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "hien-vi",
+    "do-phan-giai"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0039",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level"
+   ],
+   "topic": "Định lượng tế bào và kính hiển vi",
+   "type": "dien-so",
+   "statement_vi": "Dùng thước có vạch chia nhỏ nhất $1\\ \\text{mm}$ để đo chiều dài một mẫu vật, đọc được $x = 25\\ \\text{mm}$. Lấy độ không đảm bảo tuyệt đối bằng nửa vạch chia nhỏ nhất. Tính phần trăm độ không đảm bảo đo $\\%U$ của phép đo.",
+   "statement_en": "Using a ruler with smallest division 1 mm, a specimen reads x = 25 mm. Taking absolute uncertainty as half the smallest division, find the percentage uncertainty %U.",
+   "answer": "2%",
+   "solution_steps": [
+    {
+     "explain": "Độ không đảm bảo tuyệt đối bằng nửa vạch chia nhỏ nhất.",
+     "latex": "\\Delta x = \\frac{1\\ mm}{2} = 0{,}5\\ mm"
+    },
+    {
+     "explain": "Phần trăm độ không đảm bảo bằng độ không đảm bảo tuyệt đối chia cho giá trị đo, nhân 100%.",
+     "latex": "\\%\\,U = \\frac{\\Delta x}{x}\\times 100\\% = \\frac{0{,}5}{25}\\times 100\\% = 2\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.dinh-luong-te-bao.phan-tram-do-khong-dam-bao"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 3,
+   "skills": [
+    "do-khong-dam-bao",
+    "sai-so"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "do-luong",
+    "sai-so"
+   ],
+   "answer_numeric": 2,
+   "answer_unit": "phan-tram",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0040",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "intl-undergrad"
+   ],
+   "topic": "Vận chuyển qua màng và chuyển hoá",
+   "type": "dien-so",
+   "statement_vi": "Dung dịch $NaCl$ có nồng độ $C = 0{,}15\\ \\text{mol/L}$. Khi hoà tan, mỗi phân tử $NaCl$ phân li thành $2$ tiểu phân ($Na^{+}$ và $Cl^{-}$), tức $i = 2$. Tính độ thẩm thấu (osmolarity) của dung dịch (đơn vị osmol/L).",
+   "statement_en": "A NaCl solution has C = 0.15 mol/L. Each NaCl dissociates into 2 particles (i = 2). Find the solution's osmolarity (osmol/L).",
+   "answer": "0,30 osmol/L",
+   "solution_steps": [
+    {
+     "explain": "Độ thẩm thấu bằng số tiểu phân mỗi phân tử tạo ra nhân với nồng độ mol.",
+     "latex": "\\text{osmolarity} = i\\times C = 2\\times 0{,}15"
+    },
+    {
+     "explain": "Tính giá trị; kết quả xấp xỉ độ thẩm thấu huyết tương nên NaCl 0,15 mol/L đẳng trương với hồng cầu.",
+     "latex": "\\text{osmolarity} = 0{,}30\\ \\text{osmol/L}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.van-chuyen-chuyen-hoa.do-tham-thau-osmolarity"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "do-tham-thau",
+    "phan-li-chat-tan"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "tham-thau",
+    "osmolarity"
+   ],
+   "answer_numeric": 0.3,
+   "answer_unit": "osmol/L",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0041",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Vận chuyển qua màng và chuyển hoá",
+   "type": "dien-so",
+   "statement_vi": "Trong phản ứng Hill dùng máy so màu, độ hấp thụ của thuốc nhuộm DCPIP giảm từ $A_1 = 0{,}80$ xuống $A_2 = 0{,}20$ trong $\\Delta t = 120\\ \\text{s}$. Tính tốc độ phản ứng theo độ hấp thụ (độ lớn, đơn vị $\\text{s}^{-1}$).",
+   "statement_en": "In a Hill reaction with a colorimeter, DCPIP absorbance falls from A1 = 0.80 to A2 = 0.20 in 120 s. Find the reaction rate by absorbance (magnitude, in s^-1).",
+   "answer": "0,005 s^-1",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ theo độ hấp thụ bằng độ lớn biến thiên độ hấp thụ chia cho khoảng thời gian.",
+     "latex": "\\text{rate} = \\frac{|\\Delta A|}{\\Delta t} = \\frac{|0{,}20 - 0{,}80|}{120}"
+    },
+    {
+     "explain": "Tính giá trị; độ hấp thụ giảm nên phản ứng làm mất màu DCPIP.",
+     "latex": "\\text{rate} = \\frac{0{,}60}{120} = 0{,}005\\ \\text{s}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.van-chuyen-chuyen-hoa.toc-do-phan-ung-tu-do-hap-thu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "toc-do-phan-ung",
+    "do-hap-thu"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "enzyme",
+    "so-mau"
+   ],
+   "answer_numeric": 0.005,
+   "answer_unit": "s^-1",
+   "tolerance": 0.0001
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0042",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Vận chuyển qua màng và chuyển hoá",
+   "type": "dien-so",
+   "statement_vi": "Đo thoát hơi nước bằng potometer có ống mao dẫn bán kính trong $r = 1\\ \\text{mm}$. Bọt khí dịch chuyển quãng đường $d = 50\\ \\text{mm}$ trong thời gian $t = 100\\ \\text{s}$. Tính tốc độ hút nước của cành (đơn vị $\\text{mm}^3/\\text{s}$; lấy $\\pi \\approx 3{,}1416$).",
+   "statement_en": "Transpiration is measured with a potometer whose capillary inner radius is r = 1 mm. The air bubble moves d = 50 mm in t = 100 s. Find the water-uptake rate (mm^3/s; take pi = 3.1416).",
+   "answer": "≈ 1,571 mm^3/s",
+   "solution_steps": [
+    {
+     "explain": "Thể tích nước hút vào bằng thể tích cột bọt khí dịch chuyển (hình trụ); tốc độ bằng thể tích chia thời gian.",
+     "latex": "\\text{rate} = \\frac{\\pi r^{2} d}{t} = \\frac{\\pi\\cdot 1^{2}\\cdot 50}{100}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "\\text{rate} = 0{,}5\\pi \\approx 1{,}571\\ \\text{mm}^3/\\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.van-chuyen-chuyen-hoa.potometer-toc-do-hut-nuoc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "potometer",
+    "the-tich-tru"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thoat-hoi-nuoc",
+    "potometer"
+   ],
+   "answer_numeric": 1.5708,
+   "answer_unit": "mm^3/s",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0043",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Vận chuyển qua màng và chuyển hoá",
+   "type": "dien-so",
+   "statement_vi": "Đốt $m_{food} = 0{,}5\\ \\text{g}$ một mẫu thức ăn dưới ống nghiệm chứa $m_w = 50\\ \\text{g}$ nước; nước nóng thêm $\\Delta T = 20\\ \\text{K}$. Lấy nhiệt dung riêng của nước $c = 4{,}18\\ \\text{J/(g}\\cdot\\text{K)}$. Tính năng lượng của thức ăn trên một gam (đơn vị J/g).",
+   "statement_en": "Burning m_food = 0.5 g of food under a tube containing 50 g of water raises the water temperature by 20 K. With c = 4.18 J/(g.K), find the energy per gram of food (J/g).",
+   "answer": "8360 J/g",
+   "solution_steps": [
+    {
+     "explain": "Nhiệt lượng nước nhận bằng $m_w c \\Delta T$; năng lượng trên một gam thức ăn bằng nhiệt lượng đó chia khối lượng thức ăn.",
+     "latex": "E = \\frac{m_{w}\\,c\\,\\Delta T}{m_{food}} = \\frac{50\\cdot 4{,}18\\cdot 20}{0{,}5}"
+    },
+    {
+     "explain": "Tính giá trị; nhiệt lượng kế đơn giản thất thoát nhiệt nên kết quả thấp hơn giá trị thực.",
+     "latex": "E = \\frac{4180}{0{,}5} = 8360\\ \\text{J/g}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.van-chuyen-chuyen-hoa.nang-luong-thuc-an-nhiet-luong-ke"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhiet-luong-ke",
+    "nhiet-luong"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "nang-luong",
+    "thuc-an"
+   ],
+   "answer_numeric": 8360,
+   "answer_unit": "J/g",
+   "tolerance": 1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0044",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Sinh lí và kĩ thuật đo",
+   "type": "dien-so",
+   "statement_vi": "Từ đường ghi spirometer lúc nghỉ, đếm được $12$ nhịp thở trong $24\\ \\text{s}$; mỗi nhịp có biên độ đỉnh - đáy (thể tích khí lưu thông) $V_T = 0{,}4\\ \\text{L}$. Tính thông khí phút $\\dot{V}_E$ (đơn vị L/phút).",
+   "statement_en": "From a resting spirometer trace, 12 breaths occur in 24 s; each breath has peak-to-trough amplitude (tidal volume) V_T = 0.4 L. Find the minute ventilation (L/min).",
+   "answer": "12 L/phút",
+   "solution_steps": [
+    {
+     "explain": "Tần số thở bằng số nhịp chia thời gian, đổi ra mỗi phút.",
+     "latex": "f = \\frac{n_{peaks}}{t} = \\frac{12}{24}\\ \\text{s}^{-1} = 0{,}5\\ \\text{s}^{-1} = 30\\ \\text{nhịp/phút}"
+    },
+    {
+     "explain": "Thông khí phút bằng tần số nhân thể tích khí lưu thông.",
+     "latex": "\\dot{V}_{E} = f\\times V_{T} = 30\\times 0{,}4 = 12\\ \\text{L/phút}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-li-do-luong.thong-khi-tu-do-thi-spirometer"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "doc-do-thi-spirometer",
+    "thong-khi-phut"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "ho-hap",
+    "spirometer"
+   ],
+   "answer_numeric": 12,
+   "answer_unit": "L/phut",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0045",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level"
+   ],
+   "topic": "Sinh lí và kĩ thuật đo",
+   "type": "dien-so",
+   "statement_vi": "Trong spirometer kín có bình soda lime hấp thụ $CO_2$, thể tích khí trong chuông giảm $\\Delta V = 300\\ \\text{mL}$ trong $\\Delta t = 2\\ \\text{phút}$. Tính mức tiêu thụ oxygen $\\dot{V}_{O_2}$ của cơ thể (độ lớn, đơn vị mL/phút).",
+   "statement_en": "In a closed spirometer with soda lime absorbing CO2, the bell volume falls by 300 mL in 2 min. Find the body's oxygen consumption (magnitude, mL/min).",
+   "answer": "150 mL/phút",
+   "solution_steps": [
+    {
+     "explain": "Vì $CO_2$ thải ra bị soda lime hấp thụ nên thể tích khí chỉ giảm do oxygen bị tiêu thụ; độ dốc âm của đường ghi cho mức tiêu thụ.",
+     "latex": "\\dot{V}_{O_{2}} = -\\frac{\\Delta V}{\\Delta t}"
+    },
+    {
+     "explain": "Lấy độ lớn của tốc độ giảm thể tích.",
+     "latex": "\\dot{V}_{O_{2}} = \\frac{300}{2} = 150\\ \\text{mL/phút}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-li-do-luong.tieu-thu-oxygen-tu-do-thi-spirometer"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tieu-thu-oxygen",
+    "doc-do-thi-spirometer"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "ho-hap",
+    "oxygen"
+   ],
+   "answer_numeric": 150,
+   "answer_unit": "mL/phut",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0046",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Sinh lí và kĩ thuật đo",
+   "type": "dien-so",
+   "statement_vi": "Một bệnh nhân có đường huyết lúc đói $126\\ \\text{mg/dL}$. Biết $c\\,(\\text{mmol/L}) = \\dfrac{c\\,(\\text{mg/dL})}{18{,}0}$. Hãy đổi giá trị này sang đơn vị mmol/L.",
+   "statement_en": "A patient has fasting blood glucose 126 mg/dL. Given c(mmol/L) = c(mg/dL)/18.0, convert this to mmol/L.",
+   "answer": "7,0 mmol/L",
+   "solution_steps": [
+    {
+     "explain": "Chia giá trị mg/dL cho hệ số 18,0 (bắt nguồn từ khối lượng mol của glucose là 180 g/mol).",
+     "latex": "c = \\frac{126}{18{,}0}\\ \\text{mmol/L}"
+    },
+    {
+     "explain": "Tính giá trị; ngưỡng 7,0 mmol/L lúc đói là mốc chẩn đoán đái tháo đường.",
+     "latex": "c = 7{,}0\\ \\text{mmol/L}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-li-do-luong.doi-don-vi-duong-huyet"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "doi-don-vi-duong-huyet"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "duong-huyet",
+    "don-vi"
+   ],
+   "answer_numeric": 7.0,
+   "answer_unit": "mmol/L",
+   "tolerance": 0.05
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0047",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "intl-undergrad",
+    "olympiad"
+   ],
+   "topic": "Sinh lí và kĩ thuật đo",
+   "type": "dien-so",
+   "statement_vi": "Ở thận, mức lọc cầu thận $GFR = 125\\ \\text{mL/phút}$, nồng độ glucose trong huyết tương $P_{x} = 1{,}0\\ \\text{mg/mL}$. Nước tiểu không chứa glucose ($U_{x} = 0$), lưu lượng nước tiểu $V = 1\\ \\text{mL/phút}$. Tính tốc độ tái hấp thu glucose $T_{reab}$ (đơn vị mg/phút).",
+   "statement_en": "In the kidney, GFR = 125 mL/min, plasma glucose Px = 1.0 mg/mL, urine glucose Ux = 0, urine flow V = 1 mL/min. Find the glucose reabsorption rate T_reab (mg/min).",
+   "answer": "125 mg/phút",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ tái hấp thu bằng lượng chất được lọc ($GFR\\cdot P_x$) trừ lượng chất bài xuất ($U_x\\cdot V$).",
+     "latex": "T_{reab} = GFR\\times P_{x} - U_{x} V = 125\\times 1{,}0 - 0\\times 1"
+    },
+    {
+     "explain": "Tính giá trị; toàn bộ glucose được lọc đều được tái hấp thu nên nước tiểu bình thường không có glucose.",
+     "latex": "T_{reab} = 125\\ \\text{mg/phút}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-li-do-luong.toc-do-tai-hap-thu-o-than"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tai-hap-thu-than",
+    "can-bang-khoi-luong"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "than",
+    "tai-hap-thu"
+   ],
+   "answer_numeric": 125,
+   "answer_unit": "mg/phut",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0048",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "intl-undergrad"
+   ],
+   "topic": "Di truyền học theo chương trình quốc tế",
+   "type": "dien-so",
+   "statement_vi": "Một hồ sơ ADN phân tích $3$ locus STR độc lập, tần số kiểu gen tương ứng trong quần thể là $f_1 = \\dfrac{1}{20}$, $f_2 = \\dfrac{1}{25}$, $f_3 = \\dfrac{1}{40}$. Tính xác suất một người bất kì trong quần thể trùng khớp hoàn toàn cả ba locus.",
+   "statement_en": "A DNA profile analyses 3 independent STR loci with population genotype frequencies f1 = 1/20, f2 = 1/25, f3 = 1/40. Find the probability that a random person matches all three loci.",
+   "answer": "5×10^-5 (0,00005)",
+   "solution_steps": [
+    {
+     "explain": "Các locus phân li độc lập và quần thể cân bằng Hardy - Weinberg nên xác suất trùng khớp là tích tần số kiểu gen từng locus.",
+     "latex": "P_{match} = \\prod_{i=1}^{L} f_{i} = \\frac{1}{20}\\times \\frac{1}{25}\\times \\frac{1}{40}"
+    },
+    {
+     "explain": "Nhân các mẫu số rồi lấy nghịch đảo.",
+     "latex": "P_{match} = \\frac{1}{20000} = 5\\times 10^{-5}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.di-truyen-intl.xac-suat-trung-khop-ho-so-adn"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "xac-suat-nhan",
+    "ho-so-adn"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "di-truyen",
+    "ho-so-adn"
+   ],
+   "answer_numeric": 5e-05,
+   "answer_unit": "",
+   "tolerance": 1e-06
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0049",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "tu-luan",
+   "statement_vi": "Một ô tiêu chuẩn thu được $3$ loài với số cá thể lần lượt $10,\\ 20,\\ 30$ (tổng $N = 60$). Tính độ giàu loài $S$ và chỉ số đa dạng Simpson có hiệu chỉnh mẫu hữu hạn $D = 1 - \\sum \\dfrac{n(n-1)}{N(N-1)}$.",
+   "statement_en": "A quadrat yields 3 species with 10, 20, 30 individuals (N = 60). Find the species richness S and the finite-sample Simpson diversity index D = 1 - sum[n(n-1)/(N(N-1))].",
+   "answer": "Độ giàu loài S = 3; chỉ số Simpson D ≈ 0,621",
+   "solution_steps": [
+    {
+     "explain": "Độ giàu loài chỉ đếm số loài có mặt trong mẫu.",
+     "latex": "S = 3"
+    },
+    {
+     "explain": "Tính tổng $\\sum n(n-1)$ cho ba loài và $N(N-1)$.",
+     "latex": "\\sum n(n-1) = 10\\cdot 9 + 20\\cdot 19 + 30\\cdot 29 = 1340;\\quad N(N-1) = 60\\cdot 59 = 3540"
+    },
+    {
+     "explain": "Thay vào công thức Simpson; D gần 1 nghĩa là đa dạng cao.",
+     "latex": "D = 1 - \\frac{1340}{3540} \\approx 0{,}621"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.chi-so-simpson-hieu-chinh-mau-huu-han",
+    "biology.thpt.sinh-thai-intl.do-giau-loai-va-do-da-dang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "chi-so-simpson",
+    "do-giau-loai"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "da-dang"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0050",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "dien-so",
+   "statement_vi": "Dùng khung ô tiêu chuẩn chia thành $n_{total} = 100$ ô con để đo độ phủ của một loài cỏ. Loài này chiếm hơn nửa diện tích ở $n_{squares} = 35$ ô con. Tính độ phủ phần trăm $C$ của loài.",
+   "statement_en": "A quadrat divided into 100 subsquares is used to measure a grass species' cover. The species covers more than half of 35 subsquares. Find the percentage cover C.",
+   "answer": "35%",
+   "solution_steps": [
+    {
+     "explain": "Độ phủ phần trăm bằng số ô con loài chiếm hơn nửa diện tích chia cho tổng số ô con, nhân 100%.",
+     "latex": "C = \\frac{n_{squares}}{n_{total}}\\times 100\\% = \\frac{35}{100}\\times 100\\%"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "C = 35\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.do-phu-phan-tram-o-tieu-chuan"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "do-phu",
+    "o-tieu-chuan"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "do-phu"
+   ],
+   "answer_numeric": 35,
+   "answer_unit": "phan-tram",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0051",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "dien-so",
+   "statement_vi": "Theo ký hiệu A-Level, một bậc sinh vật tiêu thụ có năng lượng ăn vào $I = 500$, mất qua phân và nước tiểu $F = 200$, mất qua hô hấp $R = 180$ (đơn vị $\\text{kJ}\\,\\text{m}^{-2}\\,\\text{năm}^{-1}$). Tính sản lượng thuần $N$ của bậc tiêu thụ.",
+   "statement_en": "Using A-Level notation, a consumer trophic level has ingested energy I = 500, faeces+urine loss F = 200, respiration loss R = 180 (kJ m^-2 yr^-1). Find the net production N.",
+   "answer": "120 kJ m^-2 năm^-1",
+   "solution_steps": [
+    {
+     "explain": "Sản lượng thuần là phần năng lượng ăn vào còn lại sau khi trừ mất qua phân, nước tiểu và hô hấp.",
+     "latex": "N = I - (F + R) = 500 - (200 + 180)"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "N = 500 - 380 = 120"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.san-luong-tieu-thu-aqa"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "san-luong-thuan",
+    "dong-nang-luong"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "nang-luong"
+   ],
+   "answer_numeric": 120,
+   "answer_unit": "kJ/m2/nam",
+   "tolerance": 0.1
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0052",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "trac-nghiem",
+   "statement_vi": "Đơn vị nào dưới đây là đúng cho tháp năng lượng, và vì sao tháp năng lượng không bao giờ bị lộn ngược?",
+   "statement_en": "Which unit below is correct for an energy pyramid, and why is an energy pyramid never inverted?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "$\\text{g}\\,\\text{m}^{-2}$; vì nó đo trữ lượng sinh khối tại một thời điểm.",
+     "why_wrong": "$\\text{g}\\,\\text{m}^{-2}$ là đơn vị của tháp SINH KHỐI, không phải tháp năng lượng."
+    },
+    {
+     "key": "B",
+     "text": "$\\text{kJ}\\,\\text{m}^{-2}\\,\\text{năm}^{-1}$; vì nó đo tốc độ dòng năng lượng, luôn giảm dần lên bậc trên do thất thoát.",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "$\\text{kJ}$; vì năng lượng là đại lượng vô hướng.",
+     "why_wrong": "Tháp năng lượng phải chuẩn hoá theo diện tích và thời gian, không dùng đơn vị kJ trần."
+    },
+    {
+     "key": "D",
+     "text": "$\\text{cá thể}\\,\\text{m}^{-2}$; vì đếm số cá thể mỗi bậc.",
+     "why_wrong": "Đó là đơn vị của tháp SỐ LƯỢNG, không phải tháp năng lượng."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Tháp năng lượng đo tốc độ dòng năng lượng nên có thứ nguyên năng lượng trên diện tích trên thời gian.",
+     "latex": "[\\text{energy pyramid}] = \\mathrm{kJ\\,m^{-2}\\,yr^{-1}}"
+    },
+    {
+     "explain": "Vì mỗi bậc dinh dưỡng luôn thất thoát năng lượng (chủ yếu qua hô hấp), năng lượng chuyển lên bậc trên luôn nhỏ hơn nên tháp không thể lộn ngược.",
+     "latex": "E_{n+1} < E_{n}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.thap-nang-luong-don-vi"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "thap-nang-luong",
+    "don-vi"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "thap-sinh-thai"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0053",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "ib"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "dien-so",
+   "statement_vi": "Một bảng sống bắt đầu với $n_0 = 1000$ cá thể. Đến nhóm tuổi $x$ còn $n_x = 200$ cá thể sống sót. Tính tỉ lệ sống sót $l_x$ đến tuổi $x$.",
+   "statement_en": "A life table starts with n0 = 1000 individuals; at age class x, nx = 200 survive. Find the survivorship l_x to age x.",
+   "answer": "0,2",
+   "solution_steps": [
+    {
+     "explain": "Tỉ lệ sống sót đến tuổi x bằng số cá thể còn sống ở tuổi x chia cho số cá thể ban đầu.",
+     "latex": "l_{x} = \\frac{n_{x}}{n_{0}} = \\frac{200}{1000}"
+    },
+    {
+     "explain": "Tính giá trị; $l_x$ được vẽ theo thang logarit để nhận dạng ba kiểu đường cong sinh tồn.",
+     "latex": "l_{x} = 0{,}2"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.duong-cong-sinh-ton"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "ti-le-song-sot",
+    "bang-song"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "sinh-ton"
+   ],
+   "answer_numeric": 0.2,
+   "answer_unit": "",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0054",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "dien-so",
+   "statement_vi": "Tính dấu chân sinh thái bình quân đầu người theo mô hình đơn giản gồm thành phần carbon và thành phần lương thực: $C_{cap} = 4000$ kg $CO_2$/người/năm; $C_{fix} = 8000$ kg $CO_2$/ha/năm; $F_{cap} = 500$ kg lương thực/người/năm; $Y_{ha} = 2500$ kg/ha/năm. Tính $EF$ (đơn vị ha/người).",
+   "statement_en": "Compute the per-capita ecological footprint (simple carbon + food model): C_cap = 4000 kg CO2/person/yr; C_fix = 8000 kg CO2/ha/yr; F_cap = 500 kg food/person/yr; Y_ha = 2500 kg/ha/yr. Find EF (ha/person).",
+   "answer": "0,7 ha/người",
+   "solution_steps": [
+    {
+     "explain": "Dấu chân sinh thái bằng tổng diện tích cần để hấp thụ carbon và để sản xuất lương thực.",
+     "latex": "EF = \\frac{C_{cap}}{C_{fix}} + \\frac{F_{cap}}{Y_{ha}} = \\frac{4000}{8000} + \\frac{500}{2500}"
+    },
+    {
+     "explain": "Tính từng số hạng rồi cộng lại.",
+     "latex": "EF = 0{,}5 + 0{,}2 = 0{,}7"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.dau-chan-sinh-thai"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "dau-chan-sinh-thai",
+    "phan-tich-thu-nguyen"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "ben-vung"
+   ],
+   "answer_numeric": 0.7,
+   "answer_unit": "ha/nguoi",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0055",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "dien-so",
+   "statement_vi": "Một quốc gia trong một năm có: số sinh $B = 1200$, số tử $D = 800$, nhập cư $I = 300$, di cư đi $E = 100$; dân số trung bình $N = 100\\,000$. Tính tốc độ tăng dân số $GR$ (trên một nghìn dân mỗi năm).",
+   "statement_en": "In one year a country has births B = 1200, deaths D = 800, immigration I = 300, emigration E = 100; mean population N = 100000. Find the growth rate GR (per 1000 people per year).",
+   "answer": "6 (trên một nghìn dân/năm)",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ tăng dân số kể cả di cư bằng biến đổi tự nhiên cộng biến đổi cơ học, chia dân số, nhân 1000.",
+     "latex": "GR = \\frac{(B - D) + (I - E)}{N}\\times 1000 = \\frac{(1200-800) + (300-100)}{100000}\\times 1000"
+    },
+    {
+     "explain": "Tính tử số rồi chia và nhân 1000.",
+     "latex": "GR = \\frac{600}{100000}\\times 1000 = 6"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.toc-do-tang-dan-so-co-di-cu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "toc-do-tang-dan-so",
+    "chuan-hoa"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "dan-so"
+   ],
+   "answer_numeric": 6,
+   "answer_unit": "tren-nghin-dan",
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0056",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Sinh thái theo chương trình quốc tế",
+   "type": "tu-luan",
+   "statement_vi": "Lấy mẫu thực vật trên diện tích $A = 2\\ \\text{m}^2$: khối lượng tươi $m_{fresh} = 250\\ \\text{g}$, sau khi sấy đến khối lượng không đổi còn $m_{dry} = 60\\ \\text{g}$. Tính sinh khối khô trên đơn vị diện tích $B$ và phần trăm chất khô $\\%\\,dry$.",
+   "statement_en": "A plant sample on area A = 2 m^2 has fresh mass 250 g and, dried to constant mass, m_dry = 60 g. Find the dry biomass per area B and the percentage dry matter.",
+   "answer": "Sinh khối khô B = 30 g/m^2; phần trăm chất khô = 24%",
+   "solution_steps": [
+    {
+     "explain": "Sinh khối khô trên đơn vị diện tích bằng khối lượng khô chia cho diện tích lấy mẫu.",
+     "latex": "B = \\frac{m_{dry}}{A} = \\frac{60}{2} = 30\\ \\text{g/m}^2"
+    },
+    {
+     "explain": "Phần trăm chất khô bằng khối lượng khô chia khối lượng tươi, nhân 100%.",
+     "latex": "\\%\\,dry = \\frac{m_{dry}}{m_{fresh}}\\times 100\\% = \\frac{60}{250}\\times 100\\% = 24\\%"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.sinh-thai-intl.sinh-khoi-kho-tren-don-vi-dien-tich"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "sinh-khoi-kho",
+    "phan-tram-chat-kho"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "sinh-khoi"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0057",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level",
+    "ap"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong một thí nghiệm, sai số chuẩn của trung bình $SE_{\\bar{x}}$ tỉ lệ nghịch với $\\sqrt{n}$. Muốn giảm sai số chuẩn xuống còn một nửa (với cùng độ lệch chuẩn của dữ liệu) thì phải làm gì?",
+   "statement_en": "In an experiment, the standard error SE is inversely proportional to sqrt(n). To halve the standard error (same data SD), what must be done?",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tăng cỡ mẫu lên $2$ lần.",
+     "why_wrong": "Tăng n lên 2 lần chỉ giảm SE theo hệ số $1/\\sqrt{2}\\approx 0{,}71$, chưa được một nửa."
+    },
+    {
+     "key": "B",
+     "text": "Giữ nguyên cỡ mẫu, đo chính xác hơn.",
+     "why_wrong": "Đo chính xác hơn giảm độ lệch chuẩn nhưng đề yêu cầu với cùng độ lệch chuẩn; SE phụ thuộc n."
+    },
+    {
+     "key": "C",
+     "text": "Tăng cỡ mẫu lên $4$ lần.",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "Giảm cỡ mẫu xuống một nửa.",
+     "why_wrong": "Giảm n làm SE TĂNG chứ không giảm."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Sai số chuẩn tỉ lệ nghịch với căn bậc hai cỡ mẫu.",
+     "latex": "SE_{\\bar{x}} \\propto \\frac{1}{\\sqrt{n}}"
+    },
+    {
+     "explain": "Muốn $SE$ còn một nửa thì $\\sqrt{n}$ phải gấp đôi, tức $n$ phải gấp bốn.",
+     "latex": "\\frac{1}{\\sqrt{4n}} = \\frac{1}{2}\\cdot\\frac{1}{\\sqrt{n}}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.thanh-sai-so-va-cach-doc",
+    "biology.thpt.thong-ke-sinh-hoc-intl.anh-huong-co-mau-den-sai-so-chuan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "sai-so-chuan",
+    "co-mau"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "sai-so-chuan"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0058",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "tu-luan",
+   "statement_vi": "Đo chiều dài $3$ lá: $6,\\ 10,\\ 14$ (cm). (a) Tính độ lệch chuẩn mẫu $s$ (dùng phím chia cho $n-1$). (b) Giả sử dữ liệu phân phối chuẩn, hãy nêu khoảng chứa khoảng $68\\%$ và khoảng chứa khoảng $95\\%$ số lá quanh trung bình.",
+   "statement_en": "Leaf lengths (cm): 6, 10, 14. (a) Compute the sample SD s (using the n-1 key). (b) Assuming normal data, give the intervals containing ~68% and ~95% of leaves around the mean.",
+   "answer": "s = 4 cm; khoảng ~68%: [6; 14] cm; khoảng ~95%: [2; 18] cm",
+   "solution_steps": [
+    {
+     "explain": "Trung bình mẫu bằng tổng chia cỡ mẫu.",
+     "latex": "\\bar{x} = \\frac{6 + 10 + 14}{3} = 10"
+    },
+    {
+     "explain": "Độ lệch chuẩn MẪU dùng phím chia cho $n-1$ vì đây là mẫu rút từ quần thể.",
+     "latex": "s = \\sqrt{\\frac{\\sum (x_{i}-\\bar{x})^{2}}{n-1}} = \\sqrt{\\frac{16 + 0 + 16}{2}} = 4"
+    },
+    {
+     "explain": "Áp dụng quy tắc 68 - 95: khoảng $\\bar{x}\\pm s$ chứa ~68%, khoảng $\\bar{x}\\pm 2s$ chứa ~95%.",
+     "latex": "68\\%: [10-4;\\,10+4] = [6;14];\\quad 95\\%: [10-8;\\,10+8] = [2;18]"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.quy-tac-68-95-do-lech-chuan",
+    "biology.thpt.thong-ke-sinh-hoc-intl.chon-do-lech-chuan-mau-hay-tong-the"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "do-lech-chuan-mau",
+    "quy-tac-68-95"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "do-lech-chuan"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0059",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "tu-luan",
+   "statement_vi": "So sánh chiều cao hai nhóm cây: nhóm 1 có $\\bar{x}_1 = 25$, $s_1 = 4$, $n_1 = 10$; nhóm 2 có $\\bar{x}_2 = 20$, $s_2 = 3$, $n_2 = 10$. (a) Tính giá trị $t$ theo dạng A-Level/IB. (b) Tính số bậc tự do $df$. (c) Biết giá trị tới hạn $t_{0{,}05}$ ở $df = 20$ là $2{,}09$ và ở $df = 15$ là $2{,}13$, hãy kết luận về sự khác nhau giữa hai nhóm.",
+   "statement_en": "Compare heights of two plant groups: group 1 x1=25, s1=4, n1=10; group 2 x2=20, s2=3, n2=10. (a) Compute t (A-Level/IB form). (b) Compute df. (c) Given critical t0.05 = 2.09 at df=20 and 2.13 at df=15, conclude about the difference.",
+   "answer": "t ≈ 3,16; df = 18; vì t > giá trị tới hạn (~2,10) nên hai nhóm khác nhau có ý nghĩa thống kê",
+   "solution_steps": [
+    {
+     "explain": "Tính t theo dạng cộng riêng hai phương sai chia cỡ mẫu, lấy trị tuyệt đối của hiệu hai trung bình.",
+     "latex": "t = \\frac{\\left| \\bar{x}_{1} - \\bar{x}_{2} \\right|}{\\sqrt{\\dfrac{s_{1}^{2}}{n_{1}} + \\dfrac{s_{2}^{2}}{n_{2}}}} = \\frac{|25 - 20|}{\\sqrt{\\dfrac{16}{10} + \\dfrac{9}{10}}}"
+    },
+    {
+     "explain": "Tính mẫu số rồi chia.",
+     "latex": "t = \\frac{5}{\\sqrt{2{,}5}} = \\frac{5}{1{,}581} \\approx 3{,}16"
+    },
+    {
+     "explain": "Số bậc tự do của kiểm định t hai mẫu độc lập.",
+     "latex": "df = n_{1} + n_{2} - 2 = 10 + 10 - 2 = 18"
+    },
+    {
+     "explain": "Giá trị tới hạn ở $df = 18$ nằm giữa 2,13 và 2,09, khoảng 2,10; vì $t = 3{,}16 > 2{,}10$ nên bác bỏ giả thuyết không.",
+     "latex": "t = 3{,}16 > t_{0{,}05}\\approx 2{,}10 \\Rightarrow \\text{khác nhau có ý nghĩa}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.kiem-dinh-t-a-level",
+    "biology.thpt.thong-ke-sinh-hoc-intl.bac-tu-do-kiem-dinh-t",
+    "biology.thpt.thong-ke-sinh-hoc-intl.bang-gia-tri-toi-han-t"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 7,
+   "skills": [
+    "kiem-dinh-t",
+    "bac-tu-do",
+    "tra-bang-toi-han"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "kiem-dinh-t"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0060",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level",
+    "ap"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "trac-nghiem",
+   "statement_vi": "Một kiểm định thống kê cho $p = 0{,}03$ khi so sánh hai nhóm. Ở mức ý nghĩa $0{,}05$, cách diễn giải nào ĐÚNG?",
+   "statement_en": "A statistical test gives p = 0.03 comparing two groups. At significance level 0.05, which interpretation is correct?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Vì $p < 0{,}05$ nên bác bỏ giả thuyết không; sự khác biệt khó có khả năng chỉ do ngẫu nhiên.",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "$p = 0{,}03$ là xác suất giả thuyết không đúng.",
+     "why_wrong": "$p$ KHÔNG phải xác suất giả thuyết không đúng; nó là xác suất thu được sai khác lớn như quan sát nếu $H_0$ đúng."
+    },
+    {
+     "key": "C",
+     "text": "Vì $p < 0{,}05$ nên chắc chắn có ý nghĩa sinh học quan trọng.",
+     "why_wrong": "Có ý nghĩa thống kê chưa chắc có ý nghĩa sinh học; đó là hai khái niệm khác nhau."
+    },
+    {
+     "key": "D",
+     "text": "Không kết luận được vì $p$ chưa bằng $0$.",
+     "why_wrong": "Không cần $p = 0$; chỉ cần $p < 0{,}05$ là đủ để bác bỏ $H_0$ theo quy ước."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Quy ước: nếu $p$ nhỏ hơn ngưỡng 0,05 thì bác bỏ giả thuyết không.",
+     "latex": "p = 0{,}03 < 0{,}05 \\Rightarrow \\text{bác bỏ } H_{0}"
+    },
+    {
+     "explain": "Cần diễn giải đúng: $p$ là xác suất quan sát được sai khác này (hoặc lớn hơn) nếu $H_0$ đúng, không phải xác suất $H_0$ đúng.",
+     "latex": "p \\neq P(H_{0}\\ \\text{đúng})"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.muc-y-nghia-p-0-05"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "muc-y-nghia",
+    "dien-giai-p"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "gia-tri-p"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0061",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "dien-so",
+   "statement_vi": "Khảo sát $n = 5$ ô tiêu chuẩn, xếp hạng mật độ một loài và độ ẩm đất, tính được các hiệu hạng $d = 1,\\ -1,\\ 0,\\ 1,\\ -1$. Tính hệ số tương quan hạng Spearman $r_s$.",
+   "statement_en": "For n = 5 quadrats, ranking a species' density and soil moisture gives rank differences d = 1, -1, 0, 1, -1. Compute Spearman's rank correlation r_s.",
+   "answer": "0,8",
+   "solution_steps": [
+    {
+     "explain": "Tính tổng bình phương các hiệu hạng.",
+     "latex": "\\sum d^{2} = 1^{2} + (-1)^{2} + 0^{2} + 1^{2} + (-1)^{2} = 4"
+    },
+    {
+     "explain": "Thay vào công thức Spearman với $n = 5$.",
+     "latex": "r_{s} = 1 - \\frac{6\\sum d^{2}}{n^{3} - n} = 1 - \\frac{6\\cdot 4}{125 - 5} = 1 - \\frac{24}{120} = 0{,}8"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.he-so-tuong-quan-spearman"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tuong-quan-spearman",
+    "xep-hang"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "tuong-quan"
+   ],
+   "answer_numeric": 0.8,
+   "answer_unit": "",
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0062",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ib"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "tu-luan",
+   "statement_vi": "Cho $5$ cặp số liệu $(x, y)$: $(1,2),\\ (2,4),\\ (3,5),\\ (4,4),\\ (5,5)$. (a) Tính hệ số tương quan Pearson $r$. (b) Tính hệ số xác định $R^2$ và nêu ý nghĩa.",
+   "statement_en": "Given 5 data pairs (x,y): (1,2),(2,4),(3,5),(4,4),(5,5). (a) Compute Pearson's r. (b) Compute R^2 and interpret it.",
+   "answer": "r ≈ 0,775; R^2 = 0,60 (đường hồi quy giải thích 60% biến thiên của y)",
+   "solution_steps": [
+    {
+     "explain": "Tính trung bình hai biến; $\\bar{x} = 3$, $\\bar{y} = 4$.",
+     "latex": "\\bar{x} = \\frac{1+2+3+4+5}{5} = 3;\\quad \\bar{y} = \\frac{2+4+5+4+5}{5} = 4"
+    },
+    {
+     "explain": "Tính các tổng độ lệch để thay vào công thức Pearson.",
+     "latex": "\\sum (x-\\bar{x})(y-\\bar{y}) = 6;\\quad \\sum (x-\\bar{x})^{2} = 10;\\quad \\sum (y-\\bar{y})^{2} = 6"
+    },
+    {
+     "explain": "Thay vào công thức hệ số tương quan.",
+     "latex": "r = \\frac{6}{\\sqrt{10\\cdot 6}} = \\frac{6}{\\sqrt{60}} \\approx 0{,}775"
+    },
+    {
+     "explain": "Hệ số xác định bằng bình phương hệ số tương quan; $R^2 = 0{,}60$ nghĩa là 60% biến thiên của y được giải thích bởi x.",
+     "latex": "R^{2} = r^{2} = \\frac{36}{60} = 0{,}60"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.he-so-tuong-quan-pearson",
+    "biology.thpt.thong-ke-sinh-hoc-intl.he-so-xac-dinh-r2-do-thi"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 7,
+   "skills": [
+    "tuong-quan-pearson",
+    "he-so-xac-dinh"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "hoi-quy"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0063",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ib"
+   ],
+   "topic": "Thống kê sinh học IB và A-Level",
+   "type": "tu-luan",
+   "statement_vi": "Khảo sát sự có mặt của hai loài A và B trong $70$ ô tiêu chuẩn, thu được bảng ngẫu nhiên $2\\times 2$: cùng có mặt $30$; chỉ A $10$; chỉ B $10$; đều vắng $20$. (a) Tính giá trị $\\chi^2$. (b) Với $df = 1$, giá trị tới hạn là $3{,}84$; hãy kết luận hai loài có phân bố liên kết với nhau không.",
+   "statement_en": "Presence of species A and B in 70 quadrats gives a 2x2 table: both present 30; only A 10; only B 10; both absent 20. (a) Compute chi-square. (b) With df = 1 and critical value 3.84, conclude whether the species are associated.",
+   "answer": "χ² ≈ 12,15; df = 1; vì 12,15 > 3,84 nên hai loài phân bố liên kết có ý nghĩa thống kê",
+   "solution_steps": [
+    {
+     "explain": "Lập tổng hàng, tổng cột; hàng A có mặt $= 40$, A vắng $= 30$; cột B có mặt $= 40$, B vắng $= 30$; $N = 70$.",
+     "latex": "R_{1}=40,\\ R_{2}=30,\\ C_{1}=40,\\ C_{2}=30,\\ N=70"
+    },
+    {
+     "explain": "Tính tần số kì vọng mỗi ô theo công thức $e_{ij} = R_i C_j / N$.",
+     "latex": "e_{11} = \\frac{40\\cdot 40}{70} \\approx 22{,}86;\\quad e_{12}=e_{21} \\approx 17{,}14;\\quad e_{22} \\approx 12{,}86"
+    },
+    {
+     "explain": "Tính thống kê chi bình phương từ quan sát và kì vọng.",
+     "latex": "\\chi^{2} = \\sum \\frac{(o_{ij} - e_{ij})^{2}}{e_{ij}} \\approx 12{,}15"
+    },
+    {
+     "explain": "So với giá trị tới hạn ở $df = (2-1)(2-1) = 1$.",
+     "latex": "\\chi^{2} = 12{,}15 > 3{,}84 \\Rightarrow \\text{liên kết có ý nghĩa}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.thong-ke-sinh-hoc-intl.kiem-dinh-chi-binh-phuong-lien-ket-hai-loai"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 8,
+   "skills": [
+    "kiem-dinh-chi-binh-phuong",
+    "bang-ngau-nhien"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "thong-ke",
+    "chi-binh-phuong"
+   ]
+  },
+  {
+   "id": "prob.biology.ext2-biology-thpt.0064",
+   "subject": "biology",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "ib"
+   ],
+   "topic": "Bảng công thức tham chiếu AP Biology",
+   "type": "dien-so",
+   "statement_vi": "Theo khung Rate and Growth của bảng tham chiếu AP Biology, quần thể tăng trưởng hàm mũ với $\\dfrac{dN}{dt} = r_{max} N$. Biết $r_{max} = 0{,}5$ (trên một cá thể mỗi năm) và $N = 240$ cá thể, tính tốc độ tăng trưởng tức thời $dN/dt$ (cá thể/năm).",
+   "statement_en": "Per the AP Biology reference (Rate and Growth), a population grows exponentially with dN/dt = rmax*N. Given rmax = 0.5 per individual per year and N = 240, find dN/dt (individuals per year).",
+   "answer": "120 cá thể/năm",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ tăng trưởng hàm mũ theo AP dùng tốc độ tối đa tính trên một cá thể nhân với kích thước quần thể.",
+     "latex": "\\frac{dN}{dt} = r_{max} N = 0{,}5\\times 240"
+    },
+    {
+     "explain": "Nhân để có tốc độ tức thời.",
+     "latex": "\\frac{dN}{dt} = 120\\ \\text{cá thể/năm}"
+    }
+   ],
+   "formulas_used": [
+    "biology.thpt.bang-cong-thuc-ap.tang-truong-mu-rmax"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tang-truong-mu",
+    "rmax"
+   ],
+   "tags": [
+    "sinh-hoc",
+    "sinh-thai",
+    "ap-biology"
+   ],
+   "answer_numeric": 120,
+   "answer_unit": "ca-the-tren-nam",
+   "tolerance": 0.1
+  }
+ ]
+}

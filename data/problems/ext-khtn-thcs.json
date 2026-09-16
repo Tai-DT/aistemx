@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "file": "ext-khtn-thcs.json",
+    "subject": "chemistry",
+    "title": "Bài tập bổ sung KHTN THCS (Hoá - Sinh): mol, chất khí, dung dịch, độ tan, di truyền và sinh lí người",
+    "levels": ["thcs"],
+    "count": 20
+  },
+  "problems": [
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0001",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Một lượng khí X có khối lượng 8 g và chứa 0,5 mol phân tử. Tính khối lượng mol M của khí X (g/mol).",
+      "statement_en": "A gas X has mass 8 g and contains 0.5 mol of molecules. Find its molar mass M (g/mol).",
+      "answer": "16",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng mol bằng khối lượng chia cho số mol, vì khối lượng mol chính là khối lượng của 1 mol chất.",
+          "latex": "M = \\dfrac{m}{n} = \\dfrac{8}{0{,}5}"
+        },
+        {
+          "explain": "Thực hiện phép chia để ra khối lượng mol.",
+          "latex": "M = 16 \\text{ g/mol}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.khoi-luong-mol"],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": ["tính khối lượng mol từ khối lượng và số mol"],
+      "tags": ["mol", "khoi-luong-mol"],
+      "answer_numeric": 16,
+      "answer_unit": "g/mol",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0002",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Một mẫu chất chứa 3,011×10^23 phân tử. Tính số mol phân tử trong mẫu. (Biết số Avogadro N_A = 6,022×10^23.)",
+      "statement_en": "A sample contains 3.011×10^23 molecules. Find the number of moles. (Avogadro number N_A = 6.022×10^23.)",
+      "answer": "0,5",
+      "solution_steps": [
+        {
+          "explain": "Số mol bằng số hạt chia cho số Avogadro, vì mỗi mol chứa đúng N_A hạt.",
+          "latex": "n = \\dfrac{N}{N_{A}} = \\dfrac{3{,}011 \\times 10^{23}}{6{,}022 \\times 10^{23}}"
+        },
+        {
+          "explain": "Rút gọn tỉ số để tìm số mol.",
+          "latex": "n = 0{,}5 \\text{ mol}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.so-mol-theo-so-hat"],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": ["đổi số hạt vi mô ra số mol"],
+      "tags": ["mol", "so-avogadro"],
+      "answer_numeric": 0.5,
+      "answer_unit": "mol",
+      "tolerance": 0.005
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0003",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Ở điều kiện tiêu chuẩn (đktc), một khí chiếm thể tích 5,6 lít. Tính số mol khí đó.",
+      "statement_en": "At standard conditions (STP, 22.4 L/mol), a gas occupies 5.6 L. Find the number of moles.",
+      "answer": "0,25",
+      "solution_steps": [
+        {
+          "explain": "Ở đktc, mỗi mol khí chiếm 22,4 lít, nên số mol bằng thể tích chia cho 22,4.",
+          "latex": "n = \\dfrac{V}{22{,}4} = \\dfrac{5{,}6}{22{,}4}"
+        },
+        {
+          "explain": "Thực hiện phép chia.",
+          "latex": "n = 0{,}25 \\text{ mol}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.so-mol-khi-dktc"],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": ["tính số mol khí ở đktc"],
+      "tags": ["mol", "chat-khi", "dktc"],
+      "answer_numeric": 0.25,
+      "answer_unit": "mol",
+      "tolerance": 0.005
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0004",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Ở điều kiện chuẩn (25 °C, 1 bar; mỗi mol khí chiếm 24,79 lít), một khí chiếm 49,58 lít. Tính số mol khí.",
+      "statement_en": "At standard state (25 °C, 1 bar; 24.79 L/mol), a gas occupies 49.58 L. Find the number of moles.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Ở điều kiện chuẩn, mỗi mol khí chiếm 24,79 lít, nên số mol bằng thể tích chia cho 24,79.",
+          "latex": "n = \\dfrac{V}{24{,}79} = \\dfrac{49{,}58}{24{,}79}"
+        },
+        {
+          "explain": "Thực hiện phép chia.",
+          "latex": "n = 2 \\text{ mol}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.so-mol-khi-dkc"],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": ["tính số mol khí ở điều kiện chuẩn"],
+      "tags": ["mol", "chat-khi", "dkc"],
+      "answer_numeric": 2,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0005",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "trac-nghiem",
+      "statement_vi": "Tính tỉ khối của khí sulfur dioxide SO2 (M = 64 g/mol) so với khí oxygen O2 (M = 32 g/mol). Giá trị này cho biết SO2 nặng hơn O2 bao nhiêu lần?",
+      "statement_en": "Find the relative density of SO2 (M = 64) with respect to O2 (M = 32). How many times heavier is SO2 than O2?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tỉ khối của khí A so với khí B bằng khối lượng mol của A chia cho khối lượng mol của B.",
+          "latex": "d_{\\text{SO}_2/\\text{O}_2} = \\dfrac{M_{\\text{SO}_2}}{M_{\\text{O}_2}} = \\dfrac{64}{32}"
+        },
+        {
+          "explain": "Rút gọn tỉ số; kết quả cho biết SO2 nặng gấp 2 lần O2.",
+          "latex": "d_{\\text{SO}_2/\\text{O}_2} = 2"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.ti-khoi-hai-khi"],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": ["tính tỉ khối của hai chất khí"],
+      "tags": ["ti-khoi", "chat-khi"],
+      "choices": [
+        {"key": "A", "text": "0,5 lần", "why_wrong": "Lấy nghịch đảo: chia M(O2) cho M(SO2) thay vì M(SO2) cho M(O2)."},
+        {"key": "B", "text": "2 lần", "why_wrong": ""},
+        {"key": "C", "text": "32 lần", "why_wrong": "Lấy hiệu hai khối lượng mol (64 − 32) thay vì lập tỉ số (thương)."},
+        {"key": "D", "text": "96 lần", "why_wrong": "Cộng hai khối lượng mol (64 + 32) thay vì chia; tỉ khối là tỉ số, không phải tổng."}
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0006",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Một hỗn hợp khí gồm 0,2 mol O2 và 0,8 mol N2. Tính phần trăm thể tích của khí O2 trong hỗn hợp (%).",
+      "statement_en": "A gas mixture contains 0.2 mol O2 and 0.8 mol N2. Find the volume percentage of O2 (%).",
+      "answer": "20",
+      "solution_steps": [
+        {
+          "explain": "Với chất khí ở cùng điều kiện, phần trăm thể tích bằng phần trăm số mol. Trước hết tính tổng số mol khí.",
+          "latex": "n_{hh} = 0{,}2 + 0{,}8 = 1{,}0 \\text{ mol}"
+        },
+        {
+          "explain": "Phần trăm thể tích O2 bằng số mol O2 chia cho tổng số mol, nhân 100%.",
+          "latex": "\\%V_{\\text{O}_2} = \\dfrac{n_{\\text{O}_2}}{n_{hh}} \\times 100\\% = \\dfrac{0{,}2}{1{,}0} \\times 100\\% = 20\\%"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.phan-tram-the-tich-khi"],
+      "difficulty": 1,
+      "estimated_minutes": 4,
+      "skills": ["tính phần trăm thể tích khí trong hỗn hợp"],
+      "tags": ["phan-tram-the-tich", "hon-hop-khi"],
+      "answer_numeric": 20,
+      "answer_unit": "%",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0007",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Một dung dịch muối ăn có nồng độ 20% và khối lượng dung dịch 150 g. Tính khối lượng muối ăn (chất tan) có trong dung dịch (g).",
+      "statement_en": "A salt solution has concentration 20% and total mass 150 g. Find the mass of dissolved salt (g).",
+      "answer": "30",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng chất tan bằng nồng độ phần trăm nhân khối lượng dung dịch rồi chia 100.",
+          "latex": "m_{ct} = \\dfrac{C\\% \\cdot m_{dd}}{100} = \\dfrac{20 \\times 150}{100}"
+        },
+        {
+          "explain": "Thực hiện phép tính.",
+          "latex": "m_{ct} = 30 \\text{ g}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dung-dich.khoi-luong-chat-tan"],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": ["tính khối lượng chất tan theo nồng độ phần trăm"],
+      "tags": ["dung-dich", "nong-do-phan-tram"],
+      "answer_numeric": 30,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0008",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Pha 200 g dung dịch đường có nồng độ 15%. Tính khối lượng nước (dung môi) đã dùng để pha dung dịch này (g).",
+      "statement_en": "Prepare 200 g of a 15% sugar solution. Find the mass of water (solvent) used (g).",
+      "answer": "170",
+      "solution_steps": [
+        {
+          "explain": "Trước hết tính khối lượng chất tan (đường) theo nồng độ phần trăm.",
+          "latex": "m_{ct} = \\dfrac{C\\% \\cdot m_{dd}}{100} = \\dfrac{15 \\times 200}{100} = 30 \\text{ g}"
+        },
+        {
+          "explain": "Khối lượng dung dịch bằng khối lượng chất tan cộng khối lượng dung môi, nên khối lượng nước bằng khối lượng dung dịch trừ khối lượng chất tan.",
+          "latex": "m_{dm} = m_{dd} - m_{ct} = 200 - 30 = 170 \\text{ g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thcs.dung-dich.khoi-luong-chat-tan",
+        "chemistry.thcs.dung-dich.khoi-luong-dung-dich"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": ["tính khối lượng chất tan", "tách khối lượng dung môi từ khối lượng dung dịch"],
+      "tags": ["dung-dich", "dung-moi", "nong-do-phan-tram"],
+      "answer_numeric": 170,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0009",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Một dung dịch có thể tích 250 mL, khối lượng riêng D = 1,2 g/mL và nồng độ 10%. Tính khối lượng chất tan có trong dung dịch (g).",
+      "statement_en": "A solution has volume 250 mL, density D = 1.2 g/mL and concentration 10%. Find the mass of solute (g).",
+      "answer": "30",
+      "solution_steps": [
+        {
+          "explain": "Trước hết đổi thể tích ra khối lượng dung dịch bằng cách nhân thể tích với khối lượng riêng.",
+          "latex": "m_{dd} = V_{dd} \\cdot D = 250 \\times 1{,}2 = 300 \\text{ g}"
+        },
+        {
+          "explain": "Sau đó tính khối lượng chất tan theo nồng độ phần trăm.",
+          "latex": "m_{ct} = \\dfrac{C\\% \\cdot m_{dd}}{100} = \\dfrac{10 \\times 300}{100} = 30 \\text{ g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thcs.dung-dich.khoi-luong-dung-dich-theo-the-tich",
+        "chemistry.thcs.dung-dich.khoi-luong-chat-tan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": ["đổi thể tích dung dịch ra khối lượng qua khối lượng riêng", "tính khối lượng chất tan"],
+      "tags": ["dung-dich", "khoi-luong-rieng", "nong-do-phan-tram"],
+      "answer_numeric": 30,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0010",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Ở 20 °C, độ tan của một muối là S = 25 g (tức 25 g muối tan tối đa trong 100 g nước). Tính nồng độ phần trăm của dung dịch bão hòa muối đó ở 20 °C (%).",
+      "statement_en": "At 20 °C the solubility of a salt is S = 25 g per 100 g water. Find the mass percent of its saturated solution (%).",
+      "answer": "20",
+      "solution_steps": [
+        {
+          "explain": "Trong dung dịch bão hòa, cứ 100 g nước hòa tan S gam chất tan, nên khối lượng dung dịch là (100 + S) gam. Nồng độ phần trăm bằng S chia cho (100 + S), nhân 100%.",
+          "latex": "C\\%_{bh} = \\dfrac{S}{100 + S} \\times 100\\% = \\dfrac{25}{100 + 25} \\times 100\\%"
+        },
+        {
+          "explain": "Thực hiện phép tính.",
+          "latex": "C\\%_{bh} = \\dfrac{25}{125} \\times 100\\% = 20\\%"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dung-dich.nong-do-phan-tram-bao-hoa"],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": ["chuyển độ tan sang nồng độ phần trăm của dung dịch bão hòa"],
+      "tags": ["do-tan", "dung-dich-bao-hoa", "nong-do-phan-tram"],
+      "answer_numeric": 20,
+      "answer_unit": "%",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0011",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [9],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Các định luật bảo toàn",
+      "type": "dien-so",
+      "statement_vi": "Một mẫu đá vôi nặng 300 g, trong đó chứa 255 g CaCO3 nguyên chất, phần còn lại là tạp chất. Tính độ tinh khiết của mẫu đá vôi (%).",
+      "statement_en": "A limestone sample weighs 300 g and contains 255 g of pure CaCO3, the rest being impurities. Find its purity (%).",
+      "answer": "85",
+      "solution_steps": [
+        {
+          "explain": "Độ tinh khiết bằng khối lượng chất nguyên chất chia cho khối lượng mẫu, nhân 100%.",
+          "latex": "\\text{Do tinh khiet}\\,\\% = \\dfrac{m_{\\text{nguyen chat}}}{m_{\\text{mau}}} \\times 100\\% = \\dfrac{255}{300} \\times 100\\%"
+        },
+        {
+          "explain": "Thực hiện phép tính.",
+          "latex": "\\text{Do tinh khiet}\\,\\% = 85\\%"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.bao-toan.do-tinh-khiet"],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": ["tính độ tinh khiết của mẫu chất"],
+      "tags": ["do-tinh-khiet", "da-voi", "tap-chat"],
+      "answer_numeric": 85,
+      "answer_unit": "%",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0012",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [9],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho 0,1 mol Zn phản ứng với 0,15 mol HCl theo phương trình: Zn + 2HCl → ZnCl2 + H2. Chất nào phản ứng hết, chất nào còn dư?",
+      "statement_en": "0.1 mol Zn reacts with 0.15 mol HCl by: Zn + 2HCl → ZnCl2 + H2. Which reactant is used up and which is in excess?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Lập tỉ số số mol chia cho hệ số của mỗi chất trong phương trình; chất nào có tỉ số nhỏ hơn thì phản ứng hết.",
+          "latex": "\\dfrac{n_{\\text{Zn}}}{1} = \\dfrac{0{,}1}{1} = 0{,}1; \\quad \\dfrac{n_{\\text{HCl}}}{2} = \\dfrac{0{,}15}{2} = 0{,}075"
+        },
+        {
+          "explain": "Vì 0,075 < 0,1 nên HCl có tỉ số nhỏ hơn, HCl phản ứng hết còn Zn còn dư.",
+          "latex": "\\dfrac{n_{\\text{HCl}}}{2} < \\dfrac{n_{\\text{Zn}}}{1} \\;\\Rightarrow\\; \\text{HCl het, Zn du}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.xac-dinh-chat-du"],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": ["xác định chất phản ứng hết và chất còn dư qua tỉ số mol trên hệ số"],
+      "tags": ["chat-du", "chat-het", "phuong-trinh-hoa-hoc"],
+      "choices": [
+        {"key": "A", "text": "Zn hết, HCl dư", "why_wrong": "So sánh trực tiếp 0,1 với 0,15 mà bỏ qua hệ số 2 của HCl; phải chia số mol HCl cho 2 rồi mới so sánh."},
+        {"key": "B", "text": "HCl hết, Zn dư", "why_wrong": ""},
+        {"key": "C", "text": "Cả hai vừa đủ, không chất nào dư", "why_wrong": "Vừa đủ chỉ xảy ra khi n(HCl) = 2·n(Zn) = 0,2 mol; ở đây HCl chỉ 0,15 mol nên không vừa đủ."},
+        {"key": "D", "text": "Cả hai đều còn dư", "why_wrong": "Trong một phản ứng luôn có ít nhất một chất phản ứng hết; không thể cả hai cùng dư."}
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0013",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Ở cùng nhiệt độ và áp suất, 0,5 mol một khí chiếm thể tích 12 lít. Hỏi 2 mol khí đó (cùng điều kiện) chiếm thể tích bao nhiêu lít?",
+      "statement_en": "At the same temperature and pressure, 0.5 mol of a gas occupies 12 L. What volume does 2 mol of the same gas occupy?",
+      "answer": "48",
+      "solution_steps": [
+        {
+          "explain": "Theo định luật Avogadro, ở cùng nhiệt độ và áp suất tỉ số thể tích trên số mol là hằng số.",
+          "latex": "\\dfrac{V_{1}}{n_{1}} = \\dfrac{V_{2}}{n_{2}}"
+        },
+        {
+          "explain": "Rút V2 và thay số.",
+          "latex": "V_{2} = V_{1} \\cdot \\dfrac{n_{2}}{n_{1}} = 12 \\times \\dfrac{2}{0{,}5} = 48 \\text{ L}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dai-luong-co-ban.dinh-luat-avogadro"],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": ["áp dụng định luật Avogadro để tính thể tích khí theo số mol"],
+      "tags": ["dinh-luat-avogadro", "chat-khi"],
+      "answer_numeric": 48,
+      "answer_unit": "L",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0014",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [9],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Có 320 g dung dịch bão hòa của một muối ở nhiệt độ t1, tại đó độ tan S1 = 60 g. Làm lạnh dung dịch xuống t2, độ tan giảm còn S2 = 20 g. Tính khối lượng tinh thể muối tách ra (g).",
+      "statement_en": "320 g of a saturated salt solution at t1 (solubility S1 = 60 g). On cooling to t2 the solubility drops to S2 = 20 g. Find the mass of crystals that separate out (g).",
+      "answer": "80",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng tinh thể tách ra bằng khối lượng dung dịch bão hòa ban đầu nhân với hiệu độ tan chia cho (100 cộng độ tan ban đầu).",
+          "latex": "m_{tt} = m_{dd(t_{1})} \\cdot \\dfrac{S_{1} - S_{2}}{100 + S_{1}}"
+        },
+        {
+          "explain": "Thay số và tính.",
+          "latex": "m_{tt} = 320 \\times \\dfrac{60 - 20}{100 + 60} = 320 \\times \\dfrac{40}{160} = 80 \\text{ g}"
+        }
+      ],
+      "formulas_used": ["chemistry.thcs.dung-dich.khoi-luong-tinh-the-tach-ra"],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": ["tính khối lượng tinh thể tách ra khi hạ nhiệt độ dung dịch bão hòa"],
+      "tags": ["do-tan", "tinh-the", "dung-dich-bao-hoa"],
+      "answer_numeric": 80,
+      "answer_unit": "g",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0019",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Một khí ở điều kiện tiêu chuẩn (đktc) chiếm thể tích 11,2 lít và có khối lượng 22 g. Tính khối lượng mol M của khí đó (g/mol).",
+      "statement_en": "A gas at STP (22.4 L/mol) occupies 11.2 L and has mass 22 g. Find its molar mass M (g/mol).",
+      "answer": "44",
+      "solution_steps": [
+        {
+          "explain": "Trước hết tính số mol khí ở đktc bằng thể tích chia cho 22,4.",
+          "latex": "n = \\dfrac{V}{22{,}4} = \\dfrac{11{,}2}{22{,}4} = 0{,}5 \\text{ mol}"
+        },
+        {
+          "explain": "Khối lượng mol bằng khối lượng chia cho số mol.",
+          "latex": "M = \\dfrac{m}{n} = \\dfrac{22}{0{,}5} = 44 \\text{ g/mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dktc",
+        "chemistry.thcs.dai-luong-co-ban.khoi-luong-mol"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": ["tính số mol khí ở đktc", "suy ra khối lượng mol từ khối lượng và số mol"],
+      "tags": ["mol", "khoi-luong-mol", "dktc"],
+      "answer_numeric": 44,
+      "answer_unit": "g/mol",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-khtn-thcs.0020",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [9],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Ở một nhiệt độ, độ tan của muối là S = 25 g/100 g nước. Có 500 g dung dịch bão hòa của muối này ở cùng nhiệt độ. Tính khối lượng muối (chất tan) có trong 500 g dung dịch (g).",
+      "statement_en": "At a temperature the salt solubility is S = 25 g per 100 g water. A 500 g saturated solution is prepared. Find the mass of salt in it (g).",
+      "answer": "100",
+      "solution_steps": [
+        {
+          "explain": "Trước hết tính nồng độ phần trăm của dung dịch bão hòa từ độ tan.",
+          "latex": "C\\%_{bh} = \\dfrac{S}{100 + S} \\times 100\\% = \\dfrac{25}{125} \\times 100\\% = 20\\%"
+        },
+        {
+          "explain": "Khối lượng chất tan bằng nồng độ phần trăm nhân khối lượng dung dịch chia 100.",
+          "latex": "m_{ct} = \\dfrac{C\\% \\cdot m_{dd}}{100} = \\dfrac{20 \\times 500}{100} = 100 \\text{ g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thcs.dung-dich.nong-do-phan-tram-bao-hoa",
+        "chemistry.thcs.dung-dich.khoi-luong-chat-tan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": ["đổi độ tan sang nồng độ phần trăm", "tính khối lượng chất tan trong dung dịch bão hòa"],
+      "tags": ["do-tan", "dung-dich-bao-hoa", "chat-tan"],
+      "answer_numeric": 100,
+      "answer_unit": "g",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.biology.ext-khtn-thcs.0015",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [7],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Chuyển hóa vật chất và năng lượng ở thực vật",
+      "type": "trac-nghiem",
+      "statement_vi": "Hô hấp hiếu khí phân giải hoàn toàn glucose theo phương trình: C6H12O6 + 6O2 → 6CO2 + 6H2O + năng lượng. Muốn phân giải hoàn toàn 0,5 mol glucose thì cần bao nhiêu mol khí O2?",
+      "statement_en": "Aerobic respiration fully breaks down glucose: C6H12O6 + 6O2 → 6CO2 + 6H2O + energy. How many moles of O2 are needed to fully break down 0.5 mol of glucose?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Theo phương trình, mỗi 1 mol glucose cần 6 mol O2 (tỉ lệ 1 : 6).",
+          "latex": "\\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\,\\text{O}_2 \\rightarrow 6\\,\\text{CO}_2 + 6\\,\\text{H}_2\\text{O}"
+        },
+        {
+          "explain": "Nhân tỉ lệ với số mol glucose đề cho để tìm số mol O2.",
+          "latex": "n_{\\text{O}_2} = 6 \\times 0{,}5 = 3 \\text{ mol}"
+        }
+      ],
+      "formulas_used": ["biology.thcs.chuyen-hoa-thuc-vat.phuong-trinh-ho-hap-hieu-khi"],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": ["đọc hệ số phương trình hô hấp hiếu khí", "tính số mol chất theo tỉ lệ phương trình"],
+      "tags": ["ho-hap-hieu-khi", "glucose", "ti-le-mol"],
+      "choices": [
+        {"key": "A", "text": "0,5 mol", "why_wrong": "Lấy đúng số mol glucose nhưng quên hệ số 6 của O2 trong phương trình (tỉ lệ 1 : 6)."},
+        {"key": "B", "text": "3 mol", "why_wrong": ""},
+        {"key": "C", "text": "6 mol", "why_wrong": "Đây là số mol O2 cho 1 mol glucose; đề chỉ có 0,5 mol nên phải lấy một nửa."},
+        {"key": "D", "text": "12 mol", "why_wrong": "Nhân hệ số 6 với 2 (nhầm chia 0,5 thành nhân 2) thay vì nhân với 0,5."}
+      ]
+    },
+    {
+      "id": "prob.biology.ext-khtn-thcs.0016",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [9],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Quy luật di truyền",
+      "type": "dien-so",
+      "statement_vi": "Lai hai cây đậu dị hợp hai cặp gene AaBb × AaBb (các gene phân li độc lập, trội hoàn toàn). Đời con F2 thu được 320 cây. Tính số cây mang đồng thời cả hai tính trạng lặn (kiểu gene aabb).",
+      "statement_en": "Cross two dihybrids AaBb × AaBb (independent assortment, complete dominance). F2 has 320 plants. Find the number of plants showing both recessive traits (aabb).",
+      "answer": "20",
+      "solution_steps": [
+        {
+          "explain": "Phép lai AaBb × AaBb cho tỉ lệ kiểu hình 9 : 3 : 3 : 1, trong đó kiểu hình mang cả hai tính trạng lặn (aabb) chiếm 1 phần trong tổng 16 phần.",
+          "latex": "AaBb \\times AaBb \\rightarrow 9\\,A\\text{-}B\\text{-} : 3\\,A\\text{-}bb : 3\\,aaB\\text{-} : 1\\,aabb"
+        },
+        {
+          "explain": "Số cây aabb bằng tổng số cây nhân với tỉ lệ 1/16.",
+          "latex": "N_{aabb} = 320 \\times \\dfrac{1}{16} = 20 \\text{ cay}"
+        }
+      ],
+      "formulas_used": ["biology.thcs.quy-luat-di-truyen.phan-li-doc-lap"],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": ["áp dụng tỉ lệ 9:3:3:1 của phân li độc lập để tính số cá thể mỗi kiểu hình"],
+      "tags": ["di-truyen", "phan-li-doc-lap", "ti-le-kieu-hinh"],
+      "answer_numeric": 20,
+      "answer_unit": "cây",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.biology.ext-khtn-thcs.0017",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Sinh lí người và động vật",
+      "type": "dien-so",
+      "statement_vi": "Ở một người, thể tích khí lưu thông V_t = 0,5 L, thể tích dự trữ hít vào IRV = 2,5 L, thể tích dự trữ thở ra ERV = 1,0 L, thể tích khí cặn RV = 1,2 L. Tính tổng dung tích phổi TLC (L).",
+      "statement_en": "For a person: tidal volume V_t = 0.5 L, inspiratory reserve IRV = 2.5 L, expiratory reserve ERV = 1.0 L, residual volume RV = 1.2 L. Find the total lung capacity TLC (L).",
+      "answer": "5,2",
+      "solution_steps": [
+        {
+          "explain": "Dung tích sống VC là tổng khí lưu thông, dự trữ hít vào và dự trữ thở ra.",
+          "latex": "VC = V_{t} + IRV + ERV = 0{,}5 + 2{,}5 + 1{,}0 = 4{,}0 \\text{ L}"
+        },
+        {
+          "explain": "Tổng dung tích phổi bằng dung tích sống cộng khí cặn.",
+          "latex": "TLC = VC + RV = 4{,}0 + 1{,}2 = 5{,}2 \\text{ L}"
+        }
+      ],
+      "formulas_used": ["biology.thcs.sinh-li-nguoi.dung-tich-song"],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": ["tính dung tích sống và tổng dung tích phổi từ các thể tích khí thành phần"],
+      "tags": ["ho-hap", "dung-tich-song", "phoi"],
+      "answer_numeric": 5.2,
+      "answer_unit": "L",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.biology.ext-khtn-thcs.0018",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [8],
+      "curriculum": ["vn-gdpt-2018"],
+      "topic": "Sinh lí người và động vật",
+      "type": "dien-so",
+      "statement_vi": "Một người có tỉ lệ trao đổi chất cơ sở BMR = 1500 kcal/ngày và hệ số hoạt động thể lực PAL = 1,6. Tính nhu cầu năng lượng hằng ngày của người đó (kcal/ngày).",
+      "statement_en": "A person has basal metabolic rate BMR = 1500 kcal/day and physical activity level PAL = 1.6. Find the daily energy requirement (kcal/day).",
+      "answer": "2400",
+      "solution_steps": [
+        {
+          "explain": "Nhu cầu năng lượng hằng ngày bằng tỉ lệ trao đổi chất cơ sở nhân với hệ số hoạt động thể lực.",
+          "latex": "E_{ngay} = BMR \\times PAL = 1500 \\times 1{,}6"
+        },
+        {
+          "explain": "Thực hiện phép nhân.",
+          "latex": "E_{ngay} = 2400 \\text{ kcal/ngay}"
+        }
+      ],
+      "formulas_used": ["biology.thcs.sinh-li-nguoi.nhu-cau-nang-luong"],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": ["tính nhu cầu năng lượng hằng ngày từ BMR và PAL"],
+      "tags": ["dinh-duong", "nang-luong", "bmr"],
+      "answer_numeric": 2400,
+      "answer_unit": "kcal/ngày",
+      "tolerance": 1
+    }
+  ]
+}

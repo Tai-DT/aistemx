@@ -1,0 +1,3596 @@
+{
+ "meta": {
+  "file": "ext-math-daihoc.json",
+  "subject": "math",
+  "title": "Bài tập bổ sung Toán đại học (công thức chưa có bài tập)",
+  "levels": [
+   "dai-hoc"
+  ],
+  "count": 72
+ },
+ "problems": [
+  {
+   "id": "prob.math.ext-math-daihoc.0001",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn lim(x -> 0) sin(3x)/tan(2x).",
+   "statement_en": "Compute lim(x -> 0) sin(3x)/tan(2x).",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Khi x -> 0 thì cả tử và mẫu cùng dần về 0, đây là dạng vô định 0/0 nên thay ngay được các vô cùng bé bởi đại lượng tương đương.",
+     "latex": "\\sin 3x \\sim 3x,\\quad \\tan 2x \\sim 2x \\ (x \\to 0)"
+    },
+    {
+     "explain": "Thay tương đương vào rồi rút gọn; phép thay hợp lệ vì tương đương được dùng cho nhân tử của một tỉ số.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\sin 3x}{\\tan 2x} = \\lim_{x \\to 0} \\frac{3x}{2x} = \\frac{3}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.bang-tuong-duong-sin",
+    "math.dai-hoc.gioi-han.bang-tuong-duong-tan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "dùng vô cùng bé tương đương",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-cung-be"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "1",
+     "why_wrong": "Ngộ nhận hai hệ số 3 và 2 bằng nhau, quên tỉ số của chúng."
+    },
+    {
+     "key": "B",
+     "text": "3/2",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "2/3",
+     "why_wrong": "Đảo ngược tỉ số, đặt hệ số của mẫu lên tử."
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "why_wrong": "Nhân hai hệ số 3 và 2 thay vì lấy tỉ số."
+    }
+   ],
+   "answer_numeric": 1.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "sin u ~ u và tan u ~ u khi u -> 0.",
+    "Chỉ cần giữ hệ số của x."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0002",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn lim(x -> 0) (1 - cos 2x)/(3x^2). Nhập kết quả (làm tròn 4 chữ số thập phân).",
+   "statement_en": "Compute lim(x -> 0) (1 - cos 2x)/(3x^2). Give the answer to four decimals.",
+   "answer": "2/3 ≈ 0,6667",
+   "solution_steps": [
+    {
+     "explain": "Với u -> 0 ta có tương đương chuẩn cho 1 - cos u; ở đây u = 2x nên bình phương đối số.",
+     "latex": "1 - \\cos u \\sim \\frac{u^{2}}{2} \\Rightarrow 1 - \\cos 2x \\sim \\frac{(2x)^{2}}{2} = 2x^{2}"
+    },
+    {
+     "explain": "Thay vào và rút gọn x^2; tử và mẫu cùng bậc hai nên giới hạn là một hằng số hữu hạn.",
+     "latex": "\\lim_{x \\to 0} \\frac{1 - \\cos 2x}{3x^{2}} = \\lim_{x \\to 0} \\frac{2x^{2}}{3x^{2}} = \\frac{2}{3}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.bang-tuong-duong-mot-tru-cos"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "vô cùng bé của 1 - cos u",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-cung-be"
+   ],
+   "answer_numeric": 0.6667,
+   "tolerance": 0.001,
+   "hints": [
+    "1 - cos u ~ u^2/2.",
+    "Đừng quên bình phương hệ số 2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0003",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn lim(x -> 0) ln(1 + 3x)/(e^{2x} - 1).",
+   "statement_en": "Compute lim(x -> 0) ln(1 + 3x)/(e^{2x} - 1).",
+   "answer": "C",
+   "solution_steps": [
+    {
+     "explain": "Cả hai đại lượng đều là vô cùng bé khi x -> 0, dùng hai tương đương logarit và mũ tương ứng.",
+     "latex": "\\ln(1 + 3x) \\sim 3x,\\quad e^{2x} - 1 \\sim 2x"
+    },
+    {
+     "explain": "Thay tương đương vào tỉ số rồi rút gọn x.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\ln(1 + 3x)}{e^{2x} - 1} = \\frac{3x}{2x} = \\frac{3}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.bang-tuong-duong-ln",
+    "math.dai-hoc.gioi-han.bang-tuong-duong-e-mu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tương đương ln(1+u) và e^u - 1",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "logarit",
+    "ham-mu"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "1",
+     "why_wrong": "Coi hai hệ số bằng nhau, bỏ qua 3 và 2."
+    },
+    {
+     "key": "B",
+     "text": "2/3",
+     "why_wrong": "Đảo ngược tỉ số hệ số."
+    },
+    {
+     "key": "C",
+     "text": "3/2",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "why_wrong": "Nhân hai hệ số thay vì chia."
+    }
+   ],
+   "answer_numeric": 1.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "ln(1+u) ~ u, e^u - 1 ~ u.",
+    "Giữ lại hệ số của x ở tử và mẫu."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0004",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn lim(x -> 0) arcsin(5x)/arctan(2x). Nhập kết quả.",
+   "statement_en": "Compute lim(x -> 0) arcsin(5x)/arctan(2x).",
+   "answer": "5/2 = 2,5",
+   "solution_steps": [
+    {
+     "explain": "Hàm lượng giác ngược cũng có vô cùng bé tương đương tuyến tính khi đối số dần về 0.",
+     "latex": "\\arcsin 5x \\sim 5x,\\quad \\arctan 2x \\sim 2x"
+    },
+    {
+     "explain": "Thay vào và rút gọn.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\arcsin 5x}{\\arctan 2x} = \\frac{5x}{2x} = \\frac{5}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.bang-tuong-duong-arcsin",
+    "math.dai-hoc.gioi-han.bang-tuong-duong-arctan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tương đương arcsin và arctan",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-cung-be"
+   ],
+   "answer_numeric": 2.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "arcsin u ~ u, arctan u ~ u.",
+    "Chỉ giữ hệ số của x."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0005",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn lim(x -> 0) (căn bậc ba của (1 + x) - 1)/(2x). Nhập kết quả (làm tròn 5 chữ số).",
+   "statement_en": "Compute lim(x -> 0) ((1 + x)^{1/3} - 1)/(2x). Give five decimals.",
+   "answer": "1/6 ≈ 0,16667",
+   "solution_steps": [
+    {
+     "explain": "Dùng tương đương luỹ thừa (1+u)^alpha - 1 ~ alpha*u với alpha = 1/3.",
+     "latex": "(1 + x)^{1/3} - 1 \\sim \\frac{1}{3} x"
+    },
+    {
+     "explain": "Thay vào tỉ số và rút gọn x.",
+     "latex": "\\lim_{x \\to 0} \\frac{(1 + x)^{1/3} - 1}{2x} = \\frac{\\tfrac{1}{3}x}{2x} = \\frac{1}{6}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.bang-tuong-duong-luy-thua"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tương đương luỹ thừa",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-cung-be"
+   ],
+   "answer_numeric": 0.16667,
+   "tolerance": 0.0001,
+   "hints": [
+    "(1+u)^a - 1 ~ a*u.",
+    "Ở đây a = 1/3."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0006",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn lim(x -> 0) (2^{3x} - 1)/x.",
+   "statement_en": "Compute lim(x -> 0) (2^{3x} - 1)/x.",
+   "answer": "D",
+   "solution_steps": [
+    {
+     "explain": "Dùng tương đương a^u - 1 ~ u*ln a. Ở đây a = 2 và u = 3x.",
+     "latex": "2^{3x} - 1 \\sim 3x \\ln 2"
+    },
+    {
+     "explain": "Thay vào và rút gọn.",
+     "latex": "\\lim_{x \\to 0} \\frac{2^{3x} - 1}{x} = \\frac{3x \\ln 2}{x} = 3 \\ln 2"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.bang-tuong-duong-a-mu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tương đương a^u - 1",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "ham-mu"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "3",
+     "why_wrong": "Bỏ mất hệ số ln 2, tưởng a^u - 1 ~ u."
+    },
+    {
+     "key": "B",
+     "text": "ln 2",
+     "why_wrong": "Quên hệ số 3 của số mũ."
+    },
+    {
+     "key": "C",
+     "text": "ln 8 · 2",
+     "why_wrong": "Nhân thêm 2 không có cơ sở."
+    },
+    {
+     "key": "D",
+     "text": "3 ln 2",
+     "why_wrong": ""
+    }
+   ],
+   "answer_numeric": 2.0794415416798357,
+   "tolerance": 0.0001,
+   "hints": [
+    "a^u - 1 ~ u ln a.",
+    "3 ln 2 = ln 8."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0007",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Dùng quy tắc L'Hospital tính lim(x -> 0) (x - sin x)/x^3. Nhập kết quả (5 chữ số thập phân).",
+   "statement_en": "Use L'Hospital to compute lim(x -> 0) (x - sin x)/x^3. Give five decimals.",
+   "answer": "1/6 ≈ 0,16667",
+   "solution_steps": [
+    {
+     "explain": "Dạng 0/0, đạo hàm tử và mẫu. Lần một vẫn 0/0.",
+     "latex": "\\frac{x - \\sin x}{x^{3}} \\to \\frac{1 - \\cos x}{3x^{2}}"
+    },
+    {
+     "explain": "Vẫn 0/0, đạo hàm tiếp lần hai.",
+     "latex": "\\frac{1 - \\cos x}{3x^{2}} \\to \\frac{\\sin x}{6x}"
+    },
+    {
+     "explain": "Dùng giới hạn cơ bản sin x / x -> 1 để kết thúc.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{6x} = \\frac{1}{6}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.quy-tac-lhospital",
+    "math.dai-hoc.gioi-han.gioi-han-co-ban-sinx-tren-x"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "quy tắc L'Hospital",
+    "áp dụng nhiều lần"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "lhospital"
+   ],
+   "answer_numeric": 0.16667,
+   "tolerance": 0.0001,
+   "hints": [
+    "Đạo hàm tử/mẫu tới khi hết dạng vô định.",
+    "Cần áp dụng hai lần."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0008",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn lim(x -> 0^+) x^2 · ln x.",
+   "statement_en": "Compute lim(x -> 0^+) x^2 · ln x.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Đây là dạng vô định 0 · (âm vô cùng). Đưa về dạng vô cùng / vô cùng bằng cách viết x^2 xuống mẫu.",
+     "latex": "x^{2} \\ln x = \\frac{\\ln x}{x^{-2}}"
+    },
+    {
+     "explain": "Áp dụng L'Hospital cho dạng (-vô cùng)/(+vô cùng).",
+     "latex": "\\frac{\\ln x}{x^{-2}} \\to \\frac{1/x}{-2 x^{-3}} = -\\frac{x^{2}}{2} \\to 0"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.dang-vo-dinh-khong-nhan-vo-cung",
+    "math.dai-hoc.gioi-han.quy-tac-lhospital"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "khử dạng 0 nhân vô cùng",
+    "biến đổi về 0/0 hoặc vô cùng/vô cùng"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-dinh"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "-vô cùng",
+     "why_wrong": "Cho rằng ln x thắng, nhưng x^2 dần về 0 nhanh hơn."
+    },
+    {
+     "key": "C",
+     "text": "1",
+     "why_wrong": "Nhầm với giới hạn dạng khác."
+    },
+    {
+     "key": "D",
+     "text": "-1",
+     "why_wrong": "Không có cơ sở, luỹ thừa luôn khống chế logarit."
+    }
+   ],
+   "answer_numeric": 0.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Luỹ thừa dương khống chế logarit.",
+    "Đưa về dạng phân thức rồi L'Hospital."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0009",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn lim(x -> +vô cùng) (1 + 3/x)^{2x}. Kết quả có dạng e^k; nhập giá trị k.",
+   "statement_en": "Compute lim(x -> +infinity) (1 + 3/x)^{2x}. It equals e^k; enter k.",
+   "answer": "k = 6",
+   "solution_steps": [
+    {
+     "explain": "Dạng 1 mũ vô cùng, lấy logarit rồi dùng tương đương ln(1+u) ~ u.",
+     "latex": "\\ln\\left(1 + \\tfrac{3}{x}\\right)^{2x} = 2x \\ln\\left(1 + \\tfrac{3}{x}\\right) \\sim 2x \\cdot \\frac{3}{x} = 6"
+    },
+    {
+     "explain": "Vì logarit dần tới 6 nên biểu thức dần tới e^6, suy ra k = 6.",
+     "latex": "\\lim_{x \\to +\\infty} \\left(1 + \\tfrac{3}{x}\\right)^{2x} = e^{6}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.dang-vo-dinh-mot-mu-vo-cung",
+    "math.dai-hoc.gioi-han.bang-tuong-duong-ln"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "khử dạng 1 mũ vô cùng",
+    "logarit hoá giới hạn"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-dinh"
+   ],
+   "answer_numeric": 6.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Lấy ln rồi dùng ln(1+u) ~ u.",
+    "Số mũ nhân với 3/x."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0010",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn lim(x -> 0^+) (sin x)^x.",
+   "statement_en": "Compute lim(x -> 0^+) (sin x)^x.",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Dạng 0^0, lấy logarit để đưa về dạng 0 nhân vô cùng.",
+     "latex": "\\ln (\\sin x)^{x} = x \\ln (\\sin x)"
+    },
+    {
+     "explain": "Vì sin x ~ x nên x ln(sin x) ~ x ln x -> 0, do đó biểu thức dần về e^0.",
+     "latex": "x \\ln(\\sin x) \\sim x \\ln x \\to 0 \\Rightarrow (\\sin x)^{x} \\to e^{0} = 1"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.dang-vo-dinh-mu-tong-quat",
+    "math.dai-hoc.gioi-han.dang-vo-dinh-khong-nhan-vo-cung"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "khử dạng 0 mũ 0",
+    "logarit hoá"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-dinh"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "0",
+     "why_wrong": "Cho rằng cơ số dần về 0 nên kết quả 0, quên số mũ cũng dần về 0."
+    },
+    {
+     "key": "B",
+     "text": "1",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "e",
+     "why_wrong": "Nhầm với giới hạn số e cổ điển."
+    },
+    {
+     "key": "D",
+     "text": "Không tồn tại",
+     "why_wrong": "Thực ra giới hạn tồn tại và bằng 1."
+    }
+   ],
+   "answer_numeric": 1.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Lấy ln của biểu thức.",
+    "x ln x -> 0 khi x -> 0+."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0011",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn lim(x -> 0) sin(5x)/sin(2x). Nhập kết quả.",
+   "statement_en": "Compute lim(x -> 0) sin(5x)/sin(2x).",
+   "answer": "5/2 = 2,5",
+   "solution_steps": [
+    {
+     "explain": "Nhân và chia để tạo ra hai giới hạn cơ bản dạng sin u / u.",
+     "latex": "\\frac{\\sin 5x}{\\sin 2x} = \\frac{\\sin 5x}{5x} \\cdot \\frac{2x}{\\sin 2x} \\cdot \\frac{5}{2}"
+    },
+    {
+     "explain": "Hai giới hạn cơ bản đều bằng 1, chỉ còn lại hệ số.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\sin 5x}{\\sin 2x} = 1 \\cdot 1 \\cdot \\frac{5}{2} = \\frac{5}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.gioi-han-co-ban-sinx-tren-x"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "giới hạn cơ bản thứ nhất",
+    "tách nhân tử"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han"
+   ],
+   "answer_numeric": 2.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "sin u / u -> 1.",
+    "Ghép hệ số 5 và 2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0012",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giới hạn lim(x -> 0) x^2 · cos(1/x).",
+   "statement_en": "Compute lim(x -> 0) x^2 · cos(1/x).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hàm cos(1/x) dao động nhưng bị chặn trong [-1, 1], nên kẹp biểu thức giữa -x^2 và x^2.",
+     "latex": "-x^{2} \\le x^{2}\\cos\\tfrac{1}{x} \\le x^{2}"
+    },
+    {
+     "explain": "Hai đầu kẹp cùng dần về 0, theo nguyên lí kẹp giới hạn phải bằng 0.",
+     "latex": "\\lim_{x \\to 0} (-x^{2}) = \\lim_{x \\to 0} x^{2} = 0 \\Rightarrow \\lim_{x \\to 0} x^{2}\\cos\\tfrac{1}{x} = 0"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.gioi-han-ke-kep"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "nguyên lí kẹp",
+    "chặn hàm dao động"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "nguyen-li-kep"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "1",
+     "why_wrong": "Nhầm cos(1/x) -> 1, thực ra nó dao động."
+    },
+    {
+     "key": "C",
+     "text": "Không tồn tại",
+     "why_wrong": "Cho rằng dao động làm mất giới hạn, nhưng x^2 dập tắt dao động."
+    },
+    {
+     "key": "D",
+     "text": "vô cùng",
+     "why_wrong": "Trái với việc biểu thức bị chặn bởi x^2 -> 0."
+    }
+   ],
+   "answer_numeric": 0.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "|cos(1/x)| <= 1.",
+    "Kẹp giữa -x^2 và x^2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0013",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo thang so sánh các vô cùng lớn khi x -> +vô cùng, giá trị của lim (ln x)^3 / x là?",
+   "statement_en": "By the scale of infinities as x -> +infinity, what is lim (ln x)^3 / x?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Thang vô cùng lớn: mọi luỹ thừa của logarit đều bị mọi luỹ thừa dương của x vượt qua khi x -> +vô cùng.",
+     "latex": "(\\ln x)^{\\alpha} \\ll x^{\\beta} \\quad (\\alpha > 0,\\ \\beta > 0)"
+    },
+    {
+     "explain": "Áp dụng với alpha = 3, beta = 1: mẫu tăng nhanh hơn hẳn nên tỉ số dần về 0.",
+     "latex": "\\lim_{x \\to +\\infty} \\frac{(\\ln x)^{3}}{x} = 0"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.thang-vo-cung-lon"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "thang so sánh vô cùng lớn",
+    "logarit chậm hơn luỹ thừa"
+   ],
+   "tags": [
+    "real-analysis",
+    "gioi-han",
+    "vo-cung-lon"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "+vô cùng",
+     "why_wrong": "Cho rằng (ln x)^3 lớn hơn x, sai thứ tự thang vô cùng."
+    },
+    {
+     "key": "C",
+     "text": "1",
+     "why_wrong": "Coi tử và mẫu cùng bậc, nhưng logarit bậc thấp hơn."
+    },
+    {
+     "key": "D",
+     "text": "3",
+     "why_wrong": "Nhầm số mũ 3 thành giá trị giới hạn."
+    }
+   ],
+   "answer_numeric": 0.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "ln x tăng chậm hơn mọi luỹ thừa dương của x.",
+    "Luỹ thừa của ln vẫn thua x."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0014",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức Stirling để ước lượng SỐ CHỮ SỐ (trong hệ thập phân) của 100!. Nhập số nguyên.",
+   "statement_en": "Use Stirling's formula to estimate the number of decimal digits of 100!. Enter an integer.",
+   "answer": "158 chữ số",
+   "solution_steps": [
+    {
+     "explain": "Số chữ số của N là phần nguyên của log10(N) cộng 1. Dùng Stirling cho ln(n!).",
+     "latex": "\\ln n! \\approx n \\ln n - n + \\tfrac{1}{2}\\ln(2\\pi n)"
+    },
+    {
+     "explain": "Với n = 100 tính ln(100!) rồi đổi sang log10 bằng cách chia cho ln 10.",
+     "latex": "\\log_{10}(100!) = \\frac{\\ln 100!}{\\ln 10} \\approx 157{,}97"
+    },
+    {
+     "explain": "Lấy phần nguyên cộng 1.",
+     "latex": "\\lfloor 157{,}97 \\rfloor + 1 = 158"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.cong-thuc-stirling"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "công thức Stirling",
+    "đếm số chữ số qua logarit"
+   ],
+   "tags": [
+    "real-analysis",
+    "stirling",
+    "giai-tich-tiem-can"
+   ],
+   "answer_numeric": 158,
+   "tolerance": 0.5,
+   "hints": [
+    "Số chữ số = floor(log10 N) + 1.",
+    "log10(n!) = ln(n!)/ln 10."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0015",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính giới hạn lim(x -> 0) (tan x - sin x)/x^3 bằng khai triển Maclaurin, giữ tới bậc ba và ngắt bỏ vô cùng bé bậc cao. Nhập kết quả.",
+   "statement_en": "Compute lim(x -> 0) (tan x - sin x)/x^3 via Maclaurin up to order three, dropping higher-order infinitesimals.",
+   "answer": "1/2 = 0,5",
+   "solution_steps": [
+    {
+     "explain": "Khai triển Maclaurin của sin x và tan x tới bậc ba; các số hạng bậc cao hơn x^3 là vô cùng bé bậc cao được ngắt bỏ.",
+     "latex": "\\sin x = x - \\frac{x^{3}}{6} + o(x^{3}),\\quad \\tan x = x + \\frac{x^{3}}{3} + o(x^{3})"
+    },
+    {
+     "explain": "Trừ hai khai triển, phần bậc một triệt tiêu, chỉ còn số hạng bậc ba.",
+     "latex": "\\tan x - \\sin x = \\left(\\frac{1}{3} + \\frac{1}{6}\\right)x^{3} + o(x^{3}) = \\frac{x^{3}}{2} + o(x^{3})"
+    },
+    {
+     "explain": "Chia cho x^3 và cho x -> 0.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\tan x - \\sin x}{x^{3}} = \\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.gioi-han.vo-cung-be-bac-cao",
+    "math.dai-hoc.taylor.khai-trien-tan",
+    "math.dai-hoc.taylor.khai-trien-sin"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 6,
+   "skills": [
+    "khai triển Maclaurin",
+    "ngắt bỏ vô cùng bé bậc cao"
+   ],
+   "tags": [
+    "real-analysis",
+    "taylor",
+    "gioi-han"
+   ],
+   "answer_numeric": 0.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "tan x = x + x^3/3 + ...",
+    "sin x = x - x^3/6 + ..."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0016",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Khai triển Taylor",
+   "type": "dien-so",
+   "statement_vi": "Dùng khai triển Maclaurin của cos x tính lim(x -> 0) (1 - cos x)/x^2. Nhập kết quả.",
+   "statement_en": "Use the Maclaurin series of cos x to compute lim(x -> 0) (1 - cos x)/x^2.",
+   "answer": "1/2 = 0,5",
+   "solution_steps": [
+    {
+     "explain": "Khai triển cos x tới bậc hai, giữ phần dư Peano.",
+     "latex": "\\cos x = 1 - \\frac{x^{2}}{2} + o(x^{2})"
+    },
+    {
+     "explain": "Thay vào tử số rồi rút gọn.",
+     "latex": "\\frac{1 - \\cos x}{x^{2}} = \\frac{\\tfrac{x^{2}}{2} + o(x^{2})}{x^{2}} \\to \\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.taylor.khai-trien-cos"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "khai triển Maclaurin của cos",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "taylor",
+    "gioi-han",
+    "maclaurin"
+   ],
+   "answer_numeric": 0.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "cos x = 1 - x^2/2 + ...",
+    "Chỉ cần số hạng bậc hai."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0017",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Khai triển Taylor",
+   "type": "dien-so",
+   "statement_vi": "Dùng khai triển Taylor với phần dư Peano tính lim(x -> 0) (1/(1 - x) - 1 - x)/x^2. Nhập kết quả.",
+   "statement_en": "Use Taylor with Peano remainder to compute lim(x -> 0) (1/(1 - x) - 1 - x)/x^2.",
+   "answer": "1 (hệ số của x^2 trong 1/(1-x) là 1)",
+   "solution_steps": [
+    {
+     "explain": "Khai triển Maclaurin của 1/(1-x) là cấp số nhân, giữ tới bậc hai với phần dư Peano.",
+     "latex": "\\frac{1}{1 - x} = 1 + x + x^{2} + o(x^{2})"
+    },
+    {
+     "explain": "Trừ đi 1 + x thì phần bậc không và bậc một triệt tiêu, còn lại số hạng bậc hai.",
+     "latex": "\\frac{1}{1 - x} - 1 - x = x^{2} + o(x^{2})"
+    },
+    {
+     "explain": "Chia cho x^2.",
+     "latex": "\\lim_{x \\to 0} \\frac{\\tfrac{1}{1-x} - 1 - x}{x^{2}} = 1"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.taylor.khai-trien-mot-tren-mot-tru-x",
+    "math.dai-hoc.taylor.khai-trien-peano"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "khai triển 1/(1-x)",
+    "phần dư Peano"
+   ],
+   "tags": [
+    "taylor",
+    "gioi-han",
+    "maclaurin"
+   ],
+   "answer_numeric": 1.0,
+   "tolerance": 1e-06,
+   "hints": [
+    "1/(1-x) = 1 + x + x^2 + ...",
+    "Số hạng bậc hai có hệ số 1."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0018",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Khai triển Taylor",
+   "type": "dien-so",
+   "statement_vi": "Dùng khai triển Maclaurin của cosh x tính lim(x -> 0) (cosh x - 1)/x^2. Nhập kết quả.",
+   "statement_en": "Use the Maclaurin series of cosh x to compute lim(x -> 0) (cosh x - 1)/x^2.",
+   "answer": "1/2 = 0,5",
+   "solution_steps": [
+    {
+     "explain": "Khai triển cosh x chỉ chứa các luỹ thừa chẵn.",
+     "latex": "\\cosh x = 1 + \\frac{x^{2}}{2} + \\frac{x^{4}}{24} + o(x^{2})"
+    },
+    {
+     "explain": "Thay vào tử số và rút gọn.",
+     "latex": "\\frac{\\cosh x - 1}{x^{2}} = \\frac{\\tfrac{x^{2}}{2} + o(x^{2})}{x^{2}} \\to \\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.taylor.khai-trien-cosh"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "khai triển Maclaurin của cosh",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "taylor",
+    "gioi-han",
+    "hyperbolic"
+   ],
+   "answer_numeric": 0.5,
+   "tolerance": 1e-06,
+   "hints": [
+    "cosh x = 1 + x^2/2 + ...",
+    "So sánh với khai triển của cos."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0019",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Khai triển Taylor",
+   "type": "dien-so",
+   "statement_vi": "Dùng khai triển Maclaurin của sinh x tính lim(x -> 0) (sinh x - x)/x^3. Nhập kết quả (5 chữ số).",
+   "statement_en": "Use the Maclaurin series of sinh x to compute lim(x -> 0) (sinh x - x)/x^3.",
+   "answer": "1/6 ≈ 0,16667",
+   "solution_steps": [
+    {
+     "explain": "Khai triển sinh x chỉ chứa các luỹ thừa lẻ.",
+     "latex": "\\sinh x = x + \\frac{x^{3}}{6} + o(x^{3})"
+    },
+    {
+     "explain": "Trừ x rồi chia cho x^3.",
+     "latex": "\\frac{\\sinh x - x}{x^{3}} = \\frac{\\tfrac{x^{3}}{6} + o(x^{3})}{x^{3}} \\to \\frac{1}{6}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.taylor.khai-trien-sinh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "khai triển Maclaurin của sinh",
+    "khử dạng 0/0"
+   ],
+   "tags": [
+    "taylor",
+    "gioi-han",
+    "hyperbolic"
+   ],
+   "answer_numeric": 0.16667,
+   "tolerance": 0.0001,
+   "hints": [
+    "sinh x = x + x^3/6 + ...",
+    "Số hạng bậc ba có hệ số 1/6."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0020",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Một cuộc thi có 8 vận động viên. Có bao nhiêu cách trao ba huy chương vàng, bạc, đồng (không ai nhận hai huy chương)? Nhập số nguyên.",
+   "statement_en": "A contest has 8 athletes. In how many ways can gold, silver, bronze be awarded (no repeats)?",
+   "answer": "A(8,3) = 336",
+   "solution_steps": [
+    {
+     "explain": "Vì thứ tự (vàng, bạc, đồng) có phân biệt và không lặp, ta dùng chỉnh hợp chập 3 của 8.",
+     "latex": "A_{8}^{3} = \\frac{8!}{(8-3)!} = 8 \\cdot 7 \\cdot 6"
+    },
+    {
+     "explain": "Nhân ra kết quả.",
+     "latex": "A_{8}^{3} = 336"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.chinh-hop"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "chỉnh hợp",
+    "đếm có thứ tự"
+   ],
+   "tags": [
+    "to-hop",
+    "chinh-hop"
+   ],
+   "answer_numeric": 336,
+   "tolerance": 0.5,
+   "hints": [
+    "Có thứ tự nên dùng chỉnh hợp.",
+    "A(n,k) = n!/(n-k)!."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0021",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Có bao nhiêu cách chọn 5 người từ 12 người vào một ban (không phân biệt vai trò)? Nhập số nguyên.",
+   "statement_en": "How many ways to choose 5 people from 12 for a committee (roles indistinct)?",
+   "answer": "C(12,5) = 792",
+   "solution_steps": [
+    {
+     "explain": "Chọn không phân biệt thứ tự nên dùng tổ hợp chập 5 của 12.",
+     "latex": "C_{12}^{5} = \\frac{12!}{5!\\,7!}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "C_{12}^{5} = 792"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.to-hop"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tổ hợp",
+    "đếm không thứ tự"
+   ],
+   "tags": [
+    "to-hop"
+   ],
+   "answer_numeric": 792,
+   "tolerance": 0.5,
+   "hints": [
+    "Không thứ tự nên dùng tổ hợp.",
+    "C(12,5) = 12!/(5!7!)."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0022",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Dùng hằng đẳng thức Pascal, tính C(9,4) + C(9,5). Nhập số nguyên.",
+   "statement_en": "Using Pascal's identity, compute C(9,4) + C(9,5).",
+   "answer": "C(10,5) = 252",
+   "solution_steps": [
+    {
+     "explain": "Hằng đẳng thức Pascal gộp hai tổ hợp liền kề thành một tổ hợp của n+1.",
+     "latex": "C_{n}^{k} + C_{n}^{k+1} = C_{n+1}^{k+1}"
+    },
+    {
+     "explain": "Áp dụng với n = 9, k = 4.",
+     "latex": "C_{9}^{4} + C_{9}^{5} = C_{10}^{5} = 252"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.tinh-chat-to-hop"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "hằng đẳng thức Pascal",
+    "tính chất tổ hợp"
+   ],
+   "tags": [
+    "to-hop",
+    "pascal"
+   ],
+   "answer_numeric": 252,
+   "tolerance": 0.5,
+   "hints": [
+    "C(n,k)+C(n,k+1)=C(n+1,k+1).",
+    "Kết quả là C(10,5)."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0023",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Tìm hệ số của x^3 trong khai triển (1 + 2x)^7. Nhập số nguyên.",
+   "statement_en": "Find the coefficient of x^3 in the expansion of (1 + 2x)^7.",
+   "answer": "C(7,3)·2^3 = 280",
+   "solution_steps": [
+    {
+     "explain": "Theo nhị thức Newton, số hạng tổng quát là C(7,k) (2x)^k.",
+     "latex": "(1 + 2x)^{7} = \\sum_{k=0}^{7} C_{7}^{k} (2x)^{k}"
+    },
+    {
+     "explain": "Lấy k = 3 và tính hệ số.",
+     "latex": "C_{7}^{3} \\cdot 2^{3} = 35 \\cdot 8 = 280"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.nhi-thuc-newton"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhị thức Newton",
+    "tìm hệ số"
+   ],
+   "tags": [
+    "to-hop",
+    "nhi-thuc-newton"
+   ],
+   "answer_numeric": 280,
+   "tolerance": 0.5,
+   "hints": [
+    "Số hạng: C(7,k)(2x)^k.",
+    "Đừng quên 2^3."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0024",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Tính tổng C(12,0) + C(12,1) + ... + C(12,12). Nhập số nguyên.",
+   "statement_en": "Compute the sum C(12,0) + C(12,1) + ... + C(12,12).",
+   "answer": "2^12 = 4096",
+   "solution_steps": [
+    {
+     "explain": "Cho x = 1 trong nhị thức Newton của (1+1)^n để tổng mọi hệ số bằng 2^n.",
+     "latex": "\\sum_{k=0}^{n} C_{n}^{k} = 2^{n}"
+    },
+    {
+     "explain": "Áp dụng n = 12.",
+     "latex": "2^{12} = 4096"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.tong-he-so-nhi-thuc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tổng hệ số nhị thức",
+    "đặt x = 1"
+   ],
+   "tags": [
+    "to-hop",
+    "nhi-thuc-newton"
+   ],
+   "answer_numeric": 4096,
+   "tolerance": 0.5,
+   "hints": [
+    "Tổng mọi C(n,k) = 2^n.",
+    "n = 12."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0025",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Có bao nhiêu cách xếp các chữ cái của từ MISSISSIPPI thành một dãy? Nhập số nguyên.",
+   "statement_en": "How many distinct arrangements of the letters of MISSISSIPPI are there?",
+   "answer": "11!/(4!·4!·2!) = 34650",
+   "solution_steps": [
+    {
+     "explain": "Từ có 11 chữ cái với các chữ lặp: I xuất hiện 4 lần, S 4 lần, P 2 lần, M 1 lần. Dùng công thức hoán vị lặp.",
+     "latex": "P = \\frac{11!}{4!\\,4!\\,2!\\,1!}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "\\frac{39916800}{24 \\cdot 24 \\cdot 2} = 34650"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.hoan-vi-lap"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hoán vị lặp",
+    "đếm phần tử lặp"
+   ],
+   "tags": [
+    "to-hop",
+    "hoan-vi-lap"
+   ],
+   "answer_numeric": 34650,
+   "tolerance": 0.5,
+   "hints": [
+    "Chia cho giai thừa số lần lặp mỗi chữ.",
+    "I:4, S:4, P:2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0026",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Có bao nhiêu cách chia 12 chiếc kẹo GIỐNG NHAU cho 4 em bé (mỗi em có thể không được kẹo)? Nhập số nguyên.",
+   "statement_en": "In how many ways can 12 identical candies be distributed to 4 children (some may get none)?",
+   "answer": "C(15,3) = 455",
+   "solution_steps": [
+    {
+     "explain": "Đây là bài toán chia kẹo Euler (tổ hợp lặp): số nghiệm nguyên không âm của x1+...+x4 = 12.",
+     "latex": "\\overline{C}_{4}^{12} = C_{12 + 4 - 1}^{4 - 1} = C_{15}^{3}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "C_{15}^{3} = 455"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.to-hop-lap"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tổ hợp lặp",
+    "bài toán chia kẹo"
+   ],
+   "tags": [
+    "to-hop",
+    "to-hop-lap"
+   ],
+   "answer_numeric": 455,
+   "tolerance": 0.5,
+   "hints": [
+    "Số nghiệm nguyên không âm của tổng = 12.",
+    "C(n+k-1, k-1)."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0027",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Số nghiệm NGUYÊN DƯƠNG của phương trình x + y + z + t = 15 là bao nhiêu? Nhập số nguyên.",
+   "statement_en": "How many positive integer solutions does x + y + z + t = 15 have?",
+   "answer": "C(14,3) = 364",
+   "solution_steps": [
+    {
+     "explain": "Với nghiệm nguyên dương, số nghiệm của x1+...+xk = n là C(n-1, k-1).",
+     "latex": "C_{n-1}^{k-1} = C_{15-1}^{4-1} = C_{14}^{3}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "C_{14}^{3} = 364"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.so-nghiem-nguyen-duong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "đếm nghiệm nguyên dương",
+    "phương pháp vách ngăn"
+   ],
+   "tags": [
+    "to-hop"
+   ],
+   "answer_numeric": 364,
+   "tolerance": 0.5,
+   "hints": [
+    "Nghiệm nguyên dương: C(n-1, k-1).",
+    "n = 15, k = 4."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0028",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "trac-nghiem",
+   "statement_vi": "Có bao nhiêu cách xếp 7 người ngồi quanh một bàn tròn (hai cách xoay được coi là như nhau)?",
+   "statement_en": "How many ways to seat 7 people around a round table (rotations identified)?",
+   "answer": "C",
+   "solution_steps": [
+    {
+     "explain": "Xếp vòng quanh, cố định một người để khử đối xứng xoay, còn lại xếp thẳng.",
+     "latex": "(n - 1)! = (7 - 1)!"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "6! = 720"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.hoan-vi-vong-quanh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "hoán vị vòng quanh",
+    "khử đối xứng xoay"
+   ],
+   "tags": [
+    "to-hop",
+    "hoan-vi-vong-quanh"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "5040",
+     "why_wrong": "Dùng 7! như xếp thẳng, quên khử đối xứng xoay."
+    },
+    {
+     "key": "B",
+     "text": "49",
+     "why_wrong": "Nhầm 7^2, không liên quan hoán vị."
+    },
+    {
+     "key": "C",
+     "text": "720",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "120",
+     "why_wrong": "Dùng 5! thay vì 6!, giảm số người sai."
+    }
+   ],
+   "answer_numeric": 720,
+   "tolerance": 0.5,
+   "hints": [
+    "Hoán vị vòng quanh của n phần tử là (n-1)!.",
+    "Cố định một chỗ ngồi."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0029",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Tính số Catalan thứ 5, tức C_5 = C(10,5)/6 (số cách đặt đúng 5 cặp dấu ngoặc). Nhập số nguyên.",
+   "statement_en": "Compute the 5th Catalan number C_5 = C(10,5)/6 (valid arrangements of 5 pairs of parentheses).",
+   "answer": "C_5 = 42",
+   "solution_steps": [
+    {
+     "explain": "Công thức số Catalan.",
+     "latex": "C_{n} = \\frac{1}{n + 1} C_{2n}^{n}"
+    },
+    {
+     "explain": "Với n = 5.",
+     "latex": "C_{5} = \\frac{1}{6} C_{10}^{5} = \\frac{252}{6} = 42"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.so-catalan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "số Catalan",
+    "công thức tổ hợp"
+   ],
+   "tags": [
+    "to-hop",
+    "catalan"
+   ],
+   "answer_numeric": 42,
+   "tolerance": 0.5,
+   "hints": [
+    "C_n = C(2n,n)/(n+1).",
+    "C(10,5) = 252."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0030",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+   "type": "dien-so",
+   "statement_vi": "Số Bell B_4 đếm số cách phân hoạch một tập 4 phần tử. Tính B_4. Nhập số nguyên.",
+   "statement_en": "The Bell number B_4 counts partitions of a 4-element set. Compute B_4.",
+   "answer": "B_4 = 15",
+   "solution_steps": [
+    {
+     "explain": "Dùng hệ thức truy hồi Bell với B_0 = 1: B_{n+1} = tổng C(n,k) B_k.",
+     "latex": "B_{n+1} = \\sum_{k=0}^{n} C_{n}^{k} B_{k}"
+    },
+    {
+     "explain": "Tính lần lượt B_1 = 1, B_2 = 2, B_3 = 5, B_4.",
+     "latex": "B_{4} = C_{3}^{0}B_0 + C_{3}^{1}B_1 + C_{3}^{2}B_2 + C_{3}^{3}B_3 = 1 + 3 + 6 + 5 = 15"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.hoan-vi-to-hop.so-bell"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 5,
+   "skills": [
+    "số Bell",
+    "phân hoạch tập hợp"
+   ],
+   "tags": [
+    "to-hop",
+    "so-bell"
+   ],
+   "answer_numeric": 15,
+   "tolerance": 0.5,
+   "hints": [
+    "Dùng truy hồi Bell.",
+    "B_1=1, B_2=2, B_3=5."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0031",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tổ hợp cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Có 30 học sinh và 7 ngày trong tuần. Theo nguyên lí Dirichlet tổng quát, chắc chắn có ít nhất bao nhiêu em có cùng thứ (ngày trong tuần) sinh? Nhập số nguyên.",
+   "statement_en": "Among 30 students, by the generalized pigeonhole principle over 7 weekdays, at least how many share the same weekday of birth?",
+   "answer": "ceil(30/7) = 5",
+   "solution_steps": [
+    {
+     "explain": "Nguyên lí Dirichlet tổng quát: nếu xếp N vật vào k hộp thì có ít nhất một hộp chứa từ ceil(N/k) vật.",
+     "latex": "\\left\\lceil \\frac{N}{k} \\right\\rceil"
+    },
+    {
+     "explain": "Với N = 30 vật (học sinh) và k = 7 hộp (ngày trong tuần).",
+     "latex": "\\left\\lceil \\frac{30}{7} \\right\\rceil = \\lceil 4{,}29 \\rceil = 5"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.to-hop-co-ban.nguyen-li-dirichlet-tong-quat",
+    "math.dai-hoc.to-hop-co-ban.nguyen-li-dirichlet"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "nguyên lí Dirichlet tổng quát",
+    "ước lượng số phần tử trong hộp"
+   ],
+   "tags": [
+    "to-hop",
+    "dirichlet"
+   ],
+   "answer_numeric": 5,
+   "tolerance": 0.5,
+   "hints": [
+    "Ít nhất một hộp có ceil(N/k) vật.",
+    "30 chia 7."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0032",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tổ hợp cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Một thực đơn có 3 món khai vị, 4 món chính và 2 món tráng miệng. Có bao nhiêu cách chọn một suất gồm đúng một món mỗi loại? Nhập số nguyên.",
+   "statement_en": "A menu has 3 starters, 4 mains, 2 desserts. How many meals of one item per course?",
+   "answer": "3·4·2 = 24",
+   "solution_steps": [
+    {
+     "explain": "Ba lựa chọn độc lập nối tiếp nhau, dùng nguyên lí nhân.",
+     "latex": "N = 3 \\times 4 \\times 2"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "N = 24"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.to-hop-co-ban.nguyen-li-nhan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 2,
+   "skills": [
+    "nguyên lí nhân",
+    "đếm lựa chọn nối tiếp"
+   ],
+   "tags": [
+    "to-hop",
+    "nguyen-li-nhan"
+   ],
+   "answer_numeric": 24,
+   "tolerance": 0.5,
+   "hints": [
+    "Các lựa chọn nối tiếp thì nhân.",
+    "3 · 4 · 2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0033",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Xác suất cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Cho P(A) = 0,6; P(B) = 0,5; P(A giao B) = 0,3. Tính P(A hợp B). Nhập kết quả.",
+   "statement_en": "Given P(A)=0.6, P(B)=0.5, P(A∩B)=0.3, compute P(A∪B).",
+   "answer": "0,8",
+   "solution_steps": [
+    {
+     "explain": "Công thức cộng xác suất cho hai biến cố (bù trừ phần giao).",
+     "latex": "P(A \\cup B) = P(A) + P(B) - P(A \\cap B)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "P(A \\cup B) = 0{,}6 + 0{,}5 - 0{,}3 = 0{,}8"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.xac-suat-co-ban.cong-thuc-cong-hai-bien-co"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "công thức cộng xác suất",
+    "nguyên lí bù trừ"
+   ],
+   "tags": [
+    "xac-suat",
+    "cong-xac-suat"
+   ],
+   "answer_numeric": 0.8,
+   "tolerance": 1e-09,
+   "hints": [
+    "Cộng rồi trừ phần giao.",
+    "Đừng cộng thẳng hai xác suất."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0034",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Xác suất cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Gieo một đồng xu lệch với xác suất mặt ngửa p = 0,4, thực hiện 5 lần độc lập. Tính xác suất được đúng 3 lần ngửa. Nhập kết quả (4 chữ số).",
+   "statement_en": "A biased coin has P(head)=0.4, tossed 5 times independently. Probability of exactly 3 heads?",
+   "answer": "C(5,3)·0,4^3·0,6^2 = 0,2304",
+   "solution_steps": [
+    {
+     "explain": "Số lần ngửa tuân theo lược đồ Bernoulli, dùng công thức Bernoulli (nhị thức).",
+     "latex": "P(X = k) = C_{n}^{k} p^{k} (1 - p)^{n - k}"
+    },
+    {
+     "explain": "Thay n = 5, k = 3, p = 0,4.",
+     "latex": "P = C_{5}^{3} (0{,}4)^{3} (0{,}6)^{2} = 10 \\cdot 0{,}064 \\cdot 0{,}36 = 0{,}2304"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.xac-suat-co-ban.cong-thuc-bernoulli"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "công thức Bernoulli",
+    "lược đồ nhị thức"
+   ],
+   "tags": [
+    "xac-suat",
+    "bernoulli"
+   ],
+   "answer_numeric": 0.2304,
+   "tolerance": 0.0001,
+   "hints": [
+    "P(X=k)=C(n,k)p^k(1-p)^(n-k).",
+    "n=5, k=3, p=0,4."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0035",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Xác suất cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Một máy sản xuất chi tiết với xác suất lỗi mỗi chi tiết là 0,1 (độc lập). Lấy 5 chi tiết, tính xác suất có ÍT NHẤT một chi tiết lỗi. Nhập kết quả (5 chữ số).",
+   "statement_en": "Each part is defective with probability 0.1 independently. From 5 parts, probability of at least one defective?",
+   "answer": "1 - 0,9^5 ≈ 0,40951",
+   "solution_steps": [
+    {
+     "explain": "Biến cố đối của 'ít nhất một lỗi' là 'không có lỗi nào', dùng xác suất biến cố đối.",
+     "latex": "P(\\ge 1) = 1 - P(0\\ \\text{lỗi})"
+    },
+    {
+     "explain": "Không lỗi nghĩa là cả 5 chi tiết đều tốt, mỗi cái xác suất 0,9.",
+     "latex": "P(\\ge 1) = 1 - (0{,}9)^{5} = 1 - 0{,}59049 = 0{,}40951"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.xac-suat-co-ban.xac-suat-it-nhat-mot-lan",
+    "math.dai-hoc.xac-suat-co-ban.xac-suat-bien-co-doi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "xác suất ít nhất một lần",
+    "dùng biến cố đối"
+   ],
+   "tags": [
+    "xac-suat",
+    "bien-co-doi"
+   ],
+   "answer_numeric": 0.40951,
+   "tolerance": 0.0001,
+   "hints": [
+    "Lấy 1 trừ xác suất không có lần nào.",
+    "(1-p)^n với p=0,1, n=5."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0036",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Xác suất cơ bản",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong lược đồ Bernoulli với n = 10 phép thử, xác suất thành công p = 0,3, số lần thành công CÓ KHẢ NĂNG NHẤT là bao nhiêu?",
+   "statement_en": "In a Bernoulli scheme with n=10 trials, success probability p=0.3, what is the most likely number of successes?",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Số lần có khả năng nhất k0 thoả (n+1)p - 1 <= k0 <= (n+1)p.",
+     "latex": "(n + 1)p - 1 \\le k_{0} \\le (n + 1)p"
+    },
+    {
+     "explain": "Tính (n+1)p = 11·0,3 = 3,3, nên k0 nằm giữa 2,3 và 3,3, số nguyên duy nhất là 3.",
+     "latex": "2{,}3 \\le k_{0} \\le 3{,}3 \\Rightarrow k_{0} = 3"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.xac-suat-co-ban.so-lan-co-kha-nang-nhat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "số lần có khả năng nhất",
+    "mốt của phân phối nhị thức"
+   ],
+   "tags": [
+    "xac-suat",
+    "bernoulli"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "2",
+     "why_wrong": "Làm tròn xuống quá tay, bỏ qua khoảng (n+1)p-1 đến (n+1)p."
+    },
+    {
+     "key": "B",
+     "text": "3",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "4",
+     "why_wrong": "Làm tròn (n+1)p = 3,3 lên 4 sai."
+    },
+    {
+     "key": "D",
+     "text": "5",
+     "why_wrong": "Nhầm với kỳ vọng của phân phối khác hoặc tính np sai."
+    }
+   ],
+   "answer_numeric": 3,
+   "tolerance": 0.5,
+   "hints": [
+    "k0 thoả (n+1)p-1 <= k0 <= (n+1)p.",
+    "(n+1)p = 3,3."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0037",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phân phối liên tục",
+   "type": "dien-so",
+   "statement_vi": "Biến ngẫu nhiên X có phân phối mũ với tham số lambda = 2. Tính P(X > 1). Nhập kết quả (4 chữ số).",
+   "statement_en": "X follows an exponential distribution with rate lambda = 2. Compute P(X > 1).",
+   "answer": "e^{-2} ≈ 0,1353",
+   "solution_steps": [
+    {
+     "explain": "Hàm sống sót của phân phối mũ là e^{-lambda x} với x >= 0.",
+     "latex": "P(X > x) = e^{-\\lambda x}"
+    },
+    {
+     "explain": "Thay lambda = 2, x = 1.",
+     "latex": "P(X > 1) = e^{-2} \\approx 0{,}1353"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.phan-phoi-lien-tuc.phan-phoi-mu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "phân phối mũ",
+    "hàm sống sót"
+   ],
+   "tags": [
+    "xac-suat",
+    "phan-phoi-mu"
+   ],
+   "answer_numeric": 0.1353352832366127,
+   "tolerance": 0.001,
+   "hints": [
+    "P(X>x)=e^(-lambda x).",
+    "lambda=2, x=1."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0038",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phân phối liên tục",
+   "type": "dien-so",
+   "statement_vi": "Biến ngẫu nhiên X có phân phối đều trên đoạn [2; 8]. Tính phương sai của X. Nhập kết quả.",
+   "statement_en": "X is uniform on [2, 8]. Compute the variance of X.",
+   "answer": "(8-2)^2/12 = 3",
+   "solution_steps": [
+    {
+     "explain": "Phương sai của phân phối đều trên [a, b] là (b - a)^2 / 12.",
+     "latex": "\\operatorname{Var}(X) = \\frac{(b - a)^{2}}{12}"
+    },
+    {
+     "explain": "Thay a = 2, b = 8.",
+     "latex": "\\operatorname{Var}(X) = \\frac{(8 - 2)^{2}}{12} = \\frac{36}{12} = 3"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.phan-phoi-lien-tuc.phan-phoi-deu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "phân phối đều",
+    "phương sai"
+   ],
+   "tags": [
+    "xac-suat",
+    "phan-phoi-deu"
+   ],
+   "answer_numeric": 3.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Var = (b-a)^2/12.",
+    "a=2, b=8."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0039",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phân phối rời rạc",
+   "type": "dien-so",
+   "statement_vi": "Biến ngẫu nhiên Bernoulli X nhận giá trị 1 với xác suất p = 0,3 và 0 với xác suất 0,7. Tính phương sai của X. Nhập kết quả.",
+   "statement_en": "Bernoulli X takes 1 with probability p=0.3 and 0 otherwise. Compute Var(X).",
+   "answer": "p(1-p) = 0,21",
+   "solution_steps": [
+    {
+     "explain": "Phương sai của biến Bernoulli là p(1 - p).",
+     "latex": "\\operatorname{Var}(X) = p(1 - p)"
+    },
+    {
+     "explain": "Thay p = 0,3.",
+     "latex": "\\operatorname{Var}(X) = 0{,}3 \\cdot 0{,}7 = 0{,}21"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-bernoulli"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "phân phối Bernoulli",
+    "phương sai"
+   ],
+   "tags": [
+    "xac-suat",
+    "bernoulli"
+   ],
+   "answer_numeric": 0.21,
+   "tolerance": 1e-09,
+   "hints": [
+    "Var = p(1-p).",
+    "p = 0,3."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0040",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thống kê mẫu",
+   "type": "dien-so",
+   "statement_vi": "Cho mẫu số liệu 2; 4; 6; 8; 10. Tính phương sai mẫu HIỆU CHỈNH s^2. Nhập kết quả.",
+   "statement_en": "Given the sample 2, 4, 6, 8, 10, compute the corrected sample variance s^2.",
+   "answer": "s^2 = 10",
+   "solution_steps": [
+    {
+     "explain": "Trước hết tính trung bình mẫu.",
+     "latex": "\\bar{x} = \\frac{2 + 4 + 6 + 8 + 10}{5} = 6"
+    },
+    {
+     "explain": "Phương sai mẫu hiệu chỉnh chia cho n - 1.",
+     "latex": "s^{2} = \\frac{1}{n - 1}\\sum (x_{i} - \\bar{x})^{2} = \\frac{16 + 4 + 0 + 4 + 16}{4}"
+    },
+    {
+     "explain": "Tính giá trị.",
+     "latex": "s^{2} = \\frac{40}{4} = 10"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.thong-ke-mau.trung-binh-mau",
+    "math.dai-hoc.thong-ke-mau.phuong-sai-mau-hieu-chinh",
+    "math.dai-hoc.thong-ke-mau.do-lech-chuan-mau"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "trung bình mẫu",
+    "phương sai mẫu hiệu chỉnh"
+   ],
+   "tags": [
+    "thong-ke",
+    "phuong-sai-mau"
+   ],
+   "answer_numeric": 10.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Trung bình = 6.",
+    "Chia tổng bình phương lệch cho n-1 = 4."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0041",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Biến ngẫu nhiên",
+   "type": "dien-so",
+   "statement_vi": "Biến ngẫu nhiên liên tục X có hàm mật độ f(x) = 2x với x thuộc [0; 1] (và 0 nơi khác). Tính phương sai Var(X). Nhập kết quả (5 chữ số).",
+   "statement_en": "Continuous X has density f(x)=2x on [0,1] (0 elsewhere). Compute Var(X).",
+   "answer": "1/18 ≈ 0,05556",
+   "solution_steps": [
+    {
+     "explain": "Tính kỳ vọng bằng tích phân x f(x).",
+     "latex": "E[X] = \\int_{0}^{1} x \\cdot 2x \\, dx = \\int_{0}^{1} 2x^{2} \\, dx = \\frac{2}{3}"
+    },
+    {
+     "explain": "Tính mômen bậc hai.",
+     "latex": "E[X^{2}] = \\int_{0}^{1} x^{2} \\cdot 2x \\, dx = \\int_{0}^{1} 2x^{3} \\, dx = \\frac{1}{2}"
+    },
+    {
+     "explain": "Phương sai bằng mômen bậc hai trừ bình phương kỳ vọng.",
+     "latex": "\\operatorname{Var}(X) = \\frac{1}{2} - \\left(\\frac{2}{3}\\right)^{2} = \\frac{1}{2} - \\frac{4}{9} = \\frac{1}{18}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.bien-ngau-nhien.ham-mat-do",
+    "math.dai-hoc.bien-ngau-nhien.ky-vong-bien-lien-tuc",
+    "math.dai-hoc.bien-ngau-nhien.phuong-sai-dinh-nghia"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 6,
+   "skills": [
+    "kỳ vọng biến liên tục",
+    "phương sai qua mômen bậc hai"
+   ],
+   "tags": [
+    "xac-suat",
+    "bien-ngau-nhien"
+   ],
+   "answer_numeric": 0.05555555555555555,
+   "tolerance": 0.0001,
+   "hints": [
+    "E[X]=∫ x f dx, E[X^2]=∫ x^2 f dx.",
+    "Var = E[X^2] - (E[X])^2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0042",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Định thức",
+   "type": "dien-so",
+   "statement_vi": "Tính định thức của ma trận cấp hai [[3, 5], [2, 4]]. Nhập số nguyên.",
+   "statement_en": "Compute the determinant of [[3, 5], [2, 4]].",
+   "answer": "3·4 - 5·2 = 2",
+   "solution_steps": [
+    {
+     "explain": "Định thức cấp hai bằng tích đường chéo chính trừ tích đường chéo phụ.",
+     "latex": "\\det \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "3 \\cdot 4 - 5 \\cdot 2 = 12 - 10 = 2"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.dinh-thuc.dinh-thuc-cap-hai"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "định thức cấp hai"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "dinh-thuc"
+   ],
+   "answer_numeric": 2,
+   "tolerance": 0.5,
+   "hints": [
+    "ad - bc.",
+    "Đường chéo chính trừ đường chéo phụ."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0043",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Định thức",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho hai ma trận vuông cấp 3 với det(A) = 3 và det(B) = -2. Tính det(2A·B).",
+   "statement_en": "Two 3x3 matrices with det(A)=3, det(B)=-2. Compute det(2A·B).",
+   "answer": "D",
+   "solution_steps": [
+    {
+     "explain": "Khi nhân toàn ma trận cấp n với vô hướng k thì định thức nhân với k^n. Ở đây n = 3.",
+     "latex": "\\det(2A) = 2^{3} \\det A = 8 \\cdot 3 = 24"
+    },
+    {
+     "explain": "Định thức của tích bằng tích các định thức.",
+     "latex": "\\det(2A \\cdot B) = \\det(2A)\\det(B) = 24 \\cdot (-2) = -48"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.dinh-thuc.dinh-thuc-nhan-vo-huong",
+    "math.dai-hoc.dinh-thuc.dinh-thuc-cua-tich"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "định thức của tích",
+    "định thức khi nhân vô hướng"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "dinh-thuc"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "-12",
+     "why_wrong": "Quên hệ số 2^3, chỉ lấy det(A)det(B)·2."
+    },
+    {
+     "key": "B",
+     "text": "-6",
+     "why_wrong": "Chỉ nhân det(A)det(B), bỏ qua hằng số 2."
+    },
+    {
+     "key": "C",
+     "text": "48",
+     "why_wrong": "Sai dấu của det(B) = -2."
+    },
+    {
+     "key": "D",
+     "text": "-48",
+     "why_wrong": ""
+    }
+   ],
+   "answer_numeric": -48,
+   "tolerance": 0.5,
+   "hints": [
+    "det(kA) = k^n det(A) với n = 3.",
+    "det(AB) = det(A)det(B)."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0044",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Trị riêng và vectơ riêng",
+   "type": "dien-so",
+   "statement_vi": "Cho ma trận A = [[2, 1], [1, 2]]. Tính TÍCH các trị riêng của A (bằng định thức). Nhập số nguyên.",
+   "statement_en": "For A = [[2,1],[1,2]], compute the product of eigenvalues (equal to det A).",
+   "answer": "det A = 3 (các trị riêng 1 và 3)",
+   "solution_steps": [
+    {
+     "explain": "Lập phương trình đặc trưng det(A - lambda I) = 0.",
+     "latex": "\\det \\begin{pmatrix} 2 - \\lambda & 1 \\\\ 1 & 2 - \\lambda \\end{pmatrix} = (2 - \\lambda)^{2} - 1 = 0"
+    },
+    {
+     "explain": "Giải ra hai trị riêng.",
+     "latex": "\\lambda = 1,\\ \\lambda = 3"
+    },
+    {
+     "explain": "Tích các trị riêng bằng định thức của A.",
+     "latex": "\\lambda_{1}\\lambda_{2} = \\det A = 1 \\cdot 3 = 3"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tri-rieng.da-thuc-dac-trung",
+    "math.dai-hoc.tri-rieng.tich-tri-rieng-bang-dinh-thuc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đa thức đặc trưng",
+    "tích trị riêng bằng định thức"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "tri-rieng"
+   ],
+   "answer_numeric": 3,
+   "tolerance": 0.5,
+   "hints": [
+    "Giải det(A - lambda I) = 0.",
+    "Tích trị riêng = det A."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0045",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ma trận",
+   "type": "dien-so",
+   "statement_vi": "Cho A = [[1, 2], [3, 4]] và B = [[0, 1], [1, 0]]. Tính vết (trace) của tích AB. Nhập số nguyên.",
+   "statement_en": "For A=[[1,2],[3,4]], B=[[0,1],[1,0]], compute the trace of AB.",
+   "answer": "trace(AB) = 5",
+   "solution_steps": [
+    {
+     "explain": "Nhân hai ma trận theo quy tắc hàng nhân cột.",
+     "latex": "AB = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} 2 & 1 \\\\ 4 & 3 \\end{pmatrix}"
+    },
+    {
+     "explain": "Vết là tổng các phần tử trên đường chéo chính.",
+     "latex": "\\operatorname{tr}(AB) = 2 + 3 = 5"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ma-tran.tich-hai-ma-tran",
+    "math.dai-hoc.ma-tran.vet-ma-tran"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhân ma trận",
+    "vết ma trận"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "ma-tran"
+   ],
+   "answer_numeric": 5,
+   "tolerance": 0.5,
+   "hints": [
+    "Tính AB trước.",
+    "Vết = tổng đường chéo chính."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0046",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ phương trình tuyến tính",
+   "type": "dien-so",
+   "statement_vi": "Giải hệ 2x + y = 5; x + 3y = 10 bằng phương pháp ma trận (Cramer). Tính giá trị của y. Nhập số nguyên.",
+   "statement_en": "Solve 2x + y = 5; x + 3y = 10 by the matrix (Cramer) method. Find y.",
+   "answer": "y = 3 (và x = 1)",
+   "solution_steps": [
+    {
+     "explain": "Viết hệ dưới dạng ma trận A X = b và tính định thức của A.",
+     "latex": "A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 3 \\end{pmatrix},\\ \\det A = 6 - 1 = 5"
+    },
+    {
+     "explain": "Theo Cramer, y bằng định thức khi thay cột hệ số của y bằng vế phải, chia cho det A.",
+     "latex": "y = \\frac{1}{\\det A}\\det\\begin{pmatrix} 2 & 5 \\\\ 1 & 10 \\end{pmatrix} = \\frac{20 - 5}{5} = 3"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.he-phuong-trinh-tuyen-tinh.nghiem-qua-nghich-dao"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "giải hệ bằng ma trận",
+    "quy tắc Cramer"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "he-phuong-trinh"
+   ],
+   "answer_numeric": 3,
+   "tolerance": 0.5,
+   "hints": [
+    "det A = 5.",
+    "Thay cột thứ hai bằng vế phải để tìm y."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0047",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính tích phân từng phần của I = tích phân từ 0 đến 1 của x·e^x dx. Nhập kết quả.",
+   "statement_en": "Compute I = integral from 0 to 1 of x·e^x dx by parts.",
+   "answer": "I = 1",
+   "solution_steps": [
+    {
+     "explain": "Chọn u = x, dv = e^x dx nên du = dx, v = e^x, áp dụng công thức từng phần.",
+     "latex": "\\int u \\, dv = uv - \\int v \\, du"
+    },
+    {
+     "explain": "Thay vào và tính nguyên hàm còn lại.",
+     "latex": "\\int_{0}^{1} x e^{x} dx = \\left[x e^{x}\\right]_{0}^{1} - \\int_{0}^{1} e^{x} dx = e - (e - 1) = 1"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan.tich-phan-tung-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tích phân từng phần",
+    "chọn u và dv"
+   ],
+   "tags": [
+    "giai-tich",
+    "tich-phan"
+   ],
+   "answer_numeric": 1.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Đặt u = x, dv = e^x dx.",
+    "[x e^x] từ 0 đến 1 = e."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0048",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức Wallis tính I = tích phân từ 0 đến pi/2 của sin^6(x) dx. Nhập kết quả (4 chữ số).",
+   "statement_en": "Use Wallis' formula to compute I = integral from 0 to pi/2 of sin^6(x) dx.",
+   "answer": "5π/32 ≈ 0,4909",
+   "solution_steps": [
+    {
+     "explain": "Công thức Wallis cho luỹ thừa chẵn n = 2m nhân thêm pi/2.",
+     "latex": "\\int_{0}^{\\pi/2} \\sin^{2m} x \\, dx = \\frac{(2m - 1)!!}{(2m)!!} \\cdot \\frac{\\pi}{2}"
+    },
+    {
+     "explain": "Với 2m = 6, tức m = 3, tính các giai thừa kép.",
+     "latex": "\\int_{0}^{\\pi/2} \\sin^{6} x \\, dx = \\frac{5 \\cdot 3 \\cdot 1}{6 \\cdot 4 \\cdot 2} \\cdot \\frac{\\pi}{2} = \\frac{15}{48}\\cdot\\frac{\\pi}{2} = \\frac{5\\pi}{32}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan.cong-thuc-wallis"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 5,
+   "skills": [
+    "công thức Wallis",
+    "giai thừa kép"
+   ],
+   "tags": [
+    "giai-tich",
+    "tich-phan",
+    "wallis"
+   ],
+   "answer_numeric": 0.4908738521234052,
+   "tolerance": 0.001,
+   "hints": [
+    "Dùng giai thừa kép (2m-1)!!/(2m)!!.",
+    "Nhân thêm pi/2 cho luỹ thừa chẵn."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0049",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính tích phân từ -2 đến 2 của (x^3 + x^2) dx bằng tính chất chẵn - lẻ. Nhập kết quả (5 chữ số).",
+   "statement_en": "Compute integral from -2 to 2 of (x^3 + x^2) dx using even/odd symmetry.",
+   "answer": "16/3 ≈ 5,33333",
+   "solution_steps": [
+    {
+     "explain": "Trên đoạn đối xứng, tích phân của hàm lẻ x^3 bằng 0, chỉ còn phần chẵn x^2.",
+     "latex": "\\int_{-2}^{2} x^{3} dx = 0,\\quad \\int_{-2}^{2} x^{2} dx = 2\\int_{0}^{2} x^{2} dx"
+    },
+    {
+     "explain": "Tính phần chẵn.",
+     "latex": "2 \\cdot \\frac{2^{3}}{3} = \\frac{16}{3}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan.tich-phan-ham-chan-le"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính chất chẵn lẻ của tích phân",
+    "đoạn đối xứng"
+   ],
+   "tags": [
+    "giai-tich",
+    "tich-phan"
+   ],
+   "answer_numeric": 5.333333333333333,
+   "tolerance": 0.0001,
+   "hints": [
+    "Hàm lẻ trên đoạn đối xứng cho 0.",
+    "Chỉ tính x^2, nhân đôi nửa dương."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0050",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tích phân suy rộng",
+   "type": "dien-so",
+   "statement_vi": "Tính tích phân suy rộng loại một I = tích phân từ 1 đến +vô cùng của 1/x^3 dx. Nhập kết quả.",
+   "statement_en": "Compute the improper integral I = integral from 1 to +infinity of 1/x^3 dx.",
+   "answer": "1/2 = 0,5",
+   "solution_steps": [
+    {
+     "explain": "Tích phân chuẩn loại một 1/x^p trên [1; +vô cùng) hội tụ khi p > 1 và bằng 1/(p-1).",
+     "latex": "\\int_{1}^{+\\infty} \\frac{dx}{x^{p}} = \\frac{1}{p - 1} \\quad (p > 1)"
+    },
+    {
+     "explain": "Với p = 3.",
+     "latex": "\\int_{1}^{+\\infty} \\frac{dx}{x^{3}} = \\frac{1}{3 - 1} = \\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan-suy-rong.chuan-p-loai-mot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tích phân suy rộng loại một",
+    "tích phân chuẩn p"
+   ],
+   "tags": [
+    "giai-tich",
+    "tich-phan-suy-rong"
+   ],
+   "answer_numeric": 0.5,
+   "tolerance": 1e-09,
+   "hints": [
+    "Hội tụ khi p > 1, giá trị 1/(p-1).",
+    "p = 3."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0051",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tích phân suy rộng",
+   "type": "dien-so",
+   "statement_vi": "Tính tích phân suy rộng loại hai I = tích phân từ 0 đến 1 của 1/căn(x) dx. Nhập kết quả.",
+   "statement_en": "Compute the improper integral of the second kind I = integral from 0 to 1 of 1/sqrt(x) dx.",
+   "answer": "2",
+   "solution_steps": [
+    {
+     "explain": "Điểm kì dị tại x = 0. Tích phân chuẩn loại hai 1/x^p trên (0; 1] hội tụ khi p < 1.",
+     "latex": "\\int_{0}^{1} \\frac{dx}{x^{p}} = \\frac{1}{1 - p} \\quad (p < 1)"
+    },
+    {
+     "explain": "Với p = 1/2.",
+     "latex": "\\int_{0}^{1} \\frac{dx}{\\sqrt{x}} = \\frac{1}{1 - \\tfrac{1}{2}} = 2"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.tich-phan-suy-rong.chuan-p-loai-hai"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tích phân suy rộng loại hai",
+    "kì dị tại đầu mút"
+   ],
+   "tags": [
+    "giai-tich",
+    "tich-phan-suy-rong"
+   ],
+   "answer_numeric": 2.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Hội tụ khi p < 1, giá trị 1/(1-p).",
+    "p = 1/2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0052",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ứng dụng tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính diện tích hình phẳng giới hạn bởi hai đường y = x và y = x^2. Nhập kết quả (5 chữ số).",
+   "statement_en": "Find the area between the curves y = x and y = x^2.",
+   "answer": "1/6 ≈ 0,16667",
+   "solution_steps": [
+    {
+     "explain": "Hai đường cắt nhau tại x = 0 và x = 1; trên khoảng đó y = x nằm trên y = x^2.",
+     "latex": "S = \\int_{0}^{1} (x - x^{2}) \\, dx"
+    },
+    {
+     "explain": "Tính tích phân.",
+     "latex": "S = \\left[\\frac{x^{2}}{2} - \\frac{x^{3}}{3}\\right]_{0}^{1} = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ung-dung-tich-phan.dien-tich-descartes"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "diện tích giữa hai đường",
+    "xác định cận giao điểm"
+   ],
+   "tags": [
+    "giai-tich",
+    "ung-dung-tich-phan"
+   ],
+   "answer_numeric": 0.16666666666666666,
+   "tolerance": 0.0001,
+   "hints": [
+    "Giao điểm x = 0 và x = 1.",
+    "Tích phân hiệu đường trên trừ đường dưới."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0053",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ứng dụng tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính thể tích vật thể tròn xoay khi quay hình phẳng dưới y = căn(x), 0 <= x <= 4, quanh trục Ox (phương pháp đĩa). Kết quả có dạng kπ; nhập k.",
+   "statement_en": "Volume of the solid of revolution of y = sqrt(x), 0 <= x <= 4, about Ox (disk method). It equals k*pi; enter k.",
+   "answer": "k = 8 (thể tích 8π)",
+   "solution_steps": [
+    {
+     "explain": "Phương pháp đĩa: thể tích là pi nhân tích phân bình phương hàm.",
+     "latex": "V = \\pi \\int_{0}^{4} \\left(\\sqrt{x}\\right)^{2} dx = \\pi \\int_{0}^{4} x \\, dx"
+    },
+    {
+     "explain": "Tính tích phân.",
+     "latex": "V = \\pi \\left[\\frac{x^{2}}{2}\\right]_{0}^{4} = \\pi \\cdot 8 = 8\\pi"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ung-dung-tich-phan.the-tich-dia"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "thể tích tròn xoay",
+    "phương pháp đĩa"
+   ],
+   "tags": [
+    "giai-tich",
+    "ung-dung-tich-phan"
+   ],
+   "answer_numeric": 8.0,
+   "tolerance": 1e-06,
+   "hints": [
+    "V = pi ∫ y^2 dx.",
+    "(sqrt x)^2 = x."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0054",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ứng dụng tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính giá trị trung bình của hàm f(x) = x^2 trên đoạn [0; 3]. Nhập kết quả.",
+   "statement_en": "Compute the average value of f(x) = x^2 on [0, 3].",
+   "answer": "3",
+   "solution_steps": [
+    {
+     "explain": "Giá trị trung bình của hàm trên [a, b] là tích phân chia độ dài đoạn.",
+     "latex": "\\bar{f} = \\frac{1}{b - a}\\int_{a}^{b} f(x) \\, dx"
+    },
+    {
+     "explain": "Thay a = 0, b = 3.",
+     "latex": "\\bar{f} = \\frac{1}{3}\\int_{0}^{3} x^{2} dx = \\frac{1}{3} \\cdot 9 = 3"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ung-dung-tich-phan.gia-tri-trung-binh-ham"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "giá trị trung bình của hàm",
+    "tích phân xác định"
+   ],
+   "tags": [
+    "giai-tich",
+    "ung-dung-tich-phan"
+   ],
+   "answer_numeric": 3.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Trung bình = (1/(b-a)) ∫ f.",
+    "∫_0^3 x^2 = 9."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0055",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuỗi số",
+   "type": "dien-so",
+   "statement_vi": "Tính tổng của chuỗi hình học tổng từ n = 0 đến vô cùng của (2/3)^n. Nhập kết quả.",
+   "statement_en": "Compute the sum of the geometric series from n=0 to infinity of (2/3)^n.",
+   "answer": "3",
+   "solution_steps": [
+    {
+     "explain": "Chuỗi hình học với công bội |q| < 1 hội tụ về 1/(1 - q).",
+     "latex": "\\sum_{n=0}^{\\infty} q^{n} = \\frac{1}{1 - q} \\quad (|q| < 1)"
+    },
+    {
+     "explain": "Thay q = 2/3.",
+     "latex": "\\sum_{n=0}^{\\infty} \\left(\\frac{2}{3}\\right)^{n} = \\frac{1}{1 - \\tfrac{2}{3}} = 3"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.chuoi-so.chuoi-hinh-hoc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "chuỗi hình học",
+    "tổng cấp số nhân lùi vô hạn"
+   ],
+   "tags": [
+    "giai-tich",
+    "chuoi-so"
+   ],
+   "answer_numeric": 3.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Tổng = 1/(1-q).",
+    "q = 2/3."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0056",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuỗi số",
+   "type": "dien-so",
+   "statement_vi": "Tính tổng của chuỗi lồng nhau tổng từ n = 1 đến vô cùng của 1/(n(n+1)). Nhập kết quả.",
+   "statement_en": "Compute the telescoping series sum from n=1 to infinity of 1/(n(n+1)).",
+   "answer": "1",
+   "solution_steps": [
+    {
+     "explain": "Phân tích số hạng tổng quát thành hiệu hai phân thức.",
+     "latex": "\\frac{1}{n(n + 1)} = \\frac{1}{n} - \\frac{1}{n + 1}"
+    },
+    {
+     "explain": "Tổng riêng khử liên tiếp, chỉ còn số hạng đầu và số hạng cuối.",
+     "latex": "S_{N} = 1 - \\frac{1}{N + 1} \\to 1"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.chuoi-so.chuoi-long-nhau"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "chuỗi lồng nhau",
+    "khử liên tiếp"
+   ],
+   "tags": [
+    "giai-tich",
+    "chuoi-so"
+   ],
+   "answer_numeric": 1.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Tách 1/(n(n+1)) = 1/n - 1/(n+1).",
+    "Tổng riêng khử hết chỉ còn 1."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0057",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuỗi lũy thừa",
+   "type": "dien-so",
+   "statement_vi": "Tìm bán kính hội tụ R của chuỗi lũy thừa tổng x^n / n^2 (n từ 1). Nhập kết quả.",
+   "statement_en": "Find the radius of convergence R of the power series sum x^n / n^2.",
+   "answer": "R = 1",
+   "solution_steps": [
+    {
+     "explain": "Dùng tỉ số các hệ số liên tiếp (tiêu chuẩn D'Alembert) để tìm bán kính.",
+     "latex": "\\frac{1}{R} = \\lim_{n \\to \\infty} \\frac{a_{n+1}}{a_{n}} = \\lim_{n \\to \\infty} \\frac{n^{2}}{(n + 1)^{2}} = 1"
+    },
+    {
+     "explain": "Suy ra bán kính hội tụ.",
+     "latex": "R = 1"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.chuoi-luy-thua.mien-hoi-tu",
+    "math.dai-hoc.chuoi-luy-thua.dinh-nghia"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "bán kính hội tụ",
+    "tiêu chuẩn tỉ số"
+   ],
+   "tags": [
+    "giai-tich",
+    "chuoi-luy-thua"
+   ],
+   "answer_numeric": 1.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "1/R = lim |a_(n+1)/a_n|.",
+    "n^2/(n+1)^2 -> 1."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0058",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình vi phân cấp 2",
+   "type": "trac-nghiem",
+   "statement_vi": "Nghiệm tổng quát của phương trình y'' - 5y' + 6y = 0 là?",
+   "statement_en": "The general solution of y'' - 5y' + 6y = 0 is?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Lập phương trình đặc trưng.",
+     "latex": "k^{2} - 5k + 6 = 0 \\Rightarrow k = 2,\\ k = 3"
+    },
+    {
+     "explain": "Hai nghiệm thực phân biệt cho nghiệm tổng quát là tổ hợp hai hàm mũ.",
+     "latex": "y = C_{1} e^{2x} + C_{2} e^{3x}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ptvp-cap-2.nghiem-thuc-phan-biet"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phương trình đặc trưng",
+    "nghiệm thực phân biệt"
+   ],
+   "tags": [
+    "giai-tich",
+    "ptvp"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "y = C1 e^{2x} + C2 e^{3x}",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "y = C1 e^{-2x} + C2 e^{-3x}",
+     "why_wrong": "Sai dấu nghiệm đặc trưng; phương trình cho nghiệm dương 2 và 3."
+    },
+    {
+     "key": "C",
+     "text": "y = (C1 + C2 x) e^{2x}",
+     "why_wrong": "Đây là dạng nghiệm kép, nhưng ở đây hai nghiệm phân biệt."
+    },
+    {
+     "key": "D",
+     "text": "y = C1 cos 2x + C2 sin 3x",
+     "why_wrong": "Nghiệm dao động chỉ xuất hiện khi nghiệm đặc trưng phức, không phải trường hợp này."
+    }
+   ],
+   "hints": [
+    "Giải k^2 - 5k + 6 = 0.",
+    "Hai nghiệm thực phân biệt cho hai hàm mũ."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0059",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình vi phân cấp 2",
+   "type": "dien-so",
+   "statement_vi": "Phương trình dao động điều hòa y'' + 9y = 0 có chu kì dao động T bằng bao nhiêu? Nhập kết quả (5 chữ số).",
+   "statement_en": "The harmonic oscillator y'' + 9y = 0 has period T equal to? Give five decimals.",
+   "answer": "2π/3 ≈ 2,09440",
+   "solution_steps": [
+    {
+     "explain": "Phương trình có dạng y'' + omega^2 y = 0 với omega^2 = 9 nên omega = 3.",
+     "latex": "\\omega = 3"
+    },
+    {
+     "explain": "Chu kì liên hệ với tần số góc qua T = 2π/omega.",
+     "latex": "T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{3} \\approx 2{,}09440"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ptvp-cap-2.dao-dong-dieu-hoa"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "dao động điều hòa",
+    "chu kì và tần số góc"
+   ],
+   "tags": [
+    "giai-tich",
+    "ptvp",
+    "dao-dong"
+   ],
+   "answer_numeric": 2.0943951023931953,
+   "tolerance": 0.0001,
+   "hints": [
+    "omega^2 = 9.",
+    "T = 2π/omega."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0060",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình vi phân cấp 2",
+   "type": "dien-so",
+   "statement_vi": "Xét phương trình Euler x^2 y'' - 3x y' + 4y = 0. Tìm nghiệm r của phương trình chỉ số (nghiệm bội). Nhập số nguyên.",
+   "statement_en": "For the Euler equation x^2 y'' - 3x y' + 4y = 0, find the (double) root r of the indicial equation.",
+   "answer": "r = 2 (nghiệm kép)",
+   "solution_steps": [
+    {
+     "explain": "Thử nghiệm y = x^r, đưa về phương trình chỉ số r(r-1) - 3r + 4 = 0.",
+     "latex": "r(r - 1) - 3r + 4 = r^{2} - 4r + 4 = 0"
+    },
+    {
+     "explain": "Giải phương trình chỉ số.",
+     "latex": "(r - 2)^{2} = 0 \\Rightarrow r = 2"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ptvp-cap-2.phuong-trinh-euler"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 5,
+   "skills": [
+    "phương trình Euler",
+    "phương trình chỉ số"
+   ],
+   "tags": [
+    "giai-tich",
+    "ptvp",
+    "euler"
+   ],
+   "answer_numeric": 2,
+   "tolerance": 0.5,
+   "hints": [
+    "Thử y = x^r.",
+    "r(r-1) - 3r + 4 = 0."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0061",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình vi phân cấp 1",
+   "type": "trac-nghiem",
+   "statement_vi": "Thừa số tích phân của phương trình tuyến tính cấp một y' + 2y = e^x là?",
+   "statement_en": "The integrating factor of the first-order linear equation y' + 2y = e^x is?",
+   "answer": "C",
+   "solution_steps": [
+    {
+     "explain": "Với phương trình y' + p(x) y = q(x), thừa số tích phân là e mũ tích phân của p.",
+     "latex": "\\mu(x) = e^{\\int p(x) \\, dx}"
+    },
+    {
+     "explain": "Ở đây p(x) = 2 nên tích phân bằng 2x.",
+     "latex": "\\mu(x) = e^{\\int 2 \\, dx} = e^{2x}"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ptvp-cap-1.thua-so-tich-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "thừa số tích phân",
+    "phương trình tuyến tính cấp một"
+   ],
+   "tags": [
+    "giai-tich",
+    "ptvp"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "e^x",
+     "why_wrong": "Lấy nhầm vế phải q(x) = e^x làm hệ số p(x)."
+    },
+    {
+     "key": "B",
+     "text": "e^{-2x}",
+     "why_wrong": "Sai dấu; thừa số tích phân dùng +∫p, không phải -∫p."
+    },
+    {
+     "key": "C",
+     "text": "e^{2x}",
+     "why_wrong": ""
+    },
+    {
+     "key": "D",
+     "text": "2x",
+     "why_wrong": "Quên lấy hàm mũ của tích phân hệ số."
+    }
+   ],
+   "hints": [
+    "mu = e^(∫ p dx).",
+    "p(x) = 2."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0062",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hàm nhiều biến",
+   "type": "dien-so",
+   "statement_vi": "Cho hàm thuần nhất f(x, y) = x^3 + 2x y^2 (bậc 3). Theo định lí Euler, tính giá trị x·f_x + y·f_y tại điểm (1; 2). Nhập số nguyên.",
+   "statement_en": "For the homogeneous function f(x,y) = x^3 + 2x y^2 (degree 3), use Euler's theorem to compute x·f_x + y·f_y at (1, 2).",
+   "answer": "3·f(1,2) = 27",
+   "solution_steps": [
+    {
+     "explain": "Định lí Euler về hàm thuần nhất bậc m: tổ hợp x f_x + y f_y bằng m lần f.",
+     "latex": "x f_{x} + y f_{y} = m \\, f(x, y)"
+    },
+    {
+     "explain": "Hàm bậc m = 3; tính f tại (1, 2).",
+     "latex": "f(1, 2) = 1^{3} + 2 \\cdot 1 \\cdot 2^{2} = 1 + 8 = 9"
+    },
+    {
+     "explain": "Nhân với bậc 3.",
+     "latex": "x f_{x} + y f_{y} = 3 \\cdot 9 = 27"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ham-nhieu-bien.dinh-li-euler-thuan-nhat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "định lí Euler về hàm thuần nhất",
+    "bậc thuần nhất"
+   ],
+   "tags": [
+    "giai-tich",
+    "ham-nhieu-bien"
+   ],
+   "answer_numeric": 27,
+   "tolerance": 0.5,
+   "hints": [
+    "x f_x + y f_y = m f.",
+    "m = 3, f(1,2) = 9."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0063",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hàm nhiều biến",
+   "type": "dien-so",
+   "statement_vi": "Tìm giá trị lớn nhất của f(x, y) = x + y trên miền đóng x^2 + y^2 <= 1. Nhập kết quả (5 chữ số).",
+   "statement_en": "Find the maximum of f(x,y) = x + y on the closed disk x^2 + y^2 <= 1.",
+   "answer": "căn 2 ≈ 1,41421",
+   "solution_steps": [
+    {
+     "explain": "Hàm tuyến tính không có điểm dừng bên trong nên cực đại đạt trên biên; dùng nhân tử Lagrange với ràng buộc x^2 + y^2 = 1.",
+     "latex": "\\nabla f = \\lambda \\nabla g:\\ 1 = 2\\lambda x,\\ 1 = 2\\lambda y \\Rightarrow x = y"
+    },
+    {
+     "explain": "Thay x = y vào ràng buộc.",
+     "latex": "2x^{2} = 1 \\Rightarrow x = y = \\frac{1}{\\sqrt{2}}"
+    },
+    {
+     "explain": "Tính giá trị lớn nhất.",
+     "latex": "f_{\\max} = \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}} = \\sqrt{2} \\approx 1{,}41421"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ham-nhieu-bien.gtln-gtnn-mien-dong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "cực trị trên miền đóng",
+    "nhân tử Lagrange"
+   ],
+   "tags": [
+    "giai-tich",
+    "ham-nhieu-bien",
+    "toi-uu"
+   ],
+   "answer_numeric": 1.4142135623730951,
+   "tolerance": 0.0001,
+   "hints": [
+    "Cực trị đạt trên biên đường tròn.",
+    "Theo Lagrange, x = y."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0064",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đạo hàm nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính đạo hàm cấp ba của hàm y = sin(2x) tại x = 0. Nhập số nguyên.",
+   "statement_en": "Compute the third derivative of y = sin(2x) at x = 0.",
+   "answer": "-8",
+   "solution_steps": [
+    {
+     "explain": "Công thức đạo hàm cấp n của sin(ax + b) cộng thêm n·pi/2 vào pha và nhân a^n.",
+     "latex": "y^{(n)} = a^{n} \\sin\\left(ax + \\frac{n\\pi}{2}\\right)"
+    },
+    {
+     "explain": "Với a = 2, n = 3, x = 0.",
+     "latex": "y^{(3)}(0) = 2^{3}\\sin\\left(\\frac{3\\pi}{2}\\right) = 8 \\cdot (-1) = -8"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.dao-ham.dao-ham-cap-n-sin"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đạo hàm cấp n của sin",
+    "quy tắc dịch pha"
+   ],
+   "tags": [
+    "giai-tich",
+    "dao-ham"
+   ],
+   "answer_numeric": -8,
+   "tolerance": 0.5,
+   "hints": [
+    "y^(n) = a^n sin(ax + n pi/2).",
+    "sin(3pi/2) = -1."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0065",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đạo hàm nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức xấp xỉ bằng vi phân, hãy ước lượng căn bậc hai của 4,04. Nhập kết quả (4 chữ số).",
+   "statement_en": "Use the differential approximation to estimate sqrt(4.04).",
+   "answer": "≈ 2,0100",
+   "solution_steps": [
+    {
+     "explain": "Xấp xỉ vi phân: f(x0 + dx) xấp xỉ f(x0) + f'(x0) dx. Lấy f(x) = căn x, x0 = 4, dx = 0,04.",
+     "latex": "f(x_{0} + \\Delta x) \\approx f(x_{0}) + f'(x_{0})\\Delta x"
+    },
+    {
+     "explain": "Đạo hàm của căn x là 1/(2 căn x); tại x0 = 4 bằng 1/4.",
+     "latex": "\\sqrt{4{,}04} \\approx 2 + \\frac{1}{4}\\cdot 0{,}04 = 2 + 0{,}01 = 2{,}01"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.dao-ham.xap-xi-vi-phan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "xấp xỉ bằng vi phân",
+    "tuyến tính hoá hàm"
+   ],
+   "tags": [
+    "giai-tich",
+    "dao-ham",
+    "xap-xi"
+   ],
+   "answer_numeric": 2.01,
+   "tolerance": 0.001,
+   "hints": [
+    "f(x0+dx) ≈ f(x0) + f'(x0) dx.",
+    "f'(4) = 1/4."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0066",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Không gian Euclid",
+   "type": "dien-so",
+   "statement_vi": "Cho hai vectơ u = (1; 2; 2) và v = (2; 0; 1) trong R^3. Tính cosin góc giữa hai vectơ. Nhập kết quả (4 chữ số).",
+   "statement_en": "Given u = (1,2,2), v = (2,0,1) in R^3, compute the cosine of the angle between them.",
+   "answer": "4/(3·căn5) ≈ 0,5963",
+   "solution_steps": [
+    {
+     "explain": "Cosin góc giữa hai vectơ bằng tích vô hướng chia tích hai chuẩn.",
+     "latex": "\\cos\\theta = \\frac{u \\cdot v}{\\lVert u \\rVert\\, \\lVert v \\rVert}"
+    },
+    {
+     "explain": "Tính tích vô hướng và hai chuẩn.",
+     "latex": "u \\cdot v = 4,\\ \\lVert u \\rVert = 3,\\ \\lVert v \\rVert = \\sqrt{5}"
+    },
+    {
+     "explain": "Ghép lại.",
+     "latex": "\\cos\\theta = \\frac{4}{3\\sqrt{5}} \\approx 0{,}5963"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.khong-gian-euclid.goc-giua-hai-vecto"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "góc giữa hai vectơ",
+    "tích vô hướng và chuẩn"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "khong-gian-euclid"
+   ],
+   "answer_numeric": 0.5962847939999439,
+   "tolerance": 0.001,
+   "hints": [
+    "cos = (u·v)/(|u||v|).",
+    "u·v = 4, |u| = 3, |v| = √5."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0067",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Không gian Euclid",
+   "type": "dien-so",
+   "statement_vi": "Cho vectơ x = (3; -4) trong R^2. Tính chuẩn 1 (chuẩn tổng trị tuyệt đối) của x. Nhập số nguyên.",
+   "statement_en": "For x = (3, -4) in R^2, compute the 1-norm (sum of absolute values).",
+   "answer": "|3| + |-4| = 7",
+   "solution_steps": [
+    {
+     "explain": "Chuẩn 1 là tổng trị tuyệt đối các thành phần.",
+     "latex": "\\lVert x \\rVert_{1} = \\sum_{i} |x_{i}|"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\lVert x \\rVert_{1} = |3| + |-4| = 7"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.khong-gian-euclid.chuan-p-cua-vecto"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "chuẩn p của vectơ",
+    "chuẩn 1"
+   ],
+   "tags": [
+    "dai-so-tuyen-tinh",
+    "khong-gian-euclid"
+   ],
+   "answer_numeric": 7,
+   "tolerance": 0.5,
+   "hints": [
+    "Chuẩn 1 = tổng |x_i|.",
+    "So sánh với chuẩn 2 = 5."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0068",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Giải tích số",
+   "type": "dien-so",
+   "statement_vi": "Người ta lấy 3,14 để xấp xỉ số pi. Tính SAI SỐ TƯƠNG ĐỐI của phép xấp xỉ này. Nhập kết quả (6 chữ số).",
+   "statement_en": "The value 3.14 approximates pi. Compute the relative error of this approximation.",
+   "answer": "|pi - 3,14|/pi ≈ 0,000507",
+   "solution_steps": [
+    {
+     "explain": "Sai số tuyệt đối là trị tuyệt đối của hiệu giữa giá trị đúng và giá trị xấp xỉ.",
+     "latex": "\\Delta = |\\pi - 3{,}14| \\approx 0{,}0015927"
+    },
+    {
+     "explain": "Sai số tương đối là sai số tuyệt đối chia cho trị tuyệt đối giá trị đúng.",
+     "latex": "\\delta = \\frac{\\Delta}{|\\pi|} \\approx \\frac{0{,}0015927}{3{,}14159} \\approx 0{,}000507"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.giai-tich-so.sai-so-tuong-doi",
+    "math.dai-hoc.giai-tich-so.sai-so-tuyet-doi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "sai số tuyệt đối",
+    "sai số tương đối"
+   ],
+   "tags": [
+    "giai-tich-so",
+    "sai-so"
+   ],
+   "answer_numeric": 0.0005069573828972128,
+   "tolerance": 1e-05,
+   "hints": [
+    "Sai số tuyệt đối = |giá trị đúng - xấp xỉ|.",
+    "Sai số tương đối chia thêm cho |giá trị đúng|."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0069",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Giải tích số",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức trung điểm với MỘT đoạn xấp xỉ tích phân từ 0 đến 2 của x^2 dx. Nhập giá trị xấp xỉ.",
+   "statement_en": "Use the midpoint rule with ONE subinterval to approximate integral from 0 to 2 of x^2 dx.",
+   "answer": "2",
+   "solution_steps": [
+    {
+     "explain": "Công thức trung điểm lấy giá trị hàm tại trung điểm nhân độ dài đoạn.",
+     "latex": "\\int_{a}^{b} f(x) \\, dx \\approx (b - a) f\\left(\\frac{a + b}{2}\\right)"
+    },
+    {
+     "explain": "Trung điểm của [0; 2] là 1, giá trị f(1) = 1.",
+     "latex": "(2 - 0) \\cdot 1^{2} = 2"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.giai-tich-so.cong-thuc-trung-diem"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "công thức trung điểm",
+    "xấp xỉ tích phân"
+   ],
+   "tags": [
+    "giai-tich-so",
+    "cau-phuong"
+   ],
+   "answer_numeric": 2.0,
+   "tolerance": 1e-09,
+   "hints": [
+    "Lấy f tại trung điểm nhân độ dài đoạn.",
+    "Trung điểm là 1."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0070",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Tối ưu hoá",
+   "type": "dien-so",
+   "statement_vi": "Cực tiểu hoá f(x) = x^2 bằng thuật toán giảm theo gradient. Với điểm bắt đầu x0 = 4 và tốc độ học eta = 0,1, tính x1 sau một bước. Nhập kết quả.",
+   "statement_en": "Minimize f(x)=x^2 by gradient descent. With x0=4 and learning rate eta=0.1, compute x1 after one step.",
+   "answer": "3,2",
+   "solution_steps": [
+    {
+     "explain": "Bước cập nhật gradient descent trừ đi tốc độ học nhân gradient.",
+     "latex": "x_{1} = x_{0} - \\eta \\, f'(x_{0})"
+    },
+    {
+     "explain": "Đạo hàm f'(x) = 2x, tại x0 = 4 bằng 8.",
+     "latex": "x_{1} = 4 - 0{,}1 \\cdot 8 = 3{,}2"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.toi-uu-hoa.gradient-descent-cap-nhat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "gradient descent",
+    "bước cập nhật"
+   ],
+   "tags": [
+    "toi-uu-hoa",
+    "gradient-descent"
+   ],
+   "answer_numeric": 3.2,
+   "tolerance": 1e-06,
+   "hints": [
+    "x1 = x0 - eta f'(x0).",
+    "f'(4) = 8."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0071",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Xác suất nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Biến ngẫu nhiên X có hàm sinh xác suất G(s) = (0,4 + 0,6s)^3. Tính kỳ vọng E[X] = G'(1). Nhập kết quả.",
+   "statement_en": "X has probability generating function G(s) = (0.4 + 0.6s)^3. Compute E[X] = G'(1).",
+   "answer": "1,8",
+   "solution_steps": [
+    {
+     "explain": "Kỳ vọng bằng đạo hàm bậc nhất của hàm sinh xác suất tại s = 1.",
+     "latex": "E[X] = G'(1)"
+    },
+    {
+     "explain": "Đạo hàm rồi thay s = 1.",
+     "latex": "G'(s) = 3(0{,}4 + 0{,}6s)^{2}\\cdot 0{,}6 \\Rightarrow G'(1) = 3 \\cdot 1 \\cdot 0{,}6 = 1{,}8"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.xac-suat-nang-cao.ham-sinh-xac-suat",
+    "math.dai-hoc.xac-suat-nang-cao.ky-vong-phuong-sai-tu-pgf"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hàm sinh xác suất",
+    "kỳ vọng từ PGF"
+   ],
+   "tags": [
+    "xac-suat",
+    "pgf"
+   ],
+   "answer_numeric": 1.8,
+   "tolerance": 1e-06,
+   "hints": [
+    "E[X] = G'(1).",
+    "G(s) = (0,4+0,6s)^3 là PGF của nhị thức n=3, p=0,6."
+   ]
+  },
+  {
+   "id": "prob.math.ext-math-daihoc.0072",
+   "subject": "math",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Lý thuyết thông tin",
+   "type": "dien-so",
+   "statement_vi": "Tính entropy nhị phân H(p) (theo bit) của một nguồn Bernoulli với p = 0,25. Nhập kết quả (4 chữ số).",
+   "statement_en": "Compute the binary entropy H(p) (in bits) of a Bernoulli source with p = 0.25.",
+   "answer": "≈ 0,8113 bit",
+   "solution_steps": [
+    {
+     "explain": "Hàm entropy nhị phân dùng logarit cơ số 2.",
+     "latex": "H(p) = -p\\log_{2} p - (1 - p)\\log_{2}(1 - p)"
+    },
+    {
+     "explain": "Thay p = 0,25.",
+     "latex": "H(0{,}25) = -0{,}25\\log_{2}0{,}25 - 0{,}75\\log_{2}0{,}75 \\approx 0{,}8113"
+    }
+   ],
+   "formulas_used": [
+    "math.dai-hoc.ly-thuyet-thong-tin.entropy-nhi-phan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "entropy nhị phân",
+    "logarit cơ số 2"
+   ],
+   "tags": [
+    "ly-thuyet-thong-tin",
+    "entropy"
+   ],
+   "answer_numeric": 0.8112781244591328,
+   "tolerance": 0.001,
+   "hints": [
+    "H(p) = -p log2 p - (1-p) log2(1-p).",
+    "log2(0,25) = -2."
+   ]
+  }
+ ]
+}

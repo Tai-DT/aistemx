@@ -1,0 +1,992 @@
+{
+  "meta": {
+    "file": "ext3-biology-daihoc.json",
+    "subject": "biology",
+    "title": "Bài tập bổ sung Sinh học đại học (đợt 3): động học enzyme, di truyền quần thể, nhiệt động hóa sinh, định lượng sinh học phân tử, sinh lí học và thống kê - sinh thái học",
+    "levels": [
+      "dai-hoc"
+    ],
+    "count": 18
+  },
+  "problems": [
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0001",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Một enzyme tuân theo động học Michaelis - Menten có V_max = 120 µmol·min⁻¹ và K_M = 2,0 mM. Tính tốc độ ban đầu v0 (µmol·min⁻¹) khi nồng độ cơ chất [S] = 6,0 mM.",
+      "statement_en": "An enzyme following Michaelis - Menten kinetics has V_max = 120 µmol·min⁻¹ and K_M = 2.0 mM. Find the initial velocity v0 (µmol·min⁻¹) at substrate concentration [S] = 6.0 mM.",
+      "answer": "v0 = 90 µmol·min⁻¹",
+      "answer_numeric": 90.0,
+      "answer_unit": "µmol/min",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Viết phương trình Michaelis - Menten liên hệ tốc độ ban đầu với nồng độ cơ chất.",
+          "latex": "v_{0} = \\frac{V_{max}[S]}{K_{M} + [S]}"
+        },
+        {
+          "explain": "Thay V_max = 120, K_M = 2,0 mM và [S] = 6,0 mM (đơn vị mM triệt tiêu ở tử và mẫu).",
+          "latex": "v_{0} = \\frac{120\\times 6.0}{2.0 + 6.0} = \\frac{720}{8.0}"
+        },
+        {
+          "explain": "Rút gọn để có tốc độ ban đầu.",
+          "latex": "v_{0} = 90\\ \\mu\\mathrm{mol\\cdot min^{-1}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.phuong-trinh-michaelis-menten"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng phương trình Michaelis - Menten",
+        "thay số và rút gọn phân thức"
+      ],
+      "hints": [
+        "v0 = Vmax[S]/(KM+[S]).",
+        "Vì [S] = 3·KM nên v0 = (3/4)·Vmax."
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "michaelis-menten",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0002",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Ở điều kiện bão hòa cơ chất, một enzyme có V_max = 2,0·10⁻⁵ M·s⁻¹ với nồng độ enzyme toàn phần [E]_T = 4,0·10⁻⁹ M. Tính số vòng quay k_cat (s⁻¹).",
+      "statement_en": "At substrate saturation, an enzyme shows V_max = 2.0e-5 M·s⁻¹ with total enzyme concentration [E]_T = 4.0e-9 M. Find the turnover number k_cat (s⁻¹).",
+      "answer": "k_cat = 5,0·10³ s⁻¹",
+      "answer_numeric": 5000.0,
+      "answer_unit": "s^-1",
+      "tolerance": 1.0,
+      "solution_steps": [
+        {
+          "explain": "Số vòng quay bằng tốc độ tối đa chia cho nồng độ enzyme toàn phần.",
+          "latex": "k_{cat} = \\frac{V_{max}}{[E]_{T}}"
+        },
+        {
+          "explain": "Thay V_max = 2,0·10⁻⁵ M·s⁻¹ và [E]_T = 4,0·10⁻⁹ M; đơn vị M triệt tiêu, còn lại s⁻¹.",
+          "latex": "k_{cat} = \\frac{2.0\\times 10^{-5}}{4.0\\times 10^{-9}}"
+        },
+        {
+          "explain": "Thực hiện phép chia lũy thừa 10 để có số vòng quay.",
+          "latex": "k_{cat} = 5.0\\times 10^{3}\\ \\mathrm{s^{-1}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.so-vong-quay-kcat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính số vòng quay k_cat",
+        "chia lũy thừa cơ số 10"
+      ],
+      "hints": [
+        "kcat = Vmax/[E]T.",
+        "Chia phần định trị rồi trừ số mũ 10."
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "kcat",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0003",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "trac-nghiem",
+      "statement_vi": "Một enzyme (V_max = 100 µmol·min⁻¹, K_M = 2,0 mM) chịu ức chế cạnh tranh với K_i = 2,0 mM. Khi [S] = 2,0 mM và [I] = 4,0 mM, tốc độ ban đầu v0 bằng bao nhiêu?",
+      "statement_en": "An enzyme (V_max = 100 µmol·min⁻¹, K_M = 2.0 mM) undergoes competitive inhibition with K_i = 2.0 mM. With [S] = 2.0 mM and [I] = 4.0 mM, what is the initial velocity v0?",
+      "answer": "A",
+      "choices": [
+        {
+          "key": "A",
+          "text": "25 µmol·min⁻¹"
+        },
+        {
+          "key": "B",
+          "text": "50 µmol·min⁻¹",
+          "why_wrong": "Bỏ qua chất ức chế (dùng α = 1): v0 = 100·2/(2+2) = 50, quên nhân α vào K_M."
+        },
+        {
+          "key": "C",
+          "text": "33,3 µmol·min⁻¹",
+          "why_wrong": "Tính α = 1 + [I]/K_i sai thành 2 (lấy [I]/K_i = 1 thay vì 2), cho αK_M = 4."
+        },
+        {
+          "key": "D",
+          "text": "16,7 µmol·min⁻¹",
+          "why_wrong": "Nhân α cho cả (K_M + [S]) thay vì chỉ K_M: 100·2/(3·4) = 16,7."
+        }
+      ],
+      "solution_steps": [
+        {
+          "explain": "Ức chế cạnh tranh chỉ làm tăng K_M biểu kiến qua hệ số α; viết công thức và hệ số α.",
+          "latex": "v_{0} = \\frac{V_{max}[S]}{\\alpha K_{M} + [S]},\\qquad \\alpha = 1 + \\frac{[I]}{K_{i}}"
+        },
+        {
+          "explain": "Tính α với [I] = 4,0 mM và K_i = 2,0 mM.",
+          "latex": "\\alpha = 1 + \\frac{4.0}{2.0} = 3.0"
+        },
+        {
+          "explain": "Thay số: αK_M = 3,0·2,0 = 6,0 mM, cộng [S] = 2,0 mM ở mẫu.",
+          "latex": "v_{0} = \\frac{100\\times 2.0}{3.0\\times 2.0 + 2.0} = \\frac{200}{8.0} = 25\\ \\mu\\mathrm{mol\\cdot min^{-1}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.uc-che-canh-tranh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính hệ số α của ức chế cạnh tranh",
+        "phân biệt K_M biểu kiến và K_M thực"
+      ],
+      "hints": [
+        "Chỉ K_M bị nhân α, [S] ở mẫu giữ nguyên.",
+        "α = 1 + [I]/Ki = 3."
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "uc-che-canh-tranh",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0004",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Một bệnh di truyền lặn trên nhiễm sắc thể thường có tần số người mắc bệnh (kiểu gen aa) là 1/10000 trong quần thể cân bằng Hardy - Weinberg. Tính tần số người mang gen dị hợp Aa (biểu thị dưới dạng thập phân).",
+      "statement_en": "An autosomal recessive disease has an affected frequency (aa) of 1/10000 in a Hardy - Weinberg population. Find the frequency of heterozygous carriers Aa (as a decimal).",
+      "answer": "2pq ≈ 0,0198",
+      "answer_numeric": 0.0198,
+      "answer_unit": "",
+      "tolerance": 0.0005,
+      "solution_steps": [
+        {
+          "explain": "Ở cân bằng Hardy - Weinberg, tần số kiểu gen aa bằng q²; từ đó tính tần số alen lặn q.",
+          "latex": "q^{2} = \\frac{1}{10000} \\Rightarrow q = \\sqrt{10^{-4}} = 0.01"
+        },
+        {
+          "explain": "Tần số alen trội p = 1 − q.",
+          "latex": "p = 1 - q = 1 - 0.01 = 0.99"
+        },
+        {
+          "explain": "Tần số dị hợp tử là số hạng 2pq trong khai triển (p+q)².",
+          "latex": "2pq = 2\\times 0.99\\times 0.01 = 0.0198"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.hardy-weinberg-hai-alen"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "suy tần số alen từ tần số kiểu gen lặn",
+        "áp dụng khai triển Hardy - Weinberg"
+      ],
+      "hints": [
+        "q = căn bậc hai của tần số aa.",
+        "Người mang gen là dị hợp Aa, tần số 2pq."
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "hardy-weinberg",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0005",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Với một alen lặn gây chết hoàn toàn (kiểu gen lặn không sinh sản), tần số alen lặn giảm theo q_n = q0/(1 + n·q0). Cần bao nhiêu thế hệ n để tần số alen lặn giảm từ q0 = 0,50 xuống còn q_n = 0,05?",
+      "statement_en": "For a fully lethal recessive allele, the recessive allele frequency declines as q_n = q0/(1 + n·q0). How many generations n are needed to reduce it from q0 = 0.50 to q_n = 0.05?",
+      "answer": "n = 18 thế hệ",
+      "answer_numeric": 18.0,
+      "answer_unit": "thế hệ",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Nghịch đảo công thức chọn lọc alen lặn gây chết để tách số thế hệ n.",
+          "latex": "n = \\frac{1}{q_{n}} - \\frac{1}{q_{0}}"
+        },
+        {
+          "explain": "Thay q_n = 0,05 và q0 = 0,50.",
+          "latex": "n = \\frac{1}{0.05} - \\frac{1}{0.50} = 20 - 2"
+        },
+        {
+          "explain": "Tính hiệu để có số thế hệ cần thiết.",
+          "latex": "n = 18\\ \\text{the he}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.chon-loc-alen-lan-gay-chet"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "biến đổi nghịch đảo công thức chọn lọc",
+        "hiểu chọn lọc chống alen lặn gây chết"
+      ],
+      "hints": [
+        "1/qn − 1/q0 = n.",
+        "1/0,05 = 20; 1/0,50 = 2."
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "chon-loc-tu-nhien",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0006",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Dung dịch NADH đo ở bước sóng 340 nm cho độ hấp thụ A = 0,500 trong cuvette dày l = 1,0 cm. Biết hệ số hấp thụ mol ε = 6220 M⁻¹·cm⁻¹, tính nồng độ NADH (µM) theo định luật Lambert - Beer.",
+      "statement_en": "An NADH solution at 340 nm gives absorbance A = 0.500 in a 1.0 cm cuvette. With molar absorptivity ε = 6220 M⁻¹·cm⁻¹, find the NADH concentration (µM) using the Beer - Lambert law.",
+      "answer": "c ≈ 80,4 µM",
+      "answer_numeric": 80.4,
+      "answer_unit": "µM",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Viết định luật Lambert - Beer và giải ra nồng độ c.",
+          "latex": "A = \\varepsilon\\, l\\, c \\Rightarrow c = \\frac{A}{\\varepsilon\\, l}"
+        },
+        {
+          "explain": "Thay A = 0,500, ε = 6220 M⁻¹·cm⁻¹, l = 1,0 cm.",
+          "latex": "c = \\frac{0.500}{6220\\times 1.0} = 8.04\\times 10^{-5}\\ \\mathrm{M}"
+        },
+        {
+          "explain": "Đổi sang micromol trên lít (1 M = 10⁶ µM).",
+          "latex": "c = 8.04\\times 10^{-5}\\ \\mathrm{M} = 80.4\\ \\mu\\mathrm{M}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.dinh-luat-lambert-beer"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng định luật Lambert - Beer",
+        "đổi đơn vị nồng độ M sang µM"
+      ],
+      "hints": [
+        "c = A/(ε·l).",
+        "0,5/6220 ≈ 8,04·10⁻⁵ M."
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "lambert-beer",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0007",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một mẫu ADN sợi kép được pha loãng 100 lần rồi đo quang, cho A260 = 0,150. Dùng hệ số quy đổi 50 µg·mL⁻¹ cho mỗi đơn vị A260 của dsDNA, tính nồng độ ADN gốc (µg/mL).",
+      "statement_en": "A double-stranded DNA sample diluted 100-fold gives A260 = 0.150. Using the dsDNA factor of 50 µg·mL⁻¹ per A260 unit, find the concentration of the original DNA (µg/mL).",
+      "answer": "C = 750 µg/mL",
+      "answer_numeric": 750.0,
+      "answer_unit": "µg/mL",
+      "tolerance": 1.0,
+      "solution_steps": [
+        {
+          "explain": "Công thức nồng độ dsDNA theo A260 có kèm hệ số pha loãng D.",
+          "latex": "C_{\\mathrm{dsDNA}} = A_{260}\\times 50\\times D"
+        },
+        {
+          "explain": "Thay A260 = 0,150 và D = 100.",
+          "latex": "C_{\\mathrm{dsDNA}} = 0.150\\times 50\\times 100"
+        },
+        {
+          "explain": "Thực hiện phép nhân để ra nồng độ gốc.",
+          "latex": "C_{\\mathrm{dsDNA}} = 750\\ \\mu\\mathrm{g/mL}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.nong-do-adn-a260"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "quy đổi A260 sang nồng độ dsDNA",
+        "nhân hệ số pha loãng"
+      ],
+      "hints": [
+        "C = A260 × 50 × D.",
+        "Đừng quên nhân hệ số pha loãng D = 100."
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "a260",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0008",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Trong thí nghiệm qPCR, gen đích và gen tham chiếu có: mẫu xử lí Ct(đích) = 22, Ct(tc) = 18; mẫu đối chứng Ct(đích) = 25, Ct(tc) = 18. Tính mức biểu hiện tương đối R = 2^(−ΔΔCt) của gen đích ở mẫu xử lí so với đối chứng.",
+      "statement_en": "In a qPCR experiment: treated sample Ct(target) = 22, Ct(ref) = 18; control sample Ct(target) = 25, Ct(ref) = 18. Compute the relative expression R = 2^(−ΔΔCt) of the target in treated vs control.",
+      "answer": "R = 8 (tăng 8 lần)",
+      "answer_numeric": 8.0,
+      "answer_unit": "lần",
+      "tolerance": 0.1,
+      "solution_steps": [
+        {
+          "explain": "Tính ΔCt của từng mẫu bằng Ct(đích) − Ct(tham chiếu).",
+          "latex": "\\Delta C_{t,\\text{xu li}} = 22 - 18 = 4,\\qquad \\Delta C_{t,\\text{doi chung}} = 25 - 18 = 7"
+        },
+        {
+          "explain": "Tính ΔΔCt = ΔCt(xử lí) − ΔCt(đối chứng).",
+          "latex": "\\Delta\\Delta C_{t} = 4 - 7 = -3"
+        },
+        {
+          "explain": "Thay vào công thức định lượng tương đối 2^(−ΔΔCt).",
+          "latex": "R = 2^{-(-3)} = 2^{3} = 8"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.dinh-luong-tuong-doi-ddct"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "chuẩn hóa Ct theo gen tham chiếu",
+        "áp dụng phương pháp 2^(−ΔΔCt)"
+      ],
+      "hints": [
+        "Tính ΔCt cho mỗi mẫu trước.",
+        "ΔΔCt = ΔCt(xử lí) − ΔCt(đối chứng)."
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "qpcr",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0009",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Một mồi PCR có trình tự 5'-ATGCGGCATTACGGCTAGCC-3' (20 nucleotide). Dùng công thức Wallace, tính nhiệt độ nóng chảy T_m (°C).",
+      "statement_en": "A PCR primer has the sequence 5'-ATGCGGCATTACGGCTAGCC-3' (20 nucleotides). Using the Wallace rule, find the melting temperature T_m (°C).",
+      "answer": "T_m = 64 °C",
+      "answer_numeric": 64.0,
+      "answer_unit": "°C",
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "Đếm số base trong mồi: A và T (yếu, 2 liên kết H) và G và C (mạnh, 3 liên kết H). Trình tự có 8 base A/T và 12 base G/C.",
+          "latex": "n_{A}+n_{T} = 8,\\qquad n_{G}+n_{C} = 12"
+        },
+        {
+          "explain": "Áp dụng công thức Wallace: mỗi cặp A/T góp 2 °C, mỗi cặp G/C góp 4 °C.",
+          "latex": "T_{m} = 2(n_{A}+n_{T}) + 4(n_{G}+n_{C})"
+        },
+        {
+          "explain": "Thay số để ra nhiệt độ nóng chảy.",
+          "latex": "T_{m} = 2\\times 8 + 4\\times 12 = 16 + 48 = 64\\ ^{\\circ}\\mathrm{C}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.tm-wallace"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "đếm thành phần base của mồi",
+        "áp dụng quy tắc Wallace"
+      ],
+      "hints": [
+        "Đếm số A+T và số G+C trong 20 nucleotide.",
+        "Tm = 2·(A+T) + 4·(G+C)."
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "tm-wallace",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0010",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Một đoạn ADN sợi kép dài 1500 cặp base (bp) có hàm lượng G + C chiếm 40% số cặp base. Tính tổng số liên kết hydrogen trong đoạn ADN đó.",
+      "statement_en": "A double-stranded DNA fragment of 1500 base pairs (bp) has a G + C content of 40% of the base pairs. Compute the total number of hydrogen bonds in the fragment.",
+      "answer": "H = 3600 liên kết hydrogen",
+      "answer_numeric": 3600.0,
+      "answer_unit": "",
+      "tolerance": 1.0,
+      "solution_steps": [
+        {
+          "explain": "Từ tổng số cặp base, tính số cặp G-C (40%) và số cặp A-T (60%). Số adenine A bằng số cặp A-T, số guanine G bằng số cặp G-C.",
+          "latex": "G = 0.40\\times 1500 = 600,\\qquad A = 0.60\\times 1500 = 900"
+        },
+        {
+          "explain": "Mỗi cặp A-T có 2 liên kết hydrogen, mỗi cặp G-C có 3 liên kết hydrogen.",
+          "latex": "H = 2A + 3G"
+        },
+        {
+          "explain": "Thay số A = 900 và G = 600.",
+          "latex": "H = 2\\times 900 + 3\\times 600 = 1800 + 1800 = 3600"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.lien-ket-hidro-adn"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "phân bổ số cặp base theo %GC",
+        "tính liên kết hydrogen theo quy tắc Chargaff"
+      ],
+      "hints": [
+        "Số cặp G-C = 40% của 1500; còn lại là A-T.",
+        "H = 2A + 3G, với A, G là số cặp tương ứng."
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "chargaff",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0011",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Nhiệt động hóa sinh",
+      "type": "dien-so",
+      "statement_vi": "Một phản ứng sinh hóa ở nhiệt độ cơ thể T = 310 K có ΔH = −20,0 kJ·mol⁻¹ và ΔS = +50,0 J·mol⁻¹·K⁻¹. Tính biến thiên năng lượng tự do Gibbs ΔG (kJ·mol⁻¹).",
+      "statement_en": "A biochemical reaction at body temperature T = 310 K has ΔH = −20.0 kJ·mol⁻¹ and ΔS = +50.0 J·mol⁻¹·K⁻¹. Compute the Gibbs free energy change ΔG (kJ·mol⁻¹).",
+      "answer": "ΔG = −35,5 kJ·mol⁻¹",
+      "answer_numeric": -35.5,
+      "answer_unit": "kJ/mol",
+      "tolerance": 0.2,
+      "solution_steps": [
+        {
+          "explain": "Viết phương trình Gibbs. Chú ý ΔH tính bằng kJ nhưng ΔS bằng J, phải quy về cùng đơn vị.",
+          "latex": "\\Delta G = \\Delta H - T\\Delta S"
+        },
+        {
+          "explain": "Đổi ΔS = 50,0 J·mol⁻¹·K⁻¹ = 0,0500 kJ·mol⁻¹·K⁻¹ rồi thay số.",
+          "latex": "\\Delta G = -20.0 - 310\\times 0.0500"
+        },
+        {
+          "explain": "Tính tích T·ΔS = 15,5 kJ·mol⁻¹ rồi trừ.",
+          "latex": "\\Delta G = -20.0 - 15.5 = -35.5\\ \\mathrm{kJ\\cdot mol^{-1}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.nhiet-dong-hoa-sinh.gibbs-helmholtz"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng ΔG = ΔH − TΔS",
+        "đồng nhất đơn vị J và kJ"
+      ],
+      "hints": [
+        "Đổi ΔS về kJ trước khi nhân với T.",
+        "T·ΔS = 310 × 0,05 = 15,5 kJ/mol."
+      ],
+      "tags": [
+        "nhiet-dong-hoa-sinh",
+        "gibbs",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0012",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Nhiệt động hóa sinh",
+      "type": "dien-so",
+      "statement_vi": "Một phản ứng sinh hóa ở T = 298 K có hằng số cân bằng K'_eq = 1000. Cho R = 8,314 J·mol⁻¹·K⁻¹. Tính biến thiên năng lượng tự do chuẩn ΔG°' (kJ·mol⁻¹).",
+      "statement_en": "A biochemical reaction at T = 298 K has equilibrium constant K'_eq = 1000. With R = 8.314 J·mol⁻¹·K⁻¹, compute the standard free energy change ΔG°' (kJ·mol⁻¹).",
+      "answer": "ΔG°' ≈ −17,1 kJ·mol⁻¹",
+      "answer_numeric": -17.1,
+      "answer_unit": "kJ/mol",
+      "tolerance": 0.3,
+      "solution_steps": [
+        {
+          "explain": "Liên hệ giữa năng lượng tự do chuẩn và hằng số cân bằng.",
+          "latex": "\\Delta G^{0\\prime} = -RT\\ln K'_{eq}"
+        },
+        {
+          "explain": "Tính ln(1000) = 3·ln(10) ≈ 6,908 rồi thay R = 8,314 và T = 298.",
+          "latex": "\\Delta G^{0\\prime} = -8.314\\times 298\\times \\ln(1000)"
+        },
+        {
+          "explain": "Nhân các thừa số và đổi J sang kJ.",
+          "latex": "\\Delta G^{0\\prime} = -8.314\\times 298\\times 6.908 \\approx -1.71\\times 10^{4}\\ \\mathrm{J\\cdot mol^{-1}} = -17.1\\ \\mathrm{kJ\\cdot mol^{-1}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.nhiet-dong-hoa-sinh.nang-luong-tu-do-chuan-va-hang-so-can-bang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng ΔG°' = −RT ln K'eq",
+        "tính logarit tự nhiên của lũy thừa 10"
+      ],
+      "hints": [
+        "ln(1000) ≈ 6,91.",
+        "Kết quả ra J/mol, nhớ đổi sang kJ/mol."
+      ],
+      "tags": [
+        "nhiet-dong-hoa-sinh",
+        "hang-so-can-bang",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0013",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Nhiệt động hóa sinh",
+      "type": "trac-nghiem",
+      "statement_vi": "Trong chuỗi vận chuyển electron, cặp cho electron NAD⁺/NADH có E°' = −0,320 V và cặp nhận ½O₂/H₂O có E°' = +0,816 V, với n = 2 electron. Cho F = 96485 C·mol⁻¹. Biến thiên năng lượng tự do chuẩn ΔG°' của phản ứng chuyển 2 electron từ NADH đến O₂ xấp xỉ bằng bao nhiêu?",
+      "statement_en": "In the electron transport chain, the donor couple NAD⁺/NADH has E°' = −0.320 V and the acceptor couple ½O₂/H₂O has E°' = +0.816 V, with n = 2. With F = 96485 C·mol⁻¹, the standard free energy change ΔG°' for transferring 2 electrons from NADH to O₂ is approximately:",
+      "answer": "A",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−219 kJ·mol⁻¹"
+        },
+        {
+          "key": "B",
+          "text": "+219 kJ·mol⁻¹",
+          "why_wrong": "Quên dấu trừ trong ΔG°' = −nFΔE°'; ΔE°' dương làm ΔG°' phải âm (phản ứng tỏa năng lượng)."
+        },
+        {
+          "key": "C",
+          "text": "−110 kJ·mol⁻¹",
+          "why_wrong": "Bỏ sót số electron n = 2, chỉ nhân với n = 1."
+        },
+        {
+          "key": "D",
+          "text": "−158 kJ·mol⁻¹",
+          "why_wrong": "Chỉ dùng E°' = +0,816 V của chất nhận, quên trừ E°' = −0,320 V của chất cho, nên ΔE°' bị tính thiếu."
+        }
+      ],
+      "solution_steps": [
+        {
+          "explain": "Tính hiệu thế khử chuẩn: E°'(chất nhận) − E°'(chất cho).",
+          "latex": "\\Delta E^{0\\prime} = E^{0\\prime}_{\\text{nhan}} - E^{0\\prime}_{\\text{cho}} = 0.816 - (-0.320) = 1.136\\ \\mathrm{V}"
+        },
+        {
+          "explain": "Áp dụng liên hệ giữa năng lượng tự do chuẩn và hiệu thế khử.",
+          "latex": "\\Delta G^{0\\prime} = -nF\\,\\Delta E^{0\\prime}"
+        },
+        {
+          "explain": "Thay n = 2, F = 96485 C·mol⁻¹ và ΔE°' = 1,136 V.",
+          "latex": "\\Delta G^{0\\prime} = -2\\times 96485\\times 1.136 \\approx -2.19\\times 10^{5}\\ \\mathrm{J\\cdot mol^{-1}} = -219\\ \\mathrm{kJ\\cdot mol^{-1}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.nhiet-dong-hoa-sinh.nang-luong-tu-do-va-the-khu"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính ΔE°' từ hai cặp oxi hóa - khử",
+        "áp dụng ΔG°' = −nFΔE°'"
+      ],
+      "hints": [
+        "ΔE°' = E°'(nhận) − E°'(cho) = 1,136 V.",
+        "1 V·C = 1 J; kết quả ra ~2,19·10⁵ J/mol."
+      ],
+      "tags": [
+        "nhiet-dong-hoa-sinh",
+        "the-khu",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0014",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Nhiệt động hóa sinh",
+      "type": "dien-so",
+      "statement_vi": "Một dung dịch đệm acetat có nồng độ dạng base liên hợp [A⁻] = 0,30 M và dạng acid [HA] = 0,10 M. Biết pK_a của acid acetic là 4,76, tính pH của dung dịch đệm theo phương trình Henderson - Hasselbalch.",
+      "statement_en": "An acetate buffer has conjugate base [A⁻] = 0.30 M and acid form [HA] = 0.10 M. With pK_a of acetic acid = 4.76, find the buffer pH using the Henderson - Hasselbalch equation.",
+      "answer": "pH ≈ 5,24",
+      "answer_numeric": 5.24,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "solution_steps": [
+        {
+          "explain": "Viết phương trình Henderson - Hasselbalch cho hệ đệm.",
+          "latex": "\\mathrm{pH} = \\mathrm{p}K_{a} + \\log_{10}\\frac{[\\mathrm{A}^{-}]}{[\\mathrm{HA}]}"
+        },
+        {
+          "explain": "Tính tỉ số base/acid = 0,30/0,10 = 3 và lấy log10(3) ≈ 0,477.",
+          "latex": "\\log_{10}\\frac{0.30}{0.10} = \\log_{10}3 \\approx 0.477"
+        },
+        {
+          "explain": "Cộng vào pK_a để có pH.",
+          "latex": "\\mathrm{pH} = 4.76 + 0.477 \\approx 5.24"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.nhiet-dong-hoa-sinh.henderson-hasselbalch"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng phương trình Henderson - Hasselbalch",
+        "tính logarit thập phân của tỉ số"
+      ],
+      "hints": [
+        "pH = pKa + log([A⁻]/[HA]).",
+        "log10(3) ≈ 0,477."
+      ],
+      "tags": [
+        "nhiet-dong-hoa-sinh",
+        "henderson-hasselbalch",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0015",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "Ước lượng kích thước quần thể bằng phương pháp bắt - đánh dấu - bắt lại: lần đầu bắt và đánh dấu M = 80 cá thể; lần hai bắt C = 100 cá thể, trong đó có R = 25 cá thể mang dấu. Tính kích thước quần thể ước lượng N theo chỉ số Lincoln - Petersen.",
+      "statement_en": "Estimate population size by mark - recapture: first capture and mark M = 80 individuals; second capture C = 100 individuals of which R = 25 are marked. Compute the Lincoln - Petersen population estimate N.",
+      "answer": "N = 320 cá thể",
+      "answer_numeric": 320.0,
+      "answer_unit": "cá thể",
+      "tolerance": 1.0,
+      "solution_steps": [
+        {
+          "explain": "Chỉ số Lincoln - Petersen giả định tỉ lệ cá thể mang dấu trong lần bắt lại phản ánh tỉ lệ cá thể đã đánh dấu trong toàn quần thể.",
+          "latex": "\\hat{N} = \\frac{M\\times C}{R}"
+        },
+        {
+          "explain": "Thay M = 80, C = 100, R = 25.",
+          "latex": "\\hat{N} = \\frac{80\\times 100}{25} = \\frac{8000}{25}"
+        },
+        {
+          "explain": "Thực hiện phép chia để có kích thước quần thể ước lượng.",
+          "latex": "\\hat{N} = 320\\ \\text{ca the}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.lincoln-petersen"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng phương pháp bắt - đánh dấu - bắt lại",
+        "tính chỉ số Lincoln - Petersen"
+      ],
+      "hints": [
+        "N = M·C/R.",
+        "Tỉ lệ cá thể mang dấu R/C = M/N."
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "lincoln-petersen",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0016",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "Một quần xã gồm 4 loài với số cá thể lần lượt là 40, 30, 20, 10 (tổng 100 cá thể). Tính chỉ số đa dạng Shannon - Wiener H' (dùng logarit tự nhiên).",
+      "statement_en": "A community has 4 species with 40, 30, 20, 10 individuals (total 100). Compute the Shannon - Wiener diversity index H' (natural log).",
+      "answer": "H' ≈ 1,28",
+      "answer_numeric": 1.28,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "solution_steps": [
+        {
+          "explain": "Tính tỉ lệ p_i = n_i/N cho từng loài.",
+          "latex": "p_{1}=0.40,\\ p_{2}=0.30,\\ p_{3}=0.20,\\ p_{4}=0.10"
+        },
+        {
+          "explain": "Viết công thức chỉ số Shannon với logarit tự nhiên.",
+          "latex": "H' = -\\sum_{i=1}^{S} p_{i}\\ln p_{i}"
+        },
+        {
+          "explain": "Tính từng số hạng: −0,40·ln0,40 = 0,3665; −0,30·ln0,30 = 0,3612; −0,20·ln0,20 = 0,3219; −0,10·ln0,10 = 0,2303 rồi cộng lại.",
+          "latex": "H' = 0.3665 + 0.3612 + 0.3219 + 0.2303 \\approx 1.28"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.chi-so-shannon"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính tỉ lệ phong phú tương đối",
+        "áp dụng chỉ số Shannon - Wiener"
+      ],
+      "hints": [
+        "p_i = n_i / 100.",
+        "H' = −Σ p_i·ln p_i, cộng bốn số hạng."
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "shannon",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0017",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "trac-nghiem",
+      "statement_vi": "Ở 37 °C, điện thế cân bằng của một ion tính theo E_ion(mV) = (61,5/z)·log₁₀([C]_ngoài/[C]_trong). Với ion Na⁺ (z = +1), nồng độ ngoài [Na⁺]_o = 145 mM và trong [Na⁺]_i = 15 mM, điện thế cân bằng E_Na xấp xỉ bằng:",
+      "statement_en": "At 37 °C, the equilibrium potential of an ion is E_ion(mV) = (61.5/z)·log10([C]_out/[C]_in). For Na⁺ (z = +1) with [Na⁺]_o = 145 mM and [Na⁺]_i = 15 mM, E_Na is approximately:",
+      "answer": "A",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+61 mV"
+        },
+        {
+          "key": "B",
+          "text": "−61 mV",
+          "why_wrong": "Đảo ngược tỉ số nồng độ, lấy log10([trong]/[ngoài]) làm đổi dấu; với cation, [ngoài] > [trong] nên E phải dương."
+        },
+        {
+          "key": "C",
+          "text": "+30 mV",
+          "why_wrong": "Nhầm điện tích z = 2 cho Na⁺; thực tế Na⁺ chỉ mang điện tích +1 nên không chia đôi hệ số."
+        },
+        {
+          "key": "D",
+          "text": "+26 mV",
+          "why_wrong": "Dùng hệ số RT/F ≈ 26,7 mV nhân với log10 thay vì ln; hệ số 61,5 mV đã bao gồm thừa số 2,303 để dùng trực tiếp với log10."
+        }
+      ],
+      "solution_steps": [
+        {
+          "explain": "Với z = +1, hệ số 61,5/z = 61,5 mV; tính tỉ số nồng độ ngoài/trong.",
+          "latex": "\\frac{[Na^{+}]_{o}}{[Na^{+}]_{i}} = \\frac{145}{15} \\approx 9.67"
+        },
+        {
+          "explain": "Lấy logarit thập phân của tỉ số.",
+          "latex": "\\log_{10}(9.67) \\approx 0.985"
+        },
+        {
+          "explain": "Nhân với hệ số 61,5 mV để có điện thế cân bằng.",
+          "latex": "E_{Na} = 61.5\\times 0.985 \\approx 60.6\\ \\mathrm{mV} \\approx +61\\ \\mathrm{mV}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.nernst-dien-the-can-bang-ion"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng phương trình Nernst cho ion",
+        "xác định dấu điện thế cân bằng"
+      ],
+      "hints": [
+        "z = +1 nên hệ số là 61,5 mV.",
+        "log10(145/15) ≈ 0,985."
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "nernst",
+        "vn-gdpt-2018"
+      ]
+    },
+    {
+      "id": "prob.biology.ext3-biology-daihoc.0018",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thống kê sinh học",
+      "type": "tu-luan",
+      "statement_vi": "Một xét nghiệm sàng lọc cho kết quả trên nhóm chuẩn: 90 dương thật (TP), 10 âm giả (FN), 880 âm thật (TN), 20 dương giả (FP). (a) Tính độ nhạy Se và độ đặc hiệu Sp. (b) Nếu tỉ lệ mắc bệnh trong cộng đồng là P = 0,10, tính giá trị tiên đoán dương PPV.",
+      "statement_en": "A screening test on a reference group gives: 90 true positives (TP), 10 false negatives (FN), 880 true negatives (TN), 20 false positives (FP). (a) Compute sensitivity Se and specificity Sp. (b) If disease prevalence is P = 0.10, compute the positive predictive value PPV.",
+      "answer": "Se = 0,90; Sp ≈ 0,978; PPV ≈ 0,818 (81,8%)",
+      "answer_unit": "",
+      "solution_steps": [
+        {
+          "explain": "Độ nhạy là tỉ lệ người bệnh có kết quả dương: TP/(TP+FN).",
+          "latex": "Se = \\frac{TP}{TP + FN} = \\frac{90}{90 + 10} = 0.90"
+        },
+        {
+          "explain": "Độ đặc hiệu là tỉ lệ người không bệnh có kết quả âm: TN/(TN+FP).",
+          "latex": "Sp = \\frac{TN}{TN + FP} = \\frac{880}{880 + 20} = \\frac{880}{900} \\approx 0.978"
+        },
+        {
+          "explain": "Giá trị tiên đoán dương phụ thuộc tỉ lệ mắc P; áp dụng định lí Bayes với Se, Sp và P = 0,10.",
+          "latex": "PPV = \\frac{Se\\cdot P}{Se\\cdot P + (1-Sp)(1-P)}"
+        },
+        {
+          "explain": "Thay số: tử = 0,90·0,10 = 0,090; mẫu = 0,090 + (1−0,978)·0,90 = 0,090 + 0,020 = 0,110.",
+          "latex": "PPV = \\frac{0.090}{0.090 + 0.0222\\times 0.90} = \\frac{0.090}{0.110} \\approx 0.818"
+        },
+        {
+          "explain": "Vậy dù độ nhạy và độ đặc hiệu đều cao, PPV chỉ khoảng 81,8% vì tỉ lệ mắc trong cộng đồng thấp làm tăng ảnh hưởng của dương giả.",
+          "latex": "PPV \\approx 81.8\\%"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.thong-ke-sinh-hoc.do-nhay-do-dac-hieu",
+        "biology.dai-hoc.thong-ke-sinh-hoc.gia-tri-tien-doan"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 7,
+      "skills": [
+        "tính độ nhạy và độ đặc hiệu",
+        "tính PPV theo định lí Bayes phụ thuộc tỉ lệ mắc"
+      ],
+      "hints": [
+        "Se = TP/(TP+FN); Sp = TN/(TN+FP).",
+        "PPV = Se·P / [Se·P + (1−Sp)(1−P)]."
+      ],
+      "tags": [
+        "thong-ke-sinh-hoc",
+        "do-nhay-do-dac-hieu",
+        "gia-tri-tien-doan"
+      ]
+    }
+  ]
+}

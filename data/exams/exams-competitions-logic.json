@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "file": "exams-competitions-logic.json",
+    "title": "Hồ sơ các kỳ thi Toán & Tư duy Logic quốc tế - AMC, AIME, Kangaroo, SASMO, Putnam",
+    "count": 5
+  },
+  "exams": [
+    {
+      "id": "exam.amc-10-12",
+      "name": "AMC 10 / AMC 12 (American Mathematics Competitions)",
+      "provider": "Mathematical Association of America (MAA)",
+      "subject": "math",
+      "curriculum": [
+        "olympiad",
+        "intl-undergrad"
+      ],
+      "level": "thpt",
+      "overview": "American Mathematics Competitions 10 và 12 (AMC 10/12) là các kỳ thi trắc nghiệm tư duy toán học và logic chuẩn mực hàng đầu thế giới do Hiệp hội Toán học Hoa Kỳ (MAA) tổ chức. Đề thi gồm 25 câu hỏi trắc nghiệm trong 75 phút, không được sử dụng máy tính. AMC 10 dành cho học sinh lớp 10 trở xuống (kiến thức đại số, hình học cơ bản, số học sơ cấp, tổ hợp logic), còn AMC 12 dành cho học sinh lớp 12 trở xuống (bổ sung lượng giác, số phức, logarit nhưng không có giải tích vi tích phân). Thí sinh đạt điểm số top 2.5% (AMC 10) hoặc top 5% (AMC 12) sẽ được mời tham dự kỳ thi AIME (American Invitational Mathematics Examination).",
+      "sections": [
+        {
+          "name": "Toàn bộ bài thi (25 câu trắc nghiệm 5 lựa chọn)",
+          "question_count": "25",
+          "duration_minutes": 75,
+          "weight_percent": 100,
+          "calculator": "khong-cho-phep",
+          "note": "25 câu trắc nghiệm 5 phương án A-E. Đúng được 6 điểm, bỏ trống được 1.5 điểm, sai được 0 điểm. Tổng điểm tối đa 150 điểm."
+        }
+      ],
+      "topic_weights": {
+        "Đại số và Hàm số": 30,
+        "Số học và Tính chia hết": 20,
+        "Tổ hợp, Đếm và Tư duy Logic": 25,
+        "Hình học Euclid và Tọa độ": 25
+      },
+      "question_types": [
+        {
+          "name": "Câu tư duy logic và tổ hợp đếm",
+          "description": "Bài toán đòi hỏi phân tích trường hợp có hệ thống, sử dụng quy tắc cộng/nhân, bù trừ, nguyên lý Dirichlet hoặc tìm quy luật bất biến.",
+          "example_prompt": "Có bao nhiêu tập con của {1, 2, ..., 10} chứa ít nhất một số chẵn?",
+          "approach": "Sử dụng nguyên lý bù trừ: Tổng số tập con trừ đi số tập con chỉ gồm toàn các số lẻ."
+        },
+        {
+          "name": "Câu hình học và tính toán đại số nhanh",
+          "description": "Kết hợp định lý hình học (Pythagore, đồng dạng, diện tích) với biến đổi đại số tốc độ cao mà không có máy tính bỏ túi.",
+          "example_prompt": "Tính diện tích hình tròn nội tiếp một tam giác vuông có các cạnh 9, 12, 15.",
+          "approach": "Dùng công thức bán kính đường tròn nội tiếp r = (a + b - c)/2 cho tam giác vuông hoặc S = p * r."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bất kỳ bảng công thức nào. Thí sinh phải ghi nhớ toàn bộ các công thức đại số, lượng giác, hình học và tổ hợp."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong",
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan",
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.chinh-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.nhi-thuc-newton"
+      ],
+      "scoring": {
+        "description": "Mỗi câu đúng được 6 điểm. Mỗi câu không trả lời (bỏ trống) được 1.5 điểm. Câu trả lời sai được 0 điểm. Thang điểm từ 0 đến 150. Quy tắc chấm thưởng cho câu bỏ trống nhằm giảm thiểu yếu tố đoán mò may rủi.",
+        "scale": "0 - 150 điểm",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Không đoán mò nếu không loại trừ được ít nhất 3 phương án sai, vì bỏ trống được 1.5 điểm trong khi sai 0 điểm.",
+        "Phân chia thời gian hợp lý: 10 câu đầu giải nhanh trong 20 phút, câu 11-20 dành 35 phút, 5 câu cuối dành 20 phút.",
+        "Tận dụng tính chất chẵn lẻ, chữ số tận cùng và phép thử giá trị biên để kiểm tra nhanh kết quả."
+      ],
+      "common_traps": [
+        "Đoán bừa khi hoàn toàn không có cơ sở, làm mất 1.5 điểm thưởng cho câu bỏ trống.",
+        "Đếm trùng hoặc bỏ sót trường hợp trong các bài toán tổ hợp phân loại.",
+        "Không đọc kỹ yêu cầu đề bài (ví dụ: hỏi số lẻ nhỏ nhất nhưng lại tìm số lớn nhất)."
+      ],
+      "tags": [
+        "amc",
+        "amc-10",
+        "amc-12",
+        "olympiad",
+        "logic",
+        "toan-quoc-te"
+      ]
+    },
+    {
+      "id": "exam.aime",
+      "name": "AIME (American Invitational Mathematics Examination)",
+      "provider": "Mathematical Association of America (MAA)",
+      "subject": "math",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "AIME là kỳ thi toán học danh giá vòng 2 của Hoa Kỳ dành cho các học sinh đạt điểm cao nhất tại AMC 10 (top 2.5%) và AMC 12 (top 5%). Đề thi gồm 15 bài toán điền số nguyên từ 000 đến 999 trong thời gian 180 phút (3 giờ), không có lựa chọn trắc nghiệm và không dùng máy tính. Các bài toán có độ khó tăng dần và đòi hỏi tư duy phân tích sâu sắc, kỹ năng tính toán chuẩn xác và khả năng tổng hợp liên phân môn.",
+      "sections": [
+        {
+          "name": "Toàn bộ bài thi 15 câu điền số nguyên (000-999)",
+          "question_count": "15",
+          "duration_minutes": 180,
+          "weight_percent": 100,
+          "calculator": "khong-cho-phep",
+          "note": "15 câu hỏi điền đáp số là số nguyên từ 000 đến 999. Mỗi câu đúng 1 điểm, sai hoặc bỏ trống 0 điểm. Tổng điểm tối đa 15 điểm."
+        }
+      ],
+      "topic_weights": {
+        "Đại số nâng cao và Đa thức": 25,
+        "Số học và Phương trình Diophantine": 25,
+        "Tổ hợp, Xác suất và Đếm nâng cao": 25,
+        "Hình học phẳng và Không gian": 25
+      },
+      "question_types": [
+        {
+          "name": "Bài toán điền số nguyên (000 - 999)",
+          "description": "Các bài toán tự luận nhưng chỉ yêu cầu điền kết quả số nguyên 3 chữ số, đòi hỏi biến đổi chặt chẽ để rút gọn ra kết quả chuẩn.",
+          "example_prompt": "Tìm số các hoán vị của (1, 2, ..., 6) sao cho không có hai phần tử kề nhau nào có tổng là số lẻ.",
+          "approach": "Phân tích cấu trúc chẵn - lẻ của tập hợp, đếm số cách sắp xếp các phần tử chẵn và lẻ riêng biệt."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Không cấp bảng công thức. Thí sinh phải tự chủ toàn bộ kiến thức toán THPT và kiến thức chuyên toán."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.imo-to-hop.hang-dang-thuc-vandermonde",
+        "math.thpt.imo-so-hoc.dinh-li-wilson",
+        "math.thpt.imo-hinh-hoc.dinh-li-ptolemy",
+        "math.thpt.imo-hinh-hoc.dinh-li-ceva"
+      ],
+      "scoring": {
+        "description": "Mỗi câu trả lời đúng được 1 điểm, không trừ điểm câu sai hoặc bỏ trống. Điểm bài thi nằm trong khoảng 0 đến 15.",
+        "scale": "0 - 15 điểm",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Tập trung giải chắc chắn 6-8 câu đầu để đạt điểm nền tảng vững chắc.",
+        "Trình bày nháp mạch lạc theo từng bài để dễ dàng dò lại các phép tính số học phức tạp.",
+        "Nếu kết quả ra phân số tối giản p/q, luôn kiểm tra xem đề bài yêu cầu tìm p + q hay giá trị nào khác."
+      ],
+      "common_traps": [
+        "Sai sót trong các phép tính số học lớn ở bước cuối cùng.",
+        "Không rút gọn phân số về dạng tối giản trước khi tính tổng tử số và mẫu số theo yêu cầu."
+      ],
+      "tags": [
+        "aime",
+        "olympiad",
+        "toan-quoc-te",
+        "logic",
+        "dien-so"
+      ]
+    },
+    {
+      "id": "exam.kangaroo-math",
+      "name": "IKMC (International Kangaroo Mathematics Contest)",
+      "provider": "Association Kangourou sans Frontières (AKSF)",
+      "subject": "math",
+      "curriculum": [
+        "olympiad",
+        "vn-gdpt-2018"
+      ],
+      "level": "thpt",
+      "overview": "Kỳ thi Toán Quốc tế Kangaroo (IKMC) là phong trào toán học lớn nhất thế giới với hơn 6 triệu học sinh từ hơn 80 quốc gia tham gia hàng năm. Đề thi gồm các câu hỏi trắc nghiệm trực quan, tư duy logic, hình học không gian, mô hình gấp giấy, và câu đố toán học đời sống sinh động, được chia theo các cấp độ từ lớp 1 đến lớp 12 (Ecolier, Benjamin, Cadet, Junior, Student).",
+      "sections": [
+        {
+          "name": "Bài thi trắc nghiệm IKMC Cadet / Junior / Student",
+          "question_count": "30",
+          "duration_minutes": 75,
+          "weight_percent": 100,
+          "calculator": "khong-cho-phep",
+          "note": "30 câu trắc nghiệm chia làm 3 phần: 10 câu 3 điểm (dễ), 10 câu 4 điểm (trung bình), 10 câu 5 điểm (tư duy nâng cao). Điểm tối đa 120 hoặc 150 điểm tùy cấp lớp."
+        }
+      ],
+      "topic_weights": {
+        "Tư duy Logic và Câu đố Quy luật": 35,
+        "Hình học Trực quan và Không gian": 30,
+        "Số học và Đại số Thực tế": 20,
+        "Tổ hợp Rời rạc": 15
+      },
+      "question_types": [
+        {
+          "name": "Câu đố logic hình ảnh và mô hình không gian",
+          "description": "Các bài toán xoay khối lập phương, gấp mở giấy, quy luật chuỗi hình, tìm mảnh ghép phù hợp.",
+          "example_prompt": "Một khối lập phương được sơn 6 màu khác nhau. Khi trải phẳng khối ra thành hình chữ thập, mặt đối diện với mặt đỏ là mặt màu gì?",
+          "approach": "Sử dụng trí tưởng tượng không gian và tính chất đối xứng của hình trải phẳng khối đa diện."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Không cấp bảng công thức. Đề bài đề cao tư duy logic và suy luận trực giác hơn là học thuộc công thức."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong",
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan"
+      ],
+      "scoring": {
+        "description": "Câu đúng được cộng điểm tương ứng (3, 4, hoặc 5 điểm). Thí sinh được cấp sẵn điểm khởi đầu (thường là 30 điểm) để tránh điểm âm khi bị trừ điểm do trả lời sai (trừ 1/4 số điểm của câu).",
+        "scale": "0 - 150 điểm",
+        "penalty_for_wrong": true
+      },
+      "strategies": [
+        "Đọc kỹ các chi tiết thị giác và hình vẽ minh họa trong đề thi.",
+        "Ưu tiên giải quyết nhanh các câu 3 điểm và 4 điểm trước khi chuyển sang các bài toán logic 5 điểm.",
+        "Sử dụng phương pháp loại trừ nhanh các phương án hình học không thể xảy ra."
+      ],
+      "common_traps": [
+        "Bỏ qua các trường hợp xoay góc nhìn hoặc lật ngược mặt phẳng của khối hình.",
+        "Vội vàng kết luận quy luật dãy số/hình vẽ khi mới chỉ kiểm tra qua 1-2 phần tử đầu."
+      ],
+      "tags": [
+        "kangaroo",
+        "ikmc",
+        "logic",
+        "olympiad",
+        "hinh-hoc-truc-quan"
+      ]
+    },
+    {
+      "id": "exam.sasmo",
+      "name": "SASMO (Singapore and Asian Schools Math Olympiad)",
+      "provider": "Singapore International Math Contests Centre (SIMCC)",
+      "subject": "math",
+      "curriculum": [
+        "olympiad"
+      ],
+      "level": "thpt",
+      "overview": "Singapore and Asian Schools Math Olympiad (SASMO) là một trong những kỳ thi toán Olympic lớn nhất châu Á dành cho học sinh từ lớp 2 đến lớp 12. Kỳ thi kết hợp giữa toán học nhà trường và toán Olympic logic theo phong cách Singapore (Bar Modeling, Logical Deduction, Number Patterns, Cryptarithmetic). Đề gồm 2 phần: Phần A trắc nghiệm và Phần B điền đáp số.",
+      "sections": [
+        {
+          "name": "Phần A (15 câu trắc nghiệm) + Phần B (10 câu điền đáp số)",
+          "question_count": "25",
+          "duration_minutes": 90,
+          "weight_percent": 100,
+          "calculator": "khong-cho-phep",
+          "note": "Phần A: 15 câu trắc nghiệm (2 điểm/câu, sai trừ 1 điểm, bỏ trống 0 điểm). Phần B: 10 câu điền đáp số (4 điểm/câu, không trừ điểm câu sai). Tổng điểm khởi đầu 15 điểm, điểm tối đa 85 điểm."
+        }
+      ],
+      "topic_weights": {
+        "Suy luận Logic và Người nói dối / Thật": 25,
+        "Số học, Quy luật số và Phép toán mã hoá (Cryptarithm)": 30,
+        "Tổ hợp, Đếm và Nguyên lý Dirichlet": 25,
+        "Hình học Chu vi và Diện tích": 20
+      },
+      "question_types": [
+        {
+          "name": "Bài toán suy luận logic (Logic Grid / Deduction)",
+          "description": "Suy luận logic dựa trên các phát biểu thật - giả, vị trí xếp hạng hoặc phân tích giả thiết loại trừ.",
+          "example_prompt": "Trong 4 bạn A, B, C, D có một bạn làm vỡ cửa kính. A nói 'B làm'. B nói 'D làm'. C nói 'Tôi không làm'. D nói 'B nói dối'. Biết chỉ có duy nhất một bạn nói thật, hỏi ai là người làm vỡ kính?",
+          "approach": "Lập bảng chân lý xét từng trường hợp ai là người nói thật, kiểm tra tính mâu thuẫn để suy ra thủ phạm."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Không cấp bảng công thức. Đề bài tập trung vào phương pháp tư duy và giải quyết vấn đề."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong",
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan"
+      ],
+      "scoring": {
+        "description": "Khởi đầu 15 điểm. Phần A đúng +2 điểm, sai -1 điểm, bỏ trống 0 điểm. Phần B đúng +4 điểm, sai hoặc bỏ 0 điểm. Tổng điểm tối đa 85 điểm.",
+        "scale": "0 - 85 điểm",
+        "penalty_for_wrong": true
+      },
+      "strategies": [
+        "Tại Phần A, không đoán mò bừa bãi vì bị trừ 1 điểm khi sai.",
+        "Tại Phần B, luôn cố gắng điền đáp số cho tất cả 10 câu vì không bị phạt điểm câu sai.",
+        "Dùng phương pháp sơ đồ đoạn thẳng (Bar Model) để trực quan hóa bài toán lời văn."
+      ],
+      "common_traps": [
+        "Quên tính điểm trừ ở phần trắc nghiệm A.",
+        "Thiếu bước kiểm tra lại bảng chân lý logic xem có xuất hiện mâu thuẫn phụ hay không."
+      ],
+      "tags": [
+        "sasmo",
+        "singapore-math",
+        "logic",
+        "olympiad",
+        "toan-olympic"
+      ]
+    },
+    {
+      "id": "exam.putnam",
+      "name": "Putnam Competition (William Lowell Putnam Mathematical Competition)",
+      "provider": "Mathematical Association of America (MAA)",
+      "subject": "math",
+      "curriculum": [
+        "olympiad",
+        "intl-undergrad"
+      ],
+      "level": "dai-hoc",
+      "overview": "Kỳ thi Toán học William Lowell Putnam là kỳ thi toán đại học thường niên danh giá và thử thách nhất tại Bắc Mỹ (Mỹ và Canada) dành cho sinh viên bậc cử nhân. Kỳ thi diễn ra vào thứ Bảy đầu tiên của tháng 12 gồm 2 ca thi (Sáng: 6 bài A1-A6; Chiều: 6 bài B1-B6), mỗi ca 3 giờ. Mỗi bài chấm thang 0-10 điểm, tối đa 120 điểm. Kỳ thi nổi tiếng với độ khó cực cao (điểm trung vị toàn Bắc Mỹ thường là 0 đến 1 điểm trên tổng số 120). Nội dung kiểm tra tư duy toán học thuần túy: đại số trừu tượng, giải tích thực/phức, lý thuyết đồ thị, đại số tuyến tính, số học và lý thuyết trò chơi.",
+      "sections": [
+        {
+          "name": "Phiên sáng (Session A: Bài A1 đến A6)",
+          "question_count": "6",
+          "duration_minutes": 180,
+          "weight_percent": 50,
+          "calculator": "khong-cho-phep",
+          "note": "6 bài toán tự luận chứng minh hoặc tính toán giá trị chính xác. Mỗi bài tối đa 10 điểm (thường chỉ cho 0, 1-2 điểm nếu có ý tưởng nhỏ, 8-9 điểm nếu gần hoàn chỉnh, 10 điểm cho chứng minh hoàn hảo)."
+        },
+        {
+          "name": "Phiên chiều (Session B: Bài B1 đến B6)",
+          "question_count": "6",
+          "duration_minutes": 180,
+          "weight_percent": 50,
+          "calculator": "khong-cho-phep",
+          "note": "6 bài toán tự luận chứng minh hoặc tính toán giá trị chính xác. Mỗi bài tối đa 10 điểm."
+        }
+      ],
+      "topic_weights": {
+        "Đại số tuyến tính và Ma trận": 20,
+        "Giải tích thực và Tích phân": 25,
+        "Tổ hợp, Đồ thị và Lý thuyết trò chơi": 25,
+        "Số học và Đại số trừu tượng": 20,
+        "Hình học và Bất đẳng thức": 10
+      },
+      "question_types": [
+        {
+          "name": "Bài toán chứng minh cấu trúc đại số và ma trận",
+          "description": "Chứng minh sự tồn tại của ma trận, tính chất giao hoán, định thức hoặc cấu trúc nhóm/vành.",
+          "example_prompt": "Cho A và B là hai ma trận vuông cấp n sao cho AB - BA = A. Chứng minh rằng A là ma trận lũy linh (nilpotent).",
+          "approach": "Sử dụng vết ma trận tr(A^k) và đa thức đặc trưng để chứng minh mọi giá trị riêng của A đều bằng 0."
+        },
+        {
+          "name": "Bài toán tổ hợp và chiến thuật trò chơi",
+          "description": "Xác định người chơi có chiến thuật thắng hoặc tìm giá trị cực trị tổ hợp trên đồ thị hữu hạn.",
+          "example_prompt": "Hai người chơi luân phiên chọn một điểm nguyên trên mặt phẳng tọa độ... Tìm chiến thuật thắng cho người đi trước.",
+          "approach": "Sử dụng phép ghép cặp đối xứng hoặc định nghĩa tập các trạng thái P (thua) và N (thắng)."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Không cấp bảng công thức. Yêu cầu làm chủ kiến thức giải tích, đại số tuyến tính và cấu trúc rời rạc đại học."
+      ],
+      "formulas_must_memorize": [
+        "math.dai-hoc.dinh-thuc.dinh-thuc-cua-tich",
+        "math.dai-hoc.ma-tran.vet-ma-tran",
+        "math.dai-hoc.ma-tran.tinh-chat-vet-tich",
+        "math.thpt.fm-ma-tran.cayley-hamilton-cap-hai",
+        "math.thpt.imo-to-hop.nguyen-li-bat-bien"
+      ],
+      "scoring": {
+        "description": "Mỗi bài chấm thang 0-10 điểm. Tổng điểm tối đa 120. Giám khảo chấm rất khắt khe: chỉ những lời giải hoàn chỉnh và chặt chẽ mới được 8-10 điểm. Top 5 thí sinh được vinh danh là Putnam Fellows.",
+        "scale": "0 - 120 điểm",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Ưu tiên tập trung giải trọn vẹn 1 hoặc 2 bài (thường là A1, B1, A2, B2) hơn là viết dở dang nhiều bài.",
+        "Trình bày bài chứng minh cực kỳ chặt chẽ, nêu rõ mọi bước biến đổi và điều kiện biên.",
+        "Thử nghiệm với các trường hợp kích thước nhỏ (n = 1, 2, 3) để phát hiện quy luật trước khi chứng minh tổng quát."
+      ],
+      "common_traps": [
+        "Bỏ qua các trường hợp suy biến (ma trận suy biến, tập rỗng, đồ thị không liên thông).",
+        "Ngộ nhận tính đúng đắn khi mới chỉ kiểm tra qua ví dụ cụ thể mà chưa có chứng minh đại số chặt chẽ."
+      ],
+      "tags": [
+        "putnam",
+        "olympiad",
+        "toan-dai-hoc",
+        "logic",
+        "dai-so-tuyen-tinh"
+      ]
+    }
+  ]
+}

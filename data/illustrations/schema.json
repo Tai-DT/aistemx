@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AISTEM · Tầng minh hoạ 2D",
+  "description": "Định dạng bản ghi minh hoạ (SVG deterministic, có hook raster) và file index.json sinh tự động. Một minh hoạ luôn trỏ về một công thức trong data/formulas.",
+  "definitions": {
+    "raster": {
+      "type": "object",
+      "description": "Ảnh raster (PNG/WebP) gắn vào công thức — sinh bằng model text-to-image. Để null nếu chưa có.",
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Đường dẫn tương đối tới file ảnh raster"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "prompt": {
+          "type": "string",
+          "description": "Prompt sinh ảnh, để tái tạo"
+        },
+        "model": {
+          "type": "string",
+          "description": "Model đã sinh ảnh (vd @cf/black-forest-labs/flux-1-schnell)"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ai",
+            "placeholder"
+          ],
+          "description": "ai = ảnh thật; placeholder = ảnh tạm chờ thay"
+        }
+      },
+      "additionalProperties": true
+    },
+    "binding": {
+      "type": "object",
+      "description": "Một khai báo minh hoạ thủ công trong bindings.json.",
+      "required": [
+        "formula_id",
+        "generator"
+      ],
+      "properties": {
+        "formula_id": {
+          "type": "string",
+          "description": "id công thức trong data/formulas"
+        },
+        "generator": {
+          "type": "string",
+          "description": "Tên generator SVG trong tools/illus/generators2d.py"
+        },
+        "params": {
+          "type": "object",
+          "description": "Tham số truyền cho generator"
+        },
+        "caption_vi": {
+          "type": "string",
+          "description": "Chú thích tiếng Việt hiển thị kèm hình"
+        }
+      },
+      "additionalProperties": false
+    },
+    "illustration": {
+      "type": "object",
+      "description": "Một bản ghi minh hoạ trong index.json (sinh tự động). Có thể là SVG, raster, hoặc cả hai.",
+      "required": [
+        "formula_id",
+        "kind",
+        "source"
+      ],
+      "properties": {
+        "formula_id": {
+          "type": "string"
+        },
+        "generator": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "description": "generator SVG; null nếu là bản ghi chỉ-raster"
+        },
+        "params": {
+          "type": "object"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "2d-svg",
+            "2d-raster",
+            "2d-svg+raster"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "binding",
+            "auto",
+            "raster"
+          ],
+          "description": "binding/auto = SVG; raster = bản ghi chỉ-raster"
+        },
+        "note": {
+          "type": "string",
+          "description": "Ghi chú vì sao khớp (từ matcher) — chỉ có ở source=auto"
+        },
+        "caption_vi": {
+          "type": "string"
+        },
+        "svg_path": {
+          "type": "string",
+          "description": "Đường dẫn tương đối tới file SVG (nếu có)"
+        },
+        "raster": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/definitions/raster"
+            }
+          ]
+        },
+        "subject": {
+          "type": "string",
+          "description": "môn, chép từ công thức để lọc nhanh"
+        },
+        "level": {
+          "type": "string",
+          "description": "cấp học, chép từ công thức"
+        },
+        "topic": {
+          "type": "string",
+          "description": "chủ đề, chép từ công thức"
+        },
+        "title": {
+          "type": "string",
+          "description": "tên công thức, để hiển thị thay cho slug"
+        },
+        "latex": {
+          "type": "string",
+          "description": "công thức LaTeX, để đối chiếu hình với công thức"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "required": [
+    "meta",
+    "illustrations"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "generated_by": {
+          "type": "string"
+        },
+        "generators": {
+          "type": "object"
+        },
+        "by_source": {
+          "type": "object"
+        }
+      }
+    },
+    "illustrations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/illustration"
+      }
+    }
+  }
+}

@@ -1,0 +1,4484 @@
+{
+ "meta": {
+  "file": "ext4-physics-daihoc.json",
+  "subject": "physics",
+  "title": "Bài tập bổ sung Vật lí đại học (đợt 4) - phủ các công thức đại học chưa có bài tập: sóng và quang học sóng, lượng tử của bức xạ và hạt nhân, cơ học giải tích, điện động lực học, cơ học lượng tử nâng cao, vật lí thống kê nâng cao, vật lí chất rắn nâng cao, vật lí hạt cơ bản và các hệ giáo trình Nga - Đông Âu",
+  "levels": [
+   "dai-hoc"
+  ],
+  "count": 82
+ },
+ "problems": [
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0001",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động và sóng",
+   "type": "dien-so",
+   "statement_vi": "Một sóng ngang trên dây thỏa mãn phương trình vi phân của sóng dạng ∂²u/∂t² = 400·∂²u/∂x² (các đại lượng trong hệ SI, u và x tính bằng m, t tính bằng s). Xác định vận tốc pha v của sóng (m/s).",
+   "statement_en": "A transverse wave on a string obeys the wave equation d^2u/dt^2 = 400 d^2u/dx^2 (SI units). Find the phase velocity v (m/s).",
+   "answer": "v = 20 m/s",
+   "solution_steps": [
+    {
+     "explain": "Phương trình d'Alembert chuẩn có dạng ∂²u/∂x² = (1/v²)∂²u/∂t², tương đương ∂²u/∂t² = v²·∂²u/∂x²; hệ số đứng trước ∂²u/∂x² chính là v².",
+     "latex": "\\frac{\\partial^{2}u}{\\partial t^{2}} = v^{2}\\frac{\\partial^{2}u}{\\partial x^{2}}"
+    },
+    {
+     "explain": "Đối chiếu với đề: v² = 400 m²/s², lấy căn bậc hai được vận tốc pha.",
+     "latex": "v = \\sqrt{400} = 20\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dao-dong-song.phuong-trinh-song-vi-phan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhận dạng hệ số v² trong phương trình sóng",
+    "tính vận tốc pha"
+   ],
+   "tags": [
+    "song",
+    "dalembert",
+    "van-toc-pha"
+   ],
+   "answer_numeric": 20.0,
+   "answer_unit": "m/s",
+   "tolerance": 0.1,
+   "hints": [
+    "Viết lại phương trình về dạng ∂²u/∂t² = v²∂²u/∂x².",
+    "Hệ số trước số hạng không gian bằng v²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0002",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo nguyên lí Huygens - Fresnel, dao động sáng tại một điểm quan sát P được xác định như thế nào?",
+   "statement_en": "According to the Huygens-Fresnel principle, how is the light disturbance at an observation point P determined?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Nguyên lí phát biểu: mỗi phần tử dS của mặt sóng là một nguồn phát sóng cầu thứ cấp; dao động tại P là tổng (tích phân) có kể pha của mọi sóng thứ cấp đó, kèm hệ số xiên K(θ).",
+     "latex": "E(P) = \\int_{S} K(\\theta)\\,\\frac{a_{0}}{r}\\cos\\!\\left(\\omega t - \\frac{2\\pi r}{\\lambda} + \\varphi_{0}\\right) dS"
+    },
+    {
+     "explain": "Chính việc chồng chất có kể pha của các nguồn thứ cấp giải thích được cả giao thoa lẫn nhiễu xạ.",
+     "latex": "\\Delta\\varphi = \\frac{2\\pi r}{\\lambda}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.nguyen-li-huygens-fresnel"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phát biểu nguyên lí Huygens - Fresnel",
+    "vai trò của nguồn thứ cấp"
+   ],
+   "tags": [
+    "quang-song",
+    "huygens-fresnel",
+    "nhieu-xa"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Mỗi điểm trên mặt sóng là nguồn phát sóng cầu thứ cấp; dao động tại P là chồng chất có kể pha của các sóng thứ cấp đó",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Chỉ nguồn điểm ban đầu phát sóng tới P, các điểm trên mặt sóng không đóng vai trò gì",
+     "why_wrong": "Bỏ qua các nguồn thứ cấp thì không giải thích được nhiễu xạ - mâu thuẫn với thực nghiệm."
+    },
+    {
+     "key": "C",
+     "text": "Dao động tại P bằng tổng biên độ (không kể pha) của các nguồn thứ cấp",
+     "why_wrong": "Cộng biên độ không kể pha thì mất hiện tượng giao thoa; phải cộng có kể pha."
+    },
+    {
+     "key": "D",
+     "text": "P chỉ nhận sóng từ điểm gần nhất trên mặt sóng",
+     "why_wrong": "Nhiễu xạ đòi hỏi đóng góp của cả mặt sóng, không chỉ một điểm."
+    }
+   ],
+   "hints": [
+    "Nghĩ tới cách nguyên lí giải thích nhiễu xạ.",
+    "Sóng thứ cấp phải được cộng có kể pha."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0003",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "dien-so",
+   "statement_vi": "Ánh sáng đơn sắc bước sóng λ = 600 nm chiếu vuông góc tới một màn chắn có lỗ tròn. Điểm quan sát nằm trên trục, cách lỗ b = 2,0 m; sóng tới coi là sóng phẳng (R → ∞). Tính bán kính của đới cầu Fresnel thứ ba r₃ (mm).",
+   "statement_en": "Monochromatic light of wavelength 600 nm illuminates a circular aperture. The on-axis observation point is b = 2.0 m away; the incident wave is plane (R -> infinity). Find the radius of the third Fresnel zone r_3 (mm).",
+   "answer": "r₃ = 1,9 mm",
+   "solution_steps": [
+    {
+     "explain": "Với sóng phẳng tới, bán kính đới cầu Fresnel thứ k rút gọn thành r_k = √(k·λ·b).",
+     "latex": "r_{k} = \\sqrt{k\\lambda b}"
+    },
+    {
+     "explain": "Thay k = 3, λ = 600×10⁻⁹ m, b = 2,0 m.",
+     "latex": "r_{3} = \\sqrt{3\\cdot 600\\times 10^{-9}\\cdot 2{,}0} = 1{,}90\\times 10^{-3}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.doi-cau-fresnel"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức bán kính đới Fresnel cho sóng phẳng"
+   ],
+   "tags": [
+    "quang-song",
+    "fresnel",
+    "nhieu-xa"
+   ],
+   "answer_numeric": 1.8974,
+   "answer_unit": "mm",
+   "tolerance": 0.02,
+   "hints": [
+    "Sóng phẳng: R → ∞ nên r_k = √(kλb).",
+    "Đổi λ ra mét trước khi tính."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0004",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Quang học sóng",
+   "type": "dien-so",
+   "statement_vi": "Một bản thạch anh (chất quang hoạt rắn) có năng suất quay riêng [α] = 210 rad/m đối với ánh sáng dùng. Chùm sáng phân cực phẳng đi qua bản dày ℓ = 3,0 mm. Tính góc quay φ của mặt phẳng phân cực (rad).",
+   "statement_en": "A quartz plate (solid optically active medium) has specific rotation [alpha] = 210 rad/m. Plane-polarised light passes through thickness ell = 3.0 mm. Find the rotation angle phi (rad).",
+   "answer": "φ = 0,63 rad",
+   "solution_steps": [
+    {
+     "explain": "Với chất rắn, góc quay tỉ lệ chiều dài đường đi: φ = [α]·ℓ.",
+     "latex": "\\varphi = [\\alpha]\\,\\ell"
+    },
+    {
+     "explain": "Thay số, chú ý đổi ℓ = 3,0 mm = 3,0×10⁻³ m.",
+     "latex": "\\varphi = 210\\cdot 3{,}0\\times 10^{-3} = 0{,}63\\ \\text{rad}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.quang-song.quay-mat-phang-phan-cuc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức quay mặt phẳng phân cực cho chất rắn"
+   ],
+   "tags": [
+    "quang-song",
+    "phan-cuc",
+    "quang-hoat"
+   ],
+   "answer_numeric": 0.63,
+   "answer_unit": "rad",
+   "tolerance": 0.01,
+   "hints": [
+    "Chất rắn dùng φ = [α]ℓ (không có nồng độ).",
+    "Đổi mm ra m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0005",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí lượng tử của bức xạ",
+   "type": "dien-so",
+   "statement_vi": "Một photon gamma năng lượng 1,50 MeV tạo cặp electron - positron trong trường Coulomb của hạt nhân. Tính tổng động năng của cặp hạt sinh ra (MeV). Cho năng lượng ngưỡng tạo cặp 2m_ec² = 1,022 MeV.",
+   "statement_en": "A 1.50 MeV gamma photon produces an electron-positron pair in a nuclear Coulomb field. Find the total kinetic energy of the pair (MeV). The pair-production threshold is 2 m_e c^2 = 1.022 MeV.",
+   "answer": "E_đ = 0,478 MeV",
+   "solution_steps": [
+    {
+     "explain": "Bảo toàn năng lượng: năng lượng photon = năng lượng nghỉ của cặp + tổng động năng.",
+     "latex": "h\\nu = 2m_{e}c^{2} + E_{\\text{đ}}"
+    },
+    {
+     "explain": "Suy ra tổng động năng của electron và positron.",
+     "latex": "E_{\\text{đ}} = 1{,}50 - 1{,}022 = 0{,}478\\ \\text{MeV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.buc-xa.tao-cap-va-huy-cap"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "bảo toàn năng lượng trong tạo cặp",
+    "năng lượng ngưỡng"
+   ],
+   "tags": [
+    "buc-xa",
+    "tao-cap",
+    "bao-toan-nang-luong"
+   ],
+   "answer_numeric": 0.478,
+   "answer_unit": "MeV",
+   "tolerance": 0.005,
+   "hints": [
+    "Năng lượng dư = hν − 2m_ec².",
+    "Ngưỡng là 1,022 MeV."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0006",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình Schrödinger phụ thuộc thời gian cho một hạt phi tương đối tính không spin có dạng nào?",
+   "statement_en": "Which is the time-dependent Schrödinger equation for a non-relativistic spinless particle?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Phương trình mô tả tiến hóa theo thời gian của hàm sóng, với toán tử Hamilton bên vế phải.",
+     "latex": "i\\hbar\\frac{\\partial \\Psi}{\\partial t} = \\hat{H}\\Psi = \\left(-\\frac{\\hbar^{2}}{2m}\\nabla^{2} + U\\right)\\Psi"
+    },
+    {
+     "explain": "Đây là phương trình cơ bản của cơ học lượng tử, đóng vai trò như định luật II Newton.",
+     "latex": "\\hat{H} = -\\frac{\\hbar^{2}}{2m}\\nabla^{2} + U(\\vec{r},t)"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu.phuong-trinh-schrodinger-phu-thuoc-thoi-gian"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhận dạng phương trình Schrödinger phụ thuộc thời gian"
+   ],
+   "tags": [
+    "luong-tu",
+    "schrodinger",
+    "ham-song"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "iħ ∂Ψ/∂t = (−ħ²/2m ∇² + U)Ψ",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "(−ħ²/2m ∇² + U)Ψ = EΨ",
+     "why_wrong": "Đây là phương trình Schrödinger DỪNG (không phụ thuộc thời gian), chỉ đúng cho trạng thái dừng."
+    },
+    {
+     "key": "C",
+     "text": "iħ ∂Ψ/∂t = −ħ²/2m ∇²Ψ",
+     "why_wrong": "Thiếu số hạng thế năng U trong toán tử Hamilton."
+    },
+    {
+     "key": "D",
+     "text": "∂²Ψ/∂t² = v²∇²Ψ",
+     "why_wrong": "Đây là phương trình sóng cổ điển bậc hai theo thời gian, không phải Schrödinger."
+    }
+   ],
+   "hints": [
+    "Phương trình phụ thuộc thời gian có ∂/∂t bậc nhất.",
+    "Toán tử Hamilton gồm động năng và thế năng."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0007",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một hạt tự do có hàm sóng ψ(x) = A·e^{ikx} với k = 5,0×10¹⁰ m⁻¹. Tác dụng toán tử động lượng p̂_x = −iħ ∂/∂x lên ψ để tìm trị riêng động lượng p_x (kg·m/s).",
+   "statement_en": "A free particle has wavefunction psi(x) = A e^{ikx} with k = 5.0e10 1/m. Apply the momentum operator p_x = -i hbar d/dx to find the momentum eigenvalue p_x (kg m/s).",
+   "answer": "p_x = 5,27×10^-24 kg·m/s",
+   "solution_steps": [
+    {
+     "explain": "Tác dụng toán tử động lượng lên hàm mũ: đạo hàm sinh ra thừa số ik, khử i với −i.",
+     "latex": "\\hat{p}_{x}\\psi = -i\\hbar\\frac{\\partial}{\\partial x}\\left(Ae^{ikx}\\right) = \\hbar k\\,\\psi"
+    },
+    {
+     "explain": "Vậy ψ là hàm riêng của p̂_x với trị riêng ħk.",
+     "latex": "p_{x} = \\hbar k = 1{,}0546\\times 10^{-34}\\cdot 5{,}0\\times 10^{10}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu.toan-tu-va-tri-trung-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tác dụng toán tử động lượng lên sóng phẳng",
+    "trị riêng"
+   ],
+   "tags": [
+    "luong-tu",
+    "toan-tu",
+    "dong-luong"
+   ],
+   "answer_numeric": 5.272859085e-24,
+   "answer_unit": "kg·m/s",
+   "tolerance": 1.054571817e-25,
+   "hints": [
+    "−iħ ∂/∂x của e^{ikx} cho ħk·e^{ikx}.",
+    "Trị riêng là ħk."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0008",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vật lí hạt nhân",
+   "type": "dien-so",
+   "statement_vi": "Một bia mỏng gồm N = 4,0×10²² hạt nhân được chiếu bởi chùm hạt có mật độ dòng Φ = 5,0×10¹⁸ hạt/(m²·s). Người ta đếm được R = 1,6×10¹³ phản ứng mỗi giây. Tính tiết diện phản ứng σ theo đơn vị barn (1 barn = 10⁻²⁸ m²).",
+   "statement_en": "A thin target of N = 4.0e22 nuclei is irradiated by a beam of flux Phi = 5.0e18 particles/(m^2 s). R = 1.6e13 reactions per second are counted. Find the cross section sigma in barns (1 barn = 1e-28 m^2).",
+   "answer": "σ = 8×10^-29 m² = 0,8 barn",
+   "solution_steps": [
+    {
+     "explain": "Số phản ứng mỗi giây bằng dòng nhân tiết diện nhân số hạt nhân bia: R = Φ·σ·N.",
+     "latex": "R = \\Phi\\,\\sigma\\,N_{bia}"
+    },
+    {
+     "explain": "Suy ra tiết diện.",
+     "latex": "\\sigma = \\frac{R}{\\Phi N_{bia}} = \\frac{1{,}6\\times 10^{13}}{5{,}0\\times 10^{18}\\cdot 4{,}0\\times 10^{22}} = 8{,}0\\times 10^{-29}\\ \\text{m}^{2}"
+    },
+    {
+     "explain": "Đổi ra barn.",
+     "latex": "\\sigma = \\frac{8{,}0\\times 10^{-29}}{10^{-28}} = 0{,}80\\ \\text{barn}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.hat-nhan.tiet-dien-phan-ung-hat-nhan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng công thức tiết diện phản ứng",
+    "đổi đơn vị barn"
+   ],
+   "tags": [
+    "hat-nhan",
+    "tiet-dien",
+    "phan-ung"
+   ],
+   "answer_numeric": 0.8,
+   "answer_unit": "barn",
+   "tolerance": 0.02,
+   "hints": [
+    "R = Φ σ N.",
+    "1 barn = 10⁻²⁸ m²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0009",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Nguyên lí tác dụng dừng (nguyên lí Hamilton) phát biểu rằng chuyển động thực của hệ giữa hai thời điểm cố định t₁, t₂ ứng với điều gì của phiếm hàm tác dụng S = ∫L dt?",
+   "statement_en": "Hamilton's principle states that the true motion between fixed times t1, t2 corresponds to what property of the action functional S = integral of L dt?",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Nguyên lí đòi hỏi tác dụng dừng: biến phân bậc một triệt tiêu với hai đầu mút cố định.",
+     "latex": "\\delta S = \\delta\\int_{t_{1}}^{t_{2}} L(q,\\dot{q},t)\\,dt = 0"
+    },
+    {
+     "explain": "Điều kiện dừng này dẫn thẳng ra phương trình Euler - Lagrange của chuyển động.",
+     "latex": "\\frac{d}{dt}\\frac{\\partial L}{\\partial \\dot{q}} - \\frac{\\partial L}{\\partial q} = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.nguyen-li-tac-dung-dung"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phát biểu nguyên lí Hamilton",
+    "điều kiện biến phân dừng"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "bien-phan",
+    "hamilton"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tác dụng S đạt giá trị lớn nhất tuyệt đối",
+     "why_wrong": "Nguyên lí chỉ đòi hỏi điểm DỪNG (δS = 0), không nhất thiết cực đại; thường là cực tiểu cục bộ hoặc điểm yên ngựa."
+    },
+    {
+     "key": "B",
+     "text": "Tác dụng S dừng: biến phân bậc một δS = 0 với hai đầu mút cố định",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "Tác dụng S bằng không",
+     "why_wrong": "δS = 0 nói về biến phân, không phải giá trị S bằng 0."
+    },
+    {
+     "key": "D",
+     "text": "Đạo hàm dS/dt = 0 tại mọi thời điểm",
+     "why_wrong": "Điều kiện là biến phân theo đường đi δS = 0, không phải đạo hàm theo thời gian của S."
+    }
+   ],
+   "hints": [
+    "'Dừng' nghĩa là biến phân bậc một bằng 0.",
+    "Hai đầu mút cố định: δq(t₁)=δq(t₂)=0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0010",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "dien-so",
+   "statement_vi": "Một hạt bị ràng buộc chuyển động trên đường tròn bán kính R = 0,5 m, vị trí (R cosθ, R sinθ). Một lực không đổi F = 10 N hướng theo +x tác dụng lên hạt. Tính lực suy rộng Q_θ ứng với tọa độ góc θ tại θ = 30° (N·m).",
+   "statement_en": "A particle is constrained to a circle of radius R = 0.5 m, position (R cos t, R sin t). A constant force F = 10 N along +x acts on it. Find the generalized force Q_theta for the angular coordinate at theta = 30 degrees (N m).",
+   "answer": "Q_θ = -2,5 N·m",
+   "solution_steps": [
+    {
+     "explain": "Lực suy rộng: Q_θ = F·∂r/∂θ. Với r = (R cosθ, R sinθ) thì ∂r/∂θ = (−R sinθ, R cosθ).",
+     "latex": "Q_{\\theta} = \\vec{F}\\cdot\\frac{\\partial \\vec{r}}{\\partial \\theta} = F_{x}(-R\\sin\\theta) + F_{y}(R\\cos\\theta)"
+    },
+    {
+     "explain": "Vì F chỉ có thành phần x (F_x = 10 N, F_y = 0).",
+     "latex": "Q_{\\theta} = 10\\cdot(-0{,}5\\sin 30^{\\circ}) = 10\\cdot(-0{,}25) = -2{,}5\\ \\text{N·m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.luc-suy-rong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính lực suy rộng theo định nghĩa Q = F·∂r/∂q"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "luc-suy-rong",
+    "rang-buoc"
+   ],
+   "answer_numeric": -2.5,
+   "answer_unit": "N·m",
+   "tolerance": 0.02,
+   "hints": [
+    "Q_θ = F·(∂r/∂θ).",
+    "∂r/∂θ = (−R sinθ, R cosθ)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0011",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong phương pháp nhân tử Lagrange cho hệ có ràng buộc holonom f_k(q) = 0, đại lượng nhân tử λ_k mang ý nghĩa vật lí gì?",
+   "statement_en": "In the Lagrange-multiplier method for a holonomic constraint f_k(q) = 0, what is the physical meaning of the multiplier lambda_k?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Vế phải phương trình Lagrange mở rộng chính là lực ràng buộc suy rộng, tỉ lệ với λ_k.",
+     "latex": "\\frac{d}{dt}\\frac{\\partial L}{\\partial \\dot{q}_{j}} - \\frac{\\partial L}{\\partial q_{j}} = \\sum_{k}\\lambda_{k}\\frac{\\partial f_{k}}{\\partial q_{j}}"
+    },
+    {
+     "explain": "Do đó tính được λ_k đồng nghĩa với việc lấy ra chính phản lực liên kết mà hình thức luận Lagrange chuẩn đã khử.",
+     "latex": "Q_{j}^{(rb)} = \\sum_{k}\\lambda_{k}\\frac{\\partial f_{k}}{\\partial q_{j}}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.nhan-tu-lagrange"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "ý nghĩa của nhân tử Lagrange",
+    "lực ràng buộc"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "nhan-tu-lagrange",
+    "rang-buoc"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "λ_k tỉ lệ với lực ràng buộc (phản lực liên kết) tác dụng để duy trì ràng buộc",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "λ_k là năng lượng toàn phần của hệ",
+     "why_wrong": "Nhân tử Lagrange có thứ nguyên của lực suy rộng, không phải năng lượng."
+    },
+    {
+     "key": "C",
+     "text": "λ_k luôn bằng 0 khi hệ cân bằng",
+     "why_wrong": "λ_k khác 0 chừng nào còn có phản lực liên kết, kể cả khi hệ cân bằng."
+    },
+    {
+     "key": "D",
+     "text": "λ_k là số bậc tự do bị loại bỏ",
+     "why_wrong": "Số ràng buộc là m; λ_k là biến động lực, không phải số đếm bậc tự do."
+    }
+   ],
+   "hints": [
+    "Vế phải phương trình đóng vai trò lực.",
+    "Phương pháp này dùng để lấy lại phản lực liên kết."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0012",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "dien-so",
+   "statement_vi": "Một chất điểm chịu lực cản nhớt F = −b·v với b = 0,4 kg/s, chuyển động với tốc độ v = 3,0 m/s. Dùng hàm tiêu tán Rayleigh F = ½bv², tính công suất cơ năng bị tiêu tán (W).",
+   "statement_en": "A particle experiences viscous drag F = -b v with b = 0.4 kg/s at speed v = 3.0 m/s. Using the Rayleigh dissipation function F = (1/2) b v^2, find the dissipated power (W).",
+   "answer": "P = 3,6 W",
+   "solution_steps": [
+    {
+     "explain": "Hàm tiêu tán Rayleigh của một chất điểm.",
+     "latex": "\\mathcal{F} = \\frac{1}{2}b v^{2} = \\frac{1}{2}\\cdot 0{,}4\\cdot 3{,}0^{2} = 1{,}8\\ \\text{W}"
+    },
+    {
+     "explain": "Công suất tiêu tán bằng hai lần hàm tiêu tán.",
+     "latex": "P = 2\\mathcal{F} = 3{,}6\\ \\text{W}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.ham-tieu-tan-rayleigh"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng hàm tiêu tán Rayleigh",
+    "công suất tiêu tán = 2F"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "tieu-tan",
+    "ma-sat-nhot"
+   ],
+   "answer_numeric": 3.6,
+   "answer_unit": "W",
+   "tolerance": 0.02,
+   "hints": [
+    "F = ½bv².",
+    "Công suất tiêu tán = 2F."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0013",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Với hàm Lagrange của hạt tích điện trong trường điện từ L = ½mv² − qφ + q·v·A, động lượng chính tắc (liên hợp) p theo tọa độ có biểu thức nào?",
+   "statement_en": "For a charged particle Lagrangian L = (1/2)mv^2 - q phi + q v.A, what is the canonical momentum p?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Động lượng chính tắc là đạo hàm của L theo vận tốc suy rộng, trường A đóng góp thêm qA.",
+     "latex": "\\vec{p} = \\frac{\\partial L}{\\partial \\vec{v}} = m\\vec{v} + q\\vec{A}"
+    },
+    {
+     "explain": "Đây là lí do động lượng chính tắc khác động lượng cơ học mv - điểm cốt lõi khi chuyển sang lượng tử.",
+     "latex": "\\vec{p}_{\\text{cơ}} = m\\vec{v} = \\vec{p} - q\\vec{A}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.lagrange-hat-tich-dien"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "động lượng chính tắc khác động lượng cơ học"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "the-suy-rong",
+    "luc-lorentz"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "p = mv + qA",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "p = mv",
+     "why_wrong": "Đó là động lượng CƠ HỌC; động lượng chính tắc còn thêm số hạng qA do thế phụ thuộc vận tốc."
+    },
+    {
+     "key": "C",
+     "text": "p = mv − qA",
+     "why_wrong": "Sai dấu: số hạng +q·v·A trong L cho đóng góp +qA, không phải −qA."
+    },
+    {
+     "key": "D",
+     "text": "p = qA",
+     "why_wrong": "Bỏ mất số hạng động năng mv; động lượng chính tắc gồm cả hai phần."
+    }
+   ],
+   "hints": [
+    "p = ∂L/∂v.",
+    "Số hạng q·v·A đóng góp qA."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0014",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Định lí Liouville cho một hệ Hamilton khẳng định điều gì về không gian pha?",
+   "statement_en": "What does Liouville's theorem assert about phase space for a Hamiltonian system?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Mật độ pha theo dòng chuyển động là hằng số; thể tích pha được bảo toàn - dòng pha giống chất lỏng không nén được.",
+     "latex": "\\frac{d\\rho}{dt} = \\frac{\\partial \\rho}{\\partial t} + \\{\\rho,H\\} = 0"
+    },
+    {
+     "explain": "Nói cách khác thể tích của một miền bị dòng Hamilton cuốn theo không đổi theo thời gian.",
+     "latex": "\\frac{d}{dt}\\int_{\\Gamma(t)} d^{n}q\\,d^{n}p = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.dinh-li-liouville"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "phát biểu định lí Liouville",
+    "bảo toàn thể tích pha"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "khong-gian-pha",
+    "liouville"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Thể tích trong không gian pha được bảo toàn theo dòng Hamilton; dρ/dt = 0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Thể tích pha luôn tăng theo thời gian",
+     "why_wrong": "Thể tích pha tăng ứng với hệ tiêu tán; hệ Hamilton bảo toàn thể tích, không tăng."
+    },
+    {
+     "key": "C",
+     "text": "Mọi quỹ đạo pha đều là đường tròn",
+     "why_wrong": "Hình dạng quỹ đạo tùy hệ; định lí chỉ nói về thể tích, không về hình dạng."
+    },
+    {
+     "key": "D",
+     "text": "Năng lượng của mỗi điểm pha giảm dần",
+     "why_wrong": "Hệ Hamilton bảo toàn năng lượng; định lí Liouville nói về thể tích pha."
+    }
+   ],
+   "hints": [
+    "Dòng pha 'không nén được'.",
+    "dρ/dt = 0 dọc quỹ đạo."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0015",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Hàm sinh loại hai F₂(q,P) = q·P sinh ra biến đổi chính tắc nào? (dùng p = ∂F₂/∂q, Q = ∂F₂/∂P)",
+   "statement_en": "Which canonical transformation does the type-2 generating function F2(q,P) = q P generate? (with p = dF2/dq, Q = dF2/dP)",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Lấy đạo hàm hàm sinh theo hai biến.",
+     "latex": "p = \\frac{\\partial F_{2}}{\\partial q} = P, \\qquad Q = \\frac{\\partial F_{2}}{\\partial P} = q"
+    },
+    {
+     "explain": "Vậy Q = q và P = p: đây là biến đổi đồng nhất.",
+     "latex": "(q,p) \\to (Q,P) = (q,p)"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.bien-doi-chinh-tac"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức hàm sinh loại hai"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "bien-doi-chinh-tac",
+    "ham-sinh"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Biến đổi đồng nhất: Q = q, P = p",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Hoán đổi tọa độ và động lượng: Q = p, P = −q",
+     "why_wrong": "Đó là biến đổi do F₁ = qQ sinh ra, không phải F₂ = qP."
+    },
+    {
+     "key": "C",
+     "text": "Phép vị tự Q = 2q, P = p/2",
+     "why_wrong": "F₂ = qP cho hệ số 1, không có tỉ lệ; muốn vị tự cần F₂ = αqP."
+    },
+    {
+     "key": "D",
+     "text": "Tịnh tiến Q = q + a, P = p",
+     "why_wrong": "Tịnh tiến cần F₂ = qP + aP, số hạng aP mới sinh dịch chuyển."
+    }
+   ],
+   "hints": [
+    "p = ∂F₂/∂q, Q = ∂F₂/∂P.",
+    "F₂ = qP là trường hợp cơ bản nhất."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0016",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình Hamilton - Jacobi cho hàm chính Hamilton S(q,t) có dạng nào?",
+   "statement_en": "Which is the Hamilton-Jacobi equation for the principal function S(q,t)?",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Thay động lượng p_j = ∂S/∂q_j vào Hamiltonian rồi cộng ∂S/∂t = 0.",
+     "latex": "H\\!\\left(q_{j}, \\frac{\\partial S}{\\partial q_{j}}, t\\right) + \\frac{\\partial S}{\\partial t} = 0"
+    },
+    {
+     "explain": "Đây là phương trình đạo hàm riêng bậc nhất cho S, dạng cổ điển gần với phương trình Schrödinger.",
+     "latex": "p_{j} = \\frac{\\partial S}{\\partial q_{j}}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.phuong-trinh-hamilton-jacobi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận dạng phương trình Hamilton - Jacobi"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "hamilton-jacobi"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "H(q, ∂S/∂q, t) − ∂S/∂t = 0",
+     "why_wrong": "Sai dấu: số hạng thời gian phải là +∂S/∂t."
+    },
+    {
+     "key": "B",
+     "text": "H(q, ∂S/∂q, t) + ∂S/∂t = 0",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "H(q, p, t) = E với p, q độc lập",
+     "why_wrong": "Đó là bảo toàn năng lượng thông thường, chưa thay p = ∂S/∂q để thành phương trình cho S."
+    },
+    {
+     "key": "D",
+     "text": "∂²S/∂t² = H·S",
+     "why_wrong": "Hamilton - Jacobi là phương trình bậc nhất theo thời gian, không phải bậc hai."
+    }
+   ],
+   "hints": [
+    "Thay p_j = ∂S/∂q_j vào H.",
+    "Cộng thêm ∂S/∂t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0017",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "dien-so",
+   "statement_vi": "Một dao động tử điều hòa một chiều có năng lượng E = 2,0×10⁻²⁰ J và tần số ν = 5,0×10¹² Hz. Dùng biến tác dụng J = ∮p dq, với dao động tử điều hòa J = E/ν, hãy tính J (J·s).",
+   "statement_en": "A 1D harmonic oscillator has energy E = 2.0e-20 J and frequency nu = 5.0e12 Hz. Using the action variable J = closed integral of p dq, which for a harmonic oscillator equals E/nu, find J (J s).",
+   "answer": "J = 4×10^-33 J·s",
+   "solution_steps": [
+    {
+     "explain": "Với dao động tử điều hòa, tích phân tác dụng trên một chu kì cho J = ∮p dq = 2πE/ω = E/ν.",
+     "latex": "J = \\oint p\\,dq = \\frac{2\\pi E}{\\omega} = \\frac{E}{\\nu}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "J = \\frac{2{,}0\\times 10^{-20}}{5{,}0\\times 10^{12}} = 4{,}0\\times 10^{-33}\\ \\text{J·s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.bien-tac-dung-goc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "biến tác dụng của dao động tử điều hòa",
+    "liên hệ J = E/ν"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "tac-dung-goc",
+    "bohr-sommerfeld"
+   ],
+   "answer_numeric": 3.9999999999999995e-33,
+   "answer_unit": "J·s",
+   "tolerance": 7.999999999999999e-35,
+   "hints": [
+    "Với dao động điều hòa J = 2πE/ω.",
+    "ω = 2πν nên J = E/ν."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0018",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "dien-so",
+   "statement_vi": "Tán xạ cổ điển của hạt điểm trên quả cầu cứng bán kính R = 3,0×10⁻¹⁰ m cho tham số va chạm b = R cos(θ/2). Tính tiết diện tán xạ vi phân dσ/dΩ (m²/sr). (Kết quả không phụ thuộc góc.)",
+   "statement_en": "Classical scattering of a point particle off a hard sphere of radius R = 3.0e-10 m gives impact parameter b = R cos(theta/2). Find the differential cross section dsigma/dOmega (m^2/sr). (The result is isotropic.)",
+   "answer": "dσ/dΩ = 2,25×10^-20 m²/sr",
+   "solution_steps": [
+    {
+     "explain": "Áp dụng công thức tiết diện vi phân theo tham số va chạm, với b = R cos(θ/2), db/dθ = −(R/2)sin(θ/2).",
+     "latex": "\\frac{d\\sigma}{d\\Omega} = \\frac{b}{\\sin\\theta}\\left|\\frac{db}{d\\theta}\\right| = \\frac{R\\cos\\frac{\\theta}{2}\\cdot\\frac{R}{2}\\sin\\frac{\\theta}{2}}{\\sin\\theta}"
+    },
+    {
+     "explain": "Dùng sinθ = 2 sin(θ/2)cos(θ/2) thì mọi phụ thuộc góc triệt tiêu: dσ/dΩ = R²/4.",
+     "latex": "\\frac{d\\sigma}{d\\Omega} = \\frac{R^{2}}{4} = \\frac{(3{,}0\\times 10^{-10})^{2}}{4} = 2{,}25\\times 10^{-20}\\ \\text{m}^{2}/\\text{sr}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.tiet-dien-tan-xa-vi-phan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "dẫn tiết diện vi phân từ tham số va chạm",
+    "tán xạ quả cầu cứng"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "tan-xa",
+    "tiet-dien"
+   ],
+   "answer_numeric": 2.25e-20,
+   "answer_unit": "m^2/sr",
+   "tolerance": 4.5e-22,
+   "hints": [
+    "dσ/dΩ = (b/sinθ)|db/dθ|.",
+    "Với quả cầu cứng kết quả là R²/4, không phụ thuộc góc."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0019",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "dien-so",
+   "statement_vi": "Một con quay đối xứng có I₁ = 2,0 kg·m², I₃ = 1,0 kg·m². Tại một thời điểm: θ = 60°, θ̇ = 0, φ̇ = 4,0 rad/s (tiến động), ψ̇ = 10,0 rad/s (tự quay). Tính động năng quay T (J).",
+   "statement_en": "A symmetric top has I1 = 2.0, I3 = 1.0 kg m^2. At an instant: theta = 60 deg, theta_dot = 0, phi_dot = 4.0 rad/s, psi_dot = 10.0 rad/s. Find the rotational kinetic energy T (J).",
+   "answer": "T = 84 J",
+   "solution_steps": [
+    {
+     "explain": "Động năng con quay đối xứng theo góc Euler.",
+     "latex": "T = \\frac{I_{1}}{2}\\left(\\dot{\\theta}^{2} + \\dot{\\phi}^{2}\\sin^{2}\\theta\\right) + \\frac{I_{3}}{2}\\left(\\dot{\\psi} + \\dot{\\phi}\\cos\\theta\\right)^{2}"
+    },
+    {
+     "explain": "Thay θ = 60°: sin²θ = 0,75, cosθ = 0,5; θ̇ = 0.",
+     "latex": "T = 1\\cdot\\left(0 + 16\\cdot 0{,}75\\right) + 0{,}5\\left(10 + 4\\cdot 0{,}5\\right)^{2} = 12 + 72 = 84\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.dong-nang-goc-euler"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính động năng con quay theo các góc Euler"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "goc-euler",
+    "con-quay"
+   ],
+   "answer_numeric": 84.0,
+   "answer_unit": "J",
+   "tolerance": 0.05,
+   "hints": [
+    "Thay sin²60° = 0,75 và cos60° = 0,5.",
+    "Cẩn thận số hạng (ψ̇ + φ̇cosθ)²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0020",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong môi trường vật chất, định luật Ampère - Maxwell viết theo điện tích và dòng tự do có dạng nào?",
+   "statement_en": "In matter, which is the Ampère-Maxwell law written with free charges and currents?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Với biến D và H, chỉ dòng tự do và dòng dịch của D xuất hiện tường minh.",
+     "latex": "\\nabla\\times\\vec{H} = \\vec{J}_{f} + \\frac{\\partial\\vec{D}}{\\partial t}"
+    },
+    {
+     "explain": "Kèm định luật Gauss cho D: ∇·D = ρ_f. Các điện tích, dòng liên kết đã được gộp vào D, H.",
+     "latex": "\\nabla\\cdot\\vec{D} = \\rho_{f}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.maxwell-moi-truong-vi-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hệ Maxwell trong môi trường với điện tích tự do"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "maxwell",
+    "moi-truong"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "∇×H = J_f + ∂D/∂t",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "∇×B = μ₀J_f + μ₀ε₀ ∂E/∂t",
+     "why_wrong": "Đây là dạng trong chân không (dùng B, E); trong môi trường phải dùng H, D với dòng tự do."
+    },
+    {
+     "key": "C",
+     "text": "∇×H = ∂D/∂t",
+     "why_wrong": "Bỏ mất dòng tự do J_f; định luật đầy đủ có cả J_f."
+    },
+    {
+     "key": "D",
+     "text": "∇·H = ρ_f",
+     "why_wrong": "Nhầm: định luật Gauss dùng ∇·D = ρ_f, còn ∇·B = 0; H không có phương trình phân kì với ρ_f."
+    }
+   ],
+   "hints": [
+    "Trong môi trường dùng cặp D và H.",
+    "Số hạng dòng dịch là ∂D/∂t."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0021",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong hệ đơn vị Gauss (CGS), định luật Gauss cho điện trường trong chân không viết như thế nào?",
+   "statement_en": "In Gaussian (CGS) units, how is Gauss's law for E in vacuum written?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hệ Gauss không có 1/ε₀; hằng số 4π xuất hiện tường minh.",
+     "latex": "\\nabla\\cdot\\vec{E} = 4\\pi\\rho"
+    },
+    {
+     "explain": "Trong hệ này E và B cùng thứ nguyên, lực Lorentz là F = q(E + v×B/c).",
+     "latex": "\\vec{F} = q\\left(\\vec{E} + \\frac{\\vec{v}\\times\\vec{B}}{c}\\right)"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.maxwell-he-gauss"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hệ phương trình Maxwell trong hệ Gauss"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "maxwell",
+    "he-gauss"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "∇·E = 4πρ",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "∇·E = ρ/ε₀",
+     "why_wrong": "Đó là hệ SI; hệ Gauss không chứa ε₀ mà có hệ số 4π."
+    },
+    {
+     "key": "C",
+     "text": "∇·E = ρ",
+     "why_wrong": "Thiếu hệ số 4π đặc trưng của hệ Gauss."
+    },
+    {
+     "key": "D",
+     "text": "∇·E = 4πρ/c²",
+     "why_wrong": "Không có thừa số 1/c² trong định luật Gauss của hệ Gauss."
+    }
+   ],
+   "hints": [
+    "Hệ Gauss không dùng ε₀.",
+    "Hằng số 4π xuất hiện tường minh."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0022",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Cho thế vô hướng φ(x) = 30·x (V, x tính bằng m) và thế vectơ A = (0,5·t)·x̂ (T·m, t tính bằng s). Tính độ lớn cường độ điện trường E theo công thức E = −∇φ − ∂A/∂t (V/m).",
+   "statement_en": "Given scalar potential phi(x) = 30 x (V) and vector potential A = (0.5 t) x-hat (T m). Find the magnitude of E from E = -grad phi - dA/dt (V/m).",
+   "answer": "E = 30,5 V/m",
+   "solution_steps": [
+    {
+     "explain": "Điện trường có hai đóng góp: gradient của thế vô hướng và biến thiên thời gian của thế vectơ.",
+     "latex": "E_{x} = -\\frac{\\partial \\varphi}{\\partial x} - \\frac{\\partial A_{x}}{\\partial t}"
+    },
+    {
+     "explain": "Thay số: ∂φ/∂x = 30 V/m, ∂A_x/∂t = 0,5 (V/m).",
+     "latex": "E_{x} = -30 - 0{,}5 = -30{,}5\\ \\text{V/m}, \\quad |E| = 30{,}5\\ \\text{V/m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.the-vo-huong-va-the-vecto"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính E từ thế vô hướng và thế vectơ",
+    "vai trò của ∂A/∂t"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "the-vecto",
+    "the-vo-huong"
+   ],
+   "answer_numeric": 30.5,
+   "answer_unit": "V/m",
+   "tolerance": 0.05,
+   "hints": [
+    "E = −∇φ − ∂A/∂t.",
+    "Cả hai số hạng cùng theo phương x."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0023",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Dưới biến đổi chuẩn A' = A + ∇λ, φ' = φ − ∂λ/∂t (với λ tùy ý), đại lượng nào KHÔNG thay đổi?",
+   "statement_en": "Under a gauge transformation A' = A + grad lambda, phi' = phi - d lambda/dt, which quantities are unchanged?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Điện trường và từ trường bất biến chuẩn - đó là các đại lượng vật lí đo được.",
+     "latex": "\\vec{B} = \\nabla\\times\\vec{A}, \\quad \\vec{E} = -\\nabla\\varphi - \\frac{\\partial\\vec{A}}{\\partial t}"
+    },
+    {
+     "explain": "Vì ∇×(∇λ) = 0 và các số hạng chứa λ triệt tiêu, E và B giữ nguyên.",
+     "latex": "\\nabla\\times(\\nabla\\lambda) = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.bien-doi-chuan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính bất biến chuẩn của E và B"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "gauge",
+    "bat-bien-chuan"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Điện trường E và cảm ứng từ B",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Thế vô hướng φ và thế vectơ A",
+     "why_wrong": "Chính φ và A thay đổi dưới biến đổi chuẩn; chúng không xác định duy nhất."
+    },
+    {
+     "key": "C",
+     "text": "Chỉ thế vectơ A",
+     "why_wrong": "A biến đổi thành A + ∇λ nên A thay đổi."
+    },
+    {
+     "key": "D",
+     "text": "Hàm chuẩn λ",
+     "why_wrong": "λ là hàm ta tự chọn để biến đổi, bản thân nó không phải bất biến."
+    }
+   ],
+   "hints": [
+    "Đại lượng đo được phải bất biến chuẩn.",
+    "∇×(∇λ) = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0024",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Chuẩn Coulomb được định nghĩa bằng điều kiện nào đặt lên thế vectơ?",
+   "statement_en": "The Coulomb gauge is defined by which condition on the vector potential?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện chuẩn Coulomb.",
+     "latex": "\\nabla\\cdot\\vec{A} = 0"
+    },
+    {
+     "explain": "Khi đó thế vô hướng thỏa phương trình Poisson tức thời (không trễ).",
+     "latex": "\\nabla^{2}\\varphi = -\\frac{\\rho}{\\varepsilon_{0}}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.chuan-coulomb"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận dạng điều kiện chuẩn Coulomb"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "gauge",
+    "chuan-coulomb"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "∇·A = 0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "∇·A + (1/c²)∂φ/∂t = 0",
+     "why_wrong": "Đó là chuẩn Lorenz, không phải chuẩn Coulomb."
+    },
+    {
+     "key": "C",
+     "text": "∇×A = 0",
+     "why_wrong": "∇×A = B; đặt bằng 0 sẽ triệt tiêu từ trường - vô lí, không phải điều kiện chuẩn."
+    },
+    {
+     "key": "D",
+     "text": "φ = 0",
+     "why_wrong": "Đó là chuẩn thời gian (temporal gauge), khác chuẩn Coulomb."
+    }
+   ],
+   "hints": [
+    "Chuẩn Coulomb là điều kiện phân kì.",
+    "Nó khiến φ thỏa phương trình Poisson tức thời."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0025",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Chuẩn Lorenz (bất biến Lorentz) được xác định bởi điều kiện nào?",
+   "statement_en": "The Lorenz gauge (Lorentz invariant) is defined by which condition?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện chuẩn Lorenz ghép ∇·A với biến thiên thời gian của φ.",
+     "latex": "\\nabla\\cdot\\vec{A} + \\frac{1}{c^{2}}\\frac{\\partial\\varphi}{\\partial t} = 0"
+    },
+    {
+     "explain": "Tương đương dạng bốn chiều ∂_μ A^μ = 0, nên bất biến Lorentz - thích hợp cho điện động lực tương đối tính.",
+     "latex": "\\partial_{\\mu}A^{\\mu} = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.chuan-lorenz"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận dạng điều kiện chuẩn Lorenz",
+    "tính bất biến Lorentz"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "gauge",
+    "chuan-lorenz"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "∇·A + (1/c²)∂φ/∂t = 0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "∇·A = 0",
+     "why_wrong": "Đó là chuẩn Coulomb; chuẩn Lorenz còn thêm số hạng (1/c²)∂φ/∂t."
+    },
+    {
+     "key": "C",
+     "text": "∇·A − (1/c²)∂φ/∂t = 0",
+     "why_wrong": "Sai dấu: điều kiện Lorenz có dấu cộng để tương ứng ∂_μA^μ = 0."
+    },
+    {
+     "key": "D",
+     "text": "∂φ/∂t = 0",
+     "why_wrong": "Đó không phải điều kiện chuẩn Lorenz; nó không ghép A với φ."
+    }
+   ],
+   "hints": [
+    "Chuẩn này bất biến Lorentz.",
+    "Tương đương ∂_μA^μ = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0026",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong chuẩn Lorenz, thế vô hướng φ thỏa phương trình nào?",
+   "statement_en": "In the Lorenz gauge, which equation does the scalar potential phi satisfy?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Bốn phương trình Maxwell rút thành phương trình sóng không thuần nhất cho các thế.",
+     "latex": "\\nabla^{2}\\varphi - \\frac{1}{c^{2}}\\frac{\\partial^{2}\\varphi}{\\partial t^{2}} = -\\frac{\\rho}{\\varepsilon_{0}}"
+    },
+    {
+     "explain": "Tương tự cho thế vectơ với nguồn là dòng điện.",
+     "latex": "\\nabla^{2}\\vec{A} - \\frac{1}{c^{2}}\\frac{\\partial^{2}\\vec{A}}{\\partial t^{2}} = -\\mu_{0}\\vec{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.phuong-trinh-song-cho-the"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "phương trình sóng không thuần nhất cho thế"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "phuong-trinh-song",
+    "dalembert"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "∇²φ − (1/c²)∂²φ/∂t² = −ρ/ε₀",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "∇²φ = −ρ/ε₀",
+     "why_wrong": "Đó là phương trình Poisson tĩnh; ở trường biến thiên phải có số hạng ∂²/∂t²."
+    },
+    {
+     "key": "C",
+     "text": "∇²φ + (1/c²)∂²φ/∂t² = −ρ/ε₀",
+     "why_wrong": "Sai dấu số hạng thời gian: toán tử d'Alembert có dấu trừ."
+    },
+    {
+     "key": "D",
+     "text": "∂φ/∂t = −ρ/ε₀",
+     "why_wrong": "Không có dạng bậc nhất theo thời gian như vậy cho thế."
+    }
+   ],
+   "hints": [
+    "Toán tử d'Alembert □² = ∇² − (1/c²)∂²/∂t².",
+    "Nguồn của φ là ρ/ε₀."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0027",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Một điện tích thay đổi tại nguồn; điểm quan sát cách nguồn khoảng cách |r − r'| = 450 m. Tính thời gian trễ Δt = t − t_r giữa lúc quan sát và lúc nguồn phát ra tín hiệu tương ứng (μs).",
+   "statement_en": "A source charge changes; the observation point is |r - r'| = 450 m away. Find the retardation Delta t = t - t_r between observation and emission (microseconds).",
+   "answer": "Δt = 1,5 μs",
+   "solution_steps": [
+    {
+     "explain": "Thời gian trễ: thông tin điện từ truyền với tốc độ c nên t_r = t − |r−r'|/c.",
+     "latex": "t_{r} = t - \\frac{|\\vec{r}-\\vec{r}\\,'|}{c}, \\quad \\Delta t = \\frac{|\\vec{r}-\\vec{r}\\,'|}{c}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Delta t = \\frac{450}{2{,}998\\times 10^{8}} = 1{,}50\\times 10^{-6}\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.the-tre"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "khái niệm thời gian trễ",
+    "tính thời gian truyền tín hiệu điện từ"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "the-tre",
+    "buc-xa"
+   ],
+   "answer_numeric": 1.501,
+   "answer_unit": "µs",
+   "tolerance": 0.02,
+   "hints": [
+    "Δt = khoảng cách / c.",
+    "c ≈ 3×10⁸ m/s."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0028",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Một điện tích điểm q = 1,0 nC chuyển động thẳng với vận tốc u = 0,6c hướng THẲNG tới điểm quan sát. Tại thời điểm trễ điện tích cách điểm quan sát R = 1,0 m. Dùng thế Liénard - Wiechert, tính thế vô hướng φ tại điểm quan sát (V). (Khi u ∥ R thì φ = kq/[R(1 − u/c)].)",
+   "statement_en": "A point charge q = 1.0 nC moves in a straight line at u = 0.6c directly toward the observation point; at retarded time R = 1.0 m. Using Lienard-Wiechert, find the scalar potential phi (V). (For u parallel R, phi = kq/[R(1 - u/c)].)",
+   "answer": "φ = 22,5 V",
+   "solution_steps": [
+    {
+     "explain": "Thế Liénard - Wiechert; khi vận tốc hướng thẳng tới điểm quan sát, R·u = R u nên mẫu số là Rc(1 − u/c).",
+     "latex": "\\varphi = \\frac{1}{4\\pi\\varepsilon_{0}}\\frac{qc}{\\mathcal{R}c - \\vec{\\mathcal{R}}\\cdot\\vec{u}} = \\frac{kq}{R\\left(1 - u/c\\right)}"
+    },
+    {
+     "explain": "Thay số: hệ số 1/(1 − 0,6) = 2,5 làm thế tăng gấp 2,5 lần so với tĩnh (8,99 V).",
+     "latex": "\\varphi = \\frac{8{,}99\\times 10^{9}\\cdot 10^{-9}}{1{,}0\\cdot 0{,}4} = 22{,}5\\ \\text{V}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.the-lienard-wiechert"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng thế Liénard - Wiechert",
+    "hiệu ứng vận tốc hướng tâm"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "lienard-wiechert",
+    "dien-tich-chuyen-dong"
+   ],
+   "answer_numeric": 22.47,
+   "answer_unit": "V",
+   "tolerance": 0.4493775896130586,
+   "hints": [
+    "Mẫu số Rc − R·u = Rc(1 − u/c) khi u ∥ R.",
+    "Thế tĩnh nhân 1/(1 − β)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0029",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Tại một điểm có điện trường đều E = 1,0×10⁶ V/m (không có từ trường). Dùng tenxơ ứng suất Maxwell, tính ứng suất kéo (căng) dọc theo đường sức, T = ε₀E²/2 (N/m²).",
+   "statement_en": "At a point the uniform field is E = 1.0e6 V/m (no magnetic field). Using the Maxwell stress tensor, find the tension along the field lines, T = eps0 E^2/2 (N/m^2).",
+   "answer": "T = 4,43 N/m²",
+   "solution_steps": [
+    {
+     "explain": "Thành phần ứng suất dọc theo E (căng như dây) rút ra từ tenxơ ứng suất Maxwell.",
+     "latex": "T = \\varepsilon_{0}\\left(E^{2} - \\tfrac{1}{2}E^{2}\\right) = \\frac{\\varepsilon_{0}E^{2}}{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "T = \\frac{8{,}854\\times 10^{-12}\\cdot(10^{6})^{2}}{2} = 4{,}43\\ \\text{N/m}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.tenxo-ung-suat-maxwell"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "ứng suất kéo dọc đường sức từ tenxơ Maxwell"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "tenxo-ung-suat",
+    "luc-dien-tu"
+   ],
+   "answer_numeric": 4.427,
+   "answer_unit": "Pa",
+   "tolerance": 0.02,
+   "hints": [
+    "Dọc E: T = ε₀E²/2.",
+    "Đơn vị N/m² = Pa."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0030",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Dòng bốn chiều trong điện động lực học hiệp biến và phương trình liên tục có dạng nào?",
+   "statement_en": "What are the four-current and the covariant continuity equation?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Dòng bốn chiều ghép mật độ điện tích và mật độ dòng; phương trình liên tục là bốn-phân kì bằng 0.",
+     "latex": "J^{\\mu} = (c\\rho, \\vec{J}), \\qquad \\partial_{\\mu}J^{\\mu} = 0"
+    },
+    {
+     "explain": "Đây chính là bảo toàn điện tích viết dưới dạng hiệp biến.",
+     "latex": "\\frac{\\partial \\rho}{\\partial t} + \\nabla\\cdot\\vec{J} = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.the-bon-chieu-va-dong-bon-chieu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dòng bốn chiều",
+    "phương trình liên tục hiệp biến"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "hiep-bien",
+    "bon-chieu"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "J^μ = (cρ, J) và ∂_μ J^μ = 0",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "J^μ = (ρ, J) và ∂_μ J^μ = c",
+     "why_wrong": "Thành phần thời gian phải là cρ để đồng thứ nguyên; và ∂_μJ^μ = 0 (bảo toàn), không bằng c."
+    },
+    {
+     "key": "C",
+     "text": "J^μ = (ρ/c, J) và ∂_μ J^μ = 0",
+     "why_wrong": "Thành phần thời gian là cρ, không phải ρ/c (so với A^μ = (φ/c, A))."
+    },
+    {
+     "key": "D",
+     "text": "J^μ = (cρ, J) và ∂_μ J^μ = ρ",
+     "why_wrong": "Phương trình liên tục cho vế phải bằng 0, không phải ρ."
+    }
+   ],
+   "hints": [
+    "Thành phần thời gian của J^μ là cρ.",
+    "Bảo toàn điện tích: ∂_μJ^μ = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0031",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Tenxơ trường điện từ F^{μν} = ∂^μA^ν − ∂^νA^μ có tính chất phản đối xứng. Số thành phần độc lập khác không của nó (trong 4 chiều) là bao nhiêu?",
+   "statement_en": "The EM field tensor F^{mu nu} = d^mu A^nu - d^nu A^mu is antisymmetric. How many independent components does it have in 4D?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Ma trận phản đối xứng 4×4 có 4·3/2 = 6 thành phần độc lập.",
+     "latex": "F^{\\mu\\nu} = -F^{\\nu\\mu} \\Rightarrow \\frac{4\\cdot 3}{2} = 6"
+    },
+    {
+     "explain": "Sáu thành phần đó chính là ba thành phần của E và ba của B.",
+     "latex": "F^{0i} = -E_{i}/c, \\qquad F^{ij} = -\\epsilon^{ijk}B_{k}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.tenxo-dien-tu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "cấu trúc phản đối xứng của tenxơ trường",
+    "ghép E và B"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "tenxo-dien-tu",
+    "hiep-bien"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "6 (ba thành phần của E và ba của B)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "16 (toàn bộ ma trận 4×4)",
+     "why_wrong": "Phản đối xứng khiến đường chéo bằng 0 và các phần tử đối xứng nhau, chỉ còn 6 độc lập."
+    },
+    {
+     "key": "C",
+     "text": "4 (như một bốn-vectơ)",
+     "why_wrong": "F^{μν} là tenxơ hạng hai, không phải bốn-vectơ; nó có 6 thành phần độc lập."
+    },
+    {
+     "key": "D",
+     "text": "10 (như tenxơ đối xứng)",
+     "why_wrong": "10 là số thành phần của tenxơ ĐỐI XỨNG 4×4; F phản đối xứng nên chỉ 6."
+    }
+   ],
+   "hints": [
+    "Ma trận phản đối xứng n×n có n(n−1)/2 thành phần.",
+    "Sáu thành phần = E và B."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0032",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình Maxwell hiệp biến ∂_μ F^{μν} = μ₀J^ν gói gọn hai định luật Maxwell nào?",
+   "statement_en": "The covariant equation d_mu F^{mu nu} = mu0 J^nu contains which two of Maxwell's laws?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Thành phần ν = 0 cho định luật Gauss, các thành phần ν = i cho định luật Ampère - Maxwell.",
+     "latex": "\\partial_{\\mu}F^{\\mu 0} = \\mu_{0}J^{0} \\Rightarrow \\nabla\\cdot\\vec{E} = \\rho/\\varepsilon_{0}"
+    },
+    {
+     "explain": "Hai phương trình thuần nhất còn lại (∇·B = 0, Faraday) nằm trong đồng nhất thức Bianchi.",
+     "latex": "\\partial^{\\lambda}F^{\\mu\\nu} + \\partial^{\\mu}F^{\\nu\\lambda} + \\partial^{\\nu}F^{\\lambda\\mu} = 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.maxwell-hiep-bien"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "hệ Maxwell dạng hiệp biến",
+    "phân biệt phương trình có nguồn và thuần nhất"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "maxwell",
+    "hiep-bien"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Định luật Gauss và định luật Ampère - Maxwell",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Định luật Faraday và ∇·B = 0",
+     "why_wrong": "Hai phương trình thuần nhất này nằm trong đồng nhất thức Bianchi, không phải ∂_μF^{μν} = μ₀J^ν."
+    },
+    {
+     "key": "C",
+     "text": "Chỉ định luật Gauss",
+     "why_wrong": "Phương trình còn chứa cả Ampère - Maxwell ở các thành phần không gian."
+    },
+    {
+     "key": "D",
+     "text": "Định luật Coulomb và định luật Ohm",
+     "why_wrong": "Đây không phải các phương trình Maxwell cơ bản; Ohm là quan hệ vật chất."
+    }
+   ],
+   "hints": [
+    "Phương trình có nguồn J^ν gói các định luật có nguồn.",
+    "Phương trình thuần nhất thuộc đồng nhất thức Bianchi."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0033",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Trong hệ K có từ trường đều B = 0,5 T (theo ẑ) và không có điện trường. Xét hệ K' chuyển động với v = 0,6c theo x̂. Tính độ lớn điện trường E' quan sát được trong K' (V/m). (E'_⊥ = γ(E + v×B)_⊥, γ = 1,25.)",
+   "statement_en": "In frame K there is a uniform B = 0.5 T (along z) and no E. Frame K' moves at v = 0.6c along x. Find the magnitude of E' seen in K' (V/m). (E'_perp = gamma (E + v x B)_perp, gamma = 1.25.)",
+   "answer": "E' = 1,12×10^8 V/m",
+   "solution_steps": [
+    {
+     "explain": "Thành phần vuông góc của điện trường biến đổi theo E'_⊥ = γ(E + v×B)_⊥; ở đây E = 0.",
+     "latex": "\\vec{E}'_{\\perp} = \\gamma\\left(\\vec{v}\\times\\vec{B}\\right)_{\\perp}, \\quad |\\vec{v}\\times\\vec{B}| = vB_{0}"
+    },
+    {
+     "explain": "Thay số: v = 0,6c, γ = 1,25.",
+     "latex": "E' = \\gamma v B_{0} = 1{,}25\\cdot 0{,}6\\cdot 2{,}998\\times 10^{8}\\cdot 0{,}5 \\approx 1{,}12\\times 10^{8}\\ \\text{V/m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.bien-doi-truong-giua-cac-he"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "biến đổi trường điện từ giữa hai hệ quy chiếu",
+    "từ trường sinh điện trường"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "bien-doi-lorentz",
+    "hiep-bien"
+   ],
+   "answer_numeric": 112422171.74999999,
+   "answer_unit": "V/m",
+   "tolerance": 2248443.4349999996,
+   "hints": [
+    "E = 0 nên E' = γ·v×B.",
+    "|v×B| = vB₀ vì v ⊥ B."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0034",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "dien-so",
+   "statement_vi": "Tại một điểm có E = 3,0×10⁶ V/m và B = 0,02 T (vuông góc nhau). Tính bất biến Lorentz B² − E²/c² (T²) - đại lượng có cùng giá trị trong mọi hệ quy chiếu quán tính.",
+   "statement_en": "At a point E = 3.0e6 V/m and B = 0.02 T (perpendicular). Compute the Lorentz invariant B^2 - E^2/c^2 (T^2), which is the same in every inertial frame.",
+   "answer": "B² − E²/c² = 3×10^-4 T²",
+   "solution_steps": [
+    {
+     "explain": "Một trong hai bất biến của trường điện từ.",
+     "latex": "\\frac{1}{2}F_{\\mu\\nu}F^{\\mu\\nu} = B^{2} - \\frac{E^{2}}{c^{2}}"
+    },
+    {
+     "explain": "Thay số: E²/c² = (3×10⁶)²/(2,998×10⁸)² ≈ 1,00×10⁻⁴ T².",
+     "latex": "B^{2} - \\frac{E^{2}}{c^{2}} = 4{,}0\\times 10^{-4} - 1{,}00\\times 10^{-4} = 3{,}0\\times 10^{-4}\\ \\text{T}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.bat-bien-cua-truong-dien-tu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính bất biến của trường điện từ"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "bat-bien",
+    "hiep-bien"
+   ],
+   "answer_numeric": 0.00029986149495517435,
+   "answer_unit": "T^2",
+   "tolerance": 8.99584484865523e-06,
+   "hints": [
+    "Bất biến = B² − E²/c².",
+    "Chú ý E²/c² có đơn vị T²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0035",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Điện động lực học",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong lực Minkowski dp^μ/dτ = q F^{μν}u_ν, thành phần KHÔNG gian và thành phần thời gian lần lượt cho ta điều gì?",
+   "statement_en": "In the Minkowski force dp^mu/dtau = q F^{mu nu} u_nu, what do the space and time components give?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Thành phần không gian tái tạo lực Lorentz ba chiều; thành phần thời gian cho tốc độ biến thiên năng lượng.",
+     "latex": "\\frac{d\\vec{p}}{dt} = q(\\vec{E} + \\vec{v}\\times\\vec{B}), \\qquad \\frac{dE}{dt} = q\\vec{E}\\cdot\\vec{v}"
+    },
+    {
+     "explain": "Vận tốc bốn chiều u^ν = γ(c, v) đảm bảo dạng hiệp biến.",
+     "latex": "u^{\\nu} = \\gamma(c,\\vec{v})"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.dien-dong-luc.luc-lorentz-hiep-bien"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "ý nghĩa thành phần không gian và thời gian của lực Minkowski"
+   ],
+   "tags": [
+    "dien-dong-luc",
+    "luc-lorentz",
+    "hiep-bien"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Không gian: lực Lorentz q(E + v×B); thời gian: công suất qE·v",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Không gian: động lượng bảo toàn; thời gian: khối lượng bảo toàn",
+     "why_wrong": "Phương trình mô tả tốc độ biến thiên động lượng và năng lượng, không phải bảo toàn."
+    },
+    {
+     "key": "C",
+     "text": "Cả hai đều cho lực Lorentz như nhau",
+     "why_wrong": "Thành phần thời gian cho công suất (biến thiên năng lượng), khác thành phần không gian."
+    },
+    {
+     "key": "D",
+     "text": "Không gian: công suất; thời gian: lực",
+     "why_wrong": "Đảo ngược: thành phần không gian là lực, thời gian là công suất."
+    }
+   ],
+   "hints": [
+    "Thành phần không gian ↔ lực.",
+    "Thành phần thời gian ↔ công suất qE·v."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0036",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Giá trị của giao hoán tử cơ bản [x̂, p̂_x] giữa toán tử tọa độ và toán tử động lượng là bao nhiêu?",
+   "statement_en": "What is the value of the fundamental commutator [x, p_x] between position and momentum operators?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Tác dụng [x̂, p̂_x] lên hàm thử ψ, dùng p̂_x = −iħ∂/∂x.",
+     "latex": "[\\hat{x},\\hat{p}_{x}]\\psi = x(-i\\hbar\\psi') - (-i\\hbar)(x\\psi)' = i\\hbar\\psi"
+    },
+    {
+     "explain": "Vậy [x̂, p̂_x] = iħ - hệ thức dẫn tới nguyên lí bất định.",
+     "latex": "[\\hat{x},\\hat{p}_{x}] = i\\hbar"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.giao-hoan-tu-dinh-nghia"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính giao hoán tử tọa độ - động lượng"
+   ],
+   "tags": [
+    "luong-tu",
+    "giao-hoan-tu",
+    "toan-tu"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "iħ",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "0",
+     "why_wrong": "Nếu bằng 0 thì x và p đo được đồng thời chính xác, mâu thuẫn với nguyên lí bất định."
+    },
+    {
+     "key": "C",
+     "text": "−iħ",
+     "why_wrong": "Sai dấu: [x, p] = +iħ; đảo lại [p, x] mới bằng −iħ."
+    },
+    {
+     "key": "D",
+     "text": "ħ²",
+     "why_wrong": "Sai thứ nguyên và giá trị; giao hoán tử [x,p] có thứ nguyên tác dụng, bằng iħ."
+    }
+   ],
+   "hints": [
+    "Dùng p̂ = −iħ∂/∂x tác dụng lên xψ.",
+    "Kết quả thuần ảo, tỉ lệ ħ."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0037",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo định lí Ehrenfest, tốc độ biến thiên trị trung bình của động lượng d⟨p⟩/dt bằng gì?",
+   "statement_en": "By Ehrenfest's theorem, the rate of change of the mean momentum d<p>/dt equals what?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Trị trung bình lượng tử tuân theo phương trình dạng Newton.",
+     "latex": "\\frac{d\\langle \\vec{p}\\rangle}{dt} = -\\left\\langle \\nabla V \\right\\rangle"
+    },
+    {
+     "explain": "Cùng với m d⟨r⟩/dt = ⟨p⟩, đây là cầu nối tới giới hạn cổ điển.",
+     "latex": "m\\frac{d\\langle \\vec{r}\\rangle}{dt} = \\langle \\vec{p}\\rangle"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.dinh-li-ehrenfest"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "định lí Ehrenfest",
+    "giới hạn cổ điển"
+   ],
+   "tags": [
+    "luong-tu",
+    "ehrenfest",
+    "gioi-han-co-dien"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "−⟨∇V⟩, tức trị trung bình của lực",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "⟨∇V⟩",
+     "why_wrong": "Sai dấu: lực là −∇V nên d⟨p⟩/dt = −⟨∇V⟩."
+    },
+    {
+     "key": "C",
+     "text": "0 luôn luôn",
+     "why_wrong": "Chỉ bằng 0 khi ⟨∇V⟩ = 0 (ví dụ hạt tự do); nói chung khác 0."
+    },
+    {
+     "key": "D",
+     "text": "⟨p⟩/m",
+     "why_wrong": "Đó là d⟨r⟩/dt (vận tốc), không phải d⟨p⟩/dt."
+    }
+   ],
+   "hints": [
+    "Phương trình dạng Newton cho trị trung bình.",
+    "Lực = −∇V."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0038",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một electron tự do có hàm sóng phẳng ψ = A·e^{ikx} với k = 2,0×10¹⁰ m⁻¹. Mật độ dòng xác suất j = (ħk/m)|A|² = ρ·v. Tính vận tốc xác suất v = ħk/m (m/s).",
+   "statement_en": "A free electron has plane wave psi = A e^{ikx} with k = 2.0e10 1/m. The probability current is j = (hbar k/m)|A|^2 = rho v. Find the probability velocity v = hbar k/m (m/s).",
+   "answer": "v = 2,32×10^6 m/s",
+   "solution_steps": [
+    {
+     "explain": "Với sóng phẳng, mật độ dòng xác suất rút gọn thành j = (ħk/m)|A|² = ρv với v = ħk/m.",
+     "latex": "\\vec{j} = \\frac{\\hbar}{2mi}\\left(\\psi^{*}\\nabla\\psi - \\psi\\nabla\\psi^{*}\\right) = \\frac{\\hbar k}{m}|A|^{2}"
+    },
+    {
+     "explain": "Thay số cho electron.",
+     "latex": "v = \\frac{\\hbar k}{m} = \\frac{1{,}0546\\times 10^{-34}\\cdot 2{,}0\\times 10^{10}}{9{,}109\\times 10^{-31}} \\approx 2{,}32\\times 10^{6}\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.mat-do-dong-xac-suat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "mật độ dòng xác suất của sóng phẳng",
+    "liên hệ j = ρv"
+   ],
+   "tags": [
+    "luong-tu",
+    "dong-xac-suat",
+    "lien-tuc"
+   ],
+   "answer_numeric": 2315352.721010859,
+   "answer_unit": "m/s",
+   "tolerance": 46307.05442021718,
+   "hints": [
+    "j = (ħk/m)|A|² nên v = ħk/m.",
+    "Đây chính là p/m = ħk/m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0039",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một trạng thái riêng năng lượng có E = 3,0 eV tiến hóa theo toán tử U(t) = e^{−iĤt/ħ}, tức nhân pha e^{−iEt/ħ}. Tính khoảng thời gian để pha quay đủ một vòng 2π (s).",
+   "statement_en": "An energy eigenstate with E = 3.0 eV evolves via U(t) = e^{-iHt/hbar}, i.e. phase e^{-iEt/hbar}. Find the time for the phase to advance by 2 pi (s).",
+   "answer": "t = 1,38×10^-15 s",
+   "solution_steps": [
+    {
+     "explain": "Toán tử tiến hóa cho trạng thái riêng nhân một pha; pha tích lũy là Et/ħ.",
+     "latex": "|\\psi(t)\\rangle = e^{-iEt/\\hbar}|\\psi(0)\\rangle, \\quad \\frac{Et}{\\hbar} = 2\\pi"
+    },
+    {
+     "explain": "Suy ra t = 2πħ/E = h/E.",
+     "latex": "t = \\frac{h}{E} = \\frac{6{,}626\\times 10^{-34}}{3{,}0\\cdot 1{,}602\\times 10^{-19}} \\approx 1{,}38\\times 10^{-15}\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.toan-tu-tien-hoa-thoi-gian"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "toán tử tiến hóa thời gian",
+    "chu kì pha lượng tử"
+   ],
+   "tags": [
+    "luong-tu",
+    "tien-hoa-thoi-gian",
+    "unita"
+   ],
+   "answer_numeric": 1.3785558989746197e-15,
+   "answer_unit": "s",
+   "tolerance": 2.7571117979492393e-17,
+   "hints": [
+    "Pha = Et/ħ = 2π.",
+    "t = h/E; đổi E ra jun."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0040",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình chuyển động Heisenberg cho một toán tử Â_H không phụ thuộc tường minh thời gian có dạng nào?",
+   "statement_en": "The Heisenberg equation of motion for an operator A_H with no explicit time dependence is which?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Trong biểu diễn Heisenberg, toán tử biến thiên theo thời gian qua giao hoán tử với Hamiltonian.",
+     "latex": "\\frac{d\\hat{A}_{H}}{dt} = \\frac{i}{\\hbar}[\\hat{H},\\hat{A}_{H}]"
+    },
+    {
+     "explain": "Đây là ánh xạ lượng tử của phương trình df/dt = {f, H} trong cơ học giải tích.",
+     "latex": "\\{f,H\\} \\;\\longleftrightarrow\\; \\frac{i}{\\hbar}[\\hat{H},\\hat{A}]"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.phuong-trinh-heisenberg"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "phương trình Heisenberg",
+    "tương ứng với ngoặc Poisson"
+   ],
+   "tags": [
+    "luong-tu",
+    "heisenberg",
+    "bieu-dien"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "dA_H/dt = (i/ħ)[Ĥ, Â_H]",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "dA_H/dt = (i/ħ)[Â_H, Ĥ]",
+     "why_wrong": "Sai thứ tự giao hoán tử: đúng là [Ĥ, Â], hoán đổi sẽ đổi dấu."
+    },
+    {
+     "key": "C",
+     "text": "iħ dA_H/dt = ĤÂ_H",
+     "why_wrong": "Đây không phải phương trình Heisenberg; toán tử biến thiên theo giao hoán tử, không phải tích đơn giản."
+    },
+    {
+     "key": "D",
+     "text": "dA_H/dt = 0 với mọi toán tử",
+     "why_wrong": "Chỉ đúng khi Â giao hoán với Ĥ (đại lượng bảo toàn); nói chung khác 0."
+    }
+   ],
+   "hints": [
+    "Toán tử biến thiên qua [Ĥ, Â].",
+    "So sánh với ngoặc Poisson cổ điển."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0041",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Nguyên tử hiđrô ở mức năng lượng n = 3. Hàm sóng có dạng ψ_{nℓm} = R_{nℓ}(r)Y_ℓ^m(θ,φ) với ℓ = 0..n−1, m = −ℓ..ℓ. Tính độ suy biến của mức (kể cả spin electron).",
+   "statement_en": "Hydrogen at level n = 3. Wavefunctions psi_{n l m} = R Y with l = 0..n-1, m = -l..l. Find the degeneracy of the level (including electron spin).",
+   "answer": "g = 18",
+   "solution_steps": [
+    {
+     "explain": "Với mỗi n, tổng số cặp (ℓ, m) bằng n²; nhân 2 cho hai trạng thái spin.",
+     "latex": "g = 2\\sum_{\\ell=0}^{n-1}(2\\ell+1) = 2n^{2}"
+    },
+    {
+     "explain": "Thay n = 3.",
+     "latex": "g = 2\\cdot 3^{2} = 18"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.ham-song-hidro-tach-bien"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đếm độ suy biến của mức hiđrô",
+    "cấu trúc số lượng tử n, ℓ, m"
+   ],
+   "tags": [
+    "luong-tu",
+    "hidro",
+    "suy-bien"
+   ],
+   "answer_numeric": 18,
+   "answer_unit": "trạng thái",
+   "tolerance": 0.5,
+   "hints": [
+    "Số (ℓ,m) với ℓ=0..n−1 bằng n².",
+    "Nhân 2 cho spin."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0042",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Cộng hai mômen động lượng có j₁ = 2 và j₂ = 1. Tổng số trạng thái |j m⟩ (đếm theo cả cơ sở tích lẫn cơ sở tổng) là bao nhiêu?",
+   "statement_en": "Add two angular momenta j1 = 2 and j2 = 1. What is the total number of states |j m>?",
+   "answer": "15 trạng thái",
+   "solution_steps": [
+    {
+     "explain": "Tổng số trạng thái được bảo toàn: bằng (2j₁+1)(2j₂+1).",
+     "latex": "N = (2j_{1}+1)(2j_{2}+1) = 5\\cdot 3 = 15"
+    },
+    {
+     "explain": "Kiểm tra: j chạy từ |j₁−j₂| = 1 tới j₁+j₂ = 3, tổng Σ(2j+1) = 3+5+7 = 15.",
+     "latex": "\\sum_{j=1}^{3}(2j+1) = 15"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.cong-momen-dong-luong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "quy tắc cộng mômen động lượng",
+    "bảo toàn số trạng thái"
+   ],
+   "tags": [
+    "luong-tu",
+    "clebsch-gordan",
+    "cong-momen"
+   ],
+   "answer_numeric": 15,
+   "answer_unit": "trạng thái",
+   "tolerance": 0.5,
+   "hints": [
+    "Số trạng thái = (2j₁+1)(2j₂+1).",
+    "Kiểm tra bằng Σ(2j+1) với j từ 1 tới 3."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0043",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Với hiđrô ở trạng thái cơ bản n = 1 (j = 1/2), mức năng lượng có cấu trúc tinh tế là E = −(13,6/n²)[1 + (α²/n²)(n/(j+1/2) − 3/4)] eV. Tính độ dịch cấu trúc tinh tế ΔE so với −13,6 eV (eV). Cho α = 1/137.",
+   "statement_en": "For hydrogen ground state n = 1 (j = 1/2), the fine-structure level is E = -(13.6/n^2)[1 + (alpha^2/n^2)(n/(j+1/2) - 3/4)] eV. Find the fine-structure shift Delta E relative to -13.6 eV (eV). Take alpha = 1/137.",
+   "answer": "ΔE = -1,81×10^-4 eV",
+   "solution_steps": [
+    {
+     "explain": "Với n = 1, j = 1/2: n/(j+1/2) = 1, nên trong ngoặc còn α²(1 − 3/4) = α²/4.",
+     "latex": "\\Delta E = -13{,}6\\cdot\\frac{\\alpha^{2}}{1}\\left(\\frac{1}{1} - \\frac{3}{4}\\right) = -13{,}6\\cdot\\frac{\\alpha^{2}}{4}"
+    },
+    {
+     "explain": "Thay α² ≈ 5,33×10⁻⁵.",
+     "latex": "\\Delta E = -13{,}6\\cdot\\frac{5{,}33\\times 10^{-5}}{4} \\approx -1{,}81\\times 10^{-4}\\ \\text{eV}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.cau-truc-tinh-te-hidro"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính hiệu chỉnh cấu trúc tinh tế",
+    "vai trò hằng số α"
+   ],
+   "tags": [
+    "luong-tu",
+    "cau-truc-tinh-te",
+    "hidro"
+   ],
+   "answer_numeric": -0.00018105460559143664,
+   "answer_unit": "eV",
+   "tolerance": 5.4316381677430985e-06,
+   "hints": [
+    "Với n=1, j=1/2: n/(j+1/2) = 1.",
+    "ΔE = −13,6·α²/4."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0044",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong lí thuyết nhiễu loạn dừng không suy biến, hiệu chỉnh bậc một của hàm sóng |ψ_n^{(1)}⟩ được viết dưới dạng nào?",
+   "statement_en": "In non-degenerate perturbation theory, how is the first-order wavefunction correction written?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hiệu chỉnh bậc một là tổng trên các trạng thái m ≠ n, với hệ số là phần tử ma trận chia hiệu năng lượng.",
+     "latex": "|\\psi_{n}^{(1)}\\rangle = \\sum_{m\\ne n}\\frac{\\langle \\psi_{m}^{(0)}|\\hat{H}'|\\psi_{n}^{(0)}\\rangle}{E_{n}^{(0)} - E_{m}^{(0)}}|\\psi_{m}^{(0)}\\rangle"
+    },
+    {
+     "explain": "Số hạng m = n bị loại vì mẫu số bằng 0; đó là lí do phổ phải không suy biến.",
+     "latex": "m \\ne n \\Rightarrow E_{n}^{(0)} - E_{m}^{(0)} \\ne 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.ham-song-hieu-chinh-bac-mot"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "công thức hiệu chỉnh hàm sóng bậc một"
+   ],
+   "tags": [
+    "luong-tu",
+    "nhieu-loan",
+    "ham-song"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tổng trên m ≠ n của ⟨ψ_m|H'|ψ_n⟩/(E_n − E_m)·|ψ_m⟩",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Tổng trên MỌI m (kể cả m = n)",
+     "why_wrong": "Số hạng m = n có mẫu số bằng 0, phải loại; chỉ tổng trên m ≠ n."
+    },
+    {
+     "key": "C",
+     "text": "⟨ψ_n|H'|ψ_n⟩·|ψ_n⟩",
+     "why_wrong": "Đó là hiệu chỉnh năng lượng bậc một (một số), không phải hiệu chỉnh hàm sóng."
+    },
+    {
+     "key": "D",
+     "text": "Tổng với mẫu số E_m − E_n",
+     "why_wrong": "Sai dấu mẫu số: đúng là E_n − E_m."
+    }
+   ],
+   "hints": [
+    "Loại số hạng m = n (mẫu số 0).",
+    "Mẫu số là E_n − E_m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0045",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Trong tán xạ lượng tử đàn hồi, tiết diện vi phân bằng bình phương biên độ tán xạ: dσ/dΩ = |f(θ)|². Nếu biên độ tán xạ f = 3,0×10⁻¹⁵ m (đẳng hướng), tính dσ/dΩ (m²/sr).",
+   "statement_en": "In elastic quantum scattering, the differential cross section equals |f(theta)|^2. If the amplitude f = 3.0e-15 m (isotropic), find dsigma/dOmega (m^2/sr).",
+   "answer": "dσ/dΩ = 9×10^-30 m²/sr",
+   "solution_steps": [
+    {
+     "explain": "Tiết diện vi phân bằng |f|² (thừa số chuẩn hóa A triệt tiêu, KHÔNG chia cho |A|²).",
+     "latex": "\\frac{d\\sigma}{d\\Omega} = |f(\\theta)|^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\frac{d\\sigma}{d\\Omega} = (3{,}0\\times 10^{-15})^{2} = 9{,}0\\times 10^{-30}\\ \\text{m}^{2}/\\text{sr}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.bien-do-tan-xa"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ tiết diện vi phân với biên độ tán xạ"
+   ],
+   "tags": [
+    "luong-tu",
+    "tan-xa",
+    "tiet-dien"
+   ],
+   "answer_numeric": 9e-30,
+   "answer_unit": "m^2/sr",
+   "tolerance": 1.7999999999999998e-31,
+   "hints": [
+    "dσ/dΩ = |f|².",
+    "Không chia cho |A|²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0046",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Xấp xỉ Born bậc một cho biên độ tán xạ f(θ) ≈ −(2m/ħ²κ)∫r V(r)sin(κr)dr đúng tốt nhất trong điều kiện nào?",
+   "statement_en": "The first Born approximation is most accurate under which condition?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Xấp xỉ Born tốt khi sóng tán xạ nhỏ so với sóng tới: thế yếu hoặc năng lượng tới lớn.",
+     "latex": "f(\\theta) \\approx -\\frac{2m}{\\hbar^{2}\\kappa}\\int_{0}^{\\infty} r V(r)\\sin(\\kappa r)\\,dr, \\quad \\kappa = 2k\\sin\\frac{\\theta}{2}"
+    },
+    {
+     "explain": "Áp dụng cho thế Yukawa (Coulomb chắn) rồi cho tầm chắn ra vô hạn thu lại công thức Rutherford.",
+     "latex": "V(r) = \\beta\\frac{e^{-\\mu r}}{r}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.xap-xi-born"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "điều kiện áp dụng xấp xỉ Born",
+    "thế xuyên tâm"
+   ],
+   "tags": [
+    "luong-tu",
+    "tan-xa",
+    "born"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Thế yếu hoặc năng lượng tới lớn (sóng tán xạ nhỏ so với sóng tới)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Thế rất mạnh và năng lượng tới rất nhỏ",
+     "why_wrong": "Đó là chế độ Born KÉM chính xác nhất; sóng tán xạ lớn nên khai triển bậc một hỏng."
+    },
+    {
+     "key": "C",
+     "text": "Chỉ khi thế đúng bằng thế Coulomb thuần",
+     "why_wrong": "Coulomb thuần có tầm vô hạn gây phân kì; Born dùng được cho thế giảm nhanh/chắn."
+    },
+    {
+     "key": "D",
+     "text": "Chỉ ở góc tán xạ θ = 0",
+     "why_wrong": "Xấp xỉ Born cho mọi góc; điều kiện là về độ mạnh thế và năng lượng, không phải góc."
+    }
+   ],
+   "hints": [
+    "Born là khai triển theo độ mạnh thế.",
+    "Thế yếu / năng lượng cao thì tốt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0047",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Ở năng lượng thấp, tán xạ chỉ có sóng s (ℓ = 0). Với số sóng k = 1,0×10¹⁰ m⁻¹ và độ dịch pha δ₀ = 0,5 rad, tính tiết diện toàn phần σ = (4π/k²)sin²δ₀ (m²).",
+   "statement_en": "At low energy only the s-wave (l = 0) contributes. With k = 1.0e10 1/m and phase shift delta_0 = 0.5 rad, find the total cross section sigma = (4 pi/k^2) sin^2 delta_0 (m^2).",
+   "answer": "σ = 2,89×10^-20 m²",
+   "solution_steps": [
+    {
+     "explain": "Khai triển sóng riêng phần cho tiết diện toàn phần; ở năng lượng thấp chỉ giữ ℓ = 0.",
+     "latex": "\\sigma_{t} = \\frac{4\\pi}{k^{2}}\\sum_{\\ell}(2\\ell+1)\\sin^{2}\\delta_{\\ell} \\approx \\frac{4\\pi}{k^{2}}\\sin^{2}\\delta_{0}"
+    },
+    {
+     "explain": "Thay số: sin²(0,5) ≈ 0,2298.",
+     "latex": "\\sigma = \\frac{4\\pi}{(10^{10})^{2}}\\cdot 0{,}2298 \\approx 2{,}89\\times 10^{-20}\\ \\text{m}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.khai-trien-song-rieng-phan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "khai triển sóng riêng phần",
+    "chi phối của sóng s ở năng lượng thấp"
+   ],
+   "tags": [
+    "luong-tu",
+    "tan-xa",
+    "song-rieng-phan"
+   ],
+   "answer_numeric": 2.88836579751364e-20,
+   "answer_unit": "m^2",
+   "tolerance": 8.66509739254092e-22,
+   "hints": [
+    "Chỉ giữ ℓ = 0: σ = (4π/k²)sin²δ₀.",
+    "sin²(0,5 rad) ≈ 0,23."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0048",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Định lí quang học liên hệ tiết diện toàn phần với phần ảo của biên độ tán xạ về phía trước: σ_t = (4π/k)·Im f(0). Với k = 2,0×10¹⁰ m⁻¹ và Im f(0) = 1,0×10⁻¹⁵ m, tính σ_t (m²).",
+   "statement_en": "The optical theorem gives sigma_t = (4 pi/k) Im f(0). With k = 2.0e10 1/m and Im f(0) = 1.0e-15 m, find sigma_t (m^2).",
+   "answer": "σ_t = 6,28×10^-25 m²",
+   "solution_steps": [
+    {
+     "explain": "Định lí quang học là hệ quả của bảo toàn xác suất (tính unita của ma trận S).",
+     "latex": "\\sigma_{t} = \\frac{4\\pi}{k}\\,\\mathrm{Im}\\,f(0)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\sigma_{t} = \\frac{4\\pi}{2{,}0\\times 10^{10}}\\cdot 1{,}0\\times 10^{-15} \\approx 6{,}28\\times 10^{-25}\\ \\text{m}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.dinh-li-quang-hoc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng định lí quang học"
+   ],
+   "tags": [
+    "luong-tu",
+    "tan-xa",
+    "dinh-li-quang-hoc"
+   ],
+   "answer_numeric": 6.283185307179586e-25,
+   "answer_unit": "m^2",
+   "tolerance": 1.2566370614359174e-26,
+   "hints": [
+    "σ_t = (4π/k)Im f(0).",
+    "Chỉ dùng phần ảo của f theo phương tới."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0049",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Hàm sóng hai hạt ψ_± = (1/√2)[ψ_a(r₁)ψ_b(r₂) ± ψ_b(r₁)ψ_a(r₂)]. Với hai fermion ở cùng một trạng thái một hạt (a = b), điều gì xảy ra?",
+   "statement_en": "Two-particle wavefunction psi_pm = (1/sqrt2)[psi_a(1)psi_b(2) +/- psi_b(1)psi_a(2)]. For two fermions in the same single-particle state (a = b), what happens?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Fermion dùng dấu trừ (phản đối xứng); đặt a = b làm hai số hạng triệt tiêu.",
+     "latex": "\\psi_{-} = \\frac{1}{\\sqrt{2}}\\left[\\psi_{a}(1)\\psi_{a}(2) - \\psi_{a}(1)\\psi_{a}(2)\\right] = 0"
+    },
+    {
+     "explain": "Hàm sóng bằng 0 nghĩa là trạng thái không tồn tại - chính là nguyên lí loại trừ Pauli.",
+     "latex": "\\psi_{-} = 0 \\Rightarrow \\text{nguyên lí Pauli}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.hat-dong-nhat-ham-song"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính phản đối xứng của fermion",
+    "nguyên lí Pauli từ hàm sóng"
+   ],
+   "tags": [
+    "luong-tu",
+    "hat-dong-nhat",
+    "pauli"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Hàm sóng triệt tiêu (= 0): hai fermion không thể cùng một trạng thái - nguyên lí Pauli",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Hàm sóng đạt cực đại",
+     "why_wrong": "Với dấu trừ và a = b, hai số hạng bằng nhau trừ đi nhau cho 0, không phải cực đại."
+    },
+    {
+     "key": "C",
+     "text": "Hàm sóng vẫn chuẩn hóa được như thường",
+     "why_wrong": "Hàm bằng 0 không chuẩn hóa được; trạng thái bị cấm."
+    },
+    {
+     "key": "D",
+     "text": "Hai boson chồng lên nhau",
+     "why_wrong": "Câu hỏi về fermion (dấu trừ); boson (dấu cộng) mới cho phép cùng trạng thái."
+    }
+   ],
+   "hints": [
+    "Fermion dùng dấu trừ.",
+    "a = b khiến hai số hạng bằng nhau."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0050",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Định thức Slater Ψ = (1/√N!)det[ψ_i(k)] mô tả hệ N fermion. Nếu hai spin-orbital ψ_i trùng nhau thì định thức bằng bao nhiêu?",
+   "statement_en": "The Slater determinant Psi = (1/sqrt(N!)) det[psi_i(k)] describes N fermions. If two spin-orbitals coincide, what is the determinant?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Định thức có hai hàng (hoặc cột) bằng nhau thì bằng 0.",
+     "latex": "\\det[\\psi_{i}(k)] = 0 \\quad (\\text{khi } \\psi_{i} = \\psi_{j})"
+    },
+    {
+     "explain": "Đây là biểu hiện của nguyên lí Pauli; định thức Slater tự động phản đối xứng.",
+     "latex": "\\Psi(\\dots,k,\\dots,l,\\dots) = -\\Psi(\\dots,l,\\dots,k,\\dots)"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.dinh-thuc-slater"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "định thức Slater",
+    "nguyên lí Pauli"
+   ],
+   "tags": [
+    "luong-tu",
+    "slater",
+    "fermion"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Bằng 0 (nguyên lí Pauli)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Bằng 1",
+     "why_wrong": "Định thức có hai hàng trùng nhau luôn bằng 0, không phải 1."
+    },
+    {
+     "key": "C",
+     "text": "Bằng N!",
+     "why_wrong": "Thừa số N! nằm ở chuẩn hóa 1/√N!; định thức với hàng trùng vẫn bằng 0."
+    },
+    {
+     "key": "D",
+     "text": "Không xác định",
+     "why_wrong": "Định thức luôn xác định và bằng 0 khi có hàng trùng."
+    }
+   ],
+   "hints": [
+    "Định thức có hai hàng bằng nhau thì bằng 0.",
+    "Đó là nguyên lí Pauli."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0051",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một hệ spin-1/2 ở trạng thái hỗn hợp mô tả bởi ma trận mật độ ρ = diag(0,7; 0,3) trong cơ sở {|↑⟩, |↓⟩}. Với σ_z = diag(1; −1), tính trị trung bình ⟨σ_z⟩ = Tr(ρσ_z).",
+   "statement_en": "A spin-1/2 system is in a mixed state rho = diag(0.7, 0.3) in {up, down} basis. With sigma_z = diag(1, -1), find <sigma_z> = Tr(rho sigma_z).",
+   "answer": "⟨σ_z⟩ = 0,4",
+   "solution_steps": [
+    {
+     "explain": "Trị trung bình trong ngôn ngữ ma trận mật độ là vết của tích ρσ_z.",
+     "latex": "\\langle \\hat{A}\\rangle = \\mathrm{Tr}(\\hat{\\rho}\\hat{A})"
+    },
+    {
+     "explain": "Với ρ và σ_z đều chéo, vết là tổng tích các phần tử chéo.",
+     "latex": "\\langle \\sigma_{z}\\rangle = 0{,}7\\cdot 1 + 0{,}3\\cdot(-1) = 0{,}4"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.ma-tran-mat-do"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính trị trung bình bằng Tr(ρA)"
+   ],
+   "tags": [
+    "luong-tu",
+    "ma-tran-mat-do",
+    "trang-thai-hon-hop"
+   ],
+   "answer_numeric": 0.4,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "hints": [
+    "⟨A⟩ = Tr(ρA).",
+    "Ma trận chéo: cộng tích các phần tử chéo."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0052",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Cùng ma trận mật độ ρ = diag(0,7; 0,3) của một qubit. Tính độ thuần Tr(ρ²) và cho biết trạng thái là thuần hay hỗn hợp.",
+   "statement_en": "For the qubit rho = diag(0.7, 0.3), compute the purity Tr(rho^2) and state whether it is pure or mixed.",
+   "answer": "Tr(ρ²) = 0,58 (trạng thái hỗn hợp)",
+   "solution_steps": [
+    {
+     "explain": "Độ thuần bằng vết của ρ².",
+     "latex": "\\mathrm{Tr}(\\hat{\\rho}^{2}) = \\sum_{i}\\lambda_{i}^{2} = 0{,}7^{2} + 0{,}3^{2}"
+    },
+    {
+     "explain": "Kết quả 0,58 < 1 nên đây là trạng thái hỗn hợp (nếu bằng 1 mới là trạng thái thuần).",
+     "latex": "\\mathrm{Tr}(\\hat{\\rho}^{2}) = 0{,}49 + 0{,}09 = 0{,}58 < 1"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.do-thuan-cua-trang-thai"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính độ thuần",
+    "phân biệt trạng thái thuần/hỗn hợp"
+   ],
+   "tags": [
+    "luong-tu",
+    "ma-tran-mat-do",
+    "do-thuan"
+   ],
+   "answer_numeric": 0.58,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "hints": [
+    "Tr(ρ²) = Σλ_i².",
+    "Bằng 1 ↔ thuần; < 1 ↔ hỗn hợp."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0053",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình Liouville - von Neumann mô tả tiến hóa thời gian của ma trận mật độ ρ̂ có dạng nào?",
+   "statement_en": "The Liouville-von Neumann equation for the time evolution of the density matrix is which?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Ma trận mật độ tiến hóa theo giao hoán tử với Hamiltonian, dấu ngược so với toán tử Heisenberg.",
+     "latex": "i\\hbar\\frac{\\partial \\hat{\\rho}}{\\partial t} = [\\hat{H},\\hat{\\rho}]"
+    },
+    {
+     "explain": "Trạng thái cân bằng thỏa [Ĥ, ρ̂] = 0.",
+     "latex": "[\\hat{H},\\hat{\\rho}] = 0 \\;\\Rightarrow\\; \\text{cân bằng}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.phuong-trinh-liouville-von-neumann"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "phương trình Liouville - von Neumann",
+    "điều kiện cân bằng"
+   ],
+   "tags": [
+    "luong-tu",
+    "ma-tran-mat-do",
+    "von-neumann"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "iħ ∂ρ̂/∂t = [Ĥ, ρ̂]",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "iħ ∂ρ̂/∂t = [ρ̂, Ĥ]",
+     "why_wrong": "Sai dấu: phương trình cho ρ̂ dùng [Ĥ, ρ̂], ngược với phương trình Heisenberg cho toán tử."
+    },
+    {
+     "key": "C",
+     "text": "iħ ∂ρ̂/∂t = Ĥρ̂",
+     "why_wrong": "Không phải tích đơn giản; là giao hoán tử."
+    },
+    {
+     "key": "D",
+     "text": "∂ρ̂/∂t = 0 luôn luôn",
+     "why_wrong": "Chỉ đúng ở cân bằng khi [Ĥ, ρ̂] = 0; nói chung ρ̂ biến thiên."
+    }
+   ],
+   "hints": [
+    "Dùng giao hoán tử [Ĥ, ρ̂].",
+    "Dấu ngược với phương trình Heisenberg cho toán tử."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0054",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một qubit ở trạng thái hỗn hợp có ma trận mật độ với trị riêng 0,7 và 0,3. Tính entropy von Neumann S = −k_B Σλ_i ln λ_i (J/K).",
+   "statement_en": "A qubit mixed state has density-matrix eigenvalues 0.7 and 0.3. Compute the von Neumann entropy S = -k_B sum lambda_i ln lambda_i (J/K).",
+   "answer": "S = 8,43×10^-24 J/K",
+   "solution_steps": [
+    {
+     "explain": "Entropy von Neumann tính qua các trị riêng của ma trận mật độ.",
+     "latex": "S = -k_{B}\\sum_{i}\\lambda_{i}\\ln\\lambda_{i}"
+    },
+    {
+     "explain": "Thay số: −(0,7 ln0,7 + 0,3 ln0,3) = 0,611; nhân k_B.",
+     "latex": "S = k_{B}\\cdot 0{,}611 = 1{,}381\\times 10^{-23}\\cdot 0{,}611 \\approx 8{,}43\\times 10^{-24}\\ \\text{J/K}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.entropy-von-neumann"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính entropy von Neumann từ trị riêng ma trận mật độ"
+   ],
+   "tags": [
+    "luong-tu",
+    "entropy",
+    "von-neumann"
+   ],
+   "answer_numeric": 8.433891877677867e-24,
+   "answer_unit": "J/K",
+   "tolerance": 2.53016756330336e-25,
+   "hints": [
+    "S = −k_B Σλ ln λ.",
+    "Trị riêng đóng vai trò xác suất."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0055",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Với trạng thái singlet của hai spin-1/2, hệ số tương quan spin theo hai hướng đo a, b là E_ab = −cos θ_ab. Tính E_ab khi góc giữa hai hướng đo là 60°.",
+   "statement_en": "For the two-spin singlet, the spin correlation for measurement directions a, b is E_ab = -cos theta_ab. Compute E_ab for an angle of 60 degrees.",
+   "answer": "E_ab = -0,5",
+   "solution_steps": [
+    {
+     "explain": "Hệ số tương quan của trạng thái singlet.",
+     "latex": "E_{ab} = \\langle \\Psi^{-}|(\\vec{\\sigma}_{1}\\cdot\\vec{a})(\\vec{\\sigma}_{2}\\cdot\\vec{b})|\\Psi^{-}\\rangle = -\\cos\\theta_{ab}"
+    },
+    {
+     "explain": "Thay θ = 60°, cos60° = 0,5.",
+     "latex": "E_{ab} = -\\cos 60^{\\circ} = -0{,}5"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.luong-tu-nang-cao.tuong-quan-singlet"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tương quan spin của trạng thái singlet"
+   ],
+   "tags": [
+    "luong-tu",
+    "singlet",
+    "roi-luong-tu"
+   ],
+   "answer_numeric": -0.5,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "hints": [
+    "E_ab = −cos θ.",
+    "cos60° = 0,5."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0056",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học giải tích",
+   "type": "trac-nghiem",
+   "statement_vi": "Khi hàm Hamilton không phụ thuộc tường minh thời gian, hàm chính Hamilton S tách được thành hàm đặc trưng W như thế nào?",
+   "statement_en": "When H has no explicit time dependence, how does the principal function S separate into the characteristic function W?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Tách biến thời gian: S = W(q,α) − Et, với E là năng lượng bảo toàn.",
+     "latex": "S(q,\\alpha,t) = W(q,\\alpha) - Et"
+    },
+    {
+     "explain": "Thay vào phương trình Hamilton - Jacobi cho phương trình dừng cho W.",
+     "latex": "H\\!\\left(q_{j}, \\frac{\\partial W}{\\partial q_{j}}\\right) = E"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.co-hoc-giai-tich.ham-dac-trung-hamilton"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tách biến thời gian trong Hamilton - Jacobi"
+   ],
+   "tags": [
+    "co-hoc-giai-tich",
+    "hamilton-jacobi",
+    "tach-bien"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "S = W(q,α) − Et",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "S = W(q,α) + Et",
+     "why_wrong": "Sai dấu: phần thời gian là −Et để ∂S/∂t = −E khớp phương trình Hamilton - Jacobi."
+    },
+    {
+     "key": "C",
+     "text": "S = W(q,α)·e^{−Et}",
+     "why_wrong": "Tách biến là phép TRỪ tuyến tính (W − Et), không phải nhân hàm mũ."
+    },
+    {
+     "key": "D",
+     "text": "S = W(q,α)/t",
+     "why_wrong": "Không có dạng chia cho t; tách biến cho số hạng −Et cộng thêm."
+    }
+   ],
+   "hints": [
+    "Hệ bảo toàn: tách phần thời gian tuyến tính.",
+    "∂S/∂t = −E."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0057",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một mol khí lí tưởng đơn nguyên tử ở T = 300 K có nhiệt dung đẳng tích C_V = (3/2)R. Trong tổng thể chính tắc, phương sai năng lượng là ⟨(ΔE)²⟩ = k_B T² C_V. Tính độ lệch chuẩn (rms) của năng lượng √⟨(ΔE)²⟩ (J).",
+   "statement_en": "One mole of monatomic ideal gas at T = 300 K has C_V = (3/2)R. In the canonical ensemble the energy variance is <(dE)^2> = k_B T^2 C_V. Find the rms energy fluctuation (J).",
+   "answer": "√⟨(ΔE)²⟩ = 3,94×10^-9 J",
+   "solution_steps": [
+    {
+     "explain": "Liên hệ thăng giáng - nhiệt dung.",
+     "latex": "\\left\\langle (\\Delta E)^{2}\\right\\rangle = k_{B}T^{2}C_{V}"
+    },
+    {
+     "explain": "Thay C_V = (3/2)R = 12,47 J/K, T = 300 K rồi lấy căn.",
+     "latex": "\\sqrt{k_{B}T^{2}C_{V}} = \\sqrt{1{,}381\\times 10^{-23}\\cdot 300^{2}\\cdot 12{,}47} \\approx 3{,}94\\times 10^{-9}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.thang-giang-nang-luong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "liên hệ thăng giáng năng lượng với nhiệt dung"
+   ],
+   "tags": [
+    "thong-ke",
+    "thang-giang",
+    "nhiet-dung"
+   ],
+   "answer_numeric": 3.936639248617628e-09,
+   "answer_unit": "J",
+   "tolerance": 1.1809917745852883e-10,
+   "hints": [
+    "⟨(ΔE)²⟩ = k_B T² C_V.",
+    "C_V một mol khí đơn nguyên tử = 1,5R."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0058",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức Sackur - Tetrode, tính entropy tuyệt đối của 1 mol khí heli lí tưởng ở T = 300 K, p = 1 atm (101325 Pa). Cho khối lượng nguyên tử He m = 6,646×10⁻²⁷ kg. Kết quả theo J/K.",
+   "statement_en": "Using the Sackur-Tetrode equation, find the absolute entropy of 1 mole of ideal helium gas at T = 300 K, p = 1 atm. He atomic mass m = 6.646e-27 kg. Answer in J/K.",
+   "answer": "S ≈ 126 J/K",
+   "solution_steps": [
+    {
+     "explain": "Bước sóng nhiệt de Broglie và thể tích mol từ pV = NkT.",
+     "latex": "\\lambda_{T} = \\frac{h}{\\sqrt{2\\pi m k_{B}T}}, \\qquad V = \\frac{Nk_{B}T}{p}"
+    },
+    {
+     "explain": "Thay vào công thức Sackur - Tetrode.",
+     "latex": "S = Nk_{B}\\left[\\ln\\!\\left(\\frac{V}{N\\lambda_{T}^{3}}\\right) + \\frac{5}{2}\\right] \\approx 127\\ \\text{J/K}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.cong-thuc-sackur-tetrode"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 8,
+   "skills": [
+    "tính entropy tuyệt đối bằng Sackur - Tetrode",
+    "bước sóng nhiệt de Broglie"
+   ],
+   "tags": [
+    "thong-ke",
+    "sackur-tetrode",
+    "entropy"
+   ],
+   "answer_numeric": 126.2,
+   "answer_unit": "J/K",
+   "tolerance": 1.0,
+   "hints": [
+    "Tính λ_T và V trước.",
+    "So sánh với entropy mol chuẩn của He (~126 J/(mol·K))."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0059",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Xét một mức năng lượng đơn (chỉ chứa 0 hoặc 1 fermion) trong tiếp xúc với bể có thế hóa học μ, nhiệt độ T. Tổng thống kê lớn là Ξ = 1 + e^{−β(ε−μ)}. Nếu ε − μ = k_B T (tức β(ε−μ) = 1), tính số chiếm trung bình ⟨n⟩.",
+   "statement_en": "Consider a single energy level (holding 0 or 1 fermion) in contact with a reservoir at chemical potential mu, temperature T. The grand partition function is Xi = 1 + e^{-beta(eps-mu)}. If eps - mu = k_B T, find the mean occupation <n>.",
+   "answer": "⟨n⟩ = 0,269",
+   "solution_steps": [
+    {
+     "explain": "Từ tổng thống kê lớn của một mức, số chiếm trung bình là phân bố Fermi - Dirac.",
+     "latex": "\\langle n\\rangle = \\frac{e^{-\\beta(\\varepsilon-\\mu)}}{1 + e^{-\\beta(\\varepsilon-\\mu)}} = \\frac{1}{e^{\\beta(\\varepsilon-\\mu)}+1}"
+    },
+    {
+     "explain": "Thay β(ε−μ) = 1.",
+     "latex": "\\langle n\\rangle = \\frac{1}{e^{1}+1} = \\frac{1}{3{,}718} \\approx 0{,}269"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.tong-thong-ke-lon"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tổng thống kê lớn cho một mức",
+    "dẫn phân bố Fermi - Dirac"
+   ],
+   "tags": [
+    "thong-ke",
+    "tong-the-lon",
+    "fermi-dirac"
+   ],
+   "answer_numeric": 0.2689,
+   "answer_unit": "",
+   "tolerance": 0.005,
+   "hints": [
+    "⟨n⟩ = e^{−β(ε−μ)}/Ξ.",
+    "Với β(ε−μ)=1: ⟨n⟩ = 1/(e+1)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0060",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Với một khí lí tưởng, thế nhiệt động lớn thỏa Ω = −pV = −Nk_BT (vì pV = Nk_BT). Tính Ω cho N = 1,0×10²⁰ hạt ở T = 300 K (J).",
+   "statement_en": "For an ideal gas, the grand potential satisfies Omega = -pV = -N k_B T. Find Omega for N = 1.0e20 particles at T = 300 K (J).",
+   "answer": "Ω = -0,414 J",
+   "solution_steps": [
+    {
+     "explain": "Thế nhiệt động lớn của hệ đồng nhất bằng −pV; với khí lí tưởng pV = Nk_BT.",
+     "latex": "\\Omega = -k_{B}T\\ln\\Xi = -pV = -Nk_{B}T"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Omega = -10^{20}\\cdot 1{,}381\\times 10^{-23}\\cdot 300 \\approx -0{,}414\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.the-nhiet-dong-lon"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "thế nhiệt động lớn Ω = −pV"
+   ],
+   "tags": [
+    "thong-ke",
+    "tong-the-lon",
+    "the-nhiet-dong"
+   ],
+   "answer_numeric": -0.4142,
+   "answer_unit": "J",
+   "tolerance": 0.008283894,
+   "hints": [
+    "Ω = −pV.",
+    "Khí lí tưởng: pV = Nk_BT."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0061",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "trac-nghiem",
+   "statement_vi": "Về thế hóa học μ trong vật lí thống kê, phát biểu nào ĐÚNG?",
+   "statement_en": "Which statement about the chemical potential mu in statistical physics is correct?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "μ là năng lượng để thêm một hạt; hai hệ tiếp xúc trao đổi hạt cân bằng khi μ₁ = μ₂.",
+     "latex": "\\mu = \\left(\\frac{\\partial U}{\\partial N}\\right)_{S,V} = \\left(\\frac{\\partial F}{\\partial N}\\right)_{T,V} = \\left(\\frac{\\partial G}{\\partial N}\\right)_{T,p}"
+    },
+    {
+     "explain": "Hạt chảy từ nơi μ cao sang nơi μ thấp cho tới khi hai thế hóa học bằng nhau.",
+     "latex": "\\mu_{1} = \\mu_{2} \\;\\Rightarrow\\; \\text{cân bằng trao đổi hạt}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.the-hoa-hoc-dinh-nghia"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "định nghĩa và ý nghĩa thế hóa học"
+   ],
+   "tags": [
+    "thong-ke",
+    "the-hoa-hoc",
+    "can-bang"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Cân bằng trao đổi hạt đạt được khi thế hóa học hai hệ bằng nhau, μ₁ = μ₂",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Hạt luôn chảy từ nơi μ thấp sang nơi μ cao",
+     "why_wrong": "Ngược chiều: hạt chảy từ μ cao sang μ thấp, giống nhiệt chảy từ nóng sang lạnh."
+    },
+    {
+     "key": "C",
+     "text": "μ luôn dương với mọi hệ",
+     "why_wrong": "μ có thể âm (ví dụ khí lí tưởng cổ điển loãng có μ < 0)."
+    },
+    {
+     "key": "D",
+     "text": "μ = (∂S/∂N) ở U, V không đổi",
+     "why_wrong": "Định nghĩa chuẩn là (∂U/∂N)_{S,V}; đạo hàm của S cho −μ/T, không phải μ."
+    }
+   ],
+   "hints": [
+    "Nghĩ tới điều kiện cân bằng trao đổi hạt.",
+    "So sánh với nhiệt độ trong cân bằng nhiệt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0062",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Khí Bose lí tưởng dưới nhiệt độ tới hạn có C_V/(Nk_B) = 1,925·(T/T_c)^{3/2}. Tính C_V/(Nk_B) tại T = 0,8·T_c.",
+   "statement_en": "An ideal Bose gas below Tc has C_V/(N k_B) = 1.925 (T/Tc)^{3/2}. Compute C_V/(N k_B) at T = 0.8 Tc.",
+   "answer": "C_V/(Nk_B) = 1,38",
+   "solution_steps": [
+    {
+     "explain": "Nhiệt dung của khí Bose dưới T_c theo luật T^{3/2}.",
+     "latex": "\\frac{C_{V}}{Nk_{B}} = 1{,}925\\left(\\frac{T}{T_{c}}\\right)^{3/2}"
+    },
+    {
+     "explain": "Thay T/T_c = 0,8: 0,8^{1,5} ≈ 0,7155.",
+     "latex": "\\frac{C_{V}}{Nk_{B}} = 1{,}925\\cdot 0{,}7155 \\approx 1{,}38"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.nhiet-dung-khi-bose"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "luật T^{3/2} của nhiệt dung khí Bose"
+   ],
+   "tags": [
+    "thong-ke",
+    "bec",
+    "nhiet-dung"
+   ],
+   "answer_numeric": 1.377,
+   "answer_unit": "",
+   "tolerance": 0.02,
+   "hints": [
+    "Dùng số mũ 3/2.",
+    "0,8^{1,5} ≈ 0,716."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0063",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một dao động tử điều hòa ba chiều có Hamiltonian gồm 6 số hạng bậc hai (3 động năng + 3 thế năng). Theo định lí phân bố đều tổng quát, mỗi số hạng bậc hai đóng góp ½k_BT. Tính năng lượng trung bình tại T = 500 K (J).",
+   "statement_en": "A 3D harmonic oscillator has a Hamiltonian with 6 quadratic terms. By the generalized equipartition theorem each contributes (1/2)k_B T. Find the mean energy at T = 500 K (J).",
+   "answer": "⟨E⟩ = 2,07×10^-20 J",
+   "solution_steps": [
+    {
+     "explain": "Định lí phân bố đều tổng quát: ⟨x_i ∂H/∂x_i⟩ = k_BT, mỗi số hạng bậc hai cho ½k_BT.",
+     "latex": "\\left\\langle x_{i}\\frac{\\partial H}{\\partial x_{i}}\\right\\rangle = k_{B}T \\Rightarrow \\langle E\\rangle = 6\\cdot\\frac{1}{2}k_{B}T = 3k_{B}T"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\langle E\\rangle = 3\\cdot 1{,}381\\times 10^{-23}\\cdot 500 \\approx 2{,}07\\times 10^{-20}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.dinh-li-phan-bo-deu-tong-quat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng định lí phân bố đều tổng quát",
+    "đếm số hạng bậc hai"
+   ],
+   "tags": [
+    "thong-ke",
+    "phan-bo-deu",
+    "equipartition"
+   ],
+   "answer_numeric": 2.0709735000000002e-20,
+   "answer_unit": "J",
+   "tolerance": 4.1419470000000005e-22,
+   "hints": [
+    "6 số hạng bậc hai.",
+    "Mỗi số hạng ½k_BT nên ⟨E⟩ = 3k_BT."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0064",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Với khí lí tưởng cổ điển trong tổng thể lớn, ⟨(ΔN)²⟩ = k_BT(∂⟨N⟩/∂μ) = ⟨N⟩ (thăng giáng Poisson). Nếu ⟨N⟩ = 1,0×10¹² hạt, tính độ thăng giáng tương đối √⟨(ΔN)²⟩/⟨N⟩.",
+   "statement_en": "For a classical ideal gas in the grand canonical ensemble, <(dN)^2> = <N> (Poisson). If <N> = 1.0e12, find the relative fluctuation sqrt(<(dN)^2>)/<N>.",
+   "answer": "1×10^-6",
+   "solution_steps": [
+    {
+     "explain": "Với khí cổ điển ⟨N⟩ ∝ e^{βμ} nên ∂⟨N⟩/∂μ = β⟨N⟩, dẫn tới ⟨(ΔN)²⟩ = ⟨N⟩.",
+     "latex": "\\left\\langle (\\Delta N)^{2}\\right\\rangle = k_{B}T\\left(\\frac{\\partial \\langle N\\rangle}{\\partial \\mu}\\right)_{T,V} = \\langle N\\rangle"
+    },
+    {
+     "explain": "Độ thăng giáng tương đối giảm như 1/√⟨N⟩.",
+     "latex": "\\frac{\\sqrt{\\langle (\\Delta N)^{2}\\rangle}}{\\langle N\\rangle} = \\frac{1}{\\sqrt{\\langle N\\rangle}} = \\frac{1}{\\sqrt{10^{12}}} = 10^{-6}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.thang-giang-so-hat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "thăng giáng số hạt Poisson",
+    "định luật 1/√N"
+   ],
+   "tags": [
+    "thong-ke",
+    "thang-giang",
+    "tong-the-lon"
+   ],
+   "answer_numeric": 1e-06,
+   "answer_unit": "",
+   "tolerance": 2e-08,
+   "hints": [
+    "Khí cổ điển: ⟨(ΔN)²⟩ = ⟨N⟩.",
+    "Tương đối = 1/√⟨N⟩."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0065",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí thống kê",
+   "type": "dien-so",
+   "statement_vi": "Xét N spin độc lập, mỗi spin có mômen ±μ_B. Ở nhiệt độ cao ⟨M⟩ = 0 và ⟨M²⟩ = Nμ_B². Dùng liên hệ thăng giáng - độ cảm χ = (β/N)(⟨M²⟩ − ⟨M⟩²), tính độ cảm trên một spin ở T = 300 K (J/T²). Cho μ_B = 9,274×10⁻²⁴ J/T.",
+   "statement_en": "For N independent spins each with moment +/-mu_B, at high T <M> = 0 and <M^2> = N mu_B^2. Using chi = (beta/N)(<M^2> - <M>^2), find the susceptibility per spin at T = 300 K (J/T^2).",
+   "answer": "χ = 2,08×10^-26 J/T²",
+   "solution_steps": [
+    {
+     "explain": "Thay ⟨M²⟩ = Nμ_B² và ⟨M⟩ = 0 vào liên hệ thăng giáng - độ cảm.",
+     "latex": "\\chi = \\frac{\\beta}{N}\\left(\\langle M^{2}\\rangle - \\langle M\\rangle^{2}\\right) = \\frac{\\beta}{N}\\cdot N\\mu_{B}^{2} = \\frac{\\mu_{B}^{2}}{k_{B}T}"
+    },
+    {
+     "explain": "Đây chính là định luật Curie χ ∝ 1/T. Thay số.",
+     "latex": "\\chi = \\frac{(9{,}274\\times 10^{-24})^{2}}{1{,}381\\times 10^{-23}\\cdot 300} \\approx 2{,}08\\times 10^{-26}\\ \\text{J/T}^{2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.thong-ke-nang-cao.thang-giang-tu-do-va-do-cam"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "liên hệ thăng giáng - độ cảm",
+    "dẫn định luật Curie"
+   ],
+   "tags": [
+    "thong-ke",
+    "thang-giang",
+    "do-cam"
+   ],
+   "answer_numeric": 2.076493565282462e-26,
+   "answer_unit": "J/T^2",
+   "tolerance": 6.229480695847386e-28,
+   "hints": [
+    "χ = βμ_B² khi ⟨M⟩=0.",
+    "Đây là định luật Curie 1/T."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0066",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí chất rắn",
+   "type": "dien-so",
+   "statement_vi": "Trong mô hình Kronig - Penney, số sóng bên trong giếng là α = √(2mE)/ħ. Tính α cho electron có năng lượng E = 1,0 eV (m⁻¹).",
+   "statement_en": "In the Kronig-Penney model, the wavenumber inside the well is alpha = sqrt(2mE)/hbar. Compute alpha for an electron with E = 1.0 eV (1/m).",
+   "answer": "α = 5,12×10^9 m⁻¹",
+   "solution_steps": [
+    {
+     "explain": "Số sóng trong giếng của mô hình Kronig - Penney.",
+     "latex": "\\alpha = \\frac{\\sqrt{2mE}}{\\hbar}"
+    },
+    {
+     "explain": "Thay E = 1,0 eV = 1,602×10⁻¹⁹ J, m = m_e.",
+     "latex": "\\alpha = \\frac{\\sqrt{2\\cdot 9{,}109\\times 10^{-31}\\cdot 1{,}602\\times 10^{-19}}}{1{,}0546\\times 10^{-34}} \\approx 5{,}12\\times 10^{9}\\ \\text{m}^{-1}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-ran-nang-cao.mo-hinh-kronig-penney"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính số sóng trong mô hình Kronig - Penney"
+   ],
+   "tags": [
+    "chat-ran",
+    "kronig-penney",
+    "vung-cam"
+   ],
+   "answer_numeric": 5123167222.813993,
+   "answer_unit": "1/m",
+   "tolerance": 102463344.45627987,
+   "hints": [
+    "α = √(2mE)/ħ.",
+    "Đổi eV ra jun."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0067",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí chất rắn",
+   "type": "dien-so",
+   "statement_vi": "Theo lí thuyết BCS ghép yếu, k_BT_c = 1,13·ħω_D·e^{−1/[N(0)V]}. Cho ħω_D = 25 meV và N(0)V = 0,30, tính nhiệt độ tới hạn siêu dẫn T_c (K).",
+   "statement_en": "In weak-coupling BCS, k_B Tc = 1.13 hbar omega_D e^{-1/[N(0)V]}. With hbar omega_D = 25 meV and N(0)V = 0.30, find the superconducting critical temperature Tc (K).",
+   "answer": "T_c = 11,7 K",
+   "solution_steps": [
+    {
+     "explain": "Công thức BCS ghép yếu; chú ý dạng hàm mũ không khai triển được theo chuỗi lũy thừa của V.",
+     "latex": "k_{B}T_{c} = 1{,}13\\,\\hbar\\omega_{D}\\,e^{-1/[N(0)V]}"
+    },
+    {
+     "explain": "Thay số: ħω_D = 25 meV = 4,0×10⁻²¹ J, e^{−1/0,3} = e^{−3,33} ≈ 0,0357.",
+     "latex": "T_{c} = \\frac{1{,}13\\cdot 4{,}0\\times 10^{-21}\\cdot 0{,}0357}{1{,}381\\times 10^{-23}} \\approx 11{,}7\\ \\text{K}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-ran-nang-cao.nhiet-do-toi-han-bcs"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng công thức nhiệt độ tới hạn BCS"
+   ],
+   "tags": [
+    "chat-ran",
+    "sieu-dan",
+    "bcs"
+   ],
+   "answer_numeric": 11.69,
+   "answer_unit": "K",
+   "tolerance": 0.3508476281706447,
+   "hints": [
+    "e^{−1/(N(0)V)} với N(0)V = 0,3.",
+    "Đổi meV ra jun, chia cho k_B."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0068",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí chất rắn",
+   "type": "dien-so",
+   "statement_vi": "Độ thấm sâu London λ_L = √(m/(μ₀ n_s e²)). Với mật độ electron siêu dẫn n_s = 1,0×10²⁹ m⁻³, tính λ_L (nm).",
+   "statement_en": "The London penetration depth is lambda_L = sqrt(m/(mu0 n_s e^2)). For superconducting electron density n_s = 1.0e29 1/m^3, find lambda_L (nm).",
+   "answer": "λ_L = 16,8 nm",
+   "solution_steps": [
+    {
+     "explain": "Độ thấm sâu London.",
+     "latex": "\\lambda_{L} = \\sqrt{\\frac{m}{\\mu_{0}n_{s}e^{2}}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\lambda_{L} = \\sqrt{\\frac{9{,}109\\times 10^{-31}}{1{,}257\\times 10^{-6}\\cdot 10^{29}\\cdot(1{,}602\\times 10^{-19})^{2}}} \\approx 1{,}68\\times 10^{-8}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.chat-ran-nang-cao.do-tham-sau-london"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính độ thấm sâu London"
+   ],
+   "tags": [
+    "chat-ran",
+    "sieu-dan",
+    "london"
+   ],
+   "answer_numeric": 16.805,
+   "answer_unit": "nm",
+   "tolerance": 0.3360927681030511,
+   "hints": [
+    "λ_L = √(m/(μ₀ n_s e²)).",
+    "Kết quả cỡ chục nanomet."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0069",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Một quá trình có tiết diện σ = 50 pb được ghi tại máy va chạm với độ chói tích lũy ∫L dt = 100 fb⁻¹. Dùng N = σ·∫L dt, tính số sự kiện kì vọng. (1 pb = 1000 fb.)",
+   "statement_en": "A process has cross section sigma = 50 pb, recorded with integrated luminosity 100 fb^-1. Using N = sigma times integral L dt, find the expected number of events. (1 pb = 1000 fb.)",
+   "answer": "N = 5×10^6 sự kiện",
+   "solution_steps": [
+    {
+     "explain": "Số sự kiện bằng tiết diện nhân độ chói tích lũy; đổi cùng đơn vị: σ = 50 pb = 50 000 fb.",
+     "latex": "N = \\sigma\\int \\mathcal{L}\\,dt"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "N = 50\\,000\\ \\text{fb}\\times 100\\ \\text{fb}^{-1} = 5{,}0\\times 10^{6}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.tiet-dien-va-luminosity"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ số sự kiện với tiết diện và độ chói"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "luminosity",
+    "tiet-dien"
+   ],
+   "answer_numeric": 5000000.0,
+   "answer_unit": "sự kiện",
+   "tolerance": 50000.0,
+   "hints": [
+    "N = σ × ∫L dt.",
+    "Đổi pb ra fb trước khi nhân."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0070",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình Dirac (iħγ^μ∂_μ − mc)ψ = 0 với các ma trận gamma thỏa {γ^μ, γ^ν} = 2g^{μν}. Thành tựu then chốt của nó là gì?",
+   "statement_en": "The Dirac equation with gamma matrices satisfying {gamma^mu, gamma^nu} = 2 g^{mu nu}. What is its key achievement?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Phương trình Dirac là phương trình tương đối tính bậc nhất cho hạt spin 1/2.",
+     "latex": "(i\\hbar\\gamma^{\\mu}\\partial_{\\mu} - mc)\\psi = 0"
+    },
+    {
+     "explain": "Nó tự động sinh ra spin 1/2, thừa số g ≈ 2, và tiên đoán phản hạt (nghiệm năng lượng âm).",
+     "latex": "\\{\\gamma^{\\mu},\\gamma^{\\nu}\\} = 2g^{\\mu\\nu}\\mathbb{I}_{4}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.phuong-trinh-dirac"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "ý nghĩa của phương trình Dirac",
+    "tiên đoán phản hạt và spin"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "dirac",
+    "spinor"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tự động sinh spin 1/2, g ≈ 2 và tiên đoán phản hạt",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Mô tả hạt spin 0 không có phản hạt",
+     "why_wrong": "Hạt spin 0 do phương trình Klein - Gordon mô tả; Dirac cho spin 1/2 và có phản hạt."
+    },
+    {
+     "key": "C",
+     "text": "Là phương trình phi tương đối tính",
+     "why_wrong": "Dirac là phương trình TƯƠNG ĐỐI TÍNH, bất biến Lorentz."
+    },
+    {
+     "key": "D",
+     "text": "Loại bỏ hoàn toàn nghiệm năng lượng âm",
+     "why_wrong": "Ngược lại, chính nghiệm năng lượng âm dẫn tới tiên đoán phản hạt."
+    }
+   ],
+   "hints": [
+    "Bậc nhất theo thời gian, tương đối tính.",
+    "Liên quan spin 1/2 và phản hạt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0071",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức Gell-Mann - Nishijima Q = I₃ + Y/2 với siêu tích Y = B + S. Tính điện tích Q (theo đơn vị e) của quark up: I₃ = +1/2, số baryon B = 1/3, số lạ S = 0.",
+   "statement_en": "Using Q = I3 + Y/2 with Y = B + S, find the charge Q (in units of e) of the up quark: I3 = +1/2, baryon number B = 1/3, strangeness S = 0.",
+   "answer": "Q = 0,667 e",
+   "solution_steps": [
+    {
+     "explain": "Siêu tích của quark up: Y = B + S = 1/3.",
+     "latex": "Y = B + S = \\tfrac{1}{3} + 0 = \\tfrac{1}{3}"
+    },
+    {
+     "explain": "Áp dụng công thức Gell-Mann - Nishijima.",
+     "latex": "Q = I_{3} + \\frac{Y}{2} = \\frac{1}{2} + \\frac{1}{6} = \\frac{2}{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.gell-mann-nishijima"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức Gell-Mann - Nishijima"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "gell-mann-nishijima",
+    "isospin"
+   ],
+   "answer_numeric": 0.6667,
+   "answer_unit": "e",
+   "tolerance": 0.01,
+   "hints": [
+    "Y = B + S.",
+    "Q = I₃ + Y/2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0072",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "trac-nghiem",
+   "statement_vi": "Số baryon B và số lepton từng thế hệ được bảo toàn trong Mô hình chuẩn (ở mức cây). Phản ứng nào sau đây BỊ CẤM bởi bảo toàn số baryon?",
+   "statement_en": "Baryon number B and lepton numbers are conserved in the Standard Model. Which reaction is FORBIDDEN by baryon-number conservation?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Số baryon: proton, neutron có B = +1; electron, positron, photon có B = 0.",
+     "latex": "B_{p} = +1, \\quad B_{e^{\\pm}} = 0, \\quad B_{\\gamma} = 0"
+    },
+    {
+     "explain": "Phản ứng p → e⁺ + γ có B: 1 → 0, vi phạm bảo toàn số baryon nên bị cấm (proton bền).",
+     "latex": "p \\to e^{+} + \\gamma: \\quad B: 1 \\ne 0"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.so-luong-tu-bao-toan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "kiểm tra bảo toàn số baryon và lepton"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "bao-toan",
+    "mo-hinh-chuan"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "p → e⁺ + γ (phân rã proton)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "n → p + e⁻ + ν̄_e (phân rã beta)",
+     "why_wrong": "Phản ứng này BẢO TOÀN B (1→1) và số lepton (0→0), nên được phép - đó là phân rã beta thực."
+    },
+    {
+     "key": "C",
+     "text": "π⁰ → γ + γ",
+     "why_wrong": "Meson có B = 0, photon B = 0; bảo toàn số baryon, phản ứng được phép."
+    },
+    {
+     "key": "D",
+     "text": "e⁺ + e⁻ → 2γ (hủy cặp)",
+     "why_wrong": "B = 0 hai vế, số lepton bảo toàn; đây là hủy cặp thực, được phép."
+    }
+   ],
+   "hints": [
+    "Tính số baryon hai vế.",
+    "Proton có B = +1, các hạt còn lại B = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0073",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "trac-nghiem",
+   "statement_vi": "Về các hằng số ghép của Mô hình chuẩn (G_F, α_s, sin²θ_W), phát biểu nào ĐÚNG?",
+   "statement_en": "Which statement about the Standard Model coupling constants (G_F, alpha_s, sin^2 theta_W) is correct?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hằng số ghép mạnh α_s 'chạy' theo thang năng lượng và GIẢM ở năng lượng cao - tự do tiệm cận của QCD.",
+     "latex": "\\alpha_{s}(m_{Z}) \\approx 0{,}118, \\qquad \\alpha_{s} \\downarrow \\text{ khi } E \\uparrow"
+    },
+    {
+     "explain": "Vì thế các hằng số ghép được cho ở một thang năng lượng tham chiếu (ví dụ m_Z).",
+     "latex": "\\frac{G_{F}}{(\\hbar c)^{3}} = 1{,}166\\times 10^{-5}\\ \\text{GeV}^{-2}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.hang-so-ghep-mo-hinh-chuan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "hằng số ghép chạy",
+    "tự do tiệm cận"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "mo-hinh-chuan",
+    "hang-so-ghep"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Hằng số ghép mạnh α_s giảm khi năng lượng tăng (tự do tiệm cận)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Mọi hằng số ghép đều cố định, không phụ thuộc năng lượng",
+     "why_wrong": "Đặc trưng của Mô hình chuẩn là hằng số ghép 'chạy' theo thang năng lượng."
+    },
+    {
+     "key": "C",
+     "text": "α_s tăng vô hạn khi năng lượng tăng",
+     "why_wrong": "Ngược lại: α_s giảm ở năng lượng cao; nó lớn ở năng lượng thấp (giam cầm)."
+    },
+    {
+     "key": "D",
+     "text": "G_F có thứ nguyên năng lượng dương",
+     "why_wrong": "G_F/(ħc)³ có thứ nguyên GeV⁻² (nghịch bình phương năng lượng)."
+    }
+   ],
+   "hints": [
+    "Nghĩ tới tự do tiệm cận của QCD.",
+    "α_s nhỏ ở năng lượng cao."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0074",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hạt cơ bản",
+   "type": "trac-nghiem",
+   "statement_vi": "Ma trận trộn quark CKM có tính chất nào sau đây?",
+   "statement_en": "Which property does the CKM quark-mixing matrix have?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Ma trận CKM là ma trận unita 3×3; pha phức của nó là nguồn vi phạm CP trong Mô hình chuẩn.",
+     "latex": "V_{CKM}^{\\dagger}V_{CKM} = \\mathbb{I}, \\qquad \\delta_{CP} \\ne 0"
+    },
+    {
+     "explain": "Các phần tử đường chéo gần bằng 1, phần tử ngoài đường chéo nhỏ dần khi cách xa đường chéo.",
+     "latex": "|V_{ud}|, |V_{cs}|, |V_{tb}| \\approx 1"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.vat-li-hat.ma-tran-ckm"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính unita và vi phạm CP của ma trận CKM"
+   ],
+   "tags": [
+    "vat-li-hat",
+    "ckm",
+    "vi-pham-cp"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Là ma trận unita 3×3; pha phức gây vi phạm CP",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Là ma trận đơn vị (không trộn quark)",
+     "why_wrong": "Nếu là ma trận đơn vị thì không có trộn vị quark; thực tế có trộn và vi phạm CP."
+    },
+    {
+     "key": "C",
+     "text": "Là ma trận thực nên không thể gây vi phạm CP",
+     "why_wrong": "Ma trận CKM có PHA PHỨC; chính pha này gây vi phạm CP."
+    },
+    {
+     "key": "D",
+     "text": "Các phần tử ngoài đường chéo lớn hơn phần tử đường chéo",
+     "why_wrong": "Ngược lại: đường chéo gần 1, ngoài đường chéo nhỏ dần."
+    }
+   ],
+   "hints": [
+    "Ma trận unita, phần tử đường chéo trội.",
+    "Pha phức ↔ vi phạm CP."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0075",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Vật rắn và lí thuyết đàn hồi (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một vật liệu chịu ứng suất tiếp τ = 50 MPa, có mô đun trượt G = 80 GPa. Tính mật độ năng lượng biến dạng trượt u = τ²/(2G) (J/m³).",
+   "statement_en": "A material under shear stress tau = 50 MPa has shear modulus G = 80 GPa. Find the shear strain energy density u = tau^2/(2G) (J/m^3).",
+   "answer": "u = 1,56×10^4 J/m³",
+   "solution_steps": [
+    {
+     "explain": "Mật độ năng lượng biến dạng trượt đàn hồi.",
+     "latex": "u = \\frac{1}{2}\\tau\\gamma = \\frac{\\tau^{2}}{2G}"
+    },
+    {
+     "explain": "Thay số: τ = 5×10⁷ Pa, G = 8×10¹⁰ Pa.",
+     "latex": "u = \\frac{(5\\times 10^{7})^{2}}{2\\cdot 8\\times 10^{10}} = 1{,}56\\times 10^{4}\\ \\text{J/m}^{3}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-vat-ran.mat-do-nang-luong-truot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "mật độ năng lượng biến dạng trượt"
+   ],
+   "tags": [
+    "irodov",
+    "nang-luong-dan-hoi",
+    "bien-dang-truot"
+   ],
+   "answer_numeric": 15625.0,
+   "answer_unit": "J/m^3",
+   "tolerance": 312.5,
+   "hints": [
+    "u = τ²/(2G).",
+    "Đổi MPa và GPa ra Pa."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0076",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt học và vật lí phân tử (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Khí một thành phần (mô hình quả cầu cứng) có đường kính phân tử d = 3,0×10⁻¹⁰ m, tốc độ trung bình ⟨v⟩ = 500 m/s, mật độ phân tử n = 2,5×10²⁵ m⁻³. Tính số va chạm trong một đơn vị thể tích và một đơn vị thời gian Z = (√2/2)π d²⟨v⟩n² (m⁻³s⁻¹).",
+   "statement_en": "A single-component gas (hard-sphere model) has molecular diameter d = 3.0e-10 m, mean speed <v> = 500 m/s, number density n = 2.5e25 1/m^3. Find the number of collisions per unit volume per unit time Z = (sqrt2/2) pi d^2 <v> n^2 (1/(m^3 s)).",
+   "answer": "Z = 6,25×10^34 m⁻³s⁻¹",
+   "solution_steps": [
+    {
+     "explain": "Số va chạm trong đơn vị thể tích và thời gian; hệ số 1/2 để không đếm hai lần mỗi va chạm.",
+     "latex": "Z = \\frac{\\sqrt{2}}{2}\\pi d^{2}\\langle v\\rangle n^{2}"
+    },
+    {
+     "explain": "Thay số; chú ý Z tỉ lệ n² (bình phương áp suất).",
+     "latex": "Z = 0{,}707\\cdot\\pi\\cdot(3{,}0\\times 10^{-10})^{2}\\cdot 500\\cdot(2{,}5\\times 10^{25})^{2} \\approx 6{,}25\\times 10^{34}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.so-va-cham-trong-don-vi-the-tich"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính số va chạm trong đơn vị thể tích",
+    "hệ số 1/2 tránh đếm trùng"
+   ],
+   "tags": [
+    "irodov",
+    "so-va-cham",
+    "vat-li-thong-ke"
+   ],
+   "answer_numeric": 6.247804131785203e+34,
+   "answer_unit": "1/(m^3 s)",
+   "tolerance": 1.874341239535561e+33,
+   "hints": [
+    "Z ∝ n² (không phải n).",
+    "Hệ số √2/2 ≈ 0,707."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0077",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt học và vật lí phân tử (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Một mol khí Van der Waals đơn nguyên tử (C_{V,m} = (3/2)R nên R/C_{V,m} = 2/3) giãn đoạn nhiệt thuận nghịch từ V_{m1} = 1,0 L/mol tới V_{m2} = 2,0 L/mol, hằng số b = 0,03 L/mol. Nhiệt độ đầu T₁ = 300 K. Tính nhiệt độ cuối T₂ (K) từ T(V_m − b)^{R/C_{V,m}} = const.",
+   "statement_en": "One mole of a monatomic van der Waals gas (R/C_V,m = 2/3) expands reversibly and adiabatically from V1 = 1.0 L/mol to V2 = 2.0 L/mol, with b = 0.03 L/mol. Initial T1 = 300 K. Find T2 (K) from T(V_m - b)^{R/C_V,m} = const.",
+   "answer": "T₂ = 187 K",
+   "solution_steps": [
+    {
+     "explain": "Phương trình đoạn nhiệt thuận nghịch của khí Van der Waals: chỉ thay V bằng (V − b) so với khí lí tưởng.",
+     "latex": "T_{2} = T_{1}\\left(\\frac{V_{m1}-b}{V_{m2}-b}\\right)^{R/C_{V,m}}"
+    },
+    {
+     "explain": "Thay số với R/C_{V,m} = 2/3.",
+     "latex": "T_{2} = 300\\left(\\frac{0{,}97}{1{,}97}\\right)^{2/3} \\approx 187\\ \\text{K}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-nhiet.doan-nhiet-van-der-waals"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "phương trình đoạn nhiệt khí thực Van der Waals"
+   ],
+   "tags": [
+    "irodov",
+    "van-der-waals",
+    "doan-nhiet"
+   ],
+   "answer_numeric": 187.1,
+   "answer_unit": "K",
+   "tolerance": 1.0,
+   "hints": [
+    "Thay V bằng (V − b).",
+    "Số mũ R/C_{V,m} = 2/3."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0078",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Hai điện tích điểm q₁ = q₂ = 1,0 nC đặt cách nhau r = 0,10 m trong chân không. Theo cách tách năng lượng của Irodov, năng lượng tương tác W₁₂ = q₁φ₂ = kq₁q₂/r. Tính W₁₂ (J).",
+   "statement_en": "Two point charges q1 = q2 = 1.0 nC are separated by r = 0.10 m in vacuum. By Irodov's energy splitting, the interaction energy is W12 = q1 phi2 = k q1 q2/r. Find W12 (J).",
+   "answer": "W₁₂ = 8,99×10^-8 J",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng tương tác bằng điện tích thứ nhất nhân điện thế do điện tích thứ hai tạo ra tại vị trí nó.",
+     "latex": "W_{12} = q_{1}\\varphi_{2} = \\frac{1}{4\\pi\\varepsilon_{0}}\\frac{q_{1}q_{2}}{r}"
+    },
+    {
+     "explain": "Thay số (chỉ W₁₂ thay đổi khi các vật dịch chuyển; năng lượng riêng W₁, W₂ là hằng số).",
+     "latex": "W_{12} = 8{,}99\\times 10^{9}\\cdot\\frac{10^{-9}\\cdot 10^{-9}}{0{,}10} \\approx 8{,}99\\times 10^{-8}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.nang-luong-rieng-va-tuong-tac"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "năng lượng tương tác của hệ điện tích",
+    "tách năng lượng riêng - tương tác"
+   ],
+   "tags": [
+    "irodov",
+    "nang-luong-dien-truong",
+    "tinh-dien"
+   ],
+   "answer_numeric": 8.987551792261172e-08,
+   "answer_unit": "J",
+   "tolerance": 1.7975103584522345e-09,
+   "hints": [
+    "W₁₂ = kq₁q₂/r.",
+    "Chỉ phần tương tác phụ thuộc khoảng cách."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0079",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Tại một vùng có từ trường đều B = 1,5 T (không có điện trường). Dùng tenxơ ứng suất Maxwell, tính ứng suất kéo dọc đường sức từ (áp suất từ) T = B²/(2μ₀) (Pa).",
+   "statement_en": "In a region with uniform B = 1.5 T (no E), use the Maxwell stress tensor to find the tension along field lines (magnetic pressure) T = B^2/(2 mu0) (Pa).",
+   "answer": "T = 8,95×10^5 Pa",
+   "solution_steps": [
+    {
+     "explain": "Thành phần ứng suất dọc B rút từ tenxơ ứng suất Maxwell (phần từ).",
+     "latex": "T = \\frac{1}{\\mu_{0}}\\left(B^{2} - \\tfrac{1}{2}B^{2}\\right) = \\frac{B^{2}}{2\\mu_{0}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "T = \\frac{(1{,}5)^{2}}{2\\cdot 1{,}257\\times 10^{-6}} \\approx 8{,}95\\times 10^{5}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.tenxo-ung-suat-maxwell"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp suất từ từ tenxơ ứng suất Maxwell"
+   ],
+   "tags": [
+    "landau",
+    "ung-suat-maxwell",
+    "tenxo"
+   ],
+   "answer_numeric": 895246.5544045608,
+   "answer_unit": "Pa",
+   "tolerance": 17904.931088091216,
+   "hints": [
+    "Dọc B: T = B²/(2μ₀).",
+    "Đây là áp suất từ."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0080",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "trac-nghiem",
+   "statement_vi": "Công thức F_i = ∮_S T_{ij} dS_j − (d/dt)∫_V ε₀μ₀S_i dV cho phép tính lực điện từ. Với trường TĨNH (hoặc dừng), ưu điểm nổi bật của phương pháp là gì?",
+   "statement_en": "The formula F_i = surface integral of T_ij dS_j - d/dt(...) computes the EM force. For STATIC fields, what is its key advantage?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Với trường tĩnh, số hạng thứ hai (biến thiên động lượng trường) bằng 0.",
+     "latex": "\\frac{d}{dt}\\int_{V}\\varepsilon_{0}\\mu_{0}\\vec{S}\\,dV = 0 \\quad (\\text{trường tĩnh})"
+    },
+    {
+     "explain": "Chỉ cần biết trường TRÊN MẶT bao quanh là tính được lực, không cần chi tiết phân bố điện tích bên trong.",
+     "latex": "F_{i} = \\oint_{S} T_{ij}\\,dS_{j}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.luc-qua-tenxo-ung-suat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính lực điện từ qua tích phân mặt của tenxơ ứng suất"
+   ],
+   "tags": [
+    "landau",
+    "ung-suat-maxwell",
+    "luc-dien-tu"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Chỉ cần biết trường trên mặt kín bao quanh, không cần phân bố điện tích bên trong; số hạng thời gian triệt tiêu",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Không cần biết trường ở đâu cả",
+     "why_wrong": "Vẫn cần biết trường TRÊN MẶT bao để lấy tích phân; chỉ là không cần chi tiết bên trong."
+    },
+    {
+     "key": "C",
+     "text": "Chỉ áp dụng được khi không có điện tích",
+     "why_wrong": "Phương pháp áp dụng ngay cả khi có điện tích bên trong mặt; đó chính là ưu điểm."
+    },
+    {
+     "key": "D",
+     "text": "Số hạng vectơ Poynting luôn khác 0 với trường tĩnh",
+     "why_wrong": "Với trường tĩnh, tốc độ biến thiên động lượng trường (số hạng Poynting) bằng 0."
+    }
+   ],
+   "hints": [
+    "Trường tĩnh: số hạng thời gian bằng 0.",
+    "Chỉ cần trường trên mặt bao."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0081",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Điện từ học (hệ giáo trình Nga)",
+   "type": "dien-so",
+   "statement_vi": "Trong vùng từ trường yếu, từ trở tương đối là Δρ/ρ₀ ≈ (μ_H B)². Cho độ linh động μ_H = 0,5 m²/(V·s) và B = 0,3 T, tính Δρ/ρ₀.",
+   "statement_en": "In the weak-field regime, the relative magnetoresistance is Delta rho/rho0 = (mu_H B)^2. With mu_H = 0.5 m^2/(V s) and B = 0.3 T, find Delta rho/rho0.",
+   "answer": "Δρ/ρ₀ = 0,0225",
+   "solution_steps": [
+    {
+     "explain": "Từ trở tương đối ở trường yếu, luôn dương và bậc hai theo B.",
+     "latex": "\\frac{\\Delta\\rho}{\\rho_{0}} \\approx (\\mu_{H}B)^{2} = (\\omega_{c}\\tau)^{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\frac{\\Delta\\rho}{\\rho_{0}} = (0{,}5\\cdot 0{,}3)^{2} = (0{,}15)^{2} = 0{,}0225"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-dien-tu.tu-tro"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính từ trở ở vùng từ trường yếu"
+   ],
+   "tags": [
+    "irodov",
+    "tu-tro",
+    "van-chuyen"
+   ],
+   "answer_numeric": 0.0225,
+   "answer_unit": "",
+   "tolerance": 0.0005,
+   "hints": [
+    "Δρ/ρ₀ = (μ_H B)².",
+    "Kết quả dương, tỉ lệ B²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext4-physics-daihoc.0082",
+   "subject": "physics",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "intl-undergrad"
+   ],
+   "topic": "Cơ học (hệ giáo trình Nga)",
+   "type": "trac-nghiem",
+   "statement_vi": "Vì sao định lí mômen động lượng dL̃/dt = M̃ vẫn giữ nguyên dạng khi viết trong hệ khối tâm, kể cả khi hệ khối tâm chuyển động có gia tốc (phi quán tính)?",
+   "statement_en": "Why does the angular-momentum theorem hold in the centre-of-mass frame even when that frame accelerates (is non-inertial)?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Trong hệ khối tâm, tổng các bán kính vectơ có trọng số khối lượng bằng 0.",
+     "latex": "\\sum_{i} m_{i}\\widetilde{\\vec{r}}_{i} = \\vec{0}"
+    },
+    {
+     "explain": "Do đó tổng mômen của các lực quán tính đối với khối tâm triệt tiêu, phương trình giữ nguyên dạng.",
+     "latex": "\\widetilde{\\vec{M}}_{qt} = -\\left[\\left(\\sum_{i} m_{i}\\widetilde{\\vec{r}}_{i}\\right)\\times\\vec{a}_{C}\\right] = \\vec{0}"
+    }
+   ],
+   "formulas_used": [
+    "physics.dai-hoc.ru-co-hoc.dinh-li-momen-dong-luong-he-c"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "định lí mômen động lượng trong hệ khối tâm",
+    "triệt tiêu mômen lực quán tính"
+   ],
+   "tags": [
+    "irodov",
+    "he-khoi-tam",
+    "momen-dong-luong"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Vì tổng mômen của các lực quán tính đối với khối tâm bằng 0 (do Σ m_i r̃_i = 0)",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "Vì hệ khối tâm luôn là hệ quán tính",
+     "why_wrong": "Không đúng: hệ khối tâm có thể có gia tốc; điều cứu vãn là mômen lực quán tính triệt tiêu."
+    },
+    {
+     "key": "C",
+     "text": "Vì lực quán tính bằng 0 trong hệ khối tâm",
+     "why_wrong": "Lực quán tính KHÔNG bằng 0; chỉ có tổng MÔMEN của chúng đối với khối tâm bằng 0."
+    },
+    {
+     "key": "D",
+     "text": "Vì ngoại lực luôn bằng 0 trong hệ khối tâm",
+     "why_wrong": "Ngoại lực nói chung khác 0; đó chính là M̃ ở vế phải phương trình."
+    }
+   ],
+   "hints": [
+    "Chìa khóa: Σ m_i r̃_i = 0 quanh khối tâm.",
+    "Mômen lực quán tính quanh khối tâm triệt tiêu."
+   ]
+  }
+ ]
+}

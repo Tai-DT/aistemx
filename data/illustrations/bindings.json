@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "note": "Khai báo minh hoạ 2D thủ công (curated). Ưu tiên hơn auto-matcher khi trùng formula_id. Mỗi mục: formula_id + generator (trong tools/illus/generators2d.py) + params + caption_vi.",
+    "schema": "schema.json#/definitions/binding"
+  },
+  "bindings": [
+    {
+      "formula_id": "physics.thpt.hat-nhan.dinh-luat-phong-xa-so-hat",
+      "generator": "function_plot",
+      "params": { "expr": "exp(-0.693*x)", "xmin": 0, "xmax": 5, "ymin": 0, "ymax": 1.1, "xlabel": "t / T", "ylabel": "N/N₀", "label": "N = N₀·2^(−t/T)" },
+      "caption_vi": "Số hạt nhân còn lại giảm theo hàm mũ; sau mỗi chu kì bán rã T còn một nửa."
+    },
+    {
+      "formula_id": "physics.thpt.dao-dong-dieu-hoa.phuong-trinh-li-do",
+      "generator": "function_plot",
+      "params": { "expr": "2*cos(x)", "xmin": 0, "xmax": 6.2832, "ymin": -2.4, "ymax": 2.4, "xlabel": "ωt", "ylabel": "x", "label": "x = A·cos(ωt+φ)" },
+      "caption_vi": "Li độ dao động điều hoà là đường hình sin theo thời gian, biên độ A."
+    },
+    {
+      "formula_id": "math.thpt.vecto.quy-tac-hinh-binh-hanh",
+      "generator": "vector_add",
+      "params": { "ux": 3, "uy": 0.6, "vx": 1, "vy": 2.4, "label_u": "AB", "label_v": "AD", "label_w": "AC" },
+      "caption_vi": "Quy tắc hình bình hành: tổng hai vectơ là đường chéo hình bình hành dựng trên chúng."
+    },
+    {
+      "formula_id": "math.thcs.so-nguyen.gia-tri-tuyet-doi",
+      "generator": "number_line",
+      "params": { "min": -4, "max": 4, "points": [ { "x": -3, "label": "−a" }, { "x": 0, "label": "0" }, { "x": 3, "label": "a" } ] },
+      "caption_vi": "|a| là khoảng cách từ điểm a tới gốc 0 trên trục số; a và −a cách đều 0."
+    },
+    {
+      "formula_id": "math.thpt.luong-giac.dinh-nghia-tan-cot",
+      "generator": "unit_circle",
+      "params": { "angle": 52 },
+      "caption_vi": "Trên đường tròn lượng giác, cos θ và sin θ là hoành độ và tung độ điểm cuối; tan θ = sin θ / cos θ."
+    },
+    {
+      "formula_id": "math.thcs.he-thuc-luong.dinh-li-pytago",
+      "generator": "right_triangle",
+      "params": { "b": 4, "c": 3, "pythagoras": true, "label_hyp": "a", "label_base": "b", "label_height": "c" },
+      "caption_vi": "Định lý Pythagore: diện tích hình vuông dựng trên cạnh huyền bằng tổng diện tích hai hình vuông dựng trên hai cạnh góc vuông (a² = b² + c²)."
+    },
+    {
+      "formula_id": "math.thcs.dong-dang.dinh-li-ta-let-thuan",
+      "generator": "thales",
+      "params": {},
+      "caption_vi": "Định lý Ta-lét trong tam giác: đường thẳng song song với một cạnh của tam giác định ra trên hai cạnh kia những đoạn thẳng tương ứng tỉ lệ."
+    },
+    {
+      "formula_id": "math.thpt.to-hop-xac-suat.quy-tac-cong",
+      "generator": "venn2",
+      "params": { "label_a": "A", "label_b": "B" },
+      "caption_vi": "Quy tắc cộng xác suất / lực lượng tập hợp: n(A ∪ B) = n(A) + n(B) - n(A ∩ B)."
+    },
+    {
+      "formula_id": "biology.thpt.sinh-thai.tang-truong-mu-theo-thoi-gian",
+      "generator": "function_plot",
+      "params": { "expr": "0.6*exp(0.55*x)", "xmin": 0, "xmax": 5, "ymin": 0, "ymax": 10, "xlabel": "t", "ylabel": "N", "label": "Nₜ = N₀·e^{rt}" },
+      "caption_vi": "Tăng trưởng mũ (không giới hạn tài nguyên): đường cong đi lên ngày càng dốc."
+    },
+    {
+      "formula_id": "biology.thpt.bang-cong-thuc-ap.tang-truong-logistic-rmax",
+      "generator": "function_plot",
+      "params": { "expr": "8/(1+exp(-1.6*(x-2.5)))", "xmin": 0, "xmax": 5, "ymin": 0, "ymax": 9, "xlabel": "t", "ylabel": "N", "label": "logistic → K" },
+      "caption_vi": "Tăng trưởng logistic: đường cong chữ S, tiến dần tới sức chứa môi trường K."
+    }
+  ]
+}

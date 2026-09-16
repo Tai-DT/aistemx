@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>AISTEM X — KỊCH BẢN THUYẾT TRÌNH & PHẢN BIỆN GIÁM KHẢO</title>
+  <!-- Google Fonts: Inter & Merriweather & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Mermaid.js -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'neutral',
+      flowchart: { curve: 'basis' },
+      themeVariables: {
+        fontFamily: 'Inter, sans-serif',
+        primaryColor: '#eff6ff',
+        primaryBorderColor: '#3b82f6',
+        lineColor: '#1d4ed8',
+        secondaryColor: '#f8fafc',
+        tertiaryColor: '#ffffff'
+      }
+    });
+  </script>
+
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 18mm 20mm 18mm;
+      @bottom-right {
+        content: counter(page);
+        font-family: 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #64748b;
+      }
+      @bottom-left {
+        content: "AISTEM X (aistemx.com) — Hồ Sơ KHKT";
+        font-family: 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #94a3b8;
+      }
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11pt;
+      line-height: 1.65;
+      color: #0f172a;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cover-page {
+      page-break-after: always;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 3px double #1d4ed8;
+      padding: 35px 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 70%, #eff6ff 100%);
+      border-radius: 8px;
+    }
+
+    .cover-header {
+      font-size: 11pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #334155;
+      line-height: 1.8;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 18px;
+    }
+
+    .cover-body {
+      margin: auto 0;
+      padding: 20px 0;
+    }
+
+    .cover-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      border: 1px solid #bfdbfe;
+    }
+
+    .cover-title {
+      font-size: 26pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      line-height: 1.3;
+      margin: 0 0 15px 0;
+    }
+
+    .cover-subtitle {
+      font-size: 14pt;
+      font-weight: 500;
+      color: #475569;
+      line-height: 1.5;
+      max-width: 85%;
+      margin: 0 auto;
+    }
+
+    .cover-meta {
+      border-top: 1.5px solid #cbd5e1;
+      padding-top: 20px;
+      font-size: 11pt;
+      color: #334155;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      row-gap: 8px;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .cover-meta-label {
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #0f172a;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-top: 24pt;
+      margin-bottom: 8pt;
+      page-break-after: avoid;
+    }
+
+    h1 {
+      font-size: 20pt;
+      color: #1e3a8a;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 15pt;
+      color: #1d4ed8;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+    }
+
+    h3 {
+      font-size: 12.5pt;
+      color: #0369a1;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10pt;
+      text-align: justify;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16pt 0;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+
+    table th, table td {
+      border: 1px solid #cbd5e1;
+      padding: 8pt 10pt;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f1f5f9;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    blockquote {
+      margin: 12pt 0;
+      padding: 10pt 16pt;
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      color: #1e3a8a;
+      font-style: normal;
+      border-radius: 0 8px 8px 0;
+      page-break-inside: avoid;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9pt;
+      background-color: #f1f5f9;
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #0f766e;
+    }
+
+    pre {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12pt;
+      overflow-x: auto;
+      font-size: 8.5pt;
+      page-break-inside: avoid;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      color: #1e293b;
+    }
+
+    .mermaid {
+      margin: 18pt auto;
+      text-align: center;
+      background: #ffffff;
+      padding: 15pt;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      page-break-inside: avoid;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #e2e8f0;
+      margin: 20pt 0;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+  
+    <div class="cover-page">
+      <div class="cover-header">
+        BỘ GIÁO DỤC VÀ ĐÀO TẠO — HỘI ĐỒNG KHOA HỌC & CÔNG NGHỆ<br>
+        CUỘC THI KHOA HỌC KỸ THUẬT & KHỞI NGHIỆP ĐỔI MỚI SÁNG TẠO
+      </div>
+      <div class="cover-body">
+        <div class="cover-badge">CẨM NANG BẢO VỆ ĐỀ TÀI & PHẢN BIỆN</div>
+        <h1 class="cover-title">AISTEM X — KỊCH BẢN THUYẾT TRÌNH & PHẢN BIỆN GIÁM KHẢO</h1>
+        <p class="cover-subtitle">Hướng Dẫn Pitching 3-5 Phút, Thị Phạm Live Demo & Bộ Phản Biện Chuyên Sâu</p>
+      </div>
+      <div class="cover-meta">
+        <span class="cover-meta-label">Lĩnh vực dự thi:</span>
+        <span>Hệ thống phần mềm & Trí tuệ Nhân tạo (Systems Software & AI)</span>
+        <span class="cover-meta-label">Dự án / Tên miền:</span>
+        <span><strong>AISTEM X</strong> — <a href="https://aistemx.com" style="color:#1d4ed8; text-decoration:none;">https://aistemx.com</a></span>
+        <span class="cover-meta-label">Độ sẵn sàng:</span>
+        <span>Sản phẩm thương mại hoàn thiện 100% (Production Ready)</span>
+        <span class="cover-meta-label">Quy mô tri thức:</span>
+        <span>10,682 bản ghi — 5,272 công thức — 4,351 bài toán CAS</span>
+        <span class="cover-meta-label">Năm thực hiện:</span>
+        <span>2026</span>
+      </div>
+    </div>
+    
+  <main>
+    <h1>🎤 KỊCH BẢN THUYẾT TRÌNH, DEMO TRỰC TIẾP &amp; BẢO VỆ DỰ ÁN (PITCH DECK &amp; DEFENSE)</h1>
+<p><strong>Dự Án</strong>: AISTEM X (<a href="https://aistemx.com">aistemx.com</a>)<br />
+<strong>Mục Đích</strong>: Tài liệu hướng dẫn thí sinh thuyết trình, thị phạm sản phẩm và bảo vệ đề tài trước Ban Giám Khảo các cuộc thi KHKT (ViSEF/ISEF, Techfest, Nhân Tài Đất Việt, Hackathon).</p>
+<hr />
+<h2>⏱️ PHẦN 1: KỊCH BẢN THUYẾT TRÌNH TRƯỚC BAN GIÁM KHẢO</h2>
+<h3>🎤 Kịch Bản 3 Phút (Thuyết Trình Nhanh Tại Gian Hàng / Poster)</h3>
+<blockquote>
+<p><strong>[0:00 - 0:45] Mở Đầu &amp; Vấn Đề Thực Tiễn</strong><br />
+&quot;Kính thưa Ban giám khảo, khi các bạn học sinh giải một bài toán tích phân hay bài tập hóa lý phức tạp, nếu hỏi ChatGPT, AI rất hay tính sai số mũ hoặc bịa ra các bước biến đổi trung gian—thuật ngữ chuyên ngành gọi là <strong>Ảo giác AI (Hallucination)</strong>. Mặt khác, học sinh ngày nay đang học vẹt hàng ngàn công thức rời rạc mà không hiểu được mối liên kết bản chất giữa Toán học, Vật lí, Hoá học và Sinh học. Để giải quyết triệt để hai bài toán này, em xin trân trọng giới thiệu <strong>AISTEM X</strong>—Nền tảng Siêu Tri Thức Khoa Học Liên Môn và Trợ Lý Gia Sư AI STEM Chuẩn Quốc Tế tại địa chỉ <code>aistemx.com</code>.&quot;</p>
+</blockquote>
+<blockquote>
+<p><strong>[0:45 - 1:45] Giải Pháp Đột Phá &amp; Quy Mô Dữ Liệu</strong><br />
+&quot;Điểm đột phá lớn nhất của AISTEM X nằm ở cơ chế <strong>SymPy CAS Verification Engine</strong>. Chúng em không để AI đoán mò chữ tiếp theo, mà tích hợp một bộ máy đại số máy tính thực thụ trên backend. Mọi bước giải và công thức toán học đều được kiểm chứng ký hiệu tất định, đạt độ chính xác <strong>100% không ảo giác</strong>.<br />
+Hiện tại, hệ thống đã xây dựng thành công <strong>Kho Tri thức Khoa học đa chiều lớn nhất Việt Nam</strong> với <strong>10.682 bản ghi</strong>, gồm 5.272 công thức chuẩn hóa KaTeX, 4.351 bài toán thực hành có giải thích nguyên nhân chọn sai, 887 sơ đồ vector SVG và 14 không gian mô phỏng 3D WebGL.&quot;</p>
+</blockquote>
+<blockquote>
+<p><strong>[1:45 - 2:30] Phương Pháp Sư Phạm Socratic &amp; Trí Nhớ FSRS</strong><br />
+&quot;Khác với các ứng dụng giải hộ bài tập khiến học sinh lười tư duy, Gia sư AI của AISTEM X áp dụng triết lý <strong>Socratic Method</strong>—không cho đáp án ngay mà đặt các câu hỏi gợi mở tư duy từng bước. Hệ thống tích hợp 3 chế độ sư phạm: <em>Nền tảng</em>, <em>Chuyên sâu Olympic</em>, và đặc biệt là <em>Chế độ Học bổng Quốc tế</em>—giúp mở rộng bài toán ra nghiên cứu công nghệ bán dẫn, biến đổi khí hậu để học sinh viết bài luận săn học bổng MIT, Stanford. Đồng thời, thuật toán ghi nhớ ngắt quãng hiện đại <strong>FSRS v4.5</strong> giúp tối ưu hóa việc ghi nhớ định lý lâu dài.&quot;</p>
+</blockquote>
+<blockquote>
+<p><strong>[2:30 - 3:00] Kết Quả Thực Tế &amp; Lời Kết</strong><br />
+&quot;Sản phẩm hiện đã chạy thực tế trên tên miền <code>aistemx.com</code>, tối ưu hóa trên mạng biên toàn cầu với tốc độ phản hồi dưới 15ms. Em tin rằng AISTEM X sẽ góp phần bình đẳng hóa giáo dục STEM chất lượng cao, giúp mọi học sinh Việt Nam đều có một gia sư khoa học đẳng cấp quốc tế ngay trên điện thoại của mình. Em xin cảm ơn và sẵn sàng nhận câu hỏi từ Ban giám khảo!&quot;</p>
+</blockquote>
+<hr />
+<h3>🎬 Kịch Bản 5 Phút (Thuyết Trình Sân Khấu Kèm Slide Chi Tiết)</h3>
+<ul>
+<li><strong>Slide 1 (Tiêu đề)</strong>: Giới thiệu AISTEM X — Đột phá AI STEM và Tên miền <code>aistemx.com</code>.</li>
+<li><strong>Slide 2 (Nỗi đau thị trường)</strong>: Nêu 3 bế tắc: Ảo giác LLM trong tính toán; Học vẹt thiếu trực quan; Rào cản chi phí tiếp cận chuẩn AP/IB.</li>
+<li><strong>Slide 3 (Kiến trúc công nghệ)</strong>: Sơ đồ 4 tầng: Client (React 19 + KaTeX + Three.js) $\to$ Cloudflare Edge &amp; Zero-Trust Tunnel $\to$ FastAPI CAS &amp; RAG $\to$ PostgreSQL 16 &amp; Knowledge Graph.</li>
+<li><strong>Slide 4 (Điểm nhấn kỹ thuật - CAS Anti-Hallucination)</strong>: Giải thích cơ chế SymPy CAS chặn đứng ảo giác toán học.</li>
+<li><strong>Slide 5 (Gia sư Socratic 3 chế độ &amp; FSRS)</strong>: Trực quan hóa 3 chế độ sư phạm và đường cong trí nhớ FSRS.</li>
+<li><strong>Slide 6 (Số liệu quy mô)</strong>: Bảng thống kê 10,682 bản ghi, 5,272 công thức, 4,351 bài toán, 41 đề thi quốc tế, 24 học bổng Ivy League.</li>
+<li><strong>Slide 7 (Demo sản phẩm trực tiếp)</strong>: 60 giây chiếu màn hình tương tác thực tế trên web.</li>
+<li><strong>Slide 8 (Tác động xã hội &amp; Tương lai)</strong>: Định hướng mở rộng tới các trường THPT Chuyên và hợp tác giáo dục toàn quốc.</li>
+</ul>
+<hr />
+<h2>💻 PHẦN 2: KỊCH BẢN THỊ PHẠM (LIVE DEMO WORKFLOW)</h2>
+<p>Khi đứng trước giám khảo, hãy mở sẵn trình duyệt tại <code>http://127.0.0.1:5173</code> hoặc <code>https://aistemx.com</code> và thực hiện theo 5 bước sau:</p>
+<pre><code>[Bước 1: Khám Phá Tri Thức] ──▶ [Bước 2: Mô Phỏng Trực Quan 2D/3D] ──▶ [Bước 3: Thử Thách CAS]
+                                                                              │
+[Bước 5: Trí Nhớ FSRS]      ◀── [Bước 4: Gia Sư Socratic AI]          ◀───────┘
+</code></pre>
+<h3>Bước 1: Duyệt Kho Tri Thức 5,272 Công Thức</h3>
+<ul>
+<li><strong>Thao tác</strong>: Nhấp vào tab <strong>Công Thức</strong> (Formulas). Gõ vào ô tìm kiếm: <code>&quot;Đạo hàm&quot;</code> hoặc <code>&quot;Con lắc lò xo&quot;</code>.</li>
+<li><strong>Lời dẫn</strong>: <em>&quot;Thưa thầy cô, hệ thống hỗ trợ tìm kiếm tức thì cả tiếng Việt có dấu lẫn không dấu. Khi nhấp vào công thức, hệ thống lập tức hiển thị công thức chuẩn KaTeX, các biến số vật lý, thứ nguyên chuẩn SI và điều kiện áp dụng.&quot;</em></li>
+</ul>
+<h3>Bước 2: Thị Phạm Trực Quan Hóa Vector 2D và 3D</h3>
+<ul>
+<li><strong>Thao tác</strong>: Bấm vào nút xem <strong>Minh Họa</strong> (Illustration/3D). Phóng to/thu nhỏ sơ đồ vector.</li>
+<li><strong>Lời dẫn</strong>: <em>&quot;Mọi hình vẽ trên AISTEM X đều là Vector SVG tất định, phóng to đến 1000% không hề bị mờ vỡ hạt. Ngoài ra hệ thống tích hợp không gian Three.js 3D để học sinh xoay lật đa chiều các mô hình cấu trúc phân tử và dao động cơ học.&quot;</em></li>
+</ul>
+<h3>Bước 3: Thực Hành CAS &amp; Phân Tích Lỗi Sai Học Sinh</h3>
+<ul>
+<li><strong>Thao tác</strong>: Chuyển sang tab <strong>Luyện Tập</strong> (Practice). Chọn một bài tập giải tích hoặc vật lý. Cố tình chọn một phương án sai.</li>
+<li><strong>Lời dẫn</strong>: <em>&quot;Khi học sinh chọn một phương án sai, hệ thống không chỉ báo 'Sai rồi', mà trường <code>why_wrong</code> được kích hoạt, chỉ rõ lỗ hổng tư duy: ví dụ học sinh đã quên tính đạo hàm của hàm hợp hay quên đổi đơn vị từ cm sang m.&quot;</em></li>
+</ul>
+<h3>Bước 4: Thị Phạm Gia Sư AI Socratic Chống Ảo Giác</h3>
+<ul>
+<li><strong>Thao tác</strong>: Mở cửa sổ <strong>Gia Sư AI</strong> (AiTutorModal). Chọn chế độ <strong>Scholarship (Săn học bổng quốc tế)</strong>. Đặt câu hỏi: <em>&quot;Bài toán con lắc lò xo này có ứng dụng gì trong công nghệ cao?&quot;</em></li>
+<li><strong>Lời dẫn</strong>: <em>&quot;Gia sư AI không chỉ giảng bài theo cách thông thường, mà ở chế độ Scholarship, AI sẽ liên hệ bài toán dao động điều hòa với công nghệ cảm biến gia tốc MEMS trong điện thoại thông minh và con quay hồi chuyển trên tên lửa vũ trụ SpaceX, hướng dẫn học sinh hướng viết bài nghiên cứu khoa học.&quot;</em></li>
+</ul>
+<h3>Bước 5: Thẻ Ghi Nhớ FSRS (Flashcards)</h3>
+<ul>
+<li><strong>Thao tác</strong>: Bấm nút <strong>Lưu vào Bộ nhớ FSRS</strong>, chuyển sang tab <strong>Thẻ Nhớ</strong> (Flashcards).</li>
+<li><strong>Lời dẫn</strong>: <em>&quot;Hệ thống tự động lên lịch lặp lại ngắt quãng bằng thuật toán FSRS v4.5. Mỗi ngày học sinh chỉ cần dành 5 phút để ôn tập các công thức sắp rơi vào vùng quên của não bộ.&quot;</em></li>
+</ul>
+<hr />
+<h2>🛡️ PHẦN 3: BỘ CÂU HỎI PHẢN BIỆN THƯỜNG GẶP (Q&amp;A DEFENSE)</h2>
+<h3>Câu hỏi 1: &quot;Sản phẩm của em khác gì so với ChatGPT hay Gemini?&quot;</h3>
+<ul>
+<li><strong>Trả lời phản biện</strong>:
+<blockquote>
+<p><em>&quot;Thưa Ban giám khảo, sự khác biệt nằm ở 3 yếu tố cốt lõi:</em><br />
+<em>1. <strong>Độ chính xác toán học</strong>: ChatGPT hoạt động theo cơ chế xác suất từ nên thường xuyên tính sai đạo hàm, tích phân. AISTEM X tích hợp bộ máy đại số biểu tượng SymPy CAS độc lập trên backend, đảm bảo tính toán chính xác 100% và loại trừ hoàn toàn ảo giác.</em><br />
+<em>2. <strong>Phương pháp sư phạm</strong>: ChatGPT có xu hướng giải hộ ngay từ A đến Z khiến học sinh thụ động. AISTEM X áp dụng phương pháp Socratic, chỉ gợi ý từng bước để học sinh tự tìm ra đáp án.</em><br />
+<em>3. <strong>Đồ thị tri thức liên môn</strong>: Hệ thống có sẵn kho 10.682 bản ghi chuẩn hóa theo chương trình GDPT 2018 và chuẩn quốc tế AP/IB, điều mà các LLM chung chung không có ngữ cảnh chuyên sâu.&quot;</em></p>
+</blockquote>
+</li>
+</ul>
+<h3>Câu hỏi 2: &quot;Nguồn dữ liệu 10.682 bản ghi này đến từ đâu? Có đảm bảo tính chính xác và bản quyền không?&quot;</h3>
+<ul>
+<li><strong>Trả lời phản biện</strong>:
+<blockquote>
+<p><em>&quot;Dữ liệu được chúng em biên soạn, số hóa và thẩm định dựa trên:</em><br />
+<em>- Chương trình GDPT 2018 của Bộ Giáo dục và Đào tạo Việt Nam.</em><br />
+<em>- Khung chương trình chuẩn hóa quốc tế của College Board (AP), International Baccalaureate (IB) và Cambridge A-Level.</em><br />
+<em>- Toàn bộ công thức và bài toán đều được chạy qua script tự động kiểm thử cú pháp LaTeX (<code>tools/validate.py</code>) và đối chiếu chéo ID (<code>tools/validate_content.py</code>) đảm bảo không có bất kỳ liên kết gãy hay lỗi cú pháp nào trước khi đưa vào cơ sở dữ liệu.&quot;</em></p>
+</blockquote>
+</li>
+</ul>
+<h3>Câu hỏi 3: &quot;Hệ thống có chạy được khi mất kết nối Internet không?&quot;</h3>
+<ul>
+<li><strong>Trả lời phản biện</strong>:
+<blockquote>
+<p><em>&quot;Dạ có. Kiến trúc AISTEM X được thiết kế theo mô hình Hybrid:</em><br />
+<em>- Toàn bộ cơ sở dữ liệu có thể đóng gói gọn trong file SQLite cục bộ <code>engine/aistem.db</code>.</em><br />
+<em>- Bản thân Frontend và bộ máy kiểm tra CAS SymPy có thể chạy độc lập (Offline Local Server) trong mạng LAN của trường học mà không cần internet.</em><br />
+<em>- Khi có internet, hệ thống sẽ tự động kích hoạt thêm tầng AI Cloudflare Edge để người dùng tương tác thoại/thị giác nâng cao.&quot;</em></p>
+</blockquote>
+</li>
+</ul>
+<h3>Câu hỏi 4: &quot;Chi phí vận hành của hệ thống là bao nhiêu? Có đắt đỏ không?&quot;</h3>
+<ul>
+<li><strong>Trả lời phản biện</strong>:
+<blockquote>
+<p><em>&quot;Chi phí vận hành của AISTEM X cực kỳ thấp nhờ tối ưu hóa kiến trúc:</em><br />
+<em>- Phần xử lý nặng nhất là tính toán toán học được thực hiện bởi engine SymPy cục bộ (chi phí máy chủ $0).</em><br />
+<em>- Tầng mạng biên và mô hình AI sử dụng Cloudflare Workers AI với mức phí tiệm cận $0 cho các dự án vừa và nhỏ.</em><br />
+<em>- Do đó, hệ thống hoàn toàn có khả năng cung cấp miễn phí cho hàng chục ngàn học sinh mà không bị gánh nặng chi phí API thương mại.&quot;</em></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<p><em>Bản quyền tài liệu thuộc về Nhóm Phát Triển Dự Án AISTEM X (aistemx.com).</em></p>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
+      });
+      mermaid.run({
+        querySelector: '.mermaid'
+      });
+    });
+  </script>
+</body>
+</html>

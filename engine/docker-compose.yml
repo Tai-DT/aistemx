@@ -1,0 +1,28 @@
+# Chạy tại chỗ:  docker compose up --build
+# API ở http://localhost:8000/docs
+#
+# Khoá API đọc từ file .env cùng thư mục (xem .env.example). Không có khoá thì
+# hệ thống vẫn chạy: tra cứu, phân loại, chấm bài và kiểm chứng CAS không cần
+# mô hình; riêng phần giải bài sẽ báo là chưa cấu hình.
+
+services:
+  api:
+    build: .
+    image: aistem-engine:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      # Kho dữ liệu gắn chỉ-đọc: container không được sửa dữ liệu gốc.
+      - ..:/corpus:ro
+      # File SQLite dựng ra nằm ở volume riêng, còn nguyên qua các lần dựng lại.
+      - aistem-db:/data
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      AISTEM_CORPUS_ROOT: /corpus
+      AISTEM_DB_PATH: /data/aistem.db
+    restart: unless-stopped
+
+volumes:
+  aistem-db:

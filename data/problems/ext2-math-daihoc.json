@@ -1,0 +1,3784 @@
+{
+  "meta": {
+    "file": "ext2-math-daihoc.json",
+    "subject": "math",
+    "title": "Bài tập bổ sung Toán đại học - đợt 2 (công thức chưa có bài tập)",
+    "levels": [
+      "dai-hoc"
+    ],
+    "count": 66
+  },
+  "problems": [
+    {
+      "id": "prob.math.ext2-math-daihoc.0001",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đạo hàm nâng cao",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho y = sin(x^3). Tính y'(x) rồi suy ra giá trị của y' tại điểm mà đối số x^3 = 0 (tức x = 0).",
+      "statement_en": "Let y = sin(x^3). Find y' and evaluate it where x = 0.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Đặt u = x^3 nên y = sin u; áp dụng quy tắc đạo hàm hàm hợp dy/dx = (dy/du)(du/dx).",
+          "latex": "\\frac{dy}{dx} = \\cos u \\cdot 3x^{2} = 3x^{2}\\cos\\left(x^{3}\\right)"
+        },
+        {
+          "explain": "Thay x = 0: thừa số 3x^2 triệt tiêu nên đạo hàm bằng 0.",
+          "latex": "y'(0) = 3\\cdot 0^{2}\\cdot\\cos 0 = 0"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dao-ham.dao-ham-ham-hop"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dùng quy tắc dây chuyền",
+        "tính đạo hàm hàm hợp"
+      ],
+      "tags": [
+        "giai-tich",
+        "dao-ham",
+        "ham-hop"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3cos(x^3)",
+          "why_wrong": "Quên nhân thêm đạo hàm lớp trong du/dx = 3x^2, chỉ lấy đạo hàm lớp ngoài."
+        },
+        {
+          "key": "B",
+          "text": "cos(x^3)",
+          "why_wrong": "Bỏ hẳn quy tắc dây chuyền, coi như đạo hàm của sin(u) mà u = x."
+        },
+        {
+          "key": "C",
+          "text": "3x^2 cos(x^3), bằng 0 tại x = 0",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "3x^2 sin(x^3)",
+          "why_wrong": "Đạo hàm của sin là cos, ở đây giữ nguyên sin là sai."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0002",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đạo hàm nâng cao",
+      "type": "dien-so",
+      "statement_vi": "Hàm f(x) = x^3 + x đơn điệu tăng nên có hàm ngược. Biết f(1) = 2, tính (f^{-1})'(2).",
+      "statement_en": "For f(x) = x^3 + x with f(1) = 2, compute (f^{-1})'(2).",
+      "answer": "1/4",
+      "solution_steps": [
+        {
+          "explain": "Theo công thức đạo hàm hàm ngược, đạo hàm của f^{-1} tại y bằng nghịch đảo đạo hàm của f tại điểm x tương ứng.",
+          "latex": "\\left(f^{-1}\\right)'(y) = \\frac{1}{f'(x)},\\quad y = f(x)"
+        },
+        {
+          "explain": "Tính f'(x) = 3x^2 + 1, tại x = 1 (điểm ứng với y = 2) ta có f'(1) = 4.",
+          "latex": "f'(1) = 3\\cdot 1^{2} + 1 = 4"
+        },
+        {
+          "explain": "Vậy đạo hàm hàm ngược tại y = 2 bằng 1/4.",
+          "latex": "\\left(f^{-1}\\right)'(2) = \\frac{1}{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dao-ham.dao-ham-ham-nguoc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng đạo hàm hàm ngược",
+        "xác định điểm tương ứng"
+      ],
+      "tags": [
+        "giai-tich",
+        "dao-ham",
+        "ham-nguoc"
+      ],
+      "answer_numeric": 0.25,
+      "tolerance": 1e-09,
+      "hints": [
+        "Điểm x ứng với y = 2 là x = 1.",
+        "Chỉ cần f'(1)."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0003",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đạo hàm nâng cao",
+      "type": "trac-nghiem",
+      "statement_vi": "Đường cong cho bởi tham số x = t^2, y = t^3. Tính hệ số góc dy/dx của tiếp tuyến tại điểm ứng với t = 2.",
+      "statement_en": "A parametric curve x = t^2, y = t^3. Find dy/dx at t = 2.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Với đường cho bởi tham số, đạo hàm dy/dx bằng tỉ số đạo hàm theo t của y và của x.",
+          "latex": "\\frac{dy}{dx} = \\frac{y'(t)}{x'(t)} = \\frac{3t^{2}}{2t} = \\frac{3t}{2}"
+        },
+        {
+          "explain": "Thay t = 2.",
+          "latex": "\\left.\\frac{dy}{dx}\\right|_{t=2} = \\frac{3\\cdot 2}{2} = 3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dao-ham.dao-ham-ham-tham-so"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "đạo hàm hàm tham số",
+        "rút gọn tỉ số đạo hàm"
+      ],
+      "tags": [
+        "giai-tich",
+        "dao-ham",
+        "tham-so"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3/2",
+          "why_wrong": "Quên thay t = 2, dừng lại ở biểu thức 3t/2."
+        },
+        {
+          "key": "B",
+          "text": "3",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "6",
+          "why_wrong": "Lấy y'(t) = 3t^2 chia cho 1 thay vì chia cho x'(t) = 2t."
+        },
+        {
+          "key": "D",
+          "text": "12",
+          "why_wrong": "Nhân y'(2) = 12 mà không chia cho x'(2) = 4."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0004",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đạo hàm nâng cao",
+      "type": "trac-nghiem",
+      "statement_vi": "Tính đạo hàm cấp 3 của hàm cos(2x) rồi rút gọn về hàm lượng giác sơ cấp.",
+      "statement_en": "Find the 3rd derivative of cos(2x) and simplify.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Dùng công thức đạo hàm cấp n của cos(ax+b): mỗi lần đạo hàm thêm hệ số a và cộng pi/2 vào đối số.",
+          "latex": "\\bigl(\\cos 2x\\bigr)^{(3)} = 2^{3}\\cos\\left(2x + \\frac{3\\pi}{2}\\right)"
+        },
+        {
+          "explain": "Vì cos(theta + 3pi/2) = sin(theta), ta thu gọn.",
+          "latex": "= 8\\cos\\left(2x + \\frac{3\\pi}{2}\\right) = 8\\sin 2x"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dao-ham.dao-ham-cap-n-cos"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "đạo hàm cấp cao",
+        "công thức đạo hàm cấp n của cos"
+      ],
+      "tags": [
+        "giai-tich",
+        "dao-ham-cap-n",
+        "luong-giac"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "8 sin(2x)",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "-8 sin(2x)",
+          "why_wrong": "Nhầm dấu: cos(theta+3pi/2)=+sin(theta) chứ không phải -sin(theta)."
+        },
+        {
+          "key": "C",
+          "text": "8 cos(2x)",
+          "why_wrong": "Quên cộng pha n*pi/2 nên không đổi cos thành sin."
+        },
+        {
+          "key": "D",
+          "text": "6 sin(2x)",
+          "why_wrong": "Lấy hệ số 2*3 = 6 thay vì 2^3 = 8."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0005",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đạo hàm nâng cao",
+      "type": "dien-so",
+      "statement_vi": "Tính đạo hàm cấp 4 của hàm ln(x) tại x = 1.",
+      "statement_en": "Find the 4th derivative of ln(x) at x = 1.",
+      "answer": "-6",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng công thức đạo hàm cấp n của ln x.",
+          "latex": "\\bigl(\\ln x\\bigr)^{(n)} = \\frac{(-1)^{n-1}(n-1)!}{x^{n}}"
+        },
+        {
+          "explain": "Với n = 4: dấu là (-1)^3 = -1 và (n-1)! = 3! = 6, tại x = 1 mẫu bằng 1.",
+          "latex": "\\bigl(\\ln x\\bigr)^{(4)}\\Big|_{x=1} = \\frac{(-1)^{3}\\cdot 3!}{1^{4}} = -6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dao-ham.dao-ham-cap-n-logarit"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "đạo hàm cấp cao",
+        "dấu luân phiên",
+        "giai thừa"
+      ],
+      "tags": [
+        "giai-tich",
+        "dao-ham-cap-n",
+        "logarit"
+      ],
+      "answer_numeric": -6,
+      "tolerance": 1e-09,
+      "hints": [
+        "Dấu là (-1)^{n-1}.",
+        "(n-1)! với n = 4 là 3! = 6."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0006",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức Newton - Leibniz tính tích phân xác định của 3x^2 trên đoạn [0; 2].",
+      "statement_en": "Use Newton-Leibniz to compute the integral of 3x^2 on [0; 2].",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Tìm một nguyên hàm F của f(x) = 3x^2.",
+          "latex": "F(x) = x^{3},\\quad F'(x) = 3x^{2}"
+        },
+        {
+          "explain": "Áp dụng Newton - Leibniz: hiệu giá trị nguyên hàm tại hai cận.",
+          "latex": "\\int_{0}^{2} 3x^{2}\\,dx = F(2) - F(0) = 8 - 0 = 8"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.cong-thuc-newton-leibniz"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "tìm nguyên hàm",
+        "áp dụng Newton - Leibniz"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "newton-leibniz"
+      ],
+      "answer_numeric": 8,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0007",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho G(x) = tích phân từ 0 đến x^2 của e^{-t^2} dt. Tính G'(x) và giá trị G'(1).",
+      "statement_en": "Let G(x) be the integral from 0 to x^2 of e^{-t^2} dt. Find G'(x) and G'(1).",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Đạo hàm tích phân theo cận trên biến đổi: cận trên là v(x) = x^2, cận dưới cố định.",
+          "latex": "\\frac{d}{dx}\\int_{0}^{v(x)} f(t)\\,dt = f\\bigl(v(x)\\bigr)v'(x)"
+        },
+        {
+          "explain": "Với f(t) = e^{-t^2}, v(x) = x^2, v'(x) = 2x.",
+          "latex": "G'(x) = e^{-(x^{2})^{2}}\\cdot 2x = 2x\\,e^{-x^{4}}"
+        },
+        {
+          "explain": "Thay x = 1.",
+          "latex": "G'(1) = 2e^{-1} = \\frac{2}{e}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.dao-ham-theo-can"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "quy tắc đạo hàm theo cận",
+        "quy tắc dây chuyền cho cận"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "dao-ham-theo-can"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "e^{-1}",
+          "why_wrong": "Quên nhân đạo hàm của cận trên v'(x) = 2x."
+        },
+        {
+          "key": "B",
+          "text": "2/e",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "2/e^2",
+          "why_wrong": "Thay x^2 vào chỗ mũ nhưng lũy thừa sai: mũ phải là -(x^2)^2 = -x^4, tại x=1 là -1."
+        },
+        {
+          "key": "D",
+          "text": "2e",
+          "why_wrong": "Nhầm dấu ở số mũ, viết e^{+1} thay vì e^{-1}."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0008",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Dùng phép thế vạn năng t = tan(x/2), tính tích phân từ 0 đến pi/2 của 1/(1+sin x) dx.",
+      "statement_en": "Using t = tan(x/2), compute the integral from 0 to pi/2 of 1/(1+sin x) dx.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Đặt t = tan(x/2): sin x = 2t/(1+t^2) và dx = 2dt/(1+t^2); cận x=0 -> t=0, x=pi/2 -> t=1.",
+          "latex": "t = \\tan\\frac{x}{2}:\\ \\sin x = \\frac{2t}{1+t^{2}},\\ dx = \\frac{2\\,dt}{1+t^{2}}"
+        },
+        {
+          "explain": "Thay vào, mẫu 1+sin x = (1+t)^2/(1+t^2) nên tích phân rút gọn thành hữu tỉ đơn giản.",
+          "latex": "\\int_{0}^{1}\\frac{2\\,dt}{(1+t)^{2}} = \\left[-\\frac{2}{1+t}\\right]_{0}^{1}"
+        },
+        {
+          "explain": "Tính giá trị tại hai cận.",
+          "latex": "= -\\frac{2}{2} + \\frac{2}{1} = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.the-t-tan-nua-goc"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "phép thế vạn năng",
+        "đưa về tích phân hữu tỉ"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "the-van-nang"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2",
+          "why_wrong": "Chỉ tính giá trị nguyên hàm tại cận trên, quên trừ giá trị tại cận dưới."
+        },
+        {
+          "key": "B",
+          "text": "pi/4",
+          "why_wrong": "Nhầm sang tích phân 1/(1+x^2) cho ra arctan, không phải bài này."
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "1/2",
+          "why_wrong": "Đổi cận sai hoặc quên hệ số 2 ở dx = 2dt/(1+t^2)."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0009",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Dùng công thức truy hồi cho tích phân của sin^n, tính tích phân từ 0 đến pi/2 của sin^4(x) dx.",
+      "statement_en": "Using the reduction formula, compute the integral from 0 to pi/2 of sin^4(x) dx.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Công thức truy hồi trên đoạn [0; pi/2] làm triệt tiêu phần ngoài tích phân (do sin, cos ở đầu mút bằng 0 hoặc 1), còn lại hệ số truy hồi.",
+          "latex": "I_{n} = \\frac{n-1}{n}I_{n-2},\\quad I_{0} = \\frac{\\pi}{2}"
+        },
+        {
+          "explain": "Áp dụng lần lượt cho n = 4 rồi n = 2.",
+          "latex": "I_{4} = \\frac{3}{4}I_{2} = \\frac{3}{4}\\cdot\\frac{1}{2}I_{0} = \\frac{3}{8}\\cdot\\frac{\\pi}{2}"
+        },
+        {
+          "explain": "Rút gọn.",
+          "latex": "I_{4} = \\frac{3\\pi}{16}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.cong-thuc-truy-hoi-sin"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "truy hồi tích phân",
+        "tích phân Wallis"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "truy-hoi"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "pi/4",
+          "why_wrong": "Chỉ hạ một bậc rồi dừng, quên nhân tiếp hệ số 1/2 khi về I_0."
+        },
+        {
+          "key": "B",
+          "text": "3pi/16",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "3/8",
+          "why_wrong": "Quên nhân I_0 = pi/2, chỉ giữ tích các hệ số truy hồi."
+        },
+        {
+          "key": "D",
+          "text": "pi/2",
+          "why_wrong": "Nhầm sin^4 với sin^0, dùng luôn giá trị I_0."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0010",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Hàm f(x) = |sin x| tuần hoàn chu kì pi. Dùng tính chất tích phân hàm tuần hoàn, tính tích phân từ 2pi đến 4pi của |sin x| dx.",
+      "statement_en": "For the pi-periodic |sin x|, compute the integral from 2pi to 4pi of |sin x| dx.",
+      "answer": "4",
+      "solution_steps": [
+        {
+          "explain": "Hàm |sin x| có chu kì T = pi; tích phân trên mọi đoạn dài đúng một chu kì đều bằng nhau nên đoạn [2pi; 4pi] dài 2pi tương đương hai chu kì và bằng tích phân trên [0; 2pi].",
+          "latex": "\\int_{a}^{a+T} f = \\int_{0}^{T} f \\Rightarrow \\int_{2\\pi}^{4\\pi}|\\sin x|\\,dx = \\int_{0}^{2\\pi}|\\sin x|\\,dx"
+        },
+        {
+          "explain": "Trên [0; 2pi], mỗi nửa chu kì đóng góp 2 nên tổng bằng 4.",
+          "latex": "\\int_{0}^{2\\pi}|\\sin x|\\,dx = 2\\int_{0}^{\\pi}\\sin x\\,dx = 2\\cdot 2 = 4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.tich-phan-ham-tuan-hoan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "dùng tính tuần hoàn",
+        "tích phân trị tuyệt đối"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "tuan-hoan"
+      ],
+      "answer_numeric": 4,
+      "tolerance": 1e-09,
+      "hints": [
+        "Chu kì của |sin x| là pi.",
+        "Tích phân của sin trên [0; pi] bằng 2."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0011",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Theo định lí giá trị trung bình của tích phân, giá trị trung bình f(c) của hàm f(x) = x^2 trên [0; 2] bằng bao nhiêu?",
+      "statement_en": "By the mean value theorem for integrals, find the mean value of f(x) = x^2 on [0; 2].",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Định lí bảo đảm tồn tại c với tích phân bằng f(c) nhân độ dài đoạn; giá trị trung bình là tích phân chia cho độ dài.",
+          "latex": "\\int_{a}^{b} f = f(c)(b-a)\\Rightarrow f(c) = \\frac{1}{b-a}\\int_{a}^{b} f"
+        },
+        {
+          "explain": "Tính tích phân của x^2 trên [0; 2] rồi chia cho 2.",
+          "latex": "f(c) = \\frac{1}{2}\\int_{0}^{2} x^{2}\\,dx = \\frac{1}{2}\\cdot\\frac{8}{3} = \\frac{4}{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.dinh-li-gia-tri-trung-binh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "giá trị trung bình tích phân",
+        "chia cho độ dài đoạn"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "gia-tri-trung-binh"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "8/3",
+          "why_wrong": "Đây là giá trị tích phân, quên chia cho độ dài đoạn b - a = 2."
+        },
+        {
+          "key": "B",
+          "text": "4/3",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "2",
+          "why_wrong": "Lấy trung bình cộng của f(0) = 0 và f(2) = 4, không đúng cho hàm phi tuyến."
+        },
+        {
+          "key": "D",
+          "text": "4",
+          "why_wrong": "Lấy giá trị lớn nhất f(2) = 4 làm giá trị trung bình."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0012",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân suy rộng",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân suy rộng loại một: tích phân từ 1 đến +vô cùng của 1/x^2 dx.",
+      "statement_en": "Compute the improper integral from 1 to +infinity of 1/x^2 dx.",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa, thay cận vô hạn bằng b rồi lấy giới hạn khi b -> +vô cùng.",
+          "latex": "\\int_{1}^{+\\infty}\\frac{dx}{x^{2}} = \\lim_{b\\to+\\infty}\\int_{1}^{b}\\frac{dx}{x^{2}}"
+        },
+        {
+          "explain": "Nguyên hàm của 1/x^2 là -1/x.",
+          "latex": "\\int_{1}^{b}\\frac{dx}{x^{2}} = \\left[-\\frac{1}{x}\\right]_{1}^{b} = 1 - \\frac{1}{b}"
+        },
+        {
+          "explain": "Cho b -> +vô cùng, số hạng 1/b -> 0.",
+          "latex": "\\lim_{b\\to+\\infty}\\left(1 - \\frac{1}{b}\\right) = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-suy-rong.loai-mot-dinh-nghia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "định nghĩa tích phân suy rộng",
+        "tính giới hạn cận"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-suy-rong",
+        "hoi-tu"
+      ],
+      "answer_numeric": 1,
+      "tolerance": 1e-09,
+      "hints": [
+        "Nguyên hàm 1/x^2 là -1/x.",
+        "Cho cận trên tiến ra vô cùng."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0013",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân suy rộng",
+      "type": "dung-sai",
+      "statement_vi": "Xét khẳng định: Vì 0 <= e^{-x^2} <= e^{-x} với mọi x >= 1 và tích phân từ 1 đến +vô cùng của e^{-x} hội tụ, nên theo tiêu chuẩn so sánh, tích phân từ 1 đến +vô cùng của e^{-x^2} cũng hội tụ. Đúng hay Sai?",
+      "statement_en": "Claim: since 0 <= e^{-x^2} <= e^{-x} for x >= 1 and the integral of e^{-x} converges, by comparison the integral of e^{-x^2} converges. True or False?",
+      "answer": "Đúng",
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra bất đẳng thức: với x >= 1 thì x^2 >= x nên -x^2 <= -x, do hàm mũ tăng suy ra e^{-x^2} <= e^{-x}, và cả hai đều không âm.",
+          "latex": "x \\ge 1 \\Rightarrow x^{2} \\ge x \\Rightarrow 0 \\le e^{-x^{2}} \\le e^{-x}"
+        },
+        {
+          "explain": "Tích phân trội hội tụ (bằng e^{-1}), theo tiêu chuẩn so sánh trực tiếp thì tích phân bị chặn trên cũng hội tụ.",
+          "latex": "\\int_{1}^{+\\infty} e^{-x}\\,dx = e^{-1}\\ \\text{hoi tu} \\Rightarrow \\int_{1}^{+\\infty} e^{-x^{2}}\\,dx\\ \\text{hoi tu}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-suy-rong.tieu-chuan-so-sanh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "so sánh hàm dưới dấu tích phân",
+        "kết luận hội tụ"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-suy-rong",
+        "so-sanh"
+      ],
+      "hints": [
+        "So sánh x^2 với x khi x >= 1.",
+        "Hàm bị chặn trên bởi hàm hội tụ thì hội tụ."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0014",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính độ dài cung của đường cong y = (2/3)x^{3/2} từ x = 0 đến x = 3.",
+      "statement_en": "Find the arc length of y = (2/3)x^{3/2} from x = 0 to x = 3.",
+      "answer": "14/3",
+      "solution_steps": [
+        {
+          "explain": "Công thức độ dài cung của y = f(x) cần y'; ở đây y' = x^{1/2} nên 1 + (y')^2 = 1 + x.",
+          "latex": "L = \\int_{a}^{b}\\sqrt{1 + \\bigl(y'\\bigr)^{2}}\\,dx,\\quad y' = x^{1/2}"
+        },
+        {
+          "explain": "Tính tích phân của căn(1+x).",
+          "latex": "L = \\int_{0}^{3}\\sqrt{1+x}\\,dx = \\left[\\frac{2}{3}(1+x)^{3/2}\\right]_{0}^{3}"
+        },
+        {
+          "explain": "Thay cận: (1+3)^{3/2} = 8, (1+0)^{3/2} = 1.",
+          "latex": "L = \\frac{2}{3}(8 - 1) = \\frac{14}{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.do-dai-cung-descartes"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "công thức độ dài cung",
+        "tích phân hàm căn"
+      ],
+      "tags": [
+        "giai-tich",
+        "ung-dung-tich-phan",
+        "do-dai-cung"
+      ],
+      "answer_numeric": 4.6667,
+      "tolerance": 0.001,
+      "hints": [
+        "y' = x^{1/2}.",
+        "1 + (y')^2 = 1 + x."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0015",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho miền phẳng giới hạn bởi y = x và y = x^2 trên [0; 1]. Tính thể tích khối tròn xoay khi quay miền quanh trục Ox (phương pháp vành khuyên).",
+      "statement_en": "The region between y = x and y = x^2 on [0; 1] is rotated about the x-axis. Find the volume (washer method).",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Trên [0; 1] ta có x >= x^2 nên bán kính ngoài là x, bán kính trong là x^2; thể tích vành khuyên là pi lần tích phân hiệu bình phương.",
+          "latex": "V = \\pi\\int_{0}^{1}\\left(x^{2} - (x^{2})^{2}\\right)dx = \\pi\\int_{0}^{1}\\left(x^{2} - x^{4}\\right)dx"
+        },
+        {
+          "explain": "Tính tích phân.",
+          "latex": "V = \\pi\\left(\\frac{1}{3} - \\frac{1}{5}\\right) = \\pi\\cdot\\frac{2}{15} = \\frac{2\\pi}{15}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.the-tich-vanh-khuyen"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "xác định bán kính trong ngoài",
+        "tích phân hiệu bình phương"
+      ],
+      "tags": [
+        "giai-tich",
+        "ung-dung-tich-phan",
+        "the-tich"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "pi/15",
+          "why_wrong": "Lấy hiệu các nguyên hàm sai dấu hoặc quên nhân 2."
+        },
+        {
+          "key": "B",
+          "text": "2pi/15",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "pi/6",
+          "why_wrong": "Tính hiệu diện tích (x - x^2) rồi bình phương thay vì lấy hiệu bình phương x^2 - x^4."
+        },
+        {
+          "key": "D",
+          "text": "8pi/15",
+          "why_wrong": "Đặt sai bán kính ngoài/trong, lấy x^2 làm ngoài và x làm trong."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0016",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Miền phẳng dưới đường y = 4 - x^2 trên [0; 2] (trên trục Ox) quay quanh trục Oy. Tính thể tích khối tròn xoay bằng phương pháp vỏ trụ.",
+      "statement_en": "The region under y = 4 - x^2 on [0; 2] is rotated about the y-axis. Find the volume by cylindrical shells.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Phương pháp vỏ trụ khi quay quanh Oy: thể tích bằng 2pi lần tích phân x nhân chiều cao f(x).",
+          "latex": "V = 2\\pi\\int_{0}^{2} x\\,(4 - x^{2})\\,dx"
+        },
+        {
+          "explain": "Khai triển và tính tích phân.",
+          "latex": "V = 2\\pi\\int_{0}^{2}\\left(4x - x^{3}\\right)dx = 2\\pi\\left[2x^{2} - \\frac{x^{4}}{4}\\right]_{0}^{2}"
+        },
+        {
+          "explain": "Thay cận: 2(4) - 16/4 = 8 - 4 = 4.",
+          "latex": "V = 2\\pi\\cdot 4 = 8\\pi"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.the-tich-vo-tru"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "phương pháp vỏ trụ",
+        "tích phân đa thức"
+      ],
+      "tags": [
+        "giai-tich",
+        "ung-dung-tich-phan",
+        "vo-tru"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "4pi",
+          "why_wrong": "Quên hệ số 2 trong công thức 2pi, chỉ nhân pi."
+        },
+        {
+          "key": "B",
+          "text": "16pi",
+          "why_wrong": "Nhân đôi nhầm hoặc lấy cả hình chữ nhật bao ngoài."
+        },
+        {
+          "key": "C",
+          "text": "8pi",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "32pi/5",
+          "why_wrong": "Dùng nhầm công thức đĩa pi*int f^2 dx thay vì vỏ trụ."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0017",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Tính diện tích hình giới hạn bởi đường cong tọa độ cực r = 1 + cos(phi) (đường cardioid).",
+      "statement_en": "Find the area enclosed by the polar curve r = 1 + cos(phi) (a cardioid).",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Diện tích trong tọa độ cực bằng một nửa tích phân r^2 theo phi trên toàn vòng [0; 2pi].",
+          "latex": "S = \\frac{1}{2}\\int_{0}^{2\\pi} r^{2}(\\varphi)\\,d\\varphi = \\frac{1}{2}\\int_{0}^{2\\pi}(1 + \\cos\\varphi)^{2}\\,d\\varphi"
+        },
+        {
+          "explain": "Khai triển: (1+cos)^2 = 1 + 2cos + cos^2; trên [0;2pi] tích phân của cos bằng 0 và của cos^2 bằng pi.",
+          "latex": "\\int_{0}^{2\\pi}\\left(1 + 2\\cos\\varphi + \\cos^{2}\\varphi\\right)d\\varphi = 2\\pi + 0 + \\pi = 3\\pi"
+        },
+        {
+          "explain": "Nhân 1/2.",
+          "latex": "S = \\frac{1}{2}\\cdot 3\\pi = \\frac{3\\pi}{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.dien-tich-toa-do-cuc"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "diện tích trong tọa độ cực",
+        "tích phân cos^2"
+      ],
+      "tags": [
+        "giai-tich",
+        "ung-dung-tich-phan",
+        "toa-do-cuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3pi/2",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "3pi",
+          "why_wrong": "Quên nhân hệ số 1/2 của công thức diện tích cực."
+        },
+        {
+          "key": "C",
+          "text": "pi",
+          "why_wrong": "Bỏ sót số hạng cos^2 hoặc coi tích phân cos^2 bằng 0."
+        },
+        {
+          "key": "D",
+          "text": "2pi",
+          "why_wrong": "Chỉ lấy số hạng hằng, bỏ đóng góp pi của cos^2."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0018",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Một hình tròn bán kính r = 1, tâm cách trục quay một khoảng d = 3 (không cắt trục), quay quanh trục tạo thành khối xuyến (hình bánh donut). Dùng định lí Guldin - Pappus tính thể tích khối xuyến.",
+      "statement_en": "A disk of radius 1 with center at distance 3 from the axis is rotated to form a torus. Use Pappus' theorem to find its volume.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Định lí Guldin cho thể tích: V = 2pi nhân khoảng cách d_S từ trọng tâm miền tới trục nhân diện tích S của miền.",
+          "latex": "V = 2\\pi\\,d_{S}\\cdot S"
+        },
+        {
+          "explain": "Diện tích hình tròn S = pi r^2 = pi, khoảng cách trọng tâm d_S = 3.",
+          "latex": "V = 2\\pi\\cdot 3\\cdot \\pi\\cdot 1^{2} = 6\\pi^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.dinh-li-guldin"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "định lí Pappus - Guldin",
+        "thể tích khối tròn xoay"
+      ],
+      "tags": [
+        "giai-tich",
+        "ung-dung-tich-phan",
+        "pappus"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3pi^2",
+          "why_wrong": "Quên hệ số 2 trong công thức V = 2pi d_S S."
+        },
+        {
+          "key": "B",
+          "text": "6pi^2",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "6pi",
+          "why_wrong": "Tính S = 1 (quên pi) hoặc nhầm diện tích hình tròn."
+        },
+        {
+          "key": "D",
+          "text": "12pi^2",
+          "why_wrong": "Dùng chu vi 2pi r = 2pi thay cho diện tích, thành công thức diện tích mặt."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0019",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính độ cong k của parabol y = x^2 tại đỉnh x = 0.",
+      "statement_en": "Find the curvature k of the parabola y = x^2 at the vertex x = 0.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Độ cong của đường cong phẳng dùng y' và y''; tại x = 0 ta có y' = 2x = 0 và y'' = 2.",
+          "latex": "k = \\frac{|y''|}{\\left(1 + \\bigl(y'\\bigr)^{2}\\right)^{3/2}}"
+        },
+        {
+          "explain": "Thay y'(0) = 0, y''(0) = 2.",
+          "latex": "k = \\frac{2}{(1 + 0)^{3/2}} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.do-cong-duong-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "công thức độ cong",
+        "tính đạo hàm cấp một và hai"
+      ],
+      "tags": [
+        "giai-tich",
+        "ung-dung-tich-phan",
+        "do-cong"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 1e-09,
+      "hints": [
+        "Tại x = 0 thì y' = 0.",
+        "y'' = 2 với mọi x."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0020",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi số",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét chuỗi số dương với số hạng tổng quát u_n = 3^n / n!. Dùng tiêu chuẩn D'Alembert, giá trị D và kết luận là gì?",
+      "statement_en": "For the series with u_n = 3^n / n!, apply the ratio test: find D and conclude.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tiêu chuẩn D'Alembert xét giới hạn tỉ số u_{n+1}/u_n.",
+          "latex": "\\frac{u_{n+1}}{u_{n}} = \\frac{3^{n+1}/(n+1)!}{3^{n}/n!} = \\frac{3}{n+1}"
+        },
+        {
+          "explain": "Cho n -> vô cùng, tỉ số -> 0.",
+          "latex": "D = \\lim_{n\\to\\infty}\\frac{3}{n+1} = 0 < 1 \\Rightarrow \\text{chuoi hoi tu}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.tieu-chuan-dalembert"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tiêu chuẩn tỉ số",
+        "giới hạn tỉ số số hạng"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-so",
+        "dalembert"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "D = 0, chuỗi hội tụ",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "D = 3, chuỗi phân kì",
+          "why_wrong": "Quên rằng mẫu có (n+1)! nên tỉ số còn chia thêm (n+1), không phải hằng số 3."
+        },
+        {
+          "key": "C",
+          "text": "D = 1, chưa kết luận",
+          "why_wrong": "Nhầm giới hạn 3/(n+1) tiến về 1, thực ra tiến về 0."
+        },
+        {
+          "key": "D",
+          "text": "D = +vô cùng, phân kì",
+          "why_wrong": "Đảo ngược tỉ số, lấy u_n/u_{n+1} = (n+1)/3."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0021",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi số",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét chuỗi số dương với u_n = (n/(n+1))^{n^2}. Dùng tiêu chuẩn Cauchy (căn), giá trị C và kết luận là gì?",
+      "statement_en": "For u_n = (n/(n+1))^{n^2}, apply the root test: find C and conclude.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Tiêu chuẩn Cauchy xét căn bậc n của u_n.",
+          "latex": "\\sqrt[n]{u_{n}} = \\left(\\frac{n}{n+1}\\right)^{n} = \\left(1 - \\frac{1}{n+1}\\right)^{n}"
+        },
+        {
+          "explain": "Giới hạn của biểu thức dạng (1 - 1/(n+1))^n là 1/e.",
+          "latex": "C = \\lim_{n\\to\\infty}\\left(\\frac{n}{n+1}\\right)^{n} = e^{-1} \\approx 0.368"
+        },
+        {
+          "explain": "Vì C = 1/e < 1 nên chuỗi hội tụ.",
+          "latex": "C = \\frac{1}{e} < 1 \\Rightarrow \\text{chuoi hoi tu}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.tieu-chuan-cauchy-can"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "tiêu chuẩn căn",
+        "giới hạn dạng số e"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-so",
+        "cauchy-can"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "C = 1, chưa kết luận",
+          "why_wrong": "Chỉ lấy giới hạn n/(n+1) = 1 mà quên mũ n biến nó thành 1/e."
+        },
+        {
+          "key": "B",
+          "text": "C = e, phân kì",
+          "why_wrong": "Đảo cơ số, lấy ((n+1)/n)^n = e thay vì (n/(n+1))^n = 1/e."
+        },
+        {
+          "key": "C",
+          "text": "C = 1/e, hội tụ",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "C = 0, hội tụ",
+          "why_wrong": "Ước lượng quá đà cho ra 0; giá trị đúng là 1/e khác 0."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0022",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi số",
+      "type": "dien-so",
+      "statement_vi": "Với chuỗi đan dấu 1 - 1/2 + 1/3 - 1/4 + ... , cần lấy ít nhất bao nhiêu số hạng đầu (giá trị n nhỏ nhất) để phần dư có trị tuyệt đối không vượt quá 0,05?",
+      "statement_en": "For the alternating harmonic series, how many initial terms are needed so the remainder is at most 0.05?",
+      "answer": "19",
+      "solution_steps": [
+        {
+          "explain": "Ước lượng phần dư của chuỗi Leibniz: sai số không vượt quá số hạng đầu tiên bị bỏ, tức u_{n+1} = 1/(n+1).",
+          "latex": "|r_{n}| \\le u_{n+1} = \\frac{1}{n+1}"
+        },
+        {
+          "explain": "Yêu cầu cận 1/(n+1) không vượt quá 0,05 tương đương n+1 >= 20, tức n >= 19.",
+          "latex": "\\frac{1}{n+1} \\le 0.05 \\iff n + 1 \\ge 20 \\iff n \\ge 19"
+        },
+        {
+          "explain": "Vậy số số hạng nhỏ nhất là n = 19: khi đó số hạng đầu tiên bị bỏ là u_{20} = 1/20 = 0,05 nên phần dư không vượt quá 0,05. Với n = 18 thì cận 1/19 xấp xỉ 0,0526 chưa bảo đảm.",
+          "latex": "n = 19:\\ |r_{19}| \\le \\frac{1}{20} = 0.05"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.uoc-luong-phan-du-leibniz"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "ước lượng phần dư Leibniz",
+        "giải bất phương trình"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-so",
+        "leibniz"
+      ],
+      "answer_numeric": 19,
+      "tolerance": 0.5,
+      "hints": [
+        "Phần dư bị chặn bởi 1/(n+1).",
+        "Lấy đủ số hạng để 1/(n+1) không vượt quá 0,05."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0023",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi số",
+      "type": "trac-nghiem",
+      "statement_vi": "Áp dụng tiêu chuẩn Raabe cho chuỗi số dương u_n = 1/n^2. Giá trị R và kết luận là gì?",
+      "statement_en": "Apply Raabe's test to u_n = 1/n^2: find R and conclude.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tiêu chuẩn Raabe xét giới hạn của n nhân với (u_n/u_{n+1} - 1).",
+          "latex": "R = \\lim_{n\\to\\infty} n\\left(\\frac{u_{n}}{u_{n+1}} - 1\\right),\\quad \\frac{u_{n}}{u_{n+1}} = \\frac{(n+1)^{2}}{n^{2}}"
+        },
+        {
+          "explain": "Tính hiệu và nhân n.",
+          "latex": "n\\left(\\frac{(n+1)^{2}}{n^{2}} - 1\\right) = n\\cdot\\frac{2n+1}{n^{2}} = \\frac{2n+1}{n} \\to 2"
+        },
+        {
+          "explain": "Vì R = 2 > 1 nên chuỗi hội tụ.",
+          "latex": "R = 2 > 1 \\Rightarrow \\text{chuoi hoi tu}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.tieu-chuan-raabe"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "tiêu chuẩn Raabe",
+        "khai triển tỉ số"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-so",
+        "raabe"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "R = 1, chưa kết luận",
+          "why_wrong": "Bỏ số hạng bậc thấp, ước lượng (2n+1)/n về 1 thay vì 2."
+        },
+        {
+          "key": "B",
+          "text": "R = 2, hội tụ",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "R = 0, phân kì",
+          "why_wrong": "Lấy u_{n+1}/u_n - 1 (đảo tỉ số) cho ra giá trị âm hoặc 0."
+        },
+        {
+          "key": "D",
+          "text": "R = 1/2, phân kì",
+          "why_wrong": "Nhầm hệ số dẫn đầu, quên nhân n vào biểu thức."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0024",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi lũy thừa",
+      "type": "dung-sai",
+      "statement_vi": "Xét khẳng định: Nếu chuỗi lũy thừa tổng a_n * 2^n hội tụ thì chuỗi tổng a_n * x^n hội tụ tuyệt đối với mọi x thỏa |x| < 2. Theo định lí Abel, đúng hay sai?",
+      "statement_en": "Claim: if sum a_n 2^n converges then sum a_n x^n converges absolutely for all |x| < 2. By Abel's theorem, true or false?",
+      "answer": "Đúng",
+      "solution_steps": [
+        {
+          "explain": "Định lí Abel: nếu chuỗi hội tụ tại một điểm x_1 thì nó hội tụ tuyệt đối tại mọi điểm gần gốc hơn.",
+          "latex": "\\sum a_{n} x_{1}^{n}\\ \\text{hoi tu} \\Rightarrow \\sum a_{n}x^{n}\\ \\text{hoi tu tuyet doi khi } |x| < |x_{1}|"
+        },
+        {
+          "explain": "Ở đây x_1 = 2, nên với mọi |x| < 2 chuỗi hội tụ tuyệt đối; khẳng định đúng.",
+          "latex": "|x_{1}| = 2 \\Rightarrow |x| < 2 \\Rightarrow \\text{hoi tu tuyet doi}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-luy-thua.dinh-li-abel"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "định lí Abel",
+        "miền hội tụ chuỗi lũy thừa"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-luy-thua",
+        "abel"
+      ],
+      "hints": [
+        "Điểm hội tụ đã cho là x_1 = 2.",
+        "Abel bảo đảm hội tụ tuyệt đối cho |x| nhỏ hơn |x_1|."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0025",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi lũy thừa",
+      "type": "trac-nghiem",
+      "statement_vi": "Khai triển Taylor tại x_0 = 0 của hàm f(x) = e^x. Hệ số của số hạng x^3 trong chuỗi bằng bao nhiêu?",
+      "statement_en": "In the Taylor series of e^x at 0, what is the coefficient of x^3?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Hệ số Taylor thứ n là f^{(n)}(0)/n!; với e^x mọi đạo hàm tại 0 đều bằng 1.",
+          "latex": "f(x) = \\sum_{n=0}^{\\infty}\\frac{f^{(n)}(0)}{n!}x^{n},\\quad f^{(n)}(0) = 1"
+        },
+        {
+          "explain": "Hệ số của x^3 ứng với n = 3.",
+          "latex": "\\frac{f^{(3)}(0)}{3!} = \\frac{1}{6}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-luy-thua.chuoi-taylor-ham"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "hệ số Taylor",
+        "chuỗi hàm mũ"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-luy-thua",
+        "taylor"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1",
+          "why_wrong": "Quên chia cho 3! trong công thức hệ số Taylor."
+        },
+        {
+          "key": "B",
+          "text": "1/3",
+          "why_wrong": "Chia cho n = 3 thay vì cho n! = 6."
+        },
+        {
+          "key": "C",
+          "text": "1/6",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "3",
+          "why_wrong": "Nhân 3 thay vì chia 3!."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0026",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi Fourier",
+      "type": "trac-nghiem",
+      "statement_vi": "Khai triển Fourier của hàm f(x) = x^2 trên [-pi; pi] (nửa chu kì l = pi). Tính hệ số a_0.",
+      "statement_en": "For the Fourier series of f(x) = x^2 on [-pi; pi], find a_0.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Hệ số a_0 tính theo công thức tổng quát với l = pi.",
+          "latex": "a_{0} = \\frac{1}{l}\\int_{-l}^{l} f(x)\\,dx = \\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} x^{2}\\,dx"
+        },
+        {
+          "explain": "Tích phân của x^2 trên [-pi; pi] bằng 2pi^3/3.",
+          "latex": "\\int_{-\\pi}^{\\pi} x^{2}\\,dx = \\frac{2\\pi^{3}}{3}"
+        },
+        {
+          "explain": "Chia cho pi.",
+          "latex": "a_{0} = \\frac{1}{\\pi}\\cdot\\frac{2\\pi^{3}}{3} = \\frac{2\\pi^{2}}{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-fourier.he-so-tong-quat"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "hệ số Fourier a_0",
+        "tích phân hàm chẵn"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-fourier",
+        "he-so"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "pi^2/3",
+          "why_wrong": "Quên rằng cận đối xứng cho tích phân bằng 2 lần nửa đoạn, thiếu hệ số 2."
+        },
+        {
+          "key": "B",
+          "text": "2pi^2/3",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "0",
+          "why_wrong": "Nhầm x^2 với hàm lẻ; thực ra x^2 chẵn nên a_0 khác 0."
+        },
+        {
+          "key": "D",
+          "text": "pi^2",
+          "why_wrong": "Bỏ sót việc chia cho l = pi hoặc tính tích phân sai."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0027",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi Fourier",
+      "type": "dung-sai",
+      "statement_vi": "Xét khẳng định: Với hàm f khả tích bình phương trên [-l; l], tổng riêng các bình phương hệ số Fourier luôn bị chặn trên bởi (1/l) lần tích phân của f^2, theo bất đẳng thức Bessel. Đúng hay sai?",
+      "statement_en": "Claim: for square-integrable f, the partial sum of squared Fourier coefficients is bounded above by (1/l) times the integral of f^2 (Bessel's inequality). True or False?",
+      "answer": "Đúng",
+      "solution_steps": [
+        {
+          "explain": "Bất đẳng thức Bessel phát biểu tổng riêng các bình phương hệ số không vượt quá năng lượng của hàm.",
+          "latex": "\\frac{a_{0}^{2}}{2} + \\sum_{n=1}^{N}\\bigl(a_{n}^{2} + b_{n}^{2}\\bigr) \\le \\frac{1}{l}\\int_{-l}^{l} f^{2}(x)\\,dx"
+        },
+        {
+          "explain": "Bất đẳng thức đúng với mọi N (dấu bằng đạt được ở giới hạn cho hệ đầy đủ - đẳng thức Parseval), nên khẳng định đúng.",
+          "latex": "\\text{dung voi moi } N \\Rightarrow \\text{khang dinh dung}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-fourier.bat-dang-thuc-bessel"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "bất đẳng thức Bessel",
+        "khả tích bình phương"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-fourier",
+        "bessel"
+      ],
+      "hints": [
+        "Tổng bình phương hệ số bị chặn bởi năng lượng.",
+        "Dấu bằng chỉ đạt ở đẳng thức Parseval."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0028",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm nhiều biến",
+      "type": "trac-nghiem",
+      "statement_vi": "Mặt cầu x^2 + y^2 + z^2 = 3 xác định z là hàm ẩn của (x, y) quanh điểm (1; 1; 1). Tính đạo hàm riêng partial z / partial x tại điểm đó.",
+      "statement_en": "The sphere x^2+y^2+z^2=3 defines z implicitly near (1,1,1). Find dz/dx there.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Với F(x,y,z) = 0, đạo hàm riêng của hàm ẩn z theo x là -F'_x / F'_z.",
+          "latex": "\\frac{\\partial z}{\\partial x} = -\\frac{F'_{x}}{F'_{z}},\\quad F = x^{2}+y^{2}+z^{2}-3"
+        },
+        {
+          "explain": "Ở đây F'_x = 2x, F'_z = 2z, nên tỉ số là -x/z; thay (1;1;1).",
+          "latex": "\\frac{\\partial z}{\\partial x} = -\\frac{2x}{2z} = -\\frac{x}{z} = -\\frac{1}{1} = -1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.dao-ham-ham-an-hai-bien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "đạo hàm hàm ẩn nhiều biến",
+        "công thức tỉ số đạo hàm riêng"
+      ],
+      "tags": [
+        "giai-tich",
+        "ham-nhieu-bien",
+        "ham-an"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "-1",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "1",
+          "why_wrong": "Quên dấu trừ trong công thức -F'_x/F'_z."
+        },
+        {
+          "key": "C",
+          "text": "-1/2",
+          "why_wrong": "Quên rút gọn 2x/2z, để lại hệ số 2 sai chỗ."
+        },
+        {
+          "key": "D",
+          "text": "0",
+          "why_wrong": "Cho rằng z không phụ thuộc x, bỏ qua ràng buộc mặt cầu."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0029",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm nhiều biến",
+      "type": "trac-nghiem",
+      "statement_vi": "Viết phương trình mặt phẳng tiếp diện của mặt cầu x^2 + y^2 + z^2 = 14 tại điểm (1; 2; 3).",
+      "statement_en": "Find the tangent plane to x^2+y^2+z^2=14 at (1,2,3).",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Mặt phẳng tiếp diện của mặt F = 0 tại M_0 dùng các đạo hàm riêng làm vectơ pháp.",
+          "latex": "F'_{x}(M_{0})(x-x_{0}) + F'_{y}(M_{0})(y-y_{0}) + F'_{z}(M_{0})(z-z_{0}) = 0"
+        },
+        {
+          "explain": "Với F = x^2+y^2+z^2-14: F'_x = 2x, F'_y = 2y, F'_z = 2z, tại (1;2;3) là (2;4;6).",
+          "latex": "2(x-1) + 4(y-2) + 6(z-3) = 0"
+        },
+        {
+          "explain": "Rút gọn, chia 2.",
+          "latex": "x + 2y + 3z = 14"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ham-nhieu-bien.mat-phang-tiep-dien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "mặt phẳng tiếp diện",
+        "vectơ pháp tuyến gradient"
+      ],
+      "tags": [
+        "giai-tich",
+        "ham-nhieu-bien",
+        "tiep-dien"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "x + y + z = 6",
+          "why_wrong": "Bỏ qua các hệ số 2, 4, 6, coi pháp tuyến là (1;1;1)."
+        },
+        {
+          "key": "B",
+          "text": "2x + 4y + 6z = 0",
+          "why_wrong": "Quên số hạng tự do; vế phải phải bằng 2(1)+4(2)+6(3) = 28, chia 2 ra 14."
+        },
+        {
+          "key": "C",
+          "text": "x + 2y + 3z = 14",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "x + 2y + 3z = 0",
+          "why_wrong": "Đúng vectơ pháp nhưng quên thay điểm để tìm hằng số tự do."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0030",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân bội",
+      "type": "dien-so",
+      "statement_vi": "Bản phẳng D = [0; 1] x [0; 2] có mật độ khối rho(x, y) = xy. Tính khối lượng của bản.",
+      "statement_en": "Plate D = [0,1]x[0,2] with density rho = xy. Find its mass.",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng bản phẳng là tích phân kép của mật độ; miền chữ nhật cho phép tách thành tích hai tích phân đơn.",
+          "latex": "m = \\iint_{D}\\rho\\,dx\\,dy = \\left(\\int_{0}^{1} x\\,dx\\right)\\left(\\int_{0}^{2} y\\,dy\\right)"
+        },
+        {
+          "explain": "Tính từng tích phân: int_0^1 x dx = 1/2, int_0^2 y dy = 2.",
+          "latex": "m = \\frac{1}{2}\\cdot 2 = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.khoi-luong-tam-phang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "khối lượng qua tích phân kép",
+        "tách biến trên miền chữ nhật"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-boi",
+        "khoi-luong"
+      ],
+      "answer_numeric": 1,
+      "tolerance": 1e-09,
+      "hints": [
+        "Miền chữ nhật cho phép tách tích phân.",
+        "int_0^2 y dy = 2."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0031",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân bội",
+      "type": "trac-nghiem",
+      "statement_vi": "Bản vuông đồng chất D = [0; 1] x [0; 1] với mật độ rho = 1. Tính mômen quán tính đối với gốc I_O = I_x + I_y.",
+      "statement_en": "For the unit square plate with rho = 1, find the polar moment I_O = I_x + I_y.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Mômen quán tính đối với trục Ox là tích phân của y^2, đối với Oy là tích phân của x^2.",
+          "latex": "I_{x} = \\iint_{D} y^{2}\\,dx\\,dy = \\int_{0}^{1}\\!\\!\\int_{0}^{1} y^{2}\\,dy\\,dx = \\frac{1}{3}"
+        },
+        {
+          "explain": "Do đối xứng, I_y cũng bằng 1/3.",
+          "latex": "I_{y} = \\frac{1}{3}"
+        },
+        {
+          "explain": "Mômen quán tính đối với gốc là tổng hai mômen.",
+          "latex": "I_{O} = I_{x} + I_{y} = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-boi.momen-quan-tinh-kep"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "mômen quán tính bản phẳng",
+        "khai thác đối xứng"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-boi",
+        "momen-quan-tinh"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1/3",
+          "why_wrong": "Chỉ tính một mômen I_x mà quên cộng I_y."
+        },
+        {
+          "key": "B",
+          "text": "2/3",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "1/6",
+          "why_wrong": "Nhầm mômen với tích phân của y (bậc một) thay vì y^2."
+        },
+        {
+          "key": "D",
+          "text": "1",
+          "why_wrong": "Tính diện tích bản thay vì mômen quán tính."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0032",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân đường",
+      "type": "dien-so",
+      "statement_vi": "Tính công của lực F = (y; x) khi chất điểm di chuyển dọc đoạn thẳng từ O(0; 0) đến A(1; 1).",
+      "statement_en": "Find the work of F = (y, x) along the segment from (0,0) to (1,1).",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Công của lực là tích phân đường loại hai của P dx + Q dy với P = y, Q = x.",
+          "latex": "A = \\int_{L} P\\,dx + Q\\,dy = \\int_{L} y\\,dx + x\\,dy"
+        },
+        {
+          "explain": "Nhận xét y dx + x dy = d(xy) là vi phân toàn phần, nên công chỉ phụ thuộc hai đầu mút.",
+          "latex": "A = \\int_{L} d(xy) = \\bigl[xy\\bigr]_{(0,0)}^{(1,1)} = 1\\cdot 1 - 0 = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.cong-cua-luc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "công của lực",
+        "nhận diện vi phân toàn phần"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-duong",
+        "cong-luc"
+      ],
+      "answer_numeric": 1,
+      "tolerance": 1e-09,
+      "hints": [
+        "y dx + x dy = d(xy).",
+        "Chỉ cần giá trị xy tại hai đầu mút."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0033",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân đường",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho trường F = (x; y). Tính thông lượng đi ra qua biên đường tròn đơn vị bằng công thức Green dạng thông lượng.",
+      "statement_en": "For F = (x, y), compute the outward flux across the unit circle using Green's flux form.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Công thức Green dạng thông lượng đưa tích phân đường về tích phân kép của divergence.",
+          "latex": "\\oint_{\\partial D}(P\\,dy - Q\\,dx) = \\iint_{D}\\left(\\frac{\\partial P}{\\partial x} + \\frac{\\partial Q}{\\partial y}\\right)dx\\,dy"
+        },
+        {
+          "explain": "Với P = x, Q = y thì P'_x + Q'_y = 1 + 1 = 2; miền là hình tròn đơn vị diện tích pi.",
+          "latex": "\\iint_{D} 2\\,dx\\,dy = 2\\cdot(\\pi\\cdot 1^{2}) = 2\\pi"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.green-dang-thong-luong"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "công thức Green thông lượng",
+        "tích phân divergence"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-duong",
+        "green"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "pi",
+          "why_wrong": "Chỉ lấy divergence bằng 1, quên cộng cả hai đạo hàm riêng (kết quả là 2)."
+        },
+        {
+          "key": "B",
+          "text": "2pi",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "0",
+          "why_wrong": "Nhầm với công thức Green dạng lưu số (rota) cho trường thế, cho ra 0."
+        },
+        {
+          "key": "D",
+          "text": "4pi",
+          "why_wrong": "Tính diện tích hình tròn là 2pi thay vì pi (nhầm với chu vi)."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0034",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân đường",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân đường loại một của hàm f(x, y) = x dọc đoạn thẳng L nằm trên trục Ox từ (0; 0) đến (2; 0).",
+      "statement_en": "Compute the type-1 line integral of f(x,y)=x along the segment from (0,0) to (2,0).",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Tích phân đường loại một dùng vi phân độ dài cung ds; trên đoạn nằm trên Ox thì ds = dx và y = 0.",
+          "latex": "\\int_{L} f(x,y)\\,ds = \\int_{0}^{2} x\\,dx"
+        },
+        {
+          "explain": "Tính tích phân đơn.",
+          "latex": "\\int_{0}^{2} x\\,dx = \\left[\\frac{x^{2}}{2}\\right]_{0}^{2} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan-duong.loai-mot-dinh-nghia"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tích phân đường loại một",
+        "tham số hoá đoạn thẳng"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan-duong",
+        "loai-mot"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 1e-09,
+      "hints": [
+        "Trên trục Ox thì ds = dx.",
+        "Chỉ còn tích phân đơn của x."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0035",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giải tích vectơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho trường vô hướng u = x^2 + y^2 + z^2. Dùng toán tử nabla tính độ lớn của gradient của u tại điểm (1; 2; 2).",
+      "statement_en": "For u = x^2+y^2+z^2, use nabla to find the magnitude of grad u at (1,2,2).",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Toán tử nabla tác động lên u cho gradient là vectơ các đạo hàm riêng.",
+          "latex": "\\nabla u = \\left(\\frac{\\partial u}{\\partial x}, \\frac{\\partial u}{\\partial y}, \\frac{\\partial u}{\\partial z}\\right) = (2x, 2y, 2z)"
+        },
+        {
+          "explain": "Tại (1;2;2): gradient là (2; 4; 4).",
+          "latex": "\\nabla u(1,2,2) = (2, 4, 4)"
+        },
+        {
+          "explain": "Độ lớn là căn của tổng bình phương.",
+          "latex": "\\|\\nabla u\\| = \\sqrt{2^{2} + 4^{2} + 4^{2}} = \\sqrt{36} = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-vecto.toan-tu-nabla"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "toán tử nabla",
+        "độ lớn vectơ gradient"
+      ],
+      "tags": [
+        "giai-tich",
+        "giai-tich-vecto",
+        "gradient"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "5",
+          "why_wrong": "Cộng các thành phần 2+4+4 = 10 rồi nhầm; hoặc tính chuẩn sai."
+        },
+        {
+          "key": "B",
+          "text": "10",
+          "why_wrong": "Cộng thẳng các thành phần thay vì lấy căn tổng bình phương."
+        },
+        {
+          "key": "C",
+          "text": "6",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "36",
+          "why_wrong": "Quên lấy căn bậc hai của tổng bình phương."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0036",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giải tích vectơ",
+      "type": "dien-so",
+      "statement_vi": "Tính toán tử Laplace (Laplacian) của hàm u = x^2 + y^2 + z^2.",
+      "statement_en": "Compute the Laplacian of u = x^2+y^2+z^2.",
+      "answer": "6",
+      "solution_steps": [
+        {
+          "explain": "Laplacian là tổng các đạo hàm riêng cấp hai theo từng biến.",
+          "latex": "\\Delta u = \\frac{\\partial^{2}u}{\\partial x^{2}} + \\frac{\\partial^{2}u}{\\partial y^{2}} + \\frac{\\partial^{2}u}{\\partial z^{2}}"
+        },
+        {
+          "explain": "Mỗi số hạng có đạo hàm cấp hai bằng 2.",
+          "latex": "\\Delta u = 2 + 2 + 2 = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-vecto.laplacian"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "toán tử Laplace",
+        "đạo hàm riêng cấp hai"
+      ],
+      "tags": [
+        "giai-tich",
+        "giai-tich-vecto",
+        "laplacian"
+      ],
+      "answer_numeric": 6,
+      "tolerance": 1e-09,
+      "hints": [
+        "Lấy đạo hàm cấp hai theo từng biến.",
+        "Đạo hàm cấp hai của x^2 là 2."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0037",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giải tích vectơ",
+      "type": "dung-sai",
+      "statement_vi": "Xét khẳng định: Với mọi trường vectơ F đủ trơn, luôn có div(rot F) = 0; và với mọi hàm vô hướng u đủ trơn, luôn có rot(grad u) = vectơ không. Cả hai đồng nhất thức đều đúng?",
+      "statement_en": "Claim: for smooth fields, div(rot F) = 0 and rot(grad u) = 0 always hold. Are both identities true?",
+      "answer": "Đúng",
+      "solution_steps": [
+        {
+          "explain": "Divergence của một trường rota luôn triệt tiêu do tính đối xứng của các đạo hàm hỗn hợp.",
+          "latex": "\\operatorname{div}\\bigl(\\operatorname{rot}\\vec{F}\\bigr) = 0"
+        },
+        {
+          "explain": "Tương tự, rota của một gradient luôn bằng vectơ không.",
+          "latex": "\\operatorname{rot}\\bigl(\\operatorname{grad} u\\bigr) = \\vec{0}"
+        },
+        {
+          "explain": "Cả hai là đồng nhất thức cơ bản của giải tích vectơ, đúng khi các đạo hàm hỗn hợp bằng nhau (hàm đủ trơn).",
+          "latex": "\\text{ca hai dong nhat thuc deu dung}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-vecto.dong-nhat-thuc-div-rot",
+        "math.dai-hoc.giai-tich-vecto.dong-nhat-thuc-rot-grad"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "đồng nhất thức div-rot",
+        "đồng nhất thức rot-grad"
+      ],
+      "tags": [
+        "giai-tich",
+        "giai-tich-vecto",
+        "dong-nhat-thuc"
+      ],
+      "hints": [
+        "Đạo hàm hỗn hợp bằng nhau khi hàm trơn.",
+        "Đây là hai đồng nhất thức chuẩn."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0038",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình vi phân cấp 1",
+      "type": "trac-nghiem",
+      "statement_vi": "Giải phương trình vi phân đẳng cấp y' = (x + y)/x với điều kiện y(1) = 2, rồi tính y(e).",
+      "statement_en": "Solve the homogeneous ODE y' = (x+y)/x with y(1) = 2, then find y(e).",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Viết vế phải theo y/x: y' = 1 + y/x là dạng đẳng cấp; đặt y = ux thì y' = u + x u'.",
+          "latex": "y' = 1 + \\frac{y}{x},\\quad y = ux \\Rightarrow u + x\\frac{du}{dx} = 1 + u"
+        },
+        {
+          "explain": "Rút gọn: x u' = 1, tích phân được u = ln x + C, suy ra y = x ln x + Cx.",
+          "latex": "x\\frac{du}{dx} = 1 \\Rightarrow u = \\ln x + C \\Rightarrow y = x\\ln x + Cx"
+        },
+        {
+          "explain": "Dùng y(1) = 2: 1*0 + C*1 = 2 nên C = 2; tính y(e) = e*1 + 2e.",
+          "latex": "y(e) = e\\ln e + 2e = e + 2e = 3e"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-1.phuong-trinh-dang-cap"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "đổi biến đẳng cấp",
+        "tích phân tách biến",
+        "áp dụng điều kiện đầu"
+      ],
+      "tags": [
+        "giai-tich",
+        "ptvp",
+        "dang-cap"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2e",
+          "why_wrong": "Quên số hạng x ln x, chỉ giữ nghiệm thuần Cx."
+        },
+        {
+          "key": "B",
+          "text": "3e",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "e",
+          "why_wrong": "Bỏ điều kiện đầu, coi C = 0."
+        },
+        {
+          "key": "D",
+          "text": "e + 2",
+          "why_wrong": "Thay x = e vào Cx nhưng lấy C*x = 2 thay vì 2e."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0039",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình vi phân cấp 1",
+      "type": "trac-nghiem",
+      "statement_vi": "Phương trình Clairaut y = x y' + (y')^2 có nghiệm tổng quát là một họ đường thẳng và một nghiệm kì dị. Nghiệm kì dị (đường bao của họ) là đường nào?",
+      "statement_en": "The Clairaut equation y = xy' + (y')^2 has a line family and a singular solution. What is the singular solution?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Nghiệm tổng quát của Clairaut là y = Cx + f(C) với f(p) = p^2.",
+          "latex": "y = Cx + C^{2}"
+        },
+        {
+          "explain": "Nghiệm kì dị cho bởi hệ tham số x = -f'(p), y = -p f'(p) + f(p) với f'(p) = 2p.",
+          "latex": "x = -2p,\\quad y = -p\\cdot 2p + p^{2} = -p^{2}"
+        },
+        {
+          "explain": "Khử tham số p = -x/2: y = -(x/2)^2 = -x^2/4.",
+          "latex": "y = -\\frac{x^{2}}{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-1.clairaut"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "phương trình Clairaut",
+        "nghiệm kì dị dạng tham số"
+      ],
+      "tags": [
+        "giai-tich",
+        "ptvp",
+        "clairaut"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "y = -x^2",
+          "why_wrong": "Quên hệ số 1/4 khi khử tham số p = -x/2."
+        },
+        {
+          "key": "B",
+          "text": "y = x^2/4",
+          "why_wrong": "Sai dấu: nghiệm kì dị là parabol mở xuống, y = -x^2/4."
+        },
+        {
+          "key": "C",
+          "text": "y = -x^2/4",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "y = Cx + C^2",
+          "why_wrong": "Đây là nghiệm tổng quát (họ đường thẳng), không phải nghiệm kì dị."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0040",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình vi phân cấp 1",
+      "type": "trac-nghiem",
+      "statement_vi": "Tìm quỹ đạo trực giao của họ đường thẳng qua gốc y = Cx.",
+      "statement_en": "Find the orthogonal trajectories of the line family y = Cx.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Từ y = Cx suy ra C = y/x và y' = C = y/x, đây là phương trình vi phân của họ đã cho.",
+          "latex": "y' = \\frac{y}{x}"
+        },
+        {
+          "explain": "Quỹ đạo trực giao thay y' bằng -1/y' trong phương trình vi phân của họ.",
+          "latex": "-\\frac{1}{y'} = \\frac{y}{x} \\Rightarrow y' = -\\frac{x}{y}"
+        },
+        {
+          "explain": "Đây là phương trình tách biến y dy = -x dx, tích phân cho họ đường tròn tâm O.",
+          "latex": "y\\,dy = -x\\,dx \\Rightarrow x^{2} + y^{2} = R^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-1.quy-dao-truc-giao"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "quỹ đạo trực giao",
+        "thay thế y' bằng -1/y'"
+      ],
+      "tags": [
+        "giai-tich",
+        "ptvp",
+        "truc-giao"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Họ đường tròn x^2 + y^2 = R^2",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Họ đường thẳng y = -x/C",
+          "why_wrong": "Mới đảo hệ số góc mà chưa giải phương trình vi phân trực giao."
+        },
+        {
+          "key": "C",
+          "text": "Họ parabol y^2 = 2x",
+          "why_wrong": "Giải sai phương trình tách biến, nhầm dấu hoặc bậc."
+        },
+        {
+          "key": "D",
+          "text": "Họ hyperbol xy = k",
+          "why_wrong": "Đây là quỹ đạo trực giao của họ hyperbol khác, không phải của y = Cx."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0041",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình vi phân cấp 2",
+      "type": "trac-nghiem",
+      "statement_vi": "Phương trình y'' - 4y' + 4y = 0 có phương trình đặc trưng nghiệm kép. Nghiệm tổng quát của nó là gì?",
+      "statement_en": "The equation y'' - 4y' + 4y = 0 has a repeated characteristic root. Give the general solution.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Phương trình đặc trưng k^2 - 4k + 4 = 0 có biệt thức bằng 0, nghiệm kép k = 2.",
+          "latex": "k^{2} - 4k + 4 = (k-2)^{2} = 0 \\Rightarrow k = 2\\ (\\text{kep})"
+        },
+        {
+          "explain": "Với nghiệm kép, nghiệm tổng quát có thêm thừa số x đứng cạnh e^{kx}.",
+          "latex": "y = \\bigl(C_{1} + C_{2}x\\bigr)e^{2x}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-2.nghiem-kep"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "phương trình đặc trưng",
+        "nghiệm kép"
+      ],
+      "tags": [
+        "giai-tich",
+        "ptvp",
+        "nghiem-kep"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "y = C_1 e^{2x} + C_2 e^{-2x}",
+          "why_wrong": "Coi như hai nghiệm phân biệt +-2, nhưng đây là nghiệm kép +2."
+        },
+        {
+          "key": "B",
+          "text": "y = (C_1 + C_2 x)e^{2x}",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "y = C_1 e^{2x} + C_2 x",
+          "why_wrong": "Ghép sai: nghiệm thứ hai phải là x e^{2x} chứ không phải x."
+        },
+        {
+          "key": "D",
+          "text": "y = C_1 cos 2x + C_2 sin 2x",
+          "why_wrong": "Nhầm sang nghiệm phức, nhưng biệt thức ở đây bằng 0."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0042",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình vi phân cấp 2",
+      "type": "trac-nghiem",
+      "statement_vi": "Tìm dạng và hệ số nghiệm riêng của y'' - 3y' + 2y = e^x (vế phải là e^x, với 1 là nghiệm đơn của phương trình đặc trưng).",
+      "statement_en": "Find a particular solution of y'' - 3y' + 2y = e^x (where 1 is a simple characteristic root).",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Phương trình đặc trưng có nghiệm 1 và 2; vì a = 1 trùng một nghiệm đơn nên bậc cộng thêm s = 1, dạng nghiệm riêng là A x e^x.",
+          "latex": "y^{*} = x^{s}e^{ax}Q_{n}(x) = A x e^{x}"
+        },
+        {
+          "explain": "Tính y*' = A(1+x)e^x, y*'' = A(2+x)e^x rồi thay vào vế trái.",
+          "latex": "y^{*\\prime\\prime} - 3y^{*\\prime} + 2y^{*} = A\\bigl[(2+x) - 3(1+x) + 2x\\bigr]e^{x} = -A e^{x}"
+        },
+        {
+          "explain": "Đồng nhất với e^x cho -A = 1, vậy A = -1.",
+          "latex": "-A = 1 \\Rightarrow A = -1 \\Rightarrow y^{*} = -x e^{x}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-2.he-so-bat-dinh-mu"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "dạng nghiệm riêng cộng hưởng",
+        "hệ số bất định"
+      ],
+      "tags": [
+        "giai-tich",
+        "ptvp",
+        "he-so-bat-dinh"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "y* = A e^x, A = 1",
+          "why_wrong": "Bỏ qua cộng hưởng: vì 1 là nghiệm đặc trưng phải nhân thêm x."
+        },
+        {
+          "key": "B",
+          "text": "y* = x e^x",
+          "why_wrong": "Đúng dạng nhưng sai hệ số, phải là -x e^x."
+        },
+        {
+          "key": "C",
+          "text": "y* = -x e^x",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "y* = A x^2 e^x",
+          "why_wrong": "Nhân x^2 chỉ khi 1 là nghiệm kép; ở đây 1 là nghiệm đơn nên nhân x."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0043",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình vi phân cấp 2",
+      "type": "dien-so",
+      "statement_vi": "Con lắc tắt dần thoả mx'' + bx' + kx = 0 với m = 1, b = 2, k = 5. Tính tần số góc dao động tắt dần omega.",
+      "statement_en": "A damped oscillator mx''+bx'+kx=0 with m=1, b=2, k=5. Find the damped angular frequency omega.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Hệ số tắt dần delta = b/(2m) và tần số riêng omega_0 = căn(k/m).",
+          "latex": "\\delta = \\frac{b}{2m} = \\frac{2}{2} = 1,\\quad \\omega_{0} = \\sqrt{\\frac{k}{m}} = \\sqrt{5}"
+        },
+        {
+          "explain": "Tần số góc dao động tắt dần là omega = căn(omega_0^2 - delta^2).",
+          "latex": "\\omega = \\sqrt{\\omega_{0}^{2} - \\delta^{2}} = \\sqrt{5 - 1} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ptvp-cap-2.dao-dong-tat-dan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "dao động tắt dần",
+        "tần số góc thực"
+      ],
+      "tags": [
+        "giai-tich",
+        "ptvp",
+        "dao-dong-tat-dan"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 1e-09,
+      "hints": [
+        "delta = b/(2m).",
+        "omega = sqrt(omega_0^2 - delta^2)."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0044",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ phương trình vi phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Giải hệ X' = AX với A = [[2, 1], [1, 2]] bằng phương pháp trị riêng. Nghiệm tổng quát chứa các hàm mũ e^{lambda t} với lambda là trị riêng nào?",
+      "statement_en": "Solve X' = AX for A = [[2,1],[1,2]] by eigenvalues. Which exponential rates appear?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Phương pháp trị riêng: nghiệm là tổ hợp các vectơ riêng nhân e^{lambda_i t}; trị riêng là nghiệm của det(A - lambda E) = 0.",
+          "latex": "\\det(A - \\lambda E) = 0,\\quad \\vec{X} = \\sum_{i} C_{i}\\vec{v}_{i}e^{\\lambda_{i}t}"
+        },
+        {
+          "explain": "Tính đa thức đặc trưng của A.",
+          "latex": "\\det\\begin{pmatrix} 2-\\lambda & 1 \\\\ 1 & 2-\\lambda \\end{pmatrix} = (2-\\lambda)^{2} - 1 = 0"
+        },
+        {
+          "explain": "Giải: 2 - lambda = +-1 nên lambda = 1 hoặc lambda = 3.",
+          "latex": "\\lambda_{1} = 1,\\quad \\lambda_{2} = 3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-ptvp.phuong-phap-tri-rieng"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "trị riêng của ma trận hệ",
+        "nghiệm hệ tuyến tính thuần nhất"
+      ],
+      "tags": [
+        "dai-so",
+        "he-ptvp",
+        "tri-rieng"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "lambda = 1 và lambda = 3",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "lambda = 2 (kép)",
+          "why_wrong": "Chỉ lấy phần tử đường chéo, bỏ qua phần tử ngoài đường chéo bằng 1."
+        },
+        {
+          "key": "C",
+          "text": "lambda = 0 và lambda = 4",
+          "why_wrong": "Giải (2-lambda)^2 = 1 sai, cho ra 0 và 4 thay vì 1 và 3."
+        },
+        {
+          "key": "D",
+          "text": "lambda = -1 và lambda = -3",
+          "why_wrong": "Sai dấu toàn bộ trị riêng."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0045",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến đổi Laplace",
+      "type": "dien-so",
+      "statement_vi": "Dùng định nghĩa biến đổi Laplace, tính ảnh của hàm gốc f(t) = t (viết kết quả dạng số mũ của p, ví dụ nhập mũ 2 cho 1/p^2). Nhập giá trị mũ n trong 1/p^n.",
+      "statement_en": "Using the definition of the Laplace transform, transform f(t) = t; enter the exponent n in 1/p^n.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Theo định nghĩa, biến đổi Laplace là tích phân từ 0 đến vô cùng của f(t)e^{-pt}.",
+          "latex": "F(p) = \\int_{0}^{+\\infty} t\\,e^{-pt}\\,dt"
+        },
+        {
+          "explain": "Tích phân từng phần (hoặc dùng công thức chuẩn) cho kết quả 1/p^2.",
+          "latex": "\\int_{0}^{+\\infty} t\\,e^{-pt}\\,dt = \\frac{1}{p^{2}}"
+        },
+        {
+          "explain": "Số mũ n trong mẫu là 2.",
+          "latex": "F(p) = \\frac{1}{p^{2}} \\Rightarrow n = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.dinh-nghia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "định nghĩa biến đổi Laplace",
+        "tích phân từng phần"
+      ],
+      "tags": [
+        "dai-so",
+        "bien-doi-laplace",
+        "dinh-nghia"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 0.5,
+      "hints": [
+        "L{t^n} = n!/p^{n+1}.",
+        "Với n = 1: mẫu là p^2."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0046",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến đổi Laplace",
+      "type": "dien-so",
+      "statement_vi": "Biến đổi Laplace của sinh(2t) là 2/(p^2 - 4). Tính giá trị của ảnh này tại p = 3.",
+      "statement_en": "The Laplace transform of sinh(2t) is 2/(p^2-4). Evaluate it at p = 3.",
+      "answer": "2/5",
+      "solution_steps": [
+        {
+          "explain": "Dùng công thức ảnh của hàm hyperbolic với a = 2.",
+          "latex": "\\mathcal{L}\\{\\sinh 2t\\} = \\frac{2}{p^{2} - 4}"
+        },
+        {
+          "explain": "Thay p = 3: mẫu 9 - 4 = 5.",
+          "latex": "\\frac{2}{3^{2} - 4} = \\frac{2}{5}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.anh-sinh-cosh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ảnh hàm hyperbolic",
+        "thay giá trị biến ảnh"
+      ],
+      "tags": [
+        "dai-so",
+        "bien-doi-laplace",
+        "hyperbolic"
+      ],
+      "answer_numeric": 0.4,
+      "tolerance": 1e-09,
+      "hints": [
+        "a = 2 nên a^2 = 4.",
+        "Thay p = 3 vào mẫu."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0047",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến đổi Laplace",
+      "type": "trac-nghiem",
+      "statement_vi": "Tính biến đổi Laplace của hàm gốc f(t) = e^{-t} sin(2t).",
+      "statement_en": "Compute the Laplace transform of f(t) = e^{-t} sin(2t).",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Dùng công thức ảnh của e^{at} nhân sin(omega t) với a = -1, omega = 2 (dịch chuyển p -> p - a = p + 1).",
+          "latex": "\\mathcal{L}\\{e^{at}\\sin\\omega t\\} = \\frac{\\omega}{(p-a)^{2} + \\omega^{2}}"
+        },
+        {
+          "explain": "Thay a = -1, omega = 2.",
+          "latex": "\\mathcal{L}\\{e^{-t}\\sin 2t\\} = \\frac{2}{(p+1)^{2} + 4}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.anh-e-mu-nhan-luong-giac"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "dịch chuyển theo biến ảnh",
+        "ảnh e mũ nhân sin"
+      ],
+      "tags": [
+        "dai-so",
+        "bien-doi-laplace",
+        "dich-chuyen"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2/((p-1)^2 + 4)",
+          "why_wrong": "Sai dấu dịch chuyển: a = -1 nên p - a = p + 1, không phải p - 1."
+        },
+        {
+          "key": "B",
+          "text": "2/((p+1)^2 + 4)",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "p/((p+1)^2 + 4)",
+          "why_wrong": "Dùng tử số cho cosin (p - a) thay vì cho sin (omega = 2)."
+        },
+        {
+          "key": "D",
+          "text": "2/(p^2 + 4)",
+          "why_wrong": "Quên phép dịch chuyển do thừa số e^{-t}."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0048",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến đổi Laplace",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho f(t) = 1 và g(t) = 1. Dùng định lí tích chập, tích chập (f * g)(t) bằng bao nhiêu và ảnh Laplace của nó là gì?",
+      "statement_en": "For f = g = 1, use the convolution theorem: find (f*g)(t) and its Laplace transform.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Định nghĩa tích chập là tích phân từ 0 đến t của f(tau)g(t - tau).",
+          "latex": "(f * g)(t) = \\int_{0}^{t} 1\\cdot 1\\,d\\tau = t"
+        },
+        {
+          "explain": "Định lí tích chập: ảnh của tích chập bằng tích hai ảnh; L{1} = 1/p nên tích là 1/p^2, khớp với L{t} = 1/p^2.",
+          "latex": "\\mathcal{L}\\{f * g\\} = F(p)G(p) = \\frac{1}{p}\\cdot\\frac{1}{p} = \\frac{1}{p^{2}} = \\mathcal{L}\\{t\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-doi-laplace.tich-chap"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tích chập hai hàm",
+        "định lí Borel"
+      ],
+      "tags": [
+        "dai-so",
+        "bien-doi-laplace",
+        "tich-chap"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "(f*g)(t) = t, ảnh 1/p^2",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "(f*g)(t) = 1, ảnh 1/p",
+          "why_wrong": "Nhầm tích chập với tích thường 1*1 = 1."
+        },
+        {
+          "key": "C",
+          "text": "(f*g)(t) = t^2/2, ảnh 1/p^3",
+          "why_wrong": "Tích phân hai lần thay vì một lần."
+        },
+        {
+          "key": "D",
+          "text": "(f*g)(t) = 2t, ảnh 2/p^2",
+          "why_wrong": "Nhân đôi kết quả tích phân một cách vô căn cứ."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0049",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định thức",
+      "type": "dien-so",
+      "statement_vi": "Cho ma trận A = [[1, 2, 3], [4, 5, 6], [7, 8, 10]]. Tính phần bù đại số A_{21} của phần tử ở hàng 2, cột 1.",
+      "statement_en": "For A = [[1,2,3],[4,5,6],[7,8,10]], compute the cofactor A_{21}.",
+      "answer": "4",
+      "solution_steps": [
+        {
+          "explain": "Phần bù đại số là dấu (-1)^{i+j} nhân định thức con M_{ij} (bỏ hàng i, cột 2).",
+          "latex": "A_{21} = (-1)^{2+1} M_{21} = -M_{21}"
+        },
+        {
+          "explain": "Định thức con M_{21} bỏ hàng 2 và cột 1: từ [[2,3],[8,10]].",
+          "latex": "M_{21} = \\det\\begin{pmatrix} 2 & 3 \\\\ 8 & 10 \\end{pmatrix} = 2\\cdot 10 - 3\\cdot 8 = -4"
+        },
+        {
+          "explain": "Nhân dấu.",
+          "latex": "A_{21} = -(-4) = 4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.phan-bu-dai-so"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "phần bù đại số",
+        "định thức con và dấu"
+      ],
+      "tags": [
+        "dai-so",
+        "dinh-thuc",
+        "phan-bu"
+      ],
+      "answer_numeric": 4,
+      "tolerance": 1e-09,
+      "hints": [
+        "Dấu là (-1)^{2+1} = -1.",
+        "M_{21} lấy từ [[2,3],[8,10]]."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0050",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định thức",
+      "type": "dien-so",
+      "statement_vi": "Ma trận vuông A cấp 3 có det A = 2. Tính det(A^3) - det(A^{-1}) x 2. (Gợi ý: dùng công thức định thức của lũy thừa và của nghịch đảo.)",
+      "statement_en": "For a 3x3 matrix with det A = 2, compute det(A^3) - 2*det(A^{-1}).",
+      "answer": "7",
+      "solution_steps": [
+        {
+          "explain": "Định thức của lũy thừa: det(A^k) = (det A)^k, nên det(A^3) = 2^3 = 8.",
+          "latex": "\\det(A^{3}) = (\\det A)^{3} = 2^{3} = 8"
+        },
+        {
+          "explain": "Định thức của nghịch đảo: det(A^{-1}) = 1/det A = 1/2.",
+          "latex": "\\det(A^{-1}) = \\frac{1}{\\det A} = \\frac{1}{2}"
+        },
+        {
+          "explain": "Thay vào biểu thức.",
+          "latex": "8 - 2\\cdot\\frac{1}{2} = 8 - 1 = 7"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.dinh-thuc-luy-thua",
+        "math.dai-hoc.dinh-thuc.dinh-thuc-nghich-dao"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "định thức lũy thừa",
+        "định thức nghịch đảo"
+      ],
+      "tags": [
+        "dai-so",
+        "dinh-thuc",
+        "luy-thua"
+      ],
+      "answer_numeric": 7,
+      "tolerance": 1e-09,
+      "hints": [
+        "det(A^3) = (det A)^3.",
+        "det(A^{-1}) = 1/det A."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0051",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định thức",
+      "type": "trac-nghiem",
+      "statement_vi": "Tính định thức của ma trận khối tam giác trên [[A, B], [O, D]] với A = [[1, 2], [3, 4]] và D = [[2, 0], [1, 5]] (B tuỳ ý, O là ma trận không).",
+      "statement_en": "Compute the determinant of the block upper-triangular matrix with A = [[1,2],[3,4]] and D = [[2,0],[1,5]].",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Định thức ma trận khối tam giác bằng tích định thức các khối trên đường chéo, không phụ thuộc khối B.",
+          "latex": "\\det\\begin{pmatrix} A & B \\\\ O & D \\end{pmatrix} = \\det A \\cdot \\det D"
+        },
+        {
+          "explain": "det A = 1*4 - 2*3 = -2; det D = 2*5 - 0*1 = 10.",
+          "latex": "\\det A = -2,\\quad \\det D = 10"
+        },
+        {
+          "explain": "Nhân hai định thức.",
+          "latex": "\\det = (-2)\\cdot 10 = -20"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.dinh-thuc-ma-tran-khoi-tam-giac"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "định thức ma trận khối",
+        "tích định thức các khối chéo"
+      ],
+      "tags": [
+        "dai-so",
+        "dinh-thuc",
+        "ma-tran-khoi"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "-2",
+          "why_wrong": "Chỉ tính det A, quên nhân với det D."
+        },
+        {
+          "key": "B",
+          "text": "-20",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "20",
+          "why_wrong": "Sai dấu det A: 1*4 - 2*3 = -2 chứ không phải +2."
+        },
+        {
+          "key": "D",
+          "text": "0",
+          "why_wrong": "Nghĩ rằng khối O làm cả định thức bằng 0, nhưng công thức khối tam giác vẫn khác 0."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0052",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ma trận",
+      "type": "trac-nghiem",
+      "statement_vi": "Tính ma trận nghịch đảo của A = [[2, 1], [1, 1]] qua ma trận phụ hợp. Phần tử ở hàng 2, cột 2 của A^{-1} bằng bao nhiêu?",
+      "statement_en": "Find A^{-1} for A = [[2,1],[1,1]] via the adjugate. What is entry (2,2)?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Công thức nghịch đảo qua phụ hợp: A^{-1} = (1/det A) adj(A); det A = 2*1 - 1*1 = 1.",
+          "latex": "A^{-1} = \\frac{1}{\\det A}\\operatorname{adj}(A),\\quad \\det A = 1"
+        },
+        {
+          "explain": "Với ma trận 2x2 [[a,b],[c,d]], phụ hợp là [[d,-b],[-c,a]]; ở đây [[1,-1],[-1,2]].",
+          "latex": "\\operatorname{adj}(A) = \\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix}"
+        },
+        {
+          "explain": "Chia cho det A = 1, phần tử (2,2) là 2.",
+          "latex": "A^{-1} = \\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix},\\quad (A^{-1})_{22} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.ma-tran-nghich-dao-qua-phu-hop"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "ma trận phụ hợp",
+        "nghịch đảo 2x2"
+      ],
+      "tags": [
+        "dai-so",
+        "ma-tran",
+        "nghich-dao"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1",
+          "why_wrong": "Lấy nhầm phần tử (1,1) của nghịch đảo thay vì (2,2)."
+        },
+        {
+          "key": "B",
+          "text": "-1",
+          "why_wrong": "Lấy nhầm phần tử ngoài đường chéo (giá trị -1)."
+        },
+        {
+          "key": "C",
+          "text": "2",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "1/2",
+          "why_wrong": "Nhầm det A = 2 nên chia đôi phần tử; thực ra det A = 1."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0053",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ma trận",
+      "type": "dung-sai",
+      "statement_vi": "Xét khẳng định: Với hai ma trận vuông A, B cùng cấp, luôn có tr(AB) = tr(BA), tuy nhiên nói chung tr(AB) khác tích tr(A) tr(B). Khẳng định này đúng hay sai?",
+      "statement_en": "Claim: tr(AB) = tr(BA) always, but in general tr(AB) is not tr(A)tr(B). True or False?",
+      "answer": "Đúng",
+      "solution_steps": [
+        {
+          "explain": "Tính chất vết: tr(AB) = tr(BA) luôn đúng dù AB có thể khác BA.",
+          "latex": "\\operatorname{tr}(AB) = \\operatorname{tr}(BA)"
+        },
+        {
+          "explain": "Vết không nhân tính: ví dụ A = B = I cấp 2 cho tr(AB) = 2 nhưng tr(A)tr(B) = 4, nên hai vế khác nhau.",
+          "latex": "A=B=I_{2}:\\ \\operatorname{tr}(AB) = 2 \\ne \\operatorname{tr}(A)\\operatorname{tr}(B) = 4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.tinh-chat-vet-tich"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính chất vết ma trận",
+        "phản ví dụ nhân tính"
+      ],
+      "tags": [
+        "dai-so",
+        "ma-tran",
+        "vet"
+      ],
+      "hints": [
+        "tr(AB) = tr(BA) là tính chất chuẩn.",
+        "Thử A = B = I để kiểm tra vế sau."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0054",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ phương trình tuyến tính",
+      "type": "trac-nghiem",
+      "statement_vi": "Dùng khử Gauss - Jordan giải hệ: x + y = 3 và x - y = 1. Nghiệm (x; y) là gì?",
+      "statement_en": "Solve x + y = 3, x - y = 1 by Gauss-Jordan. Find (x, y).",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Lập ma trận bổ sung và khử về dạng bậc thang rút gọn: cộng và trừ hai phương trình.",
+          "latex": "(A \\mid b) = \\left(\\begin{array}{cc|c} 1 & 1 & 3 \\\\ 1 & -1 & 1 \\end{array}\\right)"
+        },
+        {
+          "explain": "Cộng hai hàng: 2x = 4 nên x = 2; trừ: 2y = 2 nên y = 1.",
+          "latex": "2x = 4 \\Rightarrow x = 2,\\quad 2y = 2 \\Rightarrow y = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-phuong-trinh-tuyen-tinh.khu-gauss-jordan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "khử Gauss - Jordan",
+        "dạng bậc thang rút gọn"
+      ],
+      "tags": [
+        "dai-so",
+        "he-tuyen-tinh",
+        "gauss-jordan"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "(2; 1)",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "(1; 2)",
+          "why_wrong": "Hoán vị nhầm x và y."
+        },
+        {
+          "key": "C",
+          "text": "(3; 0)",
+          "why_wrong": "Chỉ dùng một phương trình, gán y = 0."
+        },
+        {
+          "key": "D",
+          "text": "(2; -1)",
+          "why_wrong": "Sai dấu khi trừ hai phương trình để tìm y."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0055",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ phương trình tuyến tính",
+      "type": "dien-so",
+      "statement_vi": "Hệ thuần nhất với ma trận hệ số A = [[1, 2], [2, m]] có nghiệm không tầm thường. Tìm giá trị của m.",
+      "statement_en": "The homogeneous system with A = [[1,2],[2,m]] has a nontrivial solution. Find m.",
+      "answer": "4",
+      "solution_steps": [
+        {
+          "explain": "Hệ thuần nhất vuông có nghiệm khác 0 khi và chỉ khi det A = 0.",
+          "latex": "Ax = 0 \\text{ co nghiem khac } 0 \\iff \\det A = 0"
+        },
+        {
+          "explain": "Tính định thức và cho bằng 0.",
+          "latex": "\\det A = 1\\cdot m - 2\\cdot 2 = m - 4 = 0 \\Rightarrow m = 4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-phuong-trinh-tuyen-tinh.he-thuan-nhat-nghiem-khong-tam-thuong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "điều kiện nghiệm không tầm thường",
+        "giải phương trình định thức"
+      ],
+      "tags": [
+        "dai-so",
+        "he-tuyen-tinh",
+        "thuan-nhat"
+      ],
+      "answer_numeric": 4,
+      "tolerance": 1e-09,
+      "hints": [
+        "Cần det A = 0.",
+        "det A = m - 4."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0056",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Không gian vectơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Trong R^2, biểu diễn vectơ u = (5; 4) thành tổ hợp tuyến tính c_1(1; 1) + c_2(1; 2). Cặp hệ số (c_1; c_2) là gì?",
+      "statement_en": "Write u = (5,4) as c1(1,1) + c2(1,2). Find (c1, c2).",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Đặt tổ hợp tuyến tính bằng u, ta được hệ theo từng toạ độ.",
+          "latex": "c_{1}(1,1) + c_{2}(1,2) = (5,4) \\Rightarrow \\begin{cases} c_{1} + c_{2} = 5 \\\\ c_{1} + 2c_{2} = 4 \\end{cases}"
+        },
+        {
+          "explain": "Trừ hai phương trình: c_2 = -1; thay lại: c_1 = 6.",
+          "latex": "c_{2} = -1,\\quad c_{1} = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-vecto.to-hop-tuyen-tinh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tổ hợp tuyến tính",
+        "giải hệ toạ độ"
+      ],
+      "tags": [
+        "dai-so",
+        "khong-gian-vecto",
+        "to-hop-tuyen-tinh"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "(4; 1)",
+          "why_wrong": "Đọc thẳng toạ độ của u, không giải hệ."
+        },
+        {
+          "key": "B",
+          "text": "(6; -1)",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "(1; 4)",
+          "why_wrong": "Giải hệ sai, hoán đổi vai trò hai ẩn."
+        },
+        {
+          "key": "D",
+          "text": "(5; -1)",
+          "why_wrong": "Lấy c_1 = 5 từ toạ độ đầu mà bỏ qua phương trình thứ hai."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0057",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Không gian vectơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Ba vectơ v_1 = (1; 2; 3), v_2 = (0; 1; 4), v_3 = (0; 0; 5) trong R^3. Chúng độc lập tuyến tính hay phụ thuộc, dựa vào định thức?",
+      "statement_en": "Are v1=(1,2,3), v2=(0,1,4), v3=(0,0,5) linearly independent (by determinant)?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Ba vectơ trong R^3 độc lập tuyến tính khi định thức ma trận tạo bởi chúng khác 0.",
+          "latex": "\\{v_{1},v_{2},v_{3}\\}\\text{ doc lap} \\iff \\det[v_{1}\\ v_{2}\\ v_{3}] \\ne 0"
+        },
+        {
+          "explain": "Xếp thành ma trận tam giác trên, định thức bằng tích đường chéo.",
+          "latex": "\\det\\begin{pmatrix} 1 & 0 & 0 \\\\ 2 & 1 & 0 \\\\ 3 & 4 & 5 \\end{pmatrix} = 1\\cdot 1\\cdot 5 = 5 \\ne 0"
+        },
+        {
+          "explain": "Định thức bằng 5 khác 0 nên ba vectơ độc lập tuyến tính.",
+          "latex": "\\det = 5 \\ne 0 \\Rightarrow \\text{doc lap tuyen tinh}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-vecto.dieu-kien-doc-lap-qua-dinh-thuc"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "kiểm tra độc lập tuyến tính",
+        "định thức ma trận tam giác"
+      ],
+      "tags": [
+        "dai-so",
+        "khong-gian-vecto",
+        "doc-lap-tuyen-tinh"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Độc lập, vì định thức bằng 5 khác 0",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Phụ thuộc, vì có nhiều số 0",
+          "why_wrong": "Số 0 ở vị trí tam giác không làm định thức bằng 0; đường chéo vẫn khác 0."
+        },
+        {
+          "key": "C",
+          "text": "Phụ thuộc, vì định thức bằng 0",
+          "why_wrong": "Tính định thức sai; ma trận tam giác trên có định thức bằng tích đường chéo 1*1*5 = 5."
+        },
+        {
+          "key": "D",
+          "text": "Không xác định được",
+          "why_wrong": "Định thức luôn cho kết luận rõ ràng khi số vectơ bằng số chiều."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0058",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Trị riêng và vectơ riêng",
+      "type": "trac-nghiem",
+      "statement_vi": "Tìm các trị riêng của ma trận A = [[2, 1], [1, 2]] (nghiệm của Av = lambda v, v khác 0).",
+      "statement_en": "Find the eigenvalues of A = [[2,1],[1,2]].",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Trị riêng là các lambda làm det(A - lambda E) = 0 (để Av = lambda v có nghiệm v khác 0).",
+          "latex": "\\det(A - \\lambda E) = (2-\\lambda)^{2} - 1 = 0"
+        },
+        {
+          "explain": "Giải: 2 - lambda = +-1.",
+          "latex": "\\lambda = 2 \\pm 1 \\Rightarrow \\lambda_{1} = 1,\\ \\lambda_{2} = 3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tri-rieng.dinh-nghia-tri-rieng"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "phương trình đặc trưng",
+        "trị riêng ma trận đối xứng"
+      ],
+      "tags": [
+        "dai-so",
+        "tri-rieng",
+        "eigenvalue"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 và 2",
+          "why_wrong": "Chỉ lấy phần tử đường chéo, bỏ ảnh hưởng phần tử ngoài đường chéo."
+        },
+        {
+          "key": "B",
+          "text": "0 và 4",
+          "why_wrong": "Giải (2-lambda)^2 = 1 sai thành (2-lambda)^2 = 4."
+        },
+        {
+          "key": "C",
+          "text": "1 và 3",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "-1 và -3",
+          "why_wrong": "Sai dấu khi rút lambda ra khỏi 2 - lambda = +-1."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0059",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Không gian Euclid",
+      "type": "trac-nghiem",
+      "statement_vi": "Với u = (1; 2; 2) và v = (2; 0; 1) trong R^3, kiểm tra bất đẳng thức Cauchy - Schwarz. So sánh |<u, v>| với ||u|| ||v||.",
+      "statement_en": "For u=(1,2,2), v=(2,0,1), verify Cauchy-Schwarz: compare |<u,v>| with ||u|| ||v||.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Bất đẳng thức Cauchy - Schwarz khẳng định trị tuyệt đối tích vô hướng không vượt quá tích hai chuẩn.",
+          "latex": "|\\langle u, v\\rangle| \\le \\|u\\|\\cdot\\|v\\|"
+        },
+        {
+          "explain": "Tính: <u,v> = 1*2 + 2*0 + 2*1 = 4; ||u|| = 3; ||v|| = căn 5.",
+          "latex": "|\\langle u,v\\rangle| = 4,\\quad \\|u\\|\\|v\\| = 3\\sqrt{5} \\approx 6.71"
+        },
+        {
+          "explain": "Vì 4 < 3 căn 5 nên bất đẳng thức được thoả (nghiêm ngặt).",
+          "latex": "4 < 3\\sqrt{5}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-euclid.bat-dang-thuc-cauchy-schwarz"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "tích vô hướng và chuẩn",
+        "kiểm chứng Cauchy - Schwarz"
+      ],
+      "tags": [
+        "dai-so",
+        "khong-gian-euclid",
+        "cauchy-schwarz"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "|<u,v>| > ||u|| ||v||",
+          "why_wrong": "Vi phạm Cauchy - Schwarz; bất đẳng thức luôn cho vế trái nhỏ hơn hoặc bằng."
+        },
+        {
+          "key": "B",
+          "text": "|<u,v>| < ||u|| ||v|| (4 < 3 căn 5)",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "|<u,v>| = ||u|| ||v||",
+          "why_wrong": "Dấu bằng chỉ xảy ra khi u, v cùng phương; ở đây chúng không cùng phương."
+        },
+        {
+          "key": "D",
+          "text": "Không so sánh được",
+          "why_wrong": "Cauchy - Schwarz luôn cho phép so sánh hai đại lượng này."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0060",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Không gian Euclid",
+      "type": "dien-so",
+      "statement_vi": "Trong R^3 tính khoảng cách Euclid giữa hai vectơ u = (1; 2; 3) và v = (4; 6; 3).",
+      "statement_en": "Find the Euclidean distance between u=(1,2,3) and v=(4,6,3) in R^3.",
+      "answer": "5",
+      "solution_steps": [
+        {
+          "explain": "Khoảng cách giữa hai vectơ là chuẩn của hiệu.",
+          "latex": "d(u,v) = \\|u - v\\| = \\sqrt{\\sum_{i}(u_{i} - v_{i})^{2}}"
+        },
+        {
+          "explain": "Hiệu u - v = (-3; -4; 0); tổng bình phương 9 + 16 + 0 = 25.",
+          "latex": "d = \\sqrt{(-3)^{2} + (-4)^{2} + 0^{2}} = \\sqrt{25} = 5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-euclid.khoang-cach-hai-vecto"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "khoảng cách Euclid",
+        "chuẩn của hiệu vectơ"
+      ],
+      "tags": [
+        "dai-so",
+        "khong-gian-euclid",
+        "khoang-cach"
+      ],
+      "answer_numeric": 5,
+      "tolerance": 1e-09,
+      "hints": [
+        "Lấy hiệu từng toạ độ.",
+        "Rồi căn tổng bình phương."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0061",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dạng toàn phương",
+      "type": "trac-nghiem",
+      "statement_vi": "Dạng toàn phương có ma trận A = [[-2, 1], [1, -2]]. Dùng tiêu chuẩn định thức con chính (Sylvester), dạng này xác định dương, âm hay không xác định?",
+      "statement_en": "The quadratic form with matrix [[-2,1],[1,-2]]: is it positive definite, negative definite, or indefinite?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tiêu chuẩn xác định âm: các định thức con chính đổi dấu, bắt đầu bằng Delta_1 < 0, Delta_2 > 0, ...",
+          "latex": "Q\\text{ xac dinh am} \\iff \\Delta_{1} < 0,\\ \\Delta_{2} > 0,\\ \\ldots"
+        },
+        {
+          "explain": "Tính các định thức con chính: Delta_1 = -2 < 0; Delta_2 = det A = (-2)(-2) - 1 = 3 > 0.",
+          "latex": "\\Delta_{1} = -2 < 0,\\quad \\Delta_{2} = 3 > 0"
+        },
+        {
+          "explain": "Dấu (-, +) đúng quy luật nên dạng toàn phương xác định âm; đưa về chính tắc sẽ có hai hệ số âm.",
+          "latex": "\\Rightarrow Q \\text{ xac dinh am}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dang-toan-phuong.tieu-chuan-xac-dinh-am",
+        "math.dai-hoc.dang-toan-phuong.dang-chinh-tac"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "tiêu chuẩn Sylvester",
+        "định thức con chính"
+      ],
+      "tags": [
+        "dai-so",
+        "dang-toan-phuong",
+        "xac-dinh-am"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Xác định dương",
+          "why_wrong": "Cần Delta_1 > 0 cho xác định dương, nhưng ở đây Delta_1 = -2 < 0."
+        },
+        {
+          "key": "B",
+          "text": "Xác định âm",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "Không xác định (dấu không cố định)",
+          "why_wrong": "Delta_2 = 3 > 0 loại trường hợp không xác định; dấu tuân đúng quy luật âm."
+        },
+        {
+          "key": "D",
+          "text": "Nửa xác định dương",
+          "why_wrong": "Không có định thức con nào bằng 0 nên không phải trường hợp suy biến."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0062",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân tích ma trận",
+      "type": "dien-so",
+      "statement_vi": "Ma trận đối xứng xác định dương A = [[4, 2], [2, 2]]. Phân tích Cholesky A = L L^T với L tam giác dưới. Tính phần tử l_{22}.",
+      "statement_en": "For A = [[4,2],[2,2]], Cholesky A = LL^T. Find l_{22}.",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Cholesky cho phần tử đường chéo: l_{jj} = căn(a_{jj} - tổng l_{jk}^2 với k < j).",
+          "latex": "l_{11} = \\sqrt{a_{11}} = \\sqrt{4} = 2,\\quad l_{21} = \\frac{a_{21}}{l_{11}} = \\frac{2}{2} = 1"
+        },
+        {
+          "explain": "Với j = 2: l_{22} = căn(a_{22} - l_{21}^2).",
+          "latex": "l_{22} = \\sqrt{a_{22} - l_{21}^{2}} = \\sqrt{2 - 1} = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-tich-ma-tran.phan-tich-cholesky"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "phân tích Cholesky",
+        "tính phần tử đường chéo"
+      ],
+      "tags": [
+        "dai-so",
+        "phan-tich-ma-tran",
+        "cholesky"
+      ],
+      "answer_numeric": 1,
+      "tolerance": 1e-09,
+      "hints": [
+        "l_{11} = 2, l_{21} = 1.",
+        "l_{22} = sqrt(a_{22} - l_{21}^2)."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0063",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân tích ma trận",
+      "type": "dien-so",
+      "statement_vi": "Ma trận đường chéo A = diag(4, 1). Tính số điều kiện theo chuẩn 2: kappa_2(A) = sigma_max / sigma_min.",
+      "statement_en": "For A = diag(4,1), compute the 2-norm condition number kappa_2 = sigma_max/sigma_min.",
+      "answer": "4",
+      "solution_steps": [
+        {
+          "explain": "Với ma trận đường chéo dương, giá trị kì dị chính là các phần tử đường chéo.",
+          "latex": "\\sigma_{\\max} = 4,\\quad \\sigma_{\\min} = 1"
+        },
+        {
+          "explain": "Số điều kiện chuẩn 2 là tỉ số giá trị kì dị lớn nhất trên nhỏ nhất.",
+          "latex": "\\kappa_{2}(A) = \\frac{\\sigma_{\\max}}{\\sigma_{\\min}} = \\frac{4}{1} = 4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-tich-ma-tran.so-dieu-kien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "số điều kiện",
+        "giá trị kì dị của ma trận chéo"
+      ],
+      "tags": [
+        "dai-so",
+        "phan-tich-ma-tran",
+        "so-dieu-kien"
+      ],
+      "answer_numeric": 4,
+      "tolerance": 1e-09,
+      "hints": [
+        "Với ma trận chéo, giá trị kì dị là trị tuyệt đối các phần tử chéo.",
+        "Lấy tỉ số lớn nhất trên nhỏ nhất."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0064",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác suất cơ bản",
+      "type": "trac-nghiem",
+      "statement_vi": "Chọn ngẫu nhiên một điểm trong hình vuông [0; 1] x [0; 1]. Dùng định nghĩa hình học của xác suất, tính xác suất để điểm rơi vào miền x + y <= 1.",
+      "statement_en": "A point is chosen uniformly in [0,1]x[0,1]. Find P(x + y <= 1) by geometric probability.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Định nghĩa hình học: xác suất bằng độ đo (diện tích) của biến cố chia cho độ đo không gian mẫu.",
+          "latex": "P(A) = \\frac{\\operatorname{mes}(A)}{\\operatorname{mes}(\\Omega)}"
+        },
+        {
+          "explain": "Miền x + y <= 1 trong hình vuông đơn vị là tam giác vuông cạnh 1, diện tích 1/2; không gian mẫu diện tích 1.",
+          "latex": "P = \\frac{1/2}{1} = \\frac{1}{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-co-ban.dinh-nghia-hinh-hoc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "xác suất hình học",
+        "tỉ số diện tích"
+      ],
+      "tags": [
+        "xac-suat",
+        "xac-suat-co-ban",
+        "hinh-hoc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1/4",
+          "why_wrong": "Nhầm diện tích tam giác là 1/4; tam giác vuông cạnh 1 có diện tích 1/2."
+        },
+        {
+          "key": "B",
+          "text": "1/2",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "why_wrong": "Cho rằng mọi điểm đều thoả; thực ra chỉ nửa hình vuông thoả x + y <= 1."
+        },
+        {
+          "key": "D",
+          "text": "2/3",
+          "why_wrong": "Ước lượng sai diện tích miền tam giác."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0065",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác suất cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Ba biến cố A, B, C có P(A) = P(B) = P(C) = 0,3; các cặp giao P(AB) = P(AC) = P(BC) = 0,1 và P(ABC) = 0,05. Tính P(A hợp B hợp C).",
+      "statement_en": "Three events with P=0.3 each, pairwise 0.1, triple 0.05. Find P(A or B or C).",
+      "answer": "0,65",
+      "solution_steps": [
+        {
+          "explain": "Công thức cộng cho ba biến cố (bao hàm - loại trừ).",
+          "latex": "P(A\\cup B\\cup C) = P(A)+P(B)+P(C) - P(AB) - P(AC) - P(BC) + P(ABC)"
+        },
+        {
+          "explain": "Thay số: 3*0,3 - 3*0,1 + 0,05.",
+          "latex": "= 0.9 - 0.3 + 0.05 = 0.65"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-cong-ba-bien-co"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "công thức bao hàm loại trừ",
+        "xác suất hợp ba biến cố"
+      ],
+      "tags": [
+        "xac-suat",
+        "xac-suat-co-ban",
+        "cong-xac-suat"
+      ],
+      "answer_numeric": 0.65,
+      "tolerance": 1e-09,
+      "hints": [
+        "Cộng đơn, trừ cặp, cộng lại giao ba.",
+        "3*0,3 - 3*0,1 + 0,05."
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-daihoc.0066",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác suất cơ bản",
+      "type": "trac-nghiem",
+      "statement_vi": "Một hộp có 5 bi đỏ và 3 bi xanh. Lấy lần lượt 3 bi không hoàn lại. Dùng công thức nhân tổng quát, tính xác suất cả 3 bi đều đỏ.",
+      "statement_en": "A box has 5 red and 3 blue balls. Draw 3 without replacement. Find P(all red) by the chain rule.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Công thức nhân tổng quát (dây chuyền): xác suất giao bằng tích các xác suất có điều kiện nối tiếp.",
+          "latex": "P(A_{1}A_{2}A_{3}) = P(A_{1})P(A_{2}\\mid A_{1})P(A_{3}\\mid A_{1}A_{2})"
+        },
+        {
+          "explain": "Sau mỗi lần lấy bi đỏ, số bi đỏ và tổng bi đều giảm 1.",
+          "latex": "= \\frac{5}{8}\\cdot\\frac{4}{7}\\cdot\\frac{3}{6}"
+        },
+        {
+          "explain": "Rút gọn.",
+          "latex": "= \\frac{60}{336} = \\frac{5}{28}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-nhan-tong-quat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "quy tắc dây chuyền",
+        "xác suất có điều kiện không hoàn lại"
+      ],
+      "tags": [
+        "xac-suat",
+        "xac-suat-co-ban",
+        "cong-thuc-nhan"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "125/512",
+          "why_wrong": "Tính như có hoàn lại: (5/8)^3, sai vì không hoàn lại làm tổng giảm."
+        },
+        {
+          "key": "B",
+          "text": "1/8",
+          "why_wrong": "Ước lượng thô mà không dùng công thức nhân có điều kiện."
+        },
+        {
+          "key": "C",
+          "text": "5/28",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "15/56",
+          "why_wrong": "Đếm nhầm số cách chọn 3 bi đỏ thành 15 thay vì C(5,3) = 10 khi dùng công thức tổ hợp."
+        }
+      ]
+    }
+  ]
+}

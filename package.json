@@ -1,0 +1,15 @@
+{
+  "name": "aistemx",
+  "version": "2.0.0",
+  "private": true,
+  "description": "AISTEM X (aistemx.com) — International STEM Knowledge Vault, CAS Problem Practice & Global Scholarship Platform",
+  "scripts": {
+    "start": "./dev.sh",
+    "dev": "npm --prefix apps/app run dev",
+    "build": "npm --prefix apps/app run build",
+    "server": "cd engine && .venv/bin/uvicorn server:app --host 0.0.0.0 --port 8000 --reload",
+    "test": "cd engine && .venv/bin/pytest",
+    "db:sync": "cd engine && .venv/bin/python sync_postgres.py",
+    "db:verify": "cd engine && .venv/bin/python -m aistem.cli db verify-problems"
+  }
+}

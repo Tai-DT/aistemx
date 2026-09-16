@@ -1,0 +1,2235 @@
+{
+  "meta": {
+    "file": "vn-physics-diendtu.json",
+    "subject": "physics",
+    "title": "Vật lí THPT: Điện - Từ, Dao động, Sóng, Điện xoay chiều, Quang và Vật lí hiện đại (GDPT 2018)",
+    "levels": [
+      "thpt"
+    ],
+    "count": 31
+  },
+  "lessons": [
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dien-tich-dinh-luat-coulomb",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Điện tích - Điện trường",
+      "order": 1,
+      "title_vi": "Điện tích và định luật Coulomb",
+      "title_en": "Electric charge and Coulomb's law",
+      "objectives": [
+        "Trình bày được ba cách làm nhiễm điện một vật và chỉ ra điện tích luôn bảo toàn trong mỗi cách",
+        "Vận dụng được định luật Coulomb để tính lực tương tác giữa hai điện tích điểm trong chân không và trong điện môi",
+        "Vận dụng được nguyên lí chồng chất để tìm hợp lực điện lên một điện tích trong hệ nhiều điện tích"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Điện tích điểm",
+          "term_en": "Point charge",
+          "definition": "Vật mang điện có kích thước rất nhỏ so với khoảng cách tới các vật khác, coi như điện tích tập trung tại một điểm."
+        },
+        {
+          "term_vi": "Điện tích nguyên tố",
+          "term_en": "Elementary charge",
+          "definition": "Điện tích nhỏ nhất của một hạt tự do, $e = 1{,}6\\times10^{-19}$ C; mọi điện tích đều là bội số nguyên của $e$."
+        },
+        {
+          "term_vi": "Hằng số điện môi",
+          "term_en": "Relative permittivity",
+          "definition": "Đại lượng $\\varepsilon$ cho biết lực điện trong môi trường giảm bao nhiêu lần so với trong chân không ở cùng khoảng cách."
+        }
+      ],
+      "content": "## Vì sao cần hai loại điện tích\n\nCọ xát thanh thuỷ tinh vào lụa rồi đưa lại gần nhau, hai thanh đẩy nhau; nhưng thanh thuỷ tinh lại hút thanh nhựa đã cọ vào len. Không thể giải thích bằng một loại điện tích, nên ta quy ước có **hai loại**: dương và âm. Nhờ gán dấu đại số, việc cộng lực trở thành cộng vectơ có dấu.\n\nNhiễm điện xảy ra theo ba cách: cọ xát, tiếp xúc và hưởng ứng. Điểm mấu chốt: cọ xát **không sinh ra** điện tích, electron chỉ chuyển từ vật này sang vật kia. Vì thế tổng đại số điện tích của một hệ cô lập không đổi:\n\n$$\\sum q_i = \\text{const}$$\n\n## Định luật Coulomb\n\nBằng cân xoắn, Coulomb đo được lực giữa hai điện tích điểm đứng yên:\n\n$$F = k\\dfrac{|q_1 q_2|}{\\varepsilon r^2}, \\qquad k = 9\\cdot10^{9}\\ \\text{N·m}^2/\\text{C}^2$$\n\nLực hướng dọc đường nối hai điện tích: **đẩy** nhau nếu cùng dấu, **hút** nhau nếu trái dấu. Trong điện môi đồng chất, lực giảm $\\varepsilon$ lần so với chân không ($\\varepsilon \\ge 1$).\n\n## Khi có nhiều điện tích\n\nLực điện tuân theo **nguyên lí chồng chất**: hợp lực lên một điện tích bằng tổng vectơ các lực do từng điện tích còn lại gây ra, $\\vec{F} = \\sum \\vec{F}_i$. Ta tính độ lớn từng lực rồi cộng vectơ (theo quy tắc hình bình hành hoặc chiếu lên trục).",
+      "formulas": [
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-dien-moi",
+        "physics.thpt.dien-tich-dien-truong.hang-so-coulomb",
+        "physics.thpt.dien-tich-dien-truong.dien-tich-nguyen-to",
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-bao-toan-dien-tich",
+        "physics.thpt.dien-tich-dien-truong.nguyen-li-chong-chat-luc-dien",
+        "physics.thpt.dien-tich-dien-truong.luc-dien-tac-dung-len-dien-tich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai điện tích $q_1 = 3\\cdot10^{-6}$ C và $q_2 = -3\\cdot10^{-6}$ C đặt cách nhau 3 cm trong không khí ($\\varepsilon \\approx 1$). Tính độ lớn lực tương tác.",
+          "solution": "Áp dụng công thức Coulomb với $r = 0{,}03$ m. Vì trái dấu nên lực là lực hút, nhưng đề chỉ hỏi độ lớn.\n$$F = 9\\cdot10^{9}\\cdot\\dfrac{3\\cdot10^{-6}\\cdot3\\cdot10^{-6}}{0{,}03^{2}} = 90\\ \\text{N}$$",
+          "answer": "F = 90 N (lực hút)"
+        }
+      ],
+      "common_mistakes": [
+        "Quên bình phương khoảng cách hoặc quên đổi cm sang m, dẫn tới sai số 10^4 lần; công thức có r ở mẫu và được bình phương.",
+        "Cộng thẳng độ lớn các lực khi có nhiều điện tích, quên rằng lực là đại lượng vectơ nên phải cộng theo phương chiều.",
+        "Nhầm dấu điện tích với chiều lực: dấu chỉ cho biết hút hay đẩy, còn độ lớn luôn dùng trị tuyệt đối $|q_1 q_2|$."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "dien-tich",
+        "coulomb",
+        "luc-dien",
+        "chong-chat"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dien-truong-cuong-do-dien-truong",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Điện tích - Điện trường",
+      "order": 2,
+      "title_vi": "Điện trường và cường độ điện trường",
+      "title_en": "Electric field and field strength",
+      "objectives": [
+        "Nêu được khái niệm điện trường là môi trường truyền tương tác điện",
+        "Tính được cường độ điện trường do một điện tích điểm gây ra và vận dụng nguyên lí chồng chất điện trường",
+        "Xác định được lực điện tác dụng lên một điện tích đặt trong điện trường đã biết"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dien-tich-dinh-luat-coulomb"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Điện trường",
+          "term_en": "Electric field",
+          "definition": "Dạng vật chất bao quanh điện tích, tác dụng lực lên điện tích khác đặt trong nó."
+        },
+        {
+          "term_vi": "Cường độ điện trường",
+          "term_en": "Electric field strength",
+          "definition": "Đại lượng vectơ đặc trưng cho điện trường về mặt tác dụng lực, $\\vec{E} = \\vec{F}/q$, đơn vị V/m."
+        },
+        {
+          "term_vi": "Điện trường đều",
+          "term_en": "Uniform field",
+          "definition": "Điện trường mà vectơ $\\vec{E}$ như nhau tại mọi điểm, ví dụ giữa hai bản tụ phẳng."
+        }
+      ],
+      "content": "## Từ tác dụng xa đến điện trường\n\nĐịnh luật Coulomb mô tả lực giữa hai điện tích nhưng không nói tương tác truyền đi thế nào. Faraday đề xuất: mỗi điện tích tạo quanh nó một **điện trường**, và chính điện trường mới tác dụng lực lên điện tích khác. Điện trường tồn tại khách quan, kể cả khi chưa có điện tích thử.\n\n## Cường độ điện trường\n\nĐặt điện tích thử $q$ (đủ nhỏ) tại một điểm, nó chịu lực $\\vec{F}$. Tỉ số\n\n$$\\vec{E} = \\dfrac{\\vec{F}}{q}$$\n\nkhông phụ thuộc $q$ mà chỉ phụ thuộc điện trường tại điểm đó, nên đặc trưng cho điện trường. Từ đó, lực lên một điện tích bất kì là $\\vec{F} = q\\vec{E}$: nếu $q>0$ thì $\\vec{F}$ cùng chiều $\\vec{E}$, nếu $q<0$ thì ngược chiều.\n\nVới một điện tích điểm $Q$ gây ra tại điểm cách nó $r$:\n\n$$E = k\\dfrac{|Q|}{\\varepsilon r^2}$$\n\nVectơ $\\vec{E}$ hướng ra xa nếu $Q>0$, hướng vào nếu $Q<0$.\n\n## Chồng chất điện trường\n\nĐiện trường do nhiều điện tích bằng tổng vectơ các điện trường thành phần: $\\vec{E} = \\sum \\vec{E}_i$. Đây là cơ sở để tính trường tại một điểm trong hệ nhiều điện tích, cũng bằng quy tắc hình bình hành như với lực.",
+      "formulas": [
+        "physics.thpt.dien-tich-dien-truong.cuong-do-dien-truong-dinh-nghia",
+        "physics.thpt.dien-tich-dien-truong.dien-truong-dien-tich-diem",
+        "physics.thpt.dien-tich-dien-truong.nguyen-li-chong-chat-dien-truong",
+        "physics.thpt.dien-tich-dien-truong.tong-hop-hai-vecto-dien-truong",
+        "physics.thpt.dien-tich-dien-truong.luc-dien-tac-dung-len-dien-tich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một điện tích $Q = 4\\cdot10^{-8}$ C đặt trong chân không. Tính cường độ điện trường tại điểm M cách Q một đoạn 20 cm.",
+          "solution": "Dùng công thức trường của điện tích điểm với $r = 0{,}2$ m, $\\varepsilon = 1$.\n$$E = 9\\cdot10^{9}\\cdot\\dfrac{4\\cdot10^{-8}}{0{,}2^{2}} = 9000\\ \\text{V/m}$$\nVectơ hướng ra xa Q vì Q dương.",
+          "answer": "E = 9000 V/m"
+        }
+      ],
+      "common_mistakes": [
+        "Lẫn lộn E và F: cường độ điện trường không phụ thuộc điện tích thử, còn lực thì tỉ lệ với điện tích đặt vào.",
+        "Cộng độ lớn hai vectơ E cùng điểm mà quên chúng khác phương; phải cộng vectơ, nhất là khi các điện tích không thẳng hàng.",
+        "Nhầm chiều E của điện tích âm: E luôn hướng về phía điện tích âm, ngược với trường của điện tích dương."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dien-truong",
+        "cuong-do-dien-truong",
+        "chong-chat"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dien-the-hieu-dien-the-cong-luc-dien",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Điện tích - Điện trường",
+      "order": 3,
+      "title_vi": "Điện thế, hiệu điện thế và công của lực điện",
+      "title_en": "Potential, voltage and work of electric force",
+      "objectives": [
+        "Tính được công của lực điện khi điện tích dịch chuyển trong điện trường đều",
+        "Phân biệt và tính được điện thế, hiệu điện thế và liên hệ giữa chúng với thế năng",
+        "Vận dụng được liên hệ $E = U/d$ trong điện trường đều"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dien-truong-cuong-do-dien-truong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công của lực điện",
+          "term_en": "Work of electric force",
+          "definition": "Công $A = qEd$ không phụ thuộc dạng đường đi, chỉ phụ thuộc hình chiếu độ dời theo phương trường; lực điện là lực thế."
+        },
+        {
+          "term_vi": "Hiệu điện thế",
+          "term_en": "Voltage",
+          "definition": "Đại lượng $U_{MN} = V_M - V_N = A_{MN}/q$ đặc trưng cho khả năng sinh công của điện trường khi dịch điện tích từ M đến N."
+        },
+        {
+          "term_vi": "Điện thế",
+          "term_en": "Electric potential",
+          "definition": "Đại lượng đặc trưng cho điện trường về mặt thế năng tại một điểm, $V = W/q$, phụ thuộc mốc thế năng đã chọn."
+        }
+      ],
+      "content": "## Lực điện là lực thế\n\nTrong điện trường đều, khi điện tích $q$ đi từ M đến N, công của lực điện chỉ phụ thuộc hình chiếu $d$ của độ dời theo phương đường sức:\n\n$$A_{MN} = qEd$$\n\nCông không phụ thuộc dạng đường đi, nên **lực điện là lực thế** và ta định nghĩa được thế năng điện $W = A_{M\\infty}$ (công dịch tới vô cực).\n\n## Điện thế và hiệu điện thế\n\nChia thế năng cho điện tích ta được đại lượng chỉ phụ thuộc điện trường: **điện thế** $V = W/q$. Hiệu hai điện thế cho **hiệu điện thế**:\n\n$$U_{MN} = V_M - V_N = \\dfrac{A_{MN}}{q}$$\n\nHiệu điện thế đo được trực tiếp bằng vôn kế và là đại lượng dùng trong mọi mạch điện. Đơn vị là vôn (V).\n\n## Liên hệ E và U trong điện trường đều\n\nTừ $A = qEd$ và $A = qU$ suy ra quan hệ rất hay dùng:\n\n$$U = Ed \\quad\\Rightarrow\\quad E = \\dfrac{U}{d}$$\n\nNhờ hệ thức này, biết hiệu điện thế giữa hai bản tụ phẳng cách nhau $d$ ta tính ngay được cường độ trường đều giữa chúng. Đây cũng là lí do đơn vị của $E$ là V/m.",
+      "formulas": [
+        "physics.thpt.dien-tich-dien-truong.cong-cua-luc-dien",
+        "physics.thpt.dien-tich-dien-truong.the-nang-dien",
+        "physics.thpt.dien-tich-dien-truong.dien-the",
+        "physics.thpt.dien-tich-dien-truong.hieu-dien-the",
+        "physics.thpt.dien-tich-dien-truong.lien-he-e-u-d",
+        "physics.thpt.dien-tich-dien-truong.dien-the-dien-tich-diem"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai bản kim loại phẳng song song cách nhau 2 cm, hiệu điện thế giữa chúng là 120 V. Tính cường độ điện trường đều giữa hai bản và công của lực điện khi một electron đi hết khoảng cách đó.",
+          "solution": "Điện trường đều nên $E = U/d$ với $d = 0{,}02$ m: $E = 120/0{,}02 = 6000$ V/m.\nCông dịch điện tích qua hiệu điện thế U: $A = qU = 1{,}6\\cdot10^{-19}\\cdot120 = 1{,}92\\cdot10^{-17}$ J (độ lớn).",
+          "answer": "E = 6000 V/m; A = 1,92·10⁻¹⁷ J"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm d là quãng đường thực đi thay vì hình chiếu theo phương đường sức; nếu điện tích đi vuông góc đường sức thì d = 0 và công bằng 0.",
+        "Quên rằng công có dấu: điện tích dương đi theo chiều điện trường thì lực điện sinh công dương, ngược chiều thì công âm.",
+        "Lẫn điện thế (một điểm) với hiệu điện thế (giữa hai điểm); vôn kế đo hiệu điện thế chứ không đo điện thế tuyệt đối."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dien-the",
+        "hieu-dien-the",
+        "cong-luc-dien"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.tu-dien-ghep-tu-nang-luong",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Điện tích - Điện trường",
+      "order": 4,
+      "title_vi": "Tụ điện, ghép tụ và năng lượng điện trường",
+      "title_en": "Capacitors, combinations and field energy",
+      "objectives": [
+        "Nêu được cấu tạo, định nghĩa điện dung và ý nghĩa đơn vị fara của tụ điện",
+        "Tính được điện dung tương đương của bộ tụ ghép nối tiếp và ghép song song",
+        "Tính được năng lượng và điện tích tích trữ trong tụ điện"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dien-the-hieu-dien-the-cong-luc-dien"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Điện dung",
+          "term_en": "Capacitance",
+          "definition": "Đại lượng $C = Q/U$ đặc trưng cho khả năng tích điện của tụ ở một hiệu điện thế, đơn vị fara (F)."
+        },
+        {
+          "term_vi": "Ghép nối tiếp",
+          "term_en": "Series",
+          "definition": "Các tụ nối liên tiếp có cùng điện tích, điện dung tương đương thoả $1/C_b = \\sum 1/C_i$, luôn nhỏ hơn tụ nhỏ nhất."
+        },
+        {
+          "term_vi": "Ghép song song",
+          "term_en": "Parallel",
+          "definition": "Các tụ chung hiệu điện thế, điện dung tương đương $C_b = \\sum C_i$, luôn lớn hơn tụ lớn nhất."
+        }
+      ],
+      "content": "## Tụ điện dùng để làm gì\n\nTụ điện là hệ hai vật dẫn (hai bản) đặt gần nhau, ngăn bởi điện môi, dùng để **tích và phóng điện**. Khi nối vào nguồn, hai bản tích điện trái dấu bằng nhau về độ lớn. Khả năng tích điện được đo bằng **điện dung**:\n\n$$C = \\dfrac{Q}{U}$$\n\nVới tụ phẳng, điện dung phụ thuộc kích thước và điện môi: $C = \\dfrac{\\varepsilon S}{4\\pi k d}$. Nghĩa là bản càng rộng, khoảng cách càng nhỏ thì điện dung càng lớn.\n\n## Ghép tụ\n\nKhi ghép **nối tiếp**, điện tích trên mọi tụ bằng nhau còn hiệu điện thế cộng lại, dẫn tới nghịch đảo điện dung cộng: $\\dfrac{1}{C_b} = \\dfrac{1}{C_1}+\\dfrac{1}{C_2}+\\dots$ Khi ghép **song song**, hiệu điện thế chung nên điện dung cộng trực tiếp: $C_b = C_1 + C_2 + \\dots$ Ghi nhớ đối lập này giúp không nhầm với ghép điện trở.\n\n## Năng lượng tích trữ\n\nTụ đã tích điện dự trữ năng lượng dưới dạng năng lượng điện trường:\n\n$$W = \\dfrac{1}{2}CU^2 = \\dfrac{Q^2}{2C} = \\dfrac{1}{2}QU$$\n\nChọn dạng nào tuỳ vào đại lượng đề cho. Đây là cơ sở của đèn flash máy ảnh: tụ tích năng lượng chậm rồi phóng ra rất nhanh.",
+      "formulas": [
+        "physics.thpt.tu-dien.dien-dung-dinh-nghia",
+        "physics.thpt.tu-dien.dien-dung-tu-phang",
+        "physics.thpt.tu-dien.ghep-tu-noi-tiep",
+        "physics.thpt.tu-dien.ghep-tu-song-song",
+        "physics.thpt.tu-dien.nang-luong-tu-dien",
+        "physics.thpt.tu-dien.mat-do-nang-luong-dien-truong",
+        "physics.thpt.tu-dien.hieu-dien-the-gioi-han",
+        "physics.thpt.tu-dien.dien-luong-dich-chuyen"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai tụ $C_1 = 2\\ \\mu$F và $C_2 = 3\\ \\mu$F ghép nối tiếp rồi mắc vào hiệu điện thế 50 V. Tính điện dung bộ tụ, điện tích và năng lượng của bộ.",
+          "solution": "Nối tiếp: $C_b = \\dfrac{C_1 C_2}{C_1+C_2} = \\dfrac{2\\cdot3}{5} = 1{,}2\\ \\mu$F.\nĐiện tích bộ (cũng là điện tích mỗi tụ): $Q = C_b U = 1{,}2\\cdot10^{-6}\\cdot50 = 6\\cdot10^{-5}$ C.\nNăng lượng: $W = \\tfrac12 C_b U^2 = \\tfrac12\\cdot1{,}2\\cdot10^{-6}\\cdot50^2 = 1{,}5\\cdot10^{-3}$ J.",
+          "answer": "C_b = 1,2 μF; Q = 60 μC; W = 1,5 mJ"
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng nhầm công thức ghép: nối tiếp tụ giống song song điện trở (cộng nghịch đảo), rất dễ lẫn nếu học vẹt.",
+        "Cho rằng ghép nối tiếp thì hiệu điện thế mỗi tụ bằng nhau; thực ra điện tích bằng nhau còn hiệu điện thế chia theo tỉ lệ nghịch điện dung.",
+        "Dùng sai công thức năng lượng khi đề cho Q thay vì U; nên chọn dạng $W = Q^2/(2C)$ để khỏi phải tính U trung gian."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "tu-dien",
+        "ghep-tu",
+        "nang-luong-dien"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dinh-luat-om-toan-mach-ghep-nguon",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Dòng điện không đổi",
+      "order": 1,
+      "title_vi": "Định luật Ohm cho toàn mạch và ghép nguồn điện",
+      "title_en": "Ohm's law for the whole circuit and combining sources",
+      "objectives": [
+        "Phát biểu và vận dụng được định luật Ohm cho toàn mạch có điện trở trong",
+        "Tính được cường độ dòng điện và hiệu điện thế mạch ngoài trong mạch kín",
+        "Xác định được suất điện động và điện trở trong của bộ nguồn ghép nối tiếp, song song và hỗn hợp đối xứng"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Suất điện động",
+          "term_en": "Electromotive force",
+          "definition": "Đại lượng $\\xi = A/q$ đặc trưng cho khả năng sinh công của nguồn để dịch điện tích trong mạch kín, đơn vị vôn."
+        },
+        {
+          "term_vi": "Điện trở trong",
+          "term_en": "Internal resistance",
+          "definition": "Điện trở $r$ của chính nguồn điện, gây ra độ giảm thế bên trong nguồn khi có dòng."
+        },
+        {
+          "term_vi": "Định luật Ohm toàn mạch",
+          "term_en": "Ohm's law (full circuit)",
+          "definition": "Cường độ dòng trong mạch kín $I = \\dfrac{\\xi}{R_N + r}$ với $R_N$ là điện trở mạch ngoài."
+        }
+      ],
+      "content": "## Nguồn điện không lí tưởng\n\nPin thực không giữ nguyên hiệu điện thế khi nối tải: càng lấy dòng lớn, hiệu điện thế hai cực càng tụt. Nguyên nhân là **điện trở trong** $r$. Áp dụng định luật bảo toàn năng lượng cho mạch kín gồm nguồn ($\\xi, r$) và mạch ngoài $R_N$:\n\n$$I = \\dfrac{\\xi}{R_N + r}$$\n\nHiệu điện thế mạch ngoài (cũng là hiệu điện thế hai cực nguồn): $U_N = \\xi - I r = I R_N$. Khi mạch hở $I=0$ thì $U_N = \\xi$; khi đoản mạch $R_N = 0$ thì $I$ cực đại bằng $\\xi/r$.\n\n## Ghép nguồn thành bộ\n\nKhi một pin không đủ, ta ghép nhiều pin. **Nối tiếp** $n$ nguồn giống nhau: suất điện động và điện trở trong đều cộng, $\\xi_b = n\\xi,\\ r_b = nr$ - dùng khi cần hiệu điện thế lớn. **Song song** $m$ nguồn giống nhau: $\\xi_b = \\xi,\\ r_b = r/m$ - dùng khi cần dòng lớn. Bộ **hỗn hợp đối xứng** gồm $m$ dãy song song, mỗi dãy $n$ nguồn nối tiếp: $\\xi_b = n\\xi,\\ r_b = \\dfrac{nr}{m}$.\n\n## Khi nào dùng\n\nNhận dạng nhanh: đề cho mạch một nguồn thì dùng ngay công thức Ohm toàn mạch; đề cho nhiều pin thì trước hết quy về bộ nguồn tương đương rồi mới áp dụng.",
+      "formulas": [
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach",
+        "physics.thpt.dong-dien-khong-doi.suat-dien-dong-nguon",
+        "physics.thpt.dong-dien-khong-doi.do-giam-the-mach-ngoai",
+        "physics.thpt.dong-dien-khong-doi.hieu-suat-nguon-dien",
+        "physics.thpt.dong-dien-khong-doi.ghep-nguon-noi-tiep",
+        "physics.thpt.dong-dien-khong-doi.ghep-nguon-song-song",
+        "physics.thpt.dong-dien-khong-doi.ghep-nguon-hon-hop-doi-xung",
+        "physics.thpt.dong-dien-khong-doi.ghep-dien-tro-noi-tiep",
+        "physics.thpt.dong-dien-khong-doi.ghep-dien-tro-song-song",
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-doan-mach"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nguồn có $\\xi = 12$ V, $r = 1\\ \\Omega$ mắc với điện trở ngoài $R = 5\\ \\Omega$. Tính cường độ dòng điện và hiệu điện thế hai cực nguồn.",
+          "solution": "Định luật Ohm toàn mạch: $I = \\dfrac{\\xi}{R+r} = \\dfrac{12}{5+1} = 2$ A.\nHiệu điện thế hai cực: $U = \\xi - Ir = 12 - 2\\cdot1 = 10$ V (bằng $IR = 2\\cdot5 = 10$ V).",
+          "answer": "I = 2 A; U = 10 V"
+        }
+      ],
+      "common_mistakes": [
+        "Quên điện trở trong r ở mẫu, tính I chỉ bằng ξ/R nên ra dòng lớn hơn thực tế.",
+        "Ghép nguồn song song vẫn cộng suất điện động; thực ra suất điện động bộ song song bằng suất điện động một nguồn, chỉ điện trở trong giảm.",
+        "Nhầm U hai cực nguồn với suất điện động ξ; hai đại lượng chỉ bằng nhau khi mạch hở (không có dòng)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dong-dien",
+        "dinh-luat-om",
+        "ghep-nguon"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.cong-suat-dien-jun-lenxo-dien-phan",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương II: Dòng điện không đổi",
+      "order": 2,
+      "title_vi": "Công suất điện, định luật Jun - Len-xơ và điện phân Faraday",
+      "title_en": "Electric power, Joule's law and Faraday electrolysis",
+      "objectives": [
+        "Tính được công và công suất của dòng điện, của nguồn điện và của toàn mạch",
+        "Vận dụng được định luật Jun - Len-xơ để tính nhiệt lượng toả ra trên vật dẫn",
+        "Vận dụng được định luật Faraday để tính khối lượng chất giải phóng khi điện phân"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dinh-luat-om-toan-mach-ghep-nguon"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công suất điện",
+          "term_en": "Electric power",
+          "definition": "Công suất tiêu thụ của đoạn mạch $P = UI = I^2 R = U^2/R$, đo bằng oát (W)."
+        },
+        {
+          "term_vi": "Định luật Jun - Len-xơ",
+          "term_en": "Joule's law",
+          "definition": "Nhiệt lượng toả ra trên vật dẫn thuần trở $Q = I^2 R t$, tỉ lệ với bình phương cường độ dòng."
+        },
+        {
+          "term_vi": "Định luật Faraday điện phân",
+          "term_en": "Faraday's law",
+          "definition": "Khối lượng chất giải phóng ở điện cực $m = \\dfrac{1}{F}\\cdot\\dfrac{A}{n}It$, với $F = 96500$ C/mol."
+        }
+      ],
+      "content": "## Dòng điện sinh công như thế nào\n\nKhi dòng chạy qua đoạn mạch có hiệu điện thế $U$, điện trường sinh công dịch chuyển các điện tích. Công và công suất điện:\n\n$$A = UIt, \\qquad P = UI$$\n\nVới vật dẫn thuần trở, thay $U = IR$ được $P = I^2 R = \\dfrac{U^2}{R}$. Toàn bộ công này biến thành nhiệt - đó là **định luật Jun - Len-xơ**:\n\n$$Q = I^2 R t$$\n\nVới nguồn, công suất nguồn sinh ra là $P_{ng} = \\xi I$, một phần hao trên điện trở trong ($I^2 r$), phần còn lại cấp cho mạch ngoài.\n\n## Điện phân và định luật Faraday\n\nNếu mạch ngoài là bình điện phân, dòng điện gây phản ứng hoá học ở điện cực. Khối lượng chất bám vào catôt tỉ lệ với điện lượng $q = It$:\n\n$$m = \\dfrac{1}{F}\\cdot\\dfrac{A}{n}\\,It$$\n\ntrong đó $A$ là khối lượng mol nguyên tử, $n$ là hoá trị, $F = 96500$ C/mol là hằng số Faraday. Công thức cho phép mạ điện, tinh luyện kim loại với lượng tính toán chính xác.\n\n## Khi nào dùng\n\nBài hỏi nhiệt lượng, tiền điện thì dùng công suất và Jun - Len-xơ; bài có bình điện phân, mạ kim loại thì dùng Faraday, nhớ đổi thời gian ra giây.",
+      "formulas": [
+        "physics.thpt.dong-dien-khong-doi.cong-cua-dong-dien",
+        "physics.thpt.dong-dien-khong-doi.cong-suat-dien",
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-jun-len-xo",
+        "physics.thpt.dong-dien-khong-doi.cong-va-cong-suat-nguon",
+        "physics.thpt.dong-dien-khong-doi.cong-suat-mach-ngoai-cuc-dai",
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-faraday-dien-phan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Bình điện phân dung dịch $CuSO_4$ với anôt bằng đồng, dòng điện 2 A chạy trong 16 phút 5 giây. Biết Cu có $A = 64$, $n = 2$. Tính khối lượng đồng bám vào catôt.",
+          "solution": "Đổi thời gian: $t = 16\\cdot60 + 5 = 965$ s. Điện lượng $q = It = 2\\cdot965 = 1930$ C.\nÁp dụng Faraday: $m = \\dfrac{1}{96500}\\cdot\\dfrac{64}{2}\\cdot1930 = 0{,}64$ g.",
+          "answer": "m = 0,64 g"
+        }
+      ],
+      "common_mistakes": [
+        "Quên đổi phút ra giây khi tính điện lượng; công thức Faraday và Jun - Len-xơ đều cần t tính bằng giây.",
+        "Nhầm hoá trị n với số nguyên tử trong công thức hoá học; n là số electron trao đổi của ion kim loại.",
+        "Dùng công suất P = U²/R cho cả đoạn có nguồn hay động cơ; công thức này chỉ đúng cho vật dẫn thuần trở."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "cong-suat",
+        "jun-lenxo",
+        "dien-phan",
+        "faraday"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.cam-ung-tu-va-luc-tu",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương III: Từ trường",
+      "order": 1,
+      "title_vi": "Cảm ứng từ và lực từ",
+      "title_en": "Magnetic flux density and magnetic force",
+      "objectives": [
+        "Nêu được khái niệm cảm ứng từ và viết được công thức cảm ứng từ của các dòng điện đặc biệt",
+        "Vận dụng được công thức lực từ tác dụng lên đoạn dây dẫn mang dòng điện",
+        "Xác định được chiều của lực từ bằng quy tắc bàn tay trái"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Cảm ứng từ",
+          "term_en": "Magnetic flux density",
+          "definition": "Đại lượng vectơ $\\vec{B}$ đặc trưng cho từ trường về mặt tác dụng lực, đơn vị tesla (T)."
+        },
+        {
+          "term_vi": "Lực từ",
+          "term_en": "Magnetic force",
+          "definition": "Lực $F = BIl\\sin\\alpha$ do từ trường tác dụng lên đoạn dây mang dòng, với $\\alpha$ là góc giữa dây và $\\vec{B}$."
+        },
+        {
+          "term_vi": "Quy tắc bàn tay trái",
+          "term_en": "Left-hand rule",
+          "definition": "Đường sức xuyên lòng bàn tay, chiều dòng theo bốn ngón, ngón cái choãi chỉ chiều lực từ."
+        }
+      ],
+      "content": "## Từ trường và cảm ứng từ\n\nXung quanh nam châm hay dòng điện tồn tại **từ trường**. Đại lượng đặc trưng cho nó về mặt tác dụng lực là **cảm ứng từ** $\\vec{B}$: phương tiếp tuyến đường sức, độ lớn đo bằng tesla. Một số dòng điện đặc biệt có công thức riêng:\n\n- Dây thẳng dài: $B = 2\\cdot10^{-7}\\dfrac{I}{r}$\n- Tâm vòng tròn bán kính $R$: $B = 2\\pi\\cdot10^{-7}\\dfrac{I}{R}$\n- Lòng ống dây dài: $B = 4\\pi\\cdot10^{-7} nI$ với $n$ là số vòng trên mét.\n\nKhi có nhiều dòng, từ trường tổng bằng tổng vectơ (nguyên lí chồng chất từ trường).\n\n## Lực từ tác dụng lên dây dẫn\n\nĐặt đoạn dây dài $l$ mang dòng $I$ trong từ trường, nó chịu lực từ:\n\n$$F = BIl\\sin\\alpha$$\n\nvới $\\alpha$ là góc giữa dây và $\\vec{B}$. Lực lớn nhất khi dây vuông góc $\\vec{B}$, bằng 0 khi dây song song $\\vec{B}$. Chiều lực xác định bằng **quy tắc bàn tay trái**.\n\n## Ứng dụng\n\nLực từ giữa dây dẫn với từ trường là nguyên lí của động cơ điện và loa. Hai dây song song mang dòng cùng chiều thì hút nhau, ngược chiều thì đẩy nhau, với lực trên mỗi mét $F/l = 2\\cdot10^{-7}\\dfrac{I_1 I_2}{r}$.",
+      "formulas": [
+        "physics.thpt.tu-truong.cam-ung-tu-dinh-nghia",
+        "physics.thpt.tu-truong.luc-tu-tac-dung-len-day-dan",
+        "physics.thpt.tu-truong.cam-ung-tu-dong-dien-thang-dai",
+        "physics.thpt.tu-truong.cam-ung-tu-dong-dien-tron",
+        "physics.thpt.tu-truong.cam-ung-tu-ong-day",
+        "physics.thpt.tu-truong.nguyen-li-chong-chat-tu-truong",
+        "physics.thpt.tu-truong.luc-tuong-tac-hai-day-song-song",
+        "physics.thpt.tu-truong.momen-tu-khung-day"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Đoạn dây dài 20 cm mang dòng 5 A đặt vuông góc với từ trường đều $B = 0{,}4$ T. Tính lực từ tác dụng lên đoạn dây.",
+          "solution": "Dây vuông góc $\\vec{B}$ nên $\\alpha = 90^\\circ$, $\\sin\\alpha = 1$.\n$$F = BIl = 0{,}4\\cdot5\\cdot0{,}2 = 0{,}4\\ \\text{N}$$",
+          "answer": "F = 0,4 N"
+        }
+      ],
+      "common_mistakes": [
+        "Quên nhân sinα, coi mọi trường hợp như dây vuông góc; khi dây song song B thì lực bằng 0.",
+        "Nhầm công thức từ trường dây thẳng với vòng tròn: dây thẳng chia cho r, vòng tròn có thêm hệ số π.",
+        "Dùng quy tắc bàn tay phải (dành cho chiều B của dòng) để tìm chiều lực từ; chiều lực từ dùng bàn tay trái."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "tu-truong",
+        "cam-ung-tu",
+        "luc-tu"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.luc-lorentz-chuyen-dong-dien-tich",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương III: Từ trường",
+      "order": 2,
+      "title_vi": "Lực Lorentz và chuyển động của điện tích trong từ trường",
+      "title_en": "Lorentz force and charged-particle motion",
+      "objectives": [
+        "Vận dụng được công thức lực Lorentz tác dụng lên điện tích chuyển động",
+        "Giải thích được vì sao điện tích chuyển động vuông góc từ trường đều đi theo quỹ đạo tròn",
+        "Tính được bán kính và chu kì của quỹ đạo tròn trong từ trường đều"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.cam-ung-tu-va-luc-tu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Lực Lorentz",
+          "term_en": "Lorentz force",
+          "definition": "Lực từ tác dụng lên điện tích chuyển động $f = |q|vB\\sin\\alpha$, luôn vuông góc với vận tốc."
+        },
+        {
+          "term_vi": "Bán kính quỹ đạo",
+          "term_en": "Radius of orbit",
+          "definition": "Khi $\\vec{v}\\perp\\vec{B}$, điện tích chuyển động tròn đều bán kính $R = \\dfrac{mv}{|q|B}$."
+        },
+        {
+          "term_vi": "Chu kì cyclotron",
+          "term_en": "Cyclotron period",
+          "definition": "Chu kì $T = \\dfrac{2\\pi m}{|q|B}$ không phụ thuộc vận tốc, cơ sở của máy gia tốc cyclotron."
+        }
+      ],
+      "content": "## Lực lên một điện tích đang bay\n\nĐoạn dây mang dòng chịu lực từ, mà dòng là dòng các điện tích chuyển động, nên mỗi điện tích cũng chịu lực. Đó là **lực Lorentz**:\n\n$$f = |q|vB\\sin\\alpha$$\n\nvới $\\alpha$ là góc giữa $\\vec{v}$ và $\\vec{B}$. Điểm đặc biệt: lực Lorentz **luôn vuông góc với vận tốc**, nên nó không sinh công, chỉ làm đổi hướng chứ không đổi độ lớn vận tốc.\n\n## Quỹ đạo tròn\n\nKhi $\\vec{v}\\perp\\vec{B}$, lực Lorentz đóng vai trò lực hướng tâm với độ lớn không đổi $|q|vB$, nên điện tích chuyển động **tròn đều**. Cho lực Lorentz bằng lực hướng tâm $\\dfrac{mv^2}{R}$:\n\n$$R = \\dfrac{mv}{|q|B}, \\qquad T = \\dfrac{2\\pi m}{|q|B}$$\n\nĐáng chú ý, chu kì $T$ không phụ thuộc vận tốc: hạt nhanh đi vòng lớn, hạt chậm đi vòng nhỏ, nhưng thời gian một vòng như nhau. Đây là nguyên lí của máy cyclotron.\n\n## Trường hợp tổng quát\n\nNếu $\\vec{v}$ hợp với $\\vec{B}$ một góc bất kì, ta tách vận tốc thành thành phần song song (chuyển động thẳng đều) và vuông góc (chuyển động tròn), tổng hợp cho **quỹ đạo xoắn ốc**.",
+      "formulas": [
+        "physics.thpt.tu-truong.luc-lorentz",
+        "physics.thpt.tu-truong.ban-kinh-quy-dao-tron-trong-tu-truong",
+        "physics.thpt.tu-truong.chu-ki-chuyen-dong-tron-trong-tu-truong",
+        "physics.thpt.tu-truong.chuyen-dong-xoan-oc-trong-tu-truong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một electron bay vào từ trường đều $B = 2\\cdot10^{-3}$ T theo phương vuông góc với $\\vec{B}$, vận tốc $v = 4\\cdot10^{6}$ m/s. Cho $m = 9{,}1\\cdot10^{-31}$ kg, $|q| = 1{,}6\\cdot10^{-19}$ C. Tính bán kính quỹ đạo.",
+          "solution": "Vì $\\vec{v}\\perp\\vec{B}$, electron chuyển động tròn đều với bán kính:\n$$R = \\dfrac{mv}{|q|B} = \\dfrac{9{,}1\\cdot10^{-31}\\cdot4\\cdot10^{6}}{1{,}6\\cdot10^{-19}\\cdot2\\cdot10^{-3}} \\approx 1{,}14\\cdot10^{-2}\\ \\text{m}$$",
+          "answer": "R ≈ 1,14 cm"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng lực Lorentz sinh công làm điện tích tăng tốc; thực ra lực luôn vuông góc vận tốc nên độ lớn vận tốc không đổi.",
+        "Quên nhân sinα khi v không vuông góc B, hoặc dùng luôn công thức tròn cho quỹ đạo xoắn ốc.",
+        "Cho rằng chu kì phụ thuộc vận tốc; T = 2πm/(qB) chỉ phụ thuộc tỉ số điện tích trên khối lượng và từ trường."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "luc-lorentz",
+        "quy-dao-tron",
+        "cyclotron"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.tu-thong-dinh-luat-faraday-lenz",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Cảm ứng điện từ",
+      "order": 1,
+      "title_vi": "Từ thông, định luật Faraday và định luật Lenz",
+      "title_en": "Magnetic flux, Faraday's and Lenz's laws",
+      "objectives": [
+        "Tính được từ thông qua một khung dây phẳng đặt trong từ trường đều",
+        "Vận dụng được định luật Faraday để tính suất điện động cảm ứng",
+        "Xác định được chiều dòng điện cảm ứng bằng định luật Lenz"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.cam-ung-tu-va-luc-tu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Từ thông",
+          "term_en": "Magnetic flux",
+          "definition": "Đại lượng $\\Phi = NBS\\cos\\alpha$ đo số đường sức xuyên qua diện tích khung, với $\\alpha$ góc giữa pháp tuyến và $\\vec{B}$, đơn vị vêbe (Wb)."
+        },
+        {
+          "term_vi": "Suất điện động cảm ứng",
+          "term_en": "Induced EMF",
+          "definition": "Suất điện động sinh ra khi từ thông biến thiên, $e_c = -\\dfrac{\\Delta\\Phi}{\\Delta t}$."
+        },
+        {
+          "term_vi": "Định luật Lenz",
+          "term_en": "Lenz's law",
+          "definition": "Dòng điện cảm ứng có chiều chống lại sự biến thiên của từ thông đã sinh ra nó."
+        }
+      ],
+      "content": "## Từ thông đo cái gì\n\nMuốn nói tới sự biến thiên của từ trường qua một mạch, ta cần một đại lượng gộp cả $B$, diện tích và hướng đặt khung: đó là **từ thông**\n\n$$\\Phi = NBS\\cos\\alpha$$\n\nvới $N$ số vòng, $\\alpha$ là góc giữa vectơ pháp tuyến khung và $\\vec{B}$. Từ thông cực đại khi khung vuông góc đường sức ($\\alpha = 0$), bằng 0 khi mặt khung song song đường sức.\n\n## Định luật Faraday\n\nFaraday phát hiện: chỉ khi từ thông **biến thiên** mới xuất hiện dòng điện trong mạch kín. Độ lớn suất điện động cảm ứng bằng tốc độ biến thiên từ thông:\n\n$$e_c = -\\dfrac{\\Delta\\Phi}{\\Delta t}$$\n\nDấu trừ mang ý nghĩa của định luật Lenz. Từ thông có thể đổi do $B$ đổi, do diện tích đổi (thanh trượt) hay do khung quay (đổi $\\alpha$) - máy phát điện dùng chính cách cuối.\n\n## Định luật Lenz\n\n**Dòng cảm ứng có chiều chống lại nguyên nhân sinh ra nó.** Nếu từ thông tăng, dòng cảm ứng tạo từ trường ngược để cản lại; nếu giảm, dòng cảm ứng tạo từ trường cùng chiều để duy trì. Đây là biểu hiện của bảo toàn năng lượng: muốn duy trì biến thiên phải tốn công.",
+      "formulas": [
+        "physics.thpt.cam-ung-dien-tu.tu-thong",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-lenz",
+        "physics.thpt.cam-ung-dien-tu.dong-dien-cam-ung",
+        "physics.thpt.cam-ung-dien-tu.sdd-thanh-dan-chuyen-dong",
+        "physics.thpt.cam-ung-dien-tu.luc-tu-can-thanh-truot"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Khung dây 200 vòng, diện tích mỗi vòng 50 cm², đặt vuông góc với từ trường đều. Trong 0,1 s cảm ứng từ giảm đều từ 0,4 T về 0. Tính suất điện động cảm ứng.",
+          "solution": "Khung vuông góc B nên $\\alpha = 0$. Độ biến thiên từ thông một vòng nhân số vòng:\n$$|e_c| = N\\dfrac{|\\Delta B|S}{\\Delta t} = 200\\cdot\\dfrac{0{,}4\\cdot50\\cdot10^{-4}}{0{,}1} = 4\\ \\text{V}$$",
+          "answer": "e_c = 4 V"
+        }
+      ],
+      "common_mistakes": [
+        "Quên số vòng N khi tính từ thông và suất điện động của cuộn nhiều vòng.",
+        "Nhầm góc α: α là góc giữa pháp tuyến và B chứ không phải giữa mặt phẳng khung và B; hai góc phụ nhau.",
+        "Cho rằng cứ có từ trường mạnh là có dòng cảm ứng; dòng cảm ứng chỉ xuất hiện khi từ thông biến thiên theo thời gian."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "tu-thong",
+        "faraday",
+        "lenz",
+        "cam-ung-dien-tu"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.tu-cam-nang-luong-tu-truong",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Cảm ứng điện từ",
+      "order": 2,
+      "title_vi": "Hiện tượng tự cảm và năng lượng từ trường",
+      "title_en": "Self-induction and magnetic energy",
+      "objectives": [
+        "Giải thích được hiện tượng tự cảm và viết công thức suất điện động tự cảm",
+        "Tính được độ tự cảm của ống dây và năng lượng từ trường tích trữ trong nó",
+        "Vận dụng công thức tính năng lượng và mật độ năng lượng từ trường"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.tu-thong-dinh-luat-faraday-lenz"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Độ tự cảm",
+          "term_en": "Inductance",
+          "definition": "Đại lượng $L$ đặc trưng cho mạch, liên hệ từ thông riêng và dòng qua chính nó $\\Phi = Li$, đơn vị henry (H)."
+        },
+        {
+          "term_vi": "Suất điện động tự cảm",
+          "term_en": "Self-induced EMF",
+          "definition": "Suất điện động sinh ra do dòng qua chính mạch biến thiên, $e_{tc} = -L\\dfrac{\\Delta i}{\\Delta t}$."
+        },
+        {
+          "term_vi": "Năng lượng từ trường",
+          "term_en": "Magnetic energy",
+          "definition": "Năng lượng tích trữ trong ống dây có dòng $W = \\tfrac12 L i^2$."
+        }
+      ],
+      "content": "## Mạch tự cảm ứng chính nó\n\nDòng điện chạy qua cuộn dây tạo từ thông riêng $\\Phi = Li$ xuyên qua chính nó. Khi dòng biến thiên, từ thông riêng biến thiên và sinh suất điện động cảm ứng ngay trong mạch đó - gọi là **hiện tượng tự cảm**:\n\n$$e_{tc} = -L\\dfrac{\\Delta i}{\\Delta t}$$\n\nHệ số $L$ là **độ tự cảm**, chỉ phụ thuộc cấu tạo cuộn dây. Với ống dây dài $l$, tiết diện $S$, tổng $N$ vòng: $L = 4\\pi\\cdot10^{-7}\\dfrac{N^2}{l}S$.\n\nHiện tượng này giải thích tia lửa khi ngắt mạch có cuộn cảm: dòng giảm đột ngột làm $\\Delta i/\\Delta t$ rất lớn, sinh suất điện động tự cảm cao.\n\n## Năng lượng từ trường\n\nMuốn thiết lập dòng $i$ trong cuộn cảm, nguồn phải thắng suất điện động tự cảm, tốn công tích thành **năng lượng từ trường**:\n\n$$W = \\dfrac{1}{2}Li^2$$\n\nNăng lượng này thực chất chứa trong từ trường lấp đầy ống dây, với mật độ $w = \\dfrac{B^2}{8\\pi k}$ (dạng SI $w = B^2/2\\mu_0$). So sánh với tụ điện tích $W = \\tfrac12 CU^2$ thấy cuộn cảm là \"kho\" từ, tụ điện là \"kho\" điện.",
+      "formulas": [
+        "physics.thpt.cam-ung-dien-tu.do-tu-cam-ong-day",
+        "physics.thpt.cam-ung-dien-tu.tu-thong-rieng",
+        "physics.thpt.cam-ung-dien-tu.suat-dien-dong-tu-cam",
+        "physics.thpt.cam-ung-dien-tu.nang-luong-tu-truong-ong-day",
+        "physics.thpt.cam-ung-dien-tu.mat-do-nang-luong-tu-truong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Ống dây có độ tự cảm $L = 0{,}5$ H. Trong 0,2 s dòng điện qua ống tăng đều từ 1 A lên 3 A. Tính suất điện động tự cảm và năng lượng từ trường khi dòng đạt 3 A.",
+          "solution": "Suất điện động tự cảm phụ thuộc tốc độ biến thiên dòng:\n$$|e_{tc}| = L\\dfrac{|\\Delta i|}{\\Delta t} = 0{,}5\\cdot\\dfrac{3-1}{0{,}2} = 5\\ \\text{V}$$\nNăng lượng khi $i = 3$ A: $W = \\tfrac12 L i^2 = \\tfrac12\\cdot0{,}5\\cdot3^2 = 2{,}25$ J.",
+          "answer": "e_tc = 5 V; W = 2,25 J"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm năng lượng W = ½Li² với công thức tụ; cuộn cảm dùng dòng i, tụ dùng hiệu điện thế U.",
+        "Cho rằng suất điện động tự cảm phụ thuộc độ lớn dòng; thực ra nó phụ thuộc tốc độ biến thiên Δi/Δt.",
+        "Quên bình phương số vòng N khi tính độ tự cảm của ống dây (L tỉ lệ với N²)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "tu-cam",
+        "do-tu-cam",
+        "nang-luong-tu-truong"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dao-dong-dieu-hoa-dai-luong-dac-trung",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Dao động điều hoà",
+      "order": 1,
+      "title_vi": "Dao động điều hoà và các đại lượng đặc trưng",
+      "title_en": "Simple harmonic motion and its quantities",
+      "objectives": [
+        "Viết được phương trình li độ, vận tốc, gia tốc của dao động điều hoà và nêu quan hệ pha giữa chúng",
+        "Vận dụng được các hệ thức độc lập với thời gian giữa li độ, vận tốc, gia tốc",
+        "Tính được chu kì, tần số, tần số góc và lực kéo về"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Dao động điều hoà",
+          "term_en": "Simple harmonic motion",
+          "definition": "Dao động mà li độ là hàm cosin (hoặc sin) của thời gian: $x = A\\cos(\\omega t + \\varphi)$."
+        },
+        {
+          "term_vi": "Biên độ, pha",
+          "term_en": "Amplitude, phase",
+          "definition": "$A$ là li độ cực đại; $(\\omega t + \\varphi)$ là pha dao động, $\\varphi$ là pha ban đầu xác định trạng thái lúc $t=0$."
+        },
+        {
+          "term_vi": "Lực kéo về",
+          "term_en": "Restoring force",
+          "definition": "Lực luôn hướng về vị trí cân bằng, $F = -m\\omega^2 x$, tỉ lệ và ngược dấu với li độ."
+        }
+      ],
+      "content": "## Phương trình dao động\n\nVật dao động điều hoà có li độ biến thiên theo quy luật cosin:\n\n$$x = A\\cos(\\omega t + \\varphi)$$\n\nĐạo hàm liên tiếp cho vận tốc và gia tốc:\n\n$$v = -A\\omega\\sin(\\omega t+\\varphi), \\qquad a = -\\omega^2 x$$\n\nNhận xét then chốt về pha: $v$ **sớm pha** $\\pi/2$ so với $x$, còn $a$ **ngược pha** với $x$. Do đó khi vật qua vị trí cân bằng ($x=0$) thì tốc độ cực đại $v_{max}=\\omega A$; khi ở biên ($|x|=A$) thì $v=0$ nhưng gia tốc cực đại $a_{max}=\\omega^2 A$.\n\n## Hệ thức độc lập với thời gian\n\nVì $v$ và $x$ vuông pha, khử $t$ ta được các hệ thức rất mạnh, dùng khi đề không cho thời gian:\n\n$$A^2 = x^2 + \\dfrac{v^2}{\\omega^2}, \\qquad \\dfrac{a^2}{\\omega^4} + \\dfrac{v^2}{\\omega^2} = A^2$$\n\n## Chu kì, tần số và lực kéo về\n\nChu kì $T = \\dfrac{2\\pi}{\\omega}$, tần số $f = \\dfrac{1}{T} = \\dfrac{\\omega}{2\\pi}$. Gia tốc $a=-\\omega^2 x$ nên **lực kéo về** $F = ma = -m\\omega^2 x$: luôn hướng về vị trí cân bằng, đó là dấu hiệu nhận biết dao động điều hoà.",
+      "formulas": [
+        "physics.thpt.dao-dong-dieu-hoa.phuong-trinh-li-do",
+        "physics.thpt.dao-dong-dieu-hoa.phuong-trinh-van-toc",
+        "physics.thpt.dao-dong-dieu-hoa.phuong-trinh-gia-toc",
+        "physics.thpt.dao-dong-dieu-hoa.gia-tri-cuc-dai-v-a",
+        "physics.thpt.dao-dong-dieu-hoa.he-thuc-doc-lap-x-v",
+        "physics.thpt.dao-dong-dieu-hoa.he-thuc-doc-lap-v-a",
+        "physics.thpt.dao-dong-dieu-hoa.chu-ki-tan-so",
+        "physics.thpt.dao-dong-dieu-hoa.luc-keo-ve"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một vật dao động điều hoà với biên độ $A = 5$ cm, tần số góc $\\omega = 10$ rad/s. Khi li độ $x = 3$ cm, tính tốc độ của vật.",
+          "solution": "Dùng hệ thức độc lập với thời gian giữa x và v (không cần biết t):\n$$v = \\omega\\sqrt{A^2 - x^2} = 10\\sqrt{5^2 - 3^2} = 10\\cdot4 = 40\\ \\text{cm/s}$$",
+          "answer": "v = 40 cm/s"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng vận tốc cực đại ở biên; thực ra ở biên vật đổi chiều nên v = 0, tốc độ cực đại ở vị trí cân bằng.",
+        "Nhầm quan hệ pha: gia tốc ngược pha li độ (không phải vuông pha), còn vận tốc mới vuông pha với li độ.",
+        "Quên đồng nhất đơn vị khi dùng hệ thức độc lập (x và A cùng cm thì v ra cm/s)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dao-dong-dieu-hoa",
+        "li-do",
+        "van-toc",
+        "gia-toc"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.con-lac-lo-xo",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Dao động điều hoà",
+      "order": 2,
+      "title_vi": "Con lắc lò xo",
+      "title_en": "Spring pendulum",
+      "objectives": [
+        "Viết và vận dụng được công thức chu kì con lắc lò xo",
+        "Tính được lực đàn hồi, lực kéo về và chiều dài lò xo trong quá trình dao động",
+        "Xác định được chu kì khi ghép lò xo nối tiếp và song song"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dao-dong-dieu-hoa-dai-luong-dac-trung"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Con lắc lò xo",
+          "term_en": "Spring-mass system",
+          "definition": "Hệ vật nặng gắn vào lò xo, dao động điều hoà với $\\omega = \\sqrt{k/m}$, chu kì độc lập với biên độ."
+        },
+        {
+          "term_vi": "Lực kéo về và lực đàn hồi",
+          "term_en": "Restoring vs elastic force",
+          "definition": "Lực kéo về hướng về vị trí cân bằng; lực đàn hồi phụ thuộc độ biến dạng thực của lò xo, hai lực chỉ trùng nhau với con lắc nằm ngang."
+        },
+        {
+          "term_vi": "Độ biến dạng cân bằng",
+          "term_en": "Equilibrium extension",
+          "definition": "Với con lắc thẳng đứng $\\Delta l_0 = mg/k$, dùng để tính chu kì và chiều dài lò xo."
+        }
+      ],
+      "content": "## Chu kì con lắc lò xo\n\nVật khối lượng $m$ gắn lò xo độ cứng $k$ dao động điều hoà với\n\n$$T = 2\\pi\\sqrt{\\dfrac{m}{k}}$$\n\nĐiểm quan trọng: chu kì **không phụ thuộc biên độ** và không phụ thuộc cách treo (ngang hay đứng). Với con lắc thẳng đứng, lò xo giãn thêm $\\Delta l_0 = mg/k$ ở vị trí cân bằng, cho $T = 2\\pi\\sqrt{\\Delta l_0/g}$.\n\n## Lực kéo về khác lực đàn hồi\n\nĐây là chỗ dễ nhầm nhất. **Lực kéo về** luôn tính theo li độ so với vị trí cân bằng: $F_{kv} = -kx$. **Lực đàn hồi** tính theo độ biến dạng thực của lò xo: $F_{dh} = k|\\Delta l_0 + x|$ (con lắc đứng). Với con lắc nằm ngang $\\Delta l_0 = 0$ nên hai lực trùng nhau.\n\nChiều dài lò xo khi dao động: $l = l_0 + \\Delta l_0 + x$, biến thiên từ $l_{min}$ đến $l_{max}$.\n\n## Ghép lò xo\n\nGhép **nối tiếp** thì độ cứng giảm: $\\dfrac{1}{k} = \\dfrac{1}{k_1}+\\dfrac{1}{k_2}$ (chu kì tăng). Ghép **song song** thì độ cứng tăng: $k = k_1 + k_2$ (chu kì giảm). Lưu ý quy tắc ngược với ghép tụ điện.",
+      "formulas": [
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-chu-ki",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-thang-dung",
+        "physics.thpt.dao-dong-dieu-hoa.chieu-dai-lo-xo-dao-dong",
+        "physics.thpt.dao-dong-dieu-hoa.luc-dan-hoi-con-lac-lo-xo",
+        "physics.thpt.dao-dong-dieu-hoa.ghep-lo-xo",
+        "physics.thpt.dao-dong-dieu-hoa.luc-keo-ve"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Con lắc lò xo gồm vật $m = 200$ g và lò xo $k = 80$ N/m. Tính chu kì dao động. Lấy $\\pi^2 \\approx 10$.",
+          "solution": "Áp dụng công thức chu kì với $m = 0{,}2$ kg:\n$$T = 2\\pi\\sqrt{\\dfrac{m}{k}} = 2\\pi\\sqrt{\\dfrac{0{,}2}{80}} = 2\\pi\\cdot0{,}05 = 0{,}1\\pi \\approx 0{,}314\\ \\text{s}$$",
+          "answer": "T ≈ 0,314 s"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng chu kì phụ thuộc biên độ hay gia tốc trọng trường; với con lắc lò xo T chỉ phụ thuộc m và k.",
+        "Đồng nhất lực kéo về với lực đàn hồi ở con lắc thẳng đứng; hai lực chỉ trùng khi lò xo nằm ngang.",
+        "Áp dụng nhầm quy tắc ghép: nối tiếp lò xo làm mềm đi (k giảm), ngược với cảm nhận trực giác."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "con-lac-lo-xo",
+        "chu-ki",
+        "luc-dan-hoi"
+      ],
+      "video_lectures": [
+        {
+          "title": "Mô phỏng và thực nghiệm Con lắc đơn & Con lắc lò xo",
+          "url": "https://www.youtube.com/watch?v=yVkdfJ9PkRQ",
+          "provider": "MIT OpenCourseWare (Walter Lewin)",
+          "duration": "48:10",
+          "language": "en"
+        }
+      ],
+      "animations": [
+        {
+          "title": "PhET Con Lắc & Bảo Toàn Cơ Năng",
+          "type": "phet",
+          "url": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_all.html",
+          "description": "Khảo sát dao động điều hòa, vận tốc, gia tốc, thế năng và động năng theo thời gian thực"
+        }
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.con-lac-don",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Dao động điều hoà",
+      "order": 3,
+      "title_vi": "Con lắc đơn",
+      "title_en": "Simple pendulum",
+      "objectives": [
+        "Viết và vận dụng được công thức chu kì con lắc đơn dao động nhỏ",
+        "Tính được vận tốc và lực căng dây tại một vị trí bất kì bằng bảo toàn năng lượng",
+        "Giải thích được sự thay đổi chu kì theo nhiệt độ và độ cao"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dao-dong-dieu-hoa-dai-luong-dac-trung"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Con lắc đơn",
+          "term_en": "Simple pendulum",
+          "definition": "Vật nhỏ treo vào sợi dây nhẹ không giãn, dao động nhỏ điều hoà với $T = 2\\pi\\sqrt{l/g}$."
+        },
+        {
+          "term_vi": "Điều kiện dao động nhỏ",
+          "term_en": "Small-angle condition",
+          "definition": "Chỉ khi biên độ góc nhỏ ($\\alpha_0 \\le 10^\\circ$) thì $\\sin\\alpha \\approx \\alpha$ và dao động mới điều hoà."
+        },
+        {
+          "term_vi": "Lực căng dây",
+          "term_en": "Tension",
+          "definition": "Lực căng $\\tau = mg(3\\cos\\alpha - 2\\cos\\alpha_0)$, cực đại tại vị trí cân bằng, cực tiểu ở biên."
+        }
+      ],
+      "content": "## Chu kì con lắc đơn\n\nCon lắc đơn gồm vật nhỏ khối lượng $m$ treo vào dây dài $l$. Khi dao động với biên độ góc nhỏ, thành phần trọng lực đóng vai trò lực kéo về và con lắc dao động điều hoà với\n\n$$T = 2\\pi\\sqrt{\\dfrac{l}{g}}$$\n\nĐiểm đáng chú ý: chu kì **không phụ thuộc khối lượng** và không phụ thuộc biên độ (khi biên độ nhỏ), chỉ phụ thuộc chiều dài dây và gia tốc trọng trường. Đây là lí do con lắc từng dùng làm đồng hồ.\n\n## Vận tốc và lực căng dây\n\nCon lắc đơn dao động thì cả độ cao lẫn tốc độ đổi, nên dùng **bảo toàn cơ năng** tính vận tốc tại li độ góc $\\alpha$:\n\n$$v = \\sqrt{2gl(\\cos\\alpha - \\cos\\alpha_0)}$$\n\nvà lực căng dây $\\tau = mg(3\\cos\\alpha - 2\\cos\\alpha_0)$. Lực căng lớn nhất ở vị trí cân bằng (dây chịu cả trọng lực và lực hướng tâm), nhỏ nhất ở biên.\n\n## Ảnh hưởng nhiệt độ và độ cao\n\nNhiệt độ tăng làm dây dài ra ($l$ tăng) nên chu kì tăng, đồng hồ chạy chậm. Lên cao thì $g$ giảm nên chu kì cũng tăng. Các bài toán đồng hồ chạy nhanh/chậm dựa trên hai hiệu ứng này.",
+      "formulas": [
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-don-chu-ki",
+        "physics.thpt.dao-dong-dieu-hoa.phuong-trinh-con-lac-don",
+        "physics.thpt.dao-dong-dieu-hoa.van-toc-con-lac-don",
+        "physics.thpt.dao-dong-dieu-hoa.luc-cang-day-con-lac-don",
+        "physics.thpt.dao-dong-dieu-hoa.nang-luong-con-lac-don",
+        "physics.thpt.dao-dong-dieu-hoa.chu-ki-con-lac-don-theo-nhiet-do",
+        "physics.thpt.dao-dong-dieu-hoa.chu-ki-con-lac-don-theo-do-cao",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-don-luc-la"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Con lắc đơn dài $l = 1$ m dao động tại nơi có $g = 10$ m/s². Tính chu kì. Lấy $\\pi^2 = 10$.",
+          "solution": "Áp dụng công thức chu kì con lắc đơn:\n$$T = 2\\pi\\sqrt{\\dfrac{l}{g}} = 2\\pi\\sqrt{\\dfrac{1}{10}} = \\dfrac{2\\pi}{\\sqrt{10}} \\approx 1{,}99\\ \\text{s}$$\nVì $\\pi^2 = 10$ nên $T \\approx 2$ s.",
+          "answer": "T ≈ 2 s"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng chu kì con lắc đơn phụ thuộc khối lượng vật nặng; công thức chỉ chứa l và g.",
+        "Dùng công thức T = 2π√(l/g) cho biên độ lớn; khi biên độ lớn dao động không còn điều hoà.",
+        "Tính vận tốc bằng công thức dao động điều hoà v = ω√(A²-x²) với li độ dài; nên dùng bảo toàn năng lượng để tránh sai số biên độ lớn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "con-lac-don",
+        "chu-ki",
+        "luc-cang-day"
+      ],
+      "video_lectures": [
+        {
+          "title": "Mô phỏng và thực nghiệm Con lắc đơn & Con lắc lò xo",
+          "url": "https://www.youtube.com/watch?v=yVkdfJ9PkRQ",
+          "provider": "MIT OpenCourseWare (Walter Lewin)",
+          "duration": "48:10",
+          "language": "en"
+        }
+      ],
+      "animations": [
+        {
+          "title": "PhET Con Lắc & Bảo Toàn Cơ Năng",
+          "type": "phet",
+          "url": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_all.html",
+          "description": "Khảo sát dao động điều hòa, vận tốc, gia tốc, thế năng và động năng theo thời gian thực"
+        }
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.nang-luong-dao-dong-dieu-hoa",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Dao động điều hoà",
+      "order": 4,
+      "title_vi": "Năng lượng trong dao động điều hoà",
+      "title_en": "Energy in simple harmonic motion",
+      "objectives": [
+        "Viết được biểu thức động năng, thế năng và cơ năng của dao động điều hoà",
+        "Chứng minh được cơ năng bảo toàn và tỉ lệ với bình phương biên độ",
+        "Xác định được vị trí tại đó động năng bằng n lần thế năng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.con-lac-lo-xo"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Cơ năng",
+          "term_en": "Total energy",
+          "definition": "Tổng động năng và thế năng, bảo toàn: $W = \\tfrac12 kA^2 = \\tfrac12 m\\omega^2 A^2$."
+        },
+        {
+          "term_vi": "Chu kì biến đổi năng lượng",
+          "term_en": "Energy oscillation period",
+          "definition": "Động năng và thế năng biến thiên tuần hoàn với chu kì $T/2$, tần số gấp đôi dao động."
+        },
+        {
+          "term_vi": "Vị trí động năng bằng n lần thế năng",
+          "term_en": "Energy partition point",
+          "definition": "Tại li độ $x = \\pm\\dfrac{A}{\\sqrt{n+1}}$ thì $W_d = nW_t$."
+        }
+      ],
+      "content": "## Hai kho năng lượng đổi chỗ nhau\n\nTrong dao động điều hoà, **động năng** $W_d = \\tfrac12 mv^2$ và **thế năng** $W_t = \\tfrac12 kx^2$ liên tục chuyển hoá. Khi vật ở biên, toàn bộ là thế năng; khi qua vị trí cân bằng, toàn bộ là động năng. Tổng của chúng - **cơ năng** - luôn không đổi (nếu không ma sát):\n\n$$W = W_d + W_t = \\dfrac{1}{2}kA^2 = \\dfrac{1}{2}m\\omega^2 A^2$$\n\nCơ năng **tỉ lệ với bình phương biên độ**: tăng biên độ gấp đôi thì năng lượng gấp bốn. Đây là hệ quả rất hay dùng trong bài toán.\n\n## Tần số biến đổi năng lượng\n\nVì $W_t = \\tfrac12 kA^2\\cos^2(\\omega t+\\varphi)$ chứa $\\cos^2$, nó biến thiên với tần số **gấp đôi** dao động, tức chu kì $T/2$. Động năng cũng vậy. Nhiều bạn quên điều này khi tính khoảng thời gian giữa hai lần động năng bằng thế năng.\n\n## Vị trí phân chia năng lượng\n\nCho $W_d = nW_t$ và dùng $W = W_d + W_t$ suy ra:\n\n$$x = \\pm\\dfrac{A}{\\sqrt{n+1}}$$\n\nVí dụ $W_d = W_t$ (n = 1) tại $x = \\pm A/\\sqrt2$. Công thức này giúp giải nhanh nhiều câu trắc nghiệm.",
+      "formulas": [
+        "physics.thpt.dao-dong-dieu-hoa.dong-nang-dao-dong",
+        "physics.thpt.dao-dong-dieu-hoa.the-nang-dao-dong",
+        "physics.thpt.dao-dong-dieu-hoa.co-nang-dao-dong",
+        "physics.thpt.dao-dong-dieu-hoa.chu-ki-bien-doi-nang-luong",
+        "physics.thpt.dao-dong-dieu-hoa.vi-tri-dong-nang-bang-n-lan-the-nang",
+        "physics.thpt.dao-dong-dieu-hoa.quang-duong-trong-mot-chu-ki",
+        "physics.thpt.dao-dong-dieu-hoa.quang-duong-lon-nhat-nho-nhat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Con lắc lò xo $k = 100$ N/m dao động với biên độ $A = 4$ cm. Tính cơ năng và tìm li độ tại đó động năng bằng ba lần thế năng.",
+          "solution": "Cơ năng: $W = \\tfrac12 k A^2 = \\tfrac12\\cdot100\\cdot0{,}04^2 = 0{,}08$ J.\nĐộng năng bằng 3 lần thế năng ($n=3$): $x = \\pm\\dfrac{A}{\\sqrt{n+1}} = \\pm\\dfrac{4}{\\sqrt4} = \\pm2$ cm.",
+          "answer": "W = 0,08 J; x = ±2 cm"
+        }
+      ],
+      "common_mistakes": [
+        "Quên rằng động năng và thế năng biến thiên với chu kì T/2 (tần số gấp đôi), nên tính sai thời gian.",
+        "Cho rằng cơ năng tỉ lệ với biên độ; thực ra cơ năng tỉ lệ với bình phương biên độ.",
+        "Lẫn thế năng đàn hồi (theo độ biến dạng lò xo) với thế năng dao động (theo li độ) ở con lắc thẳng đứng."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nang-luong-dao-dong",
+        "co-nang",
+        "dong-nang",
+        "the-nang"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dao-dong-tat-dan-cuong-buc-cong-huong",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Dao động điều hoà",
+      "order": 5,
+      "title_vi": "Dao động tắt dần, dao động cưỡng bức và cộng hưởng",
+      "title_en": "Damped, forced oscillation and resonance",
+      "objectives": [
+        "Phân biệt được dao động tắt dần, duy trì, cưỡng bức và dao động riêng",
+        "Tính được độ giảm biên độ và quãng đường vật đi được cho tới khi dừng trong dao động tắt dần do ma sát",
+        "Nêu được điều kiện và ứng dụng của hiện tượng cộng hưởng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.nang-luong-dao-dong-dieu-hoa"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Dao động tắt dần",
+          "term_en": "Damped oscillation",
+          "definition": "Dao động có biên độ và cơ năng giảm dần theo thời gian do lực cản môi trường."
+        },
+        {
+          "term_vi": "Dao động cưỡng bức",
+          "term_en": "Forced oscillation",
+          "definition": "Dao động dưới tác dụng ngoại lực tuần hoàn; khi ổn định, tần số bằng tần số ngoại lực."
+        },
+        {
+          "term_vi": "Cộng hưởng",
+          "term_en": "Resonance",
+          "definition": "Hiện tượng biên độ cưỡng bức cực đại khi tần số ngoại lực bằng tần số riêng của hệ."
+        }
+      ],
+      "content": "## Vì sao dao động thực tắt dần\n\nDao động điều hoà lí tưởng giữ nguyên biên độ mãi mãi, nhưng thực tế luôn có lực cản (ma sát, không khí). Lực cản tiêu hao cơ năng nên biên độ **giảm dần** - đó là **dao động tắt dần**. Với con lắc lò xo trên mặt phẳng ngang có ma sát hệ số $\\mu$, sau mỗi nửa chu kì biên độ giảm một lượng không đổi:\n\n$$\\Delta A = \\dfrac{2\\mu mg}{k}$$\n\nVật dừng lại khi cơ năng còn lại không thắng nổi ma sát nghỉ. Tổng quãng đường đi được đến khi dừng tính từ bảo toàn năng lượng: $S = \\dfrac{kA^2}{2\\mu mg}$.\n\n## Duy trì, cưỡng bức và cộng hưởng\n\nMuốn dao động không tắt, ta bù năng lượng. Nếu bù đúng phần mất mà không đổi tần số riêng, ta có **dao động duy trì** (như đồng hồ quả lắc). Nếu tác dụng ngoại lực tuần hoàn tần số $f$, hệ dao động **cưỡng bức** với chính tần số $f$ đó.\n\n**Cộng hưởng** xảy ra khi $f = f_0$ (tần số riêng): biên độ đạt cực đại. Cộng hưởng có lợi (đàn, hộp cộng hưởng) nhưng cũng có hại (cầu rung sập, máy móc rung mạnh), nên kĩ thuật thường tránh cho tần số cưỡng bức trùng tần số riêng.",
+      "formulas": [
+        "physics.thpt.dao-dong-dieu-hoa.do-giam-bien-do-tat-dan",
+        "physics.thpt.dao-dong-dieu-hoa.quang-duong-tong-cong-tat-dan",
+        "physics.thpt.dao-dong-dieu-hoa.dao-dong-cuong-buc-cong-huong",
+        "physics.thpt.dao-dong-dieu-hoa.toc-do-trung-binh"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Con lắc lò xo $k = 40$ N/m, vật $m = 100$ g, dao động tắt dần trên mặt ngang có hệ số ma sát $\\mu = 0{,}1$, biên độ đầu $A = 5$ cm. Lấy $g = 10$ m/s². Tính tổng quãng đường vật đi được đến khi dừng hẳn.",
+          "solution": "Toàn bộ cơ năng ban đầu biến thành công của lực ma sát trên quãng đường S:\n$$\\tfrac12 k A^2 = \\mu m g\\, S \\Rightarrow S = \\dfrac{k A^2}{2\\mu m g} = \\dfrac{40\\cdot0{,}05^2}{2\\cdot0{,}1\\cdot0{,}1\\cdot10} = 0{,}5\\ \\text{m}$$",
+          "answer": "S = 0,5 m"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng chu kì dao động tắt dần thay đổi nhiều; thực ra chu kì gần như không đổi, chỉ biên độ giảm.",
+        "Nhầm cộng hưởng xảy ra khi ngoại lực mạnh nhất; cộng hưởng xảy ra khi tần số ngoại lực bằng tần số riêng, không phụ thuộc độ lớn lực.",
+        "Quên đổi biên độ ra mét khi tính quãng đường, hoặc dùng ½kA² với A tính bằng cm."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "tat-dan",
+        "cuong-buc",
+        "cong-huong"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.tong-hop-hai-dao-dong-dieu-hoa",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Dao động điều hoà",
+      "order": 6,
+      "title_vi": "Tổng hợp hai dao động điều hoà cùng phương, cùng tần số",
+      "title_en": "Superposition of two harmonic oscillations",
+      "objectives": [
+        "Vận dụng được phương pháp giản đồ vectơ (Fre-nen) để tổng hợp hai dao động cùng phương cùng tần số",
+        "Tính được biên độ và pha ban đầu của dao động tổng hợp",
+        "Biện luận được biên độ tổng hợp cực đại, cực tiểu theo độ lệch pha"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dao-dong-dieu-hoa-dai-luong-dac-trung"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Giản đồ Fre-nen",
+          "term_en": "Phasor diagram",
+          "definition": "Biểu diễn mỗi dao động bằng một vectơ quay; dao động tổng hợp là vectơ tổng."
+        },
+        {
+          "term_vi": "Biên độ tổng hợp",
+          "term_en": "Resultant amplitude",
+          "definition": "$A^2 = A_1^2 + A_2^2 + 2A_1 A_2\\cos\\Delta\\varphi$, phụ thuộc độ lệch pha."
+        },
+        {
+          "term_vi": "Độ lệch pha",
+          "term_en": "Phase difference",
+          "definition": "$\\Delta\\varphi = \\varphi_2 - \\varphi_1$; cùng pha thì biên độ cộng, ngược pha thì trừ."
+        }
+      ],
+      "content": "## Vì sao dùng giản đồ vectơ\n\nCộng hai hàm cosin cùng tần số $x_1 = A_1\\cos(\\omega t+\\varphi_1)$ và $x_2 = A_2\\cos(\\omega t+\\varphi_2)$ bằng lượng giác rất dài. Fre-nen nhận ra mỗi dao động ứng với một **vectơ quay** có độ dài bằng biên độ và góc bằng pha ban đầu. Vì hai vectơ quay cùng tốc độ $\\omega$, tổng của chúng cũng quay với $\\omega$, tức dao động tổng hợp cũng điều hoà cùng tần số.\n\n## Công thức tổng hợp\n\nBiên độ tổng hợp theo định lí hàm cosin:\n\n$$A^2 = A_1^2 + A_2^2 + 2A_1 A_2\\cos\\Delta\\varphi$$\n\nvà pha ban đầu:\n\n$$\\tan\\varphi = \\dfrac{A_1\\sin\\varphi_1 + A_2\\sin\\varphi_2}{A_1\\cos\\varphi_1 + A_2\\cos\\varphi_2}$$\n\n## Biện luận biên độ\n\nTừ công thức thấy ngay:\n- **Cùng pha** ($\\Delta\\varphi = 0$): $A = A_1 + A_2$ - cực đại.\n- **Ngược pha** ($\\Delta\\varphi = \\pi$): $A = |A_1 - A_2|$ - cực tiểu.\n- **Vuông pha** ($\\Delta\\varphi = \\pi/2$): $A = \\sqrt{A_1^2 + A_2^2}$.\n\nNói chung $|A_1 - A_2| \\le A \\le A_1 + A_2$. Kết quả này rất hay dùng để tìm biên độ lớn nhất, nhỏ nhất khi cho một biên độ thay đổi.",
+      "formulas": [
+        "physics.thpt.dao-dong-dieu-hoa.tong-hop-hai-dao-dong-bien-do",
+        "physics.thpt.dao-dong-dieu-hoa.tong-hop-hai-dao-dong-pha",
+        "physics.thpt.dao-dong-dieu-hoa.dieu-kien-bien-do-tong-hop"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai dao động cùng phương cùng tần số: $x_1 = 3\\cos(\\omega t)$ cm và $x_2 = 4\\cos(\\omega t + \\pi/2)$ cm. Tính biên độ dao động tổng hợp.",
+          "solution": "Độ lệch pha $\\Delta\\varphi = \\pi/2$ (vuông pha), $\\cos\\Delta\\varphi = 0$:\n$$A = \\sqrt{A_1^2 + A_2^2} = \\sqrt{3^2 + 4^2} = 5\\ \\text{cm}$$",
+          "answer": "A = 5 cm"
+        }
+      ],
+      "common_mistakes": [
+        "Cộng thẳng hai biên độ A = A1 + A2 bất kể độ lệch pha; chỉ đúng khi hai dao động cùng pha.",
+        "Nhầm dấu độ lệch pha khi tính, dẫn tới lẫn cực đại với cực tiểu của biên độ.",
+        "Quên rằng biên độ tổng hợp luôn nằm trong đoạn [|A1−A2|, A1+A2], nên chọn đáp án nằm ngoài khoảng này."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "tong-hop-dao-dong",
+        "gian-do-fre-nen",
+        "bien-do"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.song-co-phuong-trinh-song",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Sóng cơ",
+      "order": 1,
+      "title_vi": "Sóng cơ và phương trình sóng",
+      "title_en": "Mechanical waves and the wave equation",
+      "objectives": [
+        "Nêu được khái niệm sóng cơ, phân biệt sóng dọc và sóng ngang",
+        "Vận dụng được công thức liên hệ bước sóng, tốc độ và chu kì",
+        "Viết được phương trình sóng và tính độ lệch pha giữa hai điểm trên phương truyền"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dao-dong-dieu-hoa-dai-luong-dac-trung"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Sóng cơ",
+          "term_en": "Mechanical wave",
+          "definition": "Dao động cơ lan truyền trong môi trường vật chất; phần tử môi trường chỉ dao động tại chỗ, không truyền đi theo sóng."
+        },
+        {
+          "term_vi": "Bước sóng",
+          "term_en": "Wavelength",
+          "definition": "Quãng đường sóng truyền trong một chu kì, $\\lambda = vT = v/f$; cũng là khoảng cách hai điểm gần nhau dao động cùng pha."
+        },
+        {
+          "term_vi": "Độ lệch pha",
+          "term_en": "Phase difference",
+          "definition": "Hai điểm cách nhau d trên phương truyền lệch pha $\\Delta\\varphi = \\dfrac{2\\pi d}{\\lambda}$."
+        }
+      ],
+      "content": "## Sóng truyền cái gì\n\nKhi một phần tử môi trường dao động, nó kéo phần tử bên cạnh dao động theo, tạo thành **sóng cơ** lan truyền. Điều quan trọng: sóng **truyền pha dao động và năng lượng**, còn các phần tử vật chất chỉ dao động quanh vị trí cân bằng, không bị cuốn đi. Nếu phần tử dao động vuông góc phương truyền là **sóng ngang**, dao động dọc theo phương truyền là **sóng dọc**.\n\n## Bước sóng và các đại lượng\n\nTrong một chu kì $T$, sóng đi được một **bước sóng**:\n\n$$\\lambda = vT = \\dfrac{v}{f}$$\n\nBước sóng cũng là khoảng cách giữa hai điểm gần nhất dao động **cùng pha**. Tốc độ $v$ phụ thuộc môi trường (không phụ thuộc nguồn), còn tần số $f$ do nguồn quyết định.\n\n## Phương trình sóng và độ lệch pha\n\nNếu nguồn O dao động $u_O = A\\cos\\omega t$ thì điểm M cách O đoạn $d$ dao động **trễ** hơn:\n\n$$u_M = A\\cos\\!\\left(\\omega t - \\dfrac{2\\pi d}{\\lambda}\\right)$$\n\nHai điểm cách nhau $d$ lệch pha $\\Delta\\varphi = \\dfrac{2\\pi d}{\\lambda}$: cùng pha khi $d = k\\lambda$, ngược pha khi $d = (k+0{,}5)\\lambda$, vuông pha khi $d = (2k+1)\\lambda/4$.",
+      "formulas": [
+        "physics.thpt.song-co.buoc-song",
+        "physics.thpt.song-co.phuong-trinh-song",
+        "physics.thpt.song-co.do-lech-pha-hai-diem",
+        "physics.thpt.song-co.toc-do-song-tren-day"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một sóng cơ có tần số 20 Hz truyền với tốc độ 8 m/s. Tính bước sóng và độ lệch pha giữa hai điểm cách nhau 30 cm trên phương truyền.",
+          "solution": "Bước sóng: $\\lambda = v/f = 8/20 = 0{,}4$ m = 40 cm.\nĐộ lệch pha giữa hai điểm cách 30 cm:\n$$\\Delta\\varphi = \\dfrac{2\\pi d}{\\lambda} = \\dfrac{2\\pi\\cdot30}{40} = 1{,}5\\pi\\ \\text{rad}$$",
+          "answer": "λ = 40 cm; Δφ = 1,5π rad"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng các phần tử môi trường bị sóng cuốn đi; thực ra chúng chỉ dao động tại chỗ.",
+        "Nhầm bước sóng với biên độ hoặc với quãng đường sóng đi trong một giây; bước sóng là quãng đường trong một chu kì.",
+        "Quên đổi đơn vị đồng nhất giữa d và λ khi tính độ lệch pha."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "song-co",
+        "buoc-song",
+        "phuong-trinh-song"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.giao-thoa-song-co",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Sóng cơ",
+      "order": 2,
+      "title_vi": "Giao thoa sóng cơ",
+      "title_en": "Interference of mechanical waves",
+      "objectives": [
+        "Nêu được điều kiện giao thoa và khái niệm hai nguồn kết hợp",
+        "Xác định được vị trí cực đại, cực tiểu giao thoa theo hiệu đường đi",
+        "Tính được số điểm cực đại, cực tiểu trên đoạn nối hai nguồn"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.song-co-phuong-trinh-song"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nguồn kết hợp",
+          "term_en": "Coherent sources",
+          "definition": "Hai nguồn cùng tần số và có hiệu số pha không đổi theo thời gian."
+        },
+        {
+          "term_vi": "Cực đại giao thoa",
+          "term_en": "Constructive interference",
+          "definition": "Vị trí hai sóng cùng pha, tăng cường: với hai nguồn cùng pha $d_2 - d_1 = k\\lambda$."
+        },
+        {
+          "term_vi": "Cực tiểu giao thoa",
+          "term_en": "Destructive interference",
+          "definition": "Vị trí hai sóng ngược pha, triệt tiêu: với hai nguồn cùng pha $d_2 - d_1 = (k+0{,}5)\\lambda$."
+        }
+      ],
+      "content": "## Khi hai sóng gặp nhau\n\nCho hai nguồn **kết hợp** (cùng tần số, hiệu pha không đổi) truyền sóng gặp nhau, tại mỗi điểm hai sóng chồng chất. Kết quả là những vùng dao động rất mạnh xen kẽ vùng đứng yên, ổn định theo thời gian - đó là **giao thoa**. Biên độ tại một điểm phụ thuộc hiệu đường đi $\\Delta d = d_2 - d_1$.\n\n## Điều kiện cực đại, cực tiểu\n\nVới hai nguồn **cùng pha**:\n\n$$\\text{Cực đại}: \\ d_2 - d_1 = k\\lambda; \\qquad \\text{Cực tiểu}: \\ d_2 - d_1 = \\left(k+\\dfrac12\\right)\\lambda$$\n\nTại cực đại hai sóng cùng pha nên biên độ $2A$; tại cực tiểu ngược pha nên triệt tiêu. Nếu hai nguồn **ngược pha** thì điều kiện đảo lại.\n\n## Đếm số cực đại, cực tiểu\n\nTrên đoạn nối hai nguồn cách nhau $S_1S_2 = L$, số cực đại là số giá trị nguyên $k$ thoả\n\n$$-\\dfrac{L}{\\lambda} < k < \\dfrac{L}{\\lambda}$$\n\n(với hai nguồn cùng pha). Số cực tiểu là số nửa nguyên trong cùng khoảng. Đây là dạng bài đếm điểm rất thường gặp; nhớ vẽ trục và xét dấu bất đẳng thức cẩn thận.",
+      "formulas": [
+        "physics.thpt.song-co.phuong-trinh-giao-thoa-hai-nguon-cung-pha",
+        "physics.thpt.song-co.bien-do-giao-thoa",
+        "physics.thpt.song-co.dieu-kien-cuc-dai-giao-thoa-cung-pha",
+        "physics.thpt.song-co.dieu-kien-cuc-tieu-giao-thoa-cung-pha",
+        "physics.thpt.song-co.giao-thoa-hai-nguon-nguoc-pha",
+        "physics.thpt.song-co.so-cuc-dai-tren-doan-noi-hai-nguon",
+        "physics.thpt.song-co.khoang-cach-hai-cuc-dai-lien-tiep"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai nguồn kết hợp cùng pha cách nhau $S_1S_2 = 16$ cm, bước sóng $\\lambda = 3$ cm. Tính số điểm cực đại trên đoạn nối hai nguồn.",
+          "solution": "Số cực đại là số nguyên k thoả $-L/\\lambda < k < L/\\lambda$:\n$$-\\dfrac{16}{3} < k < \\dfrac{16}{3} \\Rightarrow -5{,}33 < k < 5{,}33$$\nk nguyên từ −5 đến 5, tổng cộng 11 giá trị.",
+          "answer": "11 điểm cực đại"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy hai nguồn bất kì làm nguồn kết hợp; chỉ hai nguồn cùng tần số và hiệu pha không đổi mới giao thoa ổn định.",
+        "Nhầm điều kiện cực đại và cực tiểu khi hai nguồn ngược pha; lúc đó công thức đảo lại.",
+        "Dùng dấu ≤ thay vì dấu < khi đếm điểm trên đoạn thẳng nối hai nguồn, làm đếm dư hai điểm ở đầu mút."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "giao-thoa",
+        "cuc-dai",
+        "cuc-tieu"
+      ],
+      "video_lectures": [
+        {
+          "title": "Thí nghiệm giao thoa khe Young ánh sáng laser thực tế",
+          "url": "https://www.youtube.com/watch?v=Iuv6hY6zsd0",
+          "provider": "Veritasium",
+          "duration": "08:12",
+          "language": "en"
+        }
+      ],
+      "animations": [
+        {
+          "title": "PhET Giao thoa sóng và ánh sáng",
+          "type": "phet",
+          "url": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_all.html",
+          "description": "Mô phỏng sóng nước, sóng âm và sóng ánh sáng đi qua 2 khe hẹp"
+        }
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.song-dung",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Sóng cơ",
+      "order": 3,
+      "title_vi": "Sóng dừng",
+      "title_en": "Standing waves",
+      "objectives": [
+        "Giải thích được sự hình thành sóng dừng do giao thoa sóng tới và sóng phản xạ",
+        "Vận dụng được điều kiện sóng dừng trên dây hai đầu cố định và một đầu tự do",
+        "Xác định được vị trí, khoảng cách nút và bụng sóng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.song-co-phuong-trinh-song"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Sóng dừng",
+          "term_en": "Standing wave",
+          "definition": "Sóng do giao thoa của sóng tới và sóng phản xạ, có những điểm đứng yên (nút) và dao động cực đại (bụng) cố định."
+        },
+        {
+          "term_vi": "Nút và bụng",
+          "term_en": "Node and antinode",
+          "definition": "Nút là điểm luôn đứng yên, bụng là điểm dao động biên độ cực đại; khoảng cách hai nút liền kề là $\\lambda/2$."
+        },
+        {
+          "term_vi": "Điều kiện sóng dừng",
+          "term_en": "Standing-wave condition",
+          "definition": "Hai đầu cố định: $l = k\\dfrac{\\lambda}{2}$; một đầu tự do: $l = (2k+1)\\dfrac{\\lambda}{4}$."
+        }
+      ],
+      "content": "## Sóng dừng hình thành thế nào\n\nKhi sóng truyền trên dây gặp đầu cố định, nó phản xạ ngược lại. Sóng tới và sóng phản xạ cùng tần số, truyền ngược chiều, giao thoa với nhau tạo ra **sóng dừng**: có những điểm luôn đứng yên (**nút**) xen kẽ điểm dao động mạnh nhất (**bụng**), và các vị trí này **cố định** theo thời gian.\n\nKhoảng cách giữa hai nút liền kề (hoặc hai bụng liền kề) bằng $\\lambda/2$; khoảng cách nút tới bụng gần nhất bằng $\\lambda/4$.\n\n## Điều kiện sóng dừng\n\nSóng dừng chỉ hình thành khi chiều dài dây ăn khớp với bước sóng.\n\n- **Hai đầu cố định** (hai đầu là nút): $l = k\\dfrac{\\lambda}{2}$, số bụng bằng $k$, số nút bằng $k+1$.\n- **Một đầu cố định, một đầu tự do** (đầu tự do là bụng): $l = (2k+1)\\dfrac{\\lambda}{4}$.\n\n## Ứng dụng\n\nSóng dừng là cơ sở của nhạc cụ dây và ống sáo. Tần số nhỏ nhất tạo sóng dừng gọi là **hoạ âm cơ bản**; các tần số bội của nó là **hoạ âm** bậc cao, quyết định âm sắc. Dây đàn hai đầu cố định cho họa âm $f_k = k\\dfrac{v}{2l}$; ống sáo một đầu kín cho $f = (2k+1)\\dfrac{v}{4l}$.",
+      "formulas": [
+        "physics.thpt.song-co.song-dung-hai-dau-co-dinh",
+        "physics.thpt.song-co.song-dung-mot-dau-tu-do",
+        "physics.thpt.song-co.khoang-cach-nut-bung",
+        "physics.thpt.song-co.bien-do-song-dung",
+        "physics.thpt.song-co.hoa-am-day-dan",
+        "physics.thpt.song-co.hoa-am-ong-sao"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Dây đàn hồi hai đầu cố định dài 60 cm, trên dây có sóng dừng với 3 bụng sóng. Tính bước sóng.",
+          "solution": "Hai đầu cố định, số bụng $k = 3$ nên $l = k\\dfrac{\\lambda}{2}$:\n$$\\lambda = \\dfrac{2l}{k} = \\dfrac{2\\cdot60}{3} = 40\\ \\text{cm}$$",
+          "answer": "λ = 40 cm"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng khoảng cách hai nút liền kề bằng bước sóng; thực ra bằng nửa bước sóng.",
+        "Áp dụng nhầm điều kiện hai đầu cố định cho dây một đầu tự do; đầu tự do là bụng nên công thức khác.",
+        "Đếm nhầm số nút và số bụng: hai đầu cố định có số nút nhiều hơn số bụng đúng một."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "song-dung",
+        "nut-bung",
+        "hoa-am"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.song-am-muc-cuong-do-am",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VI: Sóng cơ",
+      "order": 4,
+      "title_vi": "Sóng âm và mức cường độ âm",
+      "title_en": "Sound waves and sound intensity level",
+      "objectives": [
+        "Nêu được các đặc trưng vật lí và sinh lí của âm",
+        "Vận dụng được công thức cường độ âm và mức cường độ âm",
+        "Giải được bài toán so sánh mức cường độ âm tại các điểm khác nhau"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.song-co-phuong-trinh-song"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Cường độ âm",
+          "term_en": "Sound intensity",
+          "definition": "Năng lượng sóng âm truyền qua một đơn vị diện tích vuông góc phương truyền trong một đơn vị thời gian, $I = P/(4\\pi r^2)$ với nguồn điểm."
+        },
+        {
+          "term_vi": "Mức cường độ âm",
+          "term_en": "Sound intensity level",
+          "definition": "Đại lượng $L = 10\\lg\\dfrac{I}{I_0}$ (dB) so sánh cường độ âm với ngưỡng nghe $I_0 = 10^{-12}$ W/m²."
+        },
+        {
+          "term_vi": "Đặc trưng sinh lí",
+          "term_en": "Physiological attributes",
+          "definition": "Độ cao gắn với tần số, độ to gắn với mức cường độ âm, âm sắc gắn với đồ thị dao động."
+        }
+      ],
+      "content": "## Âm là sóng cơ\n\nÂm là sóng cơ lan truyền trong các môi trường rắn, lỏng, khí (không truyền trong chân không). Tai người nghe được âm tần số 16 Hz đến 20000 Hz. Âm có ba đặc trưng **vật lí** (tần số, cường độ, đồ thị dao động) gắn với ba đặc trưng **sinh lí** (độ cao, độ to, âm sắc).\n\n## Cường độ âm và định luật giảm theo khoảng cách\n\n**Cường độ âm** $I$ là công suất âm qua một đơn vị diện tích. Với nguồn điểm phát đều ra mọi hướng, năng lượng trải trên mặt cầu bán kính $r$:\n\n$$I = \\dfrac{P}{4\\pi r^2}$$\n\nnên cường độ giảm theo bình phương khoảng cách. Đây là chìa khoá của các bài so sánh hai điểm: $\\dfrac{I_1}{I_2} = \\dfrac{r_2^2}{r_1^2}$.\n\n## Mức cường độ âm\n\nTai người cảm nhận theo thang loga, nên ta dùng **mức cường độ âm**:\n\n$$L = 10\\lg\\dfrac{I}{I_0}\\ (\\text{dB}), \\qquad I_0 = 10^{-12}\\ \\text{W/m}^2$$\n\nHệ quả hay dùng: hiệu mức cường độ âm giữa hai điểm $L_1 - L_2 = 10\\lg\\dfrac{I_1}{I_2} = 20\\lg\\dfrac{r_2}{r_1}$. Nhờ thang loga, cường độ tăng 10 lần thì mức chỉ tăng 10 dB.",
+      "formulas": [
+        "physics.thpt.song-co.cuong-do-am",
+        "physics.thpt.song-co.muc-cuong-do-am",
+        "physics.thpt.song-co.hieu-muc-cuong-do-am"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tại điểm cách nguồn âm điểm 1 m, mức cường độ âm là 70 dB. Tính mức cường độ âm tại điểm cách nguồn 10 m (môi trường không hấp thụ).",
+          "solution": "Cường độ giảm theo bình phương khoảng cách, hiệu mức cường độ âm:\n$$L_1 - L_2 = 20\\lg\\dfrac{r_2}{r_1} = 20\\lg\\dfrac{10}{1} = 20\\ \\text{dB}$$\nVậy $L_2 = 70 - 20 = 50$ dB.",
+          "answer": "L₂ = 50 dB"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng cường độ âm giảm tỉ lệ nghịch với khoảng cách; thực ra giảm theo bình phương khoảng cách.",
+        "Nhầm cường độ âm với mức cường độ âm; cường độ đo bằng W/m², mức đo bằng dB theo thang loga.",
+        "Cộng trực tiếp mức cường độ âm (dB) khi có nhiều nguồn; phải cộng cường độ I rồi mới lấy loga."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "song-am",
+        "cuong-do-am",
+        "muc-cuong-do-am"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.dai-cuong-dong-dien-xoay-chieu",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Dòng điện xoay chiều",
+      "order": 1,
+      "title_vi": "Đại cương về dòng điện xoay chiều và giá trị hiệu dụng",
+      "title_en": "Alternating current fundamentals and RMS values",
+      "objectives": [
+        "Giải thích được nguyên tắc tạo ra dòng điện xoay chiều bằng khung dây quay trong từ trường",
+        "Phân biệt và tính được giá trị cực đại, giá trị hiệu dụng của điện áp và dòng điện",
+        "Nêu được quan hệ pha giữa u và i trên từng phần tử R, L, C và tính cảm kháng, dung kháng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.tu-thong-dinh-luat-faraday-lenz"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Dòng điện xoay chiều",
+          "term_en": "Alternating current",
+          "definition": "Dòng điện có cường độ biến thiên điều hoà theo thời gian, $i = I_0\\cos(\\omega t + \\varphi)$."
+        },
+        {
+          "term_vi": "Giá trị hiệu dụng",
+          "term_en": "RMS value",
+          "definition": "Giá trị $I = I_0/\\sqrt2$ (và $U = U_0/\\sqrt2$), tương ứng dòng một chiều toả cùng nhiệt lượng; là giá trị mọi dụng cụ đo hiển thị."
+        },
+        {
+          "term_vi": "Cảm kháng, dung kháng",
+          "term_en": "Reactance",
+          "definition": "$Z_L = \\omega L$ cản dòng qua cuộn cảm, $Z_C = \\dfrac{1}{\\omega C}$ cản dòng qua tụ; đơn vị ôm."
+        }
+      ],
+      "content": "## Tạo ra dòng xoay chiều\n\nCho khung dây quay đều trong từ trường, từ thông qua khung biến thiên điều hoà nên xuất hiện suất điện động cảm ứng xoay chiều:\n\n$$e = E_0\\cos(\\omega t + \\varphi), \\qquad E_0 = NBS\\omega$$\n\nĐây là nguyên tắc của máy phát điện. Nối khung với mạch ngoài ta được dòng điện xoay chiều.\n\n## Giá trị hiệu dụng\n\nDòng xoay chiều đổi chiều liên tục nên giá trị trung bình bằng 0; ta đặc trưng nó bằng **giá trị hiệu dụng**, định nghĩa từ nhiệt lượng toả ra:\n\n$$I = \\dfrac{I_0}{\\sqrt2}, \\qquad U = \\dfrac{U_0}{\\sqrt2}$$\n\nAmpe kế và vôn kế xoay chiều đều chỉ giá trị hiệu dụng. Khi nói \"điện 220 V\" là nói giá trị hiệu dụng, còn điện áp cực đại là $220\\sqrt2 \\approx 311$ V.\n\n## Quan hệ pha trên R, L, C\n\n- Điện trở R: $u$ **cùng pha** $i$.\n- Cuộn cảm L: $u$ **sớm pha** $\\pi/2$ so với $i$, cản trở bằng cảm kháng $Z_L = \\omega L$.\n- Tụ điện C: $u$ **trễ pha** $\\pi/2$ so với $i$, cản trở bằng dung kháng $Z_C = 1/(\\omega C)$.\n\nNhớ câu \"L sớm, C trễ\" giúp không nhầm dấu độ lệch pha khi ghép mạch.",
+      "formulas": [
+        "physics.thpt.dien-xoay-chieu.tu-thong-va-sdd-khung-quay",
+        "physics.thpt.dien-xoay-chieu.bieu-thuc-u-va-i",
+        "physics.thpt.dien-xoay-chieu.gia-tri-hieu-dung",
+        "physics.thpt.dien-xoay-chieu.gia-tri-trung-binh",
+        "physics.thpt.dien-xoay-chieu.cam-khang",
+        "physics.thpt.dien-xoay-chieu.dung-khang",
+        "physics.thpt.dien-xoay-chieu.mach-chi-chua-r",
+        "physics.thpt.dien-xoay-chieu.mach-chi-chua-l",
+        "physics.thpt.dien-xoay-chieu.mach-chi-chua-c",
+        "physics.thpt.dien-xoay-chieu.tan-so-may-phat-mot-pha"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cuộn cảm thuần có $L = \\dfrac{0{,}2}{\\pi}$ H mắc vào điện áp xoay chiều $u = 200\\cos(100\\pi t)$ V. Tính cảm kháng và giá trị hiệu dụng của cường độ dòng điện.",
+          "solution": "Cảm kháng: $Z_L = \\omega L = 100\\pi\\cdot\\dfrac{0{,}2}{\\pi} = 20\\ \\Omega$.\nGiá trị hiệu dụng điện áp $U = 200/\\sqrt2 = 100\\sqrt2$ V, nên $I = U/Z_L = 100\\sqrt2/20 = 5\\sqrt2 \\approx 7{,}07$ A.",
+          "answer": "Z_L = 20 Ω; I ≈ 7,07 A"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng giá trị cực đại thay cho giá trị hiệu dụng khi tính công suất hay khi nói điện áp định mức.",
+        "Nhầm quan hệ pha: cho rằng u trễ pha so với i trên cuộn cảm; thực ra trên L thì u sớm pha, trên C thì u trễ pha.",
+        "Lẫn cảm kháng với dung kháng: Z_L tỉ lệ thuận với tần số, còn Z_C tỉ lệ nghịch với tần số."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dien-xoay-chieu",
+        "gia-tri-hieu-dung",
+        "cam-khang",
+        "dung-khang"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.mach-rlc-noi-tiep-tong-tro",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Dòng điện xoay chiều",
+      "order": 2,
+      "title_vi": "Mạch RLC nối tiếp: tổng trở và độ lệch pha",
+      "title_en": "Series RLC circuit: impedance and phase",
+      "objectives": [
+        "Vận dụng được công thức tổng trở và định luật Ohm cho mạch RLC nối tiếp",
+        "Tính được độ lệch pha giữa điện áp và dòng điện",
+        "Sử dụng được giản đồ vectơ để tổng hợp điện áp trong mạch"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dai-cuong-dong-dien-xoay-chieu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tổng trở",
+          "term_en": "Impedance",
+          "definition": "Đại lượng cản dòng của mạch RLC nối tiếp, $Z = \\sqrt{R^2 + (Z_L - Z_C)^2}$, đơn vị ôm."
+        },
+        {
+          "term_vi": "Định luật Ohm xoay chiều",
+          "term_en": "AC Ohm's law",
+          "definition": "$I = \\dfrac{U}{Z}$ với các giá trị hiệu dụng."
+        },
+        {
+          "term_vi": "Độ lệch pha",
+          "term_en": "Phase difference",
+          "definition": "$\\tan\\varphi = \\dfrac{Z_L - Z_C}{R}$; mạch có tính cảm khi $Z_L > Z_C$, tính dung khi $Z_L < Z_C$."
+        }
+      ],
+      "content": "## Cộng điện áp bằng giản đồ vectơ\n\nTrong mạch RLC nối tiếp, dòng $i$ chung cho cả ba phần tử, còn điện áp trên mỗi phần tử lệch pha khác nhau so với $i$. Vì thế điện áp tổng **không** bằng tổng đại số $U_R + U_L + U_C$ mà phải cộng vectơ. Chọn trục theo $i$: $U_R$ cùng phương $i$, $U_L$ vuông góc hướng lên, $U_C$ vuông góc hướng xuống. Cộng vectơ cho\n\n$$U = \\sqrt{U_R^2 + (U_L - U_C)^2}$$\n\n## Tổng trở\n\nChia cho $I$, và vì $U_R = IR,\\ U_L = IZ_L,\\ U_C = IZ_C$, ta được **tổng trở**:\n\n$$Z = \\sqrt{R^2 + (Z_L - Z_C)^2}, \\qquad I = \\dfrac{U}{Z}$$\n\n## Độ lệch pha\n\nGóc lệch pha giữa $u$ và $i$ xác định bởi:\n\n$$\\tan\\varphi = \\dfrac{Z_L - Z_C}{R} = \\dfrac{U_L - U_C}{U_R}$$\n\nNếu $Z_L > Z_C$ mạch có **tính cảm kháng**, $u$ sớm pha hơn $i$ ($\\varphi > 0$). Nếu $Z_L < Z_C$ mạch có **tính dung kháng**, $u$ trễ pha hơn $i$. Đây là bước bắt buộc trước khi viết biểu thức tức thời của $u$ hay $i$.",
+      "formulas": [
+        "physics.thpt.dien-xoay-chieu.tong-tro-rlc",
+        "physics.thpt.dien-xoay-chieu.dinh-luat-om-xoay-chieu",
+        "physics.thpt.dien-xoay-chieu.gian-do-vecto-dien-ap",
+        "physics.thpt.dien-xoay-chieu.do-lech-pha-rlc",
+        "physics.thpt.dien-xoay-chieu.cam-khang",
+        "physics.thpt.dien-xoay-chieu.dung-khang"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Mạch RLC nối tiếp có $R = 30\\ \\Omega$, $Z_L = 80\\ \\Omega$, $Z_C = 40\\ \\Omega$, điện áp hiệu dụng hai đầu mạch $U = 100$ V. Tính tổng trở và cường độ dòng điện hiệu dụng.",
+          "solution": "Tổng trở: $Z = \\sqrt{R^2 + (Z_L - Z_C)^2} = \\sqrt{30^2 + (80-40)^2} = \\sqrt{900 + 1600} = 50\\ \\Omega$.\nDòng hiệu dụng: $I = U/Z = 100/50 = 2$ A.",
+          "answer": "Z = 50 Ω; I = 2 A"
+        }
+      ],
+      "common_mistakes": [
+        "Cộng đại số U_R + U_L + U_C để ra điện áp toàn mạch; phải cộng vectơ vì chúng lệch pha.",
+        "Lấy hiệu Z_C − Z_L trong công thức tổng trở; thứ tự không ảnh hưởng vì bình phương, nhưng dấu của (Z_L − Z_C) quyết định tính cảm hay dung của mạch.",
+        "Quên rằng mọi giá trị trong định luật Ohm xoay chiều là giá trị hiệu dụng, không phải cực đại."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "mach-rlc",
+        "tong-tro",
+        "do-lech-pha"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.cong-suat-he-so-cong-suat-cong-huong",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Dòng điện xoay chiều",
+      "order": 3,
+      "title_vi": "Công suất, hệ số công suất, cộng hưởng và bài toán cực trị",
+      "title_en": "Power, power factor, resonance and extrema",
+      "objectives": [
+        "Tính được công suất tiêu thụ và hệ số công suất của mạch RLC",
+        "Nêu được điều kiện và đặc điểm của hiện tượng cộng hưởng điện",
+        "Giải được bài toán cực trị khi R, L, C hoặc tần số thay đổi"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.mach-rlc-noi-tiep-tong-tro"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công suất tiêu thụ",
+          "term_en": "Power consumption",
+          "definition": "$P = UI\\cos\\varphi = I^2 R$; chỉ điện trở R tiêu thụ công suất, L và C không tiêu thụ."
+        },
+        {
+          "term_vi": "Hệ số công suất",
+          "term_en": "Power factor",
+          "definition": "$\\cos\\varphi = \\dfrac{R}{Z}$; hệ số công suất thấp gây hao phí trên đường dây."
+        },
+        {
+          "term_vi": "Cộng hưởng điện",
+          "term_en": "Electrical resonance",
+          "definition": "Khi $Z_L = Z_C$ thì $Z = R$ nhỏ nhất, $I$ và $P$ cực đại, $u$ cùng pha $i$."
+        }
+      ],
+      "content": "## Công suất do đâu mà có\n\nTrong mạch RLC, cuộn cảm và tụ chỉ tích - phóng năng lượng chứ không tiêu thụ; **chỉ điện trở** biến điện năng thành nhiệt. Công suất tiêu thụ:\n\n$$P = UI\\cos\\varphi = I^2 R, \\qquad \\cos\\varphi = \\dfrac{R}{Z}$$\n\nĐại lượng $\\cos\\varphi$ là **hệ số công suất**. Trong truyền tải, hệ số công suất thấp buộc dòng lớn hơn để tải cùng công suất, làm hao phí tăng, nên các nhà máy luôn nâng $\\cos\\varphi$.\n\n## Cộng hưởng điện\n\nKhi thay đổi $L$, $C$ hoặc tần số sao cho\n\n$$Z_L = Z_C \\quad\\Leftrightarrow\\quad \\omega = \\dfrac{1}{\\sqrt{LC}}$$\n\nthì tổng trở nhỏ nhất $Z = R$, dòng điện và công suất **cực đại**, $u$ cùng pha $i$, $\\cos\\varphi = 1$. Đó là **cộng hưởng điện**, được dùng trong mạch chọn sóng radio.\n\n## Bài toán cực trị\n\nKhi một đại lượng thay đổi, dùng các kết quả nhanh:\n- $R$ thay đổi để $P_{max}$: $R = |Z_L - Z_C|$, khi đó $P_{max} = \\dfrac{U^2}{2R}$.\n- Hai giá trị $R_1, R_2$ cho cùng $P$: $R_1 R_2 = (Z_L - Z_C)^2$.\n- $C$ thay đổi để $U_C$ cực đại, $L$ thay đổi để $U_L$ cực đại: có công thức riêng dựa trên giản đồ.",
+      "formulas": [
+        "physics.thpt.dien-xoay-chieu.cong-suat-dien-xoay-chieu",
+        "physics.thpt.dien-xoay-chieu.he-so-cong-suat",
+        "physics.thpt.dien-xoay-chieu.cong-huong-dien",
+        "physics.thpt.dien-xoay-chieu.r-thay-doi-cong-suat-cuc-dai",
+        "physics.thpt.dien-xoay-chieu.hai-gia-tri-r-cung-cong-suat",
+        "physics.thpt.dien-xoay-chieu.l-thay-doi-ul-cuc-dai",
+        "physics.thpt.dien-xoay-chieu.c-thay-doi-uc-cuc-dai",
+        "physics.thpt.dien-xoay-chieu.omega-thay-doi-uc-cuc-dai",
+        "physics.thpt.dien-xoay-chieu.omega-thay-doi-ul-cuc-dai"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Mạch RLC nối tiếp $R = 40\\ \\Omega$, điện áp hiệu dụng $U = 120$ V, khi xảy ra cộng hưởng. Tính công suất tiêu thụ và hệ số công suất.",
+          "solution": "Cộng hưởng nên $Z = R = 40\\ \\Omega$, $\\cos\\varphi = 1$. Dòng $I = U/R = 120/40 = 3$ A.\nCông suất: $P = I^2 R = 3^2\\cdot40 = 360$ W (hoặc $P = U^2/R = 120^2/40 = 360$ W).",
+          "answer": "P = 360 W; cosφ = 1"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng cuộn cảm và tụ điện tiêu thụ công suất; chỉ điện trở R tiêu thụ, P = I²R.",
+        "Nhầm cộng hưởng là khi Z_L = Z_C = 0; thực ra cộng hưởng khi Z_L = Z_C (chúng bằng nhau và khác 0), lúc đó chúng triệt tiêu nhau.",
+        "Dùng cosφ = R/Z nhưng quên rằng khi cộng hưởng Z = R nên cosφ = 1, dễ tính nhầm còn dư số hạng."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "cong-suat",
+        "he-so-cong-suat",
+        "cong-huong",
+        "cuc-tri"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.may-bien-ap-truyen-tai-dien-nang",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Dòng điện xoay chiều",
+      "order": 4,
+      "title_vi": "Máy biến áp và truyền tải điện năng",
+      "title_en": "Transformers and power transmission",
+      "objectives": [
+        "Vận dụng được công thức máy biến áp lí tưởng liên hệ điện áp và số vòng dây",
+        "Giải thích được vì sao phải tăng điện áp khi truyền tải điện năng đi xa",
+        "Tính được công suất hao phí và hiệu suất truyền tải"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.dai-cuong-dong-dien-xoay-chieu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Máy biến áp",
+          "term_en": "Transformer",
+          "definition": "Thiết bị biến đổi điện áp xoay chiều dựa trên cảm ứng điện từ, $\\dfrac{U_1}{U_2} = \\dfrac{N_1}{N_2}$."
+        },
+        {
+          "term_vi": "Công suất hao phí",
+          "term_en": "Transmission loss",
+          "definition": "Nhiệt toả trên dây $\\Delta P = \\dfrac{P^2 R}{U^2\\cos^2\\varphi}$, tỉ lệ nghịch với bình phương điện áp truyền."
+        },
+        {
+          "term_vi": "Hiệu suất truyền tải",
+          "term_en": "Transmission efficiency",
+          "definition": "Tỉ số công suất nơi tiêu thụ trên công suất phát, $H = 1 - \\dfrac{\\Delta P}{P}$."
+        }
+      ],
+      "content": "## Máy biến áp\n\nMáy biến áp gồm hai cuộn dây quấn trên lõi sắt. Dòng xoay chiều ở cuộn sơ cấp tạo từ thông biến thiên, cảm ứng sang cuộn thứ cấp. Với máy lí tưởng:\n\n$$\\dfrac{U_1}{U_2} = \\dfrac{N_1}{N_2} = \\dfrac{I_2}{I_1}$$\n\nCuộn nào nhiều vòng hơn có điện áp lớn hơn. Nếu $N_2 > N_1$ là máy tăng áp, ngược lại là máy hạ áp. Do bảo toàn công suất ($U_1 I_1 = U_2 I_2$), tăng áp thì dòng giảm và ngược lại.\n\n## Vì sao phải tăng áp khi truyền tải\n\nTruyền công suất $P$ trên đường dây điện trở $R$ với điện áp $U$, dòng $I = \\dfrac{P}{U\\cos\\varphi}$ gây hao phí:\n\n$$\\Delta P = I^2 R = \\dfrac{P^2 R}{U^2\\cos^2\\varphi}$$\n\nHao phí tỉ lệ **nghịch với bình phương điện áp**. Vì thế tăng điện áp truyền tải lên $n$ lần thì hao phí giảm $n^2$ lần. Đó là lí do dùng đường dây cao thế (hàng trăm kV) rồi hạ áp bằng máy biến áp trước khi đưa vào nhà.\n\n## Hiệu suất\n\nHiệu suất truyền tải:\n\n$$H = \\dfrac{P - \\Delta P}{P} = 1 - \\dfrac{\\Delta P}{P}$$\n\nBài toán thường cho H và hỏi phải tăng áp bao nhiêu lần, hoặc ngược lại.",
+      "formulas": [
+        "physics.thpt.dien-xoay-chieu.may-bien-ap",
+        "physics.thpt.dien-xoay-chieu.hieu-suat-may-bien-ap",
+        "physics.thpt.dien-xoay-chieu.cong-suat-hao-phi-truyen-tai",
+        "physics.thpt.dien-xoay-chieu.hieu-suat-truyen-tai",
+        "physics.thpt.dien-xoay-chieu.dong-dien-ba-pha",
+        "physics.thpt.dien-xoay-chieu.dong-co-khong-dong-bo"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Máy biến áp lí tưởng có cuộn sơ cấp 1000 vòng, thứ cấp 50 vòng, điện áp hiệu dụng đặt vào sơ cấp là 220 V. Tính điện áp hiệu dụng ở thứ cấp.",
+          "solution": "Áp dụng công thức máy biến áp lí tưởng:\n$$U_2 = U_1\\dfrac{N_2}{N_1} = 220\\cdot\\dfrac{50}{1000} = 11\\ \\text{V}$$\nĐây là máy hạ áp vì thứ cấp ít vòng hơn.",
+          "answer": "U₂ = 11 V"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng tăng điện áp truyền tải thì hao phí giảm tỉ lệ nghịch với U; thực ra giảm theo bình phương U.",
+        "Nhầm chiều tăng/giảm áp với số vòng: cuộn nhiều vòng có điện áp lớn hơn, không phụ thuộc cuộn nào là sơ cấp.",
+        "Quên rằng máy biến áp chỉ hoạt động với dòng xoay chiều, không dùng được cho dòng một chiều không đổi."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "may-bien-ap",
+        "truyen-tai",
+        "hao-phi"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.mach-dao-dong-lc-song-dien-tu",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VIII: Dao động và sóng điện từ",
+      "order": 1,
+      "title_vi": "Mạch dao động LC và sóng điện từ",
+      "title_en": "LC oscillator and electromagnetic waves",
+      "objectives": [
+        "Viết được biểu thức điện tích, dòng điện trong mạch dao động LC và công thức chu kì Thomson",
+        "Vận dụng được định luật bảo toàn năng lượng điện từ trong mạch LC",
+        "Tính được bước sóng điện từ mà mạch thu, phát"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.tu-cam-nang-luong-tu-truong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Mạch dao động LC",
+          "term_en": "LC oscillator",
+          "definition": "Mạch gồm tụ C và cuộn cảm L, trong đó điện tích và dòng điện dao động điều hoà tự do."
+        },
+        {
+          "term_vi": "Chu kì Thomson",
+          "term_en": "Thomson period",
+          "definition": "Chu kì dao động riêng của mạch LC, $T = 2\\pi\\sqrt{LC}$."
+        },
+        {
+          "term_vi": "Năng lượng điện từ",
+          "term_en": "Electromagnetic energy",
+          "definition": "Tổng năng lượng điện trường (tụ) và năng lượng từ trường (cuộn cảm), bảo toàn nếu không có điện trở."
+        }
+      ],
+      "content": "## Dao động điện từ tự do\n\nNối tụ đã tích điện với cuộn cảm, tụ phóng điện qua cuộn cảm rồi cuộn cảm lại nạp ngược tụ, tạo dao động điện từ. Điện tích trên tụ biến thiên điều hoà:\n\n$$q = Q_0\\cos(\\omega t + \\varphi), \\qquad \\omega = \\dfrac{1}{\\sqrt{LC}}$$\n\nnên chu kì riêng (công thức **Thomson**) là $T = 2\\pi\\sqrt{LC}$. Dòng điện $i = q'$ sớm pha $\\pi/2$ so với $q$, với $I_0 = \\omega Q_0$.\n\n## Tương tự cơ - điện\n\nMạch LC giống hệt con lắc lò xo: $q$ ứng với li độ $x$, $i$ ứng với vận tốc $v$, $\\dfrac{1}{C}$ ứng với $k$, $L$ ứng với $m$. Năng lượng chuyển hoá giữa **điện trường** trong tụ $W_C = \\dfrac{q^2}{2C}$ và **từ trường** trong cuộn cảm $W_L = \\dfrac{1}{2}Li^2$, tổng bảo toàn:\n\n$$W = \\dfrac{Q_0^2}{2C} = \\dfrac{1}{2}LI_0^2$$\n\n## Sóng điện từ\n\nMạch LC hở (ăng-ten) phát ra sóng điện từ lan truyền với tốc độ ánh sáng $c = 3\\cdot10^8$ m/s. Bước sóng mạch thu, phát:\n\n$$\\lambda = cT = 2\\pi c\\sqrt{LC}$$\n\nThay đổi C (tụ xoay) làm đổi bước sóng - đó là cách chọn sóng của radio. Thang sóng điện từ từ sóng vô tuyến, hồng ngoại, ánh sáng nhìn thấy, tử ngoại, tia X đến tia gamma, sắp xếp theo bước sóng giảm dần.",
+      "formulas": [
+        "physics.thpt.dao-dong-song-dien-tu.chu-ki-thomson",
+        "physics.thpt.dao-dong-song-dien-tu.bieu-thuc-dien-tich-mach-lc",
+        "physics.thpt.dao-dong-song-dien-tu.lien-he-i0-q0-u0",
+        "physics.thpt.dao-dong-song-dien-tu.he-thuc-doc-lap-q-i",
+        "physics.thpt.dao-dong-song-dien-tu.nang-luong-dien-truong-mach-lc",
+        "physics.thpt.dao-dong-song-dien-tu.nang-luong-tu-truong-mach-lc",
+        "physics.thpt.dao-dong-song-dien-tu.nang-luong-dien-tu",
+        "physics.thpt.dao-dong-song-dien-tu.buoc-song-dien-tu",
+        "physics.thpt.dao-dong-song-dien-tu.thang-song-dien-tu",
+        "physics.thpt.dao-dong-song-dien-tu.ghep-tu-mach-dao-dong",
+        "physics.thpt.dao-dong-song-dien-tu.cong-suat-bu-mach-dao-dong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Mạch dao động LC có $L = 2$ mH và $C = 8$ nF. Tính chu kì dao động riêng và bước sóng điện từ mạch phát ra. Lấy $c = 3\\cdot10^8$ m/s.",
+          "solution": "Chu kì Thomson: $T = 2\\pi\\sqrt{LC} = 2\\pi\\sqrt{2\\cdot10^{-3}\\cdot8\\cdot10^{-9}} = 2\\pi\\cdot4\\cdot10^{-6} \\approx 2{,}51\\cdot10^{-5}$ s.\nBước sóng: $\\lambda = cT = 3\\cdot10^8\\cdot2{,}51\\cdot10^{-5} \\approx 7{,}54\\cdot10^{3}$ m.",
+          "answer": "T ≈ 25,1 μs; λ ≈ 7,54 km"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm dòng i cùng pha với điện tích q; thực ra i sớm pha π/2 so với q (như v với x).",
+        "Quên căn bậc hai trong công thức Thomson, tính T tỉ lệ với LC thay vì với căn của LC.",
+        "Lẫn năng lượng điện trường với năng lượng từ trường: khi q cực đại thì i = 0 và ngược lại."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "mach-lc",
+        "thomson",
+        "song-dien-tu",
+        "buoc-song"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.tan-sac-giao-thoa-anh-sang",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IX: Sóng ánh sáng",
+      "order": 1,
+      "title_vi": "Tán sắc ánh sáng và giao thoa ánh sáng (Y-âng)",
+      "title_en": "Dispersion and Young's double-slit interference",
+      "objectives": [
+        "Giải thích được hiện tượng tán sắc ánh sáng qua lăng kính",
+        "Vận dụng được công thức khoảng vân và vị trí vân sáng, vân tối trong thí nghiệm Y-âng",
+        "Tính được bước sóng ánh sáng từ hệ vân giao thoa"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.song-co-phuong-trinh-song"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tán sắc ánh sáng",
+          "term_en": "Dispersion",
+          "definition": "Hiện tượng ánh sáng trắng bị phân tách thành dải màu khi qua lăng kính, do chiết suất phụ thuộc bước sóng."
+        },
+        {
+          "term_vi": "Giao thoa ánh sáng",
+          "term_en": "Light interference",
+          "definition": "Hiện tượng hai chùm sáng kết hợp tạo vân sáng - tối xen kẽ, chứng tỏ ánh sáng có bản chất sóng."
+        },
+        {
+          "term_vi": "Khoảng vân",
+          "term_en": "Fringe spacing",
+          "definition": "Khoảng cách giữa hai vân sáng (hoặc hai vân tối) liên tiếp, $i = \\dfrac{\\lambda D}{a}$."
+        }
+      ],
+      "content": "## Tán sắc: ánh sáng trắng là hỗn hợp\n\nChiếu chùm ánh sáng trắng qua lăng kính, ta thu được dải màu từ đỏ đến tím. Newton giải thích: ánh sáng trắng là hỗn hợp nhiều ánh sáng đơn sắc, mà **chiết suất của lăng kính phụ thuộc bước sóng** (lớn nhất với tia tím, nhỏ nhất với tia đỏ), nên các màu bị lệch khác nhau. Đó là **tán sắc**, giải thích cả cầu vồng.\n\n## Thí nghiệm Y-âng\n\nChiếu ánh sáng đơn sắc qua hai khe hẹp $S_1, S_2$ cách nhau $a$, trên màn cách hai khe khoảng $D$ xuất hiện các **vân sáng - vân tối** xen kẽ. Đây là bằng chứng ánh sáng có tính chất sóng. Tại điểm cách vân trung tâm đoạn $x$, hiệu đường đi $\\Delta d = \\dfrac{ax}{D}$ quyết định sáng hay tối:\n\n$$\\text{Vân sáng}: \\ x = k\\dfrac{\\lambda D}{a}; \\qquad \\text{Vân tối}: \\ x = \\left(k+\\dfrac12\\right)\\dfrac{\\lambda D}{a}$$\n\n## Khoảng vân\n\nKhoảng cách giữa hai vân sáng liên tiếp là **khoảng vân**:\n\n$$i = \\dfrac{\\lambda D}{a}$$\n\nĐo $i$ ta suy ra bước sóng $\\lambda = \\dfrac{ia}{D}$. Ánh sáng bước sóng lớn (đỏ) cho vân thưa, bước sóng nhỏ (tím) cho vân dày. Với ánh sáng trắng, vân trung tâm màu trắng, hai bên là các dải màu do các bức xạ có khoảng vân khác nhau.",
+      "formulas": [
+        "physics.thpt.song-anh-sang.tan-sac-anh-sang",
+        "physics.thpt.song-anh-sang.hieu-duong-di-y-ang",
+        "physics.thpt.song-anh-sang.khoang-van",
+        "physics.thpt.song-anh-sang.vi-tri-van-sang",
+        "physics.thpt.song-anh-sang.vi-tri-van-toi",
+        "physics.thpt.song-anh-sang.so-van-tren-truong-giao-thoa",
+        "physics.thpt.song-anh-sang.be-rong-quang-pho-bac-k",
+        "physics.thpt.song-anh-sang.van-trung-hai-buc-xa",
+        "physics.thpt.song-anh-sang.buoc-song-trong-moi-truong",
+        "physics.thpt.song-anh-sang.chiet-suat-tuyet-doi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Trong thí nghiệm Y-âng, hai khe cách nhau $a = 1$ mm, màn cách hai khe $D = 2$ m, ánh sáng đơn sắc bước sóng $\\lambda = 0{,}6\\ \\mu$m. Tính khoảng vân và vị trí vân sáng bậc 3.",
+          "solution": "Khoảng vân: $i = \\dfrac{\\lambda D}{a} = \\dfrac{0{,}6\\cdot10^{-6}\\cdot2}{10^{-3}} = 1{,}2\\cdot10^{-3}$ m = 1,2 mm.\nVân sáng bậc 3: $x_3 = 3i = 3\\cdot1{,}2 = 3{,}6$ mm.",
+          "answer": "i = 1,2 mm; x₃ = 3,6 mm"
+        }
+      ],
+      "common_mistakes": [
+        "Quên đổi đơn vị (μm, mm, m) đồng nhất khi tính khoảng vân, sai vài bậc mười.",
+        "Nhầm công thức vân tối với vân sáng: vân tối ứng với (k + 0,5), vân sáng ứng với k nguyên.",
+        "Cho rằng tán sắc là do lăng kính nhuộm màu ánh sáng; thực ra lăng kính chỉ tách các màu đã có sẵn trong ánh sáng trắng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "tan-sac",
+        "giao-thoa",
+        "khoang-van",
+        "y-ang"
+      ],
+      "video_lectures": [
+        {
+          "title": "Thí nghiệm giao thoa khe Young ánh sáng laser thực tế",
+          "url": "https://www.youtube.com/watch?v=Iuv6hY6zsd0",
+          "provider": "Veritasium",
+          "duration": "08:12",
+          "language": "en"
+        }
+      ],
+      "animations": [
+        {
+          "title": "PhET Giao thoa sóng và ánh sáng",
+          "type": "phet",
+          "url": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_all.html",
+          "description": "Mô phỏng sóng nước, sóng âm và sóng ánh sáng đi qua 2 khe hẹp"
+        }
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.hien-tuong-quang-dien-einstein",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương X: Lượng tử ánh sáng",
+      "order": 1,
+      "title_vi": "Hiện tượng quang điện và phương trình Einstein",
+      "title_en": "Photoelectric effect and Einstein's equation",
+      "objectives": [
+        "Nêu được nội dung thuyết lượng tử ánh sáng và khái niệm photon",
+        "Phát biểu và vận dụng được phương trình Einstein về hiện tượng quang điện",
+        "Tính được giới hạn quang điện, động năng ban đầu cực đại và hiệu điện thế hãm"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.mach-dao-dong-lc-song-dien-tu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Photon",
+          "term_en": "Photon",
+          "definition": "Hạt ánh sáng mang năng lượng $\\varepsilon = hf = hc/\\lambda$, không có khối lượng nghỉ."
+        },
+        {
+          "term_vi": "Giới hạn quang điện",
+          "term_en": "Threshold wavelength",
+          "definition": "Bước sóng lớn nhất $\\lambda_0 = hc/A$ còn gây quang điện; ánh sáng bước sóng lớn hơn không gây được."
+        },
+        {
+          "term_vi": "Công thoát",
+          "term_en": "Work function",
+          "definition": "Năng lượng tối thiểu A để bứt electron ra khỏi bề mặt kim loại."
+        }
+      ],
+      "content": "## Vì sao cần thuyết photon\n\nHiện tượng quang điện: chiếu ánh sáng thích hợp vào kim loại thì electron bị bứt ra. Thí nghiệm cho thấy có **giới hạn quang điện** - ánh sáng bước sóng dài (dù rất mạnh) cũng không bứt được electron, còn ánh sáng bước sóng ngắn (dù rất yếu) lại bứt được ngay. Sóng cổ điển không giải thích nổi điều này.\n\nEinstein đề xuất: ánh sáng gồm các hạt **photon**, mỗi photon mang năng lượng\n\n$$\\varepsilon = hf = \\dfrac{hc}{\\lambda}$$\n\nMỗi electron hấp thụ trọn một photon. Nếu năng lượng photon nhỏ hơn công thoát $A$ thì không bứt được, bất kể cường độ.\n\n## Phương trình Einstein\n\nNăng lượng photon dùng để thắng công thoát và cấp động năng ban đầu cho electron:\n\n$$hf = A + \\dfrac{1}{2}mv_{0\\max}^2$$\n\nGiới hạn quang điện: $\\lambda_0 = \\dfrac{hc}{A}$. Điều kiện xảy ra quang điện là $\\lambda \\le \\lambda_0$.\n\n## Hiệu điện thế hãm\n\nĐể đo động năng ban đầu cực đại, ta đặt hiệu điện thế hãm $U_h$ chặn dòng quang điện:\n\n$$eU_h = \\dfrac{1}{2}mv_{0\\max}^2$$\n\nCường độ sáng chỉ quyết định **số** electron bứt ra (dòng bão hoà), còn động năng của chúng chỉ phụ thuộc tần số ánh sáng.",
+      "formulas": [
+        "physics.thpt.luong-tu-anh-sang.nang-luong-photon",
+        "physics.thpt.luong-tu-anh-sang.dong-luong-photon",
+        "physics.thpt.luong-tu-anh-sang.so-photon-phat-ra",
+        "physics.thpt.luong-tu-anh-sang.gioi-han-quang-dien",
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien",
+        "physics.thpt.luong-tu-anh-sang.van-toc-ban-dau-cuc-dai",
+        "physics.thpt.luong-tu-anh-sang.hieu-dien-the-ham",
+        "physics.thpt.luong-tu-anh-sang.dong-quang-dien-bao-hoa",
+        "physics.thpt.luong-tu-anh-sang.hieu-suat-luong-tu",
+        "physics.thpt.luong-tu-anh-sang.dien-the-cuc-dai-qua-cau-co-lap"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Catôt có công thoát $A = 3{,}2\\cdot10^{-19}$ J. Chiếu ánh sáng bước sóng $\\lambda = 0{,}4\\ \\mu$m. Cho $h = 6{,}625\\cdot10^{-34}$ J·s, $c = 3\\cdot10^8$ m/s. Tính động năng ban đầu cực đại của electron quang điện.",
+          "solution": "Năng lượng photon: $\\varepsilon = \\dfrac{hc}{\\lambda} = \\dfrac{6{,}625\\cdot10^{-34}\\cdot3\\cdot10^8}{0{,}4\\cdot10^{-6}} \\approx 4{,}97\\cdot10^{-19}$ J.\nPhương trình Einstein: $W_{d} = \\varepsilon - A = 4{,}97\\cdot10^{-19} - 3{,}2\\cdot10^{-19} = 1{,}77\\cdot10^{-19}$ J.",
+          "answer": "W_đ ≈ 1,77·10⁻¹⁹ J"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng tăng cường độ ánh sáng thì electron bứt ra có động năng lớn hơn; cường độ chỉ tăng số electron, động năng phụ thuộc tần số.",
+        "Dùng ánh sáng bước sóng lớn hơn giới hạn quang điện vẫn tính ra quang điện; điều kiện là λ ≤ λ₀.",
+        "Nhầm công thoát A với năng lượng photon; A là ngưỡng của kim loại, ε là năng lượng một hạt ánh sáng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "quang-dien",
+        "photon",
+        "einstein",
+        "cong-thoat"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.mau-nguyen-tu-bohr-quang-pho-hidro",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương X: Lượng tử ánh sáng",
+      "order": 2,
+      "title_vi": "Mẫu nguyên tử Bohr và quang phổ hiđrô",
+      "title_en": "Bohr model and hydrogen spectrum",
+      "objectives": [
+        "Phát biểu được hai tiên đề Bohr về trạng thái dừng và bức xạ, hấp thụ",
+        "Tính được bán kính quỹ đạo và năng lượng các mức trong nguyên tử hiđrô",
+        "Xác định được bước sóng các vạch trong quang phổ hiđrô"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.hien-tuong-quang-dien-einstein"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Trạng thái dừng",
+          "term_en": "Stationary state",
+          "definition": "Trạng thái có năng lượng xác định của nguyên tử, ở đó electron không bức xạ."
+        },
+        {
+          "term_vi": "Tiên đề bức xạ - hấp thụ",
+          "term_en": "Emission-absorption postulate",
+          "definition": "Khi chuyển mức, nguyên tử phát hoặc hấp thụ photon $hf = E_{cao} - E_{thap}$."
+        },
+        {
+          "term_vi": "Mức năng lượng hiđrô",
+          "term_en": "Hydrogen energy levels",
+          "definition": "$E_n = -\\dfrac{13{,}6}{n^2}$ eV; bán kính quỹ đạo $r_n = n^2 r_0$ với $r_0 = 5{,}3\\cdot10^{-11}$ m."
+        }
+      ],
+      "content": "## Hai tiên đề Bohr\n\nNguyên tử hiđrô phát quang phổ **vạch** rời rạc chứ không liên tục, điều mà mô hình cổ điển không giải thích được. Bohr đưa ra hai tiên đề:\n\n1. **Trạng thái dừng**: nguyên tử chỉ tồn tại trong những trạng thái có năng lượng xác định $E_n$, ở đó electron chuyển động trên quỹ đạo dừng mà **không bức xạ**. Bán kính quỹ đạo $r_n = n^2 r_0$ với $r_0 = 5{,}3\\cdot10^{-11}$ m.\n2. **Bức xạ - hấp thụ**: khi chuyển từ mức cao $E_m$ về mức thấp $E_n$, nguyên tử phát một photon:\n\n$$hf = E_m - E_n$$\n\nngược lại hấp thụ photon để nhảy lên mức cao.\n\n## Mức năng lượng hiđrô\n\nNăng lượng các mức của hiđrô lượng tử hoá:\n\n$$E_n = -\\dfrac{13{,}6}{n^2}\\ \\text{(eV)}$$\n\nMức $n=1$ là cơ bản (bền nhất), $n\\to\\infty$ là ion hoá ($E=0$).\n\n## Quang phổ vạch\n\nCác vạch phát xạ xếp thành dãy: Lyman (về $n=1$, tử ngoại), Balmer (về $n=2$, có vạch nhìn thấy), Paschen (về $n=3$, hồng ngoại). Bước sóng mỗi vạch tính từ $\\dfrac{hc}{\\lambda} = E_m - E_n$. Số vạch tối đa khi electron từ mức $n$ về thấp hơn là $\\dfrac{n(n-1)}{2}$.",
+      "formulas": [
+        "physics.thpt.luong-tu-anh-sang.ban-kinh-quy-dao-dung-bo",
+        "physics.thpt.luong-tu-anh-sang.luc-culong-huong-tam-nguyen-tu",
+        "physics.thpt.luong-tu-anh-sang.muc-nang-luong-hidro",
+        "physics.thpt.luong-tu-anh-sang.tien-de-bo-buc-xa-hap-thu",
+        "physics.thpt.luong-tu-anh-sang.buoc-song-vach-phat-xa-hidro",
+        "physics.thpt.luong-tu-anh-sang.cong-thuc-rydberg",
+        "physics.thpt.luong-tu-anh-sang.so-vach-phat-xa-toi-da",
+        "physics.thpt.luong-tu-anh-sang.nang-luong-photon"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nguyên tử hiđrô chuyển từ mức $n = 3$ về mức $n = 2$. Cho $E_n = -13{,}6/n^2$ eV, $h = 6{,}625\\cdot10^{-34}$ J·s, $c = 3\\cdot10^8$ m/s, $1$ eV $= 1{,}6\\cdot10^{-19}$ J. Tính bước sóng photon phát ra.",
+          "solution": "Năng lượng photon: $E_3 - E_2 = -\\dfrac{13{,}6}{9} + \\dfrac{13{,}6}{4} = -1{,}511 + 3{,}4 = 1{,}889$ eV $= 3{,}02\\cdot10^{-19}$ J.\nBước sóng: $\\lambda = \\dfrac{hc}{E} = \\dfrac{6{,}625\\cdot10^{-34}\\cdot3\\cdot10^8}{3{,}02\\cdot10^{-19}} \\approx 6{,}58\\cdot10^{-7}$ m.",
+          "answer": "λ ≈ 0,658 μm (vạch đỏ Balmer)"
+        }
+      ],
+      "common_mistakes": [
+        "Quên dấu âm của mức năng lượng, tính hiệu năng lượng ra âm rồi lấy bước sóng âm.",
+        "Nhầm bán kính quỹ đạo r_n tỉ lệ với n; thực ra r_n tỉ lệ với n².",
+        "Cho rằng electron ở trạng thái dừng vẫn bức xạ liên tục; theo tiên đề Bohr, ở trạng thái dừng nguyên tử không bức xạ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "bohr",
+        "quang-pho",
+        "hidro",
+        "muc-nang-luong"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.cau-tao-hat-nhan-nang-luong-lien-ket",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương XI: Hạt nhân nguyên tử",
+      "order": 1,
+      "title_vi": "Cấu tạo hạt nhân, độ hụt khối và năng lượng liên kết",
+      "title_en": "Nuclear structure, mass defect and binding energy",
+      "objectives": [
+        "Nêu được cấu tạo hạt nhân và kí hiệu hạt nhân",
+        "Tính được độ hụt khối và năng lượng liên kết của hạt nhân",
+        "So sánh được độ bền vững của các hạt nhân qua năng lượng liên kết riêng"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.hien-tuong-quang-dien-einstein"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hạt nhân",
+          "term_en": "Nucleus",
+          "definition": "Phần trung tâm nguyên tử, gồm Z proton và N = A − Z neutron, kí hiệu $^{A}_{Z}X$."
+        },
+        {
+          "term_vi": "Độ hụt khối",
+          "term_en": "Mass defect",
+          "definition": "Hiệu $\\Delta m = Zm_p + Nm_n - m_{hn}$ giữa tổng khối lượng các nuclôn và khối lượng hạt nhân."
+        },
+        {
+          "term_vi": "Năng lượng liên kết riêng",
+          "term_en": "Binding energy per nucleon",
+          "definition": "$\\dfrac{W_{lk}}{A}$; càng lớn hạt nhân càng bền, lớn nhất ở vùng số khối trung bình (Fe)."
+        }
+      ],
+      "content": "## Hạt nhân được cấu tạo thế nào\n\nHạt nhân gồm các **nuclôn**: $Z$ proton (mang điện dương) và $N = A - Z$ neutron (trung hoà), kí hiệu $^{A}_{Z}X$ với $A$ là số khối. Bán kính hạt nhân $R = 1{,}2\\cdot10^{-15}A^{1/3}$ m rất nhỏ, nên khối lượng riêng hạt nhân cực lớn.\n\n## Độ hụt khối - điều kì lạ\n\nĐo chính xác thấy khối lượng hạt nhân **nhỏ hơn** tổng khối lượng các nuclôn tạo thành nó. Phần thiếu gọi là **độ hụt khối**:\n\n$$\\Delta m = Zm_p + (A-Z)m_n - m_{hn}$$\n\n## Năng lượng liên kết\n\nTheo hệ thức Einstein $E = mc^2$, phần khối lượng hụt đi đã biến thành **năng lượng liên kết** giữ các nuclôn lại với nhau:\n\n$$W_{lk} = \\Delta m\\, c^2$$\n\nĐây cũng là năng lượng cần cung cấp để phá vỡ hạt nhân thành các nuclôn riêng lẻ. Để so sánh độ bền giữa các hạt nhân khác nhau, ta dùng **năng lượng liên kết riêng** $W_{lk}/A$: hạt nhân có $W_{lk}/A$ càng lớn càng bền. Các hạt nhân số khối trung bình (quanh sắt) bền nhất, giải thích vì sao cả phân hạch (hạt nặng tách ra) lẫn nhiệt hạch (hạt nhẹ kết hợp) đều toả năng lượng.",
+      "formulas": [
+        "physics.thpt.hat-nhan.cau-tao-hat-nhan",
+        "physics.thpt.hat-nhan.ban-kinh-hat-nhan",
+        "physics.thpt.hat-nhan.don-vi-khoi-luong-nguyen-tu",
+        "physics.thpt.hat-nhan.so-hat-nhan-trong-khoi-luong",
+        "physics.thpt.hat-nhan.do-hut-khoi",
+        "physics.thpt.hat-nhan.nang-luong-lien-ket",
+        "physics.thpt.hat-nhan.nang-luong-lien-ket-rieng",
+        "physics.thpt.tuong-doi-hep.he-thuc-einstein"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hạt nhân $^{4}_{2}He$ có khối lượng $m = 4{,}0015$ u. Cho $m_p = 1{,}0073$ u, $m_n = 1{,}0087$ u, $1$ u $= 931{,}5$ MeV/c². Tính năng lượng liên kết của hạt nhân heli.",
+          "solution": "Độ hụt khối: $\\Delta m = 2m_p + 2m_n - m = 2\\cdot1{,}0073 + 2\\cdot1{,}0087 - 4{,}0015 = 0{,}0305$ u.\nNăng lượng liên kết: $W_{lk} = \\Delta m\\cdot931{,}5 = 0{,}0305\\cdot931{,}5 \\approx 28{,}4$ MeV.",
+          "answer": "W_lk ≈ 28,4 MeV"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng khối lượng hạt nhân bằng tổng khối lượng các nuclôn; thực ra nhỏ hơn một lượng là độ hụt khối.",
+        "Dùng năng lượng liên kết (tổng) để so sánh độ bền; phải dùng năng lượng liên kết riêng W_lk/A.",
+        "Quên đổi đơn vị u sang MeV/c² (nhân 931,5) khi tính năng lượng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hat-nhan",
+        "do-hut-khoi",
+        "nang-luong-lien-ket"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.phong-xa-phan-ung-hat-nhan",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương XI: Hạt nhân nguyên tử",
+      "order": 2,
+      "title_vi": "Phóng xạ, phản ứng hạt nhân, phân hạch và nhiệt hạch",
+      "title_en": "Radioactivity, nuclear reactions, fission and fusion",
+      "objectives": [
+        "Phát biểu và vận dụng được định luật phóng xạ để tính số hạt và độ phóng xạ còn lại",
+        "Viết được phương trình phản ứng hạt nhân dựa trên các định luật bảo toàn",
+        "Tính được năng lượng toả ra hoặc thu vào của phản ứng, phân biệt phân hạch và nhiệt hạch"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.cau-tao-hat-nhan-nang-luong-lien-ket"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phóng xạ",
+          "term_en": "Radioactivity",
+          "definition": "Hiện tượng hạt nhân không bền tự phát biến đổi, phát ra tia $\\alpha$, $\\beta$ hoặc $\\gamma$."
+        },
+        {
+          "term_vi": "Định luật phóng xạ",
+          "term_en": "Decay law",
+          "definition": "Số hạt nhân còn lại giảm theo hàm mũ $N = N_0 2^{-t/T} = N_0 e^{-\\lambda t}$, với chu kì bán rã T."
+        },
+        {
+          "term_vi": "Năng lượng phản ứng",
+          "term_en": "Reaction energy",
+          "definition": "$Q = (m_{truoc} - m_{sau})c^2$; $Q>0$ toả năng lượng, $Q<0$ thu năng lượng."
+        }
+      ],
+      "content": "## Định luật phóng xạ\n\nHạt nhân không bền tự phân rã một cách ngẫu nhiên, nhưng số lượng lớn tuân theo quy luật thống kê. Sau mỗi **chu kì bán rã** $T$, số hạt nhân còn lại giảm một nửa:\n\n$$N = N_0\\, 2^{-t/T} = N_0 e^{-\\lambda t}, \\qquad \\lambda = \\dfrac{\\ln 2}{T}$$\n\n**Độ phóng xạ** $H = \\lambda N$ (số phân rã mỗi giây, đơn vị Bq) cũng giảm theo cùng quy luật. Nhờ đó, đo độ phóng xạ còn lại (ví dụ $^{14}C$) cho phép xác định tuổi cổ vật.\n\n## Phản ứng hạt nhân và các định luật bảo toàn\n\nPhản ứng $A + B \\to C + D$ tuân theo **bảo toàn điện tích** (tổng Z) và **bảo toàn số khối** (tổng A), cùng bảo toàn động lượng và năng lượng toàn phần. Nhờ đó viết được phương trình và tìm hạt chưa biết. Các loại phóng xạ: $\\alpha$ (phát $^4_2He$), $\\beta^-$ (phát electron), $\\beta^+$ (phát pôzitron), $\\gamma$ (phát photon năng lượng cao).\n\n## Năng lượng, phân hạch và nhiệt hạch\n\nNăng lượng phản ứng: $Q = (m_{truoc} - m_{sau})c^2$. Nếu $Q>0$ phản ứng **toả** năng lượng.\n\n- **Phân hạch**: hạt nhân nặng (U-235) hấp thụ neutron rồi vỡ thành hai mảnh, toả năng lượng và phát thêm neutron gây phản ứng dây chuyền - cơ sở của nhà máy điện hạt nhân.\n- **Nhiệt hạch**: các hạt nhân nhẹ (như hiđrô) kết hợp thành hạt nặng hơn, toả năng lượng lớn hơn nhiều trên mỗi nuclôn - nguồn năng lượng của Mặt Trời.",
+      "formulas": [
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-so-hat",
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-khoi-luong",
+        "physics.thpt.hat-nhan.hang-so-phong-xa",
+        "physics.thpt.hat-nhan.do-phong-xa",
+        "physics.thpt.hat-nhan.so-hat-nhan-da-phan-ra",
+        "physics.thpt.hat-nhan.ti-le-hat-nhan-me-con",
+        "physics.thpt.hat-nhan.xac-dinh-tuoi-co-vat",
+        "physics.thpt.hat-nhan.phong-xa-alpha",
+        "physics.thpt.hat-nhan.phong-xa-beta-tru",
+        "physics.thpt.hat-nhan.phong-xa-beta-cong",
+        "physics.thpt.hat-nhan.phong-xa-gamma",
+        "physics.thpt.hat-nhan.bao-toan-phan-ung-hat-nhan",
+        "physics.thpt.hat-nhan.nang-luong-phan-ung-hat-nhan",
+        "physics.thpt.hat-nhan.phan-hach",
+        "physics.thpt.hat-nhan.nhiet-hach",
+        "physics.thpt.hat-nhan.nang-luong-toa-ra-tu-nhien-lieu",
+        "physics.thpt.hat-nhan.lien-he-dong-luong-dong-nang"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một chất phóng xạ có chu kì bán rã $T = 8$ ngày, ban đầu có khối lượng $m_0 = 200$ g. Tính khối lượng còn lại sau 24 ngày.",
+          "solution": "Số chu kì bán rã đã trôi qua: $t/T = 24/8 = 3$. Khối lượng còn lại giảm theo hàm mũ:\n$$m = m_0\\, 2^{-t/T} = 200\\cdot2^{-3} = 200\\cdot\\dfrac{1}{8} = 25\\ \\text{g}$$",
+          "answer": "m = 25 g"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng sau hai chu kì bán rã thì chất phóng xạ hết; mỗi chu kì chỉ giảm một nửa, không bao giờ về đúng 0.",
+        "Nhầm số hạt đã phân rã với số hạt còn lại; số đã phân rã là N₀ − N = N₀(1 − 2^(−t/T)).",
+        "Không kiểm tra bảo toàn số khối A và điện tích Z khi viết phương trình phản ứng, dẫn tới xác định sai hạt tạo thành."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "phong-xa",
+        "phan-ung-hat-nhan",
+        "phan-hach",
+        "nhiet-hach"
+      ]
+    },
+    {
+      "id": "lesson.physics.vn-thpt-physics-diendtu.thuyet-tuong-doi-hep",
+      "subject": "physics",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương XII: Thuyết tương đối hẹp",
+      "order": 1,
+      "title_vi": "Thuyết tương đối hẹp",
+      "title_en": "Special relativity",
+      "objectives": [
+        "Phát biểu được hai tiên đề của thuyết tương đối hẹp Einstein",
+        "Vận dụng được công thức co độ dài và giãn thời gian",
+        "Tính được năng lượng nghỉ, năng lượng toàn phần theo hệ thức Einstein"
+      ],
+      "prerequisites": [
+        "lesson.physics.vn-thpt-physics-diendtu.cau-tao-hat-nhan-nang-luong-lien-ket"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hai tiên đề Einstein",
+          "term_en": "Einstein's postulates",
+          "definition": "Các định luật vật lí như nhau trong mọi hệ quy chiếu quán tính; tốc độ ánh sáng trong chân không là hằng số c với mọi quan sát viên."
+        },
+        {
+          "term_vi": "Sự giãn thời gian",
+          "term_en": "Time dilation",
+          "definition": "Đồng hồ chuyển động chạy chậm hơn: $\\Delta t = \\gamma\\Delta t_0$ với $\\gamma = 1/\\sqrt{1 - v^2/c^2}$."
+        },
+        {
+          "term_vi": "Hệ thức Einstein",
+          "term_en": "Mass-energy relation",
+          "definition": "Năng lượng toàn phần $E = mc^2 = \\gamma m_0 c^2$; năng lượng nghỉ $E_0 = m_0 c^2$."
+        }
+      ],
+      "content": "## Hai tiên đề\n\nVật lí cổ điển giả định thời gian và không gian tuyệt đối, nhưng điều đó mâu thuẫn với việc tốc độ ánh sáng đo được luôn bằng $c$. Einstein đề ra hai tiên đề:\n\n1. Các định luật vật lí như nhau trong mọi hệ quy chiếu quán tính.\n2. Tốc độ ánh sáng trong chân không bằng $c$ với **mọi** quan sát viên, không phụ thuộc chuyển động của nguồn hay người quan sát.\n\n## Co độ dài và giãn thời gian\n\nTừ hai tiên đề suy ra các hệ quả kì lạ với hệ số Lorentz $\\gamma = \\dfrac{1}{\\sqrt{1 - v^2/c^2}} \\ge 1$:\n\n$$\\Delta t = \\gamma\\Delta t_0 \\quad(\\text{thời gian giãn}), \\qquad l = \\dfrac{l_0}{\\gamma} \\quad(\\text{độ dài co})$$\n\nĐồng hồ chuyển động chạy chậm hơn, thước chuyển động ngắn lại theo phương chuyển động. Các hiệu ứng chỉ đáng kể khi $v$ gần $c$; với vận tốc thường ngày $\\gamma \\approx 1$ nên trở về cơ học Newton.\n\n## Khối lượng - năng lượng\n\nHệ thức nổi tiếng nhất:\n\n$$E = mc^2 = \\gamma m_0 c^2$$\n\nNgay cả khi đứng yên, vật đã có **năng lượng nghỉ** $E_0 = m_0 c^2$. Động năng tương đối tính $W_d = (\\gamma - 1)m_0 c^2$. Chính hệ thức này giải thích năng lượng khổng lồ toả ra trong phản ứng hạt nhân: một lượng khối lượng rất nhỏ biến thành năng lượng rất lớn.",
+      "formulas": [
+        "physics.thpt.tuong-doi-hep.tien-de-einstein",
+        "physics.thpt.tuong-doi-hep.he-so-lorentz",
+        "physics.thpt.tuong-doi-hep.co-do-dai",
+        "physics.thpt.tuong-doi-hep.gian-thoi-gian",
+        "physics.thpt.tuong-doi-hep.khoi-luong-tuong-doi-tinh",
+        "physics.thpt.tuong-doi-hep.dong-luong-tuong-doi-tinh",
+        "physics.thpt.tuong-doi-hep.he-thuc-einstein",
+        "physics.thpt.tuong-doi-hep.nang-luong-nghi",
+        "physics.thpt.tuong-doi-hep.dong-nang-tuong-doi-tinh",
+        "physics.thpt.tuong-doi-hep.he-thuc-nang-luong-dong-luong",
+        "physics.thpt.tuong-doi-hep.cong-thuc-cong-van-toc-tuong-doi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một hạt chuyển động với vận tốc $v = 0{,}6c$. Tính hệ số Lorentz và cho biết đồng hồ gắn với hạt chạy chậm hơn đồng hồ đứng yên bao nhiêu lần.",
+          "solution": "Hệ số Lorentz: $\\gamma = \\dfrac{1}{\\sqrt{1 - v^2/c^2}} = \\dfrac{1}{\\sqrt{1 - 0{,}36}} = \\dfrac{1}{\\sqrt{0{,}64}} = \\dfrac{1}{0{,}8} = 1{,}25$.\nĐồng hồ chuyển động chạy chậm hơn $\\gamma = 1{,}25$ lần.",
+          "answer": "γ = 1,25"
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng công thức cộng vận tốc Galilê khi vận tốc gần c; phải dùng công thức cộng vận tốc tương đối tính.",
+        "Cho rằng năng lượng nghỉ bằng 0 khi vật đứng yên; thực ra E₀ = m₀c² khác 0.",
+        "Nhầm chiều của hiệu ứng: đồng hồ chuyển động chạy chậm và thước chuyển động ngắn lại, không phải ngược lại."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "tuong-doi",
+        "lorentz",
+        "einstein",
+        "nang-luong-nghi"
+      ]
+    }
+  ]
+}

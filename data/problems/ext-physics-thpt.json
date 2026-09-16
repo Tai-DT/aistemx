@@ -1,0 +1,2670 @@
+{
+ "meta": {
+  "file": "ext-physics-thpt.json",
+  "subject": "physics",
+  "title": "Bài tập bổ sung Vật lí THPT (phủ các công thức chưa có bài tập): động học, động lực học, nhiệt, điện từ, dao động - sóng, quang, lượng tử, hạt nhân, tương đối và chuyên đề quốc tế",
+  "levels": [
+   "thpt"
+  ],
+  "count": 59
+ },
+ "problems": [
+  {
+   "id": "prob.physics.ext-physics-thpt.0001",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động học",
+   "type": "tu-luan",
+   "statement_vi": "Một người đi 30 m theo hướng Đông, sau đó đi 40 m theo hướng Bắc, tổng thời gian 50 s. Tính độ lớn độ dịch chuyển tổng hợp và tốc độ trung bình của người đó.",
+   "statement_en": "A person walks 30 m East, then 40 m North, taking 50 s in total. Find the magnitude of the resultant displacement and the average speed.",
+   "answer": "d = 50 m; v_tb = 1,4 m/s",
+   "solution_steps": [
+    {
+     "explain": "Hai độ dịch chuyển vuông góc nhau nên độ dịch chuyển tổng hợp là cạnh huyền của tam giác vuông (định lí Pythagore).",
+     "latex": "d = \\sqrt{d_1^2 + d_2^2} = \\sqrt{30^2 + 40^2} = 50\\ \\text{m}"
+    },
+    {
+     "explain": "Tốc độ trung bình dùng QUÃNG ĐƯỜNG thực đi (30 + 40 = 70 m), khác với độ dịch chuyển.",
+     "latex": "v_{tb} = \\dfrac{s}{t} = \\dfrac{30 + 40}{50} = 1{,}4\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.do-dich-chuyen-tong-hop",
+    "physics.thpt.dong-hoc.toc-do-trung-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tổng hợp độ dịch chuyển vuông góc",
+    "phân biệt quãng đường và độ dịch chuyển"
+   ],
+   "tags": [
+    "dong-hoc",
+    "do-dich-chuyen"
+   ],
+   "hints": [
+    "Vẽ tam giác vuông với hai cạnh 30 m và 40 m.",
+    "Tốc độ trung bình dùng quãng đường 70 m, không phải 50 m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0002",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động học",
+   "type": "tu-luan",
+   "statement_vi": "Một vật được thả rơi tự do không vận tốc đầu từ độ cao 45 m. Lấy g = 10 m/s². Tính thời gian rơi và tốc độ vật đạt được ngay trước khi chạm đất.",
+   "statement_en": "An object is released from rest and falls freely from a height of 45 m (g = 10 m/s²). Find the fall time and the speed just before hitting the ground.",
+   "answer": "t = 3 s; v = 30 m/s",
+   "solution_steps": [
+    {
+     "explain": "Thời gian rơi tự do suy ra từ h = ½gt².",
+     "latex": "t = \\sqrt{\\dfrac{2h}{g}} = \\sqrt{\\dfrac{2 \\cdot 45}{10}} = 3\\ \\text{s}"
+    },
+    {
+     "explain": "Tốc độ khi chạm đất của vật rơi tự do (v_0 = 0).",
+     "latex": "v = g t = 10 \\cdot 3 = 30\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.roi-tu-do-thoi-gian-roi",
+    "physics.thpt.dong-hoc.roi-tu-do-van-toc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức rơi tự do",
+    "tính thời gian và vận tốc"
+   ],
+   "tags": [
+    "dong-hoc",
+    "roi-tu-do"
+   ],
+   "hints": [
+    "Rơi tự do có v0 = 0 nên h = ½gt².",
+    "Sau khi có t, dùng v = gt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0003",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động học",
+   "type": "tu-luan",
+   "statement_vi": "Từ độ cao 20 m, một vật được ném ngang với tốc độ đầu 15 m/s. Lấy g = 10 m/s². Tính tốc độ của vật khi chạm đất và góc hợp bởi vectơ vận tốc với phương ngang lúc đó.",
+   "statement_en": "From a height of 20 m an object is thrown horizontally at 15 m/s (g = 10 m/s²). Find the impact speed and the angle its velocity makes with the horizontal.",
+   "answer": "v ≈ 25 m/s; β ≈ 53°",
+   "solution_steps": [
+    {
+     "explain": "Chuyển động theo phương thẳng đứng là rơi tự do, thời gian chạm đất phụ thuộc độ cao.",
+     "latex": "t = \\sqrt{\\dfrac{2h}{g}} = \\sqrt{\\dfrac{2 \\cdot 20}{10}} = 2\\ \\text{s}"
+    },
+    {
+     "explain": "Vận tốc chạm đất là tổng hợp thành phần ngang không đổi và thành phần đứng v_y = gt.",
+     "latex": "v = \\sqrt{v_0^2 + (g t)^2} = \\sqrt{15^2 + 20^2} = 25\\ \\text{m/s}"
+    },
+    {
+     "explain": "Góc hợp với phương ngang xác định qua tỉ số hai thành phần vận tốc.",
+     "latex": "\\tan\\beta = \\dfrac{g t}{v_0} = \\dfrac{20}{15} \\approx 1{,}33 \\Rightarrow \\beta \\approx 53^\\circ"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.roi-tu-do-thoi-gian-roi",
+    "physics.thpt.dong-hoc.nem-ngang-van-toc-cham-dat",
+    "physics.thpt.dong-hoc.nem-ngang-goc-hop-phuong-ngang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "phân tích chuyển động ném ngang",
+    "tổng hợp vận tốc theo hai phương"
+   ],
+   "tags": [
+    "dong-hoc",
+    "nem-ngang"
+   ],
+   "hints": [
+    "Thành phần ngang giữ nguyên v0, thành phần đứng v_y = gt.",
+    "Góc β đo với phương ngang nên tanβ = v_y/v_x."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0004",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động học",
+   "type": "tu-luan",
+   "statement_vi": "Một bánh xe quay đều, thực hiện 300 vòng mỗi phút. Bán kính bánh xe là 0,4 m. Tính tần số, chu kì, tốc độ góc và tốc độ dài của một điểm ở vành bánh xe.",
+   "statement_en": "A wheel rotates uniformly at 300 revolutions per minute, radius 0.4 m. Find the frequency, period, angular speed and the linear speed of a point on the rim.",
+   "answer": "f = 5 Hz; T = 0,2 s; ω ≈ 31,4 rad/s; v ≈ 12,6 m/s",
+   "solution_steps": [
+    {
+     "explain": "Đổi số vòng/phút ra tần số (số vòng mỗi giây).",
+     "latex": "f = \\dfrac{300}{60} = 5\\ \\text{Hz}"
+    },
+    {
+     "explain": "Chu kì là nghịch đảo của tần số.",
+     "latex": "T = \\dfrac{1}{f} = \\dfrac{1}{5} = 0{,}2\\ \\text{s}"
+    },
+    {
+     "explain": "Tốc độ góc liên hệ với tần số.",
+     "latex": "\\omega = 2\\pi f = 2\\pi \\cdot 5 \\approx 31{,}4\\ \\text{rad/s}"
+    },
+    {
+     "explain": "Tốc độ dài của điểm trên vành bằng tốc độ góc nhân bán kính.",
+     "latex": "v = \\omega r = 31{,}4 \\cdot 0{,}4 \\approx 12{,}6\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.tan-so-chuyen-dong-tron-deu",
+    "physics.thpt.dong-hoc.chu-ki-chuyen-dong-tron-deu",
+    "physics.thpt.dong-hoc.toc-do-goc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "đổi đơn vị vòng/phút",
+    "liên hệ f, T, ω, v"
+   ],
+   "tags": [
+    "dong-hoc",
+    "chuyen-dong-tron"
+   ],
+   "hints": [
+    "300 vòng/phút = 5 vòng/giây.",
+    "v = ωr với ω tính bằng rad/s."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0005",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động học",
+   "type": "trac-nghiem",
+   "statement_vi": "Một ca nô có tốc độ 12 km/h so với dòng nước. Nước chảy với tốc độ 4 km/h. Khi ca nô đi NGƯỢC dòng, tốc độ của ca nô so với bờ là:",
+   "statement_en": "A boat moves at 12 km/h relative to the water; the current flows at 4 km/h. When the boat travels UPSTREAM, its speed relative to the bank is:",
+   "answer": "B",
+   "solution_steps": [
+    {
+     "explain": "Đi ngược dòng: vận tốc ca nô so với nước và vận tốc nước ngược chiều nhau nên lấy hiệu độ lớn.",
+     "latex": "v_{1,3} = \\left| v_{1,2} - v_{2,3} \\right| = \\left| 12 - 4 \\right| = 8\\ \\text{km/h}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.cong-van-toc-cung-phuong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "cộng vận tốc cùng phương",
+    "phân biệt xuôi và ngược dòng"
+   ],
+   "tags": [
+    "dong-hoc",
+    "cong-van-toc"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "16 km/h",
+     "why_wrong": "Đây là tốc độ khi đi XUÔI dòng (cộng), không phải ngược dòng."
+    },
+    {
+     "key": "B",
+     "text": "8 km/h",
+     "why_wrong": ""
+    },
+    {
+     "key": "C",
+     "text": "12 km/h",
+     "why_wrong": "Đây là tốc độ so với nước, chưa trừ ảnh hưởng của dòng chảy."
+    },
+    {
+     "key": "D",
+     "text": "4 km/h",
+     "why_wrong": "Đây là tốc độ của dòng nước, không phải của ca nô so với bờ."
+    }
+   ],
+   "hints": [
+    "Ngược dòng thì hai vận tốc ngược chiều.",
+    "Lấy hiệu độ lớn của hai vận tốc."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0006",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động học",
+   "type": "dien-so",
+   "statement_vi": "Một vật chuyển động thẳng nhanh dần đều với vận tốc đầu 2 m/s và gia tốc 4 m/s². Tính quãng đường vật đi được trong giây thứ 5 (đơn vị m).",
+   "statement_en": "An object moves with uniform acceleration, initial velocity 2 m/s and acceleration 4 m/s². Find the distance covered during the 5th second (in m).",
+   "answer": "20 m",
+   "solution_steps": [
+    {
+     "explain": "Quãng đường đi trong giây thứ n dùng công thức riêng, không cần tính hiệu hai quãng đường.",
+     "latex": "\\Delta s_n = v_0 + \\dfrac{a(2n - 1)}{2} = 2 + \\dfrac{4(2 \\cdot 5 - 1)}{2} = 2 + 18 = 20\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-hoc.quang-duong-trong-giay-thu-n"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức quãng đường giây thứ n"
+   ],
+   "tags": [
+    "dong-hoc",
+    "bien-doi-deu"
+   ],
+   "answer_numeric": 20.0,
+   "answer_unit": "m",
+   "tolerance": 0.1,
+   "hints": [
+    "Dùng Δs_n = v0 + a(2n−1)/2.",
+    "Với n = 5 thì 2n − 1 = 9."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0007",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động lực học",
+   "type": "dien-so",
+   "statement_vi": "Treo một vật khối lượng 0,2 kg vào một lò xo thẳng đứng thì lò xo dãn 4 cm. Lấy g = 10 m/s². Tính độ cứng của lò xo (đơn vị N/m).",
+   "statement_en": "A 0.2 kg mass hung on a vertical spring stretches it 4 cm (g = 10 m/s²). Find the spring constant (in N/m).",
+   "answer": "50 N/m",
+   "solution_steps": [
+    {
+     "explain": "Vật cân bằng nên lực đàn hồi cân bằng với trọng lực.",
+     "latex": "P = m g = 0{,}2 \\cdot 10 = 2\\ \\text{N}"
+    },
+    {
+     "explain": "Áp dụng định luật Hooke với độ dãn 4 cm = 0,04 m để tìm độ cứng.",
+     "latex": "F_{dh} = k\\left| \\Delta l \\right| \\Rightarrow k = \\dfrac{P}{\\left|\\Delta l\\right|} = \\dfrac{2}{0{,}04} = 50\\ \\text{N/m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.trong-luc",
+    "physics.thpt.dong-luc-hoc.dinh-luat-hooke"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "cân bằng lực đàn hồi và trọng lực",
+    "áp dụng định luật Hooke"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "luc-dan-hoi"
+   ],
+   "answer_numeric": 50.0,
+   "answer_unit": "N/m",
+   "tolerance": 0.5,
+   "hints": [
+    "Ở vị trí cân bằng: F_đh = P = mg.",
+    "Đổi 4 cm = 0,04 m trước khi chia."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0008",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động lực học",
+   "type": "tu-luan",
+   "statement_vi": "Coi Trái Đất là quả cầu bán kính R = 6400 km, gia tốc rơi tự do ở bề mặt g₀ = 9,8 m/s². Tính tốc độ vũ trụ cấp I và tốc độ vũ trụ cấp II tại bề mặt Trái Đất.",
+   "statement_en": "Treat Earth as a sphere of radius R = 6400 km with surface gravity g0 = 9.8 m/s². Find the first and second cosmic (orbital and escape) speeds at Earth's surface.",
+   "answer": "v_I ≈ 7,9 km/s; v_II ≈ 11,2 km/s",
+   "solution_steps": [
+    {
+     "explain": "Tốc độ vũ trụ cấp I là tốc độ để vật bay quanh Trái Đất sát bề mặt, tính theo g0 và R.",
+     "latex": "v_{I} = \\sqrt{g_0 R} = \\sqrt{9{,}8 \\cdot 6{,}4 \\cdot 10^6} \\approx 7{,}9 \\cdot 10^3\\ \\text{m/s}"
+    },
+    {
+     "explain": "Tốc độ vũ trụ cấp II (tốc độ thoát) lớn hơn cấp I một hệ số căn 2.",
+     "latex": "v_{II} = v_{I}\\sqrt{2} \\approx 7{,}9 \\cdot 1{,}414 \\approx 11{,}2 \\cdot 10^3\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.van-toc-vu-tru-cap-i",
+    "physics.thpt.dong-luc-hoc.van-toc-vu-tru-cap-ii"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính tốc độ vũ trụ",
+    "quan hệ giữa cấp I và cấp II"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "hap-dan"
+   ],
+   "hints": [
+    "v_I = √(g0·R).",
+    "v_II = v_I·√2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0009",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động lực học",
+   "type": "dien-so",
+   "statement_vi": "Một ô tô khối lượng 1000 kg đi qua đỉnh một cầu vồng lên (cong lồi) có bán kính cong 50 m với tốc độ 10 m/s. Lấy g = 10 m/s². Tính áp lực của ô tô lên mặt cầu tại đỉnh (đơn vị N).",
+   "statement_en": "A 1000 kg car passes the top of a convex bridge of radius 50 m at 10 m/s (g = 10 m/s²). Find the force the car exerts on the bridge at the top (in N).",
+   "answer": "8000 N",
+   "solution_steps": [
+    {
+     "explain": "Tại đỉnh cầu vồng lên, hợp lực hướng vào tâm (xuống dưới) đóng vai trò lực hướng tâm, nên áp lực nhỏ hơn trọng lượng.",
+     "latex": "N = m\\left(g - \\dfrac{v^2}{r}\\right) = 1000\\left(10 - \\dfrac{10^2}{50}\\right) = 1000(10 - 2) = 8000\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luc-hoc.xe-qua-cau-vong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "phân tích lực hướng tâm",
+    "áp lực trên cầu cong"
+   ],
+   "tags": [
+    "dong-luc-hoc",
+    "luc-huong-tam"
+   ],
+   "answer_numeric": 8000.0,
+   "answer_unit": "N",
+   "tolerance": 1.0,
+   "hints": [
+    "Cầu vồng lên: N = m(g − v²/r).",
+    "Áp lực nhỏ hơn trọng lượng mg = 10000 N."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0010",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cân bằng vật rắn",
+   "type": "dien-so",
+   "statement_vi": "Một ngẫu lực gồm hai lực song song, ngược chiều, cùng độ lớn 20 N, tác dụng lên một vật rắn. Khoảng cách giữa hai giá của lực (cánh tay đòn) là 0,3 m. Tính mômen của ngẫu lực (đơn vị N·m).",
+   "statement_en": "A couple consists of two antiparallel forces of equal magnitude 20 N acting on a rigid body, with 0.3 m between their lines of action. Find the torque of the couple (in N·m).",
+   "answer": "6 N·m",
+   "solution_steps": [
+    {
+     "explain": "Mômen của ngẫu lực bằng độ lớn một lực nhân với cánh tay đòn (khoảng cách giữa hai giá).",
+     "latex": "M = F d = 20 \\cdot 0{,}3 = 6\\ \\text{N·m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.can-bang-vat-ran.ngau-luc"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng công thức mômen ngẫu lực"
+   ],
+   "tags": [
+    "can-bang",
+    "ngau-luc"
+   ],
+   "answer_numeric": 6.0,
+   "answer_unit": "N·m",
+   "tolerance": 0.1,
+   "hints": [
+    "M = F·d, d là khoảng cách giữa hai giá.",
+    "Không nhân đôi lực dù có hai lực."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0011",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cân bằng vật rắn",
+   "type": "tu-luan",
+   "statement_vi": "Hai lực song song cùng chiều có độ lớn F₁ = 30 N và F₂ = 20 N tác dụng lên một thanh cứng, hai giá cách nhau 0,5 m. Tìm độ lớn của hợp lực và vị trí điểm đặt hợp lực (tính từ giá của F₁).",
+   "statement_en": "Two parallel forces in the same direction, F1 = 30 N and F2 = 20 N, act on a rigid bar with their lines 0.5 m apart. Find the resultant force and the position of its point of application (measured from the line of F1).",
+   "answer": "F = 50 N; cách giá F₁ 0,2 m",
+   "solution_steps": [
+    {
+     "explain": "Hợp của hai lực song song cùng chiều có độ lớn bằng tổng hai lực.",
+     "latex": "F = F_1 + F_2 = 30 + 20 = 50\\ \\text{N}"
+    },
+    {
+     "explain": "Điểm đặt chia trong theo tỉ lệ nghịch với độ lớn hai lực (quy tắc mômen).",
+     "latex": "\\dfrac{F_1}{F_2} = \\dfrac{d_2}{d_1},\\quad d_1 + d_2 = 0{,}5 \\Rightarrow \\dfrac{30}{20} = \\dfrac{d_2}{d_1}"
+    },
+    {
+     "explain": "Giải hệ để tìm khoảng cách từ hợp lực đến giá của F₁.",
+     "latex": "d_1 = 0{,}2\\ \\text{m};\\quad d_2 = 0{,}3\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.can-bang-vat-ran.hop-luc-song-song-cung-chieu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "hợp lực song song cùng chiều",
+    "quy tắc chia trong tỉ lệ nghịch"
+   ],
+   "tags": [
+    "can-bang",
+    "hop-luc-song-song"
+   ],
+   "hints": [
+    "F = F1 + F2 luôn đúng cho lực cùng chiều.",
+    "Điểm đặt gần lực lớn hơn (gần F1)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0012",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công và năng lượng",
+   "type": "tu-luan",
+   "statement_vi": "Một vật khối lượng 2 kg chuyển động với tốc độ 5 m/s. Tính động lượng và động năng của vật, sau đó kiểm chứng lại động lượng bằng hệ thức liên hệ giữa động năng và động lượng.",
+   "statement_en": "A 2 kg object moves at 5 m/s. Find its momentum and kinetic energy, then verify the momentum using the relation between kinetic energy and momentum.",
+   "answer": "p = 10 kg·m/s; W_đ = 25 J",
+   "solution_steps": [
+    {
+     "explain": "Động lượng bằng khối lượng nhân vận tốc.",
+     "latex": "p = m v = 2 \\cdot 5 = 10\\ \\text{kg·m/s}"
+    },
+    {
+     "explain": "Động năng tính trực tiếp từ khối lượng và tốc độ.",
+     "latex": "W_d = \\dfrac{1}{2} m v^2 = \\dfrac{1}{2} \\cdot 2 \\cdot 5^2 = 25\\ \\text{J}"
+    },
+    {
+     "explain": "Kiểm chứng bằng hệ thức liên hệ giữa động năng và động lượng.",
+     "latex": "p = \\sqrt{2 m W_d} = \\sqrt{2 \\cdot 2 \\cdot 25} = 10\\ \\text{kg·m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luong.dong-luong",
+    "physics.thpt.cong-nang-luong.dong-nang",
+    "physics.thpt.cong-nang-luong.lien-he-dong-nang-dong-luong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính động lượng và động năng",
+    "dùng hệ thức p² = 2mW_đ"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "dong-luong"
+   ],
+   "hints": [
+    "p = mv, W_đ = ½mv².",
+    "Hệ thức: p = √(2m·W_đ)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0013",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công và năng lượng",
+   "type": "tu-luan",
+   "statement_vi": "Một vật khối lượng 0,5 kg được thả rơi tự do không vận tốc đầu từ độ cao 8 m so với mặt đất. Lấy g = 10 m/s², chọn gốc thế năng tại mặt đất, bỏ qua sức cản. Tính cơ năng của vật và tốc độ của vật ngay khi chạm đất bằng định luật bảo toàn cơ năng.",
+   "statement_en": "A 0.5 kg object is released from rest at 8 m above the ground (g = 10 m/s², potential energy reference at ground, no air resistance). Using energy conservation, find its mechanical energy and its speed on hitting the ground.",
+   "answer": "W = 40 J; v ≈ 12,6 m/s",
+   "solution_steps": [
+    {
+     "explain": "Tại điểm thả, động năng bằng 0 nên cơ năng bằng thế năng trọng trường.",
+     "latex": "W = W_t = m g z = 0{,}5 \\cdot 10 \\cdot 8 = 40\\ \\text{J}"
+    },
+    {
+     "explain": "Cơ năng bảo toàn: khi chạm đất thế năng bằng 0, toàn bộ chuyển thành động năng.",
+     "latex": "W = W_d = \\dfrac{1}{2} m v^2 \\Rightarrow v = \\sqrt{\\dfrac{2W}{m}} = \\sqrt{\\dfrac{2 \\cdot 40}{0{,}5}} \\approx 12{,}6\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cong-nang-luong.the-nang-trong-truong",
+    "physics.thpt.cong-nang-luong.co-nang",
+    "physics.thpt.cong-nang-luong.dong-nang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng bảo toàn cơ năng",
+    "chuyển hóa thế năng thành động năng"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "bao-toan-co-nang"
+   ],
+   "hints": [
+    "Ở đỉnh: W = W_t = mgz.",
+    "Khi chạm đất: W_t = 0 nên W = ½mv²."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0014",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Công và năng lượng",
+   "type": "dien-so",
+   "statement_vi": "Một động cơ có công suất có ích 600 W và công suất toàn phần (tiêu thụ) 800 W. Tính hiệu suất của động cơ (đơn vị %).",
+   "statement_en": "A motor delivers a useful power of 600 W while consuming 800 W. Find its efficiency (in %).",
+   "answer": "75 %",
+   "solution_steps": [
+    {
+     "explain": "Hiệu suất bằng tỉ số công suất có ích trên công suất toàn phần.",
+     "latex": "H = \\dfrac{P_{\\text{có ích}}}{P_{\\text{toàn phần}}} \\times 100\\% = \\dfrac{600}{800} \\times 100\\% = 75\\%"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cong-nang-luong.hieu-suat"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính hiệu suất theo công suất"
+   ],
+   "tags": [
+    "cong-nang-luong",
+    "hieu-suat"
+   ],
+   "answer_numeric": 75.0,
+   "answer_unit": "%",
+   "tolerance": 0.5,
+   "hints": [
+    "H = P_ích / P_toàn phần.",
+    "Kết quả nhỏ hơn 100%."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0015",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động lượng",
+   "type": "dien-so",
+   "statement_vi": "Một động cơ phản lực phụt khí ra sau với tốc độ 2000 m/s so với thân, lưu lượng khối lượng khí phụt ra là 5 kg/s. Tính độ lớn lực đẩy của động cơ (đơn vị N).",
+   "statement_en": "A jet engine expels gas backward at 2000 m/s relative to the body, at a mass flow rate of 5 kg/s. Find the magnitude of the thrust (in N).",
+   "answer": "10000 N",
+   "solution_steps": [
+    {
+     "explain": "Lực đẩy bằng tốc độ phụt nhân với lưu lượng khối lượng khí.",
+     "latex": "F = u\\left|\\dfrac{dm}{dt}\\right| = 2000 \\cdot 5 = 10000\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-luong.luc-day-dong-co-phan-luc"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng công thức lực đẩy phản lực"
+   ],
+   "tags": [
+    "dong-luong",
+    "phan-luc"
+   ],
+   "answer_numeric": 10000.0,
+   "answer_unit": "N",
+   "tolerance": 1.0,
+   "hints": [
+    "F = u·|dm/dt|.",
+    "Nhân tốc độ phụt với lưu lượng."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0016",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chuyển động quay của vật rắn",
+   "type": "tu-luan",
+   "statement_vi": "Một bánh đà bắt đầu quay từ trạng thái nghỉ, quay nhanh dần đều và đạt tốc độ góc 20 rad/s sau 5 s. Tính gia tốc góc và góc mà bánh đà đã quay được trong khoảng thời gian đó.",
+   "statement_en": "A flywheel starts from rest and accelerates uniformly to an angular speed of 20 rad/s in 5 s. Find its angular acceleration and the angle it has turned through.",
+   "answer": "γ = 4 rad/s²; φ = 50 rad",
+   "solution_steps": [
+    {
+     "explain": "Gia tốc góc bằng độ biến thiên tốc độ góc chia thời gian.",
+     "latex": "\\gamma = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{20 - 0}{5} = 4\\ \\text{rad/s}^2"
+    },
+    {
+     "explain": "Dùng hệ thức độc lập thời gian của chuyển động quay biến đổi đều để tìm góc quay.",
+     "latex": "\\omega^2 - \\omega_0^2 = 2\\gamma\\left(\\varphi - \\varphi_0\\right) \\Rightarrow \\varphi = \\dfrac{20^2}{2 \\cdot 4} = 50\\ \\text{rad}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chuyen-dong-quay.gia-toc-goc",
+    "physics.thpt.chuyen-dong-quay.he-thuc-doc-lap-quay"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính gia tốc góc",
+    "dùng hệ thức độc lập thời gian"
+   ],
+   "tags": [
+    "chuyen-dong-quay",
+    "quay-bien-doi-deu"
+   ],
+   "hints": [
+    "γ = Δω/Δt.",
+    "ω² − ω0² = 2γφ với ω0 = 0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0017",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chất khí",
+   "type": "tu-luan",
+   "statement_vi": "Một bình chứa 0,5 mol khí lí tưởng. Cho số Avogadro N_A = 6,022·10²³ mol⁻¹, hằng số Boltzmann k = 1,38·10⁻²³ J/K. Khí chiếm thể tích 5 lít ở nhiệt độ 300 K. Tính số phân tử khí và áp suất khí trong bình theo dạng phân tử của phương trình khí lí tưởng.",
+   "statement_en": "A vessel holds 0.5 mol of ideal gas (N_A = 6.022·10^23 /mol, k = 1.38·10^-23 J/K). The gas occupies 5 L at 300 K. Find the number of molecules and the pressure using the molecular form of the ideal gas law.",
+   "answer": "N ≈ 3,01·10²³ phân tử; p ≈ 2,49·10⁵ Pa",
+   "solution_steps": [
+    {
+     "explain": "Số phân tử bằng số mol nhân số Avogadro.",
+     "latex": "N = n N_A = 0{,}5 \\cdot 6{,}022 \\cdot 10^{23} \\approx 3{,}01 \\cdot 10^{23}"
+    },
+    {
+     "explain": "Dùng dạng phân tử pV = NkT với V = 5 L = 5·10⁻³ m³.",
+     "latex": "p = \\dfrac{N k T}{V} = \\dfrac{3{,}01 \\cdot 10^{23} \\cdot 1{,}38 \\cdot 10^{-23} \\cdot 300}{5 \\cdot 10^{-3}} \\approx 2{,}49 \\cdot 10^{5}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.so-mol-va-so-phan-tu",
+    "physics.thpt.chat-khi.hang-so-boltzmann"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính số phân tử",
+    "dùng phương trình pV = NkT"
+   ],
+   "tags": [
+    "chat-khi",
+    "khi-li-tuong"
+   ],
+   "hints": [
+    "N = n·N_A.",
+    "Đổi 5 L = 5·10⁻³ m³ trước khi dùng pV = NkT."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0018",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chất khí",
+   "type": "dien-so",
+   "statement_vi": "Tính khối lượng riêng của khí oxi (khối lượng mol M = 32 g/mol) ở áp suất 10⁵ Pa và nhiệt độ 300 K. Cho R = 8,31 J/(mol·K). Kết quả tính bằng kg/m³.",
+   "statement_en": "Find the density of oxygen gas (molar mass M = 32 g/mol) at 10^5 Pa and 300 K (R = 8.31 J/(mol·K)). Give the answer in kg/m³.",
+   "answer": "≈ 1,28 kg/m³",
+   "solution_steps": [
+    {
+     "explain": "Khối lượng riêng của khí lí tưởng suy từ pV = (m/M)RT, đổi M = 0,032 kg/mol.",
+     "latex": "\\rho = \\dfrac{p M}{R T} = \\dfrac{10^5 \\cdot 0{,}032}{8{,}31 \\cdot 300} \\approx 1{,}28\\ \\text{kg/m}^3"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-khi.khoi-luong-rieng-chat-khi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức khối lượng riêng khí",
+    "đổi đơn vị khối lượng mol"
+   ],
+   "tags": [
+    "chat-khi",
+    "khoi-luong-rieng"
+   ],
+   "answer_numeric": 1.28,
+   "answer_unit": "kg/m^3",
+   "tolerance": 0.03,
+   "hints": [
+    "ρ = pM/(RT).",
+    "M phải đổi ra kg/mol (0,032)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0019",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt động lực học",
+   "type": "tu-luan",
+   "statement_vi": "Cho 2 mol khí lí tưởng lưỡng nguyên tử (số bậc tự do i = 5), R = 8,31 J/(mol·K). Tính nhiệt dung mol đẳng tích C_V, nhiệt dung mol đẳng áp C_p (dùng hệ thức Mayer) và độ biến thiên nội năng khi nhiệt độ tăng thêm 50 K.",
+   "statement_en": "For 2 mol of a diatomic ideal gas (degrees of freedom i = 5, R = 8.31 J/(mol·K)), find the molar heat capacity at constant volume C_V, at constant pressure C_p (via Mayer's relation), and the change in internal energy when the temperature rises by 50 K.",
+   "answer": "C_V ≈ 20,8 J/(mol·K); C_p ≈ 29,1 J/(mol·K); ΔU ≈ 2077,5 J",
+   "solution_steps": [
+    {
+     "explain": "Nhiệt dung mol đẳng tích tỉ lệ với số bậc tự do.",
+     "latex": "C_V = \\dfrac{i}{2} R = \\dfrac{5}{2} \\cdot 8{,}31 \\approx 20{,}8\\ \\text{J/(mol·K)}"
+    },
+    {
+     "explain": "Hệ thức Mayer liên hệ hai nhiệt dung mol.",
+     "latex": "C_p = C_V + R = 20{,}8 + 8{,}31 \\approx 29{,}1\\ \\text{J/(mol·K)}"
+    },
+    {
+     "explain": "Độ biến thiên nội năng của khí lí tưởng chỉ phụ thuộc nhiệt độ.",
+     "latex": "\\Delta U = n C_V \\Delta T = 2 \\cdot 20{,}775 \\cdot 50 \\approx 2077{,}5\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.nhiet-dong-luc-hoc.nhiet-dung-mol-dang-tich",
+    "physics.thpt.nhiet-dong-luc-hoc.he-thuc-mayer",
+    "physics.thpt.nhiet-dong-luc-hoc.do-bien-thien-noi-nang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "tính nhiệt dung mol",
+    "áp dụng hệ thức Mayer",
+    "tính biến thiên nội năng"
+   ],
+   "tags": [
+    "nhiet-dong-luc-hoc",
+    "nhiet-dung"
+   ],
+   "hints": [
+    "C_V = (i/2)R với i = 5.",
+    "C_p − C_V = R (Mayer)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0020",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt động lực học",
+   "type": "dien-so",
+   "statement_vi": "Một máy lạnh mỗi chu trình lấy nhiệt lượng 300 J từ nguồn lạnh và tiêu tốn công 100 J. Tính hiệu năng (hệ số làm lạnh) của máy lạnh.",
+   "statement_en": "In each cycle a refrigerator removes 300 J of heat from the cold reservoir while consuming 100 J of work. Find the coefficient of performance of the refrigerator.",
+   "answer": "ε = 3",
+   "solution_steps": [
+    {
+     "explain": "Hiệu năng của máy lạnh bằng nhiệt lấy từ nguồn lạnh chia cho công tiêu tốn.",
+     "latex": "\\varepsilon = \\dfrac{Q_2}{A} = \\dfrac{300}{100} = 3"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.nhiet-dong-luc-hoc.hieu-nang-may-lanh"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính hiệu năng máy lạnh"
+   ],
+   "tags": [
+    "nhiet-dong-luc-hoc",
+    "may-lanh"
+   ],
+   "answer_numeric": 3.0,
+   "answer_unit": "",
+   "tolerance": 0.05,
+   "hints": [
+    "ε = Q_lạnh / A.",
+    "Hiệu năng máy lạnh có thể lớn hơn 1."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0021",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chất rắn và chất lỏng",
+   "type": "dien-so",
+   "statement_vi": "Một khối kim loại có thể tích ban đầu 2000 cm³ ở 0 °C, hệ số nở dài α = 1,2·10⁻⁵ K⁻¹. Khi nung nóng đến 100 °C, tính độ tăng thể tích của khối (đơn vị cm³). Lấy hệ số nở khối β ≈ 3α.",
+   "statement_en": "A metal block of initial volume 2000 cm³ at 0 °C has linear expansion coefficient α = 1.2·10^-5 K^-1. Heated to 100 °C, find the increase in its volume (in cm³), using β ≈ 3α.",
+   "answer": "≈ 7,2 cm³",
+   "solution_steps": [
+    {
+     "explain": "Hệ số nở khối gần bằng ba lần hệ số nở dài.",
+     "latex": "\\beta \\approx 3\\alpha = 3 \\cdot 1{,}2 \\cdot 10^{-5} = 3{,}6 \\cdot 10^{-5}\\ \\text{K}^{-1}"
+    },
+    {
+     "explain": "Độ tăng thể tích tỉ lệ với thể tích ban đầu và độ tăng nhiệt độ.",
+     "latex": "\\Delta V = \\beta V_0 \\Delta t = 3{,}6 \\cdot 10^{-5} \\cdot 2000 \\cdot 100 = 7{,}2\\ \\text{cm}^3"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.su-no-khoi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ hệ số nở khối và nở dài",
+    "tính độ nở thể tích"
+   ],
+   "tags": [
+    "chat-ran",
+    "su-no-khoi"
+   ],
+   "answer_numeric": 7.2,
+   "answer_unit": "cm^3",
+   "tolerance": 0.1,
+   "hints": [
+    "β ≈ 3α.",
+    "ΔV = β·V0·Δt."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0022",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chất rắn và chất lỏng",
+   "type": "tu-luan",
+   "statement_vi": "Một thanh thép có tiết diện ngang 1 cm², chiều dài ban đầu 2 m, chịu lực kéo dọc trục 2·10⁴ N. Suất Young của thép E = 2·10¹¹ Pa. Tính ứng suất, độ biến dạng tỉ đối và độ dãn của thanh.",
+   "statement_en": "A steel rod of cross-section 1 cm² and initial length 2 m is under an axial tension of 2·10^4 N. Young's modulus E = 2·10^11 Pa. Find the stress, the strain and the elongation.",
+   "answer": "σ = 2·10⁸ Pa; ε = 10⁻³; Δl = 2 mm",
+   "solution_steps": [
+    {
+     "explain": "Ứng suất bằng lực chia tiết diện, đổi 1 cm² = 10⁻⁴ m².",
+     "latex": "\\sigma = \\dfrac{F}{S} = \\dfrac{2 \\cdot 10^4}{10^{-4}} = 2 \\cdot 10^{8}\\ \\text{Pa}"
+    },
+    {
+     "explain": "Định luật Hooke cho biến dạng: độ biến dạng tỉ đối bằng ứng suất chia suất Young.",
+     "latex": "\\varepsilon = \\dfrac{\\sigma}{E} = \\dfrac{2 \\cdot 10^{8}}{2 \\cdot 10^{11}} = 10^{-3}"
+    },
+    {
+     "explain": "Độ dãn bằng độ biến dạng tỉ đối nhân chiều dài ban đầu.",
+     "latex": "\\left|\\Delta l\\right| = \\varepsilon\\, l_0 = 10^{-3} \\cdot 2 = 2 \\cdot 10^{-3}\\ \\text{m} = 2\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.ung-suat",
+    "physics.thpt.chat-ran-chat-long.dinh-luat-hooke-bien-dang",
+    "physics.thpt.chat-ran-chat-long.do-bien-dang-ti-doi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính ứng suất",
+    "áp dụng định luật Hooke biến dạng",
+    "tính độ dãn"
+   ],
+   "tags": [
+    "chat-ran",
+    "bien-dang"
+   ],
+   "hints": [
+    "σ = F/S, đổi 1 cm² = 10⁻⁴ m².",
+    "ε = σ/E rồi Δl = ε·l0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0023",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Chất rắn và chất lỏng",
+   "type": "dien-so",
+   "statement_vi": "Đốt cháy hoàn toàn 0,5 kg than có năng suất tỏa nhiệt q = 4,4·10⁷ J/kg. Tính nhiệt lượng tỏa ra (đơn vị J).",
+   "statement_en": "Completely burning 0.5 kg of coal with calorific value q = 4.4·10^7 J/kg. Find the heat released (in J).",
+   "answer": "2,2·10⁷ J",
+   "solution_steps": [
+    {
+     "explain": "Nhiệt lượng tỏa ra bằng năng suất tỏa nhiệt nhân khối lượng nhiên liệu.",
+     "latex": "Q = q m = 4{,}4 \\cdot 10^7 \\cdot 0{,}5 = 2{,}2 \\cdot 10^{7}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.chat-ran-chat-long.nhiet-luong-toa-ra-cua-nhien-lieu"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "áp dụng công thức nhiệt lượng nhiên liệu"
+   ],
+   "tags": [
+    "chat-ran",
+    "nhien-lieu"
+   ],
+   "answer_numeric": 22000000.0,
+   "answer_unit": "J",
+   "tolerance": 100000.0,
+   "hints": [
+    "Q = q·m.",
+    "q là năng suất tỏa nhiệt của nhiên liệu."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0024",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện tích - Điện trường",
+   "type": "dien-so",
+   "statement_vi": "Hai điện tích điểm q₁ = q₂ = 2·10⁻⁶ C đặt cách nhau 0,3 m trong một điện môi có hằng số điện môi ε = 2. Cho k = 9·10⁹ N·m²/C². Tính độ lớn lực tương tác giữa chúng (đơn vị N).",
+   "statement_en": "Two point charges q1 = q2 = 2·10^-6 C are 0.3 m apart in a dielectric with permittivity constant ε = 2 (k = 9·10^9 N·m²/C²). Find the magnitude of the force between them (in N).",
+   "answer": "0,2 N",
+   "solution_steps": [
+    {
+     "explain": "Định luật Coulomb trong điện môi: lực giảm ε lần so với trong chân không.",
+     "latex": "F = k\\dfrac{\\left|q_1 q_2\\right|}{\\varepsilon r^2} = 9 \\cdot 10^9 \\cdot \\dfrac{2 \\cdot 10^{-6} \\cdot 2 \\cdot 10^{-6}}{2 \\cdot 0{,}3^2} = 0{,}2\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-dien-moi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định luật Coulomb trong điện môi"
+   ],
+   "tags": [
+    "dien-tich",
+    "coulomb"
+   ],
+   "answer_numeric": 0.2,
+   "answer_unit": "N",
+   "tolerance": 0.005,
+   "hints": [
+    "Có ε ở mẫu số làm lực giảm 2 lần.",
+    "Nhớ bình phương khoảng cách 0,3 m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0025",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Tụ điện",
+   "type": "dien-so",
+   "statement_vi": "Một tụ điện có điện dung 10 µF. Ban đầu hiệu điện thế giữa hai bản là 4 V, sau đó tăng lên 12 V. Tính điện lượng dịch chuyển thêm đến tụ (đơn vị µC).",
+   "statement_en": "A 10 µF capacitor initially has 4 V across its plates, then the voltage is raised to 12 V. Find the additional charge that flows onto the capacitor (in µC).",
+   "answer": "80 µC",
+   "solution_steps": [
+    {
+     "explain": "Điện lượng dịch chuyển thêm bằng điện dung nhân độ tăng hiệu điện thế.",
+     "latex": "\\Delta Q = C\\,(U_2 - U_1) = 10 \\cdot 10^{-6} \\cdot (12 - 4) = 8 \\cdot 10^{-5}\\ \\text{C} = 80\\ \\mu\\text{C}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.tu-dien.dien-luong-dich-chuyen"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính điện lượng dịch chuyển theo ΔU"
+   ],
+   "tags": [
+    "tu-dien",
+    "dien-luong"
+   ],
+   "answer_numeric": 80.0,
+   "answer_unit": "µC",
+   "tolerance": 1.0,
+   "hints": [
+    "ΔQ = C·ΔU.",
+    "ΔU = 12 − 4 = 8 V."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0026",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dòng điện không đổi",
+   "type": "tu-luan",
+   "statement_vi": "Một dây dẫn hình trụ bằng đồng có điện trở suất ρ = 1,7·10⁻⁸ Ω·m, dài 100 m, tiết diện 1 mm². Tính điện trở của dây. Sau đó mắc nối tiếp dây này với một điện trở 3,3 Ω. Tính điện trở tương đương của đoạn mạch.",
+   "statement_en": "A cylindrical copper wire (resistivity ρ = 1.7·10^-8 Ω·m) is 100 m long with cross-section 1 mm². Find its resistance, then connect it in series with a 3.3 Ω resistor and find the equivalent resistance.",
+   "answer": "R_dây = 1,7 Ω; R_tđ = 5 Ω",
+   "solution_steps": [
+    {
+     "explain": "Điện trở dây dẫn hình trụ, đổi tiết diện 1 mm² = 10⁻⁶ m².",
+     "latex": "R = \\rho\\dfrac{\\ell}{S} = 1{,}7 \\cdot 10^{-8} \\cdot \\dfrac{100}{10^{-6}} = 1{,}7\\ \\Omega"
+    },
+    {
+     "explain": "Mắc nối tiếp thì điện trở tương đương bằng tổng các điện trở.",
+     "latex": "R_{td} = R_1 + R_2 = 1{,}7 + 3{,}3 = 5\\ \\Omega"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-dien-khong-doi.dien-tro-day-dan",
+    "physics.thpt.dong-dien-khong-doi.ghep-dien-tro-noi-tiep"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính điện trở dây dẫn",
+    "ghép điện trở nối tiếp"
+   ],
+   "tags": [
+    "dong-dien",
+    "dien-tro"
+   ],
+   "hints": [
+    "R = ρ·ℓ/S, đổi 1 mm² = 10⁻⁶ m².",
+    "Nối tiếp: R_tđ = R1 + R2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0027",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dòng điện không đổi",
+   "type": "dien-so",
+   "statement_vi": "Một bếp điện có điện trở 44 Ω được mắc vào hiệu điện thế 220 V trong 10 phút. Tính điện năng tiêu thụ (công của dòng điện) của bếp (đơn vị J).",
+   "statement_en": "An electric stove of resistance 44 Ω is connected to 220 V for 10 minutes. Find the electrical energy consumed (in J).",
+   "answer": "660000 J",
+   "solution_steps": [
+    {
+     "explain": "Công của dòng điện tính theo hiệu điện thế và điện trở, đổi 10 phút = 600 s.",
+     "latex": "A = \\dfrac{U^2}{R}t = \\dfrac{220^2}{44} \\cdot 600 = 1100 \\cdot 600 = 660000\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dong-dien-khong-doi.cong-cua-dong-dien"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính công của dòng điện",
+    "đổi đơn vị thời gian"
+   ],
+   "tags": [
+    "dong-dien",
+    "cong-dien"
+   ],
+   "answer_numeric": 660000.0,
+   "answer_unit": "J",
+   "tolerance": 100.0,
+   "hints": [
+    "A = U²·t/R.",
+    "Đổi 10 phút = 600 s."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0028",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Từ trường",
+   "type": "dien-so",
+   "statement_vi": "Một ống dây dài 0,5 m gồm 1000 vòng dây, có dòng điện 2 A chạy qua. Tính độ lớn cảm ứng từ trong lòng ống dây (coi ống dây dài, lõi không khí). Kết quả tính bằng tesla.",
+   "statement_en": "A 0.5 m long solenoid of 1000 turns carries a current of 2 A. Find the magnetic flux density inside it (long air-core solenoid). Give the answer in tesla.",
+   "answer": "≈ 5,03·10⁻³ T",
+   "solution_steps": [
+    {
+     "explain": "Mật độ vòng dây là số vòng trên đơn vị chiều dài.",
+     "latex": "n = \\dfrac{N}{\\ell} = \\dfrac{1000}{0{,}5} = 2000\\ \\text{vòng/m}"
+    },
+    {
+     "explain": "Cảm ứng từ trong lòng ống dây dài tỉ lệ với mật độ vòng và cường độ dòng điện.",
+     "latex": "B = 4\\pi \\cdot 10^{-7} n I = 4\\pi \\cdot 10^{-7} \\cdot 2000 \\cdot 2 \\approx 5{,}03 \\cdot 10^{-3}\\ \\text{T}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.tu-truong.cam-ung-tu-ong-day"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính mật độ vòng dây",
+    "tính cảm ứng từ trong ống dây"
+   ],
+   "tags": [
+    "tu-truong",
+    "ong-day"
+   ],
+   "answer_numeric": 0.005027,
+   "answer_unit": "T",
+   "tolerance": 0.0001,
+   "hints": [
+    "n = N/ℓ = 2000 vòng/m.",
+    "B = 4π·10⁻⁷·n·I."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0029",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Từ trường",
+   "type": "dien-so",
+   "statement_vi": "Hai dây dẫn thẳng dài song song đặt cách nhau 0,1 m trong không khí, mỗi dây mang dòng điện 5 A. Tính độ lớn lực từ tác dụng lên mỗi mét chiều dài của một dây, xét đoạn dây dài 2 m (đơn vị N).",
+   "statement_en": "Two long parallel straight wires 0.1 m apart in air each carry 5 A. Find the magnetic force on a 2 m length of one wire (in N).",
+   "answer": "10⁻⁴ N",
+   "solution_steps": [
+    {
+     "explain": "Lực tương tác giữa hai dòng điện thẳng song song, xét đoạn dài ℓ = 2 m.",
+     "latex": "F = 2 \\cdot 10^{-7}\\,\\dfrac{I_1 I_2}{r}\\,\\ell = 2 \\cdot 10^{-7} \\cdot \\dfrac{5 \\cdot 5}{0{,}1} \\cdot 2 = 10^{-4}\\ \\text{N}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.tu-truong.luc-tuong-tac-hai-day-song-song"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính lực giữa hai dây song song"
+   ],
+   "tags": [
+    "tu-truong",
+    "luc-tu"
+   ],
+   "answer_numeric": 0.0001,
+   "answer_unit": "N",
+   "tolerance": 2e-06,
+   "hints": [
+    "F = 2·10⁻⁷·I1·I2·ℓ/r.",
+    "Nhân với chiều dài ℓ = 2 m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0030",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cảm ứng điện từ",
+   "type": "dien-so",
+   "statement_vi": "Một ống dây hình trụ dài 0,25 m, gồm 500 vòng, tiết diện mỗi vòng 10⁻³ m², lõi không khí (µ = 1). Tính độ tự cảm của ống dây (đơn vị H).",
+   "statement_en": "A cylindrical solenoid 0.25 m long has 500 turns of cross-section 10^-3 m² each, air core (µ = 1). Find its self-inductance (in H).",
+   "answer": "≈ 1,26·10⁻³ H",
+   "solution_steps": [
+    {
+     "explain": "Độ tự cảm của ống dây hình trụ phụ thuộc bình phương số vòng, tiết diện và chiều dài.",
+     "latex": "L = 4\\pi \\cdot 10^{-7}\\,\\mu\\,\\dfrac{N^2}{\\ell}\\,S = 4\\pi \\cdot 10^{-7} \\cdot 1 \\cdot \\dfrac{500^2}{0{,}25} \\cdot 10^{-3} \\approx 1{,}26 \\cdot 10^{-3}\\ \\text{H}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.cam-ung-dien-tu.do-tu-cam-ong-day"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính độ tự cảm ống dây"
+   ],
+   "tags": [
+    "cam-ung",
+    "do-tu-cam"
+   ],
+   "answer_numeric": 0.001257,
+   "answer_unit": "H",
+   "tolerance": 3e-05,
+   "hints": [
+    "L = 4π·10⁻⁷·µ·N²·S/ℓ.",
+    "Chú ý N bình phương = 250000."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0031",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động điều hoà",
+   "type": "tu-luan",
+   "statement_vi": "Một chất điểm dao động điều hoà với biên độ A = 5 cm và tần số góc ω = 10 rad/s. Tại vị trí có li độ x = 3 cm, tính tốc độ và độ lớn gia tốc của chất điểm.",
+   "statement_en": "A particle in simple harmonic motion has amplitude A = 5 cm and angular frequency ω = 10 rad/s. At displacement x = 3 cm, find its speed and the magnitude of its acceleration.",
+   "answer": "v = 0,4 m/s; |a| = 3 m/s²",
+   "solution_steps": [
+    {
+     "explain": "Từ hệ thức độc lập thời gian, tốc độ suy ra từ biên độ và li độ (đổi ra mét).",
+     "latex": "v = \\omega\\sqrt{A^2 - x^2} = 10\\sqrt{0{,}05^2 - 0{,}03^2} = 10 \\cdot 0{,}04 = 0{,}4\\ \\text{m/s}"
+    },
+    {
+     "explain": "Gia tốc trong dao động điều hoà tỉ lệ với li độ và hướng về vị trí cân bằng.",
+     "latex": "\\left|a\\right| = \\omega^2 \\left|x\\right| = 10^2 \\cdot 0{,}03 = 3\\ \\text{m/s}^2"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dao-dong-dieu-hoa.he-thuc-doc-lap-v-a"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng hệ thức độc lập thời gian",
+    "tính vận tốc và gia tốc theo li độ"
+   ],
+   "tags": [
+    "dao-dong",
+    "he-thuc-doc-lap"
+   ],
+   "hints": [
+    "v = ω√(A² − x²), đổi cm ra m.",
+    "|a| = ω²|x|."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0032",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động điều hoà",
+   "type": "tu-luan",
+   "statement_vi": "Một con lắc lò xo có khối lượng vật nặng 0,2 kg, dao động điều hoà với tần số góc ω = 10 rad/s và biên độ A = 10 cm. Tính động năng, thế năng của vật khi li độ x = 5 cm và cơ năng của con lắc.",
+   "statement_en": "A spring pendulum with a 0.2 kg mass oscillates harmonically at ω = 10 rad/s with amplitude A = 10 cm. Find the kinetic energy, potential energy at x = 5 cm and the total mechanical energy.",
+   "answer": "W_đ = 0,075 J; W_t = 0,025 J; W = 0,1 J",
+   "solution_steps": [
+    {
+     "explain": "Độ cứng suy từ ω² = k/m, dùng để tính thế năng.",
+     "latex": "k = m\\omega^2 = 0{,}2 \\cdot 10^2 = 20\\ \\text{N/m}"
+    },
+    {
+     "explain": "Thế năng đàn hồi tại li độ x (đổi 5 cm = 0,05 m).",
+     "latex": "W_t = \\dfrac{1}{2} k x^2 = \\dfrac{1}{2} \\cdot 20 \\cdot 0{,}05^2 = 0{,}025\\ \\text{J}"
+    },
+    {
+     "explain": "Động năng viết theo biên độ và li độ.",
+     "latex": "W_{\\text{đ}} = \\dfrac{1}{2} m \\omega^2 (A^2 - x^2) = \\dfrac{1}{2} \\cdot 0{,}2 \\cdot 100 \\cdot (0{,}1^2 - 0{,}05^2) = 0{,}075\\ \\text{J}"
+    },
+    {
+     "explain": "Cơ năng bằng tổng động năng và thế năng (bằng động năng cực đại).",
+     "latex": "W = W_{\\text{đ}} + W_t = 0{,}075 + 0{,}025 = 0{,}1\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dao-dong-dieu-hoa.the-nang-dao-dong",
+    "physics.thpt.dao-dong-dieu-hoa.dong-nang-dao-dong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính năng lượng dao động",
+    "phân bố động năng và thế năng"
+   ],
+   "tags": [
+    "dao-dong",
+    "nang-luong"
+   ],
+   "hints": [
+    "k = mω².",
+    "W = ½mω²A² là cơ năng không đổi."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0033",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động điều hoà",
+   "type": "tu-luan",
+   "statement_vi": "Cho hai lò xo có độ cứng k₁ = 30 N/m và k₂ = 60 N/m. Tính độ cứng tương đương khi ghép hai lò xo NỐI TIẾP và khi ghép SONG SONG.",
+   "statement_en": "Two springs have stiffnesses k1 = 30 N/m and k2 = 60 N/m. Find the equivalent stiffness when they are connected in SERIES and in PARALLEL.",
+   "answer": "Nối tiếp: k = 20 N/m; Song song: k = 90 N/m",
+   "solution_steps": [
+    {
+     "explain": "Ghép nối tiếp: nghịch đảo độ cứng tương đương bằng tổng các nghịch đảo (lò xo mềm hơn).",
+     "latex": "\\dfrac{1}{k} = \\dfrac{1}{k_1} + \\dfrac{1}{k_2} = \\dfrac{1}{30} + \\dfrac{1}{60} = \\dfrac{1}{20} \\Rightarrow k = 20\\ \\text{N/m}"
+    },
+    {
+     "explain": "Ghép song song: độ cứng tương đương bằng tổng các độ cứng (lò xo cứng hơn).",
+     "latex": "k = k_1 + k_2 = 30 + 60 = 90\\ \\text{N/m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dao-dong-dieu-hoa.ghep-lo-xo"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "ghép lò xo nối tiếp và song song"
+   ],
+   "tags": [
+    "dao-dong",
+    "ghep-lo-xo"
+   ],
+   "hints": [
+    "Nối tiếp: 1/k = 1/k1 + 1/k2.",
+    "Song song: k = k1 + k2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0034",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động điều hoà",
+   "type": "dien-so",
+   "statement_vi": "Một con lắc đơn có chu kì dao động nhỏ ở mặt đất là T₀ = 2 s. Đưa con lắc lên độ cao h = 16 km so với mặt đất. Bán kính Trái Đất R = 6400 km. Tính độ tăng chu kì ΔT của con lắc (đơn vị s), coi nhiệt độ không đổi.",
+   "statement_en": "A simple pendulum has small-oscillation period T0 = 2 s at ground level. It is taken to a height h = 16 km. Earth's radius R = 6400 km. Find the increase in period ΔT (in s), temperature unchanged.",
+   "answer": "ΔT = 5·10⁻³ s",
+   "solution_steps": [
+    {
+     "explain": "Lên cao, gia tốc trọng trường giảm nên chu kì tăng; độ tăng tương đối xấp xỉ h/R.",
+     "latex": "\\dfrac{\\Delta T}{T} \\approx \\dfrac{h}{R} = \\dfrac{16}{6400} = 2{,}5 \\cdot 10^{-3}"
+    },
+    {
+     "explain": "Nhân với chu kì ban đầu để có độ tăng chu kì.",
+     "latex": "\\Delta T = T_0 \\cdot \\dfrac{h}{R} = 2 \\cdot 2{,}5 \\cdot 10^{-3} = 5 \\cdot 10^{-3}\\ \\text{s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dao-dong-dieu-hoa.chu-ki-con-lac-don-theo-do-cao"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính thay đổi chu kì con lắc theo độ cao"
+   ],
+   "tags": [
+    "dao-dong",
+    "con-lac-don"
+   ],
+   "answer_numeric": 0.005,
+   "answer_unit": "s",
+   "tolerance": 0.0002,
+   "hints": [
+    "ΔT/T ≈ h/R.",
+    "Nhớ nhân lại với T0 = 2 s."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0035",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sóng cơ",
+   "type": "dien-so",
+   "statement_vi": "Một sợi dây căng ngang dài 2 m có khối lượng 0,01 kg, chịu lực căng 100 N. Tính tốc độ truyền sóng ngang trên dây (đơn vị m/s).",
+   "statement_en": "A horizontal string 2 m long with mass 0.01 kg is under a tension of 100 N. Find the speed of transverse waves on the string (in m/s).",
+   "answer": "≈ 141 m/s",
+   "solution_steps": [
+    {
+     "explain": "Mật độ khối lượng dài của dây bằng khối lượng chia chiều dài.",
+     "latex": "\\mu = \\dfrac{m}{\\ell} = \\dfrac{0{,}01}{2} = 5 \\cdot 10^{-3}\\ \\text{kg/m}"
+    },
+    {
+     "explain": "Tốc độ truyền sóng trên dây căng phụ thuộc lực căng và mật độ dài.",
+     "latex": "v = \\sqrt{\\dfrac{F}{\\mu}} = \\sqrt{\\dfrac{100}{5 \\cdot 10^{-3}}} = \\sqrt{20000} \\approx 141\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.song-co.toc-do-song-tren-day"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính mật độ dài",
+    "tính tốc độ sóng trên dây"
+   ],
+   "tags": [
+    "song-co",
+    "toc-do-song"
+   ],
+   "answer_numeric": 141.4,
+   "answer_unit": "m/s",
+   "tolerance": 1.0,
+   "hints": [
+    "μ = m/ℓ.",
+    "v = √(F/μ)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0036",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sóng cơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Hai nguồn sóng kết hợp dao động cùng pha trên mặt nước tạo ra sóng có bước sóng λ = 2 cm. Một điểm M cách hai nguồn lần lượt d₁ = 10 cm và d₂ = 16 cm. Điểm M là:",
+   "statement_en": "Two coherent in-phase sources on a water surface produce waves of wavelength λ = 2 cm. A point M is at distances d1 = 10 cm and d2 = 16 cm from the sources. Point M is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Xét hiệu đường đi của hai sóng tới M.",
+     "latex": "d_2 - d_1 = 16 - 10 = 6\\ \\text{cm}"
+    },
+    {
+     "explain": "Chia cho bước sóng: nếu là số nguyên lần λ thì M là cực đại (hai nguồn cùng pha).",
+     "latex": "d_2 - d_1 = 6 = 3 \\cdot 2 = 3\\lambda \\Rightarrow k = 3 \\text{ (cực đại)}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.song-co.dieu-kien-cuc-dai-giao-thoa-cung-pha"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "xét hiệu đường đi",
+    "điều kiện cực đại giao thoa"
+   ],
+   "tags": [
+    "song-co",
+    "giao-thoa"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "cực đại giao thoa bậc 3",
+     "why_wrong": ""
+    },
+    {
+     "key": "B",
+     "text": "cực tiểu giao thoa",
+     "why_wrong": "Cực tiểu ứng với hiệu đường đi bằng số bán nguyên lần λ, còn ở đây là 3λ (số nguyên)."
+    },
+    {
+     "key": "C",
+     "text": "cực đại giao thoa bậc 6",
+     "why_wrong": "Nhầm lấy hiệu đường đi 6 cm làm bậc k, nhưng bậc k = (d2−d1)/λ = 3."
+    },
+    {
+     "key": "D",
+     "text": "không dao động",
+     "why_wrong": "M vẫn dao động; điểm không dao động là cực tiểu, không phải trường hợp này."
+    }
+   ],
+   "hints": [
+    "Tính (d2 − d1)/λ.",
+    "Cùng pha: cực đại khi hiệu đường đi = kλ."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0037",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sóng cơ",
+   "type": "dien-so",
+   "statement_vi": "Một dây đàn dài 0,6 m, hai đầu cố định, tốc độ truyền sóng trên dây là 120 m/s. Tính tần số của hoạ âm bậc 3 (đơn vị Hz).",
+   "statement_en": "A guitar string 0.6 m long is fixed at both ends; wave speed on it is 120 m/s. Find the frequency of the 3rd harmonic (in Hz).",
+   "answer": "300 Hz",
+   "solution_steps": [
+    {
+     "explain": "Tần số cơ bản (hoạ âm bậc 1) của dây hai đầu cố định.",
+     "latex": "f_1 = \\dfrac{v}{2\\ell} = \\dfrac{120}{2 \\cdot 0{,}6} = 100\\ \\text{Hz}"
+    },
+    {
+     "explain": "Hoạ âm bậc n là bội nguyên lần tần số cơ bản.",
+     "latex": "f_3 = 3 f_1 = 3 \\cdot 100 = 300\\ \\text{Hz}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.song-co.hoa-am-day-dan"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính tần số cơ bản",
+    "tính hoạ âm bậc n"
+   ],
+   "tags": [
+    "song-co",
+    "song-dung"
+   ],
+   "answer_numeric": 300.0,
+   "answer_unit": "Hz",
+   "tolerance": 1.0,
+   "hints": [
+    "f_n = n·v/(2ℓ).",
+    "f_1 = v/(2ℓ) rồi nhân 3."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0038",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dòng điện xoay chiều",
+   "type": "tu-luan",
+   "statement_vi": "Đặt điện áp xoay chiều u = 200√2 cos(100πt) (V) (giá trị hiệu dụng U = 200 V, tần số f = 50 Hz) vào hai đầu một tụ điện có điện dung C = 10⁻⁴/π F. Tính dung kháng của tụ và cường độ dòng điện hiệu dụng qua mạch.",
+   "statement_en": "An AC voltage u = 200√2 cos(100πt) V (rms U = 200 V, f = 50 Hz) is applied across a capacitor of capacitance C = 10^-4/π F. Find the capacitive reactance and the rms current.",
+   "answer": "Z_C = 100 Ω; I = 2 A",
+   "solution_steps": [
+    {
+     "explain": "Dung kháng của tụ với ω = 2πf = 100π rad/s.",
+     "latex": "Z_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{100\\pi \\cdot \\dfrac{10^{-4}}{\\pi}} = \\dfrac{1}{10^{-2}} = 100\\ \\Omega"
+    },
+    {
+     "explain": "Mạch chỉ chứa tụ: cường độ hiệu dụng bằng điện áp hiệu dụng chia dung kháng.",
+     "latex": "I = \\dfrac{U_C}{Z_C} = \\dfrac{200}{100} = 2\\ \\text{A}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dien-xoay-chieu.dung-khang",
+    "physics.thpt.dien-xoay-chieu.mach-chi-chua-c"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính dung kháng",
+    "định luật Ôm cho mạch chỉ chứa tụ"
+   ],
+   "tags": [
+    "dien-xoay-chieu",
+    "tu-dien"
+   ],
+   "hints": [
+    "ω = 100π rad/s.",
+    "Z_C = 1/(ωC), rồi I = U/Z_C."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0039",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dòng điện xoay chiều",
+   "type": "dien-so",
+   "statement_vi": "Một mạch điện xoay chiều RLC nối tiếp có điện trở R = 30 Ω và tổng trở Z = 50 Ω. Tính hệ số công suất của mạch.",
+   "statement_en": "A series RLC AC circuit has resistance R = 30 Ω and impedance Z = 50 Ω. Find the power factor of the circuit.",
+   "answer": "cosφ = 0,6",
+   "solution_steps": [
+    {
+     "explain": "Hệ số công suất bằng tỉ số điện trở trên tổng trở.",
+     "latex": "\\cos\\varphi = \\dfrac{R}{Z} = \\dfrac{30}{50} = 0{,}6"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dien-xoay-chieu.he-so-cong-suat"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "tính hệ số công suất"
+   ],
+   "tags": [
+    "dien-xoay-chieu",
+    "he-so-cong-suat"
+   ],
+   "answer_numeric": 0.6,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "hints": [
+    "cosφ = R/Z.",
+    "0 ≤ cosφ ≤ 1."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0040",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dao động và sóng điện từ",
+   "type": "tu-luan",
+   "statement_vi": "Một mạch dao động LC lí tưởng có tụ điện C = 2 µF và cuộn cảm L = 8 mH. Hiệu điện thế cực đại giữa hai bản tụ là U₀ = 10 V. Tính năng lượng điện từ của mạch và cường độ dòng điện cực đại qua cuộn cảm.",
+   "statement_en": "An ideal LC circuit has C = 2 µF and L = 8 mH. The maximum voltage across the capacitor is U0 = 10 V. Find the electromagnetic energy of the circuit and the maximum current through the inductor.",
+   "answer": "W = 10⁻⁴ J; I₀ ≈ 0,158 A",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng điện từ bằng năng lượng điện trường cực đại (khi tụ tích điện đầy).",
+     "latex": "W = \\dfrac{C U_0^2}{2} = \\dfrac{2 \\cdot 10^{-6} \\cdot 10^2}{2} = 10^{-4}\\ \\text{J}"
+    },
+    {
+     "explain": "Năng lượng bảo toàn: năng lượng từ trường cực đại bằng W nên suy ra I₀.",
+     "latex": "W = \\dfrac{L I_0^2}{2} \\Rightarrow I_0 = \\sqrt{\\dfrac{2W}{L}} = \\sqrt{\\dfrac{2 \\cdot 10^{-4}}{8 \\cdot 10^{-3}}} \\approx 0{,}158\\ \\text{A}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.dao-dong-song-dien-tu.nang-luong-dien-tu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính năng lượng điện từ",
+    "bảo toàn năng lượng trong mạch LC"
+   ],
+   "tags": [
+    "dao-dong-dien-tu",
+    "nang-luong"
+   ],
+   "hints": [
+    "W = ½CU0².",
+    "W = ½LI0² để tìm I0."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0041",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sóng ánh sáng",
+   "type": "tu-luan",
+   "statement_vi": "Trong thí nghiệm giao thoa Y-âng, khoảng cách hai khe a = 1 mm, khoảng cách từ mặt phẳng hai khe đến màn D = 2 m, ánh sáng đơn sắc có bước sóng λ = 0,6 µm. Tính khoảng vân và vị trí vân tối thứ nhất (gần vân trung tâm nhất) trên màn.",
+   "statement_en": "In a Young's double-slit experiment, slit separation a = 1 mm, slit-to-screen distance D = 2 m, monochromatic wavelength λ = 0.6 µm. Find the fringe spacing and the position of the first dark fringe (nearest the centre).",
+   "answer": "i = 1,2 mm; x_t1 = 0,6 mm",
+   "solution_steps": [
+    {
+     "explain": "Khoảng vân bằng bước sóng nhân D chia khoảng cách hai khe (đổi các đơn vị ra mét).",
+     "latex": "i = \\dfrac{\\lambda D}{a} = \\dfrac{0{,}6 \\cdot 10^{-6} \\cdot 2}{10^{-3}} = 1{,}2 \\cdot 10^{-3}\\ \\text{m} = 1{,}2\\ \\text{mm}"
+    },
+    {
+     "explain": "Vân tối thứ nhất ứng với k = 0 trong công thức vị trí vân tối.",
+     "latex": "x_t = \\left(k + \\dfrac{1}{2}\\right) i = \\dfrac{1}{2} \\cdot 1{,}2 = 0{,}6\\ \\text{mm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.song-anh-sang.hieu-duong-di-y-ang",
+    "physics.thpt.song-anh-sang.vi-tri-van-toi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính khoảng vân",
+    "xác định vị trí vân tối"
+   ],
+   "tags": [
+    "song-anh-sang",
+    "giao-thoa"
+   ],
+   "hints": [
+    "i = λD/a, đổi hết ra mét.",
+    "Vân tối thứ nhất: k = 0 nên x = i/2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0042",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Sóng ánh sáng",
+   "type": "tu-luan",
+   "statement_vi": "Một ánh sáng đơn sắc có bước sóng trong chân không λ = 600 nm truyền vào một khối thuỷ tinh có chiết suất n = 1,5. Cho tốc độ ánh sáng trong chân không c = 3·10⁸ m/s. Tính tốc độ và bước sóng của ánh sáng đó trong thuỷ tinh.",
+   "statement_en": "Monochromatic light of vacuum wavelength λ = 600 nm enters glass of refractive index n = 1.5 (c = 3·10^8 m/s). Find the light's speed and wavelength inside the glass.",
+   "answer": "v = 2·10⁸ m/s; λ_n = 400 nm",
+   "solution_steps": [
+    {
+     "explain": "Chiết suất tuyệt đối là tỉ số tốc độ ánh sáng trong chân không và trong môi trường.",
+     "latex": "n = \\dfrac{c}{v} \\Rightarrow v = \\dfrac{c}{n} = \\dfrac{3 \\cdot 10^8}{1{,}5} = 2 \\cdot 10^{8}\\ \\text{m/s}"
+    },
+    {
+     "explain": "Tần số không đổi nên bước sóng trong môi trường giảm n lần.",
+     "latex": "\\lambda_n = \\dfrac{\\lambda}{n} = \\dfrac{600}{1{,}5} = 400\\ \\text{nm}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.song-anh-sang.chiet-suat-tuyet-doi",
+    "physics.thpt.song-anh-sang.buoc-song-trong-moi-truong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ chiết suất và tốc độ",
+    "bước sóng trong môi trường"
+   ],
+   "tags": [
+    "song-anh-sang",
+    "chiet-suat"
+   ],
+   "hints": [
+    "v = c/n.",
+    "λ_n = λ/n vì tần số không đổi."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0043",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng tử ánh sáng",
+   "type": "dien-so",
+   "statement_vi": "Một nguồn sáng đơn sắc có công suất phát 1 mW, phát ánh sáng bước sóng λ = 662,5 nm. Cho h = 6,625·10⁻³⁴ J·s, c = 3·10⁸ m/s. Tính số photon do nguồn phát ra trong mỗi giây.",
+   "statement_en": "A monochromatic source of output power 1 mW emits light of wavelength λ = 662.5 nm (h = 6.625·10^-34 J·s, c = 3·10^8 m/s). Find the number of photons emitted per second.",
+   "answer": "≈ 3,33·10¹⁵ photon/s",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng mỗi photon bằng hc chia bước sóng.",
+     "latex": "\\varepsilon = \\dfrac{hc}{\\lambda} = \\dfrac{6{,}625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8}{662{,}5 \\cdot 10^{-9}} = 3 \\cdot 10^{-19}\\ \\text{J}"
+    },
+    {
+     "explain": "Số photon mỗi giây bằng công suất chia năng lượng một photon.",
+     "latex": "n_p = \\dfrac{P}{\\varepsilon} = \\dfrac{10^{-3}}{3 \\cdot 10^{-19}} \\approx 3{,}33 \\cdot 10^{15}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.luong-tu-anh-sang.so-photon-phat-ra"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính năng lượng photon",
+    "tính số photon mỗi giây"
+   ],
+   "tags": [
+    "luong-tu",
+    "photon"
+   ],
+   "answer_numeric": 3330000000000000.0,
+   "answer_unit": "photon/s",
+   "tolerance": 50000000000000.0,
+   "hints": [
+    "ε = hc/λ.",
+    "n_p = P/ε = Pλ/(hc)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0044",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng tử ánh sáng",
+   "type": "dien-so",
+   "statement_vi": "Trong mẫu nguyên tử Bo, bán kính quỹ đạo dừng cơ bản (Bo) là r₀ = 5,3·10⁻¹¹ m. Tính bán kính quỹ đạo dừng thứ ba (ứng với n = 3, quỹ đạo M) của electron trong nguyên tử hiđrô (đơn vị m).",
+   "statement_en": "In the Bohr model, the ground-state (Bohr) orbit radius is r0 = 5.3·10^-11 m. Find the radius of the third stationary orbit (n = 3, shell M) of the electron in a hydrogen atom (in m).",
+   "answer": "≈ 4,77·10⁻¹⁰ m",
+   "solution_steps": [
+    {
+     "explain": "Bán kính quỹ đạo dừng thứ n tỉ lệ với bình phương số nguyên n.",
+     "latex": "r_n = n^2 r_0 = 3^2 \\cdot 5{,}3 \\cdot 10^{-11} = 4{,}77 \\cdot 10^{-10}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.luong-tu-anh-sang.ban-kinh-quy-dao-dung-bo"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức bán kính quỹ đạo dừng"
+   ],
+   "tags": [
+    "luong-tu",
+    "mau-nguyen-tu-bo"
+   ],
+   "answer_numeric": 4.77e-10,
+   "answer_unit": "m",
+   "tolerance": 5e-12,
+   "hints": [
+    "r_n = n²·r0.",
+    "Với n = 3 thì n² = 9."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0045",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hạt nhân nguyên tử",
+   "type": "tu-luan",
+   "statement_vi": "Một mẫu chất phóng xạ ban đầu có khối lượng m₀ = 2 g, chu kì bán rã T = 8 ngày. Sau 24 ngày, tính khối lượng chất đã bị phân rã và khối lượng còn lại.",
+   "statement_en": "A radioactive sample initially has mass m0 = 2 g with half-life T = 8 days. After 24 days, find the mass that has decayed and the mass remaining.",
+   "answer": "Δm = 1,75 g; còn lại 0,25 g",
+   "solution_steps": [
+    {
+     "explain": "Thời gian 24 ngày bằng 3 chu kì bán rã, dùng công thức khối lượng đã phân rã.",
+     "latex": "\\Delta m = m_0\\left(1 - 2^{-t/T}\\right) = 2\\left(1 - 2^{-3}\\right) = 2 \\cdot \\dfrac{7}{8} = 1{,}75\\ \\text{g}"
+    },
+    {
+     "explain": "Khối lượng còn lại bằng khối lượng ban đầu trừ phần đã phân rã.",
+     "latex": "m = m_0 - \\Delta m = 2 - 1{,}75 = 0{,}25\\ \\text{g}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.hat-nhan.so-hat-nhan-da-phan-ra"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính số chu kì bán rã",
+    "tính khối lượng đã phân rã"
+   ],
+   "tags": [
+    "hat-nhan",
+    "phong-xa"
+   ],
+   "hints": [
+    "t/T = 24/8 = 3.",
+    "Δm = m0(1 − 2^(−t/T))."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0046",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hạt nhân nguyên tử",
+   "type": "tu-luan",
+   "statement_vi": "Xét hạt nhân sắt ⁵⁶₂₆Fe. Cho bán kính hạt nhân R = R₀·A^(1/3) với R₀ ≈ 1,2·10⁻¹⁵ m. Xác định số nơtron trong hạt nhân và tính bán kính gần đúng của hạt nhân này (đơn vị m).",
+   "statement_en": "Consider the iron nucleus Fe-56 (Z = 26). Using R = R0·A^(1/3) with R0 ≈ 1.2·10^-15 m, find the number of neutrons and the approximate nuclear radius (in m).",
+   "answer": "N = 30 nơtron; R ≈ 4,59·10⁻¹⁵ m",
+   "solution_steps": [
+    {
+     "explain": "Số nơtron bằng số khối trừ số proton.",
+     "latex": "N = A - Z = 56 - 26 = 30"
+    },
+    {
+     "explain": "Bán kính hạt nhân tỉ lệ với căn bậc ba của số khối.",
+     "latex": "R = R_0 A^{1/3} = 1{,}2 \\cdot 10^{-15} \\cdot 56^{1/3} \\approx 4{,}59 \\cdot 10^{-15}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.hat-nhan.cau-tao-hat-nhan",
+    "physics.thpt.hat-nhan.ban-kinh-hat-nhan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "xác định cấu tạo hạt nhân",
+    "tính bán kính hạt nhân"
+   ],
+   "tags": [
+    "hat-nhan",
+    "cau-tao"
+   ],
+   "hints": [
+    "N = A − Z.",
+    "R = R0·A^(1/3), với A = 56."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0047",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thuyết tương đối hẹp",
+   "type": "tu-luan",
+   "statement_vi": "Một vật có khối lượng nghỉ m₀ = 2 kg chuyển động với tốc độ v = 0,6c (c là tốc độ ánh sáng trong chân không, c = 3·10⁸ m/s). Tính khối lượng tương đối tính và năng lượng toàn phần của vật.",
+   "statement_en": "An object of rest mass m0 = 2 kg moves at v = 0.6c (c = 3·10^8 m/s). Find its relativistic mass and its total energy.",
+   "answer": "m = 2,5 kg; E = 2,25·10¹⁷ J",
+   "solution_steps": [
+    {
+     "explain": "Khối lượng tương đối tính tăng theo hệ số Lorentz.",
+     "latex": "m = \\dfrac{m_0}{\\sqrt{1 - \\dfrac{v^2}{c^2}}} = \\dfrac{2}{\\sqrt{1 - 0{,}6^2}} = \\dfrac{2}{0{,}8} = 2{,}5\\ \\text{kg}"
+    },
+    {
+     "explain": "Năng lượng toàn phần theo hệ thức Einstein.",
+     "latex": "E = m c^2 = 2{,}5 \\cdot (3 \\cdot 10^8)^2 = 2{,}25 \\cdot 10^{17}\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.tuong-doi-hep.khoi-luong-tuong-doi-tinh",
+    "physics.thpt.tuong-doi-hep.he-thuc-einstein"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính khối lượng tương đối tính",
+    "áp dụng hệ thức E = mc²"
+   ],
+   "tags": [
+    "tuong-doi",
+    "einstein"
+   ],
+   "hints": [
+    "γ = 1/√(1 − v²/c²) = 1/0,8 = 1,25.",
+    "E = mc² với m là khối lượng tương đối tính."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0048",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level"
+   ],
+   "topic": "Trường hấp dẫn (AP/IB/A-Level)",
+   "type": "tu-luan",
+   "statement_vi": "Một hành tinh coi là khối cầu khối lượng M = 6·10²⁴ kg. Xét một điểm cách tâm hành tinh r = 8·10⁶ m. Cho hằng số hấp dẫn G = 6,67·10⁻¹¹ N·m²/kg². Tính cường độ trường hấp dẫn g và thế hấp dẫn V_g tại điểm đó.",
+   "statement_en": "A planet is a sphere of mass M = 6·10^24 kg. Consider a point r = 8·10^6 m from its centre (G = 6.67·10^-11 N·m²/kg²). Find the gravitational field strength g and the gravitational potential V_g there.",
+   "answer": "g ≈ 6,25 N/kg; V_g ≈ -5,0·10⁷ J/kg",
+   "solution_steps": [
+    {
+     "explain": "Cường độ trường hấp dẫn tại khoảng cách r tỉ lệ nghịch với bình phương khoảng cách.",
+     "latex": "g = \\dfrac{GM}{r^2} = \\dfrac{6{,}67 \\cdot 10^{-11} \\cdot 6 \\cdot 10^{24}}{(8 \\cdot 10^6)^2} \\approx 6{,}25\\ \\text{N/kg}"
+    },
+    {
+     "explain": "Thế hấp dẫn tại điểm đó có dấu âm (mốc thế năng ở vô cực).",
+     "latex": "V_g = -\\dfrac{GM}{r} = -\\dfrac{6{,}67 \\cdot 10^{-11} \\cdot 6 \\cdot 10^{24}}{8 \\cdot 10^6} \\approx -5{,}0 \\cdot 10^{7}\\ \\text{J/kg}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.intl-hap-dan.cuong-do-truong-hap-dan",
+    "physics.thpt.intl-hap-dan.the-hap-dan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính cường độ trường hấp dẫn",
+    "tính thế hấp dẫn"
+   ],
+   "tags": [
+    "hap-dan",
+    "truong-hap-dan"
+   ],
+   "hints": [
+    "g = GM/r².",
+    "V_g = −GM/r, luôn âm."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0049",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "a-level"
+   ],
+   "topic": "Dao động (AP/IB/A-Level)",
+   "type": "tu-luan",
+   "statement_vi": "Một vật khối lượng m = 0,5 kg dao động điều hoà với tần số góc ω = 4 rad/s và biên độ x₀ = 0,1 m. Tính năng lượng toàn phần của dao động, thế năng khi li độ x = 0,06 m và động năng tại đó.",
+   "statement_en": "An object of mass m = 0.5 kg oscillates harmonically at ω = 4 rad/s with amplitude x0 = 0.1 m. Find the total energy, the potential energy at x = 0.06 m and the kinetic energy there.",
+   "answer": "E_T = 0,04 J; E_p = 0,0144 J; E_k = 0,0256 J",
+   "solution_steps": [
+    {
+     "explain": "Năng lượng toàn phần dao động điều hoà viết theo tần số góc và biên độ.",
+     "latex": "E_T = \\dfrac{1}{2} m \\omega^2 x_0^2 = \\dfrac{1}{2} \\cdot 0{,}5 \\cdot 4^2 \\cdot 0{,}1^2 = 0{,}04\\ \\text{J}"
+    },
+    {
+     "explain": "Thế năng tại li độ x.",
+     "latex": "E_p = \\dfrac{1}{2} m \\omega^2 x^2 = \\dfrac{1}{2} \\cdot 0{,}5 \\cdot 16 \\cdot 0{,}06^2 = 0{,}0144\\ \\text{J}"
+    },
+    {
+     "explain": "Động năng bằng năng lượng toàn phần trừ thế năng.",
+     "latex": "E_k = E_T - E_p = 0{,}04 - 0{,}0144 = 0{,}0256\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.intl-dao-dong.nang-luong-shm-theo-omega"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "năng lượng dao động điều hoà theo ω",
+    "phân bố động năng và thế năng"
+   ],
+   "tags": [
+    "dao-dong",
+    "nang-luong-shm"
+   ],
+   "hints": [
+    "E_T = ½mω²x0².",
+    "E_k = E_T − E_p."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0050",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ap"
+   ],
+   "topic": "Cơ học chất lưu (AP Physics 1 Unit 8 / IB A.2)",
+   "type": "dien-so",
+   "statement_vi": "Một thợ lặn ở độ sâu h = 20 m dưới mặt nước biển. Khối lượng riêng của nước ρ = 1000 kg/m³, g = 10 m/s², áp suất khí quyển P₀ = 1,0·10⁵ Pa. Tính áp suất tuyệt đối tại vị trí của thợ lặn (đơn vị Pa).",
+   "statement_en": "A diver is at depth h = 20 m below the sea surface (water density ρ = 1000 kg/m³, g = 10 m/s², atmospheric pressure P0 = 1.0·10^5 Pa). Find the absolute pressure at the diver's position (in Pa).",
+   "answer": "3,0·10⁵ Pa",
+   "solution_steps": [
+    {
+     "explain": "Áp suất dư (do cột nước) bằng ρgh.",
+     "latex": "P_{gauge} = \\rho g h = 1000 \\cdot 10 \\cdot 20 = 2{,}0 \\cdot 10^{5}\\ \\text{Pa}"
+    },
+    {
+     "explain": "Áp suất tuyệt đối bằng áp suất khí quyển cộng áp suất dư.",
+     "latex": "P_{abs} = P_0 + \\rho g h = 1{,}0 \\cdot 10^5 + 2{,}0 \\cdot 10^5 = 3{,}0 \\cdot 10^{5}\\ \\text{Pa}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.intl-chat-luu.ap-suat-tuyet-doi-va-ap-suat-du"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "phân biệt áp suất dư và tuyệt đối"
+   ],
+   "tags": [
+    "chat-luu",
+    "ap-suat"
+   ],
+   "answer_numeric": 300000.0,
+   "answer_unit": "Pa",
+   "tolerance": 1000.0,
+   "hints": [
+    "P_dư = ρgh.",
+    "P_tuyệt đối = P0 + ρgh."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0051",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "a-level",
+    "intl-undergrad"
+   ],
+   "topic": "Tĩnh điện và định lí Gauss",
+   "type": "dien-so",
+   "statement_vi": "Hai điện tích điểm q₁ = 2·10⁻⁶ C và q₂ = 3·10⁻⁶ C đặt cách nhau r = 0,6 m trong chân không. Cho k = 9·10⁹ N·m²/C². Tính thế năng tương tác của hệ hai điện tích (đơn vị J).",
+   "statement_en": "Two point charges q1 = 2·10^-6 C and q2 = 3·10^-6 C are r = 0.6 m apart in vacuum (k = 9·10^9 N·m²/C²). Find the interaction potential energy of the pair (in J).",
+   "answer": "0,09 J",
+   "solution_steps": [
+    {
+     "explain": "Thế năng tương tác của hai điện tích điểm.",
+     "latex": "U = \\dfrac{k q_1 q_2}{r} = \\dfrac{9 \\cdot 10^9 \\cdot 2 \\cdot 10^{-6} \\cdot 3 \\cdot 10^{-6}}{0{,}6} = 0{,}09\\ \\text{J}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.tinh-dien-gauss.the-nang-tuong-tac-hai-dien-tich"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính thế năng tương tác hai điện tích"
+   ],
+   "tags": [
+    "tinh-dien",
+    "the-nang"
+   ],
+   "answer_numeric": 0.09,
+   "answer_unit": "J",
+   "tolerance": 0.002,
+   "hints": [
+    "U = kq1q2/r.",
+    "Hai điện tích cùng dấu nên U dương."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0052",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "intl-undergrad"
+   ],
+   "topic": "Từ trường (quốc tế)",
+   "type": "dien-so",
+   "statement_vi": "Một dây dẫn thẳng dài mang dòng điện I = 10 A đặt trong chân không. Cho hằng số từ µ₀ = 4π·10⁻⁷ T·m/A. Tính độ lớn cảm ứng từ tại điểm cách dây r = 5 cm (đơn vị T).",
+   "statement_en": "A long straight wire carries I = 10 A in vacuum (µ0 = 4π·10^-7 T·m/A). Find the magnetic flux density at a point r = 5 cm from the wire (in T).",
+   "answer": "4·10⁻⁵ T",
+   "solution_steps": [
+    {
+     "explain": "Cảm ứng từ của dây dẫn thẳng dài viết theo hằng số từ, đổi r = 0,05 m.",
+     "latex": "B = \\dfrac{\\mu_0 I}{2\\pi r} = \\dfrac{4\\pi \\cdot 10^{-7} \\cdot 10}{2\\pi \\cdot 0{,}05} = 4 \\cdot 10^{-5}\\ \\text{T}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.tu-truong-quoc-te.tu-truong-day-thang-theo-mu-khong"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "tính cảm ứng từ dây thẳng dài"
+   ],
+   "tags": [
+    "tu-truong",
+    "day-thang"
+   ],
+   "answer_numeric": 4e-05,
+   "answer_unit": "T",
+   "tolerance": 1e-06,
+   "hints": [
+    "B = µ0·I/(2πr).",
+    "Đổi r = 5 cm = 0,05 m."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0053",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "intl-undergrad",
+    "olympiad"
+   ],
+   "topic": "Mạch điện một chiều (quốc tế)",
+   "type": "dien-so",
+   "statement_vi": "Một cầu Wheatstone gồm bốn điện trở R₁, R₂, R₃, R₄. Biết R₁ = 10 Ω, R₂ = 20 Ω, R₃ = 15 Ω. Tìm giá trị R₄ để cầu cân bằng (điện kế chỉ 0), theo hệ thức cân bằng R₁/R₂ = R₃/R₄ (đơn vị Ω).",
+   "statement_en": "A Wheatstone bridge has four resistors R1, R2, R3, R4 with R1 = 10 Ω, R2 = 20 Ω, R3 = 15 Ω. Find R4 for balance (zero galvanometer reading), using R1/R2 = R3/R4 (in Ω).",
+   "answer": "30 Ω",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện cân bằng của cầu Wheatstone.",
+     "latex": "\\dfrac{R_1}{R_2} = \\dfrac{R_3}{R_4} \\Rightarrow R_4 = \\dfrac{R_2 R_3}{R_1} = \\dfrac{20 \\cdot 15}{10} = 30\\ \\Omega"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.mach-dien-quoc-te.cau-wheatstone-can-bang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng điều kiện cân bằng cầu Wheatstone"
+   ],
+   "tags": [
+    "mach-dien",
+    "wheatstone"
+   ],
+   "answer_numeric": 30.0,
+   "answer_unit": "Ω",
+   "tolerance": 0.1,
+   "hints": [
+    "R1/R2 = R3/R4.",
+    "Suy ra R4 = R2·R3/R1."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0054",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "ib",
+    "intl-undergrad"
+   ],
+   "topic": "Vật lí hiện đại (quốc tế)",
+   "type": "dien-so",
+   "statement_vi": "Trong hiệu ứng Compton, một photon tia X tán xạ trên electron tự do dưới góc θ = 60°. Bước sóng Compton của electron h/(m_e·c) = 2,43·10⁻¹² m. Tính độ dịch bước sóng Δλ của photon (đơn vị m).",
+   "statement_en": "In the Compton effect, an X-ray photon scatters off a free electron at θ = 60°. The electron Compton wavelength h/(m_e·c) = 2.43·10^-12 m. Find the wavelength shift Δλ (in m).",
+   "answer": "≈ 1,21·10⁻¹² m",
+   "solution_steps": [
+    {
+     "explain": "Độ dịch bước sóng Compton phụ thuộc góc tán xạ.",
+     "latex": "\\Delta\\lambda = \\dfrac{h}{m_e c}\\left(1 - \\cos\\theta\\right) = 2{,}43 \\cdot 10^{-12} \\cdot (1 - \\cos 60^\\circ)"
+    },
+    {
+     "explain": "Thay cos60° = 0,5 để tính.",
+     "latex": "\\Delta\\lambda = 2{,}43 \\cdot 10^{-12} \\cdot 0{,}5 \\approx 1{,}21 \\cdot 10^{-12}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.vat-li-hien-dai-qt.hieu-ung-compton"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức dịch bước sóng Compton"
+   ],
+   "tags": [
+    "vat-li-hien-dai",
+    "compton"
+   ],
+   "answer_numeric": 1.21e-12,
+   "answer_unit": "m",
+   "tolerance": 3e-14,
+   "hints": [
+    "Δλ = λ_C·(1 − cosθ).",
+    "cos60° = 0,5."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0055",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "intl-undergrad"
+   ],
+   "topic": "Sóng và quang học sóng (quốc tế)",
+   "type": "dien-so",
+   "statement_vi": "Ánh sáng truyền từ không khí (n₁ = 1) tới mặt thuỷ tinh (n₂ = 1,5). Tính góc Brewster θ_B (góc tới mà ánh sáng phản xạ bị phân cực hoàn toàn), đơn vị độ.",
+   "statement_en": "Light travels from air (n1 = 1) onto glass (n2 = 1.5). Find the Brewster angle θ_B (the angle of incidence at which reflected light is fully polarised), in degrees.",
+   "answer": "≈ 56,3°",
+   "solution_steps": [
+    {
+     "explain": "Góc Brewster xác định qua tang của góc bằng tỉ số chiết suất.",
+     "latex": "\\tan\\theta_B = \\dfrac{n_2}{n_1} = \\dfrac{1{,}5}{1} = 1{,}5"
+    },
+    {
+     "explain": "Lấy arctan để tìm góc.",
+     "latex": "\\theta_B = \\arctan(1{,}5) \\approx 56{,}3^\\circ"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.song-quoc-te.goc-brewster"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng công thức góc Brewster"
+   ],
+   "tags": [
+    "quang-hoc-song",
+    "phan-cuc"
+   ],
+   "answer_numeric": 56.3,
+   "answer_unit": "độ",
+   "tolerance": 0.3,
+   "hints": [
+    "tanθ_B = n2/n1.",
+    "θ_B = arctan(1,5)."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0056",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ap",
+    "intl-undergrad"
+   ],
+   "topic": "Quang hình học và quy ước dấu quốc tế",
+   "type": "tu-luan",
+   "statement_vi": "Ghép sát một thấu kính hội tụ tiêu cự f₁ = 0,2 m với một thấu kính phân kì tiêu cự f₂ = -0,5 m. Tính độ tụ của mỗi thấu kính, độ tụ của hệ và tiêu cự của hệ ghép sát.",
+   "statement_en": "A converging lens of focal length f1 = 0.2 m is placed in contact with a diverging lens of focal length f2 = -0.5 m. Find the power of each lens, the power of the combination and its focal length.",
+   "answer": "P₁ = 5 dp; P₂ = -2 dp; P = 3 dp; f ≈ 0,33 m",
+   "solution_steps": [
+    {
+     "explain": "Độ tụ của mỗi thấu kính là nghịch đảo tiêu cự (đơn vị điốp).",
+     "latex": "P_1 = \\dfrac{1}{f_1} = \\dfrac{1}{0{,}2} = 5\\ \\text{dp};\\quad P_2 = \\dfrac{1}{f_2} = \\dfrac{1}{-0{,}5} = -2\\ \\text{dp}"
+    },
+    {
+     "explain": "Hai thấu kính ghép sát: độ tụ của hệ bằng tổng các độ tụ.",
+     "latex": "P = P_1 + P_2 = 5 + (-2) = 3\\ \\text{dp}"
+    },
+    {
+     "explain": "Tiêu cự của hệ là nghịch đảo độ tụ hệ.",
+     "latex": "f = \\dfrac{1}{P} = \\dfrac{1}{3} \\approx 0{,}33\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.quang-hinh-quoc-te.do-tu-va-ghep-sat-thau-kinh"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính độ tụ",
+    "ghép sát hai thấu kính"
+   ],
+   "tags": [
+    "quang-hinh",
+    "thau-kinh"
+   ],
+   "hints": [
+    "P = 1/f (mét → điốp).",
+    "Ghép sát: P = P1 + P2."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0057",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ib",
+    "intl-undergrad"
+   ],
+   "topic": "Thiên văn học và vũ trụ học",
+   "type": "dien-so",
+   "statement_vi": "Tính bán kính Schwarzschild của một ngôi sao có khối lượng M = 2·10³⁰ kg (xấp xỉ một khối lượng Mặt Trời). Cho G = 6,67·10⁻¹¹ N·m²/kg², c = 3·10⁸ m/s. Kết quả tính bằng m.",
+   "statement_en": "Find the Schwarzschild radius of a star of mass M = 2·10^30 kg (about one solar mass), with G = 6.67·10^-11 N·m²/kg², c = 3·10^8 m/s. Give the answer in m.",
+   "answer": "≈ 2,96·10³ m",
+   "solution_steps": [
+    {
+     "explain": "Bán kính Schwarzschild tỉ lệ thuận với khối lượng và tỉ lệ nghịch với bình phương tốc độ ánh sáng.",
+     "latex": "R_s = \\dfrac{2GM}{c^2} = \\dfrac{2 \\cdot 6{,}67 \\cdot 10^{-11} \\cdot 2 \\cdot 10^{30}}{(3 \\cdot 10^8)^2} \\approx 2{,}96 \\cdot 10^{3}\\ \\text{m}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.thien-van-vu-tru.ban-kinh-schwarzschild"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức bán kính Schwarzschild"
+   ],
+   "tags": [
+    "thien-van",
+    "lo-den"
+   ],
+   "answer_numeric": 2964.0,
+   "answer_unit": "m",
+   "tolerance": 30.0,
+   "hints": [
+    "R_s = 2GM/c².",
+    "c² = 9·10¹⁶."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0058",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "a-level",
+    "ap",
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt học (AP/IB/A-Level)",
+   "type": "tu-luan",
+   "statement_vi": "Một cốc cà phê ban đầu ở nhiệt độ T₀ = 90 °C được đặt trong phòng có nhiệt độ T_s = 20 °C. Theo định luật làm nguội của Newton với hằng số k = 0,05 phút⁻¹, tính nhiệt độ của cà phê sau 10 phút. Cho e^(-0,5) ≈ 0,607.",
+   "statement_en": "A cup of coffee initially at T0 = 90 °C is placed in a room at T_s = 20 °C. Using Newton's law of cooling with k = 0.05 min^-1, find the coffee temperature after 10 minutes (e^-0.5 ≈ 0.607).",
+   "answer": "≈ 62,5 °C",
+   "solution_steps": [
+    {
+     "explain": "Nghiệm của định luật làm nguội Newton cho nhiệt độ theo thời gian.",
+     "latex": "T(t) = T_s + (T_0 - T_s)e^{-kt} = 20 + (90 - 20)e^{-0{,}05 \\cdot 10}"
+    },
+    {
+     "explain": "Thay e^(-0,5) ≈ 0,607 để tính nhiệt độ.",
+     "latex": "T = 20 + 70 \\cdot 0{,}607 \\approx 62{,}5\\ ^\\circ\\text{C}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.intl-nhiet-hoc.dinh-luat-nguoi-lam-nguoi-newton"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng nghiệm định luật làm nguội Newton",
+    "tính hàm mũ"
+   ],
+   "tags": [
+    "nhiet-hoc",
+    "lam-nguoi"
+   ],
+   "hints": [
+    "T = T_s + (T0 − T_s)e^(−kt).",
+    "kt = 0,05·10 = 0,5."
+   ]
+  },
+  {
+   "id": "prob.physics.ext-physics-thpt.0059",
+   "subject": "physics",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "ru-east-eu",
+    "olympiad"
+   ],
+   "topic": "Cơ học (hệ giáo trình Nga)",
+   "type": "tu-luan",
+   "statement_vi": "Hai vật chuyển động cùng phương: vật 1 khối lượng m₁ = 2 kg tốc độ v₁ = 6 m/s va chạm vào vật 2 khối lượng m₂ = 1 kg đang đứng yên (v₂ = 0). Hệ số phục hồi e = 0,5. Tính vận tốc khối tâm và vận tốc mỗi vật sau va chạm.",
+   "statement_en": "Two bodies move along a line: body 1 (m1 = 2 kg, v1 = 6 m/s) collides with body 2 (m2 = 1 kg, at rest, v2 = 0). Coefficient of restitution e = 0.5. Find the centre-of-mass velocity and each body's velocity after the collision.",
+   "answer": "v_C = 4 m/s; v₁' = 3 m/s; v₂' = 6 m/s",
+   "solution_steps": [
+    {
+     "explain": "Vận tốc khối tâm được bảo toàn trong va chạm.",
+     "latex": "v_C = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2} = \\dfrac{2 \\cdot 6 + 1 \\cdot 0}{2 + 1} = 4\\ \\text{m/s}"
+    },
+    {
+     "explain": "Vận tốc mỗi vật sau va chạm viết qua vận tốc khối tâm và hệ số phục hồi.",
+     "latex": "v_1' = v_C - e\\left(v_1 - v_C\\right) = 4 - 0{,}5(6 - 4) = 3\\ \\text{m/s}"
+    },
+    {
+     "explain": "Tương tự cho vật 2, kiểm chứng động lượng: 2·3 + 1·6 = 12 = 2·6.",
+     "latex": "v_2' = v_C - e\\left(v_2 - v_C\\right) = 4 - 0{,}5(0 - 4) = 6\\ \\text{m/s}"
+    }
+   ],
+   "formulas_used": [
+    "physics.thpt.ru-co-hoc.van-toc-sau-va-cham-theo-he-so-phuc-hoi"
+   ],
+   "difficulty": 5,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính vận tốc khối tâm",
+    "dùng hệ số phục hồi tính vận tốc sau va chạm"
+   ],
+   "tags": [
+    "co-hoc",
+    "va-cham"
+   ],
+   "hints": [
+    "v_C bảo toàn.",
+    "v_i' = v_C − e(v_i − v_C)."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aistem.local/schema/problem-slice.json",
+  "title": "AISTEM Problem Slice",
+  "description": "Ngân hàng bài tập có lời giải từng bước. Thiết kế để chấm tự động và để sinh đề theo độ khó.",
+  "type": "object",
+  "required": ["meta", "problems"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["file", "subject", "title", "levels", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string" },
+        "subject": { "enum": ["math", "physics", "chemistry", "biology"] },
+        "title": { "type": "string", "minLength": 1 },
+        "levels": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "enum": ["tieu-hoc", "thcs", "thpt", "dai-hoc"] }
+        },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "problems": { "type": "array", "items": { "$ref": "#/definitions/problem" } }
+  },
+  "definitions": {
+    "problem": {
+      "type": "object",
+      "required": [
+        "id", "subject", "level", "grades", "curriculum", "topic", "type",
+        "statement_vi", "statement_en", "answer", "solution_steps",
+        "formulas_used", "difficulty", "estimated_minutes", "skills", "tags"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^prob\\.[a-z]+(\\.[a-z0-9-]+){1}\\.[0-9]{4}$",
+          "description": "prob.<subject>.<topic-slug>.<số thứ tự 4 chữ số>"
+        },
+        "subject": { "enum": ["math", "physics", "chemistry", "biology"] },
+        "level": { "enum": ["tieu-hoc", "thcs", "thpt", "dai-hoc"] },
+        "grades": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": 1, "maximum": 13 }
+        },
+        "curriculum": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": ["vn-gdpt-2018", "ap", "ib", "a-level", "intl-undergrad", "olympiad", "ru-east-eu"]
+          }
+        },
+        "topic": { "type": "string", "minLength": 1 },
+        "type": {
+          "enum": ["trac-nghiem", "tu-luan", "dien-so", "dung-sai", "ghep-doi"],
+          "description": "dien-so = đáp án là một số, chấm được bằng so sánh có dung sai"
+        },
+        "statement_vi": { "type": "string", "minLength": 20 },
+        "statement_en": { "type": "string" },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["key", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "key": { "type": "string", "pattern": "^[A-E]$" },
+              "text": { "type": "string" },
+              "why_wrong": { "type": "string", "description": "Vì sao phương án nhiễu này hấp dẫn và sai ở đâu" }
+            }
+          },
+          "description": "Bắt buộc khi type = trac-nghiem"
+        },
+        "answer": {
+          "type": "string",
+          "description": "Đáp án cuối. Với trac-nghiem là khoá A-E; với dien-so là giá trị kèm đơn vị"
+        },
+        "answer_numeric": { "type": "number", "description": "Giá trị số để chấm tự động, khi có" },
+        "answer_unit": { "type": "string" },
+        "tolerance": { "type": "number", "description": "Sai số tương đối chấp nhận khi chấm, ví dụ 0.01" },
+        "solution_steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["explain"],
+            "additionalProperties": false,
+            "properties": {
+              "explain": { "type": "string", "description": "Nói rõ LÀM GÌ và TẠI SAO, không chỉ biến đổi" },
+              "latex": { "type": "string", "description": "Biểu thức của bước, LaTeX thuần không bọc $" }
+            }
+          }
+        },
+        "formulas_used": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "id công thức trong data/formulas dùng để giải. Bộ kiểm định đối chiếu id có thật."
+        },
+        "difficulty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "1 = nhận biết, 2 = thông hiểu, 3 = vận dụng, 4 = vận dụng cao, 5 = olympiad"
+        },
+        "estimated_minutes": { "type": "number", "minimum": 0.5, "maximum": 120 },
+        "skills": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Kỹ năng bài này kiểm tra, dùng để chẩn đoán lỗ hổng kiến thức"
+        },
+        "hints": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Gợi ý tăng dần, cho phép hệ thống mở dần thay vì lộ đáp án"
+        },
+        "tags": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "trac-nghiem" } } },
+          "then": { "required": ["choices"] }
+        }
+      ]
+    }
+  }
+}

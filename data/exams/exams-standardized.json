@@ -1,0 +1,737 @@
+{
+  "meta": {
+    "file": "exams-standardized.json",
+    "title": "Hồ sơ kỳ thi chuẩn hoá tuyển sinh: SAT, ACT, GRE, MCAT",
+    "count": 6
+  },
+  "exams": [
+    {
+      "id": "exam.sat-math-digital",
+      "name": "SAT Math (Digital SAT)",
+      "provider": "College Board",
+      "subject": "math",
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "level": "thpt",
+      "overview": "Phần Math của kỳ thi SAT do College Board tổ chức, dùng để xét tuyển đại học Mỹ và nhiều nước. Từ tháng 3/2024 (kỳ quốc tế đã đổi từ tháng 3/2023), SAT chuyển hoàn toàn sang Digital SAT làm trên app Bluebook: bài rút ngắn còn khoảng 2 giờ 14 phút, gồm hai phần lớn là Reading and Writing và Math. Riêng phần Math gồm hai module 22 câu / 35 phút (44 câu / 70 phút), thích ứng theo module (module-adaptive): kết quả module 1 quyết định độ khó module 2. Máy tính (Desmos tích hợp) được dùng cho TOÀN BỘ phần Math. Điểm Math thang 200-800, cộng với Reading and Writing thành tổng 400-1600. Đối tượng là học sinh lớp 11-12.",
+      "sections": [
+        {
+          "name": "Math Module 1",
+          "question_count": "22",
+          "duration_minutes": 35,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Độ khó hỗn hợp dễ - trung bình - khó. 20 câu tính điểm + 2 câu thử nghiệm không tính điểm. Kết quả module 1 quyết định module 2 (module-adaptive)."
+        },
+        {
+          "name": "Math Module 2",
+          "question_count": "22",
+          "duration_minutes": 35,
+          "weight_percent": 50.0,
+          "calculator": "cho-phep",
+          "note": "Nhận bản dễ hơn hoặc khó hơn tuỳ điểm module 1. Máy tính đồ thị Desmos tích hợp sẵn trong Bluebook; vẫn được mang máy cầm tay hợp lệ."
+        }
+      ],
+      "topic_weights": {
+        "Algebra (phương trình - hệ - bất phương trình tuyến tính)": 35.0,
+        "Advanced Math (bậc hai, mũ, đa thức, hàm số)": 35.0,
+        "Problem-Solving and Data Analysis (tỉ lệ, phần trăm, thống kê, xác suất)": 15.0,
+        "Geometry and Trigonometry (diện tích - thể tích, đường tròn, tam giác, lượng giác)": 15.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm 4 phương án (Multiple Choice)",
+          "description": "Khoảng 75% số câu. Bốn phương án A-D, chỉ một đáp án đúng, không trừ điểm câu sai.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hàm số tuyến tính f thoả f(2) = 7 và f(6) = 19. Giá trị f(0) bằng bao nhiêu? (Bốn phương án số.)",
+          "approach": "Với hàm tuyến tính, tính hệ số góc trước rồi lùi về gốc; hoặc thử đáp án khi phương trình khó cô lập ẩn. Luôn tận dụng Desmos để vẽ và tìm giao điểm."
+        },
+        {
+          "name": "Câu tự điền đáp số (Student-Produced Response / grid-in)",
+          "description": "Khoảng 25% số câu, không có phương án. Thí sinh gõ đáp số vào ô. Nhận số nguyên, phân số hoặc thập phân; đáp án âm được phép; hỗn số phải đổi thành phân số hoặc thập phân; ô chứa tối đa 5-6 ký tự.",
+          "example_prompt": "Đề mô phỏng tự soạn: Nếu 3(x - 4) = 2x + 5 thì x bằng bao nhiêu? Nhập đáp số vào ô.",
+          "approach": "Không có phương án nên không thử ngược được: phải giải xuôi và kiểm tra bằng cách thế lại. Với đáp án lặp vô hạn, làm tròn hoặc cắt cho vừa ô (ví dụ 2/3 nhập .666 hoặc .667). Kiểm tra dấu và đơn vị trước khi gõ."
+        },
+        {
+          "name": "Câu ngữ cảnh và mô hình hoá",
+          "description": "Bài toán lời văn gắn tình huống thực tế (tăng trưởng, lãi kép, tỉ lệ, đọc bảng - biểu đồ). Kiểm tra khả năng dịch lời văn sang phương trình/mô hình.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một tài khoản gửi 1000 đô, lãi kép 4%/năm. Biểu thức nào cho số tiền sau t năm? (Bốn phương án dạng hàm mũ.)",
+          "approach": "Nhận diện dạng: tăng/giảm tuyến tính thì dùng y = mx + b, tăng/giảm theo phần trăm thì dùng hàm mũ y = a(1+r)^t. Đọc kỹ đơn vị thời gian (năm/tháng) để đặt số mũ đúng."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Bảng tham chiếu (Reference Sheet) hiện ở đầu MỖI module Math, gồm 12 công thức hình học và 3 quy tắc:",
+        "1) Diện tích hình tròn A = pi*r^2",
+        "2) Chu vi đường tròn C = 2*pi*r",
+        "3) Diện tích hình chữ nhật A = l*w",
+        "4) Diện tích tam giác A = (1/2)*b*h",
+        "5) Định lí Pythagore c^2 = a^2 + b^2",
+        "6) Tam giác vuông đặc biệt 30-60-90: cạnh tỉ lệ x, x*sqrt(3), 2x",
+        "7) Tam giác vuông đặc biệt 45-45-90: cạnh tỉ lệ s, s, s*sqrt(2)",
+        "8) Thể tích hình hộp chữ nhật V = l*w*h",
+        "9) Thể tích hình trụ V = pi*r^2*h",
+        "10) Thể tích hình cầu V = (4/3)*pi*r^3",
+        "11) Thể tích hình nón V = (1/3)*pi*r^2*h",
+        "12) Thể tích hình chóp V = (1/3)*l*w*h",
+        "Ba quy tắc: số đo một vòng tròn là 360 độ; một vòng tròn là 2*pi radian; tổng ba góc trong tam giác là 180 độ.",
+        "Bảng KHÔNG có: công thức nghiệm phương trình bậc hai, hệ số góc, lượng giác, thống kê - phải tự thuộc."
+      ],
+      "formulas_must_memorize": [
+        "math.thcs.ham-so-bac-nhat.he-so-goc",
+        "math.thcs.ham-so-bac-nhat.duong-thang-di-qua-hai-diem",
+        "math.thpt.oxy-duong-thang.pt-he-so-goc",
+        "math.thcs.ham-so-bac-nhat.hai-duong-thang-song-song",
+        "math.thcs.ham-so-bac-nhat.hai-duong-thang-vuong-goc",
+        "math.thcs.phuong-trinh-bac-hai.cong-thuc-nghiem",
+        "math.thcs.phuong-trinh-bac-hai.he-thuc-vi-et",
+        "math.thpt.ham-so-bac-nhat-bac-hai.toa-do-dinh-parabol",
+        "math.thcs.hang-dang-thuc.hieu-hai-binh-phuong",
+        "math.thcs.hang-dang-thuc.binh-phuong-cua-mot-tong",
+        "math.thpt.mu-logarit.lai-kep",
+        "math.thpt.mu-logarit.tang-truong-mu",
+        "math.thcs.he-thuc-luong.dinh-li-pytago",
+        "math.thcs.ti-so-luong-giac.sin-goc-nhon",
+        "math.thcs.ti-so-luong-giac.cos-goc-nhon",
+        "math.thcs.ti-so-luong-giac.tang-goc-nhon",
+        "math.thcs.ti-so-luong-giac.hai-goc-phu-nhau",
+        "math.thcs.duong-tron.dien-tich-hinh-tron",
+        "math.thcs.duong-tron.do-dai-duong-tron",
+        "math.thpt.oxy-duong-tron.pt-chinh-tac",
+        "math.thcs.thong-ke.so-trung-binh-cong",
+        "math.thcs.thong-ke.trung-vi",
+        "math.thpt.thong-ke.do-lech-chuan",
+        "math.thcs.xac-suat.xac-suat-bien-co-dong-kha-nang",
+        "math.thcs.ti-le-thuc.dai-luong-ti-le-thuan",
+        "math.thpt.luong-giac.doi-do-sang-radian"
+      ],
+      "scoring": {
+        "description": "Phần Math cho điểm thang 200-800; cộng với Reading and Writing (cũng 200-800) thành tổng 400-1600. Chấm theo số câu đúng, KHÔNG trừ điểm câu sai nên phải điền hết mọi câu. Điểm được điều chỉnh theo độ khó bài nhờ cơ chế thích ứng, đảm bảo hai thí sinh cùng năng lực nhưng làm module 2 khác độ khó vẫn quy về cùng thang.",
+        "scale": "200-800 (phần Math); tổng SAT 400-1600",
+        "raw_to_scaled": "Điểm thô (số câu đúng, tối đa 40 câu tính điểm) được quy về thang 200-800 bằng mô hình IRT có tính đến độ khó module đã nhận. Percentile công bố kèm điểm: khoảng 700 điểm Math thường rơi vào phân vị ~91-93, 800 điểm là phân vị 99+.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Làm module 1 thật chắc vì nó quyết định trần điểm: nếu bị đẩy sang bản module 2 dễ, điểm tối đa đạt được sẽ bị giới hạn.",
+        "Dùng Desmos tích hợp làm vũ khí chính: vẽ đồ thị tìm nghiệm, giao điểm, đỉnh parabol thay vì giải tay - nhanh và tránh sai số.",
+        "Chiến thuật thử đáp án (backsolving): với câu trắc nghiệm phương trình khó cô lập ẩn, thế thẳng 4 phương án (bắt đầu từ giá trị giữa) vào đề.",
+        "Chiến thuật chọn số cụ thể (plug-in): với câu có biến ở cả đề lẫn phương án, gán một số dễ (tránh 0 và 1) để loại phương án.",
+        "Vì mỗi module tính giờ riêng, không được quay lại module trước; phân bổ ~95 giây/câu, đánh dấu (flag) câu khó và quay lại trong cùng module.",
+        "Không bỏ trống câu nào: không trừ điểm sai, phút cuối phải đoán hết các câu chưa làm."
+      ],
+      "common_traps": [
+        "Câu grid-in không có phương án để thử ngược - nhiều bạn quen backsolve sẽ mất phương hướng; phải giải xuôi và thế lại kiểm tra.",
+        "Nhập sai định dạng ô grid-in: hỗn số 1 1/2 bị máy hiểu là 11/2; phải nhập 3/2 hoặc 1.5.",
+        "Nhầm mô hình tuyến tính với mũ: đề nói 'tăng thêm 5 mỗi năm' (tuyến tính) khác 'tăng 5% mỗi năm' (mũ).",
+        "Quên đơn vị hoặc đổi đơn vị (phút/giờ, cm/m) khi thay vào công thức ngữ cảnh.",
+        "Lạm dụng bảng tham chiếu: bảng chỉ có hình học, không có công thức nghiệm bậc hai hay lượng giác - vẫn phải thuộc.",
+        "Bẫy 'độ và radian': câu cung tròn / lượng giác có thể cho góc bằng radian, dễ nhầm khi đặt máy tính ở chế độ độ."
+      ],
+      "tags": [
+        "sat",
+        "digital-sat",
+        "toan",
+        "college-board",
+        "tuyen-sinh-my"
+      ],
+      "sources": [
+        "College Board - Digital SAT: phần Math gồm 2 module 22 câu/35 phút, tổng 44 câu/70 phút, thích ứng theo module, máy tính dùng toàn phần",
+        "College Board - SAT Suite: Digital SAT chính thức thay bản giấy tại Mỹ từ tháng 3/2024 (quốc tế từ tháng 3/2023); thang Math 200-800, tổng 400-1600",
+        "College Board / Khan Academy - Reference information on the Digital SAT Math: danh sách 12 công thức hình học và 3 quy tắc in sẵn ở đầu mỗi module",
+        "Princeton Review, Test Innovators - cơ cấu Digital SAT: ~75% trắc nghiệm 4 phương án, ~25% student-produced response, 20/22 câu tính điểm mỗi module"
+      ]
+    },
+    {
+      "id": "exam.act-mathematics",
+      "name": "ACT Mathematics (Enhanced ACT)",
+      "provider": "ACT, Inc.",
+      "subject": "math",
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "level": "thpt",
+      "overview": "Phần Mathematics của kỳ thi ACT, dùng để xét tuyển đại học Mỹ, là một trong ba phần lõi (English, Math, Reading). Từ khung Enhanced ACT (bản online national hiệu lực tháng 4/2025, bản giấy national tháng 9/2025, quốc tế và bang từ mùa xuân 2026), phần Math rút còn 45 câu / 50 phút (khung cũ: 60 câu / 60 phút) và giảm số phương án từ 5 xuống còn 4 lựa chọn mỗi câu. Đây là kỳ thi KHÔNG cấp bảng công thức - toàn bộ công thức đại số, hình học, lượng giác phải thuộc. Máy tính được phép dùng cho cả phần (có danh mục máy hợp lệ). Điểm thang 1-36, không trừ điểm câu sai. Phần Math cùng English và Reading tạo Composite là trung bình ba phần.",
+      "sections": [
+        {
+          "name": "Mathematics (Enhanced ACT)",
+          "question_count": "45",
+          "duration_minutes": 50,
+          "weight_percent": 100.0,
+          "calculator": "cho-phep",
+          "note": "Khung hiện hành từ 2025: 45 câu / 50 phút, mỗi câu 4 phương án; trong đó 41 câu tính điểm, 4 câu thử nghiệm (embedded field test) không tính điểm. Khung cũ (đến trước 2025): 60 câu / 60 phút, 5 phương án. Máy tính dùng toàn phần."
+        }
+      ],
+      "topic_weights": {
+        "Number and Quantity": 11.0,
+        "Algebra": 19.0,
+        "Functions": 18.0,
+        "Geometry": 18.0,
+        "Statistics and Probability": 14.0,
+        "Integrating Essential Skills (kỹ năng nền lớp dưới)": 20.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm 4 phương án (Enhanced ACT)",
+          "description": "Toàn bộ 45 câu đều trắc nghiệm, 4 phương án (khung cũ là 5). Bao phủ đại số, hàm số, hình học phẳng và toạ độ, lượng giác tam giác vuông, thống kê - xác suất, số phức, ma trận cơ bản.",
+          "example_prompt": "Đề mô phỏng tự soạn: Trong tam giác vuông tại C, cạnh đối góc A dài 5, cạnh huyền dài 13. Giá trị của tan A bằng bao nhiêu? (Bốn phương án phân số.)",
+          "approach": "Nhận diện chủ đề trong 5-10 giây, ưu tiên câu ngắn trước. Với hình: vẽ lại hình và ghi số liệu lên hình. Với lượng giác: nhớ SOH-CAH-TOA và định lí Pythagore để tìm cạnh còn thiếu."
+        },
+        {
+          "name": "Câu mô hình hoá và lời văn",
+          "description": "Bài toán tình huống (tỉ lệ, phần trăm, tốc độ, lãi, dãy số) đòi dịch lời văn sang biểu thức rồi tính.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một bể chứa 200 lít, mỗi phút chảy ra 8 lít. Sau bao nhiêu phút bể còn 40 lít? (Bốn phương án số.)",
+          "approach": "Lập phương trình theo đại lượng thay đổi (200 - 8t = 40), giải t. Kiểm tra tính hợp lý của đáp số so với ngữ cảnh."
+        },
+        {
+          "name": "Câu đọc dữ liệu và cấp số",
+          "description": "Câu về dãy số (cấp số cộng/nhân), đọc bảng - đồ thị, trung bình - trung vị - mốt, logarit và mũ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cấp số cộng có số hạng đầu 3 và công sai 4. Số hạng thứ 10 bằng bao nhiêu? (Bốn phương án số.)",
+          "approach": "Nhớ công thức số hạng tổng quát u_n = u_1 + (n-1)d cho cấp số cộng và u_n = u_1*q^(n-1) cho cấp số nhân. Cẩn thận chỉ số n so với 'số hạng thứ mấy'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bảng công thức nào - mọi công thức đại số, hàm số, hình học, lượng giác, thống kê đều phải thuộc.",
+        "Chỉ được hỗ trợ bằng máy tính cầm tay hợp lệ (dùng cho toàn phần Math); một số dòng máy có CAS bị cấm."
+      ],
+      "formulas_must_memorize": [
+        "math.thcs.phuong-trinh-bac-hai.cong-thuc-nghiem",
+        "math.thcs.phuong-trinh-bac-hai.he-thuc-vi-et",
+        "math.thpt.ham-so-bac-nhat-bac-hai.toa-do-dinh-parabol",
+        "math.thcs.ham-so-bac-nhat.he-so-goc",
+        "math.thcs.ham-so-bac-nhat.duong-thang-di-qua-hai-diem",
+        "math.thpt.oxy-duong-thang.pt-he-so-goc",
+        "math.thcs.he-thuc-luong.dinh-li-pytago",
+        "math.thcs.ti-so-luong-giac.sin-goc-nhon",
+        "math.thcs.ti-so-luong-giac.cos-goc-nhon",
+        "math.thcs.ti-so-luong-giac.tang-goc-nhon",
+        "math.thpt.he-thuc-luong.dinh-li-sin",
+        "math.thpt.he-thuc-luong.dinh-li-cosin",
+        "math.thpt.luong-giac.he-thuc-luong-giac-co-ban",
+        "math.thpt.luong-giac.doi-do-sang-radian",
+        "math.thcs.duong-tron.dien-tich-hinh-tron",
+        "math.thcs.duong-tron.do-dai-duong-tron",
+        "math.thpt.oxy-duong-tron.pt-chinh-tac",
+        "math.thpt.mu-logarit.dinh-nghia-logarit",
+        "math.thpt.mu-logarit.logarit-cua-tich",
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-nhan-so-hang-tong-quat",
+        "math.thpt.to-hop-xac-suat.hoan-vi",
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k",
+        "math.thcs.thong-ke.so-trung-binh-cong",
+        "math.thcs.thong-ke.trung-vi",
+        "math.thpt.so-phuc.luy-thua-don-vi-ao",
+        "math.thcs.hinh-khong-gian.hinh-hop-chu-nhat-the-tich"
+      ],
+      "scoring": {
+        "description": "Số câu đúng (raw score; khung mới có 41 câu tính điểm trong 45 câu) được quy về điểm thang (scale score) 1-36. KHÔNG trừ điểm câu sai. Phần Math cùng English và Reading tạo Composite = trung bình (làm tròn) của ba phần lõi. Nếu thi thêm Science, có thêm điểm STEM = trung bình Math và Science.",
+        "scale": "1-36",
+        "raw_to_scaled": "Bảng quy đổi raw -> scale thay đổi theo từng đợt thi để cân bằng độ khó; ví dụ ~38-40/45 câu đúng thường cho ~30 điểm, điểm 36 gần như phải đúng gần trọn. Percentile công bố kèm: 30 điểm Math thường rơi vào phân vị ~93-95.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Quản lý thời gian: ~66 giây/câu (dễ thở hơn khung cũ ~60 giây/câu). Làm hai lượt: lượt 1 quét câu dễ, lượt 2 quay lại câu khó đã đánh dấu.",
+        "Thử đáp án (backsolving): ACT xếp phương án theo thứ tự tăng/giảm nên thử phương án giữa trước để nhị phân nhanh.",
+        "Chọn số cụ thể (plug-in): với câu chứa biến ở đề và phương án, gán số dễ để loại phương án sai.",
+        "Ước lượng và loại trừ: nhiều câu hình có thể ước lượng theo tỉ lệ hình vẽ (dù hình 'không đúng tỉ lệ' vẫn gợi ý loại phương án phi lý).",
+        "Dùng máy tính đúng chỗ: bấm máy cho tính toán nặng, nhưng câu đại số ký hiệu thì biến đổi tay nhanh hơn.",
+        "Không bỏ trống: không trừ điểm sai, phải tô hết; chốt một chữ cái 'đoán mặc định' cho các câu hết giờ."
+      ],
+      "common_traps": [
+        "Bẫy 'đọc thiếu yêu cầu': đề hỏi chu vi nhưng phương án gài sẵn diện tích, hoặc hỏi x nhưng gài sẵn x^2.",
+        "Đơn vị: câu trộn inch/foot, phút/giờ; phải đổi trước khi tính.",
+        "Hình 'không vẽ đúng tỉ lệ' (figure not drawn to scale): không được đo mà phải dùng số liệu cho.",
+        "Chế độ máy tính độ/radian sai khi làm câu lượng giác.",
+        "Nhầm chỉ số dãy số: 'số hạng thứ 10' ứng với n = 10, dễ tính nhầm bằng (n-1) hoặc (n+1).",
+        "Số phức: quên i^2 = -1 khi khai triển tích, hoặc quên chu kỳ 4 của luỹ thừa i."
+      ],
+      "tags": [
+        "act",
+        "toan",
+        "enhanced-act",
+        "act-inc",
+        "tuyen-sinh-my"
+      ],
+      "sources": [
+        "ACT.org - Enhanced ACT enhancements: Math 45 câu/50 phút, giảm còn 4 phương án; Science tách thành phần tuỳ chọn; Composite là trung bình ba phần English + Math + Reading",
+        "ACT.org / EnhancedACT.org - Timeline: online national tháng 4/2025, paper national tháng 9/2025, state/district và quốc tế mùa xuân 2026",
+        "ACT.org - ACT Math reporting categories (Enhanced ACT): Preparing for Higher Math ~80% (Number & Quantity 10-12%, Algebra/Functions/Geometry ~17-20% mỗi mảng, Statistics & Probability 12-15%) và Integrating Essential Skills ~20% (khung cũ Integrating Essential Skills ~40%)",
+        "ACT.org - chính sách máy tính: được dùng máy hợp lệ cho toàn phần Math; không cấp bảng công thức"
+      ]
+    },
+    {
+      "id": "exam.act-science",
+      "name": "ACT Science (Enhanced ACT)",
+      "provider": "ACT, Inc.",
+      "subject": "physics",
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "level": "thpt",
+      "overview": "Phần Science của kỳ thi ACT đo kỹ năng SUY LUẬN KHOA HỌC (interpretation, analysis, evaluation, reasoning, problem-solving) chứ không kiểm tra thuộc lòng nội dung: dữ liệu lấy từ sinh học, hoá học, vật lý và khoa học Trái Đất/vũ trụ, nhưng thí sinh chỉ cần đọc - hiểu bảng số liệu, đồ thị và mô tả thí nghiệm. Đây thực chất là bài data interpretation. Từ khung Enhanced ACT (hiệu lực national online 4/2025, paper 9/2025), Science trở thành phần TUỲ CHỌN (optional), 40 câu / 40 phút (khung cũ: 40 câu / 35 phút), tính phí add-on, cho điểm riêng thang 1-36. Science KHÔNG còn tính vào Composite (Composite chỉ gồm English + Math + Reading) mà tạo điểm STEM cùng Math. Thí sinh dự tuyển ngành STEM/y - dược nên thi phần này.",
+      "sections": [
+        {
+          "name": "Science (Enhanced ACT)",
+          "question_count": "40",
+          "duration_minutes": 40,
+          "weight_percent": 100.0,
+          "calculator": "khong-cho-phep",
+          "note": "Khung hiện hành từ 2025: 40 câu / 40 phút, phần tuỳ chọn tính phí. Khung cũ: 40 câu / 35 phút. Máy tính không được dùng ở phần Science."
+        }
+      ],
+      "topic_weights": {
+        "Data Representation (đọc bảng, đồ thị, sơ đồ)": 34.0,
+        "Research Summaries (tóm tắt và phân tích thí nghiệm)": 50.0,
+        "Conflicting Viewpoints (hai/nhiều quan điểm trái chiều)": 16.0
+      },
+      "question_types": [
+        {
+          "name": "Data Representation - đọc và nội suy dữ liệu",
+          "description": "Passage là bảng số liệu, đồ thị, biểu đồ. Câu hỏi yêu cầu đọc giá trị, nhận xu hướng tăng/giảm, nội suy - ngoại suy, đọc giao điểm hai đường.",
+          "example_prompt": "Đề mô phỏng tự soạn: Đồ thị cho khối lượng riêng của một dung dịch giảm tuyến tính khi nhiệt độ tăng từ 10 đến 60 độ C. Ở 35 độ C, khối lượng riêng gần nhất với giá trị nào? (Bốn phương án số.)",
+          "approach": "Không cần kiến thức nền: đọc thẳng trục, để ý ĐƠN VỊ và thang chia (không đều?). Với 'gần nhất', nội suy tuyến tính giữa hai điểm gần nhất. Không tự thêm giả định ngoài dữ liệu."
+        },
+        {
+          "name": "Research Summaries - phân tích thiết kế thí nghiệm",
+          "description": "Passage mô tả 2-3 thí nghiệm liên quan. Câu hỏi về biến độc lập/phụ thuộc, biến kiểm soát, mục đích từng thí nghiệm, dự đoán kết quả nếu đổi điều kiện, và so sánh giữa các thí nghiệm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Trong Thí nghiệm 2, yếu tố nào được giữ cố định để so sánh công bằng với Thí nghiệm 1? (Bốn phương án mô tả điều kiện.)",
+          "approach": "Xác định ngay biến nào thay đổi (independent) và đại lượng nào được đo (dependent); phần còn lại là biến kiểm soát. Câu 'nếu tăng X thì Y' đọc xu hướng từ bảng của chính thí nghiệm đó."
+        },
+        {
+          "name": "Conflicting Viewpoints - so sánh quan điểm",
+          "description": "Passage trình bày hai (hoặc nhiều) nhà khoa học/giả thuyết đối lập. Câu hỏi về luận điểm mỗi bên, điểm khác biệt, và bằng chứng nào ủng hộ/bác bỏ một quan điểm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Bằng chứng nào dưới đây, nếu đúng, sẽ làm SUY YẾU quan điểm của Nhà khoa học 1 nhưng không ảnh hưởng Nhà khoa học 2? (Bốn phương án.)",
+          "approach": "Đây là dạng đọc - hiểu, nên đọc kỹ luận điểm từng bên và gạch chân điểm mấu chốt gây tranh cãi. Trả lời theo đúng điều mỗi bên NÓI, không suy diễn theo kiến thức riêng."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bảng công thức và cũng gần như KHÔNG cần công thức: đây là bài suy luận trên dữ liệu cho sẵn.",
+        "Không được dùng máy tính; phép tính nếu có chỉ ở mức số học đơn giản và ước lượng.",
+        "Một vài quan hệ nền dưới đây chỉ giúp đọc nhanh dữ liệu (tỉ lệ, tốc độ, khối lượng riêng, trung bình, pH), không phải để tính toán nặng."
+      ],
+      "formulas_must_memorize": [
+        "physics.thcs.do-luong-khoi-luong-rieng.khoi-luong-rieng",
+        "physics.thcs.chuyen-dong.toc-do",
+        "physics.thcs.chuyen-dong.toc-do-trung-binh",
+        "math.thcs.ti-le-thuc.dai-luong-ti-le-thuan",
+        "math.thcs.ti-le-thuc.dai-luong-ti-le-nghich",
+        "math.thcs.thong-ke.so-trung-binh-cong",
+        "math.thcs.ham-so-bac-nhat.he-so-goc",
+        "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-cua-hai-so",
+        "chemistry.thpt.dien-li.ph-cua-dung-dich",
+        "math.thpt.mu-logarit.tang-truong-mu"
+      ],
+      "scoring": {
+        "description": "Số câu đúng (tối đa 40) quy về điểm thang 1-36; không trừ điểm câu sai. Từ khung Enhanced ACT, Science là điểm ĐỘC LẬP, không tính vào Composite ba phần lõi; nếu thi cùng Math thì có thêm điểm STEM = trung bình Math và Science.",
+        "scale": "1-36",
+        "raw_to_scaled": "Bảng quy đổi raw -> scale theo từng đợt thi; do phần này ngắn và nhạy, sai vài câu có thể tụt vài điểm. Percentile kèm điểm: ~28-30 điểm Science thường rơi vào phân vị ~90 trở lên.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Đây là bài đọc dữ liệu, KHÔNG phải bài kiến thức: đừng sa vào lý thuyết nền, trả lời bám sát bảng - đồ thị đã cho.",
+        "Quản lý thời gian ~1 phút/câu, ~5 phút/passage: với Data Representation và Research Summaries, đọc lướt phần chữ rồi nhảy vào hình - bảng và câu hỏi.",
+        "Để passage Conflicting Viewpoints (nhiều chữ, ít số) làm SAU cùng vì tốn thời gian đọc nhất.",
+        "Luôn khoanh vùng ĐƠN VỊ và chiều biến thiên (tăng hay giảm) trên mỗi trục trước khi đọc câu hỏi.",
+        "Với câu 'thí nghiệm nào ủng hộ...', đối chiếu xu hướng dữ liệu chứ không đoán theo cảm tính khoa học.",
+        "Không bỏ trống câu nào: không trừ điểm sai; hết giờ thì đoán hết."
+      ],
+      "common_traps": [
+        "Đưa kiến thức ngoài vào: chọn đáp án 'đúng theo sách' nhưng trái với dữ liệu trong passage - phải theo dữ liệu.",
+        "Thang trục không đều hoặc trục log: đọc giá trị sai vì tưởng chia đều.",
+        "Ngoại suy quá xa: dự đoán ngoài khoảng dữ liệu dễ sai nếu xu hướng đổi chiều.",
+        "Nhầm biến độc lập với biến phụ thuộc khi phân tích thiết kế thí nghiệm.",
+        "Bẫy 'trái chiều': ở Conflicting Viewpoints, gán nhầm luận điểm của nhà khoa học này cho nhà khoa học kia.",
+        "Sa đà đọc hết phần chữ dài của bảng khiến hết giờ - phải ưu tiên hình, bảng và đúng câu đang hỏi."
+      ],
+      "tags": [
+        "act",
+        "khoa-hoc",
+        "science-reasoning",
+        "data-interpretation",
+        "enhanced-act"
+      ],
+      "sources": [
+        "ACT.org - Enhanced ACT: Science 40 câu/40 phút, trở thành phần tuỳ chọn tính phí, điểm riêng 1-36, tạo điểm STEM cùng Math; không còn tính vào Composite",
+        "ACT.org - ba dạng passage Science: Data Representation, Research Summaries, Conflicting Viewpoints; kỹ năng đo là suy luận khoa học trên dữ liệu",
+        "EnhancedACT.org - so sánh khung cũ (40 câu/35 phút, Science bắt buộc, Composite 4 phần) và khung mới từ 2025"
+      ]
+    },
+    {
+      "id": "exam.gre-quantitative-reasoning",
+      "name": "GRE Quantitative Reasoning",
+      "provider": "Educational Testing Service (ETS)",
+      "subject": "math",
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "level": "dai-hoc",
+      "overview": "Quantitative Reasoning là phần đo tư duy định lượng của kỳ thi GRE General Test do ETS tổ chức, dùng để xét tuyển sau đại học (thạc sĩ, tiến sĩ, MBA) chủ yếu ở Mỹ. Nội dung ở mức toán phổ thông: số học, đại số, hình học và phân tích dữ liệu - KHÔNG có lượng giác, giải tích hay chứng minh. Từ bản 'shorter GRE' hiệu lực 22/9/2023, toàn bài rút còn ~1 giờ 58 phút; phần Quant gồm HAI section, tổng 27 câu / 47 phút (section 1: 12 câu/21 phút; section 2: 15 câu/26 phút), thích ứng theo section (section-level adaptive): kết quả section 1 quyết định độ khó section 2. Có máy tính trên màn hình (cộng, trừ, nhân, chia, căn bậc hai). Điểm thang 130-170, bước 1 điểm.",
+      "sections": [
+        {
+          "name": "Quantitative Reasoning - Section 1",
+          "question_count": "12",
+          "duration_minutes": 21,
+          "weight_percent": 44.4,
+          "calculator": "cho-phep",
+          "note": "Độ khó trung bình cố định. Kết quả section này quyết định độ khó section 2 (section-level adaptive). Máy tính trên màn hình."
+        },
+        {
+          "name": "Quantitative Reasoning - Section 2",
+          "question_count": "15",
+          "duration_minutes": 26,
+          "weight_percent": 55.6,
+          "calculator": "cho-phep",
+          "note": "Nhận bản dễ/trung bình/khó tuỳ điểm section 1. Được đánh dấu (mark) và quay lại câu TRONG cùng section."
+        }
+      ],
+      "topic_weights": {
+        "Arithmetic (số học: bội - ước, luỹ thừa, tỉ lệ, phần trăm)": 22.0,
+        "Algebra (biểu thức, phương trình, bất phương trình, hàm)": 28.0,
+        "Geometry (đường, tam giác, đường tròn, đa giác, khối)": 22.0,
+        "Data Analysis (thống kê, xác suất, phân phối, đọc dữ liệu)": 28.0
+      },
+      "question_types": [
+        {
+          "name": "Quantitative Comparison (so sánh định lượng)",
+          "description": "Cho Quantity A và Quantity B, chọn 1 trong 4: A lớn hơn / B lớn hơn / hai bằng nhau / không đủ dữ kiện để kết luận. Đây là dạng ĐẶC TRƯNG của GRE.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho x < 0. Quantity A: x^2. Quantity B: x^3. Hãy so sánh. (Bốn phương án chuẩn A/B/bằng/không xác định.)",
+          "approach": "Không cần tính giá trị chính xác - chỉ cần so sánh. Thử các giá trị biên (âm, 0, phân số giữa 0 và 1, số lớn) để xem quan hệ có ĐỔI chiều không; nếu đổi chiều thì chọn 'không đủ dữ kiện'."
+        },
+        {
+          "name": "Multiple Choice - một đáp án",
+          "description": "Trắc nghiệm 5 phương án, chọn đúng một.",
+          "example_prompt": "Đề mô phỏng tự soạn: Nếu 2x + 3 = 4x - 7 thì x^2 bằng bao nhiêu? (Năm phương án số.)",
+          "approach": "Giải xuôi nếu nhanh; nếu không, thử đáp án (backsolve). Đọc kỹ đề hỏi x hay x^2."
+        },
+        {
+          "name": "Multiple Choice - chọn một hoặc nhiều",
+          "description": "Trắc nghiệm có thể có NHIỀU đáp án đúng; phải chọn hết mọi phương án đúng mới được điểm (không có điểm thành phần).",
+          "example_prompt": "Đề mô phỏng tự soạn: Chọn TẤT CẢ giá trị nguyên của n thoả -5 < 2n <= 6. (Nhiều phương án; tô hết đáp án đúng.)",
+          "approach": "Xét từng phương án độc lập như một câu đúng/sai riêng. Cẩn thận biên (dấu < hay <=)."
+        },
+        {
+          "name": "Numeric Entry (tự điền đáp số)",
+          "description": "Không có phương án; gõ đáp số vào ô (số nguyên, thập phân, hoặc phân số tử/mẫu).",
+          "example_prompt": "Đề mô phỏng tự soạn: Trung bình cộng của 4 số là 15. Nếu thêm số 25 thành 5 số thì trung bình mới bằng bao nhiêu? Nhập đáp số.",
+          "approach": "Không thử ngược được: giải xuôi, chú ý làm tròn theo yêu cầu đề và định dạng ô (phân số nhập tử và mẫu riêng)."
+        },
+        {
+          "name": "Data Interpretation (đọc dữ liệu)",
+          "description": "Một nhóm câu gắn với cùng bảng/biểu đồ, hỏi giá trị, tỉ lệ, phần trăm thay đổi, trung bình.",
+          "example_prompt": "Đề mô phỏng tự soạn: Dựa vào biểu đồ cột doanh thu bốn quý, quý nào có mức tăng phần trăm so với quý liền trước là lớn nhất? (Năm phương án.)",
+          "approach": "Đọc kỹ nhãn trục và đơn vị (nghìn hay triệu?). Với 'phần trăm thay đổi', dùng (mới - cũ)/cũ, không nhầm với chênh lệch tuyệt đối."
+        }
+      ],
+      "formula_sheet_provided": [
+        "KHÔNG cấp bảng công thức. Được dùng máy tính trên màn hình (chỉ cộng, trừ, nhân, chia, căn bậc hai).",
+        "GRE Quant KHÔNG kiểm tra lượng giác, số phức, giải tích hay chứng minh hình học chính quy.",
+        "Hình vẽ 'không nhất thiết đúng tỉ lệ' trừ khi ghi rõ; dữ kiện lấy từ số liệu, không được đo trên hình."
+      ],
+      "formulas_must_memorize": [
+        "math.thcs.phuong-trinh-bac-hai.cong-thuc-nghiem",
+        "math.thcs.phuong-trinh-bac-hai.he-thuc-vi-et",
+        "math.thcs.hang-dang-thuc.hieu-hai-binh-phuong",
+        "math.thcs.hang-dang-thuc.binh-phuong-cua-mot-tong",
+        "math.thcs.ham-so-bac-nhat.he-so-goc",
+        "math.thcs.he-thuc-luong.dinh-li-pytago",
+        "math.thcs.duong-tron.dien-tich-hinh-tron",
+        "math.thcs.duong-tron.do-dai-duong-tron",
+        "math.thcs.duong-tron.goc-noi-tiep",
+        "math.thcs.dien-tich.dien-tich-tam-giac",
+        "math.thcs.hinh-khong-gian.hinh-hop-chu-nhat-the-tich",
+        "math.thcs.hinh-khong-gian.hinh-tru-the-tich",
+        "math.thcs.dong-dang.ti-so-dien-tich",
+        "math.thpt.mo-ta-du-lieu.quy-tac-68-95-997",
+        "math.thpt.thong-ke.do-lech-chuan",
+        "math.thcs.thong-ke.so-trung-binh-cong",
+        "math.thcs.thong-ke.trung-vi",
+        "math.thpt.thong-ke.tu-phan-vi",
+        "math.thpt.thong-ke.khoang-bien-thien",
+        "math.thpt.to-hop-xac-suat.hoan-vi",
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dien",
+        "math.thpt.to-hop-xac-suat.quy-tac-cong-xac-suat",
+        "math.thpt.to-hop-xac-suat.bien-co-doi",
+        "math.thpt.mu-logarit.lai-kep",
+        "math.thcs.ti-le-thuc.dai-luong-ti-le-thuan",
+        "math.thpt.mo-ta-du-lieu.diem-z-thong-ke-mau",
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat"
+      ],
+      "scoring": {
+        "description": "Điểm Quant thang 130-170, bước 1 điểm, dựa trên số câu đúng VÀ độ khó bản section 2 mà thí sinh được đẩy tới (section-level adaptive). Không trừ điểm câu sai; câu nhiều đáp án phải chọn đúng trọn vẹn mới tính. Verbal chấm riêng cùng thang 130-170; Analytical Writing chấm 0-6.",
+        "scale": "130-170 (bước 1 điểm)",
+        "raw_to_scaled": "Số câu đúng quy về thang 130-170 có hiệu chỉnh theo độ khó section 2. Percentile kèm điểm: khoảng 160 Quant rơi vào phân vị ~73-76, 165 vào ~86-89, 170 là phân vị ~96 (thí sinh ngành kỹ thuật thường điểm rất cao nên percentile Quant khắt khe).",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Với Quantitative Comparison, đừng tính chính xác: thử giá trị biên (âm, 0, phân số 0<x<1, số lớn); nếu quan hệ đổi chiều thì chọn 'không đủ dữ kiện'.",
+        "Làm section 1 chắc tay vì nó quyết định trần điểm (bản section 2 dễ sẽ chặn điểm tối đa).",
+        "Chọn số cụ thể (plug-in) cho câu có biến; thử đáp án (backsolve) cho câu trắc nghiệm số - bắt đầu từ phương án giữa.",
+        "Máy tính trên màn hình chậm: chỉ dùng cho phép tính thực sự nặng, còn lại ước lượng nhẩm để tiết kiệm thời gian (~105 giây/câu).",
+        "Được đánh dấu (mark) và quay lại câu trong cùng section: lướt hết câu dễ trước, để câu tốn giờ (data interpretation) lại sau.",
+        "Không bỏ trống: không trừ điểm sai, phải chọn/điền hết trước khi hết giờ."
+      ],
+      "common_traps": [
+        "Quantitative Comparison: quên trường hợp số âm, số 0 hoặc phân số giữa 0 và 1 - đó chính là chỗ quan hệ đổi chiều.",
+        "Câu 'chọn một hoặc nhiều': bỏ sót một đáp án đúng là mất trọn điểm câu (không có điểm thành phần).",
+        "Đọc dữ liệu: nhầm phần trăm thay đổi với chênh lệch tuyệt đối; bỏ quên đơn vị nghìn/triệu trên trục.",
+        "Hình không đúng tỉ lệ: đo tay trên hình để suy độ dài/góc.",
+        "Numeric Entry: sai định dạng ô phân số, hoặc làm tròn không đúng số chữ số đề yêu cầu.",
+        "Nhầm 'trung bình' với 'trung vị' ở câu thống kê có giá trị ngoại lai."
+      ],
+      "tags": [
+        "gre",
+        "toan",
+        "quant",
+        "ets",
+        "sau-dai-hoc"
+      ],
+      "sources": [
+        "ETS - GRE General Test (shorter GRE, hiệu lực 22/9/2023): Quant 2 section, tổng 27 câu/47 phút (12 câu/21 phút + 15 câu/26 phút), section-level adaptive",
+        "ETS - GRE Quant question types: Quantitative Comparison, Multiple Choice (một), Multiple Choice (một/nhiều), Numeric Entry; có máy tính trên màn hình",
+        "ETS - nội dung Quant: Arithmetic, Algebra, Geometry, Data Analysis; không có lượng giác/giải tích; thang 130-170 bước 1 điểm"
+      ]
+    },
+    {
+      "id": "exam.gre-physics-subject-test",
+      "name": "GRE Physics Subject Test",
+      "provider": "Educational Testing Service (ETS)",
+      "subject": "physics",
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "level": "dai-hoc",
+      "overview": "GRE Physics Subject Test do ETS tổ chức, dùng để xét tuyển chương trình sau đại học ngành Vật lý (chủ yếu tại Mỹ). Đề bao phủ chương trình vật lý ba năm đầu bậc đại học. Từ tháng 9/2023 kỳ thi được RÚT NGẮN và chuyển sang thi trên máy (computer-delivered, ở trung tâm và thi tại nhà ở đa số quốc gia); đợt thi trên giấy cuối cùng là tháng 4/2023. Bản mới có khoảng 70 câu trắc nghiệm 5 phương án trong 2 giờ (khung giấy cũ ~100 câu / 170 phút). Thi ba đợt (cửa sổ) mỗi năm: khoảng tháng 9, tháng 10 và tháng 4-đầu tháng 5. Điểm tổng thang 200-990, bước 10 điểm, có giá trị 5 năm; kể từ 9/2023 ETS còn báo cáo ba subscore phần trăm đúng: Classical Mechanics, Electromagnetism, và Quantum Mechanics & Atomic Physics. Chấm theo số câu đúng, KHÔNG trừ điểm câu sai (bỏ phạt đoán mò từ khi thi trên máy).",
+      "sections": [
+        {
+          "name": "Physics Subject Test (computer-delivered)",
+          "question_count": "70",
+          "duration_minutes": 120,
+          "weight_percent": 100.0,
+          "calculator": "khong-cho-phep",
+          "note": "Khung hiện hành (từ 9/2023): ~70 câu trắc nghiệm 5 phương án / 2 giờ, thi trên máy. Khung cũ (giấy, đến 4/2023): ~100 câu / 170 phút. Đề cấp sẵn bảng hằng số và một số công thức; không dùng máy tính riêng."
+        }
+      ],
+      "topic_weights": {
+        "Classical Mechanics": 20.0,
+        "Electromagnetism": 18.0,
+        "Optics and Wave Phenomena": 8.0,
+        "Thermodynamics and Statistical Mechanics": 10.0,
+        "Quantum Mechanics": 13.0,
+        "Atomic Physics": 10.0,
+        "Special Relativity": 6.0,
+        "Laboratory Methods": 6.0,
+        "Specialized Topics (VLCR, hạt nhân, hạt cơ bản, thiên văn...)": 9.0
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm 5 phương án - tính toán nhanh",
+          "description": "Đa số câu là bài toán ngắn cần lập biểu thức và ra đáp số bằng ký hiệu hoặc số, chọn 1 trong 5 phương án. Trải khắp 9 chủ đề.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hạt khối lượng m trong giếng thế vuông góc sâu vô hạn rộng L. Tỉ số năng lượng mức n=3 so với mức n=1 bằng bao nhiêu? (Năm phương án số.)",
+          "approach": "Nhớ dạng E_n ~ n^2 để lấy tỉ số 9:1 mà không cần hằng số. Ưu tiên nhận diện quy luật tỉ lệ (scaling) thay vì tính đầy đủ."
+        },
+        {
+          "name": "Trắc nghiệm khái niệm và định tính",
+          "description": "Câu kiểm tra hiểu bản chất: bảo toàn, đối xứng, dấu, giới hạn, đồ thị, thứ nguyên - thường không cần tính.",
+          "example_prompt": "Đề mô phỏng tự soạn: Đại lượng nào được bảo toàn khi Lagrangian không phụ thuộc tường minh vào thời gian? (Năm phương án: động lượng, năng lượng, mômen động lượng...)",
+          "approach": "Dùng định lí Noether và các nguyên lí bảo toàn. Với câu đồ thị/giới hạn, kiểm tra hành vi ở biên (r->0, r->vô cùng)."
+        },
+        {
+          "name": "Câu phân tích thứ nguyên và ước lượng",
+          "description": "Khi bí công thức chính xác, phân tích thứ nguyên và bậc độ lớn (order of magnitude) đủ để loại phương án.",
+          "example_prompt": "Đề mô phỏng tự soạn: Biểu thức nào dưới đây có thứ nguyên của năng lượng? (Năm phương án tổ hợp các đại lượng h, c, m, e, epsilon_0.)",
+          "approach": "Kiểm tra thứ nguyên từng phương án; loại ngay những phương án sai đơn vị. Khi còn phân vân, ước lượng bậc độ lớn bằng hằng số quen thuộc."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Đề cấp sẵn bảng HẰNG SỐ VẬT LÝ và một số công thức nền cơ bản ở đầu đề (ví dụ hằng số hấp dẫn, điện tích nguyên tố, hằng số Planck, khối lượng electron...).",
+        "Tuy nhiên phần LỚN công thức chuyên sâu (Lagrange - Hamilton, phương trình Maxwell, Schrödinger, phân bố thống kê...) KHÔNG được liệt kê - phải thuộc.",
+        "Không được dùng máy tính riêng; các con số được thiết kế để tính nhẩm hoặc ước lượng."
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.dong-luc-hoc.dinh-luat-ii-newton",
+        "physics.thpt.cong-nang-luong.dinh-li-bien-thien-dong-nang",
+        "physics.thpt.dong-luong.dinh-luat-bao-toan-dong-luong",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-chu-ki",
+        "physics.thpt.chuyen-dong-quay.phuong-trinh-dong-luc-hoc-vat-ran-quay",
+        "physics.thpt.chuyen-dong-quay.bao-toan-momen-dong-luong",
+        "physics.dai-hoc.co-hoc-giai-tich.phuong-trinh-euler-lagrange",
+        "physics.dai-hoc.co-hoc-giai-tich.phuong-trinh-chinh-tac-hamilton",
+        "physics.thpt.dong-luc-hoc.dinh-luat-van-vat-hap-dan",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.tinh-dien-gauss.dinh-luat-gauss-tich-phan",
+        "physics.thpt.tu-truong.luc-lorentz",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-toan-mach",
+        "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-i-nhiet-dong-luc-hoc",
+        "physics.thpt.nhiet-dong-luc-hoc.hieu-suat-chu-trinh-carnot",
+        "physics.dai-hoc.vat-li-thong-ke.phan-bo-fermi-dirac",
+        "physics.dai-hoc.vat-li-thong-ke.phan-bo-bose-einstein",
+        "physics.dai-hoc.vat-li-thong-ke.phan-bo-maxwell-van-toc",
+        "physics.dai-hoc.luong-tu.phuong-trinh-schrodinger-dung",
+        "physics.dai-hoc.luong-tu.nguyen-li-bat-dinh-heisenberg",
+        "physics.dai-hoc.luong-tu.gieng-the-vuong-goc-sau-vo-han",
+        "physics.dai-hoc.luong-tu.gia-thuyet-de-broglie",
+        "physics.dai-hoc.luong-tu.ban-kinh-bohr-va-quang-pho-hidro",
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien",
+        "physics.dai-hoc.buc-xa.hieu-ung-compton",
+        "physics.thpt.tuong-doi-hep.he-thuc-nang-luong-dong-luong",
+        "physics.thpt.song-anh-sang.khoang-van",
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-so-hat"
+      ],
+      "scoring": {
+        "description": "Chấm theo số câu đúng (rights-only), KHÔNG trừ điểm câu sai - đây là điểm khác biệt lớn so với khung giấy cũ từng phạt 1/4 điểm mỗi câu sai. Điểm thô quy về thang tổng 200-990, bước 10 điểm. Ngoài điểm tổng, ETS báo cáo ba subscore phần trăm đúng: Classical Mechanics, Electromagnetism, và Quantum Mechanics & Atomic Physics.",
+        "scale": "200-990 (bước 10 điểm)",
+        "raw_to_scaled": "Số câu đúng quy về thang 200-990 qua bảng chuẩn hoá theo đợt thi; do thang rộng, mỗi câu đúng có trọng số đáng kể. Percentile kèm điểm rất khắt khe vì thí sinh đều là dân chuyên vật lý: khoảng 900 thường ứng với phân vị ~80-83, 990 là kịch trần ~94+.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Ưu tiên tốc độ: ~103 giây/câu; quét cả đề, hốt ngay câu định tính và câu tỉ lệ (scaling) dễ trước, để câu tính nặng lại sau.",
+        "Tư duy tỉ lệ (scaling) và giới hạn: nhiều câu chỉ cần biết đại lượng phụ thuộc bậc mấy (E_n ~ n^2, lực ~ 1/r^2) là ra đáp án.",
+        "Phân tích thứ nguyên để loại phương án khi quên công thức; kiểm tra đơn vị của từng phương án.",
+        "Ước lượng bậc độ lớn bằng hằng số quen (hc ~ 1240 eV.nm, k_B*T ~ 1/40 eV ở 300K) thay cho tính chính xác.",
+        "Không trừ điểm sai nên PHẢI tô hết mọi câu; với 5 phương án, loại được 1-2 phương án là đoán rất có lợi.",
+        "Ôn theo trọng số: Cơ học cổ điển (20%) và Điện từ (18%) chiếm gần 40% đề - đầu tư nhiều nhất; ba subscore cũng nhấn vào CM, EM, QM."
+      ],
+      "common_traps": [
+        "Quên hệ số (2pi, 1/2, hệ số hình học) khi nhớ vội công thức - phương án gài sẵn kết quả thiếu/thừa hệ số.",
+        "Nhầm quy ước dấu trong nhiệt động lực học (công do khí sinh ra so với công thực hiện lên khí).",
+        "Lẫn bán kính với đường kính, tần số với tần số góc (f so với omega = 2pi f).",
+        "Câu tương đối tính: quên hệ số Lorentz hoặc dùng công thức cổ điển ngoài vùng vận tốc nhỏ.",
+        "Cơ lượng tử: nhầm mức năng lượng giếng thế (E ~ n^2) với dao động tử điều hoà (E ~ n + 1/2).",
+        "Quên phân biệt thống kê Fermi-Dirac (fermion, một trạng thái một hạt) với Bose-Einstein (boson)."
+      ],
+      "tags": [
+        "gre",
+        "vat-li",
+        "gre-physics",
+        "ets",
+        "sau-dai-hoc"
+      ],
+      "sources": [
+        "ETS - GRE Physics Subject Test (computer-delivered từ 9/2023, đợt thi giấy cuối cùng 4/2023): ~70 câu 5 phương án / 2 giờ; thang 200-990 bước 10 điểm; ba subscore CM, EM, QM & Atomic",
+        "ETS - GRE Subject Tests content & structure: khung mới thi trên máy, ba cửa sổ thi/năm (khoảng tháng 9, 10 và 4-đầu 5); điểm có giá trị 5 năm",
+        "Wikipedia / ETS - trọng số nội dung GRE Physics: Classical Mechanics 20%, Electromagnetism 18%, Optics & Waves 8%, Thermo & Stat Mech 10%, Quantum 13%, Atomic 10%, Special Relativity 6%, Lab Methods 6%, Specialized 9%",
+        "ETS - chính sách chấm: rights-only (không trừ điểm câu sai) trên bản thi máy, khác khung giấy cũ"
+      ]
+    },
+    {
+      "id": "exam.mcat-chemical-physical-foundations",
+      "name": "MCAT Chemical and Physical Foundations of Biological Systems",
+      "provider": "Association of American Medical Colleges (AAMC)",
+      "subject": "chemistry",
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "level": "dai-hoc",
+      "overview": "Chemical and Physical Foundations of Biological Systems (Chem/Phys) là một trong bốn phần của kỳ thi MCAT do AAMC tổ chức, dùng để xét tuyển trường y (chủ yếu ở Mỹ và Canada). Phần này kiểm tra vận dụng các nguyên lý hoá học và vật lý vào hệ sinh học người, kết hợp kỹ năng suy luận và nghiên cứu khoa học. Gồm 59 câu / 95 phút, trộn câu theo cụm passage và câu rời rạc (discrete); thí sinh được cấp bảng tuần hoàn nhưng KHÔNG được dùng máy tính (tính nhẩm/ước lượng). Phân bố theo môn xấp xỉ: Hoá đại cương 30%, Hoá sinh học kỳ 1 25%, Vật lý nhập môn 25%, Hoá hữu cơ 15%, Sinh học nhập môn 5%. Mỗi phần MCAT cho điểm thang 118-132 (trung điểm 125); bốn phần cộng lại thành tổng 472-528.",
+      "sections": [
+        {
+          "name": "Chemical and Physical Foundations of Biological Systems",
+          "question_count": "59",
+          "duration_minutes": 95,
+          "weight_percent": 100.0,
+          "calculator": "khong-cho-phep",
+          "note": "Khoảng 10 passage (mỗi passage 4-7 câu) và 15 câu rời rạc discrete. Được cấp bảng tuần hoàn; không dùng máy tính. Một trong bốn phần của toàn kỳ MCAT dài ~7,5 giờ."
+        }
+      ],
+      "topic_weights": {
+        "General Chemistry (hoá đại cương)": 30.0,
+        "First-semester Biochemistry (hoá sinh)": 25.0,
+        "Introductory Physics (vật lý nhập môn)": 25.0,
+        "Organic Chemistry (hoá hữu cơ)": 15.0,
+        "Introductory Biology (sinh học nhập môn)": 5.0
+      },
+      "question_types": [
+        {
+          "name": "Câu theo cụm passage (passage-based)",
+          "description": "Một đoạn mô tả thí nghiệm/tình huống kèm bảng, đồ thị, sơ đồ phản ứng; sau đó 4-7 câu vận dụng kiến thức nền vào chính dữ liệu passage.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một enzyme hoạt động tối ưu ở pH 7,4. Dựa vào đồ thị vận tốc phản ứng theo pH trong passage và phương trình Henderson-Hasselbalch, hãy cho biết ở pH 6,4 tỉ lệ dạng base liên hợp so với dạng acid của nhóm bên (pKa = 6,0) gần nhất với giá trị nào? (Bốn phương án số.)",
+          "approach": "Đọc lướt passage lấy ý và số liệu chính, nhảy vào câu hỏi. Kết hợp DỮ LIỆU passage với công thức thuộc lòng (ở đây là Henderson-Hasselbalch). Ước lượng nhanh 10^(pH-pKa) = 10^0.4 ~ 2,5."
+        },
+        {
+          "name": "Câu rời rạc (discrete)",
+          "description": "Câu độc lập không gắn passage, kiểm tra một khái niệm/kỹ năng cụ thể (định luật khí, mạch điện, quang học, động học...).",
+          "example_prompt": "Đề mô phỏng tự soạn: Một thấu kính hội tụ tiêu cự 10 cm tạo ảnh của vật đặt cách 15 cm. Ảnh cách thấu kính bao nhiêu và là ảnh gì? (Bốn phương án.)",
+          "approach": "Dùng công thức thấu kính 1/f = 1/d_o + 1/d_i, chú ý quy ước dấu. d_i = 30 cm, ảnh thật ngược chiều. Với MCAT, số liệu thường 'đẹp' để tính nhẩm."
+        },
+        {
+          "name": "Câu suy luận nghiên cứu và biểu đồ",
+          "description": "Yêu cầu diễn giải kết quả thí nghiệm, xác định biến, đánh giá giả thuyết, hoặc đọc đồ thị định lượng (đường chuẩn độ, đồ thị động học Arrhenius).",
+          "example_prompt": "Đề mô phỏng tự soạn: Đồ thị ln k theo 1/T là một đường thẳng có độ dốc âm. Đại lượng nào suy được trực tiếp từ độ dốc? (Bốn phương án.)",
+          "approach": "Nhận diện dạng tuyến tính hoá: với Arrhenius ln k = ln A - (E_a/R)(1/T), độ dốc = -E_a/R nên suy ra năng lượng hoạt hoá. Bám phương trình đã tuyến tính hoá để đọc ý nghĩa hệ số."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Chỉ cấp BẢNG TUẦN HOÀN. KHÔNG cấp bảng công thức và KHÔNG cho dùng máy tính.",
+        "Toàn bộ công thức vật lý (động học, điện, quang, dao động) và hoá (cân bằng, động học, nhiệt động, acid-base, điện hoá) phải thuộc.",
+        "Số liệu được thiết kế để tính nhẩm và ước lượng; cần thạo log/ln gần đúng và luỹ thừa 10."
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.dong-hoc.he-thuc-doc-lap-thoi-gian",
+        "physics.thpt.dong-luc-hoc.dinh-luat-ii-newton",
+        "physics.thpt.cong-nang-luong.dinh-li-bien-thien-dong-nang",
+        "physics.thpt.intl-chat-luu.phuong-trinh-bernoulli-thpt",
+        "physics.thpt.intl-chat-luu.phuong-trinh-lien-tuc-thpt",
+        "physics.thpt.intl-chat-luu.luc-day-archimedes-ib",
+        "physics.thpt.dien-tich-dien-truong.dinh-luat-coulomb-chan-khong",
+        "physics.thpt.dong-dien-khong-doi.dinh-luat-om-doan-mach",
+        "physics.thpt.dong-dien-khong-doi.ghep-dien-tro-noi-tiep",
+        "physics.thpt.song-anh-sang.dinh-luat-khuc-xa",
+        "physics.thpt.quang-hinh-quoc-te.thau-kinh-quy-uoc-real-is-positive",
+        "physics.thpt.song-co.muc-cuong-do-am",
+        "physics.thpt.dao-dong-dieu-hoa.con-lac-lo-xo-chu-ki",
+        "physics.thpt.chat-khi.phuong-trinh-clapeyron-mendeleev",
+        "physics.thpt.nhiet-dong-luc-hoc.nguyen-li-i-nhiet-dong-luc-hoc",
+        "chemistry.thpt.dien-li.ph-cua-dung-dich",
+        "chemistry.thpt.dien-li.ph-dung-dich-dem",
+        "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+        "chemistry.thpt.dien-li.tich-so-ion-cua-nuoc",
+        "chemistry.thpt.dien-li.tich-so-tan",
+        "chemistry.thpt.dien-li.pka",
+        "chemistry.thpt.can-bang-quoc-te.bang-ice",
+        "chemistry.thpt.nhiet-dong-thpt.gibbs-va-hang-so-can-bang",
+        "chemistry.thpt.nhiet-dong-thpt.gibbs-dieu-kien-bat-ki",
+        "chemistry.thpt.dong-hoc-tich-phan.arrhenius-dang-logarit",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-mot",
+        "chemistry.thpt.dong-hoc-tich-phan.ban-huy-bac-mot",
+        "chemistry.thpt.dien-hoa-quoc-te.pin-nong-do",
+        "chemistry.thpt.nguyen-tu.nang-luong-photon",
+        "chemistry.thpt.nhiet-hoa-quoc-te.enthalpy-tu-nhiet-dot-chay"
+      ],
+      "scoring": {
+        "description": "Số câu đúng (tối đa 59) quy về điểm thang 118-132 cho phần này (trung điểm 125); không trừ điểm câu sai. Bốn phần MCAT (Chem/Phys, CARS, Bio/Biochem, Psych/Soc) mỗi phần 118-132, cộng lại thành tổng 472-528 (trung điểm 500).",
+        "scale": "118-132 (mỗi phần); tổng MCAT 472-528",
+        "raw_to_scaled": "AAMC dùng equating để quy điểm thô sang 118-132, bù chênh lệch độ khó giữa các đề nên số câu đúng cho mỗi mốc điểm thay đổi theo đề. Percentile công bố theo tổng: tổng ~511-512 thường quanh phân vị ~80-82; từng phần 128 thường quanh phân vị ~90 trở lên.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Chiến lược passage: đọc lướt lấy mục tiêu thí nghiệm và số liệu chính, KHÔNG học thuộc passage; nhiều câu trả lời được bằng kiến thức nền mà chưa cần đọc kỹ.",
+        "Tính nhẩm và ước lượng: không có máy tính, phải thạo log/ln gần đúng (log2 ~ 0,3), luỹ thừa 10, và làm tròn hằng số (g ~ 10, R ~ 8,3).",
+        "Quản lý thời gian ~95 giây/câu; câu discrete thường nhanh - hốt trước, để passage nhiều dữ liệu lại sau.",
+        "Phân tích thứ nguyên và loại trừ khi quên công thức chính xác; kiểm tra đơn vị đáp án.",
+        "Với câu hoá acid-base/đệm, luôn quy về pH = pKa + log([base]/[acid]) và so pH với pKa để biết dạng nào chiếm ưu thế.",
+        "Không bỏ trống: không trừ điểm sai, phải chọn hết; đánh dấu (flag) câu khó để quay lại trong phần."
+      ],
+      "common_traps": [
+        "Quy ước dấu quang học/thấu kính và dấu công trong nhiệt động - dễ đảo dấu ảnh thật/ảo hoặc toả/thu nhiệt.",
+        "Nhầm nồng độ mol với số mol; quên đổi thể tích mL sang L khi tính nồng độ và pH.",
+        "Đọc nhầm đồ thị tuyến tính hoá: độ dốc Arrhenius là -E_a/R (âm), không phải +E_a.",
+        "Bậc phản ứng: dùng công thức bán huỷ bậc 1 (không phụ thuộc nồng độ đầu) cho phản ứng bậc khác.",
+        "Bỏ qua dữ kiện sinh - hoá gài trong passage (pH cơ thể 7,4, nhiệt độ 37 độ C) khiến ước lượng lệch.",
+        "Sa đà đọc chi tiết passage dài khiến hết giờ - phải bám câu hỏi và số liệu liên quan."
+      ],
+      "tags": [
+        "mcat",
+        "hoa-hoc",
+        "vat-li",
+        "aamc",
+        "truong-y"
+      ],
+      "sources": [
+        "AAMC (students-residents.aamc.org) - Chemical and Physical Foundations of Biological Systems: 59 câu / 95 phút, trộn passage và discrete, cấp bảng tuần hoàn, không máy tính",
+        "AAMC - phân bố môn phần Chem/Phys: General Chemistry 30%, First-semester Biochemistry 25%, Introductory Physics 25%, Organic Chemistry 15%, Introductory Biology 5%",
+        "AAMC - thang điểm MCAT: mỗi phần 118-132 (trung điểm 125), tổng bốn phần 472-528 (trung điểm 500); không trừ điểm câu sai"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1539 @@
+{
+ "meta": {
+  "file": "ext4-chemistry-daihoc.json",
+  "subject": "chemistry",
+  "title": "Bài tập bổ sung Hoá học đại học (đợt 4): phủ các công thức chưa có bài tập — phổ học IR/Raman, động hoá học dây chuyền phân nhánh, hoá hữu cơ nâng cao (Woodward-Hoffmann, Woodward-Fieser, Baldwin, retrosynthesis), hoá vô cơ cơ kim (xúc tác, isolobal, Tolman) và hoá sinh vật lí (Svedberg, Perrin, CD/MRE, điện di, áp suất thẩm thấu, mixen, Gibbs-Helmholtz)",
+  "levels": [
+   "dai-hoc"
+  ],
+  "count": 27
+ },
+ "problems": [
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0001",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một protein hình cầu có hệ số lắng s = 4.5 S (1 S = 1e-13 s) và hệ số khuếch tán D = 6.0e-11 m^2/s ở T = 293 K. Thể tích riêng phần v-ngang = 0.73 cm^3/g, khối lượng riêng dung môi rho = 1.00 g/cm^3. Dùng phương trình Svedberg, tính khối lượng mol M (g/mol).",
+   "statement_en": "A globular protein has sedimentation coefficient s = 4.5 S (1 S = 1e-13 s), diffusion coefficient D = 6.0e-11 m^2/s at T = 293 K, partial specific volume v-bar = 0.73 cm^3/g and solvent density rho = 1.00 g/cm^3. Use the Svedberg equation to find the molar mass M (g/mol).",
+   "answer": "M ≈ 6.77e4 g/mol (67.7 kg/mol)",
+   "answer_numeric": 67667.0,
+   "answer_unit": "g/mol",
+   "tolerance": 400.0,
+   "solution_steps": [
+    {
+     "explain": "Phương trình Svedberg liên hệ khối lượng mol với hệ số lắng và hệ số khuếch tán; số hạng (1 - v-ngang·rho) là hiệu chỉnh lực đẩy Archimedes của dung môi.",
+     "latex": "M = \\frac{s\\,R\\,T}{D\\left(1 - \\bar{v}\\rho\\right)}"
+    },
+    {
+     "explain": "Đổi đơn vị SI: s = 4.5e-13 s; v-ngang·rho = 0.73e-3 m^3/kg × 1000 kg/m^3 = 0.73 (không thứ nguyên), nên 1 - v-ngang·rho = 0.27.",
+     "latex": "1 - \\bar{v}\\rho = 1 - 0.73 = 0.27"
+    },
+    {
+     "explain": "Thay số với R = 8.314 J/(mol·K); kết quả M theo kg/mol rồi nhân 1000 sang g/mol.",
+     "latex": "M = \\frac{(4.5\\times 10^{-13})(8.314)(293)}{(6.0\\times 10^{-11})(0.27)} \\approx 67.7\\ \\mathrm{kg/mol} = 6.77\\times 10^{4}\\ \\mathrm{g/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.phuong-trinh-svedberg-khoi-luong-mol"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng phương trình Svedberg",
+    "đổi đơn vị hệ số lắng và thể tích riêng phần"
+   ],
+   "hints": [
+    "1 S = 1e-13 s.",
+    "1 - v-ngang·rho = 1 - 0.73 = 0.27.",
+    "M = sRT/[D(1-v-ngang·rho)]."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "svedberg",
+    "sedimentation",
+    "khoi-luong-mol",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0002",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Trong thí nghiệm huỳnh quang phân cực, đo được cường độ song song I∥ = 0.85 và vuông góc I⊥ = 0.65 (đơn vị tuỳ ý, đã hiệu chỉnh hệ số G). Tính bất đẳng hướng huỳnh quang r.",
+   "statement_en": "In a fluorescence polarization experiment the parallel intensity I∥ = 0.85 and perpendicular intensity I⊥ = 0.65 (arbitrary units, G-corrected). Compute the fluorescence anisotropy r.",
+   "answer": "r ≈ 0.093",
+   "answer_numeric": 0.093,
+   "answer_unit": "",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Bất đẳng hướng huỳnh quang định nghĩa theo cường độ song song và vuông góc; mẫu số I∥ + 2I⊥ tỉ lệ với cường độ tổng của phát xạ.",
+     "latex": "r = \\frac{I_{\\parallel} - I_{\\perp}}{I_{\\parallel} + 2 I_{\\perp}}"
+    },
+    {
+     "explain": "Thay số trực tiếp.",
+     "latex": "r = \\frac{0.85 - 0.65}{0.85 + 2(0.65)} = \\frac{0.20}{2.15} \\approx 0.093"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.bat-dang-huong-huynh-quang-perrin"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định nghĩa bất đẳng hướng huỳnh quang"
+   ],
+   "hints": [
+    "Mẫu số là I∥ + 2I⊥, không phải I∥ + I⊥.",
+    "0.20 / 2.15 ≈ 0.093."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "perrin",
+    "anisotropy",
+    "huynh-quang",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0003",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một fluorophore gắn cứng vào protein hình cầu có bất đẳng hướng cơ bản r0 = 0.40, thời gian sống huỳnh quang tau = 4.0 ns và thời gian tương quan quay theta_r = 20 ns. Dùng phương trình Perrin, tính bất đẳng hướng đo được r ở trạng thái dừng.",
+   "statement_en": "A fluorophore rigidly attached to a globular protein has fundamental anisotropy r0 = 0.40, fluorescence lifetime tau = 4.0 ns and rotational correlation time theta_r = 20 ns. Use the Perrin equation to find the steady-state anisotropy r.",
+   "answer": "r ≈ 0.333",
+   "answer_numeric": 0.333,
+   "answer_unit": "",
+   "tolerance": 0.005,
+   "solution_steps": [
+    {
+     "explain": "Phương trình Perrin mô tả sự khử phân cực do quay Brown trong thời gian sống của trạng thái kích thích.",
+     "latex": "\\frac{r_{0}}{r} = 1 + \\frac{\\tau}{\\theta_{r}}"
+    },
+    {
+     "explain": "Suy ra r và thay số.",
+     "latex": "r = \\frac{r_{0}}{1 + \\tau/\\theta_{r}} = \\frac{0.40}{1 + 4.0/20} = \\frac{0.40}{1.2} \\approx 0.333"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.bat-dang-huong-huynh-quang-perrin"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "biến đổi phương trình Perrin",
+    "liên hệ thời gian sống và thời gian quay"
+   ],
+   "hints": [
+    "r0/r = 1 + tau/theta_r.",
+    "1 + 4/20 = 1.2."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "perrin",
+    "anisotropy",
+    "rotational-correlation",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0004",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Phổ lưỡng sắc tròn (CD) của một protein đo được góc elip theta_obs = -25 mdeg tại 222 nm. Chiều dài đường quang l = 0.10 cm, nồng độ protein C = 20 µmol/L, số gốc amino acid n = 100. Tính góc elip mol trung bình trên gốc [theta]_MRE (đơn vị deg·cm^2·dmol^-1).",
+   "statement_en": "The circular dichroism spectrum of a protein gives ellipticity theta_obs = -25 mdeg at 222 nm. Path length l = 0.10 cm, protein concentration C = 20 µmol/L, number of residues n = 100. Compute the mean residue ellipticity [theta]_MRE (deg·cm^2·dmol^-1).",
+   "answer": "[theta]_MRE ≈ -1.25e4 deg·cm^2·dmol^-1",
+   "answer_numeric": -12500.0,
+   "answer_unit": "deg·cm^2·dmol^-1",
+   "tolerance": 50.0,
+   "solution_steps": [
+    {
+     "explain": "Chuẩn hoá góc elip đo được về mỗi gốc amino acid; hệ số 10 chuyển đổi đơn vị để kết quả có thứ nguyên deg·cm^2·dmol^-1 khi theta đo bằng mdeg, l bằng cm, C bằng mol/L.",
+     "latex": "\\left[\\theta\\right]_{\\mathrm{MRE}} = \\frac{\\theta_{\\mathrm{obs}}}{10\\,l\\,C\\,n}"
+    },
+    {
+     "explain": "Thay số: mẫu = 10 × 0.10 × 20e-6 × 100 = 2.0e-3.",
+     "latex": "\\left[\\theta\\right]_{\\mathrm{MRE}} = \\frac{-25}{10\\,(0.10)\\,(20\\times 10^{-6})\\,(100)} = \\frac{-25}{2.0\\times 10^{-3}} = -1.25\\times 10^{4}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.goc-elip-mol-tren-goc-amino-acid"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "chuẩn hoá góc elip theo gốc amino acid",
+    "quản lí đơn vị trong công thức MRE"
+   ],
+   "hints": [
+    "Nhớ hệ số 10 ở mẫu số.",
+    "C phải đổi ra mol/L: 20 µmol/L = 20e-6 mol/L."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "circular-dichroism",
+    "mre",
+    "protein",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0005",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Trong phổ CD, một mẫu cho hiệu độ hấp thụ trái/phải A_L - A_R = -1.5e-3. Tính góc elip theta (đơn vị mdeg) theo hệ thức theta(mdeg) = 32980·(A_L - A_R).",
+   "statement_en": "In CD spectroscopy a sample gives left/right absorbance difference A_L - A_R = -1.5e-3. Compute the ellipticity theta (mdeg) using theta(mdeg) = 32980·(A_L - A_R).",
+   "answer": "theta ≈ -49.5 mdeg",
+   "answer_numeric": -49.47,
+   "answer_unit": "mdeg",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Góc elip tỉ lệ tuyến tính với hiệu độ hấp thụ của ánh sáng phân cực tròn trái và phải; hằng số 32980 áp dụng khi biểu diễn theta theo millidegree.",
+     "latex": "\\theta\\,(\\mathrm{mdeg}) = 32980\\left(A_{L} - A_{R}\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\theta = 32980 \\times (-1.5\\times 10^{-3}) = -49.47\\ \\mathrm{mdeg}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.goc-elip-mol-tren-goc-amino-acid"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 2,
+   "skills": [
+    "chuyển hiệu độ hấp thụ CD sang góc elip"
+   ],
+   "hints": [
+    "theta(mdeg) = 32980·ΔA.",
+    "ΔA âm nên theta âm."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "circular-dichroism",
+    "ellipticity",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0006",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Trong điện di, một đại phân tử tích điện di chuyển với vận tốc trôi v = 2.0 µm/s dưới điện trường E = 200 V/m. Tính độ linh động điện di mu (đơn vị m^2·V^-1·s^-1).",
+   "statement_en": "In electrophoresis a charged macromolecule drifts at v = 2.0 µm/s under field E = 200 V/m. Compute the electrophoretic mobility mu (m^2·V^-1·s^-1).",
+   "answer": "mu = 1.0e-8 m^2·V^-1·s^-1",
+   "answer_numeric": 1e-08,
+   "answer_unit": "m^2·V^-1·s^-1",
+   "tolerance": 1e-10,
+   "solution_steps": [
+    {
+     "explain": "Độ linh động điện di là vận tốc trôi trên một đơn vị cường độ điện trường (ở trạng thái dừng, lực điện cân bằng lực ma sát).",
+     "latex": "\\mu = \\frac{v}{E}"
+    },
+    {
+     "explain": "Đổi v = 2.0 µm/s = 2.0e-6 m/s rồi chia cho E.",
+     "latex": "\\mu = \\frac{2.0\\times 10^{-6}}{200} = 1.0\\times 10^{-8}\\ \\mathrm{m^{2}\\,V^{-1}\\,s^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.do-linh-dong-dien-di-dai-phan-tu"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định nghĩa độ linh động điện di",
+    "đổi đơn vị vận tốc"
+   ],
+   "hints": [
+    "mu = v/E.",
+    "2.0 µm/s = 2.0e-6 m/s."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "dien-di",
+    "electrophoresis",
+    "mobility",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0007",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Trên gel SDS-PAGE, thang chuẩn cho quan hệ tuyến tính lg M = a - b·R_f với a = 5.0 và b = 1.8 (M tính bằng g/mol). Một protein chưa biết có R_f = 0.50. Ước lượng khối lượng mol M (g/mol).",
+   "statement_en": "On an SDS-PAGE gel the standards give the linear relation lg M = a - b·R_f with a = 5.0 and b = 1.8 (M in g/mol). An unknown protein has R_f = 0.50. Estimate the molar mass M (g/mol).",
+   "answer": "M ≈ 1.26e4 g/mol",
+   "answer_numeric": 12589.0,
+   "answer_unit": "g/mol",
+   "tolerance": 200.0,
+   "solution_steps": [
+    {
+     "explain": "Trong SDS-PAGE, logarit khối lượng mol giảm tuyến tính theo quãng đường di chuyển tương đối R_f do các phức SDS-protein có mật độ điện tích gần như nhau.",
+     "latex": "\\lg M = a - b\\,R_{f}"
+    },
+    {
+     "explain": "Thay số để tính lg M.",
+     "latex": "\\lg M = 5.0 - 1.8\\,(0.50) = 4.1"
+    },
+    {
+     "explain": "Lấy luỹ thừa 10 để ra M.",
+     "latex": "M = 10^{4.1} \\approx 1.26\\times 10^{4}\\ \\mathrm{g/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.do-linh-dong-dien-di-dai-phan-tu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng đường chuẩn SDS-PAGE",
+    "lấy luỹ thừa để suy khối lượng mol"
+   ],
+   "hints": [
+    "lg M = 5.0 - 1.8×0.50.",
+    "M = 10^(lg M)."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "sds-page",
+    "electrophoresis",
+    "khoi-luong-mol",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0008",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một dung dịch polymer rất loãng có nồng độ khối lượng c = 5.0 g/L cho áp suất thẩm thấu Pi = 250 Pa ở T = 298 K. Bỏ qua số hạng virial bậc hai, ước lượng khối lượng mol trung bình số M_n (g/mol).",
+   "statement_en": "A very dilute polymer solution of mass concentration c = 5.0 g/L gives osmotic pressure Pi = 250 Pa at T = 298 K. Neglecting the second virial term, estimate the number-average molar mass M_n (g/mol).",
+   "answer": "M_n ≈ 4.96e4 g/mol",
+   "answer_numeric": 49551.0,
+   "answer_unit": "g/mol",
+   "tolerance": 300.0,
+   "solution_steps": [
+    {
+     "explain": "Khai triển virial của áp suất thẩm thấu; ở nồng độ rất loãng giữ lại số hạng bậc nhất, Pi/c ≈ RT/M_n.",
+     "latex": "\\frac{\\Pi}{c} = RT\\left(\\frac{1}{M_{n}} + B_{2}c + \\cdots\\right) \\approx \\frac{RT}{M_{n}}"
+    },
+    {
+     "explain": "Suy ra M_n; dùng c ở SI: 5.0 g/L = 5.0 kg/m^3, khi đó M_n có đơn vị kg/mol.",
+     "latex": "M_{n} = \\frac{cRT}{\\Pi} = \\frac{(5.0)(8.314)(298)}{250} \\approx 49.6\\ \\mathrm{kg/mol}"
+    },
+    {
+     "explain": "Đổi sang g/mol.",
+     "latex": "M_{n} \\approx 4.96\\times 10^{4}\\ \\mathrm{g/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.ap-suat-tham-thau-virial-polymer"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng khai triển virial ở giới hạn loãng",
+    "quản lí đơn vị nồng độ khối lượng"
+   ],
+   "hints": [
+    "Ở giới hạn loãng: Pi = cRT/M_n.",
+    "Dùng c = 5.0 kg/m^3 để ra kg/mol."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "osmotic-pressure",
+    "virial",
+    "polymer",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0009",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một mẫu polymer gồm 2 mol chuỗi có M = 10000 g/mol và 3 mol chuỗi có M = 30000 g/mol. Tính độ đa phân tán PDI = M_w/M_n.",
+   "statement_en": "A polymer sample contains 2 mol of chains with M = 10000 g/mol and 3 mol of chains with M = 30000 g/mol. Compute the polydispersity index PDI = M_w/M_n.",
+   "answer": "PDI = M_w/M_n ≈ 1.20",
+   "answer_numeric": 1.198,
+   "answer_unit": "",
+   "tolerance": 0.02,
+   "solution_steps": [
+    {
+     "explain": "Khối lượng mol trung bình số là trung bình theo số mol chuỗi.",
+     "latex": "\\bar{M}_{n} = \\frac{\\sum_{i}N_{i}M_{i}}{\\sum_{i}N_{i}} = \\frac{2(10000)+3(30000)}{2+3} = 22000"
+    },
+    {
+     "explain": "Khối lượng mol trung bình khối là trung bình gia trọng theo khối lượng.",
+     "latex": "\\bar{M}_{w} = \\frac{\\sum_{i}N_{i}M_{i}^{2}}{\\sum_{i}N_{i}M_{i}} = \\frac{2(10000)^{2}+3(30000)^{2}}{2(10000)+3(30000)} \\approx 26364"
+    },
+    {
+     "explain": "Độ đa phân tán là tỉ số hai trung bình.",
+     "latex": "\\mathrm{PDI} = \\frac{\\bar{M}_{w}}{\\bar{M}_{n}} = \\frac{26364}{22000} \\approx 1.20"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.ap-suat-tham-thau-virial-polymer"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính M_n và M_w từ phân bố rời rạc",
+    "tính độ đa phân tán"
+   ],
+   "hints": [
+    "M_n dùng luỹ thừa 1, M_w dùng luỹ thừa 2 của M.",
+    "PDI = M_w/M_n ≥ 1."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "polymer",
+    "pdi",
+    "khoi-luong-mol",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0010",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một chất hoạt động bề mặt KHÔNG ion có nồng độ mixen tới hạn CMC = 8.0e-3 mol/L ở 298 K. Coi phần mol tại CMC là x_CMC = CMC/55.5. Tính năng lượng Gibbs tạo mixen ΔG°_mixen (kJ/mol).",
+   "statement_en": "A NONIONIC surfactant has critical micelle concentration CMC = 8.0e-3 mol/L at 298 K. Take the CMC mole fraction as x_CMC = CMC/55.5. Compute the Gibbs energy of micellization ΔG°_mic (kJ/mol).",
+   "answer": "ΔG°_mixen ≈ -21.9 kJ/mol",
+   "answer_numeric": -21.9,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.3,
+   "solution_steps": [
+    {
+     "explain": "Với chất hoạt động bề mặt không ion, mô hình pha giả cho năng lượng Gibbs tạo mixen theo phần mol tại CMC.",
+     "latex": "\\Delta G^{\\circ}_{\\mathrm{mixen}} = RT\\ln x_{\\mathrm{CMC}}"
+    },
+    {
+     "explain": "Đổi CMC sang phần mol: x_CMC = 8.0e-3/55.5 = 1.44e-4.",
+     "latex": "x_{\\mathrm{CMC}} = \\frac{8.0\\times 10^{-3}}{55.5} = 1.44\\times 10^{-4}"
+    },
+    {
+     "explain": "Thay vào với R = 8.314 J/(mol·K), T = 298 K.",
+     "latex": "\\Delta G^{\\circ}_{\\mathrm{mixen}} = (8.314)(298)\\ln(1.44\\times 10^{-4}) \\approx -2.19\\times 10^{4}\\ \\mathrm{J/mol} = -21.9\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.nong-do-mixen-toi-han"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "đổi CMC sang phần mol",
+    "áp dụng mô hình pha giả cho mixen không ion"
+   ],
+   "hints": [
+    "x_CMC = CMC/55.5.",
+    "ΔG = RT ln x_CMC (không ion)."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "cmc",
+    "micelle",
+    "surfactant",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0011",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Vẫn chất hoạt động bề mặt với CMC = 8.0e-3 mol/L (x_CMC = 1.44e-4) ở 298 K, nhưng nay là chất ION với độ liên kết đối ion beta = 0.60. Tính năng lượng Gibbs tạo mixen ΔG°_mixen (kJ/mol).",
+   "statement_en": "For the same surfactant with CMC = 8.0e-3 mol/L (x_CMC = 1.44e-4) at 298 K, but now IONIC with counterion binding degree beta = 0.60, compute ΔG°_mic (kJ/mol).",
+   "answer": "ΔG°_mixen ≈ -35.1 kJ/mol",
+   "answer_numeric": -35.1,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.4,
+   "solution_steps": [
+    {
+     "explain": "Với chất hoạt động bề mặt ion, đóng góp của đối ion liên kết vào mixen thêm hệ số (1+beta) so với trường hợp không ion.",
+     "latex": "\\Delta G^{\\circ}_{\\mathrm{mixen}} = (1+\\beta)\\,RT\\ln x_{\\mathrm{CMC}}"
+    },
+    {
+     "explain": "Thay số với beta = 0.60.",
+     "latex": "\\Delta G^{\\circ}_{\\mathrm{mixen}} = (1.60)(8.314)(298)\\ln(1.44\\times 10^{-4}) \\approx -35.1\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.nong-do-mixen-toi-han"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng công thức mixen ion có hệ số liên kết đối ion"
+   ],
+   "hints": [
+    "Dạng ion dùng hệ số (1+beta).",
+    "So với câu không ion, kết quả âm hơn 1.6 lần."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "cmc",
+    "micelle",
+    "ionic-surfactant",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0012",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một protein có nhiệt độ nóng chảy T_m = 340 K, enthalpy biến tính tại T_m là ΔH_m = 500 kJ/mol và biến thiên nhiệt dung ΔC_p = 6.0 kJ/(mol·K). Dùng phương trình Gibbs-Helmholtz mở rộng, tính ΔG_U của quá trình mở gấp ở T = 298 K (kJ/mol).",
+   "statement_en": "A protein has melting temperature T_m = 340 K, unfolding enthalpy at T_m of ΔH_m = 500 kJ/mol and heat capacity change ΔC_p = 6.0 kJ/(mol·K). Using the extended Gibbs-Helmholtz equation, find ΔG_U of unfolding at T = 298 K (kJ/mol).",
+   "answer": "ΔG_U ≈ 45.5 kJ/mol",
+   "answer_numeric": 45.5,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.6,
+   "solution_steps": [
+    {
+     "explain": "Đường cong ổn định protein tính năng lượng Gibbs mở gấp theo enthalpy tại T_m và số hạng nhiệt dung.",
+     "latex": "\\Delta G_{U}(T) = \\Delta H_{m}\\left(1 - \\frac{T}{T_{m}}\\right) - \\Delta C_{p}\\left[\\left(T_{m}-T\\right) + T\\ln\\frac{T}{T_{m}}\\right]"
+    },
+    {
+     "explain": "Số hạng enthalpy: 500(1 - 298/340) = 500 × 0.12353 ≈ 61.76 kJ/mol.",
+     "latex": "\\Delta H_{m}\\left(1 - \\frac{T}{T_{m}}\\right) = 500\\left(1 - \\frac{298}{340}\\right) \\approx 61.76\\ \\mathrm{kJ/mol}"
+    },
+    {
+     "explain": "Số hạng nhiệt dung: (T_m - T) = 42 K; T ln(T/T_m) = 298·ln(298/340) ≈ -39.31 K, nên trong ngoặc ≈ 2.69 K; nhân ΔC_p = 6.0 kJ/(mol·K) ≈ 16.25 kJ/mol.",
+     "latex": "\\Delta C_{p}\\left[\\left(T_{m}-T\\right) + T\\ln\\frac{T}{T_{m}}\\right] = 6.0\\left[42 + 298\\ln\\frac{298}{340}\\right] \\approx 16.25\\ \\mathrm{kJ/mol}"
+    },
+    {
+     "explain": "Lấy hiệu hai số hạng.",
+     "latex": "\\Delta G_{U} \\approx 61.76 - 16.25 = 45.5\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.gibbs-helmholtz-on-dinh-protein"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "áp dụng phương trình Gibbs-Helmholtz mở rộng",
+    "tách số hạng enthalpy và nhiệt dung"
+   ],
+   "hints": [
+    "Chú ý ln(T/T_m) âm vì T < T_m.",
+    "ΔG_U = số hạng enthalpy - số hạng nhiệt dung."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "gibbs-helmholtz",
+    "protein-stability",
+    "unfolding",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0013",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Động hoá học nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Trong một phản ứng dây chuyền phân nhánh, tốc độ sinh gốc tuân theo d[gốc]/dt = (f·k_nhánh - k_đứt)[gốc]. Cho f = 2, k_nhánh = 1.5e3 s^-1, k_đứt = 2.0e3 s^-1. Tính hệ số tốc độ ròng phi = f·k_nhánh - k_đứt (s^-1) và cho biết hệ có nổ nhánh không.",
+   "statement_en": "In a branched chain reaction the radical generation rate obeys d[R]/dt = (f·k_branch - k_term)[R]. Given f = 2, k_branch = 1.5e3 s^-1, k_term = 2.0e3 s^-1, compute the net rate coefficient phi = f·k_branch - k_term (s^-1) and state whether branching explosion occurs.",
+   "answer": "phi = 1000 s^-1 > 0 → xảy ra nổ nhánh",
+   "answer_numeric": 1000.0,
+   "answer_unit": "s^-1",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "Nồng độ gốc tăng theo hàm mũ với hệ số ròng phi; nổ nhánh xảy ra khi phi dương (phân nhánh thắng đứt mạch).",
+     "latex": "\\frac{d[\\text{gốc}]}{dt} = \\left(f k_{\\text{nhánh}} - k_{\\text{đứt}}\\right)[\\text{gốc}];\\qquad \\varphi = f k_{\\text{nhánh}} - k_{\\text{đứt}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\varphi = 2(1.5\\times 10^{3}) - 2.0\\times 10^{3} = 3.0\\times 10^{3} - 2.0\\times 10^{3} = 1.0\\times 10^{3}\\ \\mathrm{s^{-1}}"
+    },
+    {
+     "explain": "Vì phi > 0, nồng độ gốc bùng nổ theo hàm mũ: hệ nổ nhánh.",
+     "latex": "\\varphi > 0 \\Rightarrow \\text{nổ nhánh}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dong-hoc-nang-cao.dieu-kien-no-day-chuyen-phan-nhanh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng điều kiện nổ nhánh",
+    "so sánh tốc độ phân nhánh và đứt mạch"
+   ],
+   "hints": [
+    "phi = f·k_nhánh - k_đứt.",
+    "phi > 0 nghĩa là nổ nhánh."
+   ],
+   "tags": [
+    "dong-hoc-nang-cao",
+    "chain-reaction",
+    "branching",
+    "explosion",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0014",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Một enone vòng 6 cạnh (giá trị cơ sở λ_cơ sở = 215 nm) mang HAI nhóm thế alkyl ở vị trí β và MỘT liên kết đôi C=C ngoại vòng. Áp dụng quy tắc Woodward-Fieser (mỗi nhóm thế β: +12 nm; mỗi liên kết đôi ngoại vòng: +5 nm), tính λ_max (nm).",
+   "statement_en": "A six-membered cyclic enone (base value λ_base = 215 nm) bears TWO beta alkyl substituents and ONE exocyclic C=C double bond. Using the Woodward-Fieser rules (each beta substituent: +12 nm; each exocyclic double bond: +5 nm), compute λ_max (nm).",
+   "answer": "λ_max = 244 nm",
+   "answer_numeric": 244.0,
+   "answer_unit": "nm",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "λ_max bằng giá trị cơ sở cộng tổng các số gia cấu trúc.",
+     "latex": "\\lambda_{\\max} = \\lambda_{\\text{cơ sở}} + \\sum_{i}\\Delta_{i}"
+    },
+    {
+     "explain": "Cộng: cơ sở 215 + hai nhóm β (2×12) + một liên kết đôi ngoại vòng (5).",
+     "latex": "\\lambda_{\\max} = 215 + 2(12) + 5 = 244\\ \\mathrm{nm}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.quy-tac-woodward-fieser-enone"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận diện số gia Woodward-Fieser",
+    "cộng dồn các đóng góp vào λ_max"
+   ],
+   "hints": [
+    "Bắt đầu từ 215 nm.",
+    "Hai nhóm β mỗi cái +12, ngoại vòng +5."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "woodward-fieser",
+    "uv-vis",
+    "enone",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0015",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Quy tắc loại trừ lẫn nhau phát biểu rằng nếu phân tử có tâm đối xứng thì không dao động nào vừa hoạt động IR vừa hoạt động Raman. Phân tử nào SAU ĐÂY tuân theo quy tắc này?",
+   "statement_en": "The mutual exclusion rule states that if a molecule has a center of symmetry, no vibration is both IR- and Raman-active. Which molecule below obeys this rule?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "CO2 (thẳng, O=C=O)"
+    },
+    {
+     "key": "B",
+     "text": "H2O (góc)",
+     "why_wrong": "H2O dạng góc, không có tâm đối xứng nên các dao động của nó vừa hoạt động IR vừa hoạt động Raman; không tuân theo quy tắc loại trừ."
+    },
+    {
+     "key": "C",
+     "text": "SO2 (góc)",
+     "why_wrong": "SO2 dạng góc (nhóm điểm C2v), thiếu tâm đối xứng, nên cả ba dao động đều hoạt động cả IR lẫn Raman."
+    },
+    {
+     "key": "D",
+     "text": "O3 (góc)",
+     "why_wrong": "Ozone dạng góc, không có tâm nghịch đảo, nên các mode của nó không loại trừ lẫn nhau giữa IR và Raman."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Tâm đối xứng (nghịch đảo) khiến mỗi dao động chỉ thuộc một trong hai loại đối xứng g/u, nên IR và Raman loại trừ nhau. CO2 (thẳng, O=C=O) có tâm đối xứng.",
+     "latex": "\\text{có tâm đối xứng} \\Rightarrow \\left(\\text{IR}\\right) \\cap \\left(\\text{Raman}\\right) = \\varnothing"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.quy-tac-loai-tru-lan-nhau"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận biết tâm đối xứng phân tử",
+    "áp dụng quy tắc loại trừ lẫn nhau IR/Raman"
+   ],
+   "hints": [
+    "Quy tắc chỉ áp dụng cho phân tử có tâm đối xứng.",
+    "Phân tử thẳng đối xứng có tâm nghịch đảo."
+   ],
+   "tags": [
+    "pho-hoc",
+    "ir-raman",
+    "mutual-exclusion",
+    "symmetry",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0016",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét phản ứng đóng vòng electrocyclic NHIỆT của (2E,4Z,6E)-octatriene (hệ 6 electron π, tức 4n+2 với n=1) thành cyclohexadiene. Theo quy tắc Woodward-Hoffmann, phản ứng diễn ra theo kiểu quay nào?",
+   "statement_en": "Consider the THERMAL electrocyclic ring closure of a 1,3,5-hexatriene system (6 pi electrons, i.e. 4n+2 with n=1) to a cyclohexadiene. By the Woodward-Hoffmann rules, which rotatory mode operates?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Quay cùng chiều (conrotatory)",
+     "why_wrong": "Conrotatory là chế độ nhiệt của hệ 4n electron; với hệ 4n+2 thì conrotatory chỉ được phép ở điều kiện quang hoá, không phải nhiệt."
+    },
+    {
+     "key": "B",
+     "text": "Quay ngược chiều (disrotatory)"
+    },
+    {
+     "key": "C",
+     "text": "Không phản ứng vì đối xứng cấm ở mọi điều kiện",
+     "why_wrong": "Phản ứng được phép; quy tắc chỉ quy định kiểu quay chứ không cấm hoàn toàn phản ứng đóng vòng của hệ triene."
+    },
+    {
+     "key": "D",
+     "text": "Quay ngược chiều chỉ khi chiếu sáng",
+     "why_wrong": "Đề hỏi điều kiện nhiệt; với 4n+2 thì disrotatory ứng với nhiệt, còn quang hoá lại cho conrotatory."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Với hệ 4n+2 electron π, điều kiện nhiệt (trạng thái cơ bản) ưu tiên quay ngược chiều (disrotatory); quang hoá mới quay cùng chiều.",
+     "latex": "N_{\\pi}=4n+2,\\ \\text{nhiệt} \\Rightarrow \\text{disrotatory (quay ngược chiều)}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.woodward-hoffmann-dong-vong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đếm electron π của hệ liên hợp",
+    "áp dụng bảng chọn lọc electrocyclic"
+   ],
+   "hints": [
+    "6 electron π là 4n+2.",
+    "Nhiệt + 4n+2 → disrotatory."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "woodward-hoffmann",
+    "electrocyclic",
+    "pericyclic",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0017",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét chuyển vị [1,5]-hydro nhiệt trong hệ 1,3-pentadien. Số electron tham gia là N_e = 1 + 5 = 6. Theo quy tắc Woodward-Hoffmann cho chuyển vị sigmatropic, ở điều kiện nhiệt phản ứng này diễn ra theo kiểu nào?",
+   "statement_en": "Consider the thermal [1,5]-hydrogen shift in a 1,3-pentadiene. The number of electrons is N_e = 1 + 5 = 6. By the Woodward-Hoffmann rules for sigmatropic shifts, which mode is thermally allowed?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Suprafacial, được phép về nhiệt"
+    },
+    {
+     "key": "B",
+     "text": "Antarafacial, được phép về nhiệt",
+     "why_wrong": "Antarafacial là yêu cầu cho hệ 4n electron; với N_e = 6 (4n+2) thì con đường nhiệt lại là suprafacial."
+    },
+    {
+     "key": "C",
+     "text": "Suprafacial, chỉ được phép khi quang hoá",
+     "why_wrong": "Suprafacial của hệ 4n+2 được phép ngay ở điều kiện nhiệt; không cần chiếu sáng."
+    },
+    {
+     "key": "D",
+     "text": "Bị cấm ở mọi điều kiện",
+     "why_wrong": "[1,5]-H shift là ví dụ kinh điển của chuyển vị nhiệt được phép, xảy ra dễ dàng ở nhiệt độ vừa phải."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Với N_e = 4n+2 (ở đây 6), chuyển vị sigmatropic được phép về nhiệt theo kiểu suprafacial; N_e = 4n mới buộc phải antarafacial.",
+     "latex": "N_e = i+j = 6 = 4n+2 \\Rightarrow \\text{suprafacial, cho phép NHIỆT}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.woodward-hoffmann-chuyen-vi-sigma"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đếm số electron trong chuyển vị sigmatropic",
+    "chọn suprafacial/antarafacial theo 4n hay 4n+2"
+   ],
+   "hints": [
+    "N_e = i + j = 6.",
+    "4n+2 electron + nhiệt → suprafacial."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "woodward-hoffmann",
+    "sigmatropic",
+    "pericyclic",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0018",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Quy tắc Woodward-Hoffmann tổng quát: phản ứng được phép ở trạng thái cơ bản (nhiệt) khi tổng số thành phần loại (4q+2)_s và loại (4r)_a là số LẺ. Với phản ứng Diels-Alder mô tả là [π4s + π2s], hãy xác định tổng đó và cho biết phản ứng có được phép về nhiệt không.",
+   "statement_en": "General Woodward-Hoffmann rule: a reaction is thermally (ground-state) allowed when the number of (4q+2)_s plus (4r)_a components is ODD. For the Diels-Alder reaction described as [π4s + π2s], find that count and state whether it is thermally allowed.",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tổng = 0, bị cấm về nhiệt",
+     "why_wrong": "Bỏ sót thành phần π2s: nó là (4q+2)_s và phải được đếm là 1, nên tổng không thể bằng 0."
+    },
+    {
+     "key": "B",
+     "text": "Tổng = 2, bị cấm về nhiệt",
+     "why_wrong": "Đã đếm nhầm π4s là (4r)_a; nhưng π4s ở đây suprafacial nên KHÔNG thuộc loại (4r)_a, tổng đúng là 1 chứ không phải 2."
+    },
+    {
+     "key": "C",
+     "text": "Tổng = 1, được phép về nhiệt"
+    },
+    {
+     "key": "D",
+     "text": "Tổng = 2, được phép về nhiệt",
+     "why_wrong": "Tổng = 2 là số chẵn nên theo quy tắc phải BỊ CẤM về nhiệt; ngoài ra cách đếm ra 2 đã sai như trên."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Đếm theo hai loại: thành phần π2s là (4·0+2) suprafacial nên tính vào loại (4q+2)_s (đếm 1). Thành phần π4s là hệ 4r nhưng suprafacial, KHÔNG thuộc loại (4r)_a nên không đếm.",
+     "latex": "\\#\\left[(4q+2)_{s}\\right] = 1\\ (\\pi 2s),\\qquad \\#\\left[(4r)_{a}\\right] = 0\\ (\\pi 4s\\ \\text{không phải}\\ a)"
+    },
+    {
+     "explain": "Tổng bằng 1 (số lẻ) nên phản ứng được phép ở trạng thái cơ bản: Diels-Alder là phản ứng nhiệt.",
+     "latex": "\\#\\left[(4q+2)_{s}\\right] + \\#\\left[(4r)_{a}\\right] = 1 = \\text{lẻ} \\Rightarrow \\text{được phép nhiệt}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.woodward-hoffmann-quy-tac-tong-quat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "phân loại thành phần theo (4q+2)s và (4r)a",
+    "áp dụng quy tắc chẵn lẻ tổng quát"
+   ],
+   "hints": [
+    "Chỉ đếm thành phần (4q+2) khi nó suprafacial, và (4r) khi antarafacial.",
+    "π4s không phải là (4r)_a."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "woodward-hoffmann",
+    "diels-alder",
+    "cycloaddition",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0019",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo quy tắc Baldwin về đóng vòng nội phân tử, kiểu đóng vòng nào SAU ĐÂY bị coi là BẤT LỢI (disfavored)?",
+   "statement_en": "According to Baldwin's rules for intramolecular ring closure, which of the following modes is disfavored?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "5-exo-tet",
+     "why_wrong": "5-exo-tet nằm trong khoảng 3-7-exo-tet nên là quá trình thuận lợi, không bị cấm."
+    },
+    {
+     "key": "B",
+     "text": "5-endo-tet"
+    },
+    {
+     "key": "C",
+     "text": "6-exo-tet",
+     "why_wrong": "6-exo-tet thuộc dải 3-7-exo-tet thuận lợi; quỹ đạo tấn công đạt được hình học phù hợp."
+    },
+    {
+     "key": "D",
+     "text": "5-exo-trig",
+     "why_wrong": "5-exo-trig là một trong các kiểu đóng vòng thuận lợi kinh điển theo Baldwin, không bị cấm."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Baldwin: các quá trình 3-7-exo-tet và 3-7-exo-trig thuận lợi, còn 5-6-endo-tet bị cấm vì quỹ đạo tấn công không thể đạt góc hình học cần thiết ở carbon lai hoá sp3.",
+     "latex": "3\\text{--}7\\text{-}\\mathrm{exo}\\text{-}\\mathrm{tet}\\ \\text{ưu tiên};\\quad 5\\text{--}6\\text{-}\\mathrm{endo}\\text{-}\\mathrm{tet}\\ \\text{bị cấm}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.quy-tac-baldwin"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phân loại đóng vòng exo/endo và tet/trig/dig",
+    "áp dụng quy tắc Baldwin"
+   ],
+   "hints": [
+    "endo-tet cỡ vòng nhỏ là loại bị cấm.",
+    "So sánh exo-tet (thuận lợi) với endo-tet."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "baldwin",
+    "cyclization",
+    "ring-closure",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0020",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad",
+    "olympiad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong phân tích retrosynthesis một ester R-CO-O-R', ta cắt (disconnect) liên kết C(=O)-O cạnh nhóm chức. Cặp synthon và thuốc thử tương ứng nào là hợp lí?",
+   "statement_en": "In the retrosynthetic analysis of an ester R-CO-O-R', we disconnect the C(=O)-O bond adjacent to the functional group. Which pair of synthons and reagents is reasonable?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Synthon RCO+ và -OR' → thuốc thử: acyl chloride (hoặc acid) + alcohol"
+    },
+    {
+     "key": "B",
+     "text": "Synthon RCO- và +OR' → thuốc thử: aldehyde + alkyl halide",
+     "why_wrong": "Gán cực tính ngược: carbon carbonyl là trung tâm electrophile (mang điện dương), còn oxygen của alcohol là nucleophile; cặp thuốc thử cũng không tạo lại ester."
+    },
+    {
+     "key": "C",
+     "text": "Cắt liên kết C-H của nhóm alkyl → hai gốc tự do",
+     "why_wrong": "Retrosynthesis ưu tiên cắt liên kết CẠNH nhóm chức (C-X, C-C) theo cực tính ion, không cắt liên kết C-H trơ thành gốc tự do."
+    },
+    {
+     "key": "D",
+     "text": "Synthon RCH2+ và -OOCR' → thuốc thử: alkyl halide + carboxylate",
+     "why_wrong": "Đây là kiểu cắt liên kết O-alkyl (C-O phía alcohol), không phải liên kết C(=O)-O mà đề yêu cầu; synthon acyl viết sai."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Cắt C(=O)-O sinh synthon acyl dương (electrophile) và synthon alkoxide âm (nucleophile); thuốc thử thực tế là dẫn xuất acid (acyl chloride/acid) và alcohol.",
+     "latex": "\\mathrm{R\\text{-}CO\\text{-}O\\text{-}R'} \\Rightarrow \\mathrm{RCO^{+}} + {}^{-}\\mathrm{OR'} \\;\\longrightarrow\\; \\text{acyl chloride/acid} + \\text{alcohol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.phan-tich-retrosynthesis"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "cắt mạch cạnh nhóm chức",
+    "gán synthon với thuốc thử tương ứng"
+   ],
+   "hints": [
+    "Carbon carbonyl là electrophile (synthon dương).",
+    "Cắt C(=O)-O cho acid/acyl + alcohol."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "retrosynthesis",
+    "disconnection",
+    "synthon",
+    "intl-undergrad",
+    "olympiad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0021",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Phức phẳng vuông Rh(I) d8 (16 electron) cộng oxi hoá H2 tạo phức Rh(III) octahedral (18 electron). Trong bước cộng oxi hoá này, bộ ba biến thiên (ΔVE, ΔOS, ΔCN) bằng bao nhiêu?",
+   "statement_en": "A square-planar Rh(I) d8 (16-electron) complex undergoes oxidative addition of H2 to give an octahedral Rh(III) (18-electron) complex. For this oxidative addition step, what is the triple (ΔVE, ΔOS, ΔCN)?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "(+2, +2, +2)"
+    },
+    {
+     "key": "B",
+     "text": "(-2, -2, -2)",
+     "why_wrong": "(-2,-2,-2) là bước tách khử (reductive elimination), quá trình ngược lại của cộng oxi hoá."
+    },
+    {
+     "key": "C",
+     "text": "(+2, 0, +1)",
+     "why_wrong": "(+2,0,+1) ứng với bước gắn phối tử (hoặc tách β-hydrua): VE tăng 2 nhưng số oxi hoá không đổi và số phối trí chỉ tăng 1."
+    },
+    {
+     "key": "D",
+     "text": "(-2, 0, -1)",
+     "why_wrong": "(-2,0,-1) là bước tách phối tử hoặc chèn di cư, không phải cộng oxi hoá."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Cộng oxi hoá thêm hai phối tử X và tăng bậc oxi hoá của kim loại lên 2; số electron hoá trị, số oxi hoá và số phối trí đều tăng 2.",
+     "latex": "\\text{cộng oxi hoá}:\\ \\Delta\\mathrm{VE}=+2,\\ \\Delta\\mathrm{OS}=+2,\\ \\Delta\\mathrm{CN}=+2"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.thay-doi-so-electron-trong-chu-trinh-xuc-tac"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận diện bước cộng oxi hoá",
+    "đọc biến thiên VE/OS/CN từ bảng bước cơ bản"
+   ],
+   "hints": [
+    "Cộng oxi hoá làm tăng bậc oxi hoá kim loại lên 2.",
+    "Cả VE, OS và CN cùng thay đổi +2."
+   ],
+   "tags": [
+    "vo-co-nang-cao",
+    "organometallic",
+    "oxidative-addition",
+    "catalysis",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0022",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo nguyên lí tương tự isolobal, mảnh kim loại-carbonyl nào SAU ĐÂY là isolobal với gốc metyl •CH3?",
+   "statement_en": "By the isolobal analogy, which metal-carbonyl fragment below is isolobal with the methyl radical •CH3?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Mn(CO)5"
+    },
+    {
+     "key": "B",
+     "text": "Fe(CO)4",
+     "why_wrong": "Fe(CO)4 là mảnh 16 electron với hai orbital biên, isolobal với carbene CH2 chứ không phải gốc CH3."
+    },
+    {
+     "key": "C",
+     "text": "Co(CO)3",
+     "why_wrong": "Co(CO)3 là mảnh 15 electron với ba orbital biên, isolobal với CH (methylidyne), không phải CH3."
+    },
+    {
+     "key": "D",
+     "text": "Cr(CO)5",
+     "why_wrong": "Cr(CO)5 là mảnh 16 electron, isolobal với CH2; nó thiếu đúng một electron so với mảnh 17e cần cho tương tự với CH3."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Gốc •CH3 có một orbital lai hoá chứa 1 electron; mảnh d-block 17 electron hoá trị (như Mn(CO)5 hay Co(CO)4) có cùng số/dạng orbital biên nên isolobal với CH3.",
+     "latex": "\\mathrm{CH}_{3} \\longleftrightarrow \\mathrm{Mn(CO)}_{5} \\longleftrightarrow \\mathrm{Co(CO)}_{4}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.tuong-tu-isolobal"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "đếm electron hoá trị mảnh kim loại",
+    "ghép mảnh isolobal với mảnh hữu cơ"
+   ],
+   "hints": [
+    "CH3 cần một orbital biên với 1 electron.",
+    "Mảnh d-block 17 electron hoá trị isolobal với CH3."
+   ],
+   "tags": [
+    "vo-co-nang-cao",
+    "isolobal",
+    "organometallic",
+    "fragment",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0023",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Tham số điện tử Tolman (TEP) là tần số dao động CO đối xứng (A1) của phức Ni(CO)3L; TEP càng THẤP thì phối tử L càng cho electron mạnh. Cho: PMe3 (2064 cm^-1), PPh3 (2069 cm^-1), P(OMe)3 (2080 cm^-1), PF3 (2111 cm^-1). Phối tử nào là chất cho σ MẠNH NHẤT?",
+   "statement_en": "The Tolman electronic parameter (TEP) is the symmetric (A1) CO stretch of Ni(CO)3L; a LOWER TEP means a stronger electron-donating ligand L. Given PMe3 (2064 cm^-1), PPh3 (2069 cm^-1), P(OMe)3 (2080 cm^-1), PF3 (2111 cm^-1), which ligand is the strongest sigma-donor?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "PMe3 (2064 cm^-1)"
+    },
+    {
+     "key": "B",
+     "text": "PPh3 (2069 cm^-1)",
+     "why_wrong": "PPh3 có TEP cao hơn PMe3 nên cho electron yếu hơn; nhóm phenyl kém cho electron hơn nhóm metyl."
+    },
+    {
+     "key": "C",
+     "text": "P(OMe)3 (2080 cm^-1)",
+     "why_wrong": "Phosphite là chất nhận pi tốt và cho σ yếu, TEP cao hơn nên không phải chất cho mạnh nhất."
+    },
+    {
+     "key": "D",
+     "text": "PF3 (2111 cm^-1)",
+     "why_wrong": "PF3 có TEP CAO nhất (nhận pi rất mạnh, cho σ rất yếu) nên là chất cho electron YẾU nhất, ngược với yêu cầu."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Phối tử cho electron càng mạnh thì tăng mật độ electron trên Ni, đẩy vào orbital phản liên kết pi* của CO, làm YẾU liên kết C-O và HẠ tần số CO. Vậy TEP thấp nhất ứng với chất cho mạnh nhất.",
+     "latex": "\\mathrm{TEP} = \\tilde{\\nu}_{\\mathrm{CO}}(\\mathrm{A_{1}})\\ \\text{thấp} \\Rightarrow \\text{cho electron mạnh}"
+    },
+    {
+     "explain": "PMe3 có TEP thấp nhất (2064 cm^-1) trong danh sách nên là chất cho σ mạnh nhất.",
+     "latex": "2064 < 2069 < 2080 < 2111\\ (\\mathrm{cm^{-1}})"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.goc-non-tolman-va-tham-so-dien-tu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đọc tham số điện tử Tolman",
+    "liên hệ tần số CO với khả năng cho electron"
+   ],
+   "hints": [
+    "TEP thấp = cho electron mạnh.",
+    "Chọn tần số CO nhỏ nhất."
+   ],
+   "tags": [
+    "vo-co-nang-cao",
+    "tolman",
+    "tep",
+    "phosphine",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0024",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong quy tắc Woodward-Fieser cho hợp chất carbonyl liên hợp, giá trị λ_cơ sở dùng cho một enone VÒNG 5 CẠNH là bao nhiêu?",
+   "statement_en": "In the Woodward-Fieser rules for conjugated carbonyl compounds, what base value λ_base is used for a FIVE-membered cyclic enone?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "215 nm",
+     "why_wrong": "215 nm là giá trị cơ sở cho enone vòng 6 cạnh hoặc mạch hở, không phải vòng 5 cạnh."
+    },
+    {
+     "key": "B",
+     "text": "202 nm"
+    },
+    {
+     "key": "C",
+     "text": "210 nm",
+     "why_wrong": "210 nm là giá trị cơ sở cho enal (aldehyde α,β-không no), không dùng cho enone vòng 5."
+    },
+    {
+     "key": "D",
+     "text": "195 nm",
+     "why_wrong": "195 nm là giá trị cơ sở cho acid và ester liên hợp, không phải cho enone vòng 5 cạnh."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Giá trị cơ sở phụ thuộc loại carbonyl: 215 nm cho enone vòng 6 hoặc mạch hở, 202 nm cho enone vòng 5, 210 nm cho enal, 195 nm cho acid/ester liên hợp.",
+     "latex": "\\lambda_{\\text{cơ sở}} = 202\\ \\mathrm{nm}\\ (\\text{enone vòng 5})"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.quy-tac-woodward-fieser-enone"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhớ giá trị cơ sở Woodward-Fieser theo loại carbonyl"
+   ],
+   "hints": [
+    "Vòng 5 cạnh có giá trị cơ sở nhỏ hơn vòng 6.",
+    "202 nm dành riêng cho cyclopentenone."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "woodward-fieser",
+    "uv-vis",
+    "base-value",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0025",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong chu trình xúc tác cơ kim, bước CHÈN DI CƯ (migratory insertion) của CO vào liên kết M-CH3 tạo nhóm acyl. Bước này làm thay đổi (ΔVE, ΔOS, ΔCN) như thế nào?",
+   "statement_en": "In an organometallic catalytic cycle, the MIGRATORY INSERTION of CO into an M-CH3 bond forms an acyl group. How does this step change (ΔVE, ΔOS, ΔCN)?",
+   "answer": "C",
+   "choices": [
+    {
+     "key": "A",
+     "text": "(+2, +2, +2)",
+     "why_wrong": "(+2,+2,+2) là bước cộng oxi hoá; chèn di cư không làm tăng số oxi hoá và không thêm 2 electron hoá trị."
+    },
+    {
+     "key": "B",
+     "text": "(+2, 0, +1)",
+     "why_wrong": "(+2,0,+1) ứng với gắn phối tử hoặc tách β-hydrua (thêm phối tử/mở vị trí trống), ngược dấu với chèn di cư."
+    },
+    {
+     "key": "C",
+     "text": "(-2, 0, -1)"
+    },
+    {
+     "key": "D",
+     "text": "(-2, -2, -2)",
+     "why_wrong": "(-2,-2,-2) là tách khử, làm giảm số oxi hoá 2; chèn di cư giữ nguyên số oxi hoá."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Chèn di cư gộp một phối tử đang phối trí vào một phối tử khác, giải phóng một vị trí phối trí: số electron hoá trị giảm 2, số phối trí giảm 1, số oxi hoá không đổi.",
+     "latex": "\\text{chèn di cư}:\\ \\Delta\\mathrm{VE}=-2,\\ \\Delta\\mathrm{OS}=0,\\ \\Delta\\mathrm{CN}=-1"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.thay-doi-so-electron-trong-chu-trinh-xuc-tac"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận diện bước chèn di cư",
+    "đọc biến thiên VE/OS/CN"
+   ],
+   "hints": [
+    "Chèn di cư mở ra một vị trí phối trí trống.",
+    "Số oxi hoá kim loại không đổi trong bước này."
+   ],
+   "tags": [
+    "vo-co-nang-cao",
+    "organometallic",
+    "migratory-insertion",
+    "catalysis",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0026",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét phản ứng đóng vòng electrocyclic của butadien (hệ 4 electron π, tức 4n với n=1) thành cyclobuten dưới điều kiện QUANG HOÁ. Theo quy tắc Woodward-Hoffmann, kiểu quay là gì?",
+   "statement_en": "Consider the electrocyclic ring closure of butadiene (4 pi electrons, i.e. 4n with n=1) to cyclobutene under PHOTOCHEMICAL conditions. By the Woodward-Hoffmann rules, which rotatory mode operates?",
+   "answer": "B",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Quay cùng chiều (conrotatory)",
+     "why_wrong": "Conrotatory là chế độ NHIỆT của hệ 4n; dưới quang hoá, tính chọn lọc bị đảo nên không còn là conrotatory."
+    },
+    {
+     "key": "B",
+     "text": "Quay ngược chiều (disrotatory)"
+    },
+    {
+     "key": "C",
+     "text": "Bị cấm ở điều kiện quang hoá",
+     "why_wrong": "Phản ứng được phép; quang hoá chỉ đổi kiểu quay chứ không cấm hệ 4n đóng vòng."
+    },
+    {
+     "key": "D",
+     "text": "Quay cùng chiều chỉ khi có xúc tác",
+     "why_wrong": "Kiểu quay do đối xứng orbital quyết định, không phụ thuộc xúc tác; câu này cũng nêu sai chế độ cho quang hoá."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Với hệ 4n electron π, điều kiện nhiệt cho quay cùng chiều (conrotatory), còn quang hoá ĐẢO lại thành quay ngược chiều (disrotatory).",
+     "latex": "N_{\\pi}=4n,\\ \\text{quang hoá} \\Rightarrow \\text{disrotatory (quay ngược chiều)}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.woodward-hoffmann-dong-vong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đếm electron π",
+    "đảo chiều chọn lọc giữa nhiệt và quang hoá"
+   ],
+   "hints": [
+    "Butadien có 4 electron π (4n).",
+    "Quang hoá đảo ngược quy tắc nhiệt: 4n → disrotatory."
+   ],
+   "tags": [
+    "huu-co-nang-cao",
+    "woodward-hoffmann",
+    "electrocyclic",
+    "photochemical",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext4-chemistry-daihoc.0027",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dung-sai",
+   "statement_vi": "Xét phát biểu: 'Phân tử benzene (C6H6, nhóm điểm D6h) có tâm đối xứng, do đó không dao động chuẩn nào của nó vừa hoạt động IR vừa hoạt động Raman.' Phát biểu này ĐÚNG hay SAI?",
+   "statement_en": "Consider the statement: 'Benzene (C6H6, point group D6h) has a center of symmetry, so none of its normal vibrations is simultaneously IR- and Raman-active.' Is this statement TRUE or FALSE?",
+   "answer": "Đúng",
+   "solution_steps": [
+    {
+     "explain": "Benzene thuộc nhóm điểm D6h có phần tử nghịch đảo (tâm đối xứng), nên áp dụng được quy tắc loại trừ lẫn nhau: mỗi dao động chỉ thuộc loại đối xứng g (Raman) hoặc u (IR), không thể cả hai.",
+     "latex": "\\text{có tâm đối xứng} \\Rightarrow \\left(\\text{hoạt động IR}\\right) \\cap \\left(\\text{hoạt động Raman}\\right) = \\varnothing"
+    },
+    {
+     "explain": "Do đó phát biểu là ĐÚNG: không dao động nào của benzene vừa hoạt động IR vừa hoạt động Raman.",
+     "latex": "\\Rightarrow \\text{phát biểu ĐÚNG}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.quy-tac-loai-tru-lan-nhau"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhận biết tâm đối xứng trong nhóm điểm D6h",
+    "áp dụng quy tắc loại trừ lẫn nhau"
+   ],
+   "hints": [
+    "D6h chứa phần tử nghịch đảo i.",
+    "Có tâm đối xứng thì quy tắc loại trừ áp dụng."
+   ],
+   "tags": [
+    "pho-hoc",
+    "ir-raman",
+    "mutual-exclusion",
+    "benzene",
+    "intl-undergrad"
+   ]
+  }
+ ]
+}

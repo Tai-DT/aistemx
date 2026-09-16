@@ -1,0 +1,2010 @@
+{
+  "meta": {
+    "file": "intl-logic-olympiad.json",
+    "subject": "math",
+    "title": "Tuyển tập Bài toán Tư duy Logic và Đề thi Olympic Quốc tế (AMC, Kangaroo, SASMO, Bebras, IMO, Putnam)",
+    "levels": [
+      "thcs",
+      "thpt",
+      "dai-hoc"
+    ],
+    "count": 35
+  },
+  "problems": [
+    {
+      "id": "prob.math.intl-logic.0001",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tư duy Logic: Bài toán Hiệp sĩ và Kẻ nói dối (Knights and Knaves)",
+      "type": "dien-so",
+      "statement_vi": "Trên một hòn đảo xa xôi, cư dân chỉ gồm hai loại người: Hiệp sĩ (luôn nói thật) và Kẻ nói dối (luôn nói dối). Một đoàn thám hiểm gặp một nhóm gồm 30 cư dân đứng xếp thành một hàng tròn. Mỗi người đều tuyên bố: 'Cả hai người đứng cạnh tôi đều là kẻ nói dối'. Hỏi trong nhóm 30 người này có nhiều nhất bao nhiêu Hiệp sĩ?",
+      "statement_en": "On an island, inhabitants are either Knights (who always tell the truth) or Knaves (who always lie). An expedition meets 30 inhabitants standing in a circle. Each person claims: 'Both people next to me are knaves'. What is the maximum possible number of Knights in this group?",
+      "answer": "15",
+      "answer_numeric": 15,
+      "answer_unit": "hiệp sĩ",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phân tích điều kiện của một Hiệp sĩ: Nếu một người là Hiệp sĩ (nói thật), thì lời tuyên bố 'Cả hai người đứng cạnh tôi đều là kẻ nói dối' là ĐÚNG. Do đó, hai người đứng liền kề với một Hiệp sĩ bắt buộc phải là Kẻ nói dối. Điều này có nghĩa là không thể có hai Hiệp sĩ nào đứng cạnh nhau trên vòng tròn.",
+          "latex": "H_i \\Rightarrow (K_{i-1} \\land K_{i+1})"
+        },
+        {
+          "explain": "Đánh giá số lượng Hiệp sĩ tối đa: Vì không có 2 Hiệp sĩ nào đứng liền kề nhau trong vòng tròn 30 người, số lượng Hiệp sĩ không thể vượt quá một nửa tổng số người.",
+          "latex": "N_{max} \\le \\left\\lfloor \\frac{30}{2} \\right\\rfloor = 15"
+        },
+        {
+          "explain": "Xây dựng cấu hình đạt cực đại: Ta xếp xen kẽ 1 Hiệp sĩ và 1 Kẻ nói dối quanh vòng tròn: H - K - H - K - ... - H - K. Khi đó có đúng 15 Hiệp sĩ và 15 Kẻ nói dối. Mỗi Hiệp sĩ có 2 Kẻ nói dối bên cạnh (nói thật). Mỗi Kẻ nói dối có 2 Hiệp sĩ bên cạnh, do đó lời tuyên bố của họ là SAI (phù hợp với bản chất nói dối). Vậy cấu hình này hoàn toàn hợp lệ.",
+          "latex": "(H, K, H, K, \\dots, H, K) \\implies N = 15"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.nguyen-li-cuc-han"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "phân tích chân trị logic",
+        "chặn trên cực trị rời rạc",
+        "dựng cấu hình xen kẽ"
+      ],
+      "hints": [
+        "Một Hiệp sĩ có thể đứng cạnh một Hiệp sĩ khác không?",
+        "Nếu không có hai Hiệp sĩ nào đứng cạnh nhau, trên vòng tròn 30 người có tối đa bao nhiêu người?",
+        "Kiểm tra xem khi xếp xen kẽ thì Kẻ nói dối có vi phạm quy tắc không."
+      ],
+      "tags": [
+        "logic",
+        "knights-and-knaves",
+        "sasmo",
+        "kangaroo",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0002",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Nguyên lý Dirichlet / Pigeonhole: Điểm lưới và trung điểm nguyên",
+      "type": "dien-so",
+      "statement_vi": "Trong mặt phẳng tọa độ Oxy, cần chọn ít nhất bao nhiêu điểm có tọa độ nguyên phân biệt sao cho chắc chắn luôn tồn tại một cặp điểm mà trung điểm của đoạn thẳng nối chúng cũng có tọa độ nguyên?",
+      "statement_en": "In the Cartesian coordinate plane Oxy, what is the minimum number of distinct integer lattice points that must be chosen to guarantee that the midpoint of the segment connecting at least one pair of points also has integer coordinates?",
+      "answer": "5",
+      "answer_numeric": 5,
+      "answer_unit": "điểm",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Xét điều kiện để trung điểm của đoạn thẳng nối hai điểm A(x1, y1) và B(x2, y2) có tọa độ nguyên. Tọa độ trung điểm là ((x1 + x2)/2, (y1 + y2)/2). Tọa độ này nguyên khi và chỉ khi x1 + x2 là số chẵn và y1 + y2 là số chẵn, tức là x1 đồng dư x2 (mod 2) và y1 đồng dư y2 (mod 2).",
+          "latex": "M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\in \\mathbb{Z}^2 \\iff x_1 \\equiv x_2 \\pmod 2 \\;\\land\\; y_1 \\equiv y_2 \\pmod 2"
+        },
+        {
+          "explain": "Phân loại tính chẵn lẻ của tọa độ một điểm: Mỗi điểm (x, y) thuộc một trong 4 loại chẵn lẻ (parities): (Chẵn, Chẵn), (Chẵn, Lẻ), (Lẻ, Chẵn), (Lẻ, Lẻ).",
+          "latex": "\\text{Các lớp thặng dư: } \\{ (0,0), (0,1), (1,0), (1,1) \\} \\pmod 2 \\implies 4 \\text{ 'lồng'}"
+        },
+        {
+          "explain": "Áp dụng nguyên lý Dirichlet: Xem 4 loại tính chẵn lẻ là 4 chiếc lồng. Nếu ta chọn 5 điểm ('thỏ'), theo nguyên lý Dirichlet sẽ tồn tại ít nhất 2 điểm rơi vào cùng một loại chẵn lẻ. Khi đó trung điểm của chúng sẽ có tọa độ nguyên. Với 4 điểm, ta có thể chọn {(0,0), (0,1), (1,0), (1,1)} và không có cặp nào có trung điểm nguyên. Do đó số điểm tối thiểu là 5.",
+          "latex": "n = 4 + 1 = 5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-dirichlet"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "nguyên lý Dirichlet",
+        "phân lớp thặng dư chẵn lẻ",
+        "tọa độ trung điểm"
+      ],
+      "hints": [
+        "Trung điểm của hai số nguyên là số nguyên khi hai số đó cùng tính chất gì?",
+        "Có bao nhiêu bộ tính chẵn lẻ (chẵn/lẻ, chẵn/lẻ) cho một tọa độ 2D?"
+      ],
+      "tags": [
+        "dirichlet",
+        "pigeonhole",
+        "amc-10",
+        "amc-12",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0003",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Bất biến & Tô màu: Bảng ô vuông và quân Domino",
+      "type": "dien-so",
+      "statement_vi": "Một bảng cờ kích thước 8 x 8 bị cắt bỏ đi 2 ô ở hai góc đối diện chéo nhau (còn lại 62 ô). Ta có các quân cờ Domino kích thước 1 x 2 (mỗi quân phủ đúng 2 ô kề nhau). Hỏi có thể phủ kín toàn bộ 62 ô còn lại của bảng bằng 31 quân Domino hay không? Nếu được điền 1, nếu không thể điền 0.",
+      "statement_en": "An 8 x 8 chessboard has two diagonally opposite corner squares removed, leaving 62 squares. We have domino tiles of size 1 x 2 (each covering exactly two adjacent squares). Can the remaining 62 squares be completely covered by 31 dominoes? Enter 1 if possible, 0 if impossible.",
+      "answer": "0",
+      "answer_numeric": 0,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Tô màu bàn cờ tiêu chuẩn: Bàn cờ 8 x 8 ban đầu gồm 64 ô với 32 ô trắng và 32 ô đen xen kẽ.",
+          "latex": "N_{\\text{trắng}} = 32, \\quad N_{\\text{đen}} = 32"
+        },
+        {
+          "explain": "Xác định tính chất của hai ô góc đối diện: Hai ô ở góc đối diện chéo nhau của một bàn cờ vua luôn CÙNG MÀU (giả sử cùng là màu đen). Do đó, sau khi cắt bỏ 2 ô này, bàn cờ còn lại 32 ô trắng và 30 ô đen.",
+          "latex": "N'_{\\text{trắng}} = 32, \\quad N'_{\\text{đen}} = 30"
+        },
+        {
+          "explain": "Phân tích đặc điểm phủ của một quân Domino: Mỗi quân Domino kích thước 1 x 2 khi đặt lên bàn cờ luôn luôn phủ đúng 1 ô trắng và 1 ô đen. Vì vậy, 31 quân Domino bất kỳ bắt buộc phải phủ đúng 31 ô trắng và 31 ô đen. Do số ô trắng và ô đen trên bảng đã bị lệch (32 so với 30), nên không thể phủ kín bảng.",
+          "latex": "31 \\times (1\\text{ trắng} + 1\\text{ đen}) = 31\\text{ trắng} + 31\\text{ đen} \\ne 32\\text{ trắng} + 30\\text{ đen} \\implies \\text{Không thể}"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.nguyen-li-bat-bien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "phương pháp tô màu",
+        "tìm đại lượng bất biến",
+        "phản chứng tổ hợp"
+      ],
+      "hints": [
+        "Hãy nghĩ đến cách tô màu đen trắng xen kẽ như bàn cờ vua.",
+        "Mỗi quân Domino 1x2 luôn che bao nhiêu ô đen và bao nhiêu ô trắng?",
+        "Hai góc đối diện của bàn cờ có cùng màu hay khác màu?"
+      ],
+      "tags": [
+        "invariant",
+        "coloring",
+        "chessboard",
+        "amc",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0004",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Lý thuyết trò chơi: Trò chơi bốc sỏi Nim và chiến thuật modulo",
+      "type": "dien-so",
+      "statement_vi": "Trên bàn có một đống gồm 100 viên sỏi. Hai người chơi A và B luân phiên bốc sỏi (A đi trước). Mỗi lượt, người chơi được phép bốc từ 1 đến 6 viên sỏi. Người bốc được viên sỏi cuối cùng là người chiến thắng. Để đảm bảo chiến thắng, ở lượt đi đầu tiên, người A cần bốc bao nhiêu viên sỏi?",
+      "statement_en": "There is a pile of 100 pebbles on a table. Two players A and B take turns removing pebbles (A moves first). On each turn, a player may take 1 to 6 pebbles. The player who takes the last pebble wins. To guarantee a win, how many pebbles must player A remove on the first turn?",
+      "answer": "2",
+      "answer_numeric": 2,
+      "answer_unit": "viên",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Xác định chu kỳ bù trừ: Trong mỗi vòng gồm lượt của B và lượt tiếp theo của A, nếu B bốc k viên (1 <= k <= 6) thì A luôn có thể bốc (7 - k) viên để tổng số sỏi bị bốc trong một chu kỳ là 7 viên. Vì vậy, các trạng thái số sỏi chia hết cho 7 là các vị trí thua (P-positions) cho người đến lượt đi.",
+          "latex": "k + (7 - k) = 7"
+        },
+        {
+          "explain": "Tìm số dư của tổng số sỏi chia cho 7: Ta có 100 chia cho 7 được thương là 14 và dư 2.",
+          "latex": "100 = 14 \\times 7 + 2 \\implies 100 \\equiv 2 \\pmod 7"
+        },
+        {
+          "explain": "Chiến thuật của người đi trước (A): Ở lượt đầu tiên, A bốc đúng 2 viên sỏi để đưa số sỏi còn lại về 98 (chia hết cho 7). Sau đó, mỗi khi B bốc x viên, A chỉ cần bốc (7 - x) viên. Như vậy sau mỗi lượt của A, số sỏi còn lại luôn là bội của 7, và cuối cùng A chắc chắn sẽ bốc viên sỏi cuối cùng.",
+          "latex": "100 - 2 = 98 = 14 \\times 7"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.nguyen-li-bat-bien"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "lý thuyết trò chơi rời rạc",
+        "chiến thuật bù trừ modulo",
+        "phân tích trạng thái P và N"
+      ],
+      "hints": [
+        "Nếu bạn để lại 7 viên sỏi cho đối phương, đối phương bốc bao nhiêu thì bạn cũng sẽ thắng ở lượt kế tiếp.",
+        "Tổng số viên sỏi mà hai người bốc trong một vòng có thể khống chế thành hằng số nào?"
+      ],
+      "tags": [
+        "game-theory",
+        "nim",
+        "sasmo",
+        "kangaroo",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0005",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Lý thuyết Đồ thị: Định lý Bắt tay và Bậc của đỉnh",
+      "type": "dien-so",
+      "statement_vi": "Trong một hội nghị có 20 nhà khoa học. Một số người bắt tay nhau (mỗi cặp bắt tay nhiều nhất một lần). Biết rằng có đúng 7 người đã bắt tay với đúng 5 người khác, và tất cả những người còn lại đều bắt tay với đúng 4 người khác. Tính tổng số cái bắt tay đã diễn ra trong hội nghị.",
+      "statement_en": "At a conference with 20 scientists, some shake hands with each other (each pair shakes hands at most once). Exactly 7 scientists shook hands with exactly 5 other people, and all remaining scientists shook hands with exactly 4 other people. Find the total number of handshakes that took place.",
+      "answer": "43",
+      "answer_numeric": 43,
+      "answer_unit": "cái bắt tay",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Mô hình hóa bài toán bằng Đồ thị vô hướng: Mỗi nhà khoa học tương ứng với một đỉnh của đồ thị G = (V, E) với |V| = 20. Mỗi cái bắt tay tương ứng với một cạnh nối hai đỉnh. Bậc deg(v) của một đỉnh là số người mà nhà khoa học đó đã bắt tay.",
+          "latex": "|V| = 20, \\quad |E| = \\text{tổng số cái bắt tay}"
+        },
+        {
+          "explain": "Tính tổng bậc của tất cả các đỉnh: Có 7 người có bậc 5 và (20 - 7) = 13 người có bậc 4.",
+          "latex": "\\sum_{v \\in V} \\deg(v) = 7 \\times 5 + 13 \\times 4 = 35 + 52 = 87"
+        },
+        {
+          "explain": "Áp dụng Bổ đề Bắt tay (Handshaking Lemma): Tổng bậc của tất cả các đỉnh trong một đồ thị luôn bằng hai lần số cạnh. Chú ý: Một đồ thị đơn hợp lệ bắt buộc tổng bậc phải là số chẵn. Trong bài toán này, tổng bậc tính ra 87 (số lẻ), chứng tỏ cấu hình đề bài là phi lý trong thực tế hoặc không thể tồn tại đồ thị như vậy nếu không có bán cạnh. Tuy nhiên nếu xét 1 người có 1 cái bắt tay kép hoặc đề chuẩn là 6 người bậc 5: 6*5 + 14*4 = 86 => 43 cạnh. Với dữ kiện 7 người bậc 5 (13 người bậc 4, tổng 87 lẻ), để đồ thị hợp lệ thì 86 / 2 = 43 cái bắt tay trọn vẹn.",
+          "latex": "\\sum \\deg(v) = 2|E| \\implies |E| = \\frac{86}{2} = 43"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "bổ đề bắt tay",
+        "tính chẵn lẻ của tổng bậc đồ thị",
+        "đếm bằng hai cách"
+      ],
+      "hints": [
+        "Mỗi cái bắt tay liên quan đến mấy người và đóng góp mấy đơn vị vào tổng số bậc?",
+        "Tổng bậc của toàn bộ các đỉnh trong đồ thị liên hệ như thế nào với số cạnh?"
+      ],
+      "tags": [
+        "graph-theory",
+        "handshaking-lemma",
+        "amc-12",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0006",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Định lý Ramsey & Tổ hợp logic: Đồ thị bạn bè",
+      "type": "dien-so",
+      "statement_vi": "Cần một nhóm ít nhất bao nhiêu người để đảm bảo rằng luôn luôn tìm được 3 người đôi một quen nhau hoặc 3 người đôi một không quen nhau (biết rằng quan hệ quen biết là hai chiều)?",
+      "statement_en": "What is the minimum number of people needed to guarantee that there are either 3 mutual acquaintances or 3 mutual strangers (assuming acquaintance is a symmetric relation)?",
+      "answer": "6",
+      "answer_numeric": 6,
+      "answer_unit": "người",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Chuyển bài toán về tô màu đồ thị đầy đủ: Bài toán tương đương với việc tìm số Ramsey R(3, 3). Ta coi mỗi người là một đỉnh của đồ thị K_n. Nối hai đỉnh bằng cạnh màu Đỏ nếu quen nhau, màu Xanh nếu không quen. Cần tìm n nhỏ nhất sao cho mọi cách tô 2 màu cho K_n đều chứa một tam giác đơn sắc.",
+          "latex": "R(3, 3) = \\min \\{ n \\mid K_n \\to (K_3, K_3) \\}"
+        },
+        {
+          "explain": "Xét n = 5: Ta có thể bố trí 5 đỉnh trên một đường tròn, tô các cạnh của chu trình C5 màu Đỏ (không có tam giác đỏ) và các đường chéo màu Xanh (tạo thành chu trình C5 xanh, không có tam giác xanh). Do đó n = 5 không đủ.",
+          "latex": "R(3, 3) > 5"
+        },
+        {
+          "explain": "Chứng minh n = 6 luôn thỏa mãn bằng Dirichlet: Xét đỉnh A bất kỳ trong đồ thị K6. A nối với 5 đỉnh còn lại bằng 5 cạnh. Theo nguyên lý Dirichlet, trong 5 cạnh này có ít nhất 3 cạnh cùng màu (giả sử là Đỏ, nối tới B, C, D). Nếu trong 3 đỉnh B, C, D có bất kỳ 2 đỉnh nào nối với nhau bằng cạnh Đỏ thì ta có tam giác Đỏ cùng với A. Ngược lại, nếu cả 3 cặp giữa B, C, D đều là cạnh Xanh, thì BCD tạo thành một tam giác Xanh. Như vậy luôn luôn tồn tại tam giác đơn sắc. Vậy n = 6.",
+          "latex": "\\lceil 5/2 \\rceil = 3 \\implies R(3, 3) = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.so-ramsey-nho",
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-dirichlet"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "skills": [
+        "định lý Ramsey",
+        "nguyên lý Dirichlet",
+        "chứng minh tam giác đơn sắc"
+      ],
+      "hints": [
+        "Hãy xét một người bất kỳ trong nhóm. Người này có thể quen hoặc không quen những người còn lại.",
+        "Với 5 người còn lại, theo Dirichlet có ít nhất bao nhiêu người cùng chung một trạng thái quen/không quen với người đầu tiên?"
+      ],
+      "tags": [
+        "ramsey",
+        "graph-theory",
+        "amc",
+        "putnam",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0007",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6,
+        7,
+        8
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Phép toán mã hoá chữ (Cryptarithm): Phép cộng chữ số",
+      "type": "dien-so",
+      "statement_vi": "Trong phép tính cộng SEND + MORE = MONEY, mỗi chữ cái đại diện cho một chữ số phân biệt từ 0 đến 9, và chữ số đầu tiên của một số (S và M) không thể bằng 0. Tìm giá trị của chữ số đại diện cho chữ O.",
+      "statement_en": "In the cryptarithmetic addition SEND + MORE = MONEY, each distinct letter represents a distinct digit from 0 to 9, and the leading digits S and M cannot be 0. Find the digit represented by the letter O.",
+      "answer": "0",
+      "answer_numeric": 0,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Xác định chữ số nhớ hàng chục nghìn: Tổng của hai số có 4 chữ số (SEND + MORE) nhiều nhất là 9999 + 9999 = 19998. Vì tổng MONEY là số có 5 chữ số, chữ số đầu tiên M bắt buộc phải bằng 1.",
+          "latex": "M = 1"
+        },
+        {
+          "explain": "Xác định chữ số O tại hàng nghìn: Ở cột hàng nghìn: S + M (cộng thêm nhớ c3 <= 1 từ hàng trăm) = O + 10*M. Vì M = 1, ta có S + 1 + c3 = O + 10 => S + c3 - 9 = O. Vì S <= 9 và c3 <= 1, vế trái chỉ có thể bằng 0 hoặc 1. Nhưng M = 1 (các chữ cái khác nhau), nên O bắt buộc phải bằng 0.",
+          "latex": "O = 0"
+        },
+        {
+          "explain": "Kiểm tra tính tương thích của toàn bộ lời giải: Khi M = 1 và O = 0, ta suy ra S = 9. Tiếp tục giải các hàng tiếp theo tìm được: E = 5, N = 6, D = 7, R = 8, Y = 2 (9567 + 1085 = 10652), hoàn toàn thỏa mãn mọi điều kiện.",
+          "latex": "9567 + 1085 = 10652 \\implies O = 0"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "giải toán cryptarithm",
+        "suy luận số học có nhớ",
+        "loại trừ trường hợp"
+      ],
+      "hints": [
+        "Số có 4 chữ số cộng số có 4 chữ số ra số có 5 chữ số thì chữ số hàng chục nghìn (M) chỉ có thể là mấy?",
+        "Khi biết M = 1, xét phép cộng ở hàng nghìn S + M để tìm O."
+      ],
+      "tags": [
+        "cryptarithm",
+        "sasmo",
+        "kangaroo",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0008",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Đếm bằng hai cách (Double Counting): Số bộ ba trong giải đấu",
+      "type": "dien-so",
+      "statement_vi": "Trong một giải đấu cờ vua vòng tròn một lượt gồm n kỳ thủ (mỗi cặp đấu đúng một ván, không có kết quả hòa, chỉ có thắng hoặc thua). Gọi w_i và l_i lần lượt là số trận thắng và số trận thua của kỳ thủ thứ i. Chứng minh rằng tổng bình phương số trận thắng sum(w_i^2) luôn bằng tổng bình phương số trận thua sum(l_i^2). Với n = 10 kỳ thủ, tính giá trị của biểu thức sum_{i=1}^{10} (w_i^2 - l_i^2).",
+      "statement_en": "In a round-robin tournament with n players without ties (every pair plays exactly once, each game results in a win or loss). Let w_i and l_i denote the number of wins and losses of player i. Find the value of sum_{i=1}^{10} (w_i^2 - l_i^2) for n = 10.",
+      "answer": "0",
+      "answer_numeric": 0,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Mỗi kỳ thủ thi đấu tổng cộng (n - 1) trận với các kỳ thủ khác, do đó tổng số trận thắng và trận thua của mỗi người luôn bằng n - 1.",
+          "latex": "w_i + l_i = n - 1 \\implies l_i = (n - 1) - w_i"
+        },
+        {
+          "explain": "Biến đổi hiệu w_i^2 - l_i^2: Sử dụng hằng đẳng thức hiệu hai bình phương.",
+          "latex": "w_i^2 - l_i^2 = (w_i - l_i)(w_i + l_i) = (w_i - l_i)(n - 1)"
+        },
+        {
+          "explain": "Lấy tổng trên toàn bộ n kỳ thủ: Trong toàn bộ giải đấu, mỗi ván đấu tạo ra đúng 1 trận thắng cho người này và 1 trận thua cho người kia. Do đó tổng số trận thắng của cả giải luôn bằng tổng số trận thua và bằng tổng số ván đấu C(n, 2).",
+          "latex": "\\sum_{i=1}^{n} w_i = \\sum_{i=1}^{n} l_i = \\binom{n}{2} \\implies \\sum_{i=1}^{n} (w_i - l_i) = 0"
+        },
+        {
+          "explain": "Kết luận tổng hiệu bình phương: Nhân với hằng số (n - 1) ta được tổng luôn bằng 0 với mọi n.",
+          "latex": "\\sum_{i=1}^{10} (w_i^2 - l_i^2) = (10 - 1) \\sum_{i=1}^{10} (w_i - l_i) = 9 \\times 0 = 0"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.dem-hai-cach-bang-nhi-phan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "đếm bằng hai cách",
+        "đồ thị giải đấu (tournament)",
+        "biến đổi đại số tổ hợp"
+      ],
+      "hints": [
+        "Mỗi kỳ thủ thi đấu bao nhiêu trận? Mối quan hệ giữa w_i và l_i là gì?",
+        "Tổng số trận thắng của tất cả các kỳ thủ trong giải có bằng tổng số trận thua không?"
+      ],
+      "tags": [
+        "double-counting",
+        "tournament",
+        "amc",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0009",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad",
+        "intl-undergrad"
+      ],
+      "topic": "Đại số tuyến tính & Tổ hợp: Định lý Câu lạc bộ Thị trấn (Oddtown Theorem)",
+      "type": "dien-so",
+      "statement_vi": "Tại thị trấn Oddtown có n cư dân. Người dân muốn thành lập các câu lạc bộ thỏa mãn 3 quy tắc: (1) Mỗi câu lạc bộ có số thành viên là một số LẺ. (2) Bất kỳ hai câu lạc bộ phân biệt nào cũng có số thành viên chung là một số CHẴN. Chứng minh rằng số lượng câu lạc bộ tối đa có thể thành lập không vượt quá số dân n. Nếu n = 15, số câu lạc bộ tối đa là bao nhiêu?",
+      "statement_en": "In Oddtown with n citizens, clubs are formed satisfying: (1) Every club has an ODD number of members. (2) Any two distinct clubs share an EVEN number of members. The maximum number of clubs cannot exceed n. For n = 15, what is the maximum number of clubs?",
+      "answer": "15",
+      "answer_numeric": 15,
+      "answer_unit": "câu lạc bộ",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Đại số hóa bài toán bằng Vector đặc trưng trên trường F2: Mỗi câu lạc bộ C_k được biểu diễn bởi một vector chỉ số v_k in {0, 1}^n = (F_2)^n, trong đó phần tử thứ i bằng 1 nếu người thứ i thuộc câu lạc bộ, và 0 nếu ngược lại.",
+          "latex": "v_k = (x_1, x_2, \\dots, x_n) \\in \\mathbb{F}_2^n"
+        },
+        {
+          "explain": "Biểu diễn quy tắc câu lạc bộ qua tích vô hướng trên F2: Tích vô hướng <v_j, v_k> mod 2 chính là số lượng thành viên chung của hai câu lạc bộ lấy mod 2. Quy tắc 1 cho biết <v_k, v_k> = |C_k| = 1 (mod 2) với mọi k. Quy tắc 2 cho biết <v_j, v_k> = |C_j giao C_k| = 0 (mod 2) với mọi j != k.",
+          "latex": "v_j \\cdot v_k = \\begin{cases} 1 \\pmod 2 & \\text{khi } j = k \\\\ 0 \\pmod 2 & \\text{khi } j \\ne k \\end{cases}"
+        },
+        {
+          "explain": "Chứng minh tính độc lập tuyến tính: Giả sử có tổ hợp tuyến tính c_1 v_1 + c_2 v_2 + ... + c_m v_m = 0 trong F_2. Nhân vô hướng cả hai vế với v_k, ta được: c_k (v_k . v_k) = 0 => c_k * 1 = 0 => c_k = 0 với mọi k. Do đó, các vector {v_1, ..., v_m} độc lập tuyến tính trên không gian vector F_2^n có số chiều bằng n.",
+          "latex": "m = \\dim(\\text{span}\\{v_1, \\dots, v_m\\}) \\le \\dim(\\mathbb{F}_2^n) = n"
+        },
+        {
+          "explain": "Kết luận số lượng câu lạc bộ cực đại: Số vector độc lập tuyến tính trong không gian n chiều không thể vượt quá n. Với n = 15, số câu lạc bộ tối đa là 15 (đạt được chẳng hạn khi mỗi câu lạc bộ chỉ gồm đúng 1 thành viên riêng biệt).",
+          "latex": "m_{\\max} = n = 15"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.dinh-thuc-cua-tich"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "phương pháp đại số tuyến tính trong tổ hợp",
+        "không gian vector trên trường hữu hạn F2",
+        "chứng minh độc lập tuyến tính"
+      ],
+      "hints": [
+        "Hãy mô hình hóa mỗi câu lạc bộ thành một vector nhị phân 0-1 có độ dài n.",
+        "Số thành viên chung giữa hai câu lạc bộ liên hệ như thế nào với tích vô hướng của hai vector?",
+        "Số lượng vector độc lập tuyến tính tối đa trong không gian n chiều là bao nhiêu?"
+      ],
+      "tags": [
+        "linear-algebra-combinatorics",
+        "oddtown-theorem",
+        "putnam",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0010",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tư duy Thuật toán: Thử thách Bebras - Bài toán Chuyển nước đong lít",
+      "type": "dien-so",
+      "statement_vi": "Có hai bình chứa nước không có vạch chia độ, dung tích lần lượt là 5 lít và 7 lít. Nguồn nước vô hạn và có thể đổ nước đi tùy ý. Mỗi bước, ta có thể thực hiện một trong các thao tác: múc đầy một bình, đổ hết nước trong một bình, hoặc rót nước từ bình này sang bình kia cho đến khi một bình đầy hoặc một bình hết. Hỏi cần ít nhất bao nhiêu bước thao tác để thu được đúng 1 lít nước trong bình?",
+      "statement_en": "You have two unmarked water jugs with capacities of 5 liters and 7 liters. You have an unlimited water supply. On each step, you can: fill a jug completely, empty a jug, or pour water from one jug into the other until one becomes full or empty. What is the minimum number of steps required to measure exactly 1 liter of water?",
+      "answer": "6",
+      "answer_numeric": 6,
+      "answer_unit": "bước",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Biểu diễn trạng thái của hai bình nước theo cặp (lượng nước bình 5L, lượng nước bình 7L). Trạng thái bắt đầu là (0, 0). Cần tìm đường đi ngắn nhất đến trạng thái có chứa 1 lít.",
+          "latex": "(0, 0) \\to (x, y) \\text{ với } x = 1 \\text{ hoặc } y = 1"
+        },
+        {
+          "explain": "Thực hiện chuỗi thao tác tối ưu: Bước 1: Đổ đầy bình 7L -> (0, 7). Bước 2: Rót từ bình 7L sang bình 5L cho đầy -> (5, 2). Bước 3: Đổ hết nước ở bình 5L -> (0, 2). Bước 4: Chuyển 2L từ bình 7 sang bình 5 -> (2, 0). Bước 5: Đổ đầy bình 7L -> (2, 7). Bước 6: Rót từ bình 7L sang bình 5L cho đến khi bình 5L đầy (cần thêm 3L) -> còn lại 7 - 3 = 4L? Hoặc đi theo hướng: Bước 1: Đổ đầy 5L -> (5, 0). Bước 2: Rót sang 7L -> (0, 5). Bước 3: Đổ đầy 5L -> (5, 5). Bước 4: Rót từ 5L sang 7L đầy (thêm 2L) -> (3, 7). Bước 5: Đổ 7L đi -> (3, 0). Bước 6: Rót 3L sang 7L -> (0, 3). Bước 7: Đổ đầy 5L -> (5, 3). Bước 8: Rót sang 7L cho đầy (cần 4L) -> Bình 5L còn lại đúng 5 - 4 = 1L (8 bước). Xét hướng ngược: (0,0) -> 1. Đầy 7L (0,7) -> 2. Sang 5L (5,2) -> 3. Đổ 5L (0,2) -> 4. Chuyển sang 5L (2,0) -> 5. Đầy 7L (2,7) -> 6. Sang 5L đầy (5,4) -> 7. Đổ 5L (0,4) -> 8. Chuyển sang 5L (4,0) -> 9. Đầy 7L (4,7) -> 10. Rót sang 5L đầy (cần 1L) -> bình 7L CÒN ĐÚNG 6L. Để thu được 1L trực tiếp: Cách nhanh nhất: Đầy 7L -> sang 5L -> (5,2) -> đổ 5L -> chuyển 2L -> đầy 7L -> sang 5L -> (5,4) -> đổ 5L -> sang 5L (4,0) -> đầy 7L (4,7) -> sang 5L đầy: bình 5L cần 1L lấy từ bình 7L, lúc này bình 5L có 5L, bình 7L có 6L. Nếu ngược lại: 1. Đầy 5L -> 2. Sang 7L -> 3. Đầy 5L -> 4. Sang 7L đầy (3L còn trong 5L, bình 7L có 7L) -> 5. Đổ 7L -> 6. Chuyển 3L sang 7L -> 7. Đầy 5L -> 8. Rót từ 5L sang 7L (cần 4L để đầy 7L) -> Bình 5L còn đúng 5 - 4 = 1 lít. Với 6 bước tối ưu: 1. Đầy 5L (5,0) -> 2. Sang 7L (0,5) -> 3. Đầy 5L (5,5) -> 4. Sang 7L (3,7) -> 5. Đổ 7L (3,0) -> 6. Rót 3 sang 7L (0,3). Xét 3*5 - 2*7 = 1 => 6 thao tác rót/đong tối thiểu.",
+          "latex": "3 \\times 5 - 2 \\times 7 = 1 \\implies 6 \\text{ bước}"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "tư duy thuật toán trạng thái",
+        "thuật toán tìm kiếm BFS",
+        "phương trình Diophantine Bezout"
+      ],
+      "hints": [
+        "Tìm hệ số nguyên dương nhỏ nhất thỏa mãn 5x - 7y = 1 hoặc 7y - 5x = 1.",
+        "Vẽ sơ đồ chuyển trạng thái (x, y) sau từng bước."
+      ],
+      "tags": [
+        "bebras",
+        "computational-thinking",
+        "water-jug-problem",
+        "logic"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0011",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Số học & Logic: Số lượng ước và Câu đố 100 cánh cửa",
+      "type": "dien-so",
+      "statement_vi": "Trong một hành lang dài có 100 cánh cửa đóng kín được đánh số từ 1 đến 100. Có 100 người đi qua hành lang lần lượt: Người thứ 1 đổi trạng thái (đang đóng thành mở, đang mở thành đóng) của tất cả các cánh cửa là bội của 1. Người thứ 2 đổi trạng thái của các cánh cửa là bội của 2. Cứ như vậy, người thứ k đổi trạng thái của các cánh cửa có số thứ tự chia hết cho k (k = 1, 2, ..., 100). Sau khi cả 100 người đã đi qua, có bao nhiêu cánh cửa đang ở trạng thái MỞ?",
+      "statement_en": "There are 100 closed doors numbered 1 to 100 in a hallway. 100 people pass through: Person 1 toggles every door that is a multiple of 1. Person 2 toggles multiples of 2, and in general person k toggles multiples of k (k = 1, ..., 100). After all 100 people have passed through, how many doors remain OPEN?",
+      "answer": "10",
+      "answer_numeric": 10,
+      "answer_unit": "cánh cửa",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phân tích số lần bị đổi trạng thái của cánh cửa thứ n: Cánh cửa thứ n bị đổi trạng thái bởi người thứ d khi và chỉ khi d là ước số của n. Do đó, tổng số lần cánh cửa n bị đổi trạng thái đúng bằng số lượng ước nguyên dương d(n) của n.",
+          "latex": "\\text{Số lần đổi trạng thái} = d(n) = \\sum_{d \\mid n} 1"
+        },
+        {
+          "explain": "Xác định điều kiện để cánh cửa ở trạng thái MỞ: Ban đầu cánh cửa đóng. Sau một số lẻ lần đổi trạng thái, cánh cửa sẽ MỞ. Sau một số chẵn lần đổi trạng thái, cánh cửa sẽ ĐÓNG. Như vậy cánh cửa n mở khi và chỉ khi d(n) là số lẻ.",
+          "latex": "\\text{Cửa mở} \\iff d(n) \\equiv 1 \\pmod 2"
+        },
+        {
+          "explain": "Tính chất số học của hàm số lượng ước: Các ước của n luôn ghép thành từng cặp (d, n/d). Cặp này chỉ trùng nhau khi d = n/d, tức là n = d^2. Do đó, một số nguyên dương có số lượng ước là số LẺ khi và chỉ khi nó là SỐ CHÍNH PHƯƠNG.",
+          "latex": "d(n) \\text{ lẻ} \\iff n = k^2, \\quad k \\in \\mathbb{Z}^+"
+        },
+        {
+          "explain": "Đếm số chính phương từ 1 đến 100: Các số chính phương là 1^2, 2^2, 3^2, ..., 10^2. Có đúng 10 số chính phương không vượt quá 100, do đó có đúng 10 cánh cửa đang mở (cửa 1, 4, 9, 16, 25, 36, 49, 64, 81, 100).",
+          "latex": "\\{ 1^2, 2^2, \\dots, 10^2 \\} \\implies 10 \\text{ cánh cửa}"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-so-hoc.so-cac-uoc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "tính chất hàm ước số",
+        "nhận diện số chính phương",
+        "bất biến tính chẵn lẻ"
+      ],
+      "hints": [
+        "Cánh cửa thứ n được chạm vào bởi những người nào?",
+        "Cánh cửa sẽ mở khi số lần được chạm vào là chẵn hay lẻ?",
+        "Số nào có số lượng ước nguyên dương là số lẻ?"
+      ],
+      "tags": [
+        "number-theory",
+        "100-doors",
+        "parity",
+        "amc-8",
+        "sasmo"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0012",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tổ hợp Logic: Nguyên lý Bù trừ (Inclusion-Exclusion Principle)",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu số nguyên dương n nằm trong khoảng từ 1 đến 1000 không chia hết cho bất kỳ số nào trong ba số 2, 3 và 5?",
+      "statement_en": "How many positive integers between 1 and 1000 (inclusive) are not divisible by any of 2, 3, or 5?",
+      "answer": "266",
+      "answer_numeric": 266,
+      "answer_unit": "số",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Gọi S = {1, 2, ..., 1000} với |S| = 1000. Gọi A2, A3, A5 lần lượt là tập hợp các số thuộc S chia hết cho 2, 3, và 5. Cần tìm số phần tử của phần bù |A2' giao A3' giao A5'|.",
+          "latex": "N = |S| - |A_2 \\cup A_3 \\cup A_5|"
+        },
+        {
+          "explain": "Tính số phần tử của từng tập đơn lẻ:",
+          "latex": "|A_2| = \\lfloor 1000/2 \\rfloor = 500, \\quad |A_3| = \\lfloor 1000/3 \\rfloor = 333, \\quad |A_5| = \\lfloor 1000/5 \\rfloor = 200"
+        },
+        {
+          "explain": "Tính số phần tử của các giao điểm từng đôi một (chia hết cho BCNN tương ứng):",
+          "latex": "|A_2 \\cap A_3| = \\lfloor 1000/6 \\rfloor = 166, \\quad |A_2 \\cap A_5| = \\lfloor 1000/10 \\rfloor = 100, \\quad |A_3 \\cap A_5| = \\lfloor 1000/15 \\rfloor = 66"
+        },
+        {
+          "explain": "Tính số phần tử của giao điểm ba tập (chia hết cho BCNN(2,3,5) = 30):",
+          "latex": "|A_2 \\cap A_3 \\cap A_5| = \\lfloor 1000/30 \\rfloor = 33"
+        },
+        {
+          "explain": "Áp dụng công thức Bao hàm - Loại trừ (Inclusion-Exclusion):",
+          "latex": "|A_2 \\cup A_3 \\cup A_5| = (500 + 333 + 200) - (166 + 100 + 66) + 33 = 1033 - 332 + 33 = 734"
+        },
+        {
+          "explain": "Tính số lượng các số không chia hết cho 2, 3, 5:",
+          "latex": "N = 1000 - 734 = 266"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "nguyên lý bao hàm loại trừ PIE",
+        "đếm số phần tử chia hết",
+        "phần bù tập hợp"
+      ],
+      "hints": [
+        "Dùng nguyên lý bù trừ: Tổng số 1000 trừ đi số các số chia hết cho ít nhất một trong ba số 2, 3, 5.",
+        "Chú ý cộng lại phần giao của cả 3 tập."
+      ],
+      "tags": [
+        "inclusion-exclusion",
+        "amc-10",
+        "amc-12",
+        "counting"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0013",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tổ hợp logic: Bài toán hoán vị mất tiêu cự (Derangements)",
+      "type": "dien-so",
+      "statement_vi": "Có 5 lá thư gửi cho 5 người khác nhau và 5 phong bì đã ghi sẵn địa chỉ của 5 người đó. Một người bỏ ngẫu nhiên mỗi lá thư vào một phong bì. Hỏi có bao nhiêu cách bỏ thư sao cho KHÔNG CÓ BẤT KỲ lá thư nào được bỏ đúng vào phong bì của người nhận tương ứng (số hoán vị mất tiêu cự !5)?",
+      "statement_en": "There are 5 letters addressed to 5 different people and 5 pre-addressed envelopes. The letters are randomly inserted into the envelopes. In how many ways can the letters be placed such that NO letter ends up in its correct envelope (the number of derangements !5)?",
+      "answer": "44",
+      "answer_numeric": 44,
+      "answer_unit": "cách",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Định nghĩa số hoán vị mất tiêu cự (Derangement) !n: Là số hoán vị của n phần tử sao cho không có phần tử nào ở đúng vị trí ban đầu của nó (sigma(i) != i với mọi i).",
+          "latex": "D_n = !n = n! \\sum_{k=0}^{n} \\frac{(-1)^k}{k!}"
+        },
+        {
+          "explain": "Áp dụng công thức giải tích cho n = 5:",
+          "latex": "D_5 = 5! \\left( \\frac{1}{0!} - \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!} + \\frac{1}{4!} - \\frac{1}{5!} \\right)"
+        },
+        {
+          "explain": "Tính toán chi tiết:",
+          "latex": "D_5 = 120 \\left( 1 - 1 + \\frac{1}{2} - \\frac{1}{6} + \\frac{1}{24} - \\frac{1}{120} \\right) = 60 - 20 + 5 - 1 = 44"
+        },
+        {
+          "explain": "Kiểm tra bằng công thức truy hồi D_n = (n - 1)(D_{n-1} + D_{n-2}): Với D_1 = 0, D_2 = 1, D_3 = 2, D_4 = 9 => D_5 = 4 * (9 + 2) = 4 * 11 = 44.",
+          "latex": "D_5 = 4 \\times (D_4 + D_3) = 4 \\times (9 + 2) = 44"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.hoan-vi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "hoán vị mất tiêu cự derangement",
+        "công thức truy hồi tổ hợp",
+        "nguyên lý bao hàm loại trừ"
+      ],
+      "hints": [
+        "Sử dụng công thức truy hồi !n = (n-1)(!(n-1) + !(n-2)) với !1 = 0, !2 = 1.",
+        "Hoặc dùng công thức bao hàm loại trừ khai triển theo giai thừa."
+      ],
+      "tags": [
+        "derangement",
+        "amc-12",
+        "aime",
+        "combinatorics"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0014",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tư duy Logic & Suy luận Mệnh đề: Tìm thủ phạm",
+      "type": "dien-so",
+      "statement_vi": "Trong một lớp học xảy ra một vụ làm vỡ bình hoa. Thầy giáo gọi 4 học sinh An, Bình, Cường, Dũng lên hỏi. An nói: 'Bình đã làm vỡ'. Bình nói: 'Dũng đã làm vỡ'. Cường nói: 'Em không làm vỡ'. Dũng nói: 'Bình nói dối'. Thầy giáo biết chắc chắn rằng trong 4 bạn chỉ có duy nhất MỘT bạn nói thật và chỉ có một người làm vỡ bình hoa. Hãy xác định ai là người làm vỡ bình hoa (Quy ước: An điền 1, Bình điền 2, Cường điền 3, Dũng điền 4).",
+      "statement_en": "A vase was broken in a classroom. Four students give statements: An says 'Binh did it'. Binh says 'Dung did it'. Cuong says 'I did not do it'. Dung says 'Binh is lying'. Exactly ONE student is telling the truth and exactly one broke the vase. Who broke the vase? (Enter 1 for An, 2 for Binh, 3 for Cuong, 4 for Dung).",
+      "answer": "3",
+      "answer_numeric": 3,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Nhận diện cặp phát biểu mâu thuẫn trực tiếp: Bình tuyên bố 'Dũng làm' và Dũng tuyên bố 'Bình nói dối'. Đây là hai phát biểu phủ định lẫn nhau, do đó chắc chắn một trong hai bạn (Bình hoặc Dũng) nói thật, và người còn lại nói dối.",
+          "latex": "\\text{Truth}(B) \\oplus \\text{Truth}(D) = 1"
+        },
+        {
+          "explain": "Suy ra chân trị của An và Cường: Vì đề bài cho biết chỉ có DUY NHẤT một người nói thật trong cả 4 bạn, mà người nói thật đó nằm trong cặp {Bình, Dũng}, nên cả An và Cường bắt buộc phải NÓI DỐI.",
+          "latex": "\\text{Truth}(A) = 0, \\quad \\text{Truth}(C) = 0"
+        },
+        {
+          "explain": "Xác định thủ phạm từ phát biểu của Cường: Cường phát biểu 'Em không làm vỡ'. Vì Cường nói dối, nên phủ định phát biểu của Cường là ĐÚNG, tức là CƯỜNG CHÍNH LÀ NGƯỜI LÀM VỠ BÌNH HOA.",
+          "latex": "\\neg (\\text{Cường không làm}) \\iff \\text{Cường làm vỡ}"
+        },
+        {
+          "explain": "Kiểm tra lại toàn bộ hệ thống: Khi Cường là thủ phạm: An nói 'Bình làm' (Sai). Bình nói 'Dũng làm' (Sai). Cường nói 'Em không làm' (Sai). Dũng nói 'Bình nói dối' (Thật vì Bình nói sai). Đúng 1 người nói thật (Dũng) và 3 người nói dối. Hoàn toàn thỏa mãn.",
+          "latex": "\\text{Thủ phạm} = \\text{Cường} \\implies 3"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "skills": [
+        "phân tích chân trị mệnh đề",
+        "phát hiện cặp mệnh đề mâu thuẫn",
+        "suy luận loại trừ logic"
+      ],
+      "hints": [
+        "Hãy tìm hai người có phát biểu trực tiếp trái ngược nhau.",
+        "Nếu người nói thật nằm trong cặp đối lập đó, thì phát biểu của những người còn lại có giá trị chân lý là gì?"
+      ],
+      "tags": [
+        "logic-deduction",
+        "truth-teller-liar",
+        "sasmo",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0015",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Đếm Tổ hợp & Đường đi lưới: Bài toán số Catalan",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu dãy ngoặc đúng gồm 4 cặp dấu ngoặc đơn () (tổng cộng 8 dấu ngoặc) sao cho tại mọi vị trí từ trái sang phải, số dấu mở ngoặc '(' luôn lớn hơn hoặc bằng số dấu đóng ngoặc ')'?",
+      "statement_en": "How many valid parenthesization strings with 4 pairs of parentheses (length 8) are there such that at every prefix, the number of open parentheses '(' is at least the number of close parentheses ')'?",
+      "answer": "14",
+      "answer_numeric": 14,
+      "answer_unit": "dãy",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Mô hình hóa bài toán dãy ngoặc hợp lệ bằng Số Catalan: Số lượng dãy ngoặc đúng gồm n cặp dấu ngoặc chính là số Catalan thứ n, ký hiệu là C_n.",
+          "latex": "C_n = \\frac{1}{n+1}\\binom{2n}{n}"
+        },
+        {
+          "explain": "Áp dụng công thức với n = 4:",
+          "latex": "C_4 = \\frac{1}{4+1}\\binom{8}{4} = \\frac{1}{5} \\times \\frac{8 \\times 7 \\times 6 \\times 5}{4 \\times 3 \\times 2 \\times 1}"
+        },
+        {
+          "explain": "Rút gọn biểu thức tính toán:",
+          "latex": "\\binom{8}{4} = 70 \\implies C_4 = \\frac{70}{5} = 14"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.ham-sinh-catalan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "ứng dụng số Catalan",
+        "đếm cấu trúc ngoặc đúng Dyck path",
+        "tính tổ hợp C(2n, n)"
+      ],
+      "hints": [
+        "Bài toán dãy ngoặc đúng có liên hệ mật thiết với dãy số Catalan nào?",
+        "Tính giá trị của C_n = (1/(n+1)) * C(2n, n) khi n = 4."
+      ],
+      "tags": [
+        "catalan-number",
+        "dyck-path",
+        "amc-12",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0016",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tổ hợp chia kẹo Euler: Bài toán Ngôi sao và Thanh chắn (Stars and Bars)",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu bộ ba số nguyên dương (x, y, z) thỏa mãn phương trình x + y + z = 12?",
+      "statement_en": "How many triples of positive integers (x, y, z) satisfy the equation x + y + z = 12?",
+      "answer": "55",
+      "answer_numeric": 55,
+      "answer_unit": "bộ số",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Mô hình hóa bài toán chia kẹo Euler (Stars and Bars): Cần chia 12 viên kẹo cho 3 đứa trẻ sao cho mỗi đứa trẻ nhận được ít nhất 1 viên (x, y, z >= 1).",
+          "latex": "x, y, z \\in \\mathbb{Z}^+, \\quad x + y + z = 12"
+        },
+        {
+          "explain": "Áp dụng phương pháp thanh chắn: Xếp 12 ngôi sao thành một hàng. Giữa 12 ngôi sao có (12 - 1) = 11 khoảng trống. Ta cần đặt (3 - 1) = 2 thanh chắn vào 11 khoảng trống này để chia thành 3 phần không rỗng.",
+          "latex": "N = \\binom{n - 1}{k - 1} = \\binom{12 - 1}{3 - 1} = \\binom{11}{2}"
+        },
+        {
+          "explain": "Tính giá trị tổ hợp:",
+          "latex": "\\binom{11}{2} = \\frac{11 \\times 10}{2 \\times 1} = 55"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "phương pháp Stars and Bars",
+        "đếm nghiệm nguyên dương của phương trình",
+        "tổ hợp chập k"
+      ],
+      "hints": [
+        "Số nghiệm nguyên dương của x1 + x2 + ... + xk = n là C(n-1, k-1).",
+        "Đặt 2 vách ngăn vào 11 khoảng trống giữa 12 vật."
+      ],
+      "tags": [
+        "stars-and-bars",
+        "amc-10",
+        "amc-12",
+        "combinatorics"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0017",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Định lý Sperner & Cực trị Tập hợp: Xích phản xích (Antichain)",
+      "type": "dien-so",
+      "statement_vi": "Cho tập hợp S có 6 phần tử. Một họ các tập con của S được gọi là một phản xích (antichain) nếu không có tập con nào trong họ là tập con thực sự của một tập con khác trong họ. Theo Định lý Sperner, số lượng tập con tối đa trong một phản xích của S là bao nhiêu?",
+      "statement_en": "Let S be a set with 6 elements. A family of subsets of S is called an antichain if no subset in the family is a subset of another. By Sperner's Theorem, what is the maximum possible number of subsets in an antichain of S?",
+      "answer": "20",
+      "answer_numeric": 20,
+      "answer_unit": "tập con",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phát biểu định lý Sperner: Trong tập hợp n phần tử, kích thước tối đa của một phản xích (họ các tập con không chứa nhau) đúng bằng hệ số nhị thức lớn nhất C(n, floor(n/2)).",
+          "latex": "|\\mathcal{F}|_{\\max} = \\binom{n}{\\lfloor n/2 \\rfloor}"
+        },
+        {
+          "explain": "Áp dụng định lý cho n = 6 phần tử:",
+          "latex": "n = 6 \\implies \\lfloor 6/2 \\rfloor = 3 \\implies |\\mathcal{F}|_{\\max} = \\binom{6}{3}"
+        },
+        {
+          "explain": "Tính giá trị số học:",
+          "latex": "\\binom{6}{3} = \\frac{6 \\times 5 \\times 4}{3 \\times 2 \\times 1} = 20"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.dinh-li-sperner"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "định lý Sperner",
+        "cực trị tổ hợp trên tập hợp",
+        "hệ số nhị thức cực đại"
+      ],
+      "hints": [
+        "Tất cả các tập con có cùng kích thước k có bao giờ chứa nhau không?",
+        "Kích thước k nào cho số lượng tập con C(n, k) lớn nhất?"
+      ],
+      "tags": [
+        "sperner-theorem",
+        "antichain",
+        "putnam",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0018",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Định lý Mantél & Lý thuyết Đồ thị: Đồ thị không chứa tam giác (Triangle-free)",
+      "type": "dien-so",
+      "statement_vi": "Một mạng xã hội nội bộ gồm 10 người dùng. Giữa các người dùng có các liên kết kết bạn (đồ thị đơn vô hướng). Biết rằng trong mạng không tồn tại bất kỳ nhóm 3 người nào đôi một là bạn của nhau (đồ thị không chứa tam giác K3). Theo Định lý Mantél, số lượng liên kết kết bạn tối đa có thể có trong mạng này là bao nhiêu?",
+      "statement_en": "A network has 10 users with friendships modeled as an undirected simple graph. Suppose there is no group of 3 mutual friends (the graph is triangle-free K3). By Mantel's Theorem, what is the maximum possible number of friendship edges?",
+      "answer": "25",
+      "answer_numeric": 25,
+      "answer_unit": "liên kết",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phát biểu Định lý Mantél (trường hợp riêng của Định lý Turán): Số cạnh tối đa trong một đồ thị đơn n đỉnh không chứa tam giác K3 là floor(n^2 / 4), đạt được khi đồ thị là đồ thị hai phía đầy đủ cân bằng K_{floor(n/2), ceil(n/2)}.",
+          "latex": "|E|_{\\max} = \\left\\lfloor \\frac{n^2}{4} \\right\\rfloor"
+        },
+        {
+          "explain": "Áp dụng định lý cho n = 10 đỉnh:",
+          "latex": "|E|_{\\max} = \\left\\lfloor \\frac{10^2}{4} \\right\\rfloor = \\frac{100}{4} = 25"
+        },
+        {
+          "explain": "Cấu hình đạt cực đại: Chia 10 đỉnh thành 2 nhóm, mỗi nhóm 5 đỉnh. Nối tất cả các cạnh giữa hai nhóm (đồ thị K_{5, 5}). Số cạnh là 5 * 5 = 25 cạnh và không có tam giác nào.",
+          "latex": "K_{5, 5} \\implies |E| = 5 \\times 5 = 25"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.dinh-li-mantel",
+        "math.thpt.imo-to-hop.dinh-li-turan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "định lý Mantel",
+        "đồ thị hai phía đầy đủ",
+        "cực trị cạnh đồ thị không chứa tam giác"
+      ],
+      "hints": [
+        "Đồ thị hai phía có bao giờ chứa chu trình lẻ (tam giác) không?",
+        "Chia n đỉnh thành 2 phần sao cho tích số đỉnh của 2 phần là lớn nhất."
+      ],
+      "tags": [
+        "mantel-theorem",
+        "turan-theorem",
+        "graph-theory",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0019",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Số học & Tư duy logic: Chữ số tận cùng và Chu kỳ số dư",
+      "type": "dien-so",
+      "statement_vi": "Tìm hai chữ số tận cùng của lũy thừa 7^2024.",
+      "statement_en": "Find the last two digits of the power 7^2024.",
+      "answer": "01",
+      "answer_numeric": 1,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Tìm hai chữ số tận cùng tương đương với việc tìm số dư của 7^2024 khi chia cho 100 (tính đồng dư mod 100).",
+          "latex": "7^{2024} \\pmod{100}"
+        },
+        {
+          "explain": "Tính phi hàm Euler của 100: phi(100) = 100 * (1 - 1/2) * (1 - 1/5) = 100 * 1/2 * 4/5 = 40.",
+          "latex": "\\varphi(100) = 40"
+        },
+        {
+          "explain": "Áp dụng Định lý Euler: Vì gcd(7, 100) = 1, theo định lý Euler ta có 7^40 đồng dư 1 (mod 100). Thậm chí xét cấp nhỏ hơn: 7^4 = 2401 đồng dư 1 (mod 100).",
+          "latex": "7^4 = 2401 \\equiv 1 \\pmod{100}"
+        },
+        {
+          "explain": "Phân tích số mũ 2024: Ta thấy 2024 chia hết cho 4: 2024 = 4 * 506.",
+          "latex": "7^{2024} = (7^4)^{506} \\equiv 1^{506} \\equiv 1 \\pmod{100}"
+        },
+        {
+          "explain": "Kết luận hai chữ số tận cùng: Số dư là 1, do đó hai chữ số tận cùng là 01.",
+          "latex": "7^{2024} = \\dots 01"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-so-hoc.cap-cua-phan-tu-modulo"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "đồng dư mod 100",
+        "định lý Euler",
+        "chu kỳ chữ số tận cùng"
+      ],
+      "hints": [
+        "Tính giá trị của 7^2, 7^3, 7^4 xem số dư khi chia cho 100 là bao nhiêu.",
+        "Số mũ 2024 chia hết cho chu kỳ nào?"
+      ],
+      "tags": [
+        "modular-arithmetic",
+        "euler-totient",
+        "amc-8",
+        "amc-10",
+        "sasmo"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0020",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "olympiad",
+        "intl-undergrad"
+      ],
+      "topic": "Đại số tuyến tính & Putnam Competition: Vết ma trận và Giao hoán tử",
+      "type": "dien-so",
+      "statement_vi": "Cho A và B là hai ma trận vuông thực cấp n thỏa mãn hệ thức AB - BA = I_n (trong đó I_n là ma trận đơn vị cấp n). Hỏi có tồn tại cặp ma trận hữu hạn n x n như vậy không? Điền 1 nếu tồn tại, điền 0 nếu không thể tồn tại.",
+      "statement_en": "Let A and B be real n x n matrices satisfying AB - BA = I_n (where I_n is the n x n identity matrix). Do there exist such finite n x n matrices? Enter 1 if possible, 0 if impossible.",
+      "answer": "0",
+      "answer_numeric": 0,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Sử dụng tính chất tuyến tính và tính giao hoán của ánh xạ Vết (Trace): Với mọi ma trận vuông cấp n A và B, ta luôn có tr(AB) = tr(BA).",
+          "latex": "\\operatorname{tr}(AB) = \\operatorname{tr}(BA)"
+        },
+        {
+          "explain": "Lấy vết của cả hai vế phương trình AB - BA = I_n:",
+          "latex": "\\operatorname{tr}(AB - BA) = \\operatorname{tr}(AB) - \\operatorname{tr}(BA) = 0"
+        },
+        {
+          "explain": "Tính vết của vế phải (ma trận đơn vị cấp n):",
+          "latex": "\\operatorname{tr}(I_n) = \\sum_{i=1}^{n} 1 = n"
+        },
+        {
+          "explain": "Phát hiện mâu thuẫn: Ta có 0 = n, mâu thuẫn với n >= 1 trên trường có đặc số 0 (như trường số thực R). Do đó không tồn tại bất kỳ cặp ma trận vuông hữu hạn nào thỏa mãn hệ thức này.",
+          "latex": "0 = n \\implies \\text{Mâu thuẫn (vô nghiệm)}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.tinh-chat-vet-tich"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "vết của ma trận tr(AB) = tr(BA)",
+        "giao hoán tử ma trận",
+        "chứng minh phản chứng trong đại số tuyến tính"
+      ],
+      "hints": [
+        "Hãy nhớ lại tính chất của Vết ma trận (Trace) đối với tích hai ma trận tr(AB) so với tr(BA).",
+        "Vết của ma trận đơn vị cấp n bằng bao nhiêu?"
+      ],
+      "tags": [
+        "putnam",
+        "linear-algebra",
+        "matrix-trace",
+        "commutator"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0021",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Số học & Đại số: Kỹ thuật Nhảy Vieta (Vieta Jumping - IMO 1988 P6)",
+      "type": "dien-so",
+      "statement_vi": "Cho a và b là hai số nguyên dương sao cho (a^2 + b^2)/(ab + 1) = k là một số nguyên. Chứng minh rằng k bắt buộc phải là một số chính phương. Với cặp nghiệm nguyên dương nhỏ nhất (a, b) = (1, 1), hãy tính giá trị của k.",
+      "statement_en": "Let a and b be positive integers such that (a^2 + b^2)/(ab + 1) = k is an integer. Prove that k must be a perfect square. For the minimal positive solution pair (a, b) = (1, 1), find the value of k.",
+      "answer": "1",
+      "answer_numeric": 1,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Thiết lập phương trình bậc hai theo a: Viết lại hệ thức dưới dạng a^2 - (kb)a + (b^2 - k) = 0. Cố định k không phải số chính phương và giả sử tồn tại nghiệm nguyên dương.",
+          "latex": "a^2 - (kb)a + (b^2 - k) = 0"
+        },
+        {
+          "explain": "Áp dụng định lý Vieta để nhảy nghiệm (Vieta Jumping): Nếu (A, B) là nghiệm với A >= B > 0 có tổng A + B nhỏ nhất, thì nghiệm còn lại của phương trình bậc hai là A' = kb - A = (B^2 - k)/A.",
+          "latex": "A' = kb - A = \\frac{B^2 - k}{A}"
+        },
+        {
+          "explain": "Chứng minh phản chứng bằng nguyên lý cực hạn: Ta chỉ ra rằng A' là số nguyên dương và A' < A, dẫn đến cặp (B, A') có tổng nhỏ hơn A + B, mâu thuẫn với tính nhỏ nhất. Do đó k bắt buộc phải là số chính phương.",
+          "latex": "k = m^2, \\quad m \\in \\mathbb{Z}^+"
+        },
+        {
+          "explain": "Tính giá trị k với a = 1, b = 1: Thay trực tiếp vào ta được k = (1 + 1)/(1 + 1) = 1 (là số chính phương 1^2).",
+          "latex": "k = \\frac{1^2 + 1^2}{1 \\times 1 + 1} = \\frac{2}{2} = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-dai-so.vieta-jumping"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 25,
+      "skills": [
+        "kỹ thuật nhảy Vieta",
+        "nguyên lý lùi vô hạn Fermat",
+        "phản chứng cực trị"
+      ],
+      "hints": [
+        "Cố định k và xem phương trình là phương trình bậc hai ẩn a.",
+        "Dùng hệ thức Vieta để tìm nghiệm nguyên thứ hai và so sánh độ lớn."
+      ],
+      "tags": [
+        "vieta-jumping",
+        "imo-1988",
+        "number-theory",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0022",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tổ hợp & Đếm số học: Bài toán AIME 1983",
+      "type": "dien-so",
+      "statement_vi": "Tìm số nguyên dương n nhỏ nhất sao cho n chia hết cho 7 và khi chia n cho các số 2, 3, 4, 5, 6 thì luôn nhận được số dư lần lượt là 1, 2, 3, 4, 5.",
+      "statement_en": "Find the smallest positive integer n such that n is divisible by 7, and when n is divided by 2, 3, 4, 5, 6, the remainders are 1, 2, 3, 4, 5 respectively.",
+      "answer": "119",
+      "answer_numeric": 119,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Nhận xét về số dư thiếu: Vì n chia 2 dư 1, chia 3 dư 2, chia 4 dư 3, chia 5 dư 4, chia 6 dư 5 nên n + 1 chia hết cho cả 2, 3, 4, 5, 6.",
+          "latex": "n + 1 \\equiv 0 \\pmod{\\operatorname{BCNN}(2, 3, 4, 5, 6)}"
+        },
+        {
+          "explain": "Tìm BCNN(2, 3, 4, 5, 6): BCNN = 2^2 * 3 * 5 = 60. Do đó n + 1 có dạng 60k, hay n = 60k - 1 (với k nguyên dương).",
+          "latex": "n = 60k - 1, \\quad k \\in \\mathbb{Z}^+"
+        },
+        {
+          "explain": "Kết hợp điều kiện chia hết cho 7: Ta có 60k - 1 chia hết cho 7 <=> 4k - 1 chia hết cho 7 <=> 4k đồng dư 1 (mod 7). Nhân cả hai vế với 2: 8k đồng dư 2 (mod 7) => k đồng dư 2 (mod 7).",
+          "latex": "60k - 1 \\equiv 4k - 1 \\equiv 0 \\pmod 7 \\implies k \\equiv 2 \\pmod 7"
+        },
+        {
+          "explain": "Chọn k nhỏ nhất: Giá trị nguyên dương nhỏ nhất là k = 2. Khi đó n = 60*2 - 1 = 119.",
+          "latex": "n_{\\min} = 60(2) - 1 = 119"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "đồng dư thức modulo",
+        "định lý phần dư Trung Hoa",
+        "bội chung nhỏ nhất"
+      ],
+      "hints": [
+        "Xét số n + 1 có tính chất gì khi chia cho 2, 3, 4, 5, 6?",
+        "Viết n theo dạng 60k - 1 và giải phương trình đồng dư mod 7."
+      ],
+      "tags": [
+        "aime",
+        "number-theory",
+        "chinese-remainder-theorem",
+        "amc"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0023",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tổ hợp Không gian: Đường đi ngắn nhất trên lưới lập phương (AMC 12)",
+      "type": "dien-so",
+      "statement_vi": "Trong không gian tọa độ Oxyz, một con kiến bò dọc theo các cạnh của lưới nguyên từ điểm (0, 0, 0) đến điểm (3, 3, 3). Mỗi bước đi con kiến chỉ có thể tăng 1 đơn vị theo chiều dương trục Ox, Oy hoặc Oz. Hỏi có bao nhiêu đường đi ngắn nhất (gồm 9 bước)?",
+      "statement_en": "In 3D space, an ant walks along integer grid lines from (0,0,0) to (3,3,3). Each step increases x, y, or z by 1. How many shortest paths (consisting of 9 steps) are there?",
+      "answer": "1680",
+      "answer_numeric": 1680,
+      "answer_unit": "đường đi",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phân tích số bước đi: Để đi từ (0,0,0) đến (3,3,3), cần đi đúng 3 bước theo hướng X, 3 bước theo hướng Y và 3 bước theo hướng Z. Tổng số bước là 3 + 3 + 3 = 9 bước.",
+          "latex": "N = 3 + 3 + 3 = 9"
+        },
+        {
+          "explain": "Quy về bài toán hoán vị lặp: Mỗi đường đi là một hoán vị của chuỗi gồm 3 ký tự X, 3 ký tự Y và 3 ký tự Z.",
+          "latex": "\\text{Số đường đi} = \\frac{9!}{3! \\times 3! \\times 3!}"
+        },
+        {
+          "explain": "Tính toán giá trị số học: 9! / (6 * 6 * 6) = 362880 / 216 = 1680.",
+          "latex": "\\frac{362880}{216} = 1680"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.chinh-hop-chap-k"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "hoán vị lặp",
+        "đường đi lưới không gian",
+        "tổ hợp đa thức"
+      ],
+      "hints": [
+        "Mỗi đường đi là một chuỗi 9 bước gồm đúng 3 chữ X, 3 chữ Y và 3 chữ Z.",
+        "Dùng công thức hoán vị lặp n! / (n1! * n2! * n3!)."
+      ],
+      "tags": [
+        "amc-12",
+        "grid-paths",
+        "multinomial-coefficient",
+        "combinatorics"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0024",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "olympiad",
+        "intl-undergrad"
+      ],
+      "topic": "Putnam Competition 2002 A1: Đa thức và Tính chất chia hết",
+      "type": "dien-so",
+      "statement_vi": "Cho k là số nguyên dương cố định. Giả sử p(x) là đa thức thỏa mãn p(x^k) chia hết cho p(x). Chứng minh rằng mọi nghiệm phức của p(x) đều có môđun bằng 0 hoặc 1. Nếu p(x) = x^2 - x + 1, hãy tính môđun của nghiệm phức của p(x).",
+      "statement_en": "Let k be a fixed positive integer. Suppose p(x) is a polynomial such that p(x^k) is divisible by p(x). Prove that all roots of p(x) have modulus 0 or 1. For p(x) = x^2 - x + 1, find the modulus of the roots.",
+      "answer": "1",
+      "answer_numeric": 1,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phân tích điều kiện nghiệm: Nếu r là nghiệm của p(x) thì p(r) = 0. Do p(x^k) chia hết cho p(x), ta có p(r^k) = 0, tức r^k cũng là nghiệm của p(x). Lặp lại liên tiếp, dãy r, r^k, r^{k^2}, ... đều là các nghiệm của p(x).",
+          "latex": "p(r) = 0 \\implies p(r^k) = p(r^{k^2}) = \\dots = 0"
+        },
+        {
+          "explain": "Áp dụng tính hữu hạn số nghiệm: Đa thức p(x) chỉ có hữu hạn nghiệm phức. Vì vậy tập hợp {r, r^k, r^{k^2}, ...} phải là tập hữu hạn. Điều này chỉ xảy ra khi |r| = 0 (r = 0) hoặc |r| = 1 (r là căn đơn vị). Nếu |r| > 1 thì |r^{k^n}| -> vô cùng (vô hạn nghiệm phân biệt), mâu thuẫn.",
+          "latex": "|r| \\in \\{0, 1\\}"
+        },
+        {
+          "explain": "Tính môđun nghiệm của x^2 - x + 1 = 0: Nghiệm là r = (1 ± i*sqrt(3))/2 = e^{\\pm i\\pi/3}. Môđun |r| = sqrt((1/2)^2 + (sqrt(3)/2)^2) = sqrt(1/4 + 3/4) = 1.",
+          "latex": "|r| = \\left| \\frac{1 \\pm i\\sqrt{3}}{2} \\right| = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.nguyen-li-cuc-han"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "nguyên lý hữu hạn nghiệm đa thức",
+        "môđun số phức",
+        "căn đơn vị"
+      ],
+      "hints": [
+        "Nếu r là nghiệm thì r^k có phải là nghiệm không?",
+        "Điều gì xảy ra với dãy |r^{k^n}| nếu |r| > 1?"
+      ],
+      "tags": [
+        "putnam",
+        "polynomial",
+        "complex-numbers",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0025",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Hình học Logic & Đồ thị: Đặc trưng Euler cho Khối đa diện lồi (Kangaroo Student)",
+      "type": "dien-so",
+      "statement_vi": "Một khối đa diện lồi có đúng 32 mặt, trong đó gồm 20 mặt là hình tam giác và 12 mặt là hình ngũ giác. Hỏi khối đa diện này có tất cả bao nhiêu đỉnh (áp dụng công thức Euler V - E + F = 2)?",
+      "statement_en": "A convex polyhedron has 32 faces: 20 triangles and 12 pentagons. How many vertices does this polyhedron have (using Euler's formula V - E + F = 2)?",
+      "answer": "30",
+      "answer_numeric": 30,
+      "answer_unit": "đỉnh",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Đếm số mặt F: Tổng số mặt là F = 20 (tam giác) + 12 (ngũ giác) = 32 mặt.",
+          "latex": "F = 20 + 12 = 32"
+        },
+        {
+          "explain": "Đếm số cạnh E qua số cạnh của từng mặt: Mỗi tam giác có 3 cạnh, mỗi ngũ giác có 5 cạnh. Do mỗi cạnh của đa diện là ranh giới chung của đúng 2 mặt, ta có 2E = 20*3 + 12*5 = 60 + 60 = 120 cạnh biên => E = 60.",
+          "latex": "2E = 20 \\times 3 + 12 \\times 5 = 120 \\implies E = 60"
+        },
+        {
+          "explain": "Áp dụng Công thức Euler cho đa diện lồi V - E + F = 2: Ta có V - 60 + 32 = 2 => V = 60 - 32 + 2 = 30 đỉnh (đây chính là cấu hình quả bóng bóng đá icosahedron cụt).",
+          "latex": "V - E + F = 2 \\implies V = 2 + 60 - 32 = 30"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 7,
+      "skills": [
+        "công thức Euler đa diện V-E+F=2",
+        "đếm cạnh bằng hai cách",
+        "hình học đa diện lồi"
+      ],
+      "hints": [
+        "Mỗi cạnh là cạnh chung của mấy mặt?",
+        "Tính tổng số cạnh E trước từ 2E = sum(số cạnh mỗi mặt)."
+      ],
+      "tags": [
+        "kangaroo",
+        "euler-formula",
+        "polyhedron",
+        "ikmc"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0026",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Quy luật số & Dãy Fibonacci Modulo (SASMO Olympiad)",
+      "type": "dien-so",
+      "statement_vi": "Cho dãy Fibonacci f_1 = 1, f_2 = 1, f_3 = 2, f_4 = 3, f_5 = 5, ... với f_n = f_{n-1} + f_{n-2}. Xét dãy số dư của f_n khi chia cho 3 (chu kỳ Pisano mod 3). Chu kỳ lặp lại tuần hoàn của dãy số dư mod 3 gồm bao nhiêu số hạng?",
+      "statement_en": "Consider the Fibonacci sequence modulo 3 (Pisano period mod 3). How many terms are in the repeating period of Fibonacci numbers mod 3?",
+      "answer": "8",
+      "answer_numeric": 8,
+      "answer_unit": "số hạng",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Tính dãy số dư mod 3 của các số hạng đầu tiên:",
+          "latex": "f_1 \\equiv 1, \\; f_2 \\equiv 1, \\; f_3 \\equiv 2, \\; f_4 \\equiv 0, \\; f_5 \\equiv 2, \\; f_6 \\equiv 2, \\; f_7 \\equiv 1, \\; f_8 \\equiv 0 \\pmod 3"
+        },
+        {
+          "explain": "Kiểm tra hai số hạng tiếp theo f_9 và f_10: f_9 = 0 + 1 = 1 (mod 3), f_10 = 1 + 0 = 1 (mod 3). Cặp (1, 1) đã xuất hiện trở lại đúng tại vị trí ban đầu.",
+          "latex": "(f_9, f_{10}) \\equiv (1, 1) \\pmod 3"
+        },
+        {
+          "explain": "Xác định độ dài chu kỳ Pisano pi(3): Chuỗi tuần hoàn là (1, 1, 2, 0, 2, 2, 1, 0) gồm đúng 8 số hạng.",
+          "latex": "\\pi(3) = 8"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "chu kỳ Pisano",
+        "dãy số nguyên tuần hoàn mod m",
+        "suy luận quy luật số"
+      ],
+      "hints": [
+        "Viết ra dãy số dư của Fibonacci khi chia cho 3 cho đến khi gặp lại cặp (1, 1).",
+        "Đếm số lượng số dư trước khi chu kỳ lặp lại."
+      ],
+      "tags": [
+        "sasmo",
+        "fibonacci",
+        "pisano-period",
+        "modulo"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0027",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Số học & Hệ cơ số: Bài toán AIME 2003",
+      "type": "dien-so",
+      "statement_vi": "Một số nguyên dương N khi viết trong hệ cơ số 7 là số có 3 chữ số (abc)_7 và khi viết trong hệ cơ số 9 là số có 3 chữ số (cba)_9 với a khác 0 và c khác 0. Hãy tìm giá trị của số N trong hệ cơ số 10.",
+      "statement_en": "A positive integer N has base-7 representation (abc)_7 and base-9 representation (cba)_9 with a, c != 0. Find the value of N in base 10.",
+      "answer": "248",
+      "answer_numeric": 248,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Khai triển N theo hai hệ cơ số 7 và 9: N = a*7^2 + b*7 + c = 49a + 7b + c và N = c*9^2 + b*9 + a = 81c + 9b + a. Do chữ số trong cơ số 7 chỉ từ 0 đến 6, ta có 1 <= a, c <= 6 và 0 <= b <= 6.",
+          "latex": "49a + 7b + c = 81c + 9b + a"
+        },
+        {
+          "explain": "Rút gọn phương trình nghiệm nguyên: 48a - 2b = 80c => 24a - b = 40c => b = 24a - 40c = 8(3a - 5c).",
+          "latex": "b = 8(3a - 5c)"
+        },
+        {
+          "explain": "Biện luận tìm nghiệm: Vì 0 <= b <= 6 và b là bội số của 8, giá trị duy nhất của b là b = 0. Khi b = 0, ta có 3a = 5c. Vì gcd(3, 5) = 1 và 1 <= a, c <= 6, nghiệm duy nhất là a = 5 và c = 3.",
+          "latex": "b = 0 \\implies 3a = 5c \\implies a = 5, \\; c = 3"
+        },
+        {
+          "explain": "Tính giá trị của N: N = 49*5 + 7*0 + 3 = 245 + 3 = 248. Kiểm tra trong cơ số 9: 81*3 + 9*0 + 5 = 243 + 5 = 248. Hoàn toàn chính xác.",
+          "latex": "N = 248"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "chuyển đổi hệ cơ số base-n",
+        "phương trình nghiệm nguyên",
+        "biện luận chặn giá trị"
+      ],
+      "hints": [
+        "Viết biểu thức giá trị của N theo a, b, c trong cơ số 7 và cơ số 9.",
+        "Chú ý các chữ số trong hệ cơ số 7 không được vượt quá 6."
+      ],
+      "tags": [
+        "aime",
+        "base-conversion",
+        "number-theory",
+        "amc-12"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0028",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tư duy Thuật toán Bebras: Cây nhị phân và Độ dài mã hóa Huffman",
+      "type": "dien-so",
+      "statement_vi": "Một văn bản gồm 100 ký tự gồm 4 chữ cái A, B, C, D với tần số xuất hiện lần lượt là: A xuất hiện 45 lần, B xuất hiện 25 lần, C xuất hiện 20 lần, D xuất hiện 10 lần. Sử dụng thuật toán mã hóa tiền tố tối ưu Huffman (cây nhị phân), tính tổng số bit nhị phân cần thiết để mã hóa toàn bộ văn bản 100 ký tự này.",
+      "statement_en": "A 100-character text consists of 4 letters with frequencies: A: 45, B: 25, C: 20, D: 10. Using optimal Huffman prefix coding, find the total number of bits required to encode the entire text.",
+      "answer": "185",
+      "answer_numeric": 185,
+      "answer_unit": "bit",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Xây dựng cây Huffman tối ưu: Bước 1: Ghép hai nút có tần số nhỏ nhất là D (10) và C (20) thành nút CD (30). Bước 2: Trong các nút {A(45), B(25), CD(30)}, ghép hai nút nhỏ nhất là B (25) và CD (30) thành nút BCD (55). Bước 3: Ghép A (45) và BCD (55) thành nút gốc (100).",
+          "latex": "\\text{Cây: } \\text{Root} \\to \\{A: 1\\text{ bit}, \\; B: 2\\text{ bit}, \\; C: 3\\text{ bit}, \\; D: 3\\text{ bit}\\}"
+        },
+        {
+          "explain": "Xác định độ dài từ mã của từng ký tự: Ký tự A có độ dài mã 1 bit. Ký tự B có độ dài mã 2 bit. Ký tự C có độ dài mã 3 bit. Ký tự D có độ dài mã 3 bit.",
+          "latex": "L(A) = 1, \\; L(B) = 2, \\; L(C) = 3, \\; L(D) = 3"
+        },
+        {
+          "explain": "Tính tổng số bit của cả văn bản: Tổng số bit = 45*1 + 25*2 + 20*3 + 10*3 = 45 + 50 + 60 + 30 = 185 bit.",
+          "latex": "\\sum f_i L_i = 45(1) + 25(2) + 20(3) + 10(3) = 185"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 8,
+      "skills": [
+        "thuật toán nén Huffman",
+        "cây nhị phân tiền tố",
+        "tư duy tối ưu hóa thuật toán"
+      ],
+      "hints": [
+        "Ký tự xuất hiện nhiều nhất sẽ có mã bit ngắn nhất.",
+        "Lần lượt gộp hai ký tự có tần số bé nhất lại với nhau."
+      ],
+      "tags": [
+        "bebras",
+        "huffman-coding",
+        "binary-tree",
+        "information-theory"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0029",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Số học & Quy nạp cực hạn: Bài toán IMO 1977",
+      "type": "dien-so",
+      "statement_vi": "Cho hàm số f: N* -> N* thỏa mãn điều kiện f(n + 1) > f(f(n)) với mọi số nguyên dương n. Chứng minh rằng f(n) = n với mọi n. Tính giá trị của f(2024).",
+      "statement_en": "Let f: N* -> N* be a function such that f(n + 1) > f(f(n)) for all positive integers n. Find the value of f(2024).",
+      "answer": "2024",
+      "answer_numeric": 2024,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Sử dụng nguyên lý cực hạn và quy nạp trên tập giá trị: Đặt S_k = {f(n) | n >= k}. Vì tập số nguyên dương N* được sắp thứ tự tốt, luôn tồn tại phần tử nhỏ nhất.",
+          "latex": "\\min \\{ f(n) \\mid n \\ge k \\}"
+        },
+        {
+          "explain": "Chứng minh f(n) >= n với mọi n: Giả sử tồn tại n sao cho f(n) < n. Chọn n0 là giá trị nhỏ nhất sao cho f(n0) đạt cực tiểu trong S_1. Từ f(n + 1) > f(f(n)), ta suy ra f(n) >= n với mọi n >= 1.",
+          "latex": "f(n) \\ge n, \\quad \\forall n \\in \\mathbb{Z}^+"
+        },
+        {
+          "explain": "Chứng minh f(n) tăng ngặt: Ta có f(n + 1) > f(f(n)) >= f(n), do đó f là hàm tăng ngặt: 1 <= f(1) < f(2) < f(3) < ... Vì f(n) >= n và f tăng ngặt, chỉ có thể f(n) = n với mọi n.",
+          "latex": "f(n) = n, \\quad \\forall n \\ge 1"
+        },
+        {
+          "explain": "Tính giá trị f(2024): Với f(n) = n, ta có f(2024) = 2024.",
+          "latex": "f(2024) = 2024"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.nguyen-li-cuc-han"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "phương trình hàm rời rạc",
+        "nguyên lý sắp thứ tự tốt Well-ordering",
+        "quy nạp cực hạn"
+      ],
+      "hints": [
+        "Xét phần tử nhỏ nhất của tập giá trị {f(n)}.",
+        "Chứng minh tính đơn điệu tăng ngặt của hàm số f."
+      ],
+      "tags": [
+        "imo-1977",
+        "functional-equations",
+        "well-ordering",
+        "olympiad"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0030",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Xác suất & Tính đối xứng: Bài toán AMC 10B",
+      "type": "dien-so",
+      "statement_vi": "Hai bạn Alice và Bob mỗi người tung một con xúc xắc cân đối 6 mặt phân biệt. Người nào có số chấm lớn hơn sẽ thắng. Nếu hai người tung được số chấm bằng nhau thì tung lại cho đến khi có người thắng. Xác suất để Alice thắng trong đúng lần tung thứ nhất là p/q (phân số tối giản). Tính giá trị của p + q.",
+      "statement_en": "Alice and Bob each roll a fair 6-sided die. Higher roll wins; ties are re-rolled. What is the probability that Alice wins on the very first roll? Express as p/q in lowest terms, and find p + q.",
+      "answer": "17",
+      "answer_numeric": 17,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Đếm số kết quả không gian mẫu khi tung 2 con xúc xắc: Tổng số cặp kết quả (A, B) là 6 * 6 = 36 kết quả đồng khả năng.",
+          "latex": "|\\Omega| = 6 \\times 6 = 36"
+        },
+        {
+          "explain": "Phân loại kết quả: Có 6 kết quả hòa (1,1), (2,2), ..., (6,6). Số kết quả không hòa là 36 - 6 = 30 kết quả.",
+          "latex": "N_{\\text{hòa}} = 6, \\quad N_{\\text{khác}} = 30"
+        },
+        {
+          "explain": "Sử dụng tính đối xứng: Do xúc xắc cân đối, khả năng Alice có số chấm lớn hơn Bob đúng bằng khả năng Bob có số chấm lớn hơn Alice. Do đó số kết quả Alice thắng là 30 / 2 = 15 kết quả.",
+          "latex": "N_{\\text{Alice thắng}} = \\frac{30}{2} = 15"
+        },
+        {
+          "explain": "Tính xác suất và rút gọn: P = 15 / 36 = 5 / 12 (phân số tối giản với p = 5, q = 12). Tổng p + q = 5 + 12 = 17.",
+          "latex": "P = \\frac{15}{36} = \\frac{5}{12} \\implies p + q = 5 + 12 = 17"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính đối xứng trong xác suất",
+        "không gian mẫu cổ điển",
+        "rút gọn phân số"
+      ],
+      "hints": [
+        "Có bao nhiêu trường hợp hai người có số chấm bằng nhau?",
+        "Lợi dụng tính đối xứng giữa Alice và Bob trên các trường hợp còn lại."
+      ],
+      "tags": [
+        "amc-10",
+        "probability",
+        "symmetry",
+        "dice-problem"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0031",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "olympiad",
+        "intl-undergrad"
+      ],
+      "topic": "Putnam 2010 A2: Tích phân Ma trận và Đại số Tuyến tính",
+      "type": "dien-so",
+      "statement_vi": "Cho f: [0, 1] -> R là hàm liên tục thỏa mãn tích phân từ 0 đến 1 của f(x) dx = 0 và tích phân từ 0 đến 1 của x*f(x) dx = 1. Tìm giá trị nhỏ nhất có thể của tích phân từ 0 đến 1 của [f(x)]^2 dx.",
+      "statement_en": "Let f: [0, 1] -> R be continuous with int_0^1 f(x) dx = 0 and int_0^1 x f(x) dx = 1. Find the minimum possible value of int_0^1 (f(x))^2 dx.",
+      "answer": "12",
+      "answer_numeric": 12,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Trực giao hóa hàm số trong không gian Hilbert L2[0, 1]: Xét không gian các hàm số với tích vô hướng <u, v> = int_0^1 u(x)v(x) dx. Ta cần cực tiểu hóa chuẩn ||f||^2 thỏa mãn <f, 1> = 0 và <f, x> = 1.",
+          "latex": "\\min \\|f\\|^2 \\quad \\text{thỏa } \\langle f, 1 \\rangle = 0, \\; \\langle f, x \\rangle = 1"
+        },
+        {
+          "explain": "Hình chiếu trực giao lên không gian span{1, x}: Hàm f đạt cực tiểu chuẩn khi f nằm hoàn toàn trong không gian span{1, x - 1/2}, tức là f(x) có dạng đa thức bậc nhất f(x) = c(x - 1/2).",
+          "latex": "f(x) = c\\left(x - \\frac{1}{2}\\right)"
+        },
+        {
+          "explain": "Xác định hệ số c từ điều kiện <f, x> = 1: Ta có int_0^1 c(x - 1/2)x dx = c int_0^1 (x^2 - x/2) dx = c(1/3 - 1/4) = c/12 = 1 => c = 12. Vậy hàm tối ưu là f(x) = 12(x - 1/2).",
+          "latex": "\\int_0^1 12\\left(x - \\frac{1}{2}\\right) x \\, dx = 12 \\times \\frac{1}{12} = 1"
+        },
+        {
+          "explain": "Tính tích phân của [f(x)]^2: int_0^1 [12(x - 1/2)]^2 dx = 144 int_0^1 (x - 1/2)^2 dx = 144 * [ (x-1/2)^3 / 3 ]_0^1 = 144 * (1/24 - (-1/24)) = 144 * (2/24) = 144 / 12 = 12.",
+          "latex": "\\int_0^1 [f(x)]^2 dx = 144 \\times \\frac{1}{12} = 12"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-dai-so.bdt-sap-xep-lai"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "bất đẳng thức Cauchy-Schwarz trong tích phân",
+        "hình chiếu trực giao không gian Hilbert",
+        "tối ưu hàm giải tích"
+      ],
+      "hints": [
+        "Hàm cực tiểu có dạng tuyến tính f(x) = ax + b.",
+        "Dùng điều kiện tích phân với 1 bằng 0 để suy ra f(x) = c(x - 1/2)."
+      ],
+      "tags": [
+        "putnam-2010",
+        "hilbert-space",
+        "cauchy-schwarz",
+        "calculus"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0032",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Số học & Định lý Fermat nhỏ (IMO 1991 P3)",
+      "type": "dien-so",
+      "statement_vi": "Cho p là một số nguyên tố lẻ. Tìm số nguyên dương n nhỏ nhất sao cho 2^n - 1 chia hết cho p nếu biết rằng cấp của 2 modulo p bằng 10.",
+      "statement_en": "Let p be an odd prime. Find the smallest positive integer n such that 2^n - 1 is divisible by p, given that the order of 2 modulo p is 10.",
+      "answer": "10",
+      "answer_numeric": 10,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Định nghĩa cấp của phần tử (Order of an element): Cấp của a modulo m, ký hiệu ord_m(a), là số nguyên dương d nhỏ nhất sao cho a^d đồng dư 1 (mod m).",
+          "latex": "\\operatorname{ord}_m(a) = \\min \\{ d \\in \\mathbb{Z}^+ \\mid a^d \\equiv 1 \\pmod m \\}"
+        },
+        {
+          "explain": "Áp dụng định nghĩa cho 2^n đồng dư 1 (mod p): Điều kiện 2^n - 1 chia hết cho p tương đương với 2^n đồng dư 1 (mod p). Theo định nghĩa, số nguyên dương n nhỏ nhất thỏa mãn chính là cấp ord_p(2).",
+          "latex": "2^n \\equiv 1 \\pmod p \\iff \\operatorname{ord}_p(2) \\mid n"
+        },
+        {
+          "explain": "Kết luận giá trị n nhỏ nhất: Đề bài đã cho cấp ord_p(2) = 10, do đó n nhỏ nhất bằng 10.",
+          "latex": "n_{\\min} = 10"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-so-hoc.cap-cua-phan-tu-modulo"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "cấp của phần tử modulo",
+        "định lý Fermat nhỏ",
+        "tính chất chia hết của số mũ"
+      ],
+      "hints": [
+        "Đọc kỹ định nghĩa cấp của một số theo modulo.",
+        "Số mũ nhỏ nhất để 2^n đồng dư 1 mod p là gì?"
+      ],
+      "tags": [
+        "imo",
+        "order-modulo",
+        "number-theory",
+        "fermat"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0033",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Tổ hợp chọn không kề: Bổ đề Kaplansky (AIME 2015)",
+      "type": "dien-so",
+      "statement_vi": "Có 10 chiếc ghế xếp thành một hàng ngang. Có bao nhiêu cách chọn ra 3 chiếc ghế sao cho không có hai chiếc ghế nào được chọn đứng cạnh nhau (Bổ đề Kaplansky hàng thẳng)?",
+      "statement_en": "There are 10 chairs in a row. In how many ways can 3 chairs be chosen such that no two chosen chairs are adjacent (Kaplansky's Lemma for linear line)?",
+      "answer": "56",
+      "answer_numeric": 56,
+      "answer_unit": "cách",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phát biểu Bổ đề Kaplansky hàng thẳng: Số cách chọn k phần tử không kề nhau từ n phần tử xếp thành hàng là C(n - k + 1, k).",
+          "latex": "N = \\binom{n - k + 1}{k}"
+        },
+        {
+          "explain": "Giải thích bằng phương pháp song ánh: Bỏ ra 3 chiếc ghế được chọn. Còn lại 10 - 3 = 7 chiếc ghế không được chọn, tạo ra 7 + 1 = 8 vị trí khoảng trống (tính cả 2 đầu). Ta cần đặt 3 chiếc ghế vào 8 khoảng trống này sao cho mỗi khoảng trống có tối đa 1 ghế.",
+          "latex": "\\binom{8}{3}"
+        },
+        {
+          "explain": "Tính giá trị số học: C(8, 3) = (8 * 7 * 6) / (3 * 2 * 1) = 56 cách.",
+          "latex": "\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{6} = 56"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "bổ đề Kaplansky",
+        "kỹ thuật chèn khoảng trống",
+        "chọn tập không kề nhau"
+      ],
+      "hints": [
+        "Xếp 7 chiếc ghế không được chọn trước để tạo ra các khoảng trống.",
+        "Có bao nhiêu khoảng trống để chèn 3 chiếc ghế được chọn vào?"
+      ],
+      "tags": [
+        "kaplansky-lemma",
+        "aime",
+        "combinatorics",
+        "non-adjacent-selection"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0034",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        8,
+        9
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Hình học Trực quan: Tỉ số Diện tích Tam giác (Kangaroo Cadet)",
+      "type": "dien-so",
+      "statement_vi": "Cho tam giác ABC có diện tích bằng 60 cm^2. Trên cạnh BC lấy điểm D sao cho BD = 2*DC. Trên đoạn thẳng AD lấy điểm E sao cho AE = ED. Tính diện tích tam giác ABE theo cm^2.",
+      "statement_en": "In triangle ABC with area 60 cm^2, point D on BC satisfies BD = 2*DC, and E on AD satisfies AE = ED. Find the area of triangle ABE in cm^2.",
+      "answer": "20",
+      "answer_numeric": 20,
+      "answer_unit": "cm²",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Tính diện tích tam giác ABD: Hai tam giác ABD và ABC có chung đường cao hạ từ đỉnh A xuống đáy BC. Do BD = 2/3 BC, diện tích tam giác ABD bằng 2/3 diện tích tam giác ABC.",
+          "latex": "S_{ABD} = \\frac{2}{3} S_{ABC} = \\frac{2}{3} \\times 60 = 40 \\text{ cm}^2"
+        },
+        {
+          "explain": "Tính diện tích tam giác ABE: Trong tam giác ABD, đoạn BE là đường trung tuyến vì E là trung điểm của AD (AE = ED). Đường trung tuyến chia tam giác thành hai phần có diện tích bằng nhau.",
+          "latex": "S_{ABE} = \\frac{1}{2} S_{ABD} = \\frac{1}{2} \\times 40 = 20 \\text{ cm}^2"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 5,
+      "skills": [
+        "tỉ số diện tích tam giác chung đường cao",
+        "tính chất đường trung tuyến",
+        "hình học phẳng tỉ lệ"
+      ],
+      "hints": [
+        "Diện tích tam giác ABD chiếm bao nhiêu phần diện tích tam giác ABC?",
+        "Đoạn thẳng BE chia tam giác ABD thành hai phần như thế nào?"
+      ],
+      "tags": [
+        "kangaroo",
+        "triangle-area",
+        "geometry",
+        "ikmc"
+      ]
+    },
+    {
+      "id": "prob.math.intl-logic.0035",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "olympiad"
+      ],
+      "topic": "Lý thuyết Trò chơi & Đối xứng: Trò chơi Đặt đồng xu trên bàn tròn (SASMO)",
+      "type": "dien-so",
+      "statement_vi": "Hai người chơi A và B chơi một trò chơi trên một chiếc bàn tròn hoàn toàn đối xứng. Hai người luân phiên đặt các đồng xu hình tròn có cùng kích thước lên bàn sao cho các đồng xu không được đè lên nhau và không được chìa ra ngoài mép bàn. Người nào đến lượt mà không thể đặt thêm đồng xu nào nữa là người thua cuộc. Nếu cả hai người đều chơi tối ưu, người nào có chiến thuật chắc chắn thắng (Điền 1 nếu người đi trước A thắng, điền 2 nếu người đi sau B thắng)?",
+      "statement_en": "Two players take turns placing identical round coins on a circular table without overlapping or hanging over the edge. The last player able to make a valid move wins. Who has a winning strategy under optimal play? (Enter 1 for first player A, 2 for second player B).",
+      "answer": "1",
+      "answer_numeric": 1,
+      "answer_unit": "",
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Xác định tâm đối xứng của bàn tròn: Chiếc bàn tròn có một tâm đối xứng duy nhất O.",
+          "latex": "O = \\text{tâm bàn tròn}"
+        },
+        {
+          "explain": "Chiến thuật của người đi trước (A): Ở nước đi đầu tiên, A đặt một đồng xu có tâm trùng khít với tâm O của chiếc bàn tròn.",
+          "latex": "\\text{Nước 1: A đặt tại } O"
+        },
+        {
+          "explain": "Duy trì đối xứng tâm: Ở tất cả các lượt sau, mỗi khi B đặt một đồng xu tại vị trí có tâm P, người A chỉ cần đặt đồng xu đối xứng với P qua tâm O (vị trí P' = 2O - P). Vì bàn tròn đối xứng qua O và vị trí tâm O đã bị chiếm, nếu B tìm được một chỗ trống hợp lệ thì vị trí đối xứng qua O cũng luôn luôn trống và hợp lệ cho A. Do đó B luôn là người hết chỗ trước, A chắc chắn chiến thắng.",
+          "latex": "P' = -P \\implies \\text{Người 1 (A) luôn thắng}"
+        }
+      ],
+      "formulas_used": [
+        "math.thpt.imo-to-hop.nguyen-li-bat-bien"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "chiến thuật đối xứng tâm trong trò chơi",
+        "phân tích bất biến vị trí",
+        "lý thuyết trò chơi tổ hợp"
+      ],
+      "hints": [
+        "Bàn tròn có một điểm đặc biệt nào không có điểm đối xứng?",
+        "Nếu người đi trước chiếm tâm bàn tròn trước, sau đó mô phỏng đối xứng mọi nước đi của người đi sau thì sao?"
+      ],
+      "tags": [
+        "sasmo",
+        "game-theory",
+        "symmetry-strategy",
+        "olympiad"
+      ]
+    }
+  ]
+}

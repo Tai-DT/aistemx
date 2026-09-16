@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aistem.local/schema/lesson-slice.json",
+  "title": "AISTEM Lesson Slice",
+  "description": "Kho bài học / lý thuyết. Mỗi bản ghi là một bài giảng hoàn chỉnh, tham chiếu tới các công thức trong data/formulas qua id.",
+  "type": "object",
+  "required": ["meta", "lessons"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["file", "subject", "title", "levels", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string" },
+        "subject": { "enum": ["math", "physics", "chemistry", "biology"] },
+        "title": { "type": "string", "minLength": 1 },
+        "levels": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "enum": ["tieu-hoc", "thcs", "thpt", "dai-hoc"] }
+        },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "lessons": { "type": "array", "items": { "$ref": "#/definitions/lesson" } }
+  },
+  "definitions": {
+    "lesson": {
+      "type": "object",
+      "required": [
+        "id", "subject", "level", "grades", "curriculum", "unit", "order",
+        "title_vi", "title_en", "objectives", "prerequisites", "key_concepts",
+        "content", "formulas", "worked_examples", "common_mistakes",
+        "duration_minutes", "difficulty", "tags"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^lesson\\.[a-z]+(\\.[a-z0-9-]+){2}$",
+          "description": "lesson.<subject>.<curriculum-or-unit-slug>.<lesson-slug>"
+        },
+        "subject": { "enum": ["math", "physics", "chemistry", "biology"] },
+        "level": { "enum": ["tieu-hoc", "thcs", "thpt", "dai-hoc"] },
+        "grades": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": 1, "maximum": 13 }
+        },
+        "curriculum": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": ["vn-gdpt-2018", "ap", "ib", "a-level", "intl-undergrad", "olympiad", "ru-east-eu"]
+          }
+        },
+        "unit": { "type": "string", "description": "Tên chương / unit theo đúng cách gọi của chương trình gốc" },
+        "order": { "type": "integer", "minimum": 1, "description": "Thứ tự bài trong unit, dùng để dựng lộ trình học" },
+        "title_vi": { "type": "string", "minLength": 1 },
+        "title_en": { "type": "string" },
+        "objectives": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Mục tiêu học tập, mỗi mục bắt đầu bằng động từ hành động (Bloom)"
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "id các bài học tiên quyết; dùng để dựng đồ thị lộ trình"
+        },
+        "key_concepts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["term_vi", "term_en", "definition"],
+            "additionalProperties": false,
+            "properties": {
+              "term_vi": { "type": "string" },
+              "term_en": { "type": "string" },
+              "definition": { "type": "string" }
+            }
+          }
+        },
+        "content": {
+          "type": "string",
+          "minLength": 200,
+          "description": "Thân bài dạng Markdown. LaTeX inline bọc $...$, khối bọc $$...$$ (khác quy ước của kho công thức vì đây là văn bản để render trực tiếp)."
+        },
+        "formulas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "id công thức trong data/formulas mà bài này sử dụng. Bộ kiểm định sẽ đối chiếu id có thật hay không."
+        },
+        "worked_examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["problem", "solution"],
+            "additionalProperties": false,
+            "properties": {
+              "problem": { "type": "string" },
+              "solution": { "type": "string", "description": "Lời giải từng bước, có giải thích lí do chọn hướng làm" },
+              "answer": { "type": "string" }
+            }
+          }
+        },
+        "common_mistakes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Lỗi học sinh hay mắc, nêu rõ vì sao sai chứ không chỉ nêu là sai"
+        },
+        "duration_minutes": { "type": "integer", "minimum": 5, "maximum": 240 },
+        "difficulty": { "enum": ["co-ban", "trung-binh", "nang-cao", "chuyen-sau"] },
+        "tags": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "video_lectures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "url", "provider"],
+            "properties": {
+              "title": { "type": "string" },
+              "url": { "type": "string" },
+              "provider": { "type": "string" },
+              "duration": { "type": "string" },
+              "language": { "type": "string" },
+              "timestamps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["time", "label"],
+                  "properties": {
+                    "time": { "type": "string" },
+                    "label": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "animations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "type", "url"],
+            "properties": {
+              "title": { "type": "string" },
+              "type": { "enum": ["manim", "phet", "molview", "geogebra", "threejs", "interactive"] },
+              "url": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

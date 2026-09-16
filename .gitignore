@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.venv/
+env/
+venv/
+ENV/
+
+# Build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Databases & Large binary data (> 100MB limit on GitHub)
+*.db
+*.sqlite
+*.sqlite3
+engine/aistem.db
+
+# Backup & scratch directories
+.backup/
+.system_generated/
+.gstack/
+scratch/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# OS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# IDE & Editor caches
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,1801 @@
+{
+  "meta": {
+    "file": "vn-chemistry-daicuong-voco.json",
+    "subject": "chemistry",
+    "title": "Hoá học THPT Việt Nam: Đại cương, Vô cơ và các dạng giải nhanh",
+    "levels": [
+      "thpt"
+    ],
+    "count": 28
+  },
+  "lessons": [
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nguyen-tu-thanh-phan-so-khoi-dong-vi",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 1: Cấu tạo nguyên tử",
+      "order": 1,
+      "title_vi": "Thành phần nguyên tử, số khối, đồng vị và nguyên tử khối trung bình",
+      "title_en": "Atomic composition, mass number, isotopes and average atomic mass",
+      "objectives": [
+        "Xác định được số proton, neutron, electron của nguyên tử và ion từ kí hiệu nguyên tử",
+        "Phân biệt được số khối với nguyên tử khối và giải thích vì sao đồng vị có cùng số proton",
+        "Tính được nguyên tử khối trung bình và phần trăm mỗi đồng vị"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Số khối",
+          "term_en": "Mass number",
+          "definition": "Tổng số proton và neutron trong hạt nhân, kí hiệu $A = Z + N$; luôn là số nguyên."
+        },
+        {
+          "term_vi": "Đồng vị",
+          "term_en": "Isotope",
+          "definition": "Các nguyên tử cùng số proton $Z$ nhưng khác số neutron $N$, do đó khác số khối $A$."
+        },
+        {
+          "term_vi": "Nguyên tử khối trung bình",
+          "term_en": "Average atomic mass",
+          "definition": "Trung bình cộng có trọng số khối lượng các đồng vị theo phần trăm số nguyên tử của chúng."
+        }
+      ],
+      "content": "## Vì sao cần phân biệt số khối và nguyên tử khối\n\nNguyên tử gồm hạt nhân (proton mang điện $+1$, neutron trung hoà) và lớp vỏ electron (điện $-1$). Vì proton và neutron nặng gần bằng nhau và gấp khoảng 1836 lần electron, khối lượng nguyên tử tập trung ở hạt nhân. Ta quy ước **số khối** $A = Z + N$ để đếm số hạt nặng, còn nguyên tử khối là khối lượng thực đo bằng amu.\n\n## Đồng vị sinh ra từ đâu\n\nNguyên tố được định danh bằng $Z$ (số proton). Nhưng cùng một $Z$ có thể ứng với nhiều giá trị $N$: đó là các **đồng vị**. Ví dụ chlorine có $^{35}\\mathrm{Cl}$ và $^{37}\\mathrm{Cl}$, cùng 17 proton nhưng 18 và 20 neutron.\n\n## Cầu nối với thí nghiệm: nguyên tử khối trung bình\n\nPhổ khối cho biết phần trăm số nguyên tử mỗi đồng vị. Vì trong tự nhiên các đồng vị trộn lẫn theo tỉ lệ cố định, giá trị ghi trong bảng tuần hoàn là **trung bình có trọng số**:\n\n$$\\bar{A} = \\frac{a_1 A_1 + a_2 A_2 + \\dots}{100}$$\n\ntrong đó $a_i$ là phần trăm số nguyên tử của đồng vị $i$. Chính vì thế nguyên tử khối trung bình thường không phải số nguyên, dù mỗi số khối riêng lẻ đều nguyên.\n\n## Khi nào dùng\n\nGặp bài cho $\\bar{A}$ và hai đồng vị, đặt phần trăm một đồng vị là $x$, lập phương trình một ẩn rồi giải.",
+      "formulas": [
+        "chemistry.thpt.nguyen-tu.so-khoi",
+        "chemistry.thpt.nguyen-tu.nguyen-tu-khoi-trung-binh",
+        "chemistry.thpt.nguyen-tu.phan-tram-hai-dong-vi",
+        "chemistry.thpt.nguyen-tu.tong-so-hat",
+        "chemistry.thpt.nguyen-tu.dieu-kien-ben-hat-nhan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nguyên tố X có hai đồng vị $^{63}\\mathrm{X}$ và $^{65}\\mathrm{X}$; nguyên tử khối trung bình là 63,546. Tính phần trăm số nguyên tử mỗi đồng vị.",
+          "solution": "Chọn hướng: chỉ có hai đồng vị nên đặt phần trăm của $^{63}\\mathrm{X}$ là $x$ (theo số nguyên tử), phần còn lại là $(100-x)$ của $^{65}\\mathrm{X}$. Vì $\\bar{A}$ là trung bình có trọng số nên:\n$63x + 65(100-x) = 63{,}546 \\times 100$.\nGiải: $-2x = 6354{,}6 - 6500 = -145{,}4 \\Rightarrow x = 72{,}7$.\nVậy $^{63}\\mathrm{X}$ chiếm 72,7%, $^{65}\\mathrm{X}$ chiếm 27,3%. Kiểm tra lại: $63\\times0{,}727+65\\times0{,}273=63{,}546$ đúng.",
+          "answer": "72,7% đồng vị 63 và 27,3% đồng vị 65."
+        },
+        {
+          "problem": "Ion $\\mathrm{^{24}Mg^{2+}}$ có bao nhiêu proton, neutron, electron?",
+          "solution": "Số khối $A=24$, magnesium có $Z=12$ nên proton $=12$, neutron $=A-Z=12$. Ion mang điện $2+$ nghĩa là nguyên tử đã **mất 2 electron**, nên electron $=12-2=10$. Lưu ý: điện tích ion chỉ ảnh hưởng đến số electron, không đổi số proton hay neutron.",
+          "answer": "12 proton, 12 neutron, 10 electron."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy nguyên tử khối trung bình làm số khối để tính neutron — sai vì $\\bar{A}$ là số thập phân trung bình của nhiều đồng vị, còn $N=A-Z$ phải dùng số khối nguyên của một đồng vị cụ thể.",
+        "Cho rằng ion $\\mathrm{X}^{2+}$ có ít hơn 2 proton — sai vì điện tích dương sinh ra do mất electron, số proton (đặc trưng nguyên tố) luôn giữ nguyên.",
+        "Nhầm phần trăm khối lượng với phần trăm số nguyên tử khi tính $\\bar{A}$ — công thức trung bình dùng phần trăm số nguyên tử; dùng phần trăm khối lượng sẽ cho kết quả lệch."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "cau-tao-nguyen-tu",
+        "dong-vi",
+        "so-khoi",
+        "nguyen-tu-khoi-trung-binh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cau-hinh-electron",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 1: Cấu tạo nguyên tử",
+      "order": 2,
+      "title_vi": "Cấu hình electron của nguyên tử và ion",
+      "title_en": "Electron configuration of atoms and ions",
+      "objectives": [
+        "Viết được cấu hình electron của nguyên tử theo nguyên lí vững bền, quy tắc Hund và nguyên lí Pauli",
+        "Suy ra được cấu hình electron của ion dương và ion âm từ nguyên tử tương ứng",
+        "Xác định được số electron độc thân và tính chất kim loại/phi kim từ cấu hình"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nguyen-tu-thanh-phan-so-khoi-dong-vi"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Cấu hình electron",
+          "term_en": "Electron configuration",
+          "definition": "Cách phân bố electron vào các lớp và phân lớp theo thứ tự mức năng lượng tăng dần."
+        },
+        {
+          "term_vi": "Quy tắc Hund",
+          "term_en": "Hund's rule",
+          "definition": "Trong cùng một phân lớp, electron điền vào các orbital sao cho số electron độc thân là tối đa và spin song song."
+        },
+        {
+          "term_vi": "Electron hoá trị",
+          "term_en": "Valence electron",
+          "definition": "Electron ở lớp ngoài cùng (và phân lớp d sát ngoài với nguyên tố nhóm B), quyết định tính chất hoá học."
+        }
+      ],
+      "content": "## Trật tự lấp đầy các mức năng lượng\n\nElectron không phân bố tuỳ tiện. Theo **nguyên lí vững bền**, chúng chiếm mức năng lượng thấp trước. Trật tự thực nghiệm (quy tắc Klechkovski, sắp theo $n+l$ tăng) là:\n\n$$1s\\,2s\\,2p\\,3s\\,3p\\,4s\\,3d\\,4p\\,5s\\,4d\\,5p\\,6s\\dots$$\n\nĐiểm dễ quên: $4s$ điền trước $3d$ vì mức năng lượng $4s$ thấp hơn khi đang lấp.\n\n## Ba nguyên tắc chi phối\n\n- **Nguyên lí Pauli**: mỗi orbital chứa tối đa 2 electron ngược chiều spin.\n- **Quy tắc Hund**: trong một phân lớp chưa đầy, electron trải đều ra các orbital trước khi ghép đôi, cho số electron độc thân lớn nhất.\n- Phân lớp $s,p,d$ chứa tối đa $2,6,10$ electron.\n\n## Cấu hình của ion — cẩn thận thứ tự bỏ electron\n\nKhi tạo **ion dương**, nguyên tử **mất electron ở lớp ngoài cùng trước** (lớp $n$ lớn nhất), không phải bỏ theo thứ tự điền. Với kim loại chuyển tiếp, bỏ $4s$ trước rồi mới đến $3d$. Ví dụ $\\mathrm{Fe}: [\\mathrm{Ar}]3d^6 4s^2 \\to \\mathrm{Fe^{2+}}: [\\mathrm{Ar}]3d^6$ (bỏ 2 electron $4s$), $\\mathrm{Fe^{3+}}: [\\mathrm{Ar}]3d^5$.\n\nKhi tạo **ion âm**, nguyên tử nhận thêm electron vào phân lớp đang dở, ví dụ $\\mathrm{Cl}: [\\mathrm{Ne}]3s^2 3p^5 \\to \\mathrm{Cl^-}: [\\mathrm{Ne}]3s^2 3p^6$.\n\n## Vì sao quan trọng\n\nSố electron lớp ngoài cùng cho biết nguyên tố là kim loại (1–3e ngoài, dễ nhường), phi kim (5–7e, dễ nhận) hay khí hiếm (8e, bền).",
+      "formulas": [
+        "chemistry.thpt.nguyen-tu.cau-hinh-electron-ion",
+        "chemistry.thpt.nguyen-tu.quy-tac-hund",
+        "chemistry.thpt.nguyen-tu.quy-tac-klechkovski",
+        "chemistry.thpt.nguyen-tu.so-electron-toi-da-phan-lop",
+        "chemistry.thpt.nguyen-tu.the-tich-nguyen-tu"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Viết cấu hình electron của $\\mathrm{Fe}$ ($Z=26$) và của ion $\\mathrm{Fe^{3+}}$. Ion có bao nhiêu electron độc thân?",
+          "solution": "Điền theo trật tự năng lượng: $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$, viết gọn $[\\mathrm{Ar}]3d^6 4s^2$.\nTạo $\\mathrm{Fe^{3+}}$: bỏ **trước** 2 electron ở $4s$ (lớp ngoài cùng), rồi bỏ tiếp 1 electron ở $3d$, được $[\\mathrm{Ar}]3d^5$.\nPhân lớp $3d^5$ có 5 orbital, theo quy tắc Hund mỗi orbital 1 electron độc thân $\\Rightarrow$ 5 electron độc thân. Đây là lí do $\\mathrm{Fe^{3+}}$ khá bền (phân lớp $d$ bán bão hoà).",
+          "answer": "$\\mathrm{Fe}: [\\mathrm{Ar}]3d^6 4s^2$; $\\mathrm{Fe^{3+}}: [\\mathrm{Ar}]3d^5$, có 5 electron độc thân."
+        }
+      ],
+      "common_mistakes": [
+        "Bỏ electron ở phân lớp $3d$ trước $4s$ khi tạo ion dương — sai vì khi ion hoá, lớp có $n$ lớn nhất ($4s$) bị lấy trước dù nó được điền sau.",
+        "Điền $3d$ trước $4s$ khi viết cấu hình nguyên tử — sai vì lúc lấp đầy, $4s$ có mức năng lượng thấp hơn nên được điền trước.",
+        "Quên quy tắc Hund, ghép đôi electron ngay khi phân lớp chưa đầy — dẫn đến đếm sai số electron độc thân và sai tính chất từ."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "cau-hinh-electron",
+        "ion",
+        "quy-tac-hund",
+        "electron-hoa-tri"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nang-luong-ion-hoa",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 1: Cấu tạo nguyên tử",
+      "order": 3,
+      "title_vi": "Năng lượng ion hoá và cấu trúc lớp vỏ electron",
+      "title_en": "Ionisation energy and the electron shell structure",
+      "objectives": [
+        "Định nghĩa được năng lượng ion hoá thứ nhất và giải thích xu hướng biến đổi của nó",
+        "Vận dụng bước nhảy năng lượng ion hoá liên tiếp để suy ra số electron hoá trị và nhóm của nguyên tố"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cau-hinh-electron"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Năng lượng ion hoá thứ nhất",
+          "term_en": "First ionisation energy",
+          "definition": "Năng lượng tối thiểu cần để tách 1 electron ra khỏi nguyên tử khí ở trạng thái cơ bản, tạo ion $+1$."
+        },
+        {
+          "term_vi": "Bước nhảy năng lượng ion hoá",
+          "term_en": "Ionisation energy jump",
+          "definition": "Sự tăng vọt của $I_{k}$ khi bắt đầu tách electron thuộc lớp trong bền hơn, đánh dấu ranh giới lớp electron."
+        }
+      ],
+      "content": "## Năng lượng ion hoá đo điều gì\n\n**Năng lượng ion hoá thứ nhất** $I_1$ là năng lượng cần để bứt electron liên kết yếu nhất khỏi nguyên tử khí:\n\n$$\\mathrm{X}(g) \\to \\mathrm{X^+}(g) + e^-, \\quad \\Delta H = I_1 > 0$$\n\n$I_1$ càng lớn thì electron càng bị hạt nhân giữ chặt. Nó phản ánh trực tiếp lực hút hạt nhân lên electron ngoài cùng.\n\n## Xu hướng trong bảng tuần hoàn\n\nĐi từ trái sang phải trong một chu kì, điện tích hạt nhân tăng nhưng electron thêm vào cùng lớp, bán kính giảm nên $I_1$ **tăng**. Đi xuống một nhóm, lớp electron tăng, electron ngoài cùng xa hạt nhân và bị chắn nhiều hơn nên $I_1$ **giảm**. (Có vài bất thường nhỏ như từ nhóm IIA sang IIIA do cấu trúc phân lớp.)\n\n## Chìa khoá suy luận: bước nhảy $I_k$\n\nDãy $I_1 < I_2 < I_3 < \\dots$ luôn tăng vì tách electron khỏi ion dương ngày càng khó. Nhưng khi vừa tách hết electron hoá trị và bắt đầu chạm vào lớp trong (gần hạt nhân, rất bền), năng lượng **nhảy vọt**. Vị trí bước nhảy cho biết số electron lớp ngoài cùng, tức nhóm của nguyên tố.\n\nVí dụ nếu $I_1, I_2$ gần nhau rồi $I_3$ nhảy vọt, nguyên tố có 2 electron hoá trị $\\Rightarrow$ nhóm IIA (kim loại kiềm thổ).\n\n## Khi nào dùng\n\nĐề cho dãy $I_1$ đến $I_n$ và hỏi nhóm/tên nguyên tố: tìm chỗ tỉ số $I_{k+1}/I_k$ lớn bất thường, số electron hoá trị bằng $k$.",
+      "formulas": [
+        "chemistry.thpt.nguyen-tu.nang-luong-ion-hoa",
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-a",
+        "chemistry.thpt.bang-tuan-hoan.quy-luat-bien-doi",
+        "chemistry.thpt.nguyen-tu.dien-tich-hat-nhan",
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-b",
+        "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-hop-chat-khi-hidro"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một nguyên tố có các năng lượng ion hoá liên tiếp (kJ/mol): $I_1=738$, $I_2=1451$, $I_3=7733$, $I_4=10540$. Nguyên tố thuộc nhóm nào?",
+          "solution": "Xét các bước nhảy: từ $I_2$ sang $I_3$ tăng từ 1451 lên 7733, tức gấp hơn 5 lần — đây là bước nhảy lớn nhất. Bước nhảy xuất hiện **ngay sau khi tách 2 electron**, nghĩa là nguyên tố chỉ có 2 electron hoá trị ở lớp ngoài; electron thứ 3 phải lấy từ lớp trong bền nên rất tốn năng lượng.\nVậy nguyên tố có 2 electron lớp ngoài cùng $\\Rightarrow$ nhóm IIA. (Đây chính là dữ liệu của magnesium.)",
+          "answer": "Nhóm IIA (2 electron hoá trị)."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng năng lượng ion hoá luôn tăng đều nên bỏ qua bước nhảy — sai vì chính bước nhảy đột ngột (khi chạm lớp trong) mới là dấu hiệu xác định số electron hoá trị.",
+        "Kết luận $I_1$ giảm khi sang phải trong chu kì — sai vì sang phải điện tích hạt nhân tăng, bán kính giảm, electron bị giữ chặt hơn nên $I_1$ tăng."
+      ],
+      "duration_minutes": 35,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nang-luong-ion-hoa",
+        "xu-huong-tuan-hoan",
+        "electron-hoa-tri"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.bang-tuan-hoan-cau-tao",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 2: Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+      "order": 1,
+      "title_vi": "Cấu tạo bảng tuần hoàn và mối liên hệ với cấu hình electron",
+      "title_en": "Structure of the periodic table and its link to electron configuration",
+      "objectives": [
+        "Xác định được ô, chu kì, nhóm của nguyên tố từ cấu hình electron",
+        "Giải thích được vì sao số thứ tự chu kì bằng số lớp và số thứ tự nhóm A bằng số electron lớp ngoài cùng"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cau-hinh-electron"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Chu kì",
+          "term_en": "Period",
+          "definition": "Dãy các nguyên tố xếp theo chiều tăng điện tích hạt nhân, có cùng số lớp electron; số thứ tự chu kì bằng số lớp."
+        },
+        {
+          "term_vi": "Nhóm A",
+          "term_en": "Group A (main group)",
+          "definition": "Cột gồm các nguyên tố $s$ và $p$; số thứ tự nhóm A bằng số electron lớp ngoài cùng."
+        },
+        {
+          "term_vi": "Ô nguyên tố",
+          "term_en": "Element cell",
+          "definition": "Vị trí ứng với một nguyên tố; số thứ tự ô bằng số hiệu nguyên tử $Z$."
+        }
+      ],
+      "content": "## Bảng tuần hoàn là bản đồ của cấu hình electron\n\nMendeleev sắp nguyên tố theo khối lượng, nhưng bảng hiện đại sắp theo **số hiệu nguyên tử $Z$ tăng dần**. Sức mạnh của bảng nằm ở chỗ vị trí mỗi nguyên tố phản ánh trực tiếp cấu hình electron của nó.\n\n## Ba toạ độ và ba quy tắc\n\n- **Ô**: số thứ tự ô $=Z=$ số proton $=$ số electron của nguyên tử trung hoà.\n- **Chu kì**: số thứ tự chu kì $=$ số lớp electron. Ví dụ nguyên tố có lớp ngoài là lớp thứ 3 thì ở chu kì 3.\n- **Nhóm A**: số thứ tự nhóm A $=$ số electron lớp ngoài cùng (chỉ áp dụng cho nguyên tố nhóm A, tức khối $s$ và $p$).\n\n## Vì sao các quy tắc này đúng\n\nElectron điền lần lượt vào các lớp; khi bắt đầu một lớp mới ta bắt đầu một chu kì mới, nên số lớp bằng số chu kì là điều hiển nhiên. Tính chất hoá học do electron lớp ngoài cùng quyết định, nên các nguyên tố cùng số electron ngoài (cùng nhóm A) có tính chất tương tự — đó chính là **định luật tuần hoàn**.\n\n## Ví dụ vận dụng\n\nNguyên tố có cấu hình $1s^2 2s^2 2p^6 3s^2 3p^4$: có $Z=16$ (ô 16), lớp ngoài cùng là lớp 3 (chu kì 3), có $3s^2 3p^4$ tức 6 electron lớp ngoài (nhóm VIA). Đó là sulfur.\n\n## Khối d và ngoại lệ\n\nNguyên tố nhóm B (khối $d$) xác định nhóm theo số electron hoá trị $(n-1)d + ns$, không dùng quy tắc nhóm A.",
+      "formulas": [
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-o",
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-chu-ki",
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-a",
+        "chemistry.thpt.bang-tuan-hoan.cong-thuc-oxit-cao-nhat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nguyên tử X có cấu hình $1s^2 2s^2 2p^6 3s^2 3p^5$. Xác định vị trí (ô, chu kì, nhóm) và cho biết công thức oxit cao nhất.",
+          "solution": "Đếm tổng electron: $2+2+6+2+5=17 \\Rightarrow Z=17$, ô số 17.\nLớp ngoài cùng là lớp 3 $\\Rightarrow$ chu kì 3.\nElectron lớp ngoài $3s^2 3p^5 = 7 \\Rightarrow$ nhóm VIIA.\nNhóm VIIA có hoá trị cao nhất với oxi là 7, nên oxit cao nhất là $\\mathrm{X_2O_7}$ (ứng với chlorine: $\\mathrm{Cl_2O_7}$).",
+          "answer": "Ô 17, chu kì 3, nhóm VIIA; oxit cao nhất $\\mathrm{X_2O_7}$."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng quy tắc số thứ tự nhóm A cho nguyên tố khối $d$ — sai vì nguyên tố nhóm B xác định nhóm theo số electron hoá trị $(n-1)d\\,ns$, không phải số electron lớp ngoài cùng.",
+        "Đếm số lớp bằng số phân lớp — sai vì chu kì bằng số **lớp** (số $n$ lớn nhất), không phải số phân lớp $s,p,d$.",
+        "Lấy nguyên tử khối làm số thứ tự ô — sai vì ô nguyên tố bằng $Z$ (số proton), không bằng khối lượng."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "bang-tuan-hoan",
+        "chu-ki",
+        "nhom",
+        "cau-hinh-electron"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.quy-luat-bien-doi-tuan-hoan",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 2: Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+      "order": 2,
+      "title_vi": "Quy luật biến đổi tính chất trong chu kì và nhóm",
+      "title_en": "Periodic trends within periods and groups",
+      "objectives": [
+        "So sánh được bán kính nguyên tử, độ âm điện, tính kim loại - phi kim theo chu kì và nhóm",
+        "Giải thích được sự biến đổi tính axit - bazơ của oxit và hydroxide theo vị trí nguyên tố"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.bang-tuan-hoan-cau-tao",
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nang-luong-ion-hoa"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bán kính nguyên tử",
+          "term_en": "Atomic radius",
+          "definition": "Khoảng cách trung bình từ hạt nhân đến electron ngoài cùng; giảm sang phải trong chu kì, tăng xuống dưới trong nhóm."
+        },
+        {
+          "term_vi": "Độ âm điện",
+          "term_en": "Electronegativity",
+          "definition": "Khả năng hút electron liên kết về phía mình của một nguyên tử; tăng sang phải, giảm xuống dưới."
+        },
+        {
+          "term_vi": "Tính kim loại - phi kim",
+          "term_en": "Metallic - non-metallic character",
+          "definition": "Xu hướng nhường (kim loại) hay nhận (phi kim) electron; tính kim loại tăng xuống dưới và sang trái."
+        }
+      ],
+      "content": "## Một nguyên nhân, nhiều hệ quả\n\nGần như mọi xu hướng tuần hoàn đều bắt nguồn từ cuộc kéo co giữa **điện tích hạt nhân hiệu dụng $Z_{eff}$** (kéo electron vào) và **hiệu ứng chắn cùng số lớp** (đẩy electron ra).\n\n## Trong một chu kì (trái $\\to$ phải)\n\n$Z$ tăng, electron thêm vào cùng lớp nên chắn không tăng mấy $\\Rightarrow Z_{eff}$ tăng. Hệ quả:\n- Bán kính **giảm**;\n- Độ âm điện và năng lượng ion hoá **tăng**;\n- Tính kim loại **giảm**, tính phi kim **tăng**.\n\n## Trong một nhóm A (trên $\\to$ dưới)\n\nThêm một lớp electron, electron ngoài xa hạt nhân và bị chắn mạnh $\\Rightarrow$ lực hút yếu đi. Hệ quả:\n- Bán kính **tăng**;\n- Độ âm điện, năng lượng ion hoá **giảm**;\n- Tính kim loại **tăng**.\n\n## Hệ quả về oxit và hydroxide\n\nTính phi kim mạnh đi kèm oxit và hydroxide có tính **axit** mạnh; tính kim loại mạnh đi kèm oxit, hydroxide có tính **bazơ** mạnh. Vì thế trong một chu kì, đi sang phải oxit cao nhất chuyển dần từ bazơ (Na$_2$O) sang lưỡng tính (Al$_2$O$_3$) rồi sang axit (SO$_3$, Cl$_2$O$_7$).\n\n## Khi nào dùng\n\nGặp câu so sánh bán kính, độ âm điện hay tính axit - bazơ: quy về vị trí trong bảng, rồi áp hai xu hướng trên. Chú ý ion: cùng số electron thì ion nào nhiều proton hơn sẽ nhỏ hơn.",
+      "formulas": [
+        "chemistry.thpt.bang-tuan-hoan.quy-luat-bien-doi",
+        "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-oxit-cao-nhat",
+        "chemistry.thpt.bang-tuan-hoan.cong-thuc-oxit-cao-nhat",
+        "chemistry.thpt.bang-tuan-hoan.hoa-tri-cao-nhat-voi-oxi",
+        "chemistry.thpt.bang-tuan-hoan.cong-thuc-hop-chat-khi-voi-hidro"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Sắp xếp theo chiều bán kính tăng dần: $\\mathrm{Na, Mg, K}$. Giải thích.",
+          "solution": "Na và Mg cùng chu kì 3; Mg ở bên phải Na nên $Z_{eff}$ lớn hơn, bán kính Mg nhỏ hơn Na. K ở ngay dưới Na (nhóm IA, chu kì 4) nên thêm một lớp, bán kính lớn hơn Na. Vậy thứ tự tăng dần: $\\mathrm{Mg} < \\mathrm{Na} < \\mathrm{K}$.",
+          "answer": "$\\mathrm{Mg} < \\mathrm{Na} < \\mathrm{K}$."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng bán kính tăng sang phải trong chu kì — sai vì $Z_{eff}$ tăng làm electron bị kéo vào, bán kính giảm dần sang phải.",
+        "So sánh độ âm điện chỉ theo khối lượng nguyên tử — sai vì độ âm điện phụ thuộc vị trí (chu kì, nhóm) và $Z_{eff}$, không phụ thuộc trực tiếp khối lượng.",
+        "Kết luận oxit của mọi nguyên tố cùng chu kì đều cùng tính axit hay bazơ — sai vì tính axit - bazơ của oxit biến đổi dần theo tính kim loại - phi kim khi đi ngang chu kì."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "quy-luat-tuan-hoan",
+        "ban-kinh",
+        "do-am-dien",
+        "tinh-axit-bazo"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.do-am-dien-va-lien-ket",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 3: Liên kết hoá học",
+      "order": 1,
+      "title_vi": "Độ âm điện và phân loại liên kết hoá học",
+      "title_en": "Electronegativity and classification of chemical bonds",
+      "objectives": [
+        "Vận dụng hiệu độ âm điện để phân loại liên kết cộng hoá trị không cực, có cực và liên kết ion",
+        "Giải thích được sự hình thành liên kết theo quy tắc octet"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.quy-luat-bien-doi-tuan-hoan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Liên kết ion",
+          "term_en": "Ionic bond",
+          "definition": "Liên kết hình thành do lực hút tĩnh điện giữa các ion trái dấu, thường giữa kim loại điển hình và phi kim điển hình."
+        },
+        {
+          "term_vi": "Liên kết cộng hoá trị",
+          "term_en": "Covalent bond",
+          "definition": "Liên kết hình thành bằng cặp electron dùng chung giữa hai nguyên tử."
+        },
+        {
+          "term_vi": "Quy tắc octet",
+          "term_en": "Octet rule",
+          "definition": "Xu hướng nguyên tử đạt 8 electron lớp ngoài cùng (giống khí hiếm) khi tạo liên kết."
+        }
+      ],
+      "content": "## Liên kết là gì và vì sao hình thành\n\nNguyên tử liên kết để đạt cấu hình bền của khí hiếm (**quy tắc octet**, 8 electron lớp ngoài, riêng H và Li hướng tới 2). Cách đạt octet quyết định loại liên kết.\n\n## Thang phân loại theo hiệu độ âm điện\n\nĐặt $\\Delta\\chi = |\\chi_A - \\chi_B|$ là hiệu độ âm điện hai nguyên tử. Quy ước phổ biến trong sách GDPT:\n\n$$\\begin{cases}\\Delta\\chi < 0{,}4: & \\text{cộng hoá trị không cực}\\\\ 0{,}4 \\le \\Delta\\chi < 1{,}7: & \\text{cộng hoá trị có cực}\\\\ \\Delta\\chi \\ge 1{,}7: & \\text{liên kết ion}\\end{cases}$$\n\nÝ nghĩa: chênh lệch càng lớn thì cặp electron càng bị kéo lệch hẳn về nguyên tử âm điện hơn; khi lệch đủ mạnh, electron chuyển hẳn tạo ion.\n\n## Đọc kĩ: phân loại chỉ là gần đúng\n\nRanh giới $1{,}7$ không tuyệt đối. HF có $\\Delta\\chi \\approx 1{,}9$ nhưng vẫn được xem là cộng hoá trị phân cực mạnh (phân tử tồn tại độc lập). Vì thế cần kết hợp thêm bản chất nguyên tố: kim loại điển hình + phi kim điển hình mới cho ion thực sự.\n\n## Cực của liên kết và của phân tử\n\nLiên kết có cực chưa chắc làm phân tử phân cực. $\\mathrm{CO_2}$ có hai liên kết C=O phân cực nhưng thẳng hàng, đối xứng nên mô men lưỡng cực triệt tiêu $\\Rightarrow$ phân tử không cực. Đây là cầu nối sang bài hình học phân tử.\n\n## Khi nào dùng\n\nĐề cho giá trị độ âm điện và hỏi loại liên kết: tính $\\Delta\\chi$ rồi tra thang; đồng thời kiểm tra xem có phải kim loại + phi kim điển hình không.",
+      "formulas": [
+        "chemistry.thpt.lien-ket.hieu-do-am-dien",
+        "chemistry.thpt.lien-ket.quy-tac-octet",
+        "chemistry.thpt.lien-ket.do-dai-lien-ket",
+        "chemistry.thpt.lien-ket.nang-luong-lien-ket"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho độ âm điện: $\\mathrm{Na}=0{,}93$, $\\mathrm{Cl}=3{,}16$, $\\mathrm{H}=2{,}20$, $\\mathrm{O}=3{,}44$. Phân loại liên kết trong $\\mathrm{NaCl}$ và trong liên kết $\\mathrm{O-H}$ của nước.",
+          "solution": "NaCl: $\\Delta\\chi = 3{,}16-0{,}93 = 2{,}23 \\ge 1{,}7$, lại là kim loại điển hình + phi kim điển hình $\\Rightarrow$ liên kết ion.\nO-H: $\\Delta\\chi = 3{,}44-2{,}20 = 1{,}24$, nằm trong $[0{,}4;1{,}7)$ $\\Rightarrow$ cộng hoá trị có cực. Cặp electron lệch về phía O.",
+          "answer": "NaCl: liên kết ion; O-H: cộng hoá trị có cực."
+        }
+      ],
+      "common_mistakes": [
+        "Kết luận cứ $\\Delta\\chi \\ge 1{,}7$ là liên kết ion mà không xét bản chất nguyên tố — sai vì HF có $\\Delta\\chi\\approx1{,}9$ vẫn là cộng hoá trị phân cực; ion thực sự cần kim loại điển hình kết hợp phi kim điển hình.",
+        "Đồng nhất liên kết có cực với phân tử có cực — sai vì hình học đối xứng (như $\\mathrm{CO_2}$) có thể triệt tiêu mô men lưỡng cực của các liên kết cực.",
+        "Bỏ qua quy tắc octet khi lí giải liên kết — sai vì chính xu hướng đạt 8 electron lớp ngoài là động lực hình thành cả liên kết ion lẫn cộng hoá trị."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "lien-ket-hoa-hoc",
+        "do-am-dien",
+        "lien-ket-ion",
+        "cong-hoa-tri"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.so-oxi-hoa",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 3: Liên kết hoá học",
+      "order": 2,
+      "title_vi": "Số oxi hoá và quy tắc xác định",
+      "title_en": "Oxidation number and rules for assigning it",
+      "objectives": [
+        "Xác định được số oxi hoá của nguyên tố trong phân tử và ion theo quy tắc",
+        "Phân biệt được số oxi hoá với hoá trị và điện tích ion"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.do-am-dien-va-lien-ket"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Số oxi hoá",
+          "term_en": "Oxidation number",
+          "definition": "Điện tích quy ước của nguyên tử nếu giả định mọi liên kết trong phân tử đều là liên kết ion."
+        },
+        {
+          "term_vi": "Quy tắc tổng số oxi hoá",
+          "term_en": "Sum rule",
+          "definition": "Tổng số oxi hoá của các nguyên tử trong một phân tử trung hoà bằng 0, trong một ion bằng điện tích của ion."
+        }
+      ],
+      "content": "## Số oxi hoá dùng để làm gì\n\nSố oxi hoá là công cụ **kế toán electron**: nó cho biết một nguyên tử \"giữ\" nhiều hay ít electron hơn so với trạng thái tự do, nhờ đó nhận diện chất khử, chất oxi hoá và cân bằng phản ứng oxi hoá - khử.\n\n## Bộ quy tắc theo thứ tự ưu tiên\n\n1. Đơn chất: số oxi hoá $=0$ (ví dụ $\\mathrm{O_2, Fe, Cl_2}$).\n2. Ion đơn nguyên tử: số oxi hoá $=$ điện tích ion ($\\mathrm{Na^+}$ là $+1$, $\\mathrm{S^{2-}}$ là $-2$).\n3. Trong hợp chất, thường: H là $+1$ (trừ hydride kim loại $-1$), O là $-2$ (trừ peroxide $-1$, $\\mathrm{OF_2}$ là $+2$), kim loại kiềm $+1$, kiềm thổ $+2$, F luôn $-1$.\n4. **Quy tắc chốt**: tổng số oxi hoá trong phân tử trung hoà $=0$; trong ion $=$ điện tích ion.\n\n## Cách tính nhanh\n\nGán số oxi hoá cho các nguyên tố đã biết (H, O, kim loại...), đặt ẩn cho nguyên tố cần tìm rồi dùng quy tắc chốt để lập phương trình.\n\n## Đừng nhầm ba khái niệm\n\n- **Số oxi hoá** có dấu, tính theo quy ước ion; có thể là số âm, dương hoặc phân số trung bình (như C trong $\\mathrm{C_3O_2}$).\n- **Hoá trị** (cộng hoá trị) là số liên kết, không mang dấu.\n- **Điện tích ion** là điện tích thực của tiểu phân.\n\nVí dụ trong $\\mathrm{H_2O}$: O có số oxi hoá $-2$ nhưng cộng hoá trị là 2 (hai liên kết O-H).\n\n## Khi nào dùng\n\nTrước khi cân bằng phản ứng oxi hoá - khử hoặc gọi tên hợp chất theo hoá trị, luôn xác định số oxi hoá của nguyên tố trung tâm.",
+      "formulas": [
+        "chemistry.thpt.lien-ket.so-oxi-hoa-trong-phan-tu",
+        "chemistry.thpt.lien-ket.so-oxi-hoa-trong-ion",
+        "chemistry.thpt.oxi-hoa-khu.chat-khu-chat-oxi-hoa"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Xác định số oxi hoá của Mn trong $\\mathrm{KMnO_4}$ và của S trong ion $\\mathrm{SO_4^{2-}}$.",
+          "solution": "KMnO$_4$: K là $+1$, O là $-2$. Đặt Mn là $x$. Tổng bằng 0: $(+1)+x+4(-2)=0 \\Rightarrow x-7=0 \\Rightarrow x=+7$.\n$\\mathrm{SO_4^{2-}}$: O là $-2$, đặt S là $y$. Tổng bằng điện tích ion $-2$: $y+4(-2)=-2 \\Rightarrow y-8=-2 \\Rightarrow y=+6$.\nVậy Mn có số oxi hoá $+7$ (cao nhất, nên $\\mathrm{KMnO_4}$ là chất oxi hoá mạnh), S là $+6$.",
+          "answer": "Mn: $+7$; S: $+6$."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy tổng số oxi hoá trong ion bằng 0 — sai vì với ion, tổng phải bằng **điện tích ion**, chỉ phân tử trung hoà mới bằng 0.",
+        "Cho O luôn là $-2$ trong mọi hợp chất — sai vì trong peroxide ($\\mathrm{H_2O_2}$) O là $-1$ và trong $\\mathrm{OF_2}$ O là $+2$.",
+        "Nhầm số oxi hoá với hoá trị — sai vì số oxi hoá có dấu và tính theo quy ước ion, còn hoá trị (cộng hoá trị) là số liên kết không mang dấu."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "so-oxi-hoa",
+        "lien-ket-hoa-hoc",
+        "oxi-hoa-khu"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.vsepr-lai-hoa",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 3: Liên kết hoá học",
+      "order": 3,
+      "title_vi": "Hình học phân tử: mô hình VSEPR và lai hoá orbital",
+      "title_en": "Molecular geometry: VSEPR model and orbital hybridisation",
+      "objectives": [
+        "Dự đoán được dạng hình học của phân tử đơn giản bằng mô hình VSEPR",
+        "Xác định được trạng thái lai hoá của nguyên tử trung tâm và liên hệ với hình học phân tử"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.do-am-dien-va-lien-ket"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Mô hình VSEPR",
+          "term_en": "VSEPR model",
+          "definition": "Mô hình cho rằng các cặp electron quanh nguyên tử trung tâm đẩy nhau nên sắp xếp cách xa nhau nhất, quyết định hình dạng phân tử."
+        },
+        {
+          "term_vi": "Lai hoá",
+          "term_en": "Hybridisation",
+          "definition": "Sự tổ hợp các orbital nguyên tử ($s, p$) thành các orbital lai hoá tương đương định hướng theo hình học phân tử: $sp$ thẳng, $sp^2$ tam giác phẳng, $sp^3$ tứ diện."
+        }
+      ],
+      "content": "## Vì sao phân tử có hình dạng xác định\n\nCác cặp electron hoá trị quanh nguyên tử trung tâm mang điện âm nên **đẩy nhau**. Chúng tự sắp để tổng lực đẩy nhỏ nhất, tức nằm cách xa nhau nhất trong không gian. Đó là ý tưởng của mô hình **VSEPR**.\n\n## Đếm miền electron\n\nĐếm số **miền electron** quanh nguyên tử trung tâm = số nguyên tử liên kết + số cặp electron riêng (một liên kết đôi, ba vẫn tính là **một** miền vì cùng nằm một hướng):\n\n$$\\begin{array}{lll}\\text{2 miền} & \\to sp & \\text{thẳng }180^\\circ\\\\ \\text{3 miền} & \\to sp^2 & \\text{tam giác phẳng }120^\\circ\\\\ \\text{4 miền} & \\to sp^3 & \\text{tứ diện }109{,}5^\\circ\\end{array}$$\n\n## Cặp electron riêng bẻ cong góc\n\nCặp riêng đẩy mạnh hơn cặp liên kết nên ép các liên kết lại gần nhau. $\\mathrm{CH_4}$ (4 cặp liên kết) là tứ diện đều $109{,}5^\\circ$; $\\mathrm{NH_3}$ (3 liên kết + 1 cặp riêng) là chóp tam giác, góc còn $107^\\circ$; $\\mathrm{H_2O}$ (2 liên kết + 2 cặp riêng) gấp khúc, góc còn $104{,}5^\\circ$. Cả ba đều lai hoá $sp^3$ nhưng hình dạng khác nhau vì số cặp riêng khác nhau.\n\n## Lai hoá giải thích điều VSEPR mô tả\n\nĐể tạo các liên kết hướng đúng theo hình học, nguyên tử trung tâm trộn orbital $s$ và $p$ thành orbital lai hoá tương đương. Số orbital lai hoá bằng số miền electron.\n\n## Khi nào dùng\n\nMuốn biết dạng phân tử hay góc liên kết: viết Lewis, đếm miền electron của nguyên tử trung tâm, suy ra lai hoá và hình dạng, cuối cùng chỉnh góc theo số cặp riêng.",
+      "formulas": [
+        "chemistry.thpt.lien-ket.so-cap-electron-va-lai-hoa",
+        "chemistry.thpt.lien-ket.so-lien-ket-sigma-va-pi",
+        "chemistry.thpt.lien-ket.quy-tac-octet"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Xác định trạng thái lai hoá và dạng hình học của C trong $\\mathrm{CO_2}$ và của N trong $\\mathrm{NH_3}$.",
+          "solution": "$\\mathrm{CO_2}$: cấu trúc O=C=O, C có 2 nguyên tử liên kết, 0 cặp riêng $\\Rightarrow$ 2 miền electron $\\Rightarrow$ lai hoá $sp$, phân tử **thẳng** $180^\\circ$ (lưu ý mỗi liên kết đôi chỉ tính 1 miền).\n$\\mathrm{NH_3}$: N có 3 liên kết N-H và 1 cặp electron riêng $\\Rightarrow$ 4 miền $\\Rightarrow$ lai hoá $sp^3$. Nhưng có 1 cặp riêng nên dạng là **chóp tam giác**, không phải tứ diện đều; góc H-N-H $\\approx 107^\\circ$.",
+          "answer": "C trong $\\mathrm{CO_2}$: lai hoá $sp$, thẳng; N trong $\\mathrm{NH_3}$: lai hoá $sp^3$, chóp tam giác."
+        }
+      ],
+      "common_mistakes": [
+        "Tính mỗi liên kết đôi hay ba là hai, ba miền electron — sai vì các liên kết bội cùng nằm về một hướng nên chỉ tính **một** miền khi xác định hình học.",
+        "Cho rằng $\\mathrm{NH_3}$ và $\\mathrm{H_2O}$ là tứ diện đều vì đều lai hoá $sp^3$ — sai vì cặp electron riêng chiếm chỗ và đẩy mạnh, làm phân tử thành chóp hoặc gấp khúc với góc nhỏ hơn $109{,}5^\\circ$.",
+        "Quên cặp electron riêng khi đếm miền — dẫn đến dự đoán sai lai hoá và góc liên kết."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "nang-cao",
+      "tags": [
+        "vsepr",
+        "lai-hoa",
+        "hinh-hoc-phan-tu",
+        "lien-ket-hoa-hoc"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.oxi-hoa-khu-thang-bang-electron",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 4: Phản ứng oxi hoá - khử",
+      "order": 1,
+      "title_vi": "Phản ứng oxi hoá - khử và phương pháp thăng bằng electron",
+      "title_en": "Redox reactions and the electron-balance method",
+      "objectives": [
+        "Xác định được chất oxi hoá, chất khử, quá trình oxi hoá và quá trình khử dựa vào sự thay đổi số oxi hoá",
+        "Cân bằng được phương trình phản ứng oxi hoá - khử bằng phương pháp thăng bằng electron"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.so-oxi-hoa"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Chất khử",
+          "term_en": "Reducing agent",
+          "definition": "Chất nhường electron, có số oxi hoá tăng sau phản ứng."
+        },
+        {
+          "term_vi": "Chất oxi hoá",
+          "term_en": "Oxidising agent",
+          "definition": "Chất nhận electron, có số oxi hoá giảm sau phản ứng."
+        },
+        {
+          "term_vi": "Thăng bằng electron",
+          "term_en": "Electron balance",
+          "definition": "Nguyên tắc: tổng số electron chất khử nhường bằng tổng số electron chất oxi hoá nhận."
+        }
+      ],
+      "content": "## Bản chất của phản ứng oxi hoá - khử\n\nĐây là phản ứng có **sự chuyển electron**, biểu hiện qua thay đổi số oxi hoá. Chất **khử** nhường electron (số oxi hoá tăng), chất **oxi hoá** nhận electron (số oxi hoá giảm). Mẹo nhớ: \"khử cho, o nhận\" — chất khử cho electron, chất oxi hoá nhận.\n\n## Định luật nền tảng: bảo toàn electron\n\nElectron không tự sinh ra hay mất đi, nên:\n\n$$\\sum n_{e}\\,(\\text{cho}) = \\sum n_{e}\\,(\\text{nhận})$$\n\nĐây vừa là nguyên tắc cân bằng, vừa là công cụ giải nhanh mọi bài toán oxi hoá - khử.\n\n## Bốn bước thăng bằng electron\n\n1. Xác định số oxi hoá, tìm nguyên tố thay đổi.\n2. Viết quá trình oxi hoá và quá trình khử, ghi số electron trao đổi.\n3. Tìm hệ số sao cho electron cho $=$ electron nhận (nhân chéo, lấy bội chung).\n4. Đặt hệ số vào phương trình phân tử, cân bằng các nguyên tố còn lại (thường theo thứ tự: kim loại, phi kim, H, kiểm tra O).\n\n## Ví dụ mạch tư duy\n\nVới $\\mathrm{Cu + HNO_3 \\to Cu(NO_3)_2 + NO + H_2O}$: Cu từ $0 \\to +2$ (cho 2e), N từ $+5 \\to +2$ (nhận 3e). Bội chung của 2 và 3 là 6 nên $\\times3$ cho Cu, $\\times2$ cho N: $3\\mathrm{Cu} + 8\\mathrm{HNO_3} \\to 3\\mathrm{Cu(NO_3)_2} + 2\\mathrm{NO} + 4\\mathrm{H_2O}$.\n\n## Khi nào dùng\n\nBài định lượng kim loại tác dụng axit, điện phân, nhiệt luyện... đều quy về bảo toàn electron mà không cần viết đủ phương trình.",
+      "formulas": [
+        "chemistry.thpt.oxi-hoa-khu.thang-bang-electron",
+        "chemistry.thpt.oxi-hoa-khu.chat-khu-chat-oxi-hoa",
+        "chemistry.thpt.oxi-hoa-khu.so-mol-electron-trao-doi",
+        "chemistry.thpt.bao-toan.bao-toan-electron",
+        "chemistry.thpt.bao-toan.hieu-suat-theo-chat-phan-ung",
+        "chemistry.thpt.oxi-hoa-khu.can-bang-dien-tich-nua-phan-ung"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cân bằng phản ứng $\\mathrm{Fe + HNO_3 \\to Fe(NO_3)_3 + NO + H_2O}$ bằng thăng bằng electron.",
+          "solution": "Xác định thay đổi: Fe từ $0 \\to +3$, quá trình oxi hoá cho 3e; N từ $+5 \\to +2$, quá trình khử nhận 3e.\nSố electron cho và nhận đã bằng nhau (3 = 3) nên hệ số 1 : 1 cho Fe và NO.\nĐặt vào phương trình: $\\mathrm{Fe} + 4\\mathrm{HNO_3} \\to \\mathrm{Fe(NO_3)_3} + \\mathrm{NO} + 2\\mathrm{H_2O}$.\nKiểm tra N: vế phải có $3+1=4$ N, khớp $4\\mathrm{HNO_3}$; H: $4=2\\times2$; O: $12=9+1+2$ đúng.",
+          "answer": "$\\mathrm{Fe} + 4\\mathrm{HNO_3} \\to \\mathrm{Fe(NO_3)_3} + \\mathrm{NO} + 2\\mathrm{H_2O}$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm chất khử với chất oxi hoá — sai vì chất khử là chất **cho** electron (số oxi hoá tăng), dễ lẫn với tên gọi.",
+        "Chỉ cân bằng số nguyên tử mà quên cân bằng electron cho - nhận — dẫn đến hệ số sai với phản ứng oxi hoá - khử phức tạp.",
+        "Bỏ sót $\\mathrm{HNO_3}$ đóng vai trò môi trường (tạo muối nitrat) khi đếm hệ số axit — làm sai số mol axit phản ứng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "oxi-hoa-khu",
+        "thang-bang-electron",
+        "bao-toan-electron"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.enthalpy-nhiet-tao-thanh",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 5: Năng lượng hoá học",
+      "order": 1,
+      "title_vi": "Biến thiên enthalpy của phản ứng theo nhiệt tạo thành",
+      "title_en": "Reaction enthalpy from standard enthalpies of formation",
+      "objectives": [
+        "Nêu được ý nghĩa của biến thiên enthalpy chuẩn và dấu của nó với phản ứng thu, toả nhiệt",
+        "Tính được biến thiên enthalpy của phản ứng từ nhiệt tạo thành chuẩn của các chất"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Biến thiên enthalpy",
+          "term_en": "Enthalpy change",
+          "definition": "Nhiệt lượng phản ứng trao đổi ở áp suất không đổi, kí hiệu $\\Delta_r H^\\circ_{298}$; âm là toả nhiệt, dương là thu nhiệt."
+        },
+        {
+          "term_vi": "Nhiệt tạo thành chuẩn",
+          "term_en": "Standard enthalpy of formation",
+          "definition": "Biến thiên enthalpy khi tạo 1 mol chất từ các đơn chất bền ở điều kiện chuẩn; đơn chất bền có $\\Delta_f H^\\circ = 0$."
+        }
+      ],
+      "content": "## Phản ứng kèm theo trao đổi nhiệt\n\nMọi phản ứng đều kèm hấp thụ hoặc giải phóng năng lượng. Ở áp suất không đổi, nhiệt đó chính là **biến thiên enthalpy** $\\Delta_r H^\\circ_{298}$. Quy ước dấu:\n- $\\Delta_r H < 0$: phản ứng **toả nhiệt** (giải phóng năng lượng);\n- $\\Delta_r H > 0$: phản ứng **thu nhiệt**.\n\n## Nhiệt tạo thành chuẩn — điểm mốc chung\n\nĐể so sánh, ta chọn mốc: **nhiệt tạo thành chuẩn** $\\Delta_f H^\\circ$ là nhiệt khi tạo 1 mol chất từ các đơn chất ở dạng bền nhất, tại điều kiện chuẩn (298 K, 1 bar). Đơn chất bền (như $\\mathrm{O_2, N_2, C\\,(graphite)}$) có $\\Delta_f H^\\circ = 0$.\n\n## Công thức tính enthalpy phản ứng\n\nVì enthalpy là hàm trạng thái, ta lấy \"sản phẩm trừ chất đầu\":\n\n$$\\Delta_r H^\\circ = \\sum \\Delta_f H^\\circ_{\\text{sản phẩm}} - \\sum \\Delta_f H^\\circ_{\\text{chất đầu}}$$\n\nnhớ nhân với hệ số tỉ lượng của mỗi chất trong phương trình.\n\n## Đọc kĩ trạng thái chất\n\nPhải dùng đúng $\\Delta_f H^\\circ$ theo **trạng thái** ghi trong phương trình. Nước lỏng và hơi nước có nhiệt tạo thành khác nhau ($-285{,}8$ so với $-241{,}8$ kJ/mol); dùng nhầm sẽ lệch kết quả hàng chục kJ.\n\n## Khi nào dùng\n\nĐề cho bảng $\\Delta_f H^\\circ$ các chất và yêu cầu tính nhiệt phản ứng: áp thẳng công thức \"sản phẩm trừ chất đầu\", chú ý hệ số và trạng thái.",
+      "formulas": [
+        "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh",
+        "chemistry.thpt.nhiet-hoa.nhiet-tao-thanh-chuan",
+        "chemistry.thpt.nhiet-hoa.dau-cua-bien-thien-enthalpy"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\Delta_r H^\\circ$ của phản ứng đốt cháy methane $\\mathrm{CH_4(g) + 2O_2(g) \\to CO_2(g) + 2H_2O(l)}$. Cho $\\Delta_f H^\\circ$ (kJ/mol): $\\mathrm{CH_4}=-74{,}8$; $\\mathrm{CO_2}=-393{,}5$; $\\mathrm{H_2O(l)}=-285{,}8$; $\\mathrm{O_2}=0$.",
+          "solution": "Áp dụng \"sản phẩm trừ chất đầu\", nhân hệ số:\n$\\Delta_r H^\\circ = [(-393{,}5) + 2\\times(-285{,}8)] - [(-74{,}8) + 2\\times 0]$\n$= (-393{,}5 - 571{,}6) - (-74{,}8) = -965{,}1 + 74{,}8 = -890{,}3$ kJ.\nDấu âm khẳng định đốt cháy methane là phản ứng toả nhiệt mạnh. Lưu ý nước ở thể lỏng; nếu là hơi nước kết quả sẽ khác.",
+          "answer": "$\\Delta_r H^\\circ = -890{,}3$ kJ (toả nhiệt)."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy \"chất đầu trừ sản phẩm\" — sai dấu vì công thức đúng là tổng nhiệt tạo thành sản phẩm trừ tổng của chất đầu.",
+        "Dùng nhiệt tạo thành của nước lỏng khi phương trình ghi hơi nước (hoặc ngược lại) — sai vì $\\Delta_f H^\\circ$ phụ thuộc trạng thái, chênh nhau khoảng $44$ kJ/mol.",
+        "Quên nhân hệ số tỉ lượng vào nhiệt tạo thành mỗi chất — làm sai tổng năng lượng."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nhiet-hoa-hoc",
+        "enthalpy",
+        "nhiet-tao-thanh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.enthalpy-nang-luong-lien-ket-hess",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 5: Năng lượng hoá học",
+      "order": 2,
+      "title_vi": "Tính enthalpy theo năng lượng liên kết và định luật Hess",
+      "title_en": "Reaction enthalpy from bond energies and Hess's law",
+      "objectives": [
+        "Tính được biến thiên enthalpy của phản ứng ở thể khí từ năng lượng liên kết",
+        "Vận dụng định luật Hess để tính enthalpy của phản ứng qua các phản ứng trung gian"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.enthalpy-nhiet-tao-thanh"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Năng lượng liên kết",
+          "term_en": "Bond energy",
+          "definition": "Năng lượng cần để phá vỡ 1 mol liên kết ở thể khí; phá liên kết thu nhiệt, tạo liên kết toả nhiệt."
+        },
+        {
+          "term_vi": "Định luật Hess",
+          "term_en": "Hess's law",
+          "definition": "Biến thiên enthalpy của một phản ứng chỉ phụ thuộc trạng thái đầu và cuối, không phụ thuộc đường đi."
+        }
+      ],
+      "content": "## Cách nhìn thứ hai: phá và tạo liên kết\n\nPhản ứng thực chất là **phá liên kết cũ** (tốn năng lượng, thu nhiệt) rồi **tạo liên kết mới** (giải phóng năng lượng, toả nhiệt). Với phản ứng ở thể khí, khi biết năng lượng liên kết $E_b$:\n\n$$\\Delta_r H^\\circ = \\sum E_b(\\text{liên kết bị phá}) - \\sum E_b(\\text{liên kết tạo thành})$$\n\nHãy nhớ chiều: **phá trừ tạo** (ngược với công thức nhiệt tạo thành là \"sản phẩm trừ chất đầu\"). Công thức này chỉ dùng cho chất khí vì năng lượng liên kết định nghĩa ở thể khí.\n\n## Định luật Hess: đi vòng vẫn tới đích\n\nVì enthalpy là hàm trạng thái, ta có thể cộng đại số các phản ứng trung gian để suy ra phản ứng đích. Quy tắc thao tác:\n- Đảo chiều một phản ứng $\\Rightarrow$ đổi dấu $\\Delta H$;\n- Nhân một phản ứng với hệ số $k$ $\\Rightarrow$ nhân $\\Delta H$ với $k$;\n- Cộng các phản ứng lại $\\Rightarrow$ cộng các $\\Delta H$.\n\n## Vì sao Hess hữu ích\n\nNhiều phản ứng khó đo nhiệt trực tiếp (ví dụ $\\mathrm{C + \\tfrac12 O_2 \\to CO}$ luôn kèm tạo $\\mathrm{CO_2}$). Hess cho phép tính gián tiếp qua các phản ứng đo được.\n\n## Khi nào dùng cái nào\n\n- Có bảng $\\Delta_f H^\\circ$: dùng công thức nhiệt tạo thành.\n- Có bảng năng lượng liên kết và mọi chất là khí: dùng công thức năng lượng liên kết.\n- Cho vài phản ứng trung gian: ghép Hess.",
+      "formulas": [
+        "chemistry.thpt.nhiet-hoa.enthalpy-theo-nang-luong-lien-ket",
+        "chemistry.thpt.nhiet-hoa.dinh-luat-hess",
+        "chemistry.thpt.nhiet-hoa.enthalpy-phan-ung-nghich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho phản ứng $\\mathrm{H_2(g) + Cl_2(g) \\to 2HCl(g)}$. Năng lượng liên kết (kJ/mol): $E_{H-H}=436$; $E_{Cl-Cl}=243$; $E_{H-Cl}=431$. Tính $\\Delta_r H^\\circ$.",
+          "solution": "Phá liên kết chất đầu: 1 liên kết H-H và 1 liên kết Cl-Cl, tổng $436+243=679$ kJ (thu nhiệt).\nTạo liên kết sản phẩm: 2 liên kết H-Cl, tổng $2\\times431=862$ kJ (toả nhiệt).\nÁp dụng phá trừ tạo: $\\Delta_r H^\\circ = 679 - 862 = -183$ kJ.\nDấu âm: phản ứng toả nhiệt vì liên kết H-Cl bền, giải phóng nhiều năng lượng hơn phần đã tốn để phá.",
+          "answer": "$\\Delta_r H^\\circ = -183$ kJ (toả nhiệt)."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng công thức \"tạo trừ phá\" cho năng lượng liên kết — sai vì với năng lượng liên kết là **phá trừ tạo** (ngược chiều so với công thức nhiệt tạo thành).",
+        "Dùng năng lượng liên kết cho phản ứng có chất lỏng hoặc rắn — sai vì năng lượng liên kết chỉ định nghĩa cho liên kết ở thể khí.",
+        "Khi ghép Hess, đảo chiều phản ứng mà quên đổi dấu $\\Delta H$ — làm sai toàn bộ tổng đại số."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nhiet-hoa-hoc",
+        "nang-luong-lien-ket",
+        "dinh-luat-hess"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.toc-do-phan-ung",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 6: Tốc độ phản ứng hoá học",
+      "order": 1,
+      "title_vi": "Tốc độ phản ứng và các yếu tố ảnh hưởng",
+      "title_en": "Reaction rate and factors affecting it",
+      "objectives": [
+        "Viết được biểu thức tốc độ trung bình theo một chất và giải thích ý nghĩa hệ số tỉ lượng",
+        "Giải thích được ảnh hưởng của nồng độ, nhiệt độ, diện tích bề mặt và chất xúc tác đến tốc độ phản ứng"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Tốc độ phản ứng",
+          "term_en": "Reaction rate",
+          "definition": "Độ biến thiên nồng độ của một chất trong một đơn vị thời gian, chia cho hệ số tỉ lượng của chất đó."
+        },
+        {
+          "term_vi": "Hệ số nhiệt độ Van't Hoff",
+          "term_en": "Van't Hoff temperature coefficient",
+          "definition": "Số lần tốc độ tăng khi nhiệt độ tăng thêm $10^\\circ\\mathrm{C}$, kí hiệu $\\gamma$; thường từ 2 đến 4."
+        }
+      ],
+      "content": "## Đo tốc độ như thế nào\n\nTốc độ phản ứng cho biết phản ứng xảy ra **nhanh hay chậm**, đo bằng độ biến thiên nồng độ theo thời gian. Với phản ứng $aA + bB \\to cC + dD$, tốc độ trung bình tính theo bất kì chất nào cũng cho cùng một giá trị nếu chia cho hệ số:\n\n$$\\bar v = -\\frac{1}{a}\\frac{\\Delta[A]}{\\Delta t} = \\frac{1}{c}\\frac{\\Delta[C]}{\\Delta t}$$\n\nDấu trừ cho chất phản ứng vì nồng độ của chúng giảm dần.\n\n## Bốn yếu tố điều khiển\n\n- **Nồng độ** tăng $\\Rightarrow$ số va chạm hiệu quả tăng $\\Rightarrow$ tốc độ tăng.\n- **Nhiệt độ** tăng $\\Rightarrow$ nhiều phân tử vượt năng lượng hoạt hoá $\\Rightarrow$ tốc độ tăng mạnh. Định luật kinh nghiệm Van't Hoff: tăng $10^\\circ\\mathrm{C}$, tốc độ tăng $\\gamma$ lần.\n- **Diện tích bề mặt** chất rắn tăng (nghiền nhỏ) $\\Rightarrow$ tăng tiếp xúc $\\Rightarrow$ tốc độ tăng.\n- **Chất xúc tác** hạ năng lượng hoạt hoá $\\Rightarrow$ tăng tốc độ mà không bị tiêu hao.\n\n## Công thức Van't Hoff định lượng\n\nKhi nhiệt độ tăng từ $T_1$ lên $T_2$:\n\n$$\\frac{v_2}{v_1} = \\gamma^{\\frac{T_2 - T_1}{10}}$$\n\nVì tốc độ tỉ lệ nghịch với thời gian phản ứng, ta cũng có $t_1/t_2 = \\gamma^{(T_2-T_1)/10}$.\n\n## Khi nào dùng\n\nBài cho $\\gamma$ và hỏi tốc độ (hoặc thời gian) thay đổi bao nhiêu lần khi đổi nhiệt độ: tính số nấc $10^\\circ$ rồi luỹ thừa $\\gamma$.",
+      "formulas": [
+        "chemistry.thpt.toc-do.toc-do-trung-binh-theo-mot-chat",
+        "chemistry.thpt.toc-do.quy-tac-vant-hoff",
+        "chemistry.thpt.toc-do.cac-yeu-to-anh-huong",
+        "chemistry.thpt.toc-do.thoi-gian-phan-ung-theo-vant-hoff"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một phản ứng có hệ số nhiệt độ $\\gamma = 2$. Khi tăng nhiệt độ từ $20^\\circ\\mathrm{C}$ lên $60^\\circ\\mathrm{C}$, tốc độ phản ứng tăng bao nhiêu lần?",
+          "solution": "Xác định số nấc $10^\\circ$: $(60-20)/10 = 4$ nấc.\nMỗi nấc tốc độ nhân $\\gamma = 2$, nên tổng cộng nhân $2^4$.\n$\\dfrac{v_2}{v_1} = 2^4 = 16$.\nVậy tốc độ tăng 16 lần; đồng thời thời gian phản ứng giảm 16 lần.",
+          "answer": "Tốc độ tăng $2^4 = 16$ lần."
+        }
+      ],
+      "common_mistakes": [
+        "Cộng thay vì luỹ thừa $\\gamma$ theo số nấc nhiệt độ — sai vì mỗi nấc $10^\\circ$ **nhân** thêm $\\gamma$, cho quan hệ luỹ thừa chứ không cộng.",
+        "Quên chia cho hệ số tỉ lượng khi so sánh tốc độ tính theo các chất khác nhau — dẫn đến giá trị tốc độ không thống nhất.",
+        "Cho rằng chất xúc tác làm dịch chuyển cân bằng hoặc bị tiêu hao — sai vì xúc tác chỉ tăng tốc độ đạt cân bằng, không đổi vị trí cân bằng và được hoàn nguyên."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "toc-do-phan-ung",
+        "van-t-hoff",
+        "xuc-tac"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.mol-ti-khoi-khoi-luong-mol-trung-binh",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Đại lượng cơ bản và các định luật bảo toàn",
+      "order": 1,
+      "title_vi": "Mol, tỉ khối chất khí và khối lượng mol trung bình",
+      "title_en": "Mole, gas density ratio and average molar mass",
+      "objectives": [
+        "Chuyển đổi thành thạo giữa khối lượng, số mol, số hạt và thể tích khí",
+        "Tính được tỉ khối chất khí và khối lượng mol trung bình của hỗn hợp khí"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Tỉ khối chất khí",
+          "term_en": "Gas density ratio",
+          "definition": "Tỉ số khối lượng mol của khí A so với khí B ở cùng điều kiện: $d_{A/B}=M_A/M_B$."
+        },
+        {
+          "term_vi": "Khối lượng mol trung bình",
+          "term_en": "Average molar mass",
+          "definition": "Khối lượng mol \"quy đổi\" của hỗn hợp: $\\bar M = m_{hh}/n_{hh}$, luôn nằm giữa mol nhỏ nhất và lớn nhất."
+        }
+      ],
+      "content": "## Mol là trung tâm của mọi tính toán\n\nPhản ứng xảy ra theo tỉ lệ số hạt, nhưng ta cân được khối lượng và đo được thể tích. **Mol** nối ba đại lượng đó:\n\n$$n = \\frac{m}{M} = \\frac{N}{N_A} = \\frac{V_{\\text{khí}}}{V_m}$$\n\nTheo GDPT 2018, ở điều kiện chuẩn (25$^\\circ$C, 1 bar) thể tích mol khí $V_m = 24{,}79$ L/mol.\n\n## Tỉ khối: cân khí bằng khí\n\nHai khí cùng điều kiện thì tỉ lệ khối lượng bằng tỉ lệ khối lượng mol:\n\n$$d_{A/B} = \\frac{M_A}{M_B}, \\qquad d_{A/\\text{kk}} = \\frac{M_A}{29}$$\n\nBiết tỉ khối là biết ngay khối lượng mol, rất tiện để nhận dạng khí.\n\n## Khối lượng mol trung bình của hỗn hợp\n\nKhi trộn nhiều khí, ta coi hỗn hợp như một khí giả định có:\n\n$$\\bar M = \\frac{m_{hh}}{n_{hh}} = \\frac{\\sum n_i M_i}{\\sum n_i} = \\sum x_i M_i$$\n\nvới $x_i$ là phần mol. Tính chất quan trọng: $\\bar M$ luôn nằm **giữa** $M$ nhỏ nhất và $M$ lớn nhất; nếu tính ra ngoài khoảng đó thì chắc chắn sai.\n\n## Khi nào dùng\n\nHỗn hợp khí biết tỉ khối so với H$_2$ (hay không khí) $\\Rightarrow$ suy $\\bar M = 2 d_{hh/H_2}$; kết hợp với tổng mol để lập hệ tìm thành phần.",
+      "formulas": [
+        "chemistry.thpt.dai-cuong.ti-khoi-chat-khi",
+        "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh",
+        "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh-theo-phan-tram",
+        "chemistry.thpt.dai-luong-co-ban.so-mol-khi-dieu-kien-bat-ki"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hỗn hợp gồm 0,2 mol $\\mathrm{SO_2}$ và 0,3 mol $\\mathrm{O_2}$. Tính khối lượng mol trung bình và tỉ khối của hỗn hợp so với $\\mathrm{H_2}$.",
+          "solution": "Tính khối lượng và tổng mol: $m = 0{,}2\\times64 + 0{,}3\\times32 = 12{,}8 + 9{,}6 = 22{,}4$ g; $n = 0{,}5$ mol.\n$\\bar M = 22{,}4/0{,}5 = 44{,}8$ g/mol. Giá trị này nằm giữa 32 và 64, hợp lí.\nTỉ khối so với H$_2$: $d_{hh/H_2} = \\bar M / 2 = 44{,}8/2 = 22{,}4$.",
+          "answer": "$\\bar M = 44{,}8$ g/mol; $d_{hh/H_2} = 22{,}4$."
+        }
+      ],
+      "common_mistakes": [
+        "Tính $\\bar M$ bằng trung bình cộng đơn giản của các $M$ mà bỏ số mol — sai vì phải lấy trung bình có trọng số theo số mol (phần mol).",
+        "Dùng $V_m = 22{,}4$ L/mol cho điều kiện chuẩn GDPT 2018 — sai vì ở 25$^\\circ$C, 1 bar giá trị đúng là $24{,}79$ L/mol; $22{,}4$ chỉ ứng với $0^\\circ$C.",
+        "Chấp nhận $\\bar M$ nằm ngoài khoảng $[M_{min}; M_{max}]$ — vô lí vì trung bình có trọng số luôn nằm trong khoảng đó, dấu hiệu tính sai."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "mol",
+        "ti-khoi",
+        "khoi-luong-mol-trung-binh",
+        "hon-hop-khi"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nong-do-pha-loang-duong-cheo",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Đại lượng cơ bản và các định luật bảo toàn",
+      "order": 2,
+      "title_vi": "Nồng độ dung dịch, pha loãng và quy tắc đường chéo",
+      "title_en": "Solution concentration, dilution and the cross rule",
+      "objectives": [
+        "Chuyển đổi giữa nồng độ mol và nồng độ phần trăm dựa vào khối lượng riêng",
+        "Vận dụng quy tắc đường chéo để tính tỉ lệ pha trộn hai dung dịch cùng chất"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.mol-ti-khoi-khoi-luong-mol-trung-binh"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nồng độ mol",
+          "term_en": "Molar concentration",
+          "definition": "Số mol chất tan trong 1 lít dung dịch: $C_M = n/V$."
+        },
+        {
+          "term_vi": "Quy tắc đường chéo",
+          "term_en": "Cross (alligation) rule",
+          "definition": "Cách tìm tỉ lệ khối lượng (hoặc thể tích) hai dung dịch cần trộn để được nồng độ trung gian mong muốn."
+        }
+      ],
+      "content": "## Hai cách đo \"đậm đặc\"\n\nNồng độ mô tả lượng chất tan trong dung dịch. Hai đại lượng hay dùng:\n$$C_M = \\frac{n}{V\\,(\\text{lít})}, \\qquad C\\% = \\frac{m_{ct}}{m_{dd}}\\times100\\%.$$\nChúng liên hệ qua khối lượng riêng $D$ (g/mL): $C_M = \\dfrac{10\\,D\\,C\\%}{M}$.\n\n## Pha loãng: chất tan không đổi\n\nThêm dung môi làm loãng nhưng **số mol chất tan giữ nguyên**, nên:\n$$C_1 V_1 = C_2 V_2.$$\nĐây là chìa khoá mọi bài pha loãng hay cô đặc.\n\n## Quy tắc đường chéo: trộn để đạt nồng độ giữa\n\nTrộn dung dịch nồng độ $C_1$ (đậm) với $C_2$ (loãng) để được $C$ ($C_2 < C < C_1$). Tỉ lệ khối lượng (hoặc thể tích nếu cùng đơn vị nồng độ mol và bỏ qua co thể tích) là:\n$$\\frac{m_1}{m_2} = \\frac{|C - C_2|}{|C_1 - C|}.$$\nCách nhớ: viết $C_1$ và $C_2$ ở hai góc trái, $C$ ở giữa, lấy hiệu chéo. Lượng dung dịch nào lấy nhiều hơn thì nồng độ của nó gần $C$ hơn.\n\n## Đọc kĩ điều kiện áp dụng\n\nĐường chéo cho **tỉ lệ thể tích** chỉ chính xác khi hai dung dịch cùng loại nồng độ (đều $C_M$) và thể tích cộng được. Với nồng độ phần trăm, đường chéo cho **tỉ lệ khối lượng**.\n\n## Khi nào dùng\n\nBài \"trộn hai dung dịch cùng chất để được nồng độ cho trước\": dùng ngay đường chéo thay vì lập hệ, nhanh hơn nhiều.",
+      "formulas": [
+        "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-mol",
+        "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-phan-tram",
+        "chemistry.thpt.dung-dich.pha-loang-theo-nong-do-mol",
+        "chemistry.thpt.dung-dich.quan-he-cm-va-cphan-tram",
+        "chemistry.thpt.dung-dich.tron-hai-dung-dich-cung-chat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cần trộn dung dịch $\\mathrm{HCl}$ 3 M với dung dịch $\\mathrm{HCl}$ 1 M theo tỉ lệ thể tích nào để được dung dịch $\\mathrm{HCl}$ 1,8 M?",
+          "solution": "Áp dụng đường chéo với $C_1=3$, $C_2=1$, $C=1{,}8$:\n$\\dfrac{V_1}{V_2} = \\dfrac{|1{,}8-1|}{|3-1{,}8|} = \\dfrac{0{,}8}{1{,}2} = \\dfrac{2}{3}$.\nVậy trộn 2 phần thể tích dung dịch 3 M với 3 phần thể tích dung dịch 1 M. Kiểm tra: $(2\\times3 + 3\\times1)/(2+3) = 9/5 = 1{,}8$ M, đúng.",
+          "answer": "$V_{3M} : V_{1M} = 2 : 3$."
+        }
+      ],
+      "common_mistakes": [
+        "Đặt hiệu chéo nhầm vị trí, lấy $|C_1-C|$ cho dung dịch đậm — sai vì lượng dung dịch đậm tỉ lệ với hiệu ở phía dung dịch loãng $|C-C_2|$.",
+        "Dùng công thức pha loãng $C_1V_1=C_2V_2$ cho phản ứng có chất tan bị tiêu thụ — sai vì công thức này chỉ đúng khi số mol chất tan được bảo toàn (chỉ thêm dung môi).",
+        "Áp dụng đường chéo cho tỉ lệ thể tích với hai dung dịch khác loại nồng độ ($C_M$ và $C\\%$) — sai vì phải quy về cùng loại nồng độ trước."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nong-do",
+        "pha-loang",
+        "duong-cheo",
+        "dung-dich"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cac-dinh-luat-bao-toan",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Đại lượng cơ bản và các định luật bảo toàn",
+      "order": 3,
+      "title_vi": "Các định luật bảo toàn: khối lượng, nguyên tố, electron và điện tích",
+      "title_en": "Conservation laws: mass, element, electron and charge",
+      "objectives": [
+        "Vận dụng bảo toàn khối lượng và bảo toàn nguyên tố để giải nhanh bài toán hỗn hợp",
+        "Vận dụng bảo toàn electron cho phản ứng oxi hoá - khử và bảo toàn điện tích cho dung dịch"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.oxi-hoa-khu-thang-bang-electron",
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.mol-ti-khoi-khoi-luong-mol-trung-binh"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bảo toàn khối lượng",
+          "term_en": "Conservation of mass",
+          "definition": "Tổng khối lượng các chất phản ứng bằng tổng khối lượng các chất sản phẩm."
+        },
+        {
+          "term_vi": "Bảo toàn electron",
+          "term_en": "Conservation of electrons",
+          "definition": "Trong phản ứng oxi hoá - khử, tổng số mol electron chất khử nhường bằng tổng chất oxi hoá nhận."
+        },
+        {
+          "term_vi": "Bảo toàn điện tích",
+          "term_en": "Conservation of charge",
+          "definition": "Trong một dung dịch, tổng điện tích dương của cation bằng tổng điện tích âm của anion."
+        }
+      ],
+      "content": "## Vì sao dùng định luật bảo toàn thay vì viết đủ phương trình\n\nTrong thi trắc nghiệm, viết và cân bằng mọi phương trình rất mất thời gian. Các **định luật bảo toàn** cho phép \"nhảy thẳng\" từ dữ kiện đầu đến đại lượng cần tìm, bỏ qua chi tiết trung gian.\n\n## Bốn công cụ chủ lực\n\n**Bảo toàn khối lượng**: $\\sum m_{\\text{chất đầu}} = \\sum m_{\\text{sản phẩm}}$. Rất mạnh với bài \"kim loại + axit $\\to$ muối + khí\": $m_{\\text{muối}} = m_{\\text{kim loại}} + m_{\\text{gốc axit}}$.\n\n**Bảo toàn nguyên tố**: số mol một nguyên tố không đổi qua phản ứng. Ví dụ mọi nguyên tử Na trong NaOH cuối cùng nằm trong muối natri.\n\n**Bảo toàn electron**: $\\sum n_e(\\text{cho}) = \\sum n_e(\\text{nhận})$. Cho phép bỏ qua sản phẩm khử trung gian, chỉ cần đếm electron.\n\n**Bảo toàn điện tích** (trong dung dịch):\n$$\\sum (\\text{số mol cation}\\times\\text{điện tích}) = \\sum (\\text{số mol anion}\\times|\\text{điện tích}|).$$\nDùng để tìm số mol một ion còn thiếu hoặc khối lượng muối khan khi cô cạn.\n\n## Chọn định luật nào\n\n- Bài có khí thoát ra, biết khối lượng chất rắn trước - sau: bảo toàn khối lượng.\n- Bài oxi hoá - khử, nhiều sản phẩm khử: bảo toàn electron.\n- Bài cho danh sách ion trong dung dịch: bảo toàn điện tích.\nThường phải phối hợp hai, ba định luật trong một bài.\n\n## Khi nào dùng\n\nHễ gặp \"hỗn hợp\", \"cô cạn dung dịch thu m gam muối\", hay \"tính V khí\", hãy nghĩ tới bảo toàn trước khi viết phương trình.",
+      "formulas": [
+        "chemistry.thpt.bao-toan.khoi-luong",
+        "chemistry.thpt.bao-toan.bao-toan-nguyen-to",
+        "chemistry.thpt.bao-toan.bao-toan-electron",
+        "chemistry.thpt.bao-toan.bao-toan-dien-tich",
+        "chemistry.thpt.bao-toan.khoi-luong-thuc-te-theo-hieu-suat",
+        "chemistry.thpt.bao-toan.khoi-luong-muoi-khan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hoà tan hoàn toàn 10 g hỗn hợp $\\mathrm{Mg, Zn, Fe}$ bằng dung dịch $\\mathrm{HCl}$ dư, thu được 0,15 mol khí $\\mathrm{H_2}$. Cô cạn dung dịch thu được bao nhiêu gam muối khan?",
+          "solution": "Không cần biết tỉ lệ từng kim loại. Dùng bảo toàn: mỗi $\\mathrm{H_2}$ sinh ra ứng với 2 ion $\\mathrm{Cl^-}$ đi vào muối (vì $2\\mathrm{HCl}\\to \\mathrm{H_2}+2\\mathrm{Cl^-}$ vào muối).\n$n_{\\mathrm{Cl^-}} = 2 n_{\\mathrm{H_2}} = 2\\times0{,}15 = 0{,}3$ mol.\nBảo toàn khối lượng: $m_{\\text{muối}} = m_{\\text{kim loại}} + m_{\\mathrm{Cl^-}} = 10 + 0{,}3\\times35{,}5 = 20{,}65$ g.",
+          "answer": "$m_{\\text{muối}} = 20{,}65$ g."
+        }
+      ],
+      "common_mistakes": [
+        "Bỏ sót một ion khi viết bảo toàn điện tích — làm phương trình điện tích không cân, dẫn tới sai số mol ion cần tìm.",
+        "Tính $n_{\\mathrm{Cl^-}} = n_{\\mathrm{H_2}}$ thay vì $2n_{\\mathrm{H_2}}$ — sai vì mỗi phân tử $\\mathrm{H_2}$ ứng với 2 nguyên tử H, tức 2 gốc $\\mathrm{Cl^-}$ đi vào muối.",
+        "Áp dụng bảo toàn khối lượng mà quên khối lượng khí thoát ra khỏi hệ — sai vì khí $\\mathrm{H_2}$ bay đi không còn trong dung dịch."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "bao-toan-khoi-luong",
+        "bao-toan-electron",
+        "bao-toan-dien-tich",
+        "giai-nhanh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.can-bang-hoa-hoc-kc-kp",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 11 - Chương 1: Cân bằng hoá học",
+      "order": 1,
+      "title_vi": "Cân bằng hoá học, hằng số cân bằng Kc và Kp",
+      "title_en": "Chemical equilibrium and the equilibrium constants Kc and Kp",
+      "objectives": [
+        "Viết được biểu thức hằng số cân bằng Kc, Kp cho phản ứng thuận nghịch",
+        "Tính được Kc, Kp và độ chuyển hoá từ nồng độ hoặc áp suất lúc cân bằng"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.toc-do-phan-ung"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Cân bằng hoá học",
+          "term_en": "Chemical equilibrium",
+          "definition": "Trạng thái của phản ứng thuận nghịch khi tốc độ thuận bằng tốc độ nghịch, nồng độ các chất không đổi theo thời gian."
+        },
+        {
+          "term_vi": "Hằng số cân bằng Kc",
+          "term_en": "Equilibrium constant Kc",
+          "definition": "Tỉ số tích nồng độ sản phẩm trên tích nồng độ chất đầu, mỗi nồng độ luỹ thừa hệ số tỉ lượng; chỉ phụ thuộc nhiệt độ."
+        }
+      ],
+      "content": "## Phản ứng thuận nghịch và trạng thái cân bằng\n\nNhiều phản ứng không xảy ra hoàn toàn mà **thuận nghịch**: sản phẩm lại tái tạo chất đầu. Khi tốc độ thuận bằng tốc độ nghịch, nồng độ các chất không đổi — đó là **cân bằng hoá học**. Cân bằng là động (phản ứng vẫn xảy ra hai chiều), không phải phản ứng dừng lại.\n\n## Hằng số cân bằng Kc\n\nVới $aA + bB \\rightleftharpoons cC + dD$:\n\n$$K_c = \\frac{[C]^c [D]^d}{[A]^a [B]^b}$$\n\ndùng nồng độ **lúc cân bằng**. Chất rắn và chất lỏng nguyên chất không xuất hiện trong biểu thức (nồng độ coi như hằng). $K_c$ chỉ phụ thuộc nhiệt độ: $K_c$ lớn nghĩa là cân bằng lệch mạnh về sản phẩm.\n\n## Hằng số Kp cho phản ứng khí\n\nVới phản ứng khí, dùng áp suất riêng phần:\n$$K_p = \\frac{(p_C)^c (p_D)^d}{(p_A)^a (p_B)^b}, \\qquad K_p = K_c (RT)^{\\Delta n}$$\nvới $\\Delta n = (c+d)-(a+b)$ là chênh lệch số mol khí. Nếu $\\Delta n = 0$ thì $K_p = K_c$.\n\n## Cách lập bảng ICE\n\nĐặt nồng độ ban đầu (Initial), biến đổi (Change) theo ẩn $x$ và hệ số, rồi nồng độ cân bằng (Equilibrium). Thay vào biểu thức $K_c$ để tìm $x$, từ đó suy độ chuyển hoá.\n\n## Khi nào dùng\n\nĐề cho nồng độ (hoặc số mol và thể tích bình) lúc cân bằng: thay thẳng vào $K_c$. Đề cho $K_c$ và nồng độ đầu: lập ICE, giải phương trình tìm $x$.",
+      "formulas": [
+        "chemistry.thpt.can-bang.hang-so-can-bang-kc",
+        "chemistry.thpt.can-bang.hang-so-can-bang-kp",
+        "chemistry.thpt.can-bang.quan-he-kp-kc",
+        "chemistry.thpt.can-bang.hieu-suat-chuyen-hoa"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho cân bằng $\\mathrm{H_2(g) + I_2(g) \\rightleftharpoons 2HI(g)}$ trong bình 1 L. Lúc cân bằng có $[\\mathrm{H_2}]=0{,}5$ M, $[\\mathrm{I_2}]=1{,}0$ M, $[\\mathrm{HI}]=0{,}4$ M. Tính $K_c$.",
+          "solution": "Viết biểu thức đúng luỹ thừa hệ số: $K_c = \\dfrac{[\\mathrm{HI}]^2}{[\\mathrm{H_2}][\\mathrm{I_2}]}$ (HI có hệ số 2 nên bình phương).\nThay số: $K_c = \\dfrac{0{,}4^2}{0{,}5\\times1{,}0} = \\dfrac{0{,}16}{0{,}5} = 0{,}32$.\nVì $\\Delta n = 2-2 = 0$ nên $K_p = K_c = 0{,}32$; đại lượng này không có đơn vị ở đây.",
+          "answer": "$K_c = 0{,}32$."
+        }
+      ],
+      "common_mistakes": [
+        "Đưa nồng độ chất rắn hoặc chất lỏng nguyên chất vào biểu thức $K_c$ — sai vì nồng độ của chúng coi như hằng số, đã gộp vào $K_c$.",
+        "Quên luỹ thừa nồng độ theo hệ số tỉ lượng — ví dụ viết $[\\mathrm{HI}]$ thay vì $[\\mathrm{HI}]^2$, cho $K_c$ sai hoàn toàn.",
+        "Dùng nồng độ ban đầu thay cho nồng độ lúc cân bằng — sai vì $K_c$ định nghĩa theo trạng thái cân bằng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "can-bang-hoa-hoc",
+        "hang-so-can-bang",
+        "kc",
+        "kp"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nguyen-li-le-chatelier",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 11 - Chương 1: Cân bằng hoá học",
+      "order": 2,
+      "title_vi": "Nguyên lí chuyển dịch cân bằng Le Chatelier",
+      "title_en": "Le Chatelier's principle of equilibrium shift",
+      "objectives": [
+        "Dự đoán được chiều chuyển dịch cân bằng khi thay đổi nồng độ, áp suất, nhiệt độ",
+        "Vận dụng nguyên lí Le Chatelier để giải thích điều kiện tối ưu trong sản xuất hoá học"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.can-bang-hoa-hoc-kc-kp"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nguyên lí Le Chatelier",
+          "term_en": "Le Chatelier's principle",
+          "definition": "Khi một hệ đang cân bằng chịu tác động bên ngoài, cân bằng chuyển dịch theo chiều làm giảm tác động đó."
+        },
+        {
+          "term_vi": "Chiều chuyển dịch cân bằng",
+          "term_en": "Direction of shift",
+          "definition": "Chiều (thuận hay nghịch) mà phản ứng diễn ra trội hơn để thiết lập cân bằng mới."
+        }
+      ],
+      "content": "## Cân bằng \"chống lại\" thay đổi\n\n**Nguyên lí Le Chatelier**: khi tác động vào hệ cân bằng (đổi nồng độ, áp suất, nhiệt độ), cân bằng chuyển dịch theo chiều **làm giảm** tác động đó. Nắm ý tưởng \"hệ phản kháng\" này là dự đoán được mọi trường hợp.\n\n## Ba loại tác động\n\n**Nồng độ**: tăng nồng độ một chất $\\Rightarrow$ cân bằng dịch theo chiều làm giảm chất đó (tức chiều tiêu thụ nó). Lấy bớt sản phẩm $\\Rightarrow$ dịch theo chiều thuận.\n\n**Áp suất** (chỉ ảnh hưởng phản ứng có chất khí và $\\Delta n_{khí}\\ne0$): tăng áp suất $\\Rightarrow$ dịch về phía có **ít mol khí hơn**. Nếu số mol khí hai vế bằng nhau, áp suất không làm dịch cân bằng.\n\n**Nhiệt độ**: tăng nhiệt độ $\\Rightarrow$ dịch theo chiều **thu nhiệt** ($\\Delta H > 0$); giảm nhiệt độ $\\Rightarrow$ dịch theo chiều toả nhiệt. Đây là yếu tố **duy nhất làm đổi giá trị $K$**.\n\n## Xúc tác không làm dịch cân bằng\n\nChất xúc tác tăng tốc cả chiều thuận và nghịch như nhau, chỉ giúp đạt cân bằng nhanh hơn, **không** đổi vị trí cân bằng hay $K$.\n\n## Ứng dụng sản xuất\n\nTổng hợp ammonia $\\mathrm{N_2 + 3H_2 \\rightleftharpoons 2NH_3}$, $\\Delta H<0$, $\\Delta n_{khí}=-2$: muốn nhiều $\\mathrm{NH_3}$ nên dùng **áp suất cao** (dịch về phía ít mol khí) và **nhiệt độ vừa phải** (nhiệt thấp có lợi cân bằng nhưng chậm, nên chọn ~450$^\\circ$C và xúc tác).\n\n## Khi nào dùng\n\nCâu hỏi \"tăng/giảm yếu tố X thì cân bằng dịch chiều nào\": xét từng yếu tố theo ba quy tắc trên, nhớ áp suất chỉ xét khi $\\Delta n_{khí}\\ne0$.",
+      "formulas": [
+        "chemistry.thpt.can-bang.nguyen-li-le-chatelier",
+        "chemistry.thpt.can-bang.thuong-so-phan-ung",
+        "chemistry.thpt.can-bang.hang-so-can-bang-phan-ung-nghich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho cân bằng $\\mathrm{2SO_2(g) + O_2(g) \\rightleftharpoons 2SO_3(g)}$, $\\Delta H < 0$. Cân bằng dịch chiều nào khi: (a) tăng áp suất; (b) tăng nhiệt độ?",
+          "solution": "(a) Đếm mol khí: vế trái $2+1=3$ mol, vế phải $2$ mol. Tăng áp suất $\\Rightarrow$ dịch về phía **ít mol khí hơn** = vế phải $\\Rightarrow$ chiều thuận (tạo thêm $\\mathrm{SO_3}$).\n(b) Phản ứng thuận toả nhiệt ($\\Delta H<0$). Tăng nhiệt độ $\\Rightarrow$ dịch theo chiều **thu nhiệt** = chiều nghịch $\\Rightarrow$ giảm $\\mathrm{SO_3}$, đồng thời $K$ giảm.",
+          "answer": "(a) Chiều thuận; (b) chiều nghịch."
+        }
+      ],
+      "common_mistakes": [
+        "Xét ảnh hưởng áp suất khi số mol khí hai vế bằng nhau — sai vì lúc đó áp suất không làm chuyển dịch cân bằng.",
+        "Cho rằng chất xúc tác làm cân bằng dịch về phía sản phẩm — sai vì xúc tác chỉ tăng tốc đạt cân bằng, không đổi vị trí cân bằng.",
+        "Kết luận tăng nhiệt độ luôn làm tăng hiệu suất — sai vì với phản ứng toả nhiệt, tăng nhiệt độ đẩy cân bằng theo chiều nghịch, giảm sản phẩm."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "le-chatelier",
+        "chuyen-dich-can-bang",
+        "can-bang-hoa-hoc"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.su-dien-li-ph",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 11 - Chương 1: Cân bằng hoá học",
+      "order": 3,
+      "title_vi": "Sự điện li, chất điện li và pH của dung dịch",
+      "title_en": "Electrolytic dissociation, electrolytes and solution pH",
+      "objectives": [
+        "Phân biệt được chất điện li mạnh, chất điện li yếu và viết phương trình điện li",
+        "Tính được pH của dung dịch acid mạnh, base mạnh và nêu ý nghĩa của thang pH"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.nong-do-pha-loang-duong-cheo"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Sự điện li",
+          "term_en": "Electrolytic dissociation",
+          "definition": "Quá trình chất tan phân li thành các ion khi tan trong nước hoặc nóng chảy."
+        },
+        {
+          "term_vi": "Chất điện li mạnh",
+          "term_en": "Strong electrolyte",
+          "definition": "Chất phân li hoàn toàn thành ion (acid mạnh, base mạnh, hầu hết muối tan)."
+        },
+        {
+          "term_vi": "pH",
+          "term_en": "pH",
+          "definition": "Đại lượng đo độ acid: $\\mathrm{pH} = -\\log[\\mathrm{H^+}]$; ở 25$^\\circ$C, môi trường trung tính có pH = 7."
+        }
+      ],
+      "content": "## Vì sao dung dịch dẫn điện\n\nMột số chất khi tan trong nước phân li thành **ion** chuyển động tự do, làm dung dịch dẫn điện. Đó là **sự điện li**, và chất gây ra gọi là chất điện li.\n\n## Mạnh hay yếu\n\n- **Chất điện li mạnh** (acid mạnh HCl, $\\mathrm{HNO_3}$, $\\mathrm{H_2SO_4}$; base mạnh NaOH, KOH, $\\mathrm{Ba(OH)_2}$; muối tan) phân li **hoàn toàn**, dùng mũi tên một chiều: $\\mathrm{HCl}\\to\\mathrm{H^+}+\\mathrm{Cl^-}$.\n- **Chất điện li yếu** (acid yếu $\\mathrm{CH_3COOH}$, base yếu $\\mathrm{NH_3}$) chỉ phân li **một phần**, dùng mũi tên thuận nghịch.\n\n## Tích số ion của nước và thang pH\n\nNước tự phân li rất ít: $[\\mathrm{H^+}][\\mathrm{OH^-}] = K_w = 10^{-14}$ (ở 25$^\\circ$C). Định nghĩa:\n$$\\mathrm{pH} = -\\log[\\mathrm{H^+}], \\qquad \\mathrm{pH} + \\mathrm{pOH} = 14.$$\npH < 7 là acid, pH = 7 trung tính, pH > 7 base.\n\n## Tính pH acid mạnh, base mạnh\n\nVì phân li hoàn toàn, nồng độ ion tính trực tiếp:\n- Acid mạnh nồng độ $C_a$ (đơn nấc): $[\\mathrm{H^+}]=C_a \\Rightarrow \\mathrm{pH}=-\\log C_a$.\n- Base mạnh: tính $[\\mathrm{OH^-}]$ rồi $\\mathrm{pH}=14+\\log[\\mathrm{OH^-}]$.\nChú ý acid, base nhiều nấc: $\\mathrm{H_2SO_4}\\to 2\\mathrm{H^+}$, $\\mathrm{Ba(OH)_2}\\to2\\mathrm{OH^-}$, phải nhân đôi.\n\n## Khi nào dùng\n\nBài cho nồng độ acid/base mạnh: quy về $[\\mathrm{H^+}]$ hoặc $[\\mathrm{OH^-}]$ rồi lấy log. Với acid/base yếu cần dùng hằng số phân li (bài sau).",
+      "formulas": [
+        "chemistry.thpt.dien-li.do-dien-li",
+        "chemistry.thpt.dien-li.ph-cua-acid-manh",
+        "chemistry.thpt.dien-li.ph-cua-base-manh",
+        "chemistry.thpt.dien-li.tich-so-ion-cua-nuoc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính pH của: (a) dung dịch $\\mathrm{HCl}$ 0,01 M; (b) dung dịch $\\mathrm{Ba(OH)_2}$ 0,005 M.",
+          "solution": "(a) HCl là acid mạnh đơn nấc: $[\\mathrm{H^+}]=0{,}01 \\Rightarrow \\mathrm{pH}=-\\log 10^{-2}=2$.\n(b) $\\mathrm{Ba(OH)_2}$ là base mạnh, mỗi phân tử cho **2** ion $\\mathrm{OH^-}$: $[\\mathrm{OH^-}]=2\\times0{,}005=0{,}01$ M $\\Rightarrow \\mathrm{pOH}=2 \\Rightarrow \\mathrm{pH}=14-2=12$.",
+          "answer": "(a) pH = 2; (b) pH = 12."
+        }
+      ],
+      "common_mistakes": [
+        "Quên nhân đôi khi tính $\\mathrm{Ba(OH)_2}$ hoặc $\\mathrm{H_2SO_4}$ — sai vì mỗi phân tử tạo 2 ion $\\mathrm{OH^-}$ (hoặc 2 $\\mathrm{H^+}$).",
+        "Dùng công thức acid mạnh $[\\mathrm{H^+}]=C_a$ cho acid yếu — sai vì acid yếu chỉ phân li một phần, $[\\mathrm{H^+}]$ nhỏ hơn nhiều so với nồng độ acid.",
+        "Tính pH của base bằng $-\\log C$ trực tiếp — sai vì với base phải qua $[\\mathrm{OH^-}]$ và pOH rồi mới suy pH."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "su-dien-li",
+        "ph",
+        "chat-dien-li",
+        "acid-base"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.axit-bazo-yeu-ka-kb-dem",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 11 - Chương 1: Cân bằng hoá học",
+      "order": 4,
+      "title_vi": "Acid - base yếu, hằng số Ka, Kb và dung dịch đệm",
+      "title_en": "Weak acids and bases, Ka, Kb and buffer solutions",
+      "objectives": [
+        "Tính được pH của dung dịch acid yếu, base yếu từ hằng số phân li",
+        "Giải thích cơ chế và tính được pH của dung dịch đệm"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.su-dien-li-ph"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hằng số phân li acid Ka",
+          "term_en": "Acid dissociation constant",
+          "definition": "Hằng số cân bằng của quá trình acid yếu phân li: $K_a=\\dfrac{[\\mathrm{H^+}][\\mathrm{A^-}]}{[\\mathrm{HA}]}$; $K_a$ càng lớn acid càng mạnh."
+        },
+        {
+          "term_vi": "Dung dịch đệm",
+          "term_en": "Buffer solution",
+          "definition": "Dung dịch gồm acid yếu và base liên hợp (hoặc base yếu và acid liên hợp), có pH ít thay đổi khi thêm ít acid hoặc base."
+        }
+      ],
+      "content": "## Acid yếu không phân li hết\n\nAcid yếu $\\mathrm{HA}$ chỉ phân li một phần, đặc trưng bởi hằng số:\n$$K_a = \\frac{[\\mathrm{H^+}][\\mathrm{A^-}]}{[\\mathrm{HA}]}, \\qquad \\mathrm{p}K_a = -\\log K_a.$$\nVới acid yếu nồng độ $C$ và độ phân li nhỏ, gần đúng:\n$$[\\mathrm{H^+}]\\approx\\sqrt{K_a\\,C}, \\qquad \\mathrm{pH}\\approx\\tfrac12(\\mathrm{p}K_a - \\log C).$$\nCông thức gần đúng này chỉ đúng khi độ phân li nhỏ (dưới ~5%), tức $C$ không quá loãng.\n\n## Base yếu tương tự\n\nBase yếu có $K_b$; liên hệ với acid liên hợp: $K_a\\,K_b = K_w = 10^{-14}$, hay $\\mathrm{p}K_a + \\mathrm{p}K_b = 14$.\n\n## Dung dịch đệm giữ pH ổn định\n\nTrộn acid yếu $\\mathrm{HA}$ với muối chứa base liên hợp $\\mathrm{A^-}$ tạo **đệm**. Khi thêm chút acid, $\\mathrm{A^-}$ hấp thụ; thêm chút base, $\\mathrm{HA}$ trung hoà — nên pH gần như không đổi. Công thức Henderson - Hasselbalch:\n$$\\mathrm{pH} = \\mathrm{p}K_a + \\log\\frac{[\\mathrm{A^-}]}{[\\mathrm{HA}]}.$$\nKhi $[\\mathrm{A^-}]=[\\mathrm{HA}]$ thì $\\mathrm{pH}=\\mathrm{p}K_a$: đệm hiệu quả nhất quanh giá trị này. Máu người là một hệ đệm $\\mathrm{HCO_3^-}/\\mathrm{H_2CO_3}$ giữ pH ~7,4.\n\n## Khi nào dùng công thức nào\n\n- Chỉ có acid yếu: dùng $[\\mathrm{H^+}]=\\sqrt{K_a C}$.\n- Có cả acid yếu và base liên hợp (đệm): dùng Henderson - Hasselbalch.",
+      "formulas": [
+        "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+        "chemistry.thpt.dien-li.ph-cua-acid-yeu",
+        "chemistry.thpt.dien-li.ph-dung-dich-dem",
+        "chemistry.thpt.dien-li.quan-he-ka-kb-kw"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính pH của: (a) dung dịch $\\mathrm{CH_3COOH}$ 0,1 M có $K_a=1{,}8\\times10^{-5}$; (b) dung dịch đệm gồm $\\mathrm{CH_3COOH}$ 0,1 M và $\\mathrm{CH_3COONa}$ 0,1 M.",
+          "solution": "(a) Acid yếu, dùng $[\\mathrm{H^+}]=\\sqrt{K_a C}=\\sqrt{1{,}8\\times10^{-5}\\times0{,}1}=\\sqrt{1{,}8\\times10^{-6}}=1{,}34\\times10^{-3}$ M. Vậy $\\mathrm{pH}=-\\log(1{,}34\\times10^{-3})\\approx2{,}87$.\n(b) Đệm với $[\\mathrm{A^-}]=[\\mathrm{HA}]=0{,}1$ M nên $\\log(1)=0$: $\\mathrm{pH}=\\mathrm{p}K_a=-\\log(1{,}8\\times10^{-5})\\approx4{,}74$.\nSo sánh: thêm $\\mathrm{CH_3COONa}$ đẩy pH từ 2,87 lên 4,74 và tạo khả năng chống thay đổi pH.",
+          "answer": "(a) pH $\\approx$ 2,87; (b) pH $\\approx$ 4,74."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng công thức acid mạnh $[\\mathrm{H^+}]=C$ cho acid yếu — sai vì acid yếu phân li ít, $[\\mathrm{H^+}]$ nhỏ hơn $C$ nhiều lần.",
+        "Áp dụng $[\\mathrm{H^+}]=\\sqrt{K_aC}$ cho dung dịch đệm — sai vì trong đệm đã có sẵn base liên hợp $\\mathrm{A^-}$, phải dùng Henderson - Hasselbalch.",
+        "Nhầm $\\mathrm{p}K_a$ với $K_a$ khi tính pH đệm — quên lấy $-\\log$ của $K_a$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "acid-yeu",
+        "ka",
+        "dung-dich-dem",
+        "ph"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.tich-so-tan",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 11 - Chương 1: Cân bằng hoá học",
+      "order": 5,
+      "title_vi": "Tích số tan và điều kiện tạo kết tủa",
+      "title_en": "Solubility product and conditions for precipitation",
+      "objectives": [
+        "Viết được biểu thức tích số tan Ksp và tính độ tan từ Ksp",
+        "Dự đoán được sự tạo thành kết tủa bằng cách so sánh thương số ion với Ksp"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.su-dien-li-ph"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tích số tan Ksp",
+          "term_en": "Solubility product",
+          "definition": "Hằng số cân bằng của chất ít tan với dung dịch bão hoà: với $\\mathrm{M_aX_b}$, $K_{sp}=[\\mathrm{M}]^a[\\mathrm{X}]^b$."
+        },
+        {
+          "term_vi": "Điều kiện kết tủa",
+          "term_en": "Precipitation condition",
+          "definition": "Kết tủa xuất hiện khi thương số ion $Q > K_{sp}$; dung dịch bão hoà khi $Q=K_{sp}$; chưa kết tủa khi $Q<K_{sp}$."
+        }
+      ],
+      "content": "## Chất ít tan vẫn có cân bằng\n\nChất \"không tan\" thực ra tan một lượng cực nhỏ, tạo cân bằng giữa chất rắn và ion trong dung dịch bão hoà. Với $\\mathrm{M_aX_b}(r)\\rightleftharpoons a\\mathrm{M^{n+}}+b\\mathrm{X^{m-}}$:\n$$K_{sp} = [\\mathrm{M^{n+}}]^a[\\mathrm{X^{m-}}]^b.$$\nChất rắn không vào biểu thức. $K_{sp}$ càng nhỏ, chất càng khó tan.\n\n## Từ Ksp suy độ tan\n\nGọi độ tan (mol/L) là $S$. Ví dụ $\\mathrm{AgCl}$: $[\\mathrm{Ag^+}]=[\\mathrm{Cl^-}]=S$ nên $K_{sp}=S^2 \\Rightarrow S=\\sqrt{K_{sp}}$. Với $\\mathrm{Mg(OH)_2}$: $[\\mathrm{Mg^{2+}}]=S$, $[\\mathrm{OH^-}]=2S$ nên $K_{sp}=S(2S)^2=4S^3 \\Rightarrow S=\\sqrt[3]{K_{sp}/4}$. Chú ý hệ số 2 trong ion $\\mathrm{OH^-}$ được bình phương.\n\n## Dự đoán kết tủa: so Q với Ksp\n\nTrộn hai dung dịch, tính **thương số ion** $Q$ (giống biểu thức $K_{sp}$ nhưng dùng nồng độ tức thời sau khi trộn):\n- $Q > K_{sp}$: quá bão hoà $\\Rightarrow$ **có kết tủa**;\n- $Q = K_{sp}$: bão hoà, bắt đầu kết tủa;\n- $Q < K_{sp}$: chưa kết tủa.\nNhớ tính nồng độ **sau khi pha trộn** (thể tích tăng làm loãng).\n\n## Hiệu ứng ion chung\n\nThêm ion chung (ví dụ thêm $\\mathrm{Cl^-}$ vào dung dịch $\\mathrm{AgCl}$) làm giảm độ tan, vì cân bằng dịch về phía chất rắn để giữ $K_{sp}$ không đổi.\n\n## Khi nào dùng\n\nBài hỏi độ tan: lập $S$ theo $K_{sp}$. Bài hỏi có kết tủa hay không: tính $Q$ sau trộn rồi so với $K_{sp}$.",
+      "formulas": [
+        "chemistry.thpt.dien-li.tich-so-tan",
+        "chemistry.thpt.dien-li.do-tan-tu-tich-so-tan",
+        "chemistry.thpt.dien-li.dieu-kien-ket-tua"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Biết $K_{sp}(\\mathrm{AgCl})=1{,}8\\times10^{-10}$. Tính độ tan của $\\mathrm{AgCl}$ trong nước (mol/L).",
+          "solution": "$\\mathrm{AgCl}$ phân li theo tỉ lệ 1:1, gọi độ tan là $S$ thì $[\\mathrm{Ag^+}]=[\\mathrm{Cl^-}]=S$.\n$K_{sp}=[\\mathrm{Ag^+}][\\mathrm{Cl^-}]=S^2 \\Rightarrow S=\\sqrt{K_{sp}}=\\sqrt{1{,}8\\times10^{-10}}=1{,}34\\times10^{-5}$ mol/L.\nKết quả rất nhỏ, phù hợp với việc $\\mathrm{AgCl}$ được coi là kết tủa trắng khó tan.",
+          "answer": "$S=1{,}34\\times10^{-5}$ mol/L."
+        }
+      ],
+      "common_mistakes": [
+        "Đưa nồng độ chất rắn vào biểu thức $K_{sp}$ — sai vì chất rắn nguyên chất không xuất hiện trong biểu thức tích số tan.",
+        "Quên bình phương hệ số ion khi lập độ tan (ví dụ $\\mathrm{Mg(OH)_2}$ dùng $S^2$ thay vì $4S^3$) — cho độ tan sai.",
+        "So $Q$ với $K_{sp}$ mà dùng nồng độ trước khi pha trộn — sai vì trộn hai dung dịch làm loãng, phải tính nồng độ sau trộn."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "nang-cao",
+      "tags": [
+        "tich-so-tan",
+        "ksp",
+        "ket-tua",
+        "do-tan"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.the-dien-cuc-pin-nernst",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 12 - Chương: Pin điện và điện phân",
+      "order": 1,
+      "title_vi": "Thế điện cực chuẩn, sức điện động của pin và phương trình Nernst",
+      "title_en": "Standard electrode potential, cell emf and the Nernst equation",
+      "objectives": [
+        "Tính được sức điện động chuẩn của pin từ thế điện cực chuẩn và xác định cực âm, cực dương",
+        "Vận dụng phương trình Nernst để tính thế điện cực khi nồng độ khác chuẩn"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.oxi-hoa-khu-thang-bang-electron"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Thế điện cực chuẩn",
+          "term_en": "Standard electrode potential",
+          "definition": "Thế của cặp oxi hoá - khử đo so với điện cực hydrogen chuẩn ở điều kiện chuẩn, kí hiệu $E^\\circ$."
+        },
+        {
+          "term_vi": "Sức điện động của pin",
+          "term_en": "Cell electromotive force",
+          "definition": "Hiệu điện thế lớn nhất của pin: $E^\\circ_{pin}=E^\\circ_{cực\\,dương}-E^\\circ_{cực\\,âm}$, luôn dương với pin tự diễn biến."
+        },
+        {
+          "term_vi": "Phương trình Nernst",
+          "term_en": "Nernst equation",
+          "definition": "Công thức tính thế điện cực khi nồng độ khác chuẩn; ở 25$^\\circ$C: $E=E^\\circ-\\dfrac{0{,}0592}{n}\\log Q$."
+        }
+      ],
+      "content": "## Vì sao cặp oxi hoá - khử có \"thế\"\n\nMỗi cặp $\\mathrm{M^{n+}}/\\mathrm{M}$ có xu hướng nhận hay nhường electron khác nhau, đo bằng **thế điện cực chuẩn** $E^\\circ$ (so với điện cực hydrogen quy ước $0$ V). $E^\\circ$ càng lớn (dương), dạng oxi hoá càng dễ nhận electron (tính oxi hoá mạnh); $E^\\circ$ càng âm, kim loại càng dễ bị oxi hoá (tính khử mạnh).\n\n## Ghép hai điện cực thành pin\n\nTrong pin Galvani, cặp có $E^\\circ$ lớn hơn làm **cực dương (cathode, khử)**, cặp $E^\\circ$ nhỏ hơn làm **cực âm (anode, oxi hoá)**. Sức điện động chuẩn:\n$$E^\\circ_{pin} = E^\\circ_{(+)} - E^\\circ_{(-)} > 0.$$\nHiệu này luôn dương với pin tự diễn biến; kim loại mạnh hơn (âm hơn) bị ăn mòn để đẩy electron ra mạch ngoài.\n\n## Khi nồng độ khác chuẩn: phương trình Nernst\n\nThế thay đổi theo nồng độ. Ở 25$^\\circ$C:\n$$E = E^\\circ - \\frac{0{,}0592}{n}\\log Q$$\nvới $n$ là số electron trao đổi, $Q$ là thương số phản ứng (tích nồng độ sản phẩm chia chất đầu, dạng oxi hoá - khử). Tăng nồng độ ion sản phẩm làm $Q$ tăng, $E$ giảm.\n\n## Liên hệ với chiều phản ứng\n\n$E_{pin} > 0$ nghĩa là phản ứng tự xảy ra ($\\Delta G = -nFE < 0$). Đây là cầu nối giữa điện hoá và nhiệt động.\n\n## Khi nào dùng\n\nBài cho bảng $E^\\circ$: xác định cực, tính $E^\\circ_{pin}$ bằng hiệu. Bài cho nồng độ khác 1 M: hiệu chỉnh bằng Nernst.",
+      "formulas": [
+        "chemistry.thpt.dien-hoa.the-dien-cuc-chuan",
+        "chemistry.thpt.dien-hoa.suc-dien-dong-cua-pin",
+        "chemistry.thpt.dien-hoa.phuong-trinh-nernst-25-do",
+        "chemistry.thpt.dien-hoa.quan-he-gibbs-va-suc-dien-dong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $E^\\circ(\\mathrm{Cu^{2+}/Cu})=+0{,}34$ V và $E^\\circ(\\mathrm{Zn^{2+}/Zn})=-0{,}76$ V. Xác định cực dương, cực âm và tính $E^\\circ_{pin}$ của pin Zn-Cu.",
+          "solution": "So thế: cặp $\\mathrm{Cu^{2+}/Cu}$ có $E^\\circ$ lớn hơn nên là **cực dương** (xảy ra khử $\\mathrm{Cu^{2+}}\\to\\mathrm{Cu}$); cặp $\\mathrm{Zn^{2+}/Zn}$ là **cực âm** (Zn bị oxi hoá).\n$E^\\circ_{pin} = E^\\circ_{(+)} - E^\\circ_{(-)} = 0{,}34 - (-0{,}76) = 1{,}10$ V.\nGiá trị dương xác nhận pin tự phóng điện, Zn bị ăn mòn dần.",
+          "answer": "Cực dương Cu, cực âm Zn; $E^\\circ_{pin}=1{,}10$ V."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy $E^\\circ_{pin}=E^\\circ_{(-)}-E^\\circ_{(+)}$ ra số âm — sai vì công thức là cực dương trừ cực âm, cho sức điện động dương.",
+        "Nhầm anode là cực dương như trong bình điện phân — sai vì trong pin Galvani, anode (nơi oxi hoá) là cực **âm**.",
+        "Quên chia cho số electron $n$ trong phương trình Nernst — làm sai mức hiệu chỉnh thế theo nồng độ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dien-hoa",
+        "the-dien-cuc",
+        "suc-dien-dong",
+        "nernst"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.dien-phan-faraday-an-mon",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Lớp 12 - Chương: Pin điện và điện phân",
+      "order": 2,
+      "title_vi": "Điện phân, định luật Faraday và ăn mòn kim loại",
+      "title_en": "Electrolysis, Faraday's law and metallic corrosion",
+      "objectives": [
+        "Vận dụng định luật Faraday để tính khối lượng chất và thời gian trong điện phân",
+        "Xác định thứ tự điện phân ở các điện cực và giải thích cơ chế ăn mòn điện hoá"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.the-dien-cuc-pin-nernst"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Định luật Faraday",
+          "term_en": "Faraday's law",
+          "definition": "Khối lượng chất giải phóng ở điện cực tỉ lệ với điện lượng: $m=\\dfrac{A\\,I\\,t}{n\\,F}$, với $F=96500$ C/mol."
+        },
+        {
+          "term_vi": "Ăn mòn điện hoá",
+          "term_en": "Electrochemical corrosion",
+          "definition": "Sự phá huỷ kim loại do tạo thành pin điện hoá khi kim loại tiếp xúc với kim loại khác và chất điện li; kim loại hoạt động hơn bị ăn mòn."
+        }
+      ],
+      "content": "## Điện phân: dùng điện để ép phản ứng\n\nĐiện phân dùng dòng điện một chiều buộc phản ứng oxi hoá - khử **không tự xảy ra** phải xảy ra. Tại **catode (cực âm)** xảy ra khử (nhận electron), tại **anode (cực dương)** xảy ra oxi hoá. Lưu ý dấu cực ngược với pin Galvani.\n\n## Định luật Faraday định lượng\n\nSố mol electron trao đổi liên hệ với điện lượng:\n$$n_e = \\frac{I\\,t}{F}, \\qquad m = \\frac{A\\,I\\,t}{n\\,F}$$\nvới $I$ (A), $t$ (giây), $A$ khối lượng mol, $n$ số electron trao đổi tạo 1 nguyên tử/phân tử chất, $F=96500$ C/mol. Đây là công cụ tính khối lượng kim loại bám catode, thể tích khí ở anode, hoặc thời gian điện phân.\n\n## Thứ tự điện phân\n\n- **Catode**: ion kim loại có tính oxi hoá mạnh (đứng sau trong dãy điện hoá, như $\\mathrm{Cu^{2+}, Ag^+}$) bị khử trước; ion kim loại mạnh ($\\mathrm{Na^+, K^+, Al^{3+}}$) không bị khử trong dung dịch, thay vào đó nước bị khử tạo $\\mathrm{H_2}$.\n- **Anode** (trơ): $\\mathrm{Cl^-}$ bị oxi hoá trước, các gốc $\\mathrm{SO_4^{2-}, NO_3^-}$ không bị oxi hoá nên nước bị oxi hoá tạo $\\mathrm{O_2}$.\n\n## Ăn mòn điện hoá\n\nKhi hai kim loại khác nhau tiếp xúc trong dung dịch điện li, chúng tạo thành pin: kim loại hoạt động hơn (âm hơn) làm anode và **bị ăn mòn**, kim loại kém hoạt động được bảo vệ. Nguyên tắc này dùng để bảo vệ vỏ tàu bằng \"anode hi sinh\" (gắn Zn để bảo vệ Fe).\n\n## Khi nào dùng\n\nBài điện phân cho $I, t$: dùng $n_e=It/F$ rồi phân bổ electron cho các ion theo thứ tự. Bài ăn mòn: xác định kim loại nào là anode để biết kim loại nào bị phá huỷ.",
+      "formulas": [
+        "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+        "chemistry.thpt.dien-hoa.so-mol-electron-dien-phan",
+        "chemistry.thpt.dien-hoa.thoi-gian-dien-phan",
+        "chemistry.thpt.dien-hoa.an-mon-dien-hoa",
+        "chemistry.thpt.dien-hoa.thu-tu-dien-phan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Điện phân dung dịch $\\mathrm{CuSO_4}$ với điện cực trơ, cường độ dòng $I=5$ A trong $t=1930$ s. Tính khối lượng Cu bám ở catode ($\\mathrm{Cu}=64$, $F=96500$).",
+          "solution": "Tính số mol electron: $n_e=\\dfrac{It}{F}=\\dfrac{5\\times1930}{96500}=0{,}1$ mol.\nTại catode: $\\mathrm{Cu^{2+}}+2e\\to\\mathrm{Cu}$, mỗi Cu cần 2 electron nên $n_{\\mathrm{Cu}}=\\dfrac{n_e}{2}=0{,}05$ mol.\nKhối lượng: $m=0{,}05\\times64=3{,}2$ g.",
+          "answer": "$m_{\\mathrm{Cu}}=3{,}2$ g."
+        }
+      ],
+      "common_mistakes": [
+        "Quên chia số mol electron cho số electron $n$ của phản ứng điện cực — ví dụ tính $n_{\\mathrm{Cu}}=n_e$ thay vì $n_e/2$, cho khối lượng gấp đôi.",
+        "Cho rằng $\\mathrm{Na^+}$ hay $\\mathrm{Al^{3+}}$ bị khử ở catode trong dung dịch nước — sai vì nước bị khử trước, tạo $\\mathrm{H_2}$.",
+        "Nhầm kim loại kém hoạt động bị ăn mòn — sai vì trong pin ăn mòn, kim loại **hoạt động hơn** (đóng vai anode) mới bị phá huỷ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dien-phan",
+        "faraday",
+        "an-mon",
+        "dien-hoa"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.co2-so2-tac-dung-kiem",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Các dạng bài toán vô cơ giải nhanh",
+      "order": 1,
+      "title_vi": "Bài toán CO2, SO2 tác dụng với dung dịch kiềm",
+      "title_en": "CO2 and SO2 reacting with alkali solutions",
+      "objectives": [
+        "Xác định muối tạo thành khi cho CO2 (SO2) vào dung dịch kiềm dựa vào tỉ lệ T",
+        "Giải được bài toán ngược có hai nghiệm khi biết lượng kết tủa"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cac-dinh-luat-bao-toan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tỉ lệ T",
+          "term_en": "Ratio T",
+          "definition": "Tỉ số $T=\\dfrac{n_{\\mathrm{OH^-}}}{n_{\\mathrm{CO_2}}}$, quyết định sản phẩm là muối trung hoà, muối acid hay cả hai."
+        },
+        {
+          "term_vi": "Bài toán ngược hai nghiệm",
+          "term_en": "Two-solution inverse problem",
+          "definition": "Khi biết lượng kết tủa nhỏ hơn cực đại, lượng CO2 có thể ứng với hai giá trị: thiếu CO2 hoặc dư CO2 hoà tan bớt kết tủa."
+        }
+      ],
+      "content": "## Vì sao phải xét tỉ lệ\n\nKhi sục $\\mathrm{CO_2}$ vào dung dịch kiềm, có thể tạo muối trung hoà $\\mathrm{CO_3^{2-}}$, muối acid $\\mathrm{HCO_3^-}$, hoặc cả hai — tuỳ lượng $\\mathrm{OH^-}$ so với $\\mathrm{CO_2}$. Đặt:\n$$T = \\frac{n_{\\mathrm{OH^-}}}{n_{\\mathrm{CO_2}}}.$$\n- $T \\le 1$: chỉ tạo $\\mathrm{HCO_3^-}$ (CO2 dư hoặc vừa đủ tạo muối acid);\n- $1 < T < 2$: tạo **cả hai** muối;\n- $T \\ge 2$: chỉ tạo $\\mathrm{CO_3^{2-}}$ (kiềm dư).\n\n## Tính nhanh khi tạo hai muối\n\nDùng bảo toàn nguyên tố C và điện tích:\n$$n_{\\mathrm{CO_3^{2-}}} = n_{\\mathrm{OH^-}} - n_{\\mathrm{CO_2}}, \\qquad n_{\\mathrm{HCO_3^-}} = 2n_{\\mathrm{CO_2}} - n_{\\mathrm{OH^-}}.$$\nHai công thức này suy ra từ: bảo toàn C ($n_{\\mathrm{CO_3}}+n_{\\mathrm{HCO_3}}=n_{\\mathrm{CO_2}}$) và bảo toàn điện tích/OH ($2n_{\\mathrm{CO_3}}+n_{\\mathrm{HCO_3}}=n_{\\mathrm{OH^-}}$).\n\n## Bài toán ngược: cẩn thận hai nghiệm\n\nSục $\\mathrm{CO_2}$ vào $\\mathrm{Ca(OH)_2}$ tạo kết tủa $\\mathrm{CaCO_3}$. Nếu lượng kết tủa **nhỏ hơn cực đại**, có **hai** khả năng:\n- **Thiếu $\\mathrm{CO_2}$**: $n_{\\mathrm{CO_2}} = n_{\\downarrow}$;\n- **Dư $\\mathrm{CO_2}$** đã hoà tan bớt kết tủa thành $\\mathrm{Ca(HCO_3)_2}$: $n_{\\mathrm{CO_2}} = 2n_{\\mathrm{Ca(OH)_2}} - n_{\\downarrow}$.\nĐề thường yêu cầu tìm giá trị lớn nhất/nhỏ nhất, hoặc cả hai. Bỏ sót một nghiệm là lỗi kinh điển.\n\n## Khi nào dùng\n\nGặp \"sục khí vào kiềm\": tính $T$ để biết muối, rồi áp công thức. Gặp \"biết lượng kết tủa\": nghĩ ngay tới hai nghiệm.",
+      "formulas": [
+        "chemistry.thpt.co2-kiem.ti-le-t",
+        "chemistry.thpt.co2-kiem.san-pham-theo-t",
+        "chemistry.thpt.co2-kiem.so-mol-hai-muoi",
+        "chemistry.thpt.co2-kiem.bai-toan-nguoc-hai-nghiem",
+        "chemistry.thpt.co2-kiem.ket-tua-caco3",
+        "chemistry.thpt.co2-kiem.khoi-luong-dung-dich-thay-doi",
+        "chemistry.thpt.co2-kiem.so2-kiem",
+        "chemistry.thpt.co2-kiem.hon-hop-naoh-caoh2",
+        "chemistry.thpt.co2-kiem.hco3-tac-dung-oh",
+        "chemistry.thpt.co2-kiem.axit-vao-cacbonat",
+        "chemistry.thpt.co2-kiem.nhiet-phan-hidrocacbonat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Sục 0,3 mol $\\mathrm{CO_2}$ vào dung dịch chứa 0,5 mol NaOH. Tính khối lượng muối thu được sau phản ứng.",
+          "solution": "Tính $T=\\dfrac{n_{\\mathrm{OH^-}}}{n_{\\mathrm{CO_2}}}=\\dfrac{0{,}5}{0{,}3}\\approx1{,}67$, nằm giữa 1 và 2 nên tạo **cả hai** muối.\n$n_{\\mathrm{CO_3^{2-}}}=n_{\\mathrm{OH^-}}-n_{\\mathrm{CO_2}}=0{,}5-0{,}3=0{,}2$ mol $\\Rightarrow$ 0,2 mol $\\mathrm{Na_2CO_3}$.\n$n_{\\mathrm{HCO_3^-}}=2n_{\\mathrm{CO_2}}-n_{\\mathrm{OH^-}}=0{,}6-0{,}5=0{,}1$ mol $\\Rightarrow$ 0,1 mol $\\mathrm{NaHCO_3}$.\n$m=0{,}2\\times106+0{,}1\\times84=21{,}2+8{,}4=29{,}6$ g.",
+          "answer": "$m_{\\text{muối}}=29{,}6$ g (0,2 mol $\\mathrm{Na_2CO_3}$ và 0,1 mol $\\mathrm{NaHCO_3}$)."
+        }
+      ],
+      "common_mistakes": [
+        "Mặc định luôn tạo muối trung hoà mà không xét tỉ lệ $T$ — sai vì khi $\\mathrm{CO_2}$ dư sẽ tạo muối acid $\\mathrm{HCO_3^-}$.",
+        "Bài toán ngược chỉ lấy một nghiệm $n_{\\mathrm{CO_2}}=n_{\\downarrow}$ — bỏ sót nghiệm CO2 dư hoà tan bớt kết tủa, thiếu một đáp án.",
+        "Quên $\\mathrm{Ca(OH)_2}$ cho 2 mol $\\mathrm{OH^-}$ mỗi mol khi tính $n_{\\mathrm{OH^-}}$ — làm sai tỉ lệ $T$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "co2-kiem",
+        "ti-le-t",
+        "hai-nghiem",
+        "giai-nhanh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.muoi-nhom-kem-voi-kiem",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Các dạng bài toán vô cơ giải nhanh",
+      "order": 2,
+      "title_vi": "Muối nhôm, kẽm tác dụng với dung dịch kiềm",
+      "title_en": "Aluminium and zinc salts reacting with alkali",
+      "objectives": [
+        "Giải được bài toán lượng OH- tạo kết tủa Al(OH)3, Zn(OH)2 với hai nghiệm",
+        "Vận dụng tính lưỡng tính của hydroxide để tính lượng kết tủa cực đại và hoà tan"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cac-dinh-luat-bao-toan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hydroxide lưỡng tính",
+          "term_en": "Amphoteric hydroxide",
+          "definition": "Hydroxide vừa tan trong acid vừa tan trong kiềm dư, như $\\mathrm{Al(OH)_3}$, $\\mathrm{Zn(OH)_2}$."
+        },
+        {
+          "term_vi": "Bài toán hai nghiệm OH",
+          "term_en": "Two-solution OH problem",
+          "definition": "Với lượng kết tủa cho trước nhỏ hơn cực đại, lượng $\\mathrm{OH^-}$ có hai giá trị: vừa đủ tạo kết tủa hoặc dư hoà tan bớt kết tủa."
+        }
+      ],
+      "content": "## Đặc điểm quyết định: tính lưỡng tính\n\nCho từ từ $\\mathrm{OH^-}$ vào dung dịch $\\mathrm{Al^{3+}}$: đầu tiên tạo kết tủa $\\mathrm{Al(OH)_3}$, đạt **cực đại** khi $n_{\\mathrm{OH^-}}=3n_{\\mathrm{Al^{3+}}}$. Thêm $\\mathrm{OH^-}$ nữa, kết tủa **tan** dần thành $\\mathrm{AlO_2^-}$ (aluminate) và biến mất hết khi $n_{\\mathrm{OH^-}}=4n_{\\mathrm{Al^{3+}}}$.\n\n## Hai nghiệm cho một lượng kết tủa\n\nNếu đề cho lượng kết tủa $n_\\downarrow < n_\\downarrow^{max}$, có **hai giá trị** $\\mathrm{OH^-}$:\n- **Kết tủa chưa cực đại** (thiếu OH): $n_{\\mathrm{OH^-}} = 3n_\\downarrow$;\n- **Kết tủa đã bị hoà tan bớt** (dư OH): $n_{\\mathrm{OH^-}} = 4n_{\\mathrm{Al^{3+}}} - n_\\downarrow$.\nĐồ thị lượng kết tủa theo $n_{\\mathrm{OH^-}}$ có dạng tam giác: tăng tuyến tính đến đỉnh rồi giảm, nên mỗi mức kết tủa (trừ đỉnh) cắt đồ thị hai lần.\n\n## Với kẽm hệ số khác\n\n$\\mathrm{Zn^{2+}}$ cũng lưỡng tính nhưng: kết tủa cực đại khi $n_{\\mathrm{OH^-}}=2n_{\\mathrm{Zn^{2+}}}$, tan hết khi $n_{\\mathrm{OH^-}}=4n_{\\mathrm{Zn^{2+}}}$. Nghiệm dư: $n_{\\mathrm{OH^-}}=4n_{\\mathrm{Zn^{2+}}}-2n_\\downarrow$.\n\n## Hỗn hợp Na, Al vào nước\n\nNa tác dụng nước tạo NaOH, NaOH lại hoà tan Al. Al chỉ tan hết khi $n_{\\mathrm{NaOH}}\\ge n_{\\mathrm{Al}}$ (tỉ lệ 1:1 tạo $\\mathrm{NaAlO_2}$). Khí $\\mathrm{H_2}$ gồm phần từ Na và phần từ Al.\n\n## Khi nào dùng\n\nGặp \"nhỏ từ từ kiềm vào muối nhôm/kẽm, thu được x mol kết tủa\": nghĩ ngay hai nghiệm, so với cực đại để biết có hoà tan hay chưa.",
+      "formulas": [
+        "chemistry.thpt.nhom-kem.ket-tua-al-theo-oh",
+        "chemistry.thpt.nhom-kem.ket-tua-al-cuc-dai",
+        "chemistry.thpt.nhom-kem.bai-toan-nguoc-al3",
+        "chemistry.thpt.nhom-kem.hon-hop-na-al-vao-nuoc",
+        "chemistry.thpt.nhom-kem.ket-tua-zn-theo-oh",
+        "chemistry.thpt.nhom-kem.aluminat-tac-dung-axit",
+        "chemistry.thpt.nhom-kem.al-tac-dung-naoh"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho từ từ dung dịch NaOH vào 200 mL dung dịch $\\mathrm{AlCl_3}$ 1 M, thu được 0,1 mol kết tủa $\\mathrm{Al(OH)_3}$. Tính số mol NaOH đã dùng.",
+          "solution": "Tính $n_{\\mathrm{Al^{3+}}}=0{,}2\\times1=0{,}2$ mol; kết tủa cực đại là $0{,}2$ mol. Vì thu 0,1 mol $<0{,}2$ nên có **hai nghiệm**:\n- Nghiệm 1 (chưa cực đại): $n_{\\mathrm{NaOH}}=3n_\\downarrow=3\\times0{,}1=0{,}3$ mol.\n- Nghiệm 2 (đã hoà tan bớt): $n_{\\mathrm{NaOH}}=4n_{\\mathrm{Al^{3+}}}-n_\\downarrow=4\\times0{,}2-0{,}1=0{,}7$ mol.\nVậy $n_{\\mathrm{NaOH}}=0{,}3$ mol hoặc $0{,}7$ mol.",
+          "answer": "$n_{\\mathrm{NaOH}}=0{,}3$ mol hoặc $0{,}7$ mol."
+        }
+      ],
+      "common_mistakes": [
+        "Chỉ lấy nghiệm $n_{\\mathrm{OH^-}}=3n_\\downarrow$ mà quên nghiệm kiềm dư hoà tan bớt kết tủa — thiếu một đáp số.",
+        "Dùng hệ số của nhôm (3 và 4) cho kẽm — sai vì $\\mathrm{Zn^{2+}}$ có cực đại ở $2n$ và tan hết ở $4n$.",
+        "Cho rằng $\\mathrm{Al(OH)_3}$ tan trong kiềm yếu như $\\mathrm{NH_3}$ — sai vì $\\mathrm{Al(OH)_3}$ chỉ tan trong kiềm mạnh (NaOH, KOH), không tan trong $\\mathrm{NH_3}$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "nhom-kem",
+        "luong-tinh",
+        "hai-nghiem",
+        "giai-nhanh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.kim-loai-hno3-h2so4-dac",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Các dạng bài toán vô cơ giải nhanh",
+      "order": 3,
+      "title_vi": "Kim loại tác dụng với HNO3 và H2SO4 đặc",
+      "title_en": "Metals reacting with nitric acid and hot concentrated sulfuric acid",
+      "objectives": [
+        "Vận dụng bảo toàn electron để tính số mol khí và số mol kim loại phản ứng",
+        "Tính được khối lượng muối và lượng axit phản ứng, kể cả trường hợp tạo NH4NO3"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cac-dinh-luat-bao-toan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bảo toàn electron trong phản ứng với axit oxi hoá",
+          "term_en": "Electron balance with oxidising acid",
+          "definition": "Tổng electron kim loại nhường bằng tổng electron mà N (trong $\\mathrm{HNO_3}$) hoặc S (trong $\\mathrm{H_2SO_4}$ đặc) nhận để tạo sản phẩm khử."
+        },
+        {
+          "term_vi": "Khối lượng muối nitrat",
+          "term_en": "Mass of nitrate salt",
+          "definition": "$m_{\\text{muối}}=m_{\\text{kim loại}}+62\\,n_{\\mathrm{NO_3^-\\,trong\\,muối}}$, với $n_{\\mathrm{NO_3^-}}=n_e$ trao đổi (chưa kể $\\mathrm{NH_4NO_3}$)."
+        }
+      ],
+      "content": "## Axit oxi hoá mạnh: N và S nhận electron\n\nVới $\\mathrm{HNO_3}$ và $\\mathrm{H_2SO_4}$ đặc, chất oxi hoá không phải $\\mathrm{H^+}$ mà là $\\mathrm{N^{+5}}$ và $\\mathrm{S^{+6}}$. Kim loại bị oxi hoá lên hoá trị cao, N/S bị khử tạo các sản phẩm: $\\mathrm{NO_2, NO, N_2O, N_2, NH_4^+}$ (với $\\mathrm{HNO_3}$) hoặc $\\mathrm{SO_2, S, H_2S}$ (với $\\mathrm{H_2SO_4}$ đặc). Vì thế **không có khí $\\mathrm{H_2}$**.\n\n## Số electron mỗi sản phẩm khử nhận\n\n$$\\begin{array}{ll}\\mathrm{NO_2}: 1e & \\mathrm{NO}: 3e\\\\ \\mathrm{N_2O}: 8e & \\mathrm{N_2}: 10e\\\\ \\mathrm{NH_4^+}: 8e & \\mathrm{SO_2}: 2e\\end{array}$$\nBảo toàn electron: $\\sum n_e(\\text{kim loại cho}) = \\sum (\\text{số } e \\times n_{\\text{sản phẩm}})$.\n\n## Công thức khối lượng muối\n\nMuối nitrat: $m_{\\text{muối}} = m_{\\text{kim loại}} + 62\\,n_{\\mathrm{NO_3^-(muối)}}$, mà $n_{\\mathrm{NO_3^-(muối)}} = n_e$ trao đổi. Nếu có $\\mathrm{NH_4NO_3}$ thì cộng thêm khối lượng của nó.\nMuối sulfat: $m_{\\text{muối}} = m_{\\text{kim loại}} + 96\\,n_{\\mathrm{SO_4^{2-}(muối)}}$, với $n_{\\mathrm{SO_4^{2-}}} = \\tfrac12 n_e$ (vì gốc mang điện $2-$).\n\n## Cảnh giác NH4NO3\n\nKhi kim loại mạnh (Mg, Al, Zn) + $\\mathrm{HNO_3}$ rất loãng, có thể tạo $\\mathrm{NH_4NO_3}$ không thoát khí. Nếu bài cho \"không có khí\" hoặc electron cho nhiều hơn electron khí nhận, phần chênh lệch chính là electron tạo $\\mathrm{NH_4^+}$: $n_{\\mathrm{NH_4NO_3}} = (n_e - n_{e\\,khí})/8$.\n\n## Khi nào dùng\n\nMọi bài kim loại + $\\mathrm{HNO_3}$/$\\mathrm{H_2SO_4}$ đặc: viết bảo toàn electron trước, rồi mới tính khối lượng muối và axit ($n_{\\mathrm{HNO_3}}=n_{\\mathrm{NO_3^-(muối)}}+n_{\\mathrm{N(khí)}}+n_{\\mathrm{N(NH_4)}}$).",
+      "formulas": [
+        "chemistry.thpt.bao-toan.bao-toan-electron",
+        "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi",
+        "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-nitrat",
+        "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-co-nh4no3",
+        "chemistry.thpt.kim-loai-h2so4-dac.khoi-luong-muoi",
+        "chemistry.thpt.sat.fe-tac-dung-hno3",
+        "chemistry.thpt.kim-loai-hno3.so-mol-hno3-phan-ung",
+        "chemistry.thpt.kim-loai-hno3.so-mol-nh4no3",
+        "chemistry.thpt.kim-loai-hno3.ion-h-va-no3",
+        "chemistry.thpt.kim-loai-h2so4-dac.so-mol-electron",
+        "chemistry.thpt.kim-loai-h2so4-dac.so-mol-axit"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hoà tan hết 0,3 mol Cu bằng dung dịch $\\mathrm{HNO_3}$, thu khí NO (duy nhất). Tính thể tích NO ở điều kiện chuẩn (25$^\\circ$C, 1 bar; $V_m=24{,}79$ L/mol) và khối lượng muối.",
+          "solution": "Cu $\\to \\mathrm{Cu^{2+}}$ cho 2e, tổng electron cho $=2\\times0{,}3=0{,}6$ mol.\nNO nhận 3e nên $n_{\\mathrm{NO}}=\\dfrac{0{,}6}{3}=0{,}2$ mol $\\Rightarrow V=0{,}2\\times24{,}79=4{,}96$ L.\nMuối $\\mathrm{Cu(NO_3)_2}$: $n_{\\mathrm{NO_3^-(muối)}}=n_e=0{,}6$ mol nên $m=m_{\\mathrm{Cu}}+62\\times0{,}6=0{,}3\\times64+37{,}2=19{,}2+37{,}2=56{,}4$ g. (Kiểm tra: $0{,}3\\times188=56{,}4$ g.)",
+          "answer": "$V_{\\mathrm{NO}}=4{,}96$ L; $m_{\\text{muối}}=56{,}4$ g."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng kim loại + $\\mathrm{HNO_3}$ hay $\\mathrm{H_2SO_4}$ đặc sinh khí $\\mathrm{H_2}$ — sai vì chất oxi hoá là N/S, sản phẩm khử là $\\mathrm{NO_x, SO_2}$..., không phải $\\mathrm{H_2}$.",
+        "Bỏ qua khả năng tạo $\\mathrm{NH_4NO_3}$ khi kim loại mạnh gặp $\\mathrm{HNO_3}$ loãng — làm thiếu electron và sai khối lượng muối.",
+        "Lấy $n_{\\mathrm{SO_4^{2-}}}=n_e$ thay vì $n_e/2$ khi tính muối sulfat — sai vì gốc $\\mathrm{SO_4^{2-}}$ mang điện tích $2-$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "kim-loai-hno3",
+        "h2so4-dac",
+        "bao-toan-electron",
+        "nh4no3",
+        "giai-nhanh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.kim-loai-axit-loang-khu-oxit-nhiet-nhom",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Các dạng bài toán vô cơ giải nhanh",
+      "order": 4,
+      "title_vi": "Kim loại với axit loãng, khử oxit kim loại và nhiệt nhôm",
+      "title_en": "Metals with dilute acids, reduction of metal oxides and thermite reactions",
+      "objectives": [
+        "Tính khối lượng muối và thể tích H2 khi kim loại tác dụng axit loãng bằng bảo toàn",
+        "Vận dụng bảo toàn nguyên tố và khối lượng cho phản ứng khử oxit và nhiệt nhôm"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cac-dinh-luat-bao-toan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Khối lượng muối từ axit loãng",
+          "term_en": "Salt mass from dilute acid",
+          "definition": "$m_{\\text{muối}}=m_{\\text{kim loại}}+m_{\\text{gốc acid}}$, với $n_{\\text{gốc}}$ suy từ $n_{\\mathrm{H_2}}$: HCl cho $2\\mathrm{Cl^-}$ mỗi $\\mathrm{H_2}$, $\\mathrm{H_2SO_4}$ loãng cho $1\\,\\mathrm{SO_4^{2-}}$ mỗi $\\mathrm{H_2}$."
+        },
+        {
+          "term_vi": "Phản ứng nhiệt nhôm",
+          "term_en": "Thermite reaction",
+          "definition": "Phản ứng $\\mathrm{2Al + Fe_2O_3 \\to Al_2O_3 + 2Fe}$ toả nhiệt mạnh, dùng bảo toàn khối lượng và nguyên tố để tính."
+        }
+      ],
+      "content": "## Kim loại + axit loãng: chỉ $\\mathrm{H^+}$ oxi hoá\n\nVới HCl, $\\mathrm{H_2SO_4}$ loãng, chất oxi hoá là $\\mathrm{H^+}$, sản phẩm khử là khí $\\mathrm{H_2}$. Bảo toàn electron: $n_e = 2n_{\\mathrm{H_2}}$. Khối lượng muối:\n$$m_{\\text{muối}} = m_{\\text{kim loại}} + m_{\\text{gốc acid}},$$\nvới HCl: $n_{\\mathrm{Cl^-}}=2n_{\\mathrm{H_2}}$; với $\\mathrm{H_2SO_4}$ loãng: $n_{\\mathrm{SO_4^{2-}}}=n_{\\mathrm{H_2}}$. (Kim loại đứng sau H như Cu không phản ứng.)\n\n## Khử oxit kim loại bằng CO, H2\n\n$\\mathrm{CO}$ hoặc $\\mathrm{H_2}$ lấy oxi của oxit kim loại (sau Al) tạo kim loại + $\\mathrm{CO_2}$ (hoặc $\\mathrm{H_2O}$). Mấu chốt là **bảo toàn nguyên tố oxi**: mỗi mol CO lấy 1 mol O. Khối lượng chất rắn giảm đúng bằng khối lượng oxi bị lấy đi:\n$$m_{\\text{rắn giảm}} = 16\\,n_{\\mathrm{O\\,bị\\,khử}} = 16\\,n_{\\mathrm{CO}} = 16\\,n_{\\mathrm{CO_2}}.$$\n\n## Nhiệt nhôm\n\n$\\mathrm{2Al + Fe_2O_3 \\to Al_2O_3 + 2Fe}$. Vì là phản ứng rắn - rắn, dùng **bảo toàn khối lượng** (khối lượng hỗn hợp không đổi trước và sau) và **bảo toàn nguyên tố** (Al, Fe, O). Hiệu suất tính theo chất phản ứng hết trước. Hỗn hợp sau gồm $\\mathrm{Fe, Al_2O_3}$ và có thể còn Al hoặc $\\mathrm{Fe_2O_3}$ dư.\n\n## Khi nào dùng\n\n- \"Kim loại + HCl/$\\mathrm{H_2SO_4}$ loãng, V lít $\\mathrm{H_2}$\": dùng $m_{\\text{muối}}=m_{KL}+m_{\\text{gốc}}$.\n- \"Khử oxit thu m gam kim loại\": bảo toàn khối lượng, chú ý khối lượng O mất đi.\n- \"Nhiệt nhôm hiệu suất H%\": bảo toàn khối lượng + nguyên tố.",
+      "formulas": [
+        "chemistry.thpt.kim-loai-axit-loang.hcl-khoi-luong-muoi",
+        "chemistry.thpt.kim-loai-axit-loang.h2so4-loang-khoi-luong-muoi",
+        "chemistry.thpt.oxit-axit.khu-oxit-bang-co",
+        "chemistry.thpt.nhiet-nhom.phuong-trinh-va-bao-toan",
+        "chemistry.thpt.nhiet-nhom.hieu-suat",
+        "chemistry.thpt.oxit-axit.oxit-tac-dung-hcl",
+        "chemistry.thpt.oxit-axit.oxit-tac-dung-h2so4",
+        "chemistry.thpt.kim-loai-muoi.tang-giam-khoi-luong",
+        "chemistry.thpt.kim-loai-nuoc.kiem-kiem-tho-tac-dung-nuoc",
+        "chemistry.thpt.kim-loai-axit-loang.hon-hop-hai-axit",
+        "chemistry.thpt.oxit-axit.khu-oxit-bang-h2",
+        "chemistry.thpt.oxit-axit.khoi-luong-kim-loai-sau-khu",
+        "chemistry.thpt.oxit-axit.quy-doi-fe-oxit-sat",
+        "chemistry.thpt.oxit-axit.quy-doi-hon-hop-sat-hcl"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Khử hoàn toàn 16 g $\\mathrm{Fe_2O_3}$ bằng khí CO dư ở nhiệt độ cao. Tính khối lượng Fe thu được và số mol $\\mathrm{CO_2}$ sinh ra ($\\mathrm{Fe}=56, O=16$).",
+          "solution": "$n_{\\mathrm{Fe_2O_3}}=\\dfrac{16}{160}=0{,}1$ mol. Phản ứng $\\mathrm{Fe_2O_3+3CO\\to2Fe+3CO_2}$.\nBảo toàn nguyên tố Fe: $n_{\\mathrm{Fe}}=2\\times0{,}1=0{,}2$ mol $\\Rightarrow m_{\\mathrm{Fe}}=0{,}2\\times56=11{,}2$ g.\nMỗi $\\mathrm{Fe_2O_3}$ có 3 O bị CO lấy $\\Rightarrow n_{\\mathrm{CO_2}}=3\\times0{,}1=0{,}3$ mol.\nKiểm tra bằng khối lượng: O bị lấy $=0{,}3\\times16=4{,}8$ g; $16-4{,}8=11{,}2$ g Fe, khớp.",
+          "answer": "$m_{\\mathrm{Fe}}=11{,}2$ g; $n_{\\mathrm{CO_2}}=0{,}3$ mol."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng Cu (đứng sau H) tan trong HCl hay $\\mathrm{H_2SO_4}$ loãng — sai vì chỉ kim loại đứng trước H mới khử được $\\mathrm{H^+}$ thành $\\mathrm{H_2}$.",
+        "Lấy $n_{\\mathrm{SO_4^{2-}}}=2n_{\\mathrm{H_2}}$ với $\\mathrm{H_2SO_4}$ loãng — sai vì mỗi $\\mathrm{H_2}$ ứng với 1 gốc $\\mathrm{SO_4^{2-}}$ (do $\\mathrm{H_2SO_4}$ cho 2 H$^+$).",
+        "Tính khối lượng chất rắn sau khử mà quên trừ khối lượng oxi bị lấy đi — làm sai khối lượng kim loại thu được."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "axit-loang",
+        "khu-oxit",
+        "nhiet-nhom",
+        "bao-toan-khoi-luong"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.dien-phan-dung-dich-nuoc-cung-phan-bon",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Các dạng bài toán vô cơ giải nhanh",
+      "order": 5,
+      "title_vi": "Điện phân dung dịch, nước cứng và phân bón hoá học",
+      "title_en": "Solution electrolysis, water hardness and chemical fertilisers",
+      "objectives": [
+        "Xác định sản phẩm và tính lượng chất khi điện phân dung dịch muối",
+        "Tính độ cứng của nước, lượng hoá chất làm mềm nước và độ dinh dưỡng của phân bón"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.dien-phan-faraday-an-mon",
+        "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.cac-dinh-luat-bao-toan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nước cứng",
+          "term_en": "Hard water",
+          "definition": "Nước chứa nhiều ion $\\mathrm{Ca^{2+}}$, $\\mathrm{Mg^{2+}}$; làm mềm bằng cách kết tủa hai ion này (dùng $\\mathrm{Na_2CO_3}$, $\\mathrm{Ca(OH)_2}$...)."
+        },
+        {
+          "term_vi": "Độ dinh dưỡng phân bón",
+          "term_en": "Fertiliser nutrient content",
+          "definition": "Phần trăm khối lượng nguyên tố dinh dưỡng: đạm theo %N, lân theo $\\%\\mathrm{P_2O_5}$, kali theo $\\%\\mathrm{K_2O}$."
+        }
+      ],
+      "content": "## Điện phân dung dịch: nước cũng tham gia\n\nKhác điện phân nóng chảy, trong dung dịch nước có thể bị điện phân. Thứ tự (điện cực trơ):\n- **Catode**: $\\mathrm{Ag^+, Cu^{2+}}$... bị khử trước; hết ion kim loại yếu thì nước bị khử: $\\mathrm{2H_2O+2e\\to H_2+2OH^-}$. Ion $\\mathrm{Na^+, K^+, Al^{3+}}$ không bị khử.\n- **Anode**: $\\mathrm{Cl^-}$ bị oxi hoá tạo $\\mathrm{Cl_2}$; hết $\\mathrm{Cl^-}$ hoặc với gốc $\\mathrm{SO_4^{2-}, NO_3^-}$ thì nước bị oxi hoá: $\\mathrm{2H_2O\\to O_2+4H^++4e}$.\nDùng bảo toàn electron hai cực ($n_e$ như nhau) và định luật Faraday để tính.\n\n## Nước cứng và cách làm mềm\n\nNước cứng do $\\mathrm{Ca^{2+}, Mg^{2+}}$. Làm mềm = kết tủa hai ion đó. $\\mathrm{Na_2CO_3}$ kết tủa cả hai: mỗi mol $\\mathrm{CO_3^{2-}}$ loại 1 mol $\\mathrm{M^{2+}}$, nên $n_{\\mathrm{Na_2CO_3}} = n_{\\mathrm{Ca^{2+}}}+n_{\\mathrm{Mg^{2+}}}$. Nước cứng tạm thời (chứa $\\mathrm{HCO_3^-}$) còn làm mềm được bằng cách đun sôi.\n\n## Độ dinh dưỡng của phân bón\n\n- Phân **đạm** đánh giá qua $\\%\\mathrm{N}$. Ví dụ urea $(\\mathrm{NH_2})_2\\mathrm{CO}$ ($M=60$) có $\\%\\mathrm{N}=\\dfrac{28}{60}\\times100\\%\\approx46{,}7\\%$ — cao nhất trong các phân đạm.\n- Phân **lân** đánh giá qua $\\%\\mathrm{P_2O_5}$.\n- Phân **kali** đánh giá qua $\\%\\mathrm{K_2O}$.\nQuy đổi: từ số mol N (hoặc P, K) trong công thức, suy khối lượng nguyên tố dinh dưỡng rồi chia khối lượng phân.\n\n## Khi nào dùng\n\nGặp điện phân dung dịch: xác định thứ tự điện cực rồi Faraday. Gặp nước cứng: đếm $\\mathrm{Ca^{2+}+Mg^{2+}}$. Gặp phân bón: quy về phần trăm nguyên tố dinh dưỡng.",
+      "formulas": [
+        "chemistry.thpt.dien-phan.thu-tu-catot",
+        "chemistry.thpt.dien-phan.thu-tu-anot",
+        "chemistry.thpt.nuoc-cung.lam-mem-nuoc",
+        "chemistry.thpt.nuoc-cung.do-cung-tong-cong",
+        "chemistry.thpt.phan-bon.do-dinh-duong-dam",
+        "chemistry.thpt.dien-phan.so-mol-electron",
+        "chemistry.thpt.dien-phan.khoi-luong-catot",
+        "chemistry.thpt.dien-phan.thay-doi-ph",
+        "chemistry.thpt.phan-bon.do-dinh-duong-lan",
+        "chemistry.thpt.phan-bon.do-dinh-duong-kali"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một mẫu nước cứng chứa 0,002 mol $\\mathrm{Ca^{2+}}$ và 0,001 mol $\\mathrm{Mg^{2+}}$ trong 1 L. Tính thể tích dung dịch $\\mathrm{Na_2CO_3}$ 0,1 M cần dùng để làm mềm hoàn toàn 1 L nước này.",
+          "solution": "Làm mềm = kết tủa hết $\\mathrm{Ca^{2+}, Mg^{2+}}$ dưới dạng $\\mathrm{CaCO_3, MgCO_3}$. Mỗi mol $\\mathrm{M^{2+}}$ cần 1 mol $\\mathrm{CO_3^{2-}}$.\n$n_{\\mathrm{Na_2CO_3}} = n_{\\mathrm{Ca^{2+}}}+n_{\\mathrm{Mg^{2+}}} = 0{,}002+0{,}001 = 0{,}003$ mol.\n$V = \\dfrac{n}{C} = \\dfrac{0{,}003}{0{,}1} = 0{,}03$ L $= 30$ mL.",
+          "answer": "Cần 30 mL dung dịch $\\mathrm{Na_2CO_3}$ 0,1 M."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng $\\mathrm{Na^+}$ bị khử ở catode khi điện phân dung dịch NaCl — sai vì nước bị khử trước tạo $\\mathrm{H_2}$ và $\\mathrm{OH^-}$.",
+        "Tính lượng $\\mathrm{Na_2CO_3}$ chỉ theo $\\mathrm{Ca^{2+}}$ mà bỏ $\\mathrm{Mg^{2+}}$ — sai vì cả hai ion đều gây cứng và đều bị kết tủa.",
+        "Đánh giá phân đạm theo khối lượng phân thay vì phần trăm N — sai vì độ dinh dưỡng quy về hàm lượng nguyên tố dinh dưỡng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "dien-phan-dung-dich",
+        "nuoc-cung",
+        "phan-bon",
+        "giai-nhanh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.vn-thpt-chemistry-daicuong-voco.xac-dinh-cong-thuc-chat-vo-co",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương 6: Kim loại và Hợp chất vô cơ",
+      "order": 10,
+      "title_vi": "Phương pháp xác định công thức chất vô cơ, Oxit kim loại và Muối ngậm nước",
+      "title_en": "Methods for determining inorganic formulas: Metal oxides and hydrated salts",
+      "objectives": [
+        "Thiết lập công thức oxit kim loại MxOy dựa trên thành phần phần trăm khối lượng và phản ứng khử",
+        "Xác định kim loại chưa biết thông qua khối lượng mol tương đương và hoá trị",
+        "Tìm số phân tử nước kết tinh trong muối ngậm nước qua phương pháp nung"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Oxit kim loại MxOy",
+          "term_en": "Metal oxide stoichiometry",
+          "definition": "Tỉ lệ x/y = (m_M / M_M) : (m_O / 16) xác định công thức đơn giản nhất của oxit kim loại."
+        },
+        {
+          "term_vi": "Muối ngậm nước",
+          "term_en": "Hydrated salt",
+          "definition": "Hợp chất tinh thể chứa nước kết tinh theo tỉ lệ số mol xác định n_H2O / n_muối_khan."
+        }
+      ],
+      "content": "## Xác định kim loại chưa biết\n\nCho $m$ gam kim loại $M$ hoá trị $n$ tác dụng với axit hoặc phi kim. Số mol kim loại liên hệ với số mol electron trao đổi:\n\n$$n_M = \\frac{m}{M_M} = \\frac{n_e}{n} \\Rightarrow M_M = \\frac{m \\cdot n}{n_e}$$\n\nLập bảng biện luận theo hoá trị thông thường $n \\in \\{1, 2, 3\\}$ để tìm kim loại phù hợp.\n\n## Xác định oxit kim loại và muối ngậm nước\n\n- Oxit kim loại $M_xO_y$: Tìm tỉ lệ $x : y = \\frac{\\%m_M}{M_M} : \\frac{\\%m_O}{16}$.\n- Muối ngậm nước $A \\cdot n H_2O$: Khi nung nóng, nước bay hơi hoàn toàn. Số phân tử nước $n = \\frac{n_{H_2O}}{n_{muối\\ khan}} = \\frac{m_{giảm} / 18}{m_{rắn\\ sau} / M_{muối\\ khan}}$.",
+      "formulas": [
+        "chemistry.thpt.xac-dinh-cong-thuc.kim-loai-chua-biet",
+        "chemistry.thpt.xac-dinh-cong-thuc.oxit-kim-loai",
+        "chemistry.thpt.xac-dinh-cong-thuc.muoi-ngam-nuoc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nung $10.0\\text{ g}$ muối ngậm nước $CuSO_4 \\cdot n H_2O$ đến khối lượng không đổi thu được $6.4\\text{ g}$ muối khan $CuSO_4$. Xác định công thức phân tử của muối ngậm nước.",
+          "solution": "Khối lượng nước bay hơi: $m_{H_2O} = 10.0 - 6.4 = 3.6\\text{ g}$. Số mol nước: $n_{H_2O} = \\frac{3.6}{18} = 0.2\\text{ mol}$. Số mol $CuSO_4$ khan ($M = 160\\text{ g/mol}$): $n_{CuSO_4} = \\frac{6.4}{160} = 0.04\\text{ mol}$. Tỉ lệ số phân tử nước: $n = \\frac{n_{H_2O}}{n_{CuSO_4}} = \\frac{0.2}{0.04} = 5$.",
+          "answer": "Công thức muối ngậm nước là $CuSO_4 \\cdot 5H_2O$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên biện luận hoá trị n của kim loại chuyển tiếp (ví dụ Fe có thể có hoá trị 2 hoặc 3)",
+        "Lấy khối lượng muối ngậm nước ban đầu chia trực tiếp cho khối lượng mol muối khan"
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "oxit-kim-loai",
+        "muoi-ngam-nuoc",
+        "xac-dinh-cong-thuc",
+        "hoa-hoc-vo-co"
+      ]
+    }
+  ]
+}

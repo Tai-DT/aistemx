@@ -1,0 +1,3036 @@
+{
+  "meta": {
+    "file": "ext3-math-daihoc.json",
+    "subject": "math",
+    "title": "Bài tập bổ sung Toán đại học - đợt 3 (công thức chưa có bài tập)",
+    "levels": [
+      "dai-hoc"
+    ],
+    "count": 70
+  },
+  "problems": [
+    {
+      "id": "prob.math.ext3-math-daihoc.0001",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính tích phân xác định I = ∫ từ 2 đến 5 của 1/(x-1) dx.",
+      "statement_en": "Evaluate I = ∫ from 2 to 5 of 1/(x-1) dx.",
+      "answer": "ln 4 ≈ 1.3863",
+      "solution_steps": [
+        {
+          "explain": "Phân thức tối giản loại một có nguyên hàm là logarit của trị tuyệt đối mẫu.",
+          "latex": "\\int \\frac{dx}{x-1} = \\ln\\left|x-1\\right| + C"
+        },
+        {
+          "explain": "Thay cận trên và cận dưới rồi dùng tính chất hiệu logarit.",
+          "latex": "I = \\ln 4 - \\ln 1 = \\ln 4 \\approx 1.3863"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.phan-thuc-toi-gian-loai-mot"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "nguyên hàm phân thức tối giản",
+        "tính tích phân xác định"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "phan-thuc"
+      ],
+      "answer_numeric": 1.3863,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0002",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Dùng phép đổi biến tính I = ∫ từ 0 đến 1 của x·e^(x^2) dx.",
+      "statement_en": "Use substitution to evaluate I = ∫ from 0 to 1 of x·e^(x^2) dx.",
+      "answer": "(e-1)/2 ≈ 0.8591",
+      "solution_steps": [
+        {
+          "explain": "Đặt u = x^2 nên du = 2x dx, đổi cận x:0→1 thành u:0→1.",
+          "latex": "u = x^{2},\\quad du = 2x\\,dx"
+        },
+        {
+          "explain": "Tích phân trở thành nửa tích phân của e mũ u; lấy nguyên hàm và thay cận.",
+          "latex": "I = \\frac{1}{2}\\int_{0}^{1} e^{u}\\,du = \\frac{1}{2}\\left(e^{1}-e^{0}\\right) = \\frac{e-1}{2} \\approx 0.8591"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.doi-bien-so"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "chọn phép đổi biến",
+        "đổi cận tích phân"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "doi-bien"
+      ],
+      "answer_numeric": 0.8591,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0003",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính I = ∫ từ 0 đến 2 của 1/(x^2+4) dx (mẫu là tam thức bậc hai vô nghiệm).",
+      "statement_en": "Evaluate I = ∫ from 0 to 2 of 1/(x^2+4) dx.",
+      "answer": "π/8 ≈ 0.3927",
+      "solution_steps": [
+        {
+          "explain": "Với mẫu x^2 + a^2, nguyên hàm là (1/a)·arctan(x/a); ở đây a = 2.",
+          "latex": "\\int \\frac{dx}{x^{2}+4} = \\frac{1}{2}\\arctan\\frac{x}{2} + C"
+        },
+        {
+          "explain": "Thay cận: arctan(1) = π/4, arctan(0) = 0.",
+          "latex": "I = \\frac{1}{2}\\left(\\arctan 1 - \\arctan 0\\right) = \\frac{1}{2}\\cdot\\frac{\\pi}{4} = \\frac{\\pi}{8} \\approx 0.3927"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.phan-thuc-toi-gian-loai-hai"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "nhận dạng mẫu bậc hai vô nghiệm",
+        "nguyên hàm arctan"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "arctan"
+      ],
+      "answer_numeric": 0.3927,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0004",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Dùng phép thế lượng giác tính diện tích một phần tư hình tròn: I = ∫ từ 0 đến 1 của căn(1-x^2) dx.",
+      "statement_en": "Use trig substitution to evaluate I = ∫ from 0 to 1 of sqrt(1-x^2) dx.",
+      "answer": "π/4 ≈ 0.7854",
+      "solution_steps": [
+        {
+          "explain": "Đặt x = sin t, dx = cos t dt; căn(1-x^2) = cos t (với t ∈ [0, π/2]).",
+          "latex": "x = \\sin t,\\quad \\sqrt{1-x^{2}} = \\cos t,\\quad dx = \\cos t\\,dt"
+        },
+        {
+          "explain": "Tích phân thành ∫ cos^2 t dt trên [0, π/2]; dùng công thức hạ bậc.",
+          "latex": "I = \\int_{0}^{\\pi/2}\\cos^{2} t\\,dt = \\frac{1}{2}\\left(t + \\frac{\\sin 2t}{2}\\right)\\Big|_{0}^{\\pi/2} = \\frac{\\pi}{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.the-luong-giac"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "chọn phép thế lượng giác",
+        "hạ bậc cos bình phương"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "the-luong-giac"
+      ],
+      "answer_numeric": 0.7854,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0005",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức truy hồi cho I_n = ∫ từ 0 đến +∞ của dx/(x^2+1)^n. Biết I_1 = π/2, hãy tính I_2.",
+      "statement_en": "Using the reduction formula for I_n = ∫ from 0 to ∞ of dx/(x^2+1)^n with I_1 = π/2, find I_2.",
+      "answer": "π/4 ≈ 0.7854",
+      "solution_steps": [
+        {
+          "explain": "Công thức truy hồi (a = 1) liên hệ I_n với I_{n-1}: phần thế biến tại vô cực triệt tiêu.",
+          "latex": "I_{n} = \\frac{2n-3}{2n-2}\\,I_{n-1}\\quad(n\\ge 2)"
+        },
+        {
+          "explain": "Với n = 2: hệ số (2·2-3)/(2·2-2) = 1/2, nhân với I_1 = π/2.",
+          "latex": "I_{2} = \\frac{1}{2}\\cdot\\frac{\\pi}{2} = \\frac{\\pi}{4} \\approx 0.7854"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.cong-thuc-truy-hoi-mau-bac-hai"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "áp dụng công thức truy hồi",
+        "tích phân suy rộng hội tụ"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "truy-hoi"
+      ],
+      "answer_numeric": 0.7854,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0006",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tích phân",
+      "type": "dien-so",
+      "statement_vi": "Cho F(x) = ∫ từ 0 đến x^2 của cos t dt. Dùng quy tắc Leibniz tính F'(1).",
+      "statement_en": "Let F(x) = ∫ from 0 to x^2 of cos t dt. Use Leibniz's rule to find F'(1).",
+      "answer": "2 cos 1 ≈ 1.0806",
+      "solution_steps": [
+        {
+          "explain": "Quy tắc Leibniz với cận trên phụ thuộc x: đạo hàm bằng hàm tại cận trên nhân đạo hàm cận trên.",
+          "latex": "F'(x) = \\cos\\left(x^{2}\\right)\\cdot\\frac{d}{dx}\\left(x^{2}\\right) = 2x\\cos\\left(x^{2}\\right)"
+        },
+        {
+          "explain": "Thay x = 1.",
+          "latex": "F'(1) = 2\\cos 1 \\approx 1.0806"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tich-phan.dao-ham-duoi-dau-tich-phan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "dùng quy tắc Leibniz",
+        "đạo hàm cận biến thiên"
+      ],
+      "tags": [
+        "giai-tich",
+        "tich-phan",
+        "leibniz"
+      ],
+      "answer_numeric": 1.0806,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0007",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính độ dài một nhịp cycloid x = t - sin t, y = 1 - cos t với t ∈ [0, 2π].",
+      "statement_en": "Find the arc length of one arch of the cycloid x = t - sin t, y = 1 - cos t, t ∈ [0, 2π].",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Độ dài cung tham số: L = ∫ căn((x')^2 + (y')^2) dt; tính x' = 1 - cos t, y' = sin t.",
+          "latex": "(x')^{2}+(y')^{2} = (1-\\cos t)^{2}+\\sin^{2}t = 2(1-\\cos t)"
+        },
+        {
+          "explain": "Dùng 1 - cos t = 2 sin^2(t/2) nên căn = 2|sin(t/2)|; tích phân trên [0, 2π].",
+          "latex": "L = \\int_{0}^{2\\pi} 2\\left|\\sin\\frac{t}{2}\\right|dt = 2\\left[-2\\cos\\frac{t}{2}\\right]_{0}^{2\\pi} = 8"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.do-dai-cung-tham-so"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "thiết lập tích phân độ dài cung",
+        "biến đổi lượng giác nửa góc"
+      ],
+      "tags": [
+        "giai-tich",
+        "do-dai-cung",
+        "tham-so"
+      ],
+      "answer_numeric": 8.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0008",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính độ dài toàn bộ đường cardioid r = 1 + cos φ trong tọa độ cực (φ ∈ [0, 2π]).",
+      "statement_en": "Find the total arc length of the cardioid r = 1 + cos φ in polar coordinates.",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Độ dài cung trong tọa độ cực: L = ∫ căn(r^2 + (r')^2) dφ; với r' = -sin φ.",
+          "latex": "r^{2}+(r')^{2} = (1+\\cos\\varphi)^{2}+\\sin^{2}\\varphi = 2(1+\\cos\\varphi)"
+        },
+        {
+          "explain": "Dùng 1 + cos φ = 2 cos^2(φ/2) nên căn = 2|cos(φ/2)|; do đối xứng, lấy 2 lần tích phân trên [0, π].",
+          "latex": "L = \\int_{0}^{2\\pi} 2\\left|\\cos\\frac{\\varphi}{2}\\right|d\\varphi = 8"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.do-dai-cung-cuc"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "độ dài cung tọa độ cực",
+        "khai thác đối xứng"
+      ],
+      "tags": [
+        "giai-tich",
+        "do-dai-cung",
+        "toa-do-cuc"
+      ],
+      "answer_numeric": 8.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0009",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Một vật thể nằm giữa hai mặt phẳng x = 0 và x = 3; thiết diện vuông góc trục Ox tại hoành độ x là hình vuông cạnh x. Tính thể tích vật thể.",
+      "statement_en": "A solid lies between x = 0 and x = 3; the cross-section perpendicular to the x-axis at x is a square of side x. Find its volume.",
+      "answer": "9",
+      "solution_steps": [
+        {
+          "explain": "Thể tích theo diện tích thiết diện: V = ∫ A(x) dx, với A(x) = (cạnh)^2 = x^2.",
+          "latex": "V = \\int_{0}^{3} A(x)\\,dx = \\int_{0}^{3} x^{2}\\,dx"
+        },
+        {
+          "explain": "Lấy nguyên hàm x^3/3 và thay cận.",
+          "latex": "V = \\frac{x^{3}}{3}\\Big|_{0}^{3} = \\frac{27}{3} = 9"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.the-tich-thiet-dien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "thiết lập thể tích theo thiết diện",
+        "tích phân đa thức"
+      ],
+      "tags": [
+        "giai-tich",
+        "the-tich",
+        "thiet-dien"
+      ],
+      "answer_numeric": 9.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0010",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tính diện tích mặt tròn xoay tạo bởi đoạn thẳng y = x, 0 ≤ x ≤ 1, quay quanh trục Ox.",
+      "statement_en": "Find the surface area generated by rotating y = x, 0 ≤ x ≤ 1, about the x-axis.",
+      "answer": "π√2 ≈ 4.4429",
+      "solution_steps": [
+        {
+          "explain": "Diện tích mặt tròn xoay quanh Ox: S = 2π ∫ y·căn(1+(y')^2) dx; ở đây y' = 1.",
+          "latex": "S = 2\\pi\\int_{0}^{1} x\\sqrt{1+1^{2}}\\,dx = 2\\pi\\sqrt{2}\\int_{0}^{1} x\\,dx"
+        },
+        {
+          "explain": "Tích phân x cho 1/2.",
+          "latex": "S = 2\\pi\\sqrt{2}\\cdot\\frac{1}{2} = \\pi\\sqrt{2} \\approx 4.4429"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.dien-tich-mat-tron-xoay"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "thiết lập tích phân mặt tròn xoay",
+        "tính vi phân cung"
+      ],
+      "tags": [
+        "giai-tich",
+        "mat-tron-xoay",
+        "dien-tich"
+      ],
+      "answer_numeric": 4.4429,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0011",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ứng dụng tích phân",
+      "type": "dien-so",
+      "statement_vi": "Tìm hoành độ trọng tâm của hình thang cong giới hạn bởi y = x^2, trục Ox, x = 0 và x = 1.",
+      "statement_en": "Find the x-coordinate of the centroid of the region under y = x^2 over [0, 1].",
+      "answer": "3/4 = 0.75",
+      "solution_steps": [
+        {
+          "explain": "Hoành độ trọng tâm hình thang cong: x̄ = ∫ x·y dx / ∫ y dx.",
+          "latex": "\\bar{x} = \\frac{\\int_{0}^{1} x\\cdot x^{2}\\,dx}{\\int_{0}^{1} x^{2}\\,dx}"
+        },
+        {
+          "explain": "Tử số ∫ x^3 = 1/4; mẫu số ∫ x^2 = 1/3.",
+          "latex": "\\bar{x} = \\frac{1/4}{1/3} = \\frac{3}{4} = 0.75"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ung-dung-tich-phan.trong-tam-hinh-phang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "thiết lập công thức trọng tâm",
+        "tính tỉ số hai tích phân"
+      ],
+      "tags": [
+        "giai-tich",
+        "trong-tam",
+        "hinh-phang"
+      ],
+      "answer_numeric": 0.75,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0012",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi số",
+      "type": "dien-so",
+      "statement_vi": "Dùng xấp xỉ tổng điều hòa H_n ≈ ln n + γ (γ ≈ 0.5772 là hằng số Euler-Mascheroni) để ước lượng H_1000. Làm tròn 3 chữ số thập phân.",
+      "statement_en": "Use H_n ≈ ln n + γ (γ ≈ 0.5772) to estimate H_1000, rounded to 3 decimals.",
+      "answer": "≈ 7.485",
+      "solution_steps": [
+        {
+          "explain": "Hằng số Euler-Mascheroni là giới hạn của H_n - ln n; do đó H_n ≈ ln n + γ với n lớn.",
+          "latex": "\\gamma = \\lim_{n\\to\\infty}\\left(\\sum_{k=1}^{n}\\frac{1}{k} - \\ln n\\right) \\approx 0.5772"
+        },
+        {
+          "explain": "Thay n = 1000: ln 1000 ≈ 6.9078.",
+          "latex": "H_{1000} \\approx \\ln 1000 + \\gamma \\approx 6.9078 + 0.5772 = 7.485"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.hang-so-euler-mascheroni"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "dùng hằng số Euler-Mascheroni",
+        "ước lượng tổng điều hòa"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-so",
+        "euler-mascheroni"
+      ],
+      "answer_numeric": 7.485,
+      "tolerance": 0.003
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0013",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi số",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét chuỗi ∑ (2n+1)/(n^3+1) với n từ 1 đến ∞. Dùng tiêu chuẩn so sánh dạng giới hạn với chuỗi ∑ 1/n^2, kết luận nào đúng?",
+      "statement_en": "For ∑ (2n+1)/(n^3+1), use the limit comparison test with ∑ 1/n^2. Which conclusion is correct?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "So sánh với b_n = 1/n^2; xét giới hạn tỉ số a_n/b_n.",
+          "latex": "\\lim_{n\\to\\infty}\\frac{(2n+1)/(n^{3}+1)}{1/n^{2}} = \\lim_{n\\to\\infty}\\frac{n^{2}(2n+1)}{n^{3}+1} = 2"
+        },
+        {
+          "explain": "Giới hạn là số hữu hạn dương (bằng 2) nên hai chuỗi cùng bản chất; mà ∑ 1/n^2 hội tụ.",
+          "latex": "0 < 2 < \\infty \\;\\Rightarrow\\; \\text{hai chuỗi cùng hội tụ hoặc cùng phân kì}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-so.so-sanh-gioi-han"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng so sánh giới hạn",
+        "nhận diện bậc vô cùng bé"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-so",
+        "hoi-tu"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chuỗi phân kì vì tử số chứa n bậc nhất.",
+          "why_wrong": "Chỉ nhìn tử số mà bỏ qua mẫu bậc ba; số hạng tổng quát bậc 1/n^2, không phân kì."
+        },
+        {
+          "key": "B",
+          "text": "Chuỗi hội tụ, vì giới hạn tỉ số bằng 2 và ∑ 1/n^2 hội tụ.",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "Không kết luận được vì giới hạn tỉ số bằng 0.",
+          "why_wrong": "Giới hạn tỉ số bằng 2 chứ không phải 0; so sánh giới hạn cho kết luận rõ ràng."
+        },
+        {
+          "key": "D",
+          "text": "Chuỗi hội tụ nhưng chỉ vì số hạng dần về 0.",
+          "why_wrong": "Số hạng dần về 0 là điều kiện cần, không đủ để kết luận hội tụ."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0014",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Chuỗi lũy thừa",
+      "type": "dien-so",
+      "statement_vi": "Xuất phát từ ∑ x^n = 1/(1-x) (|x|<1), dùng phép đạo hàm từng số hạng để tính tổng ∑ n·(1/2)^n với n từ 1 đến ∞.",
+      "statement_en": "Starting from ∑ x^n = 1/(1-x), differentiate term by term to find ∑ n·(1/2)^n.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Đạo hàm từng số hạng của ∑ x^n = 1/(1-x) trong khoảng hội tụ.",
+          "latex": "\\sum_{n\\ge 1} n x^{n-1} = \\frac{1}{(1-x)^{2}}"
+        },
+        {
+          "explain": "Nhân hai vế với x để có ∑ n x^n, rồi thay x = 1/2.",
+          "latex": "\\sum_{n\\ge 1} n x^{n} = \\frac{x}{(1-x)^{2}},\\quad x=\\tfrac12:\\ \\frac{1/2}{(1/2)^{2}} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.chuoi-luy-thua.dao-ham-tung-so-hang"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "đạo hàm chuỗi lũy thừa",
+        "tính tổng chuỗi"
+      ],
+      "tags": [
+        "giai-tich",
+        "chuoi-luy-thua",
+        "dao-ham"
+      ],
+      "answer_numeric": 2.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0015",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ma trận",
+      "type": "dien-so",
+      "statement_vi": "Cho A = [[1, 1], [0, 1]]. Tính A^10 và cho biết phần tử ở hàng 1 cột 2.",
+      "statement_en": "Let A = [[1, 1], [0, 1]]. Compute A^10 and give its (1,2) entry.",
+      "answer": "10",
+      "solution_steps": [
+        {
+          "explain": "Quy nạp lũy thừa ma trận tam giác đơn vị: phần tử góc trên phải cộng dồn.",
+          "latex": "A^{k} = \\begin{pmatrix} 1 & k \\\\ 0 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Thay k = 10.",
+          "latex": "A^{10} = \\begin{pmatrix} 1 & 10 \\\\ 0 & 1 \\end{pmatrix}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.luy-thua-ma-tran"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "quy nạp lũy thừa ma trận",
+        "nhận dạng ma trận tam giác"
+      ],
+      "tags": [
+        "dai-so",
+        "ma-tran",
+        "luy-thua"
+      ],
+      "answer_numeric": 10.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0016",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ma trận",
+      "type": "dien-so",
+      "statement_vi": "Cho A = [[2, 1], [1, 3]]. Ma trận phụ hợp adj(A) thỏa A·adj(A) = det(A)·I. Tính det(A).",
+      "statement_en": "For A = [[2, 1], [1, 3]], since A·adj(A) = det(A)·I, compute det(A).",
+      "answer": "5",
+      "solution_steps": [
+        {
+          "explain": "Ma trận phụ hợp của ma trận 2×2 hoán đổi đường chéo chính và đổi dấu đường chéo phụ.",
+          "latex": "\\operatorname{adj}(A) = \\begin{pmatrix} 3 & -1 \\\\ -1 & 2 \\end{pmatrix}"
+        },
+        {
+          "explain": "Hệ thức cơ bản A·adj(A) = det(A)·I; định thức 2×2 là ad - bc.",
+          "latex": "\\det A = 2\\cdot 3 - 1\\cdot 1 = 5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.ma-tran-phu-hop"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "dựng ma trận phụ hợp",
+        "dùng hệ thức phụ hợp - định thức"
+      ],
+      "tags": [
+        "dai-so",
+        "ma-tran",
+        "phu-hop"
+      ],
+      "answer_numeric": 5.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0017",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định thức",
+      "type": "dien-so",
+      "statement_vi": "Dùng khai triển Laplace theo hàng đầu tính định thức của A = [[2,1,0],[1,3,1],[0,1,2]].",
+      "statement_en": "Use Laplace (cofactor) expansion along the first row to compute det of [[2,1,0],[1,3,1],[0,1,2]].",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Khai triển theo hàng 1: det = a11·M11 - a12·M12 + a13·M13 (dấu xen kẽ).",
+          "latex": "\\det A = 2\\begin{vmatrix} 3 & 1 \\\\ 1 & 2 \\end{vmatrix} - 1\\begin{vmatrix} 1 & 1 \\\\ 0 & 2 \\end{vmatrix} + 0"
+        },
+        {
+          "explain": "Tính hai định thức con 2×2 rồi cộng lại.",
+          "latex": "\\det A = 2(6-1) - 1(2-0) = 10 - 2 = 8"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.khai-trien-laplace-theo-hang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "khai triển cofactor",
+        "tính định thức con"
+      ],
+      "tags": [
+        "dai-so",
+        "dinh-thuc",
+        "laplace"
+      ],
+      "answer_numeric": 8.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0018",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ma trận",
+      "type": "dien-so",
+      "statement_vi": "Cho ma trận chéo D = diag(2, 3). Tính phần tử hàng 2 cột 2 của ma trận nghịch đảo D^(-1).",
+      "statement_en": "For the diagonal matrix D = diag(2, 3), find the (2,2) entry of D^(-1).",
+      "answer": "1/3 ≈ 0.3333",
+      "solution_steps": [
+        {
+          "explain": "Nghịch đảo ma trận chéo là ma trận chéo với các phần tử là nghịch đảo.",
+          "latex": "D^{-1} = \\operatorname{diag}\\left(\\frac{1}{2}, \\frac{1}{3}\\right)"
+        },
+        {
+          "explain": "Phần tử (2,2) là nghịch đảo của 3.",
+          "latex": "\\left(D^{-1}\\right)_{22} = \\frac{1}{3} \\approx 0.3333"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.nghich-dao-ma-tran-cheo"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "nghịch đảo ma trận chéo"
+      ],
+      "tags": [
+        "dai-so",
+        "ma-tran",
+        "ma-tran-cheo"
+      ],
+      "answer_numeric": 0.3333,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0019",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ma trận",
+      "type": "dien-so",
+      "statement_vi": "Cho M = [[3, 1], [0, 3]] = 3I + N với N = [[0,1],[0,0]] (N^2 = 0, giao hoán với I). Dùng nhị thức Newton cho ma trận giao hoán tính phần tử hàng 1 cột 2 của M^4.",
+      "statement_en": "Let M = [[3,1],[0,3]] = 3I + N with N^2 = 0. Use the matrix binomial theorem to find the (1,2) entry of M^4.",
+      "answer": "108",
+      "solution_steps": [
+        {
+          "explain": "Vì I và N giao hoán và N^2 = 0, khai triển nhị thức chỉ còn hai số hạng đầu.",
+          "latex": "M^{4} = (3I+N)^{4} = 3^{4}I + \\binom{4}{1}3^{3}N = 81 I + 4\\cdot 27\\, N"
+        },
+        {
+          "explain": "Phần tử (1,2) chỉ đến từ N (vì I có (1,2) = 0).",
+          "latex": "\\left(M^{4}\\right)_{12} = 4\\cdot 27\\cdot 1 = 108"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.nhi-thuc-newton-ma-tran"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "dùng nhị thức Newton ma trận",
+        "khai thác ma trận lũy linh"
+      ],
+      "tags": [
+        "dai-so",
+        "ma-tran",
+        "nhi-thuc-newton"
+      ],
+      "answer_numeric": 108.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0020",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Không gian Euclid",
+      "type": "dien-so",
+      "statement_vi": "Trong không gian Euclid, hai vectơ u, v trực giao với ||u|| = 3, ||v|| = 4. Tính ||u + v||.",
+      "statement_en": "In a Euclidean space, u ⊥ v with ||u|| = 3, ||v|| = 4. Find ||u + v||.",
+      "answer": "5",
+      "solution_steps": [
+        {
+          "explain": "Định lí Pythagore: khi u ⊥ v thì bình phương chuẩn tổng bằng tổng bình phương chuẩn.",
+          "latex": "\\|u+v\\|^{2} = \\|u\\|^{2} + \\|v\\|^{2} = 9 + 16 = 25"
+        },
+        {
+          "explain": "Lấy căn bậc hai.",
+          "latex": "\\|u+v\\| = 5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-euclid.dinh-li-pythagore"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "áp dụng định lí Pythagore trừu tượng"
+      ],
+      "tags": [
+        "dai-so",
+        "khong-gian-euclid",
+        "pythagore"
+      ],
+      "answer_numeric": 5.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0021",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Không gian Euclid",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho hệ trực chuẩn {e1, e2, e3} và vectơ x với ⟨x, e1⟩ = 1, ⟨x, e2⟩ = 2, ⟨x, e3⟩ = 2, biết ||x|| = 3. Dựa vào bất đẳng thức Bessel và đẳng thức Parseval, kết luận nào đúng?",
+      "statement_en": "Given an orthonormal set {e1,e2,e3}, x with coefficients 1, 2, 2 and ||x|| = 3, what does Bessel/Parseval say?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Bất đẳng thức Bessel: tổng bình phương các hệ số Fourier không vượt quá bình phương chuẩn.",
+          "latex": "\\sum_{k=1}^{3}\\langle x,e_{k}\\rangle^{2} = 1 + 4 + 4 = 9"
+        },
+        {
+          "explain": "So sánh với ||x||^2 = 9; do bằng nhau nên đạt đẳng thức Parseval, x nằm trong không gian sinh bởi hệ.",
+          "latex": "\\sum \\langle x,e_{k}\\rangle^{2} = \\|x\\|^{2} = 9 \\;\\Rightarrow\\; x \\in \\operatorname{span}\\{e_{1},e_{2},e_{3}\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-euclid.bat-dang-thuc-bessel-parseval"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính hệ số Fourier trừu tượng",
+        "phân biệt Bessel và Parseval"
+      ],
+      "tags": [
+        "dai-so",
+        "khong-gian-euclid",
+        "bessel-parseval"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Vi phạm bất đẳng thức Bessel vì tổng bình phương hệ số bằng 9.",
+          "why_wrong": "Bessel cho phép tổng bằng ||x||^2 = 9; đạt dấu bằng là hợp lệ, không vi phạm."
+        },
+        {
+          "key": "B",
+          "text": "x không thuộc span của hệ vì các hệ số quá lớn.",
+          "why_wrong": "Chính vì đạt đẳng thức Parseval nên x thuộc span; độ lớn hệ số không phải tiêu chí."
+        },
+        {
+          "key": "C",
+          "text": "Đạt đẳng thức Parseval, nên x thuộc span của {e1,e2,e3}.",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "Không đủ dữ kiện để so sánh tổng với ||x||^2.",
+          "why_wrong": "Đã biết ||x|| = 3 nên ||x||^2 = 9, hoàn toàn so sánh được."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0022",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân phối rời rạc",
+      "type": "dien-so",
+      "statement_vi": "Một hộp có 20 sản phẩm, trong đó 8 phế phẩm. Lấy ngẫu nhiên (không hoàn lại) 5 sản phẩm. Gọi X là số phế phẩm lấy được. Tính P(X = 2), làm tròn 4 chữ số.",
+      "statement_en": "A box has 20 items, 8 defective. Draw 5 without replacement; X = number defective. Find P(X = 2).",
+      "answer": "≈ 0.3973",
+      "solution_steps": [
+        {
+          "explain": "X theo phân phối siêu bội với N = 20, K = 8, n = 5.",
+          "latex": "P(X=k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}"
+        },
+        {
+          "explain": "Thay k = 2: chọn 2 trong 8 phế phẩm và 3 trong 12 chính phẩm, chia cho cách chọn 5 trong 20.",
+          "latex": "P(X=2) = \\frac{\\binom{8}{2}\\binom{12}{3}}{\\binom{20}{5}} = \\frac{28\\cdot 220}{15504} \\approx 0.3973"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-sieu-boi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhận dạng phân phối siêu bội",
+        "tính tổ hợp"
+      ],
+      "tags": [
+        "xac-suat",
+        "phan-phoi-roi-rac",
+        "sieu-boi"
+      ],
+      "answer_numeric": 0.3973,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0023",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân phối rời rạc",
+      "type": "dien-so",
+      "statement_vi": "Lặp lại phép thử Bernoulli độc lập với xác suất thành công p = 0.4. Gọi X là số phép thử cần thực hiện để có đúng r = 3 lần thành công. Tính kỳ vọng E(X).",
+      "statement_en": "Independent Bernoulli trials with p = 0.4. X = number of trials to get r = 3 successes. Find E(X).",
+      "answer": "7.5",
+      "solution_steps": [
+        {
+          "explain": "X theo phân phối nhị thức âm (Pascal) với tham số r và p; kỳ vọng là r/p.",
+          "latex": "E(X) = \\frac{r}{p}"
+        },
+        {
+          "explain": "Thay r = 3, p = 0.4.",
+          "latex": "E(X) = \\frac{3}{0.4} = 7.5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-nhi-thuc-am"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "nhận dạng phân phối nhị thức âm",
+        "áp dụng công thức kỳ vọng"
+      ],
+      "tags": [
+        "xac-suat",
+        "phan-phoi-roi-rac",
+        "nhi-thuc-am"
+      ],
+      "answer_numeric": 7.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0024",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến ngẫu nhiên",
+      "type": "dien-so",
+      "statement_vi": "Cho biến ngẫu nhiên X với phương sai D(X) = 5. Tính phương sai của Y = 2X - 3.",
+      "statement_en": "Given X with variance 5, find the variance of Y = 2X - 3.",
+      "answer": "20",
+      "solution_steps": [
+        {
+          "explain": "Tính chất phương sai: hằng số cộng không ảnh hưởng, hệ số nhân bình phương ra ngoài.",
+          "latex": "D(aX+b) = a^{2}D(X)"
+        },
+        {
+          "explain": "Với a = 2, b = -3.",
+          "latex": "D(2X-3) = 2^{2}\\cdot 5 = 20"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.tinh-chat-phuong-sai"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "áp dụng tính chất phương sai của biến đổi tuyến tính"
+      ],
+      "tags": [
+        "xac-suat",
+        "bien-ngau-nhien",
+        "phuong-sai"
+      ],
+      "answer_numeric": 20.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0025",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến ngẫu nhiên",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên rời rạc X nhận giá trị 0,1,2,3 với xác suất 0.1, 0.2, 0.4, 0.3. Tính mômen trung tâm bậc hai (phương sai) của X.",
+      "statement_en": "Discrete X takes 0,1,2,3 with probabilities 0.1,0.2,0.4,0.3. Find the 2nd central moment (variance).",
+      "answer": "0.89",
+      "solution_steps": [
+        {
+          "explain": "Trước hết tính kỳ vọng E(X).",
+          "latex": "E(X) = 0(0.1)+1(0.2)+2(0.4)+3(0.3) = 1.9"
+        },
+        {
+          "explain": "Mômen trung tâm bậc hai là kỳ vọng bình phương độ lệch.",
+          "latex": "\\mu_{2} = \\sum p_{i}(x_{i}-1.9)^{2} = 0.89"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.momen-trung-tam"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính kỳ vọng",
+        "tính mômen trung tâm"
+      ],
+      "tags": [
+        "xac-suat",
+        "bien-ngau-nhien",
+        "momen"
+      ],
+      "answer_numeric": 0.89,
+      "tolerance": 0.005
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0026",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến ngẫu nhiên",
+      "type": "dien-so",
+      "statement_vi": "Với biến ngẫu nhiên X ở câu trên (giá trị 0,1,2,3; xác suất 0.1,0.2,0.4,0.3; μ2 = 0.89; μ3 = -0.432), tính hệ số bất đối xứng (độ lệch) γ1 = μ3/σ^3, làm tròn 4 chữ số.",
+      "statement_en": "For X with μ2 = 0.89, μ3 = -0.432, find the skewness γ1 = μ3/σ^3.",
+      "answer": "≈ -0.5145",
+      "solution_steps": [
+        {
+          "explain": "Hệ số bất đối xứng bằng mômen trung tâm bậc ba chia lập phương độ lệch chuẩn.",
+          "latex": "\\gamma_{1} = \\frac{\\mu_{3}}{\\sigma^{3}},\\quad \\sigma = \\sqrt{\\mu_{2}} = \\sqrt{0.89}"
+        },
+        {
+          "explain": "Thay số: σ^3 = 0.89^(1.5) ≈ 0.8396.",
+          "latex": "\\gamma_{1} = \\frac{-0.432}{0.8396} \\approx -0.5145"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.he-so-bat-doi-xung"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính độ lệch chuẩn",
+        "tính hệ số bất đối xứng"
+      ],
+      "tags": [
+        "xac-suat",
+        "bien-ngau-nhien",
+        "do-lech"
+      ],
+      "answer_numeric": -0.5145,
+      "tolerance": 0.005
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0027",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến ngẫu nhiên",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên liên tục X có hàm phân phối F(x) = x^2 trên [0,1]. Tìm trung vị (phân vị mức p = 0.5).",
+      "statement_en": "Continuous X has CDF F(x) = x^2 on [0,1]. Find the median (p = 0.5 quantile).",
+      "answer": "1/√2 ≈ 0.7071",
+      "solution_steps": [
+        {
+          "explain": "Phân vị mức p là nghiệm của phương trình F(x_p) = p.",
+          "latex": "F(x_{0.5}) = x_{0.5}^{2} = 0.5"
+        },
+        {
+          "explain": "Giải ra x trong [0,1].",
+          "latex": "x_{0.5} = \\sqrt{0.5} = \\frac{1}{\\sqrt{2}} \\approx 0.7071"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.phan-vi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "giải phương trình phân vị",
+        "dùng hàm phân phối"
+      ],
+      "tags": [
+        "xac-suat",
+        "bien-ngau-nhien",
+        "phan-vi"
+      ],
+      "answer_numeric": 0.7071,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0028",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Biến ngẫu nhiên",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên X có hàm phân phối F(x) = 1 - e^(-x) với x ≥ 0. Tính P(1 < X < 2).",
+      "statement_en": "X has CDF F(x) = 1 - e^(-x) for x ≥ 0. Find P(1 < X < 2).",
+      "answer": "e^(-1) - e^(-2) ≈ 0.2325",
+      "solution_steps": [
+        {
+          "explain": "Xác suất biến liên tục rơi vào khoảng bằng hiệu giá trị hàm phân phối tại hai đầu.",
+          "latex": "P(a<X<b) = F(b) - F(a)"
+        },
+        {
+          "explain": "Thay a = 1, b = 2.",
+          "latex": "P(1<X<2) = \\left(1-e^{-2}\\right) - \\left(1-e^{-1}\\right) = e^{-1}-e^{-2} \\approx 0.2325"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.xac-suat-tren-doan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "dùng hàm phân phối tính xác suất khoảng"
+      ],
+      "tags": [
+        "xac-suat",
+        "bien-ngau-nhien",
+        "ham-phan-phoi"
+      ],
+      "answer_numeric": 0.2325,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0029",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân phối liên tục",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên X tuân theo phân phối Gamma với tham số hình dạng α = 3 và tham số tỉ lệ nghịch λ = 2. Tính kỳ vọng E(X).",
+      "statement_en": "X follows a Gamma distribution with shape α = 3 and rate λ = 2. Find E(X).",
+      "answer": "1.5",
+      "solution_steps": [
+        {
+          "explain": "Kỳ vọng của phân phối Gamma là tỉ số α/λ.",
+          "latex": "E(X) = \\frac{\\alpha}{\\lambda}"
+        },
+        {
+          "explain": "Thay α = 3, λ = 2.",
+          "latex": "E(X) = \\frac{3}{2} = 1.5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-phoi-lien-tuc.phan-phoi-gamma"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng công thức kỳ vọng phân phối Gamma"
+      ],
+      "tags": [
+        "xac-suat",
+        "phan-phoi-lien-tuc",
+        "gamma"
+      ],
+      "answer_numeric": 1.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0030",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân phối liên tục",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên X theo phân phối Weibull với k = 2 và λ = 2. Tính kỳ vọng E(X) = λ·Γ(1 + 1/k), làm tròn 4 chữ số. (Gợi ý: Γ(3/2) = √π/2.)",
+      "statement_en": "X follows a Weibull distribution with k = 2, λ = 2. Find E(X) = λ·Γ(1 + 1/k). (Γ(3/2) = √π/2.)",
+      "answer": "√π ≈ 1.7725",
+      "solution_steps": [
+        {
+          "explain": "Kỳ vọng phân phối Weibull dùng hàm Gamma.",
+          "latex": "E(X) = \\lambda\\,\\Gamma\\!\\left(1+\\frac{1}{k}\\right) = 2\\,\\Gamma\\!\\left(\\frac{3}{2}\\right)"
+        },
+        {
+          "explain": "Dùng Γ(3/2) = √π/2.",
+          "latex": "E(X) = 2\\cdot\\frac{\\sqrt{\\pi}}{2} = \\sqrt{\\pi} \\approx 1.7725"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-phoi-lien-tuc.phan-phoi-weibull"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng công thức kỳ vọng Weibull",
+        "dùng giá trị hàm Gamma"
+      ],
+      "tags": [
+        "xac-suat",
+        "phan-phoi-lien-tuc",
+        "weibull"
+      ],
+      "answer_numeric": 1.7725,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0031",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thống kê mẫu",
+      "type": "dien-so",
+      "statement_vi": "Tổng thể có độ lệch chuẩn σ = 10. Lấy mẫu cỡ n = 25. Tính sai số chuẩn của trung bình mẫu.",
+      "statement_en": "Population σ = 10, sample size n = 25. Find the standard error of the sample mean.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Sai số chuẩn của trung bình mẫu bằng σ chia căn bậc hai cỡ mẫu.",
+          "latex": "SE_{\\bar{X}} = \\frac{\\sigma}{\\sqrt{n}}"
+        },
+        {
+          "explain": "Thay σ = 10, n = 25.",
+          "latex": "SE_{\\bar{X}} = \\frac{10}{\\sqrt{25}} = \\frac{10}{5} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.thong-ke-mau.sai-so-chuan-trung-binh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "tính sai số chuẩn của trung bình mẫu"
+      ],
+      "tags": [
+        "thong-ke",
+        "thong-ke-mau",
+        "sai-so-chuan"
+      ],
+      "answer_numeric": 2.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0032",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ước lượng khoảng",
+      "type": "dien-so",
+      "statement_vi": "Biết σ = 8, mẫu cỡ n = 64 cho trung bình x̄ = 50. Tìm cận dưới của khoảng tin cậy 95% cho kỳ vọng (z_{0.025} = 1.96).",
+      "statement_en": "With σ = 8, n = 64, x̄ = 50, find the lower bound of the 95% CI for the mean (z = 1.96).",
+      "answer": "48.04",
+      "solution_steps": [
+        {
+          "explain": "Khoảng tin cậy cho kỳ vọng khi biết phương sai: x̄ ± z·σ/√n.",
+          "latex": "\\bar{x} \\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} = 50 \\pm 1.96\\cdot\\frac{8}{8}"
+        },
+        {
+          "explain": "Sai số biên bằng 1.96; cận dưới là 50 - 1.96.",
+          "latex": "50 - 1.96 = 48.04"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.uoc-luong-khoang.khoang-tin-cay-ky-vong-biet-phuong-sai",
+        "math.dai-hoc.uoc-luong-khoang.do-chinh-xac-uoc-luong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "lập khoảng tin cậy cho kỳ vọng",
+        "tính sai số biên"
+      ],
+      "tags": [
+        "thong-ke",
+        "uoc-luong-khoang",
+        "khoang-tin-cay"
+      ],
+      "answer_numeric": 48.04,
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0033",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ước lượng khoảng",
+      "type": "dien-so",
+      "statement_vi": "Khảo sát 100 khách hàng, tỉ lệ hài lòng f = 0.4. Tính sai số biên của khoảng tin cậy 95% cho tỉ lệ (z_{0.025} = 1.96), làm tròn 4 chữ số.",
+      "statement_en": "Survey of 100 customers gives f = 0.4. Find the margin of the 95% CI for the proportion (z = 1.96).",
+      "answer": "≈ 0.0960",
+      "solution_steps": [
+        {
+          "explain": "Khoảng tin cậy cho tỉ lệ: f ± z·√(f(1-f)/n); sai số biên là số hạng sau dấu ±.",
+          "latex": "\\varepsilon = z_{\\alpha/2}\\sqrt{\\frac{f(1-f)}{n}} = 1.96\\sqrt{\\frac{0.4\\cdot 0.6}{100}}"
+        },
+        {
+          "explain": "Tính căn: √(0.24/100) = √0.0024 ≈ 0.049.",
+          "latex": "\\varepsilon = 1.96\\cdot 0.049 \\approx 0.0960"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.uoc-luong-khoang.khoang-tin-cay-ti-le"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "lập khoảng tin cậy cho tỉ lệ",
+        "tính sai số biên"
+      ],
+      "tags": [
+        "thong-ke",
+        "uoc-luong-khoang",
+        "ti-le"
+      ],
+      "answer_numeric": 0.096,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0034",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Ước lượng khoảng",
+      "type": "dien-so",
+      "statement_vi": "Muốn ước lượng kỳ vọng với sai số không quá ε = 1, độ tin cậy 95% (z = 1.96), biết σ = 5. Tìm cỡ mẫu tối thiểu n.",
+      "statement_en": "To estimate the mean within ε = 1 at 95% (z = 1.96) with σ = 5, find the minimum sample size n.",
+      "answer": "97",
+      "solution_steps": [
+        {
+          "explain": "Cỡ mẫu cần thiết: n ≥ (z·σ/ε)^2.",
+          "latex": "n \\ge \\left(\\frac{z_{\\alpha/2}\\,\\sigma}{\\varepsilon}\\right)^{2} = \\left(\\frac{1.96\\cdot 5}{1}\\right)^{2} = 96.04"
+        },
+        {
+          "explain": "Làm tròn lên số nguyên gần nhất.",
+          "latex": "n = 97"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.uoc-luong-khoang.co-mau-uoc-luong-ky-vong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính cỡ mẫu cần thiết",
+        "làm tròn lên"
+      ],
+      "tags": [
+        "thong-ke",
+        "uoc-luong-khoang",
+        "co-mau"
+      ],
+      "answer_numeric": 97.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0035",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kiểm định giả thuyết",
+      "type": "dien-so",
+      "statement_vi": "Kiểm định H0: μ = 50 với σ = 8 đã biết. Mẫu n = 64 cho x̄ = 52. Tính giá trị thống kê kiểm định Z.",
+      "statement_en": "Test H0: μ = 50 with known σ = 8. Sample n = 64 gives x̄ = 52. Compute the Z statistic.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Thống kê kiểm định Z một mẫu: (x̄ - μ0) chia cho σ/√n.",
+          "latex": "Z = \\frac{\\bar{x}-\\mu_{0}}{\\sigma/\\sqrt{n}} = \\frac{52-50}{8/8}"
+        },
+        {
+          "explain": "Mẫu số σ/√n = 8/8 = 1.",
+          "latex": "Z = \\frac{2}{1} = 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.kiem-dinh-gia-thuyet.kiem-dinh-z-mot-mau"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính thống kê Z một mẫu"
+      ],
+      "tags": [
+        "thong-ke",
+        "kiem-dinh",
+        "z-test"
+      ],
+      "answer_numeric": 2.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0036",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kiểm định giả thuyết",
+      "type": "dien-so",
+      "statement_vi": "Kiểm định H0: p = 0.5 với mẫu n = 100 cho tỉ lệ f = 0.55. Tính giá trị thống kê Z của kiểm định tỉ lệ một mẫu.",
+      "statement_en": "Test H0: p = 0.5 with n = 100, f = 0.55. Compute the one-sample proportion Z statistic.",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Thống kê kiểm định tỉ lệ dùng độ lệch chuẩn theo p0 giả thuyết.",
+          "latex": "Z = \\frac{f-p_{0}}{\\sqrt{p_{0}(1-p_{0})/n}} = \\frac{0.55-0.5}{\\sqrt{0.25/100}}"
+        },
+        {
+          "explain": "Mẫu số = √0.0025 = 0.05.",
+          "latex": "Z = \\frac{0.05}{0.05} = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.kiem-dinh-gia-thuyet.kiem-dinh-ti-le-mot-mau"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính thống kê kiểm định tỉ lệ"
+      ],
+      "tags": [
+        "thong-ke",
+        "kiem-dinh",
+        "ti-le"
+      ],
+      "answer_numeric": 1.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0037",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hồi quy và tương quan",
+      "type": "dien-so",
+      "statement_vi": "Cho dữ liệu (x, y): (1,1), (2,3), (3,4), (4,6). Tính hệ số góc b của đường hồi quy bình phương tối thiểu của y theo x.",
+      "statement_en": "Data (x,y): (1,1),(2,3),(3,4),(4,6). Find the least-squares slope b of y on x.",
+      "answer": "1.6",
+      "solution_steps": [
+        {
+          "explain": "Hệ số góc: b = Σ(xi - x̄)(yi - ȳ) / Σ(xi - x̄)^2; với x̄ = 2.5, ȳ = 3.5.",
+          "latex": "b = \\frac{\\sum (x_{i}-\\bar{x})(y_{i}-\\bar{y})}{\\sum (x_{i}-\\bar{x})^{2}}"
+        },
+        {
+          "explain": "Tử số = 3.75 + 0.25 + 0.25 + 3.75 = 8; mẫu số = 2.25+0.25+0.25+2.25 = 5.",
+          "latex": "b = \\frac{8}{5} = 1.6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.hoi-quy-tuong-quan.he-so-goc-hoi-quy"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính trung bình mẫu",
+        "tính hệ số góc hồi quy"
+      ],
+      "tags": [
+        "thong-ke",
+        "hoi-quy",
+        "he-so-goc"
+      ],
+      "answer_numeric": 1.6,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0038",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hồi quy và tương quan",
+      "type": "dien-so",
+      "statement_vi": "Với dữ liệu (1,1),(2,3),(3,4),(4,6) và hệ số góc b = 1.6, tính hệ số chặn a = ȳ - b·x̄ của đường hồi quy.",
+      "statement_en": "With b = 1.6 for the data (1,1),(2,3),(3,4),(4,6), find the intercept a = ȳ - b·x̄.",
+      "answer": "-0.5",
+      "solution_steps": [
+        {
+          "explain": "Hệ số chặn suy từ điều kiện đường hồi quy đi qua điểm trung bình (x̄, ȳ).",
+          "latex": "a = \\bar{y} - b\\bar{x} = 3.5 - 1.6\\cdot 2.5"
+        },
+        {
+          "explain": "Tính 1.6·2.5 = 4.",
+          "latex": "a = 3.5 - 4 = -0.5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.hoi-quy-tuong-quan.he-so-chan-hoi-quy"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính hệ số chặn hồi quy"
+      ],
+      "tags": [
+        "thong-ke",
+        "hoi-quy",
+        "he-so-chan"
+      ],
+      "answer_numeric": -0.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0039",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hồi quy và tương quan",
+      "type": "dien-so",
+      "statement_vi": "Với dữ liệu (1,1),(2,3),(3,4),(4,6), hệ số tương quan mẫu Pearson r ≈ 0.9923. Tính hệ số xác định R^2, làm tròn 4 chữ số.",
+      "statement_en": "For (1,1),(2,3),(3,4),(4,6) with Pearson r ≈ 0.9923, find R^2.",
+      "answer": "≈ 0.9846",
+      "solution_steps": [
+        {
+          "explain": "Trong hồi quy tuyến tính đơn, hệ số xác định bằng bình phương hệ số tương quan.",
+          "latex": "R^{2} = r^{2}"
+        },
+        {
+          "explain": "Bình phương 0.9923.",
+          "latex": "R^{2} = 0.9923^{2} \\approx 0.9846"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.hoi-quy-tuong-quan.he-so-xac-dinh",
+        "math.dai-hoc.hoi-quy-tuong-quan.he-so-tuong-quan-pearson"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "liên hệ R^2 và hệ số tương quan"
+      ],
+      "tags": [
+        "thong-ke",
+        "hoi-quy",
+        "r-binh-phuong"
+      ],
+      "answer_numeric": 0.9846,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0040",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hồi quy và tương quan",
+      "type": "dien-so",
+      "statement_vi": "Cho dữ liệu (1,1),(2,3),(3,4),(4,6). Tính hiệp phương sai mẫu (chia cho n-1) của x và y.",
+      "statement_en": "For (1,1),(2,3),(3,4),(4,6), find the sample covariance (divide by n-1).",
+      "answer": "8/3 ≈ 2.6667",
+      "solution_steps": [
+        {
+          "explain": "Hiệp phương sai mẫu: Σ(xi - x̄)(yi - ȳ) chia (n - 1).",
+          "latex": "s_{xy} = \\frac{1}{n-1}\\sum (x_{i}-\\bar{x})(y_{i}-\\bar{y}) = \\frac{8}{3}"
+        },
+        {
+          "explain": "Với tử số đã tính = 8 và n - 1 = 3.",
+          "latex": "s_{xy} = \\frac{8}{3} \\approx 2.6667"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.hoi-quy-tuong-quan.hiep-phuong-sai-mau"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính hiệp phương sai mẫu"
+      ],
+      "tags": [
+        "thong-ke",
+        "hoi-quy",
+        "hiep-phuong-sai"
+      ],
+      "answer_numeric": 2.6667,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0041",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hồi quy và tương quan",
+      "type": "dien-so",
+      "statement_vi": "Xếp hạng 5 thí sinh theo hai giám khảo: x = (1,2,3,4,5), y = (2,1,4,3,5). Tính hệ số tương quan hạng Spearman.",
+      "statement_en": "Ranks of 5 candidates: x = (1,2,3,4,5), y = (2,1,4,3,5). Find Spearman's rank correlation.",
+      "answer": "0.8",
+      "solution_steps": [
+        {
+          "explain": "Hiệu hạng d = x - y = (-1, 1, -1, 1, 0), bình phương và cộng.",
+          "latex": "\\sum d_{i}^{2} = 1+1+1+1+0 = 4"
+        },
+        {
+          "explain": "Công thức Spearman với n = 5.",
+          "latex": "\\rho = 1 - \\frac{6\\sum d_{i}^{2}}{n(n^{2}-1)} = 1 - \\frac{6\\cdot 4}{5\\cdot 24} = 0.8"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.hoi-quy-tuong-quan.he-so-tuong-quan-spearman"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính hiệu hạng",
+        "áp dụng công thức Spearman"
+      ],
+      "tags": [
+        "thong-ke",
+        "tuong-quan",
+        "spearman"
+      ],
+      "answer_numeric": 0.8,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0042",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Độ phức tạp thuật toán",
+      "type": "dien-so",
+      "statement_vi": "Tính tổng S = 1 + 2 + 3 + ... + 100 (tổng cấp số cộng).",
+      "statement_en": "Compute S = 1 + 2 + ... + 100.",
+      "answer": "5050",
+      "solution_steps": [
+        {
+          "explain": "Tổng n số tự nhiên đầu tiên: n(n+1)/2.",
+          "latex": "\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}"
+        },
+        {
+          "explain": "Thay n = 100.",
+          "latex": "S = \\frac{100\\cdot 101}{2} = 5050"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.do-phuc-tap.tong-cap-so-cong"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "áp dụng công thức tổng cấp số cộng"
+      ],
+      "tags": [
+        "dai-so",
+        "to-hop",
+        "cap-so-cong"
+      ],
+      "answer_numeric": 5050.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0043",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Độ phức tạp thuật toán",
+      "type": "dien-so",
+      "statement_vi": "Tính tổng bình phương S = 1^2 + 2^2 + ... + 10^2.",
+      "statement_en": "Compute S = 1^2 + 2^2 + ... + 10^2.",
+      "answer": "385",
+      "solution_steps": [
+        {
+          "explain": "Công thức tổng bình phương.",
+          "latex": "\\sum_{i=1}^{n} i^{2} = \\frac{n(n+1)(2n+1)}{6}"
+        },
+        {
+          "explain": "Thay n = 10.",
+          "latex": "S = \\frac{10\\cdot 11\\cdot 21}{6} = 385"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.do-phuc-tap.tong-luy-thua"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 2,
+      "skills": [
+        "áp dụng công thức tổng bình phương"
+      ],
+      "tags": [
+        "dai-so",
+        "to-hop",
+        "tong-luy-thua"
+      ],
+      "answer_numeric": 385.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0044",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hoán vị - Chỉnh hợp - Tổ hợp",
+      "type": "dien-so",
+      "statement_vi": "Tính số Stirling loại một không dấu c(4, 2), tức số hoán vị của 4 phần tử có đúng 2 chu trình (vòng).",
+      "statement_en": "Compute the unsigned Stirling number of the first kind c(4,2): permutations of 4 elements with exactly 2 cycles.",
+      "answer": "11",
+      "solution_steps": [
+        {
+          "explain": "Số Stirling loại một không dấu thỏa hệ thức truy hồi c(n,k) = c(n-1,k-1) + (n-1)c(n-1,k).",
+          "latex": "c(n,k) = c(n-1,k-1) + (n-1)\\,c(n-1,k)"
+        },
+        {
+          "explain": "Dùng truy hồi hoặc đếm trực tiếp: c(4,2) = c(3,1) + 3·c(3,2) = 2 + 3·3 = 11.",
+          "latex": "c(4,2) = 2 + 3\\cdot 3 = 11"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.hoan-vi-to-hop.so-stirling-loai-mot"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "dùng truy hồi Stirling",
+        "đếm hoán vị theo số chu trình"
+      ],
+      "tags": [
+        "dai-so",
+        "to-hop",
+        "stirling"
+      ],
+      "answer_numeric": 11.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0045",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ thức truy hồi",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức Binet tính số Fibonacci thứ 10 (với F1 = F2 = 1).",
+      "statement_en": "Use Binet's formula to compute the 10th Fibonacci number (F1 = F2 = 1).",
+      "answer": "55",
+      "solution_steps": [
+        {
+          "explain": "Công thức Binet cho số Fibonacci qua tỉ lệ vàng φ và liên hợp ψ.",
+          "latex": "F_{n} = \\frac{\\varphi^{n}-\\psi^{n}}{\\sqrt{5}},\\ \\varphi=\\frac{1+\\sqrt5}{2},\\ \\psi=\\frac{1-\\sqrt5}{2}"
+        },
+        {
+          "explain": "Với n = 10, kết quả là số nguyên (phần ψ rất nhỏ và triệt tiêu về số nguyên gần nhất).",
+          "latex": "F_{10} = 55"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-thuc-truy-hoi.cong-thuc-binet"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng công thức Binet",
+        "làm tròn về số Fibonacci"
+      ],
+      "tags": [
+        "dai-so",
+        "truy-hoi",
+        "fibonacci"
+      ],
+      "answer_numeric": 55.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0046",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ thức truy hồi",
+      "type": "dien-so",
+      "statement_vi": "Dãy Fibonacci F1 = F2 = 1, F_{n} = F_{n-1} + F_{n-2}. Tính F_15.",
+      "statement_en": "Fibonacci sequence with F1 = F2 = 1. Compute F_15.",
+      "answer": "610",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng hệ thức truy hồi lần lượt từ các số hạng đầu.",
+          "latex": "F_{n} = F_{n-1} + F_{n-2}"
+        },
+        {
+          "explain": "Tính đến số hạng thứ 15: 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610.",
+          "latex": "F_{15} = 610"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-thuc-truy-hoi.day-fibonacci"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng hệ thức truy hồi Fibonacci"
+      ],
+      "tags": [
+        "dai-so",
+        "truy-hoi",
+        "fibonacci"
+      ],
+      "answer_numeric": 610.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0047",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đại số Boole",
+      "type": "dien-so",
+      "statement_vi": "Tính số hàm Boole n = 3 biến khác nhau (số hàm f: {0,1}^3 → {0,1}).",
+      "statement_en": "Count the number of Boolean functions of n = 3 variables.",
+      "answer": "256",
+      "solution_steps": [
+        {
+          "explain": "Số hàm Boole n biến là 2 lũy thừa (2 lũy thừa n), vì có 2^n dòng bảng chân trị, mỗi dòng nhận 0/1.",
+          "latex": "\\left|\\{f:\\{0,1\\}^{n}\\to\\{0,1\\}\\}\\right| = 2^{2^{n}}"
+        },
+        {
+          "explain": "Thay n = 3: 2^(2^3) = 2^8.",
+          "latex": "2^{2^{3}} = 2^{8} = 256"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.so-ham-boole"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "đếm số hàm Boole",
+        "lũy thừa kép"
+      ],
+      "tags": [
+        "dai-so",
+        "boole",
+        "dem"
+      ],
+      "answer_numeric": 256.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0048",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đại số Boole",
+      "type": "trac-nghiem",
+      "statement_vi": "Dùng định luật De Morgan, biểu thức ¬(A ∧ B) tương đương với biểu thức nào?",
+      "statement_en": "By De Morgan's law, ¬(A ∧ B) is equivalent to which expression?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Định luật De Morgan: phủ định của hội là tuyển của các phủ định.",
+          "latex": "\\overline{A\\wedge B} = \\bar{A}\\vee\\bar{B}"
+        },
+        {
+          "explain": "Phép phủ định 'đổi' AND thành OR và phủ định từng biến.",
+          "latex": "\\neg(A\\wedge B) = \\neg A\\vee\\neg B"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dai-so-boole.de-morgan"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "áp dụng định luật De Morgan"
+      ],
+      "tags": [
+        "dai-so",
+        "boole",
+        "de-morgan"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "¬A ∧ ¬B",
+          "why_wrong": "Đây là De Morgan cho phủ định của tuyển (¬(A∨B)), không phải của hội."
+        },
+        {
+          "key": "B",
+          "text": "¬A ∨ ¬B",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "A ∨ B",
+          "why_wrong": "Quên phủ định các biến; De Morgan chỉ đổi phép toán mà vẫn phủ định từng biến."
+        },
+        {
+          "key": "D",
+          "text": "¬(¬A ∨ ¬B)",
+          "why_wrong": "Đây lại quay về chính A ∧ B, ngược với yêu cầu phủ định."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0049",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức sai phân trung tâm với h = 0.1 để xấp xỉ đạo hàm của f(x) = sin x tại x = 1. Làm tròn 4 chữ số.",
+      "statement_en": "Use the central difference with h = 0.1 to approximate f'(1) for f(x) = sin x.",
+      "answer": "≈ 0.5394",
+      "solution_steps": [
+        {
+          "explain": "Sai phân trung tâm xấp xỉ đạo hàm cấp một với sai số bậc h^2.",
+          "latex": "f'(x) \\approx \\frac{f(x+h)-f(x-h)}{2h}"
+        },
+        {
+          "explain": "Thay x = 1, h = 0.1: (sin 1.1 - sin 0.9)/0.2.",
+          "latex": "f'(1) \\approx \\frac{\\sin 1.1 - \\sin 0.9}{0.2} \\approx 0.5394"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.sai-phan-trung-tam-dao-ham"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng sai phân trung tâm",
+        "ước lượng đạo hàm số"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "sai-phan",
+        "dao-ham"
+      ],
+      "answer_numeric": 0.5394,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0050",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số",
+      "type": "dien-so",
+      "statement_vi": "Dùng công thức Simpson 3/8 với 4 nút cách đều 0,1,2,3 tính xấp xỉ ∫ từ 0 đến 3 của x^3 dx. (Công thức chính xác với đa thức bậc ≤ 3.)",
+      "statement_en": "Use Simpson's 3/8 rule with nodes 0,1,2,3 to approximate ∫ from 0 to 3 of x^3 dx.",
+      "answer": "20.25",
+      "solution_steps": [
+        {
+          "explain": "Công thức Simpson 3/8 với h = 1: (3h/8)[f0 + 3f1 + 3f2 + f3].",
+          "latex": "\\int_{0}^{3} f\\,dx \\approx \\frac{3h}{8}\\left[f_{0}+3f_{1}+3f_{2}+f_{3}\\right]"
+        },
+        {
+          "explain": "Giá trị f: 0, 1, 8, 27. Tính tổng có trọng số.",
+          "latex": "\\frac{3}{8}\\left[0 + 3\\cdot 1 + 3\\cdot 8 + 27\\right] = \\frac{3}{8}\\cdot 54 = 20.25"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.cong-thuc-simpson-ba-phan-tam"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng Simpson 3/8",
+        "tính tổng có trọng số"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "cau-phuong",
+        "simpson"
+      ],
+      "answer_numeric": 20.25,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0051",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số",
+      "type": "dien-so",
+      "statement_vi": "Dùng cầu phương Gauss-Legendre ba điểm tính xấp xỉ ∫ từ -1 đến 1 của t^4 dt. (Chính xác với đa thức bậc ≤ 5.)",
+      "statement_en": "Use 3-point Gauss-Legendre quadrature to approximate ∫ from -1 to 1 of t^4 dt.",
+      "answer": "0.4",
+      "solution_steps": [
+        {
+          "explain": "Cầu phương Gauss ba điểm với nút ±√(3/5), 0 và trọng số 5/9, 8/9, 5/9.",
+          "latex": "\\int_{-1}^{1} f\\,dt \\approx \\frac{5}{9}f\\!\\left(-\\sqrt{\\tfrac35}\\right)+\\frac{8}{9}f(0)+\\frac{5}{9}f\\!\\left(\\sqrt{\\tfrac35}\\right)"
+        },
+        {
+          "explain": "Với f = t^4: các nút biên cho (3/5)^2 = 0.36; nút 0 cho 0.",
+          "latex": "\\frac{5}{9}(0.36)+\\frac{8}{9}(0)+\\frac{5}{9}(0.36) = \\frac{10}{9}\\cdot 0.36 = 0.4"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.cau-phuong-gauss-ba-diem"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng cầu phương Gauss",
+        "dùng nút và trọng số Gauss"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "cau-phuong",
+        "gauss"
+      ],
+      "answer_numeric": 0.4,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0052",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số",
+      "type": "dien-so",
+      "statement_vi": "Giải xấp xỉ bài toán y' = y, y(0) = 1 bằng phương pháp Euler hiện với bước h = 0.5. Tính y2 (xấp xỉ tại x = 1) sau hai bước.",
+      "statement_en": "Approximate y' = y, y(0) = 1 by explicit Euler with h = 0.5. Find y2 (at x = 1) after two steps.",
+      "answer": "2.25",
+      "solution_steps": [
+        {
+          "explain": "Công thức Euler hiện: y_{n+1} = y_n + h·f(x_n, y_n), với f = y.",
+          "latex": "y_{n+1} = y_{n} + h\\,y_{n} = (1+h)\\,y_{n}"
+        },
+        {
+          "explain": "Hai bước với h = 0.5: y1 = 1.5, y2 = 1.5·1.5.",
+          "latex": "y_{2} = (1.5)(1.5) = 2.25"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.phuong-phap-euler-hien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng Euler hiện",
+        "lặp từng bước"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "ptvp-so",
+        "euler"
+      ],
+      "answer_numeric": 2.25,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0053",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích số",
+      "type": "dien-so",
+      "statement_vi": "Bảng giá trị f tại nút cách đều: f(0) = 1, f(1) = 3, f(2) = 7. Dùng công thức nội suy Newton tiến ước lượng f(0.5) (h = 1).",
+      "statement_en": "Table f(0)=1, f(1)=3, f(2)=7. Use Newton's forward interpolation to estimate f(0.5), h = 1.",
+      "answer": "1.75",
+      "solution_steps": [
+        {
+          "explain": "Sai phân tiến: Δf0 = 2, Δ^2 f0 = (7-3)-(3-1) = 2; với s = (x - x0)/h = 0.5.",
+          "latex": "\\Delta f_{0} = 2,\\quad \\Delta^{2}f_{0} = 2,\\quad s = 0.5"
+        },
+        {
+          "explain": "Công thức Newton tiến giữ đến sai phân bậc hai.",
+          "latex": "P(0.5) = 1 + 0.5\\cdot 2 + \\frac{0.5(0.5-1)}{2}\\cdot 2 = 1 + 1 - 0.25 = 1.75"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-so.noi-suy-newton-tien"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "lập bảng sai phân tiến",
+        "áp dụng nội suy Newton"
+      ],
+      "tags": [
+        "giai-tich-so",
+        "noi-suy",
+        "newton"
+      ],
+      "answer_numeric": 1.75,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0054",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích phức",
+      "type": "dien-so",
+      "statement_vi": "Tính phần ảo của nhánh chính Log(-1 + i). Làm tròn 4 chữ số.",
+      "statement_en": "Find the imaginary part of the principal Log(-1 + i).",
+      "answer": "3π/4 ≈ 2.3562",
+      "solution_steps": [
+        {
+          "explain": "Nhánh chính: Log z = ln|z| + i·Arg z, với -π < Arg z ≤ π.",
+          "latex": "\\operatorname{Log} z = \\ln|z| + i\\operatorname{Arg} z"
+        },
+        {
+          "explain": "Điểm -1 + i nằm ở góc phần tư thứ hai nên Arg = 3π/4.",
+          "latex": "\\operatorname{Im}\\operatorname{Log}(-1+i) = \\frac{3\\pi}{4} \\approx 2.3562"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.logarit-phuc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "xác định acgumen chính",
+        "tính logarit phức"
+      ],
+      "tags": [
+        "giai-tich-phuc",
+        "logarit",
+        "nhanh-chinh"
+      ],
+      "answer_numeric": 2.3562,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0055",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích phức",
+      "type": "dien-so",
+      "statement_vi": "Tính giá trị chính của lũy thừa phức i^i (dùng nhánh chính, k = 0). Làm tròn 4 chữ số.",
+      "statement_en": "Compute the principal value of i^i (principal branch, k = 0).",
+      "answer": "e^(-π/2) ≈ 0.2079",
+      "solution_steps": [
+        {
+          "explain": "Định nghĩa lũy thừa phức: z^c = e^{c·Log z}; với z = i, Log i = i·π/2.",
+          "latex": "i^{i} = e^{i\\operatorname{Log} i} = e^{i\\cdot i\\pi/2}"
+        },
+        {
+          "explain": "i·(iπ/2) = -π/2, kết quả là số thực.",
+          "latex": "i^{i} = e^{-\\pi/2} \\approx 0.2079"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.luy-thua-phuc"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "dùng logarit phức",
+        "tính lũy thừa phức tổng quát"
+      ],
+      "tags": [
+        "giai-tich-phuc",
+        "luy-thua",
+        "gia-tri-chinh"
+      ],
+      "answer_numeric": 0.2079,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0056",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích phức",
+      "type": "dien-so",
+      "statement_vi": "Cho biến đổi Möbius T(z) = (z - 1)/(z + 1). Tính T(3).",
+      "statement_en": "For the Möbius transform T(z) = (z-1)/(z+1), compute T(3).",
+      "answer": "0.5",
+      "solution_steps": [
+        {
+          "explain": "Thay trực tiếp z = 3 vào biểu thức phân tuyến tính.",
+          "latex": "T(3) = \\frac{3-1}{3+1} = \\frac{2}{4}"
+        },
+        {
+          "explain": "Rút gọn.",
+          "latex": "T(3) = 0.5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.bien-doi-mobius"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "thay giá trị vào biến đổi Möbius"
+      ],
+      "tags": [
+        "giai-tich-phuc",
+        "mobius",
+        "phan-tuyen-tinh"
+      ],
+      "answer_numeric": 0.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0057",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Giải tích phức",
+      "type": "dien-so",
+      "statement_vi": "Tính tỉ số kép (z1, z2; z3, z4) của bốn điểm z1 = 1, z2 = 2, z3 = 3, z4 = 4. Làm tròn 4 chữ số.",
+      "statement_en": "Compute the cross-ratio (1, 2; 3, 4).",
+      "answer": "4/3 ≈ 1.3333",
+      "solution_steps": [
+        {
+          "explain": "Định nghĩa tỉ số kép.",
+          "latex": "(z_{1},z_{2};z_{3},z_{4}) = \\frac{(z_{1}-z_{3})(z_{2}-z_{4})}{(z_{1}-z_{4})(z_{2}-z_{3})}"
+        },
+        {
+          "explain": "Thay số: tử (1-3)(2-4) = 4; mẫu (1-4)(2-3) = 3.",
+          "latex": "= \\frac{(-2)(-2)}{(-3)(-1)} = \\frac{4}{3} \\approx 1.3333"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.giai-tich-phuc.ti-so-kep-bat-bien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính tỉ số kép"
+      ],
+      "tags": [
+        "giai-tich-phuc",
+        "ti-so-kep",
+        "mobius"
+      ],
+      "answer_numeric": 1.3333,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0058",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Lý thuyết thông tin",
+      "type": "dien-so",
+      "statement_vi": "Tính entropy Shannon (đơn vị bit) của biến ngẫu nhiên có phân phối (1/2, 1/4, 1/4).",
+      "statement_en": "Compute the Shannon entropy (in bits) of the distribution (1/2, 1/4, 1/4).",
+      "answer": "1.5",
+      "solution_steps": [
+        {
+          "explain": "Entropy Shannon: H = -Σ p_i·log2(p_i).",
+          "latex": "H(X) = -\\sum_{i} p_{i}\\log_{2} p_{i}"
+        },
+        {
+          "explain": "Thay số: -(1/2)log2(1/2) - 2·(1/4)log2(1/4) = 1/2 + 2·(1/4)·2.",
+          "latex": "H = \\frac{1}{2}\\cdot 1 + 2\\cdot\\frac{1}{4}\\cdot 2 = 0.5 + 1 = 1.5"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-thong-tin.entropy-shannon"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng công thức entropy",
+        "tính logarit cơ số 2"
+      ],
+      "tags": [
+        "ly-thuyet-thong-tin",
+        "entropy",
+        "shannon"
+      ],
+      "answer_numeric": 1.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0059",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Lý thuyết thông tin",
+      "type": "dien-so",
+      "statement_vi": "Tính phân kì Kullback-Leibler D_KL(p||q) (đơn vị bit) với p = (0.5, 0.5) và q = (0.25, 0.75). Làm tròn 4 chữ số.",
+      "statement_en": "Compute the KL divergence D_KL(p||q) in bits, p = (0.5, 0.5), q = (0.25, 0.75).",
+      "answer": "≈ 0.2075",
+      "solution_steps": [
+        {
+          "explain": "Phân kì KL: D_KL = Σ p(x)·log2(p(x)/q(x)).",
+          "latex": "D_{\\mathrm{KL}}(p\\parallel q) = \\sum_{x} p(x)\\log_{2}\\frac{p(x)}{q(x)}"
+        },
+        {
+          "explain": "Hai số hạng: 0.5·log2(2) + 0.5·log2(2/3) = 0.5 - 0.5·log2(1.5).",
+          "latex": "D_{\\mathrm{KL}} = 0.5\\cdot 1 + 0.5\\log_{2}\\frac{2}{3} \\approx 0.5 - 0.2925 = 0.2075"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-thong-tin.phan-ki-kullback-leibler"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng công thức KL",
+        "tính logarit cơ số 2"
+      ],
+      "tags": [
+        "ly-thuyet-thong-tin",
+        "kl-divergence",
+        "entropy"
+      ],
+      "answer_numeric": 0.2075,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0060",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Lý thuyết thông tin",
+      "type": "dien-so",
+      "statement_vi": "Kênh nhị phân đối xứng có xác suất lật bit p = 0.1. Tính dung lượng kênh C = 1 - H_b(p) (bit/ký hiệu). Làm tròn 4 chữ số.",
+      "statement_en": "A binary symmetric channel has crossover probability p = 0.1. Compute C = 1 - H_b(p).",
+      "answer": "≈ 0.5310",
+      "solution_steps": [
+        {
+          "explain": "Dung lượng kênh nhị phân đối xứng: C = 1 - H_b(p), với H_b là entropy nhị phân.",
+          "latex": "C_{\\mathrm{BSC}} = 1 - H_{b}(p),\\quad H_{b}(p) = -p\\log_{2}p - (1-p)\\log_{2}(1-p)"
+        },
+        {
+          "explain": "Tính H_b(0.1) ≈ 0.4690.",
+          "latex": "C = 1 - 0.4690 = 0.5310"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-thong-tin.dung-luong-kenh-nhi-phan-doi-xung"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính entropy nhị phân",
+        "tính dung lượng kênh"
+      ],
+      "tags": [
+        "ly-thuyet-thong-tin",
+        "dung-luong-kenh",
+        "bsc"
+      ],
+      "answer_numeric": 0.531,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0061",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Lý thuyết thông tin",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét mã nhị phân (D = 2) với độ dài từ mã ℓ = (1, 2, 3, 3). Bất đẳng thức Kraft-McMillan cho biết điều gì về khả năng tồn tại mã tiền tố?",
+      "statement_en": "Binary code (D=2) with codeword lengths (1,2,3,3). What does Kraft-McMillan say about a prefix code?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Bất đẳng thức Kraft: tổng D^(-ℓ_i) ≤ 1 là điều kiện cần và đủ cho mã tiền tố tồn tại.",
+          "latex": "\\sum_{i} 2^{-\\ell_{i}} = 2^{-1}+2^{-2}+2^{-3}+2^{-3}"
+        },
+        {
+          "explain": "Tính tổng: 0.5 + 0.25 + 0.125 + 0.125 = 1 ≤ 1.",
+          "latex": "\\sum = 1 \\le 1 \\;\\Rightarrow\\; \\text{tồn tại mã tiền tố}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-thong-tin.bat-dang-thuc-kraft"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính tổng Kraft",
+        "kiểm tra điều kiện tồn tại mã tiền tố"
+      ],
+      "tags": [
+        "ly-thuyet-thong-tin",
+        "kraft",
+        "ma-hoa"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tồn tại mã tiền tố vì tổng Kraft bằng 1 (≤ 1).",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Không tồn tại vì tổng Kraft bằng 1 (phải nhỏ hơn 1 chặt).",
+          "why_wrong": "Bất đẳng thức Kraft cho phép dấu bằng; tổng đúng bằng 1 vẫn đảm bảo tồn tại."
+        },
+        {
+          "key": "C",
+          "text": "Không kết luận được nếu chưa biết xác suất các ký hiệu.",
+          "why_wrong": "Kraft chỉ dựa vào độ dài từ mã, không cần phân phối xác suất."
+        },
+        {
+          "key": "D",
+          "text": "Tồn tại nhưng mã không giải mã được duy nhất.",
+          "why_wrong": "Mã tiền tố luôn giải mã được duy nhất tức thời; kết luận này sai bản chất."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0062",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Lý thuyết thông tin",
+      "type": "dien-so",
+      "statement_vi": "Tính entropy vi phân (bit) của phân phối chuẩn N(0, 1): h = (1/2)·log2(2πe·σ^2) với σ^2 = 1. Làm tròn 4 chữ số.",
+      "statement_en": "Compute the differential entropy (bits) of N(0,1): h = (1/2)log2(2πe σ^2), σ^2 = 1.",
+      "answer": "≈ 2.0471",
+      "solution_steps": [
+        {
+          "explain": "Entropy vi phân của phân phối chuẩn.",
+          "latex": "h\\big(N(\\mu,\\sigma^{2})\\big) = \\frac{1}{2}\\log_{2}\\left(2\\pi e\\,\\sigma^{2}\\right)"
+        },
+        {
+          "explain": "Với σ^2 = 1: 2πe ≈ 17.079, log2 ≈ 4.094.",
+          "latex": "h = \\frac{1}{2}\\log_{2}(2\\pi e) \\approx \\frac{4.094}{2} = 2.0471"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-thong-tin.entropy-vi-phan-chuan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng entropy vi phân",
+        "tính logarit cơ số 2"
+      ],
+      "tags": [
+        "ly-thuyet-thong-tin",
+        "entropy-vi-phan",
+        "phan-phoi-chuan"
+      ],
+      "answer_numeric": 2.0471,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0063",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Toán cho khoa học máy tính",
+      "type": "dien-so",
+      "statement_vi": "Băm ngẫu nhiên m = 30 khóa vào N = 365 ô. Dùng xấp xỉ P(không va chạm) ≈ exp(-m(m-1)/(2N)) để ước lượng xác suất không có hai khóa trùng ô. Làm tròn 4 chữ số.",
+      "statement_en": "Hashing m = 30 keys into N = 365 slots. Use P(no collision) ≈ exp(-m(m-1)/(2N)).",
+      "answer": "≈ 0.3037",
+      "solution_steps": [
+        {
+          "explain": "Xấp xỉ mũ của xác suất không va chạm (nghịch lí ngày sinh).",
+          "latex": "P(\\text{no collision}) \\approx \\exp\\!\\left(-\\frac{m(m-1)}{2N}\\right)"
+        },
+        {
+          "explain": "Thay m = 30, N = 365: số mũ = -30·29/730 = -1.1918.",
+          "latex": "P \\approx e^{-1.1918} \\approx 0.3037"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.toan-tin-hoc.nghich-li-ngay-sinh-xac-suat"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng xấp xỉ ngày sinh",
+        "tính hàm mũ"
+      ],
+      "tags": [
+        "toan-tin-hoc",
+        "ngay-sinh",
+        "bam"
+      ],
+      "answer_numeric": 0.3037,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0064",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Toán cho khoa học máy tính",
+      "type": "dien-so",
+      "statement_vi": "Trên đường cong elliptic y^2 = x^3 - x (trên trường số thực), cho hai điểm P = (0, 0) và Q = (-1, 0). Tính hoành độ x3 của điểm tổng P + Q.",
+      "statement_en": "On the elliptic curve y^2 = x^3 - x over the reals, P = (0,0), Q = (-1,0). Find the x-coordinate of P + Q.",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Hệ số góc dây cung qua hai điểm phân biệt: λ = (y2 - y1)/(x2 - x1).",
+          "latex": "\\lambda = \\frac{0-0}{-1-0} = 0"
+        },
+        {
+          "explain": "Hoành độ điểm tổng: x3 = λ^2 - x1 - x2.",
+          "latex": "x_{3} = 0 - 0 - (-1) = 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.toan-tin-hoc.cong-diem-duong-cong-elliptic"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính hệ số góc dây cung",
+        "áp dụng công thức cộng điểm elliptic"
+      ],
+      "tags": [
+        "toan-tin-hoc",
+        "elliptic-curve",
+        "cong-diem"
+      ],
+      "answer_numeric": 1.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0065",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Xác suất nâng cao",
+      "type": "dien-so",
+      "statement_vi": "Có n = 100 biến ngẫu nhiên độc lập, mỗi biến nhận giá trị trong [0, 1]. Dùng bất đẳng thức Hoeffding chặn P(|S_n - E(S_n)| ≥ 10). Làm tròn 4 chữ số.",
+      "statement_en": "n = 100 independent variables in [0,1]. Use Hoeffding to bound P(|S_n - E(S_n)| ≥ 10).",
+      "answer": "≈ 0.2707",
+      "solution_steps": [
+        {
+          "explain": "Bất đẳng thức Hoeffding với b_i - a_i = 1 cho mọi i nên Σ(b_i - a_i)^2 = 100.",
+          "latex": "P\\big(|S_{n}-E(S_{n})|\\ge t\\big) \\le 2\\exp\\!\\left(-\\frac{2t^{2}}{\\sum (b_{i}-a_{i})^{2}}\\right)"
+        },
+        {
+          "explain": "Thay t = 10: số mũ = -2·100/100 = -2.",
+          "latex": "\\le 2e^{-2} \\approx 0.2707"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-nang-cao.bat-dang-thuc-hoeffding"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng bất đẳng thức Hoeffding",
+        "tính chặn xác suất"
+      ],
+      "tags": [
+        "xac-suat",
+        "tap-trung",
+        "hoeffding"
+      ],
+      "answer_numeric": 0.2707,
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0066",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Quá trình ngẫu nhiên",
+      "type": "dien-so",
+      "statement_vi": "Quá trình Poisson thuần nhất cường độ λ = 2 (biến cố/giờ). Tính xác suất có đúng 5 biến cố trong khoảng t = 3 giờ. Làm tròn 4 chữ số.",
+      "statement_en": "Homogeneous Poisson process with λ = 2 per hour. Find P(exactly 5 events in t = 3 hours).",
+      "answer": "≈ 0.1606",
+      "solution_steps": [
+        {
+          "explain": "Số biến cố trong khoảng độ dài t theo phân phối Poisson tham số λt.",
+          "latex": "P(N(t)=k) = e^{-\\lambda t}\\frac{(\\lambda t)^{k}}{k!}"
+        },
+        {
+          "explain": "Với λt = 6, k = 5: e^(-6)·6^5/5!.",
+          "latex": "P(N(3)=5) = e^{-6}\\frac{6^{5}}{120} \\approx 0.1606"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.qua-trinh-ngau-nhien.qua-trinh-poisson"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "nhận dạng phân phối Poisson",
+        "tính xác suất số biến cố"
+      ],
+      "tags": [
+        "xac-suat",
+        "qua-trinh-poisson",
+        "ngau-nhien"
+      ],
+      "answer_numeric": 0.1606,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0067",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tối ưu hoá",
+      "type": "dien-so",
+      "statement_vi": "Cực tiểu hàm lồi f(x) = x^2 bằng gradient descent với bước tối ưu α = 1/L, L = 2 (hằng số Lipschitz của gradient). Xuất phát x0 = 4, tính x1 sau một bước.",
+      "statement_en": "Minimize f(x) = x^2 by gradient descent with α = 1/L, L = 2, starting x0 = 4. Find x1.",
+      "answer": "0",
+      "solution_steps": [
+        {
+          "explain": "Chọn tốc độ học theo hằng số Lipschitz: α = 1/L = 1/2; gradient f'(x) = 2x.",
+          "latex": "\\alpha = \\frac{1}{L} = \\frac{1}{2},\\quad f'(x) = 2x"
+        },
+        {
+          "explain": "Cập nhật gradient descent: x1 = x0 - α·f'(x0).",
+          "latex": "x_{1} = 4 - \\frac{1}{2}\\cdot(2\\cdot 4) = 4 - 4 = 0"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.toi-uu-hoa.gradient-descent-buoc-toi-uu"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "chọn tốc độ học theo Lipschitz",
+        "cập nhật gradient descent"
+      ],
+      "tags": [
+        "toi-uu-hoa",
+        "gradient-descent",
+        "buoc-hoc"
+      ],
+      "answer_numeric": 0.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0068",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tối ưu hoá",
+      "type": "tu-luan",
+      "statement_vi": "Tìm điểm dừng của hàm f(x, y) = x^2 + y^2 - 4x + 6y + 1 bằng điều kiện cần cấp một (gradient bằng 0).",
+      "statement_en": "Find the stationary point of f(x,y) = x^2 + y^2 - 4x + 6y + 1 using the first-order condition.",
+      "answer": "(2, -3)",
+      "solution_steps": [
+        {
+          "explain": "Điều kiện cần cấp một: mọi đạo hàm riêng bậc nhất triệt tiêu tại điểm cực trị trong.",
+          "latex": "\\nabla f = \\mathbf{0}\\ \\Leftrightarrow\\ f_{x} = 0,\\ f_{y} = 0"
+        },
+        {
+          "explain": "Tính f_x = 2x - 4 = 0 và f_y = 2y + 6 = 0.",
+          "latex": "x = 2,\\quad y = -3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.toi-uu-hoa.dieu-kien-can-cap-mot"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính gradient",
+        "giải hệ điều kiện cần"
+      ],
+      "tags": [
+        "toi-uu-hoa",
+        "cuc-tri",
+        "gradient"
+      ]
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0069",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Nhóm (Group theory)",
+      "type": "trac-nghiem",
+      "statement_vi": "Hoán vị σ trên {1,...,5} phân tích thành các chu trình rời (1 2 3)(4 5). Xác định dấu (sign) của σ.",
+      "statement_en": "A permutation σ decomposes as (1 2 3)(4 5). Determine its sign.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Dấu của chu trình độ dài ℓ là (-1)^(ℓ-1); dấu của tích là tích các dấu.",
+          "latex": "\\operatorname{sgn}(\\sigma) = (-1)^{(3-1)}\\cdot(-1)^{(2-1)} = (+1)(-1)"
+        },
+        {
+          "explain": "Chu trình 3 là chẵn (+1), chu trình 2 (chuyển vị) là lẻ (-1).",
+          "latex": "\\operatorname{sgn}(\\sigma) = -1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.dau-cua-hoan-vi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "phân tích hoán vị thành chu trình",
+        "tính dấu hoán vị"
+      ],
+      "tags": [
+        "dai-so",
+        "nhom",
+        "hoan-vi"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "sgn(σ) = +1 (hoán vị chẵn).",
+          "why_wrong": "Cộng sai số chuyển vị: chu trình 3 tách thành 2 chuyển vị, chu trình 2 thành 1, tổng 3 chuyển vị là lẻ."
+        },
+        {
+          "key": "B",
+          "text": "sgn(σ) = -1 (hoán vị lẻ).",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "sgn(σ) = 0.",
+          "why_wrong": "Dấu của hoán vị chỉ nhận giá trị ±1, không bao giờ bằng 0."
+        },
+        {
+          "key": "D",
+          "text": "Không xác định được nếu chưa viết σ dưới dạng ma trận.",
+          "why_wrong": "Phân tích chu trình đã đủ để tính dấu, không cần dạng ma trận."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext3-math-daihoc.0070",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Nhóm (Group theory)",
+      "type": "dien-so",
+      "statement_vi": "Hoán vị có phân tích chu trình rời gồm một chu trình độ dài 3 và một chu trình độ dài 2. Tính cấp (order) của hoán vị.",
+      "statement_en": "A permutation has disjoint cycles of lengths 3 and 2. Find its order.",
+      "answer": "6",
+      "solution_steps": [
+        {
+          "explain": "Cấp của hoán vị bằng bội chung nhỏ nhất của độ dài các chu trình rời.",
+          "latex": "\\operatorname{ord}(\\sigma) = \\operatorname{lcm}(\\ell_{1},\\ldots,\\ell_{c})"
+        },
+        {
+          "explain": "Với các độ dài 3 và 2.",
+          "latex": "\\operatorname{ord}(\\sigma) = \\operatorname{lcm}(3,2) = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.cap-cua-hoan-vi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính bội chung nhỏ nhất",
+        "tính cấp hoán vị"
+      ],
+      "tags": [
+        "dai-so",
+        "nhom",
+        "hoan-vi"
+      ],
+      "answer_numeric": 6.0,
+      "tolerance": 0.001
+    }
+  ]
+}

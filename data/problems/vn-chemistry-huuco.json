@@ -1,0 +1,2021 @@
+{
+  "meta": {
+    "file": "vn-chemistry-huuco.json",
+    "subject": "chemistry",
+    "title": "Hóa hữu cơ THPT Việt Nam: bài tập và các dạng giải nhanh",
+    "levels": [
+      "thpt"
+    ],
+    "count": 38
+  },
+  "problems": [
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0001",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Lập công thức phân tử hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Hợp chất hữu cơ X chứa C, H, O có phần trăm khối lượng: %C = 52,17%; %H = 13,04%; còn lại là O. Biết khối lượng mol của X bằng 46 g/mol. Công thức phân tử của X là?",
+      "statement_en": "An organic compound X (C, H, O) has %C = 52.17%, %H = 13.04%, the rest O, and molar mass 46 g/mol. Find its molecular formula.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tính %O rồi lập tỉ lệ mol các nguyên tử để tìm công thức đơn giản nhất.",
+          "latex": "\\%O = 100 - 52{,}17 - 13{,}04 = 34{,}79\\%"
+        },
+        {
+          "explain": "Lập tỉ lệ số mol nguyên tử C : H : O.",
+          "latex": "C:H:O = \\frac{52{,}17}{12} : \\frac{13{,}04}{1} : \\frac{34{,}79}{16} = 4{,}35 : 13{,}04 : 2{,}17 = 2:6:1"
+        },
+        {
+          "explain": "Công thức đơn giản nhất là C2H6O, khối lượng đúng bằng 46 nên đây cũng là công thức phân tử.",
+          "latex": "M_{C_2H_6O} = 46 = M_X \\Rightarrow X: C_2H_6O"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.huu-co.lap-ctpt-tu-phan-tram",
+        "chemistry.thpt.huu-co.ctdgn-sang-ctpt"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "lập công thức đơn giản nhất",
+        "suy công thức phân tử từ M"
+      ],
+      "tags": [
+        "hoa-huu-co",
+        "cong-thuc-phan-tu",
+        "phan-tram"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "CH4O",
+          "why_wrong": "Nhầm khối lượng mol 32 của methanol, không kiểm tra lại với M = 46 mà đề đã cho."
+        },
+        {
+          "key": "B",
+          "text": "C2H6O",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "C2H6O2",
+          "why_wrong": "Ghép sai số O: tỉ lệ mol cho O = 1, nếu lấy O = 2 thì M = 62 ≠ 46."
+        },
+        {
+          "key": "D",
+          "text": "C3H8O",
+          "why_wrong": "Làm tròn sai tỉ lệ mol thành 3:8:1, cho M = 60 không khớp dữ kiện M = 46."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0002",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Đốt cháy hoàn toàn 0,2 mol một hydrocarbon no, mạch hở X, thu được 0,6 mol CO2. Công thức phân tử của X là?",
+      "statement_en": "Complete combustion of 0.2 mol of a saturated acyclic hydrocarbon X gives 0.6 mol CO2. Find X.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Số nguyên tử C bằng tỉ lệ mol CO2 và mol chất.",
+          "latex": "C = \\frac{n_{CO_2}}{n_X} = \\frac{0{,}6}{0{,}2} = 3"
+        },
+        {
+          "explain": "X no, mạch hở nên là alkane CnH2n+2 với n = 3.",
+          "latex": "X: C_3H_8"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.ankan",
+        "chemistry.thpt.dot-chay.so-c-trung-binh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "xác định số C từ CO2",
+        "nhận dạng alkane"
+      ],
+      "tags": [
+        "hoa-huu-co",
+        "dot-chay",
+        "ankan"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "C2H6",
+          "why_wrong": "Chia nhầm 0,6/0,2 thành 2 hoặc lấy số C bằng số mol CO2."
+        },
+        {
+          "key": "B",
+          "text": "C3H6",
+          "why_wrong": "Bỏ qua dữ kiện 'no, mạch hở': C3H6 là alkene, không thỏa điều kiện no."
+        },
+        {
+          "key": "C",
+          "text": "C3H8",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "C6H14",
+          "why_wrong": "Lấy số C bằng 0,6·... nhân nhầm, hoặc quên chia cho số mol chất."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0003",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Lập công thức phân tử hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Tính độ bất bão hòa (k) của phân tử C5H8.",
+      "statement_en": "Compute the degree of unsaturation (k) of C5H8.",
+      "answer": "k = 2",
+      "solution_steps": [
+        {
+          "explain": "Áp công thức độ bất bão hòa cho hợp chất chỉ chứa C và H.",
+          "latex": "k = \\frac{2C + 2 - H}{2} = \\frac{2 \\cdot 5 + 2 - 8}{2}"
+        },
+        {
+          "explain": "Tính ra giá trị nguyên không âm.",
+          "latex": "k = \\frac{4}{2} = 2"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.huu-co.do-bat-bao-hoa"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính độ bất bão hòa"
+      ],
+      "tags": [
+        "hoa-huu-co",
+        "do-bat-bao-hoa"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 0,
+      "hints": [
+        "Công thức k = (2C + 2 + N − H)/2, không tính nguyên tử O."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0004",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đếm đồng phân hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Số đồng phân alcohol (ancol) ứng với công thức phân tử C4H10O là?",
+      "statement_en": "How many alcohol isomers have molecular formula C4H10O?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "C4H10O là alcohol no, đơn chức, mạch hở. Liệt kê theo mạch carbon và vị trí nhóm –OH.",
+          "latex": "C_4H_{10}O:\\ butan\\text{-}1\\text{-}ol,\\ butan\\text{-}2\\text{-}ol,\\ 2\\text{-}methylpropan\\text{-}1\\text{-}ol,\\ 2\\text{-}methylpropan\\text{-}2\\text{-}ol"
+        },
+        {
+          "explain": "Đối chiếu công thức nhanh 2^(n−2).",
+          "latex": "S = 2^{\\,4-2} = 4"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dong-phan.ancol-no-don-chuc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "đếm đồng phân alcohol"
+      ],
+      "tags": [
+        "hoa-huu-co",
+        "dong-phan",
+        "ancol"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2",
+          "why_wrong": "Chỉ đếm alcohol mạch thẳng (butan-1-ol, butan-2-ol), bỏ mạch nhánh isobutyl."
+        },
+        {
+          "key": "B",
+          "text": "3",
+          "why_wrong": "Bỏ sót một trong bốn đồng phân, thường quên alcohol bậc III 2-methylpropan-2-ol."
+        },
+        {
+          "key": "C",
+          "text": "4",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "7",
+          "why_wrong": "Đếm gộp cả ether (đồng phân khác nhóm chức) vào số đồng phân alcohol; đề chỉ hỏi alcohol."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0005",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đếm đồng phân hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Số đồng phân ester ứng với công thức phân tử C4H8O2 là?",
+      "statement_en": "How many ester isomers have molecular formula C4H8O2?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "C4H8O2 là ester no, đơn chức (k = 1). Liệt kê theo gốc acid–ancol.",
+          "latex": "HCOOC_3H_7\\ (2\\ dang),\\ CH_3COOC_2H_5,\\ C_2H_5COOCH_3"
+        },
+        {
+          "explain": "Đếm tổng: gốc propyl có 2 dạng (n- và iso-) cộng hai ester còn lại.",
+          "latex": "2 + 1 + 1 = 4"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dong-phan.este-no-don-chuc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "đếm đồng phân ester",
+        "liệt kê theo gốc acid và gốc ancol"
+      ],
+      "tags": [
+        "hoa-huu-co",
+        "dong-phan",
+        "este"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2",
+          "why_wrong": "Chỉ đếm HCOOC3H7 và CH3COOC2H5, bỏ sót C2H5COOCH3 và một dạng của gốc propyl."
+        },
+        {
+          "key": "B",
+          "text": "3",
+          "why_wrong": "Quên gốc propyl (C3H7) có hai đồng phân n-propyl và isopropyl nên thiếu 1 ester."
+        },
+        {
+          "key": "C",
+          "text": "4",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "6",
+          "why_wrong": "Tính nhầm cả đồng phân acid C4H8O2 (butanoic, isobutyric) vào cùng danh sách ester."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0006",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dung-sai",
+      "statement_vi": "Xét các phát biểu sau về phản ứng đặc trưng của hydrocarbon, hãy cho biết mỗi phát biểu Đúng hay Sai:\n(a) Ethylene (C2H4) làm mất màu dung dịch bromine ở điều kiện thường.\n(b) Benzene làm mất màu dung dịch bromine ở điều kiện thường giống ethylene.\n(c) Propyne (CH3-C≡CH) tạo kết tủa vàng nhạt với dung dịch AgNO3 trong NH3.\n(d) But-2-yne (CH3-C≡C-CH3) tạo kết tủa với dung dịch AgNO3 trong NH3.",
+      "statement_en": "Decide True/False for each statement about characteristic reactions of hydrocarbons (a)-(d).",
+      "answer": "(a) Đúng; (b) Sai; (c) Đúng; (d) Sai",
+      "solution_steps": [
+        {
+          "explain": "(a) Alkene có liên kết pi kém bền nên cộng Br2, làm mất màu nâu đỏ ở điều kiện thường: Đúng.",
+          "latex": "C_2H_4 + Br_2 \\rightarrow C_2H_4Br_2"
+        },
+        {
+          "explain": "(b) Benzene bền do tính thơm, không cộng Br2 ở điều kiện thường (chỉ thế khi có xúc tác Fe), nên không làm mất màu: Sai.",
+          "latex": "C_6H_6 + Br_2 \\xrightarrow{Fe} C_6H_5Br + HBr"
+        },
+        {
+          "explain": "(c) Propyne là ank-1-yne, có H đầu mạch bị thay bởi Ag tạo kết tủa: Đúng.",
+          "latex": "CH_3\\text{-}C\\equiv CH + AgNO_3 + NH_3 \\rightarrow CH_3\\text{-}C\\equiv CAg\\downarrow + NH_4NO_3"
+        },
+        {
+          "explain": "(d) But-2-yne có liên kết ba giữa mạch, không có H đầu mạch nên không phản ứng: Sai.",
+          "latex": "CH_3\\text{-}C\\equiv C\\text{-}CH_3 + AgNO_3/NH_3 \\rightarrow \\text{khong phan ung}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.cong-br2",
+        "chemistry.thpt.phan-ung.ankin-agno3"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "phân biệt phản ứng cộng và thế",
+        "nhận biết ank-1-yne"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "phan-ung",
+        "dung-sai"
+      ],
+      "hints": [
+        "Chỉ ank-1-yne (H đầu mạch) mới tạo kết tủa với AgNO3/NH3.",
+        "Benzene không cộng Br2 ở điều kiện thường."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0007",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Cracking 5,8 gam butane (C4H10) một thời gian, thu được hỗn hợp khí X. Biết 60% lượng butane đã tham gia phản ứng. Tính tỉ khối của hỗn hợp X so với H2.",
+      "statement_en": "Cracking 5.8 g of butane (60% reacted) gives gas mixture X. Find the relative density of X with respect to H2.",
+      "answer": "d(X/H2) = 18,125",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol butane ban đầu.",
+          "latex": "n_{C_4H_{10}} = \\frac{5{,}8}{58} = 0{,}1\\ mol"
+        },
+        {
+          "explain": "Mỗi phân tử cracking cho 2 phân tử nên số mol tăng bằng số mol phản ứng.",
+          "latex": "n_X = 0{,}1 + 0{,}1 \\cdot 0{,}6 = 0{,}16\\ mol"
+        },
+        {
+          "explain": "Khối lượng bảo toàn, tính M trung bình rồi tỉ khối.",
+          "latex": "\\bar M_X = \\frac{5{,}8}{0{,}16} = 36{,}25 \\Rightarrow d_{X/H_2} = \\frac{36{,}25}{2} = 18{,}125"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.cracking-ankan",
+        "chemistry.thpt.bao-toan.khoi-luong",
+        "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "bảo toàn khối lượng khi cracking",
+        "tính khối lượng mol trung bình"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "cracking",
+        "giai-nhanh"
+      ],
+      "answer_numeric": 18.125,
+      "tolerance": 0.02,
+      "hints": [
+        "Khối lượng hỗn hợp không đổi; chỉ số mol tăng.",
+        "Số mol tăng = số mol butane đã cracking."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0008",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho 5,6 gam một alkene X tác dụng vừa đủ với dung dịch chứa 16 gam Br2. Công thức phân tử của X là?",
+      "statement_en": "5.6 g of an alkene X reacts exactly with a solution containing 16 g of Br2. Find X.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Alkene cộng Br2 theo tỉ lệ 1:1.",
+          "latex": "n_{Br_2} = \\frac{16}{160} = 0{,}1\\ mol = n_X"
+        },
+        {
+          "explain": "Tính khối lượng mol của alkene.",
+          "latex": "M_X = \\frac{5{,}6}{0{,}1} = 56 = 14n \\Rightarrow n = 4"
+        },
+        {
+          "explain": "Alkene CnH2n với n = 4.",
+          "latex": "X: C_4H_8"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.cong-br2",
+        "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "dùng phản ứng cộng Br2 định lượng",
+        "suy công thức alkene từ M"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "anken",
+        "cong-br2"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "C2H4",
+          "why_wrong": "Dùng M(Br2) = 80 thay vì 160, cho n(Br2) = 0,2 và M = 28."
+        },
+        {
+          "key": "B",
+          "text": "C3H6",
+          "why_wrong": "Tính nhầm khối lượng mol Br2 hoặc làm tròn M = 42."
+        },
+        {
+          "key": "C",
+          "text": "C4H8",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "C5H10",
+          "why_wrong": "Lấy n(Br2) = 0,08 do chia 16 cho 200; sai khối lượng mol Br2."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0009",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Hỗn hợp khí X gồm C2H4 và H2 có tỉ khối so với H2 bằng 7,5. Dẫn X qua bột Ni nung nóng, thu được hỗn hợp Y có tỉ khối so với H2 bằng 10. Tính hiệu suất phản ứng hydrogen hóa (theo %).",
+      "statement_en": "Gas mixture X (C2H4, H2), density 7.5 vs H2, is passed over Ni to give Y with density 10 vs H2. Find the hydrogenation yield (%).",
+      "answer": "H = 50%",
+      "solution_steps": [
+        {
+          "explain": "Chọn 1 mol X, dùng M trung bình 15 tìm thành phần.",
+          "latex": "28x + 2(1-x) = 15 \\Rightarrow x = 0{,}5 \\Rightarrow n_{C_2H_4} = n_{H_2} = 0{,}5\\ mol"
+        },
+        {
+          "explain": "Khối lượng bảo toàn, tính số mol Y từ M trung bình 20.",
+          "latex": "n_Y = \\frac{15}{20} = 0{,}75\\ mol"
+        },
+        {
+          "explain": "Độ giảm số mol khí bằng số mol H2 phản ứng bằng số mol C2H4 phản ứng.",
+          "latex": "n_{pu} = 1 - 0{,}75 = 0{,}25 \\Rightarrow H = \\frac{0{,}25}{0{,}5} \\cdot 100\\% = 50\\%"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.cong-h2",
+        "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh",
+        "chemistry.thpt.bao-toan.khoi-luong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "dùng độ giảm số mol khí",
+        "bảo toàn khối lượng cho hỗn hợp khí"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "hydro-hoa",
+        "giai-nhanh"
+      ],
+      "answer_numeric": 50,
+      "answer_unit": "%",
+      "tolerance": 0.5,
+      "hints": [
+        "Số mol khí giảm đúng bằng số mol H2 đã phản ứng.",
+        "Hai chất số mol bằng nhau nên hiệu suất tính theo chất nào cũng như nhau."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0010",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Cho 0,1 mol propyne (CH3-C≡CH) tác dụng hoàn toàn với lượng dư dung dịch AgNO3 trong NH3. Tính khối lượng kết tủa thu được (gam).",
+      "statement_en": "0.1 mol of propyne reacts fully with excess AgNO3 in NH3. Find the mass of precipitate (g).",
+      "answer": "m = 14,7 gam",
+      "solution_steps": [
+        {
+          "explain": "Propyne là ank-1-yne, một H đầu mạch bị thay bởi Ag, tỉ lệ 1:1.",
+          "latex": "CH_3\\text{-}C\\equiv CH \\rightarrow CH_3\\text{-}C\\equiv CAg\\downarrow,\\quad n_{\\downarrow} = 0{,}1\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng mol kết tủa và khối lượng.",
+          "latex": "M = 36 + 3 + 108 = 147 \\Rightarrow m = 0{,}1 \\cdot 147 = 14{,}7\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.ankin-agno3"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "phản ứng thế của ank-1-yne",
+        "tính khối lượng kết tủa"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "ankin",
+        "agno3"
+      ],
+      "answer_numeric": 14.7,
+      "answer_unit": "gam",
+      "tolerance": 0.05,
+      "hints": [
+        "Chỉ thay 1 nguyên tử H đầu mạch bằng Ag (M = 108)."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0011",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Dẫn 0,15 mol acetylene (C2H2) vào lượng dư dung dịch AgNO3 trong NH3. Tính khối lượng kết tủa vàng nhạt thu được (gam).",
+      "statement_en": "0.15 mol of acetylene is passed into excess AgNO3 in NH3. Find the mass of the precipitate (g).",
+      "answer": "m = 36 gam",
+      "solution_steps": [
+        {
+          "explain": "Acetylene có HAI nguyên tử H đầu mạch, cả hai đều bị thay bởi Ag.",
+          "latex": "HC\\equiv CH \\rightarrow AgC\\equiv CAg\\downarrow\\ (Ag_2C_2),\\quad n_{\\downarrow} = 0{,}15\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng mol và khối lượng kết tủa.",
+          "latex": "M_{Ag_2C_2} = 2\\cdot108 + 24 = 240 \\Rightarrow m = 0{,}15 \\cdot 240 = 36\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.ankin-agno3"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhận biết trường hợp acetylene tạo Ag2C2"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "acetylene",
+        "agno3"
+      ],
+      "answer_numeric": 36,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "Acetylene khác các ank-1-yne khác: tạo kết tủa Ag2C2 (2 nguyên tử Ag)."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0012",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Cho 9,2 gam glycerol (C3H5(OH)3) tác dụng hết với Na dư. Tính thể tích khí H2 thu được ở điều kiện chuẩn (đkc, 25 °C, 1 bar), lấy thể tích mol bằng 24,79 L/mol.",
+      "statement_en": "9.2 g of glycerol reacts fully with excess Na. Find V(H2) at standard conditions (24.79 L/mol).",
+      "answer": "V ≈ 3,72 lít",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol glycerol; glycerol có 3 nhóm –OH.",
+          "latex": "n = \\frac{9{,}2}{92} = 0{,}1\\ mol"
+        },
+        {
+          "explain": "Mỗi nhóm –OH cho 1/2 mol H2 nên 3 nhóm cho 3/2.",
+          "latex": "n_{H_2} = \\frac{3}{2} \\cdot 0{,}1 = 0{,}15\\ mol"
+        },
+        {
+          "explain": "Đổi ra thể tích ở đkc.",
+          "latex": "V = 0{,}15 \\cdot 24{,}79 = 3{,}7185\\ L"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.ancol-tac-dung-na"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "xác định số nhóm –OH",
+        "tính thể tích khí ở đkc"
+      ],
+      "tags": [
+        "alcohol",
+        "tac-dung-na",
+        "dkc"
+      ],
+      "answer_numeric": 3.7185,
+      "answer_unit": "lít",
+      "tolerance": 0.02,
+      "hints": [
+        "Glycerol có 3 nhóm –OH nên cho 1,5 mol H2 trên mỗi mol.",
+        "Thể tích mol khí ở đkc là 24,79 L/mol."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0013",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho 4,6 gam một alcohol no, đơn chức, mạch hở X tác dụng hết với Na dư, thu được 1,2395 lít H2 ở điều kiện chuẩn (đkc, 24,79 L/mol). Công thức phân tử của X là?",
+      "statement_en": "4.6 g of a saturated monohydric alcohol X reacts with excess Na to give 1.2395 L H2 (dkc). Find X.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol H2 và số mol alcohol (đơn chức: n(alcohol) = 2·n(H2)).",
+          "latex": "n_{H_2} = \\frac{1{,}2395}{24{,}79} = 0{,}05 \\Rightarrow n_X = 0{,}1\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng mol và suy công thức.",
+          "latex": "M_X = \\frac{4{,}6}{0{,}1} = 46 \\Rightarrow C_2H_5OH\\ (C_2H_6O)"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.ancol-tac-dung-na",
+        "chemistry.thpt.cttq.ancol-no-don-chuc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "quan hệ mol H2 và mol alcohol đơn chức",
+        "suy công thức từ M"
+      ],
+      "tags": [
+        "alcohol",
+        "tac-dung-na",
+        "cong-thuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "CH4O",
+          "why_wrong": "Lấy n(alcohol) = n(H2) = 0,05, cho M = 92; quên alcohol đơn chức cho ½ mol H2."
+        },
+        {
+          "key": "B",
+          "text": "C2H6O",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "C3H8O",
+          "why_wrong": "Dùng 22,4 L/mol tính n(H2) sai, dẫn tới M lệch."
+        },
+        {
+          "key": "D",
+          "text": "C2H6O2",
+          "why_wrong": "Cho là alcohol hai chức nên n(alcohol) = 0,05, ra M = 92; đề nói đơn chức."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0014",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Oxi hóa 4,6 gam ethanol (C2H5OH) bằng CuO dư, nung nóng, thu được acetaldehyde (CH3CHO) với hiệu suất 80%. Tính khối lượng acetaldehyde thu được (gam).",
+      "statement_en": "Oxidizing 4.6 g of ethanol with excess CuO (80% yield) gives acetaldehyde. Find its mass (g).",
+      "answer": "m = 3,52 gam",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol ethanol.",
+          "latex": "n = \\frac{4{,}6}{46} = 0{,}1\\ mol"
+        },
+        {
+          "explain": "Alcohol bậc I bị oxi hóa thành aldehyde theo tỉ lệ 1:1, nhân hiệu suất.",
+          "latex": "n_{CH_3CHO} = 0{,}1 \\cdot 0{,}8 = 0{,}08\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng (M = 44).",
+          "latex": "m = 0{,}08 \\cdot 44 = 3{,}52\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.oxi-hoa-ancol-cuo"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "oxi hóa alcohol bậc I thành aldehyde",
+        "áp dụng hiệu suất"
+      ],
+      "tags": [
+        "alcohol",
+        "oxi-hoa",
+        "hieu-suat"
+      ],
+      "answer_numeric": 3.52,
+      "answer_unit": "gam",
+      "tolerance": 0.02,
+      "hints": [
+        "Alcohol bậc I cho aldehyde; nhân hiệu suất vào sản phẩm."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0015",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Cho 9,4 gam phenol (C6H5OH) tác dụng với nước bromine dư. Tính khối lượng kết tủa trắng 2,4,6-tribromophenol thu được (gam).",
+      "statement_en": "9.4 g of phenol reacts with excess bromine water. Find the mass of 2,4,6-tribromophenol precipitate (g).",
+      "answer": "m = 33,1 gam",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol phenol; mỗi phenol thế 3 Br vào vòng, tỉ lệ 1:1.",
+          "latex": "n_{phenol} = \\frac{9{,}4}{94} = 0{,}1\\ mol = n_{\\downarrow}"
+        },
+        {
+          "explain": "Tính khối lượng mol tribromophenol C6H2Br3OH.",
+          "latex": "M = 72 + 2 + 3\\cdot80 + 16 + 1 = 331"
+        },
+        {
+          "explain": "Khối lượng kết tủa.",
+          "latex": "m = 0{,}1 \\cdot 331 = 33{,}1\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.phenol-tac-dung-brom"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "phản ứng thế 3 Br vào vòng phenol",
+        "tính khối lượng kết tủa"
+      ],
+      "tags": [
+        "phenol",
+        "the-brom",
+        "ket-tua"
+      ],
+      "answer_numeric": 33.1,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "Nhóm –OH hoạt hóa vòng, thế đồng thời 3 vị trí 2,4,6."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0016",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho 4,4 gam một aldehyde no, đơn chức, mạch hở X (không phải HCHO) tráng bạc hoàn toàn, thu được 21,6 gam Ag. Công thức phân tử của X là?",
+      "statement_en": "4.4 g of a saturated monofunctional aldehyde X (not HCHO) gives 21.6 g of Ag on silver-mirror test. Find X.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol Ag; aldehyde đơn chức khác HCHO cho 2 Ag.",
+          "latex": "n_{Ag} = \\frac{21{,}6}{108} = 0{,}2 \\Rightarrow n_X = \\frac{0{,}2}{2} = 0{,}1\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng mol và suy công thức.",
+          "latex": "M_X = \\frac{4{,}4}{0{,}1} = 44 \\Rightarrow CH_3CHO\\ (C_2H_4O)"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.trang-bac-andehit",
+        "chemistry.thpt.cttq.andehit-no-don-chuc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "quan hệ mol aldehyde và mol Ag",
+        "suy công thức aldehyde"
+      ],
+      "tags": [
+        "aldehyde",
+        "trang-bac",
+        "cong-thuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "HCHO",
+          "why_wrong": "Đề loại trừ HCHO; nếu là HCHO thì M = 30, cho 4 Ag, không khớp M = 44."
+        },
+        {
+          "key": "B",
+          "text": "C2H4O",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "C3H6O",
+          "why_wrong": "Lấy n(aldehyde) = n(Ag) = 0,2, cho M = 22 vô lí, hoặc nhầm tỉ lệ 1 Ag."
+        },
+        {
+          "key": "D",
+          "text": "C2H4O2",
+          "why_wrong": "Nhầm aldehyde với acid; C2H4O2 không có nhóm –CHO tự do để tráng bạc."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0017",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Cho 3,0 gam formaldehyde (HCHO) tráng bạc hoàn toàn với lượng dư dung dịch AgNO3 trong NH3. Tính khối lượng Ag thu được (gam).",
+      "statement_en": "3.0 g of formaldehyde undergoes complete silver-mirror reaction. Find the mass of Ag (g).",
+      "answer": "m = 43,2 gam",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol HCHO. Chú ý HCHO cho 4 mol Ag, không phải 2.",
+          "latex": "n_{HCHO} = \\frac{3{,}0}{30} = 0{,}1 \\Rightarrow n_{Ag} = 4 \\cdot 0{,}1 = 0{,}4\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng Ag.",
+          "latex": "m = 0{,}4 \\cdot 108 = 43{,}2\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.trang-bac-andehit"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhớ trường hợp đặc biệt HCHO cho 4 Ag"
+      ],
+      "tags": [
+        "aldehyde",
+        "trang-bac",
+        "hcho"
+      ],
+      "answer_numeric": 43.2,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "HCHO có cấu tạo như hai nhóm –CHO nên cho 4 mol Ag trên mỗi mol."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0018",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Trung hòa hoàn toàn 3,0 gam một carboxylic acid no, đơn chức, mạch hở X cần vừa đủ 50 mL dung dịch NaOH 1M. Công thức phân tử của X là?",
+      "statement_en": "Neutralizing 3.0 g of a saturated monocarboxylic acid X needs exactly 50 mL of 1M NaOH. Find X.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol NaOH; acid đơn chức nên n(acid) = n(NaOH).",
+          "latex": "n_{NaOH} = 0{,}05 \\cdot 1 = 0{,}05 = n_X"
+        },
+        {
+          "explain": "Tính M và suy công thức CnH2nO2.",
+          "latex": "M_X = \\frac{3{,}0}{0{,}05} = 60 \\Rightarrow 14n + 32 = 60 \\Rightarrow n = 2"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.axit-tac-dung-na",
+        "chemistry.thpt.cttq.axit-cacboxylic"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "trung hòa acid đơn chức",
+        "suy công thức acid từ M"
+      ],
+      "tags": [
+        "carboxylic-acid",
+        "trung-hoa",
+        "cong-thuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "HCOOH",
+          "why_wrong": "M(HCOOH) = 46 ≠ 60; nhầm số C hoặc bỏ nhóm CH2."
+        },
+        {
+          "key": "B",
+          "text": "C2H4O2",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "C3H6O2",
+          "why_wrong": "M = 74 ≠ 60; đếm thừa một CH2 khi giải 14n + 32 = 60."
+        },
+        {
+          "key": "D",
+          "text": "HOOC-COOH (oxalic acid)",
+          "why_wrong": "Cho là acid hai chức, dùng n(acid) = 0,025 mol, ra M = 120; đề nói acid đơn chức."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0019",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cacbohiđrat",
+      "type": "dien-so",
+      "statement_vi": "Lên men hoàn toàn 180 gam glucose (M = 180) thành ethanol và CO2 với hiệu suất 80%. Tính khối lượng ethanol thu được (gam).",
+      "statement_en": "Fermenting 180 g of glucose (80% yield) to ethanol and CO2. Find the mass of ethanol (g).",
+      "answer": "m = 73,6 gam",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol glucose; mỗi mol cho 2 mol ethanol.",
+          "latex": "n_{glucose} = \\frac{180}{180} = 1 \\Rightarrow n_{C_2H_5OH,\\ lt} = 2\\ mol"
+        },
+        {
+          "explain": "Nhân hiệu suất và tính khối lượng.",
+          "latex": "n_{tt} = 2 \\cdot 0{,}8 = 1{,}6 \\Rightarrow m = 1{,}6 \\cdot 46 = 73{,}6\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cacbohidrat.len-men-ruou"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tỉ lệ glucose–ethanol",
+        "áp dụng hiệu suất lên men"
+      ],
+      "tags": [
+        "carbohydrate",
+        "len-men",
+        "hieu-suat"
+      ],
+      "answer_numeric": 73.6,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "1 mol glucose sinh 2 mol ethanol; nhân hiệu suất vào sản phẩm."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0020",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cacbohiđrat",
+      "type": "dien-so",
+      "statement_vi": "Cho cellulose (xenlulozơ) phản ứng hoàn toàn với HNO3 đặc (xúc tác H2SO4 đặc), thu được 29,7 gam cellulose trinitrate. Tính khối lượng cellulose đã phản ứng (gam), giả sử hiệu suất 100%.",
+      "statement_en": "Cellulose reacts fully with HNO3 to give 29.7 g cellulose trinitrate. Find the mass of cellulose used (g).",
+      "answer": "m = 16,2 gam",
+      "solution_steps": [
+        {
+          "explain": "Tính khối lượng mol mắt xích trinitrate.",
+          "latex": "M[C_6H_7O_2(ONO_2)_3] = 162 - 3 + 3\\cdot62 = 297"
+        },
+        {
+          "explain": "Mỗi mắt xích cellulose (162) cho 1 mắt xích trinitrate (297), tỉ lệ 1:1.",
+          "latex": "n = \\frac{29{,}7}{297} = 0{,}1 \\Rightarrow m_{cellulose} = 0{,}1 \\cdot 162 = 16{,}2\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cacbohidrat.xenlulozo-trinitrat"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "ester hóa 3 nhóm –OH của cellulose",
+        "tính khối lượng theo tỉ lệ mắt xích"
+      ],
+      "tags": [
+        "carbohydrate",
+        "xenlulozo",
+        "trinitrat"
+      ],
+      "answer_numeric": 16.2,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "Mỗi mắt xích C6H10O5 (162) tạo mắt xích trinitrate M = 297."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0021",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cacbohiđrat",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho 18 gam glucose (C6H12O6, M = 180) tráng bạc hoàn toàn với lượng dư dung dịch AgNO3 trong NH3. Khối lượng Ag thu được là?",
+      "statement_en": "18 g of glucose undergoes complete silver-mirror reaction. Find the mass of Ag.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol glucose; glucose có 1 nhóm –CHO nên cho 2 Ag.",
+          "latex": "n_{glucose} = \\frac{18}{180} = 0{,}1 \\Rightarrow n_{Ag} = 2\\cdot0{,}1 = 0{,}2\\ mol"
+        },
+        {
+          "explain": "Tính khối lượng Ag.",
+          "latex": "m = 0{,}2 \\cdot 108 = 21{,}6\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.trang-bac-glucozo"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "glucose cho 2 Ag khi tráng bạc"
+      ],
+      "tags": [
+        "carbohydrate",
+        "glucose",
+        "trang-bac"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "10,8 gam",
+          "why_wrong": "Lấy n(Ag) = n(glucose) = 0,1; quên glucose cho 2 Ag."
+        },
+        {
+          "key": "B",
+          "text": "21,6 gam",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "43,2 gam",
+          "why_wrong": "Cho glucose 4 Ag như HCHO; glucose chỉ có 1 nhóm –CHO nên 2 Ag."
+        },
+        {
+          "key": "D",
+          "text": "2,16 gam",
+          "why_wrong": "Nhầm khối lượng mol Ag hoặc sai số mol glucose 10 lần."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0022",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "trac-nghiem",
+      "statement_vi": "Amino acid X có một nhóm –NH2 và một nhóm –COOH. Cho 0,1 mol X tác dụng vừa đủ với 100 mL dung dịch NaOH 1M, cô cạn dung dịch thu được 11,1 gam muối khan. X là?",
+      "statement_en": "Amino acid X (one NH2, one COOH). 0.1 mol X reacts with 100 mL 1M NaOH; evaporation gives 11.1 g salt. Find X.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "X có 1 nhóm –COOH nên phản ứng NaOH tỉ lệ 1:1, tạo muối –COONa (thay H bằng Na, tăng 22 g/mol).",
+          "latex": "M_{muoi} = \\frac{11{,}1}{0{,}1} = 111 = M_X + 22"
+        },
+        {
+          "explain": "Suy khối lượng mol X và nhận dạng.",
+          "latex": "M_X = 89 \\Rightarrow CH_3CH(NH_2)COOH\\ (alanine)"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.amino-axit.tac-dung-hcl-naoh",
+        "chemistry.thpt.bao-toan.khoi-luong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "quan hệ khối lượng muối và amino acid",
+        "nhận dạng amino acid theo M"
+      ],
+      "tags": [
+        "amino-acid",
+        "muoi-natri",
+        "cong-thuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Glycine H2N-CH2-COOH (M = 75)",
+          "why_wrong": "Nếu X là glycine thì muối có M = 97, khối lượng chỉ 9,7 g ≠ 11,1 g; chọn nhầm chất nhẹ hơn."
+        },
+        {
+          "key": "B",
+          "text": "Valine (M = 117)",
+          "why_wrong": "Nếu X là valine thì muối có M = 139, khối lượng 13,9 g ≠ 11,1 g; chọn nhầm chất nặng hơn."
+        },
+        {
+          "key": "C",
+          "text": "Alanine CH3CH(NH2)COOH",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "Amino acid có M = 111",
+          "why_wrong": "Lấy M(X) = 111 bằng luôn khối lượng muối, quên trừ 22 g do thay H bằng Na."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0023",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "tu-luan",
+      "statement_vi": "Cho 0,1 mol glycine (H2N-CH2-COOH) tác dụng với 200 mL dung dịch HCl 1M, thu được dung dịch X. Dung dịch X phản ứng vừa đủ với V mL dung dịch NaOH 1M. Tính V.",
+      "statement_en": "0.1 mol glycine reacts with 200 mL 1M HCl to give solution X, which reacts exactly with V mL 1M NaOH. Find V.",
+      "answer": "V = 300 mL",
+      "solution_steps": [
+        {
+          "explain": "Xác định lượng chất; glycine có 1 nhóm NH2 (nhận 1 H+) và 1 nhóm COOH.",
+          "latex": "n_{glycine} = 0{,}1\\ mol,\\quad n_{HCl} = 0{,}2\\ mol"
+        },
+        {
+          "explain": "Xem dung dịch X như hỗn hợp glycine và HCl. NaOH trung hòa TOÀN BỘ lượng HCl ban đầu (0,2 mol) lẫn nhóm –COOH của glycine (0,1 mol), đưa về NaCl và sodium glycinate.",
+          "latex": "n_{NaOH} = n_{HCl\\ ban\\ dau} + n_{COOH} = 0{,}2 + 0{,}1 = 0{,}3\\ mol"
+        },
+        {
+          "explain": "Chú ý: cách viết gọn là n(NaOH) = n(HCl ban đầu) + số nhóm COOH × n(aa). Tính thể tích.",
+          "latex": "V = \\frac{0{,}3}{1} = 0{,}3\\ L = 300\\ mL"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.amino-axit.hai-giai-doan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "bảo toàn nhóm H+ trong bài amino acid–acid–base"
+      ],
+      "tags": [
+        "amino-acid",
+        "hai-giai-doan",
+        "luong-tinh"
+      ],
+      "answer_numeric": 300,
+      "answer_unit": "mL",
+      "tolerance": 0,
+      "hints": [
+        "NaOH trung hòa cả HCl (ban đầu) lẫn nhóm –COOH của glycine.",
+        "Dùng công thức n(NaOH) = n(HCl ban đầu) + số COOH × n(amino acid)."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0024",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "dien-so",
+      "statement_vi": "Thủy phân hoàn toàn 14,6 gam đipeptit Gly-Ala (M = 146) trong dung dịch NaOH vừa đủ. Tính khối lượng muối thu được (gam).",
+      "statement_en": "Complete hydrolysis of 14.6 g of Gly-Ala dipeptide (M = 146) in NaOH. Find the mass of salts (g).",
+      "answer": "m = 20,8 gam",
+      "solution_steps": [
+        {
+          "explain": "Đipeptit có 2 mắt xích nên cần 2 NaOH, sinh 1 H2O trên mỗi phân tử peptide.",
+          "latex": "n_{pep} = \\frac{14{,}6}{146} = 0{,}1 \\Rightarrow n_{NaOH} = 0{,}2,\\ n_{H_2O} = 0{,}1"
+        },
+        {
+          "explain": "Áp bảo toàn khối lượng.",
+          "latex": "m_{muoi} = 14{,}6 + 40\\cdot0{,}2 - 18\\cdot0{,}1 = 20{,}8\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.peptit.tac-dung-naoh",
+        "chemistry.thpt.peptit.thuy-phan-bao-toan-khoi-luong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "bảo toàn khối lượng thủy phân peptide",
+        "xác định số mol NaOH theo số mắt xích"
+      ],
+      "tags": [
+        "peptide",
+        "thuy-phan",
+        "bao-toan-khoi-luong"
+      ],
+      "answer_numeric": 20.8,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "n(NaOH) bằng số mắt xích × n(peptide); mỗi peptide chỉ nhận 1 H2O."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0025",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Polime và vật liệu polime",
+      "type": "ghep-doi",
+      "statement_vi": "Ghép mỗi polymer ở cột A với monomer tương ứng ở cột B:\nCột A: (1) Polyethylene (PE); (2) Poly(vinyl chloride) (PVC); (3) Cao su buna (polybutadiene); (4) Tơ nylon-6,6.\nCột B: (a) CH2=CH-CH=CH2; (b) CH2=CH2; (c) hexamethylenediamine và adipic acid; (d) CH2=CHCl.",
+      "statement_en": "Match each polymer (A) with its monomer (B).",
+      "answer": "1-b; 2-d; 3-a; 4-c",
+      "solution_steps": [
+        {
+          "explain": "PE là sản phẩm trùng hợp ethylene.",
+          "latex": "n\\,CH_2=CH_2 \\rightarrow (-CH_2-CH_2-)_n"
+        },
+        {
+          "explain": "PVC trùng hợp từ vinyl chloride.",
+          "latex": "n\\,CH_2=CHCl \\rightarrow (-CH_2-CHCl-)_n"
+        },
+        {
+          "explain": "Cao su buna trùng hợp từ buta-1,3-diene.",
+          "latex": "n\\,CH_2=CH-CH=CH_2 \\rightarrow (-CH_2-CH=CH-CH_2-)_n"
+        },
+        {
+          "explain": "Nylon-6,6 trùng ngưng từ hexamethylenediamine và adipic acid, tách H2O.",
+          "latex": "H_2N(CH_2)_6NH_2 + HOOC(CH_2)_4COOH \\rightarrow nylon\\text{-}6,6 + H_2O"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cttq.polime",
+        "chemistry.thpt.polime.he-so-trung-hop"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "phân biệt monomer trùng hợp và trùng ngưng"
+      ],
+      "tags": [
+        "polymer",
+        "monomer",
+        "ghep-doi"
+      ],
+      "hints": [
+        "PE, PVC, cao su buna là trùng hợp (monomer có nối đôi); nylon-6,6 là trùng ngưng."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0026",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "tu-luan",
+      "statement_vi": "Thủy phân hoàn toàn 1 mol peptide mạch hở X, thu được 2 mol glycine, 1 mol alanine và 1 mol valine. Hỏi X có bao nhiêu mắt xích và bao nhiêu liên kết peptide?",
+      "statement_en": "Full hydrolysis of 1 mol of peptide X gives 2 mol Gly, 1 mol Ala, 1 mol Val. Find the number of residues and peptide bonds.",
+      "answer": "X có 4 mắt xích và 3 liên kết peptide",
+      "solution_steps": [
+        {
+          "explain": "Tổng số mol amino acid thu được bằng số mắt xích của peptide.",
+          "latex": "k = 2 + 1 + 1 = 4\\ (mat\\ xich)"
+        },
+        {
+          "explain": "Peptide k mắt xích có k − 1 liên kết peptide.",
+          "latex": "so\\ lien\\ ket\\ peptit = k - 1 = 3"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.peptit.so-lien-ket-va-mat-xich"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "xác định số mắt xích từ sản phẩm thủy phân"
+      ],
+      "tags": [
+        "peptide",
+        "mat-xich",
+        "lien-ket-peptit"
+      ],
+      "answer_numeric": 3,
+      "answer_unit": "liên kết peptide",
+      "tolerance": 0,
+      "hints": [
+        "Số mắt xích = tổng số mol amino acid; số liên kết peptide = số mắt xích − 1."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0027",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Polime và vật liệu polime",
+      "type": "dien-so",
+      "statement_vi": "Polyethylene (PE) có khối lượng mol trung bình bằng 56000 g/mol. Tính hệ số trùng hợp (số mắt xích) trung bình n của phân tử PE.",
+      "statement_en": "Polyethylene has average molar mass 56000 g/mol. Find the average degree of polymerization n.",
+      "answer": "n = 2000",
+      "solution_steps": [
+        {
+          "explain": "Mắt xích của PE là –CH2–CH2– có khối lượng 28.",
+          "latex": "M_{mat\\ xich} = 28"
+        },
+        {
+          "explain": "Hệ số trùng hợp bằng M polymer chia M mắt xích.",
+          "latex": "n = \\frac{56000}{28} = 2000"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.polime.he-so-trung-hop"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính hệ số trùng hợp từ khối lượng mol"
+      ],
+      "tags": [
+        "polymer",
+        "he-so-trung-hop"
+      ],
+      "answer_numeric": 2000,
+      "tolerance": 0,
+      "hints": [
+        "Mắt xích PE là C2H4, M = 28."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0028",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Polime và vật liệu polime",
+      "type": "dien-so",
+      "statement_vi": "Một loại cao su lưu hóa chứa 2% lưu huỳnh về khối lượng. Giả thiết mỗi cầu nối gồm hai nguyên tử lưu huỳnh (–S–S–) thay thế cho hai nguyên tử H ở mạch cao su isoprene (mắt xích C5H8, M = 68). Trung bình cứ bao nhiêu mắt xích isoprene có một cầu nối?",
+      "statement_en": "A vulcanized rubber contains 2% S by mass; each -S-S- bridge (2 S atoms) replaces 2 H atoms on the isoprene chain (C5H8). Find the average number of isoprene units per bridge.",
+      "answer": "khoảng 46 mắt xích",
+      "solution_steps": [
+        {
+          "explain": "Dùng công thức phần trăm lưu huỳnh với a = 2 nguyên tử S mỗi cầu nối.",
+          "latex": "\\%S = \\frac{32a}{68k + 32a - 2}\\times100\\% = \\frac{64}{68k + 62}\\times100\\%"
+        },
+        {
+          "explain": "Đặt %S = 2% rồi giải phương trình theo k.",
+          "latex": "\\frac{64}{68k+62} = 0{,}02 \\Rightarrow 68k + 62 = 3200"
+        },
+        {
+          "explain": "Giải ra k.",
+          "latex": "68k = 3138 \\Rightarrow k = 46{,}15 \\approx 46"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.polime.cao-su-luu-hoa"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 8,
+      "skills": [
+        "thiết lập phương trình phần trăm khối lượng",
+        "giải bài lưu hóa cao su"
+      ],
+      "tags": [
+        "polymer",
+        "cao-su-luu-hoa",
+        "phan-tram-khoi-luong"
+      ],
+      "answer_numeric": 46,
+      "tolerance": 1,
+      "hints": [
+        "Mỗi cầu nối có 2 nguyên tử S và làm mất 2 H (trừ 2 ở mẫu số).",
+        "Giải phương trình 64 = 0,02(68k + 62)."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0029",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Este và chất béo",
+      "type": "dien-so",
+      "statement_vi": "Xà phòng hóa hoàn toàn 17,8 gam tristearin (C57H110O6, M = 890) bằng dung dịch NaOH vừa đủ. Tính khối lượng muối (sodium stearate) thu được (gam).",
+      "statement_en": "Complete saponification of 17.8 g of tristearin (M = 890) with NaOH. Find the mass of sodium stearate (g).",
+      "answer": "m = 18,36 gam",
+      "solution_steps": [
+        {
+          "explain": "Chất béo có 3 nhóm ester nên cần 3 NaOH, sinh 1 glycerol.",
+          "latex": "n_{beo} = \\frac{17{,}8}{890} = 0{,}02 \\Rightarrow n_{NaOH} = 0{,}06,\\ n_{C_3H_5(OH)_3} = 0{,}02"
+        },
+        {
+          "explain": "Áp bảo toàn khối lượng.",
+          "latex": "m_{muoi} = 17{,}8 + 40\\cdot0{,}06 - 92\\cdot0{,}02 = 18{,}36\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.chat-beo.xa-phong-hoa",
+        "chemistry.thpt.chat-beo.khoi-luong-xa-phong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "bảo toàn khối lượng xà phòng hóa",
+        "tỉ lệ 3 NaOH cho mỗi chất béo"
+      ],
+      "tags": [
+        "chat-beo",
+        "xa-phong-hoa",
+        "bao-toan-khoi-luong"
+      ],
+      "answer_numeric": 18.36,
+      "answer_unit": "gam",
+      "tolerance": 0.02,
+      "hints": [
+        "Triglyceride + 3NaOH → 3 muối + glycerol; dùng BTKL trừ đi glycerol."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0030",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Este và chất béo",
+      "type": "dien-so",
+      "statement_vi": "Để xà phòng hóa hoàn toàn 2,52 gam một mẫu chất béo cần vừa đủ 90 mL dung dịch KOH 0,1M. Tính chỉ số xà phòng hóa của mẫu chất béo (số mg KOH trên 1 gam chất béo).",
+      "statement_en": "Saponifying 2.52 g of fat needs exactly 90 mL of 0.1M KOH. Find the saponification value.",
+      "answer": "Chỉ số xà phòng hóa = 200",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol và khối lượng KOH (đổi ra miligam).",
+          "latex": "n_{KOH} = 0{,}090\\cdot0{,}1 = 0{,}009 \\Rightarrow m_{KOH} = 0{,}009\\cdot56 = 504\\ mg"
+        },
+        {
+          "explain": "Chỉ số xà phòng hóa bằng mg KOH chia khối lượng chất béo.",
+          "latex": "S = \\frac{504}{2{,}52} = 200"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.chat-beo.chi-so-xa-phong-hoa"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính chỉ số xà phòng hóa",
+        "đổi đơn vị mg KOH"
+      ],
+      "tags": [
+        "chat-beo",
+        "chi-so-xa-phong-hoa"
+      ],
+      "answer_numeric": 200,
+      "tolerance": 0.5,
+      "hints": [
+        "Chỉ số xà phòng hóa dùng đơn vị mg KOH trên mỗi gam chất béo."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0031",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Este và chất béo",
+      "type": "dien-so",
+      "statement_vi": "Trung hòa lượng acid béo tự do trong 10 gam một mẫu chất béo cần vừa đủ 20 mL dung dịch KOH 0,1M. Tính chỉ số acid của mẫu chất béo (số mg KOH trên 1 gam chất béo).",
+      "statement_en": "Neutralizing free fatty acids in 10 g of fat needs 20 mL of 0.1M KOH. Find the acid value.",
+      "answer": "Chỉ số acid = 11,2",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol KOH và khối lượng KOH (mg).",
+          "latex": "n_{KOH} = 0{,}020\\cdot0{,}1 = 0{,}002 \\Rightarrow m_{KOH} = 0{,}002\\cdot56 = 112\\ mg"
+        },
+        {
+          "explain": "Chỉ số acid bằng mg KOH chia khối lượng chất béo.",
+          "latex": "A = \\frac{112}{10} = 11{,}2"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.chat-beo.chi-so-axit"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính chỉ số acid",
+        "phân biệt acid tự do với ester"
+      ],
+      "tags": [
+        "chat-beo",
+        "chi-so-axit"
+      ],
+      "answer_numeric": 11.2,
+      "tolerance": 0.1,
+      "hints": [
+        "Chỉ số acid chỉ tính KOH trung hòa acid béo tự do."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0032",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Este và chất béo",
+      "type": "dien-so",
+      "statement_vi": "Triolein (C57H104O6, M = 884) có 3 liên kết đôi C=C trong phân tử. Tính chỉ số iodine của triolein (số gam I2 cộng vào 100 gam chất béo).",
+      "statement_en": "Triolein (M = 884) has 3 C=C bonds. Find its iodine value (g of I2 per 100 g of fat).",
+      "answer": "Chỉ số iodine ≈ 86,2",
+      "solution_steps": [
+        {
+          "explain": "Mỗi mol triolein cộng 3 mol I2 (mỗi C=C cộng 1 I2).",
+          "latex": "1\\ mol\\ triolein + 3\\ I_2,\\quad m_{I_2}/mol = 3\\cdot254 = 762\\ g"
+        },
+        {
+          "explain": "Chỉ số iodine là gam I2 trên 100 gam chất béo.",
+          "latex": "I = \\frac{762}{884}\\times100 = 86{,}2"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.chat-beo.chi-so-iot"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "quan hệ số liên kết C=C và số mol I2",
+        "tính chỉ số iodine"
+      ],
+      "tags": [
+        "chat-beo",
+        "chi-so-iot",
+        "lien-ket-doi"
+      ],
+      "answer_numeric": 86.2,
+      "tolerance": 0.3,
+      "hints": [
+        "Số mol I2 cộng = số liên kết C=C × số mol chất béo.",
+        "Chỉ số iodine quy về 100 g chất béo."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0033",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Este và chất béo",
+      "type": "trac-nghiem",
+      "statement_vi": "Xà phòng hóa 8,8 gam ethyl acetate (CH3COOC2H5, M = 88) bằng 100 mL dung dịch NaOH 1,5M. Cô cạn dung dịch sau phản ứng thu được m gam chất rắn khan. Giá trị của m là?",
+      "statement_en": "Saponifying 8.8 g of ethyl acetate with 100 mL 1.5M NaOH; evaporation gives m g of solid. Find m.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol; kiểm tra NaOH dư.",
+          "latex": "n_{este} = 0{,}1,\\ n_{NaOH} = 0{,}15 \\Rightarrow NaOH\\ du = 0{,}05\\ mol"
+        },
+        {
+          "explain": "Chất rắn gồm muối CH3COONa và NaOH dư; ethanol bay hơi.",
+          "latex": "m = 0{,}1\\cdot82 + 0{,}05\\cdot40 = 8{,}2 + 2{,}0 = 10{,}2\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.este.thuy-phan-naoh-btkl"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "nhận ra NaOH dư trong chất rắn khan",
+        "loại trừ alcohol bay hơi"
+      ],
+      "tags": [
+        "ester",
+        "xa-phong-hoa",
+        "chat-ran-khan"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "8,2 gam",
+          "why_wrong": "Chỉ tính muối CH3COONa, quên NaOH dư 0,05 mol vẫn nằm trong chất rắn."
+        },
+        {
+          "key": "B",
+          "text": "13,6 gam",
+          "why_wrong": "Cộng nhầm cả ethanol (0,1·46 = 4,6) vào chất rắn; ethanol bay hơi khi cô cạn."
+        },
+        {
+          "key": "C",
+          "text": "10,2 gam",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "12,2 gam",
+          "why_wrong": "Tính NaOH dư là 0,1 mol thay vì 0,05 mol do nhầm ester phản ứng thiếu."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0034",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn hỗn hợp X gồm các alkane, thu được 8,8 gam CO2 và 5,4 gam H2O. Tính tổng số mol alkane trong X.",
+      "statement_en": "Complete combustion of alkane mixture X gives 8.8 g CO2 and 5.4 g H2O. Find total moles of alkanes.",
+      "answer": "n = 0,1 mol",
+      "solution_steps": [
+        {
+          "explain": "Tính số mol CO2 và H2O.",
+          "latex": "n_{CO_2} = \\frac{8{,}8}{44} = 0{,}2,\\quad n_{H_2O} = \\frac{5{,}4}{18} = 0{,}3"
+        },
+        {
+          "explain": "Với alkane (no, mạch hở): số mol alkane bằng hiệu số mol H2O và CO2.",
+          "latex": "n_{ankan} = n_{H_2O} - n_{CO_2} = 0{,}3 - 0{,}2 = 0{,}1\\ mol"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.ankan",
+        "chemistry.thpt.dot-chay.hidrocacbon-tong-quat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "hệ thức đốt cháy alkane",
+        "giải nhanh không cần phương trình"
+      ],
+      "tags": [
+        "hydrocarbon",
+        "dot-chay",
+        "giai-nhanh"
+      ],
+      "answer_numeric": 0.1,
+      "answer_unit": "mol",
+      "tolerance": 0.001,
+      "hints": [
+        "Alkane cháy luôn cho n(H2O) > n(CO2), và n(alkane) = n(H2O) − n(CO2)."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0035",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn 0,1 mol một alcohol no, mạch hở X cần vừa đủ 0,35 mol O2, thu được 0,3 mol CO2. Xác định số nguyên tử oxygen trong phân tử X.",
+      "statement_en": "Complete combustion of 0.1 mol of a saturated acyclic alcohol X needs 0.35 mol O2 and gives 0.3 mol CO2. Find the number of O atoms per molecule.",
+      "answer": "3 nguyên tử oxygen (X là C3H8O3)",
+      "solution_steps": [
+        {
+          "explain": "Alcohol no, mạch hở cho n(H2O) = n(CO2) + n(X).",
+          "latex": "n_{H_2O} = 0{,}3 + 0{,}1 = 0{,}4\\ mol"
+        },
+        {
+          "explain": "Bảo toàn nguyên tố oxygen: O trong X cộng O của O2 bằng O trong CO2 và H2O.",
+          "latex": "n_{O(X)} = 2n_{CO_2} + n_{H_2O} - 2n_{O_2} = 0{,}6 + 0{,}4 - 0{,}7 = 0{,}3"
+        },
+        {
+          "explain": "Số nguyên tử O mỗi phân tử.",
+          "latex": "\\frac{0{,}3}{0{,}1} = 3 \\Rightarrow X: C_3H_8O_3\\ (glycerol)"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.bao-toan-oxi",
+        "chemistry.thpt.dot-chay.ancol-no"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "bảo toàn nguyên tố oxygen",
+        "xác định số nhóm chức của alcohol"
+      ],
+      "tags": [
+        "alcohol",
+        "dot-chay",
+        "bao-toan-oxi"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0,
+      "hints": [
+        "Alcohol no mạch hở: n(H2O) − n(CO2) = n(alcohol).",
+        "2n(O2) + n(O trong X) = 2n(CO2) + n(H2O)."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0036",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Đốt cháy hoàn toàn 0,1 mol một amine no, đơn chức, mạch hở X, thu được 0,2 mol CO2. Công thức phân tử của X là?",
+      "statement_en": "Complete combustion of 0.1 mol of a saturated monoamine X gives 0.2 mol CO2. Find X.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Số nguyên tử C bằng tỉ lệ mol CO2 và mol amine.",
+          "latex": "C = \\frac{0{,}2}{0{,}1} = 2"
+        },
+        {
+          "explain": "Amine no, đơn chức, mạch hở có công thức CnH2n+3N với n = 2.",
+          "latex": "X: C_2H_7N"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.amin-no-don-chuc",
+        "chemistry.thpt.cttq.amin"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "xác định số C từ CO2",
+        "viết công thức amine no đơn chức"
+      ],
+      "tags": [
+        "amine",
+        "dot-chay",
+        "cong-thuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "CH5N",
+          "why_wrong": "Lấy số C = 1; chia nhầm 0,2/0,1 hoặc nhầm số mol CO2."
+        },
+        {
+          "key": "B",
+          "text": "C2H7N",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "C2H5N",
+          "why_wrong": "Viết công thức sai số H; amine no đơn chức là CnH2n+3N nên C2 cho 7 H."
+        },
+        {
+          "key": "D",
+          "text": "C2H7NO",
+          "why_wrong": "Thêm oxygen không có trong dữ kiện; amine no đơn chức không chứa O."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0037",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn 0,1 mol hỗn hợp X gồm hai ester no, đơn chức, mạch hở là đồng đẳng kế tiếp, cần vừa đủ a mol O2 và thu được 0,45 mol CO2. Tính giá trị của a.",
+      "statement_en": "Complete combustion of 0.1 mol of X (two consecutive saturated monoesters) needs a mol O2 and gives 0.45 mol CO2. Find a.",
+      "answer": "a = 0,575 mol",
+      "solution_steps": [
+        {
+          "explain": "Ester no, đơn chức, mạch hở CnH2nO2 khi cháy cho n(H2O) = n(CO2).",
+          "latex": "n_{H_2O} = n_{CO_2} = 0{,}45\\ mol"
+        },
+        {
+          "explain": "Số O trong hỗn hợp ester bằng 2 lần số mol hỗn hợp (mỗi ester 2 O).",
+          "latex": "n_{O(X)} = 2\\cdot0{,}1 = 0{,}2\\ mol"
+        },
+        {
+          "explain": "Bảo toàn nguyên tố oxygen để tìm số mol O2.",
+          "latex": "0{,}2 + 2a = 2\\cdot0{,}45 + 0{,}45 \\Rightarrow 2a = 1{,}15 \\Rightarrow a = 0{,}575"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.este-no-don-chuc",
+        "chemistry.thpt.dot-chay.bao-toan-oxi",
+        "chemistry.thpt.dot-chay.so-c-trung-binh"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 8,
+      "skills": [
+        "bảo toàn nguyên tố oxygen cho ester",
+        "dùng n(CO2) = n(H2O) cho ester no đơn chức"
+      ],
+      "tags": [
+        "ester",
+        "dot-chay",
+        "bao-toan-oxi"
+      ],
+      "answer_numeric": 0.575,
+      "answer_unit": "mol",
+      "tolerance": 0.005,
+      "hints": [
+        "Ester no đơn chức cháy cho n(CO2) = n(H2O).",
+        "Mỗi ester có 2 nguyên tử O; dùng bảo toàn O tìm O2."
+      ]
+    },
+    {
+      "id": "prob.chemistry.vn-thpt-chemistry-huuco.0038",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "tu-luan",
+      "statement_vi": "Tetrapeptide mạch hở X là Gly-Gly-Ala-Val (tạo từ 2 gốc glycine, 1 gốc alanine, 1 gốc valine; M = 302). Thủy phân hoàn toàn 0,1 mol X trong dung dịch NaOH vừa đủ. Tính khối lượng muối thu được.",
+      "statement_en": "Tetrapeptide X = Gly-Gly-Ala-Val (M = 302). Complete hydrolysis of 0.1 mol X in NaOH. Find the mass of salts.",
+      "answer": "m = 44,4 gam",
+      "solution_steps": [
+        {
+          "explain": "Tetrapeptide có 4 mắt xích nên cần 4 NaOH, sinh 1 H2O trên mỗi phân tử peptide.",
+          "latex": "n_X = 0{,}1 \\Rightarrow n_{NaOH} = 4\\cdot0{,}1 = 0{,}4,\\ n_{H_2O} = 0{,}1"
+        },
+        {
+          "explain": "Áp bảo toàn khối lượng.",
+          "latex": "m_{muoi} = m_X + 40n_{NaOH} - 18n_{H_2O} = 30{,}2 + 16 - 1{,}8 = 44{,}4\\ g"
+        },
+        {
+          "explain": "Kiểm tra bằng tổng khối lượng các muối natri: 2 Gly-Na (97) + Ala-Na (111) + Val-Na (139).",
+          "latex": "0{,}1(2\\cdot97 + 111 + 139) = 0{,}1\\cdot444 = 44{,}4\\ g"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.peptit.tac-dung-naoh",
+        "chemistry.thpt.peptit.thuy-phan-bao-toan-khoi-luong"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 9,
+      "skills": [
+        "bảo toàn khối lượng cho tetrapeptide",
+        "kiểm tra bằng khối lượng từng muối"
+      ],
+      "tags": [
+        "peptide",
+        "thuy-phan",
+        "bao-toan-khoi-luong"
+      ],
+      "answer_numeric": 44.4,
+      "answer_unit": "gam",
+      "tolerance": 0.1,
+      "hints": [
+        "n(NaOH) = 4 × n(peptide); mỗi peptide nhận đúng 1 H2O.",
+        "Kiểm tra bằng tổng khối lượng muối natri của từng amino acid."
+      ]
+    }
+  ]
+}

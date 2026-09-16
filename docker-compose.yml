@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: aistem-postgres
+    restart: unless-stopped
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: aistem
+      POSTGRES_USER: aistem_user
+      POSTGRES_PASSWORD: aistem_password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - aistem_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aistem_user -d aistem"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  aistem_pgdata:
+    name: aistem_pgdata

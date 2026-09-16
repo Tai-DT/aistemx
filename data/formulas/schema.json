@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aistem.local/schema/formula-slice.json",
+  "title": "AISTEM Formula Slice",
+  "description": "Một file dữ liệu chứa một lát cắt (môn học × cấp học) của kho công thức AISTEM.",
+  "type": "object",
+  "required": ["meta", "formulas"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["file", "subject", "title", "levels", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string" },
+        "subject": { "$ref": "#/definitions/subject" },
+        "title": { "type": "string", "minLength": 1 },
+        "levels": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/level" }
+        },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "formulas": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/formula" }
+    }
+  },
+  "definitions": {
+    "subject": {
+      "type": "string",
+      "enum": ["math", "physics", "chemistry", "biology"],
+      "description": "math = Toán, physics = Vật lí, chemistry = Hoá học, biology = Sinh học"
+    },
+    "level": {
+      "type": "string",
+      "enum": ["tieu-hoc", "thcs", "thpt", "dai-hoc"],
+      "description": "tieu-hoc = lớp 1-5, thcs = lớp 6-9, thpt = lớp 10-12, dai-hoc = bậc đại học"
+    },
+    "curriculum": {
+      "type": "string",
+      "enum": ["vn-gdpt-2018", "ap", "ib", "a-level", "intl-undergrad", "olympiad", "ru-east-eu"],
+      "description": "vn-gdpt-2018 = Chương trình GDPT 2018 Việt Nam; ap = Advanced Placement (Hoa Kỳ); ib = International Baccalaureate Diploma; a-level = Cambridge/Edexcel A-Level; intl-undergrad = giáo trình đại cương đại học quốc tế; olympiad = IMO/IPhO/IChO/IBO; ru-east-eu = hệ giáo trình Nga và Đông Âu"
+    },
+    "formula": {
+      "type": "object",
+      "required": [
+        "id", "subject", "level", "grades", "curriculum", "topic", "subtopic",
+        "name_vi", "name_en", "latex", "vars", "units",
+        "conditions", "note", "tags", "related"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(\\.[a-z0-9-]+){3}$",
+          "description": "<subject>.<level>.<topic-slug>.<name-slug>, chữ thường, không dấu, duy nhất toàn hệ thống"
+        },
+        "subject": { "$ref": "#/definitions/subject" },
+        "level": { "$ref": "#/definitions/level" },
+        "grades": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": 1, "maximum": 13 },
+          "description": "Các lớp áp dụng; 13 nghĩa là bậc đại học"
+        },
+        "curriculum": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/curriculum" },
+          "description": "Các hệ chương trình có dạy công thức này"
+        },
+        "topic": { "type": "string", "minLength": 1, "description": "Chương / chủ đề lớn" },
+        "subtopic": { "type": "string", "description": "Mục nhỏ trong chủ đề" },
+        "name_vi": { "type": "string", "minLength": 1, "description": "Tên công thức theo thuật ngữ CT GDPT 2018" },
+        "name_en": { "type": "string", "description": "Tên tiếng Anh, phục vụ tra cứu và đối chiếu quốc tế" },
+        "latex": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Biểu thức LaTeX thuần, KHÔNG bọc $ $ hoặc \\[ \\]"
+        },
+        "vars": {
+          "type": "object",
+          "description": "Map ký hiệu -> mô tả tiếng Việt của mọi ký hiệu xuất hiện trong latex",
+          "additionalProperties": { "type": "string" }
+        },
+        "units": {
+          "type": "object",
+          "description": "Map ký hiệu -> đơn vị SI dạng ASCII, ví dụ \"m/s^2\", \"J\", \"mol/L\". Rỗng nếu không thứ nguyên",
+          "additionalProperties": { "type": "string" }
+        },
+        "conditions": { "type": "string", "description": "Điều kiện áp dụng / miền xác định. Rỗng nếu không có" },
+        "note": { "type": "string", "description": "Mẹo nhớ, hệ quả, trường hợp đặc biệt, giá trị hằng số" },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        },
+        "related": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Danh sách id công thức liên quan"
+        },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Tuỳ chọn. Nguồn đã đối chiếu (URL hoặc trích dẫn) cho hằng số, quy ước ký hiệu, phạm vi syllabus"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3667 @@
+{
+  "meta": {
+    "file": "ext-chemistry-thpt.json",
+    "subject": "chemistry",
+    "title": "Bài tập bổ sung Hoá học THPT: phủ các công thức chưa có bài luyện",
+    "levels": [
+      "thpt"
+    ],
+    "count": 76
+  },
+  "problems": [
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0001",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cấu tạo nguyên tử",
+      "type": "dien-so",
+      "statement_vi": "Nguyên tử X có 17 proton và 18 neutron. Xác định số khối A của hạt nhân nguyên tử X.",
+      "statement_en": "Atom X has 17 protons and 18 neutrons. Determine the mass number A of its nucleus.",
+      "answer": "35",
+      "solution_steps": [
+        {
+          "explain": "Số khối bằng tổng số proton và số neutron trong hạt nhân.",
+          "latex": "A = Z + N = 17 + 18"
+        },
+        {
+          "explain": "Điện tích hạt nhân là +17 nên nguyên tử trung hoà có 17 electron, kết quả số khối là 35.",
+          "latex": "A = 35"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nguyen-tu.so-khoi",
+        "chemistry.thpt.nguyen-tu.dien-tich-hat-nhan"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính số khối",
+        "quan hệ p, e, điện tích hạt nhân"
+      ],
+      "tags": [
+        "so-khoi",
+        "dien-tich-hat-nhan"
+      ],
+      "answer_numeric": 35,
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0002",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cấu tạo nguyên tử",
+      "type": "trac-nghiem",
+      "statement_vi": "Nguyên tử của nguyên tố Y có tổng số hạt (proton, neutron, electron) là 34. Biết Y là nguyên tố bền (1 ≤ N/Z ≤ 1,5 với Z ≤ 20). Y là nguyên tố nào?",
+      "statement_en": "An atom of element Y has 34 total particles (p, n, e). Y is a stable element (1 ≤ N/Z ≤ 1.5 for Z ≤ 20). Identify Y.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Từ tổng số hạt S, số proton nằm trong khoảng chặn dưới và chặn trên.",
+          "latex": "\\dfrac{34}{3.5} \\le Z \\le \\dfrac{34}{3} \\Rightarrow 9.7 \\le Z \\le 11.3"
+        },
+        {
+          "explain": "Z nguyên nên Z = 10 hoặc Z = 11. Với 2Z + N = 34: nếu Z = 11 thì N = 12, tỉ số N/Z = 1,09 thoả điều kiện bền; nếu Z = 10 thì N = 14, N/Z = 1,4 nhưng Ne thực tế có N = 10. Chọn Z = 11 (Na).",
+          "latex": "Z = 11,\\ N = 12,\\ \\dfrac{N}{Z} = 1.09"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nguyen-tu.khoang-xac-dinh-z",
+        "chemistry.thpt.nguyen-tu.dieu-kien-ben-hat-nhan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "biện luận Z từ tổng số hạt",
+        "áp dụng điều kiện bền hạt nhân"
+      ],
+      "tags": [
+        "tong-so-hat",
+        "khoang-xac-dinh-z"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Neon (Z = 10)",
+          "why_wrong": "Chọn Z = 10 nhưng neon bền có N = 10 (N/Z = 1) chứ không phải N = 14; nghiệm này không phù hợp cấu tạo thực."
+        },
+        {
+          "key": "B",
+          "text": "Magnesium (Z = 12)",
+          "why_wrong": "Z = 12 vượt ra ngoài khoảng 9,7 ≤ Z ≤ 11,3 suy ra từ tổng số hạt."
+        },
+        {
+          "key": "C",
+          "text": "Sodium (Z = 11)",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "Fluorine (Z = 9)",
+          "why_wrong": "Z = 9 nhỏ hơn chặn dưới 34/3,5 ≈ 9,7 nên bị loại."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0003",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cấu tạo nguyên tử",
+      "type": "trac-nghiem",
+      "statement_vi": "Với lớp electron thứ n = 4 (lớp N), số electron tối đa và số orbital nguyên tử của lớp lần lượt là bao nhiêu?",
+      "statement_en": "For the electron shell n = 4 (shell N), what are the maximum number of electrons and the number of atomic orbitals?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Số electron tối đa của lớp thứ n tính theo 2n^2.",
+          "latex": "e_{max} = 2n^{2} = 2 \\times 4^{2} = 32"
+        },
+        {
+          "explain": "Số orbital của lớp thứ n tính theo n^2.",
+          "latex": "\\text{So AO} = n^{2} = 4^{2} = 16"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nguyen-tu.so-electron-toi-da-lop",
+        "chemistry.thpt.nguyen-tu.so-orbital-trong-lop"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính số electron tối đa của lớp",
+        "tính số orbital của lớp"
+      ],
+      "tags": [
+        "lop-electron",
+        "orbital"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "32 electron và 32 orbital",
+          "why_wrong": "Nhầm lấy luôn số electron tối đa làm số orbital; thực ra mỗi orbital chứa tối đa 2 electron nên số orbital chỉ bằng một nửa."
+        },
+        {
+          "key": "B",
+          "text": "32 electron và 16 orbital",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "16 electron và 16 orbital",
+          "why_wrong": "Dùng công thức n^2 cho cả electron; đúng cho orbital nhưng số electron tối đa phải là 2n^2."
+        },
+        {
+          "key": "D",
+          "text": "8 electron và 4 orbital",
+          "why_wrong": "Nhầm với số electron tối đa của một phân lớp hoặc lấy 2n thay vì 2n^2."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0004",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cấu tạo nguyên tử",
+      "type": "dien-so",
+      "statement_vi": "Nguyên tử sắt (Fe, M = 56 g/mol) có bán kính gần đúng 1,28 Å (1,28×10⁻⁸ cm). Coi nguyên tử là hình cầu, tính khối lượng riêng của nguyên tử sắt (g/cm³, lấy N_A = 6,022×10²³).",
+      "statement_en": "An iron atom (Fe, M = 56 g/mol) has radius ≈ 1.28 Å (1.28×10⁻⁸ cm). Treating the atom as a sphere, find the density of the iron atom (g/cm³, N_A = 6.022×10²³).",
+      "answer": "10,59",
+      "solution_steps": [
+        {
+          "explain": "Thể tích một nguyên tử tính theo bán kính hình cầu.",
+          "latex": "V = \\dfrac{4}{3}\\pi r^{3} = \\dfrac{4}{3}\\pi (1.28 \\times 10^{-8})^{3} \\approx 8.78 \\times 10^{-24}\\ \\text{cm}^{3}"
+        },
+        {
+          "explain": "Khối lượng một nguyên tử bằng khối lượng mol chia cho số Avogadro.",
+          "latex": "m_{nt} = \\dfrac{M}{N_{A}} = \\dfrac{56}{6.022 \\times 10^{23}} \\approx 9.30 \\times 10^{-23}\\ \\text{g}"
+        },
+        {
+          "explain": "Khối lượng riêng bằng khối lượng chia thể tích nguyên tử.",
+          "latex": "D = \\dfrac{m_{nt}}{V} \\approx 10.59\\ \\text{g/cm}^{3}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nguyen-tu.the-tich-nguyen-tu",
+        "chemistry.thpt.nguyen-tu.khoi-luong-rieng-nguyen-tu"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "tính thể tích nguyên tử",
+        "tính khối lượng riêng nguyên tử"
+      ],
+      "tags": [
+        "ban-kinh-nguyen-tu",
+        "khoi-luong-rieng"
+      ],
+      "answer_numeric": 10.59,
+      "answer_unit": "g/cm^3",
+      "tolerance": 0.2
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0005",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cấu tạo nguyên tử",
+      "type": "dien-so",
+      "statement_vi": "Tính năng lượng của một photon ứng với bức xạ có bước sóng λ = 589 nm (vạch vàng của natri). Cho h = 6,626×10⁻³⁴ J·s, c = 3×10⁸ m/s. (Đơn vị: J)",
+      "statement_en": "Compute the energy of a photon of wavelength λ = 589 nm (sodium yellow line). Given h = 6.626×10⁻³⁴ J·s, c = 3×10⁸ m/s. (Unit: J)",
+      "answer": "3,375×10⁻¹⁹",
+      "solution_steps": [
+        {
+          "explain": "Năng lượng photon tỉ lệ nghịch với bước sóng theo hệ thức Planck.",
+          "latex": "E = \\dfrac{hc}{\\lambda}"
+        },
+        {
+          "explain": "Đổi bước sóng ra mét rồi thay số.",
+          "latex": "E = \\dfrac{6.626 \\times 10^{-34} \\times 3 \\times 10^{8}}{589 \\times 10^{-9}} \\approx 3.375 \\times 10^{-19}\\ \\text{J}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nguyen-tu.nang-luong-photon"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng hệ thức Planck",
+        "đổi đơn vị bước sóng"
+      ],
+      "tags": [
+        "photon",
+        "nang-luong"
+      ],
+      "answer_numeric": 3.375e-19,
+      "answer_unit": "J",
+      "tolerance": 5e-22
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0006",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bảng tuần hoàn",
+      "type": "trac-nghiem",
+      "statement_vi": "Nguyên tố R tạo hợp chất khí với hiđro có dạng RH₃, trong đó R chiếm 82,35% khối lượng phân tử. Xác định R và công thức oxit cao nhất của nó.",
+      "statement_en": "Element R forms a gaseous hydride RH₃ in which R accounts for 82.35% of the molecular mass. Identify R and the formula of its highest oxide.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hợp chất khí với hiđro dạng RH₃ nên hoá trị với hiđro là 3, R thuộc nhóm VA; hoá trị cao nhất với oxi bằng 8 − 3 = 5.",
+          "latex": "\\text{hoa tri voi } O = 8 - 3 = 5"
+        },
+        {
+          "explain": "Phần trăm khối lượng của R trong RH₃ cho phương trình xác định M_R.",
+          "latex": "\\dfrac{M_{R}}{M_{R} + 3} = 0.8235 \\Rightarrow M_{R} = 14"
+        },
+        {
+          "explain": "M_R = 14 là nitơ (N), oxit cao nhất ứng với hoá trị 5 là N₂O₅.",
+          "latex": "R = N,\\ \\text{oxit cao nhat}\\ N_{2}O_{5}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-hop-chat-khi-hidro",
+        "chemistry.thpt.bang-tuan-hoan.cong-thuc-hop-chat-khi-voi-hidro",
+        "chemistry.thpt.bang-tuan-hoan.hoa-tri-cao-nhat-voi-oxi"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "biện luận nguyên tố từ phần trăm khối lượng",
+        "quan hệ hoá trị với oxi và với hiđro"
+      ],
+      "tags": [
+        "hop-chat-khi-hidro",
+        "hoa-tri-cao-nhat"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "R là N, oxit cao nhất N₂O₅",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "R là P, oxit cao nhất P₂O₅",
+          "why_wrong": "P có M = 31, thay vào RH₃ cho %R = 31/34 = 91,2% chứ không phải 82,35%."
+        },
+        {
+          "key": "C",
+          "text": "R là C, oxit cao nhất CO₂",
+          "why_wrong": "Carbon tạo hợp chất khí CH₄ (RH₄, nhóm IVA), không phải RH₃."
+        },
+        {
+          "key": "D",
+          "text": "R là N, oxit cao nhất NO₂",
+          "why_wrong": "Xác định đúng R nhưng oxit cao nhất phải ứng với hoá trị 5 (N₂O₅), NO₂ không phải oxit cao nhất."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0007",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bảng tuần hoàn",
+      "type": "trac-nghiem",
+      "statement_vi": "Nguyên tử của nguyên tố M có cấu hình electron [Ar]3d⁶ 4s². Xác định vị trí (chu kì, nhóm) của M trong bảng tuần hoàn.",
+      "statement_en": "An atom of element M has electron configuration [Ar]3d⁶ 4s². Determine its period and group in the periodic table.",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Số thứ tự chu kì bằng số lớp electron; cấu hình có lớp ngoài cùng là lớp thứ 4 nên M ở chu kì 4.",
+          "latex": "\\text{chu ki} = 4"
+        },
+        {
+          "explain": "Nguyên tố d với số electron hoá trị x = (n-1)d + ns; ở đây x = 6 + 2 = 8, thuộc khoảng 8 ≤ x ≤ 10 nên thuộc nhóm VIIIB.",
+          "latex": "x = 6 + 2 = 8 \\Rightarrow \\text{nhom VIIIB}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-chu-ki",
+        "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-b"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "xác định chu kì từ số lớp electron",
+        "xác định nhóm B từ số electron hoá trị"
+      ],
+      "tags": [
+        "chu-ki",
+        "nhom-b"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chu kì 4, nhóm IIA",
+          "why_wrong": "Chỉ tính electron ở phân lớp 4s (2e) mà bỏ qua 6 electron 3d; nguyên tố d phải cộng cả electron d vào số electron hoá trị."
+        },
+        {
+          "key": "B",
+          "text": "Chu kì 3, nhóm VIIIB",
+          "why_wrong": "Nhầm chu kì; lớp ngoài cùng là lớp 4 (4s) nên chu kì phải là 4."
+        },
+        {
+          "key": "C",
+          "text": "Chu kì 4, nhóm VIIIB",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "Chu kì 4, nhóm VIB",
+          "why_wrong": "Lấy x = 6 (chỉ đếm 3d) nên xếp nhầm nhóm VIB; phải cộng cả 2 electron 4s thành x = 8."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0008",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Liên kết hóa học",
+      "type": "trac-nghiem",
+      "statement_vi": "Trong phân tử N₂, hai nguyên tử nitơ liên kết với nhau bằng bao nhiêu cặp electron dùng chung khi viết công thức Lewis?",
+      "statement_en": "In the N₂ molecule, how many shared electron pairs bond the two nitrogen atoms in the Lewis structure?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Mỗi nguyên tử N có 5 electron hoá trị, tổng cộng 10 electron hoá trị cho phân tử N₂.",
+          "latex": "2 \\times 5 = 10\\ e"
+        },
+        {
+          "explain": "Để mỗi N đạt octet (8 electron), hai nguyên tử phải góp chung 3 cặp electron tạo liên kết ba, phần còn lại là 2 cặp electron riêng.",
+          "latex": "N \\equiv N:\\ 3\\ \\text{cap dung chung}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.lien-ket.so-electron-hoa-tri-trong-lewis"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "viết công thức Lewis",
+        "đếm cặp electron dùng chung"
+      ],
+      "tags": [
+        "cong-thuc-lewis",
+        "lien-ket-ba"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 cặp",
+          "why_wrong": "Một cặp dùng chung chỉ đủ tạo liên kết đơn; khi đó mỗi N chưa đạt octet."
+        },
+        {
+          "key": "B",
+          "text": "2 cặp",
+          "why_wrong": "Hai cặp tạo liên kết đôi, mỗi N mới có 7 electron, chưa đạt octet."
+        },
+        {
+          "key": "C",
+          "text": "3 cặp",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "4 cặp",
+          "why_wrong": "Bốn cặp dùng chung sẽ vượt quá octet của nitơ (nitơ không mở rộng octet)."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0009",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng oxi hóa - khử",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho phản ứng: 2Al + 3Cl₂ → 2AlCl₃. Chất khử và chất oxi hoá trong phản ứng lần lượt là:",
+      "statement_en": "Given the reaction 2Al + 3Cl₂ → 2AlCl₃. Identify the reducing agent and the oxidizing agent, respectively.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Al tăng số oxi hoá từ 0 lên +3 (nhường electron) nên là chất khử.",
+          "latex": "Al^{0} \\rightarrow Al^{+3} + 3e"
+        },
+        {
+          "explain": "Cl₂ giảm số oxi hoá từ 0 xuống −1 (nhận electron) nên là chất oxi hoá.",
+          "latex": "Cl_{2}^{0} + 2e \\rightarrow 2Cl^{-1}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.oxi-hoa-khu.chat-khu-chat-oxi-hoa"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "xác định sự thay đổi số oxi hoá",
+        "phân biệt chất khử và chất oxi hoá"
+      ],
+      "tags": [
+        "chat-khu",
+        "chat-oxi-hoa"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chất khử là Al, chất oxi hoá là Cl₂",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Chất khử là Cl₂, chất oxi hoá là Al",
+          "why_wrong": "Đảo ngược vai trò: chất nhường electron (Al) là chất khử, chất nhận electron (Cl₂) là chất oxi hoá."
+        },
+        {
+          "key": "C",
+          "text": "Chất khử là AlCl₃, chất oxi hoá là Al",
+          "why_wrong": "AlCl₃ là sản phẩm, không phải chất tham gia thay đổi số oxi hoá theo chiều cho/nhận electron ban đầu."
+        },
+        {
+          "key": "D",
+          "text": "Cả Al và Cl₂ đều là chất khử",
+          "why_wrong": "Trong một phản ứng oxi hoá – khử phải có cả chất cho và chất nhận electron, không thể cả hai cùng là chất khử."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0010",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Một hỗn hợp khí gồm 40% CO₂ và 60% O₂ theo thể tích. Tính khối lượng mol trung bình của hỗn hợp (g/mol).",
+      "statement_en": "A gas mixture contains 40% CO₂ and 60% O₂ by volume. Compute the average molar mass of the mixture (g/mol).",
+      "answer": "36,8",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng mol trung bình là trung bình có trọng số theo phần trăm thể tích (cũng là phần trăm số mol).",
+          "latex": "\\bar{M} = \\dfrac{\\%V_{1} M_{1} + \\%V_{2} M_{2}}{100}"
+        },
+        {
+          "explain": "Thay M(CO₂) = 44, M(O₂) = 32.",
+          "latex": "\\bar{M} = 0.4 \\times 44 + 0.6 \\times 32 = 36.8"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh-theo-phan-tram"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính khối lượng mol trung bình theo thể tích"
+      ],
+      "tags": [
+        "khoi-luong-mol-trung-binh",
+        "hon-hop-khi"
+      ],
+      "answer_numeric": 36.8,
+      "answer_unit": "g/mol",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0011",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Tính số mol nguyên tử oxi có trong 0,2 mol Al₂(SO₄)₃.",
+      "statement_en": "Compute the number of moles of oxygen atoms in 0.2 mol of Al₂(SO₄)₃.",
+      "answer": "2,4",
+      "solution_steps": [
+        {
+          "explain": "Mỗi phân tử Al₂(SO₄)₃ chứa 3×4 = 12 nguyên tử O; số mol nguyên tố bằng số nguyên tử trong công thức nhân số mol hợp chất.",
+          "latex": "n_{O} = 12 \\times n_{Al_{2}(SO_{4})_{3}}"
+        },
+        {
+          "explain": "Thay số mol hợp chất.",
+          "latex": "n_{O} = 12 \\times 0.2 = 2.4\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dai-luong-co-ban.so-mol-nguyen-to-trong-hop-chat"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính số mol nguyên tố trong hợp chất"
+      ],
+      "tags": [
+        "so-mol-nguyen-to",
+        "cong-thuc-hoa-hoc"
+      ],
+      "answer_numeric": 2.4,
+      "answer_unit": "mol",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0012",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đại lượng cơ bản",
+      "type": "dien-so",
+      "statement_vi": "Một lượng khí xác định ở 27°C có thể tích 6 lít. Giữ áp suất không đổi, nung nóng khí đến 127°C thì thể tích khí là bao nhiêu lít?",
+      "statement_en": "A fixed amount of gas at 27°C has volume 6 L. At constant pressure, it is heated to 127°C. What is the new volume (L)?",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Chuyển nhiệt độ sang Kelvin: 27°C = 300 K; 127°C = 400 K. Áp suất không đổi nên dùng phương trình liên hệ hai trạng thái.",
+          "latex": "\\dfrac{P_{1}V_{1}}{T_{1}} = \\dfrac{P_{2}V_{2}}{T_{2}} \\Rightarrow \\dfrac{V_{1}}{T_{1}} = \\dfrac{V_{2}}{T_{2}}"
+        },
+        {
+          "explain": "Thay số để tìm V₂.",
+          "latex": "V_{2} = V_{1} \\cdot \\dfrac{T_{2}}{T_{1}} = 6 \\times \\dfrac{400}{300} = 8\\ \\text{L}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dai-luong-co-ban.phuong-trinh-hai-trang-thai-khi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "đổi nhiệt độ sang Kelvin",
+        "áp dụng định luật Charles"
+      ],
+      "tags": [
+        "dang-ap",
+        "phuong-trinh-trang-thai-khi"
+      ],
+      "answer_numeric": 8,
+      "answer_unit": "L",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0013",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Cần thêm bao nhiêu gam nước vào 200 gam dung dịch NaOH 20% để thu được dung dịch NaOH 8%?",
+      "statement_en": "How many grams of water must be added to 200 g of 20% NaOH solution to obtain an 8% NaOH solution?",
+      "answer": "300",
+      "solution_steps": [
+        {
+          "explain": "Khi pha loãng, khối lượng chất tan không đổi nên tích khối lượng dung dịch với nồng độ phần trăm được bảo toàn.",
+          "latex": "m_{1} C_{1}\\% = m_{2} C_{2}\\%"
+        },
+        {
+          "explain": "Tính khối lượng dung dịch sau, rồi lấy hiệu với khối lượng ban đầu là khối lượng nước thêm vào.",
+          "latex": "m_{2} = \\dfrac{200 \\times 20}{8} = 500\\ \\text{g} \\Rightarrow m_{H_{2}O} = 500 - 200 = 300\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dung-dich.pha-loang-theo-nong-do-phan-tram"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "bảo toàn khối lượng chất tan khi pha loãng"
+      ],
+      "tags": [
+        "pha-loang",
+        "nong-do-phan-tram"
+      ],
+      "answer_numeric": 300,
+      "answer_unit": "g",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0014",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Trộn 200 ml dung dịch HCl 0,5M với 300 ml dung dịch HCl 1M. Tính nồng độ mol của dung dịch HCl thu được (coi thể tích cộng được).",
+      "statement_en": "Mix 200 mL of 0.5M HCl with 300 mL of 1M HCl. Compute the molar concentration of the resulting HCl solution (volumes additive).",
+      "answer": "0,8",
+      "solution_steps": [
+        {
+          "explain": "Nồng độ mol khi trộn hai dung dịch cùng chất tan bằng tổng số mol chia tổng thể tích.",
+          "latex": "C = \\dfrac{C_{1}V_{1} + C_{2}V_{2}}{V_{1} + V_{2}}"
+        },
+        {
+          "explain": "Thay số (thể tích tính bằng lít).",
+          "latex": "C = \\dfrac{0.5 \\times 0.2 + 1 \\times 0.3}{0.2 + 0.3} = \\dfrac{0.4}{0.5} = 0.8\\ \\text{M}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dung-dich.tron-hai-dung-dich-cung-chat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính nồng độ mol khi trộn dung dịch cùng chất"
+      ],
+      "tags": [
+        "tron-dung-dich",
+        "nong-do-mol"
+      ],
+      "answer_numeric": 0.8,
+      "answer_unit": "M",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0015",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dung dịch",
+      "type": "trac-nghiem",
+      "statement_vi": "Cần trộn dung dịch H₂SO₄ 98% với dung dịch H₂SO₄ 20% theo tỉ lệ khối lượng nào để thu được dung dịch H₂SO₄ 50%?",
+      "statement_en": "In what mass ratio should 98% H₂SO₄ be mixed with 20% H₂SO₄ to obtain 50% H₂SO₄?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Dùng quy tắc đường chéo theo nồng độ phần trăm: mỗi phần lấy hiệu chéo giữa nồng độ hai dung dịch và nồng độ cần đạt.",
+          "latex": "\\dfrac{m_{98\\%}}{m_{20\\%}} = \\dfrac{|20 - 50|}{|98 - 50|} = \\dfrac{30}{48}"
+        },
+        {
+          "explain": "Rút gọn phân số.",
+          "latex": "\\dfrac{30}{48} = \\dfrac{5}{8}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-phan-tram"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng quy tắc đường chéo theo nồng độ phần trăm"
+      ],
+      "tags": [
+        "duong-cheo",
+        "nong-do-phan-tram"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "m(98%) : m(20%) = 3 : 8",
+          "why_wrong": "Lấy hiệu chéo sai: tử số phải là |20 − 50| = 30, không phải 30 rồi rút thành 3 tuỳ tiện."
+        },
+        {
+          "key": "B",
+          "text": "m(98%) : m(20%) = 5 : 8",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "m(98%) : m(20%) = 8 : 5",
+          "why_wrong": "Đảo ngược tỉ lệ: khối lượng dung dịch đặc (98%) phải ứng với hiệu chéo nhỏ hơn |20−50| = 30."
+        },
+        {
+          "key": "D",
+          "text": "m(98%) : m(20%) = 1 : 1",
+          "why_wrong": "Trộn 1:1 cho nồng độ trung bình ≈ 59%, không phải 50%."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0016",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Cho 5,6 gam Fe tác dụng hết với 200 gam dung dịch HCl (dư), thu được khí H₂. Tính khối lượng dung dịch sau phản ứng (gam).",
+      "statement_en": "5.6 g of Fe reacts completely with 200 g of excess HCl solution, releasing H₂ gas. Compute the mass of the solution after reaction (g).",
+      "answer": "205,4",
+      "solution_steps": [
+        {
+          "explain": "Số mol Fe = 5,6/56 = 0,1 mol; phản ứng Fe + 2HCl → FeCl₂ + H₂ sinh 0,1 mol H₂ (0,2 gam).",
+          "latex": "n_{H_{2}} = n_{Fe} = 0.1\\ \\text{mol} \\Rightarrow m_{H_{2}} = 0.2\\ \\text{g}"
+        },
+        {
+          "explain": "Khối lượng dung dịch sau bằng khối lượng chất rắn cho vào cộng dung dịch ban đầu trừ khối lượng khí thoát ra.",
+          "latex": "m_{dd} = 200 + 5.6 - 0.2 = 205.4\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dung-dich.khoi-luong-dung-dich-sau-phan-ung"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "bảo toàn khối lượng dung dịch",
+        "trừ khối lượng khí thoát ra"
+      ],
+      "tags": [
+        "khoi-luong-dung-dich",
+        "khi-thoat"
+      ],
+      "answer_numeric": 205.4,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0017",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Dung dịch",
+      "type": "dien-so",
+      "statement_vi": "Một dung dịch gồm 0,5 mol ethanol (C₂H₅OH) và 2 mol nước. Tính phần mol của ethanol trong dung dịch.",
+      "statement_en": "A solution contains 0.5 mol ethanol (C₂H₅OH) and 2 mol water. Compute the mole fraction of ethanol.",
+      "answer": "0,2",
+      "solution_steps": [
+        {
+          "explain": "Phần mol của một cấu tử bằng số mol cấu tử đó chia tổng số mol tất cả cấu tử.",
+          "latex": "x_{C_{2}H_{5}OH} = \\dfrac{n_{C_{2}H_{5}OH}}{n_{tong}}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "x = \\dfrac{0.5}{0.5 + 2} = \\dfrac{0.5}{2.5} = 0.2"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dung-dich.phan-mol"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính phần mol của cấu tử"
+      ],
+      "tags": [
+        "phan-mol",
+        "dung-dich"
+      ],
+      "answer_numeric": 0.2,
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0018",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sự điện li",
+      "type": "dien-so",
+      "statement_vi": "Tính pH của dung dịch HCl 0,01M.",
+      "statement_en": "Compute the pH of a 0.01M HCl solution.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "HCl là acid mạnh, điện li hoàn toàn nên nồng độ H⁺ bằng nồng độ acid.",
+          "latex": "[H^{+}] = 0.01 = 10^{-2}\\ \\text{M}"
+        },
+        {
+          "explain": "pH bằng trừ logarit thập phân của nồng độ H⁺.",
+          "latex": "pH = -\\log[H^{+}] = -\\log(10^{-2}) = 2"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-li.ph-cua-acid-manh",
+        "chemistry.thpt.dung-dich.ph-dung-dich"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính pH acid mạnh",
+        "quan hệ pH và nồng độ H+"
+      ],
+      "tags": [
+        "ph",
+        "acid-manh"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0019",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sự điện li",
+      "type": "dien-so",
+      "statement_vi": "Tính pH của dung dịch NH₃ 0,1M, biết hằng số phân li base K_b = 1,8×10⁻⁵ (lấy 2 chữ số thập phân).",
+      "statement_en": "Compute the pH of 0.1M NH₃ solution, given base dissociation constant K_b = 1.8×10⁻⁵ (to 2 decimal places).",
+      "answer": "11,13",
+      "solution_steps": [
+        {
+          "explain": "Với base yếu, nồng độ OH⁻ gần đúng bằng căn của tích hằng số phân li base và nồng độ base.",
+          "latex": "[OH^{-}] \\approx \\sqrt{K_{b} C_{b}} = \\sqrt{1.8 \\times 10^{-5} \\times 0.1} = 1.34 \\times 10^{-3}"
+        },
+        {
+          "explain": "Tính pOH rồi suy pH = 14 − pOH.",
+          "latex": "pOH = -\\log(1.34 \\times 10^{-3}) = 2.87 \\Rightarrow pH = 14 - 2.87 = 11.13"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-li.hang-so-phan-li-base",
+        "chemistry.thpt.dien-li.ph-cua-base-yeu"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "tính [OH-] của base yếu",
+        "chuyển pOH sang pH"
+      ],
+      "tags": [
+        "base-yeu",
+        "hang-so-phan-li"
+      ],
+      "answer_numeric": 11.13,
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0020",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sự điện li",
+      "type": "dien-so",
+      "statement_vi": "Tính pH của dung dịch đệm gồm NH₃ 0,1M và NH₄Cl 0,1M. Cho pK_b(NH₃) = 4,74 (lấy 2 chữ số thập phân).",
+      "statement_en": "Compute the pH of a buffer of 0.1M NH₃ and 0.1M NH₄Cl. Given pK_b(NH₃) = 4.74 (to 2 decimal places).",
+      "answer": "9,26",
+      "solution_steps": [
+        {
+          "explain": "Với đệm base yếu, pOH tính theo phương trình Henderson dạng base.",
+          "latex": "pOH = pK_{b} + \\log \\dfrac{[NH_{4}^{+}]}{[NH_{3}]}"
+        },
+        {
+          "explain": "Tỉ lệ muối/base bằng 1 nên log bằng 0; suy ra pOH = 4,74 và pH = 14 − 4,74.",
+          "latex": "pOH = 4.74 + \\log(1) = 4.74 \\Rightarrow pH = 9.26"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-li.ph-dung-dich-dem-base"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "áp dụng phương trình Henderson cho đệm base",
+        "chuyển pOH sang pH"
+      ],
+      "tags": [
+        "dung-dich-dem",
+        "henderson"
+      ],
+      "answer_numeric": 9.26,
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0021",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tốc độ phản ứng",
+      "type": "dien-so",
+      "statement_vi": "Cho phản ứng N₂ + 3H₂ → 2NH₃. Trong 20 giây, nồng độ H₂ giảm 6 mol/L. Tính tốc độ trung bình của phản ứng (theo biểu thức tổng quát, đơn vị mol/(L·s)).",
+      "statement_en": "For N₂ + 3H₂ → 2NH₃, over 20 s the H₂ concentration decreases by 6 mol/L. Compute the overall average reaction rate (general expression, mol/(L·s)).",
+      "answer": "0,1",
+      "solution_steps": [
+        {
+          "explain": "Tốc độ theo H₂ bằng độ giảm nồng độ chia thời gian.",
+          "latex": "v_{H_{2}} = -\\dfrac{\\Delta [H_{2}]}{\\Delta t} = \\dfrac{6}{20} = 0.3\\ \\text{mol/(L·s)}"
+        },
+        {
+          "explain": "Tốc độ trung bình tổng quát bằng tốc độ theo mỗi chất chia hệ số của nó; với H₂ hệ số là 3.",
+          "latex": "v = \\dfrac{1}{3} v_{H_{2}} = \\dfrac{0.3}{3} = 0.1\\ \\text{mol/(L·s)}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.toc-do.toc-do-trung-binh-theo-mot-chat",
+        "chemistry.thpt.toc-do.toc-do-trung-binh-tong-quat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính tốc độ theo một chất",
+        "quy về tốc độ tổng quát qua hệ số"
+      ],
+      "tags": [
+        "toc-do-phan-ung",
+        "toc-do-tong-quat"
+      ],
+      "answer_numeric": 0.1,
+      "answer_unit": "mol/(L·s)",
+      "tolerance": 0.005
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0022",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tốc độ phản ứng",
+      "type": "dien-so",
+      "statement_vi": "Một phản ứng có hệ số nhiệt độ γ = 2. Ở 20°C phản ứng cần 8 phút để hoàn thành. Hỏi ở 50°C phản ứng cần bao nhiêu phút?",
+      "statement_en": "A reaction has temperature coefficient γ = 2. At 20°C it takes 8 min to complete. How many minutes at 50°C?",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Thời gian phản ứng tỉ lệ nghịch với tốc độ; theo quy tắc van't Hoff.",
+          "latex": "\\dfrac{t_{1}}{t_{2}} = \\gamma^{\\frac{T_{2} - T_{1}}{10}}"
+        },
+        {
+          "explain": "Nhiệt độ tăng 30°C nên tốc độ tăng γ³ = 8 lần, thời gian giảm 8 lần.",
+          "latex": "t_{2} = \\dfrac{t_{1}}{\\gamma^{3}} = \\dfrac{8}{2^{3}} = 1\\ \\text{phut}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.toc-do.thoi-gian-phan-ung-theo-vant-hoff"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng quy tắc van't Hoff",
+        "suy thời gian theo hệ số nhiệt độ"
+      ],
+      "tags": [
+        "vant-hoff",
+        "he-so-nhiet-do"
+      ],
+      "answer_numeric": 1,
+      "answer_unit": "phút",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0023",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cân bằng hóa học",
+      "type": "dien-so",
+      "statement_vi": "Ở một nhiệt độ, phản ứng H₂(k) + I₂(k) ⇌ 2HI(k) có hằng số cân bằng K_C = 50 và biến thiên enthalpy ΔH = −10 kJ. Tính hằng số cân bằng K_C' của phản ứng nghịch 2HI ⇌ H₂ + I₂.",
+      "statement_en": "At a temperature, H₂(g) + I₂(g) ⇌ 2HI(g) has K_C = 50 and ΔH = −10 kJ. Compute K_C' of the reverse reaction 2HI ⇌ H₂ + I₂.",
+      "answer": "0,02",
+      "solution_steps": [
+        {
+          "explain": "Hằng số cân bằng của phản ứng nghịch bằng nghịch đảo hằng số cân bằng của phản ứng thuận.",
+          "latex": "K_{C}' = \\dfrac{1}{K_{C}} = \\dfrac{1}{50}"
+        },
+        {
+          "explain": "Tính giá trị; đồng thời ΔH của phản ứng nghịch đổi dấu thành +10 kJ.",
+          "latex": "K_{C}' = 0.02;\\quad \\Delta H_{nghich} = +10\\ \\text{kJ}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.can-bang.hang-so-can-bang-phan-ung-nghich",
+        "chemistry.thpt.nhiet-hoa.enthalpy-phan-ung-nghich"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nghịch đảo hằng số cân bằng",
+        "đổi dấu enthalpy phản ứng nghịch"
+      ],
+      "tags": [
+        "hang-so-can-bang",
+        "phan-ung-nghich"
+      ],
+      "answer_numeric": 0.02,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0024",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Điện hóa",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho hai cặp oxi hoá – khử: Zn²⁺/Zn (E° = −0,76 V) và Cu²⁺/Cu (E° = +0,34 V). Theo quy tắc alpha, phản ứng nào tự xảy ra?",
+      "statement_en": "Given Zn²⁺/Zn (E° = −0.76 V) and Cu²⁺/Cu (E° = +0.34 V). By the alpha rule, which reaction occurs spontaneously?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Sắp hai cặp theo chiều thế điện cực tăng dần; chất khử mạnh (Zn) nằm trên trái phản ứng với chất oxi hoá mạnh (Cu²⁺) nằm dưới phải.",
+          "latex": "Zn\\ |\\ Zn^{2+} \\quad\\text{va}\\quad Cu\\ |\\ Cu^{2+}"
+        },
+        {
+          "explain": "Quy tắc alpha: chiều mũi tên đi từ Zn (dưới, khử) tới Cu²⁺ (trên, oxi hoá).",
+          "latex": "Zn + Cu^{2+} \\rightarrow Zn^{2+} + Cu"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-hoa.quy-tac-alpha"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "so sánh thế điện cực chuẩn",
+        "xác định chiều phản ứng theo quy tắc alpha"
+      ],
+      "tags": [
+        "quy-tac-alpha",
+        "the-dien-cuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Zn + Cu²⁺ → Zn²⁺ + Cu",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Cu + Zn²⁺ → Cu²⁺ + Zn",
+          "why_wrong": "Đây là chiều ngược, không tự xảy ra vì Cu có tính khử yếu hơn Zn."
+        },
+        {
+          "key": "C",
+          "text": "Zn²⁺ + Cu²⁺ → Zn + Cu",
+          "why_wrong": "Hai ion cùng là chất oxi hoá, không thể phản ứng với nhau theo kiểu này."
+        },
+        {
+          "key": "D",
+          "text": "Không phản ứng nào xảy ra",
+          "why_wrong": "Chênh lệch thế điện cực dương (E°pin = 1,10 V) nên phản ứng Zn + Cu²⁺ chắc chắn xảy ra."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0025",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Điện hóa",
+      "type": "dien-so",
+      "statement_vi": "Điện phân với cường độ dòng điện I = 5A trong thời gian 1930 giây. Tính số mol electron trao đổi (cho F = 96500 C/mol).",
+      "statement_en": "Electrolysis at current I = 5A for 1930 s. Compute the moles of electrons transferred (F = 96500 C/mol).",
+      "answer": "0,1",
+      "solution_steps": [
+        {
+          "explain": "Số mol electron bằng điện lượng chia hằng số Faraday.",
+          "latex": "n_{e} = \\dfrac{It}{F}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "n_{e} = \\dfrac{5 \\times 1930}{96500} = 0.1\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-hoa.so-mol-electron-dien-phan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính điện lượng",
+        "áp dụng định luật Faraday"
+      ],
+      "tags": [
+        "dien-phan",
+        "faraday"
+      ],
+      "answer_numeric": 0.1,
+      "answer_unit": "mol",
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0026",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Điện hóa",
+      "type": "trac-nghiem",
+      "statement_vi": "Điều kiện nào sau đây KHÔNG bắt buộc để xảy ra ăn mòn điện hoá học?",
+      "statement_en": "Which of the following is NOT a required condition for electrochemical corrosion to occur?",
+      "answer": "D",
+      "solution_steps": [
+        {
+          "explain": "Ăn mòn điện hoá cần đủ ba điều kiện đồng thời: hai điện cực khác nhau về bản chất, tiếp xúc trực tiếp hoặc gián tiếp, và cùng nhúng trong dung dịch chất điện li.",
+          "latex": "\\text{2 dien cuc khac chat} + \\text{tiep xuc} + \\text{dung dich dien li}"
+        },
+        {
+          "explain": "Nhiệt độ cao chỉ làm tăng tốc độ ăn mòn, không phải điều kiện bắt buộc để hiện tượng xảy ra.",
+          "latex": "\\text{nhiet do cao: khong bat buoc}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-hoa.an-mon-dien-hoa"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nêu điều kiện ăn mòn điện hoá",
+        "phân biệt điều kiện cần và yếu tố ảnh hưởng"
+      ],
+      "tags": [
+        "an-mon-dien-hoa",
+        "dien-cuc"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Có hai điện cực khác nhau về bản chất",
+          "why_wrong": "Đây là điều kiện bắt buộc; hai điện cực khác bản chất tạo nên sự chênh lệch thế điện cực."
+        },
+        {
+          "key": "B",
+          "text": "Các điện cực tiếp xúc trực tiếp hoặc qua dây dẫn",
+          "why_wrong": "Đây là điều kiện bắt buộc để electron di chuyển giữa hai điện cực."
+        },
+        {
+          "key": "C",
+          "text": "Các điện cực cùng tiếp xúc với một dung dịch chất điện li",
+          "why_wrong": "Đây là điều kiện bắt buộc để tạo mạch kín ion."
+        },
+        {
+          "key": "D",
+          "text": "Dung dịch điện li phải ở nhiệt độ cao",
+          "why_wrong": ""
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0027",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Điện phân",
+      "type": "trac-nghiem",
+      "statement_vi": "Điện phân dung dịch CuSO₄ với điện cực trơ (graphit). Nhận định nào đúng về sản phẩm ở hai điện cực và sự thay đổi pH?",
+      "statement_en": "Electrolysis of CuSO₄ solution with inert (graphite) electrodes. Which statement about the electrode products and pH change is correct?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Ở catot, ion Cu²⁺ có tính oxi hoá mạnh hơn nước nên bị khử trước tạo Cu bám vào điện cực.",
+          "latex": "Cu^{2+} + 2e \\rightarrow Cu"
+        },
+        {
+          "explain": "Ở anot trơ, nước bị oxi hoá tạo O₂ và H⁺; H⁺ sinh ra làm pH dung dịch giảm.",
+          "latex": "2H_{2}O \\rightarrow O_{2} + 4H^{+} + 4e \\Rightarrow pH\\ \\text{giam}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dien-phan.thu-tu-catot",
+        "chemistry.thpt.dien-phan.thu-tu-anot",
+        "chemistry.thpt.dien-phan.thay-doi-ph"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "xác định thứ tự điện phân ở catot và anot",
+        "dự đoán biến đổi pH khi điện phân"
+      ],
+      "tags": [
+        "dien-phan-dung-dich",
+        "catot-anot"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Catot sinh H₂, anot sinh O₂, pH tăng",
+          "why_wrong": "Cu²⁺ bị khử trước nước ở catot nên không sinh H₂ khi còn Cu²⁺."
+        },
+        {
+          "key": "B",
+          "text": "Catot bám Cu, anot sinh O₂, pH giảm",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "Catot bám Cu, anot sinh khí SO₂, pH không đổi",
+          "why_wrong": "Ion SO₄²⁻ không bị oxi hoá ở anot trong dung dịch; nước bị oxi hoá tạo O₂."
+        },
+        {
+          "key": "D",
+          "text": "Catot bám Cu, anot sinh O₂, pH tăng",
+          "why_wrong": "Anot sinh H⁺ nên pH phải giảm chứ không tăng."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0028",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "CO2 tác dụng với dung dịch kiềm",
+      "type": "dien-so",
+      "statement_vi": "Sục 0,15 mol CO₂ vào dung dịch chứa 0,1 mol NaOH và 0,1 mol Ca(OH)₂. Tính khối lượng kết tủa CaCO₃ thu được (gam).",
+      "statement_en": "Bubble 0.15 mol CO₂ into a solution of 0.1 mol NaOH and 0.1 mol Ca(OH)₂. Compute the mass of CaCO₃ precipitate (g).",
+      "answer": "10",
+      "solution_steps": [
+        {
+          "explain": "Tổng số mol OH⁻ từ cả hai base.",
+          "latex": "n_{OH^{-}} = n_{NaOH} + 2n_{Ca(OH)_{2}} = 0.1 + 0.2 = 0.3\\ \\text{mol}"
+        },
+        {
+          "explain": "Tỉ lệ T = n(OH⁻)/n(CO₂) = 0,3/0,15 = 2 ≥ 2 nên CO₂ chuyển hết thành CO₃²⁻: n(CO₃²⁻) = 0,15 mol.",
+          "latex": "n_{CO_{3}^{2-}} = n_{CO_{2}} = 0.15\\ \\text{mol}"
+        },
+        {
+          "explain": "Kết tủa CaCO₃ bị giới hạn bởi số mol Ca²⁺; lấy giá trị nhỏ hơn.",
+          "latex": "n_{\\downarrow} = \\min(0.15,\\ 0.1) = 0.1 \\Rightarrow m = 0.1 \\times 100 = 10\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.co2-kiem.hon-hop-naoh-caoh2",
+        "chemistry.thpt.co2-kiem.san-pham-theo-t"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 8,
+      "skills": [
+        "tính tổng OH-",
+        "biện luận sản phẩm theo T",
+        "giới hạn kết tủa theo Ca2+"
+      ],
+      "tags": [
+        "co2-kiem",
+        "ket-tua-caco3"
+      ],
+      "answer_numeric": 10,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0029",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "CO2 tác dụng với dung dịch kiềm",
+      "type": "dien-so",
+      "statement_vi": "Hấp thụ hoàn toàn 0,1 mol CO₂ vào dung dịch Ca(OH)₂ dư, thu được kết tủa CaCO₃. Khối lượng dung dịch tăng hay giảm bao nhiêu gam?",
+      "statement_en": "Absorb 0.1 mol CO₂ completely into excess Ca(OH)₂ to give CaCO₃. By how many grams does the solution mass increase or decrease?",
+      "answer": "giảm 5,6",
+      "solution_steps": [
+        {
+          "explain": "Ca(OH)₂ dư nên toàn bộ CO₂ tạo kết tủa: n(CaCO₃) = n(CO₂) = 0,1 mol.",
+          "latex": "n_{CaCO_{3}} = 0.1\\ \\text{mol}"
+        },
+        {
+          "explain": "Độ thay đổi khối lượng dung dịch bằng khối lượng CO₂ hấp thụ trừ khối lượng kết tủa tách ra.",
+          "latex": "\\Delta m = 44 n_{CO_{2}} - 100 n_{CaCO_{3}} = 4.4 - 10 = -5.6\\ \\text{g}"
+        },
+        {
+          "explain": "Kết quả âm nghĩa là khối lượng dung dịch giảm 5,6 gam.",
+          "latex": "\\text{dung dich giam } 5.6\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.co2-kiem.khoi-luong-dung-dich-thay-doi"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính độ thay đổi khối lượng dung dịch",
+        "so sánh khối lượng khí và kết tủa"
+      ],
+      "tags": [
+        "khoi-luong-dung-dich",
+        "ket-tua"
+      ],
+      "answer_numeric": -5.6,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0030",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "CO2 tác dụng với dung dịch kiềm",
+      "type": "dien-so",
+      "statement_vi": "Nhỏ từ từ 0,15 mol dung dịch HCl vào dung dịch chứa 0,1 mol Na₂CO₃. Tính thể tích khí CO₂ (đktc) thu được (lít).",
+      "statement_en": "Add 0.15 mol HCl slowly into a solution of 0.1 mol Na₂CO₃. Compute the volume of CO₂ (STP, 22.4 L/mol) released (L).",
+      "answer": "1,12",
+      "solution_steps": [
+        {
+          "explain": "Cho từ từ axit vào muối cacbonat: trước hết H⁺ + CO₃²⁻ → HCO₃⁻, tiêu tốn 0,1 mol HCl tạo 0,1 mol HCO₃⁻.",
+          "latex": "H^{+} + CO_{3}^{2-} \\rightarrow HCO_{3}^{-}\\quad (0.1\\ \\text{mol})"
+        },
+        {
+          "explain": "HCl còn lại 0,05 mol phản ứng tiếp với HCO₃⁻ sinh CO₂.",
+          "latex": "H^{+} + HCO_{3}^{-} \\rightarrow CO_{2} + H_{2}O \\Rightarrow n_{CO_{2}} = 0.05\\ \\text{mol}"
+        },
+        {
+          "explain": "Tính thể tích khí ở điều kiện tiêu chuẩn.",
+          "latex": "V = 0.05 \\times 22.4 = 1.12\\ \\text{L}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.co2-kiem.axit-vao-cacbonat"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "thứ tự phản ứng khi cho từ từ axit vào cacbonat",
+        "tính khí CO2 sinh ra"
+      ],
+      "tags": [
+        "axit-cacbonat",
+        "khi-co2"
+      ],
+      "answer_numeric": 1.12,
+      "answer_unit": "L",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0031",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "CO2 tác dụng với dung dịch kiềm",
+      "type": "dien-so",
+      "statement_vi": "Nhiệt phân hoàn toàn 0,2 mol NaHCO₃. Tính khối lượng chất rắn Na₂CO₃ thu được (gam).",
+      "statement_en": "Completely decompose 0.2 mol NaHCO₃ by heating. Compute the mass of solid Na₂CO₃ obtained (g).",
+      "answer": "10,6",
+      "solution_steps": [
+        {
+          "explain": "Phản ứng nhiệt phân muối hiđrocacbonat của kim loại kiềm.",
+          "latex": "2NaHCO_{3} \\xrightarrow{t^{o}} Na_{2}CO_{3} + CO_{2} + H_{2}O"
+        },
+        {
+          "explain": "Cứ 2 mol NaHCO₃ tạo 1 mol Na₂CO₃ nên n(Na₂CO₃) = 0,1 mol; khối lượng bằng số mol nhân 106.",
+          "latex": "m = 0.1 \\times 106 = 10.6\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.co2-kiem.nhiet-phan-hidrocacbonat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "viết phương trình nhiệt phân",
+        "tính khối lượng chất rắn"
+      ],
+      "tags": [
+        "nhiet-phan",
+        "hidrocacbonat"
+      ],
+      "answer_numeric": 10.6,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0032",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+      "type": "dien-so",
+      "statement_vi": "Cho 5,4 gam Al tác dụng hết với dung dịch NaOH dư. Tính thể tích khí H₂ (đktc) thu được (lít).",
+      "statement_en": "5.4 g of Al reacts completely with excess NaOH solution. Compute the volume of H₂ gas (STP) released (L).",
+      "answer": "6,72",
+      "solution_steps": [
+        {
+          "explain": "Số mol Al = 5,4/27 = 0,2 mol. Phản ứng nhôm với kiềm.",
+          "latex": "Al + NaOH + H_{2}O \\rightarrow NaAlO_{2} + \\dfrac{3}{2}H_{2}"
+        },
+        {
+          "explain": "Mỗi mol Al giải phóng 1,5 mol H₂.",
+          "latex": "n_{H_{2}} = 1.5 \\times 0.2 = 0.3\\ \\text{mol} \\Rightarrow V = 0.3 \\times 22.4 = 6.72\\ \\text{L}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nhom-kem.al-tac-dung-naoh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "viết phản ứng Al với kiềm",
+        "tính thể tích H2"
+      ],
+      "tags": [
+        "nhom-kiem",
+        "khi-h2"
+      ],
+      "answer_numeric": 6.72,
+      "answer_unit": "L",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0033",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho từ từ dung dịch HCl vào dung dịch chứa 0,3 mol NaAlO₂ đến khi thu được 0,2 mol kết tủa Al(OH)₃. Số mol HCl đã dùng có thể là:",
+      "statement_en": "Add HCl slowly into a solution of 0.3 mol NaAlO₂ until 0.2 mol Al(OH)₃ precipitate forms. The moles of HCl used could be:",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Trường hợp axit thiếu, kết tủa chưa bị hoà tan: n(H⁺) = n(kết tủa).",
+          "latex": "n_{H^{+}} = n_{\\downarrow} = 0.2\\ \\text{mol}"
+        },
+        {
+          "explain": "Trường hợp axit dư, kết tủa đạt cực đại rồi tan bớt một phần.",
+          "latex": "n_{H^{+}} = 4 n_{AlO_{2}^{-}} - 3 n_{\\downarrow} = 4 \\times 0.3 - 3 \\times 0.2 = 0.6\\ \\text{mol}"
+        },
+        {
+          "explain": "Kết tủa cực đại 0,3 mol ứng với n(H⁺) = 0,3 mol; bài cho 0,2 mol nên có hai nghiệm 0,2 hoặc 0,6.",
+          "latex": "n_{H^{+}} \\in \\{0.2;\\ 0.6\\}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nhom-kem.aluminat-tac-dung-axit",
+        "chemistry.thpt.nhom-kem.ket-tua-al-cuc-dai"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 7,
+      "skills": [
+        "biện luận hai trường hợp thiếu/dư axit",
+        "tính giới hạn kết tủa Al(OH)3"
+      ],
+      "tags": [
+        "aluminat",
+        "hai-nghiem"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "0,2 mol",
+          "why_wrong": "Đây chỉ là một nghiệm (axit thiếu); vì kết tủa 0,2 < cực đại 0,3 nên còn nghiệm axit dư 0,6 mol."
+        },
+        {
+          "key": "B",
+          "text": "0,6 mol",
+          "why_wrong": "Đây chỉ là một nghiệm (axit dư); vẫn còn nghiệm axit thiếu 0,2 mol."
+        },
+        {
+          "key": "C",
+          "text": "0,2 mol hoặc 0,6 mol",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "0,3 mol",
+          "why_wrong": "0,3 mol HCl cho kết tủa cực đại 0,3 mol chứ không phải 0,2 mol."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0034",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với HNO3",
+      "type": "dien-so",
+      "statement_vi": "Hoà tan hết 8,3 gam hỗn hợp Al và Fe trong dung dịch HNO₃ loãng dư, thu được 0,2 mol khí NO (sản phẩm khử duy nhất). Tính khối lượng muối nitrat khan thu được (gam).",
+      "statement_en": "Dissolve 8.3 g of an Al–Fe mixture in excess dilute HNO₃ to yield 0.2 mol NO (only reduction product). Compute the mass of anhydrous nitrate salts (g).",
+      "answer": "45,5",
+      "solution_steps": [
+        {
+          "explain": "Số mol electron nhận theo NO: mỗi NO nhận 3 electron.",
+          "latex": "n_{e} = 3 n_{NO} = 3 \\times 0.2 = 0.6\\ \\text{mol}"
+        },
+        {
+          "explain": "Khối lượng muối nitrat bằng khối lượng kim loại cộng khối lượng gốc NO₃⁻, với n(NO₃⁻ trong muối) = n(e).",
+          "latex": "m_{muoi} = m_{KL} + 62 n_{e} = 8.3 + 62 \\times 0.6 = 45.5\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-nitrat",
+        "chemistry.thpt.bao-toan.electron"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "bảo toàn electron",
+        "tính khối lượng muối nitrat theo số mol electron"
+      ],
+      "tags": [
+        "muoi-nitrat",
+        "bao-toan-electron"
+      ],
+      "answer_numeric": 45.5,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0035",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với HNO3",
+      "type": "dien-so",
+      "statement_vi": "Hoà tan hết 0,4 mol Mg trong dung dịch HNO₃ loãng, không thấy khí thoát ra (sản phẩm khử duy nhất là NH₄NO₃). Tính số mol NH₄NO₃ sinh ra.",
+      "statement_en": "Dissolve 0.4 mol Mg in dilute HNO₃ with no gas evolved (only reduction product is NH₄NO₃). Compute the moles of NH₄NO₃ formed.",
+      "answer": "0,1",
+      "solution_steps": [
+        {
+          "explain": "Mg nhường 2 electron mỗi nguyên tử; tổng electron cho.",
+          "latex": "n_{e} = 2 n_{Mg} = 2 \\times 0.4 = 0.8\\ \\text{mol}"
+        },
+        {
+          "explain": "Không có khí nên toàn bộ electron dùng khử N⁺⁵ xuống N⁻³; mỗi NH₄NO₃ ứng với 8 electron.",
+          "latex": "n_{NH_{4}NO_{3}} = \\dfrac{n_{e}}{8} = \\dfrac{0.8}{8} = 0.1\\ \\text{mol}"
+        },
+        {
+          "explain": "Số mol HNO₃ phản ứng (chỉ tạo NH₄NO₃) là 10 lần số mol NH₄NO₃ = 1,0 mol.",
+          "latex": "n_{HNO_{3}} = 10 n_{NH_{4}NO_{3}} = 1.0\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-hno3.so-mol-nh4no3",
+        "chemistry.thpt.kim-loai-hno3.so-mol-hno3-phan-ung"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "bảo toàn electron với sản phẩm NH4NO3",
+        "tính số mol HNO3 phản ứng"
+      ],
+      "tags": [
+        "nh4no3",
+        "hno3-phan-ung"
+      ],
+      "answer_numeric": 0.1,
+      "answer_unit": "mol",
+      "tolerance": 0.005
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0036",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với HNO3",
+      "type": "dien-so",
+      "statement_vi": "Cho Cu dư vào dung dịch chứa 0,3 mol H⁺ và 0,2 mol NO₃⁻. Tính thể tích khí NO (đktc, sản phẩm khử duy nhất) thu được (lít).",
+      "statement_en": "Add excess Cu to a solution containing 0.3 mol H⁺ and 0.2 mol NO₃⁻. Compute the volume of NO (STP, only reduction product) released (L).",
+      "answer": "1,68",
+      "solution_steps": [
+        {
+          "explain": "Phản ứng ion: 3Cu + 8H⁺ + 2NO₃⁻ → 3Cu²⁺ + 2NO + 4H₂O. So sánh tỉ lệ để tìm chất hết.",
+          "latex": "\\dfrac{n_{H^{+}}}{8} = \\dfrac{0.3}{8} = 0.0375 < \\dfrac{n_{NO_{3}^{-}}}{2} = 0.1"
+        },
+        {
+          "explain": "H⁺ hết trước; số mol NO tính theo H⁺.",
+          "latex": "n_{NO} = \\dfrac{2}{8} n_{H^{+}} = \\dfrac{0.3}{4} = 0.075\\ \\text{mol}"
+        },
+        {
+          "explain": "Thể tích khí ở đktc.",
+          "latex": "V = 0.075 \\times 22.4 = 1.68\\ \\text{L}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-hno3.ion-h-va-no3"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 7,
+      "skills": [
+        "viết phương trình ion H+/NO3-",
+        "xác định chất hết",
+        "tính thể tích khí"
+      ],
+      "tags": [
+        "ion-h-no3",
+        "khi-no"
+      ],
+      "answer_numeric": 1.68,
+      "answer_unit": "L",
+      "tolerance": 0.02
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0037",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với H2SO4 đặc nóng",
+      "type": "dien-so",
+      "statement_vi": "Hoà tan hết 0,2 mol Cu trong H₂SO₄ đặc, nóng, thu được khí SO₂ (sản phẩm khử duy nhất). Tính thể tích SO₂ (đktc, lít); cho biết số mol H₂SO₄ phản ứng.",
+      "statement_en": "Dissolve 0.2 mol Cu in hot concentrated H₂SO₄ giving SO₂ (only reduction product). Compute the SO₂ volume (STP, L); also state moles of H₂SO₄ reacted.",
+      "answer": "4,48",
+      "solution_steps": [
+        {
+          "explain": "Cu nhường 2 electron; SO₂ nhận 2 electron nên n(SO₂) = n(e)/2.",
+          "latex": "n_{e} = 2 n_{Cu} = 0.4 \\Rightarrow n_{SO_{2}} = \\dfrac{n_{e}}{2} = 0.2\\ \\text{mol}"
+        },
+        {
+          "explain": "Thể tích SO₂ ở đktc.",
+          "latex": "V = 0.2 \\times 22.4 = 4.48\\ \\text{L}"
+        },
+        {
+          "explain": "Số mol H₂SO₄ phản ứng bằng 2 lần số mol SO₂ (một nửa tạo muối, một nửa bị khử).",
+          "latex": "n_{H_{2}SO_{4}} = 2 n_{SO_{2}} = 0.4\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-h2so4-dac.so-mol-electron",
+        "chemistry.thpt.kim-loai-h2so4-dac.so-mol-axit"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "bảo toàn electron với SO2",
+        "tính số mol axit đặc phản ứng"
+      ],
+      "tags": [
+        "h2so4-dac",
+        "khi-so2"
+      ],
+      "answer_numeric": 4.48,
+      "answer_unit": "L",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0038",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với axit loãng",
+      "type": "dien-so",
+      "statement_vi": "Cho 0,1 mol Fe tác dụng hết với dung dịch H₂SO₄ loãng dư. Tính khối lượng muối FeSO₄ thu được (gam).",
+      "statement_en": "0.1 mol Fe reacts completely with excess dilute H₂SO₄. Compute the mass of FeSO₄ salt (g).",
+      "answer": "15,2",
+      "solution_steps": [
+        {
+          "explain": "Phản ứng Fe + H₂SO₄ → FeSO₄ + H₂, sinh 0,1 mol H₂.",
+          "latex": "n_{H_{2}} = n_{Fe} = 0.1\\ \\text{mol}"
+        },
+        {
+          "explain": "Khối lượng muối sunfat bằng khối lượng kim loại cộng khối lượng gốc SO₄²⁻ (96 g/mol) tương ứng số mol H₂.",
+          "latex": "m_{muoi} = m_{Fe} + 96 n_{H_{2}} = 5.6 + 96 \\times 0.1 = 15.2\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-axit-loang.h2so4-loang-khoi-luong-muoi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính số mol H2",
+        "tính khối lượng muối sunfat"
+      ],
+      "tags": [
+        "h2so4-loang",
+        "muoi-sunfat"
+      ],
+      "answer_numeric": 15.2,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0039",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với axit loãng",
+      "type": "dien-so",
+      "statement_vi": "Cho Al dư vào dung dịch chứa 0,3 mol HCl và 0,1 mol H₂SO₄ loãng. Tính thể tích khí H₂ (đktc) thu được (lít).",
+      "statement_en": "Add excess Al to a solution of 0.3 mol HCl and 0.1 mol dilute H₂SO₄. Compute the H₂ volume (STP) released (L).",
+      "answer": "5,6",
+      "solution_steps": [
+        {
+          "explain": "Tổng số mol H⁺ từ hai axit; mỗi H₂SO₄ cho 2 H⁺.",
+          "latex": "n_{H^{+}} = n_{HCl} + 2 n_{H_{2}SO_{4}} = 0.3 + 0.2 = 0.5\\ \\text{mol}"
+        },
+        {
+          "explain": "Cứ 2 H⁺ tạo 1 H₂.",
+          "latex": "n_{H_{2}} = \\dfrac{n_{H^{+}}}{2} = 0.25 \\Rightarrow V = 0.25 \\times 22.4 = 5.6\\ \\text{L}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-axit-loang.hon-hop-hai-axit"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính tổng số mol H+",
+        "tính thể tích H2 từ hỗn hợp axit"
+      ],
+      "tags": [
+        "hon-hop-axit",
+        "khi-h2"
+      ],
+      "answer_numeric": 5.6,
+      "answer_unit": "L",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0040",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Oxit kim loại tác dụng với axit",
+      "type": "dien-so",
+      "statement_vi": "Cho 0,1 mol Fe₂O₃ tác dụng vừa đủ với dung dịch HCl. Tính số mol HCl cần dùng; nếu thay bằng H₂SO₄ loãng thì cần bao nhiêu mol H₂SO₄?",
+      "statement_en": "0.1 mol Fe₂O₃ reacts exactly with HCl. Compute the moles of HCl needed; if using dilute H₂SO₄ instead, how many moles?",
+      "answer": "0,6",
+      "solution_steps": [
+        {
+          "explain": "Phản ứng với HCl: Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O.",
+          "latex": "n_{HCl} = 6 n_{Fe_{2}O_{3}} = 6 \\times 0.1 = 0.6\\ \\text{mol}"
+        },
+        {
+          "explain": "Với H₂SO₄ loãng: Fe₂O₃ + 3H₂SO₄ → Fe₂(SO₄)₃ + 3H₂O.",
+          "latex": "n_{H_{2}SO_{4}} = 3 n_{Fe_{2}O_{3}} = 0.3\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.oxit-axit.oxit-tac-dung-hcl",
+        "chemistry.thpt.oxit-axit.oxit-tac-dung-h2so4"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "cân bằng phản ứng oxit với axit",
+        "so sánh HCl và H2SO4"
+      ],
+      "tags": [
+        "oxit-axit",
+        "hcl"
+      ],
+      "answer_numeric": 0.6,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0041",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Khử oxit kim loại",
+      "type": "dien-so",
+      "statement_vi": "Khử hoàn toàn 24 gam CuO bằng khí H₂ dư ở nhiệt độ cao. Tính khối lượng kim loại Cu thu được (gam).",
+      "statement_en": "Completely reduce 24 g of CuO with excess H₂ at high temperature. Compute the mass of Cu metal obtained (g).",
+      "answer": "19,2",
+      "solution_steps": [
+        {
+          "explain": "Số mol CuO = 24/80 = 0,3 mol. Phản ứng khử.",
+          "latex": "CuO + H_{2} \\xrightarrow{t^{o}} Cu + H_{2}O"
+        },
+        {
+          "explain": "Số mol Cu bằng số mol CuO; khối lượng Cu.",
+          "latex": "m_{Cu} = 0.3 \\times 64 = 19.2\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.oxit-axit.khu-oxit-bang-h2",
+        "chemistry.thpt.oxit-axit.khoi-luong-kim-loai-sau-khu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "viết phản ứng khử oxit bằng H2",
+        "tính khối lượng kim loại sau khử"
+      ],
+      "tags": [
+        "khu-oxit",
+        "hidro"
+      ],
+      "answer_numeric": 19.2,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0042",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân bón hóa học",
+      "type": "dien-so",
+      "statement_vi": "Một loại phân lân chứa 62% Ca(H₂PO₄)₂ về khối lượng, còn lại là tạp chất trơ. Tính độ dinh dưỡng (%P₂O₅) của phân (lấy 1 chữ số thập phân). Cho M[Ca(H₂PO₄)₂] = 234, M(P₂O₅) = 142.",
+      "statement_en": "A phosphate fertilizer contains 62% Ca(H₂PO₄)₂ by mass, the rest inert. Compute its nutrient content (%P₂O₅) to 1 decimal. M[Ca(H₂PO₄)₂] = 234, M(P₂O₅) = 142.",
+      "answer": "37,6",
+      "solution_steps": [
+        {
+          "explain": "Mỗi Ca(H₂PO₄)₂ chứa 2 nguyên tử P, quy về 1 phân tử P₂O₅; vậy n(P₂O₅) = n[Ca(H₂PO₄)₂].",
+          "latex": "n_{P_{2}O_{5}} = \\dfrac{n_{P}}{2} = n_{Ca(H_{2}PO_{4})_{2}}"
+        },
+        {
+          "explain": "Xét 100 g phân có 62 g Ca(H₂PO₄)₂; tính khối lượng P₂O₅ tương ứng rồi lấy phần trăm.",
+          "latex": "\\%P_{2}O_{5} = 62 \\times \\dfrac{142}{234} \\approx 37.6\\%"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-bon.do-dinh-duong-lan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "quy đổi P về P2O5",
+        "tính độ dinh dưỡng phân lân"
+      ],
+      "tags": [
+        "phan-lan",
+        "do-dinh-duong"
+      ],
+      "answer_numeric": 37.6,
+      "answer_unit": "%",
+      "tolerance": 0.2
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0043",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân bón hóa học",
+      "type": "dien-so",
+      "statement_vi": "Một loại phân kali chứa 63% KCl về khối lượng, còn lại là tạp chất trơ. Tính độ dinh dưỡng (%K₂O) của phân (lấy 1 chữ số thập phân). Cho M(KCl) = 74,5, M(K₂O) = 94.",
+      "statement_en": "A potash fertilizer contains 63% KCl by mass, the rest inert. Compute its nutrient content (%K₂O) to 1 decimal. M(KCl) = 74.5, M(K₂O) = 94.",
+      "answer": "39,7",
+      "solution_steps": [
+        {
+          "explain": "Hai mol K quy về 1 mol K₂O; số mol K₂O bằng một nửa số mol K (bằng một nửa số mol KCl).",
+          "latex": "n_{K_{2}O} = \\dfrac{n_{K}}{2} = \\dfrac{n_{KCl}}{2}"
+        },
+        {
+          "explain": "Xét 100 g phân có 63 g KCl; tính khối lượng K₂O rồi lấy phần trăm.",
+          "latex": "\\%K_{2}O = 63 \\times \\dfrac{94}{2 \\times 74.5} \\approx 39.7\\%"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-bon.do-dinh-duong-kali"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "quy đổi K về K2O",
+        "tính độ dinh dưỡng phân kali"
+      ],
+      "tags": [
+        "phan-kali",
+        "do-dinh-duong"
+      ],
+      "answer_numeric": 39.7,
+      "answer_unit": "%",
+      "tolerance": 0.2
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0044",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác định công thức chất vô cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho 4,8 gam một kim loại M hoá trị II tác dụng hết với dung dịch HCl dư, thu được 0,2 mol khí H₂. Kim loại M là:",
+      "statement_en": "4.8 g of a divalent metal M reacts completely with excess HCl to give 0.2 mol H₂. Identify M.",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Phản ứng M + 2HCl → MCl₂ + H₂ nên n(M) = n(H₂) = 0,2 mol.",
+          "latex": "n_{M} = n_{H_{2}} = 0.2\\ \\text{mol}"
+        },
+        {
+          "explain": "Khối lượng mol của M bằng khối lượng chia số mol.",
+          "latex": "M = \\dfrac{4.8}{0.2} = 24 \\Rightarrow M\\ \\text{la Mg}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.xac-dinh-cong-thuc.kim-loai-chua-biet"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính số mol kim loại từ H2",
+        "xác định kim loại theo khối lượng mol"
+      ],
+      "tags": [
+        "xac-dinh-kim-loai",
+        "khoi-luong-mol"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ca (M = 40)",
+          "why_wrong": "Với M = 40 thì n(M) = 4,8/40 = 0,12 mol, cho 0,12 mol H₂ chứ không phải 0,2 mol."
+        },
+        {
+          "key": "B",
+          "text": "Mg (M = 24)",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "Zn (M = 65)",
+          "why_wrong": "Với M = 65 thì n(M) ≈ 0,074 mol, không khớp 0,2 mol H₂."
+        },
+        {
+          "key": "D",
+          "text": "Fe (M = 56)",
+          "why_wrong": "Fe cho H₂ tương ứng, nhưng 4,8/56 ≈ 0,086 mol ≠ 0,2 mol; ngoài ra Fe với HCl tạo FeCl₂ cần kiểm tra khối lượng mol = 24 mới đúng."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0045",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác định công thức chất vô cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Một oxit kim loại có công thức M₂O₃, trong đó M chiếm 52,94% khối lượng. Xác định công thức của oxit.",
+      "statement_en": "A metal oxide has formula M₂O₃ in which M accounts for 52.94% by mass. Determine the oxide formula.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Phần trăm khối lượng của M trong M₂O₃ cho phương trình xác định M.",
+          "latex": "\\dfrac{2M}{2M + 48} = 0.5294"
+        },
+        {
+          "explain": "Giải phương trình.",
+          "latex": "2M = 0.5294(2M + 48) \\Rightarrow M = 27 \\Rightarrow Al_{2}O_{3}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.xac-dinh-cong-thuc.oxit-kim-loai"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "lập phương trình theo phần trăm khối lượng",
+        "xác định oxit MxOy"
+      ],
+      "tags": [
+        "oxit-kim-loai",
+        "phan-tram-khoi-luong"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Al₂O₃",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Fe₂O₃",
+          "why_wrong": "Fe có M = 56 cho %Fe = 112/160 = 70%, không phải 52,94%."
+        },
+        {
+          "key": "C",
+          "text": "Cr₂O₃",
+          "why_wrong": "Cr có M = 52 cho %Cr = 104/152 = 68,4%, không khớp."
+        },
+        {
+          "key": "D",
+          "text": "N₂O₃",
+          "why_wrong": "Nitơ không tạo oxit ion dạng M₂O₃ kiểu kim loại; %N = 28/76 = 36,8% cũng không khớp."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0046",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác định công thức chất vô cơ",
+      "type": "dien-so",
+      "statement_vi": "Một muối ngậm nước MgSO₄·nH₂O có khối lượng mol 246 g/mol. Xác định số phân tử nước kết tinh n. Cho M(MgSO₄) = 120.",
+      "statement_en": "A hydrated salt MgSO₄·nH₂O has molar mass 246 g/mol. Find the number of crystallization water molecules n. M(MgSO₄) = 120.",
+      "answer": "7",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng nước kết tinh bằng khối lượng mol muối ngậm nước trừ khối lượng MgSO₄ khan.",
+          "latex": "m_{H_{2}O} = 246 - 120 = 126\\ \\text{g/mol}"
+        },
+        {
+          "explain": "Số phân tử nước bằng khối lượng nước chia 18.",
+          "latex": "n = \\dfrac{126}{18} = 7"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.xac-dinh-cong-thuc.muoi-ngam-nuoc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính khối lượng nước kết tinh",
+        "xác định số phân tử nước"
+      ],
+      "tags": [
+        "muoi-ngam-nuoc",
+        "nuoc-ket-tinh"
+      ],
+      "answer_numeric": 7,
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0047",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với nước",
+      "type": "dien-so",
+      "statement_vi": "Cho 0,2 mol Na vào nước dư. Tính thể tích khí H₂ (đktc) thu được (lít).",
+      "statement_en": "Add 0.2 mol Na to excess water. Compute the volume of H₂ gas (STP) released (L).",
+      "answer": "2,24",
+      "solution_steps": [
+        {
+          "explain": "Kim loại kiềm tác dụng với nước.",
+          "latex": "Na + H_{2}O \\rightarrow NaOH + \\dfrac{1}{2}H_{2}"
+        },
+        {
+          "explain": "Mỗi mol Na sinh 0,5 mol H₂.",
+          "latex": "n_{H_{2}} = 0.5 \\times 0.2 = 0.1 \\Rightarrow V = 0.1 \\times 22.4 = 2.24\\ \\text{L}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-nuoc.kiem-kiem-tho-tac-dung-nuoc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "viết phản ứng kim loại kiềm với nước",
+        "tính thể tích H2"
+      ],
+      "tags": [
+        "kim-loai-kiem",
+        "tac-dung-nuoc"
+      ],
+      "answer_numeric": 2.24,
+      "answer_unit": "L",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0048",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các định luật bảo toàn",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn một hỗn hợp hiđrocacbon thu được 0,3 mol CO₂. Dẫn toàn bộ CO₂ vào dung dịch Ca(OH)₂ dư. Tính khối lượng kết tủa CaCO₃ (gam).",
+      "statement_en": "Complete combustion of a hydrocarbon mixture gives 0.3 mol CO₂. Pass all CO₂ into excess Ca(OH)₂. Compute the mass of CaCO₃ precipitate (g).",
+      "answer": "30",
+      "solution_steps": [
+        {
+          "explain": "Bảo toàn nguyên tố C: toàn bộ C trong CO₂ chuyển vào CaCO₃ khi Ca(OH)₂ dư.",
+          "latex": "n_{CaCO_{3}} = n_{CO_{2}} = 0.3\\ \\text{mol}"
+        },
+        {
+          "explain": "Khối lượng kết tủa.",
+          "latex": "m = 0.3 \\times 100 = 30\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.bao-toan.nguyen-to"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng bảo toàn nguyên tố carbon"
+      ],
+      "tags": [
+        "bao-toan-nguyen-to",
+        "ket-tua-caco3"
+      ],
+      "answer_numeric": 30,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0049",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Kim loại tác dụng với dung dịch muối",
+      "type": "dien-so",
+      "statement_vi": "Nhúng một thanh Fe vào dung dịch CuSO₄. Sau phản ứng, khối lượng thanh kim loại tăng thêm 0,8 gam. Tính khối lượng Cu đã bám vào thanh (gam).",
+      "statement_en": "Immerse an Fe bar in CuSO₄ solution. After reaction the bar mass increases by 0.8 g. Compute the mass of Cu deposited on the bar (g).",
+      "answer": "6,4",
+      "solution_steps": [
+        {
+          "explain": "Phản ứng Fe + Cu²⁺ → Fe²⁺ + Cu; mỗi mol Fe (56) tan ra và mỗi mol Cu (64) bám vào nên độ tăng khối lượng là (64−56) mỗi mol.",
+          "latex": "\\Delta m = (64 - 56) n = 8n = 0.8 \\Rightarrow n = 0.1\\ \\text{mol}"
+        },
+        {
+          "explain": "Khối lượng Cu bám vào.",
+          "latex": "m_{Cu} = 0.1 \\times 64 = 6.4\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.kim-loai-muoi.tang-giam-khoi-luong"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "phương pháp tăng giảm khối lượng",
+        "tính khối lượng kim loại bám vào"
+      ],
+      "tags": [
+        "tang-giam-khoi-luong",
+        "kim-loai-muoi"
+      ],
+      "answer_numeric": 6.4,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0050",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các định luật bảo toàn",
+      "type": "dien-so",
+      "statement_vi": "Cô cạn dung dịch chứa 0,2 mol Na⁺; 0,1 mol Cl⁻ và 0,05 mol SO₄²⁻. Tính khối lượng muối khan thu được (gam).",
+      "statement_en": "Evaporate a solution containing 0.2 mol Na⁺, 0.1 mol Cl⁻ and 0.05 mol SO₄²⁻. Compute the mass of dry salt (g).",
+      "answer": "12,95",
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra bảo toàn điện tích: tổng điện tích dương bằng tổng điện tích âm (0,2 = 0,1 + 0,1).",
+          "latex": "n_{Na^{+}} = n_{Cl^{-}} + 2n_{SO_{4}^{2-}} = 0.2"
+        },
+        {
+          "explain": "Khối lượng muối khan bằng tổng khối lượng các ion.",
+          "latex": "m = 0.2 \\times 23 + 0.1 \\times 35.5 + 0.05 \\times 96 = 12.95\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.bao-toan.khoi-luong-muoi-khan"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 6,
+      "skills": [
+        "kiểm tra bảo toàn điện tích",
+        "tính khối lượng muối khan từ ion"
+      ],
+      "tags": [
+        "muoi-khan",
+        "bao-toan-dien-tich"
+      ],
+      "answer_numeric": 12.95,
+      "answer_unit": "g",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0051",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đại cương",
+      "type": "dien-so",
+      "statement_vi": "Điều chế một chất D qua hai giai đoạn liên tiếp có hiệu suất lần lượt 90% và 80%, xuất phát từ 100 mol chất A (mỗi giai đoạn theo tỉ lệ 1:1). Tính số mol D thu được.",
+      "statement_en": "A compound D is made in two consecutive steps of yields 90% and 80% from 100 mol of A (each step 1:1). Compute the moles of D obtained.",
+      "answer": "72",
+      "solution_steps": [
+        {
+          "explain": "Hiệu suất của quá trình nhiều giai đoạn bằng tích các hiệu suất từng giai đoạn.",
+          "latex": "H = H_{1} \\cdot H_{2} = 0.9 \\times 0.8 = 0.72"
+        },
+        {
+          "explain": "Số mol D bằng số mol A ban đầu nhân hiệu suất tổng.",
+          "latex": "n_{D} = 100 \\times 0.72 = 72\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dai-cuong.hieu-suat-phan-ung",
+        "chemistry.thpt.bao-toan.hieu-suat-nhieu-giai-doan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "nhân hiệu suất nhiều giai đoạn",
+        "tính lượng sản phẩm theo hiệu suất"
+      ],
+      "tags": [
+        "hieu-suat",
+        "nhieu-giai-doan"
+      ],
+      "answer_numeric": 72,
+      "answer_unit": "mol",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0052",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sắt và hợp chất",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho bột Fe tác dụng với dung dịch HNO₃. Nhận định nào đúng về sản phẩm muối sắt tạo thành?",
+      "statement_en": "Iron powder reacts with HNO₃ solution. Which statement about the iron salt formed is correct?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Nếu HNO₃ dư (Fe hết), Fe bị oxi hoá lên mức cao nhất tạo muối Fe(III).",
+          "latex": "Fe \\xrightarrow{HNO_{3}\\ du} Fe^{3+}"
+        },
+        {
+          "explain": "Nếu Fe dư sau phản ứng, Fe còn lại khử Fe³⁺ về Fe²⁺ nên thu muối Fe(II).",
+          "latex": "Fe + 2Fe^{3+} \\rightarrow 3Fe^{2+}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.sat.fe-tac-dung-hno3"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "biện luận Fe(II)/Fe(III) theo lượng chất dư"
+      ],
+      "tags": [
+        "sat-hno3",
+        "muoi-sat"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Luôn tạo muối Fe(II) trong mọi trường hợp",
+          "why_wrong": "Chỉ đúng khi Fe dư; khi HNO₃ dư sẽ tạo Fe(III)."
+        },
+        {
+          "key": "B",
+          "text": "Luôn tạo muối Fe(III) trong mọi trường hợp",
+          "why_wrong": "Chỉ đúng khi HNO₃ dư; khi Fe dư, Fe khử Fe³⁺ về Fe²⁺."
+        },
+        {
+          "key": "C",
+          "text": "HNO₃ dư tạo Fe(III); Fe dư tạo Fe(II)",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "Chỉ tạo hỗn hợp Fe(II) và Fe(III) với tỉ lệ cố định",
+          "why_wrong": "Tỉ lệ muối phụ thuộc lượng chất dư, không cố định; ở hai thái cực chỉ thu một loại muối."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0053",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Công thức tổng quát các dãy đồng đẳng",
+      "type": "dien-so",
+      "statement_vi": "Một ankan có 5 nguyên tử carbon trong phân tử. Viết công thức phân tử và cho biết số đồng phân cấu tạo của ankan đó.",
+      "statement_en": "An alkane has 5 carbon atoms per molecule. Give its molecular formula and the number of structural (constitutional) isomers.",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Ankan có công thức tổng quát CₙH₂ₙ₊₂; với n = 5 ta có C₅H₁₂.",
+          "latex": "C_{n}H_{2n+2},\\ n = 5 \\Rightarrow C_{5}H_{12}"
+        },
+        {
+          "explain": "C₅H₁₂ có 3 đồng phân cấu tạo: pentan, isopentan (2-metylbutan), neopentan (2,2-đimetylpropan).",
+          "latex": "\\text{so dong phan} = 3"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cttq.ankan",
+        "chemistry.thpt.dong-phan.ankan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "viết công thức tổng quát ankan",
+        "đếm đồng phân cấu tạo ankan"
+      ],
+      "tags": [
+        "ankan",
+        "dong-phan"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0054",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn 0,1 mol một anken (mạch hở) thu được 0,3 mol CO₂. Xác định số nguyên tử carbon trong phân tử anken.",
+      "statement_en": "Complete combustion of 0.1 mol of an (open-chain) alkene gives 0.3 mol CO₂. Find the number of carbon atoms per molecule.",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Anken có công thức CₙH₂ₙ; số nguyên tử C bằng số mol CO₂ chia số mol anken.",
+          "latex": "n = \\dfrac{n_{CO_{2}}}{n_{anken}} = \\dfrac{0.3}{0.1} = 3"
+        },
+        {
+          "explain": "Vậy anken là C₃H₆ (propen); khi đốt anken luôn có n(CO₂) = n(H₂O) = 0,3 mol.",
+          "latex": "C_{3}H_{6},\\ n_{H_{2}O} = n_{CO_{2}} = 0.3\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cttq.anken",
+        "chemistry.thpt.dot-chay.anken"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "xác định số C của anken",
+        "đặc điểm đốt cháy anken"
+      ],
+      "tags": [
+        "anken",
+        "dot-chay"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0055",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn 0,1 mol một ankin (mạch hở) thu được 0,4 mol CO₂. Tính số mol H₂O tạo thành.",
+      "statement_en": "Complete combustion of 0.1 mol of an (open-chain) alkyne gives 0.4 mol CO₂. Compute the moles of H₂O formed.",
+      "answer": "0,3",
+      "solution_steps": [
+        {
+          "explain": "Ankin CₙH₂ₙ₋₂ khi đốt cho hiệu số mol: n(CO₂) − n(H₂O) = n(ankin).",
+          "latex": "n_{CO_{2}} - n_{H_{2}O} = n_{ankin} = 0.1"
+        },
+        {
+          "explain": "Suy ra số mol nước.",
+          "latex": "n_{H_{2}O} = 0.4 - 0.1 = 0.3\\ \\text{mol}\\quad (\\text{ankin la } C_{4}H_{6})"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cttq.ankin",
+        "chemistry.thpt.dot-chay.ankin-ankadien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "đặc điểm đốt cháy ankin/ankađien",
+        "tính số mol nước"
+      ],
+      "tags": [
+        "ankin",
+        "dot-chay"
+      ],
+      "answer_numeric": 0.3,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0056",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Tính số mol O₂ cần dùng để đốt cháy hoàn toàn 0,1 mol propan (C₃H₈).",
+      "statement_en": "Compute the moles of O₂ needed to completely combust 0.1 mol of propane (C₃H₈).",
+      "answer": "0,5",
+      "solution_steps": [
+        {
+          "explain": "Đốt 0,1 mol C₃H₈ sinh 0,3 mol CO₂ và 0,4 mol H₂O.",
+          "latex": "n_{CO_{2}} = 0.3,\\quad n_{H_{2}O} = 0.4"
+        },
+        {
+          "explain": "Số mol O₂ tính theo bảo toàn oxi (số mol O₂ = n(CO₂) + n(H₂O)/2).",
+          "latex": "n_{O_{2}} = n_{CO_{2}} + \\dfrac{n_{H_{2}O}}{2} = 0.3 + 0.2 = 0.5\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.so-mol-o2-hidrocacbon"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính sản phẩm cháy",
+        "tính O2 theo bảo toàn oxi"
+      ],
+      "tags": [
+        "dot-chay",
+        "so-mol-o2"
+      ],
+      "answer_numeric": 0.5,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0057",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Tính số mol O₂ cần dùng để đốt cháy hoàn toàn 0,1 mol ethanol (C₂H₅OH).",
+      "statement_en": "Compute the moles of O₂ needed to completely combust 0.1 mol of ethanol (C₂H₅OH).",
+      "answer": "0,3",
+      "solution_steps": [
+        {
+          "explain": "Phương trình cháy của ancol no đơn chức C₂H₆O.",
+          "latex": "C_{2}H_{6}O + 3O_{2} \\rightarrow 2CO_{2} + 3H_{2}O"
+        },
+        {
+          "explain": "Mỗi mol ethanol cần 3 mol O₂.",
+          "latex": "n_{O_{2}} = 3 \\times 0.1 = 0.3\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.ancol-no-don-chuc-o2"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "viết phương trình cháy ancol",
+        "tính số mol O2"
+      ],
+      "tags": [
+        "ancol",
+        "dot-chay"
+      ],
+      "answer_numeric": 0.3,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0058",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Đốt cháy hoàn toàn 0,2 mol hỗn hợp hiđrocacbon thu được 0,3 mol CO₂ và 0,4 mol H₂O. Dẫn toàn bộ sản phẩm cháy qua bình đựng H₂SO₄ đặc. Tính độ tăng khối lượng của bình (gam).",
+      "statement_en": "Complete combustion of 0.2 mol of a hydrocarbon mixture gives 0.3 mol CO₂ and 0.4 mol H₂O. Pass all products through a concentrated H₂SO₄ flask. Compute the mass increase of the flask (g).",
+      "answer": "7,2",
+      "solution_steps": [
+        {
+          "explain": "Bình H₂SO₄ đặc chỉ hấp thụ hơi nước; độ tăng khối lượng bằng khối lượng H₂O.",
+          "latex": "\\Delta m = 18 n_{H_{2}O} = 18 \\times 0.4 = 7.2\\ \\text{g}"
+        },
+        {
+          "explain": "Ngoài ra số nguyên tử H trung bình của hỗn hợp là 2n(H₂O)/n(hh) = 4.",
+          "latex": "\\overline{H} = \\dfrac{2 n_{H_{2}O}}{n_{hh}} = \\dfrac{2 \\times 0.4}{0.2} = 4"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dot-chay.khoi-luong-binh-hap-thu",
+        "chemistry.thpt.dot-chay.so-h-trung-binh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính độ tăng khối lượng bình hấp thụ",
+        "tính số H trung bình"
+      ],
+      "tags": [
+        "binh-hap-thu",
+        "so-h-trung-binh"
+      ],
+      "answer_numeric": 7.2,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0059",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Thực hiện phản ứng este hoá từ 1 mol CH₃COOH và 1 mol C₂H₅OH. Khi đạt cân bằng thu được 2/3 mol este. Tính hằng số cân bằng K_C của phản ứng este hoá.",
+      "statement_en": "Esterification starts from 1 mol CH₃COOH and 1 mol C₂H₅OH. At equilibrium 2/3 mol ester forms. Compute the equilibrium constant K_C.",
+      "answer": "4",
+      "solution_steps": [
+        {
+          "explain": "Ở cân bằng: este = nước = 2/3 mol; acid = ancol = 1 − 2/3 = 1/3 mol (thể tích chung nên dùng luôn số mol).",
+          "latex": "[este] = [H_{2}O] = \\dfrac{2}{3},\\quad [acid] = [ancol] = \\dfrac{1}{3}"
+        },
+        {
+          "explain": "Hằng số cân bằng của phản ứng este hoá.",
+          "latex": "K_{C} = \\dfrac{[este][H_{2}O]}{[acid][ancol]} = \\dfrac{(2/3)^{2}}{(1/3)^{2}} = 4"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.este-hoa",
+        "chemistry.thpt.phan-ung.hang-so-can-bang-este-hoa"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 6,
+      "skills": [
+        "thiết lập bảng cân bằng este hoá",
+        "tính hằng số cân bằng"
+      ],
+      "tags": [
+        "este-hoa",
+        "hang-so-can-bang"
+      ],
+      "answer_numeric": 4,
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0060",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+      "type": "dien-so",
+      "statement_vi": "Cho 0,1 mol acetylene (C₂H₂) phản ứng cộng hoàn toàn với dung dịch Br₂. Tính số mol Br₂ tối đa đã phản ứng.",
+      "statement_en": "React 0.1 mol acetylene (C₂H₂) completely by addition with Br₂. Compute the maximum moles of Br₂ reacted.",
+      "answer": "0,2",
+      "solution_steps": [
+        {
+          "explain": "Acetylene có 2 liên kết π (k = 2); số mol liên kết π bằng k nhân số mol chất.",
+          "latex": "n_{\\pi} = k \\cdot n_{X} = 2 \\times 0.1 = 0.2\\ \\text{mol}"
+        },
+        {
+          "explain": "Bảo toàn liên kết π trong phản ứng cộng: mỗi liên kết π cộng 1 phân tử Br₂.",
+          "latex": "n_{Br_{2}} = n_{\\pi} = 0.2\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.phan-ung.so-mol-lien-ket-pi",
+        "chemistry.thpt.bao-toan.bao-toan-lien-ket-pi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính số mol liên kết pi",
+        "bảo toàn liên kết pi khi cộng Br2"
+      ],
+      "tags": [
+        "lien-ket-pi",
+        "cong-brom"
+      ],
+      "answer_numeric": 0.2,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0061",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Este và chất béo",
+      "type": "dien-so",
+      "statement_vi": "Hiđro hoá hoàn toàn 0,1 mol triolein (C₁₇H₃₃COO)₃C₃H₅ thành tristearin. Tính số mol H₂ cần dùng.",
+      "statement_en": "Completely hydrogenate 0.1 mol triolein (C₁₇H₃₃COO)₃C₃H₅ to tristearin. Compute the moles of H₂ needed.",
+      "answer": "0,3",
+      "solution_steps": [
+        {
+          "explain": "Chất béo triolein có 3 liên kết C=C (một ở mỗi gốc oleat); mỗi liên kết đôi cộng 1 phân tử H₂.",
+          "latex": "(C_{17}H_{33}COO)_{3}C_{3}H_{5} + 3H_{2} \\rightarrow (C_{17}H_{35}COO)_{3}C_{3}H_{5}"
+        },
+        {
+          "explain": "Số mol H₂ bằng 3 lần số mol triolein.",
+          "latex": "n_{H_{2}} = 3 \\times 0.1 = 0.3\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.chat-beo.hidro-hoa",
+        "chemistry.thpt.cttq.chat-beo"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhận biết liên kết đôi trong chất béo",
+        "tính H2 hiđro hoá chất béo"
+      ],
+      "tags": [
+        "chat-beo",
+        "hidro-hoa"
+      ],
+      "answer_numeric": 0.3,
+      "answer_unit": "mol",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0062",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cacbohiđrat",
+      "type": "dien-so",
+      "statement_vi": "Thuỷ phân hoàn toàn 16,2 gam tinh bột (mắt xích C₆H₁₀O₅, M = 162). Tính khối lượng glucozơ thu được (gam).",
+      "statement_en": "Completely hydrolyze 16.2 g of starch (repeating unit C₆H₁₀O₅, M = 162). Compute the mass of glucose obtained (g).",
+      "answer": "18",
+      "solution_steps": [
+        {
+          "explain": "Mỗi mắt xích C₆H₁₀O₅ cho 1 phân tử glucozơ khi thuỷ phân; số mol mắt xích = 16,2/162 = 0,1 mol.",
+          "latex": "(C_{6}H_{10}O_{5})_{n} + nH_{2}O \\rightarrow nC_{6}H_{12}O_{6}"
+        },
+        {
+          "explain": "Khối lượng glucozơ (M = 180).",
+          "latex": "m = 0.1 \\times 180 = 18\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cacbohidrat.thuy-phan-tinh-bot"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "viết phản ứng thuỷ phân tinh bột",
+        "tính khối lượng glucozơ"
+      ],
+      "tags": [
+        "tinh-bot",
+        "glucozo"
+      ],
+      "answer_numeric": 18,
+      "answer_unit": "g",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0063",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Cacbohiđrat",
+      "type": "dien-so",
+      "statement_vi": "Một phân tử tinh bột có khối lượng mol trung bình 162000 g/mol. Tính số mắt xích glucozơ (C₆H₁₀O₅, M = 162) trong phân tử.",
+      "statement_en": "A starch molecule has average molar mass 162000 g/mol. Compute the number of glucose units (C₆H₁₀O₅, M = 162).",
+      "answer": "1000",
+      "solution_steps": [
+        {
+          "explain": "Số mắt xích bằng khối lượng mol polime chia khối lượng mol một mắt xích.",
+          "latex": "n = \\dfrac{M_{polime}}{M_{mat\\ xich}} = \\dfrac{162000}{162}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "n = 1000"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cacbohidrat.so-mat-xich-polisaccarit"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính số mắt xích polisaccarit"
+      ],
+      "tags": [
+        "so-mat-xich",
+        "tinh-bot"
+      ],
+      "answer_numeric": 1000,
+      "tolerance": 1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0064",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "dien-so",
+      "statement_vi": "Cho 0,1 mol metylamin (CH₃NH₂) tác dụng vừa đủ với dung dịch HCl. Tính khối lượng muối thu được (gam).",
+      "statement_en": "React 0.1 mol methylamine (CH₃NH₂) exactly with HCl. Compute the mass of salt formed (g).",
+      "answer": "6,75",
+      "solution_steps": [
+        {
+          "explain": "Amin đơn chức phản ứng với HCl theo tỉ lệ 1:1 tạo muối; n(HCl) = 0,1 mol.",
+          "latex": "CH_{3}NH_{2} + HCl \\rightarrow CH_{3}NH_{3}Cl"
+        },
+        {
+          "explain": "Bảo toàn khối lượng: khối lượng muối bằng khối lượng amin cộng khối lượng HCl.",
+          "latex": "m_{muoi} = 0.1 \\times 31 + 0.1 \\times 36.5 = 6.75\\ \\text{g}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.amin.tac-dung-hcl"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "viết phản ứng amin với HCl",
+        "bảo toàn khối lượng tính muối"
+      ],
+      "tags": [
+        "amin",
+        "muoi-amoni"
+      ],
+      "answer_numeric": 6.75,
+      "answer_unit": "g",
+      "tolerance": 0.05
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0065",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu tripeptit tối đa tạo thành từ 2 loại amino axit khác nhau (mỗi tripeptit gồm 3 gốc, có thứ tự, các gốc có thể lặp lại)?",
+      "statement_en": "How many tripeptides at most can be formed from 2 different amino acids (each tripeptide has 3 ordered residues, repeats allowed)?",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Số k-peptit tạo từ n loại amino axit (có thứ tự, cho lặp) bằng n mũ k.",
+          "latex": "\\text{so k-peptit} = n^{k}"
+        },
+        {
+          "explain": "Với n = 2, k = 3.",
+          "latex": "2^{3} = 8"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.peptit.so-dipeptit-tripeptit"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "đếm số peptit tối đa theo công thức lũy thừa"
+      ],
+      "tags": [
+        "peptit",
+        "to-hop"
+      ],
+      "answer_numeric": 8,
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0066",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Amin, amino axit và peptit",
+      "type": "dien-so",
+      "statement_vi": "Tính khối lượng mol của tripeptit Gly-Ala-Val. Cho M(Gly) = 75, M(Ala) = 89, M(Val) = 117.",
+      "statement_en": "Compute the molar mass of the tripeptide Gly-Ala-Val. M(Gly) = 75, M(Ala) = 89, M(Val) = 117.",
+      "answer": "245",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng mol peptit bằng tổng khối lượng mol các amino axit trừ khối lượng nước tách ra khi tạo liên kết peptit; tripeptit có 2 liên kết peptit.",
+          "latex": "M_{peptit} = \\sum M_{aa} - 18(n-1)"
+        },
+        {
+          "explain": "Thay số với n = 3.",
+          "latex": "M = (75 + 89 + 117) - 18 \\times 2 = 281 - 36 = 245"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cttq.peptit"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính khối lượng mol peptit",
+        "trừ nước theo số liên kết peptit"
+      ],
+      "tags": [
+        "peptit",
+        "khoi-luong-mol"
+      ],
+      "answer_numeric": 245,
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0067",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Polime và vật liệu polime",
+      "type": "dien-so",
+      "statement_vi": "Poli(vinyl chloride) (PVC) có mắt xích –CH₂–CHCl– (C₂H₃Cl, M = 62,5). Tính phần trăm khối lượng chlorine trong PVC (lấy 1 chữ số thập phân).",
+      "statement_en": "PVC has repeating unit –CH₂–CHCl– (C₂H₃Cl, M = 62.5). Compute the mass percent of chlorine in PVC (1 decimal).",
+      "answer": "56,8",
+      "solution_steps": [
+        {
+          "explain": "Trong mỗi mắt xích có 1 nguyên tử Cl (35,5); phần trăm khối lượng nguyên tố tính trên khối lượng mắt xích.",
+          "latex": "\\%Cl = \\dfrac{35.5}{62.5} \\times 100\\%"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "\\%Cl \\approx 56.8\\%"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.polime.phan-tram-nguyen-to"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính phần trăm khối lượng nguyên tố trong polime"
+      ],
+      "tags": [
+        "polime",
+        "pvc"
+      ],
+      "answer_numeric": 56.8,
+      "answer_unit": "%",
+      "tolerance": 0.2
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0068",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Polime và vật liệu polime",
+      "type": "dien-so",
+      "statement_vi": "Tính số mắt xích có trong 1 gam polietilen (PE), biết mắt xích là –CH₂–CH₂– (M = 28) và N_A = 6,022×10²³.",
+      "statement_en": "Compute the number of monomer units in 1 g of polyethylene (PE), unit –CH₂–CH₂– (M = 28), N_A = 6.022×10²³.",
+      "answer": "2,15×10²²",
+      "solution_steps": [
+        {
+          "explain": "Số mắt xích bằng số mol mắt xích nhân số Avogadro; số mol mắt xích = khối lượng chia khối lượng mắt xích.",
+          "latex": "N_{mat\\ xich} = \\dfrac{m}{M_{mat\\ xich}} \\cdot N_{A}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "N = \\dfrac{1}{28} \\times 6.022 \\times 10^{23} \\approx 2.15 \\times 10^{22}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.polime.so-mat-xich-theo-avogadro"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính số mắt xích theo số Avogadro"
+      ],
+      "tags": [
+        "polime",
+        "so-mat-xich"
+      ],
+      "answer_numeric": 2.15e+22,
+      "tolerance": 1e+20
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0069",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đếm đồng phân hợp chất hữu cơ",
+      "type": "trac-nghiem",
+      "statement_vi": "Số trieste tối đa tạo thành khi cho glixerol phản ứng với 2 axit béo khác nhau là:",
+      "statement_en": "The maximum number of triesters formed from glycerol and 2 different fatty acids is:",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Số trieste tạo từ glixerol và n axit béo tính theo công thức tổ hợp có xét vị trí.",
+          "latex": "S = \\dfrac{n^{2}(n+1)}{2}"
+        },
+        {
+          "explain": "Thay n = 2.",
+          "latex": "S = \\dfrac{2^{2}(2+1)}{2} = \\dfrac{4 \\times 3}{2} = 6"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dong-phan.trieste-glixerol"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "đếm số trieste của glixerol"
+      ],
+      "tags": [
+        "trieste",
+        "glixerol"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3",
+          "why_wrong": "Bỏ sót các trieste có 2 hoặc 3 gốc khác nhau và các đồng phân vị trí; công thức cho 6."
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "8",
+          "why_wrong": "Dùng n³ = 8 (đếm như peptit có thứ tự đầy đủ) là sai vì hai vị trí ngoài của glixerol đối xứng nhau."
+        },
+        {
+          "key": "D",
+          "text": "4",
+          "why_wrong": "Chỉ đếm 4 tổ hợp gốc mà quên đồng phân vị trí của các gốc khác nhau trên khung glixerol."
+        }
+      ]
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0070",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "ib"
+      ],
+      "topic": "Định lượng hoá học theo quy ước quốc tế",
+      "type": "dien-so",
+      "statement_vi": "Theo định nghĩa STP hiện hành của IUPAC (0°C, 10⁵ Pa), thể tích mol khí là 22,7 dm³/mol. Tính số mol của 0,454 dm³ khí ở STP.",
+      "statement_en": "By the current IUPAC STP (0°C, 10⁵ Pa), the molar gas volume is 22.7 dm³/mol. Compute the moles in 0.454 dm³ of gas at STP.",
+      "answer": "0,02",
+      "solution_steps": [
+        {
+          "explain": "Số mol khí bằng thể tích chia thể tích mol ở STP.",
+          "latex": "n = \\dfrac{V}{V_{m}} = \\dfrac{V}{22.7}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "n = \\dfrac{0.454}{22.7} = 0.02\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dinh-luong-quoc-te.the-tich-mol-stp-iupac"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dùng thể tích mol khí ở STP (IUPAC)"
+      ],
+      "tags": [
+        "stp",
+        "the-tich-mol"
+      ],
+      "answer_numeric": 0.02,
+      "answer_unit": "mol",
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0071",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "a-level"
+      ],
+      "topic": "Định lượng hoá học theo quy ước quốc tế",
+      "type": "dien-so",
+      "statement_vi": "Trong chương trình A-Level, ở điều kiện phòng (r.t.p.) thể tích mol khí là 24,0 dm³/mol. Tính số mol của 1,2 dm³ khí ở r.t.p.",
+      "statement_en": "In A-Level, at room conditions (r.t.p.) the molar gas volume is 24.0 dm³/mol. Compute the moles in 1.2 dm³ of gas at r.t.p.",
+      "answer": "0,05",
+      "solution_steps": [
+        {
+          "explain": "Số mol bằng thể tích chia thể tích mol ở r.t.p.",
+          "latex": "n = \\dfrac{V}{24.0}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "n = \\dfrac{1.2}{24.0} = 0.05\\ \\text{mol}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dinh-luong-quoc-te.the-tich-mol-rtp"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dùng thể tích mol khí ở r.t.p. (A-Level)"
+      ],
+      "tags": [
+        "rtp",
+        "the-tich-mol"
+      ],
+      "answer_numeric": 0.05,
+      "answer_unit": "mol",
+      "tolerance": 0.002
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0072",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "a-level"
+      ],
+      "topic": "Entropy và năng lượng Gibbs bậc THPT",
+      "type": "dien-so",
+      "statement_vi": "Phản ứng tổng hợp amoniac có ΔH = −92 kJ, tiến hành ở 298 K. Tính biến thiên entropy của môi trường ΔS_surr (J/K, lấy 1 chữ số thập phân).",
+      "statement_en": "Ammonia synthesis has ΔH = −92 kJ at 298 K. Compute the entropy change of the surroundings ΔS_surr (J/K, 1 decimal).",
+      "answer": "308,7",
+      "solution_steps": [
+        {
+          "explain": "Biến thiên entropy của môi trường bằng trừ enthalpy hệ chia nhiệt độ (dùng J).",
+          "latex": "\\Delta S_{surr} = -\\dfrac{\\Delta H_{sys}}{T} = -\\dfrac{-92000}{298}"
+        },
+        {
+          "explain": "Tính kết quả (dương vì phản ứng toả nhiệt làm môi trường tăng entropy).",
+          "latex": "\\Delta S_{surr} \\approx 308.7\\ \\text{J/K}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nhiet-dong-thpt.entropy-moi-truong",
+        "chemistry.thpt.nhiet-dong-thpt.entropy-tong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính entropy môi trường",
+        "liên hệ dấu entropy với nhiệt phản ứng"
+      ],
+      "tags": [
+        "entropy",
+        "moi-truong"
+      ],
+      "answer_numeric": 308.7,
+      "answer_unit": "J/K",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0073",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "a-level",
+        "ap",
+        "ib"
+      ],
+      "topic": "Entropy và năng lượng Gibbs bậc THPT",
+      "type": "dien-so",
+      "statement_vi": "Một phản ứng ở 298 K có biến thiên entropy tổng ΔS_total = +150 J/K. Tính biến thiên năng lượng Gibbs ΔG của phản ứng (kJ).",
+      "statement_en": "A reaction at 298 K has total entropy change ΔS_total = +150 J/K. Compute the Gibbs free energy change ΔG (kJ).",
+      "answer": "-44,7",
+      "solution_steps": [
+        {
+          "explain": "Quan hệ giữa năng lượng Gibbs và entropy tổng.",
+          "latex": "\\Delta G = -T \\Delta S_{total}"
+        },
+        {
+          "explain": "Thay số (đổi J sang kJ).",
+          "latex": "\\Delta G = -298 \\times 150 = -44700\\ \\text{J} = -44.7\\ \\text{kJ}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.nhiet-dong-thpt.gibbs-va-entropy-tong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "liên hệ Gibbs và entropy tổng",
+        "đánh giá tính tự diễn biến"
+      ],
+      "tags": [
+        "gibbs",
+        "entropy-tong"
+      ],
+      "answer_numeric": -44.7,
+      "answer_unit": "kJ",
+      "tolerance": 0.2
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0074",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "ap"
+      ],
+      "topic": "Động học phản ứng bậc THPT quốc tế",
+      "type": "dien-so",
+      "statement_vi": "Một phản ứng bậc 0 có hằng số tốc độ k = 0,02 mol/(L·s) và nồng độ đầu [A]₀ = 0,5 mol/L. Tính thời gian bán huỷ t½ (giây).",
+      "statement_en": "A zero-order reaction has rate constant k = 0.02 mol/(L·s) and initial concentration [A]₀ = 0.5 mol/L. Compute the half-life t½ (s).",
+      "answer": "12,5",
+      "solution_steps": [
+        {
+          "explain": "Thời gian bán huỷ của phản ứng bậc 0 tỉ lệ thuận với nồng độ đầu.",
+          "latex": "t_{1/2} = \\dfrac{[A]_{0}}{2k}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "t_{1/2} = \\dfrac{0.5}{2 \\times 0.02} = 12.5\\ \\text{s}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.dong-hoc-tich-phan.ban-huy-bac-khong",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-khong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng công thức bán huỷ bậc 0",
+        "phân biệt động học bậc 0"
+      ],
+      "tags": [
+        "dong-hoc",
+        "bac-khong"
+      ],
+      "answer_numeric": 12.5,
+      "answer_unit": "s",
+      "tolerance": 0.1
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0075",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "a-level"
+      ],
+      "topic": "Phương pháp phổ và phân tích công cụ",
+      "type": "dien-so",
+      "statement_vi": "Trên bản sắc kí lớp mỏng, một chất di chuyển được 4,5 cm trong khi dung môi di chuyển 6,0 cm tính từ vạch xuất phát. Tính hệ số lưu giữ R_f của chất.",
+      "statement_en": "On a TLC plate, a substance travels 4.5 cm while the solvent front travels 6.0 cm from the origin. Compute the retention factor R_f.",
+      "answer": "0,75",
+      "solution_steps": [
+        {
+          "explain": "Hệ số lưu giữ bằng quãng đường chất chia quãng đường dung môi (cùng gốc).",
+          "latex": "R_{f} = \\dfrac{d_{chat}}{d_{dung\\ moi}}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "R_{f} = \\dfrac{4.5}{6.0} = 0.75"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.pho-phan-tich.he-so-luu-giu-rf"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính hệ số lưu giữ Rf trong sắc kí"
+      ],
+      "tags": [
+        "sac-ki",
+        "rf"
+      ],
+      "answer_numeric": 0.75,
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.chemistry.ext-chemistry-thpt.0076",
+      "subject": "chemistry",
+      "level": "thpt",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "curriculum": [
+        "ib",
+        "a-level"
+      ],
+      "topic": "Cấu tạo nguyên tử và liên kết theo chương trình quốc tế",
+      "type": "trac-nghiem",
+      "statement_vi": "Cấu hình electron nào sau đây là đúng cho nguyên tử chromium (Cr, Z = 24), một ngoại lệ của quy tắc điền electron?",
+      "statement_en": "Which electron configuration is correct for a chromium atom (Cr, Z = 24), an exception to the filling rules?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Cr có xu hướng đạt phân lớp 3d bán bão hoà bền vững nên một electron 4s chuyển sang 3d.",
+          "latex": "[Ar]3d^{5}4s^{1}"
+        },
+        {
+          "explain": "Cấu hình bão hoà một nửa (3d⁵) và 4s¹ bền hơn cấu hình 3d⁴ 4s² dự đoán theo quy tắc thông thường.",
+          "latex": "3d^{5}4s^{1}\\ \\text{ben hon}\\ 3d^{4}4s^{2}"
+        }
+      ],
+      "formulas_used": [
+        "chemistry.thpt.cau-tao-quoc-te.cau-hinh-electron-ngoai-le"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhận biết ngoại lệ cấu hình electron",
+        "giải thích bằng bán bão hoà"
+      ],
+      "tags": [
+        "cau-hinh-electron",
+        "ngoai-le"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "[Ar]3d⁴ 4s²",
+          "why_wrong": "Đây là cấu hình dự đoán theo quy tắc thông thường, nhưng Cr là ngoại lệ nên không đúng thực tế."
+        },
+        {
+          "key": "B",
+          "text": "[Ar]3d⁵ 4s¹",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "[Ar]3d⁶",
+          "why_wrong": "Sai tổng số electron và bỏ mất phân lớp 4s; Cr có 24 electron với 4s¹."
+        },
+        {
+          "key": "D",
+          "text": "[Ar]3d³ 4s³",
+          "why_wrong": "Phân lớp 4s chỉ chứa tối đa 2 electron nên 4s³ không tồn tại."
+        }
+      ]
+    }
+  ]
+}

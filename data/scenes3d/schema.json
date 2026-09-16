@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AISTEM · Scene 3D (aistem-scene-1)",
+  "description": "Định dạng scene 3D khai báo. Viewer three.js đọc trực tiếp. Các hình cong (mặt, khối tròn xoay, đường cong) đã được bake sẵn thành object 'mesh'/'line' nên viewer không cần đánh giá biểu thức. Quy ước trục: toán (x,y,z=f) ↦ thế giới (X=x, Y=z, Z=y), Y là trục lên.",
+  "type": "object",
+  "required": ["version", "id", "camera", "objects"],
+  "properties": {
+    "version": { "const": "aistem-scene-1" },
+    "id": { "type": "string" },
+    "title_vi": { "type": "string" },
+    "formula_id": { "oneOf": [{ "type": "null" }, { "type": "string" }], "description": "id công thức nguồn (nếu có)" },
+    "caption_vi": { "type": "string" },
+    "background": { "type": "string", "description": "'auto' = viewer chọn theo theme" },
+    "camera": {
+      "type": "object",
+      "required": ["position", "target"],
+      "properties": {
+        "position": { "$ref": "#/definitions/vec3" },
+        "target": { "$ref": "#/definitions/vec3" },
+        "up": { "$ref": "#/definitions/vec3" },
+        "fov": { "type": "number" }
+      }
+    },
+    "helpers": {
+      "type": "object",
+      "properties": {
+        "axes": { "type": "object", "properties": { "size": { "type": "number" }, "labels": { "type": "array" } } },
+        "grid": { "type": "object", "properties": { "size": { "type": "number" }, "divisions": { "type": "integer" } } }
+      }
+    },
+    "objects": { "type": "array", "items": { "$ref": "#/definitions/object" } }
+  },
+  "definitions": {
+    "vec3": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+    "object": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "enum": ["vector", "line", "point", "sphere", "box", "plane", "mesh", "label"] },
+        "color": { "type": "string" },
+        "opacity": { "type": "number" },
+        "label": { "type": "string" },
+        "from": { "$ref": "#/definitions/vec3" },
+        "to": { "$ref": "#/definitions/vec3" },
+        "at": { "$ref": "#/definitions/vec3" },
+        "radius": { "type": "number" },
+        "size": {},
+        "point": { "$ref": "#/definitions/vec3" },
+        "normal": { "$ref": "#/definitions/vec3" },
+        "points": { "type": "array", "items": { "$ref": "#/definitions/vec3" } },
+        "dashed": { "type": "boolean" },
+        "text": { "type": "string" },
+        "positions": { "type": "array", "items": { "type": "number" }, "description": "mesh: toạ độ đỉnh phẳng [x,y,z,x,y,z,...]" },
+        "indices": { "type": "array", "items": { "type": "integer" }, "description": "mesh: chỉ số tam giác (bội của 3)" },
+        "wireframe": { "type": "boolean" },
+        "side": { "type": "string", "enum": ["front", "back", "double"] }
+      }
+    }
+  }
+}

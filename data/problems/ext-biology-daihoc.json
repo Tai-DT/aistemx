@@ -1,0 +1,3200 @@
+{
+  "meta": {
+    "file": "ext-biology-daihoc.json",
+    "subject": "biology",
+    "title": "Bài tập bổ sung Sinh học đại học: động học enzyme, nhiệt động hóa sinh, định lượng sinh học, sinh học phân tử, di truyền học và di truyền quần thể, sinh lí học, sinh thái học, tin sinh học và thống kê sinh học",
+    "levels": [
+      "dai-hoc"
+    ],
+    "count": 59
+  },
+  "problems": [
+    {
+      "id": "prob.biology.ext-biology-daihoc.0001",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Một enzyme tuân theo cơ chế Michaelis - Menten với các hằng số tốc độ: k1 = 1.0×10^7 M^-1 s^-1 (tạo phức ES), k-1 = 800 s^-1 (phân li ES trở lại) và kcat = 200 s^-1 (tạo sản phẩm). Tính hằng số Michaelis K_M theo biểu thức Briggs - Haldane, cho kết quả theo đơn vị µM.",
+      "statement_en": "Using Briggs-Haldane, with k1 = 1.0e7 M^-1 s^-1, k-1 = 800 s^-1, kcat = 200 s^-1, find K_M in µM.",
+      "answer": "K_M = 100 µM",
+      "solution_steps": [
+        {
+          "explain": "Theo phân tích trạng thái dừng của Briggs - Haldane, K_M gộp cả tốc độ phân li phức ES lẫn tốc độ chuyển hóa thành sản phẩm, chia cho tốc độ tạo phức.",
+          "latex": "K_{M} = \\frac{k_{-1} + k_{cat}}{k_{1}}"
+        },
+        {
+          "explain": "Thay số: tử số là tổng hai hằng số bậc một (cùng đơn vị s^-1), mẫu số là hằng số bậc hai.",
+          "latex": "K_{M} = \\frac{800 + 200}{1.0\\times 10^{7}} = 1.0\\times 10^{-4}\\ \\mathrm{M}"
+        },
+        {
+          "explain": "Đổi sang µM để tiện diễn giải ái lực cơ chất.",
+          "latex": "K_{M} = 1.0\\times 10^{-4}\\ \\mathrm{M} = 100\\ \\mu\\mathrm{M}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.km-briggs-haldane"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng biểu thức Briggs - Haldane",
+        "gộp hằng số tốc độ",
+        "đổi đơn vị nồng độ"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "briggs-haldane",
+        "km",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 100.0,
+      "answer_unit": "µM",
+      "tolerance": 0.01,
+      "hints": [
+        "K_M = (k-1 + kcat)/k1.",
+        "Cộng hai hằng số bậc một ở tử số.",
+        "1e-4 M = 100 µM."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0002",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "tu-luan",
+      "statement_vi": "Một enzyme có V_max = 100 µM/phút và K_M = 20 µM. Hãy xác định hệ số góc và tung độ gốc của đường tuyến tính hóa Eadie - Hofstee (v0 theo v0/[S]) và của đường Hanes - Woolf ([S]/v0 theo [S]).",
+      "statement_en": "For an enzyme with Vmax = 100 µM/min and KM = 20 µM, give the slope and intercept for both the Eadie-Hofstee and Hanes-Woolf plots.",
+      "answer": "Eadie - Hofstee: hệ số góc = -20 (µM), tung độ gốc = 100 µM/phút. Hanes - Woolf: hệ số góc = 0.01 phút, tung độ gốc = 0.2 phút.",
+      "solution_steps": [
+        {
+          "explain": "Đường Eadie - Hofstee vẽ v0 theo v0/[S]; hệ số góc bằng -K_M, tung độ gốc (khi v0/[S] = 0) bằng V_max.",
+          "latex": "v_{0} = V_{max} - K_{M}\\,\\frac{v_{0}}{[S]}"
+        },
+        {
+          "explain": "Vậy hệ số góc = -K_M = -20 µM, tung độ gốc = V_max = 100 µM/phút.",
+          "latex": "\\text{slope} = -20,\\quad \\text{intercept} = 100"
+        },
+        {
+          "explain": "Đường Hanes - Woolf vẽ [S]/v0 theo [S]; hệ số góc bằng 1/V_max, tung độ gốc bằng K_M/V_max.",
+          "latex": "\\frac{[S]}{v_{0}} = \\frac{1}{V_{max}}[S] + \\frac{K_{M}}{V_{max}}"
+        },
+        {
+          "explain": "Thay số: hệ số góc = 1/100 = 0.01 phút; tung độ gốc = 20/100 = 0.2 phút.",
+          "latex": "\\text{slope} = 0.01,\\quad \\text{intercept} = 0.2"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.eadie-hofstee",
+        "biology.dai-hoc.dong-hoc-enzyme.hanes-woolf"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "tuyến tính hóa phương trình Michaelis - Menten",
+        "đọc hệ số góc và tung độ gốc",
+        "phân biệt các dạng đồ thị"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "eadie-hofstee",
+        "hanes-woolf",
+        "vn-gdpt-2018"
+      ],
+      "hints": [
+        "Eadie - Hofstee: v0 theo v0/[S].",
+        "Hanes - Woolf: [S]/v0 theo [S].",
+        "So sánh với dạng y = ax + b."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0003",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Một enzyme dị lập thể có V_max = 100 (đơn vị tùy ý), hệ số Hill h = 2 và K_0.5 = 10 µM. Ở [S] = 5 µM tốc độ đo được v0 = 20; ở [S] = 20 µM đo được v0 = 80. Dùng đồ thị Hill (log(v0/(V_max - v0)) theo log[S]) để xác định hệ số Hill h từ hai điểm này.",
+      "statement_en": "From a Hill plot using two points (v0=20 at [S]=5 µM; v0=80 at [S]=20 µM), Vmax=100, determine the Hill coefficient h.",
+      "answer": "h = 2.0",
+      "solution_steps": [
+        {
+          "explain": "Đồ thị Hill tuyến tính hóa phương trình Hill: vẽ log(v0/(V_max - v0)) theo log[S], hệ số góc chính là hệ số Hill h.",
+          "latex": "\\log\\!\\left(\\frac{v_{0}}{V_{max}-v_{0}}\\right) = h\\log[S] - h\\log K_{0.5}"
+        },
+        {
+          "explain": "Tính tung độ hai điểm. Điểm 1: log(20/80) = log(0.25) = -0.602 tại log5 = 0.699. Điểm 2: log(80/20) = log4 = 0.602 tại log20 = 1.301.",
+          "latex": "y_{1} = -0.602,\\ x_{1} = 0.699;\\quad y_{2} = 0.602,\\ x_{2} = 1.301"
+        },
+        {
+          "explain": "Hệ số góc giữa hai điểm cho hệ số Hill.",
+          "latex": "h = \\frac{0.602 - (-0.602)}{1.301 - 0.699} = \\frac{1.204}{0.602} = 2.0"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.do-thi-hill"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "lập đồ thị Hill",
+        "tính hệ số góc từ hai điểm",
+        "diễn giải tính hợp tác"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "hill",
+        "he-so-hill",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 2.0,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Tung độ = log(v0/(Vmax-v0)).",
+        "Hoành độ = log[S].",
+        "h là hệ số góc của đường Hill."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0004",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Một phối tử L gắn thuận nghịch vào protein P với hằng số phân li K_d = 5 nM. Khi nồng độ phối tử tự do [L] = 15 nM, hãy tính phần bão hòa θ của các tâm gắn (tỉ lệ tâm đã bị chiếm).",
+      "statement_en": "A ligand binds a protein with Kd = 5 nM. At free ligand [L] = 15 nM, compute the fractional saturation θ.",
+      "answer": "θ = 0.75",
+      "solution_steps": [
+        {
+          "explain": "Phần bão hòa theo mô hình gắn kết một tâm chỉ phụ thuộc [L] và K_d.",
+          "latex": "\\theta = \\frac{[L]}{K_{d} + [L]}"
+        },
+        {
+          "explain": "Thay số: [L] = 15 nM, K_d = 5 nM.",
+          "latex": "\\theta = \\frac{15}{5 + 15} = \\frac{15}{20} = 0.75"
+        },
+        {
+          "explain": "Vậy 75% số tâm gắn đã bị phối tử chiếm ở nồng độ này.",
+          "latex": "\\theta = 0.75 = 75\\%"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.gan-ket-phoi-tu-kd"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "áp dụng đường cong gắn kết bão hòa",
+        "tính phần bão hòa",
+        "diễn giải K_d"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "gan-ket",
+        "kd",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.75,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "θ = [L]/(Kd + [L]).",
+        "Khi [L] = Kd thì θ = 0.5.",
+        "15/(5+15)."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0005",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Số liệu gắn kết được xử lý theo đồ thị Scatchard (vẽ v̄/[L] theo v̄). Đường thẳng thu được có hệ số góc -0.5 nM^-1 và tung độ gốc 1.0 nM^-1. Xác định hằng số phân li K_d (nM) và số tâm gắn n trên mỗi phân tử protein.",
+      "statement_en": "A Scatchard plot has slope -0.5 nM^-1 and y-intercept 1.0 nM^-1. Find Kd (nM) and the number of binding sites n.",
+      "answer": "K_d = 2 nM; n = 2 tâm gắn",
+      "solution_steps": [
+        {
+          "explain": "Đồ thị Scatchard vẽ v̄/[L] theo v̄: hệ số góc bằng -1/K_d, tung độ gốc bằng n/K_d và hoành độ gốc bằng n.",
+          "latex": "\\frac{\\bar{\\nu}}{[L]} = -\\frac{1}{K_{d}}\\bar{\\nu} + \\frac{n}{K_{d}}"
+        },
+        {
+          "explain": "Từ hệ số góc suy ra K_d.",
+          "latex": "K_{d} = -\\frac{1}{\\text{slope}} = -\\frac{1}{-0.5} = 2\\ \\mathrm{nM}"
+        },
+        {
+          "explain": "Từ tung độ gốc và K_d suy ra số tâm gắn.",
+          "latex": "n = \\text{intercept}\\times K_{d} = 1.0\\times 2 = 2"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.scatchard"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "đọc đồ thị Scatchard",
+        "suy K_d từ hệ số góc",
+        "suy số tâm gắn"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "scatchard",
+        "kd",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 2.0,
+      "answer_unit": "nM",
+      "tolerance": 0.02,
+      "hints": [
+        "Hệ số góc = -1/Kd.",
+        "Tung độ gốc = n/Kd.",
+        "n = intercept × Kd."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0006",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Trong một thí nghiệm, enzyme xúc tác tạo ra 30 µmol sản phẩm trong 5 phút. (a) Tính hoạt độ enzyme theo đơn vị quốc tế U. (b) Nếu một chế phẩm khác có hoạt độ 300 U, hãy quy đổi hoạt độ đó sang đơn vị katal (µkat). Cho biết đáp số của phần (b) theo µkat.",
+      "statement_en": "(a) An enzyme forms 30 µmol product in 5 min; find activity in U. (b) Convert 300 U to µkat.",
+      "answer": "(a) A = 6 U. (b) 300 U = 5 µkat",
+      "solution_steps": [
+        {
+          "explain": "Một đơn vị U là lượng enzyme tạo 1 µmol sản phẩm mỗi phút; hoạt độ bằng lượng sản phẩm chia thời gian.",
+          "latex": "A = \\frac{n_{P}}{t} = \\frac{30\\ \\mu\\mathrm{mol}}{5\\ \\min} = 6\\ \\mathrm{U}"
+        },
+        {
+          "explain": "Katal là đơn vị SI: 1 kat = 1 mol/s. Quy đổi 1 U = 1/60 µmol/s.",
+          "latex": "1\\ \\mathrm{U} = \\frac{1}{60}\\ \\mu\\mathrm{mol/s}"
+        },
+        {
+          "explain": "Với 300 U: đổi ra µmol/s rồi ra µkat.",
+          "latex": "300\\ \\mathrm{U} = \\frac{300}{60}\\ \\mu\\mathrm{mol/s} = 5\\ \\mu\\mathrm{mol/s} = 5\\ \\mu\\mathrm{kat}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.hoat-do-enzyme-don-vi-u",
+        "biology.dai-hoc.dong-hoc-enzyme.katal"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính hoạt độ theo U",
+        "quy đổi U sang katal",
+        "làm việc với đơn vị SI của enzyme"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "hoat-do",
+        "katal",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 5.0,
+      "answer_unit": "µkat",
+      "tolerance": 0.01,
+      "hints": [
+        "A(U) = µmol sản phẩm / phút.",
+        "1 U = 1/60 µmol/s.",
+        "300/60 = 5 µmol/s = 5 µkat."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0007",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Động học enzyme",
+      "type": "dien-so",
+      "statement_vi": "Dịch chiết thô có tổng hoạt độ 2000 U và 500 mg protein. Sau một bước tinh sạch, phân đoạn thu được có tổng hoạt độ 1500 U và 30 mg protein. Tính hệ số tinh sạch (độ gấp) của bước này.",
+      "statement_en": "Crude extract: 2000 U, 500 mg protein. After purification: 1500 U, 30 mg protein. Compute the purification fold.",
+      "answer": "Hệ số tinh sạch F = 12.5 lần (hiệu suất Y = 75%)",
+      "solution_steps": [
+        {
+          "explain": "Hoạt độ riêng là hoạt độ trên đơn vị khối lượng protein, đặc trưng cho độ tinh sạch.",
+          "latex": "A_{s} = \\frac{A_{t}}{m_{prot}}"
+        },
+        {
+          "explain": "Tính hoạt độ riêng của dịch thô và của phân đoạn tinh sạch.",
+          "latex": "A_{s,0} = \\frac{2000}{500} = 4\\ \\mathrm{U/mg};\\quad A_{s,i} = \\frac{1500}{30} = 50\\ \\mathrm{U/mg}"
+        },
+        {
+          "explain": "Hệ số tinh sạch là tỉ số hoạt độ riêng; hiệu suất là tỉ số tổng hoạt độ còn lại.",
+          "latex": "F = \\frac{A_{s,i}}{A_{s,0}} = \\frac{50}{4} = 12.5;\\quad Y = \\frac{1500}{2000}\\times 100\\% = 75\\%"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dong-hoc-enzyme.hoat-do-rieng"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính hoạt độ riêng",
+        "tính hệ số tinh sạch",
+        "tính hiệu suất thu hồi"
+      ],
+      "tags": [
+        "dong-hoc-enzyme",
+        "hoat-do-rieng",
+        "tinh-sach",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 12.5,
+      "answer_unit": "lần",
+      "tolerance": 0.01,
+      "hints": [
+        "As = At / m protein.",
+        "F = As sau / As trước.",
+        "50/4 = 12.5."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0008",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Nhiệt động hóa sinh",
+      "type": "dien-so",
+      "statement_vi": "Cặp oxi hóa - khử NAD+/NADH có thế khử chuẩn sinh học E^0' = -0.32 V (n = 2 electron). Trong một tế bào, tỉ số [NAD+]/[NADH] = 100. Tính thế khử thực E của cặp ở 25°C (dùng 2.303RT/F ≈ 0.0592 V). Cho kết quả theo V.",
+      "statement_en": "For NAD+/NADH (E0' = -0.32 V, n = 2), with [NAD+]/[NADH] = 100 at 25°C, find the actual redox potential E (V).",
+      "answer": "E ≈ -0.261 V",
+      "solution_steps": [
+        {
+          "explain": "Phương trình Nernst cho cặp oxi hóa - khử sinh học; ở 25°C thay RT/nF·ln bằng (0.0592/n)·log.",
+          "latex": "E = E^{0\\prime} + \\frac{0.0592}{n}\\log_{10}\\frac{[\\text{oxi hoa}]}{[\\text{khu}]}"
+        },
+        {
+          "explain": "Thay E^0' = -0.32 V, n = 2, tỉ số = 100 (log100 = 2).",
+          "latex": "E = -0.32 + \\frac{0.0592}{2}\\times 2"
+        },
+        {
+          "explain": "Tính kết quả: tỉ lệ NAD+/NADH cao làm thế khử dương lên so với chuẩn.",
+          "latex": "E = -0.32 + 0.0592 = -0.2608\\ \\mathrm{V}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.nhiet-dong-hoa-sinh.nernst-oxi-hoa-khu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "áp dụng phương trình Nernst sinh học",
+        "xử lí số electron n",
+        "diễn giải ảnh hưởng tỉ số nồng độ"
+      ],
+      "tags": [
+        "nhiet-dong-hoa-sinh",
+        "nernst",
+        "oxi-hoa-khu",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": -0.2608,
+      "answer_unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "E = E0' + (0.0592/n) log([ox]/[red]).",
+        "log100 = 2.",
+        "-0.32 + 0.0592/2 × 2."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0009",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Nhiệt động hóa sinh",
+      "type": "dien-so",
+      "statement_vi": "Ở màng trong ti thể (25°C), điện thế màng Δψ = 150 mV (trong âm) và chênh lệch pH được cho bởi ΔpH = pH_ngoài - pH_trong = -1 (chất nền kiềm hơn 1 đơn vị). Tính lực proton động Δp theo mV, dùng 2.303RT/F = 59.2 mV.",
+      "statement_en": "In the inner mitochondrial membrane (25°C): Δψ = 150 mV, ΔpH (out - in) = -1. Compute the proton-motive force Δp in mV.",
+      "answer": "Δp = 209.2 mV",
+      "solution_steps": [
+        {
+          "explain": "Lực proton động của thuyết hóa thẩm Mitchell gồm thành phần điện thế và thành phần hóa học (chênh pH).",
+          "latex": "\\Delta p = \\Delta \\psi - \\frac{2.303RT}{F}\\Delta \\mathrm{pH}"
+        },
+        {
+          "explain": "Thay số với 2.303RT/F = 59.2 mV và ΔpH = -1.",
+          "latex": "\\Delta p = 150 - 59.2\\times(-1)"
+        },
+        {
+          "explain": "Cả hai thành phần cùng chiều nên cộng lại thành lực proton động lớn.",
+          "latex": "\\Delta p = 150 + 59.2 = 209.2\\ \\mathrm{mV}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.nhiet-dong-hoa-sinh.luc-proton-dong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng công thức lực proton động",
+        "tách thành phần điện và hóa",
+        "chú ý dấu ΔpH"
+      ],
+      "tags": [
+        "nhiet-dong-hoa-sinh",
+        "luc-proton-dong",
+        "hoa-tham",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 209.2,
+      "answer_unit": "mV",
+      "tolerance": 0.02,
+      "hints": [
+        "Δp = Δψ - 59.2·ΔpH.",
+        "ΔpH = -1.",
+        "150 + 59.2."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0010",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một dung dịch màu cho độ truyền qua T = 25% ở bước sóng đo. Tính độ hấp thụ A của dung dịch.",
+      "statement_en": "A colored solution transmits 25% of light (T = 0.25). Compute the absorbance A.",
+      "answer": "A ≈ 0.602",
+      "solution_steps": [
+        {
+          "explain": "Độ hấp thụ là logarit thập phân âm của độ truyền qua.",
+          "latex": "A = -\\log_{10} T"
+        },
+        {
+          "explain": "Thay T = 0.25.",
+          "latex": "A = -\\log_{10}(0.25)"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "A = 0.602"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.do-truyen-qua"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "chuyển đổi độ truyền qua sang độ hấp thụ",
+        "dùng logarit thập phân"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "do-truyen-qua",
+        "quang-pho",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.602,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "A = -log10(T).",
+        "T = 0.25.",
+        "-log10(0.25) = log10(4)."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0011",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một mẫu ARN được pha loãng 50 lần rồi đo trên máy quang phổ, được A260 = 0.35 (đường quang 1 cm). Biết 1 đơn vị A260 tương ứng ≈ 40 µg/mL ARN. Tính nồng độ ARN của mẫu gốc (µg/mL).",
+      "statement_en": "An RNA sample (diluted 50×) gives A260 = 0.35. With 1 A260 unit ≈ 40 µg/mL RNA, find the stock RNA concentration.",
+      "answer": "C_RNA = 700 µg/mL",
+      "solution_steps": [
+        {
+          "explain": "Nồng độ ARN tỉ lệ với A260, hệ số 40 µg/mL cho mỗi đơn vị A260, nhân thêm độ pha loãng D để về mẫu gốc.",
+          "latex": "C_{\\mathrm{RNA}} = A_{260}\\times 40\\times D"
+        },
+        {
+          "explain": "Thay A260 = 0.35 và D = 50.",
+          "latex": "C_{\\mathrm{RNA}} = 0.35\\times 40\\times 50"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "C_{\\mathrm{RNA}} = 700\\ \\mu\\mathrm{g/mL}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.nong-do-arn-a260"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "định lượng ARN theo A260",
+        "nhân hệ số pha loãng"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "arn",
+        "a260",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 700.0,
+      "answer_unit": "µg/mL",
+      "tolerance": 0.01,
+      "hints": [
+        "C = A260 × 40 × D.",
+        "ARN dùng hệ số 40 (ADN sợi kép dùng 50).",
+        "0.35 × 40 × 50."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0012",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Đường chuẩn Bradford có dạng A595 = 0.008·C + 0.04, với C tính theo µg/mL. Một mẫu protein pha loãng 10 lần cho A595 = 0.52. Tính nồng độ protein của mẫu gốc (µg/mL).",
+      "statement_en": "Bradford standard curve A595 = 0.008·C + 0.04 (C in µg/mL). A 10× diluted sample gives A595 = 0.52. Find the stock protein concentration.",
+      "answer": "C_prot = 600 µg/mL",
+      "solution_steps": [
+        {
+          "explain": "Từ phương trình đường chuẩn, giải ngược ra nồng độ protein đã đo rồi nhân độ pha loãng.",
+          "latex": "C_{prot} = \\frac{A_{595} - b}{a}\\times D"
+        },
+        {
+          "explain": "Thay a = 0.008, b = 0.04, A595 = 0.52, D = 10.",
+          "latex": "C_{prot} = \\frac{0.52 - 0.04}{0.008}\\times 10"
+        },
+        {
+          "explain": "Tính: (0.48/0.008) = 60 µg/mL, nhân 10.",
+          "latex": "C_{prot} = 60\\times 10 = 600\\ \\mu\\mathrm{g/mL}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.duong-chuan-bradford"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "giải ngược đường chuẩn",
+        "hiệu chỉnh tung độ gốc",
+        "nhân độ pha loãng"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "bradford",
+        "protein",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 600.0,
+      "answer_unit": "µg/mL",
+      "tolerance": 0.01,
+      "hints": [
+        "Giải C từ A = aC + b.",
+        "Trừ tung độ gốc trước khi chia hệ số góc.",
+        "Nhân 10 vì pha loãng."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0013",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Phương pháp Lowry cho đường chuẩn A750 = 0.012·C + 0.02 (C theo µg/mL). Một mẫu protein đo được A750 = 0.50 (không pha loãng). Tính nồng độ protein của mẫu (µg/mL).",
+      "statement_en": "Lowry standard curve A750 = 0.012·C + 0.02 (C in µg/mL). A sample reads A750 = 0.50 (undiluted). Find the protein concentration.",
+      "answer": "C_prot = 40 µg/mL",
+      "solution_steps": [
+        {
+          "explain": "Đường chuẩn Lowry tuyến tính; giải ngược ra nồng độ protein.",
+          "latex": "A_{750} = a\\,C_{prot} + b \\Rightarrow C_{prot} = \\frac{A_{750} - b}{a}"
+        },
+        {
+          "explain": "Thay a = 0.012, b = 0.02, A750 = 0.50.",
+          "latex": "C_{prot} = \\frac{0.50 - 0.02}{0.012}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "C_{prot} = \\frac{0.48}{0.012} = 40\\ \\mu\\mathrm{g/mL}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.duong-chuan-lowry"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "giải ngược đường chuẩn Lowry",
+        "hiệu chỉnh tung độ gốc"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "lowry",
+        "protein",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 40.0,
+      "answer_unit": "µg/mL",
+      "tolerance": 0.01,
+      "hints": [
+        "C = (A - b)/a.",
+        "Trừ b = 0.02 trước.",
+        "0.48/0.012."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0014",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một protein tinh sạch chứa 2 gốc tryptophan (W), 4 gốc tyrosine (Y) và 6 gốc cysteine (C, tạo 3 cầu disulfide). (a) Ước tính hệ số hấp thụ mol ε280 (M^-1cm^-1) theo ε280 ≈ 5500·nW + 1490·nY + 125·nC. (b) Dung dịch protein đo được A280 = 0.885 với đường quang 1 cm. Tính nồng độ mol của protein (µM).",
+      "statement_en": "A protein has 2 Trp, 4 Tyr, 6 Cys. (a) Estimate ε280. (b) With A280 = 0.885 (l = 1 cm), find the molar concentration in µM.",
+      "answer": "ε280 = 17710 M^-1cm^-1; C ≈ 50 µM",
+      "solution_steps": [
+        {
+          "explain": "Ước tính hệ số hấp thụ mol ở 280 nm từ số gốc thơm và cystine.",
+          "latex": "\\varepsilon_{280} \\approx 5500\\,n_{W} + 1490\\,n_{Y} + 125\\,n_{C}"
+        },
+        {
+          "explain": "Thay nW = 2, nY = 4, nC = 6.",
+          "latex": "\\varepsilon_{280} = 5500\\times 2 + 1490\\times 4 + 125\\times 6 = 17710"
+        },
+        {
+          "explain": "Áp dụng định luật Lambert - Beer đảo để tính nồng độ mol.",
+          "latex": "C_{prot} = \\frac{A_{280}}{\\varepsilon_{280}\\,l} = \\frac{0.885}{17710\\times 1} = 5.0\\times 10^{-5}\\ \\mathrm{M} = 50\\ \\mu\\mathrm{M}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.protein-a280"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "ước tính hệ số hấp thụ mol",
+        "áp dụng Lambert - Beer đảo",
+        "định lượng protein theo A280"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "a280",
+        "protein",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 50.0,
+      "answer_unit": "µM",
+      "tolerance": 0.02,
+      "hints": [
+        "ε280 = 5500W + 1490Y + 125C.",
+        "C = A280/(ε·l).",
+        "0.885/17710 ≈ 5e-5 M."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0015",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một dịch nuôi vi khuẩn được pha loãng 10 lần rồi đo, được OD600 = 0.40. Biết hệ số quy đổi k ≈ 8×10^8 tế bào/mL cho mỗi đơn vị OD600. Tính mật độ tế bào của dịch nuôi gốc (tế bào/mL).",
+      "statement_en": "A bacterial culture (diluted 10×) reads OD600 = 0.40. With k ≈ 8e8 cells/mL per OD unit, find the stock cell density.",
+      "answer": "N = 3.2×10^9 tế bào/mL",
+      "solution_steps": [
+        {
+          "explain": "Mật độ tế bào tỉ lệ với OD600 trong vùng tuyến tính; nhân hệ số k và độ pha loãng D.",
+          "latex": "N = \\mathrm{OD}_{600}\\times k\\times D"
+        },
+        {
+          "explain": "Thay OD600 = 0.40, k = 8×10^8, D = 10.",
+          "latex": "N = 0.40\\times 8\\times 10^{8}\\times 10"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "N = 3.2\\times 10^{9}\\ \\text{te bao/mL}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.mat-do-te-bao-od600"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ước tính mật độ tế bào từ OD600",
+        "nhân độ pha loãng"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "od600",
+        "vi-khuan",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 3200000000.0,
+      "answer_unit": "tế bào/mL",
+      "tolerance": 0.02,
+      "hints": [
+        "N = OD × k × D.",
+        "k ≈ 8e8.",
+        "0.40 × 8e8 × 10."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0016",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lượng sinh học",
+      "type": "dien-so",
+      "statement_vi": "Đếm tế bào nấm men bằng buồng đếm hồng cầu (Neubauer), trung bình mỗi ô lớn (thể tích 0.1 µL, tương ứng hệ số 10^4) đếm được 80 tế bào. Mẫu đã được pha loãng 20 lần trước khi đếm. Tính mật độ tế bào của mẫu gốc (tế bào/mL).",
+      "statement_en": "Using a hemocytometer, the average count per large square is 80 cells (factor 10^4). The sample was diluted 20×. Find the stock cell density.",
+      "answer": "N = 1.6×10^7 tế bào/mL",
+      "solution_steps": [
+        {
+          "explain": "Với buồng đếm, mật độ bằng số đếm trung bình mỗi ô lớn nhân 10^4 (hệ số thể tích) nhân độ pha loãng.",
+          "latex": "N = \\bar{n}\\times 10^{4}\\times D"
+        },
+        {
+          "explain": "Thay n̄ = 80, D = 20.",
+          "latex": "N = 80\\times 10^{4}\\times 20"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "N = 1.6\\times 10^{7}\\ \\text{te bao/mL}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.dinh-luong-sinh-hoc.buong-dem-te-bao"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "đếm tế bào bằng buồng đếm",
+        "áp dụng hệ số 10^4",
+        "nhân độ pha loãng"
+      ],
+      "tags": [
+        "dinh-luong-sinh-hoc",
+        "buong-dem",
+        "te-bao",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 16000000.0,
+      "answer_unit": "tế bào/mL",
+      "tolerance": 0.02,
+      "hints": [
+        "N = n̄ × 1e4 × D.",
+        "Hệ số 1e4 là do thể tích ô lớn 0.1 µL.",
+        "80 × 1e4 × 20."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0017",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Một phân tử ADN sợi kép dài 3000 cặp base (bp) có tỉ lệ G + C bằng 40%. Áp dụng quy tắc Chargaff, tính tổng số liên kết hydrogen của phân tử.",
+      "statement_en": "A dsDNA of 3000 bp has %GC = 40%. Using Chargaff's rule, compute the total number of hydrogen bonds.",
+      "answer": "H = 7200 liên kết hydrogen",
+      "solution_steps": [
+        {
+          "explain": "Theo Chargaff, A = T và G = C. Tổng số nucleotide của sợi kép là 2×3000 = 6000; số G+C = 40% của tổng.",
+          "latex": "G + C = 0.40\\times 6000 = 2400 \\Rightarrow G = C = 1200"
+        },
+        {
+          "explain": "Phần còn lại là A + T; theo Chargaff A = T.",
+          "latex": "A + T = 6000 - 2400 = 3600 \\Rightarrow A = T = 1800"
+        },
+        {
+          "explain": "Mỗi cặp A-T có 2 liên kết hydrogen, mỗi cặp G-C có 3 liên kết.",
+          "latex": "H = 2A + 3G = 2\\times 1800 + 3\\times 1200 = 7200"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.lien-ket-hidro-adn"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng quy tắc Chargaff",
+        "tính số base từ %GC",
+        "tính số liên kết hydrogen"
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "chargaff",
+        "lien-ket-hidro",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 7200.0,
+      "answer_unit": "liên kết",
+      "tolerance": 0.001,
+      "hints": [
+        "A = T, G = C.",
+        "H = 2A + 3G.",
+        "%GC = 40% của 6000 nucleotide."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0018",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Một đoạn mồi oligonucleotide lai với mạch khuôn có ΔH^0 = -158 kcal/mol, ΔS^0 = -0.440 kcal/(mol·K), tổng nồng độ mạch C_T = 2×10^-6 M (không tự bổ sung, dùng C_T/4). Tính nhiệt độ nóng chảy T_m (°C) theo mô hình lân cận gần nhất. Cho R = 1.987×10^-3 kcal/(mol·K).",
+      "statement_en": "An oligo duplex has ΔH0 = -158 kcal/mol, ΔS0 = -0.440 kcal/(mol·K), CT = 2e-6 M (non-self-complementary). Compute Tm (°C) with R = 1.987e-3 kcal/(mol·K).",
+      "answer": "T_m ≈ 63.9°C",
+      "solution_steps": [
+        {
+          "explain": "Nhiệt độ nóng chảy theo mô hình lân cận gần nhất, với C_T/4 cho cặp mạch không tự bổ sung.",
+          "latex": "T_{m} = \\frac{\\Delta H^{0}}{\\Delta S^{0} + R\\ln\\left(\\frac{C_{T}}{4}\\right)} - 273.15"
+        },
+        {
+          "explain": "Tính số hạng nồng độ: R·ln(C_T/4) = 1.987e-3 × ln(5×10^-7) ≈ -0.02883 kcal/(mol·K).",
+          "latex": "R\\ln\\!\\left(\\frac{2\\times 10^{-6}}{4}\\right) = -0.02883"
+        },
+        {
+          "explain": "Thay vào và đổi sang °C.",
+          "latex": "T_{m} = \\frac{-158}{-0.440 - 0.02883} - 273.15 = 337.0\\ \\mathrm{K} = 63.9\\,^{\\circ}\\mathrm{C}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.tm-nearest-neighbor"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "áp dụng mô hình nhiệt động lân cận gần nhất",
+        "xử lí số hạng nồng độ C_T/4",
+        "đổi Kelvin sang Celsius"
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "tm",
+        "nearest-neighbor",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 63.9,
+      "answer_unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "Tm = ΔH0/(ΔS0 + R ln(CT/4)) - 273.15.",
+        "Dùng cùng đơn vị kcal cho ΔH, ΔS, R.",
+        "ln(5e-7) ≈ -14.51."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0019",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Hệ gen vi khuẩn dài 4.6×10^6 bp, trong đó 88% là trình tự mã hóa, và có 4300 gen. Tính chiều dài trung bình của một gen mã hóa (bp).",
+      "statement_en": "A bacterial genome is 4.6e6 bp, 88% coding, with 4300 genes. Compute the average coding gene length (bp).",
+      "answer": "L̄_gen ≈ 941 bp",
+      "solution_steps": [
+        {
+          "explain": "Chiều dài trung bình một gen mã hóa bằng tổng chiều dài phần mã hóa chia cho số gen.",
+          "latex": "\\bar{L}_{gen} = \\frac{G_{ma\\ hoa}}{N_{gen}}"
+        },
+        {
+          "explain": "Tính phần mã hóa: 88% của hệ gen.",
+          "latex": "G_{ma\\ hoa} = 0.88\\times 4.6\\times 10^{6} = 4.048\\times 10^{6}\\ \\mathrm{bp}"
+        },
+        {
+          "explain": "Chia cho số gen.",
+          "latex": "\\bar{L}_{gen} = \\frac{4.048\\times 10^{6}}{4300} \\approx 941\\ \\mathrm{bp}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.mat-do-gen-genome"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính chiều dài gen trung bình",
+        "xử lí tỉ lệ trình tự mã hóa"
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "mat-do-gen",
+        "he-gen",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 941.0,
+      "answer_unit": "bp",
+      "tolerance": 0.01,
+      "hints": [
+        "L̄ = G_mã hóa / N_gen.",
+        "G_mã hóa = 0.88 × 4.6e6.",
+        "Chia cho 4300."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0020",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Trong một thí nghiệm giải trình tự dòng vô tính, người ta phát hiện 12 đột biến mới phát sinh trên tổng cộng 3×10^9 cặp base·thế hệ được nhân đôi. Tính tốc độ đột biến µ (đột biến trên mỗi bp mỗi thế hệ).",
+      "statement_en": "12 new mutations arise over 3e9 bp·generations of replication. Compute the mutation rate µ per bp per generation.",
+      "answer": "µ = 4×10^-9 /bp/thế hệ",
+      "solution_steps": [
+        {
+          "explain": "Tốc độ đột biến là số đột biến mới chia cho tích số bp và số thế hệ nhân đôi.",
+          "latex": "\\mu = \\frac{N_{dot\\ bien}}{N_{bp}\\times N_{the\\ he}}"
+        },
+        {
+          "explain": "Thay N_đột biến = 12 và mẫu số = 3×10^9.",
+          "latex": "\\mu = \\frac{12}{3\\times 10^{9}}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "\\mu = 4\\times 10^{-9}\\ \\text{/bp/the he}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.tan-so-dot-bien"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính tốc độ đột biến",
+        "chuẩn hóa theo bp và thế hệ"
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "dot-bien",
+        "toc-do-dot-bien",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 4e-09,
+      "answer_unit": "/bp/thế hệ",
+      "tolerance": 0.02,
+      "hints": [
+        "µ = N_đột biến / (N_bp × N_thế hệ).",
+        "12 / 3e9.",
+        "= 4e-9."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0021",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh học phân tử",
+      "type": "dien-so",
+      "statement_vi": "Vi khuẩn E. coli có hệ gen G = 4.6×10^6 bp, một điểm khởi đầu sao chép (n_ori = 1) với hai chạc ba chạy ngược nhau, tốc độ mỗi chạc v_f = 1000 bp/s. Tính thời gian cần để sao chép xong toàn bộ hệ gen (s).",
+      "statement_en": "E. coli genome G = 4.6e6 bp, one origin (two forks), fork speed vf = 1000 bp/s. Compute the genome replication time (s).",
+      "answer": "t = 2300 s (≈ 38.3 phút)",
+      "solution_steps": [
+        {
+          "explain": "Với n_ori điểm khởi đầu, mỗi điểm có hai chạc ba chạy hai phía nên tốc độ tổng cộng là 2·v_f·n_ori.",
+          "latex": "t = \\frac{G}{2\\,v_{f}\\,n_{ori}}"
+        },
+        {
+          "explain": "Thay G = 4.6×10^6 bp, v_f = 1000 bp/s, n_ori = 1.",
+          "latex": "t = \\frac{4.6\\times 10^{6}}{2\\times 1000\\times 1}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "t = 2300\\ \\mathrm{s} \\approx 38.3\\ \\mathrm{phut}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-hoc-phan-tu.thoi-gian-sao-chep-adn"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính thời gian sao chép hệ gen",
+        "tính đến hai chạc ba mỗi điểm khởi đầu"
+      ],
+      "tags": [
+        "sinh-hoc-phan-tu",
+        "sao-chep",
+        "replication",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 2300.0,
+      "answer_unit": "s",
+      "tolerance": 0.01,
+      "hints": [
+        "t = G/(2·vf·n_ori).",
+        "Hai chạc ba nên nhân 2.",
+        "4.6e6/(2·1000)."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0022",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền học",
+      "type": "dien-so",
+      "statement_vi": "Một locus vi vệ tinh có 3 alen với tần số p1 = 0.5, p2 = 0.3, p3 = 0.2. Tính chỉ số thông tin đa hình PIC của locus này.",
+      "statement_en": "A microsatellite locus has 3 alleles with frequencies 0.5, 0.3, 0.2. Compute the PIC.",
+      "answer": "PIC ≈ 0.548",
+      "solution_steps": [
+        {
+          "explain": "Chỉ số PIC đo khả năng cung cấp thông tin của marker, trừ đi phần cha mẹ dị hợp nhưng con không phân biệt được.",
+          "latex": "PIC = 1 - \\sum_{i} p_{i}^{2} - \\sum_{i<j} 2p_{i}^{2}p_{j}^{2}"
+        },
+        {
+          "explain": "Tính tổng bình phương tần số alen.",
+          "latex": "\\sum p_{i}^{2} = 0.25 + 0.09 + 0.04 = 0.38"
+        },
+        {
+          "explain": "Tính tổng chéo 2·pi²·pj² trên các cặp (1,2),(1,3),(2,3).",
+          "latex": "\\sum_{i<j} 2p_{i}^{2}p_{j}^{2} = 0.045 + 0.02 + 0.0072 = 0.0722"
+        },
+        {
+          "explain": "Ghép lại.",
+          "latex": "PIC = 1 - 0.38 - 0.0722 = 0.5478"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-hoc.chi-so-pic"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính chỉ số PIC",
+        "cộng các số hạng chéo",
+        "diễn giải tính đa hình của marker"
+      ],
+      "tags": [
+        "di-truyen-hoc",
+        "pic",
+        "marker",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.5478,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "PIC = 1 - Σpi² - ΣΣ2pi²pj².",
+        "Chỉ lấy cặp i<j cho số hạng chéo.",
+        "Σpi² = 0.38."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0023",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Khảo sát nhóm máu MN trên 1000 người thu được: 298 kiểu gen MM, 489 MN và 213 NN. (a) Tính tần số alen M. (b) Kiểm định cân bằng Hardy - Weinberg bằng thống kê chi bình phương và cho biết giá trị χ² (df = 1).",
+      "statement_en": "MN blood group in 1000 people: 298 MM, 489 MN, 213 NN. (a) Find allele frequency of M. (b) Compute the chi-square statistic testing Hardy-Weinberg (df = 1).",
+      "answer": "p(M) = 0.5425; χ² ≈ 0.221 (df = 1, không bác bỏ cân bằng)",
+      "solution_steps": [
+        {
+          "explain": "Tần số alen M tính từ tần số kiểu gen: mỗi MM góp 2 alen M, mỗi MN góp 1.",
+          "latex": "p = \\frac{2N_{MM} + N_{MN}}{2N} = \\frac{2\\times 298 + 489}{2000} = 0.5425"
+        },
+        {
+          "explain": "Suy tần số alen N và tần số kiểu gen kì vọng theo Hardy - Weinberg.",
+          "latex": "q = 0.4575;\\ E_{MM} = p^{2}N = 294.3,\\ E_{MN} = 2pqN = 496.4,\\ E_{NN} = q^{2}N = 209.3"
+        },
+        {
+          "explain": "Áp dụng thống kê chi bình phương so sánh quan sát và kì vọng.",
+          "latex": "\\chi^{2} = \\sum\\frac{(O-E)^{2}}{E} = \\frac{(298-294.3)^{2}}{294.3} + \\frac{(489-496.4)^{2}}{496.4} + \\frac{(213-209.3)^{2}}{209.3}"
+        },
+        {
+          "explain": "Bậc tự do df = k(k-1)/2 = 1 (k = 2 alen). Kết quả nhỏ, không bác bỏ giả thuyết cân bằng.",
+          "latex": "\\chi^{2} \\approx 0.221,\\quad df = \\frac{2\\times 1}{2} = 1"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.tan-so-alen-tu-kieu-gen",
+        "biology.dai-hoc.di-truyen-quan-the.kiem-dinh-hardy-weinberg"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "tính tần số alen từ kiểu gen",
+        "tính kì vọng Hardy - Weinberg",
+        "kiểm định chi bình phương",
+        "xác định bậc tự do"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "hardy-weinberg",
+        "chi-binh-phuong",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.221,
+      "answer_unit": "",
+      "tolerance": 0.05,
+      "hints": [
+        "p = (2·MM + MN)/(2N).",
+        "E theo p², 2pq, q².",
+        "df = k(k-1)/2 = 1."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0024",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Một quần thể ở trạng thái cân bằng Hardy - Weinberg tại locus có 3 alen với tần số p1 = 0.5, p2 = 0.3, p3 = 0.2. Tính tổng tần số của tất cả các kiểu gen dị hợp tử.",
+      "statement_en": "A population at Hardy-Weinberg equilibrium has 3 alleles (0.5, 0.3, 0.2). Compute the total frequency of all heterozygotes.",
+      "answer": "Tổng dị hợp = 0.62",
+      "solution_steps": [
+        {
+          "explain": "Khai triển bình phương tổng tần số alen cho tần số kiểu gen; các số hạng chéo 2·pi·pj là kiểu gen dị hợp.",
+          "latex": "\\left(\\sum_{i} p_{i}\\right)^{2} = \\sum_{i} p_{i}^{2} + \\sum_{i<j} 2p_{i}p_{j} = 1"
+        },
+        {
+          "explain": "Tính từng số hạng dị hợp trên các cặp (1,2),(1,3),(2,3).",
+          "latex": "2p_{1}p_{2} = 0.30,\\ 2p_{1}p_{3} = 0.20,\\ 2p_{2}p_{3} = 0.12"
+        },
+        {
+          "explain": "Cộng lại.",
+          "latex": "\\sum_{i<j} 2p_{i}p_{j} = 0.30 + 0.20 + 0.12 = 0.62"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.hardy-weinberg-nhieu-alen"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "khai triển Hardy - Weinberg nhiều alen",
+        "cộng tần số dị hợp",
+        "kiểm tra tổng bằng 1"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "hardy-weinberg",
+        "nhieu-alen",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.62,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "Dị hợp = Σ 2pi·pj với i<j.",
+        "Có 3 cặp alen.",
+        "0.30 + 0.20 + 0.12."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0025",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Hai anh em họ đời thứ nhất (con của hai anh/chị em ruột) kết hôn và sinh con. Giả sử tổ tiên chung không nội phối (F_A = 0). Tính hệ số nội phối F của người con theo phương pháp phả hệ Wright.",
+      "statement_en": "Two first cousins have a child (common ancestors non-inbred). Compute the offspring's inbreeding coefficient F by Wright's path method.",
+      "answer": "F = 1/16 = 0.0625",
+      "solution_steps": [
+        {
+          "explain": "Hệ số nội phối là tổng theo các đường nối qua mỗi tổ tiên chung; n1, n2 là số bước từ mỗi bố mẹ tới tổ tiên chung.",
+          "latex": "F_{X} = \\sum_{\\text{duong noi}} \\left(\\tfrac{1}{2}\\right)^{n_{1}+n_{2}+1}(1 + F_{A})"
+        },
+        {
+          "explain": "Anh em họ đời thứ nhất có chung hai ông bà. Với mỗi tổ tiên, mỗi bố mẹ cách 2 bước: n1 = n2 = 2.",
+          "latex": "\\left(\\tfrac{1}{2}\\right)^{2+2+1} = \\left(\\tfrac{1}{2}\\right)^{5} = \\frac{1}{32}"
+        },
+        {
+          "explain": "Có hai tổ tiên chung (ông và bà), F_A = 0 nên cộng hai đường.",
+          "latex": "F_{X} = 2\\times \\frac{1}{32} = \\frac{1}{16} = 0.0625"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.he-so-noi-phoi-pha-he"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "đếm bước trên phả hệ",
+        "áp dụng công thức Wright",
+        "cộng qua nhiều tổ tiên chung"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "noi-phoi",
+        "pha-he",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.0625,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "Mỗi đường: (1/2)^(n1+n2+1).",
+        "Anh em họ đời 1 chung hai ông bà.",
+        "2 × (1/2)^5 = 1/16."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0026",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Tại một locus, độ thích nghi tương đối của các kiểu gen là w(AA) = 1, w(Aa) = 1, w(aa) = 0.8 (chọn lọc chống alen lặn). Ở thế hệ hiện tại p = 0.6, q = 0.4. Tính tần số alen A ở thế hệ sau (p').",
+      "statement_en": "With fitnesses w(AA)=1, w(Aa)=1, w(aa)=0.8 and current p=0.6, q=0.4, compute the frequency of A in the next generation (p').",
+      "answer": "p' ≈ 0.620",
+      "solution_steps": [
+        {
+          "explain": "Trước tiên tính độ thích nghi trung bình của quần thể.",
+          "latex": "\\bar{w} = p^{2}w_{11} + 2pq\\,w_{12} + q^{2}w_{22} = 0.36 + 0.48 + 0.128 = 0.968"
+        },
+        {
+          "explain": "Tần số alen A sau chọn lọc bằng đóng góp alen A từ AA và một nửa từ Aa, chuẩn hóa bởi w̄.",
+          "latex": "p' = \\frac{p^{2}w_{11} + pq\\,w_{12}}{\\bar{w}} = \\frac{0.36 + 0.24}{0.968}"
+        },
+        {
+          "explain": "Tính kết quả; tần số A tăng nhẹ do chọn lọc chống aa.",
+          "latex": "p' = \\frac{0.6}{0.968} \\approx 0.620"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.do-thich-nghi-trung-binh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính độ thích nghi trung bình",
+        "cập nhật tần số alen sau chọn lọc",
+        "chuẩn hóa theo w̄"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "chon-loc",
+        "do-thich-nghi",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.62,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Tính w̄ trước.",
+        "p' = (p²w11 + pq·w12)/w̄.",
+        "Tử số = 0.36 + 0.24."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0027",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Chọn lọc chống alen lặn với hệ số chọn lọc s = 0.2 tác động lên quần thể có tần số alen lặn q = 0.4. Tính độ thay đổi tần số alen lặn Δq sau một thế hệ.",
+      "statement_en": "Selection against a recessive allele (s = 0.2) acts on a population with q = 0.4. Compute Δq after one generation.",
+      "answer": "Δq ≈ -0.0198",
+      "solution_steps": [
+        {
+          "explain": "Độ thay đổi tần số alen lặn sau một thế hệ chọn lọc chống aa.",
+          "latex": "\\Delta q = -\\frac{s\\,q^{2}(1-q)}{1 - s\\,q^{2}}"
+        },
+        {
+          "explain": "Thay s = 0.2, q = 0.4: q² = 0.16, sq² = 0.032.",
+          "latex": "\\Delta q = -\\frac{0.2\\times 0.16\\times 0.6}{1 - 0.032}"
+        },
+        {
+          "explain": "Tính kết quả; tần số alen lặn giảm.",
+          "latex": "\\Delta q = -\\frac{0.0192}{0.968} \\approx -0.0198"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.thay-doi-tan-so-alen-chon-loc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính Δq do chọn lọc",
+        "xử lí mẫu số chuẩn hóa",
+        "diễn giải chiều thay đổi tần số"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "chon-loc",
+        "delta-q",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": -0.0198,
+      "answer_unit": "",
+      "tolerance": 0.03,
+      "hints": [
+        "Δq = -s·q²(1-q)/(1 - s·q²).",
+        "q² = 0.16.",
+        "Tử số = 0.0192."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0028",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Một alen lặn gây chết ở trạng thái đồng hợp (kiểu gen aa không sống sót sinh sản) có tần số ban đầu q0 = 0.1. Chọn lọc loại bỏ hoàn toàn aa mỗi thế hệ. Hỏi cần bao nhiêu thế hệ để tần số alen lặn giảm xuống còn qn = 0.01?",
+      "statement_en": "A lethal recessive allele (aa dies) has q0 = 0.1. How many generations to reduce q to 0.01?",
+      "answer": "n = 90 thế hệ",
+      "solution_steps": [
+        {
+          "explain": "Với alen lặn gây chết hoàn toàn, tần số alen theo thế hệ tuân theo công thức nghịch đảo.",
+          "latex": "q_{n} = \\frac{q_{0}}{1 + n\\,q_{0}} \\iff n = \\frac{1}{q_{n}} - \\frac{1}{q_{0}}"
+        },
+        {
+          "explain": "Thay qn = 0.01 và q0 = 0.1.",
+          "latex": "n = \\frac{1}{0.01} - \\frac{1}{0.1} = 100 - 10"
+        },
+        {
+          "explain": "Tính kết quả; loại alen lặn hiếm rất chậm.",
+          "latex": "n = 90\\ \\text{the he}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.chon-loc-alen-lan-gay-chet"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng công thức alen lặn gây chết",
+        "giải ra số thế hệ",
+        "diễn giải hiệu quả chọn lọc chậm"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "alen-lan",
+        "chon-loc",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 90.0,
+      "answer_unit": "thế hệ",
+      "tolerance": 0.01,
+      "hints": [
+        "n = 1/qn - 1/q0.",
+        "1/0.01 = 100.",
+        "100 - 10 = 90."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0029",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Tại một locus, chọn lọc ưu thế dị hợp tử với hệ số chọn lọc chống đồng hợp AA là s1 = 0.2 và chống đồng hợp aa là s2 = 0.8. Tính tần số cân bằng của alen a (q̂).",
+      "statement_en": "Overdominant selection: s1 = 0.2 (against AA), s2 = 0.8 (against aa). Compute the equilibrium frequency of a (q̂).",
+      "answer": "q̂ = 0.2",
+      "solution_steps": [
+        {
+          "explain": "Cân bằng do ưu thế dị hợp: tần số cân bằng của mỗi alen tỉ lệ với hệ số chọn lọc chống đồng hợp của alen kia.",
+          "latex": "\\hat{q} = \\frac{s_{1}}{s_{1} + s_{2}}"
+        },
+        {
+          "explain": "Thay s1 = 0.2, s2 = 0.8.",
+          "latex": "\\hat{q} = \\frac{0.2}{0.2 + 0.8}"
+        },
+        {
+          "explain": "Tính kết quả; ứng với p̂ = s2/(s1+s2) = 0.8.",
+          "latex": "\\hat{q} = \\frac{0.2}{1.0} = 0.2"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.uu-the-di-hop"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính tần số cân bằng ưu thế dị hợp",
+        "phân biệt s1, s2",
+        "diễn giải duy trì đa hình"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "uu-the-di-hop",
+        "can-bang",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.2,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "q̂ = s1/(s1+s2).",
+        "p̂ = s2/(s1+s2).",
+        "0.2/(0.2+0.8)."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0030",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Tại một locus, đột biến thuận A→a xảy ra với tốc độ µ = 8×10^-6 và đột biến nghịch a→A với tốc độ ν = 2×10^-6. Không có chọn lọc. Tính tần số cân bằng của alen a (q̂).",
+      "statement_en": "Forward mutation A→a at µ = 8e-6 and reverse a→A at ν = 2e-6, no selection. Compute q̂.",
+      "answer": "q̂ = 0.8",
+      "solution_steps": [
+        {
+          "explain": "Ở cân bằng đột biến thuận - nghịch, tần số alen a phụ thuộc tỉ số hai tốc độ đột biến.",
+          "latex": "\\hat{q} = \\frac{\\mu}{\\mu + \\nu}"
+        },
+        {
+          "explain": "Thay µ = 8×10^-6, ν = 2×10^-6.",
+          "latex": "\\hat{q} = \\frac{8\\times 10^{-6}}{8\\times 10^{-6} + 2\\times 10^{-6}}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "\\hat{q} = \\frac{8}{10} = 0.8"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.can-bang-dot-bien-thuan-nghich"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính cân bằng đột biến hai chiều",
+        "làm việc với tỉ số tốc độ đột biến"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "dot-bien",
+        "can-bang",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.8,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "q̂ = µ/(µ+ν).",
+        "Chỉ phụ thuộc tỉ số.",
+        "8/(8+2)."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0031",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Một quần thể đảo có tần số alen A ban đầu p0 = 0.2. Mỗi thế hệ có tỉ lệ di nhập m = 0.1 cá thể đến từ lục địa, nơi tần số alen A là p_m = 0.8. Tính tần số alen A trên đảo sau 5 thế hệ (mô hình lục địa - đảo).",
+      "statement_en": "An island has p0 = 0.2; each generation a fraction m = 0.1 immigrates from a mainland with p_m = 0.8. Find p on the island after 5 generations.",
+      "answer": "p5 ≈ 0.446",
+      "solution_steps": [
+        {
+          "explain": "Mô hình lục địa - đảo cho nghiệm giải tích: tần số tiến dần tới p_m theo hệ số (1-m)^t.",
+          "latex": "p_{t} = p_{m} + (p_{0} - p_{m})(1-m)^{t}"
+        },
+        {
+          "explain": "Thay p0 = 0.2, p_m = 0.8, m = 0.1, t = 5: (0.9)^5 = 0.59049.",
+          "latex": "p_{5} = 0.8 + (0.2 - 0.8)(0.9)^{5}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "p_{5} = 0.8 - 0.6\\times 0.59049 = 0.4457"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.di-nhap-gen"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "áp dụng nghiệm giải tích di nhập gen",
+        "tính lũy thừa (1-m)^t",
+        "diễn giải hội tụ về lục địa"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "di-nhap-gen",
+        "gene-flow",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.4457,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "pt = pm + (p0 - pm)(1-m)^t.",
+        "(0.9)^5 = 0.59049.",
+        "0.8 - 0.6×0.59049."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0032",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "So sánh hai quần thể tại một locus hai alen (A, a): quần thể X có tần số (0.7, 0.3), quần thể Y có (0.4, 0.6). Tính khoảng cách di truyền Nei D giữa hai quần thể.",
+      "statement_en": "Two populations at a biallelic locus: X = (0.7, 0.3), Y = (0.4, 0.6). Compute Nei's genetic distance D.",
+      "answer": "D ≈ 0.177",
+      "solution_steps": [
+        {
+          "explain": "Tính chỉ số đồng nhất di truyền Nei I là tích vô hướng chuẩn hóa của hai vector tần số alen.",
+          "latex": "I = \\frac{\\sum_{i} x_{i}y_{i}}{\\sqrt{\\sum_{i} x_{i}^{2}\\sum_{i} y_{i}^{2}}}"
+        },
+        {
+          "explain": "Thay số: tử số = 0.7·0.4 + 0.3·0.6 = 0.46; mẫu số = √(0.58·0.52) = 0.549.",
+          "latex": "I = \\frac{0.46}{\\sqrt{0.58\\times 0.52}} = 0.8376"
+        },
+        {
+          "explain": "Khoảng cách Nei là logarit âm của chỉ số đồng nhất.",
+          "latex": "D = -\\ln I = -\\ln(0.8376) \\approx 0.177"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.khoang-cach-di-truyen-nei"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính chỉ số đồng nhất Nei",
+        "chuẩn hóa tích vô hướng",
+        "chuyển sang khoảng cách di truyền"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "khoang-cach-nei",
+        "phan-hoa",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.177,
+      "answer_unit": "",
+      "tolerance": 0.03,
+      "hints": [
+        "I = Σxiyi / √(Σxi²·Σyi²).",
+        "Tử số = 0.46.",
+        "D = -ln(I)."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0033",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Trong một quần thể lưỡng bội có kích thước N = 5000, một đột biến trung tính mới vừa xuất hiện (1 bản sao). Tính xác suất cuối cùng đột biến này được cố định trong quần thể.",
+      "statement_en": "In a diploid population of N = 5000, a new neutral mutation appears (1 copy). Compute its eventual fixation probability.",
+      "answer": "u = 1/(2N) = 1×10^-4",
+      "solution_steps": [
+        {
+          "explain": "Theo lí thuyết trung tính, xác suất cố định của một alen trung tính bằng tần số ban đầu của nó.",
+          "latex": "u = p_{0} = \\frac{1}{2N}"
+        },
+        {
+          "explain": "Đột biến mới có 1 bản sao trong 2N alen của quần thể lưỡng bội.",
+          "latex": "u = \\frac{1}{2\\times 5000}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "u = \\frac{1}{10000} = 1\\times 10^{-4}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.xac-suat-co-dinh-alen-trung-tinh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng lí thuyết trung tính",
+        "xác suất cố định bằng tần số ban đầu",
+        "tính số alen 2N"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "trung-tinh",
+        "co-dinh",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.0001,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "u = tần số ban đầu = 1/(2N).",
+        "Quần thể lưỡng bội có 2N alen.",
+        "1/10000."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0034",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Trong một quần thể, tần số haplotype AB là p_AB = 0.4, tần số alen A là p_A = 0.5 và tần số alen B là p_B = 0.6. Tính hệ số mất cân bằng liên kết chuẩn hóa r² giữa hai locus.",
+      "statement_en": "Haplotype AB frequency p_AB = 0.4, p_A = 0.5, p_B = 0.6. Compute the normalized linkage disequilibrium r².",
+      "answer": "r² ≈ 0.167",
+      "solution_steps": [
+        {
+          "explain": "Trước tiên tính hệ số mất cân bằng liên kết D là độ lệch giữa tần số haplotype quan sát và kì vọng nếu độc lập.",
+          "latex": "D = p_{AB} - p_{A}p_{B} = 0.4 - 0.5\\times 0.6 = 0.10"
+        },
+        {
+          "explain": "Chuẩn hóa D thành r² bằng cách chia cho tích tần số bốn alen.",
+          "latex": "r^{2} = \\frac{D^{2}}{p_{A}p_{a}p_{B}p_{b}} = \\frac{0.10^{2}}{0.5\\times 0.5\\times 0.6\\times 0.4}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "r^{2} = \\frac{0.01}{0.06} \\approx 0.167"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.mat-can-bang-lien-ket"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính hệ số D",
+        "chuẩn hóa thành r²",
+        "diễn giải liên kết giữa hai locus"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "mat-can-bang-lien-ket",
+        "ld",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.167,
+      "answer_unit": "",
+      "tolerance": 0.03,
+      "hints": [
+        "D = p_AB - p_A·p_B.",
+        "r² = D²/(p_A·p_a·p_B·p_b).",
+        "Mẫu số = 0.06."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0035",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Di truyền quần thể",
+      "type": "dien-so",
+      "statement_vi": "Một cá thể thực hiện hành vi vị tha (giúp) đối với anh em họ đời thứ nhất của mình (hệ số quan hệ họ hàng r = 1/8). Chi phí cho bản thân là C = 1 (đơn vị độ thích nghi). Theo quy tắc Hamilton, lợi ích B tối thiểu cho cá thể được giúp là bao nhiêu để hành vi vị tha được chọn lọc ủng hộ?",
+      "statement_en": "An individual helps a first cousin (r = 1/8) at cost C = 1. By Hamilton's rule, what minimum benefit B to the recipient makes the altruism favored?",
+      "answer": "B > 8 (ngưỡng B/C = 8)",
+      "solution_steps": [
+        {
+          "explain": "Hệ số quan hệ họ hàng giữa anh em họ đời thứ nhất là tổng theo hai đường nối, mỗi đường dài 4 bước.",
+          "latex": "r = \\sum_{\\text{duong noi}} \\left(\\tfrac{1}{2}\\right)^{L} = 2\\times \\left(\\tfrac{1}{2}\\right)^{4} = \\frac{1}{8}"
+        },
+        {
+          "explain": "Quy tắc Hamilton: hành vi vị tha được ủng hộ khi lợi ích cho họ hàng nhân hệ số quan hệ vượt chi phí.",
+          "latex": "rB > C"
+        },
+        {
+          "explain": "Giải bất phương trình cho B với r = 1/8, C = 1.",
+          "latex": "B > \\frac{C}{r} = \\frac{1}{1/8} = 8"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.di-truyen-quan-the.he-so-quan-he-ho-hang",
+        "biology.dai-hoc.di-truyen-quan-the.quy-tac-hamilton"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính hệ số quan hệ họ hàng",
+        "áp dụng quy tắc Hamilton",
+        "giải ngưỡng lợi ích - chi phí"
+      ],
+      "tags": [
+        "di-truyen-quan-the",
+        "hamilton",
+        "chon-loc-ho-hang",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 8.0,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "Anh em họ đời 1: r = 1/8.",
+        "Hamilton: rB > C.",
+        "B > C/r = 8."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0036",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một bệnh nhân có [Na+] = 140 mmol/L, glucose = 90 mg/dL, BUN (nitơ urê máu) = 14 mg/dL. Ước tính độ thẩm thấu huyết tương (mOsm/kg) theo công thức Osm ≈ 2[Na+] + glucose/18 + BUN/2.8.",
+      "statement_en": "A patient has Na+ = 140 mmol/L, glucose = 90 mg/dL, BUN = 14 mg/dL. Estimate plasma osmolality (mOsm/kg).",
+      "answer": "Osm ≈ 290 mOsm/kg",
+      "solution_steps": [
+        {
+          "explain": "Độ thẩm thấu huyết tương ước tính gồm phần natri (nhân 2 vì có anion đi kèm) cộng glucose và urê quy đổi.",
+          "latex": "Osm_{HT} \\approx 2[\\mathrm{Na^{+}}] + \\frac{[glucose]}{18} + \\frac{[BUN]}{2.8}"
+        },
+        {
+          "explain": "Thay số với các hệ số chuyển đổi mg/dL sang mmol/L.",
+          "latex": "Osm_{HT} = 2\\times 140 + \\frac{90}{18} + \\frac{14}{2.8}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "Osm_{HT} = 280 + 5 + 5 = 290\\ \\mathrm{mOsm/kg}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.ap-suat-tham-thau"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "ước tính độ thẩm thấu huyết tương",
+        "áp dụng hệ số chuyển đổi đơn vị"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "tham-thau",
+        "huyet-tuong",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 290.0,
+      "answer_unit": "mOsm/kg",
+      "tolerance": 0.01,
+      "hints": [
+        "Osm = 2[Na] + glucose/18 + BUN/2.8.",
+        "glucose/18 = 5.",
+        "2×140 + 5 + 5."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0037",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Tại đầu động mạch của một mao mạch: áp suất thủy tĩnh mao mạch P_c = 35 mmHg, áp suất thủy tĩnh mô kẽ P_i = -2 mmHg, áp suất keo huyết tương π_c = 28 mmHg, áp suất keo mô kẽ π_i = 5 mmHg, hệ số phản xạ σ = 1. Tính áp lực lọc thực (mmHg), và nếu hệ số lọc K_f = 0.5 mL/phút/mmHg thì dòng dịch J_v bằng bao nhiêu?",
+      "statement_en": "At the arterial end of a capillary: Pc = 35, Pi = -2 mmHg, πc = 28, πi = 5 mmHg, σ = 1. Compute the net filtration pressure and Jv if Kf = 0.5 mL/min/mmHg.",
+      "answer": "Áp lực lọc thực = 14 mmHg; J_v = 7 mL/phút (lọc ra)",
+      "solution_steps": [
+        {
+          "explain": "Dòng dịch qua thành mao mạch theo phương trình Starling gồm chênh áp thủy tĩnh trừ chênh áp keo (nhân σ).",
+          "latex": "J_{v} = K_{f}\\left[(P_{c} - P_{i}) - \\sigma(\\pi_{c} - \\pi_{i})\\right]"
+        },
+        {
+          "explain": "Tính áp lực lọc thực trong ngoặc.",
+          "latex": "(P_{c} - P_{i}) - \\sigma(\\pi_{c} - \\pi_{i}) = (35 - (-2)) - 1\\times(28 - 5) = 37 - 23 = 14\\ \\mathrm{mmHg}"
+        },
+        {
+          "explain": "Nhân với hệ số lọc; kết quả dương nghĩa là dịch lọc ra khỏi mao mạch.",
+          "latex": "J_{v} = 0.5\\times 14 = 7\\ \\mathrm{mL/phut}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.luc-starling-mao-mach"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "áp dụng lực Starling",
+        "xử lí áp suất mô kẽ âm",
+        "tính dòng dịch qua mao mạch"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "starling",
+        "mao-mach",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 7.0,
+      "answer_unit": "mL/phút",
+      "tolerance": 0.01,
+      "hints": [
+        "Jv = Kf[(Pc-Pi) - σ(πc-πi)].",
+        "P_i = -2 nên (Pc-Pi) = 37.",
+        "14 × 0.5 = 7."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0038",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một bệnh nhân nam, 60 tuổi, cân nặng 72 kg, creatinin huyết thanh P_Cr = 1.0 mg/dL. Ước tính độ thanh thải creatinin (mL/phút) theo công thức Cockcroft - Gault.",
+      "statement_en": "A 60-year-old man, 72 kg, serum creatinine 1.0 mg/dL. Estimate creatinine clearance (mL/min) by Cockcroft-Gault.",
+      "answer": "CrCl = 80 mL/phút",
+      "solution_steps": [
+        {
+          "explain": "Công thức Cockcroft - Gault ước tính độ thanh thải creatinin theo tuổi, cân nặng và creatinin huyết thanh; hệ số k = 1 cho nam.",
+          "latex": "CrCl = \\frac{(140 - A)\\times m}{72\\times P_{Cr}}\\times k"
+        },
+        {
+          "explain": "Thay A = 60, m = 72 kg, P_Cr = 1.0, k = 1.",
+          "latex": "CrCl = \\frac{(140 - 60)\\times 72}{72\\times 1.0}\\times 1"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "CrCl = \\frac{80\\times 72}{72} = 80\\ \\mathrm{mL/phut}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.cockcroft-gault"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng công thức Cockcroft - Gault",
+        "chọn hệ số giới tính",
+        "ước tính chức năng thận"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "cockcroft-gault",
+        "than",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 80.0,
+      "answer_unit": "mL/phút",
+      "tolerance": 0.01,
+      "hints": [
+        "CrCl = (140-A)·m/(72·PCr)·k.",
+        "Nam: k = 1.",
+        "(80×72)/72 = 80."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0039",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một người cao 170 cm, nặng 70 kg, có lưu lượng tim CO = 5.0 L/phút. (a) Tính diện tích bề mặt cơ thể BSA theo công thức Mosteller. (b) Tính chỉ số tim CI (L/phút/m²).",
+      "statement_en": "A person is 170 cm, 70 kg, with cardiac output 5.0 L/min. (a) Compute BSA (Mosteller). (b) Compute cardiac index CI.",
+      "answer": "BSA ≈ 1.82 m²; CI ≈ 2.75 L/phút/m²",
+      "solution_steps": [
+        {
+          "explain": "Tính diện tích bề mặt cơ thể theo công thức Mosteller.",
+          "latex": "BSA = \\sqrt{\\frac{h\\times m}{3600}} = \\sqrt{\\frac{170\\times 70}{3600}} = 1.82\\ \\mathrm{m^{2}}"
+        },
+        {
+          "explain": "Chỉ số tim là lưu lượng tim chuẩn hóa theo diện tích bề mặt cơ thể.",
+          "latex": "CI = \\frac{CO}{BSA}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "CI = \\frac{5.0}{1.82} \\approx 2.75\\ \\mathrm{L/phut/m^{2}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.chi-so-tim"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính diện tích bề mặt cơ thể",
+        "chuẩn hóa lưu lượng tim",
+        "tính chỉ số tim"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "chi-so-tim",
+        "bsa",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 2.75,
+      "answer_unit": "L/phút/m²",
+      "tolerance": 0.02,
+      "hints": [
+        "BSA = √(h·m/3600).",
+        "CI = CO/BSA.",
+        "5.0/1.82."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0040",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một phế nang được xem gần đúng là một mặt cầu bán kính r = 50 µm, với sức căng bề mặt của lớp dịch T = 0.02 N/m. Tính áp suất phía trong phế nang do sức căng bề mặt gây ra (Pa) theo định luật Laplace cho mặt cầu.",
+      "statement_en": "An alveolus (sphere) has radius r = 50 µm and surface tension T = 0.02 N/m. Compute the collapse pressure (Pa) by Laplace's law for a sphere.",
+      "answer": "P = 800 Pa",
+      "solution_steps": [
+        {
+          "explain": "Với mặt cầu (phế nang), định luật Laplace cho áp suất tỉ lệ với sức căng và nghịch với bán kính (hệ số 2).",
+          "latex": "P = \\frac{2T}{r}"
+        },
+        {
+          "explain": "Thay T = 0.02 N/m, r = 50 µm = 50×10^-6 m.",
+          "latex": "P = \\frac{2\\times 0.02}{50\\times 10^{-6}}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "P = \\frac{0.04}{5\\times 10^{-5}} = 800\\ \\mathrm{Pa}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.dinh-luat-laplace"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng định luật Laplace mặt cầu",
+        "đổi đơn vị bán kính",
+        "diễn giải vai trò surfactant"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "laplace",
+        "phe-nang",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 800.0,
+      "answer_unit": "Pa",
+      "tolerance": 0.01,
+      "hints": [
+        "Mặt cầu: P = 2T/r.",
+        "r = 50e-6 m.",
+        "0.04/5e-5."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0041",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Đo khí máu và khí thở ra của một bệnh nhân: PaCO2 = 40 mmHg (trong máu động mạch) và P_ECO2 = 28 mmHg (trong khí thở ra trộn). Tính tỉ số khoảng chết sinh lí trên thể tích khí lưu thông (V_D/V_T) theo phương trình Bohr.",
+      "statement_en": "Blood/expired gas: PaCO2 = 40 mmHg, PECO2 = 28 mmHg. Compute the physiologic dead-space ratio VD/VT (Bohr equation).",
+      "answer": "V_D/V_T = 0.30",
+      "solution_steps": [
+        {
+          "explain": "Phương trình Bohr tính tỉ lệ khoảng chết dựa trên chênh lệch CO2 giữa máu động mạch và khí thở ra.",
+          "latex": "\\frac{V_{D}}{V_{T}} = \\frac{P_{a}CO_{2} - P_{E}CO_{2}}{P_{a}CO_{2}}"
+        },
+        {
+          "explain": "Thay PaCO2 = 40, PECO2 = 28.",
+          "latex": "\\frac{V_{D}}{V_{T}} = \\frac{40 - 28}{40}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "\\frac{V_{D}}{V_{T}} = \\frac{12}{40} = 0.30"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.khoang-chet-sinh-li-bohr"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "áp dụng phương trình Bohr",
+        "diễn giải khoảng chết sinh lí"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "bohr",
+        "khoang-chet",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.3,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "VD/VT = (PaCO2 - PECO2)/PaCO2.",
+        "(40-28)/40.",
+        "= 0.30."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0042",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Áp dụng công thức Harris - Benedict (hiệu chỉnh Roza 1984) cho một nam giới nặng 70 kg, cao 175 cm, 30 tuổi: BMR_nam = 88.362 + 13.397·m + 4.799·h - 5.677·A. Tính chuyển hóa cơ bản BMR (kcal/ngày).",
+      "statement_en": "Harris-Benedict (Roza 1984) for a man 70 kg, 175 cm, 30 y: BMR = 88.362 + 13.397·m + 4.799·h - 5.677·A. Compute BMR (kcal/day).",
+      "answer": "BMR ≈ 1696 kcal/ngày",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng công thức Harris - Benedict cho nam với các hệ số cho khối lượng, chiều cao và tuổi.",
+          "latex": "BMR_{nam} = 88.362 + 13.397\\,m + 4.799\\,h - 5.677\\,A"
+        },
+        {
+          "explain": "Thay m = 70, h = 175, A = 30.",
+          "latex": "BMR = 88.362 + 13.397\\times 70 + 4.799\\times 175 - 5.677\\times 30"
+        },
+        {
+          "explain": "Tính từng số hạng và cộng lại.",
+          "latex": "BMR = 88.362 + 937.79 + 839.825 - 170.31 \\approx 1695.7\\ \\mathrm{kcal/ngay}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.chuyen-hoa-co-ban-harris-benedict"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "áp dụng công thức Harris - Benedict",
+        "thay số nhiều biến",
+        "diễn giải chuyển hóa cơ bản"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "harris-benedict",
+        "bmr",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 1695.7,
+      "answer_unit": "kcal/ngày",
+      "tolerance": 0.01,
+      "hints": [
+        "Dùng công thức cho nam.",
+        "13.397×70 = 937.79.",
+        "Cộng bốn số hạng."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0043",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một nam giới nặng 70 kg, cao 175 cm, 30 tuổi. (a) Tính chuyển hóa cơ bản BMR theo công thức Mifflin - St Jeor (BMR = 10m + 6.25h - 5A + c, với c = +5 cho nam). (b) Nếu mức hoạt động PAL = 1.55, tính tổng năng lượng tiêu hao hằng ngày TDEE (kcal/ngày).",
+      "statement_en": "A man 70 kg, 175 cm, 30 y. (a) Compute BMR by Mifflin-St Jeor (c = +5 for men). (b) With PAL = 1.55, compute TDEE.",
+      "answer": "BMR = 1648.75 kcal/ngày; TDEE ≈ 2556 kcal/ngày",
+      "solution_steps": [
+        {
+          "explain": "Tính BMR theo Mifflin - St Jeor với hằng số c = +5 cho nam.",
+          "latex": "BMR = 10m + 6.25h - 5A + c = 10\\times 70 + 6.25\\times 175 - 5\\times 30 + 5"
+        },
+        {
+          "explain": "Cộng các số hạng.",
+          "latex": "BMR = 700 + 1093.75 - 150 + 5 = 1648.75\\ \\mathrm{kcal/ngay}"
+        },
+        {
+          "explain": "Tổng năng lượng tiêu hao hằng ngày bằng BMR nhân hệ số mức hoạt động PAL.",
+          "latex": "TDEE = BMR\\times PAL = 1648.75\\times 1.55 \\approx 2556\\ \\mathrm{kcal/ngay}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.chuyen-hoa-co-ban-mifflin",
+        "biology.dai-hoc.sinh-li-hoc.tong-nang-luong-tieu-hao"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "áp dụng công thức Mifflin - St Jeor",
+        "nhân hệ số hoạt động PAL",
+        "tính nhu cầu năng lượng hằng ngày"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "mifflin",
+        "tdee",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 2555.56,
+      "answer_unit": "kcal/ngày",
+      "tolerance": 0.01,
+      "hints": [
+        "BMR = 10m + 6.25h - 5A + 5 (nam).",
+        "TDEE = BMR × PAL.",
+        "1648.75 × 1.55."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0044",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một người trưởng thành nặng 68 kg, cao 1.70 m. Tính chỉ số khối cơ thể BMI (kg/m²) và cho biết thuộc phân loại nào.",
+      "statement_en": "An adult weighs 68 kg and is 1.70 m tall. Compute BMI (kg/m²).",
+      "answer": "BMI ≈ 23.5 kg/m² (bình thường)",
+      "solution_steps": [
+        {
+          "explain": "Chỉ số khối cơ thể bằng khối lượng chia bình phương chiều cao (mét).",
+          "latex": "BMI = \\frac{m}{h^{2}}"
+        },
+        {
+          "explain": "Thay m = 68 kg, h = 1.70 m.",
+          "latex": "BMI = \\frac{68}{1.70^{2}} = \\frac{68}{2.89}"
+        },
+        {
+          "explain": "Tính kết quả; nằm trong khoảng bình thường (18.5 - 24.9).",
+          "latex": "BMI \\approx 23.5\\ \\mathrm{kg/m^{2}}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.chi-so-khoi-co-the"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính BMI",
+        "bình phương chiều cao",
+        "phân loại thể trạng"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "bmi",
+        "the-trang",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 23.5,
+      "answer_unit": "kg/m²",
+      "tolerance": 0.02,
+      "hints": [
+        "BMI = m/h².",
+        "h phải tính bằng mét.",
+        "68/2.89."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0045",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh lí học",
+      "type": "dien-so",
+      "statement_vi": "Một bệnh nhân ăn vào 100 g protein/ngày; nitơ urê nước tiểu (UUN) đo được 12 g/ngày. Tính cân bằng nitơ NB (g/ngày) theo công thức NB = protein_ăn_vào/6.25 - (UUN + 4).",
+      "statement_en": "A patient ingests 100 g protein/day; urine urea nitrogen UUN = 12 g/day. Compute nitrogen balance NB (g/day).",
+      "answer": "NB = 0 g/ngày (cân bằng)",
+      "solution_steps": [
+        {
+          "explain": "Cân bằng nitơ so sánh nitơ nhập (protein chia 6.25) với nitơ thải (UUN cộng 4 g mất không đo được).",
+          "latex": "NB = \\frac{P_{an\\ vao}}{6.25} - (UUN + 4)"
+        },
+        {
+          "explain": "Thay protein = 100 g, UUN = 12 g.",
+          "latex": "NB = \\frac{100}{6.25} - (12 + 4)"
+        },
+        {
+          "explain": "Tính kết quả; NB = 0 nghĩa là cân bằng nitơ.",
+          "latex": "NB = 16 - 16 = 0\\ \\mathrm{g/ngay}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-li-hoc.can-bang-nito"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính cân bằng nitơ",
+        "quy đổi protein sang nitơ",
+        "diễn giải trạng thái đồng hóa"
+      ],
+      "tags": [
+        "sinh-li-hoc",
+        "can-bang-nito",
+        "dinh-duong",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.0,
+      "answer_unit": "g/ngày",
+      "tolerance": 0.5,
+      "hints": [
+        "NB = protein/6.25 - (UUN + 4).",
+        "100/6.25 = 16.",
+        "16 - 16 = 0."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0046",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "Một quần thể vi khuẩn tăng trưởng theo hàm mũ với tốc độ tăng trưởng nội tại r = 0.03 /giờ. Tính thời gian để quần thể nhân đôi số lượng (giờ).",
+      "statement_en": "A bacterial population grows exponentially with r = 0.03 /h. Compute the doubling time (h).",
+      "answer": "t_d ≈ 23.1 giờ",
+      "solution_steps": [
+        {
+          "explain": "Thời gian nhân đôi của quần thể tăng trưởng hàm mũ.",
+          "latex": "t_{d} = \\frac{\\ln 2}{r} = \\frac{0.693}{r}"
+        },
+        {
+          "explain": "Thay r = 0.03 /giờ.",
+          "latex": "t_{d} = \\frac{0.693}{0.03}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "t_{d} \\approx 23.1\\ \\text{gio}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.thoi-gian-nhan-doi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính thời gian nhân đôi",
+        "liên hệ với tốc độ tăng trưởng"
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "tang-truong",
+        "nhan-doi",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 23.1,
+      "answer_unit": "giờ",
+      "tolerance": 0.02,
+      "hints": [
+        "td = ln2/r.",
+        "ln2 ≈ 0.693.",
+        "0.693/0.03."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0047",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "tu-luan",
+      "statement_vi": "Hai loài cạnh tranh theo mô hình Lotka - Volterra với K1 = 1000, K2 = 800, hệ số cạnh tranh α12 = 0.5 (ảnh hưởng của loài 2 lên loài 1) và α21 = 0.4. Xác định điểm cân bằng cùng tồn tại (N1*, N2*).",
+      "statement_en": "Two species compete (Lotka-Volterra): K1 = 1000, K2 = 800, α12 = 0.5, α21 = 0.4. Find the coexistence equilibrium (N1*, N2*).",
+      "answer": "N1* = 750, N2* = 500",
+      "solution_steps": [
+        {
+          "explain": "Tại cân bằng cùng tồn tại, cả hai phương trình bằng 0, cho hệ hai isocline giao nhau.",
+          "latex": "K_{1} = N_{1} + \\alpha_{12}N_{2},\\qquad K_{2} = N_{2} + \\alpha_{21}N_{1}"
+        },
+        {
+          "explain": "Giải hệ, thu được nghiệm dạng phân thức với mẫu số (1 - α12·α21).",
+          "latex": "N_{1}^{*} = \\frac{K_{1} - \\alpha_{12}K_{2}}{1 - \\alpha_{12}\\alpha_{21}},\\quad N_{2}^{*} = \\frac{K_{2} - \\alpha_{21}K_{1}}{1 - \\alpha_{12}\\alpha_{21}}"
+        },
+        {
+          "explain": "Thay số: mẫu số = 1 - 0.2 = 0.8.",
+          "latex": "N_{1}^{*} = \\frac{1000 - 400}{0.8} = 750,\\quad N_{2}^{*} = \\frac{800 - 400}{0.8} = 500"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.lotka-volterra-canh-tranh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "giải hệ isocline cạnh tranh",
+        "áp dụng nghiệm cân bằng Lotka - Volterra",
+        "diễn giải cùng tồn tại"
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "lotka-volterra",
+        "canh-tranh",
+        "vn-gdpt-2018"
+      ],
+      "hints": [
+        "Đặt hai phương trình bằng 0.",
+        "Mẫu số = 1 - α12·α21 = 0.8.",
+        "N1* = (K1 - α12·K2)/0.8."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0048",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "Một quần xã có S = 25 loài và tổng N = 500 cá thể. Tính chỉ số phong phú loài Margalef (d_Mg).",
+      "statement_en": "A community has S = 25 species and N = 500 individuals. Compute the Margalef richness index (d_Mg).",
+      "answer": "d_Mg ≈ 3.86",
+      "solution_steps": [
+        {
+          "explain": "Chỉ số Margalef chuẩn hóa số loài theo logarit tổng số cá thể.",
+          "latex": "d_{Mg} = \\frac{S - 1}{\\ln N}"
+        },
+        {
+          "explain": "Thay S = 25, N = 500 (ln500 ≈ 6.215).",
+          "latex": "d_{Mg} = \\frac{25 - 1}{\\ln 500} = \\frac{24}{6.215}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "d_{Mg} \\approx 3.86"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.chi-so-margalef"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính chỉ số Margalef",
+        "dùng logarit tự nhiên",
+        "diễn giải độ phong phú loài"
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "margalef",
+        "da-dang",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 3.86,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "d_Mg = (S-1)/ln N.",
+        "ln500 ≈ 6.215.",
+        "24/6.215."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0049",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "So sánh hai quần xã: quần xã 1 có 20 loài, quần xã 2 có 15 loài, số loài chung là 8. Tính chỉ số tương đồng Sorensen (C_S).",
+      "statement_en": "Two communities: 20 vs 15 species, 8 shared. Compute the Sorensen similarity index (C_S).",
+      "answer": "C_S ≈ 0.457",
+      "solution_steps": [
+        {
+          "explain": "Chỉ số Sorensen nhấn mạnh số loài chung, cho gấp đôi số loài chung trên tổng số loài của hai quần xã.",
+          "latex": "C_{S} = \\frac{2j}{a + b}"
+        },
+        {
+          "explain": "Thay a = 20, b = 15, j = 8.",
+          "latex": "C_{S} = \\frac{2\\times 8}{20 + 15} = \\frac{16}{35}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "C_{S} \\approx 0.457"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.chi-so-tuong-dong-jaccard-sorensen"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính chỉ số Sorensen",
+        "phân biệt a, b, j",
+        "diễn giải tương đồng quần xã"
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "sorensen",
+        "tuong-dong",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.457,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "C_S = 2j/(a+b).",
+        "j = số loài chung = 8.",
+        "16/35."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0050",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "Một hệ sinh thái có năng suất sơ cấp thô GPP = 2000 gC/m²/năm, hô hấp của sinh vật sản xuất R_a = 800 gC/m²/năm, và hô hấp của sinh vật dị dưỡng R_h = 500 gC/m²/năm. Tính năng suất hệ sinh thái tinh NEP (gC/m²/năm).",
+      "statement_en": "An ecosystem: GPP = 2000, autotroph respiration Ra = 800, heterotroph respiration Rh = 500 gC/m²/yr. Compute NEP.",
+      "answer": "NEP = 700 gC/m²/năm",
+      "solution_steps": [
+        {
+          "explain": "Năng suất sơ cấp tinh bằng năng suất thô trừ hô hấp của sinh vật sản xuất.",
+          "latex": "NPP = GPP - R_{a} = 2000 - 800 = 1200"
+        },
+        {
+          "explain": "Năng suất hệ sinh thái tinh trừ tiếp hô hấp của sinh vật dị dưỡng.",
+          "latex": "NEP = NPP - R_{h}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "NEP = 1200 - 500 = 700\\ \\mathrm{gC/m^{2}/nam}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.nang-suat-so-cap"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính NPP từ GPP",
+        "tính NEP",
+        "phân biệt hô hấp tự dưỡng và dị dưỡng"
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "nang-suat",
+        "npp-nep",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 700.0,
+      "answer_unit": "gC/m²/năm",
+      "tolerance": 0.01,
+      "hints": [
+        "NPP = GPP - Ra.",
+        "NEP = NPP - Rh.",
+        "1200 - 500."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0051",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Sinh thái học",
+      "type": "dien-so",
+      "statement_vi": "Trong một chuỗi thức ăn, năng suất của bậc sinh vật sản xuất là 20000 kJ/m²/năm và năng suất của bậc sinh vật tiêu thụ bậc một (động vật ăn cỏ) là 2400 kJ/m²/năm. Tính hiệu suất sinh thái chuyển hóa giữa hai bậc dinh dưỡng (%).",
+      "statement_en": "Producer productivity = 20000 kJ/m²/yr; herbivore productivity = 2400 kJ/m²/yr. Compute the ecological (trophic) transfer efficiency (%).",
+      "answer": "Hiệu suất ≈ 12%",
+      "solution_steps": [
+        {
+          "explain": "Hiệu suất sinh thái giữa hai bậc dinh dưỡng là tỉ số năng suất của bậc trên so với bậc dưới.",
+          "latex": "eff_{TT} = \\frac{P_{n+1}}{P_{n}}\\times 100\\%"
+        },
+        {
+          "explain": "Thay P(sản xuất) = 20000, P(ăn cỏ) = 2400.",
+          "latex": "eff_{TT} = \\frac{2400}{20000}\\times 100\\%"
+        },
+        {
+          "explain": "Tính kết quả; nằm trong khoảng điển hình 10 - 20%.",
+          "latex": "eff_{TT} = 12\\%"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.sinh-thai-hoc.hieu-suat-sinh-thai"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "tính hiệu suất sinh thái",
+        "so sánh giữa các bậc dinh dưỡng"
+      ],
+      "tags": [
+        "sinh-thai-hoc",
+        "hieu-suat-sinh-thai",
+        "bac-dinh-duong",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 12.0,
+      "answer_unit": "%",
+      "tolerance": 0.01,
+      "hints": [
+        "eff = P(bậc trên)/P(bậc dưới) × 100%.",
+        "2400/20000.",
+        "= 12%."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0052",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tin sinh học",
+      "type": "dien-so",
+      "statement_vi": "Trong một ma trận thay thế kiểu BLOSUM, một cặp axit amin (i, j) có tần số quan sát cùng xuất hiện p_ij = 0.016, tần số nền q_i = 0.05 và q_j = 0.04. Với hệ số tỉ lệ 1/λ = 2 (đơn vị nửa-bit), tính điểm log tỉ số khả dĩ s(i, j).",
+      "statement_en": "In a BLOSUM-type matrix, a pair (i,j) has observed p_ij = 0.016, background q_i = 0.05, q_j = 0.04. With scaling 1/λ = 2 (half-bits), compute the log-odds score s(i,j).",
+      "answer": "s(i, j) = 6",
+      "solution_steps": [
+        {
+          "explain": "Điểm ma trận BLOSUM là log tỉ số khả dĩ giữa tần số cặp quan sát và tần số kì vọng nếu độc lập, nhân hệ số tỉ lệ.",
+          "latex": "s(i,j) = \\frac{1}{\\lambda}\\log_{2}\\frac{p_{ij}}{q_{i}q_{j}}"
+        },
+        {
+          "explain": "Tính tỉ số: q_i·q_j = 0.05×0.04 = 0.002; p_ij/(q_iq_j) = 0.016/0.002 = 8.",
+          "latex": "\\frac{p_{ij}}{q_{i}q_{j}} = 8,\\quad \\log_{2}8 = 3"
+        },
+        {
+          "explain": "Nhân hệ số tỉ lệ 1/λ = 2.",
+          "latex": "s(i,j) = 2\\times 3 = 6"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.tin-sinh-hoc.ma-tran-blosum"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính điểm log tỉ số khả dĩ",
+        "dùng logarit cơ số 2",
+        "áp dụng hệ số tỉ lệ nửa-bit"
+      ],
+      "tags": [
+        "tin-sinh-hoc",
+        "blosum",
+        "log-odds",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 6.0,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "s = (1/λ) log2(p_ij/(q_i·q_j)).",
+        "Tỉ số = 8.",
+        "log2(8) = 3, ×2 = 6."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0053",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tin sinh học",
+      "type": "dien-so",
+      "statement_vi": "Trong ma trận PAM, xác suất thay thế axit amin j sau n bước tiến hóa là M_ij^(n) = 0.05, còn tần số nền của axit amin j là q_j = 0.02. Tính điểm ma trận PAM s(i, j) = 10·log10(M_ij^(n)/q_j) (làm tròn tới số nguyên).",
+      "statement_en": "In a PAM matrix, the n-step substitution probability M_ij = 0.05 and background q_j = 0.02. Compute the PAM score s(i,j) = 10·log10(M_ij/q_j), rounded.",
+      "answer": "s(i, j) ≈ 4",
+      "solution_steps": [
+        {
+          "explain": "Điểm PAM là 10 lần logarit thập phân của tỉ số giữa xác suất thay thế (từ ma trận lũy thừa) và tần số nền.",
+          "latex": "s(i,j) = 10\\log_{10}\\frac{M^{(n)}_{ij}}{q_{j}}"
+        },
+        {
+          "explain": "Thay M_ij = 0.05, q_j = 0.02; tỉ số = 2.5.",
+          "latex": "s(i,j) = 10\\log_{10}\\frac{0.05}{0.02} = 10\\log_{10}(2.5)"
+        },
+        {
+          "explain": "Tính: log10(2.5) ≈ 0.398, nhân 10 và làm tròn.",
+          "latex": "s(i,j) = 10\\times 0.398 \\approx 4"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.tin-sinh-hoc.ma-tran-pam"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính điểm ma trận PAM",
+        "dùng logarit thập phân",
+        "làm tròn điểm ma trận"
+      ],
+      "tags": [
+        "tin-sinh-hoc",
+        "pam",
+        "ma-tran-thay-the",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 4.0,
+      "answer_unit": "",
+      "tolerance": 0.1,
+      "hints": [
+        "s = 10 log10(M_ij/q_j).",
+        "Tỉ số = 2.5.",
+        "10 × log10(2.5) ≈ 4."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0054",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tin sinh học",
+      "type": "dien-so",
+      "statement_vi": "Tại một vị trí trong motif ADN, tần số bốn base quan sát được là f(A) = 0.5, f(C) = 0.25, f(G) = 0.25, f(T) = 0. Tính lượng tin R_i (bit) của vị trí này (biểu đồ trình tự), biết số kí tự K = 4 cho ADN.",
+      "statement_en": "At a DNA motif position, base frequencies are A = 0.5, C = 0.25, G = 0.25, T = 0. Compute the information content R_i (bits), with K = 4.",
+      "answer": "R_i = 0.5 bit",
+      "solution_steps": [
+        {
+          "explain": "Trước tiên tính entropy Shannon của vị trí (các số hạng có tần số 0 đóng góp 0).",
+          "latex": "H_{i} = -\\sum_{b} f_{b,i}\\log_{2} f_{b,i}"
+        },
+        {
+          "explain": "Tính từng số hạng: -0.5log2(0.5) = 0.5; hai số hạng 0.25 mỗi số hạng cho -0.25log2(0.25) = 0.5.",
+          "latex": "H_{i} = 0.5 + 0.5 + 0.5 + 0 = 1.5\\ \\mathrm{bit}"
+        },
+        {
+          "explain": "Lượng tin là entropy cực đại (log2 K) trừ entropy quan sát.",
+          "latex": "R_{i} = \\log_{2}K - H_{i} = \\log_{2}4 - 1.5 = 2 - 1.5 = 0.5\\ \\mathrm{bit}"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.tin-sinh-hoc.luong-tin-vi-tri-motif"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính entropy Shannon",
+        "xử lí số hạng tần số 0",
+        "tính lượng tin của vị trí"
+      ],
+      "tags": [
+        "tin-sinh-hoc",
+        "motif",
+        "luong-tin",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 0.5,
+      "answer_unit": "bit",
+      "tolerance": 0.02,
+      "hints": [
+        "Hi = -Σ f·log2 f.",
+        "Số hạng có f = 0 bỏ qua.",
+        "Ri = log2(4) - Hi = 2 - 1.5."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0055",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tin sinh học",
+      "type": "dien-so",
+      "statement_vi": "Trong bước đầu của phương pháp Neighbor-Joining với N = 4 taxa, ma trận khoảng cách cho: d(1,2)=5, d(1,3)=9, d(1,4)=9, d(2,3)=10, d(2,4)=10, d(3,4)=8. Tính giá trị Q(1,2) của cặp taxon 1 và 2.",
+      "statement_en": "In Neighbor-Joining (N = 4): d(1,2)=5, d(1,3)=9, d(1,4)=9, d(2,3)=10, d(2,4)=10, d(3,4)=8. Compute Q(1,2).",
+      "answer": "Q(1, 2) = -38",
+      "solution_steps": [
+        {
+          "explain": "Ma trận Q hiệu chỉnh khoảng cách theo tổng khoảng cách của mỗi taxon tới tất cả các taxon khác.",
+          "latex": "Q_{ij} = (N-2)d_{ij} - \\sum_{k} d_{ik} - \\sum_{k} d_{jk}"
+        },
+        {
+          "explain": "Tính tổng khoảng cách: r1 = d12+d13+d14 = 5+9+9 = 23; r2 = d12+d23+d24 = 5+10+10 = 25.",
+          "latex": "\\sum_{k} d_{1k} = 23,\\quad \\sum_{k} d_{2k} = 25"
+        },
+        {
+          "explain": "Thay vào với N = 4, d(1,2) = 5.",
+          "latex": "Q_{12} = (4-2)\\times 5 - 23 - 25 = 10 - 48 = -38"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.tin-sinh-hoc.neighbor-joining"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 7,
+      "skills": [
+        "tính ma trận Q của Neighbor-Joining",
+        "cộng tổng khoảng cách hàng",
+        "chọn cặp để nối"
+      ],
+      "tags": [
+        "tin-sinh-hoc",
+        "neighbor-joining",
+        "phat-sinh-loai",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": -38.0,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "Q_ij = (N-2)d_ij - Σd_ik - Σd_jk.",
+        "r1 = 23, r2 = 25.",
+        "2×5 - 23 - 25."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0056",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thống kê sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một mẫu gồm n = 36 quan sát có độ lệch chuẩn mẫu s = 12. Tính sai số chuẩn của trung bình (SEM).",
+      "statement_en": "A sample of n = 36 observations has sample SD s = 12. Compute the standard error of the mean (SEM).",
+      "answer": "SEM = 2",
+      "solution_steps": [
+        {
+          "explain": "Sai số chuẩn của trung bình bằng độ lệch chuẩn chia căn bậc hai cỡ mẫu.",
+          "latex": "SEM = \\frac{s}{\\sqrt{n}}"
+        },
+        {
+          "explain": "Thay s = 12, n = 36.",
+          "latex": "SEM = \\frac{12}{\\sqrt{36}} = \\frac{12}{6}"
+        },
+        {
+          "explain": "Tính kết quả.",
+          "latex": "SEM = 2"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.thong-ke-sinh-hoc.sai-so-chuan-cua-trung-binh"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "tính sai số chuẩn của trung bình",
+        "phân biệt SD và SEM"
+      ],
+      "tags": [
+        "thong-ke-sinh-hoc",
+        "sem",
+        "sai-so-chuan",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 2.0,
+      "answer_unit": "",
+      "tolerance": 0.01,
+      "hints": [
+        "SEM = s/√n.",
+        "√36 = 6.",
+        "12/6 = 2."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0057",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thống kê sinh học",
+      "type": "dien-so",
+      "statement_vi": "Một thí nghiệm ghép cặp (đo trước - sau trên cùng đối tượng) với n = 16 cặp cho hiệu trung bình d̄ = 3.5 và độ lệch chuẩn của hiệu s_d = 2.1. Tính giá trị thống kê t của kiểm định t ghép cặp.",
+      "statement_en": "A paired experiment (n = 16 pairs) has mean difference d̄ = 3.5 and SD of differences s_d = 2.1. Compute the paired t statistic.",
+      "answer": "t ≈ 6.67 (df = 15)",
+      "solution_steps": [
+        {
+          "explain": "Thống kê t ghép cặp là hiệu trung bình chia cho sai số chuẩn của hiệu.",
+          "latex": "t = \\frac{\\bar{d}}{s_{d}/\\sqrt{n}}"
+        },
+        {
+          "explain": "Tính sai số chuẩn của hiệu: s_d/√n = 2.1/4 = 0.525.",
+          "latex": "\\frac{s_{d}}{\\sqrt{n}} = \\frac{2.1}{\\sqrt{16}} = 0.525"
+        },
+        {
+          "explain": "Chia hiệu trung bình cho sai số chuẩn; bậc tự do df = n - 1 = 15.",
+          "latex": "t = \\frac{3.5}{0.525} \\approx 6.67"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.thong-ke-sinh-hoc.t-test-ghep-cap"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính thống kê t ghép cặp",
+        "tính sai số chuẩn của hiệu",
+        "xác định bậc tự do"
+      ],
+      "tags": [
+        "thong-ke-sinh-hoc",
+        "t-test",
+        "ghep-cap",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 6.67,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "t = d̄/(s_d/√n).",
+        "s_d/√n = 0.525.",
+        "3.5/0.525."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0058",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thống kê sinh học",
+      "type": "dien-so",
+      "statement_vi": "Trong phân tích phương sai một yếu tố với k = 3 nhóm và tổng N = 30 quan sát: tổng bình phương giữa nhóm SS_B = 120, tổng bình phương trong nhóm SS_W = 180. Tính giá trị thống kê F.",
+      "statement_en": "One-way ANOVA with k = 3 groups, N = 30: between-group SS_B = 120, within-group SS_W = 180. Compute the F statistic.",
+      "answer": "F = 9.0",
+      "solution_steps": [
+        {
+          "explain": "Thống kê F là tỉ số trung bình bình phương giữa nhóm trên trung bình bình phương trong nhóm.",
+          "latex": "F = \\frac{MS_{B}}{MS_{W}} = \\frac{SS_{B}/(k-1)}{SS_{W}/(N-k)}"
+        },
+        {
+          "explain": "Tính các trung bình bình phương: MS_B = 120/2 = 60; MS_W = 180/27 = 6.667.",
+          "latex": "MS_{B} = \\frac{120}{3-1} = 60,\\quad MS_{W} = \\frac{180}{30-3} = 6.667"
+        },
+        {
+          "explain": "Lập tỉ số.",
+          "latex": "F = \\frac{60}{6.667} = 9.0"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.thong-ke-sinh-hoc.anova-mot-yeu-to"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "tính trung bình bình phương",
+        "xác định bậc tự do tử và mẫu",
+        "lập tỉ số F"
+      ],
+      "tags": [
+        "thong-ke-sinh-hoc",
+        "anova",
+        "f-test",
+        "vn-gdpt-2018"
+      ],
+      "answer_numeric": 9.0,
+      "answer_unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "F = MS_B/MS_W.",
+        "MS_B = SS_B/(k-1); MS_W = SS_W/(N-k).",
+        "60/6.667."
+      ]
+    },
+    {
+      "id": "prob.biology.ext-biology-daihoc.0059",
+      "subject": "biology",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Thống kê sinh học",
+      "type": "tu-luan",
+      "statement_vi": "Cho bộ số liệu (x, y) gồm 5 cặp: (1,2), (2,3), (3,5), (4,4), (5,6). (a) Tính hệ số tương quan Pearson r. (b) Tìm phương trình hồi quy tuyến tính ŷ = a + bx và hệ số xác định R².",
+      "statement_en": "Data (x,y): (1,2),(2,3),(3,5),(4,4),(5,6). (a) Compute Pearson r. (b) Find the regression line ŷ = a + bx and R².",
+      "answer": "r = 0.9; ŷ = 1.3 + 0.9x; R² = 0.81",
+      "solution_steps": [
+        {
+          "explain": "Tính các trung bình: x̄ = 3, ȳ = 4. Rồi tính các tổng bình phương và tích chéo lệch.",
+          "latex": "\\bar{x} = 3,\\ \\bar{y} = 4;\\quad S_{xx} = 10,\\ S_{yy} = 10,\\ S_{xy} = 9"
+        },
+        {
+          "explain": "Hệ số tương quan Pearson bằng tích chéo lệch chia căn tích hai tổng bình phương lệch.",
+          "latex": "r = \\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}} = \\frac{9}{\\sqrt{10\\times 10}} = 0.9"
+        },
+        {
+          "explain": "Hệ số góc và tung độ gốc của đường hồi quy.",
+          "latex": "b = \\frac{S_{xy}}{S_{xx}} = \\frac{9}{10} = 0.9,\\quad a = \\bar{y} - b\\bar{x} = 4 - 0.9\\times 3 = 1.3"
+        },
+        {
+          "explain": "Với hồi quy tuyến tính đơn, hệ số xác định bằng bình phương hệ số tương quan.",
+          "latex": "R^{2} = r^{2} = 0.9^{2} = 0.81"
+        }
+      ],
+      "formulas_used": [
+        "biology.dai-hoc.thong-ke-sinh-hoc.he-so-tuong-quan-pearson",
+        "biology.dai-hoc.thong-ke-sinh-hoc.hoi-quy-tuyen-tinh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "tính hệ số tương quan Pearson",
+        "tính hệ số hồi quy",
+        "liên hệ R² và r"
+      ],
+      "tags": [
+        "thong-ke-sinh-hoc",
+        "pearson",
+        "hoi-quy",
+        "vn-gdpt-2018"
+      ],
+      "hints": [
+        "x̄ = 3, ȳ = 4.",
+        "r = S_xy/√(S_xx·S_yy).",
+        "b = S_xy/S_xx; a = ȳ - b·x̄; R² = r²."
+      ]
+    }
+  ]
+}

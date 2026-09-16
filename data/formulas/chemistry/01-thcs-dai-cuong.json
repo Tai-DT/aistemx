@@ -1,0 +1,6023 @@
+{
+ "meta": {
+  "file": "01-thcs-dai-cuong.json",
+  "subject": "chemistry",
+  "title": "Hóa học đại cương: đại lượng cơ bản, cấu tạo nguyên tử, dung dịch, tốc độ - cân bằng, điện li và nhiệt hóa học",
+  "levels": [
+   "thcs",
+   "thpt"
+  ],
+  "count": 162
+ },
+ "formulas": [
+  {
+   "id": "chemistry.thcs.bao-toan.tinh-khoi-luong-con-lai",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn khối lượng",
+   "name_vi": "Tính khối lượng một chất còn lại theo bảo toàn khối lượng",
+   "name_en": "Finding an unknown mass by conservation of mass",
+   "latex": "m_{A} + m_{B} = m_{C} + m_{D} \\Rightarrow m_{D} = m_{A} + m_{B} - m_{C}",
+   "vars": {
+    "m_{A}": "khối lượng chất tham gia A",
+    "m_{B}": "khối lượng chất tham gia B",
+    "m_{C}": "khối lượng sản phẩm C",
+    "m_{D}": "khối lượng sản phẩm D cần tìm"
+   },
+   "units": {
+    "m_{A}": "g",
+    "m_{B}": "g",
+    "m_{C}": "g",
+    "m_{D}": "g"
+   },
+   "conditions": "Phản ứng dạng A + B -> C + D, hệ kín",
+   "note": "Với phản ứng có chất khí thoát ra, khối lượng bình giảm đúng bằng khối lượng khí bay đi.",
+   "tags": [
+    "bao-toan-khoi-luong",
+    "tinh-toan",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.bao-toan-khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.khoi-luong-chat-tan",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Khối lượng chất tan theo nồng độ phần trăm",
+   "name_en": "Mass of solute from mass percent",
+   "latex": "m_{ct} = \\dfrac{C\\% \\cdot m_{dd}}{100}",
+   "vars": {
+    "m_{ct}": "khối lượng chất tan",
+    "C\\%": "nồng độ phần trăm",
+    "m_{dd}": "khối lượng dung dịch"
+   },
+   "units": {
+    "m_{ct}": "g",
+    "C\\%": "%",
+    "m_{dd}": "g"
+   },
+   "conditions": "0 < C% <= 100",
+   "note": "Dạng biến đổi của công thức C%; hay dùng khi pha chế dung dịch theo khối lượng.",
+   "tags": [
+    "dung-dich",
+    "nong-do-phan-tram",
+    "pha-che"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.nong-do-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.khoi-luong-dung-dich",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Khối lượng dung dịch",
+   "name_en": "Mass of a solution",
+   "latex": "m_{dd} = m_{ct} + m_{dm}",
+   "vars": {
+    "m_{dd}": "khối lượng dung dịch",
+    "m_{ct}": "khối lượng chất tan",
+    "m_{dm}": "khối lượng dung môi"
+   },
+   "units": {
+    "m_{dd}": "g",
+    "m_{ct}": "g",
+    "m_{dm}": "g"
+   },
+   "conditions": "Chất tan tan hết, hệ kín, không có chất bay hơi",
+   "note": "Hệ quả của định luật bảo toàn khối lượng áp dụng cho quá trình hòa tan.",
+   "tags": [
+    "dung-dich",
+    "khoi-luong",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.khoi-luong-dung-dich-theo-the-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.nong-do-phan-tram",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Nồng độ phần trăm của dung dịch",
+   "name_en": "Mass percent concentration",
+   "latex": "C\\% = \\dfrac{m_{ct}}{m_{dd}} \\times 100\\%",
+   "vars": {
+    "C\\%": "nồng độ phần trăm",
+    "m_{ct}": "khối lượng chất tan",
+    "m_{dd}": "khối lượng dung dịch"
+   },
+   "units": {
+    "C\\%": "%",
+    "m_{ct}": "g",
+    "m_{dd}": "g"
+   },
+   "conditions": "m_dd > 0; chất tan tan hoàn toàn",
+   "note": "C% cho biết số gam chất tan có trong 100 gam dung dịch.",
+   "tags": [
+    "dung-dich",
+    "nong-do-phan-tram",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.khoi-luong-chat-tan",
+    "chemistry.thcs.dung-dich.nong-do-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.do-tan",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Độ tan",
+   "name_vi": "Độ tan của chất trong nước",
+   "name_en": "Solubility in water",
+   "latex": "S = \\dfrac{m_{ct}}{m_{H_{2}O}} \\times 100",
+   "vars": {
+    "S": "độ tan của chất ở nhiệt độ xác định",
+    "m_{ct}": "khối lượng chất tan trong dung dịch bão hòa",
+    "m_{H_{2}O}": "khối lượng nước (dung môi)"
+   },
+   "units": {
+    "S": "g/100 g H2O",
+    "m_{ct}": "g",
+    "m_{H_{2}O}": "g"
+   },
+   "conditions": "Dung dịch bão hòa ở nhiệt độ xác định",
+   "note": "S là số gam chất tan tối đa hòa tan trong 100 g nước ở nhiệt độ đó. Độ tan chất rắn thường tăng theo nhiệt độ, độ tan chất khí giảm khi tăng nhiệt độ.",
+   "tags": [
+    "do-tan",
+    "dung-dich-bao-hoa",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.nong-do-phan-tram-bao-hoa",
+    "chemistry.thcs.dung-dich.khoi-luong-tinh-the-tach-ra"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.lien-ket.quy-tac-hoa-tri",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Hóa trị",
+   "name_vi": "Quy tắc hóa trị trong hợp chất hai nguyên tố",
+   "name_en": "Valence rule for binary compounds",
+   "latex": "a \\cdot x = b \\cdot y \\quad \\text{voi hop chat } \\mathrm{A}_{x}\\mathrm{B}_{y}",
+   "vars": {
+    "a": "hóa trị của nguyên tố A",
+    "x": "chỉ số của A",
+    "b": "hóa trị của nguyên tố B",
+    "y": "chỉ số của B"
+   },
+   "units": {},
+   "conditions": "Hợp chất hai nguyên tố (hoặc nguyên tố với nhóm nguyên tử); x, y là số nguyên tối giản",
+   "note": "Suy ra x : y = b : a. Hiđro có hóa trị I, oxi có hóa trị II được dùng làm chuẩn.",
+   "tags": [
+    "hoa-tri",
+    "cong-thuc-hoa-hoc",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.so-oxi-hoa-trong-phan-tu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.khoi-luong-mol",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Mol và khối lượng mol",
+   "name_vi": "Khối lượng mol của chất",
+   "name_en": "Molar mass",
+   "latex": "M = \\dfrac{m}{n}",
+   "vars": {
+    "M": "khối lượng mol",
+    "m": "khối lượng chất",
+    "n": "số mol chất"
+   },
+   "units": {
+    "M": "g/mol",
+    "m": "g",
+    "n": "mol"
+   },
+   "conditions": "n > 0",
+   "note": "Khối lượng mol có trị số bằng khối lượng phân tử (hoặc nguyên tử khối) tính theo amu.",
+   "tags": [
+    "mol",
+    "khoi-luong-mol",
+    "dai-luong-co-ban"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.so-mol-theo-khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.khoi-luong-theo-so-mol",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Mol và khối lượng mol",
+   "name_vi": "Khối lượng chất tính theo số mol",
+   "name_en": "Mass from amount of substance",
+   "latex": "m = n \\cdot M",
+   "vars": {
+    "m": "khối lượng chất",
+    "n": "số mol chất",
+    "M": "khối lượng mol của chất"
+   },
+   "units": {
+    "m": "g",
+    "n": "mol",
+    "M": "g/mol"
+   },
+   "conditions": "n >= 0",
+   "note": "Dạng biến đổi của n = m/M, dùng khi đã biết số mol từ phương trình hóa học.",
+   "tags": [
+    "mol",
+    "khoi-luong",
+    "dai-luong-co-ban"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.so-mol-theo-khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.so-mol-theo-khoi-luong",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Mol và khối lượng mol",
+   "name_vi": "Số mol tính theo khối lượng",
+   "name_en": "Amount of substance from mass",
+   "latex": "n = \\dfrac{m}{M}",
+   "vars": {
+    "n": "số mol chất",
+    "m": "khối lượng chất",
+    "M": "khối lượng mol của chất"
+   },
+   "units": {
+    "n": "mol",
+    "m": "g",
+    "M": "g/mol"
+   },
+   "conditions": "M > 0; m và M cùng hệ đơn vị (g và g/mol)",
+   "note": "Công thức gốc của mọi bài toán hóa học định lượng. Ghi nhớ tam giác n - m - M.",
+   "tags": [
+    "mol",
+    "dai-luong-co-ban",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.khoi-luong-theo-so-mol",
+    "chemistry.thcs.dai-luong-co-ban.khoi-luong-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.phan-tram-khoi-luong-nguyen-to",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thành phần phần trăm",
+   "name_vi": "Phần trăm khối lượng nguyên tố trong hợp chất",
+   "name_en": "Mass percentage of an element in a compound",
+   "latex": "\\%m_{A} = \\dfrac{x \\cdot M_{A}}{M_{A_{x}B_{y}}} \\times 100\\%",
+   "vars": {
+    "\\%m_{A}": "phần trăm khối lượng nguyên tố A",
+    "x": "số nguyên tử A trong một phân tử",
+    "M_{A}": "nguyên tử khối của A",
+    "M_{A_{x}B_{y}}": "khối lượng mol phân tử hợp chất"
+   },
+   "units": {
+    "\\%m_{A}": "%",
+    "M_{A}": "g/mol",
+    "M_{A_{x}B_{y}}": "g/mol"
+   },
+   "conditions": "Hợp chất có công thức xác định A_xB_y",
+   "note": "Tổng phần trăm khối lượng của mọi nguyên tố trong hợp chất bằng 100%.",
+   "tags": [
+    "phan-tram-khoi-luong",
+    "hop-chat",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.lap-cong-thuc-tu-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dktc",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Số mol khí tính theo thể tích ở đktc",
+   "name_en": "Moles of gas from volume at STP",
+   "latex": "n = \\dfrac{V}{22.4}",
+   "vars": {
+    "n": "số mol khí",
+    "V": "thể tích khí ở đktc"
+   },
+   "units": {
+    "n": "mol",
+    "V": "L"
+   },
+   "conditions": "Khí ở 0 độ C và 1 atm",
+   "note": "Chỉ áp dụng cho chất khí, không dùng cho chất rắn hay chất lỏng.",
+   "tags": [
+    "khi",
+    "mol",
+    "dktc"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dktc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dktc",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Thể tích chất khí ở điều kiện tiêu chuẩn (0 độ C, 1 atm)",
+   "name_en": "Gas volume at STP (0 C, 1 atm)",
+   "latex": "V = 22.4\\,n",
+   "vars": {
+    "V": "thể tích chất khí ở đktc",
+    "n": "số mol khí"
+   },
+   "units": {
+    "V": "L",
+    "n": "mol"
+   },
+   "conditions": "Khí lí tưởng ở 0 độ C (273.15 K) và 1 atm (101 325 Pa)",
+   "note": "Thể tích mol khí ở đktc V_m = 22.4 L/mol. Sách giáo khoa cũ dùng điều kiện này.",
+   "tags": [
+    "khi",
+    "the-tich-mol",
+    "dktc"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc",
+    "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dktc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.khoi-luong-dung-dich-theo-the-tich",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Khối lượng dung dịch theo thể tích và khối lượng riêng",
+   "name_en": "Solution mass from volume and density",
+   "latex": "m_{dd} = V_{dd} \\cdot D",
+   "vars": {
+    "m_{dd}": "khối lượng dung dịch",
+    "V_{dd}": "thể tích dung dịch",
+    "D": "khối lượng riêng của dung dịch"
+   },
+   "units": {
+    "m_{dd}": "g",
+    "V_{dd}": "mL",
+    "D": "g/mL"
+   },
+   "conditions": "V và D cùng hệ đơn vị (mL và g/mL, hoặc L và g/L)",
+   "note": "Cầu nối giữa nồng độ phần trăm (theo khối lượng) và nồng độ mol (theo thể tích).",
+   "tags": [
+    "dung-dich",
+    "khoi-luong-rieng",
+    "the-tich"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.quan-he-cm-va-cphan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.khoi-luong-tinh-the-tach-ra",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Độ tan",
+   "name_vi": "Khối lượng tinh thể tách ra khi hạ nhiệt độ dung dịch bão hòa",
+   "name_en": "Mass of crystals separating on cooling a saturated solution",
+   "latex": "m_{tt} = m_{dd(t_{1})} \\cdot \\dfrac{S_{1} - S_{2}}{100 + S_{1}}",
+   "vars": {
+    "m_{tt}": "khối lượng tinh thể khan tách ra khỏi dung dịch",
+    "m_{dd(t_{1})}": "khối lượng dung dịch bão hòa ban đầu ở nhiệt độ t1",
+    "S_{1}": "độ tan của chất ở nhiệt độ t1",
+    "S_{2}": "độ tan của chất ở nhiệt độ t2"
+   },
+   "units": {
+    "m_{tt}": "g",
+    "m_{dd(t_{1})}": "g",
+    "S_{1}": "g/100 g H2O",
+    "S_{2}": "g/100 g H2O"
+   },
+   "conditions": "Dung dịch bão hòa ở cả hai nhiệt độ; t1 > t2 nên S1 > S2; tinh thể tách ra là chất khan; khối lượng nước không đổi (không bay hơi)",
+   "note": "Chứng minh: khối lượng nước trong dung dịch không đổi và bằng 100 m_dd/(100 + S1). Nếu tinh thể tách ra ở dạng ngậm nước thì phải đặt ẩn và lập hệ theo khối lượng nước cùng khối lượng chất tan còn lại.",
+   "tags": [
+    "do-tan",
+    "dung-dich-bao-hoa",
+    "ket-tinh"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.do-tan",
+    "chemistry.thcs.dung-dich.nong-do-phan-tram-bao-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.nong-do-phan-tram-bao-hoa",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Độ tan",
+   "name_vi": "Nồng độ phần trăm của dung dịch bão hòa theo độ tan",
+   "name_en": "Mass percent of a saturated solution from solubility",
+   "latex": "C\\%_{bh} = \\dfrac{S}{100 + S} \\times 100\\%",
+   "vars": {
+    "C\\%_{bh}": "nồng độ phần trăm của dung dịch bão hòa",
+    "S": "độ tan của chất ở nhiệt độ đang xét"
+   },
+   "units": {
+    "C\\%_{bh}": "%",
+    "S": "g/100 g H2O"
+   },
+   "conditions": "Dung dịch bão hòa ở cùng nhiệt độ với giá trị S",
+   "note": "Suy ngược: S = 100 C% / (100 - C%).",
+   "tags": [
+    "do-tan",
+    "dung-dich-bao-hoa",
+    "nong-do-phan-tram"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.do-tan",
+    "chemistry.thcs.dung-dich.nong-do-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.so-hat-vi-mo",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Hằng số Avogadro",
+   "name_vi": "Số hạt vi mô trong n mol chất",
+   "name_en": "Number of particles from moles",
+   "latex": "N = n \\cdot N_{A}",
+   "vars": {
+    "N": "số hạt vi mô (nguyên tử, phân tử, ion)",
+    "n": "số mol chất",
+    "N_{A}": "hằng số Avogadro"
+   },
+   "units": {
+    "n": "mol",
+    "N_{A}": "1/mol"
+   },
+   "conditions": "n >= 0",
+   "note": "N_A = 6.022e23 mol^-1 (giá trị dùng trong CT GDPT 2018: 6.022 x 10^23).",
+   "tags": [
+    "mol",
+    "avogadro",
+    "so-hat"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.so-mol-theo-so-hat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.so-mol-theo-so-hat",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Hằng số Avogadro",
+   "name_vi": "Số mol tính theo số hạt vi mô",
+   "name_en": "Moles from number of particles",
+   "latex": "n = \\dfrac{N}{N_{A}}",
+   "vars": {
+    "n": "số mol chất",
+    "N": "số hạt vi mô",
+    "N_{A}": "hằng số Avogadro"
+   },
+   "units": {
+    "n": "mol",
+    "N_{A}": "1/mol"
+   },
+   "conditions": "N >= 0",
+   "note": "1 mol bất kì chứa 6.022e23 hạt vi mô tương ứng.",
+   "tags": [
+    "mol",
+    "avogadro",
+    "so-hat"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.so-hat-vi-mo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.phan-tram-the-tich-khi",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thành phần phần trăm",
+   "name_vi": "Phần trăm thể tích của một khí trong hỗn hợp",
+   "name_en": "Volume percentage of a gas in a mixture",
+   "latex": "\\%V_{i} = \\dfrac{V_{i}}{V_{hh}} \\times 100\\% = \\dfrac{n_{i}}{n_{hh}} \\times 100\\%",
+   "vars": {
+    "\\%V_{i}": "phần trăm thể tích khí i",
+    "V_{i}": "thể tích khí i",
+    "V_{hh}": "tổng thể tích hỗn hợp khí",
+    "n_{i}": "số mol khí i",
+    "n_{hh}": "tổng số mol khí"
+   },
+   "units": {
+    "\\%V_{i}": "%",
+    "V_{i}": "L",
+    "V_{hh}": "L",
+    "n_{i}": "mol",
+    "n_{hh}": "mol"
+   },
+   "conditions": "Các khí đo ở cùng nhiệt độ và áp suất",
+   "note": "Với chất khí: tỉ lệ thể tích bằng tỉ lệ số mol, nên %V = %n.",
+   "tags": [
+    "phan-tram-the-tich",
+    "hon-hop-khi",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh-theo-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.dinh-luat-avogadro",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Định luật Avogadro về thể tích chất khí",
+   "name_en": "Avogadro's law",
+   "latex": "\\dfrac{V_{1}}{n_{1}} = \\dfrac{V_{2}}{n_{2}} \\quad (\\text{cung } T,\\, p)",
+   "vars": {
+    "V_{1}": "thể tích hai mẫu khí",
+    "V_{2}": "thể tích hai mẫu khí",
+    "n_{1}": "số mol tương ứng của hai mẫu khí",
+    "n_{2}": "số mol tương ứng của hai mẫu khí",
+    "T": "nhiệt độ",
+    "p": "áp suất"
+   },
+   "units": {
+    "V_{1}": "L",
+    "V_{2}": "L",
+    "n_{1}": "mol",
+    "n_{2}": "mol"
+   },
+   "conditions": "Hai mẫu khí đo ở cùng nhiệt độ và áp suất",
+   "note": "Ở cùng điều kiện, những thể tích khí bằng nhau chứa số phân tử bằng nhau, vì vậy tỉ lệ thể tích khí bằng tỉ lệ hệ số trong phương trình hóa học.",
+   "tags": [
+    "avogadro",
+    "the-tich-khi",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc",
+    "chemistry.thcs.dai-luong-co-ban.phan-tram-the-tich-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dkc",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Số mol khí tính theo thể tích ở điều kiện chuẩn",
+   "name_en": "Moles of gas from volume at 25 C, 1 bar",
+   "latex": "n = \\dfrac{V}{24.79}",
+   "vars": {
+    "n": "số mol khí",
+    "V": "thể tích khí ở điều kiện chuẩn"
+   },
+   "units": {
+    "n": "mol",
+    "V": "L"
+   },
+   "conditions": "Khí ở 25 độ C và 1 bar",
+   "note": "Đây là công thức chuẩn dùng trong KHTN 8 và Hóa học 10 theo CT 2018.",
+   "tags": [
+    "khi",
+    "mol",
+    "dieu-kien-chuan"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Thể tích chất khí ở điều kiện chuẩn (25 độ C, 1 bar)",
+   "name_en": "Gas volume at standard conditions (25 C, 1 bar)",
+   "latex": "V = 24.79\\,n",
+   "vars": {
+    "V": "thể tích chất khí ở điều kiện chuẩn",
+    "n": "số mol khí"
+   },
+   "units": {
+    "V": "L",
+    "n": "mol"
+   },
+   "conditions": "Khí lí tưởng ở 25 độ C (298.15 K) và 1 bar (10^5 Pa)",
+   "note": "Chương trình GDPT 2018 dùng thể tích mol khí ở điều kiện chuẩn V_m = 24.79 L/mol.",
+   "tags": [
+    "khi",
+    "the-tich-mol",
+    "dieu-kien-chuan"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dktc",
+    "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dkc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.ti-le-mol-theo-phuong-trinh",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Tính theo phương trình hóa học",
+   "name_vi": "Tỉ lệ số mol các chất theo phương trình hóa học",
+   "name_en": "Mole ratios from a balanced equation",
+   "latex": "\\dfrac{n_{A}}{a} = \\dfrac{n_{B}}{b} = \\dfrac{n_{C}}{c} = \\dfrac{n_{D}}{d}",
+   "vars": {
+    "n_{A}": "số mol các chất tham gia đã phản ứng",
+    "n_{B}": "số mol các chất tham gia đã phản ứng",
+    "n_{C}": "số mol các sản phẩm tạo thành",
+    "n_{D}": "số mol các sản phẩm tạo thành",
+    "a": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "b": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "c": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "d": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD"
+   },
+   "units": {
+    "n_{A}": "mol",
+    "n_{B}": "mol",
+    "n_{C}": "mol",
+    "n_{D}": "mol"
+   },
+   "conditions": "Phương trình hóa học đã được cân bằng; phản ứng xảy ra hoàn toàn",
+   "note": "Đây là cơ sở của mọi bài toán tính theo phương trình hóa học: đổi ra mol, lập tỉ lệ, rồi đổi ngược về khối lượng hoặc thể tích.",
+   "tags": [
+    "phuong-trinh-hoa-hoc",
+    "ti-le-mol",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.so-mol-theo-khoi-luong",
+    "chemistry.thcs.dai-luong-co-ban.xac-dinh-chat-du"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.ti-khoi-hai-khi",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Tỉ khối chất khí",
+   "name_vi": "Tỉ khối của khí A so với khí B",
+   "name_en": "Relative density of gas A to gas B",
+   "latex": "d_{A/B} = \\dfrac{M_{A}}{M_{B}}",
+   "vars": {
+    "d_{A/B}": "tỉ khối của khí A so với khí B",
+    "M_{A}": "khối lượng mol khí A",
+    "M_{B}": "khối lượng mol khí B"
+   },
+   "units": {
+    "M_{A}": "g/mol",
+    "M_{B}": "g/mol"
+   },
+   "conditions": "Hai khí đo ở cùng điều kiện nhiệt độ và áp suất",
+   "note": "d > 1: khí A nặng hơn khí B; d < 1: khí A nhẹ hơn khí B. Tỉ khối không có đơn vị.",
+   "tags": [
+    "ti-khoi",
+    "khi",
+    "dai-luong-co-ban"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.ti-khoi-so-voi-khong-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.ti-khoi-so-voi-khong-khi",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Tỉ khối chất khí",
+   "name_vi": "Tỉ khối của khí A so với không khí",
+   "name_en": "Relative density of a gas to air",
+   "latex": "d_{A/kk} = \\dfrac{M_{A}}{29}",
+   "vars": {
+    "d_{A/kk}": "tỉ khối của khí A so với không khí",
+    "M_{A}": "khối lượng mol khí A"
+   },
+   "units": {
+    "M_{A}": "g/mol"
+   },
+   "conditions": "Cùng điều kiện nhiệt độ, áp suất",
+   "note": "Khối lượng mol trung bình của không khí lấy bằng 29 g/mol (khoảng 80% N2 và 20% O2 theo thể tích).",
+   "tags": [
+    "ti-khoi",
+    "khong-khi",
+    "khi"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.ti-khoi-hai-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.lap-cong-thuc-tu-phan-tram",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    11
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thành phần phần trăm",
+   "name_vi": "Lập công thức hóa học từ phần trăm khối lượng",
+   "name_en": "Deriving a chemical formula from mass percentages",
+   "latex": "x : y = \\dfrac{\\%m_{A}}{M_{A}} : \\dfrac{\\%m_{B}}{M_{B}}",
+   "vars": {
+    "x": "số nguyên tử A",
+    "y": "số nguyên tử B",
+    "\\%m_{A}": "phần trăm khối lượng A",
+    "\\%m_{B}": "phần trăm khối lượng B",
+    "M_{A}": "nguyên tử khối A",
+    "M_{B}": "nguyên tử khối B"
+   },
+   "units": {
+    "\\%m_{A}": "%",
+    "\\%m_{B}": "%",
+    "M_{A}": "g/mol",
+    "M_{B}": "g/mol"
+   },
+   "conditions": "x : y phải rút gọn về tỉ lệ số nguyên tối giản",
+   "note": "Kết quả cho công thức đơn giản nhất (công thức thực nghiệm); cần thêm M phân tử để suy ra công thức phân tử.",
+   "tags": [
+    "cong-thuc-hoa-hoc",
+    "phan-tram-khoi-luong",
+    "lap-cong-thuc"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.phan-tram-khoi-luong-nguyen-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.bao-toan.bao-toan-khoi-luong",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn khối lượng",
+   "name_vi": "Định luật bảo toàn khối lượng",
+   "name_en": "Law of conservation of mass",
+   "latex": "\\sum m_{\\text{chat tham gia}} = \\sum m_{\\text{san pham}}",
+   "vars": {
+    "m_{\\text{chat tham gia}}": "khối lượng các chất tham gia phản ứng",
+    "m_{\\text{san pham}}": "khối lượng các sản phẩm"
+   },
+   "units": {
+    "m_{\\text{chat tham gia}}": "g",
+    "m_{\\text{san pham}}": "g"
+   },
+   "conditions": "Hệ kín, phản ứng hóa học thông thường (không phải phản ứng hạt nhân)",
+   "note": "Do số nguyên tử mỗi nguyên tố được bảo toàn nên tổng khối lượng không đổi (Lomonosov - Lavoisier).",
+   "tags": [
+    "bao-toan-khoi-luong",
+    "dinh-luat",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.tinh-khoi-luong-con-lai",
+    "chemistry.thpt.bao-toan.bao-toan-nguyen-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.bao-toan.do-tinh-khiet",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    9,
+    10,
+    11
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Độ tinh khiết",
+   "name_vi": "Độ tinh khiết của mẫu chất",
+   "name_en": "Purity of a sample",
+   "latex": "\\text{Do tinh khiet}\\,\\% = \\dfrac{m_{\\text{chat nguyen chat}}}{m_{\\text{mau}}} \\times 100\\%",
+   "vars": {
+    "m_{\\text{chat nguyen chat}}": "khối lượng chất nguyên chất trong mẫu",
+    "m_{\\text{mau}}": "khối lượng mẫu chất (kể cả tạp chất)"
+   },
+   "units": {
+    "m_{\\text{chat nguyen chat}}": "g",
+    "m_{\\text{mau}}": "g"
+   },
+   "conditions": "Tạp chất không tham gia phản ứng đang xét",
+   "note": "Phần trăm tạp chất = 100% - độ tinh khiết. Khối lượng chất nguyên chất mới được dùng để tính theo phương trình.",
+   "tags": [
+    "do-tinh-khiet",
+    "tap-chat",
+    "tinh-toan"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.hieu-suat-phan-ung-theo-san-pham"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.bao-toan.hieu-suat-phan-ung-theo-san-pham",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Hiệu suất phản ứng",
+   "name_vi": "Hiệu suất phản ứng tính theo sản phẩm",
+   "name_en": "Percent yield based on product",
+   "latex": "H\\% = \\dfrac{m_{tt}}{m_{lt}} \\times 100\\%",
+   "vars": {
+    "H\\%": "hiệu suất phản ứng",
+    "m_{tt}": "khối lượng sản phẩm thu được thực tế",
+    "m_{lt}": "khối lượng sản phẩm tính theo lí thuyết"
+   },
+   "units": {
+    "H\\%": "%",
+    "m_{tt}": "g",
+    "m_{lt}": "g"
+   },
+   "conditions": "0 < H% <= 100; m_lt tính từ chất phản ứng hết theo phương trình hóa học",
+   "note": "Có thể thay khối lượng bằng số mol: H% = n_tt/n_lt x 100%.",
+   "tags": [
+    "hieu-suat",
+    "phan-ung",
+    "tinh-toan"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.hieu-suat-theo-chat-phan-ung",
+    "chemistry.thpt.bao-toan.khoi-luong-thuc-te-theo-hieu-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dung-dich.nong-do-mol",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Nồng độ mol của dung dịch",
+   "name_en": "Molar concentration",
+   "latex": "C_{M} = \\dfrac{n_{ct}}{V_{dd}}",
+   "vars": {
+    "C_{M}": "nồng độ mol",
+    "n_{ct}": "số mol chất tan",
+    "V_{dd}": "thể tích dung dịch"
+   },
+   "units": {
+    "C_{M}": "mol/L",
+    "n_{ct}": "mol",
+    "V_{dd}": "L"
+   },
+   "conditions": "V_dd tính bằng lít; V_dd > 0",
+   "note": "Kí hiệu 1 M nghĩa là 1 mol/L. Chú ý đổi mL sang L trước khi tính.",
+   "tags": [
+    "dung-dich",
+    "nong-do-mol",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.nong-do-phan-tram",
+    "chemistry.thpt.dung-dich.quan-he-cm-va-cphan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dien-hoa.day-hoat-dong-hoa-hoc",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    9,
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Dãy hoạt động hóa học",
+   "name_vi": "Dãy hoạt động hóa học của kim loại",
+   "name_en": "Reactivity series of metals",
+   "latex": "\\mathrm{K},\\,\\mathrm{Ba},\\,\\mathrm{Ca},\\,\\mathrm{Na},\\,\\mathrm{Mg},\\,\\mathrm{Al},\\,\\mathrm{Zn},\\,\\mathrm{Fe},\\,\\mathrm{Ni},\\,\\mathrm{Sn},\\,\\mathrm{Pb},\\,\\mathrm{H},\\,\\mathrm{Cu},\\,\\mathrm{Hg},\\,\\mathrm{Ag},\\,\\mathrm{Pt},\\,\\mathrm{Au}",
+   "vars": {
+    "\\mathrm{K}": "các kim loại xếp theo chiều giảm dần mức độ hoạt động hóa học",
+    "\\ldots": "các kim loại xếp theo chiều giảm dần mức độ hoạt động hóa học",
+    "\\mathrm{Au}": "các kim loại xếp theo chiều giảm dần mức độ hoạt động hóa học"
+   },
+   "units": {},
+   "conditions": "Dãy sắp xếp theo mức độ hoạt động hóa học giảm dần từ trái sang phải",
+   "note": "Kim loại đứng trước H đẩy được hiđro ra khỏi dung dịch acid loãng; từ Mg trở đi kim loại đứng trước đẩy được kim loại đứng sau ra khỏi dung dịch muối.",
+   "tags": [
+    "day-hoat-dong",
+    "kim-loai",
+    "thcs"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.the-dien-cuc-chuan",
+    "chemistry.thpt.dien-hoa.quy-tac-alpha"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thcs.dai-luong-co-ban.xac-dinh-chat-du",
+   "subject": "chemistry",
+   "level": "thcs",
+   "grades": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Tính theo phương trình hóa học",
+   "name_vi": "Xác định chất phản ứng hết và chất còn dư",
+   "name_en": "Identifying the limiting reactant",
+   "latex": "\\dfrac{n_{A}}{a} < \\dfrac{n_{B}}{b} \\;\\Rightarrow\\; \\text{A het, B du}",
+   "vars": {
+    "n_{A}": "số mol chất A ban đầu",
+    "n_{B}": "số mol chất B ban đầu",
+    "a": "hệ số của A trong phương trình",
+    "b": "hệ số của B trong phương trình"
+   },
+   "units": {
+    "n_{A}": "mol",
+    "n_{B}": "mol"
+   },
+   "conditions": "Phương trình đã cân bằng; áp dụng cho phản ứng một giai đoạn",
+   "note": "Mọi tính toán về sản phẩm phải dựa vào chất phản ứng hết (chất thiếu). Nếu hai tỉ lệ bằng nhau thì cả hai chất cùng hết.",
+   "tags": [
+    "chat-du",
+    "chat-het",
+    "phuong-trinh-hoa-hoc"
+   ],
+   "related": [
+    "chemistry.thcs.dai-luong-co-ban.ti-le-mol-theo-phuong-trinh",
+    "chemistry.thpt.bao-toan.hieu-suat-theo-chat-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.cong-thuc-hop-chat-khi-voi-hidro",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Hóa trị và hợp chất",
+   "name_vi": "Công thức hợp chất khí với hiđro",
+   "name_en": "Formula of the volatile hydride",
+   "latex": "\\mathrm{RH}_{8-n} \\;(n = \\text{STT nhom A})",
+   "vars": {
+    "\\mathrm{R}": "kí hiệu nguyên tố phi kim",
+    "n": "số thứ tự nhóm A"
+   },
+   "units": {},
+   "conditions": "Nguyên tố thuộc nhóm IVA đến VIIA",
+   "note": "IVA: RH4; VA: RH3; VIA: RH2; VIIA: RH. Ví dụ CH4, NH3, H2S, HCl.",
+   "tags": [
+    "hop-chat-khi-hidro",
+    "bang-tuan-hoan",
+    "hoa-tri"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.hoa-tri-cao-nhat-voi-oxi",
+    "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-hop-chat-khi-hidro"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.cong-thuc-oxit-cao-nhat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Hóa trị và hợp chất",
+   "name_vi": "Công thức oxit cao nhất của nguyên tố nhóm A",
+   "name_en": "Formula of the highest oxide",
+   "latex": "\\mathrm{R}_{2}\\mathrm{O}_{n} \\;(n = \\text{STT nhom A})",
+   "vars": {
+    "\\mathrm{R}": "kí hiệu nguyên tố",
+    "n": "số thứ tự nhóm A, bằng hóa trị cao nhất với oxi"
+   },
+   "units": {},
+   "conditions": "n từ 1 đến 7; rút gọn chỉ số khi n chẵn",
+   "note": "Nhóm IA: R2O; IIA: RO; IIIA: R2O3; IVA: RO2; VA: R2O5; VIA: RO3; VIIA: R2O7.",
+   "tags": [
+    "oxit-cao-nhat",
+    "bang-tuan-hoan",
+    "hoa-tri"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.hoa-tri-cao-nhat-voi-oxi",
+    "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-oxit-cao-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.hoa-tri-cao-nhat-voi-oxi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Hóa trị và hợp chất",
+   "name_vi": "Hóa trị cao nhất với oxi và hóa trị với hiđro",
+   "name_en": "Highest oxide valence and hydride valence",
+   "latex": "n_{O} = \\text{STT nhom A}, \\quad n_{H} = 8 - n_{O}",
+   "vars": {
+    "n_{O}": "hóa trị cao nhất của nguyên tố trong oxit",
+    "n_{H}": "hóa trị của nguyên tố trong hợp chất khí với hiđro"
+   },
+   "units": {},
+   "conditions": "Nguyên tố nhóm A; hợp chất khí với hiđro chỉ xét cho các nhóm IVA đến VIIA",
+   "note": "Tổng hóa trị cao nhất với oxi và hóa trị với hiđro luôn bằng 8. Flo và oxi không có oxit cao nhất theo quy luật này.",
+   "tags": [
+    "bang-tuan-hoan",
+    "hoa-tri",
+    "oxit-cao-nhat"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.cong-thuc-oxit-cao-nhat",
+    "chemistry.thpt.bang-tuan-hoan.cong-thuc-hop-chat-khi-voi-hidro"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-hop-chat-khi-hidro",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Hóa trị và hợp chất",
+   "name_vi": "Phần trăm khối lượng nguyên tố trong hợp chất khí với hiđro",
+   "name_en": "Mass percent of R in its volatile hydride",
+   "latex": "\\%m_{R} = \\dfrac{M_{R}}{M_{R} + (8-n)} \\times 100\\%",
+   "vars": {
+    "\\%m_{R}": "phần trăm khối lượng của R trong hợp chất RH_(8-n)",
+    "M_{R}": "nguyên tử khối của R",
+    "n": "số thứ tự nhóm A của R"
+   },
+   "units": {
+    "\\%m_{R}": "%",
+    "M_{R}": "g/mol"
+   },
+   "conditions": "Nguyên tố R thuộc nhóm IVA đến VIIA, hợp chất khí với hiđro có dạng RH_(8-n); lấy nguyên tử khối của H bằng 1",
+   "note": "Cặp đôi với công thức tính %R trong oxit cao nhất; kết hợp hai dữ kiện thường đủ để xác định nguyên tố R.",
+   "tags": [
+    "hop-chat-khi-hidro",
+    "phan-tram-khoi-luong",
+    "xac-dinh-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.cong-thuc-hop-chat-khi-voi-hidro",
+    "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-oxit-cao-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.phan-tram-r-trong-oxit-cao-nhat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Hóa trị và hợp chất",
+   "name_vi": "Phần trăm khối lượng nguyên tố trong oxit cao nhất",
+   "name_en": "Mass percent of R in its highest oxide",
+   "latex": "\\%m_{R} = \\dfrac{2M_{R}}{2M_{R} + 16n} \\times 100\\%",
+   "vars": {
+    "\\%m_{R}": "phần trăm khối lượng của R trong oxit R2On",
+    "M_{R}": "nguyên tử khối của R",
+    "n": "hóa trị cao nhất của R với oxi"
+   },
+   "units": {
+    "\\%m_{R}": "%",
+    "M_{R}": "g/mol"
+   },
+   "conditions": "Oxit cao nhất có dạng R2On",
+   "note": "Dạng bài quen thuộc: cho %R và nhóm, giải ra M_R để xác định nguyên tố.",
+   "tags": [
+    "oxit-cao-nhat",
+    "phan-tram-khoi-luong",
+    "xac-dinh-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.cong-thuc-oxit-cao-nhat",
+    "chemistry.thcs.dai-luong-co-ban.phan-tram-khoi-luong-nguyen-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.quy-luat-bien-doi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Quy luật tuần hoàn",
+   "name_vi": "Quy luật biến đổi tính chất trong chu kì và nhóm A",
+   "name_en": "Periodic trends across periods and groups",
+   "latex": "\\begin{cases} \\text{Trong chu ki (trai} \\to \\text{phai)}: r \\downarrow,\\; \\chi \\uparrow,\\; I_{1} \\uparrow,\\; \\text{tinh kim loai} \\downarrow,\\; \\text{tinh phi kim} \\uparrow \\\\ \\text{Trong nhom A (tren} \\to \\text{duoi)}: r \\uparrow,\\; \\chi \\downarrow,\\; I_{1} \\downarrow,\\; \\text{tinh kim loai} \\uparrow,\\; \\text{tinh phi kim} \\downarrow \\end{cases}",
+   "vars": {
+    "r": "bán kính nguyên tử",
+    "\\chi": "độ âm điện",
+    "I_{1}": "năng lượng ion hóa thứ nhất"
+   },
+   "units": {
+    "r": "nm",
+    "I_{1}": "kJ/mol"
+   },
+   "conditions": "Áp dụng cho các nguyên tố nhóm A; có một số ngoại lệ nhỏ với năng lượng ion hóa",
+   "note": "Hệ quả: tính base của oxit và hydroxide giảm, tính acid tăng theo chiều trái sang phải của chu kì.",
+   "tags": [
+    "quy-luat-tuan-hoan",
+    "ban-kinh",
+    "do-am-dien"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.nang-luong-ion-hoa",
+    "chemistry.thpt.lien-ket.hieu-do-am-dien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.so-thu-tu-chu-ki",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Vị trí nguyên tố",
+   "name_vi": "Số thứ tự chu kì bằng số lớp electron",
+   "name_en": "Period number equals number of electron shells",
+   "latex": "\\text{STT chu ki} = \\text{so lop electron} = n_{max}",
+   "vars": {
+    "\\text{STT chu ki}": "số thứ tự chu kì",
+    "n_{max}": "số thứ tự lớp electron ngoài cùng"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho mọi nguyên tố trong bảng tuần hoàn",
+   "note": "Bảng tuần hoàn hiện nay có 7 chu kì; chu kì 1, 2, 3 là chu kì nhỏ.",
+   "tags": [
+    "bang-tuan-hoan",
+    "chu-ki",
+    "cau-hinh-electron"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.so-thu-tu-o"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-a",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Vị trí nguyên tố",
+   "name_vi": "Số thứ tự nhóm A bằng số electron lớp ngoài cùng",
+   "name_en": "Group A number equals valence electrons",
+   "latex": "\\text{STT nhom A} = \\text{so electron lop ngoai cung} = a\\;(\\text{trong } ns^{a} \\text{ hoac } ns^{2}np^{b})",
+   "vars": {
+    "a": "số electron của phân lớp ns",
+    "b": "số electron của phân lớp np",
+    "n": "số thứ tự lớp ngoài cùng"
+   },
+   "units": {},
+   "conditions": "Nguyên tố nhóm A (nguyên tố s và nguyên tố p)",
+   "note": "Với nguyên tố p: STT nhóm A = 2 + b. Nhóm IA là kim loại kiềm, IIA kiềm thổ, VIIA halogen, VIIIA khí hiếm.",
+   "tags": [
+    "bang-tuan-hoan",
+    "nhom-a",
+    "electron-hoa-tri"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-b",
+    "chemistry.thpt.nguyen-tu.quy-tac-klechkovski"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-b",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Vị trí nguyên tố",
+   "name_vi": "Xác định nhóm B theo số electron hóa trị",
+   "name_en": "Determining group B from valence electrons",
+   "latex": "\\text{Cau hinh } (n-1)d^{a}ns^{b},\\; x = a + b : \\begin{cases} 3 \\le x \\le 7 & \\text{nhom } x\\mathrm{B} \\\\ 8 \\le x \\le 10 & \\text{nhom VIIIB} \\\\ x = 11,\\,12 & \\text{nhom } (x-10)\\mathrm{B} \\end{cases}",
+   "vars": {
+    "x": "tổng số electron hóa trị",
+    "a": "số electron phân lớp (n-1)d",
+    "b": "số electron phân lớp ns",
+    "n": "số thứ tự lớp electron ngoài cùng"
+   },
+   "units": {},
+   "conditions": "Nguyên tố d (nguyên tố nhóm B, kim loại chuyển tiếp)",
+   "note": "Electron hóa trị của nguyên tố d gồm electron phân lớp ns và (n-1)d.",
+   "tags": [
+    "bang-tuan-hoan",
+    "nhom-b",
+    "nguyen-to-d"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-a"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bang-tuan-hoan.so-thu-tu-o",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Bảng tuần hoàn",
+   "subtopic": "Vị trí nguyên tố",
+   "name_vi": "Quan hệ giữa số thứ tự ô và số hiệu nguyên tử",
+   "name_en": "Element order number equals atomic number",
+   "latex": "\\text{STT o} = Z = P = E",
+   "vars": {
+    "\\text{STT o}": "số thứ tự ô trong bảng tuần hoàn",
+    "Z": "số hiệu nguyên tử",
+    "P": "số proton",
+    "E": "số electron của nguyên tử"
+   },
+   "units": {},
+   "conditions": "Nguyên tử trung hòa về điện",
+   "note": "Nguyên tắc sắp xếp: theo chiều tăng dần điện tích hạt nhân.",
+   "tags": [
+    "bang-tuan-hoan",
+    "vi-tri",
+    "so-hieu-nguyen-tu"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.so-thu-tu-chu-ki",
+    "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-a"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.cau-hinh-electron-ion",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Cấu hình electron",
+   "name_vi": "Cấu hình electron của ion",
+   "name_en": "Electron configuration of ions",
+   "latex": "\\mathrm{M} \\rightarrow \\mathrm{M}^{n+} + ne \\;(\\text{bot } n\\,e\\;\\text{lop ngoai cung}), \\quad \\mathrm{X} + me \\rightarrow \\mathrm{X}^{m-} \\;(\\text{them } m\\,e)",
+   "vars": {
+    "\\mathrm{M}": "nguyên tử kim loại",
+    "\\mathrm{M}^{n+}": "cation có điện tích n+",
+    "\\mathrm{X}": "nguyên tử phi kim",
+    "\\mathrm{X}^{m-}": "anion có điện tích m-",
+    "n": "số electron nhường hoặc nhận",
+    "m": "số electron nhường hoặc nhận"
+   },
+   "units": {},
+   "conditions": "Số proton không đổi khi tạo ion; chỉ số electron thay đổi",
+   "note": "Với nguyên tố d, khi tạo cation phải tách electron ở phân lớp ns trước rồi mới đến (n-1)d. Ví dụ Fe là [Ar]3d6 4s2, còn Fe2+ là [Ar]3d6.",
+   "tags": [
+    "cau-hinh-electron",
+    "ion",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.quy-tac-klechkovski",
+    "chemistry.thpt.nguyen-tu.dien-tich-hat-nhan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.quy-tac-hund",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Cấu hình electron",
+   "name_vi": "Quy tắc Hund và nguyên lí vững bền",
+   "name_en": "Hund's rule and the Aufbau principle",
+   "latex": "\\text{Trong cung mot phan lop: dien } 1e\\;\\text{vao moi orbital truoc, spin song song, roi moi ghep doi}",
+   "vars": {
+    "\\text{phan lop}": "tập hợp các orbital có cùng mức năng lượng (s, p, d, f)",
+    "e": "electron"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho nguyên tử ở trạng thái cơ bản",
+   "note": "Ba quy tắc viết cấu hình: nguyên lí vững bền (điền từ mức năng lượng thấp lên cao), nguyên lí Pauli (tối đa 2e mỗi orbital, spin ngược nhau) và quy tắc Hund.",
+   "tags": [
+    "quy-tac-hund",
+    "cau-hinh-electron",
+    "pauli"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.quy-tac-klechkovski",
+    "chemistry.thpt.nguyen-tu.cau-hinh-electron-ion"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.quy-tac-klechkovski",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Cấu hình electron",
+   "name_vi": "Quy tắc Klechkovski về thứ tự mức năng lượng",
+   "name_en": "Klechkovski (Madelung) rule",
+   "latex": "1s\\,2s\\,2p\\,3s\\,3p\\,4s\\,3d\\,4p\\,5s\\,4d\\,5p\\,6s\\,4f\\,5d\\,6p\\,7s\\,5f\\,6d",
+   "vars": {
+    "1s": "các phân lớp electron xếp theo chiều tăng dần mức năng lượng",
+    "2s": "các phân lớp electron xếp theo chiều tăng dần mức năng lượng",
+    "2p": "các phân lớp electron xếp theo chiều tăng dần mức năng lượng",
+    "\\ldots": "các phân lớp electron xếp theo chiều tăng dần mức năng lượng"
+   },
+   "units": {},
+   "conditions": "Electron điền vào phân lớp có tổng (n + l) nhỏ trước; nếu (n + l) bằng nhau thì phân lớp có n nhỏ hơn được điền trước",
+   "note": "Viết cấu hình theo mức năng lượng rồi sắp xếp lại theo lớp. Ngoại lệ bán bão hòa và bão hòa: Cr là 3d5 4s1, Cu là 3d10 4s1.",
+   "tags": [
+    "cau-hinh-electron",
+    "klechkovski",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.so-electron-toi-da-phan-lop",
+    "chemistry.thpt.bang-tuan-hoan.so-thu-tu-nhom-a"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.dien-tich-hat-nhan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Hạt nhân nguyên tử",
+   "name_vi": "Quan hệ số proton, số electron và điện tích hạt nhân",
+   "name_en": "Nuclear charge, protons and electrons",
+   "latex": "Z = P = E, \\quad q_{hn} = +Z e",
+   "vars": {
+    "Z": "số hiệu nguyên tử",
+    "P": "số proton",
+    "E": "số electron của nguyên tử trung hòa",
+    "q_{hn}": "điện tích hạt nhân",
+    "e": "điện tích nguyên tố"
+   },
+   "units": {
+    "q_{hn}": "C",
+    "e": "C"
+   },
+   "conditions": "Nguyên tử trung hòa về điện (không phải ion)",
+   "note": "e = 1.602e-19 C. Với ion M(n+) thì số electron bằng Z - n; với ion X(m-) thì bằng Z + m.",
+   "tags": [
+    "nguyen-tu",
+    "proton",
+    "electron"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.so-khoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.dieu-kien-ben-hat-nhan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Hạt nhân nguyên tử",
+   "name_vi": "Điều kiện bền của hạt nhân nguyên tử",
+   "name_en": "Stability condition of a nucleus",
+   "latex": "1 \\le \\dfrac{N}{Z} \\le 1.5",
+   "vars": {
+    "N": "số neutron",
+    "Z": "số proton"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho các nguyên tố bền có Z từ 2 đến 82; riêng hiđro nhẹ có N = 0",
+   "note": "Dùng để chặn nghiệm khi giải bài toán tìm Z từ tổng số hạt.",
+   "tags": [
+    "nguyen-tu",
+    "hat-nhan-ben",
+    "bien-luan"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.khoang-xac-dinh-z"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.khoang-xac-dinh-z",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Hạt nhân nguyên tử",
+   "name_vi": "Khoảng xác định số proton từ tổng số hạt",
+   "name_en": "Bounding Z from the total particle count",
+   "latex": "\\dfrac{S}{3.5} \\le Z \\le \\dfrac{S}{3}",
+   "vars": {
+    "S": "tổng số hạt cơ bản của nguyên tử",
+    "Z": "số proton"
+   },
+   "units": {},
+   "conditions": "Suy ra từ S = 2Z + N và điều kiện bền Z <= N <= 1.5Z; đúng với Z <= 82",
+   "note": "Sau khi chặn khoảng, thử các giá trị Z nguyên rồi kiểm tra lại điều kiện bền.",
+   "tags": [
+    "nguyen-tu",
+    "bai-toan-so-hat",
+    "bien-luan"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.tong-so-hat",
+    "chemistry.thpt.nguyen-tu.dieu-kien-ben-hat-nhan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.so-khoi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Hạt nhân nguyên tử",
+   "name_vi": "Số khối của hạt nhân nguyên tử",
+   "name_en": "Mass number",
+   "latex": "A = Z + N",
+   "vars": {
+    "A": "số khối",
+    "Z": "số proton (số hiệu nguyên tử)",
+    "N": "số neutron"
+   },
+   "units": {},
+   "conditions": "A, Z, N là các số nguyên dương (N có thể bằng 0 với hiđro nhẹ)",
+   "note": "Kí hiệu nguyên tử viết dạng A-X-Z với A ở trên, Z ở dưới. Số khối xấp xỉ nguyên tử khối tính theo amu.",
+   "tags": [
+    "nguyen-tu",
+    "so-khoi",
+    "hat-nhan"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.dien-tich-hat-nhan",
+    "chemistry.thpt.nguyen-tu.tong-so-hat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.tong-so-hat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Hạt nhân nguyên tử",
+   "name_vi": "Tổng số hạt cơ bản trong nguyên tử",
+   "name_en": "Total number of subatomic particles",
+   "latex": "S = P + N + E = 2Z + N",
+   "vars": {
+    "S": "tổng số hạt cơ bản",
+    "P": "số proton",
+    "N": "số neutron",
+    "E": "số electron",
+    "Z": "số hiệu nguyên tử"
+   },
+   "units": {},
+   "conditions": "Nguyên tử trung hòa; với ion phải cộng hoặc trừ số electron tương ứng",
+   "note": "Số hạt mang điện là 2Z, số hạt không mang điện là N. Hiệu số hạt mang điện và không mang điện bằng 2Z - N.",
+   "tags": [
+    "nguyen-tu",
+    "so-hat",
+    "bai-toan-so-hat"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.khoang-xac-dinh-z"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.khoi-luong-rieng-nguyen-tu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Kích thước nguyên tử",
+   "name_vi": "Khối lượng riêng của nguyên tử",
+   "name_en": "Density of an atom",
+   "latex": "D = \\dfrac{m_{nt}}{V} = \\dfrac{M}{N_{A} \\cdot \\dfrac{4}{3}\\pi r^{3}}",
+   "vars": {
+    "D": "khối lượng riêng của nguyên tử",
+    "m_{nt}": "khối lượng một nguyên tử",
+    "V": "thể tích một nguyên tử",
+    "M": "khối lượng mol nguyên tử",
+    "N_{A}": "hằng số Avogadro",
+    "r": "bán kính nguyên tử"
+   },
+   "units": {
+    "D": "g/cm^3",
+    "m_{nt}": "g",
+    "V": "cm^3",
+    "M": "g/mol",
+    "N_{A}": "1/mol",
+    "r": "cm"
+   },
+   "conditions": "Coi nguyên tử là hình cầu; nếu tính khối lượng riêng của tinh thể phải nhân thêm độ đặc khít",
+   "note": "Khối lượng một nguyên tử: m_nt = M/N_A (gam).",
+   "tags": [
+    "khoi-luong-rieng",
+    "nguyen-tu",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.the-tich-nguyen-tu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.the-tich-nguyen-tu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Kích thước nguyên tử",
+   "name_vi": "Thể tích nguyên tử theo bán kính",
+   "name_en": "Atomic volume from radius",
+   "latex": "V = \\dfrac{4}{3}\\pi r^{3}",
+   "vars": {
+    "V": "thể tích của một nguyên tử (coi là hình cầu)",
+    "r": "bán kính nguyên tử"
+   },
+   "units": {
+    "V": "cm^3",
+    "r": "cm"
+   },
+   "conditions": "Mô hình nguyên tử hình cầu",
+   "note": "1 nm = 1e-7 cm; 1 angstrom = 1e-8 cm = 0.1 nm. Bán kính nguyên tử cỡ 1e-8 cm.",
+   "tags": [
+    "ban-kinh-nguyen-tu",
+    "the-tich",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.khoi-luong-rieng-nguyen-tu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.nang-luong-ion-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Năng lượng ion hóa",
+   "name_vi": "Năng lượng ion hóa thứ nhất",
+   "name_en": "First ionization energy",
+   "latex": "\\mathrm{X}(g) \\rightarrow \\mathrm{X}^{+}(g) + 1e, \\quad \\Delta E = I_{1}",
+   "vars": {
+    "\\mathrm{X}(g)": "nguyên tử ở thể khí, trạng thái cơ bản",
+    "\\mathrm{X}^{+}(g)": "ion dương tạo thành ở thể khí",
+    "I_{1}": "năng lượng ion hóa thứ nhất"
+   },
+   "units": {
+    "I_{1}": "kJ/mol"
+   },
+   "conditions": "Nguyên tử ở thể khí, cô lập, trạng thái cơ bản",
+   "note": "Luôn có I1 < I2 < I3 < ... Trong một chu kì, I1 nói chung tăng theo chiều tăng của điện tích hạt nhân; trong một nhóm A, I1 giảm từ trên xuống.",
+   "tags": [
+    "nang-luong-ion-hoa",
+    "nguyen-tu",
+    "bang-tuan-hoan"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.quy-luat-bien-doi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.nang-luong-photon",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Năng lượng ion hóa",
+   "name_vi": "Năng lượng của photon hấp thụ hoặc phát xạ",
+   "name_en": "Photon energy",
+   "latex": "E = h\\nu = \\dfrac{hc}{\\lambda}",
+   "vars": {
+    "E": "năng lượng photon",
+    "h": "hằng số Planck",
+    "\\nu": "tần số bức xạ",
+    "c": "tốc độ ánh sáng trong chân không",
+    "\\lambda": "bước sóng bức xạ"
+   },
+   "units": {
+    "E": "J",
+    "h": "J.s",
+    "\\nu": "1/s",
+    "c": "m/s",
+    "\\lambda": "m"
+   },
+   "conditions": "Bức xạ điện từ trong chân không",
+   "note": "h = 6.626e-34 J.s; c = 2.998e8 m/s. Nhân với N_A để đổi sang J/mol.",
+   "tags": [
+    "photon",
+    "nang-luong",
+    "quang-pho"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.nang-luong-ion-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.so-electron-toi-da-lop",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Vỏ nguyên tử",
+   "name_vi": "Số electron tối đa trong lớp thứ n",
+   "name_en": "Maximum electrons in shell n",
+   "latex": "e_{max}(n) = 2n^{2}",
+   "vars": {
+    "e_{max}(n)": "số electron tối đa của lớp thứ n",
+    "n": "số thứ tự lớp electron"
+   },
+   "units": {},
+   "conditions": "Công thức đúng về mặt sức chứa lí thuyết với n từ 1 đến 4 trong chương trình phổ thông",
+   "note": "Lớp K (n=1): 2e; L (n=2): 8e; M (n=3): 18e; N (n=4): 32e.",
+   "tags": [
+    "cau-hinh-electron",
+    "lop-electron",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.so-electron-toi-da-phan-lop",
+    "chemistry.thpt.nguyen-tu.so-orbital-trong-lop"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.so-electron-toi-da-phan-lop",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Vỏ nguyên tử",
+   "name_vi": "Số electron tối đa trong một phân lớp",
+   "name_en": "Maximum electrons in a subshell",
+   "latex": "e_{max} = 2(2\\ell + 1) \\Rightarrow s:2,\\; p:6,\\; d:10,\\; f:14",
+   "vars": {
+    "e_{max}": "số electron tối đa của phân lớp",
+    "\\ell": "số lượng tử phụ (s: 0, p: 1, d: 2, f: 3)"
+   },
+   "units": {},
+   "conditions": "Theo nguyên lí Pauli: mỗi orbital chứa tối đa 2 electron có spin ngược nhau",
+   "note": "Số orbital của phân lớp bằng 2l + 1: s có 1, p có 3, d có 5, f có 7 orbital.",
+   "tags": [
+    "cau-hinh-electron",
+    "phan-lop",
+    "pauli"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.so-electron-toi-da-lop",
+    "chemistry.thpt.nguyen-tu.quy-tac-klechkovski"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.so-orbital-trong-lop",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Vỏ nguyên tử",
+   "name_vi": "Số orbital nguyên tử trong lớp thứ n",
+   "name_en": "Number of atomic orbitals in shell n",
+   "latex": "\\text{So AO} = n^{2}",
+   "vars": {
+    "n": "số thứ tự lớp electron",
+    "\\text{So AO}": "số orbital nguyên tử (AO) có trong lớp thứ n"
+   },
+   "units": {},
+   "conditions": "n là số nguyên dương",
+   "note": "Mỗi AO chứa tối đa 2 electron nên số electron tối đa của lớp là 2n^2.",
+   "tags": [
+    "orbital",
+    "lop-electron",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.so-electron-toi-da-lop"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.nguyen-tu-khoi-trung-binh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Đồng vị",
+   "name_vi": "Nguyên tử khối trung bình của nguyên tố có nhiều đồng vị",
+   "name_en": "Average atomic mass of isotopes",
+   "latex": "\\overline{A} = \\dfrac{A_{1}x_{1} + A_{2}x_{2} + \\cdots + A_{k}x_{k}}{100}",
+   "vars": {
+    "\\overline{A}": "nguyên tử khối trung bình",
+    "A_{i}": "số khối (nguyên tử khối) của đồng vị thứ i",
+    "x_{i}": "phần trăm số nguyên tử của đồng vị thứ i"
+   },
+   "units": {
+    "\\overline{A}": "amu",
+    "x_{i}": "%"
+   },
+   "conditions": "Tổng các phần trăm x_i bằng 100",
+   "note": "1 amu = 1.6605e-27 kg. Nguyên tử khối ghi trong bảng tuần hoàn là giá trị trung bình này.",
+   "tags": [
+    "dong-vi",
+    "nguyen-tu-khoi-trung-binh",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.phan-tram-hai-dong-vi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nguyen-tu.phan-tram-hai-dong-vi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Cấu tạo nguyên tử",
+   "subtopic": "Đồng vị",
+   "name_vi": "Phần trăm mỗi đồng vị khi nguyên tố có hai đồng vị",
+   "name_en": "Isotope abundances for a two-isotope element",
+   "latex": "x_{1} = \\dfrac{\\overline{A} - A_{2}}{A_{1} - A_{2}} \\times 100\\%, \\quad x_{2} = 100\\% - x_{1}",
+   "vars": {
+    "x_{1}": "phần trăm đồng vị 1",
+    "x_{2}": "phần trăm đồng vị 2",
+    "\\overline{A}": "nguyên tử khối trung bình",
+    "A_{1}": "số khối đồng vị 1",
+    "A_{2}": "số khối đồng vị 2"
+   },
+   "units": {
+    "x_{1}": "%",
+    "x_{2}": "%",
+    "\\overline{A}": "amu",
+    "A_{1}": "amu",
+    "A_{2}": "amu"
+   },
+   "conditions": "A1 khác A2; giá trị trung bình nằm giữa A1 và A2",
+   "note": "Đây chính là quy tắc đường chéo áp dụng cho hỗn hợp hai đồng vị.",
+   "tags": [
+    "dong-vi",
+    "duong-cheo",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nguyen-tu.nguyen-tu-khoi-trung-binh",
+    "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.dien-tich-hinh-thuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Công thức Lewis",
+   "name_vi": "Điện tích hình thức trong công thức Lewis",
+   "name_en": "Formal charge in a Lewis structure",
+   "latex": "FC = V - L - \\dfrac{B}{2}",
+   "vars": {
+    "FC": "điện tích hình thức của nguyên tử",
+    "V": "số electron hóa trị của nguyên tử tự do",
+    "L": "số electron không liên kết (electron riêng)",
+    "B": "số electron tham gia liên kết của nguyên tử đó"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho một công thức Lewis đã viết xong",
+   "note": "Công thức Lewis hợp lí nhất là công thức có các điện tích hình thức gần 0 nhất. Tổng FC bằng điện tích của tiểu phân.",
+   "tags": [
+    "cong-thuc-lewis",
+    "dien-tich-hinh-thuc",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.so-electron-hoa-tri-trong-lewis",
+    "chemistry.thpt.lien-ket.quy-tac-octet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.so-electron-hoa-tri-trong-lewis",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Công thức Lewis",
+   "name_vi": "Số cặp electron dùng chung khi viết công thức Lewis",
+   "name_en": "Number of shared electron pairs in a Lewis structure",
+   "latex": "\\text{So cap dung chung} = \\dfrac{\\text{So e can de du octet} - \\text{Tong so e hoa tri}}{2}",
+   "vars": {
+    "\\text{So e can de du octet}": "tổng số electron cần để mọi nguyên tử đạt octet (H cần 2)",
+    "\\text{Tong so e hoa tri}": "tổng số electron hóa trị của các nguyên tử, có hiệu chỉnh theo điện tích ion"
+   },
+   "units": {},
+   "conditions": "Phân tử hoặc ion tuân theo quy tắc octet",
+   "note": "Với ion âm cộng thêm số electron bằng điện tích; với ion dương trừ đi. Số electron riêng = tổng e hóa trị - 2 x số cặp dùng chung.",
+   "tags": [
+    "cong-thuc-lewis",
+    "octet",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.dien-tich-hinh-thuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.so-cap-electron-va-lai-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Lai hóa và hình học phân tử",
+   "name_vi": "Số cặp electron hóa trị, kiểu lai hóa và dạng hình học phân tử",
+   "name_en": "Steric number, hybridization and molecular geometry",
+   "latex": "SN = \\sigma + E : \\begin{cases} SN = 2 & sp,\\; \\text{thang, } 180^{\\circ} \\\\ SN = 3 & sp^{2},\\; \\text{tam giac phang, } 120^{\\circ} \\\\ SN = 4 & sp^{3},\\; \\text{tu dien, } 109.5^{\\circ} \\end{cases}",
+   "vars": {
+    "SN": "số cặp electron hóa trị quanh nguyên tử trung tâm",
+    "\\sigma": "số liên kết sigma với nguyên tử xung quanh",
+    "E": "số cặp electron hóa trị riêng của nguyên tử trung tâm"
+   },
+   "units": {},
+   "conditions": "Mô hình VSEPR; liên kết bội tính là một liên kết sigma",
+   "note": "Cặp electron riêng đẩy mạnh hơn nên làm giảm góc liên kết: CH4 109.5 độ, NH3 khoảng 107 độ, H2O khoảng 104.5 độ.",
+   "tags": [
+    "lai-hoa",
+    "vsepr",
+    "hinh-hoc-phan-tu"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.so-lien-ket-sigma-va-pi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.do-dai-lien-ket",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Năng lượng liên kết",
+   "name_vi": "Quan hệ giữa bậc liên kết, độ dài liên kết và năng lượng liên kết",
+   "name_en": "Bond order, bond length and bond energy",
+   "latex": "\\text{Bac lien ket} \\uparrow \\;\\Rightarrow\\; d \\downarrow \\;\\text{va}\\; E_{b} \\uparrow",
+   "vars": {
+    "d": "độ dài liên kết",
+    "E_{b}": "năng lượng liên kết"
+   },
+   "units": {
+    "d": "pm",
+    "E_{b}": "kJ/mol"
+   },
+   "conditions": "So sánh giữa các liên kết cùng loại nguyên tử",
+   "note": "Ví dụ với C-C: liên kết đơn khoảng 154 pm, liên kết đôi khoảng 134 pm, liên kết ba khoảng 120 pm. 1 pm = 1e-12 m.",
+   "tags": [
+    "do-dai-lien-ket",
+    "bac-lien-ket",
+    "nang-luong-lien-ket"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.nang-luong-lien-ket"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.nang-luong-lien-ket",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Năng lượng liên kết",
+   "name_vi": "Năng lượng liên kết",
+   "name_en": "Bond dissociation energy",
+   "latex": "E_{b}(\\mathrm{A-B}) : \\mathrm{AB}(g) \\rightarrow \\mathrm{A}(g) + \\mathrm{B}(g), \\; \\Delta H = +E_{b}",
+   "vars": {
+    "E_{b}(\\mathrm{A-B})": "năng lượng liên kết A-B",
+    "\\Delta H": "biến thiên enthalpy của quá trình phá vỡ liên kết"
+   },
+   "units": {
+    "E_{b}(\\mathrm{A-B})": "kJ/mol",
+    "\\Delta H": "kJ/mol"
+   },
+   "conditions": "Các chất ở thể khí; giá trị thường là năng lượng liên kết trung bình",
+   "note": "Phá vỡ liên kết luôn thu nhiệt (dấu dương), hình thành liên kết luôn tỏa nhiệt (dấu âm). Năng lượng liên kết càng lớn thì liên kết càng bền.",
+   "tags": [
+    "nang-luong-lien-ket",
+    "nhiet-hoa-hoc",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nang-luong-lien-ket",
+    "chemistry.thpt.lien-ket.do-dai-lien-ket"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.hieu-do-am-dien",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Phân loại liên kết",
+   "name_vi": "Hiệu độ âm điện và loại liên kết",
+   "name_en": "Electronegativity difference and bond type",
+   "latex": "\\Delta \\chi = \\left| \\chi_{A} - \\chi_{B} \\right| : \\begin{cases} 0 \\le \\Delta \\chi < 0.4 & \\text{cong hoa tri khong cuc} \\\\ 0.4 \\le \\Delta \\chi < 1.7 & \\text{cong hoa tri co cuc} \\\\ \\Delta \\chi \\ge 1.7 & \\text{lien ket ion} \\end{cases}",
+   "vars": {
+    "\\Delta \\chi": "hiệu độ âm điện giữa hai nguyên tử",
+    "\\chi_{A}": "độ âm điện của nguyên tử A",
+    "\\chi_{B}": "độ âm điện của nguyên tử B"
+   },
+   "units": {},
+   "conditions": "Dùng thang độ âm điện Pauling; chỉ mang tính quy ước tương đối",
+   "note": "Độ âm điện lớn nhất là F (3.98), nhỏ nhất trong các nguyên tố phổ biến là Cs (0.79).",
+   "tags": [
+    "do-am-dien",
+    "lien-ket-ion",
+    "cong-hoa-tri"
+   ],
+   "related": [
+    "chemistry.thpt.bang-tuan-hoan.quy-luat-bien-doi",
+    "chemistry.thpt.lien-ket.quy-tac-octet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.quy-tac-octet",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Quy tắc octet",
+   "name_vi": "Quy tắc octet (quy tắc bát tử)",
+   "name_en": "Octet rule",
+   "latex": "\\text{So electron lop ngoai cung sau lien ket} = 8 \\;(\\text{hoac } 2 \\text{ voi He, H, Li, Be})",
+   "vars": {
+    "\\text{So electron lop ngoai cung}": "số electron ở lớp ngoài cùng của nguyên tử trong phân tử hoặc ion"
+   },
+   "units": {},
+   "conditions": "Áp dụng tốt cho nguyên tố chu kì 2; nhiều ngoại lệ với nguyên tố chu kì 3 trở đi (SF6, PCl5, BF3, NO)",
+   "note": "Nguyên tử có xu hướng nhường, nhận hoặc góp chung electron để đạt cấu hình bền vững của khí hiếm gần nhất.",
+   "tags": [
+    "octet",
+    "lien-ket-hoa-hoc",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.hieu-do-am-dien",
+    "chemistry.thpt.lien-ket.dien-tich-hinh-thuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.enthalpy-tu-nhiet-luong-ke",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Nhiệt lượng kế",
+   "name_vi": "Biến thiên enthalpy xác định từ thí nghiệm nhiệt lượng kế",
+   "name_en": "Enthalpy change from calorimetry",
+   "latex": "\\Delta_{r}H = -\\dfrac{Q}{n}",
+   "vars": {
+    "\\Delta_{r}H": "biến thiên enthalpy của phản ứng",
+    "Q": "nhiệt lượng dung dịch nhận được",
+    "n": "số mol chất phản ứng hết theo phương trình"
+   },
+   "units": {
+    "\\Delta_{r}H": "J/mol",
+    "Q": "J",
+    "n": "mol"
+   },
+   "conditions": "Áp suất không đổi; hệ cách nhiệt tốt",
+   "note": "Dấu trừ vì nhiệt lượng dung dịch nhận được chính là nhiệt lượng phản ứng tỏa ra. Nhiệt độ tăng nghĩa là phản ứng tỏa nhiệt.",
+   "tags": [
+    "nhiet-luong-ke",
+    "enthalpy",
+    "thuc-hanh"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.nhiet-luong-nhiet-luong-ke",
+    "chemistry.thpt.nhiet-hoa.dau-cua-bien-thien-enthalpy"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.nhiet-luong-nhiet-luong-ke",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Nhiệt lượng kế",
+   "name_vi": "Nhiệt lượng trao đổi trong nhiệt lượng kế",
+   "name_en": "Heat exchanged in a calorimeter",
+   "latex": "Q = m \\cdot c \\cdot \\Delta t",
+   "vars": {
+    "Q": "nhiệt lượng dung dịch hấp thụ hoặc giải phóng",
+    "m": "khối lượng dung dịch trong nhiệt lượng kế",
+    "c": "nhiệt dung riêng của dung dịch",
+    "\\Delta t": "độ biến thiên nhiệt độ"
+   },
+   "units": {
+    "Q": "J",
+    "m": "g",
+    "c": "J/(g.K)",
+    "\\Delta t": "K"
+   },
+   "conditions": "Bỏ qua nhiệt lượng mà nhiệt lượng kế hấp thụ; dung dịch loãng",
+   "note": "Nhiệt dung riêng của nước c = 4.18 J/(g.K). Delta t tính theo độ C hay K đều cho cùng giá trị.",
+   "tags": [
+    "nhiet-luong-ke",
+    "nhiet-dung-rieng",
+    "thuc-hanh"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.enthalpy-tu-nhiet-luong-ke"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.nhiet-tao-thanh-chuan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Nhiệt tạo thành",
+   "name_vi": "Nhiệt tạo thành chuẩn của một chất",
+   "name_en": "Standard enthalpy of formation",
+   "latex": "\\Delta_{f}H_{298}^{0} \\;:\\; \\text{cac don chat ben} \\rightarrow 1\\;\\text{mol chat}, \\quad \\Delta_{f}H_{298}^{0}(\\text{don chat ben}) = 0",
+   "vars": {
+    "\\Delta_{f}H_{298}^{0}": "nhiệt tạo thành chuẩn (enthalpy tạo thành chuẩn) của chất"
+   },
+   "units": {
+    "\\Delta_{f}H_{298}^{0}": "kJ/mol"
+   },
+   "conditions": "Tạo thành đúng 1 mol chất từ các đơn chất bền nhất ở điều kiện chuẩn (1 bar, 298 K)",
+   "note": "Quy ước nhiệt tạo thành chuẩn của đơn chất ở dạng bền nhất bằng 0, ví dụ O2(g), N2(g), C(graphite), Br2(l).",
+   "tags": [
+    "nhiet-tao-thanh",
+    "enthalpy",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.nhiet-dot-chay",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Nhiệt đốt cháy",
+   "name_vi": "Nhiệt lượng tỏa ra khi đốt cháy nhiên liệu",
+   "name_en": "Heat released by burning a fuel",
+   "latex": "Q = n \\cdot \\left| \\Delta_{c}H_{298}^{0} \\right| = \\dfrac{m}{M} \\cdot \\left| \\Delta_{c}H_{298}^{0} \\right|",
+   "vars": {
+    "Q": "nhiệt lượng tỏa ra",
+    "n": "số mol nhiên liệu bị đốt cháy",
+    "\\Delta_{c}H_{298}^{0}": "nhiệt đốt cháy chuẩn của nhiên liệu",
+    "m": "khối lượng nhiên liệu",
+    "M": "khối lượng mol nhiên liệu"
+   },
+   "units": {
+    "Q": "kJ",
+    "n": "mol",
+    "\\Delta_{c}H_{298}^{0}": "kJ/mol",
+    "m": "g",
+    "M": "g/mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn 1 mol chất trong khí oxi dư ở điều kiện chuẩn",
+   "note": "Nhiệt đốt cháy luôn có giá trị âm vì phản ứng cháy luôn tỏa nhiệt.",
+   "tags": [
+    "nhiet-dot-chay",
+    "nhien-lieu",
+    "enthalpy"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.dau-cua-bien-thien-enthalpy",
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-dot-chay"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.dau-cua-bien-thien-enthalpy",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Phản ứng tỏa nhiệt và thu nhiệt",
+   "name_vi": "Dấu của biến thiên enthalpy trong phản ứng tỏa nhiệt và thu nhiệt",
+   "name_en": "Sign of enthalpy change: exothermic and endothermic",
+   "latex": "\\begin{cases} \\Delta_{r}H_{298}^{0} < 0 & \\text{phan ung toa nhiet} \\\\ \\Delta_{r}H_{298}^{0} > 0 & \\text{phan ung thu nhiet} \\end{cases}",
+   "vars": {
+    "\\Delta_{r}H_{298}^{0}": "biến thiên enthalpy chuẩn của phản ứng ở 298 K"
+   },
+   "units": {
+    "\\Delta_{r}H_{298}^{0}": "kJ/mol"
+   },
+   "conditions": "Điều kiện chuẩn: áp suất 1 bar, nhiệt độ thường lấy 298 K (25 độ C), chất ở trạng thái bền nhất",
+   "note": "Phản ứng tỏa nhiệt giải phóng năng lượng ra môi trường; phản ứng thu nhiệt cần cung cấp năng lượng.",
+   "tags": [
+    "enthalpy",
+    "toa-nhiet",
+    "thu-nhiet"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh",
+    "chemistry.thpt.nhiet-hoa.nhiet-tao-thanh-chuan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.enthalpy-theo-nang-luong-lien-ket",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Tính biến thiên enthalpy",
+   "name_vi": "Biến thiên enthalpy chuẩn tính theo năng lượng liên kết",
+   "name_en": "Reaction enthalpy from bond energies",
+   "latex": "\\Delta_{r}H_{298}^{0} = \\sum E_{b}(\\text{chat dau}) - \\sum E_{b}(\\text{san pham})",
+   "vars": {
+    "\\Delta_{r}H_{298}^{0}": "biến thiên enthalpy chuẩn của phản ứng",
+    "E_{b}": "năng lượng liên kết của từng liên kết, nhân với số liên kết tương ứng"
+   },
+   "units": {
+    "\\Delta_{r}H_{298}^{0}": "kJ/mol",
+    "E_{b}": "kJ/mol"
+   },
+   "conditions": "Chỉ áp dụng khi tất cả các chất trong phản ứng đều ở thể khí",
+   "note": "Ngược chiều với công thức theo nhiệt tạo thành: ở đây lấy chất đầu trừ sản phẩm, vì phá vỡ liên kết thu nhiệt.",
+   "tags": [
+    "enthalpy",
+    "nang-luong-lien-ket",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.nang-luong-lien-ket",
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-dot-chay",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Tính biến thiên enthalpy",
+   "name_vi": "Biến thiên enthalpy chuẩn tính theo nhiệt đốt cháy",
+   "name_en": "Reaction enthalpy from enthalpies of combustion",
+   "latex": "\\Delta_{r}H_{298}^{0} = \\sum \\Delta_{c}H_{298}^{0}(\\text{chat dau}) - \\sum \\Delta_{c}H_{298}^{0}(\\text{san pham})",
+   "vars": {
+    "\\Delta_{r}H_{298}^{0}": "biến thiên enthalpy chuẩn của phản ứng",
+    "\\Delta_{c}H_{298}^{0}": "nhiệt đốt cháy chuẩn của từng chất, nhân với hệ số tỉ lượng tương ứng"
+   },
+   "units": {
+    "\\Delta_{r}H_{298}^{0}": "kJ/mol",
+    "\\Delta_{c}H_{298}^{0}": "kJ/mol"
+   },
+   "conditions": "Mọi chất đều có nhiệt đốt cháy xác định ở điều kiện chuẩn (1 bar, 298 K); sản phẩm cháy quy về CO2(g) và H2O(l)",
+   "note": "Chú ý dấu ngược với công thức theo nhiệt tạo thành: ở đây lấy chất đầu trừ sản phẩm. Cả hai đều là hệ quả của định luật Hess.",
+   "tags": [
+    "nhiet-dot-chay",
+    "enthalpy",
+    "dinh-luat-hess"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.dinh-luat-hess",
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh",
+    "chemistry.thpt.nhiet-hoa.nhiet-dot-chay"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Tính biến thiên enthalpy",
+   "name_vi": "Biến thiên enthalpy chuẩn tính theo nhiệt tạo thành",
+   "name_en": "Reaction enthalpy from enthalpies of formation",
+   "latex": "\\Delta_{r}H_{298}^{0} = \\sum \\Delta_{f}H_{298}^{0}(\\text{san pham}) - \\sum \\Delta_{f}H_{298}^{0}(\\text{chat dau})",
+   "vars": {
+    "\\Delta_{r}H_{298}^{0}": "biến thiên enthalpy chuẩn của phản ứng",
+    "\\Delta_{f}H_{298}^{0}": "nhiệt tạo thành chuẩn của từng chất, nhân với hệ số tỉ lượng"
+   },
+   "units": {
+    "\\Delta_{r}H_{298}^{0}": "kJ/mol",
+    "\\Delta_{f}H_{298}^{0}": "kJ/mol"
+   },
+   "conditions": "Mọi chất ở điều kiện chuẩn; phải nhân nhiệt tạo thành với hệ số tỉ lượng tương ứng",
+   "note": "Mẹo nhớ: sản phẩm trừ chất đầu. Đây là hệ quả của định luật Hess.",
+   "tags": [
+    "enthalpy",
+    "nhiet-tao-thanh",
+    "hess"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.dinh-luat-hess",
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nang-luong-lien-ket"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.dinh-luat-hess",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Định luật Hess",
+   "name_vi": "Định luật Hess",
+   "name_en": "Hess's law",
+   "latex": "\\Delta_{r}H = \\Delta_{r}H_{1} + \\Delta_{r}H_{2} + \\cdots + \\Delta_{r}H_{k}",
+   "vars": {
+    "\\Delta_{r}H": "biến thiên enthalpy của phản ứng tổng",
+    "\\Delta_{r}H_{i}": "biến thiên enthalpy của giai đoạn thứ i"
+   },
+   "units": {
+    "\\Delta_{r}H": "kJ/mol",
+    "\\Delta_{r}H_{i}": "kJ/mol"
+   },
+   "conditions": "Cùng trạng thái đầu và trạng thái cuối; enthalpy là hàm trạng thái",
+   "note": "Nhiệt phản ứng chỉ phụ thuộc trạng thái đầu và cuối, không phụ thuộc đường đi hay số giai đoạn trung gian.",
+   "tags": [
+    "hess",
+    "enthalpy",
+    "nhiet-hoa-hoc"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.enthalpy-phan-ung-nghich",
+    "chemistry.thpt.nhiet-hoa.enthalpy-theo-nhiet-tao-thanh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.enthalpy-phan-ung-nghich",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Định luật Hess",
+   "name_vi": "Biến thiên enthalpy của phản ứng nghịch và khi nhân hệ số",
+   "name_en": "Enthalpy of the reverse and scaled reaction",
+   "latex": "\\Delta_{r}H_{\\text{nghich}} = -\\Delta_{r}H_{\\text{thuan}}, \\quad \\Delta_{r}H' = p \\cdot \\Delta_{r}H \\;\\text{khi nhan he so voi } p",
+   "vars": {
+    "\\Delta_{r}H_{\\text{thuan}}": "biến thiên enthalpy của phản ứng thuận",
+    "\\Delta_{r}H_{\\text{nghich}}": "biến thiên enthalpy của phản ứng nghịch",
+    "p": "hệ số nhân toàn phương trình",
+    "\\Delta_{r}H'": "biến thiên enthalpy sau khi nhân hệ số"
+   },
+   "units": {
+    "\\Delta_{r}H_{\\text{thuan}}": "kJ/mol",
+    "\\Delta_{r}H_{\\text{nghich}}": "kJ/mol",
+    "\\Delta_{r}H'": "kJ/mol"
+   },
+   "conditions": "Cùng điều kiện nhiệt độ và áp suất",
+   "note": "Vì vậy nếu phản ứng thuận tỏa nhiệt thì phản ứng nghịch thu nhiệt với cùng độ lớn.",
+   "tags": [
+    "enthalpy",
+    "hess",
+    "phan-ung-nghich"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.dinh-luat-hess",
+    "chemistry.thpt.can-bang.hang-so-can-bang-phan-ung-nghich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.cac-yeu-to-anh-huong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Các yếu tố ảnh hưởng",
+   "name_vi": "Các yếu tố ảnh hưởng đến tốc độ phản ứng",
+   "name_en": "Factors affecting reaction rate",
+   "latex": "v \\uparrow \\;\\text{khi}\\; C \\uparrow,\\; p_{khi} \\uparrow,\\; T \\uparrow,\\; S_{\\text{be mat}} \\uparrow,\\; \\text{co xuc tac}",
+   "vars": {
+    "v": "tốc độ phản ứng",
+    "C": "nồng độ chất phản ứng",
+    "p_{khi}": "áp suất của chất khí",
+    "T": "nhiệt độ",
+    "S_{\\text{be mat}}": "diện tích bề mặt tiếp xúc của chất rắn"
+   },
+   "units": {
+    "v": "mol/(L.s)",
+    "C": "mol/L",
+    "p_{khi}": "Pa",
+    "T": "K",
+    "S_{\\text{be mat}}": "m^2"
+   },
+   "conditions": "Yếu tố áp suất chỉ ảnh hưởng khi có chất khí tham gia phản ứng",
+   "note": "Chất xúc tác làm tăng tốc độ phản ứng nhưng không bị tiêu hao và không làm chuyển dịch cân bằng.",
+   "tags": [
+    "yeu-to-anh-huong",
+    "xuc-tac",
+    "toc-do-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.bieu-thuc-toc-do",
+    "chemistry.thpt.can-bang.nguyen-li-le-chatelier"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.toc-do-trung-binh-theo-mot-chat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Tốc độ trung bình",
+   "name_vi": "Tốc độ trung bình theo biến thiên nồng độ một chất",
+   "name_en": "Average rate from concentration change",
+   "latex": "\\overline{v} = -\\dfrac{\\Delta C_{\\text{chat dau}}}{\\Delta t} = +\\dfrac{\\Delta C_{\\text{san pham}}}{\\Delta t}",
+   "vars": {
+    "\\overline{v}": "tốc độ trung bình của phản ứng theo chất đang xét",
+    "\\Delta C": "biến thiên nồng độ của chất trong khoảng thời gian xét",
+    "\\Delta t": "khoảng thời gian"
+   },
+   "units": {
+    "\\overline{v}": "mol/(L.s)",
+    "\\Delta C": "mol/L",
+    "\\Delta t": "s"
+   },
+   "conditions": "Thể tích hệ không đổi; tốc độ luôn là đại lượng dương",
+   "note": "Dấu trừ đặt trước biến thiên nồng độ chất đầu vì nồng độ chất đầu giảm dần theo thời gian.",
+   "tags": [
+    "toc-do-phan-ung",
+    "toc-do-trung-binh",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.toc-do-trung-binh-tong-quat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.toc-do-trung-binh-tong-quat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Tốc độ trung bình",
+   "name_vi": "Tốc độ trung bình tổng quát của phản ứng",
+   "name_en": "General average reaction rate",
+   "latex": "\\overline{v} = -\\dfrac{1}{a}\\dfrac{\\Delta C_{A}}{\\Delta t} = -\\dfrac{1}{b}\\dfrac{\\Delta C_{B}}{\\Delta t} = \\dfrac{1}{c}\\dfrac{\\Delta C_{C}}{\\Delta t} = \\dfrac{1}{d}\\dfrac{\\Delta C_{D}}{\\Delta t}",
+   "vars": {
+    "\\overline{v}": "tốc độ trung bình của phản ứng",
+    "a": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "b": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "c": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "d": "hệ số tỉ lượng trong phương trình aA + bB -> cC + dD",
+    "\\Delta t": "khoảng thời gian",
+    "\\Delta C_{A}": "biến thiên nồng độ của các chất A, B, C, D trong khoảng thời gian xét",
+    "\\Delta C_{B}": "biến thiên nồng độ của các chất A, B, C, D trong khoảng thời gian xét",
+    "\\Delta C_{C}": "biến thiên nồng độ của các chất A, B, C, D trong khoảng thời gian xét",
+    "\\Delta C_{D}": "biến thiên nồng độ của các chất A, B, C, D trong khoảng thời gian xét"
+   },
+   "units": {
+    "\\overline{v}": "mol/(L.s)",
+    "\\Delta t": "s",
+    "\\Delta C_{A}": "mol/L",
+    "\\Delta C_{B}": "mol/L",
+    "\\Delta C_{C}": "mol/L",
+    "\\Delta C_{D}": "mol/L"
+   },
+   "conditions": "Phản ứng aA + bB -> cC + dD xảy ra trong hệ có thể tích không đổi",
+   "note": "Nhờ chia cho hệ số tỉ lượng, tốc độ phản ứng có giá trị duy nhất dù tính theo chất nào.",
+   "tags": [
+    "toc-do-phan-ung",
+    "he-so-ti-luong",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.toc-do-trung-binh-theo-mot-chat",
+    "chemistry.thpt.toc-do.bieu-thuc-toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.bac-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Định luật tác dụng khối lượng",
+   "name_vi": "Bậc chung của phản ứng",
+   "name_en": "Overall reaction order",
+   "latex": "\\text{Bac phan ung} = m + n",
+   "vars": {
+    "m": "bậc riêng theo chất A",
+    "n": "bậc riêng theo chất B"
+   },
+   "units": {},
+   "conditions": "Xác định từ biểu thức tốc độ thực nghiệm",
+   "note": "Đơn vị của k phụ thuộc bậc phản ứng: bậc 1 là 1/s, bậc 2 là L/(mol.s), bậc 0 là mol/(L.s).",
+   "tags": [
+    "bac-phan-ung",
+    "toc-do-phan-ung",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.bieu-thuc-toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.bieu-thuc-toc-do",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Định luật tác dụng khối lượng",
+   "name_vi": "Biểu thức tốc độ phản ứng",
+   "name_en": "Rate law expression",
+   "latex": "v = k \\left[ \\mathrm{A} \\right]^{m} \\left[ \\mathrm{B} \\right]^{n}",
+   "vars": {
+    "v": "tốc độ tức thời của phản ứng",
+    "k": "hằng số tốc độ phản ứng",
+    "\\left[ \\mathrm{A} \\right]": "nồng độ chất A",
+    "\\left[ \\mathrm{B} \\right]": "nồng độ chất B",
+    "m": "bậc phản ứng riêng theo A",
+    "n": "bậc phản ứng riêng theo B"
+   },
+   "units": {
+    "v": "mol/(L.s)",
+    "\\left[ \\mathrm{A} \\right]": "mol/L",
+    "\\left[ \\mathrm{B} \\right]": "mol/L"
+   },
+   "conditions": "m và n xác định bằng thực nghiệm; với phản ứng đơn giản (một giai đoạn) thì m, n bằng hệ số tỉ lượng",
+   "note": "Chất rắn nguyên chất và dung môi không xuất hiện trong biểu thức tốc độ. Khi mọi nồng độ bằng 1 mol/L thì v = k.",
+   "tags": [
+    "dinh-luat-tac-dung-khoi-luong",
+    "hang-so-toc-do",
+    "toc-do-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.bac-phan-ung",
+    "chemistry.thpt.toc-do.hang-so-toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.hang-so-toc-do",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Định luật tác dụng khối lượng",
+   "name_vi": "Ý nghĩa của hằng số tốc độ phản ứng",
+   "name_en": "Meaning of the rate constant",
+   "latex": "k = \\dfrac{v}{\\left[ \\mathrm{A} \\right]^{m} \\left[ \\mathrm{B} \\right]^{n}}",
+   "vars": {
+    "k": "hằng số tốc độ",
+    "v": "tốc độ phản ứng",
+    "\\left[ \\mathrm{A} \\right]": "nồng độ các chất phản ứng",
+    "\\left[ \\mathrm{B} \\right]": "nồng độ các chất phản ứng",
+    "m": "bậc riêng tương ứng",
+    "n": "bậc riêng tương ứng"
+   },
+   "units": {
+    "v": "mol/(L.s)",
+    "\\left[ \\mathrm{A} \\right]": "mol/L",
+    "\\left[ \\mathrm{B} \\right]": "mol/L"
+   },
+   "conditions": "k chỉ phụ thuộc bản chất phản ứng, nhiệt độ và chất xúc tác; không phụ thuộc nồng độ",
+   "note": "k càng lớn phản ứng xảy ra càng nhanh. Tăng nhiệt độ hoặc dùng xúc tác đều làm tăng k.",
+   "tags": [
+    "hang-so-toc-do",
+    "xuc-tac",
+    "toc-do-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.bieu-thuc-toc-do",
+    "chemistry.thpt.toc-do.quy-tac-vant-hoff"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.phuong-trinh-arrhenius",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Ảnh hưởng của nhiệt độ",
+   "name_vi": "Phương trình Arrhenius về sự phụ thuộc của hằng số tốc độ vào nhiệt độ",
+   "name_en": "Arrhenius equation",
+   "latex": "k = A\\,e^{-\\frac{E_{a}}{RT}} \\;\\Leftrightarrow\\; \\ln \\dfrac{k_{2}}{k_{1}} = \\dfrac{E_{a}}{R}\\left( \\dfrac{1}{T_{1}} - \\dfrac{1}{T_{2}} \\right)",
+   "vars": {
+    "k": "hằng số tốc độ phản ứng",
+    "A": "thừa số tần số (hằng số Arrhenius)",
+    "E_{a}": "năng lượng hoạt hóa của phản ứng",
+    "R": "hằng số khí",
+    "T": "nhiệt độ tuyệt đối",
+    "k_{1}": "hằng số tốc độ ở nhiệt độ T1",
+    "k_{2}": "hằng số tốc độ ở nhiệt độ T2",
+    "T_{1}": "nhiệt độ tuyệt đối thứ nhất",
+    "T_{2}": "nhiệt độ tuyệt đối thứ hai"
+   },
+   "units": {
+    "E_{a}": "J/mol",
+    "R": "J/(mol.K)",
+    "T": "K",
+    "T_{1}": "K",
+    "T_{2}": "K"
+   },
+   "conditions": "T tính theo Kelvin và T > 0; E_a không đổi trong khoảng nhiệt độ khảo sát; đơn vị của k và A phụ thuộc bậc phản ứng",
+   "note": "Kiến thức nâng cao (chuyên đề). R = 8.314 J/(mol.K). Đây là cơ sở định lượng của quy tắc Van't Hoff: E_a càng lớn thì tốc độ càng nhạy với nhiệt độ. Chất xúc tác làm giảm E_a nên làm tăng k.",
+   "tags": [
+    "arrhenius",
+    "nang-luong-hoat-hoa",
+    "toc-do-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.quy-tac-vant-hoff",
+    "chemistry.thpt.toc-do.hang-so-toc-do"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.quy-tac-vant-hoff",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Ảnh hưởng của nhiệt độ",
+   "name_vi": "Quy tắc Van't Hoff về ảnh hưởng của nhiệt độ",
+   "name_en": "Van't Hoff temperature rule",
+   "latex": "\\dfrac{v_{2}}{v_{1}} = \\gamma^{\\frac{T_{2} - T_{1}}{10}}",
+   "vars": {
+    "v_{1}": "tốc độ phản ứng ở nhiệt độ T1",
+    "v_{2}": "tốc độ phản ứng ở nhiệt độ T2",
+    "\\gamma": "hệ số nhiệt độ Van't Hoff",
+    "T_{1}": "nhiệt độ ban đầu",
+    "T_{2}": "nhiệt độ sau"
+   },
+   "units": {
+    "v_{1}": "mol/(L.s)",
+    "v_{2}": "mol/(L.s)",
+    "T_{1}": "K",
+    "T_{2}": "K"
+   },
+   "conditions": "Gamma thường nhận giá trị từ 2 đến 4; hiệu nhiệt độ tính theo độ C hoặc K đều cho cùng kết quả",
+   "note": "Ý nghĩa: cứ tăng 10 độ thì tốc độ phản ứng tăng gamma lần.",
+   "tags": [
+    "vant-hoff",
+    "nhiet-do",
+    "toc-do-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.thoi-gian-phan-ung-theo-vant-hoff",
+    "chemistry.thpt.toc-do.phuong-trinh-arrhenius"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.toc-do.thoi-gian-phan-ung-theo-vant-hoff",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "topic": "Tốc độ phản ứng",
+   "subtopic": "Ảnh hưởng của nhiệt độ",
+   "name_vi": "Thời gian phản ứng khi thay đổi nhiệt độ",
+   "name_en": "Reaction time change with temperature",
+   "latex": "\\dfrac{t_{1}}{t_{2}} = \\gamma^{\\frac{T_{2} - T_{1}}{10}}",
+   "vars": {
+    "t_{1}": "thời gian phản ứng ở nhiệt độ T1",
+    "t_{2}": "thời gian phản ứng ở nhiệt độ T2",
+    "\\gamma": "hệ số nhiệt độ",
+    "T_{1}": "nhiệt độ ban đầu",
+    "T_{2}": "nhiệt độ sau"
+   },
+   "units": {
+    "t_{1}": "s",
+    "t_{2}": "s",
+    "T_{1}": "K",
+    "T_{2}": "K"
+   },
+   "conditions": "Cùng lượng chất phản ứng và cùng mức độ chuyển hóa",
+   "note": "Thời gian tỉ lệ nghịch với tốc độ nên tăng nhiệt độ làm thời gian phản ứng giảm.",
+   "tags": [
+    "vant-hoff",
+    "thoi-gian",
+    "toc-do-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.toc-do.quy-tac-vant-hoff"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.nong-do-molan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Nồng độ molan",
+   "name_en": "Molality",
+   "latex": "C_{m} = \\dfrac{n_{ct}}{m_{dm}}",
+   "vars": {
+    "C_{m}": "nồng độ molan",
+    "n_{ct}": "số mol chất tan",
+    "m_{dm}": "khối lượng dung môi"
+   },
+   "units": {
+    "C_{m}": "mol/kg",
+    "n_{ct}": "mol",
+    "m_{dm}": "kg"
+   },
+   "conditions": "m_dm tính bằng kilogam (chỉ tính dung môi, không tính chất tan)",
+   "note": "Khác nồng độ mol ở chỗ nồng độ molan không phụ thuộc nhiệt độ vì dùng khối lượng thay cho thể tích.",
+   "tags": [
+    "dung-dich",
+    "nong-do-molan",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.nong-do-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.phan-mol",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Phần mol của một cấu tử",
+   "name_en": "Mole fraction",
+   "latex": "x_{i} = \\dfrac{n_{i}}{\\sum_{k} n_{k}}",
+   "vars": {
+    "x_{i}": "phần mol của cấu tử i",
+    "n_{i}": "số mol cấu tử i",
+    "n_{k}": "số mol của cấu tử thứ k trong hệ"
+   },
+   "units": {
+    "n_{i}": "mol",
+    "n_{k}": "mol"
+   },
+   "conditions": "Tổng số mol của hệ khác 0",
+   "note": "Phần mol không có đơn vị và tổng các phần mol trong hệ luôn bằng 1.",
+   "tags": [
+    "dung-dich",
+    "phan-mol",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.nong-do-molan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.pha-loang-theo-nong-do-phan-tram",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Pha chế dung dịch",
+   "name_vi": "Công thức pha loãng dung dịch theo nồng độ phần trăm",
+   "name_en": "Dilution formula (mass percent)",
+   "latex": "m_{1} \\cdot C_{1}\\% = m_{2} \\cdot C_{2}\\%",
+   "vars": {
+    "m_{1}": "khối lượng dung dịch ban đầu",
+    "C_{1}\\%": "nồng độ phần trăm ban đầu",
+    "m_{2}": "khối lượng dung dịch sau pha loãng",
+    "C_{2}\\%": "nồng độ phần trăm sau pha loãng"
+   },
+   "units": {
+    "m_{1}": "g",
+    "C_{1}\\%": "%",
+    "m_{2}": "g",
+    "C_{2}\\%": "%"
+   },
+   "conditions": "Khối lượng chất tan không đổi khi pha loãng bằng dung môi",
+   "note": "Khối lượng dung môi cần thêm: m_dm = m_2 - m_1.",
+   "tags": [
+    "pha-loang",
+    "nong-do-phan-tram",
+    "dung-dich"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.pha-loang-theo-nong-do-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.so-lien-ket-sigma-va-pi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Lai hóa và hình học phân tử",
+   "name_vi": "Số liên kết sigma và pi trong liên kết bội",
+   "name_en": "Sigma and pi bonds in multiple bonds",
+   "latex": "\\begin{cases} \\text{lien ket don} & 1\\sigma \\\\ \\text{lien ket doi} & 1\\sigma + 1\\pi \\\\ \\text{lien ket ba} & 1\\sigma + 2\\pi \\end{cases}",
+   "vars": {
+    "\\sigma": "liên kết sigma (xen phủ trục)",
+    "\\pi": "liên kết pi (xen phủ bên)"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho liên kết cộng hóa trị giữa các nguyên tử",
+   "note": "Liên kết sigma bền hơn liên kết pi; liên kết pi kém bền nên là trung tâm của phản ứng cộng.",
+   "tags": [
+    "lien-ket-sigma",
+    "lien-ket-pi",
+    "cong-hoa-tri"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.so-cap-electron-va-lai-hoa",
+    "chemistry.thpt.bao-toan.bao-toan-lien-ket-pi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.khoi-luong-rieng-chat-khi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Khối lượng riêng của chất khí",
+   "name_en": "Density of a gas",
+   "latex": "D = \\dfrac{M}{V_{m}} = \\dfrac{pM}{RT}",
+   "vars": {
+    "D": "khối lượng riêng của khí",
+    "M": "khối lượng mol của khí",
+    "V_{m}": "thể tích mol khí ở điều kiện đang xét",
+    "p": "áp suất",
+    "R": "hằng số khí",
+    "T": "nhiệt độ tuyệt đối"
+   },
+   "units": {
+    "D": "g/L",
+    "M": "g/mol",
+    "V_{m}": "L/mol",
+    "p": "bar",
+    "R": "L.bar/(mol.K)",
+    "T": "K"
+   },
+   "conditions": "Khí lí tưởng; để D ra g/L phải dùng p (bar), V_m (L/mol) và R = 0.08314 L.bar/(mol.K)",
+   "note": "Ở điều kiện chuẩn (25 độ C, 1 bar): D = M/24.79 (g/L); ở đktc (0 độ C, 1 atm): D = M/22.4 (g/L). Nếu dùng p (Pa) và R = 8.314 J/(mol.K) thì pM/(RT) cho kết quả theo g/m^3.",
+   "tags": [
+    "khoi-luong-rieng",
+    "khi",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.phuong-trinh-hai-trang-thai-khi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Phương trình liên hệ hai trạng thái của một lượng khí xác định",
+   "name_en": "Combined gas law for a fixed amount of gas",
+   "latex": "\\dfrac{p_{1}V_{1}}{T_{1}} = \\dfrac{p_{2}V_{2}}{T_{2}}",
+   "vars": {
+    "p_{1}": "áp suất ở trạng thái 1",
+    "V_{1}": "thể tích ở trạng thái 1",
+    "T_{1}": "nhiệt độ tuyệt đối ở trạng thái 1",
+    "p_{2}": "áp suất ở trạng thái 2",
+    "V_{2}": "thể tích ở trạng thái 2",
+    "T_{2}": "nhiệt độ tuyệt đối ở trạng thái 2"
+   },
+   "units": {
+    "p_{1}": "bar",
+    "V_{1}": "L",
+    "T_{1}": "K",
+    "p_{2}": "bar",
+    "V_{2}": "L",
+    "T_{2}": "K"
+   },
+   "conditions": "Cùng một lượng khí (số mol không đổi), khí lí tưởng; T phải tính theo Kelvin và T > 0; p1, p2 cùng đơn vị, V1, V2 cùng đơn vị",
+   "note": "Suy ra từ pV = nRT khi n không đổi. Dùng để quy thể tích khí đo ở điều kiện phòng về điều kiện chuẩn hoặc đktc.",
+   "tags": [
+    "khi-li-tuong",
+    "the-tich",
+    "chuyen-doi-dieu-kien"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong",
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Phương trình trạng thái khí lí tưởng",
+   "name_en": "Ideal gas equation",
+   "latex": "pV = nRT",
+   "vars": {
+    "p": "áp suất khí",
+    "V": "thể tích khí",
+    "n": "số mol khí",
+    "R": "hằng số khí lí tưởng",
+    "T": "nhiệt độ tuyệt đối"
+   },
+   "units": {
+    "p": "Pa",
+    "V": "m^3",
+    "n": "mol",
+    "R": "J/(mol.K)",
+    "T": "K"
+   },
+   "conditions": "Khí lí tưởng; T tính theo Kelvin: T(K) = t(độ C) + 273.15",
+   "note": "R = 8.314 J/(mol.K) khi p tính bằng Pa và V bằng m^3; R = 0.08206 L.atm/(mol.K) khi p bằng atm và V bằng L.",
+   "tags": [
+    "khi-li-tuong",
+    "phuong-trinh-trang-thai",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.so-mol-khi-dieu-kien-bat-ki",
+    "chemistry.thpt.dai-luong-co-ban.phuong-trinh-hai-trang-thai-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.so-mol-khi-dieu-kien-bat-ki",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Thể tích chất khí",
+   "name_vi": "Số mol khí ở điều kiện bất kì",
+   "name_en": "Moles of gas at arbitrary conditions",
+   "latex": "n = \\dfrac{pV}{RT}",
+   "vars": {
+    "n": "số mol khí",
+    "p": "áp suất khí",
+    "V": "thể tích khí",
+    "R": "hằng số khí lí tưởng",
+    "T": "nhiệt độ tuyệt đối"
+   },
+   "units": {
+    "n": "mol",
+    "p": "Pa",
+    "V": "m^3",
+    "R": "J/(mol.K)",
+    "T": "K"
+   },
+   "conditions": "Khí lí tưởng; đơn vị của p, V phải phù hợp với R",
+   "note": "Thay p = 1 bar, T = 298.15 K, R = 8.314 J/(mol.K) thu được V_m = 24.79 L/mol.",
+   "tags": [
+    "khi-li-tuong",
+    "mol",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong",
+    "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.bao-toan-electron",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn electron",
+   "name_vi": "Định luật bảo toàn electron",
+   "name_en": "Conservation of electrons",
+   "latex": "\\sum n_{e\\,\\text{nhuong}} = \\sum n_{e\\,\\text{nhan}}",
+   "vars": {
+    "n_{e\\,\\text{nhuong}}": "tổng số mol electron do các chất khử nhường",
+    "n_{e\\,\\text{nhan}}": "tổng số mol electron do các chất oxi hóa nhận"
+   },
+   "units": {
+    "n_{e\\,\\text{nhuong}}": "mol",
+    "n_{e\\,\\text{nhan}}": "mol"
+   },
+   "conditions": "Phản ứng oxi hóa - khử xảy ra hoàn toàn trong hệ đang xét",
+   "note": "Số mol electron của một chất: n_e = n_chat x (độ biến thiên số oxi hóa).",
+   "tags": [
+    "bao-toan-electron",
+    "oxi-hoa-khu",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.oxi-hoa-khu.thang-bang-electron",
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.bao-toan-nguyen-to",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn nguyên tố",
+   "name_vi": "Định luật bảo toàn nguyên tố",
+   "name_en": "Conservation of elements",
+   "latex": "\\sum n_{X\\,(\\text{truoc phan ung})} = \\sum n_{X\\,(\\text{sau phan ung})}",
+   "vars": {
+    "n_{X}": "tổng số mol nguyên tố X trong tất cả các chất"
+   },
+   "units": {
+    "n_{X}": "mol"
+   },
+   "conditions": "Không phải phản ứng hạt nhân; tính đủ mọi chất chứa nguyên tố X",
+   "note": "Ví dụ đốt cháy hiđrocacbon: n_C = n_CO2 và n_H = 2 n_H2O.",
+   "tags": [
+    "bao-toan-nguyen-to",
+    "dinh-luat",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.bao-toan-khoi-luong",
+    "chemistry.thpt.dai-luong-co-ban.so-mol-nguyen-to-trong-hop-chat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.hieu-suat-theo-chat-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Hiệu suất phản ứng",
+   "name_vi": "Hiệu suất phản ứng tính theo chất phản ứng",
+   "name_en": "Percent conversion based on a reactant",
+   "latex": "H\\% = \\dfrac{n_{\\text{da phan ung}}}{n_{\\text{ban dau}}} \\times 100\\%",
+   "vars": {
+    "H\\%": "hiệu suất (độ chuyển hóa)",
+    "n_{\\text{da phan ung}}": "số mol chất đã phản ứng",
+    "n_{\\text{ban dau}}": "số mol chất ban đầu"
+   },
+   "units": {
+    "H\\%": "%",
+    "n_{\\text{da phan ung}}": "mol",
+    "n_{\\text{ban dau}}": "mol"
+   },
+   "conditions": "Hiệu suất phải tính theo chất phản ứng hết trước (chất thiếu)",
+   "note": "So sánh tỉ lệ n/hệ số của các chất tham gia để xác định chất hết trước.",
+   "tags": [
+    "hieu-suat",
+    "do-chuyen-hoa",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.hieu-suat-phan-ung-theo-san-pham",
+    "chemistry.thpt.can-bang.hieu-suat-chuyen-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.khoi-luong-thuc-te-theo-hieu-suat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Hiệu suất phản ứng",
+   "name_vi": "Khối lượng sản phẩm thực tế theo hiệu suất",
+   "name_en": "Actual product mass from percent yield",
+   "latex": "m_{tt} = m_{lt} \\cdot \\dfrac{H\\%}{100}",
+   "vars": {
+    "m_{tt}": "khối lượng sản phẩm thực tế",
+    "m_{lt}": "khối lượng sản phẩm lí thuyết",
+    "H\\%": "hiệu suất phản ứng"
+   },
+   "units": {
+    "m_{tt}": "g",
+    "m_{lt}": "g",
+    "H\\%": "%"
+   },
+   "conditions": "0 < H% <= 100",
+   "note": "Ngược lại, lượng chất đầu cần dùng: m_dau = m_lt x 100/H%.",
+   "tags": [
+    "hieu-suat",
+    "san-pham",
+    "tinh-toan"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.hieu-suat-phan-ung-theo-san-pham"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.khoi-luong-dung-dich-sau-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Dung dịch sau phản ứng",
+   "name_vi": "Khối lượng dung dịch sau phản ứng",
+   "name_en": "Solution mass after a reaction",
+   "latex": "m_{dd\\,sau} = m_{cac\\,chat\\,cho\\,vao} - m_{\\downarrow} - m_{\\uparrow}",
+   "vars": {
+    "m_{dd\\,sau}": "khối lượng dung dịch sau phản ứng",
+    "m_{cac\\,chat\\,cho\\,vao}": "tổng khối lượng các chất đưa vào (dung dịch và chất tham gia)",
+    "m_{\\downarrow}": "khối lượng kết tủa tách ra",
+    "m_{\\uparrow}": "khối lượng khí thoát ra"
+   },
+   "units": {
+    "m_{dd\\,sau}": "g",
+    "m_{cac\\,chat\\,cho\\,vao}": "g",
+    "m_{\\downarrow}": "g",
+    "m_{\\uparrow}": "g"
+   },
+   "conditions": "Phản ứng xảy ra hoàn toàn trong dung dịch; kết tủa được tách khỏi dung dịch",
+   "note": "Hệ quả trực tiếp của định luật bảo toàn khối lượng; là bước bắt buộc để tính C% sau phản ứng.",
+   "tags": [
+    "dung-dich",
+    "bao-toan-khoi-luong",
+    "sau-phan-ung"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.bao-toan-khoi-luong",
+    "chemistry.thcs.dung-dich.nong-do-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.quan-he-cm-va-cphan-tram",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ dung dịch",
+   "name_vi": "Quan hệ giữa nồng độ mol và nồng độ phần trăm",
+   "name_en": "Relation between molarity and mass percent",
+   "latex": "C_{M} = \\dfrac{10 \\cdot D \\cdot C\\%}{M}",
+   "vars": {
+    "C_{M}": "nồng độ mol",
+    "D": "khối lượng riêng của dung dịch",
+    "C\\%": "nồng độ phần trăm",
+    "M": "khối lượng mol chất tan"
+   },
+   "units": {
+    "C_{M}": "mol/L",
+    "D": "g/mL",
+    "C\\%": "%",
+    "M": "g/mol"
+   },
+   "conditions": "D tính bằng g/mL, C% tính theo số phần trăm (ví dụ 98 chứ không phải 0.98)",
+   "note": "Hệ số 10 xuất hiện do đổi 1 L = 1000 mL và chia cho 100 của phần trăm.",
+   "tags": [
+    "dung-dich",
+    "nong-do-mol",
+    "nong-do-phan-tram"
+   ],
+   "related": [
+    "chemistry.thcs.dung-dich.nong-do-mol",
+    "chemistry.thcs.dung-dich.nong-do-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.pha-loang-theo-nong-do-mol",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Pha chế dung dịch",
+   "name_vi": "Công thức pha loãng dung dịch theo nồng độ mol",
+   "name_en": "Dilution formula (molarity)",
+   "latex": "C_{1}V_{1} = C_{2}V_{2}",
+   "vars": {
+    "C_{1}": "nồng độ mol dung dịch ban đầu",
+    "V_{1}": "thể tích dung dịch ban đầu",
+    "C_{2}": "nồng độ mol dung dịch sau pha loãng",
+    "V_{2}": "thể tích dung dịch sau pha loãng"
+   },
+   "units": {
+    "C_{1}": "mol/L",
+    "V_{1}": "L",
+    "C_{2}": "mol/L",
+    "V_{2}": "L"
+   },
+   "conditions": "Chỉ thêm dung môi, số mol chất tan không đổi",
+   "note": "Bản chất là bảo toàn số mol chất tan: n = C1V1 = C2V2. Khi pha loãng, luôn rót axit đặc vào nước, không làm ngược lại.",
+   "tags": [
+    "pha-loang",
+    "dung-dich",
+    "nong-do-mol"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.pha-loang-theo-nong-do-phan-tram",
+    "chemistry.thpt.dung-dich.tron-hai-dung-dich-cung-chat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-mol",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Pha chế dung dịch",
+   "name_vi": "Quy tắc đường chéo theo nồng độ mol",
+   "name_en": "Cross rule for molarity",
+   "latex": "\\dfrac{V_{1}}{V_{2}} = \\dfrac{\\left| C_{2} - C \\right|}{\\left| C - C_{1} \\right|}",
+   "vars": {
+    "V_{1}": "thể tích dung dịch 1",
+    "V_{2}": "thể tích dung dịch 2",
+    "C_{1}": "nồng độ mol dung dịch 1",
+    "C_{2}": "nồng độ mol dung dịch 2",
+    "C": "nồng độ mol dung dịch sau trộn"
+   },
+   "units": {
+    "V_{1}": "L",
+    "V_{2}": "L",
+    "C_{1}": "mol/L",
+    "C_{2}": "mol/L",
+    "C": "mol/L"
+   },
+   "conditions": "C nằm giữa C1 và C2; thể tích được coi là cộng tính",
+   "note": "Quy tắc đường chéo cũng áp dụng cho khối lượng mol trung bình của hỗn hợp khí.",
+   "tags": [
+    "duong-cheo",
+    "nong-do-mol",
+    "tron-dung-dich"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-phan-tram",
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-phan-tram",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Pha chế dung dịch",
+   "name_vi": "Quy tắc đường chéo theo nồng độ phần trăm",
+   "name_en": "Cross rule for mass percent",
+   "latex": "\\dfrac{m_{1}}{m_{2}} = \\dfrac{\\left| C_{2}\\% - C\\% \\right|}{\\left| C\\% - C_{1}\\% \\right|}",
+   "vars": {
+    "m_{1}": "khối lượng dung dịch 1",
+    "m_{2}": "khối lượng dung dịch 2",
+    "C_{1}\\%": "nồng độ dung dịch 1",
+    "C_{2}\\%": "nồng độ dung dịch 2",
+    "C\\%": "nồng độ dung dịch sau khi trộn"
+   },
+   "units": {
+    "m_{1}": "g",
+    "m_{2}": "g",
+    "C_{1}\\%": "%",
+    "C_{2}\\%": "%",
+    "C\\%": "%"
+   },
+   "conditions": "C% nằm giữa C1% và C2%; hai dung dịch cùng chất tan, không phản ứng",
+   "note": "Nước coi như dung dịch có C% = 0; chất tan nguyên chất coi như C% = 100.",
+   "tags": [
+    "duong-cheo",
+    "tron-dung-dich",
+    "nong-do-phan-tram"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.tron-hai-dung-dich-cung-chat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Pha chế dung dịch",
+   "name_vi": "Nồng độ mol khi trộn hai dung dịch cùng chất tan",
+   "name_en": "Molarity after mixing two solutions of the same solute",
+   "latex": "C_{M} = \\dfrac{C_{1}V_{1} + C_{2}V_{2}}{V_{1} + V_{2}}",
+   "vars": {
+    "C_{M}": "nồng độ mol sau khi trộn",
+    "C_{1}": "nồng độ dung dịch 1",
+    "V_{1}": "thể tích dung dịch 1",
+    "C_{2}": "nồng độ dung dịch 2",
+    "V_{2}": "thể tích dung dịch 2"
+   },
+   "units": {
+    "C_{M}": "mol/L",
+    "C_{1}": "mol/L",
+    "V_{1}": "L",
+    "C_{2}": "mol/L",
+    "V_{2}": "L"
+   },
+   "conditions": "Coi thể tích dung dịch sau trộn bằng tổng thể tích, không có phản ứng hóa học",
+   "note": "Nếu đề cho khối lượng riêng, phải tính thể tích thực tế thay vì cộng đơn thuần.",
+   "tags": [
+    "tron-dung-dich",
+    "nong-do-mol",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.quy-tac-duong-cheo-nong-do-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.so-oxi-hoa-trong-ion",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Số oxi hóa",
+   "name_vi": "Tổng số oxi hóa trong ion đa nguyên tử",
+   "name_en": "Sum of oxidation numbers in a polyatomic ion",
+   "latex": "\\sum_{i} x_{i} \\cdot \\text{SOH}_{i} = q_{ion}",
+   "vars": {
+    "x_{i}": "số nguyên tử của nguyên tố thứ i",
+    "\\text{SOH}_{i}": "số oxi hóa của nguyên tố thứ i",
+    "q_{ion}": "điện tích của ion"
+   },
+   "units": {},
+   "conditions": "Ion đa nguyên tử; điện tích tính theo đơn vị điện tích nguyên tố",
+   "note": "Ví dụ trong SO4 2-: SOH(S) + 4(-2) = -2 nên SOH(S) = +6. Với ion đơn nguyên tử, số oxi hóa bằng điện tích ion.",
+   "tags": [
+    "so-oxi-hoa",
+    "ion",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.so-oxi-hoa-trong-phan-tu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.lien-ket.so-oxi-hoa-trong-phan-tu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Liên kết hóa học",
+   "subtopic": "Số oxi hóa",
+   "name_vi": "Tổng số oxi hóa trong phân tử trung hòa",
+   "name_en": "Sum of oxidation numbers in a neutral molecule",
+   "latex": "\\sum_{i} x_{i} \\cdot \\text{SOH}_{i} = 0",
+   "vars": {
+    "x_{i}": "số nguyên tử của nguyên tố thứ i trong phân tử",
+    "\\text{SOH}_{i}": "số oxi hóa của nguyên tố thứ i"
+   },
+   "units": {},
+   "conditions": "Phân tử trung hòa điện",
+   "note": "Quy ước: số oxi hóa của đơn chất bằng 0; H thường là +1 (trừ hiđrua kim loại là -1); O thường là -2 (trừ peroxide là -1 và OF2 là +2).",
+   "tags": [
+    "so-oxi-hoa",
+    "quy-tac",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.lien-ket.so-oxi-hoa-trong-ion",
+    "chemistry.thpt.oxi-hoa-khu.thang-bang-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-hoa.nang-luong-tu-do-gibbs",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    12
+   ],
+   "topic": "Nhiệt hóa học",
+   "subtopic": "Chiều tự diễn biến",
+   "name_vi": "Biến thiên năng lượng tự do Gibbs",
+   "name_en": "Gibbs free energy change",
+   "latex": "\\Delta G = \\Delta H - T \\Delta S",
+   "vars": {
+    "\\Delta G": "biến thiên năng lượng tự do Gibbs",
+    "\\Delta H": "biến thiên enthalpy",
+    "T": "nhiệt độ tuyệt đối",
+    "\\Delta S": "biến thiên entropy"
+   },
+   "units": {
+    "\\Delta G": "J/mol",
+    "\\Delta H": "J/mol",
+    "T": "K",
+    "\\Delta S": "J/(mol.K)"
+   },
+   "conditions": "Nhiệt độ và áp suất không đổi; chú ý thống nhất đơn vị (kJ và J)",
+   "note": "Kiến thức nâng cao. Delta G < 0: quá trình tự diễn biến; Delta G = 0: hệ ở cân bằng; Delta G > 0: không tự diễn biến.",
+   "tags": [
+    "gibbs",
+    "entropy",
+    "nang-cao"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.quan-he-gibbs-va-suc-dien-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxi-hoa-khu.can-bang-dien-tich-nua-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Phản ứng oxi hóa - khử",
+   "subtopic": "Cân bằng phản ứng",
+   "name_vi": "Điều kiện cân bằng điện tích của nửa phản ứng",
+   "name_en": "Charge balance condition for a half-reaction",
+   "latex": "\\sum q_{\\text{ve trai}} = \\sum q_{\\text{ve phai}}",
+   "vars": {
+    "q_{\\text{ve trai}}": "tổng điện tích các tiểu phân ở vế trái",
+    "q_{\\text{ve phai}}": "tổng điện tích các tiểu phân ở vế phải"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho mỗi nửa phản ứng và cho phương trình ion rút gọn",
+   "note": "Kiểm tra đồng thời hai điều kiện: bảo toàn nguyên tố và bảo toàn điện tích.",
+   "tags": [
+    "ion-electron",
+    "bao-toan-dien-tich",
+    "can-bang-phuong-trinh"
+   ],
+   "related": [
+    "chemistry.thpt.oxi-hoa-khu.phuong-phap-ion-electron",
+    "chemistry.thpt.bao-toan.bao-toan-dien-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxi-hoa-khu.phuong-phap-ion-electron",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Phản ứng oxi hóa - khử",
+   "subtopic": "Cân bằng phản ứng",
+   "name_vi": "Phương pháp ion - electron (nửa phản ứng) trong môi trường acid",
+   "name_en": "Half-reaction (ion-electron) method in acidic medium",
+   "latex": "\\mathrm{MnO_{4}^{-}} + 8\\mathrm{H^{+}} + 5e \\rightarrow \\mathrm{Mn^{2+}} + 4\\mathrm{H_{2}O}",
+   "vars": {
+    "\\mathrm{MnO_{4}^{-}}": "ion permanganate (chất oxi hóa)",
+    "\\mathrm{H^{+}}": "ion hiđro của môi trường acid",
+    "e": "electron",
+    "\\mathrm{Mn^{2+}}": "ion manganese(II) sản phẩm khử",
+    "\\mathrm{H_{2}O}": "phân tử nước dùng để cân bằng nguyên tố oxi"
+   },
+   "units": {},
+   "conditions": "Phản ứng trong dung dịch; môi trường acid dùng H+ và H2O để cân bằng O và H",
+   "note": "Quy tắc: thiếu O thì thêm H2O ở vế thiếu và H+ ở vế kia (môi trường acid); trong môi trường base dùng OH- và H2O. Cân bằng điện tích hai vế bằng cách thêm electron.",
+   "tags": [
+    "ion-electron",
+    "nua-phan-ung",
+    "oxi-hoa-khu"
+   ],
+   "related": [
+    "chemistry.thpt.oxi-hoa-khu.thang-bang-electron",
+    "chemistry.thpt.oxi-hoa-khu.can-bang-dien-tich-nua-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxi-hoa-khu.so-mol-electron-trao-doi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Phản ứng oxi hóa - khử",
+   "subtopic": "Cân bằng phản ứng",
+   "name_vi": "Số mol electron trao đổi của một chất",
+   "name_en": "Moles of electrons transferred by a species",
+   "latex": "n_{e} = n_{\\text{chat}} \\cdot \\left| \\Delta \\text{SOH} \\right| \\cdot k",
+   "vars": {
+    "n_{e}": "số mol electron nhường hoặc nhận",
+    "n_{\\text{chat}}": "số mol chất tham gia",
+    "\\Delta \\text{SOH}": "độ biến thiên số oxi hóa của nguyên tố",
+    "k": "số nguyên tử của nguyên tố đó trong một phân tử chất"
+   },
+   "units": {
+    "n_{e}": "mol",
+    "n_{\\text{chat}}": "mol"
+   },
+   "conditions": "Nguyên tố có thay đổi số oxi hóa",
+   "note": "Ví dụ 1 mol Al nhường 3 mol electron; 1 mol N trong HNO3 tạo NO nhận 3 mol electron, tạo NO2 nhận 1 mol electron.",
+   "tags": [
+    "oxi-hoa-khu",
+    "bao-toan-electron",
+    "tinh-toan"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.bao-toan-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxi-hoa-khu.thang-bang-electron",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Phản ứng oxi hóa - khử",
+   "subtopic": "Cân bằng phản ứng",
+   "name_vi": "Phương pháp thăng bằng electron",
+   "name_en": "Oxidation number (electron balance) method",
+   "latex": "a \\times \\left( \\mathrm{X}^{x_{1}} \\rightarrow \\mathrm{X}^{x_{2}} + p e \\right), \\quad b \\times \\left( \\mathrm{Y}^{y_{1}} + q e \\rightarrow \\mathrm{Y}^{y_{2}} \\right), \\quad a\\,p = b\\,q",
+   "vars": {
+    "a": "hệ số của quá trình oxi hóa",
+    "b": "hệ số của quá trình khử",
+    "p": "số electron nhường của một nguyên tử chất khử",
+    "q": "số electron nhận của một nguyên tử chất oxi hóa",
+    "x_{1}": "số oxi hóa của nguyên tố X trước và sau phản ứng",
+    "x_{2}": "số oxi hóa của nguyên tố X trước và sau phản ứng",
+    "y_{1}": "số oxi hóa của nguyên tố Y trước và sau phản ứng",
+    "y_{2}": "số oxi hóa của nguyên tố Y trước và sau phản ứng"
+   },
+   "units": {},
+   "conditions": "Phản ứng oxi hóa - khử; a, b chọn là bội chung nhỏ nhất để tổng e nhường bằng tổng e nhận",
+   "note": "Bốn bước: xác định số oxi hóa; viết quá trình oxi hóa và quá trình khử; tìm hệ số thăng bằng electron; đặt hệ số vào phương trình và kiểm tra.",
+   "tags": [
+    "oxi-hoa-khu",
+    "can-bang-phuong-trinh",
+    "thang-bang-electron"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.bao-toan-electron",
+    "chemistry.thpt.oxi-hoa-khu.phuong-phap-ion-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxi-hoa-khu.chat-khu-chat-oxi-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Phản ứng oxi hóa - khử",
+   "subtopic": "Khái niệm",
+   "name_vi": "Xác định chất khử và chất oxi hóa",
+   "name_en": "Identifying oxidizing and reducing agents",
+   "latex": "\\begin{cases} \\text{Chat khu}: \\text{SOH tang, nhuong } e,\\; \\text{bi oxi hoa} \\\\ \\text{Chat oxi hoa}: \\text{SOH giam, nhan } e,\\; \\text{bi khu} \\end{cases}",
+   "vars": {
+    "\\text{SOH}": "số oxi hóa của nguyên tố",
+    "e": "electron"
+   },
+   "units": {},
+   "conditions": "Phản ứng có sự thay đổi số oxi hóa của ít nhất một nguyên tố",
+   "note": "Mẹo nhớ: khử cho - o nhận (chất khử cho electron, chất oxi hóa nhận electron).",
+   "tags": [
+    "oxi-hoa-khu",
+    "chat-khu",
+    "chat-oxi-hoa"
+   ],
+   "related": [
+    "chemistry.thpt.oxi-hoa-khu.thang-bang-electron",
+    "chemistry.thpt.lien-ket.so-oxi-hoa-trong-phan-tu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Hỗn hợp khí",
+   "name_vi": "Khối lượng mol trung bình của hỗn hợp",
+   "name_en": "Average molar mass of a mixture",
+   "latex": "\\overline{M} = \\dfrac{m_{hh}}{n_{hh}} = \\dfrac{\\sum n_{i} M_{i}}{\\sum n_{i}}",
+   "vars": {
+    "\\overline{M}": "khối lượng mol trung bình của hỗn hợp",
+    "m_{hh}": "tổng khối lượng hỗn hợp",
+    "n_{hh}": "tổng số mol hỗn hợp",
+    "n_{i}": "số mol chất thứ i",
+    "M_{i}": "khối lượng mol chất thứ i"
+   },
+   "units": {
+    "\\overline{M}": "g/mol",
+    "m_{hh}": "g",
+    "n_{hh}": "mol",
+    "n_{i}": "mol",
+    "M_{i}": "g/mol"
+   },
+   "conditions": "Hỗn hợp không xảy ra phản ứng; n_hh > 0",
+   "note": "Luôn có M_min < M_trung bình < M_max, dùng để chặn khoảng khi biện luận.",
+   "tags": [
+    "hon-hop-khi",
+    "khoi-luong-mol-trung-binh",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh-theo-phan-tram",
+    "chemistry.thpt.dai-cuong.ti-khoi-chat-khi",
+    "chemistry.thpt.dot-chay.so-c-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh-theo-phan-tram",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Hỗn hợp khí",
+   "name_vi": "Khối lượng mol trung bình theo phần trăm thể tích",
+   "name_en": "Average molar mass from volume percentages",
+   "latex": "\\overline{M} = \\dfrac{M_{1}\\%V_{1} + M_{2}\\%V_{2} + \\cdots + M_{k}\\%V_{k}}{100}",
+   "vars": {
+    "\\overline{M}": "khối lượng mol trung bình",
+    "M_{i}": "khối lượng mol khí thứ i",
+    "\\%V_{i}": "phần trăm thể tích khí thứ i"
+   },
+   "units": {
+    "\\overline{M}": "g/mol",
+    "M_{i}": "g/mol",
+    "\\%V_{i}": "%"
+   },
+   "conditions": "Các khí đo cùng điều kiện; tổng %V bằng 100%",
+   "note": "Với chất khí, phần trăm thể tích bằng phần trăm số mol (định luật Avogadro).",
+   "tags": [
+    "hon-hop-khi",
+    "phan-tram-the-tich",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh",
+    "chemistry.thcs.dai-luong-co-ban.phan-tram-the-tich-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-luong-co-ban.so-mol-nguyen-to-trong-hop-chat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Đại lượng cơ bản",
+   "subtopic": "Mol và khối lượng mol",
+   "name_vi": "Số mol nguyên tố trong hợp chất",
+   "name_en": "Moles of an element within a compound",
+   "latex": "n_{A} = x \\cdot n_{A_{x}B_{y}}",
+   "vars": {
+    "n_{A}": "số mol nguyên tố A",
+    "x": "chỉ số của A trong công thức",
+    "n_{A_{x}B_{y}}": "số mol hợp chất"
+   },
+   "units": {
+    "n_{A}": "mol",
+    "n_{A_{x}B_{y}}": "mol"
+   },
+   "conditions": "Hợp chất có công thức phân tử xác định",
+   "note": "Là bước trung gian bắt buộc khi áp dụng định luật bảo toàn nguyên tố.",
+   "tags": [
+    "mol",
+    "bao-toan-nguyen-to",
+    "hop-chat"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.bao-toan-nguyen-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.thuong-so-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Chiều chuyển dịch",
+   "name_vi": "Thương số phản ứng và chiều diễn biến",
+   "name_en": "Reaction quotient and direction of change",
+   "latex": "Q_{C} = \\dfrac{C_{\\mathrm{C}}^{c} C_{\\mathrm{D}}^{d}}{C_{\\mathrm{A}}^{a} C_{\\mathrm{B}}^{b}} : \\begin{cases} Q_{C} < K_{C} & \\text{phan ung theo chieu thuan} \\\\ Q_{C} = K_{C} & \\text{he da can bang} \\\\ Q_{C} > K_{C} & \\text{phan ung theo chieu nghich} \\end{cases}",
+   "vars": {
+    "Q_{C}": "thương số phản ứng tại thời điểm đang xét",
+    "C_{\\mathrm{A}}": "nồng độ tức thời của các chất",
+    "C_{\\mathrm{B}}": "nồng độ tức thời của các chất",
+    "C_{\\mathrm{C}}": "nồng độ tức thời của các chất",
+    "C_{\\mathrm{D}}": "nồng độ tức thời của các chất",
+    "K_{C}": "hằng số cân bằng"
+   },
+   "units": {
+    "C_{\\mathrm{A}}": "mol/L",
+    "C_{\\mathrm{B}}": "mol/L",
+    "C_{\\mathrm{C}}": "mol/L",
+    "C_{\\mathrm{D}}": "mol/L"
+   },
+   "conditions": "Q có biểu thức giống K nhưng dùng nồng độ ở thời điểm bất kì, không nhất thiết ở cân bằng",
+   "note": "Cách nhớ: hệ luôn biến đổi theo chiều làm Q tiến về K.",
+   "tags": [
+    "thuong-so-phan-ung",
+    "can-bang-hoa-hoc",
+    "chieu-phan-ung"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.hang-so-can-bang-kc",
+    "chemistry.thpt.can-bang.nguyen-li-le-chatelier"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.nguyen-li-le-chatelier",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Chuyển dịch cân bằng",
+   "name_vi": "Nguyên lí chuyển dịch cân bằng Le Chatelier",
+   "name_en": "Le Chatelier's principle",
+   "latex": "\\begin{cases} C \\uparrow \\text{cua mot chat} & \\text{can bang chuyen theo chieu lam giam chat do} \\\\ p \\uparrow & \\text{chuyen ve phia co tong so mol khi nho hon} \\\\ T \\uparrow & \\text{chuyen theo chieu thu nhiet } (\\Delta_{r}H > 0) \\end{cases}",
+   "vars": {
+    "C": "nồng độ chất trong hệ cân bằng",
+    "p": "áp suất chung của hệ",
+    "T": "nhiệt độ",
+    "\\Delta_{r}H": "biến thiên enthalpy của phản ứng thuận"
+   },
+   "units": {
+    "C": "mol/L",
+    "p": "bar",
+    "T": "K",
+    "\\Delta_{r}H": "kJ/mol"
+   },
+   "conditions": "Hệ đang ở trạng thái cân bằng và chịu một tác động từ bên ngoài",
+   "note": "Chất xúc tác không làm chuyển dịch cân bằng, chỉ giúp hệ đạt cân bằng nhanh hơn. Áp suất không ảnh hưởng khi tổng số mol khí hai vế bằng nhau.",
+   "tags": [
+    "le-chatelier",
+    "chuyen-dich-can-bang",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.thuong-so-phan-ung",
+    "chemistry.thpt.toc-do.cac-yeu-to-anh-huong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.hieu-suat-chuyen-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Hiệu suất chuyển hóa",
+   "name_vi": "Hiệu suất chuyển hóa tại trạng thái cân bằng",
+   "name_en": "Equilibrium conversion",
+   "latex": "\\alpha = \\dfrac{n_{0} - n_{cb}}{n_{0}} \\times 100\\%",
+   "vars": {
+    "\\alpha": "hiệu suất (độ) chuyển hóa của chất đang xét",
+    "n_{0}": "số mol chất ban đầu",
+    "n_{cb}": "số mol chất còn lại ở trạng thái cân bằng"
+   },
+   "units": {
+    "\\alpha": "%",
+    "n_{0}": "mol",
+    "n_{cb}": "mol"
+   },
+   "conditions": "Hệ đã đạt trạng thái cân bằng; n0 > 0",
+   "note": "Do phản ứng thuận nghịch không xảy ra hoàn toàn nên hiệu suất chuyển hóa luôn nhỏ hơn 100%.",
+   "tags": [
+    "hieu-suat-chuyen-hoa",
+    "can-bang-hoa-hoc",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.hieu-suat-theo-chat-phan-ung",
+    "chemistry.thpt.can-bang.hang-so-can-bang-kc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.ap-suat-rieng-phan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Hằng số cân bằng",
+   "name_vi": "Áp suất riêng phần của một khí trong hỗn hợp",
+   "name_en": "Partial pressure of a gas in a mixture",
+   "latex": "p_{i} = x_{i} \\cdot P = \\dfrac{n_{i}}{n_{hh}} \\cdot P",
+   "vars": {
+    "p_{i}": "áp suất riêng phần của khí i",
+    "x_{i}": "phần mol của khí i",
+    "P": "áp suất tổng của hỗn hợp",
+    "n_{i}": "số mol khí i",
+    "n_{hh}": "tổng số mol khí"
+   },
+   "units": {
+    "p_{i}": "bar",
+    "P": "bar",
+    "n_{i}": "mol",
+    "n_{hh}": "mol"
+   },
+   "conditions": "Hỗn hợp khí lí tưởng (định luật Dalton)",
+   "note": "Tổng các áp suất riêng phần bằng áp suất tổng của hỗn hợp khí.",
+   "tags": [
+    "ap-suat-rieng-phan",
+    "dalton",
+    "hon-hop-khi"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.hang-so-can-bang-kp",
+    "chemistry.thpt.dung-dich.phan-mol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.hang-so-can-bang-kc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Hằng số cân bằng",
+   "name_vi": "Hằng số cân bằng theo nồng độ",
+   "name_en": "Equilibrium constant in terms of concentration",
+   "latex": "K_{C} = \\dfrac{\\left[ \\mathrm{C} \\right]^{c} \\left[ \\mathrm{D} \\right]^{d}}{\\left[ \\mathrm{A} \\right]^{a} \\left[ \\mathrm{B} \\right]^{b}}",
+   "vars": {
+    "K_{C}": "hằng số cân bằng theo nồng độ",
+    "\\left[ \\mathrm{A} \\right]": "nồng độ các chất đầu ở trạng thái cân bằng",
+    "\\left[ \\mathrm{B} \\right]": "nồng độ các chất đầu ở trạng thái cân bằng",
+    "\\left[ \\mathrm{C} \\right]": "nồng độ các sản phẩm ở trạng thái cân bằng",
+    "\\left[ \\mathrm{D} \\right]": "nồng độ các sản phẩm ở trạng thái cân bằng",
+    "a": "hệ số tỉ lượng của phản ứng aA + bB <=> cC + dD",
+    "b": "hệ số tỉ lượng của phản ứng aA + bB <=> cC + dD",
+    "c": "hệ số tỉ lượng của phản ứng aA + bB <=> cC + dD",
+    "d": "hệ số tỉ lượng của phản ứng aA + bB <=> cC + dD"
+   },
+   "units": {},
+   "conditions": "Phản ứng thuận nghịch đã đạt cân bằng; không đưa chất rắn nguyên chất và dung môi vào biểu thức",
+   "note": "K_C chỉ phụ thuộc bản chất phản ứng và nhiệt độ. K_C càng lớn thì cân bằng càng chuyển dịch về phía sản phẩm.",
+   "tags": [
+    "can-bang-hoa-hoc",
+    "hang-so-can-bang",
+    "kc"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.hang-so-can-bang-kp",
+    "chemistry.thpt.can-bang.thuong-so-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.hang-so-can-bang-kp",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Hằng số cân bằng",
+   "name_vi": "Hằng số cân bằng theo áp suất riêng phần",
+   "name_en": "Equilibrium constant in terms of partial pressures",
+   "latex": "K_{p} = \\dfrac{p_{\\mathrm{C}}^{c} \\, p_{\\mathrm{D}}^{d}}{p_{\\mathrm{A}}^{a} \\, p_{\\mathrm{B}}^{b}}",
+   "vars": {
+    "K_{p}": "hằng số cân bằng theo áp suất",
+    "p_{\\mathrm{A}}": "áp suất riêng phần của các chất đầu ở cân bằng",
+    "p_{\\mathrm{B}}": "áp suất riêng phần của các chất đầu ở cân bằng",
+    "p_{\\mathrm{C}}": "áp suất riêng phần của các sản phẩm ở cân bằng",
+    "p_{\\mathrm{D}}": "áp suất riêng phần của các sản phẩm ở cân bằng",
+    "a": "hệ số tỉ lượng",
+    "b": "hệ số tỉ lượng",
+    "c": "hệ số tỉ lượng",
+    "d": "hệ số tỉ lượng"
+   },
+   "units": {
+    "p_{\\mathrm{A}}": "bar",
+    "p_{\\mathrm{B}}": "bar",
+    "p_{\\mathrm{C}}": "bar",
+    "p_{\\mathrm{D}}": "bar"
+   },
+   "conditions": "Chỉ áp dụng cho các chất ở thể khí; áp suất quy chiếu theo áp suất chuẩn 1 bar",
+   "note": "Áp suất riêng phần của khí i: p_i = x_i x P, trong đó x_i là phần mol và P là áp suất tổng.",
+   "tags": [
+    "can-bang-hoa-hoc",
+    "kp",
+    "ap-suat-rieng-phan"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.quan-he-kp-kc",
+    "chemistry.thpt.can-bang.ap-suat-rieng-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.hang-so-can-bang-phan-ung-nghich",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Hằng số cân bằng",
+   "name_vi": "Hằng số cân bằng của phản ứng nghịch và khi nhân hệ số",
+   "name_en": "Equilibrium constant for reverse and scaled reactions",
+   "latex": "K_{nghich} = \\dfrac{1}{K_{thuan}}, \\quad K' = K^{p} \\;\\text{khi nhan he so voi } p",
+   "vars": {
+    "K_{thuan}": "hằng số cân bằng của phản ứng thuận",
+    "K_{nghich}": "hằng số cân bằng của phản ứng nghịch",
+    "K'": "hằng số cân bằng của phản ứng sau khi nhân hệ số",
+    "p": "hệ số nhân cho toàn bộ phương trình"
+   },
+   "units": {},
+   "conditions": "Cùng nhiệt độ",
+   "note": "Khi cộng hai phương trình, hằng số cân bằng của phản ứng tổng bằng tích các hằng số thành phần.",
+   "tags": [
+    "hang-so-can-bang",
+    "phan-ung-nghich",
+    "can-bang-hoa-hoc"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.hang-so-can-bang-kc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.can-bang.quan-he-kp-kc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Cân bằng hóa học",
+   "subtopic": "Hằng số cân bằng",
+   "name_vi": "Quan hệ giữa Kp và Kc",
+   "name_en": "Relation between Kp and Kc",
+   "latex": "K_{p} = K_{C} \\left( RT \\right)^{\\Delta n}, \\quad \\Delta n = \\sum n_{\\text{khi san pham}} - \\sum n_{\\text{khi chat dau}}",
+   "vars": {
+    "K_{p}": "hằng số cân bằng theo áp suất",
+    "K_{C}": "hằng số cân bằng theo nồng độ",
+    "R": "hằng số khí",
+    "T": "nhiệt độ tuyệt đối",
+    "\\Delta n": "độ chênh lệch tổng hệ số tỉ lượng của các chất khí"
+   },
+   "units": {
+    "R": "L.bar/(mol.K)",
+    "T": "K"
+   },
+   "conditions": "Khí lí tưởng; khi Kp tính theo bar và Kc tính theo mol/L thì R = 0.08314 L.bar/(mol.K)",
+   "note": "Nếu số mol khí hai vế bằng nhau (delta n = 0) thì Kp = Kc. Nếu dùng áp suất theo atm thì R = 0.08206 L.atm/(mol.K).",
+   "tags": [
+    "kp",
+    "kc",
+    "can-bang-hoa-hoc"
+   ],
+   "related": [
+    "chemistry.thpt.can-bang.hang-so-can-bang-kp",
+    "chemistry.thpt.can-bang.hang-so-can-bang-kc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.nong-do-ion-chat-dien-li-manh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Dung dịch",
+   "subtopic": "Nồng độ ion",
+   "name_vi": "Nồng độ ion trong dung dịch chất điện li mạnh",
+   "name_en": "Ion concentration for a strong electrolyte",
+   "latex": "\\left[ M^{n+} \\right] = x \\cdot C_{M}, \\quad \\left[ X^{m-} \\right] = y \\cdot C_{M}",
+   "vars": {
+    "\\left[ M^{n+} \\right]": "nồng độ ion dương",
+    "\\left[ X^{m-} \\right]": "nồng độ ion âm",
+    "x": "chỉ số ion dương trong công thức M_xX_y",
+    "y": "chỉ số ion âm trong công thức M_xX_y",
+    "C_{M}": "nồng độ mol của chất điện li"
+   },
+   "units": {
+    "\\left[ M^{n+} \\right]": "mol/L",
+    "\\left[ X^{m-} \\right]": "mol/L",
+    "C_{M}": "mol/L"
+   },
+   "conditions": "Chất điện li mạnh, phân li hoàn toàn (alpha = 1)",
+   "note": "Ví dụ dung dịch Al2(SO4)3 0.1 M có [Al3+] = 0.2 M và [SO4 2-] = 0.3 M.",
+   "tags": [
+    "dien-li",
+    "nong-do-ion",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.do-dien-li",
+    "chemistry.thpt.bao-toan.bao-toan-dien-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-dung-dich-dem",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Dung dịch đệm",
+   "name_vi": "Phương trình Henderson - Hasselbalch cho dung dịch đệm",
+   "name_en": "Henderson-Hasselbalch equation",
+   "latex": "\\mathrm{pH} = \\mathrm{p}K_{a} + \\log \\dfrac{\\left[ \\mathrm{A^{-}} \\right]}{\\left[ \\mathrm{HA} \\right]}",
+   "vars": {
+    "\\mathrm{pH}": "pH của dung dịch đệm",
+    "\\mathrm{p}K_{a}": "chỉ số acid của acid yếu",
+    "\\left[ \\mathrm{A^{-}} \\right]": "nồng độ base liên hợp (muối)",
+    "\\left[ \\mathrm{HA} \\right]": "nồng độ acid yếu"
+   },
+   "units": {
+    "\\left[ \\mathrm{A^{-}} \\right]": "mol/L",
+    "\\left[ \\mathrm{HA} \\right]": "mol/L"
+   },
+   "conditions": "Hệ đệm gồm acid yếu và base liên hợp có nồng độ tương đương nhau (tỉ lệ trong khoảng 0.1 đến 10)",
+   "note": "Khi [A-] = [HA] thì pH = pKa, dung dịch đệm có khả năng đệm tốt nhất. Ví dụ hệ đệm CH3COOH/CH3COONa.",
+   "tags": [
+    "dung-dich-dem",
+    "henderson-hasselbalch",
+    "ph"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.pka",
+    "chemistry.thpt.dien-li.ph-dung-dich-dem-base",
+    "biology.dai-hoc.nhiet-dong-hoa-sinh.henderson-hasselbalch"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-dung-dich-dem-base",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Dung dịch đệm",
+   "name_vi": "pOH của dung dịch đệm base yếu và muối",
+   "name_en": "Henderson-Hasselbalch equation for a basic buffer",
+   "latex": "\\mathrm{pOH} = \\mathrm{p}K_{b} + \\log \\dfrac{\\left[ \\mathrm{BH^{+}} \\right]}{\\left[ \\mathrm{B} \\right]}",
+   "vars": {
+    "\\mathrm{pOH}": "chỉ số pOH của dung dịch đệm",
+    "\\mathrm{p}K_{b}": "chỉ số base",
+    "\\left[ \\mathrm{BH^{+}} \\right]": "nồng độ acid liên hợp (muối)",
+    "\\left[ \\mathrm{B} \\right]": "nồng độ base yếu"
+   },
+   "units": {
+    "\\left[ \\mathrm{BH^{+}} \\right]": "mol/L",
+    "\\left[ \\mathrm{B} \\right]": "mol/L"
+   },
+   "conditions": "Hệ đệm base yếu - muối của nó, ví dụ NH3 và NH4Cl",
+   "note": "Sau khi tính pOH, suy ra pH = 14 - pOH ở 25 độ C.",
+   "tags": [
+    "dung-dich-dem",
+    "poh",
+    "base-yeu"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-dung-dich-dem",
+    "chemistry.thpt.dien-li.quan-he-ph-poh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Hằng số phân li",
+   "name_vi": "Hằng số phân li acid",
+   "name_en": "Acid dissociation constant",
+   "latex": "\\mathrm{HA} \\rightleftharpoons \\mathrm{H^{+}} + \\mathrm{A^{-}}, \\quad K_{a} = \\dfrac{\\left[ \\mathrm{H^{+}} \\right] \\left[ \\mathrm{A^{-}} \\right]}{\\left[ \\mathrm{HA} \\right]}",
+   "vars": {
+    "K_{a}": "hằng số phân li acid",
+    "\\left[ \\mathrm{H^{+}} \\right]": "nồng độ cân bằng của ion H+",
+    "\\left[ \\mathrm{A^{-}} \\right]": "nồng độ cân bằng của base liên hợp",
+    "\\left[ \\mathrm{HA} \\right]": "nồng độ cân bằng của acid chưa phân li"
+   },
+   "units": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "mol/L",
+    "\\left[ \\mathrm{A^{-}} \\right]": "mol/L",
+    "\\left[ \\mathrm{HA} \\right]": "mol/L"
+   },
+   "conditions": "Dung dịch loãng, acid yếu, ở nhiệt độ xác định (thường 25 độ C)",
+   "note": "Ka càng lớn thì acid càng mạnh. Ví dụ CH3COOH có Ka = 1.75e-5 ở 25 độ C.",
+   "tags": [
+    "ka",
+    "acid-yeu",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.hang-so-phan-li-base",
+    "chemistry.thpt.dien-li.pka"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.hang-so-phan-li-base",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Hằng số phân li",
+   "name_vi": "Hằng số phân li base",
+   "name_en": "Base dissociation constant",
+   "latex": "\\mathrm{B} + \\mathrm{H_{2}O} \\rightleftharpoons \\mathrm{BH^{+}} + \\mathrm{OH^{-}}, \\quad K_{b} = \\dfrac{\\left[ \\mathrm{BH^{+}} \\right] \\left[ \\mathrm{OH^{-}} \\right]}{\\left[ \\mathrm{B} \\right]}",
+   "vars": {
+    "K_{b}": "hằng số phân li base",
+    "\\left[ \\mathrm{BH^{+}} \\right]": "nồng độ acid liên hợp",
+    "\\left[ \\mathrm{OH^{-}} \\right]": "nồng độ ion hydroxide",
+    "\\left[ \\mathrm{B} \\right]": "nồng độ base chưa phản ứng"
+   },
+   "units": {
+    "\\left[ \\mathrm{BH^{+}} \\right]": "mol/L",
+    "\\left[ \\mathrm{OH^{-}} \\right]": "mol/L",
+    "\\left[ \\mathrm{B} \\right]": "mol/L"
+   },
+   "conditions": "Dung dịch loãng, base yếu, nhiệt độ xác định",
+   "note": "Nồng độ nước được coi là hằng số nên không xuất hiện trong biểu thức Kb. NH3 có Kb = 1.8e-5 ở 25 độ C.",
+   "tags": [
+    "kb",
+    "base-yeu",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+    "chemistry.thpt.dien-li.quan-he-ka-kb-kw"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.pka",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Hằng số phân li",
+   "name_vi": "Giá trị pKa và pKb",
+   "name_en": "pKa and pKb",
+   "latex": "\\mathrm{p}K_{a} = -\\log K_{a}, \\quad \\mathrm{p}K_{b} = -\\log K_{b}",
+   "vars": {
+    "\\mathrm{p}K_{a}": "chỉ số acid",
+    "K_{a}": "hằng số phân li acid",
+    "\\mathrm{p}K_{b}": "chỉ số base",
+    "K_{b}": "hằng số phân li base"
+   },
+   "units": {},
+   "conditions": "Ka, Kb dương",
+   "note": "pKa càng nhỏ thì acid càng mạnh. CH3COOH có pKa khoảng 4.76.",
+   "tags": [
+    "pka",
+    "pkb",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+    "chemistry.thpt.dien-li.ph-dung-dich-dem"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.quan-he-ka-kb-kw",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Hằng số phân li",
+   "name_vi": "Quan hệ giữa Ka và Kb của cặp acid - base liên hợp",
+   "name_en": "Relation between Ka and Kb of a conjugate pair",
+   "latex": "K_{a} \\cdot K_{b} = K_{w} = 1.0 \\times 10^{-14}, \\quad \\mathrm{p}K_{a} + \\mathrm{p}K_{b} = 14",
+   "vars": {
+    "K_{a}": "hằng số phân li của acid",
+    "K_{b}": "hằng số phân li của base liên hợp",
+    "K_{w}": "tích số ion của nước",
+    "\\mathrm{p}K_{a}": "âm logarit thập phân của Ka",
+    "\\mathrm{p}K_{b}": "âm logarit thập phân của Kb"
+   },
+   "units": {},
+   "conditions": "Cặp acid - base liên hợp, ở 25 độ C",
+   "note": "Acid càng mạnh thì base liên hợp càng yếu và ngược lại.",
+   "tags": [
+    "ka",
+    "kb",
+    "acid-base-lien-hop"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+    "chemistry.thpt.dien-li.tich-so-ion-cua-nuoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-sau-khi-tron-acid-base-manh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Phản ứng trung hòa",
+   "name_vi": "pH của dung dịch sau khi trộn acid mạnh với base mạnh",
+   "name_en": "pH after mixing a strong acid with a strong base",
+   "latex": "\\left[ \\mathrm{H^{+}} \\right]_{du} = \\dfrac{n_{\\mathrm{H^{+}}} - n_{\\mathrm{OH^{-}}}}{V_{1} + V_{2}}, \\quad \\left[ \\mathrm{OH^{-}} \\right]_{du} = \\dfrac{n_{\\mathrm{OH^{-}}} - n_{\\mathrm{H^{+}}}}{V_{1} + V_{2}}",
+   "vars": {
+    "\\left[ \\mathrm{H^{+}} \\right]_{du}": "nồng độ ion H+ dư sau phản ứng",
+    "\\left[ \\mathrm{OH^{-}} \\right]_{du}": "nồng độ ion OH- dư sau phản ứng",
+    "n_{\\mathrm{H^{+}}}": "số mol H+ ban đầu",
+    "n_{\\mathrm{OH^{-}}}": "số mol OH- ban đầu",
+    "V_{1}": "thể tích hai dung dịch đem trộn",
+    "V_{2}": "thể tích hai dung dịch đem trộn"
+   },
+   "units": {
+    "\\left[ \\mathrm{H^{+}} \\right]_{du}": "mol/L",
+    "\\left[ \\mathrm{OH^{-}} \\right]_{du}": "mol/L",
+    "n_{\\mathrm{H^{+}}}": "mol",
+    "n_{\\mathrm{OH^{-}}}": "mol",
+    "V_{1}": "L",
+    "V_{2}": "L"
+   },
+   "conditions": "Acid mạnh và base mạnh; coi thể tích cộng tính; nếu hai số mol bằng nhau thì pH = 7 ở 25 độ C",
+   "note": "Sau khi có nồng độ ion dư, dùng pH = -log[H+] hoặc pH = 14 + log[OH-].",
+   "tags": [
+    "ph",
+    "trung-hoa",
+    "tron-dung-dich"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.phan-ung-trung-hoa",
+    "chemistry.thpt.dien-li.ph-cua-acid-manh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.phan-ung-trung-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Phản ứng trung hòa",
+   "name_vi": "Điều kiện trung hòa acid - base",
+   "name_en": "Acid-base neutralization condition",
+   "latex": "n_{\\mathrm{H^{+}}} = n_{\\mathrm{OH^{-}}} \\;\\Leftrightarrow\\; C_{a}V_{a} \\cdot k_{a} = C_{b}V_{b} \\cdot k_{b}",
+   "vars": {
+    "n_{\\mathrm{H^{+}}}": "số mol ion H+",
+    "n_{\\mathrm{OH^{-}}}": "số mol ion OH-",
+    "C_{a}": "nồng độ acid",
+    "V_{a}": "thể tích dung dịch acid",
+    "k_{a}": "số ion H+ do một phân tử acid phân li",
+    "C_{b}": "nồng độ base",
+    "V_{b}": "thể tích dung dịch base",
+    "k_{b}": "số ion OH- do một phân tử base phân li"
+   },
+   "units": {
+    "n_{\\mathrm{H^{+}}}": "mol",
+    "n_{\\mathrm{OH^{-}}}": "mol",
+    "C_{a}": "mol/L",
+    "V_{a}": "L",
+    "C_{b}": "mol/L",
+    "V_{b}": "L"
+   },
+   "conditions": "Phản ứng trung hòa hoàn toàn; đây là công thức nền của phép chuẩn độ acid - base",
+   "note": "Phương trình ion rút gọn: H+ + OH- -> H2O. Nếu H+ dư thì pH tính theo số mol H+ dư chia tổng thể tích.",
+   "tags": [
+    "trung-hoa",
+    "chuan-do",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-cua-acid-manh",
+    "chemistry.thpt.dien-li.ph-cua-base-manh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-muoi-cua-acid-yeu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Thủy phân muối",
+   "name_vi": "pH dung dịch muối của acid yếu và base mạnh",
+   "name_en": "pH of a salt of a weak acid and strong base",
+   "latex": "\\mathrm{pH} \\approx 7 + \\dfrac{1}{2}\\left( \\mathrm{p}K_{a} + \\log C \\right)",
+   "vars": {
+    "\\mathrm{pH}": "pH của dung dịch muối",
+    "\\mathrm{p}K_{a}": "chỉ số acid của acid yếu tương ứng",
+    "C": "nồng độ mol của muối"
+   },
+   "units": {
+    "C": "mol/L"
+   },
+   "conditions": "Muối tan hoàn toàn, anion thủy phân yếu, ở 25 độ C",
+   "note": "Dung dịch có môi trường base (pH > 7). Ví dụ CH3COONa, Na2CO3.",
+   "tags": [
+    "thuy-phan-muoi",
+    "ph",
+    "muoi"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-muoi-cua-base-yeu",
+    "chemistry.thpt.dien-li.quan-he-ka-kb-kw"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-muoi-cua-base-yeu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Thủy phân muối",
+   "name_vi": "pH dung dịch muối của base yếu và acid mạnh",
+   "name_en": "pH of a salt of a weak base and strong acid",
+   "latex": "\\mathrm{pH} \\approx 7 - \\dfrac{1}{2}\\left( \\mathrm{p}K_{b} + \\log C \\right)",
+   "vars": {
+    "\\mathrm{pH}": "pH của dung dịch muối",
+    "\\mathrm{p}K_{b}": "chỉ số base của base yếu tương ứng",
+    "C": "nồng độ mol của muối"
+   },
+   "units": {
+    "C": "mol/L"
+   },
+   "conditions": "Muối tan hoàn toàn, cation thủy phân yếu, ở 25 độ C",
+   "note": "Dung dịch có môi trường acid (pH < 7). Ví dụ NH4Cl, AlCl3, FeCl3.",
+   "tags": [
+    "thuy-phan-muoi",
+    "ph",
+    "muoi"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-muoi-cua-acid-yeu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.dieu-kien-ket-tua",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Tích số tan",
+   "name_vi": "Điều kiện tạo thành kết tủa",
+   "name_en": "Precipitation condition",
+   "latex": "Q_{sp} = \\left[ \\mathrm{M}^{y+} \\right]^{x} \\left[ \\mathrm{X}^{x-} \\right]^{y} : \\begin{cases} Q_{sp} > K_{sp} & \\text{co ket tua} \\\\ Q_{sp} = K_{sp} & \\text{dung dich bao hoa} \\\\ Q_{sp} < K_{sp} & \\text{khong ket tua} \\end{cases}",
+   "vars": {
+    "Q_{sp}": "tích ion tại thời điểm đang xét",
+    "K_{sp}": "tích số tan",
+    "\\left[ \\mathrm{M}^{y+} \\right]": "nồng độ cation sau khi trộn",
+    "\\left[ \\mathrm{X}^{x-} \\right]": "nồng độ anion sau khi trộn"
+   },
+   "units": {
+    "\\left[ \\mathrm{M}^{y+} \\right]": "mol/L",
+    "\\left[ \\mathrm{X}^{x-} \\right]": "mol/L"
+   },
+   "conditions": "Nồng độ ion phải tính sau khi pha trộn (đã kể đến sự pha loãng)",
+   "note": "Hiệu ứng ion chung: thêm ion cùng loại làm giảm độ tan của chất kết tủa.",
+   "tags": [
+    "ket-tua",
+    "ksp",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.tich-so-tan",
+    "chemistry.thpt.dien-li.do-tan-tu-tich-so-tan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.do-tan-tu-tich-so-tan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Tích số tan",
+   "name_vi": "Độ tan mol tính từ tích số tan",
+   "name_en": "Molar solubility from Ksp",
+   "latex": "K_{sp} = x^{x} y^{y} s^{x+y} \\;\\Rightarrow\\; s = \\sqrt[x+y]{\\dfrac{K_{sp}}{x^{x} y^{y}}}",
+   "vars": {
+    "K_{sp}": "tích số tan của MxXy",
+    "s": "độ tan mol của chất trong nước nguyên chất",
+    "x": "chỉ số của cation và anion trong công thức",
+    "y": "chỉ số của cation và anion trong công thức"
+   },
+   "units": {
+    "s": "mol/L"
+   },
+   "conditions": "Dung dịch bão hòa trong nước nguyên chất; bỏ qua thủy phân của ion",
+   "note": "Với AB (x = y = 1): s = căn bậc hai của Ksp. Với AB2 hoặc A2B: s = căn bậc ba của (Ksp/4).",
+   "tags": [
+    "tich-so-tan",
+    "do-tan",
+    "ksp"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.tich-so-tan",
+    "chemistry.thcs.dung-dich.do-tan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.tich-so-tan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Tích số tan",
+   "name_vi": "Tích số tan của chất điện li ít tan",
+   "name_en": "Solubility product",
+   "latex": "\\mathrm{M}_{x}\\mathrm{X}_{y}(s) \\rightleftharpoons x\\mathrm{M}^{y+} + y\\mathrm{X}^{x-}, \\quad K_{sp} = \\left[ \\mathrm{M}^{y+} \\right]^{x} \\left[ \\mathrm{X}^{x-} \\right]^{y}",
+   "vars": {
+    "K_{sp}": "tích số tan",
+    "\\left[ \\mathrm{M}^{y+} \\right]": "nồng độ cation ở trạng thái bão hòa",
+    "\\left[ \\mathrm{X}^{x-} \\right]": "nồng độ anion ở trạng thái bão hòa",
+    "x": "chỉ số trong công thức của chất ít tan",
+    "y": "chỉ số trong công thức của chất ít tan"
+   },
+   "units": {
+    "\\left[ \\mathrm{M}^{y+} \\right]": "mol/L",
+    "\\left[ \\mathrm{X}^{x-} \\right]": "mol/L"
+   },
+   "conditions": "Dung dịch bão hòa có mặt chất rắn ít tan; ở nhiệt độ xác định",
+   "note": "Ksp càng nhỏ thì chất càng khó tan. Chất rắn nguyên chất không xuất hiện trong biểu thức.",
+   "tags": [
+    "tich-so-tan",
+    "ksp",
+    "ket-tua"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.do-tan-tu-tich-so-tan",
+    "chemistry.thpt.dien-li.dieu-kien-ket-tua"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-cua-acid-manh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "pH của dung dịch acid mạnh",
+   "name_en": "pH of a strong acid solution",
+   "latex": "\\left[ \\mathrm{H^{+}} \\right] = k \\cdot C_{a} \\;\\Rightarrow\\; \\mathrm{pH} = -\\log \\left( k \\cdot C_{a} \\right)",
+   "vars": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "nồng độ ion H+",
+    "k": "số ion H+ mà một phân tử acid phân li ra",
+    "C_{a}": "nồng độ mol của acid"
+   },
+   "units": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "mol/L",
+    "C_{a}": "mol/L"
+   },
+   "conditions": "Acid mạnh phân li hoàn toàn; C_a không quá loãng (lớn hơn khoảng 1e-6 mol/L)",
+   "note": "Ví dụ HCl 0.01 M có pH = 2; H2SO4 0.005 M có [H+] = 0.01 M nên pH = 2.",
+   "tags": [
+    "ph",
+    "acid-manh",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-cua-base-manh",
+    "chemistry.thpt.dien-li.ph-cua-acid-yeu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-cua-acid-yeu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "pH của dung dịch acid yếu đơn chức",
+   "name_en": "pH of a weak monoprotic acid",
+   "latex": "\\left[ \\mathrm{H^{+}} \\right] \\approx \\sqrt{K_{a} C_{a}} \\;\\Rightarrow\\; \\mathrm{pH} \\approx \\dfrac{1}{2}\\left( \\mathrm{p}K_{a} - \\log C_{a} \\right)",
+   "vars": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "nồng độ ion H+ ở cân bằng",
+    "K_{a}": "hằng số phân li acid",
+    "C_{a}": "nồng độ ban đầu của acid",
+    "\\mathrm{p}K_{a}": "chỉ số acid"
+   },
+   "units": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "mol/L",
+    "C_{a}": "mol/L"
+   },
+   "conditions": "Acid yếu đơn chức, độ điện li nhỏ (alpha dưới khoảng 5%), bỏ qua sự điện li của nước",
+   "note": "Công thức gần đúng do coi [HA] ở cân bằng xấp xỉ C_a. Khi Ka lớn hoặc dung dịch quá loãng phải giải phương trình bậc hai.",
+   "tags": [
+    "ph",
+    "acid-yeu",
+    "ka"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.hang-so-phan-li-acid",
+    "chemistry.thpt.dien-li.ph-cua-base-yeu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-cua-base-manh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "pH của dung dịch base mạnh",
+   "name_en": "pH of a strong base solution",
+   "latex": "\\left[ \\mathrm{OH^{-}} \\right] = k \\cdot C_{b} \\;\\Rightarrow\\; \\mathrm{pH} = 14 + \\log \\left( k \\cdot C_{b} \\right)",
+   "vars": {
+    "\\left[ \\mathrm{OH^{-}} \\right]": "nồng độ ion OH-",
+    "k": "số ion OH- mà một phân tử base phân li ra",
+    "C_{b}": "nồng độ mol của base"
+   },
+   "units": {
+    "\\left[ \\mathrm{OH^{-}} \\right]": "mol/L",
+    "C_{b}": "mol/L"
+   },
+   "conditions": "Base mạnh phân li hoàn toàn; ở 25 độ C",
+   "note": "Ví dụ NaOH 0.01 M có pOH = 2 nên pH = 12; Ba(OH)2 0.005 M cũng cho pH = 12.",
+   "tags": [
+    "ph",
+    "base-manh",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-cua-acid-manh",
+    "chemistry.thpt.dien-li.quan-he-ph-poh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-cua-base-yeu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "pH của dung dịch base yếu",
+   "name_en": "pH of a weak base",
+   "latex": "\\left[ \\mathrm{OH^{-}} \\right] \\approx \\sqrt{K_{b} C_{b}} \\;\\Rightarrow\\; \\mathrm{pH} \\approx 14 - \\dfrac{1}{2}\\left( \\mathrm{p}K_{b} - \\log C_{b} \\right)",
+   "vars": {
+    "\\left[ \\mathrm{OH^{-}} \\right]": "nồng độ ion OH- ở cân bằng",
+    "K_{b}": "hằng số phân li base",
+    "C_{b}": "nồng độ ban đầu của base",
+    "\\mathrm{p}K_{b}": "chỉ số base"
+   },
+   "units": {
+    "\\left[ \\mathrm{OH^{-}} \\right]": "mol/L",
+    "C_{b}": "mol/L"
+   },
+   "conditions": "Base yếu, độ điện li nhỏ, ở 25 độ C",
+   "note": "Tương đương pOH = (pKb - logC_b)/2 rồi lấy pH = 14 - pOH.",
+   "tags": [
+    "ph",
+    "base-yeu",
+    "kb"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-cua-acid-yeu",
+    "chemistry.thpt.dien-li.hang-so-phan-li-base"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.ph-cua-dung-dich",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "Định nghĩa pH",
+   "name_en": "Definition of pH",
+   "latex": "\\mathrm{pH} = -\\log \\left[ \\mathrm{H^{+}} \\right] \\;\\Leftrightarrow\\; \\left[ \\mathrm{H^{+}} \\right] = 10^{-\\mathrm{pH}}",
+   "vars": {
+    "\\mathrm{pH}": "chỉ số pH của dung dịch",
+    "\\left[ \\mathrm{H^{+}} \\right]": "nồng độ ion H+ (hay H3O+)"
+   },
+   "units": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "mol/L"
+   },
+   "conditions": "Dung dịch loãng; logarit cơ số 10",
+   "note": "Ở 25 độ C: pH < 7 môi trường acid, pH = 7 trung tính, pH > 7 môi trường base.",
+   "tags": [
+    "ph",
+    "dien-li",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.poh",
+    "chemistry.thpt.dien-li.quan-he-ph-poh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.poh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "Định nghĩa pOH",
+   "name_en": "Definition of pOH",
+   "latex": "\\mathrm{pOH} = -\\log \\left[ \\mathrm{OH^{-}} \\right] \\;\\Leftrightarrow\\; \\left[ \\mathrm{OH^{-}} \\right] = 10^{-\\mathrm{pOH}}",
+   "vars": {
+    "\\mathrm{pOH}": "chỉ số pOH của dung dịch",
+    "\\left[ \\mathrm{OH^{-}} \\right]": "nồng độ ion OH-"
+   },
+   "units": {
+    "\\left[ \\mathrm{OH^{-}} \\right]": "mol/L"
+   },
+   "conditions": "Dung dịch loãng",
+   "note": "pOH thường dùng trung gian khi tính pH của dung dịch base.",
+   "tags": [
+    "poh",
+    "ph",
+    "dien-li"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.quan-he-ph-poh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.quan-he-ph-poh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "Quan hệ giữa pH và pOH",
+   "name_en": "Relation between pH and pOH",
+   "latex": "\\mathrm{pH} + \\mathrm{pOH} = 14 \\;(25\\,^{\\circ}\\mathrm{C})",
+   "vars": {
+    "\\mathrm{pH}": "chỉ số pH",
+    "\\mathrm{pOH}": "chỉ số pOH"
+   },
+   "units": {},
+   "conditions": "Dung dịch loãng ở 25 độ C (pKw = 14)",
+   "note": "Suy từ Kw = [H+][OH-] = 1.0e-14 bằng cách lấy âm logarit hai vế.",
+   "tags": [
+    "ph",
+    "poh",
+    "kw"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.tich-so-ion-cua-nuoc",
+    "chemistry.thpt.dien-li.ph-cua-base-manh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.tich-so-ion-cua-nuoc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "pH của dung dịch",
+   "name_vi": "Tích số ion của nước",
+   "name_en": "Ion product of water",
+   "latex": "K_{w} = \\left[ \\mathrm{H^{+}} \\right]\\left[ \\mathrm{OH^{-}} \\right] = 1.0 \\times 10^{-14} \\;(25\\,^{\\circ}\\mathrm{C})",
+   "vars": {
+    "K_{w}": "tích số ion của nước",
+    "\\left[ \\mathrm{H^{+}} \\right]": "nồng độ ion H+",
+    "\\left[ \\mathrm{OH^{-}} \\right]": "nồng độ ion OH-"
+   },
+   "units": {
+    "\\left[ \\mathrm{H^{+}} \\right]": "mol/L",
+    "\\left[ \\mathrm{OH^{-}} \\right]": "mol/L"
+   },
+   "conditions": "Dung dịch loãng ở 25 độ C; Kw thay đổi theo nhiệt độ",
+   "note": "Nước nguyên chất ở 25 độ C có [H+] = [OH-] = 1.0e-7 mol/L nên pH = 7 (môi trường trung tính).",
+   "tags": [
+    "kw",
+    "tich-so-ion",
+    "ph"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.ph-cua-dung-dich",
+    "chemistry.thpt.dien-li.quan-he-ka-kb-kw"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.dinh-luat-pha-loang-ostwald",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Độ điện li",
+   "name_vi": "Định luật pha loãng Ostwald",
+   "name_en": "Ostwald dilution law",
+   "latex": "K_{a} = \\dfrac{C \\alpha^{2}}{1 - \\alpha} \\;\\xrightarrow{\\alpha \\ll 1}\\; \\alpha \\approx \\sqrt{\\dfrac{K_{a}}{C}}",
+   "vars": {
+    "K_{a}": "hằng số phân li acid",
+    "C": "nồng độ ban đầu của chất điện li yếu",
+    "\\alpha": "độ điện li"
+   },
+   "units": {
+    "C": "mol/L"
+   },
+   "conditions": "Chất điện li yếu đơn chức; công thức gần đúng khi alpha nhỏ hơn nhiều so với 1",
+   "note": "Hệ quả: pha loãng dung dịch (C giảm) làm độ điện li alpha tăng, nhưng Ka không đổi.",
+   "tags": [
+    "ostwald",
+    "do-dien-li",
+    "ka"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.do-dien-li",
+    "chemistry.thpt.dien-li.hang-so-phan-li-acid"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-li.do-dien-li",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Sự điện li",
+   "subtopic": "Độ điện li",
+   "name_vi": "Độ điện li của chất điện li",
+   "name_en": "Degree of dissociation",
+   "latex": "\\alpha = \\dfrac{n_{\\text{phan li}}}{n_{\\text{hoa tan}}} = \\dfrac{C_{\\text{phan li}}}{C_{0}}",
+   "vars": {
+    "\\alpha": "độ điện li",
+    "n_{\\text{phan li}}": "số mol chất đã phân li thành ion",
+    "n_{\\text{hoa tan}}": "tổng số mol chất hòa tan",
+    "C_{\\text{phan li}}": "nồng độ chất đã phân li",
+    "C_{0}": "nồng độ ban đầu"
+   },
+   "units": {
+    "C_{\\text{phan li}}": "mol/L",
+    "C_{0}": "mol/L"
+   },
+   "conditions": "0 < alpha <= 1 (hoặc 0% đến 100%)",
+   "note": "alpha = 1: chất điện li mạnh; 0 < alpha < 1: chất điện li yếu. Độ điện li tăng khi pha loãng dung dịch.",
+   "tags": [
+    "dien-li",
+    "do-dien-li",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dien-li.dinh-luat-pha-loang-ostwald",
+    "chemistry.thpt.dung-dich.nong-do-ion-chat-dien-li-manh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.bao-toan-lien-ket-pi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn liên kết pi",
+   "name_vi": "Bảo toàn liên kết pi trong phản ứng cộng",
+   "name_en": "Conservation of pi bonds in addition reactions",
+   "latex": "n_{\\pi} = k \\cdot n_{hidrocacbon} = n_{H_{2}\\,\\text{phan ung}} + n_{Br_{2}\\,\\text{phan ung}}",
+   "vars": {
+    "n_{\\pi}": "tổng số mol liên kết pi",
+    "k": "số liên kết pi trong một phân tử (mạch hở)",
+    "n_{hidrocacbon}": "số mol hiđrocacbon",
+    "n_{H_{2}\\,\\text{phan ung}}": "số mol H2 đã cộng",
+    "n_{Br_{2}\\,\\text{phan ung}}": "số mol Br2 đã cộng"
+   },
+   "units": {
+    "n_{\\pi}": "mol",
+    "n_{hidrocacbon}": "mol",
+    "n_{H_{2}\\,\\text{phan ung}}": "mol",
+    "n_{Br_{2}\\,\\text{phan ung}}": "mol"
+   },
+   "conditions": "Hiđrocacbon mạch hở; mỗi liên kết pi cộng được 1 phân tử H2 hoặc 1 phân tử Br2",
+   "note": "Liên kết pi trong vòng benzene không cộng Br2 trong dung dịch nên không tính vào công thức này.",
+   "tags": [
+    "lien-ket-pi",
+    "huu-co",
+    "phan-ung-cong"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.do-bat-bao-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.bao-toan-dien-tich",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn điện tích",
+   "name_vi": "Định luật bảo toàn điện tích trong dung dịch",
+   "name_en": "Charge balance in solution",
+   "latex": "\\sum \\left| z_{+} \\right| n_{\\text{cation}} = \\sum \\left| z_{-} \\right| n_{\\text{anion}}",
+   "vars": {
+    "z_{+}": "điện tích của cation",
+    "n_{\\text{cation}}": "số mol cation",
+    "z_{-}": "điện tích của anion",
+    "n_{\\text{anion}}": "số mol anion"
+   },
+   "units": {
+    "n_{\\text{cation}}": "mol",
+    "n_{\\text{anion}}": "mol"
+   },
+   "conditions": "Dung dịch trung hòa điện; phải kể đủ mọi ion có mặt",
+   "note": "Hệ quả: khối lượng muối khan = tổng khối lượng các ion trong dung dịch.",
+   "tags": [
+    "bao-toan-dien-tich",
+    "dung-dich",
+    "ion"
+   ],
+   "related": [
+    "chemistry.thpt.dung-dich.nong-do-ion-chat-dien-li-manh",
+    "chemistry.thpt.dung-dich.khoi-luong-muoi-tu-ion"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.khoi-luong-muoi-khan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn điện tích",
+   "name_vi": "Khối lượng muối khan thu được khi cô cạn dung dịch",
+   "name_en": "Mass of dry salt from the ions in solution",
+   "latex": "m_{\\text{muoi khan}} = m_{\\text{cation}} + m_{\\text{anion}} = \\sum n_{i} M_{i}",
+   "vars": {
+    "m_{\\text{muoi khan}}": "khối lượng muối khan thu được",
+    "m_{\\text{cation}}": "tổng khối lượng các cation trong dung dịch",
+    "m_{\\text{anion}}": "tổng khối lượng các anion trong dung dịch",
+    "n_{i}": "số mol ion thứ i",
+    "M_{i}": "khối lượng mol của ion thứ i"
+   },
+   "units": {
+    "m_{\\text{muoi khan}}": "g",
+    "m_{\\text{cation}}": "g",
+    "m_{\\text{anion}}": "g",
+    "n_{i}": "mol",
+    "M_{i}": "g/mol"
+   },
+   "conditions": "Cô cạn dung dịch, muối không bị nhiệt phân; các ion phải thỏa mãn bảo toàn điện tích",
+   "note": "Kết hợp bảo toàn điện tích để tìm số mol ion còn thiếu trước khi tính khối lượng.",
+   "tags": [
+    "bao-toan-dien-tich",
+    "muoi-khan",
+    "co-can"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.bao-toan-dien-tich",
+    "chemistry.thpt.dung-dich.nong-do-ion-chat-dien-li-manh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.hieu-suat-nhieu-giai-doan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Hiệu suất phản ứng",
+   "name_vi": "Hiệu suất của quá trình gồm nhiều giai đoạn",
+   "name_en": "Overall yield of a multi-step process",
+   "latex": "H = H_{1} \\cdot H_{2} \\cdots H_{k}",
+   "vars": {
+    "H": "hiệu suất tổng của cả quá trình",
+    "H_{1}": "hiệu suất giai đoạn 1",
+    "H_{2}": "hiệu suất giai đoạn 2",
+    "H_{k}": "hiệu suất giai đoạn thứ k"
+   },
+   "units": {},
+   "conditions": "Các hiệu suất viết dưới dạng số thập phân (ví dụ 80% ghi là 0.8); các giai đoạn nối tiếp nhau",
+   "note": "Nếu tính theo phần trăm: H% = H1% x H2% x ... / 100^(k-1).",
+   "tags": [
+    "hieu-suat",
+    "san-xuat",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thcs.bao-toan.hieu-suat-phan-ung-theo-san-pham"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.phuong-trinh-nernst",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Pin điện hóa",
+   "name_vi": "Phương trình Nernst",
+   "name_en": "Nernst equation",
+   "latex": "E = E^{0} - \\dfrac{RT}{nF} \\ln Q",
+   "vars": {
+    "E": "thế điện cực (hoặc sức điện động) ở điều kiện không chuẩn",
+    "E^{0}": "giá trị chuẩn tương ứng",
+    "R": "hằng số khí",
+    "T": "nhiệt độ tuyệt đối",
+    "n": "số mol electron trao đổi",
+    "F": "hằng số Faraday",
+    "Q": "thương số phản ứng"
+   },
+   "units": {
+    "E": "V",
+    "E^{0}": "V",
+    "R": "J/(mol.K)",
+    "T": "K",
+    "F": "C/mol"
+   },
+   "conditions": "Hệ điện hóa chưa đạt cân bằng; Q tính theo hoạt độ, gần đúng bằng nồng độ hoặc áp suất riêng phần",
+   "note": "Kiến thức nâng cao. Khi hệ đạt cân bằng thì E = 0 và Q = K.",
+   "tags": [
+    "nernst",
+    "the-dien-cuc",
+    "nang-cao"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.phuong-trinh-nernst-25-do",
+    "chemistry.thpt.can-bang.thuong-so-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.phuong-trinh-nernst-25-do",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Pin điện hóa",
+   "name_vi": "Phương trình Nernst ở 25 độ C",
+   "name_en": "Nernst equation at 25 C",
+   "latex": "E = E^{0} - \\dfrac{0.0592}{n} \\log Q",
+   "vars": {
+    "E": "thế điện cực hoặc sức điện động thực tế",
+    "E^{0}": "giá trị chuẩn",
+    "n": "số mol electron trao đổi",
+    "Q": "thương số phản ứng"
+   },
+   "units": {
+    "E": "V",
+    "E^{0}": "V"
+   },
+   "conditions": "Nhiệt độ 298 K (25 độ C); hệ số 0.0592 V có được từ 2.303RT/F",
+   "note": "Kiến thức nâng cao. Cứ Q tăng 10 lần thì E giảm 0.0592/n vôn.",
+   "tags": [
+    "nernst",
+    "dien-hoa",
+    "nang-cao"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.phuong-trinh-nernst",
+    "chemistry.thpt.dien-hoa.quan-he-suc-dien-dong-va-hang-so-can-bang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.quan-he-gibbs-va-suc-dien-dong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Pin điện hóa",
+   "name_vi": "Quan hệ giữa biến thiên năng lượng Gibbs và sức điện động",
+   "name_en": "Relation between Gibbs energy and cell potential",
+   "latex": "\\Delta G^{0} = -n F E^{0}_{pin}",
+   "vars": {
+    "\\Delta G^{0}": "biến thiên năng lượng tự do Gibbs chuẩn của phản ứng trong pin",
+    "n": "số mol electron trao đổi theo phương trình",
+    "F": "hằng số Faraday",
+    "E^{0}_{pin}": "sức điện động chuẩn của pin"
+   },
+   "units": {
+    "\\Delta G^{0}": "J/mol",
+    "F": "C/mol",
+    "E^{0}_{pin}": "V"
+   },
+   "conditions": "Phản ứng xảy ra trong pin ở điều kiện chuẩn",
+   "note": "F = 96 485 C/mol (thường làm tròn 96 500). E chuẩn của pin dương tương ứng Delta G chuẩn âm nên phản ứng tự xảy ra.",
+   "tags": [
+    "gibbs",
+    "suc-dien-dong",
+    "faraday"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-hoa.nang-luong-tu-do-gibbs",
+    "chemistry.thpt.dien-hoa.suc-dien-dong-cua-pin"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.quan-he-suc-dien-dong-va-hang-so-can-bang",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Pin điện hóa",
+   "name_vi": "Quan hệ giữa sức điện động chuẩn và hằng số cân bằng",
+   "name_en": "Relation between standard cell potential and equilibrium constant",
+   "latex": "\\log K = \\dfrac{n E^{0}_{pin}}{0.0592} \\quad (25\\,^{\\circ}\\mathrm{C})",
+   "vars": {
+    "K": "hằng số cân bằng của phản ứng xảy ra trong pin",
+    "n": "số mol electron trao đổi",
+    "E^{0}_{pin}": "sức điện động chuẩn của pin"
+   },
+   "units": {
+    "E^{0}_{pin}": "V"
+   },
+   "conditions": "Ở 25 độ C; suy ra từ Delta G chuẩn = -nFE chuẩn = -RT lnK",
+   "note": "Kiến thức nâng cao. E chuẩn của pin càng lớn thì K càng lớn, phản ứng càng xảy ra hoàn toàn.",
+   "tags": [
+    "suc-dien-dong",
+    "hang-so-can-bang",
+    "nang-cao"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.phuong-trinh-nernst-25-do",
+    "chemistry.thpt.can-bang.hang-so-can-bang-kc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.suc-dien-dong-cua-pin",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Pin điện hóa",
+   "name_vi": "Sức điện động chuẩn của pin điện hóa",
+   "name_en": "Standard cell potential",
+   "latex": "E^{0}_{pin} = E^{0}_{catot} - E^{0}_{anot} = E^{0}_{\\text{cuc duong}} - E^{0}_{\\text{cuc am}}",
+   "vars": {
+    "E^{0}_{pin}": "sức điện động chuẩn của pin",
+    "E^{0}_{catot}": "thế điện cực chuẩn của điện cực xảy ra sự khử (cực dương)",
+    "E^{0}_{anot}": "thế điện cực chuẩn của điện cực xảy ra sự oxi hóa (cực âm)"
+   },
+   "units": {
+    "E^{0}_{pin}": "V",
+    "E^{0}_{catot}": "V",
+    "E^{0}_{anot}": "V"
+   },
+   "conditions": "Pin Galvani hoạt động ở điều kiện chuẩn; E chuẩn của pin luôn dương",
+   "note": "Trong pin Galvani, anode là cực âm (oxi hóa), cathode là cực dương (khử). Ví dụ pin Zn-Cu có E chuẩn = 0.340 - (-0.763) = 1.103 V.",
+   "tags": [
+    "pin-dien-hoa",
+    "suc-dien-dong",
+    "galvani"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.the-dien-cuc-chuan",
+    "chemistry.thpt.dien-hoa.quan-he-gibbs-va-suc-dien-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.quy-tac-alpha",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Thế điện cực chuẩn",
+   "name_vi": "Quy tắc alpha xác định chiều phản ứng oxi hóa - khử",
+   "name_en": "Alpha rule for redox reaction direction",
+   "latex": "\\text{Oxh manh} + \\text{Kh manh} \\rightarrow \\text{Oxh yeu} + \\text{Kh yeu} \\;\\Leftrightarrow\\; E^{0}_{\\text{cap chua chat oxi hoa}} > E^{0}_{\\text{cap chua chat khu}}",
+   "vars": {
+    "E^{0}_{\\text{cap chua chat oxi hoa}}": "thế điện cực chuẩn của cặp oxi hóa - khử chứa chất oxi hóa tham gia phản ứng",
+    "E^{0}_{\\text{cap chua chat khu}}": "thế điện cực chuẩn của cặp oxi hóa - khử chứa chất khử tham gia phản ứng"
+   },
+   "units": {
+    "E^{0}_{\\text{cap chua chat oxi hoa}}": "V",
+    "E^{0}_{\\text{cap chua chat khu}}": "V"
+   },
+   "conditions": "So sánh hai cặp oxi hóa - khử ở điều kiện chuẩn",
+   "note": "Thế điện cực chuẩn được định nghĩa cho một cặp oxi hóa - khử, không phải cho riêng một chất. Phản ứng tự xảy ra khi sức điện động chuẩn của pin dương, tức E chuẩn của cặp nhận electron lớn hơn E chuẩn của cặp nhường electron.",
+   "tags": [
+    "quy-tac-alpha",
+    "the-dien-cuc",
+    "oxi-hoa-khu"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.the-dien-cuc-chuan",
+    "chemistry.thpt.dien-hoa.suc-dien-dong-cua-pin"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.the-dien-cuc-chuan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Thế điện cực chuẩn",
+   "name_vi": "Thế điện cực chuẩn của cặp oxi hóa - khử",
+   "name_en": "Standard electrode potential",
+   "latex": "E^{0}_{\\mathrm{M^{n+}/M}} \\;:\\; \\mathrm{M^{n+}} + n e \\rightleftharpoons \\mathrm{M}, \\quad E^{0}_{\\mathrm{2H^{+}/H_{2}}} = 0.00\\;\\mathrm{V}",
+   "vars": {
+    "E^{0}_{\\mathrm{M^{n+}/M}}": "thế điện cực chuẩn của cặp oxi hóa - khử M(n+)/M",
+    "n": "số electron trao đổi",
+    "E^{0}_{\\mathrm{2H^{+}/H_{2}}}": "thế điện cực chuẩn của cặp 2H+/H2, được quy ước bằng 0.00 V (điện cực hiđro chuẩn)"
+   },
+   "units": {
+    "E^{0}_{\\mathrm{M^{n+}/M}}": "V",
+    "E^{0}_{\\mathrm{2H^{+}/H_{2}}}": "V"
+   },
+   "conditions": "Điều kiện chuẩn: nồng độ ion 1 M, áp suất khí 1 bar, nhiệt độ 25 độ C; đo so với điện cực hiđro chuẩn",
+   "note": "E chuẩn càng lớn thì dạng oxi hóa càng mạnh và dạng khử càng yếu. Ví dụ E chuẩn của Zn2+/Zn là -0.763 V, của Cu2+/Cu là +0.340 V.",
+   "tags": [
+    "the-dien-cuc",
+    "dien-hoa",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.suc-dien-dong-cua-pin",
+    "chemistry.thpt.dien-hoa.quy-tac-alpha"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.an-mon-dien-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Ăn mòn kim loại",
+   "name_vi": "Điều kiện xảy ra ăn mòn điện hóa học",
+   "name_en": "Conditions for electrochemical corrosion",
+   "latex": "\\begin{cases} \\text{(1) Hai dien cuc khac ban chat (kim loai - kim loai hoac kim loai - phi kim)} \\\\ \\text{(2) Hai dien cuc tiep xuc truc tiep hoac qua day dan} \\\\ \\text{(3) Cung tiep xuc voi mot dung dich chat dien li} \\end{cases}",
+   "vars": {
+    "\\text{dien cuc}": "cặp điện cực tạo thành pin điện hóa trong quá trình ăn mòn"
+   },
+   "units": {},
+   "conditions": "Phải thỏa mãn đồng thời cả ba điều kiện",
+   "note": "Kim loại hoạt động mạnh hơn đóng vai trò cực âm (anode) và bị ăn mòn trước. Ứng dụng: bảo vệ vỏ tàu bằng khối kẽm hi sinh.",
+   "tags": [
+    "an-mon-dien-hoa",
+    "kim-loai",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thcs.dien-hoa.day-hoat-dong-hoa-hoc",
+    "chemistry.thpt.dien-hoa.suc-dien-dong-cua-pin"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.dien-luong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Điện phân",
+   "name_vi": "Điện lượng đi qua bình điện phân",
+   "name_en": "Charge passed through an electrolytic cell",
+   "latex": "q = I \\cdot t",
+   "vars": {
+    "q": "điện lượng đi qua bình điện phân",
+    "I": "cường độ dòng điện",
+    "t": "thời gian điện phân"
+   },
+   "units": {
+    "q": "C",
+    "I": "A",
+    "t": "s"
+   },
+   "conditions": "Dòng điện một chiều có cường độ không đổi",
+   "note": "1 C = 1 A.s. Nhớ đổi thời gian ra giây trước khi tính.",
+   "tags": [
+    "dien-phan",
+    "dien-luong",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.so-mol-electron-dien-phan",
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Điện phân",
+   "name_vi": "Định luật Faraday về điện phân",
+   "name_en": "Faraday's law of electrolysis",
+   "latex": "m = \\dfrac{A \\cdot I \\cdot t}{n \\cdot F}",
+   "vars": {
+    "m": "khối lượng chất thoát ra ở điện cực",
+    "A": "khối lượng mol nguyên tử của chất",
+    "I": "cường độ dòng điện",
+    "t": "thời gian điện phân",
+    "n": "số electron mà một nguyên tử (hoặc ion) trao đổi",
+    "F": "hằng số Faraday"
+   },
+   "units": {
+    "m": "g",
+    "A": "g/mol",
+    "I": "A",
+    "t": "s",
+    "F": "C/mol"
+   },
+   "conditions": "Hiệu suất điện phân 100%; dòng điện một chiều không đổi",
+   "note": "F = 96 485 C/mol, thường làm tròn 96 500 C/mol trong bài tập phổ thông.",
+   "tags": [
+    "faraday",
+    "dien-phan",
+    "thpt"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.so-mol-electron-dien-phan",
+    "chemistry.thpt.dien-hoa.thoi-gian-dien-phan",
+    "chemistry.thpt.dien-phan.so-mol-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.so-mol-electron-dien-phan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Điện phân",
+   "name_vi": "Số mol electron trao đổi trong điện phân",
+   "name_en": "Moles of electrons in electrolysis",
+   "latex": "n_{e} = \\dfrac{I \\cdot t}{F}",
+   "vars": {
+    "n_{e}": "số mol electron trao đổi ở mỗi điện cực",
+    "I": "cường độ dòng điện",
+    "t": "thời gian điện phân",
+    "F": "hằng số Faraday"
+   },
+   "units": {
+    "n_{e}": "mol",
+    "I": "A",
+    "t": "s",
+    "F": "C/mol"
+   },
+   "conditions": "Hiệu suất điện phân 100%; dòng điện không đổi",
+   "note": "F = 96 485 C/mol. Số mol electron ở catot luôn bằng số mol electron ở anot (bảo toàn electron).",
+   "tags": [
+    "dien-phan",
+    "faraday",
+    "bao-toan-electron"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+    "chemistry.thpt.bao-toan.bao-toan-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.thoi-gian-dien-phan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Điện phân",
+   "name_vi": "Thời gian điện phân để thu được khối lượng chất xác định",
+   "name_en": "Electrolysis time for a given mass",
+   "latex": "t = \\dfrac{m \\cdot n \\cdot F}{A \\cdot I}",
+   "vars": {
+    "t": "thời gian điện phân",
+    "m": "khối lượng chất cần thu",
+    "n": "số electron trao đổi của một nguyên tử hoặc ion",
+    "F": "hằng số Faraday",
+    "A": "khối lượng mol nguyên tử",
+    "I": "cường độ dòng điện"
+   },
+   "units": {
+    "t": "s",
+    "m": "g",
+    "F": "C/mol",
+    "A": "g/mol",
+    "I": "A"
+   },
+   "conditions": "Hiệu suất điện phân 100%",
+   "note": "Dạng biến đổi của định luật Faraday. Nếu hiệu suất là H% thì thời gian thực tế bằng t chia cho H/100.",
+   "tags": [
+    "faraday",
+    "dien-phan",
+    "thoi-gian"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-hoa.thu-tu-dien-phan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện hóa",
+   "subtopic": "Điện phân",
+   "name_vi": "Thứ tự điện phân ở các điện cực trong dung dịch",
+   "name_en": "Order of discharge at the electrodes",
+   "latex": "\\begin{cases} \\text{Catot (khu)}: \\mathrm{Ag^{+}} > \\mathrm{Fe^{3+}} > \\mathrm{Cu^{2+}} > \\mathrm{H^{+}}_{(acid)} > \\mathrm{Fe^{2+}} > \\mathrm{Zn^{2+}} > \\mathrm{H_{2}O} \\\\ \\text{Anot (oxi hoa)}: \\mathrm{S^{2-}} > \\mathrm{I^{-}} > \\mathrm{Br^{-}} > \\mathrm{Cl^{-}} > \\mathrm{H_{2}O} > \\mathrm{SO_{4}^{2-}},\\, \\mathrm{NO_{3}^{-}} \\end{cases}",
+   "vars": {
+    "\\text{Catot}": "cực âm của bình điện phân, nơi xảy ra sự khử",
+    "\\text{Anot}": "cực dương của bình điện phân, nơi xảy ra sự oxi hóa"
+   },
+   "units": {},
+   "conditions": "Điện phân dung dịch với điện cực trơ (graphite hoặc platinum)",
+   "note": "Cation kim loại từ Al trở về trước (K+, Na+, Mg2+, Al3+) không bị khử trong dung dịch, khi đó nước bị khử: 2H2O + 2e -> H2 + 2OH-. Các anion SO4 2-, NO3- không bị oxi hóa, khi đó nước bị oxi hóa: 2H2O -> O2 + 4H+ + 4e.",
+   "tags": [
+    "dien-phan",
+    "catot",
+    "anot"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+    "chemistry.thcs.dien-hoa.day-hoat-dong-hoa-hoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  }
+ ]
+}

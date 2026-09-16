@@ -1,0 +1,1013 @@
+{
+  "meta": {
+    "file": "vn-thcs-hoa-sinh.json",
+    "subject": "chemistry",
+    "title": "Hoá học và Sinh học THCS (KHTN): Mol, dung dịch, tế bào và di truyền",
+    "levels": [
+      "thcs"
+    ],
+    "count": 15
+  },
+  "lessons": [
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.mol-khoi-luong-so-hat",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Mol và tính toán hoá học",
+      "order": 1,
+      "title_vi": "Mol, khối lượng mol và số hạt vi mô",
+      "title_en": "The mole, molar mass and number of particles",
+      "objectives": [
+        "Tính được số mol của một chất khi biết khối lượng và ngược lại bằng công thức $n=\\dfrac{m}{M}$",
+        "Tính được số nguyên tử hoặc phân tử trong một lượng chất bằng số Avogadro",
+        "Đổi qua lại giữa ba đại lượng: số mol, khối lượng và số hạt"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Mol",
+          "term_en": "Mole",
+          "definition": "Lượng chất chứa đúng $6{,}022\\times10^{23}$ hạt (nguyên tử, phân tử...); con số này gọi là số Avogadro $N_A$."
+        },
+        {
+          "term_vi": "Khối lượng mol",
+          "term_en": "Molar mass",
+          "definition": "Khối lượng của 1 mol chất, kí hiệu $M$, đơn vị g/mol; về số trị bằng nguyên tử khối hoặc phân tử khối."
+        },
+        {
+          "term_vi": "Số mol",
+          "term_en": "Amount of substance",
+          "definition": "Số lượng mol chất, kí hiệu $n$; là chiếc cầu nối giữa khối lượng cân được và số hạt vi mô."
+        }
+      ],
+      "content": "## Vì sao cần \"mol\"\n\nMột giọt nước đã chứa hàng tỉ tỉ phân tử — không thể đếm từng cái. Nhà hoá học dùng **mol** như người bán trứng dùng \"tá\": 1 tá là 12 quả, còn 1 mol là $6{,}022\\times10^{23}$ hạt. Con số khổng lồ này gọi là **số Avogadro** $N_A$.\n\n## Ba đại lượng, hai chiếc cầu\n\nKhi cân một chất ta biết **khối lượng** $m$ (gam), nhưng phản ứng lại xảy ra theo **số hạt**. Mol nối hai thế giới đó lại:\n\n$$n = \\frac{m}{M} \\qquad m = n\\times M$$\n\ntrong đó $M$ là **khối lượng mol** (g/mol), lấy đúng bằng nguyên tử khối hay phân tử khối. Ví dụ nước $H_2O$ có $M = 2\\times1 + 16 = 18$ g/mol.\n\nMuốn biết có bao nhiêu hạt thì nhân số mol với $N_A$:\n\n$$N = n\\times N_A$$\n\n## Sơ đồ dễ nhớ\n\n$$m \\;\\xrightarrow{\\;:M\\;}\\; n \\;\\xrightarrow{\\;\\times N_A\\;}\\; N$$\n\nĐi ngược lại thì làm phép tính ngược. Nắm chắc sơ đồ này là giải được hầu hết bài tính toán hoá học lớp 8.",
+      "formulas": [
+        "chemistry.thcs.dai-luong-co-ban.so-mol-theo-khoi-luong",
+        "chemistry.thcs.dai-luong-co-ban.khoi-luong-theo-so-mol",
+        "chemistry.thcs.dai-luong-co-ban.khoi-luong-mol",
+        "chemistry.thcs.dai-luong-co-ban.so-hat-vi-mo",
+        "chemistry.thcs.dai-luong-co-ban.so-mol-theo-so-hat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính số mol có trong 8 g khí oxygen $O_2$.",
+          "solution": "Bước 1 — tìm khối lượng mol: $O_2$ có $M = 16\\times2 = 32$ g/mol.\nBước 2 — áp dụng công thức $n=\\dfrac{m}{M}=\\dfrac{8}{32}=0{,}25$ mol.\nHiểu vì sao: chia khối lượng cho khối lượng của 1 mol thì ra số mol, giống như chia tổng số quả cho số quả mỗi tá để biết mấy tá.",
+          "answer": "0,25 mol."
+        },
+        {
+          "problem": "0,5 mol nước chứa bao nhiêu phân tử?",
+          "solution": "Dùng cầu nối số hạt: $N = n\\times N_A = 0{,}5 \\times 6{,}022\\times10^{23} = 3{,}011\\times10^{23}$ phân tử.\nLưu ý mỗi phân tử nước lại gồm 3 nguyên tử, nhưng câu hỏi chỉ hỏi số phân tử nên dừng ở đây.",
+          "answer": "$3{,}011\\times10^{23}$ phân tử."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy khối lượng nhân $M$ thay vì chia — nhớ sơ đồ: từ $m$ sang $n$ là phép CHIA cho $M$.",
+        "Lẫn lộn nguyên tử khối của nguyên tử với phân tử khối của phân tử: $O$ là 16 nhưng khí oxygen $O_2$ có $M=32$.",
+        "Quên nhân với $N_A$ khi đề hỏi số hạt, chỉ dừng ở số mol."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "mol",
+        "khoi-luong-mol",
+        "so-avogadro",
+        "so-mol"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.the-tich-khi-ti-khoi",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Mol và tính toán hoá học",
+      "order": 2,
+      "title_vi": "Thể tích chất khí và tỉ khối của chất khí",
+      "title_en": "Gas volume and gas density ratio",
+      "objectives": [
+        "Tính được thể tích chất khí ở đktc ($22{,}4$ L/mol) và ở điều kiện chuẩn đkc ($24{,}79$ L/mol)",
+        "Tính được tỉ khối của một khí so với khí khác và so với không khí",
+        "Dựa vào tỉ khối để dự đoán khí nặng hay nhẹ hơn không khí"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.thcs-hoa-sinh.mol-khoi-luong-so-hat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Điều kiện tiêu chuẩn (đktc)",
+          "term_en": "STP (old)",
+          "definition": "$0^{\\circ}$C và 1 atm; ở đây 1 mol khí bất kì chiếm $22{,}4$ lít."
+        },
+        {
+          "term_vi": "Điều kiện chuẩn (đkc)",
+          "term_en": "Standard conditions",
+          "definition": "$25^{\\circ}$C và 1 bar theo SGK mới; 1 mol khí chiếm $24{,}79$ lít."
+        },
+        {
+          "term_vi": "Tỉ khối chất khí",
+          "term_en": "Gas density ratio",
+          "definition": "Cho biết khí này nặng gấp bao nhiêu lần khí kia, tính bằng thương hai khối lượng mol."
+        }
+      ],
+      "content": "## Vì sao mọi khí lại chiếm cùng thể tích\n\n**Định luật Avogadro**: ở cùng nhiệt độ và áp suất, những thể tích khí bằng nhau chứa số phân tử bằng nhau. Hệ quả tuyệt vời: 1 mol của *bất kì* chất khí nào cũng chiếm cùng một thể tích, dù phân tử nặng nhẹ khác nhau.\n\n## Hai mốc điều kiện\n\n- **đktc** ($0^{\\circ}$C, 1 atm): $V = 22{,}4\\,n$\n- **đkc** ($25^{\\circ}$C, 1 bar, SGK mới): $V = 24{,}79\\,n$\n\nMuốn tìm số mol thì làm ngược: $n = \\dfrac{V}{22{,}4}$ hoặc $n=\\dfrac{V}{24{,}79}$. Nhớ đọc kĩ đề dùng mốc nào.\n\n## Tỉ khối: khí nào nặng hơn\n\nMuốn biết khí $A$ nặng gấp mấy lần khí $B$:\n\n$$d_{A/B} = \\frac{M_A}{M_B}$$\n\nSo với **không khí** (coi $M = 29$ g/mol):\n\n$$d_{A/kk} = \\frac{M_A}{29}$$\n\nNếu $d_{A/kk} > 1$ khí nặng hơn không khí (như $CO_2$), nên thu bằng cách để ngửa bình; nếu $< 1$ khí nhẹ hơn (như $H_2$), phải úp bình.",
+      "formulas": [
+        "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dktc",
+        "chemistry.thcs.dai-luong-co-ban.the-tich-khi-dkc",
+        "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dktc",
+        "chemistry.thcs.dai-luong-co-ban.so-mol-khi-dkc",
+        "chemistry.thcs.dai-luong-co-ban.ti-khoi-hai-khi",
+        "chemistry.thcs.dai-luong-co-ban.ti-khoi-so-voi-khong-khi",
+        "chemistry.thcs.dai-luong-co-ban.dinh-luat-avogadro"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính thể tích ở đktc của 0,25 mol khí $O_2$.",
+          "solution": "Ở đktc mỗi mol khí chiếm $22{,}4$ lít nên $V = 22{,}4\\times n = 22{,}4\\times0{,}25 = 5{,}6$ lít.\nVì sao không cần biết đó là khí gì: định luật Avogadro nói mọi khí cùng số mol thì cùng thể tích.",
+          "answer": "5,6 lít."
+        },
+        {
+          "problem": "Khí $CO_2$ nặng hay nhẹ hơn không khí? Nặng gấp mấy lần?",
+          "solution": "Tính $M_{CO_2} = 12 + 16\\times2 = 44$ g/mol. Tỉ khối so với không khí: $d = \\dfrac{44}{29} \\approx 1{,}52$.\nVì $d > 1$ nên $CO_2$ nặng hơn không khí khoảng 1,52 lần — đó là lí do khí này đọng ở đáy hang, đáy giếng sâu.",
+          "answer": "Nặng hơn không khí, gấp khoảng 1,52 lần."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng nhầm mốc $22{,}4$ cho đkc hoặc $24{,}79$ cho đktc — phải đọc kĩ đề cho điều kiện nào.",
+        "Lấy khối lượng mol so với 28 (nitrogen) thay vì 29 (không khí) khi tính tỉ khối so với không khí.",
+        "Nhầm tỉ khối $d$ có đơn vị; thực ra tỉ khối là con số không có đơn vị vì là thương hai khối lượng mol."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "the-tich-khi",
+        "dktc",
+        "dkc",
+        "ti-khoi"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.phan-tram-khoi-luong-nguyen-to",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Mol và tính toán hoá học",
+      "order": 3,
+      "title_vi": "Phần trăm khối lượng nguyên tố trong hợp chất",
+      "title_en": "Percent composition by mass of a compound",
+      "objectives": [
+        "Tính được phần trăm khối lượng của mỗi nguyên tố trong một hợp chất",
+        "Lập được công thức hoá học đơn giản khi biết phần trăm khối lượng các nguyên tố"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.thcs-hoa-sinh.mol-khoi-luong-so-hat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phần trăm khối lượng",
+          "term_en": "Mass percent",
+          "definition": "Khối lượng của một nguyên tố chiếm bao nhiêu phần trăm trong khối lượng cả hợp chất."
+        },
+        {
+          "term_vi": "Phân tử khối",
+          "term_en": "Molecular mass",
+          "definition": "Tổng khối lượng các nguyên tử trong một phân tử; chính là mẫu số khi tính phần trăm."
+        }
+      ],
+      "content": "## Ý tưởng: chia phần của mỗi nguyên tố\n\nHợp chất giống một chiếc bánh, mỗi nguyên tố góp một \"miếng\" khối lượng. Muốn biết miếng đó chiếm bao nhiêu phần trăm, ta lấy khối lượng nguyên tố chia cho khối lượng cả phân tử rồi nhân 100.\n\n$$\\%A = \\frac{n_A\\times M_A}{M_{\\text{hợp chất}}}\\times 100\\%$$\n\nvới $n_A$ là số nguyên tử $A$ trong công thức.\n\n## Các bước\n\n1. Tính phân tử khối của hợp chất.\n2. Tính khối lượng phần của từng nguyên tố (số nguyên tử nhân nguyên tử khối).\n3. Chia cho phân tử khối, nhân 100%.\n\nMẹo kiểm tra: cộng phần trăm của tất cả nguyên tố phải bằng $100\\%$.\n\n## Chiều ngược lại\n\nBiết phần trăm, ta có thể **lập công thức**: đặt công thức $A_xB_y$, dùng phần trăm để tìm tỉ lệ $x:y$. Đây là cách nhà hoá học suy ra thành phần một chất mới từ kết quả phân tích.",
+      "formulas": [
+        "chemistry.thcs.dai-luong-co-ban.phan-tram-khoi-luong-nguyen-to",
+        "chemistry.thcs.dai-luong-co-ban.lap-cong-thuc-tu-phan-tram",
+        "chemistry.thcs.dai-luong-co-ban.phan-tram-the-tich-khi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính phần trăm khối lượng của oxygen trong nước $H_2O$.",
+          "solution": "Phân tử khối $M_{H_2O} = 2\\times1 + 16 = 18$.\nPhần của oxygen: chỉ có 1 nguyên tử O nên khối lượng phần O là $16$.\n$\\%O = \\dfrac{16}{18}\\times100\\% \\approx 88{,}9\\%$.\nKiểm tra: $\\%H = \\dfrac{2}{18}\\times100 \\approx 11{,}1\\%$, cộng lại đúng $100\\%$.",
+          "answer": "khoảng 88,9%."
+        },
+        {
+          "problem": "Tính phần trăm khối lượng của nitrogen trong phân đạm $NH_4NO_3$.",
+          "solution": "Phân tử khối: $N_2 = 28$, $H_4 = 4$, $O_3 = 48$, tổng $M = 80$.\nCó 2 nguyên tử N nên khối lượng phần N là $2\\times14 = 28$.\n$\\%N = \\dfrac{28}{80}\\times100\\% = 35\\%$.\nCon số này cho biết đạm $NH_4NO_3$ giàu nitrogen tới 35% khối lượng — rất tốt cho cây.",
+          "answer": "35%."
+        }
+      ],
+      "common_mistakes": [
+        "Quên nhân số nguyên tử: trong $NH_4NO_3$ có 2 nguyên tử N nên phải lấy $2\\times14$, không phải 14.",
+        "Chia cho nguyên tử khối của nguyên tố thay vì cho phân tử khối của cả hợp chất.",
+        "Không kiểm tra lại tổng phần trăm bằng 100% nên bỏ sót sai sót tính toán."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "phan-tram-khoi-luong",
+        "thanh-phan-hop-chat",
+        "cong-thuc-hoa-hoc"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.tinh-theo-phuong-trinh-bao-toan-khoi-luong",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Mol và tính toán hoá học",
+      "order": 4,
+      "title_vi": "Tính theo phương trình hoá học và định luật bảo toàn khối lượng",
+      "title_en": "Stoichiometry and the law of conservation of mass",
+      "objectives": [
+        "Phát biểu và vận dụng được định luật bảo toàn khối lượng trong phản ứng hoá học",
+        "Tính được lượng chất tham gia hoặc tạo thành dựa vào tỉ lệ số mol trong phương trình"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.thcs-hoa-sinh.mol-khoi-luong-so-hat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bảo toàn khối lượng",
+          "term_en": "Conservation of mass",
+          "definition": "Tổng khối lượng các chất trước phản ứng bằng tổng khối lượng các chất sau phản ứng."
+        },
+        {
+          "term_vi": "Tỉ lệ mol",
+          "term_en": "Mole ratio",
+          "definition": "Các hệ số trong phương trình hoá học cho biết số mol các chất phản ứng theo tỉ lệ nào."
+        }
+      ],
+      "content": "## Định luật bảo toàn khối lượng\n\nLavoisier phát hiện: trong một phản ứng, nguyên tử không tự sinh ra hay mất đi, chỉ sắp xếp lại. Vì thế **tổng khối lượng không đổi**. Với phản ứng $A + B \\rightarrow C + D$:\n\n$$m_A + m_B = m_C + m_D$$\n\nBiết ba khối lượng là suy ngay ra khối lượng còn lại.\n\n## Tính theo phương trình\n\nHệ số trong phương trình chính là **tỉ lệ số mol**. Ví dụ:\n\n$$Zn + 2HCl \\rightarrow ZnCl_2 + H_2$$\n\ncho biết 1 mol $Zn$ sinh ra 1 mol khí $H_2$. Các bước làm:\n\n1. Viết và cân bằng phương trình.\n2. Đổi dữ kiện đề (gam, lít) về **số mol**.\n3. Dùng tỉ lệ hệ số suy ra số mol chất cần tìm.\n4. Đổi số mol đó về khối lượng hoặc thể tích theo yêu cầu.\n\nĐây là \"xương sống\" của mọi bài toán hoá học: luôn đi qua số mol ở giữa.",
+      "formulas": [
+        "chemistry.thcs.dai-luong-co-ban.ti-le-mol-theo-phuong-trinh",
+        "chemistry.thcs.dai-luong-co-ban.xac-dinh-chat-du",
+        "chemistry.thcs.bao-toan.bao-toan-khoi-luong",
+        "chemistry.thcs.bao-toan.tinh-khoi-luong-con-lai"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nung 10 g đá vôi $CaCO_3$ thu được 5,6 g vôi sống $CaO$ và khí $CO_2$. Tính khối lượng $CO_2$ thoát ra.",
+          "solution": "Phản ứng: $CaCO_3 \\rightarrow CaO + CO_2$. Theo bảo toàn khối lượng:\n$m_{CaCO_3} = m_{CaO} + m_{CO_2}$.\nSuy ra $m_{CO_2} = 10 - 5{,}6 = 4{,}4$ g.\nKhông cần biết công thức chi tiết, chỉ cần khối lượng vào bằng khối lượng ra.",
+          "answer": "4,4 g."
+        },
+        {
+          "problem": "Cho 6,5 g kẽm $Zn$ tác dụng hết với dung dịch HCl. Tính thể tích khí $H_2$ (đktc).",
+          "solution": "Đổi ra mol: $n_{Zn} = \\dfrac{6{,}5}{65} = 0{,}1$ mol.\nPhương trình $Zn + 2HCl \\rightarrow ZnCl_2 + H_2$: tỉ lệ $Zn:H_2 = 1:1$ nên $n_{H_2} = 0{,}1$ mol.\nThể tích ở đktc: $V = 22{,}4\\times0{,}1 = 2{,}24$ lít.",
+          "answer": "2,24 lít."
+        }
+      ],
+      "common_mistakes": [
+        "Quên cân bằng phương trình nên lấy sai tỉ lệ mol giữa các chất.",
+        "Cộng thẳng khối lượng theo tỉ lệ hệ số mà không đổi ra số mol trước — tỉ lệ hệ số là tỉ lệ MOL, không phải tỉ lệ khối lượng.",
+        "Áp bảo toàn khối lượng nhưng bỏ sót khối lượng chất khí thoát ra hoặc kết tủa tách ra."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "bao-toan-khoi-luong",
+        "tinh-theo-phuong-trinh",
+        "ti-le-mol"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.hieu-suat-phan-ung",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Mol và tính toán hoá học",
+      "order": 5,
+      "title_vi": "Hiệu suất phản ứng và độ tinh khiết",
+      "title_en": "Reaction yield and sample purity",
+      "objectives": [
+        "Tính được hiệu suất phản ứng khi biết lượng sản phẩm thực tế và lí thuyết",
+        "Vận dụng hiệu suất để tính lượng sản phẩm thu được trên thực tế"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.thcs-hoa-sinh.tinh-theo-phuong-trinh-bao-toan-khoi-luong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hiệu suất phản ứng",
+          "term_en": "Percentage yield",
+          "definition": "Tỉ lệ phần trăm giữa lượng sản phẩm thực tế thu được so với lượng tính theo lí thuyết."
+        },
+        {
+          "term_vi": "Lượng lí thuyết",
+          "term_en": "Theoretical amount",
+          "definition": "Lượng sản phẩm tính đúng theo phương trình, coi như phản ứng xảy ra hoàn toàn."
+        }
+      ],
+      "content": "## Vì sao không phải lúc nào cũng thu đủ\n\nTính theo phương trình cho ta lượng sản phẩm **lí thuyết** — nếu phản ứng xảy ra hoàn toàn. Nhưng thực tế thường thất thoát: phản ứng chưa hết, sản phẩm bám dụng cụ, tạo chất phụ... nên lượng thu được **thực tế** ít hơn.\n\n## Công thức hiệu suất\n\n$$H = \\frac{\\text{lượng thực tế}}{\\text{lượng lí thuyết}}\\times 100\\%$$\n\nCó thể tính theo khối lượng hoặc theo số mol của cùng một chất. Vì thực tế $\\le$ lí thuyết nên $H \\le 100\\%$.\n\n## Dùng ngược để dự đoán\n\nBiết hiệu suất, ta tính được lượng thực sự thu được:\n\n$$\\text{thực tế} = \\text{lí thuyết}\\times \\frac{H}{100}$$\n\n## Các bước giải\n\n1. Tính lượng sản phẩm **lí thuyết** theo phương trình.\n2. So với lượng **thực tế** đề cho (hoặc ngược lại).\n3. Áp công thức, chú ý cùng một đơn vị và cùng một chất.",
+      "formulas": [
+        "chemistry.thcs.bao-toan.hieu-suat-phan-ung-theo-san-pham",
+        "chemistry.thcs.bao-toan.do-tinh-khiet"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Nung 20 g $CaCO_3$ (nguyên chất), thực tế thu được 8,4 g $CaO$. Tính hiệu suất phản ứng.",
+          "solution": "Lí thuyết: $n_{CaCO_3} = \\dfrac{20}{100} = 0{,}2$ mol $\\Rightarrow n_{CaO} = 0{,}2$ mol $\\Rightarrow m_{CaO}^{lt} = 0{,}2\\times56 = 11{,}2$ g.\nHiệu suất: $H = \\dfrac{8{,}4}{11{,}2}\\times100\\% = 75\\%$.\nVì thực tế (8,4 g) nhỏ hơn lí thuyết (11,2 g) nên $H<100\\%$, hợp lí.",
+          "answer": "75%."
+        },
+        {
+          "problem": "Nung 25 g $CaCO_3$ với hiệu suất 80%. Tính khối lượng $CaO$ thực tế thu được.",
+          "solution": "Lí thuyết: $n_{CaCO_3} = \\dfrac{25}{100} = 0{,}25$ mol $\\Rightarrow m_{CaO}^{lt} = 0{,}25\\times56 = 14$ g.\nThực tế: $m = 14\\times\\dfrac{80}{100} = 11{,}2$ g.",
+          "answer": "11,2 g."
+        }
+      ],
+      "common_mistakes": [
+        "Lấy lượng thực tế chia cho lượng chất ban đầu thay vì cho lượng sản phẩm lí thuyết.",
+        "Cho ra hiệu suất lớn hơn 100% mà không nhận ra vô lí (thực tế luôn $\\le$ lí thuyết).",
+        "Tính hiệu suất giữa hai chất khác nhau; phải so cùng một chất (cùng sản phẩm hoặc cùng chất tham gia)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hieu-suat",
+        "do-tinh-khiet",
+        "tinh-theo-phuong-trinh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.nong-do-phan-tram",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Dung dịch",
+      "order": 1,
+      "title_vi": "Nồng độ phần trăm của dung dịch",
+      "title_en": "Percentage concentration of a solution",
+      "objectives": [
+        "Tính được nồng độ phần trăm $C\\%$ khi biết khối lượng chất tan và khối lượng dung dịch",
+        "Tính được khối lượng chất tan hoặc dung dịch từ nồng độ phần trăm"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Chất tan",
+          "term_en": "Solute",
+          "definition": "Chất bị hoà tan, ví dụ muối, đường; kí hiệu khối lượng là $m_{ct}$."
+        },
+        {
+          "term_vi": "Dung dịch",
+          "term_en": "Solution",
+          "definition": "Hỗn hợp đồng nhất gồm chất tan và dung môi; khối lượng dung dịch $m_{dd} = m_{ct} + m_{dm}$."
+        },
+        {
+          "term_vi": "Nồng độ phần trăm",
+          "term_en": "Percent by mass",
+          "definition": "Số gam chất tan có trong 100 gam dung dịch, kí hiệu $C\\%$."
+        }
+      ],
+      "content": "## Nồng độ phần trăm cho biết điều gì\n\nKhi pha nước muối, ta muốn biết muối \"đậm\" hay \"loãng\". **Nồng độ phần trăm** $C\\%$ trả lời câu đó: nó là số gam chất tan trong **100 gam dung dịch**.\n\n$$C\\% = \\frac{m_{ct}}{m_{dd}}\\times100\\%$$\n\ntrong đó khối lượng dung dịch bằng khối lượng chất tan cộng khối lượng dung môi (thường là nước):\n\n$$m_{dd} = m_{ct} + m_{dm}$$\n\n## Cẩn thận với mẫu số\n\nLỗi hay gặp là chia cho khối lượng **nước** thay vì khối lượng **dung dịch**. Nước là dung môi, còn dung dịch là cả hỗn hợp — luôn nhớ cộng thêm chất tan vào mẫu.\n\n## Tính ngược\n\nBiết $C\\%$ và khối lượng dung dịch, tính được chất tan:\n\n$$m_{ct} = \\frac{C\\%\\times m_{dd}}{100}$$\n\nĐây là công cụ để pha một dung dịch có nồng độ mong muốn trong phòng thí nghiệm và trong đời sống (pha nước muối sinh lí, pha thuốc...).",
+      "formulas": [
+        "chemistry.thcs.dung-dich.nong-do-phan-tram",
+        "chemistry.thcs.dung-dich.khoi-luong-chat-tan",
+        "chemistry.thcs.dung-dich.khoi-luong-dung-dich",
+        "chemistry.thcs.dung-dich.khoi-luong-dung-dich-theo-the-tich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hoà tan 20 g muối ăn vào 80 g nước. Tính nồng độ phần trăm của dung dịch.",
+          "solution": "Khối lượng dung dịch: $m_{dd} = 20 + 80 = 100$ g.\n$C\\% = \\dfrac{20}{100}\\times100\\% = 20\\%$.\nChú ý mẫu số là 100 g (cả dung dịch) chứ không phải 80 g (chỉ nước).",
+          "answer": "20%."
+        },
+        {
+          "problem": "Cần bao nhiêu gam đường để pha 250 g dung dịch đường 8%?",
+          "solution": "Dùng công thức ngược: $m_{ct} = \\dfrac{C\\%\\times m_{dd}}{100} = \\dfrac{8\\times250}{100} = 20$ g đường.\nPhần nước còn lại: $250 - 20 = 230$ g.",
+          "answer": "20 g đường (và 230 g nước)."
+        }
+      ],
+      "common_mistakes": [
+        "Chia khối lượng chất tan cho khối lượng nước (dung môi) thay vì cho khối lượng dung dịch.",
+        "Quên cộng khối lượng chất tan vào khối lượng dung dịch.",
+        "Nhầm nồng độ phần trăm (theo khối lượng) với nồng độ mol (theo thể tích)."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "dung-dich",
+        "nong-do-phan-tram",
+        "chat-tan"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.nong-do-mol",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Dung dịch",
+      "order": 2,
+      "title_vi": "Nồng độ mol của dung dịch",
+      "title_en": "Molar concentration of a solution",
+      "objectives": [
+        "Tính được nồng độ mol $C_M$ khi biết số mol chất tan và thể tích dung dịch",
+        "Tính được số mol chất tan hoặc thể tích dung dịch từ nồng độ mol"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.thcs-hoa-sinh.mol-khoi-luong-so-hat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nồng độ mol",
+          "term_en": "Molarity",
+          "definition": "Số mol chất tan có trong 1 lít dung dịch, kí hiệu $C_M$, đơn vị mol/L (hay M)."
+        },
+        {
+          "term_vi": "Thể tích dung dịch",
+          "term_en": "Solution volume",
+          "definition": "Thể tích của cả dung dịch, đo bằng lít; nếu đề cho mL phải đổi ra lít (chia 1000)."
+        }
+      ],
+      "content": "## Vì sao có thêm nồng độ mol\n\nNồng độ phần trăm dùng khối lượng, nhưng phản ứng lại theo số mol. Vì thế trong phòng thí nghiệm người ta hay dùng **nồng độ mol** $C_M$: số mol chất tan trong **1 lít dung dịch**.\n\n$$C_M = \\frac{n}{V}$$\n\nvới $n$ tính bằng mol, $V$ tính bằng **lít**. Đơn vị của $C_M$ là mol/L, viết tắt M.\n\n## Đừng quên đổi đơn vị\n\nĐề thường cho thể tích bằng mililit. Phải đổi: $500$ mL $= 0{,}5$ lít. Đây là lỗi số 1 khi tính nồng độ mol.\n\n## Ba chiều tính\n\nTừ công thức gốc suy ra hai công thức con:\n\n$$n = C_M\\times V \\qquad V = \\frac{n}{C_M}$$\n\nBiết hai đại lượng bất kì là tìm được đại lượng còn lại. Nếu đề cho khối lượng chất tan, nhớ đổi ra số mol $n=\\dfrac{m}{M}$ trước.",
+      "formulas": [
+        "chemistry.thcs.dung-dich.nong-do-mol"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hoà tan 8 g $NaOH$ vào nước được 500 mL dung dịch. Tính nồng độ mol.",
+          "solution": "Đổi ra mol: $M_{NaOH} = 23+16+1 = 40$, nên $n = \\dfrac{8}{40} = 0{,}2$ mol.\nĐổi thể tích: $500$ mL $= 0{,}5$ lít.\n$C_M = \\dfrac{n}{V} = \\dfrac{0{,}2}{0{,}5} = 0{,}4$ mol/L.",
+          "answer": "0,4 mol/L (0,4 M)."
+        },
+        {
+          "problem": "Cần bao nhiêu mol $HCl$ để pha 250 mL dung dịch $HCl$ 2 M?",
+          "solution": "Đổi thể tích: $250$ mL $=0{,}25$ lít.\n$n = C_M\\times V = 2\\times0{,}25 = 0{,}5$ mol $HCl$.",
+          "answer": "0,5 mol."
+        }
+      ],
+      "common_mistakes": [
+        "Quên đổi mililit ra lít nên nồng độ sai gấp 1000 lần.",
+        "Dùng thẳng khối lượng chất tan làm số mol mà không chia cho khối lượng mol.",
+        "Nhầm nồng độ mol (theo thể tích dung dịch) với nồng độ phần trăm (theo khối lượng dung dịch)."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dung-dich",
+        "nong-do-mol",
+        "so-mol"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.do-tan-va-dung-dich-bao-hoa",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Dung dịch",
+      "order": 3,
+      "title_vi": "Độ tan và dung dịch bão hoà",
+      "title_en": "Solubility and saturated solutions",
+      "objectives": [
+        "Nêu được ý nghĩa của độ tan và tính được khối lượng chất tan tối đa trong một lượng nước",
+        "Tính được nồng độ phần trăm của dung dịch bão hoà khi biết độ tan"
+      ],
+      "prerequisites": [
+        "lesson.chemistry.thcs-hoa-sinh.nong-do-phan-tram"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Độ tan",
+          "term_en": "Solubility",
+          "definition": "Số gam chất tan tối đa hoà tan trong 100 gam nước ở một nhiệt độ xác định, kí hiệu $S$."
+        },
+        {
+          "term_vi": "Dung dịch bão hoà",
+          "term_en": "Saturated solution",
+          "definition": "Dung dịch đã hoà tan tối đa lượng chất tan; thêm nữa sẽ không tan mà lắng xuống."
+        }
+      ],
+      "content": "## Nước hoà tan có giới hạn\n\nCho đường vào cốc nước, khuấy mãi đến lúc đường không tan thêm nữa — dung dịch đã **bão hoà**. Lượng chất tan tối đa ấy phụ thuộc nhiệt độ và được đo bằng **độ tan** $S$: số gam chất tan trong 100 gam nước.\n\n$$S = \\frac{m_{ct}}{m_{H_2O}}\\times100$$\n\nĐộ tan càng lớn, chất càng dễ tan. Đa số chất rắn tan nhiều hơn khi nước nóng lên.\n\n## Từ độ tan sang nồng độ phần trăm\n\nDung dịch bão hoà có $S$ gam chất tan trong 100 gam nước, tức trong $(100+S)$ gam dung dịch:\n\n$$C\\% = \\frac{S}{100+S}\\times100\\%$$\n\n## Vì sao tinh thể tách ra khi nguội\n\nKhi hạ nhiệt độ, độ tan giảm, dung dịch \"chứa\" không hết chất tan nên phần dư **kết tinh** tách ra. Đây chính là cách làm ra đường phèn, muối kết tinh — một thí nghiệm quan sát rất trực quan.",
+      "formulas": [
+        "chemistry.thcs.dung-dich.do-tan",
+        "chemistry.thcs.dung-dich.nong-do-phan-tram-bao-hoa",
+        "chemistry.thcs.dung-dich.khoi-luong-tinh-the-tach-ra"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Ở $20^{\\circ}$C, độ tan của muối ăn là 36 g. Hỏi 50 g nước hoà tan tối đa bao nhiêu gam muối?",
+          "solution": "Độ tan 36 g nghĩa là 100 g nước hoà tan tối đa 36 g muối.\nVới 50 g nước (bằng nửa) thì hoà tan tối đa $\\dfrac{36}{100}\\times50 = 18$ g muối.\nThêm quá 18 g, phần dư sẽ lắng xuống đáy.",
+          "answer": "18 g muối."
+        },
+        {
+          "problem": "Độ tan của một chất ở $25^{\\circ}$C là 25 g. Tính nồng độ phần trăm của dung dịch bão hoà.",
+          "solution": "Trong dung dịch bão hoà có 25 g chất tan và 100 g nước, tức $100+25 = 125$ g dung dịch.\n$C\\% = \\dfrac{25}{125}\\times100\\% = 20\\%$.",
+          "answer": "20%."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm độ tan tính trên 100 g dung dịch thay vì 100 g nước.",
+        "Khi tính $C\\%$ dung dịch bão hoà, lấy mẫu số là 100 (chỉ nước) thay vì $100+S$ (cả dung dịch).",
+        "Cho rằng độ tan không đổi theo nhiệt độ nên không giải thích được vì sao tinh thể tách ra khi nguội."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "do-tan",
+        "dung-dich-bao-hoa",
+        "ket-tinh"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.lien-ket-hoa-hoc-va-quy-tac-hoa-tri",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Liên kết hoá học và kim loại",
+      "order": 1,
+      "title_vi": "Liên kết hoá học cơ bản và quy tắc hoá trị",
+      "title_en": "Basic chemical bonding and the valence rule",
+      "objectives": [
+        "Phân biệt được liên kết ion và liên kết cộng hoá trị qua cách góp hoặc cho - nhận electron",
+        "Vận dụng được quy tắc hoá trị để lập và kiểm tra công thức hoá học hai nguyên tố"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Liên kết ion",
+          "term_en": "Ionic bond",
+          "definition": "Liên kết hình thành khi nguyên tử kim loại cho electron, phi kim nhận electron, tạo các ion trái dấu hút nhau."
+        },
+        {
+          "term_vi": "Liên kết cộng hoá trị",
+          "term_en": "Covalent bond",
+          "definition": "Liên kết hình thành khi hai nguyên tử phi kim dùng chung các cặp electron."
+        },
+        {
+          "term_vi": "Hoá trị",
+          "term_en": "Valence",
+          "definition": "Con số biểu thị khả năng liên kết của một nguyên tố, thường ghi bằng số La Mã."
+        }
+      ],
+      "content": "## Vì sao nguyên tử \"kết bạn\"\n\nNguyên tử bền khi lớp electron ngoài cùng đủ 8 (hoặc 2 với heli). Để đạt điều đó, chúng liên kết theo hai kiểu chính:\n\n- **Liên kết ion**: kim loại **cho** electron, phi kim **nhận** electron. Hai ion trái dấu hút nhau, như trong $NaCl$.\n- **Liên kết cộng hoá trị**: hai phi kim **dùng chung** cặp electron, như trong $H_2$, $H_2O$.\n\n## Quy tắc hoá trị\n\nTrong hợp chất hai nguyên tố $A_xB_y$ với hoá trị $a$ của $A$ và $b$ của $B$:\n\n$$x\\times a = y\\times b$$\n\n\"Tích chỉ số nhân hoá trị của hai bên phải bằng nhau.\" Từ đó rút ra tỉ lệ $\\dfrac{x}{y} = \\dfrac{b}{a}$ (rút gọn).\n\n## Dùng để làm gì\n\n- **Lập công thức**: biết hoá trị, tìm chỉ số $x, y$.\n- **Kiểm tra công thức**: thay vào quy tắc, nếu hai vế bằng nhau là công thức đúng.\n- **Tìm hoá trị** của một nguyên tố khi biết công thức và hoá trị nguyên tố kia.",
+      "formulas": [
+        "chemistry.thcs.lien-ket.quy-tac-hoa-tri"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm hoá trị của lưu huỳnh $S$ trong hợp chất $SO_3$.",
+          "solution": "Oxygen có hoá trị II, trong $SO_3$ có 3 nguyên tử O nên tổng \"hoá trị\" bên oxygen là $3\\times \\text{II} = 6$.\nCó 1 nguyên tử S, gọi hoá trị S là $a$: quy tắc cho $1\\times a = 6 \\Rightarrow a = \\text{VI}$.\nVậy S có hoá trị VI trong $SO_3$.",
+          "answer": "S hoá trị VI."
+        },
+        {
+          "problem": "Lập công thức hợp chất của nhôm $Al$ (hoá trị III) với oxygen (hoá trị II).",
+          "solution": "Gọi công thức $Al_xO_y$. Quy tắc hoá trị: $x\\times \\text{III} = y\\times \\text{II}$, tức $3x = 2y$.\nChọn nghiệm nguyên nhỏ nhất: $x=2, y=3$. Vậy công thức là $Al_2O_3$.\nMẹo chéo: lấy hoá trị nguyên tố này làm chỉ số nguyên tố kia rồi rút gọn.",
+          "answer": "$Al_2O_3$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm chỉ số với hoá trị: chỉ số là con số nhỏ dưới kí hiệu, hoá trị là khả năng liên kết.",
+        "Không rút gọn tỉ lệ nên viết $Al_2O_3$ thành dạng chưa tối giản như $Al_4O_6$.",
+        "Cho rằng liên kết ion và cộng hoá trị giống nhau; thực ra một bên cho - nhận, một bên dùng chung electron."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "lien-ket-ion",
+        "lien-ket-cong-hoa-tri",
+        "hoa-tri",
+        "quy-tac-hoa-tri"
+      ]
+    },
+    {
+      "id": "lesson.chemistry.thcs-hoa-sinh.day-hoat-dong-hoa-hoc-va-dien-hoa",
+      "subject": "chemistry",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Liên kết hoá học và kim loại",
+      "order": 2,
+      "title_vi": "Dãy hoạt động hoá học của kim loại và điện hoá sơ khởi",
+      "title_en": "Reactivity series of metals and basic electrochemistry",
+      "objectives": [
+        "Sắp xếp được một số kim loại theo mức độ hoạt động và dự đoán phản ứng đẩy kim loại",
+        "Giải thích được nguyên tắc hoạt động sơ khởi của pin đơn giản dựa vào chênh lệch hoạt động"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Dãy hoạt động hoá học",
+          "term_en": "Reactivity series",
+          "definition": "Dãy sắp xếp kim loại theo mức độ hoạt động giảm dần: K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au."
+        },
+        {
+          "term_vi": "Phản ứng đẩy kim loại",
+          "term_en": "Displacement reaction",
+          "definition": "Kim loại mạnh hơn đẩy kim loại yếu hơn ra khỏi dung dịch muối của nó."
+        },
+        {
+          "term_vi": "Pin điện hoá",
+          "term_en": "Electrochemical cell",
+          "definition": "Thiết bị biến năng lượng của phản ứng hoá học thành dòng điện nhờ hai kim loại khác nhau."
+        }
+      ],
+      "content": "## Kim loại có \"mạnh yếu\"\n\nKhông phải kim loại nào cũng phản ứng như nhau. Các nhà hoá học xếp chúng thành **dãy hoạt động hoá học**, mạnh dần từ phải sang trái:\n\n$$K,\\ Na,\\ Ca,\\ Mg,\\ Al,\\ Zn,\\ Fe,\\ Pb,\\ (H),\\ Cu,\\ Ag,\\ Au$$\n\nCâu thần chú quen thuộc: \"Khi Nào Cần May Áo Záp Sắt Phải Hỏi Cúc Bạc Vàng\".\n\n## Quy tắc dùng dãy\n\n- Kim loại đứng **trước H** đẩy được hydrogen ra khỏi dung dịch axit (như $Zn$, $Fe$).\n- Kim loại đứng **trước** đẩy được kim loại đứng **sau** ra khỏi dung dịch muối. Ví dụ $Fe$ đẩy $Cu$ khỏi $CuSO_4$: đinh sắt nhúng vào dung dịch xanh, dần phủ lớp đồng đỏ.\n\n## Chớm tới điện hoá\n\nGhép hai kim loại khác nhau (ví dụ $Zn$ và $Cu$) vào dung dịch, kim loại mạnh hơn nhường electron, tạo dòng điện — đó là nguyên tắc của **pin**. Chênh lệch hoạt động giữa hai kim loại càng lớn thì pin cho hiệu điện thế càng cao. Đây là cửa ngõ vào điện hoá học.",
+      "formulas": [
+        "chemistry.thcs.dien-hoa.day-hoat-dong-hoa-hoc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho một đinh sắt sạch vào dung dịch $CuSO_4$ màu xanh. Hiện tượng gì xảy ra? Giải thích.",
+          "solution": "Sắt $Fe$ đứng trước đồng $Cu$ trong dãy hoạt động nên $Fe$ mạnh hơn, đẩy $Cu$ ra khỏi muối:\n$Fe + CuSO_4 \\rightarrow FeSO_4 + Cu$.\nQuan sát: đinh sắt bị phủ lớp đồng đỏ, màu xanh của dung dịch nhạt dần (do $Cu^{2+}$ giảm, thay bằng $Fe^{2+}$ lục nhạt).",
+          "answer": "Sắt tan bớt, đồng đỏ bám lên đinh, dung dịch nhạt màu xanh."
+        },
+        {
+          "problem": "Trong hai cặp $Zn$-$Cu$ và $Cu$-$Ag$, cặp nào cho pin có hiệu điện thế lớn hơn? Vì sao?",
+          "solution": "Khoảng cách trong dãy hoạt động phản ánh chênh lệch \"mạnh yếu\". $Zn$ và $Cu$ cách xa nhau hơn $Cu$ và $Ag$.\nChênh lệch càng lớn thì pin cho hiệu điện thế càng cao, nên cặp $Zn$-$Cu$ mạnh hơn.",
+          "answer": "Cặp $Zn$-$Cu$ cho hiệu điện thế lớn hơn."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng mọi kim loại đều đẩy được nhau; thực ra chỉ kim loại đứng trước đẩy kim loại đứng sau.",
+        "Nghĩ vàng, bạc phản ứng với axit loãng như sắt, kẽm; thực ra chúng đứng sau H nên không đẩy được hydrogen.",
+        "Nhầm rằng pin mạnh do kim loại to; thực ra hiệu điện thế phụ thuộc chênh lệch vị trí trong dãy hoạt động."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "nang-cao",
+      "tags": [
+        "day-hoat-dong",
+        "phan-ung-day",
+        "dien-hoa",
+        "pin"
+      ]
+    },
+    {
+      "id": "lesson.biology.thcs-hoa-sinh.te-bao-ti-le-svr-do-phong-dai",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Tế bào",
+      "order": 1,
+      "title_vi": "Tế bào: tỉ lệ diện tích - thể tích và độ phóng đại kính hiển vi",
+      "title_en": "Cells: surface-to-volume ratio and microscope magnification",
+      "objectives": [
+        "Giải thích được vì sao tế bào có kích thước rất nhỏ dựa vào tỉ lệ diện tích trên thể tích",
+        "Tính được độ phóng đại của kính hiển vi và kích thước thật của vật quan sát"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Tế bào",
+          "term_en": "Cell",
+          "definition": "Đơn vị cấu tạo và chức năng cơ bản của mọi cơ thể sống."
+        },
+        {
+          "term_vi": "Tỉ lệ S/V",
+          "term_en": "Surface-to-volume ratio",
+          "definition": "Tỉ số giữa diện tích bề mặt và thể tích; vật càng nhỏ thì tỉ lệ này càng lớn."
+        },
+        {
+          "term_vi": "Độ phóng đại",
+          "term_en": "Magnification",
+          "definition": "Số lần ảnh lớn hơn vật thật, bằng tích độ phóng đại của thị kính và vật kính."
+        }
+      ],
+      "content": "## Vì sao tế bào phải nhỏ\n\nTế bào trao đổi chất qua **bề mặt** nhưng nuôi toàn bộ **thể tích** bên trong. Khi vật to lên, thể tích tăng nhanh hơn diện tích, nên **tỉ lệ diện tích trên thể tích (S/V)** giảm. Tế bào nhỏ giữ tỉ lệ S/V lớn, giúp lấy chất dinh dưỡng và thải chất thải đủ nhanh. Đó là lí do tế bào có kích thước hiển vi.\n\n## Nhìn tế bào bằng kính hiển vi\n\nMắt thường không thấy tế bào, phải dùng kính hiển vi. **Độ phóng đại** tổng cộng bằng tích của hai thấu kính:\n\n$$G = G_{thị kính}\\times G_{vật kính}$$\n\nVí dụ thị kính $10\\times$ và vật kính $40\\times$ cho ảnh lớn gấp $400$ lần.\n\n## Kích thước thật của vật\n\nĐo kích thước ảnh rồi chia cho độ phóng đại sẽ ra kích thước thật:\n\n$$\\text{kích thước thật} = \\frac{\\text{kích thước ảnh}}{G}$$\n\nNhớ đổi đơn vị cho khớp: $1$ mm $= 1000\\ \\mu m$. Đây là kĩ năng quan sát cốt lõi trong bài thực hành sinh học lớp 6.",
+      "formulas": [
+        "biology.thcs.te-bao.do-phong-dai-kinh-hien-vi",
+        "biology.thcs.te-bao.kich-thuoc-thuc-cua-vat-quan-sat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Kính hiển vi có thị kính $10\\times$ và vật kính $40\\times$. Độ phóng đại tổng cộng là bao nhiêu?",
+          "solution": "Độ phóng đại tổng cộng là tích hai thấu kính: $G = 10\\times40 = 400$ lần.\nNghĩa là ảnh nhìn thấy lớn gấp 400 lần vật thật.",
+          "answer": "400 lần."
+        },
+        {
+          "problem": "Dưới độ phóng đại 400 lần, ảnh một tế bào dài 2 mm. Kích thước thật của tế bào là bao nhiêu micromet?",
+          "solution": "Đổi đơn vị: $2$ mm $= 2000\\ \\mu m$.\nKích thước thật $= \\dfrac{\\text{ảnh}}{G} = \\dfrac{2000}{400} = 5\\ \\mu m$.\nTế bào rất nhỏ nên ta luôn được kết quả cỡ vài micromet.",
+          "answer": "$5\\ \\mu m$."
+        }
+      ],
+      "common_mistakes": [
+        "Cộng độ phóng đại của thị kính và vật kính thay vì nhân chúng.",
+        "Quên đổi đơn vị mm sang µm nên kết quả sai 1000 lần.",
+        "Cho rằng vật to thì trao đổi chất tốt hơn; thực ra vật to có tỉ lệ S/V nhỏ, trao đổi chất kém hơn."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "te-bao",
+        "ti-le-svr",
+        "kinh-hien-vi",
+        "do-phong-dai"
+      ]
+    },
+    {
+      "id": "lesson.biology.thcs-hoa-sinh.quang-hop-va-ho-hap-o-thuc-vat",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Trao đổi chất và chuyển hoá năng lượng ở thực vật",
+      "order": 1,
+      "title_vi": "Quang hợp và hô hấp ở thực vật",
+      "title_en": "Photosynthesis and respiration in plants",
+      "objectives": [
+        "Viết được phương trình tổng quát của quang hợp và của hô hấp ở thực vật",
+        "So sánh được quang hợp và hô hấp về chất tham gia, sản phẩm và vai trò"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Quang hợp",
+          "term_en": "Photosynthesis",
+          "definition": "Quá trình lá cây dùng ánh sáng để tổng hợp glucose từ carbon dioxide và nước, nhả oxygen."
+        },
+        {
+          "term_vi": "Hô hấp tế bào",
+          "term_en": "Cellular respiration",
+          "definition": "Quá trình phân giải glucose cùng oxygen để giải phóng năng lượng cho sự sống."
+        },
+        {
+          "term_vi": "Diệp lục",
+          "term_en": "Chlorophyll",
+          "definition": "Chất màu xanh trong lá, hấp thụ ánh sáng để thực hiện quang hợp."
+        }
+      ],
+      "content": "## Hai quá trình ngược chiều\n\nCây xanh vừa \"nấu ăn\" vừa \"tiêu thụ\" thức ăn. Hai việc đó là quang hợp và hô hấp — gần như ngược nhau.\n\n## Quang hợp: tạo chất và tích năng lượng\n\nDiễn ra ở lục lạp trong lá, cần **ánh sáng** và **diệp lục**:\n\n$$6CO_2 + 6H_2O \\xrightarrow{\\text{ánh sáng, diệp lục}} C_6H_{12}O_6 + 6O_2$$\n\nCây lấy khí carbon dioxide và nước, tạo ra glucose (thức ăn) và nhả khí oxygen. Quang hợp chỉ xảy ra khi có ánh sáng.\n\n## Hô hấp: phân giải chất và giải phóng năng lượng\n\nDiễn ra ở mọi tế bào sống, **suốt ngày đêm**:\n\n$$C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + \\text{năng lượng}$$\n\nCây dùng oxygen \"đốt\" glucose để lấy năng lượng cho sinh trưởng.\n\n## Ghi nhớ bằng cách so sánh\n\n| | Quang hợp | Hô hấp |\n|---|---|---|\n| Lấy vào | $CO_2$, $H_2O$ | $O_2$, glucose |\n| Thải ra | $O_2$, glucose | $CO_2$, $H_2O$ |\n| Năng lượng | tích trữ | giải phóng |\n| Khi nào | có ánh sáng | mọi lúc |\n\nHai quá trình bù trừ nhau, giữ cân bằng khí $O_2$ và $CO_2$ cho Trái Đất.",
+      "formulas": [
+        "biology.thcs.chuyen-hoa-thuc-vat.phuong-trinh-quang-hop",
+        "biology.thcs.chuyen-hoa-thuc-vat.phuong-trinh-ho-hap-hieu-khi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Vì sao ban đêm không nên để nhiều cây trong phòng ngủ kín?",
+          "solution": "Ban đêm không có ánh sáng nên cây ngừng quang hợp nhưng vẫn **hô hấp**: lấy $O_2$ và thải $CO_2$.\nNhiều cây trong phòng kín sẽ cạnh tranh oxygen với người, làm không khí ngột ngạt.\nVậy nguyên nhân là hô hấp diễn ra suốt ngày đêm còn quang hợp thì không.",
+          "answer": "Vì ban đêm cây chỉ hô hấp, hút $O_2$ và thải $CO_2$."
+        },
+        {
+          "problem": "Trong phương trình quang hợp, cây lấy vào những chất nào và tạo ra những chất nào?",
+          "solution": "Nhìn vế trái phương trình $6CO_2 + 6H_2O \\rightarrow C_6H_{12}O_6 + 6O_2$: cây lấy vào carbon dioxide và nước.\nVế phải là sản phẩm: glucose và khí oxygen.",
+          "answer": "Lấy vào $CO_2$ và $H_2O$; tạo ra glucose và $O_2$."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng cây chỉ hô hấp vào ban đêm; thực ra cây hô hấp cả ngày lẫn đêm, ban ngày quang hợp mạnh nên che lấp.",
+        "Nhầm chất tham gia và sản phẩm giữa quang hợp và hô hấp vì hai phương trình gần như ngược nhau.",
+        "Quên điều kiện ánh sáng và diệp lục của quang hợp."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "quang-hop",
+        "ho-hap",
+        "thuc-vat",
+        "chuyen-hoa"
+      ]
+    },
+    {
+      "id": "lesson.biology.thcs-hoa-sinh.bmi-va-nhu-cau-nang-luong",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Sinh lí người",
+      "order": 1,
+      "title_vi": "Chỉ số BMI và nhu cầu năng lượng của cơ thể",
+      "title_en": "BMI and the body's energy needs",
+      "objectives": [
+        "Tính được chỉ số khối cơ thể BMI và nhận xét về thể trạng",
+        "Ước lượng được giá trị năng lượng của khẩu phần ăn từ khối lượng các chất dinh dưỡng"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Chỉ số BMI",
+          "term_en": "Body Mass Index",
+          "definition": "Chỉ số khối cơ thể, tính bằng cân nặng chia cho bình phương chiều cao (kg/m²)."
+        },
+        {
+          "term_vi": "Giá trị năng lượng",
+          "term_en": "Energy value",
+          "definition": "Năng lượng mà thức ăn cung cấp; 1 g carbohydrate hay protein cho ~4 kcal, 1 g chất béo cho ~9 kcal."
+        }
+      ],
+      "content": "## BMI: cơ thể cân đối chưa\n\n**Chỉ số khối cơ thể** BMI giúp đánh giá nhanh cân nặng so với chiều cao:\n\n$$BMI = \\frac{m}{h^2}$$\n\nvới $m$ là cân nặng (kg), $h$ là chiều cao (**mét**). Với người trưởng thành, BMI bình thường khoảng $18{,}5$ đến $25$; dưới là gầy, trên là thừa cân. (Ở tuổi thiếu niên còn phải so với bảng theo tuổi.)\n\n## Đừng để sai đơn vị chiều cao\n\nLỗi phổ biến nhất là để chiều cao bằng centimet. Phải đổi ra mét: cao $160$ cm nghĩa là $h = 1{,}6$ m.\n\n## Năng lượng từ thức ăn\n\nCơ thể cần năng lượng đo bằng kilocalo (kcal). Mỗi loại chất dinh dưỡng cho lượng khác nhau:\n\n- 1 g carbohydrate: khoảng 4 kcal\n- 1 g protein: khoảng 4 kcal\n- 1 g chất béo (lipid): khoảng 9 kcal\n\nTổng năng lượng khẩu phần bằng tổng năng lượng của từng nhóm chất. Đối chiếu với **nhu cầu năng lượng** hằng ngày để ăn uống hợp lí, tránh thừa hay thiếu.",
+      "formulas": [
+        "biology.thcs.sinh-li-nguoi.chi-so-bmi",
+        "biology.thcs.sinh-li-nguoi.nhu-cau-nang-luong",
+        "biology.thcs.sinh-li-nguoi.gia-tri-nang-luong-thuc-an"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một bạn nặng 50 kg, cao 1,6 m. Tính chỉ số BMI.",
+          "solution": "Áp dụng $BMI = \\dfrac{m}{h^2} = \\dfrac{50}{1{,}6^2} = \\dfrac{50}{2{,}56} \\approx 19{,}5$ kg/m².\nGiá trị này nằm trong khoảng bình thường của người lớn.\nNhớ dùng chiều cao bằng mét, không phải centimet.",
+          "answer": "BMI ≈ 19,5 kg/m²."
+        },
+        {
+          "problem": "Một khẩu phần có 300 g carbohydrate, 60 g protein và 50 g chất béo. Tính tổng năng lượng.",
+          "solution": "Năng lượng từng nhóm:\n- Carbohydrate: $300\\times4 = 1200$ kcal\n- Protein: $60\\times4 = 240$ kcal\n- Chất béo: $50\\times9 = 450$ kcal\nTổng: $1200 + 240 + 450 = 1890$ kcal.",
+          "answer": "1890 kcal."
+        }
+      ],
+      "common_mistakes": [
+        "Để chiều cao bằng centimet khi tính BMI nên kết quả nhỏ hơn thật hàng chục nghìn lần.",
+        "Quên bình phương chiều cao (chia cho $h$ thay vì $h^2$).",
+        "Dùng 4 kcal cho chất béo; chất béo cho tới 9 kcal mỗi gam."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "bmi",
+        "nang-luong",
+        "dinh-duong",
+        "suc-khoe"
+      ]
+    },
+    {
+      "id": "lesson.biology.thcs-hoa-sinh.nhip-tim-luu-luong-va-ho-hap",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Sinh lí người",
+      "order": 2,
+      "title_vi": "Nhịp tim, lưu lượng tim và thông khí phổi",
+      "title_en": "Heart rate, cardiac output and pulmonary ventilation",
+      "objectives": [
+        "Tính được lưu lượng tim từ thể tích tâm thu và nhịp tim",
+        "Tính được lượng khí thông khí phổi trong một phút từ thể tích khí lưu thông và nhịp thở"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Nhịp tim",
+          "term_en": "Heart rate",
+          "definition": "Số lần tim đập trong một phút, kí hiệu $f$ (lần/phút)."
+        },
+        {
+          "term_vi": "Thể tích tâm thu",
+          "term_en": "Stroke volume",
+          "definition": "Lượng máu tim bơm đi trong mỗi lần đập, kí hiệu $Q_s$."
+        },
+        {
+          "term_vi": "Lưu lượng tim",
+          "term_en": "Cardiac output",
+          "definition": "Lượng máu tim bơm đi trong một phút, bằng thể tích tâm thu nhân nhịp tim."
+        }
+      ],
+      "content": "## Tim bơm được bao nhiêu máu mỗi phút\n\nMỗi lần đập, tim đẩy đi một lượng máu gọi là **thể tích tâm thu** $Q_s$ (thường khoảng 70 mL ở người lớn). Nhân với **nhịp tim** $f$ ta được **lưu lượng tim** — lượng máu bơm trong một phút:\n\n$$Q = Q_s\\times f$$\n\nVí dụ tim đập 75 lần/phút, mỗi lần 70 mL thì bơm được $70\\times75 = 5250$ mL $= 5{,}25$ lít máu mỗi phút.\n\n## Khi vận động\n\nLúc chạy nhảy, cơ cần nhiều oxygen hơn nên nhịp tim tăng, lưu lượng tim tăng để đưa máu (mang $O_2$) tới cơ nhanh hơn. Đó là lí do tim đập nhanh khi tập thể dục.\n\n## Phổi thông khí\n\nTương tự, mỗi nhịp thở đưa vào một **thể tích khí lưu thông** (khoảng 0,5 lít). Nhân với **nhịp thở** ra lượng khí trao đổi mỗi phút:\n\n$$\\text{thông khí phổi} = \\text{thể tích khí lưu thông}\\times \\text{nhịp thở}$$\n\nHai công thức cùng một dạng \"lượng mỗi lần × số lần mỗi phút\", rất dễ nhớ.",
+      "formulas": [
+        "biology.thcs.sinh-li-nguoi.chu-ki-tim",
+        "biology.thcs.sinh-li-nguoi.luu-luong-tim",
+        "biology.thcs.sinh-li-nguoi.tan-so-ho-hap",
+        "biology.thcs.sinh-li-nguoi.thong-khi-phoi",
+        "biology.thcs.sinh-li-nguoi.dung-tich-song"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tim một người có thể tích tâm thu 70 mL, đập 75 lần/phút. Tính lưu lượng tim theo lít/phút.",
+          "solution": "Lưu lượng tim $Q = Q_s\\times f = 70\\times75 = 5250$ mL/phút.\nĐổi ra lít: $5250$ mL $= 5{,}25$ lít/phút.\nTức mỗi phút tim luân chuyển hơn 5 lít máu — gần bằng toàn bộ máu trong cơ thể.",
+          "answer": "5,25 lít/phút."
+        },
+        {
+          "problem": "Một người thở 16 nhịp/phút, mỗi nhịp đưa vào 0,5 lít khí. Tính lượng khí thông khí phổi trong một phút.",
+          "solution": "Thông khí phổi $= 0{,}5\\times16 = 8$ lít/phút.\nGiống công thức lưu lượng tim: lấy lượng mỗi lần nhân số lần trong một phút.",
+          "answer": "8 lít/phút."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm thể tích tâm thu (mỗi lần đập) với lưu lượng tim (mỗi phút).",
+        "Quên đổi mL sang lít khi đề hỏi lít/phút.",
+        "Cộng thể tích và nhịp thay vì nhân chúng."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nhip-tim",
+        "luu-luong-tim",
+        "thong-khi-phoi",
+        "sinh-li-nguoi"
+      ]
+    },
+    {
+      "id": "lesson.biology.thcs-hoa-sinh.lai-mot-cap-tinh-trang-va-xac-suat",
+      "subject": "biology",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chủ đề: Di truyền",
+      "order": 1,
+      "title_vi": "Lai một cặp tính trạng và xác suất di truyền đơn giản",
+      "title_en": "Monohybrid cross and simple genetic probability",
+      "objectives": [
+        "Xác định được tỉ lệ kiểu hình đời con trong phép lai một cặp tính trạng theo quy luật phân li",
+        "Tính được xác suất xuất hiện một tính trạng ở đời con bằng suy luận đơn giản"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Tính trạng trội",
+          "term_en": "Dominant trait",
+          "definition": "Tính trạng biểu hiện ra ở thể dị hợp; kí hiệu bằng chữ in hoa như $A$."
+        },
+        {
+          "term_vi": "Tính trạng lặn",
+          "term_en": "Recessive trait",
+          "definition": "Tính trạng chỉ biểu hiện khi ở thể đồng hợp lặn $aa$; kí hiệu chữ thường."
+        },
+        {
+          "term_vi": "Quy luật phân li",
+          "term_en": "Law of segregation",
+          "definition": "Mỗi cặp nhân tố di truyền phân li về giao tử, đời con nhận một nhân tố từ mỗi bố mẹ."
+        }
+      ],
+      "content": "## Menđen và cây đậu Hà Lan\n\nMenđen lai đậu **hoa đỏ** thuần chủng với **hoa trắng** thuần chủng. Đời $F_1$ toàn hoa đỏ — đỏ là **tính trạng trội** (kí hiệu $A$), trắng là **lặn** ($a$).\n\n## Vì sao $F_2$ có tỉ lệ 3 : 1\n\nCho $F_1$ ($Aa$) tự thụ phấn. Mỗi cây cho hai loại giao tử $A$ và $a$ với tỉ lệ bằng nhau. Kẻ **khung Punnett**:\n\n| | A | a |\n|---|---|---|\n| **A** | AA | Aa |\n| **a** | Aa | aa |\n\nĐời $F_2$ có kiểu gen $1\\,AA : 2\\,Aa : 1\\,aa$. Vì $A$ trội, ba tổ hợp đầu ($AA, Aa, Aa$) đều cho hoa đỏ, chỉ $aa$ cho hoa trắng. Vậy **kiểu hình 3 đỏ : 1 trắng**.\n\n## Từ tỉ lệ sang xác suất\n\nTỉ lệ $3:1$ nghĩa là xác suất cây $F_2$ hoa trắng là $\\dfrac{1}{4} = 25\\%$, hoa đỏ là $\\dfrac{3}{4} = 75\\%$. Với một số cây $F_2$ đủ lớn, số cây hoa trắng gần bằng $\\dfrac{1}{4}$ tổng số. Đây là cách dùng xác suất để dự đoán kết quả lai.",
+      "formulas": [
+        "biology.thcs.quy-luat-di-truyen.quy-luat-phan-li",
+        "biology.thcs.quy-luat-di-truyen.lai-phan-tich",
+        "biology.thcs.quy-luat-di-truyen.phan-li-doc-lap"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Lai hai cây đậu $F_1$ hoa đỏ ($Aa$) với nhau, thu được 400 cây $F_2$. Dự đoán số cây hoa trắng.",
+          "solution": "Phép lai $Aa \\times Aa$ cho $F_2$ tỉ lệ kiểu hình 3 đỏ : 1 trắng.\nXác suất hoa trắng ($aa$) là $\\dfrac{1}{4}$.\nSố cây hoa trắng $\\approx \\dfrac{1}{4}\\times400 = 100$ cây.",
+          "answer": "Khoảng 100 cây hoa trắng."
+        },
+        {
+          "problem": "Bố mẹ đều có kiểu gen $Aa$. Xác suất sinh con biểu hiện tính trạng lặn là bao nhiêu?",
+          "solution": "Con mang tính trạng lặn phải có kiểu gen $aa$: nhận $a$ từ cả bố và mẹ.\nXác suất nhận $a$ từ mỗi người là $\\dfrac{1}{2}$, nên xác suất con $aa$ là $\\dfrac{1}{2}\\times\\dfrac{1}{2} = \\dfrac{1}{4} = 25\\%$.",
+          "answer": "25%."
+        }
+      ],
+      "common_mistakes": [
+        "Viết tỉ lệ kiểu gen (1:2:1) thành tỉ lệ kiểu hình; kiểu hình trội : lặn là 3 : 1.",
+        "Cho rằng đúng 1/4 số cây là hoa trắng; thực tế chỉ xấp xỉ vì đây là xác suất, số mẫu càng lớn càng gần.",
+        "Nhầm tính trạng trội luôn chiếm đa số kiểu gen; thực ra $F_2$ có 2 phần dị hợp $Aa$ vẫn biểu hiện trội."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "di-truyen",
+        "lai-mot-cap-tinh-trang",
+        "quy-luat-phan-li",
+        "xac-suat"
+      ]
+    }
+  ]
+}

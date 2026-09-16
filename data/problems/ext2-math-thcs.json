@@ -1,0 +1,4159 @@
+{
+  "meta": {
+    "file": "ext2-math-thcs.json",
+    "subject": "math",
+    "title": "Bài tập bổ sung Toán THCS (đợt 2): phủ các công thức chưa có bài tập (GDPT 2018)",
+    "levels": [
+      "thcs"
+    ],
+    "count": 89
+  },
+  "problems": [
+    {
+      "id": "prob.math.ext2-math-thcs.0001",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Số nguyên",
+      "type": "dien-so",
+      "statement_vi": "Tính giá trị của $\\left|(-3)\\cdot(-5)\\right|$.",
+      "statement_en": "Compute |(-3)*(-5)|.",
+      "answer": "15",
+      "solution_steps": [
+        {
+          "explain": "Giá trị tuyệt đối của một tích bằng tích các giá trị tuyệt đối, nên tách được thừa số.",
+          "latex": "\\left|(-3)\\cdot(-5)\\right|=\\left|-3\\right|\\cdot\\left|-5\\right|"
+        },
+        {
+          "explain": "Thay các giá trị tuyệt đối rồi nhân.",
+          "latex": "3\\cdot 5=15"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.so-nguyen.tinh-chat-gia-tri-tuyet-doi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "gia-tri-tuyet-doi",
+        "tinh-chat-tich"
+      ],
+      "tags": [
+        "so-nguyen",
+        "lop7"
+      ],
+      "answer_numeric": 15,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0002",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân số",
+      "type": "dien-so",
+      "statement_vi": "Rút gọn phân số $\\dfrac{36}{48}$ về phân số tối giản.",
+      "statement_en": "Reduce the fraction 36/48 to lowest terms.",
+      "answer": "3/4",
+      "solution_steps": [
+        {
+          "explain": "Tìm ước chung lớn nhất của tử và mẫu để chia cho cùng một số.",
+          "latex": "\\gcd(36,48)=12"
+        },
+        {
+          "explain": "Chia cả tử và mẫu cho 12 (tính chất cơ bản của phân số).",
+          "latex": "\\dfrac{36}{48}=\\dfrac{36:12}{48:12}=\\dfrac{3}{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phan-so.rut-gon-phan-so"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "rut-gon-phan-so",
+        "uoc-chung-lon-nhat"
+      ],
+      "tags": [
+        "phan-so",
+        "lop6"
+      ],
+      "answer_numeric": 0.75,
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0003",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ lệ thức",
+      "type": "trac-nghiem",
+      "statement_vi": "Từ tỉ lệ thức $\\dfrac{6}{9}=\\dfrac{8}{12}$, tỉ lệ thức nào sau đây ĐÚNG?",
+      "statement_en": "From the proportion 6/9 = 8/12, which proportion below is correct?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Từ $\\dfrac{a}{b}=\\dfrac{c}{d}$ ta được hoán vị hai trung tỉ: $\\dfrac{a}{c}=\\dfrac{b}{d}$.",
+          "latex": "\\dfrac{a}{b}=\\dfrac{c}{d}\\iff\\dfrac{a}{c}=\\dfrac{b}{d}"
+        },
+        {
+          "explain": "Áp dụng với $a=6,b=9,c=8,d=12$ được $\\dfrac{6}{8}=\\dfrac{9}{12}$; kiểm tra tích chéo $6\\cdot12=8\\cdot9=72$.",
+          "latex": "\\dfrac{6}{8}=\\dfrac{9}{12}=\\dfrac{3}{4}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-le-thuc.tinh-chat-hoan-vi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "ti-le-thuc",
+        "hoan-vi-trung-ti"
+      ],
+      "tags": [
+        "ti-le-thuc",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$\\dfrac{6}{9}=\\dfrac{12}{8}$",
+          "why_wrong": "Lấy nghịch đảo một vế: $\\dfrac{12}{8}=1{,}5\\ne\\dfrac{6}{9}$."
+        },
+        {
+          "key": "B",
+          "text": "$\\dfrac{6}{8}=\\dfrac{9}{12}$"
+        },
+        {
+          "key": "C",
+          "text": "$\\dfrac{9}{6}=\\dfrac{8}{12}$",
+          "why_wrong": "$\\dfrac{9}{6}=1{,}5$ nhưng $\\dfrac{8}{12}=\\dfrac{2}{3}$, hai vế khác nhau."
+        },
+        {
+          "key": "D",
+          "text": "$\\dfrac{6}{12}=\\dfrac{8}{9}$",
+          "why_wrong": "$\\dfrac{6}{12}=0{,}5$ nhưng $\\dfrac{8}{9}\\approx0{,}89$, không bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0004",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Lũy thừa của số hữu tỉ",
+      "type": "dien-so",
+      "statement_vi": "Tính $\\left(\\dfrac{2}{3}\\right)^{5}:\\left(\\dfrac{2}{3}\\right)^{2}$ và viết kết quả dưới dạng phân số tối giản.",
+      "statement_en": "Compute (2/3)^5 : (2/3)^2 as a reduced fraction.",
+      "answer": "8/27",
+      "solution_steps": [
+        {
+          "explain": "Chia hai lũy thừa cùng cơ số hữu tỉ thì giữ nguyên cơ số và trừ số mũ.",
+          "latex": "\\left(\\dfrac{2}{3}\\right)^{5}:\\left(\\dfrac{2}{3}\\right)^{2}=\\left(\\dfrac{2}{3}\\right)^{5-2}"
+        },
+        {
+          "explain": "Tính lũy thừa bậc ba của phân số.",
+          "latex": "\\left(\\dfrac{2}{3}\\right)^{3}=\\dfrac{8}{27}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.luy-thua-huu-ti.chia-hai-luy-thua"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "chia-luy-thua",
+        "luy-thua-huu-ti"
+      ],
+      "tags": [
+        "luy-thua",
+        "lop7"
+      ],
+      "answer_numeric": 0.2962962962962963,
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0005",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Làm tròn và ước lượng",
+      "type": "dien-so",
+      "statement_vi": "Làm tròn số $a=7{,}86$ đến hàng đơn vị được $\\overline{a}$. Tính sai số tuyệt đối $\\Delta=\\left|a-\\overline{a}\\right|$.",
+      "statement_en": "Round a = 7.86 to the nearest unit to get a-bar, then find the absolute error |a - a-bar|.",
+      "answer": "0,14",
+      "solution_steps": [
+        {
+          "explain": "Làm tròn 7,86 đến hàng đơn vị: chữ số phần mười là 8 nên làm tròn lên.",
+          "latex": "\\overline{a}=8"
+        },
+        {
+          "explain": "Sai số tuyệt đối là giá trị tuyệt đối của hiệu số đúng và số làm tròn.",
+          "latex": "\\Delta=\\left|7{,}86-8\\right|=0{,}14"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.lam-tron.sai-so-tuyet-doi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "lam-tron",
+        "sai-so-tuyet-doi"
+      ],
+      "tags": [
+        "lam-tron",
+        "lop7"
+      ],
+      "answer_numeric": 0.14,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0006",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Xác suất",
+      "type": "trac-nghiem",
+      "statement_vi": "Một hộp chỉ chứa các viên bi màu đỏ. Lấy ngẫu nhiên 1 viên. Xác suất lấy được bi đỏ và xác suất lấy được bi xanh lần lượt là bao nhiêu?",
+      "statement_en": "A box contains only red balls. Drawing one ball at random, what are the probabilities of red and of blue respectively?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Lấy được bi đỏ là biến cố chắc chắn vì hộp chỉ có bi đỏ, nên xác suất bằng 1.",
+          "latex": "P(\\text{đỏ})=1"
+        },
+        {
+          "explain": "Lấy được bi xanh là biến cố không thể vì không có bi xanh, nên xác suất bằng 0.",
+          "latex": "P(\\text{xanh})=0"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.xac-suat.xac-suat-bien-co-chac-chan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "bien-co-chac-chan",
+        "bien-co-khong-the"
+      ],
+      "tags": [
+        "xac-suat",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 và 0"
+        },
+        {
+          "key": "B",
+          "text": "0 và 1",
+          "why_wrong": "Đảo ngược: bi đỏ mới là biến cố chắc chắn nên phải có xác suất 1."
+        },
+        {
+          "key": "C",
+          "text": "1 và 1",
+          "why_wrong": "Bi xanh không thể xuất hiện nên xác suất của nó phải bằng 0, không thể bằng 1."
+        },
+        {
+          "key": "D",
+          "text": "0,5 và 0,5",
+          "why_wrong": "Không có sự lựa chọn màu xanh nên xác suất không thể chia đều 0,5 - 0,5."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0007",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đa thức",
+      "type": "dien-so",
+      "statement_vi": "Cho đa thức $P(x)=5x^{3}-2x^{5}+7-x^{2}$. Thu gọn và cho biết bậc của đa thức.",
+      "statement_en": "Given P(x) = 5x^3 - 2x^5 + 7 - x^2, state its degree.",
+      "answer": "5",
+      "solution_steps": [
+        {
+          "explain": "Sắp xếp theo lũy thừa giảm dần của biến để xác định hạng tử có bậc cao nhất.",
+          "latex": "P(x)=-2x^{5}+5x^{3}-x^{2}+7"
+        },
+        {
+          "explain": "Bậc của đa thức một biến là số mũ lớn nhất của biến có hệ số khác 0.",
+          "latex": "\\deg P(x)=5"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.da-thuc.bac-cua-da-thuc-mot-bien"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "bac-da-thuc",
+        "thu-gon-da-thuc"
+      ],
+      "tags": [
+        "da-thuc",
+        "lop7"
+      ],
+      "answer_numeric": 5,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0008",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đa thức",
+      "type": "dien-so",
+      "statement_vi": "Thực hiện phép chia đa thức $x^{3}+2x^{2}-5$ cho $x+1$. Tìm số dư của phép chia.",
+      "statement_en": "Divide x^3 + 2x^2 - 5 by x + 1. Find the remainder.",
+      "answer": "-4",
+      "solution_steps": [
+        {
+          "explain": "Chia có dư: $A(x)=B(x)\\cdot Q(x)+R(x)$ với bậc của số dư nhỏ hơn bậc số chia. Đặt tính chia được thương $x^{2}+x-1$.",
+          "latex": "x^{3}+2x^{2}-5=(x+1)\\left(x^{2}+x-1\\right)+R"
+        },
+        {
+          "explain": "Số chia bậc nhất nên số dư là hằng số; thay $x=-1$ vào đa thức bị chia để tìm số dư.",
+          "latex": "R=(-1)^{3}+2(-1)^{2}-5=-4"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.da-thuc.chia-da-thuc-mot-bien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "chia-da-thuc",
+        "so-du"
+      ],
+      "tags": [
+        "da-thuc",
+        "lop8"
+      ],
+      "answer_numeric": -4,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0009",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hằng đẳng thức đáng nhớ",
+      "type": "dien-so",
+      "statement_vi": "Không dùng máy tính, hãy tính $99^{3}$ bằng hằng đẳng thức lập phương của một hiệu.",
+      "statement_en": "Without a calculator, compute 99^3 using the cube-of-a-difference identity.",
+      "answer": "970299",
+      "solution_steps": [
+        {
+          "explain": "Viết $99=100-1$ rồi áp dụng $(A-B)^{3}=A^{3}-3A^{2}B+3AB^{2}-B^{3}$.",
+          "latex": "99^{3}=(100-1)^{3}=100^{3}-3\\cdot100^{2}\\cdot1+3\\cdot100\\cdot1^{2}-1^{3}"
+        },
+        {
+          "explain": "Tính từng số hạng rồi cộng lại.",
+          "latex": "1000000-30000+300-1=970299"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hang-dang-thuc.lap-phuong-cua-mot-hieu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "lap-phuong-mot-hieu",
+        "tinh-nhanh"
+      ],
+      "tags": [
+        "hang-dang-thuc",
+        "lop8"
+      ],
+      "answer_numeric": 970299,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0010",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hằng đẳng thức đáng nhớ",
+      "type": "dien-so",
+      "statement_vi": "Cho ba số $a=2,\\ b=3,\\ c=-5$ (thỏa mãn $a+b+c=0$). Tính $a^{3}+b^{3}+c^{3}$.",
+      "statement_en": "Given a=2, b=3, c=-5 with a+b+c=0, compute a^3 + b^3 + c^3.",
+      "answer": "-90",
+      "solution_steps": [
+        {
+          "explain": "Dùng hằng đẳng thức $a^{3}+b^{3}+c^{3}-3abc=(a+b+c)(a^{2}+b^{2}+c^{2}-ab-bc-ca)$.",
+          "latex": "a^{3}+b^{3}+c^{3}-3abc=(a+b+c)\\left(a^{2}+b^{2}+c^{2}-ab-bc-ca\\right)"
+        },
+        {
+          "explain": "Vì $a+b+c=0$ nên vế phải bằng 0, suy ra $a^{3}+b^{3}+c^{3}=3abc$.",
+          "latex": "a^{3}+b^{3}+c^{3}=3\\cdot2\\cdot3\\cdot(-5)=-90"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hang-dang-thuc.tong-ba-lap-phuong-tru-ba-abc"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "tong-ba-lap-phuong",
+        "van-dung-hang-dang-thuc"
+      ],
+      "tags": [
+        "hang-dang-thuc",
+        "lop8"
+      ],
+      "answer_numeric": -90,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0011",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hằng đẳng thức đáng nhớ",
+      "type": "dien-so",
+      "statement_vi": "Tính $5^{3}-2^{3}$ bằng cách phân tích thành nhân tử theo hằng đẳng thức hiệu hai lũy thừa cùng bậc.",
+      "statement_en": "Compute 5^3 - 2^3 by factoring with the difference-of-like-powers identity.",
+      "answer": "117",
+      "solution_steps": [
+        {
+          "explain": "Áp dụng $a^{n}-b^{n}=(a-b)\\left(a^{n-1}+a^{n-2}b+\\cdots+b^{n-1}\\right)$ với $n=3$.",
+          "latex": "5^{3}-2^{3}=(5-2)\\left(5^{2}+5\\cdot2+2^{2}\\right)"
+        },
+        {
+          "explain": "Tính các thừa số rồi nhân.",
+          "latex": "3\\cdot(25+10+4)=3\\cdot39=117"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hang-dang-thuc.hieu-luy-thua-bac-n"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "hieu-hai-luy-thua",
+        "phan-tich-nhan-tu"
+      ],
+      "tags": [
+        "hang-dang-thuc",
+        "lop8"
+      ],
+      "answer_numeric": 117,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0012",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hằng đẳng thức đáng nhớ",
+      "type": "dien-so",
+      "statement_vi": "Cho $a=7,\\ b=3$. Tính nhanh $(a+b)^{2}-(a-b)^{2}$.",
+      "statement_en": "Given a=7, b=3, quickly compute (a+b)^2 - (a-b)^2.",
+      "answer": "84",
+      "solution_steps": [
+        {
+          "explain": "Dùng liên hệ $(a+b)^{2}-(a-b)^{2}=4ab$ để khỏi phải khai triển từng bình phương.",
+          "latex": "(a+b)^{2}-(a-b)^{2}=4ab"
+        },
+        {
+          "explain": "Thay số vào.",
+          "latex": "4\\cdot7\\cdot3=84"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hang-dang-thuc.lien-he-tong-hieu-tich"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "binh-phuong-tong-hieu",
+        "tinh-nhanh"
+      ],
+      "tags": [
+        "hang-dang-thuc",
+        "lop8"
+      ],
+      "answer_numeric": 84,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0013",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân thức đại số",
+      "type": "tu-luan",
+      "statement_vi": "Tìm đa thức $A$ để hai phân thức bằng nhau: $\\dfrac{x}{x-2}=\\dfrac{A}{x^{2}-4}$ (với $x\\ne\\pm2$).",
+      "statement_en": "Find polynomial A so that x/(x-2) = A/(x^2 - 4) for x not equal to plus or minus 2.",
+      "answer": "A = x^2 + 2x",
+      "solution_steps": [
+        {
+          "explain": "Hai phân thức bằng nhau khi tích chéo bằng nhau: $\\dfrac{A}{B}=\\dfrac{C}{D}\\iff AD=BC$.",
+          "latex": "x\\cdot\\left(x^{2}-4\\right)=(x-2)\\cdot A"
+        },
+        {
+          "explain": "Phân tích $x^{2}-4=(x-2)(x+2)$ rồi rút gọn thừa số $(x-2)$ ở hai vế.",
+          "latex": "x(x-2)(x+2)=(x-2)A\\Rightarrow A=x(x+2)"
+        },
+        {
+          "explain": "Khai triển để có dạng đa thức.",
+          "latex": "A=x^{2}+2x"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phan-thuc.hai-phan-thuc-bang-nhau"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "hai-phan-thuc-bang-nhau",
+        "tich-cheo"
+      ],
+      "tags": [
+        "phan-thuc",
+        "lop8"
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0014",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân thức đại số",
+      "type": "dien-so",
+      "statement_vi": "Rút gọn phân thức $\\dfrac{x-5}{5-x}$ (với $x\\ne5$).",
+      "statement_en": "Simplify the rational expression (x-5)/(5-x) for x not equal to 5.",
+      "answer": "-1",
+      "solution_steps": [
+        {
+          "explain": "Dùng quy tắc đổi dấu: đổi dấu mẫu thì đổi dấu cả phân thức.",
+          "latex": "5-x=-(x-5)"
+        },
+        {
+          "explain": "Thay vào rồi rút gọn thừa số chung $(x-5)$.",
+          "latex": "\\dfrac{x-5}{5-x}=\\dfrac{x-5}{-(x-5)}=-1"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phan-thuc.doi-dau-phan-thuc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "doi-dau-phan-thuc",
+        "rut-gon-phan-thuc"
+      ],
+      "tags": [
+        "phan-thuc",
+        "lop8"
+      ],
+      "answer_numeric": -1,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0015",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phân thức đại số",
+      "type": "dien-so",
+      "statement_vi": "Rút gọn $\\dfrac{2x+1}{x-3}-\\dfrac{x+4}{x-3}$ (với $x\\ne3$).",
+      "statement_en": "Simplify (2x+1)/(x-3) - (x+4)/(x-3) for x not equal to 3.",
+      "answer": "1",
+      "solution_steps": [
+        {
+          "explain": "Trừ hai phân thức cùng mẫu thì giữ nguyên mẫu và trừ các tử.",
+          "latex": "\\dfrac{2x+1}{x-3}-\\dfrac{x+4}{x-3}=\\dfrac{(2x+1)-(x+4)}{x-3}"
+        },
+        {
+          "explain": "Thu gọn tử rồi rút gọn với mẫu.",
+          "latex": "\\dfrac{x-3}{x-3}=1"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phan-thuc.cong-hai-phan-thuc-cung-mau"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "cong-tru-phan-thuc-cung-mau"
+      ],
+      "tags": [
+        "phan-thuc",
+        "lop8"
+      ],
+      "answer_numeric": 1,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0016",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình bậc nhất một ẩn",
+      "type": "dien-so",
+      "statement_vi": "Tìm giá trị của $m$ để phương trình $(2m-4)x+6=0$ (ẩn $x$) VÔ NGHIỆM.",
+      "statement_en": "Find m so that the equation (2m-4)x + 6 = 0 (unknown x) has no solution.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Phương trình dạng $ax+b=0$ vô nghiệm khi hệ số $a=0$ nhưng $b\\ne0$.",
+          "latex": "\\begin{cases} 2m-4=0 \\\\ 6\\ne0 \\end{cases}"
+        },
+        {
+          "explain": "Giải $2m-4=0$; điều kiện $6\\ne0$ luôn đúng nên chỉ cần giá trị này.",
+          "latex": "2m-4=0\\Rightarrow m=2"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phuong-trinh-bac-nhat.bien-luan-phuong-trinh-ax-cong-b"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "bien-luan-phuong-trinh",
+        "phuong-trinh-vo-nghiem"
+      ],
+      "tags": [
+        "phuong-trinh-bac-nhat",
+        "lop8"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0017",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình bậc nhất một ẩn",
+      "type": "dien-so",
+      "statement_vi": "Giải phương trình $\\left|x-2\\right|=\\left|3x+2\\right|$ rồi tính tổng các nghiệm.",
+      "statement_en": "Solve |x-2| = |3x+2| and find the sum of the roots.",
+      "answer": "-2",
+      "solution_steps": [
+        {
+          "explain": "Hai giá trị tuyệt đối bằng nhau khi hai biểu thức bằng nhau hoặc đối nhau.",
+          "latex": "\\left|x-2\\right|=\\left|3x+2\\right|\\iff\\left[\\begin{array}{l} x-2=3x+2 \\\\ x-2=-(3x+2) \\end{array}\\right."
+        },
+        {
+          "explain": "Giải trường hợp thứ nhất.",
+          "latex": "x-2=3x+2\\Rightarrow-2x=4\\Rightarrow x=-2"
+        },
+        {
+          "explain": "Giải trường hợp thứ hai.",
+          "latex": "x-2=-3x-2\\Rightarrow4x=0\\Rightarrow x=0"
+        },
+        {
+          "explain": "Tổng hai nghiệm.",
+          "latex": "(-2)+0=-2"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phuong-trinh-bac-nhat.phuong-trinh-gia-tri-tuyet-doi-hai-ve"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "phuong-trinh-gia-tri-tuyet-doi",
+        "chia-truong-hop"
+      ],
+      "tags": [
+        "phuong-trinh-bac-nhat",
+        "lop8"
+      ],
+      "answer_numeric": -2,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0018",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Bất phương trình bậc nhất một ẩn",
+      "type": "tu-luan",
+      "statement_vi": "Cho $a<b$. Chứng minh rằng $3a+2<3b+2$.",
+      "statement_en": "Given a < b, prove that 3a + 2 < 3b + 2.",
+      "answer": "3a + 2 < 3b + 2",
+      "solution_steps": [
+        {
+          "explain": "Nhân hai vế của $a<b$ với số dương 3, chiều bất đẳng thức được giữ nguyên.",
+          "latex": "a<b,\\ 3>0\\Rightarrow3a<3b"
+        },
+        {
+          "explain": "Cộng cùng số 2 vào hai vế, thứ tự không đổi.",
+          "latex": "3a+2<3b+2"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.bat-phuong-trinh.lien-he-thu-tu-va-phep-nhan-so-duong",
+        "math.thcs.bat-phuong-trinh.lien-he-thu-tu-va-phep-cong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "lien-he-thu-tu",
+        "chung-minh-bat-dang-thuc"
+      ],
+      "tags": [
+        "bat-phuong-trinh",
+        "lop8"
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0019",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm số bậc nhất",
+      "type": "dien-so",
+      "statement_vi": "Đồ thị hàm số $y=ax$ đi qua điểm $A(2;6)$. Tìm hệ số $a$.",
+      "statement_en": "The graph of y = ax passes through A(2; 6). Find a.",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Điểm thuộc đồ thị nên tọa độ của nó thỏa mãn công thức hàm số.",
+          "latex": "6=a\\cdot2"
+        },
+        {
+          "explain": "Giải phương trình tìm $a$.",
+          "latex": "a=\\dfrac{6}{2}=3"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ham-so-bac-nhat.ham-so-y-bang-ax"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "ham-so-y-ax",
+        "diem-thuoc-do-thi"
+      ],
+      "tags": [
+        "ham-so",
+        "lop9"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0020",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm số bậc nhất",
+      "type": "trac-nghiem",
+      "statement_vi": "Hàm số $y=(m-3)x+1$ nghịch biến trên $\\mathbb{R}$ khi nào?",
+      "statement_en": "For which m is y = (m-3)x + 1 decreasing on the reals?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hàm số bậc nhất $y=ax+b$ nghịch biến khi hệ số góc $a<0$.",
+          "latex": "a=m-3<0"
+        },
+        {
+          "explain": "Giải bất phương trình tìm $m$.",
+          "latex": "m<3"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ham-so-bac-nhat.dinh-nghia-ham-so-bac-nhat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "ham-so-bac-nhat",
+        "dong-bien-nghich-bien"
+      ],
+      "tags": [
+        "ham-so",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$m<3$"
+        },
+        {
+          "key": "B",
+          "text": "$m>3$",
+          "why_wrong": "Khi $m>3$ thì $a=m-3>0$, hàm số đồng biến chứ không nghịch biến."
+        },
+        {
+          "key": "C",
+          "text": "$m=3$",
+          "why_wrong": "Khi $m=3$ thì $a=0$, không còn là hàm số bậc nhất."
+        },
+        {
+          "key": "D",
+          "text": "$m\\ne3$",
+          "why_wrong": "Điều kiện này chỉ bảo đảm là hàm bậc nhất, chưa xét dấu của $a$ nên chưa kết luận nghịch biến."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0021",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm số bậc nhất",
+      "type": "dien-so",
+      "statement_vi": "Tìm hoành độ giao điểm của đồ thị hàm số $y=2x-6$ với trục hoành $Ox$.",
+      "statement_en": "Find the x-coordinate where y = 2x - 6 meets the x-axis.",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Giao điểm với trục hoành có tung độ bằng 0, thay $y=0$ vào công thức.",
+          "latex": "0=2x-6"
+        },
+        {
+          "explain": "Giải phương trình.",
+          "latex": "x=\\dfrac{6}{2}=3"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ham-so-bac-nhat.do-thi-ham-so-bac-nhat"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "giao-diem-truc-hoanh",
+        "do-thi-ham-bac-nhat"
+      ],
+      "tags": [
+        "ham-so",
+        "lop9"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0022",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm số bậc nhất",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai đường thẳng $y=(m-1)x+2$ và $y=3x-1$ cắt nhau khi nào?",
+      "statement_en": "The lines y = (m-1)x + 2 and y = 3x - 1 intersect when?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hai đường thẳng $y=ax+b$ và $y=a'x+b'$ cắt nhau khi và chỉ khi hai hệ số góc khác nhau.",
+          "latex": "a\\ne a'\\iff m-1\\ne3"
+        },
+        {
+          "explain": "Giải điều kiện.",
+          "latex": "m\\ne4"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ham-so-bac-nhat.hai-duong-thang-cat-nhau"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "hai-duong-thang-cat-nhau",
+        "he-so-goc"
+      ],
+      "tags": [
+        "ham-so",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$m\\ne4$"
+        },
+        {
+          "key": "B",
+          "text": "$m=4$",
+          "why_wrong": "Khi $m=4$ thì hai hệ số góc bằng nhau ($=3$), hai đường thẳng song song nên không cắt nhau."
+        },
+        {
+          "key": "C",
+          "text": "$m\\ne3$",
+          "why_wrong": "Điều kiện cắt nhau liên quan hệ số góc $m-1$ và $3$, giải ra $m\\ne4$ chứ không phải $m\\ne3$."
+        },
+        {
+          "key": "D",
+          "text": "$m=1$",
+          "why_wrong": "Đây chỉ là một giá trị riêng; nó thỏa mãn cắt nhau nhưng không phải điều kiện tổng quát."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0023",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Căn thức bậc hai",
+      "type": "dien-so",
+      "statement_vi": "Tìm giá trị nguyên nhỏ nhất của $x$ để $\\sqrt{2x-6}$ xác định.",
+      "statement_en": "Find the smallest integer x for which sqrt(2x - 6) is defined.",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Căn thức bậc hai xác định khi biểu thức dưới dấu căn không âm.",
+          "latex": "2x-6\\ge0"
+        },
+        {
+          "explain": "Giải bất phương trình.",
+          "latex": "x\\ge3"
+        },
+        {
+          "explain": "Giá trị nguyên nhỏ nhất thỏa mãn.",
+          "latex": "x=3"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.can-thuc.dieu-kien-xac-dinh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dieu-kien-xac-dinh",
+        "can-bac-hai"
+      ],
+      "tags": [
+        "can-thuc",
+        "lop9"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0024",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Căn thức bậc hai",
+      "type": "dien-so",
+      "statement_vi": "Tính $\\sqrt{\\dfrac{144}{25}}$.",
+      "statement_en": "Compute sqrt(144/25).",
+      "answer": "2,4",
+      "solution_steps": [
+        {
+          "explain": "Khai phương một thương bằng thương của hai căn (tử, mẫu đều không âm).",
+          "latex": "\\sqrt{\\dfrac{144}{25}}=\\dfrac{\\sqrt{144}}{\\sqrt{25}}"
+        },
+        {
+          "explain": "Tính từng căn rồi chia.",
+          "latex": "\\dfrac{12}{5}=2{,}4"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.can-thuc.khai-phuong-mot-thuong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "khai-phuong-thuong"
+      ],
+      "tags": [
+        "can-thuc",
+        "lop9"
+      ],
+      "answer_numeric": 2.4,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0025",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Căn thức bậc hai",
+      "type": "dien-so",
+      "statement_vi": "Viết $3\\sqrt{5}$ dưới dạng $\\sqrt{a}$ (với $a$ nguyên dương). Tìm $a$.",
+      "statement_en": "Write 3*sqrt(5) in the form sqrt(a) with a a positive integer. Find a.",
+      "answer": "45",
+      "solution_steps": [
+        {
+          "explain": "Đưa thừa số dương vào trong dấu căn bằng cách bình phương nó: $A\\sqrt{B}=\\sqrt{A^{2}B}$ khi $A\\ge0$.",
+          "latex": "3\\sqrt{5}=\\sqrt{3^{2}\\cdot5}"
+        },
+        {
+          "explain": "Tính biểu thức dưới dấu căn.",
+          "latex": "\\sqrt{9\\cdot5}=\\sqrt{45}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.can-thuc.dua-thua-so-vao-trong-dau-can"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dua-thua-so-vao-can"
+      ],
+      "tags": [
+        "can-thuc",
+        "lop9"
+      ],
+      "answer_numeric": 45,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0026",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Căn thức bậc hai",
+      "type": "tu-luan",
+      "statement_vi": "Khử mẫu của biểu thức lấy căn: $\\sqrt{\\dfrac{3}{5}}$.",
+      "statement_en": "Rationalize the radicand of sqrt(3/5).",
+      "answer": "√15 / 5",
+      "solution_steps": [
+        {
+          "explain": "Nhân cả tử và mẫu dưới dấu căn với mẫu để mẫu thành bình phương: $\\sqrt{\\dfrac{A}{B}}=\\dfrac{\\sqrt{AB}}{\\left|B\\right|}$.",
+          "latex": "\\sqrt{\\dfrac{3}{5}}=\\sqrt{\\dfrac{3\\cdot5}{5^{2}}}=\\dfrac{\\sqrt{15}}{\\sqrt{25}}"
+        },
+        {
+          "explain": "Vì $5>0$ nên $\\left|5\\right|=5$.",
+          "latex": "\\dfrac{\\sqrt{15}}{5}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.can-thuc.khu-mau-bieu-thuc-lay-can"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "khu-mau-lay-can"
+      ],
+      "tags": [
+        "can-thuc",
+        "lop9"
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0027",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Căn thức bậc hai",
+      "type": "trac-nghiem",
+      "statement_vi": "So sánh hai số $2\\sqrt{3}$ và $3\\sqrt{2}$.",
+      "statement_en": "Compare 2*sqrt(3) and 3*sqrt(2).",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Đưa mỗi số vào trong dấu căn để so sánh: $2\\sqrt{3}=\\sqrt{12}$ và $3\\sqrt{2}=\\sqrt{18}$.",
+          "latex": "2\\sqrt{3}=\\sqrt{12},\\quad3\\sqrt{2}=\\sqrt{18}"
+        },
+        {
+          "explain": "Với hai căn bậc hai số học, số nào có biểu thức dưới căn lớn hơn thì lớn hơn. Vì $12<18$ nên $\\sqrt{12}<\\sqrt{18}$.",
+          "latex": "12<18\\Rightarrow2\\sqrt{3}<3\\sqrt{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.can-thuc.so-sanh-hai-can-bac-hai",
+        "math.thcs.can-thuc.dua-thua-so-vao-trong-dau-can"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "so-sanh-can",
+        "dua-thua-so-vao-can"
+      ],
+      "tags": [
+        "can-thuc",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$2\\sqrt{3}<3\\sqrt{2}$"
+        },
+        {
+          "key": "B",
+          "text": "$2\\sqrt{3}>3\\sqrt{2}$",
+          "why_wrong": "So sai chiều: $\\sqrt{12}<\\sqrt{18}$ nên phải là dấu bé hơn."
+        },
+        {
+          "key": "C",
+          "text": "$2\\sqrt{3}=3\\sqrt{2}$",
+          "why_wrong": "Bình phương hai số cho $12$ và $18$ khác nhau nên chúng không bằng nhau."
+        },
+        {
+          "key": "D",
+          "text": "Không so sánh được",
+          "why_wrong": "Cả hai đều là số dương xác định nên hoàn toàn so sánh được."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0028",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ hai phương trình bậc nhất hai ẩn",
+      "type": "dien-so",
+      "statement_vi": "Giải hệ $\\begin{cases} 2x+y=5 \\\\ 3x-y=5 \\end{cases}$ bằng công thức nghiệm (quy tắc Cra-me). Tìm giá trị của $x$.",
+      "statement_en": "Solve the system {2x+y=5; 3x-y=5} by Cramer's rule and find x.",
+      "answer": "2",
+      "solution_steps": [
+        {
+          "explain": "Hệ có dạng tổng quát với $a=2,b=1,c=5$ và $a'=3,b'=-1,c'=5$. Tính định thức $D=ab'-a'b$.",
+          "latex": "D=2\\cdot(-1)-3\\cdot1=-5"
+        },
+        {
+          "explain": "Tính $D_{x}=cb'-c'b$.",
+          "latex": "D_{x}=5\\cdot(-1)-5\\cdot1=-10"
+        },
+        {
+          "explain": "Vì $D\\ne0$, nghiệm $x=\\dfrac{D_{x}}{D}$.",
+          "latex": "x=\\dfrac{-10}{-5}=2"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.he-phuong-trinh.cong-thuc-cramer",
+        "math.thcs.he-phuong-trinh.dang-tong-quat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "quy-tac-cramer",
+        "dinh-thuc"
+      ],
+      "tags": [
+        "he-phuong-trinh",
+        "lop9"
+      ],
+      "answer_numeric": 2,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0029",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ hai phương trình bậc nhất hai ẩn",
+      "type": "trac-nghiem",
+      "statement_vi": "Hệ phương trình $\\begin{cases} 2x+3y=5 \\\\ 4x+6y=10 \\end{cases}$ có số nghiệm là bao nhiêu?",
+      "statement_en": "How many solutions does the system {2x+3y=5; 4x+6y=10} have?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Lập các tỉ số hệ số để xét số nghiệm của hệ.",
+          "latex": "\\dfrac{a}{a'}=\\dfrac{2}{4}=\\dfrac{1}{2},\\ \\dfrac{b}{b'}=\\dfrac{3}{6}=\\dfrac{1}{2},\\ \\dfrac{c}{c'}=\\dfrac{5}{10}=\\dfrac{1}{2}"
+        },
+        {
+          "explain": "Ba tỉ số bằng nhau nên hai phương trình biểu diễn cùng một đường thẳng, hệ có vô số nghiệm.",
+          "latex": "\\dfrac{a}{a'}=\\dfrac{b}{b'}=\\dfrac{c}{c'}\\Rightarrow\\text{vô số nghiệm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.he-phuong-trinh.so-nghiem-cua-he"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "so-nghiem-he-phuong-trinh"
+      ],
+      "tags": [
+        "he-phuong-trinh",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Vô số nghiệm"
+        },
+        {
+          "key": "B",
+          "text": "Vô nghiệm",
+          "why_wrong": "Hệ vô nghiệm khi $\\dfrac{a}{a'}=\\dfrac{b}{b'}\\ne\\dfrac{c}{c'}$; ở đây tỉ số của $c$ cũng bằng nên không vô nghiệm."
+        },
+        {
+          "key": "C",
+          "text": "Một nghiệm duy nhất",
+          "why_wrong": "Nghiệm duy nhất khi $\\dfrac{a}{a'}\\ne\\dfrac{b}{b'}$, nhưng ở đây hai tỉ số này bằng nhau."
+        },
+        {
+          "key": "D",
+          "text": "Đúng hai nghiệm",
+          "why_wrong": "Hệ bậc nhất hai ẩn không thể có đúng hai nghiệm."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0030",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hàm số y = ax^2",
+      "type": "dien-so",
+      "statement_vi": "Cho parabol $(P): y=2x^{2}$. Tính tung độ của điểm thuộc $(P)$ có hoành độ $x=3$.",
+      "statement_en": "For the parabola y = 2x^2, find the y-coordinate of the point with x = 3.",
+      "answer": "18",
+      "solution_steps": [
+        {
+          "explain": "Điểm thuộc parabol $y=ax^{2}$ có tọa độ thỏa mãn công thức; thay $x=3$.",
+          "latex": "y=2\\cdot3^{2}"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "y=2\\cdot9=18"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ham-so-bac-hai.do-thi-parabol"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "parabol",
+        "diem-thuoc-do-thi"
+      ],
+      "tags": [
+        "ham-so-bac-hai",
+        "lop9"
+      ],
+      "answer_numeric": 18,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0031",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình bậc hai một ẩn",
+      "type": "dien-so",
+      "statement_vi": "Cho phương trình $x^{2}-3x+(m-4)=0$. Tìm giá trị nguyên LỚN NHẤT của $m$ để phương trình có hai nghiệm trái dấu.",
+      "statement_en": "For x^2 - 3x + (m-4) = 0, find the greatest integer m giving two roots of opposite signs.",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Phương trình $ax^{2}+bx+c=0$ có hai nghiệm trái dấu khi và chỉ khi tích hai nghiệm âm, tức $ac<0$.",
+          "latex": "P=\\dfrac{c}{a}=m-4<0"
+        },
+        {
+          "explain": "Giải bất phương trình.",
+          "latex": "m<4"
+        },
+        {
+          "explain": "Giá trị nguyên lớn nhất thỏa mãn.",
+          "latex": "m=3"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phuong-trinh-bac-hai.hai-nghiem-trai-dau",
+        "math.thcs.phuong-trinh-bac-hai.dang-tong-quat"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "hai-nghiem-trai-dau",
+        "dinh-li-viet"
+      ],
+      "tags": [
+        "phuong-trinh-bac-hai",
+        "lop9"
+      ],
+      "answer_numeric": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0032",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình bậc hai một ẩn",
+      "type": "dien-so",
+      "statement_vi": "Cho phương trình $x^{2}-5x+m=0$. Tìm giá trị nguyên dương LỚN NHẤT của $m$ để phương trình có hai nghiệm đều dương.",
+      "statement_en": "For x^2 - 5x + m = 0, find the greatest positive integer m giving two positive roots.",
+      "answer": "6",
+      "solution_steps": [
+        {
+          "explain": "Hai nghiệm dương khi $\\Delta\\ge0$, tổng $S>0$ và tích $P>0$. Ở đây $S=5>0$ đã thỏa.",
+          "latex": "\\begin{cases} \\Delta=25-4m\\ge0 \\\\ S=5>0 \\\\ P=m>0 \\end{cases}"
+        },
+        {
+          "explain": "Từ $\\Delta\\ge0$ và $P>0$ suy ra khoảng của $m$.",
+          "latex": "0<m\\le\\dfrac{25}{4}=6{,}25"
+        },
+        {
+          "explain": "Số nguyên dương lớn nhất trong khoảng.",
+          "latex": "m=6"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phuong-trinh-bac-hai.hai-nghiem-cung-duong"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "hai-nghiem-cung-dau",
+        "dieu-kien-nghiem"
+      ],
+      "tags": [
+        "phuong-trinh-bac-hai",
+        "lop9"
+      ],
+      "answer_numeric": 6,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0033",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Phương trình bậc hai một ẩn",
+      "type": "dien-so",
+      "statement_vi": "Cho phương trình $x^{2}+6x+m=0$. Có bao nhiêu giá trị nguyên của $m$ để phương trình có hai nghiệm đều âm?",
+      "statement_en": "For x^2 + 6x + m = 0, how many integer values of m give two negative roots?",
+      "answer": "9",
+      "solution_steps": [
+        {
+          "explain": "Hai nghiệm âm khi $\\Delta\\ge0$, tổng $S<0$ và tích $P>0$. Ở đây $S=-6<0$ đã thỏa.",
+          "latex": "\\begin{cases} \\Delta=36-4m\\ge0 \\\\ S=-6<0 \\\\ P=m>0 \\end{cases}"
+        },
+        {
+          "explain": "Kết hợp $\\Delta\\ge0$ và $P>0$.",
+          "latex": "0<m\\le9"
+        },
+        {
+          "explain": "Các giá trị nguyên là $1,2,\\ldots,9$, đếm được 9 giá trị.",
+          "latex": "m\\in\\{1,2,\\ldots,9\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.phuong-trinh-bac-hai.hai-nghiem-cung-am"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "hai-nghiem-cung-am",
+        "dem-gia-tri-nguyen"
+      ],
+      "tags": [
+        "phuong-trinh-bac-hai",
+        "lop9"
+      ],
+      "answer_numeric": 9,
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0034",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giải bài toán bằng cách lập phương trình",
+      "type": "dien-so",
+      "statement_vi": "Một ca nô có vận tốc riêng $12$ km/h đi xuôi dòng trên khúc sông dài $42$ km, vận tốc dòng nước là $2$ km/h. Hỏi ca nô đi hết bao nhiêu giờ?",
+      "statement_en": "A boat with still-water speed 12 km/h travels 42 km downstream; current is 2 km/h. How many hours does it take?",
+      "answer": "3",
+      "solution_steps": [
+        {
+          "explain": "Vận tốc xuôi dòng bằng vận tốc riêng cộng vận tốc dòng nước.",
+          "latex": "v_{x}=v_{t}+v_{n}=12+2=14\\ \\text{km/h}"
+        },
+        {
+          "explain": "Thời gian bằng quãng đường chia vận tốc.",
+          "latex": "t=\\dfrac{42}{14}=3\\ \\text{giờ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.giai-toan-lap-phuong-trinh.van-toc-xuoi-nguoc-dong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "chuyen-dong-dong-nuoc",
+        "van-toc-xuoi-dong"
+      ],
+      "tags": [
+        "giai-toan",
+        "lop9"
+      ],
+      "answer_numeric": 3,
+      "answer_unit": "giờ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0035",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Giải bài toán bằng cách lập phương trình",
+      "type": "dien-so",
+      "statement_vi": "Một đội công nhân cần hoàn thành $200$ sản phẩm với năng suất $25$ sản phẩm mỗi ngày. Hỏi đội làm xong trong bao nhiêu ngày?",
+      "statement_en": "A team must finish 200 products at 25 products per day. How many days?",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Khối lượng công việc bằng năng suất nhân thời gian, suy ra thời gian bằng công việc chia năng suất.",
+          "latex": "t=\\dfrac{A}{N}=\\dfrac{200}{25}"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "t=8\\ \\text{ngày}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.giai-toan-lap-phuong-trinh.nang-suat-lao-dong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "nang-suat-lao-dong",
+        "cong-viec-thoi-gian"
+      ],
+      "tags": [
+        "giai-toan",
+        "lop9"
+      ],
+      "answer_numeric": 8,
+      "answer_unit": "ngày",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0036",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Góc và đường thẳng",
+      "type": "dien-so",
+      "statement_vi": "Cho góc $\\widehat{xOy}=80^{\\circ}$ và $Oz$ là tia phân giác của góc đó. Tính số đo góc $\\widehat{xOz}$ (đơn vị: độ).",
+      "statement_en": "Given angle xOy = 80 degrees and Oz its bisector, find angle xOz (in degrees).",
+      "answer": "40",
+      "solution_steps": [
+        {
+          "explain": "Tia phân giác chia góc thành hai góc bằng nhau, mỗi góc bằng nửa góc đã cho.",
+          "latex": "\\widehat{xOz}=\\dfrac{\\widehat{xOy}}{2}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "\\widehat{xOz}=\\dfrac{80^{\\circ}}{2}=40^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.goc-duong-thang.tia-phan-giac-cua-goc"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "tia-phan-giac",
+        "so-do-goc"
+      ],
+      "tags": [
+        "goc-duong-thang",
+        "lop7"
+      ],
+      "answer_numeric": 40,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0037",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Góc và đường thẳng",
+      "type": "trac-nghiem",
+      "statement_vi": "Qua một điểm nằm ngoài một đường thẳng $a$, có bao nhiêu đường thẳng song song với $a$?",
+      "statement_en": "Through a point not on line a, how many lines are parallel to a?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Đây chính là nội dung tiên đề Ơ-clit về đường thẳng song song.",
+          "latex": "M\\notin a\\Rightarrow\\exists!\\ b\\ni M,\\ b\\parallel a"
+        },
+        {
+          "explain": "Từ ('duy nhất') suy ra có đúng một đường thẳng.",
+          "latex": "\\text{đúng một đường thẳng}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.goc-duong-thang.tien-de-o-clit"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "tien-de-o-clit",
+        "duong-thang-song-song"
+      ],
+      "tags": [
+        "goc-duong-thang",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Vô số",
+          "why_wrong": "Tiên đề Ơ-clit khẳng định tính DUY NHẤT nên không thể có vô số đường."
+        },
+        {
+          "key": "B",
+          "text": "Đúng một"
+        },
+        {
+          "key": "C",
+          "text": "Hai",
+          "why_wrong": "Nếu có hai đường thẳng song song với $a$ cùng qua $M$ thì mâu thuẫn với tính duy nhất."
+        },
+        {
+          "key": "D",
+          "text": "Không có",
+          "why_wrong": "Luôn tồn tại ít nhất một đường thẳng qua $M$ song song với $a$."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0038",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Góc và đường thẳng",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho $a\\perp c$ và $b\\perp c$. Kết luận nào sau đây đúng?",
+      "statement_en": "If a is perpendicular to c and b is perpendicular to c, which conclusion holds?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hai đường thẳng cùng vuông góc với một đường thẳng thứ ba thì song song với nhau.",
+          "latex": "a\\perp c,\\ b\\perp c\\Rightarrow a\\parallel b"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.goc-duong-thang.quan-he-vuong-goc-song-song"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "vuong-goc-song-song"
+      ],
+      "tags": [
+        "goc-duong-thang",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$a\\parallel b$"
+        },
+        {
+          "key": "B",
+          "text": "$a\\perp b$",
+          "why_wrong": "Hai đường cùng vuông góc với $c$ thì song song, không vuông góc với nhau."
+        },
+        {
+          "key": "C",
+          "text": "$a\\equiv b$",
+          "why_wrong": "$a$ và $b$ nói chung là hai đường phân biệt, không nhất thiết trùng nhau."
+        },
+        {
+          "key": "D",
+          "text": "$a$ cắt $b$",
+          "why_wrong": "Vì $a\\parallel b$ nên chúng không cắt nhau."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0039",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tam giác",
+      "type": "dien-so",
+      "statement_vi": "Cho $\\triangle ABC$ và $\\triangle MNP$ có $AB=MN$, $\\widehat{B}=\\widehat{N}$, $BC=NP$ nên $\\triangle ABC=\\triangle MNP$. Biết $AC=7$ cm, tính độ dài $MP$.",
+      "statement_en": "Triangles ABC and MNP have AB=MN, angle B = angle N, BC=NP, so they are congruent. If AC = 7 cm, find MP.",
+      "answer": "7",
+      "solution_steps": [
+        {
+          "explain": "Hai tam giác bằng nhau theo trường hợp cạnh - góc - cạnh vì có hai cạnh và góc xen giữa bằng nhau từng đôi.",
+          "latex": "AB=MN,\\ \\widehat{B}=\\widehat{N},\\ BC=NP\\Rightarrow\\triangle ABC=\\triangle MNP"
+        },
+        {
+          "explain": "Hai tam giác bằng nhau thì các cạnh tương ứng bằng nhau; $AC$ tương ứng $MP$.",
+          "latex": "MP=AC=7\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tam-giac.bang-nhau-canh-goc-canh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tam-giac-bang-nhau",
+        "canh-goc-canh"
+      ],
+      "tags": [
+        "tam-giac",
+        "lop7"
+      ],
+      "answer_numeric": 7,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0040",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tam giác có một cạnh bằng nhau và hai góc kề cạnh đó bằng nhau từng đôi một thì bằng nhau theo trường hợp nào?",
+      "statement_en": "Two triangles with one pair of equal sides and the two adjacent angles equal are congruent by which case?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Một cạnh cùng hai góc kề của nó xác định duy nhất một tam giác, đó là trường hợp góc - cạnh - góc.",
+          "latex": "\\widehat{B}=\\widehat{B'},\\ BC=B'C',\\ \\widehat{C}=\\widehat{C'}\\Rightarrow\\triangle ABC=\\triangle A'B'C'"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tam-giac.bang-nhau-goc-canh-goc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tam-giac-bang-nhau",
+        "goc-canh-goc"
+      ],
+      "tags": [
+        "tam-giac",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cạnh - cạnh - cạnh",
+          "why_wrong": "Trường hợp này cần ba cặp cạnh bằng nhau, không phải cặp góc."
+        },
+        {
+          "key": "B",
+          "text": "Cạnh - góc - cạnh",
+          "why_wrong": "Trường hợp này cần góc xen giữa hai cạnh, còn ở đây dữ kiện là hai góc kề một cạnh."
+        },
+        {
+          "key": "C",
+          "text": "Góc - cạnh - góc"
+        },
+        {
+          "key": "D",
+          "text": "Góc - góc - góc",
+          "why_wrong": "Ba góc bằng nhau chỉ cho hai tam giác đồng dạng, chưa đủ để bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0041",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tam giác vuông có cạnh huyền bằng nhau và một góc nhọn bằng nhau thì bằng nhau theo trường hợp nào?",
+      "statement_en": "Two right triangles with equal hypotenuses and one pair of equal acute angles are congruent by which case?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Cạnh huyền và một góc nhọn bằng nhau là trường hợp bằng nhau đặc biệt của tam giác vuông (cạnh huyền - góc nhọn).",
+          "latex": "\\widehat{A}=\\widehat{A'}=90^{\\circ},\\ BC=B'C',\\ \\widehat{B}=\\widehat{B'}\\Rightarrow\\triangle ABC=\\triangle A'B'C'"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tam-giac.bang-nhau-vuong-canh-huyen-goc-nhon"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tam-giac-vuong-bang-nhau",
+        "canh-huyen-goc-nhon"
+      ],
+      "tags": [
+        "tam-giac",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cạnh huyền - cạnh góc vuông",
+          "why_wrong": "Dữ kiện cho là một GÓC NHỌN chứ không phải một cạnh góc vuông."
+        },
+        {
+          "key": "B",
+          "text": "Cạnh huyền - góc nhọn"
+        },
+        {
+          "key": "C",
+          "text": "Hai cạnh góc vuông",
+          "why_wrong": "Đề không cho hai cạnh góc vuông bằng nhau."
+        },
+        {
+          "key": "D",
+          "text": "Góc - góc - góc",
+          "why_wrong": "Ba góc bằng nhau không đủ để hai tam giác bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0042",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tam giác vuông có cạnh huyền bằng nhau và một cạnh góc vuông bằng nhau thì bằng nhau theo trường hợp nào?",
+      "statement_en": "Two right triangles with equal hypotenuses and one pair of equal legs are congruent by which case?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Cạnh huyền và một cạnh góc vuông bằng nhau là trường hợp bằng nhau đặc biệt của tam giác vuông (cạnh huyền - cạnh góc vuông).",
+          "latex": "\\widehat{A}=\\widehat{A'}=90^{\\circ},\\ BC=B'C',\\ AB=A'B'\\Rightarrow\\triangle ABC=\\triangle A'B'C'"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tam-giac.bang-nhau-vuong-canh-huyen-canh-goc-vuong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tam-giac-vuong-bang-nhau",
+        "canh-huyen-canh-goc-vuong"
+      ],
+      "tags": [
+        "tam-giac",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cạnh huyền - cạnh góc vuông"
+        },
+        {
+          "key": "B",
+          "text": "Cạnh huyền - góc nhọn",
+          "why_wrong": "Đề cho một cạnh góc vuông bằng nhau, không phải một góc nhọn."
+        },
+        {
+          "key": "C",
+          "text": "Cạnh - góc - cạnh",
+          "why_wrong": "Đây là trường hợp tổng quát cho tam giác thường, đề đang xét dấu hiệu riêng của tam giác vuông."
+        },
+        {
+          "key": "D",
+          "text": "Góc - cạnh - góc",
+          "why_wrong": "Đề không cho hai cặp góc bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0043",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Từ điểm $A$ ở ngoài đường thẳng $d$, kẻ đường vuông góc $AH$ và một đường xiên $AB$ tới $d$ (với $B$ khác $H$). So sánh $AH$ và $AB$.",
+      "statement_en": "From a point A off line d, drop perpendicular AH and an oblique AB to d (B different from H). Compare AH and AB.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Trong các đoạn thẳng kẻ từ một điểm đến một đường thẳng, đường vuông góc là ngắn nhất.",
+          "latex": "AH\\le AB"
+        },
+        {
+          "explain": "Dấu bằng chỉ xảy ra khi $B$ trùng $H$; vì $B\\ne H$ nên bất đẳng thức chặt.",
+          "latex": "AH<AB"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tam-giac.quan-he-duong-vuong-goc-duong-xien"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "duong-vuong-goc-duong-xien"
+      ],
+      "tags": [
+        "tam-giac",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$AH<AB$"
+        },
+        {
+          "key": "B",
+          "text": "$AH>AB$",
+          "why_wrong": "Đường vuông góc luôn ngắn nhất nên không thể lớn hơn đường xiên."
+        },
+        {
+          "key": "C",
+          "text": "$AH=AB$",
+          "why_wrong": "Chỉ bằng nhau khi $B$ trùng $H$, nhưng đề cho $B\\ne H$."
+        },
+        {
+          "key": "D",
+          "text": "Không so sánh được",
+          "why_wrong": "Định lí đường vuông góc - đường xiên cho phép so sánh rõ ràng."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0044",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Từ điểm $A$ ngoài đường thẳng $d$ có chân đường vuông góc $H$, kẻ hai đường xiên $AB, AC$ xuống $d$. Biết hình chiếu $HB>HC$. So sánh hai đường xiên $AB$ và $AC$.",
+      "statement_en": "From A off line d with foot H, draw obliques AB, AC. If projection HB > HC, compare AB and AC.",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Đường xiên nào có hình chiếu lớn hơn thì đường xiên đó lớn hơn.",
+          "latex": "HB>HC\\iff AB>AC"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tam-giac.quan-he-duong-xien-hinh-chieu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "duong-xien-hinh-chieu"
+      ],
+      "tags": [
+        "tam-giac",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$AB>AC$"
+        },
+        {
+          "key": "B",
+          "text": "$AB<AC$",
+          "why_wrong": "Hình chiếu lớn hơn kéo theo đường xiên lớn hơn, nên chiều so sánh ngược lại là sai."
+        },
+        {
+          "key": "C",
+          "text": "$AB=AC$",
+          "why_wrong": "Hai đường xiên bằng nhau khi và chỉ khi hai hình chiếu bằng nhau, trái với $HB>HC$."
+        },
+        {
+          "key": "D",
+          "text": "Phụ thuộc vị trí $A$",
+          "why_wrong": "Quan hệ chỉ phụ thuộc so sánh hai hình chiếu, không phụ thuộc độ cao của $A$."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0045",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các đường đồng quy trong tam giác",
+      "type": "dien-so",
+      "statement_vi": "Điểm $M$ nằm trên đường trung trực của đoạn thẳng $AB$. Biết $MA=5$ cm, tính $MB$.",
+      "statement_en": "Point M lies on the perpendicular bisector of AB. If MA = 5 cm, find MB.",
+      "answer": "5",
+      "solution_steps": [
+        {
+          "explain": "Mỗi điểm nằm trên đường trung trực của một đoạn thẳng thì cách đều hai đầu mút của đoạn thẳng đó.",
+          "latex": "M\\in\\text{trung trực }AB\\Rightarrow MA=MB"
+        },
+        {
+          "explain": "Suy ra độ dài.",
+          "latex": "MB=MA=5\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-dong-quy.tinh-chat-duong-trung-truc"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "duong-trung-truc",
+        "cach-deu-hai-mut"
+      ],
+      "tags": [
+        "duong-dong-quy",
+        "lop7"
+      ],
+      "answer_numeric": 5,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0046",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các đường đồng quy trong tam giác",
+      "type": "dien-so",
+      "statement_vi": "Cho $\\triangle ABC$, gọi $O$ là giao điểm ba đường trung trực. Biết $OA=6$ cm, tính $OC$.",
+      "statement_en": "In triangle ABC, O is the intersection of the three perpendicular bisectors. If OA = 6 cm, find OC.",
+      "answer": "6",
+      "solution_steps": [
+        {
+          "explain": "Ba đường trung trực của tam giác đồng quy tại một điểm cách đều ba đỉnh (tâm đường tròn ngoại tiếp).",
+          "latex": "OA=OB=OC=R"
+        },
+        {
+          "explain": "Suy ra độ dài.",
+          "latex": "OC=OA=6\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-dong-quy.ba-duong-trung-truc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ba-duong-trung-truc",
+        "tam-duong-tron-ngoai-tiep"
+      ],
+      "tags": [
+        "duong-dong-quy",
+        "lop7"
+      ],
+      "answer_numeric": 6,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0047",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các đường đồng quy trong tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Giao điểm của ba đường phân giác trong của một tam giác là tâm của đường tròn nào?",
+      "statement_en": "The intersection of the three interior angle bisectors of a triangle is the center of which circle?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Giao ba đường phân giác trong cách đều ba cạnh của tam giác nên là tâm đường tròn nội tiếp.",
+          "latex": "d(I,AB)=d(I,BC)=d(I,CA)=r"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-dong-quy.ba-duong-phan-giac"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ba-duong-phan-giac",
+        "tam-duong-tron-noi-tiep"
+      ],
+      "tags": [
+        "duong-dong-quy",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Đường tròn nội tiếp tam giác"
+        },
+        {
+          "key": "B",
+          "text": "Đường tròn ngoại tiếp tam giác",
+          "why_wrong": "Tâm đường tròn ngoại tiếp là giao ba đường trung trực, cách đều ba đỉnh, không phải ba cạnh."
+        },
+        {
+          "key": "C",
+          "text": "Không là tâm đường tròn nào",
+          "why_wrong": "Điểm này cách đều ba cạnh nên chính là tâm đường tròn nội tiếp."
+        },
+        {
+          "key": "D",
+          "text": "Đường tròn đi qua ba trung điểm",
+          "why_wrong": "Đó là đường tròn Ơ-le, không liên quan giao ba phân giác."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0048",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các đường đồng quy trong tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Ba đường cao của một tam giác có tính chất gì?",
+      "statement_en": "What is true about the three altitudes of a triangle?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Ba đường cao của tam giác luôn cùng đi qua một điểm, gọi là trực tâm.",
+          "latex": "AH_{a}\\cap BH_{b}\\cap CH_{c}=\\{H\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-dong-quy.truc-tam-tam-giac"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "ba-duong-cao",
+        "truc-tam"
+      ],
+      "tags": [
+        "duong-dong-quy",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Đồng quy tại một điểm gọi là trực tâm"
+        },
+        {
+          "key": "B",
+          "text": "Đồng quy tại trọng tâm",
+          "why_wrong": "Trọng tâm là giao ba đường trung tuyến, không phải ba đường cao."
+        },
+        {
+          "key": "C",
+          "text": "Luôn song song với nhau",
+          "why_wrong": "Ba đường cao cắt nhau tại một điểm nên không song song."
+        },
+        {
+          "key": "D",
+          "text": "Không đồng quy",
+          "why_wrong": "Ba đường cao luôn đồng quy tại trực tâm."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0049",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Các đường đồng quy trong tam giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Một điểm nằm trên tia phân giác của một góc thì có tính chất gì?",
+      "statement_en": "A point on the bisector of an angle has which property?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Điểm nằm trên tia phân giác của một góc thì cách đều hai cạnh của góc đó.",
+          "latex": "M\\in\\text{tia phân giác }\\widehat{xOy}\\iff d(M,Ox)=d(M,Oy)"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-dong-quy.tinh-chat-tia-phan-giac"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tia-phan-giac",
+        "cach-deu-hai-canh"
+      ],
+      "tags": [
+        "duong-dong-quy",
+        "lop7"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cách đều hai cạnh của góc"
+        },
+        {
+          "key": "B",
+          "text": "Cách đều hai đỉnh của góc",
+          "why_wrong": "Một góc chỉ có một đỉnh; tính chất đúng là cách đều hai cạnh."
+        },
+        {
+          "key": "C",
+          "text": "Là trung điểm của cạnh góc",
+          "why_wrong": "Tia phân giác không liên quan trung điểm cạnh."
+        },
+        {
+          "key": "D",
+          "text": "Cách đỉnh một khoảng không đổi",
+          "why_wrong": "Khoảng cách tới đỉnh thay đổi tùy điểm trên tia phân giác."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0050",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "dien-so",
+      "statement_vi": "Tính số đo mỗi góc trong của một bát giác đều (đa giác đều 8 cạnh), đơn vị độ.",
+      "statement_en": "Find each interior angle of a regular octagon (8 sides), in degrees.",
+      "answer": "135",
+      "solution_steps": [
+        {
+          "explain": "Mỗi góc của đa giác đều $n$ cạnh bằng $\\dfrac{(n-2)\\cdot180^{\\circ}}{n}$; thay $n=8$.",
+          "latex": "\\alpha=\\dfrac{(8-2)\\cdot180^{\\circ}}{8}"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "\\alpha=\\dfrac{1080^{\\circ}}{8}=135^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.goc-cua-da-giac-deu"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "da-giac-deu",
+        "goc-trong"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "answer_numeric": 135,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0051",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "dien-so",
+      "statement_vi": "Hình thang $ABCD$ có $AB\\parallel CD$ và $\\widehat{A}=70^{\\circ}$. Tính số đo góc $\\widehat{D}$ (đơn vị độ).",
+      "statement_en": "Trapezoid ABCD has AB parallel to CD and angle A = 70 degrees. Find angle D (in degrees).",
+      "answer": "110",
+      "solution_steps": [
+        {
+          "explain": "Hai góc kề một cạnh bên của hình thang (ở đây $A$ và $D$ kề cạnh $AD$) là hai góc trong cùng phía nên bù nhau.",
+          "latex": "\\widehat{A}+\\widehat{D}=180^{\\circ}"
+        },
+        {
+          "explain": "Suy ra góc $D$.",
+          "latex": "\\widehat{D}=180^{\\circ}-70^{\\circ}=110^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.hinh-thang"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "hinh-thang",
+        "goc-trong-cung-phia"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "answer_numeric": 110,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0052",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "dien-so",
+      "statement_vi": "Hình thang cân $ABCD$ ($AB\\parallel CD$) có đường chéo $AC=8$ cm. Tính độ dài đường chéo $BD$.",
+      "statement_en": "Isosceles trapezoid ABCD (AB parallel CD) has diagonal AC = 8 cm. Find diagonal BD.",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Trong hình thang cân, hai đường chéo bằng nhau.",
+          "latex": "AC=BD"
+        },
+        {
+          "explain": "Suy ra độ dài.",
+          "latex": "BD=AC=8\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.hinh-thang-can"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "hinh-thang-can",
+        "duong-cheo"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "answer_numeric": 8,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0053",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Dấu hiệu nào sau đây KHÔNG chắc chắn nhận biết một tứ giác là hình bình hành?",
+      "statement_en": "Which criterion does NOT guarantee a quadrilateral is a parallelogram?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Dấu hiệu đúng gồm: hai cặp cạnh đối song song; hai cặp cạnh đối bằng nhau; một cặp cạnh đối vừa song song vừa bằng nhau; hai đường chéo cắt nhau tại trung điểm mỗi đường.",
+          "latex": "AB\\parallel CD,\\ AB=CD\\Rightarrow ABCD\\ \\text{hình bình hành}"
+        },
+        {
+          "explain": "Nếu chỉ có một cặp cạnh đối song song và cặp cạnh đối CÒN LẠI bằng nhau thì tứ giác có thể là hình thang cân, chưa chắc là hình bình hành.",
+          "latex": "AB\\parallel CD,\\ AD=BC\\not\\Rightarrow ABCD\\ \\text{hình bình hành}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.dau-hieu-hinh-binh-hanh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "dau-hieu-hinh-binh-hanh"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hai cặp cạnh đối bằng nhau",
+          "why_wrong": "Đây là một dấu hiệu đúng nên tứ giác chắc chắn là hình bình hành."
+        },
+        {
+          "key": "B",
+          "text": "Hai đường chéo cắt nhau tại trung điểm mỗi đường",
+          "why_wrong": "Đây là một dấu hiệu đúng nên tứ giác chắc chắn là hình bình hành."
+        },
+        {
+          "key": "C",
+          "text": "Một cặp cạnh đối song song và cặp cạnh đối còn lại bằng nhau"
+        },
+        {
+          "key": "D",
+          "text": "Một cặp cạnh đối vừa song song vừa bằng nhau",
+          "why_wrong": "Đây là một dấu hiệu đúng nên tứ giác chắc chắn là hình bình hành."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0054",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Dấu hiệu nào sau đây KHÔNG dùng để nhận biết hình thoi?",
+      "statement_en": "Which of the following is NOT a valid criterion for a rhombus?",
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Dấu hiệu nhận biết hình thoi gồm: tứ giác có bốn cạnh bằng nhau; hình bình hành có hai cạnh kề bằng nhau; hình bình hành có hai đường chéo vuông góc; hình bình hành có một đường chéo là phân giác của một góc.",
+          "latex": "AB=BC=CD=DA\\Rightarrow ABCD\\ \\text{hình thoi}"
+        },
+        {
+          "explain": "Hình bình hành có hai đường chéo BẰNG NHAU là dấu hiệu của hình chữ nhật, không phải hình thoi.",
+          "latex": "AC=BD\\Rightarrow\\text{hình chữ nhật}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.hinh-thoi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "dau-hieu-hinh-thoi"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tứ giác có bốn cạnh bằng nhau",
+          "why_wrong": "Đây là một dấu hiệu đúng của hình thoi."
+        },
+        {
+          "key": "B",
+          "text": "Hình bình hành có hai đường chéo vuông góc",
+          "why_wrong": "Đây là một dấu hiệu đúng của hình thoi."
+        },
+        {
+          "key": "C",
+          "text": "Hình bình hành có hai đường chéo bằng nhau"
+        },
+        {
+          "key": "D",
+          "text": "Hình bình hành có một đường chéo là tia phân giác của một góc",
+          "why_wrong": "Đây là một dấu hiệu đúng của hình thoi."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0055",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "trac-nghiem",
+      "statement_vi": "Khẳng định nào sau đây ĐÚNG?",
+      "statement_en": "Which statement is correct?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hình vuông là hình chữ nhật có thêm hai cạnh kề bằng nhau (hoặc hình thoi có một góc vuông).",
+          "latex": "\\text{hình chữ nhật}+\\text{hai cạnh kề bằng nhau}=\\text{hình vuông}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.hinh-vuong"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "dau-hieu-hinh-vuong"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hình chữ nhật có hai cạnh kề bằng nhau là hình vuông"
+        },
+        {
+          "key": "B",
+          "text": "Mọi hình thoi đều là hình vuông",
+          "why_wrong": "Hình thoi chỉ là hình vuông khi có thêm một góc vuông."
+        },
+        {
+          "key": "C",
+          "text": "Hình bình hành có hai đường chéo bằng nhau là hình vuông",
+          "why_wrong": "Đó là dấu hiệu của hình chữ nhật, chưa đủ để là hình vuông."
+        },
+        {
+          "key": "D",
+          "text": "Tứ giác có bốn cạnh bằng nhau là hình vuông",
+          "why_wrong": "Bốn cạnh bằng nhau chỉ cho hình thoi; cần thêm một góc vuông mới thành hình vuông."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0056",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tứ giác",
+      "type": "dien-so",
+      "statement_vi": "Ba đường thẳng song song cách đều $a\\parallel b\\parallel c$ cắt một cát tuyến tại $A,B,C$ với $AB=BC$. Một cát tuyến khác cắt chúng tại $D,E,F$. Biết $DE=4$ cm, tính $EF$.",
+      "statement_en": "Three equally spaced parallel lines cut a transversal at A,B,C with AB=BC. Another transversal meets them at D,E,F. If DE = 4 cm, find EF.",
+      "answer": "4",
+      "solution_steps": [
+        {
+          "explain": "Nếu các đường thẳng song song cách đều chắn trên một cát tuyến các đoạn bằng nhau thì chúng cũng chắn trên mọi cát tuyến khác các đoạn bằng nhau.",
+          "latex": "AB=BC\\Rightarrow DE=EF"
+        },
+        {
+          "explain": "Suy ra độ dài.",
+          "latex": "EF=DE=4\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.tu-giac.duong-thang-song-song-cach-deu"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "duong-thang-song-song-cach-deu"
+      ],
+      "tags": [
+        "tu-giac",
+        "lop8"
+      ],
+      "answer_numeric": 4,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0057",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Diện tích đa giác",
+      "type": "dien-so",
+      "statement_vi": "Tính diện tích của một tam giác đều có cạnh $a=4$ cm (để kết quả dưới dạng căn).",
+      "statement_en": "Find the area of an equilateral triangle with side 4 cm (leave a radical).",
+      "answer": "4√3",
+      "solution_steps": [
+        {
+          "explain": "Diện tích tam giác đều cạnh $a$ là $S=\\dfrac{a^{2}\\sqrt{3}}{4}$; thay $a=4$.",
+          "latex": "S=\\dfrac{4^{2}\\sqrt{3}}{4}"
+        },
+        {
+          "explain": "Rút gọn.",
+          "latex": "S=\\dfrac{16\\sqrt{3}}{4}=4\\sqrt{3}\\ (\\text{cm}^{2})"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dien-tich.dien-tich-tam-giac-deu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "dien-tich-tam-giac-deu"
+      ],
+      "tags": [
+        "dien-tich",
+        "lop8"
+      ],
+      "answer_numeric": 6.9282,
+      "answer_unit": "cm^2",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0058",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Diện tích đa giác",
+      "type": "dien-so",
+      "statement_vi": "Tính diện tích hình bình hành có cạnh đáy $a=8$ cm và chiều cao tương ứng $h=5$ cm.",
+      "statement_en": "Find the area of a parallelogram with base 8 cm and height 5 cm.",
+      "answer": "40",
+      "solution_steps": [
+        {
+          "explain": "Diện tích hình bình hành bằng tích cạnh đáy và chiều cao ứng với cạnh đó.",
+          "latex": "S=a\\cdot h=8\\cdot5"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "S=40\\ \\text{cm}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dien-tich.dien-tich-hinh-binh-hanh"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "dien-tich-hinh-binh-hanh"
+      ],
+      "tags": [
+        "dien-tich",
+        "lop8"
+      ],
+      "answer_numeric": 40,
+      "answer_unit": "cm^2",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0059",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lí Ta-lét và tam giác đồng dạng",
+      "type": "dien-so",
+      "statement_vi": "Cho $\\triangle A'B'C'\\backsim\\triangle ABC$ với $A'B'=6$ cm, $AB=4$ cm và $BC=10$ cm. Tính $B'C'$.",
+      "statement_en": "Triangle A'B'C' is similar to ABC with A'B'=6, AB=4, BC=10 cm. Find B'C'.",
+      "answer": "15",
+      "solution_steps": [
+        {
+          "explain": "Hai tam giác đồng dạng có các cạnh tương ứng tỉ lệ với tỉ số đồng dạng $k$.",
+          "latex": "k=\\dfrac{A'B'}{AB}=\\dfrac{6}{4}=\\dfrac{3}{2}"
+        },
+        {
+          "explain": "Cạnh $B'C'$ tương ứng $BC$ nên bằng $k$ lần $BC$.",
+          "latex": "B'C'=k\\cdot BC=\\dfrac{3}{2}\\cdot10=15\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dong-dang.dinh-nghia-tam-giac-dong-dang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tam-giac-dong-dang",
+        "ti-so-dong-dang"
+      ],
+      "tags": [
+        "dong-dang",
+        "lop8"
+      ],
+      "answer_numeric": 15,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0060",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lí Ta-lét và tam giác đồng dạng",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tam giác có ba cặp cạnh tương ứng tỉ lệ thì chúng có quan hệ gì?",
+      "statement_en": "Two triangles with three pairs of proportional sides are related how?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Ba cặp cạnh tương ứng tỉ lệ là trường hợp đồng dạng cạnh - cạnh - cạnh.",
+          "latex": "\\dfrac{A'B'}{AB}=\\dfrac{B'C'}{BC}=\\dfrac{C'A'}{CA}\\Rightarrow\\triangle A'B'C'\\backsim\\triangle ABC"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dong-dang.truong-hop-dong-dang-ccc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dong-dang-ccc"
+      ],
+      "tags": [
+        "dong-dang",
+        "lop8"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Đồng dạng với nhau"
+        },
+        {
+          "key": "B",
+          "text": "Bằng nhau",
+          "why_wrong": "Ba cạnh tỉ lệ chỉ cho đồng dạng; chúng bằng nhau khi tỉ số đồng dạng bằng 1."
+        },
+        {
+          "key": "C",
+          "text": "Luôn là tam giác vuông",
+          "why_wrong": "Tỉ lệ cạnh không liên quan đến việc tam giác có vuông hay không."
+        },
+        {
+          "key": "D",
+          "text": "Luôn là tam giác cân",
+          "why_wrong": "Đồng dạng không kéo theo tam giác phải cân."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0061",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lí Ta-lét và tam giác đồng dạng",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tam giác có hai cặp cạnh tương ứng tỉ lệ và một cặp góc bằng nhau thì đồng dạng khi cặp góc đó là góc nào?",
+      "statement_en": "Two triangles with two pairs of proportional sides and one pair of equal angles are similar when the angle is which?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Trường hợp đồng dạng cạnh - góc - cạnh yêu cầu góc bằng nhau phải là góc xen giữa hai cạnh tỉ lệ.",
+          "latex": "\\dfrac{A'B'}{AB}=\\dfrac{A'C'}{AC},\\ \\widehat{A'}=\\widehat{A}\\Rightarrow\\triangle A'B'C'\\backsim\\triangle ABC"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dong-dang.truong-hop-dong-dang-cgc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "dong-dang-cgc",
+        "goc-xen-giua"
+      ],
+      "tags": [
+        "dong-dang",
+        "lop8"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Góc xen giữa hai cạnh tỉ lệ"
+        },
+        {
+          "key": "B",
+          "text": "Một góc bất kì",
+          "why_wrong": "Nếu góc không xen giữa hai cạnh tỉ lệ thì chưa chắc hai tam giác đồng dạng."
+        },
+        {
+          "key": "C",
+          "text": "Góc đối diện cạnh lớn nhất",
+          "why_wrong": "Vị trí này không bảo đảm điều kiện cạnh - góc - cạnh."
+        },
+        {
+          "key": "D",
+          "text": "Góc nhọn bất kì",
+          "why_wrong": "Điều quan trọng là góc phải xen giữa hai cạnh tỉ lệ, không phải nhọn hay tù."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0062",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lí Ta-lét và tam giác đồng dạng",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai tam giác vuông đồng dạng với nhau nếu chúng có yếu tố nào sau đây bằng nhau?",
+      "statement_en": "Two right triangles are similar if they share which of the following?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Hai tam giác vuông đã có một cặp góc vuông bằng nhau, chỉ cần thêm một cặp góc nhọn bằng nhau là đồng dạng.",
+          "latex": "\\widehat{B'}=\\widehat{B}\\Rightarrow\\triangle A'B'C'\\backsim\\triangle ABC"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dong-dang.truong-hop-dong-dang-tam-giac-vuong"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "dong-dang-tam-giac-vuong"
+      ],
+      "tags": [
+        "dong-dang",
+        "lop8"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Một cặp góc nhọn bằng nhau"
+        },
+        {
+          "key": "B",
+          "text": "Một cặp cạnh góc vuông bằng nhau",
+          "why_wrong": "Một cạnh bằng nhau cho ta yếu tố về độ dài, chưa đủ để kết luận đồng dạng."
+        },
+        {
+          "key": "C",
+          "text": "Cùng là tam giác vuông",
+          "why_wrong": "Mọi tam giác vuông đều có góc $90^{\\circ}$ nhưng vẫn có thể không đồng dạng."
+        },
+        {
+          "key": "D",
+          "text": "Có chu vi bằng nhau",
+          "why_wrong": "Chu vi bằng nhau không bảo đảm các góc tương ứng bằng nhau."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0063",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lí Ta-lét và tam giác đồng dạng",
+      "type": "dien-so",
+      "statement_vi": "Hai tam giác đồng dạng với tỉ số đồng dạng $k=\\dfrac{3}{2}$. Đường cao tương ứng của tam giác nhỏ là $h=4$ cm. Tính đường cao tương ứng $h'$ của tam giác lớn.",
+      "statement_en": "Two similar triangles have ratio k = 3/2. The smaller triangle's corresponding altitude is 4 cm. Find the larger triangle's altitude.",
+      "answer": "6",
+      "solution_steps": [
+        {
+          "explain": "Tỉ số hai đường cao tương ứng của hai tam giác đồng dạng bằng tỉ số đồng dạng.",
+          "latex": "\\dfrac{h'}{h}=k=\\dfrac{3}{2}"
+        },
+        {
+          "explain": "Suy ra đường cao lớn.",
+          "latex": "h'=k\\cdot h=\\dfrac{3}{2}\\cdot4=6\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dong-dang.ti-so-duong-cao"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "ti-so-duong-cao"
+      ],
+      "tags": [
+        "dong-dang",
+        "lop8"
+      ],
+      "answer_numeric": 6,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0064",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Định lí Ta-lét và tam giác đồng dạng",
+      "type": "dien-so",
+      "statement_vi": "Hai tam giác đồng dạng với tỉ số đồng dạng $k=\\dfrac{2}{3}$. Tam giác lớn có chu vi $27$ cm. Tính chu vi tam giác nhỏ.",
+      "statement_en": "Two similar triangles have ratio k = 2/3 (small to large). The large triangle's perimeter is 27 cm. Find the small triangle's perimeter.",
+      "answer": "18",
+      "solution_steps": [
+        {
+          "explain": "Tỉ số chu vi của hai tam giác đồng dạng bằng tỉ số đồng dạng.",
+          "latex": "\\dfrac{P'}{P}=k=\\dfrac{2}{3}"
+        },
+        {
+          "explain": "Suy ra chu vi tam giác nhỏ.",
+          "latex": "P'=k\\cdot P=\\dfrac{2}{3}\\cdot27=18\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.dong-dang.ti-so-chu-vi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "ti-so-chu-vi"
+      ],
+      "tags": [
+        "dong-dang",
+        "lop8"
+      ],
+      "answer_numeric": 18,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0065",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hệ thức lượng trong tam giác vuông",
+      "type": "dien-so",
+      "statement_vi": "Tam giác vuông có hai cạnh góc vuông $b=3$ cm và $c=4$ cm. Tính đường cao $h$ ứng với cạnh huyền.",
+      "statement_en": "A right triangle has legs 3 cm and 4 cm. Find the altitude to the hypotenuse.",
+      "answer": "2,4",
+      "solution_steps": [
+        {
+          "explain": "Dùng hệ thức nghịch đảo bình phương đường cao trong tam giác vuông.",
+          "latex": "\\dfrac{1}{h^{2}}=\\dfrac{1}{b^{2}}+\\dfrac{1}{c^{2}}=\\dfrac{1}{9}+\\dfrac{1}{16}=\\dfrac{25}{144}"
+        },
+        {
+          "explain": "Suy ra $h^{2}$ rồi lấy căn.",
+          "latex": "h^{2}=\\dfrac{144}{25}\\Rightarrow h=\\dfrac{12}{5}=2{,}4\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.he-thuc-luong.nghich-dao-binh-phuong-duong-cao"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "he-thuc-luong",
+        "duong-cao-tam-giac-vuong"
+      ],
+      "tags": [
+        "he-thuc-luong",
+        "lop9"
+      ],
+      "answer_numeric": 2.4,
+      "answer_unit": "cm",
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0066",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ số lượng giác của góc nhọn",
+      "type": "dien-so",
+      "statement_vi": "Tam giác vuông tại $A$ có góc nhọn $\\alpha$ với cạnh kề bằng $4$ và cạnh đối bằng $3$. Tính $\\cot\\alpha$ (viết dưới dạng phân số).",
+      "statement_en": "In a right triangle, acute angle alpha has adjacent 4 and opposite 3. Find cot(alpha) as a fraction.",
+      "answer": "4/3",
+      "solution_steps": [
+        {
+          "explain": "Côtang của góc nhọn bằng tỉ số cạnh kề trên cạnh đối.",
+          "latex": "\\cot\\alpha=\\dfrac{\\text{cạnh kề}}{\\text{cạnh đối}}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "\\cot\\alpha=\\dfrac{4}{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-so-luong-giac.cotang-goc-nhon"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "cotang",
+        "ti-so-luong-giac"
+      ],
+      "tags": [
+        "ti-so-luong-giac",
+        "lop9"
+      ],
+      "answer_numeric": 1.3333,
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0067",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ số lượng giác của góc nhọn",
+      "type": "dien-so",
+      "statement_vi": "Cho góc nhọn $\\alpha$ có $\\sin\\alpha=0{,}6$ và $\\cos\\alpha=0{,}8$. Tính $\\tan\\alpha$.",
+      "statement_en": "For acute alpha with sin = 0.6 and cos = 0.8, find tan(alpha).",
+      "answer": "0,75",
+      "solution_steps": [
+        {
+          "explain": "Tang của một góc bằng tỉ số sin trên côsin của góc đó.",
+          "latex": "\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "\\tan\\alpha=\\dfrac{0{,}6}{0{,}8}=0{,}75"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-so-luong-giac.tan-theo-sin-va-cos"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tang",
+        "sin-cos"
+      ],
+      "tags": [
+        "ti-so-luong-giac",
+        "lop9"
+      ],
+      "answer_numeric": 0.75,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0068",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ số lượng giác của góc nhọn",
+      "type": "dien-so",
+      "statement_vi": "Cho góc nhọn $\\alpha$ có $\\sin\\alpha=\\dfrac{3}{5}$. Tính $\\cos\\alpha$.",
+      "statement_en": "For acute alpha with sin = 3/5, find cos(alpha).",
+      "answer": "0,8",
+      "solution_steps": [
+        {
+          "explain": "Dùng hệ thức lượng giác cơ bản $\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$.",
+          "latex": "\\cos^{2}\\alpha=1-\\sin^{2}\\alpha=1-\\dfrac{9}{25}=\\dfrac{16}{25}"
+        },
+        {
+          "explain": "Vì $\\alpha$ là góc nhọn nên $\\cos\\alpha>0$, lấy căn dương.",
+          "latex": "\\cos\\alpha=\\dfrac{4}{5}=0{,}8"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-so-luong-giac.he-thuc-luong-giac-co-ban"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "he-thuc-co-ban",
+        "sin-binh-cong-cos-binh"
+      ],
+      "tags": [
+        "ti-so-luong-giac",
+        "lop9"
+      ],
+      "answer_numeric": 0.8,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0069",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ số lượng giác của góc nhọn",
+      "type": "dien-so",
+      "statement_vi": "Cho góc nhọn $\\alpha$ có $\\tan\\alpha=2$. Tính $\\cot\\alpha$.",
+      "statement_en": "For acute alpha with tan = 2, find cot(alpha).",
+      "answer": "0,5",
+      "solution_steps": [
+        {
+          "explain": "Tích của tang và côtang cùng một góc luôn bằng 1.",
+          "latex": "\\tan\\alpha\\cdot\\cot\\alpha=1"
+        },
+        {
+          "explain": "Suy ra côtang.",
+          "latex": "\\cot\\alpha=\\dfrac{1}{\\tan\\alpha}=\\dfrac{1}{2}=0{,}5"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-so-luong-giac.tich-tan-va-cot"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 2,
+      "skills": [
+        "tich-tan-cot"
+      ],
+      "tags": [
+        "ti-so-luong-giac",
+        "lop9"
+      ],
+      "answer_numeric": 0.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0070",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ số lượng giác của góc nhọn",
+      "type": "dien-so",
+      "statement_vi": "Tam giác vuông tại $A$ có cạnh góc vuông $AB=c=10$ cm; góc $B$ thỏa mãn $\\tan B=0{,}7$. Tính cạnh góc vuông $AC=b$.",
+      "statement_en": "Right triangle at A with leg AB = 10 cm; angle B has tan B = 0.7. Find leg AC = b.",
+      "answer": "7",
+      "solution_steps": [
+        {
+          "explain": "Cạnh góc vuông đối diện góc $B$ bằng cạnh góc vuông kề nhân với $\\tan B$.",
+          "latex": "b=c\\tan B"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "b=10\\cdot0{,}7=7\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-so-luong-giac.he-thuc-canh-goc-theo-tan-cot"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "he-thuc-canh-goc",
+        "giai-tam-giac-vuong"
+      ],
+      "tags": [
+        "ti-so-luong-giac",
+        "lop9"
+      ],
+      "answer_numeric": 7,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0071",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Tỉ số lượng giác của góc nhọn",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho hai góc nhọn thỏa mãn $0^{\\circ}<\\alpha<\\beta<90^{\\circ}$. Khẳng định nào sau đây ĐÚNG?",
+      "statement_en": "For acute angles 0 < alpha < beta < 90, which statement is correct?",
+      "answer": "B",
+      "solution_steps": [
+        {
+          "explain": "Khi góc tăng từ 0 đến 90 độ thì sin và tang tăng, còn côsin và côtang giảm.",
+          "latex": "0^{\\circ}<\\alpha<\\beta<90^{\\circ}\\Rightarrow\\cos\\alpha>\\cos\\beta"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.ti-so-luong-giac.so-sanh-ti-so-luong-giac"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "tinh-don-dieu-ti-so-luong-giac"
+      ],
+      "tags": [
+        "ti-so-luong-giac",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "$\\sin\\alpha>\\sin\\beta$",
+          "why_wrong": "Khi góc tăng thì sin TĂNG, nên $\\sin\\alpha<\\sin\\beta$."
+        },
+        {
+          "key": "B",
+          "text": "$\\cos\\alpha>\\cos\\beta$"
+        },
+        {
+          "key": "C",
+          "text": "$\\tan\\alpha>\\tan\\beta$",
+          "why_wrong": "Khi góc tăng thì tang TĂNG, nên $\\tan\\alpha<\\tan\\beta$."
+        },
+        {
+          "key": "D",
+          "text": "$\\cot\\alpha<\\cot\\beta$",
+          "why_wrong": "Khi góc tăng thì côtang GIẢM, nên $\\cot\\alpha>\\cot\\beta$."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0072",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho đường tròn $(O;5\\text{ cm})$ và điểm $M$ với $OM=3$ cm. Vị trí của điểm $M$ đối với đường tròn là gì?",
+      "statement_en": "Given circle (O; 5 cm) and point M with OM = 3 cm, where is M relative to the circle?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "So sánh khoảng cách $OM$ với bán kính $R$ để xác định vị trí điểm.",
+          "latex": "OM=3<5=R"
+        },
+        {
+          "explain": "Vì $OM<R$ nên $M$ nằm bên trong đường tròn.",
+          "latex": "OM<R\\Rightarrow M\\ \\text{nằm trong đường tròn}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.vi-tri-tuong-doi-diem-va-duong-tron"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 2,
+      "skills": [
+        "vi-tri-diem-duong-tron"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Nằm bên trong đường tròn"
+        },
+        {
+          "key": "B",
+          "text": "Nằm trên đường tròn",
+          "why_wrong": "Điểm nằm trên đường tròn khi $OM=R=5$, nhưng ở đây $OM=3$."
+        },
+        {
+          "key": "C",
+          "text": "Nằm bên ngoài đường tròn",
+          "why_wrong": "Điểm nằm ngoài khi $OM>R$, nhưng $3<5$."
+        },
+        {
+          "key": "D",
+          "text": "Trùng với tâm $O$",
+          "why_wrong": "Điểm trùng tâm khi $OM=0$, còn ở đây $OM=3$."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0073",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Đường tròn $(O;5\\text{ cm})$ có một dây $AB$ cách tâm $O$ một khoảng $d=3$ cm. Tính độ dài dây $AB$.",
+      "statement_en": "Circle (O; 5 cm) has a chord AB at distance 3 cm from O. Find AB.",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Độ dài dây liên hệ với bán kính và khoảng cách từ tâm đến dây theo công thức.",
+          "latex": "AB=2\\sqrt{R^{2}-d^{2}}=2\\sqrt{5^{2}-3^{2}}"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "AB=2\\sqrt{16}=2\\cdot4=8\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.day-va-khoang-cach-den-tam"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "day-cung",
+        "khoang-cach-den-tam"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 8,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0074",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "trac-nghiem",
+      "statement_vi": "Đường tròn $(O;4\\text{ cm})$ và đường thẳng $d$ cách tâm $O$ một khoảng bằng $4$ cm. Vị trí tương đối của $d$ và đường tròn?",
+      "statement_en": "Circle (O; 4 cm) and line d at distance 4 cm from O. Their relative position?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "So sánh khoảng cách $d$ từ tâm đến đường thẳng với bán kính $R$.",
+          "latex": "d=4=R"
+        },
+        {
+          "explain": "Khi $d=R$, đường thẳng tiếp xúc với đường tròn.",
+          "latex": "d=R\\Rightarrow\\text{tiếp xúc}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.vi-tri-tuong-doi-duong-thang-va-duong-tron"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "vi-tri-duong-thang-duong-tron",
+        "tiep-tuyen"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tiếp xúc nhau"
+        },
+        {
+          "key": "B",
+          "text": "Cắt nhau tại hai điểm",
+          "why_wrong": "Đường thẳng cắt đường tròn tại hai điểm khi $d<R$, nhưng ở đây $d=R$."
+        },
+        {
+          "key": "C",
+          "text": "Không giao nhau",
+          "why_wrong": "Không giao nhau khi $d>R$, nhưng ở đây $d=R$."
+        },
+        {
+          "key": "D",
+          "text": "Đường thẳng đi qua tâm",
+          "why_wrong": "Đi qua tâm thì $d=0$, không phải $d=4$."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0075",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "trac-nghiem",
+      "statement_vi": "Hai đường tròn $(O;5\\text{ cm})$ và $(O';3\\text{ cm})$ có $OO'=10$ cm. Vị trí tương đối của hai đường tròn?",
+      "statement_en": "Two circles (O;5) and (O';3) with OO' = 10 cm. Their relative position?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "So sánh khoảng cách hai tâm $OO'$ với tổng và hiệu hai bán kính.",
+          "latex": "R+r=5+3=8,\\quad OO'=10"
+        },
+        {
+          "explain": "Vì $OO'>R+r$ nên hai đường tròn ở ngoài nhau.",
+          "latex": "OO'>R+r\\Rightarrow\\text{ở ngoài nhau}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.vi-tri-tuong-doi-hai-duong-tron"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "vi-tri-hai-duong-tron"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ở ngoài nhau"
+        },
+        {
+          "key": "B",
+          "text": "Tiếp xúc ngoài",
+          "why_wrong": "Tiếp xúc ngoài khi $OO'=R+r=8$, nhưng $OO'=10$."
+        },
+        {
+          "key": "C",
+          "text": "Cắt nhau tại hai điểm",
+          "why_wrong": "Cắt nhau khi $R-r<OO'<R+r$, tức $2<OO'<8$, không thỏa $OO'=10$."
+        },
+        {
+          "key": "D",
+          "text": "Đựng nhau",
+          "why_wrong": "Đường tròn này đựng đường tròn kia khi $OO'<R-r=2$, trái với $OO'=10$."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0076",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Góc tạo bởi tia tiếp tuyến $Ax$ và dây cung $AB$ chắn cung $AB$ có số đo cung bằng $100^{\\circ}$. Tính số đo góc $\\widehat{xAB}$ (đơn vị độ).",
+      "statement_en": "The angle between tangent Ax and chord AB, subtending arc AB of 100 degrees. Find angle xAB (in degrees).",
+      "answer": "50",
+      "solution_steps": [
+        {
+          "explain": "Góc tạo bởi tiếp tuyến và dây cung bằng nửa số đo cung bị chắn.",
+          "latex": "\\widehat{xAB}=\\dfrac{1}{2}\\,\\text{sđ}\\overset{\\frown}{AB}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "\\widehat{xAB}=\\dfrac{100^{\\circ}}{2}=50^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.goc-tao-boi-tiep-tuyen-va-day"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "goc-tiep-tuyen-day",
+        "cung-bi-chan"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 50,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0077",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Hai dây $AC$ và $BD$ của một đường tròn cắt nhau tại điểm $M$ nằm bên trong đường tròn. Biết cung $AB=70^{\\circ}$ và cung $CD=50^{\\circ}$. Tính số đo góc $\\widehat{AMB}$ (đơn vị độ).",
+      "statement_en": "Chords AC and BD meet at M inside the circle. Arc AB = 70 and arc CD = 50 degrees. Find angle AMB (degrees).",
+      "answer": "60",
+      "solution_steps": [
+        {
+          "explain": "Góc có đỉnh ở bên trong đường tròn bằng nửa tổng số đo hai cung bị chắn.",
+          "latex": "\\widehat{AMB}=\\dfrac{\\text{sđ}\\overset{\\frown}{AB}+\\text{sđ}\\overset{\\frown}{CD}}{2}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "\\widehat{AMB}=\\dfrac{70^{\\circ}+50^{\\circ}}{2}=60^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.goc-co-dinh-ben-trong-duong-tron"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "goc-dinh-ben-trong",
+        "hai-day-cat-nhau"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 60,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0078",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Từ điểm $M$ nằm ngoài đường tròn kẻ hai cát tuyến, chắn hai cung có số đo $100^{\\circ}$ và $40^{\\circ}$. Tính số đo góc $\\widehat{M}$ tại đỉnh $M$ (đơn vị độ).",
+      "statement_en": "From external point M, two secants subtend arcs of 100 and 40 degrees. Find angle M (degrees).",
+      "answer": "30",
+      "solution_steps": [
+        {
+          "explain": "Góc có đỉnh ở bên ngoài đường tròn bằng nửa giá trị tuyệt đối của hiệu hai cung bị chắn.",
+          "latex": "\\widehat{M}=\\dfrac{\\left|\\text{sđ}\\overset{\\frown}{AB}-\\text{sđ}\\overset{\\frown}{CD}\\right|}{2}"
+        },
+        {
+          "explain": "Thay số.",
+          "latex": "\\widehat{M}=\\dfrac{\\left|100^{\\circ}-40^{\\circ}\\right|}{2}=30^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.goc-co-dinh-ben-ngoai-duong-tron"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "goc-dinh-ben-ngoai"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 30,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0079",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "trac-nghiem",
+      "statement_vi": "Quỹ tích các điểm $M$ nhìn đoạn thẳng $AB$ cố định dưới một góc $\\alpha$ không đổi (với $0^{\\circ}<\\alpha<180^{\\circ}$) là gì?",
+      "statement_en": "The locus of points M seeing fixed segment AB at a constant angle alpha (0 < alpha < 180) is what?",
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tập hợp các điểm nhìn một đoạn thẳng dưới một góc không đổi là hai cung tròn đối xứng dựng trên đoạn thẳng đó.",
+          "latex": "\\widehat{AMB}=\\alpha\\iff M\\in\\text{hai cung chứa góc }\\alpha\\text{ dựng trên }AB"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.cung-chua-goc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "cung-chua-goc",
+        "quy-tich"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hai cung tròn chứa góc $\\alpha$ dựng trên đoạn $AB$"
+        },
+        {
+          "key": "B",
+          "text": "Đường trung trực của $AB$",
+          "why_wrong": "Đường trung trực là quỹ tích điểm cách đều $A,B$, không liên quan góc nhìn."
+        },
+        {
+          "key": "C",
+          "text": "Đường tròn đường kính $AB$",
+          "why_wrong": "Đó chỉ là trường hợp riêng khi $\\alpha=90^{\\circ}$."
+        },
+        {
+          "key": "D",
+          "text": "Một đường thẳng song song với $AB$",
+          "why_wrong": "Quỹ tích là các cung tròn, không phải đường thẳng."
+        }
+      ]
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0080",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Hai dây $AB$ và $CD$ của một đường tròn cắt nhau tại $M$ bên trong đường tròn. Biết $MA=4$ cm, $MB=6$ cm, $MC=3$ cm. Tính $MD$.",
+      "statement_en": "Chords AB and CD meet at M inside a circle. MA=4, MB=6, MC=3 cm. Find MD.",
+      "answer": "8",
+      "solution_steps": [
+        {
+          "explain": "Với hai dây cắt nhau trong đường tròn, tích hai đoạn của dây này bằng tích hai đoạn của dây kia.",
+          "latex": "MA\\cdot MB=MC\\cdot MD"
+        },
+        {
+          "explain": "Thay số và giải tìm $MD$.",
+          "latex": "MD=\\dfrac{MA\\cdot MB}{MC}=\\dfrac{4\\cdot6}{3}=8\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.phuong-tich-diem-trong-duong-tron"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 3,
+      "skills": [
+        "hai-day-cat-nhau",
+        "phuong-tich"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 8,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0081",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Từ điểm $M$ ngoài đường tròn kẻ tiếp tuyến $MT$ và cát tuyến $MAB$ ($A$ giữa $M$ và $B$). Biết $MT=6$ cm và $MA=4$ cm. Tính $MB$.",
+      "statement_en": "From external M, draw tangent MT = 6 cm and secant MAB with MA = 4 cm. Find MB.",
+      "answer": "9",
+      "solution_steps": [
+        {
+          "explain": "Bình phương tiếp tuyến bằng tích của cát tuyến với đoạn ngoài của nó.",
+          "latex": "MT^{2}=MA\\cdot MB"
+        },
+        {
+          "explain": "Thay số và giải tìm $MB$.",
+          "latex": "MB=\\dfrac{MT^{2}}{MA}=\\dfrac{36}{4}=9\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.phuong-tich-diem-ngoai-duong-tron"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "tiep-tuyen-cat-tuyen",
+        "phuong-tich"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 9,
+      "answer_unit": "cm",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0082",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Tứ giác $ABCD$ nội tiếp một đường tròn có $\\widehat{A}=95^{\\circ}$. Tính số đo góc $\\widehat{C}$ (đơn vị độ).",
+      "statement_en": "Cyclic quadrilateral ABCD has angle A = 95 degrees. Find angle C (degrees).",
+      "answer": "85",
+      "solution_steps": [
+        {
+          "explain": "Trong tứ giác nội tiếp, tổng hai góc đối bằng $180^{\\circ}$.",
+          "latex": "\\widehat{A}+\\widehat{C}=180^{\\circ}"
+        },
+        {
+          "explain": "Suy ra góc $C$.",
+          "latex": "\\widehat{C}=180^{\\circ}-95^{\\circ}=85^{\\circ}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.dau-hieu-tu-giac-noi-tiep"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "tu-giac-noi-tiep",
+        "goc-doi-bu-nhau"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 85,
+      "answer_unit": "độ",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0083",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Tính diện tích hình vành khăn giới hạn bởi hai đường tròn đồng tâm có bán kính $R=5$ cm và $r=3$ cm (lấy $\\pi\\approx3{,}14$).",
+      "statement_en": "Find the area of the annulus between concentric circles of radii 5 cm and 3 cm (pi about 3.14).",
+      "answer": "16π ≈ 50,24 cm^2",
+      "solution_steps": [
+        {
+          "explain": "Diện tích hình vành khăn bằng hiệu diện tích hai hình tròn.",
+          "latex": "S=\\pi\\left(R^{2}-r^{2}\\right)=\\pi\\left(5^{2}-3^{2}\\right)"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "S=16\\pi\\approx16\\cdot3{,}14=50{,}24\\ \\text{cm}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.dien-tich-hinh-vanh-khan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "hinh-vanh-khan",
+        "dien-tich"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 50.24,
+      "answer_unit": "cm^2",
+      "tolerance": 0.3
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0084",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Đường tròn",
+      "type": "dien-so",
+      "statement_vi": "Tính độ dài cạnh của một lục giác đều (6 cạnh) nội tiếp đường tròn bán kính $R=10$ cm.",
+      "statement_en": "Find the side of a regular hexagon inscribed in a circle of radius 10 cm.",
+      "answer": "10",
+      "solution_steps": [
+        {
+          "explain": "Cạnh của đa giác đều $n$ cạnh nội tiếp đường tròn bán kính $R$ là $a_{n}=2R\\sin\\dfrac{180^{\\circ}}{n}$; thay $n=6$.",
+          "latex": "a_{6}=2R\\sin\\dfrac{180^{\\circ}}{6}=2\\cdot10\\cdot\\sin30^{\\circ}"
+        },
+        {
+          "explain": "Vì $\\sin30^{\\circ}=\\dfrac{1}{2}$ nên cạnh lục giác đều bằng bán kính.",
+          "latex": "a_{6}=20\\cdot\\dfrac{1}{2}=10\\ \\text{cm}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.duong-tron.da-giac-deu-noi-tiep"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "da-giac-deu-noi-tiep",
+        "luc-giac-deu"
+      ],
+      "tags": [
+        "duong-tron",
+        "lop9"
+      ],
+      "answer_numeric": 10,
+      "answer_unit": "cm",
+      "tolerance": 0.01
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0085",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hình học không gian",
+      "type": "dien-so",
+      "statement_vi": "Tính diện tích toàn phần của hình hộp chữ nhật có ba kích thước $a=3$ cm, $b=4$ cm, $c=5$ cm.",
+      "statement_en": "Find the total surface area of a rectangular box with edges 3, 4, 5 cm.",
+      "answer": "94",
+      "solution_steps": [
+        {
+          "explain": "Diện tích toàn phần hình hộp chữ nhật bằng hai lần tổng diện tích ba mặt khác nhau.",
+          "latex": "S_{tp}=2(ab+bc+ca)=2(3\\cdot4+4\\cdot5+5\\cdot3)"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "S_{tp}=2(12+20+15)=2\\cdot47=94\\ \\text{cm}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hinh-khong-gian.hinh-hop-chu-nhat-dien-tich-xung-quanh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "hinh-hop-chu-nhat",
+        "dien-tich-toan-phan"
+      ],
+      "tags": [
+        "hinh-khong-gian",
+        "lop8"
+      ],
+      "answer_numeric": 94,
+      "answer_unit": "cm^2",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0086",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hình học không gian",
+      "type": "dien-so",
+      "statement_vi": "Một hình lăng trụ đứng có đáy là tam giác chu vi $12$ cm và chiều cao lăng trụ $h=10$ cm. Tính diện tích xung quanh.",
+      "statement_en": "A right prism has a triangular base with perimeter 12 cm and height 10 cm. Find the lateral area.",
+      "answer": "120",
+      "solution_steps": [
+        {
+          "explain": "Diện tích xung quanh của hình lăng trụ đứng bằng chu vi đáy nhân chiều cao.",
+          "latex": "S_{xq}=C_{d}\\cdot h=12\\cdot10"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "S_{xq}=120\\ \\text{cm}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hinh-khong-gian.lang-tru-dung-dien-tich-xung-quanh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "skills": [
+        "lang-tru-dung",
+        "dien-tich-xung-quanh"
+      ],
+      "tags": [
+        "hinh-khong-gian",
+        "lop8"
+      ],
+      "answer_numeric": 120,
+      "answer_unit": "cm^2",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0087",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hình học không gian",
+      "type": "dien-so",
+      "statement_vi": "Hình chóp tứ giác đều có đáy là hình vuông cạnh $6$ cm và trung đoạn (chiều cao mặt bên) $d=5$ cm. Tính diện tích xung quanh.",
+      "statement_en": "A regular square pyramid has base edge 6 cm and slant height 5 cm. Find the lateral area.",
+      "answer": "60",
+      "solution_steps": [
+        {
+          "explain": "Chu vi đáy là $4\\cdot6=24$ cm nên nửa chu vi $p=12$ cm. Diện tích xung quanh bằng nửa chu vi đáy nhân trung đoạn.",
+          "latex": "S_{xq}=p\\cdot d=12\\cdot5"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "S_{xq}=60\\ \\text{cm}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hinh-khong-gian.hinh-chop-deu-dien-tich-xung-quanh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "hinh-chop-deu",
+        "trung-doan"
+      ],
+      "tags": [
+        "hinh-khong-gian",
+        "lop8"
+      ],
+      "answer_numeric": 60,
+      "answer_unit": "cm^2",
+      "tolerance": 0
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0088",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hình học không gian",
+      "type": "dien-so",
+      "statement_vi": "Tính diện tích xung quanh của hình nón cụt có hai bán kính đáy $r_{1}=5$ cm, $r_{2}=3$ cm và đường sinh $l=4$ cm (lấy $\\pi\\approx3{,}14$).",
+      "statement_en": "Find the lateral area of a frustum with base radii 5 and 3 cm and slant height 4 cm (pi about 3.14).",
+      "answer": "32π ≈ 100,48 cm^2",
+      "solution_steps": [
+        {
+          "explain": "Diện tích xung quanh hình nón cụt bằng $\\pi$ nhân tổng hai bán kính nhân đường sinh.",
+          "latex": "S_{xq}=\\pi\\left(r_{1}+r_{2}\\right)l=\\pi(5+3)\\cdot4"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "S_{xq}=32\\pi\\approx32\\cdot3{,}14=100{,}48\\ \\text{cm}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hinh-khong-gian.hinh-non-cut-dien-tich"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 4,
+      "skills": [
+        "hinh-non-cut",
+        "dien-tich-xung-quanh"
+      ],
+      "tags": [
+        "hinh-khong-gian",
+        "lop9"
+      ],
+      "answer_numeric": 100.48,
+      "answer_unit": "cm^2",
+      "tolerance": 0.5
+    },
+    {
+      "id": "prob.math.ext2-math-thcs.0089",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "topic": "Hình học không gian",
+      "type": "dien-so",
+      "statement_vi": "Tính thể tích của hình nón cụt có hai bán kính đáy $r_{1}=5$ cm, $r_{2}=3$ cm và chiều cao $h=6$ cm (lấy $\\pi\\approx3{,}14$).",
+      "statement_en": "Find the volume of a frustum with base radii 5 and 3 cm and height 6 cm (pi about 3.14).",
+      "answer": "98π ≈ 307,72 cm^3",
+      "solution_steps": [
+        {
+          "explain": "Thể tích hình nón cụt tính theo chiều cao và hai bán kính đáy.",
+          "latex": "V=\\dfrac{1}{3}\\pi h\\left(r_{1}^{2}+r_{2}^{2}+r_{1}r_{2}\\right)=\\dfrac{1}{3}\\pi\\cdot6\\cdot\\left(25+9+15\\right)"
+        },
+        {
+          "explain": "Tính giá trị.",
+          "latex": "V=2\\pi\\cdot49=98\\pi\\approx98\\cdot3{,}14=307{,}72\\ \\text{cm}^{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.thcs.hinh-khong-gian.hinh-non-cut-the-tich"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 5,
+      "skills": [
+        "hinh-non-cut",
+        "the-tich"
+      ],
+      "tags": [
+        "hinh-khong-gian",
+        "lop9"
+      ],
+      "answer_numeric": 307.72,
+      "answer_unit": "cm^3",
+      "tolerance": 0.5
+    }
+  ]
+}

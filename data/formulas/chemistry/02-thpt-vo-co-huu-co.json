@@ -1,0 +1,5966 @@
+{
+ "meta": {
+  "file": "02-thpt-vo-co-huu-co.json",
+  "subject": "chemistry",
+  "title": "Hóa học THPT: Hóa vô cơ, Hóa hữu cơ và các công thức giải nhanh",
+  "levels": [
+   "thpt"
+  ],
+  "count": 159
+ },
+ "formulas": [
+  {
+   "id": "chemistry.thpt.bao-toan.electron",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn electron",
+   "name_vi": "Định luật bảo toàn electron",
+   "name_en": "Conservation of electrons in redox processes",
+   "latex": "\\sum n_{e\\ nhuong} = \\sum n_{e\\ nhan}",
+   "vars": {
+    "n_{e\\ nhuong}": "số mol electron do các chất khử nhường",
+    "n_{e\\ nhan}": "số mol electron do các chất oxi hóa nhận"
+   },
+   "units": {
+    "n_{e\\ nhuong}": "mol",
+    "n_{e\\ nhan}": "mol"
+   },
+   "conditions": "Quá trình oxi hóa - khử; chỉ cần so sánh trạng thái đầu và trạng thái cuối, không cần viết các phương trình trung gian",
+   "note": "Với kim loại M hóa trị a thì n(e nhường) = a·n(M). Đây là công cụ chủ lực cho bài toán kim loại tác dụng HNO3, H2SO4 đặc và bài toán điện phân.",
+   "tags": [
+    "bao-toan-electron",
+    "dai-cuong",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.khoi-luong",
+    "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi",
+    "chemistry.thpt.dien-phan.so-mol-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.khoi-luong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn khối lượng",
+   "name_vi": "Định luật bảo toàn khối lượng",
+   "name_en": "Law of conservation of mass",
+   "latex": "\\sum m_{chat\\ tham\\ gia} = \\sum m_{san\\ pham}",
+   "vars": {
+    "m_{chat\\ tham\\ gia}": "khối lượng các chất phản ứng",
+    "m_{san\\ pham}": "khối lượng các sản phẩm"
+   },
+   "units": {
+    "m_{chat\\ tham\\ gia}": "g",
+    "m_{san\\ pham}": "g"
+   },
+   "conditions": "Hệ kín, mọi phản ứng hóa học",
+   "note": "Kết hợp với bảo toàn nguyên tố và bảo toàn electron là bộ ba công cụ giải nhanh mạnh nhất.",
+   "tags": [
+    "bao-toan-khoi-luong",
+    "dai-cuong",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.nguyen-to",
+    "chemistry.thpt.bao-toan.electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.bao-toan.nguyen-to",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Các định luật bảo toàn",
+   "subtopic": "Bảo toàn nguyên tố",
+   "name_vi": "Định luật bảo toàn nguyên tố",
+   "name_en": "Conservation of each element",
+   "latex": "\\sum n_{X(truoc\\ pu)} = \\sum n_{X(sau\\ pu)}",
+   "vars": {
+    "n_{X(truoc\\ pu)}": "số mol nguyên tử nguyên tố X trong các chất trước phản ứng",
+    "n_{X(sau\\ pu)}": "số mol nguyên tử nguyên tố X trong các chất sau phản ứng"
+   },
+   "units": {
+    "n_{X(truoc\\ pu)}": "mol",
+    "n_{X(sau\\ pu)}": "mol"
+   },
+   "conditions": "Áp dụng cho từng nguyên tố riêng biệt trong mọi quá trình hóa học",
+   "note": "Ví dụ: đốt cháy hợp chất hữu cơ, n(C trong X) = n(CO2); n(H trong X) = 2n(H2O).",
+   "tags": [
+    "bao-toan-nguyen-to",
+    "dai-cuong",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.khoi-luong",
+    "chemistry.thpt.dot-chay.bao-toan-oxi",
+    "chemistry.thpt.bao-toan.electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.xac-dinh-cong-thuc.kim-loai-chua-biet",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Xác định công thức chất vô cơ",
+   "subtopic": "Kim loại chưa biết",
+   "name_vi": "Xác định kim loại chưa biết dựa vào khối lượng mol",
+   "name_en": "Identifying an unknown metal from its molar mass",
+   "latex": "M = \\dfrac{m_{KL}}{n_{KL}} = \\dfrac{a \\cdot m_{KL}}{n_e}",
+   "vars": {
+    "M": "khối lượng mol nguyên tử của kim loại",
+    "m_{KL}": "khối lượng kim loại phản ứng",
+    "n_{KL}": "số mol kim loại",
+    "a": "hóa trị của kim loại trong phản ứng",
+    "n_e": "số mol electron kim loại nhường"
+   },
+   "units": {
+    "M": "g/mol",
+    "m_{KL}": "g",
+    "n_{KL}": "mol",
+    "n_e": "mol"
+   },
+   "conditions": "Kim loại tan hết; biết hóa trị hoặc phải biện luận hóa trị a = 1, 2, 3",
+   "note": "Với hỗn hợp hai kim loại cùng nhóm ở hai chu kì liên tiếp, dùng M trung bình rồi kẹp: M1 < M(tb) < M2.",
+   "tags": [
+    "vo-co",
+    "xac-dinh-cong-thuc",
+    "bien-luan"
+   ],
+   "related": [
+    "chemistry.thpt.xac-dinh-cong-thuc.oxit-kim-loai",
+    "chemistry.thpt.xac-dinh-cong-thuc.muoi-ngam-nuoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.xac-dinh-cong-thuc.muoi-ngam-nuoc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Xác định công thức chất vô cơ",
+   "subtopic": "Muối ngậm nước",
+   "name_vi": "Xác định công thức muối ngậm nước",
+   "name_en": "Determining the formula of a hydrated salt",
+   "latex": "A \\cdot xH_2O:\\quad x = \\dfrac{n_{H_2O}}{n_{A}} = \\dfrac{m_{tinh\\ the} - m_{khan}}{18 \\, n_{A}}",
+   "vars": {
+    "x": "số phân tử nước kết tinh",
+    "A": "công thức muối khan",
+    "n_{H_2O}": "số mol nước kết tinh",
+    "n_{A}": "số mol muối khan",
+    "m_{tinh\\ the}": "khối lượng tinh thể ngậm nước",
+    "m_{khan}": "khối lượng muối khan sau khi nung"
+   },
+   "units": {
+    "n_{H_2O}": "mol",
+    "n_{A}": "mol",
+    "m_{tinh\\ the}": "g",
+    "m_{khan}": "g"
+   },
+   "conditions": "x là số nguyên dương; nung đến khối lượng không đổi và muối khan không bị phân hủy",
+   "note": "Ví dụ quen thuộc: CuSO4·5H2O (M = 250), Na2CO3·10H2O (M = 286), MgSO4·7H2O (M = 246).",
+   "tags": [
+    "vo-co",
+    "xac-dinh-cong-thuc",
+    "muoi"
+   ],
+   "related": [
+    "chemistry.thpt.xac-dinh-cong-thuc.oxit-kim-loai"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.xac-dinh-cong-thuc.oxit-kim-loai",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Xác định công thức chất vô cơ",
+   "subtopic": "Oxit kim loại",
+   "name_vi": "Xác định công thức oxit kim loại MxOy",
+   "name_en": "Determining the formula of a metal oxide",
+   "latex": "\\dfrac{x}{y} = \\dfrac{n_{M}}{n_{O}} = \\dfrac{\\%M / M_{M}}{\\%O / 16};\\quad M_{oxit} = xM_{M} + 16y",
+   "vars": {
+    "x": "chỉ số nguyên tử kim loại trong công thức oxit",
+    "y": "chỉ số nguyên tử oxi trong công thức oxit",
+    "n_{M}": "số mol nguyên tử kim loại",
+    "n_{O}": "số mol nguyên tử oxi",
+    "\\%M": "phần trăm khối lượng kim loại trong oxit",
+    "\\%O": "phần trăm khối lượng oxi trong oxit",
+    "M_{M}": "khối lượng mol nguyên tử kim loại",
+    "M_{oxit}": "khối lượng mol phân tử oxit"
+   },
+   "units": {
+    "M_{M}": "g/mol",
+    "M_{oxit}": "g/mol",
+    "n_{M}": "mol",
+    "n_{O}": "mol",
+    "\\%M": "%",
+    "\\%O": "%"
+   },
+   "conditions": "x, y là số nguyên dương tối giản; hóa trị kim loại là 2y/x",
+   "note": "Các oxit sắt thường gặp: FeO (x:y = 1:1), Fe3O4 (3:4), Fe2O3 (2:3).",
+   "tags": [
+    "vo-co",
+    "xac-dinh-cong-thuc",
+    "oxit"
+   ],
+   "related": [
+    "chemistry.thpt.xac-dinh-cong-thuc.kim-loai-chua-biet"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-cuong.hieu-suat-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Đại cương",
+   "subtopic": "Hiệu suất",
+   "name_vi": "Hiệu suất phản ứng",
+   "name_en": "Reaction yield",
+   "latex": "H = \\dfrac{m_{tt}}{m_{lt}} \\times 100\\% = \\dfrac{n_{pu}}{n_{bd}} \\times 100\\%",
+   "vars": {
+    "H": "hiệu suất phản ứng",
+    "m_{tt}": "khối lượng sản phẩm thực tế thu được",
+    "m_{lt}": "khối lượng sản phẩm tính theo lí thuyết",
+    "n_{pu}": "số mol chất thiếu đã phản ứng",
+    "n_{bd}": "số mol chất thiếu ban đầu"
+   },
+   "units": {
+    "m_{tt}": "g",
+    "m_{lt}": "g",
+    "n_{pu}": "mol",
+    "n_{bd}": "mol",
+    "H": "%"
+   },
+   "conditions": "0 < H ≤ 100%; tính theo chất phản ứng hết trước",
+   "note": "Qua n giai đoạn nối tiếp: H(tổng) = H1·H2·...·Hn (dạng thập phân).",
+   "tags": [
+    "dai-cuong",
+    "hieu-suat",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-nhom.hieu-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dai-cuong.ti-khoi-chat-khi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    10,
+    11,
+    12
+   ],
+   "topic": "Đại cương",
+   "subtopic": "Tỉ khối chất khí",
+   "name_vi": "Tỉ khối của chất khí",
+   "name_en": "Relative density of gases",
+   "latex": "d_{A/B} = \\dfrac{M_A}{M_B};\\quad d_{A/kk} = \\dfrac{M_A}{29}",
+   "vars": {
+    "d_{A/B}": "tỉ khối của khí A so với khí B",
+    "M_A": "khối lượng mol phân tử của khí A",
+    "M_B": "khối lượng mol phân tử của khí B",
+    "d_{A/kk}": "tỉ khối của khí A so với không khí"
+   },
+   "units": {
+    "M_A": "g/mol",
+    "M_B": "g/mol"
+   },
+   "conditions": "Hai khí đo ở cùng điều kiện nhiệt độ và áp suất",
+   "note": "Khối lượng mol trung bình của không khí lấy bằng 29 g/mol.",
+   "tags": [
+    "dai-cuong",
+    "chat-khi",
+    "ti-khoi"
+   ],
+   "related": [
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.ancol-no",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Ancol",
+   "name_vi": "Đốt cháy ancol no, mạch hở",
+   "name_en": "Combustion of saturated open-chain alcohols",
+   "latex": "n_{ancol} = n_{H_2O} - n_{CO_2};\\quad n_{OH} = n_{O(ancol)} = 2n_{CO_2} + n_{H_2O} - 2n_{O_2}",
+   "vars": {
+    "n_{ancol}": "số mol ancol no mạch hở bị đốt",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{OH}": "tổng số mol nhóm -OH trong lượng ancol đó",
+    "n_{O(ancol)}": "số mol nguyên tử oxi trong ancol",
+    "n_{O_2}": "số mol O2 đã dùng"
+   },
+   "units": {
+    "n_{ancol}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{OH}": "mol",
+    "n_{O(ancol)}": "mol",
+    "n_{O_2}": "mol"
+   },
+   "conditions": "Ancol no, mạch hở (đơn chức hoặc đa chức); đốt cháy hoàn toàn",
+   "note": "Số nhóm OH trung bình = n(O trong ancol)/n(ancol). Với ancol no đơn chức thì n(O) = n(ancol).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "ancol"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.ankan",
+    "chemistry.thpt.cttq.ancol-da-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.ancol-no-don-chuc-o2",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Ancol",
+   "name_vi": "Số mol O2 khi đốt ancol no, đơn chức, mạch hở",
+   "name_en": "Oxygen needed to burn a saturated monohydric alcohol",
+   "latex": "C_nH_{2n+2}O + \\dfrac{3n}{2}O_2 \\rightarrow nCO_2 + (n+1)H_2O;\\quad n_{O_2} = \\dfrac{3}{2}n_{CO_2}",
+   "vars": {
+    "n": "số nguyên tử cacbon của ancol",
+    "n_{O_2}": "số mol oxi cần dùng",
+    "n_{CO_2}": "số mol CO2 sinh ra"
+   },
+   "units": {
+    "n_{O_2}": "mol",
+    "n_{CO_2}": "mol"
+   },
+   "conditions": "Ancol no, đơn chức, mạch hở CnH2n+2O; đốt cháy hoàn toàn",
+   "note": "Hệ quả đẹp: với ancol no đơn chức mạch hở thì n(O2) luôn bằng 1,5 lần n(CO2).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "ancol"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.ancol-no"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.hidrocacbon-tong-quat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Công thức tổng quát",
+   "name_vi": "Liên hệ giữa số mol chất, CO2, H2O và độ bất bão hòa",
+   "name_en": "Relation between moles, CO2, H2O and unsaturation degree",
+   "latex": "n_{CO_2} - n_{H_2O} = (k-1)\\,n_X",
+   "vars": {
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "k": "độ bất bão hòa của phân tử X",
+    "n_X": "số mol chất hữu cơ X bị đốt"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_X": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn; X có công thức bất kì chứa C, H, O (nguyên tử O không ảnh hưởng công thức này)",
+   "note": "Với k = 0 (no, hở): n(X) = n(H2O) − n(CO2). Với k = 1: n(CO2) = n(H2O). Với k = 2: n(X) = n(CO2) − n(H2O).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "do-bat-bao-hoa"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.do-bat-bao-hoa",
+    "chemistry.thpt.dot-chay.ankan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.ankan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Hiđrocacbon",
+   "name_vi": "Đốt cháy ankan",
+   "name_en": "Combustion of alkanes",
+   "latex": "n_{ankan} = n_{H_2O} - n_{CO_2};\\quad n_{O_2} = \\dfrac{3n+1}{2}n_{ankan}",
+   "vars": {
+    "n_{ankan}": "số mol ankan bị đốt cháy",
+    "n_{H_2O}": "số mol nước sinh ra",
+    "n_{CO_2}": "số mol khí CO2 sinh ra",
+    "n_{O_2}": "số mol oxi cần dùng",
+    "n": "số nguyên tử cacbon của ankan"
+   },
+   "units": {
+    "n_{ankan}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{O_2}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn; áp dụng cho ankan hoặc hỗn hợp các ankan",
+   "note": "Dấu hiệu nhận biết: n(H2O) > n(CO2) thì hợp chất là ankan (hoặc chất có k = 0 mạch hở như ancol no, ete no).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "ankan"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.anken",
+    "chemistry.thpt.dot-chay.ankin-ankadien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.anken",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Hiđrocacbon",
+   "name_vi": "Đốt cháy anken hoặc xicloankan",
+   "name_en": "Combustion of alkenes or cycloalkanes",
+   "latex": "n_{CO_2} = n_{H_2O};\\quad n_{O_2} = \\dfrac{3n}{2}n_{anken} = \\dfrac{3}{2}n_{CO_2}",
+   "vars": {
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{O_2}": "số mol oxi cần dùng",
+    "n_{anken}": "số mol anken bị đốt",
+    "n": "số nguyên tử cacbon của anken"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{O_2}": "mol",
+    "n_{anken}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn hợp chất CnH2n (anken hoặc xicloankan)",
+   "note": "Không tính được số mol chất từ hiệu số mol khí; phải dùng thêm dữ kiện khối lượng hoặc M trung bình.",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "anken"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.ankan",
+    "chemistry.thpt.cttq.anken"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.ankin-ankadien",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Hiđrocacbon",
+   "name_vi": "Đốt cháy ankin hoặc ankađien",
+   "name_en": "Combustion of alkynes or alkadienes",
+   "latex": "n_{hidrocacbon} = n_{CO_2} - n_{H_2O}",
+   "vars": {
+    "n_{hidrocacbon}": "số mol ankin hoặc ankađien bị đốt",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra"
+   },
+   "units": {
+    "n_{hidrocacbon}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn hợp chất CnH2n-2 mạch hở (k = 2)",
+   "note": "Dấu hiệu: n(CO2) > n(H2O) chứng tỏ phân tử có k ≥ 2.",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "ankin"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.hidrocacbon-tong-quat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.khoi-luong-binh-hap-thu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Hấp thụ sản phẩm cháy",
+   "name_vi": "Độ tăng khối lượng bình hấp thụ sản phẩm cháy",
+   "name_en": "Mass increase of absorption vessels for combustion products",
+   "latex": "\\begin{cases} \\text{bình } H_2SO_4\\ \\text{đặc, } P_2O_5,\\ CaCl_2: & \\Delta m = 18n_{H_2O} \\\\ \\text{bình } NaOH,\\ KOH: & \\Delta m = 44n_{CO_2} \\\\ \\text{bình } Ca(OH)_2\\ \\text{dư}: & \\Delta m_{dd} = 44n_{CO_2} + 18n_{H_2O} - 100n_{CaCO_3} \\end{cases}",
+   "vars": {
+    "\\Delta m": "độ tăng khối lượng bình hấp thụ",
+    "\\Delta m_{dd}": "độ biến thiên khối lượng dung dịch",
+    "n_{H_2O}": "số mol H2O bị hấp thụ",
+    "n_{CO_2}": "số mol CO2 bị hấp thụ",
+    "n_{CaCO_3}": "số mol kết tủa CaCO3"
+   },
+   "units": {
+    "\\Delta m": "g",
+    "\\Delta m_{dd}": "g",
+    "n_{H_2O}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{CaCO_3}": "mol"
+   },
+   "conditions": "Dẫn toàn bộ sản phẩm cháy qua bình; bình H2SO4 đặc đặt trước bình kiềm",
+   "note": "Nếu dẫn qua dung dịch Ca(OH)2 (không tách nước trước) thì khối lượng bình tăng = m(CO2) + m(H2O).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "hap-thu"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.khoi-luong-dung-dich-thay-doi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.so-mol-o2-hidrocacbon",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Lượng oxi",
+   "name_vi": "Số mol O2 cần để đốt cháy hiđrocacbon",
+   "name_en": "Oxygen required to burn a hydrocarbon",
+   "latex": "n_{O_2} = n_{CO_2} + \\dfrac{n_{H_2O}}{2}",
+   "vars": {
+    "n_{O_2}": "số mol khí oxi cần dùng",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra"
+   },
+   "units": {
+    "n_{O_2}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn hiđrocacbon (phân tử không chứa oxi)",
+   "note": "Suy trực tiếp từ bảo toàn nguyên tố oxi: 2n(O2) = 2n(CO2) + n(H2O).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "bao-toan-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.so-mol-o2-tong-quat",
+    "chemistry.thpt.dot-chay.bao-toan-oxi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.ancol-da-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Ancol",
+   "name_vi": "Công thức tổng quát của ancol no, đa chức, mạch hở",
+   "name_en": "General formula of saturated polyhydric alcohols",
+   "latex": "C_nH_{2n+2}O_x \\equiv C_nH_{2n+2-x}(OH)_x\\ (2 \\le x \\le n)",
+   "vars": {
+    "n": "số nguyên tử cacbon",
+    "x": "số nhóm hiđroxyl -OH trong phân tử"
+   },
+   "units": {},
+   "conditions": "2 ≤ x ≤ n; mỗi nguyên tử C chỉ mang tối đa một nhóm -OH",
+   "note": "Etylen glicol C2H4(OH)2 (M = 62) và glixerol C3H5(OH)3 (M = 92) hòa tan Cu(OH)2 tạo dung dịch xanh lam.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "ancol"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ancol-no-don-chuc",
+    "chemistry.thpt.phan-ung.ancol-tac-dung-na"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.ancol-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Ancol",
+   "name_vi": "Công thức tổng quát của ancol no, đơn chức, mạch hở",
+   "name_en": "General formula of saturated monohydric alcohols",
+   "latex": "C_nH_{2n+2}O \\equiv C_nH_{2n+1}OH\\ (n \\ge 1)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử ancol"
+   },
+   "units": {},
+   "conditions": "n ≥ 1; mạch hở, no, chỉ có một nhóm -OH gắn vào nguyên tử C no",
+   "note": "M = 14n + 18. CH3OH (32), C2H5OH (46), C3H7OH (60), C4H9OH (74).",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "ancol"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ancol-da-chuc",
+    "chemistry.thpt.dot-chay.ancol-no"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.andehit-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Anđehit",
+   "name_vi": "Công thức tổng quát của anđehit no, đơn chức, mạch hở",
+   "name_en": "General formula of saturated monofunctional aldehydes",
+   "latex": "C_nH_{2n}O \\equiv C_{n-1}H_{2n-1}CHO\\ (n \\ge 1)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử anđehit"
+   },
+   "units": {},
+   "conditions": "n ≥ 1; mạch hở, no, chứa đúng một nhóm -CHO",
+   "note": "M = 14n + 16. HCHO (30), CH3CHO (44). Anđehit no, mạch hở, a chức có công thức CnH(2n+2-2a)Oa.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "andehit"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.xeton",
+    "chemistry.thpt.phan-ung.trang-bac-andehit"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.ete",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Ete",
+   "name_vi": "Công thức tổng quát của ete no, đơn chức, mạch hở",
+   "name_en": "General formula of saturated ethers",
+   "latex": "R-O-R' \\equiv C_nH_{2n+2}O\\ (n \\ge 2)",
+   "vars": {
+    "R": "gốc hiđrocacbon no thứ nhất",
+    "R'": "gốc hiđrocacbon no thứ hai",
+    "n": "tổng số nguyên tử cacbon"
+   },
+   "units": {},
+   "conditions": "n ≥ 2; hai gốc no, mạch hở",
+   "note": "Ete là đồng phân khác chức của ancol no đơn chức; ete không tác dụng với Na.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "ete"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ancol-no-don-chuc",
+    "chemistry.thpt.dong-phan.ete"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.ankadien",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Hiđrocacbon không no",
+   "name_vi": "Công thức tổng quát của ankađien",
+   "name_en": "General formula of alkadienes",
+   "latex": "C_nH_{2n-2}\\ (n \\ge 3),\\quad k = 2\\ (\\text{2 liên kết } \\pi)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử",
+    "k": "độ bất bão hòa, bằng 2 ứng với hai liên kết đôi"
+   },
+   "units": {},
+   "conditions": "n ≥ 3; mạch hở, chứa hai liên kết đôi C=C",
+   "note": "M = 14n − 2. Buta-1,3-đien (C4H6) và isopren (2-metylbuta-1,3-đien, C5H8) là monome điều chế cao su.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "hidrocacbon"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ankin",
+    "chemistry.thpt.polime.cao-su-luu-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.anken",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Hiđrocacbon không no",
+   "name_vi": "Công thức tổng quát của anken",
+   "name_en": "General formula of alkenes",
+   "latex": "C_nH_{2n}\\ (n \\ge 2),\\quad k = 1\\ (\\text{1 liên kết } \\pi)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử",
+    "k": "độ bất bão hòa, bằng 1 ứng với một liên kết đôi C=C"
+   },
+   "units": {},
+   "conditions": "n ≥ 2; mạch hở, chứa đúng một liên kết đôi C=C",
+   "note": "M = 14n. Anken làm mất màu dung dịch brom và dung dịch KMnO4.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "hidrocacbon"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ankin",
+    "chemistry.thpt.dot-chay.anken"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.ankin",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Hiđrocacbon không no",
+   "name_vi": "Công thức tổng quát của ankin",
+   "name_en": "General formula of alkynes",
+   "latex": "C_nH_{2n-2}\\ (n \\ge 2),\\quad k = 2\\ (\\text{1 liên kết ba } C \\equiv C)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử",
+    "k": "độ bất bão hòa, bằng 2 ứng với một liên kết ba"
+   },
+   "units": {},
+   "conditions": "n ≥ 2; mạch hở, chứa đúng một liên kết ba C≡C",
+   "note": "M = 14n − 2. Ankin có liên kết ba đầu mạch tạo kết tủa vàng nhạt với dung dịch AgNO3/NH3.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "hidrocacbon"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ankadien",
+    "chemistry.thpt.phan-ung.ankin-agno3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.ankan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Hiđrocacbon no",
+   "name_vi": "Công thức tổng quát của ankan",
+   "name_en": "General formula of alkanes",
+   "latex": "C_nH_{2n+2}\\ (n \\ge 1),\\quad k = 0",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử",
+    "k": "độ bất bão hòa của phân tử"
+   },
+   "units": {},
+   "conditions": "n nguyên dương, n ≥ 1; mạch hở, chỉ có liên kết đơn",
+   "note": "M = 14n + 2. Ankan chỉ tham gia phản ứng thế, tách và cháy; không làm mất màu dung dịch brom.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "hidrocacbon"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.xicloankan",
+    "chemistry.thpt.dot-chay.ankan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.xicloankan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Hiđrocacbon no",
+   "name_vi": "Công thức tổng quát của xicloankan đơn vòng",
+   "name_en": "General formula of monocyclic cycloalkanes",
+   "latex": "C_nH_{2n}\\ (n \\ge 3),\\quad k = 1\\ (\\text{1 vòng})",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử",
+    "k": "độ bất bão hòa (ở đây là 1 vòng no)"
+   },
+   "units": {},
+   "conditions": "n ≥ 3; phân tử chỉ có một vòng no, không có liên kết bội",
+   "note": "M = 14n. Xicloankan đồng phân với anken cùng số C nhưng không làm mất màu dung dịch brom (trừ vòng 3, 4 cạnh mở vòng).",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "hidrocacbon"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.anken"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.aren",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Hiđrocacbon thơm",
+   "name_vi": "Công thức tổng quát của aren (đồng đẳng benzen)",
+   "name_en": "General formula of arenes",
+   "latex": "C_nH_{2n-6}\\ (n \\ge 6),\\quad k = 4",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử",
+    "k": "độ bất bão hòa, bằng 4 (1 vòng benzen + 3 liên kết pi)"
+   },
+   "units": {},
+   "conditions": "n ≥ 6; phân tử chứa một vòng benzen, nhánh no",
+   "note": "M = 14n − 6. Benzen C6H6, toluen C7H8, xilen và etylbenzen C8H10.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "aren"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.do-bat-bao-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.phenol",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Phenol",
+   "name_vi": "Công thức của phenol và đồng đẳng",
+   "name_en": "Formula of phenol and its homologues",
+   "latex": "C_6H_5OH;\\quad \\text{đồng đẳng đơn chức}: C_nH_{2n-6}O\\ (n \\ge 6)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử"
+   },
+   "units": {},
+   "conditions": "Nhóm -OH gắn trực tiếp vào vòng benzen",
+   "note": "M(C6H5OH) = 94 g/mol. Phenol tác dụng được với NaOH (khác ancol) và tạo kết tủa trắng với nước brom.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "phenol"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ancol-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.xeton",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Xeton",
+   "name_vi": "Công thức tổng quát của xeton no, đơn chức, mạch hở",
+   "name_en": "General formula of saturated ketones",
+   "latex": "R-CO-R' \\equiv C_nH_{2n}O\\ (n \\ge 3)",
+   "vars": {
+    "R": "gốc hiđrocacbon no thứ nhất",
+    "R'": "gốc hiđrocacbon no thứ hai",
+    "n": "số nguyên tử cacbon trong phân tử"
+   },
+   "units": {},
+   "conditions": "n ≥ 3; nhóm C=O nằm giữa mạch, hai bên đều là gốc hiđrocacbon",
+   "note": "Xeton là đồng phân của anđehit cùng công thức phân tử nhưng KHÔNG tham gia phản ứng tráng bạc.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "xeton"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.andehit-no-don-chuc",
+    "chemistry.thpt.dong-phan.xeton"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.ph-dung-dich",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Dung dịch chất điện li",
+   "subtopic": "pH",
+   "name_vi": "pH và pOH của dung dịch",
+   "name_en": "pH and pOH of a solution",
+   "latex": "pH = -\\log[H^+];\\quad pOH = -\\log[OH^-];\\quad pH + pOH = 14",
+   "vars": {
+    "pH": "chỉ số pH của dung dịch",
+    "pOH": "chỉ số pOH của dung dịch",
+    "[H^+]": "nồng độ mol ion H+",
+    "[OH^-]": "nồng độ mol ion OH-"
+   },
+   "units": {
+    "[H^+]": "mol/L",
+    "[OH^-]": "mol/L"
+   },
+   "conditions": "Dung dịch loãng ở 25 °C, tích số ion của nước Kw = [H+][OH-] = 1,0·10^-14",
+   "note": "pH < 7 môi trường axit, pH = 7 trung tính, pH > 7 môi trường bazơ (ở 25 °C).",
+   "tags": [
+    "vo-co",
+    "dung-dich",
+    "ph"
+   ],
+   "related": [
+    "chemistry.thpt.dien-phan.thay-doi-ph"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.huu-co.ctdgn-sang-ctpt",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Lập công thức phân tử hợp chất hữu cơ",
+   "subtopic": "Từ công thức đơn giản nhất",
+   "name_vi": "Từ công thức đơn giản nhất suy ra công thức phân tử",
+   "name_en": "Molecular formula from the empirical formula",
+   "latex": "CTPT = \\left(CTDGN\\right)_m,\\quad m = \\dfrac{M}{M_{CTDGN}}",
+   "vars": {
+    "m": "hệ số nguyên dương nhân với công thức đơn giản nhất",
+    "M": "khối lượng mol phân tử của hợp chất",
+    "M_{CTDGN}": "khối lượng mol ứng với công thức đơn giản nhất"
+   },
+   "units": {
+    "M": "g/mol",
+    "M_{CTDGN}": "g/mol"
+   },
+   "conditions": "m là số nguyên dương; cần biết M từ tỉ khối hoặc từ dữ kiện khác",
+   "note": "Kiểm tra lại kết quả bằng độ bất bão hòa k phải nguyên và không âm.",
+   "tags": [
+    "huu-co",
+    "lap-cong-thuc",
+    "cong-thuc-don-gian"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.lap-ctpt-tu-phan-tram",
+    "chemistry.thpt.dai-cuong.ti-khoi-chat-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.huu-co.lap-ctpt-tu-phan-tram",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Lập công thức phân tử hợp chất hữu cơ",
+   "subtopic": "Từ phần trăm khối lượng",
+   "name_vi": "Lập công thức đơn giản nhất từ phần trăm khối lượng các nguyên tố",
+   "name_en": "Empirical formula from mass percentages",
+   "latex": "x : y : z : t = \\dfrac{\\%C}{12} : \\dfrac{\\%H}{1} : \\dfrac{\\%O}{16} : \\dfrac{\\%N}{14}",
+   "vars": {
+    "x": "chỉ số nguyên tử C trong công thức đơn giản nhất",
+    "y": "chỉ số nguyên tử H",
+    "z": "chỉ số nguyên tử O",
+    "t": "chỉ số nguyên tử N",
+    "\\%C": "phần trăm khối lượng cacbon",
+    "\\%H": "phần trăm khối lượng hiđro",
+    "\\%O": "phần trăm khối lượng oxi",
+    "\\%N": "phần trăm khối lượng nitơ"
+   },
+   "units": {
+    "\\%C": "%",
+    "\\%H": "%",
+    "\\%O": "%",
+    "\\%N": "%"
+   },
+   "conditions": "Tỉ lệ phải rút gọn về các số nguyên nhỏ nhất; %O = 100% − %C − %H − %N",
+   "note": "Có thể thay % khối lượng bằng khối lượng thực của mỗi nguyên tố trong cùng một lượng chất.",
+   "tags": [
+    "huu-co",
+    "lap-cong-thuc",
+    "cong-thuc-don-gian"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.ctdgn-sang-ctpt",
+    "chemistry.thpt.huu-co.lap-ctpt-tu-san-pham-chay"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.huu-co.lap-ctpt-tu-san-pham-chay",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Lập công thức phân tử hợp chất hữu cơ",
+   "subtopic": "Từ sản phẩm cháy",
+   "name_vi": "Xác định số nguyên tử mỗi nguyên tố từ sản phẩm cháy",
+   "name_en": "Element amounts from combustion products",
+   "latex": "n_{C} = n_{CO_2},\\quad n_{H} = 2n_{H_2O},\\quad n_{N} = 2n_{N_2},\\quad m_{O} = m_X - 12n_{CO_2} - 2n_{H_2O} - 28n_{N_2}",
+   "vars": {
+    "n_{C}": "số mol nguyên tử C trong hợp chất X",
+    "n_{H}": "số mol nguyên tử H trong X",
+    "n_{N}": "số mol nguyên tử N trong X",
+    "m_{O}": "khối lượng oxi trong X",
+    "m_X": "khối lượng hợp chất hữu cơ X đem đốt",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{N_2}": "số mol N2 sinh ra"
+   },
+   "units": {
+    "n_{C}": "mol",
+    "n_{H}": "mol",
+    "n_{N}": "mol",
+    "m_{O}": "g",
+    "m_X": "g",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{N_2}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn X trong oxi dư; toàn bộ C thành CO2, H thành H2O, N thành N2",
+   "note": "Nếu m(O) = 0 thì X chỉ chứa C, H (và N). Sau đó n(O) = m(O)/16.",
+   "tags": [
+    "huu-co",
+    "lap-cong-thuc",
+    "dot-chay"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.so-nguyen-tu-tu-so-mol",
+    "chemistry.thpt.dot-chay.bao-toan-oxi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.huu-co.so-nguyen-tu-tu-so-mol",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Lập công thức phân tử hợp chất hữu cơ",
+   "subtopic": "Từ sản phẩm cháy",
+   "name_vi": "Số nguyên tử C, H, O trong phân tử theo số mol chất",
+   "name_en": "Atoms per molecule from mole ratios",
+   "latex": "x = \\dfrac{n_{CO_2}}{n_X},\\quad y = \\dfrac{2n_{H_2O}}{n_X},\\quad z = \\dfrac{n_{O(X)}}{n_X}",
+   "vars": {
+    "x": "số nguyên tử C trong một phân tử X",
+    "y": "số nguyên tử H trong một phân tử X",
+    "z": "số nguyên tử O trong một phân tử X",
+    "n_X": "số mol hợp chất X đem đốt",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{O(X)}": "số mol nguyên tử oxi trong X"
+   },
+   "units": {
+    "n_X": "mol",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{O(X)}": "mol"
+   },
+   "conditions": "X là chất tinh khiết (không phải hỗn hợp); x, y, z nguyên dương",
+   "note": "Nếu X là hỗn hợp thì các giá trị này trở thành số nguyên tử trung bình.",
+   "tags": [
+    "huu-co",
+    "lap-cong-thuc",
+    "dot-chay"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.lap-ctpt-tu-san-pham-chay",
+    "chemistry.thpt.dot-chay.so-c-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-bon.do-dinh-duong-kali",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phân bón hóa học",
+   "subtopic": "Phân kali",
+   "name_vi": "Độ dinh dưỡng của phân kali",
+   "name_en": "Nutrient content of potassium fertilizer",
+   "latex": "\\%K_2O = \\dfrac{m_{K_2O}}{m_{phan}} \\times 100\\%,\\quad n_{K_2O} = \\dfrac{n_{K}}{2}",
+   "vars": {
+    "\\%K_2O": "độ dinh dưỡng của phân kali",
+    "m_{K_2O}": "khối lượng K2O quy đổi từ toàn bộ kali trong phân",
+    "m_{phan}": "khối lượng phân bón",
+    "n_{K_2O}": "số mol K2O quy đổi",
+    "n_{K}": "số mol nguyên tử kali trong phân"
+   },
+   "units": {
+    "m_{K_2O}": "g",
+    "m_{phan}": "g",
+    "n_{K_2O}": "mol",
+    "n_{K}": "mol",
+    "\\%K_2O": "%"
+   },
+   "conditions": "Quy đổi toàn bộ K trong phân về K2O",
+   "note": "M(K2O) = 94 g/mol. Phân kali phổ biến: KCl, K2SO4.",
+   "tags": [
+    "vo-co",
+    "phan-bon",
+    "kali"
+   ],
+   "related": [
+    "chemistry.thpt.phan-bon.do-dinh-duong-lan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-bon.do-dinh-duong-lan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phân bón hóa học",
+   "subtopic": "Phân lân",
+   "name_vi": "Độ dinh dưỡng của phân lân",
+   "name_en": "Nutrient content of phosphate fertilizer",
+   "latex": "\\%P_2O_5 = \\dfrac{m_{P_2O_5}}{m_{phan}} \\times 100\\%,\\quad n_{P_2O_5} = \\dfrac{n_{P}}{2}",
+   "vars": {
+    "\\%P_2O_5": "độ dinh dưỡng của phân lân",
+    "m_{P_2O_5}": "khối lượng P2O5 quy đổi từ toàn bộ photpho trong phân",
+    "m_{phan}": "khối lượng phân bón",
+    "n_{P_2O_5}": "số mol P2O5 quy đổi",
+    "n_{P}": "số mol nguyên tử photpho trong phân"
+   },
+   "units": {
+    "m_{P_2O_5}": "g",
+    "m_{phan}": "g",
+    "n_{P_2O_5}": "mol",
+    "n_{P}": "mol",
+    "\\%P_2O_5": "%"
+   },
+   "conditions": "Toàn bộ P trong phân được quy đổi về P2O5 dù thực tế tồn tại dưới dạng muối photphat",
+   "note": "M(P2O5) = 142 g/mol. Supephotphat kép Ca(H2PO4)2 có độ dinh dưỡng cao hơn supephotphat đơn.",
+   "tags": [
+    "vo-co",
+    "phan-bon",
+    "lan"
+   ],
+   "related": [
+    "chemistry.thpt.phan-bon.do-dinh-duong-dam"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-bon.do-dinh-duong-dam",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phân bón hóa học",
+   "subtopic": "Phân đạm",
+   "name_vi": "Độ dinh dưỡng của phân đạm",
+   "name_en": "Nutrient content of nitrogen fertilizer",
+   "latex": "\\%N = \\dfrac{m_{N}}{m_{phan}} \\times 100\\%",
+   "vars": {
+    "\\%N": "độ dinh dưỡng của phân đạm",
+    "m_{N}": "khối lượng nguyên tố nitơ trong phân",
+    "m_{phan}": "khối lượng phân bón"
+   },
+   "units": {
+    "m_{N}": "g",
+    "m_{phan}": "g",
+    "\\%N": "%"
+   },
+   "conditions": "Độ dinh dưỡng của phân đạm được đánh giá bằng phần trăm khối lượng nitơ",
+   "note": "Urê (NH2)2CO có %N ≈ 46,67% là phân đạm tốt nhất; NH4NO3 có %N = 35%.",
+   "tags": [
+    "vo-co",
+    "phan-bon",
+    "dam"
+   ],
+   "related": [
+    "chemistry.thpt.phan-bon.do-dinh-duong-lan",
+    "chemistry.thpt.phan-bon.do-dinh-duong-kali"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.ankin-agno3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Ank-1-in",
+   "name_vi": "Phản ứng thế của ank-1-in với dung dịch AgNO3/NH3",
+   "name_en": "Terminal alkynes reacting with silver ammonia solution",
+   "latex": "R-C \\equiv CH + AgNO_3 + NH_3 \\rightarrow R-C \\equiv CAg \\downarrow + NH_4NO_3",
+   "vars": {
+    "R": "gốc hiđrocacbon hoặc H",
+    "R-C \\equiv CAg": "kết tủa vàng nhạt của bạc axetilua thế"
+   },
+   "units": {},
+   "conditions": "Chỉ ank-1-in (liên kết ba ở đầu mạch) mới phản ứng; ank-2-in trở đi không phản ứng",
+   "note": "Axetilen C2H2 có hai đầu mạch nên tạo Ag2C2 (M = 240), n(kết tủa) = n(C2H2). Với R-C≡CH khác thì M(kết tủa) = M(ankin) + 107.",
+   "tags": [
+    "huu-co",
+    "ankin",
+    "nhan-biet"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ankin"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.cracking-ankan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Cracking ankan",
+   "name_vi": "Phản ứng cracking ankan",
+   "name_en": "Cracking of alkanes",
+   "latex": "C_nH_{2n+2} \\xrightarrow{t^o,\\ xt} C_aH_{2a} + C_bH_{2b+2}\\ (a + b = n);\\quad m_{truoc} = m_{sau},\\ \\ n_{ankan\\ pu} = n_{sau} - n_{truoc}",
+   "vars": {
+    "n": "số nguyên tử cacbon của ankan ban đầu",
+    "a": "số nguyên tử cacbon của anken tạo thành",
+    "b": "số nguyên tử cacbon của ankan tạo thành",
+    "m_{truoc}": "khối lượng hỗn hợp khí trước phản ứng",
+    "m_{sau}": "khối lượng hỗn hợp khí sau phản ứng",
+    "n_{truoc}": "tổng số mol khí trước phản ứng",
+    "n_{sau}": "tổng số mol khí sau phản ứng",
+    "n_{ankan\\ pu}": "số mol ankan đã bị cracking"
+   },
+   "units": {
+    "m_{truoc}": "g",
+    "m_{sau}": "g",
+    "n_{truoc}": "mol",
+    "n_{sau}": "mol",
+    "n_{ankan\\ pu}": "mol"
+   },
+   "conditions": "Mỗi phân tử ankan bị cracking tạo đúng hai phân tử nên số mol khí tăng; khối lượng hỗn hợp không đổi (bình kín)",
+   "note": "Từ bảo toàn khối lượng: n(trước)·M(trước) = n(sau)·M(sau), nên M trung bình giảm sau cracking. Hiệu suất cracking H = (n_sau − n_trước)/n_trước × 100%.",
+   "tags": [
+    "huu-co",
+    "ankan",
+    "cracking",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.ankan",
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.oxi-hoa-ancol-cuo",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Oxi hóa ancol",
+   "name_vi": "Oxi hóa ancol bằng CuO nung nóng",
+   "name_en": "Oxidation of alcohols by hot copper(II) oxide",
+   "latex": "RCH_2OH + CuO \\xrightarrow{t^o} RCHO + Cu + H_2O;\\quad m_{ran\\ giam} = 16\\,n_{ancol\\ pu}",
+   "vars": {
+    "m_{ran\\ giam}": "độ giảm khối lượng chất rắn sau phản ứng",
+    "n_{ancol\\ pu}": "số mol ancol đã bị oxi hóa",
+    "R": "gốc hiđrocacbon hoặc H"
+   },
+   "units": {
+    "m_{ran\\ giam}": "g",
+    "n_{ancol\\ pu}": "mol"
+   },
+   "conditions": "CuO dư, đun nóng; mỗi mol ancol lấy đi 1 mol nguyên tử O của CuO",
+   "note": "Ancol bậc I tạo anđehit, ancol bậc II tạo xeton, ancol bậc III không bị oxi hóa trong điều kiện này.",
+   "tags": [
+    "huu-co",
+    "ancol",
+    "oxi-hoa"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.andehit-no-don-chuc",
+    "chemistry.thpt.cttq.xeton"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.phenol-tac-dung-brom",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phenol",
+   "name_vi": "Phản ứng thế brom vào vòng benzen của phenol",
+   "name_en": "Bromination of phenol",
+   "latex": "C_6H_5OH + 3Br_2 \\rightarrow C_6H_2Br_3OH \\downarrow + 3HBr;\\quad n_{Br_2} = 3n_{phenol},\\ \\ n_{\\downarrow} = n_{phenol}",
+   "vars": {
+    "n_{Br_2}": "số mol brom phản ứng",
+    "n_{phenol}": "số mol phenol",
+    "n_{\\downarrow}": "số mol kết tủa 2,4,6-tribromphenol"
+   },
+   "units": {
+    "n_{Br_2}": "mol",
+    "n_{phenol}": "mol",
+    "n_{\\downarrow}": "mol"
+   },
+   "conditions": "Dùng nước brom ở nhiệt độ thường, không cần xúc tác; nhóm -OH hoạt hóa vòng benzen và định hướng vào vị trí ortho, para",
+   "note": "Kết tủa trắng 2,4,6-tribromphenol có M = 331 g/mol. Benzen và toluen không phản ứng với nước brom, nên đây là phản ứng nhận biết phenol.",
+   "tags": [
+    "huu-co",
+    "phenol",
+    "nhan-biet"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.phenol",
+    "chemistry.thpt.phan-ung.cong-br2"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.ancol-tac-dung-na",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng với kim loại kiềm",
+   "name_vi": "Ancol tác dụng với natri",
+   "name_en": "Alcohols reacting with sodium",
+   "latex": "n_{H_2} = \\dfrac{a \\cdot n_{ancol}}{2} = \\dfrac{n_{OH}}{2};\\quad m_{muoi} = m_{ancol} + 22n_{OH}",
+   "vars": {
+    "n_{H_2}": "số mol khí H2 thoát ra",
+    "a": "số nhóm -OH trong một phân tử ancol",
+    "n_{ancol}": "số mol ancol",
+    "n_{OH}": "tổng số mol nhóm -OH",
+    "m_{muoi}": "khối lượng ancolat (muối natri) khan",
+    "m_{ancol}": "khối lượng ancol ban đầu"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{ancol}": "mol",
+    "n_{OH}": "mol",
+    "m_{muoi}": "g",
+    "m_{ancol}": "g"
+   },
+   "conditions": "Na dư; ancol khan (nếu có nước thì nước cũng phản ứng với Na)",
+   "note": "22 = 23 − 1 (thay H của nhóm OH bằng Na). Tỉ lệ n(H2)/n(ancol) = 0,5 cho biết ancol đơn chức, = 1 cho biết ancol hai chức.",
+   "tags": [
+    "huu-co",
+    "ancol",
+    "phan-ung-the"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.axit-tac-dung-na",
+    "chemistry.thpt.cttq.ancol-da-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.tach-nuoc-tao-anken",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Tách nước",
+   "name_vi": "Tách nước ancol tạo anken ở 170 độ C",
+   "name_en": "Dehydration of alcohols to alkenes at 170 degrees Celsius",
+   "latex": "C_nH_{2n+1}OH \\xrightarrow[170^oC]{H_2SO_4\\ dac} C_nH_{2n} + H_2O;\\quad n_{anken} = n_{H_2O} = n_{ancol\\ pu}",
+   "vars": {
+    "n": "số nguyên tử cacbon của ancol (n ≥ 2)",
+    "n_{anken}": "số mol anken tạo thành",
+    "n_{H_2O}": "số mol nước sinh ra",
+    "n_{ancol\\ pu}": "số mol ancol đã phản ứng"
+   },
+   "units": {
+    "n_{anken}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{ancol\\ pu}": "mol"
+   },
+   "conditions": "Ancol no đơn chức mạch hở có từ 2 C trở lên; H2SO4 đặc, khoảng 170 °C",
+   "note": "Theo quy tắc Zai-xép, nhóm -OH tách cùng H ở nguyên tử C bậc cao hơn tạo anken chính.",
+   "tags": [
+    "huu-co",
+    "ancol",
+    "tach-nuoc"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.tach-nuoc-tao-ete",
+    "chemistry.thpt.cttq.anken"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.tach-nuoc-tao-ete",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Tách nước",
+   "name_vi": "Tách nước ancol tạo ete ở 140 độ C",
+   "name_en": "Dehydration of alcohols to ethers at 140 degrees Celsius",
+   "latex": "2ROH \\xrightarrow[140^oC]{H_2SO_4\\ dac} ROR + H_2O;\\quad n_{H_2O} = n_{ete} = \\dfrac{n_{ancol}}{2},\\ \\ m_{ancol} = m_{ete} + m_{H_2O}",
+   "vars": {
+    "n_{H_2O}": "số mol nước sinh ra",
+    "n_{ete}": "tổng số mol ete tạo thành",
+    "n_{ancol}": "số mol ancol đã phản ứng",
+    "m_{ancol}": "khối lượng ancol phản ứng",
+    "m_{ete}": "khối lượng ete thu được",
+    "m_{H_2O}": "khối lượng nước sinh ra",
+    "R": "gốc hiđrocacbon"
+   },
+   "units": {
+    "n_{H_2O}": "mol",
+    "n_{ete}": "mol",
+    "n_{ancol}": "mol",
+    "m_{ancol}": "g",
+    "m_{ete}": "g",
+    "m_{H_2O}": "g"
+   },
+   "conditions": "Ancol no đơn chức, H2SO4 đặc, nhiệt độ khoảng 140 °C",
+   "note": "Từ n ancol khác nhau tách nước thu được tối đa n(n+1)/2 ete. Nếu các ete có số mol bằng nhau thì các ancol cũng có số mol bằng nhau.",
+   "tags": [
+    "huu-co",
+    "ancol",
+    "tach-nuoc"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.tach-nuoc-tao-anken",
+    "chemistry.thpt.dong-phan.ete"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.ancol-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Ancol",
+   "name_vi": "Số đồng phân ancol no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated monohydric alcohols",
+   "latex": "S = 2^{\\,n-2}\\quad (1 < n < 6)",
+   "vars": {
+    "S": "số đồng phân ancol",
+    "n": "số nguyên tử cacbon của ancol CnH2n+2O"
+   },
+   "units": {},
+   "conditions": "Công thức đúng với n = 2, 3, 4, 5; từ n ≥ 6 phải đếm trực tiếp",
+   "note": "n = 2 cho 1 đồng phân, n = 3 cho 2, n = 4 cho 4, n = 5 cho 8 đồng phân ancol.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "ancol"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.ete",
+    "chemistry.thpt.cttq.ancol-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.andehit-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Anđehit",
+   "name_vi": "Số đồng phân anđehit no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated aldehydes",
+   "latex": "S = 2^{\\,n-3}\\quad (2 < n < 7)",
+   "vars": {
+    "S": "số đồng phân anđehit",
+    "n": "số nguyên tử cacbon của anđehit CnH2nO"
+   },
+   "units": {},
+   "conditions": "Công thức đúng với n = 3, 4, 5, 6",
+   "note": "n = 4 cho 2 đồng phân, n = 5 cho 4 đồng phân, n = 6 cho 8 đồng phân.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "andehit"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.xeton",
+    "chemistry.thpt.dong-phan.axit-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.ete",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Ete",
+   "name_vi": "Số đồng phân ete no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated ethers",
+   "latex": "S = \\dfrac{(n-1)(n-2)}{2}\\quad (2 < n < 6)",
+   "vars": {
+    "S": "số đồng phân ete",
+    "n": "số nguyên tử cacbon của ete CnH2n+2O"
+   },
+   "units": {},
+   "conditions": "Công thức đúng với n = 3, 4, 5",
+   "note": "n = 3 cho 1 ete, n = 4 cho 3 ete, n = 5 cho 6 ete. Tổng số đồng phân CnH2n+2O = số ancol + số ete.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "ete"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.ancol-no-don-chuc",
+    "chemistry.thpt.cttq.ete"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.ankan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Hiđrocacbon",
+   "name_vi": "Số đồng phân cấu tạo của ankan",
+   "name_en": "Number of structural isomers of alkanes",
+   "latex": "\\begin{array}{c|c|c|c|c|c|c|c|c|c|c} n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\\\ \\hline \\text{số đồng phân} & 1 & 1 & 1 & 2 & 3 & 5 & 9 & 18 & 35 & 75 \\end{array}",
+   "vars": {
+    "n": "số nguyên tử cacbon của ankan CnH2n+2"
+   },
+   "units": {},
+   "conditions": "Chỉ tính đồng phân cấu tạo mạch cacbon; ankan không có đồng phân hình học",
+   "note": "Không có công thức tổng quát đơn giản, cần học thuộc bảng. Từ C4 trở đi mới có đồng phân mạch nhánh.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "ankan"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.ancol-no-don-chuc",
+    "chemistry.thpt.cttq.ankan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.dan-xuat-benzen",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Hợp chất thơm",
+   "name_vi": "Số đồng phân vị trí của dẫn xuất hai nhóm thế trên vòng benzen",
+   "name_en": "Positional isomers of disubstituted benzenes",
+   "latex": "S = 3:\\ \\text{ortho (1,2)},\\ \\text{meta (1,3)},\\ \\text{para (1,4)}",
+   "vars": {
+    "S": "số đồng phân vị trí khi vòng benzen có hai nhóm thế"
+   },
+   "units": {},
+   "conditions": "Vòng benzen mang đúng hai nhóm thế; ba nhóm thế giống nhau cho 3 đồng phân (1,2,3 / 1,2,4 / 1,3,5)",
+   "note": "Xilen C8H10 có 3 đồng phân o-, m-, p-xilen, cộng thêm etylbenzen là 4 đồng phân thơm của C8H10.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "aren"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.aren"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.xeton",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Xeton",
+   "name_vi": "Số đồng phân xeton no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated ketones",
+   "latex": "S = \\dfrac{(n-2)(n-3)}{2}\\quad (3 < n < 7)",
+   "vars": {
+    "S": "số đồng phân xeton",
+    "n": "số nguyên tử cacbon của xeton CnH2nO"
+   },
+   "units": {},
+   "conditions": "Công thức đúng với n = 4, 5, 6",
+   "note": "n = 4 cho 1 xeton (axeton là n = 3, chỉ 1 chất), n = 5 cho 3, n = 6 cho 6 xeton.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "xeton"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.andehit-no-don-chuc",
+    "chemistry.thpt.cttq.xeton"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.hinh-hoc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Đồng phân hình học",
+   "name_vi": "Điều kiện có đồng phân hình học cis - trans",
+   "name_en": "Condition for cis-trans geometric isomerism",
+   "latex": "\\underset{b}{\\overset{a}{C}} = \\underset{d}{\\overset{c}{C}}\\ \\text{có đồng phân hình học} \\iff a \\ne b\\ \\text{và}\\ c \\ne d",
+   "vars": {
+    "a": "nhóm thế thứ nhất trên nguyên tử C thứ nhất",
+    "b": "nhóm thế thứ hai trên nguyên tử C thứ nhất",
+    "c": "nhóm thế thứ nhất trên nguyên tử C thứ hai",
+    "d": "nhóm thế thứ hai trên nguyên tử C thứ hai"
+   },
+   "units": {},
+   "conditions": "Phân tử phải có liên kết đôi C=C (hoặc vòng no) và mỗi nguyên tử C của liên kết đôi mang hai nhóm thế khác nhau",
+   "note": "Dạng cis có hai nhóm lớn cùng phía, dạng trans có hai nhóm lớn khác phía. But-2-en có đồng phân hình học, but-1-en thì không.",
+   "tags": [
+    "huu-co",
+    "dong-phan-hinh-hoc",
+    "anken"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.anken",
+    "chemistry.thpt.dong-phan.ankan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.axit-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Axit cacboxylic",
+   "name_vi": "Đốt cháy axit cacboxylic no, đơn chức, mạch hở",
+   "name_en": "Combustion of saturated monocarboxylic acids",
+   "latex": "n_{CO_2} = n_{H_2O};\\quad n_{O(axit)} = 2n_{axit} = 2n_{CO_2} + n_{H_2O} - 2n_{O_2}",
+   "vars": {
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{axit}": "số mol axit CnH2nO2 bị đốt",
+    "n_{O(axit)}": "số mol nguyên tử oxi trong axit",
+    "n_{O_2}": "số mol O2 đã dùng"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{axit}": "mol",
+    "n_{O(axit)}": "mol",
+    "n_{O_2}": "mol"
+   },
+   "conditions": "Axit no, đơn chức, mạch hở CnH2nO2; đốt cháy hoàn toàn",
+   "note": "Axit no đơn chức hở và este no đơn chức hở cùng công thức CnH2nO2 nên kết quả đốt cháy giống hệt nhau.",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "axit-cacboxylic"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.este-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.so-c-trung-binh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Giá trị trung bình",
+   "name_vi": "Số nguyên tử cacbon trung bình",
+   "name_en": "Average number of carbon atoms",
+   "latex": "\\overline{C} = \\dfrac{n_{CO_2}}{n_{hh}}",
+   "vars": {
+    "\\overline{C}": "số nguyên tử cacbon trung bình của hỗn hợp",
+    "n_{CO_2}": "tổng số mol CO2 thu được",
+    "n_{hh}": "tổng số mol hỗn hợp chất hữu cơ đem đốt"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{hh}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn hỗn hợp; luôn có C(nhỏ nhất) < C trung bình < C(lớn nhất)",
+   "note": "Với hai chất đồng đẳng kế tiếp, nếu C trung bình = 2,4 thì hai chất có 2 và 3 nguyên tử C.",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "gia-tri-trung-binh"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.so-h-trung-binh",
+    "chemistry.thpt.dai-luong-co-ban.khoi-luong-mol-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.so-h-trung-binh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Giá trị trung bình",
+   "name_vi": "Số nguyên tử hiđro trung bình",
+   "name_en": "Average number of hydrogen atoms",
+   "latex": "\\overline{H} = \\dfrac{2n_{H_2O}}{n_{hh}}",
+   "vars": {
+    "\\overline{H}": "số nguyên tử hiđro trung bình của hỗn hợp",
+    "n_{H_2O}": "tổng số mol H2O thu được",
+    "n_{hh}": "tổng số mol hỗn hợp chất hữu cơ đem đốt"
+   },
+   "units": {
+    "n_{H_2O}": "mol",
+    "n_{hh}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn hỗn hợp chất hữu cơ",
+   "note": "Nếu H trung bình < 4 thì trong hỗn hợp chắc chắn có chất có ít hơn 4 nguyên tử H (ví dụ C2H2).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "gia-tri-trung-binh"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.so-c-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.bao-toan-oxi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Lượng oxi",
+   "name_vi": "Bảo toàn nguyên tố oxi trong phản ứng cháy",
+   "name_en": "Oxygen atom balance in combustion",
+   "latex": "n_{O(X)} + 2n_{O_2} = 2n_{CO_2} + n_{H_2O}",
+   "vars": {
+    "n_{O(X)}": "số mol nguyên tử oxi có trong chất hữu cơ X",
+    "n_{O_2}": "số mol khí O2 đã dùng",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra"
+   },
+   "units": {
+    "n_{O(X)}": "mol",
+    "n_{O_2}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn hợp chất hữu cơ chứa C, H, O (và có thể có N)",
+   "note": "Đây là công cụ chủ lực để tìm số nhóm chức chứa oxi khi biết n(O2), n(CO2), n(H2O).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "bao-toan-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.so-mol-o2-tong-quat",
+    "chemistry.thpt.bao-toan.nguyen-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.so-mol-o2-tong-quat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Lượng oxi",
+   "name_vi": "Số mol O2 cần đốt cháy hợp chất hữu cơ chứa oxi",
+   "name_en": "Oxygen required to burn an oxygen-containing organic compound",
+   "latex": "n_{O_2} = n_{CO_2} + \\dfrac{n_{H_2O}}{2} - \\dfrac{n_{O(X)}}{2}",
+   "vars": {
+    "n_{O_2}": "số mol khí oxi cần dùng",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{O(X)}": "số mol nguyên tử oxi có sẵn trong X"
+   },
+   "units": {
+    "n_{O_2}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{O(X)}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn; X chứa C, H, O",
+   "note": "Kết hợp bảo toàn khối lượng: m(X) + 32n(O2) = 44n(CO2) + 18n(H2O) + 28n(N2).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "bao-toan-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.bao-toan-oxi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.axit-vao-cacbonat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Axit với muối cacbonat",
+   "name_vi": "Cho từ từ axit vào muối cacbonat và trường hợp đổ ngược lại",
+   "name_en": "Adding acid to a carbonate solution and the reverse order",
+   "latex": "\\begin{cases} \\text{nhỏ từ từ } H^+ \\text{ vào muối}: & n_{CO_2} = n_{H^+} - n_{CO_3^{2-}} \\\\ \\text{đổ từ từ muối vào } H^+: & n_{CO_2} = \\dfrac{(x+y)\\,n_{H^+}}{2x + y} \\end{cases}",
+   "vars": {
+    "n_{CO_2}": "số mol khí CO2 thoát ra",
+    "n_{H^+}": "số mol ion H+ của axit",
+    "n_{CO_3^{2-}}": "số mol ion cacbonat trong dung dịch muối",
+    "x": "số phần mol CO3^2- trong hỗn hợp muối",
+    "y": "số phần mol HCO3- trong hỗn hợp muối"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{H^+}": "mol",
+    "n_{CO_3^{2-}}": "mol"
+   },
+   "conditions": "Nhỏ từ từ axit: nấc H+ + CO3^2- → HCO3- xảy ra hết trước rồi mới tới H+ + HCO3- → CO2 + H2O, nên công thức chỉ đúng khi n(CO3^2-) ≤ n(H+) ≤ 2n(CO3^2-) + n(HCO3-). Đổ muối vào axit: hai muối phản ứng đồng thời theo đúng tỉ lệ x : y và axit phải hết",
+   "note": "Cùng lượng chất nhưng thứ tự đổ khác nhau cho lượng khí khác nhau; đổ muối vào axit luôn cho nhiều CO2 hơn. Nếu chỉ có muối cacbonat (y = 0) thì n(CO2) = n(H+)/2.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "ion",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.hco3-tac-dung-oh",
+    "chemistry.thpt.co2-kiem.so-mol-hai-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.san-pham-theo-t",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Biện luận sản phẩm",
+   "name_vi": "Biện luận sản phẩm theo tỉ lệ T",
+   "name_en": "Product determination from OH-/CO2 ratio",
+   "latex": "\\begin{cases} T \\le 1 & \\Rightarrow \\text{chỉ tạo } HCO_3^-,\\ CO_2 \\text{ có thể dư} \\\\ 1 < T < 2 & \\Rightarrow \\text{tạo đồng thời } HCO_3^- \\text{ và } CO_3^{2-} \\\\ T \\ge 2 & \\Rightarrow \\text{chỉ tạo } CO_3^{2-},\\ OH^- \\text{ có thể dư} \\end{cases}",
+   "vars": {
+    "T": "tỉ lệ n(OH-)/n(CO2)",
+    "HCO_3^-": "ion hiđrocacbonat (muối axit)",
+    "CO_3^{2-}": "ion cacbonat (muối trung hòa)"
+   },
+   "units": {},
+   "conditions": "Phản ứng xảy ra hoàn toàn trong dung dịch",
+   "note": "Mẹo nhớ: T nhỏ (thiếu kiềm) tạo muối axit, T lớn (dư kiềm) tạo muối trung hòa.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "bien-luan"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.ti-le-t",
+    "chemistry.thpt.co2-kiem.so-mol-hai-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.ti-le-t",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Biện luận sản phẩm",
+   "name_vi": "Tỉ lệ T = n(OH-)/n(CO2)",
+   "name_en": "Hydroxide to carbon dioxide mole ratio",
+   "latex": "T = \\dfrac{n_{OH^-}}{n_{CO_2}}",
+   "vars": {
+    "T": "tỉ lệ mol dùng để biện luận sản phẩm",
+    "n_{OH^-}": "tổng số mol ion hiđroxit trong dung dịch kiềm",
+    "n_{CO_2}": "số mol khí CO2 bị hấp thụ"
+   },
+   "units": {
+    "n_{OH^-}": "mol",
+    "n_{CO_2}": "mol"
+   },
+   "conditions": "Dung dịch kiềm mạnh (NaOH, KOH, Ca(OH)2, Ba(OH)2); tính n_OH- theo tổng của mọi bazơ",
+   "note": "Với Ca(OH)2 hay Ba(OH)2 thì n_OH- = 2·n_bazơ. Áp dụng tương tự cho SO2.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.san-pham-theo-t",
+    "chemistry.thpt.co2-kiem.so2-kiem"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.bai-toan-nguoc-hai-nghiem",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Bài toán ngược",
+   "name_vi": "Bài toán ngược: tính n(CO2) khi biết lượng kết tủa (hai nghiệm)",
+   "name_en": "Two solutions for CO2 amount from a given precipitate",
+   "latex": "\\begin{cases} n_{CO_2} = n_{\\downarrow} & \\text{(kiềm dư, kết tủa chưa bị hòa tan)} \\\\ n_{CO_2} = n_{OH^-} - n_{\\downarrow} & \\text{(CO}_2 \\text{ dư, kết tủa đã tan một phần)} \\end{cases}",
+   "vars": {
+    "n_{CO_2}": "số mol CO2 cần tìm",
+    "n_{\\downarrow}": "số mol kết tủa CaCO3 hoặc BaCO3 thu được",
+    "n_{OH^-}": "tổng số mol OH- ban đầu"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{\\downarrow}": "mol",
+    "n_{OH^-}": "mol"
+   },
+   "conditions": "n(kết tủa) < n(M2+); nếu n(kết tủa) = n(M2+) thì chỉ có một nghiệm nhỏ nhất và một khoảng nghiệm",
+   "note": "Bài yêu cầu 'giá trị lớn nhất của V(CO2)' thì lấy nghiệm thứ hai; 'nhỏ nhất' thì lấy nghiệm thứ nhất.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "hai-nghiem"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.ket-tua-caco3",
+    "chemistry.thpt.nhom-kem.bai-toan-nguoc-al3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.hon-hop-naoh-caoh2",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Hỗn hợp bazơ",
+   "name_vi": "CO2 tác dụng với hỗn hợp NaOH và Ca(OH)2",
+   "name_en": "CO2 absorbed by a mixture of sodium and calcium hydroxide",
+   "latex": "n_{OH^-} = n_{NaOH} + 2n_{Ca(OH)_2};\\quad n_{\\downarrow CaCO_3} = \\min\\left(n_{OH^-} - n_{CO_2},\\ n_{Ca^{2+}}\\right)",
+   "vars": {
+    "n_{OH^-}": "tổng số mol OH- của hỗn hợp bazơ",
+    "n_{NaOH}": "số mol NaOH",
+    "n_{Ca(OH)_2}": "số mol Ca(OH)2",
+    "n_{CO_2}": "số mol CO2 hấp thụ",
+    "n_{Ca^{2+}}": "số mol ion Ca2+",
+    "n_{\\downarrow CaCO_3}": "số mol kết tủa CaCO3"
+   },
+   "units": {
+    "n_{OH^-}": "mol",
+    "n_{NaOH}": "mol",
+    "n_{Ca(OH)_2}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{Ca^{2+}}": "mol",
+    "n_{\\downarrow CaCO_3}": "mol"
+   },
+   "conditions": "CO2 hấp thụ hết; nếu biểu thức trong min âm thì không có kết tủa",
+   "note": "Nên tư duy theo ion: trước hết tính n(CO3^2-), sau đó mới ghép với Ca2+.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "ion"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.ket-tua-caco3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.khoi-luong-dung-dich-thay-doi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Khối lượng dung dịch",
+   "name_vi": "Độ tăng (giảm) khối lượng dung dịch khi hấp thụ CO2",
+   "name_en": "Change in solution mass after CO2 absorption",
+   "latex": "\\Delta m_{dd} = m_{CO_2} - m_{\\downarrow} = 44n_{CO_2} - m_{\\downarrow}",
+   "vars": {
+    "\\Delta m_{dd}": "độ biến thiên khối lượng dung dịch (dương là tăng, âm là giảm)",
+    "m_{CO_2}": "khối lượng CO2 bị hấp thụ",
+    "m_{\\downarrow}": "khối lượng kết tủa tách ra",
+    "n_{CO_2}": "số mol CO2 bị hấp thụ"
+   },
+   "units": {
+    "\\Delta m_{dd}": "g",
+    "m_{CO_2}": "g",
+    "m_{\\downarrow}": "g",
+    "n_{CO_2}": "mol"
+   },
+   "conditions": "CO2 được hấp thụ hoàn toàn; kết tủa được tách khỏi dung dịch",
+   "note": "M(CO2) = 44 g/mol. Nếu m(kết tủa) > 44·n(CO2) thì khối lượng dung dịch giảm.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.ket-tua-caco3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.ket-tua-caco3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Kết tủa",
+   "name_vi": "Số mol kết tủa khi CO2 tác dụng với Ca(OH)2 hoặc Ba(OH)2",
+   "name_en": "Precipitate formed when CO2 reacts with calcium or barium hydroxide",
+   "latex": "n_{\\downarrow} = \\min\\left(n_{CO_3^{2-}},\\ n_{M^{2+}}\\right),\\quad n_{CO_3^{2-}} = n_{OH^-} - n_{CO_2}",
+   "vars": {
+    "n_{\\downarrow}": "số mol kết tủa CaCO3 hoặc BaCO3",
+    "n_{CO_3^{2-}}": "số mol ion cacbonat sinh ra",
+    "n_{M^{2+}}": "số mol ion Ca2+ hoặc Ba2+ trong dung dịch",
+    "n_{OH^-}": "số mol ion OH-",
+    "n_{CO_2}": "số mol CO2 bị hấp thụ"
+   },
+   "units": {
+    "n_{\\downarrow}": "mol",
+    "n_{CO_3^{2-}}": "mol",
+    "n_{M^{2+}}": "mol",
+    "n_{OH^-}": "mol",
+    "n_{CO_2}": "mol"
+   },
+   "conditions": "CO2 bị hấp thụ hết; nếu n(CO3^2-) tính ra âm thì không có kết tủa",
+   "note": "M(CaCO3) = 100 g/mol; M(BaCO3) = 197 g/mol.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "ket-tua"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.bai-toan-nguoc-hai-nghiem"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.hco3-tac-dung-oh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Muối axit với kiềm",
+   "name_vi": "Muối hiđrocacbonat tác dụng với dung dịch kiềm",
+   "name_en": "Hydrogencarbonate reacting with hydroxide",
+   "latex": "HCO_3^- + OH^- \\rightarrow CO_3^{2-} + H_2O;\\quad n_{CO_3^{2-}} = \\min\\left(n_{HCO_3^-},\\ n_{OH^-}\\right)",
+   "vars": {
+    "n_{HCO_3^-}": "số mol ion hiđrocacbonat",
+    "n_{OH^-}": "số mol ion hiđroxit",
+    "n_{CO_3^{2-}}": "số mol ion cacbonat tạo thành"
+   },
+   "units": {
+    "n_{HCO_3^-}": "mol",
+    "n_{OH^-}": "mol",
+    "n_{CO_3^{2-}}": "mol"
+   },
+   "conditions": "Phản ứng xảy ra hoàn toàn theo tỉ lệ mol 1 : 1",
+   "note": "Nếu dung dịch có thêm Ca2+ hoặc Ba2+ thì CO3^2- sinh ra sẽ tạo kết tủa ngay.",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "ion"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.so-mol-hai-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.nhiet-phan-hidrocacbonat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Nhiệt phân muối",
+   "name_vi": "Nhiệt phân muối hiđrocacbonat và cacbonat",
+   "name_en": "Thermal decomposition of hydrogencarbonates and carbonates",
+   "latex": "2M(HCO_3)_n \\xrightarrow{t^o} M_2(CO_3)_n + nCO_2 + nH_2O;\\quad CaCO_3 \\xrightarrow{t^o} CaO + CO_2",
+   "vars": {
+    "M": "kim loại hóa trị n",
+    "n": "hóa trị của kim loại M"
+   },
+   "units": {},
+   "conditions": "Muối cacbonat của kim loại kiềm (Na2CO3, K2CO3) bền, không bị nhiệt phân",
+   "note": "Độ giảm khối lượng khi nhiệt phân M(HCO3)n chính là khối lượng CO2 và H2O thoát ra.",
+   "tags": [
+    "vo-co",
+    "nhiet-phan",
+    "cacbonat"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.hco3-tac-dung-oh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.so2-kiem",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "SO2 với kiềm",
+   "name_vi": "SO2 tác dụng với dung dịch kiềm",
+   "name_en": "Sulfur dioxide reacting with alkali solution",
+   "latex": "T = \\dfrac{n_{OH^-}}{n_{SO_2}};\\quad n_{SO_3^{2-}} = n_{OH^-} - n_{SO_2},\\ \\ n_{HSO_3^-} = 2n_{SO_2} - n_{OH^-}",
+   "vars": {
+    "T": "tỉ lệ mol OH- trên SO2",
+    "n_{SO_2}": "số mol SO2 bị hấp thụ",
+    "n_{SO_3^{2-}}": "số mol muối sunfit",
+    "n_{HSO_3^-}": "số mol muối hiđrosunfit",
+    "n_{OH^-}": "số mol ion OH-"
+   },
+   "units": {
+    "n_{SO_2}": "mol",
+    "n_{SO_3^{2-}}": "mol",
+    "n_{HSO_3^-}": "mol",
+    "n_{OH^-}": "mol"
+   },
+   "conditions": "Công thức tính hai muối chỉ dùng khi 1 < T < 2",
+   "note": "Biện luận hoàn toàn tương tự CO2: T ≤ 1 chỉ tạo HSO3-, T ≥ 2 chỉ tạo SO3^2-.",
+   "tags": [
+    "vo-co",
+    "so2",
+    "co2-kiem"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.so-mol-hai-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.co2-kiem.so-mol-hai-muoi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "CO2 tác dụng với dung dịch kiềm",
+   "subtopic": "Tính số mol muối",
+   "name_vi": "Số mol muối trung hòa và muối axit tạo thành",
+   "name_en": "Moles of carbonate and hydrogencarbonate formed",
+   "latex": "\\begin{cases} n_{CO_3^{2-}} = n_{OH^-} - n_{CO_2} \\\\ n_{HCO_3^-} = 2n_{CO_2} - n_{OH^-} \\end{cases}",
+   "vars": {
+    "n_{CO_3^{2-}}": "số mol muối cacbonat (muối trung hòa)",
+    "n_{HCO_3^-}": "số mol muối hiđrocacbonat (muối axit)",
+    "n_{OH^-}": "số mol ion OH-",
+    "n_{CO_2}": "số mol CO2 bị hấp thụ hết"
+   },
+   "units": {
+    "n_{CO_3^{2-}}": "mol",
+    "n_{HCO_3^-}": "mol",
+    "n_{OH^-}": "mol",
+    "n_{CO_2}": "mol"
+   },
+   "conditions": "Chỉ dùng khi 1 < T < 2, tức là tạo đồng thời hai muối và cả CO2 lẫn OH- đều hết",
+   "note": "Kiểm tra lại: n(CO3^2-) + n(HCO3^-) = n(CO2) và 2n(CO3^2-) + n(HCO3^-) = n(OH-).",
+   "tags": [
+    "vo-co",
+    "co2-kiem",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.co2-kiem.san-pham-theo-t",
+    "chemistry.thpt.co2-kiem.ket-tua-caco3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.axit-cacboxylic",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Axit cacboxylic",
+   "name_vi": "Công thức tổng quát của axit cacboxylic no, đơn chức, mạch hở",
+   "name_en": "General formula of saturated monocarboxylic acids",
+   "latex": "C_nH_{2n}O_2 \\equiv C_{n-1}H_{2n-1}COOH\\ (n \\ge 1)",
+   "vars": {
+    "n": "số nguyên tử cacbon trong phân tử axit"
+   },
+   "units": {},
+   "conditions": "n ≥ 1; mạch hở, no, chứa đúng một nhóm -COOH",
+   "note": "M = 14n + 32. HCOOH (46), CH3COOH (60), C2H5COOH (74). Axit no hai chức mạch hở: CnH2n-2O4.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "axit-cacboxylic"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.este-no-don-chuc",
+    "chemistry.thpt.dot-chay.axit-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dung-dich.khoi-luong-muoi-tu-ion",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Dung dịch chất điện li",
+   "subtopic": "Cô cạn dung dịch",
+   "name_vi": "Khối lượng muối khan tính theo khối lượng các ion",
+   "name_en": "Mass of dry salts from the masses of ions",
+   "latex": "m_{muoi\\ khan} = m_{cation} + m_{anion}",
+   "vars": {
+    "m_{muoi\\ khan}": "khối lượng muối khan thu được khi cô cạn",
+    "m_{cation}": "tổng khối lượng các ion dương",
+    "m_{anion}": "tổng khối lượng các ion âm"
+   },
+   "units": {
+    "m_{muoi\\ khan}": "g",
+    "m_{cation}": "g",
+    "m_{anion}": "g"
+   },
+   "conditions": "Muối không bị phân hủy khi cô cạn; dung dịch không chứa ion HCO3- (sẽ phân hủy khi đun)",
+   "note": "Nếu dung dịch chứa HCO3-, khi cô cạn: 2HCO3- → CO3^2- + CO2 + H2O.",
+   "tags": [
+    "vo-co",
+    "dung-dich",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.bao-toan-dien-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.khoi-luong-kim-loai-sau-khu",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Khử oxit kim loại",
+   "subtopic": "Bảo toàn khối lượng",
+   "name_vi": "Khối lượng kim loại thu được sau khi khử oxit",
+   "name_en": "Mass of metal obtained after oxide reduction",
+   "latex": "m_{KL} = m_{oxit} - 16n_{O}",
+   "vars": {
+    "m_{KL}": "khối lượng kim loại thu được",
+    "m_{oxit}": "khối lượng hỗn hợp oxit ban đầu",
+    "n_{O}": "số mol nguyên tử oxi bị khử"
+   },
+   "units": {
+    "m_{KL}": "g",
+    "m_{oxit}": "g",
+    "n_{O}": "mol"
+   },
+   "conditions": "Oxit bị khử hoàn toàn thành kim loại; nếu khử không hoàn toàn thì m(rắn) = m(oxit) − 16·n(O bị lấy)",
+   "note": "M(O) = 16 g/mol. Đây chính là biểu thức của định luật bảo toàn khối lượng.",
+   "tags": [
+    "vo-co",
+    "khu-oxit",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.khu-oxit-bang-co"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.khu-oxit-bang-co",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Khử oxit kim loại",
+   "subtopic": "Chất khử CO",
+   "name_vi": "Khử oxit kim loại bằng CO",
+   "name_en": "Reduction of metal oxides by carbon monoxide",
+   "latex": "n_{CO} = n_{CO_2} = n_{O(bi\\ lay)};\\quad m_{chat\\ ran\\ giam} = 16n_{O}",
+   "vars": {
+    "n_{CO}": "số mol CO đã phản ứng",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{O(bi\\ lay)}": "số mol nguyên tử oxi bị tách khỏi oxit",
+    "n_{O}": "số mol nguyên tử oxi bị tách",
+    "m_{chat\\ ran\\ giam}": "độ giảm khối lượng chất rắn"
+   },
+   "units": {
+    "n_{CO}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{O(bi\\ lay)}": "mol",
+    "n_{O}": "mol",
+    "m_{chat\\ ran\\ giam}": "g"
+   },
+   "conditions": "CO chỉ khử được oxit của kim loại đứng sau Al trong dãy hoạt động (ZnO, FeO, Fe2O3, CuO...)",
+   "note": "Khí sau phản ứng hấp thụ vào Ca(OH)2 dư cho n(CaCO3) = n(CO2) = n(O bị lấy).",
+   "tags": [
+    "vo-co",
+    "khu-oxit",
+    "bao-toan-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.khu-oxit-bang-h2",
+    "chemistry.thpt.oxit-axit.khoi-luong-kim-loai-sau-khu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.khu-oxit-bang-h2",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Khử oxit kim loại",
+   "subtopic": "Chất khử H2",
+   "name_vi": "Khử oxit kim loại bằng H2",
+   "name_en": "Reduction of metal oxides by hydrogen",
+   "latex": "n_{H_2} = n_{H_2O} = n_{O(bi\\ lay)}",
+   "vars": {
+    "n_{H_2}": "số mol H2 đã phản ứng",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{O(bi\\ lay)}": "số mol nguyên tử oxi bị tách khỏi oxit"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{O(bi\\ lay)}": "mol"
+   },
+   "conditions": "H2 khử oxit của kim loại đứng sau Al ở nhiệt độ cao",
+   "note": "Hơi nước sinh ra có thể hấp thụ bằng H2SO4 đặc hoặc P2O5 để cân khối lượng.",
+   "tags": [
+    "vo-co",
+    "khu-oxit",
+    "bao-toan-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.khu-oxit-bang-co"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-h2so4-dac.so-mol-electron",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với H2SO4 đặc nóng",
+   "subtopic": "Bảo toàn electron",
+   "name_vi": "Số mol electron trao đổi theo sản phẩm khử của H2SO4 đặc",
+   "name_en": "Electrons transferred from concentrated sulfuric acid reduction products",
+   "latex": "n_e = 2n_{SO_2} + 6n_{S} + 8n_{H_2S}",
+   "vars": {
+    "n_e": "tổng số mol electron kim loại nhường",
+    "n_{SO_2}": "số mol khí SO2",
+    "n_{S}": "số mol lưu huỳnh đơn chất",
+    "n_{H_2S}": "số mol khí H2S"
+   },
+   "units": {
+    "n_e": "mol",
+    "n_{SO_2}": "mol",
+    "n_{S}": "mol",
+    "n_{H_2S}": "mol"
+   },
+   "conditions": "H2SO4 đặc, nóng; kim loại tan hết",
+   "note": "Hệ số là độ giảm số oxi hóa của S từ +6: SO2 (2), S (6), H2S (8).",
+   "tags": [
+    "vo-co",
+    "h2so4-dac",
+    "bao-toan-electron"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-h2so4-dac.so-mol-axit",
+    "chemistry.thpt.kim-loai-h2so4-dac.khoi-luong-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-h2so4-dac.khoi-luong-muoi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với H2SO4 đặc nóng",
+   "subtopic": "Khối lượng muối",
+   "name_vi": "Khối lượng muối sunfat theo số mol electron trao đổi",
+   "name_en": "Mass of sulfate salts from electrons transferred",
+   "latex": "m_{muoi} = m_{KL} + 96 \\cdot \\dfrac{n_e}{2} = m_{KL} + 48n_e",
+   "vars": {
+    "m_{muoi}": "khối lượng muối sunfat khan",
+    "m_{KL}": "khối lượng kim loại phản ứng",
+    "n_e": "tổng số mol electron kim loại nhường"
+   },
+   "units": {
+    "m_{muoi}": "g",
+    "m_{KL}": "g",
+    "n_e": "mol"
+   },
+   "conditions": "Kim loại tan hết trong H2SO4 đặc nóng",
+   "note": "M(SO4^2-) = 96 g/mol; mỗi gốc SO4^2- ứng với 2 electron. Ví dụ chỉ tạo SO2: m(muối) = m(KL) + 96·n(SO2).",
+   "tags": [
+    "vo-co",
+    "h2so4-dac",
+    "khoi-luong-muoi"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-nitrat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-h2so4-dac.so-mol-axit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với H2SO4 đặc nóng",
+   "subtopic": "Lượng axit",
+   "name_vi": "Số mol H2SO4 đặc phản ứng",
+   "name_en": "Moles of concentrated sulfuric acid consumed",
+   "latex": "n_{H_2SO_4} = 2n_{SO_2} + 4n_{S} + 5n_{H_2S} = \\dfrac{n_e}{2} + n_{S(spk)}",
+   "vars": {
+    "n_{H_2SO_4}": "số mol H2SO4 đã phản ứng",
+    "n_{SO_2}": "số mol khí SO2",
+    "n_{S}": "số mol S đơn chất",
+    "n_{H_2S}": "số mol khí H2S",
+    "n_e": "tổng số mol electron trao đổi",
+    "n_{S(spk)}": "tổng số mol nguyên tử S trong các sản phẩm khử"
+   },
+   "units": {
+    "n_{H_2SO_4}": "mol",
+    "n_{SO_2}": "mol",
+    "n_{S}": "mol",
+    "n_{H_2S}": "mol",
+    "n_e": "mol",
+    "n_{S(spk)}": "mol"
+   },
+   "conditions": "H2SO4 đặc nóng, kim loại tan hết, không tính phần axit dư",
+   "note": "Một nửa số mol electron chính là số mol gốc SO4^2- đi vào muối.",
+   "tags": [
+    "vo-co",
+    "h2so4-dac",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-h2so4-dac.so-mol-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với HNO3",
+   "subtopic": "Bảo toàn electron",
+   "name_vi": "Số mol electron trao đổi theo sản phẩm khử của HNO3",
+   "name_en": "Electrons transferred from nitric acid reduction products",
+   "latex": "n_e = n_{NO_2} + 3n_{NO} + 8n_{N_2O} + 10n_{N_2} + 8n_{NH_4^+}",
+   "vars": {
+    "n_e": "tổng số mol electron kim loại nhường",
+    "n_{NO_2}": "số mol khí NO2",
+    "n_{NO}": "số mol khí NO",
+    "n_{N_2O}": "số mol khí N2O",
+    "n_{N_2}": "số mol khí N2",
+    "n_{NH_4^+}": "số mol ion amoni (trong NH4NO3)"
+   },
+   "units": {
+    "n_e": "mol",
+    "n_{NO_2}": "mol",
+    "n_{NO}": "mol",
+    "n_{N_2O}": "mol",
+    "n_{N_2}": "mol",
+    "n_{NH_4^+}": "mol"
+   },
+   "conditions": "Kim loại tan hết trong HNO3; các sản phẩm khử được xác định đầy đủ",
+   "note": "Hệ số chính là độ giảm số oxi hóa của N từ +5: NO2 (1), NO (3), N2O (8), N2 (10), NH4+ (8).",
+   "tags": [
+    "vo-co",
+    "hno3",
+    "bao-toan-electron"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.so-mol-hno3-phan-ung",
+    "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-nitrat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-co-nh4no3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với HNO3",
+   "subtopic": "Khối lượng muối",
+   "name_vi": "Khối lượng muối khi có tạo NH4NO3",
+   "name_en": "Mass of salts when ammonium nitrate is also formed",
+   "latex": "m_{muoi} = m_{KL} + 62n_e + 80n_{NH_4NO_3}",
+   "vars": {
+    "m_{muoi}": "tổng khối lượng muối khan (muối nitrat kim loại và NH4NO3)",
+    "m_{KL}": "khối lượng kim loại phản ứng",
+    "n_e": "tổng số mol electron kim loại nhường (đã kể phần tạo NH4+)",
+    "n_{NH_4NO_3}": "số mol NH4NO3 sinh ra"
+   },
+   "units": {
+    "m_{muoi}": "g",
+    "m_{KL}": "g",
+    "n_e": "mol",
+    "n_{NH_4NO_3}": "mol"
+   },
+   "conditions": "Kim loại mạnh (Mg, Al, Zn) tác dụng với HNO3 loãng, dung dịch sau phản ứng có NH4NO3",
+   "note": "M(NH4NO3) = 80 g/mol. Dấu hiệu có NH4NO3: n(e) tính theo khí nhỏ hơn n(e) tính theo kim loại.",
+   "tags": [
+    "vo-co",
+    "hno3",
+    "nh4no3"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.so-mol-nh4no3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-nitrat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với HNO3",
+   "subtopic": "Khối lượng muối",
+   "name_vi": "Khối lượng muối nitrat theo số mol electron trao đổi",
+   "name_en": "Mass of nitrate salts from electrons transferred",
+   "latex": "m_{muoi} = m_{KL} + 62n_e",
+   "vars": {
+    "m_{muoi}": "khối lượng muối nitrat khan thu được",
+    "m_{KL}": "khối lượng kim loại (hoặc hỗn hợp kim loại) đã phản ứng",
+    "n_e": "tổng số mol electron kim loại nhường"
+   },
+   "units": {
+    "m_{muoi}": "g",
+    "m_{KL}": "g",
+    "n_e": "mol"
+   },
+   "conditions": "Kim loại tan hết; KHÔNG có sản phẩm khử NH4NO3",
+   "note": "M(NO3-) = 62 g/mol. Số mol NO3- trong muối đúng bằng số mol electron trao đổi.",
+   "tags": [
+    "vo-co",
+    "hno3",
+    "khoi-luong-muoi"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-co-nh4no3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-hno3.so-mol-hno3-phan-ung",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với HNO3",
+   "subtopic": "Lượng axit",
+   "name_vi": "Số mol HNO3 phản ứng",
+   "name_en": "Moles of nitric acid consumed",
+   "latex": "n_{HNO_3} = 2n_{NO_2} + 4n_{NO} + 10n_{N_2O} + 12n_{N_2} + 10n_{NH_4NO_3}",
+   "vars": {
+    "n_{HNO_3}": "số mol HNO3 đã phản ứng",
+    "n_{NO_2}": "số mol khí NO2",
+    "n_{NO}": "số mol khí NO",
+    "n_{N_2O}": "số mol khí N2O",
+    "n_{N_2}": "số mol khí N2",
+    "n_{NH_4NO_3}": "số mol amoni nitrat sinh ra trong dung dịch"
+   },
+   "units": {
+    "n_{HNO_3}": "mol",
+    "n_{NO_2}": "mol",
+    "n_{NO}": "mol",
+    "n_{N_2O}": "mol",
+    "n_{N_2}": "mol",
+    "n_{NH_4NO_3}": "mol"
+   },
+   "conditions": "Kim loại tan hết, HNO3 chỉ đóng vai trò chất oxi hóa và tạo muối nitrat",
+   "note": "Cách nhớ: n(HNO3) = n(e) + n(N trong sản phẩm khử). Ví dụ NO: 3 + 1 = 4.",
+   "tags": [
+    "vo-co",
+    "hno3",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-hno3.ion-h-va-no3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với HNO3",
+   "subtopic": "Môi trường H+ và NO3-",
+   "name_vi": "Kim loại tác dụng với dung dịch chứa đồng thời H+ và NO3-",
+   "name_en": "Metals in a solution containing both hydrogen and nitrate ions",
+   "latex": "4H^+ + NO_3^- + 3e \\rightarrow NO + 2H_2O;\\quad n_{NO} = \\min\\left(\\dfrac{n_{H^+}}{4},\\ n_{NO_3^-},\\ \\dfrac{n_e}{3}\\right)",
+   "vars": {
+    "n_{H^+}": "số mol ion H+ (từ HCl, H2SO4 loãng hoặc HNO3)",
+    "n_{NO_3^-}": "số mol ion NO3- (từ muối nitrat hoặc HNO3)",
+    "n_e": "số mol electron kim loại nhường",
+    "n_{NO}": "số mol khí NO sinh ra"
+   },
+   "units": {
+    "n_{H^+}": "mol",
+    "n_{NO_3^-}": "mol",
+    "n_e": "mol",
+    "n_{NO}": "mol"
+   },
+   "conditions": "NO là sản phẩm khử duy nhất; dung dịch chứa đồng thời H+ và NO3- có tính oxi hóa mạnh như HNO3 loãng",
+   "note": "Cu không tan trong dung dịch HCl loãng nhưng tan trong hỗn hợp HCl và NaNO3. Nếu sau phản ứng H+ vẫn dư thì Fe3+ không bị khử tiếp thành Fe2+.",
+   "tags": [
+    "vo-co",
+    "hno3",
+    "bao-toan-electron"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi",
+    "chemistry.thpt.kim-loai-hno3.so-mol-hno3-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-hno3.so-mol-nh4no3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với HNO3",
+   "subtopic": "Sản phẩm khử ẩn",
+   "name_vi": "Số mol NH4NO3 sinh ra",
+   "name_en": "Moles of ammonium nitrate produced",
+   "latex": "n_{NH_4NO_3} = \\dfrac{n_e^{(KL)} - \\left(n_{NO_2} + 3n_{NO} + 8n_{N_2O} + 10n_{N_2}\\right)}{8}",
+   "vars": {
+    "n_{NH_4NO_3}": "số mol NH4NO3 sinh ra",
+    "n_e^{(KL)}": "số mol electron tính theo kim loại (tổng hóa trị nhân số mol)",
+    "n_{NO_2}": "số mol NO2",
+    "n_{NO}": "số mol NO",
+    "n_{N_2O}": "số mol N2O",
+    "n_{N_2}": "số mol N2"
+   },
+   "units": {
+    "n_{NH_4NO_3}": "mol",
+    "n_e^{(KL)}": "mol",
+    "n_{NO_2}": "mol",
+    "n_{NO}": "mol",
+    "n_{N_2O}": "mol",
+    "n_{N_2}": "mol"
+   },
+   "conditions": "Kim loại tan hết; kết quả phải không âm, nếu bằng 0 thì không tạo NH4NO3",
+   "note": "N+5 + 8e → N-3, nên mỗi mol NH4+ nhận 8 mol electron.",
+   "tags": [
+    "vo-co",
+    "hno3",
+    "nh4no3"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.khoi-luong-muoi-co-nh4no3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-axit-loang.hcl-khoi-luong-muoi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với axit loãng",
+   "subtopic": "Axit clohiđric",
+   "name_vi": "Kim loại tác dụng với HCl: số mol axit và khối lượng muối",
+   "name_en": "Metals with hydrochloric acid: acid moles and salt mass",
+   "latex": "n_{HCl} = 2n_{H_2};\\quad m_{muoi} = m_{KL} + 71n_{H_2}",
+   "vars": {
+    "n_{HCl}": "số mol HCl đã phản ứng",
+    "n_{H_2}": "số mol khí H2 thoát ra",
+    "m_{muoi}": "khối lượng muối clorua khan",
+    "m_{KL}": "khối lượng kim loại phản ứng"
+   },
+   "units": {
+    "n_{HCl}": "mol",
+    "n_{H_2}": "mol",
+    "m_{muoi}": "g",
+    "m_{KL}": "g"
+   },
+   "conditions": "Kim loại đứng trước H trong dãy hoạt động hóa học; kim loại tan hết; không có phản ứng phụ",
+   "note": "71 = 2 × 35,5 (khối lượng 2 gốc Cl- ứng với 1 mol H2).",
+   "tags": [
+    "vo-co",
+    "axit-loang",
+    "khoi-luong-muoi"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-axit-loang.h2so4-loang-khoi-luong-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-axit-loang.h2so4-loang-khoi-luong-muoi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với axit loãng",
+   "subtopic": "Axit sunfuric loãng",
+   "name_vi": "Kim loại tác dụng với H2SO4 loãng: số mol axit và khối lượng muối",
+   "name_en": "Metals with dilute sulfuric acid: acid moles and salt mass",
+   "latex": "n_{H_2SO_4} = n_{H_2};\\quad m_{muoi} = m_{KL} + 96n_{H_2}",
+   "vars": {
+    "n_{H_2SO_4}": "số mol H2SO4 loãng phản ứng",
+    "n_{H_2}": "số mol khí H2 thoát ra",
+    "m_{muoi}": "khối lượng muối sunfat khan",
+    "m_{KL}": "khối lượng kim loại phản ứng"
+   },
+   "units": {
+    "n_{H_2SO_4}": "mol",
+    "n_{H_2}": "mol",
+    "m_{muoi}": "g",
+    "m_{KL}": "g"
+   },
+   "conditions": "Kim loại đứng trước H; H2SO4 loãng (không thể hiện tính oxi hóa của S+6)",
+   "note": "Fe tạo muối Fe(II) với axit loãng, nhưng tạo muối Fe(III) với HNO3 hoặc H2SO4 đặc nóng dư.",
+   "tags": [
+    "vo-co",
+    "axit-loang",
+    "khoi-luong-muoi"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-axit-loang.hcl-khoi-luong-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-axit-loang.hon-hop-hai-axit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Kim loại tác dụng với axit loãng",
+   "subtopic": "Hỗn hợp axit",
+   "name_vi": "Kim loại tác dụng với hỗn hợp HCl và H2SO4 loãng",
+   "name_en": "Metals with a mixture of hydrochloric and dilute sulfuric acid",
+   "latex": "m_{muoi} = m_{KL} + 35{,}5n_{HCl} + 96n_{H_2SO_4};\\quad n_{H_2} = \\dfrac{n_{HCl} + 2n_{H_2SO_4}}{2}",
+   "vars": {
+    "m_{muoi}": "tổng khối lượng muối khan",
+    "m_{KL}": "khối lượng kim loại phản ứng",
+    "n_{HCl}": "số mol HCl phản ứng",
+    "n_{H_2SO_4}": "số mol H2SO4 phản ứng",
+    "n_{H_2}": "số mol khí H2 thoát ra"
+   },
+   "units": {
+    "m_{muoi}": "g",
+    "m_{KL}": "g",
+    "n_{HCl}": "mol",
+    "n_{H_2SO_4}": "mol",
+    "n_{H_2}": "mol"
+   },
+   "conditions": "Cả hai axit phản ứng hết; kim loại tan hết",
+   "note": "Tổng quát: n(H+) = 2n(H2); khối lượng muối = m(kim loại) + m(gốc axit).",
+   "tags": [
+    "vo-co",
+    "axit-loang",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-axit-loang.hcl-khoi-luong-muoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.huu-co.khoi-luong-theo-san-pham-chay",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Lập công thức phân tử hợp chất hữu cơ",
+   "subtopic": "Từ sản phẩm cháy",
+   "name_vi": "Khối lượng hợp chất hữu cơ tính theo sản phẩm cháy",
+   "name_en": "Mass of an organic compound from its combustion products",
+   "latex": "m_X = 12n_{CO_2} + 2n_{H_2O} + 16n_{O(X)} + 28n_{N_2}",
+   "vars": {
+    "m_X": "khối lượng hợp chất hữu cơ X đem đốt",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{O(X)}": "số mol nguyên tử oxi có trong X",
+    "n_{N_2}": "số mol N2 sinh ra"
+   },
+   "units": {
+    "m_X": "g",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{O(X)}": "mol",
+    "n_{N_2}": "mol"
+   },
+   "conditions": "Đốt cháy hoàn toàn X (chứa C, H và có thể có O, N) trong oxi dư",
+   "note": "Suy từ m(X) = m(C) + m(H) + m(O) + m(N), trong đó m(N) = 14·2n(N2) = 28n(N2). Kết hợp bảo toàn khối lượng: m(X) + 32n(O2) = 44n(CO2) + 18n(H2O) + 28n(N2).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.lap-ctpt-tu-san-pham-chay",
+    "chemistry.thpt.dot-chay.bao-toan-oxi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.huu-co.do-bat-bao-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Lập công thức phân tử hợp chất hữu cơ",
+   "subtopic": "Độ bất bão hòa",
+   "name_vi": "Độ bất bão hòa của phân tử hợp chất hữu cơ",
+   "name_en": "Degree of unsaturation",
+   "latex": "k = \\dfrac{2C + 2 + N - H - X}{2}",
+   "vars": {
+    "k": "độ bất bão hòa, bằng tổng số liên kết pi và số vòng",
+    "C": "số nguyên tử cacbon (hóa trị IV)",
+    "N": "số nguyên tử nitơ (hóa trị III)",
+    "H": "số nguyên tử hiđro",
+    "X": "số nguyên tử halogen (F, Cl, Br, I)"
+   },
+   "units": {},
+   "conditions": "k phải là số nguyên không âm; nguyên tử oxi và lưu huỳnh (hóa trị II) không ảnh hưởng đến k",
+   "note": "k = 0: no mạch hở; k = 1: 1 liên kết đôi hoặc 1 vòng; k = 4 với vòng benzen. Đây là điều kiện kiểm tra tính hợp lí của công thức phân tử.",
+   "tags": [
+    "huu-co",
+    "do-bat-bao-hoa",
+    "lap-cong-thuc"
+   ],
+   "related": [
+    "chemistry.thpt.huu-co.lap-ctpt-tu-phan-tram",
+    "chemistry.thpt.cttq.aren",
+    "chemistry.thpt.bao-toan.bao-toan-lien-ket-pi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.oxit-tac-dung-h2so4",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Oxit kim loại tác dụng với axit",
+   "subtopic": "Với H2SO4 loãng",
+   "name_vi": "Oxit kim loại tác dụng với H2SO4 loãng",
+   "name_en": "Metal oxides reacting with dilute sulfuric acid",
+   "latex": "n_{H_2SO_4} = n_{O};\\quad m_{muoi} = m_{oxit} + 80n_{O}",
+   "vars": {
+    "n_{H_2SO_4}": "số mol H2SO4 loãng phản ứng",
+    "n_{O}": "số mol nguyên tử oxi trong oxit",
+    "m_{muoi}": "khối lượng muối sunfat khan",
+    "m_{oxit}": "khối lượng oxit ban đầu"
+   },
+   "units": {
+    "n_{H_2SO_4}": "mol",
+    "n_{O}": "mol",
+    "m_{muoi}": "g",
+    "m_{oxit}": "g"
+   },
+   "conditions": "Oxit bazơ tan hết; H2SO4 loãng",
+   "note": "80 = 96 − 16 (thay 1 O bằng 1 gốc SO4^2-).",
+   "tags": [
+    "vo-co",
+    "oxit",
+    "khoi-luong-muoi"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.oxit-tac-dung-hcl"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.oxit-tac-dung-hcl",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Oxit kim loại tác dụng với axit",
+   "subtopic": "Với HCl",
+   "name_vi": "Oxit kim loại tác dụng với HCl",
+   "name_en": "Metal oxides reacting with hydrochloric acid",
+   "latex": "n_{HCl} = 2n_{O};\\quad m_{muoi} = m_{oxit} + 55n_{O}",
+   "vars": {
+    "n_{HCl}": "số mol HCl phản ứng",
+    "n_{O}": "số mol nguyên tử oxi trong oxit",
+    "m_{muoi}": "khối lượng muối clorua khan",
+    "m_{oxit}": "khối lượng oxit ban đầu"
+   },
+   "units": {
+    "n_{HCl}": "mol",
+    "n_{O}": "mol",
+    "m_{muoi}": "g",
+    "m_{oxit}": "g"
+   },
+   "conditions": "Oxit bazơ tan hết trong axit; không có phản ứng oxi hóa khử",
+   "note": "55 = 2·35,5 − 16 (thay 1 O bằng 2 Cl). Cũng có thể viết n(H2O) = n(O).",
+   "tags": [
+    "vo-co",
+    "oxit",
+    "khoi-luong-muoi"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.oxit-tac-dung-h2so4"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.cong-br2",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng cộng",
+   "name_vi": "Phản ứng cộng brom vào liên kết pi",
+   "name_en": "Bromine addition to pi bonds",
+   "latex": "n_{Br_2} = n_{\\pi} = k \\cdot n_X",
+   "vars": {
+    "n_{Br_2}": "số mol brom đã phản ứng cộng",
+    "n_{\\pi}": "số mol liên kết pi ở gốc hiđrocacbon",
+    "k": "số liên kết pi cộng được brom trong một phân tử",
+    "n_X": "số mol hợp chất không no"
+   },
+   "units": {
+    "n_{Br_2}": "mol",
+    "n_{\\pi}": "mol",
+    "n_X": "mol"
+   },
+   "conditions": "Brom trong dung dịch (nước brom hoặc CCl4); mỗi liên kết pi C=C hoặc C≡C cộng 1 phân tử Br2",
+   "note": "Anken cộng 1 Br2, ankin và ankađien cộng 2 Br2. Anđehit làm mất màu nước brom do bị oxi hóa (RCHO + Br2 + H2O → RCOOH + 2HBr).",
+   "tags": [
+    "huu-co",
+    "phan-ung-cong",
+    "brom"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.so-mol-lien-ket-pi",
+    "chemistry.thpt.phan-ung.cong-h2"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.cong-h2",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng cộng",
+   "name_vi": "Phản ứng cộng hiđro và độ giảm số mol khí",
+   "name_en": "Hydrogenation and the decrease in gas moles",
+   "latex": "n_{H_2\\ pu} = n_{truoc} - n_{sau};\\quad m_{truoc} = m_{sau} \\Rightarrow n_{truoc}\\overline{M}_{truoc} = n_{sau}\\overline{M}_{sau}",
+   "vars": {
+    "n_{H_2\\ pu}": "số mol H2 đã phản ứng",
+    "n_{truoc}": "tổng số mol hỗn hợp khí trước phản ứng",
+    "n_{sau}": "tổng số mol hỗn hợp khí sau phản ứng",
+    "m_{truoc}": "khối lượng hỗn hợp trước phản ứng",
+    "m_{sau}": "khối lượng hỗn hợp sau phản ứng",
+    "\\overline{M}_{truoc}": "khối lượng mol trung bình trước phản ứng",
+    "\\overline{M}_{sau}": "khối lượng mol trung bình sau phản ứng"
+   },
+   "units": {
+    "n_{H_2\\ pu}": "mol",
+    "n_{truoc}": "mol",
+    "n_{sau}": "mol",
+    "m_{truoc}": "g",
+    "m_{sau}": "g",
+    "\\overline{M}_{truoc}": "g/mol",
+    "\\overline{M}_{sau}": "g/mol"
+   },
+   "conditions": "Phản ứng trong bình kín, xúc tác Ni, nung nóng; hỗn hợp trước và sau đều ở thể khí",
+   "note": "Mỗi mol H2 cộng vào làm giảm đúng 1 mol khí. Khối lượng hỗn hợp không đổi nên M trung bình tăng.",
+   "tags": [
+    "huu-co",
+    "phan-ung-cong",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.cong-br2",
+    "chemistry.thpt.chat-beo.hidro-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.so-mol-lien-ket-pi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng cộng",
+   "name_vi": "Số mol liên kết pi trong hợp chất mạch hở",
+   "name_en": "Moles of pi bonds in an open-chain compound",
+   "latex": "n_{\\pi} = k \\cdot n_X",
+   "vars": {
+    "n_{\\pi}": "tổng số mol liên kết pi",
+    "k": "số liên kết pi trong một phân tử (bằng độ bất bão hòa nếu mạch hở)",
+    "n_X": "số mol chất X"
+   },
+   "units": {
+    "n_{\\pi}": "mol",
+    "n_X": "mol"
+   },
+   "conditions": "Phân tử mạch hở (không có vòng); chỉ tính các liên kết pi ở gốc hiđrocacbon nếu xét phản ứng cộng",
+   "note": "Liên kết pi trong nhóm -COOH, -COO- và vòng benzen KHÔNG cộng brom trong dung dịch.",
+   "tags": [
+    "huu-co",
+    "phan-ung-cong",
+    "do-bat-bao-hoa"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.cong-br2",
+    "chemistry.thpt.phan-ung.cong-h2"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.este-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng este hóa",
+   "name_vi": "Phản ứng este hóa và hiệu suất",
+   "name_en": "Esterification reaction and its yield",
+   "latex": "RCOOH + R'OH \\rightleftharpoons RCOOR' + H_2O;\\quad H = \\dfrac{n_{este}}{n_{bd(thieu)}} \\times 100\\%",
+   "vars": {
+    "R": "gốc hiđrocacbon (hoặc H) của axit",
+    "R'": "gốc hiđrocacbon của ancol",
+    "H": "hiệu suất phản ứng este hóa",
+    "n_{este}": "số mol este thực tế thu được",
+    "n_{bd(thieu)}": "số mol ban đầu của chất phản ứng thiếu"
+   },
+   "units": {
+    "n_{este}": "mol",
+    "n_{bd(thieu)}": "mol",
+    "H": "%"
+   },
+   "conditions": "Xúc tác H2SO4 đặc, đun nóng; phản ứng thuận nghịch nên hiệu suất luôn nhỏ hơn 100%",
+   "note": "Để tăng hiệu suất: dùng dư một chất, tách bớt este hoặc nước ra khỏi hỗn hợp.",
+   "tags": [
+    "huu-co",
+    "este-hoa",
+    "hieu-suat"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.hang-so-can-bang-este-hoa",
+    "chemistry.thpt.dai-cuong.hieu-suat-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.hang-so-can-bang-este-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng este hóa",
+   "name_vi": "Hằng số cân bằng của phản ứng este hóa",
+   "name_en": "Equilibrium constant of esterification",
+   "latex": "K_C = \\dfrac{[RCOOR'] \\cdot [H_2O]}{[RCOOH] \\cdot [R'OH]}",
+   "vars": {
+    "K_C": "hằng số cân bằng tính theo nồng độ",
+    "[RCOOR']": "nồng độ mol của este lúc cân bằng",
+    "[H_2O]": "nồng độ mol của nước lúc cân bằng",
+    "[RCOOH]": "nồng độ mol của axit lúc cân bằng",
+    "[R'OH]": "nồng độ mol của ancol lúc cân bằng"
+   },
+   "units": {
+    "[RCOOR']": "mol/L",
+    "[H_2O]": "mol/L",
+    "[RCOOH]": "mol/L",
+    "[R'OH]": "mol/L"
+   },
+   "conditions": "Hệ đã đạt trạng thái cân bằng ở nhiệt độ xác định; các chất đều ở cùng một pha lỏng",
+   "note": "Vì cùng thể tích nên có thể thay nồng độ bằng số mol. Với CH3COOH và C2H5OH, Kc xấp xỉ 4 nên hiệu suất tối đa khoảng 67% khi trộn tỉ lệ 1 : 1.",
+   "tags": [
+    "huu-co",
+    "este-hoa",
+    "can-bang-hoa-hoc"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.este-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.trang-bac-andehit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng tráng bạc",
+   "name_vi": "Phản ứng tráng bạc của anđehit",
+   "name_en": "Silver mirror reaction of aldehydes",
+   "latex": "RCHO + 2AgNO_3 + 3NH_3 + H_2O \\xrightarrow{t^o} RCOONH_4 + 2Ag \\downarrow + 2NH_4NO_3;\\quad n_{Ag} = 2n_{CHO}",
+   "vars": {
+    "n_{Ag}": "số mol bạc kết tủa",
+    "n_{CHO}": "tổng số mol nhóm chức -CHO",
+    "R": "gốc hiđrocacbon hoặc H"
+   },
+   "units": {
+    "n_{Ag}": "mol",
+    "n_{CHO}": "mol"
+   },
+   "conditions": "Anđehit tác dụng với dung dịch AgNO3 trong NH3, đun nóng",
+   "note": "Ngoại lệ: HCHO cho 4 mol Ag vì bị oxi hóa hai nấc. Nếu n(Ag)/n(anđehit đơn chức) = 4 thì đó là HCHO. HCOOH và HCOOR cũng tráng bạc cho 2Ag.",
+   "tags": [
+    "huu-co",
+    "trang-bac",
+    "andehit"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.trang-bac-glucozo",
+    "chemistry.thpt.cttq.andehit-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.axit-tac-dung-na",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng với kim loại kiềm",
+   "name_vi": "Axit cacboxylic tác dụng với Na, NaOH và NaHCO3",
+   "name_en": "Carboxylic acids with sodium, sodium hydroxide and hydrogencarbonate",
+   "latex": "n_{H_2} = \\dfrac{n_{COOH}}{2};\\quad n_{NaOH} = n_{COOH};\\quad n_{CO_2} = n_{COOH}",
+   "vars": {
+    "n_{H_2}": "số mol H2 khi cho tác dụng Na",
+    "n_{COOH}": "tổng số mol nhóm -COOH",
+    "n_{NaOH}": "số mol NaOH cần để trung hòa",
+    "n_{CO_2}": "số mol CO2 khi tác dụng với NaHCO3 dư"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{COOH}": "mol",
+    "n_{NaOH}": "mol",
+    "n_{CO_2}": "mol"
+   },
+   "conditions": "Na dư, NaOH vừa đủ, NaHCO3 dư",
+   "note": "Phản ứng với NaHCO3 sinh CO2 dùng để phân biệt axit cacboxylic với phenol và ancol.",
+   "tags": [
+    "huu-co",
+    "axit-cacboxylic",
+    "nhan-biet"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.ancol-tac-dung-na"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.axit-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    11,
+    12
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Axit cacboxylic",
+   "name_vi": "Số đồng phân axit cacboxylic no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated monocarboxylic acids",
+   "latex": "S = 2^{\\,n-3}\\quad (2 < n < 7)",
+   "vars": {
+    "S": "số đồng phân axit",
+    "n": "số nguyên tử cacbon của axit CnH2nO2"
+   },
+   "units": {},
+   "conditions": "Công thức đúng với n = 3, 4, 5, 6",
+   "note": "n = 4 cho 2 đồng phân axit (butanoic và 2-metylpropanoic), n = 5 cho 4 đồng phân.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "axit-cacboxylic"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.este-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.peptit.so-lien-ket-va-mat-xich",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Cấu tạo peptit",
+   "name_vi": "Số mắt xích và số liên kết peptit",
+   "name_en": "Number of residues and peptide bonds",
+   "latex": "k = \\dfrac{n_{NaOH}}{n_{peptit}};\\quad \\text{số liên kết peptit} = k - 1",
+   "vars": {
+    "k": "số mắt xích amino axit trong phân tử peptit",
+    "n_{NaOH}": "số mol NaOH cần để thủy phân hoàn toàn peptit",
+    "n_{peptit}": "số mol peptit"
+   },
+   "units": {
+    "n_{NaOH}": "mol",
+    "n_{peptit}": "mol"
+   },
+   "conditions": "Peptit chỉ tạo từ các amino axit có một nhóm -NH2 và một nhóm -COOH",
+   "note": "Peptit có từ 2 liên kết peptit trở lên (từ tripeptit) mới cho phản ứng màu biure với Cu(OH)2.",
+   "tags": [
+    "huu-co",
+    "peptit",
+    "thuy-phan"
+   ],
+   "related": [
+    "chemistry.thpt.peptit.thuy-phan-bao-toan-khoi-luong",
+    "chemistry.thpt.peptit.tac-dung-naoh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.peptit.tac-dung-hcl",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Thủy phân peptit",
+   "name_vi": "Thủy phân peptit trong dung dịch HCl",
+   "name_en": "Peptide hydrolysis in hydrochloric acid solution",
+   "latex": "m_{muoi} = m_{peptit} + 18(k-1)n_{peptit} + 36{,}5\\,n_{HCl},\\quad n_{HCl} = k\\,n_{peptit}",
+   "vars": {
+    "m_{muoi}": "khối lượng muối clorua của các amino axit",
+    "m_{peptit}": "khối lượng peptit",
+    "k": "số mắt xích của peptit",
+    "n_{peptit}": "số mol peptit",
+    "n_{HCl}": "số mol HCl phản ứng"
+   },
+   "units": {
+    "m_{muoi}": "g",
+    "m_{peptit}": "g",
+    "n_{peptit}": "mol",
+    "n_{HCl}": "mol"
+   },
+   "conditions": "Peptit tạo từ amino axit có 1 nhóm NH2 và 1 nhóm COOH; HCl vừa đủ",
+   "note": "Khác với NaOH, thủy phân bằng HCl cần (k − 1) mol H2O cho mỗi mol peptit và HCl cộng vào nhóm -NH2.",
+   "tags": [
+    "huu-co",
+    "peptit",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.peptit.tac-dung-naoh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.peptit.tac-dung-naoh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Thủy phân peptit",
+   "name_vi": "Thủy phân peptit trong dung dịch NaOH",
+   "name_en": "Peptide hydrolysis in sodium hydroxide solution",
+   "latex": "m_{muoi} = m_{peptit} + 40\\,n_{NaOH} - 18\\,n_{peptit},\\quad n_{NaOH} = k\\,n_{peptit}",
+   "vars": {
+    "m_{muoi}": "khối lượng muối natri của các amino axit",
+    "m_{peptit}": "khối lượng peptit",
+    "n_{NaOH}": "số mol NaOH phản ứng",
+    "n_{peptit}": "số mol peptit",
+    "k": "số mắt xích của peptit"
+   },
+   "units": {
+    "m_{muoi}": "g",
+    "m_{peptit}": "g",
+    "n_{NaOH}": "mol",
+    "n_{peptit}": "mol"
+   },
+   "conditions": "NaOH vừa đủ; mỗi mol peptit khi thủy phân bằng kiềm chỉ giải phóng 1 mol H2O",
+   "note": "Nếu NaOH dư thì chất rắn sau cô cạn còn chứa NaOH dư, phải cộng thêm khối lượng đó.",
+   "tags": [
+    "huu-co",
+    "peptit",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.peptit.tac-dung-hcl",
+    "chemistry.thpt.peptit.so-lien-ket-va-mat-xich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.peptit.thuy-phan-bao-toan-khoi-luong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Thủy phân peptit",
+   "name_vi": "Bảo toàn khối lượng khi thủy phân hoàn toàn peptit",
+   "name_en": "Mass balance in complete peptide hydrolysis",
+   "latex": "m_{peptit} + 18\\,n_{H_2O} = m_{amino\\ axit},\\quad n_{H_2O} = (k-1)\\,n_{peptit}",
+   "vars": {
+    "m_{peptit}": "khối lượng peptit đem thủy phân",
+    "n_{H_2O}": "số mol nước tham gia thủy phân",
+    "m_{amino\\ axit}": "tổng khối lượng amino axit thu được",
+    "k": "số mắt xích của peptit",
+    "n_{peptit}": "số mol peptit"
+   },
+   "units": {
+    "m_{peptit}": "g",
+    "n_{H_2O}": "mol",
+    "m_{amino\\ axit}": "g",
+    "n_{peptit}": "mol"
+   },
+   "conditions": "Thủy phân hoàn toàn trong môi trường trung tính hoặc có xúc tác enzim",
+   "note": "Thủy phân không hoàn toàn thì n(H2O) = số liên kết peptit bị cắt; luôn có n(H2O) = n(sản phẩm) − n(peptit ban đầu).",
+   "tags": [
+    "huu-co",
+    "peptit",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.peptit.tac-dung-naoh",
+    "chemistry.thpt.peptit.tac-dung-hcl"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.amin.tac-dung-hcl",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Tính bazơ của amin",
+   "name_vi": "Amin tác dụng với dung dịch HCl",
+   "name_en": "Amines reacting with hydrochloric acid",
+   "latex": "n_{HCl} = a \\cdot n_{amin};\\quad m_{muoi} = m_{amin} + 36{,}5\\,n_{HCl}",
+   "vars": {
+    "n_{HCl}": "số mol HCl phản ứng",
+    "a": "số nhóm chức amin (-NH2) trong một phân tử",
+    "n_{amin}": "số mol amin",
+    "m_{muoi}": "khối lượng muối amoni clorua thu được",
+    "m_{amin}": "khối lượng amin ban đầu"
+   },
+   "units": {
+    "n_{HCl}": "mol",
+    "n_{amin}": "mol",
+    "m_{muoi}": "g",
+    "m_{amin}": "g"
+   },
+   "conditions": "HCl vừa đủ; đây là hệ quả của định luật bảo toàn khối lượng",
+   "note": "M(HCl) = 36,5 g/mol. Tỉ lệ n(HCl)/n(amin) cho biết số nhóm chức amin.",
+   "tags": [
+    "huu-co",
+    "amin",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.amino-axit.tac-dung-hcl-naoh",
+    "chemistry.thpt.cttq.amin"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.amino-axit.hai-giai-doan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Tính lưỡng tính",
+   "name_vi": "Amino axit tác dụng lần lượt với HCl rồi NaOH",
+   "name_en": "Amino acid treated successively with acid then base",
+   "latex": "n_{NaOH\\ tong} = n_{HCl\\ ban\\ dau} + b\\,n_{aa};\\quad n_{HCl\\ tong} = n_{NaOH\\ ban\\ dau} + a\\,n_{aa}",
+   "vars": {
+    "n_{NaOH\\ tong}": "tổng số mol NaOH cần dùng ở giai đoạn sau",
+    "n_{HCl\\ ban\\ dau}": "số mol HCl đã dùng ở giai đoạn đầu",
+    "n_{HCl\\ tong}": "tổng số mol HCl cần dùng ở giai đoạn sau",
+    "n_{NaOH\\ ban\\ dau}": "số mol NaOH đã dùng ở giai đoạn đầu",
+    "a": "số nhóm -NH2 trong phân tử",
+    "b": "số nhóm -COOH trong phân tử",
+    "n_{aa}": "số mol amino axit"
+   },
+   "units": {
+    "n_{NaOH\\ tong}": "mol",
+    "n_{HCl\\ ban\\ dau}": "mol",
+    "n_{HCl\\ tong}": "mol",
+    "n_{NaOH\\ ban\\ dau}": "mol",
+    "n_{aa}": "mol"
+   },
+   "conditions": "Phản ứng xảy ra hoàn toàn; có thể coi như cho hỗn hợp amino axit và axit (hoặc bazơ) phản ứng cùng lúc",
+   "note": "Mẹo giải: quy về bài toán trung hòa, dùng bảo toàn khối lượng cho toàn bộ quá trình.",
+   "tags": [
+    "huu-co",
+    "amino-axit",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.amino-axit.tac-dung-hcl-naoh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.amino-axit.tac-dung-hcl-naoh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Tính lưỡng tính",
+   "name_vi": "Amino axit tác dụng với HCl và với NaOH",
+   "name_en": "Amino acids reacting with hydrochloric acid and sodium hydroxide",
+   "latex": "n_{HCl} = a\\,n_{aa},\\ m_{muoi} = m_{aa} + 36{,}5n_{HCl};\\quad n_{NaOH} = b\\,n_{aa},\\ m_{muoi} = m_{aa} + 22n_{NaOH}",
+   "vars": {
+    "n_{HCl}": "số mol HCl phản ứng",
+    "n_{NaOH}": "số mol NaOH phản ứng",
+    "a": "số nhóm -NH2 trong phân tử amino axit",
+    "b": "số nhóm -COOH trong phân tử amino axit",
+    "n_{aa}": "số mol amino axit",
+    "m_{aa}": "khối lượng amino axit",
+    "m_{muoi}": "khối lượng muối tương ứng"
+   },
+   "units": {
+    "n_{HCl}": "mol",
+    "n_{NaOH}": "mol",
+    "n_{aa}": "mol",
+    "m_{aa}": "g",
+    "m_{muoi}": "g"
+   },
+   "conditions": "Axit hoặc bazơ dùng vừa đủ; amino axit là chất lưỡng tính",
+   "note": "22 = 23 − 1 (thay H của -COOH bằng Na). Nếu a = b thì dung dịch amino axit có môi trường gần trung tính.",
+   "tags": [
+    "huu-co",
+    "amino-axit",
+    "luong-tinh"
+   ],
+   "related": [
+    "chemistry.thpt.amino-axit.hai-giai-doan",
+    "chemistry.thpt.cttq.amino-axit"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.peptit.so-dipeptit-tripeptit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Amin, amino axit và peptit",
+   "subtopic": "Đếm số peptit",
+   "name_vi": "Số đipeptit, tripeptit tối đa tạo từ n amino axit",
+   "name_en": "Maximum number of dipeptides and tripeptides from n amino acids",
+   "latex": "\\text{số đipeptit} = n^2,\\quad \\text{số tripeptit} = n^3,\\quad \\text{số } k\\text{-peptit} = n^k",
+   "vars": {
+    "n": "số loại amino axit khác nhau dùng để tạo peptit",
+    "k": "số mắt xích của peptit"
+   },
+   "units": {},
+   "conditions": "Mỗi amino axit có 1 nhóm NH2 và 1 nhóm COOH; cho phép một amino axit lặp lại nhiều lần trong mạch",
+   "note": "Nếu yêu cầu peptit chứa đủ n gốc amino axit khác nhau, mỗi loại đúng một lần, thì số peptit là n! (giai thừa).",
+   "tags": [
+    "huu-co",
+    "peptit",
+    "dem-dong-phan"
+   ],
+   "related": [
+    "chemistry.thpt.peptit.so-lien-ket-va-mat-xich",
+    "chemistry.thpt.dong-phan.trieste-glixerol"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.amin-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Amin",
+   "name_vi": "Đốt cháy amin no, đơn chức, mạch hở",
+   "name_en": "Combustion of saturated monofunctional amines",
+   "latex": "n_{amin} = \\dfrac{2\\left(n_{H_2O} - n_{CO_2}\\right)}{3} = 2n_{N_2};\\quad n_{O_2} = \\dfrac{6n+3}{4}n_{amin}",
+   "vars": {
+    "n_{amin}": "số mol amin CnH2n+3N bị đốt",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{N_2}": "số mol khí N2 sinh ra",
+    "n_{O_2}": "số mol O2 cần dùng",
+    "n": "số nguyên tử cacbon của amin"
+   },
+   "units": {
+    "n_{amin}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{N_2}": "mol",
+    "n_{O_2}": "mol"
+   },
+   "conditions": "Amin no, đơn chức, mạch hở CnH2n+3N; đốt cháy hoàn toàn trong O2, nitơ chuyển hết thành N2",
+   "note": "Vì n(H2O) − n(CO2) = 1,5n(amin) nên với amin no đơn chức hở luôn có n(H2O) > n(CO2).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "amin"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.amin",
+    "chemistry.thpt.dot-chay.so-c-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.amino-axit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Amino axit",
+   "name_vi": "Đốt cháy amino axit no, mạch hở, có một nhóm NH2 và một nhóm COOH",
+   "name_en": "Combustion of a saturated amino acid with one amino and one carboxyl group",
+   "latex": "C_nH_{2n+1}NO_2:\\quad n_{H_2O} - n_{CO_2} = \\dfrac{n_{aa}}{2} = n_{N_2};\\quad n_{O_2} = \\dfrac{6n-3}{4}\\,n_{aa}",
+   "vars": {
+    "n": "số nguyên tử cacbon của amino axit",
+    "n_{aa}": "số mol amino axit bị đốt",
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{N_2}": "số mol N2 sinh ra",
+    "n_{O_2}": "số mol O2 cần dùng"
+   },
+   "units": {
+    "n_{aa}": "mol",
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{N_2}": "mol",
+    "n_{O_2}": "mol"
+   },
+   "conditions": "Amino axit no, mạch hở CnH2n+1NO2 (n ≥ 2); đốt cháy hoàn toàn, toàn bộ nitơ chuyển thành N2",
+   "note": "Glyxin C2H5NO2 và alanin C3H7NO2 thuộc dãy này. Vì n(H2O) − n(CO2) = 0,5n(aa) > 0 nên luôn có n(H2O) > n(CO2).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "amino-axit"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.amino-axit",
+    "chemistry.thpt.dot-chay.amin-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dot-chay.este-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Bài toán đốt cháy hợp chất hữu cơ",
+   "subtopic": "Este",
+   "name_vi": "Đốt cháy este no, đơn chức, mạch hở",
+   "name_en": "Combustion of saturated monofunctional esters",
+   "latex": "n_{CO_2} = n_{H_2O};\\quad n_{O_2} = \\dfrac{3}{2}n_{CO_2} - n_{este}",
+   "vars": {
+    "n_{CO_2}": "số mol CO2 sinh ra",
+    "n_{H_2O}": "số mol H2O sinh ra",
+    "n_{O_2}": "số mol O2 cần dùng",
+    "n_{este}": "số mol este CnH2nO2 bị đốt"
+   },
+   "units": {
+    "n_{CO_2}": "mol",
+    "n_{H_2O}": "mol",
+    "n_{O_2}": "mol",
+    "n_{este}": "mol"
+   },
+   "conditions": "Este no, đơn chức, mạch hở CnH2nO2 (n ≥ 2); đốt cháy hoàn toàn",
+   "note": "Suy từ bảo toàn oxi: 2n(este) + 2n(O2) = 3n(CO2). Este không no 1 nối đôi đơn chức hở CnH2n-2O2 cho n(CO2) − n(H2O) = n(este).",
+   "tags": [
+    "huu-co",
+    "dot-chay",
+    "este"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.axit-no-don-chuc",
+    "chemistry.thpt.cttq.este-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cacbohidrat.so-mat-xich-polisaccarit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Cacbohiđrat",
+   "subtopic": "Cấu tạo polisaccarit",
+   "name_vi": "Số mắt xích trong phân tử tinh bột hoặc xenlulozơ",
+   "name_en": "Number of monomer units in starch or cellulose",
+   "latex": "n = \\dfrac{M_{polisaccarit}}{162}",
+   "vars": {
+    "n": "số mắt xích C6H10O5 trong một phân tử",
+    "M_{polisaccarit}": "khối lượng mol phân tử của tinh bột hoặc xenlulozơ"
+   },
+   "units": {
+    "M_{polisaccarit}": "g/mol"
+   },
+   "conditions": "M là giá trị trung bình vì polisaccarit là hỗn hợp các phân tử có độ dài mạch khác nhau",
+   "note": "M(C6H10O5) = 162 g/mol. Xenlulozơ có n từ khoảng 10000 đến 14000, lớn hơn tinh bột.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "polime"
+   ],
+   "related": [
+    "chemistry.thpt.polime.he-so-trung-hop"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cacbohidrat.len-men-ruou",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Cacbohiđrat",
+   "subtopic": "Lên men glucozơ",
+   "name_vi": "Hiệu suất lên men rượu từ glucozơ",
+   "name_en": "Yield of alcoholic fermentation of glucose",
+   "latex": "C_6H_{12}O_6 \\xrightarrow{men\\ ruou} 2C_2H_5OH + 2CO_2;\\quad m_{C_2H_5OH} = \\dfrac{92\\,m_{glucozo}}{180} \\cdot H",
+   "vars": {
+    "m_{C_2H_5OH}": "khối lượng ancol etylic thu được",
+    "m_{glucozo}": "khối lượng glucozơ đem lên men",
+    "H": "hiệu suất phản ứng lên men (dạng thập phân)"
+   },
+   "units": {
+    "m_{C_2H_5OH}": "g",
+    "m_{glucozo}": "g"
+   },
+   "conditions": "Lên men ở 30-35 °C với men rượu; H là hiệu suất của cả quá trình",
+   "note": "n(CO2) = 2·n(glucozơ)·H; hấp thụ CO2 vào nước vôi trong dư cho n(CaCO3) = n(CO2). Khối lượng riêng của C2H5OH nguyên chất là 0,789 g/mL.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "len-men",
+    "hieu-suat"
+   ],
+   "related": [
+    "chemistry.thpt.cacbohidrat.thuy-phan-tinh-bot",
+    "chemistry.thpt.dai-cuong.hieu-suat-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cacbohidrat.glucozo-tac-dung-h2",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Cacbohiđrat",
+   "subtopic": "Phản ứng của glucozơ",
+   "name_vi": "Khử glucozơ bằng hiđro tạo sobitol",
+   "name_en": "Reduction of glucose to sorbitol",
+   "latex": "C_6H_{12}O_6 + H_2 \\xrightarrow{Ni,\\ t^o} C_6H_{14}O_6;\\quad n_{H_2} = n_{glucozo}",
+   "vars": {
+    "n_{H_2}": "số mol H2 phản ứng",
+    "n_{glucozo}": "số mol glucozơ tham gia"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{glucozo}": "mol"
+   },
+   "conditions": "Xúc tác Ni, đun nóng; chỉ nhóm -CHO bị khử",
+   "note": "M(sobitol C6H14O6) = 182 g/mol. Fructozơ cũng bị khử thành sobitol.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "phan-ung-cong"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.trang-bac-glucozo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cacbohidrat.xenlulozo-trinitrat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Cacbohiđrat",
+   "subtopic": "Phản ứng của xenlulozơ",
+   "name_vi": "Điều chế xenlulozơ trinitrat từ xenlulozơ và HNO3",
+   "name_en": "Preparation of cellulose trinitrate from cellulose and nitric acid",
+   "latex": "[C_6H_7O_2(OH)_3]_n + 3nHNO_3 \\xrightarrow{H_2SO_4\\ dac} [C_6H_7O_2(ONO_2)_3]_n + 3nH_2O;\\quad m_{sp} = \\dfrac{297}{162}\\,m_{xenlulozo} \\cdot H",
+   "vars": {
+    "m_{sp}": "khối lượng xenlulozơ trinitrat thu được",
+    "m_{xenlulozo}": "khối lượng xenlulozơ ban đầu",
+    "H": "hiệu suất phản ứng (dạng thập phân)",
+    "n": "hệ số polime hóa của xenlulozơ"
+   },
+   "units": {
+    "m_{sp}": "g",
+    "m_{xenlulozo}": "g"
+   },
+   "conditions": "HNO3 đặc, xúc tác H2SO4 đặc, đun nóng; mỗi mắt xích có 3 nhóm -OH được este hóa",
+   "note": "M(mắt xích xenlulozơ) = 162, M(mắt xích trinitrat) = 297. Xenlulozơ trinitrat là thuốc súng không khói.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "xenlulozo"
+   ],
+   "related": [
+    "chemistry.thpt.cacbohidrat.so-mat-xich-polisaccarit"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cacbohidrat.thuy-phan-tinh-bot",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Cacbohiđrat",
+   "subtopic": "Thủy phân polisaccarit",
+   "name_vi": "Thủy phân tinh bột hoặc xenlulozơ thành glucozơ",
+   "name_en": "Hydrolysis of starch or cellulose to glucose",
+   "latex": "(C_6H_{10}O_5)_n + nH_2O \\xrightarrow{H^+,\\ t^o} nC_6H_{12}O_6;\\quad m_{glucozo} = \\dfrac{180}{162}\\,m_{tinh\\ bot} \\cdot H",
+   "vars": {
+    "m_{glucozo}": "khối lượng glucozơ thu được",
+    "m_{tinh\\ bot}": "khối lượng tinh bột (hoặc xenlulozơ) đem thủy phân",
+    "H": "hiệu suất phản ứng thủy phân (dạng thập phân)",
+    "n": "hệ số polime hóa"
+   },
+   "units": {
+    "m_{glucozo}": "g",
+    "m_{tinh\\ bot}": "g"
+   },
+   "conditions": "Xúc tác axit hoặc enzim; thủy phân hoàn toàn cho sản phẩm duy nhất là glucozơ",
+   "note": "Tỉ lệ 180/162 = 10/9. Thủy phân saccarozơ (C12H22O11) cho 1 glucozơ và 1 fructozơ, tỉ lệ khối lượng 360/342.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "thuy-phan"
+   ],
+   "related": [
+    "chemistry.thpt.cacbohidrat.len-men-ruou",
+    "chemistry.thpt.cttq.cacbohidrat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cacbohidrat.thuy-phan-saccarozo",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Cacbohiđrat",
+   "subtopic": "Thủy phân đisaccarit",
+   "name_vi": "Thủy phân saccarozơ",
+   "name_en": "Hydrolysis of sucrose",
+   "latex": "C_{12}H_{22}O_{11} + H_2O \\xrightarrow{H^+,\\ t^o} C_6H_{12}O_6\\,(\\text{glucozơ}) + C_6H_{12}O_6\\,(\\text{fructozơ});\\quad n_{glucozo} = n_{fructozo} = H\\,n_{saccarozo}",
+   "vars": {
+    "n_{glucozo}": "số mol glucozơ tạo thành",
+    "n_{fructozo}": "số mol fructozơ tạo thành",
+    "n_{saccarozo}": "số mol saccarozơ đem thủy phân",
+    "H": "hiệu suất thủy phân (dạng thập phân)"
+   },
+   "units": {
+    "n_{glucozo}": "mol",
+    "n_{fructozo}": "mol",
+    "n_{saccarozo}": "mol"
+   },
+   "conditions": "Xúc tác axit hoặc enzim, đun nóng; 0 < H ≤ 1",
+   "note": "M(saccarozơ) = 342 g/mol. Saccarozơ KHÔNG tráng bạc nhưng sản phẩm thủy phân thì có: n(Ag) = 4n(saccarozơ đã thủy phân) vì cả glucozơ và fructozơ đều cho 2Ag.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "thuy-phan"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.cacbohidrat",
+    "chemistry.thpt.cacbohidrat.thuy-phan-tinh-bot",
+    "chemistry.thpt.phan-ung.trang-bac-glucozo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.amin",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Amin",
+   "name_vi": "Công thức tổng quát của amin",
+   "name_en": "General formula of amines",
+   "latex": "C_xH_yN_z\\ (y \\le 2x + 2 + z,\\ y \\equiv z \\ (\\mathrm{mod}\\ 2));\\quad \\text{amin no, đơn chức, mạch hở}: C_nH_{2n+3}N\\ (n \\ge 1)",
+   "vars": {
+    "x": "số nguyên tử cacbon",
+    "y": "số nguyên tử hiđro",
+    "z": "số nguyên tử nitơ",
+    "n": "số nguyên tử cacbon của amin no đơn chức"
+   },
+   "units": {},
+   "conditions": "Số nguyên tử H và số nguyên tử N phải cùng tính chẵn lẻ",
+   "note": "M(CnH2n+3N) = 14n + 17. CH3NH2 (31), C2H5NH2 (45), C6H5NH2 anilin (93).",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "amin"
+   ],
+   "related": [
+    "chemistry.thpt.dot-chay.amin-no-don-chuc",
+    "chemistry.thpt.dong-phan.amin-bac-mot"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.amino-axit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Amino axit",
+   "name_vi": "Công thức tổng quát của amino axit",
+   "name_en": "General formula of amino acids",
+   "latex": "(H_2N)_a R (COOH)_b;\\quad \\text{no, 1 nhóm } NH_2,\\ 1 \\text{ nhóm } COOH: C_nH_{2n+1}NO_2\\ (n \\ge 2)",
+   "vars": {
+    "a": "số nhóm amino -NH2",
+    "b": "số nhóm cacboxyl -COOH",
+    "R": "gốc hiđrocacbon",
+    "n": "số nguyên tử cacbon"
+   },
+   "units": {},
+   "conditions": "n ≥ 2 với amino axit no mạch hở có 1 nhóm NH2 và 1 nhóm COOH",
+   "note": "Glyxin C2H5NO2 (75), alanin C3H7NO2 (89), valin C5H11NO2 (117), lysin C6H14N2O2 (146), axit glutamic C5H9NO4 (147).",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "amino-axit"
+   ],
+   "related": [
+    "chemistry.thpt.amino-axit.tac-dung-hcl-naoh",
+    "chemistry.thpt.cttq.peptit"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.cacbohidrat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Cacbohiđrat",
+   "name_vi": "Công thức phân tử các cacbohiđrat quan trọng",
+   "name_en": "Molecular formulas of the main carbohydrates",
+   "latex": "\\begin{cases} \\text{glucozơ, fructozơ}: C_6H_{12}O_6 & (M = 180) \\\\ \\text{saccarozơ, mantozơ}: C_{12}H_{22}O_{11} & (M = 342) \\\\ \\text{tinh bột, xenlulozơ}: (C_6H_{10}O_5)_n & (M = 162n) \\end{cases}",
+   "vars": {
+    "n": "hệ số polime hóa của tinh bột hoặc xenlulozơ",
+    "M": "khối lượng mol phân tử"
+   },
+   "units": {
+    "M": "g/mol"
+   },
+   "conditions": "Cacbohiđrat có công thức chung Cm(H2O)n",
+   "note": "Xenlulozơ còn viết [C6H7O2(OH)3]n, mỗi mắt xích có 3 nhóm -OH tự do.",
+   "tags": [
+    "huu-co",
+    "cacbohidrat",
+    "cong-thuc-tong-quat"
+   ],
+   "related": [
+    "chemistry.thpt.cacbohidrat.thuy-phan-tinh-bot",
+    "chemistry.thpt.cacbohidrat.xenlulozo-trinitrat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.chat-beo",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Chất béo",
+   "name_vi": "Công thức tổng quát của chất béo (triglixerit)",
+   "name_en": "General formula of fats (triglycerides)",
+   "latex": "(RCOO)_3C_3H_5\\ \\text{hay}\\ \\begin{matrix} CH_2-OOCR_1 \\\\ CH-OOCR_2 \\\\ CH_2-OOCR_3 \\end{matrix}",
+   "vars": {
+    "R": "gốc hiđrocacbon của axit béo",
+    "R_1": "gốc axit béo thứ nhất",
+    "R_2": "gốc axit béo thứ hai",
+    "R_3": "gốc axit béo thứ ba",
+    "C_3H_5": "gốc glixerol (propan-1,2,3-triyl)"
+   },
+   "units": {},
+   "conditions": "Chất béo là trieste của glixerol với các axit béo (axit monocacboxylic mạch không phân nhánh, số C chẵn, thường 12-24 C)",
+   "note": "Axit béo thường gặp: panmitic C15H31COOH (M = 256), stearic C17H35COOH (M = 284), oleic C17H33COOH (M = 282), linoleic C17H31COOH (M = 280). Tristearin M = 890.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "chat-beo"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.este-no-don-chuc",
+    "chemistry.thpt.chat-beo.xa-phong-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.este-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Este",
+   "name_vi": "Công thức tổng quát của este no, đơn chức, mạch hở",
+   "name_en": "General formula of saturated monofunctional esters",
+   "latex": "RCOOR' \\equiv C_nH_{2n}O_2\\ (n \\ge 2),\\ R' \\ne H",
+   "vars": {
+    "R": "gốc hiđrocacbon (hoặc H) của phần axit",
+    "R'": "gốc hiđrocacbon của phần ancol, khác H",
+    "n": "số nguyên tử cacbon trong phân tử este"
+   },
+   "units": {},
+   "conditions": "n ≥ 2; no, đơn chức, mạch hở",
+   "note": "M = 14n + 32; este no đơn chức mạch hở là đồng phân của axit no đơn chức mạch hở cùng số C.",
+   "tags": [
+    "huu-co",
+    "cong-thuc-tong-quat",
+    "este"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.axit-cacboxylic",
+    "chemistry.thpt.cttq.chat-beo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.peptit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Peptit",
+   "name_vi": "Công thức và khối lượng mol của peptit tạo từ amino axit",
+   "name_en": "Formula and molar mass of a peptide",
+   "latex": "M_{peptit} = \\sum_{i=1}^{n} M_{aa_i} - 18(n-1)",
+   "vars": {
+    "M_{peptit}": "khối lượng mol của peptit",
+    "M_{aa_i}": "khối lượng mol của amino axit thứ i",
+    "n": "số mắt xích (số gốc amino axit) trong phân tử peptit"
+   },
+   "units": {
+    "M_{peptit}": "g/mol",
+    "M_{aa_i}": "g/mol"
+   },
+   "conditions": "Peptit tạo thành từ n phân tử amino axit, tách ra (n − 1) phân tử H2O",
+   "note": "Số liên kết peptit = n − 1. Peptit từ 2-10 gốc là oligopeptit, từ 11-50 gốc là polipeptit.",
+   "tags": [
+    "huu-co",
+    "peptit",
+    "cong-thuc-tong-quat"
+   ],
+   "related": [
+    "chemistry.thpt.peptit.thuy-phan-bao-toan-khoi-luong",
+    "chemistry.thpt.cttq.protein"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.polime",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Polime",
+   "name_vi": "Công thức chung của polime",
+   "name_en": "General formula of polymers",
+   "latex": "\\left(-\\text{mắt xích}-\\right)_n;\\quad M_{polime} = n \\cdot M_{mat\\ xich}",
+   "vars": {
+    "n": "hệ số polime hóa (độ polime hóa), bằng số mắt xích",
+    "M_{polime}": "khối lượng mol trung bình của polime",
+    "M_{mat\\ xich}": "khối lượng mol của một mắt xích"
+   },
+   "units": {
+    "M_{polime}": "g/mol",
+    "M_{mat\\ xich}": "g/mol"
+   },
+   "conditions": "n là số nguyên rất lớn; M(polime) là giá trị trung bình",
+   "note": "PE (-CH2-CH2-)n M(mắt xích) = 28; PVC (-CH2-CHCl-)n = 62,5; PS = 104; nilon-6,6 = 226; cao su buna = 54.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "cong-thuc-tong-quat"
+   ],
+   "related": [
+    "chemistry.thpt.polime.he-so-trung-hop",
+    "chemistry.thpt.polime.hieu-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.cttq.protein",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Công thức tổng quát các dãy đồng đẳng",
+   "subtopic": "Protein",
+   "name_vi": "Cấu tạo của protein",
+   "name_en": "Structure of proteins",
+   "latex": "\\left[-NH-CHR-CO-\\right]_n \\quad (n > 50)",
+   "vars": {
+    "R": "gốc hiđrocacbon (khác nhau ở mỗi mắt xích)",
+    "n": "số mắt xích amino axit trong chuỗi polipeptit"
+   },
+   "units": {},
+   "conditions": "Protein đơn giản là polipeptit có phân tử khối từ vài chục nghìn đến vài triệu đvC",
+   "note": "Protein cho phản ứng màu biure với Cu(OH)2 (màu tím) và bị đông tụ khi đun nóng hoặc gặp axit, bazơ, muối kim loại nặng.",
+   "tags": [
+    "huu-co",
+    "protein",
+    "peptit"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.peptit"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.chat-beo.chi-so-axit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Các chỉ số của chất béo",
+   "name_vi": "Chỉ số axit của chất béo",
+   "name_en": "Acid value of a fat",
+   "latex": "A = \\dfrac{m_{KOH}\\,(\\text{mg})}{m_{chat\\ beo}\\,(\\text{g})} = \\dfrac{56000 \\cdot n_{COOH\\ tu\\ do}}{m_{chat\\ beo}}",
+   "vars": {
+    "A": "chỉ số axit (số mg KOH cần trung hòa axit béo tự do trong 1 gam chất béo)",
+    "m_{KOH}": "khối lượng KOH cần dùng để trung hòa, tính bằng miligam",
+    "m_{chat\\ beo}": "khối lượng mẫu chất béo, tính bằng gam",
+    "n_{COOH\\ tu\\ do}": "số mol nhóm -COOH của axit béo tự do"
+   },
+   "units": {
+    "m_{KOH}": "mg",
+    "m_{chat\\ beo}": "g",
+    "n_{COOH\\ tu\\ do}": "mol",
+    "A": "mg/g"
+   },
+   "conditions": "Chỉ tính phần axit béo tự do, không tính phần este",
+   "note": "M(KOH) = 56 g/mol nên 1 mol KOH ứng với 56000 mg. Chỉ số axit càng cao thì chất béo càng kém chất lượng.",
+   "tags": [
+    "huu-co",
+    "chat-beo",
+    "chi-so"
+   ],
+   "related": [
+    "chemistry.thpt.chat-beo.chi-so-xa-phong-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.chat-beo.chi-so-iot",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Các chỉ số của chất béo",
+   "name_vi": "Chỉ số iot của chất béo",
+   "name_en": "Iodine value of a fat",
+   "latex": "I = \\dfrac{254 \\cdot n_{I_2}}{m_{chat\\ beo}} \\times 100",
+   "vars": {
+    "I": "chỉ số iot (số gam I2 cộng vào 100 gam chất béo)",
+    "n_{I_2}": "số mol I2 cộng vào lượng chất béo khảo sát",
+    "m_{chat\\ beo}": "khối lượng chất béo khảo sát, tính bằng gam"
+   },
+   "units": {
+    "n_{I_2}": "mol",
+    "m_{chat\\ beo}": "g",
+    "I": "g/(100 g)"
+   },
+   "conditions": "I2 cộng vào các liên kết đôi C=C của gốc axit béo không no theo tỉ lệ 1 : 1",
+   "note": "M(I2) = 254 g/mol. Chỉ số iot càng lớn thì chất béo càng chứa nhiều gốc axit béo không no (càng lỏng).",
+   "tags": [
+    "huu-co",
+    "chat-beo",
+    "chi-so"
+   ],
+   "related": [
+    "chemistry.thpt.chat-beo.hidro-hoa",
+    "chemistry.thpt.chat-beo.chi-so-xa-phong-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.chat-beo.chi-so-xa-phong-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Các chỉ số của chất béo",
+   "name_vi": "Chỉ số xà phòng hóa và chỉ số este",
+   "name_en": "Saponification value and ester value",
+   "latex": "S = \\dfrac{56000\\left(n_{COOH\\ tu\\ do} + 3n_{chat\\ beo}\\right)}{m_{chat\\ beo}};\\quad E = S - A",
+   "vars": {
+    "S": "chỉ số xà phòng hóa (số mg KOH để xà phòng hóa este và trung hòa axit tự do trong 1 gam chất béo)",
+    "E": "chỉ số este (số mg KOH chỉ dùng để xà phòng hóa este trong 1 gam chất béo)",
+    "A": "chỉ số axit",
+    "n_{COOH\\ tu\\ do}": "số mol axit béo tự do",
+    "n_{chat\\ beo}": "số mol triglixerit",
+    "m_{chat\\ beo}": "khối lượng mẫu chất béo, tính bằng gam"
+   },
+   "units": {
+    "n_{COOH\\ tu\\ do}": "mol",
+    "n_{chat\\ beo}": "mol",
+    "m_{chat\\ beo}": "g",
+    "S": "mg/g",
+    "E": "mg/g",
+    "A": "mg/g"
+   },
+   "conditions": "Mẫu chất béo gồm triglixerit và một lượng axit béo tự do",
+   "note": "Luôn có S > A; chỉ số este E đặc trưng cho lượng triglixerit trong mẫu.",
+   "tags": [
+    "huu-co",
+    "chat-beo",
+    "chi-so"
+   ],
+   "related": [
+    "chemistry.thpt.chat-beo.chi-so-axit",
+    "chemistry.thpt.chat-beo.chi-so-iot"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.chat-beo.hidro-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Hiđro hóa chất béo",
+   "name_vi": "Hiđro hóa chất béo lỏng thành chất béo rắn",
+   "name_en": "Hydrogenation of liquid fats to solid fats",
+   "latex": "n_{H_2} = k \\cdot n_{chat\\ beo};\\quad m_{chat\\ beo\\ ran} = m_{chat\\ beo\\ long} + 2n_{H_2}",
+   "vars": {
+    "n_{H_2}": "số mol H2 đã cộng vào",
+    "k": "số liên kết đôi C=C ở gốc hiđrocacbon của một phân tử chất béo",
+    "n_{chat\\ beo}": "số mol chất béo",
+    "m_{chat\\ beo\\ ran}": "khối lượng chất béo rắn thu được",
+    "m_{chat\\ beo\\ long}": "khối lượng chất béo lỏng ban đầu"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{chat\\ beo}": "mol",
+    "m_{chat\\ beo\\ ran}": "g",
+    "m_{chat\\ beo\\ long}": "g"
+   },
+   "conditions": "Xúc tác Ni, đun nóng, áp suất cao; chỉ cộng vào liên kết đôi C=C, không cộng vào C=O của nhóm este",
+   "note": "Triolein (C17H33COO)3C3H5 có k = 3, cộng 3H2 tạo tristearin (M từ 884 lên 890).",
+   "tags": [
+    "huu-co",
+    "chat-beo",
+    "phan-ung-cong"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.cong-h2",
+    "chemistry.thpt.chat-beo.chi-so-iot"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.chat-beo.khoi-luong-xa-phong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Phản ứng xà phòng hóa",
+   "name_vi": "Khối lượng xà phòng thu được",
+   "name_en": "Mass of soap obtained",
+   "latex": "m_{xa\\ phong} = m_{chat\\ beo} + 40n_{NaOH} - 92n_{glixerol}",
+   "vars": {
+    "m_{xa\\ phong}": "khối lượng muối của axit béo (xà phòng)",
+    "m_{chat\\ beo}": "khối lượng chất béo đem xà phòng hóa",
+    "n_{NaOH}": "số mol NaOH phản ứng",
+    "n_{glixerol}": "số mol glixerol sinh ra"
+   },
+   "units": {
+    "m_{xa\\ phong}": "g",
+    "m_{chat\\ beo}": "g",
+    "n_{NaOH}": "mol",
+    "n_{glixerol}": "mol"
+   },
+   "conditions": "NaOH vừa đủ, phản ứng hoàn toàn; đây chính là định luật bảo toàn khối lượng",
+   "note": "Nếu dùng KOH: m(xà phòng) = m(chất béo) + 56n(KOH) − 92n(glixerol).",
+   "tags": [
+    "huu-co",
+    "chat-beo",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.chat-beo.xa-phong-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.chat-beo.xa-phong-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Phản ứng xà phòng hóa",
+   "name_vi": "Xà phòng hóa chất béo: lượng kiềm và glixerol",
+   "name_en": "Saponification of fats: alkali and glycerol amounts",
+   "latex": "n_{NaOH} = 3n_{chat\\ beo};\\quad n_{glixerol} = n_{chat\\ beo}",
+   "vars": {
+    "n_{NaOH}": "số mol NaOH cần dùng",
+    "n_{chat\\ beo}": "số mol chất béo (triglixerit)",
+    "n_{glixerol}": "số mol glixerol C3H5(OH)3 sinh ra"
+   },
+   "units": {
+    "n_{NaOH}": "mol",
+    "n_{chat\\ beo}": "mol",
+    "n_{glixerol}": "mol"
+   },
+   "conditions": "Thủy phân hoàn toàn trong môi trường kiềm, đun nóng",
+   "note": "M(glixerol) = 92 g/mol. Nếu dùng KOH thì n(KOH) = 3n(chất béo), M(KOH) = 56.",
+   "tags": [
+    "huu-co",
+    "chat-beo",
+    "xa-phong-hoa"
+   ],
+   "related": [
+    "chemistry.thpt.chat-beo.khoi-luong-xa-phong",
+    "chemistry.thpt.cttq.chat-beo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.este.thuy-phan-naoh-btkl",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Este và chất béo",
+   "subtopic": "Thủy phân este",
+   "name_vi": "Bảo toàn khối lượng khi thủy phân este trong NaOH",
+   "name_en": "Mass balance for ester saponification with sodium hydroxide",
+   "latex": "m_{este} + 40n_{NaOH} = m_{muoi} + m_{ancol};\\quad n_{NaOH} = a \\cdot n_{este}",
+   "vars": {
+    "m_{este}": "khối lượng este đem thủy phân",
+    "n_{NaOH}": "số mol NaOH phản ứng",
+    "m_{muoi}": "khối lượng muối cacboxylat khan",
+    "m_{ancol}": "khối lượng ancol sinh ra",
+    "a": "số nhóm chức este trong một phân tử",
+    "n_{este}": "số mol este đem thủy phân"
+   },
+   "units": {
+    "m_{este}": "g",
+    "n_{NaOH}": "mol",
+    "m_{muoi}": "g",
+    "m_{ancol}": "g",
+    "n_{este}": "mol"
+   },
+   "conditions": "NaOH vừa đủ; nếu NaOH dư thì khi cô cạn phải cộng thêm khối lượng NaOH dư vào chất rắn",
+   "note": "Este của phenol cần 2 mol NaOH cho 1 nhóm chức và tạo hai muối, không tạo ancol.",
+   "tags": [
+    "huu-co",
+    "este",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.chat-beo.xa-phong-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.quy-doi-fe-oxit-sat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Khử oxit kim loại",
+   "subtopic": "Quy đổi hỗn hợp sắt",
+   "name_vi": "Quy đổi hỗn hợp Fe và các oxit sắt tác dụng với axit có tính oxi hóa mạnh",
+   "name_en": "Converting an iron and iron-oxide mixture using the 0.7m + 5.6ne rule",
+   "latex": "m_{Fe} = 0{,}7m + 5{,}6n_e",
+   "vars": {
+    "m_{Fe}": "khối lượng Fe có trong hỗn hợp ban đầu",
+    "m": "khối lượng hỗn hợp gồm Fe, FeO, Fe3O4, Fe2O3",
+    "n_e": "số mol electron mà sản phẩm khử (NO, NO2, SO2...) nhận"
+   },
+   "units": {
+    "m_{Fe}": "g",
+    "m": "g",
+    "n_e": "mol"
+   },
+   "conditions": "Hỗn hợp chỉ gồm Fe và các oxit sắt; tan hết trong HNO3 hoặc H2SO4 đặc nóng tạo muối Fe(III)",
+   "note": "Suy ra từ hệ: 56x + 16y = m và 3x = 2y + n(e) với x = n(Fe), y = n(O). Hệ quả: n(Fe) = (m + 8n_e)/80.",
+   "tags": [
+    "vo-co",
+    "sat",
+    "quy-doi",
+    "giai-nhanh"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.quy-doi-hon-hop-sat-hcl",
+    "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.oxit-axit.quy-doi-hon-hop-sat-hcl",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Khử oxit kim loại",
+   "subtopic": "Quy đổi hỗn hợp sắt",
+   "name_vi": "Quy đổi hỗn hợp oxit sắt thành Fe và O",
+   "name_en": "Reducing an iron oxide mixture to Fe and O components",
+   "latex": "\\begin{cases} 56n_{Fe} + 16n_{O} = m_{hh} \\\\ n_{H^+} = 2n_{O} + 2n_{H_2} \\end{cases}",
+   "vars": {
+    "m_{hh}": "khối lượng hỗn hợp Fe và các oxit sắt",
+    "n_{Fe}": "số mol nguyên tử Fe trong hỗn hợp",
+    "n_{O}": "số mol nguyên tử O trong hỗn hợp",
+    "n_{H^+}": "số mol ion H+ của axit không có tính oxi hóa (HCl, H2SO4 loãng)",
+    "n_{H_2}": "số mol khí H2 thoát ra"
+   },
+   "units": {
+    "m_{hh}": "g",
+    "n_{Fe}": "mol",
+    "n_{O}": "mol",
+    "n_{H^+}": "mol",
+    "n_{H_2}": "mol"
+   },
+   "conditions": "Mọi hỗn hợp Fe/FeO/Fe2O3/Fe3O4 đều quy về hai nguyên tố Fe và O",
+   "note": "Fe3O4 có thể quy đổi thành FeO·Fe2O3 hoặc thành hỗn hợp Fe và O tùy bài.",
+   "tags": [
+    "vo-co",
+    "sat",
+    "quy-doi"
+   ],
+   "related": [
+    "chemistry.thpt.oxit-axit.quy-doi-fe-oxit-sat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-muoi.tang-giam-khoi-luong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Kim loại tác dụng với dung dịch muối",
+   "subtopic": "Tăng giảm khối lượng",
+   "name_vi": "Độ tăng (giảm) khối lượng thanh kim loại nhúng vào dung dịch muối",
+   "name_en": "Mass change of a metal bar immersed in a salt solution",
+   "latex": "\\Delta m = m_{KL\\ bam\\ vao} - m_{KL\\ tan\\ ra} = M_B n_B - M_A n_A",
+   "vars": {
+    "\\Delta m": "độ biến thiên khối lượng thanh kim loại (dương là tăng)",
+    "m_{KL\\ bam\\ vao}": "khối lượng kim loại B bám vào thanh",
+    "m_{KL\\ tan\\ ra}": "khối lượng kim loại A đã tan ra",
+    "M_A": "khối lượng mol kim loại A (thanh kim loại)",
+    "M_B": "khối lượng mol kim loại B (trong muối)",
+    "n_A": "số mol kim loại A tan ra",
+    "n_B": "số mol kim loại B sinh ra bám vào thanh"
+   },
+   "units": {
+    "\\Delta m": "g",
+    "m_{KL\\ bam\\ vao}": "g",
+    "m_{KL\\ tan\\ ra}": "g",
+    "M_A": "g/mol",
+    "M_B": "g/mol",
+    "n_A": "mol",
+    "n_B": "mol"
+   },
+   "conditions": "Kim loại A mạnh hơn B (đứng trước B trong dãy điện hóa) và không tan trong nước; toàn bộ B sinh ra bám hết vào thanh",
+   "note": "Áp dụng bảo toàn electron: a·n_A = b·n_B với a, b lần lượt là hóa trị của A và B.",
+   "tags": [
+    "vo-co",
+    "kim-loai",
+    "tang-giam-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.bao-toan.khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.kim-loai-nuoc.kiem-kiem-tho-tac-dung-nuoc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Kim loại tác dụng với nước",
+   "subtopic": "Kim loại kiềm và kiềm thổ",
+   "name_vi": "Kim loại kiềm, kim loại kiềm thổ tác dụng với nước",
+   "name_en": "Alkali and alkaline earth metals reacting with water",
+   "latex": "M + nH_2O \\rightarrow M(OH)_n + \\dfrac{n}{2}H_2 \\uparrow;\\quad n_{OH^-} = 2n_{H_2} = n_e",
+   "vars": {
+    "M": "kim loại kiềm (n = 1) hoặc Ca, Sr, Ba (n = 2)",
+    "n": "hóa trị của kim loại M",
+    "n_{H_2}": "số mol khí H2 thoát ra",
+    "n_{OH^-}": "số mol ion OH- trong dung dịch thu được",
+    "n_e": "số mol electron kim loại nhường"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{OH^-}": "mol",
+    "n_e": "mol"
+   },
+   "conditions": "Các kim loại kiềm (Li, Na, K, Rb, Cs) và Ca, Sr, Ba tan trong nước ở nhiệt độ thường; Be không phản ứng, Mg phản ứng rất chậm",
+   "note": "Khối lượng dung dịch tăng = m(kim loại) − 2n(H2) vì M(H2) = 2 g/mol. Dung dịch kiềm thu được thường dùng tiếp cho bài toán CO2 hoặc Al.",
+   "tags": [
+    "vo-co",
+    "kim-loai-kiem",
+    "kiem-tho"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.hon-hop-na-al-vao-nuoc",
+    "chemistry.thpt.bao-toan.electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.aluminat-tac-dung-axit",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Aluminat với axit",
+   "name_vi": "Dung dịch NaAlO2 tác dụng với axit (hai nghiệm)",
+   "name_en": "Aluminate solution reacting with acid, two solutions",
+   "latex": "\\begin{cases} n_{H^+} = n_{\\downarrow} & \\text{(axit thiếu)} \\\\ n_{H^+} = 4n_{AlO_2^-} - 3n_{\\downarrow} & \\text{(axit dư, kết tủa tan một phần)} \\end{cases}",
+   "vars": {
+    "n_{H^+}": "số mol axit (ion H+) cần dùng",
+    "n_{\\downarrow}": "số mol kết tủa Al(OH)3 thu được",
+    "n_{AlO_2^-}": "số mol ion aluminat ban đầu"
+   },
+   "units": {
+    "n_{H^+}": "mol",
+    "n_{\\downarrow}": "mol",
+    "n_{AlO_2^-}": "mol"
+   },
+   "conditions": "n(kết tủa) < n(AlO2-); nếu dung dịch còn OH- dư phải cộng thêm n(OH-) vào cả hai nghiệm",
+   "note": "AlO2- + H+ + H2O → Al(OH)3; Al(OH)3 + 3H+ → Al3+ + 3H2O. Dùng CO2 dư thì kết tủa KHÔNG tan.",
+   "tags": [
+    "vo-co",
+    "nhom",
+    "hai-nghiem"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.bai-toan-nguoc-al3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.bai-toan-nguoc-al3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Bài toán ngược",
+   "name_vi": "Bài toán ngược: tính n(OH-) khi biết lượng kết tủa Al(OH)3 (hai nghiệm)",
+   "name_en": "Two solutions for hydroxide amount from a given Al(OH)3 precipitate",
+   "latex": "\\begin{cases} n_{OH^-} = 3n_{\\downarrow} & \\text{(OH}^- \\text{ thiếu)} \\\\ n_{OH^-} = 4n_{Al^{3+}} - n_{\\downarrow} & \\text{(OH}^- \\text{ dư, kết tủa tan một phần)} \\end{cases}",
+   "vars": {
+    "n_{OH^-}": "số mol OH- cần tìm",
+    "n_{\\downarrow}": "số mol kết tủa Al(OH)3 thu được",
+    "n_{Al^{3+}}": "số mol Al3+ ban đầu"
+   },
+   "units": {
+    "n_{OH^-}": "mol",
+    "n_{\\downarrow}": "mol",
+    "n_{Al^{3+}}": "mol"
+   },
+   "conditions": "n(kết tủa) < n(Al3+); nếu dung dịch còn H+ dư phải cộng thêm n(H+) vào cả hai nghiệm",
+   "note": "Giá trị lớn nhất của n(OH-) ứng với nghiệm thứ hai, nhỏ nhất ứng với nghiệm thứ nhất.",
+   "tags": [
+    "vo-co",
+    "nhom",
+    "hai-nghiem"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.ket-tua-al-theo-oh",
+    "chemistry.thpt.co2-kiem.bai-toan-nguoc-hai-nghiem"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.hon-hop-na-al-vao-nuoc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Hỗn hợp kim loại",
+   "name_vi": "Hỗn hợp Na và Al tan hết trong nước",
+   "name_en": "Sodium and aluminium mixture dissolving completely in water",
+   "latex": "n_{H_2} = \\dfrac{1}{2}n_{Na} + \\dfrac{3}{2}n_{Al}\\quad \\text{với điều kiện } n_{Na} \\ge n_{Al}",
+   "vars": {
+    "n_{H_2}": "số mol khí H2 thoát ra",
+    "n_{Na}": "số mol natri",
+    "n_{Al}": "số mol nhôm"
+   },
+   "units": {
+    "n_{H_2}": "mol",
+    "n_{Na}": "mol",
+    "n_{Al}": "mol"
+   },
+   "conditions": "Hỗn hợp tan hoàn toàn trong nước dư, tức là n(NaOH sinh ra) = n(Na) ≥ n(Al)",
+   "note": "Nếu n(Na) < n(Al) thì Al chỉ tan một phần: n(Al phản ứng) = n(Na).",
+   "tags": [
+    "vo-co",
+    "nhom",
+    "kim-loai-kiem"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.al-tac-dung-naoh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.ket-tua-zn-theo-oh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Kẽm",
+   "name_vi": "Kết tủa Zn(OH)2 khi cho kiềm vào dung dịch Zn2+",
+   "name_en": "Zinc hydroxide precipitate versus hydroxide added",
+   "latex": "n_{\\downarrow} = \\begin{cases} \\dfrac{n_{OH^-}}{2} & \\text{khi } n_{OH^-} \\le 2n_{Zn^{2+}} \\\\[4pt] \\dfrac{4n_{Zn^{2+}} - n_{OH^-}}{2} & \\text{khi } 2n_{Zn^{2+}} < n_{OH^-} < 4n_{Zn^{2+}} \\\\[4pt] 0 & \\text{khi } n_{OH^-} \\ge 4n_{Zn^{2+}} \\end{cases}",
+   "vars": {
+    "n_{\\downarrow}": "số mol kết tủa Zn(OH)2",
+    "n_{OH^-}": "số mol OH- cho vào",
+    "n_{Zn^{2+}}": "số mol Zn2+ ban đầu"
+   },
+   "units": {
+    "n_{\\downarrow}": "mol",
+    "n_{OH^-}": "mol",
+    "n_{Zn^{2+}}": "mol"
+   },
+   "conditions": "Kiềm mạnh; kết tủa cực đại khi n(OH-) = 2n(Zn2+), tan hết khi n(OH-) ≥ 4n(Zn2+)",
+   "note": "Zn(OH)2 tan cả trong kiềm dư (tạo ZnO2^2-) và trong NH3 dư (tạo phức [Zn(NH3)4]2+), khác Al(OH)3.",
+   "tags": [
+    "vo-co",
+    "kem",
+    "luong-tinh"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.ket-tua-al-theo-oh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.ket-tua-al-cuc-dai",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Nhôm",
+   "name_vi": "Điều kiện kết tủa Al(OH)3 cực đại và tan hết",
+   "name_en": "Conditions for maximum and complete dissolution of aluminium hydroxide",
+   "latex": "\\begin{cases} n_{OH^-} = 3n_{Al^{3+}} & \\Rightarrow \\text{kết tủa cực đại } n_{\\downarrow} = n_{Al^{3+}} \\\\ n_{OH^-} \\ge 4n_{Al^{3+}} & \\Rightarrow \\text{kết tủa tan hết} \\end{cases}",
+   "vars": {
+    "n_{OH^-}": "số mol OH- cho vào",
+    "n_{Al^{3+}}": "số mol ion Al3+ ban đầu",
+    "n_{\\downarrow}": "số mol kết tủa Al(OH)3"
+   },
+   "units": {
+    "n_{OH^-}": "mol",
+    "n_{Al^{3+}}": "mol",
+    "n_{\\downarrow}": "mol"
+   },
+   "conditions": "Kiềm mạnh (NaOH, KOH, Ba(OH)2); dung dịch không chứa axit dư hay ion khác phản ứng với OH-",
+   "note": "Al3+ + 3OH- → Al(OH)3; Al(OH)3 + OH- → AlO2- + 2H2O. Với NH3 dư thì Al(OH)3 KHÔNG tan.",
+   "tags": [
+    "vo-co",
+    "nhom",
+    "kiem"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.ket-tua-al-theo-oh",
+    "chemistry.thpt.nhom-kem.bai-toan-nguoc-al3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.ket-tua-al-theo-oh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Nhôm",
+   "name_vi": "Số mol kết tủa Al(OH)3 theo số mol OH-",
+   "name_en": "Moles of Al(OH)3 as a function of hydroxide added",
+   "latex": "n_{\\downarrow} = \\begin{cases} \\dfrac{n_{OH^-}}{3} & \\text{khi } n_{OH^-} \\le 3n_{Al^{3+}} \\\\[4pt] 4n_{Al^{3+}} - n_{OH^-} & \\text{khi } 3n_{Al^{3+}} < n_{OH^-} < 4n_{Al^{3+}} \\\\[4pt] 0 & \\text{khi } n_{OH^-} \\ge 4n_{Al^{3+}} \\end{cases}",
+   "vars": {
+    "n_{\\downarrow}": "số mol kết tủa Al(OH)3 còn lại",
+    "n_{OH^-}": "số mol OH- đã cho vào",
+    "n_{Al^{3+}}": "số mol Al3+ ban đầu"
+   },
+   "units": {
+    "n_{\\downarrow}": "mol",
+    "n_{OH^-}": "mol",
+    "n_{Al^{3+}}": "mol"
+   },
+   "conditions": "Dung dịch chỉ chứa Al3+ (không có H+ dư); kiềm mạnh",
+   "note": "Đồ thị n(kết tủa) theo n(OH-) là đường gấp khúc lên với hệ số 1/3 rồi xuống với hệ số -1.",
+   "tags": [
+    "vo-co",
+    "nhom",
+    "do-thi"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.ket-tua-al-cuc-dai"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhom-kem.al-tac-dung-naoh",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Muối nhôm, kẽm tác dụng với kiềm",
+   "subtopic": "Nhôm với kiềm",
+   "name_vi": "Nhôm tác dụng với dung dịch kiềm",
+   "name_en": "Aluminium reacting with alkali solution",
+   "latex": "Al + NaOH + H_2O \\rightarrow NaAlO_2 + \\tfrac{3}{2}H_2 \\uparrow;\\quad n_{H_2} = \\dfrac{3}{2}n_{Al},\\ \\ n_{NaOH} = n_{Al}",
+   "vars": {
+    "n_{Al}": "số mol nhôm phản ứng",
+    "n_{H_2}": "số mol khí hiđro thoát ra",
+    "n_{NaOH}": "số mol NaOH phản ứng"
+   },
+   "units": {
+    "n_{Al}": "mol",
+    "n_{H_2}": "mol",
+    "n_{NaOH}": "mol"
+   },
+   "conditions": "NaOH đủ hoặc dư; Al tan hết",
+   "note": "Zn cũng tan trong kiềm: Zn + 2NaOH → Na2ZnO2 + H2, với n(H2) = n(Zn).",
+   "tags": [
+    "vo-co",
+    "nhom",
+    "kiem"
+   ],
+   "related": [
+    "chemistry.thpt.nhom-kem.hon-hop-na-al-vao-nuoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nuoc-cung.lam-mem-nuoc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Nước cứng",
+   "subtopic": "Làm mềm nước",
+   "name_vi": "Nguyên tắc và lượng hóa chất làm mềm nước cứng",
+   "name_en": "Principle and reagent amount for water softening",
+   "latex": "n_{Na_2CO_3} \\ge n_{Ca^{2+}} + n_{Mg^{2+}};\\quad n_{Ca(OH)_2} = n_{HCO_3^-}/2 \\ (\\text{với nước cứng tạm thời})",
+   "vars": {
+    "n_{Na_2CO_3}": "số mol Na2CO3 tối thiểu cần dùng",
+    "n_{Ca^{2+}}": "số mol ion Ca2+",
+    "n_{Mg^{2+}}": "số mol ion Mg2+",
+    "n_{Ca(OH)_2}": "số mol Ca(OH)2 vừa đủ",
+    "n_{HCO_3^-}": "số mol ion hiđrocacbonat"
+   },
+   "units": {
+    "n_{Na_2CO_3}": "mol",
+    "n_{Ca^{2+}}": "mol",
+    "n_{Mg^{2+}}": "mol",
+    "n_{Ca(OH)_2}": "mol",
+    "n_{HCO_3^-}": "mol"
+   },
+   "conditions": "Nguyên tắc: làm giảm nồng độ Ca2+, Mg2+ bằng cách kết tủa hoặc trao đổi ion",
+   "note": "Na2CO3 và Na3PO4 làm mềm được cả hai loại nước cứng; đun sôi hoặc Ca(OH)2 vừa đủ chỉ làm mềm nước cứng tạm thời.",
+   "tags": [
+    "vo-co",
+    "nuoc-cung",
+    "ung-dung"
+   ],
+   "related": [
+    "chemistry.thpt.nuoc-cung.do-cung-tong-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nuoc-cung.do-cung-tong-cong",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Nước cứng",
+   "subtopic": "Phân loại độ cứng",
+   "name_vi": "Độ cứng của nước và phân loại",
+   "name_en": "Water hardness and its classification",
+   "latex": "\\text{Độ cứng} \\propto \\left(C_{Ca^{2+}} + C_{Mg^{2+}}\\right);\\ \\begin{cases} \\text{tạm thời}: HCO_3^- \\\\ \\text{vĩnh cửu}: Cl^-,\\ SO_4^{2-} \\\\ \\text{toàn phần}: \\text{cả hai} \\end{cases}",
+   "vars": {
+    "C_{Ca^{2+}}": "nồng độ mol ion canxi trong nước",
+    "C_{Mg^{2+}}": "nồng độ mol ion magie trong nước"
+   },
+   "units": {
+    "C_{Ca^{2+}}": "mol/L",
+    "C_{Mg^{2+}}": "mol/L"
+   },
+   "conditions": "Nước cứng là nước chứa nhiều ion Ca2+ và Mg2+",
+   "note": "Nước mềm là nước chứa ít hoặc không chứa Ca2+, Mg2+.",
+   "tags": [
+    "vo-co",
+    "nuoc-cung",
+    "kim-loai-kiem-tho"
+   ],
+   "related": [
+    "chemistry.thpt.nuoc-cung.lam-mem-nuoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-nhom.hieu-suat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Phản ứng nhiệt nhôm",
+   "subtopic": "Hiệu suất",
+   "name_vi": "Hiệu suất phản ứng nhiệt nhôm",
+   "name_en": "Yield of the thermite reaction",
+   "latex": "H = \\dfrac{n_{pu}}{n_{bd}} \\times 100\\%",
+   "vars": {
+    "H": "hiệu suất phản ứng",
+    "n_{pu}": "số mol chất đã phản ứng của chất thiếu",
+    "n_{bd}": "số mol ban đầu của chất thiếu"
+   },
+   "units": {
+    "n_{pu}": "mol",
+    "n_{bd}": "mol",
+    "H": "%"
+   },
+   "conditions": "Hiệu suất luôn tính theo chất phản ứng hết trước (chất thiếu)",
+   "note": "Hỗn hợp sau phản ứng tác dụng NaOH dư sinh H2 chứng tỏ còn Al dư, khi đó hiệu suất tính theo oxit.",
+   "tags": [
+    "vo-co",
+    "nhiet-nhom",
+    "hieu-suat"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-nhom.phuong-trinh-va-bao-toan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.nhiet-nhom.phuong-trinh-va-bao-toan",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Phản ứng nhiệt nhôm",
+   "subtopic": "Phương trình và bảo toàn khối lượng",
+   "name_vi": "Phản ứng nhiệt nhôm và định luật bảo toàn khối lượng",
+   "name_en": "Thermite reaction and mass conservation",
+   "latex": "2Al + Fe_2O_3 \\xrightarrow{t^o} Al_2O_3 + 2Fe;\\quad m_{truoc} = m_{sau}",
+   "vars": {
+    "m_{truoc}": "khối lượng hỗn hợp trước phản ứng",
+    "m_{sau}": "khối lượng hỗn hợp rắn sau phản ứng"
+   },
+   "units": {
+    "m_{truoc}": "g",
+    "m_{sau}": "g"
+   },
+   "conditions": "Phản ứng thực hiện trong điều kiện không có không khí",
+   "note": "Có thể dùng bảo toàn nguyên tố: n(Al ban đầu) = 2n(Al2O3) + n(Al dư); n(Fe) + 2n(Fe2O3 dư) = 2n(Fe2O3 ban đầu).",
+   "tags": [
+    "vo-co",
+    "nhiet-nhom",
+    "bao-toan-khoi-luong"
+   ],
+   "related": [
+    "chemistry.thpt.nhiet-nhom.hieu-suat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.phan-ung.trang-bac-glucozo",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Phản ứng đặc trưng của hợp chất hữu cơ",
+   "subtopic": "Phản ứng tráng bạc",
+   "name_vi": "Phản ứng tráng bạc của glucozơ",
+   "name_en": "Silver mirror reaction of glucose",
+   "latex": "n_{Ag} = 2n_{glucozo};\\quad m_{Ag} = 216\\,n_{glucozo}",
+   "vars": {
+    "n_{Ag}": "số mol Ag kết tủa",
+    "n_{glucozo}": "số mol glucozơ (hoặc fructozơ) tham gia",
+    "m_{Ag}": "khối lượng bạc thu được"
+   },
+   "units": {
+    "n_{Ag}": "mol",
+    "n_{glucozo}": "mol",
+    "m_{Ag}": "g"
+   },
+   "conditions": "Dung dịch AgNO3/NH3, đun nóng; glucozơ có nhóm -CHO",
+   "note": "M(Ag) = 108 g/mol. Fructozơ cũng tráng bạc vì chuyển hóa thành glucozơ trong môi trường kiềm. Saccarozơ KHÔNG tráng bạc.",
+   "tags": [
+    "huu-co",
+    "trang-bac",
+    "cacbohidrat"
+   ],
+   "related": [
+    "chemistry.thpt.phan-ung.trang-bac-andehit",
+    "chemistry.thpt.cttq.cacbohidrat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.polime.cao-su-luu-hoa",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Polime và vật liệu polime",
+   "subtopic": "Cao su lưu hóa",
+   "name_vi": "Phần trăm lưu huỳnh trong cao su lưu hóa",
+   "name_en": "Sulfur content of vulcanized rubber",
+   "latex": "\\%S = \\dfrac{32a}{68k + 32a - 2} \\times 100\\%",
+   "vars": {
+    "\\%S": "phần trăm khối lượng lưu huỳnh trong cao su lưu hóa",
+    "a": "số nguyên tử S trong một cầu nối lưu huỳnh (a = 1 cầu monosunfua, a = 2 cầu đisunfua)",
+    "k": "số mắt xích isopren C5H8 ứng với một cầu nối lưu huỳnh"
+   },
+   "units": {
+    "\\%S": "%"
+   },
+   "conditions": "Mỗi cầu nối lưu huỳnh thay thế 2 nguyên tử H ở hai mạch cao su nên khối lượng mắt xích giảm 2 đvC; M(C5H8) = 68 g/mol; k nguyên dương",
+   "note": "Với cầu đisunfua (a = 2): %S = 64/(68k + 62). Bài toán quen thuộc: cao su lưu hóa chứa 2% S thì 64/(68k + 62) = 0,02, suy ra k ≈ 46 mắt xích isopren có một cầu nối. %S càng lớn thì cao su càng cứng.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "cao-su"
+   ],
+   "related": [
+    "chemistry.thpt.polime.phan-tram-nguyen-to",
+    "chemistry.thpt.cttq.ankadien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.polime.clo-hoa-pvc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Polime và vật liệu polime",
+   "subtopic": "Clo hóa polime",
+   "name_vi": "Clo hóa PVC điều chế tơ clorin",
+   "name_en": "Chlorination of PVC to make chlorinated fibre",
+   "latex": "\\%Cl = \\dfrac{35{,}5(k+1)}{62{,}5k + 34{,}5} \\times 100\\%",
+   "vars": {
+    "\\%Cl": "phần trăm khối lượng clo trong sản phẩm",
+    "k": "số mắt xích PVC (-CH2-CHCl-) ứng với một phân tử Cl2 tham gia thế"
+   },
+   "units": {
+    "\\%Cl": "%"
+   },
+   "conditions": "Mỗi phân tử Cl2 thế một nguyên tử H và giải phóng một phân tử HCl",
+   "note": "Từ M(PVC k mắt xích) = 62,5k, sau khi thế: 62,5k + 71 − 36,5 = 62,5k + 34,5.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "pvc"
+   ],
+   "related": [
+    "chemistry.thpt.polime.phan-tram-nguyen-to"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.polime.hieu-suat",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Polime và vật liệu polime",
+   "subtopic": "Hiệu suất điều chế",
+   "name_vi": "Hiệu suất phản ứng trùng hợp và trùng ngưng",
+   "name_en": "Yield of polymerization and polycondensation",
+   "latex": "H = \\dfrac{m_{polime}}{m_{monome\\ bd}} \\times 100\\%\\ (\\text{trùng hợp});\\quad H = \\dfrac{m_{polime}}{m_{monome\\ bd} - m_{H_2O}} \\times 100\\%\\ (\\text{trùng ngưng})",
+   "vars": {
+    "H": "hiệu suất phản ứng",
+    "m_{polime}": "khối lượng polime thực tế thu được",
+    "m_{monome\\ bd}": "khối lượng monome ban đầu",
+    "m_{H_2O}": "khối lượng nước tách ra theo lí thuyết trong trùng ngưng"
+   },
+   "units": {
+    "m_{polime}": "g",
+    "m_{monome\\ bd}": "g",
+    "m_{H_2O}": "g",
+    "H": "%"
+   },
+   "conditions": "Trùng hợp bảo toàn khối lượng nên khối lượng polime tối đa bằng khối lượng monome",
+   "note": "Nilon-6,6 điều chế bằng trùng ngưng hexametylenđiamin và axit ađipic, mỗi mắt xích tách 2 phân tử H2O.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "hieu-suat"
+   ],
+   "related": [
+    "chemistry.thpt.polime.he-so-trung-hop",
+    "chemistry.thpt.dai-cuong.hieu-suat-phan-ung"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.polime.he-so-trung-hop",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Polime và vật liệu polime",
+   "subtopic": "Hệ số polime hóa",
+   "name_vi": "Hệ số trùng hợp (số mắt xích) của polime",
+   "name_en": "Degree of polymerization",
+   "latex": "n = \\dfrac{M_{polime}}{M_{monome}}",
+   "vars": {
+    "n": "hệ số trùng hợp, cũng là số mắt xích trong một phân tử polime",
+    "M_{polime}": "khối lượng mol trung bình của polime",
+    "M_{monome}": "khối lượng mol của monome (bằng khối lượng mol của một mắt xích)"
+   },
+   "units": {
+    "M_{polime}": "g/mol",
+    "M_{monome}": "g/mol"
+   },
+   "conditions": "Phản ứng trùng hợp: khối lượng mắt xích bằng khối lượng monome",
+   "note": "Với trùng ngưng thì M(mắt xích) = M(monome) − M(phân tử nhỏ tách ra), ví dụ nilon-6,6 tách H2O.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "trung-hop"
+   ],
+   "related": [
+    "chemistry.thpt.polime.hieu-suat",
+    "chemistry.thpt.cttq.polime"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.polime.so-mat-xich-theo-avogadro",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Polime và vật liệu polime",
+   "subtopic": "Hệ số polime hóa",
+   "name_vi": "Số mắt xích có trong một khối lượng polime",
+   "name_en": "Number of monomer units in a given polymer mass",
+   "latex": "N_{mat\\ xich} = \\dfrac{m_{polime}}{M_{mat\\ xich}} \\cdot N_A",
+   "vars": {
+    "N_{mat\\ xich}": "tổng số mắt xích",
+    "m_{polime}": "khối lượng polime",
+    "M_{mat\\ xich}": "khối lượng mol của một mắt xích",
+    "N_A": "hằng số Avogadro"
+   },
+   "units": {
+    "m_{polime}": "g",
+    "M_{mat\\ xich}": "g/mol",
+    "N_A": "mol^-1"
+   },
+   "conditions": "Polime đồng nhất, mắt xích xác định",
+   "note": "N_A = 6,022·10^23 mol^-1.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "avogadro"
+   ],
+   "related": [
+    "chemistry.thpt.polime.he-so-trung-hop"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.polime.phan-tram-nguyen-to",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Polime và vật liệu polime",
+   "subtopic": "Thành phần nguyên tố",
+   "name_vi": "Phần trăm khối lượng nguyên tố trong polime",
+   "name_en": "Mass percentage of an element in a polymer",
+   "latex": "\\%X = \\dfrac{s \\cdot M_X}{M_{mat\\ xich}} \\times 100\\%",
+   "vars": {
+    "\\%X": "phần trăm khối lượng của nguyên tố X trong polime",
+    "s": "số nguyên tử X trong một mắt xích",
+    "M_X": "khối lượng mol nguyên tử của X",
+    "M_{mat\\ xich}": "khối lượng mol của một mắt xích"
+   },
+   "units": {
+    "M_X": "g/mol",
+    "M_{mat\\ xich}": "g/mol",
+    "\\%X": "%"
+   },
+   "conditions": "Bỏ qua ảnh hưởng của hai nhóm cuối mạch vì hệ số polime hóa rất lớn",
+   "note": "Ví dụ PVC (-CH2-CHCl-)n có M(mắt xích) = 62,5 nên %Cl = 35,5/62,5 = 56,8%.",
+   "tags": [
+    "huu-co",
+    "polime",
+    "thanh-phan-nguyen-to"
+   ],
+   "related": [
+    "chemistry.thpt.polime.clo-hoa-pvc",
+    "chemistry.thpt.polime.cao-su-luu-hoa"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.sat.fe-tac-dung-hno3",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Sắt và hợp chất",
+   "subtopic": "Fe với axit oxi hóa mạnh",
+   "name_vi": "Điều kiện tạo muối Fe(II) hay Fe(III) khi Fe tác dụng với HNO3",
+   "name_en": "Condition for iron(II) or iron(III) salt with nitric acid",
+   "latex": "\\begin{cases} n_{Fe} \\le \\dfrac{n_e}{3} & \\Rightarrow \\text{chỉ tạo } Fe^{3+} \\\\[4pt] n_{Fe} \\ge \\dfrac{n_e}{2} & \\Rightarrow \\text{chỉ tạo } Fe^{2+},\\ Fe \\text{ có thể dư} \\\\[4pt] \\dfrac{n_e}{3} < n_{Fe} < \\dfrac{n_e}{2} & \\Rightarrow \\text{tạo cả } Fe^{2+} \\text{ và } Fe^{3+} \\end{cases}",
+   "vars": {
+    "n_{Fe}": "số mol Fe tham gia phản ứng",
+    "n_e": "số mol electron mà sản phẩm khử nhận"
+   },
+   "units": {
+    "n_{Fe}": "mol",
+    "n_e": "mol"
+   },
+   "conditions": "Fe tan hết hoặc còn dư; Fe dư sẽ khử tiếp Fe3+ thành Fe2+",
+   "note": "Fe + 2Fe(NO3)3 → 3Fe(NO3)2. Fe, Al, Cr bị thụ động trong HNO3 đặc nguội và H2SO4 đặc nguội.",
+   "tags": [
+    "vo-co",
+    "sat",
+    "hno3",
+    "bien-luan"
+   ],
+   "related": [
+    "chemistry.thpt.kim-loai-hno3.so-mol-electron-trao-doi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-phan.so-mol-electron",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện phân",
+   "subtopic": "Bảo toàn electron",
+   "name_vi": "Số mol electron trao đổi khi điện phân",
+   "name_en": "Moles of electrons transferred during electrolysis",
+   "latex": "n_e = \\dfrac{It}{F} = \\dfrac{It}{96500}",
+   "vars": {
+    "n_e": "số mol electron đi qua mạch",
+    "I": "cường độ dòng điện",
+    "t": "thời gian điện phân",
+    "F": "hằng số Faraday"
+   },
+   "units": {
+    "n_e": "mol",
+    "I": "A",
+    "t": "s",
+    "F": "C/mol"
+   },
+   "conditions": "Dòng điện không đổi; hiệu suất 100%",
+   "note": "Số mol electron ở catot luôn bằng số mol electron ở anot: đây là chìa khóa giải bài điện phân.",
+   "tags": [
+    "vo-co",
+    "dien-phan",
+    "bao-toan-electron"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+    "chemistry.thpt.dien-phan.thu-tu-catot"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-phan.khoi-luong-catot",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện phân",
+   "subtopic": "Khối lượng catot",
+   "name_vi": "Khối lượng kim loại bám vào catot và độ giảm khối lượng dung dịch",
+   "name_en": "Mass deposited at the cathode and the decrease in solution mass",
+   "latex": "m_{catot} = \\dfrac{A}{n}\\,n_{e(KL)};\\quad m_{dd\\ giam} = m_{KL} + m_{khi}",
+   "vars": {
+    "m_{catot}": "khối lượng kim loại bám vào catot",
+    "A": "khối lượng mol nguyên tử của kim loại",
+    "n": "số electron mà một ion kim loại nhận",
+    "n_{e(KL)}": "số mol electron dùng để khử ion kim loại đó",
+    "m_{dd\\ giam}": "độ giảm khối lượng dung dịch sau điện phân",
+    "m_{KL}": "khối lượng kim loại thoát ra ở catot",
+    "m_{khi}": "tổng khối lượng khí thoát ra ở hai điện cực"
+   },
+   "units": {
+    "m_{catot}": "g",
+    "A": "g/mol",
+    "n_{e(KL)}": "mol",
+    "m_{dd\\ giam}": "g",
+    "m_{KL}": "g",
+    "m_{khi}": "g"
+   },
+   "conditions": "Điện cực trơ, hiệu suất 100%; nếu nhiều cation cùng bị khử thì cộng theo đúng thứ tự điện phân, phần electron dư dùng để khử nước",
+   "note": "Ví dụ điện phân dung dịch CuSO4: m(catot) = 64·n_e/2 = 32n_e và khối lượng dung dịch giảm = m(Cu) + m(O2).",
+   "tags": [
+    "vo-co",
+    "dien-phan",
+    "catot"
+   ],
+   "related": [
+    "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+    "chemistry.thpt.dien-phan.thu-tu-catot"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-phan.the-tich-khi",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện phân",
+   "subtopic": "Sản phẩm khí",
+   "name_vi": "Số mol khí thoát ra ở các điện cực khi điện phân",
+   "name_en": "Moles of gas evolved at the electrodes",
+   "latex": "n_{Cl_2} = \\dfrac{n_e}{2},\\quad n_{O_2} = \\dfrac{n_e}{4},\\quad n_{H_2} = \\dfrac{n_e}{2};\\quad V = 24{,}79\\,n\\ (\\text{đkc}) = 22{,}4\\,n\\ (\\text{đktc})",
+   "vars": {
+    "n_e": "số mol electron trao đổi (phần dùng để sinh khí đó)",
+    "n_{Cl_2}": "số mol khí clo ở anot",
+    "n_{O_2}": "số mol khí oxi ở anot",
+    "n_{H_2}": "số mol khí hiđro ở catot",
+    "V": "thể tích khí ở điều kiện tiêu chuẩn",
+    "n": "số mol khí"
+   },
+   "units": {
+    "n_e": "mol",
+    "n_{Cl_2}": "mol",
+    "n_{O_2}": "mol",
+    "n_{H_2}": "mol",
+    "V": "L",
+    "n": "mol"
+   },
+   "conditions": "Ở điều kiện chuẩn theo chương trình GDPT 2018 (đkc: 25 °C, 1 bar) thì 1 mol khí chiếm 24,79 L; ở điều kiện tiêu chuẩn cũ (đktc: 0 °C, 1 atm) là 22,4 L",
+   "note": "Mỗi công thức chỉ dùng phần electron thực sự sinh ra khí đó. Khí ở catot chỉ xuất hiện khi cation kim loại đã bị khử hết (hoặc dung dịch có axit).",
+   "tags": [
+    "vo-co",
+    "dien-phan",
+    "the-tich-khi"
+   ],
+   "related": [
+    "chemistry.thpt.dien-phan.so-mol-electron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-phan.thay-doi-ph",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện phân",
+   "subtopic": "Sự thay đổi pH",
+   "name_vi": "Sự thay đổi pH của dung dịch khi điện phân",
+   "name_en": "pH change of the solution during electrolysis",
+   "latex": "\\begin{cases} \\text{điện phân } NaCl \\text{ (màng ngăn)}: & pH \\uparrow \\ (\\text{tạo } NaOH) \\\\ \\text{điện phân } CuSO_4: & pH \\downarrow \\ (\\text{tạo } H_2SO_4) \\\\ \\text{điện phân } Na_2SO_4: & pH \\text{ hầu như không đổi} \\end{cases}",
+   "vars": {
+    "pH": "chỉ số pH của dung dịch sau điện phân"
+   },
+   "units": {},
+   "conditions": "Điện phân dung dịch với điện cực trơ",
+   "note": "Muối của kim loại mạnh với gốc axit mạnh có oxi (Na2SO4, KNO3) thực chất là điện phân nước, nồng độ muối tăng dần.",
+   "tags": [
+    "vo-co",
+    "dien-phan",
+    "ph"
+   ],
+   "related": [
+    "chemistry.thpt.dien-phan.thu-tu-anot",
+    "chemistry.thpt.dung-dich.ph-dung-dich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-phan.thu-tu-anot",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện phân",
+   "subtopic": "Thứ tự điện phân",
+   "name_vi": "Thứ tự oxi hóa ở anot khi điện phân dung dịch",
+   "name_en": "Order of oxidation at the anode in solution electrolysis",
+   "latex": "S^{2-} > I^- > Br^- > Cl^- > H_2O > SO_4^{2-},\\ NO_3^-,\\ F^-",
+   "vars": {
+    "Cl^-": "ion clorua, bị oxi hóa tạo Cl2",
+    "H_2O": "nước, bị oxi hóa tạo O2 và H+",
+    "SO_4^{2-}": "ion sunfat, không bị điện phân trong dung dịch"
+   },
+   "units": {},
+   "conditions": "Anot trơ (than chì, platin). Nếu anot tan (kim loại) thì chính anot bị oxi hóa trước",
+   "note": "Khi nước bị oxi hóa: 2H2O → O2 + 4H+ + 4e, làm dung dịch quanh anot có tính axit.",
+   "tags": [
+    "vo-co",
+    "dien-phan",
+    "anot"
+   ],
+   "related": [
+    "chemistry.thpt.dien-phan.thu-tu-catot",
+    "chemistry.thpt.dien-phan.the-tich-khi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dien-phan.thu-tu-catot",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Điện phân",
+   "subtopic": "Thứ tự điện phân",
+   "name_vi": "Thứ tự khử ở catot khi điện phân dung dịch",
+   "name_en": "Order of reduction at the cathode in solution electrolysis",
+   "latex": "Ag^+ > Fe^{3+} > Cu^{2+} > H^+_{(axit)} > Pb^{2+} > Sn^{2+} > Ni^{2+} > Fe^{2+} > Zn^{2+} > H_2O",
+   "vars": {
+    "Ag^+": "ion bạc, bị khử trước nhất",
+    "Fe^{3+}": "ion sắt(III), bị khử về Fe2+ trước khi Cu2+ bị khử",
+    "Cu^{2+}": "ion đồng(II)",
+    "H^+_{(axit)}": "ion H+ của axit",
+    "Pb^{2+}": "ion chì(II)",
+    "Sn^{2+}": "ion thiếc(II)",
+    "Ni^{2+}": "ion niken(II)",
+    "Fe^{2+}": "ion sắt(II)",
+    "Zn^{2+}": "ion kẽm, cation cuối cùng còn bị khử trước nước",
+    "H_2O": "nước, bị khử tạo H2 và OH-"
+   },
+   "units": {},
+   "conditions": "Điện phân dung dịch với điện cực trơ; các cation K+, Na+, Ca2+, Mg2+, Al3+ (kim loại từ Al trở về trước) KHÔNG bị khử trong dung dịch, khi đó nước bị khử thay",
+   "note": "Fe3+ bị khử hai nấc: Fe3+ + 1e → Fe2+ (rất sớm), sau đó Fe2+ + 2e → Fe (rất muộn). Khi nước bị khử: 2H2O + 2e → H2 + 2OH-, làm dung dịch quanh catot có tính bazơ.",
+   "tags": [
+    "vo-co",
+    "dien-phan",
+    "catot"
+   ],
+   "related": [
+    "chemistry.thpt.dien-phan.thu-tu-anot"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.amin-bac-mot",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Amin",
+   "name_vi": "Số đồng phân amin no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated monofunctional amines",
+   "latex": "S_{tong} = 2^{\\,n-1},\\quad S_{bac\\ I} = 2^{\\,n-2}\\quad (n < 5)",
+   "vars": {
+    "S_{tong}": "tổng số đồng phân amin (cả bậc I, II, III)",
+    "S_{bac\\ I}": "số đồng phân amin bậc một",
+    "n": "số nguyên tử cacbon của amin CnH2n+3N"
+   },
+   "units": {},
+   "conditions": "Công thức tổng số đồng phân amin đúng với 1 ≤ n ≤ 4; công thức amin bậc I chỉ đúng với 2 ≤ n ≤ 4 (n = 1 chỉ có duy nhất một amin bậc I là CH3NH2); từ n ≥ 5 phải đếm trực tiếp",
+   "note": "n = 2 cho 2 amin (1 bậc I, 1 bậc II); n = 3 cho 4 amin (2 bậc I); n = 4 cho 8 amin (4 bậc I).",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "amin"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.amin",
+    "chemistry.thpt.dong-phan.ancol-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.trieste-glixerol",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Chất béo",
+   "name_vi": "Số trieste tối đa tạo từ glixerol và n axit béo",
+   "name_en": "Maximum number of triglycerides from glycerol and n fatty acids",
+   "latex": "S = \\dfrac{n^2(n+1)}{2}",
+   "vars": {
+    "S": "số trieste (triglixerit) tối đa",
+    "n": "số axit béo khác nhau tham gia"
+   },
+   "units": {},
+   "conditions": "Xét cả đồng phân vị trí trên ba nhóm -OH của glixerol",
+   "note": "n = 2 cho 6 trieste, n = 3 cho 18 trieste. Đây là công thức đếm quen thuộc trong đề thi.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "chat-beo"
+   ],
+   "related": [
+    "chemistry.thpt.cttq.chat-beo",
+    "chemistry.thpt.peptit.so-dipeptit-tripeptit"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "chemistry.thpt.dong-phan.este-no-don-chuc",
+   "subject": "chemistry",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "topic": "Đếm đồng phân hợp chất hữu cơ",
+   "subtopic": "Este",
+   "name_vi": "Số đồng phân este no, đơn chức, mạch hở",
+   "name_en": "Number of isomers of saturated monofunctional esters",
+   "latex": "S = 2^{\\,n-2}\\quad (1 < n < 5)",
+   "vars": {
+    "S": "số đồng phân este",
+    "n": "số nguyên tử cacbon của este CnH2nO2"
+   },
+   "units": {},
+   "conditions": "Công thức đúng với n = 2, 3, 4; từ n = 5 trở đi phải đếm trực tiếp (C5H10O2 có 9 este)",
+   "note": "n = 2 cho 1 este (HCOOCH3), n = 3 cho 2, n = 4 cho 4 este. Tổng số đồng phân đơn chức mạch hở của CnH2nO2 = số axit + số este.",
+   "tags": [
+    "huu-co",
+    "dem-dong-phan",
+    "este"
+   ],
+   "related": [
+    "chemistry.thpt.dong-phan.axit-no-don-chuc",
+    "chemistry.thpt.cttq.este-no-don-chuc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  }
+ ]
+}

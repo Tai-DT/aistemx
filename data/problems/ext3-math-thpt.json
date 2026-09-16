@@ -1,0 +1,4551 @@
+{
+ "meta": {
+  "file": "ext3-math-thpt.json",
+  "subject": "math",
+  "title": "Bài tập bổ sung Toán THPT (đợt 3): phủ các công thức chưa có bài luyện (GDPT 2018)",
+  "levels": [
+   "thpt"
+  ],
+  "count": 94
+ },
+ "problems": [
+  {
+   "id": "prob.math.ext3-math-thpt.0001",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho $\\cot\\alpha = 2$ và $\\alpha \\in \\left(0;\\dfrac{\\pi}{2}\\right)$. Tính $\\cos\\alpha$.",
+   "statement_en": "Given cot a = 2 and a in (0, pi/2), find cos a.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Dùng hệ thức liên hệ giữa côtang và sin để tìm sin.",
+     "latex": "1+\\cot^{2}\\alpha=\\frac{1}{\\sin^{2}\\alpha}\\Rightarrow \\sin^{2}\\alpha=\\frac{1}{1+2^{2}}=\\frac{1}{5}"
+    },
+    {
+     "explain": "Vì \\alpha nhọn nên sin dương, suy ra sin.",
+     "latex": "\\sin\\alpha=\\frac{1}{\\sqrt{5}}"
+    },
+    {
+     "explain": "Dùng định nghĩa côtang: cos = cot·sin.",
+     "latex": "\\cos\\alpha=\\cot\\alpha\\cdot\\sin\\alpha=2\\cdot\\frac{1}{\\sqrt{5}}=\\frac{2\\sqrt{5}}{5}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.he-thuc-cot-sin",
+    "math.thpt.luong-giac.dinh-nghia-tan-cot"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "he-thuc-luong-giac",
+    "cot"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "2√5/5"
+    },
+    {
+     "key": "B",
+     "text": "√5/5",
+     "why_wrong": "Đây là giá trị của sin α chứ không phải cos α."
+    },
+    {
+     "key": "C",
+     "text": "2/3",
+     "why_wrong": "Nhầm cot = cos/sin thành cos = cot/3 không có cơ sở."
+    },
+    {
+     "key": "D",
+     "text": "-2√5/5",
+     "why_wrong": "Sai dấu: với α nhọn thì cos α > 0."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0002",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Rút gọn biểu thức $P=\\cos(-\\alpha)-\\cos(\\pi-\\alpha)$.",
+   "statement_en": "Simplify P = cos(-a) - cos(pi - a).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Cung đối nhau: côsin giữ nguyên.",
+     "latex": "\\cos(-\\alpha)=\\cos\\alpha"
+    },
+    {
+     "explain": "Cung bù nhau: côsin đổi dấu.",
+     "latex": "\\cos(\\pi-\\alpha)=-\\cos\\alpha"
+    },
+    {
+     "explain": "Thay vào và rút gọn.",
+     "latex": "P=\\cos\\alpha-(-\\cos\\alpha)=2\\cos\\alpha"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.cung-doi-nhau",
+    "math.thpt.luong-giac.cung-bu-nhau"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "cung-lien-ket",
+    "rut-gon"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "2cos α"
+    },
+    {
+     "key": "B",
+     "text": "0",
+     "why_wrong": "Cho rằng hai số hạng bằng nhau nên triệt tiêu, quên rằng cos(π−α)=−cos α."
+    },
+    {
+     "key": "C",
+     "text": "2sin α",
+     "why_wrong": "Nhầm sang công thức cung phụ sin."
+    },
+    {
+     "key": "D",
+     "text": "-2cos α",
+     "why_wrong": "Sai dấu khi trừ đi số âm."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0003",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Rút gọn $Q=\\sin(\\pi+\\alpha)+\\cos\\left(\\dfrac{\\pi}{2}+\\alpha\\right)$.",
+   "statement_en": "Simplify Q = sin(pi + a) + cos(pi/2 + a).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Cung hơn kém pi: sin đổi dấu.",
+     "latex": "\\sin(\\pi+\\alpha)=-\\sin\\alpha"
+    },
+    {
+     "explain": "Cung hơn kém pi/2: cos(pi/2+α) = -sin α.",
+     "latex": "\\cos\\left(\\frac{\\pi}{2}+\\alpha\\right)=-\\sin\\alpha"
+    },
+    {
+     "explain": "Cộng lại.",
+     "latex": "Q=-\\sin\\alpha-\\sin\\alpha=-2\\sin\\alpha"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.cung-hon-kem-pi",
+    "math.thpt.luong-giac.cung-hon-kem-pi-hai"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "cung-lien-ket",
+    "rut-gon"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "-2sin α"
+    },
+    {
+     "key": "B",
+     "text": "0",
+     "why_wrong": "Cho rằng hai số hạng đối nhau, sai dấu công thức cos(π/2+α)."
+    },
+    {
+     "key": "C",
+     "text": "-2cos α",
+     "why_wrong": "Nhầm cos(π/2+α)=−cos α."
+    },
+    {
+     "key": "D",
+     "text": "2sin α",
+     "why_wrong": "Sai dấu của sin(π+α)."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0004",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Cho $\\cot a = 2$ và $\\cot b = 3$. Tính $\\cot(a+b)$.",
+   "statement_en": "Given cot a = 2, cot b = 3, find cot(a+b).",
+   "answer": "1",
+   "solution_steps": [
+    {
+     "explain": "Áp dụng công thức cộng đối với côtang.",
+     "latex": "\\cot(a+b)=\\frac{\\cot a\\cot b-1}{\\cot b+\\cot a}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\cot(a+b)=\\frac{2\\cdot 3-1}{3+2}=\\frac{5}{5}=1"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.cong-thuc-cong-cot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "cong-thuc-cong",
+    "cot"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 1,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0005",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Cho $\\tan a = 2$. Tính $\\tan 3a$ (làm tròn đến 4 chữ số thập phân).",
+   "statement_en": "Given tan a = 2, find tan 3a.",
+   "answer": "0.1818",
+   "solution_steps": [
+    {
+     "explain": "Áp dụng công thức nhân ba của tang.",
+     "latex": "\\tan 3a=\\frac{3\\tan a-\\tan^{3}a}{1-3\\tan^{2}a}"
+    },
+    {
+     "explain": "Thay tan a = 2.",
+     "latex": "\\tan 3a=\\frac{3\\cdot 2-2^{3}}{1-3\\cdot 2^{2}}=\\frac{6-8}{1-12}=\\frac{-2}{-11}=\\frac{2}{11}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.nhan-ba-tan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhan-ba",
+    "tan"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.18181818181818182,
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0006",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Cho $\\cos 2a = \\dfrac{1}{3}$. Tính $\\tan^{2}a$.",
+   "statement_en": "Given cos 2a = 1/3, find tan^2 a.",
+   "answer": "0.5",
+   "solution_steps": [
+    {
+     "explain": "Dùng công thức hạ bậc của tang bình phương.",
+     "latex": "\\tan^{2}a=\\frac{1-\\cos 2a}{1+\\cos 2a}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\tan^{2}a=\\frac{1-\\frac{1}{3}}{1+\\frac{1}{3}}=\\frac{\\frac{2}{3}}{\\frac{4}{3}}=\\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.ha-bac-tan-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "ha-bac",
+    "tan"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.5,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0007",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Dùng công thức hạ bậc, tính giá trị của $\\sin^{3}\\dfrac{\\pi}{6}$.",
+   "statement_en": "Using power-reduction, compute sin^3(pi/6).",
+   "answer": "0.125",
+   "solution_steps": [
+    {
+     "explain": "Công thức hạ bậc của sin lập phương.",
+     "latex": "\\sin^{3}a=\\frac{3\\sin a-\\sin 3a}{4}"
+    },
+    {
+     "explain": "Thay a = pi/6, chú ý 3a = pi/2.",
+     "latex": "\\sin^{3}\\frac{\\pi}{6}=\\frac{3\\sin\\frac{\\pi}{6}-\\sin\\frac{\\pi}{2}}{4}=\\frac{3\\cdot\\frac{1}{2}-1}{4}=\\frac{1}{8}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.ha-bac-sin-lap-phuong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "ha-bac",
+    "sin"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.125,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0008",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Cho $t=\\tan\\dfrac{x}{2}=2$. Tính $\\sin x$.",
+   "statement_en": "Given t = tan(x/2) = 2, find sin x.",
+   "answer": "0.8",
+   "solution_steps": [
+    {
+     "explain": "Biểu diễn sin theo t = tan(x/2).",
+     "latex": "\\sin x=\\frac{2t}{1+t^{2}}"
+    },
+    {
+     "explain": "Thay t = 2.",
+     "latex": "\\sin x=\\frac{2\\cdot 2}{1+2^{2}}=\\frac{4}{5}=0{,}8"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.cong-thuc-theo-tan-nua-goc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tan-nua-goc",
+    "bien-doi"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.8,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0009",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Cho $\\cos a=\\dfrac{1}{2}$ với $a\\in\\left(0;\\dfrac{\\pi}{2}\\right)$. Tính $\\sin\\dfrac{a}{2}$.",
+   "statement_en": "Given cos a = 1/2, a acute, find sin(a/2).",
+   "answer": "0.5",
+   "solution_steps": [
+    {
+     "explain": "Công thức nửa góc của sin.",
+     "latex": "\\left|\\sin\\frac{a}{2}\\right|=\\sqrt{\\frac{1-\\cos a}{2}}"
+    },
+    {
+     "explain": "Vì a nhọn nên a/2 nhọn, sin(a/2) > 0.",
+     "latex": "\\sin\\frac{a}{2}=\\sqrt{\\frac{1-\\frac{1}{2}}{2}}=\\sqrt{\\frac{1}{4}}=\\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.nua-goc-sin-cos"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "nua-goc",
+    "sin"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.5,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0010",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Tính giá trị của $\\cos 75^{\\circ}+\\cos 15^{\\circ}$.",
+   "statement_en": "Compute cos75 + cos15.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Biến đổi tổng hai côsin thành tích.",
+     "latex": "\\cos a+\\cos b=2\\cos\\frac{a+b}{2}\\cos\\frac{a-b}{2}"
+    },
+    {
+     "explain": "Thay a=75, b=15.",
+     "latex": "=2\\cos 45^{\\circ}\\cos 30^{\\circ}=2\\cdot\\frac{\\sqrt{2}}{2}\\cdot\\frac{\\sqrt{3}}{2}=\\frac{\\sqrt{6}}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.tong-thanh-tich-cos-cong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tong-thanh-tich",
+    "cos"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "√6/2"
+    },
+    {
+     "key": "B",
+     "text": "√6/4",
+     "why_wrong": "Quên hệ số 2 phía trước tích."
+    },
+    {
+     "key": "C",
+     "text": "√2/2",
+     "why_wrong": "Chỉ lấy cos45, bỏ sót cos30."
+    },
+    {
+     "key": "D",
+     "text": "√6",
+     "why_wrong": "Nhân đôi kết quả đúng do tính sai hệ số."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0011",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\sin 75^{\\circ}\\sin 15^{\\circ}$.",
+   "statement_en": "Compute sin75 * sin15.",
+   "answer": "0.25",
+   "solution_steps": [
+    {
+     "explain": "Biến đổi tích hai sin thành tổng.",
+     "latex": "\\sin a\\sin b=\\frac{1}{2}\\left[\\cos(a-b)-\\cos(a+b)\\right]"
+    },
+    {
+     "explain": "Thay a=75, b=15.",
+     "latex": "=\\frac{1}{2}\\left[\\cos 60^{\\circ}-\\cos 90^{\\circ}\\right]=\\frac{1}{2}\\left[\\frac{1}{2}-0\\right]=\\frac{1}{4}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.tich-thanh-tong-sin-sin"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tich-thanh-tong",
+    "sin"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.25,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0012",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Rút gọn biểu thức $P=\\dfrac{\\sin 5x-\\sin 3x}{\\cos 5x+\\cos 3x}$ (với các mẫu số khác 0).",
+   "statement_en": "Simplify (sin5x - sin3x)/(cos5x + cos3x).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hiệu hai sin thành tích.",
+     "latex": "\\sin 5x-\\sin 3x=2\\cos 4x\\sin x"
+    },
+    {
+     "explain": "Tổng hai côsin thành tích.",
+     "latex": "\\cos 5x+\\cos 3x=2\\cos 4x\\cos x"
+    },
+    {
+     "explain": "Chia và rút gọn cos4x.",
+     "latex": "P=\\frac{2\\cos 4x\\sin x}{2\\cos 4x\\cos x}=\\tan x"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.tong-thanh-tich-sin-tru",
+    "math.thpt.luong-giac.tong-thanh-tich-cos-cong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tong-thanh-tich",
+    "rut-gon"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "tan x"
+    },
+    {
+     "key": "B",
+     "text": "cot x",
+     "why_wrong": "Đảo ngược tử và mẫu khi rút gọn."
+    },
+    {
+     "key": "C",
+     "text": "tan 4x",
+     "why_wrong": "Rút gọn nhầm giữ lại cos4x thay vì cos x, sin x."
+    },
+    {
+     "key": "D",
+     "text": "tan 2x",
+     "why_wrong": "Lấy trung bình 5x và 3x một cách sai lầm."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0013",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Cho $a+b=\\dfrac{\\pi}{3}$. Tính giá trị của $(\\tan a+\\tan b)\\cos a\\cos b$.",
+   "statement_en": "Given a+b = pi/3, compute (tan a + tan b) cos a cos b.",
+   "answer": "0.8660",
+   "solution_steps": [
+    {
+     "explain": "Biến đổi tổng hai tang thành tích.",
+     "latex": "\\tan a+\\tan b=\\frac{\\sin(a+b)}{\\cos a\\cos b}"
+    },
+    {
+     "explain": "Nhân hai vế với cos a cos b.",
+     "latex": "(\\tan a+\\tan b)\\cos a\\cos b=\\sin(a+b)=\\sin\\frac{\\pi}{3}=\\frac{\\sqrt{3}}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.tong-thanh-tich-tan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tong-thanh-tich",
+    "tan"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0.8660254037844386,
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0014",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Giải phương trình $\\cot x=\\sqrt{3}$.",
+   "statement_en": "Solve cot x = sqrt(3).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Công thức nghiệm của phương trình côtang.",
+     "latex": "\\cot x=m\\iff x=\\operatorname{arccot}m+k\\pi,\\ k\\in\\mathbb{Z}"
+    },
+    {
+     "explain": "Với m = √3 thì arccot√3 = π/6.",
+     "latex": "x=\\frac{\\pi}{6}+k\\pi,\\ k\\in\\mathbb{Z}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.pt-co-ban-cot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "phuong-trinh-luong-giac",
+    "cot"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "x = π/6 + kπ"
+    },
+    {
+     "key": "B",
+     "text": "x = π/3 + kπ",
+     "why_wrong": "Nhầm arccot√3 với arctan√3 = π/3."
+    },
+    {
+     "key": "C",
+     "text": "x = π/6 + k2π",
+     "why_wrong": "Sai chu kì: hàm cot có chu kì π chứ không phải 2π."
+    },
+    {
+     "key": "D",
+     "text": "x = -π/6 + kπ",
+     "why_wrong": "Sai dấu của arccot√3."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0015",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Nghiệm của phương trình $\\sin x=-1$ là:",
+   "statement_en": "Solutions of sin x = -1.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Phương trình lượng giác đặc biệt của sin.",
+     "latex": "\\sin x=-1\\iff x=-\\frac{\\pi}{2}+k2\\pi,\\ k\\in\\mathbb{Z}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.pt-dac-biet-sin"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "phuong-trinh-luong-giac",
+    "sin"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "x = -π/2 + k2π"
+    },
+    {
+     "key": "B",
+     "text": "x = -π/2 + kπ",
+     "why_wrong": "Sai chu kì: nghiệm sin x = -1 cách nhau 2π."
+    },
+    {
+     "key": "C",
+     "text": "x = π/2 + k2π",
+     "why_wrong": "Đây là nghiệm của sin x = 1."
+    },
+    {
+     "key": "D",
+     "text": "x = 3π/2 + kπ",
+     "why_wrong": "Sai chu kì và điểm đại diện."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0016",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Phương trình $\\sin^{2}x-3\\sin x\\cos x+2\\cos^{2}x=0$ tương đương với:",
+   "statement_en": "The equation sin^2x - 3 sinx cosx + 2 cos^2x = 0 is equivalent to:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Đây là phương trình đẳng cấp bậc hai, xét cos x ≠ 0, chia hai vế cho cos²x.",
+     "latex": "\\tan^{2}x-3\\tan x+2=0"
+    },
+    {
+     "explain": "Giải phương trình bậc hai theo tan x.",
+     "latex": "\\tan x=1\\ \\text{hoặc}\\ \\tan x=2"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.pt-dang-cap-bac-hai"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "dang-cap",
+    "phuong-trinh-luong-giac"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "tan x = 1 hoặc tan x = 2"
+    },
+    {
+     "key": "B",
+     "text": "tan x = -1 hoặc tan x = -2",
+     "why_wrong": "Sai dấu khi giải phương trình bậc hai t²−3t+2=0."
+    },
+    {
+     "key": "C",
+     "text": "tan x = 1 hoặc tan x = 3",
+     "why_wrong": "Giải sai nghiệm của t²−3t+2=0."
+    },
+    {
+     "key": "D",
+     "text": "sin x = 0",
+     "why_wrong": "Bỏ sót nghiệm và chia sai; cos x = 0 không phải nghiệm ở đây."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0017",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Biết $\\sin x+\\cos x=1$. Tính $\\sin x\\cos x$.",
+   "statement_en": "Given sin x + cos x = 1, find sin x cos x.",
+   "answer": "0",
+   "solution_steps": [
+    {
+     "explain": "Đặt t = sin x + cos x thì sin x cos x = (t²−1)/2.",
+     "latex": "\\sin x\\cos x=\\frac{t^{2}-1}{2}"
+    },
+    {
+     "explain": "Thay t = 1.",
+     "latex": "\\sin x\\cos x=\\frac{1^{2}-1}{2}=0"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.pt-doi-xung-sin-cos"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "doi-xung",
+    "bien-doi"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 0,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0018",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "dien-so",
+   "statement_vi": "Tìm chu kì $T$ của hàm số $y=3\\tan\\left(2x-\\dfrac{\\pi}{4}\\right)$ (làm tròn 4 chữ số).",
+   "statement_en": "Find the period of y = 3 tan(2x - pi/4).",
+   "answer": "1.5708",
+   "solution_steps": [
+    {
+     "explain": "Chu kì của hàm tang dạng tổng quát.",
+     "latex": "y=A\\tan(\\omega x+\\phi)\\Rightarrow T=\\frac{\\pi}{|\\omega|}"
+    },
+    {
+     "explain": "Với ω = 2.",
+     "latex": "T=\\frac{\\pi}{2}\\approx 1{,}5708"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.chu-ki-ham-tan-cot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "chu-ki",
+    "tan"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "answer_numeric": 1.5707963267948966,
+   "tolerance": 0.001
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0019",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho $\\alpha\\in\\left(\\pi;\\dfrac{3\\pi}{2}\\right)$ (góc phần tư thứ III). Khẳng định nào đúng?",
+   "statement_en": "For a in (pi, 3pi/2), which is true?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Xác định dấu các giá trị lượng giác theo góc phần tư III.",
+     "latex": "\\text{III}:\\ \\sin\\alpha<0,\\ \\cos\\alpha<0,\\ \\tan\\alpha>0,\\ \\cot\\alpha>0"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.dau-gia-tri-luong-giac"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "dau-luong-giac",
+    "goc-phan-tu"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "sin α < 0 và cos α < 0"
+    },
+    {
+     "key": "B",
+     "text": "sin α > 0 và cos α < 0",
+     "why_wrong": "Đây là dấu của góc phần tư thứ II."
+    },
+    {
+     "key": "C",
+     "text": "sin α < 0 và cos α > 0",
+     "why_wrong": "Đây là dấu của góc phần tư thứ IV."
+    },
+    {
+     "key": "D",
+     "text": "sin α > 0 và cos α > 0",
+     "why_wrong": "Đây là dấu của góc phần tư thứ I."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0020",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Lượng giác",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong các hàm số sau, hàm số nào là hàm số chẵn?",
+   "statement_en": "Which function is even?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hàm chẵn thỏa f(-x) = f(x); trong các hàm lượng giác chỉ có côsin.",
+     "latex": "\\cos(-x)=\\cos x\\ (\\text{chẵn});\\ \\sin(-x)=-\\sin x,\\ \\tan(-x)=-\\tan x\\ (\\text{lẻ})"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.luong-giac.tinh-chan-le-ham-luong-giac"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "chan-le",
+    "ham-luong-giac"
+   ],
+   "tags": [
+    "luong-giac",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "y = cos x"
+    },
+    {
+     "key": "B",
+     "text": "y = sin x",
+     "why_wrong": "Hàm sin là hàm lẻ vì sin(−x) = −sin x."
+    },
+    {
+     "key": "C",
+     "text": "y = tan x",
+     "why_wrong": "Hàm tang là hàm lẻ."
+    },
+    {
+     "key": "D",
+     "text": "y = cot x",
+     "why_wrong": "Hàm côtang là hàm lẻ."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0021",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Với bốn điểm $A,B,C,D$ bất kì, rút gọn $\\vec{u}=\\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}$.",
+   "statement_en": "Simplify AB + BC + CD.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Áp dụng quy tắc ba điểm liên tiếp.",
+     "latex": "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}"
+    },
+    {
+     "explain": "Cộng tiếp CD.",
+     "latex": "\\overrightarrow{AC}+\\overrightarrow{CD}=\\overrightarrow{AD}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.quy-tac-ba-diem"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "vecto",
+    "quy-tac-ba-diem"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "AD (vectơ AD)"
+    },
+    {
+     "key": "B",
+     "text": "DA (vectơ DA)",
+     "why_wrong": "Ngược chiều: kết quả là AD chứ không phải DA."
+    },
+    {
+     "key": "C",
+     "text": "AC (vectơ AC)",
+     "why_wrong": "Bỏ sót số hạng CD."
+    },
+    {
+     "key": "D",
+     "text": "vectơ 0",
+     "why_wrong": "Chỉ bằng 0 khi điểm cuối trùng điểm đầu, ở đây D ≠ A."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0022",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Với ba điểm $M,A,B$, rút gọn $\\overrightarrow{MA}-\\overrightarrow{MB}$.",
+   "statement_en": "Simplify MA - MB.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Quy tắc trừ hai vectơ chung gốc M.",
+     "latex": "\\overrightarrow{MB}-\\overrightarrow{MA}=\\overrightarrow{AB}"
+    },
+    {
+     "explain": "Do đó đổi vai trò.",
+     "latex": "\\overrightarrow{MA}-\\overrightarrow{MB}=\\overrightarrow{BA}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.quy-tac-tru"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "vecto",
+    "quy-tac-tru"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "BA (vectơ BA)"
+    },
+    {
+     "key": "B",
+     "text": "AB (vectơ AB)",
+     "why_wrong": "Đây là MB − MA, ngược với đề bài."
+    },
+    {
+     "key": "C",
+     "text": "2·MA",
+     "why_wrong": "Không thể rút gọn hiệu hai vectơ thành như vậy."
+    },
+    {
+     "key": "D",
+     "text": "vectơ 0",
+     "why_wrong": "Chỉ bằng 0 khi A ≡ B."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0023",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho hình bình hành $ABCD$. Tổng $\\overrightarrow{AB}+\\overrightarrow{AD}$ bằng:",
+   "statement_en": "In parallelogram ABCD, AB + AD equals?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Quy tắc hình bình hành với điểm chung A.",
+     "latex": "\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.quy-tac-hinh-binh-hanh"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "vecto",
+    "hinh-binh-hanh"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "AC (đường chéo AC)"
+    },
+    {
+     "key": "B",
+     "text": "BD (đường chéo BD)",
+     "why_wrong": "BD là hiệu AD − AB, không phải tổng."
+    },
+    {
+     "key": "C",
+     "text": "2·AB",
+     "why_wrong": "Chỉ đúng nếu AD = AB, không tổng quát."
+    },
+    {
+     "key": "D",
+     "text": "CA (vectơ CA)",
+     "why_wrong": "Ngược chiều đường chéo AC."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0024",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho hình hộp $ABCD.A'B'C'D'$. Tổng $\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}$ bằng:",
+   "statement_en": "In box ABCD.A'B'C'D', AB + AD + AA' equals?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Quy tắc hình hộp với ba cạnh chung đỉnh A.",
+     "latex": "\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}=\\overrightarrow{AC'}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.quy-tac-hinh-hop"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "vecto",
+    "hinh-hop"
+   ],
+   "tags": [
+    "vecto",
+    "lop11",
+    "khong-gian"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "AC' (đường chéo hình hộp)"
+    },
+    {
+     "key": "B",
+     "text": "AC (đường chéo mặt đáy)",
+     "why_wrong": "Bỏ sót thành phần AA' theo phương đứng."
+    },
+    {
+     "key": "C",
+     "text": "A'C (một đường chéo khác)",
+     "why_wrong": "Không phải kết quả của tổng ba vectơ chung gốc A."
+    },
+    {
+     "key": "D",
+     "text": "vectơ 0",
+     "why_wrong": "Ba vectơ không đối nhau nên tổng khác 0."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0025",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Gọi $G$ là trọng tâm tam giác $ABC$ và $M$ là điểm bất kì. Khi đó $\\overrightarrow{MA}+\\overrightarrow{MB}+\\overrightarrow{MC}$ bằng:",
+   "statement_en": "G is centroid of ABC, M any point. Find MA + MB + MC.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hệ thức trọng tâm.",
+     "latex": "\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec{0}\\iff \\overrightarrow{MA}+\\overrightarrow{MB}+\\overrightarrow{MC}=3\\overrightarrow{MG}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.he-thuc-trong-tam"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "vecto",
+    "trong-tam"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "3·MG (vectơ)"
+    },
+    {
+     "key": "B",
+     "text": "MG (vectơ)",
+     "why_wrong": "Quên hệ số 3 trong hệ thức trọng tâm."
+    },
+    {
+     "key": "C",
+     "text": "2·MG (vectơ)",
+     "why_wrong": "Nhầm với hệ thức trung điểm dùng hệ số 2."
+    },
+    {
+     "key": "D",
+     "text": "vectơ 0",
+     "why_wrong": "Chỉ bằng 0 khi M trùng trọng tâm G."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0026",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "dien-so",
+   "statement_vi": "Cho vectơ $\\vec{a}$ có $\\left|\\vec{a}\\right|=3$. Tính $\\left|-2\\vec{a}\\right|$.",
+   "statement_en": "Given |a| = 3, find |-2a|.",
+   "answer": "6",
+   "solution_steps": [
+    {
+     "explain": "Độ dài tích của một số với vectơ.",
+     "latex": "\\left|k\\vec{a}\\right|=|k|\\cdot\\left|\\vec{a}\\right|"
+    },
+    {
+     "explain": "Thay k = -2.",
+     "latex": "\\left|-2\\vec{a}\\right|=|-2|\\cdot 3=6"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.tich-vecto-voi-mot-so"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "vecto",
+    "do-dai"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "answer_numeric": 6,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0027",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "dien-so",
+   "statement_vi": "Cho hai vectơ $\\vec{a},\\vec{b}$ với $\\left|\\vec{a}\\right|=2$, $\\left|\\vec{b}\\right|=3$ và $\\vec{a}\\cdot\\vec{b}=1$. Tính $\\left|\\vec{a}+\\vec{b}\\right|^{2}$.",
+   "statement_en": "|a|=2, |b|=3, a·b=1. Find |a+b|^2.",
+   "answer": "15",
+   "solution_steps": [
+    {
+     "explain": "Khai triển bình phương vô hướng.",
+     "latex": "\\left|\\vec{a}+\\vec{b}\\right|^{2}=\\vec{a}^{\\,2}+2\\vec{a}\\cdot\\vec{b}+\\vec{b}^{\\,2}"
+    },
+    {
+     "explain": "Thay các giá trị, dùng a² = |a|².",
+     "latex": "=2^{2}+2\\cdot 1+3^{2}=4+2+9=15"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.binh-phuong-vo-huong",
+    "math.thpt.vecto.tich-vo-huong-tinh-chat"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "vecto",
+    "tich-vo-huong"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "answer_numeric": 15,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0028",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Gọi $M$ là trung điểm cạnh $BC$ của tam giác $ABC$. Biểu diễn $\\overrightarrow{AM}$ theo $\\overrightarrow{AB},\\overrightarrow{AC}$.",
+   "statement_en": "M midpoint of BC. Express AM via AB, AC.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Biểu diễn vectơ đường trung tuyến.",
+     "latex": "\\overrightarrow{AM}=\\frac{1}{2}\\left(\\overrightarrow{AB}+\\overrightarrow{AC}\\right)"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.trung-tuyen-vecto"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "vecto",
+    "trung-tuyen"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "(1/2)(AB + AC)"
+    },
+    {
+     "key": "B",
+     "text": "AB + AC",
+     "why_wrong": "Quên hệ số 1/2 của trung tuyến."
+    },
+    {
+     "key": "C",
+     "text": "(1/2)(AC − AB)",
+     "why_wrong": "Đây là (1/2)BC, không phải AM."
+    },
+    {
+     "key": "D",
+     "text": "(1/3)(AB + AC)",
+     "why_wrong": "Nhầm với vectơ tới trọng tâm."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0029",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Vectơ",
+   "type": "trac-nghiem",
+   "statement_vi": "Gọi $G$ là trọng tâm tam giác $ABC$. Phân tích $\\overrightarrow{AG}$ theo $\\overrightarrow{AB},\\overrightarrow{AC}$.",
+   "statement_en": "G centroid. Decompose AG via AB, AC.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Trọng tâm G = (A+B+C)/3 nên AG = (AB + AC)/3.",
+     "latex": "\\overrightarrow{AG}=\\frac{1}{3}\\left(\\overrightarrow{AB}+\\overrightarrow{AC}\\right)"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.vecto.phan-tich-vecto",
+    "math.thpt.vecto.he-thuc-trong-tam"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "vecto",
+    "phan-tich"
+   ],
+   "tags": [
+    "vecto",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "(1/3)AB + (1/3)AC"
+    },
+    {
+     "key": "B",
+     "text": "(1/2)(AB + AC)",
+     "why_wrong": "Đây là AM (trung tuyến), không phải AG."
+    },
+    {
+     "key": "C",
+     "text": "(2/3)(AB + AC)",
+     "why_wrong": "Nhầm tỉ lệ; AG = (2/3)AM = (1/3)(AB+AC)."
+    },
+    {
+     "key": "D",
+     "text": "(1/3)AB − (1/3)AC",
+     "why_wrong": "Sai dấu, trọng tâm dùng tổng chứ không phải hiệu."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0030",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ thức lượng trong tam giác",
+   "type": "dien-so",
+   "statement_vi": "Tam giác $ABC$ có $a=3,\\ b=4,\\ c=5$. Tính $m_{a}^{2}+m_{b}^{2}+m_{c}^{2}$.",
+   "statement_en": "Triangle a=3,b=4,c=5. Find sum of squared medians.",
+   "answer": "37.5",
+   "solution_steps": [
+    {
+     "explain": "Tổng bình phương ba đường trung tuyến.",
+     "latex": "m_{a}^{2}+m_{b}^{2}+m_{c}^{2}=\\frac{3}{4}\\left(a^{2}+b^{2}+c^{2}\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "=\\frac{3}{4}(9+16+25)=\\frac{3}{4}\\cdot 50=37{,}5"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.he-thuc-luong.tong-binh-phuong-trung-tuyen"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "he-thuc-luong",
+    "trung-tuyen"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 37.5,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0031",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ thức lượng trong tam giác",
+   "type": "dien-so",
+   "statement_vi": "Tam giác có cạnh $a=8$ và diện tích $S=24$. Tính đường cao $h_{a}$.",
+   "statement_en": "Triangle with a=8, area 24. Find h_a.",
+   "answer": "6",
+   "solution_steps": [
+    {
+     "explain": "Diện tích theo cạnh và đường cao.",
+     "latex": "S=\\frac{1}{2}a\\,h_{a}\\Rightarrow h_{a}=\\frac{2S}{a}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "h_{a}=\\frac{2\\cdot 24}{8}=6"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.he-thuc-luong.dien-tich-duong-cao"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "he-thuc-luong",
+    "duong-cao"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 6,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0032",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ thức lượng trong tam giác",
+   "type": "dien-so",
+   "statement_vi": "Tam giác $ABC$ có $AB=6,\\ AC=4,\\ BC=5$. Đường phân giác trong từ $A$ cắt $BC$ tại $D$. Tính $DB$.",
+   "statement_en": "AB=6, AC=4, BC=5. Bisector from A meets BC at D. Find DB.",
+   "answer": "3",
+   "solution_steps": [
+    {
+     "explain": "Tính chất đường phân giác trong.",
+     "latex": "\\frac{DB}{DC}=\\frac{AB}{AC}=\\frac{6}{4}=\\frac{3}{2}"
+    },
+    {
+     "explain": "Với DB + DC = 5, chia đoạn theo tỉ lệ 3:2.",
+     "latex": "DB=5\\cdot\\frac{3}{3+2}=3"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.he-thuc-luong.tinh-chat-duong-phan-giac"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "he-thuc-luong",
+    "phan-giac"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 3,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0033",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ thức lượng trong tam giác",
+   "type": "dien-so",
+   "statement_vi": "Tam giác có $b=4,\\ c=6$ và góc $A=60^{\\circ}$. Tính độ dài đường phân giác trong $l_{a}$ (làm tròn 3 chữ số).",
+   "statement_en": "b=4, c=6, A=60. Find internal bisector length l_a.",
+   "answer": "4.157",
+   "solution_steps": [
+    {
+     "explain": "Công thức độ dài đường phân giác trong.",
+     "latex": "l_{a}=\\frac{2bc\\cos\\frac{A}{2}}{b+c}"
+    },
+    {
+     "explain": "Thay số, A/2 = 30°.",
+     "latex": "l_{a}=\\frac{2\\cdot 4\\cdot 6\\cdot\\cos 30^{\\circ}}{4+6}=\\frac{48\\cdot\\frac{\\sqrt{3}}{2}}{10}=\\frac{24\\sqrt{3}}{10}\\approx 4{,}157"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.he-thuc-luong.duong-phan-giac"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "he-thuc-luong",
+    "phan-giac"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 4.156921938165306,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0034",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ thức lượng trong tam giác",
+   "type": "dien-so",
+   "statement_vi": "Tam giác vuông có ba cạnh $a=5,\\ b=4,\\ c=3$ (cạnh huyền $a$). Tính bán kính đường tròn bàng tiếp $r_{a}$ ứng với cạnh $a$.",
+   "statement_en": "Right triangle 3-4-5, hypotenuse a=5. Find excircle radius r_a.",
+   "answer": "6",
+   "solution_steps": [
+    {
+     "explain": "Nửa chu vi và diện tích.",
+     "latex": "p=\\frac{5+4+3}{2}=6,\\qquad S=\\frac{1}{2}\\cdot 3\\cdot 4=6"
+    },
+    {
+     "explain": "Bán kính đường tròn bàng tiếp ứng với a.",
+     "latex": "r_{a}=\\frac{S}{p-a}=\\frac{6}{6-5}=6"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.he-thuc-luong.ban-kinh-bang-tiep"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "he-thuc-luong",
+    "bang-tiep"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 6,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0035",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hệ thức lượng trong tam giác",
+   "type": "dien-so",
+   "statement_vi": "Tam giác $ABC$ có $a=5,\\ b=6,\\ c=7$. Tính $\\cos\\dfrac{A}{2}$ (làm tròn 3 chữ số).",
+   "statement_en": "a=5,b=6,c=7. Find cos(A/2).",
+   "answer": "0.926",
+   "solution_steps": [
+    {
+     "explain": "Công thức côsin nửa góc theo cạnh.",
+     "latex": "\\cos\\frac{A}{2}=\\sqrt{\\frac{p(p-a)}{bc}},\\qquad p=\\frac{5+6+7}{2}=9"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\cos\\frac{A}{2}=\\sqrt{\\frac{9(9-5)}{6\\cdot 7}}=\\sqrt{\\frac{36}{42}}\\approx 0{,}926"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.he-thuc-luong.cos-nua-goc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "he-thuc-luong",
+    "nua-goc"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 0.9258200997725514,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0036",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mệnh đề - Tập hợp",
+   "type": "trac-nghiem",
+   "statement_vi": "Mệnh đề kéo theo $P\\Rightarrow Q$ chỉ nhận giá trị sai trong trường hợp nào?",
+   "statement_en": "When is P => Q false?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Định nghĩa mệnh đề kéo theo.",
+     "latex": "P\\Rightarrow Q\\ \\text{sai}\\iff \\begin{cases} P\\ \\text{dung} \\\\ Q\\ \\text{sai} \\end{cases}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.menh-de-tap-hop.menh-de-keo-theo"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "menh-de",
+    "keo-theo"
+   ],
+   "tags": [
+    "menh-de",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "P đúng và Q sai"
+    },
+    {
+     "key": "B",
+     "text": "P sai và Q đúng",
+     "why_wrong": "Khi P sai, mệnh đề kéo theo luôn đúng."
+    },
+    {
+     "key": "C",
+     "text": "P sai và Q sai",
+     "why_wrong": "Khi P sai, mệnh đề kéo theo luôn đúng."
+    },
+    {
+     "key": "D",
+     "text": "P đúng và Q đúng",
+     "why_wrong": "Trường hợp này mệnh đề kéo theo đúng."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0037",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mệnh đề - Tập hợp",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho $A=\\{x\\in\\mathbb{R}\\mid x^{2}=4\\}$ và $B=\\{-2;2\\}$. Quan hệ giữa $A$ và $B$ là:",
+   "statement_en": "A = {x: x^2=4}, B={-2,2}. Relation between A and B?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Giải x² = 4 để liệt kê A.",
+     "latex": "A=\\{-2;2\\}"
+    },
+    {
+     "explain": "So sánh hai tập: A ⊂ B và B ⊂ A.",
+     "latex": "A=B\\iff \\begin{cases} A\\subset B \\\\ B\\subset A \\end{cases}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.menh-de-tap-hop.tap-con-va-tap-bang-nhau"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tap-hop",
+    "bang-nhau"
+   ],
+   "tags": [
+    "menh-de",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "A = B"
+    },
+    {
+     "key": "B",
+     "text": "A ⊊ B (A là con thực sự của B)",
+     "why_wrong": "A và B có cùng phần tử nên bằng nhau, không phải con thực sự."
+    },
+    {
+     "key": "C",
+     "text": "B ⊊ A",
+     "why_wrong": "Sai tương tự: hai tập có cùng phần tử."
+    },
+    {
+     "key": "D",
+     "text": "A ∩ B = ∅",
+     "why_wrong": "Hai tập trùng nhau nên giao khác rỗng."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0038",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hàm số bậc nhất và bậc hai",
+   "type": "dien-so",
+   "statement_vi": "Giải phương trình $\\sqrt{2x+3}=\\sqrt{x+5}$.",
+   "statement_en": "Solve sqrt(2x+3) = sqrt(x+5).",
+   "answer": "2",
+   "solution_steps": [
+    {
+     "explain": "Phương trình dạng căn bằng căn: bình phương với điều kiện.",
+     "latex": "\\sqrt{f(x)}=\\sqrt{g(x)}\\iff \\begin{cases} f(x)\\ge 0 \\\\ f(x)=g(x) \\end{cases}"
+    },
+    {
+     "explain": "Giải 2x + 3 = x + 5.",
+     "latex": "x=2\\quad(\\text{thử lại }2\\cdot 2+3=7\\ge 0\\ \\text{thỏa})"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.ham-so-bac-nhat-bac-hai.phuong-trinh-can-bang-can"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "phuong-trinh-can",
+    "dai-so"
+   ],
+   "tags": [
+    "dai-so",
+    "lop10"
+   ],
+   "answer_numeric": 2,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0039",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hàm số bậc nhất và bậc hai",
+   "type": "trac-nghiem",
+   "statement_vi": "Tập nghiệm của bất phương trình $\\sqrt{x-1}<2$ là:",
+   "statement_en": "Solution set of sqrt(x-1) < 2.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Bất phương trình căn nhỏ hơn hằng số dương.",
+     "latex": "\\sqrt{f(x)}<g(x)\\iff \\begin{cases} f(x)\\ge 0 \\\\ g(x)>0 \\\\ f(x)<[g(x)]^{2} \\end{cases}"
+    },
+    {
+     "explain": "Với f = x−1, g = 2: cần x−1 ≥ 0 và x−1 < 4.",
+     "latex": "1\\le x<5"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-can-nho-hon"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "bat-phuong-trinh-can",
+    "dai-so"
+   ],
+   "tags": [
+    "dai-so",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "[1; 5)"
+    },
+    {
+     "key": "B",
+     "text": "(-∞; 5)",
+     "why_wrong": "Quên điều kiện x − 1 ≥ 0 dưới dấu căn."
+    },
+    {
+     "key": "C",
+     "text": "(1; 5)",
+     "why_wrong": "Tại x = 1 thì √0 = 0 < 2 vẫn thỏa, phải lấy dấu bằng."
+    },
+    {
+     "key": "D",
+     "text": "[1; 5]",
+     "why_wrong": "Tại x = 5 thì √4 = 2, không nhỏ hơn 2 nên loại."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0040",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hàm số bậc nhất và bậc hai",
+   "type": "dien-so",
+   "statement_vi": "Phương trình $|2x-1|=|x+3|$ có nghiệm lớn nhất bằng bao nhiêu?",
+   "statement_en": "Largest solution of |2x-1| = |x+3|.",
+   "answer": "4",
+   "solution_steps": [
+    {
+     "explain": "Phương trình trị tuyệt đối bằng trị tuyệt đối.",
+     "latex": "|f(x)|=|g(x)|\\iff f(x)=\\pm g(x)"
+    },
+    {
+     "explain": "Trường hợp 1: 2x − 1 = x + 3 ⇒ x = 4. Trường hợp 2: 2x − 1 = −(x+3) ⇒ x = −2/3.",
+     "latex": "x\\in\\left\\{4;\\,-\\frac{2}{3}\\right\\}\\Rightarrow x_{\\max}=4"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.ham-so-bac-nhat-bac-hai.phuong-trinh-tri-tuyet-doi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tri-tuyet-doi",
+    "phuong-trinh"
+   ],
+   "tags": [
+    "dai-so",
+    "lop10"
+   ],
+   "answer_numeric": 4,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0041",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hàm số bậc nhất và bậc hai",
+   "type": "trac-nghiem",
+   "statement_vi": "Điểm nào sau đây thuộc miền nghiệm của bất phương trình $2x-y+1<0$?",
+   "statement_en": "Which point satisfies 2x - y + 1 < 0?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Miền nghiệm là nửa mặt phẳng; thay tọa độ để kiểm tra.",
+     "latex": "2x-y+1<0"
+    },
+    {
+     "explain": "Thay điểm (0; 3): 2·0 − 3 + 1 = −2 < 0 (thỏa).",
+     "latex": "(0;3):\\ -2<0\\ \\checkmark"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-bac-nhat-hai-an"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "bat-phuong-trinh",
+    "hai-an"
+   ],
+   "tags": [
+    "dai-so",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "(0; 3)"
+    },
+    {
+     "key": "B",
+     "text": "(0; 0)",
+     "why_wrong": "Thay vào: 0 − 0 + 1 = 1 > 0, không thỏa."
+    },
+    {
+     "key": "C",
+     "text": "(1; 0)",
+     "why_wrong": "Thay vào: 2 − 0 + 1 = 3 > 0, không thỏa."
+    },
+    {
+     "key": "D",
+     "text": "(2; 1)",
+     "why_wrong": "Thay vào: 4 − 1 + 1 = 4 > 0, không thỏa."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0042",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Bất đẳng thức",
+   "type": "trac-nghiem",
+   "statement_vi": "Với hai số thực $a,b$ bất kì, khẳng định nào sau đây luôn đúng?",
+   "statement_en": "For real a, b, which inequality always holds?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Bất đẳng thức giá trị tuyệt đối của hiệu.",
+     "latex": "\\bigl||a|-|b|\\bigr|\\le |a-b|"
+    },
+    {
+     "explain": "Ví dụ a = 5, b = −3: vế trái |5−3| = 2, vế phải |5−(−3)| = 8, đúng 2 ≤ 8.",
+     "latex": "2\\le 8\\ \\checkmark"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.bat-dang-thuc.gia-tri-tuyet-doi-cua-hieu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "bat-dang-thuc",
+    "gia-tri-tuyet-doi"
+   ],
+   "tags": [
+    "dai-so",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "| |a| − |b| | ≤ |a − b|"
+    },
+    {
+     "key": "B",
+     "text": "| |a| − |b| | ≥ |a − b|",
+     "why_wrong": "Sai chiều; ví dụ a=5,b=−3 cho 2 ≥ 8 là sai."
+    },
+    {
+     "key": "C",
+     "text": "|a − b| = |a| − |b|",
+     "why_wrong": "Chỉ đúng trong trường hợp đặc biệt, không tổng quát."
+    },
+    {
+     "key": "D",
+     "text": "|a + b| ≥ |a| + |b|",
+     "why_wrong": "Ngược bất đẳng thức tam giác |a+b| ≤ |a|+|b|."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0043",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dãy số",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét dãy số $(u_{n})$ với $u_{n}=2n+1$. Dãy này là:",
+   "statement_en": "u_n = 2n+1. This sequence is:",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "So sánh u_{n+1} và u_n.",
+     "latex": "u_{n+1}-u_{n}=[2(n+1)+1]-[2n+1]=2>0"
+    },
+    {
+     "explain": "Do hiệu dương với mọi n nên dãy tăng.",
+     "latex": "(u_{n})\\ \\text{tăng}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.day-so.day-so-tang-giam"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "day-so",
+    "don-dieu"
+   ],
+   "tags": [
+    "day-so",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "dãy số tăng"
+    },
+    {
+     "key": "B",
+     "text": "dãy số giảm",
+     "why_wrong": "Hiệu u_{n+1} − u_n = 2 > 0 nên dãy tăng, không giảm."
+    },
+    {
+     "key": "C",
+     "text": "dãy không đổi",
+     "why_wrong": "Các số hạng thay đổi 2 đơn vị mỗi bước."
+    },
+    {
+     "key": "D",
+     "text": "dãy không tăng không giảm",
+     "why_wrong": "Hiệu luôn dương, dãy đơn điệu tăng."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0044",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Dãy số",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét dãy số $(u_{n})$ với $u_{n}=\\dfrac{1}{n}$ ($n\\ge 1$). Khẳng định nào đúng?",
+   "statement_en": "u_n = 1/n. Which is true?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Với mọi n ≥ 1, ta có bất đẳng thức chặn.",
+     "latex": "0<u_{n}\\le 1"
+    },
+    {
+     "explain": "Vậy dãy bị chặn (chặn trên bởi 1, chặn dưới bởi 0).",
+     "latex": "\\exists M=1,\\ m=0:\\ 0<u_{n}\\le 1"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.day-so.day-so-bi-chan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "day-so",
+    "bi-chan"
+   ],
+   "tags": [
+    "day-so",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Dãy bị chặn, với 0 < u_n ≤ 1"
+    },
+    {
+     "key": "B",
+     "text": "Dãy chỉ bị chặn dưới, không chặn trên",
+     "why_wrong": "u_n ≤ 1 nên có chặn trên."
+    },
+    {
+     "key": "C",
+     "text": "Dãy không bị chặn",
+     "why_wrong": "Rõ ràng 0 < u_n ≤ 1 nên bị chặn."
+    },
+    {
+     "key": "D",
+     "text": "Dãy chỉ bị chặn trên bởi 0",
+     "why_wrong": "0 là chặn dưới, không phải chặn trên."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0045",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{5x^{2}-2x}{x^{2}+1}$.",
+   "statement_en": "Compute limit as x->inf of (5x^2 - 2x)/(x^2+1).",
+   "answer": "5",
+   "solution_steps": [
+    {
+     "explain": "Chia tử và mẫu cho x², dùng giới hạn c/x^k → 0.",
+     "latex": "\\lim_{x\\to+\\infty}\\frac{c}{x^{k}}=0\\ (k>0)"
+    },
+    {
+     "explain": "Rút gọn.",
+     "latex": "\\lim_{x\\to+\\infty}\\frac{5-\\frac{2}{x}}{1+\\frac{1}{x^{2}}}=\\frac{5-0}{1+0}=5"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.gioi-han.gioi-han-tai-vo-cuc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "gioi-han",
+    "vo-cuc"
+   ],
+   "tags": [
+    "gioi-han",
+    "lop11"
+   ],
+   "answer_numeric": 5,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0046",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\lim_{x\\to 0}\\left(1+2x\\right)^{\\frac{1}{x}}$ (làm tròn 3 chữ số).",
+   "statement_en": "Compute limit as x->0 of (1+2x)^(1/x).",
+   "answer": "7.389",
+   "solution_steps": [
+    {
+     "explain": "Đưa về giới hạn cơ bản (1+u)^{1/u} → e.",
+     "latex": "\\left(1+2x\\right)^{\\frac{1}{x}}=\\left[\\left(1+2x\\right)^{\\frac{1}{2x}}\\right]^{2}"
+    },
+    {
+     "explain": "Khi x → 0 thì 2x → 0 nên biểu thức trong ngoặc → e.",
+     "latex": "\\lim_{x\\to 0}\\left(1+2x\\right)^{\\frac{1}{x}}=e^{2}\\approx 7{,}389"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.gioi-han.gioi-han-so-e-ham-so"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "gioi-han",
+    "so-e"
+   ],
+   "tags": [
+    "gioi-han",
+    "lop11"
+   ],
+   "answer_numeric": 7.3890560989306495,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0047",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\lim_{x\\to 0}\\dfrac{\\ln(1+3x)}{x}$.",
+   "statement_en": "Compute limit as x->0 of ln(1+3x)/x.",
+   "answer": "3",
+   "solution_steps": [
+    {
+     "explain": "Dùng giới hạn cơ bản ln(1+u)/u → 1.",
+     "latex": "\\lim_{x\\to 0}\\frac{\\ln(1+x)}{x}=1"
+    },
+    {
+     "explain": "Viết lại với u = 3x.",
+     "latex": "\\frac{\\ln(1+3x)}{x}=3\\cdot\\frac{\\ln(1+3x)}{3x}\\to 3\\cdot 1=3"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.gioi-han.gioi-han-ln-mot-cong-x"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "gioi-han",
+    "logarit"
+   ],
+   "tags": [
+    "gioi-han",
+    "lop11"
+   ],
+   "answer_numeric": 3,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0048",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Giới hạn",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\lim_{n\\to+\\infty}\\dfrac{1}{2n+1}$.",
+   "statement_en": "Compute limit of 1/(2n+1).",
+   "answer": "0",
+   "solution_steps": [
+    {
+     "explain": "Vì 2n + 1 → +∞ nên nghịch đảo tiến về 0.",
+     "latex": "\\lim u_{n}=+\\infty\\Rightarrow \\lim\\frac{1}{u_{n}}=0"
+    },
+    {
+     "explain": "Áp dụng với u_n = 2n + 1.",
+     "latex": "\\lim_{n\\to+\\infty}\\frac{1}{2n+1}=0"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.gioi-han.gioi-han-vo-cuc-day"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "gioi-han",
+    "day-so"
+   ],
+   "tags": [
+    "gioi-han",
+    "lop11"
+   ],
+   "answer_numeric": 0,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0049",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đạo hàm",
+   "type": "dien-so",
+   "statement_vi": "Cho $f(x)=\\dfrac{1}{x}$. Tính $f'(2)$.",
+   "statement_en": "f(x)=1/x. Find f'(2).",
+   "answer": "-0.25",
+   "solution_steps": [
+    {
+     "explain": "Đạo hàm của hàm 1/x.",
+     "latex": "\\left(\\frac{1}{x}\\right)'=-\\frac{1}{x^{2}}"
+    },
+    {
+     "explain": "Thay x = 2.",
+     "latex": "f'(2)=-\\frac{1}{2^{2}}=-\\frac{1}{4}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.dao-ham.dao-ham-nghich-dao-x"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "dao-ham",
+    "nghich-dao"
+   ],
+   "tags": [
+    "dao-ham",
+    "lop11"
+   ],
+   "answer_numeric": -0.25,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0050",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đạo hàm",
+   "type": "dien-so",
+   "statement_vi": "Cho $f(x)=\\cot x$. Tính $f'\\left(\\dfrac{\\pi}{4}\\right)$.",
+   "statement_en": "f(x)=cot x. Find f'(pi/4).",
+   "answer": "-2",
+   "solution_steps": [
+    {
+     "explain": "Đạo hàm của hàm côtang.",
+     "latex": "(\\cot x)'=-\\frac{1}{\\sin^{2}x}"
+    },
+    {
+     "explain": "Thay x = pi/4, sin(pi/4) = √2/2.",
+     "latex": "f'\\left(\\frac{\\pi}{4}\\right)=-\\frac{1}{\\left(\\frac{\\sqrt{2}}{2}\\right)^{2}}=-\\frac{1}{\\frac{1}{2}}=-2"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.dao-ham.dao-ham-cot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "dao-ham",
+    "cot"
+   ],
+   "tags": [
+    "dao-ham",
+    "lop11"
+   ],
+   "answer_numeric": -2,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0051",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đạo hàm",
+   "type": "dien-so",
+   "statement_vi": "Cho $f(x)=\\arccos x$. Tính $f'\\left(\\dfrac{1}{2}\\right)$ (làm tròn 3 chữ số).",
+   "statement_en": "f(x)=arccos x. Find f'(1/2).",
+   "answer": "-1.155",
+   "solution_steps": [
+    {
+     "explain": "Đạo hàm của hàm arccos.",
+     "latex": "(\\arccos x)'=-\\frac{1}{\\sqrt{1-x^{2}}}"
+    },
+    {
+     "explain": "Thay x = 1/2.",
+     "latex": "f'\\left(\\frac{1}{2}\\right)=-\\frac{1}{\\sqrt{1-\\frac{1}{4}}}=-\\frac{2}{\\sqrt{3}}\\approx -1{,}155"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.dao-ham.dao-ham-arccos"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "dao-ham",
+    "arccos"
+   ],
+   "tags": [
+    "dao-ham",
+    "lop11"
+   ],
+   "answer_numeric": -1.1547005383792517,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0052",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đạo hàm",
+   "type": "dien-so",
+   "statement_vi": "Cho $f(x)=e^{2x}$. Tính đạo hàm cấp ba $f^{(3)}(0)$.",
+   "statement_en": "f(x)=e^{2x}. Find f'''(0).",
+   "answer": "8",
+   "solution_steps": [
+    {
+     "explain": "Đạo hàm cấp n được tính bằng cách đạo hàm liên tiếp.",
+     "latex": "f^{(n)}(x)=\\left[f^{(n-1)}(x)\\right]'"
+    },
+    {
+     "explain": "Mỗi lần đạo hàm nhân thêm 2, sau ba lần được 8e^{2x}.",
+     "latex": "f^{(3)}(x)=8e^{2x}\\Rightarrow f^{(3)}(0)=8"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.dao-ham.dao-ham-cap-n"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "dao-ham",
+    "cap-cao"
+   ],
+   "tags": [
+    "dao-ham",
+    "lop11"
+   ],
+   "answer_numeric": 8,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0053",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ứng dụng đạo hàm",
+   "type": "trac-nghiem",
+   "statement_vi": "Tâm đối xứng của đồ thị hàm số $y=x^{3}-3x^{2}+1$ có tọa độ là:",
+   "statement_en": "Center of symmetry of y = x^3 - 3x^2 + 1.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Tâm đối xứng của hàm bậc ba có hoành độ −b/(3a).",
+     "latex": "x_{I}=-\\frac{b}{3a}=-\\frac{-3}{3\\cdot 1}=1"
+    },
+    {
+     "explain": "Tính tung độ.",
+     "latex": "y_{I}=1^{3}-3\\cdot 1^{2}+1=-1\\Rightarrow I(1;-1)"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.ung-dung-dao-ham.tam-doi-xung-ham-bac-ba"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "ung-dung-dao-ham",
+    "doi-xung"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "I(1; -1)"
+    },
+    {
+     "key": "B",
+     "text": "I(-1; -3)",
+     "why_wrong": "Sai dấu khi tính −b/(3a); ở đây b = −3."
+    },
+    {
+     "key": "C",
+     "text": "I(0; 1)",
+     "why_wrong": "Đây là giao với trục tung, không phải tâm đối xứng."
+    },
+    {
+     "key": "D",
+     "text": "I(1; -3)",
+     "why_wrong": "Tính sai tung độ f(1) = 1 − 3 + 1 = −1."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0054",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Ứng dụng đạo hàm",
+   "type": "trac-nghiem",
+   "statement_vi": "Đường tiệm cận xiên của đồ thị hàm số $y=\\dfrac{x^{2}+1}{x}$ là:",
+   "statement_en": "Oblique asymptote of y = (x^2+1)/x.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hệ số góc a = lim f(x)/x.",
+     "latex": "a=\\lim_{x\\to\\pm\\infty}\\frac{x^{2}+1}{x^{2}}=1"
+    },
+    {
+     "explain": "Tính b = lim [f(x) − ax].",
+     "latex": "b=\\lim_{x\\to\\pm\\infty}\\left(\\frac{x^{2}+1}{x}-x\\right)=\\lim\\frac{1}{x}=0\\Rightarrow y=x"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.ung-dung-dao-ham.tiem-can-xien"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "tiem-can",
+    "ung-dung-dao-ham"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "y = x"
+    },
+    {
+     "key": "B",
+     "text": "y = x + 1",
+     "why_wrong": "Tính sai b; giới hạn của 1/x khi x → ∞ bằng 0."
+    },
+    {
+     "key": "C",
+     "text": "y = 2x",
+     "why_wrong": "Tính sai hệ số góc a = 1."
+    },
+    {
+     "key": "D",
+     "text": "x = 0",
+     "why_wrong": "Đây là tiệm cận đứng, không phải tiệm cận xiên."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0055",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "dien-so",
+   "statement_vi": "Tính giá trị của biểu thức $2^{-3}+5^{0}$.",
+   "statement_en": "Compute 2^{-3} + 5^0.",
+   "answer": "1.125",
+   "solution_steps": [
+    {
+     "explain": "Luỹ thừa số mũ nguyên âm và số mũ không.",
+     "latex": "a^{0}=1,\\qquad a^{-n}=\\frac{1}{a^{n}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "2^{-3}+5^{0}=\\frac{1}{8}+1=\\frac{9}{8}=1{,}125"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.luy-thua-so-mu-nguyen-am"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "luy-thua",
+    "mu"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "answer_numeric": 1.125,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0056",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "dien-so",
+   "statement_vi": "Tính $3^{0{,}5}\\cdot 3^{1{,}5}$.",
+   "statement_en": "Compute 3^{0.5} * 3^{1.5}.",
+   "answer": "9",
+   "solution_steps": [
+    {
+     "explain": "Tính chất nhân hai luỹ thừa cùng cơ số.",
+     "latex": "a^{\\alpha}a^{\\beta}=a^{\\alpha+\\beta}"
+    },
+    {
+     "explain": "Cộng số mũ.",
+     "latex": "3^{0{,}5}\\cdot 3^{1{,}5}=3^{2}=9"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.tinh-chat-luy-thua"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "luy-thua",
+    "tinh-chat"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "answer_numeric": 9,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0057",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\log 100+\\ln e^{3}$.",
+   "statement_en": "Compute log100 + ln(e^3).",
+   "answer": "5",
+   "solution_steps": [
+    {
+     "explain": "Logarit thập phân và logarit tự nhiên.",
+     "latex": "\\log b=\\log_{10}b,\\qquad \\ln b=\\log_{e}b"
+    },
+    {
+     "explain": "Tính từng số hạng.",
+     "latex": "\\log 100=2,\\quad \\ln e^{3}=3\\Rightarrow 2+3=5"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.logarit-thap-phan-tu-nhien"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "logarit",
+    "co-so"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "answer_numeric": 5,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0058",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "trac-nghiem",
+   "statement_vi": "So sánh hai số $\\log_{2}5$ và $\\log_{2}7$.",
+   "statement_en": "Compare log_2 5 and log_2 7.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Hàm logarit cơ số lớn hơn 1 đồng biến.",
+     "latex": "a>1:\\ \\log_{a}b_{1}>\\log_{a}b_{2}\\iff b_{1}>b_{2}"
+    },
+    {
+     "explain": "Vì 5 < 7 nên logarit tương ứng nhỏ hơn.",
+     "latex": "\\log_{2}5<\\log_{2}7"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.so-sanh-hai-logarit"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "logarit",
+    "so-sanh"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "log_2 5 < log_2 7"
+    },
+    {
+     "key": "B",
+     "text": "log_2 5 > log_2 7",
+     "why_wrong": "Cơ số 2 > 1 nên hàm đồng biến; 5 < 7 kéo theo dấu <."
+    },
+    {
+     "key": "C",
+     "text": "log_2 5 = log_2 7",
+     "why_wrong": "Hai đối số khác nhau nên hai logarit khác nhau."
+    },
+    {
+     "key": "D",
+     "text": "Không so sánh được",
+     "why_wrong": "Cùng cơ số nên hoàn toàn so sánh được."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0059",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "dien-so",
+   "statement_vi": "Giải phương trình $\\log_{3}(2x-1)=\\log_{3}(x+4)$.",
+   "statement_en": "Solve log_3(2x-1) = log_3(x+4).",
+   "answer": "5",
+   "solution_steps": [
+    {
+     "explain": "Phương trình logarit cùng cơ số.",
+     "latex": "\\log_{a}f(x)=\\log_{a}g(x)\\iff \\begin{cases} f(x)>0 \\\\ f(x)=g(x) \\end{cases}"
+    },
+    {
+     "explain": "Giải 2x − 1 = x + 4.",
+     "latex": "x=5\\quad(2\\cdot 5-1=9>0\\ \\text{thỏa})"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.phuong-trinh-logarit-cung-co-so"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "logarit",
+    "phuong-trinh"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "answer_numeric": 5,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0060",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "trac-nghiem",
+   "statement_vi": "Tập nghiệm của bất phương trình $3^{x-1}>9$ là:",
+   "statement_en": "Solution of 3^{x-1} > 9.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Đưa về cùng cơ số 3.",
+     "latex": "3^{x-1}>3^{2}"
+    },
+    {
+     "explain": "Vì cơ số 3 > 1, bất phương trình cùng chiều với số mũ.",
+     "latex": "x-1>2\\iff x>3"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.bat-phuong-trinh-mu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "mu",
+    "bat-phuong-trinh"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "x > 3"
+    },
+    {
+     "key": "B",
+     "text": "x < 3",
+     "why_wrong": "Cơ số 3 > 1 nên giữ nguyên chiều, không đổi chiều."
+    },
+    {
+     "key": "C",
+     "text": "x > 2",
+     "why_wrong": "Quên cộng 1 khi giải x − 1 > 2."
+    },
+    {
+     "key": "D",
+     "text": "x > 9",
+     "why_wrong": "Nhầm so sánh trực tiếp x với 9."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0061",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mũ - Logarit",
+   "type": "trac-nghiem",
+   "statement_vi": "Tập nghiệm của bất phương trình $\\log_{2}(x-1)>3$ là:",
+   "statement_en": "Solution of log_2(x-1) > 3.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Viết 3 = log_2 8, đưa về so sánh cùng cơ số.",
+     "latex": "\\log_{2}(x-1)>\\log_{2}8"
+    },
+    {
+     "explain": "Cơ số > 1: cần đối số dương và lớn hơn.",
+     "latex": "\\begin{cases} x-1>0 \\\\ x-1>8 \\end{cases}\\iff x>9"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mu-logarit.bat-phuong-trinh-logarit"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "logarit",
+    "bat-phuong-trinh"
+   ],
+   "tags": [
+    "mu-logarit",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "x > 9"
+    },
+    {
+     "key": "B",
+     "text": "x > 8",
+     "why_wrong": "Quên cộng 1: từ x − 1 > 8 suy ra x > 9."
+    },
+    {
+     "key": "C",
+     "text": "1 < x < 9",
+     "why_wrong": "Sai chiều bất phương trình với cơ số > 1."
+    },
+    {
+     "key": "D",
+     "text": "x > 4",
+     "why_wrong": "Nhầm 3 thành log_2 của 4 hoặc giải sai."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0062",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{0}^{1}2^{x}\\,dx$ (làm tròn 3 chữ số).",
+   "statement_en": "Compute integral from 0 to 1 of 2^x dx.",
+   "answer": "1.443",
+   "solution_steps": [
+    {
+     "explain": "Nguyên hàm của hàm mũ cơ số a.",
+     "latex": "\\int a^{x}\\,dx=\\frac{a^{x}}{\\ln a}+C"
+    },
+    {
+     "explain": "Thay cận.",
+     "latex": "\\int_{0}^{1}2^{x}\\,dx=\\frac{2^{x}}{\\ln 2}\\Big|_{0}^{1}=\\frac{2-1}{\\ln 2}=\\frac{1}{\\ln 2}\\approx 1{,}443"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-a-mu-x"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tich-phan",
+    "ham-mu"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 1.4426950408889634,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0063",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{0}^{\\pi/4}\\dfrac{dx}{\\cos^{2}x}$.",
+   "statement_en": "Compute integral 0 to pi/4 of dx/cos^2 x.",
+   "answer": "1",
+   "solution_steps": [
+    {
+     "explain": "Nguyên hàm của 1/cos²x.",
+     "latex": "\\int\\frac{dx}{\\cos^{2}x}=\\tan x+C"
+    },
+    {
+     "explain": "Thay cận.",
+     "latex": "\\tan\\frac{\\pi}{4}-\\tan 0=1-0=1"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-mot-tren-cos-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tich-phan",
+    "luong-giac"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 1,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0064",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{\\pi/4}^{\\pi/2}\\dfrac{dx}{\\sin^{2}x}$.",
+   "statement_en": "Compute integral pi/4 to pi/2 of dx/sin^2 x.",
+   "answer": "1",
+   "solution_steps": [
+    {
+     "explain": "Nguyên hàm của 1/sin²x.",
+     "latex": "\\int\\frac{dx}{\\sin^{2}x}=-\\cot x+C"
+    },
+    {
+     "explain": "Thay cận, cot(pi/2)=0, cot(pi/4)=1.",
+     "latex": "-\\cot\\frac{\\pi}{2}+\\cot\\frac{\\pi}{4}=0+1=1"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-mot-tren-sin-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "tich-phan",
+    "luong-giac"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 1,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0065",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{0}^{\\pi/4}\\tan x\\,dx$ (làm tròn 3 chữ số).",
+   "statement_en": "Compute integral 0 to pi/4 of tan x dx.",
+   "answer": "0.347",
+   "solution_steps": [
+    {
+     "explain": "Nguyên hàm của tang.",
+     "latex": "\\int\\tan x\\,dx=-\\ln\\left|\\cos x\\right|+C"
+    },
+    {
+     "explain": "Thay cận.",
+     "latex": "-\\ln\\left|\\cos\\frac{\\pi}{4}\\right|+\\ln|\\cos 0|=-\\ln\\frac{\\sqrt{2}}{2}=\\frac{1}{2}\\ln 2\\approx 0{,}347"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-tan-cot"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tich-phan",
+    "tan"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 0.34657359027997264,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0066",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{0}^{1/2}\\dfrac{dx}{\\sqrt{1-x^{2}}}$ (làm tròn 3 chữ số).",
+   "statement_en": "Compute integral 0 to 1/2 of dx/sqrt(1-x^2).",
+   "answer": "0.524",
+   "solution_steps": [
+    {
+     "explain": "Nguyên hàm dẫn tới arcsin (a = 1).",
+     "latex": "\\int\\frac{dx}{\\sqrt{1-x^{2}}}=\\arcsin x+C"
+    },
+    {
+     "explain": "Thay cận.",
+     "latex": "\\arcsin\\frac{1}{2}-\\arcsin 0=\\frac{\\pi}{6}\\approx 0{,}524"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-mot-tren-can-mot-tru-x-binh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tich-phan",
+    "arcsin"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 0.5235987755982988,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0067",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{0}^{1}2x\\left(x^{2}+1\\right)^{3}\\,dx$.",
+   "statement_en": "Compute integral 0 to 1 of 2x(x^2+1)^3 dx.",
+   "answer": "3.75",
+   "solution_steps": [
+    {
+     "explain": "Đổi biến u = x² + 1, du = 2x dx; đổi cận x:0→1 thành u:1→2.",
+     "latex": "\\int f(u(x))u'(x)\\,dx=\\int f(u)\\,du"
+    },
+    {
+     "explain": "Dùng nguyên hàm dạng luỹ thừa của hàm hợp.",
+     "latex": "\\int_{1}^{2}u^{3}\\,du=\\frac{u^{4}}{4}\\Big|_{1}^{2}=\\frac{16-1}{4}=\\frac{15}{4}=3{,}75"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.phuong-phap-doi-bien-nguyen-ham",
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-u-mu-alpha"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tich-phan",
+    "doi-bien"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 3.75,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0068",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{0}^{1}\\dfrac{2x}{x^{2}+1}\\,dx$ (làm tròn 3 chữ số).",
+   "statement_en": "Compute integral 0 to 1 of 2x/(x^2+1) dx.",
+   "answer": "0.693",
+   "solution_steps": [
+    {
+     "explain": "Nhận dạng u'/u với u = x² + 1.",
+     "latex": "\\int\\frac{u'}{u}\\,dx=\\ln|u|+C"
+    },
+    {
+     "explain": "Thay cận.",
+     "latex": "\\ln(x^{2}+1)\\Big|_{0}^{1}=\\ln 2-\\ln 1=\\ln 2\\approx 0{,}693"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-u-pham-tren-u"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tich-phan",
+    "logarit"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 0.6931471805599453,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0069",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính $\\displaystyle\\int_{1}^{e}\\ln x\\,dx$.",
+   "statement_en": "Compute integral 1 to e of ln x dx.",
+   "answer": "1",
+   "solution_steps": [
+    {
+     "explain": "Nguyên hàm của logarit tự nhiên.",
+     "latex": "\\int\\ln x\\,dx=x\\ln x-x+C"
+    },
+    {
+     "explain": "Thay cận.",
+     "latex": "(x\\ln x-x)\\Big|_{1}^{e}=(e-e)-(0-1)=1"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.nguyen-ham-ln-x"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tich-phan",
+    "logarit"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 1,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0070",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Tính diện tích hình phẳng giới hạn bởi đường $x=y^{2}$, trục $Oy$ và hai đường $y=0,\\ y=2$.",
+   "statement_en": "Area bounded by x=y^2, Oy axis, y=0, y=2.",
+   "answer": "2.667",
+   "solution_steps": [
+    {
+     "explain": "Diện tích tính theo biến y.",
+     "latex": "S=\\int_{c}^{d}\\left|g(y)\\right|dy"
+    },
+    {
+     "explain": "Với g(y) = y², cận 0 đến 2.",
+     "latex": "S=\\int_{0}^{2}y^{2}\\,dy=\\frac{y^{3}}{3}\\Big|_{0}^{2}=\\frac{8}{3}\\approx 2{,}667"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.dien-tich-hinh-phang-theo-bien-y"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tich-phan",
+    "dien-tich"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": 2.6666666666666665,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0071",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nguyên hàm - Tích phân",
+   "type": "dien-so",
+   "statement_vi": "Biết $\\displaystyle\\int_{2}^{5}f(x)\\,dx=7$. Tính $\\displaystyle\\int_{5}^{2}f(x)\\,dx$.",
+   "statement_en": "Given integral 2 to 5 of f = 7, find integral 5 to 2 of f.",
+   "answer": "-7",
+   "solution_steps": [
+    {
+     "explain": "Tính chất đổi cận của tích phân.",
+     "latex": "\\int_{a}^{b}f(x)\\,dx=-\\int_{b}^{a}f(x)\\,dx"
+    },
+    {
+     "explain": "Đổi cận đổi dấu.",
+     "latex": "\\int_{5}^{2}f(x)\\,dx=-\\int_{2}^{5}f(x)\\,dx=-7"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.nguyen-ham-tich-phan.tinh-chat-tich-phan-doi-can"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "tich-phan",
+    "tinh-chat"
+   ],
+   "tags": [
+    "giai-tich",
+    "lop12"
+   ],
+   "answer_numeric": -7,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0072",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Số phức",
+   "type": "dien-so",
+   "statement_vi": "Cho số phức $z=(1+2i)^{2}$. Tìm phần thực của $z$.",
+   "statement_en": "z = (1+2i)^2. Find real part.",
+   "answer": "-3",
+   "solution_steps": [
+    {
+     "explain": "Khai triển dùng i² = −1.",
+     "latex": "z=1+4i+4i^{2}=1+4i-4"
+    },
+    {
+     "explain": "Thu gọn.",
+     "latex": "z=-3+4i\\Rightarrow \\operatorname{Re}(z)=-3"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.so-phuc.dang-dai-so"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "so-phuc",
+    "dang-dai-so"
+   ],
+   "tags": [
+    "so-phuc",
+    "lop12"
+   ],
+   "answer_numeric": -3,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0073",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Số phức",
+   "type": "dien-so",
+   "statement_vi": "Cho $z_{1}=1+i,\\ z_{2}=2-i$. Tìm phần ảo của $\\overline{z_{1}z_{2}}$.",
+   "statement_en": "z1=1+i, z2=2-i. Imaginary part of conjugate(z1 z2).",
+   "answer": "-1",
+   "solution_steps": [
+    {
+     "explain": "Tính tích rồi dùng tính chất liên hợp.",
+     "latex": "z_{1}z_{2}=(1+i)(2-i)=2-i+2i-i^{2}=3+i"
+    },
+    {
+     "explain": "Lấy liên hợp.",
+     "latex": "\\overline{z_{1}z_{2}}=3-i\\Rightarrow \\operatorname{Im}=-1"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.so-phuc.tinh-chat-lien-hop",
+    "math.thpt.so-phuc.dang-dai-so"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "so-phuc",
+    "lien-hop"
+   ],
+   "tags": [
+    "so-phuc",
+    "lop12"
+   ],
+   "answer_numeric": -1,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0074",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Số phức",
+   "type": "trac-nghiem",
+   "statement_vi": "Cho $z_{1}=2\\left(\\cos 30^{\\circ}+i\\sin 30^{\\circ}\\right)$ và $z_{2}=3\\left(\\cos 60^{\\circ}+i\\sin 60^{\\circ}\\right)$. Tích $z_{1}z_{2}$ bằng:",
+   "statement_en": "z1 = 2 cis30, z2 = 3 cis60. Find z1 z2.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Nhân hai số phức dạng lượng giác: nhân môđun, cộng argument.",
+     "latex": "z_{1}z_{2}=r_{1}r_{2}\\left[\\cos(\\varphi_{1}+\\varphi_{2})+i\\sin(\\varphi_{1}+\\varphi_{2})\\right]"
+    },
+    {
+     "explain": "Thay số: 2·3 = 6, 30°+60° = 90°.",
+     "latex": "z_{1}z_{2}=6(\\cos 90^{\\circ}+i\\sin 90^{\\circ})=6i"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.so-phuc.nhan-chia-dang-luong-giac"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "so-phuc",
+    "luong-giac"
+   ],
+   "tags": [
+    "so-phuc",
+    "lop12"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "6i"
+    },
+    {
+     "key": "B",
+     "text": "5i",
+     "why_wrong": "Cộng môđun 2+3 thay vì nhân 2·3."
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "why_wrong": "Quên rằng cos90° = 0, sin90° = 1 nên kết quả thuần ảo."
+    },
+    {
+     "key": "D",
+     "text": "6(cos 90° − i sin 90°)",
+     "why_wrong": "Nhầm phép chia (trừ argument) thành phép nhân."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0075",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hình học tọa độ Oxy",
+   "type": "dien-so",
+   "statement_vi": "Cho tam giác $ABC$ với $A(0;0),\\ B(4;0),\\ C(0;3)$. Gọi $I$ là tâm đường tròn nội tiếp. Tính $x_{I}+y_{I}$.",
+   "statement_en": "Triangle A(0,0),B(4,0),C(0,3). Incenter I. Find x_I + y_I.",
+   "answer": "2",
+   "solution_steps": [
+    {
+     "explain": "Độ dài các cạnh: a = BC = 5, b = CA = 3, c = AB = 4.",
+     "latex": "a=5,\\ b=3,\\ c=4,\\ a+b+c=12"
+    },
+    {
+     "explain": "Tọa độ tâm nội tiếp.",
+     "latex": "x_{I}=\\frac{5\\cdot 0+3\\cdot 4+4\\cdot 0}{12}=1,\\quad y_{I}=\\frac{5\\cdot 0+3\\cdot 0+4\\cdot 3}{12}=1\\Rightarrow x_{I}+y_{I}=2"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxy-toa-do.toa-do-tam-noi-tiep"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "toa-do",
+    "noi-tiep"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 2,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0076",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đường thẳng trong mặt phẳng tọa độ",
+   "type": "trac-nghiem",
+   "statement_vi": "Viết phương trình tổng quát của đường thẳng đi qua $A(2;0)$ và $B(0;3)$.",
+   "statement_en": "Line through A(2,0) and B(0,3).",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Phương trình đường thẳng theo đoạn chắn.",
+     "latex": "\\frac{x}{a}+\\frac{y}{b}=1\\Rightarrow \\frac{x}{2}+\\frac{y}{3}=1"
+    },
+    {
+     "explain": "Quy đồng, nhân 6.",
+     "latex": "3x+2y=6\\iff 3x+2y-6=0"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxy-duong-thang.pt-doan-chan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "duong-thang",
+    "doan-chan"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "3x + 2y − 6 = 0"
+    },
+    {
+     "key": "B",
+     "text": "2x + 3y − 6 = 0",
+     "why_wrong": "Hoán đổi nhầm mẫu số a và b trong công thức đoạn chắn."
+    },
+    {
+     "key": "C",
+     "text": "3x + 2y + 6 = 0",
+     "why_wrong": "Sai dấu hằng số khi quy đồng."
+    },
+    {
+     "key": "D",
+     "text": "x + y − 5 = 0",
+     "why_wrong": "Không dùng đúng dạng đoạn chắn."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0077",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đường thẳng trong mặt phẳng tọa độ",
+   "type": "trac-nghiem",
+   "statement_vi": "Đường thẳng $d:\\ y=2x+1$. Đường thẳng vuông góc với $d$ có hệ số góc bằng:",
+   "statement_en": "d: y=2x+1. Slope of a line perpendicular to d?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện vuông góc theo hệ số góc.",
+     "latex": "d_{1}\\perp d_{2}\\iff k_{1}k_{2}=-1"
+    },
+    {
+     "explain": "Với k₁ = 2.",
+     "latex": "k_{2}=-\\frac{1}{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxy-duong-thang.song-song-vuong-goc-he-so-goc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "duong-thang",
+    "vuong-goc"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "-1/2"
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "why_wrong": "Đây là hệ số góc của đường song song, không phải vuông góc."
+    },
+    {
+     "key": "C",
+     "text": "1/2",
+     "why_wrong": "Quên dấu âm; tích hai hệ số góc phải bằng −1."
+    },
+    {
+     "key": "D",
+     "text": "-2",
+     "why_wrong": "Lấy đối của k₁ thay vì nghịch đảo âm."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0078",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đường thẳng trong mặt phẳng tọa độ",
+   "type": "trac-nghiem",
+   "statement_vi": "Xét vị trí tương đối của hai đường thẳng $d_{1}:\\ x+2y-3=0$ và $d_{2}:\\ 2x+4y-6=0$.",
+   "statement_en": "Relative position of x+2y-3=0 and 2x+4y-6=0.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "So sánh tỉ số các hệ số.",
+     "latex": "\\frac{a_{1}}{a_{2}}=\\frac{1}{2},\\ \\frac{b_{1}}{b_{2}}=\\frac{2}{4}=\\frac{1}{2},\\ \\frac{c_{1}}{c_{2}}=\\frac{-3}{-6}=\\frac{1}{2}"
+    },
+    {
+     "explain": "Ba tỉ số bằng nhau nên hai đường trùng nhau.",
+     "latex": "\\frac{a_{1}}{a_{2}}=\\frac{b_{1}}{b_{2}}=\\frac{c_{1}}{c_{2}}\\Rightarrow d_{1}\\equiv d_{2}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxy-duong-thang.vi-tri-tuong-doi"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "duong-thang",
+    "vi-tri"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Hai đường thẳng trùng nhau"
+    },
+    {
+     "key": "B",
+     "text": "Hai đường thẳng song song",
+     "why_wrong": "Nếu chỉ hai tỉ số đầu bằng nhau; ở đây cả tỉ số c cũng bằng."
+    },
+    {
+     "key": "C",
+     "text": "Hai đường thẳng cắt nhau",
+     "why_wrong": "Cần a₁/a₂ ≠ b₁/b₂, nhưng ở đây bằng nhau."
+    },
+    {
+     "key": "D",
+     "text": "Hai đường thẳng vuông góc",
+     "why_wrong": "Không có dấu hiệu vuông góc; chúng trùng nhau."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0079",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    10
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Đường tròn trong mặt phẳng tọa độ",
+   "type": "dien-so",
+   "statement_vi": "Đường tròn có tâm $I(1;-2)$ và bán kính $R=3$ có phương trình $(x-a)^{2}+(y-b)^{2}=R^{2}$. Tính $a+b+R$.",
+   "statement_en": "Circle center (1,-2), R=3. Find a+b+R.",
+   "answer": "2",
+   "solution_steps": [
+    {
+     "explain": "Phương trình chính tắc của đường tròn.",
+     "latex": "(x-1)^{2}+(y+2)^{2}=9"
+    },
+    {
+     "explain": "Xác định a = 1, b = −2, R = 3.",
+     "latex": "a+b+R=1+(-2)+3=2"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxy-duong-tron.pt-chinh-tac"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "duong-tron",
+    "phuong-trinh"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop10"
+   ],
+   "answer_numeric": 2,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0080",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hình học tọa độ Oxyz",
+   "type": "dien-so",
+   "statement_vi": "Cho $A(1;2;3),\\ B(3;4;5)$. Gọi $I$ là trung điểm $AB$. Tính $x_{I}+y_{I}+z_{I}$.",
+   "statement_en": "A(1,2,3), B(3,4,5). Midpoint I. Find sum of coords.",
+   "answer": "9",
+   "solution_steps": [
+    {
+     "explain": "Tọa độ trung điểm trong không gian.",
+     "latex": "I\\left(\\frac{x_{A}+x_{B}}{2};\\frac{y_{A}+y_{B}}{2};\\frac{z_{A}+z_{B}}{2}\\right)"
+    },
+    {
+     "explain": "Tính từng tọa độ: I(2;3;4).",
+     "latex": "x_{I}+y_{I}+z_{I}=2+3+4=9"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxyz-toa-do.trung-diem"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 3,
+   "skills": [
+    "oxyz",
+    "trung-diem"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 9,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0081",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hình học tọa độ Oxyz",
+   "type": "dien-so",
+   "statement_vi": "Cho $\\vec{a}=(1;-2;3),\\ \\vec{b}=(2;1;-1)$. Gọi $\\vec{c}=2\\vec{a}-\\vec{b}$. Tính tổng các tọa độ của $\\vec{c}$.",
+   "statement_en": "a=(1,-2,3), b=(2,1,-1). c=2a-b. Sum of components.",
+   "answer": "2",
+   "solution_steps": [
+    {
+     "explain": "Các phép toán vectơ theo tọa độ.",
+     "latex": "\\vec{c}=2\\vec{a}-\\vec{b}=(2\\cdot 1-2;\\ 2\\cdot(-2)-1;\\ 2\\cdot 3-(-1))"
+    },
+    {
+     "explain": "Tính.",
+     "latex": "\\vec{c}=(0;-5;7)\\Rightarrow 0+(-5)+7=2"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxyz-toa-do.phep-toan-vecto"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "oxyz",
+    "vecto"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 2,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0082",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hình học tọa độ Oxyz",
+   "type": "trac-nghiem",
+   "statement_vi": "Ba vectơ $\\vec{a}=(1;2;3),\\ \\vec{b}=(2;1;0),\\ \\vec{c}=(1;1;1)$ có đồng phẳng không?",
+   "statement_en": "Are a=(1,2,3), b=(2,1,0), c=(1,1,1) coplanar?",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Điều kiện đồng phẳng: tích hỗn tạp bằng 0.",
+     "latex": "\\left[\\vec{a},\\vec{b}\\right]\\cdot\\vec{c}=0"
+    },
+    {
+     "explain": "Tính [a,b] = (−3;6;−3), rồi nhân vô hướng với c.",
+     "latex": "(-3)\\cdot 1+6\\cdot 1+(-3)\\cdot 1=0\\Rightarrow \\text{đồng phẳng}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxyz-toa-do.dieu-kien-dong-phang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "oxyz",
+    "dong-phang"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "Có, ba vectơ đồng phẳng"
+    },
+    {
+     "key": "B",
+     "text": "Không đồng phẳng",
+     "why_wrong": "Tích hỗn tạp bằng 0 nên chúng đồng phẳng."
+    },
+    {
+     "key": "C",
+     "text": "Không xác định được",
+     "why_wrong": "Hoàn toàn xác định qua tích hỗn tạp."
+    },
+    {
+     "key": "D",
+     "text": "Chỉ khi thêm một vectơ nữa",
+     "why_wrong": "Ba vectơ đã đủ để xét đồng phẳng."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0083",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình đường thẳng trong Oxyz",
+   "type": "dien-so",
+   "statement_vi": "Tính góc (độ) giữa hai đường thẳng có vectơ chỉ phương $\\vec{u}_{1}=(1;1;0)$ và $\\vec{u}_{2}=(1;0;0)$.",
+   "statement_en": "Angle between lines with directions (1,1,0) and (1,0,0).",
+   "answer": "45",
+   "solution_steps": [
+    {
+     "explain": "Công thức góc giữa hai đường thẳng.",
+     "latex": "\\cos\\varphi=\\frac{\\left|\\vec{u}_{1}\\cdot\\vec{u}_{2}\\right|}{\\left|\\vec{u}_{1}\\right|\\left|\\vec{u}_{2}\\right|}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\cos\\varphi=\\frac{|1|}{\\sqrt{2}\\cdot 1}=\\frac{1}{\\sqrt{2}}\\Rightarrow \\varphi=45^{\\circ}"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxyz-duong-thang.goc-hai-duong-thang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "oxyz",
+    "goc"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 45,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0084",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phương trình đường thẳng trong Oxyz",
+   "type": "dien-so",
+   "statement_vi": "Đường thẳng có vectơ chỉ phương $\\vec{u}=(2;2;1)$ và mặt phẳng có vectơ pháp tuyến $\\vec{n}=(0;0;1)$. Tính $\\sin\\varphi$ của góc giữa đường thẳng và mặt phẳng (làm tròn 3 chữ số).",
+   "statement_en": "Line dir (2,2,1), plane normal (0,0,1). Find sin of angle.",
+   "answer": "0.333",
+   "solution_steps": [
+    {
+     "explain": "Công thức góc giữa đường thẳng và mặt phẳng.",
+     "latex": "\\sin\\varphi=\\frac{\\left|\\vec{u}\\cdot\\vec{n}\\right|}{\\left|\\vec{u}\\right|\\left|\\vec{n}\\right|}"
+    },
+    {
+     "explain": "Thay số, |u| = 3.",
+     "latex": "\\sin\\varphi=\\frac{|1|}{3\\cdot 1}=\\frac{1}{3}\\approx 0{,}333"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxyz-duong-thang.goc-duong-mat"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "oxyz",
+    "goc"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 0.3333333333333333,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0085",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mặt cầu trong Oxyz",
+   "type": "dien-so",
+   "statement_vi": "Mặt cầu tâm $I$ bán kính $R=5$ cắt một đường thẳng $\\Delta$ với $d(I,\\Delta)=3$ tại hai điểm $A,B$. Tính độ dài dây $AB$.",
+   "statement_en": "Sphere R=5, distance to line 3. Chord AB length.",
+   "answer": "8",
+   "solution_steps": [
+    {
+     "explain": "Vị trí tương đối mặt cầu và đường thẳng khi d < R.",
+     "latex": "AB=2\\sqrt{R^{2}-d(I,\\Delta)^{2}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "AB=2\\sqrt{5^{2}-3^{2}}=2\\sqrt{16}=8"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.oxyz-mat-cau.vi-tri-mat-cau-duong-thang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "oxyz",
+    "mat-cau"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 8,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0086",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phép biến hình trong mặt phẳng",
+   "type": "trac-nghiem",
+   "statement_vi": "Ảnh của điểm $M(2;1)$ qua phép quay tâm $O$ góc $90^{\\circ}$ là điểm nào?",
+   "statement_en": "Image of M(2,1) under rotation about O by 90 degrees.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Biểu thức tọa độ của phép quay tâm O góc α.",
+     "latex": "\\begin{cases} x'=x\\cos\\alpha-y\\sin\\alpha \\\\ y'=x\\sin\\alpha+y\\cos\\alpha \\end{cases}"
+    },
+    {
+     "explain": "Với α = 90°, cos = 0, sin = 1.",
+     "latex": "x'=-1,\\ y'=2\\Rightarrow M'(-1;2)"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.phep-bien-hinh.phep-quay"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "phep-quay",
+    "bien-hinh"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop11"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "M'(-1; 2)"
+    },
+    {
+     "key": "B",
+     "text": "M'(1; 2)",
+     "why_wrong": "Sai dấu: x' = xcosα − ysinα = −1, không phải 1."
+    },
+    {
+     "key": "C",
+     "text": "M'(2; -1)",
+     "why_wrong": "Đây là ảnh khi quay góc −90° (theo chiều kim đồng hồ)."
+    },
+    {
+     "key": "D",
+     "text": "M'(-2; -1)",
+     "why_wrong": "Đây là ảnh qua phép đối xứng tâm O."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0087",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Phép biến hình trong mặt phẳng",
+   "type": "dien-so",
+   "statement_vi": "Phép vị tự tâm $I$ tỉ số $k=3$ biến đoạn thẳng $MN$ (độ dài $4$) thành đoạn $M'N'$. Tính độ dài $M'N'$.",
+   "statement_en": "Homothety ratio 3 maps MN (length 4). Find M'N'.",
+   "answer": "12",
+   "solution_steps": [
+    {
+     "explain": "Tỉ số độ dài qua phép vị tự.",
+     "latex": "M'N'=|k|\\,MN"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "M'N'=|3|\\cdot 4=12"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.phep-bien-hinh.vi-tu-ti-so-do-dai"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "vi-tu",
+    "do-dai"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop11"
+   ],
+   "answer_numeric": 12,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0088",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thể tích khối đa diện",
+   "type": "dien-so",
+   "statement_vi": "Tính thể tích khối tứ diện đều cạnh $a=6$ (làm tròn 3 chữ số).",
+   "statement_en": "Volume of regular tetrahedron edge 6.",
+   "answer": "25.456",
+   "solution_steps": [
+    {
+     "explain": "Thể tích khối tứ diện đều.",
+     "latex": "V=\\frac{a^{3}\\sqrt{2}}{12}"
+    },
+    {
+     "explain": "Thay a = 6.",
+     "latex": "V=\\frac{6^{3}\\sqrt{2}}{12}=18\\sqrt{2}\\approx 25{,}456"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.the-tich.tu-dien-deu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 3,
+   "skills": [
+    "the-tich",
+    "tu-dien-deu"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 25.455844122715714,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0089",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thể tích khối đa diện",
+   "type": "dien-so",
+   "statement_vi": "Khối lăng trụ đứng có đáy là tam giác đều cạnh $a=2$ và chiều cao $h=5$. Tính thể tích (làm tròn 3 chữ số).",
+   "statement_en": "Right prism, equilateral base side 2, height 5. Volume.",
+   "answer": "8.660",
+   "solution_steps": [
+    {
+     "explain": "Thể tích lăng trụ đứng đáy tam giác đều.",
+     "latex": "V=\\frac{a^{2}\\sqrt{3}}{4}\\,h"
+    },
+    {
+     "explain": "Thay a = 2, h = 5.",
+     "latex": "V=\\frac{4\\sqrt{3}}{4}\\cdot 5=5\\sqrt{3}\\approx 8{,}660"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.the-tich.lang-tru-dung-tam-giac-deu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "the-tich",
+    "lang-tru"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 8.660254037844386,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0090",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mặt tròn xoay",
+   "type": "trac-nghiem",
+   "statement_vi": "Diện tích mặt cầu bán kính $R=3$ bằng:",
+   "statement_en": "Surface area of sphere R=3.",
+   "answer": "A",
+   "solution_steps": [
+    {
+     "explain": "Diện tích mặt cầu.",
+     "latex": "S=4\\pi R^{2}"
+    },
+    {
+     "explain": "Thay R = 3.",
+     "latex": "S=4\\pi\\cdot 9=36\\pi"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mat-tron-xoay.mat-cau-dien-tich"
+   ],
+   "difficulty": 1,
+   "estimated_minutes": 2,
+   "skills": [
+    "mat-cau",
+    "dien-tich"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "choices": [
+    {
+     "key": "A",
+     "text": "36π"
+    },
+    {
+     "key": "B",
+     "text": "12π",
+     "why_wrong": "Dùng nhầm công thức 4πR thay vì 4πR²."
+    },
+    {
+     "key": "C",
+     "text": "9π",
+     "why_wrong": "Nhầm với diện tích hình tròn πR²."
+    },
+    {
+     "key": "D",
+     "text": "36",
+     "why_wrong": "Quên hệ số π."
+    }
+   ]
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0091",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mặt tròn xoay",
+   "type": "dien-so",
+   "statement_vi": "Tính diện tích toàn phần của hình trụ có bán kính đáy $r=2$ và chiều cao $h=3$ (theo $\\pi$, nhập hệ số của $\\pi$).",
+   "statement_en": "Total surface of cylinder r=2, h=3. Enter coefficient of pi.",
+   "answer": "20",
+   "solution_steps": [
+    {
+     "explain": "Diện tích toàn phần hình trụ.",
+     "latex": "S_{tp}=2\\pi r\\left(h+r\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "S_{tp}=2\\pi\\cdot 2\\cdot(3+2)=20\\pi"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mat-tron-xoay.tru-dien-tich-toan-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "hinh-tru",
+    "dien-tich"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 20,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0092",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    12
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Mặt tròn xoay",
+   "type": "dien-so",
+   "statement_vi": "Khối nón cụt có bán kính hai đáy $r_{1}=3,\\ r_{2}=1$ và chiều cao $h=4$. Tính thể tích (theo $\\pi$, nhập hệ số của $\\pi$; làm tròn 3 chữ số).",
+   "statement_en": "Frustum r1=3, r2=1, h=4. Volume coefficient of pi.",
+   "answer": "17.333",
+   "solution_steps": [
+    {
+     "explain": "Thể tích khối nón cụt.",
+     "latex": "V=\\frac{\\pi h}{3}\\left(r_{1}^{2}+r_{2}^{2}+r_{1}r_{2}\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "V=\\frac{\\pi\\cdot 4}{3}(9+1+3)=\\frac{52\\pi}{3}\\approx 17{,}333\\pi"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.mat-tron-xoay.non-cut-the-tich"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "non-cut",
+    "the-tich"
+   ],
+   "tags": [
+    "hinh-hoc",
+    "lop12",
+    "khong-gian"
+   ],
+   "answer_numeric": 17.333333333333332,
+   "tolerance": 0.01
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0093",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một mẫu số liệu ghép nhóm có nhóm chứa mốt là $[20;30)$ với tần số $n_{m}=10$; nhóm liền trước có tần số $4$, nhóm liền sau có tần số $6$. Tính mốt $M_{o}$.",
+   "statement_en": "Modal class [20,30), freq 10, before 4, after 6. Find mode.",
+   "answer": "26",
+   "solution_steps": [
+    {
+     "explain": "Công thức mốt của mẫu ghép nhóm.",
+     "latex": "M_{o}=u_{m}+\\frac{n_{m}-n_{m-1}}{(n_{m}-n_{m-1})+(n_{m}-n_{m+1})}\\,(u_{m+1}-u_{m})"
+    },
+    {
+     "explain": "Thay u_m = 20, độ rộng 10.",
+     "latex": "M_{o}=20+\\frac{10-4}{(10-4)+(10-6)}\\cdot 10=20+\\frac{6}{10}\\cdot 10=26"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.thong-ke.mot-ghep-nhom"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 4,
+   "skills": [
+    "thong-ke",
+    "mot"
+   ],
+   "tags": [
+    "thong-ke",
+    "lop11"
+   ],
+   "answer_numeric": 26,
+   "tolerance": 0
+  },
+  {
+   "id": "prob.math.ext3-math-thpt.0094",
+   "subject": "math",
+   "level": "thpt",
+   "grades": [
+    11
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một mẫu số liệu có $Q_{1}=10$ và $Q_{3}=20$. Theo quy tắc $1{,}5\\Delta_{Q}$, một giá trị được coi là ngoại lệ nếu lớn hơn ngưỡng trên. Tính ngưỡng trên đó.",
+   "statement_en": "Q1=10, Q3=20. Upper outlier threshold.",
+   "answer": "35",
+   "solution_steps": [
+    {
+     "explain": "Khoảng tứ phân vị và quy tắc ngoại lệ trên.",
+     "latex": "\\Delta_{Q}=Q_{3}-Q_{1}=20-10=10"
+    },
+    {
+     "explain": "Ngưỡng trên.",
+     "latex": "Q_{3}+1{,}5\\,\\Delta_{Q}=20+1{,}5\\cdot 10=35"
+    }
+   ],
+   "formulas_used": [
+    "math.thpt.thong-ke.gia-tri-ngoai-le"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 3,
+   "skills": [
+    "thong-ke",
+    "ngoai-le"
+   ],
+   "tags": [
+    "thong-ke",
+    "lop11"
+   ],
+   "answer_numeric": 35,
+   "tolerance": 0
+  }
+ ]
+}

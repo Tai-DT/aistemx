@@ -1,0 +1,5018 @@
+{
+ "meta": {
+  "file": "01-tieu-hoc.json",
+  "subject": "math",
+  "title": "Toán tiểu học (lớp 1-5): bốn phép tính, phân số, số thập phân, tỉ số phần trăm, hình học, chuyển động đều và đơn vị đo",
+  "levels": [
+   "tieu-hoc"
+  ],
+  "count": 146
+ },
+ "formulas": [
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.cong-voi-so-0",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    1,
+    2,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép cộng",
+   "name_vi": "Cộng với số 0",
+   "name_en": "Additive identity",
+   "latex": "a + 0 = 0 + a = a",
+   "vars": {
+    "a": "một số bất kì"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Số 0 là phần tử trung hòa của phép cộng.",
+   "tags": [
+    "so-hoc",
+    "phep-cong",
+    "so-0"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.tru-di-so-0"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.tru-di-so-0",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    1,
+    2,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép trừ",
+   "name_vi": "Trừ đi số 0 và trừ đi chính nó",
+   "name_en": "Subtracting zero and self-subtraction",
+   "latex": "a - 0 = a \\qquad ; \\qquad a - a = 0",
+   "vars": {
+    "a": "một số bất kì"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Hai trường hợp đặc biệt hay gặp khi tính nhanh biểu thức.",
+   "tags": [
+    "so-hoc",
+    "phep-tru",
+    "so-0"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.cong-voi-so-0"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.phep-nhan-la-tong-cac-so-hang-bang-nhau",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    2,
+    3
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Ý nghĩa phép nhân",
+   "name_vi": "Phép nhân là tổng các số hạng bằng nhau",
+   "name_en": "Multiplication as repeated addition",
+   "latex": "a \\times n = \\underbrace{a + a + \\cdots + a}_{n \\text{ số hạng}}",
+   "vars": {
+    "a": "số hạng được lặp lại",
+    "n": "số lần lặp lại (số tự nhiên khác 0)"
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0",
+   "note": "Cơ sở để lập bảng nhân: 5 x 3 = 5 + 5 + 5 = 15.",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "y-nghia"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.tinh-chat-giao-hoan-cua-phep-nhan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.tinh-chat-giao-hoan-cua-phep-cong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    2,
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép cộng",
+   "name_vi": "Tính chất giao hoán của phép cộng",
+   "name_en": "Commutative property of addition",
+   "latex": "a + b = b + a",
+   "vars": {
+    "a": "số hạng thứ nhất",
+    "b": "số hạng thứ hai"
+   },
+   "units": {},
+   "conditions": "a, b là các số tự nhiên, phân số hoặc số thập phân",
+   "note": "Khi đổi chỗ các số hạng trong một tổng thì tổng không thay đổi. Dùng để tính nhanh: 25 + 87 + 75 = (25 + 75) + 87.",
+   "tags": [
+    "so-hoc",
+    "phep-cong",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.tinh-chat-ket-hop-cua-phep-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-hang-chua-biet",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    2,
+    3,
+    4
+   ],
+   "topic": "Tìm thành phần chưa biết",
+   "subtopic": "Phép cộng",
+   "name_vi": "Tìm số hạng chưa biết",
+   "name_en": "Finding an unknown addend",
+   "latex": "x + b = a \\;\\Rightarrow\\; x = a - b",
+   "vars": {
+    "x": "số hạng chưa biết",
+    "b": "số hạng đã biết",
+    "a": "tổng"
+   },
+   "units": {},
+   "conditions": "a \\ge b khi làm việc trên số tự nhiên",
+   "note": "Muốn tìm số hạng chưa biết, ta lấy tổng trừ đi số hạng đã biết.",
+   "tags": [
+    "so-hoc",
+    "tim-x",
+    "phep-cong"
+   ],
+   "related": [
+    "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-bi-tru"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-bi-tru",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    2,
+    3,
+    4
+   ],
+   "topic": "Tìm thành phần chưa biết",
+   "subtopic": "Phép trừ",
+   "name_vi": "Tìm số bị trừ",
+   "name_en": "Finding the minuend",
+   "latex": "x - b = a \\;\\Rightarrow\\; x = a + b",
+   "vars": {
+    "x": "số bị trừ chưa biết",
+    "b": "số trừ",
+    "a": "hiệu"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Muốn tìm số bị trừ, ta lấy hiệu cộng với số trừ.",
+   "tags": [
+    "so-hoc",
+    "tim-x",
+    "phep-tru"
+   ],
+   "related": [
+    "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-tru"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-tru",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    2,
+    3,
+    4
+   ],
+   "topic": "Tìm thành phần chưa biết",
+   "subtopic": "Phép trừ",
+   "name_vi": "Tìm số trừ",
+   "name_en": "Finding the subtrahend",
+   "latex": "a - x = b \\;\\Rightarrow\\; x = a - b",
+   "vars": {
+    "x": "số trừ chưa biết",
+    "a": "số bị trừ",
+    "b": "hiệu"
+   },
+   "units": {},
+   "conditions": "a \\ge b khi làm việc trên số tự nhiên",
+   "note": "Muốn tìm số trừ, ta lấy số bị trừ trừ đi hiệu.",
+   "tags": [
+    "so-hoc",
+    "tim-x",
+    "phep-tru"
+   ],
+   "related": [
+    "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-bi-tru"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.chia-cho-1-va-chia-cho-chinh-no",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép chia",
+   "name_vi": "Chia cho 1 và chia cho chính nó",
+   "name_en": "Division by one and by itself",
+   "latex": "a : 1 = a \\qquad ; \\qquad a : a = 1",
+   "vars": {
+    "a": "số bị chia"
+   },
+   "units": {},
+   "conditions": "Ở trường hợp a : a = 1 phải có a khác 0",
+   "note": "Không có phép chia cho 0.",
+   "tags": [
+    "so-hoc",
+    "phep-chia",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.so-0-chia-cho-mot-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.so-0-chia-cho-mot-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép chia",
+   "name_vi": "Số 0 chia cho một số khác 0",
+   "name_en": "Zero divided by a number",
+   "latex": "0 : a = 0 \\quad (a \\neq 0)",
+   "vars": {
+    "a": "số chia khác 0"
+   },
+   "units": {},
+   "conditions": "a khác 0; không tồn tại phép chia cho 0",
+   "note": "Ghi nhớ: 0 chia cho số nào cũng bằng 0, nhưng không được chia cho 0.",
+   "tags": [
+    "so-hoc",
+    "phep-chia",
+    "so-0"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.chia-cho-1-va-chia-cho-chinh-no"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.tinh-chat-ket-hop-cua-phep-cong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép cộng",
+   "name_vi": "Tính chất kết hợp của phép cộng",
+   "name_en": "Associative property of addition",
+   "latex": "(a + b) + c = a + (b + c)",
+   "vars": {
+    "a": "số hạng thứ nhất",
+    "b": "số hạng thứ hai",
+    "c": "số hạng thứ ba"
+   },
+   "units": {},
+   "conditions": "a, b, c là các số tự nhiên, phân số hoặc số thập phân",
+   "note": "Kết hợp với tính chất giao hoán để nhóm các số tròn chục, tròn trăm khi tính nhẩm.",
+   "tags": [
+    "so-hoc",
+    "phep-cong",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.tinh-chat-giao-hoan-cua-phep-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.nhan-voi-so-0",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép nhân",
+   "name_vi": "Nhân với số 0",
+   "name_en": "Multiplication by zero",
+   "latex": "a \\times 0 = 0 \\times a = 0",
+   "vars": {
+    "a": "một số bất kì"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Một tích có thừa số bằng 0 thì tích đó bằng 0 - mẹo tính nhanh cho biểu thức dài.",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "so-0"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.nhan-voi-so-1"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.nhan-voi-so-1",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép nhân",
+   "name_vi": "Nhân với số 1",
+   "name_en": "Multiplicative identity",
+   "latex": "a \\times 1 = 1 \\times a = a",
+   "vars": {
+    "a": "một số bất kì"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Số 1 là phần tử trung hòa của phép nhân.",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "so-1"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.nhan-voi-so-0"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.tinh-chat-giao-hoan-cua-phep-nhan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép nhân",
+   "name_vi": "Tính chất giao hoán của phép nhân",
+   "name_en": "Commutative property of multiplication",
+   "latex": "a \\times b = b \\times a",
+   "vars": {
+    "a": "thừa số thứ nhất",
+    "b": "thừa số thứ hai"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Khi đổi chỗ các thừa số trong một tích thì tích không thay đổi.",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.tinh-chat-ket-hop-cua-phep-nhan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình chữ nhật",
+   "name_vi": "Chu vi hình chữ nhật",
+   "name_en": "Perimeter of a rectangle",
+   "latex": "P = (a + b) \\times 2",
+   "vars": {
+    "P": "chu vi hình chữ nhật",
+    "a": "chiều dài",
+    "b": "chiều rộng"
+   },
+   "units": {
+    "P": "m",
+    "a": "m",
+    "b": "m"
+   },
+   "conditions": "a > 0, b > 0 và phải cùng đơn vị đo",
+   "note": "Chu vi bằng tổng chiều dài và chiều rộng nhân với 2.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-chu-nhat",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.nua-chu-vi-hinh-chu-nhat",
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình chữ nhật",
+   "name_vi": "Diện tích hình chữ nhật",
+   "name_en": "Area of a rectangle",
+   "latex": "S = a \\times b",
+   "vars": {
+    "S": "diện tích hình chữ nhật",
+    "a": "chiều dài",
+    "b": "chiều rộng"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "b": "m"
+   },
+   "conditions": "a > 0, b > 0 và cùng đơn vị đo",
+   "note": "Công thức đảo: a = S : b và b = S : a.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-chu-nhat",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.canh-hinh-vuong-tu-chu-vi",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình vuông",
+   "name_vi": "Tính cạnh hình vuông khi biết chu vi",
+   "name_en": "Side of a square from its perimeter",
+   "latex": "a = P : 4",
+   "vars": {
+    "a": "độ dài cạnh hình vuông",
+    "P": "chu vi hình vuông"
+   },
+   "units": {
+    "a": "m",
+    "P": "m"
+   },
+   "conditions": "P > 0",
+   "note": "Công thức đảo của chu vi hình vuông.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-vuong",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-vuong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-vuong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình vuông",
+   "name_vi": "Chu vi hình vuông",
+   "name_en": "Perimeter of a square",
+   "latex": "P = a \\times 4",
+   "vars": {
+    "P": "chu vi hình vuông",
+    "a": "độ dài cạnh hình vuông"
+   },
+   "units": {
+    "P": "m",
+    "a": "m"
+   },
+   "conditions": "a > 0; các số đo phải cùng đơn vị",
+   "note": "Chu vi hình vuông bằng độ dài một cạnh nhân với 4.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-vuong",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-vuong",
+    "math.tieu-hoc.hinh-hoc-phang.canh-hinh-vuong-tu-chu-vi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-vuong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình vuông",
+   "name_vi": "Diện tích hình vuông",
+   "name_en": "Area of a square",
+   "latex": "S = a \\times a",
+   "vars": {
+    "S": "diện tích hình vuông",
+    "a": "độ dài cạnh hình vuông"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m"
+   },
+   "conditions": "a > 0",
+   "note": "Hình vuông là hình chữ nhật có chiều dài bằng chiều rộng.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-vuong",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phep-chia-co-du.cong-thuc-phep-chia-co-du",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Phép chia có dư",
+   "subtopic": "Quan hệ giữa các thành phần",
+   "name_vi": "Công thức phép chia có dư",
+   "name_en": "Division with remainder",
+   "latex": "a = b \\times q + r, \\qquad 0 \\le r < b",
+   "vars": {
+    "a": "số bị chia",
+    "b": "số chia",
+    "q": "thương",
+    "r": "số dư"
+   },
+   "units": {},
+   "conditions": "a, b là số tự nhiên, b khác 0; số dư luôn nhỏ hơn số chia",
+   "note": "Khi r = 0 ta có phép chia hết. Dùng để thử lại kết quả phép chia.",
+   "tags": [
+    "so-hoc",
+    "phep-chia",
+    "so-du"
+   ],
+   "related": [
+    "math.tieu-hoc.phep-chia-co-du.so-du-lon-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phep-chia-co-du.so-du-lon-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Phép chia có dư",
+   "subtopic": "Quan hệ giữa các thành phần",
+   "name_vi": "Số dư lớn nhất trong phép chia",
+   "name_en": "Largest possible remainder",
+   "latex": "r_{\\max} = b - 1",
+   "vars": {
+    "r_{\\max}": "số dư lớn nhất có thể có",
+    "b": "số chia"
+   },
+   "units": {},
+   "conditions": "b là số tự nhiên khác 0",
+   "note": "Chia cho 5 thì số dư lớn nhất là 4; chia cho 9 thì số dư lớn nhất là 8.",
+   "tags": [
+    "so-hoc",
+    "phep-chia",
+    "so-du"
+   ],
+   "related": [
+    "math.tieu-hoc.phep-chia-co-du.cong-thuc-phep-chia-co-du"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-bi-chia",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Tìm thành phần chưa biết",
+   "subtopic": "Phép chia",
+   "name_vi": "Tìm số bị chia",
+   "name_en": "Finding the dividend",
+   "latex": "x : b = a \\;\\Rightarrow\\; x = a \\times b",
+   "vars": {
+    "x": "số bị chia chưa biết",
+    "b": "số chia",
+    "a": "thương"
+   },
+   "units": {},
+   "conditions": "b khác 0; áp dụng cho phép chia hết",
+   "note": "Muốn tìm số bị chia, ta lấy thương nhân với số chia.",
+   "tags": [
+    "so-hoc",
+    "tim-x",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-chia"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-chia",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Tìm thành phần chưa biết",
+   "subtopic": "Phép chia",
+   "name_vi": "Tìm số chia",
+   "name_en": "Finding the divisor",
+   "latex": "a : x = b \\;\\Rightarrow\\; x = a : b",
+   "vars": {
+    "x": "số chia chưa biết",
+    "a": "số bị chia",
+    "b": "thương"
+   },
+   "units": {},
+   "conditions": "b khác 0; áp dụng cho phép chia hết",
+   "note": "Muốn tìm số chia, ta lấy số bị chia chia cho thương.",
+   "tags": [
+    "so-hoc",
+    "tim-x",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-bi-chia"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-thua-so-chua-biet",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4
+   ],
+   "topic": "Tìm thành phần chưa biết",
+   "subtopic": "Phép nhân",
+   "name_vi": "Tìm thừa số chưa biết",
+   "name_en": "Finding an unknown factor",
+   "latex": "x \\times b = a \\;\\Rightarrow\\; x = a : b",
+   "vars": {
+    "x": "thừa số chưa biết",
+    "b": "thừa số đã biết",
+    "a": "tích"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Muốn tìm thừa số chưa biết, ta lấy tích chia cho thừa số đã biết.",
+   "tags": [
+    "so-hoc",
+    "tim-x",
+    "phep-nhan"
+   ],
+   "related": [
+    "math.tieu-hoc.tim-thanh-phan-chua-biet.tim-so-bi-chia"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.thu-tu-thuc-hien-phep-tinh",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4,
+    5
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Thứ tự thực hiện phép tính",
+   "name_vi": "Thứ tự thực hiện các phép tính trong biểu thức",
+   "name_en": "Order of operations",
+   "latex": "(\\;) \\; \\rightarrow \\; \\times, : \\; \\rightarrow \\; +, -",
+   "vars": {
+    "(\\;)": "dấu ngoặc",
+    "\\times": "phép nhân và phép chia",
+    ":": "phép nhân và phép chia",
+    "+": "phép cộng và phép trừ",
+    "-": "phép cộng và phép trừ"
+   },
+   "units": {},
+   "conditions": "Áp dụng cho mọi biểu thức số ở tiểu học",
+   "note": "Trong ngoặc trước, ngoài ngoặc sau; nhân chia trước, cộng trừ sau; cùng mức thì tính từ trái sang phải. Ví dụ: 5 + 3 x 4 = 5 + 12 = 17.",
+   "tags": [
+    "so-hoc",
+    "bieu-thuc",
+    "quy-tac"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.nhan-mot-so-voi-mot-tong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tam-giac",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4,
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tam giác",
+   "name_vi": "Chu vi hình tam giác",
+   "name_en": "Perimeter of a triangle",
+   "latex": "P = a + b + c",
+   "vars": {
+    "P": "chu vi tam giác",
+    "a": "độ dài cạnh thứ nhất",
+    "b": "độ dài cạnh thứ hai",
+    "c": "độ dài cạnh thứ ba"
+   },
+   "units": {
+    "P": "m",
+    "a": "m",
+    "b": "m",
+    "c": "m"
+   },
+   "conditions": "a, b, c > 0 và cùng đơn vị đo",
+   "note": "Chu vi bằng tổng độ dài ba cạnh.",
+   "tags": [
+    "hinh-hoc",
+    "tam-giac",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-tam-giac"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.bang-don-vi-do-khoi-luong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4,
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo khối lượng",
+   "name_vi": "Bảng đơn vị đo khối lượng",
+   "name_en": "Units of mass",
+   "latex": "1\\ \\text{tấn} = 10\\ \\text{tạ} = 100\\ \\text{yến} = 1000\\ \\text{kg} = 10\\,000\\ \\text{hg} = 100\\,000\\ \\text{dag} = 1\\,000\\,000\\ \\text{g}",
+   "vars": {
+    "\\text{tấn}": "tấn",
+    "\\text{tạ}": "tạ",
+    "\\text{yến}": "yến",
+    "kg": "ki-lô-gam",
+    "hg": "héc-tô-gam",
+    "dag": "đề-ca-gam",
+    "g": "gam"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Mỗi đơn vị khối lượng gấp 10 lần đơn vị bé hơn liền sau. Đơn vị SI của khối lượng là ki-lô-gam (kg).",
+   "tags": [
+    "don-vi-do",
+    "khoi-luong",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.don-vi-do-khoi-luong-nho"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.bang-don-vi-do-thoi-gian",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4,
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo thời gian",
+   "name_vi": "Bảng đơn vị đo thời gian",
+   "name_en": "Units of time",
+   "latex": "1\\ \\text{ngày} = 24\\ \\text{giờ} \\;;\\quad 1\\ \\text{giờ} = 60\\ \\text{phút} \\;;\\quad 1\\ \\text{phút} = 60\\ \\text{giây}",
+   "vars": {
+    "\\text{ngày}": "ngày",
+    "\\text{giờ}": "giờ",
+    "\\text{phút}": "phút",
+    "\\text{giây}": "giây"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "1 giờ = 3600 giây. Đơn vị SI của thời gian là giây (s).",
+   "tags": [
+    "don-vi-do",
+    "thoi-gian",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.don-vi-do-thoi-gian-lon",
+    "math.tieu-hoc.don-vi-do.cong-tru-so-do-thoi-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.bang-don-vi-do-do-dai",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4,
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo độ dài",
+   "name_vi": "Bảng đơn vị đo độ dài",
+   "name_en": "Units of length",
+   "latex": "1\\ \\text{km} = 10\\ \\text{hm} = 100\\ \\text{dam} = 1000\\ \\text{m} = 10\\,000\\ \\text{dm} = 100\\,000\\ \\text{cm} = 1\\,000\\,000\\ \\text{mm}",
+   "vars": {
+    "km": "ki-lô-mét",
+    "hm": "héc-tô-mét",
+    "dam": "đề-ca-mét",
+    "m": "mét",
+    "dm": "đề-xi-mét",
+    "cm": "xăng-ti-mét",
+    "mm": "mi-li-mét"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Đơn vị đo độ dài trong hệ SI là mét (m).",
+   "tags": [
+    "don-vi-do",
+    "do-dai",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.quy-tac-chuyen-doi-don-vi-do-dai"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.quy-tac-chuyen-doi-don-vi-do-dai",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    3,
+    4,
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo độ dài",
+   "name_vi": "Quy tắc chuyển đổi đơn vị đo độ dài",
+   "name_en": "Rule for converting length units",
+   "latex": "1\\ \\text{đơn vị lớn} = 10 \\times 1\\ \\text{đơn vị bé liền sau}",
+   "vars": {
+    "\\text{đơn vị lớn}": "đơn vị đứng trước trong bảng đơn vị đo độ dài",
+    "\\text{đơn vị bé liền sau}": "đơn vị đứng liền sau nó"
+   },
+   "units": {},
+   "conditions": "Chỉ áp dụng cho hai đơn vị đo độ dài liền kề nhau",
+   "note": "Đổi từ đơn vị lớn sang đơn vị bé thì nhân với 10; 100; 1000; ... Đổi từ đơn vị bé sang đơn vị lớn thì chia.",
+   "tags": [
+    "don-vi-do",
+    "do-dai",
+    "quy-tac"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-do-dai"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.chia-mot-tong-cho-mot-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép chia",
+   "name_vi": "Chia một tổng cho một số",
+   "name_en": "Dividing a sum by a number",
+   "latex": "(a + b) : c = a : c + b : c",
+   "vars": {
+    "a": "số hạng thứ nhất",
+    "b": "số hạng thứ hai",
+    "c": "số chia khác 0"
+   },
+   "units": {},
+   "conditions": "c khác 0 và a, b đều chia hết cho c (khi làm việc trên số tự nhiên)",
+   "note": "Tương tự: (a - b) : c = a : c - b : c.",
+   "tags": [
+    "so-hoc",
+    "phep-chia",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.mot-so-chia-cho-mot-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.mot-so-chia-cho-mot-tich",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép chia",
+   "name_vi": "Một số chia cho một tích",
+   "name_en": "Dividing by a product",
+   "latex": "a : (b \\times c) = (a : b) : c = (a : c) : b",
+   "vars": {
+    "a": "số bị chia",
+    "b": "thừa số thứ nhất của số chia",
+    "c": "thừa số thứ hai của số chia"
+   },
+   "units": {},
+   "conditions": "b khác 0, c khác 0; các phép chia phải thực hiện được",
+   "note": "Ngược lại: a : b : c = a : (b x c). Ví dụ 1200 : 25 : 4 = 1200 : 100 = 12.",
+   "tags": [
+    "so-hoc",
+    "phep-chia",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.chia-mot-tong-cho-mot-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.tinh-chat-ket-hop-cua-phep-nhan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép nhân",
+   "name_vi": "Tính chất kết hợp của phép nhân",
+   "name_en": "Associative property of multiplication",
+   "latex": "(a \\times b) \\times c = a \\times (b \\times c)",
+   "vars": {
+    "a": "thừa số thứ nhất",
+    "b": "thừa số thứ hai",
+    "c": "thừa số thứ ba"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Dùng để tính nhanh: 25 x 17 x 4 = (25 x 4) x 17 = 100 x 17 = 1700.",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.tinh-chat-giao-hoan-cua-phep-nhan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.mot-so-tru-di-mot-tong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất của phép trừ",
+   "name_vi": "Một số trừ đi một tổng",
+   "name_en": "Subtracting a sum",
+   "latex": "a - (b + c) = a - b - c",
+   "vars": {
+    "a": "số bị trừ",
+    "b": "số hạng thứ nhất",
+    "c": "số hạng thứ hai"
+   },
+   "units": {},
+   "conditions": "a \\ge b + c khi làm việc trên số tự nhiên",
+   "note": "Hệ quả: a - (b - c) = a - b + c.",
+   "tags": [
+    "so-hoc",
+    "phep-tru",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.chia-mot-tong-cho-mot-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.nhan-mot-so-voi-mot-hieu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất phân phối",
+   "name_vi": "Nhân một số với một hiệu",
+   "name_en": "Distributive property over subtraction",
+   "latex": "a \\times (b - c) = a \\times b - a \\times c",
+   "vars": {
+    "a": "thừa số chung",
+    "b": "số bị trừ",
+    "c": "số trừ"
+   },
+   "units": {},
+   "conditions": "b \\ge c khi làm việc trên số tự nhiên",
+   "note": "Tính nhanh: 47 x 99 = 47 x (100 - 1) = 4700 - 47 = 4653.",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "phan-phoi"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.nhan-mot-so-voi-mot-tong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.bon-phep-tinh.nhan-mot-so-voi-mot-tong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Bốn phép tính",
+   "subtopic": "Tính chất phân phối",
+   "name_vi": "Nhân một số với một tổng (tính chất phân phối)",
+   "name_en": "Distributive property over addition",
+   "latex": "a \\times (b + c) = a \\times b + a \\times c",
+   "vars": {
+    "a": "thừa số chung",
+    "b": "số hạng thứ nhất của tổng",
+    "c": "số hạng thứ hai của tổng"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Đọc ngược lại là cách đặt thừa số chung: a x b + a x c = a x (b + c).",
+   "tags": [
+    "so-hoc",
+    "phep-nhan",
+    "phan-phoi"
+   ],
+   "related": [
+    "math.tieu-hoc.bon-phep-tinh.nhan-mot-so-voi-mot-hieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-10",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Dấu hiệu chia hết",
+   "subtopic": "Chia hết cho 2 và 5",
+   "name_vi": "Dấu hiệu chia hết cho 10",
+   "name_en": "Divisibility rule for 10",
+   "latex": "\\overline{a_n \\ldots a_1 a_0} \\;\\vdots\\; 10 \\iff a_0 = 0",
+   "vars": {
+    "\\overline{a_n \\ldots a_1 a_0}": "số tự nhiên viết theo các chữ số",
+    "a_0": "chữ số tận cùng"
+   },
+   "units": {},
+   "conditions": "Số tự nhiên bất kì",
+   "note": "Chia hết cho 10 tức là chia hết cho cả 2 và 5.",
+   "tags": [
+    "so-hoc",
+    "chia-het"
+   ],
+   "related": [
+    "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-5"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-2",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Dấu hiệu chia hết",
+   "subtopic": "Chia hết cho 2 và 5",
+   "name_vi": "Dấu hiệu chia hết cho 2",
+   "name_en": "Divisibility rule for 2",
+   "latex": "\\overline{a_n \\ldots a_1 a_0} \\;\\vdots\\; 2 \\iff a_0 \\in \\{0; 2; 4; 6; 8\\}",
+   "vars": {
+    "\\overline{a_n \\ldots a_1 a_0}": "số tự nhiên viết theo các chữ số",
+    "a_0": "chữ số tận cùng"
+   },
+   "units": {},
+   "conditions": "Số tự nhiên bất kì",
+   "note": "Các số có chữ số tận cùng là 0; 2; 4; 6; 8 là các số chẵn và chia hết cho 2.",
+   "tags": [
+    "so-hoc",
+    "chia-het",
+    "so-chan-le"
+   ],
+   "related": [
+    "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-5"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-5",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Dấu hiệu chia hết",
+   "subtopic": "Chia hết cho 2 và 5",
+   "name_vi": "Dấu hiệu chia hết cho 5",
+   "name_en": "Divisibility rule for 5",
+   "latex": "\\overline{a_n \\ldots a_1 a_0} \\;\\vdots\\; 5 \\iff a_0 \\in \\{0; 5\\}",
+   "vars": {
+    "\\overline{a_n \\ldots a_1 a_0}": "số tự nhiên viết theo các chữ số",
+    "a_0": "chữ số tận cùng"
+   },
+   "units": {},
+   "conditions": "Số tự nhiên bất kì",
+   "note": "Số chia hết cho cả 2 và 5 thì có chữ số tận cùng là 0.",
+   "tags": [
+    "so-hoc",
+    "chia-het"
+   ],
+   "related": [
+    "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-10"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-3",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Dấu hiệu chia hết",
+   "subtopic": "Chia hết cho 3 và 9",
+   "name_vi": "Dấu hiệu chia hết cho 3",
+   "name_en": "Divisibility rule for 3",
+   "latex": "\\overline{a_n \\ldots a_1 a_0} \\;\\vdots\\; 3 \\iff (a_n + \\cdots + a_1 + a_0) \\;\\vdots\\; 3",
+   "vars": {
+    "\\overline{a_n \\ldots a_1 a_0}": "số tự nhiên viết theo các chữ số",
+    "a_i": "các chữ số của số đó"
+   },
+   "units": {},
+   "conditions": "Số tự nhiên bất kì",
+   "note": "Xét tổng các chữ số: 2019 có 2 + 0 + 1 + 9 = 12 chia hết cho 3 nên 2019 chia hết cho 3.",
+   "tags": [
+    "so-hoc",
+    "chia-het",
+    "tong-cac-chu-so"
+   ],
+   "related": [
+    "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-9"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-9",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4
+   ],
+   "topic": "Dấu hiệu chia hết",
+   "subtopic": "Chia hết cho 3 và 9",
+   "name_vi": "Dấu hiệu chia hết cho 9",
+   "name_en": "Divisibility rule for 9",
+   "latex": "\\overline{a_n \\ldots a_1 a_0} \\;\\vdots\\; 9 \\iff (a_n + \\cdots + a_1 + a_0) \\;\\vdots\\; 9",
+   "vars": {
+    "\\overline{a_n \\ldots a_1 a_0}": "số tự nhiên viết theo các chữ số",
+    "a_i": "các chữ số của số đó"
+   },
+   "units": {},
+   "conditions": "Số tự nhiên bất kì",
+   "note": "Mọi số chia hết cho 9 đều chia hết cho 3, nhưng điều ngược lại không đúng (ví dụ 12).",
+   "tags": [
+    "so-hoc",
+    "chia-het",
+    "tong-cac-chu-so"
+   ],
+   "related": [
+    "math.tieu-hoc.dau-hieu-chia-het.dau-hieu-chia-het-cho-3"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.day-so-cach-deu.khoang-cach-cua-day-so-cach-deu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dãy số cách đều",
+   "subtopic": "Công thức dãy số cách đều",
+   "name_vi": "Khoảng cách của dãy số cách đều",
+   "name_en": "Common difference of an arithmetic sequence",
+   "latex": "d = \\frac{a_n - a_1}{n - 1}",
+   "vars": {
+    "d": "khoảng cách giữa hai số hạng liên tiếp",
+    "a_1": "số hạng đầu",
+    "a_n": "số hạng cuối",
+    "n": "số các số hạng"
+   },
+   "units": {},
+   "conditions": "Dãy số phải cách đều và có n > 1",
+   "note": "Suy ra từ a_n = a_1 + (n - 1) x d. Ví dụ: dãy 5; 9; 13; ...; 41 có 10 số hạng nên d = (41 - 5) : 9 = 4.",
+   "tags": [
+    "day-so-cach-deu",
+    "khoang-cach"
+   ],
+   "related": [
+    "math.tieu-hoc.day-so-cach-deu.so-hang-thu-n",
+    "math.tieu-hoc.day-so-cach-deu.so-cac-so-hang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.day-so-cach-deu.so-cac-so-hang",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dãy số cách đều",
+   "subtopic": "Công thức dãy số cách đều",
+   "name_vi": "Số các số hạng của dãy số cách đều",
+   "name_en": "Number of terms in an arithmetic sequence",
+   "latex": "n = \\frac{a_n - a_1}{d} + 1",
+   "vars": {
+    "n": "số các số hạng",
+    "a_1": "số hạng đầu",
+    "a_n": "số hạng cuối",
+    "d": "khoảng cách giữa hai số hạng liên tiếp"
+   },
+   "units": {},
+   "conditions": "d khác 0 và (a_n - a_1) chia hết cho d",
+   "note": "Mẹo nhớ: (số cuối - số đầu) : khoảng cách + 1. Liên hệ với bài toán trồng cây có trồng hai đầu.",
+   "tags": [
+    "day-so-cach-deu",
+    "dem-so"
+   ],
+   "related": [
+    "math.tieu-hoc.day-so-cach-deu.tong-cua-day-so-cach-deu",
+    "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-hai-dau",
+    "math.tieu-hoc.day-so-cach-deu.khoang-cach-cua-day-so-cach-deu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.day-so-cach-deu.so-hang-thu-n",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dãy số cách đều",
+   "subtopic": "Công thức dãy số cách đều",
+   "name_vi": "Số hạng thứ n của dãy số cách đều",
+   "name_en": "n-th term of an arithmetic sequence",
+   "latex": "a_n = a_1 + (n - 1) \\times d",
+   "vars": {
+    "a_n": "số hạng thứ n của dãy",
+    "a_1": "số hạng đầu",
+    "n": "số thứ tự của số hạng cần tìm (n = 1; 2; 3; ...)",
+    "d": "khoảng cách giữa hai số hạng liên tiếp"
+   },
+   "units": {},
+   "conditions": "Dãy số cách đều với khoảng cách d khác 0; n là số tự nhiên khác 0",
+   "note": "Ví dụ dãy 3; 7; 11; ... có a_1 = 3, d = 4 nên số hạng thứ 10 là 3 + 9 x 4 = 39.",
+   "tags": [
+    "day-so-cach-deu",
+    "so-hang"
+   ],
+   "related": [
+    "math.tieu-hoc.day-so-cach-deu.so-cac-so-hang",
+    "math.tieu-hoc.day-so-cach-deu.khoang-cach-cua-day-so-cach-deu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.day-so-cach-deu.tong-cua-day-so-cach-deu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dãy số cách đều",
+   "subtopic": "Công thức dãy số cách đều",
+   "name_vi": "Tổng của dãy số cách đều",
+   "name_en": "Sum of an arithmetic sequence",
+   "latex": "S = \\frac{(a_1 + a_n) \\times n}{2}",
+   "vars": {
+    "S": "tổng của dãy số",
+    "a_1": "số hạng đầu",
+    "a_n": "số hạng cuối",
+    "n": "số các số hạng"
+   },
+   "units": {},
+   "conditions": "Dãy số phải cách đều",
+   "note": "Mẹo nhớ: (số đầu + số cuối) x số số hạng : 2. Ví dụ 1 + 2 + ... + 100 = (1 + 100) x 100 : 2 = 5050.",
+   "tags": [
+    "day-so-cach-deu",
+    "tong-day-so"
+   ],
+   "related": [
+    "math.tieu-hoc.day-so-cach-deu.so-cac-so-hang",
+    "math.tieu-hoc.trung-binh-cong.trung-binh-cong-cua-day-cach-deu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-hieu-va-ti-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Hiệu - tỉ",
+   "name_vi": "Tìm hai số khi biết hiệu và tỉ số của hai số đó",
+   "name_en": "Finding two numbers from their difference and ratio",
+   "latex": "\\begin{cases} a = \\dfrac{H}{m - n} \\times m \\\\ b = \\dfrac{H}{m - n} \\times n \\end{cases}",
+   "vars": {
+    "a": "số lớn (ứng với m phần)",
+    "b": "số bé (ứng với n phần)",
+    "H": "hiệu của hai số",
+    "m": "số phần của số lớn",
+    "n": "số phần của số bé"
+   },
+   "units": {},
+   "conditions": "m > n; tỉ số của hai số là a : b = m : n",
+   "note": "Hiệu số phần bằng nhau là m - n; giá trị một phần là H : (m - n).",
+   "tags": [
+    "toan-dien-hinh",
+    "hieu-ti",
+    "so-do-doan-thang"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-ti-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-hai-dau",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán trồng cây",
+   "name_vi": "Trồng cây trên đoạn đường thẳng, trồng cả hai đầu",
+   "name_en": "Planting trees on a segment with both ends planted",
+   "latex": "n = \\frac{L}{d} + 1",
+   "vars": {
+    "n": "số cây phải trồng",
+    "L": "độ dài đoạn đường",
+    "d": "khoảng cách giữa hai cây liên tiếp"
+   },
+   "units": {
+    "L": "m",
+    "d": "m"
+   },
+   "conditions": "d khác 0 và L chia hết cho d",
+   "note": "Số khoảng cách = L : d; trồng cả hai đầu nên số cây nhiều hơn số khoảng là 1.",
+   "tags": [
+    "toan-dien-hinh",
+    "trong-cay"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-mot-dau"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-khong-trong-hai-dau",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán trồng cây",
+   "name_vi": "Trồng cây trên đoạn đường thẳng, không trồng ở hai đầu",
+   "name_en": "Planting trees on a segment with neither end planted",
+   "latex": "n = \\frac{L}{d} - 1",
+   "vars": {
+    "n": "số cây phải trồng",
+    "L": "độ dài đoạn đường",
+    "d": "khoảng cách giữa hai cây liên tiếp"
+   },
+   "units": {
+    "L": "m",
+    "d": "m"
+   },
+   "conditions": "d khác 0, L chia hết cho d và L : d > 1",
+   "note": "Số cây ít hơn số khoảng cách là 1.",
+   "tags": [
+    "toan-dien-hinh",
+    "trong-cay"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-hai-dau"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-mot-dau",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán trồng cây",
+   "name_vi": "Trồng cây trên đoạn đường thẳng, chỉ trồng một đầu",
+   "name_en": "Planting trees on a segment with one end planted",
+   "latex": "n = \\frac{L}{d}",
+   "vars": {
+    "n": "số cây phải trồng",
+    "L": "độ dài đoạn đường",
+    "d": "khoảng cách giữa hai cây liên tiếp"
+   },
+   "units": {
+    "L": "m",
+    "d": "m"
+   },
+   "conditions": "d khác 0 và L chia hết cho d",
+   "note": "Số cây bằng đúng số khoảng cách.",
+   "tags": [
+    "toan-dien-hinh",
+    "trong-cay"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-hai-dau"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-duong-khep-kin",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán trồng cây",
+   "name_vi": "Trồng cây trên đường khép kín",
+   "name_en": "Planting trees around a closed path",
+   "latex": "n = \\frac{C}{d}",
+   "vars": {
+    "n": "số cây phải trồng",
+    "C": "chu vi (độ dài đường khép kín)",
+    "d": "khoảng cách giữa hai cây liên tiếp"
+   },
+   "units": {
+    "C": "m",
+    "d": "m"
+   },
+   "conditions": "d khác 0 và C chia hết cho d",
+   "note": "Với đường khép kín (quanh hồ, quanh sân) số cây bằng số khoảng cách.",
+   "tags": [
+    "toan-dien-hinh",
+    "trong-cay",
+    "khep-kin"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.trong-cay-tren-doan-thang-mot-dau"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.hieu-so-tuoi-khong-doi",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán tuổi",
+   "name_vi": "Hiệu số tuổi của hai người không thay đổi theo thời gian",
+   "name_en": "Constant age difference",
+   "latex": "(T_1 + k) - (T_2 + k) = T_1 - T_2",
+   "vars": {
+    "T_1": "tuổi hiện nay của người thứ nhất",
+    "T_2": "tuổi hiện nay của người thứ hai",
+    "k": "số năm về sau (k > 0) hoặc trước đây (k < 0)"
+   },
+   "units": {
+    "T_1": "year",
+    "T_2": "year",
+    "k": "year"
+   },
+   "conditions": "Hai người cùng được xét ở cùng một thời điểm",
+   "note": "Chìa khóa của toán tuổi: hiệu số tuổi luôn không đổi, còn tỉ số tuổi thì thay đổi. Sau đó đưa về dạng hiệu - tỉ.",
+   "tags": [
+    "toan-dien-hinh",
+    "toan-tuoi"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-hieu-va-ti-so",
+    "math.tieu-hoc.dang-toan-dien-hinh.tuoi-sau-va-truoc-k-nam"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.tuoi-sau-va-truoc-k-nam",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán tuổi",
+   "name_vi": "Tuổi sau k năm và trước k năm",
+   "name_en": "Age after and before k years",
+   "latex": "T_{\\text{sau}} = T + k \\;;\\qquad T_{\\text{truoc}} = T - k",
+   "vars": {
+    "T": "tuổi hiện nay",
+    "k": "số năm",
+    "T_{\\text{sau}}": "tuổi sau k năm nữa",
+    "T_{\\text{truoc}}": "tuổi cách đây k năm"
+   },
+   "units": {
+    "T": "year",
+    "k": "year"
+   },
+   "conditions": "T \\ge k khi tính tuổi trước đây",
+   "note": "Tổng số tuổi của hai người sau k năm tăng thêm 2k, còn hiệu số tuổi giữ nguyên.",
+   "tags": [
+    "toan-dien-hinh",
+    "toan-tuoi"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.hieu-so-tuoi-khong-doi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-hieu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Tổng - hiệu",
+   "name_vi": "Tìm hai số khi biết tổng và hiệu của hai số đó",
+   "name_en": "Finding two numbers from their sum and difference",
+   "latex": "\\begin{cases} a = \\dfrac{S + H}{2} \\\\ b = \\dfrac{S - H}{2} \\end{cases}",
+   "vars": {
+    "a": "số lớn",
+    "b": "số bé",
+    "S": "tổng của hai số",
+    "H": "hiệu của hai số"
+   },
+   "units": {},
+   "conditions": "S \\ge H và S, H cùng tính chẵn lẻ để a, b là số tự nhiên",
+   "note": "Số lớn = (tổng + hiệu) : 2; số bé = (tổng - hiệu) : 2. Thử lại bằng a + b = S và a - b = H.",
+   "tags": [
+    "toan-dien-hinh",
+    "tong-hieu"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-ti-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-ti-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Tổng - tỉ",
+   "name_vi": "Tìm hai số khi biết tổng và tỉ số của hai số đó",
+   "name_en": "Finding two numbers from their sum and ratio",
+   "latex": "\\begin{cases} a = \\dfrac{S}{m + n} \\times m \\\\ b = \\dfrac{S}{m + n} \\times n \\end{cases}",
+   "vars": {
+    "a": "số thứ nhất (ứng với m phần)",
+    "b": "số thứ hai (ứng với n phần)",
+    "S": "tổng của hai số",
+    "m": "số phần của số thứ nhất",
+    "n": "số phần của số thứ hai"
+   },
+   "units": {},
+   "conditions": "Tỉ số của hai số là a : b = m : n với m, n là số tự nhiên khác 0",
+   "note": "Vẽ sơ đồ đoạn thẳng: tổng số phần bằng nhau là m + n; giá trị một phần là S : (m + n).",
+   "tags": [
+    "toan-dien-hinh",
+    "tong-ti",
+    "so-do-doan-thang"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-hieu-va-ti-so",
+    "math.tieu-hoc.dai-luong-ti-le.ti-so-cua-hai-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-binh-hanh",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình bình hành",
+   "name_vi": "Chu vi hình bình hành",
+   "name_en": "Perimeter of a parallelogram",
+   "latex": "P = a + b + a + b = (a + b) \\times 2",
+   "vars": {
+    "P": "chu vi hình bình hành",
+    "a": "độ dài cạnh đáy",
+    "b": "độ dài cạnh bên"
+   },
+   "units": {
+    "P": "m",
+    "a": "m",
+    "b": "m"
+   },
+   "conditions": "a > 0, b > 0 và cùng đơn vị đo",
+   "note": "Hình bình hành có hai cặp cạnh đối song song và bằng nhau. Theo Chương trình GDPT 2018, lớp 4 chỉ yêu cầu nhận biết hình bình hành; công thức chu vi là nội dung mở rộng.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-binh-hanh",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-binh-hanh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-binh-hanh",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình bình hành",
+   "name_vi": "Diện tích hình bình hành",
+   "name_en": "Area of a parallelogram",
+   "latex": "S = a \\times h",
+   "vars": {
+    "S": "diện tích hình bình hành",
+    "a": "độ dài đáy",
+    "h": "chiều cao ứng với đáy a"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, h > 0 và cùng đơn vị đo",
+   "note": "Chiều cao là đoạn thẳng vuông góc hạ từ một đỉnh xuống đáy, không phải cạnh bên. Theo Chương trình GDPT 2018, công thức này được học chính thức ở lớp 6; ở tiểu học chỉ là nội dung mở rộng.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-binh-hanh",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-binh-hanh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.nua-chu-vi-hinh-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình chữ nhật",
+   "name_vi": "Nửa chu vi hình chữ nhật",
+   "name_en": "Semi-perimeter of a rectangle",
+   "latex": "a + b = P : 2",
+   "vars": {
+    "a": "chiều dài",
+    "b": "chiều rộng",
+    "P": "chu vi hình chữ nhật"
+   },
+   "units": {
+    "a": "m",
+    "b": "m",
+    "P": "m"
+   },
+   "conditions": "P > 0",
+   "note": "Nửa chu vi chính là tổng chiều dài và chiều rộng - cầu nối để đưa về dạng toán tổng - hiệu hoặc tổng - tỉ.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-chu-nhat",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-hieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-thoi",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình thoi",
+   "name_vi": "Chu vi hình thoi",
+   "name_en": "Perimeter of a rhombus",
+   "latex": "P = a + a + a + a = a \\times 4",
+   "vars": {
+    "P": "chu vi hình thoi",
+    "a": "độ dài một cạnh hình thoi"
+   },
+   "units": {
+    "P": "m",
+    "a": "m"
+   },
+   "conditions": "a > 0",
+   "note": "Hình thoi có bốn cạnh bằng nhau nên chu vi tính như hình vuông. Theo Chương trình GDPT 2018, lớp 4 chỉ yêu cầu nhận biết hình thoi; công thức chu vi là nội dung mở rộng.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-thoi",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-thoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-thoi",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình thoi",
+   "name_vi": "Diện tích hình thoi",
+   "name_en": "Area of a rhombus",
+   "latex": "S = \\frac{m \\times n}{2}",
+   "vars": {
+    "S": "diện tích hình thoi",
+    "m": "độ dài đường chéo thứ nhất",
+    "n": "độ dài đường chéo thứ hai"
+   },
+   "units": {
+    "S": "m^2",
+    "m": "m",
+    "n": "m"
+   },
+   "conditions": "m > 0, n > 0 và cùng đơn vị đo",
+   "note": "Diện tích hình thoi bằng tích độ dài hai đường chéo chia cho 2. Theo Chương trình GDPT 2018, công thức này được học chính thức ở lớp 6; ở tiểu học chỉ là nội dung mở rộng.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-thoi",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-thoi"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.chia-hai-phan-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Chia hai phân số",
+   "name_en": "Dividing fractions",
+   "latex": "\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{a \\times d}{b \\times c}",
+   "vars": {
+    "a": "tử số của số bị chia",
+    "b": "mẫu số của số bị chia",
+    "c": "tử số của số chia",
+    "d": "mẫu số của số chia"
+   },
+   "units": {},
+   "conditions": "b khác 0, c khác 0, d khác 0",
+   "note": "Muốn chia hai phân số, ta lấy phân số thứ nhất nhân với phân số thứ hai đảo ngược.",
+   "tags": [
+    "phan-so",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.phan-so-dao-nguoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.cong-hai-phan-so-cung-mau-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Cộng hai phân số cùng mẫu số",
+   "name_en": "Adding fractions with the same denominator",
+   "latex": "\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}",
+   "vars": {
+    "a": "tử số thứ nhất",
+    "b": "tử số thứ hai",
+    "c": "mẫu số chung"
+   },
+   "units": {},
+   "conditions": "c khác 0",
+   "note": "Cộng tử số, giữ nguyên mẫu số, sau đó rút gọn nếu được.",
+   "tags": [
+    "phan-so",
+    "phep-cong"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.tru-hai-phan-so-cung-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.cong-hai-phan-so-khac-mau-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Cộng hai phân số khác mẫu số",
+   "name_en": "Adding fractions with different denominators",
+   "latex": "\\frac{a}{b} + \\frac{c}{d} = \\frac{a \\times d + c \\times b}{b \\times d}",
+   "vars": {
+    "a": "tử số thứ nhất",
+    "b": "mẫu số thứ nhất",
+    "c": "tử số thứ hai",
+    "d": "mẫu số thứ hai"
+   },
+   "units": {},
+   "conditions": "b khác 0, d khác 0",
+   "note": "Bản chất là quy đồng mẫu số rồi cộng tử số; nên rút gọn kết quả.",
+   "tags": [
+    "phan-so",
+    "phep-cong",
+    "quy-dong"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.quy-dong-mau-so",
+    "math.tieu-hoc.phan-so.tru-hai-phan-so-khac-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.nhan-hai-phan-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Nhân hai phân số",
+   "name_en": "Multiplying fractions",
+   "latex": "\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}",
+   "vars": {
+    "a": "tử số thứ nhất",
+    "b": "mẫu số thứ nhất",
+    "c": "tử số thứ hai",
+    "d": "mẫu số thứ hai"
+   },
+   "units": {},
+   "conditions": "b khác 0, d khác 0",
+   "note": "Nhân tử với tử, mẫu với mẫu. Có thể rút gọn chéo trước khi nhân.",
+   "tags": [
+    "phan-so",
+    "phep-nhan"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.chia-hai-phan-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.tru-hai-phan-so-cung-mau-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Trừ hai phân số cùng mẫu số",
+   "name_en": "Subtracting fractions with the same denominator",
+   "latex": "\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}",
+   "vars": {
+    "a": "tử số của số bị trừ",
+    "b": "tử số của số trừ",
+    "c": "mẫu số chung"
+   },
+   "units": {},
+   "conditions": "c khác 0; a \\ge b để kết quả không âm",
+   "note": "Trừ tử số, giữ nguyên mẫu số.",
+   "tags": [
+    "phan-so",
+    "phep-tru"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.cong-hai-phan-so-cung-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.tru-hai-phan-so-khac-mau-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Trừ hai phân số khác mẫu số",
+   "name_en": "Subtracting fractions with different denominators",
+   "latex": "\\frac{a}{b} - \\frac{c}{d} = \\frac{a \\times d - c \\times b}{b \\times d}",
+   "vars": {
+    "a": "tử số của số bị trừ",
+    "b": "mẫu số của số bị trừ",
+    "c": "tử số của số trừ",
+    "d": "mẫu số của số trừ"
+   },
+   "units": {},
+   "conditions": "b khác 0, d khác 0; a x d \\ge c x b để kết quả không âm",
+   "note": "Quy đồng mẫu số rồi trừ tử số.",
+   "tags": [
+    "phan-so",
+    "phep-tru",
+    "quy-dong"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.cong-hai-phan-so-khac-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.phan-so-la-thuong-cua-phep-chia",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Khái niệm phân số",
+   "name_vi": "Phân số là thương của phép chia",
+   "name_en": "Fraction as a quotient",
+   "latex": "\\frac{a}{b} = a : b",
+   "vars": {
+    "a": "tử số (số bị chia)",
+    "b": "mẫu số (số chia)"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Thương của phép chia số tự nhiên cho số tự nhiên khác 0 có thể viết thành phân số.",
+   "tags": [
+    "phan-so",
+    "khai-niem"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.tinh-chat-co-ban-cua-phan-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.quy-dong-mau-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Rút gọn và quy đồng",
+   "name_vi": "Quy đồng mẫu số hai phân số",
+   "name_en": "Finding a common denominator",
+   "latex": "\\frac{a}{b} = \\frac{a \\times d}{b \\times d} \\;;\\; \\frac{c}{d} = \\frac{c \\times b}{d \\times b}",
+   "vars": {
+    "a": "tử số của phân số thứ nhất",
+    "b": "mẫu số của phân số thứ nhất",
+    "c": "tử số của phân số thứ hai",
+    "d": "mẫu số của phân số thứ hai"
+   },
+   "units": {},
+   "conditions": "b khác 0, d khác 0",
+   "note": "Mẫu số chung là b x d. Nếu b chia hết cho d thì chỉ cần lấy b làm mẫu số chung.",
+   "tags": [
+    "phan-so",
+    "quy-dong"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.cong-hai-phan-so-khac-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.rut-gon-phan-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Rút gọn và quy đồng",
+   "name_vi": "Rút gọn phân số",
+   "name_en": "Simplifying a fraction",
+   "latex": "\\frac{a}{b} = \\frac{a : d}{b : d}",
+   "vars": {
+    "a": "tử số",
+    "b": "mẫu số",
+    "d": "ước chung của a và b (d > 1)"
+   },
+   "units": {},
+   "conditions": "b khác 0; d là ước chung của a và b",
+   "note": "Rút gọn đến khi tử và mẫu không cùng chia hết cho số tự nhiên nào lớn hơn 1 thì được phân số tối giản.",
+   "tags": [
+    "phan-so",
+    "rut-gon"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.tinh-chat-co-ban-cua-phan-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.so-sanh-hai-phan-so-bang-tich-cheo",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "So sánh phân số",
+   "name_vi": "So sánh hai phân số bằng tích chéo",
+   "name_en": "Comparing fractions by cross multiplication",
+   "latex": "\\frac{a}{b} < \\frac{c}{d} \\iff a \\times d < c \\times b",
+   "vars": {
+    "a": "tử số thứ nhất",
+    "b": "mẫu số thứ nhất",
+    "c": "tử số thứ hai",
+    "d": "mẫu số thứ hai"
+   },
+   "units": {},
+   "conditions": "b > 0, d > 0",
+   "note": "Tương đương với việc quy đồng mẫu số rồi so sánh tử số.",
+   "tags": [
+    "phan-so",
+    "so-sanh",
+    "tich-cheo"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.quy-dong-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.so-sanh-hai-phan-so-cung-mau-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "So sánh phân số",
+   "name_vi": "So sánh hai phân số cùng mẫu số",
+   "name_en": "Comparing fractions with the same denominator",
+   "latex": "\\frac{a}{c} < \\frac{b}{c} \\iff a < b",
+   "vars": {
+    "a": "tử số thứ nhất",
+    "b": "tử số thứ hai",
+    "c": "mẫu số chung"
+   },
+   "units": {},
+   "conditions": "c > 0",
+   "note": "Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn.",
+   "tags": [
+    "phan-so",
+    "so-sanh"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.so-sanh-hai-phan-so-cung-tu-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.so-sanh-hai-phan-so-cung-tu-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "So sánh phân số",
+   "name_vi": "So sánh hai phân số cùng tử số",
+   "name_en": "Comparing fractions with the same numerator",
+   "latex": "\\frac{a}{b} < \\frac{a}{c} \\iff b > c",
+   "vars": {
+    "a": "tử số chung",
+    "b": "mẫu số thứ nhất",
+    "c": "mẫu số thứ hai"
+   },
+   "units": {},
+   "conditions": "a > 0, b > 0, c > 0",
+   "note": "Cùng tử số: phân số nào có mẫu số bé hơn thì lớn hơn.",
+   "tags": [
+    "phan-so",
+    "so-sanh"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.so-sanh-hai-phan-so-cung-mau-so",
+    "math.tieu-hoc.phan-so.so-sanh-phan-so-voi-1"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.so-sanh-phan-so-voi-1",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "So sánh phân số",
+   "name_vi": "So sánh phân số với 1",
+   "name_en": "Comparing a fraction with 1",
+   "latex": "\\frac{a}{b} < 1 \\iff a < b \\;;\\quad \\frac{a}{b} = 1 \\iff a = b \\;;\\quad \\frac{a}{b} > 1 \\iff a > b",
+   "vars": {
+    "a": "tử số",
+    "b": "mẫu số"
+   },
+   "units": {},
+   "conditions": "a là số tự nhiên, b là số tự nhiên khác 0",
+   "note": "Phân số có tử số bé hơn mẫu số thì bé hơn 1; tử số lớn hơn mẫu số thì lớn hơn 1 và đổi được thành hỗn số. Dùng số 1 làm trung gian để so sánh nhanh hai phân số, ví dụ 5/6 < 1 < 7/6.",
+   "tags": [
+    "phan-so",
+    "so-sanh",
+    "don-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.so-sanh-hai-phan-so-cung-mau-so",
+    "math.tieu-hoc.phan-so.doi-phan-so-thanh-hon-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.tim-mot-so-khi-biet-phan-so-cua-no",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Toán về phân số",
+   "name_vi": "Tìm một số khi biết phân số của nó",
+   "name_en": "Finding a number given a fraction of it",
+   "latex": "N = x : \\frac{a}{b} = x \\times \\frac{b}{a}",
+   "vars": {
+    "x": "giá trị đã biết",
+    "N": "số cần tìm",
+    "a": "tử số của phân số",
+    "b": "mẫu số của phân số"
+   },
+   "units": {},
+   "conditions": "a khác 0, b khác 0",
+   "note": "Ví dụ: 2/3 của một số là 30 thì số đó là 30 : 2/3 = 45.",
+   "tags": [
+    "phan-so",
+    "toan-do",
+    "tim-gia-tri"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.tim-phan-so-cua-mot-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.tim-phan-so-cua-mot-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Toán về phân số",
+   "name_vi": "Tìm phân số của một số",
+   "name_en": "Finding a fraction of a number",
+   "latex": "x = N \\times \\frac{a}{b}",
+   "vars": {
+    "x": "giá trị cần tìm",
+    "N": "số đã cho",
+    "a": "tử số của phân số",
+    "b": "mẫu số của phân số"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Ví dụ: 2/3 của 45 là 45 x 2/3 = 30.",
+   "tags": [
+    "phan-so",
+    "toan-do",
+    "tim-gia-tri"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.tim-mot-so-khi-biet-phan-so-cua-no"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.tinh-chat-co-ban-cua-phan-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Tính chất cơ bản",
+   "name_vi": "Tính chất cơ bản của phân số",
+   "name_en": "Fundamental property of fractions",
+   "latex": "\\frac{a}{b} = \\frac{a \\times m}{b \\times m} = \\frac{a : n}{b : n}",
+   "vars": {
+    "a": "tử số",
+    "b": "mẫu số",
+    "m": "số tự nhiên khác 0 dùng để nhân",
+    "n": "ước chung của a và b"
+   },
+   "units": {},
+   "conditions": "b khác 0; m khác 0; n là ước chung khác 0 của a và b",
+   "note": "Nhân (hoặc chia) cả tử và mẫu với cùng một số khác 0 thì được phân số bằng phân số đã cho.",
+   "tags": [
+    "phan-so",
+    "tinh-chat"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.rut-gon-phan-so",
+    "math.tieu-hoc.phan-so.quy-dong-mau-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.trung-binh-cong.tong-khi-biet-trung-binh-cong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Trung bình cộng",
+   "subtopic": "Công thức cơ bản",
+   "name_vi": "Tìm tổng khi biết trung bình cộng",
+   "name_en": "Total from the mean",
+   "latex": "S = \\overline{x} \\times n",
+   "vars": {
+    "S": "tổng của các số hạng",
+    "\\overline{x}": "số trung bình cộng",
+    "n": "số các số hạng"
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0",
+   "note": "Là công thức đảo của trung bình cộng, dùng để tìm số hạng còn thiếu.",
+   "tags": [
+    "trung-binh-cong",
+    "toan-do"
+   ],
+   "related": [
+    "math.tieu-hoc.trung-binh-cong.trung-binh-cong-cua-nhieu-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.trung-binh-cong.trung-binh-cong-cua-nhieu-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Trung bình cộng",
+   "subtopic": "Công thức cơ bản",
+   "name_vi": "Trung bình cộng của nhiều số",
+   "name_en": "Arithmetic mean",
+   "latex": "\\overline{x} = \\frac{a_1 + a_2 + \\cdots + a_n}{n}",
+   "vars": {
+    "\\overline{x}": "số trung bình cộng",
+    "a_i": "các số hạng đã cho",
+    "n": "số các số hạng"
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0",
+   "note": "Muốn tìm số trung bình cộng, ta lấy tổng chia cho số các số hạng.",
+   "tags": [
+    "trung-binh-cong",
+    "thong-ke"
+   ],
+   "related": [
+    "math.tieu-hoc.trung-binh-cong.tong-khi-biet-trung-binh-cong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.trung-binh-cong.trung-binh-cong-cua-day-cach-deu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Trung bình cộng",
+   "subtopic": "Trường hợp đặc biệt",
+   "name_vi": "Trung bình cộng của dãy số cách đều",
+   "name_en": "Mean of an arithmetic sequence",
+   "latex": "\\overline{x} = \\frac{a_1 + a_n}{2}",
+   "vars": {
+    "\\overline{x}": "số trung bình cộng của dãy",
+    "a_1": "số hạng đầu",
+    "a_n": "số hạng cuối"
+   },
+   "units": {},
+   "conditions": "Dãy số phải cách đều (hai số liên tiếp hơn kém nhau cùng một số d)",
+   "note": "Nếu dãy có số lẻ số hạng thì trung bình cộng chính là số hạng đứng giữa.",
+   "tags": [
+    "trung-binh-cong",
+    "day-so-cach-deu"
+   ],
+   "related": [
+    "math.tieu-hoc.day-so-cach-deu.tong-cua-day-so-cach-deu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.bang-don-vi-do-dien-tich",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo diện tích",
+   "name_vi": "Bảng đơn vị đo diện tích",
+   "name_en": "Units of area",
+   "latex": "1\\ \\text{km}^2 = 100\\ \\text{hm}^2 = 10\\,000\\ \\text{dam}^2 = 1\\,000\\,000\\ \\text{m}^2 \\;;\\quad 1\\ \\text{m}^2 = 100\\ \\text{dm}^2 = 10\\,000\\ \\text{cm}^2 = 1\\,000\\,000\\ \\text{mm}^2",
+   "vars": {
+    "\\text{km}^2": "ki-lô-mét vuông",
+    "\\text{hm}^2": "héc-tô-mét vuông",
+    "\\text{dam}^2": "đề-ca-mét vuông",
+    "\\text{m}^2": "mét vuông",
+    "\\text{dm}^2": "đề-xi-mét vuông",
+    "\\text{cm}^2": "xăng-ti-mét vuông",
+    "\\text{mm}^2": "mi-li-mét vuông"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Mỗi đơn vị đo diện tích gấp 100 lần đơn vị bé hơn liền sau (khác với độ dài là 10 lần).",
+   "tags": [
+    "don-vi-do",
+    "dien-tich",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.don-vi-do-dien-tich-ruong-dat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.don-vi-do-thoi-gian-lon",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo thời gian",
+   "name_vi": "Các đơn vị đo thời gian lớn",
+   "name_en": "Large units of time",
+   "latex": "1\\ \\text{thế kỉ} = 100\\ \\text{năm} \\;;\\quad 1\\ \\text{năm} = 12\\ \\text{tháng} \\;;\\quad 1\\ \\text{năm thường} = 365\\ \\text{ngày} \\;;\\quad 1\\ \\text{năm nhuận} = 366\\ \\text{ngày} \\;;\\quad 1\\ \\text{tuần} = 7\\ \\text{ngày}",
+   "vars": {
+    "\\text{thế kỉ}": "thế kỉ",
+    "\\text{năm}": "năm",
+    "\\text{năm thường}": "năm không nhuận",
+    "\\text{năm nhuận}": "năm nhuận",
+    "\\text{tháng}": "tháng",
+    "\\text{ngày}": "ngày",
+    "\\text{tuần}": "tuần lễ"
+   },
+   "units": {},
+   "conditions": "Năm nhuận là năm chia hết cho 4; riêng các năm tròn trăm phải chia hết cho 400 mới là năm nhuận (năm 2000 là năm nhuận, năm 1900 thì không)",
+   "note": "Các tháng có 31 ngày: 1; 3; 5; 7; 8; 10; 12. Các tháng có 30 ngày: 4; 6; 9; 11. Tháng Hai có 28 ngày (năm thường) hoặc 29 ngày (năm nhuận).",
+   "tags": [
+    "don-vi-do",
+    "thoi-gian",
+    "lich"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-thoi-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dai-luong-ti-le.ti-le-ban-do",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Đại lượng tỉ lệ",
+   "subtopic": "Tỉ lệ bản đồ",
+   "name_vi": "Ứng dụng tỉ lệ bản đồ",
+   "name_en": "Map scale",
+   "latex": "d_{\\text{that}} = d_{\\text{bd}} \\times M",
+   "vars": {
+    "d_{\\text{that}}": "độ dài thật",
+    "d_{\\text{bd}}": "độ dài đo được trên bản đồ",
+    "M": "mẫu số của tỉ lệ bản đồ 1 : M"
+   },
+   "units": {
+    "d_{\\text{that}}": "m",
+    "d_{\\text{bd}}": "m"
+   },
+   "conditions": "M khác 0; hai độ dài phải cùng đơn vị trước khi nhân",
+   "note": "Ngược lại: độ dài trên bản đồ = độ dài thật : M. Ví dụ tỉ lệ 1 : 1000, đoạn 3 cm trên bản đồ ứng với 3000 cm = 30 m.",
+   "tags": [
+    "ti-le-thuan",
+    "ban-do",
+    "thuc-te"
+   ],
+   "related": [
+    "math.tieu-hoc.dai-luong-ti-le.dai-luong-ti-le-thuan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dai-luong-ti-le.rut-ve-don-vi-trong-bai-toan-ti-le-thuan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Đại lượng tỉ lệ",
+   "subtopic": "Tỉ lệ thuận",
+   "name_vi": "Phương pháp rút về đơn vị (tỉ lệ thuận)",
+   "name_en": "Unitary method for direct proportion",
+   "latex": "y_2 = \\frac{y_1}{x_1} \\times x_2",
+   "vars": {
+    "x_1": "số đơn vị đã biết",
+    "y_1": "giá trị ứng với x_1 đơn vị",
+    "x_2": "số đơn vị cần tính",
+    "y_2": "giá trị cần tìm"
+   },
+   "units": {},
+   "conditions": "x_1 khác 0; hai đại lượng tỉ lệ thuận với nhau",
+   "note": "Bước 1: tìm giá trị của một đơn vị (rút về đơn vị). Bước 2: nhân với số đơn vị cần tìm.",
+   "tags": [
+    "ti-le-thuan",
+    "rut-ve-don-vi",
+    "toan-do"
+   ],
+   "related": [
+    "math.tieu-hoc.dai-luong-ti-le.dai-luong-ti-le-nghich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dai-luong-ti-le.ti-so-cua-hai-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    4,
+    5
+   ],
+   "topic": "Đại lượng tỉ lệ",
+   "subtopic": "Tỉ số",
+   "name_vi": "Tỉ số của hai số",
+   "name_en": "Ratio of two numbers",
+   "latex": "k = a : b = \\frac{a}{b}",
+   "vars": {
+    "k": "tỉ số của a và b",
+    "a": "số thứ nhất",
+    "b": "số thứ hai"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Tỉ số cho biết số thứ nhất gấp mấy lần số thứ hai. Nếu a : b = m : n thì a gồm m phần, b gồm n phần bằng nhau - đây là cơ sở của các bài toán tổng - tỉ và hiệu - tỉ.",
+   "tags": [
+    "ti-so",
+    "phan-so",
+    "toan-do"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-ti-so",
+    "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-cua-hai-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.doi-don-vi-van-toc",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Ba đại lượng cơ bản",
+   "name_vi": "Đổi đơn vị vận tốc",
+   "name_en": "Converting speed units",
+   "latex": "1\\ \\text{km/h} = \\frac{1000}{3600}\\ \\text{m/s} \\approx 0{,}278\\ \\text{m/s} \\;;\\qquad 1\\ \\text{m/s} = 3{,}6\\ \\text{km/h} \\;;\\qquad 1\\ \\text{km/h} = \\frac{1000}{60}\\ \\text{m/phút}",
+   "vars": {
+    "\\text{km/h}": "ki-lô-mét trên giờ",
+    "\\text{m/s}": "mét trên giây",
+    "\\text{m/phút}": "mét trên phút"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Trong mọi bài toán chuyển động, quãng đường, vận tốc và thời gian phải cùng hệ đơn vị: km với km/h và giờ, m với m/phút và phút.",
+   "tags": [
+    "chuyen-dong-deu",
+    "van-toc",
+    "don-vi-do"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.quang-duong",
+    "math.tieu-hoc.don-vi-do.doi-so-do-thoi-gian-sang-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.quang-duong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Ba đại lượng cơ bản",
+   "name_vi": "Quãng đường trong chuyển động đều",
+   "name_en": "Distance in uniform motion",
+   "latex": "s = v \\times t",
+   "vars": {
+    "s": "quãng đường đi được",
+    "v": "vận tốc",
+    "t": "thời gian đi"
+   },
+   "units": {
+    "s": "m",
+    "v": "m/s",
+    "t": "s"
+   },
+   "conditions": "Vận tốc không đổi; đơn vị của v và t phải tương ứng với nhau",
+   "note": "Ở tiểu học thường dùng km/h với km và giờ, hoặc m/phút với m và phút.",
+   "tags": [
+    "chuyen-dong-deu",
+    "quang-duong",
+    "van-toc"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.van-toc",
+    "math.tieu-hoc.chuyen-dong-deu.thoi-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.thoi-gian",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Ba đại lượng cơ bản",
+   "name_vi": "Thời gian trong chuyển động đều",
+   "name_en": "Time in uniform motion",
+   "latex": "t = s : v",
+   "vars": {
+    "t": "thời gian đi",
+    "s": "quãng đường đi được",
+    "v": "vận tốc"
+   },
+   "units": {
+    "t": "s",
+    "s": "m",
+    "v": "m/s"
+   },
+   "conditions": "v > 0; chuyển động đều",
+   "note": "Thời gian đi = thời gian đến - thời gian khởi hành - thời gian nghỉ (nếu có).",
+   "tags": [
+    "chuyen-dong-deu",
+    "thoi-gian"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.quang-duong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.van-toc",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Ba đại lượng cơ bản",
+   "name_vi": "Vận tốc trong chuyển động đều",
+   "name_en": "Speed in uniform motion",
+   "latex": "v = s : t",
+   "vars": {
+    "v": "vận tốc",
+    "s": "quãng đường đi được",
+    "t": "thời gian đi"
+   },
+   "units": {
+    "v": "m/s",
+    "s": "m",
+    "t": "s"
+   },
+   "conditions": "t > 0; chuyển động đều",
+   "note": "Vận tốc cho biết quãng đường đi được trong một đơn vị thời gian. 1 km/h xấp xỉ 0,278 m/s.",
+   "tags": [
+    "chuyen-dong-deu",
+    "van-toc"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.quang-duong",
+    "math.tieu-hoc.chuyen-dong-deu.doi-don-vi-van-toc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.van-toc-trung-binh",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Ba đại lượng cơ bản",
+   "name_vi": "Vận tốc trung bình trên cả quãng đường",
+   "name_en": "Average speed",
+   "latex": "v_{tb} = \\frac{s_1 + s_2 + \\cdots + s_n}{t_1 + t_2 + \\cdots + t_n} = \\frac{s}{t}",
+   "vars": {
+    "v_{tb}": "vận tốc trung bình trên cả hành trình",
+    "s_i": "quãng đường của chặng thứ i",
+    "t_i": "thời gian đi chặng thứ i",
+    "n": "số chặng đường",
+    "s": "tổng quãng đường",
+    "t": "tổng thời gian (kể cả thời gian nghỉ nếu đề bài yêu cầu)"
+   },
+   "units": {
+    "v_{tb}": "m/s",
+    "s_i": "m",
+    "t_i": "s",
+    "s": "m",
+    "t": "s"
+   },
+   "conditions": "Tổng thời gian t > 0",
+   "note": "Vận tốc trung bình bằng tổng quãng đường chia tổng thời gian, KHÔNG phải trung bình cộng của các vận tốc. Chỉ khi các chặng có thời gian bằng nhau thì hai cách mới cho cùng kết quả.",
+   "tags": [
+    "chuyen-dong-deu",
+    "van-toc",
+    "trung-binh"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.van-toc",
+    "physics.thcs.chuyen-dong.toc-do-trung-binh",
+    "physics.thpt.dong-hoc.toc-do-trung-binh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.van-toc-dong-nuoc",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Chuyển động trên dòng nước",
+   "name_vi": "Vận tốc dòng nước",
+   "name_en": "Speed of the current",
+   "latex": "v_{d} = \\frac{v_{xd} - v_{nd}}{2}",
+   "vars": {
+    "v_{d}": "vận tốc dòng nước",
+    "v_{xd}": "vận tốc xuôi dòng",
+    "v_{nd}": "vận tốc ngược dòng"
+   },
+   "units": {
+    "v_{d}": "m/s",
+    "v_{xd}": "m/s",
+    "v_{nd}": "m/s"
+   },
+   "conditions": "v_xd > v_nd",
+   "note": "Suy ra từ dạng toán tổng - hiệu với tổng là v_xd + v_nd và hiệu là v_xd - v_nd.",
+   "tags": [
+    "chuyen-dong-deu",
+    "dong-nuoc",
+    "tong-hieu"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.van-toc-thuc-cua-thuyen",
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-hieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.van-toc-nguoc-dong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Chuyển động trên dòng nước",
+   "name_vi": "Vận tốc ngược dòng",
+   "name_en": "Upstream speed",
+   "latex": "v_{nd} = v_{t} - v_{d}",
+   "vars": {
+    "v_{nd}": "vận tốc ngược dòng của thuyền (ca nô)",
+    "v_{t}": "vận tốc thực của thuyền khi nước lặng",
+    "v_{d}": "vận tốc dòng nước"
+   },
+   "units": {
+    "v_{nd}": "m/s",
+    "v_{t}": "m/s",
+    "v_{d}": "m/s"
+   },
+   "conditions": "v_t > v_d thì thuyền mới đi ngược dòng được",
+   "note": "Vật trôi theo dòng nước (bè, khúc gỗ) có vận tốc đúng bằng vận tốc dòng nước.",
+   "tags": [
+    "chuyen-dong-deu",
+    "dong-nuoc",
+    "nguoc-dong"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.van-toc-xuoi-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.van-toc-thuc-cua-thuyen",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Chuyển động trên dòng nước",
+   "name_vi": "Vận tốc thực của thuyền khi nước lặng",
+   "name_en": "Speed of the boat in still water",
+   "latex": "v_{t} = \\frac{v_{xd} + v_{nd}}{2}",
+   "vars": {
+    "v_{t}": "vận tốc thực của thuyền khi nước lặng",
+    "v_{xd}": "vận tốc xuôi dòng",
+    "v_{nd}": "vận tốc ngược dòng"
+   },
+   "units": {
+    "v_{t}": "m/s",
+    "v_{xd}": "m/s",
+    "v_{nd}": "m/s"
+   },
+   "conditions": "v_xd \\ge v_nd",
+   "note": "Vận tốc thực là trung bình cộng của vận tốc xuôi dòng và vận tốc ngược dòng.",
+   "tags": [
+    "chuyen-dong-deu",
+    "dong-nuoc",
+    "van-toc-thuc"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.van-toc-dong-nuoc"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.van-toc-xuoi-dong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Chuyển động trên dòng nước",
+   "name_vi": "Vận tốc xuôi dòng",
+   "name_en": "Downstream speed",
+   "latex": "v_{xd} = v_{t} + v_{d}",
+   "vars": {
+    "v_{xd}": "vận tốc xuôi dòng của thuyền (ca nô)",
+    "v_{t}": "vận tốc thực của thuyền khi nước lặng",
+    "v_{d}": "vận tốc dòng nước"
+   },
+   "units": {
+    "v_{xd}": "m/s",
+    "v_{t}": "m/s",
+    "v_{d}": "m/s"
+   },
+   "conditions": "v_t > 0, v_d \\ge 0",
+   "note": "Đi xuôi dòng thì dòng nước đẩy thêm nên vận tốc tăng.",
+   "tags": [
+    "chuyen-dong-deu",
+    "dong-nuoc",
+    "xuoi-dong"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.van-toc-nguoc-dong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-cung-chieu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Hai vật chuyển động",
+   "name_vi": "Hai vật chuyển động cùng chiều đuổi kịp nhau",
+   "name_en": "Two objects moving in the same direction (catch-up)",
+   "latex": "t = \\frac{s}{v_1 - v_2}",
+   "vars": {
+    "t": "thời gian để vật đi sau đuổi kịp vật đi trước",
+    "s": "khoảng cách ban đầu giữa hai vật",
+    "v_1": "vận tốc vật đi sau (vật nhanh hơn)",
+    "v_2": "vận tốc vật đi trước (vật chậm hơn)"
+   },
+   "units": {
+    "t": "giờ",
+    "s": "km",
+    "v_1": "km/h",
+    "v_2": "km/h"
+   },
+   "conditions": "v_1 > v_2 thì mới đuổi kịp; hai vật khởi hành cùng lúc",
+   "note": "Hiệu vận tốc là v_1 - v_2. Nếu khởi hành lệch giờ thì phải tính khoảng cách ban đầu s trước.",
+   "tags": [
+    "chuyen-dong-deu",
+    "cung-chieu",
+    "duoi-kip"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-nguoc-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-nguoc-chieu",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Hai vật chuyển động",
+   "name_vi": "Hai vật chuyển động ngược chiều gặp nhau",
+   "name_en": "Two objects moving toward each other",
+   "latex": "t = \\frac{s}{v_1 + v_2}",
+   "vars": {
+    "t": "thời gian để hai vật gặp nhau",
+    "s": "khoảng cách ban đầu giữa hai vật",
+    "v_1": "vận tốc vật thứ nhất",
+    "v_2": "vận tốc vật thứ hai"
+   },
+   "units": {
+    "t": "giờ",
+    "s": "km",
+    "v_1": "km/h",
+    "v_2": "km/h"
+   },
+   "conditions": "Hai vật khởi hành cùng lúc, đi ngược chiều để gặp nhau; v_1 + v_2 > 0",
+   "note": "Tổng vận tốc là v_1 + v_2. Quãng đường mỗi vật đi được: s_1 = v_1 x t, s_2 = v_2 x t.",
+   "tags": [
+    "chuyen-dong-deu",
+    "nguoc-chieu",
+    "gap-nhau"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-cung-chieu",
+    "physics.thcs.chuyen-dong.hai-vat-gap-nhau-nguoc-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.chuyen-dong-deu.thoi-diem-gap-nhau",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Chuyển động đều",
+   "subtopic": "Hai vật chuyển động",
+   "name_vi": "Thời điểm hai vật gặp nhau",
+   "name_en": "Meeting time of two moving objects",
+   "latex": "t_{\\text{gap}} = t_{0} + \\frac{s}{v_1 + v_2}",
+   "vars": {
+    "t_{\\text{gap}}": "thời điểm hai vật gặp nhau",
+    "t_{0}": "thời điểm hai vật cùng khởi hành",
+    "s": "khoảng cách ban đầu giữa hai vật",
+    "v_1": "vận tốc vật thứ nhất",
+    "v_2": "vận tốc vật thứ hai"
+   },
+   "units": {
+    "t_{\\text{gap}}": "giờ",
+    "t_{0}": "giờ",
+    "s": "km",
+    "v_1": "km/h",
+    "v_2": "km/h"
+   },
+   "conditions": "Hai vật khởi hành cùng lúc tại thời điểm t_0 và đi ngược chiều để gặp nhau; v_1 + v_2 > 0",
+   "note": "Nếu hai vật khởi hành lệch giờ, trước hết tính quãng đường vật đi trước đã đi được, lấy khoảng cách ban đầu trừ đi phần đó rồi mới áp dụng công thức. Với bài toán đuổi kịp, thay v_1 + v_2 bằng v_1 - v_2.",
+   "tags": [
+    "chuyen-dong-deu",
+    "gap-nhau",
+    "thoi-diem"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-nguoc-chieu",
+    "math.tieu-hoc.chuyen-dong-deu.hai-vat-chuyen-dong-cung-chieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.nang-suat-lam-chung-cong-viec",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán làm chung công việc",
+   "name_vi": "Năng suất khi làm chung một công việc",
+   "name_en": "Combined work rate",
+   "latex": "\\frac{1}{t} = \\frac{1}{t_1} + \\frac{1}{t_2}",
+   "vars": {
+    "t": "thời gian hai người (hai vòi) cùng làm xong công việc",
+    "t_1": "thời gian người thứ nhất làm một mình xong công việc",
+    "t_2": "thời gian người thứ hai làm một mình xong công việc"
+   },
+   "units": {
+    "t": "h",
+    "t_1": "h",
+    "t_2": "h"
+   },
+   "conditions": "t_1 > 0, t_2 > 0; mỗi người làm với năng suất không đổi",
+   "note": "Coi cả công việc là 1 đơn vị; mỗi giờ người thứ nhất làm được 1/t_1 công việc.",
+   "tags": [
+    "toan-dien-hinh",
+    "lam-chung-cong-viec",
+    "nang-suat"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.thoi-gian-lam-chung-cong-viec"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.thoi-gian-lam-chung-cong-viec",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán làm chung công việc",
+   "name_vi": "Thời gian hai người cùng làm xong công việc",
+   "name_en": "Time for two workers together",
+   "latex": "t = \\frac{t_1 \\times t_2}{t_1 + t_2}",
+   "vars": {
+    "t": "thời gian hai người cùng làm xong công việc",
+    "t_1": "thời gian người thứ nhất làm một mình",
+    "t_2": "thời gian người thứ hai làm một mình"
+   },
+   "units": {
+    "t": "h",
+    "t_1": "h",
+    "t_2": "h"
+   },
+   "conditions": "t_1 > 0, t_2 > 0; năng suất mỗi người không đổi",
+   "note": "Suy ra từ 1/t = 1/t_1 + 1/t_2. Thời gian làm chung luôn nhỏ hơn thời gian của người làm nhanh nhất.",
+   "tags": [
+    "toan-dien-hinh",
+    "lam-chung-cong-viec"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.nang-suat-lam-chung-cong-viec"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dang-toan-dien-hinh.voi-nuoc-chay-vao-va-chay-ra",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Dạng toán điển hình",
+   "subtopic": "Toán làm chung công việc",
+   "name_vi": "Vòi chảy vào và vòi tháo ra cùng mở",
+   "name_en": "Filling and draining pipe together",
+   "latex": "\\frac{1}{t} = \\frac{1}{t_1} - \\frac{1}{t_2}",
+   "vars": {
+    "t": "thời gian để bể đầy khi mở cả hai vòi",
+    "t_1": "thời gian vòi chảy vào làm đầy bể",
+    "t_2": "thời gian vòi tháo ra làm cạn bể"
+   },
+   "units": {
+    "t": "h",
+    "t_1": "h",
+    "t_2": "h"
+   },
+   "conditions": "t_1 < t_2 thì bể mới đầy được; lưu lượng hai vòi không đổi",
+   "note": "Nếu t_1 > t_2 thì bể không bao giờ đầy vì nước chảy ra nhanh hơn chảy vào.",
+   "tags": [
+    "toan-dien-hinh",
+    "lam-chung-cong-viec",
+    "voi-nuoc"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.nang-suat-lam-chung-cong-viec"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.chieu-cao-hinh-hop-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình hộp chữ nhật",
+   "name_vi": "Chiều cao hình hộp chữ nhật khi biết diện tích xung quanh",
+   "name_en": "Height of a cuboid from its lateral area",
+   "latex": "h = S_{xq} : \\big((a + b) \\times 2\\big)",
+   "vars": {
+    "h": "chiều cao",
+    "S_{xq}": "diện tích xung quanh",
+    "a": "chiều dài đáy",
+    "b": "chiều rộng đáy"
+   },
+   "units": {
+    "h": "m",
+    "S_{xq}": "m^2",
+    "a": "m",
+    "b": "m"
+   },
+   "conditions": "a > 0, b > 0 (do đó chu vi đáy (a + b) x 2 khác 0); các số đo cùng hệ đơn vị",
+   "note": "Chiều cao bằng diện tích xung quanh chia cho chu vi đáy.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-hop-chu-nhat",
+    "chieu-cao"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-xung-quanh-hinh-hop-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-toan-phan-hinh-hop-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình hộp chữ nhật",
+   "name_vi": "Diện tích toàn phần hình hộp chữ nhật",
+   "name_en": "Total surface area of a cuboid",
+   "latex": "S_{tp} = S_{xq} + 2 \\times a \\times b",
+   "vars": {
+    "S_{tp}": "diện tích toàn phần",
+    "S_{xq}": "diện tích xung quanh",
+    "a": "chiều dài đáy",
+    "b": "chiều rộng đáy"
+   },
+   "units": {
+    "S_{tp}": "m^2",
+    "S_{xq}": "m^2",
+    "a": "m",
+    "b": "m"
+   },
+   "conditions": "a > 0, b > 0 và cùng đơn vị đo",
+   "note": "Diện tích toàn phần bằng diện tích xung quanh cộng diện tích hai mặt đáy.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-hop-chu-nhat",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-xung-quanh-hinh-hop-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-xung-quanh-hinh-hop-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình hộp chữ nhật",
+   "name_vi": "Diện tích xung quanh hình hộp chữ nhật",
+   "name_en": "Lateral surface area of a cuboid",
+   "latex": "S_{xq} = (a + b) \\times 2 \\times h",
+   "vars": {
+    "S_{xq}": "diện tích xung quanh",
+    "a": "chiều dài đáy",
+    "b": "chiều rộng đáy",
+    "h": "chiều cao"
+   },
+   "units": {
+    "S_{xq}": "m^2",
+    "a": "m",
+    "b": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, b > 0, h > 0 và cùng đơn vị đo",
+   "note": "Diện tích xung quanh bằng chu vi đáy nhân với chiều cao.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-hop-chu-nhat",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-toan-phan-hinh-hop-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-hinh-hop-chu-nhat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình hộp chữ nhật",
+   "name_vi": "Thể tích hình hộp chữ nhật",
+   "name_en": "Volume of a cuboid",
+   "latex": "V = a \\times b \\times h",
+   "vars": {
+    "V": "thể tích hình hộp chữ nhật",
+    "a": "chiều dài",
+    "b": "chiều rộng",
+    "h": "chiều cao"
+   },
+   "units": {
+    "V": "m^3",
+    "a": "m",
+    "b": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, b > 0, h > 0 và cùng đơn vị đo",
+   "note": "Công thức đảo: h = V : (a x b).",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-hop-chu-nhat",
+    "the-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-theo-dien-tich-day"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-theo-dien-tich-day",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình hộp chữ nhật",
+   "name_vi": "Thể tích tính theo diện tích đáy và chiều cao",
+   "name_en": "Volume from base area and height",
+   "latex": "V = S_{\\text{day}} \\times h",
+   "vars": {
+    "V": "thể tích",
+    "S_{\\text{day}}": "diện tích mặt đáy",
+    "h": "chiều cao"
+   },
+   "units": {
+    "V": "m^3",
+    "S_{\\text{day}}": "m^2",
+    "h": "m"
+   },
+   "conditions": "S_{day} > 0, h > 0 và cùng hệ đơn vị",
+   "note": "Áp dụng cho hình hộp chữ nhật và hình lập phương. Công thức đảo: S_day = V : h.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "the-tich",
+    "dien-tich-day"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-hinh-hop-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-toan-phan-hinh-lap-phuong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình lập phương",
+   "name_vi": "Diện tích toàn phần hình lập phương",
+   "name_en": "Total surface area of a cube",
+   "latex": "S_{tp} = a \\times a \\times 6",
+   "vars": {
+    "S_{tp}": "diện tích toàn phần",
+    "a": "độ dài cạnh hình lập phương"
+   },
+   "units": {
+    "S_{tp}": "m^2",
+    "a": "m"
+   },
+   "conditions": "a > 0",
+   "note": "Hình lập phương có 6 mặt là các hình vuông bằng nhau. Công thức đảo: diện tích một mặt = S_tp : 6.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-lap-phuong",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-xung-quanh-hinh-lap-phuong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-xung-quanh-hinh-lap-phuong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình lập phương",
+   "name_vi": "Diện tích xung quanh hình lập phương",
+   "name_en": "Lateral surface area of a cube",
+   "latex": "S_{xq} = a \\times a \\times 4",
+   "vars": {
+    "S_{xq}": "diện tích xung quanh",
+    "a": "độ dài cạnh hình lập phương"
+   },
+   "units": {
+    "S_{xq}": "m^2",
+    "a": "m"
+   },
+   "conditions": "a > 0",
+   "note": "Hình lập phương có 4 mặt bên bằng nhau, mỗi mặt là hình vuông cạnh a.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-lap-phuong",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.dien-tich-toan-phan-hinh-lap-phuong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-hinh-lap-phuong",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học không gian",
+   "subtopic": "Hình lập phương",
+   "name_vi": "Thể tích hình lập phương",
+   "name_en": "Volume of a cube",
+   "latex": "V = a \\times a \\times a",
+   "vars": {
+    "V": "thể tích hình lập phương",
+    "a": "độ dài cạnh hình lập phương"
+   },
+   "units": {
+    "V": "m^3",
+    "a": "m"
+   },
+   "conditions": "a > 0",
+   "note": "Nếu cạnh gấp lên 2 lần thì thể tích gấp lên 8 lần.",
+   "tags": [
+    "hinh-hoc-khong-gian",
+    "hinh-lap-phuong",
+    "the-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-hinh-hop-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chieu-cao-hinh-tam-giac",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tam giác",
+   "name_vi": "Chiều cao và độ dài đáy của hình tam giác",
+   "name_en": "Height and base of a triangle",
+   "latex": "h = \\frac{S \\times 2}{a} \\;;\\qquad a = \\frac{S \\times 2}{h}",
+   "vars": {
+    "S": "diện tích tam giác",
+    "a": "độ dài đáy",
+    "h": "chiều cao ứng với đáy a"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, h > 0",
+   "note": "Suy ra từ công thức diện tích tam giác.",
+   "tags": [
+    "hinh-hoc",
+    "tam-giac",
+    "chieu-cao"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-tam-giac"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-tam-giac",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tam giác",
+   "name_vi": "Diện tích hình tam giác",
+   "name_en": "Area of a triangle",
+   "latex": "S = \\frac{a \\times h}{2}",
+   "vars": {
+    "S": "diện tích tam giác",
+    "a": "độ dài đáy",
+    "h": "chiều cao ứng với đáy a"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, h > 0 và cùng đơn vị đo",
+   "note": "Diện tích tam giác bằng độ dài đáy nhân với chiều cao (cùng đơn vị) rồi chia cho 2.",
+   "tags": [
+    "hinh-hoc",
+    "tam-giac",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chieu-cao-hinh-tam-giac"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chieu-cao-hinh-thang",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình thang",
+   "name_vi": "Chiều cao hình thang",
+   "name_en": "Height of a trapezium",
+   "latex": "h = \\frac{S \\times 2}{a + b}",
+   "vars": {
+    "S": "diện tích hình thang",
+    "a": "độ dài đáy lớn",
+    "b": "độ dài đáy bé",
+    "h": "chiều cao"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "b": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, b > 0 (do đó a + b > 0); S, a, b phải cùng hệ đơn vị đo",
+   "note": "Suy ra từ công thức diện tích hình thang.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-thang",
+    "chieu-cao"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-thang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-thang",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình thang",
+   "name_vi": "Diện tích hình thang",
+   "name_en": "Area of a trapezium",
+   "latex": "S = \\frac{(a + b) \\times h}{2}",
+   "vars": {
+    "S": "diện tích hình thang",
+    "a": "độ dài đáy lớn",
+    "b": "độ dài đáy bé",
+    "h": "chiều cao"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "b": "m",
+    "h": "m"
+   },
+   "conditions": "a > 0, b > 0, h > 0 và cùng đơn vị đo",
+   "note": "Diện tích hình thang bằng tổng hai đáy nhân với chiều cao rồi chia cho 2.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-thang",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chieu-cao-hinh-thang",
+    "math.tieu-hoc.hinh-hoc-phang.tong-hai-day-hinh-thang"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.tong-hai-day-hinh-thang",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình thang",
+   "name_vi": "Tổng hai đáy của hình thang",
+   "name_en": "Sum of the two bases of a trapezium",
+   "latex": "a + b = \\frac{S \\times 2}{h}",
+   "vars": {
+    "S": "diện tích hình thang",
+    "a": "độ dài đáy lớn",
+    "b": "độ dài đáy bé",
+    "h": "chiều cao"
+   },
+   "units": {
+    "S": "m^2",
+    "a": "m",
+    "b": "m",
+    "h": "m"
+   },
+   "conditions": "h > 0; S và h phải cùng hệ đơn vị đo",
+   "note": "Sau khi có tổng hai đáy, thường kết hợp với dạng toán tổng - hiệu hoặc tổng - tỉ để tìm từng đáy.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-thang",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.dang-toan-dien-hinh.tim-hai-so-khi-biet-tong-va-hieu"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tron-theo-ban-kinh",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tròn",
+   "name_vi": "Chu vi hình tròn tính theo bán kính",
+   "name_en": "Circumference of a circle from its radius",
+   "latex": "C = r \\times 2 \\times 3{,}14",
+   "vars": {
+    "C": "chu vi hình tròn",
+    "r": "bán kính hình tròn"
+   },
+   "units": {
+    "C": "m",
+    "r": "m"
+   },
+   "conditions": "r > 0",
+   "note": "Số pi lấy xấp xỉ 3,14 (giá trị chính xác hơn là 3,14159...).",
+   "tags": [
+    "hinh-hoc",
+    "hinh-tron",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tron-theo-duong-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tron-theo-duong-kinh",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tròn",
+   "name_vi": "Chu vi hình tròn tính theo đường kính",
+   "name_en": "Circumference of a circle from its diameter",
+   "latex": "C = d \\times 3{,}14",
+   "vars": {
+    "C": "chu vi hình tròn (độ dài đường tròn)",
+    "d": "đường kính hình tròn"
+   },
+   "units": {
+    "C": "m",
+    "d": "m"
+   },
+   "conditions": "d > 0",
+   "note": "Ở tiểu học lấy số pi xấp xỉ 3,14. Muốn tính chu vi hình tròn ta lấy đường kính nhân với 3,14.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-tron",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tron-theo-ban-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.dien-tich-hinh-tron",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tròn",
+   "name_vi": "Diện tích hình tròn",
+   "name_en": "Area of a circle",
+   "latex": "S = r \\times r \\times 3{,}14",
+   "vars": {
+    "S": "diện tích hình tròn",
+    "r": "bán kính hình tròn"
+   },
+   "units": {
+    "S": "m^2",
+    "r": "m"
+   },
+   "conditions": "r > 0",
+   "note": "Muốn tính diện tích hình tròn ta lấy bán kính nhân với bán kính rồi nhân với 3,14. Nếu chỉ biết đường kính thì tính r = d : 2 trước.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-tron",
+    "dien-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.duong-kinh-hinh-tron"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.duong-kinh-hinh-tron",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tròn",
+   "name_vi": "Quan hệ giữa đường kính và bán kính hình tròn",
+   "name_en": "Diameter and radius of a circle",
+   "latex": "d = r \\times 2 \\;;\\qquad r = d : 2",
+   "vars": {
+    "d": "đường kính hình tròn",
+    "r": "bán kính hình tròn"
+   },
+   "units": {
+    "d": "m",
+    "r": "m"
+   },
+   "conditions": "r > 0 (tương đương d > 0)",
+   "note": "Đường kính là đoạn thẳng đi qua tâm và có hai đầu nằm trên đường tròn.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-tron",
+    "ban-kinh"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tron-theo-duong-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.hinh-hoc-phang.duong-kinh-tu-chu-vi-hinh-tron",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Hình học phẳng",
+   "subtopic": "Hình tròn",
+   "name_vi": "Tính đường kính (bán kính) khi biết chu vi hình tròn",
+   "name_en": "Diameter from circumference",
+   "latex": "d = C : 3{,}14 \\;;\\qquad r = C : 3{,}14 : 2",
+   "vars": {
+    "C": "chu vi hình tròn",
+    "d": "đường kính hình tròn",
+    "r": "bán kính hình tròn"
+   },
+   "units": {
+    "C": "m",
+    "d": "m",
+    "r": "m"
+   },
+   "conditions": "C > 0",
+   "note": "Công thức đảo của chu vi hình tròn.",
+   "tags": [
+    "hinh-hoc",
+    "hinh-tron",
+    "chu-vi"
+   ],
+   "related": [
+    "math.tieu-hoc.hinh-hoc-phang.chu-vi-hinh-tron-theo-duong-kinh"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.phan-so-dao-nguoc",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Bốn phép tính với phân số",
+   "name_vi": "Phân số đảo ngược",
+   "name_en": "Reciprocal of a fraction",
+   "latex": "\\frac{a}{b} \\times \\frac{b}{a} = 1",
+   "vars": {
+    "a": "tử số",
+    "b": "mẫu số"
+   },
+   "units": {},
+   "conditions": "a khác 0, b khác 0",
+   "note": "Hai phân số có tích bằng 1 là hai phân số đảo ngược của nhau.",
+   "tags": [
+    "phan-so",
+    "dao-nguoc"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.chia-hai-phan-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.doi-hon-so-thanh-phan-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Phân số thập phân và hỗn số",
+   "name_vi": "Đổi hỗn số thành phân số",
+   "name_en": "Converting a mixed number to an improper fraction",
+   "latex": "a\\frac{b}{c} = \\frac{a \\times c + b}{c}",
+   "vars": {
+    "a": "phần nguyên của hỗn số",
+    "b": "tử số của phần phân số",
+    "c": "mẫu số của phần phân số"
+   },
+   "units": {},
+   "conditions": "a, b, c là số tự nhiên; c khác 0; b < c (phần phân số của hỗn số phải bé hơn 1)",
+   "note": "Lấy phần nguyên nhân mẫu số rồi cộng tử số, giữ nguyên mẫu số.",
+   "tags": [
+    "phan-so",
+    "hon-so"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.doi-phan-so-thanh-hon-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.doi-phan-so-thanh-hon-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Phân số thập phân và hỗn số",
+   "name_vi": "Đổi phân số thành hỗn số",
+   "name_en": "Converting an improper fraction to a mixed number",
+   "latex": "\\frac{m}{c} = q\\frac{r}{c} \\quad \\text{với} \\quad m = c \\times q + r, \\; 0 \\le r < c",
+   "vars": {
+    "m": "tử số của phân số",
+    "c": "mẫu số của phân số",
+    "q": "thương (phần nguyên của hỗn số)",
+    "r": "số dư (tử số của phần phân số)"
+   },
+   "units": {},
+   "conditions": "m, c là số tự nhiên, c khác 0, m > c và r khác 0 (nếu r = 0 thì thương là số tự nhiên, không viết được thành hỗn số)",
+   "note": "Chỉ đổi được khi phân số lớn hơn 1 (tử số lớn hơn mẫu số).",
+   "tags": [
+    "phan-so",
+    "hon-so"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.doi-hon-so-thanh-phan-so",
+    "math.tieu-hoc.phep-chia-co-du.cong-thuc-phep-chia-co-du"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.phan-so.phan-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Phân số",
+   "subtopic": "Phân số thập phân và hỗn số",
+   "name_vi": "Phân số thập phân",
+   "name_en": "Decimal fraction",
+   "latex": "\\frac{a}{10^{n}} \\quad (n = 1; 2; 3; \\ldots)",
+   "vars": {
+    "a": "tử số là số tự nhiên",
+    "n": "số mũ của 10, cho biết mẫu số là 10; 100; 1000; ..."
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0",
+   "note": "Phân số thập phân là phân số có mẫu số là 10; 100; 1000; ... Ví dụ 3/10; 27/100.",
+   "tags": [
+    "phan-so",
+    "phan-so-thap-phan"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.viet-so-thap-phan-duoi-dang-phan-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.chia-hai-so-tu-nhien-thuong-la-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Bốn phép tính với số thập phân",
+   "name_vi": "Chia hai số tự nhiên mà thương là số thập phân",
+   "name_en": "Dividing two natural numbers with a decimal quotient",
+   "latex": "a : b = q + \\frac{r}{b} \\quad \\text{với} \\quad a = b \\times q + r, \\; 0 \\le r < b",
+   "vars": {
+    "a": "số bị chia (số tự nhiên)",
+    "b": "số chia (số tự nhiên khác 0)",
+    "q": "thương của phép chia có dư (phần nguyên)",
+    "r": "số dư"
+   },
+   "units": {},
+   "conditions": "b khác 0; khi r khác 0 thì thương là số thập phân",
+   "note": "Thực hành: chia như chia số tự nhiên, khi còn dư thì viết dấu phẩy vào bên phải thương, thêm chữ số 0 vào bên phải số dư rồi chia tiếp. Ví dụ: 27 : 4 = 6,75.",
+   "tags": [
+    "so-thap-phan",
+    "phep-chia",
+    "so-du"
+   ],
+   "related": [
+    "math.tieu-hoc.phep-chia-co-du.cong-thuc-phep-chia-co-du",
+    "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-mot-so-tu-nhien"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-mot-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Bốn phép tính với số thập phân",
+   "name_vi": "Chia một số thập phân cho một số thập phân",
+   "name_en": "Dividing a decimal by a decimal",
+   "latex": "a : b = (a \\times 10^{n}) : (b \\times 10^{n})",
+   "vars": {
+    "a": "số bị chia",
+    "b": "số chia",
+    "n": "số chữ số ở phần thập phân của số chia b"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Bỏ dấu phẩy ở số chia bằng cách nhân cả hai số với 10; 100; 1000; ... rồi thực hiện phép chia cho số tự nhiên.",
+   "tags": [
+    "so-thap-phan",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.nhan-hai-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-mot-so-tu-nhien",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Bốn phép tính với số thập phân",
+   "name_vi": "Chia một số thập phân cho một số tự nhiên",
+   "name_en": "Dividing a decimal by a natural number",
+   "latex": "\\frac{a}{10^{n}} : b = \\frac{a}{b \\times 10^{n}}",
+   "vars": {
+    "a": "tử số của số bị chia khi viết dưới dạng phân số thập phân",
+    "b": "số chia (số tự nhiên khác 0)",
+    "n": "số chữ số ở phần thập phân của số bị chia"
+   },
+   "units": {},
+   "conditions": "b là số tự nhiên khác 0",
+   "note": "Thực hành: chia phần nguyên trước, viết dấu phẩy vào bên phải thương rồi lấy tiếp các chữ số ở phần thập phân để chia. Ví dụ: 8,4 : 4 = 2,1.",
+   "tags": [
+    "so-thap-phan",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-mot-so-thap-phan",
+    "math.tieu-hoc.so-thap-phan.chia-hai-so-tu-nhien-thuong-la-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.cong-tru-hai-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Bốn phép tính với số thập phân",
+   "name_vi": "Cộng, trừ hai số thập phân",
+   "name_en": "Adding and subtracting decimals",
+   "latex": "\\frac{a}{10^{n}} \\pm \\frac{b}{10^{n}} = \\frac{a \\pm b}{10^{n}}",
+   "vars": {
+    "a": "tử số của số thứ nhất khi viết dưới dạng phân số thập phân",
+    "b": "tử số của số thứ hai khi viết dưới dạng phân số thập phân",
+    "n": "số chữ số ở phần thập phân sau khi làm cho bằng nhau"
+   },
+   "units": {},
+   "conditions": "Hai số phải có cùng số chữ số ở phần thập phân (thêm chữ số 0 vào bên phải nếu thiếu)",
+   "note": "Thực hành: đặt tính sao cho các dấu phẩy thẳng cột, cộng (trừ) như số tự nhiên rồi đặt dấu phẩy thẳng cột ở kết quả.",
+   "tags": [
+    "so-thap-phan",
+    "phep-cong",
+    "phep-tru"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.nhan-hai-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.nhan-hai-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Bốn phép tính với số thập phân",
+   "name_vi": "Nhân hai số thập phân",
+   "name_en": "Multiplying decimals",
+   "latex": "\\frac{a}{10^{m}} \\times \\frac{b}{10^{n}} = \\frac{a \\times b}{10^{m+n}}",
+   "vars": {
+    "a": "phần số tự nhiên của thừa số thứ nhất",
+    "b": "phần số tự nhiên của thừa số thứ hai",
+    "m": "số chữ số ở phần thập phân của thừa số thứ nhất",
+    "n": "số chữ số ở phần thập phân của thừa số thứ hai"
+   },
+   "units": {},
+   "conditions": "m, n là các số tự nhiên",
+   "note": "Nhân như nhân số tự nhiên, rồi đếm tổng số chữ số ở phần thập phân của hai thừa số để tách m + n chữ số ở tích.",
+   "tags": [
+    "so-thap-phan",
+    "phep-nhan"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-mot-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.chuyen-doi-phan-so-so-thap-phan-phan-tram",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Chuyển đổi phân số - số thập phân - phần trăm",
+   "name_vi": "Chuyển đổi giữa phân số, số thập phân và tỉ số phần trăm",
+   "name_en": "Converting between fractions, decimals and percentages",
+   "latex": "\\frac{a}{b} = a : b = x \\;;\\qquad p\\,\\% = \\frac{p}{100} \\;\\Rightarrow\\; p = x \\times 100",
+   "vars": {
+    "a": "tử số",
+    "b": "mẫu số",
+    "x": "số thập phân tương ứng của phân số a/b",
+    "p": "số phần trăm tương ứng (viết kèm kí hiệu %)"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Ghi nhớ: 1/2 = 0,5 = 50%; 1/4 = 0,25 = 25%; 3/4 = 0,75 = 75%; 1/5 = 0,2 = 20%.",
+   "tags": [
+    "so-thap-phan",
+    "phan-so",
+    "phan-tram",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-cua-hai-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.cau-tao-cua-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Khái niệm số thập phân",
+   "name_vi": "Cấu tạo của số thập phân",
+   "name_en": "Place value structure of a decimal number",
+   "latex": "\\overline{a,b_1b_2\\ldots b_n} = a + \\frac{b_1}{10} + \\frac{b_2}{100} + \\cdots + \\frac{b_n}{10^{n}}",
+   "vars": {
+    "a": "phần nguyên",
+    "b_1": "chữ số hàng phần mười",
+    "b_2": "chữ số hàng phần trăm",
+    "b_n": "chữ số ở hàng thứ n sau dấu phẩy, ứng với đơn vị 1/10^n",
+    "n": "số chữ số ở phần thập phân"
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0; các b_i là các chữ số từ 0 đến 9",
+   "note": "Ví dụ: 3,25 = 3 + 2/10 + 5/100. Dấu phẩy ngăn cách phần nguyên và phần thập phân.",
+   "tags": [
+    "so-thap-phan",
+    "cau-tao-so"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.viet-so-thap-phan-duoi-dang-phan-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.viet-so-thap-phan-duoi-dang-phan-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Khái niệm số thập phân",
+   "name_vi": "Viết số thập phân dưới dạng phân số thập phân",
+   "name_en": "Writing a decimal as a decimal fraction",
+   "latex": "\\overline{a,b_1b_2\\ldots b_n} = \\frac{\\overline{ab_1b_2\\ldots b_n}}{10^{n}}",
+   "vars": {
+    "a": "phần nguyên",
+    "b_i": "các chữ số ở phần thập phân",
+    "n": "số chữ số ở phần thập phân"
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0",
+   "note": "Ví dụ: 0,25 = 25/100 = 1/4; 1,7 = 17/10.",
+   "tags": [
+    "so-thap-phan",
+    "phan-so-thap-phan",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.phan-so.phan-so-thap-phan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-10-100-1000",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Nhân, chia nhẩm với 10; 100; 1000",
+   "name_vi": "Chia một số thập phân cho 10; 100; 1000",
+   "name_en": "Dividing a decimal by 10, 100, 1000",
+   "latex": "x : 10^{n} \\;\\longrightarrow\\; \\text{chuyển dấu phẩy của } x \\text{ sang bên trái } n \\text{ chữ số}",
+   "vars": {
+    "x": "số thập phân đã cho",
+    "n": "số chữ số 0 của 10; 100; 1000; ..."
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0; nếu thiếu chữ số thì viết thêm chữ số 0 ở bên trái",
+   "note": "Ví dụ: 43,2 : 100 = 0,432.",
+   "tags": [
+    "so-thap-phan",
+    "tinh-nham",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.nhan-mot-so-thap-phan-voi-10-100-1000"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.nhan-mot-so-thap-phan-voi-0-1-0-01",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Nhân, chia nhẩm với 10; 100; 1000",
+   "name_vi": "Nhân một số thập phân với 0,1; 0,01; 0,001",
+   "name_en": "Multiplying a decimal by 0.1, 0.01, 0.001",
+   "latex": "x \\times 0{,}1 = x : 10 \\;;\\quad x \\times 0{,}01 = x : 100 \\;;\\quad x \\times 0{,}001 = x : 1000",
+   "vars": {
+    "x": "số thập phân đã cho"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Nhân với 0,1 chính là chuyển dấu phẩy sang trái một chữ số. Tương tự: x : 0,1 = x x 10.",
+   "tags": [
+    "so-thap-phan",
+    "tinh-nham",
+    "phep-nhan"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-10-100-1000"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.so-thap-phan.nhan-mot-so-thap-phan-voi-10-100-1000",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Số thập phân",
+   "subtopic": "Nhân, chia nhẩm với 10; 100; 1000",
+   "name_vi": "Nhân một số thập phân với 10; 100; 1000",
+   "name_en": "Multiplying a decimal by 10, 100, 1000",
+   "latex": "x \\times 10^{n} \\;\\longrightarrow\\; \\text{chuyển dấu phẩy của } x \\text{ sang bên phải } n \\text{ chữ số}",
+   "vars": {
+    "x": "số thập phân đã cho",
+    "n": "số chữ số 0 của 10; 100; 1000; ..."
+   },
+   "units": {},
+   "conditions": "n là số tự nhiên khác 0; nếu thiếu chữ số thì viết thêm chữ số 0",
+   "note": "Ví dụ: 2,715 x 100 = 271,5.",
+   "tags": [
+    "so-thap-phan",
+    "tinh-nham",
+    "phep-nhan"
+   ],
+   "related": [
+    "math.tieu-hoc.so-thap-phan.chia-mot-so-thap-phan-cho-10-100-1000"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-cua-hai-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Ba bài toán cơ bản về tỉ số phần trăm",
+   "name_vi": "Tìm tỉ số phần trăm của hai số",
+   "name_en": "Finding what percentage one number is of another",
+   "latex": "P = \\frac{a}{b} \\times 100\\,\\%",
+   "vars": {
+    "P": "tỉ số phần trăm của a so với b",
+    "a": "số đem so sánh",
+    "b": "số được lấy làm chuẩn (100%)"
+   },
+   "units": {},
+   "conditions": "b khác 0",
+   "note": "Thực hành: tìm thương a : b, rồi nhân thương đó với 100 và viết thêm kí hiệu %.",
+   "tags": [
+    "phan-tram",
+    "ti-so",
+    "toan-do"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.tim-gia-tri-a-phan-tram-cua-mot-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.tim-gia-tri-a-phan-tram-cua-mot-so",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Ba bài toán cơ bản về tỉ số phần trăm",
+   "name_vi": "Tìm a% của một số",
+   "name_en": "Finding a percentage of a number",
+   "latex": "x = \\frac{b \\times a}{100}",
+   "vars": {
+    "x": "giá trị cần tìm",
+    "b": "số đã cho (ứng với 100%)",
+    "a": "số phần trăm cần tìm"
+   },
+   "units": {},
+   "conditions": "a \\ge 0",
+   "note": "Ví dụ: 15% của 320 là 320 x 15 : 100 = 48.",
+   "tags": [
+    "phan-tram",
+    "toan-do",
+    "tim-gia-tri"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.tim-mot-so-khi-biet-a-phan-tram-cua-no"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.tim-mot-so-khi-biet-a-phan-tram-cua-no",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Ba bài toán cơ bản về tỉ số phần trăm",
+   "name_vi": "Tìm một số khi biết a% của số đó",
+   "name_en": "Finding the whole given a percentage of it",
+   "latex": "b = \\frac{x \\times 100}{a}",
+   "vars": {
+    "b": "số cần tìm (ứng với 100%)",
+    "x": "giá trị của a% đã biết",
+    "a": "số phần trăm tương ứng với x"
+   },
+   "units": {},
+   "conditions": "a khác 0",
+   "note": "Ví dụ: 15% của một số là 48 thì số đó là 48 x 100 : 15 = 320.",
+   "tags": [
+    "phan-tram",
+    "toan-do",
+    "tim-gia-tri"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.tim-gia-tri-a-phan-tram-cua-mot-so"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.tien-lai-suat-don-gian",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Bài toán lãi suất",
+   "name_vi": "Tiền lãi với lãi suất đơn giản",
+   "name_en": "Simple interest",
+   "latex": "L = G \\times \\frac{r}{100} \\times n",
+   "vars": {
+    "L": "tiền lãi thu được",
+    "G": "tiền gửi (tiền vốn) ban đầu",
+    "r": "lãi suất mỗi kì tính theo phần trăm",
+    "n": "số kì gửi (tháng hoặc năm)"
+   },
+   "units": {
+    "L": "VND",
+    "G": "VND"
+   },
+   "conditions": "Lãi không nhập vào vốn (lãi đơn); r và n phải cùng đơn vị thời gian",
+   "note": "Ví dụ: gửi 5 000 000 đồng, lãi suất 0,5% một tháng, sau 3 tháng tiền lãi là 5 000 000 x 0,5 : 100 x 3 = 75 000 đồng.",
+   "tags": [
+    "phan-tram",
+    "lai-suat",
+    "thuc-te"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.tong-tien-von-va-lai"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.tong-tien-von-va-lai",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Bài toán lãi suất",
+   "name_vi": "Tổng số tiền cả vốn lẫn lãi",
+   "name_en": "Total amount of principal plus simple interest",
+   "latex": "T = G + L = G \\times \\left(1 + \\frac{r \\times n}{100}\\right)",
+   "vars": {
+    "T": "tổng số tiền cả vốn lẫn lãi",
+    "G": "tiền vốn ban đầu",
+    "L": "tiền lãi",
+    "r": "lãi suất mỗi kì tính theo phần trăm",
+    "n": "số kì gửi"
+   },
+   "units": {
+    "T": "VND",
+    "G": "VND",
+    "L": "VND"
+   },
+   "conditions": "Áp dụng cho lãi đơn (lãi không nhập vốn)",
+   "note": "Nếu lãi nhập vốn hằng kì (lãi kép) thì phải tính lần lượt từng kì; đây là nội dung nâng cao.",
+   "tags": [
+    "phan-tram",
+    "lai-suat",
+    "thuc-te"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.tien-lai-suat-don-gian",
+    "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-lai-lo"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-lai-lo",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Bài toán mua bán",
+   "name_vi": "Tỉ số phần trăm tiền lãi (tiền lỗ) so với tiền vốn",
+   "name_en": "Profit or loss as a percentage of cost price",
+   "latex": "L = B - V \\;;\\qquad P = \\frac{B - V}{V} \\times 100\\,\\%",
+   "vars": {
+    "L": "tiền lãi (nếu L < 0 thì lỗ)",
+    "B": "giá bán",
+    "V": "giá vốn (tiền mua vào)",
+    "P": "tỉ số phần trăm tiền lãi so với tiền vốn"
+   },
+   "units": {
+    "L": "VND",
+    "B": "VND",
+    "V": "VND"
+   },
+   "conditions": "V > 0; nếu B > V thì lãi, B < V thì lỗ",
+   "note": "Phải đọc kĩ đề: 'lãi bao nhiêu phần trăm so với vốn' khác với 'so với giá bán'. Hệ quả: B = V x (1 + P/100).",
+   "tags": [
+    "phan-tram",
+    "mua-ban",
+    "thuc-te"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.ti-so-phan-tram-cua-hai-so",
+    "math.tieu-hoc.ti-so-phan-tram.tang-hoac-giam-a-phan-tram"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.ti-so-phan-tram.tang-hoac-giam-a-phan-tram",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Tỉ số phần trăm",
+   "subtopic": "Bài toán tăng - giảm phần trăm",
+   "name_vi": "Giá trị sau khi tăng hoặc giảm a%",
+   "name_en": "Value after a percentage increase or decrease",
+   "latex": "\\begin{cases} G' = G \\times \\left(1 + \\dfrac{a}{100}\\right) & \\text{khi tăng } a\\% \\\\ G' = G \\times \\left(1 - \\dfrac{a}{100}\\right) & \\text{khi giảm } a\\% \\end{cases}",
+   "vars": {
+    "G'": "giá trị sau khi tăng hoặc giảm",
+    "G": "giá trị ban đầu (100%)",
+    "a": "số phần trăm tăng hoặc giảm"
+   },
+   "units": {},
+   "conditions": "0 \\le a \\le 100 đối với trường hợp giảm",
+   "note": "Giảm giá 20% nghĩa là phải trả 80% giá ban đầu. Tăng 10% rồi giảm 10% không trở về giá cũ.",
+   "tags": [
+    "phan-tram",
+    "tang-giam",
+    "thuc-te"
+   ],
+   "related": [
+    "math.tieu-hoc.ti-so-phan-tram.tien-lai-suat-don-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.cong-tru-so-do-thoi-gian",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Phép tính với số đo thời gian",
+   "name_vi": "Cộng, trừ số đo thời gian",
+   "name_en": "Adding and subtracting time measurements",
+   "latex": "(a\\ \\text{giờ}\\ b\\ \\text{phút}) \\pm (c\\ \\text{giờ}\\ e\\ \\text{phút}) = (a \\pm c)\\ \\text{giờ}\\ (b \\pm e)\\ \\text{phút}",
+   "vars": {
+    "a": "số giờ của số thứ nhất",
+    "b": "số phút của số thứ nhất",
+    "c": "số giờ của số thứ hai",
+    "e": "số phút của số thứ hai"
+   },
+   "units": {
+    "a": "h",
+    "b": "min",
+    "c": "h",
+    "e": "min"
+   },
+   "conditions": "0 <= b < 60 và 0 <= e < 60; phải chuyển đổi lại nếu số phút của kết quả không nằm trong khoảng từ 0 đến 59",
+   "note": "Cộng (trừ) theo từng loại đơn vị. Nếu số phút của tổng lớn hơn hoặc bằng 60 thì đổi 60 phút thành 1 giờ; khi trừ mà số phút của số bị trừ bé hơn thì đổi 1 giờ thành 60 phút để trừ tiếp.",
+   "tags": [
+    "don-vi-do",
+    "thoi-gian",
+    "phep-cong",
+    "phep-tru"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-thoi-gian",
+    "math.tieu-hoc.don-vi-do.nhan-chia-so-do-thoi-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.nhan-chia-so-do-thoi-gian",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Phép tính với số đo thời gian",
+   "name_vi": "Nhân, chia số đo thời gian với một số",
+   "name_en": "Multiplying and dividing a time measurement by a number",
+   "latex": "(a\\ \\text{giờ}\\ b\\ \\text{phút}) \\times k = (a \\times k)\\ \\text{giờ}\\ (b \\times k)\\ \\text{phút}",
+   "vars": {
+    "a": "số giờ",
+    "b": "số phút",
+    "k": "số tự nhiên khác 0 dùng để nhân (hoặc chia)"
+   },
+   "units": {
+    "a": "h",
+    "b": "min"
+   },
+   "conditions": "k là số tự nhiên khác 0; sau khi nhân phải chuyển đổi nếu số phút lớn hơn hoặc bằng 60",
+   "note": "Ví dụ: 3 giờ 15 phút x 4 = 12 giờ 60 phút = 13 giờ. Khi chia, nếu phần dư ở đơn vị lớn khác 0 thì đổi sang đơn vị bé hơn rồi chia tiếp.",
+   "tags": [
+    "don-vi-do",
+    "thoi-gian",
+    "phep-nhan",
+    "phep-chia"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.cong-tru-so-do-thoi-gian",
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-thoi-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.don-vi-do-dien-tich-ruong-dat",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo diện tích",
+   "name_vi": "Đơn vị đo diện tích ruộng đất: a và héc-ta",
+   "name_en": "Are and hectare",
+   "latex": "1\\ \\text{a} = 1\\ \\text{dam}^2 = 100\\ \\text{m}^2 \\;;\\quad 1\\ \\text{ha} = 1\\ \\text{hm}^2 = 100\\ \\text{a} = 10\\,000\\ \\text{m}^2 \\;;\\quad 1\\ \\text{km}^2 = 100\\ \\text{ha}",
+   "vars": {
+    "\\text{a}": "a (đơn vị đo diện tích ruộng đất)",
+    "\\text{ha}": "héc-ta",
+    "\\text{dam}^2": "đề-ca-mét vuông",
+    "\\text{hm}^2": "héc-tô-mét vuông",
+    "\\text{m}^2": "mét vuông",
+    "\\text{km}^2": "ki-lô-mét vuông"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Héc-ta thường dùng để đo diện tích ruộng, rừng: 1 ha = 10 000 m2.",
+   "tags": [
+    "don-vi-do",
+    "dien-tich",
+    "hec-ta"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-dien-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.don-vi-do-khoi-luong-nho",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo khối lượng",
+   "name_vi": "Các đơn vị khối lượng nhỏ hơn gam",
+   "name_en": "Mass units smaller than a gram",
+   "latex": "1\\ \\text{g} = 10\\ \\text{dg} = 100\\ \\text{cg} = 1000\\ \\text{mg}",
+   "vars": {
+    "g": "gam",
+    "dg": "đề-xi-gam",
+    "cg": "xăng-ti-gam",
+    "mg": "mi-li-gam"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "1 kg = 1 000 000 mg. Chương trình GDPT 2018 ở tiểu học chỉ yêu cầu g và mg; dg, cg là phần giới thiệu thêm.",
+   "tags": [
+    "don-vi-do",
+    "khoi-luong",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-khoi-luong"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.bang-don-vi-do-the-tich",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo thể tích",
+   "name_vi": "Bảng đơn vị đo thể tích",
+   "name_en": "Units of volume",
+   "latex": "1\\ \\text{m}^3 = 1000\\ \\text{dm}^3 = 1\\,000\\,000\\ \\text{cm}^3",
+   "vars": {
+    "\\text{m}^3": "mét khối",
+    "\\text{dm}^3": "đề-xi-mét khối",
+    "\\text{cm}^3": "xăng-ti-mét khối"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Mỗi đơn vị đo thể tích gấp 1000 lần đơn vị bé hơn liền sau.",
+   "tags": [
+    "don-vi-do",
+    "the-tich",
+    "chuyen-doi"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.lien-he-the-tich-va-dung-tich"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.lien-he-the-tich-va-dung-tich",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo thể tích",
+   "name_vi": "Liên hệ giữa đơn vị thể tích và lít",
+   "name_en": "Relation between volume units and litres",
+   "latex": "1\\ \\text{dm}^3 = 1\\ \\text{l} \\;;\\quad 1\\ \\text{cm}^3 = 1\\ \\text{ml} \\;;\\quad 1\\ \\text{m}^3 = 1000\\ \\text{l}",
+   "vars": {
+    "\\text{dm}^3": "đề-xi-mét khối",
+    "\\text{cm}^3": "xăng-ti-mét khối",
+    "\\text{m}^3": "mét khối",
+    "\\text{l}": "lít",
+    "\\text{ml}": "mi-li-lít"
+   },
+   "units": {},
+   "conditions": "",
+   "note": "Dùng khi tính sức chứa của bể nước, thùng hàng: bể 1 m3 chứa được 1000 lít nước.",
+   "tags": [
+    "don-vi-do",
+    "the-tich",
+    "dung-tich"
+   ],
+   "related": [
+    "math.tieu-hoc.don-vi-do.bang-don-vi-do-the-tich",
+    "math.tieu-hoc.hinh-hoc-khong-gian.the-tich-hinh-hop-chu-nhat"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.don-vi-do.doi-so-do-thoi-gian-sang-so-thap-phan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đơn vị đo",
+   "subtopic": "Đơn vị đo thời gian",
+   "name_vi": "Đổi số đo thời gian sang số thập phân",
+   "name_en": "Converting hours and minutes to a decimal number of hours",
+   "latex": "x\\ \\text{giờ}\\ y\\ \\text{phút} = \\left(x + \\frac{y}{60}\\right)\\ \\text{giờ}",
+   "vars": {
+    "x": "số giờ",
+    "y": "số phút"
+   },
+   "units": {
+    "x": "h",
+    "y": "min"
+   },
+   "conditions": "0 \\le y < 60",
+   "note": "Ví dụ: 2 giờ 30 phút = 2,5 giờ; 1 giờ 15 phút = 1,25 giờ. Rất hay dùng trong bài toán chuyển động đều.",
+   "tags": [
+    "don-vi-do",
+    "thoi-gian",
+    "so-thap-phan"
+   ],
+   "related": [
+    "math.tieu-hoc.chuyen-dong-deu.thoi-gian"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dai-luong-ti-le.dai-luong-ti-le-nghich",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đại lượng tỉ lệ",
+   "subtopic": "Tỉ lệ nghịch",
+   "name_vi": "Hai đại lượng tỉ lệ nghịch",
+   "name_en": "Inversely proportional quantities",
+   "latex": "x_1 \\times y_1 = x_2 \\times y_2 \\;\\Rightarrow\\; y_2 = \\frac{x_1 \\times y_1}{x_2}",
+   "vars": {
+    "x_1": "giá trị thứ nhất của đại lượng thứ nhất",
+    "x_2": "giá trị thứ hai của đại lượng thứ nhất",
+    "y_1": "giá trị tương ứng với x_1",
+    "y_2": "giá trị tương ứng với x_2"
+   },
+   "units": {},
+   "conditions": "x_1 khác 0, x_2 khác 0",
+   "note": "Ví dụ: cùng một công việc, số người tăng bao nhiêu lần thì thời gian giảm bấy nhiêu lần.",
+   "tags": [
+    "ti-le-nghich",
+    "rut-ve-don-vi",
+    "toan-do"
+   ],
+   "related": [
+    "math.tieu-hoc.dai-luong-ti-le.rut-ve-don-vi-trong-bai-toan-ti-le-thuan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "math.tieu-hoc.dai-luong-ti-le.dai-luong-ti-le-thuan",
+   "subject": "math",
+   "level": "tieu-hoc",
+   "grades": [
+    5
+   ],
+   "topic": "Đại lượng tỉ lệ",
+   "subtopic": "Tỉ lệ thuận",
+   "name_vi": "Hai đại lượng tỉ lệ thuận",
+   "name_en": "Directly proportional quantities",
+   "latex": "\\frac{y_1}{x_1} = \\frac{y_2}{x_2} = k",
+   "vars": {
+    "x_1": "giá trị thứ nhất của đại lượng thứ nhất",
+    "x_2": "giá trị thứ hai của đại lượng thứ nhất",
+    "y_1": "giá trị tương ứng với x_1",
+    "y_2": "giá trị tương ứng với x_2",
+    "k": "hệ số tỉ lệ (giá trị ứng với một đơn vị)"
+   },
+   "units": {},
+   "conditions": "x_1 khác 0, x_2 khác 0",
+   "note": "Đại lượng này tăng (giảm) bao nhiêu lần thì đại lượng kia cũng tăng (giảm) bấy nhiêu lần.",
+   "tags": [
+    "ti-le-thuan",
+    "toan-do"
+   ],
+   "related": [
+    "math.tieu-hoc.dai-luong-ti-le.rut-ve-don-vi-trong-bai-toan-ti-le-thuan"
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ]
+  }
+ ]
+}

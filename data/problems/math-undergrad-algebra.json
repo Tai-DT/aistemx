@@ -1,0 +1,4109 @@
+{
+  "meta": {
+    "file": "math-undergrad-algebra.json",
+    "subject": "math",
+    "title": "Bài tập Đại số tuyến tính, Đại số trừu tượng, Xác suất và Toán rời rạc bậc đại học",
+    "levels": [
+      "dai-hoc"
+    ],
+    "count": 60
+  },
+  "problems": [
+    {
+      "id": "prob.math.undergrad-algebra.0001",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Khử Gauss và biện luận nghiệm theo tham số",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho hệ phương trình tuyến tính với tham số thực m: x + y + mz = 1; x + my + z = 1; mx + y + z = 1. Với giá trị nào của m thì hệ VÔ NGHIỆM?",
+      "statement_en": "Consider the linear system with real parameter m: x + y + mz = 1; x + my + z = 1; mx + y + z = 1. For which value of m is the system inconsistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "m = 1",
+          "why_wrong": "Khi m = 1 cả ba phương trình trùng nhau thành x + y + z = 1, hạng ma trận hệ số bằng hạng ma trận mở rộng bằng 1 nên hệ có vô số nghiệm chứ không vô nghiệm. Học sinh chỉ nhìn thấy det = 0 mà không so hai hạng."
+        },
+        {
+          "key": "B",
+          "text": "m = -2",
+          "why_wrong": ""
+        },
+        {
+          "key": "C",
+          "text": "m = 1 hoặc m = -2",
+          "why_wrong": "Gộp cả hai nghiệm của phương trình det = 0 mà không phân biệt: det = 0 chỉ nói hệ KHÔNG có nghiệm duy nhất, còn vô nghiệm hay vô số nghiệm phải xét thêm hạng ma trận mở rộng."
+        },
+        {
+          "key": "D",
+          "text": "m = -1",
+          "why_wrong": "Tại m = -1 định thức bằng -4 khác 0 nên hệ có nghiệm duy nhất. Giá trị này thường bị đoán do quen với dạng (m+1) trong các bài tương tự."
+        },
+        {
+          "key": "E",
+          "text": "Không có giá trị m nào làm hệ vô nghiệm",
+          "why_wrong": "Hiểu nhầm rằng hệ đối xứng với vế phải toàn số 1 thì luôn tương thích; thực tế tại m = -2 tổng ba phương trình cho 0 = 3, mâu thuẫn."
+        }
+      ],
+      "answer": "B",
+      "answer_numeric": -2,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Trước hết tính định thức ma trận hệ số để tách trường hợp có nghiệm duy nhất. Nếu định thức khác 0 thì theo quy tắc Cramer hệ có nghiệm duy nhất, không cần biện luận thêm.",
+          "latex": "D = \\begin{vmatrix} 1 & 1 & m \\\\ 1 & m & 1 \\\\ m & 1 & 1 \\end{vmatrix} = -(m-1)^{2}(m+2)"
+        },
+        {
+          "explain": "Vậy chỉ hai giá trị m = 1 và m = -2 mới có thể làm hệ suy biến. Ta xét riêng từng giá trị bằng cách so sánh hạng ma trận hệ số và hạng ma trận mở rộng (định lí Kronecker - Capelli).",
+          "latex": "D = 0 \\iff m = 1 \\ \\text{hoac}\\ m = -2"
+        },
+        {
+          "explain": "Với m = 1 ba phương trình biến thành cùng một phương trình, nên hai hạng bằng nhau và bằng 1, nhỏ hơn số ẩn: hệ có vô số nghiệm phụ thuộc hai tham số tự do.",
+          "latex": "m = 1:\\ \\operatorname{rank} A = \\operatorname{rank} \\bar{A} = 1 < 3"
+        },
+        {
+          "explain": "Với m = -2, cộng cả ba phương trình lại: vế trái mỗi ẩn có hệ số 1 + 1 + (-2) = 0 nên vế trái triệt tiêu, còn vế phải bằng 3. Điều này cho mâu thuẫn 0 = 3.",
+          "latex": "m = -2:\\ (x+y+z)\\bigl(1+1-2\\bigr) = 0 \\ne 3"
+        },
+        {
+          "explain": "Kiểm chứng bằng hạng: ma trận hệ số có hạng 2 còn ma trận mở rộng có hạng 3, hai hạng khác nhau nên hệ vô nghiệm.",
+          "latex": "\\operatorname{rank} A = 2 < \\operatorname{rank} \\bar{A} = 3 \\Rightarrow \\text{he vo nghiem}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-phuong-trinh-tuyen-tinh.dinh-li-kronecker-capelli",
+        "math.dai-hoc.he-phuong-trinh-tuyen-tinh.so-nghiem-he-tuyen-tinh",
+        "math.dai-hoc.dinh-thuc.dinh-thuc-cap-ba-sarrus"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "khử Gauss",
+        "biện luận hệ theo tham số",
+        "so sánh hạng ma trận hệ số và mở rộng"
+      ],
+      "hints": [
+        "Tính định thức trước để loại ngay các m cho nghiệm duy nhất.",
+        "Với mỗi m làm định thức triệt tiêu, hãy cộng ba phương trình lại xem vế trái có triệt tiêu không."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "he-phuong-trinh",
+        "khu-gauss",
+        "bien-luan-tham-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0002",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí hạng - số khuyết",
+      "type": "dien-so",
+      "statement_vi": "Ánh xạ tuyến tính T: R^5 -> R^3 có ma trận trong cặp cơ sở chính tắc là A với các hàng lần lượt là (1,2,3,4,5), (2,4,7,9,11), (1,2,4,5,6). Tính số chiều của hạt nhân Ker T.",
+      "statement_en": "The linear map T: R^5 -> R^3 has standard matrix A with rows (1,2,3,4,5), (2,4,7,9,11), (1,2,4,5,6). Find the dimension of Ker T.",
+      "answer": "dim Ker T = 3",
+      "answer_numeric": 3,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Hạt nhân của T chính là không gian nghiệm của hệ thuần nhất Ax = 0, nên trước hết ta đưa A về dạng bậc thang để đọc hạng. Ta khử hàng 2 và hàng 3 theo hàng 1.",
+          "latex": "A = \\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\\\ 2 & 4 & 7 & 9 & 11 \\\\ 1 & 2 & 4 & 5 & 6 \\end{pmatrix}"
+        },
+        {
+          "explain": "Thực hiện h2 := h2 - 2h1 và h3 := h3 - h1. Hai hàng mới trùng nhau, cho thấy có một quan hệ phụ thuộc tuyến tính giữa các hàng.",
+          "latex": "\\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\\\ 0 & 0 & 1 & 1 & 1 \\\\ 0 & 0 & 1 & 1 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Tiếp tục h3 := h3 - h2 làm hàng cuối triệt tiêu. Dạng bậc thang còn đúng hai hàng khác không nên hạng của A bằng 2, tức dim Im T = 2.",
+          "latex": "\\operatorname{rank} A = 2 = \\dim \\operatorname{Im} T"
+        },
+        {
+          "explain": "Áp dụng định lí hạng - số khuyết cho ánh xạ đi từ không gian 5 chiều: số chiều nguồn bằng hạng cộng số khuyết.",
+          "latex": "\\dim \\ker T = \\dim \\mathbb{R}^{5} - \\operatorname{rank} A = 5 - 2 = 3"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.anh-xa-tuyen-tinh.dinh-li-hang-so-khuyet",
+        "math.dai-hoc.ma-tran.hang-ma-tran-dinh-nghia",
+        "math.dai-hoc.he-phuong-trinh-tuyen-tinh.so-chieu-khong-gian-nghiem"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính hạng ma trận",
+        "định lí hạng - số khuyết",
+        "xác định số chiều hạt nhân"
+      ],
+      "hints": [
+        "Hạng của A đọc được ngay từ dạng bậc thang.",
+        "Số chiều nguồn là 5, không phải 3."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "dinh-li-hang",
+        "hat-nhan",
+        "anh-xa-tuyen-tinh"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0003",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Không gian con sinh bởi hệ vectơ và cơ sở",
+      "type": "dien-so",
+      "statement_vi": "Trong R^4 xét W = span{v1, v2, v3, v4} với v1 = (1,2,0,1), v2 = (2,4,1,3), v3 = (1,2,1,2), v4 = (0,0,1,1). Tính dim W.",
+      "statement_en": "In R^4 let W = span{v1, v2, v3, v4} where v1 = (1,2,0,1), v2 = (2,4,1,3), v3 = (1,2,1,2), v4 = (0,0,1,1). Find dim W.",
+      "answer": "dim W = 2, một cơ sở là {v1, v2}",
+      "answer_numeric": 2,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Số chiều của không gian sinh bởi một hệ vectơ bằng hạng của ma trận có các vectơ đó làm hàng, nên ta xếp bốn vectơ thành bốn hàng rồi khử Gauss.",
+          "latex": "M = \\begin{pmatrix} 1 & 2 & 0 & 1 \\\\ 2 & 4 & 1 & 3 \\\\ 1 & 2 & 1 & 2 \\\\ 0 & 0 & 1 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Khử cột đầu: h2 := h2 - 2h1 và h3 := h3 - h1. Ba hàng cuối trở thành cùng một vectơ, dấu hiệu của phụ thuộc tuyến tính mạnh.",
+          "latex": "\\begin{pmatrix} 1 & 2 & 0 & 1 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 0 & 1 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Trừ hàng thứ hai khỏi hai hàng cuối, chỉ còn hai hàng khác không. Vậy hạng bằng 2.",
+          "latex": "\\operatorname{rank} M = 2 \\Rightarrow \\dim W = 2"
+        },
+        {
+          "explain": "Để chỉ ra cơ sở cụ thể, ta kiểm tra hai quan hệ tường minh: v3 và v4 đều biểu diễn được qua v1, v2, còn v1, v2 không tỉ lệ nên độc lập tuyến tính.",
+          "latex": "v_{3} = v_{2} - v_{1}, \\qquad v_{4} = v_{2} - 2v_{1}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-vecto.khong-gian-sinh-boi-he-vecto",
+        "math.dai-hoc.khong-gian-vecto.co-so-va-so-chieu",
+        "math.dai-hoc.khong-gian-vecto.doc-lap-tuyen-tinh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "tìm cơ sở của không gian sinh",
+        "kiểm tra độc lập tuyến tính",
+        "khử Gauss theo hàng"
+      ],
+      "hints": [
+        "Xếp các vectơ thành hàng rồi tính hạng.",
+        "Thử xem v3 - v2 + v1 có bằng vectơ không hay không."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "khong-gian-con",
+        "co-so",
+        "so-chieu"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0004",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Ma trận biểu diễn của toán tử trong một cơ sở",
+      "type": "tu-luan",
+      "statement_vi": "Cho toán tử tuyến tính T: R^3 -> R^3 xác định bởi T(x,y,z) = (x + 2y - z, 3y + z, x - y + 2z). Tìm ma trận của T trong cơ sở B = {u1 = (1,0,0), u2 = (1,1,0), u3 = (1,1,1)}.",
+      "statement_en": "Let T: R^3 -> R^3 be defined by T(x,y,z) = (x + 2y - z, 3y + z, x - y + 2z). Find the matrix of T in the basis B = {u1 = (1,0,0), u2 = (1,1,0), u3 = (1,1,1)}.",
+      "answer": "[T]_B có các cột lần lượt là (1,-1,1), (0,3,0), (-2,2,2), tức [T]_B = [[1,0,-2],[-1,3,2],[1,0,2]]",
+      "solution_steps": [
+        {
+          "explain": "Cột thứ j của ma trận biểu diễn là tọa độ của ảnh vectơ cơ sở thứ j trong chính cơ sở đó. Vì vậy ta lần lượt tính T(u1), T(u2), T(u3) rồi phân tích theo B.",
+          "latex": "[T]_{B} = \\bigl( [T(u_{1})]_{B} \\ \\ [T(u_{2})]_{B} \\ \\ [T(u_{3})]_{B} \\bigr)"
+        },
+        {
+          "explain": "Tính ảnh của u1 bằng công thức đã cho, rồi giải hệ a u1 + b u2 + c u3 = T(u1). Vì cơ sở B là tam giác trên nên hệ giải ngược rất nhanh: tọa độ thứ ba đọc từ thành phần z, tọa độ thứ hai từ thành phần y.",
+          "latex": "T(u_{1}) = (1, 0, 1) = 1\\cdot u_{1} + (-1)\\cdot u_{2} + 1 \\cdot u_{3}"
+        },
+        {
+          "explain": "Làm tương tự với u2. Thành phần z của ảnh bằng 0 nên hệ số của u3 bằng 0, sau đó thành phần y cho hệ số của u2.",
+          "latex": "T(u_{2}) = (3, 3, 0) = 0\\cdot u_{1} + 3\\cdot u_{2} + 0 \\cdot u_{3}"
+        },
+        {
+          "explain": "Cuối cùng với u3, thành phần z bằng 2 nên hệ số của u3 là 2; trừ đi rồi đọc tiếp hai hệ số còn lại.",
+          "latex": "T(u_{3}) = (2, 4, 2) = -2\\cdot u_{1} + 2\\cdot u_{2} + 2 \\cdot u_{3}"
+        },
+        {
+          "explain": "Ghép ba cột tọa độ lại được ma trận cần tìm. Kiểm tra nhanh bằng bất biến đồng dạng: vết của ma trận mới phải bằng vết ma trận chính tắc.",
+          "latex": "[T]_{B} = \\begin{pmatrix} 1 & 0 & -2 \\\\ -1 & 3 & 2 \\\\ 1 & 0 & 2 \\end{pmatrix}, \\quad \\operatorname{tr} = 6 = 1 + 3 + 2"
+        },
+        {
+          "explain": "Có thể kiểm tra lại bằng công thức đổi ma trận biểu diễn với P là ma trận có các vectơ của B làm cột.",
+          "latex": "[T]_{B} = P^{-1} A P, \\quad P = \\begin{pmatrix} 1 & 1 & 1 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & 1 \\end{pmatrix}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.anh-xa-tuyen-tinh.ma-tran-bieu-dien",
+        "math.dai-hoc.anh-xa-tuyen-tinh.doi-ma-tran-bieu-dien",
+        "math.dai-hoc.tri-rieng.ma-tran-dong-dang"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "skills": [
+        "lập ma trận biểu diễn",
+        "đổi cơ sở",
+        "tọa độ trong cơ sở không chính tắc"
+      ],
+      "hints": [
+        "Cột j là tọa độ của T(u_j) trong cơ sở B, không phải trong cơ sở chính tắc.",
+        "Cơ sở B là tam giác nên hãy giải ngược từ thành phần z lên."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "anh-xa-tuyen-tinh",
+        "ma-tran-bieu-dien",
+        "doi-co-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0005",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tọa độ của vectơ trong một cơ sở",
+      "type": "dien-so",
+      "statement_vi": "Trong R^3 cho cơ sở B = {(1,1,0), (0,1,1), (1,0,1)} và vectơ v = (3,4,5). Tọa độ của v trong B là (a, b, c). Tính a + 2b + 3c.",
+      "statement_en": "In R^3 with basis B = {(1,1,0), (0,1,1), (1,0,1)} and v = (3,4,5), the coordinate vector of v is (a, b, c). Compute a + 2b + 3c.",
+      "answer": "(a,b,c) = (1,3,2) nên a + 2b + 3c = 13",
+      "answer_numeric": 13,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Tọa độ trong cơ sở B là bộ hệ số của tổ hợp tuyến tính biểu diễn v qua các vectơ của B, nên ta viết phương trình vectơ và tách theo từng thành phần.",
+          "latex": "a(1,1,0) + b(0,1,1) + c(1,0,1) = (3,4,5)"
+        },
+        {
+          "explain": "Tách ba thành phần được hệ ba phương trình ba ẩn. Đây chính là hệ Pv = [v] với P là ma trận chuyển cơ sở có các vectơ của B làm cột.",
+          "latex": "\\begin{cases} a + c = 3 \\\\ a + b = 4 \\\\ b + c = 5 \\end{cases}"
+        },
+        {
+          "explain": "Cộng cả ba phương trình rồi chia đôi để có tổng a + b + c, đây là mẹo nhanh cho hệ vòng quanh dạng này.",
+          "latex": "2(a+b+c) = 12 \\Rightarrow a + b + c = 6"
+        },
+        {
+          "explain": "Trừ lần lượt từng phương trình khỏi tổng để rút ra từng ẩn: lấy tổng trừ (b+c) được a, tổng trừ (a+c) được b, tổng trừ (a+b) được c.",
+          "latex": "a = 6 - 5 = 1, \\quad b = 6 - 3 = 3, \\quad c = 6 - 4 = 2"
+        },
+        {
+          "explain": "Thay vào biểu thức cần tính. Nên thử lại tổ hợp để chắc chắn không nhầm thứ tự vectơ cơ sở.",
+          "latex": "a + 2b + 3c = 1 + 6 + 6 = 13"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-vecto.toa-do-trong-co-so",
+        "math.dai-hoc.khong-gian-vecto.ma-tran-chuyen-co-so",
+        "math.dai-hoc.khong-gian-vecto.cong-thuc-doi-toa-do"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "tìm tọa độ trong cơ sở",
+        "giải hệ tuyến tính nhỏ",
+        "ma trận chuyển cơ sở"
+      ],
+      "hints": [
+        "Viết v thành tổ hợp tuyến tính rồi đồng nhất từng tọa độ.",
+        "Cộng ba phương trình lại sẽ ra ngay a + b + c."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "doi-co-so",
+        "toa-do",
+        "khong-gian-vecto"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0006",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định thức cấp bốn bằng phép biến đổi hàng",
+      "type": "dien-so",
+      "statement_vi": "Tính định thức cấp bốn của ma trận A có các hàng lần lượt là (2,1,3,1), (1,0,2,2), (3,2,1,0), (1,1,1,1).",
+      "statement_en": "Compute the determinant of the 4x4 matrix A with rows (2,1,3,1), (1,0,2,2), (3,2,1,0), (1,1,1,1).",
+      "answer": "det A = 6",
+      "answer_numeric": 6,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Khai triển Laplace cấp bốn tốn 24 số hạng, nên ta dùng biến đổi hàng: cộng bội của một hàng vào hàng khác không làm thay đổi định thức, còn đổi chỗ hai hàng thì đổi dấu. Trước hết đưa hàng có phần tử 1 ở cột đầu lên trên bằng cách đổi chỗ hàng 1 và hàng 2.",
+          "latex": "\\det A = -\\begin{vmatrix} 1 & 0 & 2 & 2 \\\\ 2 & 1 & 3 & 1 \\\\ 3 & 2 & 1 & 0 \\\\ 1 & 1 & 1 & 1 \\end{vmatrix}"
+        },
+        {
+          "explain": "Dùng phần tử trụ 1 ở vị trí (1,1) để khử toàn bộ cột đầu: h2 := h2 - 2h1, h3 := h3 - 3h1, h4 := h4 - h1. Các phép này không đổi giá trị định thức.",
+          "latex": "\\det A = -\\begin{vmatrix} 1 & 0 & 2 & 2 \\\\ 0 & 1 & -1 & -3 \\\\ 0 & 2 & -5 & -6 \\\\ 0 & 1 & -1 & -1 \\end{vmatrix}"
+        },
+        {
+          "explain": "Khai triển theo cột đầu, chỉ còn một số hạng ứng với phần tử 1. Bài toán rút về định thức cấp ba.",
+          "latex": "\\det A = -\\begin{vmatrix} 1 & -1 & -3 \\\\ 2 & -5 & -6 \\\\ 1 & -1 & -1 \\end{vmatrix}"
+        },
+        {
+          "explain": "Tiếp tục khử cột đầu của định thức cấp ba: h2 := h2 - 2h1 và h3 := h3 - h1, đưa về dạng tam giác trên.",
+          "latex": "\\det A = -\\begin{vmatrix} 1 & -1 & -3 \\\\ 0 & -3 & 0 \\\\ 0 & 0 & 2 \\end{vmatrix}"
+        },
+        {
+          "explain": "Định thức ma trận tam giác bằng tích các phần tử trên đường chéo chính; nhớ nhân lại dấu trừ do một lần đổi chỗ hàng ở bước đầu.",
+          "latex": "\\det A = -\\bigl(1 \\cdot (-3) \\cdot 2\\bigr) = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.dinh-thuc-bat-bien-phep-cong-hang",
+        "math.dai-hoc.dinh-thuc.dinh-thuc-doi-cho-hai-hang",
+        "math.dai-hoc.dinh-thuc.dinh-thuc-ma-tran-tam-giac",
+        "math.dai-hoc.dinh-thuc.khai-trien-laplace-theo-cot"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "tính định thức bằng khử Gauss",
+        "theo dõi dấu khi đổi chỗ hàng",
+        "khai triển Laplace"
+      ],
+      "hints": [
+        "Đưa số 1 lên vị trí trụ để tránh phân số.",
+        "Mỗi lần đổi chỗ hai hàng phải đổi dấu định thức."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "dinh-thuc",
+        "khu-gauss"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0007",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định thức Vandermonde",
+      "type": "dien-so",
+      "statement_vi": "Tính định thức Vandermonde cấp bốn ứng với các nút x1 = 1, x2 = 2, x3 = 3, x4 = 4, trong đó phần tử ở hàng i cột j bằng x_i^(j-1).",
+      "statement_en": "Compute the 4x4 Vandermonde determinant for nodes x1 = 1, x2 = 2, x3 = 3, x4 = 4, where the (i,j) entry is x_i^(j-1).",
+      "answer": "det V = 12",
+      "answer_numeric": 12,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Nhận ra cấu trúc Vandermonde giúp tránh khai triển 24 số hạng: định thức bằng tích mọi hiệu x_j - x_i với i nhỏ hơn j. Ta viết rõ ma trận trước.",
+          "latex": "V = \\begin{pmatrix} 1 & 1 & 1 & 1 \\\\ 1 & 2 & 4 & 8 \\\\ 1 & 3 & 9 & 27 \\\\ 1 & 4 & 16 & 64 \\end{pmatrix}"
+        },
+        {
+          "explain": "Áp dụng công thức Vandermonde. Với bốn nút ta có sáu cặp chỉ số i nhỏ hơn j nên tích gồm sáu thừa số.",
+          "latex": "\\det V = \\prod_{1 \\le i < j \\le 4} (x_{j} - x_{i})"
+        },
+        {
+          "explain": "Thay các nút cách đều 1, 2, 3, 4: các hiệu chỉ nhận giá trị 1, 2 hoặc 3 tùy khoảng cách giữa hai chỉ số.",
+          "latex": "\\det V = (2-1)(3-1)(4-1)(3-2)(4-2)(4-3)"
+        },
+        {
+          "explain": "Nhân lại theo thứ tự. Kết quả dương vì mọi hiệu đều dương do các nút đã sắp tăng.",
+          "latex": "\\det V = 1 \\cdot 2 \\cdot 3 \\cdot 1 \\cdot 2 \\cdot 1 = 12"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-thuc.dinh-thuc-vandermonde"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "nhận dạng định thức Vandermonde",
+        "tính tích các hiệu nút"
+      ],
+      "hints": [
+        "Không cần khai triển: đây là ma trận Vandermonde.",
+        "Có đúng sáu cặp chỉ số i < j khi n = 4."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "dinh-thuc",
+        "vandermonde"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0008",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chéo hoá và lũy thừa ma trận",
+      "type": "tu-luan",
+      "statement_vi": "Cho A = [[4,1],[2,3]]. Chéo hoá A và dùng kết quả đó tính A^5.",
+      "statement_en": "Let A = [[4,1],[2,3]]. Diagonalize A and use the result to compute A^5.",
+      "answer": "A = P D P^{-1} với P = [[1,1],[1,-2]], D = diag(5,2); A^5 = [[2094,1031],[2062,1063]]",
+      "solution_steps": [
+        {
+          "explain": "Trước hết tìm trị riêng qua phương trình đặc trưng. Với ma trận cấp hai có thể viết nhanh phương trình đặc trưng theo vết và định thức, tránh khai triển định thức từng bước.",
+          "latex": "\\lambda^{2} - (\\operatorname{tr} A)\\lambda + \\det A = \\lambda^{2} - 7\\lambda + 10 = 0"
+        },
+        {
+          "explain": "Giải phương trình bậc hai được hai trị riêng phân biệt, đây là điều kiện đủ để A chéo hoá được trên R.",
+          "latex": "\\lambda_{1} = 5, \\qquad \\lambda_{2} = 2"
+        },
+        {
+          "explain": "Tìm vectơ riêng ứng với lambda = 5 bằng cách giải (A - 5I)v = 0. Hàng đầu cho -x + y = 0 nên vectơ riêng là (1,1).",
+          "latex": "A - 5I = \\begin{pmatrix} -1 & 1 \\\\ 2 & -2 \\end{pmatrix} \\Rightarrow v_{1} = (1,1)^{T}"
+        },
+        {
+          "explain": "Tương tự với lambda = 2, hàng đầu cho 2x + y = 0 nên vectơ riêng là (1,-2). Hai vectơ riêng không tỉ lệ nên chúng lập thành cơ sở của R^2.",
+          "latex": "A - 2I = \\begin{pmatrix} 2 & 1 \\\\ 2 & 1 \\end{pmatrix} \\Rightarrow v_{2} = (1,-2)^{T}"
+        },
+        {
+          "explain": "Xếp hai vectơ riêng thành cột của P thì P^{-1}AP là ma trận chéo chứa các trị riêng đúng theo thứ tự cột.",
+          "latex": "P = \\begin{pmatrix} 1 & 1 \\\\ 1 & -2 \\end{pmatrix}, \\quad P^{-1} = \\frac{1}{3}\\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix}, \\quad D = \\begin{pmatrix} 5 & 0 \\\\ 0 & 2 \\end{pmatrix}"
+        },
+        {
+          "explain": "Lũy thừa của ma trận chéo chỉ là lũy thừa từng phần tử đường chéo, nên A^n tính được bằng một phép nhân ba ma trận.",
+          "latex": "A^{n} = P D^{n} P^{-1} = \\frac{1}{3}\\begin{pmatrix} 2\\cdot 5^{n} + 2^{n} & 5^{n} - 2^{n} \\\\ 2\\cdot 5^{n} - 2\\cdot 2^{n} & 5^{n} + 2\\cdot 2^{n} \\end{pmatrix}"
+        },
+        {
+          "explain": "Thay n = 5 với 5^5 = 3125 và 2^5 = 32, rồi rút gọn từng phần tử.",
+          "latex": "A^{5} = \\frac{1}{3}\\begin{pmatrix} 6282 & 3093 \\\\ 6186 & 3189 \\end{pmatrix} = \\begin{pmatrix} 2094 & 1031 \\\\ 2062 & 1063 \\end{pmatrix}"
+        },
+        {
+          "explain": "Kiểm tra nhanh bằng bất biến: vết của A^5 phải bằng tổng lũy thừa các trị riêng.",
+          "latex": "2094 + 1063 = 3157 = 5^{5} + 2^{5}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tri-rieng.da-thuc-dac-trung-cap-hai",
+        "math.dai-hoc.tri-rieng.cheo-hoa-ma-tran",
+        "math.dai-hoc.tri-rieng.luy-thua-ma-tran-qua-cheo-hoa",
+        "math.dai-hoc.tri-rieng.tong-tri-rieng-bang-vet"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "skills": [
+        "tìm trị riêng và vectơ riêng",
+        "chéo hoá ma trận",
+        "tính lũy thừa qua chéo hoá"
+      ],
+      "hints": [
+        "Với ma trận cấp hai, phương trình đặc trưng là lambda^2 - (vết)lambda + (định thức) = 0.",
+        "Kiểm tra kết quả bằng vết: tr(A^5) = 5^5 + 2^5."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "tri-rieng",
+        "cheo-hoa",
+        "luy-thua-ma-tran"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0009",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Điều kiện chéo hoá được",
+      "type": "trac-nghiem",
+      "statement_vi": "Ma trận nào sau đây KHÔNG chéo hoá được trên trường số thực?",
+      "statement_en": "Which of the following matrices is NOT diagonalizable over the real numbers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "\\begin{pmatrix} 2 & 1 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix}",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "\\begin{pmatrix} 2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 1 & 1 & 2 \\end{pmatrix}",
+          "why_wrong": "Ma trận này đối xứng thực nên theo định lí phổ luôn chéo hoá được bằng ma trận trực giao, dù trị riêng 1 có bội đại số 2. Học sinh nhầm bội lặp là dấu hiệu không chéo hoá được."
+        },
+        {
+          "key": "C",
+          "text": "\\begin{pmatrix} 1 & 2 \\\\ 0 & 3 \\end{pmatrix}",
+          "why_wrong": "Ma trận tam giác có hai trị riêng 1 và 3 phân biệt nên chắc chắn chéo hoá được. Học sinh nhầm rằng ma trận tam giác không đối xứng thì không chéo hoá được."
+        },
+        {
+          "key": "D",
+          "text": "\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}",
+          "why_wrong": "Ma trận đối xứng với trị riêng 1 và -1 phân biệt, chéo hoá được. Học sinh có thể nhầm nó với ma trận quay nên nghĩ trị riêng phức."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Tiêu chuẩn chéo hoá được là với MỌI trị riêng, bội hình học (số chiều không gian riêng) phải bằng bội đại số. Vì thế ta chỉ cần soi các trị riêng bội lặp.",
+          "latex": "A \\ \\text{cheo hoa duoc} \\iff \\forall \\lambda: \\dim \\ker(A - \\lambda I) = m_{a}(\\lambda)"
+        },
+        {
+          "explain": "Phương án A là ma trận tam giác nên trị riêng nằm trên đường chéo: lambda = 2 bội đại số 2 và lambda = 3 bội 1. Ta kiểm tra bội hình học của lambda = 2.",
+          "latex": "A - 2I = \\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}, \\quad \\operatorname{rank}(A - 2I) = 2"
+        },
+        {
+          "explain": "Số chiều không gian riêng bằng 3 trừ hạng, cho kết quả 1, nhỏ hơn bội đại số 2. Vậy A thiếu vectơ riêng để lập cơ sở, không chéo hoá được.",
+          "latex": "\\dim \\ker(A - 2I) = 3 - 2 = 1 < 2"
+        },
+        {
+          "explain": "Các phương án còn lại đều đạt tiêu chuẩn: B đối xứng nên áp dụng định lí phổ, C và D có các trị riêng phân biệt nên tự động chéo hoá được.",
+          "latex": "\\text{B: doi xung}; \\quad \\text{C}: \\lambda = 1, 3; \\quad \\text{D}: \\lambda = 1, -1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tri-rieng.dieu-kien-cheo-hoa",
+        "math.dai-hoc.tri-rieng.khong-gian-rieng",
+        "math.dai-hoc.tri-rieng.tri-rieng-ma-tran-tam-giac",
+        "math.dai-hoc.khong-gian-euclid.cheo-hoa-truc-giao"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "so sánh bội đại số và bội hình học",
+        "định lí phổ cho ma trận đối xứng",
+        "trị riêng của ma trận tam giác"
+      ],
+      "hints": [
+        "Chỉ trị riêng bội lặp mới có thể gây trục trặc.",
+        "Ma trận đối xứng thực luôn chéo hoá được."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "cheo-hoa",
+        "tri-rieng",
+        "boi-hinh-hoc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0010",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí phổ và chéo hoá trực giao",
+      "type": "tu-luan",
+      "statement_vi": "Cho A = [[2,1,1],[1,2,1],[1,1,2]]. Hãy chéo hoá trực giao A (tìm ma trận trực giao Q và ma trận chéo D sao cho Q^T A Q = D), rồi tính vết của A^10.",
+      "statement_en": "Let A = [[2,1,1],[1,2,1],[1,1,2]]. Orthogonally diagonalize A (find orthogonal Q and diagonal D with Q^T A Q = D), then compute the trace of A^10.",
+      "answer": "D = diag(4,1,1) với Q có các cột (1,1,1)/căn3, (1,-1,0)/căn2, (1,1,-2)/căn6; vết A^10 = 4^10 + 2 = 1048578",
+      "answer_numeric": 1048578,
+      "tolerance": 0.5,
+      "solution_steps": [
+        {
+          "explain": "A đối xứng thực nên theo định lí phổ tồn tại cơ sở trực chuẩn gồm các vectơ riêng. Ta viết A = I + J với J là ma trận toàn số 1 để đọc trị riêng nhanh, vì J có hạng 1.",
+          "latex": "A = I + J, \\qquad J = \\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Ma trận J hạng 1 có trị riêng 3 (ứng với vectơ (1,1,1)) và trị riêng 0 bội 2 (ứng với mặt phẳng x + y + z = 0). Cộng I làm mọi trị riêng tăng thêm 1.",
+          "latex": "\\operatorname{spec}(J) = \\{3, 0, 0\\} \\Rightarrow \\operatorname{spec}(A) = \\{4, 1, 1\\}"
+        },
+        {
+          "explain": "Không gian riêng ứng với lambda = 4 là đường thẳng sinh bởi (1,1,1); chuẩn hoá bằng cách chia cho độ dài căn 3.",
+          "latex": "q_{1} = \\frac{1}{\\sqrt{3}}(1,1,1)^{T}"
+        },
+        {
+          "explain": "Không gian riêng ứng với lambda = 1 là mặt phẳng x + y + z = 0, hai chiều. Chọn một vectơ trong đó rồi dùng Gram - Schmidt để lấy vectơ thứ hai trực giao với nó.",
+          "latex": "q_{2} = \\frac{1}{\\sqrt{2}}(1,-1,0)^{T}, \\qquad q_{3} = \\frac{1}{\\sqrt{6}}(1,1,-2)^{T}"
+        },
+        {
+          "explain": "Ghép ba vectơ trực chuẩn thành cột của Q. Vì các cột trực chuẩn nên Q trực giao, do đó Q^{-1} = Q^T và ta có chéo hoá trực giao.",
+          "latex": "Q = \\begin{pmatrix} 1/\\sqrt{3} & 1/\\sqrt{2} & 1/\\sqrt{6} \\\\ 1/\\sqrt{3} & -1/\\sqrt{2} & 1/\\sqrt{6} \\\\ 1/\\sqrt{3} & 0 & -2/\\sqrt{6} \\end{pmatrix}, \\quad Q^{T} A Q = \\operatorname{diag}(4,1,1)"
+        },
+        {
+          "explain": "Vì A^10 = Q D^10 Q^T và vết bất biến dưới đồng dạng, vết của A^10 bằng tổng lũy thừa bậc 10 của các trị riêng.",
+          "latex": "\\operatorname{tr}(A^{10}) = 4^{10} + 1^{10} + 1^{10} = 1048576 + 2 = 1048578"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-euclid.cheo-hoa-truc-giao",
+        "math.dai-hoc.khong-gian-euclid.ma-tran-truc-giao",
+        "math.dai-hoc.khong-gian-euclid.gram-schmidt",
+        "math.dai-hoc.tri-rieng.tong-tri-rieng-bang-vet"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "định lí phổ",
+        "chéo hoá trực giao",
+        "trực chuẩn hoá không gian riêng",
+        "bất biến vết"
+      ],
+      "hints": [
+        "Viết A = I + J với J là ma trận toàn số 1 hạng 1.",
+        "Không gian riêng ứng với trị riêng lặp phải được trực chuẩn hoá bằng Gram - Schmidt."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "dinh-li-pho",
+        "ma-tran-doi-xung",
+        "cheo-hoa-truc-giao"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0011",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Quá trình Gram - Schmidt",
+      "type": "tu-luan",
+      "statement_vi": "Trong R^3 với tích vô hướng chính tắc, hãy trực chuẩn hoá hệ v1 = (1,1,1), v2 = (1,2,3), v3 = (1,4,9) bằng quá trình Gram - Schmidt.",
+      "statement_en": "In R^3 with the standard inner product, apply the Gram-Schmidt process to v1 = (1,1,1), v2 = (1,2,3), v3 = (1,4,9).",
+      "answer": "u1 = (1,1,1)/căn3, u2 = (-1,0,1)/căn2, u3 = (1,-2,1)/căn6",
+      "solution_steps": [
+        {
+          "explain": "Bước đầu chỉ việc chuẩn hoá v1 vì chưa có gì để trừ đi. Độ dài của v1 là căn của tổng bình phương tọa độ.",
+          "latex": "\\lVert v_{1} \\rVert = \\sqrt{3}, \\qquad u_{1} = \\frac{1}{\\sqrt{3}}(1,1,1)^{T}"
+        },
+        {
+          "explain": "Trừ khỏi v2 hình chiếu trực giao của nó lên phương v1, để phần còn lại vuông góc với v1. Ta tính tích vô hướng trước.",
+          "latex": "\\langle v_{1}, v_{2} \\rangle = 1 + 2 + 3 = 6, \\qquad \\lVert v_{1} \\rVert^{2} = 3"
+        },
+        {
+          "explain": "Hình chiếu là (6/3)v1 = 2v1. Lấy hiệu được vectơ trực giao thứ hai, rất gọn.",
+          "latex": "w_{2} = v_{2} - 2 v_{1} = (1,2,3) - (2,2,2) = (-1, 0, 1)"
+        },
+        {
+          "explain": "Chuẩn hoá w2 bằng cách chia cho độ dài căn 2.",
+          "latex": "u_{2} = \\frac{1}{\\sqrt{2}}(-1, 0, 1)^{T}"
+        },
+        {
+          "explain": "Với v3 phải trừ đi hình chiếu lên CẢ hai phương đã dựng. Tính hai tích vô hướng cần thiết.",
+          "latex": "\\langle v_{1}, v_{3} \\rangle = 14, \\qquad \\langle w_{2}, v_{3} \\rangle = -1 + 0 + 9 = 8"
+        },
+        {
+          "explain": "Trừ lần lượt hai hình chiếu: hệ số ứng với v1 là 14/3, hệ số ứng với w2 là 8/2 = 4.",
+          "latex": "w_{3} = v_{3} - \\frac{14}{3} v_{1} - 4 w_{2} = \\left( \\frac{1}{3}, -\\frac{2}{3}, \\frac{1}{3} \\right)"
+        },
+        {
+          "explain": "Nhân w3 với 3 để bỏ mẫu (không đổi phương) rồi chuẩn hoá. Kiểm tra: (1,-2,1) vuông góc cả với (1,1,1) và (-1,0,1).",
+          "latex": "u_{3} = \\frac{1}{\\sqrt{6}}(1, -2, 1)^{T}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-euclid.gram-schmidt",
+        "math.dai-hoc.khong-gian-euclid.hinh-chieu-len-vecto",
+        "math.dai-hoc.khong-gian-euclid.tich-vo-huong-chinh-tac",
+        "math.dai-hoc.khong-gian-euclid.chuan-vecto"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 12,
+      "skills": [
+        "quá trình Gram - Schmidt",
+        "hình chiếu trực giao",
+        "chuẩn hoá vectơ"
+      ],
+      "hints": [
+        "Ở bước thứ k phải trừ đi hình chiếu lên tất cả k-1 phương đã dựng.",
+        "Có thể nhân vectơ trung gian với một số dương để bỏ mẫu trước khi chuẩn hoá."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "gram-schmidt",
+        "truc-giao",
+        "khong-gian-euclid"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0012",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Bình phương tối thiểu",
+      "type": "dien-so",
+      "statement_vi": "Tìm đường thẳng y = ax + b khớp bốn điểm (1,1), (2,2), (3,2), (4,4) theo nghĩa bình phương tối thiểu. Nhập giá trị của hệ số góc a.",
+      "statement_en": "Find the least-squares line y = ax + b for the points (1,1), (2,2), (3,2), (4,4). Enter the slope a.",
+      "answer": "a = 0,9 (và b = 0, tức đường thẳng y = 0,9x)",
+      "answer_numeric": 0.9,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bài toán khớp đường thẳng là giải hệ quá xác định Ax = y với A gồm cột hằng số và cột hoành độ. Hệ 4 phương trình 2 ẩn nói chung vô nghiệm nên ta tìm nghiệm bình phương tối thiểu.",
+          "latex": "A = \\begin{pmatrix} 1 & 1 \\\\ 1 & 2 \\\\ 1 & 3 \\\\ 1 & 4 \\end{pmatrix}, \\quad x = \\begin{pmatrix} b \\\\ a \\end{pmatrix}, \\quad y = \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\\\ 4 \\end{pmatrix}"
+        },
+        {
+          "explain": "Nghiệm bình phương tối thiểu thoả phương trình chuẩn tắc, thu được bằng cách nhân hai vế với A chuyển vị. Ý nghĩa hình học: sai số y - Ax phải trực giao với không gian cột của A.",
+          "latex": "A^{T} A x = A^{T} y"
+        },
+        {
+          "explain": "Tính hai vế: các tổng cần dùng là n = 4, tổng x = 10, tổng x^2 = 30, tổng y = 9, tổng xy = 27.",
+          "latex": "A^{T}A = \\begin{pmatrix} 4 & 10 \\\\ 10 & 30 \\end{pmatrix}, \\qquad A^{T}y = \\begin{pmatrix} 9 \\\\ 27 \\end{pmatrix}"
+        },
+        {
+          "explain": "Giải hệ hai ẩn bằng công thức Cramer. Định thức của A^T A bằng 4 nhân 30 trừ 100, khác 0 nên nghiệm duy nhất.",
+          "latex": "a = \\frac{4 \\cdot 27 - 10 \\cdot 9}{4 \\cdot 30 - 10^{2}} = \\frac{18}{20} = 0{,}9"
+        },
+        {
+          "explain": "Thay a vào phương trình đầu để lấy b. Ở đây hệ số chặn triệt tiêu, đường hồi quy đi qua gốc tọa độ.",
+          "latex": "b = \\frac{9 - 0{,}9 \\cdot 10}{4} = 0"
+        },
+        {
+          "explain": "Kiểm tra bằng tổng bình phương sai số: các phần dư là 0,1; 0,2; -0,7; 0,4 nên tổng bình phương bằng 0,7, và tổng các phần dư bằng 0 đúng như lí thuyết đòi hỏi.",
+          "latex": "\\sum r_{i} = 0, \\qquad \\sum r_{i}^{2} = 0{,}7"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-tich-ma-tran.binh-phuong-toi-thieu",
+        "math.dai-hoc.khong-gian-euclid.hinh-chieu-len-khong-gian-con",
+        "math.dai-hoc.he-phuong-trinh-tuyen-tinh.quy-tac-cramer"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "phương trình chuẩn tắc",
+        "hồi quy tuyến tính bình phương tối thiểu",
+        "hình chiếu lên không gian cột"
+      ],
+      "hints": [
+        "Viết bài toán dưới dạng Ax = y rồi nhân hai vế với A chuyển vị.",
+        "Tổng các phần dư của nghiệm bình phương tối thiểu có hệ số chặn luôn bằng 0."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "binh-phuong-toi-thieu",
+        "hinh-chieu-truc-giao"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0013",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Phân tích giá trị kì dị (SVD)",
+      "type": "dien-so",
+      "statement_vi": "Cho A = [[1,1,0],[0,1,1]] cỡ 2x3. Tính giá trị kì dị lớn nhất của A (làm tròn 4 chữ số thập phân).",
+      "statement_en": "Let A = [[1,1,0],[0,1,1]] be a 2x3 matrix. Compute the largest singular value of A (round to 4 decimals).",
+      "answer": "sigma_1 = căn 3 xấp xỉ 1,7321",
+      "answer_numeric": 1.7321,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Giá trị kì dị của A là căn bậc hai của các trị riêng không âm của A A^T (hoặc A^T A). Vì A chỉ có 2 hàng nên tính A A^T cấp 2 sẽ nhanh hơn A^T A cấp 3.",
+          "latex": "\\sigma_{i}(A) = \\sqrt{\\lambda_{i}(A A^{T})}"
+        },
+        {
+          "explain": "Nhân A với chuyển vị của nó: phần tử đường chéo là bình phương độ dài mỗi hàng, phần tử ngoài đường chéo là tích vô hướng hai hàng.",
+          "latex": "A A^{T} = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}"
+        },
+        {
+          "explain": "Ma trận này đối xứng cấp hai, dùng vết và định thức để lập phương trình đặc trưng.",
+          "latex": "\\lambda^{2} - 4\\lambda + 3 = 0 \\Rightarrow \\lambda_{1} = 3, \\ \\lambda_{2} = 1"
+        },
+        {
+          "explain": "Lấy căn bậc hai theo thứ tự giảm dần được các giá trị kì dị. A có hạng 2 nên có đúng hai giá trị kì dị dương.",
+          "latex": "\\sigma_{1} = \\sqrt{3} \\approx 1{,}7321, \\qquad \\sigma_{2} = 1"
+        },
+        {
+          "explain": "Kiểm tra bằng đẳng thức tổng bình phương giá trị kì dị bằng bình phương chuẩn Frobenius: A có bốn phần tử bằng 1 nên chuẩn Frobenius bình phương bằng 4.",
+          "latex": "\\sigma_{1}^{2} + \\sigma_{2}^{2} = 3 + 1 = 4 = \\lVert A \\rVert_{F}^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.phan-tich-ma-tran.phan-tich-svd",
+        "math.dai-hoc.phan-tich-ma-tran.chuan-frobenius",
+        "math.dai-hoc.dstt-nang-cao.xap-xi-hang-thap-eckart-young"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "tính giá trị kì dị",
+        "liên hệ SVD với chuẩn Frobenius",
+        "chọn phía nhân ma trận cho gọn"
+      ],
+      "hints": [
+        "Nhân A với A chuyển vị để được ma trận vuông cấp 2.",
+        "Sai số Frobenius của xấp xỉ hạng 1 tốt nhất chính bằng sigma_2."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "svd",
+        "gia-tri-ki-di",
+        "phan-tich-ma-tran"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0014",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Dạng toàn phương và tiêu chuẩn Sylvester",
+      "type": "trac-nghiem",
+      "statement_vi": "Xét dạng toàn phương Q(x,y,z) = x^2 + 2y^2 + 3z^2 + 2xy + 2xz. Kết luận nào đúng về tính xác định dấu của Q?",
+      "statement_en": "Consider the quadratic form Q(x,y,z) = x^2 + 2y^2 + 3z^2 + 2xy + 2xz. Which statement about its definiteness is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Q xác định dương",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Q xác định âm",
+          "why_wrong": "Các phần tử đường chéo của ma trận đều dương nên Q(1,0,0) = 1 > 0, không thể xác định âm. Học sinh có thể đã đổi dấu nhầm khi lập các định thức con."
+        },
+        {
+          "key": "C",
+          "text": "Q không xác định dấu (nhận cả giá trị dương lẫn âm)",
+          "why_wrong": "Kết luận này chỉ đúng nếu một định thức con chính cấp lẻ âm hoặc dãy dấu không đều; ở đây cả ba định thức con chính đều bằng 1 nên Q luôn dương với vectơ khác không."
+        },
+        {
+          "key": "D",
+          "text": "Q nửa xác định dương nhưng không xác định dương",
+          "why_wrong": "Điều này đòi hỏi định thức của ma trận bằng 0 (tồn tại vectơ khác không làm Q triệt tiêu); tính ra định thức bằng 1 khác 0 nên không xảy ra. Lỗi thường gặp là lấy hệ số 2xy làm phần tử ngoài đường chéo bằng 2 thay vì 1."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Trước hết lập ma trận đối xứng của dạng toàn phương: phần tử đường chéo là hệ số của bình phương, phần tử ngoài đường chéo bằng MỘT NỬA hệ số của tích chéo tương ứng.",
+          "latex": "A = \\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 2 & 0 \\\\ 1 & 0 & 3 \\end{pmatrix}"
+        },
+        {
+          "explain": "Theo tiêu chuẩn Sylvester, Q xác định dương khi và chỉ khi cả ba định thức con chính dẫn đầu đều dương. Ta tính lần lượt từ cấp 1.",
+          "latex": "D_{1} = 1 > 0"
+        },
+        {
+          "explain": "Định thức con cấp hai lấy hai hàng đầu và hai cột đầu.",
+          "latex": "D_{2} = \\begin{vmatrix} 1 & 1 \\\\ 1 & 2 \\end{vmatrix} = 2 - 1 = 1 > 0"
+        },
+        {
+          "explain": "Định thức cấp ba khai triển theo hàng đầu.",
+          "latex": "D_{3} = 1(2 \\cdot 3 - 0) - 1(1 \\cdot 3 - 0) + 1(0 - 2) = 6 - 3 - 2 = 1 > 0"
+        },
+        {
+          "explain": "Cả ba định thức dương nên Q xác định dương. Có thể kiểm chứng độc lập bằng bổ sung bình phương theo phương pháp Lagrange, thu được ba hệ số dương.",
+          "latex": "Q = (x + y + z)^{2} + (y - z)^{2} + z^{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dang-toan-phuong.dinh-nghia-dang-toan-phuong",
+        "math.dai-hoc.dang-toan-phuong.tieu-chuan-sylvester-xac-dinh-duong",
+        "math.dai-hoc.dang-toan-phuong.phuong-phap-lagrange"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "lập ma trận dạng toàn phương",
+        "tiêu chuẩn Sylvester",
+        "bổ sung bình phương Lagrange"
+      ],
+      "hints": [
+        "Hệ số của 2xy cho phần tử ngoài đường chéo bằng 1, không phải 2.",
+        "Kiểm tra lại bằng cách bổ sung bình phương."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "dang-toan-phuong",
+        "sylvester",
+        "xac-dinh-duong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0015",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Dạng chuẩn Jordan",
+      "type": "dien-so",
+      "statement_vi": "Ma trận A cấp 5 trên trường số phức chỉ có một trị riêng lambda = 2, biết rank(A - 2I) = 3, rank((A - 2I)^2) = 1 và rank((A - 2I)^3) = 0. Hỏi dạng chuẩn Jordan của A gồm bao nhiêu khối Jordan?",
+      "statement_en": "A 5x5 complex matrix A has the single eigenvalue lambda = 2, with rank(A - 2I) = 3, rank((A - 2I)^2) = 1 and rank((A - 2I)^3) = 0. How many Jordan blocks does the Jordan form of A have?",
+      "answer": "2 khối, cỡ 3 và 2, tức J = J_3(2) tổng trực tiếp J_2(2)",
+      "answer_numeric": 2,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Đặt N = A - 2I, đây là ma trận lũy linh vì trị riêng duy nhất đã bị trừ đi. Số khối Jordan bằng số vectơ riêng độc lập, tức số chiều của Ker N.",
+          "latex": "N = A - 2I, \\qquad \\#\\text{khoi} = \\dim \\ker N = 5 - \\operatorname{rank} N"
+        },
+        {
+          "explain": "Thay hạng đã cho vào công thức trên.",
+          "latex": "\\#\\text{khoi} = 5 - 3 = 2"
+        },
+        {
+          "explain": "Để xác định cỡ từng khối ta dùng công thức đếm số khối có cỡ ít nhất k qua hiệu các hạng liên tiếp.",
+          "latex": "\\#\\{\\text{khoi co co} \\ge k\\} = \\operatorname{rank} N^{k-1} - \\operatorname{rank} N^{k}"
+        },
+        {
+          "explain": "Tính lần lượt với rank N^0 = 5, rank N = 3, rank N^2 = 1, rank N^3 = 0.",
+          "latex": "k=1: 5-3=2; \\quad k=2: 3-1=2; \\quad k=3: 1-0=1; \\quad k=4: 0"
+        },
+        {
+          "explain": "Đọc ngược: có 2 khối cỡ ít nhất 1, 2 khối cỡ ít nhất 2 và 1 khối cỡ ít nhất 3. Vậy một khối cỡ 3 và một khối cỡ 2, tổng cỡ đúng bằng 5.",
+          "latex": "J = J_{3}(2) \\oplus J_{2}(2), \\qquad 3 + 2 = 5"
+        },
+        {
+          "explain": "Đa thức tối tiểu có bậc bằng cỡ khối lớn nhất, đây là cách kiểm tra chéo với dữ kiện rank N^3 = 0.",
+          "latex": "m_{A}(x) = (x-2)^{3}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dstt-nang-cao.dang-chuan-jordan",
+        "math.dai-hoc.dstt-nang-cao.so-khoi-jordan-theo-hang",
+        "math.dai-hoc.dstt-nang-cao.khoi-jordan",
+        "math.dai-hoc.dstt-nang-cao.da-thuc-toi-tieu-ma-tran"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "đếm khối Jordan theo hạng",
+        "xác định cỡ khối",
+        "đa thức tối tiểu"
+      ],
+      "hints": [
+        "Số khối Jordan bằng số chiều của không gian riêng.",
+        "Hiệu hai hạng liên tiếp cho số khối có cỡ không nhỏ hơn k."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "jordan",
+        "da-thuc-toi-tieu",
+        "ma-tran-luy-linh"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0016",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Cayley - Hamilton",
+      "type": "tu-luan",
+      "statement_vi": "Cho A = [[1,2],[3,4]]. Dùng định lí Cayley - Hamilton để biểu diễn A^{-1} qua A và I, rồi viết ra ma trận nghịch đảo cụ thể.",
+      "statement_en": "Let A = [[1,2],[3,4]]. Use the Cayley-Hamilton theorem to express A^{-1} in terms of A and I, then write the inverse explicitly.",
+      "answer": "A^{-1} = (A - 5I)/2 = [[-2, 1],[3/2, -1/2]]",
+      "solution_steps": [
+        {
+          "explain": "Lập đa thức đặc trưng của ma trận cấp hai theo vết và định thức. Vết bằng 1 + 4 = 5 và định thức bằng 1·4 - 2·3 = -2.",
+          "latex": "p(\\lambda) = \\lambda^{2} - 5\\lambda - 2"
+        },
+        {
+          "explain": "Định lí Cayley - Hamilton khẳng định ma trận thoả chính đa thức đặc trưng của nó. Thay lambda bởi A và số hạng tự do bởi bội của I.",
+          "latex": "A^{2} - 5A - 2I = O"
+        },
+        {
+          "explain": "Vì định thức khác 0 nên A khả nghịch. Nhóm hai số hạng đầu để tách nhân tử A ra bên trái, đây là mẹo chuẩn để rút A^{-1} mà không cần ma trận phụ hợp.",
+          "latex": "A(A - 5I) = 2I"
+        },
+        {
+          "explain": "Nhân hai vế bên trái với A^{-1} rồi chia cho 2, ta được công thức nghịch đảo chỉ dùng A và I.",
+          "latex": "A^{-1} = \\frac{1}{2}\\,(A - 5I)"
+        },
+        {
+          "explain": "Thay ma trận cụ thể: trừ 5 trên đường chéo rồi chia đôi mọi phần tử.",
+          "latex": "A^{-1} = \\frac{1}{2}\\begin{pmatrix} -4 & 2 \\\\ 3 & -1 \\end{pmatrix} = \\begin{pmatrix} -2 & 1 \\\\ 3/2 & -1/2 \\end{pmatrix}"
+        },
+        {
+          "explain": "Kiểm tra bằng công thức nghịch đảo cấp hai để chắc chắn, hai kết quả phải trùng nhau.",
+          "latex": "\\frac{1}{\\det A}\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix} = -\\frac{1}{2}\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix} = \\begin{pmatrix} -2 & 1 \\\\ 3/2 & -1/2 \\end{pmatrix}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.tri-rieng.dinh-li-cayley-hamilton",
+        "math.dai-hoc.tri-rieng.da-thuc-dac-trung-cap-hai",
+        "math.dai-hoc.ma-tran.nghich-dao-ma-tran-cap-hai",
+        "math.dai-hoc.ma-tran.dieu-kien-kha-nghich"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "định lí Cayley - Hamilton",
+        "rút nghịch đảo từ đa thức đặc trưng",
+        "kiểm tra chéo kết quả"
+      ],
+      "hints": [
+        "Viết đa thức đặc trưng rồi thay lambda bởi A.",
+        "Nhóm A ra làm nhân tử chung ở vế trái."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "cayley-hamilton",
+        "ma-tran-nghich-dao"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0017",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Xích Markov hai trạng thái",
+      "type": "dien-so",
+      "statement_vi": "Một hệ có hai trạng thái A và B với ma trận chuyển P: P(A->A) = 0,7; P(A->B) = 0,3; P(B->A) = 0,4; P(B->B) = 0,6. Tìm xác suất dừng của trạng thái A (làm tròn 4 chữ số thập phân).",
+      "statement_en": "A two-state chain on {A, B} has P(A->A) = 0.7, P(A->B) = 0.3, P(B->A) = 0.4, P(B->B) = 0.6. Find the stationary probability of state A (round to 4 decimals).",
+      "answer": "pi_A = 4/7 xấp xỉ 0,5714",
+      "answer_numeric": 0.5714,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Phân phối dừng là vectơ hàng pi thoả pi P = pi và tổng các thành phần bằng 1. Đây là bài toán vectơ riêng trái ứng với trị riêng 1 của ma trận ngẫu nhiên.",
+          "latex": "\\pi P = \\pi, \\qquad \\pi_{A} + \\pi_{B} = 1"
+        },
+        {
+          "explain": "Viết phương trình cân bằng cho trạng thái A: luồng vào A gồm phần ở lại A và phần chuyển từ B sang A.",
+          "latex": "0{,}7\\pi_{A} + 0{,}4\\pi_{B} = \\pi_{A}"
+        },
+        {
+          "explain": "Chuyển vế và thay pi_B = 1 - pi_A để còn một ẩn. Đây là dạng cân bằng luồng ra bằng luồng vào của trạng thái A.",
+          "latex": "0{,}4(1 - \\pi_{A}) = 0{,}3\\pi_{A}"
+        },
+        {
+          "explain": "Giải phương trình bậc nhất: gom hệ số của pi_A.",
+          "latex": "0{,}4 = 0{,}7\\pi_{A} \\Rightarrow \\pi_{A} = \\frac{4}{7} \\approx 0{,}5714"
+        },
+        {
+          "explain": "Suy ra pi_B và kiểm tra lại bằng phương trình cân bằng của trạng thái B để chắc chắn không nhầm chiều chuyển.",
+          "latex": "\\pi_{B} = \\frac{3}{7}; \\quad 0{,}3 \\cdot \\frac{4}{7} = 0{,}4 \\cdot \\frac{3}{7} = \\frac{1{,}2}{7}"
+        },
+        {
+          "explain": "Có thể minh hoạ tính hội tụ: xuất phát từ trạng thái A chắc chắn, phân phối sau 3 bước đã tiến gần phân phối dừng.",
+          "latex": "(1,0)P^{3} = (0{,}583,\\ 0{,}417) \\to \\left( \\tfrac{4}{7}, \\tfrac{3}{7} \\right)"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.qua-trinh-ngau-nhien.phan-phoi-dung-xich-markov",
+        "math.dai-hoc.qua-trinh-ngau-nhien.phan-phoi-sau-n-buoc",
+        "math.dai-hoc.dstt-nang-cao.ma-tran-ngau-nhien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "lập phương trình cân bằng",
+        "tìm phân phối dừng",
+        "vectơ riêng trái của ma trận ngẫu nhiên"
+      ],
+      "hints": [
+        "Phân phối dừng là vectơ riêng TRÁI ứng với trị riêng 1.",
+        "Thay pi_B = 1 - pi_A để rút gọn về một ẩn."
+      ],
+      "tags": [
+        "xac-suat",
+        "xich-markov",
+        "phan-phoi-dung",
+        "ma-tran-ngau-nhien"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0018",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hạng của tích ma trận",
+      "type": "dung-sai",
+      "statement_vi": "Cho A thuộc M_{4x3}(R) và B thuộc M_{3x5}(R). Xét tính đúng sai của bốn khẳng định: (1) rank(AB) nhỏ hơn hoặc bằng 3. (2) Nếu rank A = 3 và rank B = 2 thì rank(AB) = 2. (3) Nếu rank A = rank B = 3 thì AB khả nghịch. (4) Luôn có rank(AB) lớn hơn hoặc bằng rank A + rank B - 3.",
+      "statement_en": "Let A be 4x3 and B be 3x5 real matrices. Decide true/false: (1) rank(AB) <= 3. (2) If rank A = 3 and rank B = 2 then rank(AB) = 2. (3) If rank A = rank B = 3 then AB is invertible. (4) Always rank(AB) >= rank A + rank B - 3.",
+      "answer": "(1) Đúng, (2) Đúng, (3) Sai, (4) Đúng",
+      "solution_steps": [
+        {
+          "explain": "Khẳng định (1): hạng của tích không vượt quá hạng của từng nhân tử, mà cả hai nhân tử đều có hạng tối đa bằng 3 vì kích thước chung là 3. Vậy (1) đúng.",
+          "latex": "\\operatorname{rank}(AB) \\le \\min\\{\\operatorname{rank} A, \\operatorname{rank} B\\} \\le 3"
+        },
+        {
+          "explain": "Khẳng định (4) chính là bất đẳng thức Sylvester với kích thước chung n = 3; đây là định lí nên (4) đúng.",
+          "latex": "\\operatorname{rank}(AB) \\ge \\operatorname{rank} A + \\operatorname{rank} B - 3"
+        },
+        {
+          "explain": "Khẳng định (2): áp dụng đồng thời hai chặn trên. Chặn dưới Sylvester cho 3 + 2 - 3 = 2, chặn trên cho min{3,2} = 2, hai chặn ép lại nên hạng bằng đúng 2. Vậy (2) đúng.",
+          "latex": "2 \\le \\operatorname{rank}(AB) \\le 2 \\Rightarrow \\operatorname{rank}(AB) = 2"
+        },
+        {
+          "explain": "Khẳng định (3): tích AB có cỡ 4x5, không phải ma trận vuông, nên khái niệm khả nghịch (hai phía) không áp dụng được. Vậy (3) sai.",
+          "latex": "AB \\in M_{4\\times 5}(\\mathbb{R}), \\quad \\operatorname{rank}(AB) \\le 3 < 4"
+        },
+        {
+          "explain": "Nhấn mạnh lỗi hay gặp: ngay cả khi hai nhân tử đều đạt hạng tối đa, tích vẫn bị 'nghẽn cổ chai' bởi kích thước chung bằng 3.",
+          "latex": "\\operatorname{rank}(AB) = 3 \\ne 4 = \\min\\{4,5\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ma-tran.bat-dang-thuc-hang-cua-tich",
+        "math.dai-hoc.ma-tran.hang-ma-tran-dinh-nghia",
+        "math.dai-hoc.ma-tran.dieu-kien-kha-nghich"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "bất đẳng thức Sylvester về hạng",
+        "chặn trên chặn dưới của hạng tích",
+        "điều kiện khả nghịch"
+      ],
+      "hints": [
+        "Kích thước chung 3 là nút thắt cổ chai của hạng tích.",
+        "Chỉ ma trận VUÔNG mới nói tới khả nghịch."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "hang-ma-tran",
+        "bat-dang-thuc-sylvester"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0019",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hạt nhân, ảnh, đơn ánh và toàn ánh",
+      "type": "dung-sai",
+      "statement_vi": "Cho T: R^5 -> R^3 là ánh xạ tuyến tính. Xét tính đúng sai: (1) T không thể là đơn ánh. (2) Nếu T toàn ánh thì dim Ker T = 2. (3) Có thể xảy ra dim Im T = 4. (4) Nếu dim Ker T = 5 thì T là ánh xạ không.",
+      "statement_en": "Let T: R^5 -> R^3 be linear. True or false: (1) T cannot be injective. (2) If T is surjective then dim Ker T = 2. (3) It is possible that dim Im T = 4. (4) If dim Ker T = 5 then T is the zero map.",
+      "answer": "(1) Đúng, (2) Đúng, (3) Sai, (4) Đúng",
+      "solution_steps": [
+        {
+          "explain": "Công cụ duy nhất cần dùng là định lí hạng - số khuyết, ràng buộc tổng số chiều ảnh và hạt nhân bằng số chiều không gian nguồn.",
+          "latex": "\\dim \\ker T + \\dim \\operatorname{Im} T = 5"
+        },
+        {
+          "explain": "Vì ảnh nằm trong R^3 nên số chiều ảnh nhiều nhất bằng 3, kéo theo hạt nhân có số chiều ít nhất 2, khác không. Ánh xạ đơn ánh đòi hỏi hạt nhân tầm thường nên (1) đúng và đồng thời (3) sai.",
+          "latex": "\\dim \\operatorname{Im} T \\le 3 \\Rightarrow \\dim \\ker T \\ge 2 > 0"
+        },
+        {
+          "explain": "Nếu T toàn ánh thì ảnh phủ kín R^3 nên số chiều ảnh đúng bằng 3; thay vào hệ thức trên được số chiều hạt nhân. Vậy (2) đúng.",
+          "latex": "\\dim \\operatorname{Im} T = 3 \\Rightarrow \\dim \\ker T = 5 - 3 = 2"
+        },
+        {
+          "explain": "Nếu hạt nhân là toàn bộ R^5 thì mọi vectơ đều bị đưa về 0, đúng định nghĩa ánh xạ không. Vậy (4) đúng.",
+          "latex": "\\ker T = \\mathbb{R}^{5} \\Rightarrow T(v) = 0 \\ \\forall v \\Rightarrow T \\equiv 0"
+        },
+        {
+          "explain": "Tóm lại chỉ khẳng định (3) sai vì nó vi phạm chặn trên hiển nhiên của số chiều ảnh trong không gian đích ba chiều.",
+          "latex": "\\dim \\operatorname{Im} T \\in \\{0,1,2,3\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.anh-xa-tuyen-tinh.dinh-li-hang-so-khuyet",
+        "math.dai-hoc.anh-xa-tuyen-tinh.hat-nhan",
+        "math.dai-hoc.anh-xa-tuyen-tinh.anh-cua-anh-xa",
+        "math.dai-hoc.anh-xa-tuyen-tinh.don-anh-toan-anh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "định lí hạng - số khuyết",
+        "điều kiện đơn ánh toàn ánh",
+        "chặn số chiều ảnh"
+      ],
+      "hints": [
+        "Ảnh là không gian con của R^3 nên số chiều tối đa là 3.",
+        "Đơn ánh tương đương hạt nhân chỉ chứa vectơ không."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "anh-xa-tuyen-tinh",
+        "hat-nhan",
+        "dinh-li-hang"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0020",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí đĩa tròn Gershgorin",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho ma trận đối xứng thực A = [[5,1,0],[1,6,1],[0,1,9]]. Dùng định lí đĩa tròn Gershgorin, kết luận nào sau đây là chắc chắn đúng?",
+      "statement_en": "Let A = [[5,1,0],[1,6,1],[0,1,9]] be a real symmetric matrix. Using Gershgorin's circle theorem, which conclusion is guaranteed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mọi trị riêng của A nằm trong đoạn [4;10], do đó A xác định dương",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "A có một trị riêng đúng bằng 5",
+          "why_wrong": "Gershgorin chỉ khoanh vùng chứa trị riêng chứ không khẳng định trị riêng bằng phần tử đường chéo; thực tế các trị riêng xấp xỉ 4,32; 6,36; 9,32."
+        },
+        {
+          "key": "C",
+          "text": "A có ít nhất một trị riêng âm",
+          "why_wrong": "Cận dưới của mọi đĩa là 5-1 = 4, 6-2 = 4 và 9-1 = 8, đều dương, nên không trị riêng nào có thể âm. Học sinh nhầm dấu khi lấy bán kính."
+        },
+        {
+          "key": "D",
+          "text": "Mọi trị riêng nằm trong [0;16] nhưng không thể kết luận gì về dấu",
+          "why_wrong": "Đoạn này thu được nếu lấy bán kính bằng tổng TẤT CẢ phần tử của hàng kể cả phần tử đường chéo; bán kính Gershgorin chỉ tính các phần tử NGOÀI đường chéo."
+        },
+        {
+          "key": "E",
+          "text": "Không kết luận được vì A không chéo trội nghiêm ngặt",
+          "why_wrong": "A thật sự chéo trội nghiêm ngặt theo hàng (5>1, 6>2, 9>1), và dù không chéo trội thì định lí Gershgorin vẫn áp dụng được."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Với mỗi hàng, đĩa Gershgorin có tâm là phần tử đường chéo và bán kính là tổng giá trị tuyệt đối các phần tử còn lại trong hàng đó. Ta liệt kê ba đĩa.",
+          "latex": "R_{1} = |1| + |0| = 1, \\quad R_{2} = |1| + |1| = 2, \\quad R_{3} = |0| + |1| = 1"
+        },
+        {
+          "explain": "Vì A đối xứng thực nên mọi trị riêng đều thực, các đĩa trong mặt phẳng phức thu về các đoạn trên trục thực.",
+          "latex": "[5-1, 5+1] = [4,6], \\quad [6-2, 6+2] = [4,8], \\quad [9-1, 9+1] = [8,10]"
+        },
+        {
+          "explain": "Định lí Gershgorin khẳng định mọi trị riêng nằm trong hợp các đĩa. Hợp ba đoạn trên là một đoạn liền do chúng chạm nhau tại 8.",
+          "latex": "\\operatorname{spec}(A) \\subset [4,6] \\cup [4,8] \\cup [8,10] = [4,10]"
+        },
+        {
+          "explain": "Cận dưới 4 lớn hơn 0 nên mọi trị riêng dương; với ma trận đối xứng thực điều này tương đương xác định dương.",
+          "latex": "\\lambda_{\\min} \\ge 4 > 0 \\Rightarrow A \\succ 0"
+        },
+        {
+          "explain": "Kiểm chứng số: các trị riêng thực sự xấp xỉ 4,32; 6,36 và 9,32, đều nằm gọn trong [4;10].",
+          "latex": "\\lambda \\approx 4{,}32;\\ 6{,}36;\\ 9{,}32"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dstt-nang-cao.dinh-li-gershgorin",
+        "math.dai-hoc.dang-toan-phuong.xac-dinh-dau-qua-tri-rieng",
+        "math.dai-hoc.khong-gian-euclid.cheo-hoa-truc-giao"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 8,
+      "skills": [
+        "định lí Gershgorin",
+        "chặn trị riêng",
+        "xét dấu ma trận đối xứng qua trị riêng"
+      ],
+      "hints": [
+        "Bán kính đĩa KHÔNG kể phần tử đường chéo.",
+        "Với ma trận đối xứng, mọi trị riêng dương tương đương xác định dương."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "gershgorin",
+        "tri-rieng",
+        "xac-dinh-duong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0021",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Nhóm cyclic và cấp của phần tử",
+      "type": "dien-so",
+      "statement_vi": "Trong nhóm cyclic Z_60 (phép cộng modulo 60), có bao nhiêu phần tử có cấp đúng bằng 12?",
+      "statement_en": "In the cyclic group Z_60 under addition mod 60, how many elements have order exactly 12?",
+      "answer": "4 phần tử, đó là 5, 25, 35, 55",
+      "answer_numeric": 4,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Trong nhóm cyclic cấp n, cấp của phần tử k bằng n chia cho ước chung lớn nhất của n và k. Ta đặt điều kiện cấp bằng 12.",
+          "latex": "\\operatorname{ord}(k) = \\frac{60}{\\gcd(60,k)} = 12 \\iff \\gcd(60,k) = 5"
+        },
+        {
+          "explain": "Vì 12 là ước của 60 nên tồn tại nhóm con cyclic duy nhất cấp 12; các phần tử cấp 12 chính là các phần tử sinh của nhóm con đó.",
+          "latex": "H = \\langle 5 \\rangle = \\{0,5,10,\\ldots,55\\}, \\quad |H| = 12"
+        },
+        {
+          "explain": "Số phần tử sinh của một nhóm cyclic cấp m bằng phi(m) theo hàm Euler, nên ta chỉ cần tính phi(12).",
+          "latex": "\\#\\{\\text{phan tu cap } 12\\} = \\varphi(12)"
+        },
+        {
+          "explain": "Phân tích 12 = 2^2 · 3 rồi dùng công thức nhân của hàm Euler.",
+          "latex": "\\varphi(12) = 12\\left(1 - \\frac{1}{2}\\right)\\left(1 - \\frac{1}{3}\\right) = 4"
+        },
+        {
+          "explain": "Liệt kê kiểm tra: các k thoả gcd(60,k) = 5 trong khoảng 0 đến 59.",
+          "latex": "k \\in \\{5, 25, 35, 55\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.cap-luy-thua-trong-nhom-cyclic",
+        "math.dai-hoc.nhom.nhom-con-cua-nhom-cyclic",
+        "math.dai-hoc.nhom.so-phan-tu-sinh-nhom-cyclic",
+        "math.dai-hoc.so-hoc-mat-ma.ham-euler-phi"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6,
+      "skills": [
+        "cấp phần tử trong nhóm cyclic",
+        "hàm Euler phi",
+        "nhóm con của nhóm cyclic"
+      ],
+      "hints": [
+        "Cấp của k trong Z_n bằng n/gcd(n,k).",
+        "Số phần tử cấp d bằng phi(d) khi d là ước của n."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "nhom-cyclic",
+        "cap-phan-tu",
+        "ham-euler"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0022",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Lagrange",
+      "type": "trac-nghiem",
+      "statement_vi": "Cho G là một nhóm hữu hạn cấp 30. Số nào sau đây CHẮC CHẮN không thể là cấp của một nhóm con của G?",
+      "statement_en": "Let G be a finite group of order 30. Which number can definitely NOT be the order of a subgroup of G?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "5",
+          "why_wrong": "5 là ước nguyên tố của 30, theo định lí Cauchy chắc chắn tồn tại phần tử cấp 5 nên có nhóm con cấp 5."
+        },
+        {
+          "key": "C",
+          "text": "6",
+          "why_wrong": "6 là ước của 30 nên định lí Lagrange không loại trừ; thực tế mọi nhóm cấp 30 đều có nhóm con cấp 6."
+        },
+        {
+          "key": "D",
+          "text": "15",
+          "why_wrong": "15 là ước của 30 và mọi nhóm cấp 30 đều có nhóm con chuẩn tắc cấp 15, nên khả năng này xảy ra."
+        },
+        {
+          "key": "E",
+          "text": "10",
+          "why_wrong": "10 là ước của 30 nên không bị Lagrange loại; nhóm cấp 30 luôn chứa nhóm con cấp 10."
+        }
+      ],
+      "answer": "A",
+      "answer_numeric": 4,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Định lí Lagrange nói cấp của mọi nhóm con phải là ước của cấp nhóm. Đây là điều kiện CẦN, nên trước hết ta liệt kê các ước của 30.",
+          "latex": "|H| \\ \\big|\\ |G| = 30"
+        },
+        {
+          "explain": "Phân tích 30 = 2 · 3 · 5 nên tập ước gồm tám số.",
+          "latex": "\\{1, 2, 3, 5, 6, 10, 15, 30\\}"
+        },
+        {
+          "explain": "Đối chiếu các phương án: 5, 6, 10, 15 đều nằm trong danh sách ước nên không bị loại; riêng 4 không chia hết 30.",
+          "latex": "30 = 4 \\cdot 7 + 2 \\Rightarrow 4 \\nmid 30"
+        },
+        {
+          "explain": "Vậy 4 không thể là cấp nhóm con. Lưu ý chiều ngược lại của Lagrange không đúng nói chung, nhưng với nhóm cấp 30 thì mọi ước đều thực sự xuất hiện.",
+          "latex": "\\#H = 4 \\Rightarrow \\text{mau thuan Lagrange}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.dinh-li-lagrange",
+        "math.dai-hoc.nhom.dinh-li-cauchy",
+        "math.dai-hoc.so-hoc-mat-ma.dinh-li-co-ban-so-hoc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "định lí Lagrange",
+        "liệt kê ước số",
+        "định lí Cauchy"
+      ],
+      "hints": [
+        "Cấp nhóm con luôn chia hết cấp nhóm.",
+        "Phân tích 30 ra thừa số nguyên tố rồi liệt kê ước."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "nhom",
+        "dinh-li-lagrange",
+        "nhom-con"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0023",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đồng cấu nhóm và định lí đồng cấu thứ nhất",
+      "type": "dien-so",
+      "statement_vi": "Cho đồng cấu nhóm f: Z_20 -> Z_8 xác định bởi f(1) = 6 (các nhóm cộng modulo). Tính số phần tử của hạt nhân Ker f.",
+      "statement_en": "Let f: Z_20 -> Z_8 be the group homomorphism with f(1) = 6 (additive groups mod n). Compute the number of elements of Ker f.",
+      "answer": "|Ker f| = 5",
+      "answer_numeric": 5,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Trước hết kiểm tra f có thực sự xác định tốt hay không: ảnh của phần tử sinh phải bị triệt tiêu khi nhân với cấp 20 của nguồn.",
+          "latex": "20 \\cdot 6 = 120 \\equiv 0 \\pmod 8 \\ \\checkmark"
+        },
+        {
+          "explain": "Ảnh của f là nhóm con cyclic của Z_8 sinh bởi 6, nên số phần tử của ảnh bằng cấp của 6 trong Z_8.",
+          "latex": "|\\operatorname{Im} f| = \\operatorname{ord}_{\\mathbb{Z}_{8}}(6) = \\frac{8}{\\gcd(8,6)} = \\frac{8}{2} = 4"
+        },
+        {
+          "explain": "Áp dụng định lí đồng cấu thứ nhất: nhóm thương của nguồn theo hạt nhân đẳng cấu với ảnh, nên cấp nguồn bằng tích cấp hạt nhân và cấp ảnh.",
+          "latex": "\\mathbb{Z}_{20} / \\ker f \\cong \\operatorname{Im} f \\Rightarrow |\\ker f| \\cdot |\\operatorname{Im} f| = 20"
+        },
+        {
+          "explain": "Chia để lấy cấp hạt nhân.",
+          "latex": "|\\ker f| = \\frac{20}{4} = 5"
+        },
+        {
+          "explain": "Kiểm tra trực tiếp: k thuộc hạt nhân khi 6k chia hết cho 8, tức 3k chia hết cho 4, tức k là bội của 4 trong Z_20.",
+          "latex": "\\ker f = \\{0, 4, 8, 12, 16\\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.dinh-li-dong-cau-thu-nhat",
+        "math.dai-hoc.nhom.nhom-thuong",
+        "math.dai-hoc.nhom.cap-luy-thua-trong-nhom-cyclic",
+        "math.dai-hoc.nhom.dinh-li-lagrange"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "kiểm tra đồng cấu xác định tốt",
+        "định lí đồng cấu thứ nhất",
+        "cấp phần tử trong nhóm cyclic"
+      ],
+      "hints": [
+        "Ảnh sinh bởi f(1) nên cỡ ảnh chính là cấp của f(1).",
+        "Dùng |nguồn| = |hạt nhân| nhân |ảnh|."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "dong-cau-nhom",
+        "hat-nhan",
+        "nhom-thuong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0024",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Bổ đề Burnside",
+      "type": "dien-so",
+      "statement_vi": "Đếm số vòng cổ khác nhau gồm 6 hạt xếp thành vòng tròn, mỗi hạt tô một trong 3 màu, hai vòng cổ coi là như nhau nếu chúng nhận được từ nhau qua một phép quay của vòng tròn (không xét phép lật).",
+      "statement_en": "Count the distinct necklaces of 6 beads in a circle, each bead one of 3 colors, where two necklaces are identified if one is a rotation of the other (reflections not allowed).",
+      "answer": "130 vòng cổ",
+      "answer_numeric": 130,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Nhóm tác động là nhóm cyclic C_6 gồm 6 phép quay. Bổ đề Burnside cho số quỹ đạo bằng trung bình số điểm bất động của các phần tử nhóm.",
+          "latex": "N = \\frac{1}{|G|}\\sum_{g \\in G} |\\operatorname{Fix}(g)|, \\qquad |G| = 6"
+        },
+        {
+          "explain": "Một cách tô màu bất động dưới phép quay k bước khi và chỉ khi các hạt trong cùng một chu trình của hoán vị đó cùng màu. Phép quay k bước phân 6 hạt thành gcd(k,6) chu trình.",
+          "latex": "|\\operatorname{Fix}(r^{k})| = 3^{\\gcd(k,6)}"
+        },
+        {
+          "explain": "Liệt kê gcd(k,6) cho k chạy từ 0 đến 5: lần lượt là 6, 1, 2, 3, 2, 1.",
+          "latex": "\\gcd(0,6)=6,\\ \\gcd(1,6)=1,\\ \\gcd(2,6)=2,\\ \\gcd(3,6)=3,\\ \\gcd(4,6)=2,\\ \\gcd(5,6)=1"
+        },
+        {
+          "explain": "Thay vào tổng Burnside và tính từng lũy thừa của 3.",
+          "latex": "\\sum |\\operatorname{Fix}| = 3^{6} + 3 + 3^{2} + 3^{3} + 3^{2} + 3 = 729 + 3 + 9 + 27 + 9 + 3 = 780"
+        },
+        {
+          "explain": "Chia cho cấp nhóm để lấy số quỹ đạo, tức số vòng cổ phân biệt.",
+          "latex": "N = \\frac{780}{6} = 130"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.bo-de-burnside",
+        "math.dai-hoc.nhom.quy-dao-on-dinh",
+        "math.dai-hoc.nhom.so-hoan-vi-theo-kieu-chu-trinh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "skills": [
+        "bổ đề Burnside",
+        "đếm điểm bất động của phép quay",
+        "phân tích hoán vị thành chu trình"
+      ],
+      "hints": [
+        "Phép quay k bước trên n hạt tạo ra đúng gcd(k,n) chu trình.",
+        "Đừng quên phép quay đồng nhất góp 3^6 điểm bất động."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "burnside",
+        "tac-dong-nhom",
+        "dem-to-mau"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0025",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad",
+        "olympiad"
+      ],
+      "topic": "Tác động nhóm và định lí quỹ đạo - nhóm ổn định",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu cách tô màu 6 mặt của một khối lập phương bằng 3 màu, nếu hai cách tô thu được từ nhau bởi một phép quay của khối lập phương thì coi là như nhau?",
+      "statement_en": "How many ways are there to color the 6 faces of a cube with 3 colors, up to rotations of the cube?",
+      "answer": "57 cách",
+      "answer_numeric": 57,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Nhóm quay của khối lập phương tác động lên tập các mặt. Cấp của nhóm này tính bằng định lí quỹ đạo - nhóm ổn định: quỹ đạo của một mặt gồm 6 mặt, nhóm ổn định của một mặt gồm 4 phép quay quanh trục qua mặt đó.",
+          "latex": "|G| = |\\text{quy dao}| \\cdot |\\text{on dinh}| = 6 \\cdot 4 = 24"
+        },
+        {
+          "explain": "Phân loại 24 phép quay theo kiểu chu trình khi tác động lên 6 mặt: phép đồng nhất (1 phần tử, 6 chu trình); quay 90 độ và 270 độ quanh trục qua tâm hai mặt đối diện (6 phần tử, 3 chu trình); quay 180 độ quanh trục đó (3 phần tử, 4 chu trình).",
+          "latex": "1 \\cdot 3^{6} + 6 \\cdot 3^{3} + 3 \\cdot 3^{4}"
+        },
+        {
+          "explain": "Tiếp tục: quay 120 độ và 240 độ quanh trục qua hai đỉnh đối diện (8 phần tử, 2 chu trình); quay 180 độ quanh trục qua trung điểm hai cạnh đối diện (6 phần tử, 3 chu trình).",
+          "latex": "8 \\cdot 3^{2} + 6 \\cdot 3^{3}"
+        },
+        {
+          "explain": "Cộng tất cả số điểm bất động lại. Nhớ kiểm tra tổng số phần tử: 1 + 6 + 3 + 8 + 6 = 24 đúng bằng cấp nhóm.",
+          "latex": "729 + 162 + 243 + 72 + 162 = 1368"
+        },
+        {
+          "explain": "Áp dụng bổ đề Burnside: chia tổng cho cấp nhóm.",
+          "latex": "N = \\frac{1368}{24} = 57"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.quy-dao-on-dinh",
+        "math.dai-hoc.nhom.bo-de-burnside",
+        "math.dai-hoc.nhom.cap-nhom-doi-xung-va-thay-phien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "định lí quỹ đạo - nhóm ổn định",
+        "phân lớp phép quay khối lập phương",
+        "bổ đề Burnside"
+      ],
+      "hints": [
+        "Trước tiên hãy chứng minh nhóm quay khối lập phương có 24 phần tử.",
+        "Với mỗi loại phép quay, đếm số chu trình mà nó tạo trên tập 6 mặt."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "tac-dong-nhom",
+        "burnside",
+        "quy-dao-on-dinh"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0026",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Trường hữu hạn GF(8)",
+      "type": "tu-luan",
+      "statement_vi": "Xây dựng trường GF(8) như thương F_2[x]/(x^3 + x + 1) và gọi alpha là lớp của x. Hãy tính alpha^5 và alpha^6 theo cơ sở {1, alpha, alpha^2}, xác định cấp của alpha trong nhóm nhân, và tìm nghịch đảo của alpha.",
+      "statement_en": "Construct GF(8) as F_2[x]/(x^3 + x + 1) with alpha the class of x. Compute alpha^5 and alpha^6 in the basis {1, alpha, alpha^2}, find the order of alpha in the multiplicative group, and find the inverse of alpha.",
+      "answer": "alpha^5 = alpha^2 + alpha + 1; alpha^6 = alpha^2 + 1; cấp của alpha bằng 7; alpha^{-1} = alpha^2 + 1",
+      "solution_steps": [
+        {
+          "explain": "Đa thức x^3 + x + 1 bất khả quy trên F_2 vì bậc 3 và không có nghiệm trong F_2 (thay 0 và 1 đều cho 1). Do đó thương là một trường với 2^3 = 8 phần tử.",
+          "latex": "|GF(8)| = 2^{3} = 8, \\qquad \\alpha^{3} + \\alpha + 1 = 0"
+        },
+        {
+          "explain": "Trong đặc số 2 dấu cộng và dấu trừ trùng nhau, nên quan hệ định nghĩa cho phép hạ bậc mọi lũy thừa từ bậc 3 trở lên.",
+          "latex": "\\alpha^{3} = \\alpha + 1"
+        },
+        {
+          "explain": "Nhân hai vế với alpha để leo lên bậc 4, rồi thay lại quan hệ nếu cần.",
+          "latex": "\\alpha^{4} = \\alpha^{2} + \\alpha"
+        },
+        {
+          "explain": "Tiếp tục nhân với alpha: bậc 3 xuất hiện nên thay bằng alpha + 1.",
+          "latex": "\\alpha^{5} = \\alpha^{3} + \\alpha^{2} = (\\alpha + 1) + \\alpha^{2} = \\alpha^{2} + \\alpha + 1"
+        },
+        {
+          "explain": "Lặp lại một lần nữa, chú ý alpha + alpha = 0 trong đặc số 2.",
+          "latex": "\\alpha^{6} = \\alpha^{3} + \\alpha^{2} + \\alpha = (\\alpha+1) + \\alpha^{2} + \\alpha = \\alpha^{2} + 1"
+        },
+        {
+          "explain": "Nhân thêm một lần nữa cho thấy alpha^7 = 1. Nhóm nhân của GF(8) có cấp 7 là số nguyên tố, nên mọi phần tử khác 0 và khác 1 đều có cấp 7; alpha là phần tử nguyên thuỷ.",
+          "latex": "\\alpha^{7} = \\alpha^{3} + \\alpha = (\\alpha + 1) + \\alpha = 1 \\Rightarrow \\operatorname{ord}(\\alpha) = 7"
+        },
+        {
+          "explain": "Từ alpha^7 = 1 suy ra nghịch đảo của alpha là alpha^6, chính là kết quả đã tính ở trên.",
+          "latex": "\\alpha^{-1} = \\alpha^{6} = \\alpha^{2} + 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.vanh-truong.xay-dung-truong-galois",
+        "math.dai-hoc.vanh-truong.cap-cua-truong-huu-han",
+        "math.dai-hoc.vanh-truong.nhom-nhan-truong-huu-han-cyclic",
+        "math.dai-hoc.vanh-truong.vanh-da-thuc-idean-chinh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "skills": [
+        "xây dựng trường hữu hạn qua vành thương",
+        "tính toán trong đặc số 2",
+        "cấp phần tử trong nhóm nhân"
+      ],
+      "hints": [
+        "Trong F_2 thì cộng và trừ như nhau, và a + a = 0.",
+        "Nhóm nhân của GF(8) có cấp 7, một số nguyên tố."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "truong-huu-han",
+        "vanh-da-thuc",
+        "dac-so-2"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0027",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đếm đa thức bất khả quy trên trường hữu hạn",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu đa thức monic bất khả quy bậc 4 trên trường F_3?",
+      "statement_en": "How many monic irreducible polynomials of degree 4 are there over F_3?",
+      "answer": "18 đa thức",
+      "answer_numeric": 18,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Mọi phần tử của F_{3^4} có đa thức tối tiểu với bậc là ước của 4, nên tổng theo các ước d của 4 của (d nhân số đa thức bất khả quy bậc d) bằng số phần tử của F_{3^4}.",
+          "latex": "\\sum_{d \\mid 4} d \\cdot N_{d} = 3^{4} = 81"
+        },
+        {
+          "explain": "Đảo ngược bằng công thức nghịch đảo Möbius, chỉ giữ lại các ước d của 4 với hàm Möbius khác 0 (là d = 4 và d = 2, còn mu(1) áp cho d = 4).",
+          "latex": "N_{4} = \\frac{1}{4}\\sum_{d \\mid 4} \\mu\\!\\left(\\frac{4}{d}\\right) 3^{d}"
+        },
+        {
+          "explain": "Vì mu(1) = 1, mu(2) = -1 và mu(4) = 0, tổng chỉ còn hai số hạng ứng với d = 4 và d = 2.",
+          "latex": "N_{4} = \\frac{1}{4}\\left( 3^{4} - 3^{2} \\right)"
+        },
+        {
+          "explain": "Tính giá trị số. Kết quả phải là số nguyên, đây là kiểm tra tự nhiên cho phép tính.",
+          "latex": "N_{4} = \\frac{81 - 9}{4} = \\frac{72}{4} = 18"
+        },
+        {
+          "explain": "Kiểm chứng bằng ý nghĩa: 81 - 9 = 72 là số phần tử của F_81 không nằm trong trường con F_9, mỗi đa thức bất khả quy bậc 4 sinh đúng 4 phần tử như vậy (bốn liên hợp Frobenius).",
+          "latex": "\\{ \\beta, \\beta^{3}, \\beta^{9}, \\beta^{27} \\}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.vanh-truong.so-da-thuc-bat-kha-quy",
+        "math.dai-hoc.vanh-truong.truong-con-cua-truong-galois",
+        "math.dai-hoc.vanh-truong.tu-dong-cau-frobenius"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "công thức đếm đa thức bất khả quy",
+        "nghịch đảo Möbius",
+        "cấu trúc trường con của GF(q^n)"
+      ],
+      "hints": [
+        "Đếm số phần tử của F_81 nằm ngoài mọi trường con thực sự.",
+        "Trường con thực sự duy nhất chứa F_3 của F_81 là F_9."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "truong-huu-han",
+        "da-thuc-bat-kha-quy",
+        "mobius"
+      ],
+      "sources": [
+        "https://www.johndcook.com/blog/2019/03/14/irreducible-polynomials/"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0028",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Vành thặng dư và điều kiện là trường",
+      "type": "trac-nghiem",
+      "statement_vi": "Trong các vành thặng dư sau, vành nào là một TRƯỜNG?",
+      "statement_en": "Which of the following residue rings is a FIELD?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Z_12",
+          "why_wrong": "12 = 3·4 là hợp số, lớp 3 và lớp 4 đều khác không nhưng tích bằng 0, tức có ước của không, nên không thể là trường."
+        },
+        {
+          "key": "B",
+          "text": "Z_15",
+          "why_wrong": "15 = 3·5 là hợp số; lớp 3 không khả nghịch vì gcd(3,15) = 3 khác 1."
+        },
+        {
+          "key": "C",
+          "text": "Z_17",
+          "why_wrong": ""
+        },
+        {
+          "key": "D",
+          "text": "Z_21",
+          "why_wrong": "21 = 3·7 là hợp số; lớp 7 không khả nghịch vì gcd(7,21) = 7 khác 1. Học sinh dễ nhầm vì 21 lẻ, nhưng tính lẻ không liên quan tới tính nguyên tố."
+        }
+      ],
+      "answer": "C",
+      "solution_steps": [
+        {
+          "explain": "Lớp thặng dư k khả nghịch trong Z_n khi và chỉ khi gcd(k,n) = 1, hệ quả trực tiếp của định lí Bezout. Vậy Z_n là trường khi mọi lớp khác 0 đều nguyên tố cùng nhau với n.",
+          "latex": "\\bar{k} \\ \\text{kha nghich trong } \\mathbb{Z}_{n} \\iff \\gcd(k,n) = 1"
+        },
+        {
+          "explain": "Điều đó xảy ra đúng khi n không có ước thực sự nào trong khoảng từ 2 đến n-1, tức n nguyên tố.",
+          "latex": "\\mathbb{Z}_{n} \\ \\text{la truong} \\iff n \\ \\text{nguyen to}"
+        },
+        {
+          "explain": "Kiểm tra từng phương án: 12 = 2^2·3, 15 = 3·5, 21 = 3·7 đều là hợp số; còn 17 không chia hết cho 2, 3 và bình phương của 5 đã vượt 17 nên 17 nguyên tố.",
+          "latex": "17 \\ne 2a, \\ 3b; \\quad 5^{2} = 25 > 17 \\Rightarrow 17 \\ \\text{nguyen to}"
+        },
+        {
+          "explain": "Ở các vành hợp số, ta còn chỉ ra được ước của không, điều mà một trường (vốn là miền nguyên) không cho phép.",
+          "latex": "\\bar{3} \\cdot \\bar{4} = \\bar{0} \\ \\text{trong } \\mathbb{Z}_{12}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.vanh-truong.z-n-la-truong",
+        "math.dai-hoc.vanh-truong.mien-nguyen",
+        "math.dai-hoc.so-hoc-mat-ma.nghich-dao-modulo",
+        "math.dai-hoc.so-hoc-mat-ma.dinh-li-bezout"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 3,
+      "skills": [
+        "điều kiện Z_n là trường",
+        "khả nghịch modulo",
+        "nhận biết số nguyên tố"
+      ],
+      "hints": [
+        "Z_n là trường đúng khi n nguyên tố.",
+        "Với n hợp số hãy chỉ ra hai lớp khác 0 có tích bằng 0."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "vanh",
+        "truong",
+        "so-hoc-modulo"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0029",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad",
+        "olympiad"
+      ],
+      "topic": "Định lí Sylow",
+      "type": "tu-luan",
+      "statement_vi": "Chứng minh mọi nhóm G cấp 175 đều là nhóm Abel, và cho biết có bao nhiêu nhóm cấp 175 đôi một không đẳng cấu.",
+      "statement_en": "Prove that every group G of order 175 is abelian, and determine how many pairwise non-isomorphic groups of order 175 exist.",
+      "answer": "G luôn Abel; có đúng 2 nhóm cấp 175 không đẳng cấu với nhau (Z_175 và Z_5 x Z_5 x Z_7)",
+      "solution_steps": [
+        {
+          "explain": "Phân tích cấp nhóm ra thừa số nguyên tố để biết cần xét những nhóm con Sylow nào.",
+          "latex": "175 = 5^{2} \\cdot 7"
+        },
+        {
+          "explain": "Theo định lí Sylow thứ ba, số nhóm con Sylow 5 phải chia hết phần bù 7 và đồng dư 1 modulo 5. Ta liệt kê các ước của 7 rồi lọc theo điều kiện đồng dư.",
+          "latex": "n_{5} \\mid 7,\\ n_{5} \\equiv 1 \\pmod 5 \\Rightarrow n_{5} \\in \\{1,7\\} \\cap \\{1,6,11,\\ldots\\} = \\{1\\}"
+        },
+        {
+          "explain": "Tương tự với p = 7: số nhóm con Sylow 7 chia hết 25 và đồng dư 1 modulo 7. Trong ba ước 1, 5, 25 chỉ có 1 thoả (vì 5 chia 7 dư 5 và 25 chia 7 dư 4).",
+          "latex": "n_{7} \\mid 25,\\ n_{7} \\equiv 1 \\pmod 7 \\Rightarrow n_{7} = 1"
+        },
+        {
+          "explain": "Nhóm con Sylow duy nhất thì chuẩn tắc. Gọi P cấp 25 và Q cấp 7; giao của chúng tầm thường vì cấp giao phải chia hết cả 25 lẫn 7.",
+          "latex": "P \\trianglelefteq G,\\ Q \\trianglelefteq G,\\ P \\cap Q = \\{e\\}"
+        },
+        {
+          "explain": "Hai nhóm con chuẩn tắc giao tầm thường và có tích cấp bằng cấp G nên G là tích trực tiếp trong của chúng.",
+          "latex": "|PQ| = \\frac{|P||Q|}{|P \\cap Q|} = 175 \\Rightarrow G \\cong P \\times Q"
+        },
+        {
+          "explain": "Q cấp 7 là nhóm cyclic vì 7 nguyên tố. P cấp 25 = 5^2 là nhóm p-nhóm cấp bình phương một số nguyên tố nên luôn Abel. Tích trực tiếp hai nhóm Abel là Abel, vậy G Abel.",
+          "latex": "Q \\cong \\mathbb{Z}_{7}, \\quad P \\ \\text{Abel} \\Rightarrow G \\ \\text{Abel}"
+        },
+        {
+          "explain": "Cuối cùng, theo định lí cấu trúc nhóm Abel hữu hạn, P chỉ có hai khả năng, còn Q duy nhất, nên có đúng hai lớp đẳng cấu.",
+          "latex": "G \\cong \\mathbb{Z}_{25} \\times \\mathbb{Z}_{7} \\cong \\mathbb{Z}_{175} \\quad \\text{hoac} \\quad G \\cong \\mathbb{Z}_{5} \\times \\mathbb{Z}_{5} \\times \\mathbb{Z}_{7}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.nhom.dinh-li-sylow-so-nhom-con",
+        "math.dai-hoc.nhom.dinh-li-sylow-ton-tai",
+        "math.dai-hoc.nhom.tich-truc-tiep-nhom",
+        "math.dai-hoc.nhom.dinh-li-co-ban-nhom-abel-huu-han",
+        "math.dai-hoc.nhom.cong-thuc-lop"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 22,
+      "skills": [
+        "đếm nhóm con Sylow",
+        "nhận diện tích trực tiếp trong",
+        "định lí cấu trúc nhóm Abel hữu hạn"
+      ],
+      "hints": [
+        "Đếm n_5 và n_7 trước, cả hai đều bằng 1.",
+        "Nhóm cấp p^2 luôn Abel; hãy dùng công thức lớp để thấy tâm không tầm thường."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "sylow",
+        "nhom-abel",
+        "phan-loai-nhom"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0030",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hàm Euler phi và phần tử sinh",
+      "type": "dien-so",
+      "statement_vi": "Nhóm cyclic Z_360 có bao nhiêu phần tử sinh?",
+      "statement_en": "How many generators does the cyclic group Z_360 have?",
+      "answer": "96 phần tử sinh",
+      "answer_numeric": 96,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Phần tử k sinh ra toàn bộ Z_n khi và chỉ khi cấp của nó bằng n, tương đương gcd(n,k) = 1. Vậy số phần tử sinh chính là số lớp thặng dư khả nghịch, tức phi(n).",
+          "latex": "\\#\\{\\text{phan tu sinh}\\} = \\varphi(360)"
+        },
+        {
+          "explain": "Phân tích 360 ra thừa số nguyên tố để dùng được tính nhân của hàm Euler.",
+          "latex": "360 = 2^{3} \\cdot 3^{2} \\cdot 5"
+        },
+        {
+          "explain": "Áp dụng công thức tích trên các thừa số nguyên tố phân biệt.",
+          "latex": "\\varphi(360) = 360\\left(1 - \\frac{1}{2}\\right)\\left(1 - \\frac{1}{3}\\right)\\left(1 - \\frac{1}{5}\\right)"
+        },
+        {
+          "explain": "Nhân lần lượt để tránh sai số: 360 chia 2 bằng 180, nhân 2/3 bằng 120, nhân 4/5 bằng 96.",
+          "latex": "\\varphi(360) = 180 \\cdot \\frac{2}{3} \\cdot \\frac{4}{5} = 120 \\cdot \\frac{4}{5} = 96"
+        },
+        {
+          "explain": "Có thể kiểm tra bằng cách tính theo từng lũy thừa nguyên tố rồi nhân lại, do hàm Euler có tính nhân với các đối số nguyên tố cùng nhau.",
+          "latex": "\\varphi(8)\\varphi(9)\\varphi(5) = 4 \\cdot 6 \\cdot 4 = 96"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.so-hoc-mat-ma.ham-euler-phi",
+        "math.dai-hoc.nhom.so-phan-tu-sinh-nhom-cyclic",
+        "math.dai-hoc.so-hoc-mat-ma.dinh-li-co-ban-so-hoc"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "hàm Euler phi",
+        "tính nhân của hàm số học",
+        "phần tử sinh nhóm cyclic"
+      ],
+      "hints": [
+        "Số phần tử sinh của Z_n bằng phi(n).",
+        "Phân tích 360 = 2^3 · 3^2 · 5."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "nhom-cyclic",
+        "ham-euler",
+        "so-hoc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0031",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Xác suất có điều kiện và công thức Bayes",
+      "type": "dien-so",
+      "statement_vi": "Một bệnh hiếm có tỉ lệ mắc trong dân số là 0,5%. Một xét nghiệm có độ nhạy 99% (người bệnh cho kết quả dương tính với xác suất 0,99) và độ đặc hiệu 96% (người không bệnh cho kết quả âm tính với xác suất 0,96). Một người được chọn ngẫu nhiên có kết quả dương tính. Tính xác suất người đó thực sự mắc bệnh (làm tròn 4 chữ số thập phân).",
+      "statement_en": "A rare disease has prevalence 0.5%. A test has sensitivity 99% and specificity 96%. A randomly chosen person tests positive. Find the probability that the person actually has the disease (round to 4 decimals).",
+      "answer": "P(bệnh | dương tính) xấp xỉ 0,1106",
+      "answer_numeric": 0.1106,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Đặt tên biến cố rồi ghi các dữ kiện dưới dạng xác suất có điều kiện. Độ đặc hiệu 96% có nghĩa xác suất dương tính giả là 4%.",
+          "latex": "P(D) = 0{,}005, \\quad P(+\\mid D) = 0{,}99, \\quad P(+\\mid \\bar{D}) = 1 - 0{,}96 = 0{,}04"
+        },
+        {
+          "explain": "Tính xác suất dương tính bằng công thức xác suất đầy đủ, chia theo hệ đầy đủ gồm hai biến cố có bệnh và không bệnh.",
+          "latex": "P(+) = P(D)P(+\\mid D) + P(\\bar{D})P(+\\mid \\bar{D})"
+        },
+        {
+          "explain": "Thay số. Chú ý số người khoẻ mạnh chiếm 99,5% dân số nên dù tỉ lệ dương tính giả nhỏ, số dương tính giả tuyệt đối vẫn lớn.",
+          "latex": "P(+) = 0{,}005 \\cdot 0{,}99 + 0{,}995 \\cdot 0{,}04 = 0{,}00495 + 0{,}0398 = 0{,}04475"
+        },
+        {
+          "explain": "Áp dụng công thức Bayes: đảo chiều điều kiện bằng cách lấy nhánh 'thật sự bệnh và dương tính' chia cho tổng xác suất dương tính.",
+          "latex": "P(D \\mid +) = \\frac{P(D)P(+\\mid D)}{P(+)} = \\frac{0{,}00495}{0{,}04475}"
+        },
+        {
+          "explain": "Thực hiện phép chia. Kết quả chỉ khoảng 11%, minh hoạ nghịch lí xét nghiệm bệnh hiếm: xét nghiệm tốt nhưng giá trị dự báo dương thấp vì tỉ lệ nền quá nhỏ.",
+          "latex": "P(D \\mid +) \\approx 0{,}1106"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-bayes",
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-xac-suat-day-du",
+        "math.dai-hoc.xac-suat-co-ban.xac-suat-co-dieu-kien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "công thức Bayes",
+        "công thức xác suất đầy đủ",
+        "hiểu độ nhạy và độ đặc hiệu"
+      ],
+      "hints": [
+        "Độ đặc hiệu 96% cho xác suất dương tính giả 4%.",
+        "Mẫu số là xác suất dương tính tính theo cả hai nhánh."
+      ],
+      "tags": [
+        "xac-suat",
+        "bayes",
+        "xac-suat-co-dieu-kien",
+        "xet-nghiem-y-khoa"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0032",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công thức xác suất đầy đủ và Bayes với ba hộp",
+      "type": "trac-nghiem",
+      "statement_vi": "Có ba hộp, mỗi hộp chứa 6 sản phẩm: hộp 1 có 5 chính phẩm, hộp 2 có 4 chính phẩm, hộp 3 có 3 chính phẩm (phần còn lại là phế phẩm). Chọn ngẫu nhiên một hộp rồi rút ngẫu nhiên một sản phẩm, được chính phẩm. Xác suất sản phẩm đó lấy từ hộp 1 bằng bao nhiêu?",
+      "statement_en": "Three boxes each contain 6 items: box 1 has 5 good items, box 2 has 4, box 3 has 3. A box is chosen at random and one item drawn at random turns out to be good. What is the probability it came from box 1?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5/12",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "5/6",
+          "why_wrong": "Đây là xác suất rút được chính phẩm KHI ĐÃ BIẾT chọn hộp 1, tức P(chính phẩm | hộp 1). Học sinh đảo ngược chiều điều kiện."
+        },
+        {
+          "key": "C",
+          "text": "1/3",
+          "why_wrong": "Đây là xác suất tiên nghiệm chọn hộp 1 khi chưa có thông tin gì. Thông tin 'được chính phẩm' phải làm tăng xác suất này vì hộp 1 giàu chính phẩm nhất."
+        },
+        {
+          "key": "D",
+          "text": "5/18",
+          "why_wrong": "Đây là xác suất đồng thời P(hộp 1 và chính phẩm) = (1/3)(5/6); người giải quên chia cho P(chính phẩm) để chuẩn hoá."
+        },
+        {
+          "key": "E",
+          "text": "2/3",
+          "why_wrong": "Đây chính là P(chính phẩm) tính theo công thức xác suất đầy đủ, tức mẫu số chứ không phải kết quả cuối."
+        }
+      ],
+      "answer": "A",
+      "answer_numeric": 0.41667,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Ba hộp lập thành một hệ đầy đủ với xác suất tiên nghiệm bằng nhau, nên trước hết ghi các xác suất có điều kiện rút được chính phẩm từ mỗi hộp.",
+          "latex": "P(H_{i}) = \\frac{1}{3}; \\quad P(C\\mid H_{1}) = \\frac{5}{6},\\ P(C\\mid H_{2}) = \\frac{4}{6},\\ P(C\\mid H_{3}) = \\frac{3}{6}"
+        },
+        {
+          "explain": "Tính xác suất toàn phần rút được chính phẩm bằng công thức xác suất đầy đủ.",
+          "latex": "P(C) = \\frac{1}{3}\\left( \\frac{5}{6} + \\frac{4}{6} + \\frac{3}{6} \\right) = \\frac{1}{3} \\cdot 2 = \\frac{2}{3}"
+        },
+        {
+          "explain": "Áp dụng Bayes: lấy xác suất của nhánh đi qua hộp 1 chia cho tổng xác suất vừa tính.",
+          "latex": "P(H_{1}\\mid C) = \\frac{P(H_{1})P(C\\mid H_{1})}{P(C)} = \\frac{\\tfrac{1}{3}\\cdot\\tfrac{5}{6}}{\\tfrac{2}{3}}"
+        },
+        {
+          "explain": "Rút gọn phân số. Kết quả lớn hơn 1/3, phù hợp trực giác: biết rút được chính phẩm thì hộp giàu chính phẩm nhất trở nên khả dĩ hơn.",
+          "latex": "P(H_{1}\\mid C) = \\frac{5}{18}\\cdot\\frac{3}{2} = \\frac{5}{12} \\approx 0{,}4167"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-xac-suat-day-du",
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-bayes",
+        "math.dai-hoc.xac-suat-co-ban.dinh-nghia-co-dien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "hệ biến cố đầy đủ",
+        "công thức Bayes",
+        "phân biệt chiều điều kiện"
+      ],
+      "hints": [
+        "Tính P(chính phẩm) trước bằng công thức xác suất đầy đủ.",
+        "Đáp số phải lớn hơn 1/3 vì hộp 1 nhiều chính phẩm nhất."
+      ],
+      "tags": [
+        "xac-suat",
+        "bayes",
+        "xac-suat-day-du",
+        "he-bien-co-day-du"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0033",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Kỳ vọng và phương sai của biến ngẫu nhiên rời rạc",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên X nhận các giá trị 0, 1, 2, 3 với xác suất tương ứng 0,1; 0,3; 0,4; 0,2. Tính phương sai của X.",
+      "statement_en": "A random variable X takes values 0, 1, 2, 3 with probabilities 0.1, 0.3, 0.4, 0.2. Compute the variance of X.",
+      "answer": "Var(X) = 0,81",
+      "answer_numeric": 0.81,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Trước hết kiểm tra bảng phân phối hợp lệ: tổng các xác suất phải bằng 1, nếu không thì mọi tính toán sau đều sai.",
+          "latex": "0{,}1 + 0{,}3 + 0{,}4 + 0{,}2 = 1 \\ \\checkmark"
+        },
+        {
+          "explain": "Tính kỳ vọng bằng tổng giá trị nhân xác suất.",
+          "latex": "E(X) = 0 \\cdot 0{,}1 + 1 \\cdot 0{,}3 + 2 \\cdot 0{,}4 + 3 \\cdot 0{,}2 = 1{,}7"
+        },
+        {
+          "explain": "Dùng công thức tính nhanh phương sai qua mômen gốc bậc hai, tránh phải tính từng độ lệch. Trước hết tính E(X^2).",
+          "latex": "E(X^{2}) = 0 + 1 \\cdot 0{,}3 + 4 \\cdot 0{,}4 + 9 \\cdot 0{,}2 = 0{,}3 + 1{,}6 + 1{,}8 = 3{,}7"
+        },
+        {
+          "explain": "Áp dụng công thức phương sai bằng mômen bậc hai trừ bình phương kỳ vọng.",
+          "latex": "\\operatorname{Var}(X) = E(X^{2}) - \\bigl(E(X)\\bigr)^{2} = 3{,}7 - 1{,}7^{2} = 3{,}7 - 2{,}89 = 0{,}81"
+        },
+        {
+          "explain": "Độ lệch chuẩn là căn của phương sai, ở đây ra số tròn nên dễ kiểm tra lại.",
+          "latex": "\\sigma = \\sqrt{0{,}81} = 0{,}9"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.bang-phan-phoi-xac-suat",
+        "math.dai-hoc.bien-ngau-nhien.ky-vong-bien-roi-rac",
+        "math.dai-hoc.bien-ngau-nhien.cong-thuc-tinh-phuong-sai",
+        "math.dai-hoc.bien-ngau-nhien.do-lech-chuan"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "tính kỳ vọng",
+        "tính phương sai qua mômen bậc hai",
+        "kiểm tra bảng phân phối"
+      ],
+      "hints": [
+        "Kiểm tra tổng xác suất bằng 1 trước.",
+        "Var(X) = E(X^2) - [E(X)]^2 nhanh hơn tính theo định nghĩa."
+      ],
+      "tags": [
+        "xac-suat",
+        "bien-ngau-nhien",
+        "ky-vong",
+        "phuong-sai"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0034",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hàm sinh mômen",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên X có hàm sinh mômen M_X(t) = exp(2(e^t - 1)) với mọi t thực. Tính E(X^2).",
+      "statement_en": "A random variable X has moment generating function M_X(t) = exp(2(e^t - 1)) for all real t. Compute E(X^2).",
+      "answer": "E(X^2) = 6",
+      "answer_numeric": 6,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Mômen gốc bậc k lấy được bằng cách đạo hàm hàm sinh mômen k lần rồi thay t = 0. Ta tính đạo hàm cấp một trước, dùng quy tắc dây chuyền.",
+          "latex": "M_{X}'(t) = 2e^{t}\\exp\\bigl(2(e^{t}-1)\\bigr)"
+        },
+        {
+          "explain": "Thay t = 0: số mũ triệt tiêu nên giá trị hàm mũ bằng 1, cho kỳ vọng.",
+          "latex": "E(X) = M_{X}'(0) = 2"
+        },
+        {
+          "explain": "Đạo hàm cấp hai bằng quy tắc tích áp cho hai nhân tử của M'.",
+          "latex": "M_{X}''(t) = 2e^{t}\\exp\\bigl(2(e^{t}-1)\\bigr) + \\bigl(2e^{t}\\bigr)^{2}\\exp\\bigl(2(e^{t}-1)\\bigr)"
+        },
+        {
+          "explain": "Thay t = 0 để lấy mômen gốc bậc hai.",
+          "latex": "E(X^{2}) = M_{X}''(0) = 2 + 4 = 6"
+        },
+        {
+          "explain": "Nhận diện phân phối để kiểm tra chéo: dạng hàm sinh mômen này đúng là của phân phối Poisson tham số lambda = 2, mà Poisson có kỳ vọng và phương sai đều bằng lambda.",
+          "latex": "X \\sim \\mathcal{P}(2): \\ \\operatorname{Var}(X) = 2 \\Rightarrow E(X^{2}) = 2 + 2^{2} = 6"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.bien-ngau-nhien.ham-sinh-momen",
+        "math.dai-hoc.bien-ngau-nhien.momen-goc",
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-poisson",
+        "math.dai-hoc.bien-ngau-nhien.cong-thuc-tinh-phuong-sai"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "lấy mômen từ hàm sinh mômen",
+        "nhận diện phân phối qua hàm sinh mômen",
+        "quy tắc dây chuyền"
+      ],
+      "hints": [
+        "Đạo hàm bậc k của M tại 0 cho mômen gốc bậc k.",
+        "Hàm sinh mômen dạng exp(lambda(e^t - 1)) là của phân phối Poisson."
+      ],
+      "tags": [
+        "xac-suat",
+        "ham-sinh-momen",
+        "poisson",
+        "momen"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0035",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Bất đẳng thức Chebyshev",
+      "type": "dien-so",
+      "statement_vi": "Biến ngẫu nhiên X có kỳ vọng 50 và độ lệch chuẩn 5, phân phối không biết. Dùng bất đẳng thức Chebyshev, hãy tìm chặn trên tốt nhất cho xác suất P(|X - 50| lớn hơn hoặc bằng 15). Nhập giá trị chặn trên (làm tròn 4 chữ số thập phân).",
+      "statement_en": "X has mean 50 and standard deviation 5, with unknown distribution. Using Chebyshev's inequality, find the best upper bound for P(|X - 50| >= 15). Enter the bound (4 decimals).",
+      "answer": "Chặn trên bằng 1/9 xấp xỉ 0,1111",
+      "answer_numeric": 0.1111,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Bất đẳng thức Chebyshev chặn xác suất lệch khỏi kỳ vọng bằng tỉ số phương sai trên bình phương ngưỡng lệch, áp dụng được cho mọi phân phối có phương sai hữu hạn.",
+          "latex": "P\\bigl(|X - \\mu| \\ge \\varepsilon\\bigr) \\le \\frac{\\sigma^{2}}{\\varepsilon^{2}}"
+        },
+        {
+          "explain": "Xác định các tham số từ đề bài: kỳ vọng 50, phương sai bằng bình phương độ lệch chuẩn, ngưỡng lệch bằng 15.",
+          "latex": "\\mu = 50, \\quad \\sigma^{2} = 25, \\quad \\varepsilon = 15"
+        },
+        {
+          "explain": "Thay vào công thức và rút gọn phân số.",
+          "latex": "P\\bigl(|X-50| \\ge 15\\bigr) \\le \\frac{25}{225} = \\frac{1}{9} \\approx 0{,}1111"
+        },
+        {
+          "explain": "Có thể phát biểu lại theo bội độ lệch chuẩn: 15 bằng 3 sigma nên chặn là 1 chia bình phương 3. Đây là dạng dễ nhớ nhất của Chebyshev.",
+          "latex": "P\\bigl(|X - \\mu| \\ge k\\sigma\\bigr) \\le \\frac{1}{k^{2}}, \\quad k = 3"
+        },
+        {
+          "explain": "Lưu ý chặn này rất rộng: nếu X có phân phối chuẩn thì xác suất thực chỉ khoảng 0,0027, nhưng Chebyshev phải đúng cho mọi phân phối nên buộc phải nới lỏng.",
+          "latex": "0{,}0027 \\ll \\frac{1}{9}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-li-gioi-han.bat-dang-thuc-chebyshev",
+        "math.dai-hoc.dinh-li-gioi-han.bat-dang-thuc-markov",
+        "math.dai-hoc.phan-phoi-lien-tuc.quy-tac-ba-sigma"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 5,
+      "skills": [
+        "bất đẳng thức Chebyshev",
+        "chuyển ngưỡng lệch sang bội độ lệch chuẩn",
+        "so sánh chặn với giá trị thực"
+      ],
+      "hints": [
+        "Phương sai bằng bình phương độ lệch chuẩn.",
+        "15 bằng bao nhiêu lần sigma?"
+      ],
+      "tags": [
+        "xac-suat",
+        "chebyshev",
+        "bat-dang-thuc",
+        "chan-xac-suat"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0036",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Luật số lớn và định lí giới hạn trung tâm",
+      "type": "dien-so",
+      "statement_vi": "Lấy mẫu ngẫu nhiên gồm 100 quan sát độc lập từ một tổng thể có kỳ vọng 20 và độ lệch chuẩn 5. Dùng định lí giới hạn trung tâm, tính xấp xỉ xác suất trung bình mẫu lớn hơn 21 (làm tròn 4 chữ số thập phân).",
+      "statement_en": "Take a random sample of 100 independent observations from a population with mean 20 and standard deviation 5. Using the CLT, approximate the probability that the sample mean exceeds 21 (4 decimals).",
+      "answer": "Xấp xỉ 0,0228",
+      "answer_numeric": 0.0228,
+      "tolerance": 0.002,
+      "solution_steps": [
+        {
+          "explain": "Luật số lớn cho biết trung bình mẫu hội tụ về kỳ vọng, còn định lí giới hạn trung tâm mô tả độ dao động quanh kỳ vọng đó: với n lớn, trung bình mẫu xấp xỉ phân phối chuẩn.",
+          "latex": "\\bar{X}_{n} \\approx \\mathcal{N}\\left( \\mu, \\frac{\\sigma^{2}}{n} \\right)"
+        },
+        {
+          "explain": "Tính sai số chuẩn của trung bình mẫu: độ lệch chuẩn tổng thể chia căn cỡ mẫu. Đây là chỗ hay nhầm nhất, nhiều người dùng thẳng sigma = 5.",
+          "latex": "\\sigma_{\\bar{X}} = \\frac{5}{\\sqrt{100}} = 0{,}5"
+        },
+        {
+          "explain": "Chuẩn hoá giá trị 21 về biến chuẩn tắc bằng cách trừ kỳ vọng rồi chia sai số chuẩn.",
+          "latex": "z = \\frac{21 - 20}{0{,}5} = 2"
+        },
+        {
+          "explain": "Tra bảng phân phối chuẩn tắc để lấy xác suất đuôi phải.",
+          "latex": "P(\\bar{X} > 21) \\approx 1 - \\Phi(2) = 1 - 0{,}9772 = 0{,}0228"
+        },
+        {
+          "explain": "Nhận xét: nếu chỉ dùng Chebyshev cho trung bình mẫu ta chỉ được chặn 0,25, kém xa giá trị xấp xỉ nhờ định lí giới hạn trung tâm.",
+          "latex": "\\frac{\\sigma_{\\bar{X}}^{2}}{1^{2}} = 0{,}25 \\gg 0{,}0228"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-li-gioi-han.dinh-li-gioi-han-trung-tam",
+        "math.dai-hoc.dinh-li-gioi-han.luat-so-lon-yeu",
+        "math.dai-hoc.phan-phoi-lien-tuc.chuan-hoa-bien-chuan"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "định lí giới hạn trung tâm",
+        "sai số chuẩn của trung bình mẫu",
+        "chuẩn hoá và tra bảng"
+      ],
+      "hints": [
+        "Độ lệch chuẩn của trung bình mẫu là sigma chia căn n.",
+        "Sau khi chuẩn hoá, tra Phi(2) xấp xỉ 0,9772."
+      ],
+      "tags": [
+        "xac-suat",
+        "dinh-li-gioi-han-trung-tam",
+        "luat-so-lon",
+        "trung-binh-mau"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0037",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Xấp xỉ chuẩn cho phân phối nhị thức",
+      "type": "dien-so",
+      "statement_vi": "Gieo một đồng xu cân đối 400 lần. Dùng xấp xỉ chuẩn CÓ hiệu chỉnh liên tục, tính xác suất số lần mặt ngửa xuất hiện ít nhất 220 lần (làm tròn 4 chữ số thập phân).",
+      "statement_en": "A fair coin is tossed 400 times. Using the normal approximation WITH continuity correction, find the probability of getting at least 220 heads (4 decimals).",
+      "answer": "Xấp xỉ 0,0256 (giá trị chính xác 0,02552)",
+      "answer_numeric": 0.0256,
+      "tolerance": 0.002,
+      "solution_steps": [
+        {
+          "explain": "Số lần ngửa tuân theo phân phối nhị thức. Kiểm tra điều kiện xấp xỉ chuẩn: cả np và n(1-p) đều lớn hơn nhiều so với 5.",
+          "latex": "X \\sim B(400; 0{,}5), \\quad np = n(1-p) = 200 > 5"
+        },
+        {
+          "explain": "Tính kỳ vọng và độ lệch chuẩn của phân phối nhị thức.",
+          "latex": "\\mu = np = 200, \\qquad \\sigma = \\sqrt{np(1-p)} = \\sqrt{100} = 10"
+        },
+        {
+          "explain": "Vì thay biến rời rạc bằng biến liên tục, ta phải hiệu chỉnh liên tục: biến cố X lớn hơn hoặc bằng 220 tương ứng với vùng liên tục bắt đầu từ 219,5.",
+          "latex": "P(X \\ge 220) \\approx P(Y \\ge 219{,}5), \\quad Y \\sim \\mathcal{N}(200; 100)"
+        },
+        {
+          "explain": "Chuẩn hoá về biến chuẩn tắc.",
+          "latex": "z = \\frac{219{,}5 - 200}{10} = 1{,}95"
+        },
+        {
+          "explain": "Tra bảng để lấy xác suất đuôi phải.",
+          "latex": "P \\approx 1 - \\Phi(1{,}95) = 1 - 0{,}9744 = 0{,}0256"
+        },
+        {
+          "explain": "So sánh với giá trị nhị thức chính xác 0,02552 cho thấy hiệu chỉnh liên tục cải thiện đáng kể; nếu bỏ hiệu chỉnh ta được z = 2 và xác suất 0,0228, sai số lớn hơn.",
+          "latex": "\\text{co hieu chinh}: 0{,}0256; \\quad \\text{khong hieu chinh}: 0{,}0228; \\quad \\text{chinh xac}: 0{,}0255"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-li-gioi-han.dinh-li-moivre-laplace",
+        "math.dai-hoc.dinh-li-gioi-han.hieu-chinh-lien-tuc",
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-nhi-thuc",
+        "math.dai-hoc.phan-phoi-lien-tuc.chuan-hoa-bien-chuan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 10,
+      "skills": [
+        "xấp xỉ Moivre - Laplace",
+        "hiệu chỉnh liên tục",
+        "chuẩn hoá biến nhị thức"
+      ],
+      "hints": [
+        "Biến cố X >= 220 ứng với ngưỡng liên tục 219,5.",
+        "Độ lệch chuẩn của B(400; 0,5) đúng bằng 10."
+      ],
+      "tags": [
+        "xac-suat",
+        "xap-xi-chuan",
+        "hieu-chinh-lien-tuc",
+        "nhi-thuc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0038",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Xấp xỉ Poisson cho phân phối nhị thức",
+      "type": "dien-so",
+      "statement_vi": "Một lô hàng có 1000 sản phẩm, mỗi sản phẩm bị lỗi độc lập với xác suất 0,002. Dùng xấp xỉ Poisson, tính xác suất lô hàng có đúng 3 sản phẩm lỗi (làm tròn 4 chữ số thập phân).",
+      "statement_en": "A batch of 1000 items each is defective independently with probability 0.002. Using the Poisson approximation, find the probability of exactly 3 defective items (4 decimals).",
+      "answer": "Xấp xỉ 0,1804",
+      "answer_numeric": 0.1804,
+      "tolerance": 0.002,
+      "solution_steps": [
+        {
+          "explain": "Số sản phẩm lỗi có phân phối nhị thức với n rất lớn và p rất nhỏ, đây đúng là chế độ áp dụng xấp xỉ Poisson (biến cố hiếm). Điều kiện thường dùng là n lớn hơn 50 và np nhỏ hơn 10.",
+          "latex": "X \\sim B(1000; 0{,}002), \\quad n \\ \\text{lon},\\ p \\ \\text{nho}"
+        },
+        {
+          "explain": "Tham số Poisson lấy bằng kỳ vọng của phân phối nhị thức để hai phân phối khớp mômen bậc nhất.",
+          "latex": "\\lambda = np = 1000 \\cdot 0{,}002 = 2"
+        },
+        {
+          "explain": "Áp dụng công thức xác suất của phân phối Poisson với k = 3.",
+          "latex": "P(X = 3) \\approx \\frac{e^{-2} \\cdot 2^{3}}{3!} = \\frac{8 e^{-2}}{6}"
+        },
+        {
+          "explain": "Tính giá trị số với e^{-2} xấp xỉ 0,135335.",
+          "latex": "P(X = 3) \\approx \\frac{4}{3} \\cdot 0{,}135335 \\approx 0{,}1804"
+        },
+        {
+          "explain": "Kiểm tra chất lượng xấp xỉ: giá trị nhị thức chính xác bằng khoảng 0,18063, sai lệch chưa tới 0,0003.",
+          "latex": "\\binom{1000}{3}(0{,}002)^{3}(0{,}998)^{997} \\approx 0{,}1806"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.dinh-li-gioi-han.xap-xi-nhi-thuc-bang-poisson",
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-poisson",
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-nhi-thuc"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "xấp xỉ Poisson",
+        "chọn tham số lambda",
+        "đánh giá sai số xấp xỉ"
+      ],
+      "hints": [
+        "Lấy lambda bằng np.",
+        "e^{-2} xấp xỉ 0,1353."
+      ],
+      "tags": [
+        "xac-suat",
+        "poisson",
+        "xap-xi",
+        "bien-co-hiem"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0039",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hàng đợi M/M/1",
+      "type": "dien-so",
+      "statement_vi": "Một quầy dịch vụ có khách đến theo quá trình Poisson với cường độ 8 khách mỗi giờ, thời gian phục vụ theo phân phối mũ với tốc độ 10 khách mỗi giờ, một máy phục vụ duy nhất. Tính thời gian chờ trung bình trong hàng (chưa kể thời gian được phục vụ), tính bằng phút.",
+      "statement_en": "An M/M/1 service desk has arrival rate 8 per hour and service rate 10 per hour with a single server. Compute the mean waiting time in the queue (excluding service), in minutes.",
+      "answer": "Wq = 0,4 giờ = 24 phút",
+      "answer_numeric": 24,
+      "answer_unit": "phút",
+      "tolerance": 0.01,
+      "solution_steps": [
+        {
+          "explain": "Trước hết tính hệ số sử dụng, tỉ số giữa cường độ đến và tốc độ phục vụ. Hệ nhỏ hơn 1 nên hàng đợi ổn định, các công thức trạng thái dừng áp dụng được.",
+          "latex": "\\rho = \\frac{\\lambda}{\\mu} = \\frac{8}{10} = 0{,}8 < 1"
+        },
+        {
+          "explain": "Số khách trung bình trong hệ thống theo công thức M/M/1 ở trạng thái dừng.",
+          "latex": "L = \\frac{\\rho}{1-\\rho} = \\frac{0{,}8}{0{,}2} = 4"
+        },
+        {
+          "explain": "Số khách trung bình đang chờ trong hàng bằng L trừ đi phần đang được phục vụ, tức trừ đi chính rho.",
+          "latex": "L_{q} = L - \\rho = \\frac{\\rho^{2}}{1-\\rho} = \\frac{0{,}64}{0{,}2} = 3{,}2"
+        },
+        {
+          "explain": "Áp dụng định luật Little cho phần hàng đợi: số khách chờ trung bình bằng cường độ đến nhân thời gian chờ trung bình.",
+          "latex": "L_{q} = \\lambda W_{q} \\Rightarrow W_{q} = \\frac{3{,}2}{8} = 0{,}4 \\ \\text{gio}"
+        },
+        {
+          "explain": "Đổi sang phút bằng cách nhân 60.",
+          "latex": "W_{q} = 0{,}4 \\cdot 60 = 24 \\ \\text{phut}"
+        },
+        {
+          "explain": "Kiểm tra chéo bằng công thức trực tiếp cho thời gian trong hệ thống: W = 1/(mu - lambda) = 0,5 giờ = 30 phút, trừ thời gian phục vụ trung bình 6 phút được đúng 24 phút.",
+          "latex": "W = \\frac{1}{\\mu - \\lambda} = 0{,}5\\ \\text{gio}, \\quad W - \\frac{1}{\\mu} = 30 - 6 = 24\\ \\text{phut}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.qua-trinh-ngau-nhien.mm1-phan-phoi-dung",
+        "math.dai-hoc.qua-trinh-ngau-nhien.mm1-so-khach-trung-binh",
+        "math.dai-hoc.qua-trinh-ngau-nhien.mm1-thoi-gian-cho",
+        "math.dai-hoc.qua-trinh-ngau-nhien.dinh-luat-little"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "skills": [
+        "mô hình hàng đợi M/M/1",
+        "định luật Little",
+        "phân biệt thời gian trong hệ và thời gian chờ"
+      ],
+      "hints": [
+        "Tính hệ số sử dụng rho trước và kiểm tra rho nhỏ hơn 1.",
+        "Wq = W - 1/mu, đừng quên trừ thời gian phục vụ."
+      ],
+      "tags": [
+        "xac-suat",
+        "hang-doi",
+        "mm1",
+        "dinh-luat-little"
+      ],
+      "sources": [
+        "https://arxiv.org/pdf/1307.2968"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0040",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hiệp phương sai và hệ số tương quan",
+      "type": "dien-so",
+      "statement_vi": "Hai biến ngẫu nhiên X, Y cùng nhận giá trị trong {0,1} với bảng phân phối đồng thời: P(0,0) = 0,2; P(0,1) = 0,3; P(1,0) = 0,4; P(1,1) = 0,1. Tính hệ số tương quan giữa X và Y (làm tròn 4 chữ số thập phân).",
+      "statement_en": "X and Y both take values in {0,1} with joint pmf P(0,0) = 0.2, P(0,1) = 0.3, P(1,0) = 0.4, P(1,1) = 0.1. Compute the correlation coefficient of X and Y (4 decimals).",
+      "answer": "rho xấp xỉ -0,4082",
+      "answer_numeric": -0.4082,
+      "tolerance": 0.002,
+      "solution_steps": [
+        {
+          "explain": "Lấy phân phối biên duyên bằng cách cộng theo hàng và theo cột. Vì hai biến chỉ nhận 0 và 1 nên kỳ vọng chính là xác suất nhận giá trị 1.",
+          "latex": "P(X=1) = 0{,}4 + 0{,}1 = 0{,}5, \\qquad P(Y=1) = 0{,}3 + 0{,}1 = 0{,}4"
+        },
+        {
+          "explain": "Với biến Bernoulli, kỳ vọng bằng tham số và phương sai bằng p(1-p).",
+          "latex": "E(X) = 0{,}5,\\ \\operatorname{Var}(X) = 0{,}25; \\quad E(Y) = 0{,}4,\\ \\operatorname{Var}(Y) = 0{,}24"
+        },
+        {
+          "explain": "Kỳ vọng của tích chỉ nhận đóng góp từ ô mà cả X và Y đều bằng 1, vì mọi ô khác cho tích bằng 0.",
+          "latex": "E(XY) = 1 \\cdot 1 \\cdot P(1,1) = 0{,}1"
+        },
+        {
+          "explain": "Tính hiệp phương sai theo công thức kỳ vọng tích trừ tích kỳ vọng. Giá trị âm cho biết hai biến nghịch biến.",
+          "latex": "\\operatorname{Cov}(X,Y) = 0{,}1 - 0{,}5 \\cdot 0{,}4 = -0{,}1"
+        },
+        {
+          "explain": "Chuẩn hoá hiệp phương sai bởi tích hai độ lệch chuẩn để được hệ số tương quan không thứ nguyên.",
+          "latex": "\\rho = \\frac{-0{,}1}{\\sqrt{0{,}25}\\sqrt{0{,}24}} = \\frac{-0{,}1}{0{,}5 \\cdot 0{,}4899}"
+        },
+        {
+          "explain": "Thực hiện phép chia. Giá trị nằm trong đoạn từ -1 tới 1 đúng như tính chất của hệ số tương quan; vì khác 0 nên X và Y không độc lập.",
+          "latex": "\\rho \\approx -0{,}4082"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.vecto-ngau-nhien.phan-phoi-dong-thoi",
+        "math.dai-hoc.vecto-ngau-nhien.phan-phoi-bien-duyen",
+        "math.dai-hoc.vecto-ngau-nhien.hiep-phuong-sai",
+        "math.dai-hoc.vecto-ngau-nhien.he-so-tuong-quan",
+        "math.dai-hoc.vecto-ngau-nhien.doc-lap-bien-ngau-nhien"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "skills": [
+        "đọc phân phối biên duyên",
+        "tính hiệp phương sai",
+        "chuẩn hoá thành hệ số tương quan"
+      ],
+      "hints": [
+        "Với biến 0-1 thì E(X) = P(X = 1) và Var(X) = p(1-p).",
+        "E(XY) chỉ lấy đóng góp từ ô (1,1)."
+      ],
+      "tags": [
+        "xac-suat",
+        "hiep-phuong-sai",
+        "he-so-tuong-quan",
+        "vecto-ngau-nhien"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0041",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Tổng ngẫu nhiên, đẳng thức Wald và phương sai toàn phần",
+      "type": "tu-luan",
+      "statement_vi": "Số khách vào cửa hàng trong một giờ là N tuân theo phân phối Poisson tham số 5. Số tiền mỗi khách chi là các biến ngẫu nhiên độc lập cùng phân phối với kỳ vọng 3 (triệu đồng) và phương sai 4, độc lập với N. Gọi S là tổng số tiền thu được trong giờ đó. Tính E(S) và Var(S).",
+      "statement_en": "The number of customers N in an hour is Poisson with parameter 5. Each customer spends an i.i.d. amount with mean 3 and variance 4, independent of N. Let S be the total. Compute E(S) and Var(S).",
+      "answer": "E(S) = 15 (triệu đồng); Var(S) = 65",
+      "answer_numeric": 65,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "S là tổng với số hạng ngẫu nhiên nên không thể dùng thẳng tính cộng tính của kỳ vọng; ta điều kiện theo N trước rồi lấy kỳ vọng lặp.",
+          "latex": "S = \\sum_{i=1}^{N} X_{i}, \\qquad E(S) = E\\bigl[ E(S \\mid N) \\bigr]"
+        },
+        {
+          "explain": "Khi biết N = n, tổng gồm đúng n số hạng độc lập cùng phân phối nên kỳ vọng có điều kiện tỉ lệ với n.",
+          "latex": "E(S \\mid N = n) = n\\,E(X) = 3n"
+        },
+        {
+          "explain": "Lấy kỳ vọng theo N, thu được đẳng thức Wald.",
+          "latex": "E(S) = E(3N) = 3 E(N) = 3 \\cdot 5 = 15"
+        },
+        {
+          "explain": "Với phương sai phải dùng công thức phương sai toàn phần, gồm kỳ vọng của phương sai có điều kiện cộng phương sai của kỳ vọng có điều kiện.",
+          "latex": "\\operatorname{Var}(S) = E\\bigl[\\operatorname{Var}(S\\mid N)\\bigr] + \\operatorname{Var}\\bigl(E(S\\mid N)\\bigr)"
+        },
+        {
+          "explain": "Khi biết N = n, phương sai của tổng n biến độc lập bằng n lần phương sai một biến; còn kỳ vọng có điều kiện là 3N.",
+          "latex": "\\operatorname{Var}(S \\mid N) = N \\operatorname{Var}(X) = 4N, \\qquad E(S\\mid N) = 3N"
+        },
+        {
+          "explain": "Thay vào và dùng đặc điểm của Poisson là kỳ vọng bằng phương sai bằng 5.",
+          "latex": "\\operatorname{Var}(S) = 4 E(N) + 9 \\operatorname{Var}(N) = 4 \\cdot 5 + 9 \\cdot 5 = 65"
+        },
+        {
+          "explain": "Nhận xét: nếu N cố định bằng 5 thì phương sai chỉ là 20; phần dôi ra 45 chính là do bản thân số khách cũng dao động.",
+          "latex": "65 = \\underbrace{20}_{\\text{bien dong chi tieu}} + \\underbrace{45}_{\\text{bien dong so khach}}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.xac-suat-nang-cao.dang-thuc-wald",
+        "math.dai-hoc.bien-ngau-nhien.ky-vong-co-dieu-kien",
+        "math.dai-hoc.bien-ngau-nhien.phuong-sai-toan-phan",
+        "math.dai-hoc.vecto-ngau-nhien.phuong-sai-cua-tong",
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-poisson"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 14,
+      "skills": [
+        "kỳ vọng có điều kiện",
+        "đẳng thức Wald",
+        "công thức phương sai toàn phần"
+      ],
+      "hints": [
+        "Điều kiện theo N rồi dùng công thức kỳ vọng lặp.",
+        "Phân phối Poisson có kỳ vọng bằng phương sai."
+      ],
+      "tags": [
+        "xac-suat",
+        "wald",
+        "ky-vong-co-dieu-kien",
+        "phuong-sai-toan-phan"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0042",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Bài toán sưu tập phiếu",
+      "type": "dien-so",
+      "statement_vi": "Mỗi gói bánh chứa ngẫu nhiên đều một trong 6 loại phiếu khác nhau, độc lập giữa các gói. Tính số gói bánh trung bình phải mua để sưu tập đủ cả 6 loại phiếu.",
+      "statement_en": "Each package contains one of 6 coupon types, uniformly at random and independently. Find the expected number of packages needed to collect all 6 types.",
+      "answer": "14,7 gói",
+      "answer_numeric": 14.7,
+      "tolerance": 0.01,
+      "solution_steps": [
+        {
+          "explain": "Chia quá trình thành 6 chặng: chặng thứ i kết thúc khi thu được loại phiếu MỚI thứ i. Cách chia này biến bài toán khó thành tổng các biến hình học độc lập.",
+          "latex": "T = T_{1} + T_{2} + \\cdots + T_{6}"
+        },
+        {
+          "explain": "Ở chặng thứ i ta đã có i-1 loại, nên mỗi gói mới cho phiếu mới với xác suất bằng tỉ lệ loại còn thiếu. Vì vậy T_i có phân phối hình học.",
+          "latex": "p_{i} = \\frac{6 - (i-1)}{6}, \\qquad T_{i} \\sim \\mathrm{Geom}(p_{i})"
+        },
+        {
+          "explain": "Kỳ vọng của biến hình học đếm số phép thử tới thành công đầu tiên bằng nghịch đảo xác suất thành công.",
+          "latex": "E(T_{i}) = \\frac{1}{p_{i}} = \\frac{6}{7-i}"
+        },
+        {
+          "explain": "Cộng kỳ vọng theo tính cộng tính (không cần độc lập), thu được 6 nhân tổng điều hoà bậc 6.",
+          "latex": "E(T) = 6\\left( \\frac{1}{6} + \\frac{1}{5} + \\frac{1}{4} + \\frac{1}{3} + \\frac{1}{2} + 1 \\right) = 6 H_{6}"
+        },
+        {
+          "explain": "Quy đồng tổng điều hoà: mẫu chung 60 cho tử 10 + 12 + 15 + 20 + 30 + 60 = 147.",
+          "latex": "H_{6} = \\frac{147}{60} = 2{,}45"
+        },
+        {
+          "explain": "Nhân với 6 để ra kết quả.",
+          "latex": "E(T) = 6 \\cdot 2{,}45 = 14{,}7"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.toan-tin-hoc.bai-toan-suu-tap-phieu",
+        "math.dai-hoc.phan-phoi-roi-rac.phan-phoi-hinh-hoc",
+        "math.dai-hoc.vecto-ngau-nhien.ky-vong-cua-tong",
+        "math.dai-hoc.do-phuc-tap.tong-dieu-hoa"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "skills": [
+        "phân rã thành tổng biến hình học",
+        "tính cộng tính của kỳ vọng",
+        "tổng điều hoà"
+      ],
+      "hints": [
+        "Chia thành các chặng theo số loại phiếu đã có.",
+        "Kỳ vọng của biến hình học là nghịch đảo xác suất thành công."
+      ],
+      "tags": [
+        "xac-suat",
+        "suu-tap-phieu",
+        "phan-phoi-hinh-hoc",
+        "ky-vong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0043",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Bao hàm - loại trừ và số mất thứ tự",
+      "type": "dien-so",
+      "statement_vi": "Sáu người gửi sáu chiếc mũ khác nhau vào phòng gửi đồ. Khi ra về, nhân viên trả mũ hoàn toàn ngẫu nhiên. Hỏi có bao nhiêu cách trả sao cho KHÔNG AI nhận đúng mũ của mình?",
+      "statement_en": "Six people check six distinct hats. The hats are returned uniformly at random. In how many ways can they be returned so that nobody gets their own hat?",
+      "answer": "D_6 = 265 cách (xác suất tương ứng 265/720 xấp xỉ 0,3681)",
+      "answer_numeric": 265,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Gọi A_i là tập các hoán vị mà người thứ i nhận đúng mũ của mình. Ta cần đếm phần bù của hợp các A_i, nên dùng nguyên lí bao hàm - loại trừ.",
+          "latex": "D_{6} = 6! - \\left| \\bigcup_{i=1}^{6} A_{i} \\right|"
+        },
+        {
+          "explain": "Giao của k tập A_i cố định k người nhận đúng mũ, còn 6-k người kia hoán vị tuỳ ý, nên số phần tử của giao chỉ phụ thuộc k. Số cách chọn k chỉ số là tổ hợp chập k của 6.",
+          "latex": "\\left| A_{i_{1}} \\cap \\cdots \\cap A_{i_{k}} \\right| = (6-k)!"
+        },
+        {
+          "explain": "Ghép lại theo công thức bao hàm - loại trừ, các tổ hợp và giai thừa rút gọn cho một tổng đan dấu quen thuộc.",
+          "latex": "D_{6} = \\sum_{k=0}^{6} (-1)^{k} \\binom{6}{k}(6-k)! = 6! \\sum_{k=0}^{6} \\frac{(-1)^{k}}{k!}"
+        },
+        {
+          "explain": "Tính tổng đan dấu: các số hạng là 1, -1, 1/2, -1/6, 1/24, -1/120, 1/720.",
+          "latex": "\\sum_{k=0}^{6} \\frac{(-1)^{k}}{k!} = \\frac{265}{720}"
+        },
+        {
+          "explain": "Nhân với 720 để ra số mất thứ tự.",
+          "latex": "D_{6} = 720 \\cdot \\frac{265}{720} = 265"
+        },
+        {
+          "explain": "Kiểm tra bằng hệ thức truy hồi của số mất thứ tự với D_4 = 9 và D_5 = 44; đồng thời xác suất tiến rất nhanh về 1/e.",
+          "latex": "D_{6} = 5(D_{5} + D_{4}) = 5(44 + 9) = 265, \\qquad \\frac{265}{720} \\approx 0{,}3681 \\approx e^{-1}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-bao-ham-loai-tru",
+        "math.dai-hoc.hoan-vi-to-hop.so-mat-thu",
+        "math.dai-hoc.hoan-vi-to-hop.hoan-vi",
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-bu"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "nguyên lí bao hàm - loại trừ",
+        "số mất thứ tự",
+        "hệ thức truy hồi kiểm tra chéo"
+      ],
+      "hints": [
+        "Đếm phần bù của biến cố 'có ít nhất một người nhận đúng mũ'.",
+        "Xác suất kết quả rất gần 1/e."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "bao-ham-loai-tru",
+        "mat-thu-tu",
+        "dem-nang-cao"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0044",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đếm toàn ánh bằng bao hàm - loại trừ",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu cách phân phối 6 quả bóng phân biệt vào 3 hộp phân biệt sao cho KHÔNG hộp nào rỗng?",
+      "statement_en": "How many ways are there to distribute 6 distinct balls into 3 distinct boxes so that no box is empty?",
+      "answer": "540 cách",
+      "answer_numeric": 540,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Mỗi cách phân phối tương ứng một hàm từ tập 6 quả bóng vào tập 3 hộp; điều kiện không hộp nào rỗng chính là điều kiện hàm toàn ánh. Tổng số hàm bất kì là 3 mũ 6.",
+          "latex": "|\\{f: [6] \\to [3]\\}| = 3^{6} = 729"
+        },
+        {
+          "explain": "Gọi B_j là tập các hàm bỏ sót hộp j. Ta loại trừ hợp các B_j bằng nguyên lí bao hàm - loại trừ; giao k tập tương ứng chỉ dùng 3-k hộp.",
+          "latex": "|B_{j_{1}} \\cap \\cdots \\cap B_{j_{k}}| = (3-k)^{6}"
+        },
+        {
+          "explain": "Viết công thức tổng đan dấu với hệ số tổ hợp chọn các hộp bị bỏ sót.",
+          "latex": "S = \\sum_{k=0}^{3} (-1)^{k}\\binom{3}{k}(3-k)^{6}"
+        },
+        {
+          "explain": "Tính từng số hạng: 3^6 = 729, 3·2^6 = 192, 3·1^6 = 3, số hạng cuối bằng 0.",
+          "latex": "S = 729 - 3 \\cdot 64 + 3 \\cdot 1 - 0 = 729 - 192 + 3"
+        },
+        {
+          "explain": "Cộng lại để có kết quả.",
+          "latex": "S = 540"
+        },
+        {
+          "explain": "Kiểm tra chéo qua số Stirling loại hai: số cách chia 6 vật vào 3 nhóm không rỗng KHÔNG phân biệt nhãn là S(6,3) = 90, nhân 3! để gắn nhãn hộp.",
+          "latex": "3! \\cdot S(6,3) = 6 \\cdot 90 = 540"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-bao-ham-loai-tru",
+        "math.dai-hoc.hoan-vi-to-hop.so-stirling-loai-hai",
+        "math.dai-hoc.hoan-vi-to-hop.chinh-hop-lap",
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-song-anh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 11,
+      "skills": [
+        "đếm toàn ánh",
+        "bao hàm - loại trừ",
+        "số Stirling loại hai"
+      ],
+      "hints": [
+        "Mỗi cách phân phối là một hàm từ bóng vào hộp.",
+        "Loại trừ theo số hộp bị bỏ trống."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "bao-ham-loai-tru",
+        "toan-anh",
+        "stirling"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0045",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hệ thức truy hồi tuyến tính hệ số hằng",
+      "type": "tu-luan",
+      "statement_vi": "Giải hệ thức truy hồi a_n = 5a_{n-1} - 6a_{n-2} với a_0 = 1, a_1 = 4. Tìm công thức tổng quát và tính a_5.",
+      "statement_en": "Solve the recurrence a_n = 5a_{n-1} - 6a_{n-2} with a_0 = 1, a_1 = 4. Find a closed form and compute a_5.",
+      "answer": "a_n = 2·3^n - 2^n; a_5 = 454",
+      "answer_numeric": 454,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Đây là hệ thức truy hồi tuyến tính thuần nhất bậc hai hệ số hằng, nên ta tìm nghiệm dạng lũy thừa a_n = r^n và thay vào để có phương trình đặc trưng.",
+          "latex": "r^{2} = 5r - 6 \\iff r^{2} - 5r + 6 = 0"
+        },
+        {
+          "explain": "Giải phương trình bậc hai, hai nghiệm phân biệt nên nghiệm tổng quát là tổ hợp tuyến tính của hai lũy thừa.",
+          "latex": "r_{1} = 2, \\quad r_{2} = 3 \\Rightarrow a_{n} = A \\cdot 2^{n} + B \\cdot 3^{n}"
+        },
+        {
+          "explain": "Thay hai điều kiện ban đầu vào để lập hệ hai phương trình hai ẩn A và B.",
+          "latex": "\\begin{cases} A + B = 1 \\\\ 2A + 3B = 4 \\end{cases}"
+        },
+        {
+          "explain": "Nhân phương trình đầu với 2 rồi trừ khỏi phương trình sau để khử A.",
+          "latex": "B = 4 - 2 = 2 \\Rightarrow A = 1 - 2 = -1"
+        },
+        {
+          "explain": "Viết công thức tổng quát rồi kiểm tra lại với n = 0 và n = 1 để chắc chắn không nhầm dấu.",
+          "latex": "a_{n} = 2 \\cdot 3^{n} - 2^{n}; \\quad a_{0} = 2 - 1 = 1,\\ a_{1} = 6 - 2 = 4 \\ \\checkmark"
+        },
+        {
+          "explain": "Thay n = 5 vào công thức.",
+          "latex": "a_{5} = 2 \\cdot 243 - 32 = 486 - 32 = 454"
+        },
+        {
+          "explain": "Kiểm tra chéo bằng cách lặp trực tiếp hệ thức truy hồi.",
+          "latex": "1,\\ 4,\\ 14,\\ 46,\\ 146,\\ 454"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-thuc-truy-hoi.he-thuc-truy-hoi-tuyen-tinh",
+        "math.dai-hoc.he-thuc-truy-hoi.phuong-trinh-dac-trung",
+        "math.dai-hoc.he-thuc-truy-hoi.nghiem-boi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "skills": [
+        "lập phương trình đặc trưng",
+        "xác định hệ số từ điều kiện ban đầu",
+        "kiểm tra bằng lặp trực tiếp"
+      ],
+      "hints": [
+        "Thay a_n = r^n để có phương trình đặc trưng.",
+        "Hai nghiệm phân biệt cho nghiệm tổng quát dạng A r1^n + B r2^n."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "truy-hoi",
+        "phuong-trinh-dac-trung"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0046",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hàm sinh giải hệ thức truy hồi không thuần nhất",
+      "type": "tu-luan",
+      "statement_vi": "Dùng hàm sinh thông thường để giải hệ thức truy hồi a_n = 3a_{n-1} + 2 với n lớn hơn hoặc bằng 1 và a_0 = 1. Tìm công thức tổng quát và tính a_4.",
+      "statement_en": "Use ordinary generating functions to solve a_n = 3a_{n-1} + 2 for n >= 1 with a_0 = 1. Find the closed form and compute a_4.",
+      "answer": "a_n = 2·3^n - 1; a_4 = 161",
+      "answer_numeric": 161,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Đặt hàm sinh thông thường của dãy, rồi nhân hệ thức truy hồi với x^n và cộng theo mọi n từ 1 trở lên. Mục đích là biến hệ thức truy hồi thành một phương trình đại số cho A(x).",
+          "latex": "A(x) = \\sum_{n \\ge 0} a_{n}x^{n}"
+        },
+        {
+          "explain": "Vế trái cho A(x) trừ số hạng đầu. Vế phải: tổng đầu là 3x nhân A(x) do dịch chỉ số, tổng sau là chuỗi hình học nhân 2.",
+          "latex": "A(x) - 1 = 3x A(x) + \\frac{2x}{1-x}"
+        },
+        {
+          "explain": "Gom A(x) về một vế rồi rút ra biểu thức tường minh, quy đồng tử số.",
+          "latex": "A(x)(1 - 3x) = 1 + \\frac{2x}{1-x} = \\frac{1+x}{1-x}"
+        },
+        {
+          "explain": "Chia hai vế cho (1 - 3x) để có hàm sinh dạng phân thức.",
+          "latex": "A(x) = \\frac{1+x}{(1-x)(1-3x)}"
+        },
+        {
+          "explain": "Phân tích thành phân thức đơn giản để nhận ra chuỗi lũy thừa quen thuộc. Đặt tử số bằng hằng số nhân các mẫu và đồng nhất hệ số.",
+          "latex": "\\frac{1+x}{(1-x)(1-3x)} = \\frac{-1}{1-x} + \\frac{2}{1-3x}"
+        },
+        {
+          "explain": "Khai triển mỗi phân thức thành chuỗi hình học và đọc hệ số của x^n.",
+          "latex": "\\frac{1}{1-x} = \\sum x^{n}, \\quad \\frac{1}{1-3x} = \\sum 3^{n}x^{n} \\Rightarrow a_{n} = 2 \\cdot 3^{n} - 1"
+        },
+        {
+          "explain": "Kiểm tra với n = 0 và n = 1 rồi tính giá trị cần tìm.",
+          "latex": "a_{0} = 1,\\ a_{1} = 5; \\qquad a_{4} = 2 \\cdot 81 - 1 = 161"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-thuc-truy-hoi.ham-sinh-thong-thuong",
+        "math.dai-hoc.he-thuc-truy-hoi.ham-sinh-co-ban",
+        "math.dai-hoc.he-thuc-truy-hoi.he-thuc-truy-hoi-khong-thuan-nhat",
+        "math.dai-hoc.do-phuc-tap.tong-cap-so-nhan"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "lập phương trình cho hàm sinh",
+        "phân tích phân thức đơn giản",
+        "đọc hệ số từ chuỗi hình học"
+      ],
+      "hints": [
+        "Nhân hai vế với x^n rồi cộng từ n = 1.",
+        "Hằng số 2 sinh ra chuỗi 2x/(1-x)."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "ham-sinh",
+        "truy-hoi",
+        "phan-thuc-don-gian"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0047",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công thức Euler cho đồ thị phẳng",
+      "type": "dien-so",
+      "statement_vi": "Một đồ thị đơn liên thông phẳng có 10 đỉnh và 24 cạnh. Khi vẽ nó trên mặt phẳng (không có cạnh cắt nhau), có bao nhiêu miền được tạo thành (kể cả miền vô hạn)?",
+      "statement_en": "A connected simple planar graph has 10 vertices and 24 edges. When drawn in the plane without crossings, how many faces are formed (including the unbounded face)?",
+      "answer": "16 miền",
+      "answer_numeric": 16,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Trước hết kiểm tra dữ kiện có nhất quán không: với đồ thị đơn phẳng liên thông có ít nhất 3 đỉnh, số cạnh bị chặn bởi 3V - 6. Ở đây chặn đúng bằng 24 nên đồ thị đạt tối đa, tức là một tam giác phân.",
+          "latex": "E \\le 3V - 6 = 3 \\cdot 10 - 6 = 24 \\ \\checkmark"
+        },
+        {
+          "explain": "Áp dụng công thức Euler cho đồ thị phẳng liên thông: số đỉnh trừ số cạnh cộng số miền bằng 2.",
+          "latex": "V - E + F = 2"
+        },
+        {
+          "explain": "Thay các số đã cho rồi rút F.",
+          "latex": "10 - 24 + F = 2 \\Rightarrow F = 16"
+        },
+        {
+          "explain": "Kiểm tra chéo bằng đếm cặp (miền, cạnh biên): vì đồ thị là tam giác phân nên mỗi miền có đúng 3 cạnh biên và mỗi cạnh nằm trên biên đúng 2 miền.",
+          "latex": "3F = 2E \\Rightarrow 3 \\cdot 16 = 48 = 2 \\cdot 24 \\ \\checkmark"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-do-thi.cong-thuc-euler-do-thi-phang",
+        "math.dai-hoc.ly-thuyet-do-thi.he-qua-euler-phang",
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-bat-tay"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 6,
+      "skills": [
+        "công thức Euler cho đồ thị phẳng",
+        "chặn số cạnh của đồ thị phẳng",
+        "đếm kép miền và cạnh"
+      ],
+      "hints": [
+        "V - E + F = 2 cho đồ thị phẳng liên thông.",
+        "Kiểm tra E <= 3V - 6 để chắc đồ thị có thể phẳng."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "do-thi",
+        "do-thi-phang",
+        "cong-thuc-euler"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0048",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí bắt tay và bậc của đỉnh",
+      "type": "trac-nghiem",
+      "statement_vi": "Một đồ thị đơn G có 12 đỉnh, mỗi đỉnh đều có bậc 5. Số cạnh của G bằng bao nhiêu?",
+      "statement_en": "A simple graph G has 12 vertices, each of degree 5. How many edges does G have?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "60",
+          "why_wrong": "Đây là tổng bậc của tất cả các đỉnh; quên rằng mỗi cạnh được đếm hai lần (một lần ở mỗi đầu mút) nên phải chia đôi."
+        },
+        {
+          "key": "C",
+          "text": "66",
+          "why_wrong": "Đây là số cạnh của đồ thị đầy đủ K_12, ứng với trường hợp mỗi đỉnh có bậc 11 chứ không phải 5."
+        },
+        {
+          "key": "D",
+          "text": "17",
+          "why_wrong": "Đây là 12 + 5, cộng nhầm số đỉnh với bậc; hai đại lượng này không cùng đơn vị đếm."
+        },
+        {
+          "key": "E",
+          "text": "Không tồn tại đồ thị như vậy",
+          "why_wrong": "Tổng bậc 12·5 = 60 là số chẵn nên không vi phạm định lí bắt tay; thực tế đồ thị 5-chính quy trên 12 đỉnh tồn tại (chẳng hạn đồ thị icosahedron)."
+        }
+      ],
+      "answer": "A",
+      "answer_numeric": 30,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Định lí bắt tay nói tổng bậc mọi đỉnh bằng hai lần số cạnh, vì mỗi cạnh đóng góp 1 vào bậc của mỗi trong hai đầu mút.",
+          "latex": "\\sum_{v \\in V} \\deg(v) = 2|E|"
+        },
+        {
+          "explain": "Tính tổng bậc: đồ thị chính quy bậc 5 trên 12 đỉnh.",
+          "latex": "\\sum_{v} \\deg(v) = 12 \\cdot 5 = 60"
+        },
+        {
+          "explain": "Chia đôi để lấy số cạnh.",
+          "latex": "|E| = \\frac{60}{2} = 30"
+        },
+        {
+          "explain": "Kiểm tra tính khả thi: tổng bậc phải chẵn (đúng), và bậc 5 không vượt quá 11 là bậc tối đa của đồ thị đơn 12 đỉnh, đồng thời số đỉnh bậc lẻ là 12, một số chẵn.",
+          "latex": "5 \\le 11, \\quad 60 \\equiv 0 \\pmod 2"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-bat-tay",
+        "math.dai-hoc.ly-thuyet-do-thi.so-dinh-bac-le",
+        "math.dai-hoc.ly-thuyet-do-thi.so-canh-do-thi-day-du"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "định lí bắt tay",
+        "đồ thị chính quy",
+        "kiểm tra tính khả thi của dãy bậc"
+      ],
+      "hints": [
+        "Mỗi cạnh được đếm hai lần khi cộng bậc.",
+        "Tổng bậc luôn là số chẵn."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "do-thi",
+        "bac-dinh",
+        "dinh-li-bat-tay"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0049",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Cayley về số cây có gán nhãn",
+      "type": "dien-so",
+      "statement_vi": "Có bao nhiêu cây có gán nhãn khác nhau trên tập 7 đỉnh được đánh số từ 1 đến 7?",
+      "statement_en": "How many distinct labeled trees are there on 7 labeled vertices?",
+      "answer": "16807 cây",
+      "answer_numeric": 16807,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Định lí Cayley cho số cây có gán nhãn trên n đỉnh. Chứng minh chuẩn dùng song ánh Prüfer giữa các cây và các dãy độ dài n-2 gồm các nhãn.",
+          "latex": "T_{n} = n^{\\,n-2}"
+        },
+        {
+          "explain": "Thay n = 7: số mũ là 5.",
+          "latex": "T_{7} = 7^{5}"
+        },
+        {
+          "explain": "Tính lũy thừa từng bước để tránh sai số: 7^2 = 49, 7^3 = 343, 7^4 = 2401, 7^5 = 16807.",
+          "latex": "7^{5} = 16807"
+        },
+        {
+          "explain": "Kiểm tra ý nghĩa: mỗi cây có 7 đỉnh nên có đúng 6 cạnh, và dãy Prüfer tương ứng có độ dài 5 với mỗi vị trí chọn tự do trong 7 nhãn, cho đúng 7^5 dãy.",
+          "latex": "|E| = n - 1 = 6, \\qquad \\#\\text{day Prufer} = 7^{5}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-cayley",
+        "math.dai-hoc.ly-thuyet-do-thi.so-canh-cay",
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-kirchhoff"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 4,
+      "skills": [
+        "định lí Cayley",
+        "song ánh Prüfer",
+        "tính lũy thừa cẩn thận"
+      ],
+      "hints": [
+        "Số mũ là n - 2 chứ không phải n.",
+        "Có thể kiểm tra qua độ dài dãy Prüfer."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "do-thi",
+        "cay",
+        "dinh-li-cayley"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0050",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Hệ mật RSA",
+      "type": "dien-so",
+      "statement_vi": "Trong hệ RSA chọn p = 11, q = 13 nên n = 143, và số mũ công khai e = 7. Biết bản mã c = 19, hãy giải mã để tìm bản rõ m (0 <= m < 143).",
+      "statement_en": "In RSA with p = 11, q = 13 (so n = 143) and public exponent e = 7, decrypt the ciphertext c = 19 to recover the plaintext m (0 <= m < 143).",
+      "answer": "m = 72",
+      "answer_numeric": 72,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Tính giá trị hàm Euler của modulus, đây là cấp của nhóm nhân các lớp khả nghịch, cần để tìm số mũ bí mật.",
+          "latex": "\\varphi(143) = (11-1)(13-1) = 10 \\cdot 12 = 120"
+        },
+        {
+          "explain": "Kiểm tra e hợp lệ: e phải nguyên tố cùng nhau với phi(n) thì mới có nghịch đảo.",
+          "latex": "\\gcd(7, 120) = 1 \\ \\checkmark"
+        },
+        {
+          "explain": "Tìm số mũ bí mật d là nghịch đảo của e modulo phi(n) bằng thuật toán Euclid mở rộng. Ở đây có thể nhẩm: bội của 7 gần bội của 120 là 7·103 = 721 = 6·120 + 1.",
+          "latex": "7d \\equiv 1 \\pmod{120} \\Rightarrow d = 103"
+        },
+        {
+          "explain": "Giải mã bằng luỹ thừa modulo. Dùng phương pháp bình phương và nhân, viết 103 = 64 + 32 + 4 + 2 + 1 ở hệ nhị phân.",
+          "latex": "m = c^{d} \\bmod n = 19^{103} \\bmod 143"
+        },
+        {
+          "explain": "Tính các bình phương liên tiếp modulo 143, mỗi lần bình phương rồi lấy phần dư ngay để số không phình to: 19^2 = 361 = 2·143 + 75; 75^2 = 5625 = 39·143 + 48; 48^2 = 2304 = 16·143 + 16; 16^2 = 256 = 1·143 + 113; 113^2 = 12769 = 89·143 + 42; 42^2 = 1764 = 12·143 + 48.",
+          "latex": "19^{2} \\equiv 75,\\ 19^{4} \\equiv 48,\\ 19^{8} \\equiv 16,\\ 19^{16} \\equiv 113,\\ 19^{32} \\equiv 42,\\ 19^{64} \\equiv 48 \\pmod{143}"
+        },
+        {
+          "explain": "Nhân các thừa số ứng với các bit bằng 1 của số mũ (64, 32, 4, 2, 1), rút gọn modulo 143 sau MỖI phép nhân để giữ số nhỏ: 48·42 = 2016 ≡ 14; 14·48 = 672 ≡ 100; 100·75 = 7500 ≡ 64; 64·19 = 1216 ≡ 72.",
+          "latex": "19^{103} \\equiv 48 \\cdot 42 \\cdot 48 \\cdot 75 \\cdot 19 \\equiv 72 \\pmod{143}"
+        },
+        {
+          "explain": "Kiểm tra ngược bằng cách mã hoá lại: nâng bản rõ lên luỹ thừa e phải trả về bản mã ban đầu.",
+          "latex": "72^{7} \\equiv 19 \\pmod{143} \\ \\checkmark"
+        },
+        {
+          "explain": "Kiểm tra chéo lần hai bằng định lí phần dư Trung Hoa, cách mà cài đặt RSA thực tế vẫn dùng cho nhanh: hạ số mũ theo Fermat nhỏ trên từng thừa số nguyên tố rồi ghép lại.",
+          "latex": "19^{103} \\equiv 8^{3} \\equiv 6 \\pmod{11}, \\quad 19^{103} \\equiv 6^{7} \\equiv 7 \\pmod{13}; \\quad 72 \\equiv 6 \\pmod{11},\\ 72 \\equiv 7 \\pmod{13}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.so-hoc-mat-ma.rsa-tao-khoa",
+        "math.dai-hoc.so-hoc-mat-ma.rsa-ma-hoa-giai-ma",
+        "math.dai-hoc.so-hoc-mat-ma.nghich-dao-modulo",
+        "math.dai-hoc.so-hoc-mat-ma.ham-euler-phi",
+        "math.dai-hoc.toan-tin-hoc.luy-thua-modulo-nhanh"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 14,
+      "skills": [
+        "tạo khoá RSA",
+        "nghịch đảo modulo bằng Euclid mở rộng",
+        "luỹ thừa modulo nhanh"
+      ],
+      "hints": [
+        "phi(n) = (p-1)(q-1) chứ không phải n-1.",
+        "Dùng bình phương và nhân, rút gọn modulo sau mỗi bước."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "rsa",
+        "so-hoc-modulo",
+        "mat-ma"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0051",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí phần dư Trung Hoa",
+      "type": "dien-so",
+      "statement_vi": "Tìm số nguyên dương nhỏ nhất x thoả đồng thời: x chia 3 dư 2, x chia 5 dư 3, x chia 7 dư 2.",
+      "statement_en": "Find the smallest positive integer x with x = 2 (mod 3), x = 3 (mod 5), x = 2 (mod 7).",
+      "answer": "x = 23 (nghiệm tổng quát x = 23 + 105k)",
+      "answer_numeric": 23,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Ba modulus 3, 5, 7 đôi một nguyên tố cùng nhau nên theo định lí phần dư Trung Hoa hệ có nghiệm duy nhất modulo tích của chúng.",
+          "latex": "M = 3 \\cdot 5 \\cdot 7 = 105"
+        },
+        {
+          "explain": "Ghép hai đồng dư có cùng số dư 2 theo modulus 3 và 7 trước, vì khi đó nghiệm chung dễ nhận ra ngay.",
+          "latex": "x \\equiv 2 \\pmod 3,\\ x \\equiv 2 \\pmod 7 \\Rightarrow x \\equiv 2 \\pmod{21}"
+        },
+        {
+          "explain": "Viết x theo dạng tham số từ kết quả trên rồi thay vào đồng dư còn lại.",
+          "latex": "x = 21t + 2 \\Rightarrow 21t + 2 \\equiv 3 \\pmod 5"
+        },
+        {
+          "explain": "Rút gọn hệ số modulo 5: vì 21 chia 5 dư 1 nên phương trình trở nên rất đơn giản.",
+          "latex": "t + 2 \\equiv 3 \\pmod 5 \\Rightarrow t \\equiv 1 \\pmod 5"
+        },
+        {
+          "explain": "Lấy t nhỏ nhất là 1, thay ngược lại để có x.",
+          "latex": "x = 21 \\cdot 1 + 2 = 23"
+        },
+        {
+          "explain": "Kiểm tra cả ba điều kiện và viết nghiệm tổng quát theo modulus tích.",
+          "latex": "23 = 3\\cdot 7 + 2 = 5 \\cdot 4 + 3 = 7 \\cdot 3 + 2; \\qquad x \\equiv 23 \\pmod{105}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.so-hoc-mat-ma.dinh-li-phan-du-trung-hoa",
+        "math.dai-hoc.so-hoc-mat-ma.tinh-chat-dong-du",
+        "math.dai-hoc.so-hoc-mat-ma.nghich-dao-modulo"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "định lí phần dư Trung Hoa",
+        "ghép đồng dư từng bước",
+        "thay thế tham số"
+      ],
+      "hints": [
+        "Hai đồng dư có cùng số dư 2 gộp được ngay thành một đồng dư modulo 21.",
+        "Nghiệm là duy nhất modulo 105."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "so-hoc-modulo",
+        "phan-du-trung-hoa",
+        "dong-du"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0052",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Fermat nhỏ và luỹ thừa modulo",
+      "type": "dien-so",
+      "statement_vi": "Tính phần dư của 3^302 khi chia cho 101 (biết 101 là số nguyên tố).",
+      "statement_en": "Compute the remainder of 3^302 modulo 101 (101 is prime).",
+      "answer": "Phần dư bằng 9",
+      "answer_numeric": 9,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Vì 101 nguyên tố và 3 không chia hết cho 101, định lí Fermat nhỏ cho phép hạ số mũ theo modulus 100.",
+          "latex": "3^{100} \\equiv 1 \\pmod{101}"
+        },
+        {
+          "explain": "Chia số mũ cho 100 để tách phần lặp lại và phần dư của số mũ.",
+          "latex": "302 = 3 \\cdot 100 + 2"
+        },
+        {
+          "explain": "Viết lại luỹ thừa theo phân tích đó rồi áp dụng đồng dư vừa có.",
+          "latex": "3^{302} = \\left(3^{100}\\right)^{3} \\cdot 3^{2} \\equiv 1^{3} \\cdot 3^{2} \\pmod{101}"
+        },
+        {
+          "explain": "Tính giá trị còn lại; kết quả nhỏ hơn 101 nên đã là phần dư cần tìm.",
+          "latex": "3^{302} \\equiv 9 \\pmod{101}"
+        },
+        {
+          "explain": "Lưu ý: cấp thật sự của 3 modulo 101 có thể nhỏ hơn 100, nhưng để giải bài này chỉ cần biết cấp là ước của 100 nên 3^300 vẫn đồng dư 1.",
+          "latex": "\\operatorname{ord}_{101}(3) \\mid 100 \\Rightarrow 3^{300} \\equiv 1"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.so-hoc-mat-ma.dinh-li-fermat-nho",
+        "math.dai-hoc.so-hoc-mat-ma.dinh-li-euler",
+        "math.dai-hoc.toan-tin-hoc.luy-thua-modulo-nhanh"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 5,
+      "skills": [
+        "định lí Fermat nhỏ",
+        "hạ bậc số mũ theo modulus p-1",
+        "chia có dư số mũ"
+      ],
+      "hints": [
+        "Với p nguyên tố, a^(p-1) đồng dư 1 nếu a không chia hết cho p.",
+        "Chia 302 cho 100 lấy dư."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "so-hoc-modulo",
+        "fermat-nho",
+        "luy-thua-modulo"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0053",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí thợ và độ phức tạp thuật toán",
+      "type": "trac-nghiem",
+      "statement_vi": "Thuật toán chia để trị có thời gian chạy thoả T(n) = 4T(n/2) + n^2 với T(1) = 1. Theo định lí thợ, T(n) thuộc lớp nào?",
+      "statement_en": "A divide-and-conquer algorithm satisfies T(n) = 4T(n/2) + n^2 with T(1) = 1. By the master theorem, what is the asymptotic class of T(n)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Theta(n^2 log n)",
+          "why_wrong": ""
+        },
+        {
+          "key": "B",
+          "text": "Theta(n^2)",
+          "why_wrong": "Kết luận này chỉ đúng ở trường hợp 3 khi chi phí gộp trội hơn hẳn n^{log_b a}; ở đây hai đại lượng bằng nhau nên phải nhân thêm log n."
+        },
+        {
+          "key": "C",
+          "text": "Theta(n^{\\log_2 4}) = Theta(n^4)",
+          "why_wrong": "Tính sai số mũ: log cơ số 2 của 4 bằng 2 chứ không phải 4. Nhầm log_b a thành a."
+        },
+        {
+          "key": "D",
+          "text": "Theta(n^3)",
+          "why_wrong": "Đây là kết quả của T(n) = 8T(n/2) + n^2, ứng với a = 8; người giải nhầm số bài toán con."
+        },
+        {
+          "key": "E",
+          "text": "Theta(n^2 log^2 n)",
+          "why_wrong": "Luỹ thừa hai của log chỉ xuất hiện khi chi phí gộp đã có sẵn một thừa số log, ví dụ T(n) = 4T(n/2) + n^2 log n."
+        }
+      ],
+      "answer": "A",
+      "solution_steps": [
+        {
+          "explain": "Xác định ba tham số của định lí thợ: số bài toán con a, tỉ lệ thu nhỏ b và chi phí chia - gộp f(n).",
+          "latex": "a = 4, \\quad b = 2, \\quad f(n) = n^{2}"
+        },
+        {
+          "explain": "Tính số mũ tới hạn, đây là chi phí của toàn bộ các lá trong cây đệ quy.",
+          "latex": "n^{\\log_{b} a} = n^{\\log_{2} 4} = n^{2}"
+        },
+        {
+          "explain": "So sánh f(n) với số mũ tới hạn: hai đại lượng cùng cấp, nên rơi vào trường hợp 2 của định lí thợ (chi phí phân bố đều trên mọi mức của cây đệ quy).",
+          "latex": "f(n) = \\Theta\\bigl(n^{\\log_{b} a}\\bigr)"
+        },
+        {
+          "explain": "Trường hợp 2 cho kết quả bằng số mũ tới hạn nhân thêm logarit, vì cây đệ quy có log n mức và mỗi mức tốn cùng một lượng công.",
+          "latex": "T(n) = \\Theta\\bigl(n^{\\log_{b} a} \\log n\\bigr) = \\Theta\\bigl(n^{2}\\log n\\bigr)"
+        },
+        {
+          "explain": "Kiểm tra bằng cây đệ quy: ở mức thứ k có 4^k bài toán con cỡ n/2^k, mỗi bài tốn (n/2^k)^2, tổng mỗi mức đúng bằng n^2, và có log_2 n mức.",
+          "latex": "4^{k}\\left(\\frac{n}{2^{k}}\\right)^{2} = n^{2} \\ \\forall k \\Rightarrow T(n) \\approx n^{2}\\log_{2} n"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.toan-tin-hoc.dinh-li-tho-tong-quat",
+        "math.dai-hoc.do-phuc-tap.dinh-li-tho",
+        "math.dai-hoc.do-phuc-tap.ky-hieu-omega-theta",
+        "math.dai-hoc.do-phuc-tap.ky-hieu-o-lon"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 7,
+      "skills": [
+        "áp dụng định lí thợ",
+        "so sánh f(n) với n^{log_b a}",
+        "phân tích cây đệ quy"
+      ],
+      "hints": [
+        "Tính n^{log_2 4} trước rồi so với n^2.",
+        "Khi hai đại lượng cùng cấp, kết quả có thêm thừa số log n."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "do-phuc-tap",
+        "dinh-li-tho",
+        "chia-de-tri"
+      ],
+      "sources": [
+        "https://www.csd.uwo.ca/~mmorenom/CS433-CS9624/Resources/master.pdf"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0054",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Bao hàm - loại trừ trong đếm số nguyên",
+      "type": "dien-so",
+      "statement_vi": "Trong các số nguyên từ 1 đến 1000, có bao nhiêu số không chia hết cho bất kì số nào trong 2, 3 và 5?",
+      "statement_en": "Among the integers from 1 to 1000, how many are divisible by none of 2, 3, and 5?",
+      "answer": "266 số",
+      "answer_numeric": 266,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Đếm phần bù thì dễ hơn đếm trực tiếp: ta đếm các số chia hết cho ít nhất một trong ba số rồi lấy 1000 trừ đi. Số bội của d không vượt quá 1000 bằng phần nguyên của 1000 chia d.",
+          "latex": "\\left\\lfloor \\frac{1000}{2} \\right\\rfloor = 500,\\ \\left\\lfloor \\frac{1000}{3} \\right\\rfloor = 333,\\ \\left\\lfloor \\frac{1000}{5} \\right\\rfloor = 200"
+        },
+        {
+          "explain": "Các giao đôi một ứng với bội chung nhỏ nhất của từng cặp; vì 2, 3, 5 đôi một nguyên tố cùng nhau nên bội chung nhỏ nhất chính là tích.",
+          "latex": "\\left\\lfloor \\frac{1000}{6} \\right\\rfloor = 166,\\ \\left\\lfloor \\frac{1000}{10} \\right\\rfloor = 100,\\ \\left\\lfloor \\frac{1000}{15} \\right\\rfloor = 66"
+        },
+        {
+          "explain": "Giao của cả ba tập ứng với bội của 30.",
+          "latex": "\\left\\lfloor \\frac{1000}{30} \\right\\rfloor = 33"
+        },
+        {
+          "explain": "Áp dụng nguyên lí bao hàm - loại trừ cho ba tập: cộng các tập đơn, trừ các giao đôi, cộng lại giao ba.",
+          "latex": "|A \\cup B \\cup C| = (500 + 333 + 200) - (166 + 100 + 66) + 33 = 1033 - 332 + 33 = 734"
+        },
+        {
+          "explain": "Lấy phần bù trong tập 1000 số.",
+          "latex": "1000 - 734 = 266"
+        },
+        {
+          "explain": "Kiểm tra chéo bằng ước lượng mật độ: tỉ lệ các số không chia hết cho 2, 3, 5 xấp xỉ tích ba nhân tử, cho khoảng 266,7 rất sát kết quả.",
+          "latex": "1000 \\cdot \\frac{1}{2}\\cdot\\frac{2}{3}\\cdot\\frac{4}{5} = \\frac{800}{3} \\approx 266{,}7"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-bao-ham-loai-tru",
+        "math.dai-hoc.to-hop-co-ban.nguyen-li-bu",
+        "math.dai-hoc.so-hoc-mat-ma.uoc-chung-boi-chung",
+        "math.dai-hoc.so-hoc-mat-ma.ham-euler-phi"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "nguyên lí bao hàm - loại trừ",
+        "đếm bội bằng phần nguyên",
+        "kiểm tra bằng mật độ"
+      ],
+      "hints": [
+        "Đếm phần bù rồi lấy 1000 trừ đi.",
+        "Giao của hai điều kiện chia hết ứng với bội chung nhỏ nhất."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "bao-ham-loai-tru",
+        "dem",
+        "so-hoc"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0055",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Đổi cơ sở và ma trận đồng dạng",
+      "type": "tu-luan",
+      "statement_vi": "Toán tử tuyến tính T trên R^2 có ma trận trong cơ sở chính tắc là A = [[1,2],[3,4]]. Cho cơ sở mới C = {c1 = (1,1), c2 = (1,2)}. Hãy lập ma trận chuyển cơ sở, tìm ma trận [T]_C của T trong cơ sở C, rồi kiểm tra kết quả bằng hai bất biến đồng dạng.",
+      "statement_en": "A linear operator T on R^2 has matrix A = [[1,2],[3,4]] in the standard basis. Let C = {c1 = (1,1), c2 = (1,2)} be a new basis. Build the change-of-basis matrix, find the matrix [T]_C of T in the basis C, then check the answer with two similarity invariants.",
+      "answer": "P = [[1,1],[1,2]], [T]_C = P^{-1} A P = [[-1,-1],[4,6]]; kiểm tra: vết và định thức của [T]_C bằng đúng vết 5 và định thức -2 của A",
+      "solution_steps": [
+        {
+          "explain": "Ma trận chuyển cơ sở P từ cơ sở chính tắc E sang C có các CỘT là tọa độ của c1, c2 viết trong cơ sở chính tắc. Phải giữ đúng quy ước cột này thì công thức đổi tọa độ [v]_E = P [v]_C mới đúng chiều.",
+          "latex": "P = \\begin{pmatrix} 1 & 1 \\\\ 1 & 2 \\end{pmatrix}, \\qquad [v]_{E} = P\\,[v]_{C}"
+        },
+        {
+          "explain": "P khả nghịch vì det P = 1·2 - 1·1 = 1 khác 0, điều này cũng khẳng định lại C thật sự là một cơ sở. Với ma trận cấp hai, nghịch đảo lấy bằng cách đổi chỗ hai phần tử đường chéo, đổi dấu hai phần tử còn lại rồi chia cho định thức.",
+          "latex": "P^{-1} = \\frac{1}{1}\\begin{pmatrix} 2 & -1 \\\\ -1 & 1 \\end{pmatrix} = \\begin{pmatrix} 2 & -1 \\\\ -1 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Ý nghĩa của công thức đổi ma trận biểu diễn: muốn tác động T lên một vectơ đang cho bằng tọa độ theo C thì trước hết đưa về cơ sở chính tắc bằng P, tác động A, rồi chuyển ngược lại bằng P^{-1}.",
+          "latex": "[T]_{C} = P^{-1} A P"
+        },
+        {
+          "explain": "Nhân A với P trước cho gọn (cột thứ j của AP chính là ảnh của c_j viết trong cơ sở chính tắc).",
+          "latex": "AP = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\begin{pmatrix} 1 & 1 \\\\ 1 & 2 \\end{pmatrix} = \\begin{pmatrix} 3 & 5 \\\\ 7 & 11 \\end{pmatrix}"
+        },
+        {
+          "explain": "Nhân tiếp bên trái với P^{-1} để đổi các cột đó sang tọa độ theo C.",
+          "latex": "[T]_{C} = \\begin{pmatrix} 2 & -1 \\\\ -1 & 1 \\end{pmatrix}\\begin{pmatrix} 3 & 5 \\\\ 7 & 11 \\end{pmatrix} = \\begin{pmatrix} -1 & -1 \\\\ 4 & 6 \\end{pmatrix}"
+        },
+        {
+          "explain": "Kiểm tra nhanh: hai ma trận đồng dạng luôn có cùng vết và cùng định thức, đây là cách phát hiện sai sót số học rẻ nhất.",
+          "latex": "\\operatorname{tr}A = 1 + 4 = 5 = -1 + 6, \\qquad \\det A = -2 = (-1)(6) - (-1)(4)"
+        },
+        {
+          "explain": "Đọc lại ý nghĩa từng cột để chắc chắn không lẫn hàng với cột: cột thứ nhất nói T(c1) = -c1 + 4c2. Thử trực tiếp thấy khớp.",
+          "latex": "T(c_{1}) = A\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix} = -c_{1} + 4c_{2}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-vecto.ma-tran-chuyen-co-so",
+        "math.dai-hoc.khong-gian-vecto.cong-thuc-doi-toa-do",
+        "math.dai-hoc.anh-xa-tuyen-tinh.doi-ma-tran-bieu-dien",
+        "math.dai-hoc.tri-rieng.ma-tran-dong-dang"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 9,
+      "skills": [
+        "lập ma trận chuyển cơ sở đúng quy ước cột",
+        "áp dụng công thức P^{-1} A P",
+        "kiểm tra bằng bất biến đồng dạng"
+      ],
+      "hints": [
+        "Các cột của P là những vectơ cơ sở MỚI viết trong cơ sở CŨ.",
+        "Vết và định thức không đổi khi đổi cơ sở - dùng để tự kiểm tra."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "doi-co-so",
+        "ma-tran-dong-dang",
+        "anh-xa-tuyen-tinh"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0056",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Công thức số chiều Grassmann cho giao hai không gian con",
+      "type": "dien-so",
+      "statement_vi": "Trong R^4 cho hai không gian con U = span{(1,1,0,0), (0,1,1,0)} và W = span{(0,0,1,1), (1,0,0,1)}. Tính dim(U giao W) và chỉ ra một cơ sở của U giao W.",
+      "statement_en": "In R^4 let U = span{(1,1,0,0), (0,1,1,0)} and W = span{(0,0,1,1), (1,0,0,1)}. Compute dim(U ∩ W) and exhibit a basis of U ∩ W.",
+      "answer": "dim(U giao W) = 1, một cơ sở là {(1,0,-1,0)}; ngoài ra dim(U + W) = 3",
+      "answer_numeric": 1,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Trước hết xác định số chiều của từng không gian: trong mỗi cặp sinh, hai vectơ không tỉ lệ với nhau nên độc lập tuyến tính, do đó mỗi hệ sinh đã là một cơ sở.",
+          "latex": "\\dim U = 2, \\qquad \\dim W = 2"
+        },
+        {
+          "explain": "Tổng U + W là không gian sinh bởi hợp của hai hệ sinh. Xếp bốn vectơ thành các HÀNG của một ma trận rồi khử Gauss: hạng của ma trận chính là dim(U + W), vì phép biến đổi hàng không làm đổi không gian hàng.",
+          "latex": "M = \\begin{pmatrix} 1 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 \\\\ 0 & 0 & 1 & 1 \\\\ 1 & 0 & 0 & 1 \\end{pmatrix}"
+        },
+        {
+          "explain": "Lấy hàng 4 trừ hàng 1, rồi cộng hàng 2, rồi trừ hàng 3 thì được hàng không. Ba hàng đầu tạo bậc thang với ba trụ ở các cột 1, 2, 3 nên hạng bằng 3.",
+          "latex": "M \\to \\begin{pmatrix} 1 & 1 & 0 & 0 \\\\ 0 & 1 & 1 & 0 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 0 & 0 & 0 \\end{pmatrix} \\Rightarrow \\dim(U + W) = 3"
+        },
+        {
+          "explain": "Áp dụng công thức Grassmann. Đây là cách tránh phải giải hệ tìm giao: chỉ cần ba số chiều đã biết.",
+          "latex": "\\dim(U \\cap W) = \\dim U + \\dim W - \\dim(U + W) = 2 + 2 - 3 = 1"
+        },
+        {
+          "explain": "Muốn có vectơ giao cụ thể thì đọc lại chính quan hệ phụ thuộc vừa tìm được: hàng 4 bằng hàng 1 trừ hàng 2 cộng hàng 3, tức u1 - u2 + w1 - w2 = 0. Chuyển vế để một bên chỉ chứa vectơ của U, bên kia chỉ chứa vectơ của W.",
+          "latex": "u_{1} - u_{2} = w_{2} - w_{1} = (1,0,-1,0)"
+        },
+        {
+          "explain": "Vectơ này nằm trong cả U lẫn W nên thuộc giao; vì giao có số chiều 1 và vectơ này khác không nên nó sinh ra toàn bộ giao.",
+          "latex": "U \\cap W = \\operatorname{span}\\{(1,0,-1,0)\\}"
+        },
+        {
+          "explain": "Nhận xét kiểm tra: vì giao khác không nên tổng U + W KHÔNG phải tổng trực tiếp; nếu là tổng trực tiếp thì dim(U + W) phải bằng 4, tức bằng cả R^4.",
+          "latex": "\\dim(U \\oplus W) = 4 \\neq 3 = \\dim(U + W)"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.khong-gian-vecto.cong-thuc-grassmann",
+        "math.dai-hoc.khong-gian-vecto.khong-gian-sinh-boi-he-vecto",
+        "math.dai-hoc.khong-gian-vecto.co-so-va-so-chieu",
+        "math.dai-hoc.khong-gian-vecto.tong-truc-tiep",
+        "math.dai-hoc.ma-tran.hang-ma-tran-dinh-nghia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 10,
+      "skills": [
+        "tính hạng bằng khử Gauss",
+        "công thức số chiều Grassmann",
+        "đọc vectơ giao từ quan hệ phụ thuộc"
+      ],
+      "hints": [
+        "Hạng của ma trận gồm cả bốn vectơ chính là dim(U + W).",
+        "Quan hệ phụ thuộc giữa bốn vectơ cho ngay một vectơ nằm trong cả hai không gian."
+      ],
+      "tags": [
+        "dai-so-tuyen-tinh",
+        "khong-gian-con",
+        "cong-thuc-grassmann",
+        "co-so"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0057",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Iđêan, vành thương và iđêan tối đại trong Z[x]",
+      "type": "tu-luan",
+      "statement_vi": "Trong vành đa thức Z[x] xét iđêan I = (2, x) sinh bởi hai phần tử 2 và x. Hãy chứng minh I là iđêan tối đại nhưng KHÔNG phải iđêan chính, và so sánh với iđêan (x).",
+      "statement_en": "In the polynomial ring Z[x] consider the ideal I = (2, x) generated by 2 and x. Prove that I is maximal but NOT principal, and compare it with the ideal (x).",
+      "answer": "Z[x]/I đẳng cấu với F_2 nên I tối đại; I không chính vì nếu I = (f) thì f phải là ±1 hoặc ±2, cả hai trường hợp đều mâu thuẫn - do đó Z[x] không là vành iđêan chính. Còn (x) là iđêan nguyên tố nhưng không tối đại vì Z[x]/(x) đẳng cấu Z là miền nguyên mà không là trường.",
+      "solution_steps": [
+        {
+          "explain": "Bước đầu tiên là mô tả I một cách tường minh thay vì chỉ biết nó sinh bởi 2 và x. Mọi phần tử của I có dạng 2f + xg, mà 2f có mọi hệ số chẵn còn xg có hệ số tự do bằng 0, nên hệ số tự do của tổng luôn chẵn; ngược lại đa thức có hệ số tự do chẵn thì tách được thành hai phần như vậy.",
+          "latex": "I = \\{ h \\in \\mathbb{Z}[x] : h(0) \\equiv 0 \\ (\\mathrm{mod}\\ 2) \\}"
+        },
+        {
+          "explain": "Từ mô tả đó, cách nhanh nhất để nhận diện vành thương là dựng một đồng cấu vành có hạt nhân đúng bằng I: thay x = 0 rồi rút gọn theo modulo 2. Cả hai phép này đều là đồng cấu vành nên hợp thành cũng vậy, và nó rõ ràng toàn ánh (ảnh của 0 và 1 phủ hết F_2).",
+          "latex": "\\varphi : \\mathbb{Z}[x] \\to \\mathbb{F}_{2}, \\qquad \\varphi(h) = h(0) \\bmod 2"
+        },
+        {
+          "explain": "Hạt nhân của phi chính là tập các đa thức có hệ số tự do chẵn, tức bằng I. Theo định lí đồng cấu, vành thương đẳng cấu với ảnh.",
+          "latex": "\\ker \\varphi = I \\Rightarrow \\mathbb{Z}[x] / I \\cong \\mathbb{F}_{2}"
+        },
+        {
+          "explain": "Tiêu chuẩn nhận biết iđêan tối đại là vành thương phải là trường. F_2 có hai phần tử và 1 khả nghịch nên là trường, do đó I tối đại (và vì trường là miền nguyên nên I cũng là iđêan nguyên tố).",
+          "latex": "\\mathbb{Z}[x]/I \\ \\text{là trường} \\iff I \\ \\text{tối đại}"
+        },
+        {
+          "explain": "Sang phần thứ hai, giả sử phản chứng I = (f) là iđêan chính. Vì 2 thuộc I nên f phải là ước của 2 trong Z[x]; so sánh bậc trong đẳng thức 2 = f·k cho deg f = 0, tức f là hằng số nguyên chia hết 2.",
+          "latex": "2 \\in (f) \\Rightarrow f \\mid 2 \\Rightarrow f \\in \\{\\pm 1, \\pm 2\\}"
+        },
+        {
+          "explain": "Loại từng khả năng. Nếu f = ±1 thì (f) = Z[x], nhưng 1 không thuộc I vì hệ số tự do 1 là số lẻ. Nếu f = ±2 thì x = ±2g với g có hệ số nguyên, so sánh hệ số của x cho 1 = ±2·(số nguyên), vô lí.",
+          "latex": "1 \\notin I, \\qquad x \\neq \\pm 2g \\ \\ \\forall g \\in \\mathbb{Z}[x]"
+        },
+        {
+          "explain": "Vậy I tối đại mà không chính. Hệ quả quan trọng: Z[x] không phải vành iđêan chính, khác hẳn K[x] với K là một trường (khi đó mọi iđêan đều sinh bởi một phần tử nhờ phép chia có dư).",
+          "latex": "\\mathbb{Z}[x] \\ \\text{không là PID}, \\qquad K[x] \\ \\text{là PID khi } K \\ \\text{là trường}"
+        },
+        {
+          "explain": "So sánh với (x): thay x = 0 cho đồng cấu Z[x] -> Z với hạt nhân đúng bằng (x). Vì Z là miền nguyên nhưng không là trường (2 không khả nghịch) nên (x) nguyên tố mà không tối đại; ta có dãy bao hàm chặt cho thấy (x) chưa phải lớn nhất.",
+          "latex": "(x) \\subsetneq (2, x) \\subsetneq \\mathbb{Z}[x], \\qquad \\mathbb{Z}[x]/(x) \\cong \\mathbb{Z}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.vanh-truong.idean-va-vanh-thuong",
+        "math.dai-hoc.vanh-truong.idean-toi-dai-va-nguyen-to",
+        "math.dai-hoc.vanh-truong.vanh-da-thuc-idean-chinh",
+        "math.dai-hoc.vanh-truong.mien-nguyen",
+        "math.dai-hoc.vanh-truong.tien-de-vanh"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 15,
+      "skills": [
+        "mô tả iđêan sinh bởi nhiều phần tử",
+        "dùng đồng cấu để nhận diện vành thương",
+        "phân biệt iđêan nguyên tố và tối đại",
+        "chứng minh phản chứng tính không chính"
+      ],
+      "hints": [
+        "Phần tử của (2, x) là gì nếu nhìn vào hệ số tự do?",
+        "Muốn biết iđêan có tối đại không, hãy xem vành thương có phải trường không.",
+        "Nếu (2, x) = (f) thì f phải chia hết cả 2 lẫn x."
+      ],
+      "tags": [
+        "dai-so-truu-tuong",
+        "vanh",
+        "idean",
+        "vanh-thuong"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0058",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Xích Markov hấp thụ và bài toán phá sản của người chơi",
+      "type": "dien-so",
+      "statement_vi": "Một người chơi bắt đầu với 3 đồng. Mỗi ván người đó thắng 1 đồng với xác suất 0,4 và thua 1 đồng với xác suất 0,6, các ván độc lập. Người đó chơi cho tới khi hoặc hết sạch tiền hoặc đạt 7 đồng thì dừng. Tính xác suất người đó đạt được 7 đồng (làm tròn 4 chữ số thập phân).",
+      "statement_en": "A gambler starts with 3 coins. In each round he wins 1 coin with probability 0.4 and loses 1 coin with probability 0.6, rounds being independent. He plays until he is broke or reaches 7 coins. Find the probability that he reaches 7 coins (round to 4 decimals).",
+      "answer": "p_3 = 304/2059 xấp xỉ 0,1476",
+      "answer_numeric": 0.1476,
+      "tolerance": 0.001,
+      "solution_steps": [
+        {
+          "explain": "Mô hình hoá: vốn của người chơi là một xích Markov trên các trạng thái 0, 1, ..., 7 với hai trạng thái hấp thụ là 0 và 7. Gọi p_i là xác suất xuất phát từ i mà chạm 7 trước khi chạm 0. Điều kiện hoá theo kết quả VÁN ĐẦU TIÊN (công thức xác suất đầy đủ) và dùng tính không nhớ của xích để đưa về chính bài toán với vốn mới.",
+          "latex": "p_{i} = 0{,}4\\, p_{i+1} + 0{,}6\\, p_{i-1} \\quad (1 \\le i \\le 6), \\qquad p_{0} = 0, \\ p_{7} = 1"
+        },
+        {
+          "explain": "Đây là hệ thức truy hồi tuyến tính thuần nhất bậc hai với hệ số hằng. Thay thử p_i = r^i rồi chia cho r^{i-1} để lập phương trình đặc trưng.",
+          "latex": "0{,}4 r^{2} - r + 0{,}6 = 0 \\iff 2r^{2} - 5r + 3 = 0"
+        },
+        {
+          "explain": "Giải phương trình bậc hai. Nghiệm r = 1 luôn xuất hiện trong bài toán loại này (hàm hằng thoả hệ thức), còn nghiệm kia đúng bằng tỉ số bất lợi q/p = 0,6/0,4.",
+          "latex": "r_{1} = 1, \\qquad r_{2} = \\frac{q}{p} = \\frac{3}{2}"
+        },
+        {
+          "explain": "Hai nghiệm phân biệt nên nghiệm tổng quát là tổ hợp tuyến tính của hai dãy hình học tương ứng.",
+          "latex": "p_{i} = A + B\\left(\\frac{3}{2}\\right)^{i}"
+        },
+        {
+          "explain": "Áp điều kiện biên p_0 = 0 cho A = -B, rồi p_7 = 1 xác định B. Chú ý (3/2)^7 = 2187/128.",
+          "latex": "B\\left(\\left(\\frac{3}{2}\\right)^{7} - 1\\right) = 1 \\Rightarrow B = \\frac{128}{2059}"
+        },
+        {
+          "explain": "Thế i = 3 vào công thức p_i = B((3/2)^i - 1) với (3/2)^3 = 27/8.",
+          "latex": "p_{3} = \\frac{128}{2059}\\cdot\\left(\\frac{27}{8} - 1\\right) = \\frac{128}{2059}\\cdot\\frac{19}{8} = \\frac{304}{2059} \\approx 0{,}1476"
+        },
+        {
+          "explain": "Đọc lại kết quả để thấy sức mạnh của lợi thế nhỏ: dù chỉ cần thắng ròng 4 đồng trong khi chỉ được phép thua ròng 3 đồng, xác suất thành công chỉ khoảng 14,8% vì mỗi ván đã lệch 0,6 so với 0,4. Công thức tổng quát dùng lại được cho mọi vốn i và mục tiêu N khi p khác q.",
+          "latex": "p_{i} = \\frac{1 - (q/p)^{i}}{1 - (q/p)^{N}}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.he-thuc-truy-hoi.he-thuc-truy-hoi-tuyen-tinh",
+        "math.dai-hoc.he-thuc-truy-hoi.phuong-trinh-dac-trung",
+        "math.dai-hoc.xac-suat-co-ban.cong-thuc-xac-suat-day-du",
+        "math.dai-hoc.xac-suat-co-ban.xac-suat-co-dieu-kien"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 13,
+      "skills": [
+        "lập hệ thức truy hồi bằng cách điều kiện hoá bước đầu",
+        "giải truy hồi tuyến tính bậc hai",
+        "xử lí điều kiện biên của trạng thái hấp thụ"
+      ],
+      "hints": [
+        "Điều kiện hoá theo kết quả ván đầu tiên để nối p_i với p_{i+1} và p_{i-1}.",
+        "Phương trình đặc trưng luôn có nghiệm r = 1; nghiệm còn lại là q/p."
+      ],
+      "tags": [
+        "xac-suat",
+        "xich-markov",
+        "bai-toan-pha-san",
+        "truy-hoi"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0059",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Định lí Kirchhoff và số cây khung",
+      "type": "dien-so",
+      "statement_vi": "Đồ thị bánh xe W_4 gồm một đỉnh trung tâm nối với cả bốn đỉnh của một chu trình C_4, tổng cộng 5 đỉnh và 8 cạnh. Dùng định lí Kirchhoff (định lí ma trận - cây), tính số cây khung của W_4.",
+      "statement_en": "The wheel graph W_4 consists of a hub joined to all four vertices of a cycle C_4, giving 5 vertices and 8 edges. Use Kirchhoff's matrix-tree theorem to count the spanning trees of W_4.",
+      "answer": "45 cây khung",
+      "answer_numeric": 45,
+      "tolerance": 0.0001,
+      "solution_steps": [
+        {
+          "explain": "Kiểm tra dữ kiện trước bằng định lí bắt tay: đỉnh trung tâm có bậc 4, mỗi đỉnh trên vành có bậc 3 (hai cạnh của chu trình và một nan hoa). Tổng bậc bằng gấp đôi số cạnh nên số cạnh đúng bằng 8.",
+          "latex": "\\sum \\deg v = 4 + 4\\cdot 3 = 16 = 2\\cdot 8"
+        },
+        {
+          "explain": "Định lí Kirchhoff: số cây khung bằng giá trị chung của mọi phần phụ đại số cấp n-1 của ma trận Laplace L = D - A. Vì mọi phần phụ đều bằng nhau nên được quyền chọn xoá hàng và cột tiện nhất; ở đây xoá hàng và cột của đỉnh trung tâm để ma trận còn lại chỉ mang cấu trúc của chu trình.",
+          "latex": "\\tau(G) = \\det L_{0}, \\qquad L = D - A"
+        },
+        {
+          "explain": "Lập ma trận rút gọn theo bốn đỉnh vành đánh số vòng quanh: đường chéo là bậc 3, phần tử bằng -1 tại các cặp đỉnh kề nhau trên chu trình (đỉnh 1 kề 2 và 4, v.v.), bằng 0 tại các cặp đối diện.",
+          "latex": "L_{0} = \\begin{pmatrix} 3 & -1 & 0 & -1 \\\\ -1 & 3 & -1 & 0 \\\\ 0 & -1 & 3 & -1 \\\\ -1 & 0 & -1 & 3 \\end{pmatrix}"
+        },
+        {
+          "explain": "Đây là ma trận vòng (circulant) sinh bởi hàng đầu (3, -1, 0, -1), nên các trị riêng tính được ngay qua các căn bậc bốn của đơn vị; cách này nhanh hơn khai triển định thức cấp bốn và ít sai sót dấu hơn.",
+          "latex": "\\lambda_{k} = 3 - 2\\cos\\frac{2\\pi k}{4}, \\qquad k = 0, 1, 2, 3"
+        },
+        {
+          "explain": "Thay lần lượt k = 0, 1, 2, 3 rồi nhân các trị riêng lại vì định thức bằng tích các trị riêng.",
+          "latex": "\\{\\lambda_{k}\\} = \\{1, 3, 5, 3\\} \\Rightarrow \\det L_{0} = 1\\cdot 3\\cdot 5\\cdot 3 = 45"
+        },
+        {
+          "explain": "Kết luận và kiểm tra tính hợp lí: mỗi cây khung có 5 - 1 = 4 cạnh, mà số cách chọn 4 cạnh bất kì trong 8 cạnh chỉ là C(8,4) = 70, nên đáp số phải nhỏ hơn 70; 45 nằm trong khoảng hợp lí.",
+          "latex": "\\tau(W_{4}) = 45 < \\binom{8}{4} = 70"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-kirchhoff",
+        "math.dai-hoc.ly-thuyet-do-thi.so-canh-cay",
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-bat-tay",
+        "math.dai-hoc.dinh-thuc.khai-trien-laplace-theo-cot"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 12,
+      "skills": [
+        "lập ma trận Laplace của đồ thị",
+        "áp dụng định lí ma trận - cây",
+        "tính định thức ma trận vòng qua trị riêng"
+      ],
+      "hints": [
+        "Xoá hàng và cột ứng với đỉnh trung tâm để ma trận còn lại đơn giản nhất.",
+        "Ma trận vòng có trị riêng dạng 3 - 2cos(2 pi k / 4)."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "do-thi",
+        "cay-khung",
+        "dinh-li-kirchhoff"
+      ],
+      "sources": [
+        "https://www.fq.math.ca/Scanned/12-3/hilton2.pdf"
+      ]
+    },
+    {
+      "id": "prob.math.undergrad-algebra.0060",
+      "subject": "math",
+      "level": "dai-hoc",
+      "grades": [
+        13
+      ],
+      "curriculum": [
+        "intl-undergrad"
+      ],
+      "topic": "Chu trình Euler, chu trình Hamilton và các điều kiện đủ",
+      "type": "dung-sai",
+      "statement_vi": "Xét tính đúng sai của bốn khẳng định về đồ thị đơn: (1) Một đồ thị liên thông có đúng hai đỉnh bậc lẻ thì có đường đi Euler nhưng không có chu trình Euler. (2) Đồ thị đầy đủ K_4 có chu trình Euler. (3) Nếu đồ thị đơn có n lớn hơn hoặc bằng 3 đỉnh và mọi đỉnh có bậc ít nhất n/2 thì đồ thị có chu trình Hamilton. (4) Mọi đồ thị có chu trình Euler đều có chu trình Hamilton.",
+      "statement_en": "Decide true or false for four statements about simple graphs: (1) A connected graph with exactly two odd-degree vertices has an Euler trail but no Euler circuit. (2) The complete graph K_4 has an Euler circuit. (3) If a simple graph has n >= 3 vertices and every vertex has degree at least n/2, then it has a Hamiltonian cycle. (4) Every graph with an Euler circuit also has a Hamiltonian cycle.",
+      "answer": "(1) Đúng, (2) Sai, (3) Đúng, (4) Sai",
+      "solution_steps": [
+        {
+          "explain": "Nhắc lại tiêu chuẩn Euler để dùng cho cả bốn ý: chu trình Euler đòi hỏi liên thông và MỌI đỉnh bậc chẵn; đường đi Euler không khép kín đòi hỏi liên thông và có ĐÚNG hai đỉnh bậc lẻ, hai đỉnh đó bắt buộc là hai đầu mút.",
+          "latex": "\\text{Euler circuit} \\iff \\text{liên thông và } \\deg v \\ \\text{chẵn } \\forall v"
+        },
+        {
+          "explain": "Ý (1): giả thiết đúng hai đỉnh bậc lẻ cho ngay đường đi Euler; đồng thời tồn tại đỉnh bậc lẻ nên không thể có chu trình Euler (mỗi lần đi qua một đỉnh trong chu trình dùng hết hai cạnh, nên bậc phải chẵn). Vậy khẳng định ĐÚNG.",
+          "latex": "\\#\\{v : \\deg v \\ \\text{lẻ}\\} = 2 \\Rightarrow \\exists \\ \\text{đường đi Euler}, \\ \\nexists \\ \\text{chu trình Euler}"
+        },
+        {
+          "explain": "Ý (2): trong K_4 mỗi đỉnh nối với ba đỉnh còn lại nên có bậc 3 là số lẻ. Vì có tới bốn đỉnh bậc lẻ nên K_4 không có cả chu trình Euler lẫn đường đi Euler. Khẳng định SAI. (K_5 mới có chu trình Euler vì mọi bậc bằng 4.)",
+          "latex": "\\deg v = 3 \\ \\forall v \\in K_{4} \\Rightarrow \\ \\text{không có chu trình Euler}"
+        },
+        {
+          "explain": "Ý (3): đây chính là định lí Dirac, một điều kiện ĐỦ cho tính Hamilton. Khẳng định ĐÚNG. Cần nhớ nó chỉ là điều kiện đủ: chu trình C_100 có chu trình Hamilton mà mọi bậc chỉ bằng 2.",
+          "latex": "\\delta(G) \\ge \\frac{n}{2}, \\ n \\ge 3 \\Rightarrow G \\ \\text{có chu trình Hamilton}"
+        },
+        {
+          "explain": "Ý (4): phản ví dụ K_{2,4}. Hai đỉnh của phần nhỏ có bậc 4, bốn đỉnh của phần lớn có bậc 2, tất cả đều chẵn và đồ thị liên thông nên CÓ chu trình Euler. Nhưng chu trình Hamilton trong đồ thị hai phía phải đi xen kẽ giữa hai phần nên hai phần bắt buộc có cùng số đỉnh, ở đây 2 khác 4. Khẳng định SAI.",
+          "latex": "K_{2,4}: \\ \\text{mọi bậc chẵn nhưng } 2 \\neq 4 \\Rightarrow \\ \\nexists \\ \\text{chu trình Hamilton}"
+        },
+        {
+          "explain": "Tổng kết để tránh lẫn hai khái niệm: Euler nói về việc đi qua mỗi CẠNH đúng một lần và có tiêu chuẩn cần - đủ rất gọn theo bậc; Hamilton nói về việc đi qua mỗi ĐỈNH đúng một lần và cho tới nay chỉ có các điều kiện đủ như Dirac hay Ore.",
+          "latex": "\\deg u + \\deg v \\ge n \\ \\forall uv \\notin E \\Rightarrow \\ \\text{Hamilton (Ore)}"
+        }
+      ],
+      "formulas_used": [
+        "math.dai-hoc.ly-thuyet-do-thi.dieu-kien-euler",
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-dirac",
+        "math.dai-hoc.ly-thuyet-do-thi.dinh-li-ore",
+        "math.dai-hoc.ly-thuyet-do-thi.so-dinh-bac-le",
+        "math.dai-hoc.ly-thuyet-do-thi.so-canh-do-thi-hai-phia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 8,
+      "skills": [
+        "áp dụng tiêu chuẩn Euler theo bậc đỉnh",
+        "phân biệt điều kiện cần và điều kiện đủ",
+        "dựng phản ví dụ trên đồ thị hai phía"
+      ],
+      "hints": [
+        "Chu trình Euler chỉ cần kiểm tra tính chẵn của mọi bậc.",
+        "Đồ thị hai phía có chu trình Hamilton thì hai phần phải bằng nhau."
+      ],
+      "tags": [
+        "toan-roi-rac",
+        "do-thi",
+        "chu-trinh-euler",
+        "chu-trinh-hamilton"
+      ]
+    }
+  ]
+}

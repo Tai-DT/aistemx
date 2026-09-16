@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aistem.local/schema/scholarship.json",
+  "title": "AISTEM Scholarship Profile",
+  "description": "Hồ sơ chương trình học bổng đại học toàn cầu: điều kiện học thuật, mức hỗ trợ tài chính, tiêu chuẩn tuyển chọn, bài luận và deadline.",
+  "type": "object",
+  "required": [
+    "meta",
+    "scholarships"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "file",
+        "title",
+        "count"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "scholarships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/scholarship"
+      }
+    }
+  },
+  "definitions": {
+    "scholarship": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "level",
+        "grades",
+        "country",
+        "provider",
+        "type",
+        "coverage",
+        "financial_value_usd",
+        "gpa_min",
+        "sat_min",
+        "ielts_min",
+        "target_majors",
+        "overview",
+        "selection_criteria",
+        "requirements",
+        "deadlines",
+        "official_url",
+        "tags"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^sch\\.[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "need-based",
+            "merit-based",
+            "government",
+            "foundation"
+          ]
+        },
+        "coverage": {
+          "enum": [
+            "full-ride",
+            "full-tuition",
+            "partial",
+            "living-stipend"
+          ]
+        },
+        "financial_value_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gpa_min": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0
+        },
+        "sat_min": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1600
+        },
+        "ielts_min": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 9.0
+        },
+        "ap_recommended": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target_majors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "overview": {
+          "type": "string",
+          "minLength": 50
+        },
+        "selection_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requirements": {
+          "type": "object",
+          "required": [
+            "academic",
+            "essays",
+            "recommendations",
+            "interview"
+          ]
+        },
+        "deadlines": {
+          "type": "object"
+        },
+        "official_url": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "level": {
+          "enum": [
+            "thcs",
+            "thpt",
+            "dai-hoc"
+          ],
+          "description": "Cấp học tuyển sinh: thcs (THCS lớp 8-9), thpt (THPT lớp 10-12), dai-hoc (Đại học/Sau đại học)"
+        },
+        "grades": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 13
+          },
+          "description": "Các khối lớp đối tượng của học bổng"
+        }
+      }
+    }
+  }
+}

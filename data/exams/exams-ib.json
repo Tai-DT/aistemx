@@ -1,0 +1,1313 @@
+{
+  "meta": {
+    "file": "exams-ib.json",
+    "title": "Hồ sơ kỳ thi International Baccalaureate Diploma",
+    "count": 10
+  },
+  "exams": [
+    {
+      "id": "exam.ib-math-aa-hl",
+      "name": "IB Mathematics: Analysis and Approaches HL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "math",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Mathematics: Analysis and Approaches HL là môn toán nặng tính lí thuyết và chứng minh của chương trình Tú tài Quốc tế (IB Diploma), dành cho học sinh lớp 11-12 định hướng các ngành toán, kĩ thuật, khoa học, kinh tế. Khung đánh giá first assessment 2021, thi bằng ba paper (Paper 1 không máy tính, Paper 2 và Paper 3 dùng GDC) cộng bài Exploration nội bộ. Nhấn mạnh vi tích phân, đại số, số phức, chứng minh. Grade 7 được nhiều đại học Anh, Mỹ, Canada, Úc quy đổi tín chỉ hoặc miễn môn giải tích nhập môn (chính sách tuỳ trường). Cập nhật mốc thời gian: khung hiện hành (first assessment 2021) áp dụng đến kỳ thi tháng 5/2028; IB đã công bố khung Toán mới (first teaching 8/2027, first assessment 5/2029) giảm marks HL Paper 1/2 còn 100 và Paper 3 còn 50 (rút còn 1 giờ), đồng thời thống nhất tiêu chí IA giữa SL và HL.",
+      "sections": [
+        {
+          "name": "Paper 1 (không dùng máy tính - AA)",
+          "question_count": "Section A ngắn + Section B mở rộng",
+          "duration_minutes": 120,
+          "weight_percent": 30,
+          "calculator": "khong-cho-phep",
+          "note": "110 marks. AA HL: KHÔNG được dùng máy tính. Section A câu ngắn bắt buộc + Section B câu dài mở rộng."
+        },
+        {
+          "name": "Paper 2 (dùng máy tính - GDC)",
+          "question_count": "Section A ngắn + Section B mở rộng",
+          "duration_minutes": 120,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "110 marks. Bắt buộc dùng GDC."
+        },
+        {
+          "name": "Paper 3 (dùng máy tính - GDC, chỉ HL)",
+          "question_count": "2 câu dài giải quyết vấn đề",
+          "duration_minutes": 60,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "55 marks. Hai bài toán dài, dẫn dắt theo từng bước, đòi hỏi tư duy giải quyết vấn đề và nối kết nhiều chủ đề. Chỉ có ở HL."
+        },
+        {
+          "name": "Internal Assessment - Mathematical Exploration",
+          "question_count": "1 bài viết (12-20 trang)",
+          "duration_minutes": 900,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "Bài khám phá toán, chấm nội bộ theo 5 tiêu chí (A-E), IB moderation."
+        }
+      ],
+      "topic_weights": {
+        "Số và đại số (dãy, nhị thức, quy nạp, số phức)": 19,
+        "Hàm số": 15,
+        "Hình học và lượng giác (vectơ 3D, biến đổi lượng giác)": 24,
+        "Thống kê và xác suất": 16,
+        "Vi tích phân (đạo hàm, tích phân, PTVP, chuỗi Maclaurin)": 26
+      },
+      "question_types": [
+        {
+          "name": "Câu ngắn Section A",
+          "description": "Câu bắt buộc, mỗi câu 4-8 marks, kiểm tra một kĩ năng.",
+          "example_prompt": "Cho f(x)=ln(3x-2). (a) Tìm tập xác định. (b) Tìm f'(x). (c) Viết phương trình tiếp tuyến của đồ thị tại x=1.",
+          "approach": "Bám method marks: viết rõ từng bước biến đổi, giữ ẩn/hằng số, chỉ làm tròn ở đáp số cuối."
+        },
+        {
+          "name": "Câu mở rộng Section B",
+          "description": "Bài dài nhiều ý nối tiếp, một dữ kiện chạy xuyên suốt, 12-20 marks.",
+          "example_prompt": "Xét hàm g(x)=x·e^{-x} với x≥0. (a) Chứng minh g có đúng một cực đại. (b) Tính thể tích khối tròn xoay khi quay miền dưới đồ thị trên [0,2] quanh trục Ox. (c) Chứng minh bằng quy nạp một công thức cho đạo hàm cấp n.",
+          "approach": "Làm tuần tự vì ý sau dùng kết quả ý trước; nếu kẹt một ý, giả định kết quả và làm tiếp để không mất trọn bài."
+        },
+        {
+          "name": "Chứng minh (Proof)",
+          "description": "Chứng minh quy nạp, phản chứng, chứng minh đẳng thức lượng giác/số phức.",
+          "example_prompt": "Dùng quy nạp toán học chứng minh rằng 7^n − 1 chia hết cho 6 với mọi n nguyên dương.",
+          "approach": "Nêu rõ 3 bước quy nạp: cơ sở, giả thiết, bước chuyển; kết bài bằng câu kết luận chuẩn để lấy reasoning mark."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Mathematics HL formula booklet in sẵn: đạo hàm/nguyên hàm chuẩn, khai triển nhị thức, công thức lượng giác, số phức (de Moivre), thống kê, vectơ.",
+        "Formula booklet KHÔNG có: định nghĩa đạo hàm theo giới hạn, quy tắc tích/thương, chuỗi Maclaurin của hàm cụ thể, phương pháp tích phân từng phần/đổi biến (phải tự thuộc kĩ thuật)."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-nhan-tong-n-so-hang",
+        "math.thpt.day-so.cap-so-nhan-lui-vo-han",
+        "math.thpt.to-hop-xac-suat.nhi-thuc-newton",
+        "math.thpt.mu-logarit.dinh-nghia-logarit",
+        "math.thpt.mu-logarit.doi-co-so-logarit",
+        "math.thpt.luong-giac.he-thuc-luong-giac-co-ban",
+        "math.thpt.luong-giac.nhan-doi-cos",
+        "math.thpt.luong-giac.cong-thuc-cong-sin",
+        "math.thpt.luong-giac.bien-doi-a-sin-b-cos",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.dao-ham.dao-ham-cua-tich",
+        "math.thpt.dao-ham.dao-ham-cua-thuong",
+        "math.thpt.dao-ham-quoc-te.dao-ham-ham-an",
+        "math.thpt.nguyen-ham-tich-phan.tich-phan-tung-phan",
+        "math.thpt.nguyen-ham-tich-phan.phuong-phap-doi-bien-nguyen-ham",
+        "math.thpt.nguyen-ham-tich-phan.the-tich-tron-xoay-ox",
+        "math.thpt.dinh-li-co-ban.ftc-phan-hai",
+        "math.thpt.so-phuc.cong-thuc-moivre",
+        "math.thpt.so-phuc.dang-luong-giac",
+        "math.thpt.so-phuc.cong-thuc-euler",
+        "math.thpt.so-phuc.can-bac-n-so-phuc",
+        "math.thpt.vecto.tich-vo-huong-toa-do",
+        "math.thpt.vecto.goc-giua-hai-vecto",
+        "math.thpt.xac-suat.ky-vong-bien-roi-rac",
+        "math.thpt.phan-phoi.trung-binh-do-lech-chuan-nhi-thuc",
+        "math.thpt.phan-phoi.xac-suat-khoang-phan-phoi-chuan",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.to-hop-xac-suat.cong-thuc-bayes",
+        "math.thpt.ptvp-quoc-te.phuong-phap-euler"
+      ],
+      "scoring": {
+        "description": "Cộng điểm thô các paper theo trọng số + IA, rồi quy về thang 1-7 bằng grade boundaries công bố lại từng kỳ. Chấm theo method marks (M), accuracy marks (A), reasoning (R): làm đúng phương pháp vẫn được điểm thành phần dù đáp số sai. Grade 7 thường ~65-80% tuỳ kỳ. Không trừ điểm.",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> grade boundaries kỳ thi -> grade 1-7 (ranh giới đổi mỗi kỳ).",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Đọc command term và số marks của mỗi ý để canh độ dài lời giải.",
+        "Paper 1 KHÔNG máy tính: rèn tính tay số phức, tích phân, đạo hàm; giữ đáp số dạng chính xác (π, √, phân số, e).",
+        "Paper 2/3 dùng GDC: dùng máy để giải phương trình, tìm giao điểm, tích phân số — nhưng vẫn phải ghi 'from GDC' và kết quả để có điểm.",
+        "Trình bày để ăn method mark: mỗi phép biến đổi một dòng, giữ lại biểu thức trước khi thay số.",
+        "Paper 3 (HL): đọc kĩ phần dẫn dắt, mỗi ý xây trên ý trước; dành thời gian cho ý cuối 'chứng minh/tổng quát hoá'.",
+        "IA Exploration: chọn đề gắn với đam mê cá nhân (Personal engagement), dùng toán ở mức HL, có reflection thật sự."
+      ],
+      "common_traps": [
+        "Làm tròn quá sớm ở Paper 1 khiến sai accuracy mark — giữ giá trị chính xác đến bước cuối.",
+        "Ghi đáp số GDC mà không kèm biểu thức/thiết lập -> mất method mark.",
+        "Nhầm radian/độ trên GDC ở câu lượng giác.",
+        "Với 'show that', đáp số đã cho sẵn — phải chứng minh chứ không được dùng ngược đáp số.",
+        "Bỏ hằng số C khi tìm nguyên hàm, quên xét miền xác định của log/căn."
+      ],
+      "tags": [
+        "ib",
+        "toan",
+        "mathematics-aa",
+        "analysis-and-approaches",
+        "hl"
+      ],
+      "sources": [
+        "IBO Mathematics: analysis and approaches guide (first assessment 2021)",
+        "revisionvillage.com/ib-math/analysis-and-approaches-hl",
+        "IBO DP Mathematics analysis and approaches updates (khung mới: first teaching 2027, first assessment 2029)"
+      ]
+    },
+    {
+      "id": "exam.ib-math-aa-sl",
+      "name": "IB Mathematics: Analysis and Approaches SL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "math",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Mathematics: Analysis and Approaches SL là môn toán tiêu chuẩn thiên về giải tích và tư duy đại số của IB Diploma, cho học sinh lớp 11-12 cần nền toán vững nhưng không chuyên sâu như HL. Khung first assessment 2021: Paper 1 (không máy tính), Paper 2 (GDC) và Internal Assessment Exploration. Kết quả 1-7 dùng xét tuyển đại học quốc tế; grade cao có thể được một số trường quy đổi tín chỉ tuỳ chính sách. Cập nhật mốc thời gian: khung hiện hành (first assessment 2021) áp dụng đến kỳ thi tháng 5/2028; IB đã công bố khung Toán mới (first teaching 8/2027, first assessment 5/2029) giảm marks SL Paper 1/2 còn 75, đồng thời thống nhất tiêu chí IA giữa SL và HL.",
+      "sections": [
+        {
+          "name": "Paper 1 (không dùng máy tính - AA)",
+          "question_count": "Section A ngắn + Section B mở rộng",
+          "duration_minutes": 90,
+          "weight_percent": 40,
+          "calculator": "khong-cho-phep",
+          "note": "80 marks. Section A gồm câu ngắn bắt buộc, Section B gồm 2-3 câu mở rộng. AA SL: KHÔNG được dùng máy tính (đây là điểm đặc thù của Analysis & Approaches)."
+        },
+        {
+          "name": "Paper 2 (dùng máy tính - GDC)",
+          "question_count": "Section A ngắn + Section B mở rộng",
+          "duration_minutes": 90,
+          "weight_percent": 40,
+          "calculator": "cho-phep",
+          "note": "80 marks. Bắt buộc dùng máy tính đồ thị (GDC). Cùng cấu trúc Section A/B như Paper 1 nhưng khai thác đồ hoạ, giải số, thống kê trên máy."
+        },
+        {
+          "name": "Internal Assessment - Mathematical Exploration (bài tự luận toán)",
+          "question_count": "1 bài viết (12-20 trang)",
+          "duration_minutes": 900,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "Bài khám phá toán ~10-15 giờ làm việc, chấm nội bộ theo 5 tiêu chí (A Presentation, B Mathematical communication, C Personal engagement, D Reflection, E Use of mathematics), IB kiểm định lại (moderation)."
+        }
+      ],
+      "topic_weights": {
+        "Số và đại số (dãy, cấp số, nhị thức)": 16,
+        "Hàm số": 17,
+        "Hình học và lượng giác": 21,
+        "Thống kê và xác suất": 23,
+        "Vi tích phân (đạo hàm, tích phân)": 23
+      },
+      "question_types": [
+        {
+          "name": "Câu ngắn Section A",
+          "description": "Câu bắt buộc 4-7 marks, một kĩ năng cốt lõi.",
+          "example_prompt": "Cho cấp số cộng có u1=5 và u4=17. (a) Tìm công sai. (b) Tính tổng 20 số hạng đầu.",
+          "approach": "Chọn đúng công thức trong booklet, thế số cẩn thận, ghi mỗi bước một dòng."
+        },
+        {
+          "name": "Câu mở rộng Section B",
+          "description": "Bài dài 12-16 marks nối nhiều ý quanh một hàm/bối cảnh.",
+          "example_prompt": "Cho f(x)=x^3−6x^2+9x. (a) Tìm các điểm cực trị. (b) Tính diện tích miền giới hạn bởi đồ thị và trục hoành trên [0,3].",
+          "approach": "Vẽ phác đồ thị định hướng; ý tích phân dùng kết quả ý đạo hàm; kiểm tra dấu diện tích."
+        },
+        {
+          "name": "Thống kê - xác suất",
+          "description": "Phân phối chuẩn, nhị thức, kì vọng, xác suất có điều kiện, hồi quy.",
+          "example_prompt": "Chiều cao học sinh tuân theo phân phối chuẩn trung bình 168 cm, độ lệch chuẩn 6 cm. Tính tỉ lệ học sinh cao trên 175 cm và giá trị mà 10% cao nhất vượt qua.",
+          "approach": "Paper 2 dùng GDC (normalcdf/invNorm); ghi rõ tham số đưa vào máy và kết quả."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Formula booklet AA SL in sẵn: cấp số cộng/nhân, nhị thức, đạo hàm & nguyên hàm chuẩn, công thức lượng giác cơ bản, thống kê, phân phối nhị thức/chuẩn.",
+        "KHÔNG có: định nghĩa đạo hàm theo giới hạn, quy tắc tích/thương, kĩ thuật đổi biến — phải tự thuộc."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-cong-tong-n-so-hang",
+        "math.thpt.day-so.cap-so-nhan-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-nhan-tong-n-so-hang",
+        "math.thpt.to-hop-xac-suat.nhi-thuc-newton",
+        "math.thpt.mu-logarit.dinh-nghia-logarit",
+        "math.thpt.mu-logarit.logarit-cua-tich",
+        "math.thpt.luong-giac.he-thuc-luong-giac-co-ban",
+        "math.thpt.luong-giac.nhan-doi-sin",
+        "math.thpt.luong-giac.do-dai-cung-tron",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.dao-ham.dao-ham-cua-tich",
+        "math.thpt.dao-ham.dao-ham-cua-thuong",
+        "math.thpt.dao-ham.phuong-trinh-tiep-tuyen",
+        "math.thpt.ung-dung-dao-ham.gtln-gtnn-tren-doan",
+        "math.thpt.nguyen-ham-tich-phan.phuong-phap-doi-bien-nguyen-ham",
+        "math.thpt.nguyen-ham-tich-phan.the-tich-tron-xoay-ox",
+        "math.thpt.nguyen-ham-tich-phan.dien-tich-hinh-phang-hai-duong",
+        "math.thpt.dinh-li-co-ban.ftc-phan-hai",
+        "math.thpt.hoi-quy.duong-hoi-quy-binh-phuong-toi-thieu",
+        "math.thpt.hoi-quy.he-so-tuong-quan-theo-s",
+        "math.thpt.xac-suat.ky-vong-bien-roi-rac",
+        "math.thpt.phan-phoi.trung-binh-do-lech-chuan-nhi-thuc",
+        "math.thpt.phan-phoi.xac-suat-khoang-phan-phoi-chuan",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.to-hop-xac-suat.quy-tac-cong-xac-suat",
+        "math.thpt.ham-so-bac-nhat-bac-hai.cong-thuc-nghiem-phuong-trinh-bac-hai"
+      ],
+      "scoring": {
+        "description": "Cộng điểm thô các paper theo trọng số + IA, rồi quy về thang 1-7 bằng grade boundaries công bố lại từng kỳ. Chấm theo method marks (M), accuracy marks (A), reasoning (R): làm đúng phương pháp vẫn được điểm thành phần dù đáp số sai. Grade 7 thường ~65-80% tuỳ kỳ. Không trừ điểm.",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> grade boundaries kỳ thi -> grade 1-7 (ranh giới đổi mỗi kỳ).",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Học thuộc quy tắc tích/thương/hàm hợp vì booklet không in.",
+        "Paper 1 không máy tính: luyện tính tay và giữ dạng chính xác; Paper 2 khai thác tối đa GDC.",
+        "Canh thời gian ~1.1 phút/mark; không sa lầy một câu.",
+        "Với câu nhiều ý, nếu bí ý đầu vẫn làm ý sau bằng cách giả định kết quả.",
+        "IA: chọn đề vừa sức SL, thể hiện Personal engagement và Reflection rõ ràng."
+      ],
+      "common_traps": [
+        "Quên đổi radian/độ trên máy.",
+        "Nhầm dấu khi tính diện tích dưới trục hoành (phải lấy trị tuyệt đối hoặc tách miền).",
+        "Dùng công thức nhị thức sai chỉ số hạng thứ k.",
+        "Không ghi thiết lập trước khi bấm GDC -> mất method mark.",
+        "Đọc sai command term 'find' vs 'hence find' (phải dùng kết quả trước đó)."
+      ],
+      "tags": [
+        "ib",
+        "toan",
+        "mathematics-aa",
+        "analysis-and-approaches",
+        "sl"
+      ],
+      "sources": [
+        "IBO Mathematics: analysis and approaches guide (first assessment 2021)",
+        "IBO DP Mathematics analysis and approaches updates (khung mới: first teaching 2027, first assessment 2029)"
+      ]
+    },
+    {
+      "id": "exam.ib-math-ai-hl",
+      "name": "IB Mathematics: Applications and Interpretation HL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "math",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Mathematics: Applications and Interpretation HL là môn toán ứng dụng-mô hình hoá của IB Diploma, cho học sinh lớp 11-12 hướng tới khoa học xã hội, kinh tế, thiết kế, khoa học dữ liệu. Đặc trưng: dùng GDC ở mọi paper, mạnh thống kê suy diễn, ma trận và lí thuyết đồ thị. Khung first assessment 2021: Paper 1, Paper 2, Paper 3 và Exploration. Grade 7 được các đại học quốc tế công nhận, một số nơi quy đổi tín chỉ thống kê/toán ứng dụng. Cập nhật mốc thời gian: khung hiện hành (first assessment 2021) áp dụng đến kỳ thi tháng 5/2028; IB đã công bố khung Toán mới (first teaching 8/2027, first assessment 5/2029) giảm marks HL Paper 1/2 còn 100 và Paper 3 còn 50 (rút còn 1 giờ), đồng thời thống nhất tiêu chí IA giữa SL và HL.",
+      "sections": [
+        {
+          "name": "Paper 1 (dùng máy tính - GDC)",
+          "question_count": "câu ngắn bắt buộc",
+          "duration_minutes": 120,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "110 marks. AI HL: dùng GDC ở mọi paper."
+        },
+        {
+          "name": "Paper 2 (dùng máy tính - GDC)",
+          "question_count": "câu mở rộng",
+          "duration_minutes": 120,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "110 marks, câu dài bối cảnh thực tế và mô hình hoá."
+        },
+        {
+          "name": "Paper 3 (dùng máy tính - GDC, chỉ HL)",
+          "question_count": "2 câu dài giải quyết vấn đề",
+          "duration_minutes": 60,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "55 marks. Hai bài toán mở rộng, dẫn dắt, gắn với mô hình thực tế (đồ thị, ma trận, chuỗi, thống kê suy diễn)."
+        },
+        {
+          "name": "Internal Assessment - Mathematical Exploration",
+          "question_count": "1 bài viết (12-20 trang)",
+          "duration_minutes": 900,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "Bài khám phá, chấm nội bộ theo 5 tiêu chí A-E, IB moderation."
+        }
+      ],
+      "topic_weights": {
+        "Số và đại số (ma trận, phức ứng dụng)": 14,
+        "Hàm số và mô hình hoá": 20,
+        "Hình học và lượng giác (Voronoi, đồ thị)": 22,
+        "Thống kê và xác suất (suy diễn)": 25,
+        "Vi tích phân ứng dụng và PTVP": 19
+      },
+      "question_types": [
+        {
+          "name": "Câu mô hình hoá thực tế",
+          "description": "Bối cảnh đời thực: tài chính, kĩ thuật, sinh thái; đọc dữ liệu và chọn mô hình.",
+          "example_prompt": "Một khoản vay 200 triệu, lãi kép 0,6%/tháng, trả đều cuối mỗi tháng. Lập mô hình dư nợ và dùng GDC xác định số tháng để trả hết nếu trả 5 triệu/tháng.",
+          "approach": "Dựng mô hình rõ ràng, dùng chức năng finance/solver của GDC, diễn giải kết quả theo bối cảnh (kèm đơn vị)."
+        },
+        {
+          "name": "Thống kê suy diễn",
+          "description": "Kiểm định chi bình phương, kiểm định t, hồi quy, khoảng tin cậy.",
+          "example_prompt": "Bảng 2x3 ghi sở thích môn học theo giới tính. Ở mức ý nghĩa 5%, kiểm định xem sở thích có độc lập với giới tính không.",
+          "approach": "Nêu H0/H1, dùng GDC ra χ²/p-value, so p với α, viết kết luận theo ngữ cảnh (bác bỏ/không bác bỏ H0)."
+        },
+        {
+          "name": "Ma trận và lí thuyết đồ thị (HL)",
+          "description": "Ma trận chuyển tiếp, trị riêng, cây khung nhỏ nhất, đường đi ngắn nhất, bài toán người đưa thư.",
+          "example_prompt": "Cho ma trận kề của một mạng lưới 5 nút có trọng số. Dùng thuật toán phù hợp tìm cây khung nhỏ nhất và tổng trọng số của nó.",
+          "approach": "Chọn đúng thuật toán (Prim/Kruskal/Dijkstra), trình bày từng bước chọn cạnh, ghi kết quả cuối."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Formula booklet AI HL in sẵn: định lí sin/cosin, diện tích tam giác, lãi kép, thống kê, phân phối, ma trận, χ², t-test, đạo hàm/nguyên hàm cơ bản.",
+        "KHÔNG có: cách thiết lập mô hình, quy trình thuật toán đồ thị, cách diễn giải p-value — phải tự thuộc kĩ năng."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.mu-logarit.lai-kep",
+        "math.thpt.mu-logarit.tang-truong-mu",
+        "math.thpt.day-so.cap-so-nhan-so-hang-tong-quat",
+        "math.thpt.he-thuc-luong.dinh-li-sin",
+        "math.thpt.he-thuc-luong.dinh-li-cosin",
+        "math.thpt.he-thuc-luong.dien-tich-hai-canh-sin",
+        "math.thpt.hoi-quy.duong-hoi-quy-binh-phuong-toi-thieu",
+        "math.thpt.hoi-quy.he-so-tuong-quan-theo-s",
+        "math.thpt.hoi-quy.he-so-xac-dinh-r2",
+        "math.thpt.chi-binh-phuong.thong-ke-chi-binh-phuong",
+        "math.thpt.chi-binh-phuong.kiem-dinh-doc-lap",
+        "math.thpt.kiem-dinh.gia-thuyet-khong-va-doi",
+        "math.thpt.kiem-dinh.kiem-dinh-t-hai-trung-binh",
+        "math.thpt.xac-suat.ky-vong-bien-roi-rac",
+        "math.thpt.phan-phoi.trung-binh-do-lech-chuan-nhi-thuc",
+        "math.thpt.phan-phoi.poisson-ti-le-theo-khoang",
+        "math.thpt.phan-phoi.xac-suat-khoang-phan-phoi-chuan",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.tong-riemann.tong-hinh-thang-deu",
+        "math.thpt.ptvp-quoc-te.phuong-phap-euler",
+        "math.thpt.ptvp-quoc-te.ptvp-logistic",
+        "math.thpt.fm-ma-tran.tri-rieng-cap-hai-vet-dinh-thuc",
+        "math.thpt.fm-ma-tran.vecto-rieng-cap-hai",
+        "math.thpt.fm-roi-rac.dinh-li-bat-tay",
+        "math.thpt.fm-roi-rac.thuat-toan-dijkstra",
+        "math.thpt.fm-roi-rac.thuat-toan-prim",
+        "math.thpt.fm-roi-rac.bai-toan-nguoi-dua-thu"
+      ],
+      "scoring": {
+        "description": "Cộng điểm thô các paper theo trọng số + IA, rồi quy về thang 1-7 bằng grade boundaries công bố lại từng kỳ. Chấm theo method marks (M), accuracy marks (A), reasoning (R): làm đúng phương pháp vẫn được điểm thành phần dù đáp số sai. Grade 7 thường ~65-80% tuỳ kỳ. Không trừ điểm.",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> grade boundaries kỳ thi -> grade 1-7 (ranh giới đổi mỗi kỳ).",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "AI dùng GDC ở MỌI paper — thành thạo thống kê, giải phương trình, ma trận, tài chính trên máy là lợi thế lớn.",
+        "Luôn diễn giải kết quả theo bối cảnh và kèm đơn vị — AI chấm rất nặng phần 'interpretation'.",
+        "Kiểm định giả thuyết: viết đủ H0, H1, thống kê kiểm định, p-value, so sánh với α, và câu kết luận theo ngữ cảnh.",
+        "Paper 3 (HL): bài dài mô hình hoá/điều tra — đọc kĩ dẫn dắt, nối kết các phần.",
+        "IA: khai thác bộ dữ liệu thực do chính mình thu thập; dùng công cụ thống kê ở mức HL."
+      ],
+      "common_traps": [
+        "Chỉ ghi con số từ GDC mà không diễn giải theo bối cảnh -> mất điểm interpretation.",
+        "Quên nêu giả thuyết hoặc quên câu kết luận cuối trong kiểm định.",
+        "Làm tròn trung gian làm sai χ²/p-value.",
+        "Nhầm khi nào dùng kiểm định độc lập vs phù hợp (goodness of fit).",
+        "Quên kiểm tra điều kiện (tần số kì vọng ≥5) trong kiểm định chi bình phương."
+      ],
+      "tags": [
+        "ib",
+        "toan",
+        "mathematics-ai",
+        "applications-and-interpretation",
+        "hl"
+      ],
+      "sources": [
+        "IBO Mathematics: applications and interpretation guide (first assessment 2021)",
+        "IBO DP Mathematics applications and interpretation updates (khung mới: first teaching 2027, first assessment 2029)"
+      ]
+    },
+    {
+      "id": "exam.ib-math-ai-sl",
+      "name": "IB Mathematics: Applications and Interpretation SL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "math",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Mathematics: Applications and Interpretation SL là môn toán ứng dụng tiêu chuẩn của IB Diploma, cho học sinh lớp 11-12 cần toán phục vụ đời sống và các ngành xã hội. Dùng GDC ở mọi paper, tập trung thống kê mô tả, mô hình hoá và diễn giải dữ liệu thực. Khung first assessment 2021: Paper 1, Paper 2 và Internal Assessment Exploration. Thang 1-7 dùng xét tuyển đại học quốc tế. Cập nhật mốc thời gian: khung hiện hành (first assessment 2021) áp dụng đến kỳ thi tháng 5/2028; IB đã công bố khung Toán mới (first teaching 8/2027, first assessment 5/2029) giảm marks SL Paper 1/2 còn 75, đồng thời thống nhất tiêu chí IA giữa SL và HL.",
+      "sections": [
+        {
+          "name": "Paper 1 (dùng máy tính - GDC)",
+          "question_count": "~15 câu ngắn bắt buộc",
+          "duration_minutes": 90,
+          "weight_percent": 40,
+          "calculator": "cho-phep",
+          "note": "80 marks, câu ngắn. AI: TẤT CẢ các paper đều được (và cần) dùng GDC — khác hẳn AA Paper 1."
+        },
+        {
+          "name": "Paper 2 (dùng máy tính - GDC)",
+          "question_count": "câu mở rộng",
+          "duration_minutes": 90,
+          "weight_percent": 40,
+          "calculator": "cho-phep",
+          "note": "80 marks, câu dài mở rộng đặt trong bối cảnh thực tế, mô hình hoá."
+        },
+        {
+          "name": "Internal Assessment - Mathematical Exploration",
+          "question_count": "1 bài viết (12-20 trang)",
+          "duration_minutes": 900,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "Bài khám phá, chấm nội bộ theo 5 tiêu chí A-E, IB moderation. AI thường khai thác dữ liệu thực và mô hình thống kê."
+        }
+      ],
+      "topic_weights": {
+        "Số và đại số (lãi kép, mũ-loga)": 13,
+        "Hàm số và mô hình hoá": 26,
+        "Hình học và lượng giác (tam giác, thể tích)": 15,
+        "Thống kê và xác suất": 30,
+        "Vi tích phân ứng dụng": 16
+      },
+      "question_types": [
+        {
+          "name": "Câu ngắn Paper 1",
+          "description": "Câu bắt buộc gắn bối cảnh thực, dùng GDC, 4-7 marks.",
+          "example_prompt": "Một bể nước hình trụ bán kính 1,2 m, cao 2 m. (a) Tính thể tích. (b) Nước chảy vào 30 lít/phút; tính thời gian đầy bể.",
+          "approach": "Dùng công thức thể tích in trong booklet, chú ý đổi đơn vị (m³ sang lít) và kèm đơn vị ở đáp số."
+        },
+        {
+          "name": "Thống kê mô tả và tương quan",
+          "description": "Trung bình, độ lệch chuẩn, hồi quy tuyến tính, hệ số tương quan.",
+          "example_prompt": "Cho bảng 8 cặp (giờ ôn tập, điểm số). Dùng GDC tìm phương trình hồi quy và hệ số tương quan; dự đoán điểm khi ôn 6 giờ và bình luận độ tin cậy.",
+          "approach": "Nhập dữ liệu vào GDC (linReg), ghi r và phương trình; cảnh báo khi ngoại suy ngoài khoảng dữ liệu."
+        },
+        {
+          "name": "Xác suất và phân phối",
+          "description": "Cây xác suất, xác suất có điều kiện, nhị thức, chuẩn.",
+          "example_prompt": "Một máy đóng gói cho khối lượng tuân theo phân phối chuẩn μ=502 g, σ=3 g. Gói bị loại nếu dưới 498 g. Tính tỉ lệ gói bị loại.",
+          "approach": "Dùng normalcdf trên GDC, ghi tham số và kết quả, diễn giải theo bối cảnh."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Formula booklet AI SL in sẵn: định lí sin/cosin, diện tích, thể tích các khối, lãi kép, thống kê, phân phối chuẩn/nhị thức.",
+        "KHÔNG có: cách dựng mô hình, cách diễn giải hệ số tương quan hay p-value — là kĩ năng tự thuộc."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.mu-logarit.lai-kep",
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-nhan-so-hang-tong-quat",
+        "math.thpt.he-thuc-luong.dinh-li-sin",
+        "math.thpt.he-thuc-luong.dinh-li-cosin",
+        "math.thpt.he-thuc-luong.dien-tich-hai-canh-sin",
+        "math.thpt.hoi-quy.duong-hoi-quy-binh-phuong-toi-thieu",
+        "math.thpt.hoi-quy.he-so-tuong-quan-theo-s",
+        "math.thpt.chi-binh-phuong.thong-ke-chi-binh-phuong",
+        "math.thpt.chi-binh-phuong.kiem-dinh-doc-lap",
+        "math.thpt.kiem-dinh.gia-thuyet-khong-va-doi",
+        "math.thpt.xac-suat.ky-vong-bien-roi-rac",
+        "math.thpt.phan-phoi.trung-binh-do-lech-chuan-nhi-thuc",
+        "math.thpt.phan-phoi.xac-suat-khoang-phan-phoi-chuan",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.to-hop-xac-suat.quy-tac-cong-xac-suat",
+        "math.thpt.dao-ham.phuong-trinh-tiep-tuyen",
+        "math.thpt.ung-dung-dao-ham.gtln-gtnn-tren-doan",
+        "math.thpt.nguyen-ham-tich-phan.dien-tich-hinh-phang-hai-duong",
+        "math.thpt.tong-riemann.tong-hinh-thang-deu",
+        "math.thpt.mo-ta-du-lieu.diem-z-tham-so",
+        "math.thpt.mo-ta-du-lieu.quy-tac-68-95-997",
+        "math.thpt.mu-logarit.thang-do-decibel",
+        "math.thpt.ham-so-bac-nhat-bac-hai.toa-do-dinh-parabol"
+      ],
+      "scoring": {
+        "description": "Cộng điểm thô các paper theo trọng số + IA, rồi quy về thang 1-7 bằng grade boundaries công bố lại từng kỳ. Chấm theo method marks (M), accuracy marks (A), reasoning (R): làm đúng phương pháp vẫn được điểm thành phần dù đáp số sai. Grade 7 thường ~65-80% tuỳ kỳ. Không trừ điểm.",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> grade boundaries kỳ thi -> grade 1-7 (ranh giới đổi mỗi kỳ).",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Thành thạo GDC là chìa khoá: thống kê, hồi quy, giải phương trình, phân phối.",
+        "Luôn kèm đơn vị và diễn giải kết quả theo bối cảnh thực.",
+        "Cảnh giác câu 'reliability of prediction' — nêu rõ khi ngoại suy ngoài dữ liệu là kém tin cậy.",
+        "Canh thời gian ~1.1 phút/mark; ưu tiên các câu thống kê quen thuộc trước.",
+        "IA: bộ dữ liệu thực + phân tích thống kê SL rõ ràng, có reflection."
+      ],
+      "common_traps": [
+        "Quên đổi đơn vị (đặc biệt thể tích và tiền tệ).",
+        "Chỉ đưa con số GDC, thiếu diễn giải theo bối cảnh.",
+        "Nhầm tương quan với nhân quả khi bình luận.",
+        "Làm tròn quá sớm khiến sai đáp số cuối.",
+        "Đọc nhầm 'at least'/'more than' trong bài phân phối."
+      ],
+      "tags": [
+        "ib",
+        "toan",
+        "mathematics-ai",
+        "applications-and-interpretation",
+        "sl"
+      ],
+      "sources": [
+        "IBO Mathematics: applications and interpretation guide (first assessment 2021)",
+        "IBO DP Mathematics applications and interpretation updates (khung mới: first teaching 2027, first assessment 2029)"
+      ]
+    },
+    {
+      "id": "exam.ib-physics-hl",
+      "name": "IB Physics HL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "physics",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Physics HL là môn vật lí bậc cao của IB Diploma cho học sinh lớp 11-12 định hướng kĩ thuật, vật lí, y-sinh. Áp dụng khung syllabus MỚI (first assessment tháng 5/2025) tổ chức theo 5 theme A-E, đã bỏ Paper 3 options. Đánh giá gồm Paper 1 (1A trắc nghiệm + 1B dữ liệu, 2 giờ), Paper 2 (2,5 giờ) và Scientific Investigation nội bộ 20%. Được cấp IB Physics Data Booklet. Grade 6-7 thường được đại học Anh/Mỹ/Canada quy đổi tín chỉ hoặc miễn vật lí đại cương tuỳ trường.",
+      "sections": [
+        {
+          "name": "Paper 1 (gồm Paper 1A và Paper 1B)",
+          "question_count": "1A: 40 câu trắc nghiệm + 1B: câu dựa trên dữ liệu",
+          "duration_minutes": 120,
+          "weight_percent": 36,
+          "calculator": "cho-phep",
+          "note": "60 marks. Paper 1A: 40 câu trắc nghiệm (gồm phần SL và phần HL bổ sung, không trừ điểm câu sai). Paper 1B: câu dựa trên dữ liệu. Máy tính được phép (khung first assessment 2025)."
+        },
+        {
+          "name": "Paper 2",
+          "question_count": "câu ngắn + câu mở rộng",
+          "duration_minutes": 150,
+          "weight_percent": 44,
+          "calculator": "cho-phep",
+          "note": "90 marks. Câu ngắn và mở rộng bao quát toàn syllabus HL, có câu dựa trên dữ liệu và ít nhất một câu mở rộng đòi hỏi lập luận nối kết."
+        },
+        {
+          "name": "Internal Assessment - Scientific Investigation",
+          "question_count": "1 báo cáo (~3000 từ)",
+          "duration_minutes": 600,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "24 marks, ~10 giờ. Bài điều tra khoa học cá nhân (vật lí), chấm nội bộ 5 tiêu chí, IB moderation."
+        }
+      ],
+      "topic_weights": {
+        "A. Không gian, thời gian và chuyển động": 24,
+        "B. Bản chất hạt của vật chất (nhiệt)": 18,
+        "C. Sóng và dao động": 18,
+        "D. Trường (hấp dẫn, điện, từ)": 22,
+        "E. Vật lí hạt nhân và lượng tử": 18
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm Paper 1A",
+          "description": "40 câu 4 phương án, phủ SL+HL, không trừ điểm câu sai.",
+          "example_prompt": "Một vật ném ngang từ độ cao h với tốc độ đầu v. Bỏ qua sức cản, thời gian chạm đất phụ thuộc vào đại lượng nào? A. chỉ h  B. chỉ v  C. cả h và v  D. h và g.",
+          "approach": "Loại trừ nhanh bằng phân tích thứ nguyên và trường hợp giới hạn; tô hết mọi câu vì không bị trừ điểm."
+        },
+        {
+          "name": "Dựa trên dữ liệu (Paper 1B/2)",
+          "description": "Xử lí bảng số/đồ thị thí nghiệm: tuyến tính hoá, tính độ dốc, sai số.",
+          "example_prompt": "Bảng số đo chu kì T con lắc theo chiều dài L. Hãy vẽ đồ thị tuyến tính hoá phù hợp, xác định g từ độ dốc và ước lượng sai số của g.",
+          "approach": "Chọn biến để có đường thẳng (T² theo L), vẽ line of best fit, tính độ dốc kèm đơn vị, suy g, lan truyền sai số."
+        },
+        {
+          "name": "Câu mở rộng Paper 2",
+          "description": "Bài nhiều ý với command term rõ (state/describe/explain/deduce/evaluate).",
+          "example_prompt": "Một vệ tinh chuyển động tròn quanh Trái Đất. (a) Giải thích vì sao lực hấp dẫn đóng vai trò lực hướng tâm. (b) Suy ra biểu thức chu kì theo bán kính quỹ đạo. (c) Đánh giá ảnh hưởng của lực cản khí quyển ở quỹ đạo thấp.",
+          "approach": "Trả lời đúng 'liều lượng' theo command term và số marks; phần 'evaluate' phải nêu cả mặt lợi lẫn hạn chế rồi kết luận."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Physics Data Booklet cung cấp: hằng số vật lí (c, e, h, k_B, G, ε0, μ0...), TẤT CẢ phương trình chính của syllabus, khối lượng hạt, bảng tuần hoàn rút gọn, đơn vị.",
+        "Data Booklet KHÔNG có: định nghĩa/lời văn khái niệm, cách suy luận, quy ước dấu cụ thể của bài — thí sinh phải tự hiểu ý nghĩa từng đại lượng và biết CHỌN đúng phương trình."
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.intl-dong-hoc.bo-phuong-trinh-suvat",
+        "physics.thpt.intl-dong-hoc.nem-xien-tach-thanh-phan",
+        "physics.thpt.intl-dong-hoc.gia-toc-huong-tam-dang-chu-ki",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-theo-thanh-phan",
+        "physics.thpt.intl-dong-luong.bao-toan-dong-luong-hai-chieu",
+        "physics.thpt.intl-cong-nang-luong.dinh-li-cong-dong-nang-quy-uoc-ap",
+        "physics.thpt.intl-chuyen-dong-quay.phuong-trinh-quay-alpha",
+        "physics.thpt.intl-chuyen-dong-quay.bao-toan-momen-dong-luong-quoc-te",
+        "physics.thpt.intl-dao-dong.dinh-nghia-shm-ib",
+        "physics.thpt.intl-dao-dong.chu-ki-con-lac-ib",
+        "physics.thpt.intl-dao-dong.nang-luong-shm-theo-omega",
+        "physics.thpt.intl-hap-dan.cuong-do-truong-hap-dan",
+        "physics.thpt.intl-hap-dan.the-nang-hap-dan-hai-vat-ib",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.intl-nhiet-hoc.phuong-trinh-khi-li-tuong-kb",
+        "physics.thpt.intl-nhiet-hoc.nguyen-li-i-quy-uoc-ib",
+        "physics.thpt.intl-nhiet-hoc.toc-do-can-quan-phuong",
+        "physics.thpt.song-quoc-te.cuong-do-giao-thoa-hai-khe",
+        "physics.thpt.song-quoc-te.nhieu-xa-mot-khe-cuc-tieu",
+        "physics.thpt.song-co.hieu-ung-doppler",
+        "physics.thpt.tinh-dien-gauss.the-nang-tuong-tac-hai-dien-tich",
+        "physics.thpt.tu-truong-quoc-te.luc-lorentz-tong-quat",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-lenz",
+        "physics.thpt.mach-dien-quoc-te.dinh-luat-vong-kirchhoff",
+        "physics.thpt.vat-li-hien-dai-qt.nang-luong-photon-theo-ev-nm",
+        "physics.thpt.vat-li-hien-dai-qt.buoc-song-de-broglie",
+        "physics.thpt.hat-nhan.do-hut-khoi",
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-so-hat",
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien"
+      ],
+      "scoring": {
+        "description": "Điểm thô của ba thành phần (Paper 1, Paper 2, IA) được quy về điểm thang 1-7 theo ranh giới điểm (grade boundaries) công bố lại mỗi kỳ thi (tháng 5 và tháng 11). Grade 7 thường rơi vào khoảng ~65-80% điểm thô tuỳ độ khó đề từng kỳ; grade 4 (đạt) thường quanh ~40-50%. KHÔNG trừ điểm câu trắc nghiệm sai nên phải tô hết. Điểm môn góp vào tổng 45 điểm của bằng IB Diploma (6 môn x 7 + 3 điểm TOK/EE).",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> đối chiếu grade boundaries của kỳ đó -> grade 1-7. Ranh giới thay đổi mỗi kỳ.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Command term của IB quyết định mức độ trả lời và số điểm: (1) 'State' / 'List' / 'Identify' — chỉ nêu tên/đại lượng/đáp số, KHÔNG cần giải thích, một ý một điểm; (2) 'Outline' — nêu vắn tắt các ý chính; (3) 'Describe' — mô tả chi tiết có trình tự, chưa cần nguyên nhân; (4) 'Explain' — mô tả KÈM lí do/cơ chế (chữ 'because'/'due to' phải xuất hiện); (5) 'Deduce' — rút kết luận CÓ căn cứ từ dữ kiện đã cho; (6) 'Evaluate' / 'Discuss' — cân nhắc cả ưu lẫn nhược, mặt đúng lẫn hạn chế rồi kết luận. Đọc command term TRƯỚC, đếm số điểm của câu rồi viết đúng bấy nhiêu ý riêng biệt: viết ít ý hơn số điểm là mất điểm, viết dài dòng đúng loại khác cũng không được cộng.",
+        "Data Booklet in sẵn mọi công thức — kĩ năng cốt lõi là CHỌN đúng phương trình và hiểu từng kí hiệu, không phải học thuộc.",
+        "Paper 1B và Paper 2 nặng về xử lí dữ liệu: thạo vẽ đường thẳng tốt nhất, tính độ dốc kèm đơn vị, và ước lượng sai số (error bars, phần trăm sai số).",
+        "Máy tính được dùng ở CẢ Paper 1 (khung 2025) — tận dụng nhưng vẫn ghi các bước.",
+        "Câu tính toán: viết công thức chọn từ Booklet -> thế số kèm đơn vị -> đáp số kèm đơn vị và số chữ số có nghĩa hợp lí.",
+        "Chú ý mốc thời gian: đây là khung syllabus MỚI, first assessment tháng 5/2025, đã BỎ Paper 3 (options như Astrophysics/Engineering) — nội dung options được tích hợp một phần vào 5 theme A-E."
+      ],
+      "common_traps": [
+        "Chép sai kí hiệu từ Data Booklet (nhầm ρ khối lượng riêng với ρ điện trở suất).",
+        "Sai đơn vị/bậc mười (nm, MeV, kW·h) — phải quy về SI trước khi tính.",
+        "Câu 'explain' chỉ mô tả mà thiếu nguyên nhân -> mất nửa điểm.",
+        "Vẽ đồ thị thiếu nhãn trục/đơn vị hoặc chọn thang không tuyến tính hoá được.",
+        "Với sai số: quên cộng sai số tương đối khi nhân/chia đại lượng."
+      ],
+      "tags": [
+        "ib",
+        "vat-li",
+        "physics",
+        "hl",
+        "first-assessment-2025"
+      ],
+      "sources": [
+        "IBO Physics guide (first assessment 2025)",
+        "concordian-thailand.libguides.com IBDP Physics (2025) external assessment",
+        "ignitetraininginstitute.com/blog/ibdp-syllabus-changes"
+      ]
+    },
+    {
+      "id": "exam.ib-physics-sl",
+      "name": "IB Physics SL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "physics",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Physics SL là môn vật lí tiêu chuẩn của IB Diploma cho học sinh lớp 11-12, xây nền vật lí cho nhiều ngành. Khung syllabus MỚI (first assessment tháng 5/2025), 5 theme A-E, đã bỏ Paper 3. Đánh giá: Paper 1 (1A trắc nghiệm + 1B dữ liệu, 1,5 giờ), Paper 2 (1,5 giờ) và Scientific Investigation nội bộ 20%. Có IB Physics Data Booklet in sẵn công thức và hằng số. Thang 1-7 dùng xét tuyển quốc tế.",
+      "sections": [
+        {
+          "name": "Paper 1 (gồm Paper 1A và Paper 1B)",
+          "question_count": "1A: ~25 câu trắc nghiệm + 1B: câu dựa trên dữ liệu",
+          "duration_minutes": 90,
+          "weight_percent": 36,
+          "calculator": "cho-phep",
+          "note": "45 marks. Paper 1A: ~25 câu trắc nghiệm (mỗi câu 1 điểm, KHÔNG trừ điểm câu sai). Paper 1B: câu hỏi dựa trên dữ liệu/thực nghiệm trải khắp các chủ đề. Khung mới (first assessment 2025): máy tính ĐƯỢC PHÉP ở Paper 1 - thay đổi so với khung cũ vốn cấm máy tính ở paper trắc nghiệm."
+        },
+        {
+          "name": "Paper 2",
+          "question_count": "câu ngắn + ít nhất một câu mở rộng",
+          "duration_minutes": 90,
+          "weight_percent": 44,
+          "calculator": "cho-phep",
+          "note": "50 marks. Câu trả lời ngắn và mở rộng, có câu dựa trên dữ liệu. Đây là thành phần nặng điểm nhất."
+        },
+        {
+          "name": "Internal Assessment - Scientific Investigation",
+          "question_count": "1 báo cáo (~3000 từ)",
+          "duration_minutes": 600,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "24 marks, ~10 giờ. Một bài điều tra khoa học cá nhân (vật lí), chấm nội bộ theo 5 tiêu chí (Research design, Data analysis, Conclusion, Evaluation, và các khía cạnh giao tiếp), IB moderation. Khung 2025 gộp chung một tiêu chí IA cho cả ba môn khoa học."
+        }
+      ],
+      "topic_weights": {
+        "A. Không gian, thời gian và chuyển động": 25,
+        "B. Bản chất hạt của vật chất (nhiệt)": 19,
+        "C. Sóng và dao động": 18,
+        "D. Trường (hấp dẫn, điện, từ)": 20,
+        "E. Vật lí hạt nhân và lượng tử": 18
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm Paper 1A",
+          "description": "~25 câu (chỉ nội dung SL), không trừ điểm câu sai.",
+          "example_prompt": "Đại lượng nào sau đây là vô hướng? A. vận tốc  B. gia tốc  C. công  D. lực.",
+          "approach": "Nhận diện khái niệm cốt lõi, loại trừ nhanh; tô hết mọi câu."
+        },
+        {
+          "name": "Dựa trên dữ liệu (Paper 1B/2)",
+          "description": "Đọc đồ thị, tính độ dốc/diện tích, sai số cơ bản.",
+          "example_prompt": "Đồ thị lực F theo độ giãn x của một lò xo. (a) Xác định độ cứng từ độ dốc. (b) Tính công để giãn lò xo đến 4 cm bằng diện tích dưới đồ thị.",
+          "approach": "Độ dốc kèm đơn vị; diện tích tam giác cho công; kèm đơn vị và số chữ số có nghĩa hợp lí."
+        },
+        {
+          "name": "Câu mở rộng Paper 2",
+          "description": "Bài nhiều ý theo command term.",
+          "example_prompt": "Một sóng dừng hình thành trên dây hai đầu cố định. (a) Mô tả cách hình thành sóng dừng. (b) Xác định bước sóng của hoạ âm cơ bản theo chiều dài dây.",
+          "approach": "Bám command term và số marks; 'describe' cần chi tiết có trình tự, 'determine' cần đáp số kèm lập luận."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Physics Data Booklet cung cấp: hằng số vật lí (c, e, h, k_B, G, ε0, μ0...), TẤT CẢ phương trình chính của syllabus, khối lượng hạt, bảng tuần hoàn rút gọn, đơn vị.",
+        "Data Booklet KHÔNG có: định nghĩa/lời văn khái niệm, cách suy luận, quy ước dấu cụ thể của bài — thí sinh phải tự hiểu ý nghĩa từng đại lượng và biết CHỌN đúng phương trình."
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.intl-dong-hoc.bo-phuong-trinh-suvat",
+        "physics.thpt.intl-dong-hoc.nem-xien-tach-thanh-phan",
+        "physics.thpt.intl-dong-hoc.gia-toc-huong-tam-dang-chu-ki",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-theo-thanh-phan",
+        "physics.thpt.intl-dong-luong.bao-toan-dong-luong-hai-chieu",
+        "physics.thpt.intl-cong-nang-luong.dinh-li-cong-dong-nang-quy-uoc-ap",
+        "physics.thpt.intl-cong-nang-luong.hieu-suat-eta-ib",
+        "physics.thpt.intl-dao-dong.dinh-nghia-shm-ib",
+        "physics.thpt.intl-dao-dong.chu-ki-con-lac-ib",
+        "physics.thpt.intl-hap-dan.cuong-do-truong-hap-dan",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.intl-nhiet-hoc.phuong-trinh-khi-li-tuong-kb",
+        "physics.thpt.intl-nhiet-hoc.nguyen-li-i-quy-uoc-ib",
+        "physics.thpt.intl-nhiet-hoc.nhiet-luong-va-nhiet-dung-rieng-ib",
+        "physics.thpt.song-co.phuong-trinh-song",
+        "physics.thpt.song-quoc-te.cuong-do-giao-thoa-hai-khe",
+        "physics.thpt.song-co.hieu-ung-doppler",
+        "physics.thpt.tinh-dien-gauss.the-nang-tuong-tac-hai-dien-tich",
+        "physics.thpt.tu-truong-quoc-te.luc-lorentz-tong-quat",
+        "physics.thpt.cam-ung-dien-tu.dinh-luat-faraday-cam-ung",
+        "physics.thpt.mach-dien-quoc-te.dinh-luat-vong-kirchhoff",
+        "physics.thpt.vat-li-hien-dai-qt.nang-luong-photon-theo-ev-nm",
+        "physics.thpt.hat-nhan.do-hut-khoi",
+        "physics.thpt.hat-nhan.dinh-luat-phong-xa-so-hat",
+        "physics.thpt.luong-tu-anh-sang.phuong-trinh-einstein-quang-dien"
+      ],
+      "scoring": {
+        "description": "Điểm thô của ba thành phần (Paper 1, Paper 2, IA) được quy về điểm thang 1-7 theo ranh giới điểm (grade boundaries) công bố lại mỗi kỳ thi (tháng 5 và tháng 11). Grade 7 thường rơi vào khoảng ~65-80% điểm thô tuỳ độ khó đề từng kỳ; grade 4 (đạt) thường quanh ~40-50%. KHÔNG trừ điểm câu trắc nghiệm sai nên phải tô hết. Điểm môn góp vào tổng 45 điểm của bằng IB Diploma (6 môn x 7 + 3 điểm TOK/EE).",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> đối chiếu grade boundaries của kỳ đó -> grade 1-7. Ranh giới thay đổi mỗi kỳ.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Command term của IB quyết định mức độ trả lời và số điểm: (1) 'State' / 'List' / 'Identify' — chỉ nêu tên/đại lượng/đáp số, KHÔNG cần giải thích, một ý một điểm; (2) 'Outline' — nêu vắn tắt các ý chính; (3) 'Describe' — mô tả chi tiết có trình tự, chưa cần nguyên nhân; (4) 'Explain' — mô tả KÈM lí do/cơ chế (chữ 'because'/'due to' phải xuất hiện); (5) 'Deduce' — rút kết luận CÓ căn cứ từ dữ kiện đã cho; (6) 'Evaluate' / 'Discuss' — cân nhắc cả ưu lẫn nhược, mặt đúng lẫn hạn chế rồi kết luận. Đọc command term TRƯỚC, đếm số điểm của câu rồi viết đúng bấy nhiêu ý riêng biệt: viết ít ý hơn số điểm là mất điểm, viết dài dòng đúng loại khác cũng không được cộng.",
+        "Data Booklet in sẵn mọi công thức — kĩ năng cốt lõi là CHỌN đúng phương trình và hiểu từng kí hiệu, không phải học thuộc.",
+        "Paper 1B và Paper 2 nặng về xử lí dữ liệu: thạo vẽ đường thẳng tốt nhất, tính độ dốc kèm đơn vị, và ước lượng sai số (error bars, phần trăm sai số).",
+        "Máy tính được dùng ở CẢ Paper 1 (khung 2025) — tận dụng nhưng vẫn ghi các bước.",
+        "Câu tính toán: viết công thức chọn từ Booklet -> thế số kèm đơn vị -> đáp số kèm đơn vị và số chữ số có nghĩa hợp lí.",
+        "Chú ý mốc thời gian: đây là khung syllabus MỚI, first assessment tháng 5/2025, đã BỎ Paper 3 (options như Astrophysics/Engineering) — nội dung options được tích hợp một phần vào 5 theme A-E."
+      ],
+      "common_traps": [
+        "Chép sai kí hiệu từ Data Booklet (nhầm ρ khối lượng riêng với ρ điện trở suất).",
+        "Sai đơn vị/bậc mười (nm, MeV, kW·h) — phải quy về SI trước khi tính.",
+        "Câu 'explain' chỉ mô tả mà thiếu nguyên nhân -> mất nửa điểm.",
+        "Vẽ đồ thị thiếu nhãn trục/đơn vị hoặc chọn thang không tuyến tính hoá được.",
+        "Với sai số: quên cộng sai số tương đối khi nhân/chia đại lượng."
+      ],
+      "tags": [
+        "ib",
+        "vat-li",
+        "physics",
+        "sl",
+        "first-assessment-2025"
+      ],
+      "sources": [
+        "IBO Physics guide (first assessment 2025)",
+        "concordian-thailand.libguides.com IBDP Physics (2025) external assessment"
+      ]
+    },
+    {
+      "id": "exam.ib-chemistry-hl",
+      "name": "IB Chemistry HL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "chemistry",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Chemistry HL là môn hoá bậc cao của IB Diploma cho học sinh lớp 11-12 hướng y-dược, hoá, kĩ thuật, khoa học sự sống. Khung syllabus MỚI (first assessment tháng 5/2025) tổ chức theo Structure 1-3 và Reactivity 1-3, đã bỏ Paper 3 options. Đánh giá: Paper 1 (1A trắc nghiệm 40 câu + 1B dữ liệu, 2 giờ), Paper 2 (2,5 giờ) và Scientific Investigation 20%. Được cấp IB Chemistry Data Booklet (bảng tuần hoàn, phổ, thế điện cực). Grade 6-7 thường được quy đổi tín chỉ hoá đại cương tuỳ trường.",
+      "sections": [
+        {
+          "name": "Paper 1 (gồm Paper 1A và Paper 1B)",
+          "question_count": "1A: 40 câu trắc nghiệm + 1B: câu dựa trên dữ liệu",
+          "duration_minutes": 120,
+          "weight_percent": 36,
+          "calculator": "cho-phep",
+          "note": "75 marks. Paper 1A: 40 câu trắc nghiệm (gồm phần SL và phần HL bổ sung, không trừ điểm câu sai). Paper 1B: câu dựa trên dữ liệu. Máy tính được phép (khung first assessment 2025)."
+        },
+        {
+          "name": "Paper 2",
+          "question_count": "câu ngắn + câu mở rộng",
+          "duration_minutes": 150,
+          "weight_percent": 44,
+          "calculator": "cho-phep",
+          "note": "90 marks. Câu ngắn và mở rộng bao quát toàn syllabus HL, có câu dựa trên dữ liệu và ít nhất một câu mở rộng đòi hỏi lập luận nối kết."
+        },
+        {
+          "name": "Internal Assessment - Scientific Investigation",
+          "question_count": "1 báo cáo (~3000 từ)",
+          "duration_minutes": 600,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "24 marks, ~10 giờ. Bài điều tra khoa học cá nhân (hoá học), chấm nội bộ 5 tiêu chí, IB moderation."
+        }
+      ],
+      "topic_weights": {
+        "Structure 1 - Bản chất hạt của vật chất": 15,
+        "Structure 2 - Mô hình liên kết và cấu trúc": 15,
+        "Structure 3 - Phân loại vật chất (hữu cơ, phổ)": 12,
+        "Reactivity 1 - Nhiệt động (enthalpy, entropy, Gibbs)": 18,
+        "Reactivity 2 - Tốc độ và mức độ phản ứng (động học, cân bằng)": 20,
+        "Reactivity 3 - Cơ chế (acid-base, oxi hoá-khử, hữu cơ)": 20
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm Paper 1A",
+          "description": "40 câu phủ SL+HL, không trừ điểm câu sai.",
+          "example_prompt": "Phân tử nào sau đây có dạng hình học phẳng tam giác? A. NH3  B. BF3  C. H2O  D. PCl5.",
+          "approach": "Dùng VSEPR đếm miền electron; loại trừ; tô hết mọi câu."
+        },
+        {
+          "name": "Dựa trên dữ liệu / phổ (Paper 1B/2)",
+          "description": "Suy cấu trúc từ phổ IR/NMR/khối phổ hoặc xử lí số liệu thí nghiệm.",
+          "example_prompt": "Hợp chất C3H6O có đỉnh IR mạnh ~1715 cm⁻¹ và phổ ¹H NMR cho một đỉnh đơn. Hãy suy ra công thức cấu tạo và giải thích.",
+          "approach": "Tra bảng phổ trong Data Booklet, đối chiếu số đỉnh/độ dịch chuyển, lập luận tới cấu trúc."
+        },
+        {
+          "name": "Câu mở rộng Paper 2 (HL)",
+          "description": "Nhiệt động/động học/cân bằng/cơ chế nhiều ý theo command term.",
+          "example_prompt": "Cho phản ứng bậc một. (a) Vẽ phác đồ thị ln[A] theo thời gian. (b) Suy hằng số tốc độ từ độ dốc. (c) Giải thích ảnh hưởng của xúc tác tới năng lượng hoạt hoá và tốc độ.",
+          "approach": "Bám command term; 'deduce' cần lập luận từ dữ kiện; kèm đơn vị hằng số tốc độ theo bậc phản ứng."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Chemistry Data Booklet cung cấp: bảng tuần hoàn đầy đủ, hằng số (R, N_A, k_w...), thế điện cực chuẩn, năng lượng liên kết, bảng phổ (IR, ¹H NMR, khối phổ), một số phương trình.",
+        "Data Booklet KHÔNG có: cơ chế phản ứng hữu cơ, cách lập biểu thức K/tốc độ, quy trình tính pH/đệm, cách dựng chu trình Born-Haber — phải tự thuộc."
+      ],
+      "formulas_must_memorize": [
+        "chemistry.thpt.cau-tao-quoc-te.dien-tich-hat-nhan-hieu-dung",
+        "chemistry.thpt.cau-tao-quoc-te.pho-quang-electron-pes",
+        "chemistry.thpt.cau-tao-quoc-te.ky-hieu-axe-vsepr",
+        "chemistry.thpt.cau-tao-quoc-te.luc-lien-phan-tu",
+        "chemistry.thpt.dinh-luong-quoc-te.he-thuc-chuan-do",
+        "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong",
+        "chemistry.thpt.can-bang.hang-so-can-bang-kc",
+        "chemistry.thpt.can-bang.nguyen-li-le-chatelier",
+        "chemistry.thpt.can-bang-quoc-te.bang-ice",
+        "chemistry.thpt.can-bang-quoc-te.xap-xi-bo-qua-x",
+        "chemistry.thpt.axit-bazo-quoc-te.ph-nua-diem-tuong-duong",
+        "chemistry.thpt.axit-bazo-quoc-te.khoang-dem-hieu-qua",
+        "chemistry.thpt.axit-bazo-quoc-te.phan-tram-dien-li",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-mot",
+        "chemistry.thpt.dong-hoc-tich-phan.arrhenius-dang-logarit",
+        "chemistry.thpt.dong-hoc-tich-phan.don-vi-hang-so-toc-do",
+        "chemistry.thpt.nhiet-hoa-quoc-te.chu-trinh-born-haber",
+        "chemistry.thpt.nhiet-dong-thpt.gibbs-va-hang-so-can-bang",
+        "chemistry.thpt.nhiet-dong-thpt.bang-dau-tu-dien-bien",
+        "chemistry.thpt.dien-hoa-quoc-te.dien-cuc-hidro-chuan",
+        "chemistry.thpt.dien-hoa.phuong-trinh-nernst-25-do",
+        "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+        "chemistry.thpt.huu-co-quoc-te.co-che-sn1",
+        "chemistry.thpt.huu-co-quoc-te.co-che-sn2",
+        "chemistry.thpt.huu-co-quoc-te.cong-electrophin-markovnikov",
+        "chemistry.thpt.huu-co-quoc-te.quy-tac-cip-r-s",
+        "chemistry.thpt.nhiet-hoa-quoc-te.enthalpy-tu-nhiet-dot-chay",
+        "chemistry.thpt.can-bang.thuong-so-phan-ung"
+      ],
+      "scoring": {
+        "description": "Điểm thô của ba thành phần (Paper 1, Paper 2, IA) được quy về điểm thang 1-7 theo ranh giới điểm (grade boundaries) công bố lại mỗi kỳ thi (tháng 5 và tháng 11). Grade 7 thường rơi vào khoảng ~65-80% điểm thô tuỳ độ khó đề từng kỳ; grade 4 (đạt) thường quanh ~40-50%. KHÔNG trừ điểm câu trắc nghiệm sai nên phải tô hết. Điểm môn góp vào tổng 45 điểm của bằng IB Diploma (6 môn x 7 + 3 điểm TOK/EE).",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> đối chiếu grade boundaries của kỳ đó -> grade 1-7. Ranh giới thay đổi mỗi kỳ.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Command term của IB quyết định mức độ trả lời và số điểm: (1) 'State' / 'List' / 'Identify' — chỉ nêu tên/đại lượng/đáp số, KHÔNG cần giải thích, một ý một điểm; (2) 'Outline' — nêu vắn tắt các ý chính; (3) 'Describe' — mô tả chi tiết có trình tự, chưa cần nguyên nhân; (4) 'Explain' — mô tả KÈM lí do/cơ chế (chữ 'because'/'due to' phải xuất hiện); (5) 'Deduce' — rút kết luận CÓ căn cứ từ dữ kiện đã cho; (6) 'Evaluate' / 'Discuss' — cân nhắc cả ưu lẫn nhược, mặt đúng lẫn hạn chế rồi kết luận. Đọc command term TRƯỚC, đếm số điểm của câu rồi viết đúng bấy nhiêu ý riêng biệt: viết ít ý hơn số điểm là mất điểm, viết dài dòng đúng loại khác cũng không được cộng.",
+        "Chương trình 2025 tổ chức theo 'Structure' (1-3) và 'Reactivity' (1-3) thay cho 11 topic cũ — nắm khung này để định vị câu hỏi.",
+        "Data Booklet in sẵn nhiều bảng — kĩ năng là biết TRA đúng bảng (thế điện cực, phổ IR/NMR) và diễn giải, không phải học thuộc số.",
+        "Câu tính toán tỉ lượng/nhiệt hoá: viết phương trình cân bằng -> mol -> đại lượng cần; luôn kèm đơn vị.",
+        "Máy tính được dùng ở cả Paper 1 (khung 2025); vẫn ghi các bước để có method mark.",
+        "Mốc thời gian: khung MỚI first assessment tháng 5/2025, đã BỎ Paper 3 (options), gộp còn Paper 1 (1A trắc nghiệm + 1B dữ liệu) và Paper 2."
+      ],
+      "common_traps": [
+        "Nhầm đơn vị nồng độ/năng lượng (mol dm⁻³, kJ mol⁻¹) hoặc quên đổi °C sang K.",
+        "Viết cơ chế hữu cơ thiếu mũi tên cong đúng chiều (đầu mũi tên từ cặp electron tới nơi nhận).",
+        "Câu 'deduce' về hình học phân tử quên đếm cặp electron tự do (VSEPR).",
+        "Nhầm dấu ΔH/ΔG hoặc quên hệ số tỉ lượng khi lập biểu thức K.",
+        "Làm tròn giữa chừng trong bài pH/đệm khiến sai số lớn (pH là thang log)."
+      ],
+      "tags": [
+        "ib",
+        "hoa-hoc",
+        "chemistry",
+        "hl",
+        "first-assessment-2025"
+      ],
+      "sources": [
+        "IBO Chemistry guide (first assessment 2025)",
+        "clastify.com/blog/ib-chemistry-paper-1",
+        "savemyexams.com IB Chemistry syllabus update - first assessment 2025"
+      ]
+    },
+    {
+      "id": "exam.ib-chemistry-sl",
+      "name": "IB Chemistry SL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "chemistry",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Chemistry SL là môn hoá tiêu chuẩn của IB Diploma cho học sinh lớp 11-12, nền tảng hoá cho nhiều ngành. Khung syllabus MỚI (first assessment tháng 5/2025) theo Structure và Reactivity, đã bỏ Paper 3. Đánh giá: Paper 1 (1A trắc nghiệm 30 câu + 1B dữ liệu, 1,5 giờ), Paper 2 (1,5 giờ) và Scientific Investigation 20%. Có IB Chemistry Data Booklet in sẵn. Thang điểm 1-7 dùng xét tuyển đại học quốc tế.",
+      "sections": [
+        {
+          "name": "Paper 1 (gồm Paper 1A và Paper 1B)",
+          "question_count": "1A: 30 câu trắc nghiệm + 1B: câu dựa trên dữ liệu",
+          "duration_minutes": 90,
+          "weight_percent": 36,
+          "calculator": "cho-phep",
+          "note": "55 marks. Paper 1A: 30 câu trắc nghiệm (mỗi câu 1 điểm, KHÔNG trừ điểm câu sai). Paper 1B: câu hỏi dựa trên dữ liệu/thực nghiệm trải khắp các chủ đề. Khung mới (first assessment 2025): máy tính ĐƯỢC PHÉP ở Paper 1 - thay đổi so với khung cũ vốn cấm máy tính ở paper trắc nghiệm."
+        },
+        {
+          "name": "Paper 2",
+          "question_count": "câu ngắn + ít nhất một câu mở rộng",
+          "duration_minutes": 90,
+          "weight_percent": 44,
+          "calculator": "cho-phep",
+          "note": "50 marks. Câu trả lời ngắn và mở rộng, có câu dựa trên dữ liệu. Đây là thành phần nặng điểm nhất."
+        },
+        {
+          "name": "Internal Assessment - Scientific Investigation",
+          "question_count": "1 báo cáo (~3000 từ)",
+          "duration_minutes": 600,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "24 marks, ~10 giờ. Một bài điều tra khoa học cá nhân (hoá học), chấm nội bộ theo 5 tiêu chí (Research design, Data analysis, Conclusion, Evaluation, và các khía cạnh giao tiếp), IB moderation. Khung 2025 gộp chung một tiêu chí IA cho cả ba môn khoa học."
+        }
+      ],
+      "topic_weights": {
+        "Structure 1 - Bản chất hạt của vật chất": 16,
+        "Structure 2 - Mô hình liên kết và cấu trúc": 16,
+        "Structure 3 - Phân loại vật chất (hữu cơ, phổ)": 13,
+        "Reactivity 1 - Nhiệt động (enthalpy, entropy)": 17,
+        "Reactivity 2 - Tốc độ và mức độ phản ứng": 19,
+        "Reactivity 3 - Cơ chế (acid-base, oxi hoá-khử, hữu cơ)": 19
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm Paper 1A",
+          "description": "30 câu (nội dung SL), không trừ điểm câu sai.",
+          "example_prompt": "Số mol electron trao đổi khi 1 mol Al chuyển thành Al³⁺ là bao nhiêu? A. 1  B. 2  C. 3  D. 6.",
+          "approach": "Xác định thay đổi số oxi hoá; tô hết mọi câu."
+        },
+        {
+          "name": "Dựa trên dữ liệu (Paper 1B/2)",
+          "description": "Xử lí số liệu chuẩn độ/nhiệt hoá, đọc phổ đơn giản.",
+          "example_prompt": "Chuẩn độ 25,0 cm³ HCl bằng NaOH 0,100 mol dm⁻³ hết 22,5 cm³. Tính nồng độ HCl và nêu một nguồn sai số.",
+          "approach": "Dùng hệ thức chuẩn độ n=CV; kèm đơn vị; nêu sai số hệ thống/ngẫu nhiên hợp lí."
+        },
+        {
+          "name": "Câu mở rộng Paper 2",
+          "description": "Nhiều ý theo command term, gồm hữu cơ và tính toán.",
+          "example_prompt": "Cho phản ứng thế gốc tự do giữa metan và clo dưới ánh sáng. (a) Nêu điều kiện. (b) Mô tả giai đoạn khơi mào bằng phương trình.",
+          "approach": "'State' chỉ nêu điều kiện; 'describe/outline' viết phương trình từng giai đoạn; kèm điều kiện phản ứng."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Chemistry Data Booklet cung cấp: bảng tuần hoàn đầy đủ, hằng số (R, N_A, k_w...), thế điện cực chuẩn, năng lượng liên kết, bảng phổ (IR, ¹H NMR, khối phổ), một số phương trình.",
+        "Data Booklet KHÔNG có: cơ chế phản ứng hữu cơ, cách lập biểu thức K/tốc độ, quy trình tính pH/đệm, cách dựng chu trình Born-Haber — phải tự thuộc."
+      ],
+      "formulas_must_memorize": [
+        "chemistry.thpt.cau-tao-quoc-te.dien-tich-hat-nhan-hieu-dung",
+        "chemistry.thpt.cau-tao-quoc-te.ky-hieu-axe-vsepr",
+        "chemistry.thpt.cau-tao-quoc-te.luc-lien-phan-tu",
+        "chemistry.thpt.cau-tao-quoc-te.nang-luong-ion-hoa-lien-tiep",
+        "chemistry.thpt.cau-tao-quoc-te.cong-huong-bac-lien-ket-trung-binh",
+        "chemistry.thpt.dinh-luong-quoc-te.he-thuc-chuan-do",
+        "chemistry.thpt.dinh-luong-quoc-te.nong-do-ppm",
+        "chemistry.thpt.dinh-luong-quoc-te.the-tich-mol-stp-iupac",
+        "chemistry.thpt.dai-luong-co-ban.phuong-trinh-khi-li-tuong",
+        "chemistry.thpt.khi-li-tuong.dinh-luat-graham",
+        "chemistry.thpt.can-bang.hang-so-can-bang-kc",
+        "chemistry.thpt.can-bang.nguyen-li-le-chatelier",
+        "chemistry.thpt.can-bang.thuong-so-phan-ung",
+        "chemistry.thpt.can-bang-quoc-te.bang-ice",
+        "chemistry.thpt.nhiet-hoa-quoc-te.enthalpy-tu-nhiet-dot-chay",
+        "chemistry.thpt.nhiet-dong-thpt.entropy-chuan-phan-ung",
+        "chemistry.thpt.nhiet-dong-thpt.bang-dau-tu-dien-bien",
+        "chemistry.thpt.dong-hoc-tich-phan.don-vi-hang-so-toc-do",
+        "chemistry.thpt.axit-bazo-quoc-te.phan-tram-dien-li",
+        "chemistry.thpt.dien-hoa-quoc-te.dien-cuc-hidro-chuan",
+        "chemistry.thpt.dien-hoa.dinh-luat-faraday",
+        "chemistry.thpt.oxi-hoa-khu.can-bang-dien-tich-nua-phan-ung",
+        "chemistry.thpt.huu-co-quoc-te.the-goc-tu-do-halogen-hoa",
+        "chemistry.thpt.huu-co-quoc-te.cong-electrophin-markovnikov"
+      ],
+      "scoring": {
+        "description": "Điểm thô của ba thành phần (Paper 1, Paper 2, IA) được quy về điểm thang 1-7 theo ranh giới điểm (grade boundaries) công bố lại mỗi kỳ thi (tháng 5 và tháng 11). Grade 7 thường rơi vào khoảng ~65-80% điểm thô tuỳ độ khó đề từng kỳ; grade 4 (đạt) thường quanh ~40-50%. KHÔNG trừ điểm câu trắc nghiệm sai nên phải tô hết. Điểm môn góp vào tổng 45 điểm của bằng IB Diploma (6 môn x 7 + 3 điểm TOK/EE).",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> đối chiếu grade boundaries của kỳ đó -> grade 1-7. Ranh giới thay đổi mỗi kỳ.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Command term của IB quyết định mức độ trả lời và số điểm: (1) 'State' / 'List' / 'Identify' — chỉ nêu tên/đại lượng/đáp số, KHÔNG cần giải thích, một ý một điểm; (2) 'Outline' — nêu vắn tắt các ý chính; (3) 'Describe' — mô tả chi tiết có trình tự, chưa cần nguyên nhân; (4) 'Explain' — mô tả KÈM lí do/cơ chế (chữ 'because'/'due to' phải xuất hiện); (5) 'Deduce' — rút kết luận CÓ căn cứ từ dữ kiện đã cho; (6) 'Evaluate' / 'Discuss' — cân nhắc cả ưu lẫn nhược, mặt đúng lẫn hạn chế rồi kết luận. Đọc command term TRƯỚC, đếm số điểm của câu rồi viết đúng bấy nhiêu ý riêng biệt: viết ít ý hơn số điểm là mất điểm, viết dài dòng đúng loại khác cũng không được cộng.",
+        "Chương trình 2025 tổ chức theo 'Structure' (1-3) và 'Reactivity' (1-3) thay cho 11 topic cũ — nắm khung này để định vị câu hỏi.",
+        "Data Booklet in sẵn nhiều bảng — kĩ năng là biết TRA đúng bảng (thế điện cực, phổ IR/NMR) và diễn giải, không phải học thuộc số.",
+        "Câu tính toán tỉ lượng/nhiệt hoá: viết phương trình cân bằng -> mol -> đại lượng cần; luôn kèm đơn vị.",
+        "Máy tính được dùng ở cả Paper 1 (khung 2025); vẫn ghi các bước để có method mark.",
+        "Mốc thời gian: khung MỚI first assessment tháng 5/2025, đã BỎ Paper 3 (options), gộp còn Paper 1 (1A trắc nghiệm + 1B dữ liệu) và Paper 2."
+      ],
+      "common_traps": [
+        "Nhầm đơn vị nồng độ/năng lượng (mol dm⁻³, kJ mol⁻¹) hoặc quên đổi °C sang K.",
+        "Viết cơ chế hữu cơ thiếu mũi tên cong đúng chiều (đầu mũi tên từ cặp electron tới nơi nhận).",
+        "Câu 'deduce' về hình học phân tử quên đếm cặp electron tự do (VSEPR).",
+        "Nhầm dấu ΔH/ΔG hoặc quên hệ số tỉ lượng khi lập biểu thức K.",
+        "Làm tròn giữa chừng trong bài pH/đệm khiến sai số lớn (pH là thang log)."
+      ],
+      "tags": [
+        "ib",
+        "hoa-hoc",
+        "chemistry",
+        "sl",
+        "first-assessment-2025"
+      ],
+      "sources": [
+        "IBO Chemistry guide (first assessment 2025)",
+        "clastify.com/blog/ib-chemistry-paper-1"
+      ]
+    },
+    {
+      "id": "exam.ib-biology-hl",
+      "name": "IB Biology HL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "biology",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Biology HL là môn sinh bậc cao của IB Diploma cho học sinh lớp 11-12 hướng y, dược, công nghệ sinh học, khoa học sự sống. Khung syllabus MỚI (first assessment tháng 5/2025) tổ chức theo 4 theme A-D bắc qua 4 cấp tổ chức sống, đã bỏ Paper 3 options. Đánh giá: Paper 1 (1A trắc nghiệm 40 câu + 1B dữ liệu, 2 giờ), Paper 2 (2,5 giờ) và Scientific Investigation nội bộ 20%. Sinh học IB không có data booklet công thức riêng (công thức thống kê in trong đề). Grade 6-7 có thể quy đổi tín chỉ sinh đại cương tuỳ trường.",
+      "sections": [
+        {
+          "name": "Paper 1 (gồm Paper 1A và Paper 1B)",
+          "question_count": "1A: 40 câu trắc nghiệm + 1B: câu dựa trên dữ liệu",
+          "duration_minutes": 120,
+          "weight_percent": 36,
+          "calculator": "cho-phep",
+          "note": "75 marks. Paper 1A: 40 câu trắc nghiệm (gồm phần SL và phần HL bổ sung, không trừ điểm câu sai). Paper 1B: câu dựa trên dữ liệu. Máy tính được phép (khung first assessment 2025)."
+        },
+        {
+          "name": "Paper 2",
+          "question_count": "câu ngắn + câu mở rộng",
+          "duration_minutes": 150,
+          "weight_percent": 44,
+          "calculator": "cho-phep",
+          "note": "80 marks. Câu ngắn và mở rộng bao quát toàn syllabus HL, có câu dựa trên dữ liệu và ít nhất một câu mở rộng đòi hỏi lập luận nối kết."
+        },
+        {
+          "name": "Internal Assessment - Scientific Investigation",
+          "question_count": "1 báo cáo (~3000 từ)",
+          "duration_minutes": 600,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "24 marks, ~10 giờ. Bài điều tra khoa học cá nhân (sinh học), chấm nội bộ 5 tiêu chí, IB moderation."
+        }
+      ],
+      "topic_weights": {
+        "A. Thống nhất và đa dạng (phân tử, nước, ADN, tiến hoá, phân loại)": 26,
+        "B. Hình thái và chức năng (tế bào, cơ thể)": 26,
+        "C. Tương tác và phụ thuộc lẫn nhau (sinh thái, cân bằng nội môi, thần kinh)": 24,
+        "D. Liên tục và biến đổi (phân bào, di truyền, tiến hoá, hệ sinh thái)": 24
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm Paper 1A",
+          "description": "40 câu phủ SL+HL, không trừ điểm câu sai.",
+          "example_prompt": "Trong quần thể cân bằng Hardy-Weinberg, tần số alen lặn q=0,2. Tần số cá thể dị hợp là bao nhiêu? A. 0,04  B. 0,16  C. 0,32  D. 0,64.",
+          "approach": "Áp dụng 2pq; tính nhanh; tô hết mọi câu."
+        },
+        {
+          "name": "Dựa trên dữ liệu (Paper 1B/2)",
+          "description": "Đọc đồ thị/bảng thí nghiệm, tính thống kê, diễn giải.",
+          "example_prompt": "Bảng số liệu sinh trưởng vi khuẩn ở hai nhiệt độ kèm sai số chuẩn. Dùng khoảng tin cậy 95% (hai sai số chuẩn) để nhận xét sự khác biệt có ý nghĩa hay không.",
+          "approach": "So sánh thanh sai số/khoảng tin cậy; nêu rõ chồng lấn hay không rồi kết luận theo mức ý nghĩa."
+        },
+        {
+          "name": "Câu mở rộng Paper 2 (HL)",
+          "description": "Bài nhiều ý theo command term, có câu mở rộng nối kết toàn syllabus.",
+          "example_prompt": "(a) Vẽ và chú thích đồ thị vận tốc phản ứng enzyme theo nồng độ cơ chất. (b) Giải thích dạng đồ thị. (c) So sánh ức chế cạnh tranh và không cạnh tranh dựa trên đồ thị.",
+          "approach": "'Draw' cần trục và nhãn; 'explain' cần cơ chế; 'compare' nêu cả giống và khác; canh liều lượng theo marks."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Biology KHÔNG có Data Booklet công thức riêng như Lí/Hoá: các công thức thống kê (chi bình phương, t, Simpson, Lincoln...) và bảng giá trị tới hạn cần thiết được IN NGAY TRONG đề thi khi dùng.",
+        "Không được cấp sẵn: định nghĩa khái niệm, sơ đồ quá trình, cách diễn giải dữ liệu — phải tự nắm; nhiều tính toán yêu cầu tự nhớ cách áp dụng."
+      ],
+      "formulas_must_memorize": [
+        "biology.thpt.di-truyen-quan-the.dinh-luat-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-kieu-hinh-lan",
+        "biology.thpt.di-truyen-intl.tan-so-nguoi-mang-gen-2pq",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-tong-quat",
+        "biology.thpt.quy-luat-di-truyen.di-truyen-lien-ket-gioi-tinh-tren-x",
+        "biology.thpt.quy-luat-di-truyen.khoang-cach-ban-do-di-truyen",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-3-3-1",
+        "biology.thpt.di-truyen-intl.kiem-dinh-chi-binh-phuong-ti-le-mendel",
+        "biology.thpt.phan-bao.so-loai-giao-tu-toi-da",
+        "biology.thpt.te-bao.ti-le-dien-tich-tren-the-tich",
+        "biology.thpt.van-chuyen-chuyen-hoa.km-tai-nua-vmax",
+        "biology.thpt.van-chuyen-chuyen-hoa.phan-biet-uc-che-canh-tranh",
+        "biology.thpt.van-chuyen-chuyen-hoa.he-so-nhiet-q10-quoc-te",
+        "biology.thpt.van-chuyen-chuyen-hoa.pha-loang-dung-dich-civi",
+        "biology.thpt.dinh-luong-te-bao.do-phong-dai-tu-thanh-ti-le",
+        "biology.thpt.dinh-luong-te-bao.chi-so-phan-bao",
+        "biology.thpt.thong-ke-sinh-hoc-intl.khoang-tin-cay-95-hai-sai-so-chuan",
+        "biology.thpt.thong-ke-sinh-hoc-intl.kiem-dinh-t-a-level",
+        "biology.thpt.thong-ke-sinh-hoc-intl.muc-y-nghia-p-0-05",
+        "biology.thpt.thong-ke-sinh-hoc-intl.thanh-sai-so-va-cach-doc",
+        "biology.thpt.sinh-thai-intl.chi-so-simpson-nghich-dao",
+        "biology.thpt.sinh-thai-intl.chi-so-lincoln-ib",
+        "biology.thpt.sinh-thai-intl.hieu-suat-tieu-thu-dong-hoa-san-xuat",
+        "biology.thpt.sinh-thai.hieu-suat-sinh-thai",
+        "biology.thpt.sinh-thai.tang-truong-thuc-te-logistic",
+        "biology.thpt.adn-arn-protein.nguyen-tac-bo-sung-giua-hai-mach",
+        "biology.thpt.tien-hoa.do-thich-nghi-va-he-so-chon-loc"
+      ],
+      "scoring": {
+        "description": "Điểm thô của ba thành phần (Paper 1, Paper 2, IA) được quy về điểm thang 1-7 theo ranh giới điểm (grade boundaries) công bố lại mỗi kỳ thi (tháng 5 và tháng 11). Grade 7 thường rơi vào khoảng ~65-80% điểm thô tuỳ độ khó đề từng kỳ; grade 4 (đạt) thường quanh ~40-50%. KHÔNG trừ điểm câu trắc nghiệm sai nên phải tô hết. Điểm môn góp vào tổng 45 điểm của bằng IB Diploma (6 môn x 7 + 3 điểm TOK/EE).",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> đối chiếu grade boundaries của kỳ đó -> grade 1-7. Ranh giới thay đổi mỗi kỳ.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Command term của IB quyết định mức độ trả lời và số điểm: (1) 'State' / 'List' / 'Identify' — chỉ nêu tên/đại lượng/đáp số, KHÔNG cần giải thích, một ý một điểm; (2) 'Outline' — nêu vắn tắt các ý chính; (3) 'Describe' — mô tả chi tiết có trình tự, chưa cần nguyên nhân; (4) 'Explain' — mô tả KÈM lí do/cơ chế (chữ 'because'/'due to' phải xuất hiện); (5) 'Deduce' — rút kết luận CÓ căn cứ từ dữ kiện đã cho; (6) 'Evaluate' / 'Discuss' — cân nhắc cả ưu lẫn nhược, mặt đúng lẫn hạn chế rồi kết luận. Đọc command term TRƯỚC, đếm số điểm của câu rồi viết đúng bấy nhiêu ý riêng biệt: viết ít ý hơn số điểm là mất điểm, viết dài dòng đúng loại khác cũng không được cộng.",
+        "Khung 2025 tổ chức theo 4 theme A-D bắc qua 4 cấp tổ chức (phân tử, tế bào, cơ thể, hệ sinh thái) với các 'khái niệm nối' (unity/diversity, form/function...).",
+        "Sinh học IB nặng KĨ NĂNG XỬ LÍ DỮ LIỆU và thống kê: thạo chi bình phương, kiểm định t, chỉ số đa dạng, đọc thanh sai số và mức ý nghĩa p<0,05.",
+        "Câu tính toán: ghi công thức (đề in sẵn) -> thế số -> đáp số kèm đơn vị và số chữ số có nghĩa hợp lí.",
+        "Trả lời đúng thuật ngữ sinh học chuẩn; với 'compare' phải nêu cả điểm giống VÀ khác.",
+        "Mốc thời gian: khung MỚI first assessment tháng 5/2025, đã BỎ Paper 3 (options); nay còn Paper 1 (1A trắc nghiệm + 1B dữ liệu) và Paper 2."
+      ],
+      "common_traps": [
+        "Câu 'explain' về quá trình sinh học chỉ liệt kê bước mà thiếu nguyên nhân/cơ chế.",
+        "Nhầm 'độ lệch chuẩn mẫu' (chia n−1) với công thức tổng thể khi bấm máy.",
+        "Kết luận kiểm định thiếu so sánh giá trị tính với giá trị tới hạn/bậc tự do.",
+        "Đọc sai thanh sai số (error bars): chồng lấn không tự động nghĩa là 'không khác biệt'.",
+        "Dùng thuật ngữ thiếu chính xác (gene vs allele, mitosis vs meiosis) làm mất điểm."
+      ],
+      "tags": [
+        "ib",
+        "sinh-hoc",
+        "biology",
+        "hl",
+        "first-assessment-2025"
+      ],
+      "sources": [
+        "IBO Biology guide (first assessment 2025)",
+        "clastify.com/blog/ib-biology-paper-1",
+        "myrevisionagent.com/guides/ib-biology"
+      ]
+    },
+    {
+      "id": "exam.ib-biology-sl",
+      "name": "IB Biology SL",
+      "provider": "International Baccalaureate Organization",
+      "subject": "biology",
+      "curriculum": [
+        "ib"
+      ],
+      "level": "thpt",
+      "overview": "IB Biology SL là môn sinh tiêu chuẩn của IB Diploma cho học sinh lớp 11-12, nền sinh học cho nhiều ngành. Khung syllabus MỚI (first assessment tháng 5/2025) theo 4 theme A-D, đã bỏ Paper 3. Đánh giá: Paper 1 (1A trắc nghiệm 30 câu + 1B dữ liệu, 1,5 giờ), Paper 2 (1,5 giờ) và Scientific Investigation nội bộ 20%. Công thức thống kê được in trong đề khi cần. Thang 1-7 dùng xét tuyển đại học quốc tế.",
+      "sections": [
+        {
+          "name": "Paper 1 (gồm Paper 1A và Paper 1B)",
+          "question_count": "1A: 30 câu trắc nghiệm + 1B: câu dựa trên dữ liệu",
+          "duration_minutes": 90,
+          "weight_percent": 36,
+          "calculator": "cho-phep",
+          "note": "55 marks. Paper 1A: 30 câu trắc nghiệm (mỗi câu 1 điểm, KHÔNG trừ điểm câu sai). Paper 1B: câu hỏi dựa trên dữ liệu/thực nghiệm trải khắp các chủ đề. Khung mới (first assessment 2025): máy tính ĐƯỢC PHÉP ở Paper 1 - thay đổi so với khung cũ vốn cấm máy tính ở paper trắc nghiệm."
+        },
+        {
+          "name": "Paper 2",
+          "question_count": "câu ngắn + ít nhất một câu mở rộng",
+          "duration_minutes": 90,
+          "weight_percent": 44,
+          "calculator": "cho-phep",
+          "note": "50 marks. Câu trả lời ngắn và mở rộng, có câu dựa trên dữ liệu. Đây là thành phần nặng điểm nhất."
+        },
+        {
+          "name": "Internal Assessment - Scientific Investigation",
+          "question_count": "1 báo cáo (~3000 từ)",
+          "duration_minutes": 600,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "24 marks, ~10 giờ. Một bài điều tra khoa học cá nhân (sinh học), chấm nội bộ theo 5 tiêu chí (Research design, Data analysis, Conclusion, Evaluation, và các khía cạnh giao tiếp), IB moderation. Khung 2025 gộp chung một tiêu chí IA cho cả ba môn khoa học."
+        }
+      ],
+      "topic_weights": {
+        "A. Thống nhất và đa dạng (phân tử, nước, ADN, tiến hoá)": 27,
+        "B. Hình thái và chức năng (tế bào, cơ thể)": 26,
+        "C. Tương tác và phụ thuộc lẫn nhau (sinh thái, cân bằng nội môi)": 24,
+        "D. Liên tục và biến đổi (phân bào, di truyền, hệ sinh thái)": 23
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm Paper 1A",
+          "description": "30 câu (nội dung SL), không trừ điểm câu sai.",
+          "example_prompt": "Bào quan nào là nơi diễn ra hô hấp hiếu khí tạo phần lớn ATP? A. lục lạp  B. ti thể  C. ribosome  D. lưới nội chất.",
+          "approach": "Nhận diện chức năng bào quan; tô hết mọi câu."
+        },
+        {
+          "name": "Dựa trên dữ liệu (Paper 1B/2)",
+          "description": "Đọc đồ thị/bảng, tính toán và diễn giải cơ bản.",
+          "example_prompt": "Dùng phương pháp bắt-đánh dấu-thả-bắt lại: bắt 60 cá đánh dấu, thả; lần sau bắt 80 con có 15 con đánh dấu. Ước lượng kích thước quần thể bằng chỉ số Lincoln.",
+          "approach": "Áp dụng N = (M×n)/m; kèm đơn vị và nêu một giả định của phương pháp."
+        },
+        {
+          "name": "Câu mở rộng Paper 2",
+          "description": "Nhiều ý theo command term.",
+          "example_prompt": "(a) Nêu vai trò của ADN polymerase trong nhân đôi ADN. (b) Mô tả vì sao nhân đôi ADN là bán bảo toàn.",
+          "approach": "'State/outline' ngắn gọn; 'describe' chi tiết có trình tự; dùng thuật ngữ chuẩn."
+        }
+      ],
+      "formula_sheet_provided": [
+        "IB Biology KHÔNG có Data Booklet công thức riêng như Lí/Hoá: các công thức thống kê (chi bình phương, t, Simpson, Lincoln...) và bảng giá trị tới hạn cần thiết được IN NGAY TRONG đề thi khi dùng.",
+        "Không được cấp sẵn: định nghĩa khái niệm, sơ đồ quá trình, cách diễn giải dữ liệu — phải tự nắm; nhiều tính toán yêu cầu tự nhớ cách áp dụng."
+      ],
+      "formulas_must_memorize": [
+        "biology.thpt.di-truyen-quan-the.dinh-luat-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.tan-so-alen-tu-kieu-hinh-lan",
+        "biology.thpt.quy-luat-di-truyen.ti-le-kieu-hinh-tong-quat",
+        "biology.thpt.quy-luat-di-truyen.di-truyen-lien-ket-gioi-tinh-tren-x",
+        "biology.thpt.di-truyen-intl.kiem-dinh-chi-binh-phuong-ti-le-mendel",
+        "biology.thpt.phan-bao.so-loai-giao-tu-toi-da",
+        "biology.thpt.te-bao.ti-le-dien-tich-tren-the-tich",
+        "biology.thpt.te-bao.dieu-kien-moi-truong-tham-thau",
+        "biology.thpt.van-chuyen-chuyen-hoa.km-tai-nua-vmax",
+        "biology.thpt.van-chuyen-chuyen-hoa.he-so-nhiet-q10-quoc-te",
+        "biology.thpt.van-chuyen-chuyen-hoa.pha-loang-dung-dich-civi",
+        "biology.thpt.dinh-luong-te-bao.do-phong-dai-tu-thanh-ti-le",
+        "biology.thpt.dinh-luong-te-bao.chi-so-phan-bao",
+        "biology.thpt.thong-ke-sinh-hoc-intl.khoang-tin-cay-95-hai-sai-so-chuan",
+        "biology.thpt.thong-ke-sinh-hoc-intl.muc-y-nghia-p-0-05",
+        "biology.thpt.thong-ke-sinh-hoc-intl.thanh-sai-so-va-cach-doc",
+        "biology.thpt.sinh-thai.chi-so-simpson",
+        "biology.thpt.sinh-thai-intl.chi-so-lincoln-ib",
+        "biology.thpt.sinh-thai.hieu-suat-sinh-thai",
+        "biology.thpt.sinh-thai.tang-truong-thuc-te-logistic",
+        "biology.thpt.adn-arn-protein.nguyen-tac-bo-sung-giua-hai-mach",
+        "biology.thpt.tien-hoa.do-thich-nghi-va-he-so-chon-loc"
+      ],
+      "scoring": {
+        "description": "Điểm thô của ba thành phần (Paper 1, Paper 2, IA) được quy về điểm thang 1-7 theo ranh giới điểm (grade boundaries) công bố lại mỗi kỳ thi (tháng 5 và tháng 11). Grade 7 thường rơi vào khoảng ~65-80% điểm thô tuỳ độ khó đề từng kỳ; grade 4 (đạt) thường quanh ~40-50%. KHÔNG trừ điểm câu trắc nghiệm sai nên phải tô hết. Điểm môn góp vào tổng 45 điểm của bằng IB Diploma (6 môn x 7 + 3 điểm TOK/EE).",
+        "scale": "1-7",
+        "raw_to_scaled": "Điểm thô -> % -> đối chiếu grade boundaries của kỳ đó -> grade 1-7. Ranh giới thay đổi mỗi kỳ.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Command term của IB quyết định mức độ trả lời và số điểm: (1) 'State' / 'List' / 'Identify' — chỉ nêu tên/đại lượng/đáp số, KHÔNG cần giải thích, một ý một điểm; (2) 'Outline' — nêu vắn tắt các ý chính; (3) 'Describe' — mô tả chi tiết có trình tự, chưa cần nguyên nhân; (4) 'Explain' — mô tả KÈM lí do/cơ chế (chữ 'because'/'due to' phải xuất hiện); (5) 'Deduce' — rút kết luận CÓ căn cứ từ dữ kiện đã cho; (6) 'Evaluate' / 'Discuss' — cân nhắc cả ưu lẫn nhược, mặt đúng lẫn hạn chế rồi kết luận. Đọc command term TRƯỚC, đếm số điểm của câu rồi viết đúng bấy nhiêu ý riêng biệt: viết ít ý hơn số điểm là mất điểm, viết dài dòng đúng loại khác cũng không được cộng.",
+        "Khung 2025 tổ chức theo 4 theme A-D bắc qua 4 cấp tổ chức (phân tử, tế bào, cơ thể, hệ sinh thái) với các 'khái niệm nối' (unity/diversity, form/function...).",
+        "Sinh học IB nặng KĨ NĂNG XỬ LÍ DỮ LIỆU và thống kê: thạo chi bình phương, kiểm định t, chỉ số đa dạng, đọc thanh sai số và mức ý nghĩa p<0,05.",
+        "Câu tính toán: ghi công thức (đề in sẵn) -> thế số -> đáp số kèm đơn vị và số chữ số có nghĩa hợp lí.",
+        "Trả lời đúng thuật ngữ sinh học chuẩn; với 'compare' phải nêu cả điểm giống VÀ khác.",
+        "Mốc thời gian: khung MỚI first assessment tháng 5/2025, đã BỎ Paper 3 (options); nay còn Paper 1 (1A trắc nghiệm + 1B dữ liệu) và Paper 2."
+      ],
+      "common_traps": [
+        "Câu 'explain' về quá trình sinh học chỉ liệt kê bước mà thiếu nguyên nhân/cơ chế.",
+        "Nhầm 'độ lệch chuẩn mẫu' (chia n−1) với công thức tổng thể khi bấm máy.",
+        "Kết luận kiểm định thiếu so sánh giá trị tính với giá trị tới hạn/bậc tự do.",
+        "Đọc sai thanh sai số (error bars): chồng lấn không tự động nghĩa là 'không khác biệt'.",
+        "Dùng thuật ngữ thiếu chính xác (gene vs allele, mitosis vs meiosis) làm mất điểm."
+      ],
+      "tags": [
+        "ib",
+        "sinh-hoc",
+        "biology",
+        "sl",
+        "first-assessment-2025"
+      ],
+      "sources": [
+        "IBO Biology guide (first assessment 2025)",
+        "clastify.com/blog/ib-biology-paper-1"
+      ]
+    }
+  ]
+}

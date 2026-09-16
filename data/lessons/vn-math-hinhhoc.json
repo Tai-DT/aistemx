@@ -1,0 +1,1671 @@
+{
+  "meta": {
+    "file": "data/lessons/vn-math-hinhhoc.json",
+    "subject": "math",
+    "title": "Bài học Toán THPT (VN GDPT 2018): Vectơ, Hình học phẳng, Hình không gian và Toạ độ",
+    "levels": [
+      "thpt"
+    ],
+    "count": 23
+  },
+  "lessons": [
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.dinh-li-cosin-va-sin",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương III: Hệ thức lượng trong tam giác",
+      "order": 1,
+      "title_vi": "Định lí côsin và định lí sin trong tam giác",
+      "title_en": "The law of cosines and the law of sines",
+      "objectives": [
+        "Phát biểu và vận dụng được định lí côsin để tính cạnh hoặc góc của tam giác",
+        "Phát biểu và vận dụng được định lí sin để tính cạnh, góc và bán kính đường tròn ngoại tiếp",
+        "Lựa chọn được định lí phù hợp với dữ kiện bài toán giải tam giác"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Định lí côsin",
+          "term_en": "Law of cosines",
+          "definition": "Trong tam giác ABC: bình phương một cạnh bằng tổng bình phương hai cạnh kia trừ hai lần tích của chúng với côsin góc xen giữa, tức $a^2=b^2+c^2-2bc\\cos A$."
+        },
+        {
+          "term_vi": "Định lí sin",
+          "term_en": "Law of sines",
+          "definition": "Trong tam giác ABC với R là bán kính đường tròn ngoại tiếp: tỉ số giữa mỗi cạnh và sin góc đối bằng nhau và bằng 2R, tức $\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}=\\dfrac{c}{\\sin C}=2R$."
+        },
+        {
+          "term_vi": "Hệ quả định lí côsin",
+          "term_en": "Corollary of the law of cosines",
+          "definition": "Công thức tính côsin của một góc theo ba cạnh: $\\cos A=\\dfrac{b^2+c^2-a^2}{2bc}$, dùng để tìm góc khi biết ba cạnh."
+        }
+      ],
+      "content": "## Vấn đề: định lí Pythagore không đủ\n\nĐịnh lí Pythagore chỉ đúng cho tam giác vuông. Nhưng đa số tam giác trong thực tế (đo đạc địa hình, định vị) không vuông. Ta cần một công cụ tổng quát nối **ba cạnh với một góc**.\n\n## Định lí côsin\n\nVới tam giác $ABC$ có các cạnh $a=BC,\\ b=CA,\\ c=AB$:\n\n$$a^2=b^2+c^2-2bc\\cos A.$$\n\nKhi $A=90^{\\circ}$ thì $\\cos A=0$ và công thức trở về đúng Pythagore — nên đây là bản mở rộng của định lí quen thuộc. Số hạng $-2bc\\cos A$ chính là phần \"hiệu chỉnh\" cho việc góc lệch khỏi $90^{\\circ}$: góc nhọn cho $\\cos A>0$ nên cạnh đối ngắn lại, góc tù cho $\\cos A<0$ nên cạnh đối dài ra.\n\nTừ đó suy ra **hệ quả** tìm góc khi biết ba cạnh:\n\n$$\\cos A=\\frac{b^2+c^2-a^2}{2bc}.$$\n\n## Định lí sin\n\n$$\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2R.$$\n\nĐịnh lí sin gắn cạnh với **góc đối** và với bán kính đường tròn ngoại tiếp $R$. Nó mạnh khi ta biết một cặp cạnh - góc đối.\n\n## Khi nào dùng cái nào\n\n- Biết **hai cạnh và góc xen giữa**, hoặc **ba cạnh**: dùng định lí côsin.\n- Biết **một cạnh và hai góc**, hoặc **cặp cạnh - góc đối**: dùng định lí sin.\n\nNhận đúng dạng dữ kiện là chìa khoá giải nhanh mọi bài \"giải tam giác\".",
+      "formulas": [
+        "math.thpt.he-thuc-luong.dinh-li-cosin",
+        "math.thpt.he-thuc-luong.he-qua-dinh-li-cosin",
+        "math.thpt.he-thuc-luong.dinh-li-sin",
+        "math.thpt.he-thuc-luong.ban-kinh-ngoai-tiep",
+        "math.thpt.he-thuc-luong.canh-theo-ban-kinh-ngoai-tiep",
+        "math.thpt.he-thuc-luong.duong-phan-giac",
+        "math.thpt.he-thuc-luong.tinh-chat-duong-phan-giac",
+        "math.thpt.he-thuc-luong.dien-tich-duong-cao",
+        "math.thpt.he-thuc-luong.dien-tich-toa-do",
+        "math.thpt.he-thuc-luong.cos-nua-goc",
+        "math.thpt.he-thuc-luong.tam-giac-deu"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho tam giác $ABC$ có $b=8,\\ c=5,\\ A=60^{\\circ}$. Tính $a$ và bán kính $R$.",
+          "solution": "Vì biết hai cạnh và góc xen giữa nên chọn định lí côsin: $a^2=8^2+5^2-2\\cdot8\\cdot5\\cdot\\cos60^{\\circ}=64+25-40=49$, suy ra $a=7$. Muốn tìm $R$ ta đã có cặp cạnh - góc đối $a=7,\\ A=60^{\\circ}$ nên dùng định lí sin: $2R=\\dfrac{a}{\\sin A}=\\dfrac{7}{\\sin60^{\\circ}}=\\dfrac{7}{\\sqrt3/2}=\\dfrac{14}{\\sqrt3}$, do đó $R=\\dfrac{7}{\\sqrt3}=\\dfrac{7\\sqrt3}{3}$.",
+          "answer": "$a=7,\\ R=\\dfrac{7\\sqrt3}{3}$"
+        }
+      ],
+      "common_mistakes": [
+        "Áp dụng $a^2=b^2+c^2+2bc\\cos A$ (sai dấu) — công thức đúng là dấu trừ; đặt sai dấu làm cạnh đối bị tính dài hơn thực tế.",
+        "Dùng định lí sin khi chỉ biết ba cạnh mà không có góc nào — khi đó không có cặp cạnh - góc đối để lập tỉ số, phải dùng hệ quả côsin để ra góc trước.",
+        "Quên rằng $\\sin$ của góc tù vẫn dương nên khi giải ra hai nghiệm góc, học sinh loại nhầm nghiệm tù; cần đối chiếu với quan hệ cạnh lớn đối góc lớn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "hinh-hoc",
+        "he-thuc-luong",
+        "dinh-li-cosin",
+        "dinh-li-sin",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.dien-tich-va-giai-tam-giac",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương III: Hệ thức lượng trong tam giác",
+      "order": 2,
+      "title_vi": "Công thức diện tích, đường trung tuyến và giải tam giác",
+      "title_en": "Area formulas, medians and solving triangles",
+      "objectives": [
+        "Vận dụng được các công thức diện tích tam giác phù hợp với từng bộ dữ kiện",
+        "Tính được độ dài đường trung tuyến bằng công thức và giải thích nguồn gốc của nó",
+        "Giải được tam giác và tính các đại lượng liên quan (R, r, đường cao)"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.dinh-li-cosin-va-sin"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công thức Heron",
+          "term_en": "Heron's formula",
+          "definition": "Diện tích tam giác theo ba cạnh: $S=\\sqrt{p(p-a)(p-b)(p-c)}$ với $p=\\dfrac{a+b+c}{2}$ là nửa chu vi."
+        },
+        {
+          "term_vi": "Đường trung tuyến",
+          "term_en": "Median",
+          "definition": "Đoạn nối một đỉnh với trung điểm cạnh đối; độ dài trung tuyến ứng cạnh a là $m_a^2=\\dfrac{2b^2+2c^2-a^2}{4}$."
+        },
+        {
+          "term_vi": "Bán kính đường tròn nội tiếp",
+          "term_en": "Inradius",
+          "definition": "Bán kính $r$ liên hệ diện tích và nửa chu vi qua $S=pr$, do đó $r=\\dfrac{S}{p}$."
+        }
+      ],
+      "content": "## Nhiều công thức diện tích cho nhiều tình huống\n\nDiện tích tam giác không chỉ là $\\dfrac12 \\times$ đáy $\\times$ chiều cao. Tùy dữ kiện, ta chọn công thức tiết kiệm phép tính nhất:\n\n$$S=\\frac12 a h_a=\\frac12 bc\\sin A=\\frac{abc}{4R}=pr=\\sqrt{p(p-a)(p-b)(p-c)}.$$\n\n- Biết **hai cạnh và góc xen giữa**: dùng $S=\\dfrac12 bc\\sin A$.\n- Biết **ba cạnh**: dùng Heron.\n- Cần nối với **đường tròn ngoại tiếp**: dùng $S=\\dfrac{abc}{4R}$; với **nội tiếp**: dùng $S=pr$.\n\nSợi dây nối các công thức này cho phép, chẳng hạn, tính $R$ và $r$ chỉ từ ba cạnh.\n\n## Đường trung tuyến\n\nBa trung tuyến của tam giác đồng quy tại trọng tâm. Độ dài trung tuyến ứng đỉnh $A$ (đi tới trung điểm cạnh $a$):\n\n$$m_a^2=\\frac{2b^2+2c^2-a^2}{4}.$$\n\nCông thức này suy ra trực tiếp từ định lí côsin áp vào hai tam giác con, hoặc gọn hơn bằng vectơ $\\overrightarrow{AM}=\\dfrac12(\\overrightarrow{AB}+\\overrightarrow{AC})$ rồi bình phương vô hướng.\n\n## Giải tam giác\n\n\"Giải tam giác\" nghĩa là từ một số yếu tố cho trước, tìm tất cả cạnh và góc còn lại. Chiến lược: chọn định lí côsin/sin ở bài trước để ra yếu tố đầu tiên, sau đó dùng công thức diện tích và trung tuyến để hoàn tất.",
+      "formulas": [
+        "math.thpt.he-thuc-luong.dien-tich-heron",
+        "math.thpt.he-thuc-luong.dien-tich-hai-canh-sin",
+        "math.thpt.he-thuc-luong.dien-tich-abc-4r",
+        "math.thpt.he-thuc-luong.dien-tich-pr",
+        "math.thpt.he-thuc-luong.duong-trung-tuyen",
+        "math.thpt.he-thuc-luong.nua-chu-vi",
+        "math.thpt.he-thuc-luong.ban-kinh-noi-tiep",
+        "math.thpt.he-thuc-luong.tong-binh-phuong-trung-tuyen",
+        "math.thpt.he-thuc-luong.dien-tich-tu-giac-hai-duong-cheo",
+        "math.thpt.he-thuc-luong.ban-kinh-bang-tiep"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho tam giác có $a=13,\\ b=14,\\ c=15$. Tính diện tích $S$ và bán kính đường tròn nội tiếp $r$.",
+          "solution": "Ba cạnh đã biết nên dùng Heron. Nửa chu vi $p=\\dfrac{13+14+15}{2}=21$. Khi đó $S=\\sqrt{21(21-13)(21-14)(21-15)}=\\sqrt{21\\cdot8\\cdot7\\cdot6}=\\sqrt{7056}=84$. Để tìm $r$, dùng liên hệ $S=pr$ nên $r=\\dfrac{S}{p}=\\dfrac{84}{21}=4$.",
+          "answer": "$S=84,\\ r=4$"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng Heron với $p$ là **chu vi** thay vì **nửa chu vi** — kết quả sai lệch lớn vì mỗi thừa số trong căn đều sai.",
+        "Nhầm công thức trung tuyến thành $m_a^2=\\dfrac{2b^2+2c^2+a^2}{4}$ (sai dấu của $a^2$) — dấu phải là trừ vì cạnh $a$ là cạnh mà trung tuyến 'chia đôi'.",
+        "Chọn $S=\\dfrac12 bc\\sin A$ nhưng lấy góc không xen giữa hai cạnh $b,c$ — công thức chỉ đúng với góc **kẹp giữa** đúng hai cạnh đó."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "he-thuc-luong",
+        "dien-tich",
+        "trung-tuyen",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.vecto-va-cac-phep-toan",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Vectơ",
+      "order": 1,
+      "title_vi": "Vectơ và các phép toán cộng, trừ, nhân với một số",
+      "title_en": "Vectors and operations: addition, subtraction, scalar multiplication",
+      "objectives": [
+        "Thực hiện được các phép cộng, trừ vectơ bằng quy tắc ba điểm và quy tắc hình bình hành",
+        "Phân tích được một vectơ theo hai vectơ không cùng phương",
+        "Vận dụng được hệ thức trung điểm và trọng tâm để chứng minh đẳng thức vectơ"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Vectơ",
+          "term_en": "Vector",
+          "definition": "Đại lượng có hướng, biểu diễn bằng đoạn thẳng có hướng; đặc trưng bởi phương, chiều và độ dài."
+        },
+        {
+          "term_vi": "Quy tắc ba điểm",
+          "term_en": "Triangle rule",
+          "definition": "Với ba điểm bất kì A, B, C: $\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}$."
+        },
+        {
+          "term_vi": "Hai vectơ cùng phương",
+          "term_en": "Collinear vectors",
+          "definition": "$\\vec a,\\vec b$ (với $\\vec b\\ne\\vec 0$) cùng phương khi và chỉ khi tồn tại số $k$ để $\\vec a=k\\vec b$."
+        }
+      ],
+      "content": "## Vì sao cần vectơ\n\nNhiều đại lượng (lực, vận tốc, độ dời) không chỉ có độ lớn mà còn có **hướng**. Vectơ là công cụ đại số hoá hình học: biến bài toán dựng hình thành bài toán tính toán với các phép cộng, trừ, nhân.\n\n## Cộng và trừ vectơ\n\n**Quy tắc ba điểm** nối các đoạn liên tiếp:\n\n$$\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}.$$\n\n**Quy tắc hình bình hành** cộng hai vectơ chung gốc: nếu $ABDC$ là hình bình hành thì $\\overrightarrow{AB}+\\overrightarrow{AC}=\\overrightarrow{AD}$. **Quy tắc trừ** biểu diễn hiệu qua chung gốc: $\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}$.\n\n## Nhân vectơ với một số\n\n$k\\vec a$ cùng phương với $\\vec a$, cùng chiều khi $k>0$ và ngược chiều khi $k<0$, độ dài $|k\\vec a|=|k|\\,|\\vec a|$. Từ đây có **điều kiện cùng phương**: $\\vec a=k\\vec b$.\n\n## Hai hệ thức nền tảng\n\nVới $M$ là trung điểm $AB$ và $G$ là trọng tâm tam giác $ABC$, với điểm $O$ tuỳ ý:\n\n$$\\overrightarrow{OA}+\\overrightarrow{OB}=2\\overrightarrow{OM},\\qquad \\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec 0.$$\n\nHai hệ thức này là công cụ chủ lực để chứng minh ba điểm thẳng hàng, hai đường thẳng song song, hay tìm điểm cố định — chỉ bằng biến đổi đại số, không cần dựng hình.",
+      "formulas": [
+        "math.thpt.vecto.quy-tac-ba-diem",
+        "math.thpt.vecto.quy-tac-hinh-binh-hanh",
+        "math.thpt.vecto.quy-tac-tru",
+        "math.thpt.vecto.tich-vecto-voi-mot-so",
+        "math.thpt.vecto.dieu-kien-cung-phuong",
+        "math.thpt.vecto.phan-tich-vecto",
+        "math.thpt.vecto.he-thuc-trung-diem",
+        "math.thpt.vecto.he-thuc-trong-tam"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho tam giác $ABC$ có trọng tâm $G$. Chứng minh với mọi điểm $O$: $\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=3\\overrightarrow{OG}$.",
+          "solution": "Ý tưởng: chèn điểm $G$ vào mỗi vectơ bằng quy tắc ba điểm, rồi dùng tính chất trọng tâm. Ta có $\\overrightarrow{OA}=\\overrightarrow{OG}+\\overrightarrow{GA}$ và tương tự cho $B,C$. Cộng lại: $\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=3\\overrightarrow{OG}+(\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC})$. Vì $G$ là trọng tâm nên tổng trong ngoặc bằng $\\vec 0$, suy ra đẳng thức cần chứng minh.",
+          "answer": "$\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=3\\overrightarrow{OG}$"
+        }
+      ],
+      "common_mistakes": [
+        "Viết $\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{CA}$ (sai chiều) — quy tắc ba điểm cho $\\overrightarrow{AC}$; điểm cuối phải là điểm cuối của vectơ thứ hai.",
+        "Coi $|\\,\\vec a+\\vec b\\,|=|\\vec a|+|\\vec b|$ luôn đúng — chỉ đúng khi hai vectơ cùng hướng; nói chung độ dài tổng nhỏ hơn tổng độ dài.",
+        "Nhầm 'cùng phương' với 'cùng hướng' — cùng phương gồm cả hai trường hợp cùng và ngược hướng, tương ứng $k>0$ hoặc $k<0$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "hinh-hoc",
+        "vecto",
+        "phep-toan-vecto",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.tich-vo-huong-hai-vecto",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Vectơ",
+      "order": 2,
+      "title_vi": "Tích vô hướng của hai vectơ",
+      "title_en": "The dot product of two vectors",
+      "objectives": [
+        "Tính được tích vô hướng bằng định nghĩa và bằng biểu thức tọa độ",
+        "Vận dụng được tích vô hướng để tính góc, độ dài và chứng minh vuông góc",
+        "Giải thích được ý nghĩa hình học của tích vô hướng qua hình chiếu"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.vecto-va-cac-phep-toan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tích vô hướng",
+          "term_en": "Dot product",
+          "definition": "$\\vec a\\cdot\\vec b=|\\vec a|\\,|\\vec b|\\cos(\\vec a,\\vec b)$; kết quả là một số thực, không phải vectơ."
+        },
+        {
+          "term_vi": "Biểu thức tọa độ",
+          "term_en": "Coordinate form",
+          "definition": "Trong $Oxy$, nếu $\\vec a=(x_1;y_1),\\ \\vec b=(x_2;y_2)$ thì $\\vec a\\cdot\\vec b=x_1x_2+y_1y_2$."
+        },
+        {
+          "term_vi": "Điều kiện vuông góc",
+          "term_en": "Orthogonality condition",
+          "definition": "$\\vec a\\perp\\vec b\\Leftrightarrow \\vec a\\cdot\\vec b=0$ (với hai vectơ khác vectơ-không)."
+        }
+      ],
+      "content": "## Một phép nhân trả về con số\n\nCộng, trừ, nhân với số đều cho ra vectơ. Tích vô hướng khác hẳn: nó nhân hai vectơ để ra một **số thực**, và số đó chứa thông tin về **góc** giữa chúng.\n\n## Hai cách tính\n\nĐịnh nghĩa hình học:\n\n$$\\vec a\\cdot\\vec b=|\\vec a|\\,|\\vec b|\\cos(\\vec a,\\vec b).$$\n\nBiểu thức tọa độ (rất tiện khi có $Oxy$):\n\n$$\\vec a\\cdot\\vec b=x_1x_2+y_1y_2.$$\n\nHai cách này bằng nhau, cho ta một cây cầu giữa hình học (góc) và đại số (tọa độ).\n\n## Ba ứng dụng lớn\n\n1. **Độ dài**: $|\\vec a|=\\sqrt{\\vec a\\cdot\\vec a}=\\sqrt{x_1^2+y_1^2}$, vì $\\vec a\\cdot\\vec a=|\\vec a|^2$.\n2. **Góc**: $\\cos(\\vec a,\\vec b)=\\dfrac{\\vec a\\cdot\\vec b}{|\\vec a|\\,|\\vec b|}$.\n3. **Vuông góc**: $\\vec a\\perp\\vec b\\Leftrightarrow \\vec a\\cdot\\vec b=0$. Đây là điều kiện được dùng nhiều nhất trong hình tọa độ.\n\n## Ý nghĩa qua hình chiếu\n\n$\\vec a\\cdot\\vec b$ bằng độ dài $|\\vec a|$ nhân với **hình chiếu có dấu** của $\\vec b$ lên phương $\\vec a$. Khi góc nhọn, tích dương; góc tù, tích âm; vuông góc, tích bằng 0. Cách hiểu này giải thích vì sao điều kiện vuông góc lại đơn giản đến vậy.",
+      "formulas": [
+        "math.thpt.vecto.tich-vo-huong-dinh-nghia",
+        "math.thpt.vecto.tich-vo-huong-toa-do",
+        "math.thpt.vecto.tich-vo-huong-tinh-chat",
+        "math.thpt.vecto.binh-phuong-vo-huong",
+        "math.thpt.vecto.goc-giua-hai-vecto",
+        "math.thpt.vecto.dieu-kien-vuong-goc",
+        "math.thpt.vecto.quy-tac-hinh-hop",
+        "math.thpt.vecto.vecto-doi",
+        "math.thpt.vecto.binh-phuong-tong-vecto"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Trong $Oxy$ cho $\\vec a=(1;2),\\ \\vec b=(2;1)$. Tính góc giữa hai vectơ.",
+          "solution": "Trước hết tính tích vô hướng theo tọa độ: $\\vec a\\cdot\\vec b=1\\cdot2+2\\cdot1=4$. Tính độ dài: $|\\vec a|=\\sqrt{1^2+2^2}=\\sqrt5$ và $|\\vec b|=\\sqrt{2^2+1^2}=\\sqrt5$. Do đó $\\cos(\\vec a,\\vec b)=\\dfrac{4}{\\sqrt5\\cdot\\sqrt5}=\\dfrac{4}{5}$. Suy ra góc $\\approx 36{,}87^{\\circ}$.",
+          "answer": "$\\cos(\\vec a,\\vec b)=\\dfrac45$, góc $\\approx 36{,}87^{\\circ}$"
+        }
+      ],
+      "common_mistakes": [
+        "Viết $\\vec a\\cdot\\vec b$ ra một vectơ — sai bản chất; tích vô hướng luôn là một số thực.",
+        "Quên nhân $\\cos$ trong định nghĩa, lấy $\\vec a\\cdot\\vec b=|\\vec a||\\vec b|$ — chỉ đúng khi hai vectơ cùng hướng ($\\cos=1$).",
+        "Kết luận $\\vec a\\cdot\\vec b=0$ thì $\\vec a=\\vec 0$ hoặc $\\vec b=\\vec 0$ — sai, tích vô hướng bằng 0 chủ yếu do **vuông góc**, không phải do một vectơ bằng không."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "vecto",
+        "tich-vo-huong",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.toa-do-vecto-va-diem-oxy",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Phương pháp toạ độ trong mặt phẳng",
+      "order": 1,
+      "title_vi": "Tọa độ của vectơ và của điểm trong mặt phẳng Oxy",
+      "title_en": "Coordinates of vectors and points in the plane",
+      "objectives": [
+        "Xác định được tọa độ vectơ, độ dài, trung điểm và trọng tâm trong Oxy",
+        "Vận dụng được biểu thức tọa độ của các phép toán vectơ",
+        "Tính được khoảng cách giữa hai điểm và chứng minh các quan hệ bằng tọa độ"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.vecto-va-cac-phep-toan",
+        "lesson.math.vn-thpt-math-hinhhoc.tich-vo-huong-hai-vecto"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tọa độ của vectơ theo hai điểm",
+          "term_en": "Vector from two points",
+          "definition": "$\\overrightarrow{AB}=(x_B-x_A;\\,y_B-y_A)$: lấy tọa độ điểm cuối trừ điểm đầu."
+        },
+        {
+          "term_vi": "Tọa độ trung điểm",
+          "term_en": "Midpoint",
+          "definition": "Trung điểm M của AB có tọa độ $\\left(\\dfrac{x_A+x_B}{2};\\dfrac{y_A+y_B}{2}\\right)$."
+        },
+        {
+          "term_vi": "Tọa độ trọng tâm",
+          "term_en": "Centroid",
+          "definition": "Trọng tâm G của tam giác ABC có tọa độ trung bình cộng ba đỉnh: $\\left(\\dfrac{x_A+x_B+x_C}{3};\\dfrac{y_A+y_B+y_C}{3}\\right)$."
+        }
+      ],
+      "content": "## Gắn hệ trục để tính thay cho dựng\n\nĐặt hệ trục $Oxy$ biến mỗi điểm thành một cặp số và mỗi vectơ thành một cặp tọa độ. Nhờ đó, mọi bài toán về song song, vuông góc, độ dài, diện tích đều quy về phép tính đại số.\n\n## Các công thức cốt lõi\n\nVới $A(x_A;y_A),\\ B(x_B;y_B)$:\n\n$$\\overrightarrow{AB}=(x_B-x_A;\\,y_B-y_A),\\qquad AB=\\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}.$$\n\nCác phép toán tọa độ: $\\vec a\\pm\\vec b=(x_1\\pm x_2;\\,y_1\\pm y_2)$ và $k\\vec a=(kx_1;ky_1)$.\n\nTrung điểm và trọng tâm là hai công cụ đếm điểm quen thuộc:\n\n$$M=\\left(\\frac{x_A+x_B}{2};\\frac{y_A+y_B}{2}\\right),\\qquad G=\\left(\\frac{x_A+x_B+x_C}{3};\\frac{y_A+y_B+y_C}{3}\\right).$$\n\n## Hai điều kiện quan trọng\n\n- **Cùng phương** (thẳng hàng): $\\vec a=(x_1;y_1)$ và $\\vec b=(x_2;y_2)$ cùng phương $\\Leftrightarrow x_1y_2-x_2y_1=0$.\n- **Vuông góc**: $\\vec a\\cdot\\vec b=x_1x_2+y_1y_2=0$.\n\nHai điều kiện này, cùng công thức khoảng cách, đủ để chứng minh một tứ giác là hình bình hành, hình chữ nhật hay hình vuông chỉ bằng tọa độ đỉnh — không phải đo vẽ gì cả.",
+      "formulas": [
+        "math.thpt.oxy-toa-do.toa-do-vecto-hai-diem",
+        "math.thpt.oxy-toa-do.do-dai-vecto",
+        "math.thpt.oxy-toa-do.khoang-cach-hai-diem",
+        "math.thpt.oxy-toa-do.phep-toan-toa-do-vecto",
+        "math.thpt.oxy-toa-do.toa-do-trung-diem",
+        "math.thpt.oxy-toa-do.toa-do-trong-tam",
+        "math.thpt.vecto.cung-phuong-toa-do",
+        "math.thpt.vecto.trung-tuyen-vecto",
+        "math.thpt.vecto.ba-diem-thang-hang",
+        "math.thpt.oxy-toa-do.toa-do-tam-noi-tiep"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $A(1;2),\\ B(4;6)$. Tính độ dài $AB$ và tọa độ trung điểm $M$ của $AB$.",
+          "solution": "Vectơ $\\overrightarrow{AB}=(4-1;\\,6-2)=(3;4)$ nên $AB=\\sqrt{3^2+4^2}=\\sqrt{25}=5$. Trung điểm lấy trung bình từng tọa độ: $M=\\left(\\dfrac{1+4}{2};\\dfrac{2+6}{2}\\right)=\\left(\\dfrac52;4\\right)$.",
+          "answer": "$AB=5,\\ M\\left(\\dfrac52;4\\right)$"
+        }
+      ],
+      "common_mistakes": [
+        "Tính $\\overrightarrow{AB}$ bằng 'điểm đầu trừ điểm cuối' — ngược dấu; đúng là điểm cuối trừ điểm đầu.",
+        "Nhầm điều kiện cùng phương $x_1y_2-x_2y_1=0$ thành $x_1x_2-y_1y_2=0$ — đó không phải định thức tọa độ mà là biểu thức vô nghĩa với quan hệ song song.",
+        "Lấy trung điểm là hiệu tọa độ thay vì trung bình cộng — làm mất luôn vị trí điểm."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "hinh-hoc",
+        "oxy",
+        "toa-do",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-duong-thang-oxy",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Phương pháp toạ độ trong mặt phẳng",
+      "order": 2,
+      "title_vi": "Phương trình đường thẳng: dạng tổng quát và tham số",
+      "title_en": "Equations of a line: general and parametric forms",
+      "objectives": [
+        "Viết được phương trình tổng quát và phương trình tham số của đường thẳng",
+        "Chuyển đổi được giữa vectơ chỉ phương và vectơ pháp tuyến",
+        "Xét được vị trí tương đối của hai đường thẳng qua hệ phương trình"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-vecto-va-diem-oxy"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Vectơ pháp tuyến",
+          "term_en": "Normal vector",
+          "definition": "Vectơ khác không, vuông góc với đường thẳng; nếu $\\vec n=(a;b)$ thì phương trình tổng quát là $a(x-x_0)+b(y-y_0)=0$."
+        },
+        {
+          "term_vi": "Vectơ chỉ phương",
+          "term_en": "Direction vector",
+          "definition": "Vectơ khác không, cùng phương với đường thẳng; dùng để viết phương trình tham số."
+        },
+        {
+          "term_vi": "Phương trình tổng quát",
+          "term_en": "General equation",
+          "definition": "Dạng $ax+by+c=0$ với $a^2+b^2>0$; hệ số $(a;b)$ chính là một vectơ pháp tuyến."
+        }
+      ],
+      "content": "## Một đường thẳng, nhiều cách viết\n\nMột đường thẳng trong $Oxy$ hoàn toàn xác định bởi **một điểm** đi qua và **một hướng**. Hướng có thể mô tả bằng vectơ pháp tuyến $\\vec n$ (vuông góc) hoặc vectơ chỉ phương $\\vec u$ (song song). Hai lựa chọn sinh ra hai dạng phương trình.\n\n## Phương trình tổng quát\n\nNếu $\\Delta$ qua $M_0(x_0;y_0)$ và có pháp tuyến $\\vec n=(a;b)$ thì với mọi điểm $M(x;y)$ trên $\\Delta$, vectơ $\\overrightarrow{M_0M}$ vuông góc $\\vec n$:\n\n$$a(x-x_0)+b(y-y_0)=0\\ \\Longleftrightarrow\\ ax+by+c=0.$$\n\nĐiều đáng nhớ: **hệ số $(a;b)$ chính là vectơ pháp tuyến**. Đọc phương trình là biết ngay hướng vuông góc.\n\n## Phương trình tham số\n\nNếu $\\Delta$ qua $M_0$ với chỉ phương $\\vec u=(u_1;u_2)$:\n\n$$\\begin{cases}x=x_0+u_1 t\\\\ y=y_0+u_2 t\\end{cases}\\quad(t\\in\\mathbb{R}).$$\n\nChuyển đổi hai dạng rất nhanh: nếu $\\vec u=(u_1;u_2)$ thì lấy pháp tuyến $\\vec n=(u_2;-u_1)$ (đổi chỗ và đổi một dấu), và ngược lại.\n\n## Vị trí tương đối hai đường thẳng\n\nGiải hệ hai phương trình: hệ có nghiệm duy nhất thì hai đường **cắt nhau**; vô nghiệm thì **song song**; vô số nghiệm thì **trùng nhau**. So sánh tỉ số các hệ số cũng cho kết luận tức thì.",
+      "formulas": [
+        "math.thpt.oxy-duong-thang.pt-tong-quat",
+        "math.thpt.oxy-duong-thang.pt-tham-so",
+        "math.thpt.oxy-duong-thang.vtcp-vtpt",
+        "math.thpt.oxy-duong-thang.duong-thang-qua-hai-diem",
+        "math.thpt.oxy-duong-thang.vi-tri-tuong-doi",
+        "math.thpt.oxy-duong-thang.pt-he-so-goc",
+        "math.thpt.oxy-duong-thang.pt-chinh-tac",
+        "math.thpt.oxy-duong-thang.pt-doan-chan",
+        "math.thpt.oxy-duong-thang.he-so-goc-theo-vtcp"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Viết phương trình tổng quát của đường thẳng qua $A(1;2)$ và $B(3;6)$.",
+          "solution": "Vectơ chỉ phương là $\\overrightarrow{AB}=(2;4)$, rút gọn thành $(1;2)$. Từ chỉ phương $(1;2)$ suy ra pháp tuyến $(2;-1)$ (đổi chỗ, đổi dấu). Đường thẳng qua $A(1;2)$ với pháp tuyến $(2;-1)$: $2(x-1)-1(y-2)=0$, thu gọn thành $2x-y=0$. Thử lại với $B(3;6)$: $2\\cdot3-6=0$, thoả mãn.",
+          "answer": "$2x-y=0$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy vectơ pháp tuyến trùng vectơ chỉ phương — hai vectơ này vuông góc nhau, không được lẫn lộn.",
+        "Khi chuyển chỉ phương $(u_1;u_2)$ sang pháp tuyến chỉ đổi chỗ mà quên đổi dấu, viết $(u_2;u_1)$ — kết quả không còn vuông góc với đường thẳng.",
+        "Kết luận hai đường song song chỉ vì hệ số $a,b$ tỉ lệ mà quên kiểm tra hệ số tự do $c$ — nếu cả $c$ cũng tỉ lệ thì hai đường **trùng nhau** chứ không song song."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "oxy",
+        "duong-thang",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.goc-va-khoang-cach-duong-thang",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Phương pháp toạ độ trong mặt phẳng",
+      "order": 3,
+      "title_vi": "Góc giữa hai đường thẳng và khoảng cách từ điểm đến đường thẳng",
+      "title_en": "Angle between lines and distance from a point to a line",
+      "objectives": [
+        "Tính được góc giữa hai đường thẳng qua vectơ pháp tuyến",
+        "Tính được khoảng cách từ một điểm đến một đường thẳng",
+        "Vận dụng được vào các bài toán viết phương trình đường phân giác, đường thẳng cách đều"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-duong-thang-oxy"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Góc giữa hai đường thẳng",
+          "term_en": "Angle between two lines",
+          "definition": "Góc không tù xác định bởi $\\cos\\varphi=\\dfrac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1||\\vec n_2|}$; dấu trị tuyệt đối bảo đảm $0\\le\\varphi\\le90^{\\circ}$."
+        },
+        {
+          "term_vi": "Khoảng cách điểm - đường thẳng",
+          "term_en": "Point-to-line distance",
+          "definition": "Từ $M(x_0;y_0)$ đến $\\Delta: ax+by+c=0$: $d=\\dfrac{|ax_0+by_0+c|}{\\sqrt{a^2+b^2}}$."
+        }
+      ],
+      "content": "## Vì sao góc giữa hai đường thẳng cần trị tuyệt đối\n\nHai đường thẳng cắt nhau tạo bốn góc, hai cặp đối đỉnh bù nhau. Ta quy ước chọn góc **không tù** ($0\\le\\varphi\\le90^{\\circ}$) làm góc giữa chúng. Vì vectơ pháp tuyến có thể lấy theo hai chiều ngược nhau, ta đặt trị tuyệt đối để kết quả không phụ thuộc cách chọn:\n\n$$\\cos\\varphi=\\frac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1|\\,|\\vec n_2|}.$$\n\nHệ quả tiện dùng: hai đường vuông góc $\\Leftrightarrow \\vec n_1\\cdot\\vec n_2=0$; hai đường song song $\\Leftrightarrow$ hai pháp tuyến cùng phương.\n\n## Khoảng cách từ điểm đến đường thẳng\n\n$$d(M,\\Delta)=\\frac{|ax_0+by_0+c|}{\\sqrt{a^2+b^2}}.$$\n\nTử số là giá trị của vế trái phương trình khi thay tọa độ $M$, lấy trị tuyệt đối; mẫu là độ dài vectơ pháp tuyến. Công thức này là \"con dao đa năng\": kiểm tra một điểm nằm trên đường thẳng ($d=0$), tính bán kính đường tròn tiếp xúc, hay xét vị trí tương đối đường thẳng - đường tròn.\n\n## Ứng dụng: đường phân giác và đường cách đều\n\nTập hợp các điểm **cách đều** hai đường thẳng cắt nhau là hai đường phân giác của các góc tạo bởi chúng, tìm được bằng cách đặt $d(M,\\Delta_1)=d(M,\\Delta_2)$. Đây là cầu nối tự nhiên giữa khoảng cách và bài toán quỹ tích.",
+      "formulas": [
+        "math.thpt.oxy-duong-thang.goc-hai-duong-thang",
+        "math.thpt.oxy-duong-thang.khoang-cach-diem-duong-thang",
+        "math.thpt.oxy-duong-thang.khoang-cach-hai-duong-song-song",
+        "math.thpt.oxy-duong-thang.phuong-trinh-phan-giac",
+        "math.thpt.oxy-duong-thang.song-song-vuong-goc-he-so-goc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính khoảng cách từ $M(2;3)$ đến $\\Delta:3x-4y+5=0$ và cho biết $M$ nằm trên hay ngoài $\\Delta$.",
+          "solution": "Thay tọa độ $M$ vào tử: $3\\cdot2-4\\cdot3+5=6-12+5=-1$, lấy trị tuyệt đối được 1. Mẫu là $\\sqrt{3^2+(-4)^2}=5$. Vậy $d=\\dfrac{1}{5}=0{,}2$. Vì $d\\ne0$ nên $M$ nằm **ngoài** đường thẳng.",
+          "answer": "$d=0{,}2$; $M$ nằm ngoài $\\Delta$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên lấy trị tuyệt đối ở tử số công thức khoảng cách — cho ra 'khoảng cách âm', vô nghĩa.",
+        "Tính góc giữa hai đường thẳng không đặt trị tuyệt đối, dẫn tới góc tù — góc giữa hai đường thẳng theo quy ước luôn không vượt quá $90^{\\circ}$.",
+        "Nhầm mẫu số thành $a^2+b^2$ thay vì $\\sqrt{a^2+b^2}$ — quên khai căn khiến khoảng cách sai."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "oxy",
+        "goc",
+        "khoang-cach",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-duong-tron",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Phương pháp toạ độ trong mặt phẳng",
+      "order": 4,
+      "title_vi": "Phương trình đường tròn trong mặt phẳng Oxy",
+      "title_en": "Equation of a circle in the plane",
+      "objectives": [
+        "Viết được phương trình đường tròn dạng chính tắc và dạng tổng quát",
+        "Xác định được tâm và bán kính từ phương trình cho trước",
+        "Viết được phương trình tiếp tuyến và xét vị trí tương đối đường thẳng - đường tròn"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-vecto-va-diem-oxy",
+        "lesson.math.vn-thpt-math-hinhhoc.goc-va-khoang-cach-duong-thang"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình chính tắc đường tròn",
+          "term_en": "Standard circle equation",
+          "definition": "Đường tròn tâm $I(a;b)$ bán kính $R$: $(x-a)^2+(y-b)^2=R^2$."
+        },
+        {
+          "term_vi": "Phương trình tổng quát đường tròn",
+          "term_en": "General circle equation",
+          "definition": "$x^2+y^2-2ax-2by+c=0$ là đường tròn khi $a^2+b^2-c>0$, khi đó tâm $I(a;b)$ và $R=\\sqrt{a^2+b^2-c}$."
+        },
+        {
+          "term_vi": "Điều kiện tiếp xúc",
+          "term_en": "Tangency condition",
+          "definition": "Đường thẳng tiếp xúc đường tròn khi khoảng cách từ tâm đến đường thẳng bằng bán kính: $d(I,\\Delta)=R$."
+        }
+      ],
+      "content": "## Đường tròn = tập điểm cách đều một tâm\n\nĐịnh nghĩa \"cách tâm $I$ một khoảng không đổi $R$\" dịch thẳng sang tọa độ bằng công thức khoảng cách:\n\n$$(x-a)^2+(y-b)^2=R^2.$$\n\nĐây là **dạng chính tắc**: nhìn là đọc ngay tâm $I(a;b)$ và bán kính $R$.\n\n## Dạng tổng quát và bẫy nhận dạng\n\nKhai triển dạng chính tắc rồi đặt lại hệ số, ta được **dạng tổng quát**:\n\n$$x^2+y^2-2ax-2by+c=0.$$\n\nTừ đây tâm là $I(a;b)$ (một nửa hệ số bậc nhất, đổi dấu) và $R=\\sqrt{a^2+b^2-c}$. **Cảnh báo**: không phải phương trình nào dạng này cũng là đường tròn — phải có $a^2+b^2-c>0$ thì biểu thức dưới căn mới dương.\n\n## Tiếp tuyến và vị trí tương đối\n\nSo sánh $d(I,\\Delta)$ với $R$:\n\n- $d>R$: đường thẳng và đường tròn **không cắt nhau**.\n- $d=R$: **tiếp xúc** (đường thẳng là tiếp tuyến).\n- $d<R$: **cắt nhau** tại hai điểm.\n\nTiếp tuyến tại điểm $M_0$ trên đường tròn vuông góc với bán kính $IM_0$, nên nhận $\\overrightarrow{IM_0}$ làm vectơ pháp tuyến — đây là cách viết tiếp tuyến nhanh nhất khi đã biết tiếp điểm.",
+      "formulas": [
+        "math.thpt.oxy-duong-tron.pt-chinh-tac",
+        "math.thpt.oxy-duong-tron.pt-tong-quat",
+        "math.thpt.oxy-duong-tron.dieu-kien-la-duong-tron",
+        "math.thpt.oxy-duong-tron.tiep-tuyen-tai-diem",
+        "math.thpt.oxy-duong-tron.dieu-kien-tiep-xuc",
+        "math.thpt.oxy-duong-tron.day-cung",
+        "math.thpt.oxy-duong-tron.vi-tri-hai-duong-tron"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho đường tròn $(C):x^2+y^2-4x+6y-12=0$. Tìm tâm, bán kính và viết tiếp tuyến của $(C)$ tại $A(5;1)$.",
+          "solution": "So khớp dạng tổng quát: $-2a=-4\\Rightarrow a=2$, $-2b=6\\Rightarrow b=-3$, nên tâm $I(2;-3)$; $R=\\sqrt{2^2+(-3)^2-(-12)}=\\sqrt{4+9+12}=5$. Kiểm tra $A$: $(5-2)^2+(1+3)^2=9+16=25=R^2$ nên $A$ thuộc $(C)$. Tiếp tuyến tại $A$ nhận $\\overrightarrow{IA}=(3;4)$ làm pháp tuyến: $3(x-5)+4(y-1)=0\\Leftrightarrow 3x+4y-19=0$.",
+          "answer": "$I(2;-3),\\ R=5$; tiếp tuyến $3x+4y-19=0$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy tâm bằng đúng hệ số bậc nhất $(-4;6)$ thay vì một nửa và đổi dấu $(2;-3)$ — sai vì dạng tổng quát chứa hệ số $-2a,-2b$.",
+        "Quên khai căn khi tính bán kính, dùng $R=a^2+b^2-c$ — đó là $R^2$, không phải $R$.",
+        "Kết luận một phương trình bậc hai bất kì là đường tròn mà không kiểm tra $a^2+b^2-c>0$ — nếu biểu thức này âm thì không tồn tại đường tròn thực."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "oxy",
+        "duong-tron",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.ba-duong-conic",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Phương pháp toạ độ trong mặt phẳng",
+      "order": 5,
+      "title_vi": "Ba đường conic: elip, hypebol và parabol",
+      "title_en": "Three conics: ellipse, hyperbola and parabola",
+      "objectives": [
+        "Nhận dạng và viết được phương trình chính tắc của elip, hypebol, parabol",
+        "Xác định được tiêu điểm, trục, tâm sai và đường chuẩn của mỗi conic",
+        "Phân biệt được ba conic qua đặc điểm phương trình và tính chất tiêu điểm"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-vecto-va-diem-oxy"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Elip",
+          "term_en": "Ellipse",
+          "definition": "Tập điểm có tổng khoảng cách tới hai tiêu điểm không đổi; phương trình chính tắc $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ với $a>b>0$, $c^2=a^2-b^2$."
+        },
+        {
+          "term_vi": "Hypebol",
+          "term_en": "Hyperbola",
+          "definition": "Tập điểm có trị tuyệt đối hiệu khoảng cách tới hai tiêu điểm không đổi; phương trình $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ với $c^2=a^2+b^2$."
+        },
+        {
+          "term_vi": "Parabol",
+          "term_en": "Parabola",
+          "definition": "Tập điểm cách đều một tiêu điểm và một đường chuẩn; phương trình chính tắc $y^2=2px$ với tiêu điểm $\\left(\\dfrac{p}{2};0\\right)$."
+        },
+        {
+          "term_vi": "Tâm sai",
+          "term_en": "Eccentricity",
+          "definition": "Tỉ số $e=\\dfrac{c}{a}$ đo độ 'dẹt' của conic: elip có $0<e<1$, parabol có $e=1$, hypebol có $e>1$."
+        }
+      ],
+      "content": "## Ba đường sinh ra từ một ý tưởng chung\n\nCả ba conic đều được định nghĩa qua **khoảng cách tới tiêu điểm**, khác nhau ở luật kết hợp:\n\n- **Elip**: tổng khoảng cách tới hai tiêu điểm không đổi ($MF_1+MF_2=2a$).\n- **Hypebol**: trị tuyệt đối hiệu khoảng cách không đổi ($|MF_1-MF_2|=2a$).\n- **Parabol**: cách đều một tiêu điểm và một đường chuẩn.\n\n## Phương trình chính tắc và yếu tố\n\n$$\\text{Elip: }\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a>b>0),\\quad c^2=a^2-b^2.$$\n$$\\text{Hypebol: }\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1,\\quad c^2=a^2+b^2,\\ \\text{tiệm cận }y=\\pm\\frac{b}{a}x.$$\n$$\\text{Parabol: }y^2=2px,\\quad F\\left(\\frac{p}{2};0\\right),\\ \\text{đường chuẩn }x=-\\frac{p}{2}.$$\n\n**Điểm phân biệt then chốt** nằm ở dấu và ở công thức $c$: elip dùng $c^2=a^2-b^2$ (dấu trừ), hypebol dùng $c^2=a^2+b^2$ (dấu cộng). Nhầm hai công thức này là lỗi phổ biến nhất.\n\n## Tâm sai gói gọn hình dạng\n\n$$e=\\frac{c}{a}:\\quad 0<e<1\\ (\\text{elip}),\\quad e=1\\ (\\text{parabol}),\\quad e>1\\ (\\text{hypebol}).$$\n\nTâm sai là một con số duy nhất phân loại được cả ba conic, và cho biết đường cong \"tròn\" hay \"dẹt\" đến đâu.",
+      "formulas": [
+        "math.thpt.oxy-conic.elip-pt-chinh-tac",
+        "math.thpt.oxy-conic.elip-tieu-cu",
+        "math.thpt.oxy-conic.elip-tam-sai",
+        "math.thpt.oxy-conic.hypebol-pt-chinh-tac",
+        "math.thpt.oxy-conic.hypebol-tiem-can",
+        "math.thpt.oxy-conic.hypebol-tam-sai",
+        "math.thpt.oxy-conic.parabol-pt-chinh-tac",
+        "math.thpt.oxy-conic.parabol-tieu-diem-duong-chuan",
+        "math.thpt.oxy-conic.elip-dinh-truc",
+        "math.thpt.oxy-conic.elip-ban-kinh-qua-tieu",
+        "math.thpt.oxy-conic.elip-dien-tich",
+        "math.thpt.oxy-conic.hypebol-tieu-cu",
+        "math.thpt.oxy-conic.hypebol-ban-kinh-qua-tieu",
+        "math.thpt.oxy-conic.hypebol-duong-chuan",
+        "math.thpt.oxy-conic.parabol-ban-kinh-qua-tieu",
+        "math.thpt.oxy-conic.parabol-tam-sai"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho elip $(E):\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1$. Tìm tiêu điểm và tâm sai.",
+          "solution": "Từ phương trình, $a^2=25,\\ b^2=9$ nên $a=5,\\ b=3$. Vì là elip nên $c^2=a^2-b^2=25-9=16$, suy ra $c=4$. Do mẫu của $x^2$ lớn hơn, trục lớn nằm trên $Ox$, tiêu điểm là $F_1(-4;0),\\ F_2(4;0)$. Tâm sai $e=\\dfrac{c}{a}=\\dfrac{4}{5}$.",
+          "answer": "$F_{1,2}(\\pm4;0),\\ e=\\dfrac45$"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng $c^2=a^2+b^2$ cho elip — đó là công thức của hypebol; elip phải là $c^2=a^2-b^2$.",
+        "Với hypebol lấy tiệm cận $y=\\pm\\dfrac{a}{b}x$ — đảo tỉ số; hệ số góc tiệm cận đúng là $\\dfrac{b}{a}$.",
+        "Với parabol $y^2=2px$ đặt tiêu điểm ở $(p;0)$ thay vì $\\left(\\dfrac{p}{2};0\\right)$ — nhầm $p$ với $2p$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "conic",
+        "elip",
+        "hypebol",
+        "parabol",
+        "lop-10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.quan-he-song-song-khong-gian",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương IV: Đường thẳng và mặt phẳng trong không gian. Quan hệ song song",
+      "order": 1,
+      "title_vi": "Quan hệ song song trong không gian",
+      "title_en": "Parallelism in space",
+      "objectives": [
+        "Xác định được vị trí tương đối của đường thẳng và mặt phẳng trong không gian",
+        "Vận dụng được điều kiện đường thẳng song song mặt phẳng và hai mặt phẳng song song",
+        "Tìm được giao tuyến của hai mặt phẳng và thiết diện đơn giản"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Đường thẳng song song mặt phẳng",
+          "term_en": "Line parallel to a plane",
+          "definition": "Đường thẳng $d$ song song mặt phẳng $(P)$ khi $d$ không có điểm chung với $(P)$; điều kiện đủ: $d$ song song với một đường thẳng nằm trong $(P)$."
+        },
+        {
+          "term_vi": "Hai mặt phẳng song song",
+          "term_en": "Parallel planes",
+          "definition": "Hai mặt phẳng không có điểm chung; điều kiện đủ: mặt phẳng này chứa hai đường thẳng cắt nhau cùng song song với mặt phẳng kia."
+        },
+        {
+          "term_vi": "Giao tuyến song song",
+          "term_en": "Parallel intersection lines",
+          "definition": "Nếu hai mặt phẳng lần lượt chứa hai đường thẳng song song thì giao tuyến của chúng (nếu có) song song với hai đường đó."
+        }
+      ],
+      "content": "## Từ mặt phẳng sang không gian: nhiều khả năng hơn\n\nTrong mặt phẳng, hai đường thẳng chỉ có thể cắt nhau hoặc song song. Trong không gian xuất hiện thêm khả năng **chéo nhau** (không cắt, không song song, không đồng phẳng). Vì thế các quan hệ song song cần được phát biểu lại cẩn thận.\n\n## Đường thẳng và mặt phẳng\n\nĐường thẳng $d$ và mặt phẳng $(P)$ có ba vị trí: $d$ nằm trong $(P)$, $d$ cắt $(P)$ tại một điểm, hoặc $d\\parallel(P)$ (không điểm chung). **Dấu hiệu song song** hay dùng: nếu $d$ song song với một đường thẳng $d'$ nằm trong $(P)$ và $d$ không thuộc $(P)$ thì $d\\parallel(P)$.\n\n## Hai mặt phẳng song song\n\n$(P)\\parallel(Q)$ khi chúng không có điểm chung. Điều kiện thực hành: nếu $(P)$ chứa **hai đường thẳng cắt nhau** cùng song song với $(Q)$ thì $(P)\\parallel(Q)$. Chỉ một đường thôi là chưa đủ.\n\n## Kĩ thuật tìm giao tuyến\n\nMuốn dựng thiết diện, ta liên tục tìm giao tuyến của mặt phẳng cắt với các mặt của hình. Một định lí đắc dụng: **hai mặt phẳng chứa hai đường thẳng song song thì giao tuyến song song với chúng**. Nhờ đó, biết một điểm chung là đủ để xác định cả giao tuyến, vì đã biết phương của nó.\n\nĐịnh lí Thales trong không gian bổ trợ: ba mặt phẳng song song chắn trên hai cát tuyến những đoạn thẳng tỉ lệ.",
+      "formulas": [
+        "math.thpt.quan-he-song-song.duong-song-song-mat",
+        "math.thpt.quan-he-song-song.hai-mat-phang-song-song",
+        "math.thpt.quan-he-song-song.giao-tuyen-song-song",
+        "math.thpt.quan-he-song-song.dinh-li-thales"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho hình chóp $S.ABCD$ đáy là hình bình hành. Tìm giao tuyến của $(SAB)$ và $(SCD)$.",
+          "solution": "Hai mặt phẳng có điểm chung $S$. Trong đáy hình bình hành, $AB\\parallel CD$; mà $AB\\subset(SAB)$ và $CD\\subset(SCD)$. Theo định lí giao tuyến song song, giao tuyến của $(SAB)$ và $(SCD)$ là đường thẳng đi qua $S$ và song song với $AB$ (đồng thời song song $CD$). Vậy giao tuyến hoàn toàn xác định: qua $S$, phương $AB$.",
+          "answer": "Đường thẳng qua $S$, song song với $AB$"
+        }
+      ],
+      "common_mistakes": [
+        "Kết luận hai mặt phẳng song song chỉ vì mỗi mặt chứa một đường song song với mặt kia — cần **hai đường cắt nhau** cùng song song thì mới đủ.",
+        "Nhầm 'không cắt nhau' với 'song song' cho hai đường thẳng trong không gian — chúng có thể chéo nhau, tức không cắt mà cũng không song song.",
+        "Tìm giao tuyến bằng cách nối hai điểm chung mà chỉ mới xác định được một điểm chung — khi đó phải khai thác quan hệ song song để tìm phương của giao tuyến."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "khong-gian",
+        "song-song",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.duong-thang-vuong-goc-mat-phang",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Quan hệ vuông góc trong không gian",
+      "order": 1,
+      "title_vi": "Đường thẳng vuông góc với mặt phẳng và định lí ba đường vuông góc",
+      "title_en": "Line perpendicular to a plane and the three perpendiculars theorem",
+      "objectives": [
+        "Chứng minh được một đường thẳng vuông góc với mặt phẳng bằng điều kiện đủ",
+        "Vận dụng được định lí ba đường vuông góc để chứng minh quan hệ vuông góc",
+        "Xác định được góc giữa đường thẳng và mặt phẳng qua hình chiếu"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.quan-he-song-song-khong-gian"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Đường thẳng vuông góc mặt phẳng",
+          "term_en": "Line perpendicular to a plane",
+          "definition": "$d\\perp(P)$ khi $d$ vuông góc với mọi đường thẳng nằm trong $(P)$; điều kiện đủ: $d$ vuông góc với hai đường thẳng cắt nhau trong $(P)$."
+        },
+        {
+          "term_vi": "Định lí ba đường vuông góc",
+          "term_en": "Three perpendiculars theorem",
+          "definition": "Cho $d$ không vuông góc $(P)$, hình chiếu của $d$ lên $(P)$ là $d'$; một đường thẳng $a$ trong $(P)$ vuông góc $d$ khi và chỉ khi $a$ vuông góc $d'$."
+        },
+        {
+          "term_vi": "Góc giữa đường thẳng và mặt phẳng",
+          "term_en": "Angle line-plane",
+          "definition": "Góc giữa đường thẳng $d$ và mặt phẳng $(P)$ là góc giữa $d$ và hình chiếu $d'$ của nó lên $(P)$."
+        }
+      ],
+      "content": "## Điều kiện đủ ngắn gọn cho vuông góc\n\nMuốn chứng minh $d\\perp(P)$, ta không cần thử với mọi đường trong $(P)$. Chỉ cần:\n\n$$d\\perp a,\\ d\\perp b,\\ a\\cap b=\\{O\\},\\ a,b\\subset(P)\\ \\Longrightarrow\\ d\\perp(P).$$\n\nNghĩa là **vuông góc với hai đường cắt nhau** là đủ. Đây là công cụ khởi động cho hầu hết bài toán vuông góc trong không gian: đặt $SA\\perp$ đáy bằng cách chỉ ra $SA$ vuông góc hai cạnh đáy cắt nhau.\n\nKhi đã có $d\\perp(P)$, ta thu ngay: $d$ vuông góc với **mọi** đường thẳng trong $(P)$.\n\n## Định lí ba đường vuông góc\n\nCho $d$ xiên với $(P)$, gọi $d'$ là hình chiếu vuông góc của $d$ lên $(P)$. Với đường thẳng $a$ nằm trong $(P)$:\n\n$$a\\perp d\\ \\Longleftrightarrow\\ a\\perp d'.$$\n\nĐịnh lí này biến một bài toán vuông góc trong không gian thành bài toán vuông góc **phẳng** (giữa $a$ và $d'$ trong mặt $(P)$), nên rất hay dùng để chứng minh và để dựng khoảng cách.\n\n## Góc giữa đường thẳng và mặt phẳng\n\nGóc giữa $d$ và $(P)$ là góc giữa $d$ và hình chiếu $d'$ của nó. Muốn tính, ta xác định hình chiếu của một điểm trên $d$ xuống $(P)$, dựng tam giác vuông và dùng tỉ số lượng giác. Nếu $d\\perp(P)$ thì góc bằng $90^{\\circ}$; nếu $d\\parallel(P)$ hoặc $d\\subset(P)$ thì góc bằng $0^{\\circ}$.",
+      "formulas": [
+        "math.thpt.quan-he-vuong-goc.dk-duong-vuong-goc-mat",
+        "math.thpt.quan-he-vuong-goc.ba-duong-vuong-goc",
+        "math.thpt.quan-he-vuong-goc.goc-duong-mat",
+        "math.thpt.quan-he-vuong-goc.goc-hai-duong-thang",
+        "math.thpt.quan-he-vuong-goc.tu-dien-vuong-duong-cao"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho hình chóp $S.ABCD$ đáy là hình vuông cạnh $a$, $SA\\perp(ABCD)$, $SA=a\\sqrt2$. Tính góc giữa $SC$ và mặt đáy.",
+          "solution": "Vì $SA\\perp(ABCD)$ nên $A$ là hình chiếu của $S$, do đó hình chiếu của $SC$ lên đáy là $AC$; góc cần tìm là $\\widehat{SCA}$. Đường chéo hình vuông $AC=a\\sqrt2$. Tam giác $SAC$ vuông tại $A$ nên $\\tan\\widehat{SCA}=\\dfrac{SA}{AC}=\\dfrac{a\\sqrt2}{a\\sqrt2}=1$, suy ra góc bằng $45^{\\circ}$.",
+          "answer": "$45^{\\circ}$"
+        }
+      ],
+      "common_mistakes": [
+        "Chứng minh $d\\perp(P)$ chỉ bằng việc $d$ vuông góc **một** đường trong $(P)$ — chưa đủ; đường thứ hai cắt đường thứ nhất mới bảo đảm vuông góc cả mặt.",
+        "Xác định góc giữa đường và mặt bằng góc với một đường bất kì trong mặt — phải là góc với **hình chiếu** của đường lên mặt.",
+        "Áp dụng định lí ba đường vuông góc mà quên điều kiện $a$ phải nằm **trong** mặt phẳng $(P)$ chứa hình chiếu — với đường ngoài mặt, kết luận không còn đúng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "khong-gian",
+        "vuong-goc",
+        "ba-duong-vuong-goc",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.hai-mat-phang-vuong-goc-va-goc",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Quan hệ vuông góc trong không gian",
+      "order": 2,
+      "title_vi": "Hai mặt phẳng vuông góc và góc trong không gian",
+      "title_en": "Perpendicular planes and angles in space",
+      "objectives": [
+        "Xác định và tính được góc giữa hai mặt phẳng qua góc phẳng nhị diện",
+        "Chứng minh được hai mặt phẳng vuông góc bằng điều kiện đủ",
+        "Vận dụng quan hệ vuông góc để tính diện tích hình chiếu"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.duong-thang-vuong-goc-mat-phang"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Góc giữa hai mặt phẳng",
+          "term_en": "Angle between two planes",
+          "definition": "Góc giữa hai mặt phẳng bằng góc giữa hai đường thẳng lần lượt vuông góc với hai mặt phẳng đó; thường xác định qua góc phẳng của nhị diện."
+        },
+        {
+          "term_vi": "Hai mặt phẳng vuông góc",
+          "term_en": "Perpendicular planes",
+          "definition": "$(P)\\perp(Q)$ khi góc giữa chúng bằng $90^{\\circ}$; điều kiện đủ: $(P)$ chứa một đường thẳng vuông góc với $(Q)$."
+        },
+        {
+          "term_vi": "Diện tích hình chiếu",
+          "term_en": "Projected area",
+          "definition": "Diện tích hình chiếu của một đa giác phẳng lên mặt phẳng bằng diện tích gốc nhân côsin góc giữa hai mặt phẳng: $S'=S\\cos\\varphi$."
+        }
+      ],
+      "content": "## Đo góc giữa hai mặt phẳng bằng một góc phẳng\n\nHai mặt phẳng cắt nhau theo một giao tuyến $\\Delta$, tạo thành **nhị diện**. Để đo góc giữa chúng, tại một điểm trên $\\Delta$ ta dựng trong mỗi mặt một tia vuông góc với $\\Delta$; góc giữa hai tia đó là **góc phẳng của nhị diện**, cũng chính là góc giữa hai mặt phẳng.\n\nCách xác định thực hành: tìm (hoặc dựng) một đoạn vuông góc chung với giao tuyến, đưa bài toán về một tam giác cụ thể rồi dùng hệ thức lượng.\n\n## Điều kiện hai mặt phẳng vuông góc\n\n$$(P)\\supset a,\\ a\\perp(Q)\\ \\Longrightarrow\\ (P)\\perp(Q).$$\n\nChỉ cần một mặt chứa một đường vuông góc với mặt kia. Hệ quả rất tiện: nếu $(P)\\perp(Q)$ theo giao tuyến $\\Delta$, thì trong $(P)$, đường vuông góc với $\\Delta$ sẽ vuông góc với cả $(Q)$ — dùng để hạ đường cao và tính khoảng cách.\n\n## Công thức diện tích hình chiếu\n\nNếu đa giác phẳng có diện tích $S$ nằm trong mặt phẳng tạo với mặt chiếu góc $\\varphi$ thì hình chiếu của nó có diện tích\n\n$$S'=S\\cos\\varphi.$$\n\nCông thức này biến bài toán tính góc nhị diện thành bài toán so sánh hai diện tích, hoặc ngược lại — một mẹo giải nhanh thường gặp trong đề trắc nghiệm.",
+      "formulas": [
+        "math.thpt.quan-he-vuong-goc.goc-hai-mat-phang",
+        "math.thpt.quan-he-vuong-goc.hai-mat-phang-vuong-goc",
+        "math.thpt.quan-he-vuong-goc.dien-tich-hinh-chieu",
+        "math.thpt.quan-he-vuong-goc.goc-duong-mat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho hình chóp $S.ABC$ có $SA\\perp(ABC)$, đáy $ABC$ vuông tại $B$. Chứng minh $(SBC)\\perp(SAB)$.",
+          "solution": "Chiến lược: chỉ ra $(SBC)$ chứa một đường thẳng vuông góc với mặt $(SAB)$. Vì $ABC$ vuông tại $B$ nên $BC\\perp AB$. Mặt khác $SA\\perp(ABC)$ mà $BC\\subset(ABC)$ nên $SA\\perp BC$. Như vậy $BC$ vuông góc với hai đường thẳng cắt nhau $AB$ và $SA$ cùng nằm trong $(SAB)$, suy ra $BC\\perp(SAB)$. Do $BC\\subset(SBC)$ và $BC\\perp(SAB)$, theo điều kiện đủ ta được $(SBC)\\perp(SAB)$.",
+          "answer": "$(SBC)\\perp(SAB)$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm góc giữa hai mặt phẳng với góc giữa hai đường thẳng tuỳ ý trong hai mặt — phải là góc giữa hai tia cùng vuông góc với **giao tuyến**.",
+        "Kết luận $(P)\\perp(Q)$ vì trong $(P)$ có đường vuông góc với **một đường** của $(Q)$ — điều kiện đúng là đường đó vuông góc với **cả mặt** $(Q)$.",
+        "Dùng $S'=S\\sin\\varphi$ cho diện tích hình chiếu — đúng phải là $\\cos\\varphi$; khi hai mặt trùng ($\\varphi=0$) hình chiếu bằng chính nó, phù hợp với $\\cos0=1$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "khong-gian",
+        "goc-mat-phang",
+        "vuong-goc",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.khoang-cach-trong-khong-gian",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Quan hệ vuông góc trong không gian",
+      "order": 3,
+      "title_vi": "Khoảng cách trong không gian",
+      "title_en": "Distances in space",
+      "objectives": [
+        "Tính được khoảng cách từ một điểm đến đường thẳng và đến mặt phẳng",
+        "Dựng và tính được đoạn vuông góc chung của hai đường thẳng chéo nhau",
+        "Vận dụng phương pháp thể tích để tính khoảng cách gián tiếp"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.duong-thang-vuong-goc-mat-phang",
+        "lesson.math.vn-thpt-math-hinhhoc.hai-mat-phang-vuong-goc-va-goc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Khoảng cách điểm - mặt phẳng",
+          "term_en": "Point-to-plane distance",
+          "definition": "Độ dài đoạn vuông góc hạ từ điểm xuống mặt phẳng; là khoảng cách nhỏ nhất từ điểm tới mọi điểm của mặt phẳng."
+        },
+        {
+          "term_vi": "Đoạn vuông góc chung",
+          "term_en": "Common perpendicular",
+          "definition": "Đoạn thẳng vuông góc với cả hai đường thẳng chéo nhau; độ dài của nó là khoảng cách giữa hai đường chéo nhau."
+        },
+        {
+          "term_vi": "Phương pháp thể tích",
+          "term_en": "Volume method",
+          "definition": "Tính khoảng cách từ đỉnh đến mặt đáy qua $d=\\dfrac{3V}{S_{đáy}}$, dùng khi khó dựng trực tiếp đường vuông góc."
+        }
+      ],
+      "content": "## Mọi khoảng cách đều là độ dài đường vuông góc\n\nKhoảng cách trong không gian luôn được đo dọc theo phương **vuông góc**. Vì thế mấu chốt của mọi bài toán là dựng đúng đoạn vuông góc, rồi tính độ dài của nó bằng hệ thức lượng.\n\n## Khoảng cách từ điểm đến mặt phẳng\n\nHạ $AH\\perp(P)$ tại $H$ thì $d(A,(P))=AH$. Kĩ thuật quen thuộc: nếu $(SAB)\\perp(P)$ theo giao tuyến $\\Delta$, ta hạ đường cao trong $(SAB)$ xuống $\\Delta$ là được đoạn vuông góc với $(P)$. Với hình chóp có cạnh bên vuông góc đáy, hệ thức trong tam giác vuông\n\n$$\\frac{1}{AH^2}=\\frac{1}{AB^2}+\\frac{1}{AC^2}$$\n\ngiúp tính nhanh khi $A$ nhìn hai cạnh vuông góc.\n\n## Đoạn vuông góc chung của hai đường chéo nhau\n\nVới hai đường thẳng chéo nhau $a,b$: khoảng cách giữa chúng bằng độ dài đoạn vuông góc chung. Chiến lược thường dùng: dựng mặt phẳng $(P)$ chứa $b$ và song song $a$, khi đó $d(a,b)=d(a,(P))$ và bài toán quy về khoảng cách điểm - mặt phẳng.\n\n## Phương pháp thể tích: đường vòng nhưng hiệu quả\n\nKhi việc dựng đường vuông góc quá rối, ta tính khoảng cách gián tiếp qua thể tích. Cùng một khối chóp có thể tính thể tích theo hai đáy khác nhau; từ $V=\\dfrac13 S\\cdot d$ suy ra\n\n$$d=\\frac{3V}{S}.$$\n\nĐây là mẹo mạnh nhất cho khoảng cách từ một điểm tới mặt phẳng \"khó với tới\" trong đề thi.",
+      "formulas": [
+        "math.thpt.quan-he-vuong-goc.khoang-cach-diem-mat-phang",
+        "math.thpt.quan-he-vuong-goc.khoang-cach-diem-duong-thang",
+        "math.thpt.quan-he-vuong-goc.khoang-cach-hai-duong-cheo-nhau",
+        "math.thpt.quan-he-vuong-goc.khoang-cach-duong-mat-song-song",
+        "math.thpt.the-tich.khoi-chop",
+        "math.thpt.the-tich.duong-cheo-hinh-hop",
+        "math.thpt.the-tich.tu-dien-theo-hai-canh-cheo"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho hình chóp $S.ABCD$ đáy vuông cạnh $a$, $SA\\perp(ABCD)$, $SA=a$. Tính $d(A,(SBD))$.",
+          "solution": "Gọi $O$ là tâm hình vuông. Ta có $BD\\perp AC$ (hai đường chéo hình vuông) và $BD\\perp SA$ (do $SA\\perp$ đáy), nên $BD\\perp(SAO)$. Trong mặt $(SAO)$, hạ $AH\\perp SO$ thì $AH\\perp BD$ và $AH\\perp SO$, suy ra $AH\\perp(SBD)$; vậy $d(A,(SBD))=AH$. Tam giác $SAO$ vuông tại $A$ với $AO=\\dfrac{AC}{2}=\\dfrac{a\\sqrt2}{2}$. Dùng hệ thức đường cao: $\\dfrac{1}{AH^2}=\\dfrac{1}{SA^2}+\\dfrac{1}{AO^2}=\\dfrac{1}{a^2}+\\dfrac{2}{a^2}=\\dfrac{3}{a^2}$, nên $AH=\\dfrac{a}{\\sqrt3}=\\dfrac{a\\sqrt3}{3}$.",
+          "answer": "$d(A,(SBD))=\\dfrac{a\\sqrt3}{3}$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy khoảng cách từ điểm đến mặt phẳng bằng độ dài một đoạn xiên bất kì tới mặt — phải là đoạn **vuông góc** mới cho khoảng cách.",
+        "Coi khoảng cách hai đường chéo nhau bằng khoảng cách giữa hai điểm gần nhất được ước lượng bằng mắt — cần dựng đoạn vuông góc chung, không đoán.",
+        "Dùng hệ thức $\\dfrac{1}{AH^2}=\\dfrac{1}{AB^2}+\\dfrac{1}{AC^2}$ khi $AB,AC$ không vuông góc với nhau — hệ thức chỉ đúng trong tam giác vuông tại $A$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "hinh-hoc",
+        "khong-gian",
+        "khoang-cach",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.the-tich-khoi-da-dien",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Quan hệ vuông góc trong không gian",
+      "order": 4,
+      "title_vi": "Thể tích khối đa diện và tỉ số thể tích",
+      "title_en": "Volume of polyhedra and volume ratios",
+      "objectives": [
+        "Tính được thể tích khối chóp và khối lăng trụ",
+        "Vận dụng được công thức tỉ số thể tích cho khối chóp tam giác",
+        "Lựa chọn được đáy và chiều cao thích hợp để tính thể tích gián tiếp"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.duong-thang-vuong-goc-mat-phang",
+        "lesson.math.vn-thpt-math-hinhhoc.khoang-cach-trong-khong-gian"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Thể tích khối chóp",
+          "term_en": "Pyramid volume",
+          "definition": "$V=\\dfrac13 S_{đáy}\\cdot h$ với $h$ là chiều cao (khoảng cách từ đỉnh đến mặt đáy)."
+        },
+        {
+          "term_vi": "Thể tích khối lăng trụ",
+          "term_en": "Prism volume",
+          "definition": "$V=S_{đáy}\\cdot h$ với $h$ là chiều cao giữa hai đáy."
+        },
+        {
+          "term_vi": "Tỉ số thể tích",
+          "term_en": "Volume ratio",
+          "definition": "Với khối chóp $S.ABC$ và các điểm $A',B',C'$ trên $SA,SB,SC$: $\\dfrac{V_{S.A'B'C'}}{V_{S.ABC}}=\\dfrac{SA'}{SA}\\cdot\\dfrac{SB'}{SB}\\cdot\\dfrac{SC'}{SC}$."
+        }
+      ],
+      "content": "## Hai công thức nền và một hệ số 1/3\n\nThể tích khối lăng trụ đơn giản như hình hộp: diện tích đáy nhân chiều cao. Khối chóp \"nhọn dần\" nên chỉ chiếm **một phần ba**:\n\n$$V_{\\text{lăng trụ}}=S_{đáy}\\cdot h,\\qquad V_{\\text{chóp}}=\\frac13 S_{đáy}\\cdot h.$$\n\nChiều cao luôn là **khoảng cách vuông góc** từ đỉnh (hoặc đáy trên) tới mặt đáy — không phải cạnh bên. Đây là chỗ liên kết chặt với bài khoảng cách: nhiều bài thể tích thực chất là bài tìm chiều cao.\n\n## Mẹo đổi đáy\n\nCùng một khối chóp có thể chọn nhiều mặt làm đáy. Chọn khéo mặt đáy mà chân đường cao dễ xác định sẽ rút ngắn lời giải. Ngược lại, biết thể tích và một diện tích đáy ta suy ra khoảng cách: $d=\\dfrac{3V}{S}$.\n\n## Tỉ số thể tích: công cụ cho khối con\n\nKhi lấy các điểm trên ba cạnh xuất phát từ đỉnh $S$ của khối chóp tam giác:\n\n$$\\frac{V_{S.A'B'C'}}{V_{S.ABC}}=\\frac{SA'}{SA}\\cdot\\frac{SB'}{SB}\\cdot\\frac{SC'}{SC}.$$\n\nCông thức này chỉ áp dụng cho khối chóp **tam giác** và các điểm cùng xuất phát từ một đỉnh. Nó biến bài tính thể tích phần bị cắt thành phép nhân ba tỉ số — cực nhanh trong trắc nghiệm. Với khối chóp đáy đa giác, ta chia thành các chóp tam giác rồi áp dụng.",
+      "formulas": [
+        "math.thpt.the-tich.khoi-chop",
+        "math.thpt.the-tich.khoi-lang-tru",
+        "math.thpt.the-tich.khoi-hop-chu-nhat",
+        "math.thpt.the-tich.khoi-lap-phuong",
+        "math.thpt.the-tich.ti-so-the-tich",
+        "math.thpt.the-tich.lang-tru-dung-tam-giac-deu",
+        "math.thpt.the-tich.tu-dien-vuong",
+        "math.thpt.the-tich.tu-dien-theo-goc-tam-dien"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho khối chóp $S.ABC$ thể tích $V$. Lấy $M\\in SB,\\ N\\in SC$ với $\\dfrac{SM}{SB}=\\dfrac12,\\ \\dfrac{SN}{SC}=\\dfrac13$. Tính $V_{S.AMN}$.",
+          "solution": "Khối $S.AMN$ và $S.ABC$ chung đỉnh $S$, các điểm $A,M,N$ nằm trên $SA,SB,SC$ (với $A$ trùng $A$ nên tỉ số $SA/SA=1$). Áp dụng công thức tỉ số thể tích: $\\dfrac{V_{S.AMN}}{V}=\\dfrac{SA}{SA}\\cdot\\dfrac{SM}{SB}\\cdot\\dfrac{SN}{SC}=1\\cdot\\dfrac12\\cdot\\dfrac13=\\dfrac16$. Vậy $V_{S.AMN}=\\dfrac{V}{6}$.",
+          "answer": "$V_{S.AMN}=\\dfrac{V}{6}$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy chiều cao khối chóp bằng độ dài cạnh bên — chiều cao là khoảng cách vuông góc từ đỉnh tới đáy, thường ngắn hơn cạnh bên.",
+        "Áp dụng công thức tỉ số thể tích cho khối chóp đáy tứ giác — công thức chỉ đúng cho chóp **tam giác**; đáy đa giác phải chia nhỏ trước.",
+        "Cộng ba tỉ số thay vì nhân khi dùng công thức tỉ số thể tích — đây là tích của ba tỉ số cạnh, không phải tổng."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "the-tich",
+        "khoi-chop",
+        "ti-so-the-tich",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.khoi-da-dien-deu",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương VII: Quan hệ vuông góc trong không gian",
+      "order": 5,
+      "title_vi": "Khối đa diện đều",
+      "title_en": "Regular polyhedra",
+      "objectives": [
+        "Nêu được định nghĩa và năm loại khối đa diện đều",
+        "Vận dụng hệ thức Euler liên hệ số đỉnh, cạnh, mặt",
+        "Tính được các yếu tố cơ bản của khối đa diện đều"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.the-tich-khoi-da-dien"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Khối đa diện đều",
+          "term_en": "Regular polyhedron",
+          "definition": "Khối đa diện lồi có các mặt là những đa giác đều bằng nhau và mỗi đỉnh là đỉnh chung của cùng một số mặt; kí hiệu Schläfli $\\{p;q\\}$."
+        },
+        {
+          "term_vi": "Hệ thức Euler",
+          "term_en": "Euler's formula",
+          "definition": "Với khối đa diện lồi có $D$ đỉnh, $C$ cạnh, $M$ mặt: $D-C+M=2$."
+        },
+        {
+          "term_vi": "Năm khối đa diện đều",
+          "term_en": "The five Platonic solids",
+          "definition": "Chỉ có đúng năm loại: tứ diện đều $\\{3;3\\}$, lập phương $\\{4;3\\}$, bát diện đều $\\{3;4\\}$, mười hai mặt đều $\\{5;3\\}$, hai mươi mặt đều $\\{3;5\\}$."
+        }
+      ],
+      "content": "## Chỉ có đúng năm khối\n\nMột khối đa diện đều đòi hỏi mọi mặt là đa giác đều bằng nhau và mọi đỉnh giống hệt nhau. Ràng buộc chặt đến mức **chỉ tồn tại đúng năm loại** (các khối Platon):\n\n| Khối | $\\{p;q\\}$ | Đỉnh $D$ | Cạnh $C$ | Mặt $M$ |\n|---|---|---|---|---|\n| Tứ diện đều | $\\{3;3\\}$ | 4 | 6 | 4 |\n| Lập phương | $\\{4;3\\}$ | 8 | 12 | 6 |\n| Bát diện đều | $\\{3;4\\}$ | 6 | 12 | 8 |\n| Mười hai mặt đều | $\\{5;3\\}$ | 20 | 30 | 12 |\n| Hai mươi mặt đều | $\\{3;5\\}$ | 12 | 30 | 20 |\n\n## Hệ thức Euler kiểm soát mọi con số\n\n$$D-C+M=2.$$\n\nHệ thức này đúng cho mọi khối đa diện lồi, là \"công cụ kiểm tra\" nhanh: chẳng hạn mười hai mặt đều có $20-30+12=2$, khớp. Kết hợp với đếm kép — mỗi cạnh chung cho hai mặt nên $C=\\dfrac{M\\cdot p}{2}$, và mỗi cạnh nối hai đỉnh nên $C=\\dfrac{D\\cdot q}{2}$ — ta suy ra được toàn bộ bảng số đỉnh, cạnh, mặt chỉ từ kí hiệu $\\{p;q\\}$.\n\n## Vì sao chỉ năm loại\n\nTại mỗi đỉnh, tổng các góc của các mặt gặp nhau phải **nhỏ hơn $360^{\\circ}$** (điều kiện để 'gấp' được thành góc khối lồi). Điều kiện này chỉ cho phép năm tổ hợp $\\{p;q\\}$ nói trên — một lập luận đẹp nối hình học phẳng với hình học không gian.",
+      "formulas": [
+        "math.thpt.the-tich.he-thuc-euler",
+        "math.thpt.the-tich.nam-khoi-da-dien-deu",
+        "math.thpt.the-tich.tu-dien-deu",
+        "math.thpt.the-tich.bat-dien-deu",
+        "math.thpt.the-tich.khoi-lap-phuong",
+        "math.thpt.the-tich.chop-deu-dien-tich-xung-quanh",
+        "math.thpt.the-tich.khoi-chop-cut"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Khối mười hai mặt đều $\\{5;3\\}$ có bao nhiêu cạnh? Kiểm tra bằng hệ thức Euler.",
+          "solution": "Mỗi mặt là ngũ giác ($5$ cạnh), có $12$ mặt, mỗi cạnh chung cho đúng hai mặt nên $C=\\dfrac{12\\times5}{2}=30$ cạnh. Số đỉnh: mỗi đỉnh là chung của $q=3$ mặt, mỗi mặt có $5$ đỉnh nên $D=\\dfrac{12\\times5}{3}=20$. Kiểm tra Euler: $D-C+M=20-30+12=2$, đúng.",
+          "answer": "$30$ cạnh"
+        }
+      ],
+      "common_mistakes": [
+        "Đếm số cạnh bằng (số mặt)×(số cạnh mỗi mặt) mà quên chia đôi — mỗi cạnh được chung bởi hai mặt nên bị đếm hai lần.",
+        "Cho rằng có vô số hoặc nhiều hơn năm khối đa diện đều — điều kiện tổng góc tại đỉnh nhỏ hơn $360^{\\circ}$ chỉ cho đúng năm loại.",
+        "Nhầm số đỉnh và số mặt của bát diện đều với mười hai mặt đều — cần nhớ hoặc suy lại từ đếm kép và Euler, không đoán."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "the-tich",
+        "da-dien-deu",
+        "euler",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.phep-bien-hinh-phang",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Phép biến hình trong mặt phẳng",
+      "order": 1,
+      "title_vi": "Phép biến hình trong mặt phẳng: dời hình và đồng dạng",
+      "title_en": "Plane transformations: isometries and similarities",
+      "objectives": [
+        "Nêu được biểu thức tọa độ của phép tịnh tiến, đối xứng, phép quay và phép vị tự",
+        "Xác định được ảnh của điểm, đường thẳng, đường tròn qua một phép biến hình",
+        "Phân biệt được phép dời hình (bảo toàn khoảng cách) và phép đồng dạng"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-vecto-va-diem-oxy"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phép tịnh tiến",
+          "term_en": "Translation",
+          "definition": "Phép biến hình biến mỗi điểm $M$ thành $M'$ sao cho $\\overrightarrow{MM'}=\\vec v$ cố định; biểu thức tọa độ $x'=x+a,\\ y'=y+b$."
+        },
+        {
+          "term_vi": "Phép quay",
+          "term_en": "Rotation",
+          "definition": "Phép biến hình quay mỗi điểm quanh một tâm cố định một góc định hướng không đổi; bảo toàn khoảng cách."
+        },
+        {
+          "term_vi": "Phép vị tự",
+          "term_en": "Homothety",
+          "definition": "Phép biến hình tâm $I$ tỉ số $k\\ne0$ biến $M$ thành $M'$ với $\\overrightarrow{IM'}=k\\,\\overrightarrow{IM}$; nhân mọi khoảng cách với $|k|$."
+        },
+        {
+          "term_vi": "Phép dời hình và phép đồng dạng",
+          "term_en": "Isometry and similarity",
+          "definition": "Phép dời hình bảo toàn khoảng cách; phép đồng dạng tỉ số $k$ nhân mọi khoảng cách với $k$ (hợp của một phép vị tự và một phép dời hình)."
+        }
+      ],
+      "content": "## Biến hình: nhìn hình học qua chuyển động\n\nPhép biến hình là quy tắc cho mỗi điểm một ảnh duy nhất. Chúng cho phép giải thích các đối xứng, chứng minh hai hình bằng nhau hay đồng dạng, và tìm quỹ tích bằng cách \"kéo theo\" một hình đã biết.\n\n## Nhóm phép dời hình (bảo toàn khoảng cách)\n\n- **Tịnh tiến** theo $\\vec v=(a;b)$: $x'=x+a,\\ y'=y+b$.\n- **Đối xứng trục** $Ox$: $(x;y)\\mapsto(x;-y)$; qua $Oy$: $(x;y)\\mapsto(-x;y)$.\n- **Đối xứng tâm** $O$: $(x;y)\\mapsto(-x;-y)$.\n- **Phép quay** tâm $O$ góc $\\varphi$: bảo toàn khoảng cách và góc.\n\nTất cả các phép trên **bảo toàn khoảng cách**, nên biến một hình thành hình bằng nó (chỉ đổi vị trí, hướng).\n\n## Phép vị tự và phép đồng dạng\n\nPhép vị tự tâm $I$ tỉ số $k$ biến $M$ thành $M'$ với $\\overrightarrow{IM'}=k\\,\\overrightarrow{IM}$. Nó **không** bảo toàn khoảng cách mà nhân chúng với $|k|$: biến một hình thành hình **đồng dạng** với tỉ số $|k|$. Khi $k<0$, ảnh nằm phía đối diện tâm.\n\nPhép đồng dạng tổng quát là hợp của một phép vị tự và một phép dời hình; nó bảo toàn **góc** và tỉ lệ các độ dài. Đây là nền tảng để chứng minh hai hình đồng dạng bằng ngôn ngữ biến hình thay vì xét từng cặp cạnh - góc.\n\n*Lưu ý chương trình: nội dung phép biến hình được khai thác trong chuyên đề học tập lớp 11.*",
+      "formulas": [
+        "math.thpt.phep-bien-hinh.phep-tinh-tien",
+        "math.thpt.phep-bien-hinh.doi-xung-truc-ox",
+        "math.thpt.phep-bien-hinh.doi-xung-tam-o",
+        "math.thpt.phep-bien-hinh.phep-quay",
+        "math.thpt.phep-bien-hinh.phep-vi-tu",
+        "math.thpt.phep-bien-hinh.vi-tu-ti-so-do-dai",
+        "math.thpt.phep-bien-hinh.phep-doi-hinh",
+        "math.thpt.phep-bien-hinh.phep-dong-dang",
+        "math.thpt.phep-bien-hinh.doi-xung-truc-oy",
+        "math.thpt.phep-bien-hinh.doi-xung-tam-i"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Trong $Oxy$, cho phép vị tự tâm $O$ tỉ số $k=-2$. Tìm ảnh của $M(3;1)$ và cho biết ảnh của một đoạn thẳng dài $5$ có độ dài bao nhiêu.",
+          "solution": "Phép vị tự tâm $O$ nhân tọa độ với $k$: $M'=(-2\\cdot3;\\,-2\\cdot1)=(-6;-2)$. Về độ dài, phép vị tự nhân mọi khoảng cách với $|k|=2$, nên đoạn dài $5$ biến thành đoạn dài $2\\times5=10$.",
+          "answer": "$M'(-6;-2)$; ảnh của đoạn dài $5$ là đoạn dài $10$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng phép vị tự bảo toàn độ dài — thực ra nó nhân độ dài với $|k|$; chỉ phép dời hình mới giữ nguyên khoảng cách.",
+        "Quên dấu của tỉ số $k$ khi tính ảnh: với $k<0$ ảnh và tạo ảnh nằm khác phía so với tâm.",
+        "Nhầm biểu thức đối xứng trục $Ox$ thành $(x;y)\\mapsto(-x;y)$ — đối xứng qua $Ox$ giữ nguyên hoành độ và đổi dấu tung độ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "phep-bien-hinh",
+        "vi-tu",
+        "dong-dang",
+        "lop-11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.mat-non-va-mat-tru",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Mặt tròn xoay",
+      "order": 1,
+      "title_vi": "Mặt nón và mặt trụ: diện tích và thể tích",
+      "title_en": "Cones and cylinders: surface area and volume",
+      "objectives": [
+        "Tính được diện tích xung quanh, toàn phần và thể tích của khối nón",
+        "Tính được diện tích xung quanh, toàn phần và thể tích của khối trụ",
+        "Liên hệ được bán kính, chiều cao và đường sinh qua thiết diện qua trục"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.the-tich-khoi-da-dien"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Khối nón",
+          "term_en": "Cone",
+          "definition": "Khối tròn xoay sinh bởi tam giác vuông quay quanh một cạnh góc vuông; đường sinh $l=\\sqrt{r^2+h^2}$."
+        },
+        {
+          "term_vi": "Khối trụ",
+          "term_en": "Cylinder",
+          "definition": "Khối tròn xoay sinh bởi hình chữ nhật quay quanh một cạnh; đường sinh bằng chiều cao $h$."
+        },
+        {
+          "term_vi": "Thiết diện qua trục",
+          "term_en": "Axial cross-section",
+          "definition": "Mặt phẳng chứa trục cắt khối tròn xoay: với nón cho tam giác cân, với trụ cho hình chữ nhật; là công cụ tìm quan hệ giữa các kích thước."
+        }
+      ],
+      "content": "## Sinh khối bằng phép quay\n\nCho một hình phẳng quay quanh một trục, ta được khối tròn xoay. **Khối nón** sinh khi tam giác vuông quay quanh một cạnh góc vuông; **khối trụ** sinh khi hình chữ nhật quay quanh một cạnh. Mọi công thức diện tích và thể tích đều suy ra từ hình sinh này.\n\n## Công thức khối nón\n\nVới bán kính đáy $r$, chiều cao $h$, đường sinh $l=\\sqrt{r^2+h^2}$:\n\n$$S_{xq}=\\pi r l,\\qquad S_{tp}=\\pi r l+\\pi r^2,\\qquad V=\\frac13\\pi r^2 h.$$\n\nChú ý $S_{xq}$ dùng **đường sinh** $l$, còn thể tích dùng **chiều cao** $h$ — đừng lẫn hai đại lượng này.\n\n## Công thức khối trụ\n\nVới bán kính $r$, chiều cao $h$ (bằng luôn đường sinh):\n\n$$S_{xq}=2\\pi r h,\\qquad S_{tp}=2\\pi r h+2\\pi r^2,\\qquad V=\\pi r^2 h.$$\n\n## Thiết diện qua trục là chìa khoá\n\nKhi đề chỉ cho một vài dữ kiện gián tiếp (góc ở đỉnh nón, đường chéo thiết diện...), hãy vẽ **thiết diện qua trục**: với nón đó là tam giác cân có đáy $2r$ và cạnh bên $l$; với trụ đó là hình chữ nhật $2r\\times h$. Từ thiết diện, các quan hệ $r,h,l$ hiện ra dưới dạng bài toán tam giác vuông quen thuộc, giúp tìm nốt đại lượng còn thiếu.",
+      "formulas": [
+        "math.thpt.mat-tron-xoay.non-duong-sinh",
+        "math.thpt.mat-tron-xoay.non-dien-tich-xung-quanh",
+        "math.thpt.mat-tron-xoay.non-dien-tich-toan-phan",
+        "math.thpt.mat-tron-xoay.non-the-tich",
+        "math.thpt.mat-tron-xoay.non-thiet-dien-qua-truc",
+        "math.thpt.mat-tron-xoay.tru-dien-tich-xung-quanh",
+        "math.thpt.mat-tron-xoay.tru-dien-tich-toan-phan",
+        "math.thpt.mat-tron-xoay.tru-the-tich",
+        "math.thpt.mat-tron-xoay.mat-cau-noi-tiep-da-dien"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho khối nón có $r=3,\\ h=4$. Tính đường sinh $l$, diện tích xung quanh và thể tích.",
+          "solution": "Đường sinh: $l=\\sqrt{r^2+h^2}=\\sqrt{9+16}=5$. Diện tích xung quanh dùng đường sinh: $S_{xq}=\\pi r l=\\pi\\cdot3\\cdot5=15\\pi$. Thể tích dùng chiều cao: $V=\\dfrac13\\pi r^2 h=\\dfrac13\\pi\\cdot9\\cdot4=12\\pi\\approx37{,}70$.",
+          "answer": "$l=5,\\ S_{xq}=15\\pi,\\ V=12\\pi$"
+        }
+      ],
+      "common_mistakes": [
+        "Dùng chiều cao $h$ thay cho đường sinh $l$ trong công thức $S_{xq}=\\pi r l$ của nón — hai đại lượng khác nhau, chỉ bằng nhau ở khối trụ.",
+        "Quên hệ số $\\dfrac13$ trong thể tích khối nón, tính như khối trụ — khối nón chỉ bằng một phần ba khối trụ cùng đáy và chiều cao.",
+        "Lấy diện tích toàn phần chỉ bằng $S_{xq}$ mà quên cộng diện tích đáy $\\pi r^2$ (nón một đáy, trụ hai đáy)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hinh-hoc",
+        "tron-xoay",
+        "non",
+        "tru",
+        "lop-12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.mat-cau-va-khoi-cau",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Mặt tròn xoay",
+      "order": 2,
+      "title_vi": "Mặt cầu và khối cầu",
+      "title_en": "Sphere and ball",
+      "objectives": [
+        "Tính được diện tích mặt cầu và thể tích khối cầu",
+        "Xác định được tâm và bán kính mặt cầu ngoại tiếp một số khối đa diện",
+        "Tính được bán kính đường tròn là giao của mặt cầu với mặt phẳng"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.the-tich-khoi-da-dien",
+        "lesson.math.vn-thpt-math-hinhhoc.mat-non-va-mat-tru"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Mặt cầu",
+          "term_en": "Sphere",
+          "definition": "Tập điểm trong không gian cách một điểm cố định (tâm) một khoảng không đổi $R$; diện tích $S=4\\pi R^2$."
+        },
+        {
+          "term_vi": "Khối cầu",
+          "term_en": "Ball",
+          "definition": "Phần không gian giới hạn bởi mặt cầu; thể tích $V=\\dfrac{4}{3}\\pi R^3$."
+        },
+        {
+          "term_vi": "Mặt cầu ngoại tiếp",
+          "term_en": "Circumscribed sphere",
+          "definition": "Mặt cầu đi qua tất cả các đỉnh của một khối đa diện; tâm cách đều mọi đỉnh, nằm trên trục của mỗi mặt."
+        }
+      ],
+      "content": "## Hai công thức phải nhớ chắc\n\nVới bán kính $R$:\n\n$$S_{\\text{mặt cầu}}=4\\pi R^2,\\qquad V_{\\text{khối cầu}}=\\frac43\\pi R^3.$$\n\nChú ý diện tích tỉ lệ $R^2$, thể tích tỉ lệ $R^3$ — sai số mũ là lỗi thường gặp nhất.\n\n## Mặt cầu cắt mặt phẳng\n\nNếu mặt phẳng $(P)$ cách tâm $I$ một khoảng $d$ thì:\n\n- $d>R$: không cắt.\n- $d=R$: tiếp xúc (một điểm chung).\n- $d<R$: cắt theo **đường tròn** bán kính $r=\\sqrt{R^2-d^2}$.\n\nCông thức $r=\\sqrt{R^2-d^2}$ là một tam giác vuông đơn giản với cạnh huyền $R$, một cạnh góc vuông $d$.\n\n## Mặt cầu ngoại tiếp khối đa diện\n\nTâm mặt cầu ngoại tiếp cách đều mọi đỉnh, nên nằm trên **trục** của mỗi mặt (đường vuông góc mặt tại tâm đường tròn ngoại tiếp mặt đó). Giao các trục cho tâm cầu.\n\nTrường hợp hay gặp trong đề thi: hình chóp có **cạnh bên vuông góc đáy**. Nếu $SA\\perp$ đáy và $R_{đáy}$ là bán kính đường tròn ngoại tiếp đáy thì\n\n$$R=\\frac12\\sqrt{SA^2+(2R_{đáy})^2}.$$\n\nVới hình hộp chữ nhật, đường kính mặt cầu ngoại tiếp bằng đường chéo hộp $\\sqrt{a^2+b^2+c^2}$ — công thức tính nhanh rất tiện.",
+      "formulas": [
+        "math.thpt.mat-tron-xoay.mat-cau-dien-tich",
+        "math.thpt.mat-tron-xoay.khoi-cau-the-tich",
+        "math.thpt.mat-tron-xoay.thiet-dien-mat-cau",
+        "math.thpt.mat-tron-xoay.mat-cau-ngoai-tiep-chop",
+        "math.thpt.mat-tron-xoay.mat-cau-ngoai-tiep-hop",
+        "math.thpt.mat-tron-xoay.mat-cau-ngoai-tiep-lang-tru",
+        "math.thpt.mat-tron-xoay.non-cut-the-tich",
+        "math.thpt.mat-tron-xoay.mat-cau-ngoai-tiep-chop-deu"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính bán kính mặt cầu ngoại tiếp hình hộp chữ nhật kích thước $3;4;12$, rồi tính diện tích mặt cầu đó.",
+          "solution": "Đường kính mặt cầu ngoại tiếp hình hộp bằng đường chéo hộp: $2R=\\sqrt{3^2+4^2+12^2}=\\sqrt{9+16+144}=\\sqrt{169}=13$, nên $R=\\dfrac{13}{2}=6{,}5$. Diện tích mặt cầu: $S=4\\pi R^2=4\\pi\\cdot\\left(\\dfrac{13}{2}\\right)^2=4\\pi\\cdot\\dfrac{169}{4}=169\\pi$.",
+          "answer": "$R=6{,}5;\\ S=169\\pi$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm $S=4\\pi R^2$ với $S=\\pi R^2$ (công thức hình tròn phẳng) — mặt cầu có diện tích gấp bốn lần diện tích hình tròn lớn.",
+        "Dùng $V=\\dfrac43\\pi R^2$ (sai số mũ) — thể tích khối cầu tỉ lệ $R^3$.",
+        "Lấy bán kính mặt cầu ngoại tiếp hình hộp bằng nửa một cạnh thay vì nửa **đường chéo** — tâm cầu là tâm hộp, cách đều tám đỉnh một khoảng bằng nửa đường chéo."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "tron-xoay",
+        "mat-cau",
+        "lop-12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.toa-do-diem-vecto-oxyz",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Phương pháp toạ độ trong không gian",
+      "order": 1,
+      "title_vi": "Tọa độ của điểm và vectơ trong không gian Oxyz",
+      "title_en": "Coordinates of points and vectors in space",
+      "objectives": [
+        "Thực hiện được các phép toán vectơ và tính tích vô hướng trong Oxyz",
+        "Tính được độ dài, khoảng cách, trung điểm, trọng tâm trong không gian",
+        "Vận dụng tích vô hướng để tính góc và chứng minh vuông góc trong không gian"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-vecto-va-diem-oxy"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hệ tọa độ Oxyz",
+          "term_en": "3D coordinate system",
+          "definition": "Ba trục đôi một vuông góc $Ox,Oy,Oz$; mỗi điểm ứng với bộ ba số $(x;y;z)$ và mỗi vectơ với bộ ba tọa độ."
+        },
+        {
+          "term_vi": "Tích vô hướng trong không gian",
+          "term_en": "Dot product in space",
+          "definition": "$\\vec a\\cdot\\vec b=x_1x_2+y_1y_2+z_1z_2$; bằng 0 khi và chỉ khi hai vectơ vuông góc."
+        },
+        {
+          "term_vi": "Độ dài và khoảng cách",
+          "term_en": "Length and distance",
+          "definition": "$|\\vec a|=\\sqrt{x^2+y^2+z^2}$ và $AB=\\sqrt{(x_B-x_A)^2+(y_B-y_A)^2+(z_B-z_A)^2}$."
+        }
+      ],
+      "content": "## Mở rộng tọa độ lên ba chiều\n\nThêm một trục $Oz$ vuông góc với mặt phẳng $Oxy$, ta có hệ $Oxyz$. Mọi công thức tọa độ phẳng được nối dài thêm một thành phần $z$ một cách tự nhiên, giữ nguyên cấu trúc.\n\n## Các công thức song hành với mặt phẳng\n\nVới $A(x_A;y_A;z_A),\\ B(x_B;y_B;z_B)$:\n\n$$\\overrightarrow{AB}=(x_B-x_A;\\,y_B-y_A;\\,z_B-z_A),\\qquad AB=\\sqrt{\\sum(x_B-x_A)^2}.$$\n\nPhép toán vectơ: $\\vec a\\pm\\vec b$ và $k\\vec a$ thực hiện theo từng tọa độ. Trung điểm, trọng tâm vẫn là trung bình cộng tọa độ các điểm.\n\n## Tích vô hướng và ba ứng dụng\n\n$$\\vec a\\cdot\\vec b=x_1x_2+y_1y_2+z_1z_2.$$\n\n- **Độ dài**: $|\\vec a|=\\sqrt{\\vec a\\cdot\\vec a}$.\n- **Góc**: $\\cos(\\vec a,\\vec b)=\\dfrac{\\vec a\\cdot\\vec b}{|\\vec a|\\,|\\vec b|}$.\n- **Vuông góc**: $\\vec a\\cdot\\vec b=0$.\n\nNhờ ba ứng dụng này, các bài toán tính góc, chứng minh vuông góc, tính chu vi - độ dài trong không gian đều quy về số học. Đây là nền cho toàn bộ hình học tọa độ Oxyz: mọi phương trình mặt phẳng, đường thẳng, mặt cầu ở các bài sau đều xây trên tích vô hướng và tọa độ vectơ.",
+      "formulas": [
+        "math.thpt.oxyz-toa-do.toa-do-diem",
+        "math.thpt.oxyz-toa-do.toa-do-vecto-hai-diem",
+        "math.thpt.oxyz-toa-do.phep-toan-vecto",
+        "math.thpt.oxyz-toa-do.do-dai-vecto",
+        "math.thpt.oxyz-toa-do.khoang-cach-hai-diem",
+        "math.thpt.oxyz-toa-do.tich-vo-huong",
+        "math.thpt.oxyz-toa-do.goc-hai-vecto",
+        "math.thpt.oxyz-toa-do.dieu-kien-vuong-goc",
+        "math.thpt.oxyz-toa-do.trung-diem",
+        "math.thpt.oxyz-toa-do.trong-tam-tam-giac",
+        "math.thpt.oxyz-toa-do.hinh-chieu-doi-xung-mat-toa-do",
+        "math.thpt.oxyz-toa-do.diem-chia-doan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Trong $Oxyz$ cho $\\vec a=(1;2;-1),\\ \\vec b=(2;m;4)$. Tìm $m$ để $\\vec a\\perp\\vec b$.",
+          "solution": "Hai vectơ vuông góc khi tích vô hướng bằng 0: $\\vec a\\cdot\\vec b=1\\cdot2+2\\cdot m+(-1)\\cdot4=2+2m-4=2m-2$. Cho bằng 0 được $2m-2=0$, suy ra $m=1$.",
+          "answer": "$m=1$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên thành phần thứ ba khi tính tích vô hướng trong không gian — phải cộng đủ ba tích $x_1x_2+y_1y_2+z_1z_2$.",
+        "Tính $\\overrightarrow{AB}$ theo 'đầu trừ cuối' — đúng là điểm cuối trừ điểm đầu ở cả ba tọa độ.",
+        "Lấy $|\\vec a|=x^2+y^2+z^2$ mà quên khai căn — đó là $|\\vec a|^2$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "hinh-hoc",
+        "oxyz",
+        "toa-do",
+        "tich-vo-huong",
+        "lop-12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.tich-co-huong-va-ung-dung",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Phương pháp toạ độ trong không gian",
+      "order": 2,
+      "title_vi": "Tích có hướng của hai vectơ và ứng dụng",
+      "title_en": "Cross product and its applications",
+      "objectives": [
+        "Tính được tích có hướng của hai vectơ trong không gian",
+        "Vận dụng tích có hướng để tính diện tích tam giác, thể tích tứ diện và khối hộp",
+        "Sử dụng tích có hướng để xét đồng phẳng và tìm vectơ pháp tuyến"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-diem-vecto-oxyz"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tích có hướng",
+          "term_en": "Cross product",
+          "definition": "Với $\\vec a=(a_1;a_2;a_3),\\ \\vec b=(b_1;b_2;b_3)$: $[\\vec a,\\vec b]=(a_2b_3-a_3b_2;\\,a_3b_1-a_1b_3;\\,a_1b_2-a_2b_1)$, là vectơ vuông góc với cả $\\vec a$ và $\\vec b$."
+        },
+        {
+          "term_vi": "Tích hỗn tạp",
+          "term_en": "Scalar triple product",
+          "definition": "$[\\vec a,\\vec b]\\cdot\\vec c$; trị tuyệt đối của nó là thể tích khối hộp dựng trên ba vectơ."
+        },
+        {
+          "term_vi": "Điều kiện đồng phẳng",
+          "term_en": "Coplanarity condition",
+          "definition": "Ba vectơ đồng phẳng khi và chỉ khi tích hỗn tạp bằng 0: $[\\vec a,\\vec b]\\cdot\\vec c=0$."
+        }
+      ],
+      "content": "## Một phép nhân trả về vectơ vuông góc\n\nKhác tích vô hướng (cho một số), **tích có hướng** của hai vectơ cho một **vectơ** vuông góc với cả hai:\n\n$$[\\vec a,\\vec b]=(a_2b_3-a_3b_2;\\ a_3b_1-a_1b_3;\\ a_1b_2-a_2b_1).$$\n\nĐộ dài của nó bằng diện tích hình bình hành dựng trên $\\vec a,\\vec b$: $|[\\vec a,\\vec b]|=|\\vec a||\\vec b|\\sin(\\vec a,\\vec b)$. Đặc tính \"vuông góc với cả hai\" khiến nó là cách nhanh nhất để tìm **vectơ pháp tuyến** của mặt phẳng ở bài sau.\n\n## Bốn ứng dụng đo lường\n\n$$S_{\\triangle ABC}=\\frac12\\big|[\\overrightarrow{AB},\\overrightarrow{AC}]\\big|,\\qquad S_{\\text{hbh}}=\\big|[\\overrightarrow{AB},\\overrightarrow{AD}]\\big|,$$\n$$V_{\\text{tứ diện}}=\\frac16\\big|[\\overrightarrow{AB},\\overrightarrow{AC}]\\cdot\\overrightarrow{AD}\\big|,\\qquad V_{\\text{hộp}}=\\big|[\\overrightarrow{AB},\\overrightarrow{AD}]\\cdot\\overrightarrow{AA'}\\big|.$$\n\nCùng một tích có hướng phục vụ cả diện tích lẫn thể tích, chỉ khác hệ số ($\\dfrac12$ cho tam giác, $\\dfrac16$ cho tứ diện).\n\n## Xét đồng phẳng\n\nBa vectơ **đồng phẳng** khi tích hỗn tạp bằng 0:\n\n$$[\\vec a,\\vec b]\\cdot\\vec c=0.$$\n\nSuy ra bốn điểm đồng phẳng khi ba vectơ nối chúng đồng phẳng — một tiêu chuẩn gọn để kiểm tra trước khi viết phương trình mặt phẳng. Nếu tích hỗn tạp khác 0, bốn điểm tạo thành một tứ diện thực sự có thể tích dương.",
+      "formulas": [
+        "math.thpt.oxyz-toa-do.tich-co-huong",
+        "math.thpt.oxyz-toa-do.tich-co-huong-tinh-chat",
+        "math.thpt.oxyz-toa-do.dien-tich-tam-giac",
+        "math.thpt.oxyz-toa-do.dien-tich-hinh-binh-hanh",
+        "math.thpt.oxyz-toa-do.the-tich-tu-dien",
+        "math.thpt.oxyz-toa-do.the-tich-khoi-hop",
+        "math.thpt.oxyz-toa-do.dieu-kien-dong-phang",
+        "math.thpt.oxyz-toa-do.dieu-kien-cung-phuong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $A(1;0;0),B(0;2;0),C(0;0;3)$. Tính diện tích tam giác $ABC$.",
+          "solution": "Lập hai vectơ cạnh: $\\overrightarrow{AB}=(-1;2;0),\\ \\overrightarrow{AC}=(-1;0;3)$. Tích có hướng: $[\\overrightarrow{AB},\\overrightarrow{AC}]=(2\\cdot3-0\\cdot0;\\ 0\\cdot(-1)-(-1)\\cdot3;\\ (-1)\\cdot0-2\\cdot(-1))=(6;3;2)$. Độ dài $|[\\overrightarrow{AB},\\overrightarrow{AC}]|=\\sqrt{6^2+3^2+2^2}=\\sqrt{49}=7$. Diện tích $S=\\dfrac12\\cdot7=\\dfrac72=3{,}5$.",
+          "answer": "$S=3{,}5$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm tích có hướng cho ra một số như tích vô hướng — tích có hướng là một **vectơ**.",
+        "Quên hệ số: dùng $\\dfrac12$ cho thể tích tứ diện (đúng là $\\dfrac16$) hoặc bỏ $\\dfrac12$ khi tính diện tích tam giác.",
+        "Tính sai một thành phần của tích có hướng do lẫn thứ tự trừ trong công thức — nên viết theo sơ đồ định thức để tránh sai dấu."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "oxyz",
+        "tich-co-huong",
+        "the-tich",
+        "lop-12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-mat-phang-oxyz",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Phương pháp toạ độ trong không gian",
+      "order": 3,
+      "title_vi": "Phương trình mặt phẳng trong Oxyz",
+      "title_en": "Equation of a plane in space",
+      "objectives": [
+        "Viết được phương trình mặt phẳng khi biết điểm và vectơ pháp tuyến",
+        "Viết được phương trình mặt phẳng qua ba điểm hoặc theo đoạn chắn",
+        "Xét được vị trí tương đối, tính góc và khoảng cách liên quan đến mặt phẳng"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-diem-vecto-oxyz",
+        "lesson.math.vn-thpt-math-hinhhoc.tich-co-huong-va-ung-dung"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình tổng quát mặt phẳng",
+          "term_en": "General plane equation",
+          "definition": "$Ax+By+Cz+D=0$ với $(A;B;C)$ là một vectơ pháp tuyến (khác vectơ không)."
+        },
+        {
+          "term_vi": "Khoảng cách điểm - mặt phẳng",
+          "term_en": "Point-to-plane distance",
+          "definition": "Từ $M(x_0;y_0;z_0)$ đến $(P):Ax+By+Cz+D=0$: $d=\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        },
+        {
+          "term_vi": "Góc giữa hai mặt phẳng",
+          "term_en": "Angle between two planes",
+          "definition": "Xác định qua hai vectơ pháp tuyến: $\\cos\\varphi=\\dfrac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1||\\vec n_2|}$."
+        }
+      ],
+      "content": "## Một điểm và một pháp tuyến là đủ\n\nMặt phẳng $(P)$ xác định bởi một điểm $M_0$ đi qua và một vectơ pháp tuyến $\\vec n=(A;B;C)$. Điểm $M$ thuộc $(P)$ khi $\\overrightarrow{M_0M}\\perp\\vec n$, cho ra\n\n$$A(x-x_0)+B(y-y_0)+C(z-z_0)=0\\ \\Longleftrightarrow\\ Ax+By+Cz+D=0.$$\n\n**Đọc phương trình là biết pháp tuyến**: hệ số của $x,y,z$ chính là $\\vec n$. Ngược lại, để viết phương trình ta chỉ cần săn hai thứ: một điểm và một pháp tuyến.\n\n## Cách tìm pháp tuyến\n\n- Biết mặt phẳng vuông góc một đường: lấy chỉ phương đường đó làm $\\vec n$.\n- Biết ba điểm $A,B,C$: lấy $\\vec n=[\\overrightarrow{AB},\\overrightarrow{AC}]$ (tích có hướng vuông góc cả hai cạnh).\n- Mặt phẳng cắt ba trục tại $(a;0;0),(0;b;0),(0;0;c)$: dùng **phương trình đoạn chắn** $\\dfrac{x}{a}+\\dfrac{y}{b}+\\dfrac{z}{c}=1$.\n\n## Góc và khoảng cách\n\nKhoảng cách từ điểm tới mặt phẳng:\n\n$$d(M,(P))=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}.$$\n\nGóc giữa hai mặt phẳng tính qua hai pháp tuyến với trị tuyệt đối để cho góc không tù. Vị trí tương đối hai mặt phẳng đọc từ quan hệ hai pháp tuyến: cùng phương thì song song hoặc trùng, vuông góc thì $\\vec n_1\\cdot\\vec n_2=0$.",
+      "formulas": [
+        "math.thpt.oxyz-mat-phang.pt-tong-quat",
+        "math.thpt.oxyz-mat-phang.pt-qua-ba-diem",
+        "math.thpt.oxyz-mat-phang.pt-doan-chan",
+        "math.thpt.oxyz-mat-phang.khoang-cach-diem-mat-phang",
+        "math.thpt.oxyz-mat-phang.goc-hai-mat-phang",
+        "math.thpt.oxyz-mat-phang.vi-tri-tuong-doi",
+        "math.thpt.oxyz-mat-phang.hinh-chieu-vuong-goc-diem"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Viết phương trình mặt phẳng qua ba điểm $A(1;0;0),B(0;2;0),C(0;0;3)$ và tính khoảng cách từ $O$ đến mặt phẳng đó.",
+          "solution": "Ba điểm là giao với ba trục nên dùng đoạn chắn: $\\dfrac{x}{1}+\\dfrac{y}{2}+\\dfrac{z}{3}=1$. Quy đồng mẫu $6$: $6x+3y+2z-6=0$. Khoảng cách từ $O(0;0;0)$: $d=\\dfrac{|6\\cdot0+3\\cdot0+2\\cdot0-6|}{\\sqrt{6^2+3^2+2^2}}=\\dfrac{6}{\\sqrt{49}}=\\dfrac{6}{7}$.",
+          "answer": "$(P):6x+3y+2z-6=0;\\ d(O,(P))=\\dfrac67$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm phương trình đoạn chắn thành $ax+by+cz=1$ với $a,b,c$ là giao điểm — đúng là **mẫu số** mới là hoành độ giao điểm: $\\dfrac{x}{a}+\\dfrac{y}{b}+\\dfrac{z}{c}=1$.",
+        "Lấy pháp tuyến của mặt phẳng qua ba điểm là một cạnh $\\overrightarrow{AB}$ — pháp tuyến phải vuông góc **cả** hai cạnh, tức tích có hướng $[\\overrightarrow{AB},\\overrightarrow{AC}]$.",
+        "Quên khai căn ở mẫu khoảng cách, chia cho $A^2+B^2+C^2$ thay vì $\\sqrt{A^2+B^2+C^2}$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "hinh-hoc",
+        "oxyz",
+        "mat-phang",
+        "lop-12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-duong-thang-oxyz",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Phương pháp toạ độ trong không gian",
+      "order": 4,
+      "title_vi": "Phương trình đường thẳng trong Oxyz",
+      "title_en": "Equation of a line in space",
+      "objectives": [
+        "Viết được phương trình tham số và chính tắc của đường thẳng trong không gian",
+        "Xét được vị trí tương đối của hai đường thẳng và của đường thẳng với mặt phẳng",
+        "Tính được góc và khoảng cách liên quan đến đường thẳng trong không gian"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-diem-vecto-oxyz",
+        "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-mat-phang-oxyz"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình tham số đường thẳng",
+          "term_en": "Parametric line equation",
+          "definition": "Đường thẳng qua $M_0(x_0;y_0;z_0)$ chỉ phương $\\vec u=(a;b;c)$: $x=x_0+at,\\ y=y_0+bt,\\ z=z_0+ct$."
+        },
+        {
+          "term_vi": "Vị trí tương đối hai đường thẳng",
+          "term_en": "Relative position of two lines",
+          "definition": "Hai đường thẳng trong không gian có thể trùng, song song, cắt nhau hoặc chéo nhau; xét qua chỉ phương và một điểm."
+        },
+        {
+          "term_vi": "Khoảng cách hai đường chéo nhau",
+          "term_en": "Distance of skew lines",
+          "definition": "$d=\\dfrac{|[\\vec u_1,\\vec u_2]\\cdot\\overrightarrow{M_1M_2}|}{|[\\vec u_1,\\vec u_2]|}$."
+        }
+      ],
+      "content": "## Đường thẳng cần một điểm và một hướng\n\nTrong không gian, đường thẳng không viết được dưới một phương trình bậc nhất duy nhất (đó là mặt phẳng). Ta mô tả nó bằng **điểm đi qua** $M_0$ và **vectơ chỉ phương** $\\vec u=(a;b;c)$:\n\n$$\\begin{cases}x=x_0+at\\\\ y=y_0+bt\\\\ z=z_0+ct\\end{cases}\\qquad\\text{(tham số)},\\qquad \\frac{x-x_0}{a}=\\frac{y-y_0}{b}=\\frac{z-z_0}{c}\\ \\text{(chính tắc)}.$$\n\nDạng chính tắc chỉ dùng khi $a,b,c$ đều khác 0.\n\n## Vị trí tương đối\n\nVới hai đường thẳng có chỉ phương $\\vec u_1,\\vec u_2$:\n\n- $\\vec u_1,\\vec u_2$ **cùng phương**: hai đường song song hoặc trùng (kiểm tra một điểm).\n- $\\vec u_1,\\vec u_2$ **không cùng phương**: cắt nhau nếu đồng phẳng, **chéo nhau** nếu không đồng phẳng.\n\nTiêu chuẩn đồng phẳng dùng tích hỗn tạp $[\\vec u_1,\\vec u_2]\\cdot\\overrightarrow{M_1M_2}$: bằng 0 thì cắt nhau, khác 0 thì chéo nhau.\n\n## Góc và khoảng cách\n\nGóc giữa hai đường thẳng, giữa đường thẳng và mặt phẳng đều tính qua chỉ phương và pháp tuyến với trị tuyệt đối. Khoảng cách giữa hai đường **chéo nhau**:\n\n$$d=\\frac{\\big|[\\vec u_1,\\vec u_2]\\cdot\\overrightarrow{M_1M_2}\\big|}{\\big|[\\vec u_1,\\vec u_2]\\big|}.$$\n\nTử là tích hỗn tạp (thể tích khối hộp dựng trên ba vectơ), mẫu là diện tích đáy — thương chính là chiều cao, tức khoảng cách cần tìm.",
+      "formulas": [
+        "math.thpt.oxyz-duong-thang.pt-tham-so",
+        "math.thpt.oxyz-duong-thang.pt-chinh-tac",
+        "math.thpt.oxyz-duong-thang.vi-tri-hai-duong-thang",
+        "math.thpt.oxyz-duong-thang.vi-tri-duong-mat",
+        "math.thpt.oxyz-duong-thang.goc-hai-duong-thang",
+        "math.thpt.oxyz-duong-thang.goc-duong-mat",
+        "math.thpt.oxyz-duong-thang.khoang-cach-hai-duong-cheo-nhau",
+        "math.thpt.oxyz-duong-thang.khoang-cach-diem-duong-thang"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $d_1$ qua $A(1;0;0)$ chỉ phương $\\vec u=(2;-1;0)$ và $d_2$ qua $B(2;2;2)$ chỉ phương $\\vec v=(0;1;-1)$. Chứng tỏ hai đường chéo nhau và tính khoảng cách giữa chúng.",
+          "solution": "Tích có hướng $[\\vec u,\\vec v]=((-1)(-1)-0\\cdot1;\\ 0\\cdot0-2\\cdot(-1);\\ 2\\cdot1-(-1)\\cdot0)=(1;2;2)$. Vectơ $\\overrightarrow{AB}=(1;2;2)$. Tích hỗn tạp $[\\vec u,\\vec v]\\cdot\\overrightarrow{AB}=1+4+4=9\\ne0$ nên hai đường chéo nhau. Khoảng cách: $d=\\dfrac{|9|}{|[\\vec u,\\vec v]|}=\\dfrac{9}{\\sqrt{1+4+4}}=\\dfrac{9}{3}=3$.",
+          "answer": "Hai đường chéo nhau, $d=3$"
+        }
+      ],
+      "common_mistakes": [
+        "Viết dạng chính tắc khi một tọa độ chỉ phương bằng 0 — khi đó không được đặt mẫu 0; phải giữ dạng tham số hoặc tách phương trình riêng.",
+        "Kết luận hai đường cắt nhau chỉ vì chỉ phương không cùng phương — còn phải kiểm tra đồng phẳng; không đồng phẳng thì chúng chéo nhau.",
+        "Áp dụng công thức khoảng cách hai đường chéo nhau cho hai đường song song — khi đó $[\\vec u_1,\\vec u_2]=\\vec0$, mẫu bằng 0, phải dùng công thức khoảng cách điểm - đường thẳng."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "hinh-hoc",
+        "oxyz",
+        "duong-thang",
+        "khoang-cach",
+        "lop-12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-mat-cau-oxyz",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương V: Phương pháp toạ độ trong không gian",
+      "order": 5,
+      "title_vi": "Phương trình mặt cầu trong Oxyz và vị trí tương đối",
+      "title_en": "Equation of a sphere and relative positions",
+      "objectives": [
+        "Viết được phương trình mặt cầu dạng chính tắc và tổng quát",
+        "Xác định được tâm, bán kính và xét vị trí tương đối mặt cầu với mặt phẳng, đường thẳng",
+        "Vận dụng vào bài toán tiếp diện và đường tròn giao tuyến"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-hinhhoc.toa-do-diem-vecto-oxyz",
+        "lesson.math.vn-thpt-math-hinhhoc.phuong-trinh-mat-phang-oxyz"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình chính tắc mặt cầu",
+          "term_en": "Standard sphere equation",
+          "definition": "Mặt cầu tâm $I(a;b;c)$ bán kính $R$: $(x-a)^2+(y-b)^2+(z-c)^2=R^2$."
+        },
+        {
+          "term_vi": "Phương trình tổng quát mặt cầu",
+          "term_en": "General sphere equation",
+          "definition": "$x^2+y^2+z^2-2ax-2by-2cz+d=0$ là mặt cầu khi $a^2+b^2+c^2-d>0$, khi đó $R=\\sqrt{a^2+b^2+c^2-d}$."
+        },
+        {
+          "term_vi": "Đường tròn giao tuyến",
+          "term_en": "Circle of intersection",
+          "definition": "Mặt phẳng cách tâm khoảng $d<R$ cắt mặt cầu theo đường tròn bán kính $r=\\sqrt{R^2-d^2}$."
+        }
+      ],
+      "content": "## Mặt cầu trong tọa độ\n\nĐịnh nghĩa \"cách tâm $I(a;b;c)$ một khoảng $R$\" cho ngay phương trình chính tắc:\n\n$$(x-a)^2+(y-b)^2+(z-c)^2=R^2.$$\n\nKhai triển ta được **dạng tổng quát** $x^2+y^2+z^2-2ax-2by-2cz+d=0$; từ đó tâm $I(a;b;c)$ và $R=\\sqrt{a^2+b^2+c^2-d}$, với điều kiện tồn tại $a^2+b^2+c^2-d>0$.\n\n## Vị trí tương đối với mặt phẳng\n\nSo sánh $d=d(I,(P))$ với $R$:\n\n- $d>R$: mặt phẳng và mặt cầu rời nhau.\n- $d=R$: **tiếp xúc**, $(P)$ là **tiếp diện**, tiếp điểm là hình chiếu của $I$ lên $(P)$.\n- $d<R$: cắt theo đường tròn bán kính $r=\\sqrt{R^2-d^2}$, tâm là hình chiếu của $I$ lên $(P)$.\n\n## Vị trí tương đối với đường thẳng\n\nTương tự, so sánh khoảng cách từ tâm đến đường thẳng với $R$ để biết đường thẳng cắt (dây cung), tiếp xúc hay không gặp mặt cầu.\n\n## Một lớp bài vận dụng cao\n\nNhiều bài thi khai thác cực trị trên mặt cầu: tìm điểm $M$ trên $(S)$ để một biểu thức tuyến tính $Ax+By+Cz$ đạt cực trị. Mẹo: giá trị đó bằng giá trị tại tâm cộng/trừ $R\\cdot|\\vec n|$ với $\\vec n=(A;B;C)$, đạt được khi $M$ nằm trên đường thẳng qua tâm theo hướng $\\vec n$. Kĩ thuật này biến bài cực trị hình học thành một đánh giá đại số ngắn gọn.",
+      "formulas": [
+        "math.thpt.oxyz-mat-cau.pt-chinh-tac",
+        "math.thpt.oxyz-mat-cau.pt-tong-quat",
+        "math.thpt.oxyz-mat-cau.vi-tri-mat-cau-mat-phang",
+        "math.thpt.oxyz-mat-cau.vi-tri-mat-cau-duong-thang",
+        "math.thpt.oxyz-mat-cau.tiep-dien",
+        "math.thpt.oxyz-mat-cau.ban-kinh-duong-tron-giao-tuyen"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho mặt cầu $(S)$ tâm $I(1;2;-1),\\ R=5$ và mặt phẳng $(P):2x-2y+z-6=0$. Xét vị trí tương đối và tính bán kính đường tròn giao tuyến (nếu có).",
+          "solution": "Khoảng cách từ tâm tới mặt phẳng: $d=\\dfrac{|2\\cdot1-2\\cdot2+(-1)-6|}{\\sqrt{2^2+(-2)^2+1^2}}=\\dfrac{|-9|}{3}=3$. Vì $d=3<R=5$ nên $(P)$ cắt $(S)$ theo một đường tròn. Bán kính đường tròn giao tuyến: $r=\\sqrt{R^2-d^2}=\\sqrt{25-9}=\\sqrt{16}=4$.",
+          "answer": "$(P)$ cắt $(S)$; $r=4$"
+        }
+      ],
+      "common_mistakes": [
+        "Kết luận một phương trình bậc hai là mặt cầu mà không kiểm tra $a^2+b^2+c^2-d>0$ — nếu biểu thức này không dương thì không có mặt cầu thực.",
+        "Nhầm bán kính đường tròn giao tuyến $r=\\sqrt{R^2-d^2}$ thành $\\sqrt{R^2+d^2}$ — đây là một tam giác vuông với **cạnh huyền** $R$, nên phải trừ.",
+        "Lấy tâm mặt cầu từ dạng tổng quát bằng đúng hệ số $(-2a;-2b;-2c)$ thay vì một nửa và đổi dấu — tâm là $(a;b;c)$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "chuyen-sau",
+      "tags": [
+        "hinh-hoc",
+        "oxyz",
+        "mat-cau",
+        "lop-12"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1208 @@
+{
+  "meta": {
+    "file": "exams-alevel.json",
+    "title": "Hồ sơ kỳ thi Cambridge và Edexcel A-Level",
+    "count": 6
+  },
+  "exams": [
+    {
+      "id": "exam.cambridge-alevel-mathematics-9709",
+      "name": "Cambridge International A Level Mathematics 9709",
+      "provider": "Cambridge Assessment International Education",
+      "subject": "math",
+      "curriculum": [
+        "a-level"
+      ],
+      "level": "thpt",
+      "overview": "Cambridge International AS & A Level Mathematics 9709 là kỳ thi toán chuẩn quốc tế của Cambridge, dành cho học sinh lớp 11-12 hệ A Level tại các trường quốc tế và song ngữ. Kỳ thi gồm sáu component (Paper 1-6) chia thành ba nhánh Pure Mathematics, Mechanics và Probability & Statistics; thí sinh chọn hai component cho AS Level và bốn component cho A Level. Khung này áp dụng cho syllabus thi năm 2026 và 2027. Kết quả A Level 9709 được dùng để xét tuyển đại học ở Anh (điều kiện offer thường A*A*A đến ABB tuỳ ngành), Singapore, Hong Kong, Úc, Canada và nhiều đại học quốc tế tại Việt Nam; nhiều đại học Mỹ quy đổi grade A hoặc A* thành 3-8 tín chỉ Calculus nhập môn, tuy chính sách khác nhau theo từng trường.",
+      "sections": [
+        {
+          "name": "Paper 1 - Pure Mathematics 1 (bắt buộc cho cả AS và A Level)",
+          "question_count": "10-12",
+          "duration_minutes": 110,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "75 marks, câu hỏi structured, làm toàn bộ. Chiếm 60% AS Level và 30% A Level. Máy tính khoa học được phép nhưng cấm máy vẽ đồ thị và máy có CAS."
+        },
+        {
+          "name": "Paper 3 - Pure Mathematics 3 (bắt buộc cho A Level)",
+          "question_count": "9-11",
+          "duration_minutes": 110,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "75 marks. Chỉ có ở lộ trình A Level (30% A Level), không dùng cho AS Level. Nội dung nặng nhất: tích phân nâng cao, phương trình vi phân, vectơ, số phức."
+        },
+        {
+          "name": "Paper 4 - Mechanics (tổ hợp ứng dụng phương án 1)",
+          "question_count": "6-8",
+          "duration_minutes": 75,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "50 marks. Chiếm 40% AS Level và 20% A Level. KHÔNG được kết hợp Paper 4 với Paper 6."
+        },
+        {
+          "name": "Paper 5 - Probability & Statistics 1 (bắt buộc cho A Level)",
+          "question_count": "6-8",
+          "duration_minutes": 75,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "50 marks, 40% AS Level và 20% A Level. Nếu chọn tổ hợp thứ hai thì thay Paper 4 bằng Paper 6 (Probability & Statistics 2, 75 phút, 50 marks, 20% A Level, chỉ có ở A Level và yêu cầu kiến thức Paper 5 làm nền)."
+        }
+      ],
+      "topic_weights": {
+        "P1 - Quadratics": 3,
+        "P1 - Functions": 4,
+        "P1 - Coordinate geometry": 4,
+        "P1 - Circular measure": 3,
+        "P1 - Trigonometry": 4,
+        "P1 - Series (nhị thức, cấp số cộng, cấp số nhân)": 4,
+        "P1 - Differentiation": 4,
+        "P1 - Integration": 4,
+        "P3 - Algebra (modulus, chia đa thức, phân thức từng phần)": 4,
+        "P3 - Logarithmic and exponential functions": 3,
+        "P3 - Trigonometry": 4,
+        "P3 - Differentiation": 4,
+        "P3 - Integration": 4,
+        "P3 - Numerical solution of equations": 2,
+        "P3 - Vectors": 3,
+        "P3 - Differential equations": 3,
+        "P3 - Complex numbers": 3,
+        "P4 - Forces and equilibrium": 4,
+        "P4 - Kinematics of motion in a straight line": 4,
+        "P4 - Momentum": 3,
+        "P4 - Newton's laws of motion": 5,
+        "P4 - Energy, work and power": 4,
+        "P5 - Representation of data": 4,
+        "P5 - Permutations and combinations": 3,
+        "P5 - Probability": 4,
+        "P5 - Discrete random variables": 4,
+        "P5 - The normal distribution": 5
+      },
+      "question_types": [
+        {
+          "name": "Structured question nhiều ý (a), (b), (c) có mark allocation in kèm",
+          "description": "Toàn bộ 9709 chỉ có dạng structured question tự luận. Mỗi ý ghi rõ số mark trong ngoặc vuông ở lề phải; số mark cho biết chính xác số bước lập luận mà examiner chờ đợi. Ý sau thường dùng kết quả ý trước, nhưng mark scheme luôn cho phép follow-through nếu kết quả trước sai mà phương pháp sau đúng.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho f(x) = 2x^3 - 9x^2 + 12x + 1 với x thuộc R. (a) Tìm f'(x) và xác định toạ độ hai điểm dừng của đồ thị y = f(x). [4] (b) Xác định tính chất của mỗi điểm dừng. [2] (c) Tìm khoảng giá trị của k để phương trình f(x) = k có đúng ba nghiệm phân biệt. [3]",
+          "approach": "Đọc số mark trước khi làm: 4 marks nghĩa là khoảng 4 bước được chấm (đạo hàm, cho bằng 0, giải, thay tìm y). Viết mỗi bước một dòng, không nhảy cóc. Với ý cuối dạng 'khoảng giá trị của k', luôn vẽ phác bảng biến thiên hoặc dáng đồ thị trước khi viết bất đẳng thức, và kiểm tra dấu bằng có được nhận hay không."
+        },
+        {
+          "name": "Show that / prove that (chứng minh dẫn tới kết quả cho sẵn)",
+          "description": "Đề cho trước kết quả và yêu cầu dẫn ra. Vì đáp số đã lộ, toàn bộ mark nằm ở các bước trung gian; examiner sẽ trừ hết nếu thí sinh nhảy từ dòng đầu sang dòng kết quả.",
+          "example_prompt": "Đề mô phỏng tự soạn: Chứng minh rằng (1 - cos 2θ) / (sin 2θ) = tan θ với mọi θ mà biểu thức xác định. [3]",
+          "approach": "Bắt đầu từ vế phức tạp hơn, thay công thức nhân đôi từ MF19 hoặc trí nhớ, ghi rõ mỗi lần biến đổi dùng đồng nhất thức nào, kết thúc đúng bằng vế còn lại. Không được biến đổi đồng thời hai vế rồi viết '= nhau'."
+        },
+        {
+          "name": "Câu tích phân bắt buộc dùng kỹ thuật chỉ định (Paper 3)",
+          "description": "Đề chỉ định phép đổi biến hoặc dạng phân tích, ví dụ 'bằng phép thế u = ...' hoặc 'sau khi tách thành phân thức từng phần'. Dùng cách khác vẫn có thể ra đáp số nhưng mất method mark.",
+          "example_prompt": "Đề mô phỏng tự soạn: (a) Biểu diễn (5x + 4) / ((2x + 1)(x + 2)) dưới dạng phân thức từng phần. [3] (b) Từ đó tính tích phân của biểu thức trên từ x = 0 đến x = 2, đưa đáp số về dạng a ln b với a, b hữu tỉ. [4]",
+          "approach": "Đặt hệ số bất định, thay giá trị x làm triệt tiêu mẫu để tìm nhanh. Khi tích phân, luôn viết dấu trị tuyệt đối trong ln rồi mới bỏ nếu cận dương. Gộp ln theo luật logarit để về đúng dạng đề yêu cầu, không để nguyên tổng hai ln."
+        },
+        {
+          "name": "Bài toán cơ học có mô hình vật lí (Paper 4)",
+          "description": "Bài mô tả một tình huống thực (vật trên mặt phẳng nghiêng, hệ hai vật nối dây qua ròng rọc, xe phanh gấp). Mark scheme chấm riêng bước lập phương trình theo phương và bước giải.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một vật khối lượng 4 kg trượt xuống mặt phẳng nghiêng góc 25 độ so với phương ngang. Hệ số ma sát giữa vật và mặt phẳng là 0,32. (a) Tìm gia tốc của vật. [4] (b) Vật xuất phát từ trạng thái nghỉ; tìm tốc độ sau khi đi được 6 m dọc mặt phẳng nghiêng. [2]",
+          "approach": "Bước 1 luôn là vẽ sơ đồ lực (force diagram) dù đề không yêu cầu - đây là nơi tránh sai dấu. Bước 2 chiếu lên phương vuông góc để tìm R, bước 3 chiếu lên phương chuyển động với F = ma. Dùng g = 9,81 (Cambridge quy định) trừ khi đề nói khác."
+        },
+        {
+          "name": "Bài xác suất - phân phối chuẩn có ngữ cảnh (Paper 5)",
+          "description": "Đề cho ngữ cảnh thực tế, yêu cầu chuẩn hoá về Z rồi tra bảng, hoặc bài toán ngược từ xác suất về giá trị tham số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Khối lượng các gói cà phê do một máy đóng gói tuân theo phân phối chuẩn với trung bình 502 g và độ lệch chuẩn 3,5 g. (a) Tính xác suất một gói lấy ngẫu nhiên nặng dưới 498 g. [3] (b) Nhà máy muốn chỉ 2% số gói nhẹ hơn mức tối thiểu ghi trên bao bì. Tìm mức tối thiểu đó. [3]",
+          "approach": "Luôn viết dòng chuẩn hoá Z = (x - mu) / sigma với số cụ thể trước khi tra bảng - đó là method mark. Bài toán ngược: tra bảng ngược tìm z rồi giải x = mu + z.sigma, chú ý dấu âm khi xác suất nhỏ hơn 0,5. Không dùng hàm phân phối tích hợp trên máy tính rồi chỉ ghi đáp số."
+        }
+      ],
+      "formula_sheet_provided": [
+        "List of Formulae and Statistical Tables MF19 - phát cho mọi component. MF19 là bản DÙNG CHUNG cho 9709 và 9231 và được in nguyên văn ở mục 5 của syllabus, nên có thể học thuộc bố cục trước khi thi. Các mục có nhãn Further Pure Mathematics, Further Mechanics và Further Probability & Statistics CHỈ dành cho 9231; thí sinh 9709 không được coi những mục đó là công thức được cấp cho phần thi của mình.",
+        "MF19 mục PURE MATHEMATICS - Mensuration: thể tích và diện tích mặt cầu, thể tích hình nón và hình chóp, diện tích xung quanh hình nón, độ dài cung r.theta và diện tích hình quạt r^2.theta/2 (theta tính bằng radian).",
+        "MF19 mục PURE MATHEMATICS - Algebra: công thức nghiệm phương trình bậc hai; số hạng tổng quát và tổng n số hạng của cấp số cộng; số hạng tổng quát, tổng n số hạng và tổng vô hạn của cấp số nhân; khai triển nhị thức với n nguyên dương kèm định nghĩa tổ hợp, và khai triển (1+x)^n với n hữu tỉ, |x| < 1.",
+        "MF19 mục PURE MATHEMATICS - Trigonometry: tan = sin/cos; ba đồng nhất thức Pythagore; công thức cộng cho sin, cos, tan; công thức nhân đôi; miền giá trị chính của arcsin, arccos, arctan. MF19 KHÔNG có công thức biến đổi tổng - tích và KHÔNG có công thức theo t = tan(x/2) trong phần dành cho 9709 (phép thế t nằm ở mục Further Pure, chỉ dùng cho 9231).",
+        "MF19 mục PURE MATHEMATICS - Differentiation và Integration: bảng đạo hàm (x^n, ln x, e^x, sin, cos, tan, sec, cosec, cot, arctan), quy tắc tích, quy tắc thương và đạo hàm của đường tham số; bảng nguyên hàm (x^n, 1/x, e^x, sin, cos, sec^2, 1/(x^2+a^2) ra arctan, 1/(x^2-a^2) và 1/(a^2-x^2) ra dạng loga), nguyên hàm từng phần và dạng f'(x)/f(x). MF19 KHÔNG có quy tắc hình thang, quy tắc Simpson hay chuỗi Maclaurin.",
+        "MF19 mục PURE MATHEMATICS - Vectors: chỉ có tích vô hướng a.b = a1b1 + a2b2 + a3b3 = |a|.|b|.cos(theta). Công thức khoảng cách từ điểm tới đường thẳng hay mặt phẳng phải tự dựng.",
+        "MF19 mục MECHANICS (dùng cho Paper 4): CHỈ có bốn công thức chuyển động biến đổi đều v = u + at, s = (u+v)t/2, s = ut + at^2/2, v^2 = u^2 + 2as. Toàn bộ phần còn lại của Paper 4 phải thuộc: ma sát F <= mu.R, định luật II Newton, công - động năng - thế năng - công suất, xung lượng và bảo toàn động lượng. Khối tâm của vật đồng chất nằm ở mục Further Mechanics nên KHÔNG dành cho 9709, và MF19 không có mô men quán tính.",
+        "MF19 mục PROBABILITY & STATISTICS (dùng cho Paper 5 và Paper 6): trung bình và độ lệch chuẩn cho dữ liệu chưa nhóm và đã nhóm; E(X) và Var(X) của biến rời rạc; hàm khối xác suất kèm trung bình và phương sai của phân phối nhị thức, hình học và Poisson; E(X) và Var(X) của biến liên tục dạng tích phân; ước lượng không chệch của trung bình và phương sai; định lí giới hạn trung tâm; phân phối xấp xỉ của tỉ lệ mẫu. MF19 KHÔNG có công thức hồi quy hay hệ số tương quan.",
+        "MF19 phần bảng thống kê: 9709 chỉ dùng bảng hàm phân phối chuẩn tắc Phi(z) và bảng giá trị tới hạn của phân phối chuẩn. Các bảng phân phối t, chi bình phương, Wilcoxon signed-rank và Wilcoxon rank-sum cũng in trong MF19 nhưng chỉ dùng cho 9231.",
+        "Không cấp máy tính; thí sinh mang máy tính khoa học riêng. Cấm máy tính vẽ đồ thị và máy có khả năng biến đổi đại số ký hiệu, đạo hàm hoặc tích phân ký hiệu. Syllabus ghi rõ không cho mark cho đáp số không kèm bước tính (unsupported answers from a calculator)."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.luong-giac.he-thuc-luong-giac-co-ban",
+        "math.thpt.luong-giac.cong-thuc-cong-sin",
+        "math.thpt.luong-giac.cong-thuc-cong-cos",
+        "math.thpt.luong-giac.cong-thuc-cong-tan",
+        "math.thpt.luong-giac.nhan-doi-sin",
+        "math.thpt.luong-giac.nhan-doi-cos",
+        "math.thpt.luong-giac.bien-doi-a-sin-b-cos",
+        "math.thpt.luong-giac.do-dai-cung-tron",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.dao-ham.dao-ham-cua-tich",
+        "math.thpt.dao-ham.dao-ham-cua-thuong",
+        "math.thpt.dao-ham.phuong-trinh-tiep-tuyen",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-tung-phan",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-u-pham-tren-u",
+        "math.thpt.nguyen-ham-tich-phan.tich-phan-doi-bien",
+        "math.thpt.nguyen-ham-tich-phan.the-tich-tron-xoay-ox",
+        "math.thpt.day-so.cap-so-cong-tong-n-so-hang",
+        "math.thpt.day-so.cap-so-nhan-tong-n-so-hang",
+        "math.thpt.day-so.cap-so-nhan-lui-vo-han",
+        "math.thpt.to-hop-xac-suat.nhi-thuc-newton",
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.phan-phoi.trung-binh-do-lech-chuan-nhi-thuc",
+        "math.thpt.phan-phoi.xac-suat-khoang-phan-phoi-chuan",
+        "math.thpt.mo-ta-du-lieu.diem-z-tham-so",
+        "math.thpt.xac-suat.ky-vong-bien-roi-rac",
+        "math.thpt.xac-suat.phuong-sai-tinh-nhanh-a-level",
+        "math.thpt.so-phuc.modun-so-phuc",
+        "math.thpt.so-phuc.dang-luong-giac",
+        "physics.thpt.intl-dong-luc-hoc.ma-sat-truot-mu-k-mu-d"
+      ],
+      "scoring": {
+        "description": "Mỗi component chấm theo raw mark riêng (75 hoặc 50). Mark scheme dùng bốn loại mark: M (method mark - cho phương pháp đúng, vẫn được cho dù có sai số học hoặc sai đại số nhỏ), A (accuracy mark - chỉ được cho khi M tương ứng đã được cho; không bao giờ tồn tại tổ hợp M0 A1), B (independent mark - cho một kết quả hoặc phát biểu độc lập, không phụ thuộc mark khác) và DM/DB (dependent mark - phụ thuộc mark liền trước). Các ký hiệu thường gặp: ft hoặc ecf (follow through - chấp nhận kết quả sai ở ý trước nếu bước sau xử lý đúng), oe (or equivalent), cao (correct answer only), soi (seen or implied), isw (ignore subsequent working - đã đúng thì phần viết thêm sai không bị trừ), AG (answer given - câu show that, bắt buộc đủ bước). Cambridge yêu cầu làm tròn kết quả không chính xác về 3 chữ số có nghĩa (hoặc 1 chữ số thập phân với góc tính bằng độ) trừ khi đề chỉ định khác, và tuyệt đối không làm tròn ở bước trung gian. Không có mark nào được cho cho đáp số không kèm lời giải khi đáp số đó lấy trực tiếp từ máy tính.",
+        "scale": "A*-E (A Level); a-e (AS Level); không đạt là Ungraded",
+        "raw_to_scaled": "Raw mark từng component được quy về percentage uniform mark (PUM) 0-100 dựa trên ngưỡng grade của component trong đúng kỳ thi đó, sau đó tổng hợp theo trọng số component (30/30/20/20) thành PUM tổng của syllabus. Ngưỡng PUM tổng cố định: A* = 90, A = 80, B = 70, C = 60, D = 50, E = 40. Grade A* KHÔNG tồn tại ở mức component - chỉ xuất hiện khi tổng hợp cả bốn component thành grade syllabus. Ngưỡng raw mark thay đổi theo từng kỳ thi và từng biến thể đề. Ví dụ thực tế kỳ June 2026: Component 11 (P1, tối đa 75) cần 59 để đạt A, 48 cho B, 37 cho C, 26 cho D, 15 cho E; Component 31 (P3, tối đa 75) cần 56 cho A; Component 42 (P4, tối đa 50) cần 38 cho A; Component 51 (P5, tối đa 50) cần 39 cho A. Sự chênh lệch lớn giữa các biến thể (ví dụ Component 33 cần tới 66/75 cho A) cho thấy phải bám ngưỡng của đúng kỳ và đúng mã đề, không dùng ngưỡng của kỳ khác làm mốc.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Phân bổ thời gian theo tỉ lệ mark: Paper 1 và Paper 3 có 75 mark trong 110 phút, tức khoảng 1,4 phút mỗi mark; Paper 4, 5, 6 có 50 mark trong 75 phút, cũng 1,5 phút mỗi mark. Chừa 8-10 phút cuối để soát đơn vị, làm tròn và các ý bị bỏ trống.",
+        "Làm theo thứ tự đề vì Cambridge xếp câu từ dễ đến khó, nhưng nếu một ý nhỏ bí quá 3 phút thì bỏ qua ý đó và làm tiếp ý sau - các ý (b), (c) thường vẫn chấm được nhờ follow-through dù ý (a) sai.",
+        "Viết đáp số trung gian với ít nhất 4-5 chữ số có nghĩa và chỉ làm tròn về 3 chữ số ở dòng cuối; đây là nguyên nhân mất accuracy mark phổ biến nhất trong 9709.",
+        "Khi dùng máy tính giải phương trình, tích phân hay tra phân phối, vẫn phải viết ra biểu thức đang tính; mark scheme ghi rõ không cho mark cho unsupported answers from a calculator.",
+        "Với câu show that, luôn kết thúc đúng bằng biểu thức đề cho và viết thêm một dòng kết luận; nếu đến gần cuối bị kẹt thì vẫn viết dòng cuối để lấy các method mark phía trước.",
+        "Mở sẵn MF19 ở đúng trang ngay khi bắt đầu: Paper 3 cần trang bảng nguyên hàm (các dạng dẫn tới arctan và dạng loga) và trang khai triển (1+x)^n với n hữu tỉ; Paper 5 cần bảng Phi(z). Mỗi lần lật tìm lại mất 20-30 giây, cộng dồn cả bài là mất một câu. Lưu ý MF19 không có chuỗi Maclaurin cho 9709 - mục đó thuộc phần Further Pure chỉ dùng cho 9231.",
+        "Chọn tổ hợp component theo định hướng ngành: P1+P3+P4+P5 (có Mechanics) phù hợp kỹ thuật, vật lí, khoa học máy tính; P1+P3+P5+P6 (hai môn thống kê) phù hợp kinh tế, y sinh, khoa học dữ liệu. Lưu ý không được ghép P4 với P6.",
+        "Nếu đi lộ trình staged (thi AS năm lớp 11 rồi carry forward), phải kiểm tra thời hạn carry forward trong Cambridge Handbook trước khi đăng ký năm thứ hai; hết hạn thì phải thi lại toàn bộ.",
+        "Gạch chân hoặc khoanh đáp số cuối của từng ý; examiner chấm theo mark scheme và chỉ tìm đáp số ở vị trí rõ ràng, đáp số lẫn trong nháp dễ bị bỏ sót.",
+        "Với Paper 4, luôn ghi rõ chiều dương đã chọn ở đầu bài; nhiều lỗi dấu trong bài động lượng và bài mặt phẳng nghiêng bắt nguồn từ việc không cố định quy ước dấu."
+      ],
+      "common_traps": [
+        "Làm tròn sớm: tính cos hoặc căn ở bước giữa rồi lấy 3 chữ số, dẫn tới đáp số cuối lệch ở chữ số thứ ba và mất toàn bộ accuracy mark dù phương pháp đúng.",
+        "Trả lời góc bằng radian khi đề hỏi độ hoặc ngược lại; đặc biệt nguy hiểm trong phần Circular measure của Paper 1 vì công thức độ dài cung và diện tích hình quạt chỉ đúng với radian.",
+        "Tin nhầm nội dung MF19: phần dành cho 9709 KHÔNG có công thức biến đổi tổng - tích, KHÔNG có phép thế t = tan(x/2), KHÔNG có chuỗi Maclaurin và KHÔNG có quy tắc hình thang - đây đều là mục Further Pure chỉ dành cho 9231. Ngược lại, bốn công thức suvat thì CÓ sẵn ở mục Mechanics, còn ma sát F <= mu.R và các công thức năng lượng thì phải thuộc.",
+        "Bỏ nghiệm khi giải phương trình lượng giác: chỉ lấy nghiệm chính của máy tính mà quên nghiệm đối xứng trong khoảng đề cho; luôn vẽ vòng tròn lượng giác hoặc đồ thị trước khi liệt kê nghiệm.",
+        "Quên hằng số tích phân C trong bài nguyên hàm không cận, hoặc quên xác định C từ điều kiện ban đầu trong bài phương trình vi phân Paper 3 - mất 1-2 mark mỗi lần.",
+        "Nhầm 1/(1+x^2) với dạng dẫn tới ln thay vì arctan, và nhầm phân thức từng phần khi mẫu có nhân tử bậc hai không phân tích được (phải dùng dạng (Ax+B)/(x^2+c)).",
+        "Trong Paper 3 phần vectơ: nhầm giữa khoảng cách từ điểm đến đường thẳng và khoảng cách từ điểm đến mặt phẳng, hoặc quên chuẩn hoá vectơ pháp tuyến khi dùng công thức khoảng cách.",
+        "Trong Paper 4: dùng g = 10 theo thói quen chương trình Việt Nam trong khi Cambridge dùng g = 9,81 m/s^2; sai số này đủ để lệch chữ số có nghĩa thứ ba.",
+        "Trong Paper 4 bài va chạm: quên rằng động lượng bảo toàn nhưng động năng KHÔNG bảo toàn trong va chạm mềm, và nhầm dấu vận tốc sau va chạm khi hai vật đổi chiều.",
+        "Trong Paper 5: dùng công thức tổ hợp khi bài toán có phân biệt thứ tự (phải dùng chỉnh hợp), và quên trừ trường hợp trùng lặp trong bài xếp chỗ có ràng buộc.",
+        "Trong Paper 5 phân phối chuẩn: quên hiệu chỉnh liên tục khi xấp xỉ nhị thức bằng chuẩn, và nhầm chiều bất đẳng thức khi tra bảng cho xác suất lớn hơn 0,5.",
+        "Nhầm phương sai mẫu chia n với chia (n-1): Cambridge dùng ký hiệu và quy ước riêng, phải đọc kỹ đề hỏi biến thiên của mẫu hay ước lượng cho tổng thể.",
+        "Đọc nhầm mark allocation: viết một trang cho ý 1 mark và một dòng cho ý 5 mark; số trong ngoặc vuông là chỉ dẫn trực tiếp về độ dài lời giải cần có."
+      ],
+      "tags": [
+        "a-level",
+        "cambridge",
+        "9709",
+        "toan",
+        "thpt",
+        "quoc-te"
+      ],
+      "sources": [
+        "Cambridge International AS & A Level Mathematics 9709 syllabus for 2026 and 2027 (cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf)",
+        "Cambridge International, Grade thresholds - Mathematics 9709, June 2026 (cambridgeinternational.org/Images/761530-mathematics-9709-june-2026-grade-threshold-table.pdf)",
+        "Cambridge International, A guide to percentage uniform marks",
+        "Cambridge International, MF19 List of formulae and statistical tables in nguyên văn tại mục 5 syllabus 9709 2026-2027"
+      ]
+    },
+    {
+      "id": "exam.cambridge-alevel-further-mathematics-9231",
+      "name": "Cambridge International A Level Further Mathematics 9231",
+      "provider": "Cambridge Assessment International Education",
+      "subject": "math",
+      "curriculum": [
+        "a-level"
+      ],
+      "level": "thpt",
+      "overview": "Cambridge International AS & A Level Further Mathematics 9231 là kỳ thi toán nâng cao, học song song hoặc sau 9709 và chỉ dành cho thí sinh đã hoặc đang học A Level Mathematics 9709. Kỳ thi có bốn component: Further Pure Mathematics 1, Further Pure Mathematics 2, Further Mechanics và Further Probability & Statistics. AS Level lấy hai component, A Level lấy đủ bốn. Khung này áp dụng cho syllabus thi năm 2026 và 2027. 9231 là điều kiện gần như bắt buộc cho đơn xin ngành Toán, Vật lí lí thuyết, Kỹ thuật và Khoa học máy tính ở Oxford, Cambridge, Imperial College, và được nhiều đại học Anh dùng làm điều kiện offer thứ ba; ở Mỹ nó thường quy đổi thành tín chỉ Linear Algebra hoặc Differential Equations tuỳ trường.",
+      "sections": [
+        {
+          "name": "Paper 1 - Further Pure Mathematics 1 (bắt buộc cho cả AS và A Level)",
+          "question_count": "6-8",
+          "duration_minutes": 120,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "75 marks, structured question, làm toàn bộ. Chiếm 60% AS Level và 30% A Level. Là component duy nhất có mặt trong mọi lộ trình."
+        },
+        {
+          "name": "Paper 2 - Further Pure Mathematics 2 (bắt buộc cho A Level)",
+          "question_count": "7-9",
+          "duration_minutes": 120,
+          "weight_percent": 30,
+          "calculator": "cho-phep",
+          "note": "75 marks. Chỉ có ở lộ trình A Level (30% A Level), không dùng cho AS Level. Đây là component khó nhất của cả syllabus."
+        },
+        {
+          "name": "Paper 3 - Further Mechanics",
+          "question_count": "5-7",
+          "duration_minutes": 90,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "50 marks. Chiếm 40% AS Level hoặc 20% A Level. Có thể ghép với Paper 1 để lấy AS Level, hoặc là một trong bốn component của A Level."
+        },
+        {
+          "name": "Paper 4 - Further Probability & Statistics",
+          "question_count": "5-7",
+          "duration_minutes": 90,
+          "weight_percent": 20,
+          "calculator": "cho-phep",
+          "note": "50 marks. Chiếm 40% AS Level hoặc 20% A Level. Ở lộ trình A Level đầy đủ (Route 3) thí sinh thi cả Paper 3 và Paper 4 trong cùng một kỳ."
+        }
+      ],
+      "topic_weights": {
+        "FP1 - Roots of polynomial equations": 4,
+        "FP1 - Rational functions and graphs": 4,
+        "FP1 - Summation of series": 5,
+        "FP1 - Matrices (định thức, nghịch đảo, hệ phương trình, phép biến hình)": 6,
+        "FP1 - Polar coordinates": 4,
+        "FP1 - Vectors (tích có hướng, đường thẳng và mặt phẳng trong không gian)": 4,
+        "FP1 - Proof by induction": 3,
+        "FP2 - Hyperbolic functions": 5,
+        "FP2 - Matrices (trị riêng, vectơ riêng, chéo hoá, Cayley-Hamilton)": 5,
+        "FP2 - Differentiation (đạo hàm hàm ngược, hàm ẩn, đường tham số)": 4,
+        "FP2 - Integration (rút gọn truy hồi, độ dài cung, diện tích mặt tròn xoay)": 5,
+        "FP2 - Complex numbers (de Moivre, căn bậc n, quỹ tích)": 6,
+        "FP2 - Differential equations (cấp hai hệ số hằng, thừa số tích phân)": 5,
+        "FM - Motion of a projectile": 3,
+        "FM - Equilibrium of a rigid body": 4,
+        "FM - Circular motion": 4,
+        "FM - Hooke's law": 3,
+        "FM - Linear motion under a variable force": 3,
+        "FM - Momentum (xung lượng, hệ số phục hồi)": 3,
+        "FPS - Continuous random variables": 4,
+        "FPS - Inference using normal and t-distributions": 5,
+        "FPS - Chi-squared tests": 4,
+        "FPS - Non-parametric tests": 4,
+        "FPS - Probability generating functions": 3
+      },
+      "question_types": [
+        {
+          "name": "Chứng minh quy nạp có kết quả cho sẵn (FP1)",
+          "description": "Đề cho công thức tổng hoặc công thức luỹ thừa ma trận và yêu cầu chứng minh bằng quy nạp. Mark scheme tách riêng mark cho bước cơ sở, bước giả thiết, bước quy nạp và câu kết luận hình thức.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho ma trận M = [[3, 1], [0, 1]]. Chứng minh bằng quy nạp rằng M^n = [[3^n, (3^n - 1)/2], [0, 1]] với mọi số nguyên dương n. [6]",
+          "approach": "Viết đủ bốn phần: (1) kiểm tra n = 1; (2) giả sử đúng với n = k, viết rõ giả thiết; (3) xét n = k + 1, nhân ma trận và biến đổi về đúng dạng cần chứng minh; (4) câu kết luận chuẩn 'đúng với n = 1 và nếu đúng với n = k thì đúng với n = k + 1, do đó đúng với mọi n nguyên dương'. Bỏ câu kết luận là mất 1 mark cố định."
+        },
+        {
+          "name": "Trị riêng, vectơ riêng và chéo hoá ma trận (FP2)",
+          "description": "Tìm phương trình đặc trưng, giải ra trị riêng, tìm vectơ riêng, lập P và D, rồi dùng M^n = P D^n P^(-1). Thường có ý cuối áp dụng vào hệ động lực hoặc luỹ thừa bậc cao.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho A = [[4, -2], [1, 1]]. (a) Tìm các trị riêng và một vectơ riêng ứng với mỗi trị riêng. [5] (b) Viết A = P D P^(-1) với D là ma trận đường chéo. [2] (c) Từ đó tìm A^5. [3]",
+          "approach": "Lập det(A - lambda I) = 0 và ghi rõ phương trình đặc trưng trước khi giải - đó là method mark. Vectơ riêng chỉ cần xác định sai khác một hệ số, chọn dạng số nguyên gọn nhất. Ở ý (c), tính D^5 trước rồi mới nhân ba ma trận, không khai triển A^5 trực tiếp."
+        },
+        {
+          "name": "Rút gọn truy hồi cho tích phân (reduction formula, FP2)",
+          "description": "Đề cho I_n dưới dạng tích phân phụ thuộc n, yêu cầu thiết lập công thức truy hồi rồi tính một giá trị cụ thể. Bước thiết lập chiếm phần lớn mark.",
+          "example_prompt": "Đề mô phỏng tự soạn: Với n lớn hơn hoặc bằng 2, đặt I_n là tích phân của (sin x)^n từ 0 đến pi/2. (a) Chứng minh rằng n I_n = (n - 1) I_(n-2). [5] (b) Tính I_6. [3]",
+          "approach": "Tách (sin x)^n = (sin x)^(n-1) . sin x rồi tích phân từng phần với u = (sin x)^(n-1). Sau khi ra biểu thức chứa I_n ở cả hai vế, gom I_n về một vế. Ở ý (b), lùi truy hồi tới I_0 hoặc I_1 và nhớ tính giá trị mốc đó cho đúng."
+        },
+        {
+          "name": "Bài chuyển động tròn hoặc Hooke's law kết hợp bảo toàn năng lượng (Further Mechanics)",
+          "description": "Bài đặc trưng của Paper 3: vật gắn dây đàn hồi hoặc lò xo, chuyển động trên vòng tròn đứng, yêu cầu kết hợp bảo toàn cơ năng với phương trình lực hướng tâm.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hạt khối lượng 0,5 kg gắn vào đầu một dây đàn hồi nhẹ dài tự nhiên 1,2 m, môđun đàn hồi 30 N, đầu kia cố định tại điểm O. Hạt được thả từ O. (a) Tìm độ dãn của dây khi hạt xuống thấp nhất. [5] (b) Tìm tốc độ lớn nhất của hạt trong quá trình chuyển động. [4]",
+          "approach": "Lập phương trình bảo toàn cơ năng gồm ba số hạng: thế năng trọng trường, động năng và thế năng đàn hồi lambda x^2 / (2 L). Ở ý tốc độ cực đại, điều kiện là hợp lực bằng 0, tức lực căng bằng trọng lượng - tìm x trước rồi mới thay vào phương trình năng lượng."
+        },
+        {
+          "name": "Kiểm định phi tham số và chi bình phương (Further Probability & Statistics)",
+          "description": "Paper 4 yêu cầu chọn đúng loại kiểm định (dấu, Wilcoxon, chi bình phương goodness-of-fit hay tính độc lập), phát biểu giả thuyết, tính thống kê, so với giá trị tới hạn trong MF19 và kết luận theo ngữ cảnh.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một người trồng cây ghi lại chiều cao (cm) của 8 cây trước và sau khi bón một loại phân mới. Dùng kiểm định Wilcoxon matched-pairs signed-rank ở mức ý nghĩa 5% để xét xem phân bón có làm tăng chiều cao hay không. [7]",
+          "approach": "Viết H0 và H1 bằng ký hiệu tham số chứ không chỉ bằng lời. Lập bảng hiệu, xếp hạng trị tuyệt đối, bỏ các hiệu bằng 0 và giảm n tương ứng. So T với giá trị tới hạn trong bảng MF19 - lưu ý kiểm định Wilcoxon bác bỏ H0 khi T NHỎ HƠN hoặc bằng giá trị tới hạn, ngược chiều so với kiểm định chi bình phương. Kết luận phải nhắc lại ngữ cảnh (chiều cao cây), không chỉ viết 'bác bỏ H0'."
+        }
+      ],
+      "formula_sheet_provided": [
+        "List of Formulae and Statistical Tables MF19 - bản dùng chung cho 9709 và 9231, in nguyên văn ở mục 5 của syllabus 9709. Thí sinh 9231 dùng được cả phần Pure / Mechanics / Probability & Statistics cơ bản lẫn các mục Further Pure Mathematics, Further Mechanics và Further Probability & Statistics.",
+        "MF19 Further Pure - Algebra: tổng luỹ thừa Sigma r, Sigma r^2, Sigma r^3; công thức Maclaurin tổng quát kèm các chuỗi chuẩn e^x, ln(1+x), sin x, cos x, arctan x, sinh x, cosh x, artanh x cùng miền hội tụ của từng chuỗi.",
+        "MF19 Further Pure - Trigonometry và Hyperbolic functions: phép thế t = tan(x/2) cho sin x và cos x; các đồng nhất thức hyperbolic cosh^2 - sinh^2 = 1, sinh 2x = 2 sinh x cosh x, cosh 2x; và dạng lôgarit của arsinh, arcosh, artanh.",
+        "MF19 Further Pure - Differentiation và Integration: đạo hàm của arcsin, arccos, sinh, cosh, tanh, arsinh, arcosh, artanh; nguyên hàm của sec x, cosec x, sinh x, cosh x, sech^2 x, và ba dạng căn dẫn tới arcsin(x/a), arcosh(x/a), arsinh(x/a).",
+        "PHẢI THUỘC dù thuộc nội dung FP2 và không có trong MF19: công thức độ dài cung và diện tích mặt tròn xoay ở toạ độ Descartes, toạ độ tham số và toạ độ cực, cùng công thức diện tích quét trong toạ độ cực. Đây là chỗ thí sinh hay giả định nhầm là được cấp.",
+        "MF19 Further Mechanics: phương trình quỹ đạo của vật ném xiên; dây và lò xo đàn hồi T = lambda.x/l và E = lambda.x^2/(2l); gia tốc hướng tâm omega^2.r hoặc v^2/r; khối tâm của các vật đồng chất chuẩn (tấm tam giác, bán cầu đặc, vỏ bán cầu, cung tròn, hình quạt tròn, hình nón hoặc hình chóp đặc). MF19 KHÔNG có mô men quán tính - động lực học vật rắn quay không nằm trong syllabus 9231.",
+        "MF19 Further Probability & Statistics: ước lượng phương sai chung từ hai mẫu; và hàm sinh xác suất với G_X(t) = E(t^X), E(X) = G'_X(1), Var(X) = G''_X(1) + G'_X(1) - [G'_X(1)]^2. Đây là toàn bộ mục này - không có công thức kỳ vọng và phương sai của tổ hợp tuyến tính.",
+        "MF19 phần bảng thống kê dùng cho 9231: bảng Phi(z), giá trị tới hạn của phân phối chuẩn, giá trị tới hạn của phân phối t, giá trị tới hạn của phân phối chi bình phương, bảng giá trị tới hạn T của Wilcoxon signed-rank và bảng giá trị tới hạn W của Wilcoxon rank-sum. MF19 KHÔNG có bảng giá trị tới hạn của hệ số tương quan Spearman hay Pearson.",
+        "Máy tính khoa học tự mang; cấm máy vẽ đồ thị và máy có khả năng biến đổi đại số ký hiệu, đạo hàm hoặc tích phân ký hiệu."
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.fm-chuoi.phuong-phap-sai-phan",
+        "math.thpt.fm-chuoi.quy-nap-chia-het",
+        "math.thpt.fm-da-thuc.he-thuc-nghiem-bac-ba",
+        "math.thpt.fm-da-thuc.bien-doi-phuong-trinh-nghiem-moi",
+        "math.thpt.fm-ma-tran.tri-rieng-cap-hai-vet-dinh-thuc",
+        "math.thpt.fm-ma-tran.vecto-rieng-cap-hai",
+        "math.thpt.fm-ma-tran.cheo-hoa-a-level",
+        "math.thpt.fm-ma-tran.dinh-thuc-ti-le-dien-tich",
+        "math.thpt.fm-ma-tran.nghich-dao-3x3-phu-hop",
+        "math.thpt.fm-toa-do-cuc.dien-tich-quet-cuc",
+        "math.thpt.fm-toa-do-cuc.chuyen-doi-cuc-descartes",
+        "math.thpt.fm-vecto.khoang-cach-hai-duong-cheo-nhau-vecto",
+        "math.thpt.fm-vecto.pt-mat-phang-tich-vo-huong",
+        "math.thpt.fm-vecto.tich-hon-tap-dinh-thuc",
+        "math.thpt.fm-hyperbolic.dinh-nghia-sinh-cosh",
+        "math.thpt.fm-hyperbolic.dong-nhat-thuc-co-ban",
+        "math.thpt.fm-hyperbolic.dao-ham-hyperbolic",
+        "math.thpt.ham-hyperbolic.arcosh-dang-loga",
+        "math.thpt.ham-hyperbolic.arsinh-dang-loga",
+        "math.thpt.ham-hyperbolic.quy-tac-osborn",
+        "math.thpt.fm-so-phuc.can-bac-n-cua-don-vi",
+        "math.thpt.fm-so-phuc.khai-trien-cos-n-theta",
+        "math.thpt.fm-so-phuc.z-mu-n-cong-tru-nghich-dao",
+        "math.thpt.so-phuc.cong-thuc-moivre",
+        "math.thpt.fm-ptvp.phuong-trinh-bo-tro",
+        "math.thpt.fm-ptvp.ham-bo-tro-va-nghiem-rieng",
+        "math.thpt.fm-ptvp.thua-so-tich-phan-a-level",
+        "math.thpt.ung-dung-tich-phan-bc.do-dai-cung-descartes",
+        "math.dai-hoc.ung-dung-tich-phan.dien-tich-mat-tron-xoay",
+        "physics.thpt.intl-dong-luong.dinh-luat-phuc-hoi-newton"
+      ],
+      "scoring": {
+        "description": "Cùng hệ mark scheme M / A / B / DM với 9709: method mark cho phương pháp, accuracy mark chỉ được cho khi method mark tương ứng đã có, B mark độc lập. Các ký hiệu ft/ecf, oe, cao, soi, isw, AG dùng giống hệt. Quy tắc 3 chữ số có nghĩa và cấm làm tròn trung gian áp dụng như 9709. Riêng 9231 có thêm hai điểm chấm chặt: câu chứng minh quy nạp phải có câu kết luận hình thức mới được mark cuối, và câu kiểm định thống kê ở Paper 4 phải có phát biểu giả thuyết bằng ký hiệu cùng câu kết luận đặt lại trong ngữ cảnh bài toán.",
+        "scale": "A*-E (A Level); a-e (AS Level)",
+        "raw_to_scaled": "Raw mark từng component quy về percentage uniform mark rồi tổng hợp theo trọng số 30/30/20/20. Ngưỡng PUM tổng cố định: A* = 90, A = 80, B = 70, C = 60, D = 50, E = 40. Grade A* chỉ tồn tại ở mức syllabus, không có ở mức component. Ngưỡng raw mark do Cambridge công bố riêng cho từng kỳ và từng mã component; vì nhóm thí sinh 9231 nhỏ và chọn lọc mạnh, ngưỡng grade A của 9231 thường cao hơn tỉ lệ phần trăm so với 9709.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Paper 1 và Paper 2 đều là 75 mark trong 120 phút, tức 1,6 phút mỗi mark - rộng rãi hơn 9709; hãy dùng phần dư đó để viết đầy đủ các bước đại số thay vì làm nhanh rồi mất method mark.",
+        "Học 9231 song song 9709 chứ không sau: FP1 dùng lại vectơ và chuỗi của P1/P3, FP2 dùng lại tích phân và số phức của P3, Further Mechanics dựng trên Mechanics P4. Học lệch pha sẽ phải học lại nền.",
+        "Với mọi câu ma trận, kiểm tra lại bằng phép nhân ngược (A . A^(-1) = I hoặc A v = lambda v) trước khi chuyển câu - chỉ mất 20 giây và bắt được hầu hết lỗi số học.",
+        "Lập sẵn một trang tóm tắt các dạng nghiệm riêng thử (particular integral) theo vế phải của phương trình vi phân; đây là chỗ mất mark nhiều nhất trong FP2 vì chọn sai dạng thử.",
+        "Trong toạ độ cực, luôn vẽ phác đường cong và xác định khoảng theta trước khi lập tích phân diện tích; sai cận theta là lỗi phổ biến hơn sai tích phân.",
+        "Ở Paper 4, dành 2 phút đầu đọc lướt cả đề để nhận diện loại kiểm định của từng câu; chọn nhầm kiểm định làm mất trọn 6-8 mark dù tính toán đúng.",
+        "Thuộc chiều bác bỏ của từng kiểm định: chi bình phương và t bác bỏ khi thống kê LỚN, Wilcoxon bác bỏ khi T NHỎ. Viết chiều này ra lề nháp trước khi so bảng.",
+        "Khi tính bằng máy các giá trị hyperbolic hoặc arcosh, kiểm tra miền xác định (arcosh chỉ định nghĩa với x lớn hơn hoặc bằng 1) trước khi ghi đáp số.",
+        "Với lộ trình AS Level, chọn Paper 1 + Paper 3 nếu định theo kỹ thuật hoặc vật lí, Paper 1 + Paper 4 nếu theo kinh tế lượng hoặc khoa học dữ liệu; cả hai đều dẫn được lên A Level đầy đủ ở năm sau.",
+        "Luyện đề theo cụm chủ đề trước, chỉ chuyển sang luyện đề đủ bộ khi đã vững từng cụm; do mỗi Paper chỉ có 6-9 câu, một câu hỏng làm sụt tới 15% điểm component."
+      ],
+      "common_traps": [
+        "Giả định nhầm là MF19 cấp sẵn công thức độ dài cung và diện tích mặt tròn xoay của FP2, hoặc cấp mô men quán tính cho Further Mechanics. MF19 không có cả hai: độ dài cung và mặt tròn xoay phải thuộc, còn mô men quán tính thì không thuộc syllabus 9231. Ngược lại, T = lambda.x/l, E = lambda.x^2/(2l) và khối tâm của vật chuẩn thì CÓ trong MF19 nên không cần học thuộc.",
+        "Quên câu kết luận hình thức trong chứng minh quy nạp; mark scheme luôn giữ riêng 1 mark cho câu kết luận đầy đủ ba vế.",
+        "Trong bài trị riêng, tìm được lambda nhưng viết vectơ riêng sai vì giải hệ suy biến bằng cách chia cho biểu thức bằng 0; nên chọn một thành phần bằng 1 rồi suy ra thành phần còn lại.",
+        "Dùng quy tắc Osborn sai chiều: khi chuyển đồng nhất thức lượng giác sang hyperbolic, dấu chỉ đổi ở tích của hai sinh, không đổi ở mọi số hạng.",
+        "Trong công thức truy hồi, sau khi tích phân từng phần quên rằng số hạng biên có thể khác 0, hoặc gom sai khi I_n xuất hiện ở cả hai vế.",
+        "Ở phương trình vi phân cấp hai, chọn nghiệm riêng thử trùng với nghiệm của hàm bổ trợ mà không nhân thêm x, dẫn tới hệ vô nghiệm.",
+        "Trong toạ độ cực, dùng công thức diện tích quét mà quên hệ số 1/2, hoặc tính diện tích của một cánh hoa hồng nhưng lấy cận đủ vòng 0 đến 2pi.",
+        "Nhầm giữa tích vô hướng và tích có hướng khi tính khoảng cách giữa hai đường thẳng chéo nhau; khoảng cách cần tích hỗn tạp chia cho độ lớn tích có hướng.",
+        "Trong Further Mechanics, quên thế năng đàn hồi khi lập bảo toàn năng lượng, hoặc dùng công thức lò xo (kx^2/2) thay cho công thức môđun đàn hồi (lambda x^2 / 2L) của A-Level.",
+        "Ở bài chuyển động tròn trong mặt phẳng đứng, kết luận vật đi hết vòng mà không kiểm tra điều kiện lực căng lớn hơn hoặc bằng 0 tại đỉnh - đây là điều kiện bị hỏi trực tiếp rất thường xuyên.",
+        "Trong bài hệ số phục hồi, áp dụng công thức phục hồi nhưng đặt sai chiều dương cho hai vật sau va chạm, dẫn tới nghiệm âm vô lý.",
+        "Ở Paper 4, dùng phân phối chuẩn thay vì phân phối t khi cỡ mẫu nhỏ và phương sai tổng thể chưa biết; hoặc dùng đúng t nhưng tính sai bậc tự do.",
+        "Trong kiểm định chi bình phương, quên gộp các ô có tần số kỳ vọng nhỏ hơn 5 và quên điều chỉnh bậc tự do sau khi gộp.",
+        "Với hàm sinh xác suất, nhầm giữa G'(1) là kỳ vọng và G''(1) là E[X(X-1)] chứ không phải phương sai; phải cộng thêm G'(1) trừ bình phương G'(1)."
+      ],
+      "tags": [
+        "a-level",
+        "cambridge",
+        "9231",
+        "toan",
+        "further-maths",
+        "thpt",
+        "quoc-te"
+      ],
+      "sources": [
+        "Cambridge International AS & A Level Further Mathematics 9231 syllabus for 2026 and 2027 (cambridgeinternational.org/Images/697357-2026-2027-syllabus.pdf)",
+        "Cambridge International AS & A Level Mathematics 9709 syllabus for 2026 and 2027, mục List of formulae and statistical tables (MF19)",
+        "Cambridge International, MF19 - các mục Further Pure Mathematics, Further Mechanics, Further Probability & Statistics (mục 5 syllabus 9709 2026-2027)"
+      ]
+    },
+    {
+      "id": "exam.cambridge-alevel-physics-9702",
+      "name": "Cambridge International A Level Physics 9702",
+      "provider": "Cambridge Assessment International Education",
+      "subject": "physics",
+      "curriculum": [
+        "a-level"
+      ],
+      "level": "thpt",
+      "overview": "Cambridge International AS & A Level Physics 9702 là kỳ thi vật lí hệ A Level của Cambridge, gồm năm component: ba component AS (Paper 1, 2, 3) và hai component A Level (Paper 4, 5). Điểm đặc trưng của 9702 là hai paper thực hành được chấm bằng bài thi riêng: Paper 3 là bài thi phòng thí nghiệm thật kéo dài 2 giờ, Paper 5 là bài viết về thiết kế thí nghiệm và xử lý dữ liệu. Khung này áp dụng cho syllabus thi năm 2025, 2026 và 2027. Kết quả 9702 là điều kiện đầu vào bắt buộc cho các ngành Kỹ thuật, Vật lí, Khoa học vật liệu và nhiều ngành Y ở Anh, Singapore, Hong Kong; nhiều đại học Mỹ quy đổi grade A hoặc A* thành tín chỉ vật lí đại cương có thực hành.",
+      "sections": [
+        {
+          "name": "Paper 1 - Multiple Choice (AS)",
+          "question_count": "40",
+          "duration_minutes": 75,
+          "weight_percent": 15.5,
+          "calculator": "cho-phep",
+          "note": "40 marks, 40 câu trắc nghiệm bốn lựa chọn dựa trên nội dung AS. Chiếm 31% AS Level và 15.5% A Level. Data and formulae in ở trang 2 của đề."
+        },
+        {
+          "name": "Paper 2 - AS Level Structured Questions",
+          "question_count": "6-8",
+          "duration_minutes": 75,
+          "weight_percent": 23,
+          "calculator": "cho-phep",
+          "note": "60 marks, câu hỏi structured dựa trên nội dung AS. Chiếm 46% AS Level và 23% A Level. Data and formulae in ở trang 2 của đề."
+        },
+        {
+          "name": "Paper 3 - Advanced Practical Skills (bài thi thực hành trong phòng thí nghiệm)",
+          "question_count": "2",
+          "duration_minutes": 120,
+          "weight_percent": 11.5,
+          "calculator": "cho-phep",
+          "note": "40 marks; hai câu, mỗi câu 1 giờ và 20 marks, đặt ở hai lĩnh vực vật lí khác nhau. Câu 1 yêu cầu thu số liệu, vẽ đồ thị và rút kết luận; câu 2 thu số liệu và rút kết luận nhưng phương pháp thí nghiệm được cố tình thiết kế thiếu chính xác để thí sinh đánh giá và đề xuất cải tiến. Chỉ chấm AO3. Không yêu cầu kiến thức lí thuyết trước; ngữ cảnh có thể nằm ngoài syllabus. Không có data sheet."
+        },
+        {
+          "name": "Paper 4 - A Level Structured Questions",
+          "question_count": "10-12",
+          "duration_minutes": 120,
+          "weight_percent": 38.5,
+          "calculator": "cho-phep",
+          "note": "100 marks, structured questions dựa trên nội dung A Level nhưng vẫn đòi hỏi kiến thức AS. Chiếm 38.5% A Level - component nặng nhất. Data and formulae in ở trang 2 và trang 3 của đề."
+        },
+        {
+          "name": "Paper 5 - Planning, Analysis and Evaluation (bài viết về kỹ năng thực hành nâng cao)",
+          "question_count": "2",
+          "duration_minutes": 75,
+          "weight_percent": 11.5,
+          "calculator": "cho-phep",
+          "note": "30 marks; hai câu bắt buộc, chỉ chấm AO3, không cần phòng thí nghiệm. Câu 1 (15 marks) là Planning: định nghĩa vấn đề, phương pháp thu số liệu, phương pháp phân tích, chi tiết bổ sung gồm an toàn. Câu 2 (15 marks) là Analysis, conclusions and evaluation: xử lý số liệu, lập bảng, vẽ đồ thị, kết luận và xử lý độ không đảm bảo đo. Không có data sheet."
+        }
+      ],
+      "topic_weights": {
+        "AS 1 - Physical quantities and units": 4,
+        "AS 2 - Kinematics": 3.5,
+        "AS 3 - Dynamics": 4,
+        "AS 4 - Forces, density and pressure": 3.5,
+        "AS 5 - Work, energy and power": 3.5,
+        "AS 6 - Deformation of solids": 3,
+        "AS 7 - Waves": 3.5,
+        "AS 8 - Superposition": 3.5,
+        "AS 9 - Electricity": 3.5,
+        "AS 10 - D.C. circuits": 3.5,
+        "AS 11 - Particle physics": 3,
+        "A2 12 - Motion in a circle": 2.5,
+        "A2 13 - Gravitational fields": 3,
+        "A2 14 - Temperature": 2,
+        "A2 15 - Ideal gases": 2.5,
+        "A2 16 - Thermodynamics": 2.5,
+        "A2 17 - Oscillations": 3,
+        "A2 18 - Electric fields": 3,
+        "A2 19 - Capacitance": 2.5,
+        "A2 20 - Magnetic fields": 3.5,
+        "A2 21 - Alternating currents": 2.5,
+        "A2 22 - Quantum physics": 3,
+        "A2 23 - Nuclear physics": 3,
+        "A2 24 - Medical physics": 3,
+        "A2 25 - Astronomy and cosmology": 2.5,
+        "Kỹ năng thực hành Paper 3 - Advanced Practical Skills": 11.5,
+        "Kỹ năng thực hành Paper 5 - Planning, Analysis and Evaluation": 11.5
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm định lượng nhanh (Paper 1)",
+          "description": "40 câu trong 75 phút, trung bình 112 giây mỗi câu. Phần lớn là tính toán ngắn hoặc suy luận đồ thị; các phương án nhiễu thường ứng với một lỗi cụ thể: quên bình phương, sai luỹ thừa của đơn vị, nhầm bán kính với đường kính.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một dây kim loại đồng chất dài L, tiết diện A có điện trở R. Một dây khác cùng vật liệu có chiều dài 2L và đường kính gấp đôi. Điện trở của dây thứ hai bằng bao nhiêu? A. R/2   B. R   C. 2R   D. 4R",
+          "approach": "Viết nhanh biểu thức tỉ lệ R tỉ lệ với L chia A, thay A tỉ lệ với d bình phương, rồi lập tỉ số. Với câu đồ thị, đọc gradient và giao trục trước khi đọc phương án. Nếu quá 2 phút chưa ra thì đánh dấu và bỏ qua, vì không có điểm trừ cho câu sai, bắt buộc phải điền hết 40 câu."
+        },
+        {
+          "name": "Câu định nghĩa và giải thích bằng lời (Paper 2 và Paper 4)",
+          "description": "Câu bắt đầu bằng command word Define, State, Explain, Describe hoặc Suggest. Mark scheme liệt kê các từ khoá bắt buộc; thiếu một từ khoá là mất mark dù ý đúng về bản chất. Define đòi hỏi phát biểu chính xác gồm cả điều kiện; Explain đòi hỏi nêu nguyên nhân dẫn tới kết quả chứ không mô tả lại hiện tượng.",
+          "example_prompt": "Đề mô phỏng tự soạn: (a) Định nghĩa cường độ trường hấp dẫn tại một điểm. [1] (b) Giải thích vì sao thế năng hấp dẫn của một vật luôn mang giá trị âm khi lấy mốc ở vô cực. [3]",
+          "approach": "Định nghĩa dạng 'đại lượng A trên một đơn vị B' phải nêu đủ cả hai vế và điều kiện (ở đây: lực trên một đơn vị khối lượng tác dụng lên một vật thử đặt tại điểm đó). Với Explain 3 mark, viết đúng ba câu, mỗi câu một ý logic nối tiếp nhau. Không viết đoạn văn dài chung chung; examiner chỉ tìm các điểm trong mark scheme."
+        },
+        {
+          "name": "Bài tính toán nhiều bước có yêu cầu đơn vị và chữ số có nghĩa (Paper 4)",
+          "description": "Câu dài 8-12 mark, chia thành nhiều ý, thường kết hợp hai chủ đề (ví dụ trường điện với dao động, hoặc hạt nhân với năng lượng). Mark tách riêng cho việc chọn công thức, thay số và ghi đáp số kèm đơn vị.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một tụ điện 220 microfarad được nạp tới hiệu điện thế 12 V rồi phóng qua điện trở 47 kilo-ohm. (a) Tính năng lượng tích trữ ban đầu trong tụ. [2] (b) Tính hằng số thời gian của mạch. [2] (c) Tính hiệu điện thế trên tụ sau 15 s. [3] (d) Giải thích tại sao dòng điện phóng giảm theo hàm mũ. [2]",
+          "approach": "Đổi mọi đại lượng về đơn vị SI ngay dòng đầu (220 microfarad = 2,20 nhân 10 mũ trừ 4 F). Viết công thức chữ trước, thay số sau, ghi đáp số kèm đơn vị và 2-3 chữ số có nghĩa. Ý giải thích cuối phải liên hệ tốc độ phóng tỉ lệ với điện tích còn lại, đó là bản chất của hàm mũ."
+        },
+        {
+          "name": "Câu 1 Paper 3 - thu số liệu, vẽ đồ thị, rút kết luận",
+          "description": "Bài thí nghiệm thật kéo dài 1 giờ, 20 marks. Chấm ba nhóm kỹ năng: Manipulation, measurement and observation (tối thiểu 7 marks - thu số liệu thành công và chất lượng số liệu), Presentation of data and observations (tối thiểu 6 marks - bảng kết quả, cách ghi số liệu và tính toán, đồ thị), Analysis, conclusions and evaluation (tối thiểu 4 marks - đọc đồ thị và rút kết luận). 3 marks còn lại phân bổ linh hoạt tuỳ đề.",
+          "example_prompt": "Đề mô phỏng tự soạn: Thí sinh được cấp một dây kim loại, thước mét, các quả nặng và bộ giá. Đo độ võng d của dây theo chiều dài tự do L với ít nhất sáu giá trị của L. Lập bảng gồm L, d và lg L, lg d. Vẽ đồ thị lg d theo lg L và xác định các hằng số trong quan hệ d = k L^n.",
+          "approach": "Lấy tối thiểu sáu bộ số liệu trải đều trên toàn khoảng cho phép. Cột bảng phải ghi tiêu đề kèm đơn vị theo dạng 'L / cm'. Số chữ số có nghĩa của cột tính toán phải nhất quán và bằng hoặc nhiều hơn một so với đại lượng đo có ít chữ số có nghĩa nhất. Trục đồ thị phải chiếm ít nhất nửa lưới theo cả hai chiều, tỉ lệ dùng bội số dễ đọc, vẽ đường thẳng tốt nhất bằng thước, tính gradient bằng tam giác lớn hơn nửa đường đã vẽ và ghi rõ toạ độ hai điểm dùng để tính."
+        },
+        {
+          "name": "Câu 1 Paper 5 - Planning (15 marks)",
+          "description": "Thiết kế một thí nghiệm để kiểm chứng một quan hệ cho trước. Mark chia theo bốn nhóm: định nghĩa vấn đề (biến độc lập, biến phụ thuộc, biến giữ không đổi), phương pháp thu số liệu (sơ đồ, dụng cụ, cách đo), phương pháp phân tích (biến đổi về dạng tuyến tính, đại lượng nào vẽ theo đại lượng nào, gradient và giao trục cho ra hằng số nào), và chi tiết bổ sung gồm biện pháp an toàn.",
+          "example_prompt": "Đề mô phỏng tự soạn: Người ta cho rằng chu kì T của dao động của một thanh kim loại kẹp một đầu phụ thuộc chiều dài tự do L theo quan hệ T = c L^p, với c và p là hằng số. Hãy thiết kế một thí nghiệm phòng thí nghiệm để xác định c và p. [15]",
+          "approach": "Viết theo đúng bốn tiểu mục có tiêu đề. Vẽ sơ đồ có nhãn đầy đủ, kể cả cách kẹp và cách đánh dấu vị trí đo. Nêu rõ cách giảm sai số (đo thời gian 20 dao động rồi chia, lặp lại 3 lần lấy trung bình). Ở phần phân tích, phải viết dòng lấy lôgarit hai vế: lg T = p lg L + lg c, rồi nói rõ vẽ lg T theo lg L, gradient bằng p và giao trục tung bằng lg c. Phần an toàn phải cụ thể và có lý do, không viết chung chung 'đeo kính bảo hộ'."
+        },
+        {
+          "name": "Câu 2 Paper 5 - Analysis, conclusions and evaluation (15 marks)",
+          "description": "Đề cho sẵn bảng số liệu kèm độ không đảm bảo đo. Yêu cầu tuyến tính hoá quan hệ, tính các đại lượng dẫn xuất cùng độ không đảm bảo, vẽ đồ thị có thanh sai số, vẽ đường dốc nhất và ít dốc nhất, rồi rút hằng số kèm sai số.",
+          "example_prompt": "Đề mô phỏng tự soạn: Bảng cho sáu cặp giá trị của hiệu điện thế V (kèm sai số) và dòng điện I (kèm sai số) của một linh kiện được cho là tuân theo I = a V^b. (a) Lập bảng lg V và lg I kèm độ không đảm bảo tuyệt đối. [5] (b) Vẽ đồ thị lg I theo lg V với thanh sai số. [2] (c) Xác định b kèm độ không đảm bảo. [4] (d) Xác định a kèm độ không đảm bảo và đơn vị. [4]",
+          "approach": "Độ không đảm bảo của lg x tính bằng nửa hiệu giữa lg của giá trị lớn nhất và lg của giá trị nhỏ nhất. Vẽ line of best fit và worst acceptable line (đường dốc nhất hoặc ít dốc nhất còn đi qua mọi thanh sai số). Sai số của gradient bằng trị tuyệt đối hiệu giữa gradient tốt nhất và gradient xấu nhất. Khi lấy a từ giao trục lg a, phải nhớ a = 10 mũ (giao trục) và sai số phải chuyển đổi tương ứng, không cộng trực tiếp."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Data and formulae in ở trang 2 của Paper 1, Paper 2 và Paper 4; Paper 4 có thêm trang 3. Paper 3 và Paper 5 KHÔNG có data sheet",
+        "Data: g = 9,81 m/s^2; c = 3,00 nhân 10 mũ 8 m/s; e = 1,60 nhân 10 mũ trừ 19 C; 1 u = 1,66 nhân 10 mũ trừ 27 kg; khối lượng nghỉ proton và electron; N_A; R = 8,31 J/(K.mol); k = 1,38 nhân 10 mũ trừ 23 J/K; G = 6,67 nhân 10 mũ trừ 11; epsilon_0 và 1/(4 pi epsilon_0); h = 6,63 nhân 10 mũ trừ 34 J.s; hằng số Stefan-Boltzmann",
+        "Formulae trang 2 (mọi paper lí thuyết): chuyển động biến đổi đều s = ut + at^2/2 và v^2 = u^2 + 2as; áp suất thuỷ tĩnh; lực đẩy Archimedes F = rho g V; hiệu ứng Doppler cho sóng âm; I = Anvq; điện trở nối tiếp và song song",
+        "Formulae trang 3 (chỉ Paper 4): thế hấp dẫn và thế năng hấp dẫn; áp suất khí lí tưởng theo thuyết động học; a = - omega^2 x và các công thức vận tốc trong dao động điều hoà; điện thế và thế năng điện của điện tích điểm; tụ điện nối tiếp và song song; phóng điện của tụ x = x_0 e mũ (-t/RC); hiệu điện thế Hall; dạng x = x_0 sin(omega t) cho dòng xoay chiều; phân rã phóng xạ x = x_0 e mũ (-lambda t) và lambda = 0,693 / chu kì bán rã; hệ số phản xạ cường độ siêu âm; định luật Stefan-Boltzmann L = 4 pi sigma r^2 T^4; dịch chuyển đỏ Doppler",
+        "Bảng ký hiệu mạch điện chuẩn được in trong syllabus và dùng thống nhất trong mọi đề",
+        "Máy tính khoa học tự mang; không có bảng số liệu vật liệu, mọi giá trị đặc thù của bài đều cho trong đề"
+      ],
+      "formulas_must_memorize": [
+        "physics.thpt.intl-dong-hoc.bo-phuong-trinh-suvat",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-theo-thanh-phan",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-dang-dao-ham-dong-luong",
+        "physics.thpt.intl-cong-nang-luong.dinh-li-cong-dong-nang-quy-uoc-ap",
+        "physics.thpt.intl-dong-luong.xung-luong-dien-tich-do-thi",
+        "physics.thpt.intl-dong-luc-hoc.luc-huong-tam-dang-chu-ki",
+        "physics.thpt.intl-hap-dan.cuong-do-truong-hap-dan",
+        "physics.thpt.intl-hap-dan.toc-do-thoat-ib",
+        "physics.thpt.intl-hap-dan.kepler-dinh-luat-iii",
+        "physics.thpt.intl-dao-dong.chu-ki-con-lac-ib",
+        "physics.thpt.intl-dao-dong.nang-luong-shm-theo-omega",
+        "physics.thpt.intl-nhiet-hoc.nhiet-luong-va-nhiet-dung-rieng-ib",
+        "physics.thpt.intl-nhiet-hoc.nhiet-an-rieng-ib",
+        "physics.thpt.intl-nhiet-hoc.nguyen-li-i-quy-uoc-ap",
+        "physics.thpt.intl-nhiet-hoc.phuong-trinh-khi-li-tuong-kb",
+        "physics.thpt.intl-nhiet-hoc.thuyet-dong-hoc-dang-a-level",
+        "physics.thpt.song-quoc-te.cuong-do-ti-le-binh-phuong-bien-do",
+        "physics.thpt.song-quoc-te.bac-cuc-dai-toi-da-cach-tu",
+        "physics.thpt.mach-dien-quoc-te.mach-chia-the",
+        "physics.thpt.mach-dien-quoc-te.dinh-luat-vong-kirchhoff",
+        "physics.thpt.tinh-dien-gauss.dien-truong-hai-ban-song-song",
+        "physics.thpt.tu-dien-mach-rc.hang-so-thoi-gian-rc",
+        "physics.thpt.tu-truong-quoc-te.luc-tu-tren-day-dang-vecto",
+        "physics.thpt.tu-truong-quoc-te.luc-lorentz-tong-quat",
+        "physics.thpt.cam-ung-rl.tu-thong-moc-vong",
+        "physics.thpt.vat-li-hien-dai-qt.buoc-song-de-broglie",
+        "physics.thpt.vat-li-hien-dai-qt.dinh-luat-phan-ra-dang-vi-phan",
+        "physics.thpt.vat-li-hien-dai-qt.suy-giam-chum-tia-gamma",
+        "physics.thpt.thien-van-vu-tru.dinh-luat-hubble",
+        "physics.thpt.thien-van-vu-tru.dinh-luat-wien-cho-sao"
+      ],
+      "scoring": {
+        "description": "Ba mục tiêu đánh giá: AO1 Knowledge and understanding 40%, AO2 Handling, applying and evaluating information 40%, AO3 Experimental skills and investigations 20%; toàn bộ AO3 nằm ở Paper 3 và Paper 5. Mark scheme vật lí chấm theo điểm nội dung (marking point): mỗi mark ứng với một ý cụ thể trong danh sách, có thể chấp nhận nhiều cách diễn đạt (or equivalent) nhưng phải có đủ từ khoá vật lí. Có ecf (error carried forward) giữa các ý của cùng một câu. Bài tính toán được chia mark cho việc chọn công thức, thay số đúng và đáp số kèm đơn vị. Cambridge nêu rõ: sai hoặc thiếu đơn vị, đưa đơn vị vào đại lượng vốn là tỉ số, hoặc ghi đáp số với số chữ số có nghĩa không hợp lý đều có thể bị trừ điểm. Ở Paper 3 và Paper 5, số chữ số có nghĩa của đại lượng tính toán phải bằng hoặc nhiều hơn một so với đại lượng đo có ít chữ số có nghĩa nhất; với đại lượng lôgarit thì số chữ số thập phân phải tương ứng với số chữ số có nghĩa.",
+        "scale": "A*-E (A Level); a-e (AS Level)",
+        "raw_to_scaled": "Raw mark từng component (40, 60, 40, 100, 30) quy về percentage uniform mark theo ngưỡng của đúng kỳ thi và đúng mã đề, rồi tổng hợp theo trọng số 15.5 / 23 / 11.5 / 38.5 / 11.5. Ngưỡng PUM tổng: A* = 90, A = 80, B = 70, C = 60, D = 50, E = 40. Grade A* không tồn tại ở mức component. Ngưỡng raw mark của 9702 thường thấp hơn cảm nhận trực quan: nhiều kỳ, ngưỡng A của Paper 4 nằm trong khoảng 60-70% raw mark, còn ngưỡng A của Paper 1 và Paper 3 dao động mạnh giữa các biến thể đề, nên phải tra bảng grade threshold của đúng kỳ và đúng mã component thay vì dùng mốc phần trăm chung.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Paper 1: 40 câu trong 75 phút. Chạy vòng một trong 55 phút, bỏ qua mọi câu vượt 2 phút; dùng 15 phút còn lại cho các câu đã đánh dấu, 5 phút cuối điền hết các ô còn trống vì không có điểm trừ.",
+        "Paper 4: 100 mark trong 120 phút, tức 1,2 phút mỗi mark - đây là component chật thời gian nhất. Đọc lướt toàn đề 3 phút đầu để phát hiện câu sở trường và làm trước.",
+        "Với mọi bài tính, viết công thức bằng chữ trước rồi mới thay số: nếu số học sai vẫn còn method mark, còn nếu chỉ có dãy số thì mất trọn.",
+        "Đổi hết về đơn vị SI ngay dòng đầu tiên của mỗi câu (cm sang m, gam sang kg, microfarad sang farad, MeV sang J). Lỗi luỹ thừa đơn vị là nguồn mất điểm lớn nhất ở Paper 2 và Paper 4.",
+        "Học thuộc bảng command word của Cambridge: Define, State, Describe, Explain, Suggest, Determine, Calculate, Show that, Compare. Mỗi từ ứng với một kiểu trả lời khác nhau và mark scheme viết theo đúng kiểu đó.",
+        "Trong Paper 3, dành 5 phút đầu tiên đọc hết cả hai câu rồi mới bắt tay: biết trước câu 2 cần dụng cụ gì giúp sắp xếp bàn thí nghiệm và không mất thời gian chuyển đổi.",
+        "Ở Paper 3, ghi số liệu trực tiếp vào bảng đã kẻ sẵn với tiêu đề kèm đơn vị dạng 'x / cm'; không ghi ra nháp rồi chép lại vì dễ mất số liệu và mất mark về quality of data.",
+        "Ở Paper 3 câu 2, phần đánh giá luôn có cấu trúc cặp: mỗi hạn chế phải đi kèm một cải tiến cụ thể và khả thi; viết thành hai cột để không bỏ sót vế nào.",
+        "Ở Paper 5 câu 1, viết theo bốn tiêu đề in đậm (Định nghĩa vấn đề / Phương pháp thu số liệu / Phương pháp phân tích / Chi tiết bổ sung và an toàn) để examiner tìm được đủ mark point.",
+        "Ở Paper 5 câu 2, luôn vẽ cả line of best fit và worst acceptable line; riêng cặp đường này chiếm nhiều mark và là phần thí sinh Việt Nam hay bỏ qua nhất.",
+        "Luyện Paper 3 bằng thiết bị thật ít nhất 10 buổi trước kỳ thi; kỹ năng đọc thước kẹp, căn mắt tránh thị sai và bấm thời gian không thể luyện bằng đề giấy.",
+        "Trong bài đồ thị, luôn kiểm tra đường thẳng có đi qua gốc toạ độ hay không trước khi kết luận tỉ lệ thuận; giao trục khác 0 thường là ý được hỏi trực tiếp."
+      ],
+      "common_traps": [
+        "Nhầm giữa Explain và Describe: Describe chỉ mô tả hiện tượng hoặc số liệu, Explain phải nêu cơ chế vật lí. Viết mô tả cho câu Explain thì không được mark nào.",
+        "Quên đơn vị trong đáp số cuối, hoặc gắn đơn vị vào đại lượng vốn không có đơn vị như hệ số ma sát, hệ số phục hồi, chiết suất, độ phóng đại - cả hai đều bị trừ theo quy định của syllabus.",
+        "Dùng độ thay vì radian trong công thức dao động điều hoà và trong hiệu ứng nhiễu xạ; máy tính để sai chế độ là lỗi âm thầm khó phát hiện.",
+        "Nhầm dấu trong Nguyên lí I nhiệt động lực học: 9702 dùng quy ước công thực hiện LÊN hệ, nên độ tăng nội năng bằng nhiệt cấp cho hệ cộng công thực hiện lên hệ; dùng quy ước ngược của một số sách sẽ sai dấu toàn bài.",
+        "Trong bài trường hấp dẫn và trường điện, quên rằng thế là đại lượng vô hướng có dấu còn cường độ trường là vectơ; cộng thế theo quy tắc vectơ hoặc cộng cường độ theo đại số đều sai.",
+        "Nhầm giữa thế năng hấp dẫn của hệ hai vật (âm, bằng -GMm/r) và công cần thực hiện để đưa vật ra xa (dương); dấu là chỗ mark scheme chấm chặt.",
+        "Trong bài dao động điều hoà, dùng biên độ khi đề hỏi li độ hoặc ngược lại; và quên rằng vận tốc cực đại bằng omega nhân biên độ chứ không phải omega nhân li độ.",
+        "Trong bài phóng xạ, nhầm hằng số phân rã với chu kì bán rã, hoặc quên rằng hoạt độ tỉ lệ với số hạt nhân còn lại nên cũng giảm theo hàm mũ cùng hằng số.",
+        "Trong Paper 3, lấy ít hơn sáu bộ số liệu hoặc các giá trị dồn về một đầu của khoảng cho phép - mất mark quality of data dù số đo chính xác.",
+        "Trong Paper 3, chọn tỉ lệ đồ thị lẻ (một ô bằng 3 đơn vị) hoặc để dữ liệu chỉ chiếm một góc lưới; cả hai đều mất mark về graph ngay cả khi số liệu tốt.",
+        "Trong Paper 3, tính gradient bằng hai điểm số liệu thay vì hai điểm nằm trên đường thẳng đã vẽ, hoặc dùng tam giác quá nhỏ - mất mark analysis.",
+        "Trong Paper 5 câu 1, viết biện pháp an toàn chung chung không liên quan tới thí nghiệm cụ thể (ví dụ 'cẩn thận khi làm việc') thay vì nêu nguy cơ thật và cách xử lý.",
+        "Trong Paper 5 câu 2, tính độ không đảm bảo của lôgarit bằng cách lấy lôgarit của độ không đảm bảo - đây là lỗi sai bản chất; phải lấy nửa hiệu giữa lôgarit của cận trên và cận dưới.",
+        "Bỏ trắng câu Paper 1 vì không chắc: đề không có điểm trừ, để trống là mất chắc chắn còn đoán có xác suất 25%.",
+        "Làm tròn quá sớm trong chuỗi tính nhiều bước ở Paper 4, đặc biệt trong bài năng lượng liên kết hạt nhân nơi hiệu khối lượng rất nhỏ so với các khối lượng thành phần."
+      ],
+      "tags": [
+        "a-level",
+        "cambridge",
+        "9702",
+        "vat-li",
+        "thuc-hanh",
+        "thpt",
+        "quoc-te"
+      ],
+      "sources": [
+        "Cambridge International AS & A Level Physics 9702 syllabus for 2025, 2026 and 2027 (cambridgeinternational.org/Images/664565-2025-2027-syllabus.pdf)",
+        "Cambridge International, A guide to percentage uniform marks"
+      ]
+    },
+    {
+      "id": "exam.cambridge-alevel-chemistry-9701",
+      "name": "Cambridge International A Level Chemistry 9701",
+      "provider": "Cambridge Assessment International Education",
+      "subject": "chemistry",
+      "curriculum": [
+        "a-level"
+      ],
+      "level": "thpt",
+      "overview": "Cambridge International AS & A Level Chemistry 9701 là kỳ thi hoá học hệ A Level của Cambridge với năm component, trong đó Paper 3 là bài thi thực hành thật trong phòng thí nghiệm và Paper 5 là bài viết về thiết kế và phân tích thí nghiệm. Nội dung chia bốn khối: hoá lí, hoá vô cơ, hoá hữu cơ và các kỹ thuật phân tích. Khung này áp dụng cho syllabus thi năm 2025, 2026 và 2027. 9701 là môn điều kiện bắt buộc cho Y, Dược, Nha, Hoá học, Kỹ thuật hoá học và Khoa học sự sống ở Anh, Singapore, Hong Kong, Malaysia; nhiều đại học Mỹ quy đổi grade A hoặc A* thành tín chỉ General Chemistry kèm phần thực hành.",
+      "sections": [
+        {
+          "name": "Paper 1 - Multiple Choice (AS)",
+          "question_count": "40",
+          "duration_minutes": 75,
+          "weight_percent": 15.5,
+          "calculator": "cho-phep",
+          "note": "40 marks, 40 câu trắc nghiệm dựa trên nội dung AS. Chiếm 31% AS Level và 15.5% A Level. Bảng hằng số quan trọng và Bảng tuần hoàn in ở cuối đề; dữ liệu chuyên biệt cho trong câu hỏi."
+        },
+        {
+          "name": "Paper 2 - AS Level Structured Questions",
+          "question_count": "5-7",
+          "duration_minutes": 75,
+          "weight_percent": 23,
+          "calculator": "cho-phep",
+          "note": "60 marks, structured questions dựa trên nội dung AS. Chiếm 46% AS Level và 23% A Level. Bảng hằng số quan trọng và Bảng tuần hoàn in ở cuối đề; dữ liệu chuyên biệt cho trong câu hỏi."
+        },
+        {
+          "name": "Paper 3 - Advanced Practical Skills (bài thi thực hành trong phòng thí nghiệm)",
+          "question_count": "2-3",
+          "duration_minutes": 120,
+          "weight_percent": 11.5,
+          "calculator": "cho-phep",
+          "note": "40 marks. Một câu là bài quan sát định tính: nhận biết chất chưa biết qua các thí nghiệm chỉ định, ghi hiện tượng, phân tích và kết luận - câu này được phát Qualitative analysis notes ngay trong đề. Các câu còn lại là định lượng: chuẩn độ hoặc đo một đại lượng (thời gian, nhiệt độ, khối lượng, thể tích khí), lập bảng hoặc đồ thị, tính toán và kết luận. Có thể có ý bình luận về độ chính xác và nguồn sai số. Không có bảng dữ liệu chung trong bài thực hành; mọi giá trị cần dùng đều cho trong đề, kèm Qualitative analysis notes cho câu định tính."
+        },
+        {
+          "name": "Paper 4 - A Level Structured Questions",
+          "question_count": "8-10",
+          "duration_minutes": 120,
+          "weight_percent": 38.5,
+          "calculator": "cho-phep",
+          "note": "100 marks, structured questions dựa trên nội dung A Level nhưng vẫn đòi hỏi kiến thức AS. Chiếm 38.5% A Level - component nặng nhất. Bảng hằng số quan trọng và Bảng tuần hoàn in ở cuối đề; dữ liệu chuyên biệt cho trong câu hỏi."
+        },
+        {
+          "name": "Paper 5 - Planning, Analysis and Evaluation (bài viết về kỹ năng thực hành nâng cao)",
+          "question_count": "2 trở lên",
+          "duration_minutes": 75,
+          "weight_percent": 11.5,
+          "calculator": "cho-phep",
+          "note": "30 marks, không cần phòng thí nghiệm. Mark tối thiểu: Planning (định nghĩa vấn đề và phương pháp) 12 marks; Analysis, conclusion and evaluation (xử lý dữ liệu, kết luận, đánh giá) 12 marks; 6 marks còn lại phân bổ linh hoạt. Câu hỏi có thể đặt ở lĩnh vực hoá học khó thực hiện trong phòng thí nghiệm trường học vì lý do chi phí hoặc an toàn. Bảng hằng số quan trọng và Bảng tuần hoàn in ở cuối đề; dữ liệu chuyên biệt cho trong câu hỏi."
+        }
+      ],
+      "topic_weights": {
+        "AS - Cấu tạo nguyên tử, liên kết hoá học và trạng thái vật chất (chủ đề 1, 3, 4)": 9,
+        "AS - Nguyên tử, phân tử và định lượng hoá học (chủ đề 2)": 4.5,
+        "AS - Nhiệt hoá học, điện hoá, cân bằng và động học mức AS (chủ đề 5, 6, 7, 8)": 9,
+        "AS - Hoá vô cơ: chu kì, Group 2, Group 17, nitrogen và sulfur (chủ đề 9-12)": 7,
+        "AS - Hoá hữu cơ và kỹ thuật phân tích mức AS (chủ đề 13-22)": 9,
+        "A2 - Chemical energetics: Born-Haber, entropy, năng lượng Gibbs (chủ đề 23)": 6,
+        "A2 - Electrochemistry: thế điện cực, pin, phương trình Nernst, điện phân (chủ đề 24)": 5,
+        "A2 - Equilibria: Ka, Kb, Ksp, dung dịch đệm, chuẩn độ, hệ số phân bố (chủ đề 25)": 7,
+        "A2 - Reaction kinetics: bậc phản ứng, biểu thức tốc độ, cơ chế, Arrhenius (chủ đề 26)": 5,
+        "A2 - Hoá vô cơ: Group 2 nâng cao và hoá học nguyên tố chuyển tiếp (chủ đề 27, 28)": 5,
+        "A2 - Hoá hữu cơ nâng cao: arene, dẫn xuất halogen, hydroxy, carbonyl, nitrogen, polymer, tổng hợp (chủ đề 29-36)": 8,
+        "A2 - Analytical techniques: NMR proton và carbon-13, IR, phổ khối, sắc kí (chủ đề 37)": 2.5,
+        "Kỹ năng thực hành Paper 3 - Advanced Practical Skills": 11.5,
+        "Kỹ năng thực hành Paper 5 - Planning, Analysis and Evaluation": 11.5
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm loại tổ hợp mệnh đề (Paper 1)",
+          "description": "Ngoài dạng bốn phương án thông thường, 9701 dùng nhiều câu dạng 'phát biểu nào sau đây đúng' với ba mệnh đề và bốn tổ hợp; muốn chọn đúng phải đánh giá độc lập cả ba mệnh đề, không đoán được từ một mệnh đề.",
+          "example_prompt": "Đề mô phỏng tự soạn: Xét ba phát biểu về xu hướng trong nhóm 17 khi đi từ chlorine xuống iodine: (1) tính oxi hoá giảm; (2) nhiệt độ sôi tăng; (3) độ bền nhiệt của hydrogen halide tăng. Tổ hợp phát biểu đúng là: A. 1 và 2   B. 1 và 3   C. 2 và 3   D. cả ba",
+          "approach": "Chấm điểm từng mệnh đề bằng dấu đúng hoặc sai ngay bên cạnh đề trước khi nhìn phương án. Với xu hướng nhóm, luôn quy về hai nguyên nhân gốc: bán kính nguyên tử và lực liên phân tử. Nếu chỉ chắc chắn hai trong ba mệnh đề, dùng mệnh đề chắc chắn để loại bớt phương án."
+        },
+        {
+          "name": "Bài tính toán định lượng theo chuỗi (Paper 2 và Paper 4)",
+          "description": "Chuỗi tính từ số liệu thí nghiệm đến kết quả cuối, thường qua 3-5 bước: khối lượng sang mol, mol theo hệ số tỉ lượng, mol sang nồng độ hoặc thể tích khí. Mỗi bước một mark, có ecf giữa các bước.",
+          "example_prompt": "Đề mô phỏng tự soạn: Hoà tan 2,65 g Na2CO3 khan thành 250 cm^3 dung dịch. Lấy 25,0 cm^3 dung dịch này chuẩn độ với HCl 0,100 mol/dm^3, hết 24,60 cm^3. (a) Tính nồng độ Na2CO3 trong dung dịch gốc theo hai cách: từ khối lượng cân và từ kết quả chuẩn độ. [4] (b) Giải thích chênh lệch giữa hai giá trị. [2]",
+          "approach": "Viết phương trình phản ứng có cân bằng trước tiên, gạch chân tỉ lệ mol. Ghi rõ từng dòng: n = m/M, sau đó n trong 25 cm^3, sau đó n HCl. Giữ ít nhất 4 chữ số có nghĩa trong tính trung gian; đáp số cuối lấy số chữ số có nghĩa bằng đại lượng đo kém chính xác nhất."
+        },
+        {
+          "name": "Câu xác định cơ chế và vẽ mũi tên cong (Paper 4)",
+          "description": "Yêu cầu vẽ cơ chế thế nucleophin, tách, cộng electrophin hoặc thế electrophin vào vòng thơm, kèm mũi tên cong đúng chiều và các tiểu phân trung gian. Mark tách cho mũi tên, cho trung gian và cho sản phẩm.",
+          "example_prompt": "Đề mô phỏng tự soạn: 2-bromo-2-methylpropane phản ứng với dung dịch NaOH loãng ở nhiệt độ phòng. (a) Nêu tên cơ chế và vẽ đầy đủ cơ chế bằng mũi tên cong. [4] (b) Giải thích vì sao chất này phản ứng theo cơ chế đó nhanh hơn 1-bromobutane. [3]",
+          "approach": "Mũi tên cong luôn xuất phát từ cặp electron (liên kết hoặc cặp không liên kết) và kết thúc ở nơi nhận electron; vẽ ngược chiều là mất mark ngay cả khi sản phẩm đúng. Với SN1, phải thể hiện rõ carbocation trung gian và điện tích dương. Câu giải thích phải nêu độ bền carbocation bậc ba do hiệu ứng đẩy electron của nhóm alkyl."
+        },
+        {
+          "name": "Câu quan sát định tính - Paper 3 (dùng Qualitative analysis notes)",
+          "description": "Thí sinh nhận một hoặc nhiều chất chưa biết (nguyên tố, hợp chất hoặc hỗn hợp), thực hiện các thí nghiệm được chỉ định, ghi hiện tượng vào bảng, suy luận ion hoặc nhóm chức có mặt và kết luận. Qualitative analysis notes được in ngay trong đề.",
+          "example_prompt": "Đề mô phỏng tự soạn: Dung dịch FA1 chứa một cation và một anion chưa biết. Thực hiện các thí nghiệm sau, ghi đầy đủ hiện tượng vào bảng: (i) thêm từng giọt NaOH loãng đến dư; (ii) thêm từng giọt NH3 loãng đến dư; (iii) thêm HCl loãng rồi thử khí thoát ra; (iv) thêm BaCl2 rồi thêm HCl dư. Từ các quan sát, xác định cation và anion trong FA1 và giải thích căn cứ. [12]",
+          "approach": "Ghi hiện tượng chứ không ghi kết luận: viết 'kết tủa trắng, tan trong NaOH dư' chứ không viết 'có Al3+'. Phải ghi cả trường hợp không có hiện tượng ('không có thay đổi quan sát được') vì đó cũng là số liệu được chấm. Ghi màu chính xác và phân biệt kết tủa với dung dịch đục. Chỉ sau khi hoàn tất bảng mới đối chiếu Qualitative analysis notes để suy luận; kết luận phải chỉ rõ quan sát nào loại trừ khả năng nào."
+        },
+        {
+          "name": "Câu chuẩn độ định lượng - Paper 3",
+          "description": "Chuẩn độ thật với buret, yêu cầu ghi bảng titre chuẩn, tính trung bình các titre đồng nhất (concordant), rồi tính nồng độ hoặc khối lượng mol của chất chưa biết. Mark cho chất lượng số liệu, cách trình bày bảng và tính toán.",
+          "example_prompt": "Đề mô phỏng tự soạn: FA2 là dung dịch acid ethanedioic nồng độ chưa biết, FA3 là NaOH 0,100 mol/dm^3. Chuẩn độ 25,0 cm^3 FA2 bằng FA3 với chỉ thị phenolphthalein. (a) Trình bày kết quả trong một bảng phù hợp. (b) Tính nồng độ FA2. (c) Tính khối lượng acid ethanedioic ngậm nước cần dùng để pha 250 cm^3 dung dịch FA2. [tổng 15]",
+          "approach": "Đọc buret tới 0,05 cm^3 và ghi mọi số đo với đúng hai chữ số thập phân, kể cả khi số đo là 24,00. Bảng phải có dòng rough titration và ít nhất hai titre đồng nhất trong phạm vi 0,10 cm^3 của nhau. Chỉ lấy trung bình các titre đồng nhất, không lấy cả rough. Số chữ số có nghĩa của nồng độ tính ra phải khớp với titre: titre 4 chữ số có nghĩa thì nồng độ ghi 4 chữ số có nghĩa trừ khi có đại lượng đầu vào kém chính xác hơn."
+        },
+        {
+          "name": "Câu thiết kế thí nghiệm và phân tích số liệu - Paper 5",
+          "description": "Thiết kế thí nghiệm khảo sát một giả thuyết, có thể phải phát biểu dự đoán dưới dạng giả thuyết liên hệ biến độc lập và biến phụ thuộc hoặc dưới dạng đồ thị kỳ vọng; hoặc cho sẵn số liệu và yêu cầu phân tích, kết luận, đánh giá. Trả lời bằng văn viết có cấu trúc, kèm sơ đồ, sơ đồ khối, bảng hoặc phương trình.",
+          "example_prompt": "Đề mô phỏng tự soạn: Người ta cho rằng tốc độ đầu của phản ứng giữa magnesium và acid hydrochloric tỉ lệ bậc nhất với nồng độ acid. Hãy thiết kế một thí nghiệm để kiểm chứng giả thuyết này, nêu rõ biến độc lập, biến phụ thuộc, các biến giữ không đổi, cách đo, cách xử lý số liệu để rút ra bậc phản ứng, và các biện pháp an toàn cần thiết. [16]",
+          "approach": "Nêu biến độc lập, biến phụ thuộc và ít nhất ba biến kiểm soát cụ thể kèm cách giữ chúng không đổi (nhiệt độ bằng bể ổn nhiệt, diện tích bề mặt Mg bằng cách dùng dải cùng kích thước và làm sạch lớp oxide). Phần phân tích phải nói rõ vẽ đồ thị nào: tốc độ đầu theo nồng độ, đường thẳng qua gốc chứng tỏ bậc một. An toàn phải gắn với hoá chất cụ thể (acid ăn mòn, khí hydrogen dễ cháy) và nêu biện pháp tương ứng."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Từ kỳ thi 2022 trở đi 9701 KHÔNG phát Data Booklet rời: bìa đề Paper 1, 2, 4 và 5 ghi 'No additional materials are needed', còn Paper 3 chỉ ghi cần dụng cụ và hoá chất theo confidential instructions. Toàn bộ dữ liệu cần dùng được in ngay trong đề; danh mục đầy đủ nằm ở mục Data section của syllabus (9 bảng).",
+        "In cố định ở cuối mọi đề lí thuyết: bảng 'Important values, constants and standards' và 'The Periodic Table of Elements' kèm khối lượng nguyên tử tương đối. Các bảng chuyên biệt (năng lượng ion hoá, năng lượng liên kết, thế điện cực chuẩn, độ âm điện Pauling, dịch chuyển hoá học NMR proton và carbon-13, tần số hấp thụ hồng ngoại) được cấp ngay trong câu hỏi cần dùng chứ không in sẵn toàn bộ ở mọi đề.",
+        "Data section (syllabus mục 6) - bảng 1 - hằng số: R = 8,31 J/(K.mol); hằng số Faraday F = 9,65 nhân 10 mũ 4 C/mol; hằng số Avogadro L = 6,022 nhân 10 mũ 23 /mol; điện tích electron; thể tích mol khí 22,4 dm^3/mol ở s.t.p. và 24,0 dm^3/mol ở điều kiện phòng; Kw = 1,00 nhân 10 mũ trừ 14 ở 298 K; nhiệt dung riêng của nước 4,18 J/(g.K)",
+        "Data section (syllabus mục 6) - bảng 2 - năng lượng ion hoá thứ nhất đến thứ tư của các nguyên tố chọn lọc",
+        "Data section (syllabus mục 6) - bảng 3 - năng lượng liên kết",
+        "Data section (syllabus mục 6) - bảng 4 - thế điện cực chuẩn (thế khử) ở 298 K",
+        "Data section (syllabus mục 6) - bảng 5 - độ âm điện Pauling",
+        "Data section (syllabus mục 6) - bảng 6 và 7 - độ dịch chuyển hoá học đặc trưng của phổ NMR proton và NMR carbon-13 so với TMS",
+        "Data section (syllabus mục 6) - bảng 8 - vùng hấp thụ hồng ngoại đặc trưng của các liên kết chọn lọc",
+        "Data section (syllabus mục 6) - bảng 9 - Bảng tuần hoàn các nguyên tố kèm khối lượng nguyên tử tương đối",
+        "Qualitative analysis notes - in ngay trong đề Paper 3 cho câu quan sát định tính (phản ứng nhận biết cation, anion và khí)",
+        "Máy tính khoa học tự mang, cần có hàm luỹ thừa, logarit thập phân và logarit tự nhiên, căn bậc hai và bậc ba"
+      ],
+      "formulas_must_memorize": [
+        "chemistry.thpt.dinh-luong-quoc-te.he-thuc-chuan-do",
+        "chemistry.thpt.dinh-luong-quoc-te.the-tich-mol-rtp",
+        "chemistry.thpt.dinh-luong-quoc-te.chuan-do-nguoc",
+        "chemistry.thpt.nhiet-hoa-quoc-te.chu-trinh-born-haber",
+        "chemistry.thpt.nhiet-hoa-quoc-te.enthalpy-hoa-tan",
+        "chemistry.thpt.nhiet-hoa-quoc-te.enthalpy-tu-nhiet-dot-chay",
+        "chemistry.thpt.nhiet-hoa-quoc-te.nang-luong-mang-luoi",
+        "chemistry.thpt.nhiet-dong-thpt.entropy-chuan-phan-ung",
+        "chemistry.thpt.nhiet-dong-thpt.gibbs-va-hang-so-can-bang",
+        "chemistry.thpt.nhiet-dong-thpt.nhiet-do-kha-thi",
+        "chemistry.thpt.axit-bazo-quoc-te.ph-nua-diem-tuong-duong",
+        "chemistry.thpt.axit-bazo-quoc-te.kw-phu-thuoc-nhiet-do",
+        "chemistry.thpt.axit-bazo-quoc-te.ph-dem-sau-khi-them-axit",
+        "chemistry.thpt.axit-bazo-quoc-te.chi-thi-khoang-doi-mau",
+        "chemistry.thpt.axit-bazo-quoc-te.bon-moc-ph-chuan-do-axit-yeu",
+        "chemistry.thpt.can-bang-quoc-te.bang-ice",
+        "chemistry.thpt.can-bang-quoc-te.kp-theo-phan-mol",
+        "chemistry.thpt.can-bang-quoc-te.hieu-ung-ion-chung",
+        "chemistry.thpt.dong-hoc-tich-phan.bac-mot",
+        "chemistry.thpt.dong-hoc-tich-phan.ban-huy-bac-mot",
+        "chemistry.thpt.dong-hoc-tich-phan.don-vi-hang-so-toc-do",
+        "chemistry.thpt.dong-hoc-tich-phan.arrhenius-dang-logarit",
+        "chemistry.thpt.dong-hoc-tich-phan.buoc-quyet-dinh-toc-do",
+        "chemistry.thpt.dien-hoa-quoc-te.so-do-pin-iupac",
+        "chemistry.thpt.dien-hoa-quoc-te.dien-cuc-hidro-chuan",
+        "chemistry.thpt.cau-tao-quoc-te.ky-hieu-axe-vsepr",
+        "chemistry.thpt.cau-tao-quoc-te.luc-lien-phan-tu",
+        "chemistry.thpt.huu-co-quoc-te.co-che-sn1",
+        "chemistry.thpt.huu-co-quoc-te.co-che-sn2",
+        "chemistry.thpt.pho-phan-tich.pic-m-cong-2-clo-brom"
+      ],
+      "scoring": {
+        "description": "Ba mục tiêu đánh giá: AO1 Knowledge and understanding, AO2 Handling, applying and evaluating information, AO3 Experimental skills and investigations. Paper 3 và Paper 5 chấm 100% AO3, các paper còn lại không chấm AO3. Mark scheme hoá học chấm theo marking point; câu giải thích liệt kê các ý bắt buộc và thường ghi rõ cụm từ phải xuất hiện. Câu tính toán có ecf giữa các bước trong cùng một câu. Syllabus nêu rõ trong mục Special note regarding units and significant figures rằng việc thiếu đơn vị khi cần, gắn đơn vị cho đại lượng vốn là tỉ số, hoặc ghi đáp số với số chữ số có nghĩa không hợp lý đều có thể bị trừ điểm. Riêng phần thực hành, quy tắc là số chữ số có nghĩa của đại lượng tính ra phải bằng hoặc nhiều hơn một so với số liệu đầu vào có ít chữ số có nghĩa nhất - ví dụ titre ghi bốn chữ số có nghĩa (23,45 cm^3) thì nồng độ tính ra ghi bốn chữ số có nghĩa. Mark allocation Paper 3: Manipulation, measurement and observation tối thiểu 12 marks; Presentation of data and observations tối thiểu 6 marks; Analysis, conclusions and evaluation tối thiểu 10 marks; phần còn lại phân bổ linh hoạt.",
+        "scale": "A*-E (A Level); a-e (AS Level)",
+        "raw_to_scaled": "Raw mark từng component (40, 60, 40, 100, 30) quy về percentage uniform mark theo ngưỡng công bố cho đúng kỳ và đúng mã component, rồi tổng hợp theo trọng số 15.5 / 23 / 11.5 / 38.5 / 11.5. Ngưỡng PUM tổng: A* = 90, A = 80, B = 70, C = 60, D = 50, E = 40; grade A* chỉ có ở mức syllabus. Ngưỡng raw mark của Paper 3 dao động mạnh giữa các biến thể vì phụ thuộc độ khó của bài thí nghiệm cụ thể, nên phải tra bảng grade threshold của đúng kỳ thay vì áp một mốc phần trăm cố định.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Paper 1: 40 câu trong 75 phút. Với câu tổ hợp mệnh đề, đánh dấu đúng hoặc sai cho từng mệnh đề ngay trên đề trước khi nhìn phương án, cách này nhanh hơn và ít sai hơn việc thử từng phương án.",
+        "Paper 4: 100 mark trong 120 phút. Đọc lướt toàn đề 3 phút để nhận diện câu hữu cơ dài (thường 12-18 mark) và dành đủ thời gian cho nó thay vì bị kẹt ở câu hoá lí đầu bài.",
+        "Đánh dấu trước hai trang cuối đề Paper 4 (bảng hằng số và Bảng tuần hoàn) vì phải tra nhiều lần; còn bảng thế điện cực chuẩn và bảng dịch chuyển NMR thì nằm ngay trong câu hỏi cần dùng, nên đọc kỹ dữ liệu kèm câu trước khi tra ra ngoài.",
+        "Với mọi bài tính, viết phương trình phản ứng đã cân bằng trước và gạch chân tỉ lệ mol; sai tỉ lệ mol làm hỏng toàn bộ chuỗi tính dù các phép tính đều đúng.",
+        "Giữ 4-5 chữ số có nghĩa trong tính trung gian, chỉ làm tròn ở đáp số cuối theo số liệu đầu vào kém chính xác nhất.",
+        "Trong Paper 3, đọc toàn bộ đề và lập kế hoạch thời gian trước khi lấy hoá chất: câu chuẩn độ cần thời gian cố định cho ba lần chuẩn, còn câu định tính có thể làm xen kẽ trong lúc chờ.",
+        "Trong Paper 3, kẻ sẵn bảng quan sát trước khi bắt đầu thí nghiệm định tính, mỗi thí nghiệm một dòng; ghi ngay sau khi quan sát chứ không nhớ để ghi sau.",
+        "Trong Paper 3, thực hiện một lần chuẩn độ thô rồi hai đến ba lần chính xác; chỉ lấy trung bình các titre chênh nhau không quá 0,10 cm^3 và ghi rõ đã dùng những titre nào.",
+        "Trong Paper 5, viết theo cấu trúc có tiêu đề rõ ràng và dùng gạch đầu dòng cho từng ý; mark scheme là danh sách các điểm, viết thành đoạn văn liền mạch làm examiner khó tìm đủ điểm.",
+        "Học thuộc bảng Qualitative analysis thay vì phụ thuộc hoàn toàn vào notes trong đề: đọc notes vẫn cần nhưng biết trước giúp thiết kế thứ tự thí nghiệm hợp lý và tiết kiệm 10-15 phút.",
+        "Luyện vẽ mũi tên cong trên giấy có sẵn khung phân tử, mỗi ngày 5 cơ chế, cho đến khi vẽ đúng chiều thành phản xạ; đây là phần cho mark nhanh nhất ở Paper 4.",
+        "Lập bảng đối chiếu bốn loại đường cong chuẩn độ (mạnh-mạnh, mạnh-yếu, yếu-mạnh, yếu-yếu) kèm pH điểm tương đương và chỉ thị phù hợp; đây là chủ đề xuất hiện gần như mọi kỳ."
+      ],
+      "common_traps": [
+        "Ghi kết luận thay cho quan sát trong Paper 3: viết 'có ion Cu2+' thay vì 'kết tủa xanh nhạt, tan trong NH3 dư cho dung dịch xanh đậm' - mất toàn bộ mark quan sát.",
+        "Bỏ trống ô khi không có hiện tượng trong Paper 3; phải viết rõ 'không có thay đổi quan sát được' vì đó cũng là một quan sát được chấm.",
+        "Đọc buret chỉ tới 0,1 cm^3 hoặc ghi 24,0 thay vì 24,00; số chữ số thập phân sai làm mất mark về quality of measurements.",
+        "Lấy trung bình cả titre thô vào kết quả cuối, hoặc lấy trung bình các titre chênh nhau quá 0,10 cm^3.",
+        "Nhầm dấu enthalpy: enthalpy mạng lưới có thể viết theo quy ước tạo thành (âm) hoặc quy ước phân li (dương); dùng sai quy ước trong chu trình Born-Haber làm sai dấu toàn bài.",
+        "Trong chu trình Born-Haber, quên nhân đôi ái lực electron khi ion có điện tích 2 trừ, hoặc quên nhân hệ số cho enthalpy nguyên tử hoá của phân tử hai nguyên tử.",
+        "Nhầm entropy của hệ với entropy tổng: phản ứng khả thi khi entropy TỔNG tăng (hoặc năng lượng Gibbs âm), không phải khi entropy của hệ tăng.",
+        "Trong bài Kc và Kp, quên rằng chỉ chất khí và chất tan mới vào biểu thức, chất rắn và chất lỏng nguyên chất thì không; và quên nêu đơn vị của K theo đúng số mũ.",
+        "Trong bài dung dịch đệm, dùng nồng độ ban đầu thay vì nồng độ sau phản ứng khi đã thêm acid mạnh hoặc base mạnh.",
+        "Nhầm điểm cuối (end point, nơi chỉ thị đổi màu) với điểm tương đương (equivalence point, nơi số mol vừa đủ); câu hỏi thường phân biệt hai khái niệm này.",
+        "Chọn chỉ thị sai cho loại chuẩn độ: phenolphthalein cho acid yếu với base mạnh, methyl orange cho acid mạnh với base yếu; chọn ngược lại là mất mark chắc chắn.",
+        "Trong động học, kết luận bậc phản ứng từ phương trình hoá học thay vì từ số liệu thực nghiệm; bậc phản ứng chỉ xác định được bằng thí nghiệm.",
+        "Trong bài cơ chế, vẽ mũi tên cong xuất phát từ nguyên tử mang điện dương thay vì từ cặp electron; hoặc quên cặp electron không liên kết trên nucleophile.",
+        "Nhầm SN1 với SN2: dẫn xuất bậc ba đi theo SN1 vì carbocation bền, dẫn xuất bậc một đi theo SN2 vì ít cản trở không gian; kết luận ngược là lỗi thường gặp.",
+        "Trong phổ khối, quên rằng pic M+2 với cường độ xấp xỉ bằng pic M chỉ ra bromine, còn tỉ lệ khoảng 3 trên 1 chỉ ra chlorine.",
+        "Trong NMR proton, đếm số tín hiệu theo số nguyên tử hydrogen thay vì theo số môi trường hoá học khác nhau; và quên quy tắc n cộng 1 khi giải thích sự tách tín hiệu.",
+        "Gắn đơn vị cho các đại lượng vốn không có đơn vị như hằng số cân bằng không thứ nguyên, độ âm điện, pH - syllabus nêu rõ đây là lỗi bị phạt."
+      ],
+      "tags": [
+        "a-level",
+        "cambridge",
+        "9701",
+        "hoa-hoc",
+        "thuc-hanh",
+        "thpt",
+        "quoc-te"
+      ],
+      "sources": [
+        "Cambridge International AS & A Level Chemistry 9701 syllabus for 2025, 2026 and 2027 (cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf)",
+        "Cambridge International, đề mẫu 9701/02 và 9701/04 dùng từ kỳ thi 2022 (bìa đề: No additional materials are needed) và đề mẫu 9701/03",
+        "Cambridge International, A guide to percentage uniform marks"
+      ]
+    },
+    {
+      "id": "exam.cambridge-alevel-biology-9700",
+      "name": "Cambridge International A Level Biology 9700",
+      "provider": "Cambridge Assessment International Education",
+      "subject": "biology",
+      "curriculum": [
+        "a-level"
+      ],
+      "level": "thpt",
+      "overview": "Cambridge International AS & A Level Biology 9700 là kỳ thi sinh học hệ A Level của Cambridge với năm component, trong đó Paper 3 là bài thi thực hành thật trong phòng thí nghiệm (hiển vi, giải phẫu, đo enzyme, thẩm thấu) và Paper 5 là bài viết về thiết kế thí nghiệm, phân tích số liệu và kiểm định thống kê. Nội dung gồm 11 chủ đề AS và 8 chủ đề A Level. Khung này áp dụng cho syllabus thi năm 2025, 2026 và 2027. 9700 là môn điều kiện bắt buộc cho Y, Nha, Dược, Thú y, Công nghệ sinh học và Khoa học sự sống ở Anh, Singapore, Hong Kong, Úc; nhiều đại học Mỹ quy đổi grade A hoặc A* thành tín chỉ sinh học đại cương kèm phần thực hành.",
+      "sections": [
+        {
+          "name": "Paper 1 - Multiple Choice (AS)",
+          "question_count": "40",
+          "duration_minutes": 75,
+          "weight_percent": 15.5,
+          "calculator": "cho-phep",
+          "note": "40 marks, 40 câu trắc nghiệm dựa trên nội dung AS. Chiếm 31% AS Level và 15.5% A Level."
+        },
+        {
+          "name": "Paper 2 - AS Level Structured Questions",
+          "question_count": "5-7",
+          "duration_minutes": 75,
+          "weight_percent": 23,
+          "calculator": "cho-phep",
+          "note": "60 marks, structured questions dựa trên nội dung AS. Chiếm 46% AS Level và 23% A Level."
+        },
+        {
+          "name": "Paper 3 - Advanced Practical Skills (bài thi thực hành trong phòng thí nghiệm)",
+          "question_count": "2-3",
+          "duration_minutes": 120,
+          "weight_percent": 11.5,
+          "calculator": "cho-phep",
+          "note": "40 marks. Thí sinh phải tự quyết định kỹ thuật, thu số liệu định lượng hoặc định tính, trình bày dưới dạng bảng, biểu đồ hoặc đồ thị, phân tích kèm tính toán. Thường có một phần dùng kính hiển vi hoặc vẽ hình sinh học có tỉ lệ. Ngữ cảnh có thể nằm ngoài nội dung syllabus. Mark: Manipulation, measurement and observation 15-17; Presentation of data and observations 11-13; Analysis, conclusions and evaluation 11-13."
+        },
+        {
+          "name": "Paper 4 - A Level Structured Questions",
+          "question_count": "7-9",
+          "duration_minutes": 120,
+          "weight_percent": 38.5,
+          "calculator": "cho-phep",
+          "note": "100 marks, structured questions dựa trên nội dung A Level nhưng vẫn đòi hỏi kiến thức AS. Chiếm 38.5% A Level - component nặng nhất. Có mục Mathematical formulae in kèm (chỉ ở A Level)."
+        },
+        {
+          "name": "Paper 5 - Planning, Analysis and Evaluation (bài viết về kỹ năng thực hành nâng cao)",
+          "question_count": "2 trở lên",
+          "duration_minutes": 75,
+          "weight_percent": 11.5,
+          "calculator": "cho-phep",
+          "note": "30 marks, không cần phòng thí nghiệm. Mark: Planning (định nghĩa vấn đề và phương pháp) 14-16; Analysis, conclusions and evaluation (xử lý số liệu, kết luận, đánh giá) 14-16. Ngữ cảnh có thể nằm ngoài nội dung syllabus. Có mục Mathematical formulae in kèm."
+        }
+      ],
+      "topic_weights": {
+        "AS 1 - Cell structure": 3.5,
+        "AS 2 - Biological molecules": 4,
+        "AS 3 - Enzymes": 3.5,
+        "AS 4 - Cell membranes and transport": 3.5,
+        "AS 5 - The mitotic cell cycle": 3,
+        "AS 6 - Nucleic acids and protein synthesis": 4,
+        "AS 7 - Transport in plants": 3.5,
+        "AS 8 - Transport in mammals": 4,
+        "AS 9 - Gas exchange": 3,
+        "AS 10 - Infectious diseases": 3,
+        "AS 11 - Immunity": 3.5,
+        "A2 12 - Energy and respiration": 5,
+        "A2 13 - Photosynthesis": 5,
+        "A2 14 - Homeostasis": 5,
+        "A2 15 - Control and coordination": 5.5,
+        "A2 16 - Inheritance": 6,
+        "A2 17 - Selection and evolution": 4,
+        "A2 18 - Classification, biodiversity and conservation": 4,
+        "A2 19 - Genetic technology": 4,
+        "Kỹ năng thực hành Paper 3 - Advanced Practical Skills": 11.5,
+        "Kỹ năng thực hành Paper 5 - Planning, Analysis and Evaluation": 11.5
+      },
+      "question_types": [
+        {
+          "name": "Trắc nghiệm đọc bảng hoặc đồ thị (Paper 1)",
+          "description": "40 câu trong 75 phút. Nhiều câu cho một bảng số liệu, sơ đồ chu trình hoặc ảnh hiển vi rồi hỏi suy luận; các phương án nhiễu ứng với việc đọc sai trục, nhầm chiều nhân quả hoặc nhầm hai cấu trúc giống nhau.",
+          "example_prompt": "Đề mô phỏng tự soạn: Đồ thị biểu diễn tốc độ hô hấp của hạt đang nảy mầm theo nhiệt độ từ 5 đến 50 độ C. Tốc độ tăng dần tới cực đại ở 38 độ C rồi giảm nhanh về gần 0 ở 48 độ C. Giải thích nào phù hợp nhất với phần giảm của đồ thị? A. cơ chất bị cạn kiệt   B. enzyme bị biến tính   C. tốc độ khuếch tán giảm   D. pH tế bào tăng",
+          "approach": "Đọc trục và đơn vị trước khi đọc phương án. Với câu về enzyme, luôn xác định phần tăng do động năng và phần giảm do biến tính. Không có điểm trừ nên phải điền đủ 40 ô."
+        },
+        {
+          "name": "Câu giải thích cơ chế sinh học theo chuỗi nhân quả (Paper 2 và Paper 4)",
+          "description": "Command word Explain hoặc Describe and explain, thường 3-5 mark. Mark scheme là chuỗi các bước nhân quả; phải nêu đủ mắt xích chứ không kết luận tắt từ nguyên nhân sang kết quả cuối.",
+          "example_prompt": "Đề mô phỏng tự soạn: Giải thích vì sao đường cong phân li oxygen của hemoglobin bào thai nằm bên trái đường cong của hemoglobin người trưởng thành, và vì sao điều đó có lợi cho bào thai. [4]",
+          "approach": "Viết mỗi mark một câu, nối bằng 'do đó' hoặc 'vì vậy'. Ở đây bốn mắt xích là: hemoglobin bào thai có ái lực với oxygen cao hơn; ở cùng phân áp oxygen thì phần trăm bão hoà cao hơn; tại nhau thai oxygen chuyển từ máu mẹ sang máu con; nhờ đó bào thai nhận đủ oxygen dù phân áp ở nhau thai thấp. Không dùng từ mơ hồ như 'tốt hơn', 'hiệu quả hơn' mà không giải thích."
+        },
+        {
+          "name": "Bài di truyền học có sơ đồ lai và kiểm định chi bình phương (Paper 4)",
+          "description": "Yêu cầu viết kiểu gen bố mẹ, giao tử, khung Punnett hoặc sơ đồ lai, tính tỉ lệ kỳ vọng, rồi so với số liệu thực tế bằng kiểm định chi bình phương. Công thức chi bình phương được in trong đề.",
+          "example_prompt": "Đề mô phỏng tự soạn: Ở một loài thực vật, màu hoa và hình dạng lá do hai gen nằm trên hai cặp nhiễm sắc thể khác nhau quy định. Lai hai cây dị hợp cả hai cặp, thu được 152 cây hoa đỏ lá nguyên, 48 cây hoa đỏ lá xẻ, 44 cây hoa trắng lá nguyên, 20 cây hoa trắng lá xẻ. (a) Viết sơ đồ lai và tỉ lệ kiểu hình kỳ vọng. [4] (b) Dùng kiểm định chi bình phương ở mức ý nghĩa 5% để xét xem số liệu có phù hợp với tỉ lệ kỳ vọng hay không. [5]",
+          "approach": "Ký hiệu allele bằng chữ cái rõ ràng và giải thích ký hiệu ở đầu bài. Tính tần số kỳ vọng từ TỔNG số cá thể thực tế, không dùng số tròn. Bậc tự do bằng số nhóm kiểu hình trừ 1. So chi bình phương tính được với giá trị tới hạn: lớn hơn thì bác bỏ giả thuyết không. Kết luận phải nói lại bằng ngôn ngữ sinh học, không chỉ 'chấp nhận H0'."
+        },
+        {
+          "name": "Bài tính toán định lượng hiển vi và sinh thái (Paper 2, Paper 4)",
+          "description": "Tính độ phóng đại hoặc kích thước thật từ ảnh hiển vi và thanh tỉ lệ; tính chỉ số đa dạng Simpson; ước lượng kích thước quần thể bằng chỉ số Lincoln; tính tần số allele theo Hardy-Weinberg. Các công thức Hardy-Weinberg, Lincoln, Simpson được in trong đề ở mức A Level.",
+          "example_prompt": "Đề mô phỏng tự soạn: Ảnh hiển vi điện tử của một ti thể có chiều dài đo được trên ảnh là 62 mm, thanh tỉ lệ dài 15 mm ứng với 0,50 micromet. Tính chiều dài thật của ti thể, ghi kết quả theo micromet với hai chữ số có nghĩa. [3]",
+          "approach": "Đổi mọi số đo về cùng đơn vị trước khi chia. Dùng quan hệ I = A nhân M (kích thước ảnh bằng kích thước thật nhân độ phóng đại). Với thanh tỉ lệ, tính độ phóng đại bằng chiều dài thanh trên ảnh chia cho giá trị nó biểu diễn. Ghi đơn vị và số chữ số có nghĩa theo yêu cầu đề; độ phóng đại là tỉ số nên KHÔNG có đơn vị, viết dạng 'nhân 12000'."
+        },
+        {
+          "name": "Câu thực hành sinh học có vẽ hình và đo đạc - Paper 3",
+          "description": "Bài thi thật kéo dài 2 giờ. Kỹ năng được chấm gồm: quyết định về phép đo và quan sát (chọn khoảng và số giá trị của biến độc lập - tối thiểu năm giá trị, chọn số lần lặp, chọn cách đo biến phụ thuộc), thu số liệu và quan sát, ghi số liệu, trình bày tính toán và lập luận, bố cục bảng và quan sát, diễn giải số liệu, rút kết luận, nhận diện nguồn sai số và đề xuất cải tiến. Thường có phần vẽ hình từ tiêu bản hiển vi kèm thanh tỉ lệ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Được cấp dung dịch sucrose gốc 1,0 mol/dm^3, nước cất, các mẫu khoai tây hình trụ, cân và dụng cụ thuỷ tinh. Hãy khảo sát ảnh hưởng của nồng độ sucrose tới phần trăm thay đổi khối lượng của mô khoai tây. Trình bày số liệu trong một bảng phù hợp, vẽ đồ thị và xác định thế nước của mô khoai tây.",
+          "approach": "Chọn ít nhất năm nồng độ trải đều từ 0 tới 1,0 mol/dm^3, tính thể tích dung dịch gốc và nước cho từng nồng độ bằng quy tắc pha loãng và ghi bảng pha. Thấm khô mẫu theo cùng một cách trước và sau khi ngâm. Bảng phải có cột phần trăm thay đổi khối lượng chứ không chỉ khối lượng thô. Đồ thị vẽ phần trăm thay đổi theo nồng độ; điểm cắt trục hoành là nồng độ có thế nước bằng thế nước của mô. Hình vẽ sinh học phải là nét liền, không tô bóng, có nhãn bằng đường kẻ thẳng không cắt nhau, kèm thanh tỉ lệ hoặc độ phóng đại."
+        },
+        {
+          "name": "Câu Planning và câu Analysis - Paper 5",
+          "description": "Câu Planning yêu cầu phát biểu một dự đoán (bằng lời hoặc bằng đồ thị phác), xác định biến độc lập, biến phụ thuộc, biến kiểm soát, mô tả quy trình đủ chi tiết để người khác lặp lại, nêu số lần lặp và cách đảm bảo an toàn. Câu Analysis cho sẵn số liệu, yêu cầu tính trung bình, độ lệch chuẩn, sai số chuẩn, khoảng tin cậy 95%, vẽ thanh sai số, chọn và thực hiện kiểm định thống kê phù hợp rồi kết luận và đánh giá độ tin cậy.",
+          "example_prompt": "Đề mô phỏng tự soạn: Người ta cho rằng cây mọc ở nơi có bóng râm có mật độ khí khổng ở mặt dưới lá thấp hơn cây cùng loài mọc ngoài nắng. (a) Thiết kế một điều tra để kiểm chứng giả thuyết này. [15] (b) Bảng cho số liệu mật độ khí khổng của hai nhóm cây; hãy chọn và thực hiện một kiểm định thống kê phù hợp để xét xem chênh lệch có ý nghĩa thống kê hay không, rồi đánh giá kết luận. [15]",
+          "approach": "Phần thiết kế: nêu dự đoán có chiều rõ ràng, xác định biến độc lập (mức chiếu sáng), biến phụ thuộc (mật độ khí khổng), ít nhất ba biến kiểm soát cụ thể (cùng loài, cùng tuổi lá, cùng vị trí trên cây), nêu cỡ mẫu và cách chọn mẫu ngẫu nhiên. Phần phân tích: dùng kiểm định t hai mẫu độc lập vì so trung bình hai nhóm với dữ liệu liên tục; bậc tự do bằng tổng hai cỡ mẫu trừ 2; so t tính được với giá trị tới hạn ở mức 0,05. Phần đánh giá phải nêu hạn chế thật (cỡ mẫu nhỏ, biến gây nhiễu chưa kiểm soát) chứ không viết chung chung."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Không có Data Booklet riêng cho 9700; các công thức toán và thống kê được in ngay trong đề, và CHỈ ở mức A Level (Paper 4 và Paper 5)",
+        "Mathematical formulae in kèm - Hardy-Weinberg: p + q = 1 và p^2 + 2pq + q^2 = 1",
+        "Mathematical formulae in kèm - chỉ số Lincoln để ước lượng kích thước quần thể bằng phương pháp bắt - đánh dấu - thả - bắt lại",
+        "Mathematical formulae in kèm - chỉ số đa dạng Simpson D",
+        "Mathematical formulae in kèm - kiểm định chi bình phương, tổng của (O trừ E) bình phương chia E",
+        "Mathematical formulae in kèm - độ lệch chuẩn mẫu s (chia n trừ 1) và sai số chuẩn SE bằng s chia căn n",
+        "Mathematical formulae in kèm - khoảng tin cậy 95% xấp xỉ bằng trung bình cộng trừ hai lần sai số chuẩn",
+        "Mathematical formulae in kèm - kiểm định t hai mẫu độc lập, hệ số tương quan tuyến tính Pearson r, hệ số tương quan hạng Spearman rs",
+        "Bảng giá trị tới hạn của kiểm định t và chi bình phương được cấp khi câu hỏi yêu cầu",
+        "Ở AS Level (Paper 1, 2, 3) KHÔNG có bảng công thức - mọi công thức định lượng ở mức AS phải thuộc",
+        "Máy tính khoa học tự mang, cần có phím độ lệch chuẩn mẫu và độ lệch chuẩn tổng thể riêng biệt"
+      ],
+      "formulas_must_memorize": [
+        "biology.thpt.dinh-luong-te-bao.do-phong-dai-i-am",
+        "biology.thpt.dinh-luong-te-bao.chuan-hoa-thi-truong-do",
+        "biology.thpt.dinh-luong-te-bao.doi-don-vi-do-dai-hien-vi",
+        "biology.thpt.dinh-luong-te-bao.do-phong-dai-tu-thanh-ti-le",
+        "biology.thpt.dinh-luong-te-bao.chi-so-phan-bao",
+        "biology.thpt.dinh-luong-te-bao.phan-tram-thay-doi",
+        "biology.thpt.van-chuyen-chuyen-hoa.dinh-luat-fick-a-level",
+        "biology.thpt.van-chuyen-chuyen-hoa.km-tai-nua-vmax",
+        "biology.thpt.van-chuyen-chuyen-hoa.phan-biet-uc-che-canh-tranh",
+        "biology.thpt.van-chuyen-chuyen-hoa.he-so-nhiet-q10-quoc-te",
+        "biology.thpt.van-chuyen-chuyen-hoa.he-so-ho-hap-tu-may-do-ho-hap",
+        "biology.thpt.van-chuyen-chuyen-hoa.pha-loang-dung-dich-civi",
+        "biology.thpt.van-chuyen-chuyen-hoa.he-so-rf-sac-to-quang-hop",
+        "biology.thpt.van-chuyen-chuyen-hoa.toc-do-ban-dau-phan-ung-enzyme",
+        "biology.thpt.van-chuyen-chuyen-hoa.the-nuoc-mo-thuc-vat-tu-do-thi",
+        "biology.thpt.sinh-li-do-luong.hieu-ung-bohr-va-p50",
+        "biology.thpt.sinh-li-do-luong.phan-tram-bao-hoa-hemoglobin",
+        "biology.thpt.di-truyen-quan-the.dinh-luat-hardy-weinberg",
+        "biology.thpt.di-truyen-quan-the.dieu-kien-hardy-weinberg",
+        "biology.thpt.di-truyen-intl.kiem-dinh-chi-binh-phuong-ti-le-mendel",
+        "biology.thpt.quy-luat-di-truyen.tan-so-hoan-vi-gen",
+        "biology.thpt.quy-luat-di-truyen.khoang-cach-ban-do-di-truyen",
+        "biology.thpt.quy-luat-di-truyen.tuong-tac-bo-sung-9-3-3-1",
+        "biology.thpt.sinh-thai-intl.chi-so-simpson-nghich-dao",
+        "biology.thpt.sinh-thai-intl.chi-so-lincoln-ib",
+        "biology.thpt.thong-ke-sinh-hoc-intl.kiem-dinh-t-a-level",
+        "biology.thpt.thong-ke-sinh-hoc-intl.khoang-tin-cay-95-hai-sai-so-chuan",
+        "biology.thpt.thong-ke-sinh-hoc-intl.thanh-sai-so-va-cach-doc",
+        "biology.thpt.thong-ke-sinh-hoc-intl.bac-tu-do-kiem-dinh-t",
+        "biology.thpt.vi-sinh-vat.so-te-bao-sau-n-lan-phan-chia"
+      ],
+      "scoring": {
+        "description": "Ba mục tiêu đánh giá: AO1 Knowledge and understanding, AO2 Handling, applying and evaluating information, AO3 Experimental skills and investigations. Paper 3 và Paper 5 chấm 100% AO3. Mark scheme sinh học là danh sách các marking point rời rạc: mỗi mark tương ứng một ý cụ thể, thường kèm cụm từ bắt buộc và các cách diễn đạt được chấp nhận. Nhiều mark scheme có ký hiệu R (reject - từ hoặc cụm bị loại thẳng, ví dụ dùng 'tiêu diệt enzyme' thay cho 'biến tính enzyme') và A (accept - biến thể được chấp nhận). Câu tính toán có ecf giữa các bước. Đơn vị và số chữ số có nghĩa được chấm trực tiếp trong các câu định lượng; riêng độ phóng đại là tỉ số nên không được gắn đơn vị. Ở Paper 3, các nhóm kỹ năng được phân bổ mark theo khoảng: Manipulation, measurement and observation 15-17 marks; Presentation of data and observations 11-13 marks; Analysis, conclusions and evaluation 11-13 marks. Ở Paper 5, Planning 14-16 marks và Analysis, conclusions and evaluation 14-16 marks.",
+        "scale": "A*-E (A Level); a-e (AS Level)",
+        "raw_to_scaled": "Raw mark từng component (40, 60, 40, 100, 30) quy về percentage uniform mark theo ngưỡng của đúng kỳ và đúng mã component, rồi tổng hợp theo trọng số 15.5 / 23 / 11.5 / 38.5 / 11.5. Ngưỡng PUM tổng: A* = 90, A = 80, B = 70, C = 60, D = 50, E = 40. Grade A* chỉ tồn tại ở mức syllabus, không có ở mức component. Với 9700, ngưỡng raw mark grade A của Paper 4 thường nằm trong khoảng 60-70% và của Paper 1 thường cao hơn vì trắc nghiệm ít phân hoá; luôn tra bảng grade threshold của đúng kỳ thay vì áp một mốc cố định.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Paper 1: 40 câu trong 75 phút, gần 2 phút mỗi câu - rộng rãi hơn nhiều môn khác. Dùng phần dư để đọc kỹ bảng và đồ thị thay vì đoán nhanh; không bỏ trống câu nào vì không có điểm trừ.",
+        "Paper 4: 100 mark trong 120 phút. Câu di truyền và câu quang hợp - hô hấp thường dài nhất; xác định chúng ngay từ đầu và phân bổ 15-20 phút cho mỗi câu.",
+        "Học thuộc bảng command word: State và Name chỉ cần một từ hoặc một cụm; Describe là mô tả xu hướng hoặc quá trình; Explain là nêu nguyên nhân; Suggest là vận dụng vào tình huống mới có nhiều đáp án hợp lý; Compare phải nêu cả điểm giống và điểm khác.",
+        "Với câu Compare, viết theo cặp đối chiếu trực tiếp trong cùng một câu ('trong khi A thì B'), không viết hai đoạn riêng biệt - mark scheme yêu cầu sự đối chiếu tường minh.",
+        "Dùng thuật ngữ sinh học chính xác thay cho từ thông thường: 'biến tính' chứ không phải 'chết' hay 'hỏng'; 'khuếch tán thuận hoá' chứ không phải 'đi qua nhanh hơn'; nhiều mark scheme loại thẳng từ sai.",
+        "Khi đọc đồ thị, luôn trích số liệu cụ thể kèm đơn vị vào câu trả lời ('tăng từ 12 lên 45 đơn vị trong 20 phút đầu'); câu mô tả xu hướng có mark riêng cho việc dùng số liệu.",
+        "Trong Paper 3, đọc hết đề và lập kế hoạch pha dung dịch trước khi động vào dụng cụ; bài thẩm thấu và bài enzyme cần thời gian ủ cố định nên phải khởi động sớm rồi làm việc khác trong lúc chờ.",
+        "Trong Paper 3, luôn chọn ít nhất năm giá trị của biến độc lập trải đều toàn khoảng và ghi rõ số lần lặp; đây là điểm chấm trực tiếp trong nhóm 'decisions relating to measurements'.",
+        "Trong Paper 3, hình vẽ sinh học phải dùng nét liền mảnh, không tô bóng, không gạch chéo; nhãn viết ngoài hình bằng đường kẻ thẳng không cắt nhau và kèm thanh tỉ lệ hoặc độ phóng đại.",
+        "Trong Paper 5, chọn kiểm định thống kê theo dạng dữ liệu: chi bình phương cho tần số và tỉ lệ, kiểm định t cho so sánh hai trung bình, Spearman cho tương quan hạng, Pearson cho tương quan tuyến tính của dữ liệu liên tục.",
+        "Trong Paper 5, phần đánh giá luôn phải có ba thành phần: điểm hạn chế cụ thể, ảnh hưởng của nó tới kết luận, và cách khắc phục khả thi; thiếu một thành phần là mất mark.",
+        "Lập bảng tổng hợp các thí nghiệm thực hành chuẩn của syllabus (thẩm thấu khoai tây, enzyme catalase, sắc kí sắc tố, potometer, máy đo hô hấp, đếm khí khổng, buồng đếm huyết cầu) kèm biến, cách đo và nguồn sai số điển hình."
+      ],
+      "common_traps": [
+        "Trả lời câu Explain bằng cách mô tả lại đồ thị thay vì nêu nguyên nhân sinh học; đây là lỗi mất mark phổ biến nhất của 9700.",
+        "Dùng từ bị mark scheme loại thẳng: nói enzyme 'bị giết' hoặc 'bị phá huỷ' thay vì 'bị biến tính'; nói màng 'hút' chất tan thay vì mô tả gradient nồng độ.",
+        "Nhầm chiều thế nước: nước di chuyển từ nơi có thế nước CAO (ít âm hơn) sang nơi có thế nước THẤP (âm hơn); đảo chiều là sai toàn bộ bài thẩm thấu.",
+        "Nhầm giữa thẩm thấu, khuếch tán thuận hoá và vận chuyển chủ động khi giải thích; chỉ vận chuyển chủ động cần ATP và đi ngược gradient.",
+        "Trong bài hô hấp và quang hợp, nhầm vị trí diễn ra từng giai đoạn (đường phân ở tế bào chất, chu trình Krebs ở chất nền ti thể, chuỗi vận chuyển electron ở màng trong ti thể; pha sáng ở màng thylakoid, chu trình Calvin ở chất nền lục lạp).",
+        "Nhầm giữa số nhiễm sắc thể và số phân tử DNA khi mô tả nguyên phân, giảm phân; và nhầm thời điểm nhiễm sắc thể chị em tách nhau (kì sau nguyên phân và kì sau giảm phân II, không phải giảm phân I).",
+        "Trong Hardy-Weinberg, dùng tần số kiểu hình lặn làm tần số allele lặn; phải lấy căn bậc hai của tần số kiểu hình lặn mới ra q.",
+        "Trong kiểm định chi bình phương, tính tần số kỳ vọng từ số tròn giả định thay vì từ tổng số cá thể thực tế; và tính sai bậc tự do. Lưu ý syllabus nêu rõ công thức tính bậc tự do KHÔNG được cấp trong mục Mathematical formulae, dù công thức chi bình phương và t thì có - phải tự thuộc quy tắc bậc tự do của từng kiểm định.",
+        "Kết luận 'không có khác biệt' khi chi bình phương nhỏ hơn giá trị tới hạn; cách diễn đạt đúng là không có bằng chứng để bác bỏ giả thuyết không, tức chênh lệch có thể do ngẫu nhiên.",
+        "Trong bài hiển vi, quên đổi đơn vị trước khi chia (milimet với micromet, micromet với nanomet) - đây là lỗi mất mark nhiều nhất trong nhóm câu định lượng.",
+        "Gắn đơn vị cho độ phóng đại; độ phóng đại là tỉ số hai độ dài nên không có đơn vị.",
+        "Trong Paper 3, chọn ít hơn năm giá trị của biến độc lập, hoặc để các giá trị dồn về một đầu khoảng, hoặc không lặp lại phép đo.",
+        "Trong Paper 3, tô bóng hoặc gạch chéo hình vẽ sinh học, hoặc vẽ nét đôi mờ; syllabus yêu cầu nét liền đơn và không tô bóng.",
+        "Trong Paper 5, viết biến kiểm soát chung chung như 'giữ mọi thứ khác không đổi' thay vì liệt kê biến cụ thể kèm cách giữ chúng không đổi.",
+        "Trong Paper 5, chọn kiểm định t cho dữ liệu tần số (đáng lẽ là chi bình phương) hoặc chọn chi bình phương cho so sánh hai trung bình; chọn sai kiểm định làm mất trọn phần phân tích.",
+        "Đọc thanh sai số sai chiều: hai thanh sai số KHÔNG chồng lấn là dấu hiệu chênh lệch có thể có ý nghĩa; chồng lấn nhiều là dấu hiệu chênh lệch có thể do ngẫu nhiên - không phải ngược lại."
+      ],
+      "tags": [
+        "a-level",
+        "cambridge",
+        "9700",
+        "sinh-hoc",
+        "thuc-hanh",
+        "thpt",
+        "quoc-te"
+      ],
+      "sources": [
+        "Cambridge International AS & A Level Biology 9700 syllabus for 2025, 2026 and 2027 (cambridgeinternational.org/Images/664560-2025-2027-syllabus.pdf)",
+        "Cambridge International, A guide to percentage uniform marks"
+      ]
+    },
+    {
+      "id": "exam.edexcel-alevel-mathematics",
+      "name": "Pearson Edexcel A Level Mathematics (9MA0)",
+      "provider": "Pearson Edexcel",
+      "subject": "math",
+      "curriculum": [
+        "a-level"
+      ],
+      "level": "thpt",
+      "overview": "Pearson Edexcel Level 3 Advanced GCE in Mathematics, mã 9MA0, là kỳ thi toán A Level của Anh theo khung tuyến tính (linear) áp dụng từ kỳ thi đầu tiên năm 2018 và vẫn hiệu lực tới nay theo bản đặc tả Issue 4 (tháng 2 năm 2020). Khác với hệ modular cũ, toàn bộ ba paper phải thi trong cùng một kỳ tháng 5-6 của một năm, không tích luỹ theo unit. Nội dung cố định 100%: hai paper Pure Mathematics và một paper Statistics and Mechanics; không có lựa chọn tổ hợp. Điểm đặc trưng so với Cambridge là bắt buộc dùng máy tính có hàm lặp và hàm phân phối thống kê, và có một large data set do Pearson công bố trước mà thí sinh phải làm quen. Song song còn tồn tại bản International A Level Mathematics (mã YMA01 cho A Level, XMA01 cho AS) dùng ở ngoài Anh: hệ modular sáu unit, mỗi unit 1 giờ 30 phút, 75 marks và chiếm 16,67% - phù hợp với học sinh muốn thi rải và có cơ hội thi lại từng unit.",
+      "sections": [
+        {
+          "name": "Paper 1 - Pure Mathematics 1 (mã 9MA0/01)",
+          "question_count": "12-16",
+          "duration_minutes": 120,
+          "weight_percent": 33.33,
+          "calculator": "cho-phep",
+          "note": "100 marks, làm toàn bộ. Có thể hỏi bất kỳ chủ đề nào trong toàn bộ nội dung Pure Mathematics - không chia phạm vi với Paper 2. Máy tính bắt buộc phải có hàm lặp và hàm phân phối thống kê; cấm máy có CAS, đạo hàm hoặc tích phân ký hiệu."
+        },
+        {
+          "name": "Paper 2 - Pure Mathematics 2 (mã 9MA0/02)",
+          "question_count": "12-16",
+          "duration_minutes": 120,
+          "weight_percent": 33.33,
+          "calculator": "cho-phep",
+          "note": "100 marks, làm toàn bộ. Phạm vi giống hệt Paper 1: bất kỳ chủ đề nào của Pure Mathematics. Thực tế đề Paper 2 thường nặng hơn về tích phân, phương trình vi phân, tham số và vectơ, nhưng đây là xu hướng chứ không phải quy định."
+        },
+        {
+          "name": "Paper 3 - Statistics and Mechanics (mã 9MA0/03)",
+          "question_count": "10-14",
+          "duration_minutes": 120,
+          "weight_percent": 33.33,
+          "calculator": "cho-phep",
+          "note": "100 marks, chia hai phần thi liên tục trong cùng 2 giờ: Section A Statistics (50 marks) và Section B Mechanics (50 marks). Thí sinh tự phân bổ thời gian giữa hai phần. Section A có thể dùng large data set do Pearson công bố."
+        }
+      ],
+      "topic_weights": {
+        "Pure 1 - Proof": 2.5,
+        "Pure 2 - Algebra and functions": 11,
+        "Pure 3 - Coordinate geometry in the (x, y) plane": 6,
+        "Pure 4 - Sequences and series": 6,
+        "Pure 5 - Trigonometry": 10,
+        "Pure 6 - Exponentials and logarithms": 5,
+        "Pure 7 - Differentiation": 9.5,
+        "Pure 8 - Integration": 9.5,
+        "Pure 9 - Numerical methods": 3,
+        "Pure 10 - Vectors": 4,
+        "Statistics 1 - Statistical sampling": 1.5,
+        "Statistics 2 - Data presentation and interpretation (gồm large data set)": 4,
+        "Statistics 3 - Probability": 3.5,
+        "Statistics 4 - Statistical distributions (nhị thức và chuẩn)": 4,
+        "Statistics 5 - Statistical hypothesis testing": 3.5,
+        "Mechanics 6 - Quantities and units in mechanics": 1,
+        "Mechanics 7 - Kinematics": 5,
+        "Mechanics 8 - Forces and Newton's laws": 7.5,
+        "Mechanics 9 - Moments": 3
+      },
+      "question_types": [
+        {
+          "name": "Câu ngắn 3-5 mark mở đầu đề",
+          "description": "Bốn đến sáu câu đầu của Paper 1 và Paper 2 là kỹ thuật thuần tuý, chủ yếu chấm AO1 (use and apply standard techniques). Đây là phần phải lấy trọn vì không có tình huống bất ngờ.",
+          "example_prompt": "Đề mô phỏng tự soạn: Cho f(x) = (3x - 1)/(x + 2), x khác -2. (a) Tìm f^(-1)(x) và nêu miền xác định của nó. [4] (b) Giải phương trình f(x) = 2. [2]",
+          "approach": "Với hàm ngược, đặt y bằng biểu thức, giải x theo y rồi đổi ký hiệu; miền xác định của hàm ngược bằng tập giá trị của hàm gốc. Ghi rõ điều kiện loại trừ. Làm nhanh nhưng vẫn viết đủ hai đến ba dòng để giữ method mark."
+        },
+        {
+          "name": "Câu problem solving có ngữ cảnh (AO3) và câu mô hình hoá",
+          "description": "Edexcel dành 23-27% tổng điểm cho AO3 (solve problems within mathematics and in other contexts) và nhấn ba overarching theme: lập luận và chứng minh, giải quyết vấn đề, mô hình hoá. Câu mô hình hoá luôn có ý cuối yêu cầu bình luận về mô hình - ý này chỉ 1-2 mark nhưng rất nhiều thí sinh bỏ trống.",
+          "example_prompt": "Đề mô phỏng tự soạn: Nhiệt độ T (độ C) của một cốc nước sau t phút được mô hình hoá bởi T = 20 + 65 e^(-0,08 t). (a) Nêu nhiệt độ ban đầu của nước. [1] (b) Tìm thời gian để nước nguội xuống 40 độ C, làm tròn tới phút gần nhất. [4] (c) Nêu giới hạn của T khi t rất lớn và giải thích ý nghĩa vật lí. [2] (d) Nêu một hạn chế của mô hình này. [1]",
+          "approach": "Ý (d) luôn cần một nhận xét cụ thể gắn với ngữ cảnh (ví dụ mô hình giả định nhiệt độ phòng không đổi, hoặc không tính tới bay hơi), không được viết chung chung kiểu 'mô hình không chính xác'. Ý (c) phải nêu cả giá trị giới hạn lẫn ý nghĩa (nhiệt độ phòng)."
+        },
+        {
+          "name": "Câu chứng minh (proof) gồm phản chứng và phản ví dụ",
+          "description": "Nội dung Proof của Edexcel gồm chứng minh trực tiếp, chứng minh bằng phản ví dụ, chứng minh phản chứng (bao gồm chứng minh căn 2 vô tỉ và chứng minh có vô hạn số nguyên tố) và chứng minh đồng nhất thức. Mark scheme chấm chặt cấu trúc lập luận, không chỉ kết quả.",
+          "example_prompt": "Đề mô phỏng tự soạn: (a) Chứng minh rằng nếu n là số nguyên lẻ thì n^2 - 1 chia hết cho 8. [4] (b) Nêu một phản ví dụ chứng tỏ mệnh đề 'nếu n^2 chia hết cho 4 thì n chia hết cho 4' là sai. [1]",
+          "approach": "Với chứng minh trực tiếp, đặt n = 2k + 1 ngay dòng đầu và nêu rõ k là số nguyên. Kết thúc bằng một câu kết luận đầy đủ. Với phản ví dụ, chỉ cần một giá trị cụ thể kèm phép kiểm tra ngắn (n = 2 vì 4 chia hết cho 4 nhưng 2 không)."
+        },
+        {
+          "name": "Câu thống kê dùng large data set (Section A Paper 3)",
+          "description": "Pearson công bố trước một bộ dữ liệu lớn (large data set) về thời tiết; đề có thể hỏi trực tiếp về đặc điểm của bộ dữ liệu, về đơn vị, về giá trị bất thường hoặc yêu cầu nhận xét dựa trên hiểu biết bối cảnh mà không cần tra số liệu trong phòng thi.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một mẫu ngẫu nhiên lấy từ large data set cho lượng mưa hằng ngày tại một trạm trong tháng 6. (a) Giải thích vì sao một số ngày được ghi là 'tr' thay vì một giá trị số, và nêu cách xử lý các giá trị này khi tính trung bình. [2] (b) Vẽ biểu đồ hộp cho mẫu và xác định giá trị ngoại lai theo quy tắc 1,5 lần khoảng tứ phân vị. [5] (c) Nhận xét về tính đối xứng của phân bố. [2]",
+          "approach": "Phải làm quen với cấu trúc, đơn vị và các ký hiệu đặc biệt của large data set trước kỳ thi vì đề giả định thí sinh đã biết. Với câu ngoại lai, ghi rõ hai hàng rào tính được trước khi kết luận điểm nào là ngoại lai. Câu nhận xét phải gắn với hình dạng biểu đồ và vị trí trung vị trong hộp."
+        },
+        {
+          "name": "Câu cơ học vectơ và bài chuyển động có gia tốc biến thiên (Section B Paper 3)",
+          "description": "Mechanics của Edexcel dùng nhiều ký hiệu vectơ i, j và yêu cầu vi phân, tích phân vectơ vị trí theo thời gian; ngoài ra có bài mô men lực với thanh không đồng chất và bài hệ hai vật nối dây.",
+          "example_prompt": "Đề mô phỏng tự soạn: Một hạt P chuyển động trong mặt phẳng với vectơ vị trí r = (t^3 - 3t) i + (2t^2 + 1) j mét, t tính bằng giây. (a) Tìm vectơ vận tốc và vectơ gia tốc của P tại thời điểm t. [3] (b) Tìm thời điểm mà vận tốc của P vuông góc với vectơ i. [3] (c) Biết khối lượng của P là 0,5 kg, tìm độ lớn của lực tác dụng lên P tại t = 2 s. [3]",
+          "approach": "Lấy đạo hàm từng thành phần riêng biệt. Điều kiện vuông góc với i nghĩa là thành phần theo i của vận tốc bằng 0. Ở ý cuối, tính vectơ gia tốc tại t = 2 rồi nhân khối lượng, sau đó lấy độ lớn bằng căn tổng bình phương hai thành phần; ghi đáp số kèm đơn vị newton."
+        }
+      ],
+      "formula_sheet_provided": [
+        "Booklet Mathematical Formulae and Statistical Tables - phát cho cả ba paper. Booklet này dùng chung cho AS/A Level Mathematics và AS/A Level Further Mathematics, và được sắp xếp THEO TỪNG CHỨNG CHỈ: thí sinh 9MA0 chỉ được dùng nội dung ở hai mục 'AS Mathematics' và 'A Level Mathematics', không phải mọi công thức in trong booklet.",
+        "Booklet mục A Level Mathematics - Pure: diện tích mặt cầu và mặt nón; tổng cấp số cộng; khai triển nhị thức với n nguyên dương và (1+x)^n với n hữu tỉ; đổi cơ số logarit; tổng cấp số nhân hữu hạn và vô hạn; công thức cộng và công thức biến đổi tổng - tích cho sin và cos; xấp xỉ góc nhỏ; định nghĩa đạo hàm bằng giới hạn; đạo hàm của tan kx, sec kx, cot kx, cosec kx và quy tắc thương; nguyên hàm của sec^2 kx, tan kx, cot kx, cosec kx, sec kx và nguyên hàm từng phần; quy tắc hình thang và phép lặp Newton-Raphson. Booklet KHÔNG có phép thế t = tan(x/2) trong phần A Level Mathematics.",
+        "Booklet mục A Level Mathematics - Statistics: khoảng tứ phân vị, Sxx và độ lệch chuẩn, trung bình và phương sai của phân phối nhị thức, và phân phối mẫu của trung bình dạng Z. Bảng thống kê được cấp cho 9MA0 gồm bảng nhị thức tích luỹ, bảng điểm phần trăm của phân phối chuẩn, bảng giá trị tới hạn của hệ số tương quan tích mô men, và bảng số ngẫu nhiên. Booklet KHÔNG có Sxy, hiệp phương sai hay công thức hệ số tương quan trong phần A Level Mathematics (những mục đó thuộc Further Mathematics).",
+        "Booklet mục A Level Mathematics - Mechanics: CHỈ có năm công thức chuyển động biến đổi đều v = u + at, s = ut + at^2/2, s = vt - at^2/2, v^2 = u^2 + 2as, s = (u+v)t/2. Các kết quả về khối tâm của vật đồng chất nằm ở mục Further Mathematics của booklet nên KHÔNG dùng được cho 9MA0.",
+        "Appendix 1 của đặc tả liệt kê các công thức thí sinh PHẢI THUỘC và không xuất hiện trong booklet: công thức nghiệm phương trình bậc hai, luật luỹ thừa, luật logarit, phương trình đường thẳng và điều kiện vuông góc, số hạng tổng quát của cấp số cộng và cấp số nhân, định lí sin, định lí cosin, công thức diện tích tam giác, các đồng nhất thức Pythagore, công thức nhân đôi, chu vi và diện tích hình tròn, định lí Pythagoras, diện tích hình thang, thể tích lăng trụ, độ dài cung và diện tích hình quạt, toàn bộ bảng đạo hàm và nguyên hàm cơ bản, độ lớn vectơ, công thức trung bình, biến chuẩn tắc Z, trọng lượng bằng khối lượng nhân g, ma sát F nhỏ hơn hoặc bằng mu R, định luật II Newton F = ma, và các định nghĩa vận tốc, gia tốc dạng đạo hàm",
+        "Máy tính BẮT BUỘC phải có hàm lặp (iterative function) và khả năng tính thống kê tóm tắt cùng xác suất của các phân phối chuẩn tắc; cấm máy dịch ngôn ngữ, máy có CAS, đạo hàm hoặc tích phân ký hiệu, máy giao tiếp được với máy khác hoặc internet, và máy có lưu trữ thông tin truy xuất được"
+      ],
+      "formulas_must_memorize": [
+        "math.thpt.mu-logarit.tinh-chat-luy-thua",
+        "math.thpt.mu-logarit.logarit-cua-tich",
+        "math.thpt.mu-logarit.logarit-cua-thuong",
+        "math.thpt.mu-logarit.logarit-cua-luy-thua",
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-nhan-so-hang-tong-quat",
+        "math.thpt.he-thuc-luong.dinh-li-sin",
+        "math.thpt.he-thuc-luong.dinh-li-cosin",
+        "math.thpt.he-thuc-luong.dien-tich-hai-canh-sin",
+        "math.thpt.luong-giac.he-thuc-luong-giac-co-ban",
+        "math.thpt.luong-giac.he-thuc-tan-cos",
+        "math.thpt.luong-giac.he-thuc-cot-sin",
+        "math.thpt.luong-giac.nhan-doi-sin",
+        "math.thpt.luong-giac.nhan-doi-cos",
+        "math.thpt.luong-giac.nhan-doi-tan",
+        "math.thpt.luong-giac.do-dai-cung-tron",
+        "math.thpt.dao-ham.dao-ham-luy-thua",
+        "math.thpt.dao-ham.dao-ham-sin",
+        "math.thpt.dao-ham.dao-ham-cos",
+        "math.thpt.dao-ham.dao-ham-e-mu-x",
+        "math.thpt.dao-ham.dao-ham-ln-x",
+        "math.thpt.dao-ham.dao-ham-cua-tich",
+        "math.thpt.dao-ham.dao-ham-cua-thuong",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-luy-thua",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-mot-tren-x",
+        "math.thpt.mo-ta-du-lieu.diem-z-tham-so",
+        "math.thpt.thong-ke.so-trung-binh-co-tan-so",
+        "physics.thpt.intl-dong-luc-hoc.ma-sat-nghi-bat-dang-thuc",
+        "physics.thpt.intl-dong-luc-hoc.newton-ii-theo-thanh-phan"
+      ],
+      "scoring": {
+        "description": "Ba mục tiêu đánh giá với tỉ trọng toàn bộ A Level: AO1 Use and apply standard techniques 48-52%, AO2 Reason, interpret and communicate mathematically 23-27%, AO3 Solve problems within mathematics and in other contexts 23-27%. Riêng Paper 3 có tỉ trọng AO3 cao hơn hai paper Pure (10,33-11,67% so với 6,33-7,67% của tổng chứng chỉ). Mark scheme Edexcel dùng ba loại mark: M (method mark - cho phương pháp đúng, vẫn được cho khi có sai số học), A (accuracy mark - phụ thuộc M tương ứng), B (unconditional accuracy mark - độc lập, không phụ thuộc mark nào). Các ký hiệu thường gặp: bod (benefit of doubt), ft (follow through), cao (correct answer only), cso (correct solution only), isw (ignore subsequent working), awrt (anything which rounds to), oe (or equivalent), dep (dependent), dM1 (method mark phụ thuộc). Với câu 'show that', mark scheme thường ghi cso, tức mọi bước phải đúng mới được mark cuối. Đáp số dạng awrt cho phép sai số làm tròn nhỏ, còn cao thì không.",
+        "scale": "A*-E; dưới E là U (Unclassified)",
+        "raw_to_scaled": "Vì 9MA0 là chứng chỉ tuyến tính không có unit, KHÔNG dùng Uniform Mark Scale: điểm là tổng raw mark của ba paper trên thang 300, và grade được cắt trực tiếp trên thang 300 bằng ngưỡng do Pearson công bố sau mỗi kỳ. Ví dụ kỳ June 2025: A* = 258/300, A = 214/300, B = 178/300. Ngưỡng thay đổi theo từng kỳ tuỳ độ khó của đề. Pearson cũng công bố notional component grade boundaries cho từng paper để trường theo dõi, nhưng chúng chỉ mang tính tham khảo và không quyết định grade cuối. Điều này khác căn bản với Cambridge: thí sinh Edexcel có thể bù điểm giữa ba paper một cách trực tiếp trên thang tổng, và một paper yếu vẫn cứu được nếu hai paper còn lại đủ cao. Với bản International A Level (YMA01) hệ modular thì ngược lại: mỗi unit có UMS riêng, tổng UMS 600, ngưỡng A* thường là 480 UMS kèm điều kiện đạt tối thiểu 180/200 UMS ở hai unit C34 - cần kiểm tra quy tắc kết hợp hiện hành của Pearson trước khi lên kế hoạch thi.",
+        "penalty_for_wrong": false
+      },
+      "strategies": [
+        "Mỗi paper 100 mark trong 120 phút, tức 1,2 phút mỗi mark. Vòng một làm hết các câu ngắn trong 60 phút, dành 45 phút cho các câu dài cuối đề, 15 phút cuối soát lại - đặc biệt soát các ý bình luận mô hình thường bị bỏ trống.",
+        "Với Paper 3, tự đặt mốc cứng: rời Section A sau 55-60 phút dù chưa xong, vì Section B Mechanics có nhiều mark dễ hơn ở các câu đầu.",
+        "Khai thác tối đa máy tính được phép: dùng hàm phân phối nhị thức và chuẩn thay vì tra bảng (nhanh và chính xác hơn), dùng hàm lặp cho câu Newton-Raphson, dùng chức năng thống kê tóm tắt cho câu tính trung bình và độ lệch chuẩn. Nhưng vẫn phải viết biểu thức đang tính để giữ method mark.",
+        "Làm quen large data set từ đầu năm học: biết các cột, đơn vị, ký hiệu đặc biệt và các đặc điểm nổi bật của từng trạm; câu về large data set thường 2-4 mark và là điểm cho không nếu đã ôn.",
+        "Ghi đáp số theo đúng độ chính xác đề yêu cầu; nếu đề không nói gì thì để 3 chữ số có nghĩa. Mark scheme dùng awrt nên đáp số hơi lệch do làm tròn vẫn được chấp nhận, nhưng lệch quá một đơn vị ở chữ số cuối thì mất mark.",
+        "Với câu 'show that' hoặc câu có ghi cso trong mark scheme, phải viết đủ mọi bước; đây là loại câu Edexcel chấm chặt nhất.",
+        "Trong Mechanics, luôn vẽ sơ đồ lực và ghi rõ chiều dương đã chọn trước khi lập phương trình; và nhớ Edexcel dùng g = 9,8 m/s^2 (khác Cambridge dùng 9,81) trừ khi đề nói khác.",
+        "Với câu vectơ cơ học, viết vận tốc và gia tốc dưới dạng thành phần i, j riêng biệt rồi mới xử lý; trộn lẫn vectơ với độ lớn là nguồn sai lầm chính.",
+        "Trong Statistics, luôn viết H0 và H1 bằng ký hiệu tham số, nêu mức ý nghĩa, tính giá trị p hoặc miền tới hạn, rồi kết luận hai lớp: kết luận thống kê và kết luận theo ngữ cảnh. Thiếu lớp thứ hai là mất 1 mark cố định.",
+        "Luyện đề theo cả ba paper trong cùng một tuần thay vì học tách rời; do phạm vi Paper 1 và Paper 2 trùng nhau hoàn toàn, phải giữ toàn bộ nội dung Pure ở trạng thái sẵn sàng suốt kỳ thi.",
+        "Nếu chọn bản International A Level (YMA01) hệ modular, tận dụng khả năng thi rải theo unit và thi lại từng unit; nhưng phải kiểm tra quy tắc tổng hợp UMS và điều kiện riêng cho grade A* của Pearson trước khi lên lịch."
+      ],
+      "common_traps": [
+        "Dùng nhầm phần khác của booklet: Mathematical Formulae and Statistical Tables sắp xếp theo chứng chỉ, nên công thức khối tâm, hiệp phương sai hay hệ số tương quan in trong booklet là của Further Mathematics chứ không phải nội dung được hỏi ở 9MA0. Ngược lại, năm công thức suvat thì CÓ sẵn trong booklet, còn F = ma, F <= mu.R và trọng lượng = mg thì Appendix 1 xếp vào nhóm phải thuộc.",
+        "Bỏ trống ý cuối dạng 'nêu một hạn chế của mô hình' hoặc 'bình luận về giả thiết'; ý này chỉ 1-2 mark nhưng xuất hiện trong nhiều câu và cộng dồn tới 5-8 mark toàn đề.",
+        "Dùng máy tính giải phương trình hoặc tính tích phân rồi chỉ ghi đáp số; Edexcel cho method mark cho biểu thức đúng nên bỏ qua bước viết là tự bỏ điểm.",
+        "Dùng g = 10 hoặc g = 9,81 trong Mechanics; Edexcel quy ước g = 9,8 m/s^2 và đáp số theo mark scheme tính theo giá trị này.",
+        "Áp dụng công thức suvat cho chuyển động có gia tốc biến thiên; khi gia tốc phụ thuộc thời gian phải dùng vi phân và tích phân, không dùng suvat.",
+        "Trong bài mô men, quên trọng lượng của thanh hoặc đặt sai vị trí trọng tâm khi thanh không đồng chất.",
+        "Trong bài hệ hai vật nối dây qua ròng rọc, dùng chung một phương trình cho cả hệ mà quên rằng lực căng là nội lực; phải lập phương trình riêng cho từng vật khi đề hỏi lực căng.",
+        "Trong Statistics, nhầm giữa kiểm định một phía và hai phía khi đọc đề; từ khoá 'thay đổi' hàm ý hai phía, 'tăng' hoặc 'giảm' hàm ý một phía.",
+        "Với kiểm định nhị thức, so sánh giá trị p với mức ý nghĩa nhưng quên chia đôi mức ý nghĩa khi kiểm định hai phía.",
+        "Nhầm giữa hệ số tương quan tính bằng máy và ý nghĩa của nó; r gần 1 chỉ ra quan hệ tuyến tính mạnh, không chứng minh quan hệ nhân quả - câu hỏi thường bẫy đúng chỗ này.",
+        "Trong bài xấp xỉ nhị thức bằng chuẩn, quên hiệu chỉnh liên tục hoặc áp dụng nhầm chiều (cộng hay trừ 0,5).",
+        "Trong Pure, quên hằng số tích phân hoặc quên dùng điều kiện ban đầu để tìm nó trong bài phương trình vi phân tách biến.",
+        "Trong bài tham số, quên rằng dy/dx bằng (dy/dt) chia (dx/dt) chứ không phải đạo hàm riêng lẻ; và quên kiểm tra mẫu số bằng 0 tại điểm kỳ dị.",
+        "Trong bài Newton-Raphson, không kiểm tra dấu của hàm tại hai đầu để chứng minh nghiệm tồn tại khi đề yêu cầu, hoặc dùng chế độ độ thay vì radian cho hàm lượng giác.",
+        "Trả lời số nghiệm phương trình lượng giác trong khoảng cho trước nhưng chỉ lấy nghiệm chính của máy tính; luôn phải xét đủ chu kỳ trong khoảng đề cho.",
+        "Nhầm giữa các quy ước đơn vị và ký hiệu của Edexcel với Cambridge khi luyện đề trộn hai board: đặc biệt là giá trị g, cách ký hiệu vectơ và cách trình bày kiểm định thống kê."
+      ],
+      "tags": [
+        "a-level",
+        "edexcel",
+        "pearson",
+        "9ma0",
+        "toan",
+        "thpt",
+        "quoc-te"
+      ],
+      "sources": [
+        "Pearson Edexcel Level 3 Advanced GCE in Mathematics (9MA0) Specification, Issue 4, February 2020 (qualifications.pearson.com)",
+        "Pearson Edexcel, Grade Boundaries GCE AS/A Level June 2025 (qualifications.pearson.com)",
+        "Pearson Edexcel International Advanced Level in Mathematics specification (2018), qualifications.pearson.com",
+        "Pearson Edexcel, Mathematical Formulae and Statistical Tables for AS/A Level Mathematics and Further Mathematics, Issue 1, July 2017 (qualifications.pearson.com)"
+      ]
+    }
+  ]
+}

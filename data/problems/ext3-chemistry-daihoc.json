@@ -1,0 +1,3626 @@
+{
+ "meta": {
+  "file": "ext3-chemistry-daihoc.json",
+  "subject": "chemistry",
+  "title": "Bài tập bổ sung Hoá học đại học (đợt 3): hoá lượng tử, phổ học phân tử, nhiệt động thống kê, động hoá học nâng cao, dung dịch và điện hoá nâng cao, hoá hữu cơ - vô cơ nâng cao và hoá sinh vật lí",
+  "levels": [
+   "dai-hoc"
+  ],
+  "count": 72
+ },
+ "problems": [
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0001",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt động hóa học",
+   "type": "dien-so",
+   "statement_vi": "Một hệ khí có nội năng U = 5000 J, ở áp suất p = 1.00·10^5 Pa và thể tích V = 0.0200 m^3. Tính enthalpy H của hệ (đơn vị J).",
+   "statement_en": "A gas system has internal energy U = 5000 J at pressure p = 1.00e5 Pa and volume V = 0.0200 m^3. Find the enthalpy H (in J).",
+   "answer": "H = 7000 J",
+   "answer_numeric": 7000.0,
+   "answer_unit": "J",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "Áp dụng định nghĩa enthalpy: enthalpy bằng nội năng cộng tích áp suất - thể tích.",
+     "latex": "H = U + pV"
+    },
+    {
+     "explain": "Thay số với p = 1.00·10^5 Pa và V = 0.0200 m^3 (tích pV có đơn vị J).",
+     "latex": "H = 5000 + (1.00\\times 10^{5})(0.0200) = 5000 + 2000 = 7000\\ \\mathrm{J}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-hoa-hoc.enthalpy-dinh-nghia"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "áp dụng định nghĩa enthalpy",
+    "kiểm tra đơn vị tích pV"
+   ],
+   "hints": [
+    "H = U + pV.",
+    "pV = 1e5 × 0.02 = 2000 J."
+   ],
+   "tags": [
+    "nhiet-dong-hoa-hoc",
+    "enthalpy",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0002",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt động hóa học",
+   "type": "dien-so",
+   "statement_vi": "Nung nóng 2.00 mol khí lí tưởng đơn nguyên tử (C_V,m = (3/2)R) ở thể tích không đổi từ 300 K lên 400 K. Tính biến thiên nội năng ΔU (đơn vị J). Lấy R = 8.314 J/(mol·K).",
+   "statement_en": "Heat 2.00 mol of a monatomic ideal gas (C_V,m = (3/2)R) at constant volume from 300 K to 400 K. Find ΔU (J). R = 8.314 J/(mol·K).",
+   "answer": "ΔU = 2494 J",
+   "answer_numeric": 2494.2,
+   "answer_unit": "J",
+   "tolerance": 5.0,
+   "solution_steps": [
+    {
+     "explain": "Ở đẳng tích, coi C_V hằng số thì biến thiên nội năng bằng nhiệt dung nhân độ tăng nhiệt độ.",
+     "latex": "\\Delta U = n\\,C_{V,m}\\,(T_{2}-T_{1})"
+    },
+    {
+     "explain": "Khí đơn nguyên tử có C_V,m = (3/2)R = 12.471 J/(mol·K); thay số.",
+     "latex": "\\Delta U = 2.00\\times 12.471\\times (400-300) = 2494\\ \\mathrm{J}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-hoa-hoc.nhiet-dung-dang-tich"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "dùng C_V,m của khí đơn nguyên tử",
+    "tích phân C_V khi C_V hằng số"
+   ],
+   "hints": [
+    "ΔU = n C_V,m ΔT.",
+    "C_V,m = 1.5 × 8.314."
+   ],
+   "tags": [
+    "nhiet-dong-hoa-hoc",
+    "nhiet-dung",
+    "dang-tich",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0003",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt động hóa học",
+   "type": "dien-so",
+   "statement_vi": "1.00 mol khí lí tưởng đơn nguyên tử (C_V,m = (3/2)R) dãn nở ĐOẠN NHIỆT, nhiệt độ giảm từ 400 K xuống 320 K. Tính công W mà hệ NHẬN (đơn vị J). R = 8.314 J/(mol·K).",
+   "statement_en": "1.00 mol of a monatomic ideal gas (C_V,m = (3/2)R) expands ADIABATICALLY, cooling from 400 K to 320 K. Find the work W done ON the system (J). R = 8.314.",
+   "answer": "W = -997.7 J",
+   "answer_numeric": -997.68,
+   "answer_unit": "J",
+   "tolerance": 2.0,
+   "solution_steps": [
+    {
+     "explain": "Quá trình đoạn nhiệt có Q = 0, theo nguyên lí I công hệ nhận bằng biến thiên nội năng.",
+     "latex": "Q = 0 \\Rightarrow W = \\Delta U = n\\,C_{V,m}\\,(T_{2}-T_{1})"
+    },
+    {
+     "explain": "Thay số; nhiệt độ giảm nên W âm (khí sinh công ra ngoài).",
+     "latex": "W = 1.00\\times 12.471\\times (320-400) = -997.7\\ \\mathrm{J}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-hoa-hoc.cong-doan-nhiet"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận biết Q=0 ở đoạn nhiệt",
+    "dấu của công khi khí dãn nở"
+   ],
+   "hints": [
+    "Đoạn nhiệt: W = ΔU = n C_V,m ΔT.",
+    "T giảm nên W < 0."
+   ],
+   "tags": [
+    "nhiet-dong-hoa-hoc",
+    "doan-nhiet",
+    "cong",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0004",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Nhiệt động hóa học",
+   "type": "trac-nghiem",
+   "statement_vi": "Một cấu tử i phân bố giữa hai pha α và β (cùng nhiệt độ và áp suất). Điều kiện CÂN BẰNG phân bố được biểu diễn đúng bằng biểu thức nào?",
+   "statement_en": "A component i is distributed between two phases α and β (same T and p). Which expression correctly states the equilibrium condition?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "μ_i(α) = μ_i(β)"
+    },
+    {
+     "key": "B",
+     "text": "n_i(α) = n_i(β)",
+     "why_wrong": "Số mol của cấu tử trong hai pha không cần bằng nhau khi cân bằng; đại lượng phải bằng nhau là thế hoá học."
+    },
+    {
+     "key": "C",
+     "text": "G(α) = G(β)",
+     "why_wrong": "Năng lượng Gibbs tổng của hai pha không cần bằng nhau; điều kiện đúng dùng Gibbs mol riêng phần (thế hoá học), không phải G tổng."
+    },
+    {
+     "key": "D",
+     "text": "S_i(α) = S_i(β)",
+     "why_wrong": "Entropy riêng phần bằng nhau không phải điều kiện cân bằng pha; điều kiện là thế hoá học bằng nhau."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Thế hoá học là đạo hàm riêng của G theo số mol; điều kiện cân bằng pha là thế hoá học của cấu tử bằng nhau trong mọi pha.",
+     "latex": "\\mu_{i} = \\left(\\frac{\\partial G}{\\partial n_{i}}\\right)_{T,p,n_{j\\neq i}};\\quad \\mu_{i}^{\\alpha} = \\mu_{i}^{\\beta}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-hoa-hoc.the-hoa-hoc"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhận biết điều kiện cân bằng pha theo thế hoá học"
+   ],
+   "hints": [
+    "Thế hoá học = ∂G/∂n_i.",
+    "Cân bằng pha: μ bằng nhau ở mọi pha."
+   ],
+   "tags": [
+    "nhiet-dong-hoa-hoc",
+    "the-hoa-hoc",
+    "can-bang-pha",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0005",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Động hóa học",
+   "type": "dien-so",
+   "statement_vi": "Với phản ứng N2 + 3H2 → 2NH3 trong bình thể tích không đổi, tại một thời điểm d[H2]/dt = -0.030 mol/(L·s). Tính tốc độ phản ứng v (theo định nghĩa độ chuyển hóa) (đơn vị mol/(L·s)).",
+   "statement_en": "For N2 + 3H2 → 2NH3 in a constant-volume vessel, at an instant d[H2]/dt = -0.030 mol/(L·s). Find the (extent-based) reaction rate v (mol/(L·s)).",
+   "answer": "v = 0.010 mol/(L·s)",
+   "answer_numeric": 0.01,
+   "answer_unit": "mol/(L·s)",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Tốc độ theo định nghĩa độ chuyển hóa lấy mỗi tốc độ nồng độ chia cho hệ số tỉ lượng tương ứng; hệ số của H2 là 3.",
+     "latex": "v = -\\frac{1}{3}\\frac{d[\\mathrm{H_2}]}{dt}"
+    },
+    {
+     "explain": "Thay số cho một giá trị tốc độ duy nhất, không phụ thuộc chất theo dõi.",
+     "latex": "v = -\\frac{1}{3}(-0.030) = 0.010\\ \\mathrm{mol\\,L^{-1}s^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dong-hoa-hoc.toc-do-phan-ung"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "chia tốc độ nồng độ cho hệ số tỉ lượng"
+   ],
+   "hints": [
+    "v = -(1/3) d[H2]/dt.",
+    "Hệ số của H2 là 3."
+   ],
+   "tags": [
+    "dong-hoa-hoc",
+    "toc-do-phan-ung",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0006",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Điện hóa học",
+   "type": "dien-so",
+   "statement_vi": "Dùng điện cực thủy tinh, chuẩn hóa bằng đệm pH_s = 4.00 cho sức điện động E_s = 0.180 V. Với dung dịch cần đo, E_x = 0.060 V ở 298.15 K. Tính pH_x. Dùng 2.303RT/F = 0.05917 V.",
+   "statement_en": "With a glass electrode calibrated by buffer pH_s = 4.00 giving E_s = 0.180 V, an unknown gives E_x = 0.060 V at 298.15 K. Find pH_x. Use 2.303RT/F = 0.05917 V.",
+   "answer": "pH_x ≈ 1.97",
+   "answer_numeric": 1.972,
+   "answer_unit": "",
+   "tolerance": 0.03,
+   "solution_steps": [
+    {
+     "explain": "Công thức đo pH theo điện cực thủy tinh so với dung dịch chuẩn.",
+     "latex": "\\mathrm{pH}_{x} = \\mathrm{pH}_{s} + \\frac{(E_{x}-E_{s})F}{2.303RT}"
+    },
+    {
+     "explain": "Thay số với 2.303RT/F = 0.05917 V.",
+     "latex": "\\mathrm{pH}_{x} = 4.00 + \\frac{0.060-0.180}{0.05917} = 4.00 - 2.03 = 1.97"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dien-hoa-hoc.dien-cuc-thuy-tinh"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "dùng độ dốc Nernst 0.05917 V",
+    "đo pH so với dung dịch chuẩn"
+   ],
+   "hints": [
+    "pH_x = pH_s + (E_x−E_s)/0.05917.",
+    "(0.060−0.180)/0.05917 ≈ −2.03."
+   ],
+   "tags": [
+    "dien-hoa",
+    "ph",
+    "dien-cuc-chon-loc",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0007",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hóa học phân tích",
+   "type": "dien-so",
+   "statement_vi": "Tính pH của dung dịch ammonium format HCOONH4. Cho pK_a(HCOOH) = 3.75 và pK_b(NH3) = 4.75. (pH không phụ thuộc nồng độ muối.)",
+   "statement_en": "Find the pH of an ammonium formate (HCOONH4) solution. Given pK_a(HCOOH) = 3.75 and pK_b(NH3) = 4.75. (pH is independent of salt concentration.)",
+   "answer": "pH = 6.50",
+   "answer_numeric": 6.5,
+   "answer_unit": "",
+   "tolerance": 0.03,
+   "solution_steps": [
+    {
+     "explain": "Muối của axit yếu và bazơ yếu có pH tính theo công thức không phụ thuộc nồng độ.",
+     "latex": "\\mathrm{pH} = 7 + \\tfrac{1}{2}\\mathrm{p}K_{a} - \\tfrac{1}{2}\\mathrm{p}K_{b}"
+    },
+    {
+     "explain": "Thay pK_a của HCOOH và pK_b của NH3.",
+     "latex": "\\mathrm{pH} = 7 + \\tfrac{1}{2}(3.75) - \\tfrac{1}{2}(4.75) = 7 + 1.875 - 2.375 = 6.50"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-phan-tich.ph-muoi-axit-yeu-bazo-yeu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng công thức pH muối axit yếu - bazơ yếu"
+   ],
+   "hints": [
+    "pH = 7 + ½pKa − ½pKb.",
+    "Dùng pKa(HCOOH)=3.75, pKb(NH3)=4.75."
+   ],
+   "tags": [
+    "phan-tich",
+    "ph",
+    "thuy-phan",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0008",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Cấu tạo chất",
+   "type": "trac-nghiem",
+   "statement_vi": "Trong phương trình Schrödinger dừng Ĥψ = Eψ, đại lượng |ψ|^2 tại một điểm trong không gian biểu diễn điều gì?",
+   "statement_en": "In the time-independent Schrödinger equation Ĥψ = Eψ, what does |ψ|^2 at a point in space represent?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Mật độ xác suất tìm thấy electron tại điểm đó"
+    },
+    {
+     "key": "B",
+     "text": "Năng lượng của electron tại điểm đó",
+     "why_wrong": "Năng lượng E là trị riêng, là một hằng số cho cả trạng thái, không phải hàm của vị trí; |ψ|^2 là mật độ xác suất."
+    },
+    {
+     "key": "C",
+     "text": "Điện tích của electron tại điểm đó",
+     "why_wrong": "Điện tích electron là hằng số (−e); |ψ|^2 cho mật độ xác suất chứ không phải điện tích."
+    },
+    {
+     "key": "D",
+     "text": "Bán kính obitan",
+     "why_wrong": "|ψ|^2 là mật độ xác suất; bán kính có xác suất lớn nhất suy từ hàm phân bố xuyên tâm r²R², không phải |ψ|^2 trực tiếp."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Bình phương môđun hàm sóng là mật độ xác suất tìm thấy electron; obitan chính là vùng không gian có |ψ|^2 đáng kể.",
+     "latex": "\\hat{H}\\psi = E\\psi;\\qquad |\\psi|^{2}\\,dV = \\text{xác suất trong thể tích } dV"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.cau-tao-chat.phuong-trinh-schrodinger"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hiểu ý nghĩa xác suất của hàm sóng"
+   ],
+   "hints": [
+    "|ψ|² gắn với xác suất.",
+    "E là trị riêng, không phụ thuộc vị trí."
+   ],
+   "tags": [
+    "cau-tao-chat",
+    "luong-tu",
+    "schrodinger",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0009",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hóa keo và hóa học bề mặt",
+   "type": "dien-so",
+   "statement_vi": "Ở 20 °C nước có sức căng bề mặt σ = 72.8 mN/m. Tính công tối thiểu để tăng diện tích bề mặt nước thêm ΔA = 2.00 m^2 ở nhiệt độ và áp suất không đổi (đơn vị J).",
+   "statement_en": "At 20 °C water has surface tension σ = 72.8 mN/m. Find the minimum work to increase the water surface area by ΔA = 2.00 m^2 at constant T and p (in J).",
+   "answer": "W = 0.146 J",
+   "answer_numeric": 0.1456,
+   "answer_unit": "J",
+   "tolerance": 0.001,
+   "solution_steps": [
+    {
+     "explain": "Công tạo bề mặt mới ở T, p không đổi bằng sức căng bề mặt nhân độ tăng diện tích.",
+     "latex": "W = \\sigma\\,\\Delta A"
+    },
+    {
+     "explain": "Đổi σ = 72.8 mN/m = 0.0728 N/m rồi thay số.",
+     "latex": "W = 0.0728\\times 2.00 = 0.1456\\ \\mathrm{J}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-keo-be-mat.suc-cang-be-mat"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "đổi đơn vị mN/m sang N/m",
+    "liên hệ công và độ tăng diện tích"
+   ],
+   "hints": [
+    "W = σ ΔA.",
+    "σ = 0.0728 N/m."
+   ],
+   "tags": [
+    "hoa-keo",
+    "be-mat",
+    "suc-cang",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0010",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hóa keo và hóa học bề mặt",
+   "type": "dien-so",
+   "statement_vi": "Đo hấp phụ N2 ở 77 K trên một mẫu vật liệu, xác định được thể tích lớp đơn phân tử V_m = 2.80 cm^3/g (quy về đktc). Tính diện tích bề mặt riêng S (m^2/g). Cho ω(N2) = 0.162 nm^2, N_A = 6.022·10^23 mol^-1, V_0 = 22414 cm^3/mol.",
+   "statement_en": "N2 adsorption at 77 K on a sample gives a monolayer volume V_m = 2.80 cm^3/g (STP). Find the specific surface area S (m^2/g). ω(N2) = 0.162 nm^2, N_A = 6.022e23 /mol, V_0 = 22414 cm^3/mol.",
+   "answer": "S ≈ 12.2 m^2/g",
+   "answer_numeric": 12.19,
+   "answer_unit": "m^2/g",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Diện tích riêng bằng số mol lớp đơn phân tử nhân N_A nhân tiết diện phân tử.",
+     "latex": "S = \\frac{V_{m}N_{A}\\,\\omega}{V_{0}}"
+    },
+    {
+     "explain": "Đổi ω = 0.162 nm² = 0.162·10⁻¹⁸ m² rồi thay số.",
+     "latex": "S = \\frac{2.80\\times 6.022\\times 10^{23}\\times 0.162\\times 10^{-18}}{22414} \\approx 12.2\\ \\mathrm{m^{2}/g}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-keo-be-mat.phuong-trinh-bet"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "quy đổi thể tích lớp đơn phân tử thành số mol",
+    "đổi tiết diện nm² sang m²"
+   ],
+   "hints": [
+    "S = V_m N_A ω / V_0.",
+    "V_m/V_0 cho số mol lớp đơn phân tử trên 1 g."
+   ],
+   "tags": [
+    "hoa-keo",
+    "hap-phu",
+    "bet",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0011",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hóa keo và hóa học bề mặt",
+   "type": "dien-so",
+   "statement_vi": "Một chất hoạt động bề mặt trong nước ở 298 K có độ dốc dσ/d(lnC) = -12.0 mN/m tại một nồng độ. Tính độ hấp phụ bề mặt Γ (mol/m^2) theo phương trình hấp phụ Gibbs. R = 8.314 J/(mol·K).",
+   "statement_en": "A surfactant in water at 298 K has slope dσ/d(lnC) = -12.0 mN/m at some concentration. Find the surface excess Γ (mol/m^2) from the Gibbs adsorption isotherm. R = 8.314.",
+   "answer": "Γ ≈ 4.84·10^-6 mol/m^2",
+   "answer_numeric": 4.843e-06,
+   "answer_unit": "mol/m^2",
+   "tolerance": 1e-07,
+   "solution_steps": [
+    {
+     "explain": "Phương trình hấp phụ Gibbs dạng dùng biến ln C.",
+     "latex": "\\Gamma = -\\frac{1}{RT}\\frac{d\\sigma}{d\\ln C}"
+    },
+    {
+     "explain": "Đổi -12.0 mN/m = -0.0120 N/m; dấu trừ triệt tiêu cho Γ dương (chất tập trung ở bề mặt).",
+     "latex": "\\Gamma = -\\frac{1}{8.314\\times 298}(-0.0120) = 4.84\\times 10^{-6}\\ \\mathrm{mol/m^{2}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-keo-be-mat.phuong-trinh-hap-phu-gibbs"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "đọc độ dốc dσ/dlnC",
+    "suy dấu của độ hấp phụ"
+   ],
+   "hints": [
+    "Γ = −(1/RT) dσ/dlnC.",
+    "dσ/dlnC < 0 nên Γ > 0."
+   ],
+   "tags": [
+    "hoa-keo",
+    "hap-phu",
+    "gibbs",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0012",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "vn-gdpt-2018"
+   ],
+   "topic": "Hóa keo và hóa học bề mặt",
+   "type": "dien-so",
+   "statement_vi": "Hạt keo trong nước ở 25 °C có độ linh động điện di u = 4.0·10^-8 m^2/(V·s). Tính thế zeta ζ (V) theo phương trình Smoluchowski. Cho η = 1.0·10^-3 Pa·s, ε_0 = 8.854·10^-12 F/m, ε_r = 78.5.",
+   "statement_en": "A colloidal particle in water at 25 °C has electrophoretic mobility u = 4.0e-8 m^2/(V·s). Find the zeta potential ζ (V) via the Smoluchowski equation. η = 1.0e-3 Pa·s, ε_0 = 8.854e-12 F/m, ε_r = 78.5.",
+   "answer": "ζ ≈ 0.0575 V (57.5 mV)",
+   "answer_numeric": 0.05755,
+   "answer_unit": "V",
+   "tolerance": 0.001,
+   "solution_steps": [
+    {
+     "explain": "Phương trình Smoluchowski liên hệ độ linh động điện di với thế zeta.",
+     "latex": "\\zeta = \\frac{\\eta\\,u}{\\varepsilon_{0}\\varepsilon_{r}}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\zeta = \\frac{(1.0\\times 10^{-3})(4.0\\times 10^{-8})}{(8.854\\times 10^{-12})(78.5)} \\approx 0.0575\\ \\mathrm{V}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-keo-be-mat.the-zeta"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng mô hình Smoluchowski",
+    "đánh giá độ bền keo theo |ζ|"
+   ],
+   "hints": [
+    "ζ = η u /(ε₀ ε_r).",
+    "Mẫu số ≈ 6.95e−10."
+   ],
+   "tags": [
+    "hoa-keo",
+    "the-zeta",
+    "dien-di",
+    "vn-gdpt-2018"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0013",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Với obitan 1s của nguyên tử hydro (Z = 1), tính tỉ số mật độ xác suất |ψ|^2 tại r = a_0 so với tại hạt nhân (r = 0). Cho hàm sóng ψ_1s(r) = (1/√π)(Z/a_0)^(3/2) e^(-Zr/a_0).",
+   "statement_en": "For the 1s orbital of hydrogen (Z = 1), find the ratio of probability density |ψ|^2 at r = a_0 to that at the nucleus (r = 0). ψ_1s(r) = (1/√π)(Z/a_0)^(3/2) e^(-Zr/a_0).",
+   "answer": "|ψ(a_0)|^2/|ψ(0)|^2 = e^-2 ≈ 0.135",
+   "answer_numeric": 0.1353,
+   "answer_unit": "",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Mật độ xác suất là bình phương môđun hàm sóng; phần mũ cho e^(-2Zr/a_0).",
+     "latex": "|\\psi_{1s}(r)|^{2} = \\frac{1}{\\pi}\\left(\\frac{Z}{a_{0}}\\right)^{3}e^{-2Zr/a_{0}}"
+    },
+    {
+     "explain": "Lập tỉ số tại r = a_0 và r = 0 (Z = 1), phần hằng số triệt tiêu.",
+     "latex": "\\frac{|\\psi(a_{0})|^{2}}{|\\psi(0)|^{2}} = e^{-2} \\approx 0.135"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.ham-song-1s-nguyen-tu-hydro"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "bình phương hàm sóng 1s",
+    "lập tỉ số mật độ xác suất"
+   ],
+   "hints": [
+    "|ψ|² ∝ e^(−2Zr/a₀).",
+    "Tỉ số = e^(−2)."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "nguyen-tu-hydro",
+    "ham-song",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0014",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Tính bán kính có xác suất lớn nhất r_max của electron ở obitan 1s của ion He+ (Z = 2). Cho bán kính Bohr a_0 = 5.292·10^-11 m. (Đơn vị: pm.)",
+   "statement_en": "Find the most probable radius r_max for the 1s electron of He+ (Z = 2). Bohr radius a_0 = 5.292e-11 m. (Answer in pm.)",
+   "answer": "r_max = a_0/2 ≈ 26.5 pm",
+   "answer_numeric": 26.46,
+   "answer_unit": "pm",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Hàm phân bố xuyên tâm P(r)=r²R² của obitan 1s cực đại tại r = a_0/Z.",
+     "latex": "r_{\\max}(1s) = \\frac{a_{0}}{Z}"
+    },
+    {
+     "explain": "Với He+ Z = 2.",
+     "latex": "r_{\\max} = \\frac{5.292\\times 10^{-11}}{2} = 2.646\\times 10^{-11}\\ \\mathrm{m} = 26.5\\ \\mathrm{pm}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.ham-phan-bo-xuyen-tam"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng r_max = a_0/Z cho obitan 1s",
+    "đổi m sang pm"
+   ],
+   "hints": [
+    "r_max(1s) = a₀/Z.",
+    "Z(He+) = 2."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "nguyen-tu-hydro",
+    "mat-do-xac-suat",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0015",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Áp dụng nguyên lí biến phân, một hàm thử cho E_thử = -13.4 eV, hàm thử khác cho -13.5 eV; năng lượng trạng thái cơ bản thật là E_0 = -13.6 eV. Hàm thử nào gần đúng tốt hơn?",
+   "statement_en": "By the variational principle, one trial function gives E_trial = -13.4 eV, another gives -13.5 eV; the true ground-state energy is E_0 = -13.6 eV. Which trial function is the better approximation?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Hàm cho −13.5 eV, vì E_thử ≥ E_0 nên giá trị thấp hơn gần E_0 hơn"
+    },
+    {
+     "key": "B",
+     "text": "Hàm cho −13.4 eV, vì giá trị này gần 0 hơn",
+     "why_wrong": "Tiêu chí không phải gần 0 mà là gần E_0 (= −13.6 eV); −13.5 gần −13.6 hơn −13.4."
+    },
+    {
+     "key": "C",
+     "text": "Không xác định được nếu chưa biết dạng hàm sóng",
+     "why_wrong": "Chỉ cần so sánh năng lượng: theo nguyên lí biến phân, hàm cho E thấp hơn luôn tốt hơn, không cần biết dạng tường minh."
+    },
+    {
+     "key": "D",
+     "text": "Cả hai tương đương",
+     "why_wrong": "Hai giá trị khác nhau nên độ gần E_0 khác nhau; hàm −13.5 eV tốt hơn."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Nguyên lí biến phân bảo đảm mọi năng lượng thử đều lớn hơn hoặc bằng E_0, nên giá trị THẤP hơn gần E_0 hơn và tốt hơn.",
+     "latex": "E_{\\text{thử}} = \\frac{\\int \\phi^{*}\\hat{H}\\phi\\,d\\tau}{\\int \\phi^{*}\\phi\\,d\\tau} \\geq E_{0}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.nguyen-li-bien-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "hiểu cận trên của nguyên lí biến phân"
+   ],
+   "hints": [
+    "E_thử ≥ E_0 luôn đúng.",
+    "Gần E_0 nhất là giá trị thấp nhất."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "bien-phan",
+    "hoa-tinh-toan",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0016",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Xét hệ π của ethylene bằng thuyết Hückel (bỏ qua xen phủ, S = 0). Định thức thế kỉ 2×2 cho hai obitan p là |α−E, β; β, α−E| = 0. Cho tích phân Coulomb α = -11.4 eV và tích phân cộng hưởng β = -2.4 eV. Tính năng lượng obitan π liên kết (obitan bị chiếm).",
+   "statement_en": "Treat the π system of ethylene by Hückel theory (neglect overlap, S = 0). The 2×2 secular determinant for the two p orbitals is |α−E, β; β, α−E| = 0. With Coulomb integral α = -11.4 eV and resonance integral β = -2.4 eV, find the energy of the bonding π orbital (the occupied one).",
+   "answer": "E(π liên kết) = α + β = -13.8 eV",
+   "answer_numeric": -13.8,
+   "answer_unit": "eV",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Điều kiện có nghiệm không tầm thường là định thức thế kỉ bằng 0; khai triển 2×2 với S = 0.",
+     "latex": "\\det\\left|\\begin{array}{cc} \\alpha-E & \\beta\\\\ \\beta & \\alpha-E\\end{array}\\right| = (\\alpha-E)^{2}-\\beta^{2} = 0"
+    },
+    {
+     "explain": "Suy ra hai nghiệm E = α ± β; vì β < 0, obitan liên kết (năng lượng thấp) ứng với α + β.",
+     "latex": "E = \\alpha \\pm \\beta;\\qquad E_{\\text{liên kết}} = \\alpha+\\beta = -11.4+(-2.4) = -13.8\\ \\mathrm{eV}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.dinh-thuc-the-ki",
+    "chemistry.dai-hoc.hoa-luong-tu.tich-phan-xen-phu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "khai triển định thức thế kỉ 2×2",
+    "chọn nghiệm liên kết theo dấu của β"
+   ],
+   "hints": [
+    "Định thức 2×2: (α−E)² = β².",
+    "E = α ± β; β < 0 nên liên kết là α+β."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "dinh-thuc-the-ki",
+    "lcao",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0017",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Anion allyl (CH2-CH-CH2)^- có 4 electron π chiếm hai obitan phân tử ψ1 (hệ số tại C1,C2,C3 là 0.500, 0.707, 0.500) và ψ2 (0.707, 0, -0.707), mỗi obitan 2 electron. Tính điện tích π hình thức Q trên nguyên tử C đầu mạch (C1). Q_r = 1 − q_r, q_r = Σ n_j c_jr^2.",
+   "statement_en": "The allyl anion has 4 π electrons filling ψ1 (coefficients at C1,C2,C3 = 0.500, 0.707, 0.500) and ψ2 (0.707, 0, -0.707), each with 2 electrons. Find the formal π charge Q on a terminal carbon (C1). Q_r = 1 − q_r, q_r = Σ n_j c_jr^2.",
+   "answer": "Q(C1) = -0.50",
+   "answer_numeric": -0.5,
+   "answer_unit": "",
+   "tolerance": 0.02,
+   "solution_steps": [
+    {
+     "explain": "Mật độ electron π trên C1 là tổng theo hai obitan bị chiếm của (số electron)×(hệ số)^2.",
+     "latex": "q_{1} = \\sum_{j}n_{j}c_{j1}^{2} = 2(0.500)^{2} + 2(0.707)^{2} = 0.500 + 1.000 = 1.500"
+    },
+    {
+     "explain": "Điện tích π hình thức bằng 1 trừ mật độ electron π.",
+     "latex": "Q_{1} = 1 - q_{1} = 1 - 1.500 = -0.50"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.huckel-mat-do-electron-pi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "cộng đóng góp bình phương hệ số theo obitan chiếm",
+    "đổi mật độ π thành điện tích hình thức"
+   ],
+   "hints": [
+    "q₁ = 2c(ψ1,1)² + 2c(ψ2,1)².",
+    "Q = 1 − q."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "huckel",
+    "mat-do-electron",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0018",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Butadiene ở trạng thái cơ bản có hai obitan π bị chiếm: ψ1 = (0.372, 0.602, 0.602, 0.372) và ψ2 = (0.602, 0.372, -0.372, -0.602), mỗi obitan 2 electron. Tính bậc liên kết π giữa C2 và C3 theo p_rs = Σ n_j c_jr c_js.",
+   "statement_en": "Ground-state butadiene has two occupied π orbitals: ψ1 = (0.372, 0.602, 0.602, 0.372) and ψ2 = (0.602, 0.372, -0.372, -0.602), each with 2 electrons. Find the π bond order between C2 and C3 using p_rs = Σ n_j c_jr c_js.",
+   "answer": "p_23 ≈ 0.448",
+   "answer_numeric": 0.448,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Bậc liên kết π giữa C2 và C3 là tổng theo obitan chiếm của (số electron)×(hệ số tại C2)×(hệ số tại C3).",
+     "latex": "p_{23} = \\sum_{j}n_{j}c_{j2}c_{j3}"
+    },
+    {
+     "explain": "Thay hệ số: ψ1 đóng góp 2(0.602)(0.602), ψ2 đóng góp 2(0.372)(-0.372).",
+     "latex": "p_{23} = 2(0.602)(0.602) + 2(0.372)(-0.372) = 0.7248 - 0.2768 \\approx 0.448"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.huckel-bac-lien-ket-pi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "cộng tích hệ số theo obitan chiếm",
+    "hiểu bậc liên kết π nhỏ ở liên kết C2-C3"
+   ],
+   "hints": [
+    "p₂₃ = 2c(ψ1,2)c(ψ1,3) + 2c(ψ2,2)c(ψ2,3).",
+    "Chú ý dấu âm của ψ2 tại C3."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "huckel",
+    "bac-lien-ket",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0019",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Một phân tử vỏ đóng có một obitan không gian bị chiếm (2 electron). Cho tích phân một electron h_11 = -1.12 hartree và năng lượng obitan ε_1 = -0.60 hartree. Tính năng lượng electron toàn phần Hartree - Fock E_HF theo hệ thức E_HF = Σ_i (ε_i + h_ii). (Đơn vị: hartree.)",
+   "statement_en": "A closed-shell molecule has one occupied spatial orbital (2 electrons). Given one-electron integral h_11 = -1.12 hartree and orbital energy ε_1 = -0.60 hartree, find the total Hartree - Fock electronic energy E_HF from E_HF = Σ_i (ε_i + h_ii). (In hartree.)",
+   "answer": "E_HF = -1.72 hartree",
+   "answer_numeric": -1.72,
+   "answer_unit": "hartree",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Năng lượng toàn phần Hartree - Fock của hệ vỏ đóng KHÔNG bằng 2Σε_i (vì đếm hai lần lực đẩy electron); dùng dạng E_HF = Σ_i (ε_i + h_ii).",
+     "latex": "E_{\\mathrm{HF}} = \\sum_{i}\\left(\\varepsilon_{i} + h_{ii}\\right) \\neq 2\\sum_{i}\\varepsilon_{i}"
+    },
+    {
+     "explain": "Chỉ một obitan chiếm nên tổng có một số hạng.",
+     "latex": "E_{\\mathrm{HF}} = \\varepsilon_{1} + h_{11} = -0.60 + (-1.12) = -1.72\\ \\mathrm{hartree}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.nang-luong-tong-hartree-fock",
+    "chemistry.dai-hoc.hoa-luong-tu.phuong-trinh-hartree-fock"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "hiểu vì sao E_HF ≠ 2Σε_i",
+    "dùng hệ thức E_HF = Σ(ε_i + h_ii)"
+   ],
+   "hints": [
+    "Dùng E_HF = Σ(ε_i + h_ii).",
+    "Một obitan chiếm: E = ε₁ + h₁₁."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "hartree-fock",
+    "nang-luong-obitan",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0020",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "dien-so",
+   "statement_vi": "Với phân tử H2O ở một hình học cố định, năng lượng Hartree - Fock giới hạn là E_HF = -76.0678 hartree, còn năng lượng chính xác (phi tương đối tính) là E_exact = -76.4376 hartree. Tính năng lượng tương quan electron E_corr (hartree).",
+   "statement_en": "For H2O at a fixed geometry, the HF-limit energy is E_HF = -76.0678 hartree and the exact (nonrelativistic) energy is E_exact = -76.4376 hartree. Find the electron correlation energy E_corr (hartree).",
+   "answer": "E_corr = -0.3698 hartree",
+   "answer_numeric": -0.3698,
+   "answer_unit": "hartree",
+   "tolerance": 0.0005,
+   "solution_steps": [
+    {
+     "explain": "Năng lượng tương quan là hiệu giữa năng lượng chính xác và năng lượng Hartree - Fock giới hạn; luôn âm.",
+     "latex": "E_{\\mathrm{corr}} = E_{\\text{chính xác}} - E_{\\mathrm{HF}}^{\\text{giới hạn}} < 0"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "E_{\\mathrm{corr}} = -76.4376 - (-76.0678) = -0.3698\\ \\mathrm{hartree}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.nang-luong-tuong-quan-electron"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "lấy hiệu E_exact − E_HF",
+    "nhận biết E_corr luôn âm"
+   ],
+   "hints": [
+    "E_corr = E_exact − E_HF.",
+    "Kết quả âm (khoảng −0.37 hartree)."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "tuong-quan-electron",
+    "hoa-tinh-toan",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0021",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Vì sao định thức Slater tự động thoả nguyên lí loại trừ Pauli (không cho phép hai electron cùng một obitan spin)?",
+   "statement_en": "Why does a Slater determinant automatically satisfy the Pauli exclusion principle (no two electrons in the same spin orbital)?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Nếu hai electron cùng một obitan spin, định thức có hai hàng giống nhau nên bằng 0"
+    },
+    {
+     "key": "B",
+     "text": "Vì định thức luôn có giá trị dương",
+     "why_wrong": "Định thức có thể âm hoặc dương; điểm mấu chốt là nó TRIỆT TIÊU khi hai obitan spin trùng nhau."
+    },
+    {
+     "key": "C",
+     "text": "Vì các electron được đánh số riêng biệt",
+     "why_wrong": "Đánh số chỉ là hình thức; chính tính phản đối xứng (đổi dấu khi hoán vị) làm Ψ = 0 khi hai obitan spin trùng."
+    },
+    {
+     "key": "D",
+     "text": "Vì hệ số chuẩn hoá 1/√(N!)",
+     "why_wrong": "Hệ số chuẩn hoá không liên quan việc triệt tiêu; nguyên nhân là hai hàng đồng nhất làm định thức bằng 0."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Nếu hai electron cùng một obitan spin thì định thức có hai cột (hoặc hàng) giống nhau nên bằng 0, tức hàm sóng triệt tiêu.",
+     "latex": "\\Psi = \\frac{1}{\\sqrt{N!}}\\det\\left|\\psi_{1}\\;\\psi_{2}\\;\\cdots\\;\\psi_{N}\\right|;\\quad \\psi_{i}=\\psi_{j}\\Rightarrow \\Psi = 0"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.dinh-thuc-slater"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ tính phản đối xứng với nguyên lí Pauli"
+   ],
+   "hints": [
+    "Hai cột giống nhau ⇒ định thức = 0.",
+    "Tính phản đối xứng là cốt lõi."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "slater",
+    "pauli",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0022",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá lượng tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Phân tử O2 ở trạng thái cơ bản thuận từ (hai electron độc thân trên cặp obitan π* suy biến). Kí hiệu số hạng phân tử nào mô tả đúng trạng thái cơ bản của O2?",
+   "statement_en": "Ground-state O2 is paramagnetic (two unpaired electrons in the degenerate π* pair). Which molecular term symbol describes the ground state of O2?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "³Σg⁻"
+    },
+    {
+     "key": "B",
+     "text": "¹Σg⁺",
+     "why_wrong": "Đây là số hạng của N2 (vỏ đóng, S = 0); O2 có hai electron độc thân nên S = 1, độ bội 3."
+    },
+    {
+     "key": "C",
+     "text": "³Πg",
+     "why_wrong": "Hai electron π* trên λ = +1 và −1 cho Λ = 0 (Σ), không phải Π (Λ = 1)."
+    },
+    {
+     "key": "D",
+     "text": "¹Δg",
+     "why_wrong": "¹Δg là trạng thái KÍCH THÍCH của O2 (S = 0); trạng thái cơ bản là triplet theo quy tắc Hund."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Hai electron π* nằm trên hai obitan có λ = +1 và −1 nên Λ = |+1−1| = 0 (trạng thái Σ); hai spin song song cho S = 1, độ bội 2S+1 = 3; đối xứng cho g và dấu −.",
+     "latex": "\\Lambda = \\left|\\sum_i \\lambda_i\\right| = 0,\\quad S = 1 \\Rightarrow {}^{3}\\Sigma_{g}^{-}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-luong-tu.ki-hieu-so-hang-phan-tu"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính Λ và S cho cấu hình π*²",
+    "đọc kí hiệu số hạng phân tử"
+   ],
+   "hints": [
+    "Λ = |Σλ_i|; hai π* cho Λ = 0.",
+    "Hai spin song song ⇒ độ bội 3."
+   ],
+   "tags": [
+    "hoa-luong-tu",
+    "so-hang-phan-tu",
+    "pho-dien-tu",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0023",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Vì sao dao động hoá trị ĐỐI XỨNG của CO2 không hoạt động hồng ngoại, trong khi dao động hoá trị bất đối xứng thì hoạt động?",
+   "statement_en": "Why is the SYMMETRIC stretch of CO2 infrared-inactive while the antisymmetric stretch is active?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Dao động đối xứng không làm biến thiên momen lưỡng cực (∂μ/∂Q = 0) nên bị cấm IR"
+    },
+    {
+     "key": "B",
+     "text": "Vì CO2 không có momen lưỡng cực vĩnh cửu nên mọi dao động đều cấm IR",
+     "why_wrong": "Quy tắc IR chỉ đòi hỏi momen lưỡng cực BIẾN THIÊN, không cần momen vĩnh cửu; dao động bất đối xứng của CO2 vẫn hoạt động IR."
+    },
+    {
+     "key": "C",
+     "text": "Vì tần số dao động đối xứng quá thấp để hấp thụ",
+     "why_wrong": "Nguyên nhân là đối xứng (không đổi momen lưỡng cực), không phải giá trị tần số."
+    },
+    {
+     "key": "D",
+     "text": "Vì CO2 là phân tử thẳng",
+     "why_wrong": "Tính thẳng không cấm IR; chính đối xứng của mode làm ∂μ/∂Q = 0."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Quy tắc lọc lựa tổng thể của IR đòi hỏi momen lưỡng cực phải BIẾN THIÊN theo toạ độ dao động; dao động đối xứng của CO2 giữ momen lưỡng cực bằng 0 suốt quá trình.",
+     "latex": "\\left(\\frac{\\partial \\mu}{\\partial Q}\\right)_{0} \\neq 0\\ (\\text{IR hoạt động});\\quad \\text{đối xứng CO}_2:\\ \\frac{\\partial \\mu}{\\partial Q}=0"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.quy-tac-loc-lua-dao-dong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng điều kiện ∂μ/∂Q ≠ 0"
+   ],
+   "hints": [
+    "Điều kiện IR: momen lưỡng cực phải đổi.",
+    "Đối xứng ⇒ μ không đổi ⇒ cấm."
+   ],
+   "tags": [
+    "pho-hoc",
+    "hong-ngoai",
+    "quy-tac-loc-lua",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0024",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Phổ dao động - quay của HCl có vạch trung tâm ṽ_0 = 2886 cm^-1 và hằng số quay B = 10.59 cm^-1. Tính số sóng của vạch đầu tiên của nhánh R, tức ṽ_R(J=0) (cm^-1).",
+   "statement_en": "The vibration-rotation spectrum of HCl has band origin ṽ_0 = 2886 cm^-1 and rotational constant B = 10.59 cm^-1. Find the wavenumber of the first R-branch line, ṽ_R(J=0) (cm^-1).",
+   "answer": "ṽ_R(0) = 2907.18 cm^-1",
+   "answer_numeric": 2907.18,
+   "answer_unit": "cm^-1",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Nhánh R (ΔJ = +1) có công thức ṽ_R(J) = ṽ_0 + 2B(J+1).",
+     "latex": "\\tilde{\\nu}_{R}(J) = \\tilde{\\nu}_{0} + 2B(J+1)"
+    },
+    {
+     "explain": "Thay J = 0.",
+     "latex": "\\tilde{\\nu}_{R}(0) = 2886 + 2(10.59)(1) = 2907.18\\ \\mathrm{cm^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.nhanh-p-r-pho-dao-dong-quay"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng công thức nhánh R",
+    "thay J = 0"
+   ],
+   "hints": [
+    "ṽ_R(J) = ṽ_0 + 2B(J+1).",
+    "J = 0."
+   ],
+   "tags": [
+    "pho-hoc",
+    "hong-ngoai",
+    "nhanh-p-r",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0025",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo nguyên lí Franck - Condon (hệ quả của xấp xỉ Born - Oppenheimer), khi độ dài liên kết ở trạng thái điện tử kích thích GẦN BẰNG ở trạng thái cơ bản thì phổ hấp thụ điện tử có đặc điểm gì?",
+   "statement_en": "By the Franck - Condon principle (a consequence of the Born - Oppenheimer approximation), if the excited-state bond length is NEARLY equal to the ground-state one, what feature does the electronic absorption spectrum show?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Chuyển dời 0-0 (v''=0 → v'=0) mạnh nhất, dải hẹp"
+    },
+    {
+     "key": "B",
+     "text": "Cực đại ở v' cao, dải rộng",
+     "why_wrong": "Điều này xảy ra khi độ dài liên kết hai trạng thái LỆCH NHIỀU; khi gần nhau thì chuyển dời thẳng đứng rơi vào v'=0."
+    },
+    {
+     "key": "C",
+     "text": "Không có cấu trúc dao động",
+     "why_wrong": "Vẫn có tiến trình dao động; điểm khác biệt là cường độ tập trung ở vạch 0-0."
+    },
+    {
+     "key": "D",
+     "text": "Chỉ gồm nhánh P và R",
+     "why_wrong": "Nhánh P/R là cấu trúc quay của dải hồng ngoại, không phải phân bố Franck - Condon của phổ điện tử."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Chuyển dời 'thẳng đứng' (hạt nhân đứng yên) rơi vào mức dao động v'=0 khi hai đường cong thế năng chồng lên nhau, cho vạch 0-0 mạnh nhất và dải hẹp.",
+     "latex": "S_{v'v''} = \\left|\\int \\chi_{v'}^{*}(R)\\,\\chi_{v''}(R)\\,dR\\right|^{2};\\quad I \\propto S_{v'v''}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.nguyen-li-franck-condon",
+    "chemistry.dai-hoc.hoa-luong-tu.xap-xi-born-oppenheimer"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "liên hệ độ chồng phủ dao động với cường độ vạch"
+   ],
+   "hints": [
+    "Chuyển dời thẳng đứng, hạt nhân đứng yên.",
+    "Đường cong chồng nhau ⇒ 0-0 mạnh."
+   ],
+   "tags": [
+    "pho-hoc",
+    "franck-condon",
+    "pho-dien-tu",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0026",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Trong phổ quang electron dùng nguồn He I (hν = 21.22 eV), một quang electron bật ra với động năng đo được 5.22 eV. Tính năng lượng ion hoá I của obitan tương ứng (eV). (Bỏ qua công thoát máy.)",
+   "statement_en": "In UPS with a He I source (hν = 21.22 eV), a photoelectron is ejected with measured kinetic energy 5.22 eV. Find the ionization energy I of the corresponding orbital (eV). (Neglect the analyzer work function.)",
+   "answer": "I = 16.0 eV",
+   "answer_numeric": 16.0,
+   "answer_unit": "eV",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Phương trình cơ bản của phổ quang electron: động năng bằng năng lượng photon trừ năng lượng ion hoá.",
+     "latex": "\\tfrac{1}{2}m_{e}v^{2} = h\\nu - I_{i}"
+    },
+    {
+     "explain": "Suy ra I và thay số.",
+     "latex": "I = h\\nu - E_{\\text{động}} = 21.22 - 5.22 = 16.0\\ \\mathrm{eV}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.pho-quang-electron"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng bảo toàn năng lượng cho quang electron"
+   ],
+   "hints": [
+    "I = hν − E_động.",
+    "21.22 − 5.22."
+   ],
+   "tags": [
+    "pho-hoc",
+    "quang-electron",
+    "xps",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0027",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Trên máy NMR ¹H tần số 500 MHz, một tín hiệu có độ dịch chuyển hoá học δ = 2.5 ppm. Tính khoảng cách tần số Δν (Hz) của tín hiệu này so với chất chuẩn (TMS).",
+   "statement_en": "On a 500 MHz ¹H NMR spectrometer, a signal has chemical shift δ = 2.5 ppm. Find the frequency separation Δν (Hz) of this signal from the reference (TMS).",
+   "answer": "Δν = 1250 Hz",
+   "answer_numeric": 1250.0,
+   "answer_unit": "Hz",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "Khoảng cách tần số (Hz) bằng độ dịch chuyển (ppm) nhân tần số làm việc (MHz).",
+     "latex": "\\Delta\\nu\\ (\\mathrm{Hz}) = \\delta\\ (\\mathrm{ppm}) \\times \\nu_{\\text{máy}}\\ (\\mathrm{MHz})"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\Delta\\nu = 2.5 \\times 500 = 1250\\ \\mathrm{Hz}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.dich-chuyen-hoa-hoc-theo-hz"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "quy đổi ppm sang Hz theo tần số máy"
+   ],
+   "hints": [
+    "Δν(Hz) = δ(ppm) × ν_máy(MHz).",
+    "2.5 × 500."
+   ],
+   "tags": [
+    "pho-hoc",
+    "nmr",
+    "do-phan-giai",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0028",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Tính độ chênh dân số tương đối ΔN/N giữa hai mức spin của hạt nhân ¹H trên máy NMR 500 MHz ở 300 K. Dùng ΔN/N ≈ hν_L/(2k_B T), với h = 6.626·10^-34 J·s, ν_L = 500·10^6 Hz, k_B = 1.381·10^-23 J/K.",
+   "statement_en": "Find the relative population difference ΔN/N between the two spin states of ¹H on a 500 MHz NMR at 300 K. Use ΔN/N ≈ hν_L/(2k_B T), with h = 6.626e-34 J·s, ν_L = 500e6 Hz, k_B = 1.381e-23 J/K.",
+   "answer": "ΔN/N ≈ 4.0·10^-5",
+   "answer_numeric": 3.999e-05,
+   "answer_unit": "",
+   "tolerance": 1e-06,
+   "solution_steps": [
+    {
+     "explain": "Ở xấp xỉ nhiệt độ cao, độ chênh dân số tỉ lệ với năng lượng tách mức chia 2k_B T.",
+     "latex": "\\frac{\\Delta N}{N} \\approx \\frac{h\\nu_{L}}{2k_{B}T}"
+    },
+    {
+     "explain": "Thay số cho một giá trị rất nhỏ, giải thích độ nhạy kém của NMR.",
+     "latex": "\\frac{\\Delta N}{N} = \\frac{(6.626\\times 10^{-34})(500\\times 10^{6})}{2(1.381\\times 10^{-23})(300)} \\approx 4.0\\times 10^{-5}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.do-chenh-dan-so-nmr"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng xấp xỉ nhiệt độ cao",
+    "hiểu vì sao NMR kém nhạy"
+   ],
+   "hints": [
+    "ΔN/N = hν_L/(2k_B T).",
+    "ν_L = 500e6 Hz."
+   ],
+   "tags": [
+    "pho-hoc",
+    "nmr",
+    "do-nhay",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0029",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Kích thích mẫu bằng laser 514.5 nm (số sóng ṽ_0 = 19436 cm^-1). Một mode dao động có dịch chuyển Raman Δṽ_M = 1332 cm^-1. Tính số sóng của vạch Stokes tương ứng (cm^-1).",
+   "statement_en": "A sample is excited by a 514.5 nm laser (ṽ_0 = 19436 cm^-1). A vibrational mode has Raman shift Δṽ_M = 1332 cm^-1. Find the wavenumber of the corresponding Stokes line (cm^-1).",
+   "answer": "ṽ_Stokes = 18104 cm^-1",
+   "answer_numeric": 18104.0,
+   "answer_unit": "cm^-1",
+   "tolerance": 2.0,
+   "solution_steps": [
+    {
+     "explain": "Vạch Stokes nằm ở phía số sóng THẤP hơn laser, cách một lượng bằng dịch chuyển Raman.",
+     "latex": "\\tilde{\\nu}_{\\text{Stokes}} = \\tilde{\\nu}_{0} - \\Delta\\tilde{\\nu}_{M}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\tilde{\\nu}_{\\text{Stokes}} = 19436 - 1332 = 18104\\ \\mathrm{cm^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.pho-raman-dich-chuyen-stokes"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "đặt vạch Stokes ở phía số sóng thấp"
+   ],
+   "hints": [
+    "ṽ_Stokes = ṽ_0 − Δṽ_M.",
+    "19436 − 1332."
+   ],
+   "tags": [
+    "pho-hoc",
+    "raman",
+    "stokes",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0030",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Với laser ṽ_0 = 19436 cm^-1 và mode dao động Δṽ_M = 459 cm^-1 ở 300 K, tính tỉ số cường độ I(anti-Stokes)/I(Stokes). Dùng công thức đầy đủ; hc/k_B = 1.4388 cm·K.",
+   "statement_en": "For a laser ṽ_0 = 19436 cm^-1 and a mode Δṽ_M = 459 cm^-1 at 300 K, find the intensity ratio I(anti-Stokes)/I(Stokes). Use the full formula; hc/k_B = 1.4388 cm·K.",
+   "answer": "I(anti-Stokes)/I(Stokes) ≈ 0.134",
+   "answer_numeric": 0.1337,
+   "answer_unit": "",
+   "tolerance": 0.005,
+   "solution_steps": [
+    {
+     "explain": "Tỉ số gồm thừa số tần số bậc 4 nhân thừa số Boltzmann.",
+     "latex": "\\frac{I_{aS}}{I_{S}} = \\left(\\frac{\\tilde{\\nu}_{0}+\\Delta\\tilde{\\nu}_{M}}{\\tilde{\\nu}_{0}-\\Delta\\tilde{\\nu}_{M}}\\right)^{4}\\exp\\!\\left(-\\frac{hc\\,\\Delta\\tilde{\\nu}_{M}}{k_{B}T}\\right)"
+    },
+    {
+     "explain": "Thừa số tần số ≈ (19895/18977)^4 = 1.208; thừa số Boltzmann = exp(-1.4388·459/300) = exp(-2.201) = 0.1107.",
+     "latex": "\\frac{I_{aS}}{I_{S}} \\approx 1.208\\times 0.1107 = 0.134"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.ti-so-cuong-do-anti-stokes-stokes"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "tách thừa số tần số và Boltzmann",
+    "tính hc·Δṽ/(k_B T)"
+   ],
+   "hints": [
+    "Nhân thừa số tần số bậc 4 với exp(−hcΔṽ/k_BT).",
+    "hcΔṽ/k_BT = 1.4388×459/300."
+   ],
+   "tags": [
+    "pho-hoc",
+    "raman",
+    "nhiet-do",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0031",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Một chất phát huỳnh quang có hằng số tốc độ phát xạ k_F = 1.0·10^8 s^-1 và tổng hằng số tốc độ không bức xạ k_nr = 4.0·10^8 s^-1. Tính hiệu suất lượng tử huỳnh quang Φ_F.",
+   "statement_en": "A fluorophore has radiative rate k_F = 1.0e8 s^-1 and total nonradiative rate k_nr = 4.0e8 s^-1. Find the fluorescence quantum yield Φ_F.",
+   "answer": "Φ_F = 0.20",
+   "answer_numeric": 0.2,
+   "answer_unit": "",
+   "tolerance": 0.005,
+   "solution_steps": [
+    {
+     "explain": "Thời gian sống quan sát bằng nghịch đảo tổng mọi hằng số tốc độ khử kích thích.",
+     "latex": "\\tau = \\frac{1}{k_{F}+k_{nr}} = \\frac{1}{5.0\\times 10^{8}} = 2.0\\ \\mathrm{ns}"
+    },
+    {
+     "explain": "Hiệu suất lượng tử bằng tỉ lệ kênh bức xạ.",
+     "latex": "\\Phi_{F} = k_{F}\\tau = \\frac{k_{F}}{k_{F}+k_{nr}} = \\frac{1.0\\times 10^{8}}{5.0\\times 10^{8}} = 0.20"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.thoi-gian-song-huynh-quang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "liên hệ thời gian sống và các hằng số tốc độ",
+    "tính hiệu suất lượng tử"
+   ],
+   "hints": [
+    "τ = 1/Σk_i.",
+    "Φ_F = k_F/(k_F+k_nr)."
+   ],
+   "tags": [
+    "pho-hoc",
+    "huynh-quang",
+    "thoi-gian-song",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0032",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Một phẩm nhuộm có cực đại hấp thụ ở 350 nm và cực đại huỳnh quang ở 450 nm. Tính dịch chuyển Stokes Δṽ (cm^-1).",
+   "statement_en": "A dye has absorption maximum at 350 nm and fluorescence maximum at 450 nm. Find the Stokes shift Δṽ (cm^-1).",
+   "answer": "Δṽ_Stokes ≈ 6349 cm^-1",
+   "answer_numeric": 6349.2,
+   "answer_unit": "cm^-1",
+   "tolerance": 10.0,
+   "solution_steps": [
+    {
+     "explain": "Dịch chuyển Stokes là hiệu số sóng cực đại hấp thụ và cực đại phát xạ; đổi bước sóng sang số sóng bằng ṽ = 10^7/λ(nm).",
+     "latex": "\\Delta\\tilde{\\nu}_{\\text{Stokes}} = \\frac{10^{7}}{350} - \\frac{10^{7}}{450}"
+    },
+    {
+     "explain": "Tính từng số sóng rồi lấy hiệu.",
+     "latex": "= 28571 - 22222 = 6349\\ \\mathrm{cm^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.dich-chuyen-stokes-huynh-quang"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "đổi nm sang cm^-1",
+    "lấy hiệu số sóng hấp thụ - phát xạ"
+   ],
+   "hints": [
+    "ṽ = 10^7/λ(nm).",
+    "Δṽ = ṽ_abs − ṽ_em."
+   ],
+   "tags": [
+    "pho-hoc",
+    "huynh-quang",
+    "stokes",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0033",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Một trạng thái kích thích có thời gian sống τ = 10 ps. Tính độ rộng vạch tự nhiên δṽ (cm^-1) theo mở rộng do thời gian sống. Dùng δṽ = 1/(2πcτ), c = 2.998·10^10 cm/s.",
+   "statement_en": "An excited state has lifetime τ = 10 ps. Find the natural linewidth δṽ (cm^-1) from lifetime broadening. Use δṽ = 1/(2πcτ), c = 2.998e10 cm/s.",
+   "answer": "δṽ ≈ 0.531 cm^-1",
+   "answer_numeric": 0.5309,
+   "answer_unit": "cm^-1",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Độ rộng vạch tự nhiên tính theo số sóng từ thời gian sống.",
+     "latex": "\\delta\\tilde{\\nu} = \\frac{1}{2\\pi c\\,\\tau}"
+    },
+    {
+     "explain": "Thay τ = 10·10^-12 s.",
+     "latex": "\\delta\\tilde{\\nu} = \\frac{1}{2\\pi (2.998\\times 10^{10})(10\\times 10^{-12})} \\approx 0.531\\ \\mathrm{cm^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.do-rong-vach-do-thoi-gian-song"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng mở rộng do thời gian sống hữu hạn"
+   ],
+   "hints": [
+    "δṽ = 1/(2πcτ).",
+    "τ = 10 ps."
+   ],
+   "tags": [
+    "pho-hoc",
+    "do-rong-vach",
+    "bat-dinh",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0034",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Phổ học phân tử",
+   "type": "dien-so",
+   "statement_vi": "Phân tử N2 có hằng số quay B = 1.99 cm^-1. Trong phổ QUAY Raman (ΔJ = 0, ±2), tính khoảng cách giữa hai vạch quay liên tiếp trong cùng một nhánh (cm^-1).",
+   "statement_en": "N2 has rotational constant B = 1.99 cm^-1. In its ROTATIONAL Raman spectrum (ΔJ = 0, ±2), find the spacing between adjacent rotational lines within one branch (cm^-1).",
+   "answer": "Δṽ = 4B = 7.96 cm^-1",
+   "answer_numeric": 7.96,
+   "answer_unit": "cm^-1",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Với ΔJ = ±2, các vạch quay Raman liên tiếp cách nhau 4B (khác phổ quay vi sóng có ΔJ = ±1, cách 2B).",
+     "latex": "\\Delta\\tilde{\\nu}_{\\text{hai vạch kề}} = 4B"
+    },
+    {
+     "explain": "Thay B = 1.99 cm^-1.",
+     "latex": "\\Delta\\tilde{\\nu} = 4\\times 1.99 = 7.96\\ \\mathrm{cm^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.pho-hoc.quy-tac-loc-lua-pho-quay-raman"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dùng khoảng cách 4B cho phổ quay Raman",
+    "phân biệt với 2B của phổ vi sóng"
+   ],
+   "hints": [
+    "Phổ quay Raman ΔJ = ±2 ⇒ khoảng cách 4B.",
+    "B = 1.99 cm^-1."
+   ],
+   "tags": [
+    "pho-raman",
+    "pho-quay",
+    "quy-tac-loc-lua",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0035",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một phân tử có hai mức năng lượng: mức cơ bản (g_0 = 1, ε_0 = 0) và mức kích thích (g_1 = 3, ε_1 = 200 cm^-1). Tính hàm phân bố phân tử q ở 300 K. Dùng hc/k_B = 1.4388 cm·K.",
+   "statement_en": "A molecule has two levels: ground (g_0 = 1, ε_0 = 0) and excited (g_1 = 3, ε_1 = 200 cm^-1). Find the molecular partition function q at 300 K. Use hc/k_B = 1.4388 cm·K.",
+   "answer": "q ≈ 2.15",
+   "answer_numeric": 2.15,
+   "answer_unit": "",
+   "tolerance": 0.03,
+   "solution_steps": [
+    {
+     "explain": "Hàm phân bố là tổng theo mức của bậc suy biến nhân thừa số Boltzmann.",
+     "latex": "q = \\sum_{i}g_{i}\\,e^{-\\varepsilon_{i}/k_{B}T}"
+    },
+    {
+     "explain": "ε_1/k_B T = (1.4388·200)/300 = 0.9592; nên q = 1 + 3e^(-0.959).",
+     "latex": "q = 1 + 3\\,e^{-0.959} = 1 + 3(0.383) \\approx 2.15"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.ham-phan-bo-phan-tu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính ε/k_BT theo số sóng",
+    "cộng thừa số Boltzmann có bậc suy biến"
+   ],
+   "hints": [
+    "q = Σ g_i e^(−ε_i/k_BT).",
+    "ε₁/k_BT = 1.4388×200/300."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "ham-phan-bo",
+    "boltzmann",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0036",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một phân tử khí có các hàm phân bố thành phần: tịnh tiến q^T = 2.5·10^6, quay q^R = 72, dao động q^V = 1.05, điện tử q^E = 1. Tính hàm phân bố phân tử toàn phần q.",
+   "statement_en": "A gas molecule has component partition functions: translational q^T = 2.5e6, rotational q^R = 72, vibrational q^V = 1.05, electronic q^E = 1. Find the total molecular partition function q.",
+   "answer": "q ≈ 1.89·10^8",
+   "answer_numeric": 189000000.0,
+   "answer_unit": "",
+   "tolerance": 1000000.0,
+   "solution_steps": [
+    {
+     "explain": "Vì năng lượng các dạng chuyển động cộng tính nên hàm phân bố tách thành tích.",
+     "latex": "q = q^{\\mathrm{T}}\\,q^{\\mathrm{R}}\\,q^{\\mathrm{V}}\\,q^{\\mathrm{E}}"
+    },
+    {
+     "explain": "Nhân các thừa số.",
+     "latex": "q = (2.5\\times 10^{6})(72)(1.05)(1) \\approx 1.89\\times 10^{8}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.tach-thua-so-ham-phan-bo"
+   ],
+   "difficulty": 2,
+   "estimated_minutes": 3,
+   "skills": [
+    "nhân các hàm phân bố thành phần"
+   ],
+   "hints": [
+    "q = q^T q^R q^V q^E.",
+    "Nhân bốn thừa số."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "ham-phan-bo",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0037",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "dien-so",
+   "statement_vi": "Gốc NO có trạng thái điện tử cơ bản suy biến g_0 = 2 và một mức kích thích g_1 = 2 ở ε_1 = 121 cm^-1. Tính hàm phân bố điện tử q^E ở 298 K. Dùng hc/k_B = 1.4388 cm·K.",
+   "statement_en": "The NO radical has a doubly degenerate ground electronic state g_0 = 2 and an excited level g_1 = 2 at ε_1 = 121 cm^-1. Find the electronic partition function q^E at 298 K. Use hc/k_B = 1.4388 cm·K.",
+   "answer": "q^E ≈ 3.12",
+   "answer_numeric": 3.115,
+   "answer_unit": "",
+   "tolerance": 0.03,
+   "solution_steps": [
+    {
+     "explain": "Hàm phân bố điện tử là tổng bậc suy biến nhân thừa số Boltzmann của các mức thấp.",
+     "latex": "q^{\\mathrm{E}} = g_{0} + g_{1}e^{-\\varepsilon_{1}/k_{B}T}"
+    },
+    {
+     "explain": "ε_1/k_B T = (1.4388·121)/298 = 0.584; nên q^E = 2 + 2e^(-0.584).",
+     "latex": "q^{\\mathrm{E}} = 2 + 2\\,e^{-0.584} = 2 + 2(0.558) \\approx 3.12"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.ham-phan-bo-dien-tu"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "nhận biết ngoại lệ NO với mức spin-obitan thấp",
+    "tính q^E hai mức"
+   ],
+   "hints": [
+    "q^E = g₀ + g₁e^(−ε₁/k_BT).",
+    "ε₁/k_BT = 1.4388×121/298."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "ham-phan-bo",
+    "dien-tu",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0038",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "dien-so",
+   "statement_vi": "Với khí lí tưởng đơn nguyên tử, hàm phân bố tịnh tiến cho q^T ∝ T^(3/2), dẫn đến U − U(0) = (3/2)nRT. Tính U − U(0) cho 2.00 mol khí ở 300 K (J). R = 8.314 J/(mol·K).",
+   "statement_en": "For a monatomic ideal gas, q^T ∝ T^(3/2) leads to U − U(0) = (3/2)nRT. Compute U − U(0) for 2.00 mol at 300 K (J). R = 8.314.",
+   "answer": "U − U(0) = 7482.6 J",
+   "answer_numeric": 7482.6,
+   "answer_unit": "J",
+   "tolerance": 5.0,
+   "solution_steps": [
+    {
+     "explain": "Nội năng từ hàm phân bố; với q ∝ T^(3/2), ln Q chứa (3/2)N ln T nên đạo hàm cho (3/2)nRT.",
+     "latex": "U - U(0) = k_{B}T^{2}\\left(\\frac{\\partial \\ln Q}{\\partial T}\\right)_{V} = \\tfrac{3}{2}nRT"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "U - U(0) = \\tfrac{3}{2}(2.00)(8.314)(300) = 7482.6\\ \\mathrm{J}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.noi-nang-tu-ham-phan-bo"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "dẫn (3/2)nRT từ hàm phân bố",
+    "thay số"
+   ],
+   "hints": [
+    "U − U(0) = (3/2)nRT.",
+    "n = 2, T = 300."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "noi-nang",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0039",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "dien-so",
+   "statement_vi": "Một hệ có hàm phân bố phân tử q = 2.15 ở 300 K (các phân tử độc lập, định xứ). Tính A − A(0) trên MỖI MOL theo A − A(0) = −k_B T ln Q với Q = q^N (hạt định xứ). (kết quả J/mol; R = 8.314.)",
+   "statement_en": "A system has molecular partition function q = 2.15 at 300 K (independent, localized molecules). Find A − A(0) PER MOLE from A − A(0) = −k_B T ln Q with Q = q^N (localized particles). (J/mol; R = 8.314.)",
+   "answer": "A − A(0) ≈ -1909 J/mol",
+   "answer_numeric": -1908.8,
+   "answer_unit": "J/mol",
+   "tolerance": 5.0,
+   "solution_steps": [
+    {
+     "explain": "Năng lượng Helmholtz từ hàm phân bố; với hạt định xứ Q = q^N nên ln Q = N ln q, cho mỗi mol nhân R.",
+     "latex": "A - A(0) = -k_{B}T\\ln Q = -N_{A}k_{B}T\\ln q = -RT\\ln q"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "A - A(0) = -(8.314)(300)\\ln(2.15) = -1909\\ \\mathrm{J/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.entropy-tu-ham-phan-bo"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "liên hệ A với ln Q",
+    "quy đổi k_B N_A = R cho một mol"
+   ],
+   "hints": [
+    "A − A(0) = −RT ln q (định xứ).",
+    "ln(2.15) ≈ 0.765."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "helmholtz",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0040",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "trac-nghiem",
+   "statement_vi": "Từ hàm phân bố chính tắc Q, áp suất được tính bằng p = k_B T (∂lnQ/∂V)_T. Với khí lí tưởng (Q = q^N/N!, chỉ q^T ∝ V phụ thuộc thể tích), kết quả thu được là gì?",
+   "statement_en": "From the canonical partition function Q, pressure is p = k_B T (∂lnQ/∂V)_T. For an ideal gas (Q = q^N/N!, only q^T ∝ V depends on volume), what is the result?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "pV = nRT (phương trình khí lí tưởng)"
+    },
+    {
+     "key": "B",
+     "text": "pV = (3/2)nRT",
+     "why_wrong": "(3/2)nRT là nội năng U−U(0) của khí đơn nguyên tử, không phải pV; đạo hàm lnQ theo V cho N/V."
+    },
+    {
+     "key": "C",
+     "text": "p = 0",
+     "why_wrong": "lnQ phụ thuộc V qua q^T ∝ V nên đạo hàm khác 0; áp suất khác 0."
+    },
+    {
+     "key": "D",
+     "text": "pV = Nk_B T ln V",
+     "why_wrong": "Đạo hàm của N ln V theo V là N/V (không phải ln V); kết quả là pV = Nk_BT = nRT."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Chỉ q^T ∝ V nên ln Q chứa N ln V; đạo hàm theo V cho N/V, nhân k_B T ra đúng phương trình khí lí tưởng.",
+     "latex": "p = k_{B}T\\left(\\frac{\\partial \\ln Q}{\\partial V}\\right)_{T} = \\frac{Nk_{B}T}{V} \\Rightarrow pV = nRT"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.ap-suat-tu-ham-phan-bo",
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.ham-phan-bo-chinh-tac"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "dẫn phương trình trạng thái từ hàm phân bố"
+   ],
+   "hints": [
+    "Chỉ q^T ∝ V.",
+    "∂(N ln V)/∂V = N/V."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "ap-suat",
+    "khi-li-tuong",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0041",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Nhiệt động lực học thống kê",
+   "type": "trac-nghiem",
+   "statement_vi": "Hằng số cân bằng K của phản ứng pha khí có thể tính từ các hàm phân bố chuẩn theo K = [Π(q_J°/N_A)^ν_J]·e^(−Δ_rE_0/RT). Ưu điểm nổi bật của cách tính này là gì?",
+   "statement_en": "The equilibrium constant K of a gas-phase reaction can be computed from standard partition functions via K = [Π(q_J°/N_A)^ν_J]·e^(−Δ_rE_0/RT). What is its key advantage?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "K tính hoàn toàn từ dữ liệu phổ (khối lượng, hằng số quay, số sóng dao động, năng lượng phân li) mà không cần đo nhiệt hoá học"
+    },
+    {
+     "key": "B",
+     "text": "K không phụ thuộc nhiệt độ",
+     "why_wrong": "K vẫn phụ thuộc T qua thừa số e^(−Δ_rE_0/RT) và các q(T); ưu điểm là tính từ dữ liệu phổ."
+    },
+    {
+     "key": "C",
+     "text": "Không cần biết năng lượng các mức",
+     "why_wrong": "Ngược lại, phương pháp cần chính năng lượng các mức (từ phổ) để lập hàm phân bố."
+    },
+    {
+     "key": "D",
+     "text": "Chỉ áp dụng cho phản ứng trong dung dịch",
+     "why_wrong": "Công thức áp dụng cho phản ứng pha KHÍ giữa các khí lí tưởng."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Các hàm phân bố tính được từ khối lượng, hằng số quay, số sóng dao động và năng lượng phân li (dữ liệu phổ), nên K suy ra không cần đo nhiệt hoá học.",
+     "latex": "K = \\left(\\prod_{J}\\left(\\frac{q_{J}^{\\circ}}{N_{A}}\\right)^{\\nu_{J}}\\right)e^{-\\Delta_{r}E_{0}/RT}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.nhiet-dong-thong-ke.hang-so-can-bang-tu-ham-phan-bo"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "hiểu K tính hoàn toàn từ dữ liệu phổ"
+   ],
+   "hints": [
+    "q tính từ dữ liệu phổ.",
+    "Không cần đo nhiệt hoá học."
+   ],
+   "tags": [
+    "nhiet-dong-thong-ke",
+    "hang-so-can-bang",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0042",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Động hoá học nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Theo mô hình quả cầu cứng có ngưỡng, tiết diện phản ứng là σ(ε) = σ(1 − ε_a/ε) với ε > ε_a. Nếu σ = 0.30 nm^2 và năng lượng va chạm ε = 2ε_a, tính σ(ε) (nm^2).",
+   "statement_en": "In the hard-sphere threshold model, the reactive cross-section is σ(ε) = σ(1 − ε_a/ε) for ε > ε_a. If σ = 0.30 nm^2 and the collision energy ε = 2ε_a, find σ(ε) (nm^2).",
+   "answer": "σ(ε) = 0.15 nm^2",
+   "answer_numeric": 0.15,
+   "answer_unit": "nm^2",
+   "tolerance": 0.005,
+   "solution_steps": [
+    {
+     "explain": "Áp dụng hàm kích thích với ε = 2ε_a nên ε_a/ε = 1/2.",
+     "latex": "\\sigma(\\varepsilon) = \\sigma\\left(1 - \\frac{\\varepsilon_{a}}{\\varepsilon}\\right)"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\sigma(\\varepsilon) = 0.30\\left(1 - \\tfrac{1}{2}\\right) = 0.15\\ \\mathrm{nm^{2}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dong-hoc-nang-cao.tiet-dien-phan-ung-theo-nang-luong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng hàm kích thích σ(ε)",
+    "thay tỉ số năng lượng"
+   ],
+   "hints": [
+    "σ(ε) = σ(1 − ε_a/ε).",
+    "ε = 2ε_a ⇒ ε_a/ε = 0.5."
+   ],
+   "tags": [
+    "dong-hoc",
+    "tiet-dien-phan-ung",
+    "va-cham",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0043",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Động hoá học nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Hiệu ứng đồng vị động học sơ cấp: k_H/k_D = exp[hc/(2k_B T)(ṽ_CH − ṽ_CD)]. Cho ṽ_CH = 2900 cm^-1, ṽ_CD = 2100 cm^-1, T = 298 K. Tính k_H/k_D. Dùng hc/k_B = 1.4388 cm·K.",
+   "statement_en": "Primary kinetic isotope effect: k_H/k_D = exp[hc/(2k_B T)(ṽ_CH − ṽ_CD)]. With ṽ_CH = 2900 cm^-1, ṽ_CD = 2100 cm^-1, T = 298 K, find k_H/k_D. Use hc/k_B = 1.4388 cm·K.",
+   "answer": "k_H/k_D ≈ 6.9",
+   "answer_numeric": 6.898,
+   "answer_unit": "",
+   "tolerance": 0.15,
+   "solution_steps": [
+    {
+     "explain": "Hiệu năng lượng điểm không giữa C-H và C-D quyết định tỉ số tốc độ.",
+     "latex": "\\frac{k_{H}}{k_{D}} = \\exp\\!\\left[\\frac{hc}{2k_{B}T}\\left(\\tilde{\\nu}_{CH}-\\tilde{\\nu}_{CD}\\right)\\right]"
+    },
+    {
+     "explain": "Số mũ = (1.4388/(2·298))·(2900−2100) = (1.4388·800)/596 = 1.931.",
+     "latex": "\\frac{k_{H}}{k_{D}} = e^{1.931} \\approx 6.9"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dong-hoc-nang-cao.hieu-ung-dong-vi-dong-hoc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính số mũ từ hiệu số sóng dao động",
+    "hiểu KIE lớn báo hiệu đứt C-H ở bước chậm"
+   ],
+   "hints": [
+    "Số mũ = hc(ṽ_CH−ṽ_CD)/(2k_BT).",
+    "= 1.4388×800/(2×298)."
+   ],
+   "tags": [
+    "dong-hoc",
+    "dong-vi",
+    "co-che",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0044",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Động hoá học nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Phản ứng xúc tác dị thể theo cơ chế Eley - Rideal: v = k·p_A·θ_B với θ_B = K_B p_B/(1 + K_B p_B). Cho k = 1.0·10^-3 mol/(m^2·s·Pa), p_A = 5.0 Pa, K_B = 0.50 Pa^-1, p_B = 2.0 Pa. Tính tốc độ v (mol/(m^2·s)).",
+   "statement_en": "Eley - Rideal heterogeneous catalysis: v = k·p_A·θ_B with θ_B = K_B p_B/(1 + K_B p_B). Given k = 1.0e-3 mol/(m^2·s·Pa), p_A = 5.0 Pa, K_B = 0.50 Pa^-1, p_B = 2.0 Pa, find v (mol/(m^2·s)).",
+   "answer": "v = 2.5·10^-3 mol/(m^2·s)",
+   "answer_numeric": 0.0025,
+   "answer_unit": "mol/(m^2·s)",
+   "tolerance": 5e-05,
+   "solution_steps": [
+    {
+     "explain": "Tính độ che phủ Langmuir của chất B.",
+     "latex": "\\theta_{B} = \\frac{K_{B}p_{B}}{1+K_{B}p_{B}} = \\frac{0.50\\times 2.0}{1+0.50\\times 2.0} = \\frac{1.0}{2.0} = 0.50"
+    },
+    {
+     "explain": "Tốc độ Eley - Rideal: chất A từ pha khí va chạm với B đã hấp phụ.",
+     "latex": "v = k\\,p_{A}\\,\\theta_{B} = (1.0\\times 10^{-3})(5.0)(0.50) = 2.5\\times 10^{-3}\\ \\mathrm{mol\\,m^{-2}s^{-1}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dong-hoc-nang-cao.co-che-eley-rideal"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 6,
+   "skills": [
+    "tính độ che phủ Langmuir",
+    "áp dụng biểu thức tốc độ Eley - Rideal"
+   ],
+   "hints": [
+    "θ_B = K_B p_B/(1+K_B p_B).",
+    "v = k p_A θ_B."
+   ],
+   "tags": [
+    "dong-hoc",
+    "xuc-tac-di-the",
+    "eley-rideal",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0045",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Động hoá học nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Phản ứng SN2 giữa một anion nucleophile và phân tử trung hoà (điện tích bị PHÂN TÁN ở trạng thái chuyển tiếp). Theo quy tắc Hughes - Ingold, tốc độ thay đổi thế nào khi chuyển từ dung môi phân cực proton sang dung môi phân cực APROTIC (DMSO, DMF)?",
+   "statement_en": "An SN2 reaction between an anionic nucleophile and a neutral molecule (charge DISPERSED in the transition state). By the Hughes - Ingold rules, how does the rate change on switching from a polar protic to a polar APROTIC solvent (DMSO, DMF)?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Tăng mạnh, vì aprotic không solvat hoá anion bằng liên kết hydro nên nucleophile hoạt động hơn"
+    },
+    {
+     "key": "B",
+     "text": "Giảm mạnh, vì độ phân cực tăng",
+     "why_wrong": "Yếu tố quyết định ở đây là aprotic giải phóng anion khỏi vỏ solvat proton, làm TĂNG tốc độ, không phải giảm."
+    },
+    {
+     "key": "C",
+     "text": "Không đổi",
+     "why_wrong": "Bản chất solvat hoá anion khác hẳn giữa protic và aprotic nên tốc độ thay đổi rõ rệt."
+    },
+    {
+     "key": "D",
+     "text": "Chuyển cơ chế thành SN1",
+     "why_wrong": "Đổi sang dung môi aprotic không biến SN2 thành SN1; vẫn SN2 nhưng nhanh hơn."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Dung môi aprotic không solvat hoá anion bằng liên kết hydro, nên nucleophile 'trần' và hoạt động hơn, tốc độ tăng mạnh.",
+     "latex": "\\text{anion + trung hoà} \\xrightarrow{\\text{aprotic}} \\uparrow k\\ (\\text{nucleophile không bị solvat proton})"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dong-hoc-nang-cao.quy-tac-hughes-ingold"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "phân biệt dung môi protic và aprotic với nucleophile anion"
+   ],
+   "hints": [
+    "Aprotic không tạo liên kết hydro với anion.",
+    "Nucleophile 'trần' ⇒ nhanh hơn."
+   ],
+   "tags": [
+    "dong-hoc",
+    "dung-moi",
+    "co-che",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0046",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Ở một thành phần hỗn hợp nước - ethanol, thể tích mol riêng phần của nước là 17.0 cm^3/mol và của ethanol là 57.5 cm^3/mol. Tính thể tích của hỗn hợp gồm 0.60 mol nước và 0.40 mol ethanol (cm^3).",
+   "statement_en": "At a given water - ethanol composition, the partial molar volume of water is 17.0 cm^3/mol and of ethanol 57.5 cm^3/mol. Find the volume of a mixture of 0.60 mol water and 0.40 mol ethanol (cm^3).",
+   "answer": "V = 33.2 cm^3",
+   "answer_numeric": 33.2,
+   "answer_unit": "cm^3",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Thể tích tổng bằng tổng số mol nhân thể tích mol riêng phần từng cấu tử.",
+     "latex": "V = \\sum_{J}n_{J}V_{J}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "V = 0.60(17.0) + 0.40(57.5) = 10.2 + 23.0 = 33.2\\ \\mathrm{cm^{3}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.dai-luong-mol-rieng-phan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "cộng đóng góp mol riêng phần"
+   ],
+   "hints": [
+    "V = Σ n_J V_J.",
+    "0.60×17.0 + 0.40×57.5."
+   ],
+   "tags": [
+    "dung-dich",
+    "mol-rieng-phan",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0047",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Theo quy ước Raoult (dung môi), hoạt độ của dung môi là a_A = p_A/p_A*. Dung môi nguyên chất có p_A* = 59.0 kPa; trong dung dịch (x_A = 0.90) áp suất hơi riêng phần p_A = 53.0 kPa. Tính hệ số hoạt độ γ_A của dung môi.",
+   "statement_en": "Under the Raoult convention (solvent), the solvent activity is a_A = p_A/p_A*. Pure solvent has p_A* = 59.0 kPa; in solution (x_A = 0.90) the partial vapor pressure is p_A = 53.0 kPa. Find the solvent activity coefficient γ_A.",
+   "answer": "γ_A ≈ 0.998",
+   "answer_numeric": 0.9981,
+   "answer_unit": "",
+   "tolerance": 0.003,
+   "solution_steps": [
+    {
+     "explain": "Hoạt độ dung môi theo quy ước Raoult.",
+     "latex": "a_{A} = \\frac{p_{A}}{p_{A}^{*}} = \\frac{53.0}{59.0} = 0.898"
+    },
+    {
+     "explain": "Hệ số hoạt độ bằng hoạt độ chia phân số mol.",
+     "latex": "\\gamma_{A} = \\frac{a_{A}}{x_{A}} = \\frac{0.898}{0.90} \\approx 0.998"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.hoat-do-hai-quy-uoc-raoult-henry",
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.phuong-trinh-gibbs-duhem"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính hoạt độ theo quy ước Raoult",
+    "suy hệ số hoạt độ"
+   ],
+   "hints": [
+    "a_A = p_A/p_A*.",
+    "γ_A = a_A/x_A."
+   ],
+   "tags": [
+    "dung-dich",
+    "hoat-do",
+    "raoult",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0048",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Trộn lí tưởng 0.50 mol chất A với 0.50 mol chất B (tổng 1.00 mol) ở 298 K. Tính biến thiên năng lượng Gibbs khi trộn Δ_trộnG (J). R = 8.314 J/(mol·K).",
+   "statement_en": "Ideally mix 0.50 mol of A with 0.50 mol of B (total 1.00 mol) at 298 K. Find the Gibbs energy of mixing Δ_mixG (J). R = 8.314.",
+   "answer": "Δ_trộnG ≈ -1717 J",
+   "answer_numeric": -1717.3,
+   "answer_unit": "J",
+   "tolerance": 5.0,
+   "solution_steps": [
+    {
+     "explain": "Năng lượng Gibbs trộn lí tưởng luôn âm, do entropy điều khiển.",
+     "latex": "\\Delta_{\\text{trộn}}G = nRT\\sum_{J}x_{J}\\ln x_{J}"
+    },
+    {
+     "explain": "Với x_A = x_B = 0.5: Σx ln x = 2(0.5 ln0.5) = -0.6931.",
+     "latex": "\\Delta_{\\text{trộn}}G = (1.00)(8.314)(298)(-0.6931) = -1717\\ \\mathrm{J}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.ham-tron-li-tuong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính Σx ln x cho hỗn hợp đẳng phần",
+    "nhận biết Δ_trộnG < 0 do entropy"
+   ],
+   "hints": [
+    "Δ_trộnG = nRT Σ x ln x.",
+    "x_A=x_B=0.5 ⇒ Σx ln x = −0.693."
+   ],
+   "tags": [
+    "dung-dich",
+    "tron",
+    "entropy",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0049",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Trong mô hình dung dịch chính quy, ln γ_A = ξ·x_B^2. Cho tham số tương tác ξ = 1.5 và phân số mol x_B = 0.30. Tính hệ số hoạt độ γ_A của cấu tử A.",
+   "statement_en": "In the regular solution model, ln γ_A = ξ·x_B^2. Given interaction parameter ξ = 1.5 and mole fraction x_B = 0.30, find the activity coefficient γ_A of A.",
+   "answer": "γ_A ≈ 1.14",
+   "answer_numeric": 1.1445,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Áp dụng biểu thức hệ số hoạt độ của dung dịch chính quy.",
+     "latex": "\\ln\\gamma_{A} = \\xi x_{B}^{2} = 1.5(0.30)^{2} = 0.135"
+    },
+    {
+     "explain": "Lấy hàm mũ.",
+     "latex": "\\gamma_{A} = e^{0.135} \\approx 1.14"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.dung-dich-chinh-quy"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng mô hình dung dịch chính quy",
+    "suy γ từ ln γ"
+   ],
+   "hints": [
+    "ln γ_A = ξ x_B².",
+    "γ_A = e^0.135."
+   ],
+   "tags": [
+    "dung-dich",
+    "ham-du",
+    "dung-dich-chinh-quy",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0050",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Một dung dịch loãng có phân số mol dung môi x_A = 0.98, chất tan x_B = 0.02 và hoạt độ dung môi a_A = 0.9807. Tính hệ số thẩm thấu φ của dung môi (thang phân số mol).",
+   "statement_en": "A dilute solution has solvent mole fraction x_A = 0.98, solute x_B = 0.02, and solvent activity a_A = 0.9807. Find the osmotic coefficient φ of the solvent (mole-fraction scale).",
+   "answer": "φ ≈ 0.955",
+   "answer_numeric": 0.9549,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Hệ số thẩm thấu theo định nghĩa dùng ln a_A.",
+     "latex": "\\phi = -\\frac{x_{A}}{x_{B}}\\ln a_{A}"
+    },
+    {
+     "explain": "ln(0.9807) = -0.01949; thay số.",
+     "latex": "\\phi = -\\frac{0.98}{0.02}(-0.01949) = 49\\times 0.01949 \\approx 0.955"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.he-so-tham-thau-dung-moi"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng định nghĩa hệ số thẩm thấu",
+    "tính ln a_A gần 1"
+   ],
+   "hints": [
+    "φ = −(x_A/x_B) ln a_A.",
+    "ln(0.9807) ≈ −0.0195."
+   ],
+   "tags": [
+    "dung-dich",
+    "he-so-tham-thau",
+    "hoat-do",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0051",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Với KCl trong nước ở 25 °C, độ dẫn điện mol giới hạn Λ_m° = 0.014986 S·m^2/mol. Dùng phương trình Debye - Hückel - Onsager Λ_m = Λ_m° − (A + B·Λ_m°)√c với A = 6.02·10^-3 S·m^2·mol^-1·(mol/L)^-1/2, B = 0.229 (mol/L)^-1/2. Tính Λ_m ở c = 0.0100 mol/L (S·m^2/mol).",
+   "statement_en": "For KCl in water at 25 °C, the limiting molar conductivity is Λ_m° = 0.014986 S·m^2/mol. Using the Debye - Hückel - Onsager equation Λ_m = Λ_m° − (A + B·Λ_m°)√c with A = 6.02e-3 and B = 0.229 (mol/L)^-1/2, find Λ_m at c = 0.0100 mol/L (S·m^2/mol).",
+   "answer": "Λ_m ≈ 0.01404 S·m^2/mol",
+   "answer_numeric": 0.014041,
+   "answer_unit": "S·m^2/mol",
+   "tolerance": 0.0002,
+   "solution_steps": [
+    {
+     "explain": "Áp dụng phương trình Debye - Hückel - Onsager cho chất điện li mạnh loãng.",
+     "latex": "\\Lambda_{m} = \\Lambda_{m}^{\\circ} - \\left(A + B\\Lambda_{m}^{\\circ}\\right)\\sqrt{c}"
+    },
+    {
+     "explain": "√c = 0.100; (A + BΛ_m°) = 6.02·10^-3 + 0.229·0.014986 = 9.452·10^-3.",
+     "latex": "\\Lambda_{m} = 0.014986 - (9.452\\times 10^{-3})(0.100) = 0.01404\\ \\mathrm{S\\,m^{2}/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.debye-huckel-onsager"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "áp dụng luật căn nồng độ cho độ dẫn điện",
+    "tính hệ số tổng hợp (A + BΛ°)"
+   ],
+   "hints": [
+    "Λ_m = Λ_m° − (A + BΛ_m°)√c.",
+    "√c = 0.1 khi c = 0.01."
+   ],
+   "tags": [
+    "dien-hoa",
+    "do-dan-dien",
+    "onsager",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0052",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tính thế điện hoá học μ̃ của ion (z = +1) trong một pha có thế Galvani φ = 0.050 V, hoạt độ a = 0.10, ở 298 K. Cho μ° = −100.0 kJ/mol, F = 96485 C/mol, R = 8.314 J/(mol·K). μ̃ = μ° + RT ln a + zFφ. (kJ/mol.)",
+   "statement_en": "Find the electrochemical potential μ̃ of an ion (z = +1) in a phase with Galvani potential φ = 0.050 V, activity a = 0.10, at 298 K. μ° = −100.0 kJ/mol, F = 96485 C/mol, R = 8.314. μ̃ = μ° + RT ln a + zFφ. (kJ/mol.)",
+   "answer": "μ̃ ≈ -100.88 kJ/mol",
+   "answer_numeric": -100.88,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Thế điện hoá học gồm thế hoá học cộng số hạng điện.",
+     "latex": "\\tilde{\\mu} = \\mu^{\\circ} + RT\\ln a + zF\\phi"
+    },
+    {
+     "explain": "RT ln a = 8.314·298·ln(0.10) = −5.71 kJ/mol; zFφ = 1·96485·0.050 = 4.82 kJ/mol.",
+     "latex": "\\tilde{\\mu} = -100.0 - 5.71 + 4.82 = -100.88\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.the-dien-hoa-hoc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "cộng số hạng hoá học và điện",
+    "đổi J sang kJ"
+   ],
+   "hints": [
+    "μ̃ = μ° + RT ln a + zFφ.",
+    "RT ln 0.10 ≈ −5.71 kJ/mol."
+   ],
+   "tags": [
+    "dien-hoa",
+    "the-dien-hoa-hoc",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0053",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Ion có hệ số khuếch tán D = 2.03·10^-9 m^2/s và điện tích z = +1. Tính độ dẫn điện mol của ion λ (S·m^2/mol) theo phương trình Nernst - Einstein ở 298 K. F = 96485 C/mol, R = 8.314 J/(mol·K).",
+   "statement_en": "An ion has diffusion coefficient D = 2.03e-9 m^2/s and charge z = +1. Find its molar ionic conductivity λ (S·m^2/mol) from the Nernst - Einstein equation at 298 K. F = 96485, R = 8.314.",
+   "answer": "λ ≈ 7.63·10^-3 S·m^2/mol",
+   "answer_numeric": 0.0076276,
+   "answer_unit": "S·m^2/mol",
+   "tolerance": 0.0002,
+   "solution_steps": [
+    {
+     "explain": "Phương trình Nernst - Einstein nối độ dẫn điện của ion với hệ số khuếch tán.",
+     "latex": "\\lambda = \\frac{z^{2}D F^{2}}{RT}"
+    },
+    {
+     "explain": "Thay số (F^2 = 9.309·10^9).",
+     "latex": "\\lambda = \\frac{(1)^{2}(2.03\\times 10^{-9})(9.309\\times 10^{9})}{(8.314)(298)} \\approx 7.63\\times 10^{-3}\\ \\mathrm{S\\,m^{2}/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.phuong-trinh-nernst-einstein"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "nối độ dẫn điện với hệ số khuếch tán",
+    "thay F² và RT"
+   ],
+   "hints": [
+    "λ = z²DF²/(RT).",
+    "F² ≈ 9.31e9."
+   ],
+   "tags": [
+    "dien-hoa",
+    "nernst-einstein",
+    "khuech-tan",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0054",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Màng bán thấm ngăn hai ngăn. Ngăn trong chứa polyanion không khuếch tán ở nồng độ điện tích 0.040 mol/L; ngăn ngoài là NaCl với [Na+] = [Cl-] = 0.10 mol/L. Áp dụng cân bằng Donnan [Na+]in[Cl-]in = [Na+]out[Cl-]out và trung hoà điện ngăn trong [Na+]in = [Cl-]in + 0.040. Tính [Cl-]in (mol/L).",
+   "statement_en": "A semipermeable membrane separates two compartments. The inner one holds a non-diffusible polyanion at charge concentration 0.040 mol/L; the outer is NaCl with [Na+] = [Cl-] = 0.10 mol/L. Using Donnan equilibrium [Na+]in[Cl-]in = [Na+]out[Cl-]out and inner electroneutrality [Na+]in = [Cl-]in + 0.040, find [Cl-]in (mol/L).",
+   "answer": "[Cl-]in ≈ 0.082 mol/L",
+   "answer_numeric": 0.08198,
+   "answer_unit": "mol/L",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Đặt x = [Cl-]in; trung hoà điện cho [Na+]in = x + 0.040; điều kiện Donnan cho tích ion trong bằng tích ion ngoài.",
+     "latex": "(x+0.040)\\,x = (0.10)(0.10) = 0.010"
+    },
+    {
+     "explain": "Giải phương trình bậc hai x² + 0.040x − 0.010 = 0, lấy nghiệm dương.",
+     "latex": "x = \\frac{-0.040 + \\sqrt{0.040^{2}+4(0.010)}}{2} \\approx 0.082\\ \\mathrm{mol/L}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.can-bang-donnan"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 8,
+   "skills": [
+    "lập phương trình Donnan với trung hoà điện",
+    "giải phương trình bậc hai"
+   ],
+   "hints": [
+    "(x+0.040)x = 0.10².",
+    "Giải bậc hai lấy nghiệm dương."
+   ],
+   "tags": [
+    "dien-hoa",
+    "donnan",
+    "mang",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0055",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Dung dịch và điện hoá nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Dung dịch CaCl2 (M_pX_q với p = 1, q = 2, s = 3) có molan b = 0.10 mol/kg. Tính molan trung bình ion b_± theo b_± = (p^p·q^q)^(1/s)·b (mol/kg).",
+   "statement_en": "A CaCl2 solution (M_pX_q with p = 1, q = 2, s = 3) has molality b = 0.10 mol/kg. Find the mean ionic molality b_± from b_± = (p^p·q^q)^(1/s)·b (mol/kg).",
+   "answer": "b_± ≈ 0.159 mol/kg",
+   "answer_numeric": 0.15874,
+   "answer_unit": "mol/kg",
+   "tolerance": 0.002,
+   "solution_steps": [
+    {
+     "explain": "Molan trung bình ion cho chất điện li M_pX_q.",
+     "latex": "b_{\\pm} = \\left(p^{p}q^{q}\\right)^{1/s} b"
+    },
+    {
+     "explain": "Với CaCl2: (1^1·2^2)^(1/3) = 4^(1/3) = 1.587.",
+     "latex": "b_{\\pm} = 1.587\\times 0.10 = 0.159\\ \\mathrm{mol/kg}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.dung-dich-dien-hoa-nang-cao.hoat-do-trung-binh-ion-thang-molan"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng thừa số (p^p q^q)^(1/s)",
+    "tính molan trung bình ion"
+   ],
+   "hints": [
+    "b_± = (p^p q^q)^(1/s) b.",
+    "CaCl2: 4^(1/3) ≈ 1.587."
+   ],
+   "tags": [
+    "hoat-do",
+    "dien-li",
+    "thang-molan",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0056",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Dùng quy tắc Woodward - Fieser cho dien liên hợp kiểu heteroannular (transoid), λ_cơ sở = 214 nm. Một dien có 4 nhóm alkyl/mảnh vòng (mỗi +5 nm) và 1 liên kết đôi ngoại vòng (exocyclic, +5 nm). Tính λ_max dự đoán (nm).",
+   "statement_en": "Using Woodward - Fieser rules for a heteroannular (transoid) conjugated diene, λ_base = 214 nm. A diene has 4 alkyl/ring residues (+5 nm each) and 1 exocyclic double bond (+5 nm). Predict λ_max (nm).",
+   "answer": "λ_max = 239 nm",
+   "answer_numeric": 239.0,
+   "answer_unit": "nm",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "Cộng các số gia vào giá trị cơ sở heteroannular.",
+     "latex": "\\lambda_{\\max} = \\lambda_{\\text{cơ sở}} + \\sum_{i}\\Delta_{i}"
+    },
+    {
+     "explain": "Thay: 214 + 4·5 + 5.",
+     "latex": "\\lambda_{\\max} = 214 + 20 + 5 = 239\\ \\mathrm{nm}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.quy-tac-woodward-fieser-dien"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "chọn giá trị cơ sở heteroannular",
+    "cộng số gia nhóm thế và exocyclic"
+   ],
+   "hints": [
+    "λ_max = 214 + Σ số gia.",
+    "4 alkyl (+5) + 1 exocyclic (+5)."
+   ],
+   "tags": [
+    "huu-co",
+    "woodward-fieser",
+    "uv-vis",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0057",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Một phản ứng tạo cation liên hợp trực tiếp với nhóm thế para tuân theo lg(k/k0) = ρ+·σ+ với ρ+ = −3.0. Với nhóm p-OCH3 (σ+ = −0.78), tính tỉ số tốc độ k/k0.",
+   "statement_en": "A reaction forming a cation directly conjugated with a para substituent follows lg(k/k0) = ρ+·σ+ with ρ+ = −3.0. For p-OCH3 (σ+ = −0.78), find the rate ratio k/k0.",
+   "answer": "k/k0 ≈ 219",
+   "answer_numeric": 218.8,
+   "answer_unit": "",
+   "tolerance": 3.0,
+   "solution_steps": [
+    {
+     "explain": "Dùng thang σ+ khi điện tích dương liên hợp trực tiếp với nhóm thế.",
+     "latex": "\\lg\\frac{k}{k_{0}} = \\rho^{+}\\sigma^{+} = (-3.0)(-0.78) = 2.34"
+    },
+    {
+     "explain": "Lấy luỹ thừa 10.",
+     "latex": "\\frac{k}{k_{0}} = 10^{2.34} \\approx 219"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.hang-so-hammett-sigma-plus-minus"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "chọn đúng thang σ+",
+    "chuyển lg(k/k0) sang tỉ số"
+   ],
+   "hints": [
+    "lg(k/k0) = ρ+ σ+.",
+    "k/k0 = 10^2.34."
+   ],
+   "tags": [
+    "huu-co",
+    "hammett",
+    "co-che",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0058",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Phương trình Taft: lg(k/k0) = ρ*·σ* + δ·E_s. Cho ρ* = 2.48, σ* = 0.60, δ = 1.00, E_s = −0.90. Tính tỉ số tốc độ k/k0.",
+   "statement_en": "Taft equation: lg(k/k0) = ρ*·σ* + δ·E_s. Given ρ* = 2.48, σ* = 0.60, δ = 1.00, E_s = −0.90, find the rate ratio k/k0.",
+   "answer": "k/k0 ≈ 3.87",
+   "answer_numeric": 3.873,
+   "answer_unit": "",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Tách hiệu ứng cảm ứng và hiệu ứng không gian.",
+     "latex": "\\lg\\frac{k}{k_{0}} = \\rho^{*}\\sigma^{*} + \\delta E_{s} = 2.48(0.60) + 1.00(-0.90) = 0.588"
+    },
+    {
+     "explain": "Lấy luỹ thừa 10.",
+     "latex": "\\frac{k}{k_{0}} = 10^{0.588} \\approx 3.87"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.phuong-trinh-taft"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "tách đóng góp cảm ứng và không gian",
+    "chuyển lg sang tỉ số"
+   ],
+   "hints": [
+    "lg(k/k0) = ρ*σ* + δE_s.",
+    "= 1.488 − 0.90."
+   ],
+   "tags": [
+    "huu-co",
+    "taft",
+    "hieu-ung-khong-gian",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0059",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Một phản ứng bất đối xứng cho tỉ lệ đối quang er = 95:5 (tức k_R/k_S = 19) ở 298 K dưới kiểm soát động học. Tính độ lớn |ΔΔ‡G| (kJ/mol) giữa hai trạng thái chuyển tiếp đối quang. R = 8.314 J/(mol·K).",
+   "statement_en": "An asymmetric reaction gives enantiomer ratio er = 95:5 (i.e., k_R/k_S = 19) at 298 K under kinetic control. Find the magnitude |ΔΔ‡G| (kJ/mol) between the two enantiomeric transition states. R = 8.314.",
+   "answer": "|ΔΔ‡G| ≈ 7.30 kJ/mol",
+   "answer_numeric": 7.295,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Quan hệ độ chọn lọc đối quang và hiệu năng lượng hoạt hoá.",
+     "latex": "\\Delta\\Delta^{\\ddagger}G = -RT\\ln\\frac{k_{R}}{k_{S}} = -RT\\ln(er)"
+    },
+    {
+     "explain": "Thay er = 19.",
+     "latex": "|\\Delta\\Delta^{\\ddagger}G| = (8.314)(298)\\ln 19 = 7295\\ \\mathrm{J/mol} \\approx 7.30\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.chon-loc-doi-quang-va-ddg"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "nối tỉ lệ đối quang với ΔΔ‡G",
+    "chú ý vài kJ/mol quyết định độ chọn lọc"
+   ],
+   "hints": [
+    "ΔΔ‡G = −RT ln(er).",
+    "ln 19 ≈ 2.944."
+   ],
+   "tags": [
+    "huu-co",
+    "hoa-lap-the",
+    "xuc-tac-bat-doi",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0060",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Butane có cấu dạng anti (g = 1, ΔG° = 0) và gauche (g = 2 do hai dạng tương đương, ΔG° = 3.8 kJ/mol so với anti). Tính phần cấu dạng gauche ở 298 K. R = 8.314 J/(mol·K).",
+   "statement_en": "Butane has anti (g = 1, ΔG° = 0) and gauche (g = 2 for two equivalent forms, ΔG° = 3.8 kJ/mol relative to anti) conformers. Find the fraction of gauche at 298 K. R = 8.314.",
+   "answer": "Phần gauche ≈ 0.30",
+   "answer_numeric": 0.301,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Tỉ lệ dân số theo Boltzmann có kể bậc suy biến (hai dạng gauche).",
+     "latex": "\\frac{N_{g}}{N_{a}} = \\frac{g_{g}}{g_{a}}e^{-\\Delta G^{\\circ}/RT} = 2\\,e^{-3800/(8.314\\times 298)} = 0.431"
+    },
+    {
+     "explain": "Phần gauche bằng tỉ lệ chia (1 + tỉ lệ).",
+     "latex": "f_{g} = \\frac{0.431}{1+0.431} \\approx 0.30"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.phan-bo-boltzmann-cau-dang"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "kể bậc suy biến của cấu dạng gauche",
+    "chuyển tỉ lệ sang phần trăm"
+   ],
+   "hints": [
+    "N_g/N_a = 2 e^(−ΔG/RT).",
+    "f_g = ratio/(1+ratio)."
+   ],
+   "tags": [
+    "huu-co",
+    "cau-dang",
+    "boltzmann",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0061",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Hai cấu dạng chuyển hoá nhanh cho hai sản phẩm qua nguyên lí Curtin - Hammett: [P1]/[P2] = exp(−ΔΔ‡G/RT). Nếu ΔΔ‡G = −8.0 kJ/mol (trạng thái chuyển tiếp cho P1 thấp hơn) ở 298 K, tính tỉ lệ [P1]/[P2]. R = 8.314 J/(mol·K).",
+   "statement_en": "Two rapidly interconverting conformers give two products by the Curtin - Hammett principle: [P1]/[P2] = exp(−ΔΔ‡G/RT). If ΔΔ‡G = −8.0 kJ/mol (P1 transition state lower) at 298 K, find [P1]/[P2]. R = 8.314.",
+   "answer": "[P1]/[P2] ≈ 25.3",
+   "answer_numeric": 25.25,
+   "answer_unit": "",
+   "tolerance": 0.5,
+   "solution_steps": [
+    {
+     "explain": "Tỉ lệ sản phẩm chỉ phụ thuộc hiệu năng lượng hai trạng thái chuyển tiếp, không phụ thuộc dân số cấu dạng ban đầu.",
+     "latex": "\\frac{[\\mathrm{P}_{1}]}{[\\mathrm{P}_{2}]} = \\exp\\!\\left(-\\frac{\\Delta\\Delta^{\\ddagger}G}{RT}\\right)"
+    },
+    {
+     "explain": "Thay ΔΔ‡G = −8000 J/mol.",
+     "latex": "\\frac{[\\mathrm{P}_{1}]}{[\\mathrm{P}_{2}]} = \\exp\\!\\left(\\frac{8000}{8.314\\times 298}\\right) = e^{3.229} \\approx 25.3"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.nguyen-li-curtin-hammett"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng Curtin - Hammett",
+    "hiểu tỉ lệ chỉ phụ thuộc ΔΔ‡G"
+   ],
+   "hints": [
+    "[P1]/[P2] = exp(−ΔΔ‡G/RT).",
+    "ΔΔ‡G = −8.0 kJ/mol."
+   ],
+   "tags": [
+    "huu-co",
+    "curtin-hammett",
+    "co-che",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0062",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo quy tắc Woodward - Hoffmann cho cộng vòng (kiểu supra-supra), hãy so sánh phản ứng [2+2] (4 electron π) và [4+2] Diels - Alder (6 electron π) về mặt nhiệt/quang hoá.",
+   "statement_en": "By the Woodward - Hoffmann rules for cycloadditions (supra-supra), compare [2+2] (4 π electrons) and [4+2] Diels - Alder (6 π electrons) thermally/photochemically.",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "[4+2] cho phép về nhiệt; [2+2] bị cấm về nhiệt nhưng cho phép khi chiếu sáng"
+    },
+    {
+     "key": "B",
+     "text": "Cả hai đều cho phép về nhiệt",
+     "why_wrong": "[2+2] có 4n electron nên bị CẤM về nhiệt theo kiểu supra-supra; chỉ cho phép quang hoá."
+    },
+    {
+     "key": "C",
+     "text": "Cả hai đều bị cấm về nhiệt",
+     "why_wrong": "[4+2] có 6 = 4n+2 electron nên cho phép về nhiệt; Diels - Alder chạy khi đun nóng."
+    },
+    {
+     "key": "D",
+     "text": "[2+2] cho phép nhiệt, [4+2] cấm nhiệt",
+     "why_wrong": "Ngược lại: hệ 4n+2 electron cho phép nhiệt, hệ 4n bị cấm nhiệt."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Hệ 4n+2 electron cho phép về nhiệt (supra-supra); hệ 4n electron bị cấm về nhiệt nhưng cho phép khi chiếu sáng.",
+     "latex": "4n+2\\ \\Rightarrow\\ [\\pi_s+\\pi_s]\\ \\text{cho phép nhiệt};\\quad 4n\\ \\Rightarrow\\ \\text{cấm nhiệt, cho phép quang hoá}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.woodward-hoffmann-cong-vong"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "đếm tổng số electron π",
+    "áp dụng quy tắc 4n / 4n+2"
+   ],
+   "hints": [
+    "Đếm tổng electron π.",
+    "4n+2 → cho phép nhiệt."
+   ],
+   "tags": [
+    "huu-co",
+    "woodward-hoffmann",
+    "diels-alder",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0063",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá hữu cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo tiên đề Hammond, bước tách nguyên tử H bằng Br• trong halogen hoá gốc tự do là bước THU NHIỆT mạnh. Trạng thái chuyển tiếp của bước này giống cấu trúc nào và hệ quả về độ chọn lọc?",
+   "statement_en": "By the Hammond postulate, H-abstraction by Br• in radical halogenation is strongly ENDOTHERMIC. Which structure does its transition state resemble, and what is the selectivity consequence?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Giống sản phẩm (gốc alkyl) - TTCT 'muộn', nên chọn lọc cao (ưu tiên C bậc ba)"
+    },
+    {
+     "key": "B",
+     "text": "Giống chất đầu (TTCT sớm), chọn lọc thấp",
+     "why_wrong": "Đó là trường hợp bước TOẢ nhiệt (ví dụ với Cl•); bước thu nhiệt cho TTCT muộn giống sản phẩm."
+    },
+    {
+     "key": "C",
+     "text": "Không liên quan đến ΔH của bước",
+     "why_wrong": "Tiên đề Hammond gắn cấu trúc TTCT với ΔH: thu nhiệt → TTCT giống sản phẩm."
+    },
+    {
+     "key": "D",
+     "text": "Giống một trung gian tứ diện",
+     "why_wrong": "Bước tách H không qua trung gian tứ diện; TTCT giống gốc alkyl (sản phẩm)."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Bước thu nhiệt có trạng thái chuyển tiếp 'muộn' giống sản phẩm (gốc alkyl), nên tính bền của gốc quyết định mạnh, cho độ chọn lọc cao (ưu tiên C bậc ba).",
+     "latex": "\\Delta_{r}H \\gg 0 \\Rightarrow \\text{TTCT giống SẢN PHẨM (muộn)} \\Rightarrow \\text{chọn lọc cao}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.huu-co-nang-cao.tien-de-hammond"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "liên hệ ΔH của bước với vị trí TTCT",
+    "suy độ chọn lọc"
+   ],
+   "hints": [
+    "Thu nhiệt ⇒ TTCT muộn.",
+    "TTCT giống sản phẩm ⇒ chọn lọc cao."
+   ],
+   "tags": [
+    "huu-co",
+    "hammond",
+    "co-che",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0064",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Tham số Racah B của ion Co(III) tự do là 1030 cm^-1; trong phức [Co(NH3)6]^3+ đo được B = 780 cm^-1. Tính tỉ số nephelauxetic β.",
+   "statement_en": "The Racah parameter B of free Co(III) is 1030 cm^-1; in [Co(NH3)6]^3+ it is measured as B = 780 cm^-1. Find the nephelauxetic ratio β.",
+   "answer": "β ≈ 0.76",
+   "answer_numeric": 0.7573,
+   "answer_unit": "",
+   "tolerance": 0.01,
+   "solution_steps": [
+    {
+     "explain": "Tỉ số nephelauxetic là B trong phức chia B của ion tự do; β < 1 cho thấy liên kết có phần cộng hoá trị.",
+     "latex": "\\beta = \\frac{B_{\\text{phức}}}{B_{\\text{ion tự do}}} = \\frac{780}{1030} \\approx 0.76"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.tham-so-racah-nephelauxetic"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "tính tỉ số Racah",
+    "diễn giải tính cộng hoá trị của liên kết M-L"
+   ],
+   "hints": [
+    "β = B(phức)/B(tự do).",
+    "780/1030."
+   ],
+   "tags": [
+    "vo-co",
+    "racah",
+    "nephelauxetic",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0065",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Với phản ứng tạo phức chelat, Δ_rH° = −60.0 kJ/mol và Δ_rS° = +30.0 J/(mol·K). Tính Δ_rG° ở 298 K (kJ/mol).",
+   "statement_en": "For a chelate formation reaction, Δ_rH° = −60.0 kJ/mol and Δ_rS° = +30.0 J/(mol·K). Find Δ_rG° at 298 K (kJ/mol).",
+   "answer": "Δ_rG° = -68.9 kJ/mol",
+   "answer_numeric": -68.94,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.2,
+   "solution_steps": [
+    {
+     "explain": "Áp dụng Δ_rG° = Δ_rH° − TΔ_rS°; hiệu ứng chelat có Δ_rS° > 0 (giải phóng nhiều phân tử nước).",
+     "latex": "\\Delta_{r}G^{\\circ} = \\Delta_{r}H^{\\circ} - T\\Delta_{r}S^{\\circ}"
+    },
+    {
+     "explain": "Đổi Δ_rS° = 0.0300 kJ/(mol·K) rồi thay số.",
+     "latex": "\\Delta_{r}G^{\\circ} = -60.0 - (298)(0.0300) = -60.0 - 8.94 = -68.9\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.hieu-ung-chelat-nhiet-dong"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng G = H − TS",
+    "hiểu vai trò entropy trong hiệu ứng chelat"
+   ],
+   "hints": [
+    "Δ_rG° = Δ_rH° − TΔ_rS°.",
+    "TΔ_rS° = 298×0.030 = 8.94 kJ."
+   ],
+   "tags": [
+    "vo-co",
+    "chelat",
+    "hang-so-ben",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0066",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Ion trung tâm có N = 6 vị trí phối trí tương đương. Tính tỉ số thống kê K_1/K_2 của hai hằng số bền từng nấc theo K_n/K_(n+1) = (N−n+1)(n+1)/(n(N−n)) với n = 1.",
+   "statement_en": "A central ion has N = 6 equivalent coordination sites. Find the statistical ratio K_1/K_2 of successive stability constants from K_n/K_(n+1) = (N−n+1)(n+1)/(n(N−n)) with n = 1.",
+   "answer": "K_1/K_2 = 2.40",
+   "answer_numeric": 2.4,
+   "answer_unit": "",
+   "tolerance": 0.02,
+   "solution_steps": [
+    {
+     "explain": "Áp dụng thừa số thống kê với N = 6 và n = 1.",
+     "latex": "\\frac{K_{1}}{K_{2}} = \\frac{(N-n+1)(n+1)}{n(N-n)} = \\frac{(6)(2)}{(1)(5)}"
+    },
+    {
+     "explain": "Tính giá trị: ngay cả khi không có tương tác, K vẫn giảm theo n.",
+     "latex": "\\frac{K_{1}}{K_{2}} = \\frac{12}{5} = 2.40"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.hang-so-ben-tung-nac-thong-ke"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 5,
+   "skills": [
+    "áp dụng thừa số thống kê",
+    "hiểu K giảm dần chỉ do lí do thống kê"
+   ],
+   "hints": [
+    "K1/K2 = (N−n+1)(n+1)/(n(N−n)).",
+    "N=6, n=1."
+   ],
+   "tags": [
+    "vo-co",
+    "hang-so-ben",
+    "thong-ke",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0067",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "dien-so",
+   "statement_vi": "Một nguyên tử có năng lượng ion hoá thứ nhất I = 13.6 eV và ái lực electron A_e = 3.4 eV. Tính độ cứng tuyệt đối η (eV) theo định nghĩa Pearson - Parr.",
+   "statement_en": "An atom has first ionization energy I = 13.6 eV and electron affinity A_e = 3.4 eV. Find the absolute hardness η (eV) per the Pearson - Parr definition.",
+   "answer": "η = 5.1 eV",
+   "answer_numeric": 5.1,
+   "answer_unit": "eV",
+   "tolerance": 0.05,
+   "solution_steps": [
+    {
+     "explain": "Độ cứng tuyệt đối là nửa hiệu năng lượng ion hoá và ái lực electron.",
+     "latex": "\\eta = \\frac{I - A_{e}}{2}"
+    },
+    {
+     "explain": "Thay số.",
+     "latex": "\\eta = \\frac{13.6 - 3.4}{2} = 5.1\\ \\mathrm{eV}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.nguyen-li-hsab"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "áp dụng định nghĩa độ cứng tuyệt đối"
+   ],
+   "hints": [
+    "η = (I − A_e)/2.",
+    "(13.6 − 3.4)/2."
+   ],
+   "tags": [
+    "vo-co",
+    "hsab",
+    "acid-base",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0068",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá vô cơ nâng cao",
+   "type": "trac-nghiem",
+   "statement_vi": "Theo dãy Irving - Williams, với hầu hết phối tử, phức bát diện M(II) của ion kim loại 3d nào BỀN NHẤT?",
+   "statement_en": "By the Irving - Williams series, for most ligands, which 3d M(II) octahedral complex is the MOST stable?",
+   "answer": "A",
+   "choices": [
+    {
+     "key": "A",
+     "text": "Cu²⁺"
+    },
+    {
+     "key": "B",
+     "text": "Mn²⁺",
+     "why_wrong": "Mn²⁺ (d⁵ spin cao, CFSE = 0) cho phức KÉM bền nhất, đứng đầu dãy theo chiều tăng độ bền."
+    },
+    {
+     "key": "C",
+     "text": "Zn²⁺",
+     "why_wrong": "Độ bền tăng tới Cu²⁺ rồi GIẢM ở Zn²⁺ (d¹⁰); Zn²⁺ kém bền hơn Cu²⁺."
+    },
+    {
+     "key": "D",
+     "text": "Fe²⁺",
+     "why_wrong": "Fe²⁺ bền hơn Mn²⁺ nhưng kém Cu²⁺; cực đại là Cu²⁺."
+    }
+   ],
+   "solution_steps": [
+    {
+     "explain": "Độ bền tăng dần Mn²⁺ < Fe²⁺ < Co²⁺ < Ni²⁺ < Cu²⁺ rồi giảm ở Zn²⁺; cực đại ở Cu²⁺ do biến dạng Jahn - Teller.",
+     "latex": "\\mathrm{Mn^{2+}} < \\mathrm{Fe^{2+}} < \\mathrm{Co^{2+}} < \\mathrm{Ni^{2+}} < \\mathrm{Cu^{2+}} > \\mathrm{Zn^{2+}}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.vo-co-nang-cao.day-irving-williams"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 4,
+   "skills": [
+    "nhớ thứ tự dãy Irving - Williams",
+    "nhận biết cực đại ở Cu²⁺"
+   ],
+   "hints": [
+    "Cực đại của dãy.",
+    "Jahn - Teller làm bền Cu²⁺."
+   ],
+   "tags": [
+    "vo-co",
+    "irving-williams",
+    "hang-so-ben",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0069",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một protein theo mô hình hai trạng thái có phần mở cuộn f_U = 0.10 ở 298 K. Tính năng lượng Gibbs mở cuộn ΔG_U (kJ/mol). K = f_U/(1−f_U); ΔG_U = −RT ln K; R = 8.314 J/(mol·K).",
+   "statement_en": "A two-state protein has unfolded fraction f_U = 0.10 at 298 K. Find the unfolding Gibbs energy ΔG_U (kJ/mol). K = f_U/(1−f_U); ΔG_U = −RT ln K; R = 8.314.",
+   "answer": "ΔG_U ≈ +5.44 kJ/mol",
+   "answer_numeric": 5.444,
+   "answer_unit": "kJ/mol",
+   "tolerance": 0.1,
+   "solution_steps": [
+    {
+     "explain": "Hằng số cân bằng mở cuộn từ phần mở cuộn.",
+     "latex": "K = \\frac{f_{U}}{1-f_{U}} = \\frac{0.10}{0.90} = 0.1111"
+    },
+    {
+     "explain": "Năng lượng Gibbs mở cuộn (dương nghĩa là dạng gấp cuộn bền hơn).",
+     "latex": "\\Delta G_{U} = -RT\\ln K = -(8.314)(298)\\ln(0.1111) = +5.44\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.can-bang-hai-trang-thai-gap-cuon"
+   ],
+   "difficulty": 3,
+   "estimated_minutes": 5,
+   "skills": [
+    "tính K từ phần mở cuộn",
+    "suy độ bền protein qua dấu của ΔG_U"
+   ],
+   "hints": [
+    "K = f_U/(1−f_U).",
+    "ΔG_U = −RT ln K."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "protein",
+    "gap-cuon",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0070",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Từ đường cong biến tính hai trạng thái của một protein, tại nhiệt độ nóng chảy T_m = 333 K độ dốc (df_U/dT) = 0.030 K^-1. Tính enthalpy Van't Hoff ΔH_vH = 4RT_m^2(df_U/dT) (kJ/mol). R = 8.314 J/(mol·K).",
+   "statement_en": "From a two-state protein denaturation curve, at the melting temperature T_m = 333 K the slope (df_U/dT) = 0.030 K^-1. Find the van't Hoff enthalpy ΔH_vH = 4RT_m^2(df_U/dT) (kJ/mol). R = 8.314.",
+   "answer": "ΔH_vH ≈ 111 kJ/mol",
+   "answer_numeric": 110.63,
+   "answer_unit": "kJ/mol",
+   "tolerance": 1.0,
+   "solution_steps": [
+    {
+     "explain": "Enthalpy Van't Hoff từ độ dốc của đường cong biến tính tại điểm giữa.",
+     "latex": "\\Delta H_{vH} = 4RT_{m}^{2}\\left(\\frac{df_{U}}{dT}\\right)_{T_{m}}"
+    },
+    {
+     "explain": "Thay số: 4·8.314·333²·0.030.",
+     "latex": "\\Delta H_{vH} = 4(8.314)(333)^{2}(0.030) = 1.106\\times 10^{5}\\ \\mathrm{J/mol} \\approx 111\\ \\mathrm{kJ/mol}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.enthalpy-vant-hoff-tu-duong-cong-nong-chay"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 6,
+   "skills": [
+    "áp dụng công thức Van't Hoff cho đường cong biến tính",
+    "thay T_m và độ dốc"
+   ],
+   "hints": [
+    "ΔH_vH = 4RT_m²(df/dT).",
+    "T_m² = 333²."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "protein",
+    "vant-hoff",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0071",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Trong máy siêu li tâm quay 50000 vòng/phút (ω = 5236 rad/s), một đại phân tử ở r = 6.5 cm lắng với tốc độ u = 3.0·10^-6 m/s. Tính hệ số lắng s theo đơn vị svedberg (1 S = 10^-13 s). s = u/(ω^2 r).",
+   "statement_en": "In an ultracentrifuge at 50000 rpm (ω = 5236 rad/s), a macromolecule at r = 6.5 cm sediments at u = 3.0e-6 m/s. Find the sedimentation coefficient s in svedberg (1 S = 1e-13 s). s = u/(ω^2 r).",
+   "answer": "s ≈ 16.8 S",
+   "answer_numeric": 16.83,
+   "answer_unit": "S",
+   "tolerance": 0.3,
+   "solution_steps": [
+    {
+     "explain": "Hệ số lắng là tốc độ lắng trên tích ω²r.",
+     "latex": "s = \\frac{u}{\\omega^{2}r}"
+    },
+    {
+     "explain": "Thay r = 0.065 m: ω²r = 5236²·0.065 = 1.782·10^6; s = 3.0·10^-6/1.782·10^6 = 1.68·10^-12 s = 16.8 S.",
+     "latex": "s = \\frac{3.0\\times 10^{-6}}{(5236)^{2}(0.065)} = 1.68\\times 10^{-12}\\ \\mathrm{s} = 16.8\\ \\mathrm{S}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.he-so-lang-svedberg"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "đổi rpm sang rad/s (cho sẵn)",
+    "đổi hệ số lắng sang đơn vị svedberg"
+   ],
+   "hints": [
+    "s = u/(ω²r).",
+    "1 S = 1e−13 s; r = 0.065 m."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "svedberg",
+    "sieu-li-tam",
+    "intl-undergrad"
+   ]
+  },
+  {
+   "id": "prob.chemistry.ext3-chemistry-daihoc.0072",
+   "subject": "chemistry",
+   "level": "dai-hoc",
+   "grades": [
+    13
+   ],
+   "curriculum": [
+    "intl-undergrad"
+   ],
+   "topic": "Hoá sinh vật lí",
+   "type": "dien-so",
+   "statement_vi": "Một thí nghiệm ITC cho hằng số liên kết K_a = 1.0·10^6 và enthalpy liên kết ΔH° = −40.0 kJ/mol ở 298 K. Tính entropy liên kết ΔS° (J/(mol·K)). Dùng ΔG° = −RT ln K_a = ΔH° − TΔS°; R = 8.314 J/(mol·K).",
+   "statement_en": "An ITC experiment gives binding constant K_a = 1.0e6 and binding enthalpy ΔH° = −40.0 kJ/mol at 298 K. Find the binding entropy ΔS° (J/(mol·K)). Use ΔG° = −RT ln K_a = ΔH° − TΔS°; R = 8.314.",
+   "answer": "ΔS° ≈ -19.4 J/(mol·K)",
+   "answer_numeric": -19.37,
+   "answer_unit": "J/(mol·K)",
+   "tolerance": 0.3,
+   "solution_steps": [
+    {
+     "explain": "Tính ΔG° từ hằng số liên kết.",
+     "latex": "\\Delta G^{\\circ} = -RT\\ln K_{a} = -(8.314)(298)\\ln(10^{6}) = -34.23\\ \\mathrm{kJ/mol}"
+    },
+    {
+     "explain": "Từ ΔG° = ΔH° − TΔS° suy ra TΔS° = ΔH° − ΔG° = −40.0 − (−34.23) = −5.77 kJ/mol; chia T.",
+     "latex": "\\Delta S^{\\circ} = \\frac{\\Delta H^{\\circ} - \\Delta G^{\\circ}}{T} = \\frac{-5770}{298} \\approx -19.4\\ \\mathrm{J/(mol\\,K)}"
+    }
+   ],
+   "formulas_used": [
+    "chemistry.dai-hoc.hoa-sinh-vat-li.chuan-do-nhiet-luong-dang-nhiet-itc"
+   ],
+   "difficulty": 4,
+   "estimated_minutes": 7,
+   "skills": [
+    "tính ΔG° từ K_a",
+    "tách ΔS° từ ΔG° và ΔH° (bù trừ enthalpy-entropy)"
+   ],
+   "hints": [
+    "ΔG° = −RT ln K_a.",
+    "ΔS° = (ΔH° − ΔG°)/T."
+   ],
+   "tags": [
+    "hoa-sinh-vat-li",
+    "itc",
+    "lien-ket",
+    "intl-undergrad"
+   ]
+  }
+ ]
+}

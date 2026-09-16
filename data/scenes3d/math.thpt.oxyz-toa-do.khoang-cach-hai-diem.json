@@ -1,0 +1,119 @@
+{
+ "version": "aistem-scene-1",
+ "id": "math.thpt.oxyz-toa-do.khoang-cach-hai-diem",
+ "title_vi": "Điểm trong hệ toạ độ Oxyz",
+ "formula_id": "math.thpt.oxyz-toa-do.khoang-cach-hai-diem",
+ "caption_vi": "Toạ độ một điểm trong Oxyz; khoảng cách hai điểm theo định lí Pytago 3 chiều.",
+ "camera": {
+  "position": [
+   6.0,
+   5.0,
+   8.0
+  ],
+  "target": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "fov": 45,
+  "up": [
+   0,
+   1,
+   0
+  ]
+ },
+ "background": "auto",
+ "helpers": {
+  "axes": {
+   "size": 4.0,
+   "labels": [
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  "grid": {
+   "size": 8.0,
+   "divisions": 8
+  }
+ },
+ "objects": [
+  {
+   "type": "line",
+   "points": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     3.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "color": "#dc2626",
+   "dashed": true
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     3.0,
+     0.0,
+     0.0
+    ],
+    [
+     3.0,
+     0.0,
+     2.0
+    ]
+   ],
+   "color": "#16a34a",
+   "dashed": true
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     3.0,
+     0.0,
+     2.0
+    ],
+    [
+     3.0,
+     2.0,
+     2.0
+    ]
+   ],
+   "color": "#2563eb",
+   "dashed": true
+  },
+  {
+   "type": "vector",
+   "from": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "to": [
+    3.0,
+    2.0,
+    2.0
+   ],
+   "color": "#2563eb",
+   "label": "r"
+  },
+  {
+   "type": "point",
+   "at": [
+    3.0,
+    2.0,
+    2.0
+   ],
+   "color": "#dc2626",
+   "label": "(3, 2, 2)",
+   "size": 0.14
+  }
+ ]
+}

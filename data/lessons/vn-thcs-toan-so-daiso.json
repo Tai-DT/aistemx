@@ -1,0 +1,1965 @@
+{
+  "meta": {
+    "file": "vn-thcs-toan-so-daiso.json",
+    "subject": "math",
+    "title": "Toán THCS Việt Nam: Số học và Đại số (GDPT 2018)",
+    "levels": [
+      "thcs"
+    ],
+    "count": 27
+  },
+  "lessons": [
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.luy-thua-so-tu-nhien",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số tự nhiên và tính chia hết (Lớp 6)",
+      "order": 1,
+      "title_vi": "Luỹ thừa với số mũ tự nhiên",
+      "title_en": "Powers with natural exponents",
+      "objectives": [
+        "Viết được tích của nhiều thừa số bằng nhau dưới dạng luỹ thừa và ngược lại",
+        "Vận dụng được quy tắc nhân, chia hai luỹ thừa cùng cơ số để tính nhanh",
+        "Áp dụng thứ tự thực hiện phép tính có luỹ thừa để tính giá trị biểu thức"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Luỹ thừa",
+          "term_en": "Power",
+          "definition": "$a^n$ là tích của $n$ thừa số $a$ ($n\\ge 1$); $a$ là cơ số, $n$ là số mũ."
+        },
+        {
+          "term_vi": "Cơ số",
+          "term_en": "Base",
+          "definition": "Số được lấy làm thừa số lặp lại trong luỹ thừa."
+        },
+        {
+          "term_vi": "Số mũ",
+          "term_en": "Exponent",
+          "definition": "Số cho biết có bao nhiêu thừa số bằng nhau."
+        }
+      ],
+      "content": "## Luỹ thừa là gì?\nKhi phải nhân **nhiều thừa số giống nhau**, viết đầy đủ rất dài. Người ta rút gọn: $2\\cdot 2\\cdot 2\\cdot 2 = 2^4$. Ta đọc là \"hai mũ bốn\". Ở đây $2$ là **cơ số**, $4$ là **số mũ**.\n\nTổng quát, với số tự nhiên $n\\ge 1$:\n$$a^n = \\underbrace{a\\cdot a\\cdots a}_{n\\text{ thừa số}}$$\nQuy ước $a^1=a$ và $a^0=1$ (với $a\\ne 0$).\n\n## Hai quy tắc cần thuộc\nKhi **nhân** hai luỹ thừa cùng cơ số, ta **giữ cơ số và cộng số mũ**:\n$$a^m\\cdot a^n = a^{m+n}.$$\nKhi **chia** (với $m\\ge n$, $a\\ne 0$), ta **giữ cơ số và trừ số mũ**:\n$$a^m : a^n = a^{m-n}.$$\nVí dụ $3^2\\cdot 3^3 = 3^5 = 243$ và $5^7:5^4 = 5^3 = 125$.\n\n## Thứ tự thực hiện\nTrong một biểu thức, **luỹ thừa được tính trước** phép nhân, chia; rồi mới đến cộng, trừ. Nếu có ngoặc thì làm trong ngoặc trước. Ví dụ $3+2\\cdot 5^2 = 3 + 2\\cdot 25 = 53$.",
+      "formulas": [
+        "math.thcs.so-tu-nhien.luy-thua-so-mu-tu-nhien",
+        "math.thcs.so-tu-nhien.nhan-hai-luy-thua-cung-co-so",
+        "math.thcs.so-tu-nhien.chia-hai-luy-thua-cung-co-so",
+        "math.thcs.so-tu-nhien.luy-thua-cua-luy-thua",
+        "math.thcs.so-tu-nhien.luy-thua-so-mu-khong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Viết gọn thành một luỹ thừa: $2^3\\cdot 2^4\\cdot 2$.",
+          "solution": "Đưa $2$ về $2^1$ rồi cộng các số mũ vì cùng cơ số: $2^3\\cdot 2^4\\cdot 2^1 = 2^{3+4+1} = 2^8$. Ta cộng số mũ vì mỗi luỹ thừa chỉ là cách viết gọn của các thừa số $2$, gộp lại vẫn là tích các thừa số $2$.",
+          "answer": "$2^8 = 256$"
+        },
+        {
+          "problem": "Tính $3 + 4\\cdot 2^3 - 10$.",
+          "solution": "Tính luỹ thừa trước: $2^3 = 8$. Sau đó nhân: $4\\cdot 8 = 32$. Cuối cùng cộng trừ từ trái sang phải: $3 + 32 - 10 = 25$.",
+          "answer": "$25$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhân hai luỹ thừa cùng cơ số nhưng lại nhân số mũ, viết $2^3\\cdot 2^4 = 2^{12}$ (sai); đúng là cộng số mũ được $2^7$.",
+        "Hiểu $2^3$ là $2\\cdot 3 = 6$; thực ra $2^3 = 2\\cdot 2\\cdot 2 = 8$.",
+        "Quên tính luỹ thừa trước, làm $3+2\\cdot 5^2$ thành $(3+2)\\cdot 5^2$."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "luy-thua",
+        "so-tu-nhien",
+        "lop6"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.tinh-chia-het",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số tự nhiên và tính chia hết (Lớp 6)",
+      "order": 2,
+      "title_vi": "Tính chất chia hết và dấu hiệu chia hết",
+      "title_en": "Divisibility properties and tests",
+      "objectives": [
+        "Nhận biết được một số có chia hết cho 2, 3, 5, 9 hay không mà không cần đặt phép chia",
+        "Vận dụng tính chất chia hết của một tổng để xét tính chia hết của biểu thức",
+        "Thực hiện được phép chia có dư và xác định thương, số dư"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.luy-thua-so-tu-nhien"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Chia hết",
+          "term_en": "Divisible",
+          "definition": "$a$ chia hết cho $b$ ($b\\ne 0$) nếu có số tự nhiên $q$ để $a=b\\cdot q$, viết $a\\ \\vdots\\ b$."
+        },
+        {
+          "term_vi": "Phép chia có dư",
+          "term_en": "Division with remainder",
+          "definition": "$a = b\\cdot q + r$ với $0\\le r < b$; $q$ là thương, $r$ là số dư."
+        },
+        {
+          "term_vi": "Dấu hiệu chia hết",
+          "term_en": "Divisibility test",
+          "definition": "Cách nhận biết nhanh một số chia hết cho 2, 3, 5, 9 dựa vào chữ số tận cùng hoặc tổng các chữ số."
+        }
+      ],
+      "content": "## Chia hết và chia có dư\nTa nói $a$ **chia hết** cho $b$ khi phép chia không còn dư. Nếu còn dư, ta viết theo dạng phép chia có dư:\n$$a = b\\cdot q + r,\\qquad 0\\le r < b.$$\nVí dụ $17 = 5\\cdot 3 + 2$, nên $17$ chia $5$ được thương $3$, dư $2$.\n\n## Các dấu hiệu cần thuộc\n- Chia hết cho **2**: chữ số tận cùng là số chẵn $(0,2,4,6,8)$.\n- Chia hết cho **5**: chữ số tận cùng là $0$ hoặc $5$.\n- Chia hết cho **3**: **tổng các chữ số** chia hết cho $3$.\n- Chia hết cho **9**: tổng các chữ số chia hết cho $9$.\n\nVí dụ số $2\\,034$: tổng chữ số $2+0+3+4 = 9$ chia hết cho $9$, nên $2\\,034\\ \\vdots\\ 9$ (và cũng $\\vdots\\ 3$).\n\n## Chia hết của một tổng\nNếu **mỗi số hạng** của tổng đều chia hết cho $m$ thì cả tổng chia hết cho $m$:\n$$a\\ \\vdots\\ m,\\ b\\ \\vdots\\ m \\Rightarrow (a+b)\\ \\vdots\\ m.$$\nNgược lại, nếu một số hạng không chia hết mà các số hạng còn lại chia hết thì tổng **không** chia hết. Tính chất này giúp xét nhanh mà không cần cộng ra kết quả.",
+      "formulas": [
+        "math.thcs.so-tu-nhien.phep-chia-co-du",
+        "math.thcs.so-tu-nhien.dau-hieu-chia-het-cho-2-va-5",
+        "math.thcs.so-tu-nhien.dau-hieu-chia-het-cho-3-va-9",
+        "math.thcs.so-tu-nhien.tinh-chat-chia-het-cua-mot-tong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Không đặt phép chia, hãy cho biết $2\\,880$ chia hết cho những số nào trong $2,3,5,9$?",
+          "solution": "Chữ số tận cùng là $0$ nên chia hết cho cả $2$ và $5$. Tổng các chữ số $2+8+8+0 = 18$, mà $18\\ \\vdots\\ 9$ nên số đó chia hết cho $9$, đồng thời $18\\ \\vdots\\ 3$ nên cũng chia hết cho $3$.",
+          "answer": "Chia hết cho cả $2,3,5,9$."
+        },
+        {
+          "problem": "Tổng $A = 12 + 24 + 30 + 7$ có chia hết cho $6$ không?",
+          "solution": "Ba số hạng $12,24,30$ đều chia hết cho $6$. Riêng $7$ không chia hết cho $6$ (còn dư $1$). Vì có đúng một số hạng không chia hết nên cả tổng không chia hết cho $6$.",
+          "answer": "Không chia hết cho $6$ (dư $1$)."
+        }
+      ],
+      "common_mistakes": [
+        "Xét chia hết cho $3$ hay $9$ bằng chữ số tận cùng; thực ra phải xét TỔNG các chữ số.",
+        "Viết số dư lớn hơn hoặc bằng số chia, ví dụ $17 = 5\\cdot 2 + 7$; số dư phải nhỏ hơn số chia.",
+        "Kết luận tổng chia hết khi chỉ MỘT vài số hạng chia hết, quên kiểm tra số hạng còn lại."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "chia-het",
+        "dau-hieu-chia-het",
+        "lop6"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.so-nguyen-to",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số tự nhiên và tính chia hết (Lớp 6)",
+      "order": 3,
+      "title_vi": "Số nguyên tố. Phân tích một số ra thừa số nguyên tố",
+      "title_en": "Prime numbers and factorization",
+      "objectives": [
+        "Phân biệt được số nguyên tố và hợp số; kiểm tra một số nhỏ có phải số nguyên tố hay không",
+        "Phân tích được một số tự nhiên ra thừa số nguyên tố bằng sơ đồ cây hoặc chia liên tiếp",
+        "Tính được số lượng ước của một số dựa vào dạng phân tích thừa số nguyên tố"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.tinh-chia-het"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Số nguyên tố",
+          "term_en": "Prime number",
+          "definition": "Số tự nhiên lớn hơn 1, chỉ có đúng hai ước là 1 và chính nó (ví dụ 2, 3, 5, 7, 11)."
+        },
+        {
+          "term_vi": "Hợp số",
+          "term_en": "Composite number",
+          "definition": "Số tự nhiên lớn hơn 1 có nhiều hơn hai ước."
+        },
+        {
+          "term_vi": "Phân tích ra thừa số nguyên tố",
+          "term_en": "Prime factorization",
+          "definition": "Viết một số dưới dạng tích của các số nguyên tố."
+        }
+      ],
+      "content": "## Số nguyên tố và hợp số\nSố $0$ và $1$ không phải số nguyên tố cũng không phải hợp số. Từ $2$ trở đi:\n- **Số nguyên tố**: chỉ chia hết cho $1$ và chính nó. Số nguyên tố nhỏ nhất, cũng là số nguyên tố chẵn duy nhất, là $2$.\n- **Hợp số**: có thêm ước khác ngoài $1$ và chính nó.\n\n**Cách kiểm tra nhanh**: một số $n>1$ là nguyên tố nếu nó không chia hết cho mọi số nguyên tố $p$ mà $p^2\\le n$. Chẳng hạn kiểm tra $97$: chỉ cần thử các số nguyên tố $2,3,5,7$ (vì $11^2=121>97$); $97$ không chia hết cho số nào nên $97$ là số nguyên tố.\n\n## Phân tích ra thừa số nguyên tố\nTa chia số đó cho các số nguyên tố từ nhỏ đến lớn cho tới khi được $1$:\n$$360 = 2^3\\cdot 3^2\\cdot 5.$$\nDạng phân tích này là **duy nhất** (không kể thứ tự) — đó là điều làm số nguyên tố trở thành \"viên gạch\" xây nên mọi số.\n\n## Đếm số ước\nNếu $n = p^a\\cdot q^b\\cdot r^c\\cdots$ thì số ước của $n$ là\n$$(a+1)(b+1)(c+1)\\cdots$$\nVí dụ $360 = 2^3\\cdot 3^2\\cdot 5^1$ có $(3+1)(2+1)(1+1) = 24$ ước.",
+      "formulas": [
+        "math.thcs.so-tu-nhien.kiem-tra-so-nguyen-to",
+        "math.thcs.so-tu-nhien.phan-tich-ra-thua-so-nguyen-to",
+        "math.thcs.so-tu-nhien.so-uoc-cua-mot-so-tu-nhien",
+        "math.thcs.so-tu-nhien.luy-thua-cua-mot-tich",
+        "math.thcs.so-tu-nhien.luy-thua-cua-mot-thuong"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Phân tích $84$ ra thừa số nguyên tố rồi cho biết $84$ có bao nhiêu ước.",
+          "solution": "Chia liên tiếp cho số nguyên tố nhỏ nhất: $84:2=42$, $42:2=21$, $21:3=7$, $7:7=1$. Vậy $84 = 2^2\\cdot 3\\cdot 7$. Số ước bằng $(2+1)(1+1)(1+1) = 3\\cdot 2\\cdot 2 = 12$.",
+          "answer": "$84 = 2^2\\cdot 3\\cdot 7$; có $12$ ước."
+        },
+        {
+          "problem": "Số $91$ có phải số nguyên tố không?",
+          "solution": "Ta thử các số nguyên tố có bình phương không vượt quá $91$: đó là $2,3,5,7$ (vì $11^2=121>91$). $91$ lẻ nên không chia hết cho $2$; tổng chữ số $10$ nên không chia hết $3$; không tận cùng $0,5$ nên không chia hết $5$; nhưng $91 = 7\\cdot 13$ nên chia hết cho $7$. Vậy $91$ là hợp số.",
+          "answer": "Không, $91 = 7\\cdot 13$ là hợp số."
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng $1$ là số nguyên tố; theo định nghĩa số nguyên tố phải lớn hơn 1.",
+        "Nghĩ mọi số lẻ đều là số nguyên tố (ví dụ $9, 15, 21$ đều là hợp số).",
+        "Đếm ước bằng cách nhân các số mũ thay vì nhân (số mũ + 1)."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "so-nguyen-to",
+        "phan-tich-thua-so",
+        "lop6"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.uoc-chung-lon-nhat",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số tự nhiên và tính chia hết (Lớp 6)",
+      "order": 4,
+      "title_vi": "Ước chung lớn nhất (ƯCLN)",
+      "title_en": "Greatest common divisor",
+      "objectives": [
+        "Tìm được ƯCLN của hai hay ba số bằng cách phân tích ra thừa số nguyên tố",
+        "Sử dụng ƯCLN để rút gọn phân số về tối giản và giải bài toán chia đều",
+        "Nhận biết được hai số nguyên tố cùng nhau"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.so-nguyen-to"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Ước chung",
+          "term_en": "Common divisor",
+          "definition": "Số vừa là ước của số này vừa là ước của số kia."
+        },
+        {
+          "term_vi": "ƯCLN",
+          "term_en": "Greatest common divisor",
+          "definition": "Số lớn nhất trong các ước chung của hai hay nhiều số."
+        },
+        {
+          "term_vi": "Nguyên tố cùng nhau",
+          "term_en": "Coprime",
+          "definition": "Hai số có ƯCLN bằng 1."
+        }
+      ],
+      "content": "## Ước chung lớn nhất là gì?\n**Ước chung** của hai số là số chia hết cả hai số đó. Số lớn nhất trong các ước chung gọi là **ƯCLN**, kí hiệu $\\text{ƯCLN}(a,b)$.\n\n## Quy tắc tìm ƯCLN\n1. Phân tích mỗi số ra thừa số nguyên tố.\n2. Chọn ra các thừa số nguyên tố **chung**.\n3. Với mỗi thừa số chung, lấy **số mũ nhỏ nhất**.\n4. Nhân chúng lại.\n\nVí dụ với $36 = 2^2\\cdot 3^2$ và $60 = 2^2\\cdot 3\\cdot 5$: thừa số chung là $2$ và $3$, số mũ nhỏ nhất là $2^2$ và $3^1$, nên\n$$\\text{ƯCLN}(36,60) = 2^2\\cdot 3 = 12.$$\n\nNếu hai số **không có** thừa số nguyên tố chung thì ƯCLN bằng $1$; khi đó gọi là **nguyên tố cùng nhau**, chẳng hạn $8$ và $15$.\n\n## Vì sao hữu ích?\nƯCLN giúp **rút gọn phân số về tối giản** (chia cả tử và mẫu cho ƯCLN) và giải các bài \"chia đều nhiều nhất có thể\". Nếu chia $36$ bút và $60$ vở thành các phần bằng nhau nhiều nhất thì số phần chính là $\\text{ƯCLN}(36,60)=12$.",
+      "formulas": [
+        "math.thcs.so-tu-nhien.uoc-chung-lon-nhat",
+        "math.thcs.so-tu-nhien.thuat-toan-euclid",
+        "math.thcs.so-tu-nhien.hai-so-nguyen-to-cung-nhau",
+        "math.thcs.phan-so.rut-gon-phan-so"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cô giáo có $24$ quyển vở và $36$ chiếc bút, muốn chia thành các phần thưởng giống nhau, mỗi loại chia hết. Hỏi chia được nhiều nhất bao nhiêu phần và mỗi phần có gì?",
+          "solution": "Số phần nhiều nhất là ƯCLN$(24,36)$. Ta có $24 = 2^3\\cdot 3$ và $36 = 2^2\\cdot 3^2$; thừa số chung với số mũ nhỏ nhất là $2^2\\cdot 3 = 12$. Vậy chia được nhiều nhất $12$ phần, mỗi phần $24:12 = 2$ quyển vở và $36:12 = 3$ chiếc bút.",
+          "answer": "$12$ phần; mỗi phần có $2$ vở và $3$ bút."
+        },
+        {
+          "problem": "Rút gọn phân số $\\dfrac{42}{70}$ về tối giản.",
+          "solution": "Tìm ƯCLN: $42 = 2\\cdot 3\\cdot 7$, $70 = 2\\cdot 5\\cdot 7$, chung là $2\\cdot 7 = 14$. Chia cả tử và mẫu cho $14$: $\\dfrac{42}{70} = \\dfrac{42:14}{70:14} = \\dfrac{3}{5}$.",
+          "answer": "$\\dfrac{3}{5}$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy số mũ LỚN nhất của thừa số chung khi tìm ƯCLN (đó là cách tìm BCNN).",
+        "Đưa cả thừa số riêng (không chung) vào tích ƯCLN.",
+        "Nhầm ƯCLN với BCNN nên rút gọn phân số bằng bội chung."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "ucln",
+        "uoc-chung",
+        "lop6"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.boi-chung-nho-nhat",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số tự nhiên và tính chia hết (Lớp 6)",
+      "order": 5,
+      "title_vi": "Bội chung nhỏ nhất (BCNN)",
+      "title_en": "Least common multiple",
+      "objectives": [
+        "Tìm được BCNN của hai hay ba số bằng cách phân tích ra thừa số nguyên tố",
+        "Vận dụng BCNN để quy đồng mẫu số và giải bài toán về chu kì lặp lại",
+        "Sử dụng được hệ thức ƯCLN nhân BCNN bằng tích hai số"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.uoc-chung-lon-nhat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bội chung",
+          "term_en": "Common multiple",
+          "definition": "Số vừa là bội của số này vừa là bội của số kia."
+        },
+        {
+          "term_vi": "BCNN",
+          "term_en": "Least common multiple",
+          "definition": "Số nhỏ nhất khác 0 trong các bội chung của hai hay nhiều số."
+        },
+        {
+          "term_vi": "Quan hệ ƯCLN - BCNN",
+          "term_en": "GCD-LCM relation",
+          "definition": "$\\text{ƯCLN}(a,b)\\cdot\\text{BCNN}(a,b) = a\\cdot b$."
+        }
+      ],
+      "content": "## Bội chung nhỏ nhất\n**Bội chung** của hai số là số chia hết cho cả hai. Số nhỏ nhất khác $0$ trong đó là **BCNN**, kí hiệu $\\text{BCNN}(a,b)$.\n\n## Quy tắc tìm BCNN\n1. Phân tích mỗi số ra thừa số nguyên tố.\n2. Chọn ra **mọi** thừa số nguyên tố (chung và riêng).\n3. Với mỗi thừa số, lấy **số mũ lớn nhất**.\n4. Nhân chúng lại.\n\nVới $12 = 2^2\\cdot 3$ và $18 = 2\\cdot 3^2$: lấy $2^2$ và $3^2$, được\n$$\\text{BCNN}(12,18) = 2^2\\cdot 3^2 = 36.$$\nHãy so sánh với ƯCLN: ở ƯCLN ta lấy số mũ **nhỏ nhất** của thừa số **chung**, còn ở BCNN ta lấy số mũ **lớn nhất** của **mọi** thừa số.\n\n## Mẹo kiểm tra và ứng dụng\nCó hệ thức tiện lợi:\n$$\\text{ƯCLN}(a,b)\\cdot\\text{BCNN}(a,b) = a\\cdot b.$$\nBCNN dùng để **quy đồng mẫu số** (mẫu chung nhỏ nhất) và giải bài toán \"cùng lúc lặp lại\": hai xe buýt xuất phát cùng lúc, cứ sau BCNN phút lại gặp nhau tại bến.",
+      "formulas": [
+        "math.thcs.so-tu-nhien.boi-chung-nho-nhat",
+        "math.thcs.so-tu-nhien.tich-ucln-va-bcnn",
+        "math.thcs.phan-so.cong-tru-phan-so",
+        "math.thcs.phan-so.nhan-chia-phan-so"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai xe buýt cùng rời bến lúc 6 giờ. Xe A cứ $15$ phút chạy một chuyến, xe B cứ $20$ phút một chuyến. Sau ít nhất bao lâu hai xe lại cùng rời bến một lúc?",
+          "solution": "Thời gian cần tìm là BCNN$(15,20)$. Ta có $15 = 3\\cdot 5$, $20 = 2^2\\cdot 5$; lấy mọi thừa số với số mũ lớn nhất: $2^2\\cdot 3\\cdot 5 = 60$. Vậy sau $60$ phút, tức lúc 7 giờ, hai xe lại cùng rời bến.",
+          "answer": "$60$ phút (lúc 7 giờ)."
+        },
+        {
+          "problem": "Biết ƯCLN$(a,b) = 6$ và $a\\cdot b = 720$. Tính BCNN$(a,b)$.",
+          "solution": "Dùng hệ thức ƯCLN nhân BCNN bằng tích hai số: $6\\cdot\\text{BCNN} = 720$, suy ra $\\text{BCNN} = 720:6 = 120$.",
+          "answer": "$\\text{BCNN}(a,b) = 120$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy số mũ nhỏ nhất khi tìm BCNN (đó là cách của ƯCLN).",
+        "Bỏ sót các thừa số riêng chỉ xuất hiện ở một số.",
+        "Nhầm quy đồng mẫu bằng ƯCLN thay vì BCNN của các mẫu."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "bcnn",
+        "boi-chung",
+        "lop6"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.so-nguyen-quy-tac-dau",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        6
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số nguyên (Lớp 6)",
+      "order": 1,
+      "title_vi": "Số nguyên và quy tắc dấu",
+      "title_en": "Integers and sign rules",
+      "objectives": [
+        "Thực hiện được phép cộng, trừ, nhân, chia hai số nguyên đúng quy tắc dấu",
+        "Áp dụng được quy tắc dấu ngoặc và quy tắc chuyển vế để rút gọn, tìm x",
+        "Tính và vận dụng được giá trị tuyệt đối của một số nguyên"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Số nguyên",
+          "term_en": "Integer",
+          "definition": "Gồm các số nguyên âm, số 0 và các số nguyên dương: $\\ldots,-2,-1,0,1,2,\\ldots$"
+        },
+        {
+          "term_vi": "Giá trị tuyệt đối",
+          "term_en": "Absolute value",
+          "definition": "Khoảng cách từ điểm $a$ đến gốc $0$ trên trục số, kí hiệu $|a|\\ge 0$."
+        },
+        {
+          "term_vi": "Quy tắc dấu",
+          "term_en": "Sign rule",
+          "definition": "Quy tắc xác định dấu của kết quả khi cộng, trừ, nhân, chia các số nguyên."
+        }
+      ],
+      "content": "## Cộng và trừ số nguyên\n- **Cùng dấu**: cộng hai giá trị tuyệt đối rồi giữ nguyên dấu. Ví dụ $(-3)+(-5) = -8$.\n- **Khác dấu**: lấy giá trị tuyệt đối lớn trừ giá trị tuyệt đối nhỏ, kết quả mang dấu của số có giá trị tuyệt đối lớn hơn. Ví dụ $(-7)+4 = -3$.\n- **Trừ**: $a - b = a + (-b)$ (cộng với số đối). Ví dụ $5-(-2) = 5+2 = 7$.\n\n## Nhân và chia số nguyên — quy tắc dấu\n$$(+)\\cdot(+)=+,\\quad (-)\\cdot(-)=+,\\quad (+)\\cdot(-)=-,\\quad (-)\\cdot(+)=-.$$\nNgắn gọn: **cùng dấu ra dấu dương, khác dấu ra dấu âm**. Phép chia theo đúng quy tắc dấu như phép nhân. Ví dụ $(-6)\\cdot(-4)=24$ và $(-20):5=-4$.\n\n## Dấu ngoặc và chuyển vế\n- **Bỏ dấu ngoặc** có dấu \"$-$\" đằng trước thì đổi dấu mọi số hạng bên trong: $a-(b-c) = a-b+c$.\n- **Chuyển vế** một số hạng từ vế này sang vế kia thì đổi dấu số hạng đó. Đây là công cụ chính để **tìm $x$**: từ $x - 5 = 3$ ta chuyển $-5$ sang phải thành $+5$, được $x = 8$.",
+      "formulas": [
+        "math.thcs.so-nguyen.cong-hai-so-nguyen-cung-dau",
+        "math.thcs.so-nguyen.cong-hai-so-nguyen-khac-dau",
+        "math.thcs.so-nguyen.phep-tru-so-nguyen",
+        "math.thcs.so-nguyen.quy-tac-dau-cua-phep-nhan",
+        "math.thcs.so-nguyen.quy-tac-dau-cua-phep-chia",
+        "math.thcs.so-nguyen.quy-tac-dau-ngoac",
+        "math.thcs.so-nguyen.quy-tac-chuyen-ve",
+        "math.thcs.so-nguyen.gia-tri-tuyet-doi",
+        "math.thcs.so-nguyen.tinh-chat-gia-tri-tuyet-doi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $A = (-12) + 20 - (-8) + (-15)$.",
+          "solution": "Đổi các phép trừ thành cộng số đối: $A = -12 + 20 + 8 - 15$. Nhóm số dương và số âm: dương $20+8 = 28$; âm $-12-15 = -27$. Cộng lại: $28 + (-27) = 1$.",
+          "answer": "$A = 1$"
+        },
+        {
+          "problem": "Nhiệt độ lúc tối là $-3^\\circ\\text{C}$, đến đêm giảm thêm $5^\\circ\\text{C}$. Hỏi nhiệt độ đêm là bao nhiêu?",
+          "solution": "Giảm thêm nghĩa là cộng với số âm: $(-3) + (-5)$. Hai số cùng âm nên cộng giá trị tuyệt đối và giữ dấu âm: $-(3+5) = -8$. Vậy nhiệt độ đêm là $-8^\\circ\\text{C}$.",
+          "answer": "$-8^\\circ\\text{C}$"
+        }
+      ],
+      "common_mistakes": [
+        "Cộng hai số âm lại ra số dương, ví dụ viết $(-3)+(-5) = 8$.",
+        "Quên đổi dấu khi bỏ ngoặc có dấu trừ đằng trước: $a-(b-c) = a-b-c$ (sai).",
+        "Chuyển vế mà không đổi dấu số hạng.",
+        "Cho rằng giá trị tuyệt đối có thể âm."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "so-nguyen",
+        "quy-tac-dau",
+        "lop6"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.luy-thua-so-huu-ti",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số hữu tỉ, tỉ lệ thức và làm tròn (Lớp 7)",
+      "order": 1,
+      "title_vi": "Luỹ thừa của một số hữu tỉ",
+      "title_en": "Powers of rational numbers",
+      "objectives": [
+        "Vận dụng được các quy tắc nhân, chia luỹ thừa cùng cơ số và luỹ thừa của luỹ thừa cho số hữu tỉ",
+        "Tính được luỹ thừa của một tích, một thương và luỹ thừa với số mũ nguyên âm",
+        "Rút gọn được biểu thức chứa luỹ thừa của số hữu tỉ"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.luy-thua-so-tu-nhien"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Số hữu tỉ",
+          "term_en": "Rational number",
+          "definition": "Số viết được dưới dạng $\\dfrac{a}{b}$ với $a,b$ nguyên, $b\\ne 0$."
+        },
+        {
+          "term_vi": "Luỹ thừa số hữu tỉ",
+          "term_en": "Power of a rational",
+          "definition": "$x^n$ với $x$ hữu tỉ, mở rộng mọi quy tắc luỹ thừa của số tự nhiên."
+        },
+        {
+          "term_vi": "Số mũ nguyên âm",
+          "term_en": "Negative exponent",
+          "definition": "$x^{-n} = \\dfrac{1}{x^n}$ với $x\\ne 0$."
+        }
+      ],
+      "content": "## Luỹ thừa mở rộng cho số hữu tỉ\nMọi quy tắc luỹ thừa đã học với số tự nhiên vẫn đúng khi cơ số là số hữu tỉ $x = \\dfrac{a}{b}$:\n$$x^m\\cdot x^n = x^{m+n},\\qquad x^m : x^n = x^{m-n},\\qquad (x^m)^n = x^{m\\cdot n}.$$\n\n## Luỹ thừa của tích và thương\n$$(x\\cdot y)^n = x^n\\cdot y^n,\\qquad \\left(\\dfrac{x}{y}\\right)^n = \\dfrac{x^n}{y^n}\\ (y\\ne 0).$$\nNhờ đó $\\left(\\dfrac{2}{3}\\right)^3 = \\dfrac{2^3}{3^3} = \\dfrac{8}{27}$.\n\n## Số mũ nguyên âm\nTa quy ước\n$$x^{-n} = \\dfrac{1}{x^n}\\quad (x\\ne 0).$$\nVí dụ $2^{-3} = \\dfrac{1}{2^3} = \\dfrac{1}{8}$ và $\\left(\\dfrac{3}{5}\\right)^{-2} = \\left(\\dfrac{5}{3}\\right)^2 = \\dfrac{25}{9}$ (lật ngược phân số rồi đổi dấu số mũ).\n\n## Chú ý về dấu\nLuỹ thừa **bậc chẵn** của số âm là số dương, **bậc lẻ** giữ dấu âm: $(-2)^4 = 16$ nhưng $(-2)^3 = -8$. Cần phân biệt $(-2)^4$ với $-2^4 = -16$.",
+      "formulas": [
+        "math.thcs.luy-thua-huu-ti.nhan-hai-luy-thua",
+        "math.thcs.luy-thua-huu-ti.chia-hai-luy-thua",
+        "math.thcs.luy-thua-huu-ti.luy-thua-cua-luy-thua",
+        "math.thcs.luy-thua-huu-ti.luy-thua-cua-tich-thuong",
+        "math.thcs.luy-thua-huu-ti.luy-thua-so-mu-nguyen-am"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\left(\\dfrac{-2}{3}\\right)^2\\cdot\\left(\\dfrac{-2}{3}\\right)^3$.",
+          "solution": "Cùng cơ số nên cộng số mũ: $\\left(\\dfrac{-2}{3}\\right)^{2+3} = \\left(\\dfrac{-2}{3}\\right)^5$. Luỹ thừa bậc lẻ của số âm là số âm: $\\dfrac{(-2)^5}{3^5} = \\dfrac{-32}{243}$.",
+          "answer": "$-\\dfrac{32}{243}$"
+        },
+        {
+          "problem": "Viết $\\left(\\dfrac{3}{4}\\right)^{-2}$ dưới dạng phân số.",
+          "solution": "Số mũ âm nghĩa là nghịch đảo cơ số rồi đổi số mũ thành dương: $\\left(\\dfrac{3}{4}\\right)^{-2} = \\left(\\dfrac{4}{3}\\right)^{2} = \\dfrac{16}{9}$.",
+          "answer": "$\\dfrac{16}{9}$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm $(-2)^4$ với $-2^4$: cái đầu bằng $16$, cái sau bằng $-16$.",
+        "Khi chia luỹ thừa cùng cơ số lại chia số mũ thay vì trừ.",
+        "Hiểu $x^{-n}$ là số âm; thực ra nó là nghịch đảo $\\dfrac{1}{x^n}$."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "luy-thua",
+        "so-huu-ti",
+        "lop7"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.lam-tron-uoc-luong",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số hữu tỉ, tỉ lệ thức và làm tròn (Lớp 7)",
+      "order": 2,
+      "title_vi": "Làm tròn số và ước lượng",
+      "title_en": "Rounding and estimation",
+      "objectives": [
+        "Làm tròn được một số thập phân đến hàng hoặc số chữ số thập phân cho trước",
+        "Ước lượng được kết quả phép tính để kiểm tra tính hợp lí của đáp số",
+        "Ước lượng được sai số tuyệt đối của phép làm tròn"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Làm tròn",
+          "term_en": "Rounding",
+          "definition": "Thay một số bằng số gần nó nhất ở độ chính xác cho trước."
+        },
+        {
+          "term_vi": "Quy tắc làm tròn",
+          "term_en": "Rounding rule",
+          "definition": "Xét chữ số ngay sau hàng làm tròn: nhỏ hơn 5 thì bỏ đi (làm tròn xuống), từ 5 trở lên thì tăng chữ số làm tròn lên 1 (làm tròn lên)."
+        },
+        {
+          "term_vi": "Sai số tuyệt đối",
+          "term_en": "Absolute error",
+          "definition": "Khoảng cách giữa số đã làm tròn và số gốc."
+        }
+      ],
+      "content": "## Vì sao cần làm tròn?\nNhiều số thập phân rất dài (như $\\pi = 3{,}14159\\ldots$) hoặc kết quả đo đạc không cần quá nhiều chữ số. Ta **làm tròn** để gọn hơn nhưng vẫn đủ chính xác.\n\n## Quy tắc làm tròn\nMuốn làm tròn đến một hàng nào đó, ta nhìn **chữ số ngay bên phải** hàng đó:\n- Nếu chữ số đó **nhỏ hơn 5**: bỏ đi phần sau, giữ nguyên hàng làm tròn.\n- Nếu chữ số đó **từ 5 trở lên**: bỏ phần sau và **tăng hàng làm tròn lên 1**.\n\nVí dụ làm tròn $3{,}147$ đến chữ số thập phân thứ nhất: chữ số sau hàng phần mười là $4 < 5$ nên giữ nguyên, được $3{,}1$. Làm tròn $2{,}586$ đến phần trăm: chữ số sau là $6\\ge 5$ nên tăng lên, được $2{,}59$.\n\n## Ước lượng để kiểm tra\nTrước khi tính chính xác, hãy **ước lượng nhanh** bằng cách làm tròn các số rồi tính nhẩm. Nếu $198\\times 51$, ta ước lượng $200\\times 50 = 10\\,000$; kết quả thật $10\\,098$ nằm gần đó là hợp lí. Nếu bấm máy ra $1\\,010$ thì chắc chắn bấm sai.\n\n## Sai số tuyệt đối\nKhi làm tròn, số làm tròn lệch số gốc một khoảng gọi là **sai số tuyệt đối**. Làm tròn $3{,}147\\approx 3{,}1$ có sai số $|3{,}147 - 3{,}1| = 0{,}047$.",
+      "formulas": [
+        "math.thcs.lam-tron.quy-tac-lam-tron",
+        "math.thcs.lam-tron.sai-so-tuyet-doi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Làm tròn số $15{,}4863$ đến chữ số thập phân thứ hai (hàng phần trăm).",
+          "solution": "Hàng phần trăm là chữ số $8$. Nhìn chữ số ngay sau nó là $6\\ge 5$ nên làm tròn lên: $8$ thành $9$, bỏ phần còn lại. Kết quả $15{,}49$.",
+          "answer": "$15{,}49$"
+        },
+        {
+          "problem": "Một mảnh vườn hình chữ nhật dài $19{,}8$ m, rộng $10{,}2$ m. Hãy ước lượng nhanh diện tích rồi so với kết quả chính xác.",
+          "solution": "Ước lượng bằng cách làm tròn: $20\\times 10 = 200$ ($\\text{m}^2$). Diện tích chính xác $19{,}8\\times 10{,}2 = 201{,}96\\ \\text{m}^2$, rất gần $200$ nên hợp lí.",
+          "answer": "Ước lượng $200\\ \\text{m}^2$; chính xác $201{,}96\\ \\text{m}^2$."
+        }
+      ],
+      "common_mistakes": [
+        "Khi chữ số cần xét đúng bằng 5 lại làm tròn xuống; quy tắc là từ 5 trở lên phải làm tròn lên.",
+        "Làm tròn từng bước nhiều lần (làm tròn liên tiếp) gây sai lệch; chỉ nhìn một chữ số ngay sau hàng cần làm tròn.",
+        "Quên giữ đúng số chữ số hàng (ví dụ làm tròn tiền đến hàng nghìn nhưng viết thiếu số 0)."
+      ],
+      "duration_minutes": 35,
+      "difficulty": "co-ban",
+      "tags": [
+        "lam-tron",
+        "uoc-luong",
+        "lop7"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.ti-le-thuc",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số hữu tỉ, tỉ lệ thức và làm tròn (Lớp 7)",
+      "order": 3,
+      "title_vi": "Tỉ lệ thức",
+      "title_en": "Proportions",
+      "objectives": [
+        "Nhận biết được tỉ lệ thức và phát biểu tính chất cơ bản (tích trung tỉ bằng tích ngoại tỉ)",
+        "Tìm được số hạng chưa biết của một tỉ lệ thức",
+        "Lập được các tỉ lệ thức suy ra từ một tỉ lệ thức đã cho"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Tỉ lệ thức",
+          "term_en": "Proportion",
+          "definition": "Đẳng thức của hai tỉ số $\\dfrac{a}{b} = \\dfrac{c}{d}$ ($b,d\\ne 0$)."
+        },
+        {
+          "term_vi": "Ngoại tỉ - trung tỉ",
+          "term_en": "Extremes and means",
+          "definition": "Trong $\\dfrac{a}{b}=\\dfrac{c}{d}$, $a,d$ là ngoại tỉ, $b,c$ là trung tỉ."
+        },
+        {
+          "term_vi": "Tính chất cơ bản",
+          "term_en": "Cross-multiplication",
+          "definition": "$\\dfrac{a}{b}=\\dfrac{c}{d}\\Leftrightarrow a\\cdot d = b\\cdot c$."
+        }
+      ],
+      "content": "## Tỉ lệ thức là gì?\nMột **tỉ lệ thức** là đẳng thức giữa hai tỉ số:\n$$\\dfrac{a}{b} = \\dfrac{c}{d}\\quad (b, d\\ne 0).$$\nTrong đó $a, d$ gọi là **ngoại tỉ**, còn $b, c$ gọi là **trung tỉ**.\n\n## Tính chất cơ bản\n\"Tích hai **ngoại tỉ** bằng tích hai **trung tỉ**\":\n$$\\dfrac{a}{b} = \\dfrac{c}{d}\\ \\Longleftrightarrow\\ a\\cdot d = b\\cdot c.$$\nĐây là công cụ để **tìm số hạng chưa biết**. Ví dụ từ $\\dfrac{x}{6} = \\dfrac{10}{15}$ ta có $15x = 6\\cdot 10 = 60$, suy ra $x = 4$.\n\n## Suy ra các tỉ lệ thức khác\nTừ một tỉ lệ thức $\\dfrac{a}{b} = \\dfrac{c}{d}$, bằng cách hoán vị ta được thêm ba tỉ lệ thức nữa:\n$$\\dfrac{a}{c} = \\dfrac{b}{d},\\qquad \\dfrac{d}{b} = \\dfrac{c}{a},\\qquad \\dfrac{d}{c} = \\dfrac{b}{a}.$$\nGhi nhớ mẹo: chỉ cần đảm bảo **tích ngoại tỉ vẫn bằng tích trung tỉ** thì tỉ lệ thức đó đúng.",
+      "formulas": [
+        "math.thcs.ti-le-thuc.dinh-nghia-ti-le-thuc",
+        "math.thcs.ti-le-thuc.tinh-chat-hoan-vi",
+        "math.thcs.phan-so.hai-phan-so-bang-nhau",
+        "math.thcs.phan-so.ti-so-phan-tram",
+        "math.thcs.ti-le-thuc.dai-luong-ti-le-nghich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm $x$ biết $\\dfrac{x}{12} = \\dfrac{3}{4}$.",
+          "solution": "Dùng tính chất cơ bản: tích ngoại tỉ bằng tích trung tỉ, tức $4\\cdot x = 12\\cdot 3$. Vậy $4x = 36$, suy ra $x = 9$.",
+          "answer": "$x = 9$"
+        },
+        {
+          "problem": "Có lập được tỉ lệ thức từ hai tỉ số $\\dfrac{2}{3}$ và $\\dfrac{8}{12}$ không?",
+          "solution": "Kiểm tra tích chéo: $2\\cdot 12 = 24$ và $3\\cdot 8 = 24$. Hai tích bằng nhau nên $\\dfrac{2}{3} = \\dfrac{8}{12}$, lập được tỉ lệ thức.",
+          "answer": "Có, vì $2\\cdot 12 = 3\\cdot 8 = 24$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhân sai vị trí: lấy tích hai tử hoặc hai mẫu thay vì tích chéo ngoại tỉ và trung tỉ.",
+        "Khi hoán vị lập tỉ lệ thức mới lại làm sai khiến tích chéo không còn bằng nhau.",
+        "Quên điều kiện mẫu khác 0."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "trung-binh",
+      "tags": [
+        "ti-le-thuc",
+        "ti-so",
+        "lop7"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.day-ti-so-bang-nhau",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số hữu tỉ, tỉ lệ thức và làm tròn (Lớp 7)",
+      "order": 4,
+      "title_vi": "Dãy tỉ số bằng nhau",
+      "title_en": "Equal ratio chains",
+      "objectives": [
+        "Vận dụng được tính chất dãy tỉ số bằng nhau để tìm các đại lượng chưa biết",
+        "Giải được bài toán chia một số thành các phần tỉ lệ cho trước",
+        "Áp dụng dãy tỉ số bằng nhau vào bài toán tỉ lệ thực tế"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.ti-le-thuc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Dãy tỉ số bằng nhau",
+          "term_en": "Chain of equal ratios",
+          "definition": "$\\dfrac{a}{b} = \\dfrac{c}{d} = \\dfrac{e}{f}$."
+        },
+        {
+          "term_vi": "Tính chất dãy tỉ số",
+          "term_en": "Property",
+          "definition": "$\\dfrac{a}{b}=\\dfrac{c}{d} = \\dfrac{a+c}{b+d} = \\dfrac{a-c}{b-d}$ (mẫu khác 0)."
+        },
+        {
+          "term_vi": "Chia tỉ lệ",
+          "term_en": "Proportional division",
+          "definition": "Chia một số thành các phần tỉ lệ với các số cho trước."
+        }
+      ],
+      "content": "## Tính chất then chốt\nNếu $\\dfrac{a}{b} = \\dfrac{c}{d}$ thì\n$$\\dfrac{a}{b} = \\dfrac{c}{d} = \\dfrac{a+c}{b+d} = \\dfrac{a-c}{b-d}\\quad(b\\pm d\\ne 0).$$\nNghĩa là: **cộng các tử với nhau và các mẫu với nhau** thì tỉ số không đổi. Mở rộng cho ba tỉ số:\n$$\\dfrac{a}{b}=\\dfrac{c}{d}=\\dfrac{e}{f} = \\dfrac{a+c+e}{b+d+f}.$$\n\n## Dùng để chia tỉ lệ\nBài toán quen thuộc: chia số $M$ thành các phần $x, y$ tỉ lệ với $m, n$, tức $\\dfrac{x}{m} = \\dfrac{y}{n}$ và $x+y = M$. Khi đó\n$$\\dfrac{x}{m} = \\dfrac{y}{n} = \\dfrac{x+y}{m+n} = \\dfrac{M}{m+n}.$$\nTừ tỉ số chung này ta tìm nhanh từng phần: $x = \\dfrac{M}{m+n}\\cdot m$, $y = \\dfrac{M}{m+n}\\cdot n$.\n\n## Ý nghĩa\nĐây là cách giải các bài \"chia kẹo, chia tiền, chia công việc theo tỉ lệ\" mà không cần lập phương trình phức tạp: chỉ cần đưa về một tỉ số chung rồi nhân ngược lại.",
+      "formulas": [
+        "math.thcs.ti-le-thuc.day-ti-so-bang-nhau",
+        "math.thcs.ti-le-thuc.day-ti-so-bang-nhau-ba-ti-so",
+        "math.thcs.ti-le-thuc.chia-ti-le",
+        "math.thcs.ti-le-thuc.dai-luong-ti-le-thuan",
+        "math.thcs.ti-le-thuc.day-ti-so-bang-nhau-he-so"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Chia $84$ chiếc kẹo cho ba bạn An, Bình, Cường theo tỉ lệ $2:3:2$. Mỗi bạn được bao nhiêu chiếc?",
+          "solution": "Gọi số kẹo là $a,b,c$ với $\\dfrac{a}{2} = \\dfrac{b}{3} = \\dfrac{c}{2}$ và $a+b+c = 84$. Áp dụng tính chất dãy tỉ số: $\\dfrac{a}{2}=\\dfrac{b}{3}=\\dfrac{c}{2} = \\dfrac{a+b+c}{2+3+2} = \\dfrac{84}{7} = 12$. Nhân ngược: $a = 2\\cdot 12 = 24$, $b = 3\\cdot 12 = 36$, $c = 2\\cdot 12 = 24$.",
+          "answer": "An $24$, Bình $36$, Cường $24$ chiếc."
+        },
+        {
+          "problem": "Tìm $x, y$ biết $\\dfrac{x}{3} = \\dfrac{y}{5}$ và $y - x = 8$.",
+          "solution": "Dùng tính chất với hiệu: $\\dfrac{x}{3} = \\dfrac{y}{5} = \\dfrac{y-x}{5-3} = \\dfrac{8}{2} = 4$. Suy ra $x = 3\\cdot 4 = 12$, $y = 5\\cdot 4 = 20$.",
+          "answer": "$x = 12,\\ y = 20$"
+        }
+      ],
+      "common_mistakes": [
+        "Cộng tử với mẫu (ví dụ $\\dfrac{a+b}{...}$ sai chỗ) thay vì cộng tử với tử, mẫu với mẫu.",
+        "Khi dùng hiệu quên đổi dấu mẫu tương ứng, viết $\\dfrac{y-x}{3-5}$ trong khi tử là $y-x$ thì mẫu phải là $5-3$.",
+        "Chia tỉ lệ nhưng quên nhân tỉ số chung với đúng hệ số của từng phần."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "day-ti-so-bang-nhau",
+        "chia-ti-le",
+        "lop7"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.nhan-chia-da-thuc",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đa thức, hằng đẳng thức và phân thức (Lớp 8)",
+      "order": 1,
+      "title_vi": "Nhân và chia đa thức",
+      "title_en": "Multiplying and dividing polynomials",
+      "objectives": [
+        "Nhân được đơn thức với đa thức và nhân hai đa thức",
+        "Chia được đa thức cho đơn thức và thực hiện phép chia đa thức một biến đã sắp xếp",
+        "Xác định được nghiệm của đa thức một biến"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.luy-thua-so-huu-ti"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Đơn thức",
+          "term_en": "Monomial",
+          "definition": "Biểu thức gồm tích của số với các luỹ thừa của biến."
+        },
+        {
+          "term_vi": "Đa thức",
+          "term_en": "Polynomial",
+          "definition": "Tổng của nhiều đơn thức."
+        },
+        {
+          "term_vi": "Nghiệm của đa thức",
+          "term_en": "Root",
+          "definition": "Giá trị của biến làm đa thức bằng 0."
+        }
+      ],
+      "content": "## Nhân đơn thức với đa thức\nDùng tính chất phân phối: nhân đơn thức với **từng** hạng tử của đa thức:\n$$a(b+c) = ab + ac.$$\nVí dụ $2x(3x - 5) = 6x^2 - 10x$. Nhớ nhân cả phần hệ số lẫn phần biến (cộng số mũ khi cùng biến).\n\n## Nhân hai đa thức\nNhân **mỗi** hạng tử của đa thức thứ nhất với **mỗi** hạng tử của đa thức thứ hai rồi thu gọn:\n$$(x+2)(x-3) = x^2 - 3x + 2x - 6 = x^2 - x - 6.$$\n\n## Chia đa thức cho đơn thức\nChia **từng** hạng tử của đa thức cho đơn thức (khi chia hết):\n$$(6x^3 - 4x^2):(2x) = 3x^2 - 2x.$$\n\n## Chia đa thức một biến đã sắp xếp\nGiống phép chia số có nhiều chữ số: sắp xếp theo luỹ thừa giảm dần rồi chia dần. Kết quả có dạng\n$$A = B\\cdot Q + R,$$\nvới $R$ có bậc nhỏ hơn $B$. Khi $R = 0$ ta nói $A$ **chia hết** cho $B$.\n\n## Nghiệm của đa thức\n$x = a$ là **nghiệm** của $P(x)$ nếu $P(a) = 0$. Ví dụ $x = 3$ là nghiệm của $P(x) = x - 3$.",
+      "formulas": [
+        "math.thcs.da-thuc.nhan-don-thuc-voi-da-thuc",
+        "math.thcs.da-thuc.nhan-hai-da-thuc",
+        "math.thcs.da-thuc.chia-da-thuc-cho-don-thuc",
+        "math.thcs.da-thuc.chia-da-thuc-mot-bien",
+        "math.thcs.da-thuc.nghiem-cua-da-thuc",
+        "math.thcs.da-thuc.bac-cua-don-thuc",
+        "math.thcs.da-thuc.bac-cua-da-thuc-mot-bien"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Thực hiện phép nhân $(2x - 3)(x + 4)$.",
+          "solution": "Nhân mỗi hạng tử của thừa số đầu với mỗi hạng tử của thừa số sau: $2x\\cdot x + 2x\\cdot 4 - 3\\cdot x - 3\\cdot 4 = 2x^2 + 8x - 3x - 12$. Thu gọn hai hạng tử đồng dạng $8x - 3x = 5x$: kết quả $2x^2 + 5x - 12$.",
+          "answer": "$2x^2 + 5x - 12$"
+        },
+        {
+          "problem": "Rút gọn $(15x^3 - 10x^2 + 5x):(5x)$.",
+          "solution": "Chia từng hạng tử cho $5x$: $15x^3:5x = 3x^2$; $-10x^2:5x = -2x$; $5x:5x = 1$. Vậy kết quả là $3x^2 - 2x + 1$.",
+          "answer": "$3x^2 - 2x + 1$"
+        }
+      ],
+      "common_mistakes": [
+        "Chỉ nhân đơn thức với hạng tử đầu của đa thức mà quên các hạng tử còn lại.",
+        "Nhân hai luỹ thừa cùng biến lại nhân số mũ thay vì cộng: $x^2\\cdot x^3 = x^6$ (sai), đúng là $x^5$.",
+        "Khi chia quên chia hệ số hoặc quên dấu của từng hạng tử."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "da-thuc",
+        "nhan-da-thuc",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.bay-hang-dang-thuc",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đa thức, hằng đẳng thức và phân thức (Lớp 8)",
+      "order": 2,
+      "title_vi": "Bảy hằng đẳng thức đáng nhớ",
+      "title_en": "Seven notable identities",
+      "objectives": [
+        "Phát biểu và viết được bảy hằng đẳng thức đáng nhớ",
+        "Vận dụng hằng đẳng thức để khai triển và tính nhanh giá trị biểu thức",
+        "Nhận dạng được hằng đẳng thức trong biểu thức để phân tích ngược"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.nhan-chia-da-thuc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hằng đẳng thức",
+          "term_en": "Identity",
+          "definition": "Đẳng thức đúng với mọi giá trị của các biến."
+        },
+        {
+          "term_vi": "Bình phương của tổng/hiệu",
+          "term_en": "Square of sum/difference",
+          "definition": "$(a\\pm b)^2 = a^2 \\pm 2ab + b^2$."
+        },
+        {
+          "term_vi": "Hiệu hai bình phương",
+          "term_en": "Difference of squares",
+          "definition": "$a^2 - b^2 = (a-b)(a+b)$."
+        }
+      ],
+      "content": "## Bảy hằng đẳng thức\nĐây là bảy công thức \"đọc thuộc lòng\" giúp khai triển và tính nhanh:\n$$1)\\ (a+b)^2 = a^2 + 2ab + b^2$$\n$$2)\\ (a-b)^2 = a^2 - 2ab + b^2$$\n$$3)\\ a^2 - b^2 = (a-b)(a+b)$$\n$$4)\\ (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$$\n$$5)\\ (a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$$\n$$6)\\ a^3 + b^3 = (a+b)(a^2 - ab + b^2)$$\n$$7)\\ a^3 - b^3 = (a-b)(a^2 + ab + b^2)$$\n\n## Vì sao \"đáng nhớ\"?\nChúng biến phép nhân dài thành công thức có sẵn, và quan trọng hơn: **đọc ngược** giúp phân tích đa thức thành nhân tử. Nhận ra $x^2 - 9 = x^2 - 3^2 = (x-3)(x+3)$ nhờ hằng đẳng thức số 3.\n\n## Tính nhanh nhờ hằng đẳng thức\nMuốn tính $101^2$, viết $101 = 100 + 1$ rồi dùng hằng đẳng thức 1:\n$$101^2 = (100+1)^2 = 100^2 + 2\\cdot 100\\cdot 1 + 1^2 = 10\\,201.$$\nỞ hai hằng đẳng thức lập phương, chú ý số $6$ và $7$: tam thức $a^2 \\mp ab + b^2$ chỉ có **một** số hạng $ab$ (không phải $2ab$).",
+      "formulas": [
+        "math.thcs.hang-dang-thuc.binh-phuong-cua-mot-tong",
+        "math.thcs.hang-dang-thuc.binh-phuong-cua-mot-hieu",
+        "math.thcs.hang-dang-thuc.hieu-hai-binh-phuong",
+        "math.thcs.hang-dang-thuc.lap-phuong-cua-mot-tong",
+        "math.thcs.hang-dang-thuc.lap-phuong-cua-mot-hieu",
+        "math.thcs.hang-dang-thuc.tong-hai-lap-phuong",
+        "math.thcs.hang-dang-thuc.hieu-hai-lap-phuong",
+        "math.thcs.hang-dang-thuc.binh-phuong-cua-tong-ba-so",
+        "math.thcs.hang-dang-thuc.tong-ba-lap-phuong-tru-ba-abc",
+        "math.thcs.hang-dang-thuc.hieu-luy-thua-bac-n",
+        "math.thcs.hang-dang-thuc.lien-he-tong-hieu-tich",
+        "math.thcs.hang-dang-thuc.tong-binh-phuong-theo-tong-va-tich"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Khai triển $(2x - 3)^2$.",
+          "solution": "Dùng hằng đẳng thức bình phương của một hiệu với $a = 2x$, $b = 3$: $(2x)^2 - 2\\cdot 2x\\cdot 3 + 3^2 = 4x^2 - 12x + 9$.",
+          "answer": "$4x^2 - 12x + 9$"
+        },
+        {
+          "problem": "Tính nhanh $49\\cdot 51$ bằng hằng đẳng thức.",
+          "solution": "Viết $49\\cdot 51 = (50-1)(50+1)$. Đây là dạng hiệu hai bình phương: $(50-1)(50+1) = 50^2 - 1^2 = 2500 - 1 = 2499$.",
+          "answer": "$2499$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên số hạng giữa $2ab$: viết $(a+b)^2 = a^2 + b^2$.",
+        "Nhầm tam thức trong hằng đẳng thức tổng/hiệu hai lập phương thành $a^2 \\pm 2ab + b^2$ (đúng ra chỉ có $\\mp ab$, không nhân 2).",
+        "Sai dấu ở $(a-b)^3$: quên các dấu trừ xen kẽ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "hang-dang-thuc",
+        "khai-trien",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.phan-tich-da-thuc-nhan-tu",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đa thức, hằng đẳng thức và phân thức (Lớp 8)",
+      "order": 3,
+      "title_vi": "Phân tích đa thức thành nhân tử",
+      "title_en": "Factoring polynomials",
+      "objectives": [
+        "Phân tích được đa thức thành nhân tử bằng đặt nhân tử chung và dùng hằng đẳng thức",
+        "Vận dụng phương pháp nhóm hạng tử và tách hạng tử để phân tích tam thức bậc hai",
+        "Sử dụng phân tích nhân tử để rút gọn biểu thức và giải phương trình tích"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.bay-hang-dang-thuc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phân tích thành nhân tử",
+          "term_en": "Factoring",
+          "definition": "Viết đa thức thành tích của các đa thức."
+        },
+        {
+          "term_vi": "Đặt nhân tử chung",
+          "term_en": "Common factor",
+          "definition": "Rút thừa số chung ra ngoài dấu ngoặc."
+        },
+        {
+          "term_vi": "Nhóm hạng tử",
+          "term_en": "Grouping",
+          "definition": "Ghép các hạng tử để xuất hiện nhân tử chung."
+        }
+      ],
+      "content": "## Bốn phương pháp cơ bản\n**1) Đặt nhân tử chung**: tìm thừa số chung của mọi hạng tử rồi rút ra ngoài:\n$$6x^2 - 9x = 3x(2x - 3).$$\n**2) Dùng hằng đẳng thức**: nhận dạng bình phương, hiệu hai bình phương, lập phương:\n$$x^2 - 16 = (x-4)(x+4);\\qquad x^2 + 6x + 9 = (x+3)^2.$$\n**3) Nhóm hạng tử**: khi không có nhân tử chung ngay, ta nhóm để tạo ra:\n$$x^3 + x^2 + x + 1 = x^2(x+1) + (x+1) = (x+1)(x^2+1).$$\n**4) Tách hạng tử** (cho tam thức $ax^2+bx+c$): tách $b$ thành hai số có tích bằng $a\\cdot c$:\n$$x^2 + 5x + 6 = x^2 + 2x + 3x + 6 = (x+2)(x+3).$$\n\n## Vì sao cần?\nPhân tích nhân tử biến một tổng phức tạp thành **tích**, nhờ đó ta **rút gọn phân thức**, **giải phương trình tích** (một tích bằng 0 khi một thừa số bằng 0), và chứng minh chia hết.\n\n## Thứ tự nên thử\nLuôn thử **đặt nhân tử chung trước**, rồi mới đến hằng đẳng thức, nhóm hạng tử và tách hạng tử. Sau khi phân tích, kiểm tra xem còn phân tích tiếp được không.",
+      "formulas": [
+        "math.thcs.phan-tich-nhan-tu.dat-nhan-tu-chung",
+        "math.thcs.phan-tich-nhan-tu.dung-hang-dang-thuc",
+        "math.thcs.phan-tich-nhan-tu.nhom-hang-tu",
+        "math.thcs.phan-tich-nhan-tu.tach-hang-tu-tam-thuc",
+        "math.thcs.phan-tich-nhan-tu.tam-thuc-theo-nghiem"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Phân tích $x^2 - 7x + 12$ thành nhân tử.",
+          "solution": "Đây là tam thức bậc hai hệ số 1. Ta tìm hai số có tích $12$ và tổng $-7$; đó là $-3$ và $-4$. Tách $-7x = -3x - 4x$: $x^2 - 3x - 4x + 12 = x(x-3) - 4(x-3) = (x-3)(x-4)$.",
+          "answer": "$(x-3)(x-4)$"
+        },
+        {
+          "problem": "Phân tích $2x^3 - 8x$ thành nhân tử.",
+          "solution": "Đặt nhân tử chung $2x$ trước: $2x(x^2 - 4)$. Trong ngoặc là hiệu hai bình phương $x^2 - 2^2 = (x-2)(x+2)$. Vậy $2x^3 - 8x = 2x(x-2)(x+2)$.",
+          "answer": "$2x(x-2)(x+2)$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên đặt nhân tử chung trước, làm bài dài dòng hoặc bỏ sót nhân tử.",
+        "Dừng lại quá sớm, chưa phân tích hết (ví dụ để nguyên $x^2 - 4$ mà không tách thành $(x-2)(x+2)$).",
+        "Tách hạng tử sai: chọn hai số không có tích bằng $a\\cdot c$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "phan-tich-nhan-tu",
+        "da-thuc",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.phan-thuc-dai-so",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đa thức, hằng đẳng thức và phân thức (Lớp 8)",
+      "order": 4,
+      "title_vi": "Phân thức đại số",
+      "title_en": "Algebraic fractions",
+      "objectives": [
+        "Tìm được điều kiện xác định của phân thức và rút gọn phân thức",
+        "Cộng, trừ được hai phân thức cùng mẫu và khác mẫu",
+        "Nhân, chia được hai phân thức đại số"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phan-tich-da-thuc-nhan-tu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phân thức đại số",
+          "term_en": "Algebraic fraction",
+          "definition": "Biểu thức dạng $\\dfrac{A}{B}$ với $A, B$ là đa thức, $B\\ne 0$."
+        },
+        {
+          "term_vi": "Điều kiện xác định",
+          "term_en": "Domain condition",
+          "definition": "Giá trị của biến làm mẫu thức khác 0."
+        },
+        {
+          "term_vi": "Rút gọn phân thức",
+          "term_en": "Simplifying",
+          "definition": "Chia cả tử và mẫu cho nhân tử chung."
+        }
+      ],
+      "content": "## Phân thức và điều kiện xác định\nPhân thức là $\\dfrac{A}{B}$ với $A, B$ là đa thức. Vì **không chia cho 0**, ta luôn tìm **điều kiện xác định**: $B\\ne 0$. Ví dụ $\\dfrac{x+1}{x-2}$ xác định khi $x\\ne 2$.\n\n## Rút gọn\nGiống rút gọn phân số: phân tích tử và mẫu thành nhân tử rồi chia cho nhân tử chung.\n$$\\dfrac{x^2 - 4}{x^2 - 2x} = \\dfrac{(x-2)(x+2)}{x(x-2)} = \\dfrac{x+2}{x}\\quad (x\\ne 0,\\ x\\ne 2).$$\n\n## Cộng, trừ phân thức\n- **Cùng mẫu**: cộng (trừ) các tử, giữ nguyên mẫu.\n- **Khác mẫu**: quy đồng về mẫu chung (thường là BCNN của các mẫu) rồi cộng các tử.\n$$\\dfrac{1}{x} + \\dfrac{1}{x+1} = \\dfrac{(x+1) + x}{x(x+1)} = \\dfrac{2x+1}{x(x+1)}.$$\n\n## Nhân, chia phân thức\n- **Nhân**: nhân tử với tử, mẫu với mẫu, rồi rút gọn.\n- **Chia**: nhân với **phân thức nghịch đảo** của số chia.\n$$\\dfrac{A}{B}:\\dfrac{C}{D} = \\dfrac{A}{B}\\cdot\\dfrac{D}{C}.$$",
+      "formulas": [
+        "math.thcs.phan-thuc.dieu-kien-xac-dinh",
+        "math.thcs.phan-thuc.tinh-chat-co-ban",
+        "math.thcs.phan-thuc.cong-hai-phan-thuc-cung-mau",
+        "math.thcs.phan-thuc.cong-hai-phan-thuc-khac-mau",
+        "math.thcs.phan-thuc.nhan-chia-phan-thuc",
+        "math.thcs.phan-thuc.hai-phan-thuc-bang-nhau",
+        "math.thcs.phan-thuc.doi-dau-phan-thuc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Rút gọn $\\dfrac{x^2 - 9}{x^2 + 3x}$ và nêu điều kiện xác định.",
+          "solution": "Điều kiện xác định: mẫu $x^2 + 3x = x(x+3)\\ne 0$ nên $x\\ne 0$ và $x\\ne -3$. Phân tích tử $x^2 - 9 = (x-3)(x+3)$. Chia cả tử và mẫu cho nhân tử chung $(x+3)$: $\\dfrac{(x-3)(x+3)}{x(x+3)} = \\dfrac{x-3}{x}$.",
+          "answer": "$\\dfrac{x-3}{x}$ với $x\\ne 0,\\ x\\ne -3$."
+        },
+        {
+          "problem": "Tính $\\dfrac{2}{x-1} + \\dfrac{3}{x+1}$.",
+          "solution": "Mẫu chung là $(x-1)(x+1)$. Quy đồng: $\\dfrac{2(x+1)}{(x-1)(x+1)} + \\dfrac{3(x-1)}{(x-1)(x+1)}$. Cộng tử: $2(x+1) + 3(x-1) = 2x+2+3x-3 = 5x - 1$. Kết quả $\\dfrac{5x-1}{(x-1)(x+1)}$.",
+          "answer": "$\\dfrac{5x-1}{(x-1)(x+1)}$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên tìm điều kiện xác định (mẫu khác 0) trước khi rút gọn.",
+        "Rút gọn khi tử và mẫu là TỔNG chứ không phải TÍCH, ví dụ gạch $x$ trong $\\dfrac{x+2}{x}$.",
+        "Cộng phân thức khác mẫu mà quên quy đồng, cộng thẳng tử với tử, mẫu với mẫu."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "phan-thuc",
+        "rut-gon",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-nhat-mot-an",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Phương trình và bất phương trình (Lớp 8-9)",
+      "order": 1,
+      "title_vi": "Phương trình bậc nhất một ẩn",
+      "title_en": "Linear equations in one variable",
+      "objectives": [
+        "Nhận biết và giải được phương trình bậc nhất một ẩn ax + b = 0",
+        "Giải được phương trình đưa được về bậc nhất, phương trình tích và phương trình chứa ẩn ở mẫu",
+        "Biện luận được số nghiệm của phương trình dạng ax + b = 0 theo tham số"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.so-nguyen-quy-tac-dau"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình bậc nhất một ẩn",
+          "term_en": "Linear equation",
+          "definition": "Phương trình dạng $ax + b = 0$ với $a\\ne 0$."
+        },
+        {
+          "term_vi": "Nghiệm",
+          "term_en": "Solution",
+          "definition": "Giá trị của ẩn làm hai vế bằng nhau."
+        },
+        {
+          "term_vi": "Phương trình tích",
+          "term_en": "Product equation",
+          "definition": "Dạng $A\\cdot B = 0$, giải bằng $A=0$ hoặc $B=0$."
+        }
+      ],
+      "content": "## Phương trình bậc nhất một ẩn\nLà phương trình dạng $ax + b = 0$ với $a\\ne 0$. Nó luôn có **nghiệm duy nhất**:\n$$x = -\\dfrac{b}{a}.$$\nCách giải dựa trên hai quy tắc: **chuyển vế** (đổi dấu) và **nhân/chia hai vế cho số khác 0**. Ví dụ $3x - 6 = 0\\Rightarrow 3x = 6\\Rightarrow x = 2$.\n\n## Đưa về bậc nhất\nVới phương trình phức tạp, ta bỏ ngoặc, quy đồng khử mẫu, chuyển các hạng tử chứa ẩn về một vế, hằng số về vế kia, rồi rút gọn về dạng $ax = c$.\n\n## Phương trình tích\nNếu đưa được về dạng $A(x)\\cdot B(x) = 0$ thì\n$$A(x) = 0\\ \\text{hoặc}\\ B(x) = 0.$$\nVí dụ $(x-2)(x+5) = 0\\Rightarrow x = 2$ hoặc $x = -5$.\n\n## Phương trình chứa ẩn ở mẫu\nBắt buộc **tìm điều kiện xác định** (mẫu khác 0) trước, giải xong phải **đối chiếu điều kiện**, loại nghiệm làm mẫu bằng 0.\n\n## Biện luận $ax + b = 0$\n- $a\\ne 0$: một nghiệm $x = -\\dfrac{b}{a}$.\n- $a = 0,\\ b\\ne 0$: vô nghiệm.\n- $a = 0,\\ b = 0$: vô số nghiệm.",
+      "formulas": [
+        "math.thcs.phuong-trinh-bac-nhat.phuong-trinh-bac-nhat-mot-an",
+        "math.thcs.phuong-trinh-bac-nhat.phuong-trinh-tich",
+        "math.thcs.phuong-trinh-bac-nhat.phuong-trinh-chua-an-o-mau",
+        "math.thcs.phuong-trinh-bac-nhat.bien-luan-phuong-trinh-ax-cong-b",
+        "math.thcs.phuong-trinh-bac-nhat.phuong-trinh-gia-tri-tuyet-doi-bang-so",
+        "math.thcs.phuong-trinh-bac-nhat.phuong-trinh-gia-tri-tuyet-doi-hai-ve"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải phương trình $2(x - 3) + 5 = 3x - 4$.",
+          "solution": "Bỏ ngoặc: $2x - 6 + 5 = 3x - 4$, tức $2x - 1 = 3x - 4$. Chuyển ẩn về một vế, số về vế kia: $-1 + 4 = 3x - 2x$, được $3 = x$. Vậy $x = 3$.",
+          "answer": "$x = 3$"
+        },
+        {
+          "problem": "Giải phương trình $\\dfrac{x+2}{x-1} = 2$ (chú ý điều kiện).",
+          "solution": "Điều kiện xác định: $x\\ne 1$. Nhân hai vế với $x-1$: $x + 2 = 2(x-1) = 2x - 2$. Chuyển vế: $2 + 2 = 2x - x$, tức $x = 4$. Đối chiếu điều kiện $x\\ne 1$: thỏa mãn, nhận $x = 4$.",
+          "answer": "$x = 4$"
+        }
+      ],
+      "common_mistakes": [
+        "Chuyển vế mà quên đổi dấu số hạng.",
+        "Giải phương trình chứa ẩn ở mẫu mà không đặt điều kiện, giữ nghiệm làm mẫu bằng 0.",
+        "Nhân/chia hai vế cho một biểu thức có thể bằng 0 làm mất hoặc thừa nghiệm."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "phuong-trinh",
+        "bac-nhat",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.giai-toan-lap-phuong-trinh",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Phương trình và bất phương trình (Lớp 8-9)",
+      "order": 2,
+      "title_vi": "Giải bài toán bằng cách lập phương trình",
+      "title_en": "Word problems via equations",
+      "objectives": [
+        "Chọn được ẩn, đặt điều kiện và biểu diễn các đại lượng theo ẩn",
+        "Lập và giải được phương trình mô tả bài toán thực tế",
+        "Đối chiếu điều kiện và trả lời đúng yêu cầu bài toán"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-nhat-mot-an"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Ẩn số",
+          "term_en": "Unknown",
+          "definition": "Đại lượng chưa biết được chọn để đặt tên (thường là x)."
+        },
+        {
+          "term_vi": "Ba bước giải",
+          "term_en": "Three steps",
+          "definition": "Lập phương trình, giải phương trình, đối chiếu và trả lời."
+        },
+        {
+          "term_vi": "Quan hệ s-v-t",
+          "term_en": "Distance-speed-time",
+          "definition": "Quãng đường = vận tốc × thời gian: $s = v\\cdot t$."
+        }
+      ],
+      "content": "## Ba bước giải\n**Bước 1 — Lập phương trình.** Chọn ẩn (kèm đơn vị và điều kiện), biểu diễn các đại lượng còn lại theo ẩn, rồi dựa vào dữ kiện lập một phương trình.\n**Bước 2 — Giải phương trình** vừa lập.\n**Bước 3 — Đối chiếu điều kiện** và trả lời đúng câu hỏi.\n\n## Các dạng quen thuộc\n- **Chuyển động**: dùng $s = v\\cdot t$. Với xuôi/ngược dòng: $v_{\\text{xuôi}} = v_{\\text{thuyền}} + v_{\\text{nước}}$, $v_{\\text{ngược}} = v_{\\text{thuyền}} - v_{\\text{nước}}$.\n- **Năng suất, làm chung**: khối lượng công việc $=$ năng suất $\\times$ thời gian; xem cả công việc là $1$.\n- **Toán phần trăm, lãi suất**: tăng $p\\%$ thì nhân với $\\left(1 + \\dfrac{p}{100}\\right)$.\n\n## Vì sao đặt điều kiện?\nVì đại lượng thực tế phải hợp lí: số người là số nguyên dương, vận tốc dương, thời gian dương... Đối chiếu điều kiện giúp **loại nghiệm vô lí**. Đây là bước học sinh hay bỏ quên nhưng rất quan trọng để có câu trả lời đúng.",
+      "formulas": [
+        "math.thcs.giai-toan-lap-phuong-trinh.quang-duong-van-toc-thoi-gian",
+        "math.thcs.giai-toan-lap-phuong-trinh.van-toc-xuoi-nguoc-dong",
+        "math.thcs.giai-toan-lap-phuong-trinh.nang-suat-lao-dong",
+        "math.thcs.giai-toan-lap-phuong-trinh.lam-chung-cong-viec",
+        "math.thcs.giai-toan-lap-phuong-trinh.lai-suat-kep"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một ô tô đi từ A đến B dài $120$ km. Lúc về, xe tăng vận tốc thêm $10$ km/h nên thời gian về ít hơn lúc đi $36$ phút. Tính vận tốc lúc đi.",
+          "solution": "Gọi vận tốc lúc đi là $x$ (km/h, $x>0$). Thời gian đi $\\dfrac{120}{x}$ giờ, thời gian về $\\dfrac{120}{x+10}$ giờ. $36$ phút $= \\dfrac{36}{60} = \\dfrac{3}{5}$ giờ. Vì về ít hơn: $\\dfrac{120}{x} - \\dfrac{120}{x+10} = \\dfrac{3}{5}$. Quy đồng: $\\dfrac{120\\cdot 10}{x(x+10)} = \\dfrac{3}{5}$, tức $\\dfrac{1200}{x(x+10)} = \\dfrac{3}{5}$. Suy ra $3x(x+10) = 6000$, hay $x^2 + 10x - 2000 = 0$, được $x = 40$ (loại $x=-50$). Vận tốc lúc đi là $40$ km/h.",
+          "answer": "$40$ km/h"
+        },
+        {
+          "problem": "Một mảnh đất hình chữ nhật có chiều dài hơn chiều rộng $8$ m và chu vi $80$ m. Tính diện tích mảnh đất.",
+          "solution": "Gọi chiều rộng là $x$ (m, $x>0$), chiều dài $x + 8$. Nửa chu vi $= 40$ nên $x + (x+8) = 40$, tức $2x + 8 = 40$, suy ra $x = 16$. Chiều rộng $16$ m, chiều dài $24$ m. Diện tích $16\\times 24 = 384\\ \\text{m}^2$.",
+          "answer": "$384\\ \\text{m}^2$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên đặt điều kiện cho ẩn, giữ nghiệm âm hoặc không nguyên vô lí.",
+        "Đổi đơn vị sai (phút và giờ, km và m) khi lập phương trình.",
+        "Lập sai quan hệ giữa các đại lượng (ví dụ đặt nhầm thời gian đi và về)."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "lap-phuong-trinh",
+        "toan-thuc-te",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.bat-phuong-trinh-bac-nhat",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Phương trình và bất phương trình (Lớp 8-9)",
+      "order": 3,
+      "title_vi": "Bất phương trình bậc nhất một ẩn",
+      "title_en": "Linear inequalities",
+      "objectives": [
+        "Vận dụng được liên hệ giữa thứ tự với phép cộng và phép nhân",
+        "Giải và biểu diễn được nghiệm của bất phương trình bậc nhất một ẩn trên trục số",
+        "Nhận biết khi nào phải đổi chiều bất phương trình"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-nhat-mot-an"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Bất phương trình bậc nhất",
+          "term_en": "Linear inequality",
+          "definition": "Dạng $ax + b > 0$ (hoặc $<, \\ge, \\le$) với $a\\ne 0$."
+        },
+        {
+          "term_vi": "Liên hệ thứ tự - phép nhân",
+          "term_en": "Order and multiplication",
+          "definition": "Nhân hai vế với số âm phải đổi chiều bất phương trình."
+        },
+        {
+          "term_vi": "Tập nghiệm",
+          "term_en": "Solution set",
+          "definition": "Tập tất cả giá trị của ẩn thỏa mãn bất phương trình."
+        }
+      ],
+      "content": "## Quy tắc biến đổi\nGiải bất phương trình gần giống giải phương trình, nhưng có một điểm **cực kì quan trọng** về chiều:\n- **Cộng (trừ)** cùng một số vào hai vế: chiều **giữ nguyên**.\n- **Nhân (chia)** hai vế cho số **dương**: chiều **giữ nguyên**.\n- **Nhân (chia)** hai vế cho số **âm**: **đổi chiều** bất phương trình.\n\nVí dụ từ $-2x < 6$, chia hai vế cho $-2$ (số âm) phải đổi chiều: $x > -3$.\n\n## Các bước giải\nChuyển các hạng tử chứa ẩn về một vế, hằng số về vế kia, thu gọn về dạng $ax > c$ (hoặc $<,\\ge,\\le$), rồi chia cho $a$ — nhớ đổi chiều nếu $a < 0$.\n\n## Biểu diễn nghiệm trên trục số\nNghiệm là một **tia** (khoảng vô hạn). Dùng dấu ngoặc tròn (không lấy đầu mút) cho $<, >$ và ngoặc vuông (lấy đầu mút) cho $\\le, \\ge$. Ví dụ $x > -3$ biểu diễn bằng tia bắt đầu từ $-3$ (không lấy $-3$) đi sang phải.\n\n## Ứng dụng\nBất phương trình giúp trả lời câu hỏi \"ít nhất\", \"nhiều nhất\", \"tối đa bao nhiêu\" trong thực tế — như số sản phẩm bán ra để không lỗ, số giờ làm để đạt mục tiêu.",
+      "formulas": [
+        "math.thcs.bat-phuong-trinh.lien-he-thu-tu-va-phep-cong",
+        "math.thcs.bat-phuong-trinh.lien-he-thu-tu-va-phep-nhan-so-duong",
+        "math.thcs.bat-phuong-trinh.lien-he-thu-tu-va-phep-nhan-so-am",
+        "math.thcs.bat-phuong-trinh.bat-phuong-trinh-bac-nhat-mot-an",
+        "math.thcs.bat-phuong-trinh.bat-dang-thuc-co-si-hai-so"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải bất phương trình $3x - 5 \\le x + 7$.",
+          "solution": "Chuyển ẩn về trái, số về phải: $3x - x \\le 7 + 5$, tức $2x \\le 12$. Chia hai vế cho $2$ (số dương, giữ chiều): $x \\le 6$. Tập nghiệm là mọi $x \\le 6$.",
+          "answer": "$x \\le 6$"
+        },
+        {
+          "problem": "Giải bất phương trình $-2x + 1 > 5$.",
+          "solution": "Chuyển $1$ sang phải: $-2x > 4$. Chia hai vế cho $-2$ là số âm nên phải ĐỔI CHIỀU: $x < -2$. Tập nghiệm là mọi $x < -2$.",
+          "answer": "$x < -2$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên đổi chiều khi nhân hoặc chia hai vế cho số âm.",
+        "Nhầm ngoặc tròn và ngoặc vuông khi biểu diễn nghiệm trên trục số.",
+        "Chuyển vế mà không đổi dấu số hạng."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "bat-phuong-trinh",
+        "thu-tu",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.ham-so-bac-nhat",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số bậc nhất (Lớp 8-9)",
+      "order": 1,
+      "title_vi": "Hàm số bậc nhất y = ax + b",
+      "title_en": "Linear functions",
+      "objectives": [
+        "Nhận biết hàm số bậc nhất và vẽ được đồ thị là một đường thẳng",
+        "Hiểu ý nghĩa của hệ số góc a và xác định tính đồng biến, nghịch biến",
+        "Xác định vị trí tương đối (song song, cắt nhau, trùng nhau, vuông góc) của hai đường thẳng"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-nhat-mot-an"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hàm số bậc nhất",
+          "term_en": "Linear function",
+          "definition": "$y = ax + b$ với $a\\ne 0$."
+        },
+        {
+          "term_vi": "Hệ số góc",
+          "term_en": "Slope",
+          "definition": "Hệ số $a$; cho biết độ dốc của đường thẳng."
+        },
+        {
+          "term_vi": "Đường thẳng song song",
+          "term_en": "Parallel lines",
+          "definition": "Hai đường $y=ax+b$, $y=a'x+b'$ song song khi $a=a'$ và $b\\ne b'$."
+        }
+      ],
+      "content": "## Hàm số bậc nhất và đồ thị\nHàm số bậc nhất có dạng $y = ax + b$ với $a\\ne 0$. Đồ thị của nó là một **đường thẳng**: cắt trục tung tại $(0; b)$ và cắt trục hoành tại $\\left(-\\dfrac{b}{a}; 0\\right)$. Chỉ cần hai điểm này là vẽ được.\n\n## Hệ số góc a\n- $a > 0$: hàm số **đồng biến** (đường thẳng đi lên từ trái sang phải).\n- $a < 0$: hàm số **nghịch biến** (đi xuống).\n- $|a|$ càng lớn thì đường càng **dốc**.\nSố $b$ (tung độ gốc) cho biết đường cắt trục tung ở đâu.\n\n## Vị trí tương đối của hai đường thẳng\nCho $d: y = ax + b$ và $d': y = a'x + b'$:\n- **Song song** khi $a = a'$ và $b\\ne b'$.\n- **Trùng nhau** khi $a = a'$ và $b = b'$.\n- **Cắt nhau** khi $a\\ne a'$.\n- **Vuông góc** khi $a\\cdot a' = -1$.\n\n## Đường thẳng qua hai điểm\nHệ số góc của đường qua $A(x_1;y_1)$ và $B(x_2;y_2)$ là\n$$a = \\dfrac{y_2 - y_1}{x_2 - x_1}\\quad(x_1\\ne x_2).$$\nĐây là cách lập phương trình đường thẳng khi biết hai điểm.",
+      "formulas": [
+        "math.thcs.ham-so-bac-nhat.dinh-nghia-ham-so-bac-nhat",
+        "math.thcs.ham-so-bac-nhat.do-thi-ham-so-bac-nhat",
+        "math.thcs.ham-so-bac-nhat.he-so-goc",
+        "math.thcs.ham-so-bac-nhat.hai-duong-thang-song-song",
+        "math.thcs.ham-so-bac-nhat.hai-duong-thang-cat-nhau",
+        "math.thcs.ham-so-bac-nhat.hai-duong-thang-vuong-goc",
+        "math.thcs.ham-so-bac-nhat.duong-thang-di-qua-hai-diem",
+        "math.thcs.ham-so-bac-nhat.ham-so-y-bang-ax"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho đường thẳng $d: y = 2x - 3$. Đường thẳng $d'$ đi qua điểm $(0; 1)$ và song song với $d$ có phương trình nào?",
+          "solution": "Song song với $d$ nên cùng hệ số góc $a = 2$, tức $d': y = 2x + b'$ với $b'\\ne -3$. Vì $d'$ qua $(0;1)$ nên $b' = 1$. Vậy $d': y = 2x + 1$.",
+          "answer": "$y = 2x + 1$"
+        },
+        {
+          "problem": "Viết phương trình đường thẳng đi qua hai điểm $A(1; 2)$ và $B(3; 8)$.",
+          "solution": "Hệ số góc $a = \\dfrac{8-2}{3-1} = \\dfrac{6}{2} = 3$. Phương trình có dạng $y = 3x + b$. Thay điểm $A(1;2)$: $2 = 3\\cdot 1 + b\\Rightarrow b = -1$. Vậy đường thẳng là $y = 3x - 1$.",
+          "answer": "$y = 3x - 1$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng $y = ax + b$ luôn là hàm bậc nhất, quên điều kiện $a\\ne 0$.",
+        "Nhầm điều kiện song song: chỉ xét $a = a'$ mà quên $b\\ne b'$ (nếu $b=b'$ thì trùng nhau).",
+        "Tính hệ số góc qua hai điểm bị đảo tử và mẫu, ví dụ lấy $\\dfrac{x_2-x_1}{y_2-y_1}$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "ham-so-bac-nhat",
+        "duong-thang",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.he-phuong-trinh-bac-nhat-hai-an",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hệ hai phương trình bậc nhất hai ẩn (Lớp 9)",
+      "order": 1,
+      "title_vi": "Hệ hai phương trình bậc nhất hai ẩn",
+      "title_en": "Systems of two linear equations",
+      "objectives": [
+        "Giải được hệ hai phương trình bậc nhất hai ẩn bằng phương pháp thế",
+        "Giải được hệ bằng phương pháp cộng đại số",
+        "Biện luận được số nghiệm của hệ và giải bài toán bằng cách lập hệ phương trình"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.ham-so-bac-nhat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hệ phương trình",
+          "term_en": "System of equations",
+          "definition": "Gồm hai phương trình bậc nhất hai ẩn $x, y$ xét đồng thời."
+        },
+        {
+          "term_vi": "Phương pháp thế",
+          "term_en": "Substitution",
+          "definition": "Rút một ẩn từ một phương trình rồi thế vào phương trình kia."
+        },
+        {
+          "term_vi": "Phương pháp cộng đại số",
+          "term_en": "Elimination",
+          "definition": "Cộng hoặc trừ hai phương trình để khử một ẩn."
+        }
+      ],
+      "content": "## Hệ phương trình bậc nhất hai ẩn\nDạng tổng quát:\n$$\\begin{cases} ax + by = c \\\\ a'x + b'y = c' \\end{cases}$$\n**Nghiệm** của hệ là cặp $(x; y)$ thỏa mãn **cả hai** phương trình. Về hình học, mỗi phương trình là một đường thẳng; nghiệm là **giao điểm** của chúng.\n\n## Phương pháp thế\nRút một ẩn từ một phương trình theo ẩn kia, rồi **thế** vào phương trình còn lại để được phương trình một ẩn. Giải xong thay ngược lại tìm ẩn kia.\n\n## Phương pháp cộng đại số\nNhân hai phương trình với hệ số thích hợp để một ẩn có hệ số **đối nhau** (hoặc bằng nhau), rồi **cộng** (hoặc **trừ**) hai phương trình để khử ẩn đó.\n\n## Số nghiệm của hệ\nSo sánh các tỉ số hệ số:\n- $\\dfrac{a}{a'}\\ne\\dfrac{b}{b'}$: hệ có **nghiệm duy nhất** (hai đường cắt nhau).\n- $\\dfrac{a}{a'} = \\dfrac{b}{b'}\\ne\\dfrac{c}{c'}$: hệ **vô nghiệm** (song song).\n- $\\dfrac{a}{a'} = \\dfrac{b}{b'} = \\dfrac{c}{c'}$: hệ có **vô số nghiệm** (trùng nhau).\n\n## Lập hệ để giải toán\nKhi bài toán có **hai đại lượng chưa biết**, đặt hai ẩn và lập hai phương trình thường tự nhiên hơn lập một phương trình một ẩn.",
+      "formulas": [
+        "math.thcs.he-phuong-trinh.dang-tong-quat",
+        "math.thcs.he-phuong-trinh.phuong-phap-the",
+        "math.thcs.he-phuong-trinh.phuong-phap-cong-dai-so",
+        "math.thcs.he-phuong-trinh.so-nghiem-cua-he",
+        "math.thcs.he-phuong-trinh.cong-thuc-cramer"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải hệ $\\begin{cases} x + y = 5 \\\\ 2x - y = 1 \\end{cases}$ bằng phương pháp cộng.",
+          "solution": "Hai phương trình có hệ số của $y$ là $+1$ và $-1$ (đối nhau) nên cộng vế theo vế để khử $y$: $(x+y) + (2x - y) = 5 + 1$, tức $3x = 6$, suy ra $x = 2$. Thay vào $x + y = 5$: $y = 3$. Vậy nghiệm là $(2; 3)$.",
+          "answer": "$(x; y) = (2; 3)$"
+        },
+        {
+          "problem": "Hai lớp 9A và 9B quyên góp được tổng cộng $50$ quyển sách. Biết 9A góp nhiều hơn 9B là $8$ quyển. Mỗi lớp góp bao nhiêu quyển?",
+          "solution": "Gọi số sách 9A là $x$, 9B là $y$ (quyển, nguyên dương). Ta có hệ $\\begin{cases} x + y = 50 \\\\ x - y = 8 \\end{cases}$. Cộng hai phương trình khử $y$: $2x = 58\\Rightarrow x = 29$. Suy ra $y = 50 - 29 = 21$.",
+          "answer": "9A: $29$ quyển, 9B: $21$ quyển."
+        }
+      ],
+      "common_mistakes": [
+        "Khi thế quên thay vào đúng phương trình còn lại, hoặc thế nhầm biểu thức.",
+        "Khi cộng đại số quên nhân cả hai vế của phương trình với hệ số.",
+        "Chỉ tìm một ẩn rồi dừng, quên tìm ẩn còn lại và ghi cặp nghiệm."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "he-phuong-trinh",
+        "hai-an",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.can-bac-hai",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Căn bậc hai và căn bậc ba (Lớp 9)",
+      "order": 1,
+      "title_vi": "Căn bậc hai và các phép biến đổi",
+      "title_en": "Square roots and transformations",
+      "objectives": [
+        "Tìm được căn bậc hai số học và điều kiện xác định của căn thức",
+        "Vận dụng khai phương một tích, một thương và đưa thừa số ra vào dấu căn",
+        "Trục căn thức ở mẫu và rút gọn biểu thức chứa căn"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.luy-thua-so-huu-ti"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Căn bậc hai số học",
+          "term_en": "Arithmetic square root",
+          "definition": "$\\sqrt{a}$ ($a\\ge 0$) là số không âm có bình phương bằng $a$."
+        },
+        {
+          "term_vi": "Điều kiện xác định",
+          "term_en": "Domain of a radical",
+          "definition": "$\\sqrt{A}$ xác định khi $A\\ge 0$."
+        },
+        {
+          "term_vi": "Trục căn thức",
+          "term_en": "Rationalizing",
+          "definition": "Biến đổi để mẫu không còn dấu căn."
+        }
+      ],
+      "content": "## Căn bậc hai số học\nVới $a\\ge 0$, **căn bậc hai số học** $\\sqrt{a}$ là số **không âm** mà bình phương bằng $a$. Ví dụ $\\sqrt{25} = 5$ (không phải $-5$). Một hằng đẳng thức quan trọng:\n$$\\sqrt{A^2} = |A|.$$\n\n## Điều kiện xác định\n$\\sqrt{A}$ chỉ có nghĩa khi $A\\ge 0$. Ví dụ $\\sqrt{x - 3}$ xác định khi $x\\ge 3$.\n\n## Khai phương tích và thương\n$$\\sqrt{a\\cdot b} = \\sqrt{a}\\cdot\\sqrt{b},\\qquad \\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}\\quad (a\\ge 0,\\ b>0).$$\nNhờ đó $\\sqrt{50} = \\sqrt{25\\cdot 2} = 5\\sqrt{2}$ (**đưa thừa số ra ngoài dấu căn**).\n\n## Trục căn thức ở mẫu\nKhông để dấu căn ở mẫu. Với mẫu một hạng tử, nhân cả tử và mẫu cho căn đó:\n$$\\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2}.$$\nVới mẫu hai hạng tử, nhân với **biểu thức liên hợp**:\n$$\\dfrac{1}{\\sqrt{3} - 1} = \\dfrac{\\sqrt{3}+1}{(\\sqrt{3}-1)(\\sqrt{3}+1)} = \\dfrac{\\sqrt{3}+1}{2}.$$\nỞ mẫu ta dùng hằng đẳng thức hiệu hai bình phương để làm mất căn.",
+      "formulas": [
+        "math.thcs.can-bac-hai.can-bac-hai-so-hoc",
+        "math.thcs.can-bac-hai.can-cua-binh-phuong",
+        "math.thcs.can-thuc.dieu-kien-xac-dinh",
+        "math.thcs.can-thuc.khai-phuong-mot-tich",
+        "math.thcs.can-thuc.khai-phuong-mot-thuong",
+        "math.thcs.can-thuc.dua-thua-so-ra-ngoai-dau-can",
+        "math.thcs.can-thuc.truc-can-thuc-mot-hang-tu",
+        "math.thcs.can-thuc.truc-can-thuc-hai-hang-tu"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Rút gọn $\\sqrt{72} - \\sqrt{18} + \\sqrt{2}$.",
+          "solution": "Đưa thừa số ra ngoài dấu căn: $\\sqrt{72} = \\sqrt{36\\cdot 2} = 6\\sqrt{2}$; $\\sqrt{18} = \\sqrt{9\\cdot 2} = 3\\sqrt{2}$. Thay vào: $6\\sqrt{2} - 3\\sqrt{2} + \\sqrt{2} = (6 - 3 + 1)\\sqrt{2} = 4\\sqrt{2}$.",
+          "answer": "$4\\sqrt{2}$"
+        },
+        {
+          "problem": "Trục căn thức ở mẫu của $\\dfrac{2}{\\sqrt{5} + 1}$.",
+          "solution": "Nhân cả tử và mẫu với biểu thức liên hợp $\\sqrt{5} - 1$: $\\dfrac{2(\\sqrt{5}-1)}{(\\sqrt{5}+1)(\\sqrt{5}-1)}$. Mẫu là hiệu hai bình phương $(\\sqrt 5)^2 - 1^2 = 5 - 1 = 4$. Vậy kết quả $\\dfrac{2(\\sqrt{5}-1)}{4} = \\dfrac{\\sqrt{5}-1}{2}$.",
+          "answer": "$\\dfrac{\\sqrt{5}-1}{2}$"
+        }
+      ],
+      "common_mistakes": [
+        "Viết $\\sqrt{A^2} = A$ mà quên giá trị tuyệt đối khi $A$ có thể âm.",
+        "Cho rằng $\\sqrt{a+b} = \\sqrt{a} + \\sqrt{b}$ (sai); chỉ có khai phương tích và thương.",
+        "Quên điều kiện $A\\ge 0$ khi tìm điều kiện xác định của căn thức."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "can-bac-hai",
+        "can-thuc",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.can-bac-ba",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Căn bậc hai và căn bậc ba (Lớp 9)",
+      "order": 2,
+      "title_vi": "Căn bậc ba",
+      "title_en": "Cube roots",
+      "objectives": [
+        "Hiểu định nghĩa căn bậc ba và tính được căn bậc ba của các số quen thuộc",
+        "Vận dụng tính chất của căn bậc ba để rút gọn biểu thức",
+        "Phân biệt được căn bậc ba với căn bậc hai về điều kiện và dấu"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.can-bac-hai"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Căn bậc ba",
+          "term_en": "Cube root",
+          "definition": "$\\sqrt[3]{a}$ là số $x$ sao cho $x^3 = a$."
+        },
+        {
+          "term_vi": "Tính chất căn bậc ba",
+          "term_en": "Properties",
+          "definition": "$\\sqrt[3]{ab} = \\sqrt[3]{a}\\cdot\\sqrt[3]{b}$."
+        },
+        {
+          "term_vi": "Xác định với mọi số",
+          "term_en": "Defined for all reals",
+          "definition": "Căn bậc ba có nghĩa với mọi số (kể cả số âm)."
+        }
+      ],
+      "content": "## Căn bậc ba là gì?\n**Căn bậc ba** của $a$, kí hiệu $\\sqrt[3]{a}$, là số $x$ mà $x^3 = a$. Ví dụ $\\sqrt[3]{8} = 2$ vì $2^3 = 8$; và $\\sqrt[3]{-27} = -3$ vì $(-3)^3 = -27$.\n\n## Khác gì căn bậc hai?\n- Căn bậc hai chỉ xác định với số **không âm**; còn căn bậc ba xác định với **mọi số**, kể cả số âm.\n- Căn bậc ba **giữ dấu** của số dưới căn: $\\sqrt[3]{a}$ cùng dấu với $a$.\n\n## Tính chất\n$$\\sqrt[3]{a\\cdot b} = \\sqrt[3]{a}\\cdot\\sqrt[3]{b},\\qquad \\sqrt[3]{\\dfrac{a}{b}} = \\dfrac{\\sqrt[3]{a}}{\\sqrt[3]{b}}\\ (b\\ne 0),\\qquad \\sqrt[3]{a^3} = a.$$\nNhờ đó ta rút gọn được, chẳng hạn $\\sqrt[3]{54} = \\sqrt[3]{27\\cdot 2} = 3\\sqrt[3]{2}$.\n\n## Mẹo nhớ lập phương đẹp\nCác lập phương thường gặp: $1, 8, 27, 64, 125, 216, 343, 512, 729, 1000$ (tức $1^3$ đến $10^3$). Thuộc bảng này giúp tính căn bậc ba nhanh.",
+      "formulas": [
+        "math.thcs.can-thuc.can-bac-ba",
+        "math.thcs.can-thuc.tinh-chat-can-bac-ba",
+        "math.thcs.can-thuc.dua-thua-so-vao-trong-dau-can",
+        "math.thcs.can-thuc.khu-mau-bieu-thuc-lay-can",
+        "math.thcs.can-thuc.so-sanh-hai-can-bac-hai",
+        "math.thcs.can-thuc.phuong-trinh-can-bac-hai-co-ban"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\sqrt[3]{-64} + \\sqrt[3]{27}$.",
+          "solution": "Căn bậc ba giữ dấu: $\\sqrt[3]{-64} = -4$ vì $(-4)^3 = -64$; và $\\sqrt[3]{27} = 3$. Cộng lại: $-4 + 3 = -1$.",
+          "answer": "$-1$"
+        },
+        {
+          "problem": "Rút gọn $\\sqrt[3]{16}\\cdot\\sqrt[3]{4}$.",
+          "solution": "Nhân hai căn bậc ba cùng bậc: $\\sqrt[3]{16\\cdot 4} = \\sqrt[3]{64} = 4$ vì $4^3 = 64$.",
+          "answer": "$4$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng căn bậc ba của số âm không tồn tại (thực ra có, và mang dấu âm).",
+        "Nhầm $\\sqrt[3]{a^3} = |a|$; đúng ra căn bậc ba cho $\\sqrt[3]{a^3} = a$ (giữ nguyên dấu).",
+        "Tính $\\sqrt[3]{8} = 4$ do nhầm với chia đôi thay vì tìm số lập phương bằng 8."
+      ],
+      "duration_minutes": 35,
+      "difficulty": "trung-binh",
+      "tags": [
+        "can-bac-ba",
+        "can-thuc",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.ham-so-y-ax-binh-phuong",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số y = ax^2 và phương trình bậc hai (Lớp 9)",
+      "order": 1,
+      "title_vi": "Hàm số y = ax^2 và đồ thị parabol",
+      "title_en": "The function y=ax^2",
+      "objectives": [
+        "Nhận biết hàm số y = ax^2 và tính chất đồng biến, nghịch biến của nó",
+        "Vẽ và nêu được đặc điểm đồ thị parabol",
+        "Xác định được toạ độ giao điểm của parabol và đường thẳng"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.ham-so-bac-nhat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hàm số y = ax^2",
+          "term_en": "Quadratic function",
+          "definition": "Hàm số dạng $y = ax^2$ với $a\\ne 0$."
+        },
+        {
+          "term_vi": "Parabol",
+          "term_en": "Parabola",
+          "definition": "Đồ thị của hàm số y = ax^2, đối xứng qua trục tung, đỉnh tại gốc toạ độ."
+        },
+        {
+          "term_vi": "Phương trình hoành độ giao điểm",
+          "term_en": "Intersection equation",
+          "definition": "Phương trình lập bằng cách cho hai biểu thức y bằng nhau."
+        }
+      ],
+      "content": "## Hàm số y = ax^2\nVới $a\\ne 0$, đồ thị hàm số $y = ax^2$ là một **parabol** có **đỉnh tại gốc toạ độ** $O(0;0)$ và **nhận trục tung làm trục đối xứng**.\n\n## Bề lõm và tính đơn điệu\n- $a > 0$: parabol **quay bề lõm lên trên**, điểm $O$ là điểm **thấp nhất**. Hàm nghịch biến khi $x < 0$ và đồng biến khi $x > 0$.\n- $a < 0$: parabol **quay bề lõm xuống dưới**, $O$ là điểm **cao nhất**. Hàm đồng biến khi $x < 0$, nghịch biến khi $x > 0$.\n\nDo đối xứng, hai giá trị $x$ đối nhau cho cùng một $y$: $f(-x) = f(x)$.\n\n## Giao điểm của parabol và đường thẳng\nMuốn tìm giao điểm của $(P): y = ax^2$ và $(d): y = mx + n$, ta lập **phương trình hoành độ giao điểm** bằng cách cho hai biểu thức $y$ bằng nhau:\n$$ax^2 = mx + n\\ \\Longleftrightarrow\\ ax^2 - mx - n = 0.$$\nĐây là một **phương trình bậc hai**; số nghiệm của nó chính là số giao điểm (0, 1 hoặc 2 giao điểm).",
+      "formulas": [
+        "math.thcs.ham-so-bac-hai.ham-so-y-bang-ax-binh-phuong",
+        "math.thcs.ham-so-bac-hai.do-thi-parabol",
+        "math.thcs.ham-so-bac-hai.tuong-giao-parabol-va-duong-thang"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho hàm số $y = 2x^2$. Tính giá trị của hàm số tại $x = -3$ và $x = 3$, nêu nhận xét.",
+          "solution": "Thay $x = -3$: $y = 2\\cdot(-3)^2 = 2\\cdot 9 = 18$. Thay $x = 3$: $y = 2\\cdot 3^2 = 18$. Hai giá trị bằng nhau vì parabol đối xứng qua trục tung, nên $x$ và $-x$ cho cùng một $y$.",
+          "answer": "Đều bằng $18$; do tính đối xứng."
+        },
+        {
+          "problem": "Tìm toạ độ giao điểm của parabol $(P): y = x^2$ và đường thẳng $(d): y = x + 2$.",
+          "solution": "Lập phương trình hoành độ giao điểm: $x^2 = x + 2$, tức $x^2 - x - 2 = 0$. Phân tích $(x-2)(x+1) = 0$ nên $x = 2$ hoặc $x = -1$. Thay lại vào $(d)$: với $x=2$ thì $y = 4$; với $x=-1$ thì $y = 1$. Hai giao điểm là $(2; 4)$ và $(-1; 1)$.",
+          "answer": "$(2; 4)$ và $(-1; 1)$"
+        }
+      ],
+      "common_mistakes": [
+        "Cho rằng đồ thị y = ax^2 là đường thẳng; nó là parabol.",
+        "Kết luận sai chiều biến thiên vì quên xét dấu của $a$.",
+        "Khi tìm giao điểm chỉ tìm $x$ mà quên tính $y$ để ghi đủ toạ độ."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "ham-so-bac-hai",
+        "parabol",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-hai",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số y = ax^2 và phương trình bậc hai (Lớp 9)",
+      "order": 2,
+      "title_vi": "Phương trình bậc hai một ẩn",
+      "title_en": "Quadratic equations",
+      "objectives": [
+        "Nhận biết phương trình bậc hai và tính được biệt thức delta",
+        "Vận dụng công thức nghiệm và công thức nghiệm thu gọn để giải phương trình bậc hai",
+        "Nhẩm nghiệm trong các trường hợp đặc biệt về hệ số"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phan-tich-da-thuc-nhan-tu"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình bậc hai",
+          "term_en": "Quadratic equation",
+          "definition": "Dạng $ax^2 + bx + c = 0$ với $a\\ne 0$."
+        },
+        {
+          "term_vi": "Biệt thức delta",
+          "term_en": "Discriminant",
+          "definition": "$\\Delta = b^2 - 4ac$, quyết định số nghiệm."
+        },
+        {
+          "term_vi": "Công thức nghiệm",
+          "term_en": "Quadratic formula",
+          "definition": "$x = \\dfrac{-b\\pm\\sqrt{\\Delta}}{2a}$ khi $\\Delta\\ge 0$."
+        }
+      ],
+      "content": "## Phương trình bậc hai\nDạng $ax^2 + bx + c = 0$ với $a\\ne 0$. Để biết số nghiệm, ta tính **biệt thức**:\n$$\\Delta = b^2 - 4ac.$$\n- $\\Delta > 0$: **hai nghiệm phân biệt**.\n- $\\Delta = 0$: **nghiệm kép** $x = -\\dfrac{b}{2a}$.\n- $\\Delta < 0$: **vô nghiệm** (trong tập số thực).\n\n## Công thức nghiệm\nKhi $\\Delta\\ge 0$:\n$$x_{1,2} = \\dfrac{-b\\pm\\sqrt{\\Delta}}{2a}.$$\nKhi $b = 2b'$ chẵn, dùng **công thức thu gọn** với $\\Delta' = b'^2 - ac$:\n$$x_{1,2} = \\dfrac{-b'\\pm\\sqrt{\\Delta'}}{a}.$$\n\n## Nhẩm nghiệm nhanh\n- Nếu $a + b + c = 0$: phương trình có nghiệm $x_1 = 1$ và $x_2 = \\dfrac{c}{a}$.\n- Nếu $a - b + c = 0$: phương trình có nghiệm $x_1 = -1$ và $x_2 = -\\dfrac{c}{a}$.\n\nVí dụ $2x^2 - 5x + 3 = 0$ có $a+b+c = 0$ nên $x_1 = 1$, $x_2 = \\dfrac{3}{2}$ — không cần tính $\\Delta$.",
+      "formulas": [
+        "math.thcs.phuong-trinh-bac-hai.dang-tong-quat",
+        "math.thcs.phuong-trinh-bac-hai.biet-thuc-delta",
+        "math.thcs.phuong-trinh-bac-hai.cong-thuc-nghiem",
+        "math.thcs.phuong-trinh-bac-hai.cong-thuc-nghiem-thu-gon",
+        "math.thcs.phuong-trinh-bac-hai.nghiem-kep",
+        "math.thcs.phuong-trinh-bac-hai.truong-hop-dac-biet-tong-he-so",
+        "math.thcs.phuong-trinh-bac-hai.truong-hop-dac-biet-hieu-he-so"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải phương trình $x^2 - 5x + 6 = 0$.",
+          "solution": "Tính biệt thức: $\\Delta = (-5)^2 - 4\\cdot 1\\cdot 6 = 25 - 24 = 1 > 0$ nên có hai nghiệm phân biệt. Áp dụng công thức: $x = \\dfrac{5\\pm\\sqrt{1}}{2} = \\dfrac{5\\pm 1}{2}$. Vậy $x_1 = 3$, $x_2 = 2$.",
+          "answer": "$x_1 = 3,\\ x_2 = 2$"
+        },
+        {
+          "problem": "Giải nhanh $3x^2 - 4x + 1 = 0$ bằng cách nhẩm nghiệm.",
+          "solution": "Kiểm tra tổng hệ số: $a + b + c = 3 + (-4) + 1 = 0$. Vậy phương trình có nghiệm $x_1 = 1$ và $x_2 = \\dfrac{c}{a} = \\dfrac{1}{3}$, không cần tính $\\Delta$.",
+          "answer": "$x_1 = 1,\\ x_2 = \\dfrac{1}{3}$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên điều kiện $a\\ne 0$ hoặc chưa đưa về dạng chuẩn trước khi tính $\\Delta$.",
+        "Tính sai dấu trong $\\Delta = b^2 - 4ac$, đặc biệt khi $c$ âm.",
+        "Kết luận vô nghiệm khi $\\Delta = 0$ (thực ra có nghiệm kép)."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "phuong-trinh-bac-hai",
+        "delta",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.he-thuc-vi-et",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số y = ax^2 và phương trình bậc hai (Lớp 9)",
+      "order": 3,
+      "title_vi": "Hệ thức Vi-ét và ứng dụng",
+      "title_en": "Vieta's formulas",
+      "objectives": [
+        "Phát biểu và vận dụng được hệ thức Vi-ét về tổng và tích hai nghiệm",
+        "Tìm hai số khi biết tổng và tích, nhẩm nghiệm phương trình bậc hai",
+        "Xét dấu các nghiệm và tính biểu thức đối xứng của hai nghiệm"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-hai"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Hệ thức Vi-ét",
+          "term_en": "Vieta's formulas",
+          "definition": "Nếu $x_1, x_2$ là nghiệm của $ax^2+bx+c=0$ thì $x_1+x_2 = -\\dfrac{b}{a}$, $x_1 x_2 = \\dfrac{c}{a}$."
+        },
+        {
+          "term_vi": "Định lí Vi-ét đảo",
+          "term_en": "Converse",
+          "definition": "Hai số có tổng $S$, tích $P$ là nghiệm của $X^2 - SX + P = 0$."
+        },
+        {
+          "term_vi": "Biểu thức đối xứng",
+          "term_en": "Symmetric expression",
+          "definition": "Biểu thức của hai nghiệm không đổi khi hoán vị chúng."
+        }
+      ],
+      "content": "## Hệ thức Vi-ét\nNếu phương trình $ax^2 + bx + c = 0$ ($a\\ne 0$) có hai nghiệm $x_1, x_2$ (tức $\\Delta\\ge 0$) thì:\n$$S = x_1 + x_2 = -\\dfrac{b}{a},\\qquad P = x_1\\cdot x_2 = \\dfrac{c}{a}.$$\nĐiều tuyệt vời là ta **biết tổng và tích các nghiệm mà không cần giải** phương trình.\n\n## Định lí Vi-ét đảo\nNgược lại, nếu hai số có **tổng $S$** và **tích $P$** thì chúng là nghiệm của\n$$X^2 - S\\,X + P = 0.$$\nĐây là cách \"tìm hai số biết tổng và tích\".\n\n## Xét dấu nghiệm nhanh\nKhi $\\Delta\\ge 0$:\n- $P < 0$: hai nghiệm **trái dấu**.\n- $P > 0$ và $S > 0$: hai nghiệm **cùng dương**.\n- $P > 0$ và $S < 0$: hai nghiệm **cùng âm**.\n\n## Tính biểu thức đối xứng\nNhiều biểu thức của $x_1, x_2$ tính được qua $S, P$:\n$$x_1^2 + x_2^2 = S^2 - 2P,\\qquad \\dfrac{1}{x_1} + \\dfrac{1}{x_2} = \\dfrac{S}{P}.$$\nNhờ đó không cần tìm từng nghiệm cụ thể.",
+      "formulas": [
+        "math.thcs.phuong-trinh-bac-hai.he-thuc-vi-et",
+        "math.thcs.phuong-trinh-bac-hai.he-thuc-vi-et-dao",
+        "math.thcs.phuong-trinh-bac-hai.hai-nghiem-trai-dau",
+        "math.thcs.phuong-trinh-bac-hai.hai-nghiem-cung-duong",
+        "math.thcs.phuong-trinh-bac-hai.hai-nghiem-cung-am",
+        "math.thcs.phuong-trinh-bac-hai.biet-thuc-delta-phay",
+        "math.thcs.phuong-trinh-bac-hai.hieu-hai-nghiem"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Không giải phương trình, tính $x_1 + x_2$ và $x_1 x_2$ của $2x^2 - 7x + 3 = 0$.",
+          "solution": "Áp dụng Vi-ét với $a=2, b=-7, c=3$: tổng $x_1 + x_2 = -\\dfrac{b}{a} = -\\dfrac{-7}{2} = \\dfrac{7}{2}$; tích $x_1 x_2 = \\dfrac{c}{a} = \\dfrac{3}{2}$.",
+          "answer": "$x_1+x_2 = \\dfrac{7}{2},\\ x_1 x_2 = \\dfrac{3}{2}$"
+        },
+        {
+          "problem": "Cho $x^2 - 6x + 5 = 0$ có hai nghiệm $x_1, x_2$. Tính $x_1^2 + x_2^2$ mà không giải phương trình.",
+          "solution": "Theo Vi-ét: $S = x_1+x_2 = 6$, $P = x_1 x_2 = 5$. Dùng $x_1^2 + x_2^2 = S^2 - 2P = 6^2 - 2\\cdot 5 = 36 - 10 = 26$.",
+          "answer": "$26$"
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm dấu tổng: viết $x_1 + x_2 = \\dfrac{b}{a}$ thay vì $-\\dfrac{b}{a}$.",
+        "Áp dụng Vi-ét khi phương trình chưa chắc có nghiệm ($\\Delta < 0$).",
+        "Tính $x_1^2 + x_2^2 = S^2$ mà quên trừ $2P$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "vi-et",
+        "phuong-trinh-bac-hai",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.phuong-trinh-quy-ve-bac-hai",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số y = ax^2 và phương trình bậc hai (Lớp 9)",
+      "order": 4,
+      "title_vi": "Phương trình quy về bậc hai",
+      "title_en": "Equations reducible to quadratic",
+      "objectives": [
+        "Giải được phương trình trùng phương bằng cách đặt ẩn phụ",
+        "Giải được phương trình quy về bậc hai bằng phép đặt ẩn phụ thích hợp",
+        "Đối chiếu điều kiện của ẩn phụ để loại nghiệm không hợp lệ"
+      ],
+      "prerequisites": [
+        "lesson.math.thcs-toan-so-daiso.phuong-trinh-bac-hai"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình trùng phương",
+          "term_en": "Biquadratic",
+          "definition": "Dạng $ax^4 + bx^2 + c = 0$ với $a\\ne 0$."
+        },
+        {
+          "term_vi": "Đặt ẩn phụ",
+          "term_en": "Substitution",
+          "definition": "Đặt một biểu thức lặp lại làm ẩn mới để đưa về bậc hai."
+        },
+        {
+          "term_vi": "Điều kiện ẩn phụ",
+          "term_en": "Condition on new variable",
+          "definition": "Ví dụ đặt $t = x^2$ thì $t\\ge 0$."
+        }
+      ],
+      "content": "## Phương trình trùng phương\nDạng $ax^4 + bx^2 + c = 0$. Ta **đặt ẩn phụ** $t = x^2$ với điều kiện $t\\ge 0$, đưa về phương trình bậc hai theo $t$:\n$$at^2 + bt + c = 0.$$\nGiải tìm $t$, **loại các giá trị $t < 0$**, rồi với mỗi $t\\ge 0$ giải $x^2 = t$ để tìm $x$ (mỗi $t>0$ cho hai giá trị $x = \\pm\\sqrt{t}$).\n\n## Ý tưởng chung: đặt ẩn phụ\nKhi trong phương trình xuất hiện một **biểu thức lặp lại**, đặt nó làm ẩn mới thường đưa về bậc hai. Ví dụ với $(x^2 - x)^2 - 4(x^2 - x) - 12 = 0$, đặt $t = x^2 - x$ được $t^2 - 4t - 12 = 0$.\n\n## Lưu ý về điều kiện\nLuôn ghi **điều kiện của ẩn phụ**. Với $t = x^2$ thì $t\\ge 0$: nếu giải ra $t$ âm phải loại. Nếu ẩn phụ là căn thức hay mẫu số, điều kiện còn chặt hơn. **Quên đối chiếu điều kiện** là lỗi phổ biến nhất ở dạng toán này.\n\n## Sau khi có ẩn phụ\nNhớ **quay lại ẩn ban đầu**: giải xong $t$ chưa phải đáp số, còn phải tìm $x$ và kết luận.",
+      "formulas": [
+        "math.thcs.phuong-trinh-bac-hai.phuong-trinh-trung-phuong",
+        "math.thcs.phuong-trinh-bac-hai.phuong-trinh-quy-ve-bac-hai"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải phương trình trùng phương $x^4 - 5x^2 + 4 = 0$.",
+          "solution": "Đặt $t = x^2\\ (t\\ge 0)$, phương trình thành $t^2 - 5t + 4 = 0$. Nhẩm nghiệm (tổng hệ số $1-5+4=0$): $t_1 = 1$, $t_2 = 4$, cả hai đều $\\ge 0$ nên nhận. Với $t = 1$: $x^2 = 1\\Rightarrow x = \\pm 1$. Với $t = 4$: $x^2 = 4\\Rightarrow x = \\pm 2$. Vậy phương trình có bốn nghiệm.",
+          "answer": "$x\\in\\{-2; -1; 1; 2\\}$"
+        },
+        {
+          "problem": "Giải $x^4 - 3x^2 - 4 = 0$.",
+          "solution": "Đặt $t = x^2\\ (t\\ge 0)$: $t^2 - 3t - 4 = 0$, phân tích $(t-4)(t+1) = 0$ nên $t = 4$ hoặc $t = -1$. Loại $t = -1$ vì $t\\ge 0$. Với $t = 4$: $x^2 = 4\\Rightarrow x = \\pm 2$.",
+          "answer": "$x = \\pm 2$"
+        }
+      ],
+      "common_mistakes": [
+        "Quên điều kiện $t\\ge 0$ nên nhận cả nghiệm $t$ âm.",
+        "Giải ra $t$ rồi dừng, quên quay lại tìm $x$.",
+        "Với $t > 0$ chỉ lấy một giá trị $x = \\sqrt{t}$, quên nghiệm $x = -\\sqrt{t}$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "phuong-trinh-trung-phuong",
+        "an-phu",
+        "lop9"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.thong-ke-trung-binh-mot-trung-vi",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        8,
+        9
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Thống kê và xác suất (Lớp 6-9)",
+      "order": 1,
+      "title_vi": "Số trung bình, mốt và trung vị",
+      "title_en": "Mean, mode and median",
+      "objectives": [
+        "Tính được số trung bình cộng của một mẫu số liệu, kể cả theo bảng tần số",
+        "Xác định được mốt và trung vị của mẫu số liệu",
+        "Chọn được số đo đại diện phù hợp cho mẫu số liệu"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Số trung bình cộng",
+          "term_en": "Mean",
+          "definition": "Tổng các giá trị chia cho số giá trị."
+        },
+        {
+          "term_vi": "Mốt",
+          "term_en": "Mode",
+          "definition": "Giá trị có tần số lớn nhất trong mẫu."
+        },
+        {
+          "term_vi": "Trung vị",
+          "term_en": "Median",
+          "definition": "Giá trị đứng giữa khi sắp xếp số liệu theo thứ tự."
+        }
+      ],
+      "content": "## Ba số đo đại diện\nKhi có một dãy số liệu, ta thường tóm tắt bằng một con số \"đại diện\".\n\n**Số trung bình cộng** $\\bar{x}$: cộng tất cả giá trị rồi chia cho số giá trị.\n$$\\bar{x} = \\dfrac{x_1 + x_2 + \\cdots + x_n}{n}.$$\nNếu cho theo **bảng tần số** (giá trị $x_i$ xuất hiện $f_i$ lần):\n$$\\bar{x} = \\dfrac{x_1 f_1 + x_2 f_2 + \\cdots}{f_1 + f_2 + \\cdots}.$$\n\n**Mốt** ($M_o$): giá trị **xuất hiện nhiều nhất** (có tần số lớn nhất). Một mẫu có thể có nhiều mốt.\n\n**Trung vị** ($M_e$): sắp xếp số liệu tăng dần rồi lấy giá trị **ở giữa**. Nếu có $n$ số liệu:\n- $n$ lẻ: trung vị là số ở chính giữa.\n- $n$ chẵn: trung vị là **trung bình cộng của hai số giữa**.\n\n## Chọn số đo nào?\nSố trung bình dễ bị **kéo lệch** bởi giá trị quá lớn hoặc quá nhỏ (giá trị bất thường). Khi đó **trung vị** phản ánh \"mức giữa\" tốt hơn. **Mốt** hữu ích khi quan tâm giá trị phổ biến nhất (ví dụ cỡ giày bán chạy nhất).",
+      "formulas": [
+        "math.thcs.thong-ke.so-trung-binh-cong",
+        "math.thcs.thong-ke.so-trung-binh-cong-theo-tan-so",
+        "math.thcs.thong-ke.mot",
+        "math.thcs.thong-ke.trung-vi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Điểm kiểm tra của một nhóm 8 bạn là: $5, 7, 6, 8, 7, 9, 7, 10$. Tính số trung bình, mốt và trung vị.",
+          "solution": "Trung bình: tổng $5+7+6+8+7+9+7+10 = 59$, chia cho $8$ được $\\bar{x} = 7{,}375$. Mốt: giá trị $7$ xuất hiện ba lần, nhiều nhất, nên $M_o = 7$. Trung vị: sắp xếp $5,6,7,7,7,8,9,10$; có $8$ số (chẵn) nên lấy trung bình hai số giữa (thứ 4 và 5) là $7$ và $7$, được $M_e = 7$.",
+          "answer": "$\\bar{x} = 7{,}375;\\ M_o = 7;\\ M_e = 7$"
+        },
+        {
+          "problem": "Số liệu về số con trong 5 gia đình: $1, 2, 2, 3, 12$. Nên dùng trung bình hay trung vị để đại diện?",
+          "solution": "Trung bình $= \\dfrac{1+2+2+3+12}{5} = \\dfrac{20}{5} = 4$, nhưng bị giá trị bất thường $12$ kéo lên cao, không phản ánh đúng. Trung vị (số giữa của dãy đã sắp xếp $1,2,2,3,12$) là $2$, đại diện tốt hơn cho phần lớn gia đình.",
+          "answer": "Nên dùng trung vị $= 2$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên nhân giá trị với tần số khi tính trung bình theo bảng tần số.",
+        "Tìm trung vị mà quên sắp xếp số liệu theo thứ tự trước.",
+        "Khi $n$ chẵn chỉ lấy một số giữa thay vì trung bình hai số giữa."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "thong-ke",
+        "trung-binh",
+        "lop8"
+      ]
+    },
+    {
+      "id": "lesson.math.thcs-toan-so-daiso.xac-suat-thuc-nghiem",
+      "subject": "math",
+      "level": "thcs",
+      "grades": [
+        7,
+        8
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Thống kê và xác suất (Lớp 6-9)",
+      "order": 2,
+      "title_vi": "Xác suất thực nghiệm",
+      "title_en": "Experimental probability",
+      "objectives": [
+        "Tính được xác suất thực nghiệm của một biến cố từ số liệu thí nghiệm",
+        "So sánh xác suất thực nghiệm với xác suất lí thuyết trong mô hình đồng khả năng",
+        "Đếm được số kết quả có thể của phép thử gồm hai hành động"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Phép thử",
+          "term_en": "Experiment",
+          "definition": "Hành động mà kết quả không đoán trước được (tung xúc xắc, gieo đồng xu)."
+        },
+        {
+          "term_vi": "Xác suất thực nghiệm",
+          "term_en": "Experimental probability",
+          "definition": "Tỉ số giữa số lần biến cố xảy ra và tổng số lần thực hiện phép thử."
+        },
+        {
+          "term_vi": "Xác suất lí thuyết",
+          "term_en": "Theoretical probability",
+          "definition": "Trong mô hình đồng khả năng, bằng số kết quả thuận lợi chia tổng số kết quả."
+        }
+      ],
+      "content": "## Xác suất thực nghiệm\nKhi lặp lại một phép thử $n$ lần và biến cố $A$ xảy ra $k$ lần, **xác suất thực nghiệm** của $A$ là\n$$P_{\\text{tn}}(A) = \\dfrac{k}{n}.$$\nVí dụ tung đồng xu $100$ lần, mặt ngửa xuất hiện $47$ lần thì xác suất thực nghiệm của \"ngửa\" là $\\dfrac{47}{100} = 0{,}47$.\n\n## Xác suất lí thuyết (mô hình đồng khả năng)\nKhi các kết quả **đồng khả năng**, xác suất của biến cố $A$ là\n$$P(A) = \\dfrac{\\text{số kết quả thuận lợi}}{\\text{tổng số kết quả}}.$$\nVí dụ tung một xúc xắc cân đối, xác suất ra số chẵn là $\\dfrac{3}{6} = \\dfrac{1}{2}$.\n\n## Liên hệ giữa hai loại\nKhi số lần thử **càng lớn**, xác suất thực nghiệm càng **gần** xác suất lí thuyết. Đó là lí do người ta tin tưởng kết quả rút ra từ nhiều lần thử.\n\n## Đếm kết quả của hai hành động\nNếu một phép thử gồm hai hành động liên tiếp, hành động đầu có $m$ kết quả, hành động sau có $n$ kết quả thì tổng số kết quả là $m\\times n$. Ví dụ tung hai đồng xu có $2\\times 2 = 4$ kết quả.",
+      "formulas": [
+        "math.thcs.xac-suat.xac-suat-thuc-nghiem",
+        "math.thcs.xac-suat.xac-suat-bien-co-dong-kha-nang",
+        "math.thcs.xac-suat.so-ket-qua-hai-hanh-dong",
+        "math.thcs.xac-suat.xac-suat-bien-co-chac-chan"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Một hộp có bi được lấy ra rồi trả lại $200$ lần; trong đó $80$ lần được bi đỏ. Tính xác suất thực nghiệm của biến cố lấy được bi đỏ.",
+          "solution": "Xác suất thực nghiệm bằng số lần biến cố xảy ra chia tổng số lần thử: $P_{\\text{tn}} = \\dfrac{80}{200} = 0{,}4$.",
+          "answer": "$0{,}4$"
+        },
+        {
+          "problem": "Gieo một con xúc xắc cân đối. Tính xác suất (lí thuyết) để số chấm xuất hiện lớn hơn 4.",
+          "solution": "Các kết quả đồng khả năng là $1,2,3,4,5,6$ (tổng $6$). Biến cố 'lớn hơn 4' gồm $5$ và $6$, tức $2$ kết quả thuận lợi. Vậy $P = \\dfrac{2}{6} = \\dfrac{1}{3}$.",
+          "answer": "$\\dfrac{1}{3}$"
+        }
+      ],
+      "common_mistakes": [
+        "Lấy số lần biến cố xảy ra chia cho số lần KHÔNG xảy ra thay vì chia tổng số lần thử.",
+        "Cho rằng xác suất thực nghiệm luôn bằng đúng xác suất lí thuyết.",
+        "Đếm thiếu tổng số kết quả của phép thử hai hành động (cộng thay vì nhân)."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "xac-suat",
+        "thuc-nghiem",
+        "lop7"
+      ]
+    }
+  ]
+}

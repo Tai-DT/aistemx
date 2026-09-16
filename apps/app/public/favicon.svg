@@ -1,0 +1,65 @@
+<svg width="128" height="128" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fav-ax-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="35%" stop-color="#2563eb" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="fav-ax-emerald" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#065f46" />
+      <stop offset="35%" stop-color="#059669" />
+      <stop offset="75%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <linearGradient id="fav-ax-spark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="fav-ax-orbit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.85" />
+    </linearGradient>
+
+    <linearGradient id="fav-ax-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <filter id="fav-ax-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Obsidian Squircle Canvas -->
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#fav-ax-bg)" stroke="#0284c7" stroke-width="1.8" stroke-opacity="0.4"/>
+  <circle cx="60" cy="60" r="38" fill="#0284c7" fill-opacity="0.14" filter="url(#fav-ax-glow)" />
+
+  <!-- Science Orbital Ellipse -->
+  <ellipse cx="60" cy="60" rx="48" ry="17" transform="rotate(-28 60 60)" stroke="url(#fav-ax-orbit)" stroke-width="2.6" stroke-dasharray="4 2" stroke-linecap="round"/>
+  <circle cx="21" cy="40" r="3.4" fill="#38bdf8" filter="url(#fav-ax-glow)" />
+  <circle cx="99" cy="80" r="3.4" fill="#34d399" filter="url(#fav-ax-glow)" />
+
+  <!-- Futuristic X Mark -->
+  <g filter="url(#fav-ax-glow)">
+    <!-- Beam 1: Logic & AI -->
+    <path d="M26 24 L38 20 L94 96 L82 100 Z" fill="url(#fav-ax-blue)" stroke="#38bdf8" stroke-width="0.5"/>
+
+    <!-- Beam 2: Life Science & Energy -->
+    <path d="M94 24 L82 20 L26 96 L38 100 Z" fill="url(#fav-ax-emerald)" stroke="#34d399" stroke-width="0.5"/>
+
+    <!-- Quantum Nexus Intersect -->
+    <path d="M52 52 L68 52 L60 68 Z" fill="url(#fav-ax-blue)" opacity="0.85"/>
+
+    <!-- Central AI Core Spark -->
+    <path d="M60 49 L62.8 57.2 L71 60 L62.8 62.8 L60 71 L57.2 62.8 L49 60 L57.2 57.2 Z" fill="url(#fav-ax-spark)"/>
+    <circle cx="60" cy="60" r="2.2" fill="#ffffff" />
+  </g>
+</svg>

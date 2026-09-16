@@ -1,0 +1,2351 @@
+{
+  "meta": {
+    "file": "vn-math-daiso-giaitich.json",
+    "subject": "math",
+    "title": "Toán THPT Việt Nam: Đại số, Lượng giác, Giải tích và Thống kê - Xác suất (GDPT 2018)",
+    "levels": [
+      "thpt"
+    ],
+    "count": 30
+  },
+  "lessons": [
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.menh-de",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Mệnh đề và tập hợp",
+      "order": 1,
+      "title_vi": "Mệnh đề toán học",
+      "title_en": "Mathematical statements",
+      "objectives": [
+        "Xác định được một câu có phải là mệnh đề toán học hay không và tính đúng - sai của nó",
+        "Phát biểu được mệnh đề kéo theo, mệnh đề đảo, mệnh đề tương đương và mệnh đề chứa kí hiệu với mọi, tồn tại",
+        "Lập được mệnh đề phủ định, đặc biệt là phủ định của mệnh đề chứa lượng từ"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Mệnh đề",
+          "term_en": "Statement",
+          "definition": "Câu khẳng định có tính đúng hoặc sai, không thể vừa đúng vừa sai."
+        },
+        {
+          "term_vi": "Mệnh đề kéo theo",
+          "term_en": "Implication",
+          "definition": "Mệnh đề dạng nếu P thì Q, kí hiệu P suy ra Q; chỉ sai khi P đúng mà Q sai."
+        },
+        {
+          "term_vi": "Lượng từ",
+          "term_en": "Quantifier",
+          "definition": "Kí hiệu với mọi (mọi phần tử) và tồn tại (có ít nhất một phần tử) đặt trước biến của mệnh đề chứa biến."
+        }
+      ],
+      "content": "## Vì sao cần mệnh đề?\nToán học được viết bằng những câu khẳng định mà ta phải nói rõ đúng hay sai. Câu như *\"Số 7 là số nguyên tố\"* có giá trị chân lí xác định, còn *\"Bài này khó quá!\"* thì không. Ta gọi loại thứ nhất là **mệnh đề**.\n\n## Kéo theo, đảo, tương đương\nVới hai mệnh đề $P$ và $Q$, mệnh đề **kéo theo** $P\\Rightarrow Q$ (đọc: nếu $P$ thì $Q$) **chỉ sai** ở đúng một trường hợp: $P$ đúng nhưng $Q$ sai. Mệnh đề **đảo** là $Q\\Rightarrow P$. Khi cả $P\\Rightarrow Q$ và $Q\\Rightarrow P$ cùng đúng, ta nói $P\\Leftrightarrow Q$ (**tương đương**), phát biểu bằng cụm *khi và chỉ khi*.\n\n## Mệnh đề chứa biến và lượng từ\nCâu $P(x):\\ x^2>0$ chưa đúng sai cho tới khi gắn lượng từ. Ta viết $\\forall x\\in\\mathbb{R},\\ x^2\\ge 0$ (đúng) hay $\\exists x\\in\\mathbb{R},\\ x^2=2$ (đúng).\n\n## Phủ định — quy tắc đổi lượng từ\nĐiểm học sinh hay sai nhất: **phủ định làm đổi $\\forall$ thành $\\exists$ và ngược lại**, đồng thời phủ định vế trong. Ví dụ phủ định của $\\forall x,\\ P(x)$ là $\\exists x,\\ \\overline{P(x)}$.",
+      "formulas": [
+        "math.thpt.menh-de-tap-hop.menh-de-keo-theo",
+        "math.thpt.menh-de-tap-hop.menh-de-phan-dao",
+        "math.thpt.menh-de-tap-hop.menh-de-tuong-duong",
+        "math.thpt.menh-de-tap-hop.phu-dinh-menh-de-voi-moi",
+        "math.thpt.menh-de-tap-hop.phu-dinh-menh-de-ton-tai"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Lập mệnh đề phủ định của $P:\\ \\forall x\\in\\mathbb{R},\\ x^2 - x + 1 > 0$ và xét tính đúng sai.",
+          "solution": "Phủ định đổi $\\forall$ thành $\\exists$ và phủ định bất đẳng thức: $\\overline{P}:\\ \\exists x\\in\\mathbb{R},\\ x^2 - x + 1 \\le 0$. Xét tam thức $x^2-x+1$ có $\\Delta = 1-4=-3<0$ và hệ số $a=1>0$ nên $x^2-x+1>0$ với mọi $x$. Vậy $P$ đúng, do đó $\\overline{P}$ sai.",
+          "answer": "$\\overline{P}:\\ \\exists x\\in\\mathbb{R},\\ x^2-x+1\\le 0$; $P$ đúng nên $\\overline{P}$ sai."
+        },
+        {
+          "problem": "Phát biểu mệnh đề đảo của: 'Nếu tứ giác là hình chữ nhật thì nó có hai đường chéo bằng nhau' và cho biết mệnh đề đảo đúng hay sai.",
+          "solution": "Mệnh đề đảo đổi vai trò giả thiết và kết luận: 'Nếu tứ giác có hai đường chéo bằng nhau thì nó là hình chữ nhật'. Mệnh đề đảo này **sai**, vì hình thang cân cũng có hai đường chéo bằng nhau nhưng không phải hình chữ nhật.",
+          "answer": "Đảo sai; phản ví dụ là hình thang cân."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm mọi câu cảm thán hay câu hỏi là mệnh đề: chỉ câu khẳng định có đúng - sai xác định mới là mệnh đề.",
+        "Khi phủ định quên đổi lượng từ, viết phủ định của $\\forall x, P(x)$ thành $\\forall x, \\overline{P(x)}$ — sai; phải đổi thành $\\exists x, \\overline{P(x)}$.",
+        "Cho rằng mệnh đề đảo luôn cùng tính đúng sai với mệnh đề gốc, trong khi hai mệnh đề đó độc lập nhau."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "menh-de",
+        "logic",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.tap-hop",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương I: Mệnh đề và tập hợp",
+      "order": 2,
+      "title_vi": "Tập hợp và các phép toán trên tập hợp",
+      "title_en": "Sets and set operations",
+      "objectives": [
+        "Mô tả được tập hợp bằng cách liệt kê và bằng tính chất đặc trưng",
+        "Thực hiện được các phép toán giao, hợp, hiệu, phần bù và biểu diễn trên trục số",
+        "Tính được số phần tử của hợp hai, ba tập hợp bằng nguyên lí bù trừ"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.menh-de"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tập con",
+          "term_en": "Subset",
+          "definition": "A là tập con của B nếu mọi phần tử của A đều thuộc B, kí hiệu A ⊂ B."
+        },
+        {
+          "term_vi": "Giao và hợp",
+          "term_en": "Intersection and union",
+          "definition": "A giao B gồm phần tử thuộc cả hai; A hợp B gồm phần tử thuộc ít nhất một trong hai."
+        },
+        {
+          "term_vi": "Phần bù",
+          "term_en": "Complement",
+          "definition": "Phần bù của A trong tập nền E gồm các phần tử thuộc E nhưng không thuộc A."
+        }
+      ],
+      "content": "## Hai cách xác định tập hợp\nMột tập hợp có thể cho bằng **liệt kê** $A=\\{1;2;3;6\\}$ hoặc bằng **tính chất đặc trưng** $A=\\{x\\in\\mathbb{N}\\mid x\\mid 6\\}$. Với các khoảng, đoạn số thực ta luôn nên vẽ **trục số** để thao tác cho chắc.\n\n## Các phép toán\n- **Giao** $A\\cap B$: phần tử thuộc *cả hai*.\n- **Hợp** $A\\cup B$: phần tử thuộc *ít nhất một*.\n- **Hiệu** $A\\setminus B$: thuộc $A$ nhưng không thuộc $B$.\n- **Phần bù** $C_E A$ khi $A\\subset E$.\n\nTrên trục số: giao là phần **chồng nhau**, hợp là phần **phủ được** bởi ít nhất một tập. Đây là nơi học sinh hay sai dấu đầu mút đóng/mở.\n\n## Đếm phần tử — nguyên lí bù trừ\nKhi cần đếm, dùng\n$$|A\\cup B| = |A| + |B| - |A\\cap B|.$$\nVới ba tập, công thức bù trừ có thêm các số hạng giao đôi và giao ba. Công thức này là chìa khoá cho nhiều bài toán đếm và xác suất về sau.",
+      "formulas": [
+        "math.thpt.menh-de-tap-hop.tap-con-va-tap-bang-nhau",
+        "math.thpt.menh-de-tap-hop.giao-hai-tap-hop",
+        "math.thpt.menh-de-tap-hop.hop-hai-tap-hop",
+        "math.thpt.menh-de-tap-hop.hieu-hai-tap-hop",
+        "math.thpt.menh-de-tap-hop.so-phan-tu-hop-hai-tap-hop",
+        "math.thpt.menh-de-tap-hop.so-tap-con-cua-tap-hop",
+        "math.thpt.menh-de-tap-hop.phan-bu-cua-tap-hop"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $A=[-2;3)$ và $B=(1;5]$. Tìm $A\\cap B$, $A\\cup B$ và $A\\setminus B$.",
+          "solution": "Vẽ hai khoảng trên cùng một trục số. Phần chồng nhau (giao) là các $x$ vừa $\\ge -2$ và $<3$ vừa $>1$ và $\\le 5$, tức $1<x<3$: $A\\cap B=(1;3)$. Hợp là phần phủ được bởi ít nhất một tập: từ $-2$ (đóng) tới $5$ (đóng): $A\\cup B=[-2;5]$. Hiệu $A\\setminus B$ lấy phần của $A$ bỏ đi phần thuộc $B$: $[-2;1]$, chú ý đầu mút $1$ được giữ vì $1\\notin B$.",
+          "answer": "$A\\cap B=(1;3)$, $A\\cup B=[-2;5]$, $A\\setminus B=[-2;1]$."
+        },
+        {
+          "problem": "Một lớp có 30 học sinh, 18 em học giỏi Toán, 15 em giỏi Văn, 8 em giỏi cả hai. Hỏi bao nhiêu em không giỏi môn nào trong hai môn?",
+          "solution": "Gọi $T,V$ là tập học sinh giỏi Toán, giỏi Văn. Số em giỏi ít nhất một môn là $|T\\cup V|=|T|+|V|-|T\\cap V|=18+15-8=25$. Vậy số em không giỏi môn nào $=30-25=5$.",
+          "answer": "5 học sinh."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm dấu đầu mút khi lấy hiệu/giao trên trục số: cần xét riêng từng đầu mút xem thuộc tập nào.",
+        "Dùng công thức số phần tử của hợp mà quên trừ phần giao, dẫn tới đếm trùng phần chung hai lần.",
+        "Cho rằng tập rỗng không phải là tập con của mọi tập hợp; thực ra tập rỗng là tập con của mọi tập."
+      ],
+      "duration_minutes": 40,
+      "difficulty": "co-ban",
+      "tags": [
+        "tap-hop",
+        "phep-toan-tap-hop",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.bat-dang-thuc",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chuyên đề: Bất đẳng thức",
+      "order": 1,
+      "title_vi": "Bất đẳng thức Cauchy (AM-GM) và Bunyakovsky",
+      "title_en": "AM-GM and Cauchy-Bunyakovsky inequalities",
+      "objectives": [
+        "Phát biểu và chứng minh được bất đẳng thức Cauchy cho hai, ba số không âm cùng điều kiện dấu bằng",
+        "Vận dụng bất đẳng thức Bunyakovsky để đánh giá biểu thức và tìm giá trị lớn nhất, nhỏ nhất",
+        "Nhận ra khi nào kĩ thuật thêm bớt hoặc đánh giá theo tổng - tích là phù hợp"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Bất đẳng thức Cauchy (AM-GM)",
+          "term_en": "AM-GM inequality",
+          "definition": "Trung bình cộng của các số không âm luôn không nhỏ hơn trung bình nhân của chúng; dấu bằng khi các số bằng nhau."
+        },
+        {
+          "term_vi": "Bất đẳng thức Bunyakovsky",
+          "term_en": "Cauchy-Bunyakovsky-Schwarz",
+          "definition": "Với mọi số thực, (a1 b1 + a2 b2)^2 ≤ (a1^2 + a2^2)(b1^2 + b2^2); dấu bằng khi hai bộ tỉ lệ."
+        },
+        {
+          "term_vi": "Điều kiện dấu bằng",
+          "term_en": "Equality condition",
+          "definition": "Điều kiện để bất đẳng thức trở thành đẳng thức; luôn phải kiểm tra để kết luận giá trị lớn nhất/nhỏ nhất."
+        }
+      ],
+      "content": "## Hai công cụ đánh giá mạnh nhất ở lớp 10\n### Cauchy (AM-GM)\nVới $a,b\\ge 0$: $\\dfrac{a+b}{2}\\ge\\sqrt{ab}$, tức $a+b\\ge 2\\sqrt{ab}$; dấu bằng khi $a=b$. Cho ba số không âm: $a+b+c\\ge 3\\sqrt[3]{abc}$.\n\nHệ quả cực kì hữu dụng: với $a>0$ thì $a+\\dfrac{1}{a}\\ge 2$.\n\n### Bunyakovsky\n$$(a_1b_1+a_2b_2)^2\\le (a_1^2+a_2^2)(b_1^2+b_2^2),$$\ndấu bằng khi $\\dfrac{a_1}{b_1}=\\dfrac{a_2}{b_2}$. Dạng phân thức (Engel) $\\dfrac{x^2}{m}+\\dfrac{y^2}{n}\\ge\\dfrac{(x+y)^2}{m+n}$ rất mạnh cho tổng các phân thức.\n\n## Khi nào dùng cái gì?\nThấy **tích cố định** cần chặn tổng, hay ngược lại: dùng AM-GM. Thấy **tổng bình phương** nhân nhau hoặc tổng phân thức: nghĩ tới Bunyakovsky. Luôn kết thúc bằng việc **giải điều kiện dấu bằng** để khẳng định giá trị cực trị đạt được.\n\n## Ghi nhớ khi trình bày\nMột lời giải cực trị bằng bất đẳng thức phải đủ ba phần: (1) nêu bất đẳng thức áp dụng và kiểm tra điều kiện dùng được (thường là các số không âm); (2) biến đổi tới chặn cần tìm; (3) chỉ ra **dấu bằng xảy ra** tại giá trị cụ thể. Thiếu bước (3), ta mới chứng minh một chặn chứ chưa khẳng định đó là giá trị lớn nhất hay nhỏ nhất thực sự đạt được.",
+      "formulas": [
+        "math.thpt.bat-dang-thuc.am-gm-hai-so",
+        "math.thpt.bat-dang-thuc.am-gm-ba-so",
+        "math.thpt.bat-dang-thuc.he-qua-am-gm-nghich-dao",
+        "math.thpt.bat-dang-thuc.bunyakovsky-hai-cap",
+        "math.thpt.bat-dang-thuc.cauchy-schwarz-dang-phan-thuc",
+        "math.thpt.bat-dang-thuc.day-bat-dang-thuc-trung-binh"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $x>0$. Tìm giá trị nhỏ nhất của $f(x)=x+\\dfrac{9}{x}$.",
+          "solution": "Hai số hạng $x$ và $\\dfrac{9}{x}$ đều dương và có **tích không đổi** $x\\cdot\\dfrac{9}{x}=9$, đây là dấu hiệu dùng AM-GM. Ta có $x+\\dfrac{9}{x}\\ge 2\\sqrt{x\\cdot\\dfrac{9}{x}}=2\\sqrt{9}=6$. Dấu bằng khi $x=\\dfrac{9}{x}\\Leftrightarrow x^2=9\\Leftrightarrow x=3$ (do $x>0$). Vậy giá trị nhỏ nhất bằng $6$.",
+          "answer": "$\\min f = 6$ tại $x=3$."
+        },
+        {
+          "problem": "Cho $a,b>0$ thỏa $a+b=1$. Chứng minh $\\dfrac{1}{a}+\\dfrac{1}{b}\\ge 4$.",
+          "solution": "Dùng dạng phân thức của Bunyakovsky (Engel): $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{1^2}{a}+\\dfrac{1^2}{b}\\ge\\dfrac{(1+1)^2}{a+b}=\\dfrac{4}{1}=4$. Dấu bằng khi $\\dfrac{1}{a}=\\dfrac{1}{b}$, tức $a=b=\\dfrac12$.",
+          "answer": "Bất đẳng thức đúng, dấu bằng tại $a=b=\\tfrac12$."
+        }
+      ],
+      "common_mistakes": [
+        "Kết luận giá trị nhỏ nhất mà không kiểm tra điều kiện dấu bằng có xảy ra hay không, dẫn tới cực trị 'ảo' không đạt được.",
+        "Áp dụng AM-GM cho số âm: bất đẳng thức chỉ đúng cho các số không âm, quên điều kiện này sẽ sai hoàn toàn.",
+        "Khi tích không cố định vẫn cố ép dùng AM-GM trực tiếp, thay vì thêm bớt để tạo tích hằng số."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "bat-dang-thuc",
+        "cauchy",
+        "bunyakovsky",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.ham-so-bac-hai",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số, đồ thị và ứng dụng",
+      "order": 1,
+      "title_vi": "Hàm số bậc hai và đồ thị",
+      "title_en": "Quadratic functions and their graphs",
+      "objectives": [
+        "Xác định được tọa độ đỉnh, trục đối xứng, chiều biến thiên của parabol",
+        "Vẽ được đồ thị hàm số bậc hai và đọc được giá trị lớn nhất hoặc nhỏ nhất",
+        "Lập được bảng biến thiên và giải bài toán tối ưu đơn giản bằng hàm bậc hai"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Hàm số bậc hai",
+          "term_en": "Quadratic function",
+          "definition": "Hàm dạng y = ax^2 + bx + c với a khác 0, đồ thị là một parabol."
+        },
+        {
+          "term_vi": "Đỉnh parabol",
+          "term_en": "Vertex",
+          "definition": "Điểm I(-b/2a; -Δ/4a); là điểm thấp nhất khi a>0 và cao nhất khi a<0."
+        },
+        {
+          "term_vi": "Trục đối xứng",
+          "term_en": "Axis of symmetry",
+          "definition": "Đường thẳng x = -b/2a chia parabol thành hai nửa đối xứng."
+        }
+      ],
+      "content": "## Từ công thức tới hình dạng\nHàm $y=ax^2+bx+c\\ (a\\ne 0)$ có đồ thị là **parabol**. Bề lõm quay **lên** nếu $a>0$, quay **xuống** nếu $a<0$. Toàn bộ hình dáng bị chi phối bởi **đỉnh** và **trục đối xứng**.\n\n## Đỉnh và trục đối xứng\n$$I\\left(-\\frac{b}{2a};\\ -\\frac{\\Delta}{4a}\\right),\\qquad x=-\\frac{b}{2a}.$$\nTung độ đỉnh chính là **giá trị nhỏ nhất** (khi $a>0$) hoặc **lớn nhất** (khi $a<0$) của hàm số trên $\\mathbb{R}$.\n\n## Bảng biến thiên\nVới $a>0$: hàm **nghịch biến** trên $\\left(-\\infty;-\\frac{b}{2a}\\right)$ rồi **đồng biến** trên $\\left(-\\frac{b}{2a};+\\infty\\right)$. Với $a<0$ thì ngược lại. Bảng biến thiên giúp đọc nhanh cực trị và số nghiệm của phương trình $ax^2+bx+c=m$.\n\n## Ứng dụng tối ưu\nNhiều bài thực tế (diện tích lớn nhất, chi phí nhỏ nhất) quy về tìm đỉnh của một hàm bậc hai — đây là lí do parabol xuất hiện dày đặc trong đề thi.",
+      "formulas": [
+        "math.thpt.ham-so-bac-nhat-bac-hai.toa-do-dinh-parabol",
+        "math.thpt.ham-so-bac-nhat-bac-hai.truc-doi-xung-parabol",
+        "math.thpt.ham-so-bac-nhat-bac-hai.gtln-gtnn-ham-bac-hai",
+        "math.thpt.ham-so-bac-nhat-bac-hai.dong-bien-nghich-bien-dinh-nghia",
+        "math.thpt.ham-so-bac-nhat-bac-hai.ham-so-bac-nhat",
+        "math.thpt.ham-so-bac-nhat-bac-hai.ham-so-chan-le"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm giá trị nhỏ nhất của $y=2x^2-8x+1$ và điểm đạt được.",
+          "solution": "Vì $a=2>0$ nên parabol có bề lõm quay lên, giá trị nhỏ nhất đạt tại đỉnh. Hoành độ đỉnh $x=-\\dfrac{b}{2a}=-\\dfrac{-8}{2\\cdot2}=2$. Thay vào: $y(2)=2\\cdot4-8\\cdot2+1=8-16+1=-7$. Vậy $\\min y=-7$ tại $x=2$.",
+          "answer": "$\\min y=-7$ tại $x=2$."
+        },
+        {
+          "problem": "Một chủ trại dùng $40$ m rào để quây một mảnh đất hình chữ nhật dựa vào một bức tường có sẵn (chỉ rào ba cạnh). Tìm diện tích lớn nhất.",
+          "solution": "Gọi cạnh vuông góc với tường là $x$ ($0<x<20$), thì cạnh song song tường là $40-2x$. Diện tích $S(x)=x(40-2x)=-2x^2+40x$. Đây là hàm bậc hai với $a=-2<0$ nên đạt lớn nhất tại đỉnh $x=-\\dfrac{40}{2\\cdot(-2)}=10$. Khi đó $S=10\\cdot(40-20)=200$ m$^2$.",
+          "answer": "$S_{\\max}=200$ m$^2$ khi $x=10$ m."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm dấu công thức hoành độ đỉnh, viết $x=\\dfrac{b}{2a}$ thay vì $-\\dfrac{b}{2a}$.",
+        "Kết luận chiều biến thiên mà không để ý dấu của $a$: với $a<0$ hàm đồng biến rồi mới nghịch biến.",
+        "Coi giá trị nhỏ nhất trên một đoạn giống như trên toàn trục số, quên so sánh hai đầu mút khi đỉnh nằm ngoài đoạn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "ham-so-bac-hai",
+        "parabol",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.dau-tam-thuc",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số, đồ thị và ứng dụng",
+      "order": 2,
+      "title_vi": "Dấu của tam thức bậc hai và bất phương trình bậc hai",
+      "title_en": "Sign of quadratics and quadratic inequalities",
+      "objectives": [
+        "Xét được dấu của tam thức bậc hai dựa vào dấu của a và biệt thức Δ",
+        "Giải được bất phương trình bậc hai một ẩn và biểu diễn nghiệm trên trục số",
+        "Tìm được điều kiện tham số để tam thức luôn dương hoặc luôn âm"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.ham-so-bac-hai"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tam thức bậc hai",
+          "term_en": "Quadratic trinomial",
+          "definition": "Biểu thức f(x) = ax^2 + bx + c với a khác 0."
+        },
+        {
+          "term_vi": "Định lí về dấu",
+          "term_en": "Sign theorem",
+          "definition": "f(x) luôn cùng dấu với a khi Δ<0; khi Δ>0 thì trái dấu a ở khoảng giữa hai nghiệm, cùng dấu a ở ngoài."
+        },
+        {
+          "term_vi": "Bất phương trình bậc hai",
+          "term_en": "Quadratic inequality",
+          "definition": "Bất phương trình dạng ax^2+bx+c > 0 (hoặc ≥, <, ≤), giải bằng bảng xét dấu."
+        }
+      ],
+      "content": "## Ý tưởng: dấu quyết định bởi $a$ và $\\Delta$\nCho $f(x)=ax^2+bx+c\\ (a\\ne 0)$, $\\Delta=b^2-4ac$. Quy tắc **\"trong trái ngoài cùng\"**:\n- $\\Delta<0$: $f(x)$ **cùng dấu** với $a$ với mọi $x$ (không đổi dấu).\n- $\\Delta=0$: $f(x)$ cùng dấu $a$, trừ tại nghiệm kép $x=-\\frac{b}{2a}$ thì bằng $0$.\n- $\\Delta>0$: $f(x)$ **trái dấu** $a$ khi $x$ nằm *trong* khoảng hai nghiệm, **cùng dấu** $a$ khi $x$ ở *ngoài*.\n\n## Giải bất phương trình bậc hai\nĐưa về một vế, xét dấu tam thức rồi đọc nghiệm theo chiều bất phương trình. Luôn vẽ trục số để tránh nhầm khoảng.\n\n## Điều kiện tham số\nHai kết quả rất hay dùng:\n$$ax^2+bx+c>0\\ \\forall x \\Leftrightarrow \\begin{cases}a>0\\\\\\Delta<0\\end{cases},\\qquad\nax^2+bx+c<0\\ \\forall x \\Leftrightarrow \\begin{cases}a<0\\\\\\Delta<0\\end{cases}.$$\nĐây là dạng câu hỏi tham số quen thuộc trong đề thi.",
+      "formulas": [
+        "math.thpt.ham-so-bac-nhat-bac-hai.dau-tam-thuc-bac-hai",
+        "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-bac-hai",
+        "math.thpt.ham-so-bac-nhat-bac-hai.tam-thuc-luon-duong",
+        "math.thpt.ham-so-bac-nhat-bac-hai.tam-thuc-luon-am",
+        "math.thpt.ham-so-bac-nhat-bac-hai.dau-nhi-thuc-bac-nhat",
+        "math.thpt.ham-so-bac-nhat-bac-hai.cong-thuc-nghiem-phuong-trinh-bac-hai",
+        "math.thpt.ham-so-bac-nhat-bac-hai.cong-thuc-nghiem-thu-gon",
+        "math.thpt.ham-so-bac-nhat-bac-hai.dinh-li-viete",
+        "math.thpt.ham-so-bac-nhat-bac-hai.phuong-trinh-can-bang-can",
+        "math.thpt.ham-so-bac-nhat-bac-hai.phuong-trinh-can-bang-da-thuc",
+        "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-can-nho-hon",
+        "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-can-lon-hon",
+        "math.thpt.ham-so-bac-nhat-bac-hai.phuong-trinh-tri-tuyet-doi",
+        "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-tri-tuyet-doi",
+        "math.thpt.ham-so-bac-nhat-bac-hai.dieu-kien-xac-dinh",
+        "math.thpt.ham-so-bac-nhat-bac-hai.bat-phuong-trinh-bac-nhat-hai-an"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải bất phương trình $x^2-5x+6\\le 0$.",
+          "solution": "Xét $f(x)=x^2-5x+6$ có $a=1>0$ và nghiệm $x=2,\\ x=3$. Theo quy tắc trong trái ngoài cùng, $f(x)\\le 0$ ở *trong* khoảng hai nghiệm (kể cả hai đầu vì có dấu bằng). Vậy nghiệm là $2\\le x\\le 3$.",
+          "answer": "$x\\in[2;3]$."
+        },
+        {
+          "problem": "Tìm $m$ để $f(x)=x^2-2mx+m+2>0$ với mọi $x\\in\\mathbb{R}$.",
+          "solution": "Hệ số $a=1>0$ đã thỏa. Cần thêm $\\Delta'<0$: $\\Delta'=m^2-(m+2)=m^2-m-2<0$. Giải $m^2-m-2<0$ có nghiệm $-1<m<2$. Vậy $m\\in(-1;2)$.",
+          "answer": "$m\\in(-1;2)$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên điều kiện $a>0$ (hoặc $a<0$) khi xét tam thức luôn dương/âm, chỉ dùng mỗi điều kiện về $\\Delta$.",
+        "Đọc nhầm khoảng nghiệm: với $a>0$ và dấu $<0$ phải lấy khoảng *giữa* hai nghiệm, không phải ngoài.",
+        "Khi chia cho biểu thức chứa ẩn trong bất phương trình mà quên xét dấu biểu thức đó, làm đổi chiều sai."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "tam-thuc",
+        "bat-phuong-trinh-bac-hai",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.quy-tac-dem",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đại số tổ hợp",
+      "order": 1,
+      "title_vi": "Quy tắc đếm, hoán vị, chỉnh hợp và tổ hợp",
+      "title_en": "Counting rules, permutations and combinations",
+      "objectives": [
+        "Phân biệt và áp dụng đúng quy tắc cộng và quy tắc nhân",
+        "Tính được số hoán vị, chỉnh hợp, tổ hợp và chọn đúng công cụ theo bài toán",
+        "Nhận biết bài toán có phân biệt thứ tự hay không để chọn chỉnh hợp hay tổ hợp"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.tap-hop"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Quy tắc cộng",
+          "term_en": "Addition rule",
+          "definition": "Nếu một công việc có thể thực hiện theo các phương án rời nhau thì số cách bằng tổng số cách của mỗi phương án."
+        },
+        {
+          "term_vi": "Quy tắc nhân",
+          "term_en": "Multiplication rule",
+          "definition": "Nếu công việc gồm các công đoạn liên tiếp thì số cách bằng tích số cách của từng công đoạn."
+        },
+        {
+          "term_vi": "Chỉnh hợp và tổ hợp",
+          "term_en": "Arrangement and combination",
+          "definition": "Chỉnh hợp chọn k phần tử có thứ tự; tổ hợp chọn k phần tử không kể thứ tự."
+        }
+      ],
+      "content": "## Hai quy tắc nền tảng\n- **Quy tắc cộng**: các phương án *rời nhau* thì **cộng** số cách. Dấu hiệu: từ *\"hoặc\"*.\n- **Quy tắc nhân**: các công đoạn *nối tiếp* thì **nhân** số cách. Dấu hiệu: từ *\"rồi\"*, *\"và sau đó\"*.\n\n## Hoán vị, chỉnh hợp, tổ hợp\nVới $n$ phần tử phân biệt:\n$$P_n=n!,\\qquad A_n^k=\\frac{n!}{(n-k)!},\\qquad C_n^k=\\frac{n!}{k!\\,(n-k)!}.$$\n- $P_n$: xếp *tất cả* $n$ phần tử theo thứ tự.\n- $A_n^k$: chọn $k$ và **có** sắp thứ tự.\n- $C_n^k$: chọn $k$ **không** kể thứ tự.\n\n## Câu hỏi mấu chốt: có phân biệt thứ tự không?\n\"Bầu ban cán sự gồm lớp trưởng, lớp phó\" — **có** thứ tự (vai trò khác nhau) $\\to$ chỉnh hợp. \"Chọn một tổ 3 bạn\" — **không** thứ tự $\\to$ tổ hợp. Quan hệ $A_n^k=k!\\,C_n^k$ nói rõ: chỉnh hợp = tổ hợp rồi hoán vị $k$ phần tử được chọn.\n\n## Sơ đồ chọn công cụ\nGặp một bài đếm, hãy tự hỏi theo thứ tự: *Công việc chia thành các phương án rời nhau hay các công đoạn nối tiếp?* (cộng hay nhân). *Có phân biệt thứ tự không?* (chỉnh hợp hay tổ hợp). *Dùng hết hay chỉ một phần các phần tử?* (hoán vị hay chỉnh hợp). Ba câu hỏi này giúp tránh gần như mọi nhầm lẫn thường gặp của phần đại số tổ hợp.",
+      "formulas": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong",
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan",
+        "math.thpt.to-hop-xac-suat.hoan-vi",
+        "math.thpt.to-hop-xac-suat.chinh-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.hoan-vi-lap",
+        "math.thpt.to-hop-xac-suat.chinh-hop-lap",
+        "math.thpt.to-hop-xac-suat.hoan-vi-vong-quanh"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Từ các chữ số $1,2,3,4,5$ lập được bao nhiêu số tự nhiên có $3$ chữ số **đôi một khác nhau**?",
+          "solution": "Số có $3$ chữ số khác nhau lấy từ $5$ chữ số và **thứ tự các chữ số quan trọng** (123 khác 321) nên đây là chỉnh hợp chập $3$ của $5$: $A_5^3=\\dfrac{5!}{2!}=60$.",
+          "answer": "$60$ số."
+        },
+        {
+          "problem": "Một tổ có $10$ học sinh. Có bao nhiêu cách chọn $3$ bạn đi trực nhật?",
+          "solution": "Chọn $3$ bạn làm chung một việc, **không phân biệt thứ tự**, nên dùng tổ hợp: $C_{10}^3=\\dfrac{10!}{3!\\,7!}=120$.",
+          "answer": "$120$ cách."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm giữa chỉnh hợp và tổ hợp: dùng $A_n^k$ cho bài không phân biệt thứ tự làm đáp số lớn gấp $k!$ lần.",
+        "Dùng quy tắc nhân cho các phương án rời nhau (đáng lẽ cộng) hoặc ngược lại.",
+        "Quên loại các trường hợp chữ số $0$ đứng đầu khi lập số tự nhiên, làm đếm dư."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "to-hop",
+        "dem",
+        "hoan-vi",
+        "chinh-hop",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.nhi-thuc-newton",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đại số tổ hợp",
+      "order": 2,
+      "title_vi": "Nhị thức Newton",
+      "title_en": "The binomial theorem",
+      "objectives": [
+        "Khai triển được nhị thức Newton và viết số hạng tổng quát",
+        "Tìm được hệ số hoặc số hạng chứa lũy thừa cho trước trong khai triển",
+        "Vận dụng các tính chất của hệ số nhị thức để tính tổng"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.quy-tac-dem"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nhị thức Newton",
+          "term_en": "Binomial theorem",
+          "definition": "Công thức khai triển (a+b)^n thành tổng các số hạng C(n,k) a^{n-k} b^k."
+        },
+        {
+          "term_vi": "Số hạng tổng quát",
+          "term_en": "General term",
+          "definition": "Số hạng thứ k+1 trong khai triển là T_{k+1} = C(n,k) a^{n-k} b^k."
+        },
+        {
+          "term_vi": "Hệ số nhị thức",
+          "term_en": "Binomial coefficient",
+          "definition": "Các số C(n,k), đối xứng theo k và tổng của chúng theo k bằng 2^n."
+        }
+      ],
+      "content": "## Công thức khai triển\n$$(a+b)^n=\\sum_{k=0}^{n}C_n^k\\,a^{n-k}b^k\n= C_n^0 a^n + C_n^1 a^{n-1}b+\\dots+C_n^n b^n.$$\nCó $n+1$ số hạng; các hệ số $C_n^k$ chính là một dòng của tam giác Pascal.\n\n## Số hạng tổng quát — chìa khoá giải nhanh\n$$T_{k+1}=C_n^k\\,a^{n-k}b^k.$$\nMuốn tìm **số hạng chứa $x^m$**, ta viết lũy thừa của $x$ trong $T_{k+1}$ theo $k$, cho bằng $m$ rồi giải ra $k$. Đây là kĩ thuật xuất hiện trong hầu hết bài trắc nghiệm về nhị thức.\n\n## Vài tổng quen thuộc\nCho $a=b=1$: $\\ \\sum_{k=0}^n C_n^k=2^n$. Cho $a=1,b=-1$: $\\ \\sum_{k=0}^n(-1)^kC_n^k=0$. Những đẳng thức này giúp tính nhanh tổng hệ số.\n\n## Mẹo tìm nhanh\nĐể tìm hệ số của $x^m$, chỉ cần viết số mũ của $x$ trong $T_{k+1}$ dưới dạng biểu thức bậc nhất theo $k$, cho bằng $m$ rồi giải tìm $k$. Nếu $k$ ra không nguyên hoặc âm thì khai triển **không chứa** $x^m$, kết luận hệ số bằng $0$. Kĩ thuật này biến mọi câu hỏi về hệ số thành một phương trình bậc nhất đơn giản.",
+      "formulas": [
+        "math.thpt.to-hop-xac-suat.nhi-thuc-newton",
+        "math.thpt.to-hop-xac-suat.so-hang-tong-quat-khai-trien",
+        "math.thpt.to-hop-xac-suat.tong-cac-he-so-nhi-thuc",
+        "math.thpt.to-hop-xac-suat.cong-thuc-pascal",
+        "math.thpt.to-hop-xac-suat.tinh-chat-doi-xung-to-hop"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm hệ số của $x^{4}$ trong khai triển $\\left(2x-\\dfrac{1}{x}\\right)^{8}$.",
+          "solution": "Số hạng tổng quát: $T_{k+1}=C_8^k(2x)^{8-k}\\left(-\\dfrac1x\\right)^k=C_8^k\\,2^{8-k}(-1)^k\\,x^{8-k-k}=C_8^k\\,2^{8-k}(-1)^k x^{8-2k}$. Cần $8-2k=4\\Rightarrow k=2$. Hệ số $=C_8^2\\,2^{6}(-1)^2=28\\cdot64=1792$.",
+          "answer": "Hệ số bằng $1792$."
+        },
+        {
+          "problem": "Tính tổng $S=C_{6}^0+C_{6}^1+\\dots+C_{6}^6$.",
+          "solution": "Đây chính là tổng tất cả hệ số nhị thức bậc $6$, bằng $2^6=64$ (lấy $a=b=1$ trong khai triển $(1+1)^6$).",
+          "answer": "$S=64$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm chỉ số số hạng: số hạng thứ $k+1$ ứng với $C_n^k$, dễ lệch một đơn vị.",
+        "Quên dấu hoặc lũy thừa của hệ số trong ngoặc (ví dụ $2^{n-k}$, $(-1)^k$) khi tính hệ số.",
+        "Gộp nhầm số mũ của $x$ khi biến chứa cả tử và mẫu, dẫn tới giải sai phương trình theo $k$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nhi-thuc-newton",
+        "khai-trien",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.xac-suat-co-dien",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        10
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Tính xác suất theo định nghĩa cổ điển",
+      "order": 1,
+      "title_vi": "Xác suất cổ điển của biến cố",
+      "title_en": "Classical probability",
+      "objectives": [
+        "Xác định được không gian mẫu và biến cố của một phép thử",
+        "Tính được xác suất cổ điển bằng cách đếm số kết quả thuận lợi",
+        "Sử dụng biến cố đối để tính xác suất trong các bài đếm phức tạp"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.quy-tac-dem"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Không gian mẫu",
+          "term_en": "Sample space",
+          "definition": "Tập hợp tất cả kết quả có thể xảy ra của một phép thử, kí hiệu Ω."
+        },
+        {
+          "term_vi": "Biến cố",
+          "term_en": "Event",
+          "definition": "Một tập con của không gian mẫu; biến cố xảy ra nếu kết quả của phép thử thuộc tập con đó."
+        },
+        {
+          "term_vi": "Xác suất cổ điển",
+          "term_en": "Classical probability",
+          "definition": "Khi các kết quả đồng khả năng, P(A) bằng số kết quả thuận lợi chia cho số phần tử không gian mẫu."
+        }
+      ],
+      "content": "## Định nghĩa cổ điển\nKhi mọi kết quả **đồng khả năng**, xác suất của biến cố $A$ là\n$$P(A)=\\frac{n(A)}{n(\\Omega)},$$\nvới $n(A)$ là số kết quả thuận lợi và $n(\\Omega)$ là số phần tử không gian mẫu. Vì $0\\le n(A)\\le n(\\Omega)$ nên luôn $0\\le P(A)\\le 1$.\n\n## Quy trình chuẩn\n1. Mô tả **phép thử** và đếm $n(\\Omega)$ (thường bằng tổ hợp/chỉnh hợp).\n2. Mô tả **biến cố** $A$ và đếm $n(A)$.\n3. Lập tỉ số.\n\n## Mẹo biến cố đối\nKhi $A$ khó đếm trực tiếp (chứa cụm \"có ít nhất\"), hãy tính qua **biến cố đối**:\n$$P(A)=1-P(\\overline{A}).$$\nVí dụ \"ít nhất một\" thường có đối là \"không có cái nào\", dễ đếm hơn hẳn. Đây là kĩ thuật giải nhanh cốt lõi của phần xác suất.\n\n## Kiểm tra kết quả\nMọi xác suất phải nằm trong đoạn $[0;1]$; nếu tính ra số âm hoặc lớn hơn $1$ thì chắc chắn sai ở bước đếm. Ngoài ra, tổng xác suất của một biến cố và biến cố đối luôn bằng $1$ — đây là cách kiểm tra chéo nhanh, đồng thời là công cụ giải các bài \"ít nhất một\" hiệu quả hơn đếm trực tiếp.",
+      "formulas": [
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dien",
+        "math.thpt.to-hop-xac-suat.bien-co-doi",
+        "math.thpt.to-hop-xac-suat.to-hop-chap-k",
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan",
+        "math.thpt.to-hop-xac-suat.to-hop-lap"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Gieo hai con xúc xắc cân đối. Tính xác suất tổng số chấm bằng $7$.",
+          "solution": "Không gian mẫu $n(\\Omega)=6\\times6=36$ (đồng khả năng). Các kết quả tổng $7$: $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$, gồm $6$ kết quả. Vậy $P=\\dfrac{6}{36}=\\dfrac16$.",
+          "answer": "$P=\\dfrac16$."
+        },
+        {
+          "problem": "Một hộp có $7$ bi trắng và $3$ bi đen. Lấy ngẫu nhiên $3$ bi. Tính xác suất lấy được **ít nhất một** bi đen.",
+          "solution": "Tổng cách lấy $n(\\Omega)=C_{10}^3=120$. Dùng biến cố đối 'không có bi đen', tức cả $3$ bi đều trắng: $C_7^3=35$ cách, nên $P(\\overline A)=\\dfrac{35}{120}=\\dfrac{7}{24}$. Vậy $P(A)=1-\\dfrac{7}{24}=\\dfrac{17}{24}$.",
+          "answer": "$P=\\dfrac{17}{24}$."
+        }
+      ],
+      "common_mistakes": [
+        "Đếm $n(\\Omega)$ bằng tổ hợp nhưng $n(A)$ lại bằng chỉnh hợp (hoặc ngược lại), khiến hai số không cùng cách đếm.",
+        "Gán xác suất bằng nhau cho các kết quả không đồng khả năng, ví dụ tổng hai xúc xắc — các tổng không đồng khả năng.",
+        "Với bài 'ít nhất một' cố đếm trực tiếp mọi trường hợp, dễ sót hoặc trùng, thay vì dùng biến cố đối."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "xac-suat",
+        "xac-suat-co-dien",
+        "lop10"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.cong-thuc-cong-nhan-doi",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số lượng giác và phương trình lượng giác",
+      "order": 1,
+      "title_vi": "Công thức cộng và công thức nhân đôi",
+      "title_en": "Addition and double-angle formulas",
+      "objectives": [
+        "Phát biểu và vận dụng được công thức cộng cho sin, cos, tan",
+        "Suy ra và sử dụng được công thức nhân đôi từ công thức cộng",
+        "Rút gọn biểu thức và tính giá trị lượng giác của các cung đặc biệt"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Công thức cộng",
+          "term_en": "Addition formula",
+          "definition": "Công thức tính giá trị lượng giác của tổng hoặc hiệu hai cung theo giá trị lượng giác từng cung."
+        },
+        {
+          "term_vi": "Công thức nhân đôi",
+          "term_en": "Double-angle formula",
+          "definition": "Trường hợp riêng của công thức cộng khi hai cung bằng nhau."
+        },
+        {
+          "term_vi": "Hệ thức cơ bản",
+          "term_en": "Pythagorean identity",
+          "definition": "sin^2 x + cos^2 x = 1, nền tảng để biến đổi qua lại giữa sin và cos."
+        }
+      ],
+      "content": "## Xuất phát điểm: công thức cộng\n$$\\sin(a\\pm b)=\\sin a\\cos b\\pm\\cos a\\sin b,$$\n$$\\cos(a\\pm b)=\\cos a\\cos b\\mp\\sin a\\sin b,$$\n$$\\tan(a\\pm b)=\\frac{\\tan a\\pm\\tan b}{1\\mp\\tan a\\tan b}.$$\nChú ý **dấu** ở cos đảo ngược so với sin — chỗ này rất dễ nhầm.\n\n## Nhân đôi là hệ quả trực tiếp\nCho $b=a$:\n$$\\sin 2a=2\\sin a\\cos a,\\qquad \\cos 2a=\\cos^2 a-\\sin^2 a=2\\cos^2 a-1=1-2\\sin^2 a.$$\nBa dạng của $\\cos 2a$ đều hữu ích; chọn dạng nào tùy theo bài cho biết $\\sin$ hay $\\cos$.\n\n## Dùng để làm gì?\nCông thức cộng cho phép tính giá trị các cung \"lạ\" như $15^\\circ=45^\\circ-30^\\circ$, chứng minh đẳng thức, và là bước đệm để hạ bậc, biến đổi tổng - tích ở bài sau. Luôn nhớ hệ thức $\\sin^2x+\\cos^2x=1$ để nối sin và cos.\n\n## Sơ đồ suy luận\nChỉ cần thuộc chắc bốn công thức cộng, ta suy ra toàn bộ công thức nhân đôi (cho $b=a$), rồi về sau là hạ bậc và biến đổi tổng - tích. Vì vậy hãy đầu tư nhớ thật kĩ **dấu** trong công thức cộng của cos và tan; phần còn lại chỉ là hệ quả trực tiếp và không cần học thuộc rời rạc.",
+      "formulas": [
+        "math.thpt.luong-giac.cong-thuc-cong-sin",
+        "math.thpt.luong-giac.cong-thuc-cong-cos",
+        "math.thpt.luong-giac.cong-thuc-cong-tan",
+        "math.thpt.luong-giac.nhan-doi-sin",
+        "math.thpt.luong-giac.nhan-doi-cos",
+        "math.thpt.luong-giac.he-thuc-luong-giac-co-ban",
+        "math.thpt.luong-giac.he-thuc-tan-cos",
+        "math.thpt.luong-giac.he-thuc-cot-sin",
+        "math.thpt.luong-giac.cong-thuc-cong-cot",
+        "math.thpt.luong-giac.nhan-doi-tan",
+        "math.thpt.luong-giac.nhan-ba-tan",
+        "math.thpt.luong-giac.nua-goc-sin-cos",
+        "math.thpt.luong-giac.tich-thanh-tong-sin-cos",
+        "math.thpt.luong-giac.tap-gia-tri-sin-cos"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\cos 15^\\circ$.",
+          "solution": "Viết $15^\\circ=45^\\circ-30^\\circ$ rồi dùng công thức cộng cho cos: $\\cos15^\\circ=\\cos45^\\circ\\cos30^\\circ+\\sin45^\\circ\\sin30^\\circ=\\dfrac{\\sqrt2}{2}\\cdot\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\cdot\\dfrac12=\\dfrac{\\sqrt6+\\sqrt2}{4}$.",
+          "answer": "$\\cos15^\\circ=\\dfrac{\\sqrt6+\\sqrt2}{4}$."
+        },
+        {
+          "problem": "Cho $\\sin a=\\dfrac35$ với $a$ là góc nhọn. Tính $\\sin 2a$ và $\\cos 2a$.",
+          "solution": "Vì $a$ nhọn nên $\\cos a=\\sqrt{1-\\sin^2a}=\\sqrt{1-\\tfrac{9}{25}}=\\dfrac45$. Do đó $\\sin2a=2\\sin a\\cos a=2\\cdot\\dfrac35\\cdot\\dfrac45=\\dfrac{24}{25}$, và $\\cos2a=1-2\\sin^2a=1-2\\cdot\\dfrac{9}{25}=\\dfrac{7}{25}$.",
+          "answer": "$\\sin2a=\\dfrac{24}{25}$, $\\cos2a=\\dfrac{7}{25}$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm dấu trong công thức cos: $\\cos(a+b)=\\cos a\\cos b-\\sin a\\sin b$ (dấu trừ), không phải dấu cộng như sin.",
+        "Khi lấy căn tìm $\\cos a$ quên xét dấu theo góc phần tư, chọn sai dấu.",
+        "Áp dụng $\\cos2a=2\\cos^2a-1$ trong khi bài chỉ cho $\\sin a$, phải dùng dạng $1-2\\sin^2a$ cho gọn."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "luong-giac",
+        "cong-thuc-cong",
+        "nhan-doi",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.ha-bac-tong-tich",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số lượng giác và phương trình lượng giác",
+      "order": 2,
+      "title_vi": "Công thức hạ bậc và biến đổi tổng - tích",
+      "title_en": "Power-reduction and sum-to-product formulas",
+      "objectives": [
+        "Sử dụng công thức hạ bậc để đưa bậc hai về bậc nhất của cung gấp đôi",
+        "Biến đổi tổng thành tích và tích thành tổng để rút gọn hoặc giải phương trình",
+        "Lựa chọn hướng biến đổi phù hợp với dạng biểu thức"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.cong-thuc-cong-nhan-doi"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công thức hạ bậc",
+          "term_en": "Power-reduction",
+          "definition": "sin^2 x = (1-cos2x)/2, cos^2 x = (1+cos2x)/2, hạ bậc hai xuống bậc nhất."
+        },
+        {
+          "term_vi": "Biến đổi tổng thành tích",
+          "term_en": "Sum-to-product",
+          "definition": "Viết tổng/hiệu các sin, cos thành tích để dễ phân tích nhân tử."
+        },
+        {
+          "term_vi": "Biến đổi tích thành tổng",
+          "term_en": "Product-to-sum",
+          "definition": "Viết tích các sin, cos thành tổng để dễ lấy nguyên hàm hoặc rút gọn."
+        }
+      ],
+      "content": "## Hạ bậc: đổi bình phương thành cung gấp đôi\nTừ $\\cos 2x=1-2\\sin^2x=2\\cos^2x-1$ suy ra\n$$\\sin^2x=\\frac{1-\\cos 2x}{2},\\qquad \\cos^2x=\\frac{1+\\cos 2x}{2}.$$\nHạ bậc là bước không thể thiếu khi lấy **nguyên hàm** $\\int\\sin^2x\\,dx$ hay giải phương trình chứa bình phương.\n\n## Tổng thành tích\n$$\\cos a+\\cos b=2\\cos\\frac{a+b}{2}\\cos\\frac{a-b}{2},$$\n$$\\sin a+\\sin b=2\\sin\\frac{a+b}{2}\\cos\\frac{a-b}{2}.$$\nCông dụng chính: **tạo nhân tử chung** để giải phương trình lượng giác.\n\n## Tích thành tổng\n$$\\cos a\\cos b=\\tfrac12\\big[\\cos(a-b)+\\cos(a+b)\\big].$$\nDùng khi cần **tách tích** thành các số hạng độc lập, đặc biệt trong tích phân. Nhìn dạng đề để chọn: cần nhân tử thì đưa về tích, cần tách số hạng thì đưa về tổng.\n\n## Chọn hướng biến đổi\nQuy tắc thực dụng: cần tạo **nhân tử chung** để giải phương trình thì đưa tổng về tích; cần **tách số hạng** để lấy nguyên hàm thì đưa tích về tổng; gặp biểu thức **bình phương** của sin, cos thì hạ bậc. Nhận đúng dạng đề là đã đi được nửa đường tới lời giải; chọn sai hướng sẽ khiến biểu thức ngày càng rối.",
+      "formulas": [
+        "math.thpt.luong-giac.ha-bac-sin-binh",
+        "math.thpt.luong-giac.ha-bac-cos-binh",
+        "math.thpt.luong-giac.tong-thanh-tich-cos-cong",
+        "math.thpt.luong-giac.tong-thanh-tich-sin-cong",
+        "math.thpt.luong-giac.tich-thanh-tong-cos-cos",
+        "math.thpt.luong-giac.doi-do-sang-radian",
+        "math.thpt.luong-giac.do-dai-cung-tron",
+        "math.thpt.luong-giac.tich-tan-cot",
+        "math.thpt.luong-giac.nhan-ba-sin",
+        "math.thpt.luong-giac.nhan-ba-cos",
+        "math.thpt.luong-giac.ha-bac-tan-binh",
+        "math.thpt.luong-giac.ha-bac-sin-lap-phuong",
+        "math.thpt.luong-giac.tong-thanh-tich-sin-tru",
+        "math.thpt.luong-giac.tong-thanh-tich-cos-tru",
+        "math.thpt.luong-giac.tong-thanh-tich-tan",
+        "math.thpt.luong-giac.tich-thanh-tong-sin-sin",
+        "math.thpt.luong-giac.chu-ki-ham-sin-cos",
+        "math.thpt.luong-giac.chu-ki-ham-tan-cot"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Rút gọn $A=\\dfrac{\\sin 3x+\\sin x}{\\cos 3x+\\cos x}$.",
+          "solution": "Áp dụng tổng thành tích cho cả tử và mẫu: $\\sin3x+\\sin x=2\\sin2x\\cos x$ và $\\cos3x+\\cos x=2\\cos2x\\cos x$. Do đó $A=\\dfrac{2\\sin2x\\cos x}{2\\cos2x\\cos x}=\\dfrac{\\sin2x}{\\cos2x}=\\tan2x$ (với $\\cos x\\ne0,\\cos2x\\ne0$).",
+          "answer": "$A=\\tan 2x$."
+        },
+        {
+          "problem": "Tính $\\displaystyle\\int_0^{\\pi} \\sin^2x\\,dx$ bằng công thức hạ bậc.",
+          "solution": "Hạ bậc: $\\sin^2x=\\dfrac{1-\\cos2x}{2}$. Khi đó $\\int_0^\\pi\\sin^2x\\,dx=\\int_0^\\pi\\dfrac{1-\\cos2x}{2}dx=\\dfrac12\\Big[x-\\dfrac{\\sin2x}{2}\\Big]_0^\\pi=\\dfrac12(\\pi-0)=\\dfrac{\\pi}{2}$.",
+          "answer": "$\\dfrac{\\pi}{2}$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhớ nhầm dấu công thức hạ bậc: $\\sin^2x=\\dfrac{1-\\cos2x}{2}$ (dấu trừ), $\\cos^2x=\\dfrac{1+\\cos2x}{2}$ (dấu cộng).",
+        "Khi biến đổi tổng - tích lẫn lộn nửa tổng và nửa hiệu của hai cung.",
+        "Rút gọn phân thức lượng giác mà quên điều kiện mẫu khác 0, làm mất nghiệm hoặc thừa nghiệm."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "luong-giac",
+        "ha-bac",
+        "tong-tich",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.pt-luong-giac-co-ban",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số lượng giác và phương trình lượng giác",
+      "order": 3,
+      "title_vi": "Phương trình lượng giác cơ bản",
+      "title_en": "Basic trigonometric equations",
+      "objectives": [
+        "Viết đúng công thức nghiệm của các phương trình sin, cos, tan, cot cơ bản",
+        "Biểu diễn được nghiệm trên đường tròn lượng giác và trong một khoảng cho trước",
+        "Giải được phương trình dạng lượng giác của một biểu thức bậc nhất theo x"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.cong-thuc-cong-nhan-doi"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình lượng giác cơ bản",
+          "term_en": "Basic trig equation",
+          "definition": "Phương trình dạng sin x = m, cos x = m, tan x = m, cot x = m."
+        },
+        {
+          "term_vi": "Họ nghiệm",
+          "term_en": "Solution family",
+          "definition": "Tập vô hạn nghiệm biểu diễn qua tham số nguyên k, do tính tuần hoàn của hàm lượng giác."
+        },
+        {
+          "term_vi": "Điều kiện có nghiệm",
+          "term_en": "Solvability condition",
+          "definition": "sin x = m và cos x = m có nghiệm khi và chỉ khi |m| ≤ 1."
+        }
+      ],
+      "content": "## Vì sao có vô số nghiệm?\nHàm sin, cos tuần hoàn chu kì $2\\pi$, hàm tan, cot tuần hoàn chu kì $\\pi$. Do đó mỗi phương trình có **họ nghiệm** phụ thuộc tham số nguyên $k$.\n\n## Bốn công thức nghiệm gốc\n$$\\sin x=\\sin\\alpha \\Leftrightarrow \\left[\\begin{array}{l}x=\\alpha+k2\\pi\\\\ x=\\pi-\\alpha+k2\\pi\\end{array}\\right.,\\quad\n\\cos x=\\cos\\alpha \\Leftrightarrow x=\\pm\\alpha+k2\\pi,$$\n$$\\tan x=\\tan\\alpha \\Leftrightarrow x=\\alpha+k\\pi,\\qquad \\cot x=\\cot\\alpha \\Leftrightarrow x=\\alpha+k\\pi.$$\nĐiều kiện có nghiệm cho sin, cos: $|m|\\le 1$.\n\n## Quy trình\nĐưa vế phải về dạng $\\sin\\alpha$ (hoặc cos, tan), áp công thức, rồi **thay $x$ bằng biểu thức bậc nhất** nếu đề cho $\\sin(2x+\\tfrac\\pi3)$… Cuối cùng, nếu đề giới hạn $x$ trong một đoạn, ta cho $k$ chạy để lọc nghiệm — bước đếm nghiệm này rất hay xuất hiện trong đề thi.",
+      "formulas": [
+        "math.thpt.luong-giac.pt-co-ban-sin",
+        "math.thpt.luong-giac.pt-co-ban-cos",
+        "math.thpt.luong-giac.pt-co-ban-tan",
+        "math.thpt.luong-giac.pt-co-ban-cot",
+        "math.thpt.luong-giac.pt-dac-biet-sin",
+        "math.thpt.luong-giac.dinh-nghia-tan-cot",
+        "math.thpt.luong-giac.cung-bu-nhau",
+        "math.thpt.luong-giac.cung-hon-kem-pi",
+        "math.thpt.luong-giac.cong-thuc-theo-tan-nua-goc",
+        "math.thpt.luong-giac.pt-dac-biet-cos",
+        "math.thpt.luong-giac.gia-tri-luong-giac-cung-dac-biet",
+        "math.thpt.luong-giac.tinh-chan-le-ham-luong-giac"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải phương trình $2\\cos x-\\sqrt3=0$.",
+          "solution": "Ta có $\\cos x=\\dfrac{\\sqrt3}{2}=\\cos\\dfrac{\\pi}{6}$. Theo công thức nghiệm của cos: $x=\\pm\\dfrac{\\pi}{6}+k2\\pi,\\ k\\in\\mathbb{Z}$.",
+          "answer": "$x=\\pm\\dfrac{\\pi}{6}+k2\\pi$."
+        },
+        {
+          "problem": "Tìm số nghiệm của $\\sin\\!\\left(2x+\\dfrac{\\pi}{3}\\right)=\\dfrac12$ trên khoảng $(0;\\pi)$.",
+          "solution": "$\\sin\\theta=\\dfrac12=\\sin\\dfrac\\pi6$ với $\\theta=2x+\\dfrac\\pi3$: $\\theta=\\dfrac\\pi6+k2\\pi$ hoặc $\\theta=\\dfrac{5\\pi}{6}+k2\\pi$. Suy ra $2x=-\\dfrac\\pi6+k2\\pi$ hoặc $2x=\\dfrac\\pi2+k2\\pi$, tức $x=-\\dfrac{\\pi}{12}+k\\pi$ hoặc $x=\\dfrac{\\pi}{4}+k\\pi$. Trong $(0;\\pi)$: từ họ 1 lấy $k=1$ được $x=\\dfrac{11\\pi}{12}$; từ họ 2 lấy $k=0$ được $x=\\dfrac\\pi4$. Vậy có $2$ nghiệm.",
+          "answer": "$2$ nghiệm."
+        }
+      ],
+      "common_mistakes": [
+        "Với $\\cos x=m$ viết nghiệm thành $x=\\alpha+k2\\pi$ mà quên nghiệm $x=-\\alpha+k2\\pi$.",
+        "Quên điều kiện $|m|\\le1$: kết luận có nghiệm cho $\\sin x=2$ là sai.",
+        "Khi giải $\\sin(2x+\\varphi)=\\dots$ quên chia hệ số của $x$ hoặc quên $k$ cũng bị chia, làm sai chu kì nghiệm."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "luong-giac",
+        "phuong-trinh-luong-giac",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.pt-luong-giac-thuong-gap",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số lượng giác và phương trình lượng giác",
+      "order": 4,
+      "title_vi": "Một số phương trình lượng giác thường gặp",
+      "title_en": "Common trigonometric equations",
+      "objectives": [
+        "Giải được phương trình bậc hai đối với một hàm lượng giác",
+        "Giải được phương trình bậc nhất đối với sin x và cos x",
+        "Nhận dạng và chọn phép biến đổi thích hợp cho từng loại phương trình"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.pt-luong-giac-co-ban",
+        "lesson.math.vn-thpt-math-daiso-giaitich.ha-bac-tong-tich"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình bậc hai theo hàm lượng giác",
+          "term_en": "Quadratic in one trig function",
+          "definition": "Đặt t = sin x (hoặc cos x, tan x) đưa về phương trình bậc hai ẩn t với ràng buộc miền giá trị."
+        },
+        {
+          "term_vi": "Phương trình bậc nhất theo sin và cos",
+          "term_en": "Linear in sin and cos",
+          "definition": "Dạng a sin x + b cos x = c, giải bằng cách đưa về một hàm sin của tổng."
+        },
+        {
+          "term_vi": "Điều kiện có nghiệm",
+          "term_en": "Solvability",
+          "definition": "a sin x + b cos x = c có nghiệm khi và chỉ khi a^2 + b^2 ≥ c^2."
+        }
+      ],
+      "content": "## Ba dạng phải thuộc\n### 1) Bậc hai đối với một hàm lượng giác\nVí dụ $2\\sin^2x-3\\sin x+1=0$. **Đặt** $t=\\sin x$ với $-1\\le t\\le 1$, giải phương trình bậc hai theo $t$ rồi trả về phương trình cơ bản. Nhớ **loại nghiệm $t$ nằm ngoài $[-1;1]$**.\n\n### 2) Bậc nhất đối với sin và cos\nDạng $a\\sin x+b\\cos x=c$. Chia hai vế cho $\\sqrt{a^2+b^2}$ rồi đưa về $\\sin(x+\\varphi)=\\dfrac{c}{\\sqrt{a^2+b^2}}$. **Điều kiện có nghiệm**: $a^2+b^2\\ge c^2$.\n\n### 3) Đưa về tích\nDùng hạ bậc, tổng - tích để phân tích thành tích các thừa số lượng giác bằng $0$, rồi giải từng phương trình cơ bản.\n\n## Nguyên tắc chung\nLuôn tìm cách quy về **phương trình cơ bản**. Sau khi ra nghiệm, đối chiếu **điều kiện xác định** (với tan, cot) và **miền giá trị** (khi đặt ẩn phụ).\n\n## Chốt lại quy trình\nDù ở dạng nào, đích đến luôn là **phương trình lượng giác cơ bản**. Sau khi ra họ nghiệm, đừng quên hai việc: đối chiếu **điều kiện xác định** (với tan, cot) và **loại nghiệm ẩn phụ ngoài miền giá trị** khi đã đặt $t=\\sin x$ hay $t=\\cos x$. Bỏ qua hai bước này là nguyên nhân mất điểm phổ biến nhất ở phần lượng giác.",
+      "formulas": [
+        "math.thpt.luong-giac.pt-bac-hai-mot-ham-luong-giac",
+        "math.thpt.luong-giac.pt-bac-nhat-sin-cos",
+        "math.thpt.luong-giac.bien-doi-a-sin-b-cos",
+        "math.thpt.luong-giac.pt-co-ban-sin",
+        "math.thpt.luong-giac.pt-co-ban-cos",
+        "math.thpt.luong-giac.cung-doi-nhau",
+        "math.thpt.luong-giac.cung-phu-nhau",
+        "math.thpt.luong-giac.cung-hon-kem-pi-hai",
+        "math.thpt.luong-giac.pt-dang-cap-bac-hai",
+        "math.thpt.luong-giac.pt-doi-xung-sin-cos",
+        "math.thpt.luong-giac.dau-gia-tri-luong-giac"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải $2\\sin^2x-3\\sin x+1=0$.",
+          "solution": "Đặt $t=\\sin x,\\ -1\\le t\\le1$. Phương trình $2t^2-3t+1=0$ có nghiệm $t=1$ và $t=\\dfrac12$, cả hai đều thuộc $[-1;1]$. Với $t=1$: $\\sin x=1\\Rightarrow x=\\dfrac\\pi2+k2\\pi$. Với $t=\\dfrac12$: $\\sin x=\\dfrac12\\Rightarrow x=\\dfrac\\pi6+k2\\pi$ hoặc $x=\\dfrac{5\\pi}{6}+k2\\pi$.",
+          "answer": "$x=\\dfrac\\pi2+k2\\pi$; $x=\\dfrac\\pi6+k2\\pi$; $x=\\dfrac{5\\pi}{6}+k2\\pi$."
+        },
+        {
+          "problem": "Giải $\\sin x+\\sqrt3\\cos x=1$.",
+          "solution": "Ở đây $a=1,b=\\sqrt3$, $\\sqrt{a^2+b^2}=2$. Chia hai vế cho $2$: $\\dfrac12\\sin x+\\dfrac{\\sqrt3}{2}\\cos x=\\dfrac12$, tức $\\sin\\!\\left(x+\\dfrac\\pi3\\right)=\\dfrac12$. Do đó $x+\\dfrac\\pi3=\\dfrac\\pi6+k2\\pi$ hoặc $x+\\dfrac\\pi3=\\dfrac{5\\pi}{6}+k2\\pi$, suy ra $x=-\\dfrac\\pi6+k2\\pi$ hoặc $x=\\dfrac\\pi2+k2\\pi$.",
+          "answer": "$x=-\\dfrac\\pi6+k2\\pi$ hoặc $x=\\dfrac\\pi2+k2\\pi$."
+        }
+      ],
+      "common_mistakes": [
+        "Khi đặt $t=\\sin x$ quên ràng buộc $-1\\le t\\le1$, nhận cả nghiệm $t$ vô nghĩa.",
+        "Với $a\\sin x+b\\cos x=c$ quên kiểm tra điều kiện $a^2+b^2\\ge c^2$ trước khi kết luận.",
+        "Chia phương trình cho $\\cos x$ (hoặc $\\sin x$) để hạ về tan mà không xét trường hợp biểu thức đó bằng 0, làm mất nghiệm."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "nang-cao",
+      "tags": [
+        "luong-giac",
+        "phuong-trinh-luong-giac",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.cap-so-cong",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Dãy số. Cấp số cộng. Cấp số nhân",
+      "order": 1,
+      "title_vi": "Cấp số cộng",
+      "title_en": "Arithmetic progressions",
+      "objectives": [
+        "Nhận biết một dãy là cấp số cộng và xác định công sai",
+        "Tính được số hạng tổng quát và tổng n số hạng đầu",
+        "Vận dụng tính chất trung bình cộng của ba số hạng liên tiếp để giải toán"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Cấp số cộng",
+          "term_en": "Arithmetic progression",
+          "definition": "Dãy số trong đó mỗi số hạng kể từ số hạng thứ hai bằng số hạng trước cộng với một hằng số d."
+        },
+        {
+          "term_vi": "Công sai",
+          "term_en": "Common difference",
+          "definition": "Hằng số d = u_{n+1} - u_n, không đổi với mọi n."
+        },
+        {
+          "term_vi": "Tính chất trung bình",
+          "term_en": "Middle-term property",
+          "definition": "Mỗi số hạng (trừ đầu và cuối) là trung bình cộng của hai số hạng kề: u_k = (u_{k-1}+u_{k+1})/2."
+        }
+      ],
+      "content": "## Nhận diện cấp số cộng\nDãy $(u_n)$ là **cấp số cộng** nếu **hiệu hai số hạng liên tiếp không đổi**: $u_{n+1}-u_n=d$ với mọi $n$. Số $d$ gọi là **công sai**. Đây là mô hình của các quá trình tăng/giảm *đều* theo bước.\n\n## Hai công thức xương sống\n$$u_n=u_1+(n-1)d,\\qquad S_n=\\frac{n(u_1+u_n)}{2}=\\frac{n\\big[2u_1+(n-1)d\\big]}{2}.$$\nCông thức số hạng tổng quát cho phép \"nhảy\" tới số hạng bất kì; công thức tổng đếm nhanh mà không cần cộng dồn.\n\n## Tính chất ba số hạng liên tiếp\n$$u_{k-1}+u_{k+1}=2u_k.$$\nDùng để chứng minh ba số lập cấp số cộng hoặc tìm ẩn. Khi gặp hệ hai điều kiện về $u_m,u_n,S_n$, hãy đặt ẩn $u_1,d$ rồi giải hệ — đó là chiến lược chuẩn cho mọi bài cấp số cộng.\n\n## Chiến lược giải\nHầu hết bài cấp số cộng quy về việc **đặt hai ẩn $u_1$ và $d$**, lập hệ từ các dữ kiện (số hạng, tổng) rồi giải. Khi đề cho quan hệ giữa các số hạng, hãy quy tất cả về $u_1$ và $d$ để có một hệ hai phương trình bậc nhất — dạng này luôn giải được và tránh việc mò từng số hạng một.",
+      "formulas": [
+        "math.thpt.day-so.cap-so-cong-dinh-nghia",
+        "math.thpt.day-so.cap-so-cong-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-cong-tong-n-so-hang",
+        "math.thpt.day-so.cap-so-cong-tinh-chat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cấp số cộng có $u_1=3,\\ d=4$. Tính $u_{10}$ và $S_{10}$.",
+          "solution": "Số hạng tổng quát: $u_{10}=u_1+9d=3+9\\cdot4=39$. Tổng $10$ số hạng: $S_{10}=\\dfrac{10(u_1+u_{10})}{2}=\\dfrac{10(3+39)}{2}=210$.",
+          "answer": "$u_{10}=39$, $S_{10}=210$."
+        },
+        {
+          "problem": "Ba số $x-2,\\ 5,\\ 2x+1$ theo thứ tự lập thành cấp số cộng. Tìm $x$.",
+          "solution": "Điều kiện: số hạng giữa bằng trung bình cộng hai số kề, tức $2\\cdot5=(x-2)+(2x+1)$. Suy ra $10=3x-1\\Rightarrow 3x=11\\Rightarrow x=\\dfrac{11}{3}$.",
+          "answer": "$x=\\dfrac{11}{3}$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm số hạng tổng quát thành $u_n=u_1+nd$ (thiếu trừ 1), làm lệch mọi số hạng.",
+        "Dùng công thức tổng với $u_n$ chưa tính đúng, hoặc quên chia $2$.",
+        "Kết luận một dãy là cấp số cộng chỉ từ vài số hạng đầu mà không kiểm tra hiệu không đổi với mọi $n$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "co-ban",
+      "tags": [
+        "cap-so-cong",
+        "day-so",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.cap-so-nhan",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Dãy số. Cấp số cộng. Cấp số nhân",
+      "order": 2,
+      "title_vi": "Cấp số nhân",
+      "title_en": "Geometric progressions",
+      "objectives": [
+        "Nhận biết một dãy là cấp số nhân và xác định công bội",
+        "Tính được số hạng tổng quát và tổng n số hạng đầu của cấp số nhân",
+        "Tính được tổng của cấp số nhân lùi vô hạn khi công bội có trị tuyệt đối nhỏ hơn 1"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.cap-so-cong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Cấp số nhân",
+          "term_en": "Geometric progression",
+          "definition": "Dãy số trong đó mỗi số hạng kể từ số hạng thứ hai bằng số hạng trước nhân với một hằng số q khác 0."
+        },
+        {
+          "term_vi": "Công bội",
+          "term_en": "Common ratio",
+          "definition": "Hằng số q = u_{n+1}/u_n, không đổi với mọi n."
+        },
+        {
+          "term_vi": "Cấp số nhân lùi vô hạn",
+          "term_en": "Infinite decreasing GP",
+          "definition": "Cấp số nhân với |q| < 1; tổng vô hạn hội tụ về u_1/(1-q)."
+        }
+      ],
+      "content": "## Nhận diện cấp số nhân\nDãy $(u_n)$ là **cấp số nhân** nếu **thương hai số hạng liên tiếp không đổi**: $\\dfrac{u_{n+1}}{u_n}=q$ (với $u_n\\ne0$). Số $q$ là **công bội**. Đây là mô hình của tăng trưởng *theo tỉ lệ*: dân số, lãi kép, phóng xạ.\n\n## Công thức\n$$u_n=u_1\\,q^{\\,n-1},\\qquad S_n=u_1\\cdot\\frac{1-q^n}{1-q}\\ (q\\ne1).$$\nTính chất ba số hạng liên tiếp: $u_k^2=u_{k-1}\\,u_{k+1}$.\n\n## Cấp số nhân lùi vô hạn\nKhi $|q|<1$, tổng vô hạn hội tụ:\n$$S=u_1+u_1q+u_1q^2+\\dots=\\frac{u_1}{1-q}.$$\nCông thức này giải thích các bài \"tổng vô hạn\" và số thập phân vô hạn tuần hoàn. Điều kiện $|q|<1$ là bắt buộc; nếu không tổng phân kì.\n\n## Phân biệt với cấp số cộng\nĐiểm khác cốt lõi: cấp số cộng dựa trên **hiệu** không đổi (mô hình cộng dồn đều), còn cấp số nhân dựa trên **thương** không đổi (mô hình nhân lên theo tỉ lệ). Khi mô hình hóa một bài toán thực tế, hãy tự hỏi: mỗi bước ta *cộng thêm* một lượng cố định hay *nhân với* một tỉ lệ cố định? Câu trả lời quyết định dùng công thức nào.",
+      "formulas": [
+        "math.thpt.day-so.cap-so-nhan-dinh-nghia",
+        "math.thpt.day-so.cap-so-nhan-so-hang-tong-quat",
+        "math.thpt.day-so.cap-so-nhan-tong-n-so-hang",
+        "math.thpt.day-so.cap-so-nhan-lui-vo-han",
+        "math.thpt.day-so.cap-so-nhan-tinh-chat"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cấp số nhân có $u_1=2,\\ q=3$. Tính $u_5$ và $S_5$.",
+          "solution": "Số hạng tổng quát: $u_5=u_1q^4=2\\cdot3^4=2\\cdot81=162$. Tổng: $S_5=u_1\\cdot\\dfrac{1-q^5}{1-q}=2\\cdot\\dfrac{1-243}{1-3}=2\\cdot\\dfrac{-242}{-2}=242$.",
+          "answer": "$u_5=162$, $S_5=242$."
+        },
+        {
+          "problem": "Tính tổng vô hạn $S=1+\\dfrac13+\\dfrac19+\\dfrac1{27}+\\dots$",
+          "solution": "Đây là cấp số nhân lùi vô hạn với $u_1=1$, $q=\\dfrac13$, thỏa $|q|<1$. Do đó $S=\\dfrac{u_1}{1-q}=\\dfrac{1}{1-\\tfrac13}=\\dfrac{1}{\\tfrac23}=\\dfrac32$.",
+          "answer": "$S=\\dfrac32$."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng công thức tổng $S_n$ với $q=1$ (chia cho $0$); khi $q=1$ thì $S_n=n\\cdot u_1$.",
+        "Áp dụng công thức tổng vô hạn khi $|q|\\ge1$, trong khi tổng đó phân kì.",
+        "Nhầm số hạng tổng quát thành $u_1q^n$ thay vì $u_1q^{n-1}$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "cap-so-nhan",
+        "day-so",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.gioi-han-day-so",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Giới hạn. Hàm số liên tục",
+      "order": 1,
+      "title_vi": "Giới hạn của dãy số",
+      "title_en": "Limits of sequences",
+      "objectives": [
+        "Hiểu khái niệm dãy số có giới hạn và các giới hạn cơ bản",
+        "Tính được giới hạn của dãy dạng phân thức bằng cách chia cho lũy thừa bậc cao nhất",
+        "Vận dụng tổng cấp số nhân lùi vô hạn như một giới hạn"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.cap-so-nhan"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Giới hạn hữu hạn của dãy",
+          "term_en": "Limit of a sequence",
+          "definition": "Dãy (u_n) có giới hạn L nếu u_n gần L tùy ý khi n đủ lớn, kí hiệu lim u_n = L."
+        },
+        {
+          "term_vi": "Giới hạn cơ bản",
+          "term_en": "Basic limits",
+          "definition": "lim 1/n = 0, lim 1/n^k = 0, lim q^n = 0 khi |q| < 1."
+        },
+        {
+          "term_vi": "Dạng vô định",
+          "term_en": "Indeterminate form",
+          "definition": "Biểu thức dạng vô cùng trên vô cùng cần biến đổi trước khi lấy giới hạn."
+        }
+      ],
+      "content": "## Trực giác về giới hạn dãy\nNói $\\lim u_n=L$ nghĩa là khi $n$ càng lớn thì $u_n$ càng **sát** $L$, gần bao nhiêu cũng được. Các giới hạn nền tảng:\n$$\\lim\\frac{1}{n}=0,\\quad \\lim\\frac{1}{n^k}=0\\ (k>0),\\quad \\lim q^n=0\\ \\text{khi } |q|<1.$$\n\n## Kĩ thuật chủ đạo: chia cho lũy thừa cao nhất\nVới dãy phân thức của đa thức theo $n$ (dạng $\\dfrac{\\infty}{\\infty}$), **chia cả tử và mẫu cho $n$ mũ cao nhất**, rồi cho các số hạng $\\dfrac{c}{n^k}\\to 0$. Kết quả phụ thuộc vào **tỉ số hệ số bậc cao nhất**.\n\n## Nối với cấp số nhân\nTổng cấp số nhân lùi vô hạn thực chất là **giới hạn** của $S_n$ khi $n\\to\\infty$: vì $q^n\\to0$ nên $S_n=u_1\\dfrac{1-q^n}{1-q}\\to\\dfrac{u_1}{1-q}$. Đây là cầu nối tự nhiên giữa dãy số và giới hạn.\n\n## Ghi nhớ dấu hiệu\nVới dãy là phân thức của hai đa thức theo $n$, kết quả chỉ phụ thuộc **bậc cao nhất**: cùng bậc thì giới hạn bằng tỉ số hai hệ số dẫn đầu; bậc tử nhỏ hơn bậc mẫu thì giới hạn bằng $0$; bậc tử lớn hơn thì dãy ra vô cùng. Nhớ quy tắc này để dự đoán đáp số trước, rồi mới trình bày bước chia cho lũy thừa cao nhất.",
+      "formulas": [
+        "math.thpt.gioi-han.dinh-li-gioi-han-day",
+        "math.thpt.gioi-han.gioi-han-day-mot-tren-n",
+        "math.thpt.gioi-han.gioi-han-day-q-mu-n",
+        "math.thpt.day-so.cap-so-nhan-lui-vo-han"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\displaystyle\\lim\\frac{2n^2-3n+1}{n^2+5}$.",
+          "solution": "Đây là dạng $\\dfrac{\\infty}{\\infty}$. Chia tử và mẫu cho $n^2$ (lũy thừa cao nhất): $\\dfrac{2-\\tfrac3n+\\tfrac1{n^2}}{1+\\tfrac5{n^2}}$. Khi $n\\to\\infty$ các số hạng $\\dfrac3n,\\dfrac1{n^2},\\dfrac5{n^2}\\to0$, còn lại $\\dfrac{2}{1}=2$.",
+          "answer": "Giới hạn bằng $2$."
+        },
+        {
+          "problem": "Tính $\\displaystyle\\lim\\frac{3^n+1}{3^{n+1}-2}$.",
+          "solution": "Chia tử và mẫu cho $3^n$: $\\dfrac{1+3^{-n}}{3-2\\cdot3^{-n}}$. Vì $3^{-n}=\\left(\\tfrac13\\right)^n\\to0$, giới hạn bằng $\\dfrac{1}{3}$.",
+          "answer": "$\\dfrac13$."
+        }
+      ],
+      "common_mistakes": [
+        "Cho ngay $\\dfrac{\\infty}{\\infty}=1$ hoặc kết luận tùy tiện mà không khử dạng vô định.",
+        "Chia cho lũy thừa sai bậc, ví dụ chia cho $n$ thay vì $n^2$, dẫn tới còn số hạng ra vô cùng.",
+        "Áp dụng $\\lim q^n=0$ khi $|q|\\ge1$: khi $q>1$ thì $q^n\\to+\\infty$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "gioi-han",
+        "day-so",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.gioi-han-ham-so-lien-tuc",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Giới hạn. Hàm số liên tục",
+      "order": 2,
+      "title_vi": "Giới hạn của hàm số và hàm số liên tục",
+      "title_en": "Limits of functions and continuity",
+      "objectives": [
+        "Tính được giới hạn hàm số, kể cả dạng vô định 0/0 bằng phân tích nhân tử",
+        "Xét được tính liên tục của hàm số tại một điểm",
+        "Dùng định lí giá trị trung gian để chứng minh phương trình có nghiệm"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.gioi-han-day-so",
+        "lesson.math.vn-thpt-math-daiso-giaitich.dau-tam-thuc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Giới hạn hàm số tại một điểm",
+          "term_en": "Limit at a point",
+          "definition": "L là giới hạn của f khi x dần tới a nếu f(x) gần L tùy ý khi x đủ gần a (x khác a)."
+        },
+        {
+          "term_vi": "Hàm số liên tục tại một điểm",
+          "term_en": "Continuity at a point",
+          "definition": "f liên tục tại a nếu f(a) xác định và lim f(x) khi x tới a bằng f(a)."
+        },
+        {
+          "term_vi": "Định lí giá trị trung gian",
+          "term_en": "Intermediate value theorem",
+          "definition": "Nếu f liên tục trên [a;b] và f(a)f(b) < 0 thì phương trình f(x)=0 có ít nhất một nghiệm trong (a;b)."
+        }
+      ],
+      "content": "## Giới hạn hàm số và dạng vô định $\\dfrac00$\nVới hàm sơ cấp, nếu thay $x=a$ được giá trị xác định thì đó chính là giới hạn. Rắc rối nằm ở dạng **$\\dfrac00$**: tử và mẫu cùng triệt tiêu tại $a$, nghĩa là cùng chứa nhân tử $(x-a)$. Cách xử lí: **phân tích nhân tử** (hoặc nhân liên hợp với biểu thức căn) để **rút gọn** nhân tử chung rồi mới thay số.\n\n## Liên tục tại một điểm\n$f$ **liên tục** tại $a$ khi hội đủ ba điều: $f(a)$ xác định, $\\lim_{x\\to a}f(x)$ tồn tại, và hai giá trị đó **bằng nhau**. Với hàm cho bởi nhiều công thức, ta ghép hai giới hạn một bên với $f(a)$ để tìm tham số làm hàm liên tục.\n\n## Định lí giá trị trung gian — chứng minh có nghiệm\nNếu $f$ liên tục trên $[a;b]$ và $f(a)\\cdot f(b)<0$ thì tồn tại $c\\in(a;b)$ với $f(c)=0$. Đây là công cụ chuẩn để khẳng định phương trình **có nghiệm** mà không cần giải.",
+      "formulas": [
+        "math.thpt.gioi-han.dinh-li-gioi-han-ham-so",
+        "math.thpt.gioi-han.dang-vo-dinh-khong-tren-khong",
+        "math.thpt.gioi-han.dinh-nghia-ham-lien-tuc",
+        "math.thpt.gioi-han.dieu-kien-lien-tuc-tai-mot-diem",
+        "math.thpt.gioi-han.dinh-li-gia-tri-trung-gian"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\displaystyle\\lim_{x\\to2}\\frac{x^2-4}{x-2}$.",
+          "solution": "Thay $x=2$ cho $\\dfrac00$ (vô định) vì cả tử và mẫu cùng chứa nhân tử $(x-2)$. Phân tích $x^2-4=(x-2)(x+2)$, rút gọn: $\\lim_{x\\to2}(x+2)=4$.",
+          "answer": "$4$."
+        },
+        {
+          "problem": "Tìm $a$ để hàm $f(x)=\\begin{cases}\\dfrac{x^2-1}{x-1}&x\\ne1\\\\ a&x=1\\end{cases}$ liên tục tại $x=1$.",
+          "solution": "Với $x\\ne1$: $\\dfrac{x^2-1}{x-1}=x+1$, nên $\\lim_{x\\to1}f(x)=2$. Hàm liên tục tại $1$ khi $f(1)=\\lim_{x\\to1}f(x)$, tức $a=2$.",
+          "answer": "$a=2$."
+        }
+      ],
+      "common_mistakes": [
+        "Thay ngay $x=a$ vào dạng $\\dfrac00$ và kết luận bằng 0 hoặc vô nghĩa mà không khử nhân tử.",
+        "Kết luận liên tục chỉ vì $\\lim$ tồn tại, quên so sánh với $f(a)$.",
+        "Dùng định lí giá trị trung gian khi $f(a)f(b)>0$ để khẳng định vô nghiệm — định lí chỉ cho điều kiện đủ để có nghiệm, không kết luận ngược."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "gioi-han",
+        "ham-lien-tuc",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.luy-thua-mu-logarit",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số mũ và hàm số logarit",
+      "order": 1,
+      "title_vi": "Lũy thừa, mũ và logarit: các tính chất",
+      "title_en": "Powers, exponentials and logarithms: properties",
+      "objectives": [
+        "Vận dụng các tính chất của lũy thừa với số mũ thực",
+        "Sử dụng thành thạo các quy tắc logarit của tích, thương, lũy thừa và đổi cơ số",
+        "Tính và rút gọn biểu thức chứa mũ và logarit"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Logarit",
+          "term_en": "Logarithm",
+          "definition": "log cơ số a của b là số mũ x thỏa a^x = b, với a > 0, a ≠ 1, b > 0."
+        },
+        {
+          "term_vi": "Quy tắc logarit",
+          "term_en": "Log rules",
+          "definition": "log của tích bằng tổng log; log của thương bằng hiệu log; log của lũy thừa bằng số mũ nhân log."
+        },
+        {
+          "term_vi": "Đổi cơ số",
+          "term_en": "Change of base",
+          "definition": "log_a b = log_c b / log_c a, cho phép quy mọi logarit về cùng một cơ số."
+        }
+      ],
+      "content": "## Lũy thừa với số mũ thực\nVới $a>0$: $a^m\\cdot a^n=a^{m+n}$, $\\dfrac{a^m}{a^n}=a^{m-n}$, $(a^m)^n=a^{mn}$, $a^{-n}=\\dfrac1{a^n}$, $a^{\\frac{m}{n}}=\\sqrt[n]{a^m}$. Đây là nền của mọi phép biến đổi mũ.\n\n## Logarit — \"phép ngược\" của mũ\nĐịnh nghĩa: $\\log_a b=x\\Leftrightarrow a^x=b$ (điều kiện $a>0,a\\ne1,b>0$). Các **quy tắc vàng**:\n$$\\log_a(xy)=\\log_a x+\\log_a y,\\quad \\log_a\\frac{x}{y}=\\log_a x-\\log_a y,\\quad \\log_a x^\\alpha=\\alpha\\log_a x.$$\n\n## Đổi cơ số\n$$\\log_a b=\\frac{\\log_c b}{\\log_c a}\\qquad(\\text{và } \\log_a b=\\frac{1}{\\log_b a}).$$\nKí hiệu quen thuộc: $\\lg x=\\log_{10}x$, $\\ln x=\\log_e x$. Nắm chắc các quy tắc này là điều kiện tiên quyết để giải phương trình mũ - logarit ở bài sau.\n\n## Bảng giá trị nên thuộc\nMột số đẳng thức dùng liên tục: $\\log_a 1=0$, $\\log_a a=1$, $a^{\\log_a b}=b$ và $\\log_a a^x=x$. Nắm chắc bốn đẳng thức này giúp rút gọn nhanh và tránh sai sót khi giải phương trình mũ - logarit ở bài sau, đặc biệt trong các bước mũ hóa hoặc logarit hóa hai vế.",
+      "formulas": [
+        "math.thpt.mu-logarit.tinh-chat-luy-thua",
+        "math.thpt.mu-logarit.dinh-nghia-logarit",
+        "math.thpt.mu-logarit.logarit-cua-tich",
+        "math.thpt.mu-logarit.logarit-cua-thuong",
+        "math.thpt.mu-logarit.logarit-cua-luy-thua",
+        "math.thpt.mu-logarit.doi-co-so-logarit",
+        "math.thpt.mu-logarit.luy-thua-so-mu-nguyen-am",
+        "math.thpt.mu-logarit.luy-thua-so-mu-huu-ti",
+        "math.thpt.mu-logarit.so-sanh-hai-luy-thua",
+        "math.thpt.mu-logarit.so-sanh-hai-logarit",
+        "math.thpt.mu-logarit.lai-kep-lien-tuc",
+        "math.thpt.mu-logarit.tang-truong-mu",
+        "math.thpt.mu-logarit.chu-ki-ban-ra",
+        "math.thpt.mu-logarit.thang-do-ph",
+        "math.thpt.mu-logarit.thang-do-decibel",
+        "math.thpt.mu-logarit.thang-do-richter"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $A=\\log_2 24-\\log_2 3$.",
+          "solution": "Dùng quy tắc hiệu hai logarit cùng cơ số: $A=\\log_2\\dfrac{24}{3}=\\log_2 8=\\log_2 2^3=3$.",
+          "answer": "$A=3$."
+        },
+        {
+          "problem": "Cho $\\log_2 5=a$. Tính $\\log_2 200$ theo $a$.",
+          "solution": "Phân tích $200=2^3\\cdot5^2$. Do đó $\\log_2200=\\log_2 2^3+\\log_2 5^2=3+2\\log_2 5=3+2a$.",
+          "answer": "$\\log_2200=3+2a$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên điều kiện cơ số và đối số của logarit ($a>0,a\\ne1,b>0$), dẫn tới biểu thức vô nghĩa.",
+        "Viết sai $\\log_a(x+y)=\\log_a x+\\log_a y$ — logarit của tổng không có công thức tách như vậy.",
+        "Nhầm $\\log_a x^\\alpha=(\\log_a x)^\\alpha$ thay vì $\\alpha\\log_a x$."
+      ],
+      "duration_minutes": 45,
+      "difficulty": "trung-binh",
+      "tags": [
+        "mu-logarit",
+        "logarit",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.pt-bpt-mu-logarit",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Hàm số mũ và hàm số logarit",
+      "order": 2,
+      "title_vi": "Phương trình, bất phương trình mũ - logarit và lãi kép",
+      "title_en": "Exponential and logarithmic equations, inequalities, compound interest",
+      "objectives": [
+        "Giải được phương trình mũ và logarit cơ bản bằng cách đưa về cùng cơ số hoặc logarit hóa",
+        "Giải được bất phương trình mũ, logarit và xét đúng chiều theo cơ số",
+        "Vận dụng công thức lãi kép vào bài toán tài chính"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.luy-thua-mu-logarit"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Phương trình mũ cơ bản",
+          "term_en": "Basic exponential equation",
+          "definition": "a^x = b có nghiệm x = log_a b khi b > 0."
+        },
+        {
+          "term_vi": "Chiều bất phương trình theo cơ số",
+          "term_en": "Direction by base",
+          "definition": "Với cơ số a > 1 bất phương trình giữ chiều; với 0 < a < 1 thì đổi chiều."
+        },
+        {
+          "term_vi": "Lãi kép",
+          "term_en": "Compound interest",
+          "definition": "Số tiền sau n kì với lãi suất r mỗi kì là T = A(1+r)^n."
+        }
+      ],
+      "content": "## Phương trình mũ và logarit\nHai vũ khí chính:\n- **Đưa về cùng cơ số**: $a^{f(x)}=a^{g(x)}\\Leftrightarrow f(x)=g(x)$.\n- **Logarit hóa / mũ hóa**: $a^{f(x)}=b\\Leftrightarrow f(x)=\\log_a b$; và $\\log_a f(x)=c\\Leftrightarrow f(x)=a^c$ (nhớ **điều kiện** $f(x)>0$).\n\n## Bất phương trình: coi chừng cơ số\nĐiểm mấu chốt: **chiều bất phương trình phụ thuộc cơ số**.\n$$a>1:\\ a^{f}>a^{g}\\Leftrightarrow f>g;\\qquad 0<a<1:\\ a^{f}>a^{g}\\Leftrightarrow f<g\\ (\\text{đổi chiều}).$$\nVới logarit cũng vậy, và luôn kèm **điều kiện xác định** của biểu thức dưới dấu log.\n\n## Ứng dụng: lãi kép\nGửi $A$ đồng, lãi suất $r$ mỗi kì, sau $n$ kì nhận\n$$T=A(1+r)^n.$$\nMuốn tìm số kì để đạt mục tiêu, ta **logarit hóa**. Đây là dạng toán thực tế phổ biến trong đề thi.\n\n## Bốn bước an toàn\n(1) Đặt **điều kiện xác định** cho biểu thức dưới dấu log; (2) đưa về cùng cơ số hoặc logarit hóa; (3) giải phương trình hoặc bất phương trình thu được, luôn **để ý chiều theo cơ số**; (4) **đối chiếu điều kiện** để loại nghiệm ngoại lai. Bỏ bước (1) hoặc (4) là lỗi mất điểm thường gặp nhất của phần này.",
+      "formulas": [
+        "math.thpt.mu-logarit.phuong-trinh-mu-cung-co-so",
+        "math.thpt.mu-logarit.phuong-trinh-mu-co-ban",
+        "math.thpt.mu-logarit.phuong-trinh-logarit-co-ban",
+        "math.thpt.mu-logarit.bat-phuong-trinh-mu",
+        "math.thpt.mu-logarit.bat-phuong-trinh-logarit",
+        "math.thpt.mu-logarit.lai-kep",
+        "math.thpt.mu-logarit.tinh-chat-co-ban-logarit",
+        "math.thpt.mu-logarit.he-qua-doi-co-so",
+        "math.thpt.mu-logarit.logarit-thap-phan-tu-nhien",
+        "math.thpt.mu-logarit.phuong-trinh-logarit-cung-co-so"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải phương trình $3^{2x-1}=27$.",
+          "solution": "Đưa về cùng cơ số $3$: $27=3^3$, nên $3^{2x-1}=3^3\\Leftrightarrow 2x-1=3\\Leftrightarrow x=2$.",
+          "answer": "$x=2$."
+        },
+        {
+          "problem": "Gửi $100$ triệu đồng, lãi kép $6\\%$/năm. Sau bao nhiêu năm (nguyên) thì số tiền vượt $150$ triệu?",
+          "solution": "Cần $100(1{,}06)^n>150\\Leftrightarrow (1{,}06)^n>1{,}5$. Logarit hóa: $n>\\log_{1{,}06}1{,}5=\\dfrac{\\ln1{,}5}{\\ln1{,}06}\\approx6{,}96$. Vậy năm nguyên nhỏ nhất là $n=7$.",
+          "answer": "$7$ năm."
+        }
+      ],
+      "common_mistakes": [
+        "Với bất phương trình cơ số $0<a<1$ quên đổi chiều bất phương trình khi bỏ mũ/log.",
+        "Giải phương trình logarit mà quên đặt điều kiện đối số dương, nhận nghiệm ngoại lai.",
+        "Nhầm công thức lãi kép thành $A(1+nr)$ (lãi đơn) thay vì $A(1+r)^n$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "mu-logarit",
+        "phuong-trinh",
+        "lai-kep",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.dao-ham-dinh-nghia-quy-tac",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đạo hàm",
+      "order": 1,
+      "title_vi": "Đạo hàm: định nghĩa, bảng đạo hàm và quy tắc tính",
+      "title_en": "Derivatives: definition, table and rules",
+      "objectives": [
+        "Hiểu định nghĩa đạo hàm là giới hạn của tỉ số số gia và ý nghĩa của nó",
+        "Sử dụng bảng đạo hàm các hàm sơ cấp cơ bản",
+        "Áp dụng quy tắc tổng, tích, thương và đạo hàm hàm hợp"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.gioi-han-ham-so-lien-tuc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Đạo hàm tại một điểm",
+          "term_en": "Derivative at a point",
+          "definition": "Giới hạn của (f(x)-f(x0))/(x-x0) khi x dần tới x0, bằng hệ số góc tiếp tuyến tại điểm đó."
+        },
+        {
+          "term_vi": "Quy tắc tích và thương",
+          "term_en": "Product and quotient rules",
+          "definition": "(uv)' = u'v + uv'; (u/v)' = (u'v - uv')/v^2."
+        },
+        {
+          "term_vi": "Đạo hàm hàm hợp",
+          "term_en": "Chain rule",
+          "definition": "Nếu y = f(u), u = u(x) thì y' theo x bằng f'(u) nhân u'(x)."
+        }
+      ],
+      "content": "## Đạo hàm là gì?\nĐạo hàm tại $x_0$ là\n$$f'(x_0)=\\lim_{x\\to x_0}\\frac{f(x)-f(x_0)}{x-x_0}=\\lim_{\\Delta x\\to0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}.$$\nÝ nghĩa: **tốc độ biến thiên tức thời** và **hệ số góc tiếp tuyến** của đồ thị tại điểm đó. Trong vật lí, đó là vận tốc tức thời.\n\n## Bảng đạo hàm cần thuộc\n$(x^\\alpha)'=\\alpha x^{\\alpha-1}$, $(\\sin x)'=\\cos x$, $(\\cos x)'=-\\sin x$, $(e^x)'=e^x$, $(\\ln x)'=\\dfrac1x$, $(a^x)'=a^x\\ln a$.\n\n## Quy tắc tính\n$$(u\\pm v)'=u'\\pm v',\\quad (uv)'=u'v+uv',\\quad \\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}.$$\n\n## Hàm hợp — quy tắc dây chuyền\nNếu $y=f(u(x))$ thì $y'_x=f'(u)\\cdot u'(x)$. Ví dụ $\\big(\\sin(x^2)\\big)'=\\cos(x^2)\\cdot2x$. Đây là quy tắc bị vận dụng nhiều nhất và cũng dễ quên nhân đạo hàm bên trong nhất.\n\n## Thứ tự ưu tiên khi tính\nGặp một hàm phức tạp, hãy nhận dạng **cấu trúc ngoài cùng** trước: đó là tổng, tích, thương hay hàm hợp? Áp dụng quy tắc tương ứng, rồi mới đi vào từng thành phần bên trong. Với hàm hợp, luôn tự nhắc câu hỏi: *đã nhân đạo hàm của phần bên trong chưa?* Đây là lỗi bị quên nhiều nhất khi tính đạo hàm.",
+      "formulas": [
+        "math.thpt.dao-ham.dinh-nghia-dao-ham",
+        "math.thpt.dao-ham.dao-ham-luy-thua",
+        "math.thpt.dao-ham.dao-ham-cua-tich",
+        "math.thpt.dao-ham.dao-ham-cua-thuong",
+        "math.thpt.dao-ham.dao-ham-ham-hop",
+        "math.thpt.dao-ham.dao-ham-sin"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính đạo hàm của $y=(x^2+1)(2x-3)$.",
+          "solution": "Dùng quy tắc tích với $u=x^2+1,\\ v=2x-3$: $u'=2x,\\ v'=2$. Vậy $y'=u'v+uv'=2x(2x-3)+(x^2+1)\\cdot2=4x^2-6x+2x^2+2=6x^2-6x+2$.",
+          "answer": "$y'=6x^2-6x+2$."
+        },
+        {
+          "problem": "Tính đạo hàm của $y=\\sin(3x^2+1)$.",
+          "solution": "Đây là hàm hợp $y=\\sin u$ với $u=3x^2+1$. Theo quy tắc dây chuyền $y'=\\cos u\\cdot u'=\\cos(3x^2+1)\\cdot6x=6x\\cos(3x^2+1)$.",
+          "answer": "$y'=6x\\cos(3x^2+1)$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên nhân đạo hàm của hàm bên trong khi lấy đạo hàm hàm hợp (thiếu thừa số $u'$).",
+        "Nhầm quy tắc thương, viết $(u/v)'=(u'v+uv')/v^2$ hoặc quên bình phương mẫu.",
+        "Cho rằng đạo hàm của tích bằng tích các đạo hàm $u'v'$ — sai hoàn toàn."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dao-ham",
+        "quy-tac-dao-ham",
+        "ham-hop",
+        "lop11"
+      ],
+      "video_lectures": [
+        {
+          "title": "Bản chất trực quan của Đạo hàm (Essence of Calculus)",
+          "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+          "provider": "3Blue1Brown",
+          "duration": "17:05",
+          "language": "en/vi",
+          "timestamps": [
+            {
+              "time": "02:15",
+              "label": "Ý nghĩa hình học của tiếp tuyến & hệ số góc"
+            },
+            {
+              "time": "07:30",
+              "label": "Giới hạn vi phân dy/dx"
+            },
+            {
+              "time": "12:40",
+              "label": "Quy tắc lũy thừa x^n"
+            }
+          ]
+        },
+        {
+          "title": "Derivative Rules & Intuition",
+          "url": "https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules",
+          "provider": "Khan Academy",
+          "duration": "14:20",
+          "language": "en"
+        }
+      ],
+      "animations": [
+        {
+          "title": "Tiếp tuyến di động trên đồ thị hàm số",
+          "type": "geogebra",
+          "url": "https://www.geogebra.org/m/Jm8Wv8vA",
+          "description": "Kéo điểm tiếp xúc để quan sát sự thay đổi hệ số góc và giá trị đạo hàm tức thời f'(x)"
+        }
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.dao-ham-cap-hai-tiep-tuyen",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Đạo hàm",
+      "order": 2,
+      "title_vi": "Đạo hàm cấp hai và phương trình tiếp tuyến",
+      "title_en": "Second derivatives and tangent lines",
+      "objectives": [
+        "Tính được đạo hàm cấp hai và nêu ý nghĩa gia tốc",
+        "Viết được phương trình tiếp tuyến của đồ thị tại một điểm",
+        "Viết được tiếp tuyến khi biết hệ số góc hoặc điều kiện song song, vuông góc"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.dao-ham-dinh-nghia-quy-tac"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Đạo hàm cấp hai",
+          "term_en": "Second derivative",
+          "definition": "Đạo hàm của đạo hàm, f'' = (f')'; trong chuyển động là gia tốc."
+        },
+        {
+          "term_vi": "Tiếp tuyến tại một điểm",
+          "term_en": "Tangent at a point",
+          "definition": "Đường thẳng y = f'(x0)(x - x0) + f(x0), có hệ số góc bằng đạo hàm tại điểm tiếp xúc."
+        },
+        {
+          "term_vi": "Hệ số góc",
+          "term_en": "Slope",
+          "definition": "Giá trị f'(x0) bằng tang của góc nghiêng của tiếp tuyến với trục hoành."
+        }
+      ],
+      "content": "## Đạo hàm cấp hai\n$f''(x)=\\big(f'(x)\\big)'$. Về vật lí, nếu $s(t)$ là quãng đường thì $s'(t)$ là **vận tốc** và $s''(t)$ là **gia tốc**. Đạo hàm cấp hai còn dùng xét tính lồi lõm và cực trị (bài ứng dụng đạo hàm).\n\n## Phương trình tiếp tuyến — công thức trục\nTiếp tuyến của $y=f(x)$ tại điểm $M(x_0;f(x_0))$:\n$$y=f'(x_0)\\,(x-x_0)+f(x_0).$$\nCần **ba dữ kiện**: hoành độ tiếp điểm $x_0$, tung độ $f(x_0)$, và hệ số góc $k=f'(x_0)$.\n\n## Ba kiểu đề thường gặp\n1. **Biết tiếp điểm** $x_0$: thay thẳng vào công thức.\n2. **Biết hệ số góc** $k$: giải $f'(x_0)=k$ để tìm $x_0$ rồi viết tiếp tuyến. Tiếp tuyến **song song** đường $y=kx+m$ thì có cùng $k$; **vuông góc** thì $k\\cdot k'=-1$.\n3. **Đi qua điểm cho trước**: đặt tiếp điểm $x_0$, buộc điểm đó nằm trên tiếp tuyến, giải ra $x_0$.\n\n## Nhớ đủ ba dữ kiện\nMọi phương trình tiếp tuyến cần đủ **tiếp điểm $x_0$**, **tung độ $f(x_0)$** và **hệ số góc $f'(x_0)$**. Thiếu tung độ tiếp điểm là lỗi phổ biến khiến hằng số tự do sai. Khi đề cho điều kiện gián tiếp (song song, vuông góc, hoặc đi qua một điểm), hãy dùng chính điều kiện đó để tìm $x_0$ trước, rồi mới viết phương trình.",
+      "formulas": [
+        "math.thpt.dao-ham.dao-ham-cap-hai",
+        "math.thpt.dao-ham.phuong-trinh-tiep-tuyen",
+        "math.thpt.dao-ham.tiep-tuyen-biet-he-so-goc",
+        "math.thpt.dao-ham.gia-toc-tuc-thoi",
+        "math.thpt.dao-ham.van-toc-tuc-thoi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Viết phương trình tiếp tuyến của $y=x^3-3x+2$ tại điểm có hoành độ $x_0=1$.",
+          "solution": "Tính $f(1)=1-3+2=0$ và $f'(x)=3x^2-3\\Rightarrow f'(1)=0$. Tiếp tuyến: $y=0\\cdot(x-1)+0=0$, tức $y=0$ (trục hoành).",
+          "answer": "$y=0$."
+        },
+        {
+          "problem": "Viết tiếp tuyến của $y=x^2$ biết tiếp tuyến song song với đường thẳng $y=4x-1$.",
+          "solution": "Tiếp tuyến song song $y=4x-1$ nên có hệ số góc $k=4$. Giải $f'(x_0)=2x_0=4\\Rightarrow x_0=2$, khi đó $f(2)=4$. Tiếp tuyến: $y=4(x-2)+4=4x-4$.",
+          "answer": "$y=4x-4$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên tính tung độ tiếp điểm $f(x_0)$, chỉ dùng hệ số góc nên viết thiếu hằng số tự do.",
+        "Nhầm điều kiện vuông góc: hai đường vuông góc khi tích hệ số góc bằng $-1$, không phải bằng nhau.",
+        "Khi 'tiếp tuyến đi qua điểm A' lại lấy A làm tiếp điểm trong khi A có thể không nằm trên đồ thị."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "dao-ham",
+        "tiep-tuyen",
+        "dao-ham-cap-hai",
+        "lop11"
+      ],
+      "video_lectures": [
+        {
+          "title": "Bản chất trực quan của Đạo hàm (Essence of Calculus)",
+          "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+          "provider": "3Blue1Brown",
+          "duration": "17:05",
+          "language": "en/vi",
+          "timestamps": [
+            {
+              "time": "02:15",
+              "label": "Ý nghĩa hình học của tiếp tuyến & hệ số góc"
+            },
+            {
+              "time": "07:30",
+              "label": "Giới hạn vi phân dy/dx"
+            },
+            {
+              "time": "12:40",
+              "label": "Quy tắc lũy thừa x^n"
+            }
+          ]
+        },
+        {
+          "title": "Derivative Rules & Intuition",
+          "url": "https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules",
+          "provider": "Khan Academy",
+          "duration": "14:20",
+          "language": "en"
+        }
+      ],
+      "animations": [
+        {
+          "title": "Tiếp tuyến di động trên đồ thị hàm số",
+          "type": "geogebra",
+          "url": "https://www.geogebra.org/m/Jm8Wv8vA",
+          "description": "Kéo điểm tiếp xúc để quan sát sự thay đổi hệ số góc và giá trị đạo hàm tức thời f'(x)"
+        }
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.quy-tac-tinh-xac-suat",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Các quy tắc tính xác suất",
+      "order": 1,
+      "title_vi": "Biến cố xung khắc, độc lập và các quy tắc tính xác suất",
+      "title_en": "Mutually exclusive, independent events and probability rules",
+      "objectives": [
+        "Phân biệt biến cố xung khắc và biến cố độc lập",
+        "Áp dụng quy tắc cộng cho biến cố xung khắc và công thức tổng quát",
+        "Áp dụng quy tắc nhân cho biến cố độc lập"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.xac-suat-co-dien"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Biến cố xung khắc",
+          "term_en": "Mutually exclusive events",
+          "definition": "Hai biến cố không thể cùng xảy ra: A giao B rỗng, khi đó P(A∪B)=P(A)+P(B)."
+        },
+        {
+          "term_vi": "Biến cố độc lập",
+          "term_en": "Independent events",
+          "definition": "Việc xảy ra của biến cố này không ảnh hưởng xác suất biến cố kia: P(A∩B)=P(A)P(B)."
+        },
+        {
+          "term_vi": "Quy tắc cộng tổng quát",
+          "term_en": "General addition rule",
+          "definition": "P(A∪B)=P(A)+P(B)-P(A∩B) cho hai biến cố bất kì."
+        }
+      ],
+      "content": "## Đừng lẫn xung khắc với độc lập\nĐây là cặp khái niệm bị nhầm nhiều nhất.\n- **Xung khắc**: không thể cùng xảy ra, $A\\cap B=\\varnothing$. Liên quan tới phép **hợp** (biến cố \"hoặc\").\n- **Độc lập**: xảy ra hay không của cái này không đổi xác suất cái kia. Liên quan tới phép **giao** (biến cố \"và\").\n\n## Quy tắc cộng (biến cố hợp)\nTổng quát: $P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$. Nếu $A,B$ **xung khắc** thì $P(A\\cap B)=0$, còn $P(A\\cup B)=P(A)+P(B)$.\n\n## Quy tắc nhân (biến cố giao)\nNếu $A,B$ **độc lập** thì $P(A\\cap B)=P(A)\\,P(B)$. Từ đó suy ra công thức tiện dụng cho \"ít nhất một\" qua biến cố đối. Chiến lược đọc đề: thấy **\"hoặc\"** nghĩ tới cộng; thấy **\"và\", \"rồi\"** giữa các phép thử độc lập thì nhân.\n\n## Bảng đối chiếu\nXung khắc gắn với phép **hợp** và quy tắc **cộng** xác suất; độc lập gắn với phép **giao** và quy tắc **nhân** xác suất. Hai cột này không được trộn lẫn. Khi nghi ngờ hai biến cố có độc lập hay không, hãy kiểm tra bằng định nghĩa $P(A\\cap B)=P(A)\\,P(B)$ thay vì phán đoán theo cảm tính.",
+      "formulas": [
+        "math.thpt.to-hop-xac-suat.quy-tac-cong-xac-suat-xung-khac",
+        "math.thpt.to-hop-xac-suat.quy-tac-cong-xac-suat",
+        "math.thpt.to-hop-xac-suat.quy-tac-nhan-xac-suat-doc-lap",
+        "math.thpt.to-hop-xac-suat.bien-co-doi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hai xạ thủ bắn độc lập, xác suất trúng lần lượt $0{,}8$ và $0{,}7$. Tính xác suất **cả hai** cùng trúng và xác suất **ít nhất một** người trúng.",
+          "solution": "Hai biến cố độc lập nên xác suất cả hai trúng $=0{,}8\\times0{,}7=0{,}56$. 'Ít nhất một trúng' là đối của 'cả hai đều trượt': $P(\\text{trượt cả hai})=(1-0{,}8)(1-0{,}7)=0{,}2\\times0{,}3=0{,}06$, nên $P(\\text{ít nhất một})=1-0{,}06=0{,}94$.",
+          "answer": "Cả hai trúng $0{,}56$; ít nhất một $0{,}94$."
+        },
+        {
+          "problem": "Rút một lá từ bộ bài $52$ lá. Tính xác suất lá đó là **quân Át hoặc quân Cơ**.",
+          "solution": "Gọi $A$='Át' ($4$ lá), $B$='Cơ' ($13$ lá). Hai biến cố **không** xung khắc vì có lá Át Cơ. Dùng quy tắc cộng tổng quát: $P(A\\cup B)=\\dfrac{4}{52}+\\dfrac{13}{52}-\\dfrac{1}{52}=\\dfrac{16}{52}=\\dfrac{4}{13}$.",
+          "answer": "$\\dfrac{4}{13}$."
+        }
+      ],
+      "common_mistakes": [
+        "Cộng thẳng $P(A)+P(B)$ khi hai biến cố không xung khắc, quên trừ $P(A\\cap B)$ nên đếm trùng.",
+        "Nhân xác suất khi hai biến cố không độc lập (ví dụ rút bài không hoàn lại), phải dùng xác suất có điều kiện.",
+        "Đồng nhất xung khắc với độc lập: thực ra hai biến cố xung khắc có xác suất dương thì lại phụ thuộc nhau."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "xac-suat",
+        "bien-co-doc-lap",
+        "xung-khac",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.thong-ke-ghep-nhom-xu-the",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        11
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Thống kê - mẫu số liệu ghép nhóm",
+      "order": 1,
+      "title_vi": "Các số đo xu thế trung tâm của mẫu số liệu ghép nhóm",
+      "title_en": "Central tendency for grouped data",
+      "objectives": [
+        "Tính được số trung bình của mẫu số liệu ghép nhóm",
+        "Xác định được trung vị, tứ phân vị của mẫu ghép nhóm bằng công thức nội suy",
+        "Xác định được mốt của mẫu ghép nhóm và nêu ý nghĩa"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.cap-so-cong"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Mẫu số liệu ghép nhóm",
+          "term_en": "Grouped data",
+          "definition": "Dữ liệu chia thành các nhóm (khoảng) kèm tần số, dùng giá trị đại diện là trung điểm mỗi nhóm."
+        },
+        {
+          "term_vi": "Trung vị ghép nhóm",
+          "term_en": "Grouped median",
+          "definition": "Giá trị chia mẫu thành hai nửa bằng nhau, tính bằng công thức nội suy trong nhóm chứa trung vị."
+        },
+        {
+          "term_vi": "Tứ phân vị",
+          "term_en": "Quartiles",
+          "definition": "Ba giá trị Q1, Q2, Q3 chia mẫu đã sắp xếp thành bốn phần bằng nhau."
+        }
+      ],
+      "content": "## Vì sao cần công thức riêng?\nVới mẫu **ghép nhóm**, ta không biết từng giá trị cụ thể mà chỉ biết mỗi nhóm có bao nhiêu số liệu. Ta dùng **trung điểm** mỗi nhóm làm đại diện và **nội suy** cho các phân vị.\n\n## Số trung bình\n$$\\bar{x}=\\frac{\\sum f_i x_i}{n},$$\nvới $x_i$ là trung điểm nhóm, $f_i$ là tần số, $n=\\sum f_i$.\n\n## Trung vị và tứ phân vị (nội suy)\n$$Q=L+\\frac{\\tfrac{k\\,n}{4}-C}{f}\\cdot h,$$\ntrong đó $L$ là đầu mút trái nhóm chứa phân vị, $C$ là tần số tích lũy **trước** nhóm đó, $f$ là tần số nhóm, $h$ là độ rộng nhóm. Trung vị ứng với $\\tfrac{n}{2}$; $Q_1$ ứng $\\tfrac n4$, $Q_3$ ứng $\\tfrac{3n}4$.\n\n## Mốt ghép nhóm\n$$M_o=L+\\frac{f_m-f_{m-1}}{(f_m-f_{m-1})+(f_m-f_{m+1})}\\cdot h,$$\nvới nhóm mốt là nhóm có tần số lớn nhất. Các đại lượng này mô tả \"tâm\" của dữ liệu theo những cách khác nhau.",
+      "formulas": [
+        "math.thpt.thong-ke.so-trung-binh-ghep-nhom",
+        "math.thpt.thong-ke.trung-vi-ghep-nhom",
+        "math.thpt.thong-ke.tu-phan-vi-ghep-nhom",
+        "math.thpt.thong-ke.mot-ghep-nhom",
+        "math.thpt.thong-ke.do-lech-tuyet-doi-trung-binh"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho mẫu ghép nhóm về thời gian (phút): $[0;10)$ có $5$; $[10;20)$ có $9$; $[20;30)$ có $6$. Tính số trung bình.",
+          "solution": "Trung điểm các nhóm là $5,15,25$; tần số $5,9,6$; $n=20$. Số trung bình $\\bar x=\\dfrac{5\\cdot5+9\\cdot15+6\\cdot25}{20}=\\dfrac{25+135+150}{20}=\\dfrac{310}{20}=15{,}5$ phút.",
+          "answer": "$\\bar x=15{,}5$ phút."
+        },
+        {
+          "problem": "Với mẫu ở ví dụ trên, tính trung vị.",
+          "solution": "$n=20$ nên vị trí trung vị ứng $\\dfrac n2=10$. Tần số tích lũy: sau nhóm 1 là $5$, sau nhóm 2 là $14$; vậy nhóm chứa trung vị là $[10;20)$ với $L=10,\\ C=5,\\ f=9,\\ h=10$. Nội suy: $M_e=10+\\dfrac{10-5}{9}\\cdot10=10+\\dfrac{50}{9}\\approx15{,}56$ phút.",
+          "answer": "$M_e\\approx15{,}56$ phút."
+        }
+      ],
+      "common_mistakes": [
+        "Dùng đầu mút nhóm thay vì trung điểm khi tính số trung bình ghép nhóm.",
+        "Lấy nhầm tần số tích lũy: $C$ phải là tần số tích lũy của các nhóm **đứng trước** nhóm chứa phân vị.",
+        "Xác định sai nhóm chứa trung vị/tứ phân vị do so sánh với $\\tfrac n2$ (hoặc $\\tfrac n4$) không dùng tần số tích lũy."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "thong-ke",
+        "ghep-nhom",
+        "trung-vi",
+        "tu-phan-vi",
+        "lop11"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.don-dieu-cuc-tri",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+      "order": 1,
+      "title_vi": "Tính đơn điệu và cực trị của hàm số",
+      "title_en": "Monotonicity and extrema",
+      "objectives": [
+        "Xét được tính đơn điệu của hàm số bằng dấu của đạo hàm",
+        "Tìm được cực trị của hàm số bằng quy tắc xét dấu đạo hàm",
+        "Biện luận được số cực trị theo tham số"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.dao-ham-dinh-nghia-quy-tac"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Tính đơn điệu",
+          "term_en": "Monotonicity",
+          "definition": "Hàm đồng biến trên khoảng nếu f' ≥ 0 (bằng 0 tại hữu hạn điểm); nghịch biến nếu f' ≤ 0."
+        },
+        {
+          "term_vi": "Điểm cực trị",
+          "term_en": "Extremum point",
+          "definition": "Điểm mà đạo hàm đổi dấu: đổi từ dương sang âm cho cực đại, từ âm sang dương cho cực tiểu."
+        },
+        {
+          "term_vi": "Điều kiện cần của cực trị",
+          "term_en": "Necessary condition",
+          "definition": "Nếu f có cực trị tại x0 và có đạo hàm tại đó thì f'(x0)=0."
+        }
+      ],
+      "content": "## Đạo hàm quyết định chiều đi của đồ thị\nTrên một khoảng, dấu của $f'$ cho biết hàm đi lên hay đi xuống:\n$$f'(x)>0\\Rightarrow \\text{đồng biến},\\qquad f'(x)<0\\Rightarrow \\text{nghịch biến}.$$\nĐây là cầu nối giữa đạo hàm và hình dạng đồ thị.\n\n## Quy tắc tìm cực trị (xét dấu $f'$)\n1. Tính $f'(x)$, giải $f'(x)=0$ tìm các **điểm tới hạn**.\n2. Lập **bảng biến thiên**, xét dấu $f'$ hai bên mỗi điểm.\n3. $f'$ đổi dấu $+\\to-$: **cực đại**; đổi dấu $-\\to+$: **cực tiểu**; **không đổi dấu**: không phải cực trị.\n\n## Lưu ý quan trọng\n$f'(x_0)=0$ chỉ là **điều kiện cần**. Ví dụ $y=x^3$ có $y'(0)=0$ nhưng $x=0$ không là cực trị vì $y'=3x^2\\ge0$ không đổi dấu. Với bài tham số (ví dụ hàm bậc ba có hai cực trị), điều kiện là $f'(x)=0$ có **hai nghiệm phân biệt**, tức $\\Delta_{f'}>0$.\n\n## Trình bày bằng bảng biến thiên\nCách trình bày chuẩn và ít sai nhất là lập **bảng biến thiên**: hàng $x$, hàng dấu của $f'$, hàng chiều biến thiên của $f$. Từ bảng đọc ra ngay các khoảng đơn điệu và các điểm cực trị (nơi $f'$ đổi dấu). Đây cũng là bước bắt buộc và là nền tảng trước khi khảo sát và vẽ đồ thị hàm số ở bài sau.",
+      "formulas": [
+        "math.thpt.ung-dung-dao-ham.dieu-kien-don-dieu",
+        "math.thpt.ung-dung-dao-ham.dieu-kien-can-cuc-tri",
+        "math.thpt.ung-dung-dao-ham.quy-tac-1-cuc-tri",
+        "math.thpt.ung-dung-dao-ham.dieu-kien-ham-bac-ba-co-cuc-tri",
+        "math.thpt.ung-dung-dao-ham.dieu-kien-don-dieu-ham-bac-ba"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm các khoảng đơn điệu và cực trị của $y=x^3-3x^2+2$.",
+          "solution": "$y'=3x^2-6x=3x(x-2)$. $y'=0\\Leftrightarrow x=0$ hoặc $x=2$. Xét dấu: $y'>0$ khi $x<0$ hoặc $x>2$ (đồng biến), $y'<0$ khi $0<x<2$ (nghịch biến). Tại $x=0$ đạo hàm đổi $+\\to-$ nên **cực đại** $y(0)=2$; tại $x=2$ đổi $-\\to+$ nên **cực tiểu** $y(2)=-2$.",
+          "answer": "CĐ $(0;2)$, CT $(2;-2)$; đồng biến $(-\\infty;0)$ và $(2;+\\infty)$, nghịch biến $(0;2)$."
+        },
+        {
+          "problem": "Tìm $m$ để hàm $y=x^3-3mx+1$ có hai điểm cực trị.",
+          "solution": "$y'=3x^2-3m$. Hàm bậc ba có hai cực trị khi $y'=0$ có hai nghiệm phân biệt, tức $x^2=m$ có hai nghiệm phân biệt $\\Leftrightarrow m>0$.",
+          "answer": "$m>0$."
+        }
+      ],
+      "common_mistakes": [
+        "Kết luận cực trị chỉ vì $f'(x_0)=0$ mà không kiểm tra $f'$ có **đổi dấu** hay không (ví dụ $y=x^3$).",
+        "Nhầm chiều: $f'>0$ là đồng biến, không phải nghịch biến.",
+        "Với hàm bậc ba, quên rằng cần $f'=0$ có hai nghiệm phân biệt ($\\Delta>0$) để có hai cực trị."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "ung-dung-dao-ham",
+        "don-dieu",
+        "cuc-tri",
+        "lop12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.gtln-gtnn-tiem-can",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+      "order": 2,
+      "title_vi": "Giá trị lớn nhất, nhỏ nhất, tiệm cận và khảo sát đồ thị",
+      "title_en": "Extrema on intervals, asymptotes and graphing",
+      "objectives": [
+        "Tìm được giá trị lớn nhất, nhỏ nhất của hàm số trên một đoạn",
+        "Xác định được tiệm cận đứng và tiệm cận ngang của đồ thị hàm phân thức",
+        "Biện luận được số nghiệm phương trình dựa vào đồ thị (bài toán tương giao)"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.don-dieu-cuc-tri"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "GTLN, GTNN trên đoạn",
+          "term_en": "Extrema on a closed interval",
+          "definition": "So sánh giá trị hàm tại các điểm tới hạn trong đoạn và tại hai đầu mút."
+        },
+        {
+          "term_vi": "Tiệm cận đứng",
+          "term_en": "Vertical asymptote",
+          "definition": "Đường x = a mà hàm dần ra vô cùng khi x tiến tới a; thường tại nghiệm mẫu không phải nghiệm tử."
+        },
+        {
+          "term_vi": "Tiệm cận ngang",
+          "term_en": "Horizontal asymptote",
+          "definition": "Đường y = b mà hàm dần tới b khi x ra vô cùng."
+        }
+      ],
+      "content": "## GTLN - GTNN trên một đoạn $[a;b]$\nQuy trình chuẩn:\n1. Tính $f'(x)$, tìm các điểm tới hạn $x_i\\in[a;b]$ (nơi $f'=0$ hoặc không xác định).\n2. Tính $f$ tại các $x_i$ **và tại hai đầu** $a,b$.\n3. Số **lớn nhất** trong các giá trị đó là GTLN, số **nhỏ nhất** là GTNN.\n\nĐiểm mấu chốt: **không được quên hai đầu mút** — cực trị trong khoảng chưa chắc là GTLN/GTNN trên đoạn.\n\n## Tiệm cận của hàm phân thức\n- **Tiệm cận đứng**: $x=a$ khi $\\lim_{x\\to a}y=\\pm\\infty$ (mẫu bằng $0$, tử khác $0$).\n- **Tiệm cận ngang**: $y=b$ khi $\\lim_{x\\to\\pm\\infty}y=b$.\nVới $y=\\dfrac{ax+b}{cx+d}$: tiệm cận đứng $x=-\\dfrac dc$, tiệm cận ngang $y=\\dfrac ac$.\n\n## Tương giao đồ thị\nSố nghiệm của $f(x)=m$ bằng số giao điểm của đồ thị $y=f(x)$ với đường ngang $y=m$. Dựa vào **bảng biến thiên** để đếm nghiệm theo $m$ — dạng câu quen thuộc trong đề thi.",
+      "formulas": [
+        "math.thpt.ung-dung-dao-ham.gtln-gtnn-tren-doan",
+        "math.thpt.ung-dung-dao-ham.tiem-can-dung",
+        "math.thpt.ung-dung-dao-ham.tiem-can-ngang",
+        "math.thpt.ung-dung-dao-ham.tuong-giao-do-thi",
+        "math.thpt.ung-dung-dao-ham.so-nghiem-phuong-trinh-theo-do-thi"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm GTLN, GTNN của $y=x^3-3x+1$ trên đoạn $[0;2]$.",
+          "solution": "$y'=3x^2-3=0\\Leftrightarrow x=\\pm1$; chỉ $x=1\\in[0;2]$. Tính giá trị tại điểm tới hạn và hai đầu: $y(0)=1,\\ y(1)=1-3+1=-1,\\ y(2)=8-6+1=3$. So sánh: GTLN $=3$ tại $x=2$, GTNN $=-1$ tại $x=1$.",
+          "answer": "GTLN $=3$, GTNN $=-1$."
+        },
+        {
+          "problem": "Tìm tiệm cận đứng và ngang của $y=\\dfrac{2x-1}{x+3}$.",
+          "solution": "Mẫu bằng $0$ tại $x=-3$ (tử tại đó bằng $-7\\ne0$) nên **tiệm cận đứng** $x=-3$. Khi $x\\to\\pm\\infty$, $y\\to\\dfrac{2}{1}=2$ nên **tiệm cận ngang** $y=2$.",
+          "answer": "TCĐ $x=-3$, TCN $y=2$."
+        }
+      ],
+      "common_mistakes": [
+        "Chỉ so sánh giá trị tại các điểm tới hạn mà quên hai đầu mút của đoạn.",
+        "Kết luận tiệm cận đứng tại mọi nghiệm của mẫu, kể cả khi tử cũng bằng 0 ở đó (điểm khử được).",
+        "Nhầm tiệm cận ngang với giá trị của hàm tại một điểm hữu hạn thay vì giới hạn khi $x\\to\\pm\\infty$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "ung-dung-dao-ham",
+        "gtln-gtnn",
+        "tiem-can",
+        "tuong-giao",
+        "lop12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.nguyen-ham",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Nguyên hàm. Tích phân",
+      "order": 1,
+      "title_vi": "Nguyên hàm",
+      "title_en": "Antiderivatives",
+      "objectives": [
+        "Hiểu khái niệm nguyên hàm và họ nguyên hàm",
+        "Sử dụng bảng nguyên hàm cơ bản và tính chất tuyến tính",
+        "Tìm nguyên hàm bằng phương pháp đổi biến số đơn giản"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.dao-ham-dinh-nghia-quy-tac"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Nguyên hàm",
+          "term_en": "Antiderivative",
+          "definition": "F là nguyên hàm của f trên khoảng nếu F' = f; họ nguyên hàm là F(x) + C."
+        },
+        {
+          "term_vi": "Tính chất tuyến tính",
+          "term_en": "Linearity",
+          "definition": "Nguyên hàm của tổng bằng tổng nguyên hàm; hằng số đưa được ra ngoài dấu tích phân."
+        },
+        {
+          "term_vi": "Đổi biến số",
+          "term_en": "Substitution",
+          "definition": "Đặt u = u(x) để đưa biểu thức về dạng có nguyên hàm quen thuộc."
+        }
+      ],
+      "content": "## Nguyên hàm — phép ngược của đạo hàm\n$F$ là **nguyên hàm** của $f$ nếu $F'(x)=f(x)$. Vì hằng số có đạo hàm $0$ nên nguyên hàm không duy nhất: **họ nguyên hàm** là $\\int f(x)\\,dx=F(x)+C$.\n\n## Bảng cần thuộc\n$$\\int x^\\alpha\\,dx=\\frac{x^{\\alpha+1}}{\\alpha+1}+C\\ (\\alpha\\ne-1),\\quad \\int\\frac{1}{x}dx=\\ln|x|+C,$$\n$$\\int e^x dx=e^x+C,\\quad \\int\\cos x\\,dx=\\sin x+C,\\quad \\int\\sin x\\,dx=-\\cos x+C.$$\nKèm **tính tuyến tính**: $\\int(af+bg)=a\\int f+b\\int g$.\n\n## Đổi biến số\nKhi tích phân chứa một biểu thức và **đạo hàm của nó**, đặt $u=u(x)$, $du=u'(x)\\,dx$ để đưa về dạng cơ bản. Ví dụ $\\int 2x\\,e^{x^2}dx$ đặt $u=x^2$. Kĩ thuật này cùng với hạ bậc lượng giác là hai công cụ tính nguyên hàm quan trọng nhất ở lớp 12.\n\n## Kiểm tra bằng đạo hàm\nMẹo tự kiểm tra: lấy đạo hàm kết quả vừa tìm, nếu ra đúng hàm ban đầu thì nguyên hàm đúng. Đây là cách chống sai lầm nhanh nhất, đặc biệt hữu ích sau khi đổi biến — chỉ mất vài giây nhưng loại được hầu hết lỗi về dấu và hệ số. Đừng bao giờ quên hằng số $C$ khi viết họ nguyên hàm.",
+      "formulas": [
+        "math.thpt.nguyen-ham-tich-phan.dinh-nghia-nguyen-ham",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-luy-thua",
+        "math.thpt.nguyen-ham-tich-phan.tinh-chat-nguyen-ham",
+        "math.thpt.nguyen-ham-tich-phan.phuong-phap-doi-bien-nguyen-ham",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-e-mu-x",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-a-mu-x",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-tan-cot",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-ax-cong-b-mu-n",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-mot-tren-ax-cong-b",
+        "math.thpt.nguyen-ham-tich-phan.nguyen-ham-ln-x"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tìm $\\displaystyle\\int (3x^2-2x+1)\\,dx$.",
+          "solution": "Dùng tính tuyến tính và công thức lũy thừa từng số hạng: $\\int3x^2dx=x^3$, $\\int(-2x)dx=-x^2$, $\\int1\\,dx=x$. Vậy kết quả $=x^3-x^2+x+C$.",
+          "answer": "$x^3-x^2+x+C$."
+        },
+        {
+          "problem": "Tìm $\\displaystyle\\int 2x\\,e^{x^2}\\,dx$.",
+          "solution": "Nhận thấy $2x$ là đạo hàm của $x^2$, đặt $u=x^2\\Rightarrow du=2x\\,dx$. Tích phân thành $\\int e^u\\,du=e^u+C=e^{x^2}+C$.",
+          "answer": "$e^{x^2}+C$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên hằng số $C$ trong họ nguyên hàm.",
+        "Áp dụng công thức $\\dfrac{x^{\\alpha+1}}{\\alpha+1}$ cho trường hợp $\\alpha=-1$; khi đó phải dùng $\\ln|x|$.",
+        "Khi đổi biến quên đổi $dx$ theo $du$, giữ nguyên $dx$ nên kết quả sai hệ số."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "nguyen-ham",
+        "doi-bien",
+        "lop12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.tich-phan-ung-dung",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Nguyên hàm. Tích phân",
+      "order": 2,
+      "title_vi": "Tích phân và ứng dụng: diện tích, thể tích",
+      "title_en": "Definite integrals and applications",
+      "objectives": [
+        "Tính được tích phân bằng công thức Newton - Leibniz",
+        "Áp dụng đổi biến và tích phân từng phần cho tích phân xác định",
+        "Tính diện tích hình phẳng và thể tích khối tròn xoay"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.nguyen-ham"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Công thức Newton - Leibniz",
+          "term_en": "Fundamental theorem",
+          "definition": "Tích phân từ a đến b của f bằng F(b) - F(a), với F là một nguyên hàm của f."
+        },
+        {
+          "term_vi": "Tích phân từng phần",
+          "term_en": "Integration by parts",
+          "definition": "∫u dv = uv - ∫v du, dùng khi tích chứa hai loại hàm khác nhau."
+        },
+        {
+          "term_vi": "Diện tích hình phẳng",
+          "term_en": "Area under a curve",
+          "definition": "Diện tích giữa hai đường y=f(x), y=g(x) trên [a;b] là tích phân trị tuyệt đối của hiệu f-g."
+        }
+      ],
+      "content": "## Từ nguyên hàm tới tích phân xác định\nCông thức **Newton - Leibniz**:\n$$\\int_a^b f(x)\\,dx=F(b)-F(a),\\quad F'=f.$$\nĐổi biến cho tích phân xác định phải **đổi cả cận** theo biến mới. Tích phân **từng phần**: $\\int_a^b u\\,dv=[uv]_a^b-\\int_a^b v\\,du$ — chọn $u$ là phần dễ đạo hàm, $dv$ là phần dễ lấy nguyên hàm (ưu tiên $u$ theo thứ tự log, đa thức, mũ - lượng giác).\n\n## Ứng dụng hình học\n- **Diện tích** giữa $y=f(x)$ và trục hoành trên $[a;b]$: $S=\\int_a^b|f(x)|\\,dx$; giữa hai đường: $S=\\int_a^b|f-g|\\,dx$.\n- **Thể tích** khối tròn xoay quanh $Ox$ của hình phẳng dưới $y=f(x)$:\n$$V=\\pi\\int_a^b f^2(x)\\,dx.$$\n\nDấu **giá trị tuyệt đối** trong công thức diện tích rất quan trọng: nếu bỏ, phần dưới trục hoành sẽ trừ bớt và cho diện tích sai.\n\n## Hai điểm dễ mất điểm\nThứ nhất, khi **đổi biến** trong tích phân xác định phải đổi luôn cận theo biến mới, không giữ cận cũ. Thứ hai, công thức diện tích luôn kèm **dấu giá trị tuyệt đối**; nếu hàm đổi dấu trên đoạn, phải chia đoạn tại các nghiệm rồi cộng các phần. Bỏ qua hai điều này là nguyên nhân sai số phổ biến nhất của phần tích phân.",
+      "formulas": [
+        "math.thpt.nguyen-ham-tich-phan.cong-thuc-newton-leibniz",
+        "math.thpt.nguyen-ham-tich-phan.tich-phan-doi-bien",
+        "math.thpt.nguyen-ham-tich-phan.tich-phan-tung-phan",
+        "math.thpt.nguyen-ham-tich-phan.dien-tich-hinh-phang-hai-duong",
+        "math.thpt.nguyen-ham-tich-phan.the-tich-tron-xoay-ox"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Tính $\\displaystyle\\int_0^1 (3x^2+2x)\\,dx$.",
+          "solution": "Một nguyên hàm là $F(x)=x^3+x^2$. Theo Newton - Leibniz: $\\int_0^1=F(1)-F(0)=(1+1)-(0)=2$.",
+          "answer": "$2$."
+        },
+        {
+          "problem": "Tính diện tích hình phẳng giới hạn bởi $y=x^2$ và $y=x$.",
+          "solution": "Giao điểm: $x^2=x\\Leftrightarrow x=0,\\ x=1$. Trên $[0;1]$ thì $x\\ge x^2$ nên $S=\\int_0^1(x-x^2)\\,dx=\\Big[\\dfrac{x^2}{2}-\\dfrac{x^3}{3}\\Big]_0^1=\\dfrac12-\\dfrac13=\\dfrac16$.",
+          "answer": "$S=\\dfrac16$."
+        }
+      ],
+      "common_mistakes": [
+        "Đổi biến cho tích phân xác định mà quên đổi cận, vẫn dùng cận cũ.",
+        "Bỏ dấu giá trị tuyệt đối khi tính diện tích, làm phần dưới trục hoành triệt tiêu phần trên.",
+        "Chọn sai $u$ và $dv$ trong tích phân từng phần khiến $\\int v\\,du$ còn phức tạp hơn ban đầu."
+      ],
+      "duration_minutes": 55,
+      "difficulty": "nang-cao",
+      "tags": [
+        "tich-phan",
+        "dien-tich",
+        "the-tich",
+        "lop12"
+      ],
+      "video_lectures": [
+        {
+          "title": "Tích phân và định lý cơ bản của Giải tích",
+          "url": "https://www.youtube.com/watch?v=rfG8ce4nNh0",
+          "provider": "3Blue1Brown",
+          "duration": "20:45",
+          "language": "en/vi"
+        }
+      ],
+      "animations": [
+        {
+          "title": "Tổng Riemann và diện tích dưới đường cong",
+          "type": "geogebra",
+          "url": "https://www.geogebra.org/m/e4M5nsqH",
+          "description": "Tăng số lượng hình chữ nhật N để thấy tổng Riemann tiệm cận về tích phân chính xác"
+        }
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.so-phuc",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số phức",
+      "order": 1,
+      "title_vi": "Số phức: dạng đại số, phép toán, môđun và số phức liên hợp",
+      "title_en": "Complex numbers: algebraic form, operations, modulus, conjugate",
+      "objectives": [
+        "Thực hiện được các phép toán cộng, trừ, nhân, chia số phức ở dạng đại số",
+        "Tính được môđun và xác định số phức liên hợp",
+        "Biểu diễn hình học số phức và mô tả tập hợp điểm thỏa điều kiện cho trước"
+      ],
+      "prerequisites": [],
+      "key_concepts": [
+        {
+          "term_vi": "Số phức dạng đại số",
+          "term_en": "Algebraic form",
+          "definition": "Số z = a + bi với a, b thực và i^2 = -1; a là phần thực, b là phần ảo."
+        },
+        {
+          "term_vi": "Số phức liên hợp",
+          "term_en": "Complex conjugate",
+          "definition": "Liên hợp của z = a + bi là z̄ = a - bi, đối xứng qua trục thực."
+        },
+        {
+          "term_vi": "Môđun",
+          "term_en": "Modulus",
+          "definition": "Độ dài |z| = căn(a^2 + b^2), là khoảng cách từ điểm biểu diễn z tới gốc tọa độ."
+        }
+      ],
+      "content": "## Số phức: mở rộng của số thực\nĐơn vị ảo $i$ thỏa $i^2=-1$. **Số phức** viết dạng $z=a+bi$ với $a$ (phần thực), $b$ (phần ảo). Điều này giúp mọi phương trình bậc hai đều có nghiệm.\n\n## Bốn phép toán\nCộng/trừ theo từng phần; nhân như đa thức rồi thay $i^2=-1$. Chia thì **nhân liên hợp mẫu**:\n$$\\frac{z_1}{z_2}=\\frac{z_1\\,\\overline{z_2}}{z_2\\,\\overline{z_2}}=\\frac{z_1\\,\\overline{z_2}}{|z_2|^2}.$$\n\n## Liên hợp và môđun\n$\\overline{z}=a-bi$; **môđun** $|z|=\\sqrt{a^2+b^2}$. Hai tính chất trục: $z\\cdot\\overline{z}=|z|^2$ và $|z_1z_2|=|z_1||z_2|$.\n\n## Ý nghĩa hình học\n$z=a+bi$ biểu diễn bởi điểm $M(a;b)$ trên mặt phẳng phức. $|z|$ là **khoảng cách** từ $M$ tới gốc $O$, còn $|z-z_0|$ là khoảng cách tới điểm $z_0$. Nhờ đó, $|z-z_0|=R$ mô tả một **đường tròn** — chìa khóa cho các bài tập hợp điểm.\n\n## Liên hệ hình học\nMỗi số phức tương ứng một điểm (hoặc một vectơ) trên mặt phẳng phức. Nhờ đó $|z_1-z_2|$ chính là **khoảng cách** giữa hai điểm biểu diễn, còn các điều kiện như $|z-z_0|=R$ hay $|z-a|=|z-b|$ mô tả đường tròn, đường trung trực. Tư duy hình học này giúp giải nhanh và trực quan các bài toán tập hợp điểm biểu diễn số phức.",
+      "formulas": [
+        "math.thpt.so-phuc.dang-dai-so",
+        "math.thpt.so-phuc.cong-tru-so-phuc",
+        "math.thpt.so-phuc.nhan-hai-so-phuc",
+        "math.thpt.so-phuc.chia-hai-so-phuc",
+        "math.thpt.so-phuc.so-phuc-lien-hop",
+        "math.thpt.so-phuc.modun-so-phuc",
+        "math.thpt.so-phuc.tinh-chat-lien-hop"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Cho $z=3+4i$. Tính $|z|$, $\\overline{z}$ và $z\\cdot\\overline{z}$.",
+          "solution": "Môđun $|z|=\\sqrt{3^2+4^2}=\\sqrt{25}=5$. Liên hợp $\\overline z=3-4i$. Tích $z\\overline z=(3+4i)(3-4i)=9-(4i)^2=9+16=25=|z|^2$.",
+          "answer": "$|z|=5,\\ \\overline z=3-4i,\\ z\\overline z=25$."
+        },
+        {
+          "problem": "Tính $\\dfrac{1+2i}{3-i}$.",
+          "solution": "Nhân tử và mẫu với liên hợp $3+i$: $\\dfrac{(1+2i)(3+i)}{(3-i)(3+i)}=\\dfrac{3+i+6i+2i^2}{9+1}=\\dfrac{3+7i-2}{10}=\\dfrac{1+7i}{10}=\\dfrac1{10}+\\dfrac{7}{10}i$.",
+          "answer": "$\\dfrac1{10}+\\dfrac{7}{10}i$."
+        }
+      ],
+      "common_mistakes": [
+        "Quên $i^2=-1$ khi nhân, giữ nguyên $i^2$ nên phần thực sai.",
+        "Chia số phức bằng cách chia từng phần thực - ảo, thay vì nhân liên hợp mẫu.",
+        "Nhầm môđun là $a+b$ hoặc $a^2+b^2$ thay vì $\\sqrt{a^2+b^2}$."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "so-phuc",
+        "modun",
+        "lien-hop",
+        "lop12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.pt-bac-hai-he-so-thuc",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Số phức",
+      "order": 2,
+      "title_vi": "Phương trình bậc hai với hệ số thực trên tập số phức",
+      "title_en": "Quadratic equations with real coefficients over complex numbers",
+      "objectives": [
+        "Giải được phương trình bậc hai hệ số thực khi biệt thức âm",
+        "Tính được căn bậc hai của số thực âm bằng đơn vị ảo",
+        "Vận dụng định lí Viète cho nghiệm phức"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.so-phuc",
+        "lesson.math.vn-thpt-math-daiso-giaitich.dau-tam-thuc"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Biệt thức âm",
+          "term_en": "Negative discriminant",
+          "definition": "Khi Δ < 0, phương trình bậc hai hệ số thực có hai nghiệm phức liên hợp."
+        },
+        {
+          "term_vi": "Căn bậc hai của số âm",
+          "term_en": "Square root of a negative",
+          "definition": "Với a > 0, căn của -a là ±i√a trên tập số phức."
+        },
+        {
+          "term_vi": "Định lí Viète cho nghiệm phức",
+          "term_en": "Vieta for complex roots",
+          "definition": "Tổng nghiệm bằng -b/a, tích nghiệm bằng c/a, đúng cả khi nghiệm là số phức."
+        }
+      ],
+      "content": "## Vì sao mở rộng sang số phức?\nTrên tập số thực, $ax^2+bx+c=0$ với $\\Delta<0$ **vô nghiệm**. Nhưng nhờ $i^2=-1$, ta luôn giải được: căn bậc hai của số âm $-a\\ (a>0)$ là $\\pm i\\sqrt a$.\n\n## Công thức nghiệm khi $\\Delta<0$\n$$x=\\frac{-b\\pm i\\sqrt{|\\Delta|}}{2a}.$$\nHai nghiệm này là **liên hợp** của nhau: $x_1=\\overline{x_2}$. Khi $\\Delta\\ge0$ ta vẫn dùng công thức nghiệm thực quen thuộc.\n\n## Viète vẫn đúng\nVới hai nghiệm $x_1,x_2$ (thực hoặc phức):\n$$x_1+x_2=-\\frac ba,\\qquad x_1x_2=\\frac ca.$$\nĐiều này giúp tính nhanh các biểu thức đối xứng như $x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2$ mà không cần viết rõ từng nghiệm phức. Nhớ rằng với nghiệm liên hợp, $|x_1|=|x_2|=\\sqrt{c/a}$ khi $\\Delta<0$.\n\n## Ghi nhớ cấu trúc nghiệm\nVới phương trình hệ số thực và $\\Delta<0$, hai nghiệm luôn **liên hợp** với nhau, có cùng môđun $\\sqrt{c/a}$ và tổng bằng $-b/a$ (một số thực). Nhờ đó nhiều bài chỉ cần dùng định lí Viète mà không phải viết rõ từng nghiệm phức — vừa nhanh vừa tránh sai dấu ở phần ảo, nhất là với các biểu thức đối xứng của hai nghiệm.",
+      "formulas": [
+        "math.thpt.so-phuc.phuong-trinh-bac-hai-he-so-thuc",
+        "math.thpt.so-phuc.can-bac-hai-so-thuc-am",
+        "math.thpt.so-phuc.viete-nghiem-phuc",
+        "math.thpt.so-phuc.so-phuc-lien-hop",
+        "math.thpt.so-phuc.modun-so-phuc",
+        "math.thpt.so-phuc.tich-z-va-lien-hop",
+        "math.thpt.so-phuc.bieu-dien-hinh-hoc"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Giải phương trình $z^2-2z+5=0$ trên tập số phức.",
+          "solution": "$\\Delta'=(-1)^2-5=-4<0$, nên $\\sqrt{\\Delta'}=\\sqrt{-4}=2i$. Nghiệm $z=\\dfrac{1\\pm2i}{1}=1\\pm2i$. Hai nghiệm là liên hợp của nhau.",
+          "answer": "$z=1\\pm2i$."
+        },
+        {
+          "problem": "Gọi $z_1,z_2$ là nghiệm của $z^2+2z+10=0$. Tính $|z_1|^2+|z_2|^2$.",
+          "solution": "$\\Delta'=1-10=-9<0$ nên nghiệm $z=\\dfrac{-2\\pm\\sqrt{-36}}{2}=-1\\pm3i$, hai nghiệm liên hợp có cùng môđun $|z|=\\sqrt{1+9}=\\sqrt{10}$. Vậy $|z_1|^2+|z_2|^2=10+10=20$. (Có thể dùng Viète: tích nghiệm $=10$ nên mỗi $|z|^2=10$.)",
+          "answer": "$20$."
+        }
+      ],
+      "common_mistakes": [
+        "Với $\\Delta<0$ kết luận phương trình vô nghiệm — đúng trên $\\mathbb R$ nhưng sai trên $\\mathbb C$.",
+        "Viết $\\sqrt{-4}=-2$ thay vì $2i$; căn của số âm phải dùng đơn vị ảo.",
+        "Nhầm $|z|^2$ với $z^2$ khi tính biểu thức chứa nghiệm phức."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "so-phuc",
+        "phuong-trinh-bac-hai",
+        "viete",
+        "lop12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.xac-suat-co-dieu-kien-bayes",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Xác suất có điều kiện",
+      "order": 1,
+      "title_vi": "Xác suất có điều kiện và công thức Bayes",
+      "title_en": "Conditional probability and Bayes' theorem",
+      "objectives": [
+        "Hiểu và tính được xác suất có điều kiện",
+        "Vận dụng công thức nhân, công thức xác suất toàn phần",
+        "Áp dụng công thức Bayes để cập nhật xác suất theo dữ kiện mới"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.quy-tac-tinh-xac-suat"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Xác suất có điều kiện",
+          "term_en": "Conditional probability",
+          "definition": "P(A|B) = P(A∩B)/P(B) với P(B) > 0, là xác suất của A khi biết B đã xảy ra."
+        },
+        {
+          "term_vi": "Công thức xác suất toàn phần",
+          "term_en": "Law of total probability",
+          "definition": "Chia không gian thành các trường hợp rời nhau, P(A) bằng tổng P(A|B_i)P(B_i)."
+        },
+        {
+          "term_vi": "Công thức Bayes",
+          "term_en": "Bayes' theorem",
+          "definition": "Cập nhật xác suất nguyên nhân từ kết quả quan sát: P(B_i|A) = P(A|B_i)P(B_i)/P(A)."
+        }
+      ],
+      "content": "## Xác suất có điều kiện\nKhi biết biến cố $B$ đã xảy ra, xác suất của $A$ thay đổi:\n$$P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\quad(P(B)>0).$$\nTừ đó có **công thức nhân**: $P(A\\cap B)=P(B)\\,P(A\\mid B)$ — công cụ chính cho bài \"rút không hoàn lại\", sơ đồ cây.\n\n## Xác suất toàn phần\nNếu $B_1,\\dots,B_n$ là hệ đầy đủ (rời nhau, phủ kín) thì\n$$P(A)=\\sum_i P(B_i)\\,P(A\\mid B_i).$$\nDùng khi $A$ đến từ nhiều \"nguồn\" khác nhau (nhiều hộp, nhiều dây chuyền).\n\n## Công thức Bayes — đảo chiều điều kiện\n$$P(B_k\\mid A)=\\frac{P(B_k)\\,P(A\\mid B_k)}{\\sum_i P(B_i)\\,P(A\\mid B_i)}.$$\nBayes trả lời câu hỏi ngược: *biết kết quả $A$, khả năng nó đến từ nguồn $B_k$ là bao nhiêu?* Đây là nền của chẩn đoán, lọc thư rác và nhiều ứng dụng thực tế.\n\n## Sơ đồ cây là bạn đồng hành\nHãy vẽ **sơ đồ cây**: mỗi nhánh cấp một là một nguyên nhân $B_i$ (ghi $P(B_i)$), mỗi nhánh cấp hai là kết quả $A$ (ghi $P(A\\mid B_i)$). Nhân dọc theo một nhánh được xác suất giao; cộng các nhánh cùng dẫn tới $A$ được xác suất toàn phần; công thức Bayes chỉ là lấy một nhánh chia cho tổng tất cả các nhánh dẫn tới $A$.",
+      "formulas": [
+        "math.thpt.to-hop-xac-suat.xac-suat-co-dieu-kien",
+        "math.thpt.to-hop-xac-suat.cong-thuc-nhan-xac-suat-tong-quat",
+        "math.thpt.to-hop-xac-suat.cong-thuc-xac-suat-toan-phan",
+        "math.thpt.to-hop-xac-suat.cong-thuc-bayes",
+        "math.thpt.to-hop-xac-suat.so-do-hinh-cay"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Hộp I có $3$ bi đỏ, $2$ bi xanh; hộp II có $1$ đỏ, $4$ xanh. Chọn ngẫu nhiên một hộp rồi lấy một bi. Tính xác suất lấy được bi đỏ.",
+          "solution": "Gọi $B_1,B_2$ là biến cố chọn hộp I, II; mỗi hộp có xác suất $\\dfrac12$. $P(\\text{đỏ}\\mid B_1)=\\dfrac35$, $P(\\text{đỏ}\\mid B_2)=\\dfrac15$. Theo xác suất toàn phần: $P(\\text{đỏ})=\\dfrac12\\cdot\\dfrac35+\\dfrac12\\cdot\\dfrac15=\\dfrac3{10}+\\dfrac1{10}=\\dfrac4{10}=\\dfrac25$.",
+          "answer": "$P=\\dfrac25$."
+        },
+        {
+          "problem": "Với dữ kiện trên, biết đã lấy được bi đỏ, tính xác suất bi đó lấy từ hộp I.",
+          "solution": "Áp dụng Bayes: $P(B_1\\mid\\text{đỏ})=\\dfrac{P(B_1)P(\\text{đỏ}\\mid B_1)}{P(\\text{đỏ})}=\\dfrac{\\tfrac12\\cdot\\tfrac35}{\\tfrac25}=\\dfrac{\\tfrac{3}{10}}{\\tfrac{2}{5}}=\\dfrac{3}{10}\\cdot\\dfrac52=\\dfrac34$.",
+          "answer": "$\\dfrac34$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm $P(A\\mid B)$ với $P(B\\mid A)$ — hai đại lượng này thường khác nhau.",
+        "Quên chuẩn hóa (chia cho $P(A)$) khi dùng Bayes, cho ra 'xác suất' lớn hơn 1.",
+        "Dùng $P(A\\cap B)=P(A)P(B)$ khi hai biến cố không độc lập; phải dùng công thức nhân có điều kiện."
+      ],
+      "duration_minutes": 55,
+      "difficulty": "nang-cao",
+      "tags": [
+        "xac-suat",
+        "co-dieu-kien",
+        "bayes",
+        "lop12"
+      ]
+    },
+    {
+      "id": "lesson.math.vn-thpt-math-daiso-giaitich.thong-ke-do-phan-tan",
+      "subject": "math",
+      "level": "thpt",
+      "grades": [
+        12
+      ],
+      "curriculum": [
+        "vn-gdpt-2018"
+      ],
+      "unit": "Chương: Thống kê - đo độ phân tán mẫu ghép nhóm",
+      "order": 1,
+      "title_vi": "Các số đo độ phân tán của mẫu số liệu ghép nhóm",
+      "title_en": "Measures of dispersion for grouped data",
+      "objectives": [
+        "Tính được khoảng biến thiên và khoảng tứ phân vị của mẫu ghép nhóm",
+        "Tính được phương sai và độ lệch chuẩn của mẫu ghép nhóm",
+        "Sử dụng khoảng tứ phân vị để phát hiện giá trị ngoại lệ"
+      ],
+      "prerequisites": [
+        "lesson.math.vn-thpt-math-daiso-giaitich.thong-ke-ghep-nhom-xu-the"
+      ],
+      "key_concepts": [
+        {
+          "term_vi": "Khoảng biến thiên",
+          "term_en": "Range",
+          "definition": "Hiệu giữa đầu mút phải của nhóm cuối và đầu mút trái của nhóm đầu."
+        },
+        {
+          "term_vi": "Khoảng tứ phân vị",
+          "term_en": "Interquartile range",
+          "definition": "IQR = Q3 - Q1, đo độ phân tán của nửa giữa dữ liệu, ít nhạy với giá trị bất thường."
+        },
+        {
+          "term_vi": "Phương sai và độ lệch chuẩn",
+          "term_en": "Variance and standard deviation",
+          "definition": "Phương sai là trung bình bình phương độ lệch so với trung bình; độ lệch chuẩn là căn của phương sai."
+        }
+      ],
+      "content": "## Vì sao cần đo độ phân tán?\nHai mẫu có cùng số trung bình vẫn khác nhau về mức độ **dàn trải**. Các số đo độ phân tán trả lời câu hỏi đó.\n\n## Khoảng biến thiên và khoảng tứ phân vị\n- **Khoảng biến thiên** $R$ = (đầu mút phải nhóm cuối) − (đầu mút trái nhóm đầu), rất nhạy với giá trị lớn/nhỏ bất thường.\n- **Khoảng tứ phân vị** $\\Delta_Q=Q_3-Q_1$, đo độ trải của nửa giữa, **bền** với ngoại lệ. Quy tắc phát hiện ngoại lệ: giá trị ngoài $[Q_1-1{,}5\\Delta_Q;\\ Q_3+1{,}5\\Delta_Q]$.\n\n## Phương sai và độ lệch chuẩn\nVới mẫu ghép nhóm ($x_i$ trung điểm, $f_i$ tần số, $n=\\sum f_i$):\n$$s^2=\\frac{1}{n}\\sum f_i(x_i-\\bar x)^2=\\frac{1}{n}\\sum f_i x_i^2-\\bar x^2,\\qquad s=\\sqrt{s^2}.$$\nCông thức thứ hai (dùng $\\sum f_ix_i^2$) tính nhanh hơn. Độ lệch chuẩn $s$ cùng đơn vị với dữ liệu nên dễ diễn giải; phương sai bình phương đơn vị.",
+      "formulas": [
+        "math.thpt.thong-ke.khoang-bien-thien",
+        "math.thpt.thong-ke.khoang-tu-phan-vi",
+        "math.thpt.thong-ke.phuong-sai-ghep-nhom",
+        "math.thpt.thong-ke.do-lech-chuan",
+        "math.thpt.thong-ke.gia-tri-ngoai-le"
+      ],
+      "worked_examples": [
+        {
+          "problem": "Mẫu ghép nhóm: $[0;10)$ tần số $2$; $[10;20)$ tần số $5$; $[20;30)$ tần số $3$. Tính phương sai và độ lệch chuẩn.",
+          "solution": "Trung điểm $5,15,25$; $n=10$. Trung bình $\\bar x=\\dfrac{2\\cdot5+5\\cdot15+3\\cdot25}{10}=\\dfrac{10+75+75}{10}=16$. $\\sum f_ix_i^2=2\\cdot25+5\\cdot225+3\\cdot625=50+1125+1875=3050$. Phương sai $s^2=\\dfrac{3050}{10}-16^2=305-256=49$. Độ lệch chuẩn $s=\\sqrt{49}=7$.",
+          "answer": "$s^2=49$, $s=7$."
+        },
+        {
+          "problem": "Một mẫu có $Q_1=12$, $Q_3=20$. Tính khoảng tứ phân vị và ngưỡng phát hiện giá trị ngoại lệ.",
+          "solution": "Khoảng tứ phân vị $\\Delta_Q=Q_3-Q_1=20-12=8$. Ngưỡng ngoại lệ: dưới $Q_1-1{,}5\\Delta_Q=12-12=0$ và trên $Q_3+1{,}5\\Delta_Q=20+12=32$. Giá trị ngoài $[0;32]$ được coi là ngoại lệ.",
+          "answer": "$\\Delta_Q=8$; ngoại lệ nếu $<0$ hoặc $>32$."
+        }
+      ],
+      "common_mistakes": [
+        "Nhầm phương sai mẫu ghép nhóm với công thức không nhân tần số $f_i$.",
+        "Quên trừ $\\bar x^2$ khi dùng công thức nhanh $s^2=\\dfrac1n\\sum f_ix_i^2-\\bar x^2$.",
+        "Lấy căn sai đơn vị: độ lệch chuẩn cùng đơn vị dữ liệu, phương sai thì bình phương đơn vị."
+      ],
+      "duration_minutes": 50,
+      "difficulty": "trung-binh",
+      "tags": [
+        "thong-ke",
+        "phuong-sai",
+        "do-lech-chuan",
+        "tu-phan-vi",
+        "lop12"
+      ]
+    }
+  ]
+}
