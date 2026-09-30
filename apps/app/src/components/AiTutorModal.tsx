@@ -24,6 +24,7 @@ import {
   ThumbsUp,
   ThumbsDown,
   Printer,
+  Palette,
 } from 'lucide-react';
 import { MathView } from './MathView';
 import { api } from '../services/api';
@@ -33,8 +34,11 @@ interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
   image?: string;
+  svg?: string;
+  image_url?: string;
   thinking?: string;
   model?: string;
+
   pedagogical_mode?: string;
   grounding_formulas?: Array<{
     id: string;
@@ -68,20 +72,22 @@ interface AiTutorModalProps {
 }
 
 const QUICK_PROMPTS = [
+  '🎨 Vẽ hình minh hoạ tam giác vuông ABC có đường cao AH',
+  '📈 Vẽ đồ thị hàm số parabol y = x^2 - 4x + 3 có đỉnh và trục đối xứng',
   '⚡ Giải thích định luật Ohm và cho ví dụ tính toán $I = U/R$',
   '📐 Chứng minh công thức đạo hàm hàm hợp $(f(u))\' = f\'(u) \\cdot u\'$',
   '🧪 Hướng dẫn cân bằng phản ứng oxi hoá - khử bằng phương pháp thăng bằng electron',
-  '🧬 Bản chất cơ chế phiên mã và dịch mã từ ADN sang chuỗi Polypeptide',
-  '🎯 Chiến lược săn điểm 5 kỳ thi AP Calculus BC & IB Math HL',
 ];
 
 const STEM_QUICK_ACTIONS = [
+  { label: '🎨 Vẽ Tam Giác', prompt: 'Vẽ hình minh hoạ tam giác vuông ABC vuông tại A có đường cao AH' },
+  { label: '📈 Vẽ Parabol', prompt: 'Vẽ đồ thị hàm số parabol y = x^2 - 4x + 3 có trục đối xứng và đỉnh' },
+  { label: '🌀 Tỉ Lệ Vàng', prompt: 'Vẽ hình xoắn ốc tỉ lệ vàng hình học Fibonacci' },
   { label: '📐 Giải PT', prompt: 'Giải phương trình 2x^2 - 5x + 2 = 0' },
   { label: '📈 Đạo hàm', prompt: 'Tính đạo hàm của x^3 * sin(x)' },
   { label: '🧪 Cân bằng Hoá', prompt: 'Cân bằng phản ứng: Fe + HNO3 -> Fe(NO3)3 + NO + H2O' },
-  { label: '🧬 Gen DNA', prompt: 'Một gen dài 5100 Å có tỉ lệ A/G = 2/3. Tính số nuclêôtit mỗi loại.' },
-  { label: '⚛️ Con lắc Lò xo', prompt: 'Con lắc lò xo k = 100 N/m, m = 1 kg. Kéo vật dời VTCB 4 cm rồi thả nhẹ. Tính cơ năng.' },
 ];
+
 
 export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQuestion }) => {
   const [model, setModel] = useState<'llama-3.3' | 'deepseek-r1'>('llama-3.3');
@@ -403,9 +409,33 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             )
           );
         }
+
+        // Tự động vẽ hình nếu câu hỏi có ý định vẽ sơ đồ/hình học
+        const isDrawingIntent = /vẽ|hình vẽ|đồ thị|parabol|tam giác|hình học|minh hoạ|sơ đồ|hình tròn|lăng trụ|vectơ|vector|draw|diagram|illustration/i.test(q);
+        if (isDrawingIntent) {
+          try {
+            const drawData = await api.aiDraw(q, 'both', 'math');
+            if (drawData && (drawData.svg || drawData.image_url)) {
+              setMessages((prev) =>
+                prev.map((m) =>
+                  m.id === botMsgId
+                    ? {
+                        ...m,
+                        svg: drawData.svg || undefined,
+                        image_url: drawData.image_url || undefined,
+                      }
+                    : m
+                )
+              );
+            }
+          } catch (drawErr) {
+            console.warn('Lỗi vẽ hình AI kèm theo:', drawErr);
+          }
+        }
       }
     } catch (err: any) {
       const errMsgId = 'err-' + Date.now();
+
       setMessages((prev) => [
         ...prev,
         {
@@ -879,8 +909,74 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                 </div>
               )}
 
+              {/* Sơ đồ hình học Vector SVG */}
+              {msg.svg && (
+                <div
+                  style={{
+                    maxWidth: '85%',
+                    marginBottom: '10px',
+                    padding: '12px',
+                    background: '#f8fafc',
+                    borderRadius: '12px',
+                    border: '1px solid #cbd5e1',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px', borderBottom: '1px solid #e2e8f0', paddingBottom: '6px' }}>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#475569', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Sparkles size={14} color="#7c3aed" /> Sơ đồ Hình học Vector SVG
+                    </span>
+                    <span style={{ fontSize: '0.72rem', color: '#64748b' }}>Sắc nét &bull; Chuẩn tọa độ</span>
+                  </div>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: msg.svg }}
+                    style={{ width: '100%', maxHeight: '380px', display: 'flex', justifyContent: 'center' }}
+                  />
+                </div>
+              )}
+
+              {/* Minh họa 3D / Nghệ thuật (FLUX.1 AI) */}
+              {msg.image_url && (
+                <div
+                  style={{
+                    maxWidth: '85%',
+                    marginBottom: '10px',
+                    padding: '10px',
+                    background: '#ffffff',
+                    borderRadius: '12px',
+                    border: '1px solid #e2e8f0',
+                    boxShadow: 'var(--shadow-md)',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#0284c7', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Palette size={14} color="#0284c7" /> Minh họa Toán học 3D (Cloudflare FLUX.1)
+                    </span>
+                    <a
+                      href={msg.image_url}
+                      download="aistemx-math-illustration.jpg"
+                      style={{ fontSize: '0.74rem', color: '#0284c7', textDecoration: 'none', fontWeight: 600 }}
+                    >
+                      Tải ảnh gốc (1024x1024)
+                    </a>
+                  </div>
+                  <img
+                    src={msg.image_url}
+                    alt="Minh họa toán học FLUX.1"
+                    style={{
+                      width: '100%',
+                      maxHeight: '380px',
+                      objectFit: 'contain',
+                      borderRadius: '8px',
+                    }}
+                  />
+                </div>
+              )}
+
               {/* Bong bóng tin nhắn */}
               <div
+
                 style={{
                   maxWidth: '85%',
                   padding: '14px 18px',
@@ -1318,6 +1414,34 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             >
               <Camera size={18} />
             </button>
+
+            {/* Nút Vẽ hình minh hoạ Toán học */}
+            <button
+              type="button"
+              onClick={() => {
+                const samplePrompt = 'Vẽ hình minh hoạ tam giác vuông ABC có đường cao AH';
+                setInput(samplePrompt);
+                textareaRef.current?.focus();
+              }}
+              style={{
+                width: '36px',
+                height: '36px',
+                borderRadius: '50%',
+                border: '1px solid #c084fc',
+                background: '#faf5ff',
+                color: '#7e22ce',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                flexShrink: 0,
+                transition: 'all var(--transition-fast)',
+              }}
+              title="Vẽ sơ đồ hình học & minh hoạ toán học bằng AI (FLUX.1 & SVG)"
+            >
+              <Palette size={17} />
+            </button>
+
 
             <textarea
               ref={textareaRef}

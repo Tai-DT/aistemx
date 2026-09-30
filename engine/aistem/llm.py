@@ -196,15 +196,20 @@ def text(
 # --------------------------------------------------------------------------
 def _get_cloudflare_auth(force_refresh: bool = False) -> tuple[str, str]:
     """Lấy Account ID và Bearer Token cho Cloudflare Workers AI với cơ chế tự động gia hạn token."""
-    acct = os.environ.get("CF_ACCOUNT_ID")
+    acct = os.environ.get("CF_ACCOUNT_ID") or "538f170a4371858f97066cf05483b585"
     token = os.environ.get("CF_API_TOKEN")
 
-    if not acct or not token:
-        candidates = [
-            Path.home() / "Library/Preferences/.wrangler/config/default.toml",
-            Path.home() / ".wrangler/config/default.toml",
-        ]
+    if force_refresh:
+        token = None
+        os.environ.pop("CF_API_TOKEN", None)
 
+    candidates = [
+        Path.home() / "Library/Preferences/.wrangler/config/default.toml",
+        Path.home() / ".wrangler/config/default.toml",
+    ]
+
+    # Nếu token chưa có hoặc force_refresh hoặc là OAuth token có nguy cơ hết hạn
+    if not token or force_refresh:
         if force_refresh:
             try:
                 import subprocess
@@ -221,12 +226,10 @@ def _get_cloudflare_auth(force_refresh: bool = False) -> tuple[str, str]:
                     with open(cfg, "rb") as f:
                         wdata = tomllib.load(f)
                     
-                    # Kiểm tra thời hạn của token nếu có
                     exp_str = wdata.get("expiration_time")
                     is_expired = False
                     if exp_str:
                         try:
-                            # 2026-09-15T07:33:02.667Z
                             clean_exp = exp_str.replace("Z", "+00:00")
                             exp_dt = datetime.fromisoformat(clean_exp)
                             if datetime.now(timezone.utc) >= exp_dt:
@@ -234,7 +237,7 @@ def _get_cloudflare_auth(force_refresh: bool = False) -> tuple[str, str]:
                         except Exception:
                             pass
 
-                    if is_expired and not force_refresh:
+                    if is_expired:
                         try:
                             import subprocess
                             subprocess.run(["npx", "wrangler", "whoami"], capture_output=True, timeout=20)
@@ -243,9 +246,11 @@ def _get_cloudflare_auth(force_refresh: bool = False) -> tuple[str, str]:
                         except Exception:
                             pass
 
-                    token = token or wdata.get("oauth_token")
-                    acct = acct or "538f170a4371858f97066cf05483b585"
+                    token = wdata.get("oauth_token") or token
+                    acct = wdata.get("account_id") or acct
                     if token and acct:
+                        os.environ["CF_API_TOKEN"] = token
+                        os.environ["CF_ACCOUNT_ID"] = acct
                         break
                 except Exception:
                     pass
@@ -629,4 +634,85 @@ def detect_math_intent(text: str) -> dict[str, Any] | None:
             pass
 
     return None
+
+
+def cloudflare_generate_image(prompt: str, steps: int = 4) -> str:
+    """Tạo ảnh minh họa bằng mô hình FLUX.1 Schnell trên Cloudflare Workers AI.
+    
+    Trả về chuỗi data:image/jpeg;base64,...
+    """
+    import json
+    import urllib.request
+
+    acct, token = _get_cloudflare_auth()
+    url = f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/@cf/black-forest-labs/flux-1-schnell"
+
+    # Tối ưu prompt sang phong cách minh họa toán học/khoa học nếu chưa có
+    enhanced_prompt = prompt
+    if not any(k in prompt.lower() for k in ["illustration", "diagram", "blueprint", "render", "drawing"]):
+        enhanced_prompt = f"Mathematical scientific illustration, clean modern educational diagram, textbook style: {prompt}"
+
+    body = json.dumps({
+        "prompt": enhanced_prompt,
+        "steps": steps,
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        url,
+        data=body,
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=40) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            if "result" in data and "image" in data["result"]:
+                b64 = data["result"]["image"]
+                return f"data:image/jpeg;base64,{b64}"
+            raise RuntimeError("Cloudflare FLUX không trả về ảnh")
+    except Exception as exc:
+        if "401" in str(exc):
+            acct, token = _get_cloudflare_auth(force_refresh=True)
+            req = urllib.request.Request(
+                url,
+                data=body,
+                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            )
+            with urllib.request.urlopen(req, timeout=40) as resp2:
+                data = json.loads(resp2.read().decode("utf-8"))
+                if "result" in data and "image" in data["result"]:
+                    b64 = data["result"]["image"]
+                    return f"data:image/jpeg;base64,{b64}"
+        raise RuntimeError(f"Lỗi tạo ảnh FLUX trên Cloudflare: {exc}") from exc
+
+
+def cloudflare_generate_math_svg(prompt: str, subject: str = "math") -> str:
+    """Dùng Llama 3.3 / DeepSeek R1 trên Cloudflare Workers AI để thiết kế sơ đồ SVG toán học chuẩn xác."""
+    sys_prompt = (
+        "Bạn là chuyên gia thiết kế hình học và sơ đồ khoa học bằng mã SVG thuần (Scalable Vector Graphics).\n"
+        "Nhiệm vụ: Vẽ hình minh hoạ trực quan, chính xác theo đúng yêu cầu đề bài toán học/vật lý.\n"
+        "Quy tắc bắt buộc:\n"
+        "1. CHỈ trả về DUY NHẤT một khối mã <svg>...</svg> hoàn chỉnh, KHÔNG viết thêm bất kỳ lời dẫn nhập nào bên ngoài.\n"
+        "2. Đặt viewBox='0 0 600 450' và xmlns='http://www.w3.org/2000/svg'.\n"
+        "3. Sử dụng phối màu sư phạm hiện đại: Nền trong suốt hoặc sáng nhẹ (#f8fafc), đường nét chính (#2563eb, #7c3aed, #059669), độ dày stroke-width='2' hoặc '2.5'.\n"
+        "4. Gắn nhãn các đỉnh, toạ độ, số đo góc, công thức bằng thẻ <text> có font-family='sans-serif', font-size='14' hoặc '16', font-weight='600'.\n"
+        "5. Nếu là tam giác vuông thì phải có ký hiệu góc vuông. Nếu là đồ thị thì có trục toạ độ Oxy kèm mũi tên và số đánh dấu.\n"
+    )
+
+    res = cloudflare_chat(
+        prompt=f"Hãy vẽ sơ đồ hình học SVG cho yêu cầu sau:\n{prompt}",
+        system=sys_prompt,
+        model="llama-3.3",
+        temperature=0.2,
+        max_tokens=2500,
+    )
+
+    raw = res.get("reply", "").strip()
+    # Trích xuất đoạn mã SVG
+    if "<svg" in raw and "</svg>" in raw:
+        start = raw.find("<svg")
+        end = raw.find("</svg>") + len("</svg>")
+        return raw[start:end].strip()
+    return raw
+
 

@@ -453,7 +453,28 @@ export const api = {
     }
     return await res.json();
   },
+
+  // Vẽ minh họa toán học & khoa học bằng AI Cloudflare (FLUX.1 & SVG Vector)
+  aiDraw: async (prompt: string, mode: 'svg' | 'flux' | 'both' = 'both', subject: string = 'math'): Promise<{
+    success: boolean;
+    prompt: string;
+    svg?: string | null;
+    image_url?: string | null;
+    mode: string;
+  }> => {
+    const res = await fetch(`${API_BASE}/ai/draw`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt, mode, subject }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ detail: 'Không thể tạo hình ảnh minh họa' }));
+      throw new Error(err.detail || 'Lỗi khi vẽ hình AI');
+    }
+    return await res.json();
+  },
 };
+
 
 export interface AIGeneratedProblemResult {
   success: boolean;

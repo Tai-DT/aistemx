@@ -1369,6 +1369,13 @@ class AISaveFlashcardRequest(BaseModel):
     latex: Optional[str] = None
 
 
+class AIDrawRequest(BaseModel):
+    prompt: str
+    mode: str = "both"  # "svg" | "flux" | "both"
+    subject: Optional[str] = "math"
+
+
+
 @app.post("/api/ai/chat")
 def ai_chat_endpoint(req: AIChatRequest):
     """Trợ lý Gia sư AI AISTEM X toàn năng: Tích hợp RAG và 3 chế độ sư phạm học đường."""
@@ -1749,6 +1756,41 @@ def ai_cas_eval_endpoint(req: AICASRequest):
     """Kiểm định toán học biểu tượng và triệt tiêu ảo giác bằng SymPy CAS Engine."""
     res = llm.cas_tool_eval(req.expression, operation=req.operation, variable=req.variable)
     return res
+
+
+@app.post("/api/ai/draw")
+def ai_draw_endpoint(req: AIDrawRequest):
+    """Vẽ minh họa toán học/khoa học bằng AI Cloudflare: Hỗ trợ cả FLUX.1 Schnell và SVG Vector."""
+    prompt = req.prompt.strip()
+    if not prompt:
+        raise HTTPException(status_code=400, detail="Mô tả hình vẽ không được để trống")
+
+    svg_content = None
+    image_url = None
+
+    if req.mode in ("svg", "both"):
+        try:
+            svg_content = llm.cloudflare_generate_math_svg(prompt, subject=req.subject or "math")
+        except Exception:
+            svg_content = None
+
+    if req.mode in ("flux", "both"):
+        try:
+            image_url = llm.cloudflare_generate_image(prompt)
+        except Exception:
+            image_url = None
+
+    if not svg_content and not image_url:
+        raise HTTPException(status_code=500, detail="Không thể tạo hình ảnh minh họa lúc này. Vui lòng thử lại sau giây lát.")
+
+    return {
+        "success": True,
+        "prompt": prompt,
+        "svg": svg_content,
+        "image_url": image_url,
+        "mode": req.mode,
+    }
+
 
 
 @app.post("/api/ai/generate-problem")
