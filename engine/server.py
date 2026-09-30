@@ -1515,13 +1515,15 @@ def ai_chat_endpoint(req: AIChatRequest):
             except Exception:
                 drawn_svg = None
 
-        # Chỉ sinh ảnh FLUX khi người dùng thực sự muốn tranh vẽ/ảnh 3D nghệ thuật
-        wants_art = any(k in q.lower() for k in ["nghệ thuật", "nghe thuat", "chân thực", "chan thuc", "ảnh 3d", "anh 3d", "art", "realistic", "photo"])
-        if wants_art or (req.model == "flux-drawing" and not drawn_svg):
-            try:
-                drawn_image = llm.cloudflare_generate_image(q)
-            except Exception:
-                drawn_image = None
+        try:
+            drawn_image = llm.cloudflare_generate_image(q)
+        except Exception:
+            drawn_image = None
+
+        if not drawn_image and drawn_svg:
+            import base64
+            b64_svg = base64.b64encode(drawn_svg.encode("utf-8")).decode("utf-8")
+            drawn_image = f"data:image/svg+xml;base64,{b64_svg}"
 
     # 5. Gửi sang Cloudflare Workers AI
     try:
@@ -1688,12 +1690,15 @@ def ai_chat_stream_endpoint(req: AIChatRequest):
             except Exception:
                 drawn_svg = None
 
-        wants_art = any(k in q.lower() for k in ["nghệ thuật", "nghe thuat", "chân thực", "chan thuc", "ảnh 3d", "anh 3d", "art", "realistic", "photo"])
-        if wants_art or (req.model == "flux-drawing" and not drawn_svg):
-            try:
-                drawn_image = llm.cloudflare_generate_image(q)
-            except Exception:
-                drawn_image = None
+        try:
+            drawn_image = llm.cloudflare_generate_image(q)
+        except Exception:
+            drawn_image = None
+
+        if not drawn_image and drawn_svg:
+            import base64
+            b64_svg = base64.b64encode(drawn_svg.encode("utf-8")).decode("utf-8")
+            drawn_image = f"data:image/svg+xml;base64,{b64_svg}"
 
     def event_generator():
         initial_meta = {
@@ -1847,12 +1852,16 @@ def ai_draw_endpoint(req: AIDrawRequest):
             except Exception:
                 svg_content = None
 
-    wants_art = req.mode == "flux" or any(k in prompt.lower() for k in ["nghệ thuật", "nghe thuat", "chân thực", "chan thuc", "ảnh 3d", "anh 3d", "art", "realistic", "photo"])
-    if req.mode in ("flux", "both") and (wants_art or not svg_content):
+    if req.mode in ("flux", "both"):
         try:
             image_url = llm.cloudflare_generate_image(prompt)
         except Exception:
             image_url = None
+
+    if not image_url and svg_content:
+        import base64
+        b64_svg = base64.b64encode(svg_content.encode("utf-8")).decode("utf-8")
+        image_url = f"data:image/svg+xml;base64,{b64_svg}"
 
     if not svg_content and not image_url:
         raise HTTPException(status_code=500, detail="Không thể tạo hình ảnh minh họa lúc này. Vui lòng thử lại sau giây lát.")

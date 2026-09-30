@@ -297,6 +297,12 @@ def generate_accurate_math_svg(prompt: str, subject: str = "math") -> tuple[str,
         try:
             svg_content = render_illus(gen_name, params)
             if svg_content and "<svg" in svg_content:
+                if "width=" not in svg_content[:120]:
+                    svg_content = svg_content.replace(
+                        "<svg ",
+                        '<svg width="100%" height="auto" style="width:100%;max-width:520px;height:auto;display:block;margin:0 auto;" ',
+                        1,
+                    )
                 return svg_content, f"AISTEM Accurate Engine ({gen_name})"
         except Exception:
             pass
@@ -304,4 +310,10 @@ def generate_accurate_math_svg(prompt: str, subject: str = "math") -> tuple[str,
     # 2. Fallback: Nếu không khớp generator cục bộ, dùng LLM sinh SVG có kiểm soát
     from . import llm
     fallback_svg = llm.cloudflare_generate_math_svg(prompt, subject=subject)
+    if fallback_svg and "<svg" in fallback_svg and "width=" not in fallback_svg[:120]:
+        fallback_svg = fallback_svg.replace(
+            "<svg ",
+            '<svg width="100%" height="auto" style="width:100%;max-width:520px;height:auto;display:block;margin:0 auto;" ',
+            1,
+        )
     return fallback_svg, "AI Custom SVG (Llama 3.3)"

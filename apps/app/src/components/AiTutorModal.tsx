@@ -951,9 +951,38 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                     </span>
                   </div>
                   <div
-                    dangerouslySetInnerHTML={{ __html: msg.svg }}
-                    style={{ width: '100%', maxHeight: '380px', display: 'flex', justifyContent: 'center' }}
-                  />
+                    style={{
+                      width: '100%',
+                      background: '#ffffff',
+                      borderRadius: '8px',
+                      padding: '8px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <div
+                      dangerouslySetInnerHTML={{ __html: msg.svg }}
+                      style={{
+                        width: '100%',
+                        maxWidth: '520px',
+                        minHeight: '220px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                      }}
+                    />
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', marginTop: '6px', borderTop: '1px dashed #e2e8f0', paddingTop: '6px' }}>
+                      <a
+                        href={`data:image/svg+xml;utf8,${encodeURIComponent(msg.svg)}`}
+                        download="aistemx-geometry.svg"
+                        style={{ fontSize: '0.72rem', color: '#7c3aed', textDecoration: 'none', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}
+                      >
+                        Tải hình vector (SVG)
+                      </a>
+                    </div>
+                  </div>
                 </div>
               )}
 
@@ -972,7 +1001,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                 >
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#0284c7', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <Palette size={14} color="#0284c7" /> Minh họa Toán học 3D (Cloudflare FLUX.1)
+                      <Palette size={14} color="#0284c7" /> Minh họa Hình ảnh AI (Cloudflare FLUX.1)
                     </span>
                     <a
                       href={msg.image_url}
@@ -990,6 +1019,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                       maxHeight: '380px',
                       objectFit: 'contain',
                       borderRadius: '8px',
+                      display: 'block',
                     }}
                   />
                 </div>
