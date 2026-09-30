@@ -90,7 +90,7 @@ const STEM_QUICK_ACTIONS = [
 
 
 export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQuestion }) => {
-  const [model, setModel] = useState<'llama-3.3' | 'deepseek-r1'>('llama-3.3');
+  const [model, setModel] = useState<'llama-3.3' | 'deepseek-r1' | 'flux-drawing'>('llama-3.3');
   const [pedagogicalMode, setPedagogicalMode] = useState<'socratic' | 'deep_dive' | 'scholarship'>('socratic');
   const [input, setInput] = useState('');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -307,13 +307,23 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             content: m.content,
           }));
 
+        const isDrawingIntent =
+          model === 'flux-drawing' ||
+          /vẽ|ve|đồ thị|do thi|hình vẽ|hinh ve|sơ đồ|so do|tam giác|tam giac|parabol|parabola|hình học|hinh hoc|minh hoạ|minh hoa|lăng trụ|hình chóp|đường tròn|vectơ|vector|draw|diagram|illustration/i.test(q);
+
+        let activeModel = model;
+        if (isDrawingIntent && model !== 'flux-drawing') {
+          activeModel = 'flux-drawing';
+          setModel('flux-drawing');
+        }
+
         const botMsgId = 'bot-' + Date.now();
         const placeholderMsg: ChatMessage = {
           id: botMsgId,
           role: 'assistant',
           content: '',
           thinking: '',
-          model: model,
+          model: activeModel,
           pedagogical_mode: pedagogicalMode,
           grounding_formulas: [],
           grounding_lessons: [],
@@ -328,7 +338,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             body: JSON.stringify({
               message: q,
               history: historyPayload,
-              model: model,
+              model: activeModel,
               pedagogical_mode: pedagogicalMode,
             }),
           });
@@ -366,6 +376,8 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                             grounding_formulas: item.grounding_formulas || [],
                             grounding_lessons: item.grounding_lessons || [],
                             model: item.model || m.model,
+                            svg: item.svg || m.svg,
+                            image_url: item.image_url || m.image_url,
                           }
                         : m
                     )
@@ -389,7 +401,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             body: JSON.stringify({
               message: q,
               history: historyPayload,
-              model: model,
+              model: activeModel,
               pedagogical_mode: pedagogicalMode,
             }),
           });
@@ -404,33 +416,13 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                     cas_verification: fallbackData.cas_verification || undefined,
                     grounding_formulas: fallbackData.grounding_formulas || [],
                     grounding_lessons: fallbackData.grounding_lessons || [],
+                    model: fallbackData.model || m.model,
+                    svg: fallbackData.svg || m.svg,
+                    image_url: fallbackData.image_url || m.image_url,
                   }
                 : m
             )
           );
-        }
-
-        // Tự động vẽ hình nếu câu hỏi có ý định vẽ sơ đồ/hình học
-        const isDrawingIntent = /vẽ|hình vẽ|đồ thị|parabol|tam giác|hình học|minh hoạ|sơ đồ|hình tròn|lăng trụ|vectơ|vector|draw|diagram|illustration/i.test(q);
-        if (isDrawingIntent) {
-          try {
-            const drawData = await api.aiDraw(q, 'both', 'math');
-            if (drawData && (drawData.svg || drawData.image_url)) {
-              setMessages((prev) =>
-                prev.map((m) =>
-                  m.id === botMsgId
-                    ? {
-                        ...m,
-                        svg: drawData.svg || undefined,
-                        image_url: drawData.image_url || undefined,
-                      }
-                    : m
-                )
-              );
-            }
-          } catch (drawErr) {
-            console.warn('Lỗi vẽ hình AI kèm theo:', drawErr);
-          }
         }
       }
     } catch (err: any) {
@@ -599,6 +591,30 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
               >
                 <Brain size={13} />
                 <span>DeepSeek R1 (Tư duy)</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setModel('flux-drawing')}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '5px 10px',
+                  fontSize: '0.78rem',
+                  fontWeight: 600,
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  background: model === 'flux-drawing' ? '#ffffff' : 'transparent',
+                  color: model === 'flux-drawing' ? '#7e22ce' : 'var(--text-secondary)',
+                  boxShadow: model === 'flux-drawing' ? 'var(--shadow-sm)' : 'none',
+                  transition: 'all var(--transition-fast)',
+                }}
+                title="FLUX.1 & SVG: Tự động vẽ hình học, đồ thị và minh họa khoa học 3D"
+              >
+                <Palette size={13} color={model === 'flux-drawing' ? '#7e22ce' : 'currentColor'} />
+                <span>FLUX.1 (Vẽ Hình)</span>
               </button>
             </div>
 
@@ -808,7 +824,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                           borderRadius: '4px',
                         }}
                       >
-                        {msg.model.includes('deepseek') ? 'DeepSeek R1' : 'Llama 3.3'}
+                        {msg.model.includes('deepseek') ? 'DeepSeek R1' : msg.model.includes('flux') ? '🎨 FLUX.1 & SVG' : 'Llama 3.3'}
                       </span>
                     )}
                   </>
@@ -1506,7 +1522,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             }}
           >
             <span>Hỗ trợ KaTeX ($...$ và $$...$$) cho mọi công thức Toán · Lí · Hoá</span>
-            <span>Mô hình: Cloudflare Workers AI ({model === 'deepseek-r1' ? 'DeepSeek R1' : 'Llama 3.3 70B'})</span>
+            <span>Mô hình: Cloudflare Workers AI ({model === 'deepseek-r1' ? 'DeepSeek R1' : model === 'flux-drawing' ? 'FLUX.1 Schnell & SVG' : 'Llama 3.3 70B'})</span>
           </div>
         </footer>
       </div>

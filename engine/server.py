@@ -1494,24 +1494,46 @@ def ai_chat_endpoint(req: AIChatRequest):
         f"{rag_context}\n"
     )
 
-    # 4. Gửi sang Cloudflare Workers AI
+    # 4. Tự động kích hoạt mô hình vẽ hình (FLUX.1 + SVG Vector) nếu có ý định vẽ
+    is_draw = (req.model == "flux-drawing") or any(k in q.lower() for k in [
+        "vẽ", "ve", "đồ thị", "do thi", "hình vẽ", "hinh ve", "sơ đồ", "so do", 
+        "tam giác", "tam giac", "parabol", "parabola", "hình học", "hinh hoc", 
+        "minh hoạ", "minh hoa", "lăng trụ", "hình chóp", "đường tròn", "vectơ", "vector",
+        "draw", "sketch", "plot", "diagram", "illustration"
+    ])
+    drawn_svg = None
+    drawn_image = None
+    if is_draw:
+        try:
+            drawn_svg = llm.cloudflare_generate_math_svg(q, subject=req.subject or "math")
+        except Exception:
+            drawn_svg = None
+        try:
+            drawn_image = llm.cloudflare_generate_image(q)
+        except Exception:
+            drawn_image = None
+
+    # 5. Gửi sang Cloudflare Workers AI
     try:
         history_dicts = [{"role": h.role, "content": h.content} for h in req.history[-6:]]
+        model_to_use = "llama-3.3" if req.model == "flux-drawing" else req.model
         res = llm.cloudflare_chat(
             prompt=q,
             system=system_prompt,
-            model=req.model,
+            model=model_to_use,
             history=history_dicts,
             max_tokens=2048,
         )
         return {
             "reply": res.get("reply", ""),
             "thinking": res.get("thinking", ""),
-            "model": res.get("model", req.model),
+            "model": "flux-drawing" if is_draw else res.get("model", req.model),
             "pedagogical_mode": mode,
             "grounding_formulas": grounding_formulas,
             "grounding_lessons": grounding_lessons,
             "cas_verification": cas_verification,
+            "svg": drawn_svg,
+            "image_url": drawn_image,
             "success": True,
         }
     except Exception as exc:
@@ -1519,6 +1541,7 @@ def ai_chat_endpoint(req: AIChatRequest):
             status_code=500,
             detail=f"Lỗi khi xử lý qua Gia sư AI: {str(exc)}",
         )
+
 
 
 @app.post("/api/ai/chat-stream")
@@ -1633,21 +1656,43 @@ def ai_chat_stream_endpoint(req: AIChatRequest):
 
     history_dicts = [{"role": h.role, "content": h.content} for h in req.history[-6:]]
 
+    # Tự động kích hoạt mô hình vẽ hình (FLUX.1 + SVG Vector) nếu có ý định vẽ
+    is_draw = (req.model == "flux-drawing") or any(k in q.lower() for k in [
+        "vẽ", "ve", "đồ thị", "do thi", "hình vẽ", "hinh ve", "sơ đồ", "so do", 
+        "tam giác", "tam giac", "parabol", "parabola", "hình học", "hinh hoc", 
+        "minh hoạ", "minh hoa", "lăng trụ", "hình chóp", "đường tròn", "vectơ", "vector",
+        "draw", "sketch", "plot", "diagram", "illustration"
+    ])
+    drawn_svg = None
+    drawn_image = None
+    if is_draw:
+        try:
+            drawn_svg = llm.cloudflare_generate_math_svg(q, subject=req.subject or "math")
+        except Exception:
+            drawn_svg = None
+        try:
+            drawn_image = llm.cloudflare_generate_image(q)
+        except Exception:
+            drawn_image = None
+
     def event_generator():
         initial_meta = {
             "type": "metadata",
             "cas_verification": cas_verification,
             "grounding_formulas": grounding_formulas,
             "grounding_lessons": grounding_lessons,
-            "model": req.model,
+            "model": "flux-drawing" if is_draw else req.model,
             "pedagogical_mode": mode,
+            "svg": drawn_svg,
+            "image_url": drawn_image,
         }
         yield f"data: {json.dumps(initial_meta, ensure_ascii=False)}\n\n"
 
+        stream_model = "llama-3.3" if req.model == "flux-drawing" else req.model
         for chunk in llm.cloudflare_chat_stream(
             prompt=q,
             system=system_prompt,
-            model=req.model,
+            model=stream_model,
             history=history_dicts,
             max_tokens=2048,
         ):
@@ -1655,6 +1700,7 @@ def ai_chat_stream_endpoint(req: AIChatRequest):
             yield f"data: {json.dumps(delta_obj, ensure_ascii=False)}\n\n"
 
         yield "data: [DONE]\n\n"
+
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
 
