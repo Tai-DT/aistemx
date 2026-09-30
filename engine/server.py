@@ -1494,7 +1494,7 @@ def ai_chat_endpoint(req: AIChatRequest):
         f"{rag_context}\n"
     )
 
-    # 4. Tự động kích hoạt mô hình vẽ hình (FLUX.1 + SVG Vector) nếu có ý định vẽ
+    # 4. Tự động kích hoạt mô hình vẽ hình (AISTEM Vector Engine + SVG + FLUX) nếu có ý định vẽ
     is_draw = (req.model == "flux-drawing") or any(k in q.lower() for k in [
         "vẽ", "ve", "đồ thị", "do thi", "hình vẽ", "hinh ve", "sơ đồ", "so do", 
         "tam giác", "tam giac", "parabol", "parabola", "hình học", "hinh hoc", 
@@ -1503,15 +1503,25 @@ def ai_chat_endpoint(req: AIChatRequest):
     ])
     drawn_svg = None
     drawn_image = None
+    drawing_engine = None
     if is_draw:
         try:
-            drawn_svg = llm.cloudflare_generate_math_svg(q, subject=req.subject or "math")
+            from engine.aistem.geometry_renderer import generate_accurate_math_svg
+            drawn_svg, drawing_engine = generate_accurate_math_svg(q, subject=req.subject or "math")
         except Exception:
-            drawn_svg = None
-        try:
-            drawn_image = llm.cloudflare_generate_image(q)
-        except Exception:
-            drawn_image = None
+            try:
+                drawn_svg = llm.cloudflare_generate_math_svg(q, subject=req.subject or "math")
+                drawing_engine = "LLM Fallback"
+            except Exception:
+                drawn_svg = None
+
+        # Chỉ sinh ảnh FLUX khi người dùng thực sự muốn tranh vẽ/ảnh 3D nghệ thuật
+        wants_art = any(k in q.lower() for k in ["nghệ thuật", "nghe thuat", "chân thực", "chan thuc", "ảnh 3d", "anh 3d", "art", "realistic", "photo"])
+        if wants_art or (req.model == "flux-drawing" and not drawn_svg):
+            try:
+                drawn_image = llm.cloudflare_generate_image(q)
+            except Exception:
+                drawn_image = None
 
     # 5. Gửi sang Cloudflare Workers AI
     try:
@@ -1533,6 +1543,7 @@ def ai_chat_endpoint(req: AIChatRequest):
             "grounding_lessons": grounding_lessons,
             "cas_verification": cas_verification,
             "svg": drawn_svg,
+            "drawing_engine": drawing_engine,
             "image_url": drawn_image,
             "success": True,
         }
@@ -1656,7 +1667,7 @@ def ai_chat_stream_endpoint(req: AIChatRequest):
 
     history_dicts = [{"role": h.role, "content": h.content} for h in req.history[-6:]]
 
-    # Tự động kích hoạt mô hình vẽ hình (FLUX.1 + SVG Vector) nếu có ý định vẽ
+    # Tự động kích hoạt mô hình vẽ hình (AISTEM Vector Engine + SVG + FLUX) nếu có ý định vẽ
     is_draw = (req.model == "flux-drawing") or any(k in q.lower() for k in [
         "vẽ", "ve", "đồ thị", "do thi", "hình vẽ", "hinh ve", "sơ đồ", "so do", 
         "tam giác", "tam giac", "parabol", "parabola", "hình học", "hinh hoc", 
@@ -1665,15 +1676,24 @@ def ai_chat_stream_endpoint(req: AIChatRequest):
     ])
     drawn_svg = None
     drawn_image = None
+    drawing_engine = None
     if is_draw:
         try:
-            drawn_svg = llm.cloudflare_generate_math_svg(q, subject=req.subject or "math")
+            from engine.aistem.geometry_renderer import generate_accurate_math_svg
+            drawn_svg, drawing_engine = generate_accurate_math_svg(q, subject=req.subject or "math")
         except Exception:
-            drawn_svg = None
-        try:
-            drawn_image = llm.cloudflare_generate_image(q)
-        except Exception:
-            drawn_image = None
+            try:
+                drawn_svg = llm.cloudflare_generate_math_svg(q, subject=req.subject or "math")
+                drawing_engine = "LLM Fallback"
+            except Exception:
+                drawn_svg = None
+
+        wants_art = any(k in q.lower() for k in ["nghệ thuật", "nghe thuat", "chân thực", "chan thuc", "ảnh 3d", "anh 3d", "art", "realistic", "photo"])
+        if wants_art or (req.model == "flux-drawing" and not drawn_svg):
+            try:
+                drawn_image = llm.cloudflare_generate_image(q)
+            except Exception:
+                drawn_image = None
 
     def event_generator():
         initial_meta = {
@@ -1684,6 +1704,7 @@ def ai_chat_stream_endpoint(req: AIChatRequest):
             "model": "flux-drawing" if is_draw else req.model,
             "pedagogical_mode": mode,
             "svg": drawn_svg,
+            "drawing_engine": drawing_engine,
             "image_url": drawn_image,
         }
         yield f"data: {json.dumps(initial_meta, ensure_ascii=False)}\n\n"
@@ -1806,21 +1827,28 @@ def ai_cas_eval_endpoint(req: AICASRequest):
 
 @app.post("/api/ai/draw")
 def ai_draw_endpoint(req: AIDrawRequest):
-    """Vẽ minh họa toán học/khoa học bằng AI Cloudflare: Hỗ trợ cả FLUX.1 Schnell và SVG Vector."""
+    """Vẽ minh họa toán học/khoa học bằng AI Cloudflare & AISTEM Accurate Geometry Engine."""
     prompt = req.prompt.strip()
     if not prompt:
         raise HTTPException(status_code=400, detail="Mô tả hình vẽ không được để trống")
 
     svg_content = None
     image_url = None
+    drawing_engine = None
 
     if req.mode in ("svg", "both"):
         try:
-            svg_content = llm.cloudflare_generate_math_svg(prompt, subject=req.subject or "math")
+            from engine.aistem.geometry_renderer import generate_accurate_math_svg
+            svg_content, drawing_engine = generate_accurate_math_svg(prompt, subject=req.subject or "math")
         except Exception:
-            svg_content = None
+            try:
+                svg_content = llm.cloudflare_generate_math_svg(prompt, subject=req.subject or "math")
+                drawing_engine = "LLM Fallback"
+            except Exception:
+                svg_content = None
 
-    if req.mode in ("flux", "both"):
+    wants_art = req.mode == "flux" or any(k in prompt.lower() for k in ["nghệ thuật", "nghe thuat", "chân thực", "chan thuc", "ảnh 3d", "anh 3d", "art", "realistic", "photo"])
+    if req.mode in ("flux", "both") and (wants_art or not svg_content):
         try:
             image_url = llm.cloudflare_generate_image(prompt)
         except Exception:
@@ -1834,6 +1862,7 @@ def ai_draw_endpoint(req: AIDrawRequest):
         "prompt": prompt,
         "svg": svg_content,
         "image_url": image_url,
+        "drawing_engine": drawing_engine,
         "mode": req.mode,
     }
 

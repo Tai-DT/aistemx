@@ -35,6 +35,7 @@ interface ChatMessage {
   content: string;
   image?: string;
   svg?: string;
+  drawing_engine?: string;
   image_url?: string;
   thinking?: string;
   model?: string;
@@ -377,6 +378,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                             grounding_lessons: item.grounding_lessons || [],
                             model: item.model || m.model,
                             svg: item.svg || m.svg,
+                            drawing_engine: item.drawing_engine || m.drawing_engine,
                             image_url: item.image_url || m.image_url,
                           }
                         : m
@@ -418,6 +420,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                     grounding_lessons: fallbackData.grounding_lessons || [],
                     model: fallbackData.model || m.model,
                     svg: fallbackData.svg || m.svg,
+                    drawing_engine: fallbackData.drawing_engine || m.drawing_engine,
                     image_url: fallbackData.image_url || m.image_url,
                   }
                 : m
@@ -611,10 +614,10 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                   boxShadow: model === 'flux-drawing' ? 'var(--shadow-sm)' : 'none',
                   transition: 'all var(--transition-fast)',
                 }}
-                title="FLUX.1 & SVG: Tự động vẽ hình học, đồ thị và minh họa khoa học 3D"
+                title="Vẽ hình học & sơ đồ: 193 Vector Engines chính xác 100% sách giáo khoa & Minh họa 3D"
               >
                 <Palette size={13} color={model === 'flux-drawing' ? '#7e22ce' : 'currentColor'} />
-                <span>FLUX.1 (Vẽ Hình)</span>
+                <span>Vẽ Hình & Sơ Đồ</span>
               </button>
             </div>
 
@@ -943,7 +946,9 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
                     <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#475569', display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <Sparkles size={14} color="#7c3aed" /> Sơ đồ Hình học Vector SVG
                     </span>
-                    <span style={{ fontSize: '0.72rem', color: '#64748b' }}>Sắc nét &bull; Chuẩn tọa độ</span>
+                    <span style={{ fontSize: '0.72rem', color: '#16a34a', fontWeight: 600 }}>
+                      {msg.drawing_engine ? `Chính xác 100% • ${msg.drawing_engine}` : 'Sắc nét • Chuẩn tọa độ SGK'}
+                    </span>
                   </div>
                   <div
                     dangerouslySetInnerHTML={{ __html: msg.svg }}
@@ -1522,7 +1527,7 @@ export const AiTutorModal: FC<AiTutorModalProps> = ({ isOpen, onClose, initialQu
             }}
           >
             <span>Hỗ trợ KaTeX ($...$ và $$...$$) cho mọi công thức Toán · Lí · Hoá</span>
-            <span>Mô hình: Cloudflare Workers AI ({model === 'deepseek-r1' ? 'DeepSeek R1' : model === 'flux-drawing' ? 'FLUX.1 Schnell & SVG' : 'Llama 3.3 70B'})</span>
+            <span>Mô hình: Cloudflare Workers AI ({model === 'deepseek-r1' ? 'DeepSeek R1' : model === 'flux-drawing' ? '193 Vector Engines & FLUX' : 'Llama 3.3 70B'})</span>
           </div>
         </footer>
       </div>
