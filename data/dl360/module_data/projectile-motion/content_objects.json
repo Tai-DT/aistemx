@@ -1,0 +1,109 @@
+[
+ {
+  "title": "Hai góc phụ nhau",
+  "prompt": "Cùng vận tốc đầu 20 m/s, quỹ đạo 30° và 60° liên hệ với nhau thế nào?",
+  "setupText": "So sánh α = 30° và α = 60°, cùng v_0 = 20 m/s, ném từ mặt đất.",
+  "primaryLabel": "30°",
+  "comparisonLabels": [
+   "60°"
+  ],
+  "choices": [
+   {
+    "id": "answer.equal-range",
+    "label": "Cùng tầm xa; 60° bay lâu hơn và đạt độ cao lớn hơn."
+   },
+   {
+    "id": "answer.identical-motion",
+    "label": "Hai chuyển động giống hệt nhau ở mọi thời điểm."
+   },
+   {
+    "id": "answer.thirty-farther",
+    "label": "30° luôn bay xa hơn 60°."
+   }
+  ],
+  "correctAnswerId": "answer.equal-range",
+  "correctFeedback": "Đúng: hai góc phụ nhau cho cùng tầm xa trong mô hình này.",
+  "incorrectFeedback": "Chưa đúng. Hãy kiểm tra tầm xa, thời gian bay và độ cao của từng quỹ đạo.",
+  "explanation": "sin(2·30°) = sin(2·60°), nên tầm xa bằng nhau. Thành phần vận tốc theo phương thẳng đứng của 60° lớn hơn, vì vậy thời gian bay và độ cao cực đại đều lớn hơn."
+ },
+ {
+  "title": "Trạng thái tại đỉnh",
+  "prompt": "Tại điểm cao nhất, vận tốc và gia tốc của vật có đặc điểm gì?",
+  "setupText": "Quan sát trạng thái tại t = t_H với v_0 = 20 m/s, α = 45°, ném từ mặt đất.",
+  "primaryLabel": "45°",
+  "comparisonLabels": [],
+  "choices": [
+   {
+    "id": "answer.total-zero",
+    "label": "Vận tốc toàn phần và gia tốc đều bằng 0."
+   },
+   {
+    "id": "answer.vertical-zero",
+    "label": "v_y = 0, v_x vẫn khác 0 và gia tốc vẫn hướng xuống."
+   },
+   {
+    "id": "answer.horizontal-zero",
+    "label": "v_x = 0, v_y khác 0 và gia tốc hướng lên."
+   }
+  ],
+  "correctAnswerId": "answer.vertical-zero",
+  "correctFeedback": "Đúng: tại đỉnh chỉ thành phần vận tốc theo phương thẳng đứng bằng 0.",
+  "incorrectFeedback": "Chưa đúng. Trọng lực vẫn tác dụng và chuyển động theo phương ngang không dừng lại.",
+  "explanation": "Không có gia tốc theo phương ngang nên v_x giữ nguyên. Trọng lực vẫn tạo gia tốc a_y = −g; chỉ v_y đổi dấu và đi qua giá trị 0 tại đỉnh."
+ },
+ {
+  "title": "Tăng gấp đôi vận tốc",
+  "prompt": "Giữ nguyên góc ném và tăng v_0 từ 15 m/s lên 30 m/s. Các đại lượng thay đổi ra sao?",
+  "setupText": "So sánh v_0 = 15 m/s và 30 m/s tại α = 45°, ném từ mặt đất.",
+  "primaryLabel": "15 m/s",
+  "comparisonLabels": [
+   "30 m/s"
+  ],
+  "choices": [
+   {
+    "id": "answer.all-double",
+    "label": "T, H và L đều tăng 2 lần."
+   },
+   {
+    "id": "answer.two-four-four",
+    "label": "T tăng 2 lần; H và L tăng 4 lần."
+   },
+   {
+    "id": "answer.four-two-two",
+    "label": "T tăng 4 lần; H và L tăng 2 lần."
+   }
+  ],
+  "correctAnswerId": "answer.two-four-four",
+  "correctFeedback": "Đúng: thời gian tỉ lệ với v_0, còn độ cao và tầm xa tỉ lệ với v_0².",
+  "incorrectFeedback": "Chưa đúng. Hãy để ý v_0 xuất hiện bậc nhất trong T nhưng bình phương trong H và L.",
+  "explanation": "Khi ném từ mặt đất, T = 2v_0 sin α/g nên tăng 2 lần. H và L chứa v_0² nên tăng 4 lần khi vận tốc đầu tăng gấp đôi."
+ },
+ {
+  "title": "Góc cho tầm xa lớn nhất",
+  "prompt": "Trong ba góc 30°, 45° và 60° với cùng vận tốc đầu, góc nào cho tầm xa lớn nhất?",
+  "setupText": "So sánh α = 30°, 45° và 60°, cùng v_0 = 20 m/s, ném từ mặt đất.",
+  "primaryLabel": "45°",
+  "comparisonLabels": [
+   "30°",
+   "60°"
+  ],
+  "choices": [
+   {
+    "id": "answer.angle-30",
+    "label": "30°"
+   },
+   {
+    "id": "answer.angle-45",
+    "label": "45°"
+   },
+   {
+    "id": "answer.angle-60",
+    "label": "60°"
+   }
+  ],
+  "correctAnswerId": "answer.angle-45",
+  "correctFeedback": "Đúng: 45° cho tầm xa lớn nhất trong các điều kiện đã nêu.",
+  "incorrectFeedback": "Chưa đúng. Hãy so sánh L và nhớ rằng L tỉ lệ với sin(2α).",
+  "explanation": "Với cùng độ cao ném và rơi, mặt đất phẳng, g không đổi và không có lực cản, L lớn nhất khi sin(2α) = 1, tức α = 45°. Hai góc 30° và 60° có cùng tầm xa."
+ }
+]

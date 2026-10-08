@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>KHU DU L&#7882;CH C&#217; LAO CH&#192;M - H&#7896;I AN</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta property="og:title" content="KHU DU L&#7882;CH C&#217; LAO CH&#192;M - H&#7896;I AN">
+		<meta property="og:description" content="C&#249; Lao Ch&#224;m l&#224; m&#7897;t qu&#7847;n &#273;&#7843;o n&#7857;m c&#225;ch th&#224;nh ph&#7889; H&#7897;i An, t&#7881;nh Qu&#7843;ng Nam, kho&#7843;ng 15km v&#7873; ph&#237;a &#272;&#244;ng. &#272;&#226;y l&#224; m&#7897;t &#273;i&#7875;m &#273;&#7871;n n&#7893;i ti&#7871;ng &#7903; mi&#7873;n Trung Vi&#7879;t Nam, &#273;&#432;&#7907;c UNESCO c&#244;ng nh&#7853;n l&#224; Khu d&#7921; tr&#7919; sinh quy&#7875;n th&#7871; gi&#7899;i v&#224;o n&#259;m 2009. V&#7899;i v&#7867; &#273;&#7865;p hoang s&#417; v&#224; h&#7879; sinh th&#225;i &#273;a d&#7841;ng, C&#249; Lao Ch&#224;m thu h&#250;t nhi&#7873;u du kh&#225;ch trong v&#224; ngo&#224;i n&#432;&#7899;c.">
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta property="og:image" content="preview.jpg">
+		<style type="text/css" title="Default">
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				background: black;
+				color: white;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+				height: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+				background-color:  rgba(255,255,255,0.5);
+			}
+		</style>
+<script>
+    window.code = "UndDmADLBLTttRXBtbUm";
+    window.name = "Khu du lịch cù lao chàm";
+</script>
+<script src="https://vr360.com.vn/toast_notice.js" async></script>
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js?ts=54109437">
+		</script>
+		<script type="text/javascript" src="skin.js?ts=54109437">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+		<script src="3rdparty/lottie/lottie.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAWXH4d76M9WHvvP60WwnD3F532SoToxkE"></script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<br>Loading...<br><br>
+		</div>
+		<script type="text/javascript">
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			pano.setQueryParameter("ts=54109437")
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("pano.xml?ts=54109437");
+			});
+			if (window.navigator.userAgent.match(/Safari/i)) {
+				// fix for white borders, rotation on iPhone
+				function iosHfix(e) {
+					window.scrollTo(0, 1);
+					var container=document.getElementById("container");
+					var oh=container.offsetHeight;
+					document.documentElement.style.setProperty('height', '100vh');
+					if (oh!=container.offsetHeight) {
+						container.style.setProperty('height',"100%");
+					} else {
+						container.style.setProperty('height',window.innerHeight+"px");
+					}
+					window.scrollTo(0, 0);
+					pano.setViewerSize(container.offsetWidth, container.offsetHeight);
+				};
+				setTimeout(iosHfix,0);
+				setTimeout(iosHfix,100);
+				window.addEventListener("resize", function() {
+					setTimeout(iosHfix,0);
+					// hide toolbar on iPad happens with a delay
+					setTimeout(iosHfix,500);
+					setTimeout(iosHfix,1000);
+					setTimeout(iosHfix,2000);
+				});
+			}
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="cover-layer/js/url.js"></script>
+		<script src="cover-layer/js/weather.js"></script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+	</body>
+</html>

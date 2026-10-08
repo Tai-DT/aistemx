@@ -1,0 +1,172 @@
+[
+ {
+  "eyebrow": "Hóa học · Cấu tạo nguyên tử",
+  "title": "Đồng vị và nguyên tử khối trung bình",
+  "description": "Thêm hoặc bớt neutron để tạo đồng vị, đọc số khối, khối lượng, độ bền và độ phổ biến; rồi trộn các đồng vị trong buồng thử để thấy nguyên tử khối trung bình là trung bình có trọng số.",
+  "modes": {
+   "isotopes": "Đồng vị",
+   "mixtures": "Hỗn hợp đồng vị"
+  },
+  "modeDescriptions": {
+   "isotopes": "Kéo neutron từ khay vào hạt nhân. Số proton giữ nguyên nên nguyên tố không đổi; số khối, khối lượng và độ bền thay đổi.",
+   "mixtures": "Kéo nguyên tử từ khay (hoặc dùng thanh trượt) vào buồng thử, rồi so hỗn hợp của bạn với hỗn hợp tự nhiên trên cùng một trục."
+  },
+  "guidance": [
+   {
+    "label": "Điều đang xảy ra",
+    "text": "Mỗi đồng vị của cùng nguyên tố có cùng số proton Z nhưng khác số neutron N, nên khác số khối A = Z + N và khác khối lượng."
+   },
+   {
+    "label": "Hãy quan sát",
+    "text": "Khi trộn đồng vị, nguyên tử khối trung bình nghiêng về đồng vị có nhiều nguyên tử hơn trong buồng."
+   },
+   {
+    "label": "Điểm dễ nhầm",
+    "text": "Số khối là số nguyên đếm hạt; khối lượng đồng vị đo bằng amu và không đúng bằng số khối."
+   }
+  ],
+  "modelNotes": [
+   "Khối lượng đồng vị, độ phổ biến và khối lượng nguyên tử chuẩn là số liệu của mô hình nguồn (bảng NIST cũ, ví dụ H 1,00794 và Li 6,941), khác bảng CIAAW hiện hành của học liệu Bảng tuần hoàn. Phần “Đối chiếu CIAAW” ghi giá trị hiện hành để so sánh, không thay số của mô hình.",
+   "Nguyên tử khối trung bình trong buồng là tổng khối lượng đồng vị (amu) của các nguyên tử chia cho số nguyên tử, tức trung bình có trọng số. Bài tập thường tính gần đúng bằng số khối (Cl: 35 × 0,7576 + 37 × 0,2424 ≈ 35,48); mô hình dùng khối lượng đồng vị (Cl ≈ 35,45).",
+   "Hỗn hợp tự nhiên là một mẫu minh họa khoảng 1.000 nguyên tử: mỗi đồng vị có số nguyên tử bằng 1.000 × độ phổ biến làm tròn, tối thiểu 1 nguyên tử. Vì vậy tỉ lệ trong mẫu và trung bình của mẫu có thể lệch khỏi độ phổ biến và giá trị tham chiếu; số nguyên tử không phải số lượng thật.",
+   "“Không bền” nghĩa là hạt nhân không thuộc danh sách đồng vị bền của mô hình; hạt nhân rung chỉ là dấu hiệu, mô hình không mô phỏng phân rã hay chu kì bán rã. Hỗn hợp chỉ dùng đồng vị bền.",
+   "Hạt và khoảng cách không theo tỉ lệ; mây electron là cách vẽ giản lược. Vị trí nguyên tử trong buồng là ngẫu nhiên và không ảnh hưởng số liệu."
+  ],
+  "loading": "Đang khởi tạo mô hình…",
+  "error": "Không tải được mô hình. Hãy tải lại học liệu.",
+  "limit": "Bản ghi thao tác đã đầy. Hãy bấm Đặt lại để tiếp tục thao tác.",
+  "busyNature": "Đang tạo hỗn hợp khoảng 1.000 nguyên tử…",
+  "unit": "amu",
+  "element": {
+   "title": "Nguyên tố",
+   "hint": {
+    "isotopes": "Màn này dùng Z = 1–10.",
+    "mixtures": "Màn này dùng Z = 1–18."
+   },
+   "selected": "đang chọn",
+   "mapLabel": "Vị trí trong bảng tuần hoàn đầy đủ"
+  },
+  "particles": {
+   "proton": "Proton",
+   "neutron": "Neutron",
+   "electron": "Electron"
+  },
+  "isotopes": {
+   "scene": "Nguyên tử trên cân",
+   "myIsotope": "Đồng vị của tôi",
+   "bucket": "Neutron",
+   "stable": "Bền",
+   "unstable": "Không bền",
+   "neutronTitle": "Neutron",
+   "addNeutron": "Thêm neutron",
+   "removeNeutron": "Bớt neutron",
+   "inNucleus": "Trong hạt nhân",
+   "inBucket": "Trong khay",
+   "dragHint": "Kéo neutron từ khay thả vào quanh hạt nhân; kéo neutron ra khỏi hạt nhân để bớt.",
+   "dropZone": "Thả trong vòng này",
+   "scaleTitle": "Cân hiển thị",
+   "massNumber": "Số khối",
+   "atomicMass": "Khối lượng nguyên tử (amu)",
+   "cardTitle": "Đồng vị của tôi",
+   "isotopicMass": "Khối lượng đồng vị",
+   "noMass": "Mô hình không có khối lượng cho hạt nhân này",
+   "stableExplain": "Có trong danh sách đồng vị bền của mô hình.",
+   "unstableExplain": "Không có trong danh sách đồng vị bền; hạt nhân rung để báo hiệu (mô hình không mô phỏng phân rã).",
+   "countsTitle": "Số hạt",
+   "symbolTitle": "Kí hiệu",
+   "abundanceTitle": "Độ phổ biến trong tự nhiên",
+   "thisIsotope": "Đồng vị này",
+   "trace": "vết",
+   "traceExplain": "Có trong tự nhiên với lượng vết (quá nhỏ để làm tròn).",
+   "notInNature": "Không có trong tự nhiên theo bảng của mô hình.",
+   "naturalList": "Các đồng vị bền của nguyên tố",
+   "reducedMotion": "Giảm chuyển động: hạt nhân đứng yên, viền nhấp nháy báo không bền."
+  },
+  "mixtures": {
+   "scene": "Buồng thử và khay đồng vị",
+   "chamber": "Buồng thử",
+   "mixTitle": "Hỗn hợp",
+   "myMix": "Hỗn hợp của tôi",
+   "naturesMix": "Hỗn hợp tự nhiên",
+   "methodTitle": "Cách thêm",
+   "buckets": "Khay",
+   "sliders": "Thanh trượt",
+   "methodHint": {
+    "buckets": "Mỗi khay có 10 nguyên tử; kéo vào buồng hoặc dùng nút.",
+    "sliders": "Mỗi đồng vị 0–100 nguyên tử; thanh trượt lấy phần nguyên."
+   },
+   "isotopesTitle": "Đồng vị",
+   "add": "Thêm",
+   "remove": "Bớt",
+   "inChamber": "trong buồng",
+   "inBucket": "trong khay",
+   "decrease": "Giảm 1",
+   "increase": "Tăng 1",
+   "erase": "Xóa buồng",
+   "eraseHint": "Đưa mọi nguyên tử về khay (hoặc về 0) và quên hỗn hợp đã lưu của nguyên tố này.",
+   "natureHint": "Hỗn hợp tự nhiên: buồng chứa mẫu khoảng 1.000 nguyên tử theo độ phổ biến của mô hình. Chọn “Hỗn hợp của tôi” để quay lại hỗn hợp đã lưu.",
+   "dragHint": "Kéo nguyên tử từ khay vào buồng; kéo ra khỏi buồng để trả về khay.",
+   "averageTitle": "Nguyên tử khối trung bình",
+   "empty": "Chưa có nguyên tử trong buồng",
+   "reference": "Giá trị tham chiếu của mô hình",
+   "referenceExplain": "Số mà bản gốc hiển thị cho hỗn hợp tự nhiên: khối lượng nguyên tử chuẩn trong bảng của mô hình, không tính từ các nguyên tử trong buồng.",
+   "sampleExplain": "Tính từ các nguyên tử thật sự có trong buồng.",
+   "rulerLabel": "Trục khối lượng",
+   "rulerNature": "tự nhiên (tham chiếu)",
+   "rulerMine": "hỗn hợp của tôi",
+   "rulerReference": "tham chiếu",
+   "rulerSample": "trung bình mẫu",
+   "compositionTitle": "Thành phần %",
+   "compositionEmpty": "Buồng trống",
+   "compositionNatureNote": "Nhãn là độ phổ biến trong bảng của mô hình (4 chữ số thập phân); lát bánh là số nguyên tử của mẫu.",
+   "sampleShare": "trong mẫu",
+   "tableTitle": "Bảng trung bình có trọng số",
+   "tableHeaders": {
+    "isotope": "Đồng vị",
+    "count": "Số ng.tử",
+    "mass": "Khối lượng (amu)",
+    "share": "Tỉ lệ",
+    "contribution": "Đóng góp (amu)"
+   },
+   "tableTotal": "Tổng",
+   "tableExplain": "Đóng góp = tỉ lệ × khối lượng đồng vị; cộng các đóng góp được nguyên tử khối trung bình.",
+   "tableNatureExplain": "Tổng là trung bình của mẫu trong buồng; giá trị tham chiếu của mô hình lấy từ bảng.",
+   "raisedTitle": "Quy tắc tối thiểu 1 nguyên tử",
+   "legend": "Chú giải đồng vị"
+  },
+  "ciaaw": {
+   "title": "Đối chiếu CIAAW hiện hành",
+   "summary": "So số của mô hình với nguyên tử khối chuẩn hiện hành",
+   "model": "Mô hình (bảng cũ)",
+   "current": "CIAAW 2024",
+   "interval": "khoảng",
+   "abridged": "rút gọn",
+   "inside": "Số của mô hình nằm trong giá trị hiện hành.",
+   "outside": "Số của mô hình nằm ngoài giá trị hiện hành: bảng của mô hình đã cũ.",
+   "source": "Nguồn: CIAAW Standard Atomic Weights 2024 (ciaaw.org), bản đóng gói của học liệu Bảng tuần hoàn. Không thay số của mô hình."
+  },
+  "live": {
+   "emptyChamber": "Buồng trống."
+  }
+ },
+ {
+  "title": "Nguyên tố",
+  "hint": {
+   "isotopes": "Màn này dùng Z = 1–10.",
+   "mixtures": "Màn này dùng Z = 1–18."
+  },
+  "selected": "đang chọn",
+  "mapLabel": "Vị trí trong bảng tuần hoàn đầy đủ"
+ },
+ {
+  "title": "Đối chiếu CIAAW hiện hành",
+  "summary": "So số của mô hình với nguyên tử khối chuẩn hiện hành",
+  "model": "Mô hình (bảng cũ)",
+  "current": "CIAAW 2024",
+  "interval": "khoảng",
+  "abridged": "rút gọn",
+  "inside": "Số của mô hình nằm trong giá trị hiện hành.",
+  "outside": "Số của mô hình nằm ngoài giá trị hiện hành: bảng của mô hình đã cũ.",
+  "source": "Nguồn: CIAAW Standard Atomic Weights 2024 (ciaaw.org), bản đóng gói của học liệu Bảng tuần hoàn. Không thay số của mô hình."
+ }
+]

@@ -1,0 +1,1798 @@
+[
+ {
+  "defaultLocale": "vi",
+  "messages": {
+   "vi": {
+    "eyebrow": "Vật lý · Quang học",
+    "title": "Khám phá sự tạo ảnh qua thấu kính hội tụ",
+    "description": "Dịch chuyển vật, đổi tiêu cự và chiều cao vật để xem ảnh qua thấu kính hội tụ thay đổi về vị trí, chiều, độ lớn và tính chất thật hay ảo.",
+    "modeLabel": "Chế độ",
+    "modes": {
+     "explore": "Khám phá",
+     "construct": "Dựng ảnh từng bước",
+     "predict": "Dự đoán"
+    },
+    "guidance": [
+     {
+      "label": "Bắt đầu từ đâu",
+      "text": "Bấm lần lượt năm vị trí đặc biệt, hoặc kéo trực tiếp vật AB trên trục chính. Mỗi lần dịch chuyển, đọc dòng trạng thái ở góc trên hình và phần Kết luận."
+     },
+     {
+      "label": "Thử và đối chiếu",
+      "text": "Đưa vật từ ngoài 2F vào dần: ảnh lớn lên tới đâu thì đổi từ nhỏ hơn sang bằng rồi lớn hơn vật? Bật tia thứ ba để kiểm tra ba tia có cùng cắt tại một điểm không."
+     },
+     {
+      "label": "Câu hỏi mở",
+      "text": "Vì sao đúng tại tiêu điểm lại không có ảnh? Thử đổi tiêu cự rồi đặt lại vật tại F để xem kết luận có đổi không. Ảnh ảo có hứng được trên màn chắn không?"
+     }
+    ],
+    "rays": [
+     {
+      "id": "parallel",
+      "label": "Tia tới song song với trục chính",
+      "shortLabel": "Song song",
+      "description": "Tia ló đi qua tiêu điểm F′."
+     },
+     {
+      "id": "through-center",
+      "label": "Tia tới đi qua quang tâm O",
+      "shortLabel": "Qua O",
+      "description": "Tia ló truyền thẳng, không đổi phương."
+     },
+     {
+      "id": "through-focus",
+      "label": "Tia tới đi qua tiêu điểm F",
+      "shortLabel": "Qua F",
+      "description": "Tia ló song song với trục chính.",
+      "insideFocusLabel": "Tia tới có đường kéo dài đi qua tiêu điểm F"
+     }
+    ],
+    "presets": [
+     {
+      "region": "beyond-2f",
+      "label": "Ngoài 2F",
+      "hint": "Đưa vật ra xa hơn 2F"
+     },
+     {
+      "region": "at-2f",
+      "label": "Tại 2F",
+      "hint": "Đặt vật đúng tại 2F"
+     },
+     {
+      "region": "between-f-and-2f",
+      "label": "Giữa F và 2F",
+      "hint": "Đặt vật giữa F và 2F"
+     },
+     {
+      "region": "at-f",
+      "label": "Tại F",
+      "hint": "Đặt vật đúng tại tiêu điểm F"
+     },
+     {
+      "region": "inside-f",
+      "label": "Trong F",
+      "hint": "Đưa vật vào trong khoảng tiêu cự"
+     }
+    ],
+    "regionLabels": {
+     "beyond-2f": "Vật ngoài 2F",
+     "at-2f": "Vật tại 2F",
+     "between-f-and-2f": "Vật giữa F và 2F",
+     "at-f": "Vật tại tiêu điểm F",
+     "inside-f": "Vật trong khoảng tiêu cự"
+    },
+    "regionExplanations": {
+     "beyond-2f": "Khi d > 2f, ảnh thật nằm giữa F′ và 2F′, ngược chiều và nhỏ hơn vật.",
+     "at-2f": "Khi d = 2f, ảnh thật nằm đúng tại 2F′, ngược chiều và bằng vật.",
+     "between-f-and-2f": "Khi f < d < 2f, ảnh thật nằm ngoài 2F′, ngược chiều và lớn hơn vật.",
+     "at-f": "Khi d = f, các tia ló song song với nhau nên không cắt nhau: ảnh ở vô cực, không có ảnh hữu hạn.",
+     "inside-f": "Khi d < f, các tia ló loe ra; phần kéo dài ngược của chúng cắt nhau, cho ảnh ảo cùng chiều và lớn hơn vật."
+    },
+    "causeEffect": {
+     "beyond-2f": "Vật càng lùi xa, ảnh càng lùi về gần F′ và càng nhỏ đi; đưa vật vào gần 2F thì ảnh lớn dần lên.",
+     "at-2f": "Vật và ảnh cách thấu kính bằng nhau nên ảnh bằng đúng vật. Đẩy vật ra xa thì ảnh nhỏ lại, đưa vào gần thì ảnh lớn lên.",
+     "between-f-and-2f": "Vật càng tiến gần F từ phía ngoài, ảnh càng ra xa thấu kính và càng lớn, nên có thể hứng được ảnh lớn trên một màn ở xa.",
+     "at-f": "Ánh sáng từ một điểm đặt tại tiêu điểm ló ra thành chùm song song, nên ảnh bị đẩy ra vô cực.",
+     "inside-f": "Mắt nhìn qua thấu kính thấy ảnh ảo lớn hơn vật — đó là cách kính lúp giúp vật nhỏ trông to hơn."
+    },
+    "natureQuestion": {
+     "id": "prediction.nature",
+     "prompt": "Ảnh là ảnh thật hay ảnh ảo?",
+     "choices": [
+      {
+       "id": "nature.real",
+       "value": "real",
+       "label": "Ảnh thật"
+      },
+      {
+       "id": "nature.virtual",
+       "value": "virtual",
+       "label": "Ảnh ảo"
+      }
+     ]
+    },
+    "orientationQuestion": {
+     "id": "prediction.orientation",
+     "prompt": "Ảnh cùng chiều hay ngược chiều với vật?",
+     "choices": [
+      {
+       "id": "orientation.upright",
+       "value": "upright",
+       "label": "Cùng chiều"
+      },
+      {
+       "id": "orientation.inverted",
+       "value": "inverted",
+       "label": "Ngược chiều"
+      }
+     ]
+    },
+    "sizeQuestion": {
+     "id": "prediction.size",
+     "prompt": "Ảnh lớn hơn, bằng hay nhỏ hơn vật?",
+     "choices": [
+      {
+       "id": "size.larger",
+       "value": "larger",
+       "label": "Lớn hơn vật"
+      },
+      {
+       "id": "size.equal",
+       "value": "equal",
+       "label": "Bằng vật"
+      },
+      {
+       "id": "size.smaller",
+       "value": "smaller",
+       "label": "Nhỏ hơn vật"
+      }
+     ]
+    },
+    "screenQuestion": {
+     "id": "prediction.screen",
+     "prompt": "Có hứng được ảnh này trên màn chắn không?",
+     "choices": [
+      {
+       "id": "screen.catchable",
+       "value": "catchable",
+       "label": "Hứng được"
+      },
+      {
+       "id": "screen.not-catchable",
+       "value": "not-catchable",
+       "label": "Không hứng được"
+      }
+     ]
+    },
+    "constructionSteps": [
+     {
+      "step": "incident",
+      "title": "Bước 1 · Tia tới",
+      "instruction": "Từ đỉnh B của vật, vẽ tia tới song song với trục chính đi đến thấu kính."
+     },
+     {
+      "step": "emergent",
+      "title": "Bước 2 · Tia ló",
+      "instruction": "Tia tới song song với trục chính cho tia ló đi qua tiêu điểm F′ phía sau thấu kính."
+     },
+     {
+      "step": "center-ray",
+      "title": "Bước 3 · Tia qua quang tâm",
+      "instruction": "Vẽ thêm tia từ B đi qua quang tâm O; tia này truyền thẳng, không đổi phương."
+     },
+     {
+      "step": "intersection",
+      "title": "Bước 4 · Giao điểm",
+      "instruction": "Hai tia ló cắt nhau tại B′. Nếu hai tia ló loe ra, kéo dài ngược chúng để tìm giao điểm."
+     },
+     {
+      "step": "image",
+      "title": "Bước 5 · Dựng ảnh và kết luận",
+      "instruction": "Từ B′ hạ vuông góc xuống trục chính được A′; A′B′ là ảnh của AB. Đọc tính chất, chiều và độ lớn của ảnh."
+     }
+    ],
+    "tasks": [
+     {
+      "id": "task.equal-size",
+      "title": "Ảnh bằng vật",
+      "hint": "Có một vị trí duy nhất cho ảnh bằng đúng vật."
+     },
+     {
+      "id": "task.virtual-upright",
+      "title": "Ảnh ảo, cùng chiều, lớn hơn vật",
+      "hint": "Thử đưa vật vào rất gần thấu kính."
+     },
+     {
+      "id": "task.far-image",
+      "title": "Ảnh ở rất xa thấu kính",
+      "hint": "Từ phía ngoài, đưa vật lại sát F và theo dõi d′."
+     }
+    ],
+    "modelNotes": [
+     "Thấu kính mỏng, lý tưởng: bỏ qua bề dày và quang sai; khi dựng ảnh, coi thấu kính đủ lớn để các tia đặc biệt đều đi qua.",
+     "Ánh sáng đi từ trái sang phải; vật AB là vật thật, đặt vuông góc với trục chính, A nằm trên trục chính.",
+     "Ảnh được tính theo 1/f = 1/d + 1/d′ và k = −d′/d với quy ước dấu: d > 0; d′ > 0 khi ảnh thật (sau thấu kính), d′ < 0 khi ảnh ảo (cùng phía vật). Ví dụ f = 10 cm, d = 5 cm: 1/10 = 1/5 + 1/d′ nên d′ = −10 cm, tức ảnh ảo cách thấu kính 10 cm.",
+     "Để hình dễ đọc, trục đứng được vẽ phóng đại so với trục ngang (thường khoảng 2–3 lần, tùy kích thước khung hình) và khung tự chọn thang để luôn thấy vật cùng 2F′. Phép phóng đại này không làm thay đổi vị trí ảnh hay giao điểm của các tia.",
+     "Màn hứng ảnh: chùm sáng từ mỗi điểm của vật qua thấu kính (khẩu độ D = 6 cm) hội tụ tại điểm ảnh. Màn đặt cách thấu kính một khoảng s cắt chùm này thành vệt sáng đường kính D·|s − d′|/d′, tâm nằm trên tia qua quang tâm; vệt càng rộng càng tối. Ảnh coi là rõ nét khi |s − d′| ≤ 0,75 cm. Đây là mô hình hình học gần đúng, bỏ qua nhiễu xạ và quang sai.",
+     "Phóng to, thu nhỏ, kéo khung nhìn hay \"Vừa khung\" chỉ đổi góc quan sát, không làm thay đổi bất kỳ đại lượng vật lý nào."
+    ],
+    "ui": {
+     "parameterLabels": {
+      "focalLength": "Tiêu cự f",
+      "objectDistance": "Khoảng cách vật d",
+      "objectHeight": "Chiều cao vật h",
+      "screenDistance": "Khoảng cách màn"
+     },
+     "parametersTitle": "Tham số",
+     "specialPositions": "Vị trí đặc biệt",
+     "imageRays": "Tia sáng",
+     "constructRaysLockedNote": "Ở chế độ Dựng ảnh, các tia hiện theo từng bước nên công tắc tia tạm khóa.",
+     "toolsTitle": "Công cụ",
+     "rulerToggle": "Thước đo",
+     "rulerToggleHint": "Hiện khoảng cách d và d′ ở đáy hình.",
+     "screenToggle": "Màn hứng ảnh",
+     "screenToggleHint": "Kéo màn trên hình hoặc dùng thanh trượt để tìm chỗ ảnh rõ nét.",
+     "constructionEyebrow": "Dựng ảnh",
+     "constructionStepAriaTemplate": "Bước {current} trên {total}",
+     "constructionInfinityNote": "Hai tia ló song song nên không có giao điểm: ảnh ở vô cực.",
+     "previousStep": "Bước trước",
+     "nextStep": "Bước tiếp theo",
+     "restart": "Làm lại",
+     "tasksEyebrow": "Thử thách nhỏ",
+     "tasksTitle": "Nhiệm vụ khám phá",
+     "taskSatisfiedNow": "Đang đạt ngay lúc này.",
+     "taskAchievedSession": "Đã đạt trong phiên này.",
+     "taskCompleted": "Đã hoàn thành",
+     "taskNotCompleted": "Chưa hoàn thành",
+     "conclusionTitle": "Kết luận",
+     "conclusionConcealed": "Kết luận và các giá trị số sẽ hiện sau khi bạn chốt dự đoán.",
+     "conclusionConstructPending": "Kết luận, d′ và ảnh A′B′ hiện ở bước 5, sau khi dựng xong.",
+     "behindLens": "sau thấu kính",
+     "objectSide": "ảnh ảo, cùng phía vật",
+     "kInvertedHint": "ngược chiều",
+     "kUprightHint": "cùng chiều",
+     "objectHeightReference": "vật h = {value}",
+     "substitutionLabel": "Thay số",
+     "signConvention": "Quy ước: d′ > 0 với ảnh thật, d′ < 0 với ảnh ảo.",
+     "infinitySubstitution": "1/d′ = 1/f − 1/d = 0",
+     "noFiniteImage": "Không có ảnh hữu hạn nên d′, k và h′ không xác định.",
+     "whyItHappens": "Vì sao?",
+     "correctMark": "✓ Đúng",
+     "incorrectMark": "✗ Chưa đúng",
+     "actualPrefixTemplate": "Thực tế: {value}",
+     "predictionEyebrow": "Dự đoán",
+     "predictionAtFocusTitle": "Vị trí này chưa dự đoán được",
+     "predictionAtFocusText": "Vật đang nằm đúng tại tiêu điểm nên không có ảnh hữu hạn để dự đoán về tính chất, chiều và độ lớn. Hãy dịch vật ra khỏi tiêu điểm rồi dự đoán lại.",
+     "predictionCompareTitle": "Đối chiếu dự đoán",
+     "predictAgain": "Dự đoán lần khác",
+     "predictionAllMatchTemplate": "Cả {total} dự đoán đều khớp với hình dựng được.",
+     "predictionPartialTemplate": "Có {count} trên {total} dự đoán khớp với hình dựng được. Hãy đối chiếu lại đường đi của các tia.",
+     "promptNature": "Tính chất ảnh",
+     "promptOrientation": "Chiều của ảnh",
+     "promptSize": "Độ lớn của ảnh",
+     "promptScreen": "Hứng trên màn",
+     "actualRealImage": "Ảnh thật",
+     "actualVirtualImage": "Ảnh ảo",
+     "actualCatchable": "Hứng được",
+     "actualNotCatchable": "Không hứng được",
+     "reasonRealImage": "Hai tia ló thực sự cắt nhau sau thấu kính nên ảnh là ảnh thật.",
+     "reasonVirtualImage": "Các tia ló loe ra; chỉ phần kéo dài ngược của chúng cắt nhau nên ảnh là ảnh ảo.",
+     "reasonOrientationNegativeTemplate": "k = {k}; k âm nên ảnh ngược chiều với vật.",
+     "reasonOrientationPositiveTemplate": "k = {k}; k dương nên ảnh cùng chiều với vật.",
+     "reasonSizeTemplate": "|k| = {magnitude}, nên ảnh {size}.",
+     "reasonScreenCatchable": "Ảnh thật do các tia sáng thực hội tụ nên đặt màn đúng vị trí sẽ hứng được.",
+     "reasonScreenNotCatchable": "Ảnh ảo không có tia sáng thực đi qua nên không hứng được trên màn.",
+     "predictionBeforeTitle": "Dự đoán trước khi xem ảnh",
+     "predictionBeforeText": "Ảnh và các tia ló đang được che. Hãy chọn cả bốn mục rồi chốt dự đoán để so sánh. Phần này không tính điểm và không lưu kết quả.",
+     "confirmPredictionButton": "Chốt dự đoán và xem ảnh",
+     "modePredictAnnouncement": "Đã chuyển sang chế độ Dự đoán. Ảnh và các tia ló được che cho tới khi bạn chốt dự đoán.",
+     "modeConstructAnnouncement": "Đã chuyển sang chế độ Dựng ảnh từng bước. Bắt đầu từ bước 1.",
+     "modeExploreAnnouncement": "Đã chuyển sang chế độ Khám phá.",
+     "parameterChangedAnnouncement": "Đã thay đổi tham số nên dự đoán được làm lại từ đầu.",
+     "presetMovedTemplate": "Đã đặt vật ở vị trí: {region}.",
+     "fitAtInfinityAnnouncement": "Đã đưa khung về mặc định. Vật ở tiêu điểm nên không có ảnh hữu hạn để đưa vào khung.",
+     "fitInFrameAnnouncement": "Đã chỉnh khung để thấy cả vật và ảnh.",
+     "fitOutOfFrameAnnouncement": "Đã chỉnh khung để thấy vật. Ảnh đang được che nên chưa đưa vào khung.",
+     "viewportResetAnnouncement": "Đã đưa khung nhìn về mặc định.",
+     "resetDefaultsAnnouncement": "Đã khôi phục trạng thái mặc định: tiêu cự 10 cm, khoảng cách vật 30 cm, chiều cao vật 5 cm, chế độ Khám phá.",
+     "predictionRevealedTemplate": "Đã hiện ảnh. {sentence} Số dự đoán khớp: {count} trên {total}.",
+     "predictionRestartedAnnouncement": "Đã bắt đầu lượt dự đoán mới.",
+     "resourceReady": "Học liệu sẵn sàng",
+     "resourceInitializing": "Đang khởi tạo học liệu",
+     "scene": {
+      "heading": "Khu vực mô phỏng thấu kính hội tụ",
+      "svgTitle": "Sơ đồ tạo ảnh qua thấu kính hội tụ",
+      "descriptionBaseTemplate": "Trục chính nằm ngang, thấu kính hội tụ đặt tại quang tâm O. Tiêu cự {focalLength}. Vật AB cao {objectHeight}, A nằm trên trục chính, cách thấu kính {objectDistance} về phía trái.",
+      "descriptionConcealedSuffix": "Ảnh và các tia ló đang được che để bạn dự đoán trước.",
+      "descriptionConstructSuffix": "Ảnh A′B′ sẽ được dựng ở bước cuối.",
+      "descriptionAtInfinitySuffix": "Vật nằm đúng tại tiêu điểm nên các tia ló song song với nhau và không cắt nhau; không có ảnh hữu hạn.",
+      "descriptionNormalTemplate": "Ảnh A′B′ là {kind}, {orientation}, {size}, cách thấu kính {distance} về {side}.",
+      "descriptionOutOfViewTemplate": "{target} đang nằm ngoài khung nhìn; dùng nút Vừa khung để thấy.",
+      "sideBehind": "phía sau thấu kính",
+      "sideObject": "cùng phía vật",
+      "objectAriaTemplate": "Vật AB trên trục chính, cách thấu kính {distance}. Dùng phím mũi tên trái, phải để dịch chuyển.",
+      "screenAriaTemplate": "Màn hứng ảnh, cách thấu kính {distance}. Dùng phím mũi tên để dịch màn.",
+      "distanceFromLensTemplate": "Cách thấu kính {value}",
+      "objectLabel": "Vật",
+      "screenLabel": "Màn",
+      "screenSharp": "ảnh rõ nét",
+      "screenBlurred": "ảnh nhòe",
+      "screenNotCatchable": "không hứng được ảnh ảo",
+      "screenNoImage": "không có ảnh",
+      "waitingPrediction": "Dự đoán trước khi xem ảnh",
+      "constructChipTemplate": "Dựng ảnh · bước {current}/{total}",
+      "infinityChip": "Tia ló song song · ảnh ở vô cực",
+      "rulerObjectLabelTemplate": "d = {value}",
+      "rulerImageLabelTemplate": "d′ = {value}",
+      "rulerImageNoteConcealed": "d′ hiện sau khi chốt dự đoán",
+      "rulerImageNoteConstruct": "d′ hiện ở bước 5",
+      "rulerImageNoteInfinity": "d′: ảnh ở vô cực",
+      "edgeObject": "Vật",
+      "edgeImage": "Ảnh",
+      "edgeScreen": "Màn",
+      "edgeFitTemplate": "{target} nằm ngoài khung. Vừa khung để thấy.",
+      "verticalScaleTemplate": "Trục đứng phóng to ×{value}"
+     }
+    }
+   },
+   "en": {
+    "eyebrow": "Physics · Optics",
+    "title": "Exploring image formation through a converging lens",
+    "description": "Move the object, change the focal length and the object height to see how the image through a converging lens changes in position, orientation, size and nature (real or virtual).",
+    "modeLabel": "Mode",
+    "modes": {
+     "explore": "Explore",
+     "construct": "Step-by-step construction",
+     "predict": "Predict"
+    },
+    "guidance": [
+     {
+      "label": "Where to start",
+      "text": "Press the five special positions one by one, or drag the object AB directly along the optical axis. After each move, read the status line at the top of the diagram and the Conclusion panel."
+     },
+     {
+      "label": "Try and compare",
+      "text": "Move the object inward from beyond 2F: how large does the image grow before it changes from smaller to equal then larger than the object? Turn on the third ray to check whether all three rays meet at one point."
+     },
+     {
+      "label": "Open question",
+      "text": "Why is there no image exactly at the focus? Try changing the focal length and placing the object back at F to see whether the conclusion changes. Can a virtual image be caught on a screen?"
+     }
+    ],
+    "rays": [
+     {
+      "id": "parallel",
+      "label": "Incident ray parallel to the optical axis",
+      "shortLabel": "Parallel",
+      "description": "It emerges through the focal point F′."
+     },
+     {
+      "id": "through-center",
+      "label": "Incident ray through the optical center O",
+      "shortLabel": "Through O",
+      "description": "It travels straight on without changing direction."
+     },
+     {
+      "id": "through-focus",
+      "label": "Incident ray through the focal point F",
+      "shortLabel": "Through F",
+      "description": "It emerges parallel to the optical axis.",
+      "insideFocusLabel": "Incident ray whose extension passes through the focal point F"
+     }
+    ],
+    "presets": [
+     {
+      "region": "beyond-2f",
+      "label": "Beyond 2F",
+      "hint": "Move the object farther than 2F"
+     },
+     {
+      "region": "at-2f",
+      "label": "At 2F",
+      "hint": "Place the object exactly at 2F"
+     },
+     {
+      "region": "between-f-and-2f",
+      "label": "Between F and 2F",
+      "hint": "Place the object between F and 2F"
+     },
+     {
+      "region": "at-f",
+      "label": "At F",
+      "hint": "Place the object exactly at the focal point F"
+     },
+     {
+      "region": "inside-f",
+      "label": "Inside F",
+      "hint": "Move the object within the focal length"
+     }
+    ],
+    "regionLabels": {
+     "beyond-2f": "Object beyond 2F",
+     "at-2f": "Object at 2F",
+     "between-f-and-2f": "Object between F and 2F",
+     "at-f": "Object at focal point F",
+     "inside-f": "Object within the focal length"
+    },
+    "regionExplanations": {
+     "beyond-2f": "When d > 2f, the real image lies between F′ and 2F′, inverted and smaller than the object.",
+     "at-2f": "When d = 2f, the real image lies exactly at 2F′, inverted and equal to the object.",
+     "between-f-and-2f": "When f < d < 2f, the real image lies beyond 2F′, inverted and larger than the object.",
+     "at-f": "When d = f, the emergent rays are parallel, so they never meet: the image is at infinity, with no finite image.",
+     "inside-f": "When d < f, the emergent rays spread apart; their backward extensions meet and form a virtual image, upright and larger than the object."
+    },
+    "causeEffect": {
+     "beyond-2f": "The farther the object moves away, the closer the image moves to F′ and the smaller it gets; moving the object toward 2F makes the image grow.",
+     "at-2f": "The object and the image are equally far from the lens, so the image equals the object. Moving the object away shrinks the image; moving it closer enlarges it.",
+     "between-f-and-2f": "As the object approaches F from outside, the image moves away from the lens and grows, so a large image can be caught on a distant screen.",
+     "at-f": "Light from a point at the focus emerges as a parallel beam, so the image is pushed to infinity.",
+     "inside-f": "An eye looking through the lens sees a virtual image larger than the object — this is how a magnifying glass makes small things look bigger."
+    },
+    "natureQuestion": {
+     "id": "prediction.nature",
+     "prompt": "Is the image real or virtual?",
+     "choices": [
+      {
+       "id": "nature.real",
+       "value": "real",
+       "label": "Real image"
+      },
+      {
+       "id": "nature.virtual",
+       "value": "virtual",
+       "label": "Virtual image"
+      }
+     ]
+    },
+    "orientationQuestion": {
+     "id": "prediction.orientation",
+     "prompt": "Is the image upright or inverted relative to the object?",
+     "choices": [
+      {
+       "id": "orientation.upright",
+       "value": "upright",
+       "label": "Upright"
+      },
+      {
+       "id": "orientation.inverted",
+       "value": "inverted",
+       "label": "Inverted"
+      }
+     ]
+    },
+    "sizeQuestion": {
+     "id": "prediction.size",
+     "prompt": "Is the image larger than, equal to or smaller than the object?",
+     "choices": [
+      {
+       "id": "size.larger",
+       "value": "larger",
+       "label": "Larger than the object"
+      },
+      {
+       "id": "size.equal",
+       "value": "equal",
+       "label": "Equal to the object"
+      },
+      {
+       "id": "size.smaller",
+       "value": "smaller",
+       "label": "Smaller than the object"
+      }
+     ]
+    },
+    "screenQuestion": {
+     "id": "prediction.screen",
+     "prompt": "Can this image be caught on a screen?",
+     "choices": [
+      {
+       "id": "screen.catchable",
+       "value": "catchable",
+       "label": "Catchable"
+      },
+      {
+       "id": "screen.not-catchable",
+       "value": "not-catchable",
+       "label": "Not catchable"
+      }
+     ]
+    },
+    "constructionSteps": [
+     {
+      "step": "incident",
+      "title": "Step 1 · Incident ray",
+      "instruction": "From the tip B of the object, draw an incident ray parallel to the optical axis up to the lens."
+     },
+     {
+      "step": "emergent",
+      "title": "Step 2 · Emergent ray",
+      "instruction": "An incident ray parallel to the optical axis emerges through the focal point F′ behind the lens."
+     },
+     {
+      "step": "center-ray",
+      "title": "Step 3 · Ray through the optical center",
+      "instruction": "Draw a ray from B through the optical center O; this ray travels straight without changing direction."
+     },
+     {
+      "step": "intersection",
+      "title": "Step 4 · Intersection",
+      "instruction": "The two emergent rays meet at B′. If they spread apart, extend them backward to find the intersection."
+     },
+     {
+      "step": "image",
+      "title": "Step 5 · Draw the image and conclude",
+      "instruction": "Drop a perpendicular from B′ to the optical axis to get A′; A′B′ is the image of AB. Read its nature, orientation and size."
+     }
+    ],
+    "tasks": [
+     {
+      "id": "task.equal-size",
+      "title": "An image equal to the object",
+      "hint": "There is a unique position for an image exactly equal to the object."
+     },
+     {
+      "id": "task.virtual-upright",
+      "title": "A virtual, upright, larger image",
+      "hint": "Try moving the object very close to the lens."
+     },
+     {
+      "id": "task.far-image",
+      "title": "An image very far from the lens",
+      "hint": "From outside, bring the object close to F and watch d′."
+     }
+    ],
+    "modelNotes": [
+     "The lens is thin and ideal: thickness and aberrations are ignored; for ray construction the lens is treated as large enough for every special ray to pass through it.",
+     "Light travels from left to right; the object AB is real and perpendicular to the optical axis, with A on the axis.",
+     "The image follows 1/f = 1/d + 1/d′ and k = −d′/d with this sign convention: d > 0; d′ > 0 for a real image (behind the lens) and d′ < 0 for a virtual image (on the object side). Example: f = 10 cm and d = 5 cm give 1/10 = 1/5 + 1/d′, so d′ = −10 cm, a virtual image 10 cm from the lens.",
+     "For readability the vertical axis is drawn magnified relative to the horizontal axis (usually about 2–3 times, depending on the frame size), and the frame picks its scale so the object and 2F′ stay in view. This magnification does not change the image position or where the rays meet.",
+     "Image screen: light from each object point passes through the lens (aperture D = 6 cm) and converges at the image point. A screen at a distance s from the lens cuts this cone into a light spot of diameter D·|s − d′|/d′, centered on the ray through the optical center; the wider the spot, the dimmer it is. The image counts as sharp when |s − d′| ≤ 0.75 cm. This is an approximate geometric model that ignores diffraction and aberrations.",
+     "Zooming, panning or \"Fit to view\" only change the view, not any physical quantity."
+    ],
+    "ui": {
+     "parameterLabels": {
+      "focalLength": "Focal length f",
+      "objectDistance": "Object distance d",
+      "objectHeight": "Object height h",
+      "screenDistance": "Screen distance"
+     },
+     "parametersTitle": "Parameters",
+     "specialPositions": "Special positions",
+     "imageRays": "Rays",
+     "constructRaysLockedNote": "In Construct mode the rays appear step by step, so the ray switches are temporarily locked.",
+     "toolsTitle": "Tools",
+     "rulerToggle": "Ruler",
+     "rulerToggleHint": "Show the distances d and d′ at the bottom of the diagram.",
+     "screenToggle": "Image screen",
+     "screenToggleHint": "Drag the screen on the diagram or use the slider to find where the image is sharp.",
+     "constructionEyebrow": "Ray construction",
+     "constructionStepAriaTemplate": "Step {current} of {total}",
+     "constructionInfinityNote": "The two emergent rays are parallel, so there is no intersection: the image is at infinity.",
+     "previousStep": "Previous step",
+     "nextStep": "Next step",
+     "restart": "Restart",
+     "tasksEyebrow": "Mini challenges",
+     "tasksTitle": "Exploration tasks",
+     "taskSatisfiedNow": "Satisfied right now.",
+     "taskAchievedSession": "Achieved earlier in this session.",
+     "taskCompleted": "Completed",
+     "taskNotCompleted": "Not completed",
+     "conclusionTitle": "Conclusion",
+     "conclusionConcealed": "The conclusion and the numerical values appear after you confirm your prediction.",
+     "conclusionConstructPending": "The conclusion, d′ and the image A′B′ appear at step 5, once the construction is done.",
+     "behindLens": "behind the lens",
+     "objectSide": "virtual, on the object side",
+     "kInvertedHint": "inverted",
+     "kUprightHint": "upright",
+     "objectHeightReference": "object h = {value}",
+     "substitutionLabel": "Substitution",
+     "signConvention": "Convention: d′ > 0 for a real image, d′ < 0 for a virtual image.",
+     "infinitySubstitution": "1/d′ = 1/f − 1/d = 0",
+     "noFiniteImage": "There is no finite image, so d′, k and h′ are undefined.",
+     "whyItHappens": "Why?",
+     "correctMark": "✓ Correct",
+     "incorrectMark": "✗ Incorrect",
+     "actualPrefixTemplate": "Actual: {value}",
+     "predictionEyebrow": "Prediction",
+     "predictionAtFocusTitle": "This position cannot be predicted",
+     "predictionAtFocusText": "The object is exactly at the focal point, so there is no finite image to predict its nature, orientation and size. Move the object away from the focus and predict again.",
+     "predictionCompareTitle": "Compare predictions",
+     "predictAgain": "Predict again",
+     "predictionAllMatchTemplate": "All {total} predictions match the constructed image.",
+     "predictionPartialTemplate": "{count} of {total} predictions match the constructed image. Check the ray paths again.",
+     "promptNature": "Image nature",
+     "promptOrientation": "Image orientation",
+     "promptSize": "Image size",
+     "promptScreen": "Catchable on screen",
+     "actualRealImage": "Real image",
+     "actualVirtualImage": "Virtual image",
+     "actualCatchable": "Catchable",
+     "actualNotCatchable": "Not catchable",
+     "reasonRealImage": "The two emergent rays really intersect behind the lens, so the image is real.",
+     "reasonVirtualImage": "The emergent rays spread apart; only their backward extensions intersect, so the image is virtual.",
+     "reasonOrientationNegativeTemplate": "k = {k}; k is negative, so the image is inverted relative to the object.",
+     "reasonOrientationPositiveTemplate": "k = {k}; k is positive, so the image is upright relative to the object.",
+     "reasonSizeTemplate": "|k| = {magnitude}, so the image is {size}.",
+     "reasonScreenCatchable": "A real image is formed by converging light rays, so a screen placed at the right position catches it.",
+     "reasonScreenNotCatchable": "A virtual image has no real light rays passing through it, so it cannot be caught on a screen.",
+     "predictionBeforeTitle": "Predict before seeing the image",
+     "predictionBeforeText": "The image and the emergent rays are hidden. Choose all four items and confirm your prediction to compare. This section is not graded and does not save results.",
+     "confirmPredictionButton": "Confirm prediction and see the image",
+     "modePredictAnnouncement": "Switched to Prediction mode. The image and the emergent rays stay hidden until you confirm your prediction.",
+     "modeConstructAnnouncement": "Switched to step-by-step ray construction. Start at step 1.",
+     "modeExploreAnnouncement": "Switched to Explore mode.",
+     "parameterChangedAnnouncement": "The parameter changed, so the prediction starts over.",
+     "presetMovedTemplate": "Object placed at the position: {region}.",
+     "fitAtInfinityAnnouncement": "The view is back to the default. The object is at the focus, so there is no finite image to bring into view.",
+     "fitInFrameAnnouncement": "The view now shows both the object and the image.",
+     "fitOutOfFrameAnnouncement": "The view now shows the object. The image is still hidden, so it was not brought into view.",
+     "viewportResetAnnouncement": "The view was reset to the default.",
+     "resetDefaultsAnnouncement": "Default state restored: focal length 10 cm, object distance 30 cm, object height 5 cm, Explore mode.",
+     "predictionRevealedTemplate": "Image shown. {sentence} Matching predictions: {count} of {total}.",
+     "predictionRestartedAnnouncement": "A new prediction round started.",
+     "resourceReady": "Resource ready",
+     "resourceInitializing": "Initializing resource",
+     "scene": {
+      "heading": "Converging lens simulation area",
+      "svgTitle": "Ray diagram of image formation by a converging lens",
+      "descriptionBaseTemplate": "The optical axis is horizontal, and a converging lens is placed at the optical center O. Focal length {focalLength}. The object AB is {objectHeight} tall, with A on the axis, {objectDistance} from the lens on the left.",
+      "descriptionConcealedSuffix": "The image and the emergent rays are hidden so that you can predict first.",
+      "descriptionConstructSuffix": "The image A′B′ is drawn at the last step.",
+      "descriptionAtInfinitySuffix": "The object is exactly at the focus, so the emergent rays are parallel and never meet; there is no finite image.",
+      "descriptionNormalTemplate": "The image A′B′ is a {kind}, {orientation}, {size}, {distance} from the lens on the {side}.",
+      "descriptionOutOfViewTemplate": "{target} is outside the view; use Fit to view to see it.",
+      "sideBehind": "far side of the lens",
+      "sideObject": "object side",
+      "objectAriaTemplate": "Object AB on the optical axis, {distance} from the lens. Use the left and right arrow keys to move it.",
+      "screenAriaTemplate": "Image screen, {distance} from the lens. Use the arrow keys to move the screen.",
+      "distanceFromLensTemplate": "Distance from the lens: {value}",
+      "objectLabel": "Object",
+      "screenLabel": "Screen",
+      "screenSharp": "sharp image",
+      "screenBlurred": "blurred image",
+      "screenNotCatchable": "a virtual image cannot be caught",
+      "screenNoImage": "no image",
+      "waitingPrediction": "Predict before seeing the image",
+      "constructChipTemplate": "Construction · step {current}/{total}",
+      "infinityChip": "Parallel emergent rays · image at infinity",
+      "rulerObjectLabelTemplate": "d = {value}",
+      "rulerImageLabelTemplate": "d′ = {value}",
+      "rulerImageNoteConcealed": "d′ appears after you confirm your prediction",
+      "rulerImageNoteConstruct": "d′ appears at step 5",
+      "rulerImageNoteInfinity": "d′: image at infinity",
+      "edgeObject": "Object",
+      "edgeImage": "Image",
+      "edgeScreen": "Screen",
+      "edgeFitTemplate": "{target} is outside the view. Fit to view to see it.",
+      "verticalScaleTemplate": "Vertical scale ×{value}"
+     }
+    }
+   }
+  }
+ },
+ {
+  "vi": {
+   "eyebrow": "Vật lý · Quang học",
+   "title": "Khám phá sự tạo ảnh qua thấu kính hội tụ",
+   "description": "Dịch chuyển vật, đổi tiêu cự và chiều cao vật để xem ảnh qua thấu kính hội tụ thay đổi về vị trí, chiều, độ lớn và tính chất thật hay ảo.",
+   "modeLabel": "Chế độ",
+   "modes": {
+    "explore": "Khám phá",
+    "construct": "Dựng ảnh từng bước",
+    "predict": "Dự đoán"
+   },
+   "guidance": [
+    {
+     "label": "Bắt đầu từ đâu",
+     "text": "Bấm lần lượt năm vị trí đặc biệt, hoặc kéo trực tiếp vật AB trên trục chính. Mỗi lần dịch chuyển, đọc dòng trạng thái ở góc trên hình và phần Kết luận."
+    },
+    {
+     "label": "Thử và đối chiếu",
+     "text": "Đưa vật từ ngoài 2F vào dần: ảnh lớn lên tới đâu thì đổi từ nhỏ hơn sang bằng rồi lớn hơn vật? Bật tia thứ ba để kiểm tra ba tia có cùng cắt tại một điểm không."
+    },
+    {
+     "label": "Câu hỏi mở",
+     "text": "Vì sao đúng tại tiêu điểm lại không có ảnh? Thử đổi tiêu cự rồi đặt lại vật tại F để xem kết luận có đổi không. Ảnh ảo có hứng được trên màn chắn không?"
+    }
+   ],
+   "rays": [
+    {
+     "id": "parallel",
+     "label": "Tia tới song song với trục chính",
+     "shortLabel": "Song song",
+     "description": "Tia ló đi qua tiêu điểm F′."
+    },
+    {
+     "id": "through-center",
+     "label": "Tia tới đi qua quang tâm O",
+     "shortLabel": "Qua O",
+     "description": "Tia ló truyền thẳng, không đổi phương."
+    },
+    {
+     "id": "through-focus",
+     "label": "Tia tới đi qua tiêu điểm F",
+     "shortLabel": "Qua F",
+     "description": "Tia ló song song với trục chính.",
+     "insideFocusLabel": "Tia tới có đường kéo dài đi qua tiêu điểm F"
+    }
+   ],
+   "presets": [
+    {
+     "region": "beyond-2f",
+     "label": "Ngoài 2F",
+     "hint": "Đưa vật ra xa hơn 2F"
+    },
+    {
+     "region": "at-2f",
+     "label": "Tại 2F",
+     "hint": "Đặt vật đúng tại 2F"
+    },
+    {
+     "region": "between-f-and-2f",
+     "label": "Giữa F và 2F",
+     "hint": "Đặt vật giữa F và 2F"
+    },
+    {
+     "region": "at-f",
+     "label": "Tại F",
+     "hint": "Đặt vật đúng tại tiêu điểm F"
+    },
+    {
+     "region": "inside-f",
+     "label": "Trong F",
+     "hint": "Đưa vật vào trong khoảng tiêu cự"
+    }
+   ],
+   "regionLabels": {
+    "beyond-2f": "Vật ngoài 2F",
+    "at-2f": "Vật tại 2F",
+    "between-f-and-2f": "Vật giữa F và 2F",
+    "at-f": "Vật tại tiêu điểm F",
+    "inside-f": "Vật trong khoảng tiêu cự"
+   },
+   "regionExplanations": {
+    "beyond-2f": "Khi d > 2f, ảnh thật nằm giữa F′ và 2F′, ngược chiều và nhỏ hơn vật.",
+    "at-2f": "Khi d = 2f, ảnh thật nằm đúng tại 2F′, ngược chiều và bằng vật.",
+    "between-f-and-2f": "Khi f < d < 2f, ảnh thật nằm ngoài 2F′, ngược chiều và lớn hơn vật.",
+    "at-f": "Khi d = f, các tia ló song song với nhau nên không cắt nhau: ảnh ở vô cực, không có ảnh hữu hạn.",
+    "inside-f": "Khi d < f, các tia ló loe ra; phần kéo dài ngược của chúng cắt nhau, cho ảnh ảo cùng chiều và lớn hơn vật."
+   },
+   "causeEffect": {
+    "beyond-2f": "Vật càng lùi xa, ảnh càng lùi về gần F′ và càng nhỏ đi; đưa vật vào gần 2F thì ảnh lớn dần lên.",
+    "at-2f": "Vật và ảnh cách thấu kính bằng nhau nên ảnh bằng đúng vật. Đẩy vật ra xa thì ảnh nhỏ lại, đưa vào gần thì ảnh lớn lên.",
+    "between-f-and-2f": "Vật càng tiến gần F từ phía ngoài, ảnh càng ra xa thấu kính và càng lớn, nên có thể hứng được ảnh lớn trên một màn ở xa.",
+    "at-f": "Ánh sáng từ một điểm đặt tại tiêu điểm ló ra thành chùm song song, nên ảnh bị đẩy ra vô cực.",
+    "inside-f": "Mắt nhìn qua thấu kính thấy ảnh ảo lớn hơn vật — đó là cách kính lúp giúp vật nhỏ trông to hơn."
+   },
+   "natureQuestion": {
+    "id": "prediction.nature",
+    "prompt": "Ảnh là ảnh thật hay ảnh ảo?",
+    "choices": [
+     {
+      "id": "nature.real",
+      "value": "real",
+      "label": "Ảnh thật"
+     },
+     {
+      "id": "nature.virtual",
+      "value": "virtual",
+      "label": "Ảnh ảo"
+     }
+    ]
+   },
+   "orientationQuestion": {
+    "id": "prediction.orientation",
+    "prompt": "Ảnh cùng chiều hay ngược chiều với vật?",
+    "choices": [
+     {
+      "id": "orientation.upright",
+      "value": "upright",
+      "label": "Cùng chiều"
+     },
+     {
+      "id": "orientation.inverted",
+      "value": "inverted",
+      "label": "Ngược chiều"
+     }
+    ]
+   },
+   "sizeQuestion": {
+    "id": "prediction.size",
+    "prompt": "Ảnh lớn hơn, bằng hay nhỏ hơn vật?",
+    "choices": [
+     {
+      "id": "size.larger",
+      "value": "larger",
+      "label": "Lớn hơn vật"
+     },
+     {
+      "id": "size.equal",
+      "value": "equal",
+      "label": "Bằng vật"
+     },
+     {
+      "id": "size.smaller",
+      "value": "smaller",
+      "label": "Nhỏ hơn vật"
+     }
+    ]
+   },
+   "screenQuestion": {
+    "id": "prediction.screen",
+    "prompt": "Có hứng được ảnh này trên màn chắn không?",
+    "choices": [
+     {
+      "id": "screen.catchable",
+      "value": "catchable",
+      "label": "Hứng được"
+     },
+     {
+      "id": "screen.not-catchable",
+      "value": "not-catchable",
+      "label": "Không hứng được"
+     }
+    ]
+   },
+   "constructionSteps": [
+    {
+     "step": "incident",
+     "title": "Bước 1 · Tia tới",
+     "instruction": "Từ đỉnh B của vật, vẽ tia tới song song với trục chính đi đến thấu kính."
+    },
+    {
+     "step": "emergent",
+     "title": "Bước 2 · Tia ló",
+     "instruction": "Tia tới song song với trục chính cho tia ló đi qua tiêu điểm F′ phía sau thấu kính."
+    },
+    {
+     "step": "center-ray",
+     "title": "Bước 3 · Tia qua quang tâm",
+     "instruction": "Vẽ thêm tia từ B đi qua quang tâm O; tia này truyền thẳng, không đổi phương."
+    },
+    {
+     "step": "intersection",
+     "title": "Bước 4 · Giao điểm",
+     "instruction": "Hai tia ló cắt nhau tại B′. Nếu hai tia ló loe ra, kéo dài ngược chúng để tìm giao điểm."
+    },
+    {
+     "step": "image",
+     "title": "Bước 5 · Dựng ảnh và kết luận",
+     "instruction": "Từ B′ hạ vuông góc xuống trục chính được A′; A′B′ là ảnh của AB. Đọc tính chất, chiều và độ lớn của ảnh."
+    }
+   ],
+   "tasks": [
+    {
+     "id": "task.equal-size",
+     "title": "Ảnh bằng vật",
+     "hint": "Có một vị trí duy nhất cho ảnh bằng đúng vật."
+    },
+    {
+     "id": "task.virtual-upright",
+     "title": "Ảnh ảo, cùng chiều, lớn hơn vật",
+     "hint": "Thử đưa vật vào rất gần thấu kính."
+    },
+    {
+     "id": "task.far-image",
+     "title": "Ảnh ở rất xa thấu kính",
+     "hint": "Từ phía ngoài, đưa vật lại sát F và theo dõi d′."
+    }
+   ],
+   "modelNotes": [
+    "Thấu kính mỏng, lý tưởng: bỏ qua bề dày và quang sai; khi dựng ảnh, coi thấu kính đủ lớn để các tia đặc biệt đều đi qua.",
+    "Ánh sáng đi từ trái sang phải; vật AB là vật thật, đặt vuông góc với trục chính, A nằm trên trục chính.",
+    "Ảnh được tính theo 1/f = 1/d + 1/d′ và k = −d′/d với quy ước dấu: d > 0; d′ > 0 khi ảnh thật (sau thấu kính), d′ < 0 khi ảnh ảo (cùng phía vật). Ví dụ f = 10 cm, d = 5 cm: 1/10 = 1/5 + 1/d′ nên d′ = −10 cm, tức ảnh ảo cách thấu kính 10 cm.",
+    "Để hình dễ đọc, trục đứng được vẽ phóng đại so với trục ngang (thường khoảng 2–3 lần, tùy kích thước khung hình) và khung tự chọn thang để luôn thấy vật cùng 2F′. Phép phóng đại này không làm thay đổi vị trí ảnh hay giao điểm của các tia.",
+    "Màn hứng ảnh: chùm sáng từ mỗi điểm của vật qua thấu kính (khẩu độ D = 6 cm) hội tụ tại điểm ảnh. Màn đặt cách thấu kính một khoảng s cắt chùm này thành vệt sáng đường kính D·|s − d′|/d′, tâm nằm trên tia qua quang tâm; vệt càng rộng càng tối. Ảnh coi là rõ nét khi |s − d′| ≤ 0,75 cm. Đây là mô hình hình học gần đúng, bỏ qua nhiễu xạ và quang sai.",
+    "Phóng to, thu nhỏ, kéo khung nhìn hay \"Vừa khung\" chỉ đổi góc quan sát, không làm thay đổi bất kỳ đại lượng vật lý nào."
+   ],
+   "ui": {
+    "parameterLabels": {
+     "focalLength": "Tiêu cự f",
+     "objectDistance": "Khoảng cách vật d",
+     "objectHeight": "Chiều cao vật h",
+     "screenDistance": "Khoảng cách màn"
+    },
+    "parametersTitle": "Tham số",
+    "specialPositions": "Vị trí đặc biệt",
+    "imageRays": "Tia sáng",
+    "constructRaysLockedNote": "Ở chế độ Dựng ảnh, các tia hiện theo từng bước nên công tắc tia tạm khóa.",
+    "toolsTitle": "Công cụ",
+    "rulerToggle": "Thước đo",
+    "rulerToggleHint": "Hiện khoảng cách d và d′ ở đáy hình.",
+    "screenToggle": "Màn hứng ảnh",
+    "screenToggleHint": "Kéo màn trên hình hoặc dùng thanh trượt để tìm chỗ ảnh rõ nét.",
+    "constructionEyebrow": "Dựng ảnh",
+    "constructionStepAriaTemplate": "Bước {current} trên {total}",
+    "constructionInfinityNote": "Hai tia ló song song nên không có giao điểm: ảnh ở vô cực.",
+    "previousStep": "Bước trước",
+    "nextStep": "Bước tiếp theo",
+    "restart": "Làm lại",
+    "tasksEyebrow": "Thử thách nhỏ",
+    "tasksTitle": "Nhiệm vụ khám phá",
+    "taskSatisfiedNow": "Đang đạt ngay lúc này.",
+    "taskAchievedSession": "Đã đạt trong phiên này.",
+    "taskCompleted": "Đã hoàn thành",
+    "taskNotCompleted": "Chưa hoàn thành",
+    "conclusionTitle": "Kết luận",
+    "conclusionConcealed": "Kết luận và các giá trị số sẽ hiện sau khi bạn chốt dự đoán.",
+    "conclusionConstructPending": "Kết luận, d′ và ảnh A′B′ hiện ở bước 5, sau khi dựng xong.",
+    "behindLens": "sau thấu kính",
+    "objectSide": "ảnh ảo, cùng phía vật",
+    "kInvertedHint": "ngược chiều",
+    "kUprightHint": "cùng chiều",
+    "objectHeightReference": "vật h = {value}",
+    "substitutionLabel": "Thay số",
+    "signConvention": "Quy ước: d′ > 0 với ảnh thật, d′ < 0 với ảnh ảo.",
+    "infinitySubstitution": "1/d′ = 1/f − 1/d = 0",
+    "noFiniteImage": "Không có ảnh hữu hạn nên d′, k và h′ không xác định.",
+    "whyItHappens": "Vì sao?",
+    "correctMark": "✓ Đúng",
+    "incorrectMark": "✗ Chưa đúng",
+    "actualPrefixTemplate": "Thực tế: {value}",
+    "predictionEyebrow": "Dự đoán",
+    "predictionAtFocusTitle": "Vị trí này chưa dự đoán được",
+    "predictionAtFocusText": "Vật đang nằm đúng tại tiêu điểm nên không có ảnh hữu hạn để dự đoán về tính chất, chiều và độ lớn. Hãy dịch vật ra khỏi tiêu điểm rồi dự đoán lại.",
+    "predictionCompareTitle": "Đối chiếu dự đoán",
+    "predictAgain": "Dự đoán lần khác",
+    "predictionAllMatchTemplate": "Cả {total} dự đoán đều khớp với hình dựng được.",
+    "predictionPartialTemplate": "Có {count} trên {total} dự đoán khớp với hình dựng được. Hãy đối chiếu lại đường đi của các tia.",
+    "promptNature": "Tính chất ảnh",
+    "promptOrientation": "Chiều của ảnh",
+    "promptSize": "Độ lớn của ảnh",
+    "promptScreen": "Hứng trên màn",
+    "actualRealImage": "Ảnh thật",
+    "actualVirtualImage": "Ảnh ảo",
+    "actualCatchable": "Hứng được",
+    "actualNotCatchable": "Không hứng được",
+    "reasonRealImage": "Hai tia ló thực sự cắt nhau sau thấu kính nên ảnh là ảnh thật.",
+    "reasonVirtualImage": "Các tia ló loe ra; chỉ phần kéo dài ngược của chúng cắt nhau nên ảnh là ảnh ảo.",
+    "reasonOrientationNegativeTemplate": "k = {k}; k âm nên ảnh ngược chiều với vật.",
+    "reasonOrientationPositiveTemplate": "k = {k}; k dương nên ảnh cùng chiều với vật.",
+    "reasonSizeTemplate": "|k| = {magnitude}, nên ảnh {size}.",
+    "reasonScreenCatchable": "Ảnh thật do các tia sáng thực hội tụ nên đặt màn đúng vị trí sẽ hứng được.",
+    "reasonScreenNotCatchable": "Ảnh ảo không có tia sáng thực đi qua nên không hứng được trên màn.",
+    "predictionBeforeTitle": "Dự đoán trước khi xem ảnh",
+    "predictionBeforeText": "Ảnh và các tia ló đang được che. Hãy chọn cả bốn mục rồi chốt dự đoán để so sánh. Phần này không tính điểm và không lưu kết quả.",
+    "confirmPredictionButton": "Chốt dự đoán và xem ảnh",
+    "modePredictAnnouncement": "Đã chuyển sang chế độ Dự đoán. Ảnh và các tia ló được che cho tới khi bạn chốt dự đoán.",
+    "modeConstructAnnouncement": "Đã chuyển sang chế độ Dựng ảnh từng bước. Bắt đầu từ bước 1.",
+    "modeExploreAnnouncement": "Đã chuyển sang chế độ Khám phá.",
+    "parameterChangedAnnouncement": "Đã thay đổi tham số nên dự đoán được làm lại từ đầu.",
+    "presetMovedTemplate": "Đã đặt vật ở vị trí: {region}.",
+    "fitAtInfinityAnnouncement": "Đã đưa khung về mặc định. Vật ở tiêu điểm nên không có ảnh hữu hạn để đưa vào khung.",
+    "fitInFrameAnnouncement": "Đã chỉnh khung để thấy cả vật và ảnh.",
+    "fitOutOfFrameAnnouncement": "Đã chỉnh khung để thấy vật. Ảnh đang được che nên chưa đưa vào khung.",
+    "viewportResetAnnouncement": "Đã đưa khung nhìn về mặc định.",
+    "resetDefaultsAnnouncement": "Đã khôi phục trạng thái mặc định: tiêu cự 10 cm, khoảng cách vật 30 cm, chiều cao vật 5 cm, chế độ Khám phá.",
+    "predictionRevealedTemplate": "Đã hiện ảnh. {sentence} Số dự đoán khớp: {count} trên {total}.",
+    "predictionRestartedAnnouncement": "Đã bắt đầu lượt dự đoán mới.",
+    "resourceReady": "Học liệu sẵn sàng",
+    "resourceInitializing": "Đang khởi tạo học liệu",
+    "scene": {
+     "heading": "Khu vực mô phỏng thấu kính hội tụ",
+     "svgTitle": "Sơ đồ tạo ảnh qua thấu kính hội tụ",
+     "descriptionBaseTemplate": "Trục chính nằm ngang, thấu kính hội tụ đặt tại quang tâm O. Tiêu cự {focalLength}. Vật AB cao {objectHeight}, A nằm trên trục chính, cách thấu kính {objectDistance} về phía trái.",
+     "descriptionConcealedSuffix": "Ảnh và các tia ló đang được che để bạn dự đoán trước.",
+     "descriptionConstructSuffix": "Ảnh A′B′ sẽ được dựng ở bước cuối.",
+     "descriptionAtInfinitySuffix": "Vật nằm đúng tại tiêu điểm nên các tia ló song song với nhau và không cắt nhau; không có ảnh hữu hạn.",
+     "descriptionNormalTemplate": "Ảnh A′B′ là {kind}, {orientation}, {size}, cách thấu kính {distance} về {side}.",
+     "descriptionOutOfViewTemplate": "{target} đang nằm ngoài khung nhìn; dùng nút Vừa khung để thấy.",
+     "sideBehind": "phía sau thấu kính",
+     "sideObject": "cùng phía vật",
+     "objectAriaTemplate": "Vật AB trên trục chính, cách thấu kính {distance}. Dùng phím mũi tên trái, phải để dịch chuyển.",
+     "screenAriaTemplate": "Màn hứng ảnh, cách thấu kính {distance}. Dùng phím mũi tên để dịch màn.",
+     "distanceFromLensTemplate": "Cách thấu kính {value}",
+     "objectLabel": "Vật",
+     "screenLabel": "Màn",
+     "screenSharp": "ảnh rõ nét",
+     "screenBlurred": "ảnh nhòe",
+     "screenNotCatchable": "không hứng được ảnh ảo",
+     "screenNoImage": "không có ảnh",
+     "waitingPrediction": "Dự đoán trước khi xem ảnh",
+     "constructChipTemplate": "Dựng ảnh · bước {current}/{total}",
+     "infinityChip": "Tia ló song song · ảnh ở vô cực",
+     "rulerObjectLabelTemplate": "d = {value}",
+     "rulerImageLabelTemplate": "d′ = {value}",
+     "rulerImageNoteConcealed": "d′ hiện sau khi chốt dự đoán",
+     "rulerImageNoteConstruct": "d′ hiện ở bước 5",
+     "rulerImageNoteInfinity": "d′: ảnh ở vô cực",
+     "edgeObject": "Vật",
+     "edgeImage": "Ảnh",
+     "edgeScreen": "Màn",
+     "edgeFitTemplate": "{target} nằm ngoài khung. Vừa khung để thấy.",
+     "verticalScaleTemplate": "Trục đứng phóng to ×{value}"
+    }
+   }
+  },
+  "en": {
+   "eyebrow": "Physics · Optics",
+   "title": "Exploring image formation through a converging lens",
+   "description": "Move the object, change the focal length and the object height to see how the image through a converging lens changes in position, orientation, size and nature (real or virtual).",
+   "modeLabel": "Mode",
+   "modes": {
+    "explore": "Explore",
+    "construct": "Step-by-step construction",
+    "predict": "Predict"
+   },
+   "guidance": [
+    {
+     "label": "Where to start",
+     "text": "Press the five special positions one by one, or drag the object AB directly along the optical axis. After each move, read the status line at the top of the diagram and the Conclusion panel."
+    },
+    {
+     "label": "Try and compare",
+     "text": "Move the object inward from beyond 2F: how large does the image grow before it changes from smaller to equal then larger than the object? Turn on the third ray to check whether all three rays meet at one point."
+    },
+    {
+     "label": "Open question",
+     "text": "Why is there no image exactly at the focus? Try changing the focal length and placing the object back at F to see whether the conclusion changes. Can a virtual image be caught on a screen?"
+    }
+   ],
+   "rays": [
+    {
+     "id": "parallel",
+     "label": "Incident ray parallel to the optical axis",
+     "shortLabel": "Parallel",
+     "description": "It emerges through the focal point F′."
+    },
+    {
+     "id": "through-center",
+     "label": "Incident ray through the optical center O",
+     "shortLabel": "Through O",
+     "description": "It travels straight on without changing direction."
+    },
+    {
+     "id": "through-focus",
+     "label": "Incident ray through the focal point F",
+     "shortLabel": "Through F",
+     "description": "It emerges parallel to the optical axis.",
+     "insideFocusLabel": "Incident ray whose extension passes through the focal point F"
+    }
+   ],
+   "presets": [
+    {
+     "region": "beyond-2f",
+     "label": "Beyond 2F",
+     "hint": "Move the object farther than 2F"
+    },
+    {
+     "region": "at-2f",
+     "label": "At 2F",
+     "hint": "Place the object exactly at 2F"
+    },
+    {
+     "region": "between-f-and-2f",
+     "label": "Between F and 2F",
+     "hint": "Place the object between F and 2F"
+    },
+    {
+     "region": "at-f",
+     "label": "At F",
+     "hint": "Place the object exactly at the focal point F"
+    },
+    {
+     "region": "inside-f",
+     "label": "Inside F",
+     "hint": "Move the object within the focal length"
+    }
+   ],
+   "regionLabels": {
+    "beyond-2f": "Object beyond 2F",
+    "at-2f": "Object at 2F",
+    "between-f-and-2f": "Object between F and 2F",
+    "at-f": "Object at focal point F",
+    "inside-f": "Object within the focal length"
+   },
+   "regionExplanations": {
+    "beyond-2f": "When d > 2f, the real image lies between F′ and 2F′, inverted and smaller than the object.",
+    "at-2f": "When d = 2f, the real image lies exactly at 2F′, inverted and equal to the object.",
+    "between-f-and-2f": "When f < d < 2f, the real image lies beyond 2F′, inverted and larger than the object.",
+    "at-f": "When d = f, the emergent rays are parallel, so they never meet: the image is at infinity, with no finite image.",
+    "inside-f": "When d < f, the emergent rays spread apart; their backward extensions meet and form a virtual image, upright and larger than the object."
+   },
+   "causeEffect": {
+    "beyond-2f": "The farther the object moves away, the closer the image moves to F′ and the smaller it gets; moving the object toward 2F makes the image grow.",
+    "at-2f": "The object and the image are equally far from the lens, so the image equals the object. Moving the object away shrinks the image; moving it closer enlarges it.",
+    "between-f-and-2f": "As the object approaches F from outside, the image moves away from the lens and grows, so a large image can be caught on a distant screen.",
+    "at-f": "Light from a point at the focus emerges as a parallel beam, so the image is pushed to infinity.",
+    "inside-f": "An eye looking through the lens sees a virtual image larger than the object — this is how a magnifying glass makes small things look bigger."
+   },
+   "natureQuestion": {
+    "id": "prediction.nature",
+    "prompt": "Is the image real or virtual?",
+    "choices": [
+     {
+      "id": "nature.real",
+      "value": "real",
+      "label": "Real image"
+     },
+     {
+      "id": "nature.virtual",
+      "value": "virtual",
+      "label": "Virtual image"
+     }
+    ]
+   },
+   "orientationQuestion": {
+    "id": "prediction.orientation",
+    "prompt": "Is the image upright or inverted relative to the object?",
+    "choices": [
+     {
+      "id": "orientation.upright",
+      "value": "upright",
+      "label": "Upright"
+     },
+     {
+      "id": "orientation.inverted",
+      "value": "inverted",
+      "label": "Inverted"
+     }
+    ]
+   },
+   "sizeQuestion": {
+    "id": "prediction.size",
+    "prompt": "Is the image larger than, equal to or smaller than the object?",
+    "choices": [
+     {
+      "id": "size.larger",
+      "value": "larger",
+      "label": "Larger than the object"
+     },
+     {
+      "id": "size.equal",
+      "value": "equal",
+      "label": "Equal to the object"
+     },
+     {
+      "id": "size.smaller",
+      "value": "smaller",
+      "label": "Smaller than the object"
+     }
+    ]
+   },
+   "screenQuestion": {
+    "id": "prediction.screen",
+    "prompt": "Can this image be caught on a screen?",
+    "choices": [
+     {
+      "id": "screen.catchable",
+      "value": "catchable",
+      "label": "Catchable"
+     },
+     {
+      "id": "screen.not-catchable",
+      "value": "not-catchable",
+      "label": "Not catchable"
+     }
+    ]
+   },
+   "constructionSteps": [
+    {
+     "step": "incident",
+     "title": "Step 1 · Incident ray",
+     "instruction": "From the tip B of the object, draw an incident ray parallel to the optical axis up to the lens."
+    },
+    {
+     "step": "emergent",
+     "title": "Step 2 · Emergent ray",
+     "instruction": "An incident ray parallel to the optical axis emerges through the focal point F′ behind the lens."
+    },
+    {
+     "step": "center-ray",
+     "title": "Step 3 · Ray through the optical center",
+     "instruction": "Draw a ray from B through the optical center O; this ray travels straight without changing direction."
+    },
+    {
+     "step": "intersection",
+     "title": "Step 4 · Intersection",
+     "instruction": "The two emergent rays meet at B′. If they spread apart, extend them backward to find the intersection."
+    },
+    {
+     "step": "image",
+     "title": "Step 5 · Draw the image and conclude",
+     "instruction": "Drop a perpendicular from B′ to the optical axis to get A′; A′B′ is the image of AB. Read its nature, orientation and size."
+    }
+   ],
+   "tasks": [
+    {
+     "id": "task.equal-size",
+     "title": "An image equal to the object",
+     "hint": "There is a unique position for an image exactly equal to the object."
+    },
+    {
+     "id": "task.virtual-upright",
+     "title": "A virtual, upright, larger image",
+     "hint": "Try moving the object very close to the lens."
+    },
+    {
+     "id": "task.far-image",
+     "title": "An image very far from the lens",
+     "hint": "From outside, bring the object close to F and watch d′."
+    }
+   ],
+   "modelNotes": [
+    "The lens is thin and ideal: thickness and aberrations are ignored; for ray construction the lens is treated as large enough for every special ray to pass through it.",
+    "Light travels from left to right; the object AB is real and perpendicular to the optical axis, with A on the axis.",
+    "The image follows 1/f = 1/d + 1/d′ and k = −d′/d with this sign convention: d > 0; d′ > 0 for a real image (behind the lens) and d′ < 0 for a virtual image (on the object side). Example: f = 10 cm and d = 5 cm give 1/10 = 1/5 + 1/d′, so d′ = −10 cm, a virtual image 10 cm from the lens.",
+    "For readability the vertical axis is drawn magnified relative to the horizontal axis (usually about 2–3 times, depending on the frame size), and the frame picks its scale so the object and 2F′ stay in view. This magnification does not change the image position or where the rays meet.",
+    "Image screen: light from each object point passes through the lens (aperture D = 6 cm) and converges at the image point. A screen at a distance s from the lens cuts this cone into a light spot of diameter D·|s − d′|/d′, centered on the ray through the optical center; the wider the spot, the dimmer it is. The image counts as sharp when |s − d′| ≤ 0.75 cm. This is an approximate geometric model that ignores diffraction and aberrations.",
+    "Zooming, panning or \"Fit to view\" only change the view, not any physical quantity."
+   ],
+   "ui": {
+    "parameterLabels": {
+     "focalLength": "Focal length f",
+     "objectDistance": "Object distance d",
+     "objectHeight": "Object height h",
+     "screenDistance": "Screen distance"
+    },
+    "parametersTitle": "Parameters",
+    "specialPositions": "Special positions",
+    "imageRays": "Rays",
+    "constructRaysLockedNote": "In Construct mode the rays appear step by step, so the ray switches are temporarily locked.",
+    "toolsTitle": "Tools",
+    "rulerToggle": "Ruler",
+    "rulerToggleHint": "Show the distances d and d′ at the bottom of the diagram.",
+    "screenToggle": "Image screen",
+    "screenToggleHint": "Drag the screen on the diagram or use the slider to find where the image is sharp.",
+    "constructionEyebrow": "Ray construction",
+    "constructionStepAriaTemplate": "Step {current} of {total}",
+    "constructionInfinityNote": "The two emergent rays are parallel, so there is no intersection: the image is at infinity.",
+    "previousStep": "Previous step",
+    "nextStep": "Next step",
+    "restart": "Restart",
+    "tasksEyebrow": "Mini challenges",
+    "tasksTitle": "Exploration tasks",
+    "taskSatisfiedNow": "Satisfied right now.",
+    "taskAchievedSession": "Achieved earlier in this session.",
+    "taskCompleted": "Completed",
+    "taskNotCompleted": "Not completed",
+    "conclusionTitle": "Conclusion",
+    "conclusionConcealed": "The conclusion and the numerical values appear after you confirm your prediction.",
+    "conclusionConstructPending": "The conclusion, d′ and the image A′B′ appear at step 5, once the construction is done.",
+    "behindLens": "behind the lens",
+    "objectSide": "virtual, on the object side",
+    "kInvertedHint": "inverted",
+    "kUprightHint": "upright",
+    "objectHeightReference": "object h = {value}",
+    "substitutionLabel": "Substitution",
+    "signConvention": "Convention: d′ > 0 for a real image, d′ < 0 for a virtual image.",
+    "infinitySubstitution": "1/d′ = 1/f − 1/d = 0",
+    "noFiniteImage": "There is no finite image, so d′, k and h′ are undefined.",
+    "whyItHappens": "Why?",
+    "correctMark": "✓ Correct",
+    "incorrectMark": "✗ Incorrect",
+    "actualPrefixTemplate": "Actual: {value}",
+    "predictionEyebrow": "Prediction",
+    "predictionAtFocusTitle": "This position cannot be predicted",
+    "predictionAtFocusText": "The object is exactly at the focal point, so there is no finite image to predict its nature, orientation and size. Move the object away from the focus and predict again.",
+    "predictionCompareTitle": "Compare predictions",
+    "predictAgain": "Predict again",
+    "predictionAllMatchTemplate": "All {total} predictions match the constructed image.",
+    "predictionPartialTemplate": "{count} of {total} predictions match the constructed image. Check the ray paths again.",
+    "promptNature": "Image nature",
+    "promptOrientation": "Image orientation",
+    "promptSize": "Image size",
+    "promptScreen": "Catchable on screen",
+    "actualRealImage": "Real image",
+    "actualVirtualImage": "Virtual image",
+    "actualCatchable": "Catchable",
+    "actualNotCatchable": "Not catchable",
+    "reasonRealImage": "The two emergent rays really intersect behind the lens, so the image is real.",
+    "reasonVirtualImage": "The emergent rays spread apart; only their backward extensions intersect, so the image is virtual.",
+    "reasonOrientationNegativeTemplate": "k = {k}; k is negative, so the image is inverted relative to the object.",
+    "reasonOrientationPositiveTemplate": "k = {k}; k is positive, so the image is upright relative to the object.",
+    "reasonSizeTemplate": "|k| = {magnitude}, so the image is {size}.",
+    "reasonScreenCatchable": "A real image is formed by converging light rays, so a screen placed at the right position catches it.",
+    "reasonScreenNotCatchable": "A virtual image has no real light rays passing through it, so it cannot be caught on a screen.",
+    "predictionBeforeTitle": "Predict before seeing the image",
+    "predictionBeforeText": "The image and the emergent rays are hidden. Choose all four items and confirm your prediction to compare. This section is not graded and does not save results.",
+    "confirmPredictionButton": "Confirm prediction and see the image",
+    "modePredictAnnouncement": "Switched to Prediction mode. The image and the emergent rays stay hidden until you confirm your prediction.",
+    "modeConstructAnnouncement": "Switched to step-by-step ray construction. Start at step 1.",
+    "modeExploreAnnouncement": "Switched to Explore mode.",
+    "parameterChangedAnnouncement": "The parameter changed, so the prediction starts over.",
+    "presetMovedTemplate": "Object placed at the position: {region}.",
+    "fitAtInfinityAnnouncement": "The view is back to the default. The object is at the focus, so there is no finite image to bring into view.",
+    "fitInFrameAnnouncement": "The view now shows both the object and the image.",
+    "fitOutOfFrameAnnouncement": "The view now shows the object. The image is still hidden, so it was not brought into view.",
+    "viewportResetAnnouncement": "The view was reset to the default.",
+    "resetDefaultsAnnouncement": "Default state restored: focal length 10 cm, object distance 30 cm, object height 5 cm, Explore mode.",
+    "predictionRevealedTemplate": "Image shown. {sentence} Matching predictions: {count} of {total}.",
+    "predictionRestartedAnnouncement": "A new prediction round started.",
+    "resourceReady": "Resource ready",
+    "resourceInitializing": "Initializing resource",
+    "scene": {
+     "heading": "Converging lens simulation area",
+     "svgTitle": "Ray diagram of image formation by a converging lens",
+     "descriptionBaseTemplate": "The optical axis is horizontal, and a converging lens is placed at the optical center O. Focal length {focalLength}. The object AB is {objectHeight} tall, with A on the axis, {objectDistance} from the lens on the left.",
+     "descriptionConcealedSuffix": "The image and the emergent rays are hidden so that you can predict first.",
+     "descriptionConstructSuffix": "The image A′B′ is drawn at the last step.",
+     "descriptionAtInfinitySuffix": "The object is exactly at the focus, so the emergent rays are parallel and never meet; there is no finite image.",
+     "descriptionNormalTemplate": "The image A′B′ is a {kind}, {orientation}, {size}, {distance} from the lens on the {side}.",
+     "descriptionOutOfViewTemplate": "{target} is outside the view; use Fit to view to see it.",
+     "sideBehind": "far side of the lens",
+     "sideObject": "object side",
+     "objectAriaTemplate": "Object AB on the optical axis, {distance} from the lens. Use the left and right arrow keys to move it.",
+     "screenAriaTemplate": "Image screen, {distance} from the lens. Use the arrow keys to move the screen.",
+     "distanceFromLensTemplate": "Distance from the lens: {value}",
+     "objectLabel": "Object",
+     "screenLabel": "Screen",
+     "screenSharp": "sharp image",
+     "screenBlurred": "blurred image",
+     "screenNotCatchable": "a virtual image cannot be caught",
+     "screenNoImage": "no image",
+     "waitingPrediction": "Predict before seeing the image",
+     "constructChipTemplate": "Construction · step {current}/{total}",
+     "infinityChip": "Parallel emergent rays · image at infinity",
+     "rulerObjectLabelTemplate": "d = {value}",
+     "rulerImageLabelTemplate": "d′ = {value}",
+     "rulerImageNoteConcealed": "d′ appears after you confirm your prediction",
+     "rulerImageNoteConstruct": "d′ appears at step 5",
+     "rulerImageNoteInfinity": "d′: image at infinity",
+     "edgeObject": "Object",
+     "edgeImage": "Image",
+     "edgeScreen": "Screen",
+     "edgeFitTemplate": "{target} is outside the view. Fit to view to see it.",
+     "verticalScaleTemplate": "Vertical scale ×{value}"
+    }
+   }
+  }
+ },
+ {
+  "eyebrow": "Vật lý · Quang học",
+  "title": "Khám phá sự tạo ảnh qua thấu kính hội tụ",
+  "description": "Dịch chuyển vật, đổi tiêu cự và chiều cao vật để xem ảnh qua thấu kính hội tụ thay đổi về vị trí, chiều, độ lớn và tính chất thật hay ảo.",
+  "modeLabel": "Chế độ",
+  "modes": {
+   "explore": "Khám phá",
+   "construct": "Dựng ảnh từng bước",
+   "predict": "Dự đoán"
+  },
+  "guidance": [
+   {
+    "label": "Bắt đầu từ đâu",
+    "text": "Bấm lần lượt năm vị trí đặc biệt, hoặc kéo trực tiếp vật AB trên trục chính. Mỗi lần dịch chuyển, đọc dòng trạng thái ở góc trên hình và phần Kết luận."
+   },
+   {
+    "label": "Thử và đối chiếu",
+    "text": "Đưa vật từ ngoài 2F vào dần: ảnh lớn lên tới đâu thì đổi từ nhỏ hơn sang bằng rồi lớn hơn vật? Bật tia thứ ba để kiểm tra ba tia có cùng cắt tại một điểm không."
+   },
+   {
+    "label": "Câu hỏi mở",
+    "text": "Vì sao đúng tại tiêu điểm lại không có ảnh? Thử đổi tiêu cự rồi đặt lại vật tại F để xem kết luận có đổi không. Ảnh ảo có hứng được trên màn chắn không?"
+   }
+  ],
+  "rays": [
+   {
+    "id": "parallel",
+    "label": "Tia tới song song với trục chính",
+    "shortLabel": "Song song",
+    "description": "Tia ló đi qua tiêu điểm F′."
+   },
+   {
+    "id": "through-center",
+    "label": "Tia tới đi qua quang tâm O",
+    "shortLabel": "Qua O",
+    "description": "Tia ló truyền thẳng, không đổi phương."
+   },
+   {
+    "id": "through-focus",
+    "label": "Tia tới đi qua tiêu điểm F",
+    "shortLabel": "Qua F",
+    "description": "Tia ló song song với trục chính.",
+    "insideFocusLabel": "Tia tới có đường kéo dài đi qua tiêu điểm F"
+   }
+  ],
+  "presets": [
+   {
+    "region": "beyond-2f",
+    "label": "Ngoài 2F",
+    "hint": "Đưa vật ra xa hơn 2F"
+   },
+   {
+    "region": "at-2f",
+    "label": "Tại 2F",
+    "hint": "Đặt vật đúng tại 2F"
+   },
+   {
+    "region": "between-f-and-2f",
+    "label": "Giữa F và 2F",
+    "hint": "Đặt vật giữa F và 2F"
+   },
+   {
+    "region": "at-f",
+    "label": "Tại F",
+    "hint": "Đặt vật đúng tại tiêu điểm F"
+   },
+   {
+    "region": "inside-f",
+    "label": "Trong F",
+    "hint": "Đưa vật vào trong khoảng tiêu cự"
+   }
+  ],
+  "regionLabels": {
+   "beyond-2f": "Vật ngoài 2F",
+   "at-2f": "Vật tại 2F",
+   "between-f-and-2f": "Vật giữa F và 2F",
+   "at-f": "Vật tại tiêu điểm F",
+   "inside-f": "Vật trong khoảng tiêu cự"
+  },
+  "regionExplanations": {
+   "beyond-2f": "Khi d > 2f, ảnh thật nằm giữa F′ và 2F′, ngược chiều và nhỏ hơn vật.",
+   "at-2f": "Khi d = 2f, ảnh thật nằm đúng tại 2F′, ngược chiều và bằng vật.",
+   "between-f-and-2f": "Khi f < d < 2f, ảnh thật nằm ngoài 2F′, ngược chiều và lớn hơn vật.",
+   "at-f": "Khi d = f, các tia ló song song với nhau nên không cắt nhau: ảnh ở vô cực, không có ảnh hữu hạn.",
+   "inside-f": "Khi d < f, các tia ló loe ra; phần kéo dài ngược của chúng cắt nhau, cho ảnh ảo cùng chiều và lớn hơn vật."
+  },
+  "causeEffect": {
+   "beyond-2f": "Vật càng lùi xa, ảnh càng lùi về gần F′ và càng nhỏ đi; đưa vật vào gần 2F thì ảnh lớn dần lên.",
+   "at-2f": "Vật và ảnh cách thấu kính bằng nhau nên ảnh bằng đúng vật. Đẩy vật ra xa thì ảnh nhỏ lại, đưa vào gần thì ảnh lớn lên.",
+   "between-f-and-2f": "Vật càng tiến gần F từ phía ngoài, ảnh càng ra xa thấu kính và càng lớn, nên có thể hứng được ảnh lớn trên một màn ở xa.",
+   "at-f": "Ánh sáng từ một điểm đặt tại tiêu điểm ló ra thành chùm song song, nên ảnh bị đẩy ra vô cực.",
+   "inside-f": "Mắt nhìn qua thấu kính thấy ảnh ảo lớn hơn vật — đó là cách kính lúp giúp vật nhỏ trông to hơn."
+  },
+  "natureQuestion": {
+   "id": "prediction.nature",
+   "prompt": "Ảnh là ảnh thật hay ảnh ảo?",
+   "choices": [
+    {
+     "id": "nature.real",
+     "value": "real",
+     "label": "Ảnh thật"
+    },
+    {
+     "id": "nature.virtual",
+     "value": "virtual",
+     "label": "Ảnh ảo"
+    }
+   ]
+  },
+  "orientationQuestion": {
+   "id": "prediction.orientation",
+   "prompt": "Ảnh cùng chiều hay ngược chiều với vật?",
+   "choices": [
+    {
+     "id": "orientation.upright",
+     "value": "upright",
+     "label": "Cùng chiều"
+    },
+    {
+     "id": "orientation.inverted",
+     "value": "inverted",
+     "label": "Ngược chiều"
+    }
+   ]
+  },
+  "sizeQuestion": {
+   "id": "prediction.size",
+   "prompt": "Ảnh lớn hơn, bằng hay nhỏ hơn vật?",
+   "choices": [
+    {
+     "id": "size.larger",
+     "value": "larger",
+     "label": "Lớn hơn vật"
+    },
+    {
+     "id": "size.equal",
+     "value": "equal",
+     "label": "Bằng vật"
+    },
+    {
+     "id": "size.smaller",
+     "value": "smaller",
+     "label": "Nhỏ hơn vật"
+    }
+   ]
+  },
+  "screenQuestion": {
+   "id": "prediction.screen",
+   "prompt": "Có hứng được ảnh này trên màn chắn không?",
+   "choices": [
+    {
+     "id": "screen.catchable",
+     "value": "catchable",
+     "label": "Hứng được"
+    },
+    {
+     "id": "screen.not-catchable",
+     "value": "not-catchable",
+     "label": "Không hứng được"
+    }
+   ]
+  },
+  "constructionSteps": [
+   {
+    "step": "incident",
+    "title": "Bước 1 · Tia tới",
+    "instruction": "Từ đỉnh B của vật, vẽ tia tới song song với trục chính đi đến thấu kính."
+   },
+   {
+    "step": "emergent",
+    "title": "Bước 2 · Tia ló",
+    "instruction": "Tia tới song song với trục chính cho tia ló đi qua tiêu điểm F′ phía sau thấu kính."
+   },
+   {
+    "step": "center-ray",
+    "title": "Bước 3 · Tia qua quang tâm",
+    "instruction": "Vẽ thêm tia từ B đi qua quang tâm O; tia này truyền thẳng, không đổi phương."
+   },
+   {
+    "step": "intersection",
+    "title": "Bước 4 · Giao điểm",
+    "instruction": "Hai tia ló cắt nhau tại B′. Nếu hai tia ló loe ra, kéo dài ngược chúng để tìm giao điểm."
+   },
+   {
+    "step": "image",
+    "title": "Bước 5 · Dựng ảnh và kết luận",
+    "instruction": "Từ B′ hạ vuông góc xuống trục chính được A′; A′B′ là ảnh của AB. Đọc tính chất, chiều và độ lớn của ảnh."
+   }
+  ],
+  "tasks": [
+   {
+    "id": "task.equal-size",
+    "title": "Ảnh bằng vật",
+    "hint": "Có một vị trí duy nhất cho ảnh bằng đúng vật."
+   },
+   {
+    "id": "task.virtual-upright",
+    "title": "Ảnh ảo, cùng chiều, lớn hơn vật",
+    "hint": "Thử đưa vật vào rất gần thấu kính."
+   },
+   {
+    "id": "task.far-image",
+    "title": "Ảnh ở rất xa thấu kính",
+    "hint": "Từ phía ngoài, đưa vật lại sát F và theo dõi d′."
+   }
+  ],
+  "modelNotes": [
+   "Thấu kính mỏng, lý tưởng: bỏ qua bề dày và quang sai; khi dựng ảnh, coi thấu kính đủ lớn để các tia đặc biệt đều đi qua.",
+   "Ánh sáng đi từ trái sang phải; vật AB là vật thật, đặt vuông góc với trục chính, A nằm trên trục chính.",
+   "Ảnh được tính theo 1/f = 1/d + 1/d′ và k = −d′/d với quy ước dấu: d > 0; d′ > 0 khi ảnh thật (sau thấu kính), d′ < 0 khi ảnh ảo (cùng phía vật). Ví dụ f = 10 cm, d = 5 cm: 1/10 = 1/5 + 1/d′ nên d′ = −10 cm, tức ảnh ảo cách thấu kính 10 cm.",
+   "Để hình dễ đọc, trục đứng được vẽ phóng đại so với trục ngang (thường khoảng 2–3 lần, tùy kích thước khung hình) và khung tự chọn thang để luôn thấy vật cùng 2F′. Phép phóng đại này không làm thay đổi vị trí ảnh hay giao điểm của các tia.",
+   "Màn hứng ảnh: chùm sáng từ mỗi điểm của vật qua thấu kính (khẩu độ D = 6 cm) hội tụ tại điểm ảnh. Màn đặt cách thấu kính một khoảng s cắt chùm này thành vệt sáng đường kính D·|s − d′|/d′, tâm nằm trên tia qua quang tâm; vệt càng rộng càng tối. Ảnh coi là rõ nét khi |s − d′| ≤ 0,75 cm. Đây là mô hình hình học gần đúng, bỏ qua nhiễu xạ và quang sai.",
+   "Phóng to, thu nhỏ, kéo khung nhìn hay \"Vừa khung\" chỉ đổi góc quan sát, không làm thay đổi bất kỳ đại lượng vật lý nào."
+  ],
+  "ui": {
+   "parameterLabels": {
+    "focalLength": "Tiêu cự f",
+    "objectDistance": "Khoảng cách vật d",
+    "objectHeight": "Chiều cao vật h",
+    "screenDistance": "Khoảng cách màn"
+   },
+   "parametersTitle": "Tham số",
+   "specialPositions": "Vị trí đặc biệt",
+   "imageRays": "Tia sáng",
+   "constructRaysLockedNote": "Ở chế độ Dựng ảnh, các tia hiện theo từng bước nên công tắc tia tạm khóa.",
+   "toolsTitle": "Công cụ",
+   "rulerToggle": "Thước đo",
+   "rulerToggleHint": "Hiện khoảng cách d và d′ ở đáy hình.",
+   "screenToggle": "Màn hứng ảnh",
+   "screenToggleHint": "Kéo màn trên hình hoặc dùng thanh trượt để tìm chỗ ảnh rõ nét.",
+   "constructionEyebrow": "Dựng ảnh",
+   "constructionStepAriaTemplate": "Bước {current} trên {total}",
+   "constructionInfinityNote": "Hai tia ló song song nên không có giao điểm: ảnh ở vô cực.",
+   "previousStep": "Bước trước",
+   "nextStep": "Bước tiếp theo",
+   "restart": "Làm lại",
+   "tasksEyebrow": "Thử thách nhỏ",
+   "tasksTitle": "Nhiệm vụ khám phá",
+   "taskSatisfiedNow": "Đang đạt ngay lúc này.",
+   "taskAchievedSession": "Đã đạt trong phiên này.",
+   "taskCompleted": "Đã hoàn thành",
+   "taskNotCompleted": "Chưa hoàn thành",
+   "conclusionTitle": "Kết luận",
+   "conclusionConcealed": "Kết luận và các giá trị số sẽ hiện sau khi bạn chốt dự đoán.",
+   "conclusionConstructPending": "Kết luận, d′ và ảnh A′B′ hiện ở bước 5, sau khi dựng xong.",
+   "behindLens": "sau thấu kính",
+   "objectSide": "ảnh ảo, cùng phía vật",
+   "kInvertedHint": "ngược chiều",
+   "kUprightHint": "cùng chiều",
+   "objectHeightReference": "vật h = {value}",
+   "substitutionLabel": "Thay số",
+   "signConvention": "Quy ước: d′ > 0 với ảnh thật, d′ < 0 với ảnh ảo.",
+   "infinitySubstitution": "1/d′ = 1/f − 1/d = 0",
+   "noFiniteImage": "Không có ảnh hữu hạn nên d′, k và h′ không xác định.",
+   "whyItHappens": "Vì sao?",
+   "correctMark": "✓ Đúng",
+   "incorrectMark": "✗ Chưa đúng",
+   "actualPrefixTemplate": "Thực tế: {value}",
+   "predictionEyebrow": "Dự đoán",
+   "predictionAtFocusTitle": "Vị trí này chưa dự đoán được",
+   "predictionAtFocusText": "Vật đang nằm đúng tại tiêu điểm nên không có ảnh hữu hạn để dự đoán về tính chất, chiều và độ lớn. Hãy dịch vật ra khỏi tiêu điểm rồi dự đoán lại.",
+   "predictionCompareTitle": "Đối chiếu dự đoán",
+   "predictAgain": "Dự đoán lần khác",
+   "predictionAllMatchTemplate": "Cả {total} dự đoán đều khớp với hình dựng được.",
+   "predictionPartialTemplate": "Có {count} trên {total} dự đoán khớp với hình dựng được. Hãy đối chiếu lại đường đi của các tia.",
+   "promptNature": "Tính chất ảnh",
+   "promptOrientation": "Chiều của ảnh",
+   "promptSize": "Độ lớn của ảnh",
+   "promptScreen": "Hứng trên màn",
+   "actualRealImage": "Ảnh thật",
+   "actualVirtualImage": "Ảnh ảo",
+   "actualCatchable": "Hứng được",
+   "actualNotCatchable": "Không hứng được",
+   "reasonRealImage": "Hai tia ló thực sự cắt nhau sau thấu kính nên ảnh là ảnh thật.",
+   "reasonVirtualImage": "Các tia ló loe ra; chỉ phần kéo dài ngược của chúng cắt nhau nên ảnh là ảnh ảo.",
+   "reasonOrientationNegativeTemplate": "k = {k}; k âm nên ảnh ngược chiều với vật.",
+   "reasonOrientationPositiveTemplate": "k = {k}; k dương nên ảnh cùng chiều với vật.",
+   "reasonSizeTemplate": "|k| = {magnitude}, nên ảnh {size}.",
+   "reasonScreenCatchable": "Ảnh thật do các tia sáng thực hội tụ nên đặt màn đúng vị trí sẽ hứng được.",
+   "reasonScreenNotCatchable": "Ảnh ảo không có tia sáng thực đi qua nên không hứng được trên màn.",
+   "predictionBeforeTitle": "Dự đoán trước khi xem ảnh",
+   "predictionBeforeText": "Ảnh và các tia ló đang được che. Hãy chọn cả bốn mục rồi chốt dự đoán để so sánh. Phần này không tính điểm và không lưu kết quả.",
+   "confirmPredictionButton": "Chốt dự đoán và xem ảnh",
+   "modePredictAnnouncement": "Đã chuyển sang chế độ Dự đoán. Ảnh và các tia ló được che cho tới khi bạn chốt dự đoán.",
+   "modeConstructAnnouncement": "Đã chuyển sang chế độ Dựng ảnh từng bước. Bắt đầu từ bước 1.",
+   "modeExploreAnnouncement": "Đã chuyển sang chế độ Khám phá.",
+   "parameterChangedAnnouncement": "Đã thay đổi tham số nên dự đoán được làm lại từ đầu.",
+   "presetMovedTemplate": "Đã đặt vật ở vị trí: {region}.",
+   "fitAtInfinityAnnouncement": "Đã đưa khung về mặc định. Vật ở tiêu điểm nên không có ảnh hữu hạn để đưa vào khung.",
+   "fitInFrameAnnouncement": "Đã chỉnh khung để thấy cả vật và ảnh.",
+   "fitOutOfFrameAnnouncement": "Đã chỉnh khung để thấy vật. Ảnh đang được che nên chưa đưa vào khung.",
+   "viewportResetAnnouncement": "Đã đưa khung nhìn về mặc định.",
+   "resetDefaultsAnnouncement": "Đã khôi phục trạng thái mặc định: tiêu cự 10 cm, khoảng cách vật 30 cm, chiều cao vật 5 cm, chế độ Khám phá.",
+   "predictionRevealedTemplate": "Đã hiện ảnh. {sentence} Số dự đoán khớp: {count} trên {total}.",
+   "predictionRestartedAnnouncement": "Đã bắt đầu lượt dự đoán mới.",
+   "resourceReady": "Học liệu sẵn sàng",
+   "resourceInitializing": "Đang khởi tạo học liệu",
+   "scene": {
+    "heading": "Khu vực mô phỏng thấu kính hội tụ",
+    "svgTitle": "Sơ đồ tạo ảnh qua thấu kính hội tụ",
+    "descriptionBaseTemplate": "Trục chính nằm ngang, thấu kính hội tụ đặt tại quang tâm O. Tiêu cự {focalLength}. Vật AB cao {objectHeight}, A nằm trên trục chính, cách thấu kính {objectDistance} về phía trái.",
+    "descriptionConcealedSuffix": "Ảnh và các tia ló đang được che để bạn dự đoán trước.",
+    "descriptionConstructSuffix": "Ảnh A′B′ sẽ được dựng ở bước cuối.",
+    "descriptionAtInfinitySuffix": "Vật nằm đúng tại tiêu điểm nên các tia ló song song với nhau và không cắt nhau; không có ảnh hữu hạn.",
+    "descriptionNormalTemplate": "Ảnh A′B′ là {kind}, {orientation}, {size}, cách thấu kính {distance} về {side}.",
+    "descriptionOutOfViewTemplate": "{target} đang nằm ngoài khung nhìn; dùng nút Vừa khung để thấy.",
+    "sideBehind": "phía sau thấu kính",
+    "sideObject": "cùng phía vật",
+    "objectAriaTemplate": "Vật AB trên trục chính, cách thấu kính {distance}. Dùng phím mũi tên trái, phải để dịch chuyển.",
+    "screenAriaTemplate": "Màn hứng ảnh, cách thấu kính {distance}. Dùng phím mũi tên để dịch màn.",
+    "distanceFromLensTemplate": "Cách thấu kính {value}",
+    "objectLabel": "Vật",
+    "screenLabel": "Màn",
+    "screenSharp": "ảnh rõ nét",
+    "screenBlurred": "ảnh nhòe",
+    "screenNotCatchable": "không hứng được ảnh ảo",
+    "screenNoImage": "không có ảnh",
+    "waitingPrediction": "Dự đoán trước khi xem ảnh",
+    "constructChipTemplate": "Dựng ảnh · bước {current}/{total}",
+    "infinityChip": "Tia ló song song · ảnh ở vô cực",
+    "rulerObjectLabelTemplate": "d = {value}",
+    "rulerImageLabelTemplate": "d′ = {value}",
+    "rulerImageNoteConcealed": "d′ hiện sau khi chốt dự đoán",
+    "rulerImageNoteConstruct": "d′ hiện ở bước 5",
+    "rulerImageNoteInfinity": "d′: ảnh ở vô cực",
+    "edgeObject": "Vật",
+    "edgeImage": "Ảnh",
+    "edgeScreen": "Màn",
+    "edgeFitTemplate": "{target} nằm ngoài khung. Vừa khung để thấy.",
+    "verticalScaleTemplate": "Trục đứng phóng to ×{value}"
+   }
+  }
+ },
+ {
+  "id": "parallel",
+  "label": "Tia tới song song với trục chính",
+  "shortLabel": "Song song",
+  "description": "Tia ló đi qua tiêu điểm F′."
+ },
+ {
+  "id": "through-center",
+  "label": "Tia tới đi qua quang tâm O",
+  "shortLabel": "Qua O",
+  "description": "Tia ló truyền thẳng, không đổi phương."
+ },
+ {
+  "id": "through-focus",
+  "label": "Tia tới đi qua tiêu điểm F",
+  "shortLabel": "Qua F",
+  "description": "Tia ló song song với trục chính.",
+  "insideFocusLabel": "Tia tới có đường kéo dài đi qua tiêu điểm F"
+ },
+ {
+  "step": "incident",
+  "title": "Bước 1 · Tia tới",
+  "instruction": "Từ đỉnh B của vật, vẽ tia tới song song với trục chính đi đến thấu kính."
+ },
+ {
+  "step": "emergent",
+  "title": "Bước 2 · Tia ló",
+  "instruction": "Tia tới song song với trục chính cho tia ló đi qua tiêu điểm F′ phía sau thấu kính."
+ },
+ {
+  "step": "center-ray",
+  "title": "Bước 3 · Tia qua quang tâm",
+  "instruction": "Vẽ thêm tia từ B đi qua quang tâm O; tia này truyền thẳng, không đổi phương."
+ },
+ {
+  "step": "intersection",
+  "title": "Bước 4 · Giao điểm",
+  "instruction": "Hai tia ló cắt nhau tại B′. Nếu hai tia ló loe ra, kéo dài ngược chúng để tìm giao điểm."
+ },
+ {
+  "step": "image",
+  "title": "Bước 5 · Dựng ảnh và kết luận",
+  "instruction": "Từ B′ hạ vuông góc xuống trục chính được A′; A′B′ là ảnh của AB. Đọc tính chất, chiều và độ lớn của ảnh."
+ },
+ {
+  "id": "task.equal-size",
+  "title": "Ảnh bằng vật",
+  "hint": "Có một vị trí duy nhất cho ảnh bằng đúng vật."
+ },
+ {
+  "id": "task.virtual-upright",
+  "title": "Ảnh ảo, cùng chiều, lớn hơn vật",
+  "hint": "Thử đưa vật vào rất gần thấu kính."
+ },
+ {
+  "id": "task.far-image",
+  "title": "Ảnh ở rất xa thấu kính",
+  "hint": "Từ phía ngoài, đưa vật lại sát F và theo dõi d′."
+ },
+ [
+  {
+   "id": "parallel",
+   "label": "Tia tới song song với trục chính",
+   "shortLabel": "Song song",
+   "description": "Tia ló đi qua tiêu điểm F′."
+  },
+  {
+   "id": "through-center",
+   "label": "Tia tới đi qua quang tâm O",
+   "shortLabel": "Qua O",
+   "description": "Tia ló truyền thẳng, không đổi phương."
+  },
+  {
+   "id": "through-focus",
+   "label": "Tia tới đi qua tiêu điểm F",
+   "shortLabel": "Qua F",
+   "description": "Tia ló song song với trục chính.",
+   "insideFocusLabel": "Tia tới có đường kéo dài đi qua tiêu điểm F"
+  }
+ ],
+ [
+  {
+   "step": "incident",
+   "title": "Bước 1 · Tia tới",
+   "instruction": "Từ đỉnh B của vật, vẽ tia tới song song với trục chính đi đến thấu kính."
+  },
+  {
+   "step": "emergent",
+   "title": "Bước 2 · Tia ló",
+   "instruction": "Tia tới song song với trục chính cho tia ló đi qua tiêu điểm F′ phía sau thấu kính."
+  },
+  {
+   "step": "center-ray",
+   "title": "Bước 3 · Tia qua quang tâm",
+   "instruction": "Vẽ thêm tia từ B đi qua quang tâm O; tia này truyền thẳng, không đổi phương."
+  },
+  {
+   "step": "intersection",
+   "title": "Bước 4 · Giao điểm",
+   "instruction": "Hai tia ló cắt nhau tại B′. Nếu hai tia ló loe ra, kéo dài ngược chúng để tìm giao điểm."
+  },
+  {
+   "step": "image",
+   "title": "Bước 5 · Dựng ảnh và kết luận",
+   "instruction": "Từ B′ hạ vuông góc xuống trục chính được A′; A′B′ là ảnh của AB. Đọc tính chất, chiều và độ lớn của ảnh."
+  }
+ ],
+ [
+  {
+   "id": "task.equal-size",
+   "title": "Ảnh bằng vật",
+   "hint": "Có một vị trí duy nhất cho ảnh bằng đúng vật."
+  },
+  {
+   "id": "task.virtual-upright",
+   "title": "Ảnh ảo, cùng chiều, lớn hơn vật",
+   "hint": "Thử đưa vật vào rất gần thấu kính."
+  },
+  {
+   "id": "task.far-image",
+   "title": "Ảnh ở rất xa thấu kính",
+   "hint": "Từ phía ngoài, đưa vật lại sát F và theo dõi d′."
+  }
+ ]
+]

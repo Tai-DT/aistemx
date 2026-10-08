@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Làng F - Bình Thuận</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <script src="lib/tdvplayer.js?v=1754274530238"></script>
+    <link rel="preload" href="locale/en.txt?v=1754274530238" as="fetch" crossorigin="anonymous"/>
+    <link rel="preload" href="script.js?v=1754274530238" as="script"/>
+    <meta name="description" content="Virtual Tour"/>
+    <meta name="theme-color" content="#999999"/>
+    <script src="script.js?v=1754274530238"></script>
+    <meta property="og:type" content="article">
+		<meta property="og:url" content="https://vr360.com.vn/projects/fao-vr360/">
+		<meta property="og:title" content="Làng F - Bình Thuận VR360">
+		<meta property="og:description" content="Làng F - Bình Thuận VR360">
+		<meta property="og:image" content="https://vr360.com.vn/projects/fao-vr360/thumbnail.png">
+		<link rel="shortcut icon" href="https://vr360.com.vn/projects/fao-vr360/favicon.png">
+    
+    <script>
+    window.name = "FAO - Làng F - Bình Thuận";
+    </script>
+    <script src="https://vr360.com.vn/toast_notice.js" async></script>
+
+    <style>
+        html, body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .fill-viewport {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        #viewer {
+            z-index: 1;
+        }
+
+        #preloadContainer {
+            z-index: 2;
+            opacity: 1;
+            background-color: rgba(153, 153, 153, 0.32);
+            transition: opacity 0.5s;
+        }
+
+        /* Ảnh giữa màn hình */
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('loading/HTMLImage_7E9B98F3_5F8E_5CAD_41C7_517E2C60D4FC.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 10vw;
+            height: 10vw;
+        }
+
+        /* Kích thước ảnh to hơn trên mobile */
+        @media (max-width: 768px) {
+            .center-image {
+                width: 30vw;
+                height: 30vw;
+            }
+        }
+
+        /* Chữ nằm phía trên ảnh */
+        .overlay-text {
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            text-align: center;
+            z-index: 5;
+            font-size: 3.5vmax;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloadContainer" class="fill-viewport">
+        <div class="overlay-text">LÀNG F - BÌNH THUẬN</div>
+        <div class="center-image"></div>
+    </div>
+    <div id="viewer" class="fill-viewport"></div>
+</body>
+</html>

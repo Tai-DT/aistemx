@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Bản đồ VR360 không gian văn hoá và di tích lịch sử phường Hương Trà, TP Đà Nẵng</title>
+
+  <meta name="description" content="Bản đồ VR360 không gian văn hoá và di tích lịch sử phường Hương Trà, TP Đà Nẵng">
+  <meta property="og:title" content="Bản đồ VR360 không gian văn hoá và di tích lịch sử phường Hương Trà, TP Đà Nẵng">
+  <meta property="og:description" content="Bản đồ VR360 không gian văn hoá và di tích lịch sử phường Hương Trà, TP Đà Nẵng">
+  <meta property="og:image" content="https://vr360.com.vn/projects/du-lich-phuong-huong-tra/assets/og_image/og_image.webp?v=260618_010434">
+
+  <style>
+    html, body { height: 100%; margin: 0; background: #000; overflow: hidden; }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="3rdparty/leaflet/leaflet.css">
+  <link rel="stylesheet" href="skin.css">
+  <script type="module" src="3rdparty/model-viewer.min.js"></script>
+  <link rel="icon" href="https://vr360.com.vn/projects/du-lich-phuong-huong-tra/assets/favicon/favicon.png?v=260616_071132">
+</head>
+<body>
+
+<div id="container" style="width:100%;height:100%;overflow:hidden;"></div>
+
+<!-- Pano2VR engine -->
+<script src="./pano2vr_player.js"></script>
+<!-- Skin config (generated per-project) -->
+<script src="config.js"></script>
+  <!-- Leaflet is required by Pano2VR built-in maps and the shared minimap. -->
+  <script src="3rdparty/leaflet/leaflet.js"></script>
+<!-- Lottie (optional — chỉ có khi Pano2VR project dùng Lottie animation) -->
+
+<!-- Pano2VR skin (KTV gen từ Skin Editor — chứa map, Lottie hotspot) -->
+<script src="pano-label-adapter.js"></script>
+<script src="skin.js"></script>
+<script src="polygon-runtime.js"></script>
+<!-- Skin VR: shared WebXR overlay -->
+<script src="skin-vr.js"></script>
+<!-- Skin UI: shared overlay (dùng chung mọi project) -->
+<script src="skin-ui.js"></script>
+
+<script>
+  var pano   = new pano2vrPlayer('container');
+  var skin   = new pano2vrSkin(pano);
+  var skinvr = typeof pano2vrVrSkin === 'function' ? new pano2vrVrSkin(pano) : null;
+  var skinui = new pano2vrSkinUI(pano);
+
+  // Apply brand colors từ config
+  var colors = window.SKIN_CONFIG && window.SKIN_CONFIG.brand && window.SKIN_CONFIG.brand.colors;
+  if (colors) {
+    var r = document.documentElement;
+    if (colors.primary)   r.style.setProperty('--color-primary',   colors.primary);
+    if (colors.secondary) r.style.setProperty('--color-secondary',  colors.secondary);
+    if (colors.accent)    r.style.setProperty('--color-accent',     colors.accent);
+    if (colors.colorText) r.style.setProperty('--color-text',      colors.colorText);
+    if (colors.glassBg)   r.style.setProperty('--glass-bg',        colors.glassBg);
+  }
+
+  window.addEventListener('load', function() {
+    pano.readConfigUrlAsync('./pano.xml');
+  });
+
+  // Hash navigation
+  if ('onhashchange' in window) {
+    window.onhashchange = function() {
+      var hash = window.location.hash.substring(1);
+      if (hash) pano.openNext('{' + hash + '}', '');
+    };
+  }
+</script>
+
+  <script>(function(){var c=(window.SKIN_CONFIG||{}).chatbot||{};var t=c.apiToken;if(!t)return;var b=c.serverUrl&&c.serverUrl.indexOf("://")!==-1?(c.serverUrl.match(/^(https?:\/\/[^\/]+)/)||[])[1]||window.location.origin:window.location.origin;fetch(b+'/api/chatbot/status?token='+encodeURIComponent(t)).then(function(r){return r.json()}).then(function(d){if(!d.ok)return;return fetch(b+'/api/chatbot/config?token='+encodeURIComponent(t)).then(function(r){return r.json()})}).then(function(config){if(!config||config.enabled===false)return;window.__CHATBOT_CONFIG__=config;var l=document.createElement('link');l.rel='stylesheet';l.href=b+'/chatbot-client/chatbot.css';document.head.appendChild(l);var s1=document.createElement('script');s1.src=b+'/chatbot-client/marked.min.js';s1.onload=function(){var s2=document.createElement('script');s2.src=b+'/chatbot-client/chatbot.js';document.body.appendChild(s2);};document.body.appendChild(s1);}).catch(function(){});})();</script>
+</body>
+</html>

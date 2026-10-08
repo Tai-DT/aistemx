@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="description" content="Virtual Tour" />
+  <meta name="theme-color" content="#FFFFFF" />
+
+  <title>Vietnam American School</title>
+
+  <meta property="og:type" content="article">
+	<meta property="og:url" content="https://vr360.com.vn/projects/truong-viet-my/">
+	<meta property="og:title" content="Vietnam American School">
+	<meta property="og:description" content="Vietnam American School">
+	<meta property="og:image" content="https://vr360.com.vn/projects/truong-viet-my/thumbnail.png">
+	<link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Scripts -->
+  <script src="lib/tdvplayer.js?v=1759973167686"></script>
+  <script src="script.js?v=1759973167686" defer></script>
+
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .fill-viewport {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    /* Viewer chính */
+    #viewer {
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Preload container */
+    #preloadContainer {
+      z-index: 2;
+      background-color: #fff;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+
+    /* Background preload */
+    #preloadContainer .loading-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('loading/HTMLImage_EB998B68_C164_38E9_41E0_F1D17F6ED0D2.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      
+    }
+
+    /* Loading logo ảnh thực */
+    #preloadContainer .loading-logo {
+      position: absolute;
+      bottom: 45%;       /* vị trí từ dưới */
+      left: 74%;             /* căn giữa ngang */
+      transform: translateX(-50%); 
+
+      width: auto;           /* giữ tỉ lệ gốc */
+      height: 10.04%;        /* chiều cao theo % container */
+
+      cursor: pointer;       /* con trỏ tay */
+      transition: transform 0.3s ease; /* mượt khi hover */
+    }
+
+    #preloadContainer .loading-logo:hover {
+      transform: translateX(-50%) scale(1.2); /* phóng to khi hover */
+    }
+
+    /* Mobile preload */
+    @media (max-device-width: 1024px) {
+      #preloadContainer .loading-bg,
+      #preloadContainer .loading-logo {
+        display: none;
+      }
+      #preloadContainer {
+        background-image: url('loading/Mobie.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preload -->
+  <div id="preloadContainer" class="fill-viewport">
+    <div class="loading-bg"></div>
+    <!-- Ảnh thực cho loading-logo -->
+    <img src="loading/HTMLImage_E9628CF0_C16C_39FA_41D0_3629A564BDC2.png" 
+         class="loading-logo" 
+         alt="Logo Loading">
+  </div>
+
+  <!-- Panorama viewer -->
+  <div id="viewer" class="fill-viewport"></div>
+</body>
+</html>

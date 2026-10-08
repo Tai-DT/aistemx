@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title>NUOC MAM NAM O BY VR360</title>
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://vr360.com.vn/projects/nam-o/">
+		<meta property="og:title" content="NUOC MAM NAM O BY VR360">
+		<meta property="og:description" content="NUOC MAM NAM O BY VR360">
+		<meta property="og:image" content="https://vr360.com.vn/projects/nam-o/thumb.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="robots" content="noindex, archive, follow, noodp"> <link rel="canonical" href="vr360.com.vn/projects/nam-o/"/>
+		<style type="text/css" title="Default">
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+		</style>	
+<script>
+    window.code = "VXmeXCLWCMrRkavgpwMr";
+    window.name = "Làng Nghề nước mắm Nam Ô";
+</script>
+<script src="https://vr360.com.vn/toast_notice.js" async></script>
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@110,397&family=Roboto&display=swap"/>
+		<link rel="stylesheet" href="3rdparty/leaflet/leaflet.css"/>
+		<script src="3rdparty/leaflet/leaflet.js"></script>
+		<script src="webxr/three.min.js"></script>
+		<script src="webxr/webxr-polyfill.min.js"></script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<br>Loading...<br><br>
+		</div>
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("pano.xml");
+			});
+			if (window.navigator.userAgent.match(/iPhone/i)) {
+				// fix for white borders, rotation on iPhone
+				function iosHfix() {
+					window.scrollTo(0, 1);
+					document.documentElement.style.setProperty('height', '100vh');
+				};
+				window.addEventListener('orientationchange', function() {
+					setTimeout(iosHfix, 0);
+					setTimeout(iosHfix, 200);
+					setTimeout(iosHfix, 2000);
+				});
+			}
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+	</body>
+</html>

@@ -1,0 +1,355 @@
+[
+ {
+  "eyebrow": "SINH HỌC · TẾ BÀO",
+  "title": "Vận chuyển các chất qua màng tế bào",
+  "description": "Mô phỏng một lát cắt màng tế bào: thêm chất tan hai phía, đặt kênh và bơm vào màng, rồi quan sát chất nào qua được, theo chiều nào và nhờ protein nào.",
+  "modes": {
+   "simple-diffusion": "Khuếch tán đơn giản",
+   "facilitated-diffusion": "Khuếch tán qua kênh",
+   "active-transport": "Vận chuyển chủ động",
+   "playground": "Phối hợp"
+  },
+  "descriptions": {
+   "simple-diffusion": "Thêm chất tan ở một phía màng. O₂ và CO₂ đi thẳng qua lớp lipid kép; Na⁺, K⁺ và glucose bị màng chặn lại.",
+   "facilitated-diffusion": "Kéo kênh rò, kênh cổng điện thế hoặc kênh cổng ligand vào màng. Ion chỉ qua kênh đúng loại khi kênh mở và đi xuôi chênh lệch số hạt.",
+   "active-transport": "Đặt bơm Na⁺/K⁺ hoặc protein đồng vận chuyển Na⁺–glucose. Bơm dùng ATP để đẩy ion ngược chênh lệch; đồng vận chuyển dựa vào dòng Na⁺ đi vào.",
+   "playground": "Phối hợp mọi chất tan và protein. Thử tình huống mẫu bơm + kênh rò để thấy chênh lệch chỉ được giữ khi bơm còn ATP."
+  },
+  "guidance": {
+   "simple-diffusion": [
+    {
+     "label": "Điều đang xảy ra",
+     "text": "Hạt chất tan chuyển động ngẫu nhiên; mỗi lần chạm màng, O₂ và CO₂ có thể lọt qua lớp lipid."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Cột “Bên ngoài/Bên trong” của O₂ tiến dần về bằng nhau, còn Na⁺, K⁺, glucose đứng yên."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "Cân bằng không có nghĩa là hạt ngừng qua màng: chúng vẫn qua hai chiều với số lượng như nhau."
+    }
+   ],
+   "facilitated-diffusion": [
+    {
+     "label": "Điều đang xảy ra",
+     "text": "Mỗi kênh chỉ cho một loại ion đi qua, từng hạt một, và chỉ khi kênh đang mở."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Đổi điện thế đặt để mở kênh cổng điện thế; thả ligand đúng hình vào kênh cổng ligand để mở nó trong 15 s."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "Kênh không đẩy ion: dòng ròng vẫn đi từ phía nhiều hạt sang phía ít hạt."
+    }
+   ],
+   "active-transport": [
+    {
+     "label": "Điều đang xảy ra",
+     "text": "Bơm gắn 3 Na⁺ bên trong, dùng 1 ATP để đổi hình, thả Na⁺ ra ngoài rồi đưa 2 K⁺ vào."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Sổ ATP: mỗi ATP ứng với 3 Na⁺ ra và 2 K⁺ vào, dù phía đích đã nhiều ion hơn."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "Đồng vận chuyển Na⁺–glucose không dùng ATP trực tiếp; nó dừng khi Na⁺ ngoài không còn nhiều hơn Na⁺ trong."
+    }
+   ],
+   "playground": [
+    {
+     "label": "Điều đang xảy ra",
+     "text": "Kênh rò làm chênh lệch ion mất dần; bơm dùng ATP để tạo lại chênh lệch."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Chạy tình huống mẫu, ghim trạng thái A, rồi so số hạt khi ATP còn và khi ATP đã hết."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "Số hạt trong mô hình là minh họa, không phải nồng độ thật; điện thế là giá trị đặt sẵn."
+    }
+   ]
+  },
+  "scene": "Lát cắt màng tế bào",
+  "loading": "Đang khởi tạo mô hình…",
+  "error": "Không tải được mô hình. Hãy tải lại học liệu.",
+  "limit": "Bản ghi thao tác đã đầy. Đặt lại để tiếp tục.",
+  "playback": "Chạy mô phỏng",
+  "play": "Chạy",
+  "pause": "Tạm dừng",
+  "step": "Một bước",
+  "stepHint": "Khi tạm dừng, mỗi bước tiến 0,1 s thời gian mô hình.",
+  "speed": "Tốc độ",
+  "normal": "Thường",
+  "slow": "Chậm (×0,5)",
+  "time": "Thời gian mô hình",
+  "solutes": "Chất tan",
+  "soluteChoice": "Chọn chất tan để thêm hoặc bớt",
+  "soluteNames": {
+   "oxygen": "O₂",
+   "carbonDioxide": "CO₂",
+   "sodiumIon": "Na⁺",
+   "potassiumIon": "K⁺",
+   "glucose": "Glucose",
+   "atp": "ATP",
+   "adp": "ADP",
+   "phosphate": "Pi"
+  },
+  "soluteLong": {
+   "oxygen": "khí oxygen (O₂)",
+   "carbonDioxide": "khí carbon dioxide (CO₂)",
+   "sodiumIon": "ion natri (Na⁺)",
+   "potassiumIon": "ion kali (K⁺)",
+   "glucose": "glucose",
+   "atp": "ATP",
+   "adp": "ADP",
+   "phosphate": "phosphate vô cơ (Pi)"
+  },
+  "sides": {
+   "outside": "Bên ngoài",
+   "inside": "Bên trong"
+  },
+  "sidesLong": {
+   "outside": "Bên ngoài tế bào",
+   "inside": "Bên trong tế bào"
+  },
+  "blocks": {
+   "max": "Đã đủ 200 hạt loại này (tính cả hai phía).",
+   "empty": "Phía này không còn hạt để bớt.",
+   "atpOutside": "ATP chỉ thêm được bên trong tế bào."
+  },
+  "keysHint": "Phím mũi tên: ±50 · Shift + mũi tên: ±10.",
+  "particlesUnit": "hạt",
+  "erase": "Xóa hết chất tan",
+  "emptyScene": "Chưa có chất tan nên chưa có gì chuyển động.",
+  "proteins": "Protein màng",
+  "proteinHint": "Kéo protein từ khay vào một khe trên màng, hoặc nhấn để đặt vào khe trống bên trái nhất. Kéo protein ra khỏi màng để trả về khay.",
+  "proteinKeysHint": "Bàn phím: Enter để cầm, ←/→ chọn khe, Enter để thả, Esc để hủy, Delete để trả về khay.",
+  "families": {
+   "leakage": "Kênh rò",
+   "voltage": "Kênh cổng điện thế",
+   "ligand": "Kênh cổng ligand",
+   "active": "Vận chuyển chủ động"
+  },
+  "trayTitles": {
+   "leakage": "Kênh rò",
+   "voltage": "Cổng điện thế",
+   "ligand": "Cổng ligand",
+   "active": "Chủ động"
+  },
+  "proteinNames": {
+   "sodiumIonLeakageChannel": "Kênh rò Na⁺",
+   "potassiumIonLeakageChannel": "Kênh rò K⁺",
+   "sodiumIonVoltageGatedChannel": "Kênh Na⁺ cổng điện thế",
+   "potassiumIonVoltageGatedChannel": "Kênh K⁺ cổng điện thế",
+   "sodiumIonLigandGatedChannel": "Kênh Na⁺ cổng ligand",
+   "potassiumIonLigandGatedChannel": "Kênh K⁺ cổng ligand",
+   "sodiumPotassiumPump": "Bơm Na⁺/K⁺",
+   "sodiumGlucoseCotransporter": "Đồng vận chuyển Na⁺–glucose"
+  },
+  "proteinShort": {
+   "sodiumIonLeakageChannel": "Na⁺",
+   "potassiumIonLeakageChannel": "K⁺",
+   "sodiumIonVoltageGatedChannel": "Na⁺",
+   "potassiumIonVoltageGatedChannel": "K⁺",
+   "sodiumIonLigandGatedChannel": "Na⁺",
+   "potassiumIonLigandGatedChannel": "K⁺",
+   "sodiumPotassiumPump": "Bơm\nNa⁺/K⁺",
+   "sodiumGlucoseCotransporter": "Na⁺–\nglucose"
+  },
+  "emptySlot": "trống",
+  "offMembrane": "Trả về khay",
+  "membraneFull": "Màng đã đủ 7 protein: kéo protein vào một khe để thay.",
+  "released": {
+   "placed": "Đã đặt protein vào khe.",
+   "swapped": "Đã đổi chỗ hai protein.",
+   "replaced": "Protein cũ đã trả về khay.",
+   "returned": "Protein đã trả về khay.",
+   "cancelled": "Đã hủy, protein về chỗ cũ."
+  },
+  "ligands": "Ligand",
+  "addLigands": "Thêm ligand",
+  "removeLigands": "Bỏ ligand",
+  "ligandHint": "Ligand tự đi ngẫu nhiên ngoài tế bào và gắn vào kênh đúng hình. Có thể kéo một ligand thả lên kênh đang đóng.",
+  "ligandNames": {
+   "triangleLigand": "Ligand tam giác (mở kênh Na⁺ cổng ligand)",
+   "starLigand": "Ligand ngôi sao (mở kênh K⁺ cổng ligand)"
+  },
+  "ligandStates": {
+   "free": "đang trôi tự do",
+   "held": "đang được cầm",
+   "bound": "đang gắn vào kênh",
+   "heading": "đang tới kênh",
+   "paused": "đứng yên dưới con trỏ"
+  },
+  "voltage": "Điện thế màng",
+  "voltageSet": "giá trị đặt",
+  "voltageNote": "Giá trị đặt sẵn để mở/đóng kênh cổng điện thế; mô hình không tính điện thế từ số ion.",
+  "charges": "Hiện điện tích hai mặt màng",
+  "atp": "ATP",
+  "sample": "Tình huống mẫu: bơm + kênh rò",
+  "sampleHint": "Đặt 2 bơm Na⁺/K⁺, kênh rò Na⁺ và K⁺, thêm Na⁺/K⁺ hai phía và 50 ATP bên trong. Đây là một chuỗi thao tác, không phải trạng thái mặc định.",
+  "sampleNeedsReset": "Tình huống mẫu cần màng còn trống: hãy Đặt lại trước.",
+  "options": "Tùy chọn",
+  "optionsSummary": "Lipid, chuyển hóa glucose, nhấn mạnh, khuếch tán thuần ngẫu nhiên, theo dõi hạt",
+  "lipids": "Lipid chuyển động",
+  "lipidsReduced": "Đang đứng yên vì thiết bị yêu cầu giảm chuyển động.",
+  "metabolism": "Chuyển hóa glucose bên trong",
+  "metabolismHint": "Glucose đã vào tế bào mờ dần trong 10 s rồi biến mất, như được tế bào sử dụng.",
+  "highlights": "Nhấn mạnh hạt vừa qua màng",
+  "bias": "Khuếch tán thuần ngẫu nhiên",
+  "biasHint": "Mặc định mô hình gốc chặn 90 % bước ngược chênh lệch (khi chênh lệch > 10 %) để thấy rõ dòng ròng. Bật để bỏ thiên lệch này: dòng ròng vẫn xuôi chênh lệch nhưng chậm và dao động hơn.",
+  "follow": "Theo dõi một hạt",
+  "followHint": "Nhấn vào một hạt trong cảnh để theo dõi; vòng đánh dấu không đổi đường đi của hạt.",
+  "stopFollow": "Thôi theo dõi",
+  "followed": "Hạt đang theo dõi",
+  "modesText": {
+   "randomWalk": "đang chuyển động ngẫu nhiên",
+   "ligandBound": "đang gắn vào kênh",
+   "moveToCenterOfChannel": "đang tới miệng kênh",
+   "moveToSodiumGlucoseCotransporter": "đang tới chỗ gắn của đồng vận chuyển",
+   "moveToSodiumPotassiumPump": "đang tới chỗ gắn của bơm",
+   "waitingInSodiumGlucoseCotransporter": "đang chờ trong đồng vận chuyển",
+   "waitingInSodiumPotassiumPump": "đang chờ trong bơm",
+   "moveToLigandBindingLocation": "đang tới chỗ gắn ligand",
+   "enteringTransportProtein": "đang vào kênh",
+   "passiveDiffusion": "đang lọt qua lớp lipid",
+   "movingThroughTransportProtein": "đang đi qua protein",
+   "userControlled": "đang được cầm",
+   "userOver": "đứng yên dưới con trỏ"
+  },
+  "concentrations": "Nồng độ chất tan",
+  "concentrationsHint": "Cột trên: bên ngoài; cột dưới: bên trong. Vạch vàng: số hạt vừa qua màng trong 1 s; mũi tên: dòng ròng 1 s.",
+  "inLastSecond": "trong 1 s",
+  "netNone": "không có dòng ròng",
+  "atpProducts": "ATP, ADP, Pi bên trong",
+  "compare": "So với trạng thái A",
+  "pin": "Ghim trạng thái A",
+  "unpin": "Bỏ ghim",
+  "pinHint": "Ghim một trạng thái, thay đổi màng rồi so số hạt hai phía.",
+  "columns": {
+   "solute": "Chất",
+   "outside": "Ngoài",
+   "inside": "Trong",
+   "change": "Trong: A → nay"
+  },
+  "series": "Số hạt theo thời gian",
+  "seriesEmpty": "Chưa có số liệu: hãy chạy mô phỏng.",
+  "inspector": "Protein đang chọn",
+  "inspectorChoose": "Chọn protein",
+  "inspectorEmpty": "Chưa có protein trên màng. Kéo một protein từ khay vào khe.",
+  "cycle": "Chu trình",
+  "waitingFor": "Đang chờ",
+  "moved": "Đã chuyển qua",
+  "sites": "Chỗ gắn",
+  "siteNames": {
+   "sodium1": "Na⁺ 1",
+   "sodium2": "Na⁺ 2",
+   "sodium3": "Na⁺ 3",
+   "atp": "ATP",
+   "phosphate": "Pi",
+   "potassium1": "K⁺ 1",
+   "potassium2": "K⁺ 2",
+   "left": "Na⁺ trái",
+   "center": "glucose",
+   "right": "Na⁺ phải"
+  },
+  "siteStates": [
+   "trống",
+   "đang tới",
+   "đã gắn"
+  ],
+  "removeProtein": "Trả protein về khay",
+  "bringLigand": "Đưa ligand đến kênh này",
+  "noFreeLigand": "Không có ligand tự do đúng loại.",
+  "ledger": "Sổ ATP của bơm",
+  "ledgerRows": {
+   "atp": "ATP đã dùng",
+   "sodiumOut": "Na⁺ đưa ra",
+   "potassiumIn": "K⁺ đưa vào"
+  },
+  "ledgerRatio": "Mỗi chu trình: 1 ATP → 3 Na⁺ ra, 2 K⁺ vào.",
+  "states": {
+   "open": "mở",
+   "closedNegative70mV": "đóng (−70 mV)",
+   "openNegative50mV": "mở (−50 mV)",
+   "closed30mV": "đóng (+30 mV)",
+   "closedNegative50mV": "đóng (−50 mV)",
+   "open30mV": "mở (+30 mV)",
+   "closed": "đóng, chưa gắn ligand",
+   "ligandBoundClosed": "ligand vừa gắn, đang mở",
+   "ligandBoundOpen": "mở, đang gắn ligand",
+   "ligandUnboundOpen": "ligand vừa nhả, đang đóng",
+   "openToInsideEmpty": "mở vào trong, chờ Na⁺",
+   "openToInsideSodiumBound": "đã gắn 3 Na⁺, chờ ATP",
+   "openToInsideSodiumAndATPBound": "ATP đã gắn, đang tách",
+   "openToInsideSodiumAndPhosphateBound": "đã gắn Pi, sắp đổi hình",
+   "openToOutsideAwaitingPotassium": "mở ra ngoài, thả Na⁺, chờ K⁺",
+   "openToOutsidePotassiumBound": "đã gắn 2 K⁺, sắp đổi hình",
+   "openToOutsideAwaitingParticles": "mở ra ngoài, chờ 2 Na⁺ + glucose",
+   "openToOutsideAllParticlesBound": "đã gắn đủ, sắp đổi hình",
+   "openToInside": "mở vào trong, thả chất"
+  },
+  "phases": {
+   "leakOpen": "Luôn mở; mỗi lần cho một ion đúng loại đi qua.",
+   "leakBusy": "Đang có một ion trong kênh; ion khác phải chờ.",
+   "voltageClosed": "Đóng ở điện thế đặt hiện tại.",
+   "voltageOpen": "Mở ở điện thế đặt hiện tại; ion đi xuôi chênh lệch.",
+   "voltageSwitching": "Điện thế vừa đổi: kênh đổi trạng thái sau 0,25 s.",
+   "ligandNeedLigands": "Đóng: chưa có ligand. Bấm “Thêm ligand”.",
+   "ligandWaiting": "Đóng: chờ ligand đúng hình gắn vào.",
+   "ligandBinding": "Ligand vừa gắn: kênh mở sau 0,5 s.",
+   "ligandOpen": "Mở trong 15 s khi còn gắn ligand.",
+   "ligandHolding": "Hết 15 s: chờ ion trong kênh đi hết rồi nhả ligand.",
+   "ligandClosing": "Ligand vừa nhả: kênh đóng sau 0,5 s.",
+   "ligandCooldown": "Vừa đóng: cần 5 s trước khi gắn ligand mới.",
+   "pumpWaitSodium": "Mở vào trong: chờ gắn đủ 3 Na⁺ từ bên trong.",
+   "pumpNoSodium": "Không còn Na⁺ bên trong để gắn.",
+   "pumpWaitAtp": "Đã gắn 3 Na⁺: chờ một ATP bên trong.",
+   "pumpNoAtp": "Thiếu ATP bên trong: bơm dừng ở bước này.",
+   "pumpSplitting": "Đang tách ATP thành ADP + Pi.",
+   "pumpFlipping": "Pi gắn vào bơm: bơm đổi hình, mở ra ngoài.",
+   "pumpWaitPotassium": "Mở ra ngoài: 3 Na⁺ đi ra, chờ gắn 2 K⁺ từ bên ngoài.",
+   "pumpNoPotassium": "Không còn K⁺ bên ngoài để gắn.",
+   "pumpResetting": "Đã gắn 2 K⁺: Pi rời bơm, bơm mở vào trong và thả K⁺.",
+   "cotransporterBlocked": "Dừng: Na⁺ ngoài ≤ Na⁺ trong, không có dòng Na⁺ đi vào để kéo glucose.",
+   "cotransporterWaiting": "Mở ra ngoài: chờ 2 Na⁺ và 1 glucose từ bên ngoài.",
+   "cotransporterNoGlucose": "Không có glucose bên ngoài để đưa vào.",
+   "cotransporterFlipping": "Đã gắn 2 Na⁺ + glucose: đổi hình sau 0,5 s.",
+   "cotransporterReleasing": "Mở vào trong: thả Na⁺ và glucose vào tế bào."
+  },
+  "familyNotes": {
+   "leakage": "Khuếch tán qua kênh: không tốn năng lượng.",
+   "voltage": "Khuếch tán qua kênh: mở/đóng theo điện thế màng đặt sẵn.",
+   "ligand": "Khuếch tán qua kênh: mở khi ligand đúng hình gắn vào.",
+   "pump": "Vận chuyển chủ động sơ cấp: dùng ATP, không xét chênh lệch.",
+   "cotransporter": "Vận chuyển chủ động thứ cấp: dùng dòng Na⁺ đi vào để đưa glucose ngược chênh lệch."
+  },
+  "latest": "Diễn biến gần nhất",
+  "latestEmpty": "Chưa có hạt nào qua màng.",
+  "viaBilayer": "qua lớp lipid kép",
+  "eventWhy": {
+   "bilayer": "Phân tử khí nhỏ, không phân cực nên lọt qua được lớp lipid.",
+   "channel": "Kênh chỉ mở đường; ion đi theo chênh lệch số hạt.",
+   "pump": "Bơm dùng năng lượng ATP nên đưa được ion ngược chênh lệch.",
+   "cotransporter": "Na⁺ đi vào theo chênh lệch kéo glucose theo, kể cả khi glucose bên trong đã nhiều hơn."
+  },
+  "sodiumTooLow": "Na⁺ bên ngoài quá thấp!",
+  "outsideLabel": "Bên ngoài tế bào",
+  "insideLabel": "Bên trong tế bào",
+  "sceneHintProteins": "Kéo protein vào khe trên màng",
+  "noSolutes": "chưa có chất tan",
+  "keyboardSummary": "Tab tới khay protein, protein trên màng hoặc ligand; Enter để cầm; mũi tên để chọn chỗ; Enter để thả; Esc để hủy.",
+  "modelNotes": [
+   "Số hạt trong cảnh là minh họa để đếm và so sánh, không phải nồng độ thật; mỗi loại tối đa 200 hạt tính cả hai phía.",
+   "Hạt chuyển động ngẫu nhiên. Để thấy rõ dòng ròng với ít hạt, mô hình gốc chặn 90 % bước đi ngược chênh lệch khi chênh lệch số hạt lớn hơn 10 % (tùy chọn “Khuếch tán thuần ngẫu nhiên” tắt thiên lệch này). O₂ và CO₂ lọt qua lớp lipid 90 % số lần chạm màng.",
+   "Điện thế màng là giá trị đặt (−70, −50 hoặc +30 mV) để mở/đóng kênh cổng điện thế sau 0,25 s; mô hình không tính điện thế từ số ion.",
+   "Bơm Na⁺/K⁺ dùng 1 ATP cho mỗi lần đưa 3 Na⁺ ra và 2 K⁺ vào, không phụ thuộc chênh lệch; ADP và Pi sinh ra mờ dần rồi biến mất.",
+   "Đồng vận chuyển Na⁺–glucose là vận chuyển chủ động thứ cấp: chỉ hoạt động khi Na⁺ ngoài nhiều hơn Na⁺ trong, và đưa glucose vào kể cả khi bên trong đã nhiều glucose hơn.",
+   "Mô hình không có nhập bào, xuất bào hay thẩm thấu nước; thời gian và tốc độ được chọn để quan sát, không phải số đo sinh hóa."
+  ]
+ }
+]

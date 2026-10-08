@@ -1,0 +1,250 @@
+[
+ {
+  "eyebrow": "Vật lí 11 · Tụ điện",
+  "title": "Phòng thí nghiệm tụ điện",
+  "description": "Tụ điện phẳng nối với pin qua khóa K. Đổi hiệu điện thế của pin, diện tích bản và khoảng cách hai bản để xem điện dung, điện tích, điện trường và năng lượng của tụ thay đổi; ở chế độ Bóng đèn, cho tụ phóng điện qua đèn.",
+  "modes": {
+   "capacitance": "Điện dung",
+   "light-bulb": "Bóng đèn"
+  },
+  "modeSwitch": "Chọn thí nghiệm",
+  "guidance": {
+   "capacitance": [
+    {
+     "label": "Bắt đầu",
+     "text": "Kéo núm trên thân pin hoặc dùng thanh U để tích điện cho tụ."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Đổi diện tích S và khoảng cách d: điện dung C và điện tích Q thay đổi thế nào?"
+    },
+    {
+     "label": "Thử thêm",
+     "text": "Gạt khóa sang hở mạch rồi kéo hai bản ra xa: Q giữ nguyên còn U tăng."
+    }
+   ],
+   "light-bulb": [
+    {
+     "label": "Bắt đầu",
+     "text": "Tích điện cho tụ bằng pin rồi gạt khóa sang đèn."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Đèn sáng rồi tối dần khi tụ phóng điện; dùng Tạm dừng, Bước và tốc độ Chậm để theo dõi."
+    },
+    {
+     "label": "Thử thêm",
+     "text": "Đổi S hoặc d khi đang phóng: điện tích lúc đổi được giữ, còn τ = RC thay đổi."
+    }
+   ]
+  },
+  "sections": {
+   "circuit": "Mạch điện",
+   "capacitor": "Tụ điện",
+   "time": "Thời gian",
+   "display": "Hiển thị",
+   "meters": "Dụng cụ đo",
+   "results": "Kết quả",
+   "discharge": "Mở rộng: phóng điện qua đèn"
+  },
+  "controls": {
+   "switchLabel": "Khóa K",
+   "connections": {
+    "battery": "Nối pin",
+    "open": "Hở mạch",
+    "bulb": "Nối đèn"
+   },
+   "switchHint": "Có thể kéo cần gạt hoặc bấm vào tiếp điểm ngay trong hình.",
+   "battery": "Hiệu điện thế của pin",
+   "area": "Diện tích bản S",
+   "separation": "Khoảng cách hai bản d",
+   "play": "Chạy",
+   "pause": "Tạm dừng",
+   "step": "Bước",
+   "stepLabel": "Bước tới 0,1 giây",
+   "running": "Đang chạy",
+   "paused": "Đang tạm dừng",
+   "playback": "Điều khiển thời gian",
+   "speed": "Tốc độ",
+   "speeds": {
+    "normal": "Bình thường",
+    "slow": "Chậm"
+   },
+   "timeHint": "Thời gian chỉ trôi khi tụ đang phóng điện qua đèn.",
+   "charges": "Điện tích trên bản",
+   "field": "Đường sức điện trường",
+   "current": "Chiều dòng điện",
+   "currentFlow": "Mũi tên chỉ chiều",
+   "currentFlows": {
+    "conventional": "Quy ước",
+    "electron": "Electron"
+   },
+   "bars": {
+    "capacitance": "Cột điện dung C",
+    "charge": "Cột điện tích Q",
+    "energy": "Cột năng lượng W"
+   },
+   "voltmeter": "Vôn kế",
+   "voltmeterHint": "Kéo hai que đo chạm vào mạch, hoặc chọn que rồi dùng phím mũi tên để chuyển điểm đo.",
+   "on": "Bật",
+   "off": "Tắt"
+  },
+  "units": {
+   "volt": "{value} V",
+   "millimetre": "{value} mm",
+   "squareMillimetre": "{value} mm²",
+   "picofarad": "{value} pF",
+   "picocoulomb": "{value} pC",
+   "picojoule": "{value} pJ",
+   "voltPerMetre": "{value} V/m",
+   "second": "{value} s",
+   "picoampere": "{value} pA",
+   "percent": "{value} %"
+  },
+  "results": {
+   "capacitance": "Điện dung",
+   "voltage": "Hiệu điện thế giữa hai bản",
+   "charge": "Điện tích bản trên",
+   "field": "Cường độ điện trường",
+   "energy": "Năng lượng của tụ",
+   "formulas": {
+    "capacitance": "C = ε₀S/d",
+    "voltageBattery": "U = U pin",
+    "voltageCharge": "U = Q/C",
+    "chargeBattery": "Q = C·U",
+    "chargeHeld": "Q giữ nguyên",
+    "chargeFalling": "Q giảm dần",
+    "field": "E = U/d",
+    "energy": "W = ½·C·U²"
+   },
+   "constantNote": "Tụ chân không (ε = 1), ε₀ = 1/(4πk) ≈ 8,85·10⁻¹² F/m, nên C = ε₀S/d cũng là C = εS/(4πkd).",
+   "situations": {
+    "batteryZero": "Pin đang ở 0 V nên hai bản chưa tích điện. Kéo núm trên thân pin để tích điện cho tụ.",
+    "batteryCharged": "Tụ nối với pin: U giữa hai bản luôn bằng U của pin. Đổi S hoặc d làm C đổi, nên Q = C·U đổi theo; lúc Q thay đổi có dòng điện chạy trong dây.",
+    "openEmpty": "Mạch hở và tụ chưa tích điện. Gạt khóa về phía pin để tích điện.",
+    "openCharged": "Mạch hở: điện tích không có đường đi nên Q giữ nguyên. Đổi S hoặc d làm C đổi, nên U = Q/C và W thay đổi.",
+    "bulbDischarging": "Tụ phóng điện qua đèn: dòng điện đi từ bản tích điện dương qua đèn về bản âm; Q và U giảm dần theo hàm mũ.",
+    "bulbEmpty": "Tụ không còn điện tích nên không có dòng qua đèn. Gạt khóa về phía pin để tích điện lại."
+   }
+  },
+  "discharge": {
+   "clock": "Thời gian từ lúc nối đèn",
+   "notConnected": "Chưa nối đèn",
+   "timeConstant": "Hằng số thời gian",
+   "remaining": "Điện tích còn lại",
+   "current": "Dòng điện qua đèn",
+   "formula": "Khi C không đổi: q = Q₀·e^(−t/τ); sau mỗi τ điện tích còn khoảng 37 %.",
+   "resistance": "Điện trở đèn minh họa R = 5·10¹² Ω."
+  },
+  "scene": {
+   "title": {
+    "capacitance": "Mạch gồm pin, khóa K và tụ điện phẳng",
+    "light-bulb": "Mạch gồm pin, khóa K, tụ điện phẳng và bóng đèn"
+   },
+   "label": "Tụ điện phẳng: S = {area}, d = {separation}; khóa: {connection}; U = {voltage}, Q = {charge}.",
+   "batterySlider": "Hiệu điện thế của pin U",
+   "separationSlider": "Khoảng cách hai bản d",
+   "areaSlider": "Diện tích bản S",
+   "separationLabel": "d = {value}",
+   "areaLabel": "S = {value}",
+   "switchGroup": "Khóa K",
+   "voltmeter": "Vôn kế",
+   "probeHint": "Kéo que đo vào mạch",
+   "probes": {
+    "red": "Que đo đỏ (+)",
+    "black": "Que đo đen (−)"
+   },
+   "probeValue": "{probe}: {target}",
+   "probeTargets": {
+    "parked": "cất ở vôn kế, không chạm mạch",
+    "free": "không chạm mạch",
+    "battery-top-terminal": "cực trên của pin",
+    "battery-bottom-terminal": "cực dưới của pin",
+    "top-wire": "dây nối phía trên (từ pin)",
+    "bottom-wire": "dây nối phía dưới (từ pin)",
+    "top-plate": "bản trên",
+    "bottom-plate": "bản dưới",
+    "top-lead": "dây nối bản trên",
+    "bottom-lead": "dây nối bản dưới",
+    "bulb-top-wire": "dây nối phía trên tới đèn",
+    "bulb-bottom-wire": "dây nối phía dưới tới đèn",
+    "bulb-top-terminal": "đầu trên của đèn",
+    "bulb-bottom-terminal": "đầu dưới của đèn"
+   },
+   "paused": "Đang tạm dừng",
+   "running": "Đang chạy",
+   "clock": "t = {value}",
+   "bars": {
+    "capacitance": "C (pF)",
+    "charge": "Q (pC)",
+    "energy": "W (pJ)"
+   },
+   "currentLabel": {
+    "conventional": "I",
+    "electron": "e⁻"
+   }
+  },
+  "announcements": {
+   "connection": "Khóa K: {value}",
+   "reading": "Vôn kế đọc {value}",
+   "noReading": "Vôn kế chưa đo được",
+   "discharged": "Tụ đã phóng hết điện"
+  },
+  "modelNotes": [
+   "Tụ điện phẳng gồm hai bản kim loại vuông đặt song song trong chân không (ε = 1). Điện dung tính theo C = ε₀S/d với ε₀ ≈ 8,85·10⁻¹² F/m; vì ε₀ = 1/(4πk) nên đây cũng là công thức C = εS/(4πkd). Mô hình bỏ qua hiệu ứng mép: điện trường giữa hai bản là đều, E = U/d, và bằng 0 ở bên ngoài.",
+   "Hai bản chỉ rộng 10–20 mm và cách nhau 2–10 mm nên điện dung chỉ khoảng 0,09–1,8 picofara (1 pF = 10⁻¹² F); điện tích tính bằng picoculông (pC), năng lượng bằng picojun (pJ). Tụ điện trong mạch thật có điện dung lớn hơn hàng triệu lần nhờ diện tích lớn, khoảng cách rất nhỏ và chất điện môi.",
+   "Khi nối với pin, hiệu điện thế giữa hai bản bằng hiệu điện thế của pin ngay lập tức: mô hình bỏ qua điện trở của dây và thời gian nạp. Khi hở mạch, điện tích không có đường đi nên giữ nguyên; lúc đó đổi S hoặc d làm C đổi, kéo theo U = Q/C và W = Q²/(2C) đổi.",
+   "Bóng đèn có điện trở minh họa R = 5·10¹² Ω, lớn hơn rất nhiều so với đèn thật, để thời gian phóng τ = RC cỡ giây và quan sát được. Dòng qua đèn chỉ cỡ phần mười picoampe nên đèn thật sẽ không sáng; độ sáng trong hình chỉ tăng theo cường độ dòng. Khi hiệu điện thế giữa hai bản còn dưới 1 mV, mô hình coi tụ đã phóng hết điện.",
+   "Số dấu + và − vẽ trên hai bản và số đường sức tăng theo độ lớn điện tích, chỉ là biểu diễn định tính: mỗi dấu không ứng với một electron. Điện tích thật nằm ở mặt trong của hai bản (hai mặt đối diện nhau); hình vẽ dấu ở mặt trên của mỗi bản để dễ thấy.",
+   "Mũi tên chiều dòng điện mặc định theo chiều quy ước (chiều dịch chuyển của điện tích dương); khi chọn chiều electron, mũi tên quay ngược lại vì electron mang điện âm. Khi nối pin, dòng chỉ chạy trong khoảnh khắc điện tích thay đổi nên mũi tên hiện ngắn rồi mờ đi."
+  ]
+ },
+ {
+  "title": {
+   "capacitance": "Mạch gồm pin, khóa K và tụ điện phẳng",
+   "light-bulb": "Mạch gồm pin, khóa K, tụ điện phẳng và bóng đèn"
+  },
+  "label": "Tụ điện phẳng: S = {area}, d = {separation}; khóa: {connection}; U = {voltage}, Q = {charge}.",
+  "batterySlider": "Hiệu điện thế của pin U",
+  "separationSlider": "Khoảng cách hai bản d",
+  "areaSlider": "Diện tích bản S",
+  "separationLabel": "d = {value}",
+  "areaLabel": "S = {value}",
+  "switchGroup": "Khóa K",
+  "voltmeter": "Vôn kế",
+  "probeHint": "Kéo que đo vào mạch",
+  "probes": {
+   "red": "Que đo đỏ (+)",
+   "black": "Que đo đen (−)"
+  },
+  "probeValue": "{probe}: {target}",
+  "probeTargets": {
+   "parked": "cất ở vôn kế, không chạm mạch",
+   "free": "không chạm mạch",
+   "battery-top-terminal": "cực trên của pin",
+   "battery-bottom-terminal": "cực dưới của pin",
+   "top-wire": "dây nối phía trên (từ pin)",
+   "bottom-wire": "dây nối phía dưới (từ pin)",
+   "top-plate": "bản trên",
+   "bottom-plate": "bản dưới",
+   "top-lead": "dây nối bản trên",
+   "bottom-lead": "dây nối bản dưới",
+   "bulb-top-wire": "dây nối phía trên tới đèn",
+   "bulb-bottom-wire": "dây nối phía dưới tới đèn",
+   "bulb-top-terminal": "đầu trên của đèn",
+   "bulb-bottom-terminal": "đầu dưới của đèn"
+  },
+  "paused": "Đang tạm dừng",
+  "running": "Đang chạy",
+  "clock": "t = {value}",
+  "bars": {
+   "capacitance": "C (pF)",
+   "charge": "Q (pC)",
+   "energy": "W (pJ)"
+  },
+  "currentLabel": {
+   "conventional": "I",
+   "electron": "e⁻"
+  }
+ }
+]

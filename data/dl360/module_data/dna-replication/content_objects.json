@@ -1,0 +1,258 @@
+[
+ {
+  "nucleotide-parts": {
+   "title": [
+    "Một nucleotide gồm gì?",
+    "What makes a nucleotide?"
+   ],
+   "prompt": [
+    "Quan sát một đơn vị được chọn trên DNA. Ba thành phần cấu tạo là gì?",
+    "Inspect the selected DNA building block. What are its three components?"
+   ],
+   "options": [
+    [
+     "Đường, phosphate và một base",
+     "Sugar, phosphate and one base"
+    ],
+    [
+     "Ba base A, T và G",
+     "Three bases: A, T and G"
+    ],
+    [
+     "Đường, protein và một base",
+     "Sugar, protein and one base"
+    ]
+   ],
+   "explanation": [
+    "Mỗi nucleotide DNA gồm đường deoxyribose, nhóm phosphate và một base. Hai nucleotide ở hai mạch tạo thành một cặp, không phải một nucleotide.",
+    "Each DNA nucleotide contains deoxyribose, phosphate and one base. A base pair involves two nucleotides, one from each strand."
+   ]
+  },
+  "complement": {
+   "title": [
+    "Hoàn thiện mạch bổ sung",
+    "Complete the complementary strand"
+   ],
+   "prompt": [
+    "Mạch khuôn được viết 3′–ATGCCA–5′. Điền mạch mới theo thứ tự từ trái sang phải: 5′–______–3′.",
+    "The template is written 3′–ATGCCA–5′. Fill the new strand left to right: 5′–______–3′."
+   ],
+   "options": [],
+   "explanation": [
+    "5′–TACGGT–3′ bổ sung với 3′–ATGCCA–5′. Ghép A–T, G–C và luôn kiểm tra chiều của mạch.",
+    "5′–TACGGT–3′ complements 3′–ATGCCA–5′. Pair A–T and G–C, and check the strand directions."
+   ]
+  },
+  "old-strands": {
+   "title": [
+    "Theo dấu mạch cũ",
+    "Track the old strands"
+   ],
+   "prompt": [
+    "Sau một lần nhân đôi, mỗi DNA con nhận những mạch nào? Dự đoán trước khi quan sát sản phẩm.",
+    "After one replication cycle, which strands does each daughter DNA contain? Predict before viewing the products."
+   ],
+   "options": [
+    [
+     "Một mạch cũ và một mạch mới",
+     "One old and one new strand"
+    ],
+    [
+     "Cả hai mạch đều cũ",
+     "Two old strands"
+    ],
+    [
+     "Cả hai mạch đều mới",
+     "Two new strands"
+    ]
+   ],
+   "explanation": [
+    "Hai mạch của DNA ban đầu đi vào hai DNA con khác nhau. Mỗi mạch cũ đi cùng một mạch mới: đó là bán bảo toàn.",
+    "The two original strands go into different daughter DNAs. Each old strand pairs with a new strand: semiconservative replication."
+   ]
+  },
+  "synthesis-direction": {
+   "title": [
+    "Mạch mới dài ra theo chiều nào?",
+    "Which way does new DNA grow?"
+   ],
+   "prompt": [
+    "DNA polymerase kéo dài mạch mới theo chiều nào, kể cả trên mạch gián đoạn?",
+    "In which direction does DNA polymerase extend new DNA, including on the lagging strand?"
+   ],
+   "options": [
+    [
+     "Luôn 5′→3′",
+     "Always 5′→3′"
+    ],
+    [
+     "Luôn 3′→5′",
+     "Always 3′→5′"
+    ],
+    [
+     "Tùy mạch: cả hai chiều",
+     "Either direction, depending on the strand"
+    ]
+   ],
+   "explanation": [
+    "Polymerase bổ sung vào đầu 3′. Vì thế cả mạch liên tục và từng đoạn Okazaki đều tổng hợp 5′→3′; khác nhau ở hướng so với chạc tái bản.",
+    "Polymerase adds at the 3′ end. Both the leading strand and every Okazaki fragment grow 5′→3′, but in different directions relative to the fork."
+   ]
+  },
+  "okazaki": {
+   "title": [
+    "Vì sao có đoạn Okazaki?",
+    "Why are Okazaki fragments needed?"
+   ],
+   "prompt": [
+    "Hai mạch khuôn ngược chiều, chạc tiếp tục mở. Điều gì giải thích sự tổng hợp gián đoạn?",
+    "The templates are antiparallel and the fork keeps opening. What explains discontinuous synthesis?"
+   ],
+   "options": [
+    [
+     "Polymerase chỉ kéo dài 5′→3′ trên hai khuôn ngược chiều",
+     "Polymerase only extends 5′→3′ on antiparallel templates"
+    ],
+    [
+     "Mạch khuôn bên dưới luôn ngắn hơn",
+     "The lower template is always shorter"
+    ],
+    [
+     "Ligase tự tổng hợp từng đoạn DNA",
+     "Ligase synthesizes the DNA fragments"
+    ]
+   ],
+   "explanation": [
+    "Trên một khuôn, chiều 5′→3′ của mạch mới hướng ra xa chạc. Khi thêm vùng khuôn được mở, một đoạn mới bắt đầu gần chạc và kéo dài ngược hướng mở chạc.",
+    "On one template, 5′→3′ growth points away from the fork. As more template opens, a new fragment starts near the fork and extends away from it."
+   ]
+  }
+ },
+ {
+  "title": [
+   "Một nucleotide gồm gì?",
+   "What makes a nucleotide?"
+  ],
+  "prompt": [
+   "Quan sát một đơn vị được chọn trên DNA. Ba thành phần cấu tạo là gì?",
+   "Inspect the selected DNA building block. What are its three components?"
+  ],
+  "options": [
+   [
+    "Đường, phosphate và một base",
+    "Sugar, phosphate and one base"
+   ],
+   [
+    "Ba base A, T và G",
+    "Three bases: A, T and G"
+   ],
+   [
+    "Đường, protein và một base",
+    "Sugar, protein and one base"
+   ]
+  ],
+  "explanation": [
+   "Mỗi nucleotide DNA gồm đường deoxyribose, nhóm phosphate và một base. Hai nucleotide ở hai mạch tạo thành một cặp, không phải một nucleotide.",
+   "Each DNA nucleotide contains deoxyribose, phosphate and one base. A base pair involves two nucleotides, one from each strand."
+  ]
+ },
+ {
+  "title": [
+   "Hoàn thiện mạch bổ sung",
+   "Complete the complementary strand"
+  ],
+  "prompt": [
+   "Mạch khuôn được viết 3′–ATGCCA–5′. Điền mạch mới theo thứ tự từ trái sang phải: 5′–______–3′.",
+   "The template is written 3′–ATGCCA–5′. Fill the new strand left to right: 5′–______–3′."
+  ],
+  "options": [],
+  "explanation": [
+   "5′–TACGGT–3′ bổ sung với 3′–ATGCCA–5′. Ghép A–T, G–C và luôn kiểm tra chiều của mạch.",
+   "5′–TACGGT–3′ complements 3′–ATGCCA–5′. Pair A–T and G–C, and check the strand directions."
+  ]
+ },
+ {
+  "title": [
+   "Theo dấu mạch cũ",
+   "Track the old strands"
+  ],
+  "prompt": [
+   "Sau một lần nhân đôi, mỗi DNA con nhận những mạch nào? Dự đoán trước khi quan sát sản phẩm.",
+   "After one replication cycle, which strands does each daughter DNA contain? Predict before viewing the products."
+  ],
+  "options": [
+   [
+    "Một mạch cũ và một mạch mới",
+    "One old and one new strand"
+   ],
+   [
+    "Cả hai mạch đều cũ",
+    "Two old strands"
+   ],
+   [
+    "Cả hai mạch đều mới",
+    "Two new strands"
+   ]
+  ],
+  "explanation": [
+   "Hai mạch của DNA ban đầu đi vào hai DNA con khác nhau. Mỗi mạch cũ đi cùng một mạch mới: đó là bán bảo toàn.",
+   "The two original strands go into different daughter DNAs. Each old strand pairs with a new strand: semiconservative replication."
+  ]
+ },
+ {
+  "title": [
+   "Mạch mới dài ra theo chiều nào?",
+   "Which way does new DNA grow?"
+  ],
+  "prompt": [
+   "DNA polymerase kéo dài mạch mới theo chiều nào, kể cả trên mạch gián đoạn?",
+   "In which direction does DNA polymerase extend new DNA, including on the lagging strand?"
+  ],
+  "options": [
+   [
+    "Luôn 5′→3′",
+    "Always 5′→3′"
+   ],
+   [
+    "Luôn 3′→5′",
+    "Always 3′→5′"
+   ],
+   [
+    "Tùy mạch: cả hai chiều",
+    "Either direction, depending on the strand"
+   ]
+  ],
+  "explanation": [
+   "Polymerase bổ sung vào đầu 3′. Vì thế cả mạch liên tục và từng đoạn Okazaki đều tổng hợp 5′→3′; khác nhau ở hướng so với chạc tái bản.",
+   "Polymerase adds at the 3′ end. Both the leading strand and every Okazaki fragment grow 5′→3′, but in different directions relative to the fork."
+  ]
+ },
+ {
+  "title": [
+   "Vì sao có đoạn Okazaki?",
+   "Why are Okazaki fragments needed?"
+  ],
+  "prompt": [
+   "Hai mạch khuôn ngược chiều, chạc tiếp tục mở. Điều gì giải thích sự tổng hợp gián đoạn?",
+   "The templates are antiparallel and the fork keeps opening. What explains discontinuous synthesis?"
+  ],
+  "options": [
+   [
+    "Polymerase chỉ kéo dài 5′→3′ trên hai khuôn ngược chiều",
+    "Polymerase only extends 5′→3′ on antiparallel templates"
+   ],
+   [
+    "Mạch khuôn bên dưới luôn ngắn hơn",
+    "The lower template is always shorter"
+   ],
+   [
+    "Ligase tự tổng hợp từng đoạn DNA",
+    "Ligase synthesizes the DNA fragments"
+   ]
+  ],
+  "explanation": [
+   "Trên một khuôn, chiều 5′→3′ của mạch mới hướng ra xa chạc. Khi thêm vùng khuôn được mở, một đoạn mới bắt đầu gần chạc và kéo dài ngược hướng mở chạc.",
+   "On one template, 5′→3′ growth points away from the fork. As more template opens, a new fragment starts near the fork and extends away from it."
+  ]
+ }
+]
