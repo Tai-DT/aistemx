@@ -1,0 +1,635 @@
+[
+ {
+  "eyebrow": "Địa lí lớp 6",
+  "title": "Chuyển động Trái Đất quanh Mặt Trời — ngày/đêm và mùa",
+  "description": "Kéo Trái Đất trên quỹ đạo, đổi ngày và vĩ độ để quan sát mùa, độ dài ngày/đêm và độ cao Mặt Trời thay đổi như thế nào.",
+  "modeLabels": {
+   "explore": "Khám phá",
+   "guided": "Hoạt động có hướng dẫn",
+   "prediction": "Dự đoán và kiểm chứng"
+  },
+  "presetLabels": {
+   "equator": "Xích đạo (0°)",
+   "tropic": "Chí tuyến Bắc (23,5°)",
+   "arctic": "Vòng cực Bắc (66,5°)",
+   "pole": "Cực Bắc (90°)",
+   "southTropic": "Chí tuyến Nam (23,5°)",
+   "antarctic": "Vòng cực Nam (66,5°)",
+   "southPole": "Cực Nam (90°)"
+  },
+  "metricLabels": {
+   "noonElevation": "Độ cao Mặt Trời lúc giữa trưa",
+   "sunTilt": "Tia sáng Mặt Trời",
+   "seasonNorth": "Mùa ở bán cầu Bắc",
+   "seasonSouth": "Mùa ở bán cầu Nam",
+   "seasonBoth": "Mùa thiên văn tại hai bán cầu",
+   "dayAndLengthGroup": "Ngày và độ dài ngày–đêm",
+   "angleAndElevationGroup": "Góc chiếu sáng và độ cao Mặt Trời",
+   "date": "Ngày",
+   "latitude": "Vĩ độ",
+   "horizon": "Mặt Trời ở chân trời; không có chu kỳ mọc–lặn trong ngày lý tưởng tại cực.",
+   "belowHorizon": "Dưới chân trời",
+   "overheadLatitude": "Tia nắng chiếu vuông góc tại",
+   "astronomicalSeasons": "Mùa thiên văn theo bán cầu; không mô tả thời tiết từng địa phương.",
+   "polarDay": "Ngày địa cực",
+   "polarNight": "Đêm địa cực"
+  },
+  "seasonLabels": {
+   "spring": "Xuân",
+   "summer": "Hạ",
+   "autumn": "Thu",
+   "winter": "Đông"
+  },
+  "sceneLabels": {
+   "sun": "Mặt Trời",
+   "earth": "Trái Đất",
+   "day": "Ngày",
+   "night": "Đêm",
+   "dayWord": "ngày",
+   "sceneDesc": "Mặt Trời, Trái Đất trên quỹ đạo và đĩa sáng–tối theo vĩ độ; bốn mốc chí/phân có thể bấm để nhảy tới ngày đó.",
+   "milestoneLabels": [
+    "Xuân phân · 21/3",
+    "Hạ chí · 22/6",
+    "Thu phân · 23/9",
+    "Đông chí · 22/12"
+   ],
+   "milestoneClickHint": "Bấm để xem ngày này",
+   "sceneHint": "Kéo Trái Đất (quả cầu xanh) dọc quỹ đạo, bấm một mốc chí/phân hoặc kéo thanh trượt để đổi ngày và vĩ độ.",
+   "legendTitle": "Chú giải",
+   "legendItems": [
+    {
+     "swatch": "orbit",
+     "label": "Đường nét đứt: quỹ đạo tròn của Trái Đất quanh Mặt Trời."
+    },
+    {
+     "swatch": "earth",
+     "label": "Quả cầu xanh: Trái Đất — kéo dọc quỹ đạo để đổi ngày."
+    },
+    {
+     "swatch": "milestone",
+     "label": "Chấm mốc: bốn ngày đặc biệt (Xuân phân, Hạ chí, Thu phân, Đông chí) — bấm để nhảy tới."
+    }
+   ],
+   "polarDayBadge": "Ngày địa cực · Mặt Trời không lặn",
+   "polarNightBadge": "Đêm địa cực · Mặt Trời không mọc",
+   "dayOrbitHint": "Kéo Trái Đất trên quỹ đạo để đổi ngày",
+   "toggleAxis": "Trục quay",
+   "toggleSunRays": "Tia sáng",
+   "toggleOrbitalPlane": "Mặt phẳng quỹ đạo",
+   "toggleDayNightZones": "Vùng ngày/đêm",
+   "sunlightLabel": "Ánh sáng Mặt Trời",
+   "dayNightGlobeTitle": "Ngày–đêm tại vĩ độ",
+   "globeLatitudeLineCaption": "Vĩ tuyến quan sát",
+   "globeDayPortionCaption": "Phần vĩ tuyến được chiếu sáng",
+   "durationCaption": "Thời lượng trong 24 giờ",
+   "globeProjectionNote": "Hình chiếu nhìn ngang, Bắc ở trên. Độ dài đoạn màu trên hình không phải tỉ lệ thời gian ngày/đêm."
+  },
+  "panelLabels": {
+   "play": "Chạy mô phỏng",
+   "pause": "Tạm dừng",
+   "replay": "Chạy lại",
+   "speed": "Tốc độ",
+   "speedNormal": "1 ngày/giây",
+   "speedFast": "5 ngày/giây",
+   "presetLatitude": "Vị trí quan sát (preset)",
+   "presetCustom": "Tùy chỉnh",
+   "objectiveLabel": "Mục tiêu",
+   "stepLabel": "Bước",
+   "questionLabel": "Câu hỏi",
+   "submit": "Trả lời",
+   "next": "Câu tiếp theo",
+   "retry": "Làm lại",
+   "restartActivity": "Làm lại hoạt động",
+   "completionLabel": "Hoàn tất",
+   "scoreLabel": "Điểm",
+   "correctLabel": "Đúng",
+   "wrongLabel": "Sai",
+   "yourAnswer": "Câu trả lời của bạn",
+   "correctAnswer": "Đáp án đúng",
+   "reviewWrong": "Xem lại các câu sai",
+   "concealNote": "Ngày và vĩ độ được giữ theo câu hỏi. Kết quả sẽ hiện ra sau khi bạn trả lời.",
+   "resultHidden": "—",
+   "givenDate": "Ngày cho trước",
+   "givenLatitude": "Vĩ độ quan sát"
+  },
+  "guidance": [
+   {
+    "label": "Điều đang xảy ra",
+    "text": "Trục Trái Đất nghiêng ≈ 23,5° và giữ nguyên hướng khi Trái Đất quay quanh Mặt Trời, nên mỗi bán cầu nhận lượng ánh sáng khác nhau trong năm."
+   },
+   {
+    "label": "Hãy quan sát",
+    "text": "Kéo Trái Đất dọc quỹ đạo để đổi ngày, kéo thanh vĩ độ để đổi nơi quan sát; xem mùa, độ dài ngày và độ cao Mặt Trời thay đổi. Kéo vĩ độ qua khỏi vòng cực (67° trở lên) vào ngày Hạ chí để thấy ngày địa cực trọn vẹn."
+   },
+   {
+    "label": "Điểm dễ nhầm",
+    "text": "Mùa không phải do Trái Đất ở gần hay xa Mặt Trời — quỹ đạo trong mô hình là tròn. Tự quay tạo ra sự luân phiên ngày–đêm. Khi giữ chu kỳ tự quay 24 giờ, độ dài ngày thay đổi theo vĩ độ và vị trí trong năm do trục nghiêng."
+   }
+  ],
+  "modelNotes": [
+   "Mô hình dùng quỹ đạo tròn biểu diễn nghiêng và năm 365 ngày. Bốn mốc 21/3, 22/6, 23/9, 22/12 là quy ước học tập; góc quỹ đạo được nội suy đều trong từng khoảng, không đều trong cả năm. Ngày chí/phân thực tế thay đổi theo năm, lịch nhuận và múi giờ.",
+   "Mô hình dùng tâm Mặt Trời và chân trời hình học, bỏ qua khúc xạ khí quyển và kích thước đĩa Mặt Trời. Ngày 12 giờ tại ngày phân là kết quả lý tưởng ngoài hai cực; ngày thực tế chỉ xấp xỉ. Tại đúng cực vào ngày phân, Mặt Trời nằm ở chân trời, không có chu kỳ mọc–lặn thông thường.",
+   "Hai vĩ độ đối nhau trong cùng ngày có tổng thời lượng ban ngày bằng 24 giờ trong mô hình, ngoại trừ trạng thái chân trời ở hai cực. Không áp dụng cam kết sai số cho hai ngày cách nhau 182 ngày. Độ cao âm nghĩa là Mặt Trời dưới chân trời; mùa thiên văn không phải dự báo khí hậu địa phương."
+  ]
+ },
+ {
+  "id": "season-at-date",
+  "title": {
+   "vi": "Mùa đang diễn ra ở đâu?",
+   "en": "What season is it where?"
+  },
+  "objective": {
+   "vi": "Xác định mùa của cả hai bán cầu tại hai mốc đặc biệt trong năm.",
+   "en": "Identify the season in both hemispheres at two special dates."
+  },
+  "steps": [
+   {
+    "applyDay": 80,
+    "applyLatitude": 21,
+    "instruction": {
+     "vi": "Học liệu đưa bạn tới ngày 21/3 (Xuân phân). Hãy nhìn vị trí Trái Đất trên quỹ đạo và trả lời.",
+     "en": "You are taken to 21/3 (March equinox). Look at Earth's position and answer."
+    },
+    "question": {
+     "vi": "Ngày 21/3, bán cầu Bắc đang là mùa gì?",
+     "en": "On 21/3, what season is the Northern Hemisphere in?"
+    },
+    "options": [
+     [
+      "Xuân",
+      "Spring"
+     ],
+     [
+      "Hạ",
+      "Summer"
+     ],
+     [
+      "Thu",
+      "Autumn"
+     ],
+     [
+      "Đông",
+      "Winter"
+     ]
+    ],
+    "correctIndex": 0,
+    "explanation": {
+     "vi": "Xuân phân mở đầu mùa xuân ở bán cầu Bắc. Trong mô hình lý tưởng, tại các vĩ độ ngoài hai cực, ngày và đêm đều dài 12 giờ. Thực tế chỉ xấp xỉ bằng nhau.",
+     "en": "The March equinox starts spring in the Northern Hemisphere. In the ideal model, away from the poles, day and night each last 12 hours. Real durations are only approximately equal."
+    }
+   },
+   {
+    "applyDay": 356,
+    "applyLatitude": 21,
+    "instruction": {
+     "vi": "Học liệu đưa bạn tới ngày 22/12 (Đông chí). Hãy quan sát mùa ở bán cầu Nam.",
+     "en": "You are taken to 22/12 (December solstice). Observe the season in the Southern Hemisphere."
+    },
+    "question": {
+     "vi": "Ngày 22/12, bán cầu Nam đang là mùa gì?",
+     "en": "On 22/12, what season is the Southern Hemisphere in?"
+    },
+    "options": [
+     [
+      "Xuân",
+      "Spring"
+     ],
+     [
+      "Hạ",
+      "Summer"
+     ],
+     [
+      "Thu",
+      "Autumn"
+     ],
+     [
+      "Đông",
+      "Winter"
+     ]
+    ],
+    "correctIndex": 1,
+    "explanation": {
+     "vi": "Khi bán cầu Bắc là mùa đông, bán cầu Nam ngả về Mặt Trời nên đang là mùa hè. Hai bán cầu luôn ngược mùa nhau.",
+     "en": "When the Northern Hemisphere has winter, the Southern Hemisphere tilts toward the Sun and has summer. The two hemispheres always have opposite seasons."
+    }
+   }
+  ]
+ },
+ {
+  "id": "longest-shortest-day",
+  "title": {
+   "vi": "Ngày dài nhất và ngắn nhất",
+   "en": "Longest and shortest day"
+  },
+  "objective": {
+   "vi": "So sánh độ dài ngày tại hạ chí và đông chí.",
+   "en": "Compare day length at the June and December solstices."
+  },
+  "steps": [
+   {
+    "applyDay": 173,
+    "applyLatitude": 21,
+    "instruction": {
+     "vi": "Ngày 22/6 (Hạ chí), vĩ độ 21°B. Hãy đọc độ dài ngày ở bảng kết quả.",
+     "en": "On 22/6 (June solstice), at 21°N. Read the day length in the results."
+    },
+    "question": {
+     "vi": "Ngày dài nhất trong năm ở bán cầu Bắc rơi vào mốc nào?",
+     "en": "The longest day of the year in the Northern Hemisphere happens at which date?"
+    },
+    "options": [
+     [
+      "Xuân phân (21/3)",
+      "March equinox"
+     ],
+     [
+      "Hạ chí (22/6)",
+      "June solstice"
+     ],
+     [
+      "Thu phân (23/9)",
+      "September equinox"
+     ],
+     [
+      "Đông chí (22/12)",
+      "December solstice"
+     ]
+    ],
+    "correctIndex": 1,
+    "explanation": {
+     "vi": "Tại Hạ chí, bán cầu Bắc ngả về Mặt Trời nhiều nhất nên ngày dài nhất. Ở vĩ độ 21°B, ngày dài khoảng 13 giờ 17 phút.",
+     "en": "At the June solstice, the Northern Hemisphere tilts most toward the Sun, so the day is longest. At 21°N the day lasts about 13 h 17 min."
+    }
+   },
+   {
+    "applyDay": 356,
+    "applyLatitude": 21,
+    "instruction": {
+     "vi": "Ngày 22/12 (Đông chí), vĩ độ 21°B. Hãy đọc độ dài ngày.",
+     "en": "On 22/12 (December solstice), at 21°N. Read the day length."
+    },
+    "question": {
+     "vi": "Tại bán cầu Bắc, ngày 22/12 có ngày như thế nào?",
+     "en": "In the Northern Hemisphere, what is the day like on 22/12?"
+    },
+    "options": [
+     [
+      "Dài nhất trong năm",
+      "Longest of the year"
+     ],
+     [
+      "Ngắn nhất trong năm",
+      "Shortest of the year"
+     ],
+     [
+      "Bằng đêm",
+      "Equal to night"
+     ],
+     [
+      "Dài hơn đêm",
+      "Longer than night"
+     ]
+    ],
+    "correctIndex": 1,
+    "explanation": {
+     "vi": "Đông chí là ngày ngắn nhất ở bán cầu Bắc vì bán cầu này ngả xa Mặt Trời nhất.",
+     "en": "The December solstice is the shortest day in the Northern Hemisphere because it tilts farthest from the Sun."
+    }
+   }
+  ]
+ },
+ {
+  "id": "polar-day-night",
+  "title": {
+   "vi": "Vùng nào có ngày/đêm địa cực?",
+   "en": "Where do polar day and polar night happen?"
+  },
+  "objective": {
+   "vi": "Quan sát hiện tượng ngày 24 giờ và đêm 24 giờ gần vòng cực.",
+   "en": "Observe 24-hour day and 24-hour night near the polar circles."
+  },
+  "steps": [
+   {
+    "applyDay": 173,
+    "applyLatitude": 67,
+    "instruction": {
+     "vi": "Học liệu đưa bạn tới vĩ độ 67°B (phía trong Vòng cực Bắc) vào ngày Hạ chí.",
+     "en": "You are taken to 67°N (inside the Arctic Circle) on the June solstice."
+    },
+    "question": {
+     "vi": "Ngày 22/6 tại 67°B, độ dài ngày là bao nhiêu?",
+     "en": "On 22/6 at 67°N, how long is the day?"
+    },
+    "options": [
+     [
+      "24 giờ (Mặt Trời không lặn)",
+      "24 hours (Sun never sets)"
+     ],
+     [
+      "12 giờ",
+      "12 hours"
+     ],
+     [
+      "0 giờ",
+      "0 hours"
+     ],
+     [
+      "18 giờ",
+      "18 hours"
+     ]
+    ],
+    "correctIndex": 0,
+    "explanation": {
+     "vi": "Ở phía trong vòng cực, có những ngày Mặt Trời không lặn — đó là ngày địa cực; càng gần cực, hiện tượng càng kéo dài. Ở 67°B, ngày dài đúng 24 giờ.",
+     "en": "Inside the polar circle, some days have no sunset — polar days; they last for a longer part of the year closer to the pole. At 67°N the day lasts exactly 24 hours."
+    }
+   },
+   {
+    "applyDay": 356,
+    "applyLatitude": 67,
+    "instruction": {
+     "vi": "Cùng vĩ độ 67°B nhưng tới ngày Đông chí.",
+     "en": "Same latitude 67°N, but now at the December solstice."
+    },
+    "question": {
+     "vi": "Ngày 22/12 tại 67°B thì sao?",
+     "en": "What about 22/12 at 67°N?"
+    },
+    "options": [
+     [
+      "24 giờ",
+      "24 hours"
+     ],
+     [
+      "12 giờ",
+      "12 hours"
+     ],
+     [
+      "0 giờ (Mặt Trời không mọc)",
+      "0 hours (Sun never rises)"
+     ],
+     [
+      "6 giờ",
+      "6 hours"
+     ]
+    ],
+    "correctIndex": 2,
+    "explanation": {
+     "vi": "Gần Đông chí, vùng trong Vòng cực Bắc có đêm địa cực: Mặt Trời không mọc suốt 24 giờ.",
+     "en": "Near the December solstice, inside the Arctic Circle a polar night occurs: the Sun does not rise for 24 hours."
+    }
+   }
+  ]
+ },
+ [
+  {
+   "id": "season-at-date",
+   "title": {
+    "vi": "Mùa đang diễn ra ở đâu?",
+    "en": "What season is it where?"
+   },
+   "objective": {
+    "vi": "Xác định mùa của cả hai bán cầu tại hai mốc đặc biệt trong năm.",
+    "en": "Identify the season in both hemispheres at two special dates."
+   },
+   "steps": [
+    {
+     "applyDay": 80,
+     "applyLatitude": 21,
+     "instruction": {
+      "vi": "Học liệu đưa bạn tới ngày 21/3 (Xuân phân). Hãy nhìn vị trí Trái Đất trên quỹ đạo và trả lời.",
+      "en": "You are taken to 21/3 (March equinox). Look at Earth's position and answer."
+     },
+     "question": {
+      "vi": "Ngày 21/3, bán cầu Bắc đang là mùa gì?",
+      "en": "On 21/3, what season is the Northern Hemisphere in?"
+     },
+     "options": [
+      [
+       "Xuân",
+       "Spring"
+      ],
+      [
+       "Hạ",
+       "Summer"
+      ],
+      [
+       "Thu",
+       "Autumn"
+      ],
+      [
+       "Đông",
+       "Winter"
+      ]
+     ],
+     "correctIndex": 0,
+     "explanation": {
+      "vi": "Xuân phân mở đầu mùa xuân ở bán cầu Bắc. Trong mô hình lý tưởng, tại các vĩ độ ngoài hai cực, ngày và đêm đều dài 12 giờ. Thực tế chỉ xấp xỉ bằng nhau.",
+      "en": "The March equinox starts spring in the Northern Hemisphere. In the ideal model, away from the poles, day and night each last 12 hours. Real durations are only approximately equal."
+     }
+    },
+    {
+     "applyDay": 356,
+     "applyLatitude": 21,
+     "instruction": {
+      "vi": "Học liệu đưa bạn tới ngày 22/12 (Đông chí). Hãy quan sát mùa ở bán cầu Nam.",
+      "en": "You are taken to 22/12 (December solstice). Observe the season in the Southern Hemisphere."
+     },
+     "question": {
+      "vi": "Ngày 22/12, bán cầu Nam đang là mùa gì?",
+      "en": "On 22/12, what season is the Southern Hemisphere in?"
+     },
+     "options": [
+      [
+       "Xuân",
+       "Spring"
+      ],
+      [
+       "Hạ",
+       "Summer"
+      ],
+      [
+       "Thu",
+       "Autumn"
+      ],
+      [
+       "Đông",
+       "Winter"
+      ]
+     ],
+     "correctIndex": 1,
+     "explanation": {
+      "vi": "Khi bán cầu Bắc là mùa đông, bán cầu Nam ngả về Mặt Trời nên đang là mùa hè. Hai bán cầu luôn ngược mùa nhau.",
+      "en": "When the Northern Hemisphere has winter, the Southern Hemisphere tilts toward the Sun and has summer. The two hemispheres always have opposite seasons."
+     }
+    }
+   ]
+  },
+  {
+   "id": "longest-shortest-day",
+   "title": {
+    "vi": "Ngày dài nhất và ngắn nhất",
+    "en": "Longest and shortest day"
+   },
+   "objective": {
+    "vi": "So sánh độ dài ngày tại hạ chí và đông chí.",
+    "en": "Compare day length at the June and December solstices."
+   },
+   "steps": [
+    {
+     "applyDay": 173,
+     "applyLatitude": 21,
+     "instruction": {
+      "vi": "Ngày 22/6 (Hạ chí), vĩ độ 21°B. Hãy đọc độ dài ngày ở bảng kết quả.",
+      "en": "On 22/6 (June solstice), at 21°N. Read the day length in the results."
+     },
+     "question": {
+      "vi": "Ngày dài nhất trong năm ở bán cầu Bắc rơi vào mốc nào?",
+      "en": "The longest day of the year in the Northern Hemisphere happens at which date?"
+     },
+     "options": [
+      [
+       "Xuân phân (21/3)",
+       "March equinox"
+      ],
+      [
+       "Hạ chí (22/6)",
+       "June solstice"
+      ],
+      [
+       "Thu phân (23/9)",
+       "September equinox"
+      ],
+      [
+       "Đông chí (22/12)",
+       "December solstice"
+      ]
+     ],
+     "correctIndex": 1,
+     "explanation": {
+      "vi": "Tại Hạ chí, bán cầu Bắc ngả về Mặt Trời nhiều nhất nên ngày dài nhất. Ở vĩ độ 21°B, ngày dài khoảng 13 giờ 17 phút.",
+      "en": "At the June solstice, the Northern Hemisphere tilts most toward the Sun, so the day is longest. At 21°N the day lasts about 13 h 17 min."
+     }
+    },
+    {
+     "applyDay": 356,
+     "applyLatitude": 21,
+     "instruction": {
+      "vi": "Ngày 22/12 (Đông chí), vĩ độ 21°B. Hãy đọc độ dài ngày.",
+      "en": "On 22/12 (December solstice), at 21°N. Read the day length."
+     },
+     "question": {
+      "vi": "Tại bán cầu Bắc, ngày 22/12 có ngày như thế nào?",
+      "en": "In the Northern Hemisphere, what is the day like on 22/12?"
+     },
+     "options": [
+      [
+       "Dài nhất trong năm",
+       "Longest of the year"
+      ],
+      [
+       "Ngắn nhất trong năm",
+       "Shortest of the year"
+      ],
+      [
+       "Bằng đêm",
+       "Equal to night"
+      ],
+      [
+       "Dài hơn đêm",
+       "Longer than night"
+      ]
+     ],
+     "correctIndex": 1,
+     "explanation": {
+      "vi": "Đông chí là ngày ngắn nhất ở bán cầu Bắc vì bán cầu này ngả xa Mặt Trời nhất.",
+      "en": "The December solstice is the shortest day in the Northern Hemisphere because it tilts farthest from the Sun."
+     }
+    }
+   ]
+  },
+  {
+   "id": "polar-day-night",
+   "title": {
+    "vi": "Vùng nào có ngày/đêm địa cực?",
+    "en": "Where do polar day and polar night happen?"
+   },
+   "objective": {
+    "vi": "Quan sát hiện tượng ngày 24 giờ và đêm 24 giờ gần vòng cực.",
+    "en": "Observe 24-hour day and 24-hour night near the polar circles."
+   },
+   "steps": [
+    {
+     "applyDay": 173,
+     "applyLatitude": 67,
+     "instruction": {
+      "vi": "Học liệu đưa bạn tới vĩ độ 67°B (phía trong Vòng cực Bắc) vào ngày Hạ chí.",
+      "en": "You are taken to 67°N (inside the Arctic Circle) on the June solstice."
+     },
+     "question": {
+      "vi": "Ngày 22/6 tại 67°B, độ dài ngày là bao nhiêu?",
+      "en": "On 22/6 at 67°N, how long is the day?"
+     },
+     "options": [
+      [
+       "24 giờ (Mặt Trời không lặn)",
+       "24 hours (Sun never sets)"
+      ],
+      [
+       "12 giờ",
+       "12 hours"
+      ],
+      [
+       "0 giờ",
+       "0 hours"
+      ],
+      [
+       "18 giờ",
+       "18 hours"
+      ]
+     ],
+     "correctIndex": 0,
+     "explanation": {
+      "vi": "Ở phía trong vòng cực, có những ngày Mặt Trời không lặn — đó là ngày địa cực; càng gần cực, hiện tượng càng kéo dài. Ở 67°B, ngày dài đúng 24 giờ.",
+      "en": "Inside the polar circle, some days have no sunset — polar days; they last for a longer part of the year closer to the pole. At 67°N the day lasts exactly 24 hours."
+     }
+    },
+    {
+     "applyDay": 356,
+     "applyLatitude": 67,
+     "instruction": {
+      "vi": "Cùng vĩ độ 67°B nhưng tới ngày Đông chí.",
+      "en": "Same latitude 67°N, but now at the December solstice."
+     },
+     "question": {
+      "vi": "Ngày 22/12 tại 67°B thì sao?",
+      "en": "What about 22/12 at 67°N?"
+     },
+     "options": [
+      [
+       "24 giờ",
+       "24 hours"
+      ],
+      [
+       "12 giờ",
+       "12 hours"
+      ],
+      [
+       "0 giờ (Mặt Trời không mọc)",
+       "0 hours (Sun never rises)"
+      ],
+      [
+       "6 giờ",
+       "6 hours"
+      ]
+     ],
+     "correctIndex": 2,
+     "explanation": {
+      "vi": "Gần Đông chí, vùng trong Vòng cực Bắc có đêm địa cực: Mặt Trời không mọc suốt 24 giờ.",
+      "en": "Near the December solstice, inside the Arctic Circle a polar night occurs: the Sun does not rise for 24 hours."
+     }
+    }
+   ]
+  }
+ ]
+]

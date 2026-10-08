@@ -1,0 +1,976 @@
+[
+ {
+  "defaultLocale": "vi",
+  "messages": {
+   "vi": {
+    "eyebrow": "Hình học không gian",
+    "title": "Thiết diện và khai triển khối",
+    "description": "Học liệu tương tác giúp em quan sát khối 3D, cắt bằng một mặt phẳng để thấy thiết diện, và mở khối thành hình khai triển để hiểu quan hệ giữa các mặt.",
+    "guidance": [
+     {
+      "label": "Điều đang xảy ra",
+      "text": "Một mặt phẳng cắt qua khối tạo ra thiết diện; khối cũng có thể mở phẳng thành hình khai triển."
+     },
+     {
+      "label": "Hãy quan sát",
+      "text": "Thiết diện đổi hình dạng khi vị trí và hướng mặt phẳng cắt thay đổi; các mặt khai triển vẫn giữ đúng cạnh chung khi gấp lại."
+     },
+     {
+      "label": "Điểm dễ nhầm",
+      "text": "Thiết diện không phải lúc nào cũng là một hình có tên gọi quen thuộc — chỉ một số vị trí đặc biệt mới cho hình vuông, hình chữ nhật hay lục giác đều."
+     }
+    ],
+    "dimensionFieldLabels": {
+     "edge": "Cạnh a",
+     "width": "Chiều dài AB",
+     "height": "Chiều cao",
+     "depth": "Chiều rộng BC",
+     "base": "Cạnh đáy",
+     "length": "Chiều cao (cạnh bên)",
+     "radius": "Bán kính"
+    },
+    "sectionLabels": {
+     "overview": "Tổng quan",
+     "cross-section": "Thiết diện",
+     "net": "Khai triển"
+    },
+    "sphereNetUnavailable": "Mặt cầu không trải phẳng được",
+    "modeLabels": {
+     "explore": "Khám phá",
+     "guided": "Quan sát theo bước",
+     "practice": "Luyện tập"
+    },
+    "modeDescriptions": {
+     "explore": "Tự do chọn khối, xoay, cắt hoặc mở/gấp.",
+     "guided": "Đi theo các bước gợi ý để hiểu dần từng ý.",
+     "practice": "Dự đoán, chọn đáp án và nhận phản hồi ngay."
+    },
+    "readyState": {
+     "ready": "Học liệu sẵn sàng",
+     "loading": "Đang khởi tạo học liệu"
+    },
+    "scene": {
+     "solidLabel": "Khối 3D tương tác",
+     "netLabel": "Hình khai triển 3D",
+     "practiceLabel": "Hình của câu hỏi luyện tập",
+     "description": "Kéo để xoay, giữ Ctrl và cuộn hoặc dùng nút để phóng to. Tên hình, số đo và giao tuyến có ở bảng thông tin."
+    },
+    "plane": {
+     "title": "Mặt phẳng cắt",
+     "presetsLabel": "Vị trí đặc biệt",
+     "customLabel": "Tùy chỉnh",
+     "tiltLabel": "Độ nghiêng",
+     "tiltHorizontal": "nằm ngang",
+     "tiltVertical": "thẳng đứng",
+     "azimuthLabel": "Phương vị",
+     "azimuthHint": "Không đổi gì khi mặt phẳng nằm ngang.",
+     "positionLabel": "Vị trí",
+     "splitLabel": "Tách khối",
+     "splitHint": "Đẩy hai phần khối ra xa để nhìn thẳng vào thiết diện.",
+     "planeName": "(P)",
+     "methodLabel": "Cách đặt mặt phẳng",
+     "methodOrientation": "Hướng và vị trí",
+     "methodPoints": "Qua 3 điểm",
+     "pointsOnlyPolyhedra": "Chỉ dùng cho khối đa diện",
+     "pointsHint": "Chọn cạnh chứa mỗi điểm; thanh trượt bắt dính ở hai đầu cạnh và trung điểm.",
+     "collinear": "M, N, P thẳng hàng nên có vô số mặt phẳng đi qua — hãy đổi một điểm.",
+     "coincident": "Có hai điểm trùng nhau nên chưa xác định được mặt phẳng — hãy đổi một điểm."
+    },
+    "sectionInfo": {
+     "title": "Thiết diện",
+     "noSection": "Mặt phẳng chưa cắt qua khối — hãy đổi vị trí.",
+     "edgeCountLabel": "Số cạnh",
+     "perimeterLabel": "Chu vi",
+     "areaLabel": "Diện tích",
+     "sidesLabel": "Cạnh",
+     "anglesLabel": "Góc",
+     "intersectionsLabel": "Giao tuyến với các mặt",
+     "intersectionsHint": "Mỗi cạnh của thiết diện là giao tuyến của (P) với một mặt của khối.",
+     "previewLabel": "Hình thiết diện",
+     "semiAxesLabel": "Bán trục",
+     "radiusLabel": "Bán kính",
+     "throughAxis": "Thiết diện qua trục",
+     "greatCircle": "Hình tròn lớn (qua tâm O)",
+     "chord": "dây cung",
+     "arc": "cung",
+     "onSolidEdge": "cạnh của khối",
+     "throughApex": "Thiết diện qua đỉnh S",
+     "planeAngleLabel": "Góc giữa (P) và đáy",
+     "generatrixAngleLabel": "Góc giữa đường sinh và đáy",
+     "conicHint": "Nhỏ hơn: elip · bằng: parabol · lớn hơn: hypebol."
+    },
+    "net": {
+     "title": "Khai triển",
+     "foldLabel": "Mức mở",
+     "foldClosedEnd": "Đóng kín",
+     "foldFlatEnd": "Trải phẳng",
+     "autoOpen": "Tự mở",
+     "autoClose": "Tự gấp",
+     "diagramLabel": "Sơ đồ hình khai triển",
+     "gluedHint": "Hai cạnh cùng chữ cái ghép lại với nhau khi gấp.",
+     "lateralArea": "Diện tích xung quanh",
+     "totalArea": "Diện tích toàn phần",
+     "sphereUnfoldNote": "Mặt cầu không thể trải phẳng thành một hình phẳng mà không co giãn, nên hình cầu không có hình khai triển.",
+     "slantLabel": "Đường sinh l",
+     "sectorAngleLabel": "Góc ở tâm hình quạt"
+    },
+    "overview": {
+     "title": "Tổng quan",
+     "verticesLabel": "Số đỉnh",
+     "edgesLabel": "Số cạnh",
+     "facesLabel": "Số mặt",
+     "euler": "Đỉnh − Cạnh + Mặt = 2",
+     "lateralArea": "Diện tích xung quanh",
+     "totalArea": "Diện tích toàn phần",
+     "volume": "Thể tích",
+     "slantLabel": "Đường sinh l",
+     "hint": "Kéo để xoay khối, chọn một mặt để xem số đo; sau đó sang Thiết diện hoặc Khai triển."
+    },
+    "faces": {
+     "selectLabel": "Chọn mặt",
+     "selectPlaceholder": "Chưa chọn mặt",
+     "typeLabel": "Loại",
+     "sizeLabel": "Kích thước",
+     "perimeterLabel": "Chu vi",
+     "areaLabel": "Diện tích",
+     "adjacentLabel": "Mặt kề",
+     "noAdjacent": "Không có",
+     "clearSelection": "Bỏ chọn",
+     "unitLabel": "cm"
+    },
+    "toolbar": {
+     "railTitle": "Điều khiển",
+     "solidGroupLabel": "Khối",
+     "sectionGroupLabel": "Phần",
+     "secondaryTitle": "Kích thước và nhãn",
+     "dimensionGroupLabel": "Kích thước (cm)",
+     "labelsGroupLabel": "Nhãn",
+     "labelsNone": "Không nhãn",
+     "labelsNames": "Tên đỉnh",
+     "labelsMeasures": "Tên đỉnh và số đo",
+     "practiceDimensionsLocked": "Kích thước được giữ cố định trong khi luyện tập."
+    },
+    "camera": {
+     "ariaLabel": "Góc nhìn",
+     "front": "Nhìn trước",
+     "back": "Nhìn sau",
+     "left": "Nhìn trái",
+     "right": "Nhìn phải",
+     "top": "Nhìn trên"
+    },
+    "guided": {
+     "next": "Bước tiếp theo",
+     "previous": "Bước trước"
+    },
+    "practice": {
+     "activityGroupLabel": "Hoạt động",
+     "activityLabels": {
+      "predict-section": "Dự đoán thiết diện",
+      "match-faces": "Xác định mặt tương ứng",
+      "identify-net": "Chọn hình khai triển đúng"
+     },
+     "nextQuestion": "Câu tiếp theo",
+     "correctFeedback": "✓ Đúng.",
+     "predictPrompt": "Mặt phẳng (P) đặt như trên hình. Thiết diện của khối khi cắt bởi (P) là hình gì?",
+     "matchFacesHint": "Nhấn vào mặt trên hình khai triển hoặc chọn số của mặt bên dưới.",
+     "identifyNetPrompt": "Hình nào là hình khai triển của khối này?",
+     "optionA": "Hình A",
+     "optionB": "Hình B",
+     "unavailableNote": "Hoạt động này không áp dụng cho khối đang chọn — hãy chọn hoạt động khác hoặc đổi khối.",
+     "noPracticeForSolid": "Chưa có bài luyện tập cho khối này."
+    }
+   },
+   "en": {
+    "eyebrow": "Solid geometry",
+    "title": "Solid cross-sections and nets",
+    "description": "An interactive learning material to observe 3D solids, cut them with a plane to see the cross-section, and unfold the solid into a net to understand the relationships between faces.",
+    "guidance": [
+     {
+      "label": "What happens",
+      "text": "A cutting plane passing through a solid creates a cross-section; the solid can also be unfolded flat into a net."
+     },
+     {
+      "label": "Observe",
+      "text": "The cross-section changes shape when the position and orientation of the cutting plane change; the faces of the net keep their shared edges when folded back."
+     },
+     {
+      "label": "Common misconception",
+      "text": "The cross-section is not always a shape with a familiar name — only special positions give a square, a rectangle or a regular hexagon."
+     }
+    ],
+    "dimensionFieldLabels": {
+     "edge": "Edge a",
+     "width": "Length AB",
+     "height": "Height",
+     "depth": "Width BC",
+     "base": "Base edge",
+     "length": "Height (lateral edge)",
+     "radius": "Radius"
+    },
+    "sectionLabels": {
+     "overview": "Overview",
+     "cross-section": "Cross-section",
+     "net": "Net"
+    },
+    "sphereNetUnavailable": "A sphere cannot be flattened",
+    "modeLabels": {
+     "explore": "Explore",
+     "guided": "Guided steps",
+     "practice": "Practice"
+    },
+    "modeDescriptions": {
+     "explore": "Freely choose a solid, rotate, cut or unfold/fold it.",
+     "guided": "Follow the suggested steps to understand each idea step by step.",
+     "practice": "Predict, choose an answer and get immediate feedback."
+    },
+    "readyState": {
+     "ready": "Learning material ready",
+     "loading": "Initializing learning material"
+    },
+    "scene": {
+     "solidLabel": "Interactive 3D solid",
+     "netLabel": "3D net",
+     "practiceLabel": "Figure for the practice question",
+     "description": "Drag to rotate; hold Ctrl and scroll or use the buttons to zoom. Names, measurements and intersection lines are listed in the information panel."
+    },
+    "plane": {
+     "title": "Cutting plane",
+     "presetsLabel": "Special positions",
+     "customLabel": "Custom",
+     "tiltLabel": "Tilt",
+     "tiltHorizontal": "horizontal",
+     "tiltVertical": "vertical",
+     "azimuthLabel": "Azimuth",
+     "azimuthHint": "No effect while the plane is horizontal.",
+     "positionLabel": "Position",
+     "splitLabel": "Separate the solid",
+     "splitHint": "Pull the two parts apart to look straight at the cross-section.",
+     "planeName": "(P)",
+     "methodLabel": "Set the plane by",
+     "methodOrientation": "Direction and position",
+     "methodPoints": "Through 3 points",
+     "pointsOnlyPolyhedra": "Polyhedra only",
+     "pointsHint": "Choose the edge of each point; the slider snaps to both ends and the midpoint.",
+     "collinear": "M, N, P are collinear, so infinitely many planes pass through them — move one point.",
+     "coincident": "Two of the points coincide, so the plane is not determined — move one point."
+    },
+    "sectionInfo": {
+     "title": "Cross-section",
+     "noSection": "The plane does not cut the solid — change its position.",
+     "edgeCountLabel": "Number of sides",
+     "perimeterLabel": "Perimeter",
+     "areaLabel": "Area",
+     "sidesLabel": "Sides",
+     "anglesLabel": "Angles",
+     "intersectionsLabel": "Intersections with the faces",
+     "intersectionsHint": "Each side of the cross-section is the intersection of (P) with a face of the solid.",
+     "previewLabel": "Cross-section shape",
+     "semiAxesLabel": "Semi-axes",
+     "radiusLabel": "Radius",
+     "throughAxis": "Axial cross-section",
+     "greatCircle": "Great circle (through the centre O)",
+     "chord": "chord",
+     "arc": "arc",
+     "onSolidEdge": "edge of the solid",
+     "throughApex": "Section through the apex S",
+     "planeAngleLabel": "Angle between (P) and the base",
+     "generatrixAngleLabel": "Angle between a generatrix and the base",
+     "conicHint": "Smaller: ellipse · equal: parabola · greater: hyperbola."
+    },
+    "net": {
+     "title": "Net",
+     "foldLabel": "Unfold amount",
+     "foldClosedEnd": "Closed",
+     "foldFlatEnd": "Flat",
+     "autoOpen": "Unfold",
+     "autoClose": "Fold",
+     "diagramLabel": "Net diagram",
+     "gluedHint": "Two edges with the same letter are joined when folding.",
+     "lateralArea": "Lateral area",
+     "totalArea": "Total surface area",
+     "sphereUnfoldNote": "A sphere cannot be flattened into a plane figure without stretching, so it has no net.",
+     "slantLabel": "Slant height l",
+     "sectorAngleLabel": "Central angle of the sector"
+    },
+    "overview": {
+     "title": "Overview",
+     "verticesLabel": "Vertices",
+     "edgesLabel": "Edges",
+     "facesLabel": "Faces",
+     "euler": "Vertices − Edges + Faces = 2",
+     "lateralArea": "Lateral area",
+     "totalArea": "Total surface area",
+     "volume": "Volume",
+     "slantLabel": "Slant height l",
+     "hint": "Drag to rotate the solid and choose a face to see its measurements; then go to Cross-section or Net."
+    },
+    "faces": {
+     "selectLabel": "Choose a face",
+     "selectPlaceholder": "No face selected",
+     "typeLabel": "Type",
+     "sizeLabel": "Size",
+     "perimeterLabel": "Perimeter",
+     "areaLabel": "Area",
+     "adjacentLabel": "Adjacent faces",
+     "noAdjacent": "None",
+     "clearSelection": "Clear selection",
+     "unitLabel": "cm"
+    },
+    "toolbar": {
+     "railTitle": "Controls",
+     "solidGroupLabel": "Solid",
+     "sectionGroupLabel": "Part",
+     "secondaryTitle": "Dimensions and labels",
+     "dimensionGroupLabel": "Dimensions (cm)",
+     "labelsGroupLabel": "Labels",
+     "labelsNone": "No labels",
+     "labelsNames": "Vertex names",
+     "labelsMeasures": "Vertex names and measurements",
+     "practiceDimensionsLocked": "Dimensions stay fixed during practice."
+    },
+    "camera": {
+     "ariaLabel": "Camera view",
+     "front": "Front view",
+     "back": "Back view",
+     "left": "Left view",
+     "right": "Right view",
+     "top": "Top view"
+    },
+    "guided": {
+     "next": "Next step",
+     "previous": "Previous step"
+    },
+    "practice": {
+     "activityGroupLabel": "Activity",
+     "activityLabels": {
+      "predict-section": "Predict the cross-section",
+      "match-faces": "Match corresponding faces",
+      "identify-net": "Choose the correct net"
+     },
+     "nextQuestion": "Next question",
+     "correctFeedback": "✓ Correct.",
+     "predictPrompt": "The plane (P) is placed as shown. What is the cross-section of the solid cut by (P)?",
+     "matchFacesHint": "Click a face of the net or choose its number below.",
+     "identifyNetPrompt": "Which figure is a net of this solid?",
+     "optionA": "Figure A",
+     "optionB": "Figure B",
+     "unavailableNote": "This activity is not available for the selected solid — choose another activity or switch solids.",
+     "noPracticeForSolid": "There is no practice for this solid yet."
+    }
+   }
+  }
+ },
+ {
+  "vi": {
+   "eyebrow": "Hình học không gian",
+   "title": "Thiết diện và khai triển khối",
+   "description": "Học liệu tương tác giúp em quan sát khối 3D, cắt bằng một mặt phẳng để thấy thiết diện, và mở khối thành hình khai triển để hiểu quan hệ giữa các mặt.",
+   "guidance": [
+    {
+     "label": "Điều đang xảy ra",
+     "text": "Một mặt phẳng cắt qua khối tạo ra thiết diện; khối cũng có thể mở phẳng thành hình khai triển."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Thiết diện đổi hình dạng khi vị trí và hướng mặt phẳng cắt thay đổi; các mặt khai triển vẫn giữ đúng cạnh chung khi gấp lại."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "Thiết diện không phải lúc nào cũng là một hình có tên gọi quen thuộc — chỉ một số vị trí đặc biệt mới cho hình vuông, hình chữ nhật hay lục giác đều."
+    }
+   ],
+   "dimensionFieldLabels": {
+    "edge": "Cạnh a",
+    "width": "Chiều dài AB",
+    "height": "Chiều cao",
+    "depth": "Chiều rộng BC",
+    "base": "Cạnh đáy",
+    "length": "Chiều cao (cạnh bên)",
+    "radius": "Bán kính"
+   },
+   "sectionLabels": {
+    "overview": "Tổng quan",
+    "cross-section": "Thiết diện",
+    "net": "Khai triển"
+   },
+   "sphereNetUnavailable": "Mặt cầu không trải phẳng được",
+   "modeLabels": {
+    "explore": "Khám phá",
+    "guided": "Quan sát theo bước",
+    "practice": "Luyện tập"
+   },
+   "modeDescriptions": {
+    "explore": "Tự do chọn khối, xoay, cắt hoặc mở/gấp.",
+    "guided": "Đi theo các bước gợi ý để hiểu dần từng ý.",
+    "practice": "Dự đoán, chọn đáp án và nhận phản hồi ngay."
+   },
+   "readyState": {
+    "ready": "Học liệu sẵn sàng",
+    "loading": "Đang khởi tạo học liệu"
+   },
+   "scene": {
+    "solidLabel": "Khối 3D tương tác",
+    "netLabel": "Hình khai triển 3D",
+    "practiceLabel": "Hình của câu hỏi luyện tập",
+    "description": "Kéo để xoay, giữ Ctrl và cuộn hoặc dùng nút để phóng to. Tên hình, số đo và giao tuyến có ở bảng thông tin."
+   },
+   "plane": {
+    "title": "Mặt phẳng cắt",
+    "presetsLabel": "Vị trí đặc biệt",
+    "customLabel": "Tùy chỉnh",
+    "tiltLabel": "Độ nghiêng",
+    "tiltHorizontal": "nằm ngang",
+    "tiltVertical": "thẳng đứng",
+    "azimuthLabel": "Phương vị",
+    "azimuthHint": "Không đổi gì khi mặt phẳng nằm ngang.",
+    "positionLabel": "Vị trí",
+    "splitLabel": "Tách khối",
+    "splitHint": "Đẩy hai phần khối ra xa để nhìn thẳng vào thiết diện.",
+    "planeName": "(P)",
+    "methodLabel": "Cách đặt mặt phẳng",
+    "methodOrientation": "Hướng và vị trí",
+    "methodPoints": "Qua 3 điểm",
+    "pointsOnlyPolyhedra": "Chỉ dùng cho khối đa diện",
+    "pointsHint": "Chọn cạnh chứa mỗi điểm; thanh trượt bắt dính ở hai đầu cạnh và trung điểm.",
+    "collinear": "M, N, P thẳng hàng nên có vô số mặt phẳng đi qua — hãy đổi một điểm.",
+    "coincident": "Có hai điểm trùng nhau nên chưa xác định được mặt phẳng — hãy đổi một điểm."
+   },
+   "sectionInfo": {
+    "title": "Thiết diện",
+    "noSection": "Mặt phẳng chưa cắt qua khối — hãy đổi vị trí.",
+    "edgeCountLabel": "Số cạnh",
+    "perimeterLabel": "Chu vi",
+    "areaLabel": "Diện tích",
+    "sidesLabel": "Cạnh",
+    "anglesLabel": "Góc",
+    "intersectionsLabel": "Giao tuyến với các mặt",
+    "intersectionsHint": "Mỗi cạnh của thiết diện là giao tuyến của (P) với một mặt của khối.",
+    "previewLabel": "Hình thiết diện",
+    "semiAxesLabel": "Bán trục",
+    "radiusLabel": "Bán kính",
+    "throughAxis": "Thiết diện qua trục",
+    "greatCircle": "Hình tròn lớn (qua tâm O)",
+    "chord": "dây cung",
+    "arc": "cung",
+    "onSolidEdge": "cạnh của khối",
+    "throughApex": "Thiết diện qua đỉnh S",
+    "planeAngleLabel": "Góc giữa (P) và đáy",
+    "generatrixAngleLabel": "Góc giữa đường sinh và đáy",
+    "conicHint": "Nhỏ hơn: elip · bằng: parabol · lớn hơn: hypebol."
+   },
+   "net": {
+    "title": "Khai triển",
+    "foldLabel": "Mức mở",
+    "foldClosedEnd": "Đóng kín",
+    "foldFlatEnd": "Trải phẳng",
+    "autoOpen": "Tự mở",
+    "autoClose": "Tự gấp",
+    "diagramLabel": "Sơ đồ hình khai triển",
+    "gluedHint": "Hai cạnh cùng chữ cái ghép lại với nhau khi gấp.",
+    "lateralArea": "Diện tích xung quanh",
+    "totalArea": "Diện tích toàn phần",
+    "sphereUnfoldNote": "Mặt cầu không thể trải phẳng thành một hình phẳng mà không co giãn, nên hình cầu không có hình khai triển.",
+    "slantLabel": "Đường sinh l",
+    "sectorAngleLabel": "Góc ở tâm hình quạt"
+   },
+   "overview": {
+    "title": "Tổng quan",
+    "verticesLabel": "Số đỉnh",
+    "edgesLabel": "Số cạnh",
+    "facesLabel": "Số mặt",
+    "euler": "Đỉnh − Cạnh + Mặt = 2",
+    "lateralArea": "Diện tích xung quanh",
+    "totalArea": "Diện tích toàn phần",
+    "volume": "Thể tích",
+    "slantLabel": "Đường sinh l",
+    "hint": "Kéo để xoay khối, chọn một mặt để xem số đo; sau đó sang Thiết diện hoặc Khai triển."
+   },
+   "faces": {
+    "selectLabel": "Chọn mặt",
+    "selectPlaceholder": "Chưa chọn mặt",
+    "typeLabel": "Loại",
+    "sizeLabel": "Kích thước",
+    "perimeterLabel": "Chu vi",
+    "areaLabel": "Diện tích",
+    "adjacentLabel": "Mặt kề",
+    "noAdjacent": "Không có",
+    "clearSelection": "Bỏ chọn",
+    "unitLabel": "cm"
+   },
+   "toolbar": {
+    "railTitle": "Điều khiển",
+    "solidGroupLabel": "Khối",
+    "sectionGroupLabel": "Phần",
+    "secondaryTitle": "Kích thước và nhãn",
+    "dimensionGroupLabel": "Kích thước (cm)",
+    "labelsGroupLabel": "Nhãn",
+    "labelsNone": "Không nhãn",
+    "labelsNames": "Tên đỉnh",
+    "labelsMeasures": "Tên đỉnh và số đo",
+    "practiceDimensionsLocked": "Kích thước được giữ cố định trong khi luyện tập."
+   },
+   "camera": {
+    "ariaLabel": "Góc nhìn",
+    "front": "Nhìn trước",
+    "back": "Nhìn sau",
+    "left": "Nhìn trái",
+    "right": "Nhìn phải",
+    "top": "Nhìn trên"
+   },
+   "guided": {
+    "next": "Bước tiếp theo",
+    "previous": "Bước trước"
+   },
+   "practice": {
+    "activityGroupLabel": "Hoạt động",
+    "activityLabels": {
+     "predict-section": "Dự đoán thiết diện",
+     "match-faces": "Xác định mặt tương ứng",
+     "identify-net": "Chọn hình khai triển đúng"
+    },
+    "nextQuestion": "Câu tiếp theo",
+    "correctFeedback": "✓ Đúng.",
+    "predictPrompt": "Mặt phẳng (P) đặt như trên hình. Thiết diện của khối khi cắt bởi (P) là hình gì?",
+    "matchFacesHint": "Nhấn vào mặt trên hình khai triển hoặc chọn số của mặt bên dưới.",
+    "identifyNetPrompt": "Hình nào là hình khai triển của khối này?",
+    "optionA": "Hình A",
+    "optionB": "Hình B",
+    "unavailableNote": "Hoạt động này không áp dụng cho khối đang chọn — hãy chọn hoạt động khác hoặc đổi khối.",
+    "noPracticeForSolid": "Chưa có bài luyện tập cho khối này."
+   }
+  },
+  "en": {
+   "eyebrow": "Solid geometry",
+   "title": "Solid cross-sections and nets",
+   "description": "An interactive learning material to observe 3D solids, cut them with a plane to see the cross-section, and unfold the solid into a net to understand the relationships between faces.",
+   "guidance": [
+    {
+     "label": "What happens",
+     "text": "A cutting plane passing through a solid creates a cross-section; the solid can also be unfolded flat into a net."
+    },
+    {
+     "label": "Observe",
+     "text": "The cross-section changes shape when the position and orientation of the cutting plane change; the faces of the net keep their shared edges when folded back."
+    },
+    {
+     "label": "Common misconception",
+     "text": "The cross-section is not always a shape with a familiar name — only special positions give a square, a rectangle or a regular hexagon."
+    }
+   ],
+   "dimensionFieldLabels": {
+    "edge": "Edge a",
+    "width": "Length AB",
+    "height": "Height",
+    "depth": "Width BC",
+    "base": "Base edge",
+    "length": "Height (lateral edge)",
+    "radius": "Radius"
+   },
+   "sectionLabels": {
+    "overview": "Overview",
+    "cross-section": "Cross-section",
+    "net": "Net"
+   },
+   "sphereNetUnavailable": "A sphere cannot be flattened",
+   "modeLabels": {
+    "explore": "Explore",
+    "guided": "Guided steps",
+    "practice": "Practice"
+   },
+   "modeDescriptions": {
+    "explore": "Freely choose a solid, rotate, cut or unfold/fold it.",
+    "guided": "Follow the suggested steps to understand each idea step by step.",
+    "practice": "Predict, choose an answer and get immediate feedback."
+   },
+   "readyState": {
+    "ready": "Learning material ready",
+    "loading": "Initializing learning material"
+   },
+   "scene": {
+    "solidLabel": "Interactive 3D solid",
+    "netLabel": "3D net",
+    "practiceLabel": "Figure for the practice question",
+    "description": "Drag to rotate; hold Ctrl and scroll or use the buttons to zoom. Names, measurements and intersection lines are listed in the information panel."
+   },
+   "plane": {
+    "title": "Cutting plane",
+    "presetsLabel": "Special positions",
+    "customLabel": "Custom",
+    "tiltLabel": "Tilt",
+    "tiltHorizontal": "horizontal",
+    "tiltVertical": "vertical",
+    "azimuthLabel": "Azimuth",
+    "azimuthHint": "No effect while the plane is horizontal.",
+    "positionLabel": "Position",
+    "splitLabel": "Separate the solid",
+    "splitHint": "Pull the two parts apart to look straight at the cross-section.",
+    "planeName": "(P)",
+    "methodLabel": "Set the plane by",
+    "methodOrientation": "Direction and position",
+    "methodPoints": "Through 3 points",
+    "pointsOnlyPolyhedra": "Polyhedra only",
+    "pointsHint": "Choose the edge of each point; the slider snaps to both ends and the midpoint.",
+    "collinear": "M, N, P are collinear, so infinitely many planes pass through them — move one point.",
+    "coincident": "Two of the points coincide, so the plane is not determined — move one point."
+   },
+   "sectionInfo": {
+    "title": "Cross-section",
+    "noSection": "The plane does not cut the solid — change its position.",
+    "edgeCountLabel": "Number of sides",
+    "perimeterLabel": "Perimeter",
+    "areaLabel": "Area",
+    "sidesLabel": "Sides",
+    "anglesLabel": "Angles",
+    "intersectionsLabel": "Intersections with the faces",
+    "intersectionsHint": "Each side of the cross-section is the intersection of (P) with a face of the solid.",
+    "previewLabel": "Cross-section shape",
+    "semiAxesLabel": "Semi-axes",
+    "radiusLabel": "Radius",
+    "throughAxis": "Axial cross-section",
+    "greatCircle": "Great circle (through the centre O)",
+    "chord": "chord",
+    "arc": "arc",
+    "onSolidEdge": "edge of the solid",
+    "throughApex": "Section through the apex S",
+    "planeAngleLabel": "Angle between (P) and the base",
+    "generatrixAngleLabel": "Angle between a generatrix and the base",
+    "conicHint": "Smaller: ellipse · equal: parabola · greater: hyperbola."
+   },
+   "net": {
+    "title": "Net",
+    "foldLabel": "Unfold amount",
+    "foldClosedEnd": "Closed",
+    "foldFlatEnd": "Flat",
+    "autoOpen": "Unfold",
+    "autoClose": "Fold",
+    "diagramLabel": "Net diagram",
+    "gluedHint": "Two edges with the same letter are joined when folding.",
+    "lateralArea": "Lateral area",
+    "totalArea": "Total surface area",
+    "sphereUnfoldNote": "A sphere cannot be flattened into a plane figure without stretching, so it has no net.",
+    "slantLabel": "Slant height l",
+    "sectorAngleLabel": "Central angle of the sector"
+   },
+   "overview": {
+    "title": "Overview",
+    "verticesLabel": "Vertices",
+    "edgesLabel": "Edges",
+    "facesLabel": "Faces",
+    "euler": "Vertices − Edges + Faces = 2",
+    "lateralArea": "Lateral area",
+    "totalArea": "Total surface area",
+    "volume": "Volume",
+    "slantLabel": "Slant height l",
+    "hint": "Drag to rotate the solid and choose a face to see its measurements; then go to Cross-section or Net."
+   },
+   "faces": {
+    "selectLabel": "Choose a face",
+    "selectPlaceholder": "No face selected",
+    "typeLabel": "Type",
+    "sizeLabel": "Size",
+    "perimeterLabel": "Perimeter",
+    "areaLabel": "Area",
+    "adjacentLabel": "Adjacent faces",
+    "noAdjacent": "None",
+    "clearSelection": "Clear selection",
+    "unitLabel": "cm"
+   },
+   "toolbar": {
+    "railTitle": "Controls",
+    "solidGroupLabel": "Solid",
+    "sectionGroupLabel": "Part",
+    "secondaryTitle": "Dimensions and labels",
+    "dimensionGroupLabel": "Dimensions (cm)",
+    "labelsGroupLabel": "Labels",
+    "labelsNone": "No labels",
+    "labelsNames": "Vertex names",
+    "labelsMeasures": "Vertex names and measurements",
+    "practiceDimensionsLocked": "Dimensions stay fixed during practice."
+   },
+   "camera": {
+    "ariaLabel": "Camera view",
+    "front": "Front view",
+    "back": "Back view",
+    "left": "Left view",
+    "right": "Right view",
+    "top": "Top view"
+   },
+   "guided": {
+    "next": "Next step",
+    "previous": "Previous step"
+   },
+   "practice": {
+    "activityGroupLabel": "Activity",
+    "activityLabels": {
+     "predict-section": "Predict the cross-section",
+     "match-faces": "Match corresponding faces",
+     "identify-net": "Choose the correct net"
+    },
+    "nextQuestion": "Next question",
+    "correctFeedback": "✓ Correct.",
+    "predictPrompt": "The plane (P) is placed as shown. What is the cross-section of the solid cut by (P)?",
+    "matchFacesHint": "Click a face of the net or choose its number below.",
+    "identifyNetPrompt": "Which figure is a net of this solid?",
+    "optionA": "Figure A",
+    "optionB": "Figure B",
+    "unavailableNote": "This activity is not available for the selected solid — choose another activity or switch solids.",
+    "noPracticeForSolid": "There is no practice for this solid yet."
+   }
+  }
+ },
+ {
+  "eyebrow": "Hình học không gian",
+  "title": "Thiết diện và khai triển khối",
+  "description": "Học liệu tương tác giúp em quan sát khối 3D, cắt bằng một mặt phẳng để thấy thiết diện, và mở khối thành hình khai triển để hiểu quan hệ giữa các mặt.",
+  "guidance": [
+   {
+    "label": "Điều đang xảy ra",
+    "text": "Một mặt phẳng cắt qua khối tạo ra thiết diện; khối cũng có thể mở phẳng thành hình khai triển."
+   },
+   {
+    "label": "Hãy quan sát",
+    "text": "Thiết diện đổi hình dạng khi vị trí và hướng mặt phẳng cắt thay đổi; các mặt khai triển vẫn giữ đúng cạnh chung khi gấp lại."
+   },
+   {
+    "label": "Điểm dễ nhầm",
+    "text": "Thiết diện không phải lúc nào cũng là một hình có tên gọi quen thuộc — chỉ một số vị trí đặc biệt mới cho hình vuông, hình chữ nhật hay lục giác đều."
+   }
+  ],
+  "dimensionFieldLabels": {
+   "edge": "Cạnh a",
+   "width": "Chiều dài AB",
+   "height": "Chiều cao",
+   "depth": "Chiều rộng BC",
+   "base": "Cạnh đáy",
+   "length": "Chiều cao (cạnh bên)",
+   "radius": "Bán kính"
+  },
+  "sectionLabels": {
+   "overview": "Tổng quan",
+   "cross-section": "Thiết diện",
+   "net": "Khai triển"
+  },
+  "sphereNetUnavailable": "Mặt cầu không trải phẳng được",
+  "modeLabels": {
+   "explore": "Khám phá",
+   "guided": "Quan sát theo bước",
+   "practice": "Luyện tập"
+  },
+  "modeDescriptions": {
+   "explore": "Tự do chọn khối, xoay, cắt hoặc mở/gấp.",
+   "guided": "Đi theo các bước gợi ý để hiểu dần từng ý.",
+   "practice": "Dự đoán, chọn đáp án và nhận phản hồi ngay."
+  },
+  "readyState": {
+   "ready": "Học liệu sẵn sàng",
+   "loading": "Đang khởi tạo học liệu"
+  },
+  "scene": {
+   "solidLabel": "Khối 3D tương tác",
+   "netLabel": "Hình khai triển 3D",
+   "practiceLabel": "Hình của câu hỏi luyện tập",
+   "description": "Kéo để xoay, giữ Ctrl và cuộn hoặc dùng nút để phóng to. Tên hình, số đo và giao tuyến có ở bảng thông tin."
+  },
+  "plane": {
+   "title": "Mặt phẳng cắt",
+   "presetsLabel": "Vị trí đặc biệt",
+   "customLabel": "Tùy chỉnh",
+   "tiltLabel": "Độ nghiêng",
+   "tiltHorizontal": "nằm ngang",
+   "tiltVertical": "thẳng đứng",
+   "azimuthLabel": "Phương vị",
+   "azimuthHint": "Không đổi gì khi mặt phẳng nằm ngang.",
+   "positionLabel": "Vị trí",
+   "splitLabel": "Tách khối",
+   "splitHint": "Đẩy hai phần khối ra xa để nhìn thẳng vào thiết diện.",
+   "planeName": "(P)",
+   "methodLabel": "Cách đặt mặt phẳng",
+   "methodOrientation": "Hướng và vị trí",
+   "methodPoints": "Qua 3 điểm",
+   "pointsOnlyPolyhedra": "Chỉ dùng cho khối đa diện",
+   "pointsHint": "Chọn cạnh chứa mỗi điểm; thanh trượt bắt dính ở hai đầu cạnh và trung điểm.",
+   "collinear": "M, N, P thẳng hàng nên có vô số mặt phẳng đi qua — hãy đổi một điểm.",
+   "coincident": "Có hai điểm trùng nhau nên chưa xác định được mặt phẳng — hãy đổi một điểm."
+  },
+  "sectionInfo": {
+   "title": "Thiết diện",
+   "noSection": "Mặt phẳng chưa cắt qua khối — hãy đổi vị trí.",
+   "edgeCountLabel": "Số cạnh",
+   "perimeterLabel": "Chu vi",
+   "areaLabel": "Diện tích",
+   "sidesLabel": "Cạnh",
+   "anglesLabel": "Góc",
+   "intersectionsLabel": "Giao tuyến với các mặt",
+   "intersectionsHint": "Mỗi cạnh của thiết diện là giao tuyến của (P) với một mặt của khối.",
+   "previewLabel": "Hình thiết diện",
+   "semiAxesLabel": "Bán trục",
+   "radiusLabel": "Bán kính",
+   "throughAxis": "Thiết diện qua trục",
+   "greatCircle": "Hình tròn lớn (qua tâm O)",
+   "chord": "dây cung",
+   "arc": "cung",
+   "onSolidEdge": "cạnh của khối",
+   "throughApex": "Thiết diện qua đỉnh S",
+   "planeAngleLabel": "Góc giữa (P) và đáy",
+   "generatrixAngleLabel": "Góc giữa đường sinh và đáy",
+   "conicHint": "Nhỏ hơn: elip · bằng: parabol · lớn hơn: hypebol."
+  },
+  "net": {
+   "title": "Khai triển",
+   "foldLabel": "Mức mở",
+   "foldClosedEnd": "Đóng kín",
+   "foldFlatEnd": "Trải phẳng",
+   "autoOpen": "Tự mở",
+   "autoClose": "Tự gấp",
+   "diagramLabel": "Sơ đồ hình khai triển",
+   "gluedHint": "Hai cạnh cùng chữ cái ghép lại với nhau khi gấp.",
+   "lateralArea": "Diện tích xung quanh",
+   "totalArea": "Diện tích toàn phần",
+   "sphereUnfoldNote": "Mặt cầu không thể trải phẳng thành một hình phẳng mà không co giãn, nên hình cầu không có hình khai triển.",
+   "slantLabel": "Đường sinh l",
+   "sectorAngleLabel": "Góc ở tâm hình quạt"
+  },
+  "overview": {
+   "title": "Tổng quan",
+   "verticesLabel": "Số đỉnh",
+   "edgesLabel": "Số cạnh",
+   "facesLabel": "Số mặt",
+   "euler": "Đỉnh − Cạnh + Mặt = 2",
+   "lateralArea": "Diện tích xung quanh",
+   "totalArea": "Diện tích toàn phần",
+   "volume": "Thể tích",
+   "slantLabel": "Đường sinh l",
+   "hint": "Kéo để xoay khối, chọn một mặt để xem số đo; sau đó sang Thiết diện hoặc Khai triển."
+  },
+  "faces": {
+   "selectLabel": "Chọn mặt",
+   "selectPlaceholder": "Chưa chọn mặt",
+   "typeLabel": "Loại",
+   "sizeLabel": "Kích thước",
+   "perimeterLabel": "Chu vi",
+   "areaLabel": "Diện tích",
+   "adjacentLabel": "Mặt kề",
+   "noAdjacent": "Không có",
+   "clearSelection": "Bỏ chọn",
+   "unitLabel": "cm"
+  },
+  "toolbar": {
+   "railTitle": "Điều khiển",
+   "solidGroupLabel": "Khối",
+   "sectionGroupLabel": "Phần",
+   "secondaryTitle": "Kích thước và nhãn",
+   "dimensionGroupLabel": "Kích thước (cm)",
+   "labelsGroupLabel": "Nhãn",
+   "labelsNone": "Không nhãn",
+   "labelsNames": "Tên đỉnh",
+   "labelsMeasures": "Tên đỉnh và số đo",
+   "practiceDimensionsLocked": "Kích thước được giữ cố định trong khi luyện tập."
+  },
+  "camera": {
+   "ariaLabel": "Góc nhìn",
+   "front": "Nhìn trước",
+   "back": "Nhìn sau",
+   "left": "Nhìn trái",
+   "right": "Nhìn phải",
+   "top": "Nhìn trên"
+  },
+  "guided": {
+   "next": "Bước tiếp theo",
+   "previous": "Bước trước"
+  },
+  "practice": {
+   "activityGroupLabel": "Hoạt động",
+   "activityLabels": {
+    "predict-section": "Dự đoán thiết diện",
+    "match-faces": "Xác định mặt tương ứng",
+    "identify-net": "Chọn hình khai triển đúng"
+   },
+   "nextQuestion": "Câu tiếp theo",
+   "correctFeedback": "✓ Đúng.",
+   "predictPrompt": "Mặt phẳng (P) đặt như trên hình. Thiết diện của khối khi cắt bởi (P) là hình gì?",
+   "matchFacesHint": "Nhấn vào mặt trên hình khai triển hoặc chọn số của mặt bên dưới.",
+   "identifyNetPrompt": "Hình nào là hình khai triển của khối này?",
+   "optionA": "Hình A",
+   "optionB": "Hình B",
+   "unavailableNote": "Hoạt động này không áp dụng cho khối đang chọn — hãy chọn hoạt động khác hoặc đổi khối.",
+   "noPracticeForSolid": "Chưa có bài luyện tập cho khối này."
+  }
+ },
+ {
+  "solidLabel": "Khối 3D tương tác",
+  "netLabel": "Hình khai triển 3D",
+  "practiceLabel": "Hình của câu hỏi luyện tập",
+  "description": "Kéo để xoay, giữ Ctrl và cuộn hoặc dùng nút để phóng to. Tên hình, số đo và giao tuyến có ở bảng thông tin."
+ },
+ {
+  "title": "Mặt phẳng cắt",
+  "presetsLabel": "Vị trí đặc biệt",
+  "customLabel": "Tùy chỉnh",
+  "tiltLabel": "Độ nghiêng",
+  "tiltHorizontal": "nằm ngang",
+  "tiltVertical": "thẳng đứng",
+  "azimuthLabel": "Phương vị",
+  "azimuthHint": "Không đổi gì khi mặt phẳng nằm ngang.",
+  "positionLabel": "Vị trí",
+  "splitLabel": "Tách khối",
+  "splitHint": "Đẩy hai phần khối ra xa để nhìn thẳng vào thiết diện.",
+  "planeName": "(P)",
+  "methodLabel": "Cách đặt mặt phẳng",
+  "methodOrientation": "Hướng và vị trí",
+  "methodPoints": "Qua 3 điểm",
+  "pointsOnlyPolyhedra": "Chỉ dùng cho khối đa diện",
+  "pointsHint": "Chọn cạnh chứa mỗi điểm; thanh trượt bắt dính ở hai đầu cạnh và trung điểm.",
+  "collinear": "M, N, P thẳng hàng nên có vô số mặt phẳng đi qua — hãy đổi một điểm.",
+  "coincident": "Có hai điểm trùng nhau nên chưa xác định được mặt phẳng — hãy đổi một điểm."
+ },
+ {
+  "title": "Thiết diện",
+  "noSection": "Mặt phẳng chưa cắt qua khối — hãy đổi vị trí.",
+  "edgeCountLabel": "Số cạnh",
+  "perimeterLabel": "Chu vi",
+  "areaLabel": "Diện tích",
+  "sidesLabel": "Cạnh",
+  "anglesLabel": "Góc",
+  "intersectionsLabel": "Giao tuyến với các mặt",
+  "intersectionsHint": "Mỗi cạnh của thiết diện là giao tuyến của (P) với một mặt của khối.",
+  "previewLabel": "Hình thiết diện",
+  "semiAxesLabel": "Bán trục",
+  "radiusLabel": "Bán kính",
+  "throughAxis": "Thiết diện qua trục",
+  "greatCircle": "Hình tròn lớn (qua tâm O)",
+  "chord": "dây cung",
+  "arc": "cung",
+  "onSolidEdge": "cạnh của khối",
+  "throughApex": "Thiết diện qua đỉnh S",
+  "planeAngleLabel": "Góc giữa (P) và đáy",
+  "generatrixAngleLabel": "Góc giữa đường sinh và đáy",
+  "conicHint": "Nhỏ hơn: elip · bằng: parabol · lớn hơn: hypebol."
+ },
+ {
+  "title": "Khai triển",
+  "foldLabel": "Mức mở",
+  "foldClosedEnd": "Đóng kín",
+  "foldFlatEnd": "Trải phẳng",
+  "autoOpen": "Tự mở",
+  "autoClose": "Tự gấp",
+  "diagramLabel": "Sơ đồ hình khai triển",
+  "gluedHint": "Hai cạnh cùng chữ cái ghép lại với nhau khi gấp.",
+  "lateralArea": "Diện tích xung quanh",
+  "totalArea": "Diện tích toàn phần",
+  "sphereUnfoldNote": "Mặt cầu không thể trải phẳng thành một hình phẳng mà không co giãn, nên hình cầu không có hình khai triển.",
+  "slantLabel": "Đường sinh l",
+  "sectorAngleLabel": "Góc ở tâm hình quạt"
+ },
+ {
+  "title": "Tổng quan",
+  "verticesLabel": "Số đỉnh",
+  "edgesLabel": "Số cạnh",
+  "facesLabel": "Số mặt",
+  "euler": "Đỉnh − Cạnh + Mặt = 2",
+  "lateralArea": "Diện tích xung quanh",
+  "totalArea": "Diện tích toàn phần",
+  "volume": "Thể tích",
+  "slantLabel": "Đường sinh l",
+  "hint": "Kéo để xoay khối, chọn một mặt để xem số đo; sau đó sang Thiết diện hoặc Khai triển."
+ }
+]

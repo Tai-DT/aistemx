@@ -1,0 +1,1194 @@
+[
+ {
+  "defaultLocale": "vi",
+  "messages": {
+   "vi": {
+    "eyebrow": "Toán học · Số nguyên",
+    "title": "Số nguyên trên trục số",
+    "description": "Đặt số nguyên lên trục số trong ba bối cảnh độ cao, tài khoản, nhiệt độ và trên trục số tự do; so sánh các số, tìm số đối và giá trị tuyệt đối.",
+    "modes": {
+     "explore": "Khám phá",
+     "numberLine": "Trục số"
+    },
+    "status": {
+     "ready": "Học liệu sẵn sàng",
+     "loading": "Đang khởi tạo học liệu"
+    },
+    "guidance": [
+     {
+      "label": "Bắt đầu",
+      "text": "Chọn một bối cảnh rồi kéo vật vào cảnh; điểm tương ứng xuất hiện trên trục số."
+     },
+     {
+      "label": "Hãy quan sát",
+      "text": "Số ở dưới (hoặc bên trái) trên trục luôn nhỏ hơn số ở trên (hoặc bên phải)."
+     },
+     {
+      "label": "Điểm dễ nhầm",
+      "text": "−7 nhỏ hơn −3 dù 7 lớn hơn 3: càng xa 0 về phía âm, số càng nhỏ."
+     }
+    ],
+    "contexts": {
+     "elevation": {
+      "label": "Độ cao",
+      "hint": "Kéo người, chim hoặc cá từ hộp vào cảnh. Mực nước biển là 0 m; dưới mặt biển là số âm.",
+      "comparisonNote": "Trên trục đứng, điểm càng cao biểu diễn số càng lớn.",
+      "sceneTitle": "Độ cao so với mực nước biển"
+     },
+     "bank": {
+      "label": "Tài khoản",
+      "hint": "Nạp hoặc rút từng nghìn đồng, hoặc kéo hũ dọc trục. Số dư âm nghĩa là đang nợ.",
+      "comparisonNote": "Nợ càng nhiều thì số dư càng nhỏ: nợ 20 nghìn đồng (−20) nhỏ hơn nợ 5 nghìn đồng (−5).",
+      "sceneTitle": "Số dư tài khoản"
+     },
+     "temperature": {
+      "label": "Nhiệt độ",
+      "hint": "Kéo nhiệt kế A, B, C lên các địa điểm rồi đổi tháng để xem số đọc thay đổi.",
+      "comparisonNote": "Nhiệt độ dưới 0 độ là số âm; càng lạnh, số càng nhỏ.",
+      "sceneTitle": "Nhiệt độ trung bình tháng"
+     }
+    },
+    "controls": {
+     "contextTitle": "Bối cảnh",
+     "displayTitle": "Hiển thị",
+     "showAxis": "Trục số",
+     "showLabels": "Nhãn số của điểm",
+     "showAbsolute": "Giá trị tuyệt đối",
+     "showTicks": "Vạch chia",
+     "showOpposite": "Số đối",
+     "resetContext": "Đặt lại bối cảnh này",
+     "keyboardHint": "Bàn phím: chọn vật trong hộp, nhấn Enter để đặt; mũi tên để di chuyển; Delete để đưa về hộp.",
+     "accountsTitle": "Nạp và rút",
+     "deposit": "Nạp 1",
+     "withdraw": "Rút 1",
+     "depositLabel": "Nạp 1 nghìn đồng vào {account}",
+     "withdrawLabel": "Rút 1 nghìn đồng từ {account}",
+     "compareAccounts": "So sánh hai tài khoản",
+     "balanceValue": "{value} nghìn đồng",
+     "timeTitle": "Tháng và đơn vị",
+     "month": "Tháng",
+     "unit": "Đơn vị nhiệt độ",
+     "celsius": "°C",
+     "fahrenheit": "°F",
+     "lineTitle": "Trục số",
+     "orientation": "Hướng trục",
+     "horizontal": "Ngang",
+     "vertical": "Đứng",
+     "range": "Miền",
+     "rangeOption": "{min} đến {max}",
+     "resetLine": "Đặt lại trục số",
+     "lineHint": "Kéo điểm từ hộp lên trục; kéo điểm ra xa trục để đưa về hộp. Bàn phím: Enter để đặt, mũi tên để di chuyển, Delete để đưa về hộp."
+    },
+    "insights": {
+     "comparisonTitle": "Câu so sánh",
+     "increasing": "Tăng dần",
+     "decreasing": "Giảm dần",
+     "operatorGroup": "Chiều so sánh",
+     "empty": "Chưa có điểm nào trên trục.",
+     "comparedWithZero": "Chỉ có một điểm nên so sánh với 0.",
+     "absoluteTitle": "Giá trị tuyệt đối",
+     "oppositeTitle": "Số đối",
+     "oppositeSentence": "Số đối của {value} là {opposite}.",
+     "lineNoteHorizontal": "Trên trục ngang, số bên trái nhỏ hơn số bên phải.",
+     "lineNoteVertical": "Trên trục đứng, số ở dưới nhỏ hơn số ở trên.",
+     "absoluteSentence": "|{value}| = {absolute}: cách 0 là {absolute} đơn vị.",
+     "elevationAbove": "{name}: cao hơn mực nước biển {absolute} m.",
+     "elevationBelow": "{name}: thấp hơn mực nước biển {absolute} m.",
+     "elevationAt": "{name}: ở mực nước biển.",
+     "balancePositive": "{name}: số dư {absolute} nghìn đồng.",
+     "balanceNegative": "{name}: nợ {absolute} nghìn đồng.",
+     "balanceZero": "{name}: số dư 0, không nợ.",
+     "temperatureAbove": "{name}: {absolute}{unit} trên 0{unit}.",
+     "temperatureBelow": "{name}: {absolute}{unit} dưới 0{unit}.",
+     "temperatureAt": "{name}: đúng 0{unit}.",
+     "noPoints": "Đưa vật vào cảnh để xem khoảng cách tới 0."
+    },
+    "symbols": {
+     "<": "nhỏ hơn",
+     ">": "lớn hơn",
+     "=": "bằng",
+     "≤": "nhỏ hơn hoặc bằng",
+     "≥": "lớn hơn hoặc bằng"
+    },
+    "scene": {
+     "svgTitle": "Cảnh số nguyên trên trục số",
+     "elevationAxis": "Độ cao (m)",
+     "seaLevel": "Mực nước biển 0 m",
+     "bankAxis": "Số dư (nghìn đồng)",
+     "temperatureTitle": "{month} · {unit}",
+     "equator": "Xích đạo",
+     "lineTray": "Hộp điểm",
+     "elevationTray": "Hộp vật",
+     "thermometerTray": "Nhiệt kế",
+     "emptyElevation": "Kéo người, chim hoặc cá vào cảnh",
+     "emptyTemperature": "Kéo nhiệt kế lên một địa điểm",
+     "debtTag": "nợ",
+     "trayItem": "{name} đang trong hộp. Nhấn Enter để đặt vào cảnh.",
+     "placedSummary": "{context}: {items}.",
+     "noneSummary": "{context}: chưa có điểm nào trên trục.",
+     "placedAnnouncement": "Đã đặt {name}: {value}.",
+     "returnedAnnouncement": "Đã đưa {name} về hộp.",
+     "accountShort": "TK {index}",
+     "bankAbsoluteDebt": "nợ {value}",
+     "bankAbsoluteCredit": "dư {value}",
+     "legendCold": "lạnh",
+     "legendHot": "nóng",
+     "latitudeNorth": "{value}° Bắc",
+     "latitudeSouth": "{value}° Nam"
+    },
+    "spoken": {
+     "negative": "âm {value}",
+     "meters": "{value} mét",
+     "degreesCelsius": "{value} độ C",
+     "degreesFahrenheit": "{value} độ F",
+     "thousandDong": "{value} nghìn đồng",
+     "debt": "nợ {value} nghìn đồng",
+     "location": "{place}: {reading}"
+    },
+    "elevationItems": {
+     "person": "Người",
+     "bird": "Chim",
+     "fish": "Cá"
+    },
+    "thermometers": {
+     "a": "Nhiệt kế A",
+     "b": "Nhiệt kế B",
+     "c": "Nhiệt kế C"
+    },
+    "points": {
+     "p1": "Điểm 1",
+     "p2": "Điểm 2",
+     "p3": "Điểm 3"
+    },
+    "accounts": [
+     "Tài khoản 1",
+     "Tài khoản 2"
+    ],
+    "months": [
+     "Tháng 1",
+     "Tháng 2",
+     "Tháng 3",
+     "Tháng 4",
+     "Tháng 5",
+     "Tháng 6",
+     "Tháng 7",
+     "Tháng 8",
+     "Tháng 9",
+     "Tháng 10",
+     "Tháng 11",
+     "Tháng 12"
+    ],
+    "locations": {
+     "yakutsk": {
+      "short": "Yakutsk",
+      "full": "Yakutsk, Nga"
+     },
+     "moscow": {
+      "short": "Mát-xcơ-va",
+      "full": "Mát-xcơ-va, Nga"
+     },
+     "ulaanbaatar": {
+      "short": "U-lan Ba-to",
+      "full": "U-lan Ba-to, Mông Cổ"
+     },
+     "beijing": {
+      "short": "Bắc Kinh",
+      "full": "Bắc Kinh, Trung Quốc"
+     },
+     "riyadh": {
+      "short": "Riyadh",
+      "full": "Riyadh, Ả Rập Xê Út"
+     },
+     "hanoi": {
+      "short": "Hà Nội",
+      "full": "Hà Nội, Việt Nam"
+     },
+     "da-nang": {
+      "short": "Đà Nẵng",
+      "full": "Đà Nẵng, Việt Nam"
+     },
+     "ho-chi-minh-city": {
+      "short": "TP. Hồ Chí Minh",
+      "full": "TP. Hồ Chí Minh, Việt Nam"
+     },
+     "singapore": {
+      "short": "Xin-ga-po",
+      "full": "Xin-ga-po"
+     },
+     "sydney": {
+      "short": "Xít-ni",
+      "full": "Xít-ni, Ô-xtrây-li-a"
+     },
+     "buenos-aires": {
+      "short": "Bu-ê-nốt Ai-rét",
+      "full": "Bu-ê-nốt Ai-rét, Ác-hen-ti-na"
+     },
+     "south-pole": {
+      "short": "Cực Nam",
+      "full": "Cực Nam (trạm Amundsen–Scott, châu Nam Cực)"
+     }
+    },
+    "modelNotes": [
+     "Học liệu chỉ dùng số nguyên. Miền hiển thị: độ cao −80…100 m, số dư −100…100 nghìn đồng, nhiệt độ −70…40 °C (−80…100 °F), Trục số ±10, ±30 hoặc ±100. Đây là giới hạn của học liệu, không phải giới hạn của số nguyên: trục số kéo dài mãi về hai phía.",
+     "Khi thả vật hoặc điểm, vị trí được làm tròn tới số nguyên gần nhất; đúng nửa đơn vị thì làm tròn ra xa 0 (2,5 thành 3; −2,5 thành −3). Hai điểm của Trục số, hay hai vật ở bối cảnh Độ cao, không đứng cùng một số: vật thả sau dời tới số trống gần nhất. Hai tài khoản hoặc hai nhiệt kế có thể có số bằng nhau.",
+     "Câu so sánh xếp các số tăng dần khi chọn dấu <, giảm dần khi chọn dấu >. Chỉ có một điểm thì so sánh với 0. Hai số bằng nhau dùng dấu =; ba số mà có hai số bằng nhau thì cặp đó dùng ≤ hoặc ≥ để giữ chiều đã chọn.",
+     "Nhiệt độ là trung bình tháng giai đoạn 2001–2020 của dữ liệu tái phân tích MERRA-2 do dự án NASA POWER cung cấp, tính cho ô lưới khoảng 50 km quanh mỗi địa điểm, không phải số đo tại trạm khí tượng trong thành phố nên có thể lệch vài độ. Số đọc được làm tròn tới 1 độ; °F = làm tròn(°C × 9/5 + 32) tính từ số °C chưa làm tròn.",
+     "Bảng địa điểm xếp từ Bắc xuống Nam theo vĩ độ, có vạch xích đạo; đây không phải bản đồ. Màu thẻ chỉ gợi nhiệt độ; con số đọc trên trục và trên nhiệt kế.",
+     "Số dư là số tiền trong tài khoản, tính bằng nghìn đồng; số âm biểu thị nợ. Hũ tiền to dần theo |số dư| chỉ để minh họa.",
+     "Cảnh độ cao là hình minh họa: chỉ độ cao so với mực nước biển được đo, vị trí ngang của vật không mang ý nghĩa. Giá trị tuyệt đối của độ cao là khoảng cách tới mực nước biển.",
+     "Giá trị tuyệt đối |a| là khoảng cách từ điểm a tới 0 nên không bao giờ âm; số đối −a nằm đối xứng với a qua 0."
+    ]
+   },
+   "en": {
+    "eyebrow": "Mathematics · Integers",
+    "title": "Integers on the number line",
+    "description": "Place integers on a number line in three contexts (elevation, bank account, temperature) and on a free number line; compare numbers, find opposites and absolute values.",
+    "modes": {
+     "explore": "Explore",
+     "numberLine": "Number line"
+    },
+    "status": {
+     "ready": "Resource ready",
+     "loading": "Starting the resource"
+    },
+    "guidance": [
+     {
+      "label": "Start",
+      "text": "Choose a context, then drag an object into the scene; its point appears on the number line."
+     },
+     {
+      "label": "Look for",
+      "text": "A number lower (or further left) on the line is always smaller than one higher (or further right)."
+     },
+     {
+      "label": "Common mix-up",
+      "text": "−7 is less than −3 even though 7 is greater than 3: the further below zero, the smaller the number."
+     }
+    ],
+    "contexts": {
+     "elevation": {
+      "label": "Elevation",
+      "hint": "Drag the person, bird or fish from the box into the scene. Sea level is 0 m; below the surface is negative.",
+      "comparisonNote": "On a vertical line, a higher point stands for a greater number.",
+      "sceneTitle": "Elevation relative to sea level"
+     },
+     "bank": {
+      "label": "Bank account",
+      "hint": "Deposit or withdraw one thousand dong at a time, or drag a jar along the line. A negative balance is a debt.",
+      "comparisonNote": "The more you owe, the smaller the balance: owing 20 thousand dong (−20) is less than owing 5 thousand (−5).",
+      "sceneTitle": "Account balance"
+     },
+     "temperature": {
+      "label": "Temperature",
+      "hint": "Drag thermometers A, B and C onto places, then change the month to see the readings change.",
+      "comparisonNote": "Temperatures below zero are negative; the colder it is, the smaller the number.",
+      "sceneTitle": "Monthly mean temperature"
+     }
+    },
+    "controls": {
+     "contextTitle": "Context",
+     "displayTitle": "Show",
+     "showAxis": "Number line",
+     "showLabels": "Point labels",
+     "showAbsolute": "Absolute value",
+     "showTicks": "Tick marks",
+     "showOpposite": "Opposites",
+     "resetContext": "Reset this context",
+     "keyboardHint": "Keyboard: select an object in the box and press Enter to place it; arrow keys move it; Delete returns it to the box.",
+     "accountsTitle": "Deposit and withdraw",
+     "deposit": "Deposit 1",
+     "withdraw": "Withdraw 1",
+     "depositLabel": "Deposit 1 thousand dong into {account}",
+     "withdrawLabel": "Withdraw 1 thousand dong from {account}",
+     "compareAccounts": "Compare two accounts",
+     "balanceValue": "{value} thousand dong",
+     "timeTitle": "Month and unit",
+     "month": "Month",
+     "unit": "Temperature unit",
+     "celsius": "°C",
+     "fahrenheit": "°F",
+     "lineTitle": "Number line",
+     "orientation": "Orientation",
+     "horizontal": "Horizontal",
+     "vertical": "Vertical",
+     "range": "Range",
+     "rangeOption": "{min} to {max}",
+     "resetLine": "Reset number line",
+     "lineHint": "Drag a point from the box onto the line; drag it far from the line to return it. Keyboard: Enter places it, arrow keys move it, Delete returns it."
+    },
+    "insights": {
+     "comparisonTitle": "Comparison",
+     "increasing": "Increasing",
+     "decreasing": "Decreasing",
+     "operatorGroup": "Comparison order",
+     "empty": "No points on the line yet.",
+     "comparedWithZero": "With only one point, it is compared with 0.",
+     "absoluteTitle": "Absolute value",
+     "oppositeTitle": "Opposites",
+     "oppositeSentence": "The opposite of {value} is {opposite}.",
+     "lineNoteHorizontal": "On a horizontal line, a number to the left is less than a number to the right.",
+     "lineNoteVertical": "On a vertical line, a number below is less than a number above.",
+     "absoluteSentence": "|{value}| = {absolute}: it is {absolute} units from 0.",
+     "elevationAbove": "{name}: {absolute} m above sea level.",
+     "elevationBelow": "{name}: {absolute} m below sea level.",
+     "elevationAt": "{name}: at sea level.",
+     "balancePositive": "{name}: balance of {absolute} thousand dong.",
+     "balanceNegative": "{name}: debt of {absolute} thousand dong.",
+     "balanceZero": "{name}: balance 0, no debt.",
+     "temperatureAbove": "{name}: {absolute}{unit} above 0{unit}.",
+     "temperatureBelow": "{name}: {absolute}{unit} below 0{unit}.",
+     "temperatureAt": "{name}: exactly 0{unit}.",
+     "noPoints": "Place an object in the scene to see its distance from 0."
+    },
+    "symbols": {
+     "<": "is less than",
+     ">": "is greater than",
+     "=": "equals",
+     "≤": "is less than or equal to",
+     "≥": "is greater than or equal to"
+    },
+    "scene": {
+     "svgTitle": "Integers on the number line scene",
+     "elevationAxis": "Elevation (m)",
+     "seaLevel": "Sea level 0 m",
+     "bankAxis": "Balance (thousand dong)",
+     "temperatureTitle": "{month} · {unit}",
+     "equator": "Equator",
+     "lineTray": "Point box",
+     "elevationTray": "Object box",
+     "thermometerTray": "Thermometers",
+     "emptyElevation": "Drag the person, bird or fish into the scene",
+     "emptyTemperature": "Drag a thermometer onto a place",
+     "debtTag": "debt",
+     "trayItem": "{name} is in the box. Press Enter to place it.",
+     "placedSummary": "{context}: {items}.",
+     "noneSummary": "{context}: no points on the line yet.",
+     "placedAnnouncement": "Placed {name}: {value}.",
+     "returnedAnnouncement": "Returned {name} to the box.",
+     "accountShort": "Acct {index}",
+     "bankAbsoluteDebt": "debt {value}",
+     "bankAbsoluteCredit": "balance {value}",
+     "legendCold": "cold",
+     "legendHot": "hot",
+     "latitudeNorth": "{value}° N",
+     "latitudeSouth": "{value}° S"
+    },
+    "spoken": {
+     "negative": "negative {value}",
+     "meters": "{value} meters",
+     "degreesCelsius": "{value} degrees Celsius",
+     "degreesFahrenheit": "{value} degrees Fahrenheit",
+     "thousandDong": "{value} thousand dong",
+     "debt": "a debt of {value} thousand dong",
+     "location": "{place}: {reading}"
+    },
+    "elevationItems": {
+     "person": "Person",
+     "bird": "Bird",
+     "fish": "Fish"
+    },
+    "thermometers": {
+     "a": "Thermometer A",
+     "b": "Thermometer B",
+     "c": "Thermometer C"
+    },
+    "points": {
+     "p1": "Point 1",
+     "p2": "Point 2",
+     "p3": "Point 3"
+    },
+    "accounts": [
+     "Account 1",
+     "Account 2"
+    ],
+    "months": [
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December"
+    ],
+    "locations": {
+     "yakutsk": {
+      "short": "Yakutsk",
+      "full": "Yakutsk, Russia"
+     },
+     "moscow": {
+      "short": "Moscow",
+      "full": "Moscow, Russia"
+     },
+     "ulaanbaatar": {
+      "short": "Ulaanbaatar",
+      "full": "Ulaanbaatar, Mongolia"
+     },
+     "beijing": {
+      "short": "Beijing",
+      "full": "Beijing, China"
+     },
+     "riyadh": {
+      "short": "Riyadh",
+      "full": "Riyadh, Saudi Arabia"
+     },
+     "hanoi": {
+      "short": "Hanoi",
+      "full": "Hanoi, Viet Nam"
+     },
+     "da-nang": {
+      "short": "Da Nang",
+      "full": "Da Nang, Viet Nam"
+     },
+     "ho-chi-minh-city": {
+      "short": "Ho Chi Minh City",
+      "full": "Ho Chi Minh City, Viet Nam"
+     },
+     "singapore": {
+      "short": "Singapore",
+      "full": "Singapore"
+     },
+     "sydney": {
+      "short": "Sydney",
+      "full": "Sydney, Australia"
+     },
+     "buenos-aires": {
+      "short": "Buenos Aires",
+      "full": "Buenos Aires, Argentina"
+     },
+     "south-pole": {
+      "short": "South Pole",
+      "full": "South Pole (Amundsen–Scott station, Antarctica)"
+     }
+    },
+    "modelNotes": [
+     "Only integers are used. Ranges shown: elevation −80…100 m, balance −100…100 thousand dong, temperature −70…40 °C (−80…100 °F), Number line ±10, ±30 or ±100. These are limits of the resource, not of the integers: a number line goes on forever in both directions.",
+     "When an object or point is dropped, its position is rounded to the nearest integer; an exact half rounds away from 0 (2.5 becomes 3; −2.5 becomes −3). Two points on the Number line, or two objects in Elevation, never share a number: the one dropped last moves to the nearest free number. Two accounts or two thermometers may show equal numbers.",
+     "The comparison lists the numbers in increasing order with < and in decreasing order with >. With only one point, it is compared with 0. Two equal numbers use =; among three numbers, an equal pair uses ≤ or ≥ to keep the chosen direction.",
+     "Temperatures are 2001–2020 monthly means from the MERRA-2 reanalysis provided by the NASA POWER project, for a grid cell of about 50 km around each place, not readings of a weather station in the city, so they may differ by a few degrees. Readings are rounded to 1 degree; °F = round(°C × 9/5 + 32) from the unrounded °C value.",
+     "The places are arranged from north to south by latitude, with an equator line; this is not a map. Card colours only hint at the temperature; read the numbers on the line and the thermometers.",
+     "The balance is the money in the account, in thousand dong; a negative number means debt. The jar grows with |balance| only as an illustration.",
+     "The elevation scene is an illustration: only the height above or below sea level is measured; the horizontal position of an object has no meaning. The absolute value of an elevation is its distance from sea level.",
+     "The absolute value |a| is the distance from a to 0, so it is never negative; the opposite −a lies symmetric to a about 0."
+    ]
+   }
+  }
+ },
+ {
+  "vi": {
+   "eyebrow": "Toán học · Số nguyên",
+   "title": "Số nguyên trên trục số",
+   "description": "Đặt số nguyên lên trục số trong ba bối cảnh độ cao, tài khoản, nhiệt độ và trên trục số tự do; so sánh các số, tìm số đối và giá trị tuyệt đối.",
+   "modes": {
+    "explore": "Khám phá",
+    "numberLine": "Trục số"
+   },
+   "status": {
+    "ready": "Học liệu sẵn sàng",
+    "loading": "Đang khởi tạo học liệu"
+   },
+   "guidance": [
+    {
+     "label": "Bắt đầu",
+     "text": "Chọn một bối cảnh rồi kéo vật vào cảnh; điểm tương ứng xuất hiện trên trục số."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Số ở dưới (hoặc bên trái) trên trục luôn nhỏ hơn số ở trên (hoặc bên phải)."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "−7 nhỏ hơn −3 dù 7 lớn hơn 3: càng xa 0 về phía âm, số càng nhỏ."
+    }
+   ],
+   "contexts": {
+    "elevation": {
+     "label": "Độ cao",
+     "hint": "Kéo người, chim hoặc cá từ hộp vào cảnh. Mực nước biển là 0 m; dưới mặt biển là số âm.",
+     "comparisonNote": "Trên trục đứng, điểm càng cao biểu diễn số càng lớn.",
+     "sceneTitle": "Độ cao so với mực nước biển"
+    },
+    "bank": {
+     "label": "Tài khoản",
+     "hint": "Nạp hoặc rút từng nghìn đồng, hoặc kéo hũ dọc trục. Số dư âm nghĩa là đang nợ.",
+     "comparisonNote": "Nợ càng nhiều thì số dư càng nhỏ: nợ 20 nghìn đồng (−20) nhỏ hơn nợ 5 nghìn đồng (−5).",
+     "sceneTitle": "Số dư tài khoản"
+    },
+    "temperature": {
+     "label": "Nhiệt độ",
+     "hint": "Kéo nhiệt kế A, B, C lên các địa điểm rồi đổi tháng để xem số đọc thay đổi.",
+     "comparisonNote": "Nhiệt độ dưới 0 độ là số âm; càng lạnh, số càng nhỏ.",
+     "sceneTitle": "Nhiệt độ trung bình tháng"
+    }
+   },
+   "controls": {
+    "contextTitle": "Bối cảnh",
+    "displayTitle": "Hiển thị",
+    "showAxis": "Trục số",
+    "showLabels": "Nhãn số của điểm",
+    "showAbsolute": "Giá trị tuyệt đối",
+    "showTicks": "Vạch chia",
+    "showOpposite": "Số đối",
+    "resetContext": "Đặt lại bối cảnh này",
+    "keyboardHint": "Bàn phím: chọn vật trong hộp, nhấn Enter để đặt; mũi tên để di chuyển; Delete để đưa về hộp.",
+    "accountsTitle": "Nạp và rút",
+    "deposit": "Nạp 1",
+    "withdraw": "Rút 1",
+    "depositLabel": "Nạp 1 nghìn đồng vào {account}",
+    "withdrawLabel": "Rút 1 nghìn đồng từ {account}",
+    "compareAccounts": "So sánh hai tài khoản",
+    "balanceValue": "{value} nghìn đồng",
+    "timeTitle": "Tháng và đơn vị",
+    "month": "Tháng",
+    "unit": "Đơn vị nhiệt độ",
+    "celsius": "°C",
+    "fahrenheit": "°F",
+    "lineTitle": "Trục số",
+    "orientation": "Hướng trục",
+    "horizontal": "Ngang",
+    "vertical": "Đứng",
+    "range": "Miền",
+    "rangeOption": "{min} đến {max}",
+    "resetLine": "Đặt lại trục số",
+    "lineHint": "Kéo điểm từ hộp lên trục; kéo điểm ra xa trục để đưa về hộp. Bàn phím: Enter để đặt, mũi tên để di chuyển, Delete để đưa về hộp."
+   },
+   "insights": {
+    "comparisonTitle": "Câu so sánh",
+    "increasing": "Tăng dần",
+    "decreasing": "Giảm dần",
+    "operatorGroup": "Chiều so sánh",
+    "empty": "Chưa có điểm nào trên trục.",
+    "comparedWithZero": "Chỉ có một điểm nên so sánh với 0.",
+    "absoluteTitle": "Giá trị tuyệt đối",
+    "oppositeTitle": "Số đối",
+    "oppositeSentence": "Số đối của {value} là {opposite}.",
+    "lineNoteHorizontal": "Trên trục ngang, số bên trái nhỏ hơn số bên phải.",
+    "lineNoteVertical": "Trên trục đứng, số ở dưới nhỏ hơn số ở trên.",
+    "absoluteSentence": "|{value}| = {absolute}: cách 0 là {absolute} đơn vị.",
+    "elevationAbove": "{name}: cao hơn mực nước biển {absolute} m.",
+    "elevationBelow": "{name}: thấp hơn mực nước biển {absolute} m.",
+    "elevationAt": "{name}: ở mực nước biển.",
+    "balancePositive": "{name}: số dư {absolute} nghìn đồng.",
+    "balanceNegative": "{name}: nợ {absolute} nghìn đồng.",
+    "balanceZero": "{name}: số dư 0, không nợ.",
+    "temperatureAbove": "{name}: {absolute}{unit} trên 0{unit}.",
+    "temperatureBelow": "{name}: {absolute}{unit} dưới 0{unit}.",
+    "temperatureAt": "{name}: đúng 0{unit}.",
+    "noPoints": "Đưa vật vào cảnh để xem khoảng cách tới 0."
+   },
+   "symbols": {
+    "<": "nhỏ hơn",
+    ">": "lớn hơn",
+    "=": "bằng",
+    "≤": "nhỏ hơn hoặc bằng",
+    "≥": "lớn hơn hoặc bằng"
+   },
+   "scene": {
+    "svgTitle": "Cảnh số nguyên trên trục số",
+    "elevationAxis": "Độ cao (m)",
+    "seaLevel": "Mực nước biển 0 m",
+    "bankAxis": "Số dư (nghìn đồng)",
+    "temperatureTitle": "{month} · {unit}",
+    "equator": "Xích đạo",
+    "lineTray": "Hộp điểm",
+    "elevationTray": "Hộp vật",
+    "thermometerTray": "Nhiệt kế",
+    "emptyElevation": "Kéo người, chim hoặc cá vào cảnh",
+    "emptyTemperature": "Kéo nhiệt kế lên một địa điểm",
+    "debtTag": "nợ",
+    "trayItem": "{name} đang trong hộp. Nhấn Enter để đặt vào cảnh.",
+    "placedSummary": "{context}: {items}.",
+    "noneSummary": "{context}: chưa có điểm nào trên trục.",
+    "placedAnnouncement": "Đã đặt {name}: {value}.",
+    "returnedAnnouncement": "Đã đưa {name} về hộp.",
+    "accountShort": "TK {index}",
+    "bankAbsoluteDebt": "nợ {value}",
+    "bankAbsoluteCredit": "dư {value}",
+    "legendCold": "lạnh",
+    "legendHot": "nóng",
+    "latitudeNorth": "{value}° Bắc",
+    "latitudeSouth": "{value}° Nam"
+   },
+   "spoken": {
+    "negative": "âm {value}",
+    "meters": "{value} mét",
+    "degreesCelsius": "{value} độ C",
+    "degreesFahrenheit": "{value} độ F",
+    "thousandDong": "{value} nghìn đồng",
+    "debt": "nợ {value} nghìn đồng",
+    "location": "{place}: {reading}"
+   },
+   "elevationItems": {
+    "person": "Người",
+    "bird": "Chim",
+    "fish": "Cá"
+   },
+   "thermometers": {
+    "a": "Nhiệt kế A",
+    "b": "Nhiệt kế B",
+    "c": "Nhiệt kế C"
+   },
+   "points": {
+    "p1": "Điểm 1",
+    "p2": "Điểm 2",
+    "p3": "Điểm 3"
+   },
+   "accounts": [
+    "Tài khoản 1",
+    "Tài khoản 2"
+   ],
+   "months": [
+    "Tháng 1",
+    "Tháng 2",
+    "Tháng 3",
+    "Tháng 4",
+    "Tháng 5",
+    "Tháng 6",
+    "Tháng 7",
+    "Tháng 8",
+    "Tháng 9",
+    "Tháng 10",
+    "Tháng 11",
+    "Tháng 12"
+   ],
+   "locations": {
+    "yakutsk": {
+     "short": "Yakutsk",
+     "full": "Yakutsk, Nga"
+    },
+    "moscow": {
+     "short": "Mát-xcơ-va",
+     "full": "Mát-xcơ-va, Nga"
+    },
+    "ulaanbaatar": {
+     "short": "U-lan Ba-to",
+     "full": "U-lan Ba-to, Mông Cổ"
+    },
+    "beijing": {
+     "short": "Bắc Kinh",
+     "full": "Bắc Kinh, Trung Quốc"
+    },
+    "riyadh": {
+     "short": "Riyadh",
+     "full": "Riyadh, Ả Rập Xê Út"
+    },
+    "hanoi": {
+     "short": "Hà Nội",
+     "full": "Hà Nội, Việt Nam"
+    },
+    "da-nang": {
+     "short": "Đà Nẵng",
+     "full": "Đà Nẵng, Việt Nam"
+    },
+    "ho-chi-minh-city": {
+     "short": "TP. Hồ Chí Minh",
+     "full": "TP. Hồ Chí Minh, Việt Nam"
+    },
+    "singapore": {
+     "short": "Xin-ga-po",
+     "full": "Xin-ga-po"
+    },
+    "sydney": {
+     "short": "Xít-ni",
+     "full": "Xít-ni, Ô-xtrây-li-a"
+    },
+    "buenos-aires": {
+     "short": "Bu-ê-nốt Ai-rét",
+     "full": "Bu-ê-nốt Ai-rét, Ác-hen-ti-na"
+    },
+    "south-pole": {
+     "short": "Cực Nam",
+     "full": "Cực Nam (trạm Amundsen–Scott, châu Nam Cực)"
+    }
+   },
+   "modelNotes": [
+    "Học liệu chỉ dùng số nguyên. Miền hiển thị: độ cao −80…100 m, số dư −100…100 nghìn đồng, nhiệt độ −70…40 °C (−80…100 °F), Trục số ±10, ±30 hoặc ±100. Đây là giới hạn của học liệu, không phải giới hạn của số nguyên: trục số kéo dài mãi về hai phía.",
+    "Khi thả vật hoặc điểm, vị trí được làm tròn tới số nguyên gần nhất; đúng nửa đơn vị thì làm tròn ra xa 0 (2,5 thành 3; −2,5 thành −3). Hai điểm của Trục số, hay hai vật ở bối cảnh Độ cao, không đứng cùng một số: vật thả sau dời tới số trống gần nhất. Hai tài khoản hoặc hai nhiệt kế có thể có số bằng nhau.",
+    "Câu so sánh xếp các số tăng dần khi chọn dấu <, giảm dần khi chọn dấu >. Chỉ có một điểm thì so sánh với 0. Hai số bằng nhau dùng dấu =; ba số mà có hai số bằng nhau thì cặp đó dùng ≤ hoặc ≥ để giữ chiều đã chọn.",
+    "Nhiệt độ là trung bình tháng giai đoạn 2001–2020 của dữ liệu tái phân tích MERRA-2 do dự án NASA POWER cung cấp, tính cho ô lưới khoảng 50 km quanh mỗi địa điểm, không phải số đo tại trạm khí tượng trong thành phố nên có thể lệch vài độ. Số đọc được làm tròn tới 1 độ; °F = làm tròn(°C × 9/5 + 32) tính từ số °C chưa làm tròn.",
+    "Bảng địa điểm xếp từ Bắc xuống Nam theo vĩ độ, có vạch xích đạo; đây không phải bản đồ. Màu thẻ chỉ gợi nhiệt độ; con số đọc trên trục và trên nhiệt kế.",
+    "Số dư là số tiền trong tài khoản, tính bằng nghìn đồng; số âm biểu thị nợ. Hũ tiền to dần theo |số dư| chỉ để minh họa.",
+    "Cảnh độ cao là hình minh họa: chỉ độ cao so với mực nước biển được đo, vị trí ngang của vật không mang ý nghĩa. Giá trị tuyệt đối của độ cao là khoảng cách tới mực nước biển.",
+    "Giá trị tuyệt đối |a| là khoảng cách từ điểm a tới 0 nên không bao giờ âm; số đối −a nằm đối xứng với a qua 0."
+   ]
+  },
+  "en": {
+   "eyebrow": "Mathematics · Integers",
+   "title": "Integers on the number line",
+   "description": "Place integers on a number line in three contexts (elevation, bank account, temperature) and on a free number line; compare numbers, find opposites and absolute values.",
+   "modes": {
+    "explore": "Explore",
+    "numberLine": "Number line"
+   },
+   "status": {
+    "ready": "Resource ready",
+    "loading": "Starting the resource"
+   },
+   "guidance": [
+    {
+     "label": "Start",
+     "text": "Choose a context, then drag an object into the scene; its point appears on the number line."
+    },
+    {
+     "label": "Look for",
+     "text": "A number lower (or further left) on the line is always smaller than one higher (or further right)."
+    },
+    {
+     "label": "Common mix-up",
+     "text": "−7 is less than −3 even though 7 is greater than 3: the further below zero, the smaller the number."
+    }
+   ],
+   "contexts": {
+    "elevation": {
+     "label": "Elevation",
+     "hint": "Drag the person, bird or fish from the box into the scene. Sea level is 0 m; below the surface is negative.",
+     "comparisonNote": "On a vertical line, a higher point stands for a greater number.",
+     "sceneTitle": "Elevation relative to sea level"
+    },
+    "bank": {
+     "label": "Bank account",
+     "hint": "Deposit or withdraw one thousand dong at a time, or drag a jar along the line. A negative balance is a debt.",
+     "comparisonNote": "The more you owe, the smaller the balance: owing 20 thousand dong (−20) is less than owing 5 thousand (−5).",
+     "sceneTitle": "Account balance"
+    },
+    "temperature": {
+     "label": "Temperature",
+     "hint": "Drag thermometers A, B and C onto places, then change the month to see the readings change.",
+     "comparisonNote": "Temperatures below zero are negative; the colder it is, the smaller the number.",
+     "sceneTitle": "Monthly mean temperature"
+    }
+   },
+   "controls": {
+    "contextTitle": "Context",
+    "displayTitle": "Show",
+    "showAxis": "Number line",
+    "showLabels": "Point labels",
+    "showAbsolute": "Absolute value",
+    "showTicks": "Tick marks",
+    "showOpposite": "Opposites",
+    "resetContext": "Reset this context",
+    "keyboardHint": "Keyboard: select an object in the box and press Enter to place it; arrow keys move it; Delete returns it to the box.",
+    "accountsTitle": "Deposit and withdraw",
+    "deposit": "Deposit 1",
+    "withdraw": "Withdraw 1",
+    "depositLabel": "Deposit 1 thousand dong into {account}",
+    "withdrawLabel": "Withdraw 1 thousand dong from {account}",
+    "compareAccounts": "Compare two accounts",
+    "balanceValue": "{value} thousand dong",
+    "timeTitle": "Month and unit",
+    "month": "Month",
+    "unit": "Temperature unit",
+    "celsius": "°C",
+    "fahrenheit": "°F",
+    "lineTitle": "Number line",
+    "orientation": "Orientation",
+    "horizontal": "Horizontal",
+    "vertical": "Vertical",
+    "range": "Range",
+    "rangeOption": "{min} to {max}",
+    "resetLine": "Reset number line",
+    "lineHint": "Drag a point from the box onto the line; drag it far from the line to return it. Keyboard: Enter places it, arrow keys move it, Delete returns it."
+   },
+   "insights": {
+    "comparisonTitle": "Comparison",
+    "increasing": "Increasing",
+    "decreasing": "Decreasing",
+    "operatorGroup": "Comparison order",
+    "empty": "No points on the line yet.",
+    "comparedWithZero": "With only one point, it is compared with 0.",
+    "absoluteTitle": "Absolute value",
+    "oppositeTitle": "Opposites",
+    "oppositeSentence": "The opposite of {value} is {opposite}.",
+    "lineNoteHorizontal": "On a horizontal line, a number to the left is less than a number to the right.",
+    "lineNoteVertical": "On a vertical line, a number below is less than a number above.",
+    "absoluteSentence": "|{value}| = {absolute}: it is {absolute} units from 0.",
+    "elevationAbove": "{name}: {absolute} m above sea level.",
+    "elevationBelow": "{name}: {absolute} m below sea level.",
+    "elevationAt": "{name}: at sea level.",
+    "balancePositive": "{name}: balance of {absolute} thousand dong.",
+    "balanceNegative": "{name}: debt of {absolute} thousand dong.",
+    "balanceZero": "{name}: balance 0, no debt.",
+    "temperatureAbove": "{name}: {absolute}{unit} above 0{unit}.",
+    "temperatureBelow": "{name}: {absolute}{unit} below 0{unit}.",
+    "temperatureAt": "{name}: exactly 0{unit}.",
+    "noPoints": "Place an object in the scene to see its distance from 0."
+   },
+   "symbols": {
+    "<": "is less than",
+    ">": "is greater than",
+    "=": "equals",
+    "≤": "is less than or equal to",
+    "≥": "is greater than or equal to"
+   },
+   "scene": {
+    "svgTitle": "Integers on the number line scene",
+    "elevationAxis": "Elevation (m)",
+    "seaLevel": "Sea level 0 m",
+    "bankAxis": "Balance (thousand dong)",
+    "temperatureTitle": "{month} · {unit}",
+    "equator": "Equator",
+    "lineTray": "Point box",
+    "elevationTray": "Object box",
+    "thermometerTray": "Thermometers",
+    "emptyElevation": "Drag the person, bird or fish into the scene",
+    "emptyTemperature": "Drag a thermometer onto a place",
+    "debtTag": "debt",
+    "trayItem": "{name} is in the box. Press Enter to place it.",
+    "placedSummary": "{context}: {items}.",
+    "noneSummary": "{context}: no points on the line yet.",
+    "placedAnnouncement": "Placed {name}: {value}.",
+    "returnedAnnouncement": "Returned {name} to the box.",
+    "accountShort": "Acct {index}",
+    "bankAbsoluteDebt": "debt {value}",
+    "bankAbsoluteCredit": "balance {value}",
+    "legendCold": "cold",
+    "legendHot": "hot",
+    "latitudeNorth": "{value}° N",
+    "latitudeSouth": "{value}° S"
+   },
+   "spoken": {
+    "negative": "negative {value}",
+    "meters": "{value} meters",
+    "degreesCelsius": "{value} degrees Celsius",
+    "degreesFahrenheit": "{value} degrees Fahrenheit",
+    "thousandDong": "{value} thousand dong",
+    "debt": "a debt of {value} thousand dong",
+    "location": "{place}: {reading}"
+   },
+   "elevationItems": {
+    "person": "Person",
+    "bird": "Bird",
+    "fish": "Fish"
+   },
+   "thermometers": {
+    "a": "Thermometer A",
+    "b": "Thermometer B",
+    "c": "Thermometer C"
+   },
+   "points": {
+    "p1": "Point 1",
+    "p2": "Point 2",
+    "p3": "Point 3"
+   },
+   "accounts": [
+    "Account 1",
+    "Account 2"
+   ],
+   "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+   ],
+   "locations": {
+    "yakutsk": {
+     "short": "Yakutsk",
+     "full": "Yakutsk, Russia"
+    },
+    "moscow": {
+     "short": "Moscow",
+     "full": "Moscow, Russia"
+    },
+    "ulaanbaatar": {
+     "short": "Ulaanbaatar",
+     "full": "Ulaanbaatar, Mongolia"
+    },
+    "beijing": {
+     "short": "Beijing",
+     "full": "Beijing, China"
+    },
+    "riyadh": {
+     "short": "Riyadh",
+     "full": "Riyadh, Saudi Arabia"
+    },
+    "hanoi": {
+     "short": "Hanoi",
+     "full": "Hanoi, Viet Nam"
+    },
+    "da-nang": {
+     "short": "Da Nang",
+     "full": "Da Nang, Viet Nam"
+    },
+    "ho-chi-minh-city": {
+     "short": "Ho Chi Minh City",
+     "full": "Ho Chi Minh City, Viet Nam"
+    },
+    "singapore": {
+     "short": "Singapore",
+     "full": "Singapore"
+    },
+    "sydney": {
+     "short": "Sydney",
+     "full": "Sydney, Australia"
+    },
+    "buenos-aires": {
+     "short": "Buenos Aires",
+     "full": "Buenos Aires, Argentina"
+    },
+    "south-pole": {
+     "short": "South Pole",
+     "full": "South Pole (Amundsen–Scott station, Antarctica)"
+    }
+   },
+   "modelNotes": [
+    "Only integers are used. Ranges shown: elevation −80…100 m, balance −100…100 thousand dong, temperature −70…40 °C (−80…100 °F), Number line ±10, ±30 or ±100. These are limits of the resource, not of the integers: a number line goes on forever in both directions.",
+    "When an object or point is dropped, its position is rounded to the nearest integer; an exact half rounds away from 0 (2.5 becomes 3; −2.5 becomes −3). Two points on the Number line, or two objects in Elevation, never share a number: the one dropped last moves to the nearest free number. Two accounts or two thermometers may show equal numbers.",
+    "The comparison lists the numbers in increasing order with < and in decreasing order with >. With only one point, it is compared with 0. Two equal numbers use =; among three numbers, an equal pair uses ≤ or ≥ to keep the chosen direction.",
+    "Temperatures are 2001–2020 monthly means from the MERRA-2 reanalysis provided by the NASA POWER project, for a grid cell of about 50 km around each place, not readings of a weather station in the city, so they may differ by a few degrees. Readings are rounded to 1 degree; °F = round(°C × 9/5 + 32) from the unrounded °C value.",
+    "The places are arranged from north to south by latitude, with an equator line; this is not a map. Card colours only hint at the temperature; read the numbers on the line and the thermometers.",
+    "The balance is the money in the account, in thousand dong; a negative number means debt. The jar grows with |balance| only as an illustration.",
+    "The elevation scene is an illustration: only the height above or below sea level is measured; the horizontal position of an object has no meaning. The absolute value of an elevation is its distance from sea level.",
+    "The absolute value |a| is the distance from a to 0, so it is never negative; the opposite −a lies symmetric to a about 0."
+   ]
+  }
+ },
+ {
+  "eyebrow": "Toán học · Số nguyên",
+  "title": "Số nguyên trên trục số",
+  "description": "Đặt số nguyên lên trục số trong ba bối cảnh độ cao, tài khoản, nhiệt độ và trên trục số tự do; so sánh các số, tìm số đối và giá trị tuyệt đối.",
+  "modes": {
+   "explore": "Khám phá",
+   "numberLine": "Trục số"
+  },
+  "status": {
+   "ready": "Học liệu sẵn sàng",
+   "loading": "Đang khởi tạo học liệu"
+  },
+  "guidance": [
+   {
+    "label": "Bắt đầu",
+    "text": "Chọn một bối cảnh rồi kéo vật vào cảnh; điểm tương ứng xuất hiện trên trục số."
+   },
+   {
+    "label": "Hãy quan sát",
+    "text": "Số ở dưới (hoặc bên trái) trên trục luôn nhỏ hơn số ở trên (hoặc bên phải)."
+   },
+   {
+    "label": "Điểm dễ nhầm",
+    "text": "−7 nhỏ hơn −3 dù 7 lớn hơn 3: càng xa 0 về phía âm, số càng nhỏ."
+   }
+  ],
+  "contexts": {
+   "elevation": {
+    "label": "Độ cao",
+    "hint": "Kéo người, chim hoặc cá từ hộp vào cảnh. Mực nước biển là 0 m; dưới mặt biển là số âm.",
+    "comparisonNote": "Trên trục đứng, điểm càng cao biểu diễn số càng lớn.",
+    "sceneTitle": "Độ cao so với mực nước biển"
+   },
+   "bank": {
+    "label": "Tài khoản",
+    "hint": "Nạp hoặc rút từng nghìn đồng, hoặc kéo hũ dọc trục. Số dư âm nghĩa là đang nợ.",
+    "comparisonNote": "Nợ càng nhiều thì số dư càng nhỏ: nợ 20 nghìn đồng (−20) nhỏ hơn nợ 5 nghìn đồng (−5).",
+    "sceneTitle": "Số dư tài khoản"
+   },
+   "temperature": {
+    "label": "Nhiệt độ",
+    "hint": "Kéo nhiệt kế A, B, C lên các địa điểm rồi đổi tháng để xem số đọc thay đổi.",
+    "comparisonNote": "Nhiệt độ dưới 0 độ là số âm; càng lạnh, số càng nhỏ.",
+    "sceneTitle": "Nhiệt độ trung bình tháng"
+   }
+  },
+  "controls": {
+   "contextTitle": "Bối cảnh",
+   "displayTitle": "Hiển thị",
+   "showAxis": "Trục số",
+   "showLabels": "Nhãn số của điểm",
+   "showAbsolute": "Giá trị tuyệt đối",
+   "showTicks": "Vạch chia",
+   "showOpposite": "Số đối",
+   "resetContext": "Đặt lại bối cảnh này",
+   "keyboardHint": "Bàn phím: chọn vật trong hộp, nhấn Enter để đặt; mũi tên để di chuyển; Delete để đưa về hộp.",
+   "accountsTitle": "Nạp và rút",
+   "deposit": "Nạp 1",
+   "withdraw": "Rút 1",
+   "depositLabel": "Nạp 1 nghìn đồng vào {account}",
+   "withdrawLabel": "Rút 1 nghìn đồng từ {account}",
+   "compareAccounts": "So sánh hai tài khoản",
+   "balanceValue": "{value} nghìn đồng",
+   "timeTitle": "Tháng và đơn vị",
+   "month": "Tháng",
+   "unit": "Đơn vị nhiệt độ",
+   "celsius": "°C",
+   "fahrenheit": "°F",
+   "lineTitle": "Trục số",
+   "orientation": "Hướng trục",
+   "horizontal": "Ngang",
+   "vertical": "Đứng",
+   "range": "Miền",
+   "rangeOption": "{min} đến {max}",
+   "resetLine": "Đặt lại trục số",
+   "lineHint": "Kéo điểm từ hộp lên trục; kéo điểm ra xa trục để đưa về hộp. Bàn phím: Enter để đặt, mũi tên để di chuyển, Delete để đưa về hộp."
+  },
+  "insights": {
+   "comparisonTitle": "Câu so sánh",
+   "increasing": "Tăng dần",
+   "decreasing": "Giảm dần",
+   "operatorGroup": "Chiều so sánh",
+   "empty": "Chưa có điểm nào trên trục.",
+   "comparedWithZero": "Chỉ có một điểm nên so sánh với 0.",
+   "absoluteTitle": "Giá trị tuyệt đối",
+   "oppositeTitle": "Số đối",
+   "oppositeSentence": "Số đối của {value} là {opposite}.",
+   "lineNoteHorizontal": "Trên trục ngang, số bên trái nhỏ hơn số bên phải.",
+   "lineNoteVertical": "Trên trục đứng, số ở dưới nhỏ hơn số ở trên.",
+   "absoluteSentence": "|{value}| = {absolute}: cách 0 là {absolute} đơn vị.",
+   "elevationAbove": "{name}: cao hơn mực nước biển {absolute} m.",
+   "elevationBelow": "{name}: thấp hơn mực nước biển {absolute} m.",
+   "elevationAt": "{name}: ở mực nước biển.",
+   "balancePositive": "{name}: số dư {absolute} nghìn đồng.",
+   "balanceNegative": "{name}: nợ {absolute} nghìn đồng.",
+   "balanceZero": "{name}: số dư 0, không nợ.",
+   "temperatureAbove": "{name}: {absolute}{unit} trên 0{unit}.",
+   "temperatureBelow": "{name}: {absolute}{unit} dưới 0{unit}.",
+   "temperatureAt": "{name}: đúng 0{unit}.",
+   "noPoints": "Đưa vật vào cảnh để xem khoảng cách tới 0."
+  },
+  "symbols": {
+   "<": "nhỏ hơn",
+   ">": "lớn hơn",
+   "=": "bằng",
+   "≤": "nhỏ hơn hoặc bằng",
+   "≥": "lớn hơn hoặc bằng"
+  },
+  "scene": {
+   "svgTitle": "Cảnh số nguyên trên trục số",
+   "elevationAxis": "Độ cao (m)",
+   "seaLevel": "Mực nước biển 0 m",
+   "bankAxis": "Số dư (nghìn đồng)",
+   "temperatureTitle": "{month} · {unit}",
+   "equator": "Xích đạo",
+   "lineTray": "Hộp điểm",
+   "elevationTray": "Hộp vật",
+   "thermometerTray": "Nhiệt kế",
+   "emptyElevation": "Kéo người, chim hoặc cá vào cảnh",
+   "emptyTemperature": "Kéo nhiệt kế lên một địa điểm",
+   "debtTag": "nợ",
+   "trayItem": "{name} đang trong hộp. Nhấn Enter để đặt vào cảnh.",
+   "placedSummary": "{context}: {items}.",
+   "noneSummary": "{context}: chưa có điểm nào trên trục.",
+   "placedAnnouncement": "Đã đặt {name}: {value}.",
+   "returnedAnnouncement": "Đã đưa {name} về hộp.",
+   "accountShort": "TK {index}",
+   "bankAbsoluteDebt": "nợ {value}",
+   "bankAbsoluteCredit": "dư {value}",
+   "legendCold": "lạnh",
+   "legendHot": "nóng",
+   "latitudeNorth": "{value}° Bắc",
+   "latitudeSouth": "{value}° Nam"
+  },
+  "spoken": {
+   "negative": "âm {value}",
+   "meters": "{value} mét",
+   "degreesCelsius": "{value} độ C",
+   "degreesFahrenheit": "{value} độ F",
+   "thousandDong": "{value} nghìn đồng",
+   "debt": "nợ {value} nghìn đồng",
+   "location": "{place}: {reading}"
+  },
+  "elevationItems": {
+   "person": "Người",
+   "bird": "Chim",
+   "fish": "Cá"
+  },
+  "thermometers": {
+   "a": "Nhiệt kế A",
+   "b": "Nhiệt kế B",
+   "c": "Nhiệt kế C"
+  },
+  "points": {
+   "p1": "Điểm 1",
+   "p2": "Điểm 2",
+   "p3": "Điểm 3"
+  },
+  "accounts": [
+   "Tài khoản 1",
+   "Tài khoản 2"
+  ],
+  "months": [
+   "Tháng 1",
+   "Tháng 2",
+   "Tháng 3",
+   "Tháng 4",
+   "Tháng 5",
+   "Tháng 6",
+   "Tháng 7",
+   "Tháng 8",
+   "Tháng 9",
+   "Tháng 10",
+   "Tháng 11",
+   "Tháng 12"
+  ],
+  "locations": {
+   "yakutsk": {
+    "short": "Yakutsk",
+    "full": "Yakutsk, Nga"
+   },
+   "moscow": {
+    "short": "Mát-xcơ-va",
+    "full": "Mát-xcơ-va, Nga"
+   },
+   "ulaanbaatar": {
+    "short": "U-lan Ba-to",
+    "full": "U-lan Ba-to, Mông Cổ"
+   },
+   "beijing": {
+    "short": "Bắc Kinh",
+    "full": "Bắc Kinh, Trung Quốc"
+   },
+   "riyadh": {
+    "short": "Riyadh",
+    "full": "Riyadh, Ả Rập Xê Út"
+   },
+   "hanoi": {
+    "short": "Hà Nội",
+    "full": "Hà Nội, Việt Nam"
+   },
+   "da-nang": {
+    "short": "Đà Nẵng",
+    "full": "Đà Nẵng, Việt Nam"
+   },
+   "ho-chi-minh-city": {
+    "short": "TP. Hồ Chí Minh",
+    "full": "TP. Hồ Chí Minh, Việt Nam"
+   },
+   "singapore": {
+    "short": "Xin-ga-po",
+    "full": "Xin-ga-po"
+   },
+   "sydney": {
+    "short": "Xít-ni",
+    "full": "Xít-ni, Ô-xtrây-li-a"
+   },
+   "buenos-aires": {
+    "short": "Bu-ê-nốt Ai-rét",
+    "full": "Bu-ê-nốt Ai-rét, Ác-hen-ti-na"
+   },
+   "south-pole": {
+    "short": "Cực Nam",
+    "full": "Cực Nam (trạm Amundsen–Scott, châu Nam Cực)"
+   }
+  },
+  "modelNotes": [
+   "Học liệu chỉ dùng số nguyên. Miền hiển thị: độ cao −80…100 m, số dư −100…100 nghìn đồng, nhiệt độ −70…40 °C (−80…100 °F), Trục số ±10, ±30 hoặc ±100. Đây là giới hạn của học liệu, không phải giới hạn của số nguyên: trục số kéo dài mãi về hai phía.",
+   "Khi thả vật hoặc điểm, vị trí được làm tròn tới số nguyên gần nhất; đúng nửa đơn vị thì làm tròn ra xa 0 (2,5 thành 3; −2,5 thành −3). Hai điểm của Trục số, hay hai vật ở bối cảnh Độ cao, không đứng cùng một số: vật thả sau dời tới số trống gần nhất. Hai tài khoản hoặc hai nhiệt kế có thể có số bằng nhau.",
+   "Câu so sánh xếp các số tăng dần khi chọn dấu <, giảm dần khi chọn dấu >. Chỉ có một điểm thì so sánh với 0. Hai số bằng nhau dùng dấu =; ba số mà có hai số bằng nhau thì cặp đó dùng ≤ hoặc ≥ để giữ chiều đã chọn.",
+   "Nhiệt độ là trung bình tháng giai đoạn 2001–2020 của dữ liệu tái phân tích MERRA-2 do dự án NASA POWER cung cấp, tính cho ô lưới khoảng 50 km quanh mỗi địa điểm, không phải số đo tại trạm khí tượng trong thành phố nên có thể lệch vài độ. Số đọc được làm tròn tới 1 độ; °F = làm tròn(°C × 9/5 + 32) tính từ số °C chưa làm tròn.",
+   "Bảng địa điểm xếp từ Bắc xuống Nam theo vĩ độ, có vạch xích đạo; đây không phải bản đồ. Màu thẻ chỉ gợi nhiệt độ; con số đọc trên trục và trên nhiệt kế.",
+   "Số dư là số tiền trong tài khoản, tính bằng nghìn đồng; số âm biểu thị nợ. Hũ tiền to dần theo |số dư| chỉ để minh họa.",
+   "Cảnh độ cao là hình minh họa: chỉ độ cao so với mực nước biển được đo, vị trí ngang của vật không mang ý nghĩa. Giá trị tuyệt đối của độ cao là khoảng cách tới mực nước biển.",
+   "Giá trị tuyệt đối |a| là khoảng cách từ điểm a tới 0 nên không bao giờ âm; số đối −a nằm đối xứng với a qua 0."
+  ]
+ }
+]

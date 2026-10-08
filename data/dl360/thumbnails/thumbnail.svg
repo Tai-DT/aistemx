@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title description">
+  <title id="title">Kiến tạo mảng: mặt cắt hút chìm</title>
+  <desc id="description">Mảng đại dương xanh ở trái uốn xuống dưới lục địa xanh ở phải. Mặt cắt phân biệt vỏ, manti thạch quyển và đá quyển mềm; magma chỉ xuất hiện thành một túi nhỏ dưới cung núi lửa. Hai mũi tên hướng về ranh giới hội tụ.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#163b51"/><stop offset="1" stop-color="#081624"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#4c96a8" stop-opacity=".22"/><stop offset="1" stop-color="#4c96a8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="mantle" x2="0" y2="1"><stop stop-color="#ba9876"/><stop offset="1" stop-color="#806953"/></linearGradient>
+    <linearGradient id="ocean" x2=".7" y2="1"><stop stop-color="#68d6e8"/><stop offset="1" stop-color="#268ea9"/></linearGradient>
+    <linearGradient id="land" x2="0" y2="1"><stop stop-color="#9cbd77"/><stop offset="1" stop-color="#547f5e"/></linearGradient>
+    <linearGradient id="slab" x2="1" y2="1"><stop stop-color="#547c8a"/><stop offset="1" stop-color="#2f505e"/></linearGradient>
+    <filter id="shadow" x="-.3" y="-.5" width="1.6" height="2"><feGaussianBlur stdDeviation="15"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 9 5 0 10Z" fill="#d6f7ff"/></marker>
+  </defs>
+  <rect width="960" height="540" rx="28" fill="url(#background)"/>
+  <ellipse cx="510" cy="210" rx="450" ry="280" fill="url(#glow)"/>
+  <g fill="none" stroke="#91b7c3" stroke-opacity=".07">
+    <ellipse cx="495" cy="340" rx="405" ry="152"/><ellipse cx="495" cy="340" rx="370" ry="130"/>
+  </g>
+  <ellipse cx="485" cy="448" rx="350" ry="30" fill="#020c15" opacity=".6" filter="url(#shadow)"/>
+  <!-- Solid ductile mantle, with a distinct right side to establish a cutaway volume. -->
+  <path d="M105 253H740V429H105Z" fill="url(#mantle)"/>
+  <path d="M740 253 850 184V360L740 429Z" fill="#6b6656"/>
+  <path d="M105 253 215 184H850L740 253Z" fill="#cdb18a"/>
+  <g fill="none" stroke="#e0c09c" stroke-width="2" opacity=".22">
+    <path d="M112 350C235 337 341 363 438 351S626 337 733 351"/>
+    <path d="M112 391C273 380 377 405 523 390S651 379 733 389"/>
+  </g>
+  <!-- Continental mantle and crust remain on the overriding side. -->
+  <path d="M431 250 740 238V314L524 329 477 301Z" fill="#8b7661"/>
+  <path d="M740 238 850 169V245L740 314Z" fill="#625f51"/>
+  <path d="M425 230 740 219V276L522 294 477 278 447 253Z" fill="#dcbd8e"/>
+  <path d="M740 219 850 150V207L740 276Z" fill="#aa976e"/>
+  <path d="M425 230 535 161 850 150 740 219Z" fill="url(#land)"/>
+  <path d="M452 236 533 255 740 244" fill="none" stroke="#f4d9ac" stroke-width="4" opacity=".65"/>
+  <!-- Oceanic crust and lithospheric mantle bend together under the continent. -->
+  <path d="M105 270H397C427 270 438 288 463 307L533 359 552 382 538 393 514 371 444 327C421 312 412 305 391 305H105Z" fill="url(#slab)"/>
+  <path d="M105 253H398C419 253 437 272 460 292L532 342 552 367 543 380 522 356 449 307C429 294 414 281 394 281H105Z" fill="#b1c4c0"/>
+  <path d="M105 254H398C419 254 437 273 460 292L532 343 550 366" fill="none" stroke="#e0e7ce" stroke-width="4"/>
+  <path d="M105 253 215 184H513L402 253Z" fill="url(#ocean)"/>
+  <g fill="none" stroke="#c6f6fd" stroke-width="2" opacity=".55">
+    <path d="M168 222h61m31 0h45m36 0h54"/><path d="M238 202h42m28 0h61m27 0h29"/>
+  </g>
+  <!-- Trench and a small partial-melt pocket; no molten-mantle ocean. -->
+  <path d="M399 253 511 183 526 180 414 253 436 271 425 278Z" fill="#285468"/>
+  <path d="M589 313C584 302 592 287 605 289 620 291 626 306 616 317 607 326 595 322 589 313Z" fill="#e59859" stroke="#efbe7d" stroke-width="2"/>
+  <path d="M604 291 610 258 611 218" fill="none" stroke="#e8a062" stroke-width="4"/>
+  <!-- Low volcanic relief on the overriding continental surface. -->
+  <path d="M581 227 612 178 646 222 622 233Z" fill="#b5a077"/>
+  <path d="M612 178 646 222 622 233Z" fill="#82785d"/>
+  <path d="M603 191 612 178 622 192 613 189Z" fill="#ddc8a0"/>
+  <path d="M650 190 692 155 730 184 701 200Z" fill="#78976c"/>
+  <path d="M692 155 730 184 701 200Z" fill="#516f54"/>
+  <g fill="none" stroke="#d6f7ff" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M249 142 367 142"/><path d="M704 112 586 112"/>
+  </g>
+  <path d="M105 305V429H740L850 360" fill="none" stroke="#d5c6a4" stroke-opacity=".3" stroke-width="2"/>
+</svg>

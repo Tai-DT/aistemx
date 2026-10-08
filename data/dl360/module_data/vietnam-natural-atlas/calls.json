@@ -1,0 +1,40 @@
+{
+ "set": [
+  [
+   "Accept",
+   "application/json"
+  ]
+ ],
+ "mE": [
+  [
+   "flat in float v_placed;flat in float v_notUsed;void main() {float alpha=0.5;fragColor=vec4(1.0,0.0,0.0,1.0)*alpha;if (v_placed > 0.5) {fragColor=vec4(0.0,0.0,1.0,0.5)*alpha;}if (v_notUsed > 0.5) {fragColor*=.1;}}",
+   "layout(location=0) in vec2 a_anchor_pos;layout(location=1) in vec2 a_placed;layout(location=2) in vec2 a_box_real;flat out float v_placed;flat out float v_notUsed;void main() {gl_Position=projectTileWithElevation(a_anchor_pos,get_elevation(a_anchor_pos));gl_Position.xy=((a_box_real+0.5)*u_pixel_extrude_scale*2.0-1.0)*vec2(1.0,-1.0)*gl_Position.w;if (gl_Position.z/gl_Position.w < 1.1) {gl_Position.z=0.5;}v_placed=a_placed.x;v_notUsed=a_placed.y;}"
+  ],
+  [
+   "flat in float v_radius;in vec2 v_extrude;flat in float v_collision;void main() {float alpha=0.5;float stroke_radius=0.9;float distance_to_center=length(v_extrude);float distance_to_edge=abs(distance_to_center-v_radius);float opacity_t=smoothstep(-stroke_radius,0.0,-distance_to_edge);vec4 color=mix(vec4(0.0,0.0,1.0,0.5),vec4(1.0,0.0,0.0,1.0),v_collision);fragColor=color*alpha*opacity_t;}",
+   "layout(location=0) in vec2 a_pos;layout(location=1) in float a_radius;layout(location=2) in vec2 a_flags;flat out float v_radius;out vec2 v_extrude;flat out float v_collision;void main() {float radius=a_radius;float collision=a_flags.x;float vertexIdx=a_flags.y;vec2 quadVertexOffset=vec2(mix(-1.0,1.0,float(vertexIdx >=2.0)),mix(-1.0,1.0,float(vertexIdx >=1.0 && vertexIdx <=2.0)));vec2 quadVertexExtent=quadVertexOffset*radius;float padding_factor=1.2;v_radius=radius;v_extrude=quadVertexExtent*padding_factor;v_collision=collision;gl_Position=vec4((a_pos/u_viewport_size*2.0-1.0)*vec2(1.0,-1.0),0.0,1.0)+vec4(quadVertexExtent*padding_factor/u_viewport_size*2.0,0.0,0.0);}"
+  ],
+  [
+   "uniform highp vec4 u_color;uniform sampler2D u_overlay;in vec2 v_uv;void main() {vec4 overlay_color=texture(u_overlay,v_uv);fragColor=mix(u_color,overlay_color,overlay_color.a);}",
+   "layout(location=0) in vec2 a_pos;out vec2 v_uv;uniform float u_overlay_scale;void main() {v_uv=a_pos/8192.0;gl_Position=projectTileWithElevation(a_pos*u_overlay_scale,get_elevation(a_pos));}"
+  ],
+  [
+   "uniform sampler2D u_texture;uniform vec4 u_fog_color;uniform vec4 u_horizon_color;uniform float u_fog_ground_blend;uniform float u_fog_ground_blend_opacity;uniform float u_horizon_fog_blend;uniform bool u_is_globe_mode;in vec2 v_texture_pos;in float v_fog_depth;const float gamma=2.2;vec4 gammaToLinear(vec4 color) {return pow(color,vec4(gamma));}vec4 linearToGamma(vec4 color) {return pow(color,vec4(1.0/gamma));}void main() {vec4 surface_color=texture(u_texture,vec2(v_texture_pos.x,1.0-v_texture_pos.y));if (!u_is_globe_mode && u_fog_ground_blend_opacity > 0.0 && v_fog_depth > u_fog_ground_blend) {vec4 surface_color_linear=gammaToLinear(surface_color);float blend_color=smoothstep(0.0,1.0,max((v_fog_depth-u_horizon_fog_blend)/(1.0-u_horizon_fog_blend),0.0));vec4 fog_horizon_color_linear=mix(gammaToLinear(u_fog_color),gammaToLinear(u_horizon_color),blend_color);float factor_fog=max(v_fog_depth-u_fog_ground_blend,0.0)/(1.0-u_fog_ground_blend);fragColor=linearToGamma(mix(surface_color_linear,fog_horizon_color_linear,pow(factor_fog,2.0)*u_fog_ground_blend_opacity));} else {fragColor=surface_color;}}",
+   "layout(location=0) in vec3 a_pos3d;uniform mat4 u_fog_matrix;uniform float u_ele_delta;out vec2 v_texture_pos;out float v_fog_depth;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;v_texture_pos=a_pos3d.xy/8192.0;gl_Position=projectTileFor3D(a_pos3d.xy,ele-ele_delta);vec4 pos=u_fog_matrix*vec4(a_pos3d.xy,ele,1.0);v_fog_depth=pos.z/pos.w*0.5+0.5;}"
+  ],
+  [
+   "in float v_depth;const highp vec4 bitSh=vec4(256.*256.*256.,256.*256.,256.,1.);const highp vec4 bitMsk=vec4(0.,vec3(1./256.0));highp vec4 pack(highp float value) {highp vec4 comp=fract(value*bitSh);comp-=comp.xxyz*bitMsk;return comp;}void main() {fragColor=pack(v_depth);}",
+   "layout(location=0) in vec3 a_pos3d;uniform float u_ele_delta;out float v_depth;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;gl_Position=projectTileFor3D(a_pos3d.xy,ele-ele_delta);v_depth=gl_Position.z/gl_Position.w;}"
+  ],
+  [
+   "uniform vec4 u_sky_color;uniform vec4 u_horizon_color;uniform vec2 u_horizon;uniform vec2 u_horizon_normal;uniform float u_sky_horizon_blend;uniform float u_sky_blend;uniform vec3 u_globe_position;uniform float u_globe_radius;uniform float u_atmosphere_blend;in vec3 v_view_direction;const float ATMOSPHERE_HEIGHT_TO_GLOBE_RADIUS=100000.0/6371000.0;void main() {float x=gl_FragCoord.x;float y=gl_FragCoord.y;float blend=(y-u_horizon.y)*u_horizon_normal.y+(x-u_horizon.x)*u_horizon_normal.x;float opacity=1.0;if (u_sky_blend > 0.0) {vec3 ray=normalize(v_view_direction);float globe_distance=length(u_globe_position);float angle_to_globe_center=acos(clamp(dot(ray,u_globe_position)/globe_distance,-1.0,1.0));float horizon_angle=asin(min(u_globe_radius/globe_distance,1.0));blend=mix(blend,((angle_to_globe_center-horizon_angle)*u_camera_to_center_distance+1.0)*u_device_pixel_ratio,u_sky_blend);float closest_approach=max(dot(ray,u_globe_position),0.0);float lowest_altitude=sqrt(max(globe_distance*globe_distance-closest_approach*closest_approach,0.0))-u_globe_radius;float atmosphere_height=u_globe_radius*ATMOSPHERE_HEIGHT_TO_GLOBE_RADIUS;float inside_atmosphere=1.0-smoothstep(atmosphere_height,10.0*atmosphere_height,globe_distance-u_globe_radius);float through_atmosphere=1.0-smoothstep(0.0,atmosphere_height,lowest_altitude);opacity=inside_atmosphere*through_atmosphere*(1.0-u_atmosphere_blend);}if (blend > 0.0) {if (blend < u_sky_horizon_blend) {fragColor=mix(u_sky_color,u_horizon_color,pow(1.0-blend/u_sky_horizon_blend,2.0));} else {fragColor=u_sky_color;}}fragColor*=mix(1.0,opacity,u_sky_blend);}",
+   "layout(location=0) in vec2 a_pos;uniform mat4 u_inv_proj_matrix;out vec3 v_view_direction;void main() {v_view_direction=(u_inv_proj_matrix*vec4(a_pos,0.0,1.0)).xyz;gl_Position=vec4(a_pos,1.0,1.0);}"
+  ]
+ ],
+ "add": [
+  [
+   "maplibregl-compact",
+   "maplibregl-compact-show"
+  ]
+ ]
+}

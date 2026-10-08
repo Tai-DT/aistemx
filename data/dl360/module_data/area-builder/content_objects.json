@@ -1,0 +1,1169 @@
+[
+ {
+  "defaultLocale": "vi",
+  "messages": {
+   "vi": {
+    "eyebrow": "Toán · Hình học và đo lường",
+    "title": "Ghép hình: diện tích và chu vi",
+    "description": "Ghép ô vuông đơn vị thành hình trên lưới. Diện tích là số ô vuông phủ kín hình; chu vi là số cạnh ô quanh hình, kể cả quanh lỗ. Chế độ Trò chơi có sáu cấp dựng hình và tìm diện tích.",
+    "modes": {
+     "explore": "Khám phá",
+     "game": "Trò chơi"
+    },
+    "status": {
+     "ready": "Học liệu sẵn sàng",
+     "loading": "Đang khởi tạo học liệu"
+    },
+    "guidance": [
+     {
+      "label": "Điều đang xảy ra",
+      "text": "Mỗi ô vuông trên bảng là một ô vuông đơn vị; hình ghép từ các ô liền cạnh."
+     },
+     {
+      "label": "Hãy quan sát",
+      "text": "Thêm hoặc bớt một ô làm diện tích đổi 1 ô vuông, còn chu vi có thể tăng, giảm hoặc giữ nguyên."
+     },
+     {
+      "label": "Điểm dễ nhầm",
+      "text": "Hai hình cùng diện tích chưa chắc cùng chu vi; khoét lỗ làm chu vi dài thêm."
+     }
+    ],
+    "modelNotes": [
+     "Ô vuông trên màn hình là ô vuông đơn vị quy ước, không phải 1 cm. Diện tích đo bằng \"ô vuông\", chu vi đo bằng \"cạnh ô\" (độ dài một cạnh của ô vuông đơn vị).",
+     "Diện tích là số ô vuông phủ kín hình. Trong trò chơi có nửa ô hình tam giác: hai nửa ô ghép thành một ô vuông.",
+     "Chu vi là tổng số cạnh ô nằm giữa hình và phần không thuộc hình, gồm cả các cạnh quanh lỗ. Vì vậy khoét một lỗ làm diện tích giảm nhưng chu vi tăng.",
+     "Mỗi bảng chỉ giữ một hình liền cạnh: ô mới phải chung cạnh với hình, chỉ chạm góc không tính là nối. Khi bớt ô làm hình tách ra, phần có nhiều ô hơn được giữ, phần còn lại trở về hộp.",
+     "Lỗ là nhóm ô trống bị hình bao kín. Ô trống chỉ chạm phần ngoài ở một góc vẫn là lỗ; rãnh hở ra ngoài không phải lỗ.",
+     "Độ dài cạnh chỉ ghi trên đoạn thẳng dài nguyên ô; nhãn chồng nhau thì tạm ẩn, phóng to để thấy đủ. Cạnh chéo của nửa ô không ghi độ dài.",
+     "Đề trò chơi sinh ngẫu nhiên có kiểm tra và luôn có lời giải trong bảng 12 × 8; lời giải mẫu chỉ là một trong nhiều cách. Tỉ lệ màu so sánh bằng phân số tối giản (6/16 = 3/8).",
+     "Điểm và đồng hồ chỉ để tự luyện tập. Tải lại trang thì lượt chơi dở quay về màn chọn cấp; điểm cao nhất và thời gian tốt nhất của mỗi cấp được giữ."
+    ],
+    "units": {
+     "area": {
+      "one": "{count} ô vuông",
+      "other": "{count} ô vuông"
+     },
+     "perimeter": {
+      "one": "{count} cạnh ô",
+      "other": "{count} cạnh ô"
+     }
+    },
+    "boards": {
+     "single": "Bảng",
+     "a": "Bảng A",
+     "b": "Bảng B"
+    },
+    "cellState": {
+     "empty": "ô trống",
+     "filled": "có ô vuông",
+     "piece": "có mảnh {piece}"
+    },
+    "explore": {
+     "layoutTitle": "Bảng",
+     "layoutOne": "Một bảng",
+     "layoutTwo": "Hai bảng",
+     "layoutHint": "Hai bảng để ghép hai hình rồi so sánh.",
+     "displayTitle": "Hiển thị",
+     "showGrid": "Lưới",
+     "showMeasure": "Số đo",
+     "showDimensions": "Độ dài cạnh",
+     "showPerimeter": "Tô cạnh tính vào chu vi",
+     "howTitle": "Cách ghép",
+     "howText": "Kéo ô vuông từ hộp vào bảng hoặc chạm vào lưới. Ô mới phải chung cạnh với hình; chạm lại một ô để bớt ô đó.",
+     "keyboardHint": "Bàn phím: Tab tới bảng, mũi tên di chuyển con trỏ, Enter hoặc Space thêm/bớt ô, Delete bớt ô.",
+     "emptyHint": "Kéo ô vuông từ hộp vào bảng hoặc chạm vào lưới",
+     "readoutArea": "Diện tích: {value}",
+     "readoutPerimeter": "Chu vi: {value}",
+     "readoutAreaLabel": "Diện tích:",
+     "readoutPerimeterLabel": "Chu vi:",
+     "readoutUnknown": "--",
+     "boxLabel": "Hộp ô vuông của {board}. Kéo ô vào bảng, hoặc nhấn Enter để thêm một ô gần con trỏ.",
+     "boxCaption": "Ô vuông",
+     "eraserLabel": "Xóa hết ô trên {board}",
+     "boardLabel": "{board} {cols} × {rows} ô. Con trỏ ở hàng {row}, cột {col}: {state}. Dùng mũi tên để di chuyển, Enter để thêm hoặc bớt ô.",
+     "insightsTitle": "Số đo và nhận xét",
+     "empty": "Chưa có ô nào. Kéo ô vuông từ hộp vào bảng.",
+     "several": "Bảng có hơn một hình nên chưa đo được.",
+     "measureHidden": "Số đo đang ẩn. Bật Số đo để xem diện tích và chu vi.",
+     "areaLine": "Diện tích: {area}",
+     "perimeterLine": "Chu vi: {perimeter}",
+     "breakdown": "= {outer} quanh viền ngoài + {hole} quanh lỗ",
+     "holes": {
+      "one": "Hình có {count} lỗ.",
+      "other": "Hình có {count} lỗ."
+     },
+     "compareSameBoth": "Hai hình có cùng diện tích và cùng chu vi.",
+     "compareSameArea": "Hai hình cùng diện tích ({area}) nhưng chu vi khác nhau ({a} và {b}).",
+     "compareSamePerimeter": "Hai hình cùng chu vi ({perimeter}) nhưng diện tích khác nhau ({a} và {b}).",
+     "compareDifferent": "Hai hình khác nhau cả diện tích và chu vi.",
+     "ruleArea": "Diện tích = số ô vuông phủ kín hình.",
+     "rulePerimeter": "Chu vi = số cạnh ô quanh hình, kể cả quanh lỗ.",
+     "perimeterLegend": "Cạnh tô hồng là các cạnh được tính vào chu vi; mỗi đoạn giữa hai chấm là một cạnh ô."
+    },
+    "announce": {
+     "added": "Đã thêm ô ở hàng {row}, cột {col}.",
+     "removed": "Đã bớt ô ở hàng {row}, cột {col}.",
+     "moved": "Đã dời ô tới hàng {row}, cột {col}.",
+     "returned": {
+      "one": "{count} ô bị tách khỏi hình đã về hộp.",
+      "other": "{count} ô bị tách khỏi hình đã về hộp."
+     },
+     "erased": "Đã xóa hết ô trên {board}.",
+     "cursor": "Hàng {row}, cột {col}: {state}.",
+     "measure": "Diện tích {area}, chu vi {perimeter}.",
+     "rejected": {
+      "not-touching": "Mảnh mới phải chung cạnh với hình (chỉ chạm góc chưa được).",
+      "occupied": "Ô này đã có ô vuông.",
+      "outside": "Hãy đặt trong bảng.",
+      "full": "Bảng đã đầy.",
+      "missed": "Ô đã về hộp: hãy thả trên bảng, chung cạnh với hình.",
+      "overlap": "Chỗ này đã có mảnh khác.",
+      "limit": "Đã dùng hết mảnh của đề này.",
+      "locked": "Thử thách đã xong, bấm Tiếp để sang thử thách mới."
+     }
+    },
+    "scene": {
+     "svgTitle": "Bảng ô vuông để ghép hình",
+     "summaryOne": "Một bảng 19 × 8 ô.",
+     "summaryTwo": "Hai bảng 9 × 8 ô.",
+     "summaryBoard": "{board}: diện tích {area}, chu vi {perimeter}.",
+     "summaryEmpty": "{board}: chưa có ô nào.",
+     "summarySeveral": "{board}: có hơn một hình.",
+     "gameSelect": "Màn chọn cấp của trò chơi.",
+     "gameBuild": "Thử thách {index} trên 6: dựng hình. {goal}",
+     "gameFind": "Thử thách {index} trên 6: tìm diện tích hình tô tím trên bảng.",
+     "gameResults": "Kết quả cấp {level}: {score} trên 12 điểm."
+    },
+    "game": {
+     "selectTitle": "Chọn cấp",
+     "level": "Cấp {level}",
+     "levelNames": {
+      "1": "Dựng và tìm diện tích",
+      "2": "Diện tích và chu vi",
+      "3": "Hình có lỗ, nửa ô",
+      "4": "Ít dụng cụ đo",
+      "5": "Tỉ lệ màu",
+      "6": "Tỉ lệ màu và chu vi"
+     },
+     "levelCard": "Cấp {level}: {name}. Điểm cao nhất {score} trên 12, {stars} sao.",
+     "bestScore": "{score}/12 điểm",
+     "bestTime": "Tốt nhất {time}",
+     "stars": "{stars} sao",
+     "timer": "Đồng hồ",
+     "rulesTitle": "Cách chơi",
+     "rules": [
+      "Mỗi cấp có 6 thử thách, mỗi thử thách được thử 2 lần.",
+      "Đúng ở lần 1 được 2 điểm, ở lần 2 được 1 điểm; tối đa 12 điểm mỗi cấp.",
+      "Sai hai lần thì xem lời giải mẫu rồi sang thử thách tiếp."
+     ],
+     "scoreboardTitle": "Lượt chơi",
+     "challengeOf": "Thử thách {index}/6",
+     "points": "Điểm: {score}",
+     "time": "Thời gian: {time}",
+     "chooseLevel": "Chọn cấp khác",
+     "toolsTitle": "Công cụ",
+     "showGrid": "Lưới trên hình",
+     "showDimensions": "Độ dài cạnh",
+     "noGrid": "Đề này không cho bật lưới.",
+     "keyboardHint": "Bàn phím: chọn mảnh, Tab tới bảng, mũi tên di chuyển con trỏ, Enter đặt hoặc bớt mảnh.",
+     "buildTitle": "Dựng hình",
+     "findTitle": "Tìm diện tích",
+     "goalArea": "Diện tích {area}",
+     "goalPerimeter": "Chu vi {perimeter}",
+     "goalFraction": "{fraction} số ô màu {color}",
+     "findGoal": "Hình tô tím có diện tích bao nhiêu ô vuông?",
+     "colors": [
+      "xanh",
+      "vàng"
+     ],
+     "targetColor": "tím",
+     "pieces": {
+      "square": "1 ô vuông",
+      "wide": "2 ô nằm ngang",
+      "tall": "2 ô đứng dọc",
+      "big": "4 ô (2 × 2)",
+      "tri-tl": "nửa ô, góc vuông trên trái",
+      "tri-tr": "nửa ô, góc vuông trên phải",
+      "tri-br": "nửa ô, góc vuông dưới phải",
+      "tri-bl": "nửa ô, góc vuông dưới trái"
+     },
+     "pieceWithColor": "Mảnh {piece} màu {color}",
+     "remaining": "còn {count}",
+     "selected": "đang chọn",
+     "paletteLabel": "Bảng mảnh. Kéo mảnh vào bảng, hoặc chọn mảnh rồi chạm vào lưới.",
+     "eraser": "Xóa hết mảnh trên bảng",
+     "boardLabel": "Bảng 12 × 8 ô. Con trỏ ở hàng {row}, cột {col}: {state}. Dùng mũi tên để di chuyển, Enter để đặt {piece} hoặc bớt mảnh.",
+     "answerLabel": "Diện tích",
+     "answerUnit": "ô vuông",
+     "check": "Kiểm tra",
+     "tryAgain": "Thử lại",
+     "next": "Tiếp",
+     "showBuildSolution": "Xem một lời giải",
+     "showFindSolution": "Xem lời giải",
+     "playAgain": "Chơi lại cấp này",
+     "correct": "Đúng rồi! +{points} điểm",
+     "correctNoPoints": "Đúng rồi! (không tính điểm)",
+     "wrongFirst": "Chưa đúng. Hãy thử lại.",
+     "wrongFinalBuild": "Chưa đúng. Em vẫn sửa được hình, hoặc xem một lời giải.",
+     "wrongFinalFind": "Chưa đúng sau hai lần thử.",
+     "solutionBuild": "Đây là một lời giải.",
+     "solutionFind": "Diện tích là {area}.",
+     "invalidAnswer": "Hãy nhập một số tự nhiên, ví dụ 24.",
+     "hintBuild": "Ghép mảnh trên bảng cho đúng mục tiêu rồi bấm Kiểm tra. Mảnh mới phải chung cạnh với hình.",
+     "hintFind": "Đặt mảnh lên hình để đo (mảnh đặt ở đâu cũng được), rồi nhập diện tích.",
+     "hintNoPieces": "Đề này không có mảnh: bật Độ dài cạnh để tính diện tích.",
+     "hintLimited": "Chỉ có {count} ô vuông 1 × 1 để đo; hãy dời ô và đếm theo hàng, cột.",
+     "resultTitle": "Kết quả",
+     "builtTitle": "Bạn đã dựng",
+     "enteredTitle": "Bạn đã nhập",
+     "builtArea": "Diện tích: {area}",
+     "builtPerimeter": "Chu vi: {perimeter}",
+     "builtFraction": "Màu {color}: {count}/{total} số ô",
+     "builtFractionReduced": "Màu {color}: {count}/{total} = {fraction} số ô",
+     "enteredValue": "{value}",
+     "needArea": "Cần diện tích {area}.",
+     "needPerimeter": "Cần chu vi {perimeter}.",
+     "needFraction": "Cần {fraction} số ô màu {color}.",
+     "findWrongHint": "Đếm số ô vuông phủ kín hình; hai nửa ô ghép thành một ô vuông.",
+     "solutionLabel": "Một lời giải",
+     "levelDone": "Hoàn thành cấp {level}!",
+     "levelScore": "{score}/12 điểm",
+     "newBest": "Kỷ lục mới!",
+     "challengeResult": "Thử thách {index}: {points} điểm",
+     "announceStart": "Bắt đầu cấp {level}. {goal}",
+     "announceNext": "Thử thách {index} trên 6. {goal}"
+    }
+   },
+   "en": {
+    "eyebrow": "Mathematics · Geometry and measurement",
+    "title": "Area builder: area and perimeter",
+    "description": "Build shapes from unit squares on a grid. Area is the number of unit squares that cover the shape; perimeter is the number of unit edges around it, including around holes. The Game mode has six levels of building shapes and finding areas.",
+    "modes": {
+     "explore": "Explore",
+     "game": "Game"
+    },
+    "status": {
+     "ready": "Resource ready",
+     "loading": "Loading resource"
+    },
+    "guidance": [
+     {
+      "label": "What is happening",
+      "text": "Each square on the board is a unit square; a shape is made of squares that share edges."
+     },
+     {
+      "label": "Watch for",
+      "text": "Adding or removing one square changes the area by 1 square unit, while the perimeter can grow, shrink or stay the same."
+     },
+     {
+      "label": "Common mix-up",
+      "text": "Two shapes with the same area need not have the same perimeter; cutting a hole makes the perimeter longer."
+     }
+    ],
+    "modelNotes": [
+     "A square on screen is an agreed unit square, not 1 cm. Area is measured in \"square units\" and perimeter in \"units\" (the length of one side of a unit square).",
+     "Area is the number of unit squares that cover the shape. The game also has half squares (triangles): two halves make one unit square.",
+     "Perimeter is the number of unit edges between the shape and everything that is not the shape, including the edges around holes. So cutting a hole lowers the area but raises the perimeter.",
+     "Each board keeps one edge-connected shape: a new square must share an edge with the shape; touching only at a corner does not connect. When removing a square splits the shape, the part with more squares stays and the rest goes back to the box.",
+     "A hole is a group of empty squares closed in by the shape. An empty square that meets the outside only at a corner is still a hole; a notch open to the outside is not.",
+     "Side lengths are written only on straight runs of whole units; overlapping labels are hidden for now, zoom in to see them all. Slanted edges of half squares have no length label.",
+     "Game challenges are generated at random, checked, and always solvable on the 12 × 8 board; the sample solution is only one of many. Colour fractions are compared in lowest terms (6/16 = 3/8).",
+     "Points and the timer are for self-practice. Reloading the page returns an unfinished level to the level screen; the best score and best time of each level are kept."
+    ],
+    "units": {
+     "area": {
+      "one": "{count} square unit",
+      "other": "{count} square units"
+     },
+     "perimeter": {
+      "one": "{count} unit",
+      "other": "{count} units"
+     }
+    },
+    "boards": {
+     "single": "Board",
+     "a": "Board A",
+     "b": "Board B"
+    },
+    "cellState": {
+     "empty": "empty",
+     "filled": "filled",
+     "piece": "covered by {piece}"
+    },
+    "explore": {
+     "layoutTitle": "Boards",
+     "layoutOne": "One board",
+     "layoutTwo": "Two boards",
+     "layoutHint": "Use two boards to build two shapes and compare them.",
+     "displayTitle": "Show",
+     "showGrid": "Grid",
+     "showMeasure": "Measurements",
+     "showDimensions": "Side lengths",
+     "showPerimeter": "Highlight perimeter edges",
+     "howTitle": "How to build",
+     "howText": "Drag squares from the box onto the board or tap the grid. A new square must share an edge with the shape; tap a square again to remove it.",
+     "keyboardHint": "Keyboard: Tab to the board, arrows move the cursor, Enter or Space adds/removes a square, Delete removes.",
+     "emptyHint": "Drag a square from the box onto the board, or tap the grid",
+     "readoutArea": "Area: {value}",
+     "readoutPerimeter": "Perimeter: {value}",
+     "readoutAreaLabel": "Area:",
+     "readoutPerimeterLabel": "Perimeter:",
+     "readoutUnknown": "--",
+     "boxLabel": "Square box of {board}. Drag a square onto the board, or press Enter to add one near the cursor.",
+     "boxCaption": "Squares",
+     "eraserLabel": "Clear all squares on {board}",
+     "boardLabel": "{board} {cols} × {rows} squares. Cursor at row {row}, column {col}: {state}. Use the arrows to move, Enter to add or remove a square.",
+     "insightsTitle": "Measurements and notes",
+     "empty": "No squares yet. Drag unit squares from the box onto the board.",
+     "several": "The board has more than one shape, so it cannot be measured.",
+     "measureHidden": "Measurements are hidden. Turn on Measurements to see area and perimeter.",
+     "areaLine": "Area: {area}",
+     "perimeterLine": "Perimeter: {perimeter}",
+     "breakdown": "= {outer} around the outside + {hole} around holes",
+     "holes": {
+      "one": "The shape has {count} hole.",
+      "other": "The shape has {count} holes."
+     },
+     "compareSameBoth": "The two shapes have the same area and the same perimeter.",
+     "compareSameArea": "The two shapes have the same area ({area}) but different perimeters ({a} and {b}).",
+     "compareSamePerimeter": "The two shapes have the same perimeter ({perimeter}) but different areas ({a} and {b}).",
+     "compareDifferent": "The two shapes differ in both area and perimeter.",
+     "ruleArea": "Area = number of unit squares covering the shape.",
+     "rulePerimeter": "Perimeter = number of unit edges around the shape, including around holes.",
+     "perimeterLegend": "Pink edges are the edges counted in the perimeter; each piece between two dots is one unit."
+    },
+    "announce": {
+     "added": "Added a square at row {row}, column {col}.",
+     "removed": "Removed the square at row {row}, column {col}.",
+     "moved": "Moved the square to row {row}, column {col}.",
+     "returned": {
+      "one": "{count} square split off the shape and went back to the box.",
+      "other": "{count} squares split off the shape and went back to the box."
+     },
+     "erased": "Cleared all squares on {board}.",
+     "cursor": "Row {row}, column {col}: {state}.",
+     "measure": "Area {area}, perimeter {perimeter}.",
+     "rejected": {
+      "not-touching": "A new piece must share an edge with the shape (a corner is not enough).",
+      "occupied": "This square is already filled.",
+      "outside": "Place it inside the board.",
+      "full": "The board is full.",
+      "missed": "The square went back to the box: drop it on the board, sharing an edge with the shape.",
+      "overlap": "Another piece is already there.",
+      "limit": "All pieces for this challenge are in use.",
+      "locked": "This challenge is done; press Next for a new one."
+     }
+    },
+    "scene": {
+     "svgTitle": "Square grid board for building shapes",
+     "summaryOne": "One 19 × 8 board.",
+     "summaryTwo": "Two 9 × 8 boards.",
+     "summaryBoard": "{board}: area {area}, perimeter {perimeter}.",
+     "summaryEmpty": "{board}: no squares yet.",
+     "summarySeveral": "{board}: more than one shape.",
+     "gameSelect": "Game level screen.",
+     "gameBuild": "Challenge {index} of 6: build a shape. {goal}",
+     "gameFind": "Challenge {index} of 6: find the area of the purple shape on the board.",
+     "gameResults": "Level {level} result: {score} of 12 points."
+    },
+    "game": {
+     "selectTitle": "Choose a level",
+     "level": "Level {level}",
+     "levelNames": {
+      "1": "Build and find area",
+      "2": "Area and perimeter",
+      "3": "Holes and half squares",
+      "4": "Few measuring tools",
+      "5": "Colour fractions",
+      "6": "Colour fractions and perimeter"
+     },
+     "levelCard": "Level {level}: {name}. Best score {score} of 12, {stars} stars.",
+     "bestScore": "{score}/12 points",
+     "bestTime": "Best {time}",
+     "stars": "{stars} stars",
+     "timer": "Timer",
+     "rulesTitle": "How to play",
+     "rules": [
+      "Each level has 6 challenges, with 2 tries for each.",
+      "Correct on the first try earns 2 points, on the second try 1 point; at most 12 points per level.",
+      "After two wrong tries, look at a sample solution and move on."
+     ],
+     "scoreboardTitle": "This round",
+     "challengeOf": "Challenge {index}/6",
+     "points": "Points: {score}",
+     "time": "Time: {time}",
+     "chooseLevel": "Choose another level",
+     "toolsTitle": "Tools",
+     "showGrid": "Grid on the shape",
+     "showDimensions": "Side lengths",
+     "noGrid": "This challenge does not allow the grid.",
+     "keyboardHint": "Keyboard: choose a piece, Tab to the board, arrows move the cursor, Enter places or removes a piece.",
+     "buildTitle": "Build it",
+     "findTitle": "Find the area",
+     "goalArea": "Area {area}",
+     "goalPerimeter": "Perimeter {perimeter}",
+     "goalFraction": "{fraction} of the squares {color}",
+     "findGoal": "What is the area of the purple shape in square units?",
+     "colors": [
+      "blue",
+      "yellow"
+     ],
+     "targetColor": "purple",
+     "pieces": {
+      "square": "1 square",
+      "wide": "2 squares across",
+      "tall": "2 squares down",
+      "big": "4 squares (2 × 2)",
+      "tri-tl": "half square, right angle top left",
+      "tri-tr": "half square, right angle top right",
+      "tri-br": "half square, right angle bottom right",
+      "tri-bl": "half square, right angle bottom left"
+     },
+     "pieceWithColor": "{color} piece of {piece}",
+     "remaining": "{count} left",
+     "selected": "selected",
+     "paletteLabel": "Pieces. Drag a piece onto the board, or select a piece and tap the grid.",
+     "eraser": "Clear all pieces on the board",
+     "boardLabel": "Board 12 × 8 squares. Cursor at row {row}, column {col}: {state}. Use the arrows to move, Enter to place {piece} or remove a piece.",
+     "answerLabel": "Area",
+     "answerUnit": "square units",
+     "check": "Check",
+     "tryAgain": "Try again",
+     "next": "Next",
+     "showBuildSolution": "Show a solution",
+     "showFindSolution": "Show the answer",
+     "playAgain": "Play this level again",
+     "correct": "Correct! +{points} points",
+     "correctNoPoints": "Correct! (no points)",
+     "wrongFirst": "Not yet. Try again.",
+     "wrongFinalBuild": "Not yet. You can still fix the shape, or look at a solution.",
+     "wrongFinalFind": "Not correct after two tries.",
+     "solutionBuild": "Here is one solution.",
+     "solutionFind": "The area is {area}.",
+     "invalidAnswer": "Enter a whole number, for example 24.",
+     "hintBuild": "Put pieces on the board to match the goal, then press Check. A new piece must share an edge with the shape.",
+     "hintFind": "Place pieces on the shape to measure it (pieces can go anywhere), then enter the area.",
+     "hintNoPieces": "No pieces in this challenge: turn on Side lengths to work out the area.",
+     "hintLimited": "Only {count} unit squares to measure with; move them and count by rows and columns.",
+     "resultTitle": "Result",
+     "builtTitle": "You built",
+     "enteredTitle": "You entered",
+     "builtArea": "Area: {area}",
+     "builtPerimeter": "Perimeter: {perimeter}",
+     "builtFraction": "{color}: {count}/{total} of the squares",
+     "builtFractionReduced": "{color}: {count}/{total} = {fraction} of the squares",
+     "enteredValue": "{value}",
+     "needArea": "The goal is an area of {area}.",
+     "needPerimeter": "The goal is a perimeter of {perimeter}.",
+     "needFraction": "The goal is {fraction} of the squares {color}.",
+     "findWrongHint": "Count the unit squares that cover the shape; two half squares make one unit square.",
+     "solutionLabel": "One solution",
+     "levelDone": "Level {level} complete!",
+     "levelScore": "{score}/12 points",
+     "newBest": "New best!",
+     "challengeResult": "Challenge {index}: {points} points",
+     "announceStart": "Level {level} started. {goal}",
+     "announceNext": "Challenge {index} of 6. {goal}"
+    }
+   }
+  }
+ },
+ {
+  "vi": {
+   "eyebrow": "Toán · Hình học và đo lường",
+   "title": "Ghép hình: diện tích và chu vi",
+   "description": "Ghép ô vuông đơn vị thành hình trên lưới. Diện tích là số ô vuông phủ kín hình; chu vi là số cạnh ô quanh hình, kể cả quanh lỗ. Chế độ Trò chơi có sáu cấp dựng hình và tìm diện tích.",
+   "modes": {
+    "explore": "Khám phá",
+    "game": "Trò chơi"
+   },
+   "status": {
+    "ready": "Học liệu sẵn sàng",
+    "loading": "Đang khởi tạo học liệu"
+   },
+   "guidance": [
+    {
+     "label": "Điều đang xảy ra",
+     "text": "Mỗi ô vuông trên bảng là một ô vuông đơn vị; hình ghép từ các ô liền cạnh."
+    },
+    {
+     "label": "Hãy quan sát",
+     "text": "Thêm hoặc bớt một ô làm diện tích đổi 1 ô vuông, còn chu vi có thể tăng, giảm hoặc giữ nguyên."
+    },
+    {
+     "label": "Điểm dễ nhầm",
+     "text": "Hai hình cùng diện tích chưa chắc cùng chu vi; khoét lỗ làm chu vi dài thêm."
+    }
+   ],
+   "modelNotes": [
+    "Ô vuông trên màn hình là ô vuông đơn vị quy ước, không phải 1 cm. Diện tích đo bằng \"ô vuông\", chu vi đo bằng \"cạnh ô\" (độ dài một cạnh của ô vuông đơn vị).",
+    "Diện tích là số ô vuông phủ kín hình. Trong trò chơi có nửa ô hình tam giác: hai nửa ô ghép thành một ô vuông.",
+    "Chu vi là tổng số cạnh ô nằm giữa hình và phần không thuộc hình, gồm cả các cạnh quanh lỗ. Vì vậy khoét một lỗ làm diện tích giảm nhưng chu vi tăng.",
+    "Mỗi bảng chỉ giữ một hình liền cạnh: ô mới phải chung cạnh với hình, chỉ chạm góc không tính là nối. Khi bớt ô làm hình tách ra, phần có nhiều ô hơn được giữ, phần còn lại trở về hộp.",
+    "Lỗ là nhóm ô trống bị hình bao kín. Ô trống chỉ chạm phần ngoài ở một góc vẫn là lỗ; rãnh hở ra ngoài không phải lỗ.",
+    "Độ dài cạnh chỉ ghi trên đoạn thẳng dài nguyên ô; nhãn chồng nhau thì tạm ẩn, phóng to để thấy đủ. Cạnh chéo của nửa ô không ghi độ dài.",
+    "Đề trò chơi sinh ngẫu nhiên có kiểm tra và luôn có lời giải trong bảng 12 × 8; lời giải mẫu chỉ là một trong nhiều cách. Tỉ lệ màu so sánh bằng phân số tối giản (6/16 = 3/8).",
+    "Điểm và đồng hồ chỉ để tự luyện tập. Tải lại trang thì lượt chơi dở quay về màn chọn cấp; điểm cao nhất và thời gian tốt nhất của mỗi cấp được giữ."
+   ],
+   "units": {
+    "area": {
+     "one": "{count} ô vuông",
+     "other": "{count} ô vuông"
+    },
+    "perimeter": {
+     "one": "{count} cạnh ô",
+     "other": "{count} cạnh ô"
+    }
+   },
+   "boards": {
+    "single": "Bảng",
+    "a": "Bảng A",
+    "b": "Bảng B"
+   },
+   "cellState": {
+    "empty": "ô trống",
+    "filled": "có ô vuông",
+    "piece": "có mảnh {piece}"
+   },
+   "explore": {
+    "layoutTitle": "Bảng",
+    "layoutOne": "Một bảng",
+    "layoutTwo": "Hai bảng",
+    "layoutHint": "Hai bảng để ghép hai hình rồi so sánh.",
+    "displayTitle": "Hiển thị",
+    "showGrid": "Lưới",
+    "showMeasure": "Số đo",
+    "showDimensions": "Độ dài cạnh",
+    "showPerimeter": "Tô cạnh tính vào chu vi",
+    "howTitle": "Cách ghép",
+    "howText": "Kéo ô vuông từ hộp vào bảng hoặc chạm vào lưới. Ô mới phải chung cạnh với hình; chạm lại một ô để bớt ô đó.",
+    "keyboardHint": "Bàn phím: Tab tới bảng, mũi tên di chuyển con trỏ, Enter hoặc Space thêm/bớt ô, Delete bớt ô.",
+    "emptyHint": "Kéo ô vuông từ hộp vào bảng hoặc chạm vào lưới",
+    "readoutArea": "Diện tích: {value}",
+    "readoutPerimeter": "Chu vi: {value}",
+    "readoutAreaLabel": "Diện tích:",
+    "readoutPerimeterLabel": "Chu vi:",
+    "readoutUnknown": "--",
+    "boxLabel": "Hộp ô vuông của {board}. Kéo ô vào bảng, hoặc nhấn Enter để thêm một ô gần con trỏ.",
+    "boxCaption": "Ô vuông",
+    "eraserLabel": "Xóa hết ô trên {board}",
+    "boardLabel": "{board} {cols} × {rows} ô. Con trỏ ở hàng {row}, cột {col}: {state}. Dùng mũi tên để di chuyển, Enter để thêm hoặc bớt ô.",
+    "insightsTitle": "Số đo và nhận xét",
+    "empty": "Chưa có ô nào. Kéo ô vuông từ hộp vào bảng.",
+    "several": "Bảng có hơn một hình nên chưa đo được.",
+    "measureHidden": "Số đo đang ẩn. Bật Số đo để xem diện tích và chu vi.",
+    "areaLine": "Diện tích: {area}",
+    "perimeterLine": "Chu vi: {perimeter}",
+    "breakdown": "= {outer} quanh viền ngoài + {hole} quanh lỗ",
+    "holes": {
+     "one": "Hình có {count} lỗ.",
+     "other": "Hình có {count} lỗ."
+    },
+    "compareSameBoth": "Hai hình có cùng diện tích và cùng chu vi.",
+    "compareSameArea": "Hai hình cùng diện tích ({area}) nhưng chu vi khác nhau ({a} và {b}).",
+    "compareSamePerimeter": "Hai hình cùng chu vi ({perimeter}) nhưng diện tích khác nhau ({a} và {b}).",
+    "compareDifferent": "Hai hình khác nhau cả diện tích và chu vi.",
+    "ruleArea": "Diện tích = số ô vuông phủ kín hình.",
+    "rulePerimeter": "Chu vi = số cạnh ô quanh hình, kể cả quanh lỗ.",
+    "perimeterLegend": "Cạnh tô hồng là các cạnh được tính vào chu vi; mỗi đoạn giữa hai chấm là một cạnh ô."
+   },
+   "announce": {
+    "added": "Đã thêm ô ở hàng {row}, cột {col}.",
+    "removed": "Đã bớt ô ở hàng {row}, cột {col}.",
+    "moved": "Đã dời ô tới hàng {row}, cột {col}.",
+    "returned": {
+     "one": "{count} ô bị tách khỏi hình đã về hộp.",
+     "other": "{count} ô bị tách khỏi hình đã về hộp."
+    },
+    "erased": "Đã xóa hết ô trên {board}.",
+    "cursor": "Hàng {row}, cột {col}: {state}.",
+    "measure": "Diện tích {area}, chu vi {perimeter}.",
+    "rejected": {
+     "not-touching": "Mảnh mới phải chung cạnh với hình (chỉ chạm góc chưa được).",
+     "occupied": "Ô này đã có ô vuông.",
+     "outside": "Hãy đặt trong bảng.",
+     "full": "Bảng đã đầy.",
+     "missed": "Ô đã về hộp: hãy thả trên bảng, chung cạnh với hình.",
+     "overlap": "Chỗ này đã có mảnh khác.",
+     "limit": "Đã dùng hết mảnh của đề này.",
+     "locked": "Thử thách đã xong, bấm Tiếp để sang thử thách mới."
+    }
+   },
+   "scene": {
+    "svgTitle": "Bảng ô vuông để ghép hình",
+    "summaryOne": "Một bảng 19 × 8 ô.",
+    "summaryTwo": "Hai bảng 9 × 8 ô.",
+    "summaryBoard": "{board}: diện tích {area}, chu vi {perimeter}.",
+    "summaryEmpty": "{board}: chưa có ô nào.",
+    "summarySeveral": "{board}: có hơn một hình.",
+    "gameSelect": "Màn chọn cấp của trò chơi.",
+    "gameBuild": "Thử thách {index} trên 6: dựng hình. {goal}",
+    "gameFind": "Thử thách {index} trên 6: tìm diện tích hình tô tím trên bảng.",
+    "gameResults": "Kết quả cấp {level}: {score} trên 12 điểm."
+   },
+   "game": {
+    "selectTitle": "Chọn cấp",
+    "level": "Cấp {level}",
+    "levelNames": {
+     "1": "Dựng và tìm diện tích",
+     "2": "Diện tích và chu vi",
+     "3": "Hình có lỗ, nửa ô",
+     "4": "Ít dụng cụ đo",
+     "5": "Tỉ lệ màu",
+     "6": "Tỉ lệ màu và chu vi"
+    },
+    "levelCard": "Cấp {level}: {name}. Điểm cao nhất {score} trên 12, {stars} sao.",
+    "bestScore": "{score}/12 điểm",
+    "bestTime": "Tốt nhất {time}",
+    "stars": "{stars} sao",
+    "timer": "Đồng hồ",
+    "rulesTitle": "Cách chơi",
+    "rules": [
+     "Mỗi cấp có 6 thử thách, mỗi thử thách được thử 2 lần.",
+     "Đúng ở lần 1 được 2 điểm, ở lần 2 được 1 điểm; tối đa 12 điểm mỗi cấp.",
+     "Sai hai lần thì xem lời giải mẫu rồi sang thử thách tiếp."
+    ],
+    "scoreboardTitle": "Lượt chơi",
+    "challengeOf": "Thử thách {index}/6",
+    "points": "Điểm: {score}",
+    "time": "Thời gian: {time}",
+    "chooseLevel": "Chọn cấp khác",
+    "toolsTitle": "Công cụ",
+    "showGrid": "Lưới trên hình",
+    "showDimensions": "Độ dài cạnh",
+    "noGrid": "Đề này không cho bật lưới.",
+    "keyboardHint": "Bàn phím: chọn mảnh, Tab tới bảng, mũi tên di chuyển con trỏ, Enter đặt hoặc bớt mảnh.",
+    "buildTitle": "Dựng hình",
+    "findTitle": "Tìm diện tích",
+    "goalArea": "Diện tích {area}",
+    "goalPerimeter": "Chu vi {perimeter}",
+    "goalFraction": "{fraction} số ô màu {color}",
+    "findGoal": "Hình tô tím có diện tích bao nhiêu ô vuông?",
+    "colors": [
+     "xanh",
+     "vàng"
+    ],
+    "targetColor": "tím",
+    "pieces": {
+     "square": "1 ô vuông",
+     "wide": "2 ô nằm ngang",
+     "tall": "2 ô đứng dọc",
+     "big": "4 ô (2 × 2)",
+     "tri-tl": "nửa ô, góc vuông trên trái",
+     "tri-tr": "nửa ô, góc vuông trên phải",
+     "tri-br": "nửa ô, góc vuông dưới phải",
+     "tri-bl": "nửa ô, góc vuông dưới trái"
+    },
+    "pieceWithColor": "Mảnh {piece} màu {color}",
+    "remaining": "còn {count}",
+    "selected": "đang chọn",
+    "paletteLabel": "Bảng mảnh. Kéo mảnh vào bảng, hoặc chọn mảnh rồi chạm vào lưới.",
+    "eraser": "Xóa hết mảnh trên bảng",
+    "boardLabel": "Bảng 12 × 8 ô. Con trỏ ở hàng {row}, cột {col}: {state}. Dùng mũi tên để di chuyển, Enter để đặt {piece} hoặc bớt mảnh.",
+    "answerLabel": "Diện tích",
+    "answerUnit": "ô vuông",
+    "check": "Kiểm tra",
+    "tryAgain": "Thử lại",
+    "next": "Tiếp",
+    "showBuildSolution": "Xem một lời giải",
+    "showFindSolution": "Xem lời giải",
+    "playAgain": "Chơi lại cấp này",
+    "correct": "Đúng rồi! +{points} điểm",
+    "correctNoPoints": "Đúng rồi! (không tính điểm)",
+    "wrongFirst": "Chưa đúng. Hãy thử lại.",
+    "wrongFinalBuild": "Chưa đúng. Em vẫn sửa được hình, hoặc xem một lời giải.",
+    "wrongFinalFind": "Chưa đúng sau hai lần thử.",
+    "solutionBuild": "Đây là một lời giải.",
+    "solutionFind": "Diện tích là {area}.",
+    "invalidAnswer": "Hãy nhập một số tự nhiên, ví dụ 24.",
+    "hintBuild": "Ghép mảnh trên bảng cho đúng mục tiêu rồi bấm Kiểm tra. Mảnh mới phải chung cạnh với hình.",
+    "hintFind": "Đặt mảnh lên hình để đo (mảnh đặt ở đâu cũng được), rồi nhập diện tích.",
+    "hintNoPieces": "Đề này không có mảnh: bật Độ dài cạnh để tính diện tích.",
+    "hintLimited": "Chỉ có {count} ô vuông 1 × 1 để đo; hãy dời ô và đếm theo hàng, cột.",
+    "resultTitle": "Kết quả",
+    "builtTitle": "Bạn đã dựng",
+    "enteredTitle": "Bạn đã nhập",
+    "builtArea": "Diện tích: {area}",
+    "builtPerimeter": "Chu vi: {perimeter}",
+    "builtFraction": "Màu {color}: {count}/{total} số ô",
+    "builtFractionReduced": "Màu {color}: {count}/{total} = {fraction} số ô",
+    "enteredValue": "{value}",
+    "needArea": "Cần diện tích {area}.",
+    "needPerimeter": "Cần chu vi {perimeter}.",
+    "needFraction": "Cần {fraction} số ô màu {color}.",
+    "findWrongHint": "Đếm số ô vuông phủ kín hình; hai nửa ô ghép thành một ô vuông.",
+    "solutionLabel": "Một lời giải",
+    "levelDone": "Hoàn thành cấp {level}!",
+    "levelScore": "{score}/12 điểm",
+    "newBest": "Kỷ lục mới!",
+    "challengeResult": "Thử thách {index}: {points} điểm",
+    "announceStart": "Bắt đầu cấp {level}. {goal}",
+    "announceNext": "Thử thách {index} trên 6. {goal}"
+   }
+  },
+  "en": {
+   "eyebrow": "Mathematics · Geometry and measurement",
+   "title": "Area builder: area and perimeter",
+   "description": "Build shapes from unit squares on a grid. Area is the number of unit squares that cover the shape; perimeter is the number of unit edges around it, including around holes. The Game mode has six levels of building shapes and finding areas.",
+   "modes": {
+    "explore": "Explore",
+    "game": "Game"
+   },
+   "status": {
+    "ready": "Resource ready",
+    "loading": "Loading resource"
+   },
+   "guidance": [
+    {
+     "label": "What is happening",
+     "text": "Each square on the board is a unit square; a shape is made of squares that share edges."
+    },
+    {
+     "label": "Watch for",
+     "text": "Adding or removing one square changes the area by 1 square unit, while the perimeter can grow, shrink or stay the same."
+    },
+    {
+     "label": "Common mix-up",
+     "text": "Two shapes with the same area need not have the same perimeter; cutting a hole makes the perimeter longer."
+    }
+   ],
+   "modelNotes": [
+    "A square on screen is an agreed unit square, not 1 cm. Area is measured in \"square units\" and perimeter in \"units\" (the length of one side of a unit square).",
+    "Area is the number of unit squares that cover the shape. The game also has half squares (triangles): two halves make one unit square.",
+    "Perimeter is the number of unit edges between the shape and everything that is not the shape, including the edges around holes. So cutting a hole lowers the area but raises the perimeter.",
+    "Each board keeps one edge-connected shape: a new square must share an edge with the shape; touching only at a corner does not connect. When removing a square splits the shape, the part with more squares stays and the rest goes back to the box.",
+    "A hole is a group of empty squares closed in by the shape. An empty square that meets the outside only at a corner is still a hole; a notch open to the outside is not.",
+    "Side lengths are written only on straight runs of whole units; overlapping labels are hidden for now, zoom in to see them all. Slanted edges of half squares have no length label.",
+    "Game challenges are generated at random, checked, and always solvable on the 12 × 8 board; the sample solution is only one of many. Colour fractions are compared in lowest terms (6/16 = 3/8).",
+    "Points and the timer are for self-practice. Reloading the page returns an unfinished level to the level screen; the best score and best time of each level are kept."
+   ],
+   "units": {
+    "area": {
+     "one": "{count} square unit",
+     "other": "{count} square units"
+    },
+    "perimeter": {
+     "one": "{count} unit",
+     "other": "{count} units"
+    }
+   },
+   "boards": {
+    "single": "Board",
+    "a": "Board A",
+    "b": "Board B"
+   },
+   "cellState": {
+    "empty": "empty",
+    "filled": "filled",
+    "piece": "covered by {piece}"
+   },
+   "explore": {
+    "layoutTitle": "Boards",
+    "layoutOne": "One board",
+    "layoutTwo": "Two boards",
+    "layoutHint": "Use two boards to build two shapes and compare them.",
+    "displayTitle": "Show",
+    "showGrid": "Grid",
+    "showMeasure": "Measurements",
+    "showDimensions": "Side lengths",
+    "showPerimeter": "Highlight perimeter edges",
+    "howTitle": "How to build",
+    "howText": "Drag squares from the box onto the board or tap the grid. A new square must share an edge with the shape; tap a square again to remove it.",
+    "keyboardHint": "Keyboard: Tab to the board, arrows move the cursor, Enter or Space adds/removes a square, Delete removes.",
+    "emptyHint": "Drag a square from the box onto the board, or tap the grid",
+    "readoutArea": "Area: {value}",
+    "readoutPerimeter": "Perimeter: {value}",
+    "readoutAreaLabel": "Area:",
+    "readoutPerimeterLabel": "Perimeter:",
+    "readoutUnknown": "--",
+    "boxLabel": "Square box of {board}. Drag a square onto the board, or press Enter to add one near the cursor.",
+    "boxCaption": "Squares",
+    "eraserLabel": "Clear all squares on {board}",
+    "boardLabel": "{board} {cols} × {rows} squares. Cursor at row {row}, column {col}: {state}. Use the arrows to move, Enter to add or remove a square.",
+    "insightsTitle": "Measurements and notes",
+    "empty": "No squares yet. Drag unit squares from the box onto the board.",
+    "several": "The board has more than one shape, so it cannot be measured.",
+    "measureHidden": "Measurements are hidden. Turn on Measurements to see area and perimeter.",
+    "areaLine": "Area: {area}",
+    "perimeterLine": "Perimeter: {perimeter}",
+    "breakdown": "= {outer} around the outside + {hole} around holes",
+    "holes": {
+     "one": "The shape has {count} hole.",
+     "other": "The shape has {count} holes."
+    },
+    "compareSameBoth": "The two shapes have the same area and the same perimeter.",
+    "compareSameArea": "The two shapes have the same area ({area}) but different perimeters ({a} and {b}).",
+    "compareSamePerimeter": "The two shapes have the same perimeter ({perimeter}) but different areas ({a} and {b}).",
+    "compareDifferent": "The two shapes differ in both area and perimeter.",
+    "ruleArea": "Area = number of unit squares covering the shape.",
+    "rulePerimeter": "Perimeter = number of unit edges around the shape, including around holes.",
+    "perimeterLegend": "Pink edges are the edges counted in the perimeter; each piece between two dots is one unit."
+   },
+   "announce": {
+    "added": "Added a square at row {row}, column {col}.",
+    "removed": "Removed the square at row {row}, column {col}.",
+    "moved": "Moved the square to row {row}, column {col}.",
+    "returned": {
+     "one": "{count} square split off the shape and went back to the box.",
+     "other": "{count} squares split off the shape and went back to the box."
+    },
+    "erased": "Cleared all squares on {board}.",
+    "cursor": "Row {row}, column {col}: {state}.",
+    "measure": "Area {area}, perimeter {perimeter}.",
+    "rejected": {
+     "not-touching": "A new piece must share an edge with the shape (a corner is not enough).",
+     "occupied": "This square is already filled.",
+     "outside": "Place it inside the board.",
+     "full": "The board is full.",
+     "missed": "The square went back to the box: drop it on the board, sharing an edge with the shape.",
+     "overlap": "Another piece is already there.",
+     "limit": "All pieces for this challenge are in use.",
+     "locked": "This challenge is done; press Next for a new one."
+    }
+   },
+   "scene": {
+    "svgTitle": "Square grid board for building shapes",
+    "summaryOne": "One 19 × 8 board.",
+    "summaryTwo": "Two 9 × 8 boards.",
+    "summaryBoard": "{board}: area {area}, perimeter {perimeter}.",
+    "summaryEmpty": "{board}: no squares yet.",
+    "summarySeveral": "{board}: more than one shape.",
+    "gameSelect": "Game level screen.",
+    "gameBuild": "Challenge {index} of 6: build a shape. {goal}",
+    "gameFind": "Challenge {index} of 6: find the area of the purple shape on the board.",
+    "gameResults": "Level {level} result: {score} of 12 points."
+   },
+   "game": {
+    "selectTitle": "Choose a level",
+    "level": "Level {level}",
+    "levelNames": {
+     "1": "Build and find area",
+     "2": "Area and perimeter",
+     "3": "Holes and half squares",
+     "4": "Few measuring tools",
+     "5": "Colour fractions",
+     "6": "Colour fractions and perimeter"
+    },
+    "levelCard": "Level {level}: {name}. Best score {score} of 12, {stars} stars.",
+    "bestScore": "{score}/12 points",
+    "bestTime": "Best {time}",
+    "stars": "{stars} stars",
+    "timer": "Timer",
+    "rulesTitle": "How to play",
+    "rules": [
+     "Each level has 6 challenges, with 2 tries for each.",
+     "Correct on the first try earns 2 points, on the second try 1 point; at most 12 points per level.",
+     "After two wrong tries, look at a sample solution and move on."
+    ],
+    "scoreboardTitle": "This round",
+    "challengeOf": "Challenge {index}/6",
+    "points": "Points: {score}",
+    "time": "Time: {time}",
+    "chooseLevel": "Choose another level",
+    "toolsTitle": "Tools",
+    "showGrid": "Grid on the shape",
+    "showDimensions": "Side lengths",
+    "noGrid": "This challenge does not allow the grid.",
+    "keyboardHint": "Keyboard: choose a piece, Tab to the board, arrows move the cursor, Enter places or removes a piece.",
+    "buildTitle": "Build it",
+    "findTitle": "Find the area",
+    "goalArea": "Area {area}",
+    "goalPerimeter": "Perimeter {perimeter}",
+    "goalFraction": "{fraction} of the squares {color}",
+    "findGoal": "What is the area of the purple shape in square units?",
+    "colors": [
+     "blue",
+     "yellow"
+    ],
+    "targetColor": "purple",
+    "pieces": {
+     "square": "1 square",
+     "wide": "2 squares across",
+     "tall": "2 squares down",
+     "big": "4 squares (2 × 2)",
+     "tri-tl": "half square, right angle top left",
+     "tri-tr": "half square, right angle top right",
+     "tri-br": "half square, right angle bottom right",
+     "tri-bl": "half square, right angle bottom left"
+    },
+    "pieceWithColor": "{color} piece of {piece}",
+    "remaining": "{count} left",
+    "selected": "selected",
+    "paletteLabel": "Pieces. Drag a piece onto the board, or select a piece and tap the grid.",
+    "eraser": "Clear all pieces on the board",
+    "boardLabel": "Board 12 × 8 squares. Cursor at row {row}, column {col}: {state}. Use the arrows to move, Enter to place {piece} or remove a piece.",
+    "answerLabel": "Area",
+    "answerUnit": "square units",
+    "check": "Check",
+    "tryAgain": "Try again",
+    "next": "Next",
+    "showBuildSolution": "Show a solution",
+    "showFindSolution": "Show the answer",
+    "playAgain": "Play this level again",
+    "correct": "Correct! +{points} points",
+    "correctNoPoints": "Correct! (no points)",
+    "wrongFirst": "Not yet. Try again.",
+    "wrongFinalBuild": "Not yet. You can still fix the shape, or look at a solution.",
+    "wrongFinalFind": "Not correct after two tries.",
+    "solutionBuild": "Here is one solution.",
+    "solutionFind": "The area is {area}.",
+    "invalidAnswer": "Enter a whole number, for example 24.",
+    "hintBuild": "Put pieces on the board to match the goal, then press Check. A new piece must share an edge with the shape.",
+    "hintFind": "Place pieces on the shape to measure it (pieces can go anywhere), then enter the area.",
+    "hintNoPieces": "No pieces in this challenge: turn on Side lengths to work out the area.",
+    "hintLimited": "Only {count} unit squares to measure with; move them and count by rows and columns.",
+    "resultTitle": "Result",
+    "builtTitle": "You built",
+    "enteredTitle": "You entered",
+    "builtArea": "Area: {area}",
+    "builtPerimeter": "Perimeter: {perimeter}",
+    "builtFraction": "{color}: {count}/{total} of the squares",
+    "builtFractionReduced": "{color}: {count}/{total} = {fraction} of the squares",
+    "enteredValue": "{value}",
+    "needArea": "The goal is an area of {area}.",
+    "needPerimeter": "The goal is a perimeter of {perimeter}.",
+    "needFraction": "The goal is {fraction} of the squares {color}.",
+    "findWrongHint": "Count the unit squares that cover the shape; two half squares make one unit square.",
+    "solutionLabel": "One solution",
+    "levelDone": "Level {level} complete!",
+    "levelScore": "{score}/12 points",
+    "newBest": "New best!",
+    "challengeResult": "Challenge {index}: {points} points",
+    "announceStart": "Level {level} started. {goal}",
+    "announceNext": "Challenge {index} of 6. {goal}"
+   }
+  }
+ },
+ {
+  "eyebrow": "Toán · Hình học và đo lường",
+  "title": "Ghép hình: diện tích và chu vi",
+  "description": "Ghép ô vuông đơn vị thành hình trên lưới. Diện tích là số ô vuông phủ kín hình; chu vi là số cạnh ô quanh hình, kể cả quanh lỗ. Chế độ Trò chơi có sáu cấp dựng hình và tìm diện tích.",
+  "modes": {
+   "explore": "Khám phá",
+   "game": "Trò chơi"
+  },
+  "status": {
+   "ready": "Học liệu sẵn sàng",
+   "loading": "Đang khởi tạo học liệu"
+  },
+  "guidance": [
+   {
+    "label": "Điều đang xảy ra",
+    "text": "Mỗi ô vuông trên bảng là một ô vuông đơn vị; hình ghép từ các ô liền cạnh."
+   },
+   {
+    "label": "Hãy quan sát",
+    "text": "Thêm hoặc bớt một ô làm diện tích đổi 1 ô vuông, còn chu vi có thể tăng, giảm hoặc giữ nguyên."
+   },
+   {
+    "label": "Điểm dễ nhầm",
+    "text": "Hai hình cùng diện tích chưa chắc cùng chu vi; khoét lỗ làm chu vi dài thêm."
+   }
+  ],
+  "modelNotes": [
+   "Ô vuông trên màn hình là ô vuông đơn vị quy ước, không phải 1 cm. Diện tích đo bằng \"ô vuông\", chu vi đo bằng \"cạnh ô\" (độ dài một cạnh của ô vuông đơn vị).",
+   "Diện tích là số ô vuông phủ kín hình. Trong trò chơi có nửa ô hình tam giác: hai nửa ô ghép thành một ô vuông.",
+   "Chu vi là tổng số cạnh ô nằm giữa hình và phần không thuộc hình, gồm cả các cạnh quanh lỗ. Vì vậy khoét một lỗ làm diện tích giảm nhưng chu vi tăng.",
+   "Mỗi bảng chỉ giữ một hình liền cạnh: ô mới phải chung cạnh với hình, chỉ chạm góc không tính là nối. Khi bớt ô làm hình tách ra, phần có nhiều ô hơn được giữ, phần còn lại trở về hộp.",
+   "Lỗ là nhóm ô trống bị hình bao kín. Ô trống chỉ chạm phần ngoài ở một góc vẫn là lỗ; rãnh hở ra ngoài không phải lỗ.",
+   "Độ dài cạnh chỉ ghi trên đoạn thẳng dài nguyên ô; nhãn chồng nhau thì tạm ẩn, phóng to để thấy đủ. Cạnh chéo của nửa ô không ghi độ dài.",
+   "Đề trò chơi sinh ngẫu nhiên có kiểm tra và luôn có lời giải trong bảng 12 × 8; lời giải mẫu chỉ là một trong nhiều cách. Tỉ lệ màu so sánh bằng phân số tối giản (6/16 = 3/8).",
+   "Điểm và đồng hồ chỉ để tự luyện tập. Tải lại trang thì lượt chơi dở quay về màn chọn cấp; điểm cao nhất và thời gian tốt nhất của mỗi cấp được giữ."
+  ],
+  "units": {
+   "area": {
+    "one": "{count} ô vuông",
+    "other": "{count} ô vuông"
+   },
+   "perimeter": {
+    "one": "{count} cạnh ô",
+    "other": "{count} cạnh ô"
+   }
+  },
+  "boards": {
+   "single": "Bảng",
+   "a": "Bảng A",
+   "b": "Bảng B"
+  },
+  "cellState": {
+   "empty": "ô trống",
+   "filled": "có ô vuông",
+   "piece": "có mảnh {piece}"
+  },
+  "explore": {
+   "layoutTitle": "Bảng",
+   "layoutOne": "Một bảng",
+   "layoutTwo": "Hai bảng",
+   "layoutHint": "Hai bảng để ghép hai hình rồi so sánh.",
+   "displayTitle": "Hiển thị",
+   "showGrid": "Lưới",
+   "showMeasure": "Số đo",
+   "showDimensions": "Độ dài cạnh",
+   "showPerimeter": "Tô cạnh tính vào chu vi",
+   "howTitle": "Cách ghép",
+   "howText": "Kéo ô vuông từ hộp vào bảng hoặc chạm vào lưới. Ô mới phải chung cạnh với hình; chạm lại một ô để bớt ô đó.",
+   "keyboardHint": "Bàn phím: Tab tới bảng, mũi tên di chuyển con trỏ, Enter hoặc Space thêm/bớt ô, Delete bớt ô.",
+   "emptyHint": "Kéo ô vuông từ hộp vào bảng hoặc chạm vào lưới",
+   "readoutArea": "Diện tích: {value}",
+   "readoutPerimeter": "Chu vi: {value}",
+   "readoutAreaLabel": "Diện tích:",
+   "readoutPerimeterLabel": "Chu vi:",
+   "readoutUnknown": "--",
+   "boxLabel": "Hộp ô vuông của {board}. Kéo ô vào bảng, hoặc nhấn Enter để thêm một ô gần con trỏ.",
+   "boxCaption": "Ô vuông",
+   "eraserLabel": "Xóa hết ô trên {board}",
+   "boardLabel": "{board} {cols} × {rows} ô. Con trỏ ở hàng {row}, cột {col}: {state}. Dùng mũi tên để di chuyển, Enter để thêm hoặc bớt ô.",
+   "insightsTitle": "Số đo và nhận xét",
+   "empty": "Chưa có ô nào. Kéo ô vuông từ hộp vào bảng.",
+   "several": "Bảng có hơn một hình nên chưa đo được.",
+   "measureHidden": "Số đo đang ẩn. Bật Số đo để xem diện tích và chu vi.",
+   "areaLine": "Diện tích: {area}",
+   "perimeterLine": "Chu vi: {perimeter}",
+   "breakdown": "= {outer} quanh viền ngoài + {hole} quanh lỗ",
+   "holes": {
+    "one": "Hình có {count} lỗ.",
+    "other": "Hình có {count} lỗ."
+   },
+   "compareSameBoth": "Hai hình có cùng diện tích và cùng chu vi.",
+   "compareSameArea": "Hai hình cùng diện tích ({area}) nhưng chu vi khác nhau ({a} và {b}).",
+   "compareSamePerimeter": "Hai hình cùng chu vi ({perimeter}) nhưng diện tích khác nhau ({a} và {b}).",
+   "compareDifferent": "Hai hình khác nhau cả diện tích và chu vi.",
+   "ruleArea": "Diện tích = số ô vuông phủ kín hình.",
+   "rulePerimeter": "Chu vi = số cạnh ô quanh hình, kể cả quanh lỗ.",
+   "perimeterLegend": "Cạnh tô hồng là các cạnh được tính vào chu vi; mỗi đoạn giữa hai chấm là một cạnh ô."
+  },
+  "announce": {
+   "added": "Đã thêm ô ở hàng {row}, cột {col}.",
+   "removed": "Đã bớt ô ở hàng {row}, cột {col}.",
+   "moved": "Đã dời ô tới hàng {row}, cột {col}.",
+   "returned": {
+    "one": "{count} ô bị tách khỏi hình đã về hộp.",
+    "other": "{count} ô bị tách khỏi hình đã về hộp."
+   },
+   "erased": "Đã xóa hết ô trên {board}.",
+   "cursor": "Hàng {row}, cột {col}: {state}.",
+   "measure": "Diện tích {area}, chu vi {perimeter}.",
+   "rejected": {
+    "not-touching": "Mảnh mới phải chung cạnh với hình (chỉ chạm góc chưa được).",
+    "occupied": "Ô này đã có ô vuông.",
+    "outside": "Hãy đặt trong bảng.",
+    "full": "Bảng đã đầy.",
+    "missed": "Ô đã về hộp: hãy thả trên bảng, chung cạnh với hình.",
+    "overlap": "Chỗ này đã có mảnh khác.",
+    "limit": "Đã dùng hết mảnh của đề này.",
+    "locked": "Thử thách đã xong, bấm Tiếp để sang thử thách mới."
+   }
+  },
+  "scene": {
+   "svgTitle": "Bảng ô vuông để ghép hình",
+   "summaryOne": "Một bảng 19 × 8 ô.",
+   "summaryTwo": "Hai bảng 9 × 8 ô.",
+   "summaryBoard": "{board}: diện tích {area}, chu vi {perimeter}.",
+   "summaryEmpty": "{board}: chưa có ô nào.",
+   "summarySeveral": "{board}: có hơn một hình.",
+   "gameSelect": "Màn chọn cấp của trò chơi.",
+   "gameBuild": "Thử thách {index} trên 6: dựng hình. {goal}",
+   "gameFind": "Thử thách {index} trên 6: tìm diện tích hình tô tím trên bảng.",
+   "gameResults": "Kết quả cấp {level}: {score} trên 12 điểm."
+  },
+  "game": {
+   "selectTitle": "Chọn cấp",
+   "level": "Cấp {level}",
+   "levelNames": {
+    "1": "Dựng và tìm diện tích",
+    "2": "Diện tích và chu vi",
+    "3": "Hình có lỗ, nửa ô",
+    "4": "Ít dụng cụ đo",
+    "5": "Tỉ lệ màu",
+    "6": "Tỉ lệ màu và chu vi"
+   },
+   "levelCard": "Cấp {level}: {name}. Điểm cao nhất {score} trên 12, {stars} sao.",
+   "bestScore": "{score}/12 điểm",
+   "bestTime": "Tốt nhất {time}",
+   "stars": "{stars} sao",
+   "timer": "Đồng hồ",
+   "rulesTitle": "Cách chơi",
+   "rules": [
+    "Mỗi cấp có 6 thử thách, mỗi thử thách được thử 2 lần.",
+    "Đúng ở lần 1 được 2 điểm, ở lần 2 được 1 điểm; tối đa 12 điểm mỗi cấp.",
+    "Sai hai lần thì xem lời giải mẫu rồi sang thử thách tiếp."
+   ],
+   "scoreboardTitle": "Lượt chơi",
+   "challengeOf": "Thử thách {index}/6",
+   "points": "Điểm: {score}",
+   "time": "Thời gian: {time}",
+   "chooseLevel": "Chọn cấp khác",
+   "toolsTitle": "Công cụ",
+   "showGrid": "Lưới trên hình",
+   "showDimensions": "Độ dài cạnh",
+   "noGrid": "Đề này không cho bật lưới.",
+   "keyboardHint": "Bàn phím: chọn mảnh, Tab tới bảng, mũi tên di chuyển con trỏ, Enter đặt hoặc bớt mảnh.",
+   "buildTitle": "Dựng hình",
+   "findTitle": "Tìm diện tích",
+   "goalArea": "Diện tích {area}",
+   "goalPerimeter": "Chu vi {perimeter}",
+   "goalFraction": "{fraction} số ô màu {color}",
+   "findGoal": "Hình tô tím có diện tích bao nhiêu ô vuông?",
+   "colors": [
+    "xanh",
+    "vàng"
+   ],
+   "targetColor": "tím",
+   "pieces": {
+    "square": "1 ô vuông",
+    "wide": "2 ô nằm ngang",
+    "tall": "2 ô đứng dọc",
+    "big": "4 ô (2 × 2)",
+    "tri-tl": "nửa ô, góc vuông trên trái",
+    "tri-tr": "nửa ô, góc vuông trên phải",
+    "tri-br": "nửa ô, góc vuông dưới phải",
+    "tri-bl": "nửa ô, góc vuông dưới trái"
+   },
+   "pieceWithColor": "Mảnh {piece} màu {color}",
+   "remaining": "còn {count}",
+   "selected": "đang chọn",
+   "paletteLabel": "Bảng mảnh. Kéo mảnh vào bảng, hoặc chọn mảnh rồi chạm vào lưới.",
+   "eraser": "Xóa hết mảnh trên bảng",
+   "boardLabel": "Bảng 12 × 8 ô. Con trỏ ở hàng {row}, cột {col}: {state}. Dùng mũi tên để di chuyển, Enter để đặt {piece} hoặc bớt mảnh.",
+   "answerLabel": "Diện tích",
+   "answerUnit": "ô vuông",
+   "check": "Kiểm tra",
+   "tryAgain": "Thử lại",
+   "next": "Tiếp",
+   "showBuildSolution": "Xem một lời giải",
+   "showFindSolution": "Xem lời giải",
+   "playAgain": "Chơi lại cấp này",
+   "correct": "Đúng rồi! +{points} điểm",
+   "correctNoPoints": "Đúng rồi! (không tính điểm)",
+   "wrongFirst": "Chưa đúng. Hãy thử lại.",
+   "wrongFinalBuild": "Chưa đúng. Em vẫn sửa được hình, hoặc xem một lời giải.",
+   "wrongFinalFind": "Chưa đúng sau hai lần thử.",
+   "solutionBuild": "Đây là một lời giải.",
+   "solutionFind": "Diện tích là {area}.",
+   "invalidAnswer": "Hãy nhập một số tự nhiên, ví dụ 24.",
+   "hintBuild": "Ghép mảnh trên bảng cho đúng mục tiêu rồi bấm Kiểm tra. Mảnh mới phải chung cạnh với hình.",
+   "hintFind": "Đặt mảnh lên hình để đo (mảnh đặt ở đâu cũng được), rồi nhập diện tích.",
+   "hintNoPieces": "Đề này không có mảnh: bật Độ dài cạnh để tính diện tích.",
+   "hintLimited": "Chỉ có {count} ô vuông 1 × 1 để đo; hãy dời ô và đếm theo hàng, cột.",
+   "resultTitle": "Kết quả",
+   "builtTitle": "Bạn đã dựng",
+   "enteredTitle": "Bạn đã nhập",
+   "builtArea": "Diện tích: {area}",
+   "builtPerimeter": "Chu vi: {perimeter}",
+   "builtFraction": "Màu {color}: {count}/{total} số ô",
+   "builtFractionReduced": "Màu {color}: {count}/{total} = {fraction} số ô",
+   "enteredValue": "{value}",
+   "needArea": "Cần diện tích {area}.",
+   "needPerimeter": "Cần chu vi {perimeter}.",
+   "needFraction": "Cần {fraction} số ô màu {color}.",
+   "findWrongHint": "Đếm số ô vuông phủ kín hình; hai nửa ô ghép thành một ô vuông.",
+   "solutionLabel": "Một lời giải",
+   "levelDone": "Hoàn thành cấp {level}!",
+   "levelScore": "{score}/12 điểm",
+   "newBest": "Kỷ lục mới!",
+   "challengeResult": "Thử thách {index}: {points} điểm",
+   "announceStart": "Bắt đầu cấp {level}. {goal}",
+   "announceNext": "Thử thách {index} trên 6. {goal}"
+  }
+ }
+]
